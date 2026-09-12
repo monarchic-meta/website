@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "check": "astro check",
+    "check:legibility": "node scripts/check-legibility.mjs",
     "check:catalog-artifact": "node scripts/check-catalog-artifact.mjs",
     "check:mcp-pricing": "node scripts/sync-mcp-pricing.mjs --check",
     "check:public-usage-language": "node scripts/check-public-usage-language.mjs",

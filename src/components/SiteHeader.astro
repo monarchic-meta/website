@@ -1,5 +1,6 @@
 ---
 import { webappBaseUrl } from "../lib/publicUrls";
+import Wordmark from "./Wordmark.astro";
 
 interface Props {
   active?: "products" | "research" | "support";
@@ -28,7 +29,7 @@ const navClass = (current: boolean) => [
   ]}
 >
   <a href="/" aria-label="Monarchic home" class="site-wordmark motion-link">
-    <span class="monarchic-wordmark" aria-hidden="true"></span>
+    <Wordmark />
   </a>
   <button
     type="button"
@@ -74,6 +75,14 @@ const navClass = (current: boolean) => [
 
     navigation.addEventListener("click", (event) => {
       if ((event.target as Element).closest("a")) setOpen(false);
+    });
+
+    header.addEventListener("focusout", (event) => {
+      if (!header.contains(event.relatedTarget as Node | null)) setOpen(false);
+    });
+
+    window.matchMedia("(min-width: 60rem)").addEventListener("change", () => {
+      setOpen(false);
     });
 
     document.addEventListener("pointerdown", (event) => {

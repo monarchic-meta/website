@@ -19,6 +19,7 @@ import {
 import { getProductDetail } from "../../lib/productDetails";
 import { getMcpResearchByProductSlug } from "../../lib/mcpResearch";
 import { webappBaseUrl } from "../../lib/publicUrls";
+import { productDisplayName } from "../../lib/productDisplayName";
 import {
   getProductWorkflowProof,
   productWorkflowProofs,
@@ -40,10 +41,15 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const plan = allPlans.find((candidate) => candidate.slug === slug);
-if (!plan) {
+const catalogPlan = allPlans.find((candidate) => candidate.slug === slug);
+if (!catalogPlan) {
   return Astro.redirect("/products");
 }
+const plan = {
+  ...catalogPlan,
+  displayName: productDisplayName(catalogPlan.displayName),
+  description: productDisplayName(catalogPlan.description),
+};
 
 const productDetail = getProductDetail(plan.slug);
 const workflowProof = getProductWorkflowProof(plan.slug);
@@ -111,7 +117,7 @@ function statusClasses(plan: CatalogPlan): string {
           / {plan.displayName}
         </p>
 
-        <section class="page-section grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section class="page-hero grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px]">
           <div class="min-w-0">
             <div class="flex flex-wrap gap-2">
               <span class="inline-flex border border-white/60 px-3 py-1 text-[0.65rem] font-bold uppercase text-white">

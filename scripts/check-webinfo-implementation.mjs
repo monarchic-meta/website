@@ -46,7 +46,7 @@ includes(home.text, [
   "Capability / 01",
   "Infrastructure / 17 systems",
   "Research / Reproducible",
-  "Principle / Systems, not demos",
+  "Principle / Accountable execution",
   "Operator authority / Required",
   "What Monarchic builds",
   "A person should be able to assign a job and review the result",

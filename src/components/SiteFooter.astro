@@ -1,5 +1,6 @@
 ---
 import { webappBaseUrl } from "../lib/publicUrls";
+import Wordmark from "./Wordmark.astro";
 
 interface Props {
   tone?: "dark" | "paper";
@@ -17,10 +18,10 @@ const { tone = "dark" } = Astro.props;
 >
   <div>
     <a href="/" aria-label="Monarchic home" class="motion-link inline-flex items-center">
-      <span class="monarchic-wordmark" aria-hidden="true"></span>
+      <Wordmark />
     </a>
     <p class:list={["mt-4 max-w-xl text-sm leading-6", tone === "paper" ? "text-black/64" : "text-white/68"]}>
-      Independent AI research and development. Systems, not demos.
+      Independent AI research and development. Agent tools and execution infrastructure.
     </p>
   </div>
   <nav

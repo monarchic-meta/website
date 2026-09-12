@@ -5,6 +5,7 @@ import {
   type CatalogPlan,
 } from "../lib/pricing";
 import { getProductDetail } from "../lib/productDetails";
+import { productDisplayName } from "../lib/productDisplayName";
 
 interface Props {
   plan: CatalogPlan;
@@ -31,7 +32,7 @@ const statusClass = hostedStatus === "available"
       {hostedStatus === "planned" ? "Coming soon" : catalogStatusLabel(plan)}
     </span>
   </div>
-  <h3 class="mt-5 text-xl font-extrabold uppercase">{plan.displayName}</h3>
+  <h3 class="mt-5 text-xl font-extrabold uppercase">{productDisplayName(plan.displayName)}</h3>
   <p class="mt-3 text-sm leading-6 text-white/68">{detail?.useCase ?? plan.tagline}</p>
   {detail && (
     <dl class="mt-4 grid gap-3 border-t border-white/20 pt-4 text-xs leading-5">

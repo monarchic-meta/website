@@ -68,6 +68,7 @@ and hosted MCP dashboard live in `../monarchic-webapp`.
 - `pnpm install`
 - `pnpm dev`
 - `pnpm check`
+- `pnpm check:legibility` (requires a running local preview)
 - `pnpm check:webcomposer`
 - `pnpm build`
 - `pnpm preview`
@@ -79,6 +80,14 @@ and hosted MCP dashboard live in `../monarchic-webapp`.
 - `pnpm astro -- --help`
 
 The project currently expects Node `>=22.12.0`.
+
+For the responsive and interaction regression checks, run `pnpm build`, then
+`pnpm preview --host 127.0.0.1 --port 4332` in a separate terminal, followed by
+`pnpm check:legibility`. Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` if Chromium is
+provided by Nix. The check covers eleven routes at five widths, wordmark sizing,
+plan hover/focus states, back-to-top, and brain scrolling/tapping. Screenshots
+are written to `/tmp/monarchic-legibility`; override that location with
+`MONARCHIC_VISUAL_EVIDENCE_DIR`.
 
 On NixOS, run browser smoke inside the repository dev shell so Playwright uses
 the packaged Chromium build:

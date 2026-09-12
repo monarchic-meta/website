@@ -4505,7 +4505,7 @@ const mountBrain = async (field: HTMLElement) => {
     }
     return 0;
   };
-  const idleSignalSpeed = 0.22;
+  const idleSignalSpeed = 0.3;
   const pulseDuration = () => (reducedMotion.matches ? 650 : 2200);
   const executionWaveCycle = 16000;
   const executionWaveTravel = 6000;
@@ -5119,6 +5119,7 @@ const mountBrain = async (field: HTMLElement) => {
     updateStatus("SIGNAL TRACE / PROPAGATING", "pulse");
     window.clearTimeout(statusTimer);
     statusTimer = window.setTimeout(() => {
+      statusTimer = 0;
       updateStatus(
         pointer.active
           ? "INSPECTION / TRACKING"
@@ -5126,11 +5127,11 @@ const mountBrain = async (field: HTMLElement) => {
         pointer.active ? "tracking" : "idle",
       );
       scheduleFrame();
-    }, 720);
+    }, pulseDuration());
     scheduleFrame();
   };
 
-  const draw = (time: number) => {
+  const draw = (time: number, elapsed: number) => {
     context.setTransform(
       pixelRatio,
       0,
@@ -5145,8 +5146,12 @@ const mountBrain = async (field: HTMLElement) => {
     context.shadowBlur = 0;
     context.clearRect(0, 0, width, height);
 
-    pointer.x += (pointer.targetX - pointer.x) * 0.075;
-    pointer.y += (pointer.targetY - pointer.y) * 0.075;
+    // Keep inspection responsive at different rendering rates without snapping
+    // when the field returns from an inactive tab or leaves the viewport.
+    const pointerBlend = 1 - Math.exp(-elapsed / 180);
+    const rotationBlend = 1 - Math.exp(-elapsed / 320);
+    pointer.x += (pointer.targetX - pointer.x) * pointerBlend;
+    pointer.y += (pointer.targetY - pointer.y) * pointerBlend;
     const normalizedPointerX = pointer.x / width - 0.5;
     const normalizedPointerY = pointer.y / height - 0.5;
     const idleYaw = reducedMotion.matches
@@ -5157,17 +5162,17 @@ const mountBrain = async (field: HTMLElement) => {
       : -0.055 + Math.sin((time / 67000) * TAU) * 0.014;
     const pointerDepthActive = pointer.active && !reducedMotion.matches;
     const targetYaw = pointerDepthActive
-      ? -0.34 + normalizedPointerX * 0.12
+      ? -0.34 + normalizedPointerX * 0.2
       : idleYaw;
     const targetPitch = pointerDepthActive
-      ? -0.055 - normalizedPointerY * 0.07
+      ? -0.055 - normalizedPointerY * 0.11
       : idlePitch;
     if (reducedMotion.matches) {
       yaw = targetYaw;
       pitch = targetPitch;
     } else {
-      yaw += (targetYaw - yaw) * 0.032;
-      pitch += (targetPitch - pitch) * 0.032;
+      yaw += (targetYaw - yaw) * rotationBlend;
+      pitch += (targetPitch - pitch) * rotationBlend;
     }
 
     const matrix = buildRotationMatrix(yaw, pitch, -0.018);
@@ -6857,6 +6862,39 @@ const mountBrain = async (field: HTMLElement) => {
       };
     };
 
+    const drawSignalTrail = (
+      fiber: Fiber,
+      progress: number,
+      lane: number,
+      strength: number,
+      length: number,
+    ) => {
+      if (reducedMotion.matches) return;
+      context.save();
+      context.globalCompositeOperation = "lighter";
+      context.lineCap = "round";
+      context.lineWidth = 1.1;
+      // Sample the same strand as the head so the trail follows its curvature.
+      // Stop at the fiber origin rather than drawing across its wraparound.
+      for (let step = 8; step > 0; step -= 1) {
+        const start = progress - (step / 8) * length;
+        const end = progress - ((step - 1) / 8) * length;
+        if (end <= 0) continue;
+        const from = bundleParticlePoint(fiber, Math.max(0, start), lane);
+        const to = bundleParticlePoint(fiber, end, lane);
+        const front = smoothstep(-0.92, 0.92, to.z);
+        context.strokeStyle = rgba(
+          255, 220, 82,
+          strength * front * (1 - (step - 1) / 8) ** 2 * 0.7,
+        );
+        context.beginPath();
+        context.moveTo(from.x, from.y);
+        context.lineTo(to.x, to.y);
+        context.stroke();
+      }
+      context.restore();
+    };
+
     pulseActivityByFiber.forEach((activity, fiberIndex) => {
       const fiber = fibers[fiberIndex];
       if (!fiber.visible) return;
@@ -6869,6 +6907,7 @@ const mountBrain = async (field: HTMLElement) => {
       const point = bundleParticlePoint(fiber, activity.progress, lane);
       const front = smoothstep(-0.92, 0.92, point.z);
       if (front < 0.08) return;
+      drawSignalTrail(fiber, activity.progress, lane, activity.strength, 0.1);
       drawParticle(
         context,
         glowSprite,
@@ -6922,6 +6961,7 @@ const mountBrain = async (field: HTMLElement) => {
               fiber.phase * TAU,
           ) *
             (hot ? 0.09 : 0.06);
+      if (hot) drawSignalTrail(fiber, progress, lane, 0.55, 0.055);
       drawParticle(
         context,
         glowSprite,
@@ -7049,8 +7089,9 @@ const mountBrain = async (field: HTMLElement) => {
     if (!inViewport || document.visibilityState === "hidden") return;
     if (Math.abs(pixelRatio - targetPixelRatio()) > 0.001) resize();
     if (reducedMotion.matches || time - lastFrame >= 32) {
+      const elapsed = Math.min(100, lastFrame ? time - lastFrame : 32);
       lastFrame = time;
-      draw(time);
+      draw(time, elapsed);
     }
     if (!reducedMotion.matches) scheduleFrame();
   };
@@ -7066,28 +7107,52 @@ const mountBrain = async (field: HTMLElement) => {
     animationFrame = window.requestAnimationFrame(frame);
   }
 
-  field.addEventListener("pointermove", (event) => {
-    const point = fieldPoint(event.clientX, event.clientY);
-    pointer.targetX = point.x;
-    pointer.targetY = point.y;
-    pointer.active = true;
-    updateStatus("INSPECTION / TRACKING", "tracking");
-    scheduleFrame();
-  });
-
-  field.addEventListener("pointerleave", () => {
+  let lastScrollAt = -Infinity;
+  let lastPointerPosition: { x: number; y: number } | undefined;
+  const releaseInspection = () => {
     pointer.targetX = width * 0.5;
     pointer.targetY = height * 0.47;
     pointer.active = false;
-    updateStatus("SYSTEM STATE / ACTIVE", "idle");
+    if (!statusTimer) updateStatus("SYSTEM STATE / ACTIVE", "idle");
     scheduleFrame();
-  });
+  };
+  window.addEventListener("scroll", () => {
+    lastScrollAt = performance.now();
+    releaseInspection();
+  }, { passive: true });
 
-  field.addEventListener("pointerdown", (event) => {
+  field.addEventListener("pointermove", (event) => {
+    // Touch movement belongs to page scrolling. Ignore layout-generated mouse
+    // events as well: inspection requires actual movement of a hovering pointer.
+    const moved = !lastPointerPosition ||
+      event.clientX !== lastPointerPosition.x || event.clientY !== lastPointerPosition.y;
+    lastPointerPosition = { x: event.clientX, y: event.clientY };
+    if (event.pointerType === "touch" || !moved || performance.now() - lastScrollAt < 180) return;
     const point = fieldPoint(event.clientX, event.clientY);
     pointer.targetX = point.x;
     pointer.targetY = point.y;
     pointer.active = true;
+    if (!statusTimer) updateStatus("INSPECTION / TRACKING", "tracking");
+    scheduleFrame();
+  });
+
+  field.addEventListener("pointerleave", releaseInspection);
+
+  let press: { id: number; x: number; y: number } | undefined;
+  field.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0) return;
+    press = { id: event.pointerId, x: event.clientX, y: event.clientY };
+  });
+  field.addEventListener("pointercancel", () => { press = undefined; });
+  field.addEventListener("pointerup", (event) => {
+    const start = press;
+    press = undefined;
+    if (!start || start.id !== event.pointerId ||
+      Math.hypot(event.clientX - start.x, event.clientY - start.y) > 8) return;
+    const point = fieldPoint(event.clientX, event.clientY);
+    pointer.targetX = point.x;
+    pointer.targetY = point.y;
+    pointer.active = event.pointerType !== "touch";
     addPulse(point.x, point.y);
   });
 

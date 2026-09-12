@@ -6,6 +6,11 @@ import "../../styles/global.css";
 
 const mcpProducts = allPlans.filter((plan) => plan.kind === "single-mcp");
 const availableMcpCount = mcpProducts.filter((plan) => hostedMcpStatus(plan) === "available").length;
+const startingPoints = [
+  { name: "RepoIntel", task: "Understand a repository", outcome: "Repository maps and answers with source-file citations.", href: "/products/mcp-repointel" },
+  { name: "ExplicitMem", task: "Keep context between sessions", outcome: "Explicit memory that agents can write, search, and retrieve.", href: "/products/mcp-explicitmem" },
+  { name: "BrowserOps", task: "Test a browser flow", outcome: "Browser actions and rendered evidence for testing a product flow.", href: "/products/mcp-browserops" },
+];
 ---
 
 <html lang="en">
@@ -55,7 +60,7 @@ const availableMcpCount = mcpProducts.filter((plan) => hostedMcpStatus(plan) ===
         </header>
 
         <div class="grid gap-px bg-white/20 lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)]">
-          <article class="relative isolate flex min-h-[30rem] flex-col overflow-hidden bg-[#080b0f] p-5 sm:p-7 lg:min-h-[34rem] lg:p-8" data-product-overview-card="ai-agent-enhancements">
+          <article class="relative isolate flex min-h-[30rem] flex-col overflow-hidden bg-[#303431] p-5 sm:p-7 lg:min-h-[34rem] lg:p-8" data-product-overview-card="ai-agent-enhancements">
             <svg class="absolute inset-0 z-0 h-full w-full text-signal opacity-20" viewBox="0 0 100 100" preserveAspectRatio="none" shape-rendering="crispEdges" aria-hidden="true">
               <path d="M48 8H62V18H78V11H96M55 32H72V43H90V34H100M44 61H60V51H76V70H92V60H100M52 84H68V76H84V90H100" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke"></path>
               <path d="M49 8H50M61 18H63M71 43H73M59 51H61M83 90H85" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"></path>
@@ -70,11 +75,11 @@ const availableMcpCount = mcpProducts.filter((plan) => hostedMcpStatus(plan) ===
                 Give AI agents specialist capabilities for repository work, memory, browser testing, release operations, infrastructure, and business operations. Each enhancement runs through a hosted MCP connection.
               </p>
               <div class="mt-7 grid max-w-2xl gap-px border border-white/24 bg-white/20 sm:grid-cols-2">
-                <div class="bg-[#080b0f]/95 p-4">
+                <div class="bg-[#303431]/95 p-4">
                   <p class="font-mono text-[0.56rem] font-bold uppercase text-white/54">Enhancements</p>
                   <p class="mt-2 text-sm font-black uppercase">{availableMcpCount} available</p>
                 </div>
-                <div class="bg-[#080b0f]/95 p-4">
+                <div class="bg-[#303431]/95 p-4">
                   <p class="font-mono text-[0.56rem] font-bold uppercase text-white/54">Delivery</p>
                   <p class="mt-2 text-sm font-black uppercase">Hosted MCPs</p>
                 </div>
@@ -85,7 +90,7 @@ const availableMcpCount = mcpProducts.filter((plan) => hostedMcpStatus(plan) ===
             </div>
           </article>
 
-          <article class="relative isolate flex min-h-[24rem] flex-col overflow-hidden bg-[#070707] p-5 sm:p-7 lg:min-h-[34rem] lg:p-8" data-product-overview-card="coming-soon">
+          <article class="relative isolate flex min-h-[24rem] flex-col overflow-hidden bg-[#252926] p-5 sm:p-7 lg:min-h-[34rem] lg:p-8" data-product-overview-card="coming-soon">
             <svg class="absolute inset-0 z-0 h-full w-full text-white opacity-[0.07]" viewBox="0 0 100 100" preserveAspectRatio="none" shape-rendering="crispEdges" aria-hidden="true">
               <path d="M12 12H88V88H12ZM22 22H42V42H22ZM58 58H78V78H58Z" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4" vector-effect="non-scaling-stroke"></path>
             </svg>
@@ -101,6 +106,22 @@ const availableMcpCount = mcpProducts.filter((plan) => hostedMcpStatus(plan) ===
               </p>
             </div>
           </article>
+        </div>
+      </section>
+      <section class="page-section" aria-labelledby="starting-points-title">
+        <p class="font-mono text-xs font-bold uppercase text-signal">Available capabilities</p>
+        <h2 id="starting-points-title" class="mt-3 text-3xl font-black uppercase sm:text-4xl">Start with a task.</h2>
+        <div class="mt-7 border border-white/30">
+          {startingPoints.map((item) => (
+            <a href={item.href} class="product-start-row interactive-row grid items-center gap-4 border-b border-white/30 p-5 last:border-b-0 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:p-6">
+              <div>
+                <p class="font-mono text-xs font-bold uppercase text-signal">{item.name}</p>
+                <h3 class="mt-2 text-lg font-bold">{item.task}</h3>
+              </div>
+              <p class="text-sm leading-6">{item.outcome}</p>
+              <span aria-hidden="true" class="row-arrow hidden sm:block">→</span>
+            </a>
+          ))}
         </div>
       </section>
     </PublicPageFrame>
