@@ -1,7 +1,7 @@
 # Website legibility review
 
 This pass addresses the September 6 critique supplied on September 12, 2026.
-The pasted attachment contains `Image` placeholders rather than screenshots.
+The pasted attachment contains `Image` placeholders rather than screenshots. A later screenshot identifies the “Read report” action in the announcement bar.
 
 | Critique | Change and verification |
 | --- | --- |
@@ -14,7 +14,7 @@ The pasted attachment contains `Image` placeholders rather than screenshots.
 | Long product pages | Catalog section links wrap on mobile. A back-to-top link appears after scrolling and returns keyboard focus to the header. |
 | Uneven rows and excessive white | Workflow entries have consistent minimum height and vertically centered labels. Dark lists alternate charcoal tones; light lists alternate warm-gray tones. Homepage method headings align at the top. |
 | Contrastive copy | Removed “Systems, not demos” from the homepage and footer, and simplified the future-work introduction. |
-| Oddly sized D / lettering off | Removed forced horizontal navigation scaling and the global letter-spacing override. The exact text referenced by these two comments remains unverified because its screenshots and location are missing. Clarification has been requested. |
+| Oddly sized D / lettering off | Removed forced horizontal navigation scaling and the global letter-spacing override. The supplied “Read report” screenshot led to a 12px action label using the site font and a fixed-size SVG arrow; both announcement variants were checked at 320, 390, 768, and 1440 pixels. Whether this screenshot also identifies the separate “lettering off” comment is still unconfirmed. |
 
 ## Validation
 

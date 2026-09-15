@@ -1604,3 +1604,10 @@ body {
 .product-start-row:focus-visible { background: var(--color-signal); color: #080808; }
 .product-start-row:hover .text-signal,
 .product-start-row:focus-visible .text-signal { color: inherit; }
+
+.research-rail-action {
+  font-family: "Space Grotesk Variable", "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}

@@ -22,7 +22,12 @@ const { currentResearch } = Astro.props;
       <span class="col-span-2 row-start-2 text-white/68 sm:col-span-1 sm:row-auto">
         {currentResearch} / Evaluation report
       </span>
-      <span class="col-start-2 row-start-1 text-white/54 transition group-hover:text-signal sm:col-auto sm:row-auto">All research ↗</span>
+      <span class="research-rail-action col-start-2 row-start-1 inline-flex items-center gap-1.5 whitespace-nowrap text-white/80 transition group-hover:text-signal group-focus-visible:text-signal sm:col-auto sm:row-auto">
+        <span>All research</span>
+        <svg class="h-3 w-3 shrink-0" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+          <path d="M4 12 12 4M4 4h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+        </svg>
+      </span>
     </a>
   ) : (
     <a
@@ -37,7 +42,12 @@ const { currentResearch } = Astro.props;
       <span class="col-span-2 row-start-2 text-white/68 sm:col-span-1 sm:row-auto">
         ExplicitMem / {explicitMemBenchmark.answerAccuracy} answer accuracy on {explicitMemBenchmark.benchmark} ({explicitMemBenchmark.passedQuestions}/{explicitMemBenchmark.questions})
       </span>
-      <span class="col-start-2 row-start-1 text-white/54 transition group-hover:text-signal sm:col-auto sm:row-auto">Read report ↗</span>
+      <span class="research-rail-action col-start-2 row-start-1 inline-flex items-center gap-1.5 whitespace-nowrap text-white/80 transition group-hover:text-signal group-focus-visible:text-signal sm:col-auto sm:row-auto">
+        <span>Read report</span>
+        <svg class="h-3 w-3 shrink-0" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+          <path d="M4 12 12 4M4 4h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+        </svg>
+      </span>
     </a>
   )}
 </div>
