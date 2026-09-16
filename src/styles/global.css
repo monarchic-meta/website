@@ -6,9 +6,11 @@
   --color-paper: #f2f0e8;
   --color-signal: #ffd21a;
   --color-signal-soft: #ffec99;
-  --color-surface: #202222;
-  --color-surface-raised: #292c2b;
-  --color-rule: #555954;
+  --color-surface: #202020;
+  --color-surface-raised: #3c3c3c;
+  --color-paper-muted: #d6d3c9;
+  --color-rule-light: #aaa89f;
+  --color-rule: #555555;
   --font-weight-extrabold: 700;
   --font-weight-black: 700;
 }
@@ -26,7 +28,7 @@
   body {
     font-family: "Space Grotesk Variable", "Space Grotesk", system-ui, -apple-system, sans-serif;
     letter-spacing: 0;
-    background: #30332f;
+    background: var(--color-surface);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
@@ -1405,33 +1407,34 @@
   outline-color: #080808 !important;
 }
 
-/* Reading surfaces share one rule color; yellow remains an interaction accent. */
+/* Surface roles are stable across routes. Only repeated list rows alternate. */
 body {
-  background: #343831;
+  background: var(--color-surface);
 }
 
 .site-frame {
-  background: #171918;
+  background: var(--color-ink);
 }
 
 #main-content > section:not(.home-editorial):not(.paper-surface):not(.page-hero):not(.bg-paper):not(.bg-signal) {
-  background-color: #202322;
-}
-
-#main-content > section:not(.home-editorial):not(.paper-surface):not(.page-hero):not(.bg-paper):not(.bg-signal):nth-of-type(even) {
-  background-color: #292c2b;
+  background-color: var(--color-surface);
 }
 
 .page-hero,
 .paper-surface {
-  --color-white: #171a18;
-  color: #171a18;
-  background: #e8e7df;
+  --color-white: var(--color-ink);
+  --reading-panel: var(--color-paper-muted);
+  color: var(--color-ink);
+  background: var(--color-paper);
   color-scheme: light;
 }
 
-:where(.page-hero, .paper-surface) :is([class*="bg-black/"], [class~="bg-ink"]) {
-  background-color: #deded5;
+#main-content :where([class*="bg-black/"]) {
+  background-color: var(--reading-panel, var(--color-surface-raised));
+}
+
+:where(.page-hero, .paper-surface) [class~="bg-ink"] {
+  background-color: var(--reading-panel);
 }
 
 :where(.page-hero, .paper-surface) :is([class~="text-signal"], [class~="text-signal-soft"]) {
@@ -1439,7 +1442,7 @@ body {
 }
 
 :where(.page-hero, .paper-surface) :focus-visible {
-  outline-color: #171a18 !important;
+  outline-color: var(--color-ink) !important;
 }
 
 #main-content :where([class*="border-white"], [class*="border-black"]) {
@@ -1448,7 +1451,7 @@ body {
 
 .page-hero,
 .paper-surface {
-  --color-rule: #a4a79d;
+  --color-rule: var(--color-rule-light);
 }
 
 #main-content :is([class*="text-white/4"], [class*="text-white/5"]) {
@@ -1456,12 +1459,8 @@ body {
 }
 
 [data-plan-card] {
-  background: #303431;
+  background: var(--color-surface-raised);
   border: 1px solid var(--color-rule);
-}
-
-[data-plan-card]:nth-child(even) {
-  background: #272b28;
 }
 
 [data-plan-card]:hover,
@@ -1472,11 +1471,11 @@ body {
 #workflow-catalog .workflow-product {
   min-height: 6rem;
   border-color: var(--color-rule);
-  background: #303431;
+  background: var(--color-surface-raised);
 }
 
 #workflow-catalog .workflow-product:nth-child(even) {
-  background: #272b28;
+  background: var(--color-surface);
 }
 
 #workflow-catalog .workflow-product:hover,
@@ -1498,13 +1497,13 @@ body {
 #studies article:nth-child(odd),
 #main-content tbody tr:nth-child(odd),
 #current-work .interactive-row:nth-child(odd) {
-  background: #303431;
+  background: var(--color-surface-raised);
 }
 
 #studies article:nth-child(even),
 #main-content tbody tr:nth-child(even),
 #current-work .interactive-row:nth-child(even) {
-  background: #252926;
+  background: var(--color-surface);
 }
 
 #current-work .interactive-row:hover,
@@ -1516,15 +1515,15 @@ body {
 .home-system-rail > a:nth-child(even),
 .paper-surface article:nth-child(even),
 .paper-surface .home-method-item:nth-child(even) {
-  background: #deded5;
+  background: var(--color-paper-muted);
 }
 
 .paper-surface .home-method-item:nth-child(odd) {
-  background: #e8e7df;
+  background: var(--color-paper);
 }
 
 .page-hero li:nth-child(even) {
-  background: #d2d5cd;
+  background: var(--color-paper-muted);
 }
 
 .home-system-rail > a:hover,
@@ -1554,7 +1553,7 @@ body {
 .catalog-section-nav {
   flex-wrap: wrap;
   gap: 0.5rem;
-  background: #171918;
+  background: var(--color-ink);
 }
 
 .back-to-top {
@@ -1566,10 +1565,10 @@ body {
   min-height: 2.75rem;
   align-items: center;
   gap: 1rem;
-  border: 1px solid #171918;
+  border: 1px solid var(--color-ink);
   background: var(--color-signal);
   padding: 0.5rem 1rem;
-  color: #171918;
+  color: var(--color-ink);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1586,10 +1585,10 @@ body {
 }
 
 /* Inset editorial panels remain distinct from the page surrounding them. */
-#published-study article { background: #303431; }
+#published-study article { background: var(--color-surface-raised); }
 
 [aria-labelledby="product-contracts-title"] .interactive-row:nth-child(even) {
-  background: #303431;
+  background: var(--color-surface-raised);
 }
 
 [aria-labelledby="product-contracts-title"] .interactive-row:hover,
@@ -1598,8 +1597,8 @@ body {
   color: #080808;
 }
 
-.product-start-row { background: #303431; }
-.product-start-row:nth-child(even) { background: #252926; }
+.product-start-row { background: var(--color-surface-raised); }
+.product-start-row:nth-child(even) { background: var(--color-surface); }
 .product-start-row:hover,
 .product-start-row:focus-visible { background: var(--color-signal); color: #080808; }
 .product-start-row:hover .text-signal,

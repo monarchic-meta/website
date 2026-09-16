@@ -29,3 +29,12 @@ artifact: only `source.commit` changed. No pricing or usage rules changed.
 Visual evidence is written outside the repository to
 `/tmp/monarchic-legibility`. The staging links in the attachment could not be
 opened through the browsing tool; verification uses the local build.
+
+## Consistent surface palette
+
+Following review of staging, gray surfaces use fixed roles instead of changing
+with section order. Dark sections use `surface` (`#202020`), and cards and inset
+panels use `surface-raised` (`#3c3c3c`). Light sections use `paper` (`#f2f0e8`),
+and light panels use `paper-muted` (`#d6d3c9`). Repeated rows alternate within
+those pairs. Card grids keep one panel color. Black remains for the navigation,
+footer, and brain field; yellow marks actions and the existing principle panel.
