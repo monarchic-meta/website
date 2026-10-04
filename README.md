@@ -2,6 +2,9 @@
 
 Public website for Monarchic.
 
+Start with the [documentation index](docs/README.md) for current contracts,
+operator procedures, and historical design reviews.
+
 ## Approved planning contracts
 
 The approved WebInfo interview defines the next corporate-site information
@@ -40,17 +43,16 @@ surface. It currently owns:
 - the public products catalog at `/products`
 - individual product detail pages at `/products/[slug]`
 - the research index at `/research`
-- one bounded research brief for each of the 26 public MCPs at
-  `/research/[slug]`
-- the substantive ExplicitMem benchmark at `/research/explicitmem`
+- the approved, artifact-backed ExplicitMem report at `/research/explicitmem`;
+  product workflow checks do not automatically create research pages
 - the current trust boundary at `/security`
 - the company, mission, approach, and operator page at `/company`
 - a compatibility redirect from `/about` to `/company`
 - privacy and service terms at `/privacy` and `/terms`
 - generated `robots.txt` and `sitemap.xml` endpoints
 
-The authenticated product experience, cart, account pages, API-key management,
-and hosted MCP dashboard live in `../monarchic-webapp`.
+Authentication, plan selection, account pages, API-key management, and hosted
+MCP setup live in `../monarchic-webapp`.
 
 ## Stack
 
