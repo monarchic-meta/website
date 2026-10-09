@@ -38,6 +38,7 @@
 
             buildPhase = ''
               runHook preBuild
+              export GOMAXPROCS="$NIX_BUILD_CORES"
               pnpm run build
               runHook postBuild
             '';
