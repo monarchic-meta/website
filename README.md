@@ -41,6 +41,7 @@ surface. It currently owns:
 
 - the company-led home page at `/`
 - the public products catalog at `/products`
+- workspace and role guidance at `/products/hosted-mcps#workspaces`, including Owner-only billing and access troubleshooting
 - individual product detail pages at `/products/[slug]`
 - the research index at `/research`
 - the approved, artifact-backed ExplicitMem report at `/research/explicitmem`;

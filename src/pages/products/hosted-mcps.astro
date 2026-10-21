@@ -149,11 +149,46 @@ function statusClasses(plan: CatalogPlan): string {
 
         <nav aria-label="Product sections" class="catalog-section-nav page-bar flex flex-nowrap items-center gap-2 overflow-x-auto bg-surface py-4">
           <a href="#plans" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Plans</a>
+          <a href="#workspaces" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Workspaces &amp; roles</a>
           <a href="#workflow-catalog" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Find by workflow</a>
           <a href="#mcp-catalog" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Available enhancements</a>
           <a href="#coming-soon-mcps" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Coming soon</a>
           <a href="#how-usage-works" class="shrink-0 border border-white/50 px-3 py-2 text-[0.68rem] font-semibold uppercase text-white/72 transition hover:border-signal hover:bg-signal hover:text-black">Usage</a>
         </nav>
+
+        <section id="workspaces" aria-labelledby="workspaces-title" class="page-section scroll-mt-8">
+          <p class="font-mono text-xs font-bold uppercase text-signal">Before you start / Access</p>
+          <h2 id="workspaces-title" class="mt-3 text-3xl font-extrabold uppercase sm:text-4xl">Your account. Your workspace. Your role.</h2>
+          <div class="mt-6 grid gap-6 lg:grid-cols-2">
+            <div>
+              <h3 class="text-lg font-bold">Your account identifies you</h3>
+              <p class="mt-2 text-sm leading-7 text-white/70">Your account is the identity you sign in with. A workspace groups shared projects and access. Your membership gives you a role in that workspace, and your role can differ between workspaces.</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold">Check the workspace before changing a plan</h3>
+              <p class="mt-2 text-sm leading-7 text-white/70">In the app, look for <strong class="text-white">Account workspace</strong> and <strong class="text-white">Your role</strong> on the account pages. Billing controls and member-role changes require Owner access in that workspace. An Admin role does not include those permissions.</p>
+            </div>
+          </div>
+          <dl class="mt-7 border-y border-white/30">
+            {[
+              ["Owner", "Manages workspace billing and member roles, as well as projects and work."],
+              ["Admin", "Creates and manages projects, controls runs, and reviews work. Billing and member-role changes require an Owner."],
+              ["Member", "Launches work and reads runs, tasks, and artifacts within their permitted access."],
+              ["Reviewer", "Reads runs, tasks, and artifacts and records review decisions. This role does not allow launching work."],
+            ].map(([role, description]) => (
+              <div class="grid gap-2 border-b border-white/20 py-5 last:border-b-0 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-6">
+                <dt class="font-mono text-sm font-bold uppercase text-signal">{role}</dt>
+                <dd class="max-w-3xl text-sm leading-7 text-white/76">{description}</dd>
+              </div>
+            ))}
+          </dl>
+          <p class="mt-4 max-w-3xl text-sm leading-7 text-white/70">Roles apply within the workspace you can access. Available actions also depend on project access, API-key scopes, and plan entitlements.</p>
+          <div class="mt-7 border-l-2 border-signal pl-5">
+            <h3 class="text-lg font-bold">Seeing “Owner access required”?</h3>
+            <p class="mt-2 max-w-3xl text-sm leading-7 text-white/76">You are signed in, but your role does not permit that action. Check the account workspace and ask an existing workspace Owner to make the change or grant you the appropriate role. If you cannot identify an Owner, contact <a href="mailto:support@monarchic.io" class="underline underline-offset-4 hover:text-signal">support@monarchic.io</a>. A role restriction does not mean your subscription is missing.</p>
+            <a href={`${webappBaseUrl}/app/account/subscription`} class="mt-4 inline-flex min-h-12 items-center gap-4 text-xs font-bold uppercase text-signal underline underline-offset-4 hover:text-signal-soft">Check your workspace and role <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
 
         <section id="plans" class="page-section scroll-mt-8">
           <h2 class="text-3xl font-extrabold uppercase sm:text-4xl">Shared usage capacity</h2>
