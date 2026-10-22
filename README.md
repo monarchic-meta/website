@@ -72,8 +72,9 @@ MCP setup live in `../monarchic-webapp`.
 - Astro as the site shell
 - Tailwind CSS v4 for styling
 - a self-hosted Space Grotesk variable font bundled through Fontsource
-- Svelte integration available for future interactive islands
-- A code-native shader background component in `src/components/Shader14.astro`
+- Svelte for the interactive waitlist form
+- A canvas brain component in `src/components/InteractiveBrain.astro`, with
+  interaction logic in `src/scripts/interactive-brain.ts`
 - Shared canonical/Open Graph/Twitter metadata through
   `src/components/SeoHead.astro`
 - A 1200x630 branded social preview image at `public/social-card.png`
@@ -140,31 +141,37 @@ live deployment checklist and current smoke evidence.
 │   └── social-card.svg
 ├── src/
 │   ├── components/
+│   │   ├── InteractiveBrain.astro
 │   │   ├── ProductWorkflowProof.astro
-│   │   ├── Shader14.astro
-│   │   └── SeoHead.astro
+│   │   ├── SeoHead.astro
+│   │   └── WaitlistForm.svelte
 │   ├── lib/
+│   │   ├── explicitmemBenchmark.ts
 │   │   ├── mcpResearch.ts
-│   │   ├── mcpResearchContent.json
 │   │   ├── pricing.ts
 │   │   ├── productDetails.ts
 │   │   └── productWorkflowProofs.ts
 │   ├── pages/
 │   │   ├── index.astro
 │   │   ├── about.astro (compatibility redirect)
+│   │   ├── build-info.json.ts
 │   │   ├── company.astro
 │   │   ├── privacy.astro
 │   │   ├── robots.txt.ts
 │   │   ├── security.astro
 │   │   ├── sitemap.xml.ts
 │   │   ├── terms.astro
+│   │   ├── tutorial.astro (redirect to webapp setup)
+│   │   ├── waitlist.astro
 │   │   ├── products/
 │   │   │   ├── index.astro
+│   │   │   ├── hosted-mcps.astro
 │   │   │   └── [slug].astro
 │   │   └── research/
 │   │       ├── index.astro
-│   │       ├── [slug].astro
 │   │       └── explicitmem.astro
+│   ├── scripts/
+│   │   └── interactive-brain.ts
 │   └── styles/
 │       └── global.css
 ├── astro.config.mjs
@@ -174,14 +181,15 @@ live deployment checklist and current smoke evidence.
 
 ## Notes
 
-- `src/lib/pricing.generated.json`, `src/lib/pricing.coming-soon.json`, and
-  `src/lib/productDetails.ts` are generated deploy artifacts copied from
-  `../shared/product-catalog`. Edit the shared catalog, then run
-  `pnpm sync:shared-catalog` from `../monarchic-webapp`.
+- `src/lib/pricing.ts`, `src/lib/pricing.generated.json`,
+  `src/lib/pricing.public.generated.json`, `src/lib/pricing.coming-soon.json`,
+  `src/lib/productDetails.ts`, and `src/lib/catalog.manifest.json` are generated
+  deploy artifacts copied from `../shared/product-catalog`. Edit the shared
+  catalog, then run `pnpm sync:shared-catalog` from `../monarchic-webapp`.
 - `pnpm check:shared-catalog` compares the website and webapp generated catalog
   artifacts against `../shared/product-catalog` when the sibling workspace is
-  present. In a standalone website checkout it skips cleanly so Vercel and
-  GitHub can still build the deployable artifact copy.
+  present. In a standalone website checkout it skips the sibling comparison
+  while still validating the committed manifest and build-info contract.
 - `src/lib/usage-policy.generated.json` is the fail-closed public subset of
   `monarchic-mcp-catalog`. Run `pnpm sync:mcp-pricing` after catalog changes.
   The sync includes approved subscription prices, cadence, rollover, stop
@@ -206,14 +214,10 @@ live deployment checklist and current smoke evidence.
 - Available MCP product pages render a website-local, schema-grounded workflow
   proof. Those examples must keep their permission and content-isolation
   boundaries beside the request, output, and estimated usage impact.
-- `src/lib/mcpResearchContent.json` is website-local public content. Its entries
-  must cover the same 26 MCP slugs as the catalog exactly. Hosted status and the
-  available-plan or waitlist action are derived from the catalog instead of
-  being duplicated in research copy.
-- Product research briefs explain the problem, validation approach, public
-  evidence boundary, and current limits without exposing proprietary
-  implementation details. A brief is not called a benchmark unless it meets
-  the stricter publication bar used by the ExplicitMem LongMemEval-S report.
+- `src/lib/mcpResearch.ts` associates the approved ExplicitMem research report
+  with its catalog product. `src/lib/explicitmemBenchmark.ts` holds its published
+  study summaries. Research coverage is independent of catalog coverage;
+  product workflow proofs do not create research routes.
 - Set `PUBLIC_MONARCHIC_WEBSITE_BASE_URL` when building non-production
   environments that need canonical URLs, Open Graph URLs, robots output, and
   sitemap entries to point somewhere other than `https://monarchic.io`.
@@ -227,8 +231,8 @@ live deployment checklist and current smoke evidence.
   `MONARCHIC_WEBSITE_LOCAL_PORT`.
 - `pnpm smoke:production` uses Playwright to verify the live site HTTP
   response, `robots.txt`, `sitemap.xml`, homepage metadata, product pages,
-  all 26 research routes, reciprocal product links, the waitlist form contract,
-  and horizontal overflow against
+  the ExplicitMem research route, reciprocal product links, the waitlist form
+  contract, and horizontal overflow against
   `https://www.monarchic.io` while keeping canonical URLs pinned to
   `https://monarchic.io`. Override the target with
   `MONARCHIC_WEBSITE_SMOKE_URL`. Override expected canonical links with
