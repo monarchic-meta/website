@@ -79,9 +79,39 @@ MCP setup live in `../monarchic-webapp`.
   `src/components/SeoHead.astro`
 - A 1200x630 branded social preview image at `public/social-card.png`
 
+## Development workflow
+
+Use the Nix flake for the development environment and packaging. The dev shell
+provides Node.js, pnpm, Jujutsu, and Chromium, with Playwright configured to use
+that Chromium executable.
+
+```bash
+nix develop
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+Use pnpm for dependencies and package scripts. Build the packaged static site
+with `nix build`; the output is available at `result/dist`. Run `nix flake check`
+for the package, Astro diagnostics, contracts, and local static smoke checks.
+Full browser checks remain available through the smoke and legibility commands
+below.
+
+Use Jujutsu for version control. Review each change and commit the smallest
+coherent unit with a Conventional Commit message, for example:
+
+```bash
+jj status
+jj diff
+jj commit -m "docs: clarify website setup" README.md
+```
+
+Keep unrelated changes in separate commits. Use `jj commit --interactive` when
+individual hunks need to be split.
+
 ## Commands
 
-- `pnpm install`
+- `pnpm install --frozen-lockfile`
 - `pnpm dev`
 - `pnpm check`
 - `pnpm check:legibility` (requires a running local preview)
