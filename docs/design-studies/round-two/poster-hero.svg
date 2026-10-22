@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" role="img" aria-labelledby="interrupt-hero-title interrupt-hero-desc">
+  <title id="interrupt-hero-title">Monarchic — Interrupt / Poster</title>
+  <desc id="interrupt-hero-desc">Original Swiss neo-brutalist poster. Giant cropped type, a jagged pink paper plane, stepped midnight contours, a vermilion circular segment, a cyan cutout and a diagonal ivory strip.</desc>
+  <defs>
+    <clipPath id="interrupt-hero-page"><rect width="900" height="1000"/></clipPath>
+    <clipPath id="interrupt-hero-circle-crop"><path d="M610 608H900V1000H610Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#interrupt-hero-page)">
+    <rect width="900" height="1000" fill="#f04428"/>
+    <rect width="900" height="74" fill="#192136"/>
+    <g fill="#fff7e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="1.7">
+      <text x="30" y="45">MONARCHIC / FIELD STUDIES</text>
+      <text x="870" y="45" text-anchor="end">05 — INTERRUPT</text>
+    </g>
+
+    <!-- Deliberately cropped typography is material, not a page heading. -->
+    <g fill="#192136" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" letter-spacing="-27">
+      <text x="-39" y="350" font-size="329">MONA</text>
+      <text x="126" y="577" font-size="279">RCHIC</text>
+    </g>
+    <rect x="690" y="114" width="165" height="88" fill="#68e5e8"/>
+    <path d="M702 126h20m-10-10v20M823 178h20m-10-10v20" fill="none" stroke="#192136" stroke-width="2"/>
+
+    <!-- A paper edge is cut into an irregular, asymmetric zigzag. -->
+    <path d="M0 608 80 583 143 621 223 589 303 629 379 596 451 632 517 606 584 647 645 624 705 663 767 640 824 679 900 650V1000H0Z" fill="#f8dbd5"/>
+
+    <!-- One slash of cream cuts through both the letters and paper. -->
+    <path d="M-77 528 939 359 955 459-60 628Z" fill="#fff7e8"/>
+    <g fill="#192136" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">
+      <text x="35" y="551">SYSTEMS WITH INTENT</text>
+      <text x="532" y="470">ARTIFACT NO. 005</text>
+    </g>
+
+    <!-- A hard stepped contour is allowed to collide with the paper edge. -->
+    <path d="M542 1000V919H581V850H620V781H659V712H698V643H737V574H900V1000Z" fill="#192136"/>
+    <g fill="none" stroke="#fff7e8" stroke-width="3">
+      <path d="M573 1000V938H612V869H651V800H690V731H729V662H768V593H900"/>
+      <path d="M602 1000V957H641V888H680V819H719V750H758V681H797V612H900"/>
+      <path d="M631 1000V976H670V907H709V838H748V769H787V700H826V631H900"/>
+    </g>
+    <g clip-path="url(#interrupt-hero-circle-crop)">
+      <path d="M900 721A220 220 0 0 0 680 941H900Z" fill="#f04428"/>
+      <path d="M900 761A180 180 0 0 0 720 941" fill="none" stroke="#f8dbd5" stroke-width="3"/>
+      <path d="M900 797A144 144 0 0 0 756 941" fill="none" stroke="#f8dbd5" stroke-width="3"/>
+      <path d="M900 833A108 108 0 0 0 792 941" fill="none" stroke="#f8dbd5" stroke-width="3"/>
+    </g>
+
+    <g fill="#192136" font-family="Arial, Helvetica, sans-serif">
+      <text x="34" y="709" font-size="14" font-weight="700" letter-spacing="2.4">AI RESEARCH / DEVELOPMENT</text>
+      <g font-size="59" font-weight="900" letter-spacing="-2.5">
+        <text x="30" y="785">Make the</text>
+        <text x="30" y="846">work visible.</text>
+      </g>
+      <text x="34" y="904" font-size="17" letter-spacing=".15">Assign. Observe. Review. Repeat.</text>
+      <text x="34" y="958" font-size="13" font-weight="700" letter-spacing="2">MONARCHIC.IO</text>
+    </g>
+    <g fill="none" stroke="#192136" stroke-width="2">
+      <path d="M19 94h22m-11-11v22M19 981h22m-11-11v22"/>
+      <path d="M866 94h22m-11-11v22"/>
+    </g>
+    <path d="M859 959h26m-13-13v26" fill="none" stroke="#fff7e8" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="interrupt-wide-title interrupt-wide-desc">
+  <title id="interrupt-wide-title">Monarchic — Interrupt / Wide field</title>
+  <desc id="interrupt-wide-desc">Companion wide composition. Vermilion and pink fields collide with large midnight letter fragments, a diagonal ivory strip, a stepped contour and a coral circular segment.</desc>
+  <defs><clipPath id="interrupt-wide-page"><rect width="1200" height="500"/></clipPath></defs>
+  <g clip-path="url(#interrupt-wide-page)">
+    <rect width="1200" height="500" fill="#f04428"/>
+    <path d="M720 0H1200V500H649L675 457 645 419 687 382 659 344 699 306 673 268 713 230 685 192 725 154 698 116 739 78 710 40Z" fill="#f8dbd5"/>
+    <text x="-38" y="366" fill="#192136" font-family="Arial Black, Helvetica, Arial, sans-serif" font-size="385" font-weight="900" letter-spacing="-33">MON</text>
+    <text x="249" y="541" fill="#192136" font-family="Arial Black, Helvetica, Arial, sans-serif" font-size="211" font-weight="900" letter-spacing="-19">ARCHIC</text>
+
+    <path d="M855 500V455H886V408H917V361H948V314H979V267H1010V220H1041V173H1072V126H1200V500Z" fill="#192136"/>
+    <g fill="none" stroke="#fff7e8" stroke-width="2.5">
+      <path d="M880 500V474H911V427H942V380H973V333H1004V286H1035V239H1066V192H1097V145H1200"/>
+      <path d="M905 500V493H936V446H967V399H998V352H1029V305H1060V258H1091V211H1122V164H1200"/>
+    </g>
+    <path d="M1200 246A230 230 0 0 0 970 476H1200Z" fill="#f04428"/>
+    <g fill="none" stroke="#f8dbd5" stroke-width="2.5">
+      <path d="M1200 281A195 195 0 0 0 1005 476"/>
+      <path d="M1200 316A160 160 0 0 0 1040 476"/>
+      <path d="M1200 351A125 125 0 0 0 1075 476"/>
+    </g>
+
+    <path d="M-28 318 1218 113 1232 199-14 404Z" fill="#fff7e8"/>
+    <g fill="#192136" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+      <text x="33" y="335" font-size="18" letter-spacing="1.5">MAKE THE WORK VISIBLE.</text>
+      <text x="826" y="203" font-size="15" letter-spacing="2">ASSIGN / REVIEW / REPEAT</text>
+    </g>
+    <rect x="783" y="24" width="153" height="75" fill="#68e5e8"/>
+    <path d="M794 36h18m-9-9v18M907 78h18m-9-9v18" fill="none" stroke="#192136" stroke-width="1.5"/>
+
+    <g fill="#192136" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.9">
+      <text x="32" y="45">MONARCHIC / FIELD STUDIES</text>
+      <text x="1168" y="45" text-anchor="end">05 — INTERRUPT</text>
+      <text x="33" y="470">MONARCHIC.IO</text>
+    </g>
+    <g fill="none" stroke="#192136" stroke-width="2">
+      <path d="M19 74h22m-11-11v22M19 487h22m-11-11v22M1157 74h22m-11-11v22"/>
+    </g>
+    <path d="M1155 477h26m-13-13v26" fill="none" stroke="#fff7e8" stroke-width="2"/>
+  </g>
+</svg>
