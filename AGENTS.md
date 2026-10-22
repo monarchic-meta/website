@@ -20,6 +20,9 @@
   between Framer and the Astro/Svelte implementation.
 - Keep code and shared catalogs authoritative for the implemented site. Do not
   introduce automatic code, asset, design-token, or CMS synchronization.
+- Consult the [design inspiration catalog](docs/design-inspiration.md) for
+  curated visual references. Cite its stable reference IDs in Framer experiments
+  and handoffs; references inform exploration rather than implementation specs.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when
   implementing a prototype. Framer edits are not versioned by Jujutsu.

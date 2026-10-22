@@ -5,6 +5,11 @@ Convert designs manually between Framer and the Astro/Svelte site in either
 direction. The repository and shared catalogs remain authoritative for the
 implemented site and its product and pricing data.
 
+Use the [design inspiration catalog](design-inspiration.md) to find curated
+neo-brutalist, Swiss, and digital design references. Cite stable reference IDs
+when exploring a direction in Framer. Each entry records inspiration to adapt;
+the prototype and manual handoff define the chosen design.
+
 ## Workspace and connection
 
 - [Monarchic Framer project](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt)
@@ -43,6 +48,7 @@ off a design:
 
 - The explicit Framer project and node links and the affected site routes or
   components.
+- Relevant inspiration reference IDs and the specific traits adapted from them.
 - Screenshots or exported assets when they clarify the intended result.
 - Target breakpoints and important interaction states, including hover, focus,
   expanded, loading, or error states where applicable.

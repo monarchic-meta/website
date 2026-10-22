@@ -10,6 +10,8 @@
 - [WebInfo handoff](../webinfo/README.md): interview artifacts and reuse instructions.
 - [Framer prototyping](framer-prototyping.md): visual workspace, MCP connection,
   and manual handoff to and from the implemented site.
+- [Design inspiration](design-inspiration.md): curated neo-brutalist, Swiss,
+  and digital design references from X bookmarks, with stable IDs for prototypes.
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 
