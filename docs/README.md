@@ -14,6 +14,8 @@
   and digital design references from X bookmarks, with stable IDs for prototypes.
 - [Framer homepage explorations](framer-prototypes.md): editable visual directions,
   project nodes, and manual implementation handoff notes.
+- [Framer visual round two](framer-visual-round-two.md): additional homepage
+  directions and original graphic studies.
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 

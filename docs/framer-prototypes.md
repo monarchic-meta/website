@@ -6,6 +6,9 @@ These are editable visual prototypes for comparing directions. The
 [manual Framer workflow](framer-prototyping.md) still governs conversion to or
 from the Astro/Svelte site; no implementation or release is implied.
 
+Continue with [round two](framer-visual-round-two.md) for additional homepage
+directions and a separate gallery of original graphic studies.
+
 ## Concepts
 
 | Direction | Framer page | Breakpoints | References |
