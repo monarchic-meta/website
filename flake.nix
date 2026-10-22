@@ -129,6 +129,7 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.chromium
+              pkgs.jujutsu
               pkgs.nodejs_22
               pkgs.pnpm
               pkgs.util-linux
