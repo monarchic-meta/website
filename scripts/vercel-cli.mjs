@@ -24,7 +24,7 @@ const env = {
 const commandArgs = ["vercel@latest", ...(args.length > 0 ? args : ["whoami"])];
 if (!hasScope(commandArgs) && shouldAddScope(commandArgs)) commandArgs.push("--scope", scope);
 
-const result = spawnSync("npx", commandArgs, {
+const result = spawnSync("pnpm", ["dlx", ...commandArgs], {
   cwd: process.cwd(),
   env,
   stdio: "inherit",
