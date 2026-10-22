@@ -8,6 +8,8 @@
   [page-map contracts](../webcomposer/page-maps.json): approved planning inputs.
   Later source routes and catalog decisions may supersede individual proposals.
 - [WebInfo handoff](../webinfo/README.md): interview artifacts and reuse instructions.
+- [Framer prototyping](framer-prototyping.md): visual workspace, MCP connection,
+  and manual handoff to and from the implemented site.
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 

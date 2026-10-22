@@ -14,6 +14,16 @@
 - Use Conventional Commit messages, such as `docs: document development workflow`
   or `fix: correct canonical URL handling`.
 
+## Visual Prototyping
+
+- Use Framer for visual prototypes, with manual handoff in either direction
+  between Framer and the Astro/Svelte implementation.
+- Keep code and shared catalogs authoritative for the implemented site. Do not
+  introduce automatic code, asset, design-token, or CMS synchronization.
+- Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
+  project/node links, responsive states, and intentional differences when
+  implementing a prototype. Framer edits are not versioned by Jujutsu.
+
 ## Required Internal Skills
 
 When working in this repo, use these skills from the `internal-skills` repo:
