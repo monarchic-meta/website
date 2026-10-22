@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" fill="none">
+  <title>Aperture / Habitat — separated portal pieces</title>
+  <desc>Three solid architectural pieces separated across a quiet field: a teal load-bearing portal, a pale suspended lintel and jamb, and an orange stepped footing. Polygon faces and diagonal shadows describe their depth.</desc>
+  <path fill="#f3f6ee" d="M0 0H1200V600H0Z"/>
+
+  <!-- Each shadow belongs to a separate slab; there is no wireframe scaffold. -->
+  <path fill="#d9f3ec" d="m126 427 230-77 152 91-230 77Z"/>
+  <path fill="#d9f3ec" d="m504 391 218-73 152 91-218 73Z"/>
+  <path fill="#d9f3ec" d="m856 445 220-73 115 69-220 73Z"/>
+
+  <!-- 01 / the load-bearing portal. -->
+  <path fill="#032e33" d="m356 104 27 18v305l-27-18Z"/>
+  <path fill="#17626a" d="m126 181 230-77 27 18-230 77Z"/>
+  <path fill="#032e33" d="m184 226 27 18v169l-27-18Z"/>
+  <path fill="#2a6b70" d="m184 226 114-38 27 18-114 38Z"/>
+  <path fill="#063f45" fill-rule="evenodd" d="M126 181 356 104V409L126 486ZM184 226V395L298 357V188Z"/>
+  <path stroke="#28676c" stroke-width="1.3" d="m127 181 228-76"/>
+
+  <!-- 02 / a lifted lintel and long right jamb; an open counterform. -->
+  <path fill="#8cb9b1" d="m722 70 27 18v287l-27-18Z"/>
+  <path fill="#eafff8" d="m504 143 218-73 27 18-218 73Z"/>
+  <path fill="#8cb9b1" d="m504 197 164-55 27 18-164 55Z"/>
+  <path fill="#d9f3ec" d="m504 143 218-73v287l-54 18V142l-164 55Z"/>
+  <path fill="#bce1d7" d="m668 142 27 18v233l-27-18Z"/>
+  <path stroke="#f3f6ee" stroke-width="1.3" d="m505 143 216-72"/>
+
+  <!-- 03 / a warm footing, broken away from its uprights. -->
+  <path fill="#b94f2c" d="m1076 204 27 18v205l-27-18Z"/>
+  <path fill="#ffa16e" d="m1022 222 54-18 27 18-54 18Z"/>
+  <path fill="#ffa16e" d="m856 390 166-55 27 18-166 55Z"/>
+  <path fill="#f2773d" d="m1022 222 54-18v205l-220 73v-92l166-55Z"/>
+  <path fill="#b94f2c" d="m856 482 220-73 27 18-220 73Z"/>
+  <path stroke="#ffb583" stroke-width="1.3" d="m1023 222 52-17"/>
+
+  <path fill="#063f45" d="M62 55H81V74H62Z"/>
+  <path fill="#d9f3ec" d="M87 55H106V74H87Z"/>
+  <path fill="#f2773d" d="M112 55H131V74H112Z"/>
+  <text x="62" y="101" fill="#063f45" font-family="monospace" font-size="10" letter-spacing="1.8">APERTURE / 02</text>
+  <text x="126" y="548" fill="#063f45" font-family="monospace" font-size="10" letter-spacing="1.8">01</text>
+  <text x="504" y="548" fill="#063f45" font-family="monospace" font-size="10" letter-spacing="1.8">02</text>
+  <text x="856" y="548" fill="#063f45" font-family="monospace" font-size="10" letter-spacing="1.8">03</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" fill="none">
+  <title>Aperture / Habitat — nested portal sculpture</title>
+  <desc>Three broad architectural portal planes in teal, ice, and warm orange. Their offset apertures reveal a warm core; solid polygon reveals and a diagonal ground shadow give the sculpture depth.</desc>
+  <defs>
+    <clipPath id="front-aperture"><path d="M220 385 440 312V650L220 723Z"/></clipPath>
+    <clipPath id="middle-aperture"><path d="M300 335 520 262V600L300 673Z"/></clipPath>
+    <clipPath id="rear-aperture"><path d="M380 285 600 212V550L380 623Z"/></clipPath>
+  </defs>
+  <path fill="#f3f6ee" d="M0 0H900V1000H0Z"/>
+  <!-- A single long shadow establishes a floor without a drawn horizon. -->
+  <path fill="#d9f3ec" d="m135 855 375-125 284 170-375 100Z"/>
+  <path fill="#063f45" opacity=".12" d="m135 855 375-125 185 111-375 125Z"/>
+
+  <!-- Warm core: one solid plane, seen through the three apertures. -->
+  <path fill="#f2773d" d="m332 378 217-73v328l-217 73Z"/>
+  <path fill="#b94f2c" d="m549 305 32 22v328l-32-22Z"/>
+
+  <!-- Rear portal, orange face with a dark burnt-orange extrusion. -->
+  <path fill="#b94f2c" d="m670 85 32 22v545l-32-22Z"/>
+  <path fill="#ffa16e" d="m295 210 375-125 32 22-375 125Z"/>
+  <path fill="#063f45" d="M380 285 600 212V550L380 623Z"/>
+  <g clip-path="url(#rear-aperture)">
+    <path fill="#f2773d" d="m412 307 188-63v306l-188 63Z"/>
+    <path fill="#b94f2c" d="m380 285 32 22v338l-32-22Z"/>
+    <path fill="#ffa16e" d="m380 285 220-73 32 22-220 73Z"/>
+  </g>
+  <path fill="#f2773d" fill-rule="evenodd" d="M295 210 670 85V630L295 755ZM380 285V623L600 550V212Z"/>
+  <path stroke="#ffb583" stroke-width="1.5" d="m296 210 373-124"/>
+
+  <!-- Middle portal: the pale face is substantial, not a fine outline. -->
+  <path fill="#8cb9b1" d="m590 135 32 22v545l-32-22Z"/>
+  <path fill="#eafff8" d="m215 260 375-125 32 22-375 125Z"/>
+  <g clip-path="url(#middle-aperture)">
+    <path fill="#8cb9b1" d="m300 335 32 22v338l-32-22Z"/>
+    <path fill="#bce1d7" d="m300 335 220-73 32 22-220 73Z"/>
+  </g>
+  <path fill="#d9f3ec" fill-rule="evenodd" d="M215 260 590 135V680L215 805ZM300 335V673L520 600V262Z"/>
+  <path stroke="#f3f6ee" stroke-width="1.5" d="m216 260 373-124"/>
+
+  <!-- Foreground portal: a deep teal slab, cut right through. -->
+  <path fill="#032e33" d="m510 185 32 22v545l-32-22Z"/>
+  <path fill="#17626a" d="m135 310 375-125 32 22-375 125Z"/>
+  <g clip-path="url(#front-aperture)">
+    <path fill="#032e33" d="m220 385 32 22v338l-32-22Z"/>
+    <path fill="#2a6b70" d="m220 385 220-73 32 22-220 73Z"/>
+  </g>
+  <path fill="#063f45" fill-rule="evenodd" d="M135 310 510 185V730L135 855ZM220 385V723L440 650V312Z"/>
+  <path stroke="#28676c" stroke-width="1.5" d="m136 310 373-124"/>
+
+  <!-- A short material swatch acts as the sculpture's only specimen mark. -->
+  <path fill="#063f45" d="M71 84H91V104H71Z"/>
+  <path fill="#d9f3ec" d="M97 84H117V104H97Z"/>
+  <path fill="#f2773d" d="M123 84H143V104H123Z"/>
+  <text x="71" y="128" fill="#063f45" font-family="monospace" font-size="10" letter-spacing="1.8">APERTURE / 01</text>
+</svg>
