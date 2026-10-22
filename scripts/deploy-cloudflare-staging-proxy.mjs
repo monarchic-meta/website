@@ -5,7 +5,7 @@ const apply = process.argv.slice(2).includes("--apply");
 const sha = git(["rev-parse", "HEAD"]);
 const expectedSha = process.env.MONARCHIC_WEBSITE_EXPECTED_COMMIT_SHA;
 const args = [
-  "--yes",
+  "dlx",
   "wrangler@4.112.0",
   "deploy",
   "--config",
@@ -34,7 +34,7 @@ if (apply && git(["status", "--porcelain"])) {
   throw new Error("staging proxy deploy requires a clean Git checkout");
 }
 
-const result = spawnSync("npx", args, {
+const result = spawnSync("pnpm", args, {
   cwd: process.cwd(),
   env: process.env,
   stdio: "inherit",
