@@ -1,0 +1,4 @@
+# Framer is a visual prototyping workspace; handoffs to Astro are manual.
+# See docs/framer-prototyping.md for the project and workflow.
+[mcp_servers.framer]
+url = "https://mcp.framer.com/mcp"
