@@ -10,6 +10,9 @@ neo-brutalist, Swiss, and digital design references. Cite stable reference IDs
 when exploring a direction in Framer. Each entry records inspiration to adapt;
 the prototype and manual handoff define the chosen design.
 
+The [homepage explorations](framer-prototypes.md) record the first three visual
+directions, their project nodes, source references, and review scope.
+
 ## Workspace and connection
 
 - [Monarchic Framer project](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt)
