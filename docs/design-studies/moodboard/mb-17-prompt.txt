@@ -1,0 +1,13 @@
+Built-in image_gen / original stylized-concept artwork / transparent background.
+
+Initial prompt:
+Use case: stylized-concept
+Asset type: MB-17 — original isolated material/object study for a freeform graphic-design moodboard, reference GRA-012's interest in reflective technical display art.
+Primary request: one thick polished chrome C-shaped mechanical hinge sculpture. An asymmetric chamfered rectangular C loop with a very deep rectangular central opening, its opening clearly breaks through one side. Broad folded planes, substantial extruded thickness, precise chamfered corners, and a tiny recessed orange inset accent set into one exterior face. It must read as an original sculptural industrial object, not a letterform or manufactured product replica.
+Style/medium: gallery-quality stylized 3D material exploration; extremely crisp smooth polished chrome with sharp black and white studio-environment reflections defining the broad flat folded planes.
+Composition/framing: full entire single object isolated in a three-quarter view, portrait composition about 440:560 proportions; object occupies about 70% of frame with generous empty transparent margins on every side.
+Scene/backdrop: genuinely transparent background, including the central opening and all space around the object. No floor, no environment drawn into the background, no cast shadow plane, no pedestal.
+Constraints: one original asymmetrical rectangular C-shaped hinge object only. Preserve clearly angular broad planes. No torus, ring, donut, sphere, flower, petals, orb, helix, organic blob, text, logos, numbers, interface, labels, border, collage, extra object or watermark. Orange is a tiny inset accent, chrome dominates.
+
+Framing edit, using the preceding image and transparent_background: true:
+Use case: precise-object-edit. Keep the existing chrome C-shaped sculpture exactly as designed: same asymmetrical chamfered rectangular form, same deep opening, same polished black/white reflections and tiny orange inset. Change only framing. Pull back the camera so the entire object, including every lower corner, has a comfortable transparent margin of at least 12% of the image height on top and bottom, and at least 10% of the width on both sides. Portrait composition. Preserve genuine transparent alpha everywhere outside the object and in its open center. No floor, background, pedestal, extra object, text or labels. Do not crop any part of the object.
