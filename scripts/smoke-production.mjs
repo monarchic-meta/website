@@ -200,8 +200,8 @@ async function runBrowserSmoke() {
       await interactiveBrain.waitFor();
       const brainCanvas = interactiveBrain.locator("[data-brain-canvas]");
       await brainCanvas.waitFor();
-      await page.getByText(/Production infrastructure for capable AI agents/i).waitFor();
-      await page.getByText(/hosted systems · one account · operator-controlled/i).waitFor();
+      await page.getByText(/Give your AI agent access to repository context/i).waitFor();
+      await page.getByText(/hosted MCPs available today/i).waitFor();
       await page.locator("[data-editorial-index]").waitFor();
       await page.locator("[data-operating-status-rail]").waitFor();
       await page.getByText(/99.8% answer accuracy on LongMemEval-S/i).waitFor();
@@ -226,14 +226,14 @@ async function runBrowserSmoke() {
       await divisionRail.getByRole("heading", { name: "Products", exact: true }).waitFor();
       await divisionRail.getByRole("heading", { name: "Platform", exact: true }).waitFor();
       await divisionRail.getByRole("heading", { name: "Research", exact: true }).waitFor();
-      await page.getByRole("heading", { name: "What Monarchic builds." }).waitFor();
+      await page.getByRole("heading", { name: "How the system fits together" }).waitFor();
       await page.getByRole("heading", { name: "A person should be able to assign a job and review the result." }).waitFor();
       await page.getByRole("heading", { name: `${expectedAvailableMcpCount} agent enhancements are available.` }).waitFor();
       await page.getByText(/Each enhancement is delivered through a hosted MCP connection/i).waitFor();
-      await page.getByRole("heading", { name: "Current status. Future direction." }).waitFor();
+      await page.getByRole("heading", { name: "What we’re developing" }).waitFor();
       await page.getByRole("heading", { name: "Long-running agent workflows" }).waitFor();
       await page.getByRole("heading", { name: "Beyond software engineering" }).waitFor();
-      await page.getByRole("heading", { name: "Research. Security. Company." }).waitFor();
+      await page.getByRole("heading", { name: "Examine the work behind the products" }).waitFor();
       await page.getByText("ReleaseOps", { exact: true }).first().waitFor();
       await page.getByRole("link", { name: "Products", exact: true }).first().waitFor();
       await page.getByRole("link", { name: "Research" }).first().waitFor();
