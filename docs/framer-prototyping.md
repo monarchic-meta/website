@@ -14,6 +14,8 @@ The [homepage explorations](framer-prototypes.md) record the first three visual
 directions, their project nodes, source references, and review scope.
 The [second visual round](framer-visual-round-two.md) explores additional palettes,
 graphic systems, and a standalone artwork gallery.
+The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
+independent graphic elements into a separate design canvas in the same project.
 
 ## Workspace and connection
 

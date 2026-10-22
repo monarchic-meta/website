@@ -15,6 +15,9 @@ they do not all belong to the same style.
 | [Art and visual inspiration](design-inspiration/art.md) | Selected references for atmosphere, material, color, and complex-system imagery |
 | [Sites](design-inspiration/sites.md) | Verified destinations, their source posts, and the scope of live inspection |
 
+The [Framer visual kitchen](framer-moodboard.md) places attributed reference
+previews beside 24 original graphic studies, with a separate area to try combinations.
+
 ## Start with these references
 
 | Design question | References | Trait to explore |

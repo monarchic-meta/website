@@ -16,6 +16,8 @@
   project nodes, and manual implementation handoff notes.
 - [Framer visual round two](framer-visual-round-two.md): additional homepage
   directions and original graphic studies.
+- [Framer moodboard](framer-moodboard.md): a freeform visual kitchen with source
+  references, 24 independent graphics, and a combination playground.
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 
