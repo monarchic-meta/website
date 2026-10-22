@@ -15,8 +15,14 @@ they do not all belong to the same style.
 | [Art and visual inspiration](design-inspiration/art.md) | Selected references for atmosphere, material, color, and complex-system imagery |
 | [Sites](design-inspiration/sites.md) | Verified destinations, their source posts, and the scope of live inspection |
 
-The [Framer visual kitchen](framer-moodboard.md) places attributed reference
-previews beside 24 original graphic studies, with a separate area to try combinations.
+The [Framer visual kitchen](framer-moodboard.md) separates **Source inspiration**
+from **Original compositions**. Its source inventory covers the catalog's 68
+external URLs across all 39 stable entries: 58 X previews and ten site/support
+link cards. The 24 made-here studies are classified as 23 independent
+compositions and one labeled source-led adaptation, with a combination playground.
+External work and close adaptations retain source attribution in the inspiration
+section, even when Codex makes the adaptation; our generated adaptation is not
+attributed to the external artist.
 
 ## Start with these references
 

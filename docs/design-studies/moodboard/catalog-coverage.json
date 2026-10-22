@@ -1,0 +1,2352 @@
+{
+  "inventoryDate": "2026-10-22",
+  "scope": "All public external links in the four design inspiration catalog documents, including secondary posts, quoted originals, further reading, other sampled Art directions, site destinations and supporting attribution/verification links.",
+  "keyPolicy": "primaryCatalogId preserves existing stable catalog IDs. A suffix distinguishes multiple source URLs under one stable ID. WEB-SECONDARY, GRA-READ, ART-OTHER and SITE-VERIFY keys are inventory-only, not new stable catalog references.",
+  "rightsAndAttribution": "These are externally authored inspiration references, distinct from Monarchic original compositions. Posting account is not assumed to establish original artwork authorship or a reuse license. This inventory supplies no downloaded media and no invented previews.",
+  "summary": {
+    "stableCatalogEntries": 39,
+    "uniqueSourceURLs": 68,
+    "xPostURLs": 58,
+    "otherPublicURLs": 10,
+    "sourceURLsByCategory": {
+      "Web & UI Design": 19,
+      "Graphic Design": 27,
+      "Art & Visual Inspiration": 12,
+      "Sites": 10
+    },
+    "stableEntriesByCategory": {
+      "Web & UI Design": 13,
+      "Graphic Design": 13,
+      "Art & Visual Inspiration": 6,
+      "Sites": 7
+    },
+    "inventoryOnlySourceEntries": 14,
+    "observedPreviewImageURLs": 58,
+    "previewKinds": {
+      "still preview": 43,
+      "video poster": 15,
+      "link only": 10
+    },
+    "existingFramerReferenceGroups": 19,
+    "pendingNewFramerReferenceGroups": 0,
+    "savedExpandedGalleryVerified": true,
+    "savedNewFramerReferenceGroups": 49
+  },
+  "catalogEntries": [
+    {
+      "catalogId": "WEB-001",
+      "title": "SP-01 specification layout",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-001"
+      ]
+    },
+    {
+      "catalogId": "WEB-002",
+      "title": "CROX engineering studio",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-002"
+      ]
+    },
+    {
+      "catalogId": "WEB-003",
+      "title": "Meridian hero concept",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-003"
+      ]
+    },
+    {
+      "catalogId": "WEB-004",
+      "title": "Voxa detail study",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-004"
+      ]
+    },
+    {
+      "catalogId": "WEB-005",
+      "title": "Mapping-OS",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-005"
+      ]
+    },
+    {
+      "catalogId": "WEB-006",
+      "title": "Dither cards and character graphics",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-006",
+        "WEB-006-02"
+      ]
+    },
+    {
+      "catalogId": "WEB-007",
+      "title": "Shader workflow illustration",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-007"
+      ]
+    },
+    {
+      "catalogId": "WEB-008",
+      "title": "Lumen Studio footer",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-008"
+      ]
+    },
+    {
+      "catalogId": "WEB-009",
+      "title": "NORD footer direction",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-009"
+      ]
+    },
+    {
+      "catalogId": "WEB-010",
+      "title": "Hero wireframe studies",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-010"
+      ]
+    },
+    {
+      "catalogId": "WEB-011",
+      "title": "Footer wireframe studies",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-011"
+      ]
+    },
+    {
+      "catalogId": "WEB-012",
+      "title": "Satto studio visual language",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-012"
+      ]
+    },
+    {
+      "catalogId": "WEB-013",
+      "title": "Framer interactive-site roundups",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-013",
+        "WEB-013-02"
+      ]
+    },
+    {
+      "catalogId": "GRA-001",
+      "title": "Swiss editorial structure",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-001",
+        "GRA-001-02",
+        "GRA-001-03"
+      ]
+    },
+    {
+      "catalogId": "GRA-002",
+      "title": "Technical identity and specification strips",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-002",
+        "GRA-002-02",
+        "GRA-002-03"
+      ]
+    },
+    {
+      "catalogId": "GRA-003",
+      "title": "One mark across media",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-003"
+      ]
+    },
+    {
+      "catalogId": "GRA-004",
+      "title": "Modular graphic family",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-004"
+      ]
+    },
+    {
+      "catalogId": "GRA-005",
+      "title": "Sparse technical boards and wireframe forms",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-005",
+        "GRA-005-02",
+        "GRA-005-03"
+      ]
+    },
+    {
+      "catalogId": "GRA-006",
+      "title": "Dot-matrix event composition",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-006"
+      ]
+    },
+    {
+      "catalogId": "GRA-007",
+      "title": "Printed logic and halftone texture",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-007",
+        "GRA-007-02"
+      ]
+    },
+    {
+      "catalogId": "GRA-008",
+      "title": "Pixel light and a faint grid",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-008"
+      ]
+    },
+    {
+      "catalogId": "GRA-009",
+      "title": "Orange identity with disruptive typography",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-009"
+      ]
+    },
+    {
+      "catalogId": "GRA-010",
+      "title": "Technical marks on a material surface",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-010"
+      ]
+    },
+    {
+      "catalogId": "GRA-011",
+      "title": "Image decomposition and technical collage",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-011",
+        "GRA-011-02",
+        "GRA-011-03"
+      ]
+    },
+    {
+      "catalogId": "GRA-012",
+      "title": "Technical display illustration",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-012",
+        "GRA-012-02",
+        "GRA-012-03"
+      ]
+    },
+    {
+      "catalogId": "GRA-013",
+      "title": "Report poster (supporting)",
+      "category": "Graphic Design",
+      "sourceKeys": [
+        "GRA-013"
+      ]
+    },
+    {
+      "catalogId": "ART-001",
+      "title": "Schematic landscape",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-001"
+      ]
+    },
+    {
+      "catalogId": "ART-002",
+      "title": "Annotated engine render",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-002"
+      ]
+    },
+    {
+      "catalogId": "ART-003",
+      "title": "Physical object with digital overlays",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-003"
+      ]
+    },
+    {
+      "catalogId": "ART-004",
+      "title": "Complex system with a human scale cue",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-004"
+      ]
+    },
+    {
+      "catalogId": "ART-005",
+      "title": "Warm light inside a cool field",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-005"
+      ]
+    },
+    {
+      "catalogId": "ART-006",
+      "title": "Warm architectural rhythm",
+      "category": "Art & Visual Inspiration",
+      "sourceKeys": [
+        "ART-006"
+      ]
+    },
+    {
+      "catalogId": "SITE-001",
+      "title": "CROX",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-001",
+        "SITE-001-02"
+      ]
+    },
+    {
+      "catalogId": "SITE-002",
+      "title": "a New Scaffolding",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-002"
+      ]
+    },
+    {
+      "catalogId": "SITE-003",
+      "title": "Pixel Orb",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-003"
+      ]
+    },
+    {
+      "catalogId": "SITE-004",
+      "title": "Satto studio",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-004"
+      ]
+    },
+    {
+      "catalogId": "SITE-005",
+      "title": "BIONA",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-005"
+      ]
+    },
+    {
+      "catalogId": "SITE-006",
+      "title": "Parabol Labs",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-006",
+        "SITE-006-02"
+      ]
+    },
+    {
+      "catalogId": "SITE-007",
+      "title": "TRYBREATHING",
+      "category": "Sites",
+      "sourceKeys": [
+        "SITE-007"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "key": "WEB-001",
+      "primaryCatalogId": "WEB-001",
+      "catalogTitle": "SP-01 specification layout",
+      "title": "@kyleanthony",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2102373344519586084"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A still image uses an enormous SP-01 masthead, black/white rectangular cells, small technical headers, a capability table, and a large orbital illustration.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HS0hZ3uXEAA6Ct0?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "nbfo8eDf0",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "ymuOB7eUb",
+      "framerCaption": "zRW59M1Bj"
+    },
+    {
+      "key": "WEB-002",
+      "primaryCatalogId": "WEB-002",
+      "catalogTitle": "CROX engineering studio",
+      "title": "@konrad_designs",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/konrad_designs/status/2104948743338676568"
+      ],
+      "postingAccount": {
+        "handle": "@konrad_designs",
+        "displayNameFromCatalog": "Konrad Makowski"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Sampled GIF frames show a pale gray construction grid, large black PROCESS heading, orange rectangular actions, and numbered stages. The live desktop hero also uses heavy bordered navigation cells and oversized type.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/tweet_video_thumb/HTZHq1ZXQAA0xOn.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "A2N1X2HOm",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "eSuCoW5Vz",
+      "framerCaption": "ZUROGSL7T"
+    },
+    {
+      "key": "WEB-003",
+      "primaryCatalogId": "WEB-003",
+      "catalogTitle": "Meridian hero concept",
+      "title": "@simoomdesign",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/simoomdesign/status/2093990724325052627"
+      ],
+      "postingAccount": {
+        "handle": "@simoomdesign",
+        "displayNameFromCatalog": "Simoom"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Desktop and narrow mobile still mockups pair a compact white headline with an isometric node/cube illustration, small utility labels, dark surfaces, and a yellow-green action. Sky/landscape framing surrounds the presentation mockups.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ9YiVbaYAEmcsh?format=jpg&name=360x360"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "zmGxJS3gk",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "Nd27f_lgR",
+      "framerCaption": "oYXgkkr_N"
+    },
+    {
+      "key": "WEB-004",
+      "primaryCatalogId": "WEB-004",
+      "catalogTitle": "Voxa detail study",
+      "title": "@shivangshah_",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/shivangshah_/status/2098007256218714207"
+      ],
+      "postingAccount": {
+        "handle": "@shivangshah_",
+        "displayNameFromCatalog": "Shivang"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Visible still previews show an off-white hero, a left-aligned black headline, thin rules, registration crosses, hatched horizontal strips, a square black action, and a dashboard over a soft photographic field.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR2eTjUbwAAPJXc?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "wX589FGAe",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "M064stMWK",
+      "framerCaption": "rT6BPae4J"
+    },
+    {
+      "key": "WEB-005",
+      "primaryCatalogId": "WEB-005",
+      "catalogTitle": "Mapping-OS",
+      "title": "@kyleanthony",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2096936475820450291"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A sampled video frame shows a huge white MAPPING-OS heading above a dark green spatial/terrain visualization, fine axes, tiny labels, and sparse orange markers.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2096936345193046016/img/QQFXFO7bFixWRHX7.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "pyCwsSraf",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "PyAqnjXsC",
+      "framerCaption": "RTa_dj_t3"
+    },
+    {
+      "key": "WEB-006",
+      "primaryCatalogId": "WEB-006",
+      "catalogTitle": "Dither cards and character graphics",
+      "title": "@praveenisomer: Dither cards",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/praveenisomer/status/2107433191036326234"
+      ],
+      "postingAccount": {
+        "handle": "@praveenisomer",
+        "displayNameFromCatalog": "Praveen Kumar"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A sampled feed video frame presents four white cells, cobalt dithered abstract/figurative graphics, small serif titles, fine boundaries, and compact black controls. A separate post-detail video frame shows a purple character-like toroidal form on white beside serif headings and a compact metric strip.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2107388453877149696/img/NzU4eNcclrB4bjJA.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "hqMOVHhTQ",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "ChVJUrq3w",
+      "framerCaption": "zA3thn9n3"
+    },
+    {
+      "key": "WEB-006-02",
+      "primaryCatalogId": "WEB-006",
+      "catalogTitle": "Dither cards and character graphics",
+      "title": "ASCII website study",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/praveenisomer/status/2007776523109970116"
+      ],
+      "postingAccount": {
+        "handle": "@praveenisomer",
+        "displayNameFromCatalog": "Praveen Kumar"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A sampled feed video frame presents four white cells, cobalt dithered abstract/figurative graphics, small serif titles, fine boundaries, and compact black controls. A separate post-detail video frame shows a purple character-like toroidal form on white beside serif headings and a compact metric strip.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2007499293440258049/img/C1i751F4SVtuau8T.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "Q4JfXf1h6",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "fhYIAXp1F",
+      "framerCaption": "CBV3Tiv3j"
+    },
+    {
+      "key": "WEB-007",
+      "primaryCatalogId": "WEB-007",
+      "catalogTitle": "Shader workflow illustration",
+      "title": "@oguzyagizkara",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/oguzyagizkara/status/2100171221493027080"
+      ],
+      "postingAccount": {
+        "handle": "@oguzyagizkara",
+        "displayNameFromCatalog": "Oğuz Yağız Kara"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A sampled video frame shows orange raster-like cube nodes and connecting paths on a white grid beside product copy.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2100170960993206272/img/scSvFpgKD0WMxoSW.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "zbEGOwRzm",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "mMRyEvwnE",
+      "framerCaption": "RfNQYpUNn"
+    },
+    {
+      "key": "WEB-008",
+      "primaryCatalogId": "WEB-008",
+      "catalogTitle": "Lumen Studio footer",
+      "title": "@TheKartikBansal",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/TheKartikBansal/status/2093400198538309803"
+      ],
+      "postingAccount": {
+        "handle": "@TheKartikBansal",
+        "displayNameFromCatalog": "Kartik Bansal"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "A still preview combines a conventional multi-column link area on a dark surface with a huge cropped Lumen Studio wordmark and cream, flame-like grain artwork.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ1AX47bUAAR9Mh?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "V2R_MONtn",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "c0oRHOo25",
+      "framerCaption": "i6D3_qgVR"
+    },
+    {
+      "key": "WEB-009",
+      "primaryCatalogId": "WEB-009",
+      "catalogTitle": "NORD footer direction",
+      "title": "@qclay_design",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/qclay_design/status/2097330841068150995"
+      ],
+      "postingAccount": {
+        "handle": "@qclay_design",
+        "displayNameFromCatalog": "QClay Design"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Sampled video frames show a light page with compact, aligned navigation columns above a wide engraved-looking mountain landscape.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2097321135637479424/img/3Q3AwulZbcl0PU6k.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "qylWPyAVV",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "QLDpaTjWy",
+      "framerCaption": "KYV59MaxX"
+    },
+    {
+      "key": "WEB-010",
+      "primaryCatalogId": "WEB-010",
+      "catalogTitle": "Hero wireframe studies",
+      "title": "@dezainaz_ceo",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/dezainaz_ceo/status/2100102199699464528"
+      ],
+      "postingAccount": {
+        "handle": "@dezainaz_ceo",
+        "displayNameFromCatalog": "Kenshi Tsukamoto"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Two visible boards present 16 grayscale first-view compositions with varied title scales, asymmetric image placeholders, and supporting text positions.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSUPeLGa4AAHGXX?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "UIdlGAP93",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "kA5p2FArz",
+      "framerCaption": "IZBWzMEjy"
+    },
+    {
+      "key": "WEB-011",
+      "primaryCatalogId": "WEB-011",
+      "catalogTitle": "Footer wireframe studies",
+      "title": "@dezainaz_ceo",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/dezainaz_ceo/status/2102679115778465874"
+      ],
+      "postingAccount": {
+        "handle": "@dezainaz_ceo",
+        "displayNameFromCatalog": "Kenshi Tsukamoto"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Two visible boards collect 16 footer ideas, ranging from small navigation grids to oversized sign-offs and typographic contact arrangements.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HS43PIxbkAAc_mk?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "UyB52Cqjw",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "fu991EH5T",
+      "framerCaption": "baXZu2KFs"
+    },
+    {
+      "key": "WEB-012",
+      "primaryCatalogId": "WEB-012",
+      "catalogTitle": "Satto studio visual language",
+      "title": "@Satto_studio",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/Satto_studio/status/2094148642168832020"
+      ],
+      "postingAccount": {
+        "handle": "@Satto_studio",
+        "displayNameFromCatalog": "Satto studio"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Sampled video frames place small uppercase text in repeated spatial clusters on white around a large S-like arrangement of black dots.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2094147385022697473/img/SUi8ttNjpv67mLeg.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "cUF5olgbg",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "pHl7HvjO1",
+      "framerCaption": "O0uUV565t"
+    },
+    {
+      "key": "WEB-013",
+      "primaryCatalogId": "WEB-013",
+      "catalogTitle": "Framer interactive-site roundups",
+      "title": "August 30 roundup",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/framer/status/2094171717325455794"
+      ],
+      "postingAccount": {
+        "handle": "@framer",
+        "displayNameFromCatalog": "Framer"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Sampled montage frames juxtapose very different approaches: a black/white table-like archive, scattered digital imagery, a pale sculptural product hero, a dark signal motif, colorful typographic blocks, and cinematic renders.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2094171697196990464/img/SBmZxYrbeL0FHp_n.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "E1HXUuxQc",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "ID0noX2XH",
+      "framerCaption": "mNw1o4Qxy"
+    },
+    {
+      "key": "WEB-013-02",
+      "primaryCatalogId": "WEB-013",
+      "catalogTitle": "Framer interactive-site roundups",
+      "title": "September 12 roundup",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/framer/status/2098871721113882668"
+      ],
+      "postingAccount": {
+        "handle": "@framer",
+        "displayNameFromCatalog": "Framer"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Sampled montage frames juxtapose very different approaches: a black/white table-like archive, scattered digital imagery, a pale sculptural product hero, a dark signal motif, colorful typographic blocks, and cinematic renders.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2098871696556269568/img/4clttfSEv2C4e62F.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "SNhIraAZU",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "pcSaef30A",
+      "framerCaption": "tLoUxoeol"
+    },
+    {
+      "key": "GRA-001",
+      "primaryCatalogId": "GRA-001",
+      "catalogTitle": "Swiss editorial structure",
+      "title": "@tdeser: A4",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/tdeser/status/2097707312290943074"
+      ],
+      "postingAccount": {
+        "handle": "@tdeser",
+        "displayNameFromCatalog": "Serge"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "A4's sampled frame combines huge black grotesk type, thin grids, overlapping photos, and a red contact action on white. Still previews show white/teal financial typography with serial labels, plus staggered black words crossed by an orange stripe and a separate white serif intelligence poster.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2097707221182296064/img/XSgW7Fy0ScbG6m1i.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "u8PACyGCU",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "lUGUl5KqA",
+      "framerCaption": "g8Iu9PQQO"
+    },
+    {
+      "key": "GRA-001-02",
+      "primaryCatalogId": "GRA-001",
+      "catalogTitle": "Swiss editorial structure",
+      "title": "Capital Finds Direction",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/tdeser/status/2098423571361997194"
+      ],
+      "postingAccount": {
+        "handle": "@tdeser",
+        "displayNameFromCatalog": "Serge"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "A4's sampled frame combines huge black grotesk type, thin grids, overlapping photos, and a red contact action on white. Still previews show white/teal financial typography with serial labels, plus staggered black words crossed by an orange stripe and a separate white serif intelligence poster.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR8YcwJW0AoeQkn?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "TQCXaCzH3",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "fmK4WU0g7",
+      "framerCaption": "WEkVwJIrt"
+    },
+    {
+      "key": "GRA-001-03",
+      "primaryCatalogId": "GRA-001",
+      "catalogTitle": "Swiss editorial structure",
+      "title": "Finding signal",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/tdeser/status/2102051003574911054"
+      ],
+      "postingAccount": {
+        "handle": "@tdeser",
+        "displayNameFromCatalog": "Serge"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "A4's sampled frame combines huge black grotesk type, thin grids, overlapping photos, and a red contact action on white. Still previews show white/teal financial typography with serial labels, plus staggered black words crossed by an orange stripe and a separate white serif intelligence poster.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSv7ZpyWEAAuQSl?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "zCQvfrgM7",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "UhyBUNvds",
+      "framerCaption": "rYF93MG4w"
+    },
+    {
+      "key": "GRA-002",
+      "primaryCatalogId": "GRA-002",
+      "catalogTitle": "Technical identity and specification strips",
+      "title": "@kyleanthony: Advanced Perception Group",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2097656831287914919"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show turquoise/black oversized sans, thermal-looking cyan/yellow/orange dithering, dotted TRS lettering, and technical strips. RDS-01 adds neon green/white modules and spec rows; SP-1 uses outlined letters, machine-like mono labels, and a symbol built from striped horizontal bars.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRxfuRGaIAAfmsu?format=png&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "zrandzkMt",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "vk4yw21IU",
+      "framerCaption": "VKuLHbfh5"
+    },
+    {
+      "key": "GRA-002-02",
+      "primaryCatalogId": "GRA-002",
+      "catalogTitle": "Technical identity and specification strips",
+      "title": "RDS-01",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2099240225717281095"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show turquoise/black oversized sans, thermal-looking cyan/yellow/orange dithering, dotted TRS lettering, and technical strips. RDS-01 adds neon green/white modules and spec rows; SP-1 uses outlined letters, machine-like mono labels, and a symbol built from striped horizontal bars.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSH_yvrbQAAmPEK?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "nFTMdGc7D",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "EGVHLYPIw",
+      "framerCaption": "H_lQVX97a"
+    },
+    {
+      "key": "GRA-002-03",
+      "primaryCatalogId": "GRA-002",
+      "catalogTitle": "Technical identity and specification strips",
+      "title": "SP-1",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2098567618605003090"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show turquoise/black oversized sans, thermal-looking cyan/yellow/orange dithering, dotted TRS lettering, and technical strips. RDS-01 adds neon green/white modules and spec rows; SP-1 uses outlined letters, machine-like mono labels, and a symbol built from striped horizontal bars.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR-cIA4bkAAC-zO?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "wHT3CL2Uy",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "xwWSlXVYS",
+      "framerCaption": "HFEY2f_I9"
+    },
+    {
+      "key": "GRA-003",
+      "primaryCatalogId": "GRA-003",
+      "catalogTitle": "One mark across media",
+      "title": "@kyleanthony: Nucleus Engineering Office",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/kyleanthony/status/2104541893728350394"
+      ],
+      "postingAccount": {
+        "handle": "@kyleanthony",
+        "displayNameFromCatalog": "Kyle Anthony Miller"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews repeat a stepped-line N monogram across a white grid and a black textile patch, with neon green used alongside the same marks.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HTTVpjEXEAAMSlq?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "c8QauAj1a",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "W4GlvEgkC",
+      "framerCaption": "zQ7DKs927"
+    },
+    {
+      "key": "GRA-004",
+      "primaryCatalogId": "GRA-004",
+      "catalogTitle": "Modular graphic family",
+      "title": "@ayushsoni_io: graphical system for Grafana",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/ayushsoni_io/status/2095474754165867000"
+      ],
+      "postingAccount": {
+        "handle": "@ayushsoni_io",
+        "displayNameFromCatalog": "Ayush"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "A sampled video frame arranges yellow, magenta, lime, orange, and cyan tiles on a charcoal checker/grid, with construction guides.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2095474656249798656/img/DUeoQ_k6TMHEydOJ.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "gbSjQ9iZE",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "ya0oSZ9we",
+      "framerCaption": "EQWzGKMMa"
+    },
+    {
+      "key": "GRA-005",
+      "primaryCatalogId": "GRA-005",
+      "catalogTitle": "Sparse technical boards and wireframe forms",
+      "title": "@MoizArshi29: Cooking",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/MoizArshi29/status/2097998312331001947"
+      ],
+      "postingAccount": {
+        "handle": "@MoizArshi29",
+        "displayNameFromCatalog": "Moiz"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show a six-panel gray board with tiny mono text, sparse rules/crosshairs, colored nodes, wireframe petal twists, and dot matrices. Related posts show a closer treatment and an Outler board with wireframes, abstract orbits, and typographic panels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR2WVYxbYAAjKhG?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "U724N4gsk",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "aQpBNTIoj",
+      "framerCaption": "QWpijjc5_"
+    },
+    {
+      "key": "GRA-005-02",
+      "primaryCatalogId": "GRA-005",
+      "catalogTitle": "Sparse technical boards and wireframe forms",
+      "title": "Baked",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/MoizArshi29/status/2097958065836618233"
+      ],
+      "postingAccount": {
+        "handle": "@MoizArshi29",
+        "displayNameFromCatalog": "Moiz"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show a six-panel gray board with tiny mono text, sparse rules/crosshairs, colored nodes, wireframe petal twists, and dot matrices. Related posts show a closer treatment and an Outler board with wireframes, abstract orbits, and typographic panels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR1lJniaYAAcnAq?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "Zw1jwIYLO",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "leCoUC9XF",
+      "framerCaption": "QcJfzlA7e"
+    },
+    {
+      "key": "GRA-005-03",
+      "primaryCatalogId": "GRA-005",
+      "catalogTitle": "Sparse technical boards and wireframe forms",
+      "title": "Outler board",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/MoizArshi29/status/2100147724788326781"
+      ],
+      "postingAccount": {
+        "handle": "@MoizArshi29",
+        "displayNameFromCatalog": "Moiz"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show a six-panel gray board with tiny mono text, sparse rules/crosshairs, colored nodes, wireframe petal twists, and dot matrices. Related posts show a closer treatment and an Outler board with wireframes, abstract orbits, and typographic panels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSU5Ny0bcAAaBgd?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "ODP42dMWW",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "VkPjw34YW",
+      "framerCaption": "dchfBNlFb"
+    },
+    {
+      "key": "GRA-006",
+      "primaryCatalogId": "GRA-006",
+      "catalogTitle": "Dot-matrix event composition",
+      "title": "@_zuji: US BY NIGHT",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/_zuji/status/2100138045404319993"
+      ],
+      "postingAccount": {
+        "handle": "@_zuji",
+        "displayNameFromCatalog": "ivor"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show a black US BY NIGHT event poster with white dot-matrix symbols, vertical type, and coordinates.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSUwaxrawAAUqK-?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "gWkb7VAOk",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "BC1FLMrxg",
+      "framerCaption": "na7Pj9Yjz"
+    },
+    {
+      "key": "GRA-007",
+      "primaryCatalogId": "GRA-007",
+      "catalogTitle": "Printed logic and halftone texture",
+      "title": "@LouiseVisual: Printed logic",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/LouiseVisual/status/2094010373934338106"
+      ],
+      "postingAccount": {
+        "handle": "@LouiseVisual",
+        "displayNameFromCatalog": "Louise"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show black halftone stacked cubes and broken bars on grainy warm off-white.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ9rVbmXQAAjUN8?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "i7Pnd1Fbt",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "WtwHkxxj6",
+      "framerCaption": "OykLiHoR7"
+    },
+    {
+      "key": "GRA-007-02",
+      "primaryCatalogId": "GRA-007",
+      "catalogTitle": "Printed logic and halftone texture",
+      "title": "Louise's earlier Inkfleck study",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/LouiseVisual/status/2091880473622458394"
+      ],
+      "postingAccount": {
+        "handle": "@LouiseVisual",
+        "displayNameFromCatalog": "Louise"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show black halftone stacked cubes and broken bars on grainy warm off-white.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQfV418XsAAO8s0?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "Uok66IYFg",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "JYX6PzZRF",
+      "framerCaption": "N5pweqhII"
+    },
+    {
+      "key": "GRA-008",
+      "primaryCatalogId": "GRA-008",
+      "catalogTitle": "Pixel light and a faint grid",
+      "title": "@Skirook: glowing ASCII visual language",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/Skirook/status/2092866327828627927"
+      ],
+      "postingAccount": {
+        "handle": "@Skirook",
+        "displayNameFromCatalog": "Raunak"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "The first image and the edge of a second preview show a cobalt/cyan pixel or LED-like flower against navy with a faint grid. The remaining images were not inspected.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQtazgjbMAAalHS?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "z3NF5xR6j",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "eWP_n3Fls",
+      "framerCaption": "uOctvc21m"
+    },
+    {
+      "key": "GRA-009",
+      "primaryCatalogId": "GRA-009",
+      "catalogTitle": "Orange identity with disruptive typography",
+      "title": "@designbyaron: Pixel Orb",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/designbyaron/status/2099928493119152212"
+      ],
+      "postingAccount": {
+        "handle": "@designbyaron",
+        "displayNameFromCatalog": "Aron"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "The first two post previews show saturated orange, a diagonal white website strip/barcode, black type, disrupted 180° numerals, and small glyphs. SITE-003 records the separate review of the current Pixel Orb homepage.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSRwT-PWgAEJkwh?format=png&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "nFtw8Ma6f",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "oT4O1CDEd",
+      "framerCaption": "P1tdqctYV"
+    },
+    {
+      "key": "GRA-010",
+      "primaryCatalogId": "GRA-010",
+      "catalogTitle": "Technical marks on a material surface",
+      "title": "@notgauze: ICHOR",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/notgauze/status/2100124489296368084"
+      ],
+      "postingAccount": {
+        "handle": "@notgauze",
+        "displayNameFromCatalog": "Flora Xia"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show black technical marks and tiny labels over white fabric folds, registration crosses, a small lime square, and giant cropped vertical ICHOR lettering.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSUkF9obYAANxmn?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "gim9E9BuP",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "IhEgevciq",
+      "framerCaption": "nSwk6V4Fi"
+    },
+    {
+      "key": "GRA-011",
+      "primaryCatalogId": "GRA-011",
+      "catalogTitle": "Image decomposition and technical collage",
+      "title": "@elfilter_a: decomposition",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/elfilter_a/status/2098086802179440797"
+      ],
+      "postingAccount": {
+        "handle": "@elfilter_a",
+        "displayNameFromCatalog": "Elfilter"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Selected still previews show an aerial city/railway image bent into curves and vertical pixel stretches; a cyan eye crop with crosshairs, a small red dot, and a schematic; and a floral/blue landscape collage with black blocks, off-white sheet framing, and a yellow circle.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR3mVn2awAY2ETu?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "aXAgk5yWG",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "OAqk0Jpsu",
+      "framerCaption": "GFJTTyj4N"
+    },
+    {
+      "key": "GRA-011-02",
+      "primaryCatalogId": "GRA-011",
+      "catalogTitle": "Image decomposition and technical collage",
+      "title": "Gm",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/elfilter_a/status/2098337734611878381"
+      ],
+      "postingAccount": {
+        "handle": "@elfilter_a",
+        "displayNameFromCatalog": "Elfilter"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Selected still previews show an aerial city/railway image bent into curves and vertical pixel stretches; a cyan eye crop with crosshairs, a small red dot, and a schematic; and a floral/blue landscape collage with black blocks, off-white sheet framing, and a yellow circle.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR7K7ctbQAAhkTU?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "S6sFrwzDi",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "Y4yLjXUup",
+      "framerCaption": "b39RCR5AQ"
+    },
+    {
+      "key": "GRA-011-03",
+      "primaryCatalogId": "GRA-011",
+      "catalogTitle": "Image decomposition and technical collage",
+      "title": "floral/landscape collage",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/elfilter_a/status/2104667930885521710"
+      ],
+      "postingAccount": {
+        "handle": "@elfilter_a",
+        "displayNameFromCatalog": "Elfilter"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Selected still previews show an aerial city/railway image bent into curves and vertical pixel stretches; a cyan eye crop with crosshairs, a small red dot, and a schematic; and a floral/blue landscape collage with black blocks, off-white sheet framing, and a yellow circle.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HTVIQ3JX0AAM9Eh?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "rNeAse1yD",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "HYl4wh0R8",
+      "framerCaption": "xq7Ws62_I"
+    },
+    {
+      "key": "GRA-012",
+      "primaryCatalogId": "GRA-012",
+      "catalogTitle": "Technical display illustration",
+      "title": "@Sanfang10_: monochrome study",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/Sanfang10_/status/2102061962347913362"
+      ],
+      "postingAccount": {
+        "handle": "@Sanfang10_",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show reflective chrome ribbons/spheres with huge 20/26 numerals, rules, and tiny labels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HSwGM58b0AAtaPx?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "OOIEEiLb_",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "HuJGG1Tby",
+      "framerCaption": "lKGn_HJ34"
+    },
+    {
+      "key": "GRA-012-02",
+      "primaryCatalogId": "GRA-012",
+      "catalogTitle": "Technical display illustration",
+      "title": "Xchyler Drenth's sampled video frame",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/XchylerDrenth/status/2093352031721513406"
+      ],
+      "postingAccount": {
+        "handle": "@XchylerDrenth",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show reflective chrome ribbons/spheres with huge 20/26 numerals, rules, and tiny labels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093351983625502720/img/5SXQNEy3R9PTEZwb.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "HZ9plRkae",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "C7DX9Jo4e",
+      "framerCaption": "o54SOdQ6l"
+    },
+    {
+      "key": "GRA-012-03",
+      "primaryCatalogId": "GRA-012",
+      "catalogTitle": "Technical display illustration",
+      "title": "Ayush's original",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/ayushsoni_io/status/2093284574243824100"
+      ],
+      "postingAccount": {
+        "handle": "@ayushsoni_io",
+        "displayNameFromCatalog": "Ayush"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Still previews show reflective chrome ribbons/spheres with huge 20/26 numerals, rules, and tiny labels.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQzW79ha8AAeBLc?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "m3UD72I0n",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "B5A4VYKqw",
+      "framerCaption": "nueL8mpSW"
+    },
+    {
+      "key": "GRA-013",
+      "primaryCatalogId": "GRA-013",
+      "catalogTitle": "Report poster (supporting)",
+      "title": "@olegcoada: AI vs Craft",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/olegcoada/status/2102734075606020172"
+      ],
+      "postingAccount": {
+        "handle": "@olegcoada",
+        "displayNameFromCatalog": "Oleg"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "The post-detail still image, viewed below full size, shows a textured burgundy/dark-red sheet, a thin pale mint/turquoise heading, huge dark dot-matrix 86% numerals, small two-column prose, terminal-like PROMPT SELECT / REFINE DIRECT labels, and a large dotted THE QUESTION footer.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HS5pfQCWMAAK3c7?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "pCg3ddxcf",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "aHk7RXnWT",
+      "framerCaption": "Kfh_hUmiX"
+    },
+    {
+      "key": "ART-001",
+      "primaryCatalogId": "ART-001",
+      "catalogTitle": "Schematic landscape",
+      "title": "@DRUGONDRAGON",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/DRUGONDRAGON/status/2102733123540979945"
+      ],
+      "postingAccount": {
+        "handle": "@DRUGONDRAGON",
+        "displayNameFromCatalog": "龍"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "A still preview combines cream negative space, dark navy vertical infrastructure, tiny schematic marks, trees and human silhouettes, and sparse orange blocks.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HS5ooUOaQAABse0?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "oAJbzZqn1",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "DgApijqe2",
+      "framerCaption": "jzXrndY4H"
+    },
+    {
+      "key": "ART-002",
+      "primaryCatalogId": "ART-002",
+      "catalogTitle": "Annotated engine render",
+      "title": "@praveenisomer",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/praveenisomer/status/2095534787138113962"
+      ],
+      "postingAccount": {
+        "handle": "@praveenisomer",
+        "displayNameFromCatalog": "Praveen Kumar"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Visible still previews show a detailed gray engine cutaway with a warm orange interior, surrounded by thin callout lines and small labels on a light field.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRTPa4Aa8AAql6c?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "aj8ShMNOX",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "c5LBGX6kU",
+      "framerCaption": "ov9ReZ243"
+    },
+    {
+      "key": "ART-003",
+      "primaryCatalogId": "ART-003",
+      "catalogTitle": "Physical object with digital overlays",
+      "title": "@sodiumdream",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/sodiumdream/status/2093798162981118023"
+      ],
+      "postingAccount": {
+        "handle": "@sodiumdream",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "A still preview places a street-side machine/cabinet at night under cyan/pink illumination with fine colored interface or wireframe overlays.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ6qUKla8AALb3Z?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "iq0YJRXBg",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "WWgIMoICi",
+      "framerCaption": "LShXQjiOn"
+    },
+    {
+      "key": "ART-004",
+      "primaryCatalogId": "ART-004",
+      "catalogTitle": "Complex system with a human scale cue",
+      "title": "@beeple",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/beeple/status/2093911298241167481"
+      ],
+      "postingAccount": {
+        "handle": "@beeple",
+        "displayNameFromCatalog": "beeple"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "A still preview shows a dark, fragmented block-like mass with multicolored linear trails against blue, balanced by a tiny person and a small area of landscape.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ8Q1WyWgAAj0y8?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "QG5AhG3E5",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "q2GJtjgp6",
+      "framerCaption": "qpWAx5Utt"
+    },
+    {
+      "key": "ART-005",
+      "primaryCatalogId": "ART-005",
+      "catalogTitle": "Warm light inside a cool field",
+      "title": "@fraveris: The Night's Quiet Glow",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/fraveris/status/2094164761550246060"
+      ],
+      "postingAccount": {
+        "handle": "@fraveris",
+        "displayNameFromCatalog": "Francisco Ribeiro"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "A still preview uses thick, paint-like blue and cream textures, a warm moon/light, and a vertical reflection along a river through darker fields.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ_3Lg7WEAAa09Z?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "wftQWUY1Q",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "zGQ9Bitgc",
+      "framerCaption": "nvxlLJcHA"
+    },
+    {
+      "key": "ART-006",
+      "primaryCatalogId": "ART-006",
+      "catalogTitle": "Warm architectural rhythm",
+      "title": "@luusssso",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/luusssso/status/2094215703221961110"
+      ],
+      "postingAccount": {
+        "handle": "@luusssso",
+        "displayNameFromCatalog": "lusso"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Partial still-image previews show amber/orange interiors, repeated columns, layered openings, and a curved stair or balcony against a regular architectural rhythm.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRAmFUKWQAAvGjm?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "gD6CmZJ_K",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "jqU5Tafjg",
+      "framerCaption": "feA0vOv99"
+    },
+    {
+      "key": "SITE-001",
+      "primaryCatalogId": "SITE-001",
+      "catalogTitle": "CROX",
+      "title": "live template demo",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://crox.framer.website/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "Konrad Makowski; listing and demo footer identify the creator. Source: WEB-002.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Desktop homepage hero and the next section visually; page text inspected. Heavy black navigation-cell borders, pale gray vertical grid, huge black type, orange actions, a wireframe object, and aligned system-status rows.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "ct9rttZcA",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "L5P39zdd9"
+    },
+    {
+      "key": "SITE-001-02",
+      "primaryCatalogId": "SITE-001",
+      "catalogTitle": "CROX",
+      "title": "official Framer listing",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://www.framer.com/marketplace/templates/crox/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "Konrad Makowski; listing and demo footer identify the creator. Source: WEB-002.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Desktop homepage hero and the next section visually; page text inspected. Heavy black navigation-cell borders, pale gray vertical grid, huge black type, orange actions, a wireframe object, and aligned system-status rows.",
+      "sourceRole": "supporting-attribution-or-listing",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "XTnOrUhw_",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "AZoVZrsCc"
+    },
+    {
+      "key": "SITE-002",
+      "primaryCatalogId": "SITE-002",
+      "catalogTitle": "a New Scaffolding",
+      "title": "official site",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://www.anewscaffolding.com/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "Fashion archival service; homepage credits development to Targa studio. Source: WEB-013's first Framer roundup.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Desktop landing page visually and page identity through HTML. A thin black table-like grid on white divides a large expressive serif identity, bold sans introductory text, a utility strip, service cells, and compact footer facts.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "vERqdMbYk",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "r8_qk_5XM"
+    },
+    {
+      "key": "SITE-003",
+      "primaryCatalogId": "SITE-003",
+      "catalogTitle": "Pixel Orb",
+      "title": "official studio site",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://pixelorb.studio/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "Homepage identifies Aron as founder and links @designbyaron. Source: GRA-009.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Desktop hero visually and homepage text. Current view uses a pixel-like logo, a faint dot/grid background with large rounded paths, a left-aligned headline with an orange highlight, and rounded dark actions.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "NHGIlb49I",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "x9ajtHiSr"
+    },
+    {
+      "key": "SITE-004",
+      "primaryCatalogId": "SITE-004",
+      "catalogTitle": "Satto studio",
+      "title": "official creator catalog",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://satto.studio/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "Site links the @Satto_studio identity. Source: WEB-012.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Page text, contact/footer view, and first Framer catalog row visually after following its Framer section link. Catalog uses a white field, large FRAMER/S01 heading, thin rules, mono-like labels, and large paired template previews.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "UOjOMFumZ",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "P92772kt5"
+    },
+    {
+      "key": "SITE-005",
+      "primaryCatalogId": "SITE-005",
+      "catalogTitle": "BIONA",
+      "title": "official site",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://biona.se/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Landing page retrieval and language-selector text only. The roundup contains a dark field with scattered, pixel-like imagery.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "XMNWSQFgm",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "k7RNYMTjL"
+    },
+    {
+      "key": "SITE-006",
+      "primaryCatalogId": "SITE-006",
+      "catalogTitle": "Parabol Labs",
+      "title": "official site",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://parabol.fi/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "[Bakers Studio](https://bakers.studio/) lists Parabol branding, website, and product design; authorship of the current revision was not confirmed.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Homepage text confirms Parabol Labs identity. The roundup frame shows a pale hero with a curved sculptural object and a small purple accent.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "EAGpPYVVI",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "nXfwF58AV"
+    },
+    {
+      "key": "SITE-006-02",
+      "primaryCatalogId": "SITE-006",
+      "catalogTitle": "Parabol Labs",
+      "title": "Bakers Studio",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://bakers.studio/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "[Bakers Studio](https://bakers.studio/) lists Parabol branding, website, and product design; authorship of the current revision was not confirmed.",
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Homepage text confirms Parabol Labs identity. The roundup frame shows a pale hero with a curved sculptural object and a small purple accent.",
+      "sourceRole": "supporting-attribution-or-listing",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "rE4GFIWD3",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "UybnswqBJ"
+    },
+    {
+      "key": "SITE-007",
+      "primaryCatalogId": "SITE-007",
+      "catalogTitle": "TRYBREATHING",
+      "title": "official music-house site",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://www.trybreathingmusic.com/"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Homepage text verifies the music-house identity. The roundup frame shows a dark composition with a central vertical signal-like motif.",
+      "sourceRole": "live-site",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "JcMsrl9fT",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "G3FczID8V"
+    },
+    {
+      "key": "WEB-SECONDARY-01",
+      "primaryCatalogId": null,
+      "catalogTitle": "Secondary references",
+      "title": "ZERO / Stasis",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/KrisAnfalova/status/2093376150852493710"
+      ],
+      "postingAccount": {
+        "handle": "@KrisAnfalova",
+        "displayNameFromCatalog": "Kris Anfalova"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Condensed type, icy blue field, reflective cube and rocky framing; cinematic art direction. Evidence / limitation: Sampled video frame only; no live destination or behavior verified.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093376058233892864/img/56INynEJlhhv8J0U.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "axMQSzQbM",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "DXCgQHl3Y",
+      "framerCaption": "OE3Vlq1Md"
+    },
+    {
+      "key": "WEB-SECONDARY-02",
+      "primaryCatalogId": null,
+      "catalogTitle": "Secondary references",
+      "title": "BREATHE",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/KrisAnfalova/status/2093735924521750790"
+      ],
+      "postingAccount": {
+        "handle": "@KrisAnfalova",
+        "displayNameFromCatalog": "Kris Anfalova"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Large split headline and sculptural imagery; display composition. Evidence / limitation: Partial video frame and dark transition seen; revisit the full clip before adopting motion.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093735903646580737/img/U5rj_rdWhBrRuGNb.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "PIKgMATky",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "m6RXfYS8Y",
+      "framerCaption": "gl7ig6w9x"
+    },
+    {
+      "key": "WEB-SECONDARY-03",
+      "primaryCatalogId": null,
+      "catalogTitle": "Secondary references",
+      "title": "illustrated footer",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/AlbiaHossain/status/2097678782819885542"
+      ],
+      "postingAccount": {
+        "handle": "@AlbiaHossain",
+        "displayNameFromCatalog": "Albia"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "White space above a fine architectural train/viaduct illustration. Evidence / limitation: Sampled clip credits Alim Joldaspayev; retain that attribution when following up.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2097474204241391616/img/eOBduhSIMV4pWGDp.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "MzVP9Uc7D",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "kOLvkw53O",
+      "framerCaption": "AFrWwE18k"
+    },
+    {
+      "key": "WEB-SECONDARY-04",
+      "primaryCatalogId": null,
+      "catalogTitle": "Secondary references",
+      "title": "Astra / page boards",
+      "category": "Web & UI Design",
+      "sourceURLs": [
+        "https://x.com/Nexdesignsui/status/2098457122799300746"
+      ],
+      "postingAccount": {
+        "handle": "@Nexdesignsui",
+        "displayNameFromCatalog": "Nati"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/web-ui.md",
+      "observedTraits": "Dark/orange and light full-page marketing layouts; section pacing. Evidence / limitation: Partial multi-image previews; lower priority than the stronger grid references.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HR7f5QXaYAAP2D6?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "yd9kDO88e",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "B00MtbjaI",
+      "framerCaption": "xk_00qwDX"
+    },
+    {
+      "key": "GRA-READ-01",
+      "primaryCatalogId": null,
+      "catalogTitle": "Further reading — previewed covers and excerpts",
+      "title": "Logo theme books from Counter-Print",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/north_east_gdb/status/2104881419226935463"
+      ],
+      "postingAccount": {
+        "handle": "@north_east_gdb",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "Animal and Abstract covers visible; potential identity-reference reading.",
+      "sourceRole": "reading-cover-or-excerpt",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HTYKfi_WIAAmg5t?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "qYXOgrIc_",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "rujrWcKWO",
+      "framerCaption": "PqVsB_iVe"
+    },
+    {
+      "key": "GRA-READ-02",
+      "primaryCatalogId": null,
+      "catalogTitle": "Further reading — previewed covers and excerpts",
+      "title": "Curious Typefaces, Volume 2",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/north_east_gdb/status/2106564998348628240"
+      ],
+      "postingAccount": {
+        "handle": "@north_east_gdb",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "spread and cover visible; potential typography-reference reading.",
+      "sourceRole": "reading-cover-or-excerpt",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HTwFs33XQAAwJ4c?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "G5BZbbemO",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "BPcmiI7Cx",
+      "framerCaption": "tcmT55nN2"
+    },
+    {
+      "key": "GRA-READ-03",
+      "primaryCatalogId": null,
+      "catalogTitle": "Further reading — previewed covers and excerpts",
+      "title": "Identity Designed: The Process",
+      "category": "Graphic Design",
+      "sourceURLs": [
+        "https://x.com/north_east_gdb/status/2106723537364943298"
+      ],
+      "postingAccount": {
+        "handle": "@north_east_gdb",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/graphic-design.md",
+      "observedTraits": "spread visible; potential identity-process reading.",
+      "sourceRole": "reading-cover-or-excerpt",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HTyV5HbXoAE7RUd?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "PE4TjaB2V",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "L6yN8j3iU",
+      "framerCaption": "dNd0M9hFS"
+    },
+    {
+      "key": "ART-OTHER-01",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "mimi's luminous cloud scenes",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/mimi_aiart/status/2094258888677929310"
+      ],
+      "postingAccount": {
+        "handle": "@mimi_aiart",
+        "displayNameFromCatalog": "mimi"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Luminous cloud scenes; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRAswVgaIAA6JVE?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "wswLc9qb8",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "TdD6xunVG",
+      "framerCaption": "c50nBte9_"
+    },
+    {
+      "key": "ART-OTHER-02",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "classical coastal structures",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/NEXUS_TO_NOVA/status/2094058896138584492"
+      ],
+      "postingAccount": {
+        "handle": "@NEXUS_TO_NOVA",
+        "displayNameFromCatalog": "NΞXUS"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Classical coastal structures; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ-XW6JXEAAWRz2?format=jpg&name=900x900"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "aBxwmVQxl",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "JYmlOuphu",
+      "framerCaption": "lXYHfzjbL"
+    },
+    {
+      "key": "ART-OTHER-03",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "pale circular megastructure",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/NEXUS_TO_NOVA/status/2093415375828316627"
+      ],
+      "postingAccount": {
+        "handle": "@NEXUS_TO_NOVA",
+        "displayNameFromCatalog": "NΞXUS"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Pale circular megastructure; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ1OGypWsAAb4_N?format=jpg&name=900x900"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "ixfrvpWXJ",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "vE52xR4p0",
+      "framerCaption": "duI6uJipy"
+    },
+    {
+      "key": "ART-OTHER-04",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "Max's monumental architectural spaces",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/MaxVOAO/status/2094174507854332004"
+      ],
+      "postingAccount": {
+        "handle": "@MaxVOAO",
+        "displayNameFromCatalog": "Max"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Monumental architectural spaces; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRAAmlwXEAAjIid?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "O1H530C0O",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "eS0DWjsPC",
+      "framerCaption": "NThS5_GJS"
+    },
+    {
+      "key": "ART-OTHER-05",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "Archireum's surreal ocean/fire images",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/archi_reum/status/2094051281081974914"
+      ],
+      "postingAccount": {
+        "handle": "@archi_reum",
+        "displayNameFromCatalog": "Archireum"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Surreal ocean/fire images; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HQ-QirLX0AA2-8y?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "XIBn3Q1Xf",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "S0V9pEAhQ",
+      "framerCaption": "rXuCfKEFS"
+    },
+    {
+      "key": "ART-OTHER-06",
+      "primaryCatalogId": null,
+      "catalogTitle": "Other sampled directions",
+      "title": "Titan's Star-Birthing Nebulae",
+      "category": "Art & Visual Inspiration",
+      "sourceURLs": [
+        "https://x.com/TitanLumen/status/2094186660825116968"
+      ],
+      "postingAccount": {
+        "handle": "@TitanLumen",
+        "displayNameFromCatalog": "Titan"
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/art.md",
+      "observedTraits": "Star-Birthing Nebulae; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
+      "sourceRole": "visual-source",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/media/HRALVMQXMAAmACF?format=jpg&name=small"
+      ],
+      "displayKind": "still preview",
+      "framerGroup": "JNVdZ_X4t",
+      "framerPlacementStatus": "saved",
+      "framerPreview": "OVdVVuBmD",
+      "framerCaption": "HSZNhwN6v"
+    },
+    {
+      "key": "SITE-VERIFY-01",
+      "primaryCatalogId": null,
+      "catalogTitle": "Verification notes",
+      "title": "company feed",
+      "category": "Sites",
+      "sourceURLs": [
+        "https://hk.linkedin.com/company/framer"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/sites.md",
+      "observedTraits": "Mutable Framer company feed used to corroborate outgoing links for the first roundup; retain WEB-013 X permalink as the visual source.",
+      "sourceRole": "supporting-verification-link",
+      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "PJKo__rq7",
+      "framerPlacementStatus": "saved",
+      "framerPreview": null,
+      "framerCaption": "cGp1FgFfn"
+    }
+  ],
+  "preparationStatus": "Saved in Framer; catalog URL coverage and source/original separation verified.",
+  "designPage": "uj_I7x6To",
+  "sourceSection": {
+    "label": "Source inspiration",
+    "framerGroup": "VvoNblwjH",
+    "placementStatus": "saved"
+  },
+  "originalSection": {
+    "label": "Original compositions",
+    "framerGroup": "rI0h8QiJa",
+    "independentStudies": 23,
+    "sectionLabelStatus": "saved"
+  },
+  "sourceLedAdaptation": {
+    "study": "MB-23",
+    "sourceRef": "ART-005",
+    "label": "Made here / source-led adaptation",
+    "framerGroup": "c_MbcV3E6",
+    "framerTargetParent": "o8W8wrkva",
+    "placementStatus": "saved",
+    "authorshipNote": "AI-assisted adaptation made here; do not attribute the generated bitmap to the external artist."
+  },
+  "sourceCategories": [
+    {
+      "category": "Web & UI Design",
+      "sourceCount": 19,
+      "sourceKeys": [
+        "WEB-001",
+        "WEB-002",
+        "WEB-003",
+        "WEB-004",
+        "WEB-005",
+        "WEB-006",
+        "WEB-006-02",
+        "WEB-007",
+        "WEB-008",
+        "WEB-009",
+        "WEB-010",
+        "WEB-011",
+        "WEB-012",
+        "WEB-013",
+        "WEB-013-02",
+        "WEB-SECONDARY-01",
+        "WEB-SECONDARY-02",
+        "WEB-SECONDARY-03",
+        "WEB-SECONDARY-04"
+      ],
+      "framerGroup": "b_NY1rA4h",
+      "placementStatus": "saved"
+    },
+    {
+      "category": "Graphic Design",
+      "sourceCount": 27,
+      "sourceKeys": [
+        "GRA-001",
+        "GRA-001-02",
+        "GRA-001-03",
+        "GRA-002",
+        "GRA-002-02",
+        "GRA-002-03",
+        "GRA-003",
+        "GRA-004",
+        "GRA-005",
+        "GRA-005-02",
+        "GRA-005-03",
+        "GRA-006",
+        "GRA-007",
+        "GRA-007-02",
+        "GRA-008",
+        "GRA-009",
+        "GRA-010",
+        "GRA-011",
+        "GRA-011-02",
+        "GRA-011-03",
+        "GRA-012",
+        "GRA-012-02",
+        "GRA-012-03",
+        "GRA-013",
+        "GRA-READ-01",
+        "GRA-READ-02",
+        "GRA-READ-03"
+      ],
+      "framerGroup": "nT2NyurX6",
+      "placementStatus": "saved"
+    },
+    {
+      "category": "Art & Visual Inspiration",
+      "sourceCount": 12,
+      "sourceKeys": [
+        "ART-001",
+        "ART-002",
+        "ART-003",
+        "ART-004",
+        "ART-005",
+        "ART-006",
+        "ART-OTHER-01",
+        "ART-OTHER-02",
+        "ART-OTHER-03",
+        "ART-OTHER-04",
+        "ART-OTHER-05",
+        "ART-OTHER-06"
+      ],
+      "framerGroup": "HmP8uxVpx",
+      "placementStatus": "saved"
+    },
+    {
+      "category": "Sites",
+      "sourceCount": 10,
+      "sourceKeys": [
+        "SITE-001",
+        "SITE-001-02",
+        "SITE-002",
+        "SITE-003",
+        "SITE-004",
+        "SITE-005",
+        "SITE-006",
+        "SITE-006-02",
+        "SITE-007",
+        "SITE-VERIFY-01"
+      ],
+      "framerGroup": "h3tmD0TRd",
+      "placementStatus": "saved"
+    }
+  ],
+  "localInventoryCheck": {
+    "referenceURLSetEqualsCatalogInventory": true,
+    "uniqueReferenceURLs": 68,
+    "verificationScope": "Local JSON URL-set equality only. This does not verify Framer placement, saved state, preview rendering, full galleries, complete video clips, or live-site behavior."
+  },
+  "savedVerification": {
+    "date": "2026-10-22",
+    "sourceGroups": 68,
+    "sourcePreviews": 58,
+    "linkOnlyCards": 10,
+    "preservedReferenceGroups": 19,
+    "originalCompositions": 23,
+    "sourceLedAdaptations": 1,
+    "existingWebsitePages": [
+      {
+        "id": "augiA20Il",
+        "name": "Home",
+        "path": "/"
+      },
+      {
+        "id": "WJkUf4nHH",
+        "name": "02 Signal / Field",
+        "path": "/prototypes/signal-field"
+      },
+      {
+        "id": "FNWmJvk0a",
+        "name": "03 Research / Edition",
+        "path": "/prototypes/research-edition"
+      },
+      {
+        "id": "CdGjtAu_e",
+        "name": "04 Cobalt / Relay",
+        "path": "/prototypes/cobalt-relay"
+      },
+      {
+        "id": "NTBtSqs_B",
+        "name": "Graphic Studies / Round 02",
+        "path": "/prototypes/graphic-studies"
+      },
+      {
+        "id": "rERIFDhZ0",
+        "name": "05 Interrupt / Poster",
+        "path": "/prototypes/interrupt-poster"
+      },
+      {
+        "id": "bPKUhgBQB",
+        "name": "06 Aperture / Habitat",
+        "path": "/prototypes/aperture-habitat"
+      }
+    ],
+    "editorReloadVerified": true,
+    "browserViews": [
+      "Source inspiration overview",
+      "Web & UI Design",
+      "Graphic Design",
+      "Art & Visual Inspiration",
+      "Sites",
+      "Made here / source-led adaptations",
+      "Original compositions"
+    ],
+    "reviewScope": "Source thumbnails/poster stills, layout, attribution labels and linked-card placement; full galleries, complete videos and current live-site behavior are outside this review.",
+    "nativeLayerIDChecks": {
+      "sourceGroups": 68,
+      "sourcePreviewFrames": 58,
+      "sourceCaptionFrames": 68,
+      "originalStudyGroups": 23,
+      "originalArtwork": 23,
+      "adaptationGroupAndArtwork": true,
+      "rootFrames": [
+        "VvoNblwjH",
+        "hakGOoQNh",
+        "rI0h8QiJa"
+      ]
+    },
+    "finalMCPRead": "Timed out; saved-state verification instead used the reopened native editor, exact layer IDs, hierarchy and screenshot review."
+  }
+}
