@@ -107,9 +107,6 @@
     grid-template-columns: minmax(0, 0.44fr) minmax(0, 0.56fr);
   }
 
-  .home-editorial-copy #home-title {
-    font-size: 3.5rem;
-  }
 
   .home-editorial-description {
     font-size: 1rem;
@@ -134,10 +131,6 @@
     padding-block: 2rem;
   }
 
-  .home-editorial-copy #home-title {
-    font-size: 2.75rem;
-    line-height: 0.9;
-  }
 
   .home-editorial-description {
     font-size: 1rem;
@@ -1609,4 +1602,20 @@ body {
   font-size: 0.75rem;
   line-height: 1.25rem;
   font-weight: 600;
+}
+
+/* Homepage display type uses space and case to separate it from metadata. */
+.home-page .home-editorial-description { font-weight: 400; }
+.home-page .home-doctrine-main { border-top: 3px solid #a68949; }
+.home-page .home-doctrine-main::after,
+.home-page .home-method-item::before { content: none; }
+.home-page #home-title { font-size: 3rem; line-height: 1.08; }
+.home-page #future-work .text-signal { color: #705400; }
+.home-page #future-work article > a:hover,
+.home-page #future-work article > a:focus-visible,
+.home-page #public-record article > a:hover,
+.home-page #public-record article > a:focus-visible {
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+  background: var(--color-paper-muted);
 }

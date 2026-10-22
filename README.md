@@ -34,6 +34,18 @@ pnpm check:webcomposer
 pnpm check:webinfo-artifacts
 ```
 
+## Homepage presentation
+
+The homepage uses sentence-case display headings, regular-weight section titles,
+and medium-weight subheadings. Uppercase monospace labels are reserved for short
+metadata. Keep display sizes stable across breakpoints and check wrapping at
+320px as well as desktop widths. `ArrowIcon.astro` supplies decorative SVG arrows
+for homepage links; the link text carries the accessible name.
+
+Paper backgrounds support longer reading sections. Yellow identifies actions and
+interactive details rather than filling statement panels. Keep the interactive
+brain and existing typeface as recognizable elements of the site.
+
 ## Current Scope
 
 The site is Monarchic's Astro-based corporate site and public product research
