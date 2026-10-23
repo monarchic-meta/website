@@ -1,20 +1,21 @@
 import * as React from "react"
-import { addPropertyControls, ControlType, useIsStaticRenderer } from "framer"
+import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } from "framer"
 
 /**
  * Live source-led studies: CC-003 @GaloAndStuff, CC-001 @yuruyurau,
- * CC-005 @XorDev. Independently authored geometry and GLSL; source code,
+ * CC-005 and CC-010 @XorDev. Independently authored geometry and GLSL; source code,
  * assets, exact motion, and source algorithms are not reproduced.
  * @framerSupportedLayoutWidth any
  * @framerSupportedLayoutHeight any
  * @framerIntrinsicWidth 960
  * @framerIntrinsicHeight 600
  */
-type Mode = "dither" | "canopy" | "coronal"
+type Mode = "dither" | "canopy" | "coronal" | "wave"
 type Status = "running" | "paused" | "static" | "reduced-motion" | "offscreen" | "recovering"
 interface Props {
     study?: Mode
     animate?: boolean
+    canvasMotion?: boolean
     speed?: number
     stillTime?: number
     intensity?: number
@@ -30,6 +31,7 @@ interface Settings {
     mode: Mode
     animate: boolean
     static: boolean
+    canvasPreview: boolean
     speed: number
     stillTime: number
     intensity: number
@@ -43,6 +45,7 @@ const SOURCES = {
     dither: { key: "CC-003", title: "Ordered terrain", account: "@GaloAndStuff", url: "https://x.com/GaloAndStuff/status/2094074141557117090" },
     canopy: { key: "CC-001", title: "Suspended point field", account: "@yuruyurau", url: "https://x.com/yuruyurau/status/2093710258120331463" },
     coronal: { key: "CC-005", title: "Coronal / light study", account: "@XorDev", url: "https://x.com/XorDev/status/2093488121392300374" },
+    wave: { key: "CC-010", title: "Wave / luminous folds", account: "@XorDev", url: "https://x.com/XorDev/status/2093074820661387392" },
 }
 const VERTEX = `
 attribute vec2 a_position;
@@ -158,11 +161,39 @@ vec3 coronal(vec2 p) {
     }
     return vec3(1.0)-exp(-light*3.0);
 }
+vec3 wave(vec2 p) {
+    // Independent volumetric curtain: a moving folded sheet, not a source image.
+    p = rot(-.26+u_mouse.x*.12)*p;
+    vec3 ro = vec3(u_mouse.x*.18,u_mouse.y*.14,2.8);
+    vec3 rd = normalize(vec3(p*2.1,-2.8));
+    vec3 light = vec3(0.0);
+    for(int i=0;i<48;i++) {
+        float travel = 1.5+float(i)*.057;
+        vec3 q = ro+rd*travel;
+        q.xz = rot(q.y*.42+.17*sin(u_time*.25))*q.xz;
+        float n = fbm(q*5.2+vec3(u_time*.13,-u_time*.28,u_time*.18));
+        float path = .20*sin(q.y*2.8+q.z*2.2-u_time*.52)
+            +.06*sin(q.y*6.2-q.z*3.1+u_time*.38);
+        float surface = q.x-path-.055*(n-.5);
+        float fold = .5+.5*sin(q.z*9.0+q.y*6.0-u_time*.9+n*5.0);
+        float filaments = pow(.5+.5*sin(q.y*32.0+q.z*27.0+n*12.0-u_time*1.4),9.0);
+        float core = exp(-abs(surface)*105.0)*(.24+filaments*1.8);
+        float veil = exp(-abs(surface)*16.0)*(.12+.7*fold*fold)*(.4+.6*n);
+        float halo = exp(-abs(surface)*5.0)*pow(max(n-.30,0.0),2.0);
+        float edgeFade = exp(-pow(abs(q.z)*.9,4.0));
+        float palette = smoothstep(-.55,.6,q.y+.28*sin(q.z*2.0+u_time*.22));
+        vec3 color = mix(u_primary,u_secondary,palette);
+        color = mix(color,vec3(.98,1.0,.96),min(core*.18,.7));
+        light += color*(core*2.5+veil*.55+halo*.7)*edgeFade*.16*u_intensity;
+    }
+    return vec3(1.0)-exp(-light*2.2);
+}
 void main() {
     vec2 uv = (gl_FragCoord.xy-.5*u_resolution)/u_resolution.y;
     vec3 color;
     if(u_mode<.5) color = ditheredTerrain(gl_FragCoord.xy*u_cssResolution/u_resolution);
-    else color = coronal(uv/min(1.0,u_resolution.x/u_resolution.y/1.35));
+    else if(u_mode<1.5) color = coronal(uv/min(1.0,u_resolution.x/u_resolution.y/1.35));
+    else color = wave(uv/min(1.0,u_resolution.x/u_resolution.y/1.35));
     gl_FragColor=vec4(color,1.0);
 }
 `
@@ -413,7 +444,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         gl.uniform1f(location(p,"u_time"),time)
         gl.uniform1f(location(p,"u_intensity"),settings.intensity)
         gl.uniform1f(location(p,"u_pixelSize"),settings.pixelSize)
-        gl.uniform1f(location(p,"u_mode"),settings.mode==="dither"?0:1)
+        gl.uniform1f(location(p,"u_mode"),settings.mode==="dither"?0:settings.mode==="wave"?2:1)
         gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary,canvas))
         gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary,canvas))
         gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink,canvas))
@@ -448,7 +479,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         if(!last)last=now
         time+=Math.min((now-last)/1000,.1)*settings.speed; last=now
         mouse=mouse.map((v,i)=>v+(targetMouse[i]-v)*.08)
-        if(now-lastDraw>=1000/30) { draw(); lastDraw=now }
+        if(now-lastDraw>=1000/(settings.canvasPreview?12:30)) { draw(); lastDraw=now }
         frame=requestAnimationFrame(tick)
     }
     const reconcile = () => {
@@ -460,7 +491,8 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
     const resize = () => {
         width=canvas.clientWidth; height=canvas.clientHeight
         // Logical size ignores the editor's canvas zoom; limit actual GPU area.
-        const ratio=Math.min(window.devicePixelRatio||1,1.5,Math.sqrt(650000/Math.max(1,width*height)))
+        const pixelBudget=settings.canvasPreview?150000:650000
+        const ratio=Math.min(window.devicePixelRatio||1,1.5,Math.sqrt(pixelBudget/Math.max(1,width*height)))
         canvas.width=Math.max(1,Math.round(width*ratio)); canvas.height=Math.max(1,Math.round(height*ratio))
         reconcile()
     }
@@ -488,10 +520,11 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
     return {
         update(next:Settings) {
             const reset=next.mode!==settings.mode||next.stillTime!==settings.stillTime
+            const resizeNeeded=next.canvasPreview!==settings.canvasPreview
             settings=next
             if(reset)time=next.stillTime
             if(!next.interactive){mouse=[0,0];targetMouse=[0,0]}
-            reconcile()
+            if(resizeNeeded)resize();else reconcile()
         },
         renderAt(seconds:number) { stop();time=seconds;draw() },
         dispose() {
@@ -511,22 +544,26 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
  * @framerIntrinsicHeight 600
  */
 export default function CreativeCodingStudy(props: Props) {
-    const {study="dither",animate=true,speed=.65,stillTime=8,intensity=1.1,pixelSize=3,interactive=true,
+    const {study="dither",animate=true,canvasMotion=false,speed=.65,stillTime=8,intensity=1.1,pixelSize=3,interactive=true,
         primary="#efc8c8",secondary="#d6b442",ink="#424855",showLabels=true,style}=props
-    const isStatic=useIsStaticRenderer()
+    const staticRenderer=useIsStaticRenderer()
+    const target=RenderTarget.current()
+    const canvasPreview=canvasMotion&&target===RenderTarget.canvas
+    // Private moodboard opt-in only. Exports and thumbnails always stay static.
+    const isStatic=target===RenderTarget.export||target===RenderTarget.thumbnail||(staticRenderer&&!canvasPreview)
     const canvas=React.useRef<HTMLCanvasElement>(null)
     const renderer=React.useRef<ReturnType<typeof createRenderer>|null>(null)
     const [paused,setPaused]=React.useState(false)
     const [status,setStatus]=React.useState<Status>("static")
     const [error,setError]=React.useState("")
-    const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,speed:Math.max(0,speed),stillTime,intensity,pixelSize:Math.max(1,pixelSize),interactive,primary,secondary,ink}
+    const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,pixelSize:Math.max(1,pixelSize),interactive,primary,secondary,ink}
     React.useEffect(()=>{
         if(!canvas.current)return
         try { renderer.current=createRenderer(canvas.current,settings,(next,detail)=>{setStatus(next);setError(detail??"")}) }
         catch(problem){setError(problem instanceof Error?problem.message:String(problem))}
         return()=>{renderer.current?.dispose();renderer.current=null}
     },[])
-    React.useEffect(()=>{renderer.current?.update(settings)},[study,animate,paused,isStatic,speed,stillTime,intensity,pixelSize,interactive,primary,secondary,ink])
+    React.useEffect(()=>{renderer.current?.update(settings)},[study,animate,paused,isStatic,canvasPreview,speed,stillTime,intensity,pixelSize,interactive,primary,secondary,ink])
     const source=SOURCES[study]
     const color=study==="dither"?ink:"#e2e6ef"
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
@@ -547,8 +584,9 @@ export default function CreativeCodingStudy(props: Props) {
     </div>
 }
 addPropertyControls(CreativeCodingStudy,{
-    study:{type:ControlType.Enum,title:"Study",options:["dither","canopy","coronal"],optionTitles:["Ordered terrain","Point canopy","Coronal light"],defaultValue:"dither"},
+    study:{type:ControlType.Enum,title:"Study",options:["dither","canopy","coronal","wave"],optionTitles:["Ordered terrain","Point canopy","Coronal light","Wave folds"],defaultValue:"dither"},
     animate:{type:ControlType.Boolean,title:"Animate",defaultValue:true},
+    canvasMotion:{type:ControlType.Boolean,title:"Canvas motion",defaultValue:false},
     speed:{type:ControlType.Number,title:"Speed",min:0,max:2,step:.05,defaultValue:.65},
     stillTime:{type:ControlType.Number,title:"Still time",min:0,max:60,step:.5,defaultValue:8},
     intensity:{type:ControlType.Number,title:"Intensity",min:.2,max:2.5,step:.05,defaultValue:1.1},
