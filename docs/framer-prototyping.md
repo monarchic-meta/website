@@ -50,12 +50,14 @@ Framer node IDs and native layer counts. Confirm changes in the actual editor
 after a reload before reporting them as saved. These recipes do not integrate
 with the site runtime or automatically synchronize Framer and the repository.
 
-During the native-study and Creative Coding rounds, the MCP session showed new
-nodes before the reloaded editor did. The Creative Coding gallery took roughly
-11 minutes to become visible. A successful program result, returned node IDs or
+During the native-study and Creative Coding rounds, MCP readbacks preceded
+confirmation in the loaded editor. A successful program result, returned node IDs or
 `changedNodeCount: 0` does not establish saved persistence. Compare the actual
 editor with the intended IDs and content, and check reload survival before
 retrying a create operation; delayed delivery could otherwise produce duplicates.
+Let the layer panel load, observe the selection after copying, then read the
+clipboard. Auto-height rich text can retain placeholder bounds in copied data;
+use the measured editor dimensions and visual inspection when checking clipping.
 
 ## Workspace and connection
 

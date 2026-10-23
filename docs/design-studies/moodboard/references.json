@@ -2276,7 +2276,22 @@
       "Large abstract hero object",
       "Point-mesh veil or section frame"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "sourceLedAdaptations": [
+      {
+        "id": "RE-18",
+        "classification": "source-led-adaptation",
+        "manifest": "../recreations/manifest.json",
+        "recipe": "../recreations/re-18-white-point-canopy.mjs",
+        "framerSourceSection": "VvoNblwjH",
+        "framerRecreationsArea": "rHeXK4bVd",
+        "framerGroup": "YK8sYLbLs",
+        "framerArtwork": "hFvZ8FDut",
+        "framerCredit": "TiDFejNGg",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "staticStudy": true
+      }
+    ]
   },
   {
     "ref": "CC-002",
@@ -2414,7 +2429,22 @@
       "Actual tonal-dither studies on original abstract forms",
       "Limited-palette field, object surface or UI backdrop"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "sourceLedAdaptations": [
+      {
+        "id": "RE-17",
+        "classification": "source-led-adaptation",
+        "manifest": "../recreations/manifest.json",
+        "recipe": "../recreations/re-17-ordered-tonal-pixel-field.mjs",
+        "framerSourceSection": "VvoNblwjH",
+        "framerRecreationsArea": "rHeXK4bVd",
+        "framerGroup": "co4Rh6KPl",
+        "framerArtwork": "UdD0CfGML",
+        "framerCredit": "nbhPEf7gJ",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "staticStudy": true
+      }
+    ]
   },
   {
     "ref": "CC-004",
@@ -2516,7 +2546,22 @@
       "Luminous identity surround",
       "Neon object, hero graphic or state motif"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "sourceLedAdaptations": [
+      {
+        "id": "RE-20",
+        "classification": "source-led-adaptation",
+        "manifest": "../recreations/manifest.json",
+        "recipe": "../recreations/re-20-coronal-native-bands.mjs",
+        "framerSourceSection": "VvoNblwjH",
+        "framerRecreationsArea": "rHeXK4bVd",
+        "framerGroup": "ouMx4Saes",
+        "framerArtwork": "dJSXcQhjp",
+        "framerCredit": "MvnOgY_W8",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "staticStudy": true
+      }
+    ]
   },
   {
     "ref": "CC-006",
@@ -2873,7 +2918,22 @@
       "Editable keycap/card/connector studies",
       "Interface transition and signal-path motifs"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "sourceLedAdaptations": [
+      {
+        "id": "RE-19",
+        "classification": "source-led-adaptation",
+        "manifest": "../recreations/manifest.json",
+        "recipe": "../recreations/re-19-technical-keycap-connections.mjs",
+        "framerSourceSection": "VvoNblwjH",
+        "framerRecreationsArea": "rHeXK4bVd",
+        "framerGroup": "yJUJ5N3P_",
+        "framerArtwork": "TmFwyyICT",
+        "framerCredit": "eMtdBEyLg",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "staticStudy": true
+      }
+    ]
   },
   {
     "ref": "CC-013",

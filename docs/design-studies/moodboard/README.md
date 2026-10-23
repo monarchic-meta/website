@@ -11,8 +11,9 @@ clusters. The source comparison library follows the current
 [inspiration catalog](../../design-inspiration.md). Inspiration IDs remain
 citations rather than source previews mixed into the composition clusters.
 
-The later [16 native RE studies](../recreations/README.md) add source-led
-recreations above the comparison library. Their frames, dots, wires, and text
+The later [20 native RE studies](../recreations/README.md) add 16 source-led
+recreations and four static Creative Coding adaptations above the comparison
+library. Their frames, dots, wires, and text
 are editable as individual Framer layers. They belong in Source inspiration and
 retain source credits alongside the 18 independent MB assets. Their
 [separate manifest](../recreations/manifest.json) records the saved native-study

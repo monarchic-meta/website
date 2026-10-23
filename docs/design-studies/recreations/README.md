@@ -4,23 +4,25 @@ Source-led graphic studies for the [Framer visual kitchen](../../framer-moodboar
 They recreate selected observed motifs as native Framer frames and text on
 1600 × 1000 artboards. Their named parts can be selected, moved, recolored,
 resized, or regrouped individually. They contain no embedded SVG or raster
-artwork. All 16 saved studies were confirmed in the Framer editor and remained
+artwork. All 20 saved studies were confirmed in the Framer editor and remained
 after a reload. The [manifest](manifest.json) records their saved Framer node IDs
 and native layer counts.
 
-Four additional Creative Coding authoring recipes, RE-17–20, are prepared.
+Four additional Creative Coding studies, RE-17–20, are saved in a fifth row.
 They are **source-led adaptations** with independently constructed geometry,
 clearly credited to the references they study. They use static native layers;
 they do not reproduce source animation, shader rendering or live interactions.
-Their Framer placement requires saved-editor verification before it is recorded
-as complete.
+Their 1,514 recipe parts were verified after reload: 1,481 frames and 33 text
+nodes, or 1,485 frames including the four artboard roots. The earlier 16 card
+trees and all 77 source-reference trees remain unchanged. Copied auto-height
+text bounds were checked against the actual native Style panel dimensions.
 
 These **RE-01–16** studies belong in **Source inspiration**, alongside the
 comparison library. They are recreations of credited source work, not Monarchic
 original compositions or approved branding. They sit alongside **18 independent
 MB asset studies**. MB-19–24, including the source-led painting adaptation, have
 been removed from the retained asset set at the owner's request. The 18 remaining
-MB assets and all 16 RE recipes retain their existing artwork and identifiers;
+MB assets and all 16 earlier RE recipes retain their existing artwork and identifiers;
 the existing website prototypes are preserved.
 
 ## Recipes and credits

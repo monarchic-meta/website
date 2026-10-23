@@ -62,7 +62,8 @@ preview is supplied for a link-only destination.
 ## Editable source recreations
 
 The [Recreated elements area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rHeXK4bVd)
-contains RE-01–16 on 1600 × 1000 artboards. Tiles, lettering, wires, dot glyphs,
+contains RE-01–20 on 1600 × 1000 artboards: 16 source recreations and four static
+Creative Coding adaptations. Tiles, lettering, wires, dot glyphs,
 halftone faces, pixels and construction marks are named native layers, editable
 part by part. Source identities and any source metrics stay inside the clearly
 labeled recreation.
@@ -70,8 +71,10 @@ labeled recreation.
 The [recipe index](design-studies/recreations/README.md) and
 [RE manifest](design-studies/recreations/manifest.json) retain manual authoring
 sources, exact post URLs, source keys, simplifications and saved node IDs.
-Practical Creative Coding recreations are added to this section with the same
-credit policy. A still-frame approximation is not a working shader or animation.
+The fifth row contains RE-17's three-color tonal dither, RE-18's white point
+canopy, RE-19's technical keycaps and connections, and RE-20's cyan/magenta
+Coronal bands. All four retain source credits and static limitations. A
+still-frame approximation is not a working shader or animation.
 
 ## Original-composition clusters
 
@@ -144,8 +147,21 @@ The Creative Coding category subsequently survived a full editor reload. All
 and retained their complete aspect ratios. The additional CC-002 credited-original
 link is present without a fabricated preview. The comparison library now has
 77 source groups, 66 previews and 11 link-only cards. Its node mappings are saved
-in the source index. The four additional native studies require a separate
-saved-editor check before their placement status is marked verified.
+in the source index.
+
+The four Creative Coding adaptations also survived a subsequent full editor
+reload. Their 1,514 new recipe parts were checked by ID, class, name, parent,
+geometry and visibility; all four cards were visually reviewed. Four auto-height
+notes have measured 13px heights in the native Style panel, despite 100px
+placeholder heights in copied data. All artwork and rendered text fit their
+artboards. No new SVG or raster artwork is embedded.
+
+The 20 source studies now total 3,679 recipe Frame nodes and 119 rich-text nodes,
+or 3,699 Frames including artboard roots. The Source frame is 13,560px high and
+its recreation area is 7,100 × 7,080px. Comparison-category frames and their
+heading moved down 1,400px to make room for the fifth row; their existing
+reference subtrees remain intact. All 16 earlier study-card trees, 18 original
+groups/artworks and seven existing page identities/routes are preserved.
 
 The asset and catalog changes affect authoring documentation only. Validation
 checks JSON, unique IDs and URLs, catalog/source-set equality, local links,
