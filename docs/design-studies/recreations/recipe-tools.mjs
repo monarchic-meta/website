@@ -80,7 +80,7 @@ export function compileRecipe(recipe) {
   }
   return {
     id: recipe.id, name: recipe.name, sourceKey: recipe.sourceKey,
-    classification: 'source-led-recreation', width: 1600, height: 1000,
+    classification: recipe.classification ?? 'source-led-recreation', width: 1600, height: 1000,
     background: recipe.background, simplifications: recipe.simplifications,
     layers,
   };
