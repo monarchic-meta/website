@@ -302,14 +302,20 @@ interface Resources {
 }
 const colorCache=new Map<string,[number,number,number]>()
 let colorContext:CanvasRenderingContext2D|null|undefined
-function rgb(value: string): [number,number,number] {
+function rgb(value: string, canvas:HTMLCanvasElement): [number,number,number] {
+    // Resolve inherited Framer design tokens within this component's own node.
+    for(let depth=0;depth<4&&value.trim().startsWith("var(");depth++){
+        const token=value.match(/^var\(\s*(--[^,\s)]+)\s*(?:,\s*(.*))?\)$/)
+        if(!token)break
+        value=getComputedStyle(canvas).getPropertyValue(token[1]).trim()||token[2]||"#ffffff"
+    }
     const cached=colorCache.get(value)
     if(cached)return cached
     // Framer colors can be hex, rgb(), hsl(), named, or alpha-bearing CSS.
     // The artwork is opaque: palette alpha is deliberately ignored.
     if(colorContext===undefined){
         const pixel=document.createElement("canvas");pixel.width=1;pixel.height=1
-        colorContext=pixel.getContext("2d")
+        colorContext=pixel.getContext("2d",{colorSpace:"srgb",willReadFrequently:true})
     }
     let result:[number,number,number]=[1,1,1]
     if(colorContext){
@@ -318,6 +324,14 @@ function rgb(value: string): [number,number,number] {
         const channels=normalized.match(/^rgba?\(\s*([\d.]+)[, ]+([\d.]+)[, ]+([\d.]+)/i)
         if(channels)result=channels.slice(1,4).map(x=>Math.min(255,Number(x))/255) as [number,number,number]
         else if(/^#[\da-f]{6,8}$/i.test(normalized))result=[0,2,4].map(i=>parseInt(normalized.slice(i+1,i+3),16)/255) as [number,number,number]
+        else {
+            // Convert wide-gamut CSS colors to the renderer's sRGB framebuffer.
+            // Force alpha to one before readback so transparent RGB is retained.
+            colorContext.fillStyle=normalized.replace(/\/\s*[-+\d.e%]+\s*\)$/i,"/ 1)")
+            colorContext.clearRect(0,0,1,1);colorContext.fillRect(0,0,1,1)
+            const data=colorContext.getImageData(0,0,1,1).data
+            result=[data[0]/255,data[1]/255,data[2]/255]
+        }
     }
     if(colorCache.size>64)colorCache.clear()
     colorCache.set(value,result)
@@ -400,9 +414,9 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         gl.uniform1f(location(p,"u_intensity"),settings.intensity)
         gl.uniform1f(location(p,"u_pixelSize"),settings.pixelSize)
         gl.uniform1f(location(p,"u_mode"),settings.mode==="dither"?0:1)
-        gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary))
-        gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary))
-        gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink))
+        gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary,canvas))
+        gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary,canvas))
+        gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink,canvas))
     }
     const draw = () => {
         if(disposed||lost||!resources||width<=0||height<=0) return
