@@ -108,6 +108,9 @@
           diagnostics = mkWebsiteCheck "diagnostics" ''
             pnpm run check
           '';
+          framer-studies = mkWebsiteCheck "framer-studies" ''
+            pnpm run check:framer-studies
+          '';
           contracts = mkWebsiteCheck "contracts" ''
             pnpm run check:webcomposer
             pnpm run check:webinfo-artifacts

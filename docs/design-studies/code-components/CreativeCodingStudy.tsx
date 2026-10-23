@@ -11,7 +11,7 @@ import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } f
  * @framerIntrinsicHeight 600
  */
 type Mode = "dither" | "canopy" | "coronal" | "wave"
-type Status = "running" | "paused" | "static" | "reduced-motion" | "offscreen" | "recovering"
+type Status = "waiting" | "running" | "paused" | "static" | "reduced-motion" | "offscreen" | "recovering"
 interface Props {
     study?: Mode
     animate?: boolean
@@ -40,6 +40,12 @@ interface Settings {
     primary: string
     secondary: string
     ink: string
+    // Internal surface-host options. Framer controls remain unchanged.
+    managed?: boolean
+    renderWidth?: number
+    renderHeight?: number
+    pixelBudget?: number
+    colorHost?: HTMLCanvasElement
 }
 const SOURCES = {
     dither: { key: "CC-003", title: "Ordered terrain", account: "@GaloAndStuff", url: "https://x.com/GaloAndStuff/status/2094074141557117090" },
@@ -368,13 +374,13 @@ function rgb(value: string, canvas:HTMLCanvasElement): [number,number,number] {
     colorCache.set(value,result)
     return result
 }
-function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (status: Status, error?: string)=>void) {
+function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (status: Status, error?: string)=>void, resumeTime=initial.stillTime) {
     const gl = canvas.getContext("webgl", { alpha: false, antialias: false, powerPreference: "low-power" })
     if (!gl) throw new Error("WebGL is unavailable in this browser.")
     let settings = initial, resources: Resources | undefined
     const locations=new Map<WebGLProgram,Map<string,WebGLUniformLocation|null>>()
     let disposed = false, lost = false, visible = true, width = 1, height = 1, failure = ""
-    let frame = 0, last = 0, lastDraw = 0, time = initial.stillTime
+    let frame = 0, last = 0, lastDraw = 0, time = resumeTime
     let mouse = [0,0], targetMouse = [0,0]
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)")
     const shader = (type: number, source: string) => {
@@ -429,7 +435,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
             throw error
         }
     }
-    const canRun = () => !disposed&&!lost&&Boolean(resources)&&visible&&!document.hidden&&!motion.matches&&!settings.static&&settings.animate&&settings.speed>0&&width>0&&height>0
+    const canRun = () => !settings.managed&&!disposed&&!lost&&Boolean(resources)&&visible&&!document.hidden&&!motion.matches&&!settings.static&&settings.animate&&settings.speed>0&&width>0&&height>0
     const status = (): Status => lost ? "recovering" : settings.static ? "static" : motion.matches ? "reduced-motion" : !settings.animate||settings.speed<=0 ? "paused" : !visible||document.hidden ? "offscreen" : "running"
     const location = (p:WebGLProgram,name:string) => {
         let cache=locations.get(p)
@@ -445,9 +451,9 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         gl.uniform1f(location(p,"u_intensity"),settings.intensity)
         gl.uniform1f(location(p,"u_pixelSize"),settings.pixelSize)
         gl.uniform1f(location(p,"u_mode"),settings.mode==="dither"?0:settings.mode==="wave"?2:1)
-        gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary,canvas))
-        gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary,canvas))
-        gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink,canvas))
+        gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary,settings.colorHost??canvas))
+        gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary,settings.colorHost??canvas))
+        gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink,settings.colorHost??canvas))
     }
     const draw = () => {
         if(disposed||lost||!resources||width<=0||height<=0) return
@@ -489,11 +495,16 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         if(canRun())frame=requestAnimationFrame(tick)
     }
     const resize = () => {
-        width=canvas.clientWidth; height=canvas.clientHeight
-        // Logical size ignores the editor's canvas zoom; limit actual GPU area.
-        const pixelBudget=settings.canvasPreview?150000:650000
+        width=settings.managed?settings.renderWidth??1:canvas.clientWidth; height=settings.managed?settings.renderHeight??1:canvas.clientHeight
+        // Managed hosts supply screen-space size, including editor zoom.
+        const pixelBudget=settings.pixelBudget??(settings.canvasPreview?150000:650000)
         const ratio=Math.min(window.devicePixelRatio||1,1.5,Math.sqrt(pixelBudget/Math.max(1,width*height)))
-        canvas.width=Math.max(1,Math.round(width*ratio)); canvas.height=Math.max(1,Math.round(height*ratio))
+        const bufferWidth=Math.max(1,Math.min(Math.floor(pixelBudget),Math.floor(width*ratio)))
+        const bufferHeight=Math.max(1,Math.min(Math.floor(pixelBudget/bufferWidth),Math.floor(height*ratio)))
+        if(canvas.width!==bufferWidth||canvas.height!==bufferHeight){
+            // Shrink first so intermediate setter states cannot exceed budget.
+            canvas.width=1;canvas.height=1;canvas.width=bufferWidth;canvas.height=bufferHeight
+        }
         reconcile()
     }
     const pointer = (event:PointerEvent) => {
@@ -509,10 +520,10 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         lost=false;failure="";resources=undefined;locations.clear()
         try{allocate();resize()}catch(error){lost=true;failure=String(error);stop();notify("recovering",failure)}
     }
-    allocate()
+    try{allocate()}catch(error){gl.getExtension("WEBGL_lose_context")?.loseContext();throw error}
     const sizeObserver=new ResizeObserver(resize)
     const intersection=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??false;reconcile()})
-    sizeObserver.observe(canvas); intersection.observe(canvas)
+    if(!settings.managed){sizeObserver.observe(canvas);intersection.observe(canvas)}
     canvas.addEventListener("pointermove",pointer);canvas.addEventListener("pointerleave",leave)
     canvas.addEventListener("webglcontextlost",onLost);canvas.addEventListener("webglcontextrestored",onRestored)
     motion.addEventListener("change",reconcile);document.addEventListener("visibilitychange",reconcile)
@@ -520,12 +531,14 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
     return {
         update(next:Settings) {
             const reset=next.mode!==settings.mode||next.stillTime!==settings.stillTime
-            const resizeNeeded=next.canvasPreview!==settings.canvasPreview
+            const resizeNeeded=next.canvasPreview!==settings.canvasPreview||next.renderWidth!==settings.renderWidth||next.renderHeight!==settings.renderHeight||next.pixelBudget!==settings.pixelBudget
             settings=next
             if(reset)time=next.stillTime
             if(!next.interactive){mouse=[0,0];targetMouse=[0,0]}
             if(resizeNeeded)resize();else reconcile()
         },
+        getSnapshot(){return {mode:settings.mode,stillTime:settings.stillTime,time,lost}},
+        setPointer(x:number,y:number){mouse=[x,y];targetMouse=[x,y]},
         renderAt(seconds:number) { stop();time=seconds;draw() },
         dispose() {
             disposed=true;stop();sizeObserver.disconnect();intersection.disconnect()
@@ -533,8 +546,322 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
             canvas.removeEventListener("webglcontextlost",onLost);canvas.removeEventListener("webglcontextrestored",onRestored)
             motion.removeEventListener("change",reconcile);document.removeEventListener("visibilitychange",reconcile)
             release()
+            if(settings.managed)gl.getExtension("WEBGL_lose_context")?.loseContext()
+            else queueMicrotask(()=>{if(!canvas.isConnected)gl.getExtension("WEBGL_lose_context")?.loseContext()})
         },
     }
+}
+
+// The same small coordinator is deliberately embedded in each standalone file.
+// Symbol.for joins separate Framer modules in this window; no dependency/import.
+const STUDY_POOL_KEY=Symbol.for("monarchic.gpu-budget.v1")
+type StudyRenderer=ReturnType<typeof createRenderer>
+interface StudyLease {
+    canvas:HTMLCanvasElement
+    renderer:StudyRenderer
+    signature:string
+}
+interface StudyEntry {
+    id:number
+    source:string
+    target:"canvas"|"preview"
+    root:HTMLDivElement
+    display:HTMLCanvasElement
+    settings:Settings
+    factory:typeof createRenderer
+    notify:(status:Status,error?:string)=>void
+    lease?:StudyLease
+    rect:DOMRect
+    visible:boolean
+    hover:boolean
+    focus:boolean
+    pinUntil:number
+    phase:number
+    lastTick:number
+    lastDraw:number
+    lastKey:string
+    needsStill:boolean
+    hasFrame:boolean
+    retryAt:number
+    pointer:[number,number]
+    smoothPointer:[number,number]
+    emitted:string
+    cleanup:()=>void
+}
+interface StudyPool {
+    add:(entry:Omit<StudyEntry,"id"|"rect"|"visible"|"hover"|"focus"|"pinUntil"|"phase"|"lastTick"|"lastDraw"|"lastKey"|"needsStill"|"hasFrame"|"retryAt"|"pointer"|"smoothPointer"|"emitted"|"cleanup">)=>StudyEntry
+    update:(entry:StudyEntry,next:Settings)=>void
+    remove:(entry:StudyEntry)=>void
+    request:(entry:StudyEntry)=>void
+    runStatic:(work:()=>number|void)=>void
+    debug:()=>unknown
+}
+function getStudyPool():StudyPool {
+    const realm=window as unknown as {[key:symbol]:StudyPool|undefined}
+    const shared=realm[STUDY_POOL_KEY]
+    if(shared)return shared
+    const entries=new Map<number,StudyEntry>(),cache=new Map<string,HTMLCanvasElement>()
+    const completed=new Set<number>()
+    let serial=0,timer=0,contexts=0,peakContexts=0,peakPixels=0,completedStillJobs=0
+    let lastMeasure=0,lastWarm=0,dirty=true,listening=false
+    const reduced=window.matchMedia("(prefers-reduced-motion: reduce)")
+    let wasReduced=reduced.matches
+    const ignored=new Set(["animate","static","canvasPreview","speed","interactive","managed","renderWidth","renderHeight","pixelBudget","colorHost"])
+    const now=()=>performance.now()
+    const emit=(entry:StudyEntry,status:Status,error="")=>{
+        const signature=status+"/"+error
+        if(entry.emitted!==signature){entry.emitted=signature;entry.notify(status,error||undefined)}
+    }
+    const key=(entry:StudyEntry)=>entry.source+"/"+Math.round(entry.rect.width/Math.max(1,entry.rect.height)*100)/100+"/"+JSON.stringify({...Object.fromEntries(Object.entries(entry.settings).filter(([name])=>!ignored.has(name))),resolvedPalette:[rgb(entry.settings.primary,entry.display),rgb(entry.settings.secondary,entry.display),rgb(entry.settings.ink,entry.display)]})
+    const pixels=()=>[...entries.values()].reduce((total,e)=>total+(e.lease?e.lease.canvas.width*e.lease.canvas.height:0),0)
+    const copy=(source:HTMLCanvasElement,target:HTMLCanvasElement)=>{
+        if(target.width!==source.width)target.width=source.width
+        if(target.height!==source.height)target.height=source.height
+        const context=target.getContext("2d",{alpha:false})
+        if(!context)throw new Error("Could not create the study display.")
+        context.drawImage(source,0,0)
+    }
+    const smallCopy=(source:HTMLCanvasElement)=>{
+        const result=document.createElement("canvas")
+        const ratio=Math.min(1,Math.sqrt(24000/Math.max(1,source.width*source.height)))
+        result.width=Math.max(1,Math.floor(source.width*ratio));result.height=Math.max(1,Math.floor(source.height*ratio))
+        const context=result.getContext("2d",{alpha:false})
+        if(!context)throw new Error("Could not retain a study frame.")
+        context.drawImage(source,0,0,result.width,result.height)
+        return result
+    }
+    const release=(entry:StudyEntry)=>{
+        const lease=entry.lease
+        if(!lease)return
+        entry.phase=lease.renderer.getSnapshot().time
+        entry.lease=undefined;entry.lastTick=0;entry.lastDraw=0
+        try{lease.renderer.dispose()}finally{contexts--}
+        // Keep the last owned frame in cheap CPU/2D storage after losing GL.
+        if(entry.hasFrame){try{copy(smallCopy(entry.display),entry.display)}catch{}}
+    }
+    const settingsFor=(entry:StudyEntry,still:boolean):Settings=>({...entry.settings,
+        managed:true,static:still||entry.settings.static,
+        renderWidth:Math.max(1,entry.rect.width),renderHeight:Math.max(1,entry.rect.height),
+        pixelBudget:still?24000:entry.target==="canvas"?150000:650000,
+        colorHost:entry.display,
+    })
+    const signature=(settings:Settings)=>JSON.stringify(Object.fromEntries(Object.entries(settings).filter(([key])=>key!=="colorHost")))
+    const acquire=(entry:StudyEntry,still:boolean):StudyLease|undefined=>{
+        if(contexts>=2||entry.retryAt>now())return
+        const canvas=document.createElement("canvas"),settings=settingsFor(entry,still)
+        canvas.width=1;canvas.height=1
+        // Reserve before compiling/allocating: initialization counts toward cap.
+        contexts++;peakContexts=Math.max(peakContexts,contexts)
+        try{
+            const renderer=entry.factory(canvas,settings,(status,error)=>{if(status==="recovering"){entry.retryAt=now()+250;emit(entry,"recovering",error)}},still?entry.settings.stillTime:entry.phase)
+            const lease={canvas,renderer,signature:signature(settings)}
+            peakPixels=Math.max(peakPixels,pixels()+canvas.width*canvas.height)
+            return lease
+        }catch(error){
+            contexts--;entry.retryAt=now()+5000
+            emit(entry,"recovering",error instanceof Error?error.message:String(error))
+            return
+        }
+    }
+    const warm=(entry:StudyEntry)=>{
+        const lease=acquire(entry,true)
+        if(!lease)return
+        try{
+            lease.renderer.renderAt(entry.settings.stillTime)
+            // Copy synchronously before the default framebuffer may be cleared.
+            copy(lease.canvas,entry.display)
+            const snapshot=smallCopy(entry.display),cacheKey=key(entry)
+            cache.delete(cacheKey);cache.set(cacheKey,snapshot)
+            while(cache.size>64)cache.delete(cache.keys().next().value as string)
+            entry.hasFrame=true;entry.needsStill=false;entry.lastKey=cacheKey
+            completed.add(entry.id);completedStillJobs++
+        }catch(error){entry.retryAt=now()+5000;emit(entry,"recovering",String(error))}
+        finally{try{lease.renderer.dispose()}finally{contexts--}}
+    }
+    const measure=()=>{
+        const w=window.innerWidth,h=window.innerHeight
+        for(const entry of entries.values()){
+            entry.rect=entry.root.getBoundingClientRect()
+            const r=entry.rect
+            entry.visible=!document.hidden&&r.width>0&&r.height>0&&r.right>0&&r.bottom>0&&r.left<w&&r.top<h
+            const cacheKey=key(entry)
+            if(cacheKey!==entry.lastKey){
+                entry.needsStill=true
+                const cached=cache.get(cacheKey)
+                if(cached){copy(cached,entry.display);entry.hasFrame=true;entry.needsStill=false;entry.lastKey=cacheKey;completed.add(entry.id)}
+            }
+        }
+        dirty=false;lastMeasure=now()
+    }
+    const visibleArea=(entry:StudyEntry)=>{
+        const r=entry.rect
+        return Math.max(0,Math.min(window.innerWidth,r.right)-Math.max(0,r.left))*Math.max(0,Math.min(window.innerHeight,r.bottom)-Math.max(0,r.top))
+    }
+    const rank=(entry:StudyEntry,time:number)=>{
+        const r=entry.rect,priority=entry.focus?3:entry.pinUntil>time?2:entry.hover?1:0
+        const distance=Math.hypot(r.left+r.width/2-window.innerWidth/2,r.top+r.height/2-window.innerHeight/2)
+        return priority*1000000-distance
+    }
+    const eligible=(entry:StudyEntry,time:number)=>{
+        if(!entry.visible||entry.retryAt>time||entry.settings.static||!entry.settings.animate||entry.settings.speed<=0||reduced.matches)return false
+        if(entry.target==="preview")return true
+        if(!entry.settings.canvasPreview)return false
+        // Screen-space LOD includes Framer's transform zoom. Hysteresis keeps
+        // admission steady near the boundary; a deliberate Play can override.
+        const keep=Boolean(entry.lease),r=entry.rect
+        return entry.pinUntil>time||(r.width>=(keep?120:160)&&r.height>=(keep?80:100)&&visibleArea(entry)>=(keep?12000:24000))
+    }
+    const wake=()=>{
+        dirty=true
+        if(!timer&&entries.size)timer=window.setTimeout(pump,0)
+    }
+    const pump=()=>{
+        timer=0
+        if(!entries.size)return
+        const time=now()
+        if(reduced.matches!==wasReduced){
+            wasReduced=reduced.matches
+            if(wasReduced)for(const entry of entries.values()){release(entry);entry.phase=entry.settings.stillTime;entry.needsStill=true;entry.lastKey=""}
+            dirty=true
+        }
+        if(dirty||time-lastMeasure>=125)measure()
+        const visible=[...entries.values()].filter(e=>e.visible)
+        const cold=visible.filter(e=>e.needsStill&&!e.lease&&e.retryAt<=time).sort((a,b)=>rank(b,time)-rank(a,time))
+        const candidates=visible.filter(e=>eligible(e,time)).sort((a,b)=>rank(b,time)-rank(a,time))
+        // One editor animation; Preview can use two, reserving a warm-up slot
+        // while visible cold cards still need deterministic overview frames.
+        const selected:StudyEntry[]=[]
+        for(const entry of candidates){
+            if(selected.length>=(cold.length?1:2))break
+            if(entry.target==="canvas"&&selected.some(e=>e.target==="canvas"))continue
+            selected.push(entry)
+        }
+        for(const entry of entries.values())if(entry.lease&&!selected.includes(entry))release(entry)
+        let created=false
+        for(const entry of selected){
+            if(!entry.lease&&!created){entry.lease=acquire(entry,false);created=Boolean(entry.lease)}
+            const lease=entry.lease
+            if(!lease)continue
+            try{
+            if(lease.renderer.getSnapshot().lost){release(entry);entry.retryAt=time+250;emit(entry,"recovering");continue}
+            const settings=settingsFor(entry,false),nextSignature=signature(settings)
+            if(lease.signature!==nextSignature){lease.renderer.update(settings);lease.signature=nextSignature}
+            const period=1000/(entry.target==="canvas"?12:30)
+            if(!entry.lastTick)entry.lastTick=time
+            entry.phase+=Math.min((time-entry.lastTick)/1000,.1)*entry.settings.speed;entry.lastTick=time
+            if(time-entry.lastDraw>=period||!entry.hasFrame){
+                entry.smoothPointer=entry.smoothPointer.map((v,i)=>v+(entry.pointer[i]-v)*.18) as [number,number]
+                lease.renderer.setPointer(...(entry.settings.interactive?entry.smoothPointer:[0,0] as [number,number]))
+                lease.renderer.renderAt(entry.phase)
+                copy(lease.canvas,entry.display);entry.hasFrame=true;entry.needsStill=false;entry.lastKey=key(entry)
+                entry.lastDraw=time;completed.add(entry.id)
+            }
+            emit(entry,"running")
+            }catch(error){
+                // One failing graphics/copy operation must not stop the shared
+                // clock or retain its lease while other studies wait.
+                release(entry);entry.retryAt=time+5000;entry.needsStill=true
+                emit(entry,"recovering",error instanceof Error?error.message:String(error))
+            }
+        }
+        // One still job per task yields between jobs. Guaranteed progress also
+        // prevents rapid focus/hover changes from starving the overview queue.
+        if(contexts<2&&(!created||time-lastWarm>=125)){const next=cold.find(e=>!selected.includes(e));if(next){warm(next);lastWarm=time}}
+        for(const entry of entries.values())if(!entry.lease){
+            const status:Status=entry.settings.static?"static":reduced.matches?"reduced-motion":!entry.settings.animate||entry.settings.speed<=0?"paused":!entry.visible?"offscreen":"waiting"
+            if(entry.retryAt<=time)emit(entry,status)
+        }
+        peakPixels=Math.max(peakPixels,pixels())
+        // One shared clock also notices transform-only zoom changes, which do
+        // not trigger ResizeObserver and may leave intersection ratios intact.
+        if(!document.hidden)timer=window.setTimeout(pump,selected.some(e=>e.target==="preview")?16:40)
+    }
+    const start=()=>{
+        if(listening)return
+        listening=true
+        window.addEventListener("resize",wake);window.addEventListener("scroll",wake,true)
+        document.addEventListener("visibilitychange",wake);reduced.addEventListener("change",wake)
+    }
+    const stop=()=>{
+        if(timer)clearTimeout(timer);timer=0
+        if(!listening)return
+        listening=false
+        window.removeEventListener("resize",wake);window.removeEventListener("scroll",wake,true)
+        document.removeEventListener("visibilitychange",wake);reduced.removeEventListener("change",wake)
+    }
+    const pool:StudyPool={
+        add(input){
+            const entry:StudyEntry={...input,id:++serial,rect:input.root.getBoundingClientRect(),visible:false,hover:false,focus:false,pinUntil:0,phase:input.settings.stillTime,lastTick:0,lastDraw:0,lastKey:"",needsStill:true,hasFrame:false,retryAt:0,pointer:[0,0],smoothPointer:[0,0],emitted:"",cleanup:()=>{}}
+            const enter=()=>{entry.hover=true;wake()},leave=()=>{entry.hover=false;entry.pointer=[0,0];wake()}
+            const focus=()=>{entry.focus=true;wake()},blur=()=>{entry.focus=entry.root.contains(document.activeElement);wake()}
+            const pointer=(event:PointerEvent)=>{const r=entry.root.getBoundingClientRect();entry.pointer=[(event.clientX-r.left)/Math.max(1,r.width)-.5,.5-(event.clientY-r.top)/Math.max(1,r.height)]}
+            input.root.addEventListener("pointerenter",enter);input.root.addEventListener("pointerleave",leave)
+            input.root.addEventListener("focusin",focus);input.root.addEventListener("focusout",blur);input.root.addEventListener("pointermove",pointer)
+            const observer=new ResizeObserver(wake);observer.observe(input.root)
+            entry.cleanup=()=>{observer.disconnect();input.root.removeEventListener("pointerenter",enter);input.root.removeEventListener("pointerleave",leave);input.root.removeEventListener("focusin",focus);input.root.removeEventListener("focusout",blur);input.root.removeEventListener("pointermove",pointer)}
+            entries.set(entry.id,entry);start();wake();return entry
+        },
+        update(entry,next){
+            const reset=next.mode!==entry.settings.mode||next.stillTime!==entry.settings.stillTime||(next.static&&!entry.settings.static)
+            entry.settings=next
+            if(reset){release(entry);entry.phase=next.stillTime;entry.lastTick=0;entry.lastKey="";entry.needsStill=true}
+            if(!next.interactive){entry.pointer=[0,0];entry.smoothPointer=[0,0]}
+            wake()
+        },
+        remove(entry){release(entry);entry.cleanup();entries.delete(entry.id);completed.delete(entry.id);if(!entries.size)stop();else wake()},
+        request(entry){entry.pinUntil=now()+4000;wake()},
+        runStatic(work){
+            // Exports are synchronous: evict our live leases before reserving
+            // the one-shot context, including during target/StrictMode changes.
+            for(const entry of entries.values())release(entry)
+            contexts++;peakContexts=Math.max(peakContexts,contexts)
+            try{const size=work();if(typeof size==="number")peakPixels=Math.max(peakPixels,size)}finally{contexts--;wake()}
+        },
+        debug(){return{version:1,activeContexts:contexts,peakContexts,peakPixels,entryCount:entries.size,cacheSize:cache.size,completedStillJobs,completedIds:[...completed],pendingStillIds:[...entries.values()].filter(e=>e.needsStill).map(e=>e.id),live:[...entries.values()].filter(e=>e.lease).map(e=>({id:e.id,source:e.source,mode:e.settings.mode,target:e.target,pixels:e.lease!.canvas.width*e.lease!.canvas.height,phase:e.phase})),entries:[...entries.values()].map(e=>({id:e.id,source:e.source,mode:e.settings.mode,target:e.target,visible:e.visible,hasFrame:e.hasFrame,phase:e.phase,screenWidth:e.rect.width,screenHeight:e.rect.height}))}},
+    }
+    realm[STUDY_POOL_KEY]=pool
+    return pool
+}
+function useStudySurface(root:React.RefObject<HTMLDivElement>,display:React.RefObject<HTMLCanvasElement>,settings:Settings,target:ReturnType<typeof RenderTarget.current>,source:string,notify:(status:Status,error?:string)=>void){
+    const entry=React.useRef<StudyEntry|null>(null),pool=React.useRef<StudyPool|null>(null)
+    const current=React.useRef(settings),callback=React.useRef(notify)
+    const staticKey=React.useRef("")
+    const snapshot=React.useRef<{mode:Mode,stillTime:number,time:number}|null>(null)
+    current.current=settings;callback.current=notify
+    const oneShot=()=>{
+        if(!display.current)return
+        const gpu=document.createElement("canvas"),host=display.current,next=current.current
+        gpu.width=1;gpu.height=1
+        let renderer:StudyRenderer|undefined
+        try{
+            renderer=createRenderer(gpu,{...next,managed:true,static:true,renderWidth:host.clientWidth||root.current?.clientWidth||960,renderHeight:host.clientHeight||root.current?.clientHeight||600,pixelBudget:650000,colorHost:host},(s,e)=>callback.current(s,e),next.stillTime)
+            renderer.renderAt(next.stillTime)
+            host.width=gpu.width;host.height=gpu.height
+            const context=host.getContext("2d",{alpha:false})
+            if(!context)throw new Error("Could not create the study display.")
+            context.drawImage(gpu,0,0);callback.current("static");return gpu.width*gpu.height
+        }catch(error){callback.current("recovering",String(error))}
+        finally{renderer?.dispose()}
+    }
+    React.useLayoutEffect(()=>{
+        if(!root.current||!display.current)return
+        if(target===RenderTarget.export||target===RenderTarget.thumbnail)return
+        staticKey.current=""
+        const shared=getStudyPool();pool.current=shared
+        const added=shared.add({root:root.current,display:display.current,source,target:target===RenderTarget.canvas?"canvas":"preview",settings:current.current,factory:createRenderer,notify:(s,e)=>callback.current(s,e)})
+        const saved=snapshot.current
+        if(saved?.mode===current.current.mode&&saved.stillTime===current.current.stillTime)added.phase=saved.time
+        entry.current=added
+        return()=>{snapshot.current={mode:added.settings.mode,stillTime:added.settings.stillTime,time:added.phase};shared.remove(added);entry.current=null;pool.current=null}
+    },[target])
+    React.useLayoutEffect(()=>{
+        if(entry.current)pool.current?.update(entry.current,settings)
+        else if(target===RenderTarget.export||target===RenderTarget.thumbnail){
+            const key=String(target)+"/"+JSON.stringify(settings)+"/"+(display.current?.clientWidth??0)+"/"+(display.current?.clientHeight??0)
+            if(staticKey.current!==key){staticKey.current=key;getStudyPool().runStatic(oneShot)}
+        }
+    },[settings,target])
+    return()=>{if(entry.current)pool.current?.request(entry.current)}
 }
 
 /**
@@ -551,23 +878,16 @@ export default function CreativeCodingStudy(props: Props) {
     const canvasPreview=canvasMotion&&target===RenderTarget.canvas
     // Private moodboard opt-in only. Exports and thumbnails always stay static.
     const isStatic=target===RenderTarget.export||target===RenderTarget.thumbnail||(staticRenderer&&!canvasPreview)
-    const canvas=React.useRef<HTMLCanvasElement>(null)
-    const renderer=React.useRef<ReturnType<typeof createRenderer>|null>(null)
+    const root=React.useRef<HTMLDivElement>(null),canvas=React.useRef<HTMLCanvasElement>(null)
     const [paused,setPaused]=React.useState(false)
     const [status,setStatus]=React.useState<Status>("static")
     const [error,setError]=React.useState("")
     const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,pixelSize:Math.max(1,pixelSize),interactive,primary,secondary,ink}
-    React.useEffect(()=>{
-        if(!canvas.current)return
-        try { renderer.current=createRenderer(canvas.current,settings,(next,detail)=>{setStatus(next);setError(detail??"")}) }
-        catch(problem){setError(problem instanceof Error?problem.message:String(problem))}
-        return()=>{renderer.current?.dispose();renderer.current=null}
-    },[])
-    React.useEffect(()=>{renderer.current?.update(settings)},[study,animate,paused,isStatic,canvasPreview,speed,stillTime,intensity,pixelSize,interactive,primary,secondary,ink])
+    const requestMotion=useStudySurface(root,canvas,settings,target,"CreativeCodingStudy.tsx",(s,e)=>{setStatus(s);setError(e??"")})
     const source=SOURCES[study]
     const color=study==="dither"?ink:"#e2e6ef"
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
-    return <div style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="dither"?primary:"#030407",color}}>
+    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="dither"?primary:"#030407",color}}>
         <canvas ref={canvas} role="img" aria-label={`${source.title}, animated source-led study of ${source.key} by ${source.account}`} style={{display:"block",width:"100%",height:"100%",touchAction:"pan-y"}} />
         {showLabels&&<>
             <div style={{position:"absolute",left:"5%",top:"6%",pointerEvents:"none"}}>
@@ -577,8 +897,8 @@ export default function CreativeCodingStudy(props: Props) {
             <a href={source.url} target="_blank" rel="noreferrer" style={{...mono,position:"absolute",left:"5%",bottom:"5%",color,textDecoration:"underline",textUnderlineOffset:3}}>{source.account} ↗</a>
             <div style={{...mono,position:"absolute",right:"5%",bottom:"5%",opacity:.65,pointerEvents:"none",fontSize:8,maxWidth:"55%",textAlign:"right"}}>INDEPENDENT GEOMETRY / SOURCE MOTION APPROXIMATED</div>
         </>}
-        {!isStatic&&<button onClick={()=>setPaused(p=>!p)} disabled={status==="reduced-motion"||!animate} aria-pressed={paused} aria-label={paused?"Play animation":"Pause animation"} style={{...mono,position:"absolute",right:"5%",top:"6%",padding:"5px 9px",color,background:"transparent",border:`1px solid ${color}`,cursor:"pointer",opacity:.75}}>
-            {status==="reduced-motion"?"REDUCED MOTION":!animate?"MOTION OFF":paused?"PLAY":"PAUSE"}
+        {!isStatic&&<button onClick={()=>{if(status==="waiting"){setPaused(false);requestMotion()}else setPaused(p=>!p)}} disabled={status==="reduced-motion"||!animate} aria-pressed={paused} aria-label={paused||status==="waiting"?"Play animation":"Pause animation"} style={{...mono,position:"absolute",right:"5%",top:"6%",padding:"5px 9px",color,background:"transparent",border:`1px solid ${color}`,cursor:"pointer",opacity:.75}}>
+            {status==="reduced-motion"?"REDUCED MOTION":!animate?"MOTION OFF":paused||status==="waiting"?"PLAY":"PAUSE"}
         </button>}
         {(error||status==="recovering")&&<div role="status" style={{...mono,position:"absolute",inset:"40% 10%",textAlign:"center"}}>{error?<>Graphics unavailable in this browser.<br/>Enable WebGL to view this study.</>:"Restoring graphics…"}</div>}
     </div>
