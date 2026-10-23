@@ -18,8 +18,12 @@ they do not all belong to the same style.
 The [Framer visual kitchen](framer-moodboard.md) separates **Source inspiration**
 from **Original compositions**. Its source inventory covers the catalog's 68
 external URLs across all 39 stable entries: 58 X previews and ten site/support
-link cards. The 24 made-here studies are classified as 23 independent
-compositions and one labeled source-led adaptation, with a combination playground.
+link cards. The 24 earlier MB studies comprise 23 independent compositions and
+one labeled source-led adaptation. A further 16 [native RE studies](design-studies/recreations/README.md)
+recreate selected source motifs as editable Framer elements within Source
+inspiration, alongside the combination playground. Their
+[saved-node manifest](design-studies/recreations/manifest.json) links the authoring
+sources to the saved Framer studies.
 External work and close adaptations retain source attribution in the inspiration
 section, even when Codex makes the adaptation; our generated adaptation is not
 attributed to the external artist.
@@ -49,6 +53,11 @@ Record the chosen Framer project/node and the resulting decisions through the
 [manual handoff workflow](framer-prototyping.md). The prototype defines a proposed
 design; repository code and shared catalogs define the implemented behavior and
 product facts.
+
+For graphic-element studies, inspect the reference and rebuild its motif from
+native Framer shapes, text, and named groups so the parts remain editable.
+Retain source keys and simplification notes; keep post previews in the comparison
+library and source-led recreations in Source inspiration.
 
 Give each new reference the next unused ID in its collection (`WEB`, `GRA`, `ART`,
 or `SITE`). Preserve IDs when titles change. Record the creator or posting account,

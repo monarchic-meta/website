@@ -18,7 +18,10 @@
   directions and original graphic studies.
 - [Framer moodboard](framer-moodboard.md): a freeform visual kitchen with separate
   Source inspiration and Original compositions sections, 68 catalog source URLs,
-  23 independent studies, one labeled source-led adaptation, and a playground.
+  24 MB asset studies, 16 native source-led RE studies, and a playground.
+- [Native source recreations](design-studies/recreations/README.md): editable
+  Framer construction recipes, source credits, simplification notes, and a
+  [saved-node manifest](design-studies/recreations/manifest.json).
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 

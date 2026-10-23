@@ -13,8 +13,9 @@ directions and the earlier graphic gallery are outside this change.
 Use two clearly distinct sections on the same design page:
 
 - [Source inspiration](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VvoNblwjH):
-  the catalog's **68 unique external URLs**: **58 X posts with image or video-poster
-  previews** and **10 site/support links shown as link cards**. Keep posting
+  **16 native source-led recreations** above the comparison library,
+  plus the catalog's **68 unique external URLs**: **58 X posts with image or
+  video-poster previews** and **10 site/support links shown as link cards**. Keep posting
   accounts, catalog IDs, and clickable source links with these works. A separate
   **Made here / source-led adaptation** area within this section holds MB-23.
 - [Original compositions](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rI0h8QiJa):
@@ -38,7 +39,24 @@ and reflection composition follows that source closely, so it belongs in Source
 inspiration. The generated bitmap is not attributed to the external artist.
 Its asset file, MB identifier, and Framer group/artwork IDs remain unchanged.
 
-## Browse Source inspiration
+## Edit native source recreations
+
+The [Source recreations area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rHeXK4bVd)
+contains a saved four-by-four collection of **RE-01–16** studies. Each has a
+1600 × 1000 artboard with named, individually editable native parts: tile
+families, dot glyphs, wire ellipses, halftone faces, pixel petals, and typography.
+The new RE artwork uses native frames and text, with no embedded SVG or raster
+artwork. Source identity and any source metrics remain confined to these
+clearly labeled recreations.
+
+The [recipe index](design-studies/recreations/README.md) links all 16 authoring
+files, exact source keys and posts, posting accounts, and simplification notes.
+RE studies belong in Source inspiration. They add to the **24 earlier MB
+studies**; they do not replace those assets or enlarge the 23-study Original
+compositions wall. Placement and saved-editor verification for this native
+round are recorded below.
+
+## Browse the source comparison library
 
 Arrange the complete catalog inventory into four separate source categories.
 The 68 URLs span all 39 stable catalog entries; an entry can cite several posts
@@ -81,7 +99,9 @@ column identifies influences whose previews or links belong in the separate
 Select a named study in Layers, duplicate its group, and move the duplicate to
 the [combination playground](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=hakGOoQNh) beneath the wall. Crop,
 layer, resize, and compare a few elements before placing them in an existing
-page prototype. Use the original-composition studies for these combinations.
+page prototype. Native RE groups can be edited part by part for source-led
+experiments; preserve their source-led labels and credits. Use the independent
+MB studies when trying original-composition combinations.
 Keep external work and close adaptations in Source inspiration with their
 attribution; do not duplicate them into a group labeled as our original work.
 Neither section nor the playground defines an approved design system or
@@ -97,14 +117,20 @@ previews remain separate reference layers with their own credits.
 
 ## Retained sources and handoff
 
-The [artwork index](design-studies/moodboard/README.md) links the files for all
-24 studies: SVGs, PNGs, and image-generation prompts. The
+The [MB artwork index](design-studies/moodboard/README.md) links the files for the
+24 earlier studies: SVGs, PNGs, and image-generation prompts. The
 [study manifest](design-studies/moodboard/manifest.json) records dimensions,
 reference IDs, and exact Framer group/artwork IDs. The
 [source index](design-studies/moodboard/references.json) records catalog source
 URLs, attribution, evidence scope, and Framer reference-group IDs. The repository
 retains the 24 study assets and public source links; external source previews
 live in the Framer workspace.
+
+The separate [RE recipe index](design-studies/recreations/README.md) retains the
+16 native source-recreation recipes. The
+[RE manifest](design-studies/recreations/manifest.json) records the saved Framer
+node IDs and native counts. These are manual Framer authoring sources; they are
+not application components or an automatic synchronization system.
 
 The [catalog coverage record](design-studies/moodboard/catalog-coverage.json)
 maps the 39 stable entries to all 68 URLs, source categories, and saved Framer
@@ -162,3 +188,24 @@ hierarchy confirmed all 68 source groups, 58 preview frames, 68 caption frames,
 23 original groups/artworks, and the adaptation's existing group/artwork IDs.
 The saved browser captures are retained with this Codex task's local
 visualization artifacts. The prepared fallback contact sheets were not imported.
+
+## Native recreation round verification
+
+All 16 native study cards were confirmed in the actual Framer editor and
+remained after a reload. Their artwork contains 2,198 recipe Frame nodes and
+86 rich-text nodes; including the 16 artboard roots gives 2,214 Frame nodes.
+These counts exclude card and credit containers. The new RE artwork contains
+no SVG nodes or bitmap fills. Named parts remain individually editable.
+
+The Source frame is 12,160px high. Its native recreation area starts at x70/y300
+and spans 7100 × 5680px. The four comparison categories and MB-23 adaptation
+area sit 5900px below their earlier positions, retaining their existing IDs,
+images, captions, and source links. The 68 catalog references, 23 independent
+MB studies, MB-23 adaptation, and seven website pages are preserved. Nothing
+was published.
+
+The [RE manifest](design-studies/recreations/manifest.json) records the saved
+study nodes and source attribution. This editor verification confirms the saved
+native constructions; it does not expand the catalog's source-review scope.
+Full X videos and multi-image galleries remain unreviewed except where the
+catalog explicitly records otherwise.

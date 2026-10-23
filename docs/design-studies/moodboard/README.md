@@ -1,8 +1,8 @@
 # Visual kitchen sources
 
 Graphic studies for the [Framer moodboard](../../framer-moodboard.md), created
-2026-10-22. The 24 retained assets comprise **23 independent compositions and
-one source-led adaptation**. They are not approved logos, product diagrams,
+2026-10-22. The 24 retained **MB asset studies** comprise **23 independent
+compositions and one source-led adaptation**. They are not approved logos, product diagrams,
 or site assets.
 
 The same Framer design page separates **Source inspiration** from
@@ -14,6 +14,14 @@ Its separate **Made here / source-led adaptation** area holds MB-23. The first
 seven composition clusters each contain three studies; Atmosphere contains two.
 Inspiration IDs remain citations rather than source previews mixed into those
 clusters.
+
+The later [16 native RE studies](../recreations/README.md) add source-led
+recreations above the comparison library. Their frames, dots, wires, and text
+are editable as individual Framer layers. They belong in Source inspiration and
+retain source credits; they do not replace the 24 MB assets or alter the
+23-study Original compositions wall. Their
+[separate manifest](../recreations/manifest.json) records the saved native-study
+nodes; the MB manifest continues to describe only the earlier asset studies.
 
 External work, recreations, and close adaptations of source compositions belong
 in Source inspiration, even when Codex made the recreation or adaptation. Credit
