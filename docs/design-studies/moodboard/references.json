@@ -2611,7 +2611,76 @@
       "Dark material-led hero object",
       "Overlapping graphic layers with focus contrast"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-05",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/MaterialCodingStudy.tsx",
+        "mode": "capsules",
+        "palette": {
+          "primary": "#d5dbd2",
+          "secondary": "#a3aea2",
+          "ink": "#111411"
+        },
+        "studyProps": {
+          "study": "capsules",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#d5dbd2",
+          "secondary": "#a3aea2",
+          "ink": "#111411",
+          "interactive": true,
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "capsules",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#d5dbd2",
+          "secondary": "#a3aea2",
+          "ink": "#111411",
+          "interactive": true,
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ji_GDIq:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "H3NHn_JkK",
+        "framerSourceInstance": "sirj_VNcS",
+        "framerSourceCredit": "sHqbDuvrx",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "xtNHWEhdW",
+        "framerReferenceGroup": "mkcKe9nKH",
+        "framerReferenceInstance": "ioelkHUeS",
+        "framerReferencePoster": "J_Zl0jD67",
+        "framerReferencePosterLabel": "atuBHWs41",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "ioelkHUeS",
+      "sourcePoster": "J_Zl0jD67",
+      "sourcePosterLabel": "atuBHWs41",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-005",
@@ -2890,7 +2959,76 @@
       "Glass-overlay material experiment",
       "Distorted decorative panel or product-preview treatment"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-06",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/MaterialCodingStudy.tsx",
+        "mode": "glass",
+        "palette": {
+          "primary": "#c2ff76",
+          "secondary": "#b9c8ec",
+          "ink": "#0a0c10"
+        },
+        "studyProps": {
+          "study": "glass",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#c2ff76",
+          "secondary": "#b9c8ec",
+          "ink": "#0a0c10",
+          "interactive": true,
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "glass",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#c2ff76",
+          "secondary": "#b9c8ec",
+          "ink": "#0a0c10",
+          "interactive": true,
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ji_GDIq:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "PikUlLtci",
+        "framerSourceInstance": "xnQDl8RnN",
+        "framerSourceCredit": "rERE2li6h",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "owNjOAmAc",
+        "framerReferenceGroup": "RdWTGpcik",
+        "framerReferenceInstance": "UyR0Ud5Qc",
+        "framerReferencePoster": "ccFMZNcgk",
+        "framerReferencePosterLabel": "oBso5I5jk",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "UyR0Ud5Qc",
+      "sourcePoster": "ccFMZNcgk",
+      "sourcePosterLabel": "oBso5I5jk",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-009",
@@ -3220,7 +3358,76 @@
       "Angular identity object",
       "Geometric frame, tessellated backdrop or section divider"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-07",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/MaterialCodingStudy.tsx",
+        "mode": "lattice",
+        "palette": {
+          "primary": "#f4f6f7",
+          "secondary": "#647282",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "lattice",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#f4f6f7",
+          "secondary": "#647282",
+          "ink": "#020304",
+          "interactive": true,
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "lattice",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#f4f6f7",
+          "secondary": "#647282",
+          "ink": "#020304",
+          "interactive": true,
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ji_GDIq:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "g_EFVFipE",
+        "framerSourceInstance": "zcsjbYFTM",
+        "framerSourceCredit": "dA_KYZM_r",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "k6tx47nrr",
+        "framerReferenceGroup": "WR7dBIwaB",
+        "framerReferenceInstance": "IXcNB_NhB",
+        "framerReferencePoster": "jDtwcEC9G",
+        "framerReferencePosterLabel": "z5F30lyqA",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "IXcNB_NhB",
+      "sourcePoster": "jDtwcEC9G",
+      "sourcePosterLabel": "z5F30lyqA",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-014",
@@ -3373,7 +3580,76 @@
       "Reflective material study",
       "Chromatic object, framed aperture or identity surround"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-08",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/MaterialCodingStudy.tsx",
+        "mode": "spectral",
+        "palette": {
+          "primary": "#b8d2ef",
+          "secondary": "#e5bdcb",
+          "ink": "#090b0e"
+        },
+        "studyProps": {
+          "study": "spectral",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#b8d2ef",
+          "secondary": "#e5bdcb",
+          "ink": "#090b0e",
+          "interactive": true,
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "spectral",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "primary": "#b8d2ef",
+          "secondary": "#e5bdcb",
+          "ink": "#090b0e",
+          "interactive": true,
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ji_GDIq:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "XKlaRl69h",
+        "framerSourceInstance": "VXJbZLx8i",
+        "framerSourceCredit": "EqsvXDPCz",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "jBJarlsuQ",
+        "framerReferenceGroup": "QR2xWvgNv",
+        "framerReferenceInstance": "gSCjXq0YP",
+        "framerReferencePoster": "ZUrPQT2RU",
+        "framerReferencePosterLabel": "LHEZwPQ4T",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "gSCjXq0YP",
+      "sourcePoster": "ZUrPQT2RU",
+      "sourcePosterLabel": "LHEZwPQ4T",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-017",

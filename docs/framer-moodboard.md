@@ -79,8 +79,8 @@ still-frame approximation is not a working shader or animation.
 ## Live Creative Coding studies
 
 The [Live Creative Coding area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qPREnLG7B)
-contains the React/WebGL code studies below the comparison library. The
-four-study revision comprises:
+contains the React/WebGL code studies below the comparison library. The first
+four saved studies are:
 
 - LC-01 / Ordered terrain: moving, ray-marched terrain with three-color tonal
   dithering, led by CC-003 / @GaloAndStuff.
@@ -115,6 +115,29 @@ stays the same. All twelve code instances have Canvas motion enabled, including
 the four reference previews. Their saved placements and controls were verified
 after a full editor reload; Wave and Coronal were visually checked in motion
 on the canvas, and Wave was also exercised in Preview.
+
+The material revision adds four independently authored source-led studies:
+
+- LC-05 / Capsule depth: dark capsule layers and soft-focus depth, led by
+  CC-004 / @kellymilligannz; its blur is an analytic approximation.
+- LC-06 / Glass refraction: moving glass over an original, locally drawn UI
+  texture, led by CC-008 / @AlbiaHossain; no screenshot or DOM capture is used.
+- LC-07 / Triangle lattice: five recursive levels with actual open triangular
+  holes and angular leaves, led by CC-013 / @YoheiNishitsuji.
+- LC-08 / Spectral grain: a reflective-looking torus with grain and spectral
+  rim light, led by CC-016 / @Jaenam97; it is an approximate material study.
+
+These modes live in a separate
+[MaterialCodingStudy component](design-studies/code-components/MaterialCodingStudy.tsx). Its Scale,
+Focus, Refraction and Grain controls complement the shared motion and palette
+controls. Near-viewport canvas mounting uses a 120px margin, preserves animation
+phase, and releases the WebGL context after detachment; export and thumbnail
+rendering bypass the visibility gate. The existing
+[CreativeCodingStudy source](design-studies/code-components/CreativeCodingStudy.tsx)
+and its twelve placements remain unchanged. The material modes passed local GPU
+compilation and visual review. Actual Preview checks confirmed moving frames
+and pause/resume for all four; all four reference-card artworks rendered, and
+Spectral editor-canvas motion was measured.
 
 ## Original-composition clusters
 
@@ -213,9 +236,9 @@ all 18 original groups. At that point the Source frame was **15,600px high**;
 its earlier recreation and comparison areas retained their geometry. The code lab was saved
 as a new draft page; the seven earlier page identities/routes remain present.
 
-The saved four-study revision contains **20 native + 4 live source studies**, the same
+The earlier saved four-study revision contained **20 native + 4 live source studies**, the same
 77 source entries and 18 original compositions, and eight source-led
-adaptations: four static native and four live. Its live area is 3,500px high
+adaptations: four static native and four live. Its live area was 3,500px high
 inside a 17,300px Source frame. After a full editor reload, 615 saved-node
 assertions verified all twelve code instances, their controls, source-thumbnail
 retention and source credits. The 20 native study trees, 18 original groups and
@@ -223,6 +246,26 @@ retention and source credits. The 20 native study trees, 18 original groups and
 cards retain their IDs, positions and original poster assets. Wave and Coronal
 visibly animate on the editor canvas; Wave also runs and pauses/resumes in
 actual Preview. Earlier three-study proof is retained as historical evidence.
+
+The saved material revision contains **20 native + 8 live source studies**, 24 code
+instances, 18 original compositions and the same 77 source entries. Its twelve
+source-led adaptations are four static native studies and eight live studies,
+with 28 source studies in total.
+LC-05 and LC-06 fill the vacant second-row cells; LC-07 and LC-08 occupy the
+third row. The live area is 5,200px high within a 19,000px Source frame.
+New reference-card main artwork retains its external poster as a comparison
+thumbnail. After fresh navigation reloads of the design page and draft lab,
+31,799 native-state assertions verified the placements, exact controls,
+source assets, credits and geometry. All 20 native study trees, 18 original
+groups, 73 untouched reference trees and all 77 reference group IDs were
+preserved, along with the earlier four main/lab cards and twelve code instances.
+All four material studies changed over time and paused/resumed in actual
+Preview. Their reference-card artwork rendered; Spectral also showed measured
+editor-canvas motion. Proof and screenshots live in this task's local
+`live-material-studies` artifacts; the earlier 615-check and other preservation
+proofs retain their historical scope. Complete source-clip and physical-model
+fidelity remain unverified, and no actual Framer export image was manually
+inspected. The lab remains an unpublished draft.
 
 The asset and catalog changes affect authoring documentation only. Validation
 checks JSON, unique IDs and URLs, catalog/source-set equality, local links,

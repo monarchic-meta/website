@@ -29,6 +29,20 @@ source-led adaptations with independent code and motion, alongside the earlier
 static native studies. Their implementation checks do not expand the
 source-review evidence below.
 
+The saved material revision adds LC-05–08 from CC-004's capsule depth, CC-008's
+glass over UI, CC-013's recursive triangular lattice and CC-016's spectral ring
+through [MaterialCodingStudy](../design-studies/code-components/MaterialCodingStudy.tsx).
+The earlier [CreativeCodingStudy source](../design-studies/code-components/CreativeCodingStudy.tsx)
+remains unchanged. A fresh reload and 31,799 native-state assertions verified
+the new placements. All four new modes showed moving frames and pause/resume in
+actual Preview; their reference-card artwork rendered, with Spectral
+editor-canvas motion also measured. The inventory is eight live studies and
+24 code instances alongside 20 native studies and 18 originals, with all
+77 source entries retained: 28 source studies and twelve source-led adaptations
+(four static native and eight live). These checks do not establish complete
+source-clip or physical-model fidelity; no actual Framer export image was
+manually inspected, and the lab remains unpublished.
+
 ## References
 
 ### CC-001 — White point canopy
@@ -68,6 +82,7 @@ source-review evidence below.
 - Observed: Overlapping dark capsule-like forms; Soft focus and depth-of-field blur against a pale gray-green field.
 - Possible applications: Dark material-led hero object; Overlapping graphic layers with focus contrast.
 - Adaptation: Vary the capsule family, overlap and focal plane; keep an independently composed silhouette instead of copying the sampled arrangement.
+- Code study: [LC-05 / Capsule depth](../design-studies/code-components/README.md), using analytic layers and approximate soft focus; saved-editor and Preview motion verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-005 — Coronal
@@ -105,6 +120,7 @@ source-review evidence below.
 - Observed: Transparent/refractive form layered over a dark UI panel; Visible distortion of underlying interface content.
 - Possible applications: Glass-overlay material experiment; Distorted decorative panel or product-preview treatment.
 - Adaptation: Explore a clearly decorative glass layer over original panel content. The author caption names HTML-in-canvas and Three.js; its implementation was not inspected or executed.
+- Code study: [LC-06 / Glass refraction](../design-studies/code-components/README.md), resampling an original local UI texture; saved-editor and Preview motion verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-009 — Glass pixel glyph / cube grid
@@ -151,6 +167,7 @@ source-review evidence below.
 - Observed: Repeated white triangular lattice; Nested/self-similar angular depth against black.
 - Possible applications: Angular identity object; Geometric frame, tessellated backdrop or section divider.
 - Adaptation: Vary the triangle hierarchy, scale and crop with independently composed geometry; the visual repetition does not verify the generating algorithm.
+- Code study: [LC-07 / Triangle lattice](../design-studies/code-components/README.md), an independent five-level construction with open holes; saved-editor and Preview motion verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-014 — Curling white point gesture
@@ -178,6 +195,7 @@ source-review evidence below.
 - Observed: Grainy chrome-like ring; Spectral color along a reflective-looking curved surface.
 - Possible applications: Reflective material study; Chromatic object, framed aperture or identity surround.
 - Adaptation: Explore original ring cross-sections and alternative open shapes. The caption describes an approximate spectral-path-tracing shader; no implementation or physical accuracy was verified.
+- Code study: [LC-08 / Spectral grain](../design-studies/code-components/README.md), an approximate torus material rather than a path tracer; saved-editor, editor-canvas motion and Preview motion verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-017 — Icy-blue ridge / flow

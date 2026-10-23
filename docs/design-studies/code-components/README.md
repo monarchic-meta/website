@@ -1,11 +1,13 @@
 # Live Creative Coding studies
 
-[CreativeCodingStudy.tsx](CreativeCodingStudy.tsx) is a self-contained React 18
-Framer code component with four live WebGL studies. It uses React and Framer
-only; there are no npm dependencies, external textures, copied source shaders,
-or network requests. The Astro/Svelte site does not import this authoring file.
-Its directory is excluded from the website's TypeScript project because Framer
-provides the React/Framer runtime and checks the code inside its own project.
+Two self-contained React 18 Framer code components provide eight live WebGL
+studies. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx) contains LC-01–04;
+[MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) adds LC-05–08. They use React
+and Framer only, with no npm dependencies, external textures, copied source
+shaders or network requests. The glass study creates its own local UI texture.
+The Astro/Svelte site does not import either authoring file. This directory is
+excluded from the website's TypeScript project because Framer provides the
+React/Framer runtime and checks the code inside its own project.
 
 These are **source-led adaptations**, kept with Source inspiration. Their
 geometry and GLSL are independently authored from the observed references;
@@ -18,6 +20,10 @@ or reproduced. Existing native RE studies remain available separately.
 | LC-02 / Suspended point field | [CC-001 / @yuruyurau](https://x.com/yuruyurau/status/2093710258120331463) | 13,248 GPU points, continuous canopy and pinched drape, moving strands and viewpoint | Independently parameterized surface and motion; no source formula or point data |
 | LC-03 / Coronal light | [CC-005 / @XorDev](https://x.com/XorDev/status/2093488121392300374) | Volumetric cyan/magenta aperture, traveling filaments and light plumes, pointer response | Independent density/noise field; source shader code and exact light model are not adopted |
 | LC-04 / Wave | [CC-010 / @XorDev](https://x.com/XorDev/status/2093074820661387392) | Moving luminous ribbon, folded flow and pointer response | Independent ribbon geometry, light field and motion; source shader code and exact timing are not adopted |
+| LC-05 / Capsule depth | [CC-004 / @kellymilligannz](https://x.com/kellymilligannz/status/2095011696180171077) | Layered dark capsules, moving overlap and adjustable soft focus | Analytic capsule layers and a soft-focus approximation; no physical depth-of-field or source physics simulation |
+| LC-06 / Glass refraction | [CC-008 / @AlbiaHossain](https://x.com/AlbiaHossain/status/2093330866143662498) | Moving glass panels visibly refract a locally generated interface texture | Original Canvas 2D UI artwork resampled by the shader; no screenshot, DOM capture or source-site asset |
+| LC-07 / Triangle lattice | [CC-013 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098603831944945735) | Rotating recursive angular geometry with open triangular holes | Independent five-level nearest-vertex iterated construction with angular leaves; source formula and exact geometry are not adopted |
+| LC-08 / Spectral grain | [CC-016 / @Jaenam97](https://x.com/Jaenam97/status/2098418240900804947) | Reflective-looking torus, spectral rim, moving highlights and surface grain | Ray-marched torus with an approximate environment and spectral material; not a path tracer or physical spectral simulation |
 
 ## Controls
 
@@ -31,9 +37,14 @@ colors; the renderer is opaque and ignores palette alpha. Use these palettes:
 - Coronal: primary `#49efff`, secondary `#b12aff`.
 - Wave: primary `#c6ff9f`, secondary `#b777ff`.
 
+MaterialCodingStudy adds **Scale** for its four modes, **Focus** for capsules,
+**Refraction** for glass and **Grain** for the spectral ring. Its palette controls
+change the material colors. Shared controls retain animation, speed, still time,
+intensity, pointer response and source labels.
+
 **Canvas motion** defaults off. With animation enabled, opting in allows motion
-on the Framer editor canvas at up to **12 fps and 150,000 pixels**. The component
-uses `RenderTarget.canvas` together with `useIsStaticRenderer` to distinguish
+on the Framer editor canvas at up to **12 fps and 150,000 pixels**. Both components
+use `RenderTarget.canvas` together with `useIsStaticRenderer` to distinguish
 that authoring target from exports and thumbnails, which remain frozen at
 **Still time**.
 
@@ -42,6 +53,13 @@ Framer Preview runs at up to **30 fps and 650,000 pixels**, with DPR capped at
 motion holds a still frame; hidden tabs and offscreen components stop their
 animation loops. Canvas motion is an instance-level authoring choice and does
 not change the export policy.
+
+MaterialCodingStudy mounts its canvas when the component enters the viewport
+or its 120px preload margin. Leaving that range detaches the canvas and disposes
+the renderer; after detachment it releases the WebGL context slot. Returning to
+the component resumes the saved animation phase. Export and thumbnail targets
+render without waiting for viewport visibility. This lifecycle belongs to the
+new material component; the earlier four-mode authoring file remains unchanged.
 
 Source labels and links accompany each placement. If labels are hidden for a
 material-only experiment, keep its external credit card beside the component.
@@ -52,7 +70,7 @@ Keep independently composed Monarchic work in Original compositions.
 Edit the TSX source in this repository, then deliberately apply it to Framer's
 code file through MCP or the code editor. This is a manual authoring workflow,
 not synchronization with the website. Inspect Framer's returned code diagnostics,
-check all four modes, and reload the actual editor before recording placement
+check the affected modes, and reload the actual editor before recording placement
 as saved. Check Preview motion, opt-in canvas motion and frozen exports
 separately. Record whether Canvas motion is enabled on each saved placement.
 
@@ -85,7 +103,7 @@ preserved. These checks do not establish exact source-video fidelity or
 production-site integration. Screenshots and verification inputs are retained
 in this Codex task's local `live-creative-coding` artifacts.
 
-## Four-study revision — saved and verified
+## Earlier four-study revision — saved proof
 
 The revision adds LC-04 / Wave on a second row of the live area and appends a
 fourth card to the same draft lab. The earlier LC-01–03 live cards retain their
@@ -93,10 +111,11 @@ geometry. CC-001, CC-003, CC-005 and CC-010 have code components as their main
 reference-card artwork, with the external posters retained as comparison
 thumbnails. Each adaptation keeps its source credit and its own classification.
 
-The saved inventory is **20 native studies, four live studies, 18 originals and
-77 source entries**. The eight source-led adaptations comprise four static native
-studies and four live studies; additional placements do not create new studies.
-The live area is 3,500px high and the Source frame is 17,300px high. All twelve
+At that stage the saved inventory was **20 native studies, four live studies,
+18 originals and 77 source entries**. Its eight source-led adaptations comprised
+four static native studies and four live studies; additional placements do not
+create new studies.
+The live area was 3,500px high and the Source frame was 17,300px high. All twelve
 instances have Canvas motion enabled: four reference previews, four live-area
 studies and four lab studies. Open the
 [Coronal reference card](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=vLDEOerxD)
@@ -115,4 +134,41 @@ export/thumbnail freeze guards, frame cap and reduced motion; no exported image
 was manually inspected during this revision. Framer code diagnostics are empty.
 Proof inputs and screenshots are retained in this task's local
 `live-creative-coding-correction` artifacts. The manifest retains the earlier
-three-study verification separately from this current proof.
+three-study and four-study verification as historical evidence.
+
+## Material revision — saved and verified
+
+LC-05–08 add capsules, refractive UI glass, recursive triangles and a grainy
+spectral ring through MaterialCodingStudy. All four modes have compiled on the
+GPU and their local visuals have been reviewed. A fresh editor reload and
+**31,799 native-state assertions** confirmed their saved placements, exact
+controls, source thumbnails, credit links and geometry.
+
+The saved inventory is **eight live studies and 24 code instances**, alongside
+the same 20 native studies, 18 originals and 77 source entries: **28 source
+studies** in total. Twelve source-led adaptations comprise four static native
+studies and eight live studies. Each new study has a live-area card, a draft-lab card and main artwork on its
+corresponding reference card; external source posters remain comparison
+thumbnails. The existing twelve code instances and four earlier live cards are
+retained.
+
+The layout fills vacant live-area cells: LC-05 at `(2410, 1820)`, LC-06 at
+`(4760, 1820)`, LC-07 at `(60, 3520)` and LC-08 at `(2410, 3520)`. The
+live-area height is 5,200px inside a 19,000px Source frame. The lab keeps its
+existing draft route. The earlier 615-check proof applies to the four-study
+round only.
+
+All four new studies rendered, changed between measured frames and paused and
+resumed in actual Framer Preview. All four reference-card artworks rendered;
+Spectral motion was also measured on the editor canvas. Fresh baseline
+comparisons preserve all 20 native study trees, 18 original groups, 73 untouched
+reference trees, all 77 reference group IDs, the earlier four main/lab cards and
+their twelve code instances. The four intentionally revised reference cards
+retain their original poster assets and credits. The original four-mode
+component source remains unchanged.
+
+Current proof inputs and screenshots are retained in this task's local
+`live-material-studies` artifacts. Exact source algorithms, complete source
+clips and physical material fidelity remain unverified. No actual Framer export
+image was manually inspected. The lab remains an unpublished draft, and these
+authoring changes do not integrate the components into the production site.
