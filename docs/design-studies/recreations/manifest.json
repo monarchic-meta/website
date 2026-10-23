@@ -1,0 +1,818 @@
+[
+  {
+    "id": "RE-01",
+    "name": "Finding signal / staggered editorial band",
+    "sourceKey": "GRA-001-03",
+    "sourceURL": "https://x.com/tdeser/status/2102051003574911054",
+    "postingAccount": "@tdeser",
+    "catalogRef": "GRA-001",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-01-finding-signal.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#90979A",
+    "simplifications": [
+      "Source-led recreation of the viewed Finding signal poster, not a Monarchic identity.",
+      "The portrait composition is reflowed onto a landscape artboard; the orange band intentionally touches both side edges.",
+      "Space Grotesk substitutes for the source typeface; fine paper texture and the smallest copy are omitted."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "GAZvIlrNe",
+    "framerArtwork": "v5CoYW07o",
+    "framerCredit": "PzSfMDKYu",
+    "framerLabel": "HeHZyyfCG",
+    "parts": [
+      {
+        "name": "Editorial rules",
+        "id": "eS2uXszdJ"
+      },
+      {
+        "name": "Signal / orange band",
+        "id": "If2i3s2tO"
+      }
+    ],
+    "recipeFrames": 9,
+    "nativeFrames": 10,
+    "nativeText": 15,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-02",
+    "name": "SP-1 / rounded blocks and loader",
+    "sourceKey": "GRA-002-03",
+    "sourceURL": "https://x.com/kyleanthony/status/2098567618605003090",
+    "postingAccount": "@kyleanthony",
+    "catalogRef": "GRA-002",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-02-bracket-sp1.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#BEBFC1",
+    "simplifications": [
+      "Source-led SP-1 recreation, not a Monarchic logo; the large glyphs are constructed from editable native blocks.",
+      "The faint repeated outline lettering is reduced to two ghost bracket families.",
+      "The source loader is a static eight-dot arrangement; no animation or deployed functionality is implied."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "iBAdFt_hV",
+    "framerArtwork": "HTsZCgkR4",
+    "framerCredit": "h9Ikjhs51",
+    "framerLabel": "PUxM61kFa",
+    "parts": [
+      {
+        "name": "Ghost bracket families",
+        "id": "DdHnY6Uzn"
+      },
+      {
+        "name": "Left rounded bracket",
+        "id": "dPVa3Spzx"
+      },
+      {
+        "name": "Right rounded bracket",
+        "id": "M2G4MnxCu"
+      },
+      {
+        "name": "S / rounded strokes",
+        "id": "MD4teC0Sv"
+      },
+      {
+        "name": "P / round counter",
+        "id": "UsfKzljEy"
+      },
+      {
+        "name": "One / stepped stem",
+        "id": "dzYFrD3Lb"
+      },
+      {
+        "name": "Eight-dot loader",
+        "id": "IDavWCeHh"
+      },
+      {
+        "name": "Operator / black blocks",
+        "id": "AR2FVeFsx"
+      }
+    ],
+    "recipeFrames": 43,
+    "nativeFrames": 44,
+    "nativeText": 4,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-03",
+    "name": "Stepped N / mark across scales",
+    "sourceKey": "GRA-003",
+    "sourceURL": "https://x.com/kyleanthony/status/2104541893728350394",
+    "postingAccount": "@kyleanthony",
+    "catalogRef": "GRA-003",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-03-stepped-n.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#F0F0ED",
+    "simplifications": [
+      "Source-led recreation of the Nucleus Engineering Office stepped N motif, not a proposed Monarchic mark.",
+      "Twelve editable stair bands replace the finer source striping; two smaller copies expose the scale family.",
+      "The repeated printed-sheet grid is reduced to a few construction rules and source typography."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "II1kG8_qc",
+    "framerArtwork": "ayuof6KQT",
+    "framerCredit": "YMbwtCzSJ",
+    "framerLabel": "GiSGIfNKp",
+    "parts": [
+      {
+        "name": "Sheet construction rules",
+        "id": "L8aRAOg1J"
+      },
+      {
+        "name": "Primary stepped N",
+        "id": "h5Dq1J8Do"
+      },
+      {
+        "name": "Small stepped N",
+        "id": "aShduRMF1"
+      },
+      {
+        "name": "Medium stepped N",
+        "id": "pZL1Eq7S_"
+      }
+    ],
+    "recipeFrames": 53,
+    "nativeFrames": 54,
+    "nativeText": 6,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-04",
+    "name": "Colored edge tiles / pane of glass",
+    "sourceKey": "GRA-004",
+    "sourceURL": "https://x.com/ayushsoni_io/status/2095474754165867000",
+    "postingAccount": "@ayushsoni_io",
+    "catalogRef": "GRA-004",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-04-colored-edge-tiles.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#141414",
+    "simplifications": [
+      "Source-led recreation of the viewed motion-study poster frame, not a Monarchic landing page.",
+      "Colored tiles and edge rails are individual native layers; motion is represented as a static frame.",
+      "The portrait perimeter rhythm is widened to fit the landscape artboard."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "XkwnLao5x",
+    "framerArtwork": "gf89y9WMg",
+    "framerCredit": "wND3Va0m7",
+    "framerLabel": "yY_XmPf5O",
+    "parts": [
+      {
+        "name": "Top left tile family",
+        "id": "lOKn83ce0"
+      },
+      {
+        "name": "Top right tile family",
+        "id": "zC9NMY1vW"
+      },
+      {
+        "name": "Bottom left tile family",
+        "id": "NvAKDcMDY"
+      },
+      {
+        "name": "Bottom right tile family",
+        "id": "Gyxd_pDKY"
+      },
+      {
+        "name": "Source callout / static",
+        "id": "pRfUQbd55"
+      }
+    ],
+    "recipeFrames": 30,
+    "nativeFrames": 31,
+    "nativeText": 2,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-05",
+    "name": "Wireframe petals / technical crosshair",
+    "sourceKey": "GRA-005",
+    "sourceURL": "https://x.com/MoizArshi29/status/2097998312331001947",
+    "postingAccount": "@MoizArshi29",
+    "catalogRef": "GRA-005",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-05-wireframe-petals.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#202125",
+    "simplifications": [
+      "Source-led recreation of the sparse technical boards and six-blade wireframe motif.",
+      "Three editable ellipse families approximate the source curved mesh; perspective and mesh density are reduced.",
+      "All wires, crosshairs, nodes and labels are native frames or text, not a flattened illustration."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "vwWrnfyNr",
+    "framerArtwork": "y9QsK40gT",
+    "framerCredit": "ydMIq74Fg",
+    "framerLabel": "ulXODGCAi",
+    "parts": [
+      {
+        "name": "Technical crosshair",
+        "id": "CuMSC1UNY"
+      },
+      {
+        "name": "Six-blade wireframe / three axes",
+        "id": "L6GkIrfwv"
+      },
+      {
+        "name": "Wire ellipse family 0 degrees",
+        "id": "Rw_UmPfi7"
+      },
+      {
+        "name": "Wire ellipse family 60 degrees",
+        "id": "QHCAyCyWj"
+      },
+      {
+        "name": "Wire ellipse family -60 degrees",
+        "id": "KBCB5ogWB"
+      },
+      {
+        "name": "Circle and diamond / detail",
+        "id": "huDXjcPvY"
+      }
+    ],
+    "recipeFrames": 42,
+    "nativeFrames": 43,
+    "nativeText": 3,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-06",
+    "name": "Dot-matrix glyph / vertical event type",
+    "sourceKey": "GRA-006",
+    "sourceURL": "https://x.com/_zuji/status/2100138045404319993",
+    "postingAccount": "@_zuji",
+    "catalogRef": "GRA-006",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-06-dot-matrix-event.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#080908",
+    "simplifications": [
+      "Source-led recreation of the viewed dot-matrix event composition, not original Monarchic lettering.",
+      "The abstract source glyph is approximated with a coarse native circle lattice rather than every printed dot.",
+      "IBM Plex Mono substitutes for the source dot-matrix body font; rotated event columns remain native editable text."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "uQ0bT21Ag",
+    "framerArtwork": "rtnFk2mPp",
+    "framerCredit": "lweHcYeoG",
+    "framerLabel": "y_zUC5Rom",
+    "parts": [
+      {
+        "name": "Dot glyph / editable lattice",
+        "id": "GXMlOaFrR"
+      },
+      {
+        "name": "Vertical event type",
+        "id": "wwyk2QjSH"
+      }
+    ],
+    "recipeFrames": 90,
+    "nativeFrames": 91,
+    "nativeText": 6,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-07",
+    "name": "Five ascending halftone cubes",
+    "sourceKey": "GRA-007",
+    "sourceURL": "https://x.com/LouiseVisual/status/2094010373934338106",
+    "postingAccount": "@LouiseVisual",
+    "catalogRef": "GRA-007",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-07-halftone-stair-cubes.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#EEE6D5",
+    "simplifications": [
+      "Source-led recreation of the viewed five-cube halftone staircase, not an original Monarchic illustration.",
+      "Each cube has three native frame faces; the right face uses a coarse six-by-eight grid of separately editable dots.",
+      "Paper grain and dense ink speckle are omitted; the diagonal is widened for the landscape artboard."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "Nw9sJvF5x",
+    "framerArtwork": "qrDh6nKRq",
+    "framerCredit": "knacHd6VK",
+    "framerLabel": "UVR_mFVpS",
+    "parts": [
+      {
+        "name": "Cube 1 / three faces",
+        "id": "xCE2D8IFV"
+      },
+      {
+        "name": "Cube 2 / three faces",
+        "id": "VIw3GpHT7"
+      },
+      {
+        "name": "Cube 3 / three faces",
+        "id": "squfKN9y3"
+      },
+      {
+        "name": "Cube 4 / three faces",
+        "id": "F3h5emzx1"
+      },
+      {
+        "name": "Cube 5 / three faces",
+        "id": "pb6vis0kh"
+      }
+    ],
+    "recipeFrames": 260,
+    "nativeFrames": 261,
+    "nativeText": 0,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-08",
+    "name": "Cyan pixel flower / emissive lattice",
+    "sourceKey": "GRA-008",
+    "sourceURL": "https://x.com/Skirook/status/2092866327828627927",
+    "postingAccount": "@Skirook",
+    "catalogRef": "GRA-008",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-08-cyan-pixel-flower.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#030A16",
+    "simplifications": [
+      "Source-led recreation of the viewed cyan pixel flower, not an original Monarchic motif.",
+      "Ten overlapping petals are sampled on a coarse native-frame lattice; the original fine character cells and glow are reduced.",
+      "A few native background grid lines replace the much denser source microgrid."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "HS1FTfR7H",
+    "framerArtwork": "RLDgTvy8a",
+    "framerCredit": "kwZh4vrn2",
+    "framerLabel": "cS27xukp9",
+    "parts": [
+      {
+        "name": "Faint background grid",
+        "id": "FmJ96eztJ"
+      },
+      {
+        "name": "Pixel bloom / editable petals",
+        "id": "xWYJwzvyN"
+      },
+      {
+        "name": "Petal 1 / pixel family",
+        "id": "mRmbvDUT_"
+      },
+      {
+        "name": "Petal 2 / pixel family",
+        "id": "UDYS_9zyt"
+      },
+      {
+        "name": "Petal 3 / pixel family",
+        "id": "CRypQabLY"
+      },
+      {
+        "name": "Petal 4 / pixel family",
+        "id": "izPeUqiBj"
+      },
+      {
+        "name": "Petal 5 / pixel family",
+        "id": "wNE6AJonU"
+      },
+      {
+        "name": "Petal 6 / pixel family",
+        "id": "rxExSlBUh"
+      },
+      {
+        "name": "Petal 7 / pixel family",
+        "id": "lkI3xyl6I"
+      },
+      {
+        "name": "Petal 8 / pixel family",
+        "id": "rkL2Ul145"
+      },
+      {
+        "name": "Petal 9 / pixel family",
+        "id": "QVf6Aw3bL"
+      },
+      {
+        "name": "Petal 10 / pixel family",
+        "id": "rv944sQZw"
+      },
+      {
+        "name": "Hub pixels",
+        "id": "ikUpPCa5m"
+      },
+      {
+        "name": "Curved pixel stem",
+        "id": "tAp6w2QxH"
+      }
+    ],
+    "recipeFrames": 350,
+    "nativeFrames": 351,
+    "nativeText": 0,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-09",
+    "name": "Orange / diagonal website ticket",
+    "sourceKey": "GRA-009",
+    "sourceURL": "https://x.com/designbyaron/status/2099928493119152212",
+    "postingAccount": "@designbyaron",
+    "catalogRef": "GRA-009",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-09-orange-ticket.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#ff6328",
+    "simplifications": [
+      "Recreates the source ticket, diagonal placement, website typography, icon row, and barcode as editable native geometry.",
+      "Space Grotesk replaces the source typeface; the barcode is a visual study and does not encode data.",
+      "Source wording and identity appear only inside the clearly labelled recreation."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "iE36N1Pwt",
+    "framerArtwork": "QF_IlJW_q",
+    "framerCredit": "K5f2YVk9S",
+    "framerLabel": "bgeIfuRzh",
+    "parts": [
+      {
+        "name": "Tilted source ticket",
+        "id": "RIge6Pg3B"
+      }
+    ],
+    "recipeFrames": 103,
+    "nativeFrames": 104,
+    "nativeText": 6,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-10",
+    "name": "ICHOR / technical material strip",
+    "sourceKey": "GRA-010",
+    "sourceURL": "https://x.com/notgauze/status/2100124489296368084",
+    "postingAccount": "@notgauze",
+    "catalogRef": "GRA-010",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-10-ichor-technical-strip.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#e7e7e4",
+    "simplifications": [
+      "Recreates source registration crosses, lime accent, bent bar, technical text strip, and cropped vertical ICHOR lettering.",
+      "The folded fabric is deliberately reduced to a plain field; no raster texture or blur is used.",
+      "The source corner-triangle symbol is approximated by editable clipped squares, and available fonts replace the source wordmark."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "Brmu2Zl3y",
+    "framerArtwork": "RU7TInBbG",
+    "framerCredit": "UIaKEopL3",
+    "framerLabel": "w1Mt1xcfX",
+    "parts": [
+      {
+        "name": "Lime material marker",
+        "id": "RxCql1hBU"
+      },
+      {
+        "name": "Bent solid transfer bar",
+        "id": "yTQvsNdcD"
+      },
+      {
+        "name": "Source modular corner mark",
+        "id": "d1BDitWn8"
+      },
+      {
+        "name": "Corner-mark cell 0-0",
+        "id": "ahn13lbVi"
+      },
+      {
+        "name": "Corner-mark cell 0-1",
+        "id": "IeJCcOqrC"
+      },
+      {
+        "name": "Corner-mark cell 0-2",
+        "id": "nmiMzaegp"
+      },
+      {
+        "name": "Corner-mark cell 0-3",
+        "id": "umaUA00QH"
+      },
+      {
+        "name": "Corner-mark cell 1-0",
+        "id": "JaZuHPBtz"
+      },
+      {
+        "name": "Corner-mark cell 1-1",
+        "id": "VjJKMpxnL"
+      },
+      {
+        "name": "Corner-mark cell 1-2",
+        "id": "GUXvHnx7h"
+      },
+      {
+        "name": "Corner-mark cell 1-3",
+        "id": "Ec85btVM4"
+      },
+      {
+        "name": "Corner-mark cell 2-0",
+        "id": "Dqk9JOiGs"
+      },
+      {
+        "name": "Corner-mark cell 2-1",
+        "id": "GjgeOXLKm"
+      },
+      {
+        "name": "Corner-mark cell 2-2",
+        "id": "UhBweK67Z"
+      },
+      {
+        "name": "Corner-mark cell 2-3",
+        "id": "Oe4fAK_Ef"
+      },
+      {
+        "name": "Corner-mark cell 3-0",
+        "id": "brUnL5O0C"
+      },
+      {
+        "name": "Corner-mark cell 3-1",
+        "id": "KrLaXGBgL"
+      },
+      {
+        "name": "Corner-mark cell 3-2",
+        "id": "Bszjo9vys"
+      },
+      {
+        "name": "Corner-mark cell 3-3",
+        "id": "aS4X28ez9"
+      },
+      {
+        "name": "Intentional right-edge source type crop",
+        "id": "vFvkam4Cx"
+      }
+    ],
+    "recipeFrames": 64,
+    "nativeFrames": 65,
+    "nativeText": 9,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-11",
+    "name": "Burgundy / dot-matrix source report",
+    "sourceKey": "GRA-013",
+    "sourceURL": "https://x.com/olegcoada/status/2102734075606020172",
+    "postingAccount": "@olegcoada",
+    "catalogRef": "GRA-013",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-11-burgundy-dot-report.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#692f36",
+    "simplifications": [
+      "Recreates the burgundy/sage palette, large dot-matrix 86% figure, faint grid, and dot-matrix footer.",
+      "The 86% figure and associated wording belong to the source poster; they are not a Monarchic metric or an independently verified claim.",
+      "The source paper texture and small body copy are omitted. Dot letterforms use a coarser native-circle grid to keep every dot editable."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "QiMRnLFQQ",
+    "framerArtwork": "qfGq4Z09b",
+    "framerCredit": "qTmZIWG2H",
+    "framerLabel": "bad9dVDkz",
+    "parts": [],
+    "recipeFrames": 281,
+    "nativeFrames": 282,
+    "nativeText": 6,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-12",
+    "name": "Orbital / radar reticle geometry",
+    "sourceKey": "WEB-001",
+    "sourceURL": "https://x.com/kyleanthony/status/2102373344519586084",
+    "postingAccount": "@kyleanthony",
+    "catalogRef": "WEB-001",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-12-orbital-reticle.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#030405",
+    "simplifications": [
+      "Recreates the thin circular reticle, radial tick field, slanted bracket, right-edge scale, and lower spectral band from the source graphic.",
+      "The aircraft, capability table, and defense copy are intentionally omitted; this is a source-geometry study.",
+      "A small set of native translucent color bands substitutes for the photographed atmospheric gradient."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "IR1AVaq0c",
+    "framerArtwork": "VR_A654Tq",
+    "framerCredit": "Ji8ms8txX",
+    "framerLabel": "x2Y0kG_dV",
+    "parts": [
+      {
+        "name": "Native spectral band approximation",
+        "id": "pKDZBp4tu"
+      },
+      {
+        "name": "Slanted tracking bracket",
+        "id": "bPyfGNgoE"
+      }
+    ],
+    "recipeFrames": 103,
+    "nativeFrames": 104,
+    "nativeText": 4,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-13",
+    "name": "Voxa / hatched registration frame",
+    "sourceKey": "WEB-004",
+    "sourceURL": "https://x.com/shivangshah_/status/2098007256218714207",
+    "postingAccount": "@shivangshah_",
+    "catalogRef": "WEB-004",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-13-hatched-registration-frame.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#f2f2f0",
+    "simplifications": [
+      "Recreates the source light placement grid, narrow hatched separator bands, registration crosses, generous type inset, and paired CTA blocks.",
+      "The lower photographic and application material is reduced to neutral placement rectangles.",
+      "The source wording is retained only within the recreation; no new product claims are introduced."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "BaZaENxMc",
+    "framerArtwork": "bqHliWIOz",
+    "framerCredit": "veZPHGfbz",
+    "framerLabel": "Rb4jo0beA",
+    "parts": [
+      {
+        "name": "Source navigation star",
+        "id": "bas2tfclI"
+      },
+      {
+        "name": "Upper hatch separator",
+        "id": "bz2dWWZSz"
+      },
+      {
+        "name": "Lower hatch separator",
+        "id": "b6a_aF3V4"
+      },
+      {
+        "name": "Lower source media placement only",
+        "id": "NyGQpbDlW"
+      }
+    ],
+    "recipeFrames": 173,
+    "nativeFrames": 174,
+    "nativeText": 7,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-14",
+    "name": "Cobalt / radial dither cloud",
+    "sourceKey": "WEB-006",
+    "sourceURL": "https://x.com/praveenisomer/status/2107433191036326234",
+    "postingAccount": "@praveenisomer",
+    "catalogRef": "WEB-006",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-14-cobalt-radial-dither.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#ffffff",
+    "simplifications": [
+      "Recreates the source cobalt radial-pixel cloud using individually editable native bars and pixels; no head rendering or imported artwork is used.",
+      "The source image contains thousands of marks. This construction uses a deterministic coarse sampling below 350 nodes.",
+      "The financial UI, character head, and secondary graphics are omitted so the radial dither language can be studied independently."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "aGazVlYC7",
+    "framerArtwork": "hZ2fk8bYx",
+    "framerCredit": "FdqgjfK4G",
+    "framerLabel": "PI2VPJRcY",
+    "parts": [],
+    "recipeFrames": 332,
+    "nativeFrames": 333,
+    "nativeText": 2,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-15",
+    "name": "Orange / linked raster isometric cubes",
+    "sourceKey": "WEB-007",
+    "sourceURL": "https://x.com/oguzyagizkara/status/2100171221493027080",
+    "postingAccount": "@oguzyagizkara",
+    "catalogRef": "WEB-007",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-15-orange-raster-cubes.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#ffffff",
+    "simplifications": [
+      "Recreates the source three-cube diagonal arrangement, orange/yellow raster slices, faint square grid, connectors, and small coordinate tags.",
+      "Every face is built from editable vertical Frame strips; no shader, image, SVG, or code component is embedded.",
+      "The original fine raster is coarsened to a seven-pixel pitch, and connector curves are simplified to straight segments."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "T1lWD7qDf",
+    "framerArtwork": "q9nomNiJD",
+    "framerCredit": "H_wXMFaIH",
+    "framerLabel": "tbGEOOVz2",
+    "parts": [],
+    "recipeFrames": 250,
+    "nativeFrames": 251,
+    "nativeText": 3,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  },
+  {
+    "id": "RE-16",
+    "name": "Satto / fifteen-circle S and spatial copy",
+    "sourceKey": "WEB-012",
+    "sourceURL": "https://x.com/Satto_studio/status/2094148642168832020",
+    "postingAccount": "@Satto_studio",
+    "catalogRef": "WEB-012",
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "recipe": "re-16-satto-circle-s.mjs",
+    "width": 1600,
+    "height": 1000,
+    "background": "#fafafa",
+    "simplifications": [
+      "Recreates the source exact fifteen-circle S arrangement and scattered repeated text clusters.",
+      "Available Space Grotesk replaces the source neutral sans. The composition is adapted to a 1600 by 1000 landscape artboard.",
+      "Source text is confined to this labelled recreation, and circle occlusion of a few central words is intentional."
+    ],
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "framerGroup": "jgQxI2KUJ",
+    "framerArtwork": "fESE9RJu2",
+    "framerCredit": "UmCya1lQd",
+    "framerLabel": "XvkQwX8_G",
+    "parts": [],
+    "recipeFrames": 15,
+    "nativeFrames": 16,
+    "nativeText": 13,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "framerPlacementStatus": "saved and editor-reload verified"
+  }
+]

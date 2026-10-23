@@ -2348,5 +2348,198 @@
       ]
     },
     "finalMCPRead": "Timed out; saved-state verification instead used the reopened native editor, exact layer IDs, hierarchy and screenshot review."
+  },
+  "nativeRecreations": {
+    "classification": "source-led-recreation",
+    "section": "Source inspiration",
+    "framerSourceSection": "VvoNblwjH",
+    "framerRecreationsArea": "rHeXK4bVd",
+    "manifest": "../recreations/manifest.json",
+    "count": 16,
+    "recipeFrames": 2198,
+    "nativeArtworkFrames": 2214,
+    "nativeRichTextNodes": 86,
+    "importedSVGs": 0,
+    "rasterFills": 0,
+    "sourceKeys": [
+      "GRA-001-03",
+      "GRA-002-03",
+      "GRA-003",
+      "GRA-004",
+      "GRA-005",
+      "GRA-006",
+      "GRA-007",
+      "GRA-008",
+      "GRA-009",
+      "GRA-010",
+      "GRA-013",
+      "WEB-001",
+      "WEB-004",
+      "WEB-006",
+      "WEB-007",
+      "WEB-012"
+    ],
+    "studies": [
+      {
+        "id": "RE-01",
+        "sourceKey": "GRA-001-03",
+        "sourceURL": "https://x.com/tdeser/status/2102051003574911054",
+        "framerGroup": "GAZvIlrNe",
+        "framerArtwork": "v5CoYW07o"
+      },
+      {
+        "id": "RE-02",
+        "sourceKey": "GRA-002-03",
+        "sourceURL": "https://x.com/kyleanthony/status/2098567618605003090",
+        "framerGroup": "iBAdFt_hV",
+        "framerArtwork": "HTsZCgkR4"
+      },
+      {
+        "id": "RE-03",
+        "sourceKey": "GRA-003",
+        "sourceURL": "https://x.com/kyleanthony/status/2104541893728350394",
+        "framerGroup": "II1kG8_qc",
+        "framerArtwork": "ayuof6KQT"
+      },
+      {
+        "id": "RE-04",
+        "sourceKey": "GRA-004",
+        "sourceURL": "https://x.com/ayushsoni_io/status/2095474754165867000",
+        "framerGroup": "XkwnLao5x",
+        "framerArtwork": "gf89y9WMg"
+      },
+      {
+        "id": "RE-05",
+        "sourceKey": "GRA-005",
+        "sourceURL": "https://x.com/MoizArshi29/status/2097998312331001947",
+        "framerGroup": "vwWrnfyNr",
+        "framerArtwork": "y9QsK40gT"
+      },
+      {
+        "id": "RE-06",
+        "sourceKey": "GRA-006",
+        "sourceURL": "https://x.com/_zuji/status/2100138045404319993",
+        "framerGroup": "uQ0bT21Ag",
+        "framerArtwork": "rtnFk2mPp"
+      },
+      {
+        "id": "RE-07",
+        "sourceKey": "GRA-007",
+        "sourceURL": "https://x.com/LouiseVisual/status/2094010373934338106",
+        "framerGroup": "Nw9sJvF5x",
+        "framerArtwork": "qrDh6nKRq"
+      },
+      {
+        "id": "RE-08",
+        "sourceKey": "GRA-008",
+        "sourceURL": "https://x.com/Skirook/status/2092866327828627927",
+        "framerGroup": "HS1FTfR7H",
+        "framerArtwork": "RLDgTvy8a"
+      },
+      {
+        "id": "RE-09",
+        "sourceKey": "GRA-009",
+        "sourceURL": "https://x.com/designbyaron/status/2099928493119152212",
+        "framerGroup": "iE36N1Pwt",
+        "framerArtwork": "QF_IlJW_q"
+      },
+      {
+        "id": "RE-10",
+        "sourceKey": "GRA-010",
+        "sourceURL": "https://x.com/notgauze/status/2100124489296368084",
+        "framerGroup": "Brmu2Zl3y",
+        "framerArtwork": "RU7TInBbG"
+      },
+      {
+        "id": "RE-11",
+        "sourceKey": "GRA-013",
+        "sourceURL": "https://x.com/olegcoada/status/2102734075606020172",
+        "framerGroup": "QiMRnLFQQ",
+        "framerArtwork": "qfGq4Z09b"
+      },
+      {
+        "id": "RE-12",
+        "sourceKey": "WEB-001",
+        "sourceURL": "https://x.com/kyleanthony/status/2102373344519586084",
+        "framerGroup": "IR1AVaq0c",
+        "framerArtwork": "VR_A654Tq"
+      },
+      {
+        "id": "RE-13",
+        "sourceKey": "WEB-004",
+        "sourceURL": "https://x.com/shivangshah_/status/2098007256218714207",
+        "framerGroup": "BaZaENxMc",
+        "framerArtwork": "bqHliWIOz"
+      },
+      {
+        "id": "RE-14",
+        "sourceKey": "WEB-006",
+        "sourceURL": "https://x.com/praveenisomer/status/2107433191036326234",
+        "framerGroup": "aGazVlYC7",
+        "framerArtwork": "hZ2fk8bYx"
+      },
+      {
+        "id": "RE-15",
+        "sourceKey": "WEB-007",
+        "sourceURL": "https://x.com/oguzyagizkara/status/2100171221493027080",
+        "framerGroup": "T1lWD7qDf",
+        "framerArtwork": "q9nomNiJD"
+      },
+      {
+        "id": "RE-16",
+        "sourceKey": "WEB-012",
+        "sourceURL": "https://x.com/Satto_studio/status/2094148642168832020",
+        "framerGroup": "jgQxI2KUJ",
+        "framerArtwork": "fESE9RJu2"
+      }
+    ],
+    "savedVerification": {
+      "date": "2026-10-22",
+      "proofType": "saved-framer-editor",
+      "editorReloadVerified": true,
+      "sourceGroups": 16,
+      "verifiedGroupIDs": [
+        "GAZvIlrNe",
+        "iBAdFt_hV",
+        "II1kG8_qc",
+        "XkwnLao5x",
+        "vwWrnfyNr",
+        "uQ0bT21Ag",
+        "Nw9sJvF5x",
+        "HS1FTfR7H",
+        "iE36N1Pwt",
+        "Brmu2Zl3y",
+        "QiMRnLFQQ",
+        "IR1AVaq0c",
+        "BaZaENxMc",
+        "aGazVlYC7",
+        "T1lWD7qDf",
+        "jgQxI2KUJ"
+      ],
+      "captures": [
+        {
+          "name": "sixteen-native-expanded.jpg",
+          "view": "sixteen-native-expanded"
+        },
+        {
+          "name": "sixteen-native-overview.jpg",
+          "view": "sixteen-native-overview"
+        },
+        {
+          "name": "pixel-flower-native.jpg",
+          "view": "pixel-flower-native"
+        },
+        {
+          "name": "pixel-flower-layers.jpg",
+          "view": "pixel-flower-layers"
+        },
+        {
+          "name": "isometric-cubes-native.jpg",
+          "view": "isometric-cubes-native"
+        }
+      ],
+      "artifactScope": "Actual editor captures are retained in this Codex task’s local native-recreations visualization artifacts; they are not distributed with the repository.",
+      "reviewScope": "All sixteen named study groups and their IDs were read from the actual Framer editor after reload, then inspected in the overview and representative close-ups with native layers expanded. Native editor text controls confirmed RE-04 letter spacing at -0.045em. All six prototype paths plus Home remain listed. Source comparisons and simplifications are recorded; this does not verify website implementation or every frame of source videos."
+    }
   }
 }
