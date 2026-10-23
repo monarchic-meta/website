@@ -18,11 +18,16 @@ original forms or keep a recreation clearly credited in Source inspiration.
 Record simplifications when a native Framer construction approximates a dense
 point field, a material or a rendered effect.
 
-Three [live Framer code studies](../design-studies/code-components/README.md)
-now explore CC-003's tonal dithering, CC-001's suspended point geometry and
-CC-005's cyan/magenta light. These are credited source-led adaptations with
-independent code and motion, alongside the earlier static native studies.
-Their implementation checks do not expand the source-review evidence below.
+The [live Framer code studies](../design-studies/code-components/README.md)
+explore CC-003's tonal dithering, CC-001's suspended point geometry and
+CC-005's cyan/magenta light. A four-study revision adds CC-010's flowing ribbon
+as LC-04 / Wave and puts executable main artwork beside those four references,
+retaining the external posters as comparison thumbnails. The revision is saved
+and reload-verified; Wave and Coronal visibly animate on the editor canvas,
+and Wave was also checked in Preview. These remain credited
+source-led adaptations with independent code and motion, alongside the earlier
+static native studies. Their implementation checks do not expand the
+source-review evidence below.
 
 ## References
 
@@ -33,6 +38,7 @@ Their implementation checks do not expand the source-review evidence below.
 - Observed: White point-built canopy against black; Curved drape and density changes across a suspended surface.
 - Possible applications: Large abstract hero object; Point-mesh veil or section frame.
 - Adaptation: Compose an original canopy silhouette and explore sparse versus dense point regions; preserve open space around the form.
+- Code study: [LC-02 / Suspended point field](../design-studies/code-components/README.md).
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-002 — Luminous butterfly / afterimages
@@ -52,6 +58,7 @@ Their implementation checks do not expand the source-review evidence below.
 - Observed: Pink, yellow and blue-gray limited palette; Regular pixel-stipple tonal distribution across curving surfaces.
 - Possible applications: Actual tonal-dither studies on original abstract forms; Limited-palette field, object surface or UI backdrop.
 - Adaptation: Translate the tonal distribution into independently composed geometry rather than recreating the depicted world. Compare palette and pixel scale while keeping the underlying form consistent.
+- Code study: [LC-01 / Ordered terrain](../design-studies/code-components/README.md).
 - Evidence: The folder preview and opened post-detail sampled frame show the limited palette and regular tonal stipple; the exact algorithm was not verified. See the [shared review limits](#review-coverage).
 
 ### CC-004 — Black capsules / optical depth
@@ -70,6 +77,7 @@ Their implementation checks do not expand the source-review evidence below.
 - Observed: Neon cyan/magenta ring-like form; Luminous irregular edge and strong black negative space.
 - Possible applications: Luminous identity surround; Neon object, hero graphic or state motif.
 - Adaptation: Explore original apertures and contours, asymmetrical glow and different open-center proportions; the captioned code is not adopted.
+- Code study: [LC-03 / Coronal light](../design-studies/code-components/README.md).
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-006 — Electric ice-blue radial form
@@ -115,6 +123,7 @@ Their implementation checks do not expand the source-review evidence below.
 - Observed: Luminous flowing ribbon on black; Continuous folded surface and bright edge contrast.
 - Possible applications: Graphic ribbon or transition motif; Flowing frame around independent content.
 - Adaptation: Explore original ribbon paths and folds, including still variations; the sampled frame does not establish complete timing or interaction.
+- Code study: [LC-04 / Wave](../design-studies/code-components/README.md), saved and reload-verified with canvas motion and Preview pause/resume.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-011 — Grainy multicolor loops

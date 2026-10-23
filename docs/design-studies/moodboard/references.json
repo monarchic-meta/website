@@ -2303,12 +2303,24 @@
         "studyProps": {
           "study": "canopy",
           "animate": true,
+          "canvasMotion": true,
           "speed": 0.65,
           "stillTime": 8,
           "intensity": 1.1,
           "pixelSize": 3,
           "interactive": true,
           "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "canopy",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": false
         },
         "framerComponentId": "codeFile/bPPSvaB:default",
         "framerSourceSection": "VvoNblwjH",
@@ -2319,10 +2331,20 @@
         "framerLabPage": "SqfboNSM6",
         "framerLabPath": "/prototypes/creative-coding-lab",
         "framerLabInstance": "sQzry5JdV",
+        "framerReferenceGroup": "vNpuzKbDW",
+        "framerReferenceInstance": "hmZngQkS8",
+        "framerReferencePoster": "w2dgOi_AO",
+        "framerReferencePosterLabel": "D_EX0sNc4",
         "framerPlacementStatus": "saved and editor-reload verified",
         "framerVerifiedDate": "2026-10-23"
       }
-    ]
+    ],
+    "framerReferencePresentation": {
+      "main": "hmZngQkS8",
+      "sourcePoster": "w2dgOi_AO",
+      "sourcePosterLabel": "D_EX0sNc4",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-002",
@@ -2491,12 +2513,27 @@
         "studyProps": {
           "study": "dither",
           "animate": true,
+          "canvasMotion": true,
           "speed": 0.65,
           "stillTime": 8,
           "intensity": 1.1,
           "pixelSize": 3,
           "interactive": true,
           "showLabels": true,
+          "primary": "#efc8c8",
+          "secondary": "#d6b442",
+          "ink": "#424855"
+        },
+        "referenceStudyProps": {
+          "study": "dither",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": false,
           "primary": "#efc8c8",
           "secondary": "#d6b442",
           "ink": "#424855"
@@ -2510,10 +2547,20 @@
         "framerLabPage": "SqfboNSM6",
         "framerLabPath": "/prototypes/creative-coding-lab",
         "framerLabInstance": "FW7ouI7kr",
+        "framerReferenceGroup": "dQKsZ_Wpf",
+        "framerReferenceInstance": "wk0g_CPpm",
+        "framerReferencePoster": "Q9YbOdr6e",
+        "framerReferencePosterLabel": "nybYbcYvt",
         "framerPlacementStatus": "saved and editor-reload verified",
         "framerVerifiedDate": "2026-10-23"
       }
-    ]
+    ],
+    "framerReferencePresentation": {
+      "main": "wk0g_CPpm",
+      "sourcePoster": "Q9YbOdr6e",
+      "sourcePosterLabel": "nybYbcYvt",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-004",
@@ -2645,12 +2692,26 @@
         "studyProps": {
           "study": "coronal",
           "animate": true,
+          "canvasMotion": true,
           "speed": 0.65,
           "stillTime": 8,
           "intensity": 1.1,
           "pixelSize": 3,
           "interactive": true,
           "showLabels": true,
+          "primary": "#49efff",
+          "secondary": "#b12aff"
+        },
+        "referenceStudyProps": {
+          "study": "coronal",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": false,
           "primary": "#49efff",
           "secondary": "#b12aff"
         },
@@ -2663,10 +2724,20 @@
         "framerLabPage": "SqfboNSM6",
         "framerLabPath": "/prototypes/creative-coding-lab",
         "framerLabInstance": "gYwb8vTbL",
+        "framerReferenceGroup": "vLDEOerxD",
+        "framerReferenceInstance": "yyEu86PwZ",
+        "framerReferencePoster": "D5tCETGa7",
+        "framerReferencePosterLabel": "YunTBkqAV",
         "framerPlacementStatus": "saved and editor-reload verified",
         "framerVerifiedDate": "2026-10-23"
       }
-    ]
+    ],
+    "framerReferencePresentation": {
+      "main": "yyEu86PwZ",
+      "sourcePoster": "D5tCETGa7",
+      "sourcePosterLabel": "YunTBkqAV",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-006",
@@ -2921,7 +2992,67 @@
       "Graphic ribbon or transition motif",
       "Flowing frame around independent content"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-04",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/CreativeCodingStudy.tsx",
+        "mode": "wave",
+        "palette": {
+          "primary": "#c6ff9f",
+          "secondary": "#b777ff"
+        },
+        "studyProps": {
+          "study": "wave",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": true,
+          "primary": "#c6ff9f",
+          "secondary": "#b777ff"
+        },
+        "referenceStudyProps": {
+          "study": "wave",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": false,
+          "primary": "#c6ff9f",
+          "secondary": "#b777ff"
+        },
+        "framerComponentId": "codeFile/bPPSvaB:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "xciUL2xcV",
+        "framerSourceInstance": "O2gnbWx53",
+        "framerSourceCredit": "EBEy1d7ub",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "GVHSGB9JL",
+        "framerReferenceGroup": "CS7lNlz7V",
+        "framerReferenceInstance": "SdsYApKM0",
+        "framerReferencePoster": "L71SUEJp2",
+        "framerReferencePosterLabel": "s7mNwHsUa",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "SdsYApKM0",
+      "sourcePoster": "L71SUEJp2",
+      "sourcePosterLabel": "s7mNwHsUa",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-011",

@@ -79,7 +79,8 @@ still-frame approximation is not a working shader or animation.
 ## Live Creative Coding studies
 
 The [Live Creative Coding area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qPREnLG7B)
-adds three React/WebGL code studies below the comparison library:
+contains the React/WebGL code studies below the comparison library. The
+four-study revision comprises:
 
 - LC-01 / Ordered terrain: moving, ray-marched terrain with three-color tonal
   dithering, led by CC-003 / @GaloAndStuff.
@@ -87,6 +88,8 @@ adds three React/WebGL code studies below the comparison library:
   and pinched drape, led by CC-001 / @yuruyurau.
 - LC-03 / Coronal light: a volumetric cyan/magenta aperture with traveling
   filaments, led by CC-005 / @XorDev.
+- LC-04 / Wave: a moving luminous ribbon and folded flow, led by
+  CC-010 / @XorDev, with pale green and violet light.
 
 Each keeps its source link and adaptation notes in Source inspiration.
 Independently authored geometry, GLSL and motion approximate the observed
@@ -94,13 +97,24 @@ visual language; they do not reproduce the source algorithms. The earlier
 20 native RE studies and 18 MB originals remain separate and unchanged.
 
 Open the [draft lab in Preview](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SqfboNSM6&view=preview)
-to see animation and pointer response. The editor canvas intentionally shows
-deterministic stills. Study, speed, still time, intensity, palette, pointer
-response and credits are editable through component controls; Preview also
-offers pause/resume. The [code study index](design-studies/code-components/README.md)
+to see animation and pointer response at up to 30 fps and 650,000 pixels.
+**Canvas motion** defaults off and opts an editor-canvas instance into a lower
+12 fps / 150,000-pixel budget. Exports and thumbnails remain deterministic stills.
+Study, speed, still time, intensity, palette, pointer response and credits are
+editable through component controls; Preview also offers pause/resume.
+The [code study index](design-studies/code-components/README.md)
 and [live manifest](design-studies/code-components/manifest.json) record the
 authoring source, limitations and saved placement IDs. The new lab is an
 unpublished 1200px desktop prototype.
+
+In the four-study revision, CC-001, CC-003, CC-005 and CC-010 receive code
+components as their main reference-card artwork, with source posters retained
+as comparison thumbnails. LC-04 occupies a second live-area row and a fourth
+lab card; the existing three live cards retain their geometry and the lab route
+stays the same. All twelve code instances have Canvas motion enabled, including
+the four reference previews. Their saved placements and controls were verified
+after a full editor reload; Wave and Coronal were visually checked in motion
+on the canvas, and Wave was also exercised in Preview.
 
 ## Original-composition clusters
 
@@ -189,15 +203,26 @@ heading moved down 1,400px to make room for the fifth row; their existing
 reference subtrees remain intact. All 16 earlier study-card trees, 18 original
 groups/artworks and seven existing page identities/routes are preserved.
 
-The later live-code round adds three studies, for **20 native + 3 live source
+The first live-code round added three studies, for **20 native + 3 live source
 studies**, while retaining the same 77 external reference groups and 18
 original compositions. After a full editor reload, native copies confirmed
 the six code instances, controls, credit URLs and new area geometry. Actual
 Framer Preview confirmed animation and pause/resume. A separate preservation
 comparison passed for all 20 native card trees, all 77 reference trees and
-all 18 original groups. The Source frame is now **15,600px high**; its earlier
-recreation and comparison areas retain their geometry. The code lab is saved
+all 18 original groups. At that point the Source frame was **15,600px high**;
+its earlier recreation and comparison areas retained their geometry. The code lab was saved
 as a new draft page; the seven earlier page identities/routes remain present.
+
+The saved four-study revision contains **20 native + 4 live source studies**, the same
+77 source entries and 18 original compositions, and eight source-led
+adaptations: four static native and four live. Its live area is 3,500px high
+inside a 17,300px Source frame. After a full editor reload, 615 saved-node
+assertions verified all twelve code instances, their controls, source-thumbnail
+retention and source credits. The 20 native study trees, 18 original groups and
+73 untouched reference trees match fresh baselines. The four revised reference
+cards retain their IDs, positions and original poster assets. Wave and Coronal
+visibly animate on the editor canvas; Wave also runs and pauses/resumes in
+actual Preview. Earlier three-study proof is retained as historical evidence.
 
 The asset and catalog changes affect authoring documentation only. Validation
 checks JSON, unique IDs and URLs, catalog/source-set equality, local links,

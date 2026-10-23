@@ -34,13 +34,15 @@
     "savedExpandedGalleryVerified": true,
     "savedNewFramerReferenceGroups": 21,
     "currentOriginalCompositions": 18,
-    "currentSourceLedAdaptations": 7,
+    "currentSourceLedAdaptations": 8,
     "savedCurrentFramerReferenceGroups": 77,
     "currentNativeSourceStudies": 20,
     "currentNativeSourceRecreations": 16,
     "currentBitmapSourceAdaptations": 0,
-    "currentLiveCodeStudies": 3,
-    "currentNativeSourceAdaptations": 4
+    "currentLiveCodeStudies": 4,
+    "currentNativeSourceAdaptations": 4,
+    "currentSourceStudies": 24,
+    "currentLiveCodeInstances": 12
   },
   "catalogEntries": [
     {
@@ -2041,12 +2043,24 @@
           "studyProps": {
             "study": "canopy",
             "animate": true,
+            "canvasMotion": true,
             "speed": 0.65,
             "stillTime": 8,
             "intensity": 1.1,
             "pixelSize": 3,
             "interactive": true,
             "showLabels": true
+          },
+          "referenceStudyProps": {
+            "study": "canopy",
+            "animate": true,
+            "canvasMotion": true,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "pixelSize": 3,
+            "interactive": true,
+            "showLabels": false
           },
           "framerComponentId": "codeFile/bPPSvaB:default",
           "framerSourceSection": "VvoNblwjH",
@@ -2057,10 +2071,20 @@
           "framerLabPage": "SqfboNSM6",
           "framerLabPath": "/prototypes/creative-coding-lab",
           "framerLabInstance": "sQzry5JdV",
+          "framerReferenceGroup": "vNpuzKbDW",
+          "framerReferenceInstance": "hmZngQkS8",
+          "framerReferencePoster": "w2dgOi_AO",
+          "framerReferencePosterLabel": "D_EX0sNc4",
           "framerPlacementStatus": "saved and editor-reload verified",
           "framerVerifiedDate": "2026-10-23"
         }
-      ]
+      ],
+      "framerReferencePresentation": {
+        "main": "hmZngQkS8",
+        "sourcePoster": "w2dgOi_AO",
+        "sourcePosterLabel": "D_EX0sNc4",
+        "sourcePosterRole": "comparison"
+      }
     },
     {
       "key": "CC-002",
@@ -2188,12 +2212,27 @@
           "studyProps": {
             "study": "dither",
             "animate": true,
+            "canvasMotion": true,
             "speed": 0.65,
             "stillTime": 8,
             "intensity": 1.1,
             "pixelSize": 3,
             "interactive": true,
             "showLabels": true,
+            "primary": "#efc8c8",
+            "secondary": "#d6b442",
+            "ink": "#424855"
+          },
+          "referenceStudyProps": {
+            "study": "dither",
+            "animate": true,
+            "canvasMotion": true,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "pixelSize": 3,
+            "interactive": true,
+            "showLabels": false,
             "primary": "#efc8c8",
             "secondary": "#d6b442",
             "ink": "#424855"
@@ -2207,10 +2246,20 @@
           "framerLabPage": "SqfboNSM6",
           "framerLabPath": "/prototypes/creative-coding-lab",
           "framerLabInstance": "FW7ouI7kr",
+          "framerReferenceGroup": "dQKsZ_Wpf",
+          "framerReferenceInstance": "wk0g_CPpm",
+          "framerReferencePoster": "Q9YbOdr6e",
+          "framerReferencePosterLabel": "nybYbcYvt",
           "framerPlacementStatus": "saved and editor-reload verified",
           "framerVerifiedDate": "2026-10-23"
         }
-      ]
+      ],
+      "framerReferencePresentation": {
+        "main": "wk0g_CPpm",
+        "sourcePoster": "Q9YbOdr6e",
+        "sourcePosterLabel": "nybYbcYvt",
+        "sourcePosterRole": "comparison"
+      }
     },
     {
       "key": "CC-004",
@@ -2314,12 +2363,26 @@
           "studyProps": {
             "study": "coronal",
             "animate": true,
+            "canvasMotion": true,
             "speed": 0.65,
             "stillTime": 8,
             "intensity": 1.1,
             "pixelSize": 3,
             "interactive": true,
             "showLabels": true,
+            "primary": "#49efff",
+            "secondary": "#b12aff"
+          },
+          "referenceStudyProps": {
+            "study": "coronal",
+            "animate": true,
+            "canvasMotion": true,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "pixelSize": 3,
+            "interactive": true,
+            "showLabels": false,
             "primary": "#49efff",
             "secondary": "#b12aff"
           },
@@ -2332,10 +2395,20 @@
           "framerLabPage": "SqfboNSM6",
           "framerLabPath": "/prototypes/creative-coding-lab",
           "framerLabInstance": "gYwb8vTbL",
+          "framerReferenceGroup": "vLDEOerxD",
+          "framerReferenceInstance": "yyEu86PwZ",
+          "framerReferencePoster": "D5tCETGa7",
+          "framerReferencePosterLabel": "YunTBkqAV",
           "framerPlacementStatus": "saved and editor-reload verified",
           "framerVerifiedDate": "2026-10-23"
         }
-      ]
+      ],
+      "framerReferencePresentation": {
+        "main": "yyEu86PwZ",
+        "sourcePoster": "D5tCETGa7",
+        "sourcePosterLabel": "YunTBkqAV",
+        "sourcePosterRole": "comparison"
+      }
     },
     {
       "key": "CC-006",
@@ -2520,7 +2593,67 @@
       "possibleApplications": [
         "Graphic ribbon or transition motif",
         "Flowing frame around independent content"
-      ]
+      ],
+      "liveCodeAdaptations": [
+        {
+          "id": "LC-04",
+          "classification": "source-led-adaptation",
+          "manifest": "../code-components/manifest.json",
+          "componentSource": "../code-components/CreativeCodingStudy.tsx",
+          "mode": "wave",
+          "palette": {
+            "primary": "#c6ff9f",
+            "secondary": "#b777ff"
+          },
+          "studyProps": {
+            "study": "wave",
+            "animate": true,
+            "canvasMotion": true,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "pixelSize": 3,
+            "interactive": true,
+            "showLabels": true,
+            "primary": "#c6ff9f",
+            "secondary": "#b777ff"
+          },
+          "referenceStudyProps": {
+            "study": "wave",
+            "animate": true,
+            "canvasMotion": true,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "pixelSize": 3,
+            "interactive": true,
+            "showLabels": false,
+            "primary": "#c6ff9f",
+            "secondary": "#b777ff"
+          },
+          "framerComponentId": "codeFile/bPPSvaB:default",
+          "framerSourceSection": "VvoNblwjH",
+          "framerLiveArea": "qPREnLG7B",
+          "framerSourceGroup": "xciUL2xcV",
+          "framerSourceInstance": "O2gnbWx53",
+          "framerSourceCredit": "EBEy1d7ub",
+          "framerLabPage": "SqfboNSM6",
+          "framerLabPath": "/prototypes/creative-coding-lab",
+          "framerLabInstance": "GVHSGB9JL",
+          "framerReferenceGroup": "CS7lNlz7V",
+          "framerReferenceInstance": "SdsYApKM0",
+          "framerReferencePoster": "L71SUEJp2",
+          "framerReferencePosterLabel": "s7mNwHsUa",
+          "framerPlacementStatus": "saved and editor-reload verified",
+          "framerVerifiedDate": "2026-10-23"
+        }
+      ],
+      "framerReferencePresentation": {
+        "main": "SdsYApKM0",
+        "sourcePoster": "L71SUEJp2",
+        "sourcePosterLabel": "s7mNwHsUa",
+        "sourcePosterRole": "comparison"
+      }
     },
     {
       "key": "CC-011",
@@ -2908,7 +3041,7 @@
       ]
     }
   ],
-  "preparationStatus": "Complete: 77-reference gallery, 20 native source studies and three live code studies saved and verified in the Framer editor after reload. Art collection and six scenic MB studies removed; all 18 originals, 20 native study trees and 77 reference trees preserved. The live lab is a new unpublished draft; animation runs in Preview and canvas stills are intentional.",
+  "preparationStatus": "Complete: 77-reference gallery, 20 native source studies and four live code studies saved and verified after editor reload. Four reference cards now use executable main previews and retain their original source posters as comparison thumbnails. All20 native trees,18 original groups and73 untouched reference trees preserved; all77 reference group IDs retained. Canvas motion is enabled on12 code instances; exports/thumbnails stay frozen. The live lab remains an unpublished draft.",
   "designPage": "uj_I7x6To",
   "sourceSection": {
     "label": "Source inspiration",
@@ -3368,78 +3501,47 @@
   },
   "currentFramerVerification": {
     "date": "2026-10-23",
-    "status": "saved-gallery-20-native-and-3-live-studies-verified",
+    "status": "saved-20-native-4-live-reference-main-art-verified",
+    "savedEditorVerified": true,
     "editorReloadVerified": true,
+    "sourceSHA256": "39a169359854158bfcab29a0e05340aa0fdc6ca967b7ec580d1aa7e084fa20dd",
     "sourceGroups": 77,
     "sourcePreviews": 66,
     "linkOnlyCards": 11,
-    "creativeCodingBookmarkedPosts": 20,
-    "creativeCodingCreditedOriginalSupportLinks": 1,
-    "preservedEarlierSourceGroups": 56,
     "originalCompositions": 18,
-    "earlierNativeSourceStudies": 16,
-    "additionalNativeCreativeCodingStudies": 4,
-    "existingWebsitePages": [
-      {
-        "path": "/prototypes/signal-field",
-        "id": "WJkUf4nHH"
-      },
-      {
-        "path": "/prototypes/research-edition",
-        "id": "FNWmJvk0a"
-      },
-      {
-        "path": "/prototypes/cobalt-relay",
-        "id": "CdGjtAu_e"
-      },
-      {
-        "path": "/prototypes/graphic-studies",
-        "id": "NTBtSqs_B"
-      },
-      {
-        "path": "/prototypes/interrupt-poster",
-        "id": "rERIFDhZ0"
-      },
-      {
-        "path": "/prototypes/aperture-habitat",
-        "id": "bPKUhgBQB"
-      },
-      {
-        "path": "/",
-        "id": "augiA20Il"
-      }
-    ],
-    "proofScope": "Normal native-editor copies after full reload and visual inspection of the 20-poster gallery. Seven existing page IDs/routes were observed by navigation without page edits; no page-content byte equality is claimed. All 1,514 new recipe parts verified for identity, class, name, parent, geometry, visibility and artboard bounds; four auto-height note dimensions independently measured in the native Style panel. All 16 earlier native card trees and 77 reference subtrees are preserved. The later live-code round independently rechecked all 20 native card trees, all 77 reference trees and all 18 original groups. Six live code instances and exact controls/credits were read in saved native editor copies; actual Preview confirmed motion and pause/resume. Live proof and its separate artifact location are recorded in liveCreativeCodingAdaptations.savedVerification.",
-    "artifacts": [
-      "creative-coding-saved-gallery.jpg",
-      "creative-gallery-verification.json",
-      "pruning-verification.json",
-      "website-pages-observation.json",
-      "new-studies-verification.json",
-      "native-text-measurements.json",
-      "native-re-17-saved.jpg",
-      "native-re-18-saved.jpg",
-      "native-re-19-saved.jpg",
-      "native-re-20-saved.jpg"
-    ],
-    "artifactLocation": "This Codex task’s catalog-expansion visualization artifacts",
     "totalNativeSourceStudies": 20,
-    "nativeRecipeFrames": 3679,
-    "nativeArtworkFrames": 3699,
-    "nativeRichTextNodes": 119,
-    "sourceHeight": 15600,
-    "recreationAreaHeight": 7080,
-    "earlier16FullCardsPreserved": true,
-    "all77ReferenceTreesPreserved": true,
-    "all1514NewRecipePartsVerified": true,
-    "additionalNativeStudiesStatic": true,
-    "liveCodeStudies": 3,
-    "totalSourceStudies": 23,
+    "liveCodeStudies": 4,
+    "totalSourceStudies": 24,
+    "liveCodeInstances": 12,
+    "unchangedReferenceTrees": 73,
+    "updatedReferenceTrees": 4,
+    "all77ReferenceGroupIDsPreserved": true,
     "all20NativeCardTreesPreserved": true,
+    "all18OriginalGroupsPreserved": true,
+    "sourceHeight": 17300,
+    "liveAreaHeight": 3500,
     "liveCodeVerification": "../code-components/manifest.json",
     "liveLabPage": "SqfboNSM6",
     "liveLabPath": "/prototypes/creative-coding-lab",
-    "liveLabDraft": true
+    "liveLabDraft": true,
+    "proofScope": "Actual native editor copies after reload verify all placements, controls, source thumbnails and credits. All20 native trees,18originalgroups and73untouched reference trees match fresh baselines; the four revised reference containers retain identity/position and source assets. Wave and Coronal visibly animate in the editor canvas; Wave also runs and pauses/resumes in actual Framer Preview. Renderer GPU and target-guard checks are separate from original-source algorithm/video fidelity. No Framer publish or production-site integration.",
+    "artifacts": [
+      "source-before.json",
+      "source-after.json",
+      "original-before.json",
+      "original-after.json",
+      "lab-after.json",
+      "framer-wave-reference-a.jpg",
+      "framer-wave-reference-b.jpg",
+      "framer-coronal-reference-a.jpg",
+      "framer-coronal-reference-b.jpg",
+      "framer-wave-live-card.jpg",
+      "framer-wave-lab-preview.jpg",
+      "local-gpu-checks.json",
+      "pages-after.txt",
+      "saved-verification.json"
+    ],
+    "artifactLocation": "This Codex task’s local live-creative-coding-correction visualization artifacts; not distributed with the repository."
   },
   "nativeCreativeCodingAdaptations": {
     "classification": "source-led-adaptation",
@@ -3513,7 +3615,7 @@
     "classification": "source-led-adaptation",
     "section": "Source inspiration",
     "manifest": "../code-components/manifest.json",
-    "count": 3,
+    "count": 4,
     "componentSource": "../code-components/CreativeCodingStudy.tsx",
     "framerComponentId": "codeFile/bPPSvaB:default",
     "framerLiveArea": "qPREnLG7B",
@@ -3524,7 +3626,11 @@
         "sourceURL": "https://x.com/GaloAndStuff/status/2094074141557117090",
         "framerSourceGroup": "FDuz5SOtn",
         "framerSourceInstance": "ae_vSmAxE",
-        "framerLabInstance": "FW7ouI7kr"
+        "framerLabInstance": "FW7ouI7kr",
+        "framerReferenceGroup": "dQKsZ_Wpf",
+        "framerReferenceInstance": "wk0g_CPpm",
+        "framerReferencePoster": "Q9YbOdr6e",
+        "framerReferencePosterLabel": "nybYbcYvt"
       },
       {
         "id": "LC-02",
@@ -3532,7 +3638,11 @@
         "sourceURL": "https://x.com/yuruyurau/status/2093710258120331463",
         "framerSourceGroup": "l6rSZmmC2",
         "framerSourceInstance": "ns1kIv2Gd",
-        "framerLabInstance": "sQzry5JdV"
+        "framerLabInstance": "sQzry5JdV",
+        "framerReferenceGroup": "vNpuzKbDW",
+        "framerReferenceInstance": "hmZngQkS8",
+        "framerReferencePoster": "w2dgOi_AO",
+        "framerReferencePosterLabel": "D_EX0sNc4"
       },
       {
         "id": "LC-03",
@@ -3540,10 +3650,242 @@
         "sourceURL": "https://x.com/XorDev/status/2093488121392300374",
         "framerSourceGroup": "mkIofjY0m",
         "framerSourceInstance": "sh3Dzk8z_",
-        "framerLabInstance": "gYwb8vTbL"
+        "framerLabInstance": "gYwb8vTbL",
+        "framerReferenceGroup": "vLDEOerxD",
+        "framerReferenceInstance": "yyEu86PwZ",
+        "framerReferencePoster": "D5tCETGa7",
+        "framerReferencePosterLabel": "YunTBkqAV"
+      },
+      {
+        "id": "LC-04",
+        "sourceKey": "CC-010",
+        "sourceURL": "https://x.com/XorDev/status/2093074820661387392",
+        "framerSourceGroup": "xciUL2xcV",
+        "framerSourceInstance": "O2gnbWx53",
+        "framerLabInstance": "GVHSGB9JL",
+        "framerReferenceGroup": "CS7lNlz7V",
+        "framerReferenceInstance": "SdsYApKM0",
+        "framerReferencePoster": "L71SUEJp2",
+        "framerReferencePosterLabel": "s7mNwHsUa"
       }
     ],
     "savedVerification": {
+      "date": "2026-10-23",
+      "savedEditorVerified": true,
+      "editorReloadVerified": true,
+      "checks": 615,
+      "verifiedNodeIds": [
+        "nbfo8eDf0",
+        "A2N1X2HOm",
+        "zmGxJS3gk",
+        "wX589FGAe",
+        "pyCwsSraf",
+        "hqMOVHhTQ",
+        "Q4JfXf1h6",
+        "zbEGOwRzm",
+        "V2R_MONtn",
+        "qylWPyAVV",
+        "UIdlGAP93",
+        "UyB52Cqjw",
+        "cUF5olgbg",
+        "E1HXUuxQc",
+        "SNhIraAZU",
+        "u8PACyGCU",
+        "TQCXaCzH3",
+        "zCQvfrgM7",
+        "zrandzkMt",
+        "nFTMdGc7D",
+        "wHT3CL2Uy",
+        "c8QauAj1a",
+        "gbSjQ9iZE",
+        "U724N4gsk",
+        "Zw1jwIYLO",
+        "ODP42dMWW",
+        "gWkb7VAOk",
+        "i7Pnd1Fbt",
+        "Uok66IYFg",
+        "z3NF5xR6j",
+        "nFtw8Ma6f",
+        "gim9E9BuP",
+        "aXAgk5yWG",
+        "S6sFrwzDi",
+        "rNeAse1yD",
+        "OOIEEiLb_",
+        "HZ9plRkae",
+        "m3UD72I0n",
+        "pCg3ddxcf",
+        "ct9rttZcA",
+        "XTnOrUhw_",
+        "vERqdMbYk",
+        "NHGIlb49I",
+        "UOjOMFumZ",
+        "XMNWSQFgm",
+        "EAGpPYVVI",
+        "rE4GFIWD3",
+        "JcMsrl9fT",
+        "axMQSzQbM",
+        "PIKgMATky",
+        "MzVP9Uc7D",
+        "yd9kDO88e",
+        "qYXOgrIc_",
+        "G5BZbbemO",
+        "PE4TjaB2V",
+        "PJKo__rq7",
+        "vNpuzKbDW",
+        "w2dgOi_AO",
+        "YA5YmkfDU",
+        "b1K2QytNn",
+        "eHWJMTPZF",
+        "Ex9CZ7ye_",
+        "D_EX0sNc4",
+        "gBr7Ser2g",
+        "CtuGwHdeB",
+        "dQKsZ_Wpf",
+        "Q9YbOdr6e",
+        "uoUzoMRaG",
+        "y5Ktbhopv",
+        "AyMIWsmy3",
+        "O2matGLmZ",
+        "nybYbcYvt",
+        "mkcKe9nKH",
+        "vLDEOerxD",
+        "D5tCETGa7",
+        "xT_h5fmRL",
+        "exAtXpP17",
+        "gyQcMcN7N",
+        "afWPYpO3G",
+        "YunTBkqAV",
+        "rv0E8uk4W",
+        "adBMR53g2",
+        "RdWTGpcik",
+        "fmACGwbFa",
+        "CS7lNlz7V",
+        "L71SUEJp2",
+        "jKgXiNhKQ",
+        "qDsB8rKgG",
+        "R9MSE1kpd",
+        "GdxHMJ9X1",
+        "s7mNwHsUa",
+        "V62dGut29",
+        "BaWgieL03",
+        "WR7dBIwaB",
+        "a_tgNqhTv",
+        "CnBNTfrdA",
+        "QR2xWvgNv",
+        "EdR0SImD8",
+        "CHaVfHwD2",
+        "ByQsjul_6",
+        "Eo7UTXRxQ",
+        "VvoNblwjH",
+        "qPREnLG7B",
+        "iiJ1B84Mg",
+        "WRBQZQLFM",
+        "AWzWzil6w",
+        "hmZngQkS8",
+        "wk0g_CPpm",
+        "yyEu86PwZ",
+        "SdsYApKM0",
+        "RsyNLfoMe",
+        "FDuz5SOtn",
+        "ae_vSmAxE",
+        "FW7ouI7kr",
+        "ZI7msUIrQ",
+        "RNp86j0_Y",
+        "WLPCQUUj8",
+        "QuyqD4ubY",
+        "Q91BA0zcE",
+        "S4pjvgaIQ",
+        "mxgCdA0HI",
+        "l6rSZmmC2",
+        "ns1kIv2Gd",
+        "sQzry5JdV",
+        "n8Afzy2Lx",
+        "OiqsfQatf",
+        "dpwZkb5iD",
+        "n29PBbVDS",
+        "YesEG3A5m",
+        "E4Fy0Zaih",
+        "k9xvdfsvw",
+        "mkIofjY0m",
+        "sh3Dzk8z_",
+        "gYwb8vTbL",
+        "HDfpBLSqj",
+        "F8Zo086UW",
+        "jH7pK8gug",
+        "zxxtqD7nQ",
+        "Hc4T5mmh9",
+        "UMbZ4gHoC",
+        "q9SMMu1Eg",
+        "xciUL2xcV",
+        "O2gnbWx53",
+        "GVHSGB9JL",
+        "UP8MghPUa",
+        "EBEy1d7ub",
+        "B57z8WUFZ",
+        "rofpNCaYP",
+        "C1uY5GnE0",
+        "aYxqZSGP_",
+        "AmDegwPMj",
+        "SqfboNSM6"
+      ],
+      "nativeStudyTreesPreserved": 20,
+      "originalGroupsPreserved": 18,
+      "referenceGroupIDsPreserved": 77,
+      "unchangedReferenceTrees": 73,
+      "updatedReferenceTrees": 4,
+      "liveStudies": 4,
+      "codeInstances": 12,
+      "canvasMotionVerified": [
+        "CC-005",
+        "CC-010"
+      ],
+      "previewMotionVerified": [
+        "LC-04"
+      ],
+      "sourceHeight": 17300,
+      "liveAreaHeight": 3500,
+      "labDraft": true,
+      "sourceSHA256": "39a169359854158bfcab29a0e05340aa0fdc6ca967b7ec580d1aa7e084fa20dd",
+      "proofArtifacts": [
+        "source-before.json",
+        "source-after.json",
+        "original-before.json",
+        "original-after.json",
+        "lab-after.json",
+        "framer-wave-reference-a.jpg",
+        "framer-wave-reference-b.jpg",
+        "framer-coronal-reference-a.jpg",
+        "framer-coronal-reference-b.jpg",
+        "framer-wave-live-card.jpg",
+        "framer-wave-lab-preview.jpg",
+        "local-gpu-checks.json",
+        "pages-after.txt",
+        "saved-verification.json"
+      ],
+      "artifactLocation": "This Codex task’s local live-creative-coding-correction visualization artifacts; not distributed with the repository.",
+      "scope": "Actual native editor copies after reload verify all placements, controls, source thumbnails and credits. All20 native trees,18originalgroups and73untouched reference trees match fresh baselines; the four revised reference containers retain identity/position and source assets. Wave and Coronal visibly animate in the editor canvas; Wave also runs and pauses/resumes in actual Framer Preview. Renderer GPU and target-guard checks are separate from original-source algorithm/video fidelity. No Framer publish or production-site integration.",
+      "controlsVerified": true,
+      "preservation": {
+        "unchangedReferenceTrees": 73,
+        "updatedReferenceTrees": 4,
+        "all77ReferenceGroupIDsPreserved": true,
+        "nativeStudyTreesUnchanged": 20,
+        "originalGroupsUnchanged": 18,
+        "codeInstances": 12,
+        "sourceHeight": 17300,
+        "liveAreaHeight": 3500,
+        "labDraft": true
+      }
+    },
+    "lab": {
+      "page": "SqfboNSM6",
+      "path": "/prototypes/creative-coding-lab",
+      "desktop": "RsyNLfoMe",
+      "draft": true,
+      "published": false
+    },
+    "initialThreeStudyVerification": {
+      "sourceSHA256": "18280ce5ed7921001dae96181f5501219f6079a62759029ea3f10b442c04624f",
       "date": "2026-10-23",
       "editorReloadVerified": true,
       "verifiedNodeIds": [
@@ -3607,12 +3949,81 @@
       "scope": "Actual saved native editor copies and screenshots after reload, six code instances with exact controls and source links, code source readback, and actual Framer Preview motion/pause checks. Local GPU checks cover shader compilation, phase changes, tonal palette, narrow rendering and context restoration. The existing 20 native study trees, 77 reference trees and 18 original groups are preserved. This does not reproduce or verify original source algorithms, full videos or production website integration.",
       "artifactLocation": "This Codex task’s local live-creative-coding visualization artifacts; not distributed with the repository."
     },
-    "lab": {
-      "page": "SqfboNSM6",
-      "path": "/prototypes/creative-coding-lab",
-      "desktop": "RsyNLfoMe",
-      "draft": true,
-      "published": false
-    }
+    "codeInstances": 12
+  },
+  "initialThreeStudyFramerVerification": {
+    "date": "2026-10-23",
+    "status": "saved-gallery-20-native-and-3-live-studies-verified",
+    "editorReloadVerified": true,
+    "sourceGroups": 77,
+    "sourcePreviews": 66,
+    "linkOnlyCards": 11,
+    "creativeCodingBookmarkedPosts": 20,
+    "creativeCodingCreditedOriginalSupportLinks": 1,
+    "preservedEarlierSourceGroups": 56,
+    "originalCompositions": 18,
+    "earlierNativeSourceStudies": 16,
+    "additionalNativeCreativeCodingStudies": 4,
+    "existingWebsitePages": [
+      {
+        "path": "/prototypes/signal-field",
+        "id": "WJkUf4nHH"
+      },
+      {
+        "path": "/prototypes/research-edition",
+        "id": "FNWmJvk0a"
+      },
+      {
+        "path": "/prototypes/cobalt-relay",
+        "id": "CdGjtAu_e"
+      },
+      {
+        "path": "/prototypes/graphic-studies",
+        "id": "NTBtSqs_B"
+      },
+      {
+        "path": "/prototypes/interrupt-poster",
+        "id": "rERIFDhZ0"
+      },
+      {
+        "path": "/prototypes/aperture-habitat",
+        "id": "bPKUhgBQB"
+      },
+      {
+        "path": "/",
+        "id": "augiA20Il"
+      }
+    ],
+    "proofScope": "Normal native-editor copies after full reload and visual inspection of the 20-poster gallery. Seven existing page IDs/routes were observed by navigation without page edits; no page-content byte equality is claimed. All 1,514 new recipe parts verified for identity, class, name, parent, geometry, visibility and artboard bounds; four auto-height note dimensions independently measured in the native Style panel. All 16 earlier native card trees and 77 reference subtrees are preserved. The later live-code round independently rechecked all 20 native card trees, all 77 reference trees and all 18 original groups. Six live code instances and exact controls/credits were read in saved native editor copies; actual Preview confirmed motion and pause/resume. Live proof and its separate artifact location are recorded in liveCreativeCodingAdaptations.savedVerification.",
+    "artifacts": [
+      "creative-coding-saved-gallery.jpg",
+      "creative-gallery-verification.json",
+      "pruning-verification.json",
+      "website-pages-observation.json",
+      "new-studies-verification.json",
+      "native-text-measurements.json",
+      "native-re-17-saved.jpg",
+      "native-re-18-saved.jpg",
+      "native-re-19-saved.jpg",
+      "native-re-20-saved.jpg"
+    ],
+    "artifactLocation": "This Codex task’s catalog-expansion visualization artifacts",
+    "totalNativeSourceStudies": 20,
+    "nativeRecipeFrames": 3679,
+    "nativeArtworkFrames": 3699,
+    "nativeRichTextNodes": 119,
+    "sourceHeight": 15600,
+    "recreationAreaHeight": 7080,
+    "earlier16FullCardsPreserved": true,
+    "all77ReferenceTreesPreserved": true,
+    "all1514NewRecipePartsVerified": true,
+    "additionalNativeStudiesStatic": true,
+    "liveCodeStudies": 3,
+    "totalSourceStudies": 23,
+    "all20NativeCardTreesPreserved": true,
+    "liveCodeVerification": "../code-components/manifest.json",
+    "liveLabPage": "SqfboNSM6",
+    "liveLabPath": "/prototypes/creative-coding-lab",
+    "liveLabDraft": true
   }
 }

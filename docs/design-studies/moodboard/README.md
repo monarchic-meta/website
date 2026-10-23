@@ -19,12 +19,22 @@ retain source credits alongside the 18 independent MB assets. Their
 [separate manifest](../recreations/manifest.json) records the saved native-study
 nodes; the MB manifest continues to describe only the earlier asset studies.
 
-The [three live Creative Coding studies](../code-components/README.md) add
+The [live Creative Coding studies](../code-components/README.md) add
 actual animated WebGL graphics with Framer controls and credited source cards.
 They sit in Source inspiration and have a separate
-[code-component manifest](../code-components/manifest.json). The inventory is
-20 native source studies, three live source studies and 18 MB originals.
-Motion runs in the draft lab's Preview; the moodboard canvas shows stills.
+[code-component manifest](../code-components/manifest.json). The four-study
+revision adds Wave from CC-010 and makes code components the main artwork on
+CC-001, CC-003, CC-005 and CC-010 reference cards, retaining their external
+posters as comparison thumbnails. Its saved inventory is 20 native source
+studies, four live studies and 18 MB originals, with the same 77 source entries.
+There are four static native adaptations and four live adaptations, eight in
+total; repeated placements do not add studies. Saved-editor verification,
+including all twelve code instances and retained source assets, is recorded
+in the code-study handoff. Canvas motion is enabled on those placements.
+
+Motion runs in the draft lab's Preview. **Canvas motion** is an explicit opt-in
+that defaults off, capped at 12 fps and 150,000 pixels. Preview uses up to 30 fps
+and 650,000 pixels. Exports and thumbnails remain deterministic still frames.
 
 External work, recreations, and close adaptations of source compositions belong
 in Source inspiration, even when Codex made the recreation or adaptation. Credit
