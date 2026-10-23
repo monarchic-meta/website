@@ -71,11 +71,19 @@ The Creative Coding component source is self-contained TypeScript/React under
 diagnostics; the website's TypeScript project excludes this authoring directory.
 It adds no React dependency or runtime integration to the Astro/Svelte site.
 
-Keep editor/export rendering static with `useIsStaticRenderer` and test motion
-in Framer Preview. Include a pause control, respect reduced motion, stop rendering
-offscreen, release GPU resources, and verify context restoration. Source-led
-code studies retain their exact catalog references and live alongside source
-inspiration, with the existing static recreations preserved.
+Keep exports and thumbnails static. Editor-canvas motion defaults off; expose an
+explicit **Canvas motion** opt-in when seeing the effect beside its reference
+helps authoring. Combine `RenderTarget.canvas` with `useIsStaticRenderer` so that
+the opt-in cannot animate export or thumbnail rendering. The Creative Coding
+budgets are 12 fps and 150,000 pixels on the canvas, and 30 fps and 650,000 pixels
+in Preview. Verify those targets separately, including the default still frame.
+
+Include a pause control, respect reduced motion, stop rendering offscreen,
+release GPU resources, and verify context restoration. Keep executable source-led
+adaptations easy to find beside their catalog references, while retaining the
+external poster as a clearly labeled comparison thumbnail and preserving its
+source link. A running adaptation does not establish that the source algorithm
+was reproduced. Keep the existing static native studies available separately.
 
 ## Workspace and connection
 

@@ -48,9 +48,13 @@
 - Use self-contained Framer code components for procedural graphics, shaders,
   and motion studies when native layers would flatten the effect. Keep their
   source under `docs/design-studies/code-components`, expose useful visual
-  controls, and credit source-led studies in Source inspiration. Freeze the
-  editor/export renderer and verify animation in Framer Preview. Preserve the
-  existing native studies alongside these code-based experiments.
+  controls, and credit source-led studies in Source inspiration. Freeze export
+  and thumbnail rendering. Keep editor-canvas motion off by default, with an
+  explicit Canvas motion opt-in restricted to `RenderTarget.canvas`; distinguish
+  that target from static exports with `useIsStaticRenderer`. Budget canvas
+  motion at 12 fps and 150,000 pixels, and verify it separately from Preview
+  animation. Preserve the existing native studies alongside these code-based
+  experiments.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when
   implementing a prototype. Confirm changes in the Framer editor after a reload
