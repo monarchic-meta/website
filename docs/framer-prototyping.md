@@ -59,6 +59,24 @@ Let the layer panel load, observe the selection after copying, then read the
 clipboard. Auto-height rich text can retain placeholder bounds in copied data;
 use the measured editor dimensions and visual inspection when checking clipping.
 
+## Live code graphics
+
+Use [Framer code components](design-studies/code-components/README.md) for live
+shaders, point surfaces, procedural textures and motion. Native layers are useful
+for editing individual shapes; a code component exposes its source and visual
+parameters instead. Keep both forms where they help exploration.
+
+The Creative Coding component source is self-contained TypeScript/React under
+`docs/design-studies/code-components`. Framer supplies its runtime and code-file
+diagnostics; the website's TypeScript project excludes this authoring directory.
+It adds no React dependency or runtime integration to the Astro/Svelte site.
+
+Keep editor/export rendering static with `useIsStaticRenderer` and test motion
+in Framer Preview. Include a pause control, respect reduced motion, stop rendering
+offscreen, release GPU resources, and verify context restoration. Source-led
+code studies retain their exact catalog references and live alongside source
+inspiration, with the existing static recreations preserved.
+
 ## Workspace and connection
 
 - [Monarchic Framer project](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt)

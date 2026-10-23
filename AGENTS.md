@@ -45,6 +45,12 @@
 - Keep external work, recreations, and close adaptations credited within
   **Source inspiration**, including when Codex authors the recreation or
   adaptation. Reserve **Original compositions** for independently composed work.
+- Use self-contained Framer code components for procedural graphics, shaders,
+  and motion studies when native layers would flatten the effect. Keep their
+  source under `docs/design-studies/code-components`, expose useful visual
+  controls, and credit source-led studies in Source inspiration. Freeze the
+  editor/export renderer and verify animation in Framer Preview. Preserve the
+  existing native studies alongside these code-based experiments.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when
   implementing a prototype. Confirm changes in the Framer editor after a reload
