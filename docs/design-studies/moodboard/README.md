@@ -37,7 +37,7 @@ that defaults off, capped at 12 fps and 150,000 pixels. Preview uses up to 30 fp
 and 650,000 pixels. Exports and thumbnails remain deterministic still frames.
 
 The saved material revision adds LC-05–08 from CC-004's capsules, CC-008's glass UI,
-CC-013's triangle lattice and CC-016's spectral ring. Its current inventory is
+CC-013's triangle lattice and CC-016's spectral ring. At that stage its saved inventory was
 **eight live studies, 24 code instances, 20 native studies, 18 originals and
 77 source entries**: 28 source studies, with twelve source-led adaptations,
 four static native and eight live. [CreativeCodingStudy](../code-components/CreativeCodingStudy.tsx)
@@ -47,9 +47,29 @@ texture locally and mounts its canvas only near the viewport, preserving phase
 and releasing the context when the canvas detaches. All four new modes were
 checked in actual Framer Preview for moving frames and pause/resume; their
 reference-card artwork rendered, with Spectral editor-canvas motion also
-measured. The current 31,799-check saved-state proof is distinct from the earlier
+measured. The 31,799-check saved-state proof for that revision is distinct from the earlier
 615-check round. The [code-study handoff](../code-components/README.md) records
 the evidence and limits, including the uninspected Framer export image.
+
+The twenty-reference completion authors twelve further modes in
+[PointCodingStudy](../code-components/PointCodingStudy.tsx),
+[FieldCodingStudy](../code-components/FieldCodingStudy.tsx) and
+[InterfaceCodingStudy](../code-components/InterfaceCodingStudy.tsx). Local GPU
+compilation, distinct visuals and temporal changes have been checked. The
+saved inventory reaches **20 live studies, 60 code instances and 40
+source studies**, while retaining **20 native studies, 18 originals and 77 source URLs**.
+The 24 source-led adaptations comprise four static native studies and twenty
+live studies. Each Creative Coding
+bookmark receives executable main reference artwork and retains its source
+poster as a comparison thumbnail. The live area is 12,000px high inside a
+25,800px Source frame, on the same draft lab route. Fresh editor reloads and
+35,886 native-state assertions verified the completion, preserving all native
+and original trees, all reference IDs, 65 untouched reference subtrees and the
+earlier eight studies' cards and 24 instances. All twelve new studies showed
+actual Preview motion and Pause/Play transitions. Editor-canvas motion was
+measured for LC-09, LC-13 and LC-20. The earlier 31,799-check and 615-check proofs
+retain their historical scope. See the [code-study handoff](../code-components/README.md)
+for current evidence and limits; no actual Framer export image was inspected.
 
 External work, recreations, and close adaptations of source compositions belong
 in Source inspiration, even when Codex made the recreation or adaptation. Credit

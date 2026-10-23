@@ -36,12 +36,32 @@ The earlier [CreativeCodingStudy source](../design-studies/code-components/Creat
 remains unchanged. A fresh reload and 31,799 native-state assertions verified
 the new placements. All four new modes showed moving frames and pause/resume in
 actual Preview; their reference-card artwork rendered, with Spectral
-editor-canvas motion also measured. The inventory is eight live studies and
+editor-canvas motion also measured. At that stage the saved inventory was eight live studies and
 24 code instances alongside 20 native studies and 18 originals, with all
 77 source entries retained: 28 source studies and twelve source-led adaptations
 (four static native and eight live). These checks do not establish complete
 source-clip or physical-model fidelity; no actual Framer export image was
 manually inspected, and the lab remains unpublished.
+
+The authored twenty-reference completion adds LC-09–20 through
+[PointCodingStudy](../design-studies/code-components/PointCodingStudy.tsx),
+[FieldCodingStudy](../design-studies/code-components/FieldCodingStudy.tsx) and
+[InterfaceCodingStudy](../design-studies/code-components/InterfaceCodingStudy.tsx).
+Their twelve modes passed local GPU compilation, visual review and time-sample
+checks. The saved set covers all twenty bookmarked references with **20 live
+studies and 60 code instances**, alongside **20 native studies, 18 originals
+and the same 77 source URLs**: **40 source studies and 24 source-led
+adaptations**, four static native and twenty live. The live area is 12,000px high
+inside a 25,800px Source frame; the lab route remains a draft. Fresh editor
+reloads and **35,886 native-state assertions** verified exact controls and
+preservation, including the earlier eight studies, 65 untouched reference
+subtrees and all 77 reference IDs. All twelve new modes rendered, changed
+between aligned frames and paused/resumed in actual Framer Preview;
+editor-canvas motion was measured for LC-09, LC-13 and LC-20. The earlier
+31,799-check and 615-check proofs retain their historical scope. Implementation
+checks do not expand the source-review evidence below or establish exact source
+algorithms or full-clip fidelity. No actual Framer export image was inspected,
+and nothing was published.
 
 ## References
 
@@ -63,6 +83,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Bright pale butterfly-like silhouette on black; Nested temporal afterimages and small frame/time labels.
 - Possible applications: Echoed reveal or transition study; Graphic trail around an original symbol.
 - Adaptation: Use an original glyph or object to explore echo spacing, brightness falloff and framed repetition; a static sequence can study the same layering.
+- Code study: [LC-17 / Temporal glyph / afterimages](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-003 — Pink / yellow pixel-stipple world
@@ -102,6 +123,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Icy electric-blue radial light; Layered shader-like ridges radiating through darkness.
 - Possible applications: High-energy section opener; Radial graphic field or luminous object.
 - Adaptation: Vary radial density, crop and bright/dark balance around original geometry; do not assume the preview establishes a particular shader algorithm.
+- Code study: [LC-13 / Electric radial / icy filaments](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-007 — Folded white point mesh
@@ -111,6 +133,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Folded white point-built surface on black; Overlapping contours and dense-to-open mesh regions.
 - Possible applications: Folded-mesh identity graphic; Abstract divider or hero object.
 - Adaptation: Try original folds, off-center placement and contrasting point density; retain the fold structure when making a simplified native study.
+- Code study: [LC-09 / Folded white point mesh](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-008 — Glass refraction over UI
@@ -130,6 +153,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Glass-like pixel glyphs or blocks; A three-by-three cube/grid arrangement.
 - Possible applications: Original translucent glyph family; Modular material tiles or identity object.
 - Adaptation: Create original block glyphs, vary the grid/crop and compare clear versus colored material. Preserve the geometric parts as editable elements in a simplified study.
+- Code study: [LC-18 / Glass pixel glyphs / nine modules](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-010 — Wave
@@ -149,6 +173,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Multicolored three-dimensional loops; Visible granular texture and overlapping curved forms.
 - Possible applications: Colorful material object family; Loop-based hero art or graphic frame.
 - Adaptation: Try original loop arrangements with different palette and grain scales. Keep the material/grain exploration distinct from pixel or dither claims.
+- Code study: [LC-19 / Chromatic loops / granular surface](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-012 — Technical UI / keycap connections
@@ -158,6 +183,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Technical UI cards and keycap-like elements; Connection paths, terminal-style content and animated-SVG presentation.
 - Possible applications: Editable keycap/card/connector studies; Interface transition and signal-path motifs.
 - Adaptation: Rebuild original panels, keycaps and connections as named native parts. The caption identifies SVG animation, but source assets, animation code and working controls were not reviewed.
+- Code study: [LC-20 / Technical keycaps / signal paths](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-013 — Recursive white triangle lattice
@@ -177,6 +203,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: A curled white point-built gesture on black; Dense interior and thin trailing contours.
 - Possible applications: Gestural hero object; Point-built punctuation or expressive graphic stroke.
 - Adaptation: Compose a new gesture and explore where the point field closes into a surface or opens into isolated marks.
+- Code study: [LC-10 / Curling point gesture](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-015 — Connected mesh loops
@@ -186,6 +213,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: White looping point-mesh forms; Connected curves and overlap across a dark field.
 - Possible applications: Looped graphic family; Abstract connection motif or mesh frame.
 - Adaptation: Try original connected-loop arrangements at several densities; distinguish decorative links from a factual system diagram.
+- Code study: [LC-11 / Connected mesh loops](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-016 — Spectral Donut
@@ -205,6 +233,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Icy-blue luminous ridge or flowing surface; Fine highlights separating layered dark and bright regions.
 - Possible applications: Abstract light-field backdrop; Luminous surface or section-transition artwork.
 - Adaptation: Create original ridge directions and highlight distribution, including restrained and high-energy variants; do not reproduce a narrative scene.
+- Code study: [LC-14 / Icy ridge / layered flow](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-018 — Warm fractal corridor
@@ -214,6 +243,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Warm orange/red light in a repeated corridor-like form; Fractured or nested geometry receding into depth.
 - Possible applications: Deep geometric graphic or reveal; Warm signal tunnel or abstract frame.
 - Adaptation: Recompose the repeated geometry and focal depth into an original abstract object or field; the visual pattern alone does not verify a fractal algorithm.
+- Code study: [LC-15 / Warm corridor / recursive relief](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-019 — Luminous line / glyph trails
@@ -223,6 +253,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: Bright line and glyph-like trails on black; Layered traces and luminous gestural paths.
 - Possible applications: Expressive trail or graphic stroke family; Signal-transition and mark-reveal studies.
 - Adaptation: Use original marks and line paths, then vary echo, spacing and brightness. The TouchDesigner tag is an author cue, not a verified project implementation.
+- Code study: [LC-16 / Glyph trails / luminous gestures](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ### CC-020 — Curved mesh feather
@@ -232,6 +263,7 @@ manually inspected, and the lab remains unpublished.
 - Observed: A curved white point-mesh feather-like form; Fine filaments and a long arcing silhouette on black.
 - Possible applications: Feather-like abstract graphic; Curved mesh frame, flourish or hero object.
 - Adaptation: Compose original curved filaments and vary the fan, crop and point density; keep the visual structure editable at the chosen simplification level.
+- Code study: [LC-12 / Curved mesh feather](../design-studies/code-components/README.md), saved-editor and Preview motion/pause verified.
 - Evidence: Visible bookmark-feed preview or sampled video frame. See the [shared review limits](#review-coverage).
 
 ## Review coverage

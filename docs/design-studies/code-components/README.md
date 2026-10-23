@@ -1,11 +1,14 @@
 # Live Creative Coding studies
 
-Two self-contained React 18 Framer code components provide eight live WebGL
-studies. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx) contains LC-01–04;
-[MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) adds LC-05–08. They use React
+Five self-contained React 18 Framer code components author twenty live WebGL
+studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
+contains LC-01–04; [MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) contains
+LC-05–08; [PointCodingStudy.tsx](PointCodingStudy.tsx),
+[FieldCodingStudy.tsx](FieldCodingStudy.tsx) and
+[InterfaceCodingStudy.tsx](InterfaceCodingStudy.tsx) add LC-09–20. They use React
 and Framer only, with no npm dependencies, external textures, copied source
-shaders or network requests. The glass study creates its own local UI texture.
-The Astro/Svelte site does not import either authoring file. This directory is
+shaders or network requests. Glass and technical UI modes generate their own
+local textures. The Astro/Svelte site does not import these authoring files. This directory is
 excluded from the website's TypeScript project because Framer provides the
 React/Framer runtime and checks the code inside its own project.
 
@@ -25,6 +28,19 @@ or reproduced. Existing native RE studies remain available separately.
 | LC-07 / Triangle lattice | [CC-013 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098603831944945735) | Rotating recursive angular geometry with open triangular holes | Independent five-level nearest-vertex iterated construction with angular leaves; source formula and exact geometry are not adopted |
 | LC-08 / Spectral grain | [CC-016 / @Jaenam97](https://x.com/Jaenam97/status/2098418240900804947) | Reflective-looking torus, spectral rim, moving highlights and surface grain | Ray-marched torus with an approximate environment and spectral material; not a path tracer or physical spectral simulation |
 
+| LC-09 / Folded white point mesh | [CC-007 / @yuruyurau](https://x.com/yuruyurau/status/2093711731084415124) | GPU point sheet with a pinched fold, opening wings and local ripples | Independent parametric sheet; source formula and complete timing are not reproduced |
+| LC-10 / Curling point gesture | [CC-014 / @yuruyurau](https://x.com/yuruyurau/status/2098075684593893667) | Tapering curled point body with fine upper contour trails | Source-led cropped gesture; independent geometry, contour family and motion |
+| LC-11 / Connected mesh loops | [CC-015 / @yuruyurau](https://x.com/yuruyurau/status/2098070701597192431) | Connected figure-eight point surface, breathing loops and traveling deformation | Original continuous loop surface; exact source topology and motion are unverified |
+| LC-12 / Curved mesh feather | [CC-020 / @yuruyurau](https://x.com/yuruyurau/status/2100230050063024467) | Arcing point fan, folded feather-like silhouette and bending side filaments | Independent spine, fan and filaments; source formula and motion are not reproduced |
+| LC-13 / Electric radial / icy filaments | [CC-006 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2106013834540732704) | Dense icy polar ridges and moving electric filaments | Independent warped polar field; source shader and light model are not adopted |
+| LC-14 / Icy ridge / layered flow | [CC-017 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098403689421570237) | Diagonal luminous edge and stacked blue ridges with dark negative space | Independent advecting ridge field; source geometry and timing are approximated |
+| LC-15 / Warm corridor / recursive relief | [CC-018 / @XorDev](https://x.com/XorDev/status/2099543044945023343) | Forward-moving square corridor with warm ribs and fractured relief | Repeated distance-field ribs and bounded relief; no claim of source fractal or physical lighting |
+| LC-16 / Glyph trails / luminous gestures | [CC-019 / @tsumiki_room](https://x.com/tsumiki_room/status/2099891155282612462) | Original luminous gestures with drifting poses and three temporal echoes | Independent abstract paths; no source glyphs or TouchDesigner project |
+| LC-17 / Temporal glyph / afterimages | [CC-002 / @threejs](https://x.com/threejs/status/2093387984741761280) | Original bilateral wing glyph, nested frames and temporal afterimages | Independent wing geometry and echo algorithm; CC-002 also credits [afterimage](https://x.com/i/status/2093373917218103449) |
+| LC-18 / Glass pixel glyphs / nine modules | [CC-009 / @dnatsuuu](https://x.com/dnatsuuu/status/2093175907867656302) | Nine original pixel glyphs inside moving glass-like tiles | Local original glyph texture and illustrative refraction; no physical glass-cube simulation |
+| LC-19 / Chromatic loops / granular surface | [CC-011 / @zozuar](https://x.com/zozuar/status/2094068054590190033) | Three rotating chromatic loops with granular surface shading | Independent toroidal arrangement and motion; source formula and exact topology are not adopted |
+| LC-20 / Technical keycaps / signal paths | [CC-012 / @icanvardar](https://x.com/icanvardar/status/2094171308795826332) | Original keycaps, terminal and connector atlas with traveling signals | Generated original UI texture and decorative signals; no working authentication or copied interface |
+
 ## Controls
 
 Choose the study, then adjust animation, speed, still time, intensity, pointer
@@ -42,8 +58,14 @@ MaterialCodingStudy adds **Scale** for its four modes, **Focus** for capsules,
 change the material colors. Shared controls retain animation, speed, still time,
 intensity, pointer response and source labels.
 
+PointCodingStudy adds **Scale** and **Density** for its four point-built surfaces.
+FieldCodingStudy exposes **Scale** and spatial **Grain** for the four field modes.
+InterfaceCodingStudy adds **Scale**, **Echo depth** for afterimages,
+**Refraction** for glass glyphs and **Grain** for chromatic loops. Palette controls
+change the authored colors; the source credits remain attached to each mode.
+
 **Canvas motion** defaults off. With animation enabled, opting in allows motion
-on the Framer editor canvas at up to **12 fps and 150,000 pixels**. Both components
+on the Framer editor canvas at up to **12 fps and 150,000 pixels**. All five components
 use `RenderTarget.canvas` together with `useIsStaticRenderer` to distinguish
 that authoring target from exports and thumbnails, which remain frozen at
 **Still time**.
@@ -54,12 +76,13 @@ motion holds a still frame; hidden tabs and offscreen components stop their
 animation loops. Canvas motion is an instance-level authoring choice and does
 not change the export policy.
 
-MaterialCodingStudy mounts its canvas when the component enters the viewport
-or its 120px preload margin. Leaving that range detaches the canvas and disposes
+MaterialCodingStudy, PointCodingStudy, FieldCodingStudy and InterfaceCodingStudy
+mount their canvases when the component enters the viewport or its 120px preload
+margin. Leaving that range detaches the canvas and disposes
 the renderer; after detachment it releases the WebGL context slot. Returning to
 the component resumes the saved animation phase. Export and thumbnail targets
-render without waiting for viewport visibility. This lifecycle belongs to the
-new material component; the earlier four-mode authoring file remains unchanged.
+render without waiting for viewport visibility. The earlier CreativeCodingStudy
+authoring file remains unchanged.
 
 Source labels and links accompany each placement. If labels are hidden for a
 material-only experiment, keep its external credit card beside the component.
@@ -144,7 +167,7 @@ GPU and their local visuals have been reviewed. A fresh editor reload and
 **31,799 native-state assertions** confirmed their saved placements, exact
 controls, source thumbnails, credit links and geometry.
 
-The saved inventory is **eight live studies and 24 code instances**, alongside
+At that stage the saved inventory was **eight live studies and 24 code instances**, alongside
 the same 20 native studies, 18 originals and 77 source entries: **28 source
 studies** in total. Twelve source-led adaptations comprise four static native
 studies and eight live studies. Each new study has a live-area card, a draft-lab card and main artwork on its
@@ -167,8 +190,52 @@ their twelve code instances. The four intentionally revised reference cards
 retain their original poster assets and credits. The original four-mode
 component source remains unchanged.
 
-Current proof inputs and screenshots are retained in this task's local
-`live-material-studies` artifacts. Exact source algorithms, complete source
+Proof inputs and screenshots for that eight-study revision are retained in this
+task's local `live-material-studies` artifacts. Exact source algorithms, complete source
 clips and physical material fidelity remain unverified. No actual Framer export
 image was manually inspected. The lab remains an unpublished draft, and these
 authoring changes do not integrate the components into the production site.
+
+## Twenty-reference completion — saved and verified
+
+LC-09–20 extend the authored set to all twenty bookmarked references with four
+point surfaces, four light/relief fields, afterimages, glass glyphs, chromatic
+loops and technical UI signals. The twelve new modes passed local GPU
+compilation and changed between deterministic time samples; their local visuals
+were reviewed. CC-002 retains both @threejs as the posting account and the
+credited original display name [afterimage](https://x.com/i/status/2093373917218103449).
+That support URL does not add a twenty-first bookmark. Both earlier component
+sources are byte-preserved, and the earlier eight study records remain unchanged.
+
+The saved inventory is **20 live studies and 60 code instances**:
+one live-area card, one draft-lab card and one reference-card artwork per study.
+Together with **20 native studies**, this is **40 source studies**;
+**24 source-led adaptations** comprise four static native adaptations and
+20 live adaptations. The **18 originals and 77 source URLs** retain their
+identities. The expanded live area is **12,000px high**
+inside a **25,800px Source frame**, with the same draft lab route. All source
+posters stay as comparison thumbnails beside the executable artwork.
+
+On 2026-10-23, fresh full navigation reloads of Source inspiration and the draft
+lab, exact control readback and **35,886 native-state assertions** verified this
+completion. All 20 native study trees, 18 original groups, all 77 reference IDs,
+65 untouched reference subtrees, the earlier eight main/lab cards and their
+24 code instances are preserved. The twelve revised reference cards retain
+their source posters, credits and evidence. All five code sources match their
+accepted Framer readback, with no code diagnostics. The live-area heading and
+Source guide both reflect the full twenty-study set.
+
+All twelve new studies rendered and changed between aligned frames in actual
+Framer Preview; each Pause/Play transition was checked. Representative
+editor-canvas motion was measured for LC-09, LC-13 and LC-20. The final LC-20
+technical view was visually checked after its duplicate overlay title was
+removed, while retaining the credit, eyebrow and native heading. CC-002's
+credited-original link and source-led classification remain visible.
+
+Current proof and screenshots are retained in this task's local
+`live-complete-creative-coding` artifacts. The 31,799-check proof above describes
+the earlier eight-study revision, and the 615-check proof describes its earlier
+four-study revision. Source algorithms, complete clips and physical fidelity
+remain unverified. No actual Framer export image was manually inspected. The
+lab remains an unpublished draft; these authoring changes do not integrate the
+components into the production site.

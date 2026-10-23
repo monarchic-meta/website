@@ -139,6 +139,20 @@ compilation and visual review. Actual Preview checks confirmed moving frames
 and pause/resume for all four; all four reference-card artworks rendered, and
 Spectral editor-canvas motion was measured.
 
+The twenty-reference completion adds LC-09–20 through three separate files:
+[PointCodingStudy](design-studies/code-components/PointCodingStudy.tsx) for folded,
+curling, connected-loop and feather-like point surfaces;
+[FieldCodingStudy](design-studies/code-components/FieldCodingStudy.tsx) for electric
+radial light, icy ridge flow, a warm corridor and luminous gesture trails; and
+[InterfaceCodingStudy](design-studies/code-components/InterfaceCodingStudy.tsx)
+for a temporal wing glyph, glass pixel glyphs, chromatic loops and technical UI
+signals. All use independent geometry, fields or local UI textures. CC-002's
+posting account and credited-original support link remain distinct. The twelve
+new modes passed local GPU compilation and visible time-sample checks. Their
+saved placements and exact controls are reload-verified, and all twelve rendered,
+changed between aligned frames and paused/resumed in actual Framer Preview.
+The earlier eight study records and both earlier component sources are preserved.
+
 ## Original-composition clusters
 
 The six retained clusters each contain three studies.
@@ -247,7 +261,7 @@ cards retain their IDs, positions and original poster assets. Wave and Coronal
 visibly animate on the editor canvas; Wave also runs and pauses/resumes in
 actual Preview. Earlier three-study proof is retained as historical evidence.
 
-The saved material revision contains **20 native + 8 live source studies**, 24 code
+The earlier saved material revision contained **20 native + 8 live source studies**, 24 code
 instances, 18 original compositions and the same 77 source entries. Its twelve
 source-led adaptations are four static native studies and eight live studies,
 with 28 source studies in total.
@@ -266,6 +280,27 @@ editor-canvas motion. Proof and screenshots live in this task's local
 proofs retain their historical scope. Complete source-clip and physical-model
 fidelity remain unverified, and no actual Framer export image was manually
 inspected. The lab remains an unpublished draft.
+
+The saved completion contains **20 native + 20 live source studies**, **60 code
+instances**, **18 original compositions** and the same **77 source URLs**.
+The **24 source-led adaptations** comprise four static native studies and twenty
+live studies. Fresh full editor reloads and **35,886 native-state assertions**
+confirm all native and original trees, all 77 reference IDs, 65 untouched
+reference subtrees and the earlier eight main/lab cards with 24 code instances.
+The twelve intentionally updated reference cards retain their source posters,
+credits and evidence. The live area is 12,000px high inside a 25,800px Source
+frame, with its heading and Source guide updated to twenty studies. All five
+code sources match their accepted readback with empty diagnostics.
+
+All twelve new studies rendered and moved between aligned Preview frames, and
+each Pause/Play transition was verified. Representative editor-canvas motion
+was measured for LC-09, LC-13 and LC-20; the final technical UI view was checked
+after removing its duplicate overlaid title. CC-002's credited-original support
+link and source-led note remain intact. Current proof is retained in
+`live-complete-creative-coding`; the earlier 31,799-check and 615-check proofs
+are historical. The lab keeps its draft route. Source-clip and physical fidelity
+remain unverified. No actual Framer export image was inspected, and nothing
+was published.
 
 The asset and catalog changes affect authoring documentation only. Validation
 checks JSON, unique IDs and URLs, catalog/source-set equality, local links,

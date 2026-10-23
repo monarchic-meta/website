@@ -2395,7 +2395,76 @@
       "Echoed reveal or transition study",
       "Graphic trail around an original symbol"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-17",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/InterfaceCodingStudy.tsx",
+        "mode": "afterimage",
+        "palette": {
+          "primary": "#fff8ba",
+          "secondary": "#a8c9e6",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": true,
+          "study": "afterimage",
+          "primary": "#fff8ba",
+          "secondary": "#a8c9e6",
+          "ink": "#020304"
+        },
+        "referenceStudyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": false,
+          "study": "afterimage",
+          "primary": "#fff8ba",
+          "secondary": "#a8c9e6",
+          "ink": "#020304"
+        },
+        "framerComponentId": "codeFile/a_E7nAD:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "M2k5KwtvW",
+        "framerSourceInstance": "gFAWuCGOL",
+        "framerSourceCredit": "i5GHeDqWP",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "RWiHcoRj7",
+        "framerReferenceGroup": "gBr7Ser2g",
+        "framerReferenceInstance": "nARcE9LYU",
+        "framerReferencePoster": "k62gliJS_",
+        "framerReferencePosterLabel": "WqDtbk1JR",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "nARcE9LYU",
+      "sourcePoster": "k62gliJS_",
+      "sourcePosterLabel": "WqDtbk1JR",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-002",
@@ -2857,7 +2926,72 @@
       "High-energy section opener",
       "Radial graphic field or luminous object"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-13",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/FieldCodingStudy.tsx",
+        "mode": "radial",
+        "palette": {
+          "primary": "#b5f1ff",
+          "secondary": "#2c6be4",
+          "ink": "#01040c"
+        },
+        "studyProps": {
+          "study": "radial",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#b5f1ff",
+          "secondary": "#2c6be4",
+          "ink": "#01040c",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "radial",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#b5f1ff",
+          "secondary": "#2c6be4",
+          "ink": "#01040c",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ym8lrvp:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "WdtYOUFTT",
+        "framerSourceInstance": "HTJG6x2Td",
+        "framerSourceCredit": "dPAgyf44o",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "Evvz0cjrf",
+        "framerReferenceGroup": "rv0E8uk4W",
+        "framerReferenceInstance": "zguwiyu87",
+        "framerReferencePoster": "FTBX9o_yL",
+        "framerReferencePosterLabel": "ox3e7vWuR",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "zguwiyu87",
+      "sourcePoster": "FTBX9o_yL",
+      "sourcePosterLabel": "ox3e7vWuR",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-007",
@@ -2908,7 +3042,72 @@
       "Folded-mesh identity graphic",
       "Abstract divider or hero object"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-09",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/PointCodingStudy.tsx",
+        "mode": "folded",
+        "palette": {
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "folded",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "folded",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/S1i4MTA:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "zBKxsWStl",
+        "framerSourceInstance": "oTOnJUxCm",
+        "framerSourceCredit": "qjeiU3HPC",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "L6ZndARk5",
+        "framerReferenceGroup": "adBMR53g2",
+        "framerReferenceInstance": "LimhVnW4I",
+        "framerReferencePoster": "IVYDdbECk",
+        "framerReferencePosterLabel": "MX07AQddY",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "LimhVnW4I",
+      "sourcePoster": "IVYDdbECk",
+      "sourcePosterLabel": "MX07AQddY",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-008",
@@ -3079,7 +3278,76 @@
       "Original translucent glyph family",
       "Modular material tiles or identity object"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-18",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/InterfaceCodingStudy.tsx",
+        "mode": "glyphs",
+        "palette": {
+          "primary": "#e9f3ff",
+          "secondary": "#f0d3eb",
+          "ink": "#202832"
+        },
+        "studyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": true,
+          "study": "glyphs",
+          "primary": "#e9f3ff",
+          "secondary": "#f0d3eb",
+          "ink": "#202832"
+        },
+        "referenceStudyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": false,
+          "study": "glyphs",
+          "primary": "#e9f3ff",
+          "secondary": "#f0d3eb",
+          "ink": "#202832"
+        },
+        "framerComponentId": "codeFile/a_E7nAD:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "ELo5Qbo3R",
+        "framerSourceInstance": "pFNtVlCAH",
+        "framerSourceCredit": "bE4xjSZ0R",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "LRN0j9v1z",
+        "framerReferenceGroup": "fmACGwbFa",
+        "framerReferenceInstance": "n3TpHaEPZ",
+        "framerReferencePoster": "bWFLywTET",
+        "framerReferencePosterLabel": "hNHhM0bpS",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "n3TpHaEPZ",
+      "sourcePoster": "bWFLywTET",
+      "sourcePosterLabel": "hNHhM0bpS",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-010",
@@ -3241,7 +3509,76 @@
       "Colorful material object family",
       "Loop-based hero art or graphic frame"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-19",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/InterfaceCodingStudy.tsx",
+        "mode": "loops",
+        "palette": {
+          "primary": "#e56acb",
+          "secondary": "#98ed71",
+          "ink": "#170708"
+        },
+        "studyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": true,
+          "study": "loops",
+          "primary": "#e56acb",
+          "secondary": "#98ed71",
+          "ink": "#170708"
+        },
+        "referenceStudyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": false,
+          "study": "loops",
+          "primary": "#e56acb",
+          "secondary": "#98ed71",
+          "ink": "#170708"
+        },
+        "framerComponentId": "codeFile/a_E7nAD:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "MWT9Wi1ya",
+        "framerSourceInstance": "lJhQR_1xg",
+        "framerSourceCredit": "oeYPxtDHu",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "FqfCPuKG4",
+        "framerReferenceGroup": "V62dGut29",
+        "framerReferenceInstance": "OZuRcWJXf",
+        "framerReferencePoster": "vQ2T4KRCq",
+        "framerReferencePosterLabel": "tf8RQHCyR",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "OZuRcWJXf",
+      "sourcePoster": "vQ2T4KRCq",
+      "sourcePosterLabel": "tf8RQHCyR",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-012",
@@ -3307,7 +3644,76 @@
         "framerPlacementStatus": "saved and editor-reload verified",
         "staticStudy": true
       }
-    ]
+    ],
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-20",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/InterfaceCodingStudy.tsx",
+        "mode": "technical",
+        "palette": {
+          "primary": "#b8b7f9",
+          "secondary": "#d2e1ef",
+          "ink": "#0b0e12"
+        },
+        "studyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": true,
+          "study": "technical",
+          "primary": "#b8b7f9",
+          "secondary": "#d2e1ef",
+          "ink": "#0b0e12"
+        },
+        "referenceStudyProps": {
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.7,
+          "focus": 0.65,
+          "refraction": 0.85,
+          "interactive": true,
+          "showLabels": false,
+          "study": "technical",
+          "primary": "#b8b7f9",
+          "secondary": "#d2e1ef",
+          "ink": "#0b0e12"
+        },
+        "framerComponentId": "codeFile/a_E7nAD:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "aSeMQRoDA",
+        "framerSourceInstance": "F2guG9KWU",
+        "framerSourceCredit": "F0ptZioNC",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "unACIRoSt",
+        "framerReferenceGroup": "BaWgieL03",
+        "framerReferenceInstance": "qJfqzX6m8",
+        "framerReferencePoster": "vglbi2VW_",
+        "framerReferencePosterLabel": "Smf_6l2Df",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "qJfqzX6m8",
+      "sourcePoster": "vglbi2VW_",
+      "sourcePosterLabel": "Smf_6l2Df",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-013",
@@ -3478,7 +3884,72 @@
       "Gestural hero object",
       "Point-built punctuation or expressive graphic stroke"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-10",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/PointCodingStudy.tsx",
+        "mode": "curl",
+        "palette": {
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "curl",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "curl",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/S1i4MTA:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "a9P_tKHUC",
+        "framerSourceInstance": "YRtN369P5",
+        "framerSourceCredit": "UrGPInQAw",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "JsM09KDVm",
+        "framerReferenceGroup": "a_tgNqhTv",
+        "framerReferenceInstance": "JQbZlrC06",
+        "framerReferencePoster": "uvtfprShw",
+        "framerReferencePosterLabel": "GSWPGWqlJ",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "JQbZlrC06",
+      "sourcePoster": "uvtfprShw",
+      "sourcePosterLabel": "GSWPGWqlJ",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-015",
@@ -3529,7 +4000,72 @@
       "Looped graphic family",
       "Abstract connection motif or mesh frame"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-11",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/PointCodingStudy.tsx",
+        "mode": "loops",
+        "palette": {
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "loops",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "loops",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/S1i4MTA:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "dEqktd95O",
+        "framerSourceInstance": "XBvmeQqdy",
+        "framerSourceCredit": "W1w8ZML3K",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "awEQjcRQr",
+        "framerReferenceGroup": "CnBNTfrdA",
+        "framerReferenceInstance": "bV1CZADkb",
+        "framerReferencePoster": "IvIaokfWj",
+        "framerReferencePosterLabel": "dYDaO4Noj",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "bV1CZADkb",
+      "sourcePoster": "IvIaokfWj",
+      "sourcePosterLabel": "dYDaO4Noj",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-016",
@@ -3700,7 +4236,72 @@
       "Abstract light-field backdrop",
       "Luminous surface or section-transition artwork"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-14",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/FieldCodingStudy.tsx",
+        "mode": "ridge",
+        "palette": {
+          "primary": "#d5f8ff",
+          "secondary": "#397abb",
+          "ink": "#020812"
+        },
+        "studyProps": {
+          "study": "ridge",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#d5f8ff",
+          "secondary": "#397abb",
+          "ink": "#020812",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "ridge",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#d5f8ff",
+          "secondary": "#397abb",
+          "ink": "#020812",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ym8lrvp:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "mELx9crm9",
+        "framerSourceInstance": "BsJkU0Tgu",
+        "framerSourceCredit": "OUDxSNkSg",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "zcJbvKfns",
+        "framerReferenceGroup": "EdR0SImD8",
+        "framerReferenceInstance": "XP5fHLKVr",
+        "framerReferencePoster": "qLzoFk7yh",
+        "framerReferencePosterLabel": "j95jv5df7",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "XP5fHLKVr",
+      "sourcePoster": "qLzoFk7yh",
+      "sourcePosterLabel": "j95jv5df7",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-018",
@@ -3751,7 +4352,72 @@
       "Deep geometric graphic or reveal",
       "Warm signal tunnel or abstract frame"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-15",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/FieldCodingStudy.tsx",
+        "mode": "corridor",
+        "palette": {
+          "primary": "#ffcf8e",
+          "secondary": "#d13c0f",
+          "ink": "#100302"
+        },
+        "studyProps": {
+          "study": "corridor",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#ffcf8e",
+          "secondary": "#d13c0f",
+          "ink": "#100302",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "corridor",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#ffcf8e",
+          "secondary": "#d13c0f",
+          "ink": "#100302",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ym8lrvp:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "N48p0XTbd",
+        "framerSourceInstance": "k2kpm0F4R",
+        "framerSourceCredit": "J9asRwx61",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "R3NkuslQn",
+        "framerReferenceGroup": "CHaVfHwD2",
+        "framerReferenceInstance": "dzk7rWekn",
+        "framerReferencePoster": "j_s2aLapG",
+        "framerReferencePosterLabel": "CH5tkIPyq",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "dzk7rWekn",
+      "sourcePoster": "j_s2aLapG",
+      "sourcePosterLabel": "CH5tkIPyq",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-019",
@@ -3802,7 +4468,72 @@
       "Expressive trail or graphic stroke family",
       "Signal-transition and mark-reveal studies"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-16",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/FieldCodingStudy.tsx",
+        "mode": "glyphs",
+        "palette": {
+          "primary": "#f4eadb",
+          "secondary": "#8dbad3",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "glyphs",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#f4eadb",
+          "secondary": "#8dbad3",
+          "ink": "#020304",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "glyphs",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "grain": 0.35,
+          "interactive": true,
+          "primary": "#f4eadb",
+          "secondary": "#8dbad3",
+          "ink": "#020304",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/Ym8lrvp:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "ZdZtvIU7_",
+        "framerSourceInstance": "ENHdvBo1b",
+        "framerSourceCredit": "XPxVUBJYF",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "sNaEo3ieL",
+        "framerReferenceGroup": "ByQsjul_6",
+        "framerReferenceInstance": "RFUC_ePMD",
+        "framerReferencePoster": "UAj06IvUI",
+        "framerReferencePosterLabel": "aLvL3q2Zs",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "RFUC_ePMD",
+      "sourcePoster": "UAj06IvUI",
+      "sourcePosterLabel": "aLvL3q2Zs",
+      "sourcePosterRole": "comparison"
+    }
   },
   {
     "ref": "CC-020",
@@ -3853,6 +4584,71 @@
       "Feather-like abstract graphic",
       "Curved mesh frame, flourish or hero object"
     ],
-    "framerVerifiedDate": "2026-10-23"
+    "framerVerifiedDate": "2026-10-23",
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-12",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/PointCodingStudy.tsx",
+        "mode": "feather",
+        "palette": {
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304"
+        },
+        "studyProps": {
+          "study": "feather",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": true
+        },
+        "referenceStudyProps": {
+          "study": "feather",
+          "animate": true,
+          "canvasMotion": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "scale": 1,
+          "density": 1,
+          "interactive": true,
+          "primary": "#f4f7fb",
+          "secondary": "#8a939f",
+          "ink": "#020304",
+          "showLabels": false
+        },
+        "framerComponentId": "codeFile/S1i4MTA:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "nu87gBZl7",
+        "framerSourceInstance": "c9NR63juR",
+        "framerSourceCredit": "SMuD3IjTZ",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "E1Lyn4PJa",
+        "framerReferenceGroup": "Eo7UTXRxQ",
+        "framerReferenceInstance": "uJe2cSQxm",
+        "framerReferencePoster": "HVXZTxFaM",
+        "framerReferencePosterLabel": "c9DzAc3dc",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
+    ],
+    "framerReferencePresentation": {
+      "main": "uJe2cSQxm",
+      "sourcePoster": "HVXZTxFaM",
+      "sourcePosterLabel": "c9DzAc3dc",
+      "sourcePosterRole": "comparison"
+    }
   }
 ]
