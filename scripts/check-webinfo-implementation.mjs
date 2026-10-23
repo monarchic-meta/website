@@ -101,7 +101,7 @@ assert(count(hostedMcps.html, /data-plan-card="mcp-/g) === 23, "Hosted MCP catal
 assert(!existsSync(routeFile("/products/mcp-pty")), "Internal PTY route must not be published.");
 
 const availableProduct = page("/products/mcp-repointel");
-includes(availableProduct.text, ["Why it exists", "Connection and contract", "Current limits", "Concrete workflow / priced call"], "Available product decision context");
+includes(availableProduct.text, ["Why it exists", "Connection and contract", "Current limits", "Example workflow"], "Available product decision context");
 const plannedProduct = page("/products/mcp-webinfo");
 includes(plannedProduct.text, ["Why it exists", "Connection and contract", "no public hosted endpoint is available yet"], "Planned product boundary");
 

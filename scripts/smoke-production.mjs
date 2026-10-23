@@ -459,20 +459,20 @@ async function runBrowserSmoke() {
       { slug: "mcp-codequality", tool: "analyze_inline_sources" },
       { slug: "mcp-copydev", tool: "copy_review_detect_vagueness" },
       { slug: "mcp-create-project", tool: "create_project_health" },
-      { slug: "mcp-explicitmem", tool: "memory.retrieve_context" },
+      { slug: "mcp-explicitmem", tool: "explicitmem_hosted_recall_v1" },
       { slug: "mcp-incidentops", tool: "build_incident_response_packet" },
-      { slug: "mcp-infraprofiler", tool: "profile_pipeline" },
+      { slug: "mcp-infraprofiler", tool: "infraprofiler_hosted_profile_system_v1" },
       { slug: "mcp-leadgenerator", tool: "score_provided_leads" },
       { slug: "mcp-nutrition", tool: "nutrition_dilution" },
       { slug: "mcp-releaseops", tool: "releaseops_verify_tag_pack" },
-      { slug: "mcp-repo-fleet", tool: "repo_fleet_list" },
+      { slug: "mcp-repo-fleet", tool: "repo_fleet_hosted_overview_v1" },
       { slug: "mcp-repointel", tool: "get_repository_summary" },
-      { slug: "mcp-seo", tool: "run_demo_pipeline_tool" },
+      { slug: "mcp-seo", tool: "seo_hosted_plan_improvements_v1" },
     ]) {
       await checkPage(page, `${baseUrl}/products/${proof.slug}`, async () => {
         const workflow = page.locator(`[data-workflow-proof="${proof.slug}"]`);
         await workflow.waitFor();
-        await workflow.getByText("Concrete workflow / priced call", { exact: true }).waitFor();
+        await workflow.getByText("Example workflow", { exact: true }).waitFor();
         await workflow.getByText(proof.tool, { exact: false }).first().waitFor();
         await workflow.getByText("At runtime", { exact: true }).waitFor();
         await workflow.getByText("Recorded on the operation receipt", { exact: true }).waitFor();

@@ -9,8 +9,9 @@ export interface ProductWorkflowProof {
   request: string;
   calls: WorkflowCall[];
   execution: string;
-  output: Record<string, unknown>;
-  outputKind: "Exact deterministic output" | "Representative contract excerpt";
+  output?: Record<string, unknown>;
+  expectedResult?: string;
+  outputKind: "Exact deterministic output" | "Representative contract excerpt" | "Expected result";
   permission: string;
   boundary: string;
   usageExplanation: string;
@@ -25,6 +26,7 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
       tool: "browser_observe_url",
       arguments: {
         url: "https://example.com",
+        receipt_path: "artifacts/example-observation.json",
         safety_boundaries: [
           "no credential theft",
           "no CAPTCHA bypass",
@@ -115,6 +117,10 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
     calls: [{
       tool: "codeintel_hosted_map_v1",
       arguments: {
+        tenant: "your-workspace-id",
+        project: "your-project-id",
+        repository: "your-repository-id",
+        revision: "your-indexed-revision",
         freshness: "require-current",
         scope: ["repository"],
       },
@@ -132,7 +138,7 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
       },
       freshness: { status: "current" },
     },
-    permission: "Requires an authenticated, entitled account and a tenant-scoped retained repository. Repository identity and storage paths are resolved by hosted orchestration.",
+    permission: "Requires an authenticated, entitled account and a tenant-scoped retained repository. Replace the example identifiers with your authorized workspace, project, repository, and indexed revision.",
     boundary: "The map reflects the retained revision and the capabilities of its language servers. It does not claim runtime coverage or semantic certainty beyond indexed source files.",
     usageExplanation: "The completed map receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
   },
@@ -143,6 +149,11 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
     calls: [{
       tool: "codeprofiler_hosted_assess_v1",
       arguments: {
+        tenant: "your-workspace-id",
+        project: "your-project-id",
+        target: "your-repository-id",
+        revision: "your-source-revision",
+        files: [{ path: "src/index.ts", content: "export const ready = true;\n" }],
         symptoms: ["Build latency increased after dependency changes"],
         scenario: "Representative build and startup path",
         constraints: ["Do not access production data"],
@@ -160,7 +171,7 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
       ],
       confidence: 0.9,
     },
-    permission: "Requires an authenticated, entitled account and a bounded tenant-scoped source snapshot. The assessment operation is read-only and does not start an external profiler.",
+    permission: "Requires an authenticated, entitled account. Replace the example identifiers and supply source files from that revision. Assessment does not start an external profiler.",
     boundary: "Assessment recommends measurements; it does not prove a bottleneck. Approved profiling jobs remain bounded and read-only, and their tool output remains untrusted.",
     usageExplanation: "The completed assessment receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
   },
@@ -262,112 +273,91 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
     usageExplanation: "The calculation receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
   },
   "mcp-repo-fleet": {
-    slug: "mcp-repo-fleet",
-    title: "List the repositories in a governed fleet manifest",
-    request: "Show the repositories this fleet configuration manages.",
-    calls: [{ tool: "repo_fleet_list", arguments: {} }],
-    execution: "Reads the configured fleet manifest and returns normalized repository identifiers and paths without syncing or mutating them.",
-    outputKind: "Representative contract excerpt",
-    output: {
-      contract: "repo-fleet.catalog-list.v1",
-      status: "ok",
-      repositories: [{ id: "example-service", defaultBranch: "main" }],
-      mutationPerformed: false,
-    },
-    permission: "Requires an authenticated, entitled account. This listing call uses the hosted read-only fleet profile.",
-    boundary: "Clone, sync, and other mutating fleet operations have separate policy and approval requirements.",
-    usageExplanation: "The listing receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
-  },
-  "mcp-seo": {
-    slug: "mcp-seo",
-    title: "Run a deterministic SEO pipeline example",
-    request: "Show the inspection and planning stages without crawling a customer site.",
-    calls: [{ tool: "run_demo_pipeline_tool", arguments: {} }],
-    execution: "Runs the built-in demonstration pipeline and returns route, inspection, and recommendation artifacts without live network collection.",
-    outputKind: "Representative contract excerpt",
-    output: {
-      contract: "seo.demo-pipeline.v1",
-      status: "complete",
-      stages: ["route-discovery", "page-inspection", "internal-link-plan"],
-      liveRequests: 0,
-    },
-    permission: "Requires an authenticated, entitled account. The demonstration call needs no site credential or external provider key.",
-    boundary: "Live inspection is a separate operation and must respect the target site's access policy and request limits.",
-    usageExplanation: "The pipeline call receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
-  },
-  "mcp-explicitmem": {
-    slug: "mcp-explicitmem",
-    title: "Remember a release rule, then retrieve it with provenance",
-    request: "Remember that production releases require two reviewers, then prepare the approval constraints.",
-    calls: [
-      {
-        tool: "memory.write_constraint",
-        arguments: {
-          workspaceId: "demo-workspace",
-          scopeId: "project_specific",
-          content: "Production releases require two reviewers.",
-        },
-      },
-      {
-        tool: "memory.retrieve_context",
-        arguments: {
-          workspaceId: "demo-workspace",
-          scopeId: "project_specific",
-          task: "Prepare the release approval constraints",
-          mode: "task_brief",
-          limit: 5,
-          tokenBudget: 300,
-        },
-      },
+    "slug": "mcp-repo-fleet",
+    "title": "Browse the hosted public repository fleet",
+    "request": "Show the public repositories in the hosted fleet catalog.",
+    "calls": [
+        {
+            "tool": "repo_fleet_hosted_overview_v1",
+            "arguments": {}
+        }
     ],
-    execution: "Writes one explicit constraint, retrieves a bounded context packet, and attaches the source event and deterministic context receipt.",
-    outputKind: "Representative contract excerpt",
-    output: {
-      write: {
-        eventId: "event-082",
-        objectId: "constraint-014",
-        action: "created",
-        objectType: "constraint",
-        canonicalText: "Production releases require two reviewers",
-      },
-      retrieve: {
-        task: "Prepare the release approval constraints",
-        mode: "task_brief",
-        retrievalMode: "context_pack",
-        objectIds: ["constraint-014"],
-        contextMarkdown: "Task Context Brief\nTask: Prepare the release approval constraints\n\nAlways-Include Facts:\n- None\n\nFacts:\n- None\n\nHypotheses:\n- None\n\nConstraints:\n- [constraint] Production releases require two reviewers (confidence=0.65)\n\nContested Memory:\n- None\n\nContradictions:\n- None\n\nResolutions:\n- None",
-        directEvidence: [
-          {
-            objectId: "constraint-014",
-            objectType: "constraint",
-            text: "Production releases require two reviewers",
-            sourceEventIds: ["event-082"],
-            rank: 1,
-            score: 0.4503511301977579,
-            confidence: 0.65,
-            epistemicStatus: "observed",
-            reasons: [
-              "semantic=0.24",
-              "lexical=0.20",
-              "type_boost=+0.07",
-              "recency=+0.05",
-            ],
-          },
-        ],
-        answerNotes: [
-          {
-            text: "Constraint evidence: Production releases require two reviewers",
-            evidenceObjectIds: ["constraint-014"],
-            sourceEventIds: ["event-082"],
-          },
-        ],
-        contextReceiptHash: "sha256:…",
-      },
-    },
-    permission: "Needs an authenticated, entitled account and a write-enabled ExplicitMem tool profile. No external model credential is required for the default local-hash path.",
-    boundary: "The caller supplies workspace and scope IDs. They are not yet derived from the authenticated tenant, so use non-sensitive evaluation memory only.",
-    usageExplanation: "Each call receives its own measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
-  },
+    "execution": "Reads the embedded public fleet catalog and returns a bounded repository overview.",
+    "expectedResult": "A repository count, matching public repository entries, and suggested discovery calls.",
+    "permission": "Requires an authenticated, entitled account and read access.",
+    "boundary": "This hosted profile exposes the public fleet catalog. It does not clone repositories, sync private source, or accept local filesystem paths.",
+    "outputKind": "Expected result",
+    "usageExplanation": "Usage is recorded for each operation. Included allowance quantities are not yet published."
+},
+  "mcp-seo": {
+    "slug": "mcp-seo",
+    "title": "Plan improvements from a saved site audit",
+    "request": "Prioritize fixes from my completed site audit.",
+    "calls": [
+        {
+            "tool": "seo_hosted_plan_improvements_v1",
+            "arguments": {
+                "tenant": "your-workspace-id",
+                "project": "your-project-id",
+                "audit_ref": "seo_audit_0123456789abcdef0123456789abcdef",
+                "priorities": [
+                    "Fix broken internal links"
+                ],
+                "constraints": [
+                    "Preserve existing routes"
+                ]
+            }
+        }
+    ],
+    "execution": "Reads the retained audit and produces evidence-bound work orders and a patch plan.",
+    "expectedResult": "Recommendations and a plan reference for a later apply request. The findings depend on the saved audit.",
+    "outputKind": "Expected result",
+    "permission": "Requires an authenticated, entitled account and a completed audit in the same workspace and project. Replace audit_ref with the auditRef returned by seo_hosted_assess_site_v1. The sample reference is a placeholder.",
+    "boundary": "Create the audit first using an authorized site binding and collected site evidence. This planning call does not collect that evidence or publish changes.",
+    "usageExplanation": "Usage is recorded for each operation. Included allowance quantities are not yet published."
+},
+  "mcp-explicitmem": {
+    "slug": "mcp-explicitmem",
+    "title": "Remember a release rule, then retrieve it",
+    "request": "Remember that production releases require two reviewers, then find that rule.",
+    "calls": [
+        {
+            "tool": "explicitmem_hosted_remember_v1",
+            "arguments": {
+                "tenant": "your-workspace-id",
+                "project": "your-project-id",
+                "content": {
+                    "text": "Production releases require two reviewers."
+                },
+                "scope": {
+                    "kind": "project"
+                },
+                "kind": "constraint"
+            }
+        },
+        {
+            "tool": "explicitmem_hosted_recall_v1",
+            "arguments": {
+                "tenant": "your-workspace-id",
+                "project": "your-project-id",
+                "query": "What are the release approval requirements?",
+                "scope": {
+                    "kind": "project"
+                },
+                "kinds": [
+                    "constraint"
+                ],
+                "limit": 5
+            }
+        }
+    ],
+    "execution": "Stores the constraint in the authorized private project, then retrieves matching memories with provenance.",
+    "expectedResult": "The remember call returns a storage result. Recall returns a bounded context brief and supporting memories; identifiers and scores depend on the stored project.",
+    "permission": "Requires an authenticated, entitled account and a write-enabled key for remember. Recall can use a read-only key. Replace the workspace and project identifiers with your own.",
+    "boundary": "The gateway checks ownership. Supplying another workspace identifier does not grant access. Project and usage limits still apply.",
+    "outputKind": "Expected result",
+    "usageExplanation": "Usage is recorded for each operation. Included allowance quantities are not yet published."
+},
   "mcp-incidentops": {
     slug: "mcp-incidentops",
     title: "Turn incident records into a responder handoff",
@@ -475,75 +465,34 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
     usageExplanation: "The completed call receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
   },
   "mcp-infraprofiler": {
-    slug: "mcp-infraprofiler",
-    title: "Find the bottleneck in a slow deployment pipeline",
-    request: "Why did this deployment take 15 minutes, and what should we fix first?",
-    calls: [
-      {
-        tool: "profile_pipeline",
-        arguments: {
-          run: {
-            id: "gha.acme.api.deploy.42",
-            provider: "github_actions",
-            repository: "acme/api",
-            workflow: "deploy",
-            branch: "main",
-            trigger: "push",
-            totalDurationSeconds: 900,
-            stages: [
-              { id: "queue", name: "Queue", durationSeconds: 0, queueSeconds: 120 },
-              { id: "install", name: "Install", durationSeconds: 360, dependsOn: ["queue"], cache: { key: "deps", hit: false }, networkSeconds: 240 },
-              { id: "unit", name: "Unit tests", durationSeconds: 240, dependsOn: ["install"] },
-              { id: "deploy", name: "Deploy", durationSeconds: 180, dependsOn: ["unit"] },
-            ],
-          },
-        },
-      },
+    "slug": "mcp-infraprofiler",
+    "title": "Profile an authorized infrastructure system",
+    "request": "Show the cost and latency evidence for my configured system.",
+    "calls": [
+        {
+            "tool": "infraprofiler_hosted_profile_system_v1",
+            "arguments": {
+                "tenant": "your-workspace-id",
+                "project": "your-project-id",
+                "system": "your-system-id",
+                "window": {
+                    "value": 24,
+                    "unit": "hours"
+                },
+                "focus": [
+                    "cost",
+                    "latency"
+                ]
+            }
+        }
     ],
-    execution: "Builds the critical path from caller-supplied timings, identifies queue, cache, network, and stage bottlenecks, then projects bounded optimizations.",
-    outputKind: "Representative contract excerpt",
-    output: {
-      run: {
-        id: "gha.acme.api.deploy.42",
-        provider: "github_actions",
-        repository: "acme/api",
-        workflow: "deploy",
-      },
-      totalDurationSeconds: 900,
-      criticalPathSeconds: 900,
-      criticalPath: [
-        { id: "queue", name: "Queue", durationSeconds: 0, queueSeconds: 120 },
-        { id: "install", name: "Install", durationSeconds: 360, networkSeconds: 240 },
-        { id: "unit", name: "Unit tests", durationSeconds: 240 },
-        { id: "deploy", name: "Deploy", durationSeconds: 180 },
-      ],
-      queueDelaySeconds: 120,
-      cacheMisses: 1,
-      networkSeconds: 240,
-      bottlenecks: [
-        {
-          stageId: "install",
-          stageName: "Install",
-          category: "critical_path",
-          impactSeconds: 360,
-          evidence: "Install contributes 6m to the critical path",
-        },
-      ],
-      estimatedSavingsSeconds: 203,
-      optimizedDurationSeconds: 697,
-      optimizations: [
-        {
-          title: "Stabilize dependency and Docker cache keys",
-          category: "cache",
-          estimatedSavingsSeconds: 113,
-          affectedStages: ["install"],
-        },
-      ],
-    },
-    permission: "This call only reads the telemetry in the request. It needs no provider token, filesystem, subprocess, Kubernetes, or cloud mutation access.",
-    boundary: "Live provider collection is a separate operation and requires a request-scoped read token. Savings are deterministic projections, not guarantees.",
-    usageExplanation: "The completed analysis receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
-  },
+    "execution": "Builds a bounded profile from the authorized telemetry binding for the selected system and time window.",
+    "expectedResult": "A system profile with observed resource evidence and a profile reference that later diagnosis calls can use.",
+    "permission": "Requires an authenticated, entitled account and a configured telemetry binding. Replace the example workspace, project, and system identifiers.",
+    "boundary": "The call uses configured telemetry access. It cannot infer measurements for an unconfigured system or prove a bottleneck from absent data.",
+    "outputKind": "Expected result",
+    "usageExplanation": "Usage is recorded for each operation. Included allowance quantities are not yet published."
+},
   "mcp-releaseops": {
     slug: "mcp-releaseops",
     title: "Verify a tag pack before an operator cuts the tag",
@@ -615,8 +564,8 @@ export const productWorkflowProofs: Record<string, ProductWorkflowProof> = {
         symbolCount: 20381,
       },
     },
-    permission: "Requires an authenticated, entitled account. This read-only workflow uses an approved pre-indexed public or demo repository.",
-    boundary: "Hosted access is limited to pre-indexed public or demo repositories; private source is not currently supported.",
+    permission: "Requires an authenticated, entitled account and an indexed repository accessible to its workspace. Use list_repositories to find an authorized repository ID before requesting a summary.",
+    boundary: "The summary covers the indexed repository snapshot. Supplying a repository ID does not grant access to another workspace or import a new repository.",
     usageExplanation: "The completed summary receives a measured receipt. Allowance quantities remain unpublished until the fully allocated rate card is frozen.",
   },
 };
