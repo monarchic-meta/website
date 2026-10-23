@@ -71,18 +71,39 @@ that authoring target from exports and thumbnails, which remain frozen at
 **Still time**.
 
 Framer Preview runs at up to **30 fps and 650,000 pixels**, with DPR capped at
-1.5. Visitors can pause and resume it with a keyboard-accessible button. Reduced
-motion holds a still frame; hidden tabs and offscreen components stop their
-animation loops. Canvas motion is an instance-level authoring choice and does
-not change the export policy.
+1.5. Visitors can pause and resume it with a keyboard-accessible button. Canvas
+motion is an instance-level authoring choice and does not change the export
+policy.
 
-MaterialCodingStudy, PointCodingStudy, FieldCodingStudy and InterfaceCodingStudy
-mount their canvases when the component enters the viewport or its 120px preload
-margin. Leaving that range detaches the canvas and disposes
-the renderer; after detachment it releases the WebGL context slot. Returning to
-the component resumes the saved animation phase. Export and thumbnail targets
-render without waiting for viewport visibility. The earlier CreativeCodingStudy
-authoring file remains unchanged.
+All five standalone files share a coordinator through `Symbol.for` in their
+browser window. It allows at most **two WebGL contexts**, including initial
+compilation, with **one editor animation** or **two Preview animations**. A
+visible card without a live slot keeps a locally generated frame on a 2D canvas.
+The overview therefore retains the shader artwork while releasing its GPU
+context. These frames come from the authored code, not the external source
+posters. A bounded cache shares matching stills between placements.
+
+Overview frames are generated one job per task, at no more than **24,000
+pixels**. Editor admission and backing size use the card's transformed screen
+bounds, including Framer zoom. Small cards remain still; close-up cards can
+animate, with hover, keyboard focus and Play giving priority. Other cards retain
+their last frame. Returning to a live slot resumes the saved phase. Hidden and
+offscreen cards release their contexts; reduced motion holds generated stills.
+The limit applies within one browser window/JavaScript realm, not across tabs
+or unrelated Framer iframes.
+
+Exports and thumbnails render synchronously at **Still time**, copy their
+generated frame to 2D, then dispose the temporary GPU renderer. They do not wait
+for viewport admission. Existing live leases are released before this one-shot
+render, so static capture also respects the shared context limit.
+
+Run `nix develop -c pnpm check:framer-studies` or build
+`nix build .#checks.x86_64-linux.framer-studies --no-link` for the resource
+regression suite. It exercises the five actual source modules with deterministic
+DOM/WebGL doubles: mixed placements, queue progress, context ownership, phase,
+pause, visibility, reduced motion, static targets, StrictMode and isolated
+render/copy failures. It does not execute GLSL; actual browser and Framer visual
+checks remain necessary.
 
 Source labels and links accompany each placement. If labels are hidden for a
 material-only experiment, keep its external credit card beside the component.
@@ -188,7 +209,7 @@ comparisons preserve all 20 native study trees, 18 original groups, 73 untouched
 reference trees, all 77 reference group IDs, the earlier four main/lab cards and
 their twelve code instances. The four intentionally revised reference cards
 retain their original poster assets and credits. The original four-mode
-component source remains unchanged.
+component source remained unchanged during that material revision.
 
 Proof inputs and screenshots for that eight-study revision are retained in this
 task's local `live-material-studies` artifacts. Exact source algorithms, complete source
@@ -204,8 +225,10 @@ loops and technical UI signals. The twelve new modes passed local GPU
 compilation and changed between deterministic time samples; their local visuals
 were reviewed. CC-002 retains both @threejs as the posting account and the
 credited original display name [afterimage](https://x.com/i/status/2093373917218103449).
-That support URL does not add a twenty-first bookmark. Both earlier component
-sources are byte-preserved, and the earlier eight study records remain unchanged.
+That support URL does not add a twenty-first bookmark. During that completion
+round, both earlier component sources were byte-preserved and the earlier eight
+study records remained unchanged. The later loading recovery updates all five
+runtime files while preserving their shader formulas and property controls.
 
 The saved inventory is **20 live studies and 60 code instances**:
 one live-area card, one draft-lab card and one reference-card artwork per study.
@@ -232,10 +255,50 @@ technical view was visually checked after its duplicate overlay title was
 removed, while retaining the credit, eyebrow and native heading. CC-002's
 credited-original link and source-led classification remain visible.
 
-Current proof and screenshots are retained in this task's local
+Proof and screenshots for that completion round are retained in this task's local
 `live-complete-creative-coding` artifacts. The 31,799-check proof above describes
 the earlier eight-study revision, and the 615-check proof describes its earlier
 four-study revision. Source algorithms, complete clips and physical fidelity
 remain unverified. No actual Framer export image was manually inspected. The
 lab remains an unpublished draft; these authoring changes do not integrate the
 components into the production site.
+
+## Loading recovery — current saved verification
+
+The editor displayed **Failed to load canvas** at 13% zoom. Pausing the sixty
+Canvas motion flags, closing the duplicate verification tab and reloading
+recovered it. Investigation found eager allocations and offscreen retained
+contexts; per-instance frame/pixel caps did not bound the full board. The exact
+original failure cause was not conclusively isolated.
+
+All five runtimes now use the shared resource policy above. Their shader
+literals and complete property-control schemas remain byte-identical. The five
+existing Framer files accepted the updated sources with exact hash readbacks,
+empty diagnostics and unchanged component export IDs. All sixty temporary
+motion flags were restored, with every saved control and geometry field matching
+the pre-pause baseline.
+
+Fresh editor navigation loaded the full Source board at 3%, all twenty live-area
+studies at 5%, and the Coronal close-up at 40%. The forty Source displays finished
+warming with 40,174 total 2D buffer pixels in that overview. Aligned screenshots
+confirmed Coronal editor motion and Preview motion for one study from each of
+the five component families. Temporal Preview pause/resume also worked. No
+browser warning/error or graphics-fallback message was observed.
+
+**34,179 native-state assertions** compare complete Source, Original and Lab
+trees with the completed twenty-study round, excluding module revision hints.
+All placements, source assets, credits, controls and geometry are preserved.
+The earlier 35,886-check proof is retained as historical evidence in the manifest.
+
+The eleven-case regression suite and its Nix flake check pass. A separate browser
+harness mounted all five actual modules as sixty mixed placements: all sixty
+generated overview frames appeared, with one peak GPU context during cold
+warming and none retained afterward. Static export and thumbnail targets each
+completed sixty generated frames at Still time and released all GPU contexts.
+These target checks used a local React/Framer harness; no PNG exported by the
+Framer desktop app or generated project thumbnail was inspected. The web editor
+did not expose asset-export controls.
+
+Current proof, source baselines, receipts and screenshots are retained in this
+task's local `framer-loading-recovery` artifacts. The draft lab and production
+website remain separate; nothing was published.

@@ -33,7 +33,7 @@ The saved material revision adds LC-05–08 from CC-004's capsule depth, CC-008'
 glass over UI, CC-013's recursive triangular lattice and CC-016's spectral ring
 through [MaterialCodingStudy](../design-studies/code-components/MaterialCodingStudy.tsx).
 The earlier [CreativeCodingStudy source](../design-studies/code-components/CreativeCodingStudy.tsx)
-remains unchanged. A fresh reload and 31,799 native-state assertions verified
+remained unchanged during that material revision. A fresh reload and 31,799 native-state assertions verified
 the new placements. All four new modes showed moving frames and pause/resume in
 actual Preview; their reference-card artwork rendered, with Spectral
 editor-canvas motion also measured. At that stage the saved inventory was eight live studies and
@@ -62,6 +62,14 @@ editor-canvas motion was measured for LC-09, LC-13 and LC-20. The earlier
 checks do not expand the source-review evidence below or establish exact source
 algorithms or full-clip fidelity. No actual Framer export image was inspected,
 and nothing was published.
+
+A later loading recovery updates resource management in all five component
+files, retaining their shader formulas, controls and placements. They share a
+two-context budget, keep code-generated 2D overview artwork, and admit one live
+editor study or two Preview studies per window. The
+[code-study handoff](../design-studies/code-components/README.md) records the
+current saved-state, motion and resource checks. This does not change the
+source-review evidence below.
 
 ## References
 

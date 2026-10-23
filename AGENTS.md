@@ -53,7 +53,11 @@
   explicit Canvas motion opt-in restricted to `RenderTarget.canvas`; distinguish
   that target from static exports with `useIsStaticRenderer`. Budget canvas
   motion at 12 fps and 150,000 pixels, and verify it separately from Preview
-  animation. Preserve the existing native studies alongside these code-based
+  animation. Also enforce the shared per-window budget: at most two WebGL
+  contexts including initialization, with one live editor study or two live
+  Preview studies. Preserve generated overview artwork in 2D, warm stills
+  serially, size buffers from transformed screen bounds, and test all 60 mixed
+  placements before changing resource admission. Preserve the existing native studies alongside these code-based
   experiments.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when

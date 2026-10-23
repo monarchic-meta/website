@@ -130,11 +130,11 @@ The material revision adds four independently authored source-led studies:
 These modes live in a separate
 [MaterialCodingStudy component](design-studies/code-components/MaterialCodingStudy.tsx). Its Scale,
 Focus, Refraction and Grain controls complement the shared motion and palette
-controls. Near-viewport canvas mounting uses a 120px margin, preserves animation
-phase, and releases the WebGL context after detachment; export and thumbnail
-rendering bypass the visibility gate. The existing
+controls. During that revision, near-viewport canvas mounting used a 120px
+margin, preserved animation phase, and released the WebGL context after
+detachment; export and thumbnail rendering bypassed the visibility gate. The existing
 [CreativeCodingStudy source](design-studies/code-components/CreativeCodingStudy.tsx)
-and its twelve placements remain unchanged. The material modes passed local GPU
+and its twelve placements remained unchanged during that revision. The material modes passed local GPU
 compilation and visual review. Actual Preview checks confirmed moving frames
 and pause/resume for all four; all four reference-card artworks rendered, and
 Spectral editor-canvas motion was measured.
@@ -151,7 +151,13 @@ posting account and credited-original support link remain distinct. The twelve
 new modes passed local GPU compilation and visible time-sample checks. Their
 saved placements and exact controls are reload-verified, and all twelve rendered,
 changed between aligned frames and paused/resumed in actual Framer Preview.
-The earlier eight study records and both earlier component sources are preserved.
+The earlier eight study records and both earlier component sources were preserved
+during that completion round. A later loading recovery updates all five resource
+runtimes while retaining their shader formulas, property controls and placements.
+They now share a two-context budget per window, keep generated 2D overview art,
+and admit one live editor study or two Preview studies. The
+[code-study handoff](design-studies/code-components/README.md) records the current
+recovery evidence and limits.
 
 ## Original-composition clusters
 
@@ -296,7 +302,7 @@ All twelve new studies rendered and moved between aligned Preview frames, and
 each Pause/Play transition was verified. Representative editor-canvas motion
 was measured for LC-09, LC-13 and LC-20; the final technical UI view was checked
 after removing its duplicate overlaid title. CC-002's credited-original support
-link and source-led note remain intact. Current proof is retained in
+link and source-led note remain intact. Proof for that completion round is retained in
 `live-complete-creative-coding`; the earlier 31,799-check and 615-check proofs
 are historical. The lab keeps its draft route. Source-clip and physical fidelity
 remain unverified. No actual Framer export image was inspected, and nothing

@@ -35,13 +35,18 @@ in the code-study handoff. Canvas motion is enabled on those placements.
 Motion runs in the draft lab's Preview. **Canvas motion** is an explicit opt-in
 that defaults off, capped at 12 fps and 150,000 pixels. Preview uses up to 30 fps
 and 650,000 pixels. Exports and thumbnails remain deterministic still frames.
+All five files now share a two-context budget within their browser window, with
+one live editor study or two live Preview studies. Overview cards retain
+code-generated 2D stills, warmed serially at up to 24,000 pixels. Close-up,
+hover, focus and Play select which study receives motion. See the
+[code-study handoff](../code-components/README.md) for resource recovery checks.
 
 The saved material revision adds LC-05–08 from CC-004's capsules, CC-008's glass UI,
 CC-013's triangle lattice and CC-016's spectral ring. At that stage its saved inventory was
 **eight live studies, 24 code instances, 20 native studies, 18 originals and
 77 source entries**: 28 source studies, with twelve source-led adaptations,
 four static native and eight live. [CreativeCodingStudy](../code-components/CreativeCodingStudy.tsx)
-retains LC-01–04 unchanged; [MaterialCodingStudy](../code-components/MaterialCodingStudy.tsx)
+retained LC-01–04 unchanged during that revision; [MaterialCodingStudy](../code-components/MaterialCodingStudy.tsx)
 adds the new modes. It creates its glass UI
 texture locally and mounts its canvas only near the viewport, preserving phase
 and releasing the context when the canvas detaches. All four new modes were
@@ -69,7 +74,9 @@ earlier eight studies' cards and 24 instances. All twelve new studies showed
 actual Preview motion and Pause/Play transitions. Editor-canvas motion was
 measured for LC-09, LC-13 and LC-20. The earlier 31,799-check and 615-check proofs
 retain their historical scope. See the [code-study handoff](../code-components/README.md)
-for current evidence and limits; no actual Framer export image was inspected.
+for current evidence and limits. The later loading recovery changes all five
+resource runtimes while retaining the shader formulas, controls and placements;
+the earlier proof counts above describe their respective authoring rounds.
 
 External work, recreations, and close adaptations of source compositions belong
 in Source inspiration, even when Codex made the recreation or adaptation. Credit
