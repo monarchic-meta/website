@@ -23,12 +23,25 @@
 - Consult the [design inspiration catalog](docs/design-inspiration.md) for
   curated visual references. Cite its stable reference IDs in Framer experiments
   and handoffs; references inform exploration rather than implementation specs.
+- Explore the owner's full mix of neo-brutalism, cyberpunk, digital, neo-Y2K,
+  dithering, and expressive Swiss composition. Swiss means type as image,
+  color, scale, cropping, and unexpected placement here; clean fonts alone do
+  not define the brief. Non-typographic geometry, materials, textures, and
+  effects are equally useful. Individual studies may explore different styles.
+- Include the whole Web & UI Design bookmark folder in the catalog. Keep
+  source coverage distinct from depth of media inspection, and expand brief
+  entries before assuming the owner's selected references are less useful.
 - Build new visual-element recreations primarily from native Framer frames,
   shapes, text, and named groups so their parts can be selected and edited.
   Inspect the source first, retain its source key, and record simplifications.
   Keep imported post images as comparison references; preserve explicit SVG
-  and bitmap asset studies as assets. Complex artwork such as paintings may
-  remain images when rebuilding it would lose the work's character.
+  and bitmap asset studies as assets. Selected external artwork can supply
+  atmosphere or material references; making new paintings or narrative scenery
+  is outside the current graphic-element brief. The owner removed the Art &
+  Visual Inspiration collection from the catalog and moodboard, while keeping
+  the X bookmarks intact. Preserve the remaining original and recreated work;
+  further pruning requires owner-selected examples. Expand Creative Coding with
+  shaders, vectors, glass, point meshes, motion references and tonal dithering.
 - Keep external work, recreations, and close adaptations credited within
   **Source inspiration**, including when Codex authors the recreation or
   adaptation. Reserve **Original compositions** for independently composed work.

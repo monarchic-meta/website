@@ -10,18 +10,21 @@
 - [WebInfo handoff](../webinfo/README.md): interview artifacts and reuse instructions.
 - [Framer prototyping](framer-prototyping.md): visual workspace, MCP connection,
   and manual handoff to and from the implemented site.
-- [Design inspiration](design-inspiration.md): curated neo-brutalist, Swiss,
-  and digital design references from X bookmarks, with stable IDs for prototypes.
+- [Design inspiration](design-inspiration.md): neo-brutalist, cyberpunk,
+  digital, neo-Y2K, expressive Swiss and dither references from X bookmarks.
 - [Framer homepage explorations](framer-prototypes.md): editable visual directions,
   project nodes, and manual implementation handoff notes.
 - [Framer visual round two](framer-visual-round-two.md): additional homepage
   directions and original graphic studies.
 - [Framer moodboard](framer-moodboard.md): a freeform visual kitchen with separate
-  Source inspiration and Original compositions sections, 68 catalog source URLs,
-  24 MB asset studies, 16 native source-led RE studies, and a playground.
+  Source inspiration and Original compositions sections, attributed catalog
+  references, editable source-led recreations, 18 original asset studies and a
+  playground.
 - [Native source recreations](design-studies/recreations/README.md): editable
   Framer construction recipes, source credits, simplification notes, and a
   [saved-node manifest](design-studies/recreations/manifest.json).
+- [Visual-language brief](design-inspiration/visual-language.md): the owner's
+  complementary style directions and concrete elements to explore next.
 - [Release smoke runbook](release-smoke-runbook.md): live release procedures and
   dated evidence; check exact revisions before using historical results.
 

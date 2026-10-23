@@ -4,6 +4,9 @@
 through three additional homepage directions and a separate artwork gallery.
 The [first three explorations](framer-prototypes.md) remain available. References
 resolve through the [design inspiration catalog](design-inspiration.md).
+ART identifiers below are historical credits for this dated exploration; the
+Art collection was later removed from the active catalog and moodboard. The
+existing page prototypes and this design record are preserved.
 
 These are visual experiments for the
 [Monarchic Framer project](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt),

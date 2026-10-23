@@ -17,7 +17,10 @@ directions and a separate gallery of original graphic studies.
 | 02 Signal / Field | [Draft page](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=WJkUf4nHH), `/prototypes/signal-field` | [Desktop 1440px](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=zFHratdNU); [Phone 390px](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=EF5JEBjPn) | WEB-003, WEB-005, WEB-006, GRA-007, GRA-008, ART-001 |
 | 03 Research / Edition | [Draft page](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=FNWmJvk0a), `/prototypes/research-edition` | [Desktop 1440px](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ORSC5FXWx); [Phone 390px](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=MVQSVCzZe) | GRA-001, GRA-002, GRA-007, SITE-002, WEB-010, WEB-011 |
 
-Reference IDs resolve through the [design inspiration catalog](design-inspiration.md).
+Active reference IDs resolve through the [design inspiration catalog](design-inspiration.md).
+ART identifiers in this dated exploration are historical credits: that
+collection was later removed from the active catalog and moodboard. These
+existing page prototypes are preserved.
 
 ### 01 System / Spec
 

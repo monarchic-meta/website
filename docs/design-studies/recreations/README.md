@@ -1,6 +1,6 @@
 # Native source recreations
 
-Sixteen source-led graphic studies for the [Framer visual kitchen](../../framer-moodboard.md).
+Source-led graphic studies for the [Framer visual kitchen](../../framer-moodboard.md).
 They recreate selected observed motifs as native Framer frames and text on
 1600 × 1000 artboards. Their named parts can be selected, moved, recolored,
 resized, or regrouped individually. They contain no embedded SVG or raster
@@ -8,11 +8,20 @@ artwork. All 16 saved studies were confirmed in the Framer editor and remained
 after a reload. The [manifest](manifest.json) records their saved Framer node IDs
 and native layer counts.
 
+Four additional Creative Coding authoring recipes, RE-17–20, are prepared.
+They are **source-led adaptations** with independently constructed geometry,
+clearly credited to the references they study. They use static native layers;
+they do not reproduce source animation, shader rendering or live interactions.
+Their Framer placement requires saved-editor verification before it is recorded
+as complete.
+
 These **RE-01–16** studies belong in **Source inspiration**, alongside the
 comparison library. They are recreations of credited source work, not Monarchic
-original compositions or approved branding. They add to the earlier **24 MB
-asset studies**: 23 independent compositions and the MB-23 source-led adaptation.
-Those asset files and the existing website prototypes are preserved.
+original compositions or approved branding. They sit alongside **18 independent
+MB asset studies**. MB-19–24, including the source-led painting adaptation, have
+been removed from the retained asset set at the owner's request. The 18 remaining
+MB assets and all 16 RE recipes retain their existing artwork and identifiers;
+the existing website prototypes are preserved.
 
 ## Recipes and credits
 
@@ -39,6 +48,10 @@ they do not create new stable references.
 | [RE-14 Cobalt radial dither](re-14-cobalt-radial-dither.mjs) | [WEB-006](https://x.com/praveenisomer/status/2107433191036326234) / @praveenisomer | Radial pixel/bar cloud with coarse editable sampling |
 | [RE-15 Orange raster cubes](re-15-orange-raster-cubes.mjs) | [WEB-007](https://x.com/oguzyagizkara/status/2100171221493027080) / @oguzyagizkara | Three sliced cubes, connectors, coordinate tags |
 | [RE-16 Satto circle S](re-16-satto-circle-s.mjs) | [WEB-012](https://x.com/Satto_studio/status/2094148642168832020) / @Satto_studio | Fifteen-circle S, scattered source text clusters |
+| [RE-17 Ordered tonal field](re-17-ordered-tonal-pixel-field.mjs) | [CC-003](https://x.com/GaloAndStuff/status/2094074141557117090) / @GaloAndStuff | Three-color 96 × 48 Bayer field, editable row runs, palette swatches |
+| [RE-18 White point canopy](re-18-white-point-canopy.mjs) | [CC-001](https://x.com/yuruyurau/status/2093710258120331463) / @yuruyurau | Twelve point rings, ten trailing strands, native circles |
+| [RE-19 Technical keycaps](re-19-technical-keycap-connections.mjs) | [CC-012](https://x.com/icanvardar/status/2094171308795826332) / @icanvardar | Cards, keycap faces, rectilinear connections, terminal graphic |
+| [RE-20 Coronal bands](re-20-coronal-native-bands.mjs) | [CC-005](https://x.com/XorDev/status/2093488121392300374) / @XorDev | Cyan/magenta tangential bands, peripheral filaments, light pixels |
 
 ## Edit and hand off
 
@@ -48,7 +61,9 @@ duplicates. Source wording, identities, and metrics inside the artwork belong
 to the reference; they do not become Monarchic product claims.
 
 Each `.mjs` exports its ID, name, source key, background, simplification notes,
-and `build(h)` construction. The notes identify reduced mesh or dot density,
+and `build(h)` construction. New source adaptations also export their explicit
+`classification`; the compiler retains the recreation default for RE-01–16.
+The notes identify reduced mesh or dot density,
 font substitutions, static motion frames, omitted textures, and intentional
 cropping. [recipe-tools.mjs](recipe-tools.mjs) compiles the manual authoring
 recipes into native Framer layer descriptions.

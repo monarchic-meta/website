@@ -75,7 +75,6 @@
     "width": 200,
     "height": 700,
     "refs": [
-      "ART-003",
       "GRA-010",
       "GRA-011"
     ],
@@ -84,7 +83,16 @@
     "classification": "original-composition",
     "section": "Original compositions",
     "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
+    "framerSection": "rI0h8QiJa",
+    "historicalSourceRefs": [
+      {
+        "ref": "ART-003",
+        "url": "https://x.com/sodiumdream/status/2093798162981118023",
+        "postingAccount": "@sodiumdream",
+        "retiredFrom": "Art & Visual Inspiration",
+        "retiredDate": "2026-10-22"
+      }
+    ]
   },
   {
     "id": "MB-06",
@@ -93,7 +101,6 @@
     "width": 620,
     "height": 440,
     "refs": [
-      "ART-003",
       "GRA-012"
     ],
     "framerGroup": "m9mxZYUDL",
@@ -101,7 +108,16 @@
     "classification": "original-composition",
     "section": "Original compositions",
     "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
+    "framerSection": "rI0h8QiJa",
+    "historicalSourceRefs": [
+      {
+        "ref": "ART-003",
+        "url": "https://x.com/sodiumdream/status/2093798162981118023",
+        "postingAccount": "@sodiumdream",
+        "retiredFrom": "Art & Visual Inspiration",
+        "retiredDate": "2026-10-22"
+      }
+    ]
   },
   {
     "id": "MB-07",
@@ -301,109 +317,6 @@
     ],
     "framerGroup": "JIuDrV9_4",
     "framerArtwork": "sR9YBH7Z3",
-    "classification": "original-composition",
-    "section": "Original compositions",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
-  },
-  {
-    "id": "MB-19",
-    "name": "Infrastructure grove",
-    "file": "mb-19-infrastructure-grove.svg",
-    "width": 700,
-    "height": 420,
-    "refs": [
-      "ART-001"
-    ],
-    "framerGroup": "NriLZYvuk",
-    "framerArtwork": "vZ4V7culK",
-    "classification": "original-composition",
-    "section": "Original compositions",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
-  },
-  {
-    "id": "MB-20",
-    "name": "Suspended mass",
-    "file": "mb-20-suspended-mass.svg",
-    "width": 600,
-    "height": 600,
-    "refs": [
-      "ART-004",
-      "WEB-003"
-    ],
-    "framerGroup": "fzDynlEkJ",
-    "framerArtwork": "XPslnIJRw",
-    "classification": "original-composition",
-    "section": "Original compositions",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
-  },
-  {
-    "id": "MB-21",
-    "name": "Cutaway capsule",
-    "file": "mb-21-cutaway-capsule.svg",
-    "width": 520,
-    "height": 420,
-    "refs": [
-      "ART-002",
-      "GRA-005"
-    ],
-    "framerGroup": "Yn1tdRDid",
-    "framerArtwork": "Y09gmbdGc",
-    "classification": "original-composition",
-    "section": "Original compositions",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
-  },
-  {
-    "id": "MB-22",
-    "name": "Warm windows",
-    "file": "mb-22-warm-windows.svg",
-    "width": 1000,
-    "height": 260,
-    "refs": [
-      "ART-006"
-    ],
-    "framerGroup": "jqzXBolI3",
-    "framerArtwork": "QExV0c2sy",
-    "classification": "original-composition",
-    "section": "Original compositions",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "rI0h8QiJa"
-  },
-  {
-    "id": "MB-23",
-    "name": "Blue nocturne",
-    "file": "mb-23-blue-nocturne.png",
-    "width": 1080,
-    "height": 1456,
-    "refs": [
-      "ART-005"
-    ],
-    "medium": "imagegen bitmap; opaque",
-    "framerGroup": "c_MbcV3E6",
-    "framerArtwork": "QUQusSVnc",
-    "classification": "source-led-adaptation",
-    "section": "Source inspiration",
-    "subsection": "Made here / source-led adaptation",
-    "provenance": "AI-assisted adaptation made here, influenced by ART-005; the warm-disk and reflection composition closely follows that source. The generated bitmap is not attributed to the external artist.",
-    "framerSectionPlacementStatus": "saved",
-    "framerSection": "VvoNblwjH",
-    "framerParent": "o8W8wrkva"
-  },
-  {
-    "id": "MB-24",
-    "name": "Engraved horizon",
-    "file": "mb-24-engraved-horizon.svg",
-    "width": 1100,
-    "height": 240,
-    "refs": [
-      "WEB-009",
-      "ART-001"
-    ],
-    "framerGroup": "UU1Fryc_q",
-    "framerArtwork": "uJ2orrC6D",
     "classification": "original-composition",
     "section": "Original compositions",
     "framerSectionPlacementStatus": "saved",

@@ -1,36 +1,41 @@
 {
   "inventoryDate": "2026-10-22",
-  "scope": "All public external links in the four design inspiration catalog documents, including secondary posts, quoted originals, further reading, other sampled Art directions, site destinations and supporting attribution/verification links.",
-  "keyPolicy": "primaryCatalogId preserves existing stable catalog IDs. A suffix distinguishes multiple source URLs under one stable ID. WEB-SECONDARY, GRA-READ, ART-OTHER and SITE-VERIFY keys are inventory-only, not new stable catalog references.",
+  "scope": "All public external source links in the Web and UI, Graphic Design, Creative Coding and Sites catalog documents. Includes 20 Creative Coding bookmarks plus one credited-original support link, quoted originals, further reading, site destinations and supporting attribution/verification links. Art & Visual Inspiration has been removed from the catalog.",
+  "keyPolicy": "Retain existing non-Art stable catalog IDs, exact source URLs, source keys and saved Framer mappings. Legacy WEB-SECONDARY-01 through -04 keys map to full WEB-014 through WEB-017 entries. ART-001 through ART-006 are retired and must not be reassigned; no Art source records are retained. CC-001 through CC-020 follow the reviewed bookmark order. CC-002-02 is a credited-original support URL grouped under CC-002, not a twenty-first bookmark. GRA-READ and SITE-VERIFY remain inventory-only resources.",
   "rightsAndAttribution": "These are externally authored inspiration references, distinct from Monarchic original compositions. Posting account is not assumed to establish original artwork authorship or a reuse license. This inventory supplies no downloaded media and no invented previews.",
   "summary": {
-    "stableCatalogEntries": 39,
-    "uniqueSourceURLs": 68,
-    "xPostURLs": 58,
+    "stableCatalogEntries": 57,
+    "uniqueSourceURLs": 77,
+    "xPostURLs": 67,
     "otherPublicURLs": 10,
     "sourceURLsByCategory": {
       "Web & UI Design": 19,
       "Graphic Design": 27,
-      "Art & Visual Inspiration": 12,
+      "Creative Coding": 21,
       "Sites": 10
     },
     "stableEntriesByCategory": {
-      "Web & UI Design": 13,
+      "Web & UI Design": 17,
       "Graphic Design": 13,
-      "Art & Visual Inspiration": 6,
+      "Creative Coding": 20,
       "Sites": 7
     },
-    "inventoryOnlySourceEntries": 14,
-    "observedPreviewImageURLs": 58,
+    "inventoryOnlySourceEntries": 4,
+    "creditedOriginalSupportEntries": 1,
+    "inventoryOrCreditedSupportEntries": 5,
+    "observedPreviewImageURLs": 66,
     "previewKinds": {
-      "still preview": 43,
-      "video poster": 15,
-      "link only": 10
+      "still preview": 31,
+      "video poster": 35,
+      "link only": 11
     },
-    "existingFramerReferenceGroups": 19,
+    "preservedCurrentFramerReferenceGroups": 56,
     "pendingNewFramerReferenceGroups": 0,
     "savedExpandedGalleryVerified": true,
-    "savedNewFramerReferenceGroups": 49
+    "savedNewFramerReferenceGroups": 21,
+    "currentOriginalCompositions": 18,
+    "currentSourceLedAdaptations": 0,
+    "savedCurrentFramerReferenceGroups": 77
   },
   "catalogEntries": [
     {
@@ -137,6 +142,38 @@
       "sourceKeys": [
         "WEB-013",
         "WEB-013-02"
+      ]
+    },
+    {
+      "catalogId": "WEB-014",
+      "title": "ZERO / Stasis",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-SECONDARY-01"
+      ]
+    },
+    {
+      "catalogId": "WEB-015",
+      "title": "BREATHE",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-SECONDARY-02"
+      ]
+    },
+    {
+      "catalogId": "WEB-016",
+      "title": "Illustrated train / viaduct footer",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-SECONDARY-03"
+      ]
+    },
+    {
+      "catalogId": "WEB-017",
+      "title": "Astra / page boards",
+      "category": "Web & UI Design",
+      "sourceKeys": [
+        "WEB-SECONDARY-04"
       ]
     },
     {
@@ -255,51 +292,164 @@
       ]
     },
     {
-      "catalogId": "ART-001",
-      "title": "Schematic landscape",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-001",
+      "title": "White point canopy",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-001"
+        "CC-001"
       ]
     },
     {
-      "catalogId": "ART-002",
-      "title": "Annotated engine render",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-002",
+      "title": "Luminous butterfly / afterimages",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-002"
+        "CC-002",
+        "CC-002-02"
       ]
     },
     {
-      "catalogId": "ART-003",
-      "title": "Physical object with digital overlays",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-003",
+      "title": "Pink / yellow pixel-stipple world",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-003"
+        "CC-003"
       ]
     },
     {
-      "catalogId": "ART-004",
-      "title": "Complex system with a human scale cue",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-004",
+      "title": "Black capsules / optical depth",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-004"
+        "CC-004"
       ]
     },
     {
-      "catalogId": "ART-005",
-      "title": "Warm light inside a cool field",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-005",
+      "title": "Coronal",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-005"
+        "CC-005"
       ]
     },
     {
-      "catalogId": "ART-006",
-      "title": "Warm architectural rhythm",
-      "category": "Art & Visual Inspiration",
+      "catalogId": "CC-006",
+      "title": "Electric ice-blue radial form",
+      "category": "Creative Coding",
       "sourceKeys": [
-        "ART-006"
+        "CC-006"
+      ]
+    },
+    {
+      "catalogId": "CC-007",
+      "title": "Folded white point mesh",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-007"
+      ]
+    },
+    {
+      "catalogId": "CC-008",
+      "title": "Glass refraction over UI",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-008"
+      ]
+    },
+    {
+      "catalogId": "CC-009",
+      "title": "Glass pixel glyph / cube grid",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-009"
+      ]
+    },
+    {
+      "catalogId": "CC-010",
+      "title": "Wave",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-010"
+      ]
+    },
+    {
+      "catalogId": "CC-011",
+      "title": "Grainy multicolor loops",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-011"
+      ]
+    },
+    {
+      "catalogId": "CC-012",
+      "title": "Technical UI / keycap connections",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-012"
+      ]
+    },
+    {
+      "catalogId": "CC-013",
+      "title": "Recursive white triangle lattice",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-013"
+      ]
+    },
+    {
+      "catalogId": "CC-014",
+      "title": "Curling white point gesture",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-014"
+      ]
+    },
+    {
+      "catalogId": "CC-015",
+      "title": "Connected mesh loops",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-015"
+      ]
+    },
+    {
+      "catalogId": "CC-016",
+      "title": "Spectral Donut",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-016"
+      ]
+    },
+    {
+      "catalogId": "CC-017",
+      "title": "Icy-blue ridge / flow",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-017"
+      ]
+    },
+    {
+      "catalogId": "CC-018",
+      "title": "Warm fractal corridor",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-018"
+      ]
+    },
+    {
+      "catalogId": "CC-019",
+      "title": "Luminous line / glyph trails",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-019"
+      ]
+    },
+    {
+      "catalogId": "CC-020",
+      "title": "Curved mesh feather",
+      "category": "Creative Coding",
+      "sourceKeys": [
+        "CC-020"
       ]
     },
     {
@@ -1416,168 +1566,6 @@
       "framerCaption": "Kfh_hUmiX"
     },
     {
-      "key": "ART-001",
-      "primaryCatalogId": "ART-001",
-      "catalogTitle": "Schematic landscape",
-      "title": "@DRUGONDRAGON",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/DRUGONDRAGON/status/2102733123540979945"
-      ],
-      "postingAccount": {
-        "handle": "@DRUGONDRAGON",
-        "displayNameFromCatalog": "龍"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "A still preview combines cream negative space, dark navy vertical infrastructure, tiny schematic marks, trees and human silhouettes, and sparse orange blocks.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HS5ooUOaQAABse0?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "oAJbzZqn1",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "DgApijqe2",
-      "framerCaption": "jzXrndY4H"
-    },
-    {
-      "key": "ART-002",
-      "primaryCatalogId": "ART-002",
-      "catalogTitle": "Annotated engine render",
-      "title": "@praveenisomer",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/praveenisomer/status/2095534787138113962"
-      ],
-      "postingAccount": {
-        "handle": "@praveenisomer",
-        "displayNameFromCatalog": "Praveen Kumar"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Visible still previews show a detailed gray engine cutaway with a warm orange interior, surrounded by thin callout lines and small labels on a light field.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HRTPa4Aa8AAql6c?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "aj8ShMNOX",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "c5LBGX6kU",
-      "framerCaption": "ov9ReZ243"
-    },
-    {
-      "key": "ART-003",
-      "primaryCatalogId": "ART-003",
-      "catalogTitle": "Physical object with digital overlays",
-      "title": "@sodiumdream",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/sodiumdream/status/2093798162981118023"
-      ],
-      "postingAccount": {
-        "handle": "@sodiumdream",
-        "displayNameFromCatalog": null
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "A still preview places a street-side machine/cabinet at night under cyan/pink illumination with fine colored interface or wireframe overlays.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ6qUKla8AALb3Z?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "iq0YJRXBg",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "WWgIMoICi",
-      "framerCaption": "LShXQjiOn"
-    },
-    {
-      "key": "ART-004",
-      "primaryCatalogId": "ART-004",
-      "catalogTitle": "Complex system with a human scale cue",
-      "title": "@beeple",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/beeple/status/2093911298241167481"
-      ],
-      "postingAccount": {
-        "handle": "@beeple",
-        "displayNameFromCatalog": "beeple"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "A still preview shows a dark, fragmented block-like mass with multicolored linear trails against blue, balanced by a tiny person and a small area of landscape.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ8Q1WyWgAAj0y8?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "QG5AhG3E5",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "q2GJtjgp6",
-      "framerCaption": "qpWAx5Utt"
-    },
-    {
-      "key": "ART-005",
-      "primaryCatalogId": "ART-005",
-      "catalogTitle": "Warm light inside a cool field",
-      "title": "@fraveris: The Night's Quiet Glow",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/fraveris/status/2094164761550246060"
-      ],
-      "postingAccount": {
-        "handle": "@fraveris",
-        "displayNameFromCatalog": "Francisco Ribeiro"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "A still preview uses thick, paint-like blue and cream textures, a warm moon/light, and a vertical reflection along a river through darker fields.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ_3Lg7WEAAa09Z?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "wftQWUY1Q",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "zGQ9Bitgc",
-      "framerCaption": "nvxlLJcHA"
-    },
-    {
-      "key": "ART-006",
-      "primaryCatalogId": "ART-006",
-      "catalogTitle": "Warm architectural rhythm",
-      "title": "@luusssso",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/luusssso/status/2094215703221961110"
-      ],
-      "postingAccount": {
-        "handle": "@luusssso",
-        "displayNameFromCatalog": "lusso"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Partial still-image previews show amber/orange interiors, repeated columns, layered openings, and a curved stair or balcony against a regular architectural rhythm.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HRAmFUKWQAAvGjm?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "gD6CmZJ_K",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "jqU5Tafjg",
-      "framerCaption": "feA0vOv99"
-    },
-    {
       "key": "SITE-001",
       "primaryCatalogId": "SITE-001",
       "catalogTitle": "CROX",
@@ -1777,8 +1765,8 @@
     },
     {
       "key": "WEB-SECONDARY-01",
-      "primaryCatalogId": null,
-      "catalogTitle": "Secondary references",
+      "primaryCatalogId": "WEB-014",
+      "catalogTitle": "ZERO / Stasis",
       "title": "ZERO / Stasis",
       "category": "Web & UI Design",
       "sourceURLs": [
@@ -1804,8 +1792,8 @@
     },
     {
       "key": "WEB-SECONDARY-02",
-      "primaryCatalogId": null,
-      "catalogTitle": "Secondary references",
+      "primaryCatalogId": "WEB-015",
+      "catalogTitle": "BREATHE",
       "title": "BREATHE",
       "category": "Web & UI Design",
       "sourceURLs": [
@@ -1831,8 +1819,8 @@
     },
     {
       "key": "WEB-SECONDARY-03",
-      "primaryCatalogId": null,
-      "catalogTitle": "Secondary references",
+      "primaryCatalogId": "WEB-016",
+      "catalogTitle": "Illustrated train / viaduct footer",
       "title": "illustrated footer",
       "category": "Web & UI Design",
       "sourceURLs": [
@@ -1858,8 +1846,8 @@
     },
     {
       "key": "WEB-SECONDARY-04",
-      "primaryCatalogId": null,
-      "catalogTitle": "Secondary references",
+      "primaryCatalogId": "WEB-017",
+      "catalogTitle": "Astra / page boards",
       "title": "Astra / page boards",
       "category": "Web & UI Design",
       "sourceURLs": [
@@ -1871,7 +1859,7 @@
       },
       "catalogAttribution": null,
       "catalogPath": "docs/design-inspiration/web-ui.md",
-      "observedTraits": "Dark/orange and light full-page marketing layouts; section pacing. Evidence / limitation: Partial multi-image previews; lower priority than the stronger grid references.",
+      "observedTraits": "Dark/orange and light full-page marketing layouts; section pacing. Evidence / limitation: Partial multi-image previews; further detail is recorded in the full catalog entry.",
       "sourceRole": "visual-source",
       "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
       "previewImageURLs": [
@@ -1965,168 +1953,6 @@
       "framerCaption": "dNd0M9hFS"
     },
     {
-      "key": "ART-OTHER-01",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "mimi's luminous cloud scenes",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/mimi_aiart/status/2094258888677929310"
-      ],
-      "postingAccount": {
-        "handle": "@mimi_aiart",
-        "displayNameFromCatalog": "mimi"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Luminous cloud scenes; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HRAswVgaIAA6JVE?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "wswLc9qb8",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "TdD6xunVG",
-      "framerCaption": "c50nBte9_"
-    },
-    {
-      "key": "ART-OTHER-02",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "classical coastal structures",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/NEXUS_TO_NOVA/status/2094058896138584492"
-      ],
-      "postingAccount": {
-        "handle": "@NEXUS_TO_NOVA",
-        "displayNameFromCatalog": "NΞXUS"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Classical coastal structures; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ-XW6JXEAAWRz2?format=jpg&name=900x900"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "aBxwmVQxl",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "JYmlOuphu",
-      "framerCaption": "lXYHfzjbL"
-    },
-    {
-      "key": "ART-OTHER-03",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "pale circular megastructure",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/NEXUS_TO_NOVA/status/2093415375828316627"
-      ],
-      "postingAccount": {
-        "handle": "@NEXUS_TO_NOVA",
-        "displayNameFromCatalog": "NΞXUS"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Pale circular megastructure; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ1OGypWsAAb4_N?format=jpg&name=900x900"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "ixfrvpWXJ",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "vE52xR4p0",
-      "framerCaption": "duI6uJipy"
-    },
-    {
-      "key": "ART-OTHER-04",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "Max's monumental architectural spaces",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/MaxVOAO/status/2094174507854332004"
-      ],
-      "postingAccount": {
-        "handle": "@MaxVOAO",
-        "displayNameFromCatalog": "Max"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Monumental architectural spaces; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HRAAmlwXEAAjIid?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "O1H530C0O",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "eS0DWjsPC",
-      "framerCaption": "NThS5_GJS"
-    },
-    {
-      "key": "ART-OTHER-05",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "Archireum's surreal ocean/fire images",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/archi_reum/status/2094051281081974914"
-      ],
-      "postingAccount": {
-        "handle": "@archi_reum",
-        "displayNameFromCatalog": "Archireum"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Surreal ocean/fire images; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HQ-QirLX0AA2-8y?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "XIBn3Q1Xf",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "S0V9pEAhQ",
-      "framerCaption": "rXuCfKEFS"
-    },
-    {
-      "key": "ART-OTHER-06",
-      "primaryCatalogId": null,
-      "catalogTitle": "Other sampled directions",
-      "title": "Titan's Star-Birthing Nebulae",
-      "category": "Art & Visual Inspiration",
-      "sourceURLs": [
-        "https://x.com/TitanLumen/status/2094186660825116968"
-      ],
-      "postingAccount": {
-        "handle": "@TitanLumen",
-        "displayNameFromCatalog": "Titan"
-      },
-      "catalogAttribution": null,
-      "catalogPath": "docs/design-inspiration/art.md",
-      "observedTraits": "Star-Birthing Nebulae; visible preview offers atmosphere and scale. Galleries only partially visible; no production method or asset rights inferred.",
-      "sourceRole": "visual-source",
-      "evidence": "Source image/video-poster or destination link observed; saved in Framer. A preview does not establish full-gallery, complete-video, live-site or authorship review.",
-      "previewImageURLs": [
-        "https://pbs.twimg.com/media/HRALVMQXMAAmACF?format=jpg&name=small"
-      ],
-      "displayKind": "still preview",
-      "framerGroup": "JNVdZ_X4t",
-      "framerPlacementStatus": "saved",
-      "framerPreview": "OVdVVuBmD",
-      "framerCaption": "HSZNhwN6v"
-    },
-    {
       "key": "SITE-VERIFY-01",
       "primaryCatalogId": null,
       "catalogTitle": "Verification notes",
@@ -2147,9 +1973,772 @@
       "framerPlacementStatus": "saved",
       "framerPreview": null,
       "framerCaption": "cGp1FgFfn"
+    },
+    {
+      "key": "CC-001",
+      "primaryCatalogId": "CC-001",
+      "catalogTitle": "White point canopy",
+      "title": "White point canopy",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/yuruyurau/status/2093710258120331463"
+      ],
+      "postingAccount": {
+        "handle": "@yuruyurau",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "White point-built canopy against black; Curved drape and density changes across a suspended surface",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093710206651998208/img/XsWESKHM_NnX1vvH.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "vNpuzKbDW",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "w2dgOi_AO",
+      "framerCaption": "YA5YmkfDU",
+      "tags": [
+        "point-cloud",
+        "mesh",
+        "monochrome",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Large abstract hero object",
+        "Point-mesh veil or section frame"
+      ]
+    },
+    {
+      "key": "CC-002",
+      "primaryCatalogId": "CC-002",
+      "catalogTitle": "Luminous butterfly / afterimages",
+      "title": "Luminous butterfly / afterimages",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/threejs/status/2093387984741761280"
+      ],
+      "postingAccount": {
+        "handle": "@threejs",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Bright pale butterfly-like silhouette on black; Nested temporal afterimages and small frame/time labels",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093373853988958209/img/Y9aCosOOnMzU4O9r.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "gBr7Ser2g",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "k62gliJS_",
+      "framerCaption": "qOcteT4V0",
+      "tags": [
+        "afterimage",
+        "light",
+        "temporal-layering",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Echoed reveal or transition study",
+        "Graphic trail around an original symbol"
+      ]
+    },
+    {
+      "key": "CC-002-02",
+      "primaryCatalogId": "CC-002",
+      "catalogTitle": "Luminous butterfly / afterimages",
+      "title": "afterimage — credited original",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/i/status/2093373917218103449"
+      ],
+      "postingAccount": null,
+      "catalogAttribution": "afterimage (visible credited display name; original @handle not independently verified)",
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Credited original-source link shown with CC-002; display name afterimage, original @handle not independently verified.",
+      "sourceRole": "credited-original-support",
+      "evidence": "Public original-source credit shown with CC-002 media, retained as a link only. The visible credited display name is afterimage; original @handle and full authorship were not independently verified. This is not an additional bookmark or separately reviewed media.",
+      "previewImageURLs": [],
+      "displayKind": "link only",
+      "framerGroup": "CtuGwHdeB",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": null,
+      "framerCaption": "CtuGwHdeB",
+      "creditedOriginalFor": "CC-002"
+    },
+    {
+      "key": "CC-003",
+      "primaryCatalogId": "CC-003",
+      "catalogTitle": "Pink / yellow pixel-stipple world",
+      "title": "Pink / yellow pixel-stipple world",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/GaloAndStuff/status/2094074141557117090"
+      ],
+      "postingAccount": {
+        "handle": "@GaloAndStuff",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Pink, yellow and blue-gray limited palette; Regular pixel-stipple tonal distribution across curving surfaces",
+      "sourceRole": "visual-source",
+      "evidence": "Visible folder preview and opened post-detail sampled frame reviewed on 2026-10-22. The limited palette and regular tonal stipple were visible; the exact algorithm, full clip, source-code execution, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/tweet_video_thumb/HQ-lJKrXQAEsDB6.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "dQKsZ_Wpf",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "Q9YbOdr6e",
+      "framerCaption": "uoUzoMRaG",
+      "tags": [
+        "dither",
+        "limited-palette",
+        "pixel-stipple",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Actual tonal-dither studies on original abstract forms",
+        "Limited-palette field, object surface or UI backdrop"
+      ]
+    },
+    {
+      "key": "CC-004",
+      "primaryCatalogId": "CC-004",
+      "catalogTitle": "Black capsules / optical depth",
+      "title": "Black capsules / optical depth",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/kellymilligannz/status/2095011696180171077"
+      ],
+      "postingAccount": {
+        "handle": "@kellymilligannz",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Overlapping dark capsule-like forms; Soft focus and depth-of-field blur against a pale gray-green field",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2095011661589704704/img/sQ3xFKRgfMbH7jD4.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "mkcKe9nKH",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "J_Zl0jD67",
+      "framerCaption": "s_ZIouJ07",
+      "tags": [
+        "material",
+        "depth-of-field",
+        "capsules",
+        "neo-y2k"
+      ],
+      "possibleApplications": [
+        "Dark material-led hero object",
+        "Overlapping graphic layers with focus contrast"
+      ]
+    },
+    {
+      "key": "CC-005",
+      "primaryCatalogId": "CC-005",
+      "catalogTitle": "Coronal",
+      "title": "Coronal",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/XorDev/status/2093488121392300374"
+      ],
+      "postingAccount": {
+        "handle": "@XorDev",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Neon cyan/magenta ring-like form; Luminous irregular edge and strong black negative space",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093488031047012352/img/BXRbY1fVCR7C7rtq.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "vLDEOerxD",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "D5tCETGa7",
+      "framerCaption": "xT_h5fmRL",
+      "tags": [
+        "neon",
+        "ring",
+        "cyberpunk",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Luminous identity surround",
+        "Neon object, hero graphic or state motif"
+      ]
+    },
+    {
+      "key": "CC-006",
+      "primaryCatalogId": "CC-006",
+      "catalogTitle": "Electric ice-blue radial form",
+      "title": "Electric ice-blue radial form",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/YoheiNishitsuji/status/2106013834540732704"
+      ],
+      "postingAccount": {
+        "handle": "@YoheiNishitsuji",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Icy electric-blue radial light; Layered shader-like ridges radiating through darkness",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2095104920676659200/img/GeVtzM4jDSN75WA3.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "rv0E8uk4W",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "FTBX9o_yL",
+      "framerCaption": "eTmTjVGB_",
+      "tags": [
+        "radial",
+        "light",
+        "cyberpunk",
+        "digital"
+      ],
+      "possibleApplications": [
+        "High-energy section opener",
+        "Radial graphic field or luminous object"
+      ]
+    },
+    {
+      "key": "CC-007",
+      "primaryCatalogId": "CC-007",
+      "catalogTitle": "Folded white point mesh",
+      "title": "Folded white point mesh",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/yuruyurau/status/2093711731084415124"
+      ],
+      "postingAccount": {
+        "handle": "@yuruyurau",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Folded white point-built surface on black; Overlapping contours and dense-to-open mesh regions",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093711688176656384/img/FYXndX8wtln2obXa.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "adBMR53g2",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "IVYDdbECk",
+      "framerCaption": "G7OCLxf9v",
+      "tags": [
+        "point-cloud",
+        "fold",
+        "mesh",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Folded-mesh identity graphic",
+        "Abstract divider or hero object"
+      ]
+    },
+    {
+      "key": "CC-008",
+      "primaryCatalogId": "CC-008",
+      "catalogTitle": "Glass refraction over UI",
+      "title": "Glass refraction over UI",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/AlbiaHossain/status/2093330866143662498"
+      ],
+      "postingAccount": {
+        "handle": "@AlbiaHossain",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Transparent/refractive form layered over a dark UI panel; Visible distortion of underlying interface content",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2050710586103844864/img/PqnnjlUxBr5gqDku.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "RdWTGpcik",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "ccFMZNcgk",
+      "framerCaption": "cUmFw1HkQ",
+      "tags": [
+        "glass",
+        "refraction",
+        "ui-layer",
+        "neo-y2k"
+      ],
+      "possibleApplications": [
+        "Glass-overlay material experiment",
+        "Distorted decorative panel or product-preview treatment"
+      ]
+    },
+    {
+      "key": "CC-009",
+      "primaryCatalogId": "CC-009",
+      "catalogTitle": "Glass pixel glyph / cube grid",
+      "title": "Glass pixel glyph / cube grid",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/dnatsuuu/status/2093175907867656302"
+      ],
+      "postingAccount": {
+        "handle": "@dnatsuuu",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Glass-like pixel glyphs or blocks; A three-by-three cube/grid arrangement",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093175815328628736/img/QkuRC0CSDOLdsPpM.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "fmACGwbFa",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "bWFLywTET",
+      "framerCaption": "amLBFCklI",
+      "tags": [
+        "glass",
+        "pixel-glyph",
+        "modular",
+        "neo-y2k"
+      ],
+      "possibleApplications": [
+        "Original translucent glyph family",
+        "Modular material tiles or identity object"
+      ]
+    },
+    {
+      "key": "CC-010",
+      "primaryCatalogId": "CC-010",
+      "catalogTitle": "Wave",
+      "title": "Wave",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/XorDev/status/2093074820661387392"
+      ],
+      "postingAccount": {
+        "handle": "@XorDev",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Luminous flowing ribbon on black; Continuous folded surface and bright edge contrast",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093074504968810496/img/lZnj5Y3BApWyqev7.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "CS7lNlz7V",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "L71SUEJp2",
+      "framerCaption": "jKgXiNhKQ",
+      "tags": [
+        "ribbon",
+        "light",
+        "flow",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Graphic ribbon or transition motif",
+        "Flowing frame around independent content"
+      ]
+    },
+    {
+      "key": "CC-011",
+      "primaryCatalogId": "CC-011",
+      "catalogTitle": "Grainy multicolor loops",
+      "title": "Grainy multicolor loops",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/zozuar/status/2094068054590190033"
+      ],
+      "postingAccount": {
+        "handle": "@zozuar",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Multicolored three-dimensional loops; Visible granular texture and overlapping curved forms",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2094067988756385792/img/KQ3Y524r81Hw7wZX.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "V62dGut29",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "vQ2T4KRCq",
+      "framerCaption": "vWWiEPap1",
+      "tags": [
+        "grain",
+        "loops",
+        "color",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Colorful material object family",
+        "Loop-based hero art or graphic frame"
+      ]
+    },
+    {
+      "key": "CC-012",
+      "primaryCatalogId": "CC-012",
+      "catalogTitle": "Technical UI / keycap connections",
+      "title": "Technical UI / keycap connections",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/icanvardar/status/2094171308795826332"
+      ],
+      "postingAccount": {
+        "handle": "@icanvardar",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Technical UI cards and keycap-like elements; Connection paths, terminal-style content and animated-SVG presentation",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2094171265128890368/img/7UBWwubsYnNXsDmB.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "BaWgieL03",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "vglbi2VW_",
+      "framerCaption": "bbVxHUIbd",
+      "tags": [
+        "technical-ui",
+        "keycaps",
+        "connection-paths",
+        "svg-reference"
+      ],
+      "possibleApplications": [
+        "Editable keycap/card/connector studies",
+        "Interface transition and signal-path motifs"
+      ]
+    },
+    {
+      "key": "CC-013",
+      "primaryCatalogId": "CC-013",
+      "catalogTitle": "Recursive white triangle lattice",
+      "title": "Recursive white triangle lattice",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/YoheiNishitsuji/status/2098603831944945735"
+      ],
+      "postingAccount": {
+        "handle": "@YoheiNishitsuji",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Repeated white triangular lattice; Nested/self-similar angular depth against black",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2098603474586152960/img/UWrOId-5_Ky4DbKu.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "WR7dBIwaB",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "jDtwcEC9G",
+      "framerCaption": "xGIBDVfOD",
+      "tags": [
+        "triangles",
+        "recursive-geometry",
+        "lattice",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Angular identity object",
+        "Geometric frame, tessellated backdrop or section divider"
+      ]
+    },
+    {
+      "key": "CC-014",
+      "primaryCatalogId": "CC-014",
+      "catalogTitle": "Curling white point gesture",
+      "title": "Curling white point gesture",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/yuruyurau/status/2098075684593893667"
+      ],
+      "postingAccount": {
+        "handle": "@yuruyurau",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "A curled white point-built gesture on black; Dense interior and thin trailing contours",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2098075618378416128/img/BW4ZSAuwA8DtRWgj.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "a_tgNqhTv",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "uvtfprShw",
+      "framerCaption": "GMYtH3hQg",
+      "tags": [
+        "point-cloud",
+        "gesture",
+        "curl",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Gestural hero object",
+        "Point-built punctuation or expressive graphic stroke"
+      ]
+    },
+    {
+      "key": "CC-015",
+      "primaryCatalogId": "CC-015",
+      "catalogTitle": "Connected mesh loops",
+      "title": "Connected mesh loops",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/yuruyurau/status/2098070701597192431"
+      ],
+      "postingAccount": {
+        "handle": "@yuruyurau",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "White looping point-mesh forms; Connected curves and overlap across a dark field",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2098070643216678912/img/XpJrN_vvqEBHQ1nE.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "CnBNTfrdA",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "IvIaokfWj",
+      "framerCaption": "jP1jUzQgC",
+      "tags": [
+        "point-cloud",
+        "loops",
+        "connections",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Looped graphic family",
+        "Abstract connection motif or mesh frame"
+      ]
+    },
+    {
+      "key": "CC-016",
+      "primaryCatalogId": "CC-016",
+      "catalogTitle": "Spectral Donut",
+      "title": "Spectral Donut",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/Jaenam97/status/2098418240900804947"
+      ],
+      "postingAccount": {
+        "handle": "@Jaenam97",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Grainy chrome-like ring; Spectral color along a reflective-looking curved surface",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2098418190120275970/img/9SKjh0lKNTcDZRBl.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "QR2xWvgNv",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "ZUrPQT2RU",
+      "framerCaption": "df5JOdPXX",
+      "tags": [
+        "chrome",
+        "spectral-color",
+        "grain",
+        "neo-y2k"
+      ],
+      "possibleApplications": [
+        "Reflective material study",
+        "Chromatic object, framed aperture or identity surround"
+      ]
+    },
+    {
+      "key": "CC-017",
+      "primaryCatalogId": "CC-017",
+      "catalogTitle": "Icy-blue ridge / flow",
+      "title": "Icy-blue ridge / flow",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/YoheiNishitsuji/status/2098403689421570237"
+      ],
+      "postingAccount": {
+        "handle": "@YoheiNishitsuji",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Icy-blue luminous ridge or flowing surface; Fine highlights separating layered dark and bright regions",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2093483611622379520/img/BslJ6bl19TJFcu7z.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "EdR0SImD8",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "qLzoFk7yh",
+      "framerCaption": "wDmnCaYns",
+      "tags": [
+        "light",
+        "ridge",
+        "flow",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Abstract light-field backdrop",
+        "Luminous surface or section-transition artwork"
+      ]
+    },
+    {
+      "key": "CC-018",
+      "primaryCatalogId": "CC-018",
+      "catalogTitle": "Warm fractal corridor",
+      "title": "Warm fractal corridor",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/XorDev/status/2099543044945023343"
+      ],
+      "postingAccount": {
+        "handle": "@XorDev",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Warm orange/red light in a repeated corridor-like form; Fractured or nested geometry receding into depth",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2099541537373769728/img/VGRE6ECWsNqothzr.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "CHaVfHwD2",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "j_s2aLapG",
+      "framerCaption": "tDCVmnzJP",
+      "tags": [
+        "fractal-like",
+        "warm-light",
+        "depth",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Deep geometric graphic or reveal",
+        "Warm signal tunnel or abstract frame"
+      ]
+    },
+    {
+      "key": "CC-019",
+      "primaryCatalogId": "CC-019",
+      "catalogTitle": "Luminous line / glyph trails",
+      "title": "Luminous line / glyph trails",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/tsumiki_room/status/2099891155282612462"
+      ],
+      "postingAccount": {
+        "handle": "@tsumiki_room",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "Bright line and glyph-like trails on black; Layered traces and luminous gestural paths",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2099891099271901184/img/xKsRvpkoh87GMVkH.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "ByQsjul_6",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "UAj06IvUI",
+      "framerCaption": "io80In2JR",
+      "tags": [
+        "glyph-like",
+        "trails",
+        "light",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Expressive trail or graphic stroke family",
+        "Signal-transition and mark-reveal studies"
+      ]
+    },
+    {
+      "key": "CC-020",
+      "primaryCatalogId": "CC-020",
+      "catalogTitle": "Curved mesh feather",
+      "title": "Curved mesh feather",
+      "category": "Creative Coding",
+      "sourceURLs": [
+        "https://x.com/yuruyurau/status/2100230050063024467"
+      ],
+      "postingAccount": {
+        "handle": "@yuruyurau",
+        "displayNameFromCatalog": null
+      },
+      "catalogAttribution": null,
+      "catalogPath": "docs/design-inspiration/creative-coding.md",
+      "observedTraits": "A curved white point-mesh feather-like form; Fine filaments and a long arcing silhouette on black",
+      "sourceRole": "visual-source",
+      "evidence": "Visible bookmark-feed preview or sampled video frame reviewed on 2026-10-22. Complete clip, source-code execution, algorithm choice, performance and live interactions were not verified.",
+      "previewImageURLs": [
+        "https://pbs.twimg.com/amplify_video_thumb/2100230007729860608/img/Nwj8gCN-ADyjaEjt.jpg"
+      ],
+      "displayKind": "video poster",
+      "framerGroup": "Eo7UTXRxQ",
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPreview": "HVXZTxFaM",
+      "framerCaption": "FTLJEHbM4",
+      "tags": [
+        "point-cloud",
+        "filaments",
+        "curve",
+        "digital"
+      ],
+      "possibleApplications": [
+        "Feather-like abstract graphic",
+        "Curved mesh frame, flourish or hero object"
+      ]
     }
   ],
-  "preparationStatus": "Saved in Framer; catalog URL coverage and source/original separation verified.",
+  "preparationStatus": "Current 77-reference gallery saved and verified in the native Framer editor after reload. Art collection and six scenic MB studies removed; 18 originals and 16 earlier native studies preserved. Four additional Creative Coding native studies have prepared recipes and a pending import; their saved placement is not covered by this gallery verification.",
   "designPage": "uj_I7x6To",
   "sourceSection": {
     "label": "Source inspiration",
@@ -2159,18 +2748,10 @@
   "originalSection": {
     "label": "Original compositions",
     "framerGroup": "rI0h8QiJa",
-    "independentStudies": 23,
-    "sectionLabelStatus": "saved"
+    "independentStudies": 18,
+    "sectionLabelStatus": "18-study guide saved and editor-reload verified"
   },
-  "sourceLedAdaptation": {
-    "study": "MB-23",
-    "sourceRef": "ART-005",
-    "label": "Made here / source-led adaptation",
-    "framerGroup": "c_MbcV3E6",
-    "framerTargetParent": "o8W8wrkva",
-    "placementStatus": "saved",
-    "authorshipNote": "AI-assisted adaptation made here; do not attribute the generated bitmap to the external artist."
-  },
+  "sourceLedAdaptation": null,
   "sourceCategories": [
     {
       "category": "Web & UI Design",
@@ -2235,24 +2816,33 @@
       "placementStatus": "saved"
     },
     {
-      "category": "Art & Visual Inspiration",
-      "sourceCount": 12,
+      "category": "Creative Coding",
+      "sourceCount": 21,
       "sourceKeys": [
-        "ART-001",
-        "ART-002",
-        "ART-003",
-        "ART-004",
-        "ART-005",
-        "ART-006",
-        "ART-OTHER-01",
-        "ART-OTHER-02",
-        "ART-OTHER-03",
-        "ART-OTHER-04",
-        "ART-OTHER-05",
-        "ART-OTHER-06"
+        "CC-001",
+        "CC-002",
+        "CC-002-02",
+        "CC-003",
+        "CC-004",
+        "CC-005",
+        "CC-006",
+        "CC-007",
+        "CC-008",
+        "CC-009",
+        "CC-010",
+        "CC-011",
+        "CC-012",
+        "CC-013",
+        "CC-014",
+        "CC-015",
+        "CC-016",
+        "CC-017",
+        "CC-018",
+        "CC-019",
+        "CC-020"
       ],
-      "framerGroup": "HmP8uxVpx",
-      "placementStatus": "saved"
+      "framerGroup": "dKNi06fJs",
+      "placementStatus": "saved and editor-reload verified"
     },
     {
       "category": "Sites",
@@ -2275,8 +2865,10 @@
   ],
   "localInventoryCheck": {
     "referenceURLSetEqualsCatalogInventory": true,
-    "uniqueReferenceURLs": 68,
-    "verificationScope": "Local JSON URL-set equality only. This does not verify Framer placement, saved state, preview rendering, full galleries, complete video clips, or live-site behavior."
+    "uniqueReferenceURLs": 77,
+    "catalogSourceURLs": 77,
+    "xPhotoViewPolicy": "WEB-017 photo/1 through photo/4 links are alternate views of one bookmarked post and normalize to its exact source-post permalink for inventory equality.",
+    "verificationScope": "Local JSON/catalog URL-set equality only. This does not verify new Framer placement, saved state, preview rendering, full galleries, complete clips, code execution or live-site behavior."
   },
   "savedVerification": {
     "date": "2026-10-22",
@@ -2347,7 +2939,9 @@
         "rI0h8QiJa"
       ]
     },
-    "finalMCPRead": "Timed out; saved-state verification instead used the reopened native editor, exact layer IDs, hierarchy and screenshot review."
+    "finalMCPRead": "Timed out; saved-state verification instead used the reopened native editor, exact layer IDs, hierarchy and screenshot review.",
+    "status": "historical-proof",
+    "appliesTo": "Earlier 68-source / 23-original / one-adaptation state before the owner-requested Art removal and Creative Coding addition. These counts, removed nodes and browser views are not the current inventory."
   },
   "nativeRecreations": {
     "classification": "source-led-recreation",
@@ -2539,7 +3133,119 @@
         }
       ],
       "artifactScope": "Actual editor captures are retained in this Codex task’s local native-recreations visualization artifacts; they are not distributed with the repository.",
-      "reviewScope": "All sixteen named study groups and their IDs were read from the actual Framer editor after reload, then inspected in the overview and representative close-ups with native layers expanded. Native editor text controls confirmed RE-04 letter spacing at -0.045em. All six prototype paths plus Home remain listed. Source comparisons and simplifications are recorded; this does not verify website implementation or every frame of source videos."
+      "reviewScope": "All sixteen named study groups and their IDs were read from the actual Framer editor after reload, then inspected in the overview and representative close-ups with native layers expanded. Native editor text controls confirmed RE-04 letter spacing at -0.045em. All six prototype paths plus Home remain listed. Source comparisons and simplifications are recorded; this does not verify website implementation or every frame of source videos.",
+      "status": "historical-proof-for-retained-native-RE-studies",
+      "appliesTo": "The previously saved 16 native RE studies; not a verification of the later Art removal or Creative Coding gallery."
+    },
+    "verificationStatus": "Prior saved-editor proof retained below; all 16 native RE source-led studies remain current. This proof does not verify the newly added Creative Coding gallery or the current source inventory."
+  },
+  "bookmarkReview": {
+    "date": "2026-10-22",
+    "folder": "Web & UI Design",
+    "includedPostURLs": 19,
+    "stableCatalogEntries": 17,
+    "allFolderPostsIncluded": true,
+    "promotions": [
+      {
+        "sourceKey": "WEB-SECONDARY-01",
+        "catalogId": "WEB-014"
+      },
+      {
+        "sourceKey": "WEB-SECONDARY-02",
+        "catalogId": "WEB-015"
+      },
+      {
+        "sourceKey": "WEB-SECONDARY-03",
+        "catalogId": "WEB-016"
+      },
+      {
+        "sourceKey": "WEB-SECONDARY-04",
+        "catalogId": "WEB-017"
+      }
+    ],
+    "visualLanguage": "../../design-inspiration/visual-language.md",
+    "scope": "Web & UI Design folder revisited to its visible end; all 19 bookmarked posts retained. WEB-017’s four gallery images were opened at overview resolution. Other gallery, complete-video, interaction and current live-site review limits remain as recorded.",
+    "selectionStatus": "All 19 Web & UI Design bookmarks retained and expanded. Art & Visual Inspiration removed at the owner’s explicit request; 20 Creative Coding bookmarks and one credited-original support link added.",
+    "creativeCoding": {
+      "date": "2026-10-22",
+      "folder": "Creative Coding",
+      "includedBookmarkedPosts": 20,
+      "creditedOriginalSupportURLs": 1,
+      "sourceURLs": 21,
+      "stableCatalogEntries": 20,
+      "folderVisibleEndReviewed": true,
+      "scope": "Visible feed images/previews and sampled video frames; CC-003 also opened in post detail. Complete clips, source-code execution, exact algorithms, performance and live interactions were not verified."
     }
+  },
+  "ownerRequestedRemoval": {
+    "date": "2026-10-22",
+    "collection": "Art & Visual Inspiration",
+    "removedCatalogEntryCount": 6,
+    "removedSourceRecordCount": 12,
+    "retiredCatalogIds": [
+      "ART-001",
+      "ART-002",
+      "ART-003",
+      "ART-004",
+      "ART-005",
+      "ART-006"
+    ],
+    "currentOriginalCompositionCount": 18,
+    "currentSourceLedAdaptationCount": 0,
+    "removedAdaptationStudy": "MB-23",
+    "framerChangeScope": "Native editor copies after reload confirm all four retired ancestor roots and their contents removed. All 18 retained MB groups/artworks, 16 earlier RE constructions, 56 pre-expansion source groups and 46 earlier previews are preserved.",
+    "xBookmarksChanged": false
+  },
+  "currentFramerVerification": {
+    "date": "2026-10-23",
+    "status": "saved-gallery-and-curation-verified",
+    "editorReloadVerified": true,
+    "sourceGroups": 77,
+    "sourcePreviews": 66,
+    "linkOnlyCards": 11,
+    "creativeCodingBookmarkedPosts": 20,
+    "creativeCodingCreditedOriginalSupportLinks": 1,
+    "preservedEarlierSourceGroups": 56,
+    "originalCompositions": 18,
+    "earlierNativeSourceStudies": 16,
+    "additionalNativeCreativeCodingStudies": "pending saved-editor verification",
+    "existingWebsitePages": [
+      {
+        "path": "/prototypes/signal-field",
+        "id": "WJkUf4nHH"
+      },
+      {
+        "path": "/prototypes/research-edition",
+        "id": "FNWmJvk0a"
+      },
+      {
+        "path": "/prototypes/cobalt-relay",
+        "id": "CdGjtAu_e"
+      },
+      {
+        "path": "/prototypes/graphic-studies",
+        "id": "NTBtSqs_B"
+      },
+      {
+        "path": "/prototypes/interrupt-poster",
+        "id": "rERIFDhZ0"
+      },
+      {
+        "path": "/prototypes/aperture-habitat",
+        "id": "bPKUhgBQB"
+      },
+      {
+        "path": "/",
+        "id": "augiA20Il"
+      }
+    ],
+    "proofScope": "Normal native-editor copies after full reload and visual inspection of the 20-poster gallery. Seven existing page IDs/routes were observed by navigation without page edits; no page-content byte equality is claimed.",
+    "artifacts": [
+      "creative-coding-saved-gallery.jpg",
+      "creative-gallery-verification.json",
+      "pruning-verification.json",
+      "website-pages-observation.json"
+    ],
+    "artifactLocation": "This Codex task’s catalog-expansion visualization artifacts"
   }
 }

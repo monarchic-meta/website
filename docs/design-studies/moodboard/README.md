@@ -1,25 +1,20 @@
 # Visual kitchen sources
 
 Graphic studies for the [Framer moodboard](../../framer-moodboard.md), created
-2026-10-22. The 24 retained **MB asset studies** comprise **23 independent
-compositions and one source-led adaptation**. They are not approved logos, product diagrams,
-or site assets.
+2026-10-22. The **18 retained MB asset studies**, MB-01–18, are independent
+compositions. They are not approved logos, product diagrams, or site assets.
 
 The same Framer design page separates **Source inspiration** from
-**Original compositions**. The composition wall holds the 22 SVG studies and
-MB-17 chrome bitmap. The source wall holds the catalog's 68 external URLs
-(58 X posts with visual previews and 10 site/support link cards), organized as
-Web / UI 19, Graphic design 27, Art / Visual 12, and Sites / Supporting links 10.
-Its separate **Made here / source-led adaptation** area holds MB-23. The first
-seven composition clusters each contain three studies; Atmosphere contains two.
-Inspiration IDs remain citations rather than source previews mixed into those
-clusters.
+**Original compositions**. The retained asset set has 17 SVG studies and the
+MB-17 chrome bitmap, corresponding to the first six three-study composition
+clusters. The source comparison library follows the current
+[inspiration catalog](../../design-inspiration.md). Inspiration IDs remain
+citations rather than source previews mixed into the composition clusters.
 
 The later [16 native RE studies](../recreations/README.md) add source-led
 recreations above the comparison library. Their frames, dots, wires, and text
 are editable as individual Framer layers. They belong in Source inspiration and
-retain source credits; they do not replace the 24 MB assets or alter the
-23-study Original compositions wall. Their
+retain source credits alongside the 18 independent MB assets. Their
 [separate manifest](../recreations/manifest.json) records the saved native-study
 nodes; the MB manifest continues to describe only the earlier asset studies.
 
@@ -29,42 +24,51 @@ the source, link its post, and label the relationship. Do not present those work
 as our original compositions. Cropping, recoloring, tracing, or AI regeneration
 of a source composition does not change that attribution policy.
 
-[manifest.json](manifest.json) records all 24 studies, source filenames, intrinsic
+[manifest.json](manifest.json) records the 18 retained studies, source filenames, intrinsic
 dimensions, and inspiration IDs. Resolve IDs through the
 [inspiration catalog](../../design-inspiration.md).
 
-The 22 SVGs are standalone original compositions with no external resources.
+The 17 SVGs are standalone original compositions with no external resources.
 Framer stores each in an SVG node within a movable group. Edit its SVG source
 to change internal paths; captions and placement frames are native Framer layers.
 Decorative lettering uses system font fallbacks, so glyph widths can vary.
 
-Two bitmap studies were made with built-in image_gen:
+The retained bitmap study was made with built-in image_gen:
 
 - [MB-17 Chrome hinge](mb-17-chrome-hinge.png): 1111 × 1415 RGBA PNG with
   transparent surroundings and central opening. [Creation and framing prompts](mb-17-prompt.txt).
-- [MB-23 Blue nocturne](mb-23-blue-nocturne.png): 1080 × 1456 opaque RGB PNG.
-  **AI-assisted adaptation made here, influenced by ART-005**; its warm-disk and
-  reflection composition closely follows that source. It belongs in Source
-  inspiration, not Original compositions. The generated bitmap is not attributed
-  to the external artist. [Creation prompt](mb-23-prompt.txt).
 
-The original handoff called all 24 studies original. The 23-plus-one classification
-above replaces that label without replacing assets or changing their existing
-MB identifiers or Framer group/artwork IDs.
+The initial batch on 2026-10-22 contained 24 MB studies. At the owner's request,
+MB-19–24 and the MB-23 generation prompt have been removed from the asset set,
+including the source-led painting adaptation. Their earlier files and source
+credits remain recoverable from repository history. The 18 retained assets keep
+their existing bytes, MB identifiers, and Framer group/artwork IDs. Framer removal
+and saved-editor checks are recorded in the [moodboard handoff](../../framer-moodboard.md).
 
-[references.json](references.json) records the 68 external source URLs across all
-39 stable catalog entries. Source previews are reference material in the design
-workspace; the repository retains public source links and the 24 study assets.
+MB-05 and MB-06 retain ART-003 only in `historicalSourceRefs`, with its original
+post URL and posting account. Their active `refs` contain Graphic Design IDs;
+the historical metadata does not restore the removed Art collection.
+
+[references.json](references.json) records the active external source links.
+Source previews are reference material in the design workspace; the repository
+retains public source links and the 18 study assets.
 Site/support destinations use link cards without fabricated site previews.
 Posting accounts do not establish original authorship or an implementation license.
 
-The earlier 19 records retain their historical `evidence` and `reviewed` values.
+Source records can retain historical `evidence` and `reviewed` values.
 Use `displayKind`, `previewCollectedDate`, and the saved Framer mappings for the
 current gallery. For example, GRA-004 now has a video poster while its earlier
-evidence remains `link only`. The [coverage record](catalog-coverage.json) maps
-every catalog entry and source URL to its saved group and category.
+evidence remains `link only`. The [coverage record](catalog-coverage.json) records
+catalog coverage and the scope of saved-editor verification.
 
-All 22 SVGs were rendered with the repository-pinned Nix librsvg. A separate
+WEB-014–017 expand four formerly brief Web / UI posts into full catalog entries.
+Their legacy WEB-SECONDARY source keys, source URLs, and Framer node mappings
+are retained. All 19 posts from that bookmark folder remain included. The
+[visual-language brief](../../design-inspiration/visual-language.md) records
+the independent visual directions to expand.
+
+The retained SVGs were rendered with the repository-pinned Nix librsvg during
+the initial artwork review. A separate
 audit checked manifest dimensions, XML, local fragment references, catalog IDs,
 and PNG structure and transparency. No application code or package dependencies
 change in this artwork set.
