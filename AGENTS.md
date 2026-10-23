@@ -45,6 +45,12 @@
 - Keep external work, recreations, and close adaptations credited within
   **Source inspiration**, including when Codex authors the recreation or
   adaptation. Reserve **Original compositions** for independently composed work.
+- Keep the reference library, native recreations, original compositions and live
+  coding studies on separate Framer Design pages so opening one collection does
+  not mount the entire moodboard. Move existing groups while preserving IDs,
+  credits and editable contents. Source inspiration spans the reference,
+  recreation and source-led live-study pages; page separation does not change
+  attribution or turn a recreation into an original.
 - Use self-contained Framer code components for procedural graphics, shaders,
   and motion studies when native layers would flatten the effect. Keep their
   source under `docs/design-studies/code-components`, expose useful visual
@@ -52,13 +58,18 @@
   and thumbnail rendering. Keep editor-canvas motion off by default, with an
   explicit Canvas motion opt-in restricted to `RenderTarget.canvas`; distinguish
   that target from static exports with `useIsStaticRenderer`. Budget canvas
-  motion at 12 fps and 150,000 pixels, and verify it separately from Preview
-  animation. Also enforce the shared per-window budget: at most two WebGL
+  motion at 12 fps and 1,000,000 pixels, and verify it separately from Preview
+  animation. Render still refinements serially at up to 2,000,000 pixels. Also
+  enforce the shared per-window budget: at most two WebGL
   contexts including initialization, with one live editor study or two live
   Preview studies. Preserve generated overview artwork in 2D, warm stills
-  serially, size buffers from transformed screen bounds, and test all 60 mixed
-  placements before changing resource admission. Preserve the existing native studies alongside these code-based
-  experiments.
+  serially, size buffers from transformed screen bounds and device pixel ratio,
+  and preserve logical CSS dimensions for shader controls. Cache validity must
+  include resolution adequacy; zooming and panning must refresh every visible
+  card without hover or Play. Retain sharp frames during focus handoff and
+  isolate cached-copy errors. Test all 60 mixed placements for minimum image
+  quality as well as resource limits; a nonempty bitmap alone is insufficient.
+  Preserve the existing native studies alongside these code-based experiments.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when
   implementing a prototype. Confirm changes in the Framer editor after a reload

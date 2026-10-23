@@ -3,17 +3,30 @@
 Created 2026-10-22 from the [inspiration catalog](design-inspiration.md).
 
 [Open the moodboard](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To)
-under **Design → Moodboard / Visual kitchen** in the existing project. This is a
-freeform playground for graphic elements, textures, materials and compositions
+under **Design → 01 Reference library** in the existing project. The visual
+kitchen uses four Design pages for graphic elements, textures, materials and compositions
 that can later be applied to pages. The six homepage directions and earlier
 graphic gallery are separate, preserved prototypes.
 
+| Design page | Contents |
+| --- | --- |
+| [01 / Reference library](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To) | 77 source links, including 20 live Creative Coding comparisons |
+| [02 / Recreations](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=a_19JJYFC) | 20 native editable source-led studies |
+| [03 / Originals](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | 18 independently composed studies and the combination playground |
+| [04 / Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bY_Q8AQKP) | 20 procedural and shader studies |
+
+Opening a collection mounts its own contents. The reference and live pages each
+mount 20 code instances; the recreation and original pages mount none. The draft
+Preview lab retains its separate 20 placements. Source inspiration remains a
+conceptual collection spanning references, recreations and source-led live work.
+
 ## Sources and original compositions
 
-Keep two distinct sections on the same design page:
+Keep source-led work and original compositions distinct across the four pages:
 
 - [Source inspiration](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VvoNblwjH)
-  contains credited source-led recreations and the comparison library. The
+  contains the comparison library. Credited native recreations and live code
+  studies have separate Design pages within the Source inspiration collection. The
   current catalog has **57 stable entries and 77 external URLs**: 67 X posts and
   ten site/support destinations. The 20 new Creative Coding bookmarks include
   one additional credited-original URL under CC-002; that support URL is not a
@@ -79,7 +92,7 @@ still-frame approximation is not a working shader or animation.
 ## Live Creative Coding studies
 
 The [Live Creative Coding area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qPREnLG7B)
-contains the React/WebGL code studies below the comparison library. The first
+contains the React/WebGL code studies on **04 Live Creative Coding**. The first
 four saved studies are:
 
 - LC-01 / Ordered terrain: moving, ray-marched terrain with three-color tonal
@@ -97,9 +110,12 @@ visual language; they do not reproduce the source algorithms. The earlier
 20 native RE studies and 18 MB originals remain separate and unchanged.
 
 Open the [draft lab in Preview](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SqfboNSM6&view=preview)
-to see animation and pointer response at up to 30 fps and 650,000 pixels.
-**Canvas motion** defaults off and opts an editor-canvas instance into a lower
-12 fps / 150,000-pixel budget. Exports and thumbnails remain deterministic stills.
+to see animation and pointer response at up to 30 fps and 1,000,000 pixels.
+**Canvas motion** defaults off in the component; all sixty saved instances have
+it enabled, with one live editor study at up to 12 fps and 1,000,000 pixels.
+Inactive visible cards automatically refine generated stills up to 2,000,000
+pixels as zoom or display density changes. Sharp frames survive animation
+handoffs. Exports and thumbnails remain deterministic stills.
 Study, speed, still time, intensity, palette, pointer response and credits are
 editable through component controls; Preview also offers pause/resume.
 The [code study index](design-studies/code-components/README.md)

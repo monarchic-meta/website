@@ -51,8 +51,9 @@ Their twelve modes passed local GPU compilation, visual review and time-sample
 checks. The saved set covers all twenty bookmarked references with **20 live
 studies and 60 code instances**, alongside **20 native studies, 18 originals
 and the same 77 source URLs**: **40 source studies and 24 source-led
-adaptations**, four static native and twenty live. The live area is 12,000px high
-inside a 25,800px Source frame; the lab route remains a draft. Fresh editor
+adaptations**, four static native and twenty live. Before the four-page split,
+the 12,000px live area sat inside a 25,800px Source frame. It now has its own
+Design page; the lab route remains a draft. Fresh editor
 reloads and **35,886 native-state assertions** verified exact controls and
 preservation, including the earlier eight studies, 65 untouched reference
 subtrees and all 77 reference IDs. All twelve new modes rendered, changed

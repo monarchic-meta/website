@@ -65,13 +65,13 @@ InterfaceCodingStudy adds **Scale**, **Echo depth** for afterimages,
 change the authored colors; the source credits remain attached to each mode.
 
 **Canvas motion** defaults off. With animation enabled, opting in allows motion
-on the Framer editor canvas at up to **12 fps and 150,000 pixels**. All five components
+on the Framer editor canvas at up to **12 fps and 1,000,000 pixels**. All five components
 use `RenderTarget.canvas` together with `useIsStaticRenderer` to distinguish
 that authoring target from exports and thumbnails, which remain frozen at
 **Still time**.
 
-Framer Preview runs at up to **30 fps and 650,000 pixels**, with DPR capped at
-1.5. Visitors can pause and resume it with a keyboard-accessible button. Canvas
+Framer Preview runs at up to **30 fps and 1,000,000 pixels**, with DPR capped at
+2. Visitors can pause and resume it with a keyboard-accessible button. Canvas
 motion is an instance-level authoring choice and does not change the export
 policy.
 
@@ -83,14 +83,23 @@ The overview therefore retains the shader artwork while releasing its GPU
 context. These frames come from the authored code, not the external source
 posters. A bounded cache shares matching stills between placements.
 
-Overview frames are generated one job per task, at no more than **24,000
-pixels**. Editor admission and backing size use the card's transformed screen
-bounds, including Framer zoom. Small cards remain still; close-up cards can
-animate, with hover, keyboard focus and Play giving priority. Other cards retain
-their last frame. Returning to a live slot resumes the saved phase. Hidden and
-offscreen cards release their contexts; reduced motion holds generated stills.
+Generated stills are rendered one job per task at the required screen resolution,
+up to **2,000,000 pixels**. Raster tiers follow transformed screen size and DPR,
+with a minimum 384px long edge, and refresh when zoom or display density grows.
+Shader CSS dimensions stay untransformed, so zoom does not change the meaning
+of pixel-size controls. Mounted offscreen cards receive a small initial frame;
+visible cards refine without requiring hover or Play. Small cards remain still;
+close-up cards can animate, with hover, keyboard focus and Play giving priority.
+Releasing a live slot retains its sharp frame and animation phase. Hidden and
+offscreen cards release GPU contexts; reduced motion holds generated stills.
 The limit applies within one browser window/JavaScript realm, not across tabs
 or unrelated Framer iframes.
+
+The shared still cache is bounded by **8 million pixels and 64 entries**.
+Retained display buffers have a separate **24 million pixel** budget; memory
+pressure can reduce offscreen buffers, which refine again when visible. A cache
+hit must have enough detail for the current view. Failed cache copies retain
+the previous frame and allow other cards to continue loading.
 
 Exports and thumbnails render synchronously at **Still time**, copy their
 generated frame to 2D, then dispose the temporary GPU renderer. They do not wait
@@ -263,7 +272,7 @@ remain unverified. No actual Framer export image was manually inspected. The
 lab remains an unpublished draft; these authoring changes do not integrate the
 components into the production site.
 
-## Loading recovery — current saved verification
+## Initial loading recovery — historical verification
 
 The editor displayed **Failed to load canvas** at 13% zoom. Pausing the sixty
 Canvas motion flags, closing the duplicate verification tab and reloading
@@ -271,9 +280,10 @@ recovered it. Investigation found eager allocations and offscreen retained
 contexts; per-instance frame/pixel caps did not bound the full board. The exact
 original failure cause was not conclusively isolated.
 
-All five runtimes now use the shared resource policy above. Their shader
-literals and complete property-control schemas remain byte-identical. The five
-existing Framer files accepted the updated sources with exact hash readbacks,
+This round introduced a shared two-context coordinator with 24,000-pixel stills
+and 150,000-pixel editor animation. Its shader literals and complete
+property-control schemas remained byte-identical. The five existing Framer files
+accepted those updated sources with exact hash readbacks,
 empty diagnostics and unchanged component export IDs. All sixty temporary
 motion flags were restored, with every saved control and geometry field matching
 the pre-pause baseline.
@@ -285,12 +295,14 @@ confirmed Coronal editor motion and Preview motion for one study from each of
 the five component families. Temporal Preview pause/resume also worked. No
 browser warning/error or graphics-fallback message was observed.
 
-**34,179 native-state assertions** compare complete Source, Original and Lab
+**34,179 native-state assertions** compared complete Source, Original and Lab
 trees with the completed twenty-study round, excluding module revision hints.
-All placements, source assets, credits, controls and geometry are preserved.
+At that stage, all placements, source assets, credits, controls and geometry were preserved.
 The earlier 35,886-check proof is retained as historical evidence in the manifest.
+This verifies saved presence and preservation; it does not establish adequate
+raster quality when zooming into the artwork.
 
-The eleven-case regression suite and its Nix flake check pass. A separate browser
+The eleven-case regression suite and its Nix flake check passed. A separate browser
 harness mounted all five actual modules as sixty mixed placements: all sixty
 generated overview frames appeared, with one peak GPU context during cold
 warming and none retained afterward. Static export and thumbnail targets each
@@ -299,6 +311,71 @@ These target checks used a local React/Framer harness; no PNG exported by the
 Framer desktop app or generated project thumbnail was inspected. The web editor
 did not expose asset-export controls.
 
-Current proof, source baselines, receipts and screenshots are retained in this
+Later inspection found that size-independent cache keys, the small still cap and
+downscaling on slot release left close-ups blurry. The initial tests checked
+frame presence and resource limits; they did not require every visible card to
+refine after zoom or retain sharpness after handoff.
+
+Proof, source baselines, receipts and screenshots for this initial round are retained in this
 task's local `framer-loading-recovery` artifacts. The draft lab and production
 website remain separate; nothing was published.
+
+## Quality correction and four-page organization
+
+The correction separates GPU ownership from retained image quality. Visible
+cards refine to their screen-size/DPR raster tier without requiring focus, and
+cache hits must provide enough source pixels. Releasing a live slot retains the
+displayed phase, pointer and sharp frame. Shader CSS dimensions remain logical,
+so zoom does not redefine the dither pixel-size control. Turning Mouse off while
+paused clears its held pointer effect.
+
+The current limits are two shared contexts, one editor animation or two Preview
+animations, one million pixels per live renderer and two million per generated
+still. Raster tiers have a 384px minimum long edge, 128px steps and DPR capped at
+2. The matching-still cache holds at most eight million pixels and 64 entries;
+offscreen display buffers can be reduced under the separate 24-million-pixel
+budget. All five shader literal sets and property-control schemas remain
+unchanged.
+
+Before the page split, fresh Framer reloads showed all 20 visible studies meeting
+their raster demand in the 5% live-gallery view, all 18 visible displays meeting
+demand at 13%, and all four visible displays meeting demand in the 40% Coronal
+view. Aligned artwork measurements confirmed editor motion for one mode from
+each of the five component families. **34,179 native-state assertions** verified
+the complete saved trees before any page reorganization. That proof is retained
+separately; it does not describe the intentional reparenting and outer layout
+changes of the later page split.
+
+The twelve-group regression checks all sixty spatial placements, 36 combinations
+of placement type, zoom and DPR, focus-free upgrades, pan/cache reuse, retained
+phase and pointer, failed-resize rollback and queue recovery. The Nix check
+passes. In the real-GPU harness, all 44 visible overview cards matched fresh
+same-phase/pointer shader renders, covering all twenty modes; two close-up
+comparisons at DPR 2 also passed. These comparisons use actual effective source
+resolution and artwork detail, rather than treating a nonempty buffer as proof
+of a usable image.
+
+The large board is now separated into four design pages, each opened after fresh
+navigation and visually inspected:
+
+| Design page | Contents |
+| --- | --- |
+| [01 / Reference library](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To) | 77 source entries, including the 20 code reference artworks and their source-poster comparisons |
+| [02 / Recreations](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=a_19JJYFC) | 20 native editable RE studies |
+| [03 / Originals](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | 18 independent MB compositions |
+| [04 / Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bY_Q8AQKP) | 20 live code-study cards |
+
+The sixty code instances are distributed across the Reference library, Live
+Creative Coding and the existing draft lab: twenty in each. All twenty visible
+code displays met their raster demand after the Reference and Live pages were
+reloaded; Recreations and Originals contain no code-component instances. The
+reference Source frame is now 6,100px high. Whole authoring frames moved to the
+new pages, while reference categories were arranged into a smaller library.
+Study IDs, controls, credits and internal artwork geometry stay distinct from
+these intentional parent and outer-position changes. The pre-split 34,179-check
+comparison does not claim that the reorganized page trees are unchanged.
+
+Quality proof, source readbacks, native copies and screenshots are retained in
+this task's local `framer-quality-recovery` artifacts. No actual Framer-exported
+PNG or generated project thumbnail was manually inspected. The lab remains an
+unpublished draft and the production website does not import these components.

@@ -17,7 +17,10 @@ directions, their project nodes, source references, and review scope.
 The [second visual round](framer-visual-round-two.md) explores additional palettes,
 graphic systems, and a standalone artwork gallery.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
-independent graphic elements into a separate design canvas in the same project.
+independent graphic elements into four Design pages in the same project:
+Reference library, Recreations, Originals and Live Creative Coding. Keep the
+dense native artwork separate from live graphics, move existing groups instead
+of duplicating them, and preserve source credits and stable study IDs.
 
 ## Native editable studies
 
@@ -75,18 +78,20 @@ Keep exports and thumbnails static. Editor-canvas motion defaults off; expose an
 explicit **Canvas motion** opt-in when seeing the effect beside its reference
 helps authoring. Combine `RenderTarget.canvas` with `useIsStaticRenderer` so that
 the opt-in cannot animate export or thumbnail rendering. The Creative Coding
-budgets are 12 fps and 150,000 pixels on the canvas, and 30 fps and 650,000 pixels
+budgets are 12 fps and 1,000,000 pixels on the canvas, and 30 fps and 1,000,000 pixels
 in Preview. Verify those targets separately, including the default still frame.
 
 Budget the whole board as well as each instance. The five study files share a
 per-window coordinator capped at two WebGL contexts, including initialization.
 Only one editor study animates at a time; Preview admits up to two. Zoomed-out
 cards retain code-generated 2D frames and release their GPU contexts. Generate
-cold overview frames serially at up to 24,000 pixels and measure transformed
-screen bounds when choosing detail. Verify a mixed 60-instance overview,
-close-up admission, hidden/offscreen cleanup, and synchronous static capture
-before expanding the gallery. A frame-rate cap alone does not bound context
-allocation.
+still refinements serially at up to 2,000,000 pixels. Follow transformed screen
+bounds and DPR when choosing raster detail, while preserving logical CSS units
+inside the shaders. Verify that every visible card upgrades after zoom or pan,
+retains detail after focus handoff, and recovers from cached-copy failures.
+Check a mixed 60-instance board at multiple zoom/DPR settings, hidden/offscreen
+cleanup and synchronous static capture. Nonempty pixels alone do not establish
+usable image quality; a frame-rate cap alone does not bound context allocation.
 
 Include a pause control, respect reduced motion, stop rendering offscreen,
 release GPU resources, and verify context restoration. Keep executable source-led

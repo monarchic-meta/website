@@ -4,16 +4,18 @@ Graphic studies for the [Framer moodboard](../../framer-moodboard.md), created
 2026-10-22. The **18 retained MB asset studies**, MB-01–18, are independent
 compositions. They are not approved logos, product diagrams, or site assets.
 
-The same Framer design page separates **Source inspiration** from
-**Original compositions**. The retained asset set has 17 SVG studies and the
+Four Framer Design pages separate the reference library, native recreations,
+original compositions and live coding studies. **Source inspiration** spans the
+reference, recreation and live-study pages; **Original compositions** remains
+independent. The retained asset set has 17 SVG studies and the
 MB-17 chrome bitmap, corresponding to the first six three-study composition
 clusters. The source comparison library follows the current
 [inspiration catalog](../../design-inspiration.md). Inspiration IDs remain
 citations rather than source previews mixed into the composition clusters.
 
 The later [20 native RE studies](../recreations/README.md) add 16 source-led
-recreations and four static Creative Coding adaptations above the comparison
-library. Their frames, dots, wires, and text
+recreations and four static Creative Coding adaptations on **02 Recreations**.
+Their frames, dots, wires, and text
 are editable as individual Framer layers. They belong in Source inspiration and
 retain source credits alongside the 18 independent MB assets. Their
 [separate manifest](../recreations/manifest.json) records the saved native-study
@@ -33,12 +35,13 @@ including all twelve code instances and retained source assets, is recorded
 in the code-study handoff. Canvas motion is enabled on those placements.
 
 Motion runs in the draft lab's Preview. **Canvas motion** is an explicit opt-in
-that defaults off, capped at 12 fps and 150,000 pixels. Preview uses up to 30 fps
-and 650,000 pixels. Exports and thumbnails remain deterministic still frames.
+that defaults off, capped at 12 fps and 1,000,000 pixels. Preview uses up to 30 fps
+and 1,000,000 pixels. Exports and thumbnails remain deterministic still frames.
 All five files now share a two-context budget within their browser window, with
 one live editor study or two live Preview studies. Overview cards retain
-code-generated 2D stills, warmed serially at up to 24,000 pixels. Close-up,
-hover, focus and Play select which study receives motion. See the
+code-generated 2D stills, refined serially at up to 2,000,000 pixels. Visible
+cards upgrade with zoom/DPR without needing hover or Play; focus handoff retains
+sharp frames. Close-up, hover, focus and Play select which study receives motion. See the
 [code-study handoff](../code-components/README.md) for resource recovery checks.
 
 The saved material revision adds LC-05–08 from CC-004's capsules, CC-008's glass UI,
@@ -66,8 +69,9 @@ source studies**, while retaining **20 native studies, 18 originals and 77 sourc
 The 24 source-led adaptations comprise four static native studies and twenty
 live studies. Each Creative Coding
 bookmark receives executable main reference artwork and retains its source
-poster as a comparison thumbnail. The live area is 12,000px high inside a
-25,800px Source frame, on the same draft lab route. Fresh editor reloads and
+poster as a comparison thumbnail. Before the four-page split, the 12,000px live
+area sat inside a 25,800px Source frame. It now has its own Design page, with
+the same separate draft lab route for Preview. Fresh editor reloads and
 35,886 native-state assertions verified the completion, preserving all native
 and original trees, all reference IDs, 65 untouched reference subtrees and the
 earlier eight studies' cards and 24 instances. All twelve new studies showed
