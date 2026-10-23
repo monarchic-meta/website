@@ -18,6 +18,12 @@ original forms or keep a recreation clearly credited in Source inspiration.
 Record simplifications when a native Framer construction approximates a dense
 point field, a material or a rendered effect.
 
+Three [live Framer code studies](../design-studies/code-components/README.md)
+now explore CC-003's tonal dithering, CC-001's suspended point geometry and
+CC-005's cyan/magenta light. These are credited source-led adaptations with
+independent code and motion, alongside the earlier static native studies.
+Their implementation checks do not expand the source-review evidence below.
+
 ## References
 
 ### CC-001 — White point canopy

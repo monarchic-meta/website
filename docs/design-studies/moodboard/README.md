@@ -19,6 +19,13 @@ retain source credits alongside the 18 independent MB assets. Their
 [separate manifest](../recreations/manifest.json) records the saved native-study
 nodes; the MB manifest continues to describe only the earlier asset studies.
 
+The [three live Creative Coding studies](../code-components/README.md) add
+actual animated WebGL graphics with Framer controls and credited source cards.
+They sit in Source inspiration and have a separate
+[code-component manifest](../code-components/manifest.json). The inventory is
+20 native source studies, three live source studies and 18 MB originals.
+Motion runs in the draft lab's Preview; the moodboard canvas shows stills.
+
 External work, recreations, and close adaptations of source compositions belong
 in Source inspiration, even when Codex made the recreation or adaptation. Credit
 the source, link its post, and label the relationship. Do not present those works

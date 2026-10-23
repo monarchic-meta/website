@@ -2291,6 +2291,37 @@
         "framerPlacementStatus": "saved and editor-reload verified",
         "staticStudy": true
       }
+    ],
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-02",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/CreativeCodingStudy.tsx",
+        "mode": "canopy",
+        "palette": {},
+        "studyProps": {
+          "study": "canopy",
+          "animate": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": true
+        },
+        "framerComponentId": "codeFile/bPPSvaB:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "l6rSZmmC2",
+        "framerSourceInstance": "ns1kIv2Gd",
+        "framerSourceCredit": "OiqsfQatf",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "sQzry5JdV",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
     ]
   },
   {
@@ -2444,6 +2475,44 @@
         "framerPlacementStatus": "saved and editor-reload verified",
         "staticStudy": true
       }
+    ],
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-01",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/CreativeCodingStudy.tsx",
+        "mode": "dither",
+        "palette": {
+          "primary": "#efc8c8",
+          "secondary": "#d6b442",
+          "ink": "#424855"
+        },
+        "studyProps": {
+          "study": "dither",
+          "animate": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": true,
+          "primary": "#efc8c8",
+          "secondary": "#d6b442",
+          "ink": "#424855"
+        },
+        "framerComponentId": "codeFile/bPPSvaB:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "FDuz5SOtn",
+        "framerSourceInstance": "ae_vSmAxE",
+        "framerSourceCredit": "RNp86j0_Y",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "FW7ouI7kr",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
+      }
     ]
   },
   {
@@ -2560,6 +2629,42 @@
         "framerCredit": "MvnOgY_W8",
         "framerPlacementStatus": "saved and editor-reload verified",
         "staticStudy": true
+      }
+    ],
+    "liveCodeAdaptations": [
+      {
+        "id": "LC-03",
+        "classification": "source-led-adaptation",
+        "manifest": "../code-components/manifest.json",
+        "componentSource": "../code-components/CreativeCodingStudy.tsx",
+        "mode": "coronal",
+        "palette": {
+          "primary": "#49efff",
+          "secondary": "#b12aff"
+        },
+        "studyProps": {
+          "study": "coronal",
+          "animate": true,
+          "speed": 0.65,
+          "stillTime": 8,
+          "intensity": 1.1,
+          "pixelSize": 3,
+          "interactive": true,
+          "showLabels": true,
+          "primary": "#49efff",
+          "secondary": "#b12aff"
+        },
+        "framerComponentId": "codeFile/bPPSvaB:default",
+        "framerSourceSection": "VvoNblwjH",
+        "framerLiveArea": "qPREnLG7B",
+        "framerSourceGroup": "mkIofjY0m",
+        "framerSourceInstance": "sh3Dzk8z_",
+        "framerSourceCredit": "F8Zo086UW",
+        "framerLabPage": "SqfboNSM6",
+        "framerLabPath": "/prototypes/creative-coding-lab",
+        "framerLabInstance": "gYwb8vTbL",
+        "framerPlacementStatus": "saved and editor-reload verified",
+        "framerVerifiedDate": "2026-10-23"
       }
     ]
   },

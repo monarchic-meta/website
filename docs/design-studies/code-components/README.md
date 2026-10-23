@@ -52,4 +52,27 @@ For site implementation, manually port the selected rendering behavior into the
 existing Astro/Svelte component architecture. The study component and any
 prototype routes in Framer do not deploy changes to the website.
 
-Placement and verification details are recorded after the live Framer check.
+## Saved placements and verification
+
+The three studies are saved in the moodboard's
+[Live Creative Coding area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qPREnLG7B)
+under Source inspiration. Open the separate
+[Creative Coding lab in Preview](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SqfboNSM6&view=preview)
+for motion and pointer response. The lab is an unpublished **draft** with a
+1200px desktop artboard. The component also renders at narrow sizes; the lab
+does not yet define a separate mobile layout.
+
+[manifest.json](manifest.json) records the source hash, code export, controls,
+source credits and exact saved node IDs. On 2026-10-23, actual editor reloads,
+native layer copies and visual checks confirmed all six component instances
+and their credits. Framer reported no code diagnostics. Actual Framer Preview
+checks confirmed motion and pause/resume; separate browser GPU checks covered
+all three shader programs, three-color dither output, narrow rendering and
+WebGL context restoration. RGB/HSL, transparent, Display P3 and inherited-token
+palette normalization were also checked in the browser.
+
+The preservation audit confirms all 20 native study trees, 77 reference trees
+and 18 original groups remain intact. Existing page identities/routes are
+preserved. These checks do not establish exact source-video fidelity or
+production-site integration. Screenshots and verification inputs are retained
+in this Codex task's local `live-creative-coding` artifacts.
