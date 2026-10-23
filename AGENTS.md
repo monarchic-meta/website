@@ -23,9 +23,19 @@
 - Consult the [design inspiration catalog](docs/design-inspiration.md) for
   curated visual references. Cite its stable reference IDs in Framer experiments
   and handoffs; references inform exploration rather than implementation specs.
+- Build new visual-element recreations primarily from native Framer frames,
+  shapes, text, and named groups so their parts can be selected and edited.
+  Inspect the source first, retain its source key, and record simplifications.
+  Keep imported post images as comparison references; preserve explicit SVG
+  and bitmap asset studies as assets. Complex artwork such as paintings may
+  remain images when rebuilding it would lose the work's character.
+- Keep external work, recreations, and close adaptations credited within
+  **Source inspiration**, including when Codex authors the recreation or
+  adaptation. Reserve **Original compositions** for independently composed work.
 - Follow [the Framer workflow](docs/framer-prototyping.md) and record the relevant
   project/node links, responsive states, and intentional differences when
-  implementing a prototype. Framer edits are not versioned by Jujutsu.
+  implementing a prototype. Confirm changes in the Framer editor after a reload
+  before reporting them as saved. Framer edits are not versioned by Jujutsu.
 
 ## Required Internal Skills
 

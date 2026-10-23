@@ -17,6 +17,31 @@ graphic systems, and a standalone artwork gallery.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into a separate design canvas in the same project.
 
+## Native editable studies
+
+Build new visual-element recreations primarily from native Framer frames,
+shapes, text, and named groups. Keep parts such as dots, tiles, wires, lettering,
+and registration marks separately selectable. Inspect the source image before
+authoring; preserve its palette and recognizable motif, and record intentional
+simplifications in the handoff.
+
+Complex artwork such as paintings may remain images when a native recreation
+would lose its character. Keep its source credit and distinguish it from the
+editable studies.
+
+Keep imported post previews in the comparison library. The existing SVG and
+bitmap asset studies retain their recorded media; a native recreation should
+expose the graphic's construction as editable layers. Label external work and
+recreations with the exact source key and attribution in **Source inspiration**.
+They remain source-led work even when Codex builds their native layers.
+
+The [native recreation recipes](design-studies/recreations/README.md) retain the
+manual authoring sources and source credits; the
+[recreation manifest](design-studies/recreations/manifest.json) records saved
+Framer node IDs and native layer counts. Confirm changes in the actual editor
+after a reload before reporting them as saved. These recipes do not integrate
+with the site runtime or automatically synchronize Framer and the repository.
+
 ## Workspace and connection
 
 - [Monarchic Framer project](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt)
