@@ -294,8 +294,8 @@
     "background": "#202125",
     "simplifications": [
       "Source-led recreation of the sparse technical boards and six-blade wireframe motif.",
-      "Three editable ellipse families approximate the source curved mesh; perspective and mesh density are reduced.",
-      "All wires, crosshairs, nodes and labels are native frames or text, not a flattened illustration."
+      "Three intersecting twisted ribbon surfaces replace the earlier concentric ellipses. Their longitudinal wires and transverse rungs are editable native line segments; the six-lobed silhouette is sampled from the observed mesh rather than source vector data.",
+      "Perspective, fine wire density, and the full source board sequence remain simplified. All wires, crosshairs, nodes and labels are native frames or text, not a flattened illustration."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -309,19 +309,19 @@
         "id": "CuMSC1UNY"
       },
       {
-        "name": "Six-blade wireframe / three axes",
+        "name": "Six-blade wireframe / three twisted ribbons",
         "id": "L6GkIrfwv"
       },
       {
-        "name": "Wire ellipse family 0 degrees",
+        "name": "Twisted mesh ribbon 0 degrees",
         "id": "Rw_UmPfi7"
       },
       {
-        "name": "Wire ellipse family 60 degrees",
+        "name": "Twisted mesh ribbon 60 degrees",
         "id": "QHCAyCyWj"
       },
       {
-        "name": "Wire ellipse family -60 degrees",
+        "name": "Twisted mesh ribbon -60 degrees",
         "id": "KBCB5ogWB"
       },
       {
@@ -329,13 +329,29 @@
         "id": "huDXjcPvY"
       }
     ],
-    "recipeFrames": 42,
-    "nativeFrames": 43,
+    "recipeFrames": 315,
+    "nativeFrames": 316,
     "nativeText": 3,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "GRA-005",
+      "change": "Replaced closed ellipse rosette with crossing twisted-ribbon meshes; fine perspective and wire density remain reduced.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "6880050933c918b160578f0901330de870e9f5be54b8989cb5cac85d1aeb43d2",
+      "compiledPayloadSHA256": "54993cd00c9687894b7ec38be2cfbe1672e5a26f5a0ab3b4ca88113184453dd6",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-06",
