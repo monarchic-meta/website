@@ -7,7 +7,7 @@ export default {
   simplifications: [
     'Creative-source adaptation of the technical cards, keycaps, terminal, and connection diagram observed in @icanvardar’s post https://x.com/icanvardar/status/2094171308795826332; the posting account is credited without asserting independent authorship of every source asset.',
     'The card arrangement is recomposed on a plain dark field. Photographic scenery and source application functionality are omitted; all content is a static graphic sample, not a Monarchic product claim.',
-    'Native frames, text, and rectilinear connection segments replace the animated-SVG presentation and curved paths. IBM Plex Mono and Space Grotesk replace source fonts.',
+    'Native frames and text study the layered keycap faces, inset diagram field, ticket strip, and terminal. Curved return routes are sampled into short editable native line segments rather than squared elbows. IBM Plex Mono and Space Grotesk replace source fonts.',
     'Static study only: source motion, animated connections, terminal behavior, and interactions are not reproduced. No imported SVG, bitmap, or code component is used.',
   ],
   build(h) {
@@ -37,22 +37,36 @@ export default {
       return group;
     };
     h.text('Local-host sample annotation', 'LOCAL HOST / STATIC SAMPLE', 42, 34, 440, 12, muted, 'IBM Plex Mono', 400, {}, host);
+    h.frame('Connection diagram / dotted inset', 26, 72, 462, 146, 'transparent', { radius: '18px', border: '1px dotted #3a404b' }, host);
     keycap('Loopback address keycap', 42, 104, 192, '127.0.0.1', host);
     h.frame('Remote endpoint block', 386, 83, 64, 104, '#161b22', { radius: '12px', border: `1px solid ${edge}` }, host);
-    h.line('Connection / address to elbow', 234, 135, 306, 135, purple, 2, host);
-    h.line('Connection / upper turn', 306, 135, 306, 109, purple, 2, host);
-    h.line('Connection / upper route', 306, 109, 386, 109, purple, 2, host);
-    h.line('Connection / lower turn', 306, 135, 306, 160, '#646b77', 2, host);
-    h.line('Connection / lower route', 306, 160, 386, 160, '#646b77', 2, host);
-    [[234, 135], [306, 135], [386, 109], [386, 160]].forEach(([x, y], index) => h.circle(`Connection terminal ${index + 1}`, x - 4, y - 4, 8, index < 2 ? purple : muted, {}, host));
+    const curve = (name, a, b, c, d, color) => {
+      const at = (t) => [0, 1].map((axis) => (1 - t) ** 3 * a[axis] + 3 * (1 - t) ** 2 * t * b[axis] + 3 * (1 - t) * t * t * c[axis] + t ** 3 * d[axis]);
+      for (let segment = 0; segment < 8; segment++) {
+        h.line(`${name} / segment ${segment + 1}`, ...at(segment / 8), ...at((segment + 1) / 8), color, 1.6, host);
+      }
+    };
+    h.line('Connection / address outlet', 234, 135, 259, 135, purple, 1.6, host);
+    curve('Connection / upper curved return', [259, 135], [294, 135], [286, 109], [322, 109], purple);
+    curve('Connection / lower curved return', [259, 135], [294, 135], [286, 160], [322, 160], '#646b77');
+    h.line('Connection / upper route', 322, 109, 386, 109, purple, 1.6, host);
+    h.line('Connection / lower route', 322, 160, 386, 160, '#646b77', 1.6, host);
+    [[234, 135], [386, 109], [386, 160]].forEach(([x, y], index) => h.circle(`Connection terminal ${index + 1}`, x - 2.5, y - 2.5, 5, index === 0 ? purple : muted, {}, host));
+    h.line('Remote endpoint / upper socket', 406, 110, 430, 110, '#777d8f', 1, host);
+    h.line('Remote endpoint / lower socket', 406, 160, 430, 160, '#777d8f', 1, host);
     h.text('Source local-host card heading', 'Revoke instantly', 42, 240, 450, 22, ink, 'Space Grotesk', 500, {}, host);
     h.text('Diagram qualification', 'RECOMPOSED CONNECTION GEOMETRY', 42, 279, 450, 11, muted, 'IBM Plex Mono', 400, {}, host);
 
     h.text('Keycap sample annotation', 'KEYCAPS / STATIC SAMPLE', 42, 34, 440, 12, muted, 'IBM Plex Mono', 400, {}, ticket);
     keycap('Caret keycap', 132, 88, 112, '^', ticket);
     keycap('Dollar keycap', 264, 88, 112, '$', ticket);
+    const legends = h.group('Keycap / inset etched legends', 146, 102, 216, 30, {}, ticket);
+    for (let index = 0; index < 8; index++) {
+      h.frame(`Caret inset notch ${index + 1}`, index * 3, 0, 1, 3 + index % 3, '#34394a', {}, legends);
+      h.frame(`Dollar inset notch ${index + 1}`, 170 + index * 3, 0, 1, 3 + index % 3, '#34394a', {}, legends);
+    }
     h.frame('Sample ticket strip', 132, 176, 244, 40, '#22223b', { radius: '8px', border: '1px solid #454361' }, ticket);
-    h.text('Sample ticket annotation', 'STATIC / SINGLE USE', 146, 188, 216, 12, '#c5c2f3', 'IBM Plex Mono', 400, { textAlignment: 'center' }, ticket);
+    h.text('Sample ticket annotation', '4J8K-WQ2M', 146, 188, 216, 15, '#c5c2f3', 'IBM Plex Mono', 400, { textAlignment: 'center', letterSpacing: '0.08em' }, ticket);
     h.text('Source keycap card heading', 'Single-use tickets', 42, 240, 450, 22, ink, 'Space Grotesk', 500, {}, ticket);
     h.text('Keycap qualification', 'NATIVE FRAMES / EDITABLE LEGENDS', 42, 279, 450, 11, muted, 'IBM Plex Mono', 400, {}, ticket);
 

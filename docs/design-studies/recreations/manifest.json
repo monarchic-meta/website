@@ -1960,7 +1960,7 @@
     "simplifications": [
       "Creative-source adaptation of the technical cards, keycaps, terminal, and connection diagram observed in @icanvardar’s post https://x.com/icanvardar/status/2094171308795826332; the posting account is credited without asserting independent authorship of every source asset.",
       "The card arrangement is recomposed on a plain dark field. Photographic scenery and source application functionality are omitted; all content is a static graphic sample, not a Monarchic product claim.",
-      "Native frames, text, and rectilinear connection segments replace the animated-SVG presentation and curved paths. IBM Plex Mono and Space Grotesk replace source fonts.",
+      "Native frames and text study the layered keycap faces, inset diagram field, ticket strip, and terminal. Curved return routes are sampled into short editable native line segments rather than squared elbows. IBM Plex Mono and Space Grotesk replace source fonts.",
       "Static study only: source motion, animated connections, terminal behavior, and interactions are not reproduced. No imported SVG, bitmap, or code component is used."
     ],
     "framerSourceSection": "rHeXK4bVd",
@@ -1971,8 +1971,8 @@
     "framerLabel": "q4BYvWFb0",
     "framerCreditText": "iOjY1itMJ",
     "framerCaption": "KWN8KSaFW",
-    "recipeFrames": 36,
-    "nativeFrames": 37,
+    "recipeFrames": 69,
+    "nativeFrames": 70,
     "nativeText": 18,
     "importedSVGs": 0,
     "rasterFills": 0,
@@ -1980,11 +1980,54 @@
       {
         "name": "Recomposed technical interface / static sample",
         "id": "TGEMcv2yO"
+      },
+      {
+        "name": "Local host / connection card",
+        "id": "nRVEU6b2z"
+      },
+      {
+        "name": "Single-use / keycap card",
+        "id": "dJYCZYa3d"
+      },
+      {
+        "name": "Shell / static terminal card",
+        "id": "i6yHbAIkO"
+      },
+      {
+        "name": "Loopback address keycap",
+        "id": "r2nU1Csj9"
+      },
+      {
+        "name": "Caret keycap",
+        "id": "YGpDbgOKv"
+      },
+      {
+        "name": "Dollar keycap",
+        "id": "Pb4rxR8xC"
+      },
+      {
+        "name": "Keycap / inset etched legends",
+        "id": "k2RSkX_1u"
       }
     ],
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerVerifiedDate": "2026-10-23",
-    "framerDesignPage": "a_19JJYFC"
+    "framerVerifiedDate": "2026-10-29",
+    "framerDesignPage": "a_19JJYFC",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "CC-012",
+      "change": "Restored curved return paths and finer inset/keycap detail. Arrangement remains recomposed and source application behavior is not implemented.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "3e47ecb6493b04e54fb4b9f67d727f70fe1af6a496f0db92c4823df89e60d039",
+      "compiledPayloadSHA256": "74b0aa2130e6e3e3eeb05f3b71f63d467e2f9ffa822214dccdbe5ceef198b61c",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-20",
