@@ -124,7 +124,7 @@ async function run() {
         frame = null;
         getContext(kind) {
             if (kind === '2d')
-                return this.twoD ??= new Proxy({ canvas: this, fillStyle: '#ffffff', drawImage: (source) => {
+                return this.twoD ??= new Proxy({ canvas: this, fillStyle: '#ffffff', createLinearGradient: () => ({ addColorStop() {} }), drawImage: (source) => {
                         copies++;
                         if (this.copyFailures > 0) {
                             this.copyFailures--;
