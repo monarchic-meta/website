@@ -101,14 +101,17 @@ float terrain(vec2 p, float t) {
 }
 vec3 ditheredTerrain(vec2 frag) {
     // Quantization is locked to CSS-pixel cells, independent of display DPR.
-    vec2 cell = floor(frag/u_pixelSize);
-    vec2 p = ((cell+.5)*u_pixelSize-.5*u_cssResolution)/u_cssResolution.y;
-    vec3 ro = vec3(1.8+u_mouse.x*.7,1.25+u_mouse.y*.4,2.7);
-    vec3 target = vec3(0.0,-.35,-.3);
+    float cellSize = max(1.0,u_pixelSize*.58);
+    vec2 cell = floor(frag/cellSize);
+    vec2 p = ((cell+.5)*cellSize-.5*u_cssResolution)/u_cssResolution.y;
+    // The inspected frame is a close, uninterrupted field of broad folds.
+    // A downward camera removes the unrelated horizon in the earlier study.
+    vec3 ro = vec3(1.30+u_mouse.x*.5,2.6+u_mouse.y*.3,1.7);
+    vec3 target = vec3(-.2,-.35,-.1);
     vec3 forward = normalize(target-ro);
     vec3 right = normalize(cross(forward,vec3(0,1,0)));
     vec3 up = cross(right,forward);
-    vec3 rd = normalize(forward*1.75+right*p.x*2.0+up*p.y*2.0);
+    vec3 rd = normalize(forward*1.9+right*p.x*1.55+up*p.y*1.55);
     float distance = .3;
     bool hit = false;
     for(int i=0;i<76;i++) {
@@ -125,10 +128,10 @@ vec3 ditheredTerrain(vec2 frag) {
         vec3 normal = normalize(vec3(terrain(q.xz-vec2(e,0),u_time)-terrain(q.xz+vec2(e,0),u_time),2.0*e,
             terrain(q.xz-vec2(0,e),u_time)-terrain(q.xz+vec2(0,e),u_time)));
         float diffuse = max(0.0,dot(normal,normalize(vec3(-.7,.6,-.6))));
-        float ridge = .5+.5*sin(q.z*1.45+q.x*.6+u_time*.1);
-        tone = .08+diffuse*.76+ridge*.17;
+        float ridge = .5+.5*sin(q.z*1.05+q.x*.45+u_time*.1);
+        tone = .03+diffuse*.91+ridge*.11;
         // Soft pink distance fade over independently composed moving terrain.
-        tone = mix(tone,.53,1.0-exp(-distance*distance*.018));
+        tone = mix(tone,.53,1.0-exp(-distance*distance*.004));
     }
     tone = clamp((tone-.5)*u_intensity+.5,0.0,1.0)*2.0;
     float index = floor(tone) + step(bayer(cell),fract(tone));
@@ -138,23 +141,23 @@ vec3 coronal(vec2 p) {
     // Broad irregular plasma folds replace the repeated bead-like rim. The
     // observed aperture, hot shell and escaping wisps guide original geometry.
     vec3 ro=vec3(0,0,2.65),rd=normalize(vec3(p*2.05,-2.65));
-    vec3 light=vec3(0);float transmittance=1.0;
+    vec3 light=vec3(0);float transmittance=1.0,hotCore=0.0;
     for(int i=0;i<64;i++){
         float travel=1.30+float(i)*.042;
         vec3 q=ro+rd*travel;
         q.xz=rot(.16*sin(u_time*.16)+u_mouse.x*.45)*q.xz;
         q.yz=rot(.20+u_mouse.y*.35)*q.yz;
-        float angle=atan(q.y,q.x),radius=.51+.04*sin(angle*2.0+u_time*.31)+.022*cos(angle*5.0-u_time*.21);
+        float angle=atan(q.y,q.x),radius=.55+.04*sin(angle*2.0+u_time*.31)+.022*cos(angle*5.0-u_time*.21);
         vec3 drift=vec3(u_time*.11,-u_time*.16,u_time*.08);
         float broad=fbm(q*4.4+drift);
         vec3 curled=q*11.0+vec3(broad*3.2,-broad*2.4,broad*1.7);
         float fine=noise(curled-drift*1.8);
         float tube=length(vec2(length(q.xy)-radius,q.z*.92));
-        float shell=tube-(.19+.085*(broad-.5)+.04*sin(q.y*9.0+q.z*7.0-u_time*.5));
+        float shell=tube-(.14+.065*(broad-.5)+.035*sin(q.y*9.0+q.z*7.0-u_time*.5));
         float fold=sin(q.x*19.0+q.y*13.0+q.z*27.0+fine*7.0+broad*8.0-u_time*.8);
         float thread=exp(-abs(fold)*6.8);
-        float hot=exp(-abs(shell)*54.0)*(.42+1.9*thread);
-        float veil=exp(-abs(shell)*15.0)*(.22+.8*fine*fine);
+        float hot=exp(-abs(shell)*76.0)*(.20+2.1*thread);
+        float veil=exp(-abs(shell)*23.0)*(.12+.65*fine*fine);
         float escaping=max(shell,0.0);
         float sector=pow(.5+.5*cos(angle*2.0-4.55),7.0);
         sector*=.65+.35*sin(angle+.5);
@@ -162,43 +165,55 @@ vec3 coronal(vec2 p) {
         float plume=exp(-escaping*4.3)*smoothstep(.025,.18,shell)*sector
             *(.08+wisp*.92)*pow(max(broad-.23,0.0)*1.8,2.0);
         // Broad angular sectors provide uneven emission without periodic cells.
-        float arc=.22+.78*pow(.5+.5*sin(angle*2.0+q.z*3.0+u_time*.23),2.0);
-        float energy=(hot*5.0+veil*1.0)*arc+plume*6.0;
+        float arc=.14+.86*pow(.5+.5*sin(angle*2.0+q.z*3.0+u_time*.23),3.0);
+        float energy=(hot*5.0+veil*.55)*arc+plume*3.0;
         float palette=.5+.5*sin(angle*2.0+q.z*3.4+broad*.8-u_time*.12);
         vec3 color=mix(u_primary,u_secondary,palette);
-        color=mix(color,vec3(.98,1.0,1.0),clamp(hot*.58,0.0,.84));
+        // Only the hottest folds turn white; colored translucent sheets survive.
+        color=mix(color,vec3(.98,1.0,1.0),clamp((hot-.65)*.60,0.0,.80));
         light+=color*energy*.19*transmittance*u_intensity;
+        float hotSector=.18+.82*pow(.5+.5*sin(angle*3.0+q.z*2.0+u_time*.17),8.0);
+        hotCore+=pow(max(hot-.9,0.0),2.5)*hotSector*arc*.20*transmittance*u_intensity;
         transmittance*=exp(-veil*.009);
     }
-    return vec3(1)-exp(-light*3.1);
+    float peak=max(light.r,max(light.g,light.b));
+    vec3 saturated=light/max(peak,.0001)*(1.0-exp(-peak*2.4))*1.65;
+    float whitePeak=1.0-exp(-hotCore*2.8);
+    return clamp(mix(saturated,vec3(1.0),whitePeak*.86),0.0,1.0);
 }
 vec3 wave(vec2 p) {
-    // Independent volumetric curtain: a moving folded sheet, not a source image.
-    p = rot(-.26+u_mouse.x*.12)*p;
+    // A narrow folded luminous spine with long irregular translucent streamers.
+    // Domain-warped contour filaments replace the former orthogonal mesh cells.
+    p = rot(-.11+u_mouse.x*.12)*p;
     vec3 ro = vec3(u_mouse.x*.18,u_mouse.y*.14,2.8);
     vec3 rd = normalize(vec3(p*2.1,-2.8));
     vec3 light = vec3(0.0);
     for(int i=0;i<48;i++) {
         float travel = 1.5+float(i)*.057;
         vec3 q = ro+rd*travel;
-        q.xz = rot(q.y*.42+.17*sin(u_time*.25))*q.xz;
-        float n = fbm(q*5.2+vec3(u_time*.13,-u_time*.28,u_time*.18));
-        float path = .20*sin(q.y*2.8+q.z*2.2-u_time*.52)
-            +.06*sin(q.y*6.2-q.z*3.1+u_time*.38);
-        float surface = q.x-path-.055*(n-.5);
-        float fold = .5+.5*sin(q.z*9.0+q.y*6.0-u_time*.9+n*5.0);
-        float filaments = pow(.5+.5*sin(q.y*32.0+q.z*27.0+n*12.0-u_time*1.4),9.0);
-        float core = exp(-abs(surface)*105.0)*(.24+filaments*1.8);
-        float veil = exp(-abs(surface)*16.0)*(.12+.7*fold*fold)*(.4+.6*n);
-        float halo = exp(-abs(surface)*5.0)*pow(max(n-.30,0.0),2.0);
-        float edgeFade = exp(-pow(abs(q.z)*.9,4.0));
-        float palette = smoothstep(-.55,.6,q.y+.28*sin(q.z*2.0+u_time*.22));
-        vec3 color = mix(u_primary,u_secondary,palette);
-        color = mix(color,vec3(.98,1.0,.96),min(core*.18,.7));
-        light += color*(core*2.5+veil*.55+halo*.7)*edgeFade*.16*u_intensity;
+        vec3 drift=vec3(u_time*.13,-u_time*.24,u_time*.15);
+        float broad=fbm(q*3.8+drift);
+        float fine=noise(q*14.0+vec3(broad*3.0,-broad*2.0,broad*4.0)-drift);
+        float path=.115*sin(q.y*3.7+q.z*1.3-u_time*.25)
+            +.028*sin(q.y*9.0+q.z*4.0+fine*2.0-u_time*.4);
+        float surface=q.x-path-.035*(broad-.5);
+        float folded=surface+.028*sin(q.z*14.0+q.y*6.0+broad*8.0-u_time*.45);
+        float filaments=exp(-abs(sin(q.z*24.0+q.y*13.0+fine*4.2+broad*6.0-u_time*.6))*8.0);
+        float core=exp(-abs(folded)*90.0)*(.16+filaments*1.55);
+        float veil=exp(-abs(surface)*12.0)*(.13+.65*fine*fine);
+        float wing=max(surface,0.0);
+        float flowing=sin(q.y*9.0+q.z*9.0-wing*7.5+broad*5.0+fine*2.5-u_time*.5);
+        float streamer=exp(-abs(flowing)*8.0)*exp(-wing*3.0)*smoothstep(.015,.14,wing);
+        streamer*=pow(max(broad-.27,0.0),1.5)*2.0;
+        float edgeFade=exp(-pow(abs(q.z)*.86,4.0));
+        float palette=smoothstep(-.35,.5,q.y+.10*sin(q.z*2.0+u_time*.22));
+        vec3 color=mix(u_primary,u_secondary,palette);
+        color=mix(color,vec3(.99,1.0,.97),clamp(core*.30,0.0,.65));
+        light+=color*(core*2.6+veil*.48+streamer*.9)*edgeFade*.16*u_intensity;
     }
-    return vec3(1.0)-exp(-light*2.2);
+    return vec3(1.0)-exp(-light*2.25);
 }
+
 void main() {
     vec2 uv = (gl_FragCoord.xy-.5*u_resolution)/u_resolution.y;
     vec3 color;
@@ -240,46 +255,40 @@ void main() {
   float strandFade = 1.0;
 
   if (a_kind < 0.5) {
-    // A hemisphere-like cap occupies the first 48% of the longitudinal grid.
-    // The remainder is a continuous pinched drape, not a disconnected object.
-    if (s < 0.48) {
-      float cap = s / 0.48;
-      float theta = cap * PI * 0.5;
-      radius = 0.56 * sin(theta) * breath;
-      height = 0.085 + 0.225 * cos(theta);
-      depthScale = 0.48;
-      float ripple = 0.006 * sin(phase * 7.0 + cap * 15.0 - tm * 1.05);
-      height += ripple * sin(theta) * sin(theta);
-      radius += 0.004 * sin(phase * 5.0 - tm * 0.8) * sin(theta) * cos(theta);
-      density = 0.22 + 0.78 * smoothstep(0.02, 0.22, radius);
+    if (s < 0.34) {
+      float cap=s/.34,theta=cap*PI*.5;
+      radius=.305*sin(theta)*breath;
+      height=.105+.13*cos(theta);
+      depthScale=.46;
+      height+=.003*sin(phase*7.0+cap*12.0-tm*.7)*sin(theta);
+      density=.40+.52*smoothstep(.015,.14,radius);
     } else {
-      float drop = (s - 0.48) / 0.52;
-      // Fast collapse near the rim makes a narrow throat; the lower bulge and
-      // taper preserve the airy hanging-fabric/tentacle silhouette.
-      float bulge = sin(PI * drop);
-      radius = (0.025 + 0.535 * exp(-19.0 * drop)
-               + 0.12 * bulge * bulge * (1.0 - 0.5 * drop)) * breath;
-      height = 0.085 - 0.465 * drop;
-      phase += drop * 3.1 + 0.28 * (sin(drop * 10.0 - tm * 0.8) - sin(-tm * 0.8));
-      radius *= 1.0 + 0.12 * sin(phase * 3.0 - drop * 9.0 + tm * 0.65)
-                * smoothstep(0.0, 0.16, drop);
-      height += 0.005 * sin(phase * 4.0 - drop * 14.0 + tm * 0.9) * bulge;
-      height += 0.006 * sin(phase * 7.0 + 15.0 - tm * 1.05) * exp(-12.0 * drop);
-      depthScale = mix(0.48, 0.68, smoothstep(0.0, 0.2, drop));
-      density = 0.56 + 0.25 * (1.0 - drop);
-      strandFade = 1.0 - 0.6 * smoothstep(0.82, 1.0, drop);
+      float drop=(s-.34)/.66;
+      // Rim to throat, a reopened lower hourglass, then loose trailing lanes.
+      float neck=.305*exp(-16.0*drop);
+      float lower=.145*pow(sin(PI*clamp((drop-.13)/.87,0.0,1.0)),1.6);
+      radius=(.012+neck+lower)*breath;
+      height=.105-.47*drop;
+      phase+=drop*3.4+.20*sin(drop*9.0-tm*.6+lane*.5);
+      radius*=1.0+.20*sin(phase*3.0-drop*7.0+tm*.55)*smoothstep(.06,.3,drop);
+      height+=.008*sin(phase*3.0-drop*12.0+tm*.6)*sin(PI*drop);
+      // The last rows separate into longer curling tails instead of a cone tip.
+      float tail=smoothstep(.73,1.0,drop);
+      radius+=tail*(.02+.025*sin(lane*3.0+drop*11.0-tm*.4));
+      height-=tail*.045*(.5+.5*sin(lane*5.0));
+      depthScale=mix(.46,.65,smoothstep(0.0,.2,drop));
+      density=.64;
+      strandFade=1.0-.42*smoothstep(.86,1.0,drop);
     }
   } else {
-    // a_grid.x is one fixed lane per strand; a_grid.y runs along the strand.
-    // Strand length and shape vary smoothly by lane, with no random glitter.
-    phase = lane + 0.18 * tm + s * 7.2 + 0.3 * sin(s * 8.0 - tm * 0.7 + lane);
-    float bow = sin(PI * s);
-    radius = 0.027 + 0.073 * bow * bow;
-    radius *= 1.0 + 0.22 * sin(s * 12.0 - tm * 0.7 + lane * 2.0);
-    height = -0.008 - s * (0.38 + 0.055 * (0.5 + 0.5 * sin(lane * 3.0)));
-    depthScale = 0.72;
-    density = 0.62;
-    strandFade = 1.0 - 0.75 * smoothstep(0.65, 1.0, s);
+    phase=lane+.13*tm+s*5.0+.45*sin(s*8.0-tm*.45+lane);
+    float bow=sin(PI*s);
+    radius=.012+.11*bow*bow;
+    radius*=1.0+.30*sin(s*10.0-tm*.6+lane*2.0);
+    height=.055-s*(.45+.045*(.5+.5*sin(lane*3.0)));
+    depthScale=.64;
+    density=.57;
+    strandFade=1.0-.55*smoothstep(.76,1.0,s);
   }
 
   vec3 p = vec3(radius * cos(phase), height,
@@ -307,7 +316,7 @@ void main() {
                      screen.y * 2.0, 0.0, 1.0);
 
   float front = clamp(0.62 - p.z * 1.25, 0.25, 1.0);
-  gl_PointSize = clamp(u_resolution.y * 0.0030 * perspective,
+  gl_PointSize = clamp(u_resolution.y * 0.0038 * perspective,
                        1.0, 3.6);
   v_opacity = clamp(u_intensity, 0.0, 2.0) * density * strandFade
               * (0.24 + 0.5 * front);
@@ -330,7 +339,7 @@ void main() {
   float core = exp(-r2 * 3.2);
   float halo = exp(-r2 * 2.8) * 0.12;
   float edge = 1.0 - smoothstep(0.72, 1.0, r2);
-  float alpha = min((core + halo) * edge * v_opacity * 1.7, 1.0);
+  float alpha = min((core + halo) * edge * v_opacity * 2.4, 1.0);
   gl_FragColor = vec4(vec3(v_white), alpha);
 }
 `
