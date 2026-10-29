@@ -1027,7 +1027,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-006",
+        "change": "Pointed petal chambers in overlapping radial tiers carry closed nested contours and broad luminous faces.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-14",
@@ -1107,7 +1115,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-017",
+        "change": "A broad warped icy band combines crossing tributaries, irregular folds and branching multiscale relief.",
+        "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-15",
@@ -1157,7 +1173,7 @@
       "framerComponentId": "codeFile/Ym8lrvp:default",
       "framerCodePath": "FieldCodingStudy.tsx",
       "intentionalDifferences": [
-        "An original ray-marched square corridor uses repeated ribs and bounded relief. Fractal recursion, source geometry and physical lighting are not claimed."
+        "An independently composed ray-marched corridor uses short staggered chipped wall chunks, red surfaces, selective hot fractures and restrained warm haze. Source fractal recursion, exact geometry and physical lighting are not claimed."
       ],
       "framerLabPage": "SqfboNSM6",
       "framerLabPath": "/prototypes/creative-coding-lab",
@@ -1187,7 +1203,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-018",
+        "change": "Short chipped relief uses burgundy/red faces, selective yellow-white fractures and restrained warm haze.",
+        "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-16",
@@ -1267,7 +1291,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-019",
+        "change": "Eight luminous mark families add stems, bars, angular fragments and open bowls with varied placement.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-17",
@@ -2712,7 +2744,7 @@
     },
     {
       "source": "FieldCodingStudy.tsx",
-      "sourceSHA256": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+      "sourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
       "framerCodePath": "FieldCodingStudy.tsx",
       "framerComponentId": "codeFile/Ym8lrvp:default"
     },

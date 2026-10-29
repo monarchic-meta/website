@@ -83,83 +83,119 @@ vec3 lightColor(float blue,float white){
     return 1.0-exp(-(u_secondary*blue+u_primary*white)*u_intensity);
 }
 vec3 radial(vec2 uv){
-    // A folded polar field, with warped multi-scale branches. The luminous
-    // center and dense radial relief are observed motifs, not a copied formula.
+    // Explicit pointed petal chambers carry closed nested contours. Overlapping
+    // radial tiers replace the earlier field of mostly straight luminous hairs.
     vec2 p=uv-vec2(.02,.10)-u_mouse*.035;
-    float r=max(length(p),.003),a=atan(p.y,p.x),t=u_time*.22;
-    vec2 direction=vec2(cos(a),sin(a));
-    float warp=fbm(direction*3.0+vec2(log(r+.04)*1.9,t*.35));
-    float bent=a+.11*sin(a*7.0+r*8.0-t)+.17*(warp-.5);
-    float radialPhase=log(r+.045)*13.0-t*2.3;
-    float branches=sin(bent*27.0+radialPhase+3.0*warp);
-    float fine=sin(bent*73.0-radialPhase*1.3+4.0*warp);
-    float vein=exp(-abs(branches)*14.0),thread=exp(-abs(fine)*23.0);
-    float detail=fbm(p*34.0+direction*t*.17);
-    float ridge=pow(.5+.5*sin(radialPhase*1.4+warp*12.0),5.0);
-    float density=.35+.65*smoothstep(.05,.5,r);
-    float haze=exp(-r*1.35)*(.22+.4*warp);
-    float fingers=vein*(.28+.85*detail)+thread*.30;
-    float core=exp(-r*21.0)*2.5;
-    float outer=1.0-smoothstep(.25,1.05,r);
-    float white=(fingers*(.55+ridge)*density+core)*outer;
-    float blue=(haze+fingers*.55+ridge*.10)*outer;
-    vec3 c=lightColor(blue*1.8,white*1.3);
-    return mix(u_ink,c,clamp(outer+.25,0.0,1.0));
+    float r=max(length(p),.003),a=atan(p.y,p.x),t=u_time*.13;
+    float warp=fbm(p*7.0+vec2(t,-t*.6)),faces=0.0,edges=0.0,contours=0.0;
+    for(int i=0;i<4;i++){
+        float k=float(i),count=12.0+mod(k,2.0)*2.0;
+        float curved=a+.10*sin(r*7.0-t+k)+.075*(warp-.5);
+        float angular=curved*count/(2.0*PI)+k*.47;
+        float sector=floor(angular),theta=(fract(angular)-.5)*(2.0*PI/count);
+        float center=.14+k*.18,len=.16+k*.065;
+        float x=(r*cos(theta)-center)/len;
+        float width=(.030+k*.023)*(1.0+.13*sin(sector*1.9+k));
+        float y=(r*sin(theta)+.012*sin(x*4.0+k+t)*(1.0-min(x*x,1.0)))/width;
+        float chamber=pow(abs(x),1.55)+pow(abs(y),1.35);
+        float inside=1.0-smoothstep(.93,1.10,chamber);
+        float boundary=exp(-abs(chamber-1.0)*21.0);
+        float nested=exp(-abs(sin(sqrt(max(chamber,.001))*25.0+warp*2.3-t))*6.5);
+        float relief=.45+.55*(.5+.5*cos(x*3.7+y*.65+k));
+        faces+=inside*relief*.20;
+        edges+=boundary*(.50+.50*relief);
+        contours+=inside*nested*(.38+.38*relief);
+    }
+    float outer=1.0-smoothstep(.62,1.21,r),core=exp(-r*r*130.0)*3.4;
+    float white=(edges*.70+contours*.60+faces*.15+core)*outer;
+    float blue=(faces*.9+contours*.37+edges*.32+.15)*outer;
+    return mix(u_ink,lightColor(blue*2.0,white*1.8),outer);
 }
 vec3 ridge(vec2 uv){
-    // An oblique luminous boundary with stacked, advecting ridges above it.
-    // The lower-left remains dark negative space, as in the observed crop.
-    vec2 p=rot(-.57)*(uv-u_mouse*.025);
-    float t=u_time*.18;
-    float base=-.105+.025*sin(p.x*6.0-t)+.018*sin(p.x*15.0+t*.6);
+    // Several turbulent, intersecting folds form a broad icy band; the source
+    // frame's bright branching relief is more than evenly spaced contour lines.
+    vec2 p=rot(-.57)*(uv-u_mouse*.025);float t=u_time*.13;
+    float base=-.12+.035*sin(p.x*5.0-t)+.025*sin(p.x*13.0+t*.6);
     float h=p.y-base;
-    float n=fbm(vec2(p.x*5.8+t*.6,h*8.0-t*.3));
-    float fold=h+.035*sin(p.x*22.0+h*17.0+t)+.055*(n-.5);
-    float layers=sin(fold*94.0+6.0*n+sin(p.x*12.0+t)*1.5);
-    float veins=exp(-abs(layers)*12.0);
-    float strands=exp(-abs(sin(p.x*93.0+fold*38.0+n*12.0-t))*20.0);
-    float front=exp(-abs(h)*125.0);
-    float above=smoothstep(-.012,.018,h);
-    float mass=exp(-max(h,0.0)*2.1)*above;
-    float detail=.4+.6*fbm(vec2(p.x*29.0-t,h*39.0+t*.7));
-    float white=front*2.4+mass*veins*(.22+.8*detail)+mass*strands*.12;
-    float blue=mass*(.18+.30*n+veins*.40)+front*.20;
-    float falloff=1.0-smoothstep(.28,.80,h);
-    return mix(u_ink,lightColor(blue*1.5,white),clamp(falloff,0.0,1.0));
+    vec2 flow=vec2(p.x*3.6+t*.35,h*5.0-t*.25);
+    vec2 warp=vec2(fbm(flow+vec2(0,2.1)),fbm(flow+vec2(4.6,0)))-.5;
+    vec2 folded=flow+warp*1.65;
+    float medium=fbm(folded*2.4+vec2(-t,t*.6));
+    float small=fbm(folded*6.0+vec2(t*.5,-t));
+    float branches=exp(-abs(medium-.49)*30.0);
+    float threads=exp(-abs(small-.51)*48.0);
+    float sheet=0.0;
+    for(int i=0;i<3;i++){
+        float k=float(i);
+        float path=.035+k*.13+.045*sin(p.x*(6.0+k*3.0)+t+k*2.2)+.065*(medium-.5);
+        float distance=h-path-.025*sin(p.x*27.0+h*11.0+k*4.0+t);
+        sheet+=exp(-abs(distance)*(62.0+k*10.0))*(.5+.65*small);
+    }
+    float front=exp(-abs(h+.04*(medium-.5))*83.0);
+    float above=smoothstep(-.055,.07,h),mass=above*exp(-max(h-.05,0.0)*2.5);
+    float detail=.45+.55*small;
+    float white=front*1.15+mass*(sheet*1.35+branches*detail*.94+threads*.30);
+    float blue=mass*(.29+medium*.28+branches*.35+sheet*.21)+front*.14;
+    float falloff=1.0-smoothstep(.38,.88,h);
+    return mix(u_ink,lightColor(blue*1.45,white*1.45),falloff);
 }
 float corridorDistance(vec3 p){
-    // Square room walls, repeated rectangular ribs and a bounded relief field.
-    // This is an original architectural distance field, not the source fractal.
-    float radius=max(abs(p.x),abs(p.y));
-    float relief=.017*sin(p.x*31.0+p.z*8.0)*sin(p.y*27.0-p.z*5.0);
-    relief+=.009*sin(p.x*69.0+p.y*39.0+p.z*19.0);
-    float walls=1.10-radius+relief;
-    float slab=abs(mod(p.z+.7,1.4)-.7)-.065;
-    float frame=max(abs(radius-.99)-.105,slab);
-    return min(walls,frame);
+    // Short staggered chunks and chipped diagonal corners create irregular
+    // fractured relief. No long complete ribs or plank-like wall strips remain.
+    p.xy=rot(.045*sin(p.z*.37))*p.xy;
+    float walls=1.30-max(abs(p.x),abs(p.y));
+    vec2 xcell=floor(vec2((p.y+.035*floor(p.z/.26))/.20,p.z/.26));
+    vec2 ycell=floor(vec2((p.x+.04*floor(p.z/.29))/.23,(p.z+.07)/.29));
+    float hx=.12+.35*hash2(xcell+vec2(step(0.0,p.x)*17.0,3.0));
+    float hy=.11+.32*hash2(ycell+vec2(11.0,step(0.0,p.y)*23.0));
+    vec3 xq=vec3(abs(p.x)-(1.27-hx*.5),mod(p.y+.035*floor(p.z/.26),.20)-.10,mod(p.z,.26)-.13);
+    vec3 yq=vec3(mod(p.x+.04*floor(p.z/.29),.23)-.115,abs(p.y)-(1.27-hy*.5),mod(p.z+.07,.29)-.145);
+    xq.yz=rot((hash2(xcell+6.3)-.5)*.28)*xq.yz;
+    yq.xz=rot((hash2(ycell+4.2)-.5)*.26)*yq.xz;
+    vec3 xb=abs(xq)-vec3(hx*.5,.085,.114),yb=abs(yq)-vec3(.099,hy*.5,.128);
+    float xd=length(max(xb,0.0))+min(max(xb.x,max(xb.y,xb.z)),0.0);
+    float yd=length(max(yb,0.0))+min(max(yb.x,max(yb.y,yb.z)),0.0);
+    xd=max(xd,(xq.y-xq.z)*.64-.087)-.004;
+    yd=max(yd,(yq.x+yq.z)*.63-.095)-.004;
+    vec3 cq=vec3(abs(p.x)-1.03,mod(p.y+.12*floor(p.z/.83),.43)-.215,mod(p.z+.17,.83)-.415);
+    vec3 cb=abs(cq)-vec3(.15,.173,.115);
+    float chunk=length(max(cb,0.0))+min(max(cb.x,max(cb.y,cb.z)),0.0);
+    return min(walls,min(min(xd,yd),chunk));
 }
 vec3 corridor(vec2 uv){
-    vec3 ro=vec3(.14+.025*sin(u_time*.17),-.04,u_time*.38);
+    vec3 ro=vec3(.19+.025*sin(u_time*.17),-.08,u_time*.38);
     vec3 rd=normalize(vec3(uv*1.72+u_mouse*.06,1.22));
-    rd.xy=rot(.035*sin(u_time*.12))*rd.xy;
-    float travel=.03;vec3 q=ro;bool hit=false;
-    for(int i=0;i<64;i++){
+    rd.xy=rot(.045+.025*sin(u_time*.12))*rd.xy;
+    float travel=.03;vec3 q=ro,volume=vec3(0);bool hit=false;
+    for(int i=0;i<80;i++){
         q=ro+rd*travel;float d=corridorDistance(q);
         if(d<.0018){hit=true;break;}
-        travel+=max(d*.65,.0015);if(travel>19.0)break;
+        float stepLength=max(d*.58,.0015);
+        float heat=.5+.5*sin(q.z*1.8+q.x*2.2+u_time*.18);
+        vec3 hazeColor=mix(u_secondary*vec3(.80,.22,.08),u_primary,heat*heat*.15);
+        volume+=hazeColor*exp(-max(d,0.0)*23.0)*min(stepLength,.10)*1.8*exp(-travel*.18);
+        travel+=stepLength;if(travel>19.0)break;
     }
-    if(!hit)return u_ink;
+    if(!hit)return u_ink+(1.0-exp(-volume*u_intensity));
     vec2 e=vec2(.002,0);
     vec3 normal=normalize(vec3(corridorDistance(q+e.xyy)-corridorDistance(q-e.xyy),corridorDistance(q+e.yxy)-corridorDistance(q-e.yxy),corridorDistance(q+e.yyx)-corridorDistance(q-e.yyx)));
-    float light=.18+.82*max(dot(normal,normalize(vec3(-.35,.48,-.75))),0.0);
-    float relief=fbm(q.xy*18.0+vec2(q.z*2.1,-q.z*1.4));
-    float cracks=pow(.5+.5*sin(q.z*38.0+q.x*51.0+q.y*57.0+relief*12.0),15.0);
-    float ribs=exp(-abs(sin(q.z*PI/1.4))*15.0);
-    float distanceFade=exp(-travel*.21);
-    vec3 material=mix(u_secondary,u_primary,clamp(light*.7+relief*.3,0.0,1.0));
-    vec3 color=material*(light*.8+cracks*.30+ribs*.55)*u_intensity*distanceFade;
-    color+=u_secondary*(.06+.08*relief)*distanceFade;
-    return mix(u_ink,1.0-exp(-color*1.8),clamp(distanceFade*1.8,0.0,1.0));
+    vec3 lamp=ro+vec3(.67,.80,2.5);float diffuse=max(dot(normal,normalize(lamp-q)),0.0);
+    float detail=fbm(q.xy*19.0+vec2(q.z*3.3,-q.z*2.1));
+    float fractures=exp(-abs(detail-.51)*55.0);
+    float occlusion=clamp(corridorDistance(q+normal*.06)/.06,.12,1.0);
+    float side=smoothstep(-.50,.65,q.x+q.y*.28+.14*sin(q.z*2.0));
+    float pockets=fbm(q.zy*7.0+vec2(q.x*2.7,-q.x*1.4));
+    float hotSites=smoothstep(.42,.69,pockets)*(.30+.70*side);
+    // Unheated faces stay burgundy red. Yellow-white emission is confined to
+    // selected fractures rather than bleaching complete foreground wall faces.
+    vec3 material=u_secondary*vec3(.78,.24,.12)*(.18+diffuse*.88)*occlusion;
+    material+=u_secondary*vec3(.26,.08,.025)*diffuse;
+    vec3 incandescent=mix(u_primary*vec3(1.18,.92,.55),vec3(1.0,.96,.84),hotSites);
+    float crackEnergy=pow(fractures,1.45)*(.52+hotSites*3.0);
+    vec3 emission=incandescent*crackEnergy;
+    float distanceFade=exp(-travel*.22);
+    vec3 color=material*distanceFade+emission*exp(-travel*.28)+volume*.35;
+    return u_ink+(1.0-exp(-color*u_intensity*1.6));
 }
 float segment(vec2 p,vec2 a,vec2 b){vec2 d=b-a;return length(p-a-d*clamp(dot(p-a,d)/dot(d,d),0.0,1.0));}
 float arc(vec2 p,vec2 radii,float opening,float phase){
@@ -170,8 +206,8 @@ float arc(vec2 p,vec2 radii,float opening,float phase){
     return max(d,(opening-gate)*.11);
 }
 float gesture(vec2 p,float kind,float phase){
-    // Four abstract stroke families: open loops, a loop with a stem, paired
-    // loops and a hook. These suggest drawn marks rather than source lettering.
+    // Open bowls, stems, bars, paired loops and angular glyph fragments vary the
+    // mark vocabulary seen in the sampled luminous-writing source frame.
     float d=arc(p,vec2(.105,.15),.55,phase);
     if(kind<.5)return d;
     if(kind<1.5){
@@ -182,9 +218,22 @@ float gesture(vec2 p,float kind,float phase){
         d=arc(p-vec2(0,.095),vec2(.075,.09),.4,phase);
         return min(d,arc(p+vec2(0,.075),vec2(.095,.11),.45,phase+PI));
     }
-    d=arc(p-vec2(.02,.05),vec2(.09,.11),.95,phase+.8);
-    d=min(d,segment(p,vec2(-.065,-.12),vec2(-.04,.12)));
-    return min(d,segment(p,vec2(-.065,-.12),vec2(.055,-.12)));
+    if(kind<3.5){
+        d=segment(p,vec2(-.075,.17),vec2(-.055,-.18));
+        return min(d,segment(p,vec2(-.15,-.015),vec2(.12,.005)));
+    }
+    if(kind<4.5){
+        d=segment(p,vec2(-.09,-.17),vec2(.075,.18));
+        d=min(d,segment(p,vec2(.075,.18),vec2(.095,-.16)));
+        return min(d,segment(p,vec2(-.035,-.045),vec2(.13,-.045)));
+    }
+    if(kind<5.5)return min(segment(p,vec2(0,-.18),vec2(0,.17)),segment(p,vec2(-.10,-.18),vec2(.10,-.18)));
+    if(kind<6.5){
+        d=arc(p-vec2(.015,.045),vec2(.09,.10),.9,phase+.8);
+        return min(d,segment(p,vec2(-.06,-.15),vec2(.11,-.15)));
+    }
+    d=arc(p,vec2(.115,.155),1.25,phase);
+    return min(d,segment(p,vec2(-.12,.01),vec2(.105,.01)));
 }
 vec3 glyphs(vec2 uv){
     vec3 glow=vec3(0);float t=u_time*.28;
@@ -192,8 +241,8 @@ vec3 glyphs(vec2 uv){
         float k=float(i),seed=hash(k+2.0);
         vec2 center=vec2((hash(k+18.0)-.5)*1.55,(hash(k+37.0)-.5)*.82);
         float size=.28+.75*hash(k+48.0);
-        if(i<4){center=vec2((k-1.5)*.12,.02+.025*sin(k));size=1.05;}
-        float kind=floor(hash(k+71.0)*4.0),angle=(hash(k+91.0)-.5)*1.8;
+        if(i<3){center=vec2(-.32+k*.15,.02+.035*sin(k));size=.95+k*.12;}
+        float kind=floor(hash(k+71.0)*8.0),angle=(hash(k+91.0)-.5)*.75;
         for(int j=0;j<3;j++){
             float lag=float(j)*.24,phase=t-lag;
             vec2 drift=vec2(sin(phase*.85+k*2.0),cos(phase*.7+k))*vec2(.016,.012);
