@@ -50,9 +50,9 @@ interface Settings {
 }
 const COMPOSITIONS = {
     threshold: { key: "OL-01", title: "Threshold press", description: "Folded slotted manifold / tonal dither / pigment volume" },
-    loom: { key: "OL-02", title: "Signal loom", description: "Interwoven routing ribbons / cobalt and acid / over-under space" },
+    loom: { key: "OL-02", title: "Signal loom", description: "Planar optical contours / pressure slit / restrained interference" },
     phosphor: { key: "OL-03", title: "Phosphor atlas", description: "Folded filament conduit / layered mesh / traveling seam pulse" },
-    swarm: { key: "OL-04", title: "Vector swarm", description: "Asymmetric flow marks / elastic contours / open space" },
+    swarm: { key: "OL-04", title: "Vector swarm", description: "Volumetric caustic chamber / spectral folds / pixel light" },
 }
 
 const VERTEX = `
@@ -144,47 +144,74 @@ vec3 threshold(vec2 p){
     color=mix(color,u_ink,marks*.55);
     return color*u_intensity;
 }
-float ribbonCenter(float x,float row,float t){return row+.055*sin(x*5.0+t+row*9.0)+.020*sin(x*12.0-t*.55);}
+float loomPhase(vec2 q,float tm,float pitch){
+    float bend=.12*sin(q.x*3.3+.35)+.065*sin(q.x*6.0-tm*.32);
+    float spread=.22+.105*u_focus+.073*sin(q.x*3.0+.7);
+    spread*=1.0-.36*exp(-pow((q.x+.14)*3.1,2.0));
+    float y=(q.y-bend)/spread;
+    return y*pitch+.55*sin(q.x*7.0+y*.9)+.20*sin(q.x*18.0+y*3.0)-tm*.24;
+}
+float loomLowerPhase(vec2 q,float tm,float pitch){
+    return loomPhase(q,tm,pitch)+.46*sin(q.x*3.5-tm*.25)+.15+1.4*sin(q.x*2.0-.6);
+}
+// Integrate each periodic ink stripe over its pixel footprint. This retains
+// deliberate contour density without sampling beat bands on smaller screens.
+float loomStripeIntegral(float x,float halfWidth){
+    float shifted=x+halfWidth;
+    float periods=floor(shifted/3.14159265359);
+    float remainder=shifted-periods*3.14159265359;
+    return periods*(2.0*halfWidth)+clamp(remainder,0.0,2.0*halfWidth);
+}
+float loomStripe(float phase,float footprint,float cutoff){
+    float halfWidth=asin(cutoff),width=max(footprint,.0001);
+    return clamp((loomStripeIntegral(phase+width*.5,halfWidth)-loomStripeIntegral(phase-width*.5,halfWidth))/width,0.0,1.0);
+}
 vec3 loom(vec2 p){
-    vec3 paper=mix(vec3(.91,.92,.89),u_secondary,.055),color=paper;
-    vec2 q=rot(-.085)*(p-vec2(-.035,.005));
-    float tm=u_time*.40,halfWidth=.034+.012*u_focus;
-    // Broad cobalt wefts with cut channels, offset registration and blunt ends.
-    for(int i=0;i<5;i++){
-        float k=float(i),row=-.29+k*.145;
-        float y=ribbonCenter(q.x,row,tm);
-        float extent=box(vec2(q.x,q.y-y),vec2(.64,halfWidth));
-        float shadow=box(vec2(q.x-.014,q.y-y+.018),vec2(.64,halfWidth));
-        color=mix(color,u_ink,fill(shadow));
-        color=mix(color,u_primary,fill(extent));
-        float channel=box(vec2(q.x,q.y-y),vec2(.58,.006));
-        color=mix(color,paper,fill(channel));
-    }
-    // Alternating over-under crossings are actual negative interruptions.
-    for(int j=0;j<4;j++){
-        float k=float(j),x=-.46+k*.30;
-        float cx=x+.037*sin(q.y*5.0-tm+k*.8);
-        float warp=box(vec2(q.x-cx,q.y),vec2(halfWidth*.88,.38));
-        float gap=0.0;
-        for(int i=0;i<5;i++){
-            float row=-.29+float(i)*.145,y=ribbonCenter(cx,row,tm);
-            if(mod(float(i+j),2.0)<.5)gap=max(gap,1.0-smoothstep(halfWidth+.012,halfWidth+.024,abs(q.y-y)));
-        }
-        float cover=fill(warp)*(1.0-gap);
-        float border=fill(box(vec2(q.x-cx,q.y),vec2(halfWidth+.007,.385)))*(1.0-gap);
-        color=mix(color,u_ink,border);
-        color=mix(color,u_secondary,cover);
-        float seam=fill(box(vec2(q.x-cx,q.y),vec2(.005,.355)))*(1.0-gap);
-        color=mix(color,u_ink,seam*.55);
-    }
-    // Wide negative apertures clip the whole weave into a distinctive silhouette.
-    float aperture=length((q-vec2(.36,.27))*vec2(1.0,1.2))-.115;
-    color=mix(color,paper,fill(aperture));
-    float slot=box(rot(-.42)*(q-vec2(-.32,-.27)),vec2(.19,.035));
-    color=mix(color,paper,fill(slot));
-    float markers=step(.86,fract((q.x+.7)*19.0))*fill(box(q-vec2(.0,-.43),vec2(.64,.009)));
-    color=mix(color,u_ink,markers);
-    return inked(color,p,.026)*u_intensity;
+    vec3 paper=u_primary,color=paper;
+    vec2 q=rot(-.19)*(p-vec2(-.065,-.015));
+    float tm=u_time*.18;
+    // A continuous plane of closely pitched contours concentrates at the bend.
+    // Its depth is optical density and interruption, not an extruded solid.
+    float bend=.12*sin(q.x*3.3+.35)+.065*sin(q.x*6.0-tm*.32);
+    float spread=.22+.105*u_focus+.073*sin(q.x*3.0+.7);
+    spread*=1.0-.36*exp(-pow((q.x+.14)*3.1,2.0));
+    float y=(q.y-bend)/spread;
+    float fit=min(1.0,u_resolution.x/u_resolution.y/1.35);
+    float pixelsPerWorld=max(1.0,u_resolution.y*u_scale*fit);
+    float pitch=min(142.0,pixelsPerWorld*(.14+.072*u_focus)*1.28);
+    float phase=loomPhase(q,tm,pitch);
+    vec2 dx=rot(-.19)*vec2(1.0,0.0)/pixelsPerWorld;
+    vec2 dy=rot(-.19)*vec2(0.0,1.0)/pixelsPerWorld;
+    float gx=loomPhase(q+dx*.5,tm,pitch)-loomPhase(q-dx*.5,tm,pitch);
+    float gy=loomPhase(q+dy*.5,tm,pitch)-loomPhase(q-dy*.5,tm,pitch);
+    float footprint=abs(gx)+abs(gy);
+    float line=loomStripe(phase,footprint,.38);
+    float sideLeft=smoothstep(-.76,-.72,q.x),sideRight=1.0-smoothstep(.635,.66,q.x);
+    float envelope=1.0-smoothstep(.99,1.015,abs(y));
+    float plane=sideLeft*sideRight*envelope;
+    // The open counter-cut grows into white space at the right; asymmetric
+    // shoulders keep the two contour groups related without forming a handle.
+    float cutCenter=bend+.012+.030*sin(q.x*3.7+.4);
+    float cutWidth=.008+.047*smoothstep(-.29,.55,q.x);
+    float slit=(1.0-smoothstep(cutWidth,cutWidth+.002,abs(q.y-cutCenter)))*smoothstep(-.43,-.36,q.x);
+    float above=smoothstep(.004,.010,q.y-cutCenter);
+    float lowerPhase=loomLowerPhase(q,tm,pitch);
+    float lowerGX=loomLowerPhase(q+dx*.5,tm,pitch)-loomLowerPhase(q-dx*.5,tm,pitch);
+    float lowerGY=loomLowerPhase(q+dy*.5,tm,pitch)-loomLowerPhase(q-dy*.5,tm,pitch);
+    float lowerLine=loomStripe(lowerPhase,abs(lowerGX)+abs(lowerGY),.38);
+    float pigment=mix(lowerLine,line,above);
+    color=mix(color,u_ink,pigment*plane*(1.0-slit));
+    // A secondary, sparser registration layer makes one restrained moire fold.
+    float echoFootprint=abs(gx*.507+dx.x*.65)+abs(gy*.507+dy.x*.65);
+    float echo=loomStripe(phase*.507+q.x*.65+.28,echoFootprint,.27);
+    float echoMask=plane*(1.0-slit)*smoothstep(-.70,-.49,q.x)*(1.0-smoothstep(-.19,.06,q.x));
+    color=mix(color,u_ink,echo*echoMask*.15*smoothstep(420.0,600.0,pixelsPerWorld));
+    // Light catches a short edge of the same counter-cut; no detached stripe.
+    float lip=exp(-abs(q.y-cutCenter-cutWidth)*850.0);
+    float lipSpan=smoothstep(-.24,-.16,q.x)*(1.0-smoothstep(.14,.25,q.x));
+    color=mix(color,u_secondary,lip*lipSpan*.88);
+    color+=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.020;
+    return color*u_intensity;
 }
 float angularBand(float a,float start,float span){float angle=mod(a-start+TAU,TAU);return 1.0-smoothstep(span-.018,span,angle);}
 vec3 conduitLocal(vec3 p){
@@ -274,44 +301,61 @@ vec3 phosphor(vec2 p){
     color*=1.0-u_grain*.06*scan;
     return color*u_intensity;
 }
-vec2 flowCurve(float x,float row,float tm){float y=row+.15*sin(x*3.5+row*4.5-tm)+.028*sin(x*10.0+row*8.0+tm*.7);return vec2(x,y);}
+vec3 interferenceSpace(vec3 p){
+    p.xy=rot(-.34)*p.xy;
+    p.yz=rot(.35+.045*sin(u_time*.13))*p.yz;
+    p.xz=rot(-.19)*p.xz;
+    return p;
+}
 vec3 swarm(vec2 p){
-    vec3 paper=vec3(.93,.925,.895),color=paper;
-    vec2 q=p-vec2(-.13,.015);float tm=u_time*.31;
-    // Elastic open contours gather on the left and release into empty paper.
-    for(int i=0;i<13;i++){
-        float k=float(i),row=-.26+k*.043;
-        float influence=(1.0-smoothstep(-.68,.42,q.x));
-        float wave=flowCurve(q.x,row,tm).y;
-        float line=abs(q.y-wave);
-        float gate=smoothstep(-.76,-.65,q.x)*(1.0-smoothstep(.25+.09*sin(k),.52,q.x));
-        color=mix(color,mix(u_ink,u_primary,k/16.0),exp(-line*500.0)*gate*.65*influence);
+    vec3 ro=vec3(0,0,2.8),rd=normalize(vec3((p-vec2(-.035,.015))*1.23,-2.8));
+    vec3 color=u_ink*.10;
+    float transmission=1.0,tm=u_time*.24,t=1.10;
+    // Two pleated light surfaces share one actual curved crease. The small
+    // distance-guided steps resolve its thin caustic rather than blurring it.
+    for(int i=0;i<112;i++){
+        vec3 q=interferenceSpace(ro+rd*t);
+        float seamZ=.25*sin(q.x*2.6+.65)+.055*sin(q.x*6.0-tm*.18);
+        float baseY=.10*sin(q.x*3.3+.4)+.045*sin(q.x*7.5+tm*.25);
+        float dz=q.z-seamZ;
+        float fold=sqrt(dz*dz+.00036)-.019;
+        float released=smoothstep(.025,.26,abs(dz));
+        float pleatA=.030*sin(q.x*12.0+dz*17.0-tm*.6)*released;
+        float pleatB=.023*sin(q.x*15.0-dz*21.0+tm*.45)*released;
+        float a=abs(q.y-baseY-.44*fold-pleatA);
+        float b=abs(q.y-baseY+.34*fold-pleatB);
+        float seamDistance=length(vec2(q.y-baseY,dz));
+        float sheetA=exp(-a*96.0),sheetB=exp(-b*112.0);
+        float boundary=max(abs(q.x+.10)+q.z*.13,abs(q.z)*1.03);
+        float envelope=(1.0-smoothstep(.65,.86,boundary))*(1.0-smoothstep(.48,.60,abs(q.y)));
+        float phaseA=dz*37.0+q.x*8.0+.75*sin(q.x*6.0+dz*8.0-tm*.35);
+        float phaseB=dz*43.0-q.x*10.0+.55*sin(q.x*8.0-dz*7.0+tm*.45);
+        float causticA=exp(-abs(sin(phaseA))*21.0);
+        float causticB=exp(-abs(sin(phaseB))*25.0);
+        float fineA=exp(-abs(sin(phaseA*3.2+q.x*5.0))*33.0);
+        float fineB=exp(-abs(sin(phaseB*2.8-dz*11.0))*37.0);
+        float focus=.20+.80*exp(-pow((q.x+.14)*2.8,2.0));
+        float core=exp(-seamDistance*115.0)*focus;
+        // Each surface keeps its saturated spectral role. Only the concentrated
+        // shared crease reaches white, with much dimmer fine layers behind it.
+        vec3 luminous=u_primary*sheetA*(.075+3.5*causticA+.60*fineA);
+        luminous+=u_secondary*sheetB*(.055+2.8*causticB+.48*fineB);
+        luminous+=vec3(.91,.98,1.0)*core*16.0;
+        float stepSize=clamp(min(min(a,b),seamDistance*.8)*.52+.0045,.006,.052);
+        float depthWeight=.70+.30*(1.0-smoothstep(1.5,3.6,t));
+        color+=luminous*envelope*transmission*depthWeight*stepSize*18.0;
+        float opacity=(sheetA*.40+sheetB*.30+core*.3)*envelope;
+        transmission*=exp(-opacity*stepSize*3.2);
+        t+=stepSize;
+        if(t>4.6||transmission<.015)break;
     }
-    // Short original vector marks ride a nonuniform flow, with several heavier
-    // paddle forms and a deliberately empty upper-right quadrant.
-    for(int i=0;i<48;i++){
-        float k=float(i),seed=hash(vec2(k,8.0));
-        float x=-.67+1.08*fract(k*.61803398875+u_time*.025);
-        float row=-.31+.62*hash(vec2(k,2.0));
-        vec2 center=flowCurve(x,row,tm);
-        float speed=.03+.05*seed;
-        float slope=.525*cos(x*3.5+row*4.5-tm)+.28*cos(x*10.0+row*8.0+tm*.7);
-        vec2 direction=normalize(vec2(1.0,slope)),side=vec2(-direction.y,direction.x);
-        vec2 local=vec2(dot(q-center,direction),dot(q-center,side));
-        float lengthA=.010+.020*seed,width=.003+.004*step(.78,seed);
-        float mark=box(local,vec2(lengthA,width));
-        // Concave arrow heads and blunt diagonal cuts distinguish vector glyphs.
-        float notch=box(rot(.75)*(local-vec2(-lengthA,0)),vec2(width*1.2,width*1.2));
-        mark=max(mark,-notch);
-        vec3 pigment=seed>.78?u_primary:seed>.47?u_secondary:u_ink;
-        color=mix(color,pigment,fill(mark));
-    }
-    vec2 punct=p-vec2(.49,-.26);
-    float brace=min(segment(punct,vec2(-.055,-.052),vec2(-.055,.052)),segment(punct,vec2(-.055,.052),vec2(.055,.052)));
-    color=mix(color,u_ink,fill(brace-.006));
-    float dot=length(p-vec2(.49,-.26))-.018;
-    color=mix(color,u_primary,fill(dot));
-    return inked(color,p,.018)*u_intensity;
+    color=vec3(1.0)-exp(-color*1.28);
+    // A subtle screen lattice belongs to the caustic material itself.
+    vec2 pixel=fract(gl_FragCoord.xy/2.0);
+    float screen=mix(.90,1.0,smoothstep(.04,.28,pixel.x)*smoothstep(.04,.28,pixel.y));
+    color*=screen;
+    color*=1.0+(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.07;
+    return color*u_intensity;
 }
 void main(){
     vec2 p=(gl_FragCoord.xy-.5*u_resolution)/u_resolution.y;
@@ -928,9 +972,9 @@ export default function OriginalSignalStudy(props: Props) {
     const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,
         scale:Math.max(.5,scale),grain:Math.max(0,grain),focus:Math.max(0,Math.min(1,focus)),refraction:Math.max(0,refraction),interactive,primary,secondary,ink}
     const requestMotion=useStudySurface(root,canvas,settings,target,"OriginalSignalStudy.tsx",(s,e)=>{setStatus(s);setError(e??"")})
-    const source=COMPOSITIONS[study],color=study==="phosphor"?"#e2e6ef":ink
+    const source=COMPOSITIONS[study],color=study==="phosphor"||study==="swarm"?"#e2e6ef":ink
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
-    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="phosphor"?ink:"#eeece3",color}}>
+    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="phosphor"||study==="swarm"?ink:"#eeece3",color}}>
         <canvas ref={canvas} role="img" aria-label={source.title+", independently composed original procedural graphic, "+source.key} style={{display:"block",width:"100%",height:"100%",touchAction:"pan-y"}} />
         {showLabels&&<>
             <div style={{position:"absolute",left:"5%",top:"6%",pointerEvents:"none"}}>
