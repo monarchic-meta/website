@@ -1353,7 +1353,7 @@
       "framerComponentId": "codeFile/a_E7nAD:default",
       "framerCodePath": "InterfaceCodingStudy.tsx",
       "intentionalDifferences": [
-        "Four analytic wing lobes and center stem form an original bilateral glyph; temporal echoes and nested frames approximate the observed afterimage language. No source butterfly asset, exact timing or trail algorithm copied."
+        "An independently composed filled bilateral glyph has rounded tapered upper chambers, smaller lower lobes and a narrow central gap. Temporal echoes and nested frames approximate the sampled afterimage language; no source butterfly asset, exact timing or trail algorithm is copied."
       ],
       "creditedOriginal": {
         "displayName": "afterimage",
@@ -1388,7 +1388,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-002",
+        "change": "A smaller filled glyph has rounded upper chambers, shorter pointed tips, smaller lower lobes and subordinate echoes.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-18",
@@ -1442,7 +1450,7 @@
       "framerComponentId": "codeFile/a_E7nAD:default",
       "framerCodePath": "InterfaceCodingStudy.tsx",
       "intentionalDifferences": [
-        "Nine independently drawn pixel glyphs are sampled inside analytic rounded glass tiles. Refraction, edge dispersion and highlights are illustrative, not physical cube ray tracing or source glyphs."
+        "Nine ray-marched rounded near-cubic volumes refract locally authored pixel-cat imagery, with layered internal echoes, approximate environment reflections and chromatic edges. Source pixels, exact cube arrangements and a physically accurate glass or spectral-path-tracing model are not reproduced."
       ],
       "framerLabPage": "SqfboNSM6",
       "framerLabPath": "/prototypes/creative-coding-lab",
@@ -1472,7 +1480,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-009",
+        "change": "Near-cubic glass volumes add angled facets, refracted layered local pixel imagery, internal reflections and tighter spacing.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-19",
@@ -2750,7 +2766,7 @@
     },
     {
       "source": "InterfaceCodingStudy.tsx",
-      "sourceSHA256": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38",
+      "sourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7",
       "framerCodePath": "InterfaceCodingStudy.tsx",
       "framerComponentId": "codeFile/a_E7nAD:default"
     }

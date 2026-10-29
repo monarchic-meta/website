@@ -82,27 +82,40 @@ float segment(vec2 p,vec2 a,vec2 b){vec2 q=p-a,v=b-a;return length(q-v*clamp(dot
 float wing(vec2 p,vec2 c,vec2 size,float angle){p=rot(angle)*(p-c);return (length(p/size)-1.0)*min(size.x,size.y);}
 float glyph(vec2 p,float t){
     float flap=.65+.28*sin(t*1.15);p.x=abs(p.x)/flap;
-    float a=wing(p,vec2(.13,.075),vec2(.17,.070),-.48);
-    float b=wing(p,vec2(.10,-.06),vec2(.090,.105),.40);
-    float stem=segment(p,vec2(0,-.10),vec2(0,.10))-.012;
-    return min(min(a,b),stem);
+    // Rounded upper chambers sweep toward short tapered tips; small lower
+    // lobes and a narrow central gap keep the compact butterfly-like silhouette.
+    vec2 a=vec2(.009,.006),b=vec2(.204,.132),c=vec2(.105,-.035);
+    vec2 ab=b-a,bc=c-b,ca=a-c,ap=p-a,bp=p-b,cp=p-c;
+    float h1=(ab.x*ap.y-ab.y*ap.x)/length(ab);
+    float h2=(bc.x*bp.y-bc.y*bp.x)/length(bc);
+    float h3=(ca.x*cp.y-ca.y*cp.x)/length(ca);
+    float tip=max(h1,max(h2,h3))-.004;
+    float lobe=wing(p,vec2(.098,.058),vec2(.103,.055),.38);
+    float blend=clamp(.5+.5*(lobe-tip)/.018,0.0,1.0);
+    float upper=mix(lobe,tip,blend)-.018*blend*(1.0-blend);
+    upper=max(upper,.004-p.x);
+    float lower=wing(p,vec2(.073,-.052),vec2(.065,.083),.24);
+    return min(upper,lower);
 }
+
 vec3 afterimage(vec2 p){
-    vec3 color=u_ink;float echoSpacing=.045+.11*u_focus;
+    vec3 color=u_ink;float echoSpacing=.035+.07*u_focus;
     for(int i=11;i>=0;i--){
         float k=float(i),phase=u_time-k*(.10+.30*u_focus);
-        vec2 q=p/(1.0+k*echoSpacing);
-        q-=vec2(.022*sin(phase*.8)+u_mouse.x*.08,.012*cos(phase*.6)+u_mouse.y*.06);
-        float d=glyph(q,phase);
-        float body=1.0-smoothstep(-.002,.005,d);
-        float edge=exp(-abs(d)*160.0);
-        float attenuation=exp(-k*.36);
+        vec2 q=p/(.70*(1.0+k*echoSpacing));
+        q-=vec2(.014*sin(phase*.8)+u_mouse.x*.08,.008*cos(phase*.6)+u_mouse.y*.06);
+        float d=glyph(q,phase),body=1.0-smoothstep(-.002,.005,d);
+        float edge=exp(-abs(d)*160.0),attenuation=exp(-k*.48);
         vec3 pale=mix(u_primary,u_secondary,.5+.5*sin(phase*.5+k*.2));
-        color+=pale*(body*.22+edge*.65)*attenuation*u_intensity;
-        float rect=abs(box(q,vec2(.33,.255),0.0));
-        color+=vec3(.23,.26,.31)*exp(-rect*170.0)*attenuation*.20;
+        // The foreground is a filled luminous silhouette; older outlines stay
+        // subordinate so the central mark does not become a stack of wire loops.
+        float foreground=1.0-step(.5,k);
+        color+=pale*(body*(.055+foreground*.82)+edge*.16)*attenuation*u_intensity;
+        vec2 frame=p/(1.0+k*(.055+.07*u_focus));
+        float rect=abs(box(frame,vec2(.305,.255),0.0));
+        color+=vec3(.20,.22,.26)*exp(-rect*115.0)*attenuation*.30;
     }
-    color+=u_primary*exp(-length(p)*12.0)*.14*u_intensity;
+    color+=u_primary*exp(-length(p)*17.0)*.24*u_intensity;
     vec2 strip=vec2(p.x/1.6+.5,(p.y+.41)/.10);
     if(all(greaterThan(strip,vec2(0)))&&all(lessThan(strip,vec2(1)))){
         vec3 labels=texture2D(u_panel,vec2(strip.x,.25+.125*strip.y)).rgb;
@@ -110,35 +123,78 @@ vec3 afterimage(vec2 p){
     }
     return color;
 }
+
+vec3 glassSpace(vec3 p,float id){
+    float yaw=.37+.095*sin(id*1.73)+.025*sin(u_time*.28+id*.3)+u_mouse.x*.10;
+    float pitch=-.23+.045*cos(id*1.37)+.02*cos(u_time*.23+id*.7);
+    p.xz=rot(yaw)*p.xz;p.yz=rot(pitch)*p.yz;
+    return p;
+}
+float glassDistance(vec3 p,float id){
+    // Nearly cubic volume: broad side and top facets remain visible rather than
+    // reducing the module to a white plate with a thin rounded edge.
+    vec3 q=abs(glassSpace(p,id))-vec3(.74,.74,.60);
+    return length(max(q,0.0))+min(max(q.x,max(q.y,q.z)),0.0)-.12;
+}
+vec2 glassAtlas(vec2 local,vec2 cell){
+    return (cell+clamp(local,.025,.975))/3.0*.25;
+}
 vec3 glyphGrid(vec2 p){
     vec3 bg=mix(u_primary,u_secondary,clamp(p.x*.5+p.y*.3+.5,0.0,1.0));
     bg=mix(bg,vec3(1),.60);
-    p=rot(.04*sin(u_time*.45)+u_mouse.x*.11)*p;
-    p.x+=.04*p.y;p.y*=1.03;
-    vec2 grid=p/.255+1.5,cell=floor(grid),q=(fract(grid)-.5)*.255;
+    vec2 gridLine=abs(fract((p+vec2(.013,.025))*9.0)-.5);
+    bg+=vec3(.025)*exp(-min(gridLine.x,gridLine.y)*180.0);
+    p=rot(.02*sin(u_time*.35)+u_mouse.x*.05)*p;p.x+=.025*p.y;
+    vec2 grid=p/.228+1.5,cell=floor(grid),q=(fract(grid)-.5)*.228;
     if(any(lessThan(cell,vec2(0)))||any(greaterThan(cell,vec2(2))))return bg;
-    float id=cell.x+cell.y*3.0;
-    q.y-=.006*sin(u_time*.85+id*.7);
-    float d=box(q,vec2(.105),.014);
-    float cover=1.0-smoothstep(-.002,.002,d);
-    float shadow=exp(-max(box(q-vec2(.012,-.017),vec2(.102),.014),0.0)*90.0)*.16;
-    bg*=1.0-shadow;
-    vec2 grad=normalize(q+vec2(.0001));
-    float edge=pow(clamp(1.0+d/.024,0.0,1.0),2.0);
-    vec2 local=q/.235+.5;
-    local+=grad*(.025+.05*edge)*u_refraction+vec2(.016*sin(u_time+id),.012*cos(u_time*.7+id));
-    local=clamp(local,.02,.98);
-    vec2 atlas=(cell+local)/3.0*.25;
-    float mask=1.0-texture2D(u_panel,atlas).r;
-    float dispersion=(texture2D(u_panel,atlas+vec2(.0015*u_refraction,0)).r-texture2D(u_panel,atlas-vec2(.0015*u_refraction,0)).r);
-    vec3 glass=mix(bg,u_ink,mask*.86);
-    glass=mix(glass,mix(u_primary,u_secondary,fract(id*.37)),edge*.20);
-    float topEdge=exp(-abs(q.y-.113)*410.0)*.45;
-    float leftEdge=exp(-abs(q.x+.111)*460.0)*.32;
-    glass+=vec3(topEdge+leftEdge)*(.5+.5*sin(u_time*.6+id)*sin(u_time*.6+id));
-    glass+=vec3(.7,.15,-.15)*dispersion*.7;
-    glass=mix(glass,vec3(1),pow(edge,7.0)*.35);
-    return mix(bg,glass*u_intensity,cover);
+    float id=cell.x+cell.y*3.0;q.y-=.003*sin(u_time*.65+id*.7);
+    vec3 ro=vec3(q/.103,3.1),rd=normalize(vec3(.035,-.018,-1));
+    float travel=1.95;vec3 hitPoint=ro;bool hit=false;
+    for(int i=0;i<40;i++){
+        hitPoint=ro+rd*travel;float d=glassDistance(hitPoint,id);
+        if(d<.002){hit=true;break;}
+        travel+=max(d*.80,.001);if(travel>4.2)break;
+    }
+    float shadow=exp(-max(box(q-vec2(.009,-.014),vec2(.095),.014),0.0)*105.0)*.18;
+    if(!hit)return bg*(1.0-shadow);
+    vec2 e=vec2(.002,0);
+    vec3 n=normalize(vec3(glassDistance(hitPoint+e.xyy,id)-glassDistance(hitPoint-e.xyy,id),glassDistance(hitPoint+e.yxy,id)-glassDistance(hitPoint-e.yxy,id),glassDistance(hitPoint+e.yyx,id)-glassDistance(hitPoint-e.yyx,id)));
+    vec3 local=glassSpace(hitPoint,id),inside=glassSpace(refract(rd,n,1.0/1.46),id);
+    vec3 bounds=vec3(.87,.87,.73);
+    vec3 safeDirection=mix(vec3(-1),vec3(1),step(vec3(0),inside))*max(abs(inside),vec3(.0001));
+    vec3 exits=(sign(inside)*bounds-local)/safeDirection;
+    float depth=max(.02,min(exits.x,min(exits.y,exits.z)));
+    vec3 back=local+inside*depth,middle=local+inside*depth*.52;
+    vec2 backUV=back.xy/1.72+.5,middleUV=middle.xy/1.72+.5;
+    vec3 image=texture2D(u_panel,glassAtlas(backUV,cell)).rgb;
+    vec3 inner=texture2D(u_panel,glassAtlas(middleUV+vec2(.04,-.025)*u_refraction,cell)).rgb;
+    vec3 reflectedImage=texture2D(u_panel,glassAtlas(vec2(1.0-backUV.x,backUV.y)+vec2(.05,.02),cell)).rgb;
+    float red=texture2D(u_panel,glassAtlas(backUV+vec2(.018,0)*u_refraction,cell)).r;
+    float blue=texture2D(u_panel,glassAtlas(backUV-vec2(.018,0)*u_refraction,cell)).b;
+    // Several image planes and a mirrored echo sit inside the volume. They are
+    // locally painted pixel graphics, not downloaded source images or flat icons.
+    vec3 transmitted=mix(image,inner,.19);
+    transmitted=mix(transmitted,reflectedImage,.12*(1.0-abs(n.z)));
+    transmitted.r=mix(transmitted.r,red,.38);transmitted.b=mix(transmitted.b,blue,.38);
+    vec3 absorption=exp(-depth*vec3(.14,.095,.06));
+    transmitted*=absorption;
+    vec3 reflection=reflect(rd,n),localNormal=glassSpace(n,id);
+    float facing=max(dot(n,-rd),0.0),side=1.0-abs(localNormal.z);
+    float fresnel=.13+.73*pow(1.0-facing,2.1);
+    float band=smoothstep(-.45,-.20,reflection.y)*(1.0-smoothstep(.04,.30,reflection.y));
+    float topLight=exp(-pow(reflection.y-.67,2.0)*22.0);
+    float upright=exp(-pow(reflection.x+.43,2.0)*42.0);
+    vec3 environment=mix(vec3(.52,.60,.65),vec3(.018,.034,.052),band*.91);
+    environment+=vec3(.58,.65,.70)*topLight+vec3(.32,.40,.48)*upright;
+    vec3 through=mix(bg,transmitted,.88);
+    through*=1.0-side*.30;
+    vec3 glass=mix(through,environment,fresnel+side*.16);
+    float spec=pow(max(dot(reflection,normalize(vec3(-.55,.8,1))),0.0),35.0);
+    // Thin front/back rims reveal the refractive depth and the rounded corners.
+    float rearEdge=exp(-abs(abs(back.x)-.82)*78.0)+exp(-abs(abs(back.y)-.82)*78.0);
+    glass+=vec3(.30,.36,.43)*min(rearEdge,.9)*.20;
+    glass+=vec3(spec*.60)+vec3(.055,.015,-.018)*(1.0-facing)*u_refraction;
+    return clamp(glass*u_intensity,0.0,1.0);
 }
 float torus(vec3 p,vec2 r){return length(vec2(length(p.xy)-r.x,p.z))-r.y;}
 vec2 loopsMap(vec3 p){
@@ -228,11 +284,32 @@ function paintPanel(){
     c.fillStyle="#69798f";c.fillText("LOCAL UI TEXTURE / CONNECTION MOTION IS A VISUAL STUDY",87,537)
     c.fillStyle="#020304";c.fillRect(0,640,1024,128)
     c.font="13px monospace";c.fillStyle="#77818b";c.fillText("TEMPORAL STUDY / INDEPENDENT GLYPH",60,719);c.fillText("FRAME 01 / 76   T + 08.00 S",662,719)
-    c.fillStyle="#fff";c.fillRect(0,768,256,256)
-    const glyphs=[['00100','01110','11011','01010','01010'],['11111','00100','01110','10101','00100'],['10001','01010','00100','01010','10001'],['11111','10000','11110','10000','11111'],['01110','11011','10001','11011','01110'],['10101','01110','11011','01010','11011'],['00100','11111','10101','01110','01010'],['10100','11110','00101','01111','00101'],['01110','10101','11011','10001','01110']]
+    // Original pixel-cat motifs sit inside the CC-009 glass volumes. A compact
+    // local atlas supplies varied light/dark interiors rather than icon tiles.
+    c.fillStyle="#e9eff1";c.fillRect(0,768,256,256)
+    const pixelCat=["001100001100","001110011100","001111111100","011111111110","011111111110","011001100110","011001100110","011110011110","001111111100","000111111000","001111111100","001100001100"]
+    const palettes=[
+        ["#dce7e9","#26343d","#c9d8dd","#e4b385"],
+        ["#edf0e8","#263d46","#becbd0","#d7a679"],
+        ["#53666d","#192b37","#b5cbd1","#bb6a63"],
+        ["#34464e","#101f29","#a1b3bc","#b0c4cb"],
+        ["#42525a","#1b3038","#a4b9c1","#a1c1c7"],
+        ["#283c45","#99b6c1","#d3e5e6","#8daeb8"],
+        ["#607078","#152b36","#e3e7df","#d5a07c"],
+        ["#394d57","#142932","#b9d0d2","#e4a377"],
+        ["#375362","#c7d8da","#eef0e9","#bc8a6d"],
+    ]
     for(let row=0;row<3;row++)for(let col=0;col<3;col++){
-        const glyph=glyphs[row*3+col],cell=256/3;c.fillStyle="#202832"
-        for(let y=0;y<5;y++)for(let x=0;x<5;x++)if(glyph[y][x]==="1")c.fillRect(col*cell+13+x*12,768+(2-row)*cell+13+y*12,12,12)
+        const id=(2-row)*3+col,cell=256/3,x0=col*cell,y0=768+(2-row)*cell,palette=palettes[id]
+        c.fillStyle=palette[0];c.fillRect(x0,y0,cell,cell)
+        // Rear bands stay visible through clear spaces and refracted side faces.
+        c.fillStyle=palette[3];c.fillRect(x0+4,y0+cell-12,cell-8,5)
+        c.fillStyle=palette[1];c.fillRect(x0+3,y0+8,4,cell-18)
+        for(let y=0;y<12;y++)for(let x=0;x<12;x++)if(pixelCat[y][x]==="1"){
+            const stripe=(x+y+id)%5===0,eye=y===5||y===6
+            c.fillStyle=eye&&(x===3||x===4||x===7||x===8)?palette[2]:stripe?palette[3]:palette[1]
+            c.fillRect(x0+10+x*5.5,y0+8+y*5.5,5.6,5.6)
+        }
     }
     return canvas
 }
