@@ -9498,6 +9498,13 @@
       "frames": [
         "qPREnLG7B"
       ]
+    },
+    "originalLive": {
+      "id": "sLT2tXsB2",
+      "name": "05 / Original Live Coding",
+      "frames": [
+        "nNyC2Bca6"
+      ]
     }
   },
   "previousQualityAndPageSplitFramerVerification": {
@@ -9698,5 +9705,85 @@
     "liveVerificationField": "liveCreativeCodingAdaptations.savedVerification",
     "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29",
     "proofScope": "Eleven native artwork trees and ten live visual modes refined against sampled source stills. Actual main read verifies the eleven native hierarchies and child orders, retained card/artwork/credit identities, all sixty code controls/geometry, seventy-seven source assets, eighteen originals and five exact code hashes. Editor reload and visual review confirmed the saved refinements. Native and live studies remain credited source-led work; full source clips, exact source algorithms and actual Framer export images are not verified. No publication or production integration."
+  },
+  "originalLiveCoding": {
+    "classification": "original-composition",
+    "section": "Original compositions",
+    "manifest": "../code-components/originals-manifest.json",
+    "count": 8,
+    "codeInstances": 24,
+    "countScope": "Eight new independent live originals; excludes the eighteen retained original groups counted by the existing catalog summary.",
+    "components": [
+      {
+        "source": "OriginalSignalStudy.tsx",
+        "sourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591"
+      },
+      {
+        "source": "OriginalFormStudy.tsx",
+        "sourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c"
+      }
+    ],
+    "studies": [
+      {
+        "id": "OL-01",
+        "name": "Threshold press",
+        "mode": "threshold",
+        "componentSource": "OriginalSignalStudy.tsx"
+      },
+      {
+        "id": "OL-02",
+        "name": "Signal loom",
+        "mode": "loom",
+        "componentSource": "OriginalSignalStudy.tsx"
+      },
+      {
+        "id": "OL-03",
+        "name": "Phosphor atlas",
+        "mode": "phosphor",
+        "componentSource": "OriginalSignalStudy.tsx"
+      },
+      {
+        "id": "OL-04",
+        "name": "Vector swarm",
+        "mode": "swarm",
+        "componentSource": "OriginalSignalStudy.tsx"
+      },
+      {
+        "id": "OL-05",
+        "name": "Chrome hinge",
+        "mode": "hinge",
+        "componentSource": "OriginalFormStudy.tsx"
+      },
+      {
+        "id": "OL-06",
+        "name": "Fault line",
+        "mode": "fault",
+        "componentSource": "OriginalFormStudy.tsx"
+      },
+      {
+        "id": "OL-07",
+        "name": "Glyph engine",
+        "mode": "glyph",
+        "componentSource": "OriginalFormStudy.tsx"
+      },
+      {
+        "id": "OL-08",
+        "name": "Orbit relay",
+        "mode": "relay",
+        "componentSource": "OriginalFormStudy.tsx"
+      }
+    ],
+    "framerDesignPage": "sLT2tXsB2",
+    "framerBoard": "nNyC2Bca6",
+    "lab": {
+      "page": "N5Uh3X9KH",
+      "path": "/prototypes/original-coding-lab",
+      "desktop": "S3xrHWCL7",
+      "phone": "G00fi3nIM",
+      "draft": true
+    },
+    "verificationStatus": "saved and editor-reload verified; Desktop/Phone Preview verified",
+    "verificationField": "savedVerification",
+    "verifiedDate": "2026-10-29"
   }
 }

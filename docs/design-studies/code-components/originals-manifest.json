@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "classification": "original-composition",
+  "section": "Original compositions",
+  "authoringStatus": "Saved original compositions; editor reload and Desktop/Phone Preview verified",
+  "independentComposition": true,
+  "externalAssets": false,
+  "components": [
+    {
+      "source": "OriginalSignalStudy.tsx",
+      "sourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "framerCodePath": "OriginalSignalStudy.tsx",
+      "framerComponentId": "codeFile/XOna2aN:default"
+    },
+    {
+      "source": "OriginalFormStudy.tsx",
+      "sourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "framerCodePath": "OriginalFormStudy.tsx",
+      "framerComponentId": "codeFile/mVHoAUI:default"
+    }
+  ],
+  "studies": [
+    {
+      "id": "OL-01",
+      "name": "Threshold press",
+      "classification": "original-composition",
+      "componentSource": "OriginalSignalStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "threshold",
+        "primary": "#2f3bff",
+        "secondary": "#dfff38",
+        "ink": "#0a0c10"
+      },
+      "section": "Original compositions",
+      "mode": "threshold",
+      "description": "Cutout pigment slabs, ordered tonal stipple and offset ink respond to moving print pressure.",
+      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "framerComponentId": "codeFile/XOna2aN:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "qNhpbmZ5u",
+          "card": "tFUGAAPhN",
+          "label": "EEul0Rb35",
+          "credit": "qVAC529Z_",
+          "note": "xP23DM82i"
+        },
+        {
+          "placement": "desktop",
+          "instance": "y03AVFIST",
+          "card": "fsDr9opwF",
+          "label": "wl7WpxsbJ",
+          "credit": "tCnOTJiq9",
+          "note": "bEpQtW6zw"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMy03AVFIST",
+          "card": "G00fi3nIMfsDr9opwF",
+          "label": "G00fi3nIMwl7WpxsbJ",
+          "credit": "G00fi3nIMtCnOTJiq9",
+          "note": "G00fi3nIMbEpQtW6zw"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-02",
+      "name": "Signal loom",
+      "classification": "original-composition",
+      "componentSource": "OriginalSignalStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "loom",
+        "primary": "#2845ff",
+        "secondary": "#dfff35",
+        "ink": "#0a0c10"
+      },
+      "section": "Original compositions",
+      "mode": "loom",
+      "description": "Broad routing ribbons weave over and under one another through negative-space cuts.",
+      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "framerComponentId": "codeFile/XOna2aN:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "CyLsfV93m",
+          "card": "XySLe8_Uf",
+          "label": "egQjhf1Vz",
+          "credit": "xkSFKKeZ0",
+          "note": "luhkSveRn"
+        },
+        {
+          "placement": "desktop",
+          "instance": "eqv5z2HmR",
+          "card": "j4r6qbdOz",
+          "label": "iACU5f_AQ",
+          "credit": "K6EVcyldm",
+          "note": "ItAABdIMs"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMeqv5z2HmR",
+          "card": "G00fi3nIMj4r6qbdOz",
+          "label": "G00fi3nIMiACU5f_AQ",
+          "credit": "G00fi3nIMK6EVcyldm",
+          "note": "G00fi3nIMItAABdIMs"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-03",
+      "name": "Phosphor atlas",
+      "classification": "original-composition",
+      "componentSource": "OriginalSignalStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "phosphor",
+        "primary": "#5468ff",
+        "secondary": "#b9ff72",
+        "ink": "#050a12"
+      },
+      "section": "Original compositions",
+      "mode": "phosphor",
+      "description": "Broken laser arcs, scanning traces and discrete rails create a dark phosphor signal field.",
+      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "framerComponentId": "codeFile/XOna2aN:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "weRKlhWP8",
+          "card": "aNTaOxEvM",
+          "label": "VbbzZZXcn",
+          "credit": "eb6hxgEMX",
+          "note": "UM3bDMM36"
+        },
+        {
+          "placement": "desktop",
+          "instance": "GiXq27F5C",
+          "card": "QST4Rc2fd",
+          "label": "onXyaxl_1",
+          "credit": "lqeF9OFYZ",
+          "note": "PcJtnTvXP"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMGiXq27F5C",
+          "card": "G00fi3nIMQST4Rc2fd",
+          "label": "G00fi3nIMonXyaxl_1",
+          "credit": "G00fi3nIMlqeF9OFYZ",
+          "note": "G00fi3nIMPcJtnTvXP"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-04",
+      "name": "Vector swarm",
+      "classification": "original-composition",
+      "componentSource": "OriginalSignalStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "swarm",
+        "primary": "#ff4b32",
+        "secondary": "#2f49ff",
+        "ink": "#131319"
+      },
+      "section": "Original compositions",
+      "mode": "swarm",
+      "description": "Asymmetric vector marks travel through an elastic contour field with deliberate open space.",
+      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "framerComponentId": "codeFile/XOna2aN:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "pReQ1LdXV",
+          "card": "Wo43M0OGW",
+          "label": "lnSp2653W",
+          "credit": "hDNERijCO",
+          "note": "p6eEEW_Qb"
+        },
+        {
+          "placement": "desktop",
+          "instance": "nXdQ7E3r1",
+          "card": "I0HDuAzYu",
+          "label": "Zwz944nYb",
+          "credit": "BJvwINbe8",
+          "note": "cxRvmgEit"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMnXdQ7E3r1",
+          "card": "G00fi3nIMI0HDuAzYu",
+          "label": "G00fi3nIMZwz944nYb",
+          "credit": "G00fi3nIMBJvwINbe8",
+          "note": "G00fi3nIMcxRvmgEit"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-05",
+      "name": "Chrome hinge",
+      "classification": "original-composition",
+      "componentSource": "OriginalFormStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "hinge",
+        "primary": "#b7c8d0",
+        "secondary": "#d9f44a",
+        "ink": "#080b10"
+      },
+      "section": "Original compositions",
+      "mode": "hinge",
+      "description": "Three connected chrome plates articulate around raised creases; punched counterforms and hard reflections reveal the fold.",
+      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "framerComponentId": "codeFile/mVHoAUI:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "L7ZpeXv_3",
+          "card": "hlCh6oZeT",
+          "label": "A38qdcNzc",
+          "credit": "H0GmT3EfK",
+          "note": "F2fOaHYxJ"
+        },
+        {
+          "placement": "desktop",
+          "instance": "eNNar3u_6",
+          "card": "dbyKIvjNy",
+          "label": "FJ5h2SXtm",
+          "credit": "Biau4rDU0",
+          "note": "H0E8l8Tzp"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMeNNar3u_6",
+          "card": "G00fi3nIMdbyKIvjNy",
+          "label": "G00fi3nIMFJ5h2SXtm",
+          "credit": "G00fi3nIMBiau4rDU0",
+          "note": "G00fi3nIMH0E8l8Tzp"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-06",
+      "name": "Fault line",
+      "classification": "original-composition",
+      "componentSource": "OriginalFormStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "fault",
+        "primary": "#ed3c28",
+        "secondary": "#f2a7b5",
+        "ink": "#171314"
+      },
+      "section": "Original compositions",
+      "mode": "fault",
+      "description": "Angular paper-like shards open a deep fault across vermilion, pink and ink planes.",
+      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "framerComponentId": "codeFile/mVHoAUI:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "Zq8hYlHBa",
+          "card": "iJmKkcypm",
+          "label": "RsBrJFMrp",
+          "credit": "XcBSmpmeD",
+          "note": "GZREol3GH"
+        },
+        {
+          "placement": "desktop",
+          "instance": "oUFw98vtd",
+          "card": "u7WbK88Q5",
+          "label": "omsSzJj3B",
+          "credit": "n6CgWig6l",
+          "note": "nOAz3qHGj"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMoUFw98vtd",
+          "card": "G00fi3nIMu7WbK88Q5",
+          "label": "G00fi3nIMomsSzJj3B",
+          "credit": "G00fi3nIMn6CgWig6l",
+          "note": "G00fi3nIMnOAz3qHGj"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-07",
+      "name": "Glyph engine",
+      "classification": "original-composition",
+      "componentSource": "OriginalFormStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "glyph",
+        "primary": "#d8f436",
+        "secondary": "#254cff",
+        "ink": "#17171b"
+      },
+      "section": "Original compositions",
+      "mode": "glyph",
+      "description": "A locally drawn MONARCHIC type atlas becomes an oversized cropped kinetic poster with an interrupted monogram.",
+      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "framerComponentId": "codeFile/mVHoAUI:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "cTSFq2BYJ",
+          "card": "e11R1CuDu",
+          "label": "o82X2RKFP",
+          "credit": "CJS6cTfd8",
+          "note": "QO6tWnRzb"
+        },
+        {
+          "placement": "desktop",
+          "instance": "ueqT7rWgw",
+          "card": "ptiUozffD",
+          "label": "HkIsB7Mon",
+          "credit": "ApNeL6Yc_",
+          "note": "SDU3vHEZp"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMueqT7rWgw",
+          "card": "G00fi3nIMptiUozffD",
+          "label": "G00fi3nIMHkIsB7Mon",
+          "credit": "G00fi3nIMApNeL6Yc_",
+          "note": "G00fi3nIMSDU3vHEZp"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    },
+    {
+      "id": "OL-08",
+      "name": "Orbit relay",
+      "classification": "original-composition",
+      "componentSource": "OriginalFormStudy.tsx",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.1,
+        "scale": 1,
+        "grain": 0.35,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "study": "relay",
+        "primary": "#3152ff",
+        "secondary": "#d7fb31",
+        "ink": "#080e19"
+      },
+      "section": "Original compositions",
+      "mode": "relay",
+      "description": "Asymmetric open rectilinear gates interlock at different depths around routed signal packets.",
+      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "framerComponentId": "codeFile/mVHoAUI:default",
+      "framerDesignPage": "sLT2tXsB2",
+      "framerBoard": "nNyC2Bca6",
+      "framerLabPage": "N5Uh3X9KH",
+      "framerLabPath": "/prototypes/original-coding-lab",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "kTmnvrklc",
+          "card": "ryX3TfwE3",
+          "label": "r5Py1pi7S",
+          "credit": "V7jNtCZlO",
+          "note": "kV84QfUAr"
+        },
+        {
+          "placement": "desktop",
+          "instance": "RiXVFyaq6",
+          "card": "qitnnd15k",
+          "label": "EKxy3S54Y",
+          "credit": "oL5DgnGg1",
+          "note": "kJSbV1zCY"
+        },
+        {
+          "placement": "phone",
+          "instance": "G00fi3nIMRiXVFyaq6",
+          "card": "G00fi3nIMqitnnd15k",
+          "label": "G00fi3nIMEKxy3S54Y",
+          "credit": "G00fi3nIMoL5DgnGg1",
+          "note": "G00fi3nIMkJSbV1zCY"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerVerifiedDate": "2026-10-29"
+    }
+  ],
+  "totalCodeInstances": 24,
+  "placementsPerStudy": [
+    "Design board",
+    "Desktop Preview",
+    "Phone Preview"
+  ],
+  "author": "Monarchic / Codex",
+  "compositionScope": "Independently composed procedural graphic building blocks. No catalog post is recreated and no externally authored artwork is embedded.",
+  "designPage": {
+    "id": "sLT2tXsB2",
+    "name": "05 / Original Live Coding",
+    "frames": [
+      "nNyC2Bca6"
+    ]
+  },
+  "framerBoard": "nNyC2Bca6",
+  "lab": {
+    "page": "N5Uh3X9KH",
+    "path": "/prototypes/original-coding-lab",
+    "desktop": "S3xrHWCL7",
+    "phone": "G00fi3nIM",
+    "draft": true,
+    "published": false,
+    "desktopWidth": 1200,
+    "phoneWidth": 390,
+    "nominalDesktopArtwork": {
+      "width": 1080,
+      "height": 680
+    },
+    "nominalPhoneArtwork": {
+      "width": 350,
+      "height": 280
+    },
+    "observedPreviewArtwork": {
+      "desktop": {
+        "width": 1065,
+        "height": 680,
+        "padding": 60,
+        "buffer": {
+          "width": 1152,
+          "height": 735
+        }
+      },
+      "phone": {
+        "width": 335,
+        "height": 280,
+        "padding": 20,
+        "buffer": {
+          "width": 384,
+          "height": 320
+        }
+      },
+      "scrollbarWidth": 15
+    }
+  },
+  "responsiveScope": "One set of mode/palette controls is inherited by Desktop 1200 and Phone 390. Artwork fills the available width after padding. Nominal overlay-scrollbar widths are 1080/350; observed classic-scrollbar Preview artwork is 1065×680 and 335×280 with a 15px scrollbar. Local GPU phase sampling separately uses 960×600 and 350×280. These are responsive graphic studies rather than a production UI.",
+  "intentionalDifferences": [
+    "Exploratory graphic objects, not approved brand marks or implemented interface behavior.",
+    "The generated type atlas uses system sans-serif fallbacks; letterforms can vary by platform.",
+    "Frozen export/thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed."
+  ],
+  "runtimeResourcePolicy": {
+    "version": 2,
+    "registryKey": "monarchic.gpu-budget.v2",
+    "scope": "one browser window / JavaScript realm shared with the five source-led families",
+    "webglContexts": 2,
+    "editorLiveStudies": 1,
+    "previewLiveStudies": 2,
+    "canvasMotionDefault": false,
+    "canvasFPS": 12,
+    "canvasPixelBudget": 1000000,
+    "previewFPS": 30,
+    "previewPixelBudget": 1000000,
+    "generatedStillPixelBudget": 2000000,
+    "minimumRasterLongEdge": 384,
+    "exportAndThumbnail": "Generated frozen frame at Still time; temporary GPU disposed."
+  },
+  "savedVerification": {
+    "date": "2026-10-29",
+    "status": "saved-original-live-compositions-verified",
+    "savedEditorVerified": true,
+    "editorReloadVerified": true,
+    "desktopPreviewVerified": true,
+    "phonePreviewVerified": true,
+    "sourceHashes": {
+      "OriginalSignalStudy.tsx": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "OriginalFormStudy.tsx": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c"
+    },
+    "originalStudies": 8,
+    "codeInstances": 24,
+    "designPlacements": 8,
+    "desktopPlacements": 8,
+    "phonePlacements": 8,
+    "canvasMotionDefault": false,
+    "classification": "original-composition",
+    "localGPU": {
+      "originalPhaseFrames": 48,
+      "phases": [
+        0,
+        8,
+        16
+      ],
+      "desktop": {
+        "width": 960,
+        "height": 600
+      },
+      "phone": {
+        "width": 350,
+        "height": 280
+      },
+      "mixedDesktopModes": 28,
+      "scope": "Actual local WebGL renderer factories sampled serially. Original graphics at desktop960x600 and phone350x280 across phases0/8/16, plus all28 original/retained modes at one desktop phase. Not an actual Framer Preview, editor persistence or exported-image inspection."
+    },
+    "resourceRegression": {
+      "modules": 7,
+      "mixedPlacements": 84,
+      "originalPlacements": 24,
+      "retainedLegacyPlacements": 60,
+      "assertionGroupsPerRun": 12,
+      "legacyAssertionsRetained": true,
+      "peakContexts": 2,
+      "peakPixels": 1998984
+    },
+    "semanticValidation": {
+      "typescriptPassed": true,
+      "glslPassed": true,
+      "shaderCount": 16
+    },
+    "preservation": {
+      "existingSourceLedAndNativeProofsRetained": true,
+      "existingOriginalGroups": 18,
+      "existingSourceGroups": 77,
+      "existingSourcePreviews": 66,
+      "existingLinkOnlyCards": 11
+    },
+    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/original-live-coding-2026-10-29",
+    "artifacts": [
+      "framer/browser-verification.json",
+      "mcp/originals-final-verification-report.json",
+      "mcp/originals-post-canvas-raw.json",
+      "mcp/originals-saved-node-map.json",
+      "mcp/post-canvas-verification-report.json",
+      "gpu/verification.json",
+      "validation/resource-checks.json",
+      "validation/seven-checks/report.json"
+    ],
+    "proofScope": "Independent fresh main reads verify both new code files, all 24 new controls/classification/stored constraints and unchanged existing source/native/original work. MCP intrinsic placeholder rectangles do not establish final fractional-width layout; operator browser evidence separately confirms editor reload and actual Desktop/Phone Preview. Local GPU evidence samples eight originals at three phases in two aspects plus all 28 modes at one desktop phase. These are independent original studies, not source-video/algorithm reconstructions. Actual exported images, publication and production integration are not verified.",
+    "qualityAdequacyVerified": true,
+    "actualFramerPreview": {
+      "movingStudiesPerBreakpoint": 8,
+      "desktopArtwork": {
+        "width": 1065,
+        "height": 680
+      },
+      "phoneArtwork": {
+        "width": 335,
+        "height": 280
+      },
+      "classicScrollbarWidth": 15,
+      "phoneNoHorizontalOverflow": true,
+      "phoneHeadingSize": 44,
+      "pauseResume": {
+        "study": "OL-05",
+        "pausedChangedChannels": 0,
+        "resumedLive": true
+      }
+    },
+    "actualFramerCanvasMotion": {
+      "study": "OL-05",
+      "temporaryOptInVerified": true,
+      "generatedFrame": {
+        "width": 1024,
+        "height": 636
+      },
+      "motionPixelDifferencePositive": true,
+      "restoredDefault": true,
+      "restoredCanvasMotion": false,
+      "all24SavedCanvasMotionFalse": true,
+      "editorReloadAfterRestoreVerified": true,
+      "restorationReceipt": "mcp/post-canvas-verification-report.json"
+    }
+  }
+}
