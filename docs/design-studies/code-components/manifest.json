@@ -599,7 +599,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-016",
+        "change": "Broader soft environment reflections reveal the curved metal body beyond its spectral rim.",
+        "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-09",
@@ -2676,7 +2684,7 @@
     },
     {
       "source": "MaterialCodingStudy.tsx",
-      "sourceSHA256": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+      "sourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
       "framerCodePath": "MaterialCodingStudy.tsx",
       "framerComponentId": "codeFile/Ji_GDIq:default"
     },

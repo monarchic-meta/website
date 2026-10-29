@@ -184,23 +184,27 @@ vec3 spectral(vec2 uv){
         if(d<.001){hit=true;break;}
         travel+=max(d*.8,.001);if(travel>4.7)break;
     }
-    vec3 color=mix(u_ink,vec3(.19),.58+.15*uv.y);
+    vec3 color=mix(u_ink,vec3(.23),.67+.13*uv.y);
     if(hit){
         vec2 e=vec2(.0015,0);
         vec3 n=normalize(vec3(ringDistance(q+e.xyy)-ringDistance(q-e.xyy),ringDistance(q+e.yxy)-ringDistance(q-e.yxy),ringDistance(q+e.yyx)-ringDistance(q-e.yyx)));
         vec3 reflection=reflect(rd,n);
-        float facing=max(dot(n,-rd),0.0),fresnel=pow(1.0-facing,2.4);
-        float boxLight=pow(max(0.0,dot(reflection,normalize(vec3(-.4,.85,1.0)))),12.0);
-        float lowLight=pow(max(0.0,dot(reflection,normalize(vec3(.2,-.8,1.0)))),18.0);
-        float phase=1.05*fresnel+.15*reflection.x+.035*u_time;
+        float facing=max(dot(n,-rd),0.0),fresnel=pow(1.0-facing,2.0);
+        // Broad reflected areas establish a curved metal body, not just two
+        // colored outlines. Approximate environment bands are authored locally.
+        float upper=pow(max(0.0,dot(reflection,normalize(vec3(-.4,.85,1.0)))),4.5);
+        float lower=pow(max(0.0,dot(reflection,normalize(vec3(.2,-.8,1.0)))),7.0);
+        float horizon=exp(-pow(reflection.y+.12,2.0)*18.0);
+        float phase=.90*fresnel+.11*reflection.x+.025*u_time;
         vec3 spectrum=.5+.5*cos(6.2831853*(phase+vec3(.02,.34,.67)));
         vec3 tint=mix(u_primary,u_secondary,.5+.5*n.y);
-        color=vec3(.035+.13*max(n.y,0.0))+(boxLight*.48+lowLight*.16)*tint;
-        color+=spectrum*(pow(fresnel,.65)*.55+lowLight*.17)*u_intensity;
-        // Spatial grain is an intentional material treatment, not a claim of
-        // spectral path tracing or a converging physical light simulation.
+        vec3 metal=vec3(.11,.125,.14)*(.65+.80*max(n.y,0.0));
+        metal+=vec3(.62,.66,.69)*upper*.46+vec3(.28,.34,.42)*lower*.48;
+        metal+=vec3(.13,.17,.20)*horizon;
+        color=metal+mix(tint,spectrum,.82)*(fresnel*.49+lower*.18)*u_intensity;
+        // Spatial grain remains a material approximation, not path tracing.
         float grain=hash(vec3(floor(gl_FragCoord.xy),.7))-.5;
-        color+=grain*u_grain*.24*(.6+boxLight);
+        color+=grain*u_grain*.17*(.65+upper);
     }
     return clamp(color,0.0,1.0);
 }
