@@ -83,37 +83,41 @@ vec3 lightColor(float blue,float white){
     return 1.0-exp(-(u_secondary*blue+u_primary*white)*u_intensity);
 }
 vec3 radial(vec2 uv){
-    // Explicit pointed petal chambers carry closed nested contours. Overlapping
-    // radial tiers replace the earlier field of mostly straight luminous hairs.
-    vec2 p=uv-vec2(.02,.10)-u_mouse*.035;
+    // Soft overlapping chambers, curled internal folds and a white-blue core
+    // follow the sampled source's cloudy radial volume, not clean leaf icons.
+    vec2 p=uv-vec2(.015,.12)-u_mouse*.035;
     float r=max(length(p),.003),a=atan(p.y,p.x),t=u_time*.13;
-    float warp=fbm(p*7.0+vec2(t,-t*.6)),faces=0.0,edges=0.0,contours=0.0;
-    for(int i=0;i<4;i++){
-        float k=float(i),count=12.0+mod(k,2.0)*2.0;
-        float curved=a+.10*sin(r*7.0-t+k)+.075*(warp-.5);
-        float angular=curved*count/(2.0*PI)+k*.47;
-        float sector=floor(angular),theta=(fract(angular)-.5)*(2.0*PI/count);
-        float center=.14+k*.18,len=.16+k*.065;
+    float warp=fbm(p*6.0+vec2(t,-t*.6)),faces=0.0,edges=0.0,folds=0.0;
+    for(int i=0;i<7;i++){
+        float k=float(i),count=18.0+mod(k,3.0)*4.0;
+        float curved=a+.11*sin(r*8.0-t+k)+.14*(warp-.5);
+        float angular=curved*count/(2.0*PI)+k*.43;
+        float sector=mod(floor(angular),count),theta=(fract(angular)-.5)*(2.0*PI/count);
+        float center=.10+k*.12,len=.125+k*.037;
         float x=(r*cos(theta)-center)/len;
-        float width=(.030+k*.023)*(1.0+.13*sin(sector*1.9+k));
-        float y=(r*sin(theta)+.012*sin(x*4.0+k+t)*(1.0-min(x*x,1.0)))/width;
-        float chamber=pow(abs(x),1.55)+pow(abs(y),1.35);
-        float inside=1.0-smoothstep(.93,1.10,chamber);
-        float boundary=exp(-abs(chamber-1.0)*21.0);
-        float nested=exp(-abs(sin(sqrt(max(chamber,.001))*25.0+warp*2.3-t))*6.5);
-        float relief=.45+.55*(.5+.5*cos(x*3.7+y*.65+k));
-        faces+=inside*relief*.20;
-        edges+=boundary*(.50+.50*relief);
-        contours+=inside*nested*(.38+.38*relief);
+        float width=(.024+k*.012)*(1.0+.18*sin(sector*2.1+k));
+        float y=(r*sin(theta)+.017*sin(x*4.5+k+t)*(1.0-min(x*x,1.0)))/width;
+        vec2 tissue=vec2(x*2.2+sector*1.7,y*1.6+k*4.3);
+        float fluid=fbm(tissue+vec2(t*.35,-t*.3));
+        float chamber=pow(abs(x),1.55)+pow(abs(y),1.6)+.25*(fluid-.5);
+        float inside=1.0-smoothstep(.88,1.24,chamber);
+        float boundary=exp(-abs(chamber-1.0)*8.0);
+        float curl=fbm(tissue*2.5+vec2(fluid*2.4,-fluid*1.8));
+        float nested=pow(.5+.5*cos(sqrt(max(chamber,.001))*24.0+curl*10.0-t),5.0);
+        float relief=.35+.65*(.5+.5*cos(x*3.7+y*.65+fluid*5.0+k));
+        faces+=inside*(.16+.27*relief)*(.6+.4*fluid);
+        edges+=boundary*(.35+.65*relief);
+        folds+=inside*nested*(.3+.7*relief);
     }
-    float outer=1.0-smoothstep(.62,1.21,r),core=exp(-r*r*130.0)*3.4;
-    float white=(edges*.70+contours*.60+faces*.15+core)*outer;
-    float blue=(faces*.9+contours*.37+edges*.32+.15)*outer;
-    return mix(u_ink,lightColor(blue*2.0,white*1.8),outer);
+    float outer=1.0-smoothstep(.69,1.24,r),core=exp(-r*r*140.0)*4.1;
+    float streak=pow(.5+.5*sin(a*75.0+r*9.0+warp*12.0-t),13.0)*exp(-r*1.7);
+    float white=((edges*.40+folds*.46+faces*.24+streak*.13)*.62+core)*outer;
+    float blue=(faces*.94+folds*.25+edges*.34+.045)*outer*.68;
+    return mix(u_ink,lightColor(blue*1.6,white*1.55),outer);
 }
 vec3 ridge(vec2 uv){
-    // Several turbulent, intersecting folds form a broad icy band; the source
-    // frame's bright branching relief is more than evenly spaced contour lines.
+    // Fine domain-warped striations retain the sampled diagonal fluid relief.
+    // A broad merging tributary rides above the layered bright lower lip.
     vec2 p=rot(-.57)*(uv-u_mouse*.025);float t=u_time*.13;
     float base=-.12+.035*sin(p.x*5.0-t)+.025*sin(p.x*13.0+t*.6);
     float h=p.y-base;
@@ -132,35 +136,39 @@ vec3 ridge(vec2 uv){
         sheet+=exp(-abs(distance)*(62.0+k*10.0))*(.5+.65*small);
     }
     float front=exp(-abs(h+.04*(medium-.5))*83.0);
+    float forkPath=.105+.09*smoothstep(-.1,.5,p.x)+.028*sin(p.x*12.0+t)+.035*(medium-.5);
+    float fork=exp(-abs(h-forkPath)*80.0);
     float above=smoothstep(-.055,.07,h),mass=above*exp(-max(h-.05,0.0)*2.5);
     float detail=.45+.55*small;
-    float white=front*1.15+mass*(sheet*1.35+branches*detail*.94+threads*.30);
-    float blue=mass*(.29+medium*.28+branches*.35+sheet*.21)+front*.14;
+    float white=front*1.18+fork*.83+mass*(sheet*1.48+branches*detail*1.05+threads*.38);
+    float blue=mass*(.27+medium*.26+branches*.35+sheet*.21)+front*.14+fork*.07;
     float falloff=1.0-smoothstep(.38,.88,h);
     return mix(u_ink,lightColor(blue*1.45,white*1.45),falloff);
 }
 float corridorDistance(vec3 p){
-    // Short staggered chunks and chipped diagonal corners create irregular
-    // fractured relief. No long complete ribs or plank-like wall strips remain.
-    p.xy=rot(.045*sin(p.z*.37))*p.xy;
-    float walls=1.30-max(abs(p.x),abs(p.y));
-    vec2 xcell=floor(vec2((p.y+.035*floor(p.z/.26))/.20,p.z/.26));
-    vec2 ycell=floor(vec2((p.x+.04*floor(p.z/.29))/.23,(p.z+.07)/.29));
-    float hx=.12+.35*hash2(xcell+vec2(step(0.0,p.x)*17.0,3.0));
-    float hy=.11+.32*hash2(ycell+vec2(11.0,step(0.0,p.y)*23.0));
-    vec3 xq=vec3(abs(p.x)-(1.27-hx*.5),mod(p.y+.035*floor(p.z/.26),.20)-.10,mod(p.z,.26)-.13);
-    vec3 yq=vec3(mod(p.x+.04*floor(p.z/.29),.23)-.115,abs(p.y)-(1.27-hy*.5),mod(p.z+.07,.29)-.145);
-    xq.yz=rot((hash2(xcell+6.3)-.5)*.28)*xq.yz;
-    yq.xz=rot((hash2(ycell+4.2)-.5)*.26)*yq.xz;
-    vec3 xb=abs(xq)-vec3(hx*.5,.085,.114),yb=abs(yq)-vec3(.099,hy*.5,.128);
+    // Coarse staggered relief carries nested chips. The sampled architecture has
+    // large irregular faces and dark recesses, rather than a uniform brick grid.
+    p.xy=rot(.035*sin(p.z*.37))*p.xy;
+    float erosion=.023*sin(p.y*27.0+sin(p.z*11.0))*sin(p.z*22.0+p.x*7.0);
+    erosion+=.019*sin(p.z*51.0+p.y*13.0)*sin(p.y*43.0-p.z*9.0);
+    float walls=1.34-max(abs(p.x),abs(p.y))+erosion;
+    vec2 xcell=floor(vec2((p.y+.14*floor(p.z/.57))/.48,p.z/.57));
+    vec2 ycell=floor(vec2((p.x+.13*floor(p.z/.69))/.51,(p.z+.19)/.69));
+    float hx=.13+.40*hash2(xcell+vec2(step(0.0,p.x)*17.0,3.0));
+    float hy=.14+.38*hash2(ycell+vec2(11.0,step(0.0,p.y)*23.0));
+    vec3 xq=vec3(abs(p.x)-(1.30-hx*.5),mod(p.y+.14*floor(p.z/.57),.48)-.24,mod(p.z,.57)-.285);
+    vec3 yq=vec3(mod(p.x+.13*floor(p.z/.69),.51)-.255,abs(p.y)-(1.30-hy*.5),mod(p.z+.19,.69)-.345);
+    xq.yz=rot((hash2(xcell+6.3)-.5)*.40)*xq.yz;
+    yq.xz=rot((hash2(ycell+4.2)-.5)*.33)*yq.xz;
+    vec3 xb=abs(xq)-vec3(hx*.5,.205,.252),yb=abs(yq)-vec3(.221,hy*.5,.308);
     float xd=length(max(xb,0.0))+min(max(xb.x,max(xb.y,xb.z)),0.0);
     float yd=length(max(yb,0.0))+min(max(yb.x,max(yb.y,yb.z)),0.0);
-    xd=max(xd,(xq.y-xq.z)*.64-.087)-.004;
-    yd=max(yd,(yq.x+yq.z)*.63-.095)-.004;
-    vec3 cq=vec3(abs(p.x)-1.03,mod(p.y+.12*floor(p.z/.83),.43)-.215,mod(p.z+.17,.83)-.415);
-    vec3 cb=abs(cq)-vec3(.15,.173,.115);
-    float chunk=length(max(cb,0.0))+min(max(cb.x,max(cb.y,cb.z)),0.0);
-    return min(walls,min(min(xd,yd),chunk));
+    xd=max(xd,(xq.y-xq.z)*.64-.19)+erosion-.012;
+    yd=max(yd,(yq.x+yq.z)*.63-.21)+erosion-.012;
+    vec3 cq=vec3(abs(p.x)-1.10,mod(p.y+.07*floor(p.z/.24),.21)-.105,mod(p.z+.11,.24)-.12);
+    vec3 cb=abs(cq)-vec3(.08,.073,.085);
+    float chip=length(max(cb,0.0))+min(max(cb.x,max(cb.y,cb.z)),0.0)+erosion*.65;
+    return min(walls,min(min(xd,yd),chip));
 }
 vec3 corridor(vec2 uv){
     vec3 ro=vec3(.19+.025*sin(u_time*.17),-.08,u_time*.38);
@@ -170,7 +178,7 @@ vec3 corridor(vec2 uv){
     for(int i=0;i<80;i++){
         q=ro+rd*travel;float d=corridorDistance(q);
         if(d<.0018){hit=true;break;}
-        float stepLength=max(d*.58,.0015);
+        float stepLength=max(d*.46,.0015);
         float heat=.5+.5*sin(q.z*1.8+q.x*2.2+u_time*.18);
         vec3 hazeColor=mix(u_secondary*vec3(.80,.22,.08),u_primary,heat*heat*.15);
         volume+=hazeColor*exp(-max(d,0.0)*23.0)*min(stepLength,.10)*1.8*exp(-travel*.18);
@@ -180,19 +188,19 @@ vec3 corridor(vec2 uv){
     vec2 e=vec2(.002,0);
     vec3 normal=normalize(vec3(corridorDistance(q+e.xyy)-corridorDistance(q-e.xyy),corridorDistance(q+e.yxy)-corridorDistance(q-e.yxy),corridorDistance(q+e.yyx)-corridorDistance(q-e.yyx)));
     vec3 lamp=ro+vec3(.67,.80,2.5);float diffuse=max(dot(normal,normalize(lamp-q)),0.0);
-    float detail=fbm(q.xy*19.0+vec2(q.z*3.3,-q.z*2.1));
-    float fractures=exp(-abs(detail-.51)*55.0);
+    float detail=fbm(q.xy*15.0+vec2(q.z*3.3,-q.z*2.1));
+    float fractures=exp(-abs(detail-.51)*30.0);
     float occlusion=clamp(corridorDistance(q+normal*.06)/.06,.12,1.0);
-    float side=smoothstep(-.50,.65,q.x+q.y*.28+.14*sin(q.z*2.0));
-    float pockets=fbm(q.zy*7.0+vec2(q.x*2.7,-q.x*1.4));
-    float hotSites=smoothstep(.42,.69,pockets)*(.30+.70*side);
-    // Unheated faces stay burgundy red. Yellow-white emission is confined to
-    // selected fractures rather than bleaching complete foreground wall faces.
-    vec3 material=u_secondary*vec3(.78,.24,.12)*(.18+diffuse*.88)*occlusion;
-    material+=u_secondary*vec3(.26,.08,.025)*diffuse;
-    vec3 incandescent=mix(u_primary*vec3(1.18,.92,.55),vec3(1.0,.96,.84),hotSites);
-    float crackEnergy=pow(fractures,1.45)*(.52+hotSites*3.0);
-    vec3 emission=incandescent*crackEnergy;
+    float side=smoothstep(-.45,.62,q.x+q.y*.38+.12*sin(q.z*2.0));
+    float pockets=fbm(q.zy*4.0+vec2(q.x*2.3,-q.x*1.1));
+    float hotSites=smoothstep(.39,.62,pockets)*(.20+.80*side);
+    float hotFaces=hotSites*(.68+.32*diffuse)*(.55+.45*occlusion);
+    vec3 material=u_secondary*vec3(.86,.25,.10)*(.16+diffuse*.92)*occlusion;
+    vec3 incandescent=mix(u_primary*vec3(1.12,.85,.54),vec3(1.0,.94,.72),smoothstep(.30,.8,hotSites));
+    // Broad heated faces retain marbled/chipped relief; smaller cracks connect
+    // them across otherwise dark burgundy blocks and deep recessed architecture.
+    float crackEnergy=fractures*(.16+hotSites*.72);
+    vec3 emission=incandescent*(hotFaces*3.5+crackEnergy*.65);
     float distanceFade=exp(-travel*.22);
     vec3 color=material*distanceFade+emission*exp(-travel*.28)+volume*.35;
     return u_ink+(1.0-exp(-color*u_intensity*1.6));
@@ -206,8 +214,10 @@ float arc(vec2 p,vec2 radii,float opening,float phase){
     return max(d,(opening-gate)*.11);
 }
 float gesture(vec2 p,float kind,float phase){
-    // Open bowls, stems, bars, paired loops and angular glyph fragments vary the
-    // mark vocabulary seen in the sampled luminous-writing source frame.
+    // Subtle continuous warping keeps bowls and stems gestural. These are loose
+    // luminous writing fragments, rather than a collection of clean font glyphs.
+    p.x+=.012*sin(p.y*18.0+phase*.3)+.006*sin(p.y*39.0+kind*2.0);
+    p.y+=.009*sin(p.x*23.0+kind*1.7);
     float d=arc(p,vec2(.105,.15),.55,phase);
     if(kind<.5)return d;
     if(kind<1.5){
@@ -223,11 +233,13 @@ float gesture(vec2 p,float kind,float phase){
         return min(d,segment(p,vec2(-.15,-.015),vec2(.12,.005)));
     }
     if(kind<4.5){
-        d=segment(p,vec2(-.09,-.17),vec2(.075,.18));
-        d=min(d,segment(p,vec2(.075,.18),vec2(.095,-.16)));
-        return min(d,segment(p,vec2(-.035,-.045),vec2(.13,-.045)));
+        d=arc(p-vec2(-.018,.072),vec2(.075,.105),1.45,.15+phase*.04);
+        return min(d,arc(p+vec2(-.005,.087),vec2(.105,.105),1.5,PI+phase*.04));
     }
-    if(kind<5.5)return min(segment(p,vec2(0,-.18),vec2(0,.17)),segment(p,vec2(-.10,-.18),vec2(.10,-.18)));
+    if(kind<5.5){
+        d=segment(p,vec2(-.035,-.13),vec2(.025,.18));
+        return min(d,arc(p+vec2(.012,.12),vec2(.07,.06),1.1,1.0));
+    }
     if(kind<6.5){
         d=arc(p-vec2(.015,.045),vec2(.09,.10),.9,phase+.8);
         return min(d,segment(p,vec2(-.06,-.15),vec2(.11,-.15)));
@@ -237,26 +249,59 @@ float gesture(vec2 p,float kind,float phase){
 }
 vec3 glyphs(vec2 uv){
     vec3 glow=vec3(0);float t=u_time*.28;
-    for(int i=0;i<18;i++){
+    // Fine distant scratches and faint crossbars supply the source's floating
+    // depth; the foreground varies from tiny fragments to oversized loose loops.
+    for(int i=0;i<42;i++){
+        float k=float(i),seed=hash(k+142.0);
+        vec2 center=vec2((hash(k+111.0)-.5)*1.85,(hash(k+170.0)-.5)*1.02);
+        vec2 p=uv-center-vec2(.002*sin(t+k),.004*cos(t*.6+k));
+        float length=.005+.018*hash(k+96.0);
+        float d=segment(p,vec2(0,-length),vec2(.0015*sin(k),length));
+        if(seed>.65)d=min(d,segment(p,vec2(-length*.65,0),vec2(length*.65,0)));
+        glow+=mix(u_secondary,u_primary,seed)*exp(-d*d/.0000012)*(.06+.16*seed);
+    }
+    for(int i=0;i<24;i++){
         float k=float(i),seed=hash(k+2.0);
         vec2 center=vec2((hash(k+18.0)-.5)*1.55,(hash(k+37.0)-.5)*.82);
-        float size=.28+.75*hash(k+48.0);
-        if(i<3){center=vec2(-.32+k*.15,.02+.035*sin(k));size=.95+k*.12;}
+        float size=.12+.58*pow(hash(k+48.0),1.30);
         float kind=floor(hash(k+71.0)*8.0),angle=(hash(k+91.0)-.5)*.75;
+        if(i==0){center=vec2(-.25,-.035);size=2.0;kind=0.0;angle=-.26;}
+        if(i==1){center=vec2(-.15,-.055);size=.88;kind=2.0;angle=-.10;}
+        if(i==2){center=vec2(.04,.055);size=.98;kind=1.0;angle=.06;}
+        if(i==3){center=vec2(.37,.16);size=.68;kind=1.0;angle=.18;}
+        if(i==4){center=vec2(.47,-.24);size=.88;kind=2.0;angle=.45;}
         for(int j=0;j<3;j++){
-            float lag=float(j)*.24,phase=t-lag;
-            vec2 drift=vec2(sin(phase*.85+k*2.0),cos(phase*.7+k))*vec2(.016,.012);
-            vec2 p=rot(angle+.14*sin(phase+k))*(uv-center-drift-u_mouse*.018)/size;
-            float d=gesture(p,kind,phase*.8+k);
-            float width=(.0018+.0015*seed)/size;
+            float lag=float(j)*.42,phase=t-lag;
+            vec2 drift=vec2(sin(phase*.85+k*2.0),cos(phase*.7+k))*vec2(.022,.017);
+            vec2 p=rot(angle+.09*sin(phase+k))*(uv-center-drift-u_mouse*.018)/size;
+            float d=gesture(p,kind,phase*.18+k*.28);
+            float width=(.00135+.0012*seed)/size;
             float core=exp(-d*d/(width*width));
-            float halo=exp(-d*100.0*size)*.11;
-            float fade=exp(-float(j)*1.45);
+            float halo=exp(-d*90.0*size)*.12;
+            float fade=exp(-float(j)*1.65);
             float flicker=.7+.3*sin(t*.7+k*2.3);
+            if(i==0)flicker*=.21;
             glow+=mix(u_primary,u_secondary,step(.57,seed))*(core+halo)*fade*flicker;
         }
     }
-    return u_ink+(1.0-exp(-glow*u_intensity*1.2));
+    // Compact luminous dashes and writing fragments sit in front of the faint
+    // loop field. They carry the sampled source's short bright mark hierarchy.
+    for(int i=0;i<18;i++){
+        float k=float(i),seed=hash(k+244.0);
+        vec2 center=vec2((hash(k+231.0)-.5)*1.48,(hash(k+272.0)-.5)*.78);
+        if(i==0)center=vec2(.27,.055);
+        if(i==1)center=vec2(-.12,-.20);
+        if(i==2)center=vec2(.22,-.32);
+        vec2 p=rot((hash(k+289.0)-.5)*.24)*(uv-center-vec2(.004*sin(t+k),.002*cos(t+k)));
+        float length=.009+.030*seed;
+        float d=segment(p,vec2(-length,0),vec2(length,.002*sin(k)));
+        if(seed>.82)d=segment(p,vec2(0,-length),vec2(.002,length));
+        float width=.0013+.0014*hash(k+299.0);
+        float core=exp(-d*d/(width*width)),halo=exp(-d*135.0)*.14;
+        glow+=mix(u_primary,u_secondary,step(.80,seed))*(core+halo)*(.46+.55*seed);
+    }
+    vec3 dust=vec3(hash2(floor(gl_FragCoord.xy))*u_grain*.028);
+    return u_ink+dust+(1.0-exp(-glow*u_intensity*1.2));
 }
 void main(){
     vec2 uv=(gl_FragCoord.xy-.5*u_resolution)/u_resolution.y;
