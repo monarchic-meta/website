@@ -12,11 +12,22 @@ import { fileURLToPath } from 'node:url';
 // They do not execute GLSL or replace real-browser visual/framebuffer checks.
 // Run with: pnpm check:framer-studies
 
-async function run() {
+async function run(includeOriginals = false) {
     const repo = fileURLToPath(new URL("../", import.meta.url));
     const ts = createRequire(path.join(repo, 'package.json'))('typescript');
     const manifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/manifest.json', 'utf8'));
-    const files = [...new Set(manifest.studies.map(s => s.componentSource))];
+    // Keep the complete legacy 60 suite, then rerun it in one seven-family window
+    // with 24 original fixtures. These are resource-test replicas, not saved pages.
+    const originalManifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/originals-manifest.json', 'utf8'));
+    const originalFixtures = originalManifest.studies;
+    assert.equal(originalFixtures.length, 8, 'eight independently composed original modes');
+    for (const study of originalFixtures) {
+        assert.equal(study.classification, 'original-composition', 'original fixtures stay separate from source-led work');
+        assert.equal(study.studyProps.canvasMotion, false, 'original presets keep editor motion opt-in');
+    }
+    const studies = includeOriginals ? [...manifest.studies, ...originalFixtures] : manifest.studies;
+    const files = [...new Set(studies.map(s => s.componentSource))];
+    const expectedPlacements = includeOriginals ? 84 : 60;
     let time = 1000, serial = 0, peakContexts = 0, peakPixels = 0, draws = 0, copies = 0, created = 0, initializationDrawFailures = 0;
     const timers = new Map(), active = new Set(), owned = new Set(), shaderBySource = new Map(), checks = [];
     const hash = x => crypto.createHash('sha256').update(x).digest('hex');
@@ -224,6 +235,16 @@ async function run() {
     for (const file of files) {
         const source = fs.readFileSync(repo + '/docs/design-studies/code-components/' + file, 'utf8'), end = source.indexOf('/**\n * @framerSupportedLayoutWidth', source.indexOf('function createRenderer'));
         assert.ok(end > 0, 'helper prefix exists ' + file);
+        if (file.startsWith('Original')) {
+            assert.match(source, /canvasMotion:[^\n]*defaultValue:false/, 'original editor motion defaults off ' + file);
+            assert.match(source, /ORIGINAL COMPOSITION/, 'original labels are explicit ' + file);
+            assert.doesNotMatch(source, /CC-\d{3}|https:\/\/x\.com\//, 'originals have no external source attribution ' + file);
+            const saved = originalManifest.components.find(component => component.source === file);
+            assert.equal(hash(source), saved.sourceSHA256, 'original code matches its authoritative manifest ' + file);
+        } else {
+            const saved = manifest.components.find(component => component.source === file);
+            assert.equal(hash(source), saved.sourceSHA256, 'legacy source stays byte-exact ' + file);
+        }
         coordinators.push(source.slice(source.indexOf('const STUDY_POOL_KEY'), end));
         const result = ts.transpileModule(source.slice(0, end), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2022 } });
         const js = result.outputText.replace(/^import .* from "(?:react|framer)";?\r?\n/gm, '').replace(/^export \{\};?\r?\n/gm, '');
@@ -231,20 +252,21 @@ async function run() {
         modules.set(file, api);
         shaderBySource.set(file, new Set([hash(api.VERTEX + '\n' + api.FRAGMENT), ...(api.CANOPY_VERTEX ? [hash(api.CANOPY_VERTEX + '\n' + api.CANOPY_FRAGMENT)] : [])]));
     }
-    assert.equal(files.length, 5, 'five standalone study modules');
-    assert.equal(manifest.studies.length, 20, 'twenty distinct studies');
+    assert.equal(files.length, includeOriginals ? 7 : 5, 'expected standalone study modules');
+    assert.equal(manifest.studies.length, 20, 'twenty distinct legacy studies');
+    assert.equal(studies.length, includeOriginals ? 28 : 20, 'all legacy and original modes represented');
     for (const coordinator of coordinators)
         assert.equal(coordinator, coordinators[0], 'standalone modules keep identical shared coordinator definitions');
     const pool = modules.values().next().value.getStudyPool();
     for (const api of modules.values())
-        assert.equal(api.getStudyPool(), pool, 'all five modules share one pool');
+        assert.equal(api.getStudyPool(), pool, 'all loaded modules share one pool');
     const entries = [], failures = [];
     const roles = {
         main: { width: 2180, height: 1362, x: 0, columns: 3, pitchX: 2400, pitchY: 1700 },
         reference: { width: 620, height: 360, x: 7500, columns: 5, pitchX: 700, pitchY: 500 },
         lab: { width: 1020, height: 638, x: 11400, columns: 1, pitchX: 1200, pitchY: 930 },
     };
-    for (const [index, study] of manifest.studies.entries())
+    for (const [index, study] of studies.entries())
         for (const [role, shape] of Object.entries(roles)) {
             const root = new Root(entries.length), display = new Canvas();
             root.clientWidth = display.clientWidth = shape.width;
@@ -296,6 +318,10 @@ async function run() {
         assert.ok(entry.display.frame, 'generated frame ' + entry.fixture.id);
         assert.ok(shaderBySource.get(entry.source).has(entry.display.frame.shader), 'correct module factory ' + entry.fixture.id);
         assert.ok(entry.display.frame.effectiveW <= entry.display.width && entry.display.frame.effectiveH <= entry.display.height, 'quality records source pixels, never destination upsampling');
+        if (entry.fixture.id.startsWith('OL-')) {
+            const modes = originalFixtures.filter(study => study.componentSource === entry.source).map(study => study.mode);
+            assert.equal(entry.display.frame.mode, modes.indexOf(entry.settings.mode), 'original mode dispatch is exact ' + entry.fixture.id);
+        }
         if (entry.settings.mode === 'dither')
             assert.deepEqual(entry.display.frame.cssResolution, [entry.root.clientWidth, entry.root.clientHeight], 'dither CSS geometry stays logical across zoom, DPR and replica roles');
     }
@@ -321,13 +347,15 @@ async function run() {
     assert.equal(created, 0, 'registration yields before graphics initialization');
     await tick();
     assert.ok(created <= 1, 'initializations yield between jobs');
-    await tick(180);
-    assert.equal(entries.filter(e => e.hasFrame).length, 60, 'all mounted nonzero placements bootstrap, including offscreen');
+    await tick(includeOriginals ? 276 : 180);
+    assert.equal(entries.filter(e => e.hasFrame).length, expectedPlacements, 'all mounted nonzero placements bootstrap, including offscreen');
+    assert.equal(entries.filter(e => !e.fixture.id.startsWith('OL-') && e.hasFrame).length, 60, 'all sixty legacy placements remain covered');
+    if (includeOriginals) assert.equal(entries.filter(e => e.fixture.id.startsWith('OL-') && e.hasFrame).length, 24, 'all eight original modes have three mixed replicas');
     for (const entry of entries)
         assertFrame(entry);
     assert.equal(active.size, 0, 'paused overview retains no WebGL contexts');
     assertCaps();
-    record('spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
+    record(includeOriginals ? 'spatial 84-placement bootstrap uses seven actual renderer factories, including offscreen cards' : 'spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
     let zoomCases = 0;
     for (const dpr of [1, 1.5, 2]) {
         window.devicePixelRatio = dpr;
@@ -350,10 +378,14 @@ async function run() {
     }
     project(.05);
     await settle('return to overview');
+    // The mixed board has six rows instead of four. Keep every peer visible for
+    // this fairness stress case; the preceding pan/zoom cases retain 900px.
+    if (includeOriginals) window.innerHeight = 1280;
     project(.4, roles.reference.x, 0);
     await settle('return to cached reference board');
-    record('pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
+    record(includeOriginals ? 'pan through all 84 mixed placements and back never reuses inadequate cache tiers' : 'pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
     const movingPeers = entries.filter(e => e.fixture.role === 'reference');
+    assert.ok(movingPeers.every(isVisible), 'all hover fairness peers are actually visible');
     for (const [index, entry] of movingPeers.entries())
         pool.update(entry, { ...entry.settings, animate: true, intensity: entry.settings.intensity + .0001 * (index + 1) });
     let previousHover = null;
@@ -372,7 +404,8 @@ async function run() {
     await settle('hover queue settles');
     assert.ok(peakPixels <= 3000000, 'editor live plus serial still initialization stays within 1M+2M GPU pixels');
     assertCaps();
-    record('twenty visible cards upgrade fairly during continuous hover and parameter churn');
+    record(includeOriginals ? 'twenty-eight mixed cards upgrade fairly during continuous hover and parameter churn' : 'twenty visible cards upgrade fairly during continuous hover and parameter churn');
+    if (includeOriginals) window.innerHeight = 900;
     const focused = entries.find(e => e.fixture.role === 'reference' && e.source === 'PointCodingStudy.tsx');
     project(1, focused.fixture.worldX, focused.fixture.worldY);
     await settle('focus setup');
@@ -525,14 +558,14 @@ async function run() {
     assert.equal(owned.size, 0, 'all shader/program/buffer/texture handles deleted');
     assert.equal(pool.debug().entryCount, 0, 'registry emptied');
     for (const [file, api] of modules) {
-        const study = manifest.studies.find(s => s.componentSource === file), gpu = new Canvas();
+        const study = studies.find(s => s.componentSource === file), gpu = new Canvas();
         gpu.width = 1; gpu.height = 1;
         initializationDrawFailures = 1;
         assert.throws(() => api.createRenderer(gpu, { primary: '#efc8c8', secondary: '#d6b442', ink: '#424855', ...study.studyProps, mode: study.mode, managed: true, static: true, renderWidth: 620, renderHeight: 360, managedBufferWidth: 640, managedBufferHeight: 371, pixelBudget: 2000000 }, () => {}), /injected initial draw failure/, 'constructor propagates first-draw failure ' + file);
         assert.equal(active.size, 0, 'constructor failure releases actual GL context ' + file);
         assert.equal(owned.size, 0, 'constructor failure deletes owned GL handles ' + file);
     }
-    const failedRoot = new Root(0), failedDisplay = new Canvas(), failedStudy = manifest.studies[0];
+    const failedRoot = new Root(0), failedDisplay = new Canvas(), failedStudy = studies[0];
     failedRoot.clientWidth = failedDisplay.clientWidth = 620;
     failedRoot.clientHeight = failedDisplay.clientHeight = 360;
     failedRoot.setRect(20, 30, 620, 360);
@@ -544,7 +577,7 @@ async function run() {
     pool.remove(failingSnapshot); await tick(2);
     record('constructor first-draw and pre-display snapshot failures clean actual contexts and GPU handles');
     for (const [file, api] of modules) {
-        const study = manifest.studies.find(s => s.componentSource === file), root = new Root(0), display = new Canvas();
+        const study = studies.find(s => s.componentSource === file), root = new Root(0), display = new Canvas();
         display.isConnected = true;
         const refs = [], effects = [];
         let hookIndex = 0;
@@ -561,12 +594,17 @@ async function run() {
         assert.equal(display.frame.phase, settings.stillTime, 'export stays frozen ' + file);
         assert.equal(active.size, 0, 'static export does not retain GL ' + file);
     }
-    record('all five static export hooks render once through StrictMode replay');
+    record(includeOriginals ? 'all seven static export hooks render once through StrictMode replay' : 'all five static export hooks render once through StrictMode replay');
     assertCaps();
-    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' };
+    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), originalStudies: includeOriginals ? 8 : 0, originalInstances: includeOriginals ? 24 : 0, legacyInstances: 60, scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' };
 }
 try {
-    console.log(JSON.stringify(await run()));
+    const legacyRegression = await run(false);
+    const mixedRegression = await run(true);
+    assert.equal(legacyRegression.actualModules, 5, 'legacy module regression remains unchanged');
+    assert.equal(legacyRegression.instances, 60, 'legacy placement regression remains unchanged');
+    assert.equal(legacyRegression.checks.length, 12, 'all twelve legacy resource assertion groups retained');
+    console.log(JSON.stringify({ ...mixedRegression, legacyAssertionsRetained: true, legacyRegression }));
 }
 catch (error) {
     console.log(JSON.stringify({ passed: false, error: error instanceof Error ? error.message : String(error) }));
