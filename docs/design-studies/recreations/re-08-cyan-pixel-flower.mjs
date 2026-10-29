@@ -4,44 +4,61 @@ export default {
   sourceKey: 'GRA-008',
   background: '#030A16',
   simplifications: [
-    'Source-led recreation of the viewed cyan pixel flower, not an original Monarchic motif.',
-    'Ten overlapping petals are sampled on a coarse native-frame lattice; the original fine character cells and glow are reduced.',
-    'A few native background grid lines replace the much denser source microgrid.',
+    'Source-led recreation of the viewed dimensional cyan pixel flower, not an original Monarchic motif.',
+    'Fourteen overlapping, asymmetrically placed petal fields replace the evenly spaced flat starburst. Native character-cell-like blocks sample bright rims, dark folds, changing petal widths, and a smaller offset hub; all parts remain editable.',
+    'The original fine character texture, continuous shading, and glow remain coarsened. A native fine grid and curved pixel stem retain the observed digital surface and silhouette without imported artwork.',
   ],
   build(h) {
-    const grid = h.group('Faint background grid', 80, 60, 1440, 880);
-    for (let x = 0; x <= 1440; x += 120) h.line(`Grid vertical ${x}`, x, 0, x, 880, '#09172B', 1, grid);
-    for (let y = 0; y <= 880; y += 110) h.line(`Grid horizontal ${y}`, 0, y, 1440, y, '#09172B', 1, grid);
-    const bloom = h.group('Pixel bloom / editable petals', 400, 60, 800, 790);
-    const families = Array.from({ length: 10 }, (_, i) => h.group(`Petal ${i + 1} / pixel family`, 0, 0, 800, 790, {}, bloom));
-    const hub = h.group('Hub pixels', 0, 0, 800, 790, {}, bloom);
-    for (let row = -13; row <= 13; row++) {
-      for (let column = -13; column <= 13; column++) {
-        const x = column * 30;
-        const y = row * 30;
-        let closest = Infinity;
-        let petal = 0;
-        for (let i = 0; i < 10; i++) {
-          const angle = (i * Math.PI * 2) / 10 - Math.PI / 2;
-          const dx = x - Math.cos(angle) * 188;
-          const dy = y - Math.sin(angle) * 188;
+    const grid = h.group('Faint background microgrid', 80, 60, 1440, 880, { opacity: 0.55 });
+    for (let x = 0; x <= 1440; x += 24) h.line(`Grid vertical ${x}`, x, 0, x, 880, '#0b1729', 0.7, grid);
+    for (let y = 0; y <= 880; y += 24) h.line(`Grid horizontal ${y}`, 0, y, 1440, y, '#0b1729', 0.7, grid);
+    const bloom = h.group('Dimensional pixel bloom / overlapping petal fields', 400, 80, 800, 790);
+    const petals = [
+      [-32, -139, -1.82, 122, 54], [35, -166, -1.36, 137, 59],
+      [135, -109, -0.72, 130, 64], [176, -25, -0.13, 116, 69],
+      [138, 81, 0.53, 111, 68], [55, 157, 1.3, 130, 63],
+      [-56, 163, 1.9, 126, 63], [-143, 94, 2.52, 124, 65],
+      [-178, -7, 3.18, 122, 63], [-135, -113, 3.89, 115, 60],
+      [-74, -36, -2.2, 89, 43], [84, -27, -0.52, 100, 45],
+      [-63, 59, 2.6, 92, 43], [58, 83, 1.3, 79, 37],
+    ];
+    const glow = h.group('Petal emission / low-opacity native haze', 0, 0, 800, 790, {}, bloom);
+    petals.forEach(([x, y, angle, length, width], index) => h.frame(`Petal ${index + 1} / soft emission`, 400 + x - length, 345 + y - width, length * 2, width * 2, '#12a8da', { radius: '50%', rotation: `${angle * 180 / Math.PI}deg`, blur: '6px', opacity: 0.07 }, glow));
+    const families = petals.map((_, index) => h.group(`Petal ${index + 1} / shaded native cells`, 0, 0, 800, 790, {}, bloom));
+    const hub = h.group('Offset hub / tonal cells', 0, 0, 800, 790, {}, bloom);
+    const palette = ['#03223f', '#064c78', '#0b75a8', '#1599cb', '#25c4ec', '#70e4fa'];
+    for (let row = -18; row <= 18; row++) {
+      for (let column = -18; column <= 18; column++) {
+        const x = column * 18;
+        const y = row * 18;
+        let visible = null;
+        for (let index = 0; index < petals.length; index++) {
+          const [px, py, angle, length, width] = petals[index];
+          const dx = x - px; const dy = y - py;
           const u = dx * Math.cos(angle) + dy * Math.sin(angle);
-          const v = -dx * Math.sin(angle) + dy * Math.cos(angle);
-          const q = (u / 157) ** 2 + (v / 62) ** 2;
-          if (q < closest) { closest = q; petal = i; }
+          const v = -dx * Math.sin(angle) + dy * Math.cos(angle) - 12 * Math.sin(u / length * 2 + index * 0.7);
+          const q = (u / length) ** 2 + (v / width) ** 2;
+          if (q <= 1) visible = { index, u: u / length, v: v / width, q };
         }
-        const center = Math.hypot(x, y) < 114;
-        if (closest > 1 && !center) continue;
-        const level = center ? 2 : closest < 0.30 ? 2 : closest < 0.68 ? 1 : 0;
-        const color = ['#0756A0', '#099FDE', '#39D4F5'][level];
-        h.frame(`Pixel ${column}:${row}`, 389 + x, 359 + y, 20, 20, color, { radius: '2px', opacity: 0.84 + level * 0.06 }, center ? hub : families[petal]);
+        const inHub = ((x - 17) / 57) ** 2 + ((y + 4) / 53) ** 2 < 1;
+        if (!visible && !inHub) continue;
+        let shade;
+        if (inHub) {
+          shade = 0.45 + 0.19 * Math.sin(column * 1.8 + row * 0.7) + 0.18 * (1 - Math.hypot(x - 17, y + 4) / 95);
+        } else {
+          const fold = Math.exp(-(((visible.v + 0.22) / 0.16) ** 2));
+          shade = 0.1 + 0.65 * Math.pow(Math.abs(visible.v), 1.2) + 0.1 * (visible.u + 1) / 2 + (visible.q > 0.75 ? 0.32 : 0) - fold * 0.15;
+          shade += 0.06 * Math.sin(column * 1.9 + row * 2.7);
+        }
+        const level = Math.max(0, Math.min(5, Math.round(shade * 5)));
+        h.frame(`Cell ${column}:${row} / tonal level ${level}`, 393 + x, 338 + y, 14, 14, palette[level], { border: `0.6px solid ${palette[Math.max(0, level - 1)]}`, opacity: 0.94 }, inHub ? hub : families[visible.index]);
       }
     }
-    const stem = h.group('Curved pixel stem', 610, 650, 230, 300);
-    for (let i = 0; i < 15; i++) {
-      const t = i * 18;
-      const x = 190 - 0.63 * t + 0.0006 * t * t;
-      h.frame(`Stem pixel ${i + 1}`, x, t, 12, 18, i % 3 === 0 ? '#1285C7' : '#064777', { radius: '2px' }, stem);
+    const stem = h.group('Curved pixel stem', 560, 640, 260, 330);
+    for (let index = 0; index < 19; index++) {
+      const t = index * 17;
+      const x = 170 - 0.5 * t + 0.0005 * t * t;
+      h.frame(`Stem cell ${index + 1}`, x, t, 10, 16, index % 3 === 0 ? '#158fc5' : '#07517c', { border: '0.6px solid #0a6389' }, stem);
     }
   },
 };

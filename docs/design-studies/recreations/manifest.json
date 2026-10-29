@@ -479,9 +479,9 @@
     "height": 1000,
     "background": "#030A16",
     "simplifications": [
-      "Source-led recreation of the viewed cyan pixel flower, not an original Monarchic motif.",
-      "Ten overlapping petals are sampled on a coarse native-frame lattice; the original fine character cells and glow are reduced.",
-      "A few native background grid lines replace the much denser source microgrid."
+      "Source-led recreation of the viewed dimensional cyan pixel flower, not an original Monarchic motif.",
+      "Fourteen overlapping, asymmetrically placed petal fields replace the evenly spaced flat starburst. Native character-cell-like blocks sample bright rims, dark folds, changing petal widths, and a smaller offset hub; all parts remain editable.",
+      "The original fine character texture, continuous shading, and glow remain coarsened. A native fine grid and curved pixel stem retain the observed digital surface and silhouette without imported artwork."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -491,55 +491,75 @@
     "framerLabel": "cS27xukp9",
     "parts": [
       {
-        "name": "Faint background grid",
+        "name": "Faint background microgrid",
         "id": "FmJ96eztJ"
       },
       {
-        "name": "Pixel bloom / editable petals",
+        "name": "Dimensional pixel bloom / overlapping petal fields",
         "id": "xWYJwzvyN"
       },
       {
-        "name": "Petal 1 / pixel family",
+        "name": "Petal emission / low-opacity native haze",
+        "id": "gbvy_dXAB"
+      },
+      {
+        "name": "Petal 1 / shaded native cells",
         "id": "mRmbvDUT_"
       },
       {
-        "name": "Petal 2 / pixel family",
+        "name": "Petal 2 / shaded native cells",
         "id": "UDYS_9zyt"
       },
       {
-        "name": "Petal 3 / pixel family",
+        "name": "Petal 3 / shaded native cells",
         "id": "CRypQabLY"
       },
       {
-        "name": "Petal 4 / pixel family",
+        "name": "Petal 4 / shaded native cells",
         "id": "izPeUqiBj"
       },
       {
-        "name": "Petal 5 / pixel family",
+        "name": "Petal 5 / shaded native cells",
         "id": "wNE6AJonU"
       },
       {
-        "name": "Petal 6 / pixel family",
+        "name": "Petal 6 / shaded native cells",
         "id": "rxExSlBUh"
       },
       {
-        "name": "Petal 7 / pixel family",
+        "name": "Petal 7 / shaded native cells",
         "id": "lkI3xyl6I"
       },
       {
-        "name": "Petal 8 / pixel family",
+        "name": "Petal 8 / shaded native cells",
         "id": "rkL2Ul145"
       },
       {
-        "name": "Petal 9 / pixel family",
+        "name": "Petal 9 / shaded native cells",
         "id": "QVf6Aw3bL"
       },
       {
-        "name": "Petal 10 / pixel family",
+        "name": "Petal 10 / shaded native cells",
         "id": "rv944sQZw"
       },
       {
-        "name": "Hub pixels",
+        "name": "Petal 11 / shaded native cells",
+        "id": "UW2rfNPeU"
+      },
+      {
+        "name": "Petal 12 / shaded native cells",
+        "id": "OAZpODcj8"
+      },
+      {
+        "name": "Petal 13 / shaded native cells",
+        "id": "graFYvC2J"
+      },
+      {
+        "name": "Petal 14 / shaded native cells",
+        "id": "P8w0knOeH"
+      },
+      {
+        "name": "Offset hub / tonal cells",
         "id": "ikUpPCa5m"
       },
       {
@@ -547,13 +567,29 @@
         "id": "tAp6w2QxH"
       }
     ],
-    "recipeFrames": 350,
-    "nativeFrames": 351,
+    "recipeFrames": 807,
+    "nativeFrames": 808,
     "nativeText": 0,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "GRA-008",
+      "change": "Replaced uniform flat starburst with overlapping asymmetric petal fields, tonal folds, bright rims and a smaller hub. Character texture and glow remain coarsened.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "161cf69f9abba3b038ff91041806f84a3a9dccfdbe6e4266545fd7babfcf395c",
+      "compiledPayloadSHA256": "6ca0b209d559f5bcff7b4021d8c7a58fe7372b6feaae9dd2bcaa5c46a089d5ac",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-09",
