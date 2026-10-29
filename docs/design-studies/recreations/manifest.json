@@ -1826,8 +1826,8 @@
     "background": "#080909",
     "simplifications": [
       "Source-led adaptation of the white point canopy and trailing mesh observed in @yuruyurau’s post https://x.com/yuruyurau/status/2093710258120331463.",
-      "An independently constructed projected dome and ten hanging point strands retain the broad canopy, narrow throat, and open trailing contours. The source formula is not copied or executed.",
-      "The source has a much denser moving point surface. This coarse static construction uses individually editable native circles; no bitmap, SVG, shader, or code component is used.",
+      "An independently constructed projected dome, doubled elliptical rim, converging neck, and ten twisting point strands study the observed tall silhouette and hourglass throat. The source formula is not copied or executed.",
+      "Points are concentrated on the dome and overlapping throat rather than spread across an umbrella-shaped fan; native meridians, latitude ellipses, and connected trails restore the visible warp and flow. The source still has a much denser moving surface. This bounded static sample uses editable native circles, line segments, and ellipse outlines, without a bitmap, SVG, shader, or code component.",
       "Static study only: source motion, changing perspective, and interactions are not reproduced."
     ],
     "framerSourceSection": "rHeXK4bVd",
@@ -1838,24 +1838,111 @@
     "framerLabel": "z4z38k_wt",
     "framerCreditText": "jiwC_XgOC",
     "framerCaption": "ivzZZBpkg",
-    "recipeFrames": 558,
-    "nativeFrames": 559,
+    "recipeFrames": 1376,
+    "nativeFrames": 1377,
     "nativeText": 5,
     "importedSVGs": 0,
     "rasterFills": 0,
     "parts": [
       {
-        "name": "Suspended canopy / twelve editable point rings",
+        "name": "Suspended dome / fourteen editable point rings",
         "id": "L2c_Axe73"
       },
       {
-        "name": "Ten open trailing point strands",
+        "name": "Dome / connected meridian warp",
+        "id": "vwzBIHSR1"
+      },
+      {
+        "name": "Canopy point ring 01",
+        "id": "h3RI7onJ7"
+      },
+      {
+        "name": "Canopy point ring 02",
+        "id": "qJeGu5YAd"
+      },
+      {
+        "name": "Canopy point ring 03",
+        "id": "HphiNaFza"
+      },
+      {
+        "name": "Canopy point ring 04",
+        "id": "TVrD3wCXQ"
+      },
+      {
+        "name": "Canopy point ring 05",
+        "id": "T8QFqInya"
+      },
+      {
+        "name": "Canopy point ring 06",
+        "id": "Y46KTInQw"
+      },
+      {
+        "name": "Canopy point ring 07",
+        "id": "G0wC0kQI5"
+      },
+      {
+        "name": "Canopy point ring 08",
+        "id": "PS9DDLLHy"
+      },
+      {
+        "name": "Canopy point ring 09",
+        "id": "Sf1jws3XM"
+      },
+      {
+        "name": "Canopy point ring 10",
+        "id": "YTPneaP9O"
+      },
+      {
+        "name": "Canopy point ring 11",
+        "id": "W2enIVtKy"
+      },
+      {
+        "name": "Canopy point ring 12",
+        "id": "bOgG6zMI4"
+      },
+      {
+        "name": "Canopy point ring 13",
+        "id": "rAaIMCKRd"
+      },
+      {
+        "name": "Canopy point ring 14",
+        "id": "BlFXvTI_8"
+      },
+      {
+        "name": "Converging rim / narrow hourglass throat",
+        "id": "lbzrQp5de"
+      },
+      {
+        "name": "Throat / faint connected meridians",
+        "id": "F1NetSV12"
+      },
+      {
+        "name": "Ten intertwined open trailing contours",
         "id": "NbKqX71DB"
+      },
+      {
+        "name": "Trailing mesh / faint connected curves",
+        "id": "IRzmYhYrZ"
       }
     ],
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerVerifiedDate": "2026-10-23",
-    "framerDesignPage": "a_19JJYFC"
+    "framerVerifiedDate": "2026-10-29",
+    "framerDesignPage": "a_19JJYFC",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "CC-001",
+      "change": "Restored taller canopy silhouette, bright doubled rim, latitude/meridian warp, converging throat and connected trailing contours. Source moving point density/formula remain unreproduced.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "a44ca040fea72ab1b0bffee704c061af076d28a539207c5b2ad9eed85863867a",
+      "compiledPayloadSHA256": "a7cda9d73986a4882f62a4be65b851b568019749a215c41f0891f192be7f0271",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-19",
