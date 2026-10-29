@@ -410,8 +410,8 @@
     "background": "#EEE6D5",
     "simplifications": [
       "Source-led recreation of the viewed five-cube halftone staircase, not an original Monarchic illustration.",
-      "Each cube has three native frame faces; the right face uses a coarse six-by-eight grid of separately editable dots.",
-      "Paper grain and dense ink speckle are omitted; the diagonal is widened for the landscape artboard."
+      "Each cube has three native frame faces; the right face uses a staggered eight-by-ten grid of separately editable dots.",
+      "The five cubes now touch in a continuous steep staircase, retaining the observed portrait-like silhouette inside the landscape artboard. Paper grain and dense ink speckle remain omitted."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -441,13 +441,29 @@
         "id": "pb6vis0kh"
       }
     ],
-    "recipeFrames": 260,
-    "nativeFrames": 261,
+    "recipeFrames": 420,
+    "nativeFrames": 421,
     "nativeText": 0,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "GRA-007",
+      "change": "Restored a continuous steep five-cube staircase and denser staggered halftone; paper and ink grain remain omitted.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "4f358871e1b6a9c93b05bc0b447ce05faa95dba841b1e27d2194358171a854d7",
+      "compiledPayloadSHA256": "904b90ba6ab730121e536f6775c0b2ab4d5f2178bd03c4a4c0bef2c0f739ae8b",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-08",
