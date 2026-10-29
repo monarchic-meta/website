@@ -5,18 +5,16 @@ export default {
   background: '#BEBFC1',
   simplifications: [
     'Source-led SP-1 recreation, not a Monarchic logo; the large glyphs are constructed from editable native blocks.',
-    'The faint repeated outline lettering is reduced to two ghost bracket families.',
+    'The faint background now contains two outlined SP-1 wordmark repeats, including brackets, rather than unrelated rounded rectangles. Editable stroked Space Grotesk text substitutes for the source custom outline letterforms.',
     'The source loader is a static eight-dot arrangement; no animation or deployed functionality is implied.',
   ],
   build(h) {
     const bg = '#BEBFC1';
     const white = '#FBFBF7';
     const black = '#111211';
-    const ghosts = h.group('Ghost bracket families', 60, 40, 1480, 920);
-    for (const [y, suffix] of [[0, 'top'], [730, 'bottom']]) {
-      for (const [x, w] of [[15, 250], [360, 310], [1120, 260]]) {
-        h.frame(`Ghost outline ${suffix} ${x}`, x, y, w, 165, 'transparent', { radius: '48px', border: '2px dotted #EEEEEA', opacity: 0.65 }, ghosts);
-      }
+    const ghosts = h.group('Outlined SP-1 / background repeats', 60, 0, 1480, 1000, { overflow: 'clip' });
+    for (const [y, suffix] of [[-40, 'top'], [720, 'bottom']]) {
+      h.text(`Ghost SP-1 outline / ${suffix}`, '[SP-1]', 25, y, 1430, 370, 'transparent', 'Space Grotesk', 500, { textStrokeColor: '#EEEEEA', textStrokeWidth: 0.65, letterSpacing: '0.025em', lineHeight: '0.95em', opacity: 0.48, textAlignment: 'center' }, ghosts);
     }
     const left = h.group('Left rounded bracket', 100, 285, 175, 420);
     h.frame('Bracket outer', 0, 0, 175, 420, white, { radius: '66px' }, left);

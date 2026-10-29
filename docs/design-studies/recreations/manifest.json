@@ -56,7 +56,7 @@
     "background": "#BEBFC1",
     "simplifications": [
       "Source-led SP-1 recreation, not a Monarchic logo; the large glyphs are constructed from editable native blocks.",
-      "The faint repeated outline lettering is reduced to two ghost bracket families.",
+      "The faint background now contains two outlined SP-1 wordmark repeats, including brackets, rather than unrelated rounded rectangles. Editable stroked Space Grotesk text substitutes for the source custom outline letterforms.",
       "The source loader is a static eight-dot arrangement; no animation or deployed functionality is implied."
     ],
     "framerSourceSection": "rHeXK4bVd",
@@ -67,7 +67,7 @@
     "framerLabel": "PUxM61kFa",
     "parts": [
       {
-        "name": "Ghost bracket families",
+        "name": "Outlined SP-1 / background repeats",
         "id": "DdHnY6Uzn"
       },
       {
@@ -99,13 +99,29 @@
         "id": "AR2FVeFsx"
       }
     ],
-    "recipeFrames": 43,
-    "nativeFrames": 44,
-    "nativeText": 4,
+    "recipeFrames": 37,
+    "nativeFrames": 38,
+    "nativeText": 6,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "GRA-002-03",
+      "change": "Restored outlined SP-1 background lettering instead of unrelated rounded rectangles; source custom letterforms remain substituted.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "9db5afd1fde61d9399985547942ec9531ca06cd9d6b607e863e45c8b441af6ae",
+      "compiledPayloadSHA256": "689071ba407eda303445d77b948ea8dabab07fe46631ec6400a15c840d77ef30",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-03",
