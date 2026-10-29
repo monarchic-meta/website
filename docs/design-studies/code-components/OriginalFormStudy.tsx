@@ -252,8 +252,8 @@ vec3 glyphEngine(vec2 uv){
 }
 vec3 relaySpace(vec3 p){
     p.xy=rot(-.23)*p.xy;
-    p.xz=rot(-.40+.075*sin(u_time*.19)+u_mouse.x*.30)*p.xz;
-    p.yz=rot(.26+.055*cos(u_time*.23)+u_mouse.y*.22)*p.yz;
+    p.xz=rot(-.40+.075*sin(u_time*.19)*(1.0+(u_focus-.65)/.65)+u_mouse.x*.30)*p.xz;
+    p.yz=rot(.26+.055*cos(u_time*.23)*(1.0+(u_focus-.65)/.65)+u_mouse.y*.22)*p.yz;
     return p;
 }
 float relayMap(vec3 p){
