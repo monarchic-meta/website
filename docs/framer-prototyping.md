@@ -17,8 +17,9 @@ directions, their project nodes, source references, and review scope.
 The [second visual round](framer-visual-round-two.md) explores additional palettes,
 graphic systems, and a standalone artwork gallery.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
-independent graphic elements into four Design pages in the same project:
-Reference library, Recreations, Originals and Live Creative Coding. Keep the
+independent graphic elements into five Design pages in the same project:
+Reference library, Recreations, Originals, Live Creative Coding and
+[Original Live Coding](design-studies/code-components/originals.md). Keep the
 dense native artwork separate from live graphics, move existing groups instead
 of duplicating them, and preserve source credits and stable study IDs.
 
@@ -69,10 +70,10 @@ shaders, point surfaces, procedural textures and motion. Native layers are usefu
 for editing individual shapes; a code component exposes its source and visual
 parameters instead. Keep both forms where they help exploration.
 
-The Creative Coding component source is self-contained TypeScript/React under
+The code component sources are self-contained TypeScript/React under
 `docs/design-studies/code-components`. Framer supplies its runtime and code-file
 diagnostics; the website's TypeScript project excludes this authoring directory.
-It adds no React dependency or runtime integration to the Astro/Svelte site.
+They add no React dependency or runtime integration to the Astro/Svelte site.
 
 Keep exports and thumbnails static. Editor-canvas motion defaults off; expose an
 explicit **Canvas motion** opt-in when seeing the effect beside its reference
@@ -81,7 +82,7 @@ the opt-in cannot animate export or thumbnail rendering. The Creative Coding
 budgets are 12 fps and 1,000,000 pixels on the canvas, and 30 fps and 1,000,000 pixels
 in Preview. Verify those targets separately, including the default still frame.
 
-Budget the whole board as well as each instance. The five study files share a
+Budget the whole board as well as each instance. The seven study files share a
 per-window coordinator capped at two WebGL contexts, including initialization.
 Only one editor study animates at a time; Preview admits up to two. Zoomed-out
 cards retain code-generated 2D frames and release their GPU contexts. Generate
@@ -89,7 +90,8 @@ still refinements serially at up to 2,000,000 pixels. Follow transformed screen
 bounds and DPR when choosing raster detail, while preserving logical CSS units
 inside the shaders. Verify that every visible card upgrades after zoom or pan,
 retains detail after focus handoff, and recovers from cached-copy failures.
-Check a mixed 60-instance board at multiple zoom/DPR settings, hidden/offscreen
+Retain the 60-instance source-led regression and check the mixed 84-instance
+set, including 24 original placements, at multiple zoom/DPR settings, hidden/offscreen
 cleanup and synchronous static capture. Nonempty pixels alone do not establish
 usable image quality; a frame-rate cap alone does not bound context allocation.
 

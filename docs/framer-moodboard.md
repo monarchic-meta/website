@@ -4,7 +4,7 @@ Created 2026-10-22 from the [inspiration catalog](design-inspiration.md).
 
 [Open the moodboard](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To)
 under **Design → 01 Reference library** in the existing project. The visual
-kitchen uses four Design pages for graphic elements, textures, materials and compositions
+kitchen uses five Design pages for graphic elements, textures, materials and compositions
 that can later be applied to pages. The six homepage directions and earlier
 graphic gallery are separate, preserved prototypes.
 
@@ -14,15 +14,19 @@ graphic gallery are separate, preserved prototypes.
 | [02 / Recreations](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=a_19JJYFC) | 20 native editable source-led studies |
 | [03 / Originals](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | 18 independently composed studies and the combination playground |
 | [04 / Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bY_Q8AQKP) | 20 procedural and shader studies |
+| [05 / Original Live Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2) | 8 independently composed live graphics, separate from source-led recreations |
 
 Opening a collection mounts its own contents. The reference and live pages each
-mount 20 code instances; the recreation and original pages mount none. The draft
-Preview lab retains its separate 20 placements. Source inspiration remains a
+mount 20 code instances; the recreation page and **03 / Originals** mount none. The draft
+source-led Preview lab retains its separate 20 placements. The original live page
+mounts eight components; its separate draft lab has eight Desktop and eight
+inherited Phone placements. The [original live handoff](design-studies/code-components/originals.md)
+records those compositions and their controls. Source inspiration remains a
 conceptual collection spanning references, recreations and source-led live work.
 
 ## Sources and original compositions
 
-Keep source-led work and original compositions distinct across the four pages:
+Keep source-led work and original compositions distinct across the five pages:
 
 - [Source inspiration](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VvoNblwjH)
   contains the comparison library. Credited native recreations and live code
@@ -35,6 +39,11 @@ Keep source-led work and original compositions distinct across the four pages:
   contains **18 independently composed MB studies**: 17 SVG assets and the
   MB-17 chrome bitmap. Each has its own movable group. Their cited sources are
   influences, not a claim that we created the external reference.
+- [Original Live Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2)
+  adds eight independently composed OL studies made from live procedural code.
+  They use original geometry, motion and generated typography, without external
+  post images or reference-led compositions. They remain separate from the
+  eighteen MB studies and the twenty credited live adaptations.
 
 External work, recreations and close adaptations belong in Source inspiration,
 even when Codex built the recreation. Keep the source key, posting account,
@@ -89,7 +98,7 @@ canopy, RE-19's technical keycaps and connections, and RE-20's cyan/magenta
 Coronal bands. All four retain source credits and static limitations. A
 still-frame approximation is not a working shader or animation.
 
-## Source comparison refinements — 2026-10-29
+## First source comparison refinements — 2026-10-29
 
 The review compared all 20 native studies and the live collection with original
 images and sampled video frames. Eleven native studies warranted changes:
@@ -112,8 +121,12 @@ the updated notes fit their cards. The five code files matched exact source
 hashes with empty diagnostics. The live and reference pages each rendered all
 20 studies after reload, and all ten refined live studies moved in actual
 Preview. Editor-canvas motion and Preview pause/resume were checked separately.
-The existing resource checks still pass for all 60 placements. All four Design
+The existing resource checks still pass for all 60 placements. All four then-existing Design
 pages, 77 source records, 18 originals, credits and placement controls remain.
+
+A second live-only pass refined all twenty code studies while preserving those
+native revisions. The [live study handoff](design-studies/code-components/README.md)
+records its current shapes, materials, saved-state proof and verified motion.
 
 The [native manifest](design-studies/recreations/manifest.json) and
 [live manifest](design-studies/code-components/manifest.json) record the

@@ -1,5 +1,9 @@
 # Live Creative Coding studies
 
+This page documents the twenty credited source-led studies. The eight
+[original live compositions](originals.md) have their own Design page, draft
+Preview lab, source files and [manifest](originals-manifest.json).
+
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
 contains LC-01–04; [MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) contains
