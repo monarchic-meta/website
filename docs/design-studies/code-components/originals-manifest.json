@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "classification": "original-composition",
   "section": "Original compositions",
-  "authoringStatus": "Four revised style anchors saved and technically verified; owner style feedback pending",
+  "authoringStatus": "Four even-numbered compositions reworked and technically verified; owner style feedback pending",
   "independentComposition": true,
   "externalAssets": false,
   "components": [
     {
       "source": "OriginalSignalStudy.tsx",
-      "sourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "sourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
       "framerCodePath": "OriginalSignalStudy.tsx",
       "framerComponentId": "codeFile/XOna2aN:default"
     },
     {
       "source": "OriginalFormStudy.tsx",
-      "sourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+      "sourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
       "framerCodePath": "OriginalFormStudy.tsx",
       "framerComponentId": "codeFile/mVHoAUI:default"
     }
@@ -45,7 +45,7 @@
       "section": "Original compositions",
       "mode": "threshold",
       "description": "A thick folded rust-and-charcoal form with a long negative opening is shaded through limited-palette tonal dithering on a warm paper field.",
-      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "componentSourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -150,14 +150,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "loom",
-        "primary": "#2845ff",
-        "secondary": "#dfff35",
-        "ink": "#0a0c10"
+        "primary": "#eee9dc",
+        "secondary": "#c24c2e",
+        "ink": "#101313"
       },
       "section": "Original compositions",
       "mode": "loom",
-      "description": "Broad routing ribbons weave over and under one another through negative-space cuts.",
-      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "description": "Dense black-and-ivory optical contours form an asymmetric open counter-slit, with a restrained rust cut edge and resolution-aware line coverage.",
+      "componentSourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -194,14 +194,64 @@
       "styleReviewStatus": "awaiting owner feedback",
       "compositionRevision": {
         "date": "2026-10-29",
-        "revision": 1,
-        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
-        "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+        "revision": 3,
+        "change": "Replaced interlaced routing ribbons with an independently composed optical contour plane and an asymmetric open counter-slit. Controlled line pitch and analytic coverage preserve the print structure at phone resolution.",
+        "styleInfluences": [
+          {
+            "catalogId": "GRA-005",
+            "aspect": "Precise repeated line construction and controlled density."
+          },
+          {
+            "catalogId": "GRA-007",
+            "aspect": "Print contrast and tonal hierarchy."
+          },
+          {
+            "catalogId": "WEB-007",
+            "aspect": "Raster spatial structure."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and formulas.",
         "ownerReviewStatus": "awaiting-owner-feedback",
         "technicalStatus": "saved and editor-reload verified"
       },
-      "framerCompositionNote": "Woven signal ribbons interlace across a precise digital field.",
-      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+      "framerCompositionNote": "Fine contour bands bend around an offset opening, with a narrow rust trace at their overlap.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 03",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Signal loom",
+          "description": "Broad routing ribbons weave over and under one another through negative-space cuts.",
+          "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "loom",
+            "primary": "#2845ff",
+            "secondary": "#dfff35",
+            "ink": "#0a0c10"
+          },
+          "compositionRevision": {
+            "date": "2026-10-29",
+            "revision": 1,
+            "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+            "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+            "ownerReviewStatus": "awaiting-owner-feedback",
+            "technicalStatus": "saved and editor-reload verified"
+          },
+          "framerCompositionNote": "Woven signal ribbons interlace across a precise digital field.",
+          "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+        }
+      ]
     },
     {
       "id": "OL-03",
@@ -228,7 +278,7 @@
       "section": "Original compositions",
       "mode": "phosphor",
       "description": "An asymmetric folded phosphor mesh carries dense fine strands, dark gaps and a concentrated cyan-white signal through a navy field.",
-      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "componentSourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -333,14 +383,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "swarm",
-        "primary": "#ff4b32",
-        "secondary": "#2f49ff",
-        "ink": "#131319"
+        "primary": "#20d8ef",
+        "secondary": "#e641a5",
+        "ink": "#07071a"
       },
       "section": "Original compositions",
       "mode": "swarm",
-      "description": "Asymmetric vector marks travel through an elastic contour field with deliberate open space.",
-      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "description": "Two intersecting pleated emissive surfaces concentrate a white-hot seam and cyan/magenta caustic peaks around deep negative pockets in a violet field.",
+      "componentSourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -377,14 +427,64 @@
       "styleReviewStatus": "awaiting owner feedback",
       "compositionRevision": {
         "date": "2026-10-29",
-        "revision": 1,
-        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
-        "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+        "revision": 3,
+        "change": "Replaced detached vector marks with an original layered interference chamber, bounded volume integration, concentrated fold highlights and fine screen-light material.",
+        "styleInfluences": [
+          {
+            "catalogId": "CC-017",
+            "aspect": "Defined luminous fold highlights and layered fine internal structure."
+          },
+          {
+            "catalogId": "CC-018",
+            "aspect": "Deep negative pockets and concentrated high contrast."
+          },
+          {
+            "catalogId": "GRA-008",
+            "aspect": "Raster and pixel-light material."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and formulas.",
         "ownerReviewStatus": "awaiting-owner-feedback",
         "technicalStatus": "saved and editor-reload verified"
       },
-      "framerCompositionNote": "An asymmetric swarm balances sharp vector motion with a quiet frame.",
-      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+      "framerCompositionNote": "Cyan and magenta caustic layers converge into a bright seam against a dark field.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 03",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Vector swarm",
+          "description": "Asymmetric vector marks travel through an elastic contour field with deliberate open space.",
+          "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "swarm",
+            "primary": "#ff4b32",
+            "secondary": "#2f49ff",
+            "ink": "#131319"
+          },
+          "compositionRevision": {
+            "date": "2026-10-29",
+            "revision": 1,
+            "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+            "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+            "ownerReviewStatus": "awaiting-owner-feedback",
+            "technicalStatus": "saved and editor-reload verified"
+          },
+          "framerCompositionNote": "An asymmetric swarm balances sharp vector motion with a quiet frame.",
+          "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+        }
+      ]
     },
     {
       "id": "OL-05",
@@ -411,7 +511,7 @@
       "section": "Original compositions",
       "mode": "hinge",
       "description": "One asymmetric curled optical membrane has varying thickness, a triangular counterform, broad pale reflections and dark transmitted areas that refract a locally generated stripe/type field.",
-      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+      "componentSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -516,14 +616,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "fault",
-        "primary": "#ed3c28",
-        "secondary": "#f2a7b5",
-        "ink": "#171314"
+        "primary": "#e45b2f",
+        "secondary": "#ffdca4",
+        "ink": "#170c13"
       },
       "section": "Original compositions",
       "mode": "fault",
-      "description": "Angular paper-like shards open a deep fault across vermilion, pink and ink planes.",
-      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+      "description": "Dense thermal scan columns describe a stepped volumetric relief around an angular cut, using warm emissive value bands against deep aubergine.",
+      "componentSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -560,14 +660,64 @@
       "styleReviewStatus": "awaiting owner feedback",
       "compositionRevision": {
         "date": "2026-10-29",
-        "revision": 1,
-        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
-        "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+        "revision": 3,
+        "change": "Replaced flat angular paper-like shards with an independently constructed thick thermal relief: quantized terraces, hard footprint cuts, an angular through-fissure and dense fine scan columns.",
+        "styleInfluences": [
+          {
+            "catalogId": "GRA-008",
+            "aspect": "Fine luminous raster material that describes dimensional form."
+          },
+          {
+            "catalogId": "GRA-011",
+            "aspect": "Column stretching, scan structure and abrupt spatial deformation."
+          },
+          {
+            "catalogId": "GRA-005",
+            "aspect": "Controlled technical density and precise repeated structure."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and formulas.",
         "ownerReviewStatus": "awaiting-owner-feedback",
         "technicalStatus": "saved and editor-reload verified"
       },
-      "framerCompositionNote": "A fault in the surface turns flat color into ridges and displaced edges.",
-      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+      "framerCompositionNote": "Thermal scan columns describe stepped relief around an angular cut.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 03",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Fault line",
+          "description": "Angular paper-like shards open a deep fault across vermilion, pink and ink planes.",
+          "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "fault",
+            "primary": "#ed3c28",
+            "secondary": "#f2a7b5",
+            "ink": "#171314"
+          },
+          "compositionRevision": {
+            "date": "2026-10-29",
+            "revision": 1,
+            "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+            "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+            "ownerReviewStatus": "awaiting-owner-feedback",
+            "technicalStatus": "saved and editor-reload verified"
+          },
+          "framerCompositionNote": "A fault in the surface turns flat color into ridges and displaced edges.",
+          "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+        }
+      ]
     },
     {
       "id": "OL-07",
@@ -594,7 +744,7 @@
       "section": "Original compositions",
       "mode": "glyph",
       "description": "A locally constructed nine-cell stencil alphabet becomes cropped and staggered MON/ARCH/IC fragments, with shared stroke pitch, chamfered counters, diagonal cuts and one displaced orange interruption.",
-      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+      "componentSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -705,14 +855,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "relay",
-        "primary": "#3152ff",
-        "secondary": "#d7fb31",
-        "ink": "#080e19"
+        "primary": "#e4a746",
+        "secondary": "#aaa2d0",
+        "ink": "#29232b"
       },
       "section": "Original compositions",
       "mode": "relay",
-      "description": "Asymmetric open rectilinear gates interlock at different depths around routed signal packets.",
-      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+      "description": "One thick amber optical solid with two unequal open channels has gently curved faces, thickness-dependent absorption and shifted transmission of a locally generated stripe field on pale lilac.",
+      "componentSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -749,14 +899,60 @@
       "styleReviewStatus": "awaiting owner feedback",
       "compositionRevision": {
         "date": "2026-10-29",
-        "revision": 1,
-        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
-        "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+        "revision": 3,
+        "change": "Replaced floating open gates and signal packets with one independent cut optical glyph. Curved front/back faces vary refraction and broad cool-white reflections; amber absorption, internal contrast and narrow dark reflectors describe thickness.",
+        "styleInfluences": [
+          {
+            "catalogId": "CC-009",
+            "aspect": "Transparent thick walls, displaced raster transmission and dark internal contrast; the new continuous glyph is independently composed."
+          },
+          {
+            "catalogId": "GRA-010",
+            "aspect": "A transformed material surface within a precise graphic field."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and formulas.",
         "ownerReviewStatus": "awaiting-owner-feedback",
         "technicalStatus": "saved and editor-reload verified"
       },
-      "framerCompositionNote": "Orbital relays connect a technical diagram to a three-dimensional pulse.",
-      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+      "framerCompositionNote": "A thick amber solid refracts an authored stripe field through unequal open channels.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 03",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Orbit relay",
+          "description": "Asymmetric open rectilinear gates interlock at different depths around routed signal packets.",
+          "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "relay",
+            "primary": "#3152ff",
+            "secondary": "#d7fb31",
+            "ink": "#080e19"
+          },
+          "compositionRevision": {
+            "date": "2026-10-29",
+            "revision": 1,
+            "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+            "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+            "ownerReviewStatus": "awaiting-owner-feedback",
+            "technicalStatus": "saved and editor-reload verified"
+          },
+          "framerCompositionNote": "Orbital relays connect a technical diagram to a three-dimensional pulse.",
+          "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
+        }
+      ]
     }
   ],
   "totalCodeInstances": 24,
@@ -766,7 +962,7 @@
     "Phone Preview"
   ],
   "author": "Monarchic / Codex",
-  "compositionScope": "Eight independently composed procedural graphic building blocks. Four revised anchors calibrate material, texture and composition against catalog influences; four previous studies remain intact. These are original forms and lettering, not close recreations of the referenced work.",
+  "compositionScope": "Eight independently composed procedural graphic building blocks. Current revision 3 reworks OL-02, OL-04, OL-06 and OL-08; OL-01, OL-03, OL-05 and OL-07 retain their previous compositions. No study was deleted. Catalog influences inform material, texture and composition principles rather than copied forms.",
   "designPage": {
     "id": "sLT2tXsB2",
     "name": "05 / Original Live Coding",
@@ -819,7 +1015,8 @@
     "Exploratory graphic objects; style calibration awaits the owner's feedback.",
     "The principal OL-07 letterforms are locally constructed geometric strokes; small factual labels use platform monospace fallbacks.",
     "The optical material is an authored refraction/reflection approximation, not a spectral path tracer.",
-    "Export and thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed."
+    "Export and thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed.",
+    "OL-07 retains an inherited Mouse-control limitation: changing the generic toggle does not alter its glyph image. Its protected composition and controls were retained."
   ],
   "runtimeResourcePolicy": {
     "version": 2,
@@ -949,55 +1146,169 @@
   ],
   "styleCalibration": {
     "date": "2026-10-29",
-    "revision": 2,
+    "revision": 3,
     "reworkedStudyIDs": [
-      "OL-01",
-      "OL-03",
-      "OL-05",
-      "OL-07"
-    ],
-    "retainedStudyIDs": [
       "OL-02",
       "OL-04",
       "OL-06",
       "OL-08"
     ],
+    "retainedStudyIDs": [
+      "OL-01",
+      "OL-03",
+      "OL-05",
+      "OL-07"
+    ],
     "reworkedStudies": 4,
     "retainedStudies": 4,
     "deletedStudies": 0,
-    "ownerFeedbackOnFirstPass": "The owner said the original eight did not feel as though they matched the requested style.",
+    "ownerFeedbackOnPreviousPass": "The owner identified OL-02, OL-04, OL-06 and OL-08 as out of style.",
     "ownerReviewStatus": "awaiting-owner-feedback",
-    "influenceScope": "Catalog references inform material, texture, scale and composition principles. The new forms and primary letter geometry are independently composed; source-led recreations and their credits are unchanged.",
+    "influenceScope": "Catalog references inform material, texture, scale and composition principles. The forms are independently composed; source-led recreations and their credits are unchanged.",
     "technicalVerificationStatus": "saved and editor-reload verified"
   },
+  "savedVerificationHistory": [
+    {
+      "date": "2026-10-29",
+      "revision": 2,
+      "status": "saved-four-anchor-style-reset-technically-verified",
+      "sourceHashes": {
+        "OriginalSignalStudy.tsx": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+        "OriginalFormStudy.tsx": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88"
+      },
+      "originalStudies": 8,
+      "codeInstances": 24,
+      "reworkedStudies": 4,
+      "reworkedStudyIDs": [
+        "OL-01",
+        "OL-03",
+        "OL-05",
+        "OL-07"
+      ],
+      "retainedStudies": 4,
+      "retainedStudyIDs": [
+        "OL-02",
+        "OL-04",
+        "OL-06",
+        "OL-08"
+      ],
+      "savedEditorVerified": true,
+      "editorReloadVerified": true,
+      "styleApproval": "awaiting-owner-feedback",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/original-style-reset-2026-10-29",
+      "artifacts": [
+        "framer/browser-verification.json",
+        "framer/browser-motion-metrics.json",
+        "framer/reload-board-state.json",
+        "mcp/style-reset-final-report.json",
+        "mcp/style-reset-after-raw.json",
+        "mcp/style-reset-updated-node-map.json",
+        "mcp/style-reset-post-canvas-report.json",
+        "mcp/style-reset-post-canvas-raw.json",
+        "gpu/verification.json",
+        "validation/resource-checks.json",
+        "validation/seven-checks/report.json",
+        "validation/retained-originals-pixel-comparison.json"
+      ],
+      "proofScope": "Current technical saved-state and actual browser checks for four revised original anchors, with four other originals retained. Technical correctness does not establish the owner's approval of the revised style. Exact actual surface coverage is recorded in the linked evidence. First-pass saved proof remains historical. No publication, production integration or actual exported-image review.",
+      "actualFramerPreview": {
+        "reworkedStudiesPerBreakpoint": 4,
+        "motionPairCount": 8,
+        "desktopArtCSS": {
+          "width": 1065,
+          "height": 680
+        },
+        "phoneArtCSS": {
+          "width": 335,
+          "height": 280
+        },
+        "pauseStudy": "OL-05",
+        "pausedChangedRGBChannels": 0,
+        "resumedLive": true,
+        "phoneHorizontalOverflow": false
+      },
+      "actualFramerCanvas": {
+        "study": "OL-05",
+        "optInMotionVerified": true,
+        "changedRGBChannels": 614740,
+        "generatedFrame": {
+          "width": 1024,
+          "height": 636
+        },
+        "restoredCanvasMotion": false,
+        "all24SavedCanvasMotionOff": true,
+        "editorReloadAfterRestoreVerified": true
+      },
+      "localValidation": {
+        "gpuPhaseFrames": 48,
+        "gpuMixedModes": 28,
+        "gpuDistinctFrames": 68,
+        "typescriptFiles": 7,
+        "glslStages": 16,
+        "resourcePlacements": 84,
+        "legacyResourcePlacements": 60,
+        "assertionGroupsPerRun": 12,
+        "peakContexts": 2,
+        "peakPixels": 1998984,
+        "retainedFourDesktopPhase8RGBIdentical": true
+      },
+      "layoutScope": "Fractional fill constraints are stored; MCP getRect intrinsic placeholders do not establish actual layout. Browser observed 1065×680 and 335×280 with a 15px classic scrollbar, versus nominal overlay-scrollbar widths 1080/350."
+    }
+  ],
+  "previousStyleCalibrations": [
+    {
+      "date": "2026-10-29",
+      "revision": 2,
+      "reworkedStudyIDs": [
+        "OL-01",
+        "OL-03",
+        "OL-05",
+        "OL-07"
+      ],
+      "retainedStudyIDs": [
+        "OL-02",
+        "OL-04",
+        "OL-06",
+        "OL-08"
+      ],
+      "reworkedStudies": 4,
+      "retainedStudies": 4,
+      "deletedStudies": 0,
+      "ownerFeedbackOnFirstPass": "The owner said the original eight did not feel as though they matched the requested style.",
+      "ownerReviewStatus": "awaiting-owner-feedback",
+      "influenceScope": "Catalog references inform material, texture, scale and composition principles. The new forms and primary letter geometry are independently composed; source-led recreations and their credits are unchanged.",
+      "technicalVerificationStatus": "saved and editor-reload verified"
+    }
+  ],
   "savedVerification": {
     "date": "2026-10-29",
-    "revision": 2,
-    "status": "saved-four-anchor-style-reset-technically-verified",
+    "revision": 3,
+    "status": "saved-four-even-original-reworks-technically-verified",
     "sourceHashes": {
-      "OriginalSignalStudy.tsx": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
-      "OriginalFormStudy.tsx": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88"
+      "OriginalSignalStudy.tsx": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+      "OriginalFormStudy.tsx": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002"
     },
     "originalStudies": 8,
     "codeInstances": 24,
     "reworkedStudies": 4,
     "reworkedStudyIDs": [
-      "OL-01",
-      "OL-03",
-      "OL-05",
-      "OL-07"
-    ],
-    "retainedStudies": 4,
-    "retainedStudyIDs": [
       "OL-02",
       "OL-04",
       "OL-06",
       "OL-08"
     ],
+    "retainedStudies": 4,
+    "retainedStudyIDs": [
+      "OL-01",
+      "OL-03",
+      "OL-05",
+      "OL-07"
+    ],
+    "deletedStudies": 0,
     "savedEditorVerified": true,
     "editorReloadVerified": true,
     "styleApproval": "awaiting-owner-feedback",
-    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/original-style-reset-2026-10-29",
+    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/original-even-style-reset-2026-10-29",
     "artifacts": [
       "framer/browser-verification.json",
       "framer/browser-motion-metrics.json",
@@ -1009,10 +1320,16 @@
       "mcp/style-reset-post-canvas-raw.json",
       "gpu/verification.json",
       "validation/resource-checks.json",
+      "validation/resource-reuse-verification.json",
       "validation/seven-checks/report.json",
-      "validation/retained-originals-pixel-comparison.json"
+      "validation/retained-originals-pixel-comparison.json",
+      "validation/relief-control-verification.json",
+      "validation/motion-span-control-verification.json",
+      "validation/final-default-equivalence.json",
+      "prior-motion-span-candidate/validation/relief-control-verification.json",
+      "prior-motion-span-candidate/mcp/style-reset-post-canvas-report.json"
     ],
-    "proofScope": "Current technical saved-state and actual browser checks for four revised original anchors, with four other originals retained. Technical correctness does not establish the owner's approval of the revised style. Exact actual surface coverage is recorded in the linked evidence. First-pass saved proof remains historical. No publication, production integration or actual exported-image review.",
+    "proofScope": "Current technical saved-state and actual browser checks for four reworked even-numbered originals; four odd-numbered compositions are retained unchanged. Technical verification does not establish owner style approval. First-pass proof and revision 2 proof remain complete historical records. No publication, production integration or actual exported-image review.",
     "actualFramerPreview": {
       "reworkedStudiesPerBreakpoint": 4,
       "motionPairCount": 8,
@@ -1024,15 +1341,22 @@
         "width": 335,
         "height": 280
       },
-      "pauseStudy": "OL-05",
+      "pauseStudy": "OL-08",
       "pausedChangedRGBChannels": 0,
       "resumedLive": true,
       "phoneHorizontalOverflow": false
     },
     "actualFramerCanvas": {
-      "study": "OL-05",
+      "study": "OL-06",
       "optInMotionVerified": true,
-      "changedRGBChannels": 614740,
+      "testedFormSourceSHA256": "d141b528cb0d7627a8741b21998c82982e7428055a513806ca8f3e1d9b3e8d8c",
+      "actualMotionEvidence": "prior-motion-span-candidate",
+      "currentSavedSourceHashes": {
+        "OriginalSignalStudy.tsx": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+        "OriginalFormStudy.tsx": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002"
+      },
+      "reuseScope": "The actual d141 OL-06 Canvas opt-in, restore and reload evidence is retained. The final source changes only two OL-08 rotation amplitudes; OL-06 and all runtime code are byte-exact. A fresh final-source read verifies all 24 presets remain off.",
+      "changedRGBChannels": 701685,
       "generatedFrame": {
         "width": 1024,
         "height": 636
@@ -1052,8 +1376,65 @@
       "assertionGroupsPerRun": 12,
       "peakContexts": 2,
       "peakPixels": 1998984,
-      "retainedFourDesktopPhase8RGBIdentical": true
+      "resourceExecutionFormSourceSHA256": "d141b528cb0d7627a8741b21998c82982e7428055a513806ca8f3e1d9b3e8d8c",
+      "resourceRuntimeReuseVerified": true,
+      "resourceSuiteReexecutedAfterMotionSpanRepair": false,
+      "resourceScope": "Actual d141 resource runs are retained with their original hashes. The final source has exactly two additional GLSL amplitude expressions and unchanged runtime, controls, defaults, exports and other six files.",
+      "retainedOddFourDesktopPhase8RGBIdentical": true
     },
-    "layoutScope": "Fractional fill constraints are stored; MCP getRect intrinsic placeholders do not establish actual layout. Browser observed 1065×680 and 335×280 with a 15px classic scrollbar, versus nominal overlay-scrollbar widths 1080/350."
+    "reliefControl": {
+      "study": "OL-06",
+      "defaultValue": 0.85,
+      "currentEndpointSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+      "testedValues": [
+        0,
+        0.85,
+        1.5
+      ],
+      "minimumObservedEndpointChangedPixelRatio": 0.33111111111111113,
+      "allEndpointPairsVisiblyChange": true,
+      "historicalRepairDefaultComparison": {
+        "artifact": "prior-motion-span-candidate/validation/relief-control-verification.json",
+        "previousFormSourceSHA256": "a5cbbcca9325a4192c128eae0f34fba90fe480ce01b749cfe14873fc5853366e",
+        "testedFormSourceSHA256": "d141b528cb0d7627a8741b21998c82982e7428055a513806ca8f3e1d9b3e8d8c",
+        "strictExact": false,
+        "strictExactFrameCount": 45,
+        "comparedFrames": 48,
+        "changedDefaultFrames": 3,
+        "totalChangedRGBChannels": 6,
+        "maximumAbsoluteChannelDifference": 1,
+        "maximumChangedPixelsPerFrame": 3,
+        "differencesLimitedToOL06Desktop": true,
+        "rootReviewedVisualEquivalence": true
+      },
+      "scope": "Functional repair of the existing Relief control, not another composition revision. Fresh endpoint samples use the final source. The earlier a5-to-d141 default comparison remains historical with its narrowly accepted rounding differences and failed strict diagnostic."
+    },
+    "motionSpanControl": {
+      "study": "OL-08",
+      "defaultValue": 0.65,
+      "publicRange": [
+        0,
+        1
+      ],
+      "previousFormSourceSHA256": "d141b528cb0d7627a8741b21998c82982e7428055a513806ca8f3e1d9b3e8d8c",
+      "currentEndpointSourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+      "testedValues": [
+        0,
+        0.65,
+        1
+      ],
+      "minimumObservedEndpointChangedPixelRatio": 0.278890625,
+      "allEndpointPairsVisiblyChange": true,
+      "defaultComparison": {
+        "comparedOriginalFrames": 48,
+        "strictExact": true,
+        "strictExactFrameCount": 48,
+        "totalChangedRGBChannels": 0
+      },
+      "scope": "Exactly two existing rotation amplitudes now respond to Motion span. This is a functional repair; all 48 final default samples remain byte-identical to the d141 intermediate candidate."
+    },
+    "preRepairCandidateArtifact": "prior-candidate",
+    "preMotionSpanRepairCandidateArtifact": "prior-motion-span-candidate",
+    "layoutScope": "Fractional fill constraints are stored; MCP intrinsic getRect placeholders do not establish actual layout. Current actual artwork sizes and local GPU aspect sizes are recorded separately in the source-bound evidence."
   }
 }

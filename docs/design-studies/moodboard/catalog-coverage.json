@@ -9716,11 +9716,11 @@
     "components": [
       {
         "source": "OriginalSignalStudy.tsx",
-        "sourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666"
+        "sourceSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2"
       },
       {
         "source": "OriginalFormStudy.tsx",
-        "sourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88"
+        "sourceSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002"
       }
     ],
     "studies": [
@@ -9782,22 +9782,22 @@
       "phone": "G00fi3nIM",
       "draft": true
     },
-    "verificationStatus": "four revised anchors technically verified; owner style feedback pending",
+    "verificationStatus": "four even-numbered originals technically verified; owner style feedback pending",
     "verificationField": "savedVerification",
     "verifiedDate": "2026-10-29",
     "styleCalibration": {
-      "revision": 2,
+      "revision": 3,
       "reworkedStudyIDs": [
-        "OL-01",
-        "OL-03",
-        "OL-05",
-        "OL-07"
-      ],
-      "retainedStudyIDs": [
         "OL-02",
         "OL-04",
         "OL-06",
         "OL-08"
+      ],
+      "retainedStudyIDs": [
+        "OL-01",
+        "OL-03",
+        "OL-05",
+        "OL-07"
       ],
       "ownerReviewStatus": "awaiting-owner-feedback",
       "manifestField": "styleCalibration"

@@ -24,11 +24,12 @@ inherited Phone placements. The [original live handoff](design-studies/code-comp
 records those compositions and their controls. Source inspiration remains a
 conceptual collection spanning references, recreations and source-led live work.
 
-The owner rejected the first OL pass's visual fit. Revision 02 reworks OL-01,
-OL-03, OL-05 and OL-07 around tonal raster volume, layered filament geometry,
-optical material and constructed typography; the other four remain unchanged.
-The handoff preserves the first saved proof and records the reference influences.
-Saved-state and motion checks pass; owner feedback on the revised style is pending.
+Revision 02 reworked OL-01, OL-03, OL-05 and OL-07 around tonal raster volume,
+layered filament geometry, optical material and constructed typography. Revision
+03 reworks OL-02, OL-04, OL-06 and OL-08 around optical contours, caustic light,
+thermal pixel relief and an amber optical solid; the earlier four are retained.
+The handoff preserves both earlier saved proofs and records reference influences
+and current loading/motion checks. Owner feedback on the revised style is pending.
 
 ## Sources and original compositions
 
