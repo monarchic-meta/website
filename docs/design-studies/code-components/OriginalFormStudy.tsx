@@ -153,7 +153,7 @@ float thermalHeight(vec2 p){
     float micro=floor(faultHash(vec3(cell,2.0))*3.0)*.014;
     float steps=.075*floor((p.x+1.2)*2.8)+.068*floor((p.y+.8)*3.2);
     float platform=.13*step(-.42,p.x)*step(.02,p.y)-.115*step(.48,p.x)*step(.20,p.y);
-    return -.06+steps+platform+micro;
+    return (-.06+steps+platform+micro)*(1.0+(u_refraction-.85)*.65);
 }
 vec3 thermalSpace(vec3 p){
     p.xy=rot(-.35)*p.xy;
