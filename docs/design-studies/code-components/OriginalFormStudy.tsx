@@ -146,39 +146,66 @@ vec3 chromeHinge(vec2 uv){
     float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.055;
     return clamp(color*u_intensity+grain,0.0,1.0);
 }
-float edge(vec2 p,vec2 a,vec2 b){vec2 e=b-a;return -(e.x*(p.y-a.y)-e.y*(p.x-a.x))/max(length(e),.00001);}
-float quad(vec2 p,vec2 a,vec2 b,vec2 c,vec2 d){return max(max(edge(p,a,b),edge(p,b,c)),max(edge(p,c,d),edge(p,d,a)));}
-float faultPiece(vec2 p,float k){
-    if(k<.5)return quad(p,vec2(-.61,-.16),vec2(-.16,-.12),vec2(-.23,.29),vec2(-.56,.35));
-    if(k<1.5)return quad(p,vec2(.03,-.27),vec2(.57,-.36),vec2(.60,.12),vec2(.18,.28));
-    if(k<2.5)return quad(p,vec2(-.35,.31),vec2(.11,.29),vec2(.29,.43),vec2(-.22,.48));
-    if(k<3.5)return quad(p,vec2(-.38,-.38),vec2(-.01,-.45),vec2(.16,-.32),vec2(-.22,-.23));
-    if(k<4.5)return quad(p,vec2(-.15,-.11),vec2(.045,-.19),vec2(.15,.12),vec2(-.055,.21));
-    return quad(p,vec2(.35,.22),vec2(.61,.27),vec2(.53,.47),vec2(.30,.41));
+float faultHash(vec3 p){return fract(sin(dot(p,vec3(127.1,311.7,74.7)))*43758.5453);}
+float thermalHeight(vec2 p){
+    // Quantized carved terraces: a constructed volume, never a sine sheet.
+    vec2 cell=floor(p*vec2(46.0,38.0));
+    float micro=floor(faultHash(vec3(cell,2.0))*3.0)*.014;
+    float steps=.075*floor((p.x+1.2)*2.8)+.068*floor((p.y+.8)*3.2);
+    float platform=.13*step(-.42,p.x)*step(.02,p.y)-.115*step(.48,p.x)*step(.20,p.y);
+    return -.06+steps+platform+micro;
+}
+vec3 thermalSpace(vec3 p){
+    p.xy=rot(-.35)*p.xy;
+    p.xz=rot(.14+.035*sin(u_time*.17)*u_focus+u_mouse.x*.18)*p.xz;
+    p.yz=rot(.48+u_mouse.y*.20)*p.yz;
+    return p;
+}
+vec3 thermalRamp(float t){
+    vec3 red=mix(u_ink*.70,u_primary,smoothstep(.02,.60,t));
+    return mix(red,u_secondary,smoothstep(.58,.97,t));
 }
 vec3 faultLine(vec2 uv){
-    vec3 color=u_secondary;
-    float aperture=.035+(.025+.04*u_focus)*(.5+.5*sin(u_time*.55));
-    vec2 p=rot(-.08+u_mouse.x*.08)*uv;
-    for(int i=0;i<6;i++){
-        float k=float(i),side=mod(k,2.0)*2.0-1.0;
-        vec2 shift=vec2(side*aperture,side*aperture*.34);
-        vec2 q=rot(.025*sin(u_time*.33+k)*u_focus)*(p-shift);
-        float face=faultPiece(q,k),back=faultPiece(q-vec2(.036,-.037)*(1.0+u_refraction*.5),k);
-        float shade=1.0-smoothstep(-.001,.002,back);
-        color=mix(color,u_ink*.55,shade);
-        vec3 paper=k<1.5?u_primary:k<3.5?u_ink:mix(u_primary,u_secondary,.12);
-        if(i==4)face=max(face,-box2(rot(.36)*(q-vec2(-.005,.045)),vec2(.034,.095)));
-        float fill=1.0-smoothstep(-.001,.002,face);
-        color=mix(color,paper,fill);
-        float lip=exp(-abs(face)*700.0);color+=mix(u_secondary,u_primary,.35)*lip*.15;
+    vec3 color=u_ink*.31;
+    vec3 ro=vec3(0,.12,2.75),rd=normalize(vec3(uv*1.64,-2.75));
+    float opacity=0.0;
+    for(int i=0;i<108;i++){
+        float t=1.05+float(i)*.027;
+        vec3 q=thermalSpace(ro+rd*t);
+        float h=thermalHeight(q.xz),layer=q.y-h;
+        float footprint=max(abs(q.x)-1.13,abs(q.z)-.67);
+        footprint=max(footprint,(q.x+q.z-1.43)*.7071);
+        footprint=max(footprint,(-q.x-q.z-1.42)*.7071);
+        float center=-.13+clamp(q.z*1.05,-.30,.30);
+        center+=.022*sign(sin(floor((q.z+.8)*8.0)*2.3));
+        float fissure=abs(q.x-center);
+        float fissureWidth=.070+.026*step(.18,q.z);
+        float solid=max(max(layer,-.29-q.y),max(footprint,fissureWidth-fissure));
+        float body=1.0-smoothstep(-.012,.018,solid);
+        vec3 grid=q*vec3(176.0,92.0,128.0);
+        vec3 cell=floor(grid),f=abs(fract(grid)-.5);
+        float grain=faultHash(cell);
+        float column=(1.0-smoothstep(.29,.48,f.x))*(1.0-smoothstep(.29,.48,f.z));
+        float scan=(.55+.45*(1.0-smoothstep(.28,.49,f.y)))*step(.09,grain);
+        float density=body*column*scan;
+        float top=1.0-smoothstep(.012,.07,abs(layer));
+        float band=floor((q.y+.31)*19.0)*.0526;
+        float heat=.22+.33*band+.17*top+.13*grain;
+        float pulse=step(.71,fract(q.x*.27+q.z*.22-u_time*.055));
+        float seam=exp(-abs(fissure-fissureWidth)*55.0)*(.48+.52*pulse);
+        heat+=seam*.26;
+        vec3 emission=thermalRamp(heat)*(1.02+.55*seam);
+        float alpha=clamp(density*.25,0.0,.42);
+        color+=(1.0-opacity)*emission*alpha;
+        opacity+=(1.0-opacity)*alpha;
+        if(opacity>.985)break;
     }
-    // Registration ticks and an offset print edge establish a graphic object,
-    // without a caption block, illustration, glow cloud or fluid displacement.
-    float tick=min(segment(uv,vec2(-.66,-.36),vec2(-.66,-.26)),segment(uv,vec2(-.70,-.31),vec2(-.62,-.31)));
-    color=mix(color,u_ink,(1.0-smoothstep(.0005,.0017,tick))*.75);
-    float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.045;
-    return clamp(color*u_intensity+grain,0.0,1.0);
+    // The repeated column/layer structure carries the volume. A restrained
+    // phosphor spread joins nearby cells without smoothing away the raster.
+    float field=exp(-dot((uv-vec2(-.03,.01))/vec2(.66,.31),(uv-vec2(-.03,.01))/vec2(.66,.31)));
+    color+=u_primary*field*.012;
+    float noise=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.035;
+    return clamp(color*u_intensity+noise,0.0,1.0);
 }
 float typeMask(vec2 p,float row){
     if(any(lessThan(p,vec2(0)))||any(greaterThan(p,vec2(1))))return 0.0;
@@ -223,49 +250,83 @@ vec3 glyphEngine(vec2 uv){
     float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.040;
     return clamp(color*u_intensity+grain,0.0,1.0);
 }
-vec2 route(float t,vec2 b){
-    float s=fract(t)*4.0;
-    if(s<1.0)return mix(vec2(-b.x,-b.y),vec2(b.x,-b.y),s);
-    if(s<2.0)return mix(vec2(b.x,-b.y),vec2(b.x,b.y),s-1.0);
-    if(s<3.0)return mix(vec2(b.x,b.y),vec2(-b.x,b.y),s-2.0);
-    return mix(vec2(-b.x,b.y),vec2(-b.x,-b.y),s-3.0);
+vec3 relaySpace(vec3 p){
+    p.xy=rot(-.23)*p.xy;
+    p.xz=rot(-.40+.075*sin(u_time*.19)+u_mouse.x*.30)*p.xz;
+    p.yz=rot(.26+.055*cos(u_time*.23)+u_mouse.y*.22)*p.yz;
+    return p;
 }
-vec2 relayMap(vec3 p){
-    p.xy=rot(-.18)*p.xy;p.xz=rot(.40+u_mouse.x*.35)*p.xz;p.yz=rot(.30+u_mouse.y*.25)*p.yz;
-    vec2 result=vec2(10.0,0.0);
-    for(int i=0;i<3;i++){
-        float k=float(i);vec3 q=p-vec3(-.18+k*.17,.055*sin(k*2.2),-.18*k);
-        q.yz=rot((k-1.0)*.32+.10*sin(u_time*.24+k)*u_focus)*q.yz;
-        q.xy=rot(k*.30-.10*sin(u_time*.18+k))*q.xy;
-        vec2 size=vec2(.35-.045*k,.25-.032*k);
-        float gate=max(box3(q,vec3(size,.040),.014),-box3(q,vec3(size-vec2(.056),.18),.010));
-        vec3 front=q-vec3(0,0,.052);
-        float trim=max(box3(front,vec3(size-vec2(.010),.007),.008),-box3(front,vec3(size-vec2(.024),.08),.004));
-        gate=min(gate,trim);
-        // Offset open ends make nested routed gates, not concentric circular tori.
-        vec3 cut=q-vec3((k<1.5?1.0:-1.0)*size.x,.10-k*.07,0);
-        gate=max(gate,-box3(cut,vec3(.10,.095,.18),0.0));
-        if(gate<result.x)result=vec2(gate,k);
-        vec2 signal=route(u_time*(.075+.012*k)+k*.27,size);
-        float packet=box3(q-vec3(signal,.085),vec3(.047,.026,.032),.006);
-        if(packet<result.x)result=vec2(packet,3.0);
-    }
-    return result;
+float relayMap(vec3 p){
+    vec3 q=relaySpace(p);
+    // One continuous die-like glyph has unequal open channels and a clipped
+    // shoulder. The two voids never join into a ring or a repeated frame array.
+    // Broad coupled optical faces curve gently through the existing silhouette.
+    // Their varying normals bend a continuous transmitted field and catchlight.
+    float lens=.078*max(0.0,1.0-pow(q.x/.61,2.0))*max(0.0,1.0-pow(q.y/.53,2.0));
+    float solid=box3(q,vec3(.485,.400,.185+lens),.055);
+    float upperChannel=box3(q-vec3(-.315,.105,0),vec3(.285,.107,.34),.021);
+    float lowerChannel=box3(q-vec3(.305,-.215,0),vec3(.285,.085,.34),.019);
+    solid=max(solid,-upperChannel);solid=max(solid,-lowerChannel);
+    solid=max(solid,(q.x+q.y-.635)*.7071);
+    solid=max(solid,(-q.x-q.y-.705)*.7071);
+    return solid;
+}
+vec3 relayNormal(vec3 p){vec2 e=vec2(.0015,0);return normalize(vec3(relayMap(p+e.xyy)-relayMap(p-e.xyy),relayMap(p+e.yxy)-relayMap(p-e.yxy),relayMap(p+e.yyx)-relayMap(p-e.yyx)));}
+vec3 relayBackdrop(vec2 uv){
+    vec3 paper=mix(vec3(.972,.965,.981),u_secondary,.10);
+    vec2 grid=abs(fract((uv+vec2(.03,.07))*vec2(6.0,6.0))-.5);
+    float lines=max(1.0-smoothstep(.001,.0025,grid.x),1.0-smoothstep(.001,.0025,grid.y));
+    paper=mix(paper,u_ink,lines*.065);
+    vec2 q=rot(.10)*(uv-vec2(.04,-.045));
+    float strip=typeMask(vec2((q.x+.84)/1.68,(q.y+.135)/.27),3.0);
+    paper=mix(paper,u_ink,strip*.62);
+    float rail=(1.0-smoothstep(.001,.002,abs(uv.y+.315)))*step(uv.x,.69)*step(-.72,uv.x);
+    paper=mix(paper,u_ink,rail*.45);
+    float tick=min(segment(uv,vec2(-.73,.34),vec2(-.67,.34)),segment(uv,vec2(-.70,.31),vec2(-.70,.37)));
+    return mix(paper,u_ink,(1.0-smoothstep(.0008,.002,tick))*.66);
 }
 vec3 orbitRelay(vec2 uv){
-    vec3 color=u_ink+u_secondary*.018;
-    vec3 ro=vec3(0,0,2.8),rd=normalize(vec3((uv-vec2(0,.07))*1.30,-2.8));
-    float distance=1.65;vec2 hit=vec2(0);bool found=false;
-    for(int i=0;i<76;i++){hit=relayMap(ro+rd*distance);if(hit.x<.0012){found=true;break;}distance+=max(hit.x*.73,.0008);if(distance>4.1)break;}
+    vec3 color=relayBackdrop(uv);
+    vec3 ro=vec3(0,0,2.8),rd=normalize(vec3((uv-vec2(-.025,.025))*1.39,-2.8));
+    float distance=1.45;bool found=false;
+    for(int i=0;i<82;i++){float d=relayMap(ro+rd*distance);if(d<.0011){found=true;break;}distance+=max(d*.72,.0008);if(distance>4.1)break;}
     if(!found)return color;
-    vec3 p=ro+rd*distance;vec2 e=vec2(.0018,0);
-    vec3 n=normalize(vec3(relayMap(p+e.xyy).x-relayMap(p-e.xyy).x,relayMap(p+e.yxy).x-relayMap(p-e.yxy).x,relayMap(p+e.yyx).x-relayMap(p-e.yyx).x));
-    vec3 material=hit.y<.5?u_primary:hit.y<1.5?u_secondary:hit.y<2.5?mix(u_primary,u_ink,.50):vec3(.96,.99,.88);
-    float diffuse=.35+.65*max(dot(n,normalize(vec3(-.45,.8,1))),0.0);
-    float spec=pow(max(dot(reflect(rd,n),normalize(vec3(-.3,.7,1))),0.0),35.0);
-    float rim=pow(1.0-max(dot(n,-rd),0.0),3.0);
-    color=material*diffuse+vec3(spec*.35)+u_secondary*rim*.10;
-    color*=1.0+(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.18;
+    vec3 p=ro+rd*distance,n=relayNormal(p),inside=refract(rd,n,1.0/1.46);
+    float travel=.009;vec3 back=p+inside*travel;
+    for(int j=0;j<36;j++){back=p+inside*travel;float d=relayMap(back);if(d>.001&&travel>.027)break;travel+=max(abs(d)*.62,.004);if(travel>.95)break;}
+    vec3 exitNormal=relayNormal(back),outward=refract(inside,-exitNormal,1.46);
+    float totalInternal=1.0-step(.001,dot(outward,outward));
+    if(totalInternal>.5)outward=inside;
+    vec2 transmitted=(back.xy+outward.xy*max(0.0,(-.86-back.z)/min(outward.z,-.10)))/1.39;
+    float dispersion=.005+.009*travel;
+    vec3 through=vec3(relayBackdrop(transmitted+n.xy*dispersion).r,relayBackdrop(transmitted).g,relayBackdrop(transmitted-n.xy*dispersion).b);
+    // Thickness absorbs blue/green while thin walls remain almost clear.
+    // A second internally reflected image supplies dark displaced raster edges.
+    vec3 extinction=(vec3(1.0)-max(u_primary,vec3(.06)))*3.0+vec3(.08,.01,.0);
+    vec3 absorption=exp(-extinction*(.06+travel*1.10));
+    vec3 bounce=reflect(inside,-exitNormal);
+    vec2 echoUV=transmitted+bounce.xy*(.15+travel*.40)+exitNormal.xy*.11;
+    vec3 echo=relayBackdrop(echoUV)*absorption;
+    float wall=pow(1.0-clamp(abs(dot(inside,exitNormal)),0.0,1.0),2.0);
+    through*=absorption;
+    through=mix(through,echo,.12+wall*.27);
+    through*=1.0-totalInternal*.38;
+    through=mix(through,through*u_primary*.65,wall*.22);
+    vec3 reflection=reflect(rd,n);float facing=max(dot(n,-rd),0.0),fresnel=.045+.955*pow(1.0-facing,4.0);
+    float tall=exp(-pow((reflection.x+.48)/.145,2.0));
+    float ceiling=exp(-pow((reflection.y-.48)/.25,2.0));
+    float lip=exp(-pow((reflection.y+.32*reflection.x+.08)/.035,2.0));
+    float blackCard=exp(-pow((reflection.x-.34*reflection.y-.12)/.092,2.0));
+    vec3 reflected=mix(u_ink*.16,u_secondary*.60,clamp(.11+.40*ceiling+.26*tall,0.0,1.0));
+    reflected=mix(reflected,u_ink*.08,blackCard*.94);
+    reflected+=vec3(.98,.99,1.0)*(ceiling*.70+tall*.95+lip*1.22);
+    color=mix(through,reflected,.12+fresnel*.70+totalInternal*.12);
+    color*=1.0-blackCard*(.10+wall*.27);
+    color+=vec3(1.0,.99,.98)*pow(lip,3.0)*.15;
+    vec3 local=relaySpace(p);
+    float internalBand=exp(-pow((local.z+.15)/.035,2.0))*(.5+.5*sin(local.y*18.0+local.x*7.0));
+    color+=u_secondary*internalBand*.045;
+    color+=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.028;
     return clamp(color*u_intensity,0.0,1.0);
 }
 void main(){
@@ -898,9 +959,9 @@ export default function OriginalFormStudy(props: Props) {
     const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,
         scale:Math.max(.5,scale),grain:Math.max(0,grain),focus:Math.max(0,Math.min(1,focus)),refraction:Math.max(0,refraction),interactive,primary,secondary,ink}
     const requestMotion=useStudySurface(root,canvas,settings,target,"OriginalFormStudy.tsx",(s,e)=>{setStatus(s);setError(e??"")})
-    const source=STUDIES[study],color=study==="hinge"?ink:study==="fault"||study==="glyph"?"#17171b":"#e2e6ef"
+    const source=STUDIES[study],color=study==="hinge"||study==="relay"?ink:study==="fault"?"#f7ddd1":study==="glyph"?"#17171b":"#e2e6ef"
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
-    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="hinge"||study==="fault"||study==="glyph"?primary:ink,color}}>
+    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="hinge"||study==="glyph"?primary:study==="relay"?"#f0edf4":ink,color}}>
         <canvas ref={canvas} role="img" aria-label={source.title+", independently composed animated graphic "+source.key} style={{display:"block",width:"100%",height:"100%",touchAction:"pan-y"}} />
         {showLabels&&<>
             <div style={{position:"absolute",left:"5%",top:"6%",pointerEvents:"none"}}>
