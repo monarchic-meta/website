@@ -2044,8 +2044,8 @@
     "background": "#050507",
     "simplifications": [
       "Source-led adaptation of Coronal, the cyan/magenta luminous ring observed in @XorDev’s post https://x.com/XorDev/status/2093488121392300374.",
-      "An independently constructed irregular ring uses layered native bars, thin tangential filaments, and coarse pixels to approximate the observed bright edge and black aperture.",
-      "Color and transparency approximate luminosity; volumetric scattering, continuous shader detail, and the original ring geometry are not reproduced. No source shader is copied or executed; no bitmap, SVG, or code component is used.",
+      "An independently constructed, near-circular corona uses broad blurred native ellipses, asymmetric hot sectors, segmented curling filaments, and two outward plumes around a dark aperture. The earlier thin polygonal outline is replaced by a thicker layered light field.",
+      "Native blur, color, and transparency approximate luminosity; volumetric scattering, continuous shader detail, and the original ring geometry are not reproduced. No source shader is copied or executed; no bitmap, SVG, or code component is used.",
       "Static study only: source motion, evolving light, and interactions are not reproduced."
     ],
     "framerSourceSection": "rHeXK4bVd",
@@ -2056,19 +2056,70 @@
     "framerLabel": "GXffFhyAl",
     "framerCreditText": "qsMJkjJnv",
     "framerCaption": "ZQlLyl3Id",
-    "recipeFrames": 398,
-    "nativeFrames": 399,
+    "recipeFrames": 583,
+    "nativeFrames": 584,
     "nativeText": 5,
     "importedSVGs": 0,
     "rasterFills": 0,
     "parts": [
       {
-        "name": "Coronal approximation / layered native marks",
+        "name": "Coronal approximation / native luminous layers",
         "id": "qLO53lXBp"
+      },
+      {
+        "name": "Broad peripheral plasma / two native plumes",
+        "id": "jRgpruUZg"
+      },
+      {
+        "name": "Coronal volume / soft native cells",
+        "id": "UeMZYEZSW"
+      },
+      {
+        "name": "Coronal volume / turbulent inner light field",
+        "id": "bRZVasxQN"
+      },
+      {
+        "name": "Coronal hot sectors / compact native cells",
+        "id": "GQStRQ6Vs"
+      },
+      {
+        "name": "Curling plasma / editable short line segments",
+        "id": "faVa453Vz"
+      },
+      {
+        "name": "Ragged outer arcs / branching wisps",
+        "id": "Wswe3jfpD"
+      },
+      {
+        "name": "Ragged bright arcs / uneven local streaks",
+        "id": "qyjtbZ_pH"
+      },
+      {
+        "name": "Plume tendrils / native segmented curves",
+        "id": "VwhZbgHen"
+      },
+      {
+        "name": "Asymmetric white-hot light pockets",
+        "id": "ytJrYHgBQ"
       }
     ],
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerVerifiedDate": "2026-10-23",
-    "framerDesignPage": "a_19JJYFC"
+    "framerVerifiedDate": "2026-10-29",
+    "framerDesignPage": "a_19JJYFC",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "CC-005",
+      "change": "Replaced thin polygonal outline with broad irregular luminous cells, dark aperture, ragged arcs, branching wisps and plumes. Volumetric shader detail remains outside this static native approximation.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "830f9ea194e24de9a629cce8c80bc4815dadba0356ddedf3a307137ba80427de",
+      "compiledPayloadSHA256": "c6b0abadb179d71720bdca0bc6f7b0ed5a921879d5ad66b89737ff9d477d9878",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   }
 ]
