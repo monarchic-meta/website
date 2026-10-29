@@ -906,9 +906,9 @@
     "height": 1000,
     "background": "#ffffff",
     "simplifications": [
-      "Recreates the source cobalt radial-pixel cloud using individually editable native bars and pixels; no head rendering or imported artwork is used.",
-      "The source image contains thousands of marks. This construction uses a deterministic coarse sampling below 350 nodes.",
-      "The financial UI, character head, and secondary graphics are omitted so the radial dither language can be studied independently."
+      "Recreates the observed cobalt cloud using individually editable native short fibers, bars, and pixels; no head rendering or imported artwork is used.",
+      "A dense vertically elongated ink core and fine curved splinters replace the earlier circular sunburst. Deterministic reduced sampling preserves the axial silhouette without reproducing thousands of source marks.",
+      "The financial UI, character head, and secondary graphics remain omitted so the radial dither language can be studied independently."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -916,14 +916,375 @@
     "framerArtwork": "hZ2fk8bYx",
     "framerCredit": "FdqgjfK4G",
     "framerLabel": "PI2VPJRcY",
-    "parts": [],
-    "recipeFrames": 332,
-    "nativeFrames": 333,
+    "parts": [
+      {
+        "name": "Fine axial splinters / short curved native paths",
+        "id": "yHJdN3EMH"
+      },
+      {
+        "name": "Axial fiber 001",
+        "id": "YrLuAcMx_"
+      },
+      {
+        "name": "Axial fiber 002",
+        "id": "vu6JUX4q8"
+      },
+      {
+        "name": "Axial fiber 003",
+        "id": "HNNuyueGU"
+      },
+      {
+        "name": "Axial fiber 004",
+        "id": "UnPbZDkDt"
+      },
+      {
+        "name": "Axial fiber 005",
+        "id": "imQTlj7Wt"
+      },
+      {
+        "name": "Axial fiber 006",
+        "id": "Y9iSCuEnv"
+      },
+      {
+        "name": "Axial fiber 007",
+        "id": "DdoGO5OcC"
+      },
+      {
+        "name": "Axial fiber 008",
+        "id": "RCt3Tzik5"
+      },
+      {
+        "name": "Axial fiber 009",
+        "id": "E0QLNemhC"
+      },
+      {
+        "name": "Axial fiber 010",
+        "id": "jrk65ikmM"
+      },
+      {
+        "name": "Axial fiber 011",
+        "id": "C2ADbn_2z"
+      },
+      {
+        "name": "Axial fiber 012",
+        "id": "cXGfY690M"
+      },
+      {
+        "name": "Axial fiber 013",
+        "id": "KI1ONvcQT"
+      },
+      {
+        "name": "Axial fiber 014",
+        "id": "O_KEoUua7"
+      },
+      {
+        "name": "Axial fiber 015",
+        "id": "LSQr0t3WK"
+      },
+      {
+        "name": "Axial fiber 016",
+        "id": "AG_A3lsK4"
+      },
+      {
+        "name": "Axial fiber 017",
+        "id": "mdqqwjBPZ"
+      },
+      {
+        "name": "Axial fiber 018",
+        "id": "ytCXEr0vI"
+      },
+      {
+        "name": "Axial fiber 019",
+        "id": "mamWvkzMP"
+      },
+      {
+        "name": "Axial fiber 020",
+        "id": "wEY5NdAnm"
+      },
+      {
+        "name": "Axial fiber 021",
+        "id": "KYPyrDYx0"
+      },
+      {
+        "name": "Axial fiber 022",
+        "id": "cR2VPxunr"
+      },
+      {
+        "name": "Axial fiber 023",
+        "id": "j_s9S32sT"
+      },
+      {
+        "name": "Axial fiber 024",
+        "id": "fkV3pFYYJ"
+      },
+      {
+        "name": "Axial fiber 025",
+        "id": "jg2tF1WFM"
+      },
+      {
+        "name": "Axial fiber 026",
+        "id": "f2FGhYKt9"
+      },
+      {
+        "name": "Axial fiber 027",
+        "id": "Oujf4jDsM"
+      },
+      {
+        "name": "Axial fiber 028",
+        "id": "dWMILD1Yd"
+      },
+      {
+        "name": "Axial fiber 029",
+        "id": "KZmfWv07q"
+      },
+      {
+        "name": "Axial fiber 030",
+        "id": "EyEN_DKjs"
+      },
+      {
+        "name": "Axial fiber 031",
+        "id": "QZaaw_zB1"
+      },
+      {
+        "name": "Axial fiber 032",
+        "id": "n0TqlfBNZ"
+      },
+      {
+        "name": "Axial fiber 033",
+        "id": "q22zianAp"
+      },
+      {
+        "name": "Axial fiber 034",
+        "id": "QK7Jj43mP"
+      },
+      {
+        "name": "Axial fiber 035",
+        "id": "asL9ZFBgL"
+      },
+      {
+        "name": "Axial fiber 036",
+        "id": "JNz0PBGBr"
+      },
+      {
+        "name": "Axial fiber 037",
+        "id": "PqU7TaI0c"
+      },
+      {
+        "name": "Axial fiber 038",
+        "id": "w_CaxZFTn"
+      },
+      {
+        "name": "Axial fiber 039",
+        "id": "H5CNPrWPo"
+      },
+      {
+        "name": "Axial fiber 040",
+        "id": "ACQdyBpRx"
+      },
+      {
+        "name": "Axial fiber 041",
+        "id": "GC2f3a5ir"
+      },
+      {
+        "name": "Axial fiber 042",
+        "id": "O3PqqTGQt"
+      },
+      {
+        "name": "Axial fiber 043",
+        "id": "cOLHbACWN"
+      },
+      {
+        "name": "Axial fiber 044",
+        "id": "PZ11B2Jig"
+      },
+      {
+        "name": "Axial fiber 045",
+        "id": "v4SVAyXKI"
+      },
+      {
+        "name": "Axial fiber 046",
+        "id": "TeszVz7LL"
+      },
+      {
+        "name": "Axial fiber 047",
+        "id": "IyHtNA7Fq"
+      },
+      {
+        "name": "Axial fiber 048",
+        "id": "ElTm5YKTa"
+      },
+      {
+        "name": "Axial fiber 049",
+        "id": "VRIADkt2p"
+      },
+      {
+        "name": "Axial fiber 050",
+        "id": "cUI1U1YI2"
+      },
+      {
+        "name": "Axial fiber 051",
+        "id": "XFesllvgi"
+      },
+      {
+        "name": "Axial fiber 052",
+        "id": "GwBM_zDsI"
+      },
+      {
+        "name": "Axial fiber 053",
+        "id": "rcw1OWlvN"
+      },
+      {
+        "name": "Axial fiber 054",
+        "id": "UI5N2rtif"
+      },
+      {
+        "name": "Axial fiber 055",
+        "id": "mRjSTw8Eu"
+      },
+      {
+        "name": "Axial fiber 056",
+        "id": "Jlr6ayM6r"
+      },
+      {
+        "name": "Axial fiber 057",
+        "id": "J3NjcYON8"
+      },
+      {
+        "name": "Axial fiber 058",
+        "id": "lxOiMhAnv"
+      },
+      {
+        "name": "Axial fiber 059",
+        "id": "yWafFq2t0"
+      },
+      {
+        "name": "Axial fiber 060",
+        "id": "LlcA_IVPr"
+      },
+      {
+        "name": "Axial fiber 061",
+        "id": "aB2jJPT2m"
+      },
+      {
+        "name": "Axial fiber 062",
+        "id": "TKJIjBBEl"
+      },
+      {
+        "name": "Axial fiber 063",
+        "id": "Q9B33rsQj"
+      },
+      {
+        "name": "Axial fiber 064",
+        "id": "C22WbZTsP"
+      },
+      {
+        "name": "Axial fiber 065",
+        "id": "vVAWm0bYQ"
+      },
+      {
+        "name": "Axial fiber 066",
+        "id": "iQxal32Kq"
+      },
+      {
+        "name": "Axial fiber 067",
+        "id": "RS3_n4clh"
+      },
+      {
+        "name": "Axial fiber 068",
+        "id": "ilMPYzI8z"
+      },
+      {
+        "name": "Axial fiber 069",
+        "id": "CExwxHcMR"
+      },
+      {
+        "name": "Axial fiber 070",
+        "id": "afJGkH6wP"
+      },
+      {
+        "name": "Axial fiber 071",
+        "id": "E8eSKHV0J"
+      },
+      {
+        "name": "Axial fiber 072",
+        "id": "h4c6wEK7u"
+      },
+      {
+        "name": "Axial fiber 073",
+        "id": "Lj8cNBlzh"
+      },
+      {
+        "name": "Axial fiber 074",
+        "id": "vGipICl8m"
+      },
+      {
+        "name": "Axial fiber 075",
+        "id": "RSGjUVEcU"
+      },
+      {
+        "name": "Axial fiber 076",
+        "id": "QXHj3qWHu"
+      },
+      {
+        "name": "Axial fiber 077",
+        "id": "ybLiLBWPi"
+      },
+      {
+        "name": "Axial fiber 078",
+        "id": "IrGj4ro42"
+      },
+      {
+        "name": "Axial fiber 079",
+        "id": "wPuEYE9FI"
+      },
+      {
+        "name": "Axial fiber 080",
+        "id": "jdp_Fq36c"
+      },
+      {
+        "name": "Axial fiber 081",
+        "id": "PSNpuj2j7"
+      },
+      {
+        "name": "Axial fiber 082",
+        "id": "XLKiwtqNf"
+      },
+      {
+        "name": "Axial fiber 083",
+        "id": "ir1xBXsDe"
+      },
+      {
+        "name": "Axial fiber 084",
+        "id": "jDXANm4i6"
+      },
+      {
+        "name": "Clumped blue ink / vertically elongated native marks",
+        "id": "UxeNE041F"
+      }
+    ],
+    "recipeFrames": 529,
+    "nativeFrames": 530,
     "nativeText": 2,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "WEB-006",
+      "change": "Replaced circular sunburst with a dense vertically elongated ink core, slivers and fine curved splinters. Sampling remains coarser than the source.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "8bacfb8ead0e2a0f1b597bb9dacac1af29a80cb95b49f95b48f16fa94444468f",
+      "compiledPayloadSHA256": "ba8c879e65b9eff7e839b2ef442939ac553ad04cd300deef2e95374e8eb6f5ba",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-15",
