@@ -1300,9 +1300,9 @@
     "height": 1000,
     "background": "#ffffff",
     "simplifications": [
-      "Recreates the source three-cube diagonal arrangement, orange/yellow raster slices, faint square grid, connectors, and small coordinate tags.",
+      "Recreates the source three-form diagonal arrangement, orange/yellow raster slices, faint square grid, fine southwest-fanning raster stream, connectors, and small coordinate tags.",
       "Every face is built from editable vertical Frame strips; no shader, image, SVG, or code component is embedded.",
-      "The original fine raster is coarsened to a seven-pixel pitch, and connector curves are simplified to straight segments."
+      "The original fine raster is coarsened to a seven-pixel pitch. Many faint native line segments now retain the dominant streaming material between forms; source motion, continuous glow, and curved detail remain simplified."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -1310,14 +1310,419 @@
     "framerArtwork": "q9nomNiJD",
     "framerCredit": "H_wXMFaIH",
     "framerLabel": "tbGEOOVz2",
-    "parts": [],
-    "recipeFrames": 250,
-    "nativeFrames": 251,
+    "parts": [
+      {
+        "name": "Fine raster flow / southwest fanning streams",
+        "id": "SXZE5F80u"
+      },
+      {
+        "name": "Southwest fine stream 1",
+        "id": "i7vHcqSIZ"
+      },
+      {
+        "name": "Southwest fine stream 2",
+        "id": "RoSYclb34"
+      },
+      {
+        "name": "Southwest fine stream 3",
+        "id": "vpyrcns1c"
+      },
+      {
+        "name": "Southwest fine stream 4",
+        "id": "pwQiJxZsk"
+      },
+      {
+        "name": "Southwest fine stream 5",
+        "id": "ZGsN3wKD4"
+      },
+      {
+        "name": "Southwest fine stream 6",
+        "id": "CrRv8oWY2"
+      },
+      {
+        "name": "Southwest fine stream 7",
+        "id": "xDWDxqDWb"
+      },
+      {
+        "name": "Southwest fine stream 8",
+        "id": "oJ3Z7aZxy"
+      },
+      {
+        "name": "Southwest fine stream 9",
+        "id": "ZwBJsAeBN"
+      },
+      {
+        "name": "Southwest fine stream 10",
+        "id": "vo2OvoH5y"
+      },
+      {
+        "name": "Southwest fine stream 11",
+        "id": "qZ_ibj_yJ"
+      },
+      {
+        "name": "Southwest fine stream 12",
+        "id": "AySDLTG1o"
+      },
+      {
+        "name": "Southwest fine stream 13",
+        "id": "CrGHEq12U"
+      },
+      {
+        "name": "Southwest fine stream 14",
+        "id": "VbXaMiLfU"
+      },
+      {
+        "name": "Southwest fine stream 15",
+        "id": "zopGdm3WU"
+      },
+      {
+        "name": "Southwest fine stream 16",
+        "id": "bxe8AT3sf"
+      },
+      {
+        "name": "Southwest fine stream 17",
+        "id": "m3ZTXRgyd"
+      },
+      {
+        "name": "Southwest fine stream 18",
+        "id": "NEBKDqEIq"
+      },
+      {
+        "name": "Southwest fine stream 19",
+        "id": "RkXXWiCpH"
+      },
+      {
+        "name": "Southwest fine stream 20",
+        "id": "TzEyDQlXZ"
+      },
+      {
+        "name": "Southwest fine stream 21",
+        "id": "uaTZ1tIbp"
+      },
+      {
+        "name": "Southwest fine stream 22",
+        "id": "iijjejMhc"
+      },
+      {
+        "name": "Southwest fine stream 23",
+        "id": "oAXPJ14uN"
+      },
+      {
+        "name": "Southwest fine stream 24",
+        "id": "eMejiSUzr"
+      },
+      {
+        "name": "Southwest fine stream 25",
+        "id": "qkCzz61kg"
+      },
+      {
+        "name": "Southwest fine stream 26",
+        "id": "gcPiEz2st"
+      },
+      {
+        "name": "Southwest fine stream 27",
+        "id": "lnKcu6tR9"
+      },
+      {
+        "name": "Southwest fine stream 28",
+        "id": "S9tiFZqFH"
+      },
+      {
+        "name": "Southwest fine stream 29",
+        "id": "vxBFeRSj4"
+      },
+      {
+        "name": "Southwest fine stream 30",
+        "id": "TuwwpvuQn"
+      },
+      {
+        "name": "Southwest fine stream 31",
+        "id": "yjCUiqlwA"
+      },
+      {
+        "name": "Southwest fine stream 32",
+        "id": "T51g0Mdif"
+      },
+      {
+        "name": "Southwest fine stream 33",
+        "id": "QeyRTjJkn"
+      },
+      {
+        "name": "Southwest fine stream 34",
+        "id": "FFSUmKOEN"
+      },
+      {
+        "name": "Southwest fine stream 35",
+        "id": "vpSj6FX75"
+      },
+      {
+        "name": "Southwest fine stream 36",
+        "id": "bDcH7sCjk"
+      },
+      {
+        "name": "Lower-to-middle raster stream 1",
+        "id": "NYKb_yDjO"
+      },
+      {
+        "name": "Middle-to-upper raster stream 1",
+        "id": "MfZKNBKws"
+      },
+      {
+        "name": "Lower-to-middle raster stream 2",
+        "id": "XHbJgOSZb"
+      },
+      {
+        "name": "Middle-to-upper raster stream 2",
+        "id": "cECYuBton"
+      },
+      {
+        "name": "Lower-to-middle raster stream 3",
+        "id": "clX71z9qV"
+      },
+      {
+        "name": "Middle-to-upper raster stream 3",
+        "id": "BbnQUI24m"
+      },
+      {
+        "name": "Lower-to-middle raster stream 4",
+        "id": "Nh8OSZqFH"
+      },
+      {
+        "name": "Middle-to-upper raster stream 4",
+        "id": "It58ky5nx"
+      },
+      {
+        "name": "Lower-to-middle raster stream 5",
+        "id": "Wumaj8SVV"
+      },
+      {
+        "name": "Middle-to-upper raster stream 5",
+        "id": "gbXVn8_zc"
+      },
+      {
+        "name": "Lower-to-middle raster stream 6",
+        "id": "BhzlUfQv6"
+      },
+      {
+        "name": "Middle-to-upper raster stream 6",
+        "id": "tkhwl8I2n"
+      },
+      {
+        "name": "Lower-to-middle raster stream 7",
+        "id": "oK0Sj2dj0"
+      },
+      {
+        "name": "Middle-to-upper raster stream 7",
+        "id": "CDNp8ROTt"
+      },
+      {
+        "name": "Lower-to-middle raster stream 8",
+        "id": "h7tBAvRjb"
+      },
+      {
+        "name": "Middle-to-upper raster stream 8",
+        "id": "MwHqrYIO3"
+      },
+      {
+        "name": "Lower-to-middle raster stream 9",
+        "id": "hDwTgHQ_s"
+      },
+      {
+        "name": "Middle-to-upper raster stream 9",
+        "id": "vM8JPnzkn"
+      },
+      {
+        "name": "Lower-to-middle raster stream 10",
+        "id": "oFf6h8fkU"
+      },
+      {
+        "name": "Middle-to-upper raster stream 10",
+        "id": "z9qsxRCxi"
+      },
+      {
+        "name": "Lower-to-middle raster stream 11",
+        "id": "ZJAb96ulp"
+      },
+      {
+        "name": "Middle-to-upper raster stream 11",
+        "id": "QqimuOZUV"
+      },
+      {
+        "name": "Lower-to-middle raster stream 12",
+        "id": "pIa75vCiB"
+      },
+      {
+        "name": "Middle-to-upper raster stream 12",
+        "id": "gIxeSrG_0"
+      },
+      {
+        "name": "Lower-to-middle raster stream 13",
+        "id": "bJtQZvlHA"
+      },
+      {
+        "name": "Middle-to-upper raster stream 13",
+        "id": "Euf8CwIKq"
+      },
+      {
+        "name": "Lower-to-middle raster stream 14",
+        "id": "k6h6tlYJr"
+      },
+      {
+        "name": "Middle-to-upper raster stream 14",
+        "id": "TdyghAMIz"
+      },
+      {
+        "name": "Lower-to-middle raster stream 15",
+        "id": "XrjCyXKZ7"
+      },
+      {
+        "name": "Middle-to-upper raster stream 15",
+        "id": "OWoH_fb6d"
+      },
+      {
+        "name": "Lower-to-middle raster stream 16",
+        "id": "wBMmW_82O"
+      },
+      {
+        "name": "Middle-to-upper raster stream 16",
+        "id": "GhQUgT7Hp"
+      },
+      {
+        "name": "Lower-to-middle raster stream 17",
+        "id": "Fu4wZiVjx"
+      },
+      {
+        "name": "Middle-to-upper raster stream 17",
+        "id": "KH5sbAYay"
+      },
+      {
+        "name": "Lower-to-middle raster stream 18",
+        "id": "j082faaFr"
+      },
+      {
+        "name": "Middle-to-upper raster stream 18",
+        "id": "yeneHiahm"
+      },
+      {
+        "name": "Lower-to-middle raster stream 19",
+        "id": "xiYgMxRwr"
+      },
+      {
+        "name": "Middle-to-upper raster stream 19",
+        "id": "cYU5rYeeq"
+      },
+      {
+        "name": "Lower-to-middle raster stream 20",
+        "id": "u98ohxiZ3"
+      },
+      {
+        "name": "Middle-to-upper raster stream 20",
+        "id": "BiWqc9nP1"
+      },
+      {
+        "name": "Lower-to-middle raster stream 21",
+        "id": "x9DXfV1jV"
+      },
+      {
+        "name": "Middle-to-upper raster stream 21",
+        "id": "J15Mz86s9"
+      },
+      {
+        "name": "Lower-to-middle raster stream 22",
+        "id": "JsE8mnbuh"
+      },
+      {
+        "name": "Middle-to-upper raster stream 22",
+        "id": "iMdISsJnu"
+      },
+      {
+        "name": "Lower-to-middle raster stream 23",
+        "id": "QEDVH3DFS"
+      },
+      {
+        "name": "Middle-to-upper raster stream 23",
+        "id": "BYGGwNBRi"
+      },
+      {
+        "name": "Lower-to-middle raster stream 24",
+        "id": "Yk0p6dy0R"
+      },
+      {
+        "name": "Middle-to-upper raster stream 24",
+        "id": "bJkWwF7U0"
+      },
+      {
+        "name": "Upper curling raster outflow 1",
+        "id": "wTImfNWzf"
+      },
+      {
+        "name": "Upper curling raster outflow 2",
+        "id": "wyoNlJkWF"
+      },
+      {
+        "name": "Upper curling raster outflow 3",
+        "id": "wwWzBWx7O"
+      },
+      {
+        "name": "Upper curling raster outflow 4",
+        "id": "IlD_0SYqO"
+      },
+      {
+        "name": "Upper curling raster outflow 5",
+        "id": "yvulRm7r5"
+      },
+      {
+        "name": "Upper curling raster outflow 6",
+        "id": "sJ76VGzpL"
+      },
+      {
+        "name": "Upper curling raster outflow 7",
+        "id": "YQ2MRaeCP"
+      },
+      {
+        "name": "Upper curling raster outflow 8",
+        "id": "gV2QM_k5Y"
+      },
+      {
+        "name": "Upper curling raster outflow 9",
+        "id": "Xg_sAHoWu"
+      },
+      {
+        "name": "Upper curling raster outflow 10",
+        "id": "lVrHoyWoH"
+      },
+      {
+        "name": "Upper curling raster outflow 11",
+        "id": "ftiZpQ77q"
+      },
+      {
+        "name": "Upper curling raster outflow 12",
+        "id": "QAZ2YSCDI"
+      }
+    ],
+    "recipeFrames": 551,
+    "nativeFrames": 552,
     "nativeText": 3,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "WEB-007",
+      "change": "Restored dominant southwest-fanning raster streams and inter-form flow; source motion, glow and full curved detail remain simplified.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "525e736a5c1b50baf580667090ceb27e463f790a5d9f56b21ae1ecf45f34ff14",
+      "compiledPayloadSHA256": "7a8f1e03770a6d25dfcbf57a28832456fda400a553a096b59b595de5625ff13a",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-16",
