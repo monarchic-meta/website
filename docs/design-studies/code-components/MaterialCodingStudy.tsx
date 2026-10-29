@@ -78,78 +78,100 @@ mat2 rot(float a){return mat2(cos(a),-sin(a),sin(a),cos(a));}
 float hash(vec3 p){p=fract(p*.3183099+vec3(.1,.2,.3));p*=17.0;return fract(p.x*p.y*p.z*(p.x+p.y+p.z));}
 float capsuleDistance(vec2 p,float halfLength,float radius){p.x-=clamp(p.x,-halfLength,halfLength);return length(p)-radius;}
 vec3 capsules(vec2 uv){
-    // Analytic capsule profiles and focus-dependent soft coverage; independent
-    // layered arrangement rather than a copied simulation or physical DOF model.
+    // Individually focused rods and end-on pieces across a shallow depth field.
     vec2 p=uv*2.5;
-    vec3 color=mix(u_primary,u_secondary,.12+.10*(uv.y+.5));
-    color*=1.0-.035*dot(uv,uv);
-    for(int i=0;i<14;i++){
+    vec3 color=mix(u_primary,u_secondary,.10+.08*(uv.y+.5));
+    color*=1.0-.025*dot(uv,uv);
+    for(int i=0;i<22;i++){
         float k=float(i),seed=hash(vec3(k,2,4));
-        float depth=(k+.5)/14.0;
-        float angle=-1.15+2.3*hash(vec3(k,3,1))+.065*sin(u_time*.4+k);
-        vec2 center=vec2(-1.7+3.4*hash(vec3(k,6,2)),-.79+.26*hash(vec3(k,1,7)));
-        center.x+=.035*sin(u_time*.35+k*1.7);
-        center.y+=.025*sin(u_time*.55+k*2.1);
-        float lengthA=.12+.18*seed,radius=.075+.028*depth;
+        float depth=(k+.5)/22.0;
+        float angle=-1.3+2.6*hash(vec3(k,3,1))+.055*sin(u_time*.4+k);
+        float column=fract(k*.61803398875+.12);
+        vec2 center=vec2(-1.92+3.84*column,-.43-.56*depth+.18*(hash(vec3(k,1,7))-.5));
+        center.x+=.025*sin(u_time*.35+k*1.7);
+        center.y+=.014*sin(u_time*.55+k*2.1);
+        float endOn=step(.67,hash(vec3(k,7,8)));
+        float lengthA=mix(.11+.13*seed,.006,endOn);
+        float radius=.058+.022*depth;
         vec2 q=rot(angle)*(p-center);
         float d=capsuleDistance(q,lengthA,radius);
-        float blur=.004+.09*pow(abs(depth-u_focus),1.3);
-        float shadow=capsuleDistance(rot(angle)*(p-center+vec2(-.025,.06)),lengthA,radius);
-        color*=1.0-.14*exp(-max(shadow,0.0)*16.0)*(1.0-smoothstep(.10,.19,shadow));
+        float blur=.004+.15*pow(abs(depth-u_focus),1.45);
+        // Rear silhouettes remain defocused, front contacts stay crisp.
+        float shadow=capsuleDistance(rot(angle)*(p-center+vec2(-.012,.035)),lengthA,radius);
+        color*=1.0-.055*exp(-max(shadow,0.0)*20.0)*(1.0-smoothstep(.06,.15,shadow));
         float radial=length(vec2(q.x-clamp(q.x,-lengthA,lengthA),q.y))/radius;
         float facing=sqrt(max(0.0,1.0-radial*radial));
         float highlight=.5+.5*clamp(-q.y/radius*.55+facing*.45,0.0,1.0);
-        vec3 body=u_ink+vec3(.055*highlight+.018*depth)*u_intensity;
-        body+=vec3(.025)*pow(max(facing,0.0),7.0);
+        vec3 body=u_ink+vec3(.036*highlight+.009*depth)*u_intensity;
+        body+=vec3(.012)*pow(max(facing,0.0),7.0);
+        body=mix(body,color,.25*(1.0-depth));
         float alpha=1.0-smoothstep(-blur,blur,d);
         color=mix(color,body,alpha);
     }
     return clamp(color,0.0,1.0);
 }
+
 float roundBox(vec2 p,vec2 b,float r){vec2 q=abs(p)-b+r;return length(max(q,0.0))+min(max(q.x,q.y),0.0)-r;}
 vec3 panelAt(vec2 uv){
     vec3 panel=texture2D(u_panel,clamp(uv,0.0,1.0)).rgb;
     float accent=smoothstep(.05,.18,panel.g-max(panel.r,panel.b));
     return mix(panel,u_primary*max(panel.g,.2),accent);
 }
+float shardEdge(vec2 p,vec2 a,vec2 b){vec2 e=b-a,v=p-a;return -(e.x*v.y-e.y*v.x)/max(length(e),.0001);}
+float softIntersection(float a,float b){float h=max(.008-abs(a-b),0.0)/.008;return max(a,b)+h*h*.002;}
+float shardDistance(vec2 p,float k){
+    // Five close-fitting uneven convex panes from the inspected complete poster.
+    // Rounded intersections leave narrow dark seams, not two floating rectangles.
+    vec2 a,b,c,d,e;
+    if(k<.5){a=vec2(.045,.085);b=vec2(.345,.085);c=vec2(.378,.245);d=vec2(.220,.815);e=vec2(.055,.815);}
+    else if(k<1.5){a=vec2(.384,.257);b=vec2(.514,.444);c=vec2(.518,.791);d=vec2(.228,.842);e=vec2(.281,.662);}
+    else if(k<2.5){a=vec2(.530,.445);b=vec2(.707,.454);c=vec2(.857,.844);d=vec2(.540,.796);e=vec2(.531,.621);}
+    else if(k<3.5){a=vec2(.811,.084);b=vec2(.957,.084);c=vec2(.949,.811);d=vec2(.873,.814);e=vec2(.720,.443);}
+    else {a=vec2(.362,.087);b=vec2(.797,.087);c=vec2(.704,.427);d=vec2(.526,.432);e=vec2(.392,.239);}
+    float side=softIntersection(shardEdge(p,a,b),shardEdge(p,b,c));
+    side=softIntersection(side,shardEdge(p,c,d));
+    side=softIntersection(side,shardEdge(p,d,e));
+    return softIntersection(side,shardEdge(p,e,a));
+}
 vec3 glass(vec2 uv){
-    // Actual local resampling of a canvas-generated UI texture. No screenshot,
-    // remote texture, DOM capture or source website is used.
+    // Resample the unchanged, locally generated UI through polygonal glass.
     vec2 st=uv+vec2(.5);
-    vec3 color=panelAt(st);
-    for(int i=0;i<2;i++){
+    vec3 color=panelAt(st)*.84;
+    for(int i=0;i<5;i++){
         float k=float(i);
-        float angle=mix(-.31,.25,k)+.06*sin(u_time*.28+k*2.0);
-        vec2 center=vec2(mix(.32,.69,k)+.025*sin(u_time*.35+k),.5)+u_mouse*.05;
-        vec2 q=rot(angle)*(st-center);
-        float d=roundBox(q,vec2(.19,.40),.012);
-        float e=.0015;
-        vec2 grad=vec2(roundBox(q+vec2(e,0),vec2(.19,.40),.012)-roundBox(q-vec2(e,0),vec2(.19,.40),.012),
-                       roundBox(q+vec2(0,e),vec2(.19,.40),.012)-roundBox(q-vec2(0,e),vec2(.19,.40),.012))/(2.0*e);
-        float bevel=exp(-abs(d)*58.0);
-        vec2 bend=rot(-angle)*(grad*bevel*.050+vec2(q.x*.18,q.y*.035))*u_refraction;
+        float angle=.004*sin(u_time*.24+k*1.7);
+        vec2 q=rot(angle)*(st-vec2(.5))+vec2(.5)+u_mouse*.006;
+        float d=shardDistance(q,k),e=.0012;
+        vec2 grad=vec2(shardDistance(q+vec2(e,0),k)-shardDistance(q-vec2(e,0),k),
+                       shardDistance(q+vec2(0,e),k)-shardDistance(q-vec2(0,e),k))/(2.0*e);
+        float bevel=exp(-abs(d)*105.0);
+        vec2 bend=(grad*bevel*.020+vec2((q.x-.5)*.033,(q.y-.5)*.013)
+            +vec2(.002*sin(q.y*10.0+k+u_time*.12),.001*cos(q.x*8.0+k)))*u_refraction;
         vec2 sampleUV=st+bend;
         vec3 refracted=panelAt(sampleUV);
-        refracted.r=panelAt(sampleUV+bend*.045).r;
-        refracted.b=panelAt(sampleUV-bend*.045).b;
-        float reflection=pow(.5+.5*cos(q.x*9.0+q.y*3.2+u_time*.18),14.0)*.07;
-        refracted=mix(refracted,u_secondary,.015)+reflection+bevel*.075*u_intensity;
-        float inside=1.0-smoothstep(-.0015,.0015,d);
+        refracted.r=panelAt(sampleUV+bend*.016).r;
+        refracted.b=panelAt(sampleUV-bend*.016).b;
+        float reflected=pow(.5+.5*cos(q.x*5.0+q.y*3.0+k*.7+u_time*.11),9.0)*.018;
+        vec3 tint=mix(vec3(.10,.14,.14),vec3(.17,.12,.17),.5+.5*sin(k*2.0));
+        refracted=refracted*.87+tint*.08+reflected;
+        refracted*=1.0-.16*bevel;
+        float inside=1.0-smoothstep(-.0012,.0012,d);
         color=mix(color,refracted,inside);
-        float rim=exp(-abs(d)*650.0);
-        color+=vec3(.36,.40,.44)*rim*u_intensity;
+        float rim=exp(-abs(d)*950.0);
+        color+=mix(vec3(.12,.14,.15),vec3(.32,.35,.37),clamp(grad.y*.5+.5,0.0,1.0))*rim*u_intensity;
     }
     return clamp(color,0.0,1.0);
 }
+
 float tetra(vec3 p){return (max(max(-p.x-p.y-p.z,p.x+p.y-p.z),max(-p.x+p.y+p.z,p.x-p.y+p.z))-1.0)*.577350269;
 }
 vec3 latticeSpace(vec3 p){p.xz=rot(.35+u_time*.10+u_mouse.x*.4)*p.xz;p.yz=rot(.25+u_mouse.y*.3)*p.yz;return p;}
 float latticeDistance(vec3 p){
     p=latticeSpace(p);
-    // Five independent nearest-vertex IFS levels, with angular tetrahedral
+    // Six independent nearest-vertex IFS levels, with angular tetrahedral
     // leaves. Open triangular holes remain actual empty ray-marched space.
     float scale=1.0;
-    for(int i=0;i<5;i++){
+    for(int i=0;i<6;i++){
         vec3 vertex=vec3(1,1,1);
         float closest=dot(p-vertex,p-vertex),d;
         vec3 a=vec3(-1,-1,1);d=dot(p-a,p-a);if(d<closest){closest=d;vertex=a;}
@@ -170,9 +192,9 @@ vec3 lattice(vec2 uv){
     if(!hit)return u_ink;
     float e=.0015;vec2 h=vec2(e,0);
     vec3 normal=normalize(vec3(latticeDistance(q+h.xyy)-latticeDistance(q-h.xyy),latticeDistance(q+h.yxy)-latticeDistance(q-h.yxy),latticeDistance(q+h.yyx)-latticeDistance(q-h.yyx)));
-    float light=.18+.82*max(dot(normal,normalize(vec3(-.5,.8,1.2))),0.0);
+    float light=.42+.58*max(dot(normal,normalize(vec3(-.5,.8,1.2))),0.0);
     float fog=exp(-max(travel-2.8,0.0)*.28);
-    return mix(u_ink,mix(u_secondary,u_primary,light)*u_intensity,fog);
+    return mix(u_ink,mix(u_secondary,u_primary,light)*u_intensity*1.12,fog);
 }
 vec3 ringSpace(vec3 p){p.yz=rot(.30+.18*sin(u_time*.23)+u_mouse.y*.4)*p.yz;p.xz=rot(.12*sin(u_time*.17)+u_mouse.x*.4)*p.xz;return p;}
 float ringDistance(vec3 p){p=ringSpace(p);return length(vec2(length(p.xy)-.59,p.z))-.27;}
@@ -184,7 +206,7 @@ vec3 spectral(vec2 uv){
         if(d<.001){hit=true;break;}
         travel+=max(d*.8,.001);if(travel>4.7)break;
     }
-    vec3 color=mix(u_ink,vec3(.23),.67+.13*uv.y);
+    vec3 color=mix(u_ink,vec3(.34),.05+.83*smoothstep(-.5,.5,uv.y));
     if(hit){
         vec2 e=vec2(.0015,0);
         vec3 n=normalize(vec3(ringDistance(q+e.xyy)-ringDistance(q-e.xyy),ringDistance(q+e.yxy)-ringDistance(q-e.yxy),ringDistance(q+e.yyx)-ringDistance(q-e.yyx)));
@@ -195,13 +217,25 @@ vec3 spectral(vec2 uv){
         float upper=pow(max(0.0,dot(reflection,normalize(vec3(-.4,.85,1.0)))),4.5);
         float lower=pow(max(0.0,dot(reflection,normalize(vec3(.2,-.8,1.0)))),7.0);
         float horizon=exp(-pow(reflection.y+.12,2.0)*18.0);
-        float phase=.90*fresnel+.11*reflection.x+.025*u_time;
+        float phase=1.5*fresnel+.07*reflection.x+.015*u_time;
         vec3 spectrum=.5+.5*cos(6.2831853*(phase+vec3(.02,.34,.67)));
         vec3 tint=mix(u_primary,u_secondary,.5+.5*n.y);
         vec3 metal=vec3(.11,.125,.14)*(.65+.80*max(n.y,0.0));
-        metal+=vec3(.62,.66,.69)*upper*.46+vec3(.28,.34,.42)*lower*.48;
+        metal+=vec3(.62,.66,.69)*upper*.64+vec3(.38,.45,.52)*lower*.62;
         metal+=vec3(.13,.17,.20)*horizon;
-        color=metal+mix(tint,spectrum,.82)*(fresnel*.49+lower*.18)*u_intensity;
+        // Source still: strong blue/yellow at the lower inner arc, cool pale
+        // material at the lower outside, and a cyan/blue upper grazing band.
+        vec3 local=ringSpace(q);
+        float radius=length(local.xy);
+        float inner=1.0-smoothstep(.46,.61,radius);
+        float innerArc=inner*pow(max(n.y,0.0),1.1)*exp(-pow((facing-.25)/.48,2.0));
+        vec3 dispersed=vec3(exp(-pow(facing/.17,2.0)),exp(-pow((facing-.17)/.28,2.0)),exp(-pow((facing-.48)/.35,2.0)));
+        float upperArc=smoothstep(.62,.77,radius)*pow(max(n.y,0.0),2.0)*exp(-pow(facing/.30,2.0));
+        float lowerPale=smoothstep(.58,.76,radius)*exp(-pow((n.y+.70)/.39,2.0));
+        color=metal+vec3(.34,.40,.46)*lowerPale;
+        color+=dispersed*innerArc*1.05*u_intensity;
+        color+=mix(vec3(.12,.22,.92),vec3(.08,.91,.94),clamp(facing*3.3,0.0,1.0))*upperArc*.78*u_intensity;
+        color+=mix(tint,spectrum,.88)*pow(fresnel,3.0)*.08*u_intensity;
         // Spatial grain remains a material approximation, not path tracing.
         float grain=hash(vec3(floor(gl_FragCoord.xy),.7))-.5;
         color+=grain*u_grain*.17*(.65+upper);
