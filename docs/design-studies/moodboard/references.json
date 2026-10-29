@@ -2505,11 +2505,23 @@
         "framerReferencePoster": "w2dgOi_AO",
         "framerReferencePosterLabel": "D_EX0sNc4",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1"
+        "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-001",
+          "change": "Compact denser dome flows into an open pinched throat, reopened lower hourglass and variable curling trails, using the same point allocation. Stronger/larger soft point sprites connect the dense curves visually.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent parametric surface; sampled canopy silhouette and density, not source formula or full clip.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -2629,19 +2641,33 @@
         "framerReferencePoster": "k62gliJS_",
         "framerReferencePosterLabel": "WqDtbk1JR",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-002",
-          "change": "A smaller filled glyph has rounded upper chambers, shorter pointed tips, smaller lower lobes and subordinate echoes.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Warmer pale filled wing glyph with a compact rounded silhouette, gentler ghost frames and restrained afterimage glow.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independently authored wing geometry and temporal echo; sampled source stills do not verify the original afterimage algorithm or clip timing.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
         },
-        "componentSourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
+        "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-002",
+            "change": "A smaller filled glyph has rounded upper chambers, shorter pointed tips, smaller lower lobes and subordinate echoes.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -2807,11 +2833,23 @@
         "framerReferencePoster": "Q9YbOdr6e",
         "framerReferencePosterLabel": "nybYbcYvt",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1"
+        "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-003",
+          "change": "Downward close camera keeps broad terrain folds across the frame; finer ordered cells and stronger three-tone shading remove the prior separate horizon.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "An authored continuous 3D terrain, not the original game world, source shader or full animation.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -2931,11 +2969,23 @@
         "framerReferencePoster": "J_Zl0jD67",
         "framerReferencePosterLabel": "atuBHWs41",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030"
+        "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-004",
+          "change": "Scatter 22 depth-ordered rods and circular end-on pieces with smaller profiles, lighter rear silhouettes and varied defocus.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Analytic local coverage/DOF approximation, not source simulation or physical lens model.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -3078,19 +3128,33 @@
         "framerReferencePoster": "D5tCETGa7",
         "framerReferencePosterLabel": "YunTBkqAV",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-005",
-          "change": "Thicker white-hot cyan/magenta plasma shell with asymmetric wisps and a continuous angular color blend.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Thinner irregular hot shell and larger hollow opening, sharper folds and subdued veil/plume fill; peak-normalized saturated emission with 1.65 exposure and separately thresholded angular hot-filament cores.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent plasma volume; sampled still emission refinement, not exact source algorithm/motion.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
         },
-        "componentSourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1"
+        "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-005",
+            "change": "Thicker white-hot cyan/magenta plasma shell with asymmetric wisps and a continuous angular color blend.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -3206,19 +3270,34 @@
         "framerReferencePoster": "FTBX9o_yL",
         "framerReferencePosterLabel": "ox3e7vWuR",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-006",
-          "change": "Pointed petal chambers in overlapping radial tiers carry closed nested contours and broad luminous faces.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Seven denser radial chamber tiers with eighteen to twenty-six sectors, warped nested folds, softer volume, reduced non-core emission and diffuse field retaining hot center and deeper blue gaps.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "2D procedural chamber field approximates sampled optical volume.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/catalog-expansion/source-observations/creative-coding-05.jpg"
         },
-        "componentSourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac"
+        "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-006",
+            "change": "Pointed petal chambers in overlapping radial tiers carry closed nested contours and broad luminous faces.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -3334,19 +3413,34 @@
         "framerReferencePoster": "IVYDdbECk",
         "framerReferencePosterLabel": "MX07AQddY",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-007",
-          "change": "Two separate branching folded mesh patches replace the regular horizontal wave; point coverage is brighter.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Redistribute existing points along connected wire families; two folded lobed surfaces and rooted curling contours.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent parametric topology; not the original generative algorithm.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/catalog-expansion/source-observations/creative-coding-06.jpg"
         },
-        "componentSourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a"
+        "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-007",
+            "change": "Two separate branching folded mesh patches replace the regular horizontal wave; point coverage is brighter.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -3466,11 +3560,24 @@
         "framerReferencePoster": "ccFMZNcgk",
         "framerReferencePosterLabel": "oBso5I5jk",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030"
+        "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-008",
+          "change": "Five close-fitting irregular polygonal glass panes replace two floating rectangles; dark transmission, subtle edge tint, narrow seams and original locally generated UI preserved.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Complete sampled poster inspected; independently drawn UI, geometry, refraction and motion remain approximations. Generated texture byte-exact.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-008-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -3590,19 +3697,34 @@
         "framerReferencePoster": "bWFLywTET",
         "framerReferencePosterLabel": "hNHhM0bpS",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-009",
-          "change": "Near-cubic glass volumes add angled facets, refracted layered local pixel imagery, internal reflections and tighter spacing.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Varied local pixel-cat motifs transmit through near-cubic clear glass volumes, layered offset image planes, brighter side reflections and fine front/back rims.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Locally drawn motif atlas and approximate glass optics; source pixels, physical simulation and exact source motion are not reproduced.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-009-full.png"
         },
-        "componentSourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
+        "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-009",
+            "change": "Near-cubic glass volumes add angled facets, refracted layered local pixel imagery, internal reflections and tighter spacing.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -3713,11 +3835,23 @@
         "framerReferencePoster": "L71SUEJp2",
         "framerReferencePosterLabel": "s7mNwHsUa",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1"
+        "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-010",
+          "change": "Remove regular orthogonal mesh pattern; use a narrow irregular folded core, warped fine contour filaments and long translucent lateral streamers.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent volumetric sheet; sampled stills do not establish exact source topology/motion.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -3837,11 +3971,24 @@
         "framerReferencePoster": "vQ2T4KRCq",
         "framerReferencePosterLabel": "tf8RQHCyR",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
+        "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-011",
+          "change": "One over-under tubular knot replaces three disconnected tori, with continuous chromatic transitions, changing smooth thickness and stronger granular material.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent parametric knot and material; exact source topology, renderer and motion remain unverified.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-011-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -3993,11 +4140,24 @@
         "framerReferencePoster": "vglbi2VW_",
         "framerReferencePosterLabel": "Smf_6l2Df",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
+        "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-012",
+          "change": "Locally drawn four-card technical diagram and shell strip replace the earlier generic interface: loopback terminal, keycaps, revocation lock/phone and single-use ticket, with aligned restrained highlights.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent source-led diagram artwork and decorative motion; authentication, terminal and ticket behavior are not functional.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-012-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -4117,11 +4277,24 @@
         "framerReferencePoster": "jDtwcEC9G",
         "framerReferencePosterLabel": "z5F30lyqA",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030"
+        "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-013",
+          "change": "Add a sixth recursive tetrahedral scale and brighten the triangular material to reveal smaller open leaves.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Inspected source frame cropped; full object pose and source algorithm not verified.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-013-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -4237,11 +4410,24 @@
         "framerReferencePoster": "uvtfprShw",
         "framerReferencePosterLabel": "GSWPGWqlJ",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a"
+        "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-014",
+          "change": "Two independently folded flared mesh pouches with long rooted up/down tendrils and open mesh cells.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Direct browser capture still clips part of the source poster; no claim of exact missing-body silhouette.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-014-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -4357,11 +4543,24 @@
         "framerReferencePoster": "IvIaokfWj",
         "framerReferencePosterLabel": "dYDaO4Noj",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
-        "componentSourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a"
+        "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+        "fidelityRefinement": {
+          "date": "2026-10-29",
+          "pass": 2,
+          "sourceKey": "CC-015",
+          "change": "Replace torus with two flared hanging mesh pouches, differentiated fold phase, source-like opposed loose tendril directions.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Source-led independently authored surface and temporal approximation; original topology/motion unavailable.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-015-full.png"
+        }
       }
     ],
     "framerReferencePresentation": {
@@ -4481,19 +4680,34 @@
         "framerReferencePoster": "ZUrPQT2RU",
         "framerReferencePosterLabel": "LHEZwPQ4T",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-016",
-          "change": "Broader soft environment reflections reveal the curved metal body beyond its spectral rim.",
-          "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Concentrated blue/yellow lower-inner dispersion and cyan upper arc, broader pale lower-outer reflection and vertical gray environment fade.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Complete sampled poster inspected; source spectral path tracer, simulation and motion not reproduced.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-016-full.png"
         },
-        "componentSourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030"
+        "componentSourceSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-016",
+            "change": "Broader soft environment reflections reveal the curved metal body beyond its spectral rim.",
+            "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -4609,19 +4823,34 @@
         "framerReferencePoster": "qLzoFk7yh",
         "framerReferencePosterLabel": "j95jv5df7",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-017",
-          "change": "A broad warped icy band combines crossing tributaries, irregular folds and branching multiscale relief.",
-          "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Restore fine domain-warped turbulent striations and layer a broad merging tributary above the retained diagonal folded lip.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "2D field approximation; original volumetric shader motion and surface normals are not reproduced.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-017-full.png"
         },
-        "componentSourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac"
+        "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-017",
+            "change": "A broad warped icy band combines crossing tributaries, irregular folds and branching multiscale relief.",
+            "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -4737,19 +4966,34 @@
         "framerReferencePoster": "j_s2aLapG",
         "framerReferencePosterLabel": "CH5tkIPyq",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-018",
-          "change": "Short chipped relief uses burgundy/red faces, selective yellow-white fractures and restrained warm haze.",
-          "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Coarsen staggered hierarchical relief with eroded chips; broad marbled heated faces and deep burgundy recesses replace crack-only emission.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Independent bounded raymarch architecture; source larger recess arrangement and exact fractal recursion differ.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-018-full.png"
         },
-        "componentSourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac"
+        "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-018",
+            "change": "Short chipped relief uses burgundy/red faces, selective yellow-white fractures and restrained warm haze.",
+            "evidenceScope": "Visual comparison with archived sampled source stills, including a partially cropped feed frame; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -4865,19 +5109,34 @@
         "framerReferencePoster": "UAj06IvUI",
         "framerReferencePosterLabel": "aLvL3q2Zs",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-019",
-          "change": "Eight luminous mark families add stems, bars, angular fragments and open bowls with varied placement.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Warp continuous bowls/stems, vary loose loop scales, add forty-two faint scratches and eighteen compact luminous dashes plus deterministic dust.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Analytic gesture vocabulary and echo animation approximate sampled writing rather than tracking source paths.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/catalog-expansion/source-observations/creative-coding-16.jpg"
         },
-        "componentSourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac"
+        "componentSourceSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-019",
+            "change": "Eight luminous mark families add stems, bars, angular fragments and open bowls with varied placement.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
@@ -4993,19 +5252,34 @@
         "framerReferencePoster": "HVXZTxFaM",
         "framerReferencePosterLabel": "c9DzAc3dc",
         "framerPlacementStatus": "saved and editor-reload verified",
-        "framerVerifiedDate": "2026-10-23",
+        "framerVerifiedDate": "2026-10-29",
         "framerDesignPage": "bY_Q8AQKP",
         "framerReferenceSection": "VvoNblwjH",
         "framerReferenceDesignPage": "uj_I7x6To",
         "fidelityRefinement": {
           "date": "2026-10-29",
+          "pass": 2,
           "sourceKey": "CC-020",
-          "change": "A continuous narrow C-curved feather ribbon carries smaller subordinate barbs and fine trails.",
-          "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
-          "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
-          "framerVerifiedDate": "2026-10-29"
+          "change": "Asymmetric cubic spine, twelve fine swept mesh hooks with local perpendicular strip construction and smooth curled tips, twenty-four related loose filaments, brighter connected wire sampling.",
+          "evidenceScope": "Visual comparison with archived sampled source frames and available direct source-poster captures; independently authored geometry/materials and motion approximate the references. Exact source algorithms, complete clips and matching motion remain unverified.",
+          "intentionalDifference": "Branch count and detailed topology are independent approximations, not the original code.",
+          "status": "Saved in Framer; byte-exact source readback, editor reload and generated artwork quality verified. Preview motion evidence is scoped separately in savedVerification.",
+          "framerVerifiedDate": "2026-10-29",
+          "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+          "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29",
+          "sourceEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/live-refinement-round-two-2026-10-29/sources/CC-020-full.png"
         },
-        "componentSourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a"
+        "componentSourceSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+        "previousFidelityRefinements": [
+          {
+            "date": "2026-10-29",
+            "sourceKey": "CC-020",
+            "change": "A continuous narrow C-curved feather ribbon carries smaller subordinate barbs and fine trails.",
+            "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+            "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+            "framerVerifiedDate": "2026-10-29"
+          }
+        ]
       }
     ],
     "framerReferencePresentation": {
