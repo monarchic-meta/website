@@ -49,9 +49,9 @@ interface Settings {
     colorHost?: HTMLCanvasElement
 }
 const COMPOSITIONS = {
-    threshold: { key: "OL-01", title: "Threshold press", description: "Cutout slabs / ordered pigment / moving print pressure" },
+    threshold: { key: "OL-01", title: "Threshold press", description: "Folded slotted manifold / tonal dither / pigment volume" },
     loom: { key: "OL-02", title: "Signal loom", description: "Interwoven routing ribbons / cobalt and acid / over-under space" },
-    phosphor: { key: "OL-03", title: "Phosphor atlas", description: "Structured laser arcs / interrupted sweeps / phosphor traces" },
+    phosphor: { key: "OL-03", title: "Phosphor atlas", description: "Folded filament conduit / layered mesh / traveling seam pulse" },
     swarm: { key: "OL-04", title: "Vector swarm", description: "Asymmetric flow marks / elastic contours / open space" },
 }
 
@@ -83,48 +83,66 @@ float fill(float d){return 1.0-smoothstep(-1.2/u_resolution.y,1.2/u_resolution.y
 float stroke(float d,float width){return fill(abs(d)-width);}
 float bayer(vec2 p){vec2 a=mod(floor(p),4.0),lo=mod(a,2.0),hi=floor(a/2.0);float x=2.0*lo.x+3.0*lo.y-4.0*lo.x*lo.y,y=2.0*hi.x+3.0*hi.y-4.0*hi.x*hi.y;return(4.0*x+y+.5)/16.0;}
 vec3 inked(vec3 color,vec2 p,float strength){float n=hash(floor(gl_FragCoord.xy))-0.5;return color+n*u_grain*strength;}
+vec3 pressLocal(vec3 p){
+    p.xy=rot(-.30)*p.xy;
+    p.xz=rot(-.30+.045*sin(u_time*.19))*p.xz;
+    p.yz=rot(.31)*p.yz;
+    // A broad saddle fold bends the whole solid, including the walls of its slot.
+    p.z-=.20*sin(p.x*3.1+.35)+.16*cos(p.y*5.0+p.x*1.5);
+    p.x+=.11*sin(p.y*4.8);
+    return p;
+}
+float pressDistance(vec3 p){
+    vec3 q=pressLocal(p);
+    vec2 edge=abs(q.xy)-vec2(.46,.205);
+    float silhouette=length(max(edge,0.0))+min(max(edge.x,edge.y),0.0)-.17;
+    // Unequal shoulders and an off-axis bent slot give one identifiable manifold.
+    silhouette=max(silhouette,-(length(q.xy-vec2(.56,.33))-.24));
+    float wall=abs(q.z)-(.075+.025*cos(q.x*3.7-q.y*4.0));
+    vec2 slit=vec2(q.x+.03,q.y-.040*sin(q.x*5.0)-.025);
+    float aperture=box(slit,vec2(.285,.020))-.062;
+    return .59*max(max(silhouette,wall),-aperture);
+}
+vec3 pressNormal(vec3 p){
+    const vec2 e=vec2(.0013,-.0013);
+    return normalize(e.xyy*pressDistance(p+e.xyy)+e.yyx*pressDistance(p+e.yyx)+e.yxy*pressDistance(p+e.yxy)+e.xxx*pressDistance(p+e.xxx));
+}
 vec3 threshold(vec2 p){
-    vec3 paper=mix(vec3(.94,.93,.88),u_secondary,.055),color=paper;
-    float press=sin(u_time*.38),shift=.035*press;
-    // Offset ink shadows and cutout voids make a physical constructive print.
-    vec2 q=rot(-.16)*(p-vec2(-.32+shift,.025));
-    float slab=box(q,vec2(.245,.335));
-    float hole=length(q-vec2(.012,.035))-.145;
-    float slot=box(rot(.32)*(q-vec2(.18,-.19)),vec2(.15,.033));
-    slab=max(slab,-hole);slab=max(slab,-slot);
-    vec2 shadowQ=rot(-.16)*(p-vec2(-.294+shift,-.001));
-    float shadow=max(box(shadowQ,vec2(.245,.335)),-(length(shadowQ-vec2(.012,.035))-.145));
-    color=mix(color,u_ink,fill(shadow));
-    vec3 pigment=mix(u_primary,u_ink,.035);
-    float density=.70+.22*sin(q.y*4.0+u_time*.15);
-    float dots=step(bayer(gl_FragCoord.xy/1.5),density);
-    pigment=mix(paper,pigment,dots);
-    color=mix(color,pigment,fill(slab));
-    // Five rising black plates are interrupted by one continuous negative slit.
-    for(int i=0;i<5;i++){
-        float k=float(i),y=-.285+k*.137;
-        vec2 z=rot(-.34)*(p-vec2(.25+.025*sin(k+u_time*.33),y));
-        float plate=box(z,vec2(.272,.045));
-        float cut=box(rot(.18)*(p-vec2(.33+shift,.01)),vec2(.042,.43));
-        plate=max(plate,-cut);
-        color=mix(color,u_ink,fill(plate));
-        float inlay=box(z-vec2(.16,0),vec2(.024,.029));
-        color=mix(color,u_secondary,fill(max(inlay,-cut)));
+    vec3 paper=mix(vec3(.94,.92,.87),u_secondary,.62);
+    vec3 color=paper;
+    vec3 ro=vec3(.0,.0,2.7),rd=normalize(vec3((p-vec2(-.055,-.015))*1.18,-2.7));
+    float t=.8,d=1.0;
+    for(int i=0;i<84;i++){
+        d=pressDistance(ro+rd*t);
+        if(d<.0007||t>4.2)break;
+        t+=max(d,.00035);
     }
-    // An acid blade crosses the layers but leaves the counterform exposed.
-    vec2 blade=rot(.22)*(p-vec2(-.12-shift,-.205));
-    float knife=box(blade,vec2(.42,.036));
-    knife=max(knife,-(length(p-vec2(-.31+shift,.06))-.082));
-    color=mix(color,u_secondary,fill(knife));
-    // Discrete pressure marks occupy a small unbalanced corner.
-    for(int i=0;i<7;i++){
-        vec2 a=vec2(-.66+float(i)*.034,.338);
-        color=mix(color,u_ink,fill(box(p-a,vec2(.009,.012+.009*mod(float(i),2.0)))));
+    if(d<.002&&t<4.2){
+        vec3 hit=ro+rd*t,n=pressNormal(hit),local=pressLocal(hit);
+        vec3 light=normalize(vec3(-.58,.74,1.0));
+        float diffuse=max(dot(n,light),0.0);
+        float cavity=clamp(pressDistance(hit+n*.045)/.025,0.0,1.0);
+        float broad=.5+.5*sin(local.x*2.4-local.y*3.7+.40);
+        float shine=pow(max(dot(reflect(-light,n),-rd),0.0),24.0);
+        float tone=clamp(.12+diffuse*.62+broad*.08+shine*.30,0.0,1.0)*mix(.65,1.0,cavity);
+        float nearSlot=1.0-smoothstep(.075,.13,abs(local.y-.04*sin(local.x*5.0)-.025));
+        tone-=nearSlot*(1.0-diffuse)*.10;
+        // Intermediate shading is represented by spatial palette distribution.
+        // Each large change in dot density follows the 3D normal and cavity depth.
+        float screen=bayer(gl_FragCoord.xy/(1.0+u_grain*.8));
+        screen=clamp(screen+(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.18,0.0,1.0);
+        vec3 dark=mix(u_ink,u_primary,.20),mid=mix(u_primary,paper,.08);
+        if(tone<.40)color=mix(u_ink,dark,step(screen,tone/.40));
+        else if(tone<.70)color=mix(dark,mid,step(screen,(tone-.40)/.30));
+        else color=mix(mid,paper,step(screen,(tone-.70)/.30));
     }
-    float corner=box(p-vec2(.56,-.325),vec2(.105,.063));
-    float stipple=step(bayer(gl_FragCoord.xy/1.8),clamp((p.x-.43)*3.8,0.0,1.0));
-    color=mix(color,u_primary,fill(corner)*stipple);
-    return inked(color,p,.035)*u_intensity;
+    // Two hairline register corners sit outside the silhouette; no extra collage.
+    vec2 a=p-vec2(-.705,.385),b=p-vec2(.67,-.385);
+    float registerA=min(segment(a,vec2(0),vec2(.075,0)),segment(a,vec2(0),vec2(0,-.035)));
+    float registerB=min(segment(b,vec2(0),vec2(-.035,0)),segment(b,vec2(0),vec2(0,.065)));
+    float marks=fill(min(registerA,registerB)-.00055);
+    color=mix(color,u_ink,marks*.55);
+    return color*u_intensity;
 }
 float ribbonCenter(float x,float row,float t){return row+.055*sin(x*5.0+t+row*9.0)+.020*sin(x*12.0-t*.55);}
 vec3 loom(vec2 p){
@@ -169,44 +187,91 @@ vec3 loom(vec2 p){
     return inked(color,p,.026)*u_intensity;
 }
 float angularBand(float a,float start,float span){float angle=mod(a-start+TAU,TAU);return 1.0-smoothstep(span-.018,span,angle);}
+vec3 conduitLocal(vec3 p){
+    p.xy=rot(-.31)*p.xy;
+    p.xz=rot(1.02+.055*sin(u_time*.11))*p.xz;
+    p.yz=rot(.18)*p.yz;
+    p.xy-=vec2(.20*sin(p.z*3.8+.35),.13*cos(p.z*4.6)-.035);
+    p.xy=rot(p.z*1.25+.24*sin(p.z*4.0))*p.xy;
+    return p;
+}
+float conduitDistance(vec3 p){
+    vec3 q=conduitLocal(p);
+    float a=atan(q.y,q.x),z=q.z;
+    float radius=.204+.057*sin(z*4.6+.9)+.024*cos(a*3.0+z*5.0);
+    radius+=.017*sin(a*5.0-z*3.5)+.018*pow(max(cos(a*2.0+z*6.0),0.0),10.0);
+    float section=length(q.xy*vec2(.86,1.18));
+    float shell=abs(section-radius)-.022;
+    float raggedEnd=abs(z+.015*sin(a*4.0))-(.665+.024*sin(a*3.0+.8));
+    return .54*max(shell,raggedEnd);
+}
+vec3 conduitNormal(vec3 p){
+    const vec2 e=vec2(.0011,-.0011);
+    return normalize(e.xyy*conduitDistance(p+e.xyy)+e.yyx*conduitDistance(p+e.yyx)+e.yxy*conduitDistance(p+e.yxy)+e.xxx*conduitDistance(p+e.xxx));
+}
+vec4 conduitLight(vec3 hit,vec3 rd,float distanceFromEye){
+    vec3 q=conduitLocal(hit),n=conduitNormal(hit);
+    float a=atan(q.y,q.x),z=q.z;
+    float light=max(dot(n,normalize(vec3(-.7,.8,1.2))),0.0);
+    float facing=abs(dot(n,-rd));
+    float aa=.04+86.0/u_resolution.y;
+    // Closely pitched longitudinal fibers interfere across translucent folds.
+    // The second family counter-twists instead of making a regular quad grid.
+    float phaseA=a*61.0+z*3.2+.30*sin(z*9.0+a*2.0);
+    float phaseB=a*67.0-z*5.1-.22*sin(z*14.0-a*3.0);
+    float fibersA=1.0-smoothstep(aa*.15,aa,abs(sin(phaseA)));
+    float fibersB=1.0-smoothstep(aa*.12,aa*.82,abs(sin(phaseB)));
+    float gather=.5+.5*cos(a*2.0-z*4.1);
+    float density=smoothstep(.12,.85,gather);
+    float fibers=fibersA*mix(.23,.76,density)+fibersB*.30*density;
+    // Sparse transverse ligatures close selected bundles, leaving open gaps.
+    float crossPhase=z*81.0+a*1.1+.65*sin(a*3.0-z*3.0);
+    float cross=1.0-smoothstep(aa*.22,aa*.9,abs(sin(crossPhase)));
+    float crossGate=pow(max(cos(a*2.0-z*5.0+.8),0.0),5.0);
+    float ligatures=cross*crossGate*.34;
+    float ridge=1.0-smoothstep(.025,.09,abs(sin(a*5.0+z*.9)));
+    float seamA=exp(-abs(sin(a*.5+z*.8+.20*sin(z*6.0)))*75.0);
+    float seamB=exp(-abs(sin(a*.5-z*.45+1.9))*90.0)*.46;
+    float seam=max(seamA,seamB);
+    float wave=fract(u_time*.065+.23)*1.55-.775;
+    float pulse=exp(-pow((z-wave)/.105,2.0));
+    float wake=exp(-pow((z-wave+.13)/.19,2.0))*.22;
+    float depth=clamp(1.30-(distanceFromEye-1.9)*.85,.22,1.0);
+    vec3 cold=mix(u_primary,vec3(.80,.97,1.0),.20);
+    vec3 hot=mix(u_primary,vec3(.96,1.0,.98),.75);
+    // Very little opaque substrate: the internal layers remain visible.
+    vec3 body=mix(u_ink*.38,u_primary,.008+.020*light);
+    vec3 emission=cold*(fibers+ligatures)*(.24+.39*light)*depth;
+    emission+=cold*ridge*(.018+.050*light)*depth;
+    emission+=cold*seam*(.17+wake*.35)*depth;
+    emission+=hot*(seam*1.8+fibers*.35)*pulse*depth;
+    float copperWindow=pow(max(cos(a-.5),0.0),12.0)*(1.0-smoothstep(.04,.18,abs(z+.30)));
+    emission=mix(emission,emission*.55+u_secondary*(fibers+ligatures)*.32,copperWindow*.65);
+    emission+=cold*pow(1.0-facing,5.0)*.035*depth;
+    emission*=1.0+(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.12;
+    return vec4(body+emission,.11+min(fibers,.8)*.19+seam*.14);
+}
 vec3 phosphor(vec2 p){
-    vec3 color=u_ink*.85;
-    vec2 center=vec2(-.22,.035)+u_mouse*.018;
-    vec2 q=p-center;float radius=length(q),angle=atan(q.y,q.x),tm=u_time*.27;
-    vec3 acid=u_secondary,cobalt=u_primary;
-    float field=0.0,hot=0.0;
-    for(int i=0;i<7;i++){
-        float k=float(i),r=.09+k*.044;
-        float phase=.38*sin(k*1.4)+tm*(mod(k,2.0)<.5?1.0:-.64);
-        float arc=angularBand(angle,phase,1.45+.20*k);
-        float band=exp(-abs(radius-r)*420.0)*arc;
-        float teeth=step(.52,fract((angle+PI)*34.0+k*.17));
-        field+=band*mix(.38,1.0,teeth);
-        hot+=exp(-abs(radius-r)*95.0)*arc*.08;
+    vec3 color=u_ink*.34;
+    vec3 ro=vec3(0,0,2.7),rd=normalize(vec3((p-vec2(-.035,.005))*1.12,-2.7));
+    float t=.9,transmission=1.0;
+    // Three real surface intersections expose front, inner and folded far walls.
+    // This produces optical mesh overlap rather than a bright wireframe skin.
+    for(int layer=0;layer<3;layer++){
+        float d=1.0;
+        for(int i=0;i<80;i++){
+            d=abs(conduitDistance(ro+rd*t));
+            if(d<.0007||t>4.1)break;
+            t+=max(d,.00035);
+        }
+        if(d>.0018||t>4.1)break;
+        vec4 surface=conduitLight(ro+rd*t,rd,t);
+        color+=surface.rgb*transmission;
+        transmission*=1.0-surface.a;
+        t+=.015;
     }
-    float sweep=angularBand(angle,tm*1.35,1.12);
-    float sector=exp(-mod(angle-tm*1.35+TAU,TAU)*5.8)*sweep;
-    sector*=smoothstep(.08,.13,radius)*(1.0-smoothstep(.31,.39,radius));
-    color+=acid*(field*.9+sector*.27+hot*.35);
-    float scan=pow(.5+.5*sin((p.y+u_time*.018)*u_resolution.y*PI),12.0);
-    color+=acid*scan*.014*u_grain;
-    // Offset broken laser rails and registration nodes contrast the circular field.
-    for(int i=0;i<5;i++){
-        float k=float(i),y=-.25+k*.112;
-        float x=.20+.026*sin(k*2.0+tm);
-        float rail=segment(p,vec2(x,y),vec2(.64-.045*k,y+.035*sin(tm+k)));
-        float dash=step(.23,fract((p.x-x)*22.0-tm));
-        color+=cobalt*exp(-rail*530.0)*dash*.80;
-        float node=box(p-vec2(x,y),vec2(.012,.012));
-        color+=acid*stroke(node,.0022)*.75;
-        color+=cobalt*exp(-rail*70.0)*.045;
-    }
-    float crossing=segment(p,vec2(-.59,-.28),vec2(.09,.35));
-    color+=cobalt*exp(-crossing*640.0)*(.34+.20*sin(tm))*smoothstep(.12,.19,radius);
-    // Small hard-edged neutral terminals, not a screenshot or instrument panel.
-    float terminals=fill(box(p-vec2(.56,.31),vec2(.065,.021)));
-    terminals=max(terminals,fill(box(p-vec2(.61,-.34),vec2(.018,.05))));
-    color=mix(color,mix(acid,vec3(1.0),.5),terminals*.75);
+    float scan=.5+.5*sin(gl_FragCoord.y*PI);
+    color*=1.0-u_grain*.06*scan;
     return color*u_intensity;
 }
 vec2 flowCurve(float x,float row,float tm){float y=row+.15*sin(x*3.5+row*4.5-tm)+.028*sin(x*10.0+row*8.0+tm*.7);return vec2(x,y);}
