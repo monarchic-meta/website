@@ -1660,126 +1660,336 @@
     }
   ],
   "savedVerification": {
-    "status": "saved-quality-and-page-split-verified",
+    "status": "saved-live-fidelity-refinement-verified",
     "passed": true,
-    "date": "2026-10-23",
-    "checks": 34179,
-    "codeInstances": 60,
+    "date": "2026-10-29",
+    "verificationScope": "live-component-refinement-only",
     "liveStudies": 20,
-    "nativeStudies": 20,
-    "originalCompositions": 18,
-    "sourceEntries": 77,
+    "refinedLiveStudies": 10,
+    "codeInstances": 60,
+    "refinedStudyIds": [
+      "LC-03",
+      "LC-08",
+      "LC-09",
+      "LC-12",
+      "LC-13",
+      "LC-14",
+      "LC-15",
+      "LC-16",
+      "LC-17",
+      "LC-18"
+    ],
     "savedEditorVerified": true,
     "editorReloadVerified": true,
-    "labReloadVerified": true,
     "sourceReadbackVerified": true,
     "codeDiagnosticsVerified": true,
     "controlsAndGeometryPreserved": true,
     "qualityAdequacyVerified": true,
     "sourceHashes": {
-      "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
-      "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
-      "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
-      "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
-      "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
+      "CreativeCodingStudy.tsx": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
+      "MaterialCodingStudy.tsx": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
+      "PointCodingStudy.tsx": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
+      "FieldCodingStudy.tsx": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
+      "InterfaceCodingStudy.tsx": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
     },
     "diagnostics": [],
-    "beforePageSplitNativeVerification": {
-      "status": "passed",
-      "passed": true,
-      "date": "2026-10-23",
-      "checks": 34179,
-      "fullSavedTreesPreserved": {
-        "source": {
-          "nodes": 4569,
-          "canonicalSHA256": "abb8570832a1ec691cd1bee1d3baa52a090c6b7d972543b8690c6e11227fb4c6",
-          "unchanged": true
+    "sourceReadback": {
+      "files": [
+        {
+          "source": "CreativeCodingStudy.tsx",
+          "baselineSourceSHA256": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+          "sourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
+          "readbackSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
+          "sourceBytes": 60958,
+          "readbackBytes": 60958,
+          "byteExact": true,
+          "componentId": "codeFile/bPPSvaB:default",
+          "componentIdPreserved": true,
+          "diagnostics": []
         },
-        "original": {
-          "nodes": 94,
-          "canonicalSHA256": "a8809f870572e88ba3b6c684dd2608c36749cf800344b5b0edf234f3e6868321",
-          "unchanged": true
+        {
+          "source": "MaterialCodingStudy.tsx",
+          "baselineSourceSHA256": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+          "sourceSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
+          "readbackSHA256": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
+          "sourceBytes": 58511,
+          "readbackBytes": 58511,
+          "byteExact": true,
+          "componentId": "codeFile/Ji_GDIq:default",
+          "componentIdPreserved": true,
+          "diagnostics": []
         },
-        "lab": {
-          "nodes": 104,
-          "canonicalSHA256": "bc5eb1467022467dcc059b60cacd92e391a6578703b84f809e87ef6982313183",
-          "unchanged": true
+        {
+          "source": "PointCodingStudy.tsx",
+          "baselineSourceSHA256": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+          "sourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
+          "readbackSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
+          "sourceBytes": 54238,
+          "readbackBytes": 54238,
+          "byteExact": true,
+          "componentId": "codeFile/S1i4MTA:default",
+          "componentIdPreserved": true,
+          "diagnostics": []
+        },
+        {
+          "source": "FieldCodingStudy.tsx",
+          "baselineSourceSHA256": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+          "sourceSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
+          "readbackSHA256": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
+          "sourceBytes": 57894,
+          "readbackBytes": 57894,
+          "byteExact": true,
+          "componentId": "codeFile/Ym8lrvp:default",
+          "componentIdPreserved": true,
+          "diagnostics": []
+        },
+        {
+          "source": "InterfaceCodingStudy.tsx",
+          "baselineSourceSHA256": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38",
+          "sourceSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7",
+          "readbackSHA256": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7",
+          "sourceBytes": 63408,
+          "readbackBytes": 63408,
+          "byteExact": true,
+          "componentId": "codeFile/a_E7nAD:default",
+          "componentIdPreserved": true,
+          "diagnostics": []
         }
-      },
-      "codeInstances": 60,
-      "canvasMotionEnabled": 60,
-      "controlsAndGeometryPreserved": true,
-      "sourceHashes": {
-        "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
-        "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
-        "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
-        "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
-        "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
-      },
-      "diagnostics": [],
-      "scope": "Quality correction changes only the five component runtimes; complete Source, Original and Lab trees compared with fresh pre-correction native clipboard exports, excluding module source revision hints. No saved controls or geometry were changed."
+      ],
+      "baselineGuarded": true,
+      "all60PropsAndGeometryPreserved": true,
+      "receipt": "mcp/code-update-verification.json",
+      "receiptSHA256": "5d5fc8ab49d4189ba13b9d49d5d813a8d45c3069e0ae8d8c5618479ca4608f8b"
     },
-    "preservation": "All study IDs, internal geometry, controls, artwork and credits preserved. The subsequent four-page split intentionally changes container parents and positions, library category positions, Source outer height and navigation labels; its separate receipt verifies those changes.",
     "actualFramerEditor": {
       "reloadVerified": true,
       "views": [
         {
-          "label": "reloaded-gallery5",
-          "mountedDisplays": 40,
-          "visibleDisplays": 20,
-          "inadequateVisible": []
+          "page": "bY_Q8AQKP",
+          "collection": "Live Creative Coding",
+          "zoomPercent": 5,
+          "mountedDisplays": 20,
+          "readyDisplays": 20,
+          "minimumFrameLongEdge": 384,
+          "frame": "384x239",
+          "inadequateDisplays": [],
+          "evidence": "live/framer-live-after-reload.json"
         },
         {
-          "label": "reloaded-normal13",
-          "mountedDisplays": 40,
-          "visibleDisplays": 18,
-          "inadequateVisible": []
-        },
-        {
-          "label": "reloaded-coronal40",
-          "mountedDisplays": 40,
-          "visibleDisplays": 4,
-          "inadequateVisible": []
+          "page": "uj_I7x6To",
+          "collection": "Reference library",
+          "mountedDisplays": 20,
+          "readyDisplays": 20,
+          "frame": "384x222",
+          "inadequateDisplays": [],
+          "evidence": "live/framer-reference-after-reload.json"
         }
       ],
-      "browserWarningsAndErrors": [],
-      "qualitySource": "DOM data-study-frame/demand dimensions and screenshots; effective raster provenance independently checked in the local GPU harness."
+      "normalZoom": {
+        "zoomPercent": 13,
+        "mountedDisplays": 20,
+        "recordedFramesMeetingDemand": 20,
+        "states": {
+          "primed": 5,
+          "ready": 14,
+          "live": 1
+        },
+        "automaticVisibleRefinementWithoutHover": true,
+        "evidence": "live/framer-live-13-percent.json"
+      },
+      "observedBrowserWarningsAndErrors": [],
+      "noFailedCanvasOrGraphicsFallbackObserved": true,
+      "scope": "DOM frame/demand diagnostics and screenshots after actual editor reload. Visible normal-zoom artwork was inspected; offscreen primed states do not mean visible loading failures."
+    },
+    "actualFramerCanvasMotion": {
+      "study": "LC-09",
+      "optInRetained": true,
+      "generatedFrame": {
+        "width": 896,
+        "height": 559
+      },
+      "screenCSSBounds": {
+        "width": 873,
+        "height": 546
+      },
+      "changedBetweenAlignedFrames": true,
+      "evidence": [
+        "live/canvas-motion-a.png",
+        "live/canvas-motion-b.png"
+      ],
+      "scope": "Representative opted-in editor-canvas motion, separate from Preview."
     },
     "actualFramerPreview": {
-      "allFiveFamiliesRenderedAndMoving": true,
+      "movingStudyIds": [
+        "LC-03",
+        "LC-08",
+        "LC-09",
+        "LC-12",
+        "LC-13",
+        "LC-14",
+        "LC-15",
+        "LC-16",
+        "LC-17",
+        "LC-18"
+      ],
+      "allTenRefinedModesMoving": true,
       "motionMeasurements": [
         {
-          "family": "creative",
-          "changedPixelsAbove8": 27019,
-          "sampledPixels": 314500,
-          "moving": true
+          "id": "LC-03",
+          "changedChannels": 136631,
+          "meanAbsoluteDifference": 1.5707945736434108,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
         },
         {
-          "family": "material",
-          "changedPixelsAbove8": 274,
-          "sampledPixels": 314500,
-          "moving": true
+          "id": "LC-08",
+          "changedChannels": 10717,
+          "meanAbsoluteDifference": 0.2637645348837209,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
         },
         {
-          "family": "point",
-          "changedPixelsAbove8": 36167,
-          "sampledPixels": 314500,
-          "moving": true
+          "id": "LC-09",
+          "changedChannels": 314259,
+          "meanAbsoluteDifference": 21.316519379844962,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
         },
         {
-          "family": "field",
-          "changedPixelsAbove8": 38973,
-          "sampledPixels": 314500,
-          "moving": true
+          "id": "LC-12",
+          "changedChannels": 9847,
+          "meanAbsoluteDifference": 0.12230523255813953,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
         },
         {
-          "family": "interface",
-          "changedPixelsAbove8": 21596,
-          "sampledPixels": 314500,
-          "moving": true
+          "id": "LC-13",
+          "changedChannels": 446017,
+          "meanAbsoluteDifference": 4.422434108527132,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
+        },
+        {
+          "id": "LC-14",
+          "changedChannels": 161111,
+          "meanAbsoluteDifference": 1.6783207364341086,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
+        },
+        {
+          "id": "LC-15",
+          "changedChannels": 555520,
+          "meanAbsoluteDifference": 9.417052325581395,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
+        },
+        {
+          "id": "LC-16",
+          "changedChannels": 18704,
+          "meanAbsoluteDifference": 0.3138604651162791,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
+        },
+        {
+          "id": "LC-17",
+          "changedChannels": 13202,
+          "meanAbsoluteDifference": 0.24979748062015503,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
+        },
+        {
+          "id": "LC-18",
+          "changedChannels": 58464,
+          "meanAbsoluteDifference": 0.8597606589147286,
+          "imageRegion": {
+            "left": 320,
+            "top": 230,
+            "width": 800,
+            "height": 430
+          }
         }
       ],
-      "browserWarningsAndErrors": []
+      "pauseResume": {
+        "study": "LC-09",
+        "pausedChangedChannels": 0,
+        "pausedMeanAbsoluteDifference": 0,
+        "resumedLive": true
+      },
+      "evidence": "live/motion-verification.json",
+      "scope": "Consecutive aligned actual Preview screenshot pairs for all ten changed modes; LC-09 pause produced identical artwork pixels, then resumed."
+    },
+    "browserGPU": {
+      "actualModules": 5,
+      "studies": 20,
+      "phases": [
+        {
+          "phase": 0,
+          "frames": 20,
+          "errors": 0,
+          "report": "live/phase-0/report.json",
+          "reportSHA256": "fe5043445db95cd1a46bbe0b2c85e30f91d0b800289da9afdccb49c529b92e93"
+        },
+        {
+          "phase": 8,
+          "frames": 20,
+          "errors": 0,
+          "report": "live/phase-8/report.json",
+          "reportSHA256": "d110c50dfae3d4efe8d379874f9ce327933de30096030a2d04ae941960844c4a"
+        },
+        {
+          "phase": 16,
+          "frames": 20,
+          "errors": 0,
+          "report": "live/phase-16/report.json",
+          "reportSHA256": "d991d0dac354fb47b7e3317f8f1a0f049a50f195388e97758ada690d3b20c327"
+        }
+      ],
+      "generatedFrames": 60,
+      "errors": 0,
+      "sourceHashes": {
+        "CreativeCodingStudy.tsx": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
+        "MaterialCodingStudy.tsx": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
+        "PointCodingStudy.tsx": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
+        "FieldCodingStudy.tsx": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
+        "InterfaceCodingStudy.tsx": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
+      },
+      "scope": "All twenty actual renderer modes executed locally at phases 0, 8 and 16. This validates authored frames and change across phases, not the complete original source clips or source algorithms."
     },
     "runtimeResourcePolicy": {
       "version": 2,
@@ -1869,594 +2079,29 @@
       "copies": 1127,
       "handledInjectedFailures": 5,
       "sourceHashes": {
-        "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
-        "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
-        "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
-        "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
-        "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
+        "CreativeCodingStudy.tsx": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
+        "MaterialCodingStudy.tsx": "8f00d6c5c2afdc6014b8fdee51bb90a5fa061b6d2529a1715cde86ac093b0030",
+        "PointCodingStudy.tsx": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
+        "FieldCodingStudy.tsx": "a74263372ae24b84764d88e8e582a52d17e2620c9a8f30a7c4340c3cb4dae2ac",
+        "InterfaceCodingStudy.tsx": "cf7cb60a991a2d521cb7a0e60ccf1214d813f5621e108bbf96e6a014932e09f7"
       },
-      "scope": "Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.",
-      "command": "nix develop -c pnpm check:framer-studies",
-      "flakeCommand": "nix build .#checks.x86_64-linux.framer-studies --no-link",
-      "flakePassed": true
+      "scope": "Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles. All twelve groups and sixty mixed placements pass; this suite does not execute GLSL.",
+      "command": "nix develop -c pnpm check:framer-studies"
     },
-    "browserGPU": {
-      "overview": {
-        "report": "gpu-overview-fresh.json",
-        "state": {
-          "target": "canvas",
-          "zoom": 0.05,
-          "dpr": 1,
-          "role": "main",
-          "row": 0,
-          "paused": true,
-          "reduced": false,
-          "hidden": false,
-          "epoch": 0,
-          "intensityDelta": 0,
-          "selected": "LC-01-main"
-        },
-        "sourceHashes": {
-          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
-          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
-          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
-          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
-          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
-        },
-        "instances": 60,
-        "visible": 44,
-        "visibleReady": 44,
-        "hydrated": 60,
-        "contexts": {
-          "created": 104,
-          "denied": 0,
-          "active": 0,
-          "peak": 1,
-          "peakPixels": 92160,
-          "activePixels": 0
-        },
-        "cachePixels": 5383680,
-        "displayPixels": 5383680,
-        "pending": 0,
-        "errors": [],
-        "freshReferenceComparisons": 44,
-        "freshReferencePasses": 44,
-        "maxHeartbeatGapMs": 811.9000000059605
-      },
-      "closeup": {
-        "report": "gpu-closeup-fresh.json",
-        "state": {
-          "target": "canvas",
-          "zoom": 0.4,
-          "dpr": 2,
-          "role": "main",
-          "row": 0,
-          "paused": true,
-          "reduced": false,
-          "hidden": false,
-          "epoch": 0,
-          "intensityDelta": 0,
-          "selected": "LC-01-main"
-        },
-        "sourceHashes": {
-          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
-          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
-          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
-          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
-          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
-        },
-        "instances": 60,
-        "visible": 2,
-        "visibleReady": 2,
-        "hydrated": 60,
-        "contexts": {
-          "created": 110,
-          "denied": 0,
-          "active": 0,
-          "peak": 1,
-          "peakPixels": 1998313,
-          "activePixels": 0
-        },
-        "cachePixels": 7941074,
-        "displayPixels": 9196754,
-        "pending": 0,
-        "errors": [],
-        "freshReferenceComparisons": 2,
-        "freshReferencePasses": 2,
-        "maxHeartbeatGapMs": 1886.5999999940395
-      },
-      "normalPan": {
-        "report": "gpu-normal-pan.json",
-        "state": {
-          "target": "canvas",
-          "zoom": 0.13,
-          "dpr": 1,
-          "role": "main",
-          "row": 1,
-          "paused": true,
-          "reduced": false,
-          "hidden": false,
-          "epoch": 0,
-          "intensityDelta": 0,
-          "selected": "LC-01-main"
-        },
-        "sourceHashes": {
-          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
-          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
-          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
-          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
-          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
-        },
-        "instances": 60,
-        "visible": 10,
-        "visibleReady": 10,
-        "hydrated": 60,
-        "contexts": {
-          "created": 113,
-          "denied": 0,
-          "active": 0,
-          "peak": 1,
-          "peakPixels": 1998313,
-          "activePixels": 0
-        },
-        "cachePixels": 7998674,
-        "displayPixels": 9687506,
-        "pending": 0,
-        "errors": [],
-        "freshReferenceComparisons": 0,
-        "freshReferencePasses": 0,
-        "maxHeartbeatGapMs": 1886.5999999940395
-      },
-      "sourceScope": "Fresh-reference comparison ran against the first reviewed quality hashes. A later one-line Mouse=false correction has its own exact inverse-hash proof and final unit checks; actual Framer reload, quality and five-family motion checks use the final accepted hashes.",
-      "finalPointerCorrection": [
-        {
-          "source": "docs/design-studies/code-components/CreativeCodingStudy.tsx",
-          "componentSource": "CreativeCodingStudy.tsx",
-          "sourceSHA256": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
-          "sourceBytes": 60608,
-          "shaderLiteralsUnchanged": true,
-          "componentJSXAndPropertyControlsUnchanged": true,
-          "previousSourceSHA256": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
-          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
-        },
-        {
-          "source": "docs/design-studies/code-components/MaterialCodingStudy.tsx",
-          "componentSource": "MaterialCodingStudy.tsx",
-          "sourceSHA256": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
-          "sourceBytes": 58274,
-          "shaderLiteralsUnchanged": true,
-          "componentJSXAndPropertyControlsUnchanged": true,
-          "previousSourceSHA256": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
-          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
-        },
-        {
-          "source": "docs/design-studies/code-components/PointCodingStudy.tsx",
-          "componentSource": "PointCodingStudy.tsx",
-          "sourceSHA256": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
-          "sourceBytes": 52866,
-          "shaderLiteralsUnchanged": true,
-          "componentJSXAndPropertyControlsUnchanged": true,
-          "previousSourceSHA256": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
-          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
-        },
-        {
-          "source": "docs/design-studies/code-components/FieldCodingStudy.tsx",
-          "componentSource": "FieldCodingStudy.tsx",
-          "sourceSHA256": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
-          "sourceBytes": 54972,
-          "shaderLiteralsUnchanged": true,
-          "componentJSXAndPropertyControlsUnchanged": true,
-          "previousSourceSHA256": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
-          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
-        },
-        {
-          "source": "docs/design-studies/code-components/InterfaceCodingStudy.tsx",
-          "componentSource": "InterfaceCodingStudy.tsx",
-          "sourceSHA256": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38",
-          "sourceBytes": 58939,
-          "shaderLiteralsUnchanged": true,
-          "componentJSXAndPropertyControlsUnchanged": true,
-          "previousSourceSHA256": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78",
-          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
-        }
-      ]
-    },
-    "pageSplitVerification": {
-      "status": "saved-four-design-pages-verified",
-      "projectId": "V4oBgJHPFpR16fflzUp7",
-      "pages": {
-        "references": {
-          "id": "uj_I7x6To",
-          "name": "01 / Reference library",
-          "root": "VvoNblwjH"
-        },
-        "recreations": {
-          "id": "a_19JJYFC",
-          "name": "02 / Recreations",
-          "root": "rHeXK4bVd"
-        },
-        "originals": {
-          "id": "sZvxQvQHd",
-          "name": "03 / Originals",
-          "roots": [
-            "rI0h8QiJa",
-            "hakGOoQNh"
-          ]
-        },
-        "live": {
-          "id": "bY_Q8AQKP",
-          "name": "04 / Live Creative Coding",
-          "root": "qPREnLG7B"
-        }
-      },
-      "counts": {
-        "beforeNodes": 6338,
-        "afterNodes": 6341,
-        "newPages": 3,
-        "missingNodes": 0,
-        "fieldDiffs": 8162,
-        "parentDiffs": 4,
-        "childOrderDiffs": 2,
-        "unexpected": 0,
-        "instanceCounts": {
-          "a_19JJYFC": 0,
-          "bY_Q8AQKP": 20,
-          "sZvxQvQHd": 0,
-          "uj_I7x6To": 20
-        },
-        "labInstances": 20,
-        "totalCodeInstances": 60,
-        "nativeStudies": 20,
-        "originalStudies": 18,
-        "referenceEntries": 77,
-        "liveStudies": 20,
-        "codeSources": 5
-      },
-      "library": {
-        "sourceRoot": "VvoNblwjH",
-        "width": "7240px",
-        "height": "6100px",
-        "left": "0px",
-        "top": "0px",
-        "guideNode": "AWzWzil6w",
-        "guide": "77 catalog links / 20 live source comparisons. Native recreations, Original compositions, and Live Creative Coding each have their own canvas. Open the draft Live lab Preview for motion.",
-        "positions": {
-          "ph87WeFXx": [
-            "70px",
-            "330px"
-          ],
-          "b_NY1rA4h": [
-            "70px",
-            "420px"
-          ],
-          "nT2NyurX6": [
-            "3670px",
-            "420px"
-          ],
-          "dKNi06fJs": [
-            "70px",
-            "3160px"
-          ],
-          "h3tmD0TRd": [
-            "3670px",
-            "4360px"
-          ]
-        }
-      },
-      "fullBefore": {
-        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/before-deep.json",
-        "rawSHA256": "6cc6c22fdf2438ad4e940725dfb4bfcbb4b7c3370cdcfb683f067649e8dc91fe"
-      },
-      "fullAfter": {
-        "format": "reconstructible from complete before+field/parent/child-order changes+newnodes",
-        "diffPath": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/split-diffs.json",
-        "canonicalSHA256": "2c3db09304daac2e202bedebeca6a4819441be11ddda4bb7423851e88f7514cd",
-        "flatSHA256": "3cb3c3ddd6615cbb7c971095fe1a92969dec3d4a9b99237d2d89533e252182c2"
-      },
-      "subtreeProof": [
-        {
-          "id": "rHeXK4bVd",
-          "beforeParent": "VvoNblwjH",
-          "afterParent": "a_19JJYFC",
-          "beforeLeft": "70px",
-          "beforeTop": "300px",
-          "afterLeft": "0px",
-          "afterTop": "0px",
-          "nodes": 4535,
-          "expectedStoredSHA256": "e74550fa7d0e9a9c667b5ff7395df2b730a0b859bb89696ab29f684aec9646a3",
-          "afterStoredSHA256": "e74550fa7d0e9a9c667b5ff7395df2b730a0b859bb89696ab29f684aec9646a3",
-          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
-        },
-        {
-          "id": "rI0h8QiJa",
-          "beforeParent": "uj_I7x6To",
-          "afterParent": "sZvxQvQHd",
-          "beforeLeft": "7801px",
-          "beforeTop": "0px",
-          "afterLeft": "0px",
-          "afterTop": "0px",
-          "nodes": 193,
-          "expectedStoredSHA256": "efbb71ff7a95e513d9f8553cd1be1faa5caa67c684123232d87cd969a5159aed",
-          "afterStoredSHA256": "efbb71ff7a95e513d9f8553cd1be1faa5caa67c684123232d87cd969a5159aed",
-          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
-        },
-        {
-          "id": "hakGOoQNh",
-          "beforeParent": "uj_I7x6To",
-          "afterParent": "sZvxQvQHd",
-          "beforeLeft": "7800px",
-          "beforeTop": "3300px",
-          "afterLeft": "0px",
-          "afterTop": "3700px",
-          "nodes": 10,
-          "expectedStoredSHA256": "f00421386957a0a4921a506d2c4cbaa7ae6dafecd96bf977a0e3f8e8f726ed46",
-          "afterStoredSHA256": "f00421386957a0a4921a506d2c4cbaa7ae6dafecd96bf977a0e3f8e8f726ed46",
-          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
-        },
-        {
-          "id": "qPREnLG7B",
-          "beforeParent": "VvoNblwjH",
-          "afterParent": "bY_Q8AQKP",
-          "beforeLeft": "70px",
-          "beforeTop": "13700px",
-          "afterLeft": "0px",
-          "afterTop": "0px",
-          "nodes": 227,
-          "expectedStoredSHA256": "1a3d00cb5c4014d5f92fffab6518388d43f323e182c82acf0b5eb41d5bc2f013",
-          "afterStoredSHA256": "1a3d00cb5c4014d5f92fffab6518388d43f323e182c82acf0b5eb41d5bc2f013",
-          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
-        }
-      ],
-      "allowedParentChanges": [
-        [
-          "rI0h8QiJa",
-          "uj_I7x6To",
-          "sZvxQvQHd"
-        ],
-        [
-          "hakGOoQNh",
-          "uj_I7x6To",
-          "sZvxQvQHd"
-        ],
-        [
-          "rHeXK4bVd",
-          "VvoNblwjH",
-          "a_19JJYFC"
-        ],
-        [
-          "qPREnLG7B",
-          "VvoNblwjH",
-          "bY_Q8AQKP"
-        ]
-      ],
-      "allowedChildOrderChanges": [
-        [
-          "uj_I7x6To",
-          [
-            "rI0h8QiJa",
-            "hakGOoQNh",
-            "VvoNblwjH"
-          ],
-          [
-            "VvoNblwjH"
-          ]
-        ],
-        [
-          "VvoNblwjH",
-          [
-            "aEZSxSZla",
-            "AWzWzil6w",
-            "kzNa1NF6J",
-            "b_NY1rA4h",
-            "nT2NyurX6",
-            "h3tmD0TRd",
-            "rHeXK4bVd",
-            "ph87WeFXx",
-            "dKNi06fJs",
-            "qPREnLG7B"
-          ],
-          [
-            "aEZSxSZla",
-            "AWzWzil6w",
-            "kzNa1NF6J",
-            "b_NY1rA4h",
-            "nT2NyurX6",
-            "h3tmD0TRd",
-            "ph87WeFXx",
-            "dKNi06fJs"
-          ]
-        ]
-      ],
-      "fieldChangeCounts": {
-        "name": 2,
-        "$scopeId": 4121,
-        "left": 4,
-        "top": 8,
-        "height": 1,
-        "text": 2,
-        "$groundNodeId": 4024
-      },
-      "computedMetadata": "Transaction rectangles were cached; a fresh ten-root read verified current coordinates and page ownership. Rendered DOM bounds independently verify layout, including auto-height text. The recreation root constraintsLocked remains true in storage; the root clipboard copy normalizes it to false.",
-      "inMemoryUnexpectedChanges": [],
-      "independentModelAudit": "passed",
-      "savedEditorVerified": true,
-      "publishingPerformed": false,
-      "receipt": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/split-receipt.json",
-      "finalRootGeometry": {
-        "session": "IFmU1T",
-        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/final-root-geometry.json",
-        "tenRootsVerified": true,
-        "checks": [
-          {
-            "id": "VvoNblwjH",
-            "passed": true
-          },
-          {
-            "id": "rHeXK4bVd",
-            "passed": true
-          },
-          {
-            "id": "rI0h8QiJa",
-            "passed": true
-          },
-          {
-            "id": "hakGOoQNh",
-            "passed": true
-          },
-          {
-            "id": "qPREnLG7B",
-            "passed": true
-          },
-          {
-            "id": "ph87WeFXx",
-            "passed": true
-          },
-          {
-            "id": "b_NY1rA4h",
-            "passed": true
-          },
-          {
-            "id": "nT2NyurX6",
-            "passed": true
-          },
-          {
-            "id": "dKNi06fJs",
-            "passed": true
-          },
-          {
-            "id": "h3tmD0TRd",
-            "passed": true
-          }
-        ],
-        "computedRectCacheResolved": true,
-        "nativeRootConstraintStoredValue": true,
-        "clipboardRootConstraintFalseIsNormalization": true,
-        "noMutationPerformed": true
-      },
-      "passed": true,
-      "editorReloadVerified": true,
-      "sourceHeight": 6100,
-      "studyControlsAndInternalGeometryPreserved": true,
-      "all60InstancesPreserved": true,
-      "designPages": {
-        "references": {
-          "id": "uj_I7x6To",
-          "name": "01 / Reference library",
-          "frames": [
-            "VvoNblwjH"
-          ]
-        },
-        "recreations": {
-          "id": "a_19JJYFC",
-          "name": "02 / Recreations",
-          "frames": [
-            "rHeXK4bVd"
-          ]
-        },
-        "originals": {
-          "id": "sZvxQvQHd",
-          "name": "03 / Originals",
-          "frames": [
-            "rI0h8QiJa",
-            "hakGOoQNh"
-          ]
-        },
-        "live": {
-          "id": "bY_Q8AQKP",
-          "name": "04 / Live Creative Coding",
-          "frames": [
-            "qPREnLG7B"
-          ]
-        }
-      },
-      "independentAudit": {
-        "passed": true,
-        "status": "passed",
-        "modelChecks": 26259,
-        "nativeChecks": 9909,
-        "freshRootGeometryChecks": 101,
-        "existingModelNodes": 6338,
-        "newModelNodes": 3,
-        "allCodeInstancesPreserved": 60,
-        "nativeDesignNodesCompared": 4665,
-        "nativeDesignCodeInstances": 40,
-        "assetsRetained": 67,
-        "storedAttributesAndStructurePassed": true,
-        "internalGeometryControlsCreditsAssetsPreserved": true,
-        "labFullTreeUnchanged": true,
-        "transactionCachedRectangles": 10,
-        "cachedRectanglesResolvedByFreshRead": true,
-        "clipboardRootConstraintNormalized": true,
-        "proofArtifacts": {
-          "model": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/compact-model-verification.json",
-          "native": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/native-model-verification.json",
-          "geometry": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/fresh-root-geometry-verification.json"
-        },
-        "scope": "Independent saved native contents, complete MCP model diff/hash replay and separate fresh MCP root geometry. Operator reload/navigation/render/motion evidence remains separate."
-      },
-      "actualEditorEvidence": "page-operator.json",
-      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split"
-    },
-    "actualPageReloadVerification": {
-      "passed": true,
-      "editorReloadVerified": true,
-      "allFourDesignPagesOpened": true,
-      "views": [
-        {
-          "role": "reference",
-          "mountedCodeDisplays": 20,
-          "visible": 20,
-          "inadequateVisible": [],
-          "screenshot": "page-reference.jpg"
-        },
-        {
-          "role": "recreations",
-          "mountedCodeDisplays": 0,
-          "visible": 0,
-          "inadequateVisible": [],
-          "screenshot": "page-recreations.jpg"
-        },
-        {
-          "role": "originals",
-          "mountedCodeDisplays": 0,
-          "visible": 0,
-          "inadequateVisible": [],
-          "screenshot": "page-originals.jpg"
-        },
-        {
-          "role": "live",
-          "mountedCodeDisplays": 20,
-          "visible": 20,
-          "inadequateVisible": [],
-          "screenshot": "page-live.jpg"
-        }
-      ],
-      "normalZoomPercent": 13,
-      "normalZoomVisible": 12,
-      "normalZoomInadequateVisible": [],
-      "geometry": {
-        "passed": true,
-        "sourceHeight": 6100,
-        "libraryCategoryPositionsVerified": true,
-        "originalPlaygroundTop": 3700,
-        "freshDOMReports": [
-          "geometry-reference.json",
-          "geometry-recreations.json",
-          "geometry-originals.json",
-          "geometry-live.json"
-        ],
-        "scope": "Actual DOM transformed bounds, sidebar dimensions, saved native captures, fresh focused MCP root geometry and screenshots agree. Auto-height label geometry uses rendered DOM bounds."
-      },
-      "finalScreenshot": "final-pages.jpg",
-      "observedBrowserWarningsAndErrors": [],
-      "noFailedCanvasOrGraphicsFallbackObserved": true
+    "sourcePreservation": {
+      "runtimeAndPoolByteIdentical": true,
+      "publicControlsDefaultsExportsAndCreditsByteIdentical": true,
+      "changedSurface": "GLSL literals and only the local glass pixel-atlas block",
+      "evidence": "live-validation/source-checks.json"
     },
     "sourceAlgorithmsVerified": false,
+    "fullSourceClipMotionFidelityVerified": false,
     "exportedFramerImageManuallyInspected": false,
     "published": false,
     "productionSiteIntegrated": false,
-    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery",
-    "proofScope": "34,179 native assertions verify the runtime quality correction before restructuring. Current four-page structure and all retained study contents are verified separately by pageSplitVerification and actualPageReloadVerification. No production integration or publication."
+    "nativeRecreationScope": "The current native recreation refinements and their saved-state verification are recorded separately; this live-only proof makes no claim about those artwork mutations.",
+    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29",
+    "proofScope": "Five baseline-guarded code-file uploads, exact source/exports/diagnostics readback and all sixty saved code controls/geometry; reloaded Live and Reference artwork quality, representative opted-in editor motion, actual Preview motion for all ten refined modes, local GPU phase renders and unchanged v2 resource policy. Native artwork revisions, full source algorithms/clip fidelity and actual Framer export images are outside this verification."
   },
   "lab": {
     "page": "SqfboNSM6",
@@ -3811,5 +3456,804 @@
         "qPREnLG7B"
       ]
     }
+  },
+  "previousQualityAndPageSplitVerification": {
+    "status": "saved-quality-and-page-split-verified",
+    "passed": true,
+    "date": "2026-10-23",
+    "checks": 34179,
+    "codeInstances": 60,
+    "liveStudies": 20,
+    "nativeStudies": 20,
+    "originalCompositions": 18,
+    "sourceEntries": 77,
+    "savedEditorVerified": true,
+    "editorReloadVerified": true,
+    "labReloadVerified": true,
+    "sourceReadbackVerified": true,
+    "codeDiagnosticsVerified": true,
+    "controlsAndGeometryPreserved": true,
+    "qualityAdequacyVerified": true,
+    "sourceHashes": {
+      "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+      "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+      "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+      "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+      "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
+    },
+    "diagnostics": [],
+    "beforePageSplitNativeVerification": {
+      "status": "passed",
+      "passed": true,
+      "date": "2026-10-23",
+      "checks": 34179,
+      "fullSavedTreesPreserved": {
+        "source": {
+          "nodes": 4569,
+          "canonicalSHA256": "abb8570832a1ec691cd1bee1d3baa52a090c6b7d972543b8690c6e11227fb4c6",
+          "unchanged": true
+        },
+        "original": {
+          "nodes": 94,
+          "canonicalSHA256": "a8809f870572e88ba3b6c684dd2608c36749cf800344b5b0edf234f3e6868321",
+          "unchanged": true
+        },
+        "lab": {
+          "nodes": 104,
+          "canonicalSHA256": "bc5eb1467022467dcc059b60cacd92e391a6578703b84f809e87ef6982313183",
+          "unchanged": true
+        }
+      },
+      "codeInstances": 60,
+      "canvasMotionEnabled": 60,
+      "controlsAndGeometryPreserved": true,
+      "sourceHashes": {
+        "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+        "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+        "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+        "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+        "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
+      },
+      "diagnostics": [],
+      "scope": "Quality correction changes only the five component runtimes; complete Source, Original and Lab trees compared with fresh pre-correction native clipboard exports, excluding module source revision hints. No saved controls or geometry were changed."
+    },
+    "preservation": "All study IDs, internal geometry, controls, artwork and credits preserved. The subsequent four-page split intentionally changes container parents and positions, library category positions, Source outer height and navigation labels; its separate receipt verifies those changes.",
+    "actualFramerEditor": {
+      "reloadVerified": true,
+      "views": [
+        {
+          "label": "reloaded-gallery5",
+          "mountedDisplays": 40,
+          "visibleDisplays": 20,
+          "inadequateVisible": []
+        },
+        {
+          "label": "reloaded-normal13",
+          "mountedDisplays": 40,
+          "visibleDisplays": 18,
+          "inadequateVisible": []
+        },
+        {
+          "label": "reloaded-coronal40",
+          "mountedDisplays": 40,
+          "visibleDisplays": 4,
+          "inadequateVisible": []
+        }
+      ],
+      "browserWarningsAndErrors": [],
+      "qualitySource": "DOM data-study-frame/demand dimensions and screenshots; effective raster provenance independently checked in the local GPU harness."
+    },
+    "actualFramerPreview": {
+      "allFiveFamiliesRenderedAndMoving": true,
+      "motionMeasurements": [
+        {
+          "family": "creative",
+          "changedPixelsAbove8": 27019,
+          "sampledPixels": 314500,
+          "moving": true
+        },
+        {
+          "family": "material",
+          "changedPixelsAbove8": 274,
+          "sampledPixels": 314500,
+          "moving": true
+        },
+        {
+          "family": "point",
+          "changedPixelsAbove8": 36167,
+          "sampledPixels": 314500,
+          "moving": true
+        },
+        {
+          "family": "field",
+          "changedPixelsAbove8": 38973,
+          "sampledPixels": 314500,
+          "moving": true
+        },
+        {
+          "family": "interface",
+          "changedPixelsAbove8": 21596,
+          "sampledPixels": 314500,
+          "moving": true
+        }
+      ],
+      "browserWarningsAndErrors": []
+    },
+    "runtimeResourcePolicy": {
+      "version": 2,
+      "registryKey": "monarchic.gpu-budget.v2",
+      "scope": "one browser window/JavaScript realm",
+      "webglContexts": 2,
+      "editorLiveStudies": 1,
+      "previewLiveStudies": 2,
+      "canvasFPS": 12,
+      "canvasPixelBudget": 1000000,
+      "previewFPS": 30,
+      "previewPixelBudget": 1000000,
+      "generatedStillPixelBudget": 2000000,
+      "minimumRasterLongEdge": 384,
+      "rasterLongEdgeStep": 128,
+      "devicePixelRatioCap": 2,
+      "rasterDemand": "transformed screen size and DPR; shaders retain untransformed logical CSS dimensions",
+      "cacheEntries": 64,
+      "cachePixelBudget": 8000000,
+      "displayPixelBudget": 24000000,
+      "cacheAdequacy": "only sufficiently detailed matching logical-size/control/palette stills satisfy visible demand",
+      "overviewArtwork": "locally code-generated 2D frames; every mounted sized card receives an initial frame and visible cards refine without focus",
+      "retainedFrames": "visible frame quality, phase and pointer are retained on live-slot handoff; only offscreen buffers are reduced under display-memory pressure",
+      "exportAndThumbnail": "synchronous generated still at Still time, copied transactionally to 2D and temporary GPU renderer disposed",
+      "hiddenAndOffscreen": "GPU leases released; hidden pages own zero study WebGL contexts",
+      "failureRecovery": "measurement, palette, cache, renderer and copy failures are isolated; previous pixels survive failed resized copies and peers continue"
+    },
+    "regression": {
+      "passed": true,
+      "actualModules": 5,
+      "instances": 60,
+      "checks": [
+        {
+          "name": "spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards",
+          "pass": true
+        },
+        {
+          "name": "every visible card upgrades without focus across 5/13/40/100% zoom and DPR 1/1.5/2",
+          "pass": true,
+          "cases": 36
+        },
+        {
+          "name": "pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers",
+          "pass": true
+        },
+        {
+          "name": "twenty visible cards upgrade fairly during continuous hover and parameter churn",
+          "pass": true
+        },
+        {
+          "name": "live admission, pause and quality handoff retain phase, pointer and sharp backing",
+          "pass": true
+        },
+        {
+          "name": "changed-size copy failure restores old pixels/dimensions and retries without reporting upsampled quality",
+          "pass": true
+        },
+        {
+          "name": "measurement and color-normalization failures isolate one card, preserve queue progress, and retry",
+          "pass": true
+        },
+        {
+          "name": "live rendering and copy errors release contexts and recover independently",
+          "pass": true
+        },
+        {
+          "name": "hidden/reduced/offscreen release GPU slots and bound retained offscreen displays",
+          "pass": true
+        },
+        {
+          "name": "Preview and one-shot export/thumbnail share the same global context cap",
+          "pass": true
+        },
+        {
+          "name": "constructor first-draw and pre-display snapshot failures clean actual contexts and GPU handles",
+          "pass": true
+        },
+        {
+          "name": "all five static export hooks render once through StrictMode replay",
+          "pass": true
+        }
+      ],
+      "peakContexts": 2,
+      "peakPixels": 1998984,
+      "contextsCreated": 459,
+      "draws": 1024,
+      "copies": 1127,
+      "handledInjectedFailures": 5,
+      "sourceHashes": {
+        "CreativeCodingStudy.tsx": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+        "MaterialCodingStudy.tsx": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+        "PointCodingStudy.tsx": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+        "FieldCodingStudy.tsx": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+        "InterfaceCodingStudy.tsx": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38"
+      },
+      "scope": "Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.",
+      "command": "nix develop -c pnpm check:framer-studies",
+      "flakeCommand": "nix build .#checks.x86_64-linux.framer-studies --no-link",
+      "flakePassed": true
+    },
+    "browserGPU": {
+      "overview": {
+        "report": "gpu-overview-fresh.json",
+        "state": {
+          "target": "canvas",
+          "zoom": 0.05,
+          "dpr": 1,
+          "role": "main",
+          "row": 0,
+          "paused": true,
+          "reduced": false,
+          "hidden": false,
+          "epoch": 0,
+          "intensityDelta": 0,
+          "selected": "LC-01-main"
+        },
+        "sourceHashes": {
+          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
+          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
+          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
+          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
+          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
+        },
+        "instances": 60,
+        "visible": 44,
+        "visibleReady": 44,
+        "hydrated": 60,
+        "contexts": {
+          "created": 104,
+          "denied": 0,
+          "active": 0,
+          "peak": 1,
+          "peakPixels": 92160,
+          "activePixels": 0
+        },
+        "cachePixels": 5383680,
+        "displayPixels": 5383680,
+        "pending": 0,
+        "errors": [],
+        "freshReferenceComparisons": 44,
+        "freshReferencePasses": 44,
+        "maxHeartbeatGapMs": 811.9000000059605
+      },
+      "closeup": {
+        "report": "gpu-closeup-fresh.json",
+        "state": {
+          "target": "canvas",
+          "zoom": 0.4,
+          "dpr": 2,
+          "role": "main",
+          "row": 0,
+          "paused": true,
+          "reduced": false,
+          "hidden": false,
+          "epoch": 0,
+          "intensityDelta": 0,
+          "selected": "LC-01-main"
+        },
+        "sourceHashes": {
+          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
+          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
+          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
+          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
+          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
+        },
+        "instances": 60,
+        "visible": 2,
+        "visibleReady": 2,
+        "hydrated": 60,
+        "contexts": {
+          "created": 110,
+          "denied": 0,
+          "active": 0,
+          "peak": 1,
+          "peakPixels": 1998313,
+          "activePixels": 0
+        },
+        "cachePixels": 7941074,
+        "displayPixels": 9196754,
+        "pending": 0,
+        "errors": [],
+        "freshReferenceComparisons": 2,
+        "freshReferencePasses": 2,
+        "maxHeartbeatGapMs": 1886.5999999940395
+      },
+      "normalPan": {
+        "report": "gpu-normal-pan.json",
+        "state": {
+          "target": "canvas",
+          "zoom": 0.13,
+          "dpr": 1,
+          "role": "main",
+          "row": 1,
+          "paused": true,
+          "reduced": false,
+          "hidden": false,
+          "epoch": 0,
+          "intensityDelta": 0,
+          "selected": "LC-01-main"
+        },
+        "sourceHashes": {
+          "CreativeCodingStudy.tsx": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
+          "MaterialCodingStudy.tsx": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
+          "PointCodingStudy.tsx": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
+          "FieldCodingStudy.tsx": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
+          "InterfaceCodingStudy.tsx": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78"
+        },
+        "instances": 60,
+        "visible": 10,
+        "visibleReady": 10,
+        "hydrated": 60,
+        "contexts": {
+          "created": 113,
+          "denied": 0,
+          "active": 0,
+          "peak": 1,
+          "peakPixels": 1998313,
+          "activePixels": 0
+        },
+        "cachePixels": 7998674,
+        "displayPixels": 9687506,
+        "pending": 0,
+        "errors": [],
+        "freshReferenceComparisons": 0,
+        "freshReferencePasses": 0,
+        "maxHeartbeatGapMs": 1886.5999999940395
+      },
+      "sourceScope": "Fresh-reference comparison ran against the first reviewed quality hashes. A later one-line Mouse=false correction has its own exact inverse-hash proof and final unit checks; actual Framer reload, quality and five-family motion checks use the final accepted hashes.",
+      "finalPointerCorrection": [
+        {
+          "source": "docs/design-studies/code-components/CreativeCodingStudy.tsx",
+          "componentSource": "CreativeCodingStudy.tsx",
+          "sourceSHA256": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+          "sourceBytes": 60608,
+          "shaderLiteralsUnchanged": true,
+          "componentJSXAndPropertyControlsUnchanged": true,
+          "previousSourceSHA256": "c8608dd8fe684742893753c70a5d132ac41df90d37085ab8ff4d0b0cf1e646cb",
+          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
+        },
+        {
+          "source": "docs/design-studies/code-components/MaterialCodingStudy.tsx",
+          "componentSource": "MaterialCodingStudy.tsx",
+          "sourceSHA256": "e5cac92ce81119441c5930fe4ef0931c5bb3490f495a8bf855c9f27169ebd242",
+          "sourceBytes": 58274,
+          "shaderLiteralsUnchanged": true,
+          "componentJSXAndPropertyControlsUnchanged": true,
+          "previousSourceSHA256": "914e19bf85e50795da4a398f110f266c290d8a2f7f33816fb10044175a5236af",
+          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
+        },
+        {
+          "source": "docs/design-studies/code-components/PointCodingStudy.tsx",
+          "componentSource": "PointCodingStudy.tsx",
+          "sourceSHA256": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+          "sourceBytes": 52866,
+          "shaderLiteralsUnchanged": true,
+          "componentJSXAndPropertyControlsUnchanged": true,
+          "previousSourceSHA256": "d39a34a96addb9eda844c8dd4179df26733c82a2ee2338660b596706a53f0468",
+          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
+        },
+        {
+          "source": "docs/design-studies/code-components/FieldCodingStudy.tsx",
+          "componentSource": "FieldCodingStudy.tsx",
+          "sourceSHA256": "5dea0be8f0b472d53aa68f6af6b685abd2dd9a9e84330dfdc5c165d7d3805b24",
+          "sourceBytes": 54972,
+          "shaderLiteralsUnchanged": true,
+          "componentJSXAndPropertyControlsUnchanged": true,
+          "previousSourceSHA256": "60207ef0eb2d81f41c584af5bd1f4dacde79953a8d9b9f593e907a470d46d58e",
+          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
+        },
+        {
+          "source": "docs/design-studies/code-components/InterfaceCodingStudy.tsx",
+          "componentSource": "InterfaceCodingStudy.tsx",
+          "sourceSHA256": "e1b37c6ceef9c38445365c397ebdd66ad4e887abe755bbe747cdc1afff45ba38",
+          "sourceBytes": 58939,
+          "shaderLiteralsUnchanged": true,
+          "componentJSXAndPropertyControlsUnchanged": true,
+          "previousSourceSHA256": "1cfc449b8234b94075b9071092149ca835547c59c99fef1806c469bdaed9be78",
+          "correction": "wanted() uses a zero pointer when interactive is false; no other source changes"
+        }
+      ]
+    },
+    "pageSplitVerification": {
+      "status": "saved-four-design-pages-verified",
+      "projectId": "V4oBgJHPFpR16fflzUp7",
+      "pages": {
+        "references": {
+          "id": "uj_I7x6To",
+          "name": "01 / Reference library",
+          "root": "VvoNblwjH"
+        },
+        "recreations": {
+          "id": "a_19JJYFC",
+          "name": "02 / Recreations",
+          "root": "rHeXK4bVd"
+        },
+        "originals": {
+          "id": "sZvxQvQHd",
+          "name": "03 / Originals",
+          "roots": [
+            "rI0h8QiJa",
+            "hakGOoQNh"
+          ]
+        },
+        "live": {
+          "id": "bY_Q8AQKP",
+          "name": "04 / Live Creative Coding",
+          "root": "qPREnLG7B"
+        }
+      },
+      "counts": {
+        "beforeNodes": 6338,
+        "afterNodes": 6341,
+        "newPages": 3,
+        "missingNodes": 0,
+        "fieldDiffs": 8162,
+        "parentDiffs": 4,
+        "childOrderDiffs": 2,
+        "unexpected": 0,
+        "instanceCounts": {
+          "a_19JJYFC": 0,
+          "bY_Q8AQKP": 20,
+          "sZvxQvQHd": 0,
+          "uj_I7x6To": 20
+        },
+        "labInstances": 20,
+        "totalCodeInstances": 60,
+        "nativeStudies": 20,
+        "originalStudies": 18,
+        "referenceEntries": 77,
+        "liveStudies": 20,
+        "codeSources": 5
+      },
+      "library": {
+        "sourceRoot": "VvoNblwjH",
+        "width": "7240px",
+        "height": "6100px",
+        "left": "0px",
+        "top": "0px",
+        "guideNode": "AWzWzil6w",
+        "guide": "77 catalog links / 20 live source comparisons. Native recreations, Original compositions, and Live Creative Coding each have their own canvas. Open the draft Live lab Preview for motion.",
+        "positions": {
+          "ph87WeFXx": [
+            "70px",
+            "330px"
+          ],
+          "b_NY1rA4h": [
+            "70px",
+            "420px"
+          ],
+          "nT2NyurX6": [
+            "3670px",
+            "420px"
+          ],
+          "dKNi06fJs": [
+            "70px",
+            "3160px"
+          ],
+          "h3tmD0TRd": [
+            "3670px",
+            "4360px"
+          ]
+        }
+      },
+      "fullBefore": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/before-deep.json",
+        "rawSHA256": "6cc6c22fdf2438ad4e940725dfb4bfcbb4b7c3370cdcfb683f067649e8dc91fe"
+      },
+      "fullAfter": {
+        "format": "reconstructible from complete before+field/parent/child-order changes+newnodes",
+        "diffPath": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/split-diffs.json",
+        "canonicalSHA256": "2c3db09304daac2e202bedebeca6a4819441be11ddda4bb7423851e88f7514cd",
+        "flatSHA256": "3cb3c3ddd6615cbb7c971095fe1a92969dec3d4a9b99237d2d89533e252182c2"
+      },
+      "subtreeProof": [
+        {
+          "id": "rHeXK4bVd",
+          "beforeParent": "VvoNblwjH",
+          "afterParent": "a_19JJYFC",
+          "beforeLeft": "70px",
+          "beforeTop": "300px",
+          "afterLeft": "0px",
+          "afterTop": "0px",
+          "nodes": 4535,
+          "expectedStoredSHA256": "e74550fa7d0e9a9c667b5ff7395df2b730a0b859bb89696ab29f684aec9646a3",
+          "afterStoredSHA256": "e74550fa7d0e9a9c667b5ff7395df2b730a0b859bb89696ab29f684aec9646a3",
+          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
+        },
+        {
+          "id": "rI0h8QiJa",
+          "beforeParent": "uj_I7x6To",
+          "afterParent": "sZvxQvQHd",
+          "beforeLeft": "7801px",
+          "beforeTop": "0px",
+          "afterLeft": "0px",
+          "afterTop": "0px",
+          "nodes": 193,
+          "expectedStoredSHA256": "efbb71ff7a95e513d9f8553cd1be1faa5caa67c684123232d87cd969a5159aed",
+          "afterStoredSHA256": "efbb71ff7a95e513d9f8553cd1be1faa5caa67c684123232d87cd969a5159aed",
+          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
+        },
+        {
+          "id": "hakGOoQNh",
+          "beforeParent": "uj_I7x6To",
+          "afterParent": "sZvxQvQHd",
+          "beforeLeft": "7800px",
+          "beforeTop": "3300px",
+          "afterLeft": "0px",
+          "afterTop": "3700px",
+          "nodes": 10,
+          "expectedStoredSHA256": "f00421386957a0a4921a506d2c4cbaa7ae6dafecd96bf977a0e3f8e8f726ed46",
+          "afterStoredSHA256": "f00421386957a0a4921a506d2c4cbaa7ae6dafecd96bf977a0e3f8e8f726ed46",
+          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
+        },
+        {
+          "id": "qPREnLG7B",
+          "beforeParent": "VvoNblwjH",
+          "afterParent": "bY_Q8AQKP",
+          "beforeLeft": "70px",
+          "beforeTop": "13700px",
+          "afterLeft": "0px",
+          "afterTop": "0px",
+          "nodes": 227,
+          "expectedStoredSHA256": "1a3d00cb5c4014d5f92fffab6518388d43f323e182c82acf0b5eb41d5bc2f013",
+          "afterStoredSHA256": "1a3d00cb5c4014d5f92fffab6518388d43f323e182c82acf0b5eb41d5bc2f013",
+          "allStoredAttrsAndChildOrderPreservedExceptApprovedRootCoordinates": true
+        }
+      ],
+      "allowedParentChanges": [
+        [
+          "rI0h8QiJa",
+          "uj_I7x6To",
+          "sZvxQvQHd"
+        ],
+        [
+          "hakGOoQNh",
+          "uj_I7x6To",
+          "sZvxQvQHd"
+        ],
+        [
+          "rHeXK4bVd",
+          "VvoNblwjH",
+          "a_19JJYFC"
+        ],
+        [
+          "qPREnLG7B",
+          "VvoNblwjH",
+          "bY_Q8AQKP"
+        ]
+      ],
+      "allowedChildOrderChanges": [
+        [
+          "uj_I7x6To",
+          [
+            "rI0h8QiJa",
+            "hakGOoQNh",
+            "VvoNblwjH"
+          ],
+          [
+            "VvoNblwjH"
+          ]
+        ],
+        [
+          "VvoNblwjH",
+          [
+            "aEZSxSZla",
+            "AWzWzil6w",
+            "kzNa1NF6J",
+            "b_NY1rA4h",
+            "nT2NyurX6",
+            "h3tmD0TRd",
+            "rHeXK4bVd",
+            "ph87WeFXx",
+            "dKNi06fJs",
+            "qPREnLG7B"
+          ],
+          [
+            "aEZSxSZla",
+            "AWzWzil6w",
+            "kzNa1NF6J",
+            "b_NY1rA4h",
+            "nT2NyurX6",
+            "h3tmD0TRd",
+            "ph87WeFXx",
+            "dKNi06fJs"
+          ]
+        ]
+      ],
+      "fieldChangeCounts": {
+        "name": 2,
+        "$scopeId": 4121,
+        "left": 4,
+        "top": 8,
+        "height": 1,
+        "text": 2,
+        "$groundNodeId": 4024
+      },
+      "computedMetadata": "Transaction rectangles were cached; a fresh ten-root read verified current coordinates and page ownership. Rendered DOM bounds independently verify layout, including auto-height text. The recreation root constraintsLocked remains true in storage; the root clipboard copy normalizes it to false.",
+      "inMemoryUnexpectedChanges": [],
+      "independentModelAudit": "passed",
+      "savedEditorVerified": true,
+      "publishingPerformed": false,
+      "receipt": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/split-receipt.json",
+      "finalRootGeometry": {
+        "session": "IFmU1T",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/mcp/final-root-geometry.json",
+        "tenRootsVerified": true,
+        "checks": [
+          {
+            "id": "VvoNblwjH",
+            "passed": true
+          },
+          {
+            "id": "rHeXK4bVd",
+            "passed": true
+          },
+          {
+            "id": "rI0h8QiJa",
+            "passed": true
+          },
+          {
+            "id": "hakGOoQNh",
+            "passed": true
+          },
+          {
+            "id": "qPREnLG7B",
+            "passed": true
+          },
+          {
+            "id": "ph87WeFXx",
+            "passed": true
+          },
+          {
+            "id": "b_NY1rA4h",
+            "passed": true
+          },
+          {
+            "id": "nT2NyurX6",
+            "passed": true
+          },
+          {
+            "id": "dKNi06fJs",
+            "passed": true
+          },
+          {
+            "id": "h3tmD0TRd",
+            "passed": true
+          }
+        ],
+        "computedRectCacheResolved": true,
+        "nativeRootConstraintStoredValue": true,
+        "clipboardRootConstraintFalseIsNormalization": true,
+        "noMutationPerformed": true
+      },
+      "passed": true,
+      "editorReloadVerified": true,
+      "sourceHeight": 6100,
+      "studyControlsAndInternalGeometryPreserved": true,
+      "all60InstancesPreserved": true,
+      "designPages": {
+        "references": {
+          "id": "uj_I7x6To",
+          "name": "01 / Reference library",
+          "frames": [
+            "VvoNblwjH"
+          ]
+        },
+        "recreations": {
+          "id": "a_19JJYFC",
+          "name": "02 / Recreations",
+          "frames": [
+            "rHeXK4bVd"
+          ]
+        },
+        "originals": {
+          "id": "sZvxQvQHd",
+          "name": "03 / Originals",
+          "frames": [
+            "rI0h8QiJa",
+            "hakGOoQNh"
+          ]
+        },
+        "live": {
+          "id": "bY_Q8AQKP",
+          "name": "04 / Live Creative Coding",
+          "frames": [
+            "qPREnLG7B"
+          ]
+        }
+      },
+      "independentAudit": {
+        "passed": true,
+        "status": "passed",
+        "modelChecks": 26259,
+        "nativeChecks": 9909,
+        "freshRootGeometryChecks": 101,
+        "existingModelNodes": 6338,
+        "newModelNodes": 3,
+        "allCodeInstancesPreserved": 60,
+        "nativeDesignNodesCompared": 4665,
+        "nativeDesignCodeInstances": 40,
+        "assetsRetained": 67,
+        "storedAttributesAndStructurePassed": true,
+        "internalGeometryControlsCreditsAssetsPreserved": true,
+        "labFullTreeUnchanged": true,
+        "transactionCachedRectangles": 10,
+        "cachedRectanglesResolvedByFreshRead": true,
+        "clipboardRootConstraintNormalized": true,
+        "proofArtifacts": {
+          "model": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/compact-model-verification.json",
+          "native": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/native-model-verification.json",
+          "geometry": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split/fresh-root-geometry-verification.json"
+        },
+        "scope": "Independent saved native contents, complete MCP model diff/hash replay and separate fresh MCP root geometry. Operator reload/navigation/render/motion evidence remains separate."
+      },
+      "actualEditorEvidence": "page-operator.json",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery/split"
+    },
+    "actualPageReloadVerification": {
+      "passed": true,
+      "editorReloadVerified": true,
+      "allFourDesignPagesOpened": true,
+      "views": [
+        {
+          "role": "reference",
+          "mountedCodeDisplays": 20,
+          "visible": 20,
+          "inadequateVisible": [],
+          "screenshot": "page-reference.jpg"
+        },
+        {
+          "role": "recreations",
+          "mountedCodeDisplays": 0,
+          "visible": 0,
+          "inadequateVisible": [],
+          "screenshot": "page-recreations.jpg"
+        },
+        {
+          "role": "originals",
+          "mountedCodeDisplays": 0,
+          "visible": 0,
+          "inadequateVisible": [],
+          "screenshot": "page-originals.jpg"
+        },
+        {
+          "role": "live",
+          "mountedCodeDisplays": 20,
+          "visible": 20,
+          "inadequateVisible": [],
+          "screenshot": "page-live.jpg"
+        }
+      ],
+      "normalZoomPercent": 13,
+      "normalZoomVisible": 12,
+      "normalZoomInadequateVisible": [],
+      "geometry": {
+        "passed": true,
+        "sourceHeight": 6100,
+        "libraryCategoryPositionsVerified": true,
+        "originalPlaygroundTop": 3700,
+        "freshDOMReports": [
+          "geometry-reference.json",
+          "geometry-recreations.json",
+          "geometry-originals.json",
+          "geometry-live.json"
+        ],
+        "scope": "Actual DOM transformed bounds, sidebar dimensions, saved native captures, fresh focused MCP root geometry and screenshots agree. Auto-height label geometry uses rendered DOM bounds."
+      },
+      "finalScreenshot": "final-pages.jpg",
+      "observedBrowserWarningsAndErrors": [],
+      "noFailedCanvasOrGraphicsFallbackObserved": true
+    },
+    "sourceAlgorithmsVerified": false,
+    "exportedFramerImageManuallyInspected": false,
+    "published": false,
+    "productionSiteIntegrated": false,
+    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/framer-quality-recovery",
+    "proofScope": "34,179 native assertions verify the runtime quality correction before restructuring. Current four-page structure and all retained study contents are verified separately by pageSplitVerification and actualPageReloadVerification. No production integration or publication."
   }
 }

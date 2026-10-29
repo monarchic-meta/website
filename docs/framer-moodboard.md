@@ -89,6 +89,38 @@ canopy, RE-19's technical keycaps and connections, and RE-20's cyan/magenta
 Coronal bands. All four retain source credits and static limitations. A
 still-frame approximation is not a working shader or animation.
 
+## Source comparison refinements — 2026-10-29
+
+The review compared all 20 native studies and the live collection with original
+images and sampled video frames. Eleven native studies warranted changes:
+RE-02, 03, 05, 07, 08, 13, 14, 15, 18, 19 and 20. The revisions address source
+composition, connected geometry, texture density, wording and interface detail.
+The remaining nine retain their documented cropping, font and material
+simplifications; RE-16's original poster confirms its fifteen-circle S.
+
+Ten live studies also received refinements: LC-03, 08, 09 and 12–18. These
+restore thicker plasma, reflective material, distinct folded and feather meshes,
+petal-like radial chambers, branching icy flow, fractured red relief, varied
+glyphs, a compact butterfly and refracted glass-cube volume. Their source keys
+and credits remain in Source inspiration. These are closer visual adaptations,
+with independently authored geometry and motion; exact source algorithms and
+complete source-clip motion remain unverified.
+
+Saved-state verification used separate fresh-main reads and actual editor
+reloads. All eleven native hierarchies and their layer order matched the recipes;
+the updated notes fit their cards. The five code files matched exact source
+hashes with empty diagnostics. The live and reference pages each rendered all
+20 studies after reload, and all ten refined live studies moved in actual
+Preview. Editor-canvas motion and Preview pause/resume were checked separately.
+The existing resource checks still pass for all 60 placements. All four Design
+pages, 77 source records, 18 originals, credits and placement controls remain.
+
+The [native manifest](design-studies/recreations/manifest.json) and
+[live manifest](design-studies/code-components/manifest.json) record the
+individual changes, intentional differences and saved-state evidence. Framer
+remains a manual prototyping handoff; these studies do not change the implemented
+website or introduce synchronization.
+
 ## Live Creative Coding studies
 
 The [Live Creative Coding area](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qPREnLG7B)

@@ -26,20 +26,64 @@ or reproduced. Existing native RE studies remain available separately.
 | LC-05 / Capsule depth | [CC-004 / @kellymilligannz](https://x.com/kellymilligannz/status/2095011696180171077) | Layered dark capsules, moving overlap and adjustable soft focus | Analytic capsule layers and a soft-focus approximation; no physical depth-of-field or source physics simulation |
 | LC-06 / Glass refraction | [CC-008 / @AlbiaHossain](https://x.com/AlbiaHossain/status/2093330866143662498) | Moving glass panels visibly refract a locally generated interface texture | Original Canvas 2D UI artwork resampled by the shader; no screenshot, DOM capture or source-site asset |
 | LC-07 / Triangle lattice | [CC-013 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098603831944945735) | Rotating recursive angular geometry with open triangular holes | Independent five-level nearest-vertex iterated construction with angular leaves; source formula and exact geometry are not adopted |
-| LC-08 / Spectral grain | [CC-016 / @Jaenam97](https://x.com/Jaenam97/status/2098418240900804947) | Reflective-looking torus, spectral rim, moving highlights and surface grain | Ray-marched torus with an approximate environment and spectral material; not a path tracer or physical spectral simulation |
-
-| LC-09 / Folded white point mesh | [CC-007 / @yuruyurau](https://x.com/yuruyurau/status/2093711731084415124) | GPU point sheet with a pinched fold, opening wings and local ripples | Independent parametric sheet; source formula and complete timing are not reproduced |
+| LC-08 / Spectral grain | [CC-016 / @Jaenam97](https://x.com/Jaenam97/status/2098418240900804947) | Reflective-looking torus, broad environment reflections, spectral rim and surface grain | Ray-marched torus with an approximate environment and spectral material; not a path tracer or physical spectral simulation |
+| LC-09 / Folded white point mesh | [CC-007 / @yuruyurau](https://x.com/yuruyurau/status/2093711731084415124) | Separate upper fan and hanging curl with branching folded point surfaces | Independent parametric patches; source formula and complete timing are not reproduced |
 | LC-10 / Curling point gesture | [CC-014 / @yuruyurau](https://x.com/yuruyurau/status/2098075684593893667) | Tapering curled point body with fine upper contour trails | Source-led cropped gesture; independent geometry, contour family and motion |
 | LC-11 / Connected mesh loops | [CC-015 / @yuruyurau](https://x.com/yuruyurau/status/2098070701597192431) | Connected figure-eight point surface, breathing loops and traveling deformation | Original continuous loop surface; exact source topology and motion are unverified |
-| LC-12 / Curved mesh feather | [CC-020 / @yuruyurau](https://x.com/yuruyurau/status/2100230050063024467) | Arcing point fan, folded feather-like silhouette and bending side filaments | Independent spine, fan and filaments; source formula and motion are not reproduced |
-| LC-13 / Electric radial / icy filaments | [CC-006 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2106013834540732704) | Dense icy polar ridges and moving electric filaments | Independent warped polar field; source shader and light model are not adopted |
-| LC-14 / Icy ridge / layered flow | [CC-017 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098403689421570237) | Diagonal luminous edge and stacked blue ridges with dark negative space | Independent advecting ridge field; source geometry and timing are approximated |
-| LC-15 / Warm corridor / recursive relief | [CC-018 / @XorDev](https://x.com/XorDev/status/2099543044945023343) | Forward-moving square corridor with warm ribs and fractured relief | Repeated distance-field ribs and bounded relief; no claim of source fractal or physical lighting |
-| LC-16 / Glyph trails / luminous gestures | [CC-019 / @tsumiki_room](https://x.com/tsumiki_room/status/2099891155282612462) | Original luminous gestures with drifting poses and three temporal echoes | Independent abstract paths; no source glyphs or TouchDesigner project |
-| LC-17 / Temporal glyph / afterimages | [CC-002 / @threejs](https://x.com/threejs/status/2093387984741761280) | Original bilateral wing glyph, nested frames and temporal afterimages | Independent wing geometry and echo algorithm; CC-002 also credits [afterimage](https://x.com/i/status/2093373917218103449) |
-| LC-18 / Glass pixel glyphs / nine modules | [CC-009 / @dnatsuuu](https://x.com/dnatsuuu/status/2093175907867656302) | Nine original pixel glyphs inside moving glass-like tiles | Local original glyph texture and illustrative refraction; no physical glass-cube simulation |
+| LC-12 / Curved mesh feather | [CC-020 / @yuruyurau](https://x.com/yuruyurau/status/2100230050063024467) | Continuous C-curved point ribbon with smaller lateral barbs and fine trails | Independent spine, ribbon and filaments; source formula and motion are not reproduced |
+| LC-13 / Electric radial / icy filaments | [CC-006 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2106013834540732704) | Pointed petal chambers with nested contours in overlapping radial tiers | Independent polar chamber geometry; source shader and light model are not adopted |
+| LC-14 / Icy ridge / layered flow | [CC-017 / @YoheiNishitsuji](https://x.com/YoheiNishitsuji/status/2098403689421570237) | Broad icy band with crossing tributaries, irregular folds and branching relief | Independent advecting ridge field; source geometry and timing are approximated |
+| LC-15 / Warm corridor / recursive relief | [CC-018 / @XorDev](https://x.com/XorDev/status/2099543044945023343) | Forward-moving chipped wall relief, red surfaces and selective yellow-white fractures | Independently composed distance-field chunks and emission; no claim of source fractal or physical lighting |
+| LC-16 / Glyph trails / luminous gestures | [CC-019 / @tsumiki_room](https://x.com/tsumiki_room/status/2099891155282612462) | Eight luminous gesture families, drifting poses and three temporal echoes | Independent abstract paths; no source glyphs or TouchDesigner project |
+| LC-17 / Temporal glyph / afterimages | [CC-002 / @threejs](https://x.com/threejs/status/2093387984741761280) | Compact filled bilateral wing glyph, nested frames and temporal afterimages | Independent wing geometry and echo algorithm; CC-002 also credits [afterimage](https://x.com/i/status/2093373917218103449) |
+| LC-18 / Glass pixel glyphs / nine modules | [CC-009 / @dnatsuuu](https://x.com/dnatsuuu/status/2093175907867656302) | Nine near-cubic glass modules with layered refracted pixel imagery and internal reflections | Locally generated pixel-cat motifs and an approximate glass/environment model; no source pixels or exact physical simulation |
 | LC-19 / Chromatic loops / granular surface | [CC-011 / @zozuar](https://x.com/zozuar/status/2094068054590190033) | Three rotating chromatic loops with granular surface shading | Independent toroidal arrangement and motion; source formula and exact topology are not adopted |
 | LC-20 / Technical keycaps / signal paths | [CC-012 / @icanvardar](https://x.com/icanvardar/status/2094171308795826332) | Original keycaps, terminal and connector atlas with traveling signals | Generated original UI texture and decorative signals; no working authentication or copied interface |
+
+## Sampled-frame fidelity refinements — 2026-10-29
+
+Ten local studies were refined by comparing generated artwork with archived
+sampled source stills:
+
+- LC-03: thicker white-hot Coronal folds, asymmetric plumes and continuous color.
+- LC-08: broader reflections across the metal body.
+- LC-09: two distinct branching folded mesh patches.
+- LC-12: a continuous curved feather body with subordinate barbs.
+- LC-13: pointed petal chambers and closed nested contours.
+- LC-14: irregular icy folds and crossing tributaries.
+- LC-15: chipped relief, red surfaces and selective hot fractures.
+- LC-16: a wider vocabulary of luminous marks.
+- LC-17: a smaller filled wing silhouette with rounded chambers and shorter tips.
+- LC-18: deeper glass volumes, internal pixel imagery and tighter spacing.
+
+The manifest records each change with its existing source key. These are visual
+refinements from sampled stills, including partially cropped feed frames for
+LC-08, LC-14 and LC-15. They do not establish exact source algorithms, complete
+clip coverage or matching motion. The local pixel-cat artwork in LC-18 is an
+authored approximation of the source's imagery class.
+
+The shared renderer, resource budgets, public controls, defaults and source
+credits are unchanged; the additional local texture edit is confined to the
+glass pixel atlas. The twelve resource-check groups, TypeScript semantic checks
+and offline GLSL validation pass.
+
+The five existing Framer files accepted byte-exact source readback with unchanged
+exports and no code diagnostics. All sixty saved code-instance controls and
+geometry were preserved. After reload, Live Creative Coding and the Reference
+library each showed twenty ready generated artworks with a 384px minimum long
+edge; visible cards also refined automatically at 13% zoom. Representative
+LC-09 editor-canvas motion retained an 896 × 559 generated frame across
+873 × 546 CSS pixels.
+
+Aligned actual Preview frames showed motion in all ten refined modes. LC-09
+paused with no changed artwork pixels and resumed moving. The local GPU harness
+also rendered all twenty modes at phases 0, 8 and 16 without errors. The manifest
+keeps this live-only saved verification separate from the prior quality/page-split
+proof and the native recreation revisions. Evidence is retained in this task's
+`recreation-refinement-2026-10-29/live` and `live-validation` artifacts. Complete
+source-clip fidelity and source algorithms remain unverified; no actual
+Framer-exported image was inspected, and nothing was published or integrated into
+the production site.
 
 ## Controls
 
