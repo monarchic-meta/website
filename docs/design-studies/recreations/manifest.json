@@ -832,9 +832,9 @@
     "height": 1000,
     "background": "#f2f2f0",
     "simplifications": [
-      "Recreates the source light placement grid, narrow hatched separator bands, registration crosses, generous type inset, and paired CTA blocks.",
+      "Recreates the observed source headline and supporting copy, light placement grid, narrow hatched separator bands, registration crosses, dotted side field, circular arrow, and paired CTA blocks.",
       "The lower photographic and application material is reduced to neutral placement rectangles.",
-      "The source wording is retained only within the recreation; no new product claims are introduced."
+      "The source wording is retained only within the recreation; no new product claims are introduced. Available typefaces and the landscape crop remain approximations."
     ],
     "framerSourceSection": "rHeXK4bVd",
     "framerRecreationsArea": "rHeXK4bVd",
@@ -856,17 +856,41 @@
         "id": "b6a_aF3V4"
       },
       {
+        "name": "Source right-side dotted field",
+        "id": "an1lBFBrx"
+      },
+      {
+        "name": "Source circular forward arrow",
+        "id": "JoDOZe86V"
+      },
+      {
         "name": "Lower source media placement only",
         "id": "NyGQpbDlW"
       }
     ],
-    "recipeFrames": 173,
-    "nativeFrames": 174,
+    "recipeFrames": 305,
+    "nativeFrames": 306,
     "nativeText": 7,
     "importedSVGs": 0,
     "rasterFills": 0,
     "framerPlacementStatus": "saved and editor-reload verified",
-    "framerDesignPage": "a_19JJYFC"
+    "framerDesignPage": "a_19JJYFC",
+    "framerVerifiedDate": "2026-10-29",
+    "fidelityRefinement": {
+      "date": "2026-10-29",
+      "sourceKey": "WEB-004",
+      "change": "Restored complete observed headline/supporting copy, navigation, dotted side field and circular arrow. Lower photography/application content remains neutralized.",
+      "evidenceScope": "Visual comparison with sampled source poster/still captures; source custom fonts, fine textures, full clips and exact source algorithms remain outside this verification.",
+      "status": "Saved native layers, exact hierarchy/order and metadata verified from a fresh main read; editor reload and visual comparison verified.",
+      "framerVerifiedDate": "2026-10-29",
+      "cardArtworkAndCreditIdentitiesRetained": true,
+      "nativeLayerHierarchyVerified": true,
+      "editorReloadVerified": true,
+      "visualReviewVerified": true,
+      "sourceRecipeSHA256": "11efba469e702374d375182bd78e39d48bbcb6119b95652f81c3b4dda994e989",
+      "compiledPayloadSHA256": "68cc14355e945490f23fca2660ae584cdcbf098c57a0cba0ddaf69a72b45f175",
+      "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/recreation-refinement-2026-10-29"
+    }
   },
   {
     "id": "RE-14",
