@@ -81,41 +81,44 @@ float box(vec2 p,vec2 b,float r){vec2 q=abs(p)-b;return length(max(q,0.0))+min(m
 float segment(vec2 p,vec2 a,vec2 b){vec2 q=p-a,v=b-a;return length(q-v*clamp(dot(q,v)/dot(v,v),0.0,1.0));}
 float wing(vec2 p,vec2 c,vec2 size,float angle){p=rot(angle)*(p-c);return (length(p/size)-1.0)*min(size.x,size.y);}
 float glyph(vec2 p,float t){
-    float flap=.65+.28*sin(t*1.15);p.x=abs(p.x)/flap;
+    float flap=.83+.20*sin(t*1.15);p.x=abs(p.x)/flap;
     // Rounded upper chambers sweep toward short tapered tips; small lower
     // lobes and a narrow central gap keep the compact butterfly-like silhouette.
-    vec2 a=vec2(.009,.006),b=vec2(.204,.132),c=vec2(.105,-.035);
+    vec2 a=vec2(.009,.006),b=vec2(.300,.112),c=vec2(.120,-.018);
     vec2 ab=b-a,bc=c-b,ca=a-c,ap=p-a,bp=p-b,cp=p-c;
     float h1=(ab.x*ap.y-ab.y*ap.x)/length(ab);
     float h2=(bc.x*bp.y-bc.y*bp.x)/length(bc);
     float h3=(ca.x*cp.y-ca.y*cp.x)/length(ca);
     float tip=max(h1,max(h2,h3))-.004;
-    float lobe=wing(p,vec2(.098,.058),vec2(.103,.055),.38);
+    float lobe=wing(p,vec2(.135,.059),vec2(.153,.052),.19);
     float blend=clamp(.5+.5*(lobe-tip)/.018,0.0,1.0);
     float upper=mix(lobe,tip,blend)-.018*blend*(1.0-blend);
     upper=max(upper,.004-p.x);
-    float lower=wing(p,vec2(.073,-.052),vec2(.065,.083),.24);
+    float lower=wing(p,vec2(.064,-.038),vec2(.050,.060),.18);
     return min(upper,lower);
 }
 
 vec3 afterimage(vec2 p){
-    vec3 color=u_ink;float echoSpacing=.035+.07*u_focus;
+    vec3 color=u_ink;float echoSpacing=.032+.065*u_focus;
     for(int i=11;i>=0;i--){
-        float k=float(i),phase=u_time-k*(.10+.30*u_focus);
-        vec2 q=p/(.70*(1.0+k*echoSpacing));
-        q-=vec2(.014*sin(phase*.8)+u_mouse.x*.08,.008*cos(phase*.6)+u_mouse.y*.06);
+        float k=float(i),phase=u_time-k*(.11+.30*u_focus);
+        vec2 q=p/(.74*(1.0+k*echoSpacing));
+        q-=vec2(.012*sin(phase*.8)+u_mouse.x*.08,.007*cos(phase*.6)+u_mouse.y*.06);
         float d=glyph(q,phase),body=1.0-smoothstep(-.002,.005,d);
-        float edge=exp(-abs(d)*160.0),attenuation=exp(-k*.48);
-        vec3 pale=mix(u_primary,u_secondary,.5+.5*sin(phase*.5+k*.2));
-        // The foreground is a filled luminous silhouette; older outlines stay
-        // subordinate so the central mark does not become a stack of wire loops.
+        float edge=exp(-abs(d)*137.0),attenuation=exp(-k*.43);
+        vec3 warm=mix(u_primary,vec3(1.0,.82,.37),.22);
+        vec3 pale=mix(warm,vec3(1.0,.995,.94),smoothstep(.018,.15,abs(q.x))*.82);
+        pale=mix(pale,u_secondary,.07*(.5+.5*sin(phase*.5+k*.2)));
         float foreground=1.0-step(.5,k);
-        color+=pale*(body*(.055+foreground*.82)+edge*.16)*attenuation*u_intensity;
-        vec2 frame=p/(1.0+k*(.055+.07*u_focus));
-        float rect=abs(box(frame,vec2(.305,.255),0.0));
-        color+=vec3(.20,.22,.26)*exp(-rect*115.0)*attenuation*.30;
+        float haze=exp(-max(d,0.0)*65.0);
+        color+=pale*(body*(.033+foreground*.67)+edge*.19+haze*.055)*attenuation*u_intensity;
+        vec2 frame=p/(1.0+k*(.047+.065*u_focus));
+        float rect=abs(box(frame,vec2(.302,.253),0.0));
+        color+=vec3(.20,.21,.23)*exp(-rect*55.0)*attenuation*.52;
+        float innerField=1.0-smoothstep(-.035,.020,box(frame,vec2(.302,.253),0.0));
+        color+=vec3(.014,.015,.018)*innerField*attenuation;
     }
-    color+=u_primary*exp(-length(p)*17.0)*.24*u_intensity;
+    color+=u_primary*exp(-length(p)*14.0)*.15*u_intensity;
     vec2 strip=vec2(p.x/1.6+.5,(p.y+.41)/.10);
     if(all(greaterThan(strip,vec2(0)))&&all(lessThan(strip,vec2(1)))){
         vec3 labels=texture2D(u_panel,vec2(strip.x,.25+.125*strip.y)).rgb;
@@ -125,8 +128,8 @@ vec3 afterimage(vec2 p){
 }
 
 vec3 glassSpace(vec3 p,float id){
-    float yaw=.37+.095*sin(id*1.73)+.025*sin(u_time*.28+id*.3)+u_mouse.x*.10;
-    float pitch=-.23+.045*cos(id*1.37)+.02*cos(u_time*.23+id*.7);
+    float yaw=.16+.055*sin(id*1.73)+.020*sin(u_time*.28+id*.3)+u_mouse.x*.08;
+    float pitch=-.12+.028*cos(id*1.37)+.015*cos(u_time*.23+id*.7);
     p.xz=rot(yaw)*p.xz;p.yz=rot(pitch)*p.yz;
     return p;
 }
@@ -144,7 +147,7 @@ vec3 glyphGrid(vec2 p){
     bg=mix(bg,vec3(1),.60);
     vec2 gridLine=abs(fract((p+vec2(.013,.025))*9.0)-.5);
     bg+=vec3(.025)*exp(-min(gridLine.x,gridLine.y)*180.0);
-    p=rot(.02*sin(u_time*.35)+u_mouse.x*.05)*p;p.x+=.025*p.y;
+    p=rot(.045+.014*sin(u_time*.35)+u_mouse.x*.035)*p;p.x+=.018*p.y;
     vec2 grid=p/.228+1.5,cell=floor(grid),q=(fract(grid)-.5)*.228;
     if(any(lessThan(cell,vec2(0)))||any(greaterThan(cell,vec2(2))))return bg;
     float id=cell.x+cell.y*3.0;q.y-=.003*sin(u_time*.65+id*.7);
@@ -155,7 +158,8 @@ vec3 glyphGrid(vec2 p){
         if(d<.002){hit=true;break;}
         travel+=max(d*.80,.001);if(travel>4.2)break;
     }
-    float shadow=exp(-max(box(q-vec2(.009,-.014),vec2(.095),.014),0.0)*105.0)*.18;
+    vec2 shadowPoint=(q-vec2(.012,-.019))/vec2(.096,.087);
+    float shadow=exp(-dot(shadowPoint,shadowPoint)*2.0)*.105;
     if(!hit)return bg*(1.0-shadow);
     vec2 e=vec2(.002,0);
     vec3 n=normalize(vec3(glassDistance(hitPoint+e.xyy,id)-glassDistance(hitPoint-e.xyy,id),glassDistance(hitPoint+e.yxy,id)-glassDistance(hitPoint-e.yxy,id),glassDistance(hitPoint+e.yyx,id)-glassDistance(hitPoint-e.yyx,id)));
@@ -165,87 +169,117 @@ vec3 glyphGrid(vec2 p){
     vec3 exits=(sign(inside)*bounds-local)/safeDirection;
     float depth=max(.02,min(exits.x,min(exits.y,exits.z)));
     vec3 back=local+inside*depth,middle=local+inside*depth*.52;
-    vec2 backUV=back.xy/1.72+.5,middleUV=middle.xy/1.72+.5;
-    vec3 image=texture2D(u_panel,glassAtlas(backUV,cell)).rgb;
-    vec3 inner=texture2D(u_panel,glassAtlas(middleUV+vec2(.04,-.025)*u_refraction,cell)).rgb;
-    vec3 reflectedImage=texture2D(u_panel,glassAtlas(vec2(1.0-backUV.x,backUV.y)+vec2(.05,.02),cell)).rgb;
-    float red=texture2D(u_panel,glassAtlas(backUV+vec2(.018,0)*u_refraction,cell)).r;
-    float blue=texture2D(u_panel,glassAtlas(backUV-vec2(.018,0)*u_refraction,cell)).b;
-    // Several image planes and a mirrored echo sit inside the volume. They are
-    // locally painted pixel graphics, not downloaded source images or flat icons.
-    vec3 transmitted=mix(image,inner,.19);
-    transmitted=mix(transmitted,reflectedImage,.12*(1.0-abs(n.z)));
-    transmitted.r=mix(transmitted.r,red,.38);transmitted.b=mix(transmitted.b,blue,.38);
-    vec3 absorption=exp(-depth*vec3(.14,.095,.06));
-    transmitted*=absorption;
+    vec2 frontUV=local.xy/1.72+.5;
+    vec2 backUV=mix(back.xy/1.72+.5,frontUV,.34),middleUV=mix(middle.xy/1.72+.5,frontUV,.20);
+    vec4 image=texture2D(u_panel,glassAtlas(backUV,cell));
+    vec4 inner=texture2D(u_panel,glassAtlas(middleUV+vec2(.022,-.016)*u_refraction,cell));
+    vec4 reflectedImage=texture2D(u_panel,glassAtlas(vec2(1.0-backUV.x,backUV.y)+vec2(.05,.02),cell));
+    float red=texture2D(u_panel,glassAtlas(backUV+vec2(.010,0)*u_refraction,cell)).r;
+    float blue=texture2D(u_panel,glassAtlas(backUV-vec2(.010,0)*u_refraction,cell)).b;
+    // Clear space inside the atlas transmits the pale background. Independently
+    // offset front/rear image planes remain visible through the glass volume.
+    vec3 transmitted=mix(bg,image.rgb,image.a*.78);
+    transmitted=mix(transmitted,inner.rgb,inner.a*.23);
+    transmitted=mix(transmitted,reflectedImage.rgb,reflectedImage.a*.12*(1.0-abs(n.z)));
+    transmitted.r=mix(transmitted.r,red,image.a*.14);transmitted.b=mix(transmitted.b,blue,image.a*.14);
+    transmitted*=exp(-depth*vec3(.018,.012,.007));
     vec3 reflection=reflect(rd,n),localNormal=glassSpace(n,id);
     float facing=max(dot(n,-rd),0.0),side=1.0-abs(localNormal.z);
-    float fresnel=.13+.73*pow(1.0-facing,2.1);
+    float fresnel=.035+.72*pow(1.0-facing,2.1);
     float band=smoothstep(-.45,-.20,reflection.y)*(1.0-smoothstep(.04,.30,reflection.y));
     float topLight=exp(-pow(reflection.y-.67,2.0)*22.0);
     float upright=exp(-pow(reflection.x+.43,2.0)*42.0);
-    vec3 environment=mix(vec3(.52,.60,.65),vec3(.018,.034,.052),band*.91);
-    environment+=vec3(.58,.65,.70)*topLight+vec3(.32,.40,.48)*upright;
-    vec3 through=mix(bg,transmitted,.88);
-    through*=1.0-side*.30;
-    vec3 glass=mix(through,environment,fresnel+side*.16);
+    vec3 environment=mix(vec3(.72,.76,.77),vec3(.035,.047,.058),band*.83);
+    environment+=vec3(.62,.67,.70)*topLight+vec3(.35,.42,.48)*upright;
+    vec3 glass=mix(transmitted,environment,fresnel+side*.07);
     float spec=pow(max(dot(reflection,normalize(vec3(-.55,.8,1))),0.0),35.0);
-    // Thin front/back rims reveal the refractive depth and the rounded corners.
-    float rearEdge=exp(-abs(abs(back.x)-.82)*78.0)+exp(-abs(abs(back.y)-.82)*78.0);
-    glass+=vec3(.30,.36,.43)*min(rearEdge,.9)*.20;
-    glass+=vec3(spec*.60)+vec3(.055,.015,-.018)*(1.0-facing)*u_refraction;
+    float frontRim=exp(-pow((max(abs(frontUV.x-.5),abs(frontUV.y-.5))-.435)/.009,2.0));
+    float backRim=exp(-abs(abs(back.x)-.82)*90.0)+exp(-abs(abs(back.y)-.82)*90.0);
+    glass+=vec3(.66,.73,.77)*frontRim*(.24+.30*max(localNormal.y,0.0));
+    glass+=vec3(.36,.42,.46)*min(backRim,.9)*.22;
+    glass+=vec3(spec*.46)+vec3(.11,.046,.013)*(1.0-facing)*u_refraction;
     return clamp(glass*u_intensity,0.0,1.0);
 }
-float torus(vec3 p,vec2 r){return length(vec2(length(p.xy)-r.x,p.z))-r.y;}
 vec2 loopsMap(vec3 p){
-    vec3 a=p-vec3(-.22,.08,0);a.yz=rot(.45+.18*sin(u_time*.4))*a.yz;a.xz=rot(-.25)*a.xz;
-    vec3 b=p-vec3(.21,-.02,.09);b.yz=rot(1.00+.22*cos(u_time*.35))*b.yz;b.xz=rot(.70)*b.xz;
-    vec3 c=p-vec3(.24,-.19,-.04);c.xz=rot(.72+.15*sin(u_time*.5))*c.xz;
-    vec2 res=vec2(torus(a,vec2(.30,.073)),0.0);
-    float db=torus(b,vec2(.29,.083)),dc=torus(c,vec2(.19,.068));
-    if(db<res.x)res=vec2(db,1);if(dc<res.x)res=vec2(dc,2);return res;
+    p.yz=rot(.64+.14*sin(u_time*.23))*p.yz;
+    p.xz=rot(.34+.16*cos(u_time*.19))*p.xz;
+    p.xy=rot(-.18+u_time*.08)*p.xy;
+    float angle=atan(p.y,p.x),best=10.0,path=0.0;
+    // Two azimuthal branches describe one over-under tubular knot, rather than
+    // three disconnected circular tori. The changing cross-section stays smooth.
+    for(int i=0;i<2;i++){
+        float t=angle*.5+float(i)*PI;
+        float radius=.275+.125*cos(t*3.0);
+        vec3 center=vec3(radius*cos(t*2.0),radius*sin(t*2.0),.135*sin(t*3.0));
+        float thickness=.069+.022*(.5+.5*sin(t*2.0-u_time*.37));
+        float d=(length(p-center)-thickness)*.62;
+        if(d<best){best=d;path=t;}
+    }
+    return vec2(best,path);
+}
+vec3 loopPalette(float t){
+    float cycle=fract(t/(2.0*PI)+u_time*.018)*3.0;
+    vec3 third=vec3(.29,.65,.98);
+    if(cycle<1.0)return mix(u_primary,u_secondary,smoothstep(0.0,1.0,cycle));
+    if(cycle<2.0)return mix(u_secondary,third,smoothstep(0.0,1.0,cycle-1.0));
+    return mix(third,u_primary,smoothstep(0.0,1.0,cycle-2.0));
 }
 vec3 colorfulLoops(vec2 p){
-    vec3 ro=vec3(u_mouse.x*.4,u_mouse.y*.25,2.6),rd=normalize(vec3(p*2.0,-2.6));
-    float travel=.9;vec2 hit=vec2(0);bool found=false;
-    for(int i=0;i<58;i++){hit=loopsMap(ro+rd*travel);if(hit.x<.002){found=true;break;}travel+=max(.004,hit.x*.73);if(travel>4.0)break;}
+    vec3 ro=vec3(u_mouse.x*.4,u_mouse.y*.25,2.6),rd=normalize(vec3(p*1.65,-2.6));
+    float travel=1.5;vec2 hit=vec2(0);bool found=false;
+    for(int i=0;i<64;i++){hit=loopsMap(ro+rd*travel);if(hit.x<.0018){found=true;break;}travel+=max(.002,hit.x*.86);if(travel>3.7)break;}
     if(!found)return u_ink;
-    vec3 q=ro+rd*travel;float e=.0025;
+    vec3 q=ro+rd*travel;float e=.0023;
     vec3 n=normalize(vec3(loopsMap(q+vec3(e,0,0)).x-loopsMap(q-vec3(e,0,0)).x,loopsMap(q+vec3(0,e,0)).x-loopsMap(q-vec3(0,e,0)).x,loopsMap(q+vec3(0,0,e)).x-loopsMap(q-vec3(0,0,e)).x));
-    vec3 material=hit.y<.5?u_primary:hit.y<1.5?u_secondary:vec3(.31,.68,.97);
-    float diffuse=.28+.72*max(0.0,dot(n,normalize(vec3(-.4,.8,1))));
+    vec3 material=loopPalette(hit.y);
+    float diffuse=.32+.68*max(0.0,dot(n,normalize(vec3(-.4,.8,1))));
     float rim=pow(1.0-max(0.0,dot(n,-rd)),2.0);
-    float grain=hash(vec3(floor(gl_FragCoord.xy),floor(u_time*12.0)));
-    vec3 color=material*diffuse+material*rim*.16;
-    color*=1.0+(grain-.5)*u_grain*.85;
-    color+=vec3(pow(max(0.0,dot(reflect(rd,n),normalize(vec3(-.4,.6,1)))),22.0))*.12;
+    float grain=hash(vec3(floor(gl_FragCoord.xy*.85),floor(u_time*10.0)));
+    vec3 color=material*(diffuse+rim*.13);
+    color*=1.0+(grain-.5)*u_grain*1.22;
+    color=mix(u_ink,color,smoothstep(.01,.12,grain+(.7-u_grain)*.09));
+    color+=material*pow(max(0.0,dot(reflect(rd,n),normalize(vec3(-.4,.6,1)))),24.0)*.12;
     return color*u_intensity;
+}
+vec2 connectionPoint(float t){
+    float a=PI*(.5-t);
+    return vec2(357.0+34.0*cos(a),509.0+22.0*sin(a));
 }
 vec3 technical(vec2 p){
     vec2 uv=vec2(p.x/1.6+.5,p.y+.5);
     if(any(lessThan(uv,vec2(0)))||any(greaterThan(uv,vec2(1))))return u_ink;
-    vec3 textureColor=texture2D(u_panel,vec2(uv.x,.375+.625*uv.y)).rgb;
-    float luminance=dot(textureColor,vec3(.2126,.7152,.0722));
-    vec3 color=mix(textureColor,mix(u_ink,u_secondary,clamp(luminance*2.0,0.0,1.0)),.22);
-    vec2 q=uv*vec2(1024,640);
-    for(int i=0;i<3;i++){
-        float k=float(i),y=413.0-k*49.0;
-        vec2 start=vec2(154,y),end=vec2(442,y);
-        float phase=fract(u_time*.32-k*.29+u_mouse.x*.12);
-        vec2 dotPosition=mix(start,end,phase);
-        float glow=exp(-length(q-dotPosition)*.18);
-        float trace=exp(-segment(q,start,end)*.9)*(.12+.1*sin(u_time+k));
-        color+=mix(u_primary,u_secondary,k*.35)*(glow*.85+trace*.35)*u_intensity;
-    }
+    vec2 q=uv*vec2(1024,640),sampleUV=uv;
+    float cycle=fract(u_time*.105);
     for(int j=0;j<2;j++){
-        float k=float(j),flash=pow(.5+.5*sin(u_time*1.6+k*PI),8.0);
-        float cap=abs(box((q-vec2(681.0+99.0*k,346.5))/640.0,vec2(.047,.037),.008));
-        color+=u_primary*exp(-cap*550.0)*flash*.8;
+        float k=float(j),press=pow(.5+.5*sin(u_time*1.25-k*.9),14.0);
+        vec2 center=k<.5?vec2(655,522.5):vec2(727,522.5);
+        vec2 capPoint=q-center;
+        if(abs(capPoint.x)<(k<.5?37.0:29.0)&&abs(capPoint.y)<29.0)sampleUV.y+=press*.004;
     }
-    float scan=exp(-pow((q.y-115.0-mod(u_time*40.0,380.0))/4.0,2.0));
-    color+=u_secondary*scan*.025;
+    vec3 textureColor=texture2D(u_panel,vec2(sampleUV.x,.375+.625*sampleUV.y)).rgb;
+    float luminance=dot(textureColor,vec3(.2126,.7152,.0722));
+    vec3 color=mix(textureColor,mix(u_ink,u_secondary,clamp(luminance*2.0,0.0,1.0)),.055);
+    float phase=fract(u_time*.24+u_mouse.x*.10);
+    vec2 dotPosition=connectionPoint(phase);
+    color+=mix(u_primary,u_secondary,phase)*exp(-length(q-dotPosition)*.32)*.46*u_intensity;
+    for(int j=0;j<2;j++){
+        float k=float(j),press=pow(.5+.5*sin(u_time*1.25-k*.9),14.0);
+        vec2 center=k<.5?vec2(655,522.5):vec2(727,522.5);
+        float cap=abs(box((q-center)/640.0,vec2(k<.5?.046:.034,.031),.007));
+        color+=u_primary*exp(-cap*640.0)*press*.22;
+    }
+    float ticket=step(620.0,q.x)*step(q.x,620.0+82.0*phase)*exp(-abs(q.y-260.0)*1.5);
+    color+=u_secondary*ticket*.28;
+    float revoke=smoothstep(.60,.70,cycle)*(1.0-smoothstep(.82,.94,cycle));
+    float localKey=abs(box((q-vec2(243,311))/640.0,vec2(.015,.015),.004));
+    color+=u_primary*exp(-localKey*850.0)*revoke*.26;
+    float connection=exp(-segment(q,vec2(268,250),vec2(425,250))*.9);
+    color+=u_secondary*connection*(1.0-revoke)*.15;
+    float cursor=step(abs(q.x-294.0),2.0)*step(abs(q.y-67.0),5.0)*step(.1,sin(u_time*3.2));
+    color+=u_primary*cursor*.29;
     return color;
 }
+
 void main(){
     vec2 p=(gl_FragCoord.xy-.5*u_resolution)/u_resolution.y/u_scale;
     vec3 color=u_mode<.5?afterimage(p):u_mode<1.5?glyphGrid(p):u_mode<2.5?colorfulLoops(p):technical(p);
@@ -261,54 +295,74 @@ interface Resources {
 function paintPanel(){
     const canvas=document.createElement("canvas");canvas.width=1024;canvas.height=1024
     const c=canvas.getContext("2d");if(!c)throw new Error("Could not create local UI atlas.")
-    c.fillStyle="#0b0e12";c.fillRect(0,0,1024,1024)
+    c.fillStyle="#080b0d";c.fillRect(0,0,1024,1024)
     const rounded=(x:number,y:number,w:number,h:number,r:number)=>{c.beginPath();c.roundRect(x,y,w,h,r)}
-    c.strokeStyle="#1d242e";c.lineWidth=1
-    for(let x=32;x<1024;x+=32){c.beginPath();c.moveTo(x,0);c.lineTo(x,640);c.stroke()}
-    c.fillStyle="#8c99ad";c.font='13px "IBM Plex Mono", monospace';c.fillText("SIGNAL CONTROL / ORIGINAL INTERFACE STUDY",64,91)
-    c.fillStyle="#ecedf5";c.font='28px "Space Grotesk", sans-serif';c.fillText("Ephemeral connections",64,122)
-    for(const x of [64,530]){rounded(x,142,430,244,18);c.fillStyle="#10151d";c.fill();c.strokeStyle="#2b3341";c.stroke()}
-    c.fillStyle="#b8b7f9";c.font="12px monospace";c.fillText("01 / DEVICE LINK",87,173);c.fillText("02 / ONE-SHOT ACCESS",553,173)
-    for(let i=0;i<3;i++){
-        const y=211+i*49;rounded(89,y,65,31,6);c.fillStyle="#1c222e";c.fill();c.strokeStyle="#3c465b";c.stroke()
-        c.fillStyle="#abb8cb";c.font="11px monospace";c.fillText(["LOCAL","EDGE","CLIENT"][i],97,y+20)
-        c.strokeStyle="#414c64";c.beginPath();c.moveTo(154,y+16);c.lineTo(420,y+16);c.stroke()
-        rounded(422,y+4,42,24,5);c.fillStyle="#222938";c.fill();c.fillStyle="#b9bdd5";c.fillText("→",436,y+20)
+    rounded(145,16,734,612,16);c.fillStyle="#06080a";c.fill();c.strokeStyle="#11161b";c.lineWidth=1;c.stroke()
+    const card=(x:number,y:number)=>{rounded(x,y,340,225,16);c.fillStyle="#0d1115";c.fill();c.strokeStyle="#252b31";c.stroke();rounded(x+12,y+12,316,140,10);c.fillStyle="#090c10";c.fill();c.strokeStyle="#10171d";c.stroke()}
+    card(166,45);card(518,45);card(166,282);card(518,282)
+    // A local terminal and restrained loop cable form the upper-left diagram.
+    c.setLineDash([2,3]);rounded(220,81,220,115,18);c.strokeStyle="#303745";c.stroke();c.setLineDash([])
+    c.fillStyle="#46505b";c.font="9px monospace";c.fillText("your machine",235,96)
+    rounded(235,105,122,67,8);c.fillStyle="#171b24";c.fill();c.strokeStyle="#343b47";c.stroke()
+    c.fillStyle="#4c5663";c.fillRect(246,111,3,3);c.fillRect(253,111,3,3);c.fillRect(260,111,3,3)
+    c.strokeStyle="#2b323e";c.beginPath();c.moveTo(236,122);c.lineTo(356,122);c.stroke()
+    c.fillStyle="#a0a8b8";c.font="16px monospace";c.fillText("127.0.0.1",246,150)
+    c.strokeStyle="#49536a";c.lineWidth=1.5;c.beginPath();c.moveTo(357,109);c.bezierCurveTo(403,109,403,153,357,153);c.stroke()
+    c.fillStyle="#586274";c.font="18px monospace";c.fillText("→ ×",402,141)
+    // Subtle extruded keycaps and a short access-code pill occupy the second card.
+    for(let i=0;i<2;i++){
+        const x=i?700:620,w=i?54:70;rounded(x,95,w,54,9);c.fillStyle="#080b10";c.fill();c.strokeStyle="#242b33";c.lineWidth=1;c.stroke()
+        const shade=c.createLinearGradient(0,95,0,140);shade.addColorStop(0,"#191e26");shade.addColorStop(1,"#0c1016")
+        rounded(x,95,w,45,8);c.fillStyle=shade;c.fill();c.strokeStyle="#373f4d";c.stroke();c.strokeStyle="#444d5b";c.beginPath();c.moveTo(x+10,99);c.lineTo(x+w-10,99);c.stroke()
+        c.fillStyle="#a9b0c0";c.font="17px monospace";c.fillText(i?"S":"⌃",x+w/2-5,123)
     }
-    for(let i=0;i<2;i++){rounded(642+i*99,265,78,57,9);c.fillStyle="#1d2331";c.fill();c.strokeStyle="#4c5671";c.lineWidth=2;c.stroke();c.fillStyle="#dcdef0";c.font="24px monospace";c.fillText(i?"S":"⌘",666+i*99,303)}
-    rounded(624,333,245,28,9);c.fillStyle="#31394f";c.fill();c.fillStyle="#cbcafd";c.font="12px monospace";c.fillText("TOKEN / 7F2A · 0481",648,352)
-    rounded(64,414,896,157,16);c.fillStyle="#11161e";c.fill();c.strokeStyle="#313949";c.stroke()
-    for(let i=0;i<3;i++){c.fillStyle=["#fa7375","#eac46c","#85cfa0"][i];c.beginPath();c.arc(87+i*15,435,3,0,Math.PI*2);c.fill()}
-    c.font="14px monospace";c.fillStyle="#a5b6c8";c.fillText("~/signal $ authorize session --ephemeral",87,473)
-    c.fillStyle="#b8b7f9";c.fillText("✓ device verified     ↔ route established",87,504)
-    c.fillStyle="#69798f";c.fillText("LOCAL UI TEXTURE / CONNECTION MOTION IS A VISUAL STUDY",87,537)
+    rounded(610,158,150,25,12);c.fillStyle="#1c2338";c.fill();c.strokeStyle="#3b4562";c.stroke();c.fillStyle="#a4b5eb";c.font="12px monospace";c.fillText("7F2A · 0481",644,175)
+    // The revocation diagram has a laptop, an independent lock and a phone.
+    rounded(220,355,48,35,6);c.fillStyle="#171d24";c.fill();c.strokeStyle="#3c444e";c.stroke();c.beginPath();c.moveTo(215,394);c.lineTo(273,394);c.stroke()
+    rounded(232,318,22,22,5);c.fillStyle="#10151c";c.fill();c.stroke();c.fillStyle="#9ca5b7";c.font="12px monospace";c.fillText("u",239,333)
+    c.lineWidth=4;c.strokeStyle="#606874";c.beginPath();c.arc(360,338,13,Math.PI,Math.PI*2);c.lineTo(373,349);c.moveTo(347,338);c.lineTo(347,349);c.stroke();c.lineWidth=1
+    rounded(341,347,39,34,8);c.fillStyle="#171d25";c.fill();c.strokeStyle="#414a56";c.stroke();c.fillStyle="#768293";c.beginPath();c.arc(360,362,2,0,Math.PI*2);c.fill();c.fillRect(359,363,2,6)
+    rounded(425,350,25,47,6);c.fillStyle="#121820";c.fill();c.strokeStyle="#343d49";c.stroke();c.beginPath();c.moveTo(432,355);c.lineTo(443,355);c.stroke()
+    c.setLineDash([2,2]);c.strokeStyle="#494c68";c.beginPath();c.moveTo(268,390);c.lineTo(425,390);c.stroke();c.setLineDash([])
+    // A ticket silhouette and fine barcode stay readable without becoming a UI page.
+    rounded(596,332,176,70,8);c.fillStyle="#171c24";c.fill();c.strokeStyle="#343c49";c.stroke()
+    c.fillStyle="#090c10";for(const x of [596,772]){c.beginPath();c.arc(x,367,8,0,Math.PI*2);c.fill()}
+    c.fillStyle="#7b879d";c.font="12px monospace";c.fillText("TKT / 7N4K",611,356)
+    c.fillStyle="#2c3346";c.fillRect(620,378,82,3);c.fillStyle="#9aacdf";c.fillRect(620,378,46,3)
+    c.strokeStyle="#4d586c";for(let x=727;x<755;x+=4){c.beginPath();c.moveTo(x,342);c.lineTo(x,390);c.stroke()}
+    const title=(text:string,x:number,y:number)=>{c.fillStyle="#c2c7cf";c.font='13px "Space Grotesk", sans-serif';c.fillText(text,x,y)}
+    const body=(a:string,b:string,x:number,y:number)=>{c.fillStyle="#68737e";c.font="10px sans-serif";c.fillText(a,x,y);if(b)c.fillText(b,x,y+14)}
+    title("Local by default",178,217);body("Loopback only, with a temporary session token.","No relay or account required.",178,239)
+    title("Two keys to share",530,217);body("A familiar shortcut starts the connection", "and prints a one-time code.",530,239)
+    title("Revoke instantly",178,454);body("Close a share and its unused tickets", "with one deliberate keypress.",178,476)
+    title("Single-use tickets",530,454);body("A ticket is consumed once, then expires.","",530,476)
+    rounded(166,519,692,95,16);c.fillStyle="#0d1115";c.fill();c.strokeStyle="#252b31";c.stroke()
+    rounded(181,535,170,64,8);c.fillStyle="#10131a";c.fill();c.strokeStyle="#353c47";c.stroke()
+    for(let i=0;i<3;i++){c.fillStyle=["#c66f75","#b5a46b","#78a38c"][i];c.beginPath();c.arc(190+i*8,544,2,0,Math.PI*2);c.fill()}
+    c.strokeStyle="#2a303c";c.beginPath();c.moveTo(182,552);c.lineTo(350,552);c.stroke()
+    c.fillStyle="#8a97b0";c.font="11px monospace";c.fillText("~ > signal",192,578)
+    title("Your shell, unchanged",381,555);body("Familiar commands and history,", "carried over a temporary connection.",381,579)
     c.fillStyle="#020304";c.fillRect(0,640,1024,128)
     c.font="13px monospace";c.fillStyle="#77818b";c.fillText("TEMPORAL STUDY / INDEPENDENT GLYPH",60,719);c.fillText("FRAME 01 / 76   T + 08.00 S",662,719)
-    // Original pixel-cat motifs sit inside the CC-009 glass volumes. A compact
-    // local atlas supplies varied light/dark interiors rather than icon tiles.
-    c.fillStyle="#e9eff1";c.fillRect(0,768,256,256)
-    const pixelCat=["001100001100","001110011100","001111111100","011111111110","011111111110","011001100110","011001100110","011110011110","001111111100","000111111000","001111111100","001100001100"]
+    c.clearRect(0,768,256,256)
+    const cats=[
+        ["000100001000","001110011100","001111111100","011111111110","011111111110","011001100110","011001100110","011110011110","001111111100","000111111000","001111111100","001100001100"],
+        ["001000000100","001100001100","001111111100","011111111110","011001100110","011001100110","011111111110","001110011100","000111111000","000011110000","000110011000","001110011100"],
+        ["001100001100","001110011100","011111111110","011111111110","011001100110","011001100110","011111111110","001110011100","000111111000","000111111000","001100001100","011100001110"],
+    ]
     const palettes=[
-        ["#dce7e9","#26343d","#c9d8dd","#e4b385"],
-        ["#edf0e8","#263d46","#becbd0","#d7a679"],
-        ["#53666d","#192b37","#b5cbd1","#bb6a63"],
-        ["#34464e","#101f29","#a1b3bc","#b0c4cb"],
-        ["#42525a","#1b3038","#a4b9c1","#a1c1c7"],
-        ["#283c45","#99b6c1","#d3e5e6","#8daeb8"],
-        ["#607078","#152b36","#e3e7df","#d5a07c"],
-        ["#394d57","#142932","#b9d0d2","#e4a377"],
-        ["#375362","#c7d8da","#eef0e9","#bc8a6d"],
+        ["#eef1ec","#29343a","#d6e1e0","#b8a48e"],["#f0efe7","#25333c","#dae3e1","#c7a788"],["#485963","#202c34","#b9cdce","#bf7974"],
+        ["#263a44","#101e26","#c3d7d5","#b6c8c7"],["#3c5059","#1a2d35","#c0d3d3","#c2d5d0"],["#233640","#a3c1c8","#20303a","#95b8bf"],
+        ["#5a6e73","#152933","#e0e5db","#d4a783"],["#304650","#142731","#bacfcd","#dcad89"],["#314b59","#b6cdd0","#203440","#bf9f7e"],
     ]
     for(let row=0;row<3;row++)for(let col=0;col<3;col++){
-        const id=(2-row)*3+col,cell=256/3,x0=col*cell,y0=768+(2-row)*cell,palette=palettes[id]
-        c.fillStyle=palette[0];c.fillRect(x0,y0,cell,cell)
-        // Rear bands stay visible through clear spaces and refracted side faces.
-        c.fillStyle=palette[3];c.fillRect(x0+4,y0+cell-12,cell-8,5)
-        c.fillStyle=palette[1];c.fillRect(x0+3,y0+8,4,cell-18)
-        for(let y=0;y<12;y++)for(let x=0;x<12;x++)if(pixelCat[y][x]==="1"){
-            const stripe=(x+y+id)%5===0,eye=y===5||y===6
-            c.fillStyle=eye&&(x===3||x===4||x===7||x===8)?palette[2]:stripe?palette[3]:palette[1]
-            c.fillRect(x0+10+x*5.5,y0+8+y*5.5,5.6,5.6)
+        const id=(2-row)*3+col,cell=256/3,x0=col*cell,y0=768+(2-row)*cell,palette=palettes[id],cat=cats[id%3]
+        c.globalAlpha=id===5||id===8?.42:.17;c.fillStyle=palette[0];c.fillRect(x0,y0,cell,cell);c.globalAlpha=1
+        c.fillStyle=palette[3];c.fillRect(x0+4,y0+cell-10,cell-8,4);c.fillStyle=palette[1];c.fillRect(x0+3,y0+8,3,cell-18)
+        for(let y=0;y<12;y++)for(let x=0;x<12;x++)if(cat[y][x]==="1"){
+            const eye=(y===5||y===6)&&(x===3||x===4||x===7||x===8),ear=(y===2||y===3)&&(x===3||x===8)
+            c.globalAlpha=.88;c.fillStyle=eye?palette[2]:ear&&id===2?palette[3]:palette[1]
+            c.fillRect(x0+10+x*5.5,y0+8+y*5.5,5.6,5.6);c.globalAlpha=1
         }
     }
     return canvas
