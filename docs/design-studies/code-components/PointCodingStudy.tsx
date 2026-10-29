@@ -66,99 +66,152 @@ varying mediump float v_opacity;
 const float PI=3.14159265359;
 const float TAU=6.28318530718;
 mat2 rot(float a){return mat2(cos(a),-sin(a),sin(a),cos(a));}
-vec3 folded(vec2 uv,float kind){
-    // Two distinct branching mesh patches retain separate folded silhouettes:
-    // a broad upper fan and a narrower hanging curl, not another feather shape.
-    float patch=floor(uv.y*2.0),u=uv.x*2.0-1.0,v=fract(uv.y*2.0)*2.0-1.0;
-    vec3 p;
+vec2 wireIndex(float index,float count,float longitudinal,float transverse){
+    float samples=floor(count*.65/longitudinal),split=longitudinal*samples;
+    if(index<split)return vec2(fract(index/samples),(floor(index/samples)+.5)/longitudinal);
+    index-=split;
+    float crossSamples=max(floor((count-split)/transverse),1.0);
+    return vec2((min(floor(index/crossSamples),transverse-1.0)+.5)/transverse,fract(index/crossSamples));
+}
+float pointIndex(vec2 uv){
+    float factor=sqrt(clamp(u_density,.35,1.8));
+    float columns=floor(96.0*factor+.5),rows=floor(160.0*factor+.5);
+    return floor(uv.y*rows)*columns+floor(uv.x*columns);
+}
+float pointCount(){
+    float factor=sqrt(clamp(u_density,.35,1.8));
+    return floor(96.0*factor+.5)*floor(160.0*factor+.5);
+}
+vec2 wireCoordinates(vec2 uv,float patches,out float patch){
+    // Existing points form connected, open-celled transverse and lengthwise nets.
+    float factor=sqrt(clamp(u_density,.35,1.8)),index=pointIndex(uv);
+    float count=floor(pointCount()/patches);
+    patch=min(floor(index/count),patches-1.0);index-=patch*count;
+    return wireIndex(index,count,floor(23.0*factor),floor(35.0*factor));
+}
+vec3 foldedSurface(float s,float v,float patch){
+    float t=u_time*.15;
     if(patch<.5){
-        float span=.055+.10*(.5+.5*sin(u*4.6+.4));
-        float fold=v*2.8+u*3.8+.17*sin(u_time*.25+u*6.0);
-        p=vec3(.12+u*.33,.23+.055*sin(u*5.0),.055*cos(u*4.0));
-        p+=vec3(sin(fold)*span*.32,cos(fold)*span,sin(fold)*span*.95);
-        p.y+=.028*sin(v*8.0+u*11.0-u_time*.25)*abs(v);
-    }else{
-        float span=.035+.080*pow(max(sin((u+1.0)*PI*.5),0.0),.7);
-        float fold=v*3.8+u*4.5+.12*sin(u_time*.2);
-        p=vec3(.21+.08*sin(u*3.0),-.14+u*.24,.07*sin(u*4.1));
-        p+=vec3(sin(fold)*span,cos(fold)*span*.35,cos(fold)*span*.8);
-        p.x+=.025*sin(u*13.0+v*7.0-u_time*.22)*abs(v);
-    }
-    if(kind>.5){
-        float s=fract(uv.y*2.0),lane=uv.x-.5;
-        float curl=s*7.5+lane*5.0+u_time*.12;
-        vec3 anchor=patch<.5?vec3(.04+.40*s,.20+.06*sin(s*5.0),0):vec3(.21+.07*sin(s*5.0),-.37+.46*s,0);
-        p=anchor+vec3(sin(curl)*(.065+.05*abs(lane)),cos(curl)*(.055+.06*abs(lane)),.10*cos(curl+lane));
-    }
-    p.xy=rot(-.14)*p.xy;
-    return p;
-}
-vec3 curl(vec2 uv,float kind){
-    // A tapering curled body and a separate family of thin upper contour trails.
-    float s=uv.y,phi=uv.x*TAU+s*4.8+u_time*.17;
-    if(kind>.5){
-        float lane=uv.x-.5;
-        float angle=s*5.6+lane*1.8+u_time*.16;
-        float reach=.10+.20*s;
-        return vec3(.08+reach*sin(angle)+lane*.09,
-            .04+.30*s+.055*cos(angle),.12*cos(angle)+lane*.035);
-    }
-    vec3 center=vec3(.18*sin(s*TAU-.4)*(1.0-.28*s),
-        -.36+.64*s+.04*sin(s*TAU+u_time*.24),.10*cos(s*5.3+u_time*.22));
-    float width=.014+.11*pow(max(sin(PI*s),0.0),1.15);
-    width*=1.0+.14*sin(s*10.0-u_time*.7);
-    vec3 p=center+vec3(cos(phi)*width,sin(phi)*width*.45,sin(phi)*width);
-    p.x+=.025*sin(s*10.0-u_time*.5)*sin(PI*s);
-    return p;
-}
-vec3 loops(vec2 uv,float kind){
-    // A continuous figure-eight surface, with open connected contour families.
-    float angle=uv.y*TAU,phi=uv.x*TAU;
-    float flow=.055*sin(angle*3.0-u_time*.46);
-    vec3 center=vec3(.40*sin(angle),.255*sin(angle*2.0)+flow,.15*cos(angle));
-    float width=.028+.021*(.5+.5*sin(angle*3.0+u_time*.5));
-    vec3 p=center+vec3(cos(phi)*width*cos(angle),
-        cos(phi)*width*sin(angle*2.0),sin(phi)*width);
-    if(kind>.5){
-        float lane=uv.x-.5;
-        p=vec3((.40+.12*lane)*sin(angle),
-            .255*sin(angle*2.0)+lane*.16+flow,
-            .15*cos(angle)+lane*.08*sin(angle*3.0-u_time*.3));
-    }
-    p.xy=rot(-.16+.07*sin(u_time*.26))*p.xy;
-    return p;
-}
-vec3 featherSpine(float s){
-    // One dominant asymmetric C curve; the central body remains contiguous.
-    return vec3(.02+.24*sin(PI*s)+.015*s,
-        -.39+.78*s,.035*sin(PI*s)+.008*sin(u_time*.16)*sin(PI*s));
-}
-vec3 feather(vec2 uv,float kind){
-    float s=uv.y,v=uv.x*2.0-1.0;vec3 p=featherSpine(s);
-    if(kind>.5){
-        float root=.025+uv.x*.94;
-        float side=mod(floor(uv.x*12.0),2.0)<.5?-1.0:1.0;
-        float fan=.025+.07*sin(PI*root),curl=s*3.8+root*2.1+u_time*.08;
-        p=featherSpine(root);
-        p.x+=side*fan*sin(s*PI*.70)+.018*sin(curl)*s;
-        p.y+=.035*s+.018*(1.0-cos(curl))*s;
-        p.z+=side*.025*sin(s*PI)+.015*cos(curl)*s;
+        float span=(.018+.105*pow(max(sin(PI*s),0.0),.7))*(.82+.28*sin(s*15.0+.4));
+        float twist=v*2.4+s*7.2+.24*sin(t+s*5.0);
+        vec3 p=vec3(-.26+.61*s,.35-.15*s+.025*sin(s*9.0),.045*sin(s*6.0));
+        p+=vec3(sin(twist)*span*.37,cos(twist)*span,sin(twist)*span*.92);
+        p.xy+=vec2(.019*sin(v*5.0+s*19.0-t),.026*sin(v*3.0+s*17.0+t))*pow(abs(v),3.0)*sin(PI*s);
         return p;
     }
-    float width=.014+.069*pow(max(sin(PI*s),0.0),.72);
-    vec2 normal=normalize(vec2(.78,-(.24*PI*cos(PI*s)+.015)));
+    float span=(.010+.075*pow(max(sin(PI*s),0.0),.8))*(1.0-.42*s);
+    float twist=v*3.1+s*9.3+.13*sin(t);
+    vec3 p=vec3(-.045+.34*s+.045*sin(s*5.0),.045-.46*s,.07*sin(s*5.0));
+    p+=vec3(cos(twist)*span,sin(twist)*span*.48,sin(twist)*span);
+    p.xy+=vec2(.02*sin(s*19.0+v*4.0),.018*sin(s*13.0-v*5.0))*pow(abs(v),3.0)*sin(PI*s);
+    return p;
+}
+vec3 folded(vec2 uv,float kind){
+    float patch;vec2 wire=wireCoordinates(uv,2.0,patch);
+    vec3 p=foldedSurface(wire.x,wire.y*2.0-1.0,patch);
+    if(kind>.5){
+        float lane=floor(uv.x*12.0),s=uv.y;
+        patch=step(5.5,lane);lane=mod(lane,6.0);
+        float root=.16+lane*.125,side=mod(lane,2.0)*2.0-1.0;
+        p=foldedSurface(root,side,patch);
+        float reach=(.075+.045*sin(lane*2.1))*s;
+        float angle=side*(s*3.2+root*3.0)+u_time*.08;
+        p+=vec3(cos(angle)*reach,side*sin(angle)*reach,.045*sin(s*PI)*side);
+    }
+    p.xy=rot(-.08)*p.xy;
+    return p;
+}
+vec3 pouchSurface(float s,float v,float side,float variant){
+    // Both sampled posts show separate, flared hanging mesh bodies with loose
+    // tendrils. They do not form a closed figure-eight torus or a solid S ribbon.
+    float phi=v*TAU,t=u_time*.13+variant;
+    float width=side<.5?.025+.093*pow(1.0-s,.48):.115*sqrt(max(1.0-s*s,.001));
+    width*=.86+.14*sin(s*13.0+phi*.9+t);
+    float twist=phi+s*(side<.5?2.8:-3.1)+.16*sin(t+s*5.0);
+    vec3 p=vec3(width*cos(twist),.19-.39*s,width*sin(twist)*.76);
+    p.y+=.022*sin(phi*2.0+s*11.0+t)*sin(PI*s)+.024*cos(phi)*pow(1.0-s,3.0);
+    p.x+=.028*sin(s*10.0+t)*sin(PI*s);
+    if(side<.5){p.xy=rot(-.34)*p.xy;p.xy+=vec2(-.22,-.005);}
+    else{p.xy=rot(.16)*p.xy;p.xy+=vec2(.24,-.10);}
+    return p;
+}
+vec3 pouchStudy(vec2 uv,float kind,float variant){
+    float side;vec2 wire=wireCoordinates(uv,2.0,side);
+    vec3 p=pouchSurface(wire.x,wire.y,side,variant);
+    if(kind>.5){
+        float lane=floor(uv.x*12.0),s=uv.y;
+        side=step(5.5,lane);lane=mod(lane,6.0);
+        float phi=(lane+.5)/6.0;
+        float anchor=side<.5?.13+.065*lane:.08+.045*lane;
+        p=pouchSurface(anchor,phi,side,variant);
+        float direction=side<.5?-1.0:1.0;
+        float reach=side<.5?.27+.02*lane:.30+.025*lane;
+        float wave=s*9.0+lane*1.7+u_time*.12+variant;
+        p.x+=(.035*sin(wave)+.022*sin(s*18.0+lane))*s+.10*s*direction;
+        p.y+=direction*reach*s+.024*sin(wave*.8)*s;
+        p.z+=.035*sin(s*7.0+lane)*s;
+    }
+    return p;
+}
+vec3 curl(vec2 uv,float kind){return pouchStudy(uv,kind,.7);}
+vec3 loops(vec2 uv,float kind){return pouchStudy(uv,kind,2.2);}
+vec3 featherSpine(float s){
+    float a=1.0-s;
+    vec2 p=a*a*a*vec2(-.16,-.25)+3.0*a*a*s*vec2(.34,-.33)+3.0*a*s*s*vec2(.43,.29)+s*s*s*vec2(-.01,.46);
+    return vec3(p,.045*sin(PI*s)+.009*sin(u_time*.16)*sin(PI*s));
+}
+vec3 featherHook(float root,float side,float s,float reach){
+    vec3 p=featherSpine(root);
+    vec2 tangent=normalize(featherSpine(min(root+.012,1.0)).xy-featherSpine(max(root-.012,0.0)).xy);
+    vec2 normal=vec2(-tangent.y,tangent.x);
+    float bend=s*PI*(1.04+.045*sin(root*13.0));
+    float outward=reach*.90*sin(bend);
+    float along=reach*(.42*(1.0-cos(bend))+.20*s);
+    p.xy+=normal*side*(.026*sin(PI*root)+outward)+tangent*along;
+    p.z+=side*.025*sin(PI*s);
+    return p;
+}
+vec3 feather(vec2 uv,float kind){
+    float index=pointIndex(uv),count=pointCount(),bodyCount=floor(count*.65);
+    float factor=sqrt(clamp(u_density,.35,1.8));
+    vec2 wire=wireIndex(index,bodyCount,floor(22.0*factor),floor(32.0*factor));
+    float s=wire.x,v=wire.y*2.0-1.0;
+    vec3 p=featherSpine(s);
+    if(index>=bodyCount&&kind<.5){
+        float leafCount=12.0,perLeaf=floor((count-bodyCount)/leafCount);
+        float leaf=min(floor((index-bodyCount)/perLeaf),leafCount-1.0);
+        vec2 strand=wireIndex(index-bodyCount-leaf*perLeaf,perLeaf,4.0,12.0);
+        float root=.07+leaf*.075,side=mod(leaf,2.0)*2.0-1.0;
+        s=strand.x;v=strand.y*2.0-1.0;
+        float reach=.052+.063*sin(PI*root);
+        p=featherHook(root,side,s,reach);
+        vec2 direction=normalize(featherHook(root,side,min(s+.012,1.0),reach).xy-featherHook(root,side,max(s-.012,0.0),reach).xy);
+        vec2 crosswise=vec2(-direction.y,direction.x);
+        float width=.009*pow(max(sin(PI*s),0.0),.72)*(.82+.18*sin(root*11.0));
+        p.xy+=crosswise*v*width;
+        p.z+=v*.011*sin(PI*s);
+        return p;
+    }
+    if(kind>.5){
+        float lane=floor(uv.x*12.0)*2.0+floor(uv.y*2.0);
+        s=fract(uv.y*2.0);
+        float root=.025+lane*.039,side=mod(lane,2.0)*2.0-1.0;
+        float reach=.066+.074*sin(PI*root);
+        p=featherHook(root,side,s,reach);
+        // Small related filaments extend each smooth hook without sharp swept
+        // triangle tips or the previous uniformly pointed strip construction.
+        float wave=.006*sin(s*8.0+root*9.0+u_time*.08)*s;
+        p.xy+=vec2(wave,wave*.45);
+        p.z+=.012*cos(s*5.0+root*3.0)*s;
+        return p;
+    }
+    float width=.009+.055*pow(max(sin(PI*s),0.0),.92);
+    width*=.84+.16*sin(s*17.0+u_time*.14);
+    vec2 tangent=normalize(featherSpine(min(s+.01,1.0)).xy-featherSpine(max(s-.01,0.0)).xy);
+    vec2 normal=vec2(-tangent.y,tangent.x);
     p.xy+=normal*v*width;
-    p.y+=.010*sin(v*PI)*sin(PI*s);
-    p.z+=.045*sin(v*PI)*sin(PI*s);
-    // Only outer lanes sprout short barbs; most points remain in the continuous
-    // folded ribbon instead of being displaced into twenty-two separate coils.
-    float edge=smoothstep(.85,1.0,abs(v));
-    float root=floor(s*22.0)/22.0,barb=fract(s*22.0);
-    float side=mod(floor(s*22.0),2.0)<.5?-1.0:1.0;
-    float reach=(.014+.035*sin(PI*root))*edge;
-    p.x+=side*reach*sin(barb*PI*.80);
-    p.y+=reach*.20*sin(barb*PI);
-    p.z+=reach*.30*cos(barb*PI+root*3.0);
+    p.xy+=tangent*.009*sin(v*PI+s*17.0)*sin(PI*s);
+    p.z+=.046*sin(v*PI+s*6.0)*sin(PI*s);
     return p;
 }
 void main(){
@@ -174,15 +227,12 @@ void main(){
     float fit=min(1.0,aspect/1.3);
     vec2 screen=p.xy*perspective*u_scale*fit;
     gl_Position=vec4(screen.x*2.0/max(aspect,.001),screen.y*2.0,0.0,1.0);
-    gl_PointSize=clamp(u_resolution.y*.0028*perspective,1.0,3.3);
+    gl_PointSize=clamp(u_resolution.y*.0042*perspective,1.4,4.2);
     float front=clamp(.62-p.z*.8,.2,1.0);
     v_shade=front;
-    v_opacity=clamp(u_intensity,0.0,2.5)*(.24+.36*front)/sqrt(max(u_density,.35));
-    if(a_kind>.5)v_opacity*=1.25;
-    if(u_mode<.5||u_mode>2.5){
-        v_opacity*=2.65;v_shade=max(v_shade,.82);
-        gl_PointSize=clamp(u_resolution.y*.0040*perspective,1.6,3.8);
-    }
+    v_opacity=clamp(u_intensity,0.0,2.5)*(.55+.40*front)/sqrt(max(u_density,.35));
+    v_shade=max(v_shade,.80);
+    if(a_kind>.5)v_opacity*=1.12;
 }
 `
 const FRAGMENT = `
