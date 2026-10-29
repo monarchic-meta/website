@@ -67,15 +67,30 @@ const float PI=3.14159265359;
 const float TAU=6.28318530718;
 mat2 rot(float a){return mat2(cos(a),-sin(a),sin(a),cos(a));}
 vec3 folded(vec2 uv,float kind){
-    // A pinched continuous sheet opens into two opposing, locally twisting wings.
-    float u=uv.x*2.0-1.0,v=uv.y*2.0-1.0;
-    if(kind>.5){u=uv.y*2.0-1.0;v=uv.x*2.0-1.0;}
-    float waist=.15+.85*pow(abs(u),.70);
-    float fold=.23*sin(u*4.0-u_time*.38)+.09*sin(v*4.0+u*2.0+u_time*.3);
-    vec3 p=vec3(u*.64,v*.27*waist,fold*(.6+.4*abs(v)));
-    p.yz=rot(u*2.25+.20*sin(u*3.0+u_time*.4))*p.yz;
-    p.y+=.045*sin(u*6.0+u_time*.55)*(1.0-v*v);
-    p.z+=.035*sin(v*5.0-u_time*.6)*abs(u);
+    // Two distinct branching mesh patches retain separate folded silhouettes:
+    // a broad upper fan and a narrower hanging curl, not another feather shape.
+    float patch=floor(uv.y*2.0),u=uv.x*2.0-1.0,v=fract(uv.y*2.0)*2.0-1.0;
+    vec3 p;
+    if(patch<.5){
+        float span=.055+.10*(.5+.5*sin(u*4.6+.4));
+        float fold=v*2.8+u*3.8+.17*sin(u_time*.25+u*6.0);
+        p=vec3(.12+u*.33,.23+.055*sin(u*5.0),.055*cos(u*4.0));
+        p+=vec3(sin(fold)*span*.32,cos(fold)*span,sin(fold)*span*.95);
+        p.y+=.028*sin(v*8.0+u*11.0-u_time*.25)*abs(v);
+    }else{
+        float span=.035+.080*pow(max(sin((u+1.0)*PI*.5),0.0),.7);
+        float fold=v*3.8+u*4.5+.12*sin(u_time*.2);
+        p=vec3(.21+.08*sin(u*3.0),-.14+u*.24,.07*sin(u*4.1));
+        p+=vec3(sin(fold)*span,cos(fold)*span*.35,cos(fold)*span*.8);
+        p.x+=.025*sin(u*13.0+v*7.0-u_time*.22)*abs(v);
+    }
+    if(kind>.5){
+        float s=fract(uv.y*2.0),lane=uv.x-.5;
+        float curl=s*7.5+lane*5.0+u_time*.12;
+        vec3 anchor=patch<.5?vec3(.04+.40*s,.20+.06*sin(s*5.0),0):vec3(.21+.07*sin(s*5.0),-.37+.46*s,0);
+        p=anchor+vec3(sin(curl)*(.065+.05*abs(lane)),cos(curl)*(.055+.06*abs(lane)),.10*cos(curl+lane));
+    }
+    p.xy=rot(-.14)*p.xy;
     return p;
 }
 vec3 curl(vec2 uv,float kind){
@@ -114,28 +129,36 @@ vec3 loops(vec2 uv,float kind){
     return p;
 }
 vec3 featherSpine(float s){
-    return vec3(.25*sin(s*PI*1.35-1.1)+.025*sin(s*5.0-u_time*.3),
-        -.39+.75*s,.08*sin(s*4.0+u_time*.25));
+    // One dominant asymmetric C curve; the central body remains contiguous.
+    return vec3(.02+.24*sin(PI*s)+.015*s,
+        -.39+.78*s,.035*sin(PI*s)+.008*sin(u_time*.16)*sin(PI*s));
 }
 vec3 feather(vec2 uv,float kind){
-    // An arcing spine supports a fine folded fan and curved side filaments.
-    float s=uv.y,v=uv.x*2.0-1.0;
+    float s=uv.y,v=uv.x*2.0-1.0;vec3 p=featherSpine(s);
     if(kind>.5){
-        float root=.035+uv.x*.9;
+        float root=.025+uv.x*.94;
         float side=mod(floor(uv.x*12.0),2.0)<.5?-1.0:1.0;
-        float reach=(.04+.16*sin(PI*root))*s;
-        vec3 p=featherSpine(root);
-        p.x+=side*reach;
-        p.y+=.09*s+.035*sin(PI*s);
-        p.z+=side*.06*sin(s*PI)+.018*sin(root*9.0-u_time*.5)*s;
+        float fan=.025+.07*sin(PI*root),curl=s*3.8+root*2.1+u_time*.08;
+        p=featherSpine(root);
+        p.x+=side*fan*sin(s*PI*.70)+.018*sin(curl)*s;
+        p.y+=.035*s+.018*(1.0-cos(curl))*s;
+        p.z+=side*.025*sin(s*PI)+.015*cos(curl)*s;
         return p;
     }
-    vec3 p=featherSpine(s);
-    float width=.012+.17*pow(max(sin(PI*s),0.0),.85);
-    vec2 barb=vec2(v*width,.065*sin(v*PI)*sin(PI*s));
-    barb=rot(.55*sin(s*4.0+u_time*.24))*barb;
-    p.x+=barb.x;p.z+=barb.y;
-    p.y+=.11*abs(v)*sin(PI*s)+.016*sin(v*6.0+s*12.0-u_time*.65)*abs(v);
+    float width=.014+.069*pow(max(sin(PI*s),0.0),.72);
+    vec2 normal=normalize(vec2(.78,-(.24*PI*cos(PI*s)+.015)));
+    p.xy+=normal*v*width;
+    p.y+=.010*sin(v*PI)*sin(PI*s);
+    p.z+=.045*sin(v*PI)*sin(PI*s);
+    // Only outer lanes sprout short barbs; most points remain in the continuous
+    // folded ribbon instead of being displaced into twenty-two separate coils.
+    float edge=smoothstep(.85,1.0,abs(v));
+    float root=floor(s*22.0)/22.0,barb=fract(s*22.0);
+    float side=mod(floor(s*22.0),2.0)<.5?-1.0:1.0;
+    float reach=(.014+.035*sin(PI*root))*edge;
+    p.x+=side*reach*sin(barb*PI*.80);
+    p.y+=reach*.20*sin(barb*PI);
+    p.z+=reach*.30*cos(barb*PI+root*3.0);
     return p;
 }
 void main(){
@@ -156,6 +179,10 @@ void main(){
     v_shade=front;
     v_opacity=clamp(u_intensity,0.0,2.5)*(.24+.36*front)/sqrt(max(u_density,.35));
     if(a_kind>.5)v_opacity*=1.25;
+    if(u_mode<.5||u_mode>2.5){
+        v_opacity*=2.65;v_shade=max(v_shade,.82);
+        gl_PointSize=clamp(u_resolution.y*.0040*perspective,1.6,3.8);
+    }
 }
 `
 const FRAGMENT = `

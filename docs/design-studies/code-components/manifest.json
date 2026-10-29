@@ -657,8 +657,8 @@
       "framerComponentId": "codeFile/S1i4MTA:default",
       "framerCodePath": "PointCodingStudy.tsx",
       "intentionalDifferences": [
-        "Independent pinched continuous sheet opens into two locally twisting wings; extra point contours emphasize the fold.",
-        "Original parametric surface and local ripples; source formula and complete timing are not reproduced."
+        "Two independently parameterized folded point patches form a broad upper fan and a narrower hanging curl, with loose branching contours.",
+        "Original patch geometry and local deformation approximate sampled source stills; the source formula, exact topology and complete timing are not reproduced."
       ],
       "framerLabPage": "SqfboNSM6",
       "framerLabPath": "/prototypes/creative-coding-lab",
@@ -688,7 +688,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-007",
+        "change": "Two separate branching folded mesh patches replace the regular horizontal wave; point coverage is brighter.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-10",
@@ -931,7 +939,15 @@
       "framerVerifiedDate": "2026-10-23",
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-020",
+        "change": "A continuous narrow C-curved feather ribbon carries smaller subordinate barbs and fine trails.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-13",
@@ -2690,7 +2706,7 @@
     },
     {
       "source": "PointCodingStudy.tsx",
-      "sourceSHA256": "49cd3a34539bdb2e5e632dee45a5b4ec1f79fbfce0fe49596502ded3b20ef149",
+      "sourceSHA256": "54d9786ea31db4d343ea1851a94bade5576b3d89be8db3005284912dda15a49a",
       "framerCodePath": "PointCodingStudy.tsx",
       "framerComponentId": "codeFile/S1i4MTA:default"
     },
