@@ -79,54 +79,72 @@ float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
 float box2(vec2 p,vec2 b){vec2 q=abs(p)-b;return length(max(q,0.0))+min(max(q.x,q.y),0.0);}
 float box3(vec3 p,vec3 b,float radius){vec3 q=abs(p)-b;return length(max(q,0.0))+min(max(q.x,max(q.y,q.z)),0.0)-radius;}
 float segment(vec2 p,vec2 a,vec2 b){vec2 d=b-a;return length(p-a-d*clamp(dot(p-a,d)/max(dot(d,d),.00001),0.0,1.0));}
-vec3 hingeSpace(vec3 p){p.xy=rot(-.27)*p.xy;p.yz=rot(.27+u_mouse.y*.28)*p.yz;p.xz=rot(-.27+u_mouse.x*.35)*p.xz;return p;}
+float typeMask(vec2 p,float row);
+float opticalEdge(vec2 p,vec2 a,vec2 b){vec2 e=b-a;return -(e.x*(p.y-a.y)-e.y*(p.x-a.x))/length(e);}
+float opticalQuad(vec2 p,vec2 a,vec2 b,vec2 c,vec2 d){return max(max(opticalEdge(p,a,b),opticalEdge(p,b,c)),max(opticalEdge(p,c,d),opticalEdge(p,d,a)));}
+vec3 opticalSpace(vec3 p){
+    p.xy=rot(-.23)*p.xy;
+    p.xz=rot(.14+.11*sin(u_time*.19)+u_mouse.x*.27)*p.xz;
+    p.yz=rot(-.25+.07*cos(u_time*.23)+u_mouse.y*.22)*p.yz;
+    p.x+=.14*p.y;
+    p.z-=.33*sin(p.x*3.7+.15)+.15*sin(p.y*4.1-.3)+.19*p.x*p.y+.040*sin(p.y*4.0+u_time*.18)*u_focus;
+    return p;
+}
 vec2 hingeMap(vec3 p){
-    p=hingeSpace(p);
-    float aperture=.94+(.18+.22*u_focus)*sin(u_time*.45);
-    // Three connected folded plates share actual raised crease geometry. Their
-    // different punched apertures stay legible through the articulation.
-    vec3 a=p+vec3(.17,0,0);a.xz=rot(-aperture*1.05)*a.xz;a.x+=.17;
-    vec3 b=p;
-    vec3 c=p-vec3(.17,0,0);c.xz=rot(aperture*.85)*c.xz;c.x-=.17;
-    float left=box3(a,vec3(.17,.36,.028),.012);
-    float center=box3(b,vec3(.17,.36,.028),.012);
-    float right=box3(c,vec3(.17,.36,.028),.012);
-    left=max(left,-box3(a-vec3(0,.115,0),vec3(.067,.10,.12),.005));
-    left=max(left,-box3(a-vec3(.004,-.20,0),vec3(.073,.022,.12),.004));
-    center=max(center,-box3(b-vec3(0,.035,0),vec3(.065,.205,.12),.005));
-    right=max(right,-box3(c-vec3(0,-.155,0),vec3(.090,.024,.12),.004));
-    right=max(right,-box3(c-vec3(-.02,.15,0),vec3(.043,.061,.12),.004));
-    float leftRib=box3(a-vec3(-.151,0,.037),vec3(.010,.34,.009),.004);
-    float rightRib=box3(c-vec3(.151,0,.037),vec3(.010,.34,.009),.004);
-    float folds=min(box3(p-vec3(-.17,0,0),vec3(.014,.373,.039),.008),box3(p-vec3(.17,0,0),vec3(.014,.373,.039),.008));
-    folds=min(folds,min(box3(p-vec3(-.17,.372,0),vec3(.024,.012,.043),.006),box3(p-vec3(.17,-.372,0),vec3(.024,.012,.043),.006)));
-    return vec2(min(folds,min(min(left,leftRib),min(center,min(right,rightRib)))),0.0);
+    vec3 q=opticalSpace(p);
+    vec2 contour=(q.xy-vec2(-.035,.015))/vec2(.70,.47);
+    float angle=atan(contour.y,contour.x);
+    float radius=1.0+.105*sin(3.0*angle+.60)+.105*sin(angle-.65)-.055*cos(2.0*angle+1.3);
+    float outer=(length(contour)-radius)*.43;
+    vec2 h=q.xy-vec2(.065,.012);h.y+=.16*h.x*h.x;
+    float inner=max(opticalEdge(h,vec2(-.19,-.18),vec2(.31,-.035)),max(opticalEdge(h,vec2(.31,-.035),vec2(.045,.235)),opticalEdge(h,vec2(.045,.235),vec2(-.19,-.18))))-.025;
+    float thickness=.069+.060*pow(sin(q.x*2.8-.4),2.0)+.025*cos(q.y*4.0+.3);
+    vec2 d=vec2(max(outer,-inner),abs(q.z)-thickness);
+    return vec2(min(max(d.x,d.y),0.0)+length(max(d,0.0))-.044,thickness);
+}
+vec3 opticalNormal(vec3 p){vec2 e=vec2(.0016,0);return normalize(vec3(hingeMap(p+e.xyy).x-hingeMap(p-e.xyy).x,hingeMap(p+e.yxy).x-hingeMap(p-e.yxy).x,hingeMap(p+e.yyx).x-hingeMap(p-e.yyx).x));}
+vec3 opticalBackdrop(vec2 uv){
+    float atmosphere=exp(-dot(uv-vec2(-.12,.25),uv-vec2(-.12,.25))*1.8);
+    vec3 color=mix(u_primary*.90,mix(u_primary,u_secondary,.17),atmosphere*.70);
+    vec2 grid=abs(fract((uv+vec2(.04,.12))*vec2(5.0,5.0))-.5);
+    float rules=max(1.0-smoothstep(.001,.003,grid.x),1.0-smoothstep(.001,.003,grid.y));
+    color=mix(color,u_ink,rules*.028);
+    vec2 field=rot(.035)*(uv-vec2(.03,-.18));
+    float words=typeMask(vec2((field.x+.96)/1.92,(field.y+.105)/.21),0.0);
+    color=mix(color,u_ink,words*.53);
+    float stripes=typeMask(vec2((uv.x+.90)/1.80,(uv.y+.075)/.26),3.0);
+    color=mix(color,u_ink,stripes*.32);
+    vec2 metaUV=vec2((uv.x+.77)/.38,(uv.y-.365)/.080);
+    float meta=typeMask(vec2(metaUV.x*.5,metaUV.y),2.0)*step(0.0,metaUV.x)*step(metaUV.x,1.0);
+    color=mix(color,u_ink,meta*.65);
+    return color;
 }
 vec3 chromeHinge(vec2 uv){
-    vec3 bg=mix(u_ink,vec3(.013,.021,.034),smoothstep(-.5,.5,uv.y));
-    float floorLine=exp(-abs(uv.y+.43)*90.0);bg+=u_primary*floorLine*.022;
-    float shadow=exp(-dot((uv-vec2(.02,-.40))/vec2(.49,.045),(uv-vec2(.02,-.40))/vec2(.49,.045)));
-    bg*=1.0-shadow*.60;
-    vec3 ro=vec3(0,0,2.8),rd=normalize(vec3(uv*1.12,-2.8));
-    float distance=1.9;vec2 hit=vec2(0);bool found=false;
-    for(int i=0;i<72;i++){hit=hingeMap(ro+rd*distance);if(hit.x<.0012){found=true;break;}distance+=max(hit.x*.74,.0008);if(distance>4.0)break;}
-    if(!found)return bg;
-    vec3 p=ro+rd*distance;vec2 e=vec2(.0018,0);
-    vec3 n=normalize(vec3(hingeMap(p+e.xyy).x-hingeMap(p-e.xyy).x,hingeMap(p+e.yxy).x-hingeMap(p-e.yxy).x,hingeMap(p+e.yyx).x-hingeMap(p-e.yyx).x));
-    vec3 reflection=reflect(rd,n);float facing=max(dot(n,-rd),0.0);
-    float strip=smoothstep(-.25,-.17,reflection.y)*(1.0-smoothstep(.13,.20,reflection.y));
-    float upright=exp(-pow((reflection.x+.48)/.105,2.0));
-    float ceiling=exp(-pow((reflection.y-.60)/.19,2.0));
-    float edgeStrip=exp(-pow((reflection.x-.21)/.045,2.0));
-    vec3 steel=mix(u_primary*.90,vec3(.008,.014,.023),strip*.985);
-    steel+=vec3(.87,.93,.98)*(ceiling*.90+upright*.80+edgeStrip*.55);
-    steel+=u_secondary*exp(-pow((reflection.x-.38)/.22,2.0))*.045;
-    float rim=pow(1.0-facing,2.5);steel+=mix(u_primary,u_secondary,.15)*rim*.15;
-    vec3 local=hingeSpace(p);
-    float etch=exp(-abs(fract((local.y+.4)*30.0)-.5)*85.0)*step(.39,abs(local.x));
-    steel*=1.0-etch*.28;
-    float brushed=(hash(floor(gl_FragCoord.xy*vec2(.25,1.0)))-.5)*u_grain*.025;
-    return clamp((steel+brushed)*u_intensity,0.0,1.0);
+    vec3 color=opticalBackdrop(uv);
+    vec3 ro=vec3(0,0,2.8),rd=normalize(vec3((uv-vec2(.015,.015))*1.43,-2.8));
+    float distance=1.45;vec2 hit=vec2(0);bool found=false;
+    for(int i=0;i<96;i++){hit=hingeMap(ro+rd*distance);if(hit.x<.0011){found=true;break;}distance+=max(hit.x*.46,.0007);if(distance>4.1)break;}
+    if(!found)return color;
+    vec3 p=ro+rd*distance,n=opticalNormal(p),inside=refract(rd,n,1.0/1.47);
+    float travel=.009;vec3 back=p+inside*travel;
+    for(int j=0;j<38;j++){back=p+inside*travel;float d=hingeMap(back).x;if(d>.001&&travel>.025)break;travel+=max(abs(d)*.48,.004);if(travel>.82)break;}
+    vec3 backN=opticalNormal(back),outward=refract(inside,-backN,1.47);
+    if(dot(outward,outward)<.001)outward=inside;
+    vec2 refracted=(back.xy+outward.xy*max(0.0,(-.82-back.z)/min(outward.z,-.09)))/1.43;
+    float dispersion=.007+.012*travel;
+    vec3 through=vec3(opticalBackdrop(refracted+n.xy*dispersion).r,opticalBackdrop(refracted).g,opticalBackdrop(refracted-n.xy*dispersion).b);
+    through=pow(max(through,0.0),vec3(1.28))*exp(-travel*vec3(5.4,4.6,3.8));
+    vec3 reflection=reflect(rd,n);float facing=max(dot(n,-rd),0.0),fresnel=.055+.945*pow(1.0-facing,4.0);
+    float broad=exp(-pow((reflection.y+.29)/.32,2.0));
+    float softbox=exp(-pow((reflection.x+.53)/.30,2.0));
+    float slash=exp(-pow((reflection.y+.42*reflection.x-.26)/.036,2.0));
+    vec3 environment=mix(u_ink*.11,u_primary*1.45,clamp(broad*.95+softbox*.62,0.0,1.0));
+    environment+=vec3(.93,.98,1.0)*slash*.85;
+    float edgeGlow=pow(1.0-facing,3.0)*(.15+.85*exp(-pow((reflection.x-.23)/.42,2.0)));
+    vec3 spectral=.5+.5*cos(vec3(0.0,2.1,4.2)+reflection.y*7.0+reflection.x*2.8);
+    color=mix(through,environment,.43+fresnel*.49)+spectral*edgeGlow*.22;
+    float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.055;
+    return clamp(color*u_intensity+grain,0.0,1.0);
 }
 float edge(vec2 p,vec2 a,vec2 b){vec2 e=b-a;return -(e.x*(p.y-a.y)-e.y*(p.x-a.x))/max(length(e),.00001);}
 float quad(vec2 p,vec2 a,vec2 b,vec2 c,vec2 d){return max(max(edge(p,a,b),edge(p,b,c)),max(edge(p,c,d),edge(p,d,a)));}
@@ -168,27 +186,41 @@ float typeMask(vec2 p,float row){
 }
 vec3 glyphEngine(vec2 uv){
     vec3 color=u_primary;
-    float phase=u_time*.35,span=.08+.13*u_focus;
-    vec2 upper=vec2((uv.x+.98+span*sin(phase))/1.90,(uv.y+.045)/.36);
-    float letter=floor(upper.x*9.0);
-    upper.y+=.035*sin(letter*1.1+phase*.85);
-    float main=typeMask(upper,0.0);
-    color=mix(color,u_ink,main);
-    vec2 lower=vec2((uv.x+1.15-span*sin(phase*.8))/2.17,(uv.y+.38)/.35);
-    float outline=typeMask(lower,1.0);
-    color=mix(color,u_secondary,outline);
-    // A turning, severely cropped monogram interrupts the horizontal word, while
-    // the same authored atlas stays a true generated graphic in frozen exports.
-    vec2 turned=rot(-.16+.06*sin(phase*.7))*(uv-vec2(.45,.26));
-    float block=1.0-smoothstep(0.0,.0015,box2(turned,vec2(.31,.245)));
-    vec2 mono=vec2((turned.x+.31)/.62,(turned.y+.245)/.49);
-    float monogram=typeMask(mono,2.0);
-    color=mix(color,u_secondary,block*.97);color=mix(color,u_primary,monogram*block);
-    float rail=step(abs(uv.y-.34),.0035)*step(uv.x,.05);
-    color=mix(color,u_ink,rail);
-    vec2 serial=vec2((uv.x+.72)/.34,(uv.y+.03)/.11);
-    color=mix(color,u_secondary,typeMask(serial,3.0));
-    float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.055;
+    float phase=u_time*.24;
+    float pulse=smoothstep(-.75,.75,sin(phase));
+    float compression=1.0-.065*pulse*u_focus;
+    vec2 p=vec2(uv.x/compression,uv.y);
+    // A shared nine-cell construction produces MON / ARCH / IC. Individual
+    // letters retain the same stroke pitch and stencil cuts in every fragment.
+    vec2 top=vec2((p.x+.95-.025*pulse)/1.43,(p.y-.14)/.39);
+    float mon=typeMask(vec2(top.x/3.0,top.y),0.0);
+    vec2 middle=vec2((p.x+1.06+.04*pulse)/1.91,(p.y+.255)/.39);
+    float arch=typeMask(vec2((3.0+middle.x*4.0)/9.0,middle.y),0.0);
+    vec2 lower=vec2((p.x-.06+.035*pulse)/.93,(p.y+.645)/.39);
+    float ic=typeMask(vec2((7.0+lower.x*2.0)/9.0,lower.y),0.0);
+    mon*=step(0.0,top.x)*step(top.x,1.0);
+    arch*=step(0.0,middle.x)*step(middle.x,1.0);
+    ic*=step(0.0,lower.x)*step(lower.x,1.0);
+    float body=max(mon,max(arch,ic));color=mix(color,u_ink,body);
+    // One aligned orange interruption reveals a displaced slice of the same
+    // letter construction; it is a typographic event rather than a floating card.
+    float band=1.0-smoothstep(.069,.071,abs(p.y+.028));
+    color=mix(color,u_secondary,band);
+    vec2 cut=vec2(p.x+.090+.035*pulse,p.y-.010);
+    vec2 cutWord=vec2((cut.x+1.06)/1.91,(cut.y+.255)/.39);
+    float displaced=typeMask(vec2((3.0+cutWord.x*4.0)/9.0,cutWord.y),0.0)*step(0.0,cutWord.x)*step(cutWord.x,1.0);
+    color=mix(color,u_ink,displaced*band);
+    float hair=1.0-smoothstep(.0006,.0016,abs(p.y+.098));color=mix(color,u_ink,hair*.55);
+    float upperRule=1.0-smoothstep(.0006,.0016,abs(p.y-.402));color=mix(color,u_ink,upperRule*.38);
+    float vertical=1.0-smoothstep(.0006,.0016,abs(p.x-.568));color=mix(color,u_ink,vertical*.23);
+    vec2 r=p-vec2(.568,.402);
+    float cross=min(segment(r,vec2(-.016,0),vec2(.016,0)),segment(r,vec2(0,-.016),vec2(0,.016)));
+    color=mix(color,u_ink,(1.0-smoothstep(.0006,.0016,cross))*.85);
+    vec2 microUV=vec2((p.x+.76)/.35,(p.y+.39)/.070);
+    float micro=typeMask(vec2(.5+microUV.x*.5,microUV.y),2.0)*step(0.0,microUV.x)*step(microUV.x,1.0);
+    color=mix(color,u_ink,micro*.85);
+    // Fine grain remains subordinate to the repeated letterform geometry.
+    float grain=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.040;
     return clamp(color*u_intensity+grain,0.0,1.0);
 }
 vec2 route(float t,vec2 b){
@@ -255,11 +287,29 @@ interface Resources {
 function paintPanel(){
     const canvas=document.createElement("canvas");canvas.width=1024;canvas.height=1024
     const c=canvas.getContext("2d");if(!c)throw new Error("Could not create original type atlas.")
-    c.clearRect(0,0,1024,1024);c.fillStyle="#ffffff";c.strokeStyle="#ffffff";c.textBaseline="alphabetic"
-    c.font="900 210px sans-serif";c.fillText("MONARCHIC",20,206,984)
-    c.lineWidth=3.2;c.strokeText("MONARCHIC",20,462,984)
-    c.font="900 290px sans-serif";c.fillText("MC",20,747,984)
-    c.font="900 128px sans-serif";c.fillText("08 / M",20,972,984)
+    c.clearRect(0,0,1024,1024);c.fillStyle="#ffffff";c.strokeStyle="#ffffff"
+    const polygon=(points:number[][])=>{c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();c.fill()}
+    const line=(points:number[][])=>{c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke()}
+    const draw=(letter:string,x:number,y:number,w:number,h:number)=>{
+        c.save();c.translate(x,y);c.scale(w/6,h/9);c.lineWidth=1.24;c.lineJoin="miter";c.lineCap="butt"
+        if(letter==="M")line([[.62,9],[.62,.3],[3,4.15],[5.38,.3],[5.38,9]])
+        else if(letter==="O"){polygon([[0,1],[1,0],[5,0],[6,1],[6,8],[5,9],[1,9],[0,8]]);c.globalCompositeOperation="destination-out";polygon([[1.24,1.6],[1.6,1.24],[4.4,1.24],[4.76,1.6],[4.76,7.4],[4.4,7.76],[1.6,7.76],[1.24,7.4]]);c.globalCompositeOperation="source-over"}
+        else if(letter==="N")line([[.62,9],[.62,.4],[5.38,8.6],[5.38,0]])
+        else if(letter==="A"){line([[.62,9],[2.5,.62],[3.5,.62],[5.38,9]]);line([[1.55,5.3],[4.45,5.3]])}
+        else if(letter==="R"){line([[.62,9],[.62,.62],[4.3,.62],[5.38,1.7],[5.38,3.9],[4.3,4.98],[.62,4.98]]);line([[3.1,4.98],[5.45,9]])}
+        else if(letter==="C")line([[5.55,1.4],[4.75,.62],[1.4,.62],[.62,1.4],[.62,7.6],[1.4,8.38],[4.75,8.38],[5.55,7.6]])
+        else if(letter==="H"){line([[.62,0],[.62,9]]);line([[5.38,0],[5.38,9]]);line([[.62,4.5],[5.38,4.5]])}
+        else if(letter==="I"){line([[.2,.62],[5.8,.62]]);line([[3,.62],[3,8.38]]);line([[.2,8.38],[5.8,8.38]])}
+        // A common shallow diagonal stencil break ties every glyph to one pitch.
+        c.globalCompositeOperation="destination-out";polygon([[-.4,4.55],[6.4,3.87],[6.4,4.12],[-.4,4.80]]);c.globalCompositeOperation="source-over"
+        c.restore()
+    }
+    const word="MONARCHIC";for(let i=0;i<word.length;i++)draw(word[i],i*(1024/9)+6,12,1024/9-12,224)
+    // The second row is reserved for independent fragments of the same system.
+    draw("M",18,270,420,224);draw("C",550,270,420,224)
+    c.font="500 52px monospace";c.textBaseline="alphabetic";c.fillText("OL-05",12,585,480);c.fillText("OL-07",530,585,480)
+    c.font="500 30px monospace";c.fillText("MATERIAL STUDY",12,642,480);c.fillText("TYPE STUDY",530,642,480)
+    for(let i=0;i<48;i++){const x=i*(1024/48);c.fillRect(x,786,i%6===0?8:i%3===0?4:1.2,214)}
     return canvas
 }
 
@@ -848,9 +898,9 @@ export default function OriginalFormStudy(props: Props) {
     const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,
         scale:Math.max(.5,scale),grain:Math.max(0,grain),focus:Math.max(0,Math.min(1,focus)),refraction:Math.max(0,refraction),interactive,primary,secondary,ink}
     const requestMotion=useStudySurface(root,canvas,settings,target,"OriginalFormStudy.tsx",(s,e)=>{setStatus(s);setError(e??"")})
-    const source=STUDIES[study],color=study==="fault"||study==="glyph"?"#17171b":"#e2e6ef"
+    const source=STUDIES[study],color=study==="hinge"?ink:study==="fault"||study==="glyph"?"#17171b":"#e2e6ef"
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
-    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="fault"||study==="glyph"?primary:ink,color}}>
+    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="hinge"||study==="fault"||study==="glyph"?primary:ink,color}}>
         <canvas ref={canvas} role="img" aria-label={source.title+", independently composed animated graphic "+source.key} style={{display:"block",width:"100%",height:"100%",touchAction:"pan-y"}} />
         {showLabels&&<>
             <div style={{position:"absolute",left:"5%",top:"6%",pointerEvents:"none"}}>
