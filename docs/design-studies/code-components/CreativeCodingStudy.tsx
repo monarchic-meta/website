@@ -135,39 +135,42 @@ vec3 ditheredTerrain(vec2 frag) {
     return index < .5 ? u_ink : index < 1.5 ? u_primary : u_secondary;
 }
 vec3 coronal(vec2 p) {
-    vec3 ro = vec3(0,0,2.65);
-    vec3 rd = normalize(vec3(p*2.05,-2.65));
-    vec3 light = vec3(0.0);
-    float transmittance = 1.0;
-    for(int i=0;i<64;i++) {
-        float travel = 1.32+float(i)*.041;
-        vec3 q = ro+rd*travel;
-        q.xz = rot(.22*sin(u_time*.16)+u_mouse.x*.45)*q.xz;
-        q.yz = rot(.25+u_mouse.y*.35)*q.yz;
-        float angle = atan(q.y,q.x);
-        float n = fbm(q*5.0+vec3(u_time*.15,-u_time*.11,u_time*.07));
-        float radius = .59 + .055*sin(angle*3.0+u_time*.38)
-            + .025*sin(angle*7.0-u_time*.47);
-        float warp = .055*(n-.5) + .026*sin(angle*12.0+q.z*9.0-u_time*.8);
-        float tube = length(vec2(length(q.xy)-radius,q.z*.88));
-        float edge = tube-(.075+warp);
-        float filament = pow(.5+.5*sin(angle*34.0-q.z*35.0-u_time*1.3+9.0*n),7.0);
-        float core = exp(-abs(edge)*135.0)*(.22+filament*1.6);
-        float smoke = exp(-max(edge,0.0)*18.0)*smoothstep(-.04,.025,edge)
-            * pow(max(n-.25,0.0)*1.5,2.0);
-        // Uneven arcs and wispy emission retain a dark aperture, not a solid tube.
-        float arc = .3+.7*pow(.5+.5*sin(angle*2.0+u_time*.23+q.z*5.0),2.0);
-        float plume = exp(-max(edge,0.0)*8.0)*smoothstep(.015,.13,edge)
-            * pow(max(n-.32,0.0)*1.8,2.0)
-            * pow(.5+.5*sin(angle*5.0-u_time*.4+q.z*10.0),2.0);
-        float energy = (core*3.2+smoke*1.2+plume*1.1)*arc;
-        float palette = .5+.5*sin(angle*1.8+q.z*4.0-u_time*.18);
-        vec3 color = mix(u_primary,u_secondary,palette);
-        color = mix(color,vec3(.88,.98,1.0),min(core*.22,.65));
-        light += color*energy*.22*transmittance*u_intensity;
-        transmittance *= exp(-smoke*.025);
+    // Broad irregular plasma folds replace the repeated bead-like rim. The
+    // observed aperture, hot shell and escaping wisps guide original geometry.
+    vec3 ro=vec3(0,0,2.65),rd=normalize(vec3(p*2.05,-2.65));
+    vec3 light=vec3(0);float transmittance=1.0;
+    for(int i=0;i<64;i++){
+        float travel=1.30+float(i)*.042;
+        vec3 q=ro+rd*travel;
+        q.xz=rot(.16*sin(u_time*.16)+u_mouse.x*.45)*q.xz;
+        q.yz=rot(.20+u_mouse.y*.35)*q.yz;
+        float angle=atan(q.y,q.x),radius=.51+.04*sin(angle*2.0+u_time*.31)+.022*cos(angle*5.0-u_time*.21);
+        vec3 drift=vec3(u_time*.11,-u_time*.16,u_time*.08);
+        float broad=fbm(q*4.4+drift);
+        vec3 curled=q*11.0+vec3(broad*3.2,-broad*2.4,broad*1.7);
+        float fine=noise(curled-drift*1.8);
+        float tube=length(vec2(length(q.xy)-radius,q.z*.92));
+        float shell=tube-(.19+.085*(broad-.5)+.04*sin(q.y*9.0+q.z*7.0-u_time*.5));
+        float fold=sin(q.x*19.0+q.y*13.0+q.z*27.0+fine*7.0+broad*8.0-u_time*.8);
+        float thread=exp(-abs(fold)*6.8);
+        float hot=exp(-abs(shell)*54.0)*(.42+1.9*thread);
+        float veil=exp(-abs(shell)*15.0)*(.22+.8*fine*fine);
+        float escaping=max(shell,0.0);
+        float sector=pow(.5+.5*cos(angle*2.0-4.55),7.0);
+        sector*=.65+.35*sin(angle+.5);
+        float wisp=exp(-abs(sin(q.x*18.0-q.y*21.0+q.z*12.0+fine*8.0+broad*4.0-u_time*.6))*5.0);
+        float plume=exp(-escaping*4.3)*smoothstep(.025,.18,shell)*sector
+            *(.08+wisp*.92)*pow(max(broad-.23,0.0)*1.8,2.0);
+        // Broad angular sectors provide uneven emission without periodic cells.
+        float arc=.22+.78*pow(.5+.5*sin(angle*2.0+q.z*3.0+u_time*.23),2.0);
+        float energy=(hot*5.0+veil*1.0)*arc+plume*6.0;
+        float palette=.5+.5*sin(angle*2.0+q.z*3.4+broad*.8-u_time*.12);
+        vec3 color=mix(u_primary,u_secondary,palette);
+        color=mix(color,vec3(.98,1.0,1.0),clamp(hot*.58,0.0,.84));
+        light+=color*energy*.19*transmittance*u_intensity;
+        transmittance*=exp(-veil*.009);
     }
-    return vec3(1.0)-exp(-light*3.0);
+    return vec3(1)-exp(-light*3.1);
 }
 vec3 wave(vec2 p) {
     // Independent volumetric curtain: a moving folded sheet, not a source image.

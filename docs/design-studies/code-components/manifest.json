@@ -4,7 +4,7 @@
   "section": "Source inspiration",
   "component": {
     "source": "CreativeCodingStudy.tsx",
-    "sourceSHA256": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+    "sourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
     "framerCodePath": "CreativeCodingStudy.tsx",
     "framerComponentId": "codeFile/bPPSvaB:default"
   },
@@ -201,7 +201,15 @@
       },
       "framerDesignPage": "bY_Q8AQKP",
       "framerReferenceSection": "VvoNblwjH",
-      "framerReferenceDesignPage": "uj_I7x6To"
+      "framerReferenceDesignPage": "uj_I7x6To",
+      "fidelityRefinement": {
+        "date": "2026-10-29",
+        "sourceKey": "CC-005",
+        "change": "Thicker white-hot cyan/magenta plasma shell with asymmetric wisps and a continuous angular color blend.",
+        "evidenceScope": "Visual comparison with archived sampled source stills; exact source algorithms, full clips and motion fidelity remain unverified.",
+        "status": "Saved in Framer; byte-exact source readback, editor reload, image quality and Preview motion verified.",
+        "framerVerifiedDate": "2026-10-29"
+      }
     },
     {
       "id": "LC-04",
@@ -2662,7 +2670,7 @@
   "components": [
     {
       "source": "CreativeCodingStudy.tsx",
-      "sourceSHA256": "472924ed1af8b55190fdb2c7521e45f0815c55eb59340094dd89c734665e1f77",
+      "sourceSHA256": "0c461c28561e309c5c0558849c58501ae9f18f06cf7c4654f5bc09187db5c6a1",
       "framerCodePath": "CreativeCodingStudy.tsx",
       "framerComponentId": "codeFile/bPPSvaB:default"
     },
