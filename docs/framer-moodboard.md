@@ -24,6 +24,12 @@ inherited Phone placements. The [original live handoff](design-studies/code-comp
 records those compositions and their controls. Source inspiration remains a
 conceptual collection spanning references, recreations and source-led live work.
 
+The owner rejected the first OL pass's visual fit. Revision 02 reworks OL-01,
+OL-03, OL-05 and OL-07 around tonal raster volume, layered filament geometry,
+optical material and constructed typography; the other four remain unchanged.
+The handoff preserves the first saved proof and records the reference influences.
+Saved-state and motion checks pass; owner feedback on the revised style is pending.
+
 ## Sources and original compositions
 
 Keep source-led work and original compositions distinct across the five pages:

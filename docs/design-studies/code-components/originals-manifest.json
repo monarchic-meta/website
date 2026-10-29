@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "classification": "original-composition",
   "section": "Original compositions",
-  "authoringStatus": "Saved original compositions; editor reload and Desktop/Phone Preview verified",
+  "authoringStatus": "Four revised style anchors saved and technically verified; owner style feedback pending",
   "independentComposition": true,
   "externalAssets": false,
   "components": [
     {
       "source": "OriginalSignalStudy.tsx",
-      "sourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "sourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
       "framerCodePath": "OriginalSignalStudy.tsx",
       "framerComponentId": "codeFile/XOna2aN:default"
     },
     {
       "source": "OriginalFormStudy.tsx",
-      "sourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "sourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
       "framerCodePath": "OriginalFormStudy.tsx",
       "framerComponentId": "codeFile/mVHoAUI:default"
     }
@@ -38,14 +38,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "threshold",
-        "primary": "#2f3bff",
-        "secondary": "#dfff38",
-        "ink": "#0a0c10"
+        "primary": "#a84c32",
+        "secondary": "#e9e0cf",
+        "ink": "#242b2b"
       },
       "section": "Original compositions",
       "mode": "threshold",
-      "description": "Cutout pigment slabs, ordered tonal stipple and offset ink respond to moving print pressure.",
-      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "description": "A thick folded rust-and-charcoal form with a long negative opening is shaded through limited-palette tonal dithering on a warm paper field.",
+      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -78,7 +78,59 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Threshold press",
+          "description": "Cutout pigment slabs, ordered tonal stipple and offset ink respond to moving print pressure.",
+          "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "threshold",
+            "primary": "#2f3bff",
+            "secondary": "#dfff38",
+            "ink": "#0a0c10"
+          },
+          "framerCompositionNote": "A cut-paper threshold becomes a dithered field of cobalt, acid yellow and shadow."
+        }
+      ],
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 2,
+        "change": "Replaced disconnected outlined slabs and a decorative stipple mask with one original dimensional form, luminance-driven raster coverage, changing fold illumination and a rust/paper/charcoal palette.",
+        "styleInfluences": [
+          {
+            "catalogId": "GRA-007",
+            "aspect": "Tonal print texture that describes dimensional faces."
+          },
+          {
+            "catalogId": "WEB-006",
+            "aspect": "Raster density and sparse-to-dense volume."
+          },
+          {
+            "catalogId": "CC-003",
+            "aspect": "Ordered pixel-stipple distribution and tonal palette coverage."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and primary lettering.",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "Tonal palette distribution builds a single folded volume and its open counterform.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 02"
     },
     {
       "id": "OL-02",
@@ -105,7 +157,7 @@
       "section": "Original compositions",
       "mode": "loom",
       "description": "Broad routing ribbons weave over and under one another through negative-space cuts.",
-      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -138,7 +190,18 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 1,
+        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+        "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "Woven signal ribbons interlace across a precise digital field.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
     },
     {
       "id": "OL-03",
@@ -158,14 +221,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "phosphor",
-        "primary": "#5468ff",
-        "secondary": "#b9ff72",
-        "ink": "#050a12"
+        "primary": "#bde5ed",
+        "secondary": "#b68d67",
+        "ink": "#07121d"
       },
       "section": "Original compositions",
       "mode": "phosphor",
-      "description": "Broken laser arcs, scanning traces and discrete rails create a dark phosphor signal field.",
-      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "description": "An asymmetric folded phosphor mesh carries dense fine strands, dark gaps and a concentrated cyan-white signal through a navy field.",
+      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -198,7 +261,59 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Phosphor atlas",
+          "description": "Broken laser arcs, scanning traces and discrete rails create a dark phosphor signal field.",
+          "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "phosphor",
+            "primary": "#5468ff",
+            "secondary": "#b9ff72",
+            "ink": "#050a12"
+          },
+          "framerCompositionNote": "Broken laser arcs and scanning traces connect to discrete phosphor signal rails."
+        }
+      ],
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 2,
+        "change": "Replaced sparse radar arcs and detached rails with an independently composed folded mesh volume, varying strand density and a localized moving light trace.",
+        "styleInfluences": [
+          {
+            "catalogId": "GRA-005",
+            "aspect": "Fine technical wire structure and controlled density."
+          },
+          {
+            "catalogId": "GRA-008",
+            "aspect": "Luminous raster material and clear dimensional silhouette."
+          },
+          {
+            "catalogId": "WEB-005",
+            "aspect": "Spatial depth, dark field and restrained signal markers."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and primary lettering.",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "Layered filaments, sparse cross-links and a traveling light seam form a translucent conduit.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 02"
     },
     {
       "id": "OL-04",
@@ -225,7 +340,7 @@
       "section": "Original compositions",
       "mode": "swarm",
       "description": "Asymmetric vector marks travel through an elastic contour field with deliberate open space.",
-      "componentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+      "componentSourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
       "framerComponentId": "codeFile/XOna2aN:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -258,7 +373,18 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 1,
+        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+        "previousComponentSourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "An asymmetric swarm balances sharp vector motion with a quiet frame.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
     },
     {
       "id": "OL-05",
@@ -278,14 +404,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "hinge",
-        "primary": "#b7c8d0",
-        "secondary": "#d9f44a",
-        "ink": "#080b10"
+        "primary": "#e7ebed",
+        "secondary": "#9fb8c8",
+        "ink": "#20262d"
       },
       "section": "Original compositions",
       "mode": "hinge",
-      "description": "Three connected chrome plates articulate around raised creases; punched counterforms and hard reflections reveal the fold.",
-      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "description": "One asymmetric curled optical membrane has varying thickness, a triangular counterform, broad pale reflections and dark transmitted areas that refract a locally generated stripe/type field.",
+      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -318,7 +444,59 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Chrome hinge",
+          "description": "Three connected chrome plates articulate around raised creases; punched counterforms and hard reflections reveal the fold.",
+          "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "hinge",
+            "primary": "#b7c8d0",
+            "secondary": "#d9f44a",
+            "ink": "#080b10"
+          },
+          "framerCompositionNote": "Mirrored plates hinge through space, changing their reflected light."
+        }
+      ],
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 2,
+        "change": "Replaced articulated sheet-metal plates with one curved optical solid; deepened compound curvature, softened the contour and made the generated background field visibly refract. Hinge-mode labels now use ink on the pale surface.",
+        "styleInfluences": [
+          {
+            "catalogId": "WEB-014",
+            "aspect": "Contrast between broad pale reflections and a dark transmitted material interior."
+          },
+          {
+            "catalogId": "CC-016",
+            "aspect": "Fine grain and localized spectral edge color."
+          },
+          {
+            "catalogId": "GRA-010",
+            "aspect": "A transformed material surface integrated with a precise graphic field."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and primary lettering.",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "A curved optical membrane bends a locally generated stripe and type field.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 02"
     },
     {
       "id": "OL-06",
@@ -345,7 +523,7 @@
       "section": "Original compositions",
       "mode": "fault",
       "description": "Angular paper-like shards open a deep fault across vermilion, pink and ink planes.",
-      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -378,7 +556,18 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 1,
+        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+        "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "A fault in the surface turns flat color into ridges and displaced edges.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
     },
     {
       "id": "OL-07",
@@ -398,14 +587,14 @@
         "interactive": true,
         "showLabels": true,
         "study": "glyph",
-        "primary": "#d8f436",
-        "secondary": "#254cff",
-        "ink": "#17171b"
+        "primary": "#b7b8b5",
+        "secondary": "#f45a27",
+        "ink": "#161818"
       },
       "section": "Original compositions",
       "mode": "glyph",
-      "description": "A locally drawn MONARCHIC type atlas becomes an oversized cropped kinetic poster with an interrupted monogram.",
-      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "description": "A locally constructed nine-cell stencil alphabet becomes cropped and staggered MON/ARCH/IC fragments, with shared stroke pitch, chamfered counters, diagonal cuts and one displaced orange interruption.",
+      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -438,7 +627,65 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "previousCompositionRevisions": [
+        {
+          "date": "2026-10-29",
+          "revision": 1,
+          "name": "Glyph engine",
+          "description": "A locally drawn MONARCHIC type atlas becomes an oversized cropped kinetic poster with an interrupted monogram.",
+          "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.65,
+            "stillTime": 8,
+            "intensity": 1.1,
+            "scale": 1,
+            "grain": 0.35,
+            "focus": 0.65,
+            "refraction": 0.85,
+            "interactive": true,
+            "showLabels": true,
+            "study": "glyph",
+            "primary": "#d8f436",
+            "secondary": "#254cff",
+            "ink": "#17171b"
+          },
+          "framerCompositionNote": "A moving typographic engine treats a glyph as material and geometry."
+        }
+      ],
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 2,
+        "change": "Replaced ordinary font rows and a tilted card with hand-built letter geometry, a consistent construction rule, controlled compression and masking, fine registration and factual OL-07 labels on gray/black/orange.",
+        "styleInfluences": [
+          {
+            "catalogId": "GRA-001",
+            "sourceKey": "GRA-001-03",
+            "aspect": "Controlled staggering, scale contrasts and a single color interruption."
+          },
+          {
+            "catalogId": "GRA-002",
+            "sourceKey": "GRA-002-03",
+            "aspect": "Consistent letter construction, counterspaces and restrained technical detail."
+          },
+          {
+            "catalogId": "GRA-006",
+            "aspect": "Type used as an image with intentional negative space."
+          },
+          {
+            "catalogId": "GRA-009",
+            "aspect": "Disruptive crop and contrasting display/detail scales."
+          }
+        ],
+        "influenceScope": "Material, texture and composition principles; independently authored geometry and primary lettering.",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "Custom cut glyphs share a construction grid, staggered scale and an interrupted orange band.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / REVISION 02"
     },
     {
       "id": "OL-08",
@@ -465,7 +712,7 @@
       "section": "Original compositions",
       "mode": "relay",
       "description": "Asymmetric open rectilinear gates interlock at different depths around routed signal packets.",
-      "componentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+      "componentSourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88",
       "framerComponentId": "codeFile/mVHoAUI:default",
       "framerDesignPage": "sLT2tXsB2",
       "framerBoard": "nNyC2Bca6",
@@ -498,7 +745,18 @@
         }
       ],
       "framerPlacementStatus": "saved and editor-reload verified",
-      "framerVerifiedDate": "2026-10-29"
+      "framerVerifiedDate": "2026-10-29",
+      "styleReviewStatus": "awaiting owner feedback",
+      "compositionRevision": {
+        "date": "2026-10-29",
+        "revision": 1,
+        "change": "Composition and saved preset retained; the shared module hash changes because other modes were revised.",
+        "previousComponentSourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c",
+        "ownerReviewStatus": "awaiting-owner-feedback",
+        "technicalStatus": "saved and editor-reload verified"
+      },
+      "framerCompositionNote": "Orbital relays connect a technical diagram to a three-dimensional pulse.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC"
     }
   ],
   "totalCodeInstances": 24,
@@ -508,7 +766,7 @@
     "Phone Preview"
   ],
   "author": "Monarchic / Codex",
-  "compositionScope": "Independently composed procedural graphic building blocks. No catalog post is recreated and no externally authored artwork is embedded.",
+  "compositionScope": "Eight independently composed procedural graphic building blocks. Four revised anchors calibrate material, texture and composition against catalog influences; four previous studies remain intact. These are original forms and lettering, not close recreations of the referenced work.",
   "designPage": {
     "id": "sLT2tXsB2",
     "name": "05 / Original Live Coding",
@@ -558,9 +816,10 @@
   },
   "responsiveScope": "One set of mode/palette controls is inherited by Desktop 1200 and Phone 390. Artwork fills the available width after padding. Nominal overlay-scrollbar widths are 1080/350; observed classic-scrollbar Preview artwork is 1065×680 and 335×280 with a 15px scrollbar. Local GPU phase sampling separately uses 960×600 and 350×280. These are responsive graphic studies rather than a production UI.",
   "intentionalDifferences": [
-    "Exploratory graphic objects, not approved brand marks or implemented interface behavior.",
-    "The generated type atlas uses system sans-serif fallbacks; letterforms can vary by platform.",
-    "Frozen export/thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed."
+    "Exploratory graphic objects; style calibration awaits the owner's feedback.",
+    "The principal OL-07 letterforms are locally constructed geometric strokes; small factual labels use platform monospace fallbacks.",
+    "The optical material is an authored refraction/reflection approximation, not a spectral path tracer.",
+    "Export and thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed."
   ],
   "runtimeResourcePolicy": {
     "version": 2,
@@ -578,7 +837,7 @@
     "minimumRasterLongEdge": 384,
     "exportAndThumbnail": "Generated frozen frame at Still time; temporary GPU disposed."
   },
-  "savedVerification": {
+  "previousSavedVerification": {
     "date": "2026-10-29",
     "status": "saved-original-live-compositions-verified",
     "savedEditorVerified": true,
@@ -682,5 +941,119 @@
       "editorReloadAfterRestoreVerified": true,
       "restorationReceipt": "mcp/post-canvas-verification-report.json"
     }
+  },
+  "previousIntentionalDifferences": [
+    "Exploratory graphic objects, not approved brand marks or implemented interface behavior.",
+    "The generated type atlas uses system sans-serif fallbacks; letterforms can vary by platform.",
+    "Frozen export/thumbnail behavior is covered by runtime tests; actual Framer exported images have not been reviewed."
+  ],
+  "styleCalibration": {
+    "date": "2026-10-29",
+    "revision": 2,
+    "reworkedStudyIDs": [
+      "OL-01",
+      "OL-03",
+      "OL-05",
+      "OL-07"
+    ],
+    "retainedStudyIDs": [
+      "OL-02",
+      "OL-04",
+      "OL-06",
+      "OL-08"
+    ],
+    "reworkedStudies": 4,
+    "retainedStudies": 4,
+    "deletedStudies": 0,
+    "ownerFeedbackOnFirstPass": "The owner said the original eight did not feel as though they matched the requested style.",
+    "ownerReviewStatus": "awaiting-owner-feedback",
+    "influenceScope": "Catalog references inform material, texture, scale and composition principles. The new forms and primary letter geometry are independently composed; source-led recreations and their credits are unchanged.",
+    "technicalVerificationStatus": "saved and editor-reload verified"
+  },
+  "savedVerification": {
+    "date": "2026-10-29",
+    "revision": 2,
+    "status": "saved-four-anchor-style-reset-technically-verified",
+    "sourceHashes": {
+      "OriginalSignalStudy.tsx": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666",
+      "OriginalFormStudy.tsx": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88"
+    },
+    "originalStudies": 8,
+    "codeInstances": 24,
+    "reworkedStudies": 4,
+    "reworkedStudyIDs": [
+      "OL-01",
+      "OL-03",
+      "OL-05",
+      "OL-07"
+    ],
+    "retainedStudies": 4,
+    "retainedStudyIDs": [
+      "OL-02",
+      "OL-04",
+      "OL-06",
+      "OL-08"
+    ],
+    "savedEditorVerified": true,
+    "editorReloadVerified": true,
+    "styleApproval": "awaiting-owner-feedback",
+    "artifactLocation": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/original-style-reset-2026-10-29",
+    "artifacts": [
+      "framer/browser-verification.json",
+      "framer/browser-motion-metrics.json",
+      "framer/reload-board-state.json",
+      "mcp/style-reset-final-report.json",
+      "mcp/style-reset-after-raw.json",
+      "mcp/style-reset-updated-node-map.json",
+      "mcp/style-reset-post-canvas-report.json",
+      "mcp/style-reset-post-canvas-raw.json",
+      "gpu/verification.json",
+      "validation/resource-checks.json",
+      "validation/seven-checks/report.json",
+      "validation/retained-originals-pixel-comparison.json"
+    ],
+    "proofScope": "Current technical saved-state and actual browser checks for four revised original anchors, with four other originals retained. Technical correctness does not establish the owner's approval of the revised style. Exact actual surface coverage is recorded in the linked evidence. First-pass saved proof remains historical. No publication, production integration or actual exported-image review.",
+    "actualFramerPreview": {
+      "reworkedStudiesPerBreakpoint": 4,
+      "motionPairCount": 8,
+      "desktopArtCSS": {
+        "width": 1065,
+        "height": 680
+      },
+      "phoneArtCSS": {
+        "width": 335,
+        "height": 280
+      },
+      "pauseStudy": "OL-05",
+      "pausedChangedRGBChannels": 0,
+      "resumedLive": true,
+      "phoneHorizontalOverflow": false
+    },
+    "actualFramerCanvas": {
+      "study": "OL-05",
+      "optInMotionVerified": true,
+      "changedRGBChannels": 614740,
+      "generatedFrame": {
+        "width": 1024,
+        "height": 636
+      },
+      "restoredCanvasMotion": false,
+      "all24SavedCanvasMotionOff": true,
+      "editorReloadAfterRestoreVerified": true
+    },
+    "localValidation": {
+      "gpuPhaseFrames": 48,
+      "gpuMixedModes": 28,
+      "gpuDistinctFrames": 68,
+      "typescriptFiles": 7,
+      "glslStages": 16,
+      "resourcePlacements": 84,
+      "legacyResourcePlacements": 60,
+      "assertionGroupsPerRun": 12,
+      "peakContexts": 2,
+      "peakPixels": 1998984,
+      "retainedFourDesktopPhase8RGBIdentical": true
+    },
+    "layoutScope": "Fractional fill constraints are stored; MCP getRect intrinsic placeholders do not establish actual layout. Browser observed 1065×680 and 335×280 with a 15px classic scrollbar, versus nominal overlay-scrollbar widths 1080/350."
   }
 }

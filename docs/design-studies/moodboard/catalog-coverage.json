@@ -9716,11 +9716,11 @@
     "components": [
       {
         "source": "OriginalSignalStudy.tsx",
-        "sourceSHA256": "6e39b6aad61b8c98893f56001f1bfaa8ff03017e259d9e90b9cbaf64fec81591"
+        "sourceSHA256": "14e8b9c47ddc2c4d85d8344b5dee1d7f6f24c065010878a18500b080a9ae1666"
       },
       {
         "source": "OriginalFormStudy.tsx",
-        "sourceSHA256": "af23508163498e77c97aa039bb39e55e4aaa1d2e691306c354b13fa411ad458c"
+        "sourceSHA256": "24fabcb0927445dc08e2001e9972dd54f5d52b159ff4070d73cfbe4d2e2c1c88"
       }
     ],
     "studies": [
@@ -9782,8 +9782,25 @@
       "phone": "G00fi3nIM",
       "draft": true
     },
-    "verificationStatus": "saved and editor-reload verified; Desktop/Phone Preview verified",
+    "verificationStatus": "four revised anchors technically verified; owner style feedback pending",
     "verificationField": "savedVerification",
-    "verifiedDate": "2026-10-29"
+    "verifiedDate": "2026-10-29",
+    "styleCalibration": {
+      "revision": 2,
+      "reworkedStudyIDs": [
+        "OL-01",
+        "OL-03",
+        "OL-05",
+        "OL-07"
+      ],
+      "retainedStudyIDs": [
+        "OL-02",
+        "OL-04",
+        "OL-06",
+        "OL-08"
+      ],
+      "ownerReviewStatus": "awaiting-owner-feedback",
+      "manifestField": "styleCalibration"
+    }
   }
 }
