@@ -92,7 +92,8 @@ bounds and DPR when choosing raster detail, while preserving logical CSS units
 inside the shaders. Verify that every visible card upgrades after zoom or pan,
 retains detail after focus handoff, and recovers from cached-copy failures.
 Retain the 60-instance source-led regression and the mixed 84-instance set with
-24 original placements. Also check the 96-instance set with twelve logo placements,
+24 original placements. Also check the retained 96-instance set with twelve logo
+placements and the 105-instance set with nine additional 3D logo placements,
 at multiple zoom/DPR settings, hidden/offscreen
 cleanup and synchronous static capture. Nonempty pixels alone do not establish
 usable image quality; a frame-rate cap alone does not bound context allocation.

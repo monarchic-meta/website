@@ -9815,16 +9815,16 @@
     "section": "Original compositions",
     "materialManifest": "../code-components/logo-manifest.json",
     "motionManifest": "../code-components/logo-drop-manifest.json",
-    "count": 10,
-    "codeInstances": 30,
-    "materialTreatments": 4,
+    "count": 13,
+    "codeInstances": 39,
+    "materialTreatments": 7,
     "svgMotionTreatments": 6,
-    "totalProjectStudyPlacements": 114,
-    "countScope": "Four material treatments and six SVG motion treatments of the existing Monarchic mark; excludes source-led studies and the eight other original live compositions.",
+    "totalProjectStudyPlacements": 123,
+    "countScope": "Seven material treatments and six SVG motion treatments of the existing Monarchic mark; excludes source-led studies and the eight other original live compositions.",
     "components": [
       {
         "source": "LogoStudy.tsx",
-        "sourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e"
+        "sourceSHA256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf"
       },
       {
         "source": "LogoDropStudy.tsx",
@@ -9891,6 +9891,24 @@
         "name": "Carrier loop",
         "mode": "conveyor",
         "componentSource": "LogoDropStudy.tsx"
+      },
+      {
+        "id": "LG-11",
+        "name": "Machined extrusion",
+        "mode": "machined",
+        "componentSource": "LogoStudy.tsx"
+      },
+      {
+        "id": "LG-12",
+        "name": "Layered slab",
+        "mode": "slab",
+        "componentSource": "LogoStudy.tsx"
+      },
+      {
+        "id": "LG-13",
+        "name": "Glass relief",
+        "mode": "glass",
+        "componentSource": "LogoStudy.tsx"
       }
     ],
     "framerDesignPage": "wSe9_qdcJ",
@@ -9902,12 +9920,27 @@
       "phone": "BoGMiXsRD",
       "draft": true
     },
-    "verificationStatus": "three additional grayscale SVG profiles saved/editor-reload verified; new-mode Desktop/Phone motion and Conveyor Canvas verified",
+    "verificationStatus": "three additional monochrome 3D material studies saved/editor-reload verified; new-mode Desktop/Phone animation, Pause and resumed motion plus glass Canvas opt-in/restoration verified",
     "materialVerificationReference": "../code-components/logo-manifest.json#/savedVerification",
     "motionVerificationReference": "../code-components/logo-drop-manifest.json#/savedVerification",
-    "styleReviewStatus": "LG-05–07 monochrome diagonal motion accepted by owner; LG-08–10 and prior material treatments await feedback",
-    "paletteScope": "LG-05–10 use grayscale presets; the four prior material treatments are unchanged.",
-    "motionScope": "Six SVG variants share the finite carrier’s diagonal axis and stationary circle; LG-08–10 add stepped, reciprocal and repeated-train motion."
+    "styleReviewStatus": "LG-05–07 monochrome diagonal motion accepted by owner; later motion and material studies await feedback",
+    "paletteScope": "LG-05–13 use grayscale treatments. The four prior material studies retain their original palettes.",
+    "motionScope": "Six SVG variants share the finite carrier’s diagonal axis and stationary circle; LG-08–10 add stepped, reciprocal and repeated-train motion.",
+    "dimensionalScope": "LG-11–13 raymarch canonical-logo extrusion volumes: machined metal, three separated plates and bounded glass-like transmission.",
+    "currentMaterialVerification": {
+      "manifest": "../code-components/logo-manifest.json#/savedVerification",
+      "date": "2026-10-30",
+      "sourceSHA256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf",
+      "newStudies": 3,
+      "newCodeInstances": 9,
+      "materialStudies": 7,
+      "materialCodeInstances": 21,
+      "previousPlacementsPreserved": 114,
+      "editorReloadVerified": true,
+      "previewMotionPauseResumeVerified": true,
+      "canvasMotionAndRestorationVerified": true,
+      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-3d-round-2026-10-30"
+    }
   },
   "previousLogoStudies": {
     "classification": "original-logo-treatment",

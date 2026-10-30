@@ -3,10 +3,11 @@
 This page documents the twenty credited source-led studies. The eight
 [original live compositions](originals.md) have their own Design page, draft
 Preview lab, source files and [manifest](originals-manifest.json).
-Seven [logo studies](logo-studies.md) have a separate Design page and draft lab,
+Thirteen [logo studies](logo-studies.md) have a separate Design page and draft lab,
 using the canonical Monarchic SVG in independently authored live treatments.
-The three line-drop studies use SVG masks and vector motion without allocating
-WebGL contexts; the four material treatments retain their existing GPU budget.
+The six line-motion studies use SVG masks and vector motion without allocating
+WebGL contexts; the seven material treatments share the existing GPU budget,
+including three monochrome 3D extrusions.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
