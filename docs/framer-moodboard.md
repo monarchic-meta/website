@@ -15,15 +15,15 @@ graphic gallery are separate, preserved prototypes.
 | [03 / Originals](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | 18 independently composed studies and the combination playground |
 | [04 / Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bY_Q8AQKP) | 20 procedural and shader studies |
 | [05 / Original Live Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2) | 8 independently composed live graphics, separate from source-led recreations |
-| [06 / Logo Studies](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ) | 4 original live treatments of the canonical Monarchic mark |
+| [06 / Logo Studies](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ) | 7 original live treatments of the canonical Monarchic mark, including 3 line-drop animations |
 
 Opening a collection mounts its own contents. The reference and live pages each
 mount 20 code instances; the recreation page and **03 / Originals** mount none. The draft
 source-led Preview lab retains its separate 20 placements. The original live page
 mounts eight components; its separate draft lab has eight Desktop and eight
 inherited Phone placements. The [original live handoff](design-studies/code-components/originals.md)
-records those compositions and their controls. Logo Studies mounts four components
-and has a separate draft lab with four Desktop and four inherited Phone placements.
+records those compositions and their controls. Logo Studies mounts seven components
+and has a separate draft lab with seven Desktop and seven inherited Phone placements.
 Source inspiration remains a
 conceptual collection spanning references, recreations and source-led live work.
 
@@ -55,7 +55,7 @@ Keep source-led work and original compositions distinct across the six pages:
   post images or reference-led compositions. They remain separate from the
   eighteen MB studies and the twenty credited live adaptations.
 - [Logo Studies](design-studies/code-components/logo-studies.md) uses the existing
-  Monarchic logo for four independently authored material and motion treatments.
+  Monarchic logo for seven independently authored material and motion treatments.
   Its pinned SVG source remains identified separately from the new compositions.
 
 External work, recreations and close adaptations belong in Source inspiration,

@@ -3,8 +3,10 @@
 This page documents the twenty credited source-led studies. The eight
 [original live compositions](originals.md) have their own Design page, draft
 Preview lab, source files and [manifest](originals-manifest.json).
-Four [logo studies](logo-studies.md) have a separate Design page and draft lab,
+Seven [logo studies](logo-studies.md) have a separate Design page and draft lab,
 using the canonical Monarchic SVG in independently authored live treatments.
+The three line-drop studies use SVG masks and vector motion without allocating
+WebGL contexts; the four material treatments retain their existing GPU budget.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
@@ -211,6 +213,12 @@ pause, visibility, reduced motion, static targets, StrictMode and isolated
 render/copy failures. Separate runs retain 60 source-led placements, 84 including
 the original compositions, and 96 including the logo treatments. It does not execute GLSL; actual browser and Framer visual
 checks remain necessary.
+
+Run `nix develop -c node scripts/check-framer-logo-drop.mjs` for the separate SVG
+motion regression. It checks the real component hooks and shared clock with
+deterministic host doubles: static targets, pause, visibility, reduced motion,
+motion-slot limits, loop continuity and cleanup. Browser SVG rendering and actual
+Framer playback are verified separately in the [logo handoff](logo-studies.md).
 
 Source labels and links accompany each placement. If labels are hidden for a
 material-only experiment, keep its external credit card beside the component.

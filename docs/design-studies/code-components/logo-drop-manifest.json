@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "classification": "original-logo-treatment",
+  "section": "Original compositions",
+  "collection": "Original logo motion",
+  "authoringStatus": "Three SVG motion treatments technically verified; owner style feedback pending",
+  "components": [
+    {
+      "source": "LogoDropStudy.tsx",
+      "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "framerCodePath": "LogoDropStudy.tsx",
+      "renderer": "SVG",
+      "framerComponentId": "codeFile/EiaZX5C:default"
+    }
+  ],
+  "brandGeometry": {
+    "repository": "https://github.com/monarchic-meta/logo",
+    "commit": "1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+    "path": "logo.svg",
+    "sourceURL": "https://github.com/monarchic-meta/logo/blob/1844d35d6ffdedf2356ec929c36bb5c0454cf645/logo.svg",
+    "sourceSHA256": "71ef4b559a2f2bfaf8f8e00dffa6a820c35a3a9b77b2c55ec05c26ccc002a543",
+    "localAsset": "assets/monarchic-logo.svg",
+    "authorship": "Existing Monarchic brand mark; the motion choreography and treatment are new.",
+    "blobSHA1": "92f8fbd5704584d409cec29a38c8d28d0850839d",
+    "provenance": "Pinned manual geometric decomposition; no automatic code or asset synchronization."
+  },
+  "geometryConstruction": {
+    "circle": "One stationary closed contour reconstructed from the eight source cubic pieces.",
+    "carrier": "One finite diagonal parallelogram with the source horizontal end caps, translated vertically.",
+    "compositing": "Two instance-unique luminance masks retain the circle/strip XOR interaction while allowing separate circle and line colors.",
+    "viewBox": [
+      0,
+      0,
+      1440,
+      1024
+    ],
+    "canonicalLocalViewBox": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "intentionalDifferences": [
+      "Two masks and separate fill colors produce different edge antialiasing from the canonical single compound path; no pixel-identical assembled raster claim.",
+      "Original registration marks, the echo variant’s dot field and transient bar outlines are additional treatment elements.",
+      "The carrier keeps its diagonal angle while moving along the screen’s vertical axis; the circle remains stationary.",
+      "At the loop boundary the carrier ink and its circle cut fade together before resetting above; this keeps small Scale and Travel values continuous."
+    ]
+  },
+  "studies": [
+    {
+      "id": "LG-05",
+      "name": "Gravity pass",
+      "mode": "drop",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "description": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.8,
+        "stillPhase": 50,
+        "travel": 1,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 1,
+        "showLabels": true,
+        "study": "drop",
+        "primary": "#202624",
+        "accent": "#ea5c35",
+        "background": "#eee8d8"
+      },
+      "framerCompositionNote": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
+      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "nNIVHL8Yg",
+          "card": "cZiqM96Rj",
+          "label": "bKDliKvWL",
+          "credit": "pVNayrKqn",
+          "provenance": "ay85rwGpk",
+          "note": "wy2mDHdgB"
+        },
+        {
+          "placement": "desktop",
+          "instance": "UAWb8Rk8c",
+          "card": "aniZGL2Ps",
+          "label": "nMud3b6SI",
+          "credit": "aE6G0dQwY",
+          "provenance": "WbfjRx0HC",
+          "note": "LaTaAaSkB"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDUAWb8Rk8c",
+          "card": "BoGMiXsRDaniZGL2Ps",
+          "label": "BoGMiXsRDnMud3b6SI",
+          "credit": "BoGMiXsRDaE6G0dQwY",
+          "provenance": "BoGMiXsRDWbfjRx0HC",
+          "note": "BoGMiXsRDLaTaAaSkB"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+    },
+    {
+      "id": "LG-06",
+      "name": "Magnetic catch",
+      "mode": "spring",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "description": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.8,
+        "stillPhase": 50,
+        "travel": 1,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 1,
+        "showLabels": true,
+        "study": "spring",
+        "primary": "#e9eedc",
+        "accent": "#d7ff48",
+        "background": "#121a19"
+      },
+      "framerCompositionNote": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
+      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "z9vM_uJj9",
+          "card": "NtBrLRSVi",
+          "label": "FKyxABZhM",
+          "credit": "llcbXLyLb",
+          "provenance": "tfZ6m7w1k",
+          "note": "K5mP1O9r5"
+        },
+        {
+          "placement": "desktop",
+          "instance": "W0izcjQoN",
+          "card": "lNjpDgvRn",
+          "label": "Cxe0_KNyd",
+          "credit": "yFqctcBXI",
+          "provenance": "tTqHubiD4",
+          "note": "QeTKBMULf"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDW0izcjQoN",
+          "card": "BoGMiXsRDlNjpDgvRn",
+          "label": "BoGMiXsRDCxe0_KNyd",
+          "credit": "BoGMiXsRDyFqctcBXI",
+          "provenance": "BoGMiXsRDtTqHubiD4",
+          "note": "BoGMiXsRDQeTKBMULf"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+    },
+    {
+      "id": "LG-07",
+      "name": "Signal fall",
+      "mode": "echo",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "description": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.8,
+        "stillPhase": 50,
+        "travel": 1,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 1,
+        "showLabels": true,
+        "study": "echo",
+        "primary": "#5de1ed",
+        "accent": "#d5ff43",
+        "background": "#060c18"
+      },
+      "framerCompositionNote": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
+      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "zGusYr4Eb",
+          "card": "iWnOPvDV4",
+          "label": "GOgbBJDlN",
+          "credit": "chgXN1Ebg",
+          "provenance": "L0rPGCZEA",
+          "note": "vHcxpBCjL"
+        },
+        {
+          "placement": "desktop",
+          "instance": "Ic57sXZAc",
+          "card": "psw4p25Aj",
+          "label": "WWpWSnzVA",
+          "credit": "ZpIpRb9uJ",
+          "provenance": "nOSvu49aI",
+          "note": "OjdeIuk_Z"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDIc57sXZAc",
+          "card": "BoGMiXsRDpsw4p25Aj",
+          "label": "BoGMiXsRDWWpWSnzVA",
+          "credit": "BoGMiXsRDZpIpRb9uJ",
+          "provenance": "BoGMiXsRDnOSvu49aI",
+          "note": "BoGMiXsRDOjdeIuk_Z"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+    }
+  ],
+  "framerPages": {
+    "design": {
+      "id": "wSe9_qdcJ",
+      "name": "06 / Logo Studies",
+      "board": "X31PXlW0g",
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ"
+    },
+    "lab": {
+      "id": "XFbUB39EK",
+      "path": "/prototypes/logo-studies",
+      "draft": true,
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XFbUB39EK",
+      "desktop": {
+        "id": "CaR79pbR4",
+        "width": 1200,
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=CaR79pbR4"
+      },
+      "phone": {
+        "id": "BoGMiXsRD",
+        "width": 390,
+        "inherited": true,
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=BoGMiXsRD"
+      }
+    }
+  },
+  "savedVerification": {
+    "date": "2026-10-29",
+    "passed": true,
+    "status": "saved-editor-reload-preview-and-canvas-verified",
+    "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+    "studies": 3,
+    "codeInstances": 9,
+    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
+    "savedEditorVerified": true,
+    "editorReloadVerified": true,
+    "previewMotionVerified": true,
+    "canvasMotionVerified": true,
+    "allNewCanvasMotionOff": true,
+    "all96PreviousPlacementsPreserved": true,
+    "aggregateLogoTreatments": 7,
+    "aggregateLogoPlacements": 21,
+    "totalProjectStudyPlacements": 105,
+    "canvasStateScope": "Nine new SVG motion placements are Canvas-off. The previous 60 source-led Canvas-true and 36 original/material-logo Canvas-false values are preserved.",
+    "localValidation": {
+      "semanticTypeScriptFiles": 1,
+      "svgRuntimeAssertionGroups": 13,
+      "surfaceAllocations": 0,
+      "existingSourceFilesBytePreserved": 8,
+      "svgPhaseAspectSnapshots": 18,
+      "modeAspectPhaseComparisons": 6,
+      "snapshotScope": "Graphics-only browser-serialized JSX/SVG samples with Labels=false; actual Framer uses the saved Labels=true presets.",
+      "canonicalRestComparison": {
+        "strictAlphaIdentical": false,
+        "signMismatchesBeyondOnePixelBoundary": 0,
+        "scope": "Normalized assembled alpha masks compared offline with the pinned canonical SVG; boundary antialias differences are retained."
+      }
+    },
+    "actualPreview": {
+      "studyAspects": 6,
+      "studies": [
+        "LG-05",
+        "LG-06",
+        "LG-07"
+      ],
+      "pauseAndResumeChecked": true,
+      "evidenceScope": "Actual Preview DOM phase, carrier transforms and mask/ink opacity agree with source pose across six study/aspect pairs. Pause freezes phase and transforms; root observed Play resume. No screenshot-pixel comparison is claimed.",
+      "computedScreenshotPixelComparisons": 0,
+      "observedArtworkScreenCSS": {
+        "Desktop1200": {
+          "width": 1065,
+          "height": 680
+        },
+        "Phone390": {
+          "width": 335,
+          "height": 280
+        }
+      },
+      "dimensionScope": "Observed artwork bounds are separate from the nominal Desktop 1200 and Phone 390 breakpoints.",
+      "phoneLayout": {
+        "bodyClientWidth": 375,
+        "bodyScrollWidth": 375,
+        "minimumCaptionGapCSSPixels": 25.671875
+      }
+    },
+    "actualCanvas": {
+      "study": "LG-05",
+      "instance": "nNIVHL8Yg",
+      "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "animated": true,
+      "maskAndInkTransformsMatched": true,
+      "restoredNoAndReloadConfirmed": true,
+      "restoredPhase": 0.5,
+      "restoredCarrierY": 0
+    },
+    "evidence": [
+      {
+        "path": "validation/semantic-checks.json",
+        "sha256": "dd8a322a10bceb9c721502dba656bb1bf3d05320a32c5e160dd77967255475aa"
+      },
+      {
+        "path": "validation/runtime-verification.json",
+        "sha256": "d1f84df7d030a907fbaea718f9eb9522be606a7f882a987370d242cb48561a39"
+      },
+      {
+        "path": "validation/permanent-regression.json",
+        "sha256": "cae350ebb0a2f8bafac58a615f32d316e521bca968debde1c33c718fe30bebe3"
+      },
+      {
+        "path": "validation/rest-comparison/verification.json",
+        "sha256": "4c1530e3f57eaf034e47ba3449ae78ce0b48ef369cb88e07ffffec11f1700cde"
+      },
+      {
+        "path": "svg/verification.json",
+        "sha256": "4bf90b1e95dfb0536c886d0b263490f4e64c4993aa9ae00722874bb7b80d1003"
+      },
+      {
+        "path": "svg/motion-comparison.json",
+        "sha256": "0d155b86875443377da354d0dd58ff6ab70edcc4f74b49a8bf88e0f9bfb5298a"
+      },
+      {
+        "path": "mcp/logo-drop-final-report.json",
+        "sha256": "cd94c4b544aedc7f66de9edab62ceacfd148e4d58046bdaed51c3fe5468277fa"
+      },
+      {
+        "path": "mcp/logo-drop-post-canvas-report.json",
+        "sha256": "b96153a05dc17aa9e0a16cd8c467a1490b05fad1b1035467b059b0be0edbe9fa"
+      },
+      {
+        "path": "mcp/logo-drop-saved-node-map.json",
+        "sha256": "b1c3e580b365a4155c6db74828dd98d6e747be348f6d8912ad31614f91170621"
+      },
+      {
+        "path": "framer/browser-verification.json",
+        "sha256": "f739cf094b7e60e6f77b502983f96f876e136c08f3418fbdb28506ea961b646f"
+      },
+      {
+        "path": "framer/browser-dom-motion-verification.json",
+        "sha256": "448c508a0bdbc6843a8c6e77105c7072cf90f17f96c2885f552ba7d7f58974aa"
+      }
+    ],
+    "proofScope": "Three new SVG treatments and nine saved placements only. Existing eight code sources and 96 placements are retained. Fourteen other page trees are unchanged; the two Logo pages preserve old contents after normalizing only the approved parent layout/count extension. Mask antialiasing and separate fill colors intentionally differ from the canonical single compound path. Images exported from Framer have not been reviewed.",
+    "styleApproval": "awaiting owner feedback",
+    "actualFramerExportedImagesReviewed": false
+  },
+  "relatedMaterialManifest": "logo-manifest.json",
+  "motion": {
+    "driver": "Shared SVG animation clock; no WebGL context, distance atlas or image buffer.",
+    "canvasMotionDefault": false,
+    "canvasFrameRate": 12,
+    "previewFrameRate": 30,
+    "cycleSecondsAtSpeedOne": 4.5,
+    "defaultCycleSeconds": 5.625,
+    "defaultStillPhasePercent": 50,
+    "stillPhaseScope": "The default still pose, and the initial Preview pose, are assembled in all three variants with no transient echo outlines.",
+    "intentionalDifference": "Motion uses authored easing and damped oscillation curves rather than a physical rigid-body simulation.",
+    "pauseAndSuspension": "Pause/Play retains the current phase. Offscreen, hidden and reduced-motion states suspend ongoing animation.",
+    "coordination": "One active Canvas SVG study or two active Preview SVG studies; the SVG clock yields these motion slots to visible active WebGL studies."
+  }
+}

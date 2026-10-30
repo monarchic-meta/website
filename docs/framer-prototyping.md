@@ -83,7 +83,7 @@ the opt-in cannot animate export or thumbnail rendering. The Creative Coding
 budgets are 12 fps and 1,000,000 pixels on the canvas, and 30 fps and 1,000,000 pixels
 in Preview. Verify those targets separately, including the default still frame.
 
-Budget the whole board as well as each instance. The study files share a
+Budget the whole board as well as each instance. The WebGL study files share a
 per-window coordinator capped at two WebGL contexts, including initialization.
 Only one editor study animates at a time; Preview admits up to two. Zoomed-out
 cards retain code-generated 2D frames and release their GPU contexts. Generate
