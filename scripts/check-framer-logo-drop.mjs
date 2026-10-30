@@ -265,18 +265,65 @@ function addCheck(name, details = {}) {
         ...details
     });
 }
+function carrierAxis(pathData) {
+    const coordinates = pathData.match(/-?\d+(?:\.\d+)?/g)?.map(Number);
+    assert.equal(coordinates?.length, 8, 'finite carrier has four vertices');
+    const [ax, ay, bx, by, cx, cy, dx, dy] = coordinates;
+    assert.equal(ay, by, 'top cap is horizontal');
+    assert.equal(cy, dy, 'bottom cap is horizontal');
+    const axis = { x: (cx + dx - ax - bx) / 2, y: (cy + dy - ay - by) / 2 };
+    assert(axis.x < 0 && axis.y > 0, 'source carrier axis points down-left');
+    return axis;
+}
+function assertOnAxis(vector, axis) {
+    assert(Number.isFinite(vector.x) && Number.isFinite(vector.y), 'translation has finite x and y');
+    const distance = Math.abs(vector.x * axis.y - vector.y * axis.x) / Math.hypot(axis.x, axis.y);
+    assert(distance < 1e-8, 'translation is collinear with the carrier path');
+}
+function translation(value) {
+    const match = value.match(/^translate\(\s*([^,\s]+)[,\s]+([^\s)]+)\s*\)$/);
+    assert(match, 'carrier uses a two-coordinate translation');
+    return { x: Number(match[1]), y: Number(match[2]) };
+}
+function assertDOMAxis(root, axis) {
+    assert.deepEqual(root.carriers[0].attrs, root.carriers[1].attrs, 'mask and ink share displacement and opacity');
+    const position = translation(root.carriers[0].attrs.transform);
+    assertOnAxis(position, axis);
+    assert.equal(position.x, Number(root.dataset.carrierX));
+    assert.equal(position.y, Number(root.dataset.carrierY));
+    let previous = position;
+    for (const echo of root.echoes) {
+        const current = translation(echo.attrs.transform);
+        const offset = { x: current.x - previous.x, y: current.y - previous.y };
+        assertOnAxis(offset, axis);
+        assert(offset.x * axis.x + offset.y * axis.y < 0, 'each echo trails up-right along the carrier axis');
+        previous = current;
+    }
+    return position;
+}
 function runChecks() {
     const e = environment();
+    const axis = carrierAxis(e.qa.LOGO_CARRIER_PATH);
     for (const mode of ['drop', 'spring', 'echo']) {
         const p = e.qa.carrierPose(mode, .5);
+        assert(p.x === 0);
         assert.equal(p.y, 0);
         assert.equal(p.echoOpacity, 0);
+        for (const phase of [.1, .2, .26, .4, .5, .8, .95]) {
+            for (const travel of [.1, 1, 1.5]) {
+                const pose = e.qa.carrierPose(mode, phase, travel);
+                assertOnAxis(pose, axis);
+                const trailing = { x: pose.echoX - pose.x, y: pose.echoY - pose.y };
+                assertOnAxis(trailing, axis);
+                assert(trailing.x * axis.x + trailing.y * axis.y < 0);
+            }
+        }
     }
     assert(e.qa.carrierPose('drop', .2).y < 0 && e.qa.carrierPose('drop', .8).y > 0);
     assert(e.qa.carrierPose('spring', .26, 1, 1).y > e.qa.carrierPose('spring', .26, 1, 0).y);
     assert(e.qa.carrierPose('echo', .25).echoOpacity > 0);
     assert.equal(e.qa.carrierPose('echo', .25, 0).echoOpacity, 0);
-    addCheck('all modes assemble at .5; travel, spring bounce and echo change meaningful poses');
+    addCheck('path-derived down-left axis preserves assembled pose; carrier and trailing echoes stay collinear across modes and travel');
     for (const options of [{
             target: 'export'
         }, {
@@ -290,6 +337,7 @@ function runChecks() {
         const x = environment(options), m = x.mount();
         assert.equal(x.rafs.size, 0);
         assert.equal(x.window[Symbol.for('monarchic.logo-vector-motion.v1')], undefined);
+        assert.equal(m.root.dataset.carrierX, '0');
         assert.equal(m.root.dataset.carrierY, '0');
         const n = m.root.history.length;
         x.advance(1000);
@@ -309,12 +357,14 @@ function runChecks() {
         const frames = m.root.history.length - before;
         assert(frames > 0 && frames <= (target === 'canvas' ? 13 : 31));
         assert(Number(m.root.dataset.motionPhase) > .5);
+        const position = assertDOMAxis(m.root, axis);
+        assert(position.x < 0 && position.y > 0, 'actual hook paint advances down-left');
         m.unmount();
         assert.equal(x.rafs.size, 0);
         assert.equal(x.media.count(), 0);
         assert.equal(x.document.count(), 0);
         assert(x.observers.every(o => !o.connected));
-        addCheck(target + ' actual hook mount advances via DOM only and cleans all observers/listeners/RAF', {
+        addCheck(target + ' actual hook advances mask/ink and trailing echoes on source axis via DOM; cleans observers/listeners/RAF', {
             framesIn1000ms: frames
         });
     }
@@ -485,6 +535,7 @@ function runChecks() {
             assert(b.opacity < 1e-8);
             for (const phase of [0, .2, .5, .8, .999999]) {
                 const pose = x.qa.carrierPose(mode, phase, 0);
+                assert(pose.x === 0);
                 assert(pose.y === 0);
                 assert.equal(pose.opacity, 1);
                 assert.equal(pose.echoOpacity, 0);

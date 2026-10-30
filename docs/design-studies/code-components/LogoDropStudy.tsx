@@ -25,6 +25,9 @@ interface Props {
 }
 const LOGO_CIRCLE_PATH = "M645.32365472,293.63834253 C606.48376029,269.85249606 560.82665278,256.13573892 512,256.13573892 C370.81799556,256.13573892 256.13573892,370.81799556 256.13573892,512 C256.13573892,575.28945904 279.18199112,633.25359671 317.33050769,677.94842518 C334.85033964,698.47467244 355.55544436,716.20224207 378.67634528,730.36165747 C417.51623971,754.14750394 463.17334722,767.86426108 512,767.86426108 C653.18200444,767.86426108 767.86426108,653.18200444 767.86426108,512 C767.86426108,448.71054096 744.81800888,390.74640329 706.66949231,346.05157482 C689.14966036,325.52532756 668.44455564,307.79775793 645.32365472,293.63834253 Z"
 const LOGO_CARRIER_PATH = "M873.94267733,150.05732267 L767.86426108,150.05732267 L150.05732267,873.94267733 L256.13573892,873.94267733 Z"
+// Down-left axis between the midpoints of the canonical bar's horizontal caps.
+const CARRIER_AXIS = { x: -617.80693841, y: 723.88535466 }
+const carrierX = (y: number) => y * CARRIER_AXIS.x / CARRIER_AXIS.y
 const STUDIES = {
     drop: { key: "LG-05", title: "Gravity pass", note: "A line in free passage." },
     spring: { key: "LG-06", title: "Magnetic catch", note: "Fall. Catch. Release." },
@@ -57,9 +60,10 @@ function carrierPose(mode: Mode, phase: number, travel = 1, bounce = .65) {
     }
     const moving = travel > 0 && Math.abs(y) > 1 && Math.abs(y) < 1119
     // At small scale or travel, the bar can remain in view at the wrap. Fade
-    // both its ink and its cut to the unbroken circle before resetting above.
+    // both its ink and its cut to the unbroken circle before resetting up-right.
     const opacity = travel <= 0 ? 1 : smooth(clamp(p / .04, 0, 1)) * smooth(clamp((1 - p) / .04, 0, 1))
-    return { y: y * travel, opacity, echoY: y * travel - 94, echoOpacity: mode === "echo" && moving ? .28 : 0 }
+    const offset = y * travel, echoY = offset - 94
+    return { x: carrierX(offset), y: offset, opacity, echoX: carrierX(echoY), echoY, echoOpacity: mode === "echo" && moving ? .28 : 0 }
 }
 
 interface MotionEntry {
@@ -170,14 +174,15 @@ export default function LogoDropStudy(props: Props) {
         if (!root.current) return
         const c = config.current, pose = carrierPose(c.study, phase, clamp(c.travel, 0, 1.5), clamp(c.bounce, 0, 1.5))
         root.current.querySelectorAll("[data-drop-carrier]").forEach(node => {
-            node.setAttribute("transform", `translate(0 ${pose.y})`)
+            node.setAttribute("transform", `translate(${pose.x} ${pose.y})`)
             node.setAttribute("opacity", String(pose.opacity))
         })
         root.current.querySelectorAll("[data-drop-echo]").forEach((node, i) => {
-            node.setAttribute("transform", `translate(0 ${pose.echoY - i * 94})`)
+            node.setAttribute("transform", `translate(${pose.echoX - carrierX(i * 94)} ${pose.echoY - i * 94})`)
             node.setAttribute("opacity", String(pose.echoOpacity * clamp(c.trail, 0, 1) * (i ? .45 : 1)))
         })
         root.current.dataset.motionPhase = String(phase)
+        root.current.dataset.carrierX = String(pose.x)
         root.current.dataset.carrierY = String(pose.y)
     }, [])
     React.useLayoutEffect(() => {
@@ -211,7 +216,7 @@ export default function LogoDropStudy(props: Props) {
             <defs>
                 <mask id={id + "-circle"} x="-1800" y="-1800" width="4600" height="4600" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }}>
                     <rect x="-1800" y="-1800" width="4600" height="4600" fill="white" />
-                    <g data-drop-carrier transform={`translate(0 ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill="black" /></g>
+                    <g data-drop-carrier transform={`translate(${initial.x} ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill="black" /></g>
                 </mask>
                 <mask id={id + "-outside"} x="-1800" y="-1800" width="4600" height="4600" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }}>
                     <rect x="-1800" y="-1800" width="4600" height="4600" fill="white" />
@@ -226,10 +231,10 @@ export default function LogoDropStudy(props: Props) {
                     <circle cx="512" cy="512" r="346" strokeDasharray="2 14" />
                 </g>
                 <path d={LOGO_CIRCLE_PATH} fill={primary} mask={`url(#${id}-circle)`} />
-                {study === "echo" && [0, 1].map(i => <g key={i} data-drop-echo transform={`translate(0 ${initial.echoY - i * 94})`} opacity={initial.echoOpacity * trail * (i ? .45 : 1)}>
+                {study === "echo" && [0, 1].map(i => <g key={i} data-drop-echo transform={`translate(${initial.echoX - carrierX(i * 94)} ${initial.echoY - i * 94})`} opacity={initial.echoOpacity * trail * (i ? .45 : 1)}>
                     <path d={LOGO_CARRIER_PATH} fill="none" stroke={accent} strokeWidth="3" />
                 </g>)}
-                <g mask={`url(#${id}-outside)`}><g data-drop-carrier transform={`translate(0 ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill={accent} /></g></g>
+                <g mask={`url(#${id}-outside)`}><g data-drop-carrier transform={`translate(${initial.x} ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill={accent} /></g></g>
                 <g fill={primary} opacity=".45"><rect x="-132" y="503" width="1" height="18" /><rect x="1155" y="503" width="1" height="18" /></g>
             </g>
         </svg>
