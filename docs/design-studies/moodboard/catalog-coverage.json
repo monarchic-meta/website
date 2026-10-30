@@ -9828,7 +9828,7 @@
       },
       {
         "source": "LogoDropStudy.tsx",
-        "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b"
+        "sourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9"
       }
     ],
     "studies": [
@@ -9884,10 +9884,11 @@
       "phone": "BoGMiXsRD",
       "draft": true
     },
-    "verificationStatus": "seven treatments saved; new SVG motion editor-reload, Preview and Canvas verified",
+    "verificationStatus": "seven treatments retained; three SVG motion studies have grayscale presets saved and editor-reload/Preview verified",
     "materialVerificationReference": "../code-components/logo-manifest.json#/savedVerification",
     "motionVerificationReference": "../code-components/logo-drop-manifest.json#/savedVerification",
-    "styleReviewStatus": "awaiting owner feedback"
+    "styleReviewStatus": "awaiting owner feedback",
+    "paletteScope": "LG-05–07 use grayscale presets; the four prior material treatments are unchanged."
   },
   "previousLogoStudies": {
     "classification": "original-logo-treatment",

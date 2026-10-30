@@ -3,11 +3,11 @@
   "classification": "original-logo-treatment",
   "section": "Original compositions",
   "collection": "Original logo motion",
-  "authoringStatus": "Three SVG motion treatments technically verified; owner style feedback pending",
+  "authoringStatus": "Three grayscale SVG motion treatments technically verified; owner style feedback pending",
   "components": [
     {
       "source": "LogoDropStudy.tsx",
-      "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "sourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
       "framerCodePath": "LogoDropStudy.tsx",
       "renderer": "SVG",
       "framerComponentId": "codeFile/EiaZX5C:default"
@@ -27,7 +27,7 @@
   "geometryConstruction": {
     "circle": "One stationary closed contour reconstructed from the eight source cubic pieces.",
     "carrier": "One finite diagonal parallelogram with the source horizontal end caps, translated vertically.",
-    "compositing": "Two instance-unique luminance masks retain the circle/strip XOR interaction while allowing separate circle and line colors.",
+    "compositing": "Two instance-unique luminance masks retain the circle/strip XOR interaction with separately controlled fills; current presets give the circle and line the same neutral tone.",
     "viewBox": [
       0,
       0,
@@ -41,7 +41,7 @@
       1024
     ],
     "intentionalDifferences": [
-      "Two masks and separate fill colors produce different edge antialiasing from the canonical single compound path; no pixel-identical assembled raster claim.",
+      "Two masks produce different edge antialiasing from the canonical single compound path. Current presets use equal neutral circle and line colors; no pixel-identical assembled raster claim.",
       "Original registration marks, the echo variant’s dot field and transient bar outlines are additional treatment elements.",
       "The carrier keeps its diagonal angle while moving along the screen’s vertical axis; the circle remains stationary.",
       "At the loop boundary the carrier ink and its circle cut fade together before resetting above; this keeps small Scale and Travel values continuous."
@@ -54,7 +54,7 @@
       "mode": "drop",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
       "description": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
       "studyProps": {
         "animate": true,
@@ -67,9 +67,9 @@
         "scale": 1,
         "showLabels": true,
         "study": "drop",
-        "primary": "#202624",
-        "accent": "#ea5c35",
-        "background": "#eee8d8"
+        "primary": "#171717",
+        "accent": "#171717",
+        "background": "#f2f2f2"
       },
       "framerCompositionNote": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
       "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
@@ -102,12 +102,35 @@
           "note": "BoGMiXsRDLaTaAaSkB"
         }
       ],
-      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
-      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "appearanceHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.8,
+            "stillPhase": 50,
+            "travel": 1,
+            "bounce": 0.65,
+            "trail": 0.5,
+            "scale": 1,
+            "showLabels": true,
+            "study": "drop",
+            "primary": "#202624",
+            "accent": "#ea5c35",
+            "background": "#eee8d8"
+          },
+          "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
+        }
+      ],
+      "framerCompositionCreditColor": "#555555"
     },
     {
       "id": "LG-06",
@@ -115,7 +138,7 @@
       "mode": "spring",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
       "description": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
       "studyProps": {
         "animate": true,
@@ -128,9 +151,9 @@
         "scale": 1,
         "showLabels": true,
         "study": "spring",
-        "primary": "#e9eedc",
-        "accent": "#d7ff48",
-        "background": "#121a19"
+        "primary": "#f2f2f2",
+        "accent": "#f2f2f2",
+        "background": "#111111"
       },
       "framerCompositionNote": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
       "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
@@ -163,12 +186,35 @@
           "note": "BoGMiXsRDQeTKBMULf"
         }
       ],
-      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
-      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "appearanceHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.8,
+            "stillPhase": 50,
+            "travel": 1,
+            "bounce": 0.65,
+            "trail": 0.5,
+            "scale": 1,
+            "showLabels": true,
+            "study": "spring",
+            "primary": "#e9eedc",
+            "accent": "#d7ff48",
+            "background": "#121a19"
+          },
+          "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
+        }
+      ],
+      "framerCompositionCreditColor": "#555555"
     },
     {
       "id": "LG-07",
@@ -176,7 +222,7 @@
       "mode": "echo",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
       "description": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
       "studyProps": {
         "animate": true,
@@ -189,9 +235,9 @@
         "scale": 1,
         "showLabels": true,
         "study": "echo",
-        "primary": "#5de1ed",
-        "accent": "#d5ff43",
-        "background": "#060c18"
+        "primary": "#dedede",
+        "accent": "#dedede",
+        "background": "#080808"
       },
       "framerCompositionNote": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
       "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
@@ -224,12 +270,35 @@
           "note": "BoGMiXsRDOjdeIuk_Z"
         }
       ],
-      "framerPlacementStatus": "saved and editor-reload verified",
+      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
-      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645"
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "appearanceHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+          "studyProps": {
+            "animate": true,
+            "canvasMotion": false,
+            "speed": 0.8,
+            "stillPhase": 50,
+            "travel": 1,
+            "bounce": 0.65,
+            "trail": 0.5,
+            "scale": 1,
+            "showLabels": true,
+            "study": "echo",
+            "primary": "#5de1ed",
+            "accent": "#d5ff43",
+            "background": "#060c18"
+          },
+          "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
+        }
+      ],
+      "framerCompositionCreditColor": "#555555"
     }
   ],
   "framerPages": {
@@ -260,119 +329,77 @@
   "savedVerification": {
     "date": "2026-10-29",
     "passed": true,
-    "status": "saved-editor-reload-preview-and-canvas-verified",
-    "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+    "status": "monochrome-presets-saved-editor-reload-and-preview-verified",
+    "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
     "studies": 3,
     "codeInstances": 9,
-    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
+    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-monochrome-2026-10-29",
     "savedEditorVerified": true,
     "editorReloadVerified": true,
     "previewMotionVerified": true,
-    "canvasMotionVerified": true,
     "allNewCanvasMotionOff": true,
     "all96PreviousPlacementsPreserved": true,
     "aggregateLogoTreatments": 7,
     "aggregateLogoPlacements": 21,
     "totalProjectStudyPlacements": 105,
-    "canvasStateScope": "Nine new SVG motion placements are Canvas-off. The previous 60 source-led Canvas-true and 36 original/material-logo Canvas-false values are preserved.",
+    "appearance": {
+      "presetPalette": "grayscale",
+      "nativeClassificationColor": "#555555",
+      "allThreeCircleAndLineColorsEqual": true,
+      "geometryMasksAndMotionClockUnchanged": true
+    },
     "localValidation": {
-      "semanticTypeScriptFiles": 1,
-      "svgRuntimeAssertionGroups": 13,
+      "focusedSVGRegressionGroups": 13,
       "surfaceAllocations": 0,
-      "existingSourceFilesBytePreserved": 8,
-      "svgPhaseAspectSnapshots": 18,
-      "modeAspectPhaseComparisons": 6,
-      "snapshotScope": "Graphics-only browser-serialized JSX/SVG samples with Labels=false; actual Framer uses the saved Labels=true presets.",
-      "canonicalRestComparison": {
-        "strictAlphaIdentical": false,
-        "signMismatchesBeyondOnePixelBoundary": 0,
-        "scope": "Normalized assembled alpha masks compared offline with the pinned canonical SVG; boundary antialias differences are retained."
-      }
+      "paletteOnlySourceReview": true,
+      "newPhaseSnapshotCount": 0
     },
     "actualPreview": {
-      "studyAspects": 6,
-      "studies": [
-        "LG-05",
-        "LG-06",
-        "LG-07"
-      ],
-      "pauseAndResumeChecked": true,
-      "evidenceScope": "Actual Preview DOM phase, carrier transforms and mask/ink opacity agree with source pose across six study/aspect pairs. Pause freezes phase and transforms; root observed Play resume. No screenshot-pixel comparison is claimed.",
-      "computedScreenshotPixelComparisons": 0,
-      "observedArtworkScreenCSS": {
-        "Desktop1200": {
-          "width": 1065,
-          "height": 680
-        },
-        "Phone390": {
-          "width": 335,
-          "height": 280
-        }
+      "desktopModePairs": 3,
+      "phonePaletteChecks": 3,
+      "scope": "Three Desktop mode/palette and phase/pose-advancement pairs; Phone verifies the three grayscale palettes and horizontal layout. No screenshot-pixel comparison is claimed.",
+      "desktopArtworkScreenCSS": {
+        "h": 680,
+        "w": 1065
       },
-      "dimensionScope": "Observed artwork bounds are separate from the nominal Desktop 1200 and Phone 390 breakpoints.",
-      "phoneLayout": {
-        "bodyClientWidth": 375,
-        "bodyScrollWidth": 375,
-        "minimumCaptionGapCSSPixels": 25.671875
-      }
+      "phoneArtworkScreenCSS": {
+        "h": 280,
+        "w": 335
+      },
+      "desktopBodyWidth": 1185,
+      "phoneBodyWidth": 375
     },
-    "actualCanvas": {
-      "study": "LG-05",
-      "instance": "nNIVHL8Yg",
+    "previewRefreshObservation": "Initially Preview rendered the default mode and palette for all three despite saved correct props and correct editor-canvas rendering. A native LG-06 Desktop Study change from Magnetic catch to Gravity pass and back refreshed all three in Preview. After full project reload, explicitly closing and opening Preview loaded all three correct variants. Final saved model read is independent.",
+    "canvasMotionRetestedForPaletteRevision": false,
+    "historicalCanvasEvidence": {
       "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
-      "animated": true,
-      "maskAndInkTransformsMatched": true,
-      "restoredNoAndReloadConfirmed": true,
-      "restoredPhase": 0.5,
-      "restoredCarrierY": 0
+      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
+      "manifestField": "savedVerificationHistory",
+      "scope": "The prior Canvas opt-in/restoration proof remains historical. This palette-only revision preserves the masks, poses and shared motion clock; no new actual Canvas test is claimed."
     },
     "evidence": [
       {
-        "path": "validation/semantic-checks.json",
-        "sha256": "dd8a322a10bceb9c721502dba656bb1bf3d05320a32c5e160dd77967255475aa"
+        "path": "runtime-verification.json",
+        "sha256": "3e78de224a3c3b1d0ba2c63bbad022448a5b75247bcae9370a19a9d2264ae5cd"
       },
       {
-        "path": "validation/runtime-verification.json",
-        "sha256": "d1f84df7d030a907fbaea718f9eb9522be606a7f882a987370d242cb48561a39"
+        "path": "presets.json",
+        "sha256": "459ea42512c902f6ec4892be088d350645fb5a5b50b6b2489e38c0d2f1866fc3"
       },
       {
-        "path": "validation/permanent-regression.json",
-        "sha256": "cae350ebb0a2f8bafac58a615f32d316e521bca968debde1c33c718fe30bebe3"
+        "path": "mcp/monochrome-final-report.json",
+        "sha256": "36ad7f7dea84c5f46668afc02c1cde36f9bf303be73dd41da2cb8cc1446b83d0"
       },
       {
-        "path": "validation/rest-comparison/verification.json",
-        "sha256": "4c1530e3f57eaf034e47ba3449ae78ce0b48ef369cb88e07ffffec11f1700cde"
-      },
-      {
-        "path": "svg/verification.json",
-        "sha256": "4bf90b1e95dfb0536c886d0b263490f4e64c4993aa9ae00722874bb7b80d1003"
-      },
-      {
-        "path": "svg/motion-comparison.json",
-        "sha256": "0d155b86875443377da354d0dd58ff6ab70edcc4f74b49a8bf88e0f9bfb5298a"
-      },
-      {
-        "path": "mcp/logo-drop-final-report.json",
-        "sha256": "cd94c4b544aedc7f66de9edab62ceacfd148e4d58046bdaed51c3fe5468277fa"
-      },
-      {
-        "path": "mcp/logo-drop-post-canvas-report.json",
-        "sha256": "b96153a05dc17aa9e0a16cd8c467a1490b05fad1b1035467b059b0be0edbe9fa"
-      },
-      {
-        "path": "mcp/logo-drop-saved-node-map.json",
-        "sha256": "b1c3e580b365a4155c6db74828dd98d6e747be348f6d8912ad31614f91170621"
+        "path": "mcp/monochrome-saved-node-map.json",
+        "sha256": "d4c1628e4ab1f3f49ef5ac30bbff63714b20eec14786f1eef9f04f44d2f3c79c"
       },
       {
         "path": "framer/browser-verification.json",
-        "sha256": "f739cf094b7e60e6f77b502983f96f876e136c08f3418fbdb28506ea961b646f"
-      },
-      {
-        "path": "framer/browser-dom-motion-verification.json",
-        "sha256": "448c508a0bdbc6843a8c6e77105c7072cf90f17f96c2885f552ba7d7f58974aa"
+        "sha256": "a461219b825ab0e4d60a9aaa9e809a250704ba12427b11fd1cf888566a222f7d"
       }
     ],
-    "proofScope": "Three new SVG treatments and nine saved placements only. Existing eight code sources and 96 placements are retained. Fourteen other page trees are unchanged; the two Logo pages preserve old contents after normalizing only the approved parent layout/count extension. Mask antialiasing and separate fill colors intentionally differ from the canonical single compound path. Images exported from Framer have not been reviewed.",
+    "proofScope": "Grayscale appearance revision of LG-05–07 only, retaining their nine instance IDs, geometry and motion. Current focused regression and saved/browser receipts bind the new source. The complete previous 6f proof, including eighteen colored phase/aspect samples and the actual Canvas check, remains historical. No new eighteen-frame comparison or exported Framer image review is claimed.",
     "styleApproval": "awaiting owner feedback",
     "actualFramerExportedImagesReviewed": false
   },
@@ -389,5 +416,141 @@
     "intentionalDifference": "Motion uses authored easing and damped oscillation curves rather than a physical rigid-body simulation.",
     "pauseAndSuspension": "Pause/Play retains the current phase. Offscreen, hidden and reduced-motion states suspend ongoing animation.",
     "coordination": "One active Canvas SVG study or two active Preview SVG studies; the SVG clock yields these motion slots to visible active WebGL studies."
+  },
+  "savedVerificationHistory": [
+    {
+      "date": "2026-10-29",
+      "passed": true,
+      "status": "saved-editor-reload-preview-and-canvas-verified",
+      "componentSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+      "studies": 3,
+      "codeInstances": 9,
+      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
+      "savedEditorVerified": true,
+      "editorReloadVerified": true,
+      "previewMotionVerified": true,
+      "canvasMotionVerified": true,
+      "allNewCanvasMotionOff": true,
+      "all96PreviousPlacementsPreserved": true,
+      "aggregateLogoTreatments": 7,
+      "aggregateLogoPlacements": 21,
+      "totalProjectStudyPlacements": 105,
+      "canvasStateScope": "Nine new SVG motion placements are Canvas-off. The previous 60 source-led Canvas-true and 36 original/material-logo Canvas-false values are preserved.",
+      "localValidation": {
+        "semanticTypeScriptFiles": 1,
+        "svgRuntimeAssertionGroups": 13,
+        "surfaceAllocations": 0,
+        "existingSourceFilesBytePreserved": 8,
+        "svgPhaseAspectSnapshots": 18,
+        "modeAspectPhaseComparisons": 6,
+        "snapshotScope": "Graphics-only browser-serialized JSX/SVG samples with Labels=false; actual Framer uses the saved Labels=true presets.",
+        "canonicalRestComparison": {
+          "strictAlphaIdentical": false,
+          "signMismatchesBeyondOnePixelBoundary": 0,
+          "scope": "Normalized assembled alpha masks compared offline with the pinned canonical SVG; boundary antialias differences are retained."
+        }
+      },
+      "actualPreview": {
+        "studyAspects": 6,
+        "studies": [
+          "LG-05",
+          "LG-06",
+          "LG-07"
+        ],
+        "pauseAndResumeChecked": true,
+        "evidenceScope": "Actual Preview DOM phase, carrier transforms and mask/ink opacity agree with source pose across six study/aspect pairs. Pause freezes phase and transforms; root observed Play resume. No screenshot-pixel comparison is claimed.",
+        "computedScreenshotPixelComparisons": 0,
+        "observedArtworkScreenCSS": {
+          "Desktop1200": {
+            "width": 1065,
+            "height": 680
+          },
+          "Phone390": {
+            "width": 335,
+            "height": 280
+          }
+        },
+        "dimensionScope": "Observed artwork bounds are separate from the nominal Desktop 1200 and Phone 390 breakpoints.",
+        "phoneLayout": {
+          "bodyClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "minimumCaptionGapCSSPixels": 25.671875
+        }
+      },
+      "actualCanvas": {
+        "study": "LG-05",
+        "instance": "nNIVHL8Yg",
+        "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+        "animated": true,
+        "maskAndInkTransformsMatched": true,
+        "restoredNoAndReloadConfirmed": true,
+        "restoredPhase": 0.5,
+        "restoredCarrierY": 0
+      },
+      "evidence": [
+        {
+          "path": "validation/semantic-checks.json",
+          "sha256": "dd8a322a10bceb9c721502dba656bb1bf3d05320a32c5e160dd77967255475aa"
+        },
+        {
+          "path": "validation/runtime-verification.json",
+          "sha256": "d1f84df7d030a907fbaea718f9eb9522be606a7f882a987370d242cb48561a39"
+        },
+        {
+          "path": "validation/permanent-regression.json",
+          "sha256": "cae350ebb0a2f8bafac58a615f32d316e521bca968debde1c33c718fe30bebe3"
+        },
+        {
+          "path": "validation/rest-comparison/verification.json",
+          "sha256": "4c1530e3f57eaf034e47ba3449ae78ce0b48ef369cb88e07ffffec11f1700cde"
+        },
+        {
+          "path": "svg/verification.json",
+          "sha256": "4bf90b1e95dfb0536c886d0b263490f4e64c4993aa9ae00722874bb7b80d1003"
+        },
+        {
+          "path": "svg/motion-comparison.json",
+          "sha256": "0d155b86875443377da354d0dd58ff6ab70edcc4f74b49a8bf88e0f9bfb5298a"
+        },
+        {
+          "path": "mcp/logo-drop-final-report.json",
+          "sha256": "cd94c4b544aedc7f66de9edab62ceacfd148e4d58046bdaed51c3fe5468277fa"
+        },
+        {
+          "path": "mcp/logo-drop-post-canvas-report.json",
+          "sha256": "b96153a05dc17aa9e0a16cd8c467a1490b05fad1b1035467b059b0be0edbe9fa"
+        },
+        {
+          "path": "mcp/logo-drop-saved-node-map.json",
+          "sha256": "b1c3e580b365a4155c6db74828dd98d6e747be348f6d8912ad31614f91170621"
+        },
+        {
+          "path": "framer/browser-verification.json",
+          "sha256": "f739cf094b7e60e6f77b502983f96f876e136c08f3418fbdb28506ea961b646f"
+        },
+        {
+          "path": "framer/browser-dom-motion-verification.json",
+          "sha256": "448c508a0bdbc6843a8c6e77105c7072cf90f17f96c2885f552ba7d7f58974aa"
+        }
+      ],
+      "proofScope": "Three new SVG treatments and nine saved placements only. Existing eight code sources and 96 placements are retained. Fourteen other page trees are unchanged; the two Logo pages preserve old contents after normalizing only the approved parent layout/count extension. Mask antialiasing and separate fill colors intentionally differ from the canonical single compound path. Images exported from Framer have not been reviewed.",
+      "styleApproval": "awaiting owner feedback",
+      "actualFramerExportedImagesReviewed": false
+    }
+  ],
+  "paletteRevision": {
+    "date": "2026-10-29",
+    "ownerRequest": "Keep it monochromatic.",
+    "scope": [
+      "LG-05",
+      "LG-06",
+      "LG-07"
+    ],
+    "sourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+    "previousSourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+    "change": "Grayscale presets, neutral native classification credits and component palette defaults; geometry, poses, authored motion and shared clock are unchanged.",
+    "nativeClassificationColor": "#555555",
+    "presetScope": "Saved presets are grayscale; palette controls remain editable.",
+    "styleApproval": "awaiting owner feedback"
   }
 }
