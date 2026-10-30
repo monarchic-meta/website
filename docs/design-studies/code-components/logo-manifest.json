@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "classification": "original-logo-treatment",
+  "section": "Original compositions",
+  "authoringStatus": "Four candidate treatments; actual Framer saved-state verification pending",
+  "brandGeometry": {
+    "repository": "https://github.com/monarchic-meta/logo",
+    "commit": "1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+    "path": "logo.svg",
+    "blobSHA1": "92f8fbd5704584d409cec29a38c8d28d0850839d",
+    "sourceURL": "https://github.com/monarchic-meta/logo/blob/1844d35d6ffdedf2356ec929c36bb5c0454cf645/logo.svg",
+    "sourceSHA256": "71ef4b559a2f2bfaf8f8e00dffa6a820c35a3a9b77b2c55ec05c26ccc002a543",
+    "localAsset": "assets/monarchic-logo.svg",
+    "viewBox": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "closedSubpaths": 4,
+    "authorship": "Existing Monarchic brand geometry; the procedural material and motion treatments are new.",
+    "provenance": "Pinned manual copy, with no automatic asset or code synchronization."
+  },
+  "distanceField": {
+    "helper": "assets/monarchic-logo-sdf.ts",
+    "helperSHA256": "55ea1a3569d4cc9ecbd6a7c627c4dc1605bb583244ab072ed0ec4e415334da35",
+    "size": 1024,
+    "rangePx": 1024,
+    "packing": "16-bit signed distance in RG; original raster coverage in B; opaque A",
+    "construction": "Synchronous exact SVG Path2D rasterization and a cached pixel-grid Euclidean distance transform.",
+    "intentionalDifference": "Sampled distance approximation with antialias-aware boundary handling; not an analytic Bezier distance."
+  },
+  "components": [
+    {
+      "source": "LogoStudy.tsx",
+      "sourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "framerCodePath": "LogoStudy.tsx"
+    }
+  ],
+  "studies": [
+    {
+      "id": "LG-01",
+      "mode": "press",
+      "name": "Pigment relief",
+      "componentSource": "LogoStudy.tsx",
+      "classification": "original-logo-treatment",
+      "studyProps": {
+        "study": "press",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.05,
+        "scale": 1,
+        "grain": 0.65,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "primary": "#be5032",
+        "secondary": "#eee4d2",
+        "ink": "#222a29"
+      },
+      "description": "The existing Monarchic mark becomes a shallow dimensional pigment relief with limited-palette tonal dithering.",
+      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "framerPlacements": [],
+      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "styleReviewStatus": "awaiting owner feedback",
+      "section": "Original compositions",
+      "intentionalDifferences": [
+        "The canonical planar geometry is projected as a shallow rounded extrusion with stylized light and pigment coverage.",
+        "The tonal palette and ordered screen texture are authored material treatments, not physical print simulation."
+      ]
+    },
+    {
+      "id": "LG-02",
+      "mode": "contour",
+      "name": "Optical counterform",
+      "componentSource": "LogoStudy.tsx",
+      "classification": "original-logo-treatment",
+      "studyProps": {
+        "study": "contour",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.05,
+        "scale": 1,
+        "grain": 0.65,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "primary": "#f4efdf",
+        "secondary": "#de512d",
+        "ink": "#101414"
+      },
+      "description": "Distance contours radiate through and around the canonical mark while preserving its diagonal counterform.",
+      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "framerPlacements": [],
+      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "styleReviewStatus": "awaiting owner feedback",
+      "section": "Original compositions",
+      "intentionalDifferences": [
+        "Distance bands extend beyond the original silhouette; the mark remains the source of the field and its diagonal negative space stays open.",
+        "Line pitch and integrated coverage adapt to image resolution rather than preserving one fixed screen-space stripe count."
+      ]
+    },
+    {
+      "id": "LG-03",
+      "mode": "chrome",
+      "name": "Chrome cut",
+      "componentSource": "LogoStudy.tsx",
+      "classification": "original-logo-treatment",
+      "studyProps": {
+        "study": "chrome",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.05,
+        "scale": 1,
+        "grain": 0.65,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "primary": "#bccbd9",
+        "secondary": "#ac90e6",
+        "ink": "#151724"
+      },
+      "description": "A rounded extrusion of the existing mark reflects an authored studio-light field and localized spectral color.",
+      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "framerPlacements": [],
+      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "styleReviewStatus": "awaiting owner feedback",
+      "section": "Original compositions",
+      "intentionalDifferences": [
+        "Extrusion, studio reflections and spectral accents are authored approximations rather than a physically traced metal material.",
+        "Normals are smoothed from the sampled distance grid; subtle grid-derived sidewall striations remain at close inspection."
+      ]
+    },
+    {
+      "id": "LG-04",
+      "mode": "phosphor",
+      "name": "Phosphor carrier",
+      "componentSource": "LogoStudy.tsx",
+      "classification": "original-logo-treatment",
+      "studyProps": {
+        "study": "phosphor",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 8,
+        "intensity": 1.05,
+        "scale": 1,
+        "grain": 0.65,
+        "focus": 0.65,
+        "refraction": 0.85,
+        "interactive": true,
+        "showLabels": true,
+        "primary": "#61edff",
+        "secondary": "#cbff49",
+        "ink": "#050b19"
+      },
+      "description": "Layered pixel-light samples of the existing mark carry a moving signal along its diagonal cut.",
+      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "framerPlacements": [],
+      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "styleReviewStatus": "awaiting owner feedback",
+      "section": "Original compositions",
+      "intentionalDifferences": [
+        "Layered offsets and pixel-light samples soften and multiply the canonical silhouette as an original signal treatment.",
+        "Emission, scanning and the traveling highlight are authored screen effects rather than a physical phosphor simulation."
+      ]
+    }
+  ],
+  "framerPages": {},
+  "savedVerification": {
+    "passed": false,
+    "status": "pending actual Framer creation, editor reload and Preview checks"
+  },
+  "collection": "Original logo treatments"
+}

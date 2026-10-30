@@ -12,12 +12,13 @@ import { fileURLToPath } from 'node:url';
 // They do not execute GLSL or replace real-browser visual/framebuffer checks.
 // Run with: pnpm check:framer-studies
 
-async function run(includeOriginals = false) {
+async function run(includeOriginals = false, includeLogos = false) {
     const repo = fileURLToPath(new URL("../", import.meta.url));
     const ts = createRequire(path.join(repo, 'package.json'))('typescript');
     const manifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/manifest.json', 'utf8'));
-    // Keep the complete legacy 60 suite, then rerun it in one seven-family window
-    // with 24 original fixtures. These are resource-test replicas, not saved pages.
+    // Keep the complete legacy 60 suite, then the existing seven-family 84 suite,
+    // then add twelve logo placements in one eight-family 96 suite.
+    // These are resource-test replicas, not claims about saved Framer pages.
     const originalManifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/originals-manifest.json', 'utf8'));
     const originalFixtures = originalManifest.studies;
     assert.equal(originalFixtures.length, 8, 'eight independently composed original modes');
@@ -25,9 +26,23 @@ async function run(includeOriginals = false) {
         assert.equal(study.classification, 'original-composition', 'original fixtures stay separate from source-led work');
         assert.equal(study.studyProps.canvasMotion, false, 'original presets keep editor motion opt-in');
     }
-    const studies = includeOriginals ? [...manifest.studies, ...originalFixtures] : manifest.studies;
+    const logoManifest = includeLogos ? JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/logo-manifest.json', 'utf8')) : null;
+    const logoFixtures = logoManifest?.studies ?? [];
+    if (includeLogos) {
+        assert.equal(includeOriginals, true, 'logo stress case retains all seven existing families');
+        assert.equal(logoFixtures.length, 4, 'four existing-brand logo treatments');
+        for (const study of logoFixtures) {
+            assert.equal(study.classification, 'original-logo-treatment', 'new treatment does not claim authorship of the brand mark');
+            assert.equal(study.studyProps.canvasMotion, false, 'logo presets keep editor motion opt-in');
+        }
+    }
+    const studies = includeOriginals ? [...manifest.studies, ...originalFixtures, ...logoFixtures] : manifest.studies;
     const files = [...new Set(studies.map(s => s.componentSource))];
-    const expectedPlacements = includeOriginals ? 84 : 60;
+    const expectedPlacements = includeLogos ? 96 : includeOriginals ? 84 : 60;
+    let logoMaskRasterizations = 0, logoMaskReadbacks = 0;
+    class Path2D {
+        constructor(source) { this.source = source; }
+    }
     let time = 1000, serial = 0, peakContexts = 0, peakPixels = 0, draws = 0, copies = 0, created = 0, initializationDrawFailures = 0;
     const timers = new Map(), active = new Set(), owned = new Set(), shaderBySource = new Map(), checks = [];
     const hash = x => crypto.createHash('sha256').update(x).digest('hex');
@@ -135,14 +150,26 @@ async function run(includeOriginals = false) {
         frame = null;
         getContext(kind) {
             if (kind === '2d')
-                return this.twoD ??= new Proxy({ canvas: this, fillStyle: '#ffffff', createLinearGradient: () => ({ addColorStop() {} }), drawImage: (source) => {
+                return this.twoD ??= new Proxy({ canvas: this, fillStyle: '#ffffff', createLinearGradient: () => ({ addColorStop() {} }), fill: shape => {
+                        if (shape instanceof Path2D) { this.logoMask = true; logoMaskRasterizations++; }
+                    }, createImageData: (width, height) => ({ data: new Uint8ClampedArray(width * height * 4), width, height }), drawImage: (source) => {
                         copies++;
                         if (this.copyFailures > 0) {
                             this.copyFailures--;
                             throw new Error('injected display copy failure');
                         }
                         this.frame = source.frame ? { ...source.frame, effectiveW: Math.min(source.frame.effectiveW, this.width), effectiveH: Math.min(source.frame.effectiveH, this.height) } : null;
-                    }, getImageData: () => ({ data: new Uint8ClampedArray([255, 255, 255, 255]), width: this.width, height: this.height, frame: this.frame ? structuredClone(this.frame) : null }),
+                    }, getImageData: () => {
+                        if (this.logoMask) {
+                            // Synthetic binary fixture exercises EDT/cache ownership only.
+                            // The separate real SVG/Path2D GPU checks establish geometry.
+                            const data = new Uint8ClampedArray(this.width * this.height * 4);
+                            for (let y = this.height / 4; y < this.height * .75; y++) for (let x = this.width / 4; x < this.width * .75; x++) data[(y * this.width + x) * 4 + 3] = 255;
+                            logoMaskReadbacks++;
+                            return { data, width: this.width, height: this.height, frame: null };
+                        }
+                        return { data: new Uint8ClampedArray([255, 255, 255, 255]), width: this.width, height: this.height, frame: this.frame ? structuredClone(this.frame) : null };
+                    },
                     putImageData: image => { this.frame = image.frame ? structuredClone(image.frame) : null; }
                 }, { get: (o, k) => k in o ? o[k] : () => { }, set: (o, k, value) => {
                         if (k === 'fillStyle' && value === rgbFailureValue && rgbFailures > 0) {
@@ -229,13 +256,18 @@ async function run(includeOriginals = false) {
         }
     }
     const context = vm.createContext({
-        window, document, performance: { now: () => time }, setTimeout, clearTimeout, requestAnimationFrame: raf, cancelAnimationFrame: clearTimeout, ResizeObserver, IntersectionObserver, HTMLCanvasElement: Canvas, queueMicrotask, console, Float32Array, Uint8Array, Uint8ClampedArray, React: {}, RenderTarget: { canvas: 'canvas', preview: 'preview', export: 'export', thumbnail: 'thumbnail' }, getComputedStyle: () => ({ getPropertyValue: () => '' })
+        window, document, performance: { now: () => time }, setTimeout, clearTimeout, requestAnimationFrame: raf, cancelAnimationFrame: clearTimeout, ResizeObserver, IntersectionObserver, HTMLCanvasElement: Canvas, Path2D, queueMicrotask, console, Float32Array, Float64Array, Int32Array, Uint8Array, Uint8ClampedArray, React: {}, RenderTarget: { canvas: 'canvas', preview: 'preview', export: 'export', thumbnail: 'thumbnail' }, getComputedStyle: () => ({ getPropertyValue: () => '' })
     });
     const modules = new Map(), coordinators = [];
     for (const file of files) {
         const source = fs.readFileSync(repo + '/docs/design-studies/code-components/' + file, 'utf8'), end = source.indexOf('/**\n * @framerSupportedLayoutWidth', source.indexOf('function createRenderer'));
         assert.ok(end > 0, 'helper prefix exists ' + file);
-        if (file.startsWith('Original')) {
+        if (file === 'LogoStudy.tsx') {
+            assert.match(source, /canvasMotion:[^\n]*defaultValue:false/, 'logo editor motion defaults off');
+            assert.match(source, /EXISTING BRAND GEOMETRY/, 'brand geometry authorship remains explicit');
+            const saved = logoManifest.components.find(component => component.source === file);
+            assert.equal(hash(source), saved.sourceSHA256, 'logo source matches its authoritative manifest');
+        } else if (file.startsWith('Original')) {
             assert.match(source, /canvasMotion:[^\n]*defaultValue:false/, 'original editor motion defaults off ' + file);
             assert.match(source, /ORIGINAL COMPOSITION/, 'original labels are explicit ' + file);
             assert.doesNotMatch(source, /CC-\d{3}|https:\/\/x\.com\//, 'originals have no external source attribution ' + file);
@@ -252,9 +284,9 @@ async function run(includeOriginals = false) {
         modules.set(file, api);
         shaderBySource.set(file, new Set([hash(api.VERTEX + '\n' + api.FRAGMENT), ...(api.CANOPY_VERTEX ? [hash(api.CANOPY_VERTEX + '\n' + api.CANOPY_FRAGMENT)] : [])]));
     }
-    assert.equal(files.length, includeOriginals ? 7 : 5, 'expected standalone study modules');
+    assert.equal(files.length, includeLogos ? 8 : includeOriginals ? 7 : 5, 'expected standalone study modules');
     assert.equal(manifest.studies.length, 20, 'twenty distinct legacy studies');
-    assert.equal(studies.length, includeOriginals ? 28 : 20, 'all legacy and original modes represented');
+    assert.equal(studies.length, includeLogos ? 32 : includeOriginals ? 28 : 20, 'all legacy and original modes represented');
     for (const coordinator of coordinators)
         assert.equal(coordinator, coordinators[0], 'standalone modules keep identical shared coordinator definitions');
     const pool = modules.values().next().value.getStudyPool();
@@ -322,6 +354,9 @@ async function run(includeOriginals = false) {
             const modes = originalFixtures.filter(study => study.componentSource === entry.source).map(study => study.mode);
             assert.equal(entry.display.frame.mode, modes.indexOf(entry.settings.mode), 'original mode dispatch is exact ' + entry.fixture.id);
         }
+        if (entry.fixture.id.startsWith('LG-')) {
+            assert.equal(entry.display.frame.mode, logoFixtures.findIndex(study => study.mode === entry.settings.mode), 'logo mode dispatch is exact ' + entry.fixture.id);
+        }
         if (entry.settings.mode === 'dither')
             assert.deepEqual(entry.display.frame.cssResolution, [entry.root.clientWidth, entry.root.clientHeight], 'dither CSS geometry stays logical across zoom, DPR and replica roles');
     }
@@ -347,15 +382,20 @@ async function run(includeOriginals = false) {
     assert.equal(created, 0, 'registration yields before graphics initialization');
     await tick();
     assert.ok(created <= 1, 'initializations yield between jobs');
-    await tick(includeOriginals ? 276 : 180);
+    await tick(includeLogos ? 324 : includeOriginals ? 276 : 180);
     assert.equal(entries.filter(e => e.hasFrame).length, expectedPlacements, 'all mounted nonzero placements bootstrap, including offscreen');
-    assert.equal(entries.filter(e => !e.fixture.id.startsWith('OL-') && e.hasFrame).length, 60, 'all sixty legacy placements remain covered');
+    assert.equal(entries.filter(e => !e.fixture.id.startsWith('OL-') && !e.fixture.id.startsWith('LG-') && e.hasFrame).length, 60, 'all sixty legacy placements remain covered');
     if (includeOriginals) assert.equal(entries.filter(e => e.fixture.id.startsWith('OL-') && e.hasFrame).length, 24, 'all eight original modes have three mixed replicas');
+    if (includeLogos) {
+        assert.equal(entries.filter(e => e.fixture.id.startsWith('LG-') && e.hasFrame).length, 12, 'all four logo treatments have three mixed replicas');
+        assert.equal(logoMaskRasterizations, 1, 'one synchronous logo atlas rasterization per module');
+        assert.equal(logoMaskReadbacks, 1, 'one full mask readback per module');
+    }
     for (const entry of entries)
         assertFrame(entry);
     assert.equal(active.size, 0, 'paused overview retains no WebGL contexts');
     assertCaps();
-    record(includeOriginals ? 'spatial 84-placement bootstrap uses seven actual renderer factories, including offscreen cards' : 'spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
+    record(includeLogos ? 'spatial 96-placement bootstrap uses eight actual renderer factories, including offscreen cards' : includeOriginals ? 'spatial 84-placement bootstrap uses seven actual renderer factories, including offscreen cards' : 'spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
     let zoomCases = 0;
     for (const dpr of [1, 1.5, 2]) {
         window.devicePixelRatio = dpr;
@@ -378,12 +418,12 @@ async function run(includeOriginals = false) {
     }
     project(.05);
     await settle('return to overview');
-    // The mixed board has six rows instead of four. Keep every peer visible for
-    // this fairness stress case; the preceding pan/zoom cases retain 900px.
-    if (includeOriginals) window.innerHeight = 1280;
+    // The mixed boards need more rows than the legacy board. Keep every peer
+    // visible for this fairness stress case; pan/zoom cases retain 900px.
+    if (includeOriginals) window.innerHeight = includeLogos ? 1500 : 1280;
     project(.4, roles.reference.x, 0);
     await settle('return to cached reference board');
-    record(includeOriginals ? 'pan through all 84 mixed placements and back never reuses inadequate cache tiers' : 'pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
+    record(includeLogos ? 'pan through all 96 mixed placements and back never reuses inadequate cache tiers' : includeOriginals ? 'pan through all 84 mixed placements and back never reuses inadequate cache tiers' : 'pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
     const movingPeers = entries.filter(e => e.fixture.role === 'reference');
     assert.ok(movingPeers.every(isVisible), 'all hover fairness peers are actually visible');
     for (const [index, entry] of movingPeers.entries())
@@ -404,7 +444,7 @@ async function run(includeOriginals = false) {
     await settle('hover queue settles');
     assert.ok(peakPixels <= 3000000, 'editor live plus serial still initialization stays within 1M+2M GPU pixels');
     assertCaps();
-    record(includeOriginals ? 'twenty-eight mixed cards upgrade fairly during continuous hover and parameter churn' : 'twenty visible cards upgrade fairly during continuous hover and parameter churn');
+    record(includeLogos ? 'thirty-two mixed cards upgrade fairly during continuous hover and parameter churn' : includeOriginals ? 'twenty-eight mixed cards upgrade fairly during continuous hover and parameter churn' : 'twenty visible cards upgrade fairly during continuous hover and parameter churn');
     if (includeOriginals) window.innerHeight = 900;
     const focused = entries.find(e => e.fixture.role === 'reference' && e.source === 'PointCodingStudy.tsx');
     project(1, focused.fixture.worldX, focused.fixture.worldY);
@@ -594,17 +634,26 @@ async function run(includeOriginals = false) {
         assert.equal(display.frame.phase, settings.stillTime, 'export stays frozen ' + file);
         assert.equal(active.size, 0, 'static export does not retain GL ' + file);
     }
-    record(includeOriginals ? 'all seven static export hooks render once through StrictMode replay' : 'all five static export hooks render once through StrictMode replay');
+    record(includeLogos ? 'all eight static export hooks render once through StrictMode replay' : includeOriginals ? 'all seven static export hooks render once through StrictMode replay' : 'all five static export hooks render once through StrictMode replay');
+    if (includeLogos) {
+        assert.equal(logoMaskRasterizations, 1, 'logo atlas remains cached across renderer churn and static exports');
+        assert.equal(logoMaskReadbacks, 1, 'logo atlas does not repeatedly read its large mask');
+    }
     assertCaps();
-    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), originalStudies: includeOriginals ? 8 : 0, originalInstances: includeOriginals ? 24 : 0, legacyInstances: 60, scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' };
+    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), originalStudies: includeOriginals ? 8 : 0, originalInstances: includeOriginals ? 24 : 0, logoStudies: includeLogos ? 4 : 0, logoInstances: includeLogos ? 12 : 0, logoMaskRasterizations, logoMaskReadbacks, legacyInstances: 60, scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' + (includeLogos ? ' The logo atlas uses a synthetic binary mask here to exercise allocation and caching; authentic SVG geometry is verified separately.' : '') };
 }
 try {
     const legacyRegression = await run(false);
     const mixedRegression = await run(true);
+    const logoRegression = await run(true, true);
     assert.equal(legacyRegression.actualModules, 5, 'legacy module regression remains unchanged');
     assert.equal(legacyRegression.instances, 60, 'legacy placement regression remains unchanged');
     assert.equal(legacyRegression.checks.length, 12, 'all twelve legacy resource assertion groups retained');
-    console.log(JSON.stringify({ ...mixedRegression, legacyAssertionsRetained: true, legacyRegression }));
+    assert.equal(mixedRegression.instances, 84, 'all 84 existing mixed placements retained');
+    assert.equal(mixedRegression.checks.length, 12, 'all twelve existing mixed resource assertion groups retained');
+    assert.equal(logoRegression.instances, 96, 'all 96 placements include the twelve new logo fixtures');
+    assert.equal(logoRegression.checks.length, 12, 'all twelve resource assertion groups also cover the eight-family window');
+    console.log(JSON.stringify({ ...logoRegression, legacyAssertionsRetained: true, existingMixedAssertionsRetained: true, legacyRegression, existingMixedRegression: mixedRegression }));
 }
 catch (error) {
     console.log(JSON.stringify({ passed: false, error: error instanceof Error ? error.message : String(error) }));
