@@ -3,11 +3,11 @@
   "classification": "original-logo-treatment",
   "section": "Original compositions",
   "collection": "Original logo motion",
-  "authoringStatus": "Three grayscale diagonal-axis motion treatments technically verified; owner style feedback pending",
+  "authoringStatus": "Six grayscale diagonal-axis motion treatments technically verified; LG-05–07 direction accepted by owner, LG-08–10 feedback pending",
   "components": [
     {
       "source": "LogoDropStudy.tsx",
-      "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "sourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
       "framerCodePath": "LogoDropStudy.tsx",
       "renderer": "SVG",
       "framerComponentId": "codeFile/EiaZX5C:default"
@@ -26,8 +26,8 @@
   },
   "geometryConstruction": {
     "circle": "One stationary closed contour reconstructed from the eight source cubic pieces.",
-    "carrier": "One finite diagonal parallelogram with the source horizontal end caps, translated down-left along its own diagonal during the drop.",
-    "compositing": "Two instance-unique luminance masks retain the circle/strip XOR interaction with separately controlled fills; current presets give the circle and line the same neutral tone.",
+    "carrier": "One canonical finite diagonal parallelogram with the source horizontal end caps, translated along its own diagonal; Carrier loop repeats the same path three times.",
+    "compositing": "Two instance-unique luminance masks retain the circle/carrier XOR interaction with separately controlled fills. Every repeated carrier has paired cut and ink transforms; current presets give the circle and line the same neutral tone.",
     "viewBox": [
       0,
       0,
@@ -44,7 +44,7 @@
       "Two masks produce different edge antialiasing from the canonical single compound path. Current presets use equal neutral circle and line colors; no pixel-identical assembled raster claim.",
       "Original registration marks, the echo variant’s dot field and transient bar outlines are additional treatment elements.",
       "The carrier keeps its diagonal angle and moves along that same down-left axis; the circle remains stationary.",
-      "At the loop boundary the carrier ink and its circle cut fade together before resetting above; this keeps small Scale and Travel values continuous."
+      "Gravity pass, Magnetic catch, Signal fall and Ratchet descent fade the carrier ink and its circle cut together at the cycle boundary. Return stroke reverses without fading; Carrier loop exchanges only offscreen copies without fading at saved responsive sizes."
     ]
   },
   "studies": [
@@ -54,7 +54,7 @@
       "mode": "drop",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
       "description": "A diagonal carrier falls down-left along its own axis through the fixed circle, pausing briefly in the assembled mark.",
       "studyProps": {
         "animate": true,
@@ -103,7 +103,7 @@
         }
       ],
       "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
-      "styleReviewStatus": "awaiting owner feedback",
+      "styleReviewStatus": "accepted by owner for monochrome diagonal-axis motion",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
@@ -139,6 +139,13 @@
           "framerCompositionNote": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
           "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
         }
+      ],
+      "styleReviewHistory": [
+        {
+          "date": "2026-10-29",
+          "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+          "status": "awaiting owner feedback"
+        }
       ]
     },
     {
@@ -147,7 +154,7 @@
       "mode": "spring",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
       "description": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
       "studyProps": {
         "animate": true,
@@ -196,7 +203,7 @@
         }
       ],
       "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
-      "styleReviewStatus": "awaiting owner feedback",
+      "styleReviewStatus": "accepted by owner for monochrome diagonal-axis motion",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
@@ -232,6 +239,13 @@
           "framerCompositionNote": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
           "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
         }
+      ],
+      "styleReviewHistory": [
+        {
+          "date": "2026-10-29",
+          "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+          "status": "awaiting owner feedback"
+        }
       ]
     },
     {
@@ -240,7 +254,7 @@
       "mode": "echo",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
       "description": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
       "studyProps": {
         "animate": true,
@@ -289,7 +303,7 @@
         }
       ],
       "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
-      "styleReviewStatus": "awaiting owner feedback",
+      "styleReviewStatus": "accepted by owner for monochrome diagonal-axis motion",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
       "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
@@ -325,7 +339,200 @@
           "framerCompositionNote": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
           "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
         }
+      ],
+      "styleReviewHistory": [
+        {
+          "date": "2026-10-29",
+          "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+          "status": "awaiting owner feedback"
+        }
       ]
+    },
+    {
+      "id": "LG-08",
+      "name": "Ratchet descent",
+      "mode": "ratchet",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+      "description": "The carrier advances down-left in discrete stages, locking briefly at each stop and in the assembled mark.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.7,
+        "stillPhase": 50,
+        "travel": 1,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 1,
+        "showLabels": true,
+        "study": "ratchet",
+        "primary": "#111111",
+        "accent": "#111111",
+        "background": "#ededed"
+      },
+      "framerCompositionNote": "The carrier advances down-left in discrete stages, locking briefly at each stop and in the assembled mark.",
+      "briefSource": "Direct owner request: additional monochrome motion studies using the existing diagonal carrier and fixed circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "FY6Trdmhu",
+          "card": "YRbN7igrx",
+          "label": "cRz6DT03R",
+          "credit": "oELQuNH2B",
+          "provenance": "Yh4XMA7mr",
+          "note": "aaa6rNfv7"
+        },
+        {
+          "placement": "desktop",
+          "instance": "CayOyIWtC",
+          "card": "tdw_UPlaJ",
+          "label": "gkvnSQd9f",
+          "credit": "qDXyalSFo",
+          "provenance": "Acv7TshKI",
+          "note": "ZaVv2fLDD"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDCayOyIWtC",
+          "card": "BoGMiXsRDtdw_UPlaJ",
+          "label": "BoGMiXsRDgkvnSQd9f",
+          "credit": "BoGMiXsRDqDXyalSFo",
+          "provenance": "BoGMiXsRDAcv7TshKI",
+          "note": "BoGMiXsRDZaVv2fLDD"
+        }
+      ],
+      "framerPlacementStatus": "saved, editor-reload and Desktop/Phone motion verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerCompositionCreditColor": "#555555",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "framerVerifiedDate": "2026-10-30"
+    },
+    {
+      "id": "LG-09",
+      "name": "Return stroke",
+      "mode": "pendulum",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+      "description": "The carrier travels both ways along its diagonal, pausing at the assembled mark and reversing at the outer limits.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.55,
+        "stillPhase": 50,
+        "travel": 1,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 0.9,
+        "showLabels": true,
+        "study": "pendulum",
+        "primary": "#ededed",
+        "accent": "#ededed",
+        "background": "#111111"
+      },
+      "framerCompositionNote": "The carrier travels both ways along its diagonal, pausing at the assembled mark and reversing at the outer limits.",
+      "briefSource": "Direct owner request: additional monochrome motion studies using the existing diagonal carrier and fixed circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "UuxycnOTd",
+          "card": "hKVCDjPYr",
+          "label": "VbXZEIFCQ",
+          "credit": "w3o2oIkM2",
+          "provenance": "k4N4FFMWa",
+          "note": "afOv3_IbL"
+        },
+        {
+          "placement": "desktop",
+          "instance": "n7xS2VTXy",
+          "card": "LhR0LgTcs",
+          "label": "mnz5MwauY",
+          "credit": "wkHWtAf3T",
+          "provenance": "IWPTlouTv",
+          "note": "i5U4QcXCy"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDn7xS2VTXy",
+          "card": "BoGMiXsRDLhR0LgTcs",
+          "label": "BoGMiXsRDmnz5MwauY",
+          "credit": "BoGMiXsRDwkHWtAf3T",
+          "provenance": "BoGMiXsRDIWPTlouTv",
+          "note": "BoGMiXsRDi5U4QcXCy"
+        }
+      ],
+      "framerPlacementStatus": "saved, editor-reload and Desktop/Phone motion verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerCompositionCreditColor": "#555555",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "framerVerifiedDate": "2026-10-30"
+    },
+    {
+      "id": "LG-10",
+      "name": "Carrier loop",
+      "mode": "conveyor",
+      "classification": "original-logo-treatment",
+      "componentSource": "LogoDropStudy.tsx",
+      "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+      "description": "A continuous train of carriers travels down-left through the fixed circle at a steady pace.",
+      "studyProps": {
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillPhase": 50,
+        "travel": 0.35,
+        "bounce": 0.65,
+        "trail": 0.5,
+        "scale": 0.75,
+        "showLabels": true,
+        "study": "conveyor",
+        "primary": "#d6d6d6",
+        "accent": "#d6d6d6",
+        "background": "#050505"
+      },
+      "framerCompositionNote": "A continuous train of carriers travels down-left through the fixed circle at a steady pace.",
+      "briefSource": "Direct owner request: additional monochrome motion studies using the existing diagonal carrier and fixed circle.",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "nf2J0Qkb9",
+          "card": "mYgJjlh3Y",
+          "label": "EsW1quHCg",
+          "credit": "NACPnlu3L",
+          "provenance": "zkWEPHY7B",
+          "note": "j3ZEs4PbO"
+        },
+        {
+          "placement": "desktop",
+          "instance": "SiYIJDqjl",
+          "card": "UqMzZ0kmr",
+          "label": "GRt4mz0oW",
+          "credit": "XLcrHjlxU",
+          "provenance": "ZP93FnQmR",
+          "note": "P7Y0sxxC7"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDSiYIJDqjl",
+          "card": "BoGMiXsRDUqMzZ0kmr",
+          "label": "BoGMiXsRDGRt4mz0oW",
+          "credit": "BoGMiXsRDXLcrHjlxU",
+          "provenance": "BoGMiXsRDZP93FnQmR",
+          "note": "BoGMiXsRDP7Y0sxxC7"
+        }
+      ],
+      "framerPlacementStatus": "saved, editor-reload and Desktop/Phone motion verified",
+      "styleReviewStatus": "awaiting owner feedback",
+      "framerComponentId": "codeFile/EiaZX5C:default",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerCompositionCreditColor": "#555555",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "framerVerifiedDate": "2026-10-30"
     }
   ],
   "framerPages": {
@@ -354,47 +561,65 @@
     }
   },
   "savedVerification": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "passed": true,
-    "status": "diagonal-axis-motion-saved-editor-reload-preview-and-canvas-verified",
-    "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
-    "studies": 3,
-    "codeInstances": 9,
-    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-axis-motion-2026-10-29",
+    "status": "three-additional-motion-profiles-saved-editor-reload-preview-and-canvas-verified",
+    "componentSourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+    "studies": 6,
+    "codeInstances": 18,
+    "newStudies": 3,
+    "newCodeInstances": 9,
+    "newStudyIds": [
+      "LG-08",
+      "LG-09",
+      "LG-10"
+    ],
+    "retainedStudyIds": [
+      "LG-05",
+      "LG-06",
+      "LG-07"
+    ],
+    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-motion-round-two-2026-10-30",
     "savedEditorVerified": true,
     "editorReloadVerified": true,
     "previewMotionVerified": true,
+    "previewVerifiedStudyIds": [
+      "LG-08",
+      "LG-09",
+      "LG-10"
+    ],
     "canvasMotionVerified": true,
-    "allNewCanvasMotionOff": true,
-    "all96PreviousPlacementsPreserved": true,
-    "aggregateLogoTreatments": 7,
-    "aggregateLogoPlacements": 21,
-    "totalProjectStudyPlacements": 105,
+    "all18SVGCanvasMotionOff": true,
+    "all105PreviousPlacementsPreserved": true,
+    "aggregateLogoTreatments": 10,
+    "aggregateLogoPlacements": 30,
+    "totalProjectStudyPlacements": 114,
     "changeScope": {
+      "newProfiles": [
+        "ratchet",
+        "pendulum",
+        "conveyor"
+      ],
       "canonicalPathDataUnchanged": true,
-      "grayscalePalettesUnchanged": true,
-      "verticalTimingAndTravelAmountUnchanged": true,
+      "existingThreePoseProfilesAndPalettesRetained": true,
       "sharedMotionClockUnchanged": true,
-      "carrierMaskInkAndEchoTranslationsChanged": true,
-      "axis": {
-        "x": -617.80693841,
-        "y": 723.88535466
-      },
-      "nativeNoteChanges": 3
+      "publicControlKeys": 13,
+      "studyOptions": 6,
+      "nativeExistingChanges": "Only board/grid extension and Seven→Ten collection count; new cards appended."
     },
     "localValidation": {
-      "focusedSVGRegressionGroups": 13,
+      "focusedSVGRegressionGroups": 18,
       "surfaceAllocations": 0,
-      "sourcePathTimingAndControlRegionReview": true,
-      "newPhaseSnapshotCount": 0
+      "newPhaseSnapshotCount": 0,
+      "staleCarrierCopyTransitionGuardVerified": true
     },
     "actualBrowser": {
-      "desktopModeAxisPairs": 3,
-      "phoneModeAxisPairs": 1,
-      "phonePaletteChecks": 3,
-      "maskAndInkTranslationsMatched": true,
-      "visibleCollinearEchoesVerified": true,
-      "phaseAndBothCoordinatesAdvanced": true,
+      "newModeDesktopPairs": 3,
+      "newModePhonePairs": 3,
+      "sourcePoseComparisonPairs": 7,
+      "sourcePoseComparisonSamples": 14,
+      "perCopyMaskAndInkTransformsMatched": true,
+      "conveyorPausePlayVerified": true,
       "desktopArtworkScreenCSS": {
         "h": 680,
         "w": 1065
@@ -405,45 +630,69 @@
       },
       "phoneBodyClientWidth": 375,
       "phoneBodyScrollWidth": 375,
+      "phoneCaptionsWithinCards": true,
       "canvas": {
-        "placement": "LG-05 Desktop, inherited by Phone",
-        "currentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+        "study": "LG-10",
+        "placement": "Desktop inherited by Phone",
         "motionOptInVerified": true,
         "restoredOff": true,
-        "staticInstancesAfterFullReload": 6
+        "staticLabInstancesAfterFinalReload": 12
       },
       "design": {
         "afterPageNavigationReload": true,
-        "assembledStaticInstances": 3,
-        "lg05NoteCorrect": true
+        "newAssembledStaticInstances": 3,
+        "count": "Ten"
       },
-      "scope": "Actual Framer DOM axis translations, paired mask/ink and visible collinear echoes. Three Desktop mode pairs, one Phone pair and Phone palettes/layout, plus one fresh Canvas opt-in/restore. No screenshot-pixel comparison or full raster phase suite is claimed."
+      "scope": "Current actual Framer checks cover three new modes on Desktop and Phone (six motion pairs), one Conveyor Canvas opt-in/restoration pair, Conveyor Pause/Play, per-copy mask/ink alignment, palettes, Phone layout, and saved Design stills. Existing source-level motion/resource tests are separate. No full raster phase suite, exported-image or screenshot-pixel comparison is claimed."
     },
-    "previewRefreshObservation": "First explicit Preview after component update rendered all three default props. LG-06 Desktop Study was changed spring→drop→spring, refreshing all correct variants. LG-05 Desktop Canvas motion was temporarily enabled (inherited Phone), then disabled. Full project reload after both restorations retained correct modes/palettes and static Canvas defaults. All subsequent Preview checks above use that reloaded editor.",
+    "refreshObservations": [
+      "First explicit Preview after source update displayed component defaults for all six modes. Changing LG-10 Desktop Study conveyor→drop→conveyor refreshed all correct presets.",
+      "Canvas motion was temporarily enabled on LG-10 Desktop, then restored No. Phone native control also showed No, but its offscreen cached DOM retained the earlier phase/status until fit into view, where it became static without a prop edit. A subsequent full reload retained all twelve lab SVG instances at the static assembled pose."
+    ],
     "evidence": [
       {
         "path": "validation/runtime-verification.json",
-        "sha256": "63eed0e8d629fb43f00046a66023c637a46213d5b1dd66843e836c79ec90d075"
+        "sha256": "09ffc59ae654310aaa6a811f60b6a497f178dccb14bdebe2db40aa2319e83874"
       },
       {
         "path": "validation/focused-regression-receipt.json",
-        "sha256": "641e5c7e6139545743e3710f7ec14515a731094c234f2c22c6aca471082b8f72"
+        "sha256": "70a4f872c04c9286672a42b073da86c165e2fe8fe14d3e833a945a2f41374037"
       },
       {
-        "path": "mcp/axis-motion-final-report.json",
-        "sha256": "fb666d3c81e9e2787dc66ef7017fa4cb6248dd8c312a642521a42e537b60ed12"
+        "path": "validation/browser-source-pose-verification.json",
+        "sha256": "19f8fac9a5fddf3490321daad1ede5e29abd9c93c41eaa8a93ed4e591006b5d6"
       },
       {
-        "path": "mcp/axis-motion-saved-node-map.json",
-        "sha256": "efbd39223a537d36d5ad47b4dbea1d101035beddbb1ecc64620fe48104d9b6a9"
+        "path": "mcp/motion-round-two-final-report.json",
+        "sha256": "52a697e33b578c827f35c056a2d5ec7c7bddc180412d44c31d6bbc5c5388231f"
+      },
+      {
+        "path": "mcp/motion-round-two-after-raw.json",
+        "sha256": "66ce29344fed0684a4aae0fe49362e5ac384b25ac0e6cf0d93e6d644a278c540"
+      },
+      {
+        "path": "mcp/motion-round-two-saved-node-map.json",
+        "sha256": "e7a1f119e606b87dc5864c195ed1400be9d68170aa2a9dd821e6a2039ce8903f"
       },
       {
         "path": "framer/browser-verification.json",
-        "sha256": "3bc98127cf5e73921fb0096776e9076d94807a63cb3dbc1beef5e59f5a80d962"
+        "sha256": "bfe3691c2a45884fd20e282d3eb4259dde0a1fd1fcdd334344bc4136ea0a0c3c"
       }
     ],
-    "proofScope": "Current diagonal-axis motion revision of LG-05–07. Canonical path geometry, palettes, y timing, controls and clock are retained; rendered negative-space mask, bar and echo translations change together. Current focused regression, saved source/note checks and browser evidence bind this source. Complete previous 6f and e259 proofs remain historical, including the former vertical motion and eighteen colored phase/aspect snapshots. No fresh eighteen-frame capture or exported Framer image review is claimed.",
-    "styleApproval": "awaiting owner feedback",
+    "proofScope": "Current extension adds LG-08–10 and nine placements; all six SVG modes share this source. Saved-state evidence preserves the prior 105 placements, eight other source files and old native contents after only the approved collection parent/count changes. Current browser proof covers the three new modes on Desktop and Phone, Conveyor Pause/Play and one fresh Canvas opt-in/restoration, then editor reload. Previous complete 6f, e259 and e16 verification records remain historical; no new raster phase suite, screenshot-pixel comparison or exported Framer image review is claimed.",
+    "styleApproval": {
+      "acceptedDirectionStudyIds": [
+        "LG-05",
+        "LG-06",
+        "LG-07"
+      ],
+      "awaitingOwnerFeedbackStudyIds": [
+        "LG-08",
+        "LG-09",
+        "LG-10"
+      ],
+      "materialStudiesApprovalNotInferred": true
+    },
     "actualFramerExportedImagesReviewed": false
   },
   "relatedMaterialManifest": "logo-manifest.json",
@@ -455,7 +704,7 @@
     "cycleSecondsAtSpeedOne": 4.5,
     "defaultCycleSeconds": 5.625,
     "defaultStillPhasePercent": 50,
-    "stillPhaseScope": "The default still pose, and the initial Preview pose, are assembled in all three variants with no transient echo outlines.",
+    "stillPhaseScope": "The default still pose and initial Preview pose are assembled in all six variants, with no transient echo outlines. Carrier loop retains offscreen repeated copies at positive Travel.",
     "intentionalDifference": "Motion uses authored easing and damped oscillation curves rather than a physical rigid-body simulation.",
     "pauseAndSuspension": "Pause/Play retains the current phase. Offscreen, hidden and reduced-motion states suspend ongoing animation.",
     "coordination": "One active Canvas SVG study or two active Preview SVG studies; the SVG clock yields these motion slots to visible active WebGL studies.",
@@ -465,7 +714,19 @@
         "x": -617.80693841,
         "y": 723.88535466
       },
-      "translation": "dx=(axis.x/axis.y)*y; dy=y. The existing y timing and travel amount are retained, and the echo offsets remain collinear."
+      "translation": "dx=(axis.x/axis.y)*y; dy=y. LG-05–07 retain their timing and travel amount; all added carrier copies use the same axis."
+    },
+    "travelSemantics": {
+      "singleCarrier": "Travel scales the excursion for Gravity pass, Magnetic catch, Signal fall, Ratchet descent and Return stroke.",
+      "conveyor": "For conveyor, positive Travel controls repeat spacing and distance per cycle (1400+1000*Travel); zero freezes one assembled carrier."
+    },
+    "profiles": {
+      "drop": "Down-left descent with an assembled hold.",
+      "spring": "Overshoot, damped settle and release.",
+      "echo": "Descent with two collinear transient echoes.",
+      "ratchet": "Discrete monotone advances alternate with intermediate and assembled holds.",
+      "pendulum": "Reciprocal travel pauses at the assembled mark and reverses at outer turnarounds.",
+      "conveyor": "An opaque three-carrier train advances at constant speed; repeat spacing and distance per cycle are 1400+1000*Travel. Travel zero leaves one assembled carrier."
     }
   },
   "savedVerificationHistory": [
@@ -664,6 +925,99 @@
       "proofScope": "Grayscale appearance revision of LG-05–07 only, retaining their nine instance IDs, geometry and motion. Current focused regression and saved/browser receipts bind the new source. The complete previous 6f proof, including eighteen colored phase/aspect samples and the actual Canvas check, remains historical. No new eighteen-frame comparison or exported Framer image review is claimed.",
       "styleApproval": "awaiting owner feedback",
       "actualFramerExportedImagesReviewed": false
+    },
+    {
+      "date": "2026-10-29",
+      "passed": true,
+      "status": "diagonal-axis-motion-saved-editor-reload-preview-and-canvas-verified",
+      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "studies": 3,
+      "codeInstances": 9,
+      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-axis-motion-2026-10-29",
+      "savedEditorVerified": true,
+      "editorReloadVerified": true,
+      "previewMotionVerified": true,
+      "canvasMotionVerified": true,
+      "allNewCanvasMotionOff": true,
+      "all96PreviousPlacementsPreserved": true,
+      "aggregateLogoTreatments": 7,
+      "aggregateLogoPlacements": 21,
+      "totalProjectStudyPlacements": 105,
+      "changeScope": {
+        "canonicalPathDataUnchanged": true,
+        "grayscalePalettesUnchanged": true,
+        "verticalTimingAndTravelAmountUnchanged": true,
+        "sharedMotionClockUnchanged": true,
+        "carrierMaskInkAndEchoTranslationsChanged": true,
+        "axis": {
+          "x": -617.80693841,
+          "y": 723.88535466
+        },
+        "nativeNoteChanges": 3
+      },
+      "localValidation": {
+        "focusedSVGRegressionGroups": 13,
+        "surfaceAllocations": 0,
+        "sourcePathTimingAndControlRegionReview": true,
+        "newPhaseSnapshotCount": 0
+      },
+      "actualBrowser": {
+        "desktopModeAxisPairs": 3,
+        "phoneModeAxisPairs": 1,
+        "phonePaletteChecks": 3,
+        "maskAndInkTranslationsMatched": true,
+        "visibleCollinearEchoesVerified": true,
+        "phaseAndBothCoordinatesAdvanced": true,
+        "desktopArtworkScreenCSS": {
+          "h": 680,
+          "w": 1065
+        },
+        "phoneArtworkScreenCSS": {
+          "h": 280,
+          "w": 335
+        },
+        "phoneBodyClientWidth": 375,
+        "phoneBodyScrollWidth": 375,
+        "canvas": {
+          "placement": "LG-05 Desktop, inherited by Phone",
+          "currentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+          "motionOptInVerified": true,
+          "restoredOff": true,
+          "staticInstancesAfterFullReload": 6
+        },
+        "design": {
+          "afterPageNavigationReload": true,
+          "assembledStaticInstances": 3,
+          "lg05NoteCorrect": true
+        },
+        "scope": "Actual Framer DOM axis translations, paired mask/ink and visible collinear echoes. Three Desktop mode pairs, one Phone pair and Phone palettes/layout, plus one fresh Canvas opt-in/restore. No screenshot-pixel comparison or full raster phase suite is claimed."
+      },
+      "previewRefreshObservation": "First explicit Preview after component update rendered all three default props. LG-06 Desktop Study was changed spring→drop→spring, refreshing all correct variants. LG-05 Desktop Canvas motion was temporarily enabled (inherited Phone), then disabled. Full project reload after both restorations retained correct modes/palettes and static Canvas defaults. All subsequent Preview checks above use that reloaded editor.",
+      "evidence": [
+        {
+          "path": "validation/runtime-verification.json",
+          "sha256": "63eed0e8d629fb43f00046a66023c637a46213d5b1dd66843e836c79ec90d075"
+        },
+        {
+          "path": "validation/focused-regression-receipt.json",
+          "sha256": "641e5c7e6139545743e3710f7ec14515a731094c234f2c22c6aca471082b8f72"
+        },
+        {
+          "path": "mcp/axis-motion-final-report.json",
+          "sha256": "fb666d3c81e9e2787dc66ef7017fa4cb6248dd8c312a642521a42e537b60ed12"
+        },
+        {
+          "path": "mcp/axis-motion-saved-node-map.json",
+          "sha256": "efbd39223a537d36d5ad47b4dbea1d101035beddbb1ecc64620fe48104d9b6a9"
+        },
+        {
+          "path": "framer/browser-verification.json",
+          "sha256": "3bc98127cf5e73921fb0096776e9076d94807a63cb3dbc1beef5e59f5a80d962"
+        }
+      ],
+      "proofScope": "Current diagonal-axis motion revision of LG-05–07. Canonical path geometry, palettes, y timing, controls and clock are retained; rendered negative-space mask, bar and echo translations change together. Current focused regression, saved source/note checks and browser evidence bind this source. Complete previous 6f and e259 proofs remain historical, including the former vertical motion and eighteen colored phase/aspect snapshots. No fresh eighteen-frame capture or exported Framer image review is claimed.",
+      "styleApproval": "awaiting owner feedback",
+      "actualFramerExportedImagesReviewed": false
     }
   ],
   "paletteRevision": {
@@ -694,5 +1048,43 @@
     "change": "Collinear horizontal displacement added to the carrier, negative-space cut and echoes. Canonical paths, y timing and travel parameter, grayscale palettes, controls and shared clock are unchanged.",
     "nativeNoteScope": "Only the three saved LG-05 note texts replace vertically with down-left along its own axis; all other native text and styles are retained.",
     "styleApproval": "awaiting owner feedback"
+  },
+  "collectionExpansion": {
+    "date": "2026-10-30",
+    "ownerRequest": "Add three more monochrome logo motion studies.",
+    "sourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+    "previousSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+    "newStudies": [
+      "LG-08",
+      "LG-09",
+      "LG-10"
+    ],
+    "retainedStudies": [
+      "LG-05",
+      "LG-06",
+      "LG-07"
+    ],
+    "change": "Three motion profiles and matching per-copy mask/ink rendering added to the shared SVG component. Existing three presets, IDs and pose profiles are retained.",
+    "transitionSafetyFix": {
+      "intermediateSourceSHA256": "478a690545c8aac3fefa7d5ecce42baa083730d2ad0e8e29d7f983953d4f42e6",
+      "change": "Unmatched previous conveyor copy nodes are hidden before pose dereference during a React prop transition; the shared clock keeps painting."
+    },
+    "styleApproval": "awaiting owner feedback"
+  },
+  "ownerFeedback": {
+    "date": "2026-10-30",
+    "acceptedStudyIds": [
+      "LG-05",
+      "LG-06",
+      "LG-07"
+    ],
+    "acceptedDirection": "Monochrome logo motion along the diagonal carrier axis.",
+    "ownerResponse": "Good. Make more.",
+    "additionalStudiesAwaitingFeedback": [
+      "LG-08",
+      "LG-09",
+      "LG-10"
+    ],
+    "scope": "Acceptance applies to LG-05–07. No approval is inferred for the prior material treatments or the three added motion profiles."
   }
 }

@@ -9815,12 +9815,12 @@
     "section": "Original compositions",
     "materialManifest": "../code-components/logo-manifest.json",
     "motionManifest": "../code-components/logo-drop-manifest.json",
-    "count": 7,
-    "codeInstances": 21,
+    "count": 10,
+    "codeInstances": 30,
     "materialTreatments": 4,
-    "svgMotionTreatments": 3,
-    "totalProjectStudyPlacements": 105,
-    "countScope": "Four material treatments and three SVG motion treatments of the existing Monarchic mark; excludes source-led studies and the eight other original live compositions.",
+    "svgMotionTreatments": 6,
+    "totalProjectStudyPlacements": 114,
+    "countScope": "Four material treatments and six SVG motion treatments of the existing Monarchic mark; excludes source-led studies and the eight other original live compositions.",
     "components": [
       {
         "source": "LogoStudy.tsx",
@@ -9828,7 +9828,7 @@
       },
       {
         "source": "LogoDropStudy.tsx",
-        "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b"
+        "sourceSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57"
       }
     ],
     "studies": [
@@ -9873,6 +9873,24 @@
         "name": "Signal fall",
         "mode": "echo",
         "componentSource": "LogoDropStudy.tsx"
+      },
+      {
+        "id": "LG-08",
+        "name": "Ratchet descent",
+        "mode": "ratchet",
+        "componentSource": "LogoDropStudy.tsx"
+      },
+      {
+        "id": "LG-09",
+        "name": "Return stroke",
+        "mode": "pendulum",
+        "componentSource": "LogoDropStudy.tsx"
+      },
+      {
+        "id": "LG-10",
+        "name": "Carrier loop",
+        "mode": "conveyor",
+        "componentSource": "LogoDropStudy.tsx"
       }
     ],
     "framerDesignPage": "wSe9_qdcJ",
@@ -9884,12 +9902,12 @@
       "phone": "BoGMiXsRD",
       "draft": true
     },
-    "verificationStatus": "three grayscale SVG motion studies follow their diagonal axis; saved/editor-reload, scoped Preview and Canvas verified",
+    "verificationStatus": "three additional grayscale SVG profiles saved/editor-reload verified; new-mode Desktop/Phone motion and Conveyor Canvas verified",
     "materialVerificationReference": "../code-components/logo-manifest.json#/savedVerification",
     "motionVerificationReference": "../code-components/logo-drop-manifest.json#/savedVerification",
-    "styleReviewStatus": "awaiting owner feedback",
-    "paletteScope": "LG-05–07 use grayscale presets; the four prior material treatments are unchanged.",
-    "motionScope": "LG-05–07 move the finite line down-left along its own diagonal; the circle remains fixed."
+    "styleReviewStatus": "LG-05–07 monochrome diagonal motion accepted by owner; LG-08–10 and prior material treatments await feedback",
+    "paletteScope": "LG-05–10 use grayscale presets; the four prior material treatments are unchanged.",
+    "motionScope": "Six SVG variants share the finite carrier’s diagonal axis and stationary circle; LG-08–10 add stepped, reciprocal and repeated-train motion."
   },
   "previousLogoStudies": {
     "classification": "original-logo-treatment",
