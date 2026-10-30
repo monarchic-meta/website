@@ -3,11 +3,11 @@
   "classification": "original-logo-treatment",
   "section": "Original compositions",
   "collection": "Original logo motion",
-  "authoringStatus": "Three grayscale SVG motion treatments technically verified; owner style feedback pending",
+  "authoringStatus": "Three grayscale diagonal-axis motion treatments technically verified; owner style feedback pending",
   "components": [
     {
       "source": "LogoDropStudy.tsx",
-      "sourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+      "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
       "framerCodePath": "LogoDropStudy.tsx",
       "renderer": "SVG",
       "framerComponentId": "codeFile/EiaZX5C:default"
@@ -26,7 +26,7 @@
   },
   "geometryConstruction": {
     "circle": "One stationary closed contour reconstructed from the eight source cubic pieces.",
-    "carrier": "One finite diagonal parallelogram with the source horizontal end caps, translated vertically.",
+    "carrier": "One finite diagonal parallelogram with the source horizontal end caps, translated down-left along its own diagonal during the drop.",
     "compositing": "Two instance-unique luminance masks retain the circle/strip XOR interaction with separately controlled fills; current presets give the circle and line the same neutral tone.",
     "viewBox": [
       0,
@@ -43,7 +43,7 @@
     "intentionalDifferences": [
       "Two masks produce different edge antialiasing from the canonical single compound path. Current presets use equal neutral circle and line colors; no pixel-identical assembled raster claim.",
       "Original registration marks, the echo variant’s dot field and transient bar outlines are additional treatment elements.",
-      "The carrier keeps its diagonal angle while moving along the screen’s vertical axis; the circle remains stationary.",
+      "The carrier keeps its diagonal angle and moves along that same down-left axis; the circle remains stationary.",
       "At the loop boundary the carrier ink and its circle cut fade together before resetting above; this keeps small Scale and Travel values continuous."
     ]
   },
@@ -54,8 +54,8 @@
       "mode": "drop",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
-      "description": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
+      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+      "description": "A diagonal carrier falls down-left along its own axis through the fixed circle, pausing briefly in the assembled mark.",
       "studyProps": {
         "animate": true,
         "canvasMotion": false,
@@ -71,8 +71,8 @@
         "accent": "#171717",
         "background": "#f2f2f2"
       },
-      "framerCompositionNote": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
-      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "framerCompositionNote": "A diagonal carrier falls down-left along its own axis through the fixed circle, pausing briefly in the assembled mark.",
+      "briefSource": "Direct owner request: move the diagonal line down-left along its own diagonal through the circle.",
       "framerPlacements": [
         {
           "placement": "design",
@@ -102,7 +102,7 @@
           "note": "BoGMiXsRDLaTaAaSkB"
         }
       ],
-      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
+      "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
@@ -130,7 +130,16 @@
           "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
         }
       ],
-      "framerCompositionCreditColor": "#555555"
+      "framerCompositionCreditColor": "#555555",
+      "motionHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+          "description": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
+          "framerCompositionNote": "A diagonal carrier falls vertically through the fixed circle, pausing briefly in the assembled mark.",
+          "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
+        }
+      ]
     },
     {
       "id": "LG-06",
@@ -138,7 +147,7 @@
       "mode": "spring",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
       "description": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
       "studyProps": {
         "animate": true,
@@ -156,7 +165,7 @@
         "background": "#111111"
       },
       "framerCompositionNote": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
-      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "briefSource": "Direct owner request: move the diagonal line down-left along its own diagonal through the circle.",
       "framerPlacements": [
         {
           "placement": "design",
@@ -186,7 +195,7 @@
           "note": "BoGMiXsRDQeTKBMULf"
         }
       ],
-      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
+      "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
@@ -214,7 +223,16 @@
           "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
         }
       ],
-      "framerCompositionCreditColor": "#555555"
+      "framerCompositionCreditColor": "#555555",
+      "motionHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+          "description": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
+          "framerCompositionNote": "The diagonal carrier drops into the circle, overshoots, settles, then releases downward.",
+          "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
+        }
+      ]
     },
     {
       "id": "LG-07",
@@ -222,7 +240,7 @@
       "mode": "echo",
       "classification": "original-logo-treatment",
       "componentSource": "LogoDropStudy.tsx",
-      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+      "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
       "description": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
       "studyProps": {
         "animate": true,
@@ -240,7 +258,7 @@
         "background": "#080808"
       },
       "framerCompositionNote": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
-      "briefSource": "Direct owner request: animate the diagonal line dropping through the circle.",
+      "briefSource": "Direct owner request: move the diagonal line down-left along its own diagonal through the circle.",
       "framerPlacements": [
         {
           "placement": "design",
@@ -270,7 +288,7 @@
           "note": "BoGMiXsRDOjdeIuk_Z"
         }
       ],
-      "framerPlacementStatus": "grayscale presets saved and editor-reload verified",
+      "framerPlacementStatus": "diagonal-axis motion saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "framerComponentId": "codeFile/EiaZX5C:default",
       "framerVerifiedDate": "2026-10-29",
@@ -298,7 +316,16 @@
           "scope": "Previous colored motion treatment; complete prior verification is retained in savedVerificationHistory."
         }
       ],
-      "framerCompositionCreditColor": "#555555"
+      "framerCompositionCreditColor": "#555555",
+      "motionHistory": [
+        {
+          "date": "2026-10-29",
+          "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+          "description": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
+          "framerCompositionNote": "A falling diagonal carrier leaves two digital echoes that disappear in the assembled pose.",
+          "scope": "Previous vertical motion; complete previous verification retained in savedVerificationHistory."
+        }
+      ]
     }
   ],
   "framerPages": {
@@ -329,35 +356,45 @@
   "savedVerification": {
     "date": "2026-10-29",
     "passed": true,
-    "status": "monochrome-presets-saved-editor-reload-and-preview-verified",
-    "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+    "status": "diagonal-axis-motion-saved-editor-reload-preview-and-canvas-verified",
+    "componentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
     "studies": 3,
     "codeInstances": 9,
-    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-monochrome-2026-10-29",
+    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-axis-motion-2026-10-29",
     "savedEditorVerified": true,
     "editorReloadVerified": true,
     "previewMotionVerified": true,
+    "canvasMotionVerified": true,
     "allNewCanvasMotionOff": true,
     "all96PreviousPlacementsPreserved": true,
     "aggregateLogoTreatments": 7,
     "aggregateLogoPlacements": 21,
     "totalProjectStudyPlacements": 105,
-    "appearance": {
-      "presetPalette": "grayscale",
-      "nativeClassificationColor": "#555555",
-      "allThreeCircleAndLineColorsEqual": true,
-      "geometryMasksAndMotionClockUnchanged": true
+    "changeScope": {
+      "canonicalPathDataUnchanged": true,
+      "grayscalePalettesUnchanged": true,
+      "verticalTimingAndTravelAmountUnchanged": true,
+      "sharedMotionClockUnchanged": true,
+      "carrierMaskInkAndEchoTranslationsChanged": true,
+      "axis": {
+        "x": -617.80693841,
+        "y": 723.88535466
+      },
+      "nativeNoteChanges": 3
     },
     "localValidation": {
       "focusedSVGRegressionGroups": 13,
       "surfaceAllocations": 0,
-      "paletteOnlySourceReview": true,
+      "sourcePathTimingAndControlRegionReview": true,
       "newPhaseSnapshotCount": 0
     },
-    "actualPreview": {
-      "desktopModePairs": 3,
+    "actualBrowser": {
+      "desktopModeAxisPairs": 3,
+      "phoneModeAxisPairs": 1,
       "phonePaletteChecks": 3,
-      "scope": "Three Desktop mode/palette and phase/pose-advancement pairs; Phone verifies the three grayscale palettes and horizontal layout. No screenshot-pixel comparison is claimed.",
+      "maskAndInkTranslationsMatched": true,
+      "visibleCollinearEchoesVerified": true,
+      "phaseAndBothCoordinatesAdvanced": true,
       "desktopArtworkScreenCSS": {
         "h": 680,
         "w": 1065
@@ -366,40 +403,46 @@
         "h": 280,
         "w": 335
       },
-      "desktopBodyWidth": 1185,
-      "phoneBodyWidth": 375
+      "phoneBodyClientWidth": 375,
+      "phoneBodyScrollWidth": 375,
+      "canvas": {
+        "placement": "LG-05 Desktop, inherited by Phone",
+        "currentSourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+        "motionOptInVerified": true,
+        "restoredOff": true,
+        "staticInstancesAfterFullReload": 6
+      },
+      "design": {
+        "afterPageNavigationReload": true,
+        "assembledStaticInstances": 3,
+        "lg05NoteCorrect": true
+      },
+      "scope": "Actual Framer DOM axis translations, paired mask/ink and visible collinear echoes. Three Desktop mode pairs, one Phone pair and Phone palettes/layout, plus one fresh Canvas opt-in/restore. No screenshot-pixel comparison or full raster phase suite is claimed."
     },
-    "previewRefreshObservation": "Initially Preview rendered the default mode and palette for all three despite saved correct props and correct editor-canvas rendering. A native LG-06 Desktop Study change from Magnetic catch to Gravity pass and back refreshed all three in Preview. After full project reload, explicitly closing and opening Preview loaded all three correct variants. Final saved model read is independent.",
-    "canvasMotionRetestedForPaletteRevision": false,
-    "historicalCanvasEvidence": {
-      "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
-      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
-      "manifestField": "savedVerificationHistory",
-      "scope": "The prior Canvas opt-in/restoration proof remains historical. This palette-only revision preserves the masks, poses and shared motion clock; no new actual Canvas test is claimed."
-    },
+    "previewRefreshObservation": "First explicit Preview after component update rendered all three default props. LG-06 Desktop Study was changed spring→drop→spring, refreshing all correct variants. LG-05 Desktop Canvas motion was temporarily enabled (inherited Phone), then disabled. Full project reload after both restorations retained correct modes/palettes and static Canvas defaults. All subsequent Preview checks above use that reloaded editor.",
     "evidence": [
       {
-        "path": "runtime-verification.json",
-        "sha256": "3e78de224a3c3b1d0ba2c63bbad022448a5b75247bcae9370a19a9d2264ae5cd"
+        "path": "validation/runtime-verification.json",
+        "sha256": "63eed0e8d629fb43f00046a66023c637a46213d5b1dd66843e836c79ec90d075"
       },
       {
-        "path": "presets.json",
-        "sha256": "459ea42512c902f6ec4892be088d350645fb5a5b50b6b2489e38c0d2f1866fc3"
+        "path": "validation/focused-regression-receipt.json",
+        "sha256": "641e5c7e6139545743e3710f7ec14515a731094c234f2c22c6aca471082b8f72"
       },
       {
-        "path": "mcp/monochrome-final-report.json",
-        "sha256": "36ad7f7dea84c5f46668afc02c1cde36f9bf303be73dd41da2cb8cc1446b83d0"
+        "path": "mcp/axis-motion-final-report.json",
+        "sha256": "fb666d3c81e9e2787dc66ef7017fa4cb6248dd8c312a642521a42e537b60ed12"
       },
       {
-        "path": "mcp/monochrome-saved-node-map.json",
-        "sha256": "d4c1628e4ab1f3f49ef5ac30bbff63714b20eec14786f1eef9f04f44d2f3c79c"
+        "path": "mcp/axis-motion-saved-node-map.json",
+        "sha256": "efbd39223a537d36d5ad47b4dbea1d101035beddbb1ecc64620fe48104d9b6a9"
       },
       {
         "path": "framer/browser-verification.json",
-        "sha256": "a461219b825ab0e4d60a9aaa9e809a250704ba12427b11fd1cf888566a222f7d"
+        "sha256": "3bc98127cf5e73921fb0096776e9076d94807a63cb3dbc1beef5e59f5a80d962"
       }
     ],
-    "proofScope": "Grayscale appearance revision of LG-05–07 only, retaining their nine instance IDs, geometry and motion. Current focused regression and saved/browser receipts bind the new source. The complete previous 6f proof, including eighteen colored phase/aspect samples and the actual Canvas check, remains historical. No new eighteen-frame comparison or exported Framer image review is claimed.",
+    "proofScope": "Current diagonal-axis motion revision of LG-05–07. Canonical path geometry, palettes, y timing, controls and clock are retained; rendered negative-space mask, bar and echo translations change together. Current focused regression, saved source/note checks and browser evidence bind this source. Complete previous 6f and e259 proofs remain historical, including the former vertical motion and eighteen colored phase/aspect snapshots. No fresh eighteen-frame capture or exported Framer image review is claimed.",
     "styleApproval": "awaiting owner feedback",
     "actualFramerExportedImagesReviewed": false
   },
@@ -415,7 +458,15 @@
     "stillPhaseScope": "The default still pose, and the initial Preview pose, are assembled in all three variants with no transient echo outlines.",
     "intentionalDifference": "Motion uses authored easing and damped oscillation curves rather than a physical rigid-body simulation.",
     "pauseAndSuspension": "Pause/Play retains the current phase. Offscreen, hidden and reduced-motion states suspend ongoing animation.",
-    "coordination": "One active Canvas SVG study or two active Preview SVG studies; the SVG clock yields these motion slots to visible active WebGL studies."
+    "coordination": "One active Canvas SVG study or two active Preview SVG studies; the SVG clock yields these motion slots to visible active WebGL studies.",
+    "axis": {
+      "direction": "down-left along the finite carrier’s own diagonal",
+      "capCenterVector": {
+        "x": -617.80693841,
+        "y": 723.88535466
+      },
+      "translation": "dx=(axis.x/axis.y)*y; dy=y. The existing y timing and travel amount are retained, and the echo offsets remain collinear."
+    }
   },
   "savedVerificationHistory": [
     {
@@ -536,6 +587,83 @@
       "proofScope": "Three new SVG treatments and nine saved placements only. Existing eight code sources and 96 placements are retained. Fourteen other page trees are unchanged; the two Logo pages preserve old contents after normalizing only the approved parent layout/count extension. Mask antialiasing and separate fill colors intentionally differ from the canonical single compound path. Images exported from Framer have not been reviewed.",
       "styleApproval": "awaiting owner feedback",
       "actualFramerExportedImagesReviewed": false
+    },
+    {
+      "date": "2026-10-29",
+      "passed": true,
+      "status": "monochrome-presets-saved-editor-reload-and-preview-verified",
+      "componentSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+      "studies": 3,
+      "codeInstances": 9,
+      "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-monochrome-2026-10-29",
+      "savedEditorVerified": true,
+      "editorReloadVerified": true,
+      "previewMotionVerified": true,
+      "allNewCanvasMotionOff": true,
+      "all96PreviousPlacementsPreserved": true,
+      "aggregateLogoTreatments": 7,
+      "aggregateLogoPlacements": 21,
+      "totalProjectStudyPlacements": 105,
+      "appearance": {
+        "presetPalette": "grayscale",
+        "nativeClassificationColor": "#555555",
+        "allThreeCircleAndLineColorsEqual": true,
+        "geometryMasksAndMotionClockUnchanged": true
+      },
+      "localValidation": {
+        "focusedSVGRegressionGroups": 13,
+        "surfaceAllocations": 0,
+        "paletteOnlySourceReview": true,
+        "newPhaseSnapshotCount": 0
+      },
+      "actualPreview": {
+        "desktopModePairs": 3,
+        "phonePaletteChecks": 3,
+        "scope": "Three Desktop mode/palette and phase/pose-advancement pairs; Phone verifies the three grayscale palettes and horizontal layout. No screenshot-pixel comparison is claimed.",
+        "desktopArtworkScreenCSS": {
+          "h": 680,
+          "w": 1065
+        },
+        "phoneArtworkScreenCSS": {
+          "h": 280,
+          "w": 335
+        },
+        "desktopBodyWidth": 1185,
+        "phoneBodyWidth": 375
+      },
+      "previewRefreshObservation": "Initially Preview rendered the default mode and palette for all three despite saved correct props and correct editor-canvas rendering. A native LG-06 Desktop Study change from Magnetic catch to Gravity pass and back refreshed all three in Preview. After full project reload, explicitly closing and opening Preview loaded all three correct variants. Final saved model read is independent.",
+      "canvasMotionRetestedForPaletteRevision": false,
+      "historicalCanvasEvidence": {
+        "sourceSHA256": "6f013d2e8a8a9aa68c452daedb10e7fdcc4effac6e408852e89e680c58fce54b",
+        "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-drop-2026-10-29",
+        "manifestField": "savedVerificationHistory",
+        "scope": "The prior Canvas opt-in/restoration proof remains historical. This palette-only revision preserves the masks, poses and shared motion clock; no new actual Canvas test is claimed."
+      },
+      "evidence": [
+        {
+          "path": "runtime-verification.json",
+          "sha256": "3e78de224a3c3b1d0ba2c63bbad022448a5b75247bcae9370a19a9d2264ae5cd"
+        },
+        {
+          "path": "presets.json",
+          "sha256": "459ea42512c902f6ec4892be088d350645fb5a5b50b6b2489e38c0d2f1866fc3"
+        },
+        {
+          "path": "mcp/monochrome-final-report.json",
+          "sha256": "36ad7f7dea84c5f46668afc02c1cde36f9bf303be73dd41da2cb8cc1446b83d0"
+        },
+        {
+          "path": "mcp/monochrome-saved-node-map.json",
+          "sha256": "d4c1628e4ab1f3f49ef5ac30bbff63714b20eec14786f1eef9f04f44d2f3c79c"
+        },
+        {
+          "path": "framer/browser-verification.json",
+          "sha256": "a461219b825ab0e4d60a9aaa9e809a250704ba12427b11fd1cf888566a222f7d"
+        }
+      ],
+      "proofScope": "Grayscale appearance revision of LG-05–07 only, retaining their nine instance IDs, geometry and motion. Current focused regression and saved/browser receipts bind the new source. The complete previous 6f proof, including eighteen colored phase/aspect samples and the actual Canvas check, remains historical. No new eighteen-frame comparison or exported Framer image review is claimed.",
+      "styleApproval": "awaiting owner feedback",
+      "actualFramerExportedImagesReviewed": false
     }
   ],
   "paletteRevision": {
@@ -551,6 +679,20 @@
     "change": "Grayscale presets, neutral native classification credits and component palette defaults; geometry, poses, authored motion and shared clock are unchanged.",
     "nativeClassificationColor": "#555555",
     "presetScope": "Saved presets are grayscale; palette controls remain editable.",
+    "styleApproval": "awaiting owner feedback"
+  },
+  "motionRevision": {
+    "date": "2026-10-29",
+    "ownerRequest": "Move the line down-left along its own diagonal.",
+    "sourceSHA256": "e16f05e1d552e9c7acffcc5e9b10cce5675b4a2b2a42ebe7ac282eb99358857b",
+    "previousSourceSHA256": "e2596f8eed867f11cc31956e6b0b542d1e0e8deb282c41954e7a541f7a3d42d9",
+    "scope": [
+      "LG-05",
+      "LG-06",
+      "LG-07"
+    ],
+    "change": "Collinear horizontal displacement added to the carrier, negative-space cut and echoes. Canonical paths, y timing and travel parameter, grayscale palettes, controls and shared clock are unchanged.",
+    "nativeNoteScope": "Only the three saved LG-05 note texts replace vertically with down-left along its own axis; all other native text and styles are retained.",
     "styleApproval": "awaiting owner feedback"
   }
 }
