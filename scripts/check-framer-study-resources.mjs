@@ -12,12 +12,13 @@ import { fileURLToPath } from 'node:url';
 // They do not execute GLSL or replace real-browser visual/framebuffer checks.
 // Run with: pnpm check:framer-studies
 
-async function run(includeOriginals = false, includeLogos = false) {
+async function run(includeOriginals = false, includeLogos = false, include3DLogos = false) {
     const repo = fileURLToPath(new URL("../", import.meta.url));
     const ts = createRequire(path.join(repo, 'package.json'))('typescript');
     const manifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/manifest.json', 'utf8'));
     // Keep the complete legacy 60 suite, then the existing seven-family 84 suite,
-    // then add twelve logo placements in one eight-family 96 suite.
+    // then the existing eight-family 96 suite, before adding the nine new
+    // dimensional-logo placements in a 105-placement suite.
     // These are resource-test replicas, not claims about saved Framer pages.
     const originalManifest = JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/originals-manifest.json', 'utf8'));
     const originalFixtures = originalManifest.studies;
@@ -27,10 +28,11 @@ async function run(includeOriginals = false, includeLogos = false) {
         assert.equal(study.studyProps.canvasMotion, false, 'original presets keep editor motion opt-in');
     }
     const logoManifest = includeLogos ? JSON.parse(fs.readFileSync(repo + '/docs/design-studies/code-components/logo-manifest.json', 'utf8')) : null;
-    const logoFixtures = logoManifest?.studies ?? [];
+    const logoFixtures = logoManifest?.studies.filter(study => include3DLogos || ['LG-01', 'LG-02', 'LG-03', 'LG-04'].includes(study.id)) ?? [];
     if (includeLogos) {
         assert.equal(includeOriginals, true, 'logo stress case retains all seven existing families');
-        assert.equal(logoFixtures.length, 4, 'four existing-brand logo treatments');
+        assert.equal(logoFixtures.length, include3DLogos ? 7 : 4, 'existing and dimensional logo fixture count');
+        assert.deepEqual(logoFixtures.map(study => study.id), include3DLogos ? ['LG-01', 'LG-02', 'LG-03', 'LG-04', 'LG-11', 'LG-12', 'LG-13'] : ['LG-01', 'LG-02', 'LG-03', 'LG-04'], 'logo fixtures retain the original four before adding three dimensional treatments');
         for (const study of logoFixtures) {
             assert.equal(study.classification, 'original-logo-treatment', 'new treatment does not claim authorship of the brand mark');
             assert.equal(study.studyProps.canvasMotion, false, 'logo presets keep editor motion opt-in');
@@ -38,7 +40,7 @@ async function run(includeOriginals = false, includeLogos = false) {
     }
     const studies = includeOriginals ? [...manifest.studies, ...originalFixtures, ...logoFixtures] : manifest.studies;
     const files = [...new Set(studies.map(s => s.componentSource))];
-    const expectedPlacements = includeLogos ? 96 : includeOriginals ? 84 : 60;
+    const expectedPlacements = include3DLogos ? 105 : includeLogos ? 96 : includeOriginals ? 84 : 60;
     let logoMaskRasterizations = 0, logoMaskReadbacks = 0;
     class Path2D {
         constructor(source) { this.source = source; }
@@ -286,7 +288,7 @@ async function run(includeOriginals = false, includeLogos = false) {
     }
     assert.equal(files.length, includeLogos ? 8 : includeOriginals ? 7 : 5, 'expected standalone study modules');
     assert.equal(manifest.studies.length, 20, 'twenty distinct legacy studies');
-    assert.equal(studies.length, includeLogos ? 32 : includeOriginals ? 28 : 20, 'all legacy and original modes represented');
+    assert.equal(studies.length, include3DLogos ? 35 : includeLogos ? 32 : includeOriginals ? 28 : 20, 'all legacy and original modes represented');
     for (const coordinator of coordinators)
         assert.equal(coordinator, coordinators[0], 'standalone modules keep identical shared coordinator definitions');
     const pool = modules.values().next().value.getStudyPool();
@@ -387,7 +389,7 @@ async function run(includeOriginals = false, includeLogos = false) {
     assert.equal(entries.filter(e => !e.fixture.id.startsWith('OL-') && !e.fixture.id.startsWith('LG-') && e.hasFrame).length, 60, 'all sixty legacy placements remain covered');
     if (includeOriginals) assert.equal(entries.filter(e => e.fixture.id.startsWith('OL-') && e.hasFrame).length, 24, 'all eight original modes have three mixed replicas');
     if (includeLogos) {
-        assert.equal(entries.filter(e => e.fixture.id.startsWith('LG-') && e.hasFrame).length, 12, 'all four logo treatments have three mixed replicas');
+        assert.equal(entries.filter(e => e.fixture.id.startsWith('LG-') && e.hasFrame).length, include3DLogos ? 21 : 12, 'all logo treatments have three mixed replicas');
         assert.equal(logoMaskRasterizations, 1, 'one synchronous logo atlas rasterization per module');
         assert.equal(logoMaskReadbacks, 1, 'one full mask readback per module');
     }
@@ -395,7 +397,7 @@ async function run(includeOriginals = false, includeLogos = false) {
         assertFrame(entry);
     assert.equal(active.size, 0, 'paused overview retains no WebGL contexts');
     assertCaps();
-    record(includeLogos ? 'spatial 96-placement bootstrap uses eight actual renderer factories, including offscreen cards' : includeOriginals ? 'spatial 84-placement bootstrap uses seven actual renderer factories, including offscreen cards' : 'spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
+    record(include3DLogos ? 'spatial 105-placement bootstrap uses eight actual renderer factories, including offscreen cards' : includeLogos ? 'spatial 96-placement bootstrap uses eight actual renderer factories, including offscreen cards' : includeOriginals ? 'spatial 84-placement bootstrap uses seven actual renderer factories, including offscreen cards' : 'spatial 60-placement bootstrap uses five actual renderer factories, including offscreen cards');
     let zoomCases = 0;
     for (const dpr of [1, 1.5, 2]) {
         window.devicePixelRatio = dpr;
@@ -423,7 +425,7 @@ async function run(includeOriginals = false, includeLogos = false) {
     if (includeOriginals) window.innerHeight = includeLogos ? 1500 : 1280;
     project(.4, roles.reference.x, 0);
     await settle('return to cached reference board');
-    record(includeLogos ? 'pan through all 96 mixed placements and back never reuses inadequate cache tiers' : includeOriginals ? 'pan through all 84 mixed placements and back never reuses inadequate cache tiers' : 'pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
+    record(include3DLogos ? 'pan through all 105 mixed placements and back never reuses inadequate cache tiers' : includeLogos ? 'pan through all 96 mixed placements and back never reuses inadequate cache tiers' : includeOriginals ? 'pan through all 84 mixed placements and back never reuses inadequate cache tiers' : 'pan through all sixty main/reference/lab placements and back never reuses inadequate cache tiers');
     const movingPeers = entries.filter(e => e.fixture.role === 'reference');
     assert.ok(movingPeers.every(isVisible), 'all hover fairness peers are actually visible');
     for (const [index, entry] of movingPeers.entries())
@@ -444,7 +446,7 @@ async function run(includeOriginals = false, includeLogos = false) {
     await settle('hover queue settles');
     assert.ok(peakPixels <= 3000000, 'editor live plus serial still initialization stays within 1M+2M GPU pixels');
     assertCaps();
-    record(includeLogos ? 'thirty-two mixed cards upgrade fairly during continuous hover and parameter churn' : includeOriginals ? 'twenty-eight mixed cards upgrade fairly during continuous hover and parameter churn' : 'twenty visible cards upgrade fairly during continuous hover and parameter churn');
+    record(include3DLogos ? 'thirty-five mixed cards upgrade fairly during continuous hover and parameter churn' : includeLogos ? 'thirty-two mixed cards upgrade fairly during continuous hover and parameter churn' : includeOriginals ? 'twenty-eight mixed cards upgrade fairly during continuous hover and parameter churn' : 'twenty visible cards upgrade fairly during continuous hover and parameter churn');
     if (includeOriginals) window.innerHeight = 900;
     const focused = entries.find(e => e.fixture.role === 'reference' && e.source === 'PointCodingStudy.tsx');
     project(1, focused.fixture.worldX, focused.fixture.worldY);
@@ -640,12 +642,13 @@ async function run(includeOriginals = false, includeLogos = false) {
         assert.equal(logoMaskReadbacks, 1, 'logo atlas does not repeatedly read its large mask');
     }
     assertCaps();
-    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), originalStudies: includeOriginals ? 8 : 0, originalInstances: includeOriginals ? 24 : 0, logoStudies: includeLogos ? 4 : 0, logoInstances: includeLogos ? 12 : 0, logoMaskRasterizations, logoMaskReadbacks, legacyInstances: 60, scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' + (includeLogos ? ' The logo atlas uses a synthetic binary mask here to exercise allocation and caching; authentic SVG geometry is verified separately.' : '') };
+    return { passed: true, actualModules: files.length, instances: entries.length, checks, peakContexts, peakPixels, contextsCreated: created, draws, copies, handledInjectedFailures: failures.length, sourceHashes: Object.fromEntries(files.map(file => [file, hash(fs.readFileSync(repo + '/docs/design-studies/code-components/' + file))])), originalStudies: includeOriginals ? 8 : 0, originalInstances: includeOriginals ? 24 : 0, logoStudies: logoFixtures.length, logoInstances: logoFixtures.length * 3, dimensionalLogoStudies: include3DLogos ? 3 : 0, dimensionalLogoInstances: include3DLogos ? 9 : 0, logoMaskRasterizations, logoMaskReadbacks, legacyInstances: 60, scope: 'Actual standalone coordinator/renderers with deterministic DOM/WebGL/timer doubles and realistic spatial/quality assertions. Does not execute GLSL; the separate real-browser harness compares all visible output to fresh same-phase/pointer/size shader renders.' + (includeLogos ? ' The logo atlas uses a synthetic binary mask here to exercise allocation and caching; authentic SVG geometry is verified separately.' : '') };
 }
 try {
     const legacyRegression = await run(false);
     const mixedRegression = await run(true);
     const logoRegression = await run(true, true);
+    const dimensionalLogoRegression = await run(true, true, true);
     assert.equal(legacyRegression.actualModules, 5, 'legacy module regression remains unchanged');
     assert.equal(legacyRegression.instances, 60, 'legacy placement regression remains unchanged');
     assert.equal(legacyRegression.checks.length, 12, 'all twelve legacy resource assertion groups retained');
@@ -653,7 +656,9 @@ try {
     assert.equal(mixedRegression.checks.length, 12, 'all twelve existing mixed resource assertion groups retained');
     assert.equal(logoRegression.instances, 96, 'all 96 placements include the twelve new logo fixtures');
     assert.equal(logoRegression.checks.length, 12, 'all twelve resource assertion groups also cover the eight-family window');
-    console.log(JSON.stringify({ ...logoRegression, legacyAssertionsRetained: true, existingMixedAssertionsRetained: true, legacyRegression, existingMixedRegression: mixedRegression }));
+    assert.equal(dimensionalLogoRegression.instances, 105, 'nine dimensional-logo placements extend the GPU case to 105');
+    assert.equal(dimensionalLogoRegression.checks.length, 12, 'all twelve resource assertion groups cover the dimensional-logo extension');
+    console.log(JSON.stringify({ ...dimensionalLogoRegression, legacyAssertionsRetained: true, existingMixedAssertionsRetained: true, existingLogoAssertionsRetained: true, legacyRegression, existingMixedRegression: mixedRegression, existingLogoRegression: logoRegression }));
 }
 catch (error) {
     console.log(JSON.stringify({ passed: false, error: error instanceof Error ? error.message : String(error) }));

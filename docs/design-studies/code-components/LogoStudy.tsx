@@ -3,7 +3,7 @@ import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } f
 
 // Original animated material treatments of the existing Monarchic brand mark.
 // The canonical brand geometry is credited below; no new logo authorship is claimed.
-type Mode = "press" | "contour" | "chrome" | "phosphor"
+type Mode = "press" | "contour" | "chrome" | "phosphor" | "machined" | "slab" | "glass"
 type Status = "waiting" | "running" | "paused" | "static" | "reduced-motion" | "offscreen" | "recovering"
 interface Props {
     study?: Mode
@@ -53,6 +53,9 @@ const STUDIES = {
     contour:{key:"LG-02",title:"Optical counterform"},
     chrome:{key:"LG-03",title:"Chrome cut"},
     phosphor:{key:"LG-04",title:"Phosphor carrier"},
+    machined:{key:"LG-11",title:"Machined extrusion"},
+    slab:{key:"LG-12",title:"Layered slab"},
+    glass:{key:"LG-13",title:"Glass relief"},
 }
 const VERTEX = `
 attribute vec2 a_position;
@@ -223,6 +226,202 @@ vec3 phosphorMark(vec2 p){
     color*=1.0+(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.07;
     return color*u_intensity;
 }
+// The added materials use scalar palette luminance throughout. Existing four
+// treatments retain their original color fields and rendering functions above.
+float neutralValue(vec3 color){return dot(color,vec3(.2126,.7152,.0722));}
+vec3 reliefSpace(vec3 p,float material){
+    float span=u_focus/.65;
+    float yaw=material<.5?.48:material<1.5?-.52:.38;
+    float tilt=material<.5?-.22:material<1.5?.24:-.19;
+    p.xy=rot(material<.5?-.12:material<1.5?.13:-.09)*p.xy;
+    p.xz=rot(yaw+.055*sin(u_time*.78)*span+u_mouse.x*.13)*p.xz;
+    p.yz=rot(tilt+.040*cos(u_time*.63)*span+u_mouse.y*.11)*p.yz;
+    return p;
+}
+float slabSpacing(){return .105+.055*u_refraction+.016*sin(u_time*.90)*(u_focus/.65);}
+float reliefSolid(vec3 p,float material){
+    vec3 q=reliefSpace(p,material);
+    float bevel=material<.5?.014:material<1.5?.006:.018;
+    float depth=material<.5?.085+.12*u_refraction:material<1.5?.018+.018*u_refraction:.070+.10*u_refraction;
+    float z=abs(q.z);
+    if(material>.5&&material<1.5){
+        // Repeating only the extrusion coordinate keeps one atlas read per
+        // march step while retaining three genuinely separated physical plates.
+        float spacing=slabSpacing();
+        z=min(z,min(abs(q.z-spacing),abs(q.z+spacing)));
+    }
+    vec2 d=vec2(logoDistance(q.xy)+bevel,z-depth+bevel);
+    return min(max(d.x,d.y),0.0)+length(max(d,0.0))-bevel;
+}
+vec3 reliefNormal(vec3 p,float material){
+    // Filter lighting normals over the sampled SDF grid; ray intersections
+    // still use the original field and preserve the canonical counterform.
+    vec2 e=vec2(.010,0);
+    return normalize(vec3(reliefSolid(p+e.xyy,material)-reliefSolid(p-e.xyy,material),reliefSolid(p+e.yxy,material)-reliefSolid(p-e.yxy,material),reliefSolid(p+e.yyx,material)-reliefSolid(p-e.yyx,material)));
+}
+bool intersectRelief(vec3 ro,vec3 rd,float material,out vec3 hit){
+    float t=1.30;
+    for(int i=0;i<112;i++){
+        float d=reliefSolid(ro+rd*t,material);
+        if(d<.00065){hit=ro+rd*t;return true;}
+        t+=max(d*.70,.0004);
+        if(t>4.6)break;
+    }
+    hit=ro+rd*t;return false;
+}
+float reliefOcclusion(vec3 p,vec3 n,float material){
+    float a=clamp(reliefSolid(p+n*.025,material)/.025,0.0,1.0);
+    float b=clamp(reliefSolid(p+n*.065,material)/.065,0.0,1.0);
+    return .55+.45*(a*.65+b*.35);
+}
+float neutralStudio(vec3 direction){
+    float softbox=exp(-pow((direction.y-.38)/.24,2.0));
+    float rim=exp(-pow((direction.x+.54)/.13,2.0));
+    float narrow=exp(-pow((direction.y+.32*direction.x+.27)/.030,2.0));
+    float blackCard=exp(-pow((direction.x-.38*direction.y-.20)/.14,2.0));
+    return mix(.10+.62*softbox+.27*rim+.58*narrow,.018,blackCard*.91);
+}
+vec3 machinedMark(vec2 p){
+    float primary=neutralValue(u_primary),paper=neutralValue(u_secondary),ink=neutralValue(u_ink);
+    float halo=exp(-dot(p-vec2(-.12,.06),p-vec2(-.12,.06))*3.2);
+    float background=.012+ink*.14+halo*.018;
+    vec3 ro=vec3(0,0,3.0),rd=normalize(vec3((p-vec2(-.015,.0))*1.13,-3.0)),hit;
+    if(!intersectRelief(ro,rd,0.0,hit))return vec3(background)*u_intensity;
+    vec3 n=reliefNormal(hit,0.0),local=reliefSpace(hit,0.0);
+    float span=u_focus/.65;
+    vec3 light=normalize(vec3(-.68+.14*sin(u_time*.74)*span,.78,1.05));
+    float diffuse=max(dot(n,light),0.0);
+    float facing=max(dot(n,-rd),0.0);
+    float reflection=neutralStudio(reflect(rd,n));
+    float specular=pow(max(dot(reflect(-light,n),-rd),0.0),66.0);
+    float pitch=min(185.0,.70/pixelWorld());
+    float brushed=.5+.5*sin(local.y*pitch+local.x*5.0);
+    float body=mix(.09,primary,.45)+diffuse*(.12+.14*primary);
+    body+=reflection*(.24+.31*primary)+specular*(.24+.18*paper);
+    body+=pow(1.0-facing,2.8)*(.22+.16*paper);
+    body*=reliefOcclusion(hit,n,0.0);
+    body+=brushed*.024*u_grain*(.3+.7*diffuse);
+    body=1.0-exp(-max(body,0.0)*1.30);
+    body+=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.010;
+    return vec3(body)*u_intensity;
+}
+vec3 slabMark(vec2 p){
+    float primary=neutralValue(u_primary),paper=neutralValue(u_secondary),ink=neutralValue(u_ink);
+    float background=mix(.94,paper,.55);
+    vec3 ro=vec3(0,0,3.0),rd=normalize(vec3((p-vec2(.0,-.005))*1.13,-3.0)),hit;
+    if(!intersectRelief(ro,rd,1.0,hit))return vec3(background)*u_intensity;
+    vec3 n=reliefNormal(hit,1.0),local=reliefSpace(hit,1.0);
+    float plate=floor(local.z/slabSpacing()+.5);
+    float front=step(.5,plate),back=step(plate,-.5);
+    float base=mix(max(.06,ink),primary,front*.87+back*.44);
+    float span=u_focus/.65;
+    vec3 light=normalize(vec3(-.55,.75+.12*sin(u_time*.71)*span,1.2));
+    float diffuse=max(dot(n,light),0.0),facing=max(dot(n,-rd),0.0);
+    float specular=pow(max(dot(reflect(-light,n),-rd),0.0),44.0);
+    float value=base*(.27+.63*diffuse)+paper*(specular*.30+pow(1.0-facing,3.0)*.13);
+    value*=reliefOcclusion(hit,n,1.0);
+    value+=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.012;
+    return vec3(value)*u_intensity;
+}
+float technicalBackdrop(vec2 p,float footprint,float barVisibility){
+    float paper=mix(.93,neutralValue(u_secondary),.45),ink=neutralValue(u_ink);
+    float px=max(max(pixelWorld(),.0008),footprint);
+    float lineX=stripe(p.x*PI/.10,px*PI/.10,sin(.0010*PI/.10));
+    float lineY=stripe(p.y*PI/.10,px*PI/.10,sin(.0010*PI/.10));
+    float rule=1.0-(1.0-lineX)*(1.0-lineY);
+    float value=mix(paper,mix(paper,ink,.38),rule*.55);
+    float horizontal=1.0-smoothstep(.013,.013+px*1.5,abs(p.y-.095));
+    value=mix(value,ink*.45,horizontal*.92);
+    float gate=smoothstep(.16,.18,p.x)*(1.0-smoothstep(.48,.50,p.x));
+    float bars=stripe((p.x+.15)*PI/.034,px*PI/.034,sin(.005*PI/.034));
+    value=mix(value,mix(ink,paper,.20),bars*gate*.60*barVisibility);
+    return value;
+}
+vec3 glassNormal(vec3 p){
+    vec3 q=reliefSpace(p,2.0);
+    float e=.018,bevel=.018,depth=.070+.10*u_refraction;
+    vec2 gradient=vec2(logoDistance(q.xy+vec2(e,0))-logoDistance(q.xy-vec2(e,0)),logoDistance(q.xy+vec2(0,e))-logoDistance(q.xy-vec2(0,e)));
+    gradient=normalize(gradient+vec2(.00000001,0));
+    vec2 limits=vec2(logoDistance(q.xy)+bevel,abs(q.z)-depth+bevel);
+    vec2 weight=max(limits,0.0);
+    if(dot(weight,weight)<.0000000001)weight=limits.x>limits.y?vec2(1,0):vec2(0,1);
+    weight/=max(length(weight),.000001);
+    // Analytic extrusion faces stay planar. Only the curved side silhouette
+    // uses a filtered atlas gradient, avoiding pixel-grid transmission noise.
+    vec3 n=normalize(vec3(gradient*weight.x,(q.z<0.0?-1.0:1.0)*weight.y));
+    float span=u_focus/.65;
+    n.yz=rot(-(-.19+.040*cos(u_time*.63)*span+u_mouse.y*.11))*n.yz;
+    n.xz=rot(-(.38+.055*sin(u_time*.78)*span+u_mouse.x*.13))*n.xz;
+    n.xy=rot(.09)*n.xy;
+    return normalize(n);
+}
+bool glassExit(vec3 entry,vec3 direction,out vec3 exitPoint,out float pathLength){
+    float insideT=0.0;
+    bool entered=false;
+    // The initial ray hit is epsilon-outside. Establish a real interior sample
+    // before searching for the second interface, including grazing bevel rays.
+    for(int i=0;i<12;i++){
+        float t=.0008+float(i)*.0012;
+        if(reliefSolid(entry+direction*t,2.0)<-.00005){insideT=t;entered=true;break;}
+    }
+    float low=insideT,high=insideT;
+    bool bracketed=false;
+    if(entered){
+        for(int i=0;i<80;i++){
+            float d=reliefSolid(entry+direction*low,2.0);
+            high=low+max(-d*.70,.0010);
+            if(high>1.35)break;
+            if(reliefSolid(entry+direction*high,2.0)>=0.0){bracketed=true;break;}
+            low=high;
+        }
+    }
+    if(bracketed){
+        for(int i=0;i<9;i++){
+            float middle=(low+high)*.5;
+            if(reliefSolid(entry+direction*middle,2.0)<0.0)low=middle;else high=middle;
+        }
+    }
+    pathLength=(low+high)*.5;
+    exitPoint=entry+direction*pathLength;
+    return entered&&bracketed;
+}
+vec3 glassRelief(vec2 p){
+    float primary=neutralValue(u_primary),paper=neutralValue(u_secondary);
+    vec3 ro=vec3(0,0,3.0),rd=normalize(vec3((p-vec2(.0,.0))*1.13,-3.0)),hit;
+    float plane=-.62;
+    vec3 plain=ro+rd*((plane-ro.z)/rd.z);
+    float backdrop=technicalBackdrop(plain.xy,0.0,1.0);
+    if(!intersectRelief(ro,rd,2.0,hit))return vec3(backdrop)*u_intensity;
+    vec3 n=glassNormal(hit),inside=refract(rd,n,1.0/1.48),exitPoint;
+    float pathLength;
+    bool validExit=glassExit(hit,inside,exitPoint,pathLength);
+    vec3 exitNormal=glassNormal(exitPoint);
+    if(dot(inside,exitNormal)<0.0)exitNormal=-exitNormal;
+    float cosine=max(dot(inside,exitNormal),0.0);
+    float critical=1.0-1.48*1.48*(1.0-cosine*cosine);
+    vec3 outgoing=normalize(1.48*inside+(sqrt(max(critical,.0001))-1.48*cosine)*exitNormal);
+    // Smooth the critical-angle transition, and use reflected light for rays
+    // that cannot reach the backdrop. No arbitrary long/forward projection.
+    float transmitted=(validExit?1.0:0.0)*smoothstep(.0,.045,critical)*smoothstep(.04,.15,-outgoing.z);
+    float distanceToPlane=(plane-exitPoint.z)/min(outgoing.z,-.04);
+    transmitted*=1.0-smoothstep(2.0,3.0,distanceToPlane);
+    vec2 refractedPoint=(exitPoint+outgoing*clamp(distanceToPlane,.0,3.0)).xy;
+    float facing=max(dot(n,-rd),0.0),fresnel=.055+.945*pow(1.0-facing,4.0);
+    // Grazing/curved sides use a polished reflective finish. Transmission is
+    // reserved for well-conditioned broad faces, with wider analytic filtering
+    // and no high-frequency barcode bank in the refracted sample.
+    transmitted*=smoothstep(.38,.72,facing);
+    float footprint=pixelWorld()+pow(1.0-facing,2.0)*.075+pow(1.0-cosine,2.0)*.10;
+    float through=technicalBackdrop(refractedPoint,footprint,0.0);
+    float absorption=exp(-pathLength*(.7+2.1*(1.0-primary)));
+    float reflection=neutralStudio(reflect(rd,n));
+    float value=mix(reflection*.75,through*absorption*(.84+.10*paper),transmitted);
+    value=mix(value,reflection,fresnel*.87+.035);
+    value+=pow(1.0-facing,2.6)*.31+reflection*.075;
+    value*=reliefOcclusion(hit,n,2.0);
+    value+=(hash(floor(gl_FragCoord.xy))-.5)*u_grain*.008;
+    return vec3(value)*u_intensity;
+}
 void main(){
     vec2 p=(gl_FragCoord.xy-.5*u_resolution)/u_resolution.y;
     float fit=min(1.0,u_resolution.x/u_resolution.y/1.35);
@@ -232,7 +431,10 @@ void main(){
     if(u_mode<.5)color=pigmentPress(p);
     else if(u_mode<1.5)color=opticalContour(p);
     else if(u_mode<2.5)color=chromeMark(p);
-    else color=phosphorMark(p);
+    else if(u_mode<3.5)color=phosphorMark(p);
+    else if(u_mode<4.5)color=machinedMark(p);
+    else if(u_mode<5.5)color=slabMark(p);
+    else color=glassRelief(p);
     gl_FragColor=vec4(clamp(color,0.0,1.0),1.0);
 }
 `
@@ -463,7 +665,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
         gl.uniform1f(location(p,"u_focus"),settings.focus)
         gl.uniform1f(location(p,"u_refraction"),settings.refraction)
         gl.uniform1i(location(p,"u_panel"),0)
-        gl.uniform1f(location(p,"u_mode"),settings.mode==="press"?0:settings.mode==="contour"?1:settings.mode==="chrome"?2:3)
+        gl.uniform1f(location(p,"u_mode"),settings.mode==="press"?0:settings.mode==="contour"?1:settings.mode==="chrome"?2:settings.mode==="phosphor"?3:settings.mode==="machined"?4:settings.mode==="slab"?5:6)
         gl.uniform3fv(location(p,"u_primary"),rgb(settings.primary,settings.colorHost??canvas))
         gl.uniform3fv(location(p,"u_secondary"),rgb(settings.secondary,settings.colorHost??canvas))
         gl.uniform3fv(location(p,"u_ink"),rgb(settings.ink,settings.colorHost??canvas))
@@ -936,9 +1138,9 @@ export default function LogoStudy(props: Props) {
     const settings:Settings={mode:study,animate:animate&&!paused,static:isStatic,canvasPreview,speed:Math.max(0,speed),stillTime,intensity,
         scale:Math.max(.5,scale),grain:Math.max(0,grain),focus:Math.max(0,Math.min(1,focus)),refraction:Math.max(0,refraction),interactive,primary,secondary,ink}
     const requestMotion=useStudySurface(root,canvas,settings,target,"LogoStudy.tsx",(s,e)=>{setStatus(s);setError(e??"")})
-    const source=STUDIES[study],color=study==="phosphor"?"#dbeef0":ink
+    const source=STUDIES[study],color=study==="machined"?"#e2e2e2":study==="slab"||study==="glass"?"#202020":study==="phosphor"?"#dbeef0":ink
     const mono:React.CSSProperties={fontFamily:'"IBM Plex Mono", monospace',fontSize:10,letterSpacing:".045em",lineHeight:1.5}
-    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="phosphor"?ink:study==="press"?secondary:study==="contour"?primary:"#ede9f4",color}}>
+    return <div ref={root} role="group" aria-label={source.title} style={{width:"100%",height:"100%",...style,position:"relative",overflow:"hidden",background:study==="machined"?"#0c0c0c":study==="slab"?"#eeeeee":study==="glass"?"#e9e9e9":study==="phosphor"?ink:study==="press"?secondary:study==="contour"?primary:"#ede9f4",color}}>
         <canvas ref={canvas} role="img" aria-label={source.title+", independently composed animated graphic "+source.key} style={{display:"block",width:"100%",height:"100%",touchAction:"pan-y"}} />
         {showLabels&&<>
             <div style={{position:"absolute",left:"5%",top:"6%",pointerEvents:"none"}}>
@@ -955,7 +1157,7 @@ export default function LogoStudy(props: Props) {
     </div>
 }
 addPropertyControls(LogoStudy,{
-    study:{type:ControlType.Enum,title:"Study",options:["press","contour","chrome","phosphor"],optionTitles:["Pigment relief","Optical counterform","Chrome cut","Phosphor carrier"],defaultValue:"press"},
+    study:{type:ControlType.Enum,title:"Study",options:["press","contour","chrome","phosphor","machined","slab","glass"],optionTitles:["Pigment relief","Optical counterform","Chrome cut","Phosphor carrier","Machined extrusion","Layered slab","Glass relief"],defaultValue:"press"},
     animate:{type:ControlType.Boolean,title:"Animate",defaultValue:true},
     canvasMotion:{type:ControlType.Boolean,title:"Canvas motion",defaultValue:false},
     speed:{type:ControlType.Number,title:"Speed",min:0,max:2,step:.05,defaultValue:.65},
@@ -964,7 +1166,7 @@ addPropertyControls(LogoStudy,{
     scale:{type:ControlType.Number,title:"Scale",min:.5,max:1.5,step:.05,defaultValue:1},
     grain:{type:ControlType.Number,title:"Grain",min:0,max:1,step:.05,defaultValue:.65},
     focus:{type:ControlType.Number,title:"Motion span",min:0,max:1,step:.05,defaultValue:.65},
-    refraction:{type:ControlType.Number,title:"Relief",min:0,max:1.5,step:.05,defaultValue:.85,hidden:p=>p.study!=="press"&&p.study!=="chrome"},
+    refraction:{type:ControlType.Number,title:"Relief",min:0,max:1.5,step:.05,defaultValue:.85,hidden:p=>p.study!=="press"&&p.study!=="chrome"&&p.study!=="machined"&&p.study!=="slab"&&p.study!=="glass"},
     primary:{type:ControlType.Color,title:"Primary",defaultValue:"#be5032"},
     secondary:{type:ControlType.Color,title:"Secondary",defaultValue:"#eee4d2"},
     ink:{type:ControlType.Color,title:"Ink",defaultValue:"#222a29"},
