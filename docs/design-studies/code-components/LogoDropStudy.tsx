@@ -5,7 +5,7 @@ import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } f
 // Geometry: monarchic-meta/logo, commit 1844d35d6ffdedf2356ec929c36bb5c0454cf645.
 // The two masks express circle XOR finite carrier, preserving the canonical
 // diagonal negative space and horizontal end caps at the assembled pose.
-type Mode = "drop" | "spring" | "echo"
+type Mode = "drop" | "spring" | "echo" | "ratchet" | "pendulum" | "conveyor"
 type Status = "ready" | "running" | "paused" | "waiting" | "offscreen" | "reduced-motion" | "static"
 interface Props {
     study?: Mode
@@ -32,13 +32,27 @@ const STUDIES = {
     drop: { key: "LG-05", title: "Gravity pass", note: "A line in free passage." },
     spring: { key: "LG-06", title: "Magnetic catch", note: "Fall. Catch. Release." },
     echo: { key: "LG-07", title: "Signal fall", note: "One carrier. Repeated signal." },
+    ratchet: { key: "LG-08", title: "Ratchet descent", note: "Advance. Hold. Advance." },
+    pendulum: { key: "LG-09", title: "Return stroke", note: "A reciprocal pass." },
+    conveyor: { key: "LG-10", title: "Carrier loop", note: "A continuous line of carriers." },
 }
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n))
 const smooth = (t: number) => t * t * (3 - 2 * t)
+const RATCHET_STOPS = [[0, -1120], [.08, -1120], [.18, -650], [.26, -650], [.34, -300], [.40, -300], [.46, 0], [.60, 0], [.68, 320], [.75, 320], [.84, 720], [.89, 720], [.96, 1120], [1, 1120]]
+function ratchetY(phase: number) {
+    const i = RATCHET_STOPS.findIndex(stop => stop[0] > phase)
+    const [start, from] = RATCHET_STOPS[Math.max(0, i - 1)], [end, to] = RATCHET_STOPS[i < 0 ? RATCHET_STOPS.length - 1 : i]
+    return from + (to - from) * smooth(clamp((phase - start) / (end - start || 1), 0, 1))
+}
 function carrierPose(mode: Mode, phase: number, travel = 1, bounce = .65) {
     const p = ((phase % 1) + 1) % 1
     let y = 0
-    if (mode === "spring") {
+    if (mode === "ratchet") y = ratchetY(p)
+    else if (mode === "pendulum") {
+        const wave = Math.sin(p * Math.PI * 2)
+        y = -900 * Math.sign(wave) * smooth(clamp((Math.abs(wave) - .2) / .8, 0, 1))
+    } else if (mode === "conveyor") y = travel > 0 ? (p - .5) * (1400 + 1000 * travel) : 0
+    else if (mode === "spring") {
         if (p < .08) y = -1120
         else if (p < .26) y = -1120 + (1120 + 110 * bounce) * Math.pow((p - .08) / .18, 2)
         else if (p < .46) {
@@ -61,9 +75,21 @@ function carrierPose(mode: Mode, phase: number, travel = 1, bounce = .65) {
     const moving = travel > 0 && Math.abs(y) > 1 && Math.abs(y) < 1119
     // At small scale or travel, the bar can remain in view at the wrap. Fade
     // both its ink and its cut to the unbroken circle before resetting up-right.
-    const opacity = travel <= 0 ? 1 : smooth(clamp(p / .04, 0, 1)) * smooth(clamp((1 - p) / .04, 0, 1))
-    const offset = y * travel, echoY = offset - 94
+    const opacity = travel <= 0 || mode === "pendulum" || mode === "conveyor" ? 1 : smooth(clamp(p / .04, 0, 1)) * smooth(clamp((1 - p) / .04, 0, 1))
+    const offset = mode === "conveyor" ? y : y * travel, echoY = offset - 94
     return { x: carrierX(offset), y: offset, opacity, echoX: carrierX(echoY), echoY, echoOpacity: mode === "echo" && moving ? .28 : 0 }
+}
+function carrierPoses(mode: Mode, phase: number, travel = 1, bounce = .65) {
+    const primary = carrierPose(mode, phase, travel, bounce)
+    if (mode !== "conveyor" || travel <= 0) return [primary]
+    // Travel sets train spacing here; zero freezes one assembled carrier.
+    // Three copies cover the viewport even at Scale .5. Only offscreen copies
+    // differ across a wrap, so the visible train never fades or jumps.
+    const spacing = 1400 + 1000 * travel
+    return [primary, ...[-1, 1].map(copy => {
+        const y = primary.y + copy * spacing
+        return { ...primary, x: carrierX(y), y }
+    })]
 }
 
 interface MotionEntry {
@@ -172,10 +198,13 @@ export default function LogoDropStudy(props: Props) {
     const still = clamp(stillPhase, 0, 99.99) / 100
     const paint = React.useCallback((phase: number) => {
         if (!root.current) return
-        const c = config.current, pose = carrierPose(c.study, phase, clamp(c.travel, 0, 1.5), clamp(c.bounce, 0, 1.5))
+        const c = config.current, poses = carrierPoses(c.study, phase, clamp(c.travel, 0, 1.5), clamp(c.bounce, 0, 1.5)), pose = poses[0]
         root.current.querySelectorAll("[data-drop-carrier]").forEach(node => {
-            node.setAttribute("transform", `translate(${pose.x} ${pose.y})`)
-            node.setAttribute("opacity", String(pose.opacity))
+            const carrier = poses[Number(node.getAttribute("data-drop-copy") ?? 0)]
+            // A prop transition can briefly retain the previous train's nodes.
+            if (!carrier) { node.setAttribute("opacity", "0"); return }
+            node.setAttribute("transform", `translate(${carrier.x} ${carrier.y})`)
+            node.setAttribute("opacity", String(carrier.opacity))
         })
         root.current.querySelectorAll("[data-drop-echo]").forEach((node, i) => {
             node.setAttribute("transform", `translate(${pose.echoX - carrierX(i * 94)} ${pose.echoY - i * 94})`)
@@ -206,7 +235,7 @@ export default function LogoDropStudy(props: Props) {
         paint(still)
         if (motion.current) motion.current.phase = still
     }, [study, still, travel, bounce, trail, paint])
-    const initial = carrierPose(study, still, clamp(travel, 0, 1.5), clamp(bounce, 0, 1.5))
+    const initialCarriers = carrierPoses(study, still, clamp(travel, 0, 1.5), clamp(bounce, 0, 1.5)), initial = initialCarriers[0]
     const source = STUDIES[study], mono: React.CSSProperties = { fontFamily: "monospace", fontSize: 10, lineHeight: 1.5, letterSpacing: ".045em" }
     const pale = primary
     return <div ref={root} role="group" aria-label={source.title} data-logo-drop={study} data-motion-status={status}
@@ -216,7 +245,7 @@ export default function LogoDropStudy(props: Props) {
             <defs>
                 <mask id={id + "-circle"} x="-1800" y="-1800" width="4600" height="4600" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }}>
                     <rect x="-1800" y="-1800" width="4600" height="4600" fill="white" />
-                    <g data-drop-carrier transform={`translate(${initial.x} ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill="black" /></g>
+                    {initialCarriers.map((carrier, i) => <g key={i} data-drop-carrier data-drop-copy={i} data-drop-layer="mask" transform={`translate(${carrier.x} ${carrier.y})`} opacity={carrier.opacity}><path d={LOGO_CARRIER_PATH} fill="black" /></g>)}
                 </mask>
                 <mask id={id + "-outside"} x="-1800" y="-1800" width="4600" height="4600" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }}>
                     <rect x="-1800" y="-1800" width="4600" height="4600" fill="white" />
@@ -234,7 +263,7 @@ export default function LogoDropStudy(props: Props) {
                 {study === "echo" && [0, 1].map(i => <g key={i} data-drop-echo transform={`translate(${initial.echoX - carrierX(i * 94)} ${initial.echoY - i * 94})`} opacity={initial.echoOpacity * trail * (i ? .45 : 1)}>
                     <path d={LOGO_CARRIER_PATH} fill="none" stroke={accent} strokeWidth="3" />
                 </g>)}
-                <g mask={`url(#${id}-outside)`}><g data-drop-carrier transform={`translate(${initial.x} ${initial.y})`} opacity={initial.opacity}><path d={LOGO_CARRIER_PATH} fill={accent} /></g></g>
+                <g mask={`url(#${id}-outside)`}>{initialCarriers.map((carrier, i) => <g key={i} data-drop-carrier data-drop-copy={i} data-drop-layer="ink" transform={`translate(${carrier.x} ${carrier.y})`} opacity={carrier.opacity}><path d={LOGO_CARRIER_PATH} fill={accent} /></g>)}</g>
                 <g fill={primary} opacity=".45"><rect x="-132" y="503" width="1" height="18" /><rect x="1155" y="503" width="1" height="18" /></g>
             </g>
         </svg>
@@ -253,7 +282,7 @@ export default function LogoDropStudy(props: Props) {
     </div>
 }
 addPropertyControls(LogoDropStudy, {
-    study: { type: ControlType.Enum, title: "Study", options: ["drop", "spring", "echo"], optionTitles: ["Gravity pass", "Magnetic catch", "Signal fall"], defaultValue: "drop" },
+    study: { type: ControlType.Enum, title: "Study", options: ["drop", "spring", "echo", "ratchet", "pendulum", "conveyor"], optionTitles: ["Gravity pass", "Magnetic catch", "Signal fall", "Ratchet descent", "Return stroke", "Carrier loop"], defaultValue: "drop" },
     animate: { type: ControlType.Boolean, title: "Animate", defaultValue: true },
     canvasMotion: { type: ControlType.Boolean, title: "Canvas motion", defaultValue: false },
     speed: { type: ControlType.Number, title: "Speed", min: 0, max: 2, step: .05, defaultValue: .8 },

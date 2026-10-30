@@ -20,7 +20,7 @@ const script = ts.transpileModule(source, {
         module: ts.ModuleKind.CommonJS,
         jsx: ts.JsxEmit.React
     }
-}).outputText + '\nexports.__qa={getMotionClock,carrierPose,LOGO_CIRCLE_PATH,LOGO_CARRIER_PATH};';
+}).outputText + '\nexports.__qa={getMotionClock,carrierPose,carrierPoses,LOGO_CIRCLE_PATH,LOGO_CARRIER_PATH};';
 const checks = [];
 let allocations = 0;
 function hub() {
@@ -181,12 +181,15 @@ function environment({ target = 'preview', staticRenderer = false, reduced = fal
         now = end;
     }
     function root(top = 0) {
-        const history = [], node = () => ({
-            attrs: {},
+        const history = [], node = (props = {}) => ({
+            attrs: Object.fromEntries(Object.entries(props).filter(([key]) => key.startsWith('data-') || key === 'transform' || key === 'opacity').map(([key, value]) => [key, String(value)])),
             setAttribute(k, v) {
                 this.attrs[k] = v;
+            },
+            getAttribute(k) {
+                return this.attrs[k] ?? null;
             }
-        }), carriers = [node(), node()], echoes = [node(), node()];
+        }), carriers = [], echoes = [];
         const dataset = new Proxy({}, {
             set(obj, k, v) {
                 obj[k] = v;
@@ -203,12 +206,24 @@ function environment({ target = 'preview', staticRenderer = false, reduced = fal
             history,
             carriers,
             echoes,
+            attach(vnode) {
+                const visit = value => {
+                    if (!value || typeof value !== 'object') return;
+                    if (value.props?.['data-drop-carrier'] !== undefined) carriers.push(node(value.props));
+                    if (value.props?.['data-drop-echo'] !== undefined) echoes.push(node(value.props));
+                    for (const child of value.children ?? []) visit(child);
+                };
+                visit(vnode);
+            },
             getBoundingClientRect: () => ({
                 top,
                 width: 960,
                 height: 600
             }),
-            querySelectorAll: selector => selector === '[data-drop-carrier]' ? carriers : echoes
+            querySelectorAll: selector => {
+                assert(['[data-drop-carrier]', '[data-drop-echo]'].includes(selector));
+                return selector === '[data-drop-carrier]' ? carriers : echoes;
+            }
         };
     }
     function mount(props = {}) {
@@ -227,6 +242,10 @@ function environment({ target = 'preview', staticRenderer = false, reduced = fal
                 this.index = 0;
                 this.pending = [];
                 this.vnode = module.exports.default(this.props);
+                if (!this.attached) {
+                    this.root.attach(this.vnode);
+                    this.attached = true;
+                }
                 this.hooks.find(h => h.ref)?.ref && (this.hooks.find(h => h.ref).ref.current = this.root);
                 active = null;
                 for (const fn of this.pending)
@@ -286,9 +305,24 @@ function translation(value) {
     return { x: Number(match[1]), y: Number(match[2]) };
 }
 function assertDOMAxis(root, axis) {
-    assert.deepEqual(root.carriers[0].attrs, root.carriers[1].attrs, 'mask and ink share displacement and opacity');
-    const position = translation(root.carriers[0].attrs.transform);
-    assertOnAxis(position, axis);
+    assert(root.carriers.length > 0 && root.carriers.length % 2 === 0);
+    const copies = new Map();
+    for (const node of root.carriers) {
+        const copy = Number(node.getAttribute('data-drop-copy'));
+        const layer = node.getAttribute('data-drop-layer');
+        assert(Number.isInteger(copy) && copy >= 0);
+        assert(['mask', 'ink'].includes(layer));
+        if (!copies.has(copy)) copies.set(copy, {});
+        assert(!copies.get(copy)[layer], 'each copy has one node per layer');
+        copies.get(copy)[layer] = node;
+        assertOnAxis(translation(node.attrs.transform), axis);
+    }
+    for (const { mask, ink } of copies.values()) {
+        assert(mask && ink, 'each copy has both mask and ink');
+        assert.equal(mask.attrs.transform, ink.attrs.transform, 'mask and ink share displacement');
+        assert.equal(mask.attrs.opacity, ink.attrs.opacity, 'mask and ink share opacity');
+    }
+    const position = translation(copies.get(0).ink.attrs.transform);
     assert.equal(position.x, Number(root.dataset.carrierX));
     assert.equal(position.y, Number(root.dataset.carrierY));
     let previous = position;
@@ -304,6 +338,7 @@ function assertDOMAxis(root, axis) {
 function runChecks() {
     const e = environment();
     const axis = carrierAxis(e.qa.LOGO_CARRIER_PATH);
+    const modes = ['drop', 'spring', 'echo', 'ratchet', 'pendulum', 'conveyor'];
     for (const mode of ['drop', 'spring', 'echo']) {
         const p = e.qa.carrierPose(mode, .5);
         assert(p.x === 0);
@@ -324,6 +359,82 @@ function runChecks() {
     assert(e.qa.carrierPose('echo', .25).echoOpacity > 0);
     assert.equal(e.qa.carrierPose('echo', .25, 0).echoOpacity, 0);
     addCheck('path-derived down-left axis preserves assembled pose; carrier and trailing echoes stay collinear across modes and travel');
+    {
+        const positions = Array.from({ length: 401 }, (_, i) => e.qa.carrierPose('ratchet', i / 401));
+        const plateaus = new Set();
+        let advanced = false;
+        for (let i = 1; i < positions.length; i++) {
+            const delta = positions[i].y - positions[i - 1].y;
+            assert(delta >= -1e-8, 'ratchet advances along the down-left axis without reversing');
+            advanced ||= delta > 1;
+            if (i >= 4 && positions.slice(i - 4, i + 1).every(p => Math.abs(p.y - positions[i].y) < 1e-8)
+                && Math.abs(positions[i].y) < 1119) plateaus.add(positions[i].y);
+            assertOnAxis(positions[i], axis);
+        }
+        assert(advanced && plateaus.size >= 3, 'ratchet includes multiple intermediate holds, not one eased fall');
+        for (const phase of [.495, .5, .505]) assert.equal(e.qa.carrierPose('ratchet', phase).y, 0);
+        assert(Math.abs(e.qa.carrierPose('ratchet', .3, 1.5).y) > Math.abs(e.qa.carrierPose('ratchet', .3, .1).y));
+        assert(e.qa.carrierPose('ratchet', .3, 0).x === 0 && e.qa.carrierPose('ratchet', .3, 0).y === 0);
+        addCheck('ratchet has multiple intermediate plateaus, monotone axis steps and an assembled hold');
+    }
+    {
+        const positions = Array.from({ length: 401 }, (_, i) => e.qa.carrierPose('pendulum', i / 400));
+        const deltas = positions.slice(1).map((p, i) => p.y - positions[i].y);
+        assert(deltas.some(d => d > 1) && deltas.some(d => d < -1), 'pendulum reverses along its axis');
+        assert(positions.some(p => p.y < -100) && positions.some(p => p.y > 100), 'reciprocal pass reaches both sides');
+        positions.forEach(p => { assertOnAxis(p, axis); assert.equal(p.opacity, 1); });
+        for (const phase of [.495, .5, .505, 0, .999999]) assert(e.qa.carrierPose('pendulum', phase).y === 0);
+        assert(Math.abs(e.qa.carrierPose('pendulum', .25, 1.5).y) > Math.abs(e.qa.carrierPose('pendulum', .25, .1).y));
+        assert(e.qa.carrierPose('pendulum', .25, 0).x === 0 && e.qa.carrierPose('pendulum', .25, 0).y === 0);
+        addCheck('pendulum reverses through both sides with an assembled hold and an opaque continuous loop seam');
+    }
+    {
+        const vertices = e.qa.LOGO_CARRIER_PATH.match(/-?\d+(?:\.\d+)?/g).map(Number);
+        const barMinY = Math.min(...vertices.filter((_, i) => i % 2));
+        const barMaxY = Math.max(...vertices.filter((_, i) => i % 2));
+        const visible = (pose, scale, width, height) => {
+            // The actual SVG uses xMidYMid meet with this viewBox and centered
+            // logo transform. Test the finite path bounds against its viewport,
+            // including Phone letterboxing, rather than only testing modulo math.
+            const units = Math.min(width / 1440, height / 1024);
+            const clipMinY = 512 - height / (2 * units), clipMaxY = 512 + height / (2 * units);
+            const low = 512 + .92 * scale * (barMinY + pose.y - 512);
+            const high = 512 + .92 * scale * (barMaxY + pose.y - 512);
+            return high >= clipMinY && low <= clipMaxY;
+        };
+        let previousSpacing = 0;
+        for (const travel of [.001, .1, 1, 1.5]) {
+            const samples = [.1, .2, .3].map(phase => e.qa.carrierPoses('conveyor', phase, travel));
+            samples.forEach(poses => {
+                assert.equal(poses.length, 3, 'a nonzero conveyor uses three finite canonical bars');
+                poses.forEach(p => { assertOnAxis(p, axis); assert.equal(p.opacity, 1); });
+            });
+            const sorted = samples[0].map(p => p.y).sort((a, b) => a - b);
+            const spacing = sorted[1] - sorted[0];
+            assert(Math.abs(spacing - (sorted[2] - sorted[1])) < 1e-8, 'train spacing is regular');
+            assert(spacing > previousSpacing, 'Travel changes the train spacing');
+            previousSpacing = spacing;
+            for (let copy = 0; copy < 3; copy++) {
+                const first = samples[1][copy].y - samples[0][copy].y;
+                const second = samples[2][copy].y - samples[1][copy].y;
+                assert(first > 0 && Math.abs(first - second) < 1e-8, 'every train bar advances at constant speed');
+            }
+            for (const scale of [.5, 1, 1.5]) for (const [width, height] of [[960, 600], [350, 280], [335, 280]]) {
+                const start = e.qa.carrierPoses('conveyor', 0, travel).filter(p => visible(p, scale, width, height)).sort((a, b) => a.y - b.y);
+                const end = e.qa.carrierPoses('conveyor', 1 - 1e-10, travel).filter(p => visible(p, scale, width, height)).sort((a, b) => a.y - b.y);
+                assert.equal(start.length, end.length, 'wrap drops only offscreen end copies');
+                start.forEach((p, i) => {
+                    assert(Math.abs(p.x - end[i].x) < 1e-5 && Math.abs(p.y - end[i].y) < 1e-5, 'unordered visible train is continuous across wrap');
+                });
+            }
+        }
+        for (const phase of [0, .2, .5, .8, .999999]) {
+            const poses = e.qa.carrierPoses('conveyor', phase, 0);
+            assert.equal(poses.length, 1);
+            assert(poses[0].x === 0 && poses[0].y === 0 && poses[0].opacity === 1);
+        }
+        addCheck('conveyor keeps an opaque constant-speed train, meaningful spacing, clipped periodic seam and Travel0 rest across desktop/phone scales');
+    }
     for (const options of [{
             target: 'export'
         }, {
@@ -334,22 +445,66 @@ function runChecks() {
             target: 'preview',
             staticRenderer: true
         }]) {
-        const x = environment(options), m = x.mount();
-        assert.equal(x.rafs.size, 0);
-        assert.equal(x.window[Symbol.for('monarchic.logo-vector-motion.v1')], undefined);
-        assert.equal(m.root.dataset.carrierX, '0');
-        assert.equal(m.root.dataset.carrierY, '0');
-        const n = m.root.history.length;
-        x.advance(1000);
-        assert.equal(m.root.history.length, n);
-        m.unmount();
+        for (const study of modes) {
+            const x = environment(options), m = x.mount({ study });
+            assert.equal(x.rafs.size, 0);
+            assert.equal(x.window[Symbol.for('monarchic.logo-vector-motion.v1')], undefined);
+            assert.equal(m.root.dataset.carrierX, '0');
+            assert.equal(m.root.dataset.carrierY, '0');
+            const n = m.root.history.length;
+            x.advance(1000);
+            assert.equal(m.root.history.length, n);
+            m.unmount();
+        }
     }
-    addCheck('export/thumbnail/Canvas-off/static renderer freeze assembled pose without clock or RAF');
+    addCheck('all six modes freeze assembled pose on export/thumbnail/Canvas-off/static renderer without clock or RAF');
+    {
+        for (const study of ['ratchet', 'pendulum', 'conveyor']) {
+            const x = environment(), m = x.mount({ study, stillPhase: 10 });
+            const initial = assertDOMAxis(m.root, axis);
+            assert.equal(m.root.carriers.length, study === 'conveyor' ? 6 : 2);
+            assert.equal(m.root.echoes.length, 0);
+            x.advance(1500);
+            const after = assertDOMAxis(m.root, axis);
+            assert.notEqual(after.x, initial.x);
+            assert.notEqual(after.y, initial.y);
+            m.unmount();
+            assert.equal(x.rafs.size, 0);
+        }
+        addCheck('new-mode actual JSX marker counts and hook painting preserve per-copy mask/ink parity while advancing x/y');
+    }
+    {
+        for (const update of [{ travel: 0 }, { study: 'ratchet' }]) {
+            const x = environment(), m = x.mount({ study: 'conveyor' });
+            x.advance(200);
+            m.props = { ...m.props, ...update };
+            // This host retains the six initially mounted markers. It models a
+            // render-updated config reaching paint before React removes copies.
+            m.render();
+            assert.equal(m.root.carriers.length, 6);
+            const phase = Number(m.root.dataset.motionPhase);
+            x.advance(1000);
+            assert.notEqual(Number(m.root.dataset.motionPhase), phase, 'stale copies cannot stall the shared clock');
+            const actual = assertDOMAxis(m.root, axis);
+            const expected = x.qa.carrierPose(m.props.study, Number(m.root.dataset.motionPhase), m.props.travel ?? 1);
+            assert(actual.x === expected.x && actual.y === expected.y, 'primary uses the current mode and Travel pose');
+            for (const node of m.root.carriers.filter(node => Number(node.getAttribute('data-drop-copy')) > 0)) {
+                assert.equal(node.attrs.opacity, '0', 'unmatched stale copies are hidden');
+            }
+            m.unmount();
+            assert.equal(x.rafs.size, 0);
+            assert.equal(x.document.count(), 0);
+            assert.equal(x.media.count(), 0);
+            assert(x.observers.every(o => !o.connected));
+        }
+        addCheck('stale conveyor copies hide safely on Travel0 or single-mode transition while primary motion and cleanup continue');
+    }
     for (const target of ['preview', 'canvas']) {
         const x = environment({
             target,
             staticRenderer: target === 'canvas'
         }), m = x.mount({
+            study: 'echo',
             canvasMotion: target === 'canvas'
         });
         const before = m.root.history.length;
@@ -358,6 +513,7 @@ function runChecks() {
         assert(frames > 0 && frames <= (target === 'canvas' ? 13 : 31));
         assert(Number(m.root.dataset.motionPhase) > .5);
         const position = assertDOMAxis(m.root, axis);
+        assert.equal(m.root.echoes.length, 2, 'hook test uses actual echo JSX markers');
         assert(position.x < 0 && position.y > 0, 'actual hook paint advances down-left');
         m.unmount();
         assert.equal(x.rafs.size, 0);
