@@ -151,8 +151,8 @@ function getMotionClock(): MotionClock {
  */
 export default function LogoDropStudy(props: Props) {
     const { study = "drop", animate = true, canvasMotion = false, speed = .8, stillPhase = 50,
-        travel = 1, bounce = .65, trail = .5, scale = 1, primary = "#202624", accent = "#ea5c35",
-        background = "#eee8d8", showLabels = true, style } = props
+        travel = 1, bounce = .65, trail = .5, scale = 1, primary = "#171717", accent = "#171717",
+        background = "#f2f2f2", showLabels = true, style } = props
     const target = RenderTarget.current(), staticRenderer = useIsStaticRenderer()
     const canvasOptIn = target === RenderTarget.canvas && canvasMotion
     const frozen = target === RenderTarget.export || target === RenderTarget.thumbnail || (staticRenderer && !canvasOptIn) || (target === RenderTarget.canvas && !canvasMotion)
@@ -203,7 +203,7 @@ export default function LogoDropStudy(props: Props) {
     }, [study, still, travel, bounce, trail, paint])
     const initial = carrierPose(study, still, clamp(travel, 0, 1.5), clamp(bounce, 0, 1.5))
     const source = STUDIES[study], mono: React.CSSProperties = { fontFamily: "monospace", fontSize: 10, lineHeight: 1.5, letterSpacing: ".045em" }
-    const pale = study === "echo" ? "#d4eeef" : primary
+    const pale = primary
     return <div ref={root} role="group" aria-label={source.title} data-logo-drop={study} data-motion-status={status}
         style={{ width: "100%", height: "100%", ...style, position: "relative", overflow: "hidden", background, color: pale }}>
         <svg role="img" aria-label={source.title + ", animated Monarchic logo " + source.key} viewBox="0 0 1440 1024" preserveAspectRatio="xMidYMid meet"
@@ -257,8 +257,8 @@ addPropertyControls(LogoDropStudy, {
     bounce: { type: ControlType.Number, title: "Bounce", min: 0, max: 1.5, step: .05, defaultValue: .65, hidden: p => p.study !== "spring" },
     trail: { type: ControlType.Number, title: "Echo", min: 0, max: 1, step: .05, defaultValue: .5, hidden: p => p.study !== "echo" },
     scale: { type: ControlType.Number, title: "Scale", min: .5, max: 1.5, step: .05, defaultValue: 1 },
-    primary: { type: ControlType.Color, title: "Circle", defaultValue: "#202624" },
-    accent: { type: ControlType.Color, title: "Line", defaultValue: "#ea5c35" },
-    background: { type: ControlType.Color, title: "Background", defaultValue: "#eee8d8" },
+    primary: { type: ControlType.Color, title: "Circle", defaultValue: "#171717" },
+    accent: { type: ControlType.Color, title: "Line", defaultValue: "#171717" },
+    background: { type: ControlType.Color, title: "Background", defaultValue: "#f2f2f2" },
     showLabels: { type: ControlType.Boolean, title: "Labels", defaultValue: true },
 })
