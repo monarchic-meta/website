@@ -945,7 +945,7 @@ export default function LogoStudy(props: Props) {
                 <div style={{...mono,opacity:.65}}>BRAND MARK STUDY / {source.key}</div>
                 {<div style={{fontFamily:'"Space Grotesk", sans-serif',fontSize:"clamp(14px,2vw,23px)",letterSpacing:"-.035em",marginTop:8,maxWidth:"75%"}}>{source.title}</div>}
             </div>
-            <div style={{...mono,position:"absolute",left:"5%",bottom:"5%",opacity:.65}}>MONARCHIC / ORIGINAL ANIMATED TREATMENT</div>
+            <div style={{...mono,position:"absolute",left:"5%",bottom:"5%",opacity:.65}}>MONARCHIC / {source.key}</div>
             <div style={{...mono,position:"absolute",right:"5%",bottom:"5%",opacity:.65,pointerEvents:"none",fontSize:8,maxWidth:"55%",textAlign:"right"}}>EXISTING BRAND GEOMETRY / PROCEDURAL MATERIAL</div>
         </>}
         {!isStatic&&<button onClick={()=>{if(status==="waiting"){setPaused(false);requestMotion()}else setPaused(p=>!p)}} disabled={status==="reduced-motion"||!animate||speed<=0} aria-pressed={paused} aria-label={paused||status==="waiting"?"Play animation":"Pause animation"} style={{...mono,position:"absolute",right:"5%",top:"6%",padding:"5px 9px",color,background:"transparent",border:"1px solid "+color,cursor:"pointer",opacity:.75}}>
