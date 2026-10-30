@@ -3,6 +3,8 @@
 This page documents the twenty credited source-led studies. The eight
 [original live compositions](originals.md) have their own Design page, draft
 Preview lab, source files and [manifest](originals-manifest.json).
+Four [logo studies](logo-studies.md) have a separate Design page and draft lab,
+using the canonical Monarchic SVG in independently authored live treatments.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
@@ -203,10 +205,11 @@ render, so static capture also respects the shared context limit.
 
 Run `nix develop -c pnpm check:framer-studies` or build
 `nix build .#checks.x86_64-linux.framer-studies --no-link` for the resource
-regression suite. It exercises the five actual source modules with deterministic
+regression suite. It exercises the source-led, original and logo modules with deterministic
 DOM/WebGL doubles: mixed placements, queue progress, context ownership, phase,
 pause, visibility, reduced motion, static targets, StrictMode and isolated
-render/copy failures. It does not execute GLSL; actual browser and Framer visual
+render/copy failures. Separate runs retain 60 source-led placements, 84 including
+the original compositions, and 96 including the logo treatments. It does not execute GLSL; actual browser and Framer visual
 checks remain necessary.
 
 Source labels and links accompany each placement. If labels are hidden for a

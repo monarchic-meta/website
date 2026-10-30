@@ -9505,6 +9505,13 @@
       "frames": [
         "nNyC2Bca6"
       ]
+    },
+    "logo": {
+      "id": "wSe9_qdcJ",
+      "name": "06 / Logo Studies",
+      "frames": [
+        "X31PXlW0g"
+      ]
     }
   },
   "previousQualityAndPageSplitFramerVerification": {
@@ -9802,5 +9809,57 @@
       "ownerReviewStatus": "awaiting-owner-feedback",
       "manifestField": "styleCalibration"
     }
+  },
+  "logoStudies": {
+    "classification": "original-logo-treatment",
+    "section": "Original compositions",
+    "manifest": "../code-components/logo-manifest.json",
+    "count": 4,
+    "codeInstances": 12,
+    "countScope": "Four new procedural treatments of the existing Monarchic brand mark; excludes the source-led studies and the eight other original live compositions.",
+    "components": [
+      {
+        "source": "LogoStudy.tsx",
+        "sourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e"
+      }
+    ],
+    "studies": [
+      {
+        "id": "LG-01",
+        "name": "Pigment relief",
+        "mode": "press",
+        "componentSource": "LogoStudy.tsx"
+      },
+      {
+        "id": "LG-02",
+        "name": "Optical counterform",
+        "mode": "contour",
+        "componentSource": "LogoStudy.tsx"
+      },
+      {
+        "id": "LG-03",
+        "name": "Chrome cut",
+        "mode": "chrome",
+        "componentSource": "LogoStudy.tsx"
+      },
+      {
+        "id": "LG-04",
+        "name": "Phosphor carrier",
+        "mode": "phosphor",
+        "componentSource": "LogoStudy.tsx"
+      }
+    ],
+    "framerDesignPage": "wSe9_qdcJ",
+    "framerBoard": "X31PXlW0g",
+    "lab": {
+      "page": "XFbUB39EK",
+      "path": "/prototypes/logo-studies",
+      "desktop": "CaR79pbR4",
+      "phone": "BoGMiXsRD",
+      "draft": true
+    },
+    "verificationStatus": "saved and editor-reload, Preview and Canvas verified",
+    "verificationReference": "../code-components/logo-manifest.json#/savedVerification",
+    "styleReviewStatus": "awaiting owner feedback"
   }
 }

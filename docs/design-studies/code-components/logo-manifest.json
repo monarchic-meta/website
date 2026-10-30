@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "classification": "original-logo-treatment",
   "section": "Original compositions",
-  "authoringStatus": "Four candidate treatments; actual Framer saved-state verification pending",
+  "authoringStatus": "Four existing-brand logo treatments technically verified; owner style feedback pending",
   "brandGeometry": {
     "repository": "https://github.com/monarchic-meta/logo",
     "commit": "1844d35d6ffdedf2356ec929c36bb5c0454cf645",
@@ -33,8 +33,9 @@
   "components": [
     {
       "source": "LogoStudy.tsx",
-      "sourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
-      "framerCodePath": "LogoStudy.tsx"
+      "sourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "framerCodePath": "LogoStudy.tsx",
+      "framerComponentId": "codeFile/FnUd3RS:default"
     }
   ],
   "studies": [
@@ -62,15 +63,57 @@
         "ink": "#222a29"
       },
       "description": "The existing Monarchic mark becomes a shallow dimensional pigment relief with limited-palette tonal dithering.",
-      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
-      "framerPlacements": [],
-      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "componentSourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "orM5WrHhj",
+          "card": "hN3ErGN2h",
+          "label": "K1OX_GyTh",
+          "credit": "VFgDiAyqo",
+          "provenance": "WDeVdrapz",
+          "note": "nMxAIq3wt"
+        },
+        {
+          "placement": "desktop",
+          "instance": "sIg9d7iba",
+          "card": "mY5CbKoBu",
+          "label": "dwxzL_qaN",
+          "credit": "FOv0jFu_Q",
+          "provenance": "qK5CGD2Pu",
+          "note": "F9hc5eUOu"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDsIg9d7iba",
+          "card": "BoGMiXsRDmY5CbKoBu",
+          "label": "BoGMiXsRDdwxzL_qaN",
+          "credit": "BoGMiXsRDFOv0jFu_Q",
+          "provenance": "BoGMiXsRDqK5CGD2Pu",
+          "note": "BoGMiXsRDF9hc5eUOu"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "section": "Original compositions",
       "intentionalDifferences": [
         "The canonical planar geometry is projected as a shallow rounded extrusion with stylized light and pigment coverage.",
         "The tonal palette and ordered screen texture are authored material treatments, not physical print simulation."
-      ]
+      ],
+      "framerComponentId": "codeFile/FnUd3RS:default",
+      "framerDesignPage": "wSe9_qdcJ",
+      "framerBoard": "X31PXlW0g",
+      "framerLabPage": "XFbUB39EK",
+      "framerLabPath": "/prototypes/logo-studies",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionNote": "Pigment relief built with ordered tonal dithering. Influences: CC-003, GRA-002.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "styleInfluences": [
+        "CC-003",
+        "GRA-002"
+      ],
+      "influenceScope": "Material, texture and composition principles; existing Monarchic logo geometry and independently authored treatment formulas. No source-algorithm or source-motion identity claim."
     },
     {
       "id": "LG-02",
@@ -96,15 +139,57 @@
         "ink": "#101414"
       },
       "description": "Distance contours radiate through and around the canonical mark while preserving its diagonal counterform.",
-      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
-      "framerPlacements": [],
-      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "componentSourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "mb6uQeVma",
+          "card": "Y252pWd0k",
+          "label": "R9SIl6k5D",
+          "credit": "ErsIdvex8",
+          "provenance": "uYD285eci",
+          "note": "DN7rxkdbn"
+        },
+        {
+          "placement": "desktop",
+          "instance": "gKSNiJRcy",
+          "card": "C5v0CmZb1",
+          "label": "EJh15_dlW",
+          "credit": "WnCNVB2pt",
+          "provenance": "H3oATk1YQ",
+          "note": "Qs4Pn7Z2T"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDgKSNiJRcy",
+          "card": "BoGMiXsRDC5v0CmZb1",
+          "label": "BoGMiXsRDEJh15_dlW",
+          "credit": "BoGMiXsRDWnCNVB2pt",
+          "provenance": "BoGMiXsRDH3oATk1YQ",
+          "note": "BoGMiXsRDQs4Pn7Z2T"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "section": "Original compositions",
       "intentionalDifferences": [
         "Distance bands extend beyond the original silhouette; the mark remains the source of the field and its diagonal negative space stays open.",
         "Line pitch and integrated coverage adapt to image resolution rather than preserving one fixed screen-space stripe count."
-      ]
+      ],
+      "framerComponentId": "codeFile/FnUd3RS:default",
+      "framerDesignPage": "wSe9_qdcJ",
+      "framerBoard": "X31PXlW0g",
+      "framerLabPage": "XFbUB39EK",
+      "framerLabPath": "/prototypes/logo-studies",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionNote": "Contour bands follow the mark and preserve its diagonal gap. Influences: GRA-003, GRA-005.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "styleInfluences": [
+        "GRA-003",
+        "GRA-005"
+      ],
+      "influenceScope": "Material, texture and composition principles; existing Monarchic logo geometry and independently authored treatment formulas. No source-algorithm or source-motion identity claim."
     },
     {
       "id": "LG-03",
@@ -130,15 +215,57 @@
         "ink": "#151724"
       },
       "description": "A rounded extrusion of the existing mark reflects an authored studio-light field and localized spectral color.",
-      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
-      "framerPlacements": [],
-      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "componentSourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "LbB4eRSl7",
+          "card": "dbDVSy9LX",
+          "label": "saaOPQdAd",
+          "credit": "Qo2g8_rgP",
+          "provenance": "rVgDst7CO",
+          "note": "VNy1qZkqX"
+        },
+        {
+          "placement": "desktop",
+          "instance": "VirNB_Q94",
+          "card": "rHPDtxrTn",
+          "label": "shU3xMvWf",
+          "credit": "BcIqLGMtu",
+          "provenance": "pZPQeG47L",
+          "note": "EWwep2PNX"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDVirNB_Q94",
+          "card": "BoGMiXsRDrHPDtxrTn",
+          "label": "BoGMiXsRDshU3xMvWf",
+          "credit": "BoGMiXsRDBcIqLGMtu",
+          "provenance": "BoGMiXsRDpZPQeG47L",
+          "note": "BoGMiXsRDEWwep2PNX"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "section": "Original compositions",
       "intentionalDifferences": [
         "Extrusion, studio reflections and spectral accents are authored approximations rather than a physically traced metal material.",
         "Normals are smoothed from the sampled distance grid; subtle grid-derived sidewall striations remain at close inspection."
-      ]
+      ],
+      "framerComponentId": "codeFile/FnUd3RS:default",
+      "framerDesignPage": "wSe9_qdcJ",
+      "framerBoard": "X31PXlW0g",
+      "framerLabPage": "XFbUB39EK",
+      "framerLabPath": "/prototypes/logo-studies",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionNote": "A beveled chrome extrusion with moving studio reflections. Influences: GRA-012, CC-016.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "styleInfluences": [
+        "GRA-012",
+        "CC-016"
+      ],
+      "influenceScope": "Material, texture and composition principles; existing Monarchic logo geometry and independently authored treatment formulas. No source-algorithm or source-motion identity claim."
     },
     {
       "id": "LG-04",
@@ -164,21 +291,235 @@
         "ink": "#050b19"
       },
       "description": "Layered pixel-light samples of the existing mark carry a moving signal along its diagonal cut.",
-      "componentSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
-      "framerPlacements": [],
-      "framerPlacementStatus": "pending Framer creation and editor-reload verification",
+      "componentSourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "framerPlacements": [
+        {
+          "placement": "design",
+          "instance": "oyyix9MGA",
+          "card": "AT2NUpqJ4",
+          "label": "ydsIsmqy8",
+          "credit": "NafJQizSu",
+          "provenance": "saVXoPbnF",
+          "note": "rkj1lOa7_"
+        },
+        {
+          "placement": "desktop",
+          "instance": "SaREKDRDU",
+          "card": "avIJhMJmQ",
+          "label": "rfXJQHM97",
+          "credit": "phT1Gyjo7",
+          "provenance": "nQWqWKF0N",
+          "note": "v_u7dd8eC"
+        },
+        {
+          "placement": "phone",
+          "instance": "BoGMiXsRDSaREKDRDU",
+          "card": "BoGMiXsRDavIJhMJmQ",
+          "label": "BoGMiXsRDrfXJQHM97",
+          "credit": "BoGMiXsRDphT1Gyjo7",
+          "provenance": "BoGMiXsRDnQWqWKF0N",
+          "note": "BoGMiXsRDv_u7dd8eC"
+        }
+      ],
+      "framerPlacementStatus": "saved and editor-reload verified",
       "styleReviewStatus": "awaiting owner feedback",
       "section": "Original compositions",
       "intentionalDifferences": [
         "Layered offsets and pixel-light samples soften and multiply the canonical silhouette as an original signal treatment.",
         "Emission, scanning and the traveling highlight are authored screen effects rather than a physical phosphor simulation."
-      ]
+      ],
+      "framerComponentId": "codeFile/FnUd3RS:default",
+      "framerDesignPage": "wSe9_qdcJ",
+      "framerBoard": "X31PXlW0g",
+      "framerLabPage": "XFbUB39EK",
+      "framerLabPath": "/prototypes/logo-studies",
+      "framerVerifiedDate": "2026-10-29",
+      "framerCompositionNote": "Layered phosphor dots and a traveling pulse along the diagonal cut. Influences: GRA-008, CC-019.",
+      "framerCompositionCredit": "ORIGINAL COMPOSITION / MONARCHIC LOGO TREATMENT",
+      "framerLogoProvenanceURL": "https://github.com/monarchic-meta/logo/tree/1844d35d6ffdedf2356ec929c36bb5c0454cf645",
+      "styleInfluences": [
+        "GRA-008",
+        "CC-019"
+      ],
+      "influenceScope": "Material, texture and composition principles; existing Monarchic logo geometry and independently authored treatment formulas. No source-algorithm or source-motion identity claim."
     }
   ],
-  "framerPages": {},
+  "framerPages": {
+    "design": {
+      "id": "wSe9_qdcJ",
+      "name": "06 / Logo Studies",
+      "board": "X31PXlW0g",
+      "artworkLogicalCSSDimensions": {
+        "width": 2060,
+        "height": 1280
+      },
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ"
+    },
+    "lab": {
+      "id": "XFbUB39EK",
+      "name": "Logo Studies / live lab",
+      "path": "/prototypes/logo-studies",
+      "draft": true,
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XFbUB39EK",
+      "desktop": {
+        "id": "CaR79pbR4",
+        "width": 1200,
+        "nominalArtworkContentDimensions": {
+          "width": 1080,
+          "height": 680
+        },
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=CaR79pbR4"
+      },
+      "phone": {
+        "id": "BoGMiXsRD",
+        "width": 390,
+        "inherited": true,
+        "nominalArtworkContentDimensions": {
+          "width": 350,
+          "height": 280
+        },
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=BoGMiXsRD"
+      }
+    }
+  },
   "savedVerification": {
-    "passed": false,
-    "status": "pending actual Framer creation, editor reload and Preview checks"
+    "date": "2026-10-29",
+    "passed": true,
+    "status": "saved-editor-reload-preview-and-canvas-verified",
+    "componentSourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+    "studies": 4,
+    "codeInstances": 12,
+    "artifactRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/logo-studies-2026-10-29",
+    "savedEditorVerified": true,
+    "editorReloadVerified": true,
+    "previewMotionVerified": true,
+    "canvasMotionVerified": true,
+    "allNewCanvasMotionOff": true,
+    "all84PreviousPlacementsPreserved": true,
+    "canvasTest": {
+      "study": "LG-03",
+      "sourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "buffer": {
+        "width": 1024,
+        "height": 636
+      },
+      "screenCSS": {
+        "width": 959.0869140625,
+        "height": 595.9375
+      },
+      "defaultReady": true,
+      "states": {
+        "optInYes": "live",
+        "restoredNo": "ready"
+      },
+      "restoredNoAndReloadConfirmed": true
+    },
+    "canvasStateScope": "The 12 new logo instances are Canvas-off; the previous 60 source-led Canvas-true and 24 original Canvas-false values are preserved.",
+    "previewArtworkScreenCSS": {
+      "desktop": {
+        "width": 1065,
+        "height": 680
+      },
+      "phone": {
+        "width": 335,
+        "height": 280
+      }
+    },
+    "previewDimensionScope": "Observed artwork screen bounds are 1065×680 and 335×280; nominal content constraints are 1080×680 and 350×280. The actual Preview scrollbar uses 15px. Local GPU test dimensions are separate.",
+    "localGPU": {
+      "defaultFrames": 24,
+      "controlFrames": 18,
+      "totalFrames": 42,
+      "dimensions": [
+        {
+          "width": 960,
+          "height": 600
+        },
+        {
+          "width": 350,
+          "height": 280
+        }
+      ],
+      "modeAspectMotionComparisons": 8,
+      "controlGroups": 6
+    },
+    "localValidation": {
+      "semanticTypeScriptFiles": 8,
+      "glslStages": 18,
+      "resourcePlacements": [
+        60,
+        84,
+        96
+      ],
+      "assertionGroupsPerRun": 12,
+      "peakContexts": 2,
+      "peakPixels": 1998984,
+      "logoAtlasRasterizations": 1,
+      "logoAtlasReadbacks": 1
+    },
+    "evidence": [
+      {
+        "path": "mcp/logo-studies-final-report.json",
+        "sha256": "e4f00ad32c4d99a52f1e19d52e03fd28ec4f46574579655dc00dbf161f3ef535"
+      },
+      {
+        "path": "mcp/logo-studies-post-canvas-report.json",
+        "sha256": "07ef7e8713c7a51372cd8aadbf894dd748c3ec75c4e3346101002d3a9d415b55"
+      },
+      {
+        "path": "framer/browser-verification.json",
+        "sha256": "572c4db572d4a956540f94e17f61d703cfba12cb1ff17c50ae33425961a49bd9"
+      },
+      {
+        "path": "framer/browser-motion-metrics.json",
+        "sha256": "236775fd736055caa803707a8465d1915c725e794dec635ecc12ed02c5114a50"
+      },
+      {
+        "path": "gpu/verification.json",
+        "sha256": "def30db40acaf671b4b4fa7bd508bf886a0532509554d5a3982327f39f2263ff"
+      },
+      {
+        "path": "gpu/motion-comparison.json",
+        "sha256": "f1b9c212db0dc4854fb2ecc23efac23f28bd699a17979485720bac36768c6bcc"
+      },
+      {
+        "path": "gpu/control-verification.json",
+        "sha256": "f5191b1bfbf83fd9aeadd5ed098c4a9d96197929b4711200814ba5d464165048"
+      },
+      {
+        "path": "gpu/caption-default-equivalence.json",
+        "sha256": "8c5bd9f07ab8df1afb885328d48e22b887d4af0c694b32f38d36fbb23b22f5d7"
+      },
+      {
+        "path": "validation/static/helpers/static-checks.json",
+        "sha256": "c718156dae6b903477eca46c838c4d5f92b20db59df2d4634fe37f85bf68531e"
+      },
+      {
+        "path": "validation/static/helpers/caption-only-guard.json",
+        "sha256": "2a4ce04cad69d9d66315aa9b9cca69a5b44cc2ac59ba0827aae644e732d5bfcf"
+      },
+      {
+        "path": "validation/resource/resource-checks-report.json",
+        "sha256": "16418e2a78e0131154738cf46edf1d788d255efb93064437cc23b642af2fb358"
+      },
+      {
+        "path": "validation/asset/generated-final/logo-geometry-and-sdf-verification.json",
+        "sha256": "d794af86a9377ef3c74ea106f462455022ac7f071fc08b787fdca89b61267656"
+      }
+    ],
+    "proofScope": "New logo treatments only for current GPU and live Framer playback. The existing seven code files, 84 placements and prior page contents are preserved by the separate source/saved-tree checks. Procedural treatments use sampled distance geometry and authored materials; no exact analytic distance or physical material claim.",
+    "presentationRepair": {
+      "change": "Shortened the factual footer caption to fit the Phone presentation; artwork, shaders, atlas, runtime and controls are unchanged.",
+      "previousSourceSHA256": "e23b43d2e0280e6ff399229e1fcce048e965846b8d46dde4ed7ac91230cb2cb2",
+      "sourceSHA256": "af643f3efc2165ecb1c3d24c29aeb285dd914a46e2aceaa65f3a92c08ec2021e",
+      "priorCandidateArtifact": "prior-caption-candidate",
+      "sampledGraphicFramesPixelIdentical": 24,
+      "allFourPhoneCaptionsNonOverlapping": true,
+      "minimumCaptionGapCSSPixels": 7.59375,
+      "allCurrentGPUResourceAndFramerProofFresh": true
+    },
+    "styleApproval": "awaiting owner feedback",
+    "actualFramerExportedImagesReviewed": false
   },
   "collection": "Original logo treatments"
 }
