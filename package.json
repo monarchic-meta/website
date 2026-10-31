@@ -48,7 +48,11 @@
     "check:hero-recreation-study": "node scripts/check-hero-recreation-study.mjs",
     "check:hero-study-integration": "node scripts/check-hero-study-integration.mjs",
     "check:hero-recreation-browser": "node scripts/check-hero-recreation-browser.mjs",
-    "build:framer-hero-head": "node scripts/build-framer-hero-head.mjs --write"
+    "build:framer-hero-head": "node scripts/build-framer-hero-head.mjs --write",
+    "check:hero-mechanism-study": "node scripts/check-hero-mechanism-study.mjs",
+    "check:hero-mechanism-integration": "node scripts/check-hero-mechanism-integration.mjs",
+    "check:hero-mechanism-browser": "node scripts/check-hero-mechanism-browser.mjs",
+    "build:framer-hero-mechanisms": "node scripts/build-framer-hero-mechanisms.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

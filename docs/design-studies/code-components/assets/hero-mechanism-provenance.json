@@ -1,0 +1,69 @@
+{
+  "classification": "source-led-recreations-and-adaptations",
+  "component": "HeroMechanismStudy.tsx",
+  "macmoss": {
+    "reference": "HERO-006",
+    "creator": "Mac Moss / KEEN",
+    "primary": "https://macmoss.studio/KEEN-2",
+    "sourceAsset": "https://freight.cargo.site/t/original/i/5732872bad15333bc9e3bc11d89a41fc7fd43fc32779f7d24c2675d4a42e6acd/Comp_3.gif",
+    "sourceSHA256": "620afc5173c1db2d5b6ccf924536d0b766cf5ff2d209e542e40624feabb5e656",
+    "selectedCells": [
+      {"column": 3, "row": 1, "name": "HEEL STRIKE ZONE"},
+      {"column": 4, "row": 1, "name": "ABRASION RESISTANT UPPER"},
+      {"column": 3, "row": 2, "name": "LONG LASTING TRACTION"},
+      {"column": 4, "row": 2, "name": "ECO RESPONSIBLE UPPER"}
+    ],
+    "omittedCells": 16,
+    "changes": "Only the selected top-right 2×2 cells of the 4×5 sheet. Source timeline sampled at 12 fps (125 vector frames); two tonal contour layers; contour simplification and 255-step cell coordinates (maximum 0.59 source pixel coordinate error). Micrograin, frame and labels are independently rebuilt. No GIF/image/pixel-mask payload is embedded or displayed at runtime.",
+    "vectorPackedSHA256": "713dfacd1537844e3ced2911947472a51fec5f62dbb9b494082685868570b66e",
+    "vectorRawSHA256": "2b9b78c5b3d1a80c508364b5da8428bae79e4f1f519eb07db636bef50e10835e",
+    "vectorPaths": 6513,
+    "vectorPoints": 255976
+  },
+  "vercel": {
+    "reference": "HERO-009",
+    "creator": "Vercel",
+    "selectedRevision": "https://www.lapa.ninja/post/vercel-3/",
+    "inspectedPrimaryImages": [
+      "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/og-home-x.png",
+      "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/media/fallback-dark-glow-desktop.25ylksegigbc-.webp"
+    ],
+    "changes": "Selected dark silhouette/halo material, independently painted from geometric paths and gradients. Halo movement and pointer response approximate light changes; no exact archived animation or original rendering algorithm is claimed. Whole website and current light revision are omitted."
+  },
+  "raster": {
+    "reference": "HERO-014",
+    "creator": "Liubomyr Ulytskyi",
+    "gallery": "https://www.awwwards.com/sites/unbelievably-crap",
+    "selectedImage": "https://assets.awwwards.com/awards/submissions/2026/09/6aa06aafa4f85878540881.png",
+    "target": "Selected white rasterized head/bust, two red bars, large rotated 0039 and peripheral microtype/HUD. This does not recreate the current live full-body subject.",
+    "geometry": {
+      "title": "Infinite, 3D Head Scan",
+      "author": "Lee Perry-Smith",
+      "via": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith",
+      "license": "Creative Commons Attribution 3.0 Unported",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+      "basedOn": "www.triplegangers.com",
+      "additionalPermissions": "http://www.ir-ltd.net/",
+      "upstreamSHA256": "402b8a8ac9f03232e6d64b5962929703a069daf99d3c49ac8eb0e48bedc9c576",
+      "packedSHA256": "f1edefb08f58862a763832bff1905820bb8b93181958629290df2707c16eca05",
+      "changes": "Centered/scaled, signed16 position and signed8 unit-normal quantization. All 9,279 source vertices and 17,684 triangles retained. Independently authored ordered raster/scanline material and camera motion replace photographic material. Documented head/bust stand-in, not verified as Liubomyr's subject or mesh."
+    },
+    "otherChanges": "Substitute font and microtype, independently generated background dots, approximate camera/scan motion; no full site scroll, figure-tearing behavior or source JavaScript reproduced."
+  },
+  "mecha": {
+    "reference": "HERO-015",
+    "creators": ["Widelab", "Grzegorz Leśniewicz"],
+    "primary": "https://mecha-xyz.webflow.io/",
+    "sourceAsset": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
+    "sourceSHA256": "0d484646983d0a7da6d0b3360c7dfb2cbcbfd0837c2452649a044b70978cdab7",
+    "assetLicense": "Unverified; no independent authorship or reusable-license claim",
+    "changes": "Actual primary mark primitive 0 centered/normalized and transformed from its source node. 696 vertices, 1,364 nondegenerate triangles; 24 degenerate faces removed after six-decimal normalization. Derived crease/silhouette edges, independent projection and hidden-line approximation. Timed playback approximates the observed scroll turn; no whole-page scroll behavior or original source JavaScript copied."
+  },
+  "origin": {
+    "reference": "HERO-016",
+    "creator": "Origin Studio",
+    "primary": "https://www.originbrand.io/",
+    "gallery": "https://minimal.gallery/origin/",
+    "changes": "Independent procedural approximation of the changing blurred white dot/teardrop/flares inside the source's small black tile. Three changing blurred radial-gradient light forms; no original media, exact renderer or input coupling claimed. Native full-hero framing is a separate counterpart."
+  }
+}
