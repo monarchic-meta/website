@@ -16,6 +16,9 @@ The [shared navigation brief](shared-navigation.md) records the owner's directio
 for all Monarchic sites, including header priorities, authentication-dependent
 app access, and the full-screen menu. It separates those decisions from open
 destinations and inferred accessibility considerations.
+The [homepage creative brief](homepage-creative-brief.md) records the intended
+identity → Solutions → Latest Developments → Research Highlights → Explore More
+journey, the slim R&D banner, and qualified content candidates.
 
 The [homepage explorations](framer-prototypes.md) record the first three visual
 directions, their project nodes, source references, and review scope.
