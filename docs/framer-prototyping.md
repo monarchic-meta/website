@@ -27,6 +27,9 @@ The later [Black Instrument and Open Edition homepage drafts](framer-homepage-ex
 apply the full homepage journey and shared navigation. Their
 [Signal Loom, Vermilion Index and Cold Archive variations](framer-homepage-variations-2026-10-30.md)
 explore distinct artwork and composition within that language.
+The [website brain field port](design-studies/code-components/website-brain.md)
+brings the current site's procedural neural artwork into its own Framer specimen
+page, retaining a manual handoff between the implementations.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and

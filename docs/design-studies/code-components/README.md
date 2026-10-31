@@ -9,6 +9,11 @@ The six line-motion studies use SVG masks and vector motion without allocating
 WebGL contexts; the seven material treatments share the existing GPU budget,
 including three monochrome 3D extrusions.
 
+The [website brain field](website-brain.md) is a separate manual port of the
+implemented Monarchic homepage element. It preserves that element's anatomical
+Canvas 2D fibers and interactions in a reusable Framer component, rather than
+adding another source-led bookmark adaptation.
+
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
 contains LC-01–04; [MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) contains
