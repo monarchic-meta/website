@@ -232,7 +232,7 @@ function createRenderer(canvas:HTMLCanvasElement,initial:Settings,notify:(status
         const rotation=solidRotation(settings.yaw*Math.PI/180,-.08)
         let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity
         for(let i=0;i<mesh.positions.length;i+=3){const x=mesh.positions[i],y=mesh.positions[i+1],z=mesh.positions[i+2],px=rotation[0]*x+rotation[3]*y+rotation[6]*z,py=rotation[1]*x+rotation[4]*y+rotation[7]*z;minX=Math.min(minX,px);maxX=Math.max(maxX,px);minY=Math.min(minY,py);maxY=Math.max(maxY,py)}
-        const side=Math.max(12,Math.min(36,width*.065)),top=Math.max(42,Math.min(76,height*.135)),bottom=Math.max(38,Math.min(62,height*.12))
+        const side=Math.max(12,Math.min(36,width*.065)),top=Math.max(64,Math.min(76,height*.135)),bottom=Math.max(38,Math.min(62,height*.12))
         const factor=Math.max(1,Math.min((width-side*2)/Math.max(.1,maxX-minX),(height-top-bottom)/Math.max(.1,maxY-minY)))*settings.scale*.94
         view=[factor*2/width,factor*2/height];center=[(minX+maxX)*.5,(minY+maxY)*.5];offset=[0,(bottom-top)/height]
     }
