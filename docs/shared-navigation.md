@@ -108,9 +108,8 @@ reload the editor to confirm saved changes, following the
 If the authoring route cannot express or verify the combined sequence, retain
 clearly identified static state studies and record the missing interaction in
 the handoff. Static frames establish appearance only. Do not describe them as a
-working scroll interaction. A separate self-contained interaction component is
-an optional follow-up if native controls prove insufficient; it has not been
-selected or created by this brief.
+working scroll interaction. The two homepage studies now use the optional interaction override described
+below because native direction triggers hid the header before banner coverage.
 
 ## Open decisions
 
@@ -136,5 +135,62 @@ selected or created by this brief.
 Use this brief with the [Framer workflow](framer-prototyping.md) and
 [visual-language brief](design-inspiration/visual-language.md). Record the chosen
 routes, responsive states, interaction details, and prototype links when those
-decisions are made. Existing site code and Framer work remain separate from this
-documentation-only decision record.
+decisions are made. The following prototype record distinguishes tested behavior from the owner
+decisions above. The implemented Astro/Svelte site remains separate.
+
+## Homepage prototype implementation — 2026-10-30
+
+The unpublished [Black Instrument](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nubGK6NoO)
+and [Open Edition](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=X17ccaPKM)
+pages retain native editable navigation, dropdowns, banners, links, and full-screen
+menu/search layers. Their Desktop/Phone navigation instances sit inside native
+frames named **Navigation / stable behavior host**. The optional
+[HomepageNavigationInteractions.tsx](design-studies/code-components/HomepageNavigationInteractions.tsx)
+override attaches to those stable frames, preserving native component and page IDs.
+The existing nine code-study sources remain unchanged.
+
+Prototype choices, pending owner review:
+
+- Desktop keeps the navbar visible. Phone uses a maximum width of 809px, an
+  8px direction threshold, a 1px page-top tolerance, and a 180ms slide. Reduced
+  motion removes the slide transition. These values are implementation choices.
+- The gate measures the actual banner and navbar. Once covered, the banner's
+  paint stays hidden while its layout remains in place until page top, including
+  upward scrolling near the top. Canvas and static exports remain inert.
+- Products has four curated shortcuts: All products, Hosted MCPs, RepoIntel,
+  and BrowserOps. The full-screen menu includes all 24 current MCP destinations;
+  six retain their **In development** qualification. ExplicitMem and ReleaseOps
+  are included there. No Careers link is present because no current route was
+  verified. The menu also includes verified page and footer destinations.
+- Try Monarchic / Apps signed-out and signed-in variants demonstrate navigation
+  states. They do not implement authentication or an app launcher. Search opens
+  a native input and suggested links; no search service is connected.
+
+Actual Preview checks confirmed mobile cover-then-hide, upward reveal with the
+banner still absent, banner return at page top, Desktop persistence, full-viewport
+menu/search, keyboard-activated X closure, and opener-focus restoration. A
+stable-host keyboard close check also preserved the exact underlying scroll
+position. Search accepts input and returns focus to its opener after X + Enter.
+Pointer-activated X closure was not established: the available automation did
+not reliably trigger native Tap, and locator activation could scroll before the
+pointer event. The verified close paths are keyboard X and native menu Escape.
+
+Actual Preview after a full editor reload confirmed that opening Solutions
+closes the previously opened Products dropdown. Real outside clicks also close
+dropdowns. **Escape does not close the native relative dropdowns** in these
+prototypes; this remains an accessibility limitation against the implementation
+considerations above. The full-screen menu does close with Escape, restoring
+the exact underlying scroll position and opener focus. These are separate native
+behaviors. The override passes native pointer and keyboard events through without
+synthetic outside clicks. After modal Escape, a temporary child-list observer
+waits for the native close control to disappear, then restores context; it does
+not force native closure. The observer disconnects after restoration, cancellation
+or disposal, and remains inactive during ordinary scrolling. Final Preview on the
+saved override confirmed that scrolling resumes after the menu's delayed Escape
+exit: Phone down at 160px hides the navbar, up at 120px reveals it with the banner
+still hidden, and true page top restores the banner.
+
+The dedicated `pnpm check:homepage-navigation` command passes 25 focused groups,
+including semantic TypeScript, scroll state, context restoration and delayed
+native-exit lifecycle checks with deterministic DOM doubles. They do not establish Framer overlay dismissal, browser focus trapping or
+rendered layout; those require actual Preview checks after a full editor reload.

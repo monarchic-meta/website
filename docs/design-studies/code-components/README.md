@@ -238,6 +238,15 @@ For site implementation, manually port the selected rendering behavior into the
 existing Astro/Svelte component architecture. The study component and any
 prototype routes in Framer do not deploy changes to the website.
 
+The separate [homepage explorations](../../framer-homepage-explorations-2026-10-30.md)
+use an optional [HomepageNavigationInteractions.tsx](HomepageNavigationInteractions.tsx)
+behavior wrapper around their editable native navigation. Attach it manually in
+Framer using the returned override export ID. This helper adds no graphic study
+or GPU context; production navigation, authentication and search services remain
+separate implementation work. Run its focused lifecycle and interaction checks
+with `nix develop -c pnpm check:homepage-navigation`, backed by
+[check-homepage-navigation.mjs](../../../scripts/check-homepage-navigation.mjs).
+
 ## Saved placements and verification
 
 The initial three-study round is saved in the moodboard's
