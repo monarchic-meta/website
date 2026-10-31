@@ -1,0 +1,2351 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-012",
+  "title": "Mezmo / observability processing diagram",
+  "creator": "Mezmo; separate website designer not identified",
+  "url": "https://www.mezmo.com/",
+  "gallery": "https://httpster.net/website/mezmo/",
+  "background": "#031300",
+  "note": "Archived acid-green platform graphic: native outlined containers, processing modules, routes/arrows and simplified source/destination icons. Condensed type is substituted and minor chrome is reduced. Static diagram; no archived flow animation or current AURA terminal behavior claimed.",
+  "classification": "SOURCE INSPIRATION / STATIC NATIVE RECREATION",
+  "width": 1440,
+  "height": 1000,
+  "sourceEvidence": {
+    "capture": "sources/HERO-012-selected.png",
+    "media": "https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp",
+    "inspected": "2026-10-31",
+    "scope": "Selected 2022 archive, not current AURA site."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "announcement-strip",
+      "parent": "stage",
+      "attrs": {
+        "name": "announcement strip",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "47px",
+        "fill": "#eaff91"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "announcement-caption",
+      "parent": "stage",
+      "attrs": {
+        "name": "announcement caption",
+        "position": "absolute",
+        "left": "530px",
+        "top": "17px",
+        "width": "900px",
+        "height": "auto",
+        "text": "ARCHIVED PLATFORM / NATIVE DIAGRAM STUDY",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#031300",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "brand-wordmark",
+      "parent": "stage",
+      "attrs": {
+        "name": "brand wordmark",
+        "position": "absolute",
+        "left": "39px",
+        "top": "76px",
+        "width": "260px",
+        "height": "auto",
+        "text": "mezmo",
+        "fontName": "Inter",
+        "fontSize": "33px",
+        "lineHeight": "35.64px",
+        "textColor": "#eaff91",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "main-nav",
+      "parent": "stage",
+      "attrs": {
+        "name": "main nav",
+        "position": "absolute",
+        "left": "410px",
+        "top": "86px",
+        "width": "650px",
+        "height": "auto",
+        "text": "PLATFORM +     SOLUTIONS +     RESOURCES +     COMPANY +",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#eaff91",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "primary-nav-action",
+      "parent": "stage",
+      "attrs": {
+        "name": "primary nav action",
+        "position": "absolute",
+        "left": "1148px",
+        "top": "71px",
+        "width": "240px",
+        "height": "39px",
+        "borderWidth": "1px",
+        "borderColor": "#eaff91",
+        "borderStyle": "solid",
+        "radius": "4px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "primary-nav-action-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "primary nav action label",
+        "position": "absolute",
+        "left": "1181px",
+        "top": "85px",
+        "width": "220px",
+        "height": "auto",
+        "text": "REQUEST DEMO",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#eaff91",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "main-navigation-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "main navigation rule",
+        "position": "absolute",
+        "left": "0px",
+        "top": "133.5px",
+        "width": "1440px",
+        "height": "1px",
+        "fill": "#2c3d20",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "condensed-source-headline",
+      "parent": "stage",
+      "attrs": {
+        "name": "condensed source headline",
+        "position": "absolute",
+        "left": "36px",
+        "top": "188px",
+        "width": "700px",
+        "height": "auto",
+        "text": "REAL-TIME\nACTIONABILITY\nFROM YOUR\nOBSERVABILITY\nDATA. POWERED\nBY MEZMO.",
+        "fontName": "Roboto Condensed",
+        "fontSize": "84px",
+        "lineHeight": "101px",
+        "textColor": "#eaff91",
+        "paragraphSpacing": 0,
+        "fontWeight": 700
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "body-action",
+      "parent": "stage",
+      "attrs": {
+        "name": "body action",
+        "position": "absolute",
+        "left": "38px",
+        "top": "836px",
+        "width": "149px",
+        "height": "43px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "4px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "body-action-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "body action label",
+        "position": "absolute",
+        "left": "59px",
+        "top": "851px",
+        "width": "160px",
+        "height": "auto",
+        "text": "REQUEST DEMO",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#eaff91",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "native-platform-machinery",
+      "parent": "stage",
+      "attrs": {
+        "name": "native platform machinery",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "platform-outer-container",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "platform outer container",
+        "position": "absolute",
+        "left": "858px",
+        "top": "267px",
+        "width": "401px",
+        "height": "530px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "9px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "platform-top-bridge",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "platform top bridge",
+        "position": "absolute",
+        "left": "902px",
+        "top": "200px",
+        "width": "312px",
+        "height": "72px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "24px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "platform-title-line-mask",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "platform title line mask",
+        "position": "absolute",
+        "left": "921px",
+        "top": "250px",
+        "width": "285px",
+        "height": "29px",
+        "fill": "#031300"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "platform-title",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "platform title",
+        "position": "absolute",
+        "left": "936px",
+        "top": "258px",
+        "width": "315px",
+        "height": "auto",
+        "text": "Observability Platform",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-clearance",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag clearance",
+        "position": "absolute",
+        "left": "1038px",
+        "top": "193px",
+        "width": "45px",
+        "height": "15px",
+        "fill": "#031300"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 0",
+        "position": "absolute",
+        "left": "1035.592px",
+        "top": "196px",
+        "width": "10.817px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-56.309932474020215deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 1",
+        "position": "absolute",
+        "left": "1035.486px",
+        "top": "200.5px",
+        "width": "18.028px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "86.82016988013577deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-2",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 2",
+        "position": "absolute",
+        "left": "1039.151px",
+        "top": "200.5px",
+        "width": "19.698px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-66.03751102542182deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-3",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 3",
+        "position": "absolute",
+        "left": "1044.486px",
+        "top": "200.5px",
+        "width": "18.028px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "86.82016988013577deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-4",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 4",
+        "position": "absolute",
+        "left": "1048.438px",
+        "top": "200.5px",
+        "width": "20.125px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-63.43494882292201deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-5",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 5",
+        "position": "absolute",
+        "left": "1054.486px",
+        "top": "200.5px",
+        "width": "18.028px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "86.82016988013577deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "bridge-zigzag-6",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "bridge zigzag 6",
+        "position": "absolute",
+        "left": "1061.929px",
+        "top": "204.5px",
+        "width": "14.142px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enrich-module",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "enrich module",
+        "position": "absolute",
+        "left": "982px",
+        "top": "342px",
+        "width": "154px",
+        "height": "63px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "enrich-module-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "enrich module label",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "366px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Enrich",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "correlate-module",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "correlate module",
+        "position": "absolute",
+        "left": "982px",
+        "top": "452px",
+        "width": "154px",
+        "height": "63px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "correlate-module-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "correlate module label",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "476px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Correlate",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "transform-module",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "transform module",
+        "position": "absolute",
+        "left": "982px",
+        "top": "562px",
+        "width": "154px",
+        "height": "63px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "transform-module-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "transform module label",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "586px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Transform",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "analysis-module",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "analysis module",
+        "position": "absolute",
+        "left": "987px",
+        "top": "673px",
+        "width": "154px",
+        "height": "63px",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "analysis-module-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "analysis module label",
+        "position": "absolute",
+        "left": "1005px",
+        "top": "697px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Log Analysis",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "central-module-link-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "central module link 0",
+        "position": "absolute",
+        "left": "1035.5px",
+        "top": "428px",
+        "width": "47px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "central-module-link-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "central module link 1",
+        "position": "absolute",
+        "left": "1035.5px",
+        "top": "538px",
+        "width": "47px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "central-module-link-2",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "central module link 2",
+        "position": "absolute",
+        "left": "1035.5px",
+        "top": "648px",
+        "width": "47px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "left-control-loop-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "left control loop 0",
+        "position": "absolute",
+        "left": "944px",
+        "top": "372.4px",
+        "width": "38px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "left-control-loop-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "left control loop 1",
+        "position": "absolute",
+        "left": "927.78px",
+        "top": "378.4px",
+        "width": "18.439px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "139.3987053549955deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "left-control-loop-2",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "left control loop 2",
+        "position": "absolute",
+        "left": "881px",
+        "top": "433.4px",
+        "width": "98px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "left-control-loop-3",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "left control loop 3",
+        "position": "absolute",
+        "left": "930px",
+        "top": "482.4px",
+        "width": "52px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-route-loop-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "right route loop 0",
+        "position": "absolute",
+        "left": "1136px",
+        "top": "372.4px",
+        "width": "38px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-route-loop-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "right route loop 1",
+        "position": "absolute",
+        "left": "1172.096px",
+        "top": "378.4px",
+        "width": "20.809px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "35.21759296819272deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-route-loop-2",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "right route loop 2",
+        "position": "absolute",
+        "left": "1092.5px",
+        "top": "482.9px",
+        "width": "197px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-route-loop-3",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "right route loop 3",
+        "position": "absolute",
+        "left": "1176.515px",
+        "top": "587.4px",
+        "width": "16.971px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "135deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-route-loop-4",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "right route loop 4",
+        "position": "absolute",
+        "left": "1136px",
+        "top": "593.4px",
+        "width": "43px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-input-arrow",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "source input arrow",
+        "position": "absolute",
+        "left": "793px",
+        "top": "480.4px",
+        "width": "43px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-input-arrow-head-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "source input arrow head 0",
+        "position": "absolute",
+        "left": "822.529px",
+        "top": "484.939px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "142.75774331649643deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-input-arrow-head-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "source input arrow head 1",
+        "position": "absolute",
+        "left": "822.529px",
+        "top": "475.861px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-142.75774331649643deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "input-to-control",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "input to control",
+        "position": "absolute",
+        "left": "836px",
+        "top": "480.4px",
+        "width": "38px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "control-label-clearance",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "control label clearance",
+        "position": "absolute",
+        "left": "874px",
+        "top": "467px",
+        "width": "88px",
+        "height": "26px",
+        "fill": "#031300"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "control-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "control label",
+        "position": "absolute",
+        "left": "882px",
+        "top": "472px",
+        "width": "100px",
+        "height": "auto",
+        "text": "Control",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "route-label-clearance",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "route label clearance",
+        "position": "absolute",
+        "left": "1173px",
+        "top": "467px",
+        "width": "84px",
+        "height": "27px",
+        "fill": "#031300"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "route-label",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "route label",
+        "position": "absolute",
+        "left": "1180px",
+        "top": "472px",
+        "width": "100px",
+        "height": "auto",
+        "text": "Route",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "18.36px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-outbound-arrow",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination outbound arrow",
+        "position": "absolute",
+        "left": "1240px",
+        "top": "461.4px",
+        "width": "45px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-outbound-arrow-head-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination outbound arrow head 0",
+        "position": "absolute",
+        "left": "1271.529px",
+        "top": "465.939px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "142.75774331649617deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-outbound-arrow-head-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination outbound arrow head 1",
+        "position": "absolute",
+        "left": "1271.529px",
+        "top": "456.861px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-142.75774331649617deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-inbound-arrow",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination inbound arrow",
+        "position": "absolute",
+        "left": "1240px",
+        "top": "498.4px",
+        "width": "45px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-inbound-arrow-head-0",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination inbound arrow head 0",
+        "position": "absolute",
+        "left": "1238.471px",
+        "top": "493.861px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-37.24225668350382deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-inbound-arrow-head-1",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "destination inbound arrow head 1",
+        "position": "absolute",
+        "left": "1238.471px",
+        "top": "502.939px",
+        "width": "15px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "37.24225668350363deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "active-destination-node",
+      "parent": "native-platform-machinery",
+      "attrs": {
+        "name": "active destination node",
+        "position": "absolute",
+        "left": "1308px",
+        "top": "454px",
+        "width": "16px",
+        "height": "16px",
+        "fill": "#eaff91",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#eaff91",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "source-side-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "source side label",
+        "position": "absolute",
+        "left": "730px",
+        "top": "373px",
+        "width": "140px",
+        "height": "auto",
+        "text": "Any\nSource",
+        "fontName": "Inter",
+        "fontSize": "16px",
+        "lineHeight": "21px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "destination-side-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination side label",
+        "position": "absolute",
+        "left": "1289px",
+        "top": "340px",
+        "width": "210px",
+        "height": "auto",
+        "text": "Any\nDestination",
+        "fontName": "Inter",
+        "fontSize": "16px",
+        "lineHeight": "21px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-core",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network core",
+        "position": "absolute",
+        "left": "743px",
+        "top": "473px",
+        "width": "26px",
+        "height": "26px",
+        "radius": "50%",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-link-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network link 0",
+        "position": "absolute",
+        "left": "756px",
+        "top": "485.5px",
+        "width": "30px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-node-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network node 0",
+        "position": "absolute",
+        "left": "782.5px",
+        "top": "482.5px",
+        "width": "7px",
+        "height": "7px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-link-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network link 1",
+        "position": "absolute",
+        "left": "745.635px",
+        "top": "499.766px",
+        "width": "30px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "71.99999999999994deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-node-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network node 1",
+        "position": "absolute",
+        "left": "761.771px",
+        "top": "511.032px",
+        "width": "7px",
+        "height": "7px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-link-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network link 2",
+        "position": "absolute",
+        "left": "728.865px",
+        "top": "494.317px",
+        "width": "30px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "143.99999999999997deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-node-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network node 2",
+        "position": "absolute",
+        "left": "728.229px",
+        "top": "500.134px",
+        "width": "7px",
+        "height": "7px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-link-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network link 3",
+        "position": "absolute",
+        "left": "728.865px",
+        "top": "476.683px",
+        "width": "30px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-144.00000000000006deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-node-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network node 3",
+        "position": "absolute",
+        "left": "728.229px",
+        "top": "464.866px",
+        "width": "7px",
+        "height": "7px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-link-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network link 4",
+        "position": "absolute",
+        "left": "745.635px",
+        "top": "471.234px",
+        "width": "30px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-71.99999999999999deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-network-node-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "source network node 4",
+        "position": "absolute",
+        "left": "761.771px",
+        "top": "453.968px",
+        "width": "7px",
+        "height": "7px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-core",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear core",
+        "position": "absolute",
+        "left": "744px",
+        "top": "583px",
+        "width": "24px",
+        "height": "24px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 0",
+        "position": "absolute",
+        "left": "769px",
+        "top": "593.5px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 1",
+        "position": "absolute",
+        "left": "765.944px",
+        "top": "602.905px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "35.9999999999995deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 2",
+        "position": "absolute",
+        "left": "757.944px",
+        "top": "608.717px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "72.00000000000016deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 3",
+        "position": "absolute",
+        "left": "748.056px",
+        "top": "608.717px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "107.99999999999987deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 4",
+        "position": "absolute",
+        "left": "740.056px",
+        "top": "602.905px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "144.0000000000005deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-5",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 5",
+        "position": "absolute",
+        "left": "737px",
+        "top": "593.5px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-6",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 6",
+        "position": "absolute",
+        "left": "740.056px",
+        "top": "584.095px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "-144.0000000000005deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-7",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 7",
+        "position": "absolute",
+        "left": "748.056px",
+        "top": "578.283px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "-107.99999999999987deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-8",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 8",
+        "position": "absolute",
+        "left": "757.944px",
+        "top": "578.283px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "-72.00000000000016deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-gear-tooth-9",
+      "parent": "stage",
+      "attrs": {
+        "name": "source gear tooth 9",
+        "position": "absolute",
+        "left": "765.944px",
+        "top": "584.095px",
+        "width": "6px",
+        "height": "3px",
+        "fill": "#b6cb88",
+        "rotation": "-35.9999999999995deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 0",
+        "position": "absolute",
+        "left": "721.5px",
+        "top": "620px",
+        "width": "15px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 1",
+        "position": "absolute",
+        "left": "729px",
+        "top": "627.5px",
+        "width": "37px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 2",
+        "position": "absolute",
+        "left": "765.469px",
+        "top": "625.5px",
+        "width": "8.062px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-29.744881296942225deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 3",
+        "position": "absolute",
+        "left": "759.829px",
+        "top": "622px",
+        "width": "13.342px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-167.0053832080835deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 4",
+        "position": "absolute",
+        "left": "748px",
+        "top": "620.5px",
+        "width": "12px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-5",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 5",
+        "position": "absolute",
+        "left": "740.199px",
+        "top": "618px",
+        "width": "8.602px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "-144.46232220802563deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-hand-outline-6",
+      "parent": "stage",
+      "attrs": {
+        "name": "source hand outline 6",
+        "position": "absolute",
+        "left": "735px",
+        "top": "615.5px",
+        "width": "6px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-row-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack row 0",
+        "position": "absolute",
+        "left": "737px",
+        "top": "698px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-0-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 0 0",
+        "position": "absolute",
+        "left": "740.9px",
+        "top": "701.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-0-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 0 1",
+        "position": "absolute",
+        "left": "747.9px",
+        "top": "701.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-0-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 0 2",
+        "position": "absolute",
+        "left": "754.9px",
+        "top": "701.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-row-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack row 1",
+        "position": "absolute",
+        "left": "737px",
+        "top": "708px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-1-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 1 0",
+        "position": "absolute",
+        "left": "740.9px",
+        "top": "711.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-1-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 1 1",
+        "position": "absolute",
+        "left": "747.9px",
+        "top": "711.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-1-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 1 2",
+        "position": "absolute",
+        "left": "754.9px",
+        "top": "711.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-row-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack row 2",
+        "position": "absolute",
+        "left": "737px",
+        "top": "718px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-2-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 2 0",
+        "position": "absolute",
+        "left": "740.9px",
+        "top": "721.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-2-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 2 1",
+        "position": "absolute",
+        "left": "747.9px",
+        "top": "721.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-light-2-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack light 2 2",
+        "position": "absolute",
+        "left": "754.9px",
+        "top": "721.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-stem",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack stem",
+        "position": "absolute",
+        "left": "749.5px",
+        "top": "733px",
+        "width": "11px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-rack-base",
+      "parent": "stage",
+      "attrs": {
+        "name": "source rack base",
+        "position": "absolute",
+        "left": "729px",
+        "top": "739.5px",
+        "width": "53px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 0",
+        "position": "absolute",
+        "left": "1357px",
+        "top": "460.4px",
+        "width": "26px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "22.619864948040426deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 1",
+        "position": "absolute",
+        "left": "1366.353px",
+        "top": "478.9px",
+        "width": "27.295px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "98.42696902148069deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 2",
+        "position": "absolute",
+        "left": "1353.858px",
+        "top": "502.4px",
+        "width": "28.284px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "135deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 3",
+        "position": "absolute",
+        "left": "1333.858px",
+        "top": "502.4px",
+        "width": "28.284px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-135deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 4",
+        "position": "absolute",
+        "left": "1322.353px",
+        "top": "478.9px",
+        "width": "27.295px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-98.42696902148069deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-shield-5",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination shield 5",
+        "position": "absolute",
+        "left": "1333px",
+        "top": "460.4px",
+        "width": "26px",
+        "height": "1.2px",
+        "fill": "#b6cb88",
+        "rotation": "-22.619864948040426deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-lock",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination lock",
+        "position": "absolute",
+        "left": "1348px",
+        "top": "478px",
+        "width": "20px",
+        "height": "17px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-lock-shackle",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination lock shackle",
+        "position": "absolute",
+        "left": "1353px",
+        "top": "469px",
+        "width": "10px",
+        "height": "13px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid",
+        "radius": "5px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-observation-circle",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination observation circle",
+        "position": "absolute",
+        "left": "1336px",
+        "top": "575px",
+        "width": "46px",
+        "height": "46px",
+        "radius": "50%",
+        "borderWidth": "1.2px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "observation-bar-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "observation bar 0",
+        "position": "absolute",
+        "left": "1347px",
+        "top": "604px",
+        "width": "4px",
+        "height": "8px",
+        "borderWidth": "0.8px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "observation-bar-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "observation bar 1",
+        "position": "absolute",
+        "left": "1354px",
+        "top": "599px",
+        "width": "4px",
+        "height": "13px",
+        "borderWidth": "0.8px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "observation-bar-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "observation bar 2",
+        "position": "absolute",
+        "left": "1361px",
+        "top": "594px",
+        "width": "4px",
+        "height": "18px",
+        "borderWidth": "0.8px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-glass-handle",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination glass handle",
+        "position": "absolute",
+        "left": "1371.534px",
+        "top": "621px",
+        "width": "21.932px",
+        "height": "4px",
+        "fill": "#b6cb88",
+        "rotation": "46.8476102659946deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-row-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack row 0",
+        "position": "absolute",
+        "left": "1342px",
+        "top": "701px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-0-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 0 0",
+        "position": "absolute",
+        "left": "1345.9px",
+        "top": "704.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-0-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 0 1",
+        "position": "absolute",
+        "left": "1352.9px",
+        "top": "704.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-0-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 0 2",
+        "position": "absolute",
+        "left": "1359.9px",
+        "top": "704.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-row-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack row 1",
+        "position": "absolute",
+        "left": "1342px",
+        "top": "711px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-1-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 1 0",
+        "position": "absolute",
+        "left": "1345.9px",
+        "top": "714.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-1-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 1 1",
+        "position": "absolute",
+        "left": "1352.9px",
+        "top": "714.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-1-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 1 2",
+        "position": "absolute",
+        "left": "1359.9px",
+        "top": "714.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-row-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack row 2",
+        "position": "absolute",
+        "left": "1342px",
+        "top": "721px",
+        "width": "36px",
+        "height": "10px",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-2-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 2 0",
+        "position": "absolute",
+        "left": "1345.9px",
+        "top": "724.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-2-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 2 1",
+        "position": "absolute",
+        "left": "1352.9px",
+        "top": "724.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-light-2-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack light 2 2",
+        "position": "absolute",
+        "left": "1359.9px",
+        "top": "724.9px",
+        "width": "2.2px",
+        "height": "2.2px",
+        "fill": "#b6cb88",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-stem",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack stem",
+        "position": "absolute",
+        "left": "1354.5px",
+        "top": "736px",
+        "width": "11px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-base",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack base",
+        "position": "absolute",
+        "left": "1334px",
+        "top": "742.5px",
+        "width": "53px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "destination-rack-ground",
+      "parent": "stage",
+      "attrs": {
+        "name": "destination rack ground",
+        "position": "absolute",
+        "left": "1330px",
+        "top": "705px",
+        "width": "60px",
+        "height": "60px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#b6cb88",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-row-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer row rule",
+        "position": "absolute",
+        "left": "0px",
+        "top": "927.5px",
+        "width": "1440px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-divider-266",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer divider 266",
+        "position": "absolute",
+        "left": "230px",
+        "top": "963.5px",
+        "width": "72px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-divider-494",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer divider 494",
+        "position": "absolute",
+        "left": "458px",
+        "top": "963.5px",
+        "width": "72px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-divider-722",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer divider 722",
+        "position": "absolute",
+        "left": "686px",
+        "top": "963.5px",
+        "width": "72px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-divider-950",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer divider 950",
+        "position": "absolute",
+        "left": "914px",
+        "top": "963.5px",
+        "width": "72px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "customer-divider-1178",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer divider 1178",
+        "position": "absolute",
+        "left": "1142px",
+        "top": "963.5px",
+        "width": "72px",
+        "height": "1px",
+        "fill": "#b6cb88",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "customer-row-caption",
+      "parent": "stage",
+      "attrs": {
+        "name": "customer row caption",
+        "position": "absolute",
+        "left": "88px",
+        "top": "961px",
+        "width": "220px",
+        "height": "auto",
+        "text": "CUSTOMER INDEX",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-customer-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral customer 0",
+        "position": "absolute",
+        "left": "301px",
+        "top": "958px",
+        "width": "220px",
+        "height": "auto",
+        "text": "[ 01 ]",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "21.6px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-customer-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral customer 1",
+        "position": "absolute",
+        "left": "529px",
+        "top": "958px",
+        "width": "220px",
+        "height": "auto",
+        "text": "[ 02 ]",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "21.6px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-customer-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral customer 2",
+        "position": "absolute",
+        "left": "757px",
+        "top": "958px",
+        "width": "220px",
+        "height": "auto",
+        "text": "[ 03 ]",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "21.6px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-customer-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral customer 3",
+        "position": "absolute",
+        "left": "985px",
+        "top": "958px",
+        "width": "220px",
+        "height": "auto",
+        "text": "[ 04 ]",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "21.6px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-customer-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral customer 4",
+        "position": "absolute",
+        "left": "1213px",
+        "top": "958px",
+        "width": "220px",
+        "height": "auto",
+        "text": "[ 05 ]",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "21.6px",
+        "textColor": "#b6cb88",
+        "paragraphSpacing": 0
+      }
+    }
+  ]
+}
