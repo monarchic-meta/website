@@ -1,0 +1,921 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-013",
+  "title": "FORMAT / nested formats",
+  "creator": "Obys × DES / Viacheslav Olianishyn / Olha Olianishyna",
+  "url": "https://format.obys.agency/",
+  "gallery": "https://www.awwwards.com/sites/format",
+  "background": "#222222",
+  "note": "Static source-led format construction. Segmented lettering is hand-built; three unequal panels use neutral photographic stand-ins. Positions summarize the reviewed entrance/initial-scroll composition. No physics, Notes Mode or scroll motion claimed.",
+  "classification": "SOURCE INSPIRATION / STATIC FORMAT ADAPTATION",
+  "width": 1440,
+  "height": 1000,
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "segmented-geometric-wordmark",
+      "parent": "stage",
+      "attrs": {
+        "name": "segmented geometric wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "three-overlapping-format-masks",
+      "parent": "stage",
+      "attrs": {
+        "name": "three overlapping format masks",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tiny-notes-and-rules",
+      "parent": "stage",
+      "attrs": {
+        "name": "tiny notes and rules",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-F-spine",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter F spine",
+        "position": "absolute",
+        "left": "20px",
+        "top": "690px",
+        "width": "65px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-F-top",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter F top",
+        "position": "absolute",
+        "left": "20px",
+        "top": "690px",
+        "width": "205px",
+        "height": "65px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-F-middle",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter F middle",
+        "position": "absolute",
+        "left": "20px",
+        "top": "800px",
+        "width": "170px",
+        "height": "60px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-O-left",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter O left",
+        "position": "absolute",
+        "left": "254px",
+        "top": "690px",
+        "width": "62px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-O-right",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter O right",
+        "position": "absolute",
+        "left": "406px",
+        "top": "690px",
+        "width": "62px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-O-top",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter O top",
+        "position": "absolute",
+        "left": "254px",
+        "top": "690px",
+        "width": "214px",
+        "height": "62px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-O-bottom",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter O bottom",
+        "position": "absolute",
+        "left": "254px",
+        "top": "893px",
+        "width": "214px",
+        "height": "62px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-R-spine",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter R spine",
+        "position": "absolute",
+        "left": "488px",
+        "top": "690px",
+        "width": "62px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-R-top",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter R top",
+        "position": "absolute",
+        "left": "488px",
+        "top": "690px",
+        "width": "210px",
+        "height": "61px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-R-middle",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter R middle",
+        "position": "absolute",
+        "left": "488px",
+        "top": "802px",
+        "width": "210px",
+        "height": "61px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-R-upper-right",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter R upper right",
+        "position": "absolute",
+        "left": "638px",
+        "top": "690px",
+        "width": "60px",
+        "height": "173px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-R-diagonal-leg",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter R diagonal leg",
+        "position": "absolute",
+        "left": "608px",
+        "top": "857px",
+        "width": "70px",
+        "height": "116px",
+        "fill": "#f6f5ef",
+        "rotation": "-31deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-M-left",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter M left",
+        "position": "absolute",
+        "left": "722px",
+        "top": "690px",
+        "width": "58px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-M-right",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter M right",
+        "position": "absolute",
+        "left": "877px",
+        "top": "690px",
+        "width": "58px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-M-diagonal-left",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter M diagonal left",
+        "position": "absolute",
+        "left": "777px",
+        "top": "700px",
+        "width": "65px",
+        "height": "155px",
+        "fill": "#f6f5ef",
+        "rotation": "-22deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-M-diagonal-right",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter M diagonal right",
+        "position": "absolute",
+        "left": "820px",
+        "top": "700px",
+        "width": "65px",
+        "height": "155px",
+        "fill": "#f6f5ef",
+        "rotation": "22deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-A-left",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter A left",
+        "position": "absolute",
+        "left": "986px",
+        "top": "691px",
+        "width": "62px",
+        "height": "276px",
+        "fill": "#f6f5ef",
+        "rotation": "18deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-A-right",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter A right",
+        "position": "absolute",
+        "left": "1082px",
+        "top": "691px",
+        "width": "62px",
+        "height": "276px",
+        "fill": "#f6f5ef",
+        "rotation": "-18deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-A-crossbar",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter A crossbar",
+        "position": "absolute",
+        "left": "996px",
+        "top": "833px",
+        "width": "140px",
+        "height": "52px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-T-crossbar",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter T crossbar",
+        "position": "absolute",
+        "left": "1190px",
+        "top": "690px",
+        "width": "212px",
+        "height": "62px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-T-spine",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter T spine",
+        "position": "absolute",
+        "left": "1267px",
+        "top": "690px",
+        "width": "62px",
+        "height": "265px",
+        "fill": "#f6f5ef"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-chamfer-cut-0-0",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter chamfer cut 0 0",
+        "position": "absolute",
+        "left": "2px",
+        "top": "670px",
+        "width": "38px",
+        "height": "38px",
+        "fill": "#222222",
+        "rotation": "45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-chamfer-cut-1-0",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter chamfer cut 1 0",
+        "position": "absolute",
+        "left": "236px",
+        "top": "670px",
+        "width": "40px",
+        "height": "40px",
+        "fill": "#222222",
+        "rotation": "45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-chamfer-cut-1-178",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter chamfer cut 1 178",
+        "position": "absolute",
+        "left": "414px",
+        "top": "670px",
+        "width": "40px",
+        "height": "40px",
+        "fill": "#222222",
+        "rotation": "45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-chamfer-cut-2-176",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter chamfer cut 2 176",
+        "position": "absolute",
+        "left": "646px",
+        "top": "670px",
+        "width": "44px",
+        "height": "44px",
+        "fill": "#222222",
+        "rotation": "45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-chamfer-cut-5-0",
+      "parent": "segmented-geometric-wordmark",
+      "attrs": {
+        "name": "letter chamfer cut 5 0",
+        "position": "absolute",
+        "left": "1172px",
+        "top": "670px",
+        "width": "34px",
+        "height": "34px",
+        "fill": "#222222",
+        "rotation": "45deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-format",
+      "parent": "three-overlapping-format-masks",
+      "attrs": {
+        "name": "vertical format",
+        "position": "absolute",
+        "left": "130px",
+        "top": "70px",
+        "width": "350px",
+        "height": "615px",
+        "fill": "#e8e7df",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "vertical-format-annotation",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "vertical format annotation",
+        "position": "absolute",
+        "left": "20px",
+        "top": "18px",
+        "width": "180px",
+        "height": "auto",
+        "text": "(Format) 1",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#171717",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "vertical-type",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "vertical type",
+        "position": "absolute",
+        "left": "20px",
+        "top": "64px",
+        "width": "300px",
+        "height": "auto",
+        "text": "V\nE\nR\nT",
+        "fontName": "Inter",
+        "fontSize": "95px",
+        "lineHeight": "105px",
+        "textColor": "#151515",
+        "paragraphSpacing": 0,
+        "fontWeight": 700
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-axis",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "vertical axis",
+        "position": "absolute",
+        "left": "39px",
+        "top": "318.5px",
+        "width": "542px",
+        "height": "1px",
+        "fill": "#222",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "horizontal-format",
+      "parent": "three-overlapping-format-masks",
+      "attrs": {
+        "name": "horizontal format",
+        "position": "absolute",
+        "left": "455px",
+        "top": "250px",
+        "width": "775px",
+        "height": "270px",
+        "fill": "#f1f0e9",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "horizontal-format-annotation",
+      "parent": "horizontal-format",
+      "attrs": {
+        "name": "horizontal format annotation",
+        "position": "absolute",
+        "left": "20px",
+        "top": "15px",
+        "width": "180px",
+        "height": "auto",
+        "text": "(Format) 2",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#161616",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "horizontal-type",
+      "parent": "horizontal-format",
+      "attrs": {
+        "name": "horizontal type",
+        "position": "absolute",
+        "left": "18px",
+        "top": "64px",
+        "width": "750px",
+        "height": "auto",
+        "text": "HRZNTL",
+        "fontName": "Inter",
+        "fontSize": "122px",
+        "lineHeight": "153px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0,
+        "fontWeight": 700,
+        "letterSpacing": "-.07em"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "horizontal-baseline",
+      "parent": "horizontal-format",
+      "attrs": {
+        "name": "horizontal baseline",
+        "position": "absolute",
+        "left": "20px",
+        "top": "218.5px",
+        "width": "732px",
+        "height": "1px",
+        "fill": "#171717",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-format",
+      "parent": "three-overlapping-format-masks",
+      "attrs": {
+        "name": "neutral photo format",
+        "position": "absolute",
+        "left": "860px",
+        "top": "445px",
+        "width": "400px",
+        "height": "290px",
+        "fill": "#a5a69f",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-0",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 0",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#babcb4"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-1",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 1",
+        "position": "absolute",
+        "left": "0px",
+        "top": "22px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#babcb4"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-2",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 2",
+        "position": "absolute",
+        "left": "0px",
+        "top": "44px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#babcb4"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-3",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 3",
+        "position": "absolute",
+        "left": "0px",
+        "top": "66px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#babcb4"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-4",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 4",
+        "position": "absolute",
+        "left": "0px",
+        "top": "88px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#a9aca2"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-5",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 5",
+        "position": "absolute",
+        "left": "0px",
+        "top": "110px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#a9aca2"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-6",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 6",
+        "position": "absolute",
+        "left": "0px",
+        "top": "132px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#a9aca2"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-7",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 7",
+        "position": "absolute",
+        "left": "0px",
+        "top": "154px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#a9aca2"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-8",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 8",
+        "position": "absolute",
+        "left": "0px",
+        "top": "176px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#8c9185"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-9",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 9",
+        "position": "absolute",
+        "left": "0px",
+        "top": "198px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#8c9185"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-10",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 10",
+        "position": "absolute",
+        "left": "0px",
+        "top": "220px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#8c9185"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-11",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 11",
+        "position": "absolute",
+        "left": "0px",
+        "top": "242px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#8c9185"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-12",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 12",
+        "position": "absolute",
+        "left": "0px",
+        "top": "264px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#70776b"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-photo-tonal-band-13",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo tonal band 13",
+        "position": "absolute",
+        "left": "0px",
+        "top": "286px",
+        "width": "400px",
+        "height": "22px",
+        "fill": "#70776b"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-photo-stand-in-label",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo stand in label",
+        "position": "absolute",
+        "left": "18px",
+        "top": "18px",
+        "width": "350px",
+        "height": "auto",
+        "text": "NEUTRAL PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#171a15",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "neutral-photo-format-number",
+      "parent": "neutral-photo-format",
+      "attrs": {
+        "name": "neutral photo format number",
+        "position": "absolute",
+        "left": "18px",
+        "top": "245px",
+        "width": "100px",
+        "height": "auto",
+        "text": "03",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "20px",
+        "lineHeight": "25px",
+        "textColor": "#eff2e7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "tiny-note-1",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note 1",
+        "position": "absolute",
+        "left": "15px",
+        "top": "20px",
+        "width": "100px",
+        "height": "auto",
+        "text": "(1)",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c7c7bd",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tiny-note-rule-1",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note rule 1",
+        "position": "absolute",
+        "left": "15px",
+        "top": "47.6px",
+        "width": "80px",
+        "height": "0.8px",
+        "fill": "#a8aaa0",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "tiny-note-2",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note 2",
+        "position": "absolute",
+        "left": "1280px",
+        "top": "110px",
+        "width": "100px",
+        "height": "auto",
+        "text": "(2)",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c7c7bd",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tiny-note-rule-2",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note rule 2",
+        "position": "absolute",
+        "left": "1280px",
+        "top": "137.6px",
+        "width": "80px",
+        "height": "0.8px",
+        "fill": "#a8aaa0",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "tiny-note-3",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note 3",
+        "position": "absolute",
+        "left": "1300px",
+        "top": "600px",
+        "width": "100px",
+        "height": "auto",
+        "text": "(3)",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c7c7bd",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tiny-note-rule-3",
+      "parent": "tiny-notes-and-rules",
+      "attrs": {
+        "name": "tiny note rule 3",
+        "position": "absolute",
+        "left": "1300px",
+        "top": "627.6px",
+        "width": "80px",
+        "height": "0.8px",
+        "fill": "#a8aaa0",
+        "rotation": "0deg"
+      }
+    }
+  ]
+}
