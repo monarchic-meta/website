@@ -121,6 +121,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          hero-mechanisms = (mkWebsiteCheck "hero-mechanisms" ''
+            pnpm run check:hero-mechanism-study
+            pnpm run check:hero-mechanism-integration
+            pnpm run check:hero-mechanism-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           contracts = mkWebsiteCheck "contracts" ''
             pnpm run check:webcomposer
             pnpm run check:webinfo-artifacts
@@ -179,6 +188,20 @@
           };
         in
         {
+          prepare-framer-hero-mechanisms = {
+            type = "app";
+            program = "${pkgs.writeShellApplication {
+              name = "prepare-framer-hero-mechanisms";
+              runtimeInputs = [ pkgs.nodejs_22 pkgs.pnpm pkgs.ffmpeg ];
+              text = ''
+                if [ ! -f scripts/build-framer-hero-mechanisms.mjs ]; then
+                  echo "Run this command from the website repository root." >&2
+                  exit 1
+                fi
+                exec pnpm run build:framer-hero-mechanisms "$@"
+              '';
+            }}/bin/prepare-framer-hero-mechanisms";
+          };
           smoke-development = mkSmokeApp "website-smoke-development" "smoke:development";
           smoke-production = mkSmokeApp "website-smoke-production" "smoke:production";
           smoke-staging = mkSmokeApp "website-smoke-staging" "smoke:staging";
