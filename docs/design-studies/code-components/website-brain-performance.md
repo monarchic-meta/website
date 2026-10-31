@@ -186,7 +186,7 @@ sustained frame-rate verification is claimed.
 
 ## Saved state and preservation
 
-The final independent read passes **all 16 guards**: all 25 page hashes/IDs,
+The final independent read passes **all 17 guards**: all 25 page hashes/IDs,
 135 placement control/geometry records, 14 code paths/exports, four public
 schemas/defaults, navigation/CTA data and eight brain presets are preserved.
 Only the four approved component sources changed; the other ten source files
