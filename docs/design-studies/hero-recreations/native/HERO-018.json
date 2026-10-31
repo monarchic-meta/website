@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-018",
+  "title": "pu—ente / three geometric identities",
+  "creator": "pu—ente",
+  "url": "https://www.pu-ente.com/z/",
+  "gallery": "https://minimal.gallery/pu-ente/",
+  "background": "#333333",
+  "note": "Three inspected graphic-design tiles: Caseti 385, Porcelain Studio and aurea10. Native circles, squares and traced quadrilateral edges; proportions approximate the source capture. Static motifs only, no shader or tile-motion claim.",
+  "classification": "SOURCE INSPIRATION / STATIC NATIVE RECREATION",
+  "width": 1440,
+  "height": 1000,
+  "sourceEvidence": {
+    "capture": "sources/HERO-018-primary-0.png",
+    "inspected": "2026-10-31",
+    "media": [
+      "https://www.pu-ente.com/wp-content/uploads/2026/08/Caseti-385-EP-vinyl-cover-label.jpg",
+      "https://www.pu-ente.com/wp-content/uploads/2025/11/porcelain-studio-branding-pure-form.jpg",
+      "https://www.pu-ente.com/wp-content/uploads/2025/10/aurea10-branding-golden-ratio-spiral-00.jpg"
+    ]
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "filled-corner-control",
+      "parent": "stage",
+      "attrs": {
+        "name": "filled corner control",
+        "position": "absolute",
+        "left": "76px",
+        "top": "76px",
+        "width": "32px",
+        "height": "32px",
+        "fill": "#ffffff"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "outline-corner-control",
+      "parent": "stage",
+      "attrs": {
+        "name": "outline corner control",
+        "position": "absolute",
+        "left": "1332px",
+        "top": "76px",
+        "width": "32px",
+        "height": "32px",
+        "borderWidth": "5px",
+        "borderColor": "#ffffff",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tile-caseti-385",
+      "parent": "stage",
+      "attrs": {
+        "name": "tile caseti 385",
+        "position": "absolute",
+        "left": "75px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tile-porcelain-studio",
+      "parent": "stage",
+      "attrs": {
+        "name": "tile porcelain studio",
+        "position": "absolute",
+        "left": "530px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "tile-aurea10",
+      "parent": "stage",
+      "attrs": {
+        "name": "tile aurea10",
+        "position": "absolute",
+        "left": "985px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-three-lower",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti three lower",
+        "position": "absolute",
+        "left": "25.333px",
+        "top": "153.583px",
+        "width": "129.833px",
+        "height": "129.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-eight-lower",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti eight lower",
+        "position": "absolute",
+        "left": "121.917px",
+        "top": "131.417px",
+        "width": "152px",
+        "height": "152px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-eight-upper",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti eight upper",
+        "position": "absolute",
+        "left": "166.25px",
+        "top": "95px",
+        "width": "63.333px",
+        "height": "63.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-five-lower",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti five lower",
+        "position": "absolute",
+        "left": "224.833px",
+        "top": "155.167px",
+        "width": "126.667px",
+        "height": "126.667px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-three-bar",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti three bar",
+        "position": "absolute",
+        "left": "61.75px",
+        "top": "123.658px",
+        "width": "68.083px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-three-link",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti three link",
+        "position": "absolute",
+        "left": "74.967px",
+        "top": "145.825px",
+        "width": "49.566px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "116.56505117707799deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-five-bar",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti five bar",
+        "position": "absolute",
+        "left": "281.833px",
+        "top": "123.658px",
+        "width": "64.917px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "caseti-five-link",
+      "parent": "tile-caseti-385",
+      "attrs": {
+        "name": "caseti five link",
+        "position": "absolute",
+        "left": "270.145px",
+        "top": "145.825px",
+        "width": "50.294px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "118.17859010995917deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-upper-small",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper small",
+        "position": "absolute",
+        "left": "49.083px",
+        "top": "49.083px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-upper-large",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper large",
+        "position": "absolute",
+        "left": "190px",
+        "top": "49.083px",
+        "width": "139.333px",
+        "height": "139.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-center",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain center",
+        "position": "absolute",
+        "left": "161.5px",
+        "top": "161.5px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-lower-large",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower large",
+        "position": "absolute",
+        "left": "47.5px",
+        "top": "190px",
+        "width": "139.333px",
+        "height": "139.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-lower-small",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower small",
+        "position": "absolute",
+        "left": "273.917px",
+        "top": "273.917px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-upper-square",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper square",
+        "position": "absolute",
+        "left": "188.417px",
+        "top": "45.917px",
+        "width": "142.5px",
+        "height": "142.5px",
+        "borderWidth": "2.533px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "porcelain-lower-square",
+      "parent": "tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower square",
+        "position": "absolute",
+        "left": "45.917px",
+        "top": "188.417px",
+        "width": "142.5px",
+        "height": "142.5px",
+        "borderWidth": "2.533px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-outer-0",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 0",
+        "position": "absolute",
+        "left": "9.595px",
+        "top": "33.408px",
+        "width": "368.726px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-12.902412527267943deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-outer-1",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 1",
+        "position": "absolute",
+        "left": "149.876px",
+        "top": "171.158px",
+        "width": "366.831px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "102.716574104659deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-outer-2",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 2",
+        "position": "absolute",
+        "left": "63.7px",
+        "top": "324.742px",
+        "width": "232.016px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-outer-3",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 3",
+        "position": "absolute",
+        "left": "-75.037px",
+        "top": "186.992px",
+        "width": "230.825px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-103.08299067481111deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-middle-0",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 0",
+        "position": "absolute",
+        "left": "97.772px",
+        "top": "143.45px",
+        "width": "141.706px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-13.570434385161487deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-middle-1",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 1",
+        "position": "absolute",
+        "left": "150.196px",
+        "top": "238.45px",
+        "width": "230.025px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "76.05940882971001deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-middle-2",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 2",
+        "position": "absolute",
+        "left": "63.7px",
+        "top": "324.742px",
+        "width": "232.016px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-middle-3",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 3",
+        "position": "absolute",
+        "left": "11.502px",
+        "top": "229.742px",
+        "width": "143.246px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-76.5781649321138deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-inner-0",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 0",
+        "position": "absolute",
+        "left": "98.668px",
+        "top": "169.575px",
+        "width": "84.497px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "12.994616791916506deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-inner-1",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 1",
+        "position": "absolute",
+        "left": "150.352px",
+        "top": "221.033px",
+        "width": "87.213px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "74.19748604606447deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-inner-2",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 2",
+        "position": "absolute",
+        "left": "120.855px",
+        "top": "253.492px",
+        "width": "86.041px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.24246783912332deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-inner-3",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 3",
+        "position": "absolute",
+        "left": "67.436px",
+        "top": "202.033px",
+        "width": "86.795px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-104.79676224505735deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aurea-bridge",
+      "parent": "tile-aurea10",
+      "attrs": {
+        "name": "aurea bridge",
+        "position": "absolute",
+        "left": "151.766px",
+        "top": "194.908px",
+        "width": "139.8px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "103.09189306434686deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "motif-identifier-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "motif identifier 0",
+        "position": "absolute",
+        "left": "75px",
+        "top": "704px",
+        "width": "380px",
+        "height": "auto",
+        "text": "CASETI 385",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "14.04px",
+        "textColor": "#d8d8d8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "motif-identifier-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "motif identifier 1",
+        "position": "absolute",
+        "left": "530px",
+        "top": "704px",
+        "width": "380px",
+        "height": "auto",
+        "text": "PORCELAIN STUDIO",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "14.04px",
+        "textColor": "#d8d8d8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "motif-identifier-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "motif identifier 2",
+        "position": "absolute",
+        "left": "985px",
+        "top": "704px",
+        "width": "380px",
+        "height": "auto",
+        "text": "AUREA10",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "14.04px",
+        "textColor": "#d8d8d8",
+        "paragraphSpacing": 0
+      }
+    }
+  ]
+}
