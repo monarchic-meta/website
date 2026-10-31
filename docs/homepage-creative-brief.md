@@ -60,7 +60,7 @@ should harmonize **immersive information field**, **evolving geometric identity*
 and **editorial research montage**. These are complementary avenues, not an
 exclusive choice; motion can contribute to all three. Reviewable recreations
 come before new originals or hybrid heroes, following the
-bounded first-wave plan. External work,
+[bounded first-wave plan](design-studies/hero-recreations.md). External work,
 recreations and close adaptations remain credited within **Source inspiration**;
 **Original compositions** is reserved for independently composed work.
 

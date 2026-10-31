@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-31",
+  "classification": "Source inspiration",
+  "scope": "Six separate source-led studies; manual Framer authoring and handoff, no production synchronization",
+  "firstWaveReferences": [
+    "HERO-001",
+    "HERO-002",
+    "HERO-003",
+    "HERO-007",
+    "HERO-010",
+    "HERO-013"
+  ],
+  "retainedBacklogReferences": [
+    "HERO-004",
+    "HERO-005",
+    "HERO-006",
+    "HERO-008",
+    "HERO-009",
+    "HERO-011",
+    "HERO-012",
+    "HERO-014",
+    "HERO-015",
+    "HERO-016",
+    "HERO-017",
+    "HERO-018"
+  ],
+  "independentOriginalsAdded": 0,
+  "hybridHeroesAdded": 0,
+  "framer": {
+    "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt",
+    "baseline": {
+      "pages": 27,
+      "codePlacements": 139,
+      "codeSources": 15
+    },
+    "expectedAfterFirstWave": {
+      "pages": 30,
+      "codePlacements": 145,
+      "codeSources": 16
+    },
+    "verifiedAfterFirstWave": {
+      "pages": 30,
+      "codePlacements": 145,
+      "codeSources": 16
+    },
+    "native": {
+      "pageName": "07 / Hero Recreations",
+      "pageID": "H_ibyOQyy",
+      "boardID": "Rpq3XBp9I",
+      "artworkIDs": {
+        "HERO-003": "jYNcbRHFg",
+        "HERO-010": "FGXi0U_xL",
+        "HERO-013": "ARdPpi5ec",
+        "HERO-002": "ihmbR6lQG"
+      },
+      "recipeParts": 798,
+      "editorReloadAndVisualReview": "passed; root verified named native groups, credits and fitted prose",
+      "rootProof": "browser/native-root-proof.json",
+      "evidenceSHA256": {
+        "browser/native-HERO-003-after-reload.png": "a0da9da8bce1d4a77d2284cdb359681f5597221e4055acdfa8c95ba5b4a18292",
+        "browser/native-HERO-010-after-reload.png": "2800fd13f34e46e54f44763af95405fa0a493358bbc9aad7357c81b51e43b5bd",
+        "browser/native-HERO-013-after-reload.png": "d1c6607b0c902e9cc9ee1deda95cf652dd4755ce50f7b11e9e76d1ed05ec9daa",
+        "browser/native-HERO-002-after-reload.png": "6d468984fd44816f94f6f32591f9b32b67c9575e07022bc03d8e5e85dd4550e2",
+        "browser/native-after-reload.dom.txt": "f95d424117d7f966722c45477b0472ec3b1d42969f4ab5910c9b8f0fbf1949c1"
+      },
+      "evidence": [
+        "browser/native-HERO-003-after-reload.png",
+        "browser/native-HERO-010-after-reload.png",
+        "browser/native-HERO-013-after-reload.png",
+        "browser/native-HERO-002-after-reload.png",
+        "browser/native-after-reload.dom.txt"
+      ]
+    },
+    "live": {
+      "status": "saved; independent presets/source/preservation read, editor reload, both Canvas opt-ins and all four Desktop/Phone Preview cases passed",
+      "designPageID": "RVzvNGZNT",
+      "designPageName": "08 / Hero Live Studies",
+      "designBoardID": "U2HV86K9l",
+      "labPageID": "VR2TaJCqa",
+      "labPath": "/prototypes/hero-recreations-lab",
+      "labDesktopID": "aQrE54dw7",
+      "labPhoneID": "H8Zf2szHA",
+      "framerCodePath": "HeroRecreationStudy.tsx",
+      "componentID": "codeFile/B4OuNLk:default",
+      "initialSourceReadbackSHA256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+      "initialSourceReadbackBytes": 307039,
+      "initialCodeDiagnostics": [],
+      "savedSourceSHA256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+      "placements": [
+        {
+          "reference": "HERO-001",
+          "placement": "design",
+          "id": "MTBA7CoHj",
+          "expectedMode": "typeface",
+          "verifiedPreset": true
+        },
+        {
+          "reference": "HERO-007",
+          "placement": "design",
+          "id": "MNCM5qolT",
+          "expectedMode": "cantor",
+          "verifiedPreset": true
+        },
+        {
+          "reference": "HERO-001",
+          "placement": "desktop",
+          "id": "kL3s1UVYq",
+          "expectedMode": "typeface",
+          "verifiedPreset": true
+        },
+        {
+          "reference": "HERO-007",
+          "placement": "desktop",
+          "id": "lVWxjYalC",
+          "expectedMode": "cantor",
+          "verifiedPreset": true
+        },
+        {
+          "reference": "HERO-001",
+          "placement": "phone",
+          "id": "H8Zf2szHAkL3s1UVYq",
+          "expectedMode": "typeface",
+          "verifiedPreset": true
+        },
+        {
+          "reference": "HERO-007",
+          "placement": "phone",
+          "id": "H8Zf2szHAlVWxjYalC",
+          "expectedMode": "cantor",
+          "verifiedPreset": true,
+          "layoutOverrides": {
+            "height": 560
+          },
+          "overrideReadbackVerified": true,
+          "overrideVisualReview": true,
+          "savedScale": 1
+        }
+      ],
+      "designEditorReloadVerification": {
+        "passed": true,
+        "correctModesAndCredits": true,
+        "defaultStillPhase": 2,
+        "evidence": [
+          "browser/live-after-reload.dom.txt",
+          "browser/live-canvas-default.json"
+        ]
+      },
+      "previewVerification": {
+        "status": "passed for both modes at Desktop and Phone",
+        "cases": [
+          {
+            "reference": "HERO-001",
+            "layout": "desktop",
+            "motion": true,
+            "pauseStable": true,
+            "playResumes": true,
+            "evidence": [
+              "browser/preview-desktop-typeface.png",
+              "browser/desktop-head-pause.json"
+            ]
+          },
+          {
+            "reference": "HERO-007",
+            "layout": "desktop",
+            "motion": true,
+            "pauseStable": true,
+            "playResumes": true,
+            "evidence": [
+              "browser/preview-desktop-cantor.png",
+              "browser/desktop-cantor-pause.json"
+            ]
+          },
+          {
+            "reference": "HERO-001",
+            "layout": "phone",
+            "height": 320,
+            "motion": true,
+            "pauseStable": true,
+            "playResumes": true,
+            "creditsClear": true,
+            "evidence": [
+              "browser/preview-phone-typeface.png",
+              "browser/phone-head-pause.json"
+            ]
+          },
+          {
+            "reference": "HERO-007",
+            "layout": "phone",
+            "height": 560,
+            "scale": 1,
+            "motion": true,
+            "pauseStable": true,
+            "playResumes": true,
+            "visualReview": true,
+            "width": 351,
+            "creditsClear": true,
+            "generatedFrame": {
+              "width": 401,
+              "height": 640
+            },
+            "evidence": [
+              "browser/preview-phone-cantor-final.png",
+              "browser/phone-cantor-pause.json",
+              "browser/phone-cantor-final-inspector.dom.txt",
+              "browser/phone-after-final-editor-reload.json",
+              "browser/phone-after-final-editor-reload.png"
+            ]
+          }
+        ],
+        "passed": true
+      },
+      "editorCanvasMotionVerification": {
+        "passed": true,
+        "typefacePhases": [
+          2,
+          5.38
+        ],
+        "cantorPhases": [
+          2,
+          3.82
+        ],
+        "visibleMotion": true,
+        "automaticZoomRefreshLongEdges": [
+          512,
+          768,
+          1024
+        ],
+        "hoverRequiredForRefresh": false,
+        "canvasMotionRestoredFalse": true,
+        "evidence": [
+          "browser/canvas-typeface-motion.json",
+          "browser/canvas-typeface-motion.png",
+          "browser/canvas-cantor-motion.json",
+          "browser/canvas-cantor-motion.png"
+        ]
+      },
+      "rootProof": "browser/live-root-proof.json",
+      "rootProofSHA256": "4c099cad98ad894e917cfe95764c6c34d0d4eb017972bfdb8306cc5a59371394",
+      "evidenceFiles": [
+        {
+          "path": "browser/live-after-reload.dom.txt",
+          "bytes": 30152,
+          "sha256": "b8d8fd39b6a3a53f9088d45e04026a21cb720f9ced05176441787365b0b02bdd"
+        },
+        {
+          "path": "browser/live-canvas-default.json",
+          "bytes": 735,
+          "sha256": "357075441572fe67e1b27798560b62b35bd2294b2201ac0fad615721076fdf38"
+        },
+        {
+          "path": "browser/canvas-typeface-motion.json",
+          "bytes": 760,
+          "sha256": "5caf34bd76e01fd33438fa5caaff479553a0259612175d97e6e1737939c48777"
+        },
+        {
+          "path": "browser/canvas-typeface-motion.png",
+          "bytes": 139205,
+          "sha256": "4173c71ac7cc453edb8f57e1221f89144de7793d1604c5d0a2846a5f0d3790ee"
+        },
+        {
+          "path": "browser/canvas-cantor-motion.json",
+          "bytes": 776,
+          "sha256": "542c83999f16ada4466bbe7cea81a49d1f50ad32e0d0b645711aea3722b5bef0"
+        },
+        {
+          "path": "browser/canvas-cantor-motion.png",
+          "bytes": 102908,
+          "sha256": "0ff1094aab657f9dd934bcb8832b7926b42af38b28465a18a723814eff511c64"
+        },
+        {
+          "path": "browser/preview-desktop-typeface.png",
+          "bytes": 87551,
+          "sha256": "2207e7c144893bb45116ddb3db62392f90656ceeeb6c93ad243a2784e333cf8d"
+        },
+        {
+          "path": "browser/preview-desktop-cantor.png",
+          "bytes": 73966,
+          "sha256": "c9023f2acf671c757fc58af9863b2bcf1806a9d88b178c0ae2d5566baec69550"
+        },
+        {
+          "path": "browser/preview-phone-typeface.png",
+          "bytes": 69026,
+          "sha256": "bcd895505d8d2300199c00a5d8e71524d79241f9eed86acc2a961c91c3ed19e6"
+        },
+        {
+          "path": "browser/preview-phone-cantor-final.png",
+          "bytes": 56569,
+          "sha256": "958f62619685576e276a0153bb528745e9b8379d0ad5c4f28460d174e43cf6ec"
+        },
+        {
+          "path": "browser/desktop-head-pause.json",
+          "bytes": 1577,
+          "sha256": "26c99fe4bbc5255a018431dfcd31542f314c27f5930eba01f3ed739369129eae"
+        },
+        {
+          "path": "browser/desktop-cantor-pause.json",
+          "bytes": 1617,
+          "sha256": "fea563ad8a9e52cdcd43bf480322cdacb686750119b92a583969d1f9b855d4c0"
+        },
+        {
+          "path": "browser/phone-head-pause.json",
+          "bytes": 1599,
+          "sha256": "4b8a0794c7df5df7f409d13c3678bf9bc163c4a32814dfb5e3d2e167d8569158"
+        },
+        {
+          "path": "browser/phone-cantor-pause.json",
+          "bytes": 1595,
+          "sha256": "a4ce8d73509eb6f3c4b4dfe80e388dd993516c131b7a044d055e1213718bdf36"
+        },
+        {
+          "path": "browser/phone-cantor-final-inspector.dom.txt",
+          "bytes": 12046,
+          "sha256": "277dec419b180631f1e139695b52caf800c2be34a5ee658e20357893aeda864b"
+        },
+        {
+          "path": "browser/phone-after-final-editor-reload.json",
+          "bytes": 685,
+          "sha256": "7c64f8bef3745413a386ff052ad04549a054b014f50b787e0fde3943fd787553"
+        },
+        {
+          "path": "browser/phone-after-final-editor-reload.png",
+          "bytes": 54268,
+          "sha256": "ca269fe8df197bb268932f4e4a7c39bbb367c41573e835848e0bcccb4356f028"
+        }
+      ],
+      "verificationScope": "Actual editor/Preview visual and DOM-backed motion, pause/resume, credits, Canvas opt-ins and final Phone layout; pointer/export/thumbnail and resource/restoration checks are separate local/Nix evidence",
+      "knownLimitations": [
+        "Experimental Phone Scale 0.8 persisted in UI/MCP readback but Preview did not show the intended radius change after reload; Scale 1 was restored and final spacing uses layout height. No root cause or successful responsive Scale behavior is claimed."
+      ]
+    },
+    "preservation": {
+      "passed": true,
+      "independentSavedReadPassed": true,
+      "guardCount": 25,
+      "allGuardsPassed": true,
+      "baselineAfterNative": {
+        "pages": 28,
+        "codePlacements": 139,
+        "codeSources": 15
+      },
+      "old28PageHashesAndOrderExact": true,
+      "old139ControlsAndGeometryExact": true,
+      "old15SourceHashesAndSchemasExact": true,
+      "nativePageHashUnchanged": true,
+      "new6CompletePresetsAndBindingsExact": true,
+      "new6CanvasMotionOff": true,
+      "new14ControlSchemaExact": true,
+      "currentExportEnumerated": true,
+      "sourceHashBytesAndRegisteredIdentityExact": true,
+      "entireNewPageHashesMatchAcrossIndependentReads": true,
+      "canvasMotionTotals": {
+        "on": 60,
+        "off": 85
+      },
+      "nativePage": {
+        "id": "H_ibyOQyy",
+        "sha256": "fd00e5095ad5044b46f8fe47fded1d2e49891e44feeba073e5e195161ee165d0"
+      },
+      "livePages": [
+        {
+          "id": "RVzvNGZNT",
+          "name": "08 / Hero Live Studies",
+          "sha256": "a8a5258e635645cd7c150fda584593081a8a6a302b8400b406ee1bc736258b13"
+        },
+        {
+          "id": "VR2TaJCqa",
+          "name": "Hero / Live Studies",
+          "path": "/prototypes/hero-recreations-lab",
+          "draft": true,
+          "sha256": "604c31cf9273fc4e703743326cd0fb59155e2984ae798fa4fc4ac8bd9b06eee1"
+        }
+      ],
+      "proofComposition": {
+        "full": {
+          "rawPath": "mcp/live/first-hero-wave-after-raw.json",
+          "bytes": 130459,
+          "sha256": "001414313e25b487ede221ed0b08a6be59b865f172ee1e55010212d0ad4c5af1",
+          "toolReceipt": "mcp/live/first-final-read-tool-receipt.json"
+        },
+        "focused": {
+          "rawPath": "mcp/live/hero-live-focused-after-raw.json",
+          "bytes": 15715,
+          "sha256": "7724a9f315c8d442e00f62d9e2b88d540389dba98c09152fd0e81631285863b0",
+          "toolReceipt": "mcp/live/focused-final-read-tool-receipt.json"
+        },
+        "scope": "Complete preservation read plus bounded hierarchy/reflection read; both new-page hashes match across independent reads while project/source writes were frozen. Parent relations are derived from nested children; no geometry fields were relaxed."
+      },
+      "finalArtifacts": [
+        {
+          "path": "mcp/hero-wave-final-report.json",
+          "bytes": 22005,
+          "sha256": "5ba90d5f107e366c6e0c53b213fa28e2bfd4ab46e2ca16ccb5f4b687449211ad"
+        },
+        {
+          "path": "mcp/hero-wave-node-map.json",
+          "bytes": 147910,
+          "sha256": "003623545a109da07753d6b28e02386e0db132e36391342cb9f646299c70ef6a"
+        },
+        {
+          "path": "mcp/hero-wave-proof-index.json",
+          "bytes": 23449,
+          "sha256": "0bf94c46818d037a134f77f2d96c12d51887607652cb786ce97ceda6c0607170"
+        },
+        {
+          "path": "mcp/live/hero-wave-after-raw.json",
+          "bytes": 132688,
+          "sha256": "5cbfc6fe304d7e760006ae8a78c5872b9b3b71dcab8fb63ee4fe2da6745b0c73"
+        }
+      ],
+      "proofIndexFiles": 134,
+      "actualBrowserEvidenceFiles": 22
+    }
+  },
+  "nativeAuthoringFiles": [
+    {
+      "path": "native/HERO-003.json",
+      "sha256": "6f3b701e52f079763cfa28976bbbee5c294ff190a05efd8564c41e2b402bc827",
+      "bytes": 134402
+    },
+    {
+      "path": "native/HERO-010.json",
+      "sha256": "dbc893c83c151bda6577658963a679114c24a1c4a54f24f9e9bbe8b9947750f2",
+      "bytes": 39913
+    },
+    {
+      "path": "native/HERO-013.json",
+      "sha256": "b430797e1ca834b1f73f839262b148f614d8f6fca82c0c5e9c0b42d8e1a13ab8",
+      "bytes": 23277
+    },
+    {
+      "path": "native/HERO-002.json",
+      "sha256": "532e8972cc5dfbad03a69b43a118fee7c0c68d3b3b734f3d64bd347911c09c04",
+      "bytes": 111929
+    },
+    {
+      "path": "native/HERO-010-measured-circles.json",
+      "sha256": "b46e862b334a6b90a89e833dce9cfbef145b52419e9c48db31ba626c929c5a60",
+      "bytes": 2727
+    },
+    {
+      "path": "native/layout.json",
+      "sha256": "4ee6b8d26eab09e0ed4c3c52f599a538a23dda286f67b889984ee5ec1c7d7d5b",
+      "bytes": 1492
+    }
+  ],
+  "proceduralSource": {
+    "path": "../code-components/HeroRecreationStudy.tsx",
+    "defaultExport": "HeroRecreationStudy",
+    "sha256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+    "bytes": 307039,
+    "modes": {
+      "typeface": "HERO-001",
+      "cantor": "HERO-007"
+    },
+    "defaults": {
+      "study": "typeface",
+      "canvasMotion": false,
+      "animate": true,
+      "speed": 0.65,
+      "stillTime": 2,
+      "scale": 1,
+      "density": 1,
+      "glyphSize": 1,
+      "motionSpan": 1,
+      "interactive": true,
+      "primary": "#ffffff",
+      "secondary": "#044ab3",
+      "ink": "#000000",
+      "showLabels": true
+    },
+    "headLicense": "../code-components/assets/hero-head-license.txt",
+    "headUpstreamGitBlob": "cff335de726fa518c1ef80f4c8aa540037b2f5b2",
+    "headUpstreamSHA256": "402b8a8ac9f03232e6d64b5962929703a069daf99d3c49ac8eb0e48bedc9c576",
+    "headPackedSHA256": "f1edefb08f58862a763832bff1905820bb8b93181958629290df2707c16eca05",
+    "headAttribution": "Infinite, 3D Head Scan by Lee Perry-Smith; via three.js; CC BY 3.0; documented geometry stand-in, not verified as Stephen Kelman's source mesh",
+    "typefaceLimits": "Substitute geometry, text/font/material; approximate rotation; no assembly or dispersal",
+    "cantorLimits": "Independent curve/wind/pointer approximation; not original spring integrator or timing; static peripheral labels; navigation/CTA chrome omitted from field study"
+  },
+  "localValidation": {
+    "focusedGroups": {
+      "passed": true,
+      "count": 27,
+      "testSHA256": "b1bcea88951d4df2f7c0ffbc15997e1de877770fd4688f49d94c1868987e6fa9",
+      "receipt": "validation/final-port/unit-result.json"
+    },
+    "softwareWebGL": {
+      "passed": true,
+      "cases": 4,
+      "testSHA256": "bcfae62c538247edd767026443cd05c64f47c4fd5fa9b7e35f292ff92a0c7b61",
+      "receipt": "validation/final-port/browser/result.json",
+      "scope": "Actual GLSL/pixels, motion/pointer, deterministic and cross-mode replay, context restoration; not hardware performance or Framer saved state"
+    },
+    "sourceCreditReview": {
+      "result": "GO",
+      "receipt": "validation/final-port/source-credit-review.txt"
+    },
+    "mixedWindowIntegration": {
+      "passed": true,
+      "command": "check:hero-study-integration",
+      "testSHA256": "e6f0a182d4ca15b2e7b97c86e76db3d13d92d080d98279d2e0b042b4fb8bcf97",
+      "hostSHA256": "fe0ba1c7fe081f457332a1ab8a0e9ad052090e7cddd2ef04b3b797d74a6e7a6b",
+      "receipt": "validation/mixed-window/receipt.json",
+      "result": "validation/mixed-window/check-result.json",
+      "resultSHA256": "85018b826dac1850bbb27a6ee89de8d0db379f6fb48d5ef9c5acef84ec4625be",
+      "placementsPerTarget": 66,
+      "targets": [
+        "canvas",
+        "preview"
+      ],
+      "totalPlacementsAcrossRuns": 132,
+      "factories": 6,
+      "zoomDPRViewsPerTarget": 27,
+      "checksPerTarget": 10,
+      "allCardPan": true,
+      "peakContextsIncludingInitialization": 2,
+      "peakContextsByTarget": {
+        "canvas": 1,
+        "preview": 2
+      },
+      "peakGPUOutputSurfacePixels": 1998984,
+      "cleanUnmount": true,
+      "scope": "Bounded shared-window host: adequate source resolution and fresh shader/geometry/pose state; actual pixels and Framer saves verified separately"
+    },
+    "flakeHeroRecreations": {
+      "passed": true,
+      "command": "nix build .#checks.x86_64-linux.hero-recreations --no-link --print-out-paths -L",
+      "exitCode": 0,
+      "output": "/nix/store/j7phq4km68z82ai117y2pn97pr1ca39v-monarchic-website-hero-recreations-0.0.1",
+      "derivation": "/nix/store/6bjf1k8fpiq1rk7liagcg65zllk39ina-monarchic-website-hero-recreations-0.0.1.drv",
+      "flakeSHA256": "3c0eef6b040e068f65d64905e71788d111bda2dd4d0f1f55948efc79aebfb552",
+      "sourceSHA256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+      "browserTestSHA256": "0938b33445005d962b3de43efd1d8c8ee2f8299e175a8edc57d27209fb15442a",
+      "focusedGroups": 27,
+      "mixedPlacements": 132,
+      "softwareWebGLCases": 4,
+      "fontEnvironment": "DejaVu declared through Fontconfig for the hero check only; positive Canvas glyph probe; renderer and artwork thresholds unchanged",
+      "receipt": "validation/nix-fonts/receipt.json",
+      "results": {
+        "focused": "validation/nix-fonts/unit-result.json",
+        "mixed": "validation/nix-fonts/mixed-result.json",
+        "browser": "validation/nix-fonts/browser-result.json"
+      },
+      "resultSHA256": {
+        "focused": "f7ee6240f796eff691690595e406bc85ff06d55a2f4ab733e0d95b77f6951016",
+        "mixed": "85018b826dac1850bbb27a6ee89de8d0db379f6fb48d5ef9c5acef84ec4625be",
+        "browser": "a0d15ca48d4b1f73a44bd65c54e0f268b8d9382b4020250847c980b449d87df6"
+      }
+    }
+  },
+  "artifactRoot": "hero-recreations-2026-10-31",
+  "pending": []
+}

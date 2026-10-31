@@ -24,6 +24,66 @@ The separate [WB-05 / WB-06 solid-brain studies](solid-brain.md) use a credited
 MNI MRI-template triangle mesh for dither and text treatments; their handoff
 records mesh provenance, retained licensing and saved Framer verification.
 
+The separate [hero recreation handoff](../hero-recreation-handoff.md) covers six
+first-wave HERO references: four native studies and the Type Face/Cantor8 modes
+of [HeroRecreationStudy.tsx](HeroRecreationStudy.tsx). These source-led studies
+are separate from the twenty Creative Coding bookmarks and from independently
+composed originals. The handoff distinguishes local code validation from actual
+Framer placement, reload and Preview evidence.
+
+## Hero recreation component
+
+Choose `typeface` for HERO-001's wrapped surface writing or `cantor` for
+HERO-007's bounded filament field. These are credited source-led adaptations:
+the head geometry/text/font are substitutes, rotation is approximate with no
+assembly/dispersal, and Cantor8 uses independently written curve motion with
+static peripheral labels. The visible credits identify Stephen Kelman and
+Cantor8 / website by Artemii Lebedev.
+
+Preview animation defaults on; **Canvas motion defaults off** and only opts the
+editor target into motion. `Animate`, `Speed`, `Still time`, `Motion span` and
+`Pointer` control replay and pose. `Scale`, `Density`, `Type scale` and the color
+controls adjust the appearance. `Labels / credits` defaults on; retain visible
+wrapper attribution when hiding it. Exports/thumbnails stay frozen.
+
+The embedded Lee Perry-Smith head has no runtime model fetch or three.js
+dependency. Its [asset-specific CC BY 3.0 record](assets/hero-head-license.txt)
+retains the exact upstream Git blob, author and quantization/material changes;
+it is not verified as Kelman's source mesh. The writing atlas is a separate
+**1,048,576 texels**, in addition to the shared output-pixel budget. The existing
+shared coordinator still limits contexts, editor/Preview motion and serial
+still refinement.
+
+Run the local checks with the flake environment:
+
+```sh
+nix develop --command pnpm run check:hero-recreation-study
+nix develop --command pnpm run check:hero-study-integration
+nix develop --command pnpm run check:hero-recreation-browser
+```
+
+The focused check covers types, provenance and lifecycle. The integration check
+exercises 66 mixed placements in each Canvas/Preview target across the five
+legacy factories and Hero, including shared resource, resolution and submitted
+shader/pose state. The browser check compiles actual GLSL and checks
+software-WebGL pixels, replay and restoration. The flake's `hero-recreations`
+check groups these three commands.
+It declares DejaVu through Fontconfig for usable Canvas glyphs in the isolated
+Nix browser environment; this does not change the Framer renderer or its
+artwork thresholds.
+Actual Framer reload/Preview evidence is separate in the handoff.
+The first wave is saved and reload verified; both modes pass actual
+Desktop/Phone Preview motion and pause/resume, with separate editor Canvas
+checks. These are still source-led studies; the other twelve hero references
+remain in the backlog.
+
+Regenerate the pinned embedded mesh only when needed with
+`nix develop --command pnpm run build:framer-hero-head`; that package script
+already includes `--write` and validates the upstream blob before changing the
+authoring source.
+
+## Creative Coding component inventory
+
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
 contains LC-01–04; [MaterialCodingStudy.tsx](MaterialCodingStudy.tsx) contains

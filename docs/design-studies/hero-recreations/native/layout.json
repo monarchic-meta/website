@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "scope": "Manual authoring data; not automatic Framer or production synchronization",
+  "pageName": "07 / Hero Recreations",
+  "classification": "Source inspiration",
+  "board": {
+    "width": 4540,
+    "height": 4220,
+    "fill": "#eae6dd"
+  },
+  "cards": {
+    "width": 2160,
+    "height": 1840,
+    "left": [
+      60,
+      2300
+    ],
+    "top": [
+      360,
+      2280
+    ]
+  },
+  "art": {
+    "left": 50,
+    "top": 20,
+    "width": 2060,
+    "height": 1430.5555555555557,
+    "canonicalWidth": 1440,
+    "canonicalHeight": 1000,
+    "scale": 1.4305555555555556,
+    "transformOriginX": "0%",
+    "transformOriginY": "0%"
+  },
+  "order": [
+    "HERO-003",
+    "HERO-010",
+    "HERO-013",
+    "HERO-002"
+  ],
+  "metadata": {
+    "title": {
+      "left": 50,
+      "top": 1480,
+      "fontSize": 56,
+      "lineHeight": 66,
+      "width": 2060
+    },
+    "classification": {
+      "left": 52,
+      "top": 1554,
+      "fontSize": 22,
+      "lineHeight": 30,
+      "width": 2060
+    },
+    "credit": {
+      "left": 52,
+      "top": 1595,
+      "fontSize": 22,
+      "lineHeight": 30,
+      "width": 2060
+    },
+    "sourceLink": {
+      "left": 52,
+      "top": 1635,
+      "fontSize": 24,
+      "lineHeight": 34
+    },
+    "galleryLink": {
+      "left": 540,
+      "top": 1635,
+      "fontSize": 24,
+      "lineHeight": 34
+    },
+    "notes": {
+      "left": 52,
+      "top": 1694,
+      "fontSize": 24,
+      "lineHeight": 34,
+      "width": 2060
+    }
+  }
+}
