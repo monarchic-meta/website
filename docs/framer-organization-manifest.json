@@ -1,0 +1,2054 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-31T23:14:35.383Z",
+  "status": "saved-reload-and-independently-verified",
+  "project": {
+    "id": "V4oBgJHPFpR16fflzUp7",
+    "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt",
+    "branch": "main"
+  },
+  "scope": "Manual Framer organization of existing collections. Stable page IDs, content, credits, source bytes, controls, geometry, page types and draft states are preserved.",
+  "counts": {
+    "pages": 34,
+    "designPages": 11,
+    "webPages": 23,
+    "draftWebPages": 22,
+    "codePlacements": 160,
+    "sourceFiles": 17,
+    "nativeComponentDefinitions": 2,
+    "newDesignFolders": 5,
+    "newDesignReferences": 11,
+    "changedPageNames": 33,
+    "changedWebPaths": 22,
+    "automaticallyRemappedSerializedHrefs": 48,
+    "owningHrefNodes": 42,
+    "virtualTextRuns": 6,
+    "manualHrefWrites": 0,
+    "newPages": 0,
+    "newCodePlacements": 0,
+    "publishOperations": 0
+  },
+  "designFolders": [
+    {
+      "id": "ZWVuon8oP",
+      "name": "Source inspiration",
+      "parent": "designPageEntityRoot",
+      "children": [
+        "NxjyiZroN",
+        "entity-ref-uj_I7x6To",
+        "entity-ref-a_19JJYFC",
+        "entity-ref-bY_Q8AQKP"
+      ]
+    },
+    {
+      "id": "NxjyiZroN",
+      "name": "Heroes",
+      "parent": "ZWVuon8oP",
+      "children": [
+        "sT6EJhxle",
+        "Uk4fMkAh9"
+      ]
+    },
+    {
+      "id": "sT6EJhxle",
+      "name": "Native",
+      "parent": "NxjyiZroN",
+      "children": [
+        "entity-ref-H_ibyOQyy",
+        "entity-ref-tIkB2CJN_",
+        "entity-ref-bS3wbS1E4"
+      ]
+    },
+    {
+      "id": "Uk4fMkAh9",
+      "name": "Live",
+      "parent": "NxjyiZroN",
+      "children": [
+        "entity-ref-RVzvNGZNT",
+        "entity-ref-Q1tIlIqft"
+      ]
+    },
+    {
+      "id": "EEyGxnvBP",
+      "name": "Original compositions",
+      "parent": "designPageEntityRoot",
+      "children": [
+        "entity-ref-sZvxQvQHd",
+        "entity-ref-sLT2tXsB2",
+        "entity-ref-wSe9_qdcJ"
+      ]
+    }
+  ],
+  "webHierarchy": "Route-derived /concepts and /playgrounds prefixes; display labels in the guide describe these route groups.",
+  "pages": {
+    "uj_I7x6To": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To",
+      "classification": "Source inspiration",
+      "purpose": "77 external source links;66 previews/11 link-only;20 source-led live comparison instances embedded beside credited originals.",
+      "before": {
+        "name": "01 / Reference library",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Reference library",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration"
+        ],
+        "folderID": "ZWVuon8oP",
+        "referenceID": "entity-ref-uj_I7x6To"
+      },
+      "storedSHA256": {
+        "before": "247b189c5c2ceaa073ecff64d6a51b064bc0f2c45e7d58ebf891fd33b55c7d09",
+        "after": "5373129e2e619ca07b5ebc3bc8602fa3ecfc70e25d9b1c17b21c151386108d10",
+        "afterWithOnlyDeclaredChangesReversed": "247b189c5c2ceaa073ecff64d6a51b064bc0f2c45e7d58ebf891fd33b55c7d09"
+      }
+    },
+    "a_19JJYFC": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=a_19JJYFC",
+      "classification": "Source inspiration",
+      "purpose": "20 native RE constructions from bookmarked sources.",
+      "before": {
+        "name": "02 / Recreations",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Bookmark recreations",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration"
+        ],
+        "folderID": "ZWVuon8oP",
+        "referenceID": "entity-ref-a_19JJYFC"
+      },
+      "storedSHA256": {
+        "before": "4c24f6b036feb1ed83baf852c7b31e771ee6c739cefcf4c72792d32951a05c11",
+        "after": "1de428ed455cf4150fe5dad0cf2cc095ffc490b71b6f8fb89dbe3b5ba310d77e",
+        "afterWithOnlyDeclaredChangesReversed": "4c24f6b036feb1ed83baf852c7b31e771ee6c739cefcf4c72792d32951a05c11"
+      }
+    },
+    "sZvxQvQHd": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd",
+      "classification": "Original compositions",
+      "purpose": "18 retained MB asset studies and combination playground.",
+      "before": {
+        "name": "03 / Originals",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Graphic elements",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Original compositions"
+        ],
+        "folderID": "EEyGxnvBP",
+        "referenceID": "entity-ref-sZvxQvQHd"
+      },
+      "storedSHA256": {
+        "before": "28e6742e996e2a5d1ef617cf3b7cf41b2a71b28d2b81318cab192c3d02f0412a",
+        "after": "04c38f4a9c67d96141e023e014f5506b1187d51d321b0318840c914bb5599fe4",
+        "afterWithOnlyDeclaredChangesReversed": "28e6742e996e2a5d1ef617cf3b7cf41b2a71b28d2b81318cab192c3d02f0412a"
+      }
+    },
+    "bY_Q8AQKP": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bY_Q8AQKP",
+      "classification": "Source inspiration",
+      "purpose": "20 source-led live LC studies in a visual comparison board.",
+      "before": {
+        "name": "04 / Live Creative Coding",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Creative Coding",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration"
+        ],
+        "folderID": "ZWVuon8oP",
+        "referenceID": "entity-ref-bY_Q8AQKP"
+      },
+      "storedSHA256": {
+        "before": "0ddd76baf09060fe316a15947b680252e29b994ad1e82ab5d97edf6ebd733f31",
+        "after": "103c2500311eb960bec36af4d51fbef0bd79584474e3d86f1e95b5014bb61138",
+        "afterWithOnlyDeclaredChangesReversed": "0ddd76baf09060fe316a15947b680252e29b994ad1e82ab5d97edf6ebd733f31"
+      }
+    },
+    "sLT2tXsB2": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2",
+      "classification": "Original compositions",
+      "purpose": "8 independently composed OL live studies.",
+      "before": {
+        "name": "05 / Original Live Coding",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Live Creative Coding",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Original compositions"
+        ],
+        "folderID": "EEyGxnvBP",
+        "referenceID": "entity-ref-sLT2tXsB2"
+      },
+      "storedSHA256": {
+        "before": "60c5848ccc77ead419788f5c08ecea071cc55f45f08da4ce6b0649ef31e80c92",
+        "after": "d68352c3cf1f92bbb687ac6556bfae5b319b7ab9926f1b195010553a41e27384",
+        "afterWithOnlyDeclaredChangesReversed": "60c5848ccc77ead419788f5c08ecea071cc55f45f08da4ce6b0649ef31e80c92"
+      }
+    },
+    "wSe9_qdcJ": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ",
+      "classification": "Original compositions / owned brand geometry",
+      "purpose": "13 original live treatments of canonical Monarchic logo;39 placements across board/lab.",
+      "before": {
+        "name": "06 / Logo Studies",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "Logo treatments",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Original compositions"
+        ],
+        "folderID": "EEyGxnvBP",
+        "referenceID": "entity-ref-wSe9_qdcJ"
+      },
+      "storedSHA256": {
+        "before": "89c39460dac00598c66eff59ea7f09302ecacdac71bc0f1f789edd9e623b71aa",
+        "after": "c56a22eeeb83ab02a3792da123dfde2fe70c305e771fef6d5195be14b8ee74c3",
+        "afterWithOnlyDeclaredChangesReversed": "89c39460dac00598c66eff59ea7f09302ecacdac71bc0f1f789edd9e623b71aa"
+      }
+    },
+    "H_ibyOQyy": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=H_ibyOQyy",
+      "classification": "Source inspiration",
+      "purpose": "4 native studies HERO-002,003,010,013;798 parts.",
+      "before": {
+        "name": "07 / Hero Recreations",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "01 — Geometry & montage",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration",
+          "Heroes",
+          "Native"
+        ],
+        "folderID": "sT6EJhxle",
+        "referenceID": "entity-ref-H_ibyOQyy"
+      },
+      "storedSHA256": {
+        "before": "fd00e5095ad5044b46f8fe47fded1d2e49891e44feeba073e5e195161ee165d0",
+        "after": "6f8e7f76c1b2afe8075d5b587c670452782a3f6f03f52b888613071de89a8ab5",
+        "afterWithOnlyDeclaredChangesReversed": "fd00e5095ad5044b46f8fe47fded1d2e49891e44feeba073e5e195161ee165d0"
+      }
+    },
+    "RVzvNGZNT": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=RVzvNGZNT",
+      "classification": "Source inspiration",
+      "purpose": "2 source-led modes HERO-001/007.",
+      "before": {
+        "name": "08 / Hero Live Studies",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "01 — Type Face & Cantor8",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration",
+          "Heroes",
+          "Live"
+        ],
+        "folderID": "Uk4fMkAh9",
+        "referenceID": "entity-ref-RVzvNGZNT"
+      },
+      "storedSHA256": {
+        "before": "a8a5258e635645cd7c150fda584593081a8a6a302b8400b406ee1bc736258b13",
+        "after": "cb3a49c420f1871cd82bcb1356267782029ea874affaa7d95467a7c53da7b80f",
+        "afterWithOnlyDeclaredChangesReversed": "a8a5258e635645cd7c150fda584593081a8a6a302b8400b406ee1bc736258b13"
+      }
+    },
+    "tIkB2CJN_": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=tIkB2CJN_",
+      "classification": "Source inspiration",
+      "purpose": "4 native studies HERO-004,005,008,011.",
+      "before": {
+        "name": "09 / Hero Recreations II",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "02 — Type & editorial",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration",
+          "Heroes",
+          "Native"
+        ],
+        "folderID": "sT6EJhxle",
+        "referenceID": "entity-ref-tIkB2CJN_"
+      },
+      "storedSHA256": {
+        "before": "2a2de1a0401c8021971faf840fde21ac43922289f58bbb6d1e4b6acd31c9dbee",
+        "after": "69a353ec5bf7559e1c5c96efc9b9f0e061e9a5e136c931f912af3609fc2c1db6",
+        "afterWithOnlyDeclaredChangesReversed": "2a2de1a0401c8021971faf840fde21ac43922289f58bbb6d1e4b6acd31c9dbee"
+      }
+    },
+    "bS3wbS1E4": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bS3wbS1E4",
+      "classification": "Source inspiration",
+      "purpose": "4 native studies HERO-012,016,017,018.",
+      "before": {
+        "name": "10 / Hero Recreations III",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "03 — Systems & identity",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration",
+          "Heroes",
+          "Native"
+        ],
+        "folderID": "sT6EJhxle",
+        "referenceID": "entity-ref-bS3wbS1E4"
+      },
+      "storedSHA256": {
+        "before": "b3c2bf71f58fb10bc4ad1088a79574a41cc093d3c5a07387dbd3055b2842e257",
+        "after": "022ff325e927652b9e522832fed14719f4da84043befb58670302f8a511746a6",
+        "afterWithOnlyDeclaredChangesReversed": "b3c2bf71f58fb10bc4ad1088a79574a41cc093d3c5a07387dbd3055b2842e257"
+      }
+    },
+    "Q1tIlIqft": {
+      "kind": "Design",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=Q1tIlIqft",
+      "classification": "Source inspiration",
+      "purpose": "5 source-led live modes HERO-006/009/014/015/016 on survivor GmvBhghKw.",
+      "before": {
+        "name": "11 / Hero Mechanisms",
+        "path": null,
+        "draft": null
+      },
+      "current": {
+        "name": "02 — Light, vectors & wireframes",
+        "path": null,
+        "draft": null,
+        "folders": [
+          "Source inspiration",
+          "Heroes",
+          "Live"
+        ],
+        "folderID": "Uk4fMkAh9",
+        "referenceID": "entity-ref-Q1tIlIqft"
+      },
+      "storedSHA256": {
+        "before": "486fbb0b4a8ad84f4a1f6ec2235eb3b01b84ca845f5cd3aed5eae795452532f4",
+        "after": "b2656dd0cef8f03b80bf03dc5cfb35fffc1c4ee4c7889e2e28c1c842437e99ac",
+        "afterWithOnlyDeclaredChangesReversed": "486fbb0b4a8ad84f4a1f6ec2235eb3b01b84ca845f5cd3aed5eae795452532f4"
+      }
+    },
+    "augiA20Il": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=augiA20Il",
+      "classification": "Early homepage concept / System / Spec",
+      "purpose": "Mandatory root Home contains the early01System/Spec full homepage concept, confirmed in the actual editor.",
+      "before": {
+        "name": "Home",
+        "path": "/",
+        "draft": null
+      },
+      "current": {
+        "name": "Home",
+        "path": "/",
+        "draft": null,
+        "folders": []
+      },
+      "storedSHA256": {
+        "before": "592ab7698ef32ff8b07891b14b21d0de23b672be3c28ba1dc261b832d46b4b7f",
+        "after": "592ab7698ef32ff8b07891b14b21d0de23b672be3c28ba1dc261b832d46b4b7f",
+        "afterWithOnlyDeclaredChangesReversed": "592ab7698ef32ff8b07891b14b21d0de23b672be3c28ba1dc261b832d46b4b7f"
+      }
+    },
+    "WJkUf4nHH": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=WJkUf4nHH",
+      "classification": "Monarchic layout concept with retained reference credits",
+      "purpose": "Earlier full-page homepage direction with Desktop1440/Phone390 and real linked actions.",
+      "before": {
+        "name": "02 Signal / Field",
+        "path": "/prototypes/signal-field",
+        "draft": true
+      },
+      "current": {
+        "name": "Signal / Field",
+        "path": "/concepts/homepages/round-1/signal-field",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Round 1"
+        ]
+      },
+      "storedSHA256": {
+        "before": "ac4f1e17b57901f8e82ca07137b4c36d3eecc1acf1ed5038a1ab93760c804026",
+        "after": "aeee7ef6e9f0150bfd60409bdea94078881c65d57c9c304a4b38c862245c3f11",
+        "afterWithOnlyDeclaredChangesReversed": "ac4f1e17b57901f8e82ca07137b4c36d3eecc1acf1ed5038a1ab93760c804026"
+      }
+    },
+    "FNWmJvk0a": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=FNWmJvk0a",
+      "classification": "Monarchic layout concept with retained reference credits",
+      "purpose": "Earlier full-page homepage direction with Desktop1440/Phone390 and real linked actions.",
+      "before": {
+        "name": "03 Research / Edition",
+        "path": "/prototypes/research-edition",
+        "draft": true
+      },
+      "current": {
+        "name": "Research / Edition",
+        "path": "/concepts/homepages/round-1/research-edition",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Round 1"
+        ]
+      },
+      "storedSHA256": {
+        "before": "389b9dd77c907252de2d738b0c12bb4f421db18c2c7ea86477b5316dcb1d28a7",
+        "after": "b112b11821033cdb7d9ed17b30e9c33fdbf267f7016e4b6d3a97531b2bdbab2f",
+        "afterWithOnlyDeclaredChangesReversed": "389b9dd77c907252de2d738b0c12bb4f421db18c2c7ea86477b5316dcb1d28a7"
+      }
+    },
+    "CdGjtAu_e": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=CdGjtAu_e",
+      "classification": "Monarchic layout concept with retained reference credits",
+      "purpose": "Full-page graphic homepage direction with Desktop1440/Phone390, links and distinct sections.",
+      "before": {
+        "name": "04 Cobalt / Relay",
+        "path": "/prototypes/cobalt-relay",
+        "draft": true
+      },
+      "current": {
+        "name": "Cobalt / Relay",
+        "path": "/concepts/homepages/round-2/cobalt-relay",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Round 2"
+        ]
+      },
+      "storedSHA256": {
+        "before": "7be565fb87814fbcf60111d13f4225da4964889186546e9394f164db4c87cae1",
+        "after": "fe067d2f30932ac79ae9081abd210c351bdb0892b50ce4b8ac96e4ac6736b294",
+        "afterWithOnlyDeclaredChangesReversed": "7be565fb87814fbcf60111d13f4225da4964889186546e9394f164db4c87cae1"
+      }
+    },
+    "rERIFDhZ0": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rERIFDhZ0",
+      "classification": "Monarchic layout concept with retained reference credits",
+      "purpose": "Full-page graphic homepage direction with Desktop1440/Phone390, links and distinct sections.",
+      "before": {
+        "name": "05 Interrupt / Poster",
+        "path": "/prototypes/interrupt-poster",
+        "draft": true
+      },
+      "current": {
+        "name": "Interrupt / Poster",
+        "path": "/concepts/homepages/round-2/interrupt-poster",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Round 2"
+        ]
+      },
+      "storedSHA256": {
+        "before": "514556629066239a2ebf91e2ed0ecfb260a42943cdda97acfe0f85c0cc70e2d4",
+        "after": "8bd1effb0db517f216a361d65041130821a0d85b89497102a1f3b9cf9804f0d9",
+        "afterWithOnlyDeclaredChangesReversed": "514556629066239a2ebf91e2ed0ecfb260a42943cdda97acfe0f85c0cc70e2d4"
+      }
+    },
+    "bPKUhgBQB": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bPKUhgBQB",
+      "classification": "Monarchic layout concept with retained reference credits",
+      "purpose": "Full-page graphic homepage direction with Desktop1440/Phone390, links and distinct sections.",
+      "before": {
+        "name": "06 Aperture / Habitat",
+        "path": "/prototypes/aperture-habitat",
+        "draft": true
+      },
+      "current": {
+        "name": "Aperture / Habitat",
+        "path": "/concepts/homepages/round-2/aperture-habitat",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Round 2"
+        ]
+      },
+      "storedSHA256": {
+        "before": "f514efdd8f3ea48ed9bcd5497e20521d5b7d6d26d384a687326c6efb66689d09",
+        "after": "5ed14ded07d45fb7d51b072cf47a43e6588f06caecfba4f3a87c18d4b558498e",
+        "afterWithOnlyDeclaredChangesReversed": "f514efdd8f3ea48ed9bcd5497e20521d5b7d6d26d384a687326c6efb66689d09"
+      }
+    },
+    "NTBtSqs_B": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=NTBtSqs_B",
+      "classification": "Original graphic studies / responsive gallery concept",
+      "purpose": "6 original native graphic studies in a Desktop/Phone gallery; native links to Cobalt.",
+      "before": {
+        "name": "Graphic Studies / Round 02",
+        "path": "/prototypes/graphic-studies",
+        "draft": true
+      },
+      "current": {
+        "name": "Round 02 graphic gallery",
+        "path": "/concepts/graphic-studies/round-02",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Graphic studies"
+        ]
+      },
+      "storedSHA256": {
+        "before": "e3f7af2ef1497f49d16d80979b90dff8a76bf64f1bdea7868380feaa6b346620",
+        "after": "651a366af24a0cc550610d0400556ee18b63458cda8e3c87bff65be161cecb46",
+        "afterWithOnlyDeclaredChangesReversed": "e3f7af2ef1497f49d16d80979b90dff8a76bf64f1bdea7868380feaa6b346620"
+      }
+    },
+    "nubGK6NoO": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nubGK6NoO",
+      "classification": "Original Monarchic homepage concept",
+      "purpose": "Complete homepage journey, responsive layouts, native menu/search/dropdowns and mobile direction behavior; two variants also use live logo material.",
+      "before": {
+        "name": "07 Black Instrument / Homepage",
+        "path": "/prototypes/homepage-black-instrument",
+        "draft": true
+      },
+      "current": {
+        "name": "Black Instrument",
+        "path": "/concepts/homepages/current/black-instrument",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Current directions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "fc795ff9789b7af95633ca4c9fc40f2d285f2a4aa1af8b1ca3aef1e834d7dbfa",
+        "after": "26fd00eeb544a07d897d0efbbd4d05f61931d9a2a1d791658e4e13bf820019bd",
+        "afterWithOnlyDeclaredChangesReversed": "fc795ff9789b7af95633ca4c9fc40f2d285f2a4aa1af8b1ca3aef1e834d7dbfa"
+      }
+    },
+    "X17ccaPKM": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=X17ccaPKM",
+      "classification": "Original Monarchic homepage concept",
+      "purpose": "Complete homepage journey, responsive layouts, native menu/search/dropdowns and mobile direction behavior; two variants also use live logo material.",
+      "before": {
+        "name": "08 Open Edition / Homepage",
+        "path": "/prototypes/homepage-open-edition",
+        "draft": true
+      },
+      "current": {
+        "name": "Open Edition",
+        "path": "/concepts/homepages/current/open-edition",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Current directions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "0da01ba5e99a39b01dfb6c294b38471bbb70f81153d1e26802e6494a80f25e33",
+        "after": "112790f669f965a4719bb52f2d2167db078a138a40647b1eb25ef1fda99ba80e",
+        "afterWithOnlyDeclaredChangesReversed": "0da01ba5e99a39b01dfb6c294b38471bbb70f81153d1e26802e6494a80f25e33"
+      }
+    },
+    "SNk2HAKFL": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SNk2HAKFL",
+      "classification": "Original Monarchic homepage concept",
+      "purpose": "Complete homepage journey, responsive layouts, native menu/search/dropdowns and mobile direction behavior; two variants also use live logo material.",
+      "before": {
+        "name": "Homepage / Signal Loom",
+        "path": "/prototypes/homepage-signal-loom",
+        "draft": true
+      },
+      "current": {
+        "name": "Signal Loom",
+        "path": "/concepts/homepages/current/signal-loom",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Current directions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "e806c2de34e7a77fa590005acd346e33f2848d87d09efd4e2ecf7b14e540d5da",
+        "after": "e3ff27dc56fad89ef6d0494700538fd8e889fb1fac547a86aabc1c682ad88548",
+        "afterWithOnlyDeclaredChangesReversed": "e806c2de34e7a77fa590005acd346e33f2848d87d09efd4e2ecf7b14e540d5da"
+      }
+    },
+    "C7aTYd2hC": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=C7aTYd2hC",
+      "classification": "Original Monarchic homepage concept",
+      "purpose": "Complete homepage journey, responsive layouts, native menu/search/dropdowns and mobile direction behavior; two variants also use live logo material.",
+      "before": {
+        "name": "Homepage / Vermilion Index",
+        "path": "/prototypes/homepage-vermilion-index",
+        "draft": true
+      },
+      "current": {
+        "name": "Vermilion Index",
+        "path": "/concepts/homepages/current/vermilion-index",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Current directions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "6ddcbb1f7cf8fd7de937717f6acb181d13b462e1522d38a3ff2da3b80cebdb90",
+        "after": "6770f7f9427b12f12e582394d027947a5d8e39a01daa12b35f8bfc98fc3bfc19",
+        "afterWithOnlyDeclaredChangesReversed": "6ddcbb1f7cf8fd7de937717f6acb181d13b462e1522d38a3ff2da3b80cebdb90"
+      }
+    },
+    "TkoZR4uk2": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=TkoZR4uk2",
+      "classification": "Original Monarchic homepage concept",
+      "purpose": "Complete homepage journey, responsive layouts, native menu/search/dropdowns and mobile direction behavior; two variants also use live logo material.",
+      "before": {
+        "name": "Homepage / Cold Archive",
+        "path": "/prototypes/homepage-cold-archive",
+        "draft": true
+      },
+      "current": {
+        "name": "Cold Archive",
+        "path": "/concepts/homepages/current/cold-archive",
+        "draft": true,
+        "folders": [
+          "Concepts",
+          "Homepages",
+          "Current directions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "6e4f37ae282bbb5b172a8a22595e56c10fd03746e2270193be6123dee97ac6e2",
+        "after": "cfde5369eb8c22a9829e68521e891bac9ec2385210c7dfaa2cc8a2eb18ae7def",
+        "afterWithOnlyDeclaredChangesReversed": "6e4f37ae282bbb5b172a8a22595e56c10fd03746e2270193be6123dee97ac6e2"
+      }
+    },
+    "SqfboNSM6": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SqfboNSM6",
+      "classification": "Source inspiration",
+      "purpose": "20 LC source-led renderer specimens; documented1200px Desktop lab.",
+      "before": {
+        "name": "Creative Coding / live lab",
+        "path": "/prototypes/creative-coding-lab",
+        "draft": true
+      },
+      "current": {
+        "name": "Creative coding",
+        "path": "/playgrounds/source-inspiration/creative-coding",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Source inspiration"
+        ]
+      },
+      "storedSHA256": {
+        "before": "3c94cd19fcabfb28ee17dc83658f642d80fc43f7c70fb2751e3822d036c7f14f",
+        "after": "16a799666b9cc962c8c22953972dece17c16a448ab40f1bfec3d914cba829c8e",
+        "afterWithOnlyDeclaredChangesReversed": "3c94cd19fcabfb28ee17dc83658f642d80fc43f7c70fb2751e3822d036c7f14f"
+      }
+    },
+    "N5Uh3X9KH": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=N5Uh3X9KH",
+      "classification": "Original compositions",
+      "purpose": "8 OL originals with Desktop1200 and inherited Phone390.",
+      "before": {
+        "name": "Original Live Coding / live lab",
+        "path": "/prototypes/original-coding-lab",
+        "draft": true
+      },
+      "current": {
+        "name": "Creative coding",
+        "path": "/playgrounds/original-compositions/creative-coding",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Original compositions"
+        ]
+      },
+      "storedSHA256": {
+        "before": "ed56eb7fb4ed7f7192495fce45ba38fee9dca7c85c2c0a99d47772b0b40ec522",
+        "after": "1c13498959df0d849af6445e37975f9fda6491367f6c71b88213cf37a7074cd4",
+        "afterWithOnlyDeclaredChangesReversed": "ed56eb7fb4ed7f7192495fce45ba38fee9dca7c85c2c0a99d47772b0b40ec522"
+      }
+    },
+    "XFbUB39EK": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XFbUB39EK",
+      "classification": "Original compositions / owned brand geometry",
+      "purpose": "13 logo treatments with Desktop1200/inherited Phone390.",
+      "before": {
+        "name": "Logo Studies / live lab",
+        "path": "/prototypes/logo-studies",
+        "draft": true
+      },
+      "current": {
+        "name": "Logo treatments",
+        "path": "/playgrounds/monarchic-graphics/logo-treatments",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics"
+        ]
+      },
+      "storedSHA256": {
+        "before": "28c324e4bf6779e3c3a529ac6895473244997a3b25c37701f961046abf09b0fb",
+        "after": "2bdbb70a0cbb77a9fb92b026e1a78312da1bda82bf3e3d716a0555ca14a648f5",
+        "afterWithOnlyDeclaredChangesReversed": "28c324e4bf6779e3c3a529ac6895473244997a3b25c37701f961046abf09b0fb"
+      }
+    },
+    "nDuZgzAIZ": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nDuZgzAIZ",
+      "classification": "Manual port / owned website reference",
+      "purpose": "WB-01: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Field",
+        "path": "/prototypes/website-brain",
+        "draft": true
+      },
+      "current": {
+        "name": "Website fiber field",
+        "path": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "ba2e7960d9531be7d26659ab415dad2aee4a28933887debe0ba6b9599c19a7c0",
+        "after": "d48080025374379dd336a2d01905f1e1b5f1003c3d06c790c2f98f7d6f03e65c",
+        "afterWithOnlyDeclaredChangesReversed": "ba2e7960d9531be7d26659ab415dad2aee4a28933887debe0ba6b9599c19a7c0"
+      }
+    },
+    "qawbJ_Hpc": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qawbJ_Hpc",
+      "classification": "Website-derived material variant",
+      "purpose": "WB-02: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Dither",
+        "path": "/prototypes/website-brain-dither",
+        "draft": true
+      },
+      "current": {
+        "name": "Ordered dither",
+        "path": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "9344fdf6b53ae8722912a7b5f77d257fec4891a17979ed78f9e24e8ee7653993",
+        "after": "5528509da6cab1fabf6d28489e2de74246a06a64bb0e85f39a46e98e828ff30c",
+        "afterWithOnlyDeclaredChangesReversed": "9344fdf6b53ae8722912a7b5f77d257fec4891a17979ed78f9e24e8ee7653993"
+      }
+    },
+    "Dau8jUKIN": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=Dau8jUKIN",
+      "classification": "Website-derived material variant",
+      "purpose": "WB-03: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Text",
+        "path": "/prototypes/website-brain-text",
+        "draft": true
+      },
+      "current": {
+        "name": "Text dither",
+        "path": "/playgrounds/monarchic-graphics/brain/text-dither",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "c5deb9af7462e0f3f0334be49f9105f88f65207afa559eaaab86bed6131c290e",
+        "after": "cbbc6cbc337cf1af70cd9142ae54b7ff9bade92599681b2fb83ba1f3ad48af81",
+        "afterWithOnlyDeclaredChangesReversed": "c5deb9af7462e0f3f0334be49f9105f88f65207afa559eaaab86bed6131c290e"
+      }
+    },
+    "HQL8UQ3La": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=HQL8UQ3La",
+      "classification": "Website-derived geometry/material refinement",
+      "purpose": "WB-04: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Fibers",
+        "path": "/prototypes/website-brain-fibers",
+        "draft": true
+      },
+      "current": {
+        "name": "Refined fibers",
+        "path": "/playgrounds/monarchic-graphics/brain/refined-fibers",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "46972b028a298c8f2c1a8a6f1604fa5e1ad8f2aeb2d754cb8a8dd797605f57e5",
+        "after": "a104d308ec21341c9c549c9cc2bf2c1ba9a1bb63a2f153515b98c3973570d278",
+        "afterWithOnlyDeclaredChangesReversed": "46972b028a298c8f2c1a8a6f1604fa5e1ad8f2aeb2d754cb8a8dd797605f57e5"
+      }
+    },
+    "fRamy0U53": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=fRamy0U53",
+      "classification": "Source inspiration / credited MNI MRI-template surface",
+      "purpose": "WB-05: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Surface Dither",
+        "path": "/prototypes/brain-surface-dither",
+        "draft": true
+      },
+      "current": {
+        "name": "Solid anatomy — Dither",
+        "path": "/playgrounds/monarchic-graphics/brain/solid-dither",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "5b9c39fd5b3733a2711f804bb22550b830a1c7194a0b5a1661a1d7f6a3d10156",
+        "after": "824f3bdb5b346dc18e936ed52a788893b54711934348850c5923246aa6e3e951",
+        "afterWithOnlyDeclaredChangesReversed": "5b9c39fd5b3733a2711f804bb22550b830a1c7194a0b5a1661a1d7f6a3d10156"
+      }
+    },
+    "Co5wpXpOb": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=Co5wpXpOb",
+      "classification": "Source inspiration / credited MNI MRI-template surface",
+      "purpose": "WB-06: separate Desktop/Phone anatomy specimen, native provenance/control labels and real inspection/trace/keyboard behavior.",
+      "before": {
+        "name": "Website / Brain Surface Text",
+        "path": "/prototypes/brain-surface-text",
+        "draft": true
+      },
+      "current": {
+        "name": "Solid anatomy — Text",
+        "path": "/playgrounds/monarchic-graphics/brain/solid-text",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Monarchic graphics",
+          "Brain"
+        ]
+      },
+      "storedSHA256": {
+        "before": "e26a313b7975a29156c329d95cea695e297ba9f5ab4edb3e66c624ad603a6ed1",
+        "after": "5aed0da09d14dfc733ac59d4c7ac9e7da30eebeebd575b29e5c30439aacefe2d",
+        "afterWithOnlyDeclaredChangesReversed": "e26a313b7975a29156c329d95cea695e297ba9f5ab4edb3e66c624ad603a6ed1"
+      }
+    },
+    "VR2TaJCqa": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VR2TaJCqa",
+      "classification": "Source inspiration",
+      "purpose": "HERO-001/007 Desktop/Phone live counterparts.",
+      "before": {
+        "name": "Hero / Live Studies",
+        "path": "/prototypes/hero-recreations-lab",
+        "draft": true
+      },
+      "current": {
+        "name": "Surface writing & filaments",
+        "path": "/playgrounds/source-inspiration/heroes/surface-writing-filaments",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Source inspiration",
+          "Heroes"
+        ]
+      },
+      "storedSHA256": {
+        "before": "604c31cf9273fc4e703743326cd0fb59155e2984ae798fa4fc4ac8bd9b06eee1",
+        "after": "8392734c68e95a8f01119d61c89db4c2c5a9723d7b2a6fdc0643e7b08bd1d87e",
+        "afterWithOnlyDeclaredChangesReversed": "604c31cf9273fc4e703743326cd0fb59155e2984ae798fa4fc4ac8bd9b06eee1"
+      }
+    },
+    "iUjJa5763": {
+      "kind": "Web",
+      "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=iUjJa5763",
+      "classification": "Source inspiration",
+      "purpose": "HERO-006/009/014/015/016 Desktop/Phone live counterparts.",
+      "before": {
+        "name": "Hero / Further Live Studies",
+        "path": "/prototypes/hero-mechanisms-lab",
+        "draft": true
+      },
+      "current": {
+        "name": "Light, vectors & wireframes",
+        "path": "/playgrounds/source-inspiration/heroes/light-vectors-wireframes",
+        "draft": true,
+        "folders": [
+          "Playgrounds",
+          "Source inspiration",
+          "Heroes"
+        ]
+      },
+      "storedSHA256": {
+        "before": "70ba837b55bc7be056ee38acbd0c41a3ef817975785a023ebe7526c5d27ec6f4",
+        "after": "a024b3856fa4b346b1e5317a84fa506e9a67de1f9bc627b7bd89f1c6118a9b83",
+        "afterWithOnlyDeclaredChangesReversed": "70ba837b55bc7be056ee38acbd0c41a3ef817975785a023ebe7526c5d27ec6f4"
+      }
+    }
+  },
+  "routeMigrations": {
+    "/prototypes/signal-field": {
+      "pageID": "WJkUf4nHH",
+      "path": "/concepts/homepages/round-1/signal-field"
+    },
+    "/prototypes/research-edition": {
+      "pageID": "FNWmJvk0a",
+      "path": "/concepts/homepages/round-1/research-edition"
+    },
+    "/prototypes/cobalt-relay": {
+      "pageID": "CdGjtAu_e",
+      "path": "/concepts/homepages/round-2/cobalt-relay"
+    },
+    "/prototypes/interrupt-poster": {
+      "pageID": "rERIFDhZ0",
+      "path": "/concepts/homepages/round-2/interrupt-poster"
+    },
+    "/prototypes/aperture-habitat": {
+      "pageID": "bPKUhgBQB",
+      "path": "/concepts/homepages/round-2/aperture-habitat"
+    },
+    "/prototypes/graphic-studies": {
+      "pageID": "NTBtSqs_B",
+      "path": "/concepts/graphic-studies/round-02"
+    },
+    "/prototypes/homepage-black-instrument": {
+      "pageID": "nubGK6NoO",
+      "path": "/concepts/homepages/current/black-instrument"
+    },
+    "/prototypes/homepage-open-edition": {
+      "pageID": "X17ccaPKM",
+      "path": "/concepts/homepages/current/open-edition"
+    },
+    "/prototypes/homepage-signal-loom": {
+      "pageID": "SNk2HAKFL",
+      "path": "/concepts/homepages/current/signal-loom"
+    },
+    "/prototypes/homepage-vermilion-index": {
+      "pageID": "C7aTYd2hC",
+      "path": "/concepts/homepages/current/vermilion-index"
+    },
+    "/prototypes/homepage-cold-archive": {
+      "pageID": "TkoZR4uk2",
+      "path": "/concepts/homepages/current/cold-archive"
+    },
+    "/prototypes/creative-coding-lab": {
+      "pageID": "SqfboNSM6",
+      "path": "/playgrounds/source-inspiration/creative-coding"
+    },
+    "/prototypes/original-coding-lab": {
+      "pageID": "N5Uh3X9KH",
+      "path": "/playgrounds/original-compositions/creative-coding"
+    },
+    "/prototypes/logo-studies": {
+      "pageID": "XFbUB39EK",
+      "path": "/playgrounds/monarchic-graphics/logo-treatments"
+    },
+    "/prototypes/website-brain": {
+      "pageID": "nDuZgzAIZ",
+      "path": "/playgrounds/monarchic-graphics/brain/website-fiber-field"
+    },
+    "/prototypes/website-brain-dither": {
+      "pageID": "qawbJ_Hpc",
+      "path": "/playgrounds/monarchic-graphics/brain/ordered-dither"
+    },
+    "/prototypes/website-brain-text": {
+      "pageID": "Dau8jUKIN",
+      "path": "/playgrounds/monarchic-graphics/brain/text-dither"
+    },
+    "/prototypes/website-brain-fibers": {
+      "pageID": "HQL8UQ3La",
+      "path": "/playgrounds/monarchic-graphics/brain/refined-fibers"
+    },
+    "/prototypes/brain-surface-dither": {
+      "pageID": "fRamy0U53",
+      "path": "/playgrounds/monarchic-graphics/brain/solid-dither"
+    },
+    "/prototypes/brain-surface-text": {
+      "pageID": "Co5wpXpOb",
+      "path": "/playgrounds/monarchic-graphics/brain/solid-text"
+    },
+    "/prototypes/hero-recreations-lab": {
+      "pageID": "VR2TaJCqa",
+      "path": "/playgrounds/source-inspiration/heroes/surface-writing-filaments"
+    },
+    "/prototypes/hero-mechanisms-lab": {
+      "pageID": "iUjJa5763",
+      "path": "/playgrounds/source-inspiration/heroes/light-vectors-wireframes"
+    }
+  },
+  "hrefMigrations": [
+    {
+      "nodeID": "oUamc6NOT",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/signal-field",
+      "after": "/concepts/homepages/round-1/signal-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:oUamc6NOT:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/signal-field",
+      "after": "/concepts/homepages/round-1/signal-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "joSKKthYF",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/research-edition",
+      "after": "/concepts/homepages/round-1/research-edition",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:joSKKthYF:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/research-edition",
+      "after": "/concepts/homepages/round-1/research-edition",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "amxX_EwEW",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/cobalt-relay",
+      "after": "/concepts/homepages/round-2/cobalt-relay",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:amxX_EwEW:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/cobalt-relay",
+      "after": "/concepts/homepages/round-2/cobalt-relay",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "cFEInkbJ8oUamc6NOT",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/signal-field",
+      "after": "/concepts/homepages/round-1/signal-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:cFEInkbJ8oUamc6NOT:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/signal-field",
+      "after": "/concepts/homepages/round-1/signal-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "cFEInkbJ8joSKKthYF",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/research-edition",
+      "after": "/concepts/homepages/round-1/research-edition",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:cFEInkbJ8joSKKthYF:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/research-edition",
+      "after": "/concepts/homepages/round-1/research-edition",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "cFEInkbJ8amxX_EwEW",
+      "pageID": "NTBtSqs_B",
+      "type": "native",
+      "before": "/prototypes/cobalt-relay",
+      "after": "/concepts/homepages/round-2/cobalt-relay",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "v:cFEInkbJ8amxX_EwEW:0:0",
+      "pageID": "NTBtSqs_B",
+      "type": "virtual",
+      "before": "/prototypes/cobalt-relay",
+      "after": "/concepts/homepages/round-2/cobalt-relay",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Dzdk8UARM",
+      "pageID": "SNk2HAKFL",
+      "type": "native",
+      "before": "/prototypes/homepage-signal-loom#solutions",
+      "after": "/concepts/homepages/current/signal-loom#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "bEHwJs3d2Dzdk8UARM",
+      "pageID": "SNk2HAKFL",
+      "type": "native",
+      "before": "/prototypes/homepage-signal-loom#solutions",
+      "after": "/concepts/homepages/current/signal-loom#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "neGECQRI8",
+      "pageID": "C7aTYd2hC",
+      "type": "native",
+      "before": "/prototypes/homepage-vermilion-index#solutions",
+      "after": "/concepts/homepages/current/vermilion-index#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "x4NPov8shneGECQRI8",
+      "pageID": "C7aTYd2hC",
+      "type": "native",
+      "before": "/prototypes/homepage-vermilion-index#solutions",
+      "after": "/concepts/homepages/current/vermilion-index#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "AKwK4GSOi",
+      "pageID": "TkoZR4uk2",
+      "type": "native",
+      "before": "/prototypes/homepage-cold-archive#solutions",
+      "after": "/concepts/homepages/current/cold-archive#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "nmvv0vCT_AKwK4GSOi",
+      "pageID": "TkoZR4uk2",
+      "type": "native",
+      "before": "/prototypes/homepage-cold-archive#solutions",
+      "after": "/concepts/homepages/current/cold-archive#solutions",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "pFxGOKhLg",
+      "pageID": "qawbJ_Hpc",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "M9g5nW9NmpFxGOKhLg",
+      "pageID": "qawbJ_Hpc",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "j1uKKpJHB",
+      "pageID": "Dau8jUKIN",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P6pXmtYxS",
+      "pageID": "Dau8jUKIN",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "ig02Ok4Puj1uKKpJHB",
+      "pageID": "Dau8jUKIN",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "ig02Ok4PuP6pXmtYxS",
+      "pageID": "Dau8jUKIN",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "WE8YD7Qyx",
+      "pageID": "HQL8UQ3La",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "oxf76yX44",
+      "pageID": "HQL8UQ3La",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "FWFjf3wmfWE8YD7Qyx",
+      "pageID": "HQL8UQ3La",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "FWFjf3wmfoxf76yX44",
+      "pageID": "HQL8UQ3La",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "bTiFZuQBS",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/brain-surface-text",
+      "after": "/playgrounds/monarchic-graphics/brain/solid-text",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "bTUaH417k",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "lOMkrpWZ9",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "vEKobrgzv",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-text",
+      "after": "/playgrounds/monarchic-graphics/brain/text-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "E6NsbpRe0",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-fibers",
+      "after": "/playgrounds/monarchic-graphics/brain/refined-fibers",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Iirn1z2LEbTiFZuQBS",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/brain-surface-text",
+      "after": "/playgrounds/monarchic-graphics/brain/solid-text",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Iirn1z2LEbTUaH417k",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Iirn1z2LElOMkrpWZ9",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Iirn1z2LEvEKobrgzv",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-text",
+      "after": "/playgrounds/monarchic-graphics/brain/text-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "Iirn1z2LEE6NsbpRe0",
+      "pageID": "fRamy0U53",
+      "type": "native",
+      "before": "/prototypes/website-brain-fibers",
+      "after": "/playgrounds/monarchic-graphics/brain/refined-fibers",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "nAauyKwTC",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/brain-surface-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/solid-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "NY8T8hgB1",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "TOBeBv9yD",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "J6EsKwN0w",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-text",
+      "after": "/playgrounds/monarchic-graphics/brain/text-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "tonG84Y3D",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-fibers",
+      "after": "/playgrounds/monarchic-graphics/brain/refined-fibers",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P2KOmYOF5nAauyKwTC",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/brain-surface-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/solid-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P2KOmYOF5NY8T8hgB1",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain",
+      "after": "/playgrounds/monarchic-graphics/brain/website-fiber-field",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P2KOmYOF5TOBeBv9yD",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-dither",
+      "after": "/playgrounds/monarchic-graphics/brain/ordered-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P2KOmYOF5J6EsKwN0w",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-text",
+      "after": "/playgrounds/monarchic-graphics/brain/text-dither",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    },
+    {
+      "nodeID": "P2KOmYOF5tonG84Y3D",
+      "pageID": "Co5wpXpOb",
+      "type": "native",
+      "before": "/prototypes/website-brain-fibers",
+      "after": "/playgrounds/monarchic-graphics/brain/refined-fibers",
+      "otherAttributesPreserved": true,
+      "mechanism": "automatic Framer page-route remapping"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "CreativeCodingStudy.tsx",
+      "bytes": 61292,
+      "sha256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+      "exports": [
+        {
+          "id": "codeFile/bPPSvaB:default",
+          "displayName": "CreativeCodingStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "MaterialCodingStudy.tsx",
+      "bytes": 60763,
+      "sha256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+      "exports": [
+        {
+          "id": "codeFile/Ji_GDIq:default",
+          "displayName": "MaterialCodingStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "PointCodingStudy.tsx",
+      "bytes": 56931,
+      "sha256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+      "exports": [
+        {
+          "id": "codeFile/S1i4MTA:default",
+          "displayName": "PointCodingStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "FieldCodingStudy.tsx",
+      "bytes": 60624,
+      "sha256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+      "exports": [
+        {
+          "id": "codeFile/Ym8lrvp:default",
+          "displayName": "FieldCodingStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "InterfaceCodingStudy.tsx",
+      "bytes": 68302,
+      "sha256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+      "exports": [
+        {
+          "id": "codeFile/a_E7nAD:default",
+          "displayName": "InterfaceCodingStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "OriginalSignalStudy.tsx",
+      "bytes": 64578,
+      "sha256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+      "exports": [
+        {
+          "id": "codeFile/XOna2aN:default",
+          "displayName": "OriginalSignalStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "OriginalFormStudy.tsx",
+      "bytes": 66419,
+      "sha256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+      "exports": [
+        {
+          "id": "codeFile/mVHoAUI:default",
+          "displayName": "OriginalFormStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "LogoStudy.tsx",
+      "bytes": 74720,
+      "sha256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf",
+      "exports": [
+        {
+          "id": "codeFile/FnUd3RS:default",
+          "displayName": "LogoStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "LogoDropStudy.tsx",
+      "bytes": 19208,
+      "sha256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+      "exports": [
+        {
+          "id": "codeFile/EiaZX5C:default",
+          "displayName": "LogoDropStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "HomepageNavigationInteractions.tsx",
+      "bytes": 18454,
+      "sha256": "38cbc56d5a0bb5f1124f9fe1084d99c62f04d6e241b60e5ea4648479b4b7c190",
+      "exports": [
+        {
+          "id": "codeFile/do719OQ:withHomepageNavigation",
+          "displayName": "withHomepageNavigation",
+          "type": "override"
+        }
+      ]
+    },
+    {
+      "path": "WebsiteBrain.tsx",
+      "bytes": 290054,
+      "sha256": "922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1",
+      "exports": [
+        {
+          "id": "codeFile/i6kAFWm:default",
+          "displayName": "WebsiteBrain",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "WebsiteBrainDither.tsx",
+      "bytes": 297075,
+      "sha256": "b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2",
+      "exports": [
+        {
+          "id": "codeFile/L42LjLE:default",
+          "displayName": "WebsiteBrainDither",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "WebsiteBrainText.tsx",
+      "bytes": 298454,
+      "sha256": "f8d78914a801206f6bdff76c0ae0de616fc6eb962ff2154a46fd8dcc1894b53f",
+      "exports": [
+        {
+          "id": "codeFile/G9StD6P:default",
+          "displayName": "WebsiteBrainText",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "WebsiteBrainFibers.tsx",
+      "bytes": 297884,
+      "sha256": "bb3d4b53a6fdc5df94b59b248ca803c85405d699994fdae2c6e0c741dc7a7732",
+      "exports": [
+        {
+          "id": "codeFile/lJO8KgE:default",
+          "displayName": "WebsiteBrainFibers",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "SolidBrainStudy.tsx",
+      "bytes": 797649,
+      "sha256": "c49251207b700decc5e6e10244a8a24479ca3713c388b6f262dad09c054d8374",
+      "exports": [
+        {
+          "id": "codeFile/iamvsi4:default",
+          "displayName": "SolidBrainStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "HeroRecreationStudy.tsx",
+      "bytes": 307039,
+      "sha256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+      "exports": [
+        {
+          "id": "codeFile/B4OuNLk:default",
+          "displayName": "HeroRecreationStudy",
+          "type": "component"
+        }
+      ]
+    },
+    {
+      "path": "HeroMechanismStudy.tsx",
+      "bytes": 768604,
+      "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+      "exports": [
+        {
+          "id": "codeFile/FuDaCpX:default",
+          "displayName": "HeroMechanismStudy",
+          "type": "component"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "remote": {
+      "passed": true,
+      "checks": {
+        "main": true,
+        "exact34Pages": true,
+        "all34StoredPageHashesExactAfterOnlyDeclaredMetaHrefReversal": true,
+        "all33Names22Paths48HrefsExact": true,
+        "exact17Sources": true,
+        "all17SourceSHABytesExact": true,
+        "all17RegisteredIdentities": true,
+        "all16ComponentSchemasExact": true,
+        "exact160IDsAndControls": true,
+        "canvas60True100False": true,
+        "allRetiredAndDuplicateNodesAbsent": true
+      }
+    },
+    "independent": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "Authoritative34page/33name/22route policy",
+          "passed": true
+        },
+        {
+          "name": "Joined main and same project",
+          "passed": true
+        },
+        {
+          "name": "Exactly34existing page IDs and types; no conversions",
+          "passed": true
+        },
+        {
+          "name": "Exact planned names/routes; draft flags and physical page parents preserved",
+          "passed": true
+        },
+        {
+          "name": "Home name/path/full stored body unchanged",
+          "passed": true
+        },
+        {
+          "name": "Exact48serialized href rows/12targets allowlist",
+          "passed": true
+        },
+        {
+          "name": "All2365link-bearing nodes retained; only48exact href changes",
+          "passed": true
+        },
+        {
+          "name": "All six solutions fragments and all other link attributes preserved",
+          "passed": true
+        },
+        {
+          "name": "Actual catalog has exactly the original17source paths",
+          "passed": true
+        },
+        {
+          "name": "Exactly17source paths/bytes/SHA and16component schemas preserved",
+          "passed": true
+        },
+        {
+          "name": "Exact registered identities or explicit empty-reflection fallback",
+          "passed": true
+        },
+        {
+          "name": "All160full captured controls/geometry/parents/names/bindings exact",
+          "passed": true
+        },
+        {
+          "name": "Canvas60on100off; no playback opt-in changes",
+          "passed": true
+        },
+        {
+          "name": "Two native component definitions and ten overrides unchanged",
+          "passed": true
+        },
+        {
+          "name": "All12retired/duplicate node IDs remain absent",
+          "passed": true
+        },
+        {
+          "name": "All other captured root-child metadata/order retained",
+          "passed": true
+        },
+        {
+          "name": "No other global model/asset/style node count changes",
+          "passed": true
+        },
+        {
+          "name": "All12preexisting folder records preserved except Design root children",
+          "passed": true
+        },
+        {
+          "name": "Exactly five new Design folders with declared ancestry/names",
+          "passed": true
+        },
+        {
+          "name": "All35existing asset/style reference records unchanged",
+          "passed": true
+        },
+        {
+          "name": "Exactly11new references; each old Design page belongs once to planned folder",
+          "passed": true
+        },
+        {
+          "name": "Exact declared Design folder contents; no extra children",
+          "passed": true
+        },
+        {
+          "name": "All34full final serialized page trees supplied",
+          "passed": true
+        },
+        {
+          "name": "All34full page bodies preserve every other stored attribute exactly",
+          "passed": true
+        },
+        {
+          "name": "Normalization touches exactly33names22paths48hrefs and nothing else",
+          "passed": true
+        }
+      ],
+      "normalization": {
+        "pageNames": 33,
+        "pagePaths": 22,
+        "hrefRows": 48
+      },
+      "limitations": [
+        "The before inventory did not retain global asset/style values or binary asset hashes. This checks page asset references/bodies, native component bodies, and existing asset-folder/reference structure/counts; it cannot independently prove all unreferenced asset values/bytes unchanged.",
+        "The approved plan specifies new folder ancestry and memberships, but not a concrete sibling ordering. Actual new-folder child order is recorded; all old asset-folder child order remains exact.",
+        "RouteSegmentNode count/topology can change as a consequence of the22declared Web paths. The compact before inventory has its count but no complete segment graph; this validator checks final page paths exactly, while the writer must bind any route-segment changes to its explicit migration policy.",
+        "This validates captured artifacts, not editor reload/visual behavior or freshness beyond the captured branch/project metadata. Root must bind these inputs to its actual fresh MCP receipt and browser proof."
+      ]
+    },
+    "browser": {
+      "passed": true,
+      "checks": [
+        {
+          "check": "Design native folders after reload",
+          "passed": true,
+          "evidence": "browser/design-folders-saved.dom.txt"
+        },
+        {
+          "check": "All11Design boards grouped and retained native artwork opened",
+          "passed": true,
+          "evidence": "browser/design-native-saved.jpg"
+        },
+        {
+          "check": "Retained source-led live Design artwork opened",
+          "passed": true,
+          "evidence": "browser/design-live-saved.jpg"
+        },
+        {
+          "check": "All23Webpages with22drafts in intended hierarchy",
+          "passed": true,
+          "evidence": "browser/web-folders-saved.dom.txt"
+        },
+        {
+          "check": "Moved hero lab actual Desktop1440Preview mounted5codegraphics;VercelPause/Play",
+          "passed": true,
+          "evidence": [
+            "browser/hero-preview-desktop-playing.jpg",
+            "browser/hero-preview-desktop-paused.jpg"
+          ]
+        },
+        {
+          "check": "Moved hero lab actual Phone390Preview rendered;VercelPause/Play",
+          "passed": true,
+          "evidence": [
+            "browser/hero-preview-phone.dom.txt",
+            "browser/hero-preview-phone.jpg"
+          ]
+        },
+        {
+          "check": "Graphic gallery compiled three new concept links and followed Signal / Field successfully",
+          "passed": true,
+          "evidence": [
+            "browser/gallery-preview-links.json",
+            "browser/gallery-to-signal-field.dom.txt"
+          ]
+        },
+        {
+          "check": "Brain peer links use new siblings;solidtext→WB01Preview renders live fiber brain",
+          "passed": true,
+          "evidence": [
+            "browser/brain-preview-links.json",
+            "browser/brain-peer-to-fiber.dom.txt",
+            "browser/brain-peer-preview.jpg"
+          ]
+        },
+        {
+          "check": "SignalLoomnewroute#solutions anchorslandat90px onDesktop1440andPhone390",
+          "passed": true,
+          "evidence": [
+            "browser/signal-loom-anchor-desktop.json",
+            "browser/signal-loom-anchor-phone.json",
+            "browser/signal-loom-anchor-phone.jpg"
+          ]
+        },
+        {
+          "check": "VermilionIndexnewroute#solutions landsbelowheader",
+          "passed": true,
+          "evidence": "browser/vermilion-anchor.json"
+        },
+        {
+          "check": "ColdArchivenewroute#solutions landsbelowheader",
+          "passed": true,
+          "evidence": "browser/cold-archive-anchor.json"
+        },
+        {
+          "check": "Finaleditorreloadretainsall11Designpagesandall23Webpageswith22Draftlabels,newnestedfoldersandnorootprototypesfolder",
+          "passed": true,
+          "evidence": "browser/final-editor-reload.dom.txt"
+        }
+      ],
+      "files": [
+        {
+          "path": "browser/design-folders-saved.dom.txt",
+          "bytes": 6810,
+          "sha256": "3144421c0b5025c47c104067b2465ab84eee02d82df61542eec9a0cf2a38136c"
+        },
+        {
+          "path": "browser/design-native-saved.jpg",
+          "bytes": 127891,
+          "sha256": "821592d1eaa4e46f7ab7e455045993d218f43e690fc1b6f09cd85604bc590d84"
+        },
+        {
+          "path": "browser/design-live-saved.jpg",
+          "bytes": 99535,
+          "sha256": "9831f287f3125a853d7b831b5da13665a5b69c30370d9d2971cb70d66dc633bf"
+        },
+        {
+          "path": "browser/web-folders-saved.dom.txt",
+          "bytes": 35698,
+          "sha256": "b56faf8502c244b9ed04aac0131f2b600601203b906e9465a5b029d99a40f511"
+        },
+        {
+          "path": "browser/hero-preview-desktop-playing.jpg",
+          "bytes": 50800,
+          "sha256": "b119e5461c14d981a0a4bb08c91545afff96c870e093691a0eb9dd8699d5f17d"
+        },
+        {
+          "path": "browser/hero-preview-desktop-paused.jpg",
+          "bytes": 50709,
+          "sha256": "e384941a6f1e6fd15e67adfd0208b5e915e9232cd0b2425ea2dcd20179494709"
+        },
+        {
+          "path": "browser/hero-preview-phone.dom.txt",
+          "bytes": 22695,
+          "sha256": "029ab93d1bca0102ff24f9c9f5ba2660bf78cac378e5e6b3651bfda29ec42cd7"
+        },
+        {
+          "path": "browser/hero-preview-phone.jpg",
+          "bytes": 47148,
+          "sha256": "6ccd66ed3dce33073d2ae93315b342765360676b340bec9c8fa76b9270063470"
+        },
+        {
+          "path": "browser/gallery-preview-links.json",
+          "bytes": 739,
+          "sha256": "990e9e372b30ccf4fbbbaba22d03031db65d16b1901fa98d0ca138258b2620c6"
+        },
+        {
+          "path": "browser/gallery-to-signal-field.dom.txt",
+          "bytes": 6428,
+          "sha256": "63cab9f512c2e3268bdca5029ec15a608574835a387ad4b3dc82c0d4be52bd42"
+        },
+        {
+          "path": "browser/brain-preview-links.json",
+          "bytes": 635,
+          "sha256": "0df09eeca313fb8571078ea35b3a98bac03d9a5fc1ad8050d15f88b8c7e36f89"
+        },
+        {
+          "path": "browser/brain-peer-to-fiber.dom.txt",
+          "bytes": 5301,
+          "sha256": "7d8d96d5dcbaf29961ba702488ec7caa051a3e80a5d6c098a3f6918a8c371516"
+        },
+        {
+          "path": "browser/brain-peer-preview.jpg",
+          "bytes": 93454,
+          "sha256": "579d4afa008fd305e04dd1e8ef654d2f7dc1f723bd33a1883dfa141e0dbebde0"
+        },
+        {
+          "path": "browser/signal-loom-anchor-desktop.json",
+          "bytes": 245,
+          "sha256": "0e8c3a34f0f7aca0258c3dbd345074dc3c60764078e8d0f1bce0f89818415e6a"
+        },
+        {
+          "path": "browser/signal-loom-anchor-phone.json",
+          "bytes": 128,
+          "sha256": "81ccf7f103a20a125644044e39d14ee99c7a68adee434d7fd1a446348d9ce162"
+        },
+        {
+          "path": "browser/signal-loom-anchor-phone.jpg",
+          "bytes": 52094,
+          "sha256": "e909137f69b3b732d0e23e55ecdb9eef8c7ff0df1bb1910d3b1fff572c966aae"
+        },
+        {
+          "path": "browser/vermilion-anchor.json",
+          "bytes": 195,
+          "sha256": "cc7605a0af428170a60cafecca7db27a7b5ff7c8abfe3f9f0a70cfbbfcc14326"
+        },
+        {
+          "path": "browser/cold-archive-anchor.json",
+          "bytes": 192,
+          "sha256": "b7fb5a20c2a32357bf0fa3551dfbfe6b1905383f24c548c2780e95fb3256f638"
+        },
+        {
+          "path": "browser/final-editor-reload.dom.txt",
+          "bytes": 43163,
+          "sha256": "906e9bd0e64fa53d26ea3e7d271fb0d54cf6bda4422eeb783451784f046219c1"
+        }
+      ]
+    },
+    "scope": "Whole stored page comparison reverses only the declared33 root names,22 root paths and48 specific link.href values. Historical hash behavior excludes derived $rect only. Renderer sources are unchanged; existing renderer-regression evidence is retained rather than rerun for folder changes.",
+    "artifactsRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/organization-2026-10-31",
+    "artifacts": [
+      {
+        "path": "organization-plan.json",
+        "bytes": 35778,
+        "sha256": "4268fd9f6050e94d9a1d9eb3a29f3925e04c49b7222bb2214ff1b59ef490fe05"
+      },
+      {
+        "path": "mcp/organization-before-raw.json",
+        "bytes": 1034676,
+        "sha256": "bb0f84617e355000319ff9bf2eb527782e0531d8f54886ecaff19e0434510014"
+      },
+      {
+        "path": "mcp/organization-after-raw.json",
+        "bytes": 1047460,
+        "sha256": "c1f5e764cf3bd50b6fa9c65509cb2d83776b1e9df0ea5fa896ca42db7483cc0f"
+      },
+      {
+        "path": "mcp/organization-after-page-trees.json",
+        "bytes": 14117653,
+        "sha256": "3cef120e2a41769d9fac30a244826c71c4385fb5564ac6a289476bb1083a6d8a"
+      },
+      {
+        "path": "validation/final-preservation/validate-organization.mjs",
+        "bytes": 16473,
+        "sha256": "427265302d9c9f4012facd76eb350506226fff70a9391c62605087ad8929d6b8"
+      },
+      {
+        "path": "validation/final-preservation/result.json",
+        "bytes": 7398,
+        "sha256": "cf47ad62a9228ef13f598f7c74a3b6fdbce3128f911b615a4889a30598b4f766"
+      },
+      {
+        "path": "browser/browser-proof.json",
+        "bytes": 6034,
+        "sha256": "bb748859debaf368c603c82d9e56313e2bbfe1bed55063846081ccfaef53df00"
+      }
+    ]
+  },
+  "historicalEvidence": "Earlier manifests and handoffs retain their original names, routes and proof hashes. This page-ID keyed overlay records current locations; it does not rewrite those dated snapshots or synchronize Framer with the implemented website."
+}
