@@ -7,8 +7,9 @@ The [shared navigation direction](shared-navigation.md) applies unchanged.
 
 Use the homepage first as a proving ground for visual style and tone, drawing on
 the existing style mix. This is continued exploration, not a reset or a final
-design system. Keep detailed copy open and refine the homepage alongside the
-product pages as those stories develop.
+design system. Complete and review the homepage first, then begin the first
+individual product page. Detailed copy remains open, and later homepage
+refinements can accompany product-page work after that initial review.
 
 ## Owner's intended journey
 
@@ -40,6 +41,19 @@ The main page then tells this story in order:
 The small banner and the later development/research sections have different
 roles: immediate orientation for returning visitors versus a contextual story
 for first-time visitors. Exact banner content and update cadence remain open.
+
+The owner identified these tangible AI failure modes to explore in the problems
+section:
+
+- Decomposing a problem into concrete, manageable pieces.
+- Keeping work aligned with the user's intent.
+- Retaining context and memory across steps or sessions.
+- Verifying, testing and validating that the output satisfies the request.
+
+Present these as difficulties AI systems can encounter, not universal
+incapabilities. Map a product response only to its verified capabilities; this
+brief does not claim every product resolves every failure mode. Monarchic's
+long-running workflows remain in development.
 
 Use **quiet confidence and progressive discovery**: establish the company and
 its value first, then let visitors discover the depth of the work and its
@@ -87,7 +101,8 @@ development**; that is not an eligible finished-release example.
 ## Still to decide
 
 - Final identity copy, visual composition, artwork and responsive treatment.
-- The problems to foreground and the owner-selected flagship products.
+- Which problem examples to emphasize, their demonstrations, and the
+  owner-selected flagship products.
 - Solution categories, breadth of examples, and links between solutions and products.
 - Which completed developments to feature, their supporting release evidence,
   and the two banner selections.

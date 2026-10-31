@@ -5,6 +5,22 @@ Owner direction recorded on **2026-10-30**, alongside the
 commercial target for later decisions. It does not change the current product
 catalog, prices, entitlements, billing rules or backend behavior.
 
+## Owner's intended site roles
+
+The main website serves both discovery/conversion and existing users. It should
+centralize documentation, help, support, tutorials, API documentation, and
+technical and design documentation. This does not mean placing all that content
+on the homepage; its organization and destinations remain open.
+
+The actual tools remain separate web apps elsewhere, reached through the Apps
+launcher and relevant links. They may share underlying research, libraries or
+backend infrastructure while retaining distinct app and backend boundaries.
+This direction does not select domains, routes, authentication, deployment or
+storage arrangements, or require the tools to move into the main website.
+
+Complete and review the homepage before beginning the first individual product
+page. Later product-page work may prompt further homepage refinements.
+
 ## Owner's product-story direction
 
 The product overview should communicate the breadth of Monarchic's offering.
@@ -59,6 +75,8 @@ and demonstrations; plan access and per-product included usage; the API purchase
 path, metering units, rates, usage windows, inclusion and overages; and how those
 choices relate to the current offering. Pricing layout and responsive details
 also remain open beyond plans appearing first and API access staying prominent.
+Documentation and support information architecture, cross-site destinations and
+integration details also remain undecided; no new routes are established here.
 
 Follow the [shared navigation direction](shared-navigation.md) and
 [manual Framer workflow](framer-prototyping.md) when prototyping. This record
