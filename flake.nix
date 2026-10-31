@@ -130,6 +130,11 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          original-heroes = mkWebsiteCheck "original-heroes" ''
+            pnpm run check:original-hero-study
+            pnpm run check:original-hero-integration
+            pnpm run check:original-hero-browser
+          '';
           contracts = mkWebsiteCheck "contracts" ''
             pnpm run check:webcomposer
             pnpm run check:webinfo-artifacts
