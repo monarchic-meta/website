@@ -1,0 +1,4469 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-002",
+  "title": "Ajedrez / editorial montage",
+  "creator": "Julián Leiss / @julianleiss",
+  "url": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+  "gallery": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+  "sourcePost": "https://x.com/julianleiss/status/2110868325052149925",
+  "background": "#141615",
+  "note": "Two native still layout studies from the film/poster review: repeated portrait frames and overlapping unequal photo slots. All photographs/hands are explicitly neutral diagram stand-ins. No film timing, sound or unseen sequence claimed.",
+  "classification": "SOURCE INSPIRATION / STATIC EDITORIAL ADAPTATION",
+  "width": 1440,
+  "height": 1000,
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "two-film-layout-states",
+      "parent": "stage",
+      "attrs": {
+        "name": "two film layout states",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "repeated-portrait-frames",
+      "parent": "two-film-layout-states",
+      "attrs": {
+        "name": "repeated portrait frames",
+        "position": "absolute",
+        "left": "60px",
+        "top": "25px",
+        "width": "590px",
+        "height": "950px",
+        "fill": "#afb8b4",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "overlapping-editorial-photo-slots",
+      "parent": "two-film-layout-states",
+      "attrs": {
+        "name": "overlapping editorial photo slots",
+        "position": "absolute",
+        "left": "750px",
+        "top": "25px",
+        "width": "590px",
+        "height": "950px",
+        "fill": "#bdc4c1",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "state-a-label",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "state a label",
+        "position": "absolute",
+        "left": "18px",
+        "top": "145px",
+        "width": "550px",
+        "height": "auto",
+        "text": "AJEDREZ / REPEATED FRAME STUDY",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "11px",
+        "lineHeight": "14px",
+        "textColor": "#1d2621",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "state-b-label",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "state b label",
+        "position": "absolute",
+        "left": "18px",
+        "top": "18px",
+        "width": "550px",
+        "height": "auto",
+        "text": "AJEDREZ / OVERLAPPING FORMATS",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "11px",
+        "lineHeight": "14px",
+        "textColor": "#1d2621",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "repeated-photo-stand-in-0",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "repeated photo stand in 0",
+        "position": "absolute",
+        "left": "116px",
+        "top": "-262px",
+        "width": "350px",
+        "height": "350px",
+        "fill": "#252f2a",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-0-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 0 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-1-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 1 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-2-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 2 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-3-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 3 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-4-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 4 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-5-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 5 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-6-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 6 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-1",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-2",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-3",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-4",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-5",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-6",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-0-7-7",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "neutral checker 0 7 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "repeated-photo-label-0",
+      "parent": "repeated-photo-stand-in-0",
+      "attrs": {
+        "name": "repeated photo label 0",
+        "position": "absolute",
+        "left": "16px",
+        "top": "306px",
+        "width": "320px",
+        "height": "auto",
+        "text": "NEUTRAL DIAGRAM / PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "11px",
+        "textColor": "#d7ddd5",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-cut-0",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper cut 0",
+        "position": "absolute",
+        "left": "0px",
+        "top": "194.6px",
+        "width": "590px",
+        "height": "0.8px",
+        "fill": "#d6dbd5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-marker-0",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "catalog marker 0",
+        "position": "absolute",
+        "left": "7px",
+        "top": "181px",
+        "width": "80px",
+        "height": "auto",
+        "text": "IMG. 01",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#323b34",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "repeated-photo-stand-in-1",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "repeated photo stand in 1",
+        "position": "absolute",
+        "left": "116px",
+        "top": "328px",
+        "width": "350px",
+        "height": "350px",
+        "fill": "#252f2a",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-0-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 0 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-1-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 1 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-2-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 2 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-3-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 3 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-4-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 4 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-5-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 5 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-6-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 6 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-0",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-2",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-3",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-4",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-5",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-6",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-1-7-7",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "neutral checker 1 7 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "repeated-photo-label-1",
+      "parent": "repeated-photo-stand-in-1",
+      "attrs": {
+        "name": "repeated photo label 1",
+        "position": "absolute",
+        "left": "16px",
+        "top": "306px",
+        "width": "320px",
+        "height": "auto",
+        "text": "NEUTRAL DIAGRAM / PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "11px",
+        "textColor": "#d7ddd5",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-cut-1",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper cut 1",
+        "position": "absolute",
+        "left": "0px",
+        "top": "784.6px",
+        "width": "590px",
+        "height": "0.8px",
+        "fill": "#d6dbd5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-marker-1",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "catalog marker 1",
+        "position": "absolute",
+        "left": "7px",
+        "top": "771px",
+        "width": "80px",
+        "height": "auto",
+        "text": "IMG. 02",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#323b34",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "repeated-photo-stand-in-2",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "repeated photo stand in 2",
+        "position": "absolute",
+        "left": "116px",
+        "top": "918px",
+        "width": "350px",
+        "height": "350px",
+        "fill": "#252f2a",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-0-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 0 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "17px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-1-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 1 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "56.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-2-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 2 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "96px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-3-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 3 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "135.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-4-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 4 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "175px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-5-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 5 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "214.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-6-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 6 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "254px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-0",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 0",
+        "position": "absolute",
+        "left": "17px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-1",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 1",
+        "position": "absolute",
+        "left": "56.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 2",
+        "position": "absolute",
+        "left": "96px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-3",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 3",
+        "position": "absolute",
+        "left": "135.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-4",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 4",
+        "position": "absolute",
+        "left": "175px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-5",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 5",
+        "position": "absolute",
+        "left": "214.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-6",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 6",
+        "position": "absolute",
+        "left": "254px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#37423c"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-checker-2-7-7",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "neutral checker 2 7 7",
+        "position": "absolute",
+        "left": "293.5px",
+        "top": "293.5px",
+        "width": "39.5px",
+        "height": "39.5px",
+        "fill": "#68716a"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "repeated-photo-label-2",
+      "parent": "repeated-photo-stand-in-2",
+      "attrs": {
+        "name": "repeated photo label 2",
+        "position": "absolute",
+        "left": "16px",
+        "top": "306px",
+        "width": "320px",
+        "height": "auto",
+        "text": "NEUTRAL DIAGRAM / PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "11px",
+        "textColor": "#d7ddd5",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-cut-2",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper cut 2",
+        "position": "absolute",
+        "left": "0px",
+        "top": "1374.6px",
+        "width": "590px",
+        "height": "0.8px",
+        "fill": "#d6dbd5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-marker-2",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "catalog marker 2",
+        "position": "absolute",
+        "left": "7px",
+        "top": "1361px",
+        "width": "80px",
+        "height": "auto",
+        "text": "IMG. 03",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#323b34",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-overlap-photo-stand-in",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "large overlap photo stand in",
+        "position": "absolute",
+        "left": "70px",
+        "top": "180px",
+        "width": "355px",
+        "height": "395px",
+        "fill": "#28322c",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-0",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 0",
+        "position": "absolute",
+        "left": "30px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#525e52",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-1",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 1",
+        "position": "absolute",
+        "left": "65px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#6f796b",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-2",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 2",
+        "position": "absolute",
+        "left": "100px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#444f44",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-3",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 3",
+        "position": "absolute",
+        "left": "135px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#525e52",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-4",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 4",
+        "position": "absolute",
+        "left": "170px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#6f796b",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-5",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 5",
+        "position": "absolute",
+        "left": "205px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#444f44",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-6",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 6",
+        "position": "absolute",
+        "left": "240px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#525e52",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-7",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 7",
+        "position": "absolute",
+        "left": "275px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#6f796b",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "large-photo-tone-8",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo tone 8",
+        "position": "absolute",
+        "left": "310px",
+        "top": "-20px",
+        "width": "28px",
+        "height": "445px",
+        "fill": "#444f44",
+        "rotation": "-7deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "large-photo-stand-in-label",
+      "parent": "large-overlap-photo-stand-in",
+      "attrs": {
+        "name": "large photo stand in label",
+        "position": "absolute",
+        "left": "12px",
+        "top": "12px",
+        "width": "330px",
+        "height": "auto",
+        "text": "NEUTRAL PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "11px",
+        "textColor": "#d7ddd4",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-overlap-photo-stand-in",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "small overlap photo stand in",
+        "position": "absolute",
+        "left": "255px",
+        "top": "495px",
+        "width": "290px",
+        "height": "225px",
+        "fill": "#747f75",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-0",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 0",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "20px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#8f998f",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-1",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 1",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "56px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#626f63",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-2",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 2",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "92px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#3d4c40",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-3",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 3",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "128px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#8f998f",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-4",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 4",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "164px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#626f63",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-photo-tone-5",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo tone 5",
+        "position": "absolute",
+        "left": "-20px",
+        "top": "200px",
+        "width": "340px",
+        "height": "24px",
+        "fill": "#3d4c40",
+        "rotation": "13deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "small-photo-stand-in-label",
+      "parent": "small-overlap-photo-stand-in",
+      "attrs": {
+        "name": "small photo stand in label",
+        "position": "absolute",
+        "left": "10px",
+        "top": "10px",
+        "width": "270px",
+        "height": "auto",
+        "text": "NEUTRAL PHOTO STAND-IN",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "11px",
+        "textColor": "#eef1e9",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-top-left",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "catalog top left",
+        "position": "absolute",
+        "left": "55px",
+        "top": "86px",
+        "width": "180px",
+        "height": "auto",
+        "text": "FRAME / 02",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "8px",
+        "lineHeight": "10px",
+        "textColor": "#2c3730",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-top-center",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "catalog top center",
+        "position": "absolute",
+        "left": "230px",
+        "top": "86px",
+        "width": "180px",
+        "height": "auto",
+        "text": "STATIC LAYOUT",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "8px",
+        "lineHeight": "10px",
+        "textColor": "#2c3730",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-bottom-left",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "catalog bottom left",
+        "position": "absolute",
+        "left": "55px",
+        "top": "823px",
+        "width": "180px",
+        "height": "auto",
+        "text": "JULIÁN LEISS",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "8px",
+        "lineHeight": "10px",
+        "textColor": "#2c3730",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "catalog-bottom-center",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "catalog bottom center",
+        "position": "absolute",
+        "left": "230px",
+        "top": "823px",
+        "width": "180px",
+        "height": "auto",
+        "text": "CROP / PROPORTION",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "8px",
+        "lineHeight": "10px",
+        "textColor": "#2c3730",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-0",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 0",
+        "position": "absolute",
+        "left": "12px",
+        "top": "80px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-1",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 1",
+        "position": "absolute",
+        "left": "185px",
+        "top": "351px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-2",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 2",
+        "position": "absolute",
+        "left": "358px",
+        "top": "622px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-3",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 3",
+        "position": "absolute",
+        "left": "531px",
+        "top": "893px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-4",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 4",
+        "position": "absolute",
+        "left": "144px",
+        "top": "314px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-5",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 5",
+        "position": "absolute",
+        "left": "317px",
+        "top": "585px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-6",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 6",
+        "position": "absolute",
+        "left": "490px",
+        "top": "856px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-7",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 7",
+        "position": "absolute",
+        "left": "103px",
+        "top": "277px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-8",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 8",
+        "position": "absolute",
+        "left": "276px",
+        "top": "548px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-9",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 9",
+        "position": "absolute",
+        "left": "449px",
+        "top": "819px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-10",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 10",
+        "position": "absolute",
+        "left": "62px",
+        "top": "240px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-11",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 11",
+        "position": "absolute",
+        "left": "235px",
+        "top": "511px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-12",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 12",
+        "position": "absolute",
+        "left": "408px",
+        "top": "782px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-13",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 13",
+        "position": "absolute",
+        "left": "21px",
+        "top": "203px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-14",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 14",
+        "position": "absolute",
+        "left": "194px",
+        "top": "474px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-15",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 15",
+        "position": "absolute",
+        "left": "367px",
+        "top": "745px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-16",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 16",
+        "position": "absolute",
+        "left": "540px",
+        "top": "166px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-17",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 17",
+        "position": "absolute",
+        "left": "153px",
+        "top": "437px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-18",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 18",
+        "position": "absolute",
+        "left": "326px",
+        "top": "708px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-19",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 19",
+        "position": "absolute",
+        "left": "499px",
+        "top": "129px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-20",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 20",
+        "position": "absolute",
+        "left": "112px",
+        "top": "400px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-21",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 21",
+        "position": "absolute",
+        "left": "285px",
+        "top": "671px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-22",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 22",
+        "position": "absolute",
+        "left": "458px",
+        "top": "92px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-23",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 23",
+        "position": "absolute",
+        "left": "71px",
+        "top": "363px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-24",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 24",
+        "position": "absolute",
+        "left": "244px",
+        "top": "634px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-25",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 25",
+        "position": "absolute",
+        "left": "417px",
+        "top": "905px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-26",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 26",
+        "position": "absolute",
+        "left": "30px",
+        "top": "326px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-27",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 27",
+        "position": "absolute",
+        "left": "203px",
+        "top": "597px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-28",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 28",
+        "position": "absolute",
+        "left": "376px",
+        "top": "868px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-29",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 29",
+        "position": "absolute",
+        "left": "549px",
+        "top": "289px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-30",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 30",
+        "position": "absolute",
+        "left": "162px",
+        "top": "560px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-31",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 31",
+        "position": "absolute",
+        "left": "335px",
+        "top": "831px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-32",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 32",
+        "position": "absolute",
+        "left": "508px",
+        "top": "252px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-33",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 33",
+        "position": "absolute",
+        "left": "121px",
+        "top": "523px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-34",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 34",
+        "position": "absolute",
+        "left": "294px",
+        "top": "794px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-35",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 35",
+        "position": "absolute",
+        "left": "467px",
+        "top": "215px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-36",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 36",
+        "position": "absolute",
+        "left": "80px",
+        "top": "486px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-37",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 37",
+        "position": "absolute",
+        "left": "253px",
+        "top": "757px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-38",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 38",
+        "position": "absolute",
+        "left": "426px",
+        "top": "178px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-39",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 39",
+        "position": "absolute",
+        "left": "39px",
+        "top": "449px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-40",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 40",
+        "position": "absolute",
+        "left": "212px",
+        "top": "720px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-41",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 41",
+        "position": "absolute",
+        "left": "385px",
+        "top": "141px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-42",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 42",
+        "position": "absolute",
+        "left": "558px",
+        "top": "412px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-43",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 43",
+        "position": "absolute",
+        "left": "171px",
+        "top": "683px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-44",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 44",
+        "position": "absolute",
+        "left": "344px",
+        "top": "104px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-45",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 45",
+        "position": "absolute",
+        "left": "517px",
+        "top": "375px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-46",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 46",
+        "position": "absolute",
+        "left": "130px",
+        "top": "646px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-47",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 47",
+        "position": "absolute",
+        "left": "303px",
+        "top": "917px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-48",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 48",
+        "position": "absolute",
+        "left": "476px",
+        "top": "338px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-49",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 49",
+        "position": "absolute",
+        "left": "89px",
+        "top": "609px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-50",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 50",
+        "position": "absolute",
+        "left": "262px",
+        "top": "880px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-51",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 51",
+        "position": "absolute",
+        "left": "435px",
+        "top": "301px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-52",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 52",
+        "position": "absolute",
+        "left": "48px",
+        "top": "572px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-53",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 53",
+        "position": "absolute",
+        "left": "221px",
+        "top": "843px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-54",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 54",
+        "position": "absolute",
+        "left": "394px",
+        "top": "264px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-55",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 55",
+        "position": "absolute",
+        "left": "567px",
+        "top": "535px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-56",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 56",
+        "position": "absolute",
+        "left": "180px",
+        "top": "806px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-57",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 57",
+        "position": "absolute",
+        "left": "353px",
+        "top": "227px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-58",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 58",
+        "position": "absolute",
+        "left": "526px",
+        "top": "498px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-59",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 59",
+        "position": "absolute",
+        "left": "139px",
+        "top": "769px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-60",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 60",
+        "position": "absolute",
+        "left": "312px",
+        "top": "190px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-61",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 61",
+        "position": "absolute",
+        "left": "485px",
+        "top": "461px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-62",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 62",
+        "position": "absolute",
+        "left": "98px",
+        "top": "732px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-63",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 63",
+        "position": "absolute",
+        "left": "271px",
+        "top": "153px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-64",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 64",
+        "position": "absolute",
+        "left": "444px",
+        "top": "424px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-65",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 65",
+        "position": "absolute",
+        "left": "57px",
+        "top": "695px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-66",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 66",
+        "position": "absolute",
+        "left": "230px",
+        "top": "116px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-67",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 67",
+        "position": "absolute",
+        "left": "403px",
+        "top": "387px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-68",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 68",
+        "position": "absolute",
+        "left": "16px",
+        "top": "658px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-69",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 69",
+        "position": "absolute",
+        "left": "189px",
+        "top": "929px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-70",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 70",
+        "position": "absolute",
+        "left": "362px",
+        "top": "350px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-71",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 71",
+        "position": "absolute",
+        "left": "535px",
+        "top": "621px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-72",
+      "parent": "overlapping-editorial-photo-slots",
+      "attrs": {
+        "name": "paper speck 72",
+        "position": "absolute",
+        "left": "148px",
+        "top": "892px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#9ba59d",
+        "opacity": 0.45
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-speck-73",
+      "parent": "repeated-portrait-frames",
+      "attrs": {
+        "name": "paper speck 73",
+        "position": "absolute",
+        "left": "321px",
+        "top": "313px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#a0aaa3",
+        "opacity": 0.45
+      }
+    }
+  ]
+}
