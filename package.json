@@ -38,7 +38,8 @@
     "smoke:staging": "MONARCHIC_WEBSITE_SMOKE_URL=https://staging.monarchic.io MONARCHIC_WEBSITE_EXPECTED_CANONICAL_URL=https://staging.monarchic.io MONARCHIC_WEBSITE_EXPECTED_APP_URL=https://staging-app.monarchic.io node scripts/smoke-production.mjs",
     "astro": "astro",
     "check:framer-studies": "node scripts/check-framer-study-resources.mjs",
-    "check:website-brain": "node scripts/check-website-brain-port.mjs"
+    "check:website-brain": "node scripts/check-website-brain-port.mjs",
+    "check:website-brain-dither": "node scripts/check-website-brain-dither.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
