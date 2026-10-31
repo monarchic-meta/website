@@ -1,0 +1,1386 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-016",
+  "title": "Origin / identity and light keyframes",
+  "creator": "Origin Studio; gallery submitter Ben Blackburn (not proof of website authorship)",
+  "url": "https://www.originbrand.io/",
+  "gallery": "https://minimal.gallery/origin/",
+  "background": "#ffffff",
+  "note": "Native wordmark/card study plus two enlarged light-tile keyframes. Rounded lettering and ellipse-built glow approximate the inspected source; copy is shortened. No original rendering method, pointer response or native animation claimed.",
+  "classification": "SOURCE INSPIRATION / STATIC NATIVE RECREATION",
+  "width": 1440,
+  "height": 1000,
+  "sourceEvidence": {
+    "capture": [
+      "sources/HERO-016-primary-0.png",
+      "sources/HERO-016-primary-1.png"
+    ],
+    "inspected": "2026-10-31",
+    "scope": "Two visibly different light states; enlargement annotations are added for inspection."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "constructed-origin-wordmark",
+      "parent": "stage",
+      "attrs": {
+        "name": "constructed origin wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-o-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter o outer",
+        "position": "absolute",
+        "left": "12px",
+        "top": "76px",
+        "width": "314px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "114px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-o-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter o counter",
+        "position": "absolute",
+        "left": "61px",
+        "top": "125px",
+        "width": "216px",
+        "height": "168px",
+        "fill": "#ffffff",
+        "radius": "65px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-shoulder",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r shoulder",
+        "position": "absolute",
+        "left": "356px",
+        "top": "76px",
+        "width": "214px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "112px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-open-right",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r open right",
+        "position": "absolute",
+        "left": "404px",
+        "top": "126px",
+        "width": "180px",
+        "height": "250px",
+        "fill": "#ffffff"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r stem",
+        "position": "absolute",
+        "left": "356px",
+        "top": "187px",
+        "width": "49px",
+        "height": "155px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-top-terminal",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r top terminal",
+        "position": "absolute",
+        "left": "468px",
+        "top": "76px",
+        "width": "75px",
+        "height": "50px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-trim",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r trim",
+        "position": "absolute",
+        "left": "543px",
+        "top": "76px",
+        "width": "42px",
+        "height": "270px",
+        "fill": "#ffffff"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "first-i-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "first i stem",
+        "position": "absolute",
+        "left": "578px",
+        "top": "76px",
+        "width": "49px",
+        "height": "266px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "first-i-dot",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "first i dot",
+        "position": "absolute",
+        "left": "578px",
+        "top": "9px",
+        "width": "49px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "second-i-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "second i stem",
+        "position": "absolute",
+        "left": "1018px",
+        "top": "76px",
+        "width": "49px",
+        "height": "266px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "second-i-dot",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "second i dot",
+        "position": "absolute",
+        "left": "1018px",
+        "top": "9px",
+        "width": "49px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-hook",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g hook",
+        "position": "absolute",
+        "left": "668px",
+        "top": "232px",
+        "width": "319px",
+        "height": "193px",
+        "fill": "#c9c9c9",
+        "radius": "102px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-hook-cutout",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g hook cutout",
+        "position": "absolute",
+        "left": "653px",
+        "top": "220px",
+        "width": "285px",
+        "height": "156px",
+        "fill": "#ffffff"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-tail",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g tail",
+        "position": "absolute",
+        "left": "676px",
+        "top": "376px",
+        "width": "205px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-bowl-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g bowl outer",
+        "position": "absolute",
+        "left": "657px",
+        "top": "76px",
+        "width": "330px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "112px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-bowl-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g bowl counter",
+        "position": "absolute",
+        "left": "706px",
+        "top": "125px",
+        "width": "232px",
+        "height": "168px",
+        "fill": "#ffffff",
+        "radius": "63px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n outer",
+        "position": "absolute",
+        "left": "1098px",
+        "top": "76px",
+        "width": "314px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "113px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n counter",
+        "position": "absolute",
+        "left": "1147px",
+        "top": "125px",
+        "width": "216px",
+        "height": "265px",
+        "fill": "#ffffff",
+        "radius": "47px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-left-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n left stem",
+        "position": "absolute",
+        "left": "1098px",
+        "top": "204px",
+        "width": "49px",
+        "height": "138px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-right-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n right stem",
+        "position": "absolute",
+        "left": "1363px",
+        "top": "204px",
+        "width": "49px",
+        "height": "138px",
+        "fill": "#c9c9c9"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "keyframe-annotation",
+      "parent": "stage",
+      "attrs": {
+        "name": "keyframe annotation",
+        "position": "absolute",
+        "left": "832px",
+        "top": "501px",
+        "width": "560px",
+        "height": "auto",
+        "text": "ENLARGED SOURCE TILE STATES / STATIC",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#7c7c7c",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a",
+      "parent": "stage",
+      "attrs": {
+        "name": "enlarged state a",
+        "position": "absolute",
+        "left": "832px",
+        "top": "531px",
+        "width": "144px",
+        "height": "144px",
+        "fill": "#000000",
+        "radius": "30%",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-7",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 7",
+        "position": "absolute",
+        "left": "37.313px",
+        "top": "43.442px",
+        "width": "66.493px",
+        "height": "57.116px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-6",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 6",
+        "position": "absolute",
+        "left": "40.458px",
+        "top": "46.143px",
+        "width": "60.204px",
+        "height": "51.713px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-5",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 5",
+        "position": "absolute",
+        "left": "43.603px",
+        "top": "48.845px",
+        "width": "53.914px",
+        "height": "46.31px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-4",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 4",
+        "position": "absolute",
+        "left": "46.748px",
+        "top": "51.546px",
+        "width": "47.624px",
+        "height": "40.908px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-3",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 3",
+        "position": "absolute",
+        "left": "49.893px",
+        "top": "54.248px",
+        "width": "41.334px",
+        "height": "35.505px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-2",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 2",
+        "position": "absolute",
+        "left": "53.038px",
+        "top": "56.949px",
+        "width": "35.044px",
+        "height": "30.102px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-1",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 1",
+        "position": "absolute",
+        "left": "56.183px",
+        "top": "59.651px",
+        "width": "28.754px",
+        "height": "24.699px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-a-single-light-falloff-0",
+      "parent": "enlarged-state-a",
+      "attrs": {
+        "name": "enlarged state a single light falloff 0",
+        "position": "absolute",
+        "left": "59.328px",
+        "top": "62.352px",
+        "width": "22.464px",
+        "height": "19.296px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b",
+      "parent": "stage",
+      "attrs": {
+        "name": "enlarged state b",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "531px",
+        "width": "144px",
+        "height": "144px",
+        "fill": "#000000",
+        "radius": "30%",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-7",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 7",
+        "position": "absolute",
+        "left": "58.257px",
+        "top": "17.58px",
+        "width": "33.247px",
+        "height": "65.641px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-6",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 6",
+        "position": "absolute",
+        "left": "59.829px",
+        "top": "20.684px",
+        "width": "30.102px",
+        "height": "59.432px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-5",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 5",
+        "position": "absolute",
+        "left": "61.402px",
+        "top": "23.789px",
+        "width": "26.957px",
+        "height": "53.222px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-4",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 4",
+        "position": "absolute",
+        "left": "62.974px",
+        "top": "26.893px",
+        "width": "23.812px",
+        "height": "47.013px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-3",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 3",
+        "position": "absolute",
+        "left": "64.547px",
+        "top": "29.998px",
+        "width": "20.667px",
+        "height": "40.804px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-2",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 2",
+        "position": "absolute",
+        "left": "66.119px",
+        "top": "33.103px",
+        "width": "17.522px",
+        "height": "34.595px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-1",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 1",
+        "position": "absolute",
+        "left": "67.692px",
+        "top": "36.207px",
+        "width": "14.377px",
+        "height": "28.385px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-upper-flare-falloff-0",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b upper flare falloff 0",
+        "position": "absolute",
+        "left": "69.264px",
+        "top": "39.312px",
+        "width": "11.232px",
+        "height": "22.176px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "35deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-7",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 7",
+        "position": "absolute",
+        "left": "51.379px",
+        "top": "52.393px",
+        "width": "38.362px",
+        "height": "39.214px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-6",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 6",
+        "position": "absolute",
+        "left": "53.194px",
+        "top": "54.248px",
+        "width": "34.733px",
+        "height": "35.505px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-5",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 5",
+        "position": "absolute",
+        "left": "55.008px",
+        "top": "56.102px",
+        "width": "31.104px",
+        "height": "31.795px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-4",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 4",
+        "position": "absolute",
+        "left": "56.822px",
+        "top": "57.957px",
+        "width": "27.475px",
+        "height": "28.086px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-3",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 3",
+        "position": "absolute",
+        "left": "58.637px",
+        "top": "59.812px",
+        "width": "23.846px",
+        "height": "24.376px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-2",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 2",
+        "position": "absolute",
+        "left": "60.451px",
+        "top": "61.667px",
+        "width": "20.218px",
+        "height": "20.667px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-1",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 1",
+        "position": "absolute",
+        "left": "62.266px",
+        "top": "63.521px",
+        "width": "16.589px",
+        "height": "16.957px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-central-light-falloff-0",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b central light falloff 0",
+        "position": "absolute",
+        "left": "64.08px",
+        "top": "65.376px",
+        "width": "12.96px",
+        "height": "13.248px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-7",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 7",
+        "position": "absolute",
+        "left": "72.334px",
+        "top": "60.192px",
+        "width": "28.132px",
+        "height": "63.936px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-6",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 6",
+        "position": "absolute",
+        "left": "73.665px",
+        "top": "63.216px",
+        "width": "25.471px",
+        "height": "57.888px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-5",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 5",
+        "position": "absolute",
+        "left": "74.995px",
+        "top": "66.24px",
+        "width": "22.81px",
+        "height": "51.84px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-4",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 4",
+        "position": "absolute",
+        "left": "76.326px",
+        "top": "69.264px",
+        "width": "20.148px",
+        "height": "45.792px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-3",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 3",
+        "position": "absolute",
+        "left": "77.656px",
+        "top": "72.288px",
+        "width": "17.487px",
+        "height": "39.744px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-2",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 2",
+        "position": "absolute",
+        "left": "78.987px",
+        "top": "75.312px",
+        "width": "14.826px",
+        "height": "33.696px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-1",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 1",
+        "position": "absolute",
+        "left": "80.317px",
+        "top": "78.336px",
+        "width": "12.165px",
+        "height": "27.648px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-lower-flare-falloff-0",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b lower flare falloff 0",
+        "position": "absolute",
+        "left": "81.648px",
+        "top": "81.36px",
+        "width": "9.504px",
+        "height": "21.6px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "-33deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-7",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 7",
+        "position": "absolute",
+        "left": "37.878px",
+        "top": "65.664px",
+        "width": "22.164px",
+        "height": "21.312px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-6",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 6",
+        "position": "absolute",
+        "left": "38.926px",
+        "top": "66.672px",
+        "width": "20.068px",
+        "height": "19.296px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-5",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 5",
+        "position": "absolute",
+        "left": "39.974px",
+        "top": "67.68px",
+        "width": "17.971px",
+        "height": "17.28px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-4",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 4",
+        "position": "absolute",
+        "left": "41.023px",
+        "top": "68.688px",
+        "width": "15.875px",
+        "height": "15.264px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-3",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 3",
+        "position": "absolute",
+        "left": "42.071px",
+        "top": "69.696px",
+        "width": "13.778px",
+        "height": "13.248px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-2",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 2",
+        "position": "absolute",
+        "left": "43.119px",
+        "top": "70.704px",
+        "width": "11.681px",
+        "height": "11.232px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-1",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 1",
+        "position": "absolute",
+        "left": "44.168px",
+        "top": "71.712px",
+        "width": "9.585px",
+        "height": "9.216px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "enlarged-state-b-left-satellite-falloff-0",
+      "parent": "enlarged-state-b",
+      "attrs": {
+        "name": "enlarged state b left satellite falloff 0",
+        "position": "absolute",
+        "left": "45.216px",
+        "top": "72.72px",
+        "width": "7.488px",
+        "height": "7.2px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "state-a-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "state a label",
+        "position": "absolute",
+        "left": "832px",
+        "top": "689px",
+        "width": "150px",
+        "height": "auto",
+        "text": "01 / SOFT POINT",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#777777",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "state-b-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "state b label",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "689px",
+        "width": "180px",
+        "height": "auto",
+        "text": "02 / BENT FLARES",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#777777",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "shortened-proposition",
+      "parent": "stage",
+      "attrs": {
+        "name": "shortened proposition",
+        "position": "absolute",
+        "left": "16px",
+        "top": "826px",
+        "width": "600px",
+        "height": "auto",
+        "text": "Brand systems for founder-led\ncompanies at a turning point.",
+        "fontName": "Inter",
+        "fontSize": "31px",
+        "lineHeight": "36px",
+        "textColor": "#bcbcbc",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "utility-card",
+      "parent": "stage",
+      "attrs": {
+        "name": "utility card",
+        "position": "absolute",
+        "left": "1028px",
+        "top": "834px",
+        "width": "396px",
+        "height": "96px",
+        "fill": "#ededed",
+        "radius": "36px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile",
+      "parent": "utility-card",
+      "attrs": {
+        "name": "source scale light tile",
+        "position": "absolute",
+        "left": "12px",
+        "top": "12px",
+        "width": "72px",
+        "height": "72px",
+        "fill": "#000000",
+        "radius": "30%",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-7",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 7",
+        "position": "absolute",
+        "left": "18.657px",
+        "top": "21.721px",
+        "width": "33.247px",
+        "height": "28.558px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.053000000000000005,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-6",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 6",
+        "position": "absolute",
+        "left": "20.229px",
+        "top": "23.072px",
+        "width": "30.102px",
+        "height": "25.857px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.049,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-5",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 5",
+        "position": "absolute",
+        "left": "21.802px",
+        "top": "24.422px",
+        "width": "26.957px",
+        "height": "23.155px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.045,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-4",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 4",
+        "position": "absolute",
+        "left": "23.374px",
+        "top": "25.773px",
+        "width": "23.812px",
+        "height": "20.454px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.041,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-3",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 3",
+        "position": "absolute",
+        "left": "24.947px",
+        "top": "27.124px",
+        "width": "20.667px",
+        "height": "17.752px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.037000000000000005,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-2",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 2",
+        "position": "absolute",
+        "left": "26.519px",
+        "top": "28.475px",
+        "width": "17.522px",
+        "height": "15.051px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.033,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-1",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 1",
+        "position": "absolute",
+        "left": "28.092px",
+        "top": "29.825px",
+        "width": "14.377px",
+        "height": "12.349px",
+        "fill": "#d6d6d6",
+        "radius": "50%",
+        "opacity": 0.029,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile-single-light-falloff-0",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "source scale light tile single light falloff 0",
+        "position": "absolute",
+        "left": "29.664px",
+        "top": "31.176px",
+        "width": "11.232px",
+        "height": "9.648px",
+        "fill": "#fafafa",
+        "radius": "50%",
+        "opacity": 0.86,
+        "rotation": "24deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "shortened-card-copy",
+      "parent": "utility-card",
+      "attrs": {
+        "name": "shortened card copy",
+        "position": "absolute",
+        "left": "100px",
+        "top": "16px",
+        "width": "276px",
+        "height": "auto",
+        "text": "Programs built around\nmoments of change.",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "17px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "learn-more",
+      "parent": "stage",
+      "attrs": {
+        "name": "learn more",
+        "position": "absolute",
+        "left": "1160px",
+        "top": "954px",
+        "width": "90px",
+        "height": "auto",
+        "text": "Learn more",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#bbbbbb",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "programs-button",
+      "parent": "stage",
+      "attrs": {
+        "name": "programs button",
+        "position": "absolute",
+        "left": "1264px",
+        "top": "946px",
+        "width": "83px",
+        "height": "32px",
+        "fill": "#e7e7e7",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "programs-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "programs label",
+        "position": "absolute",
+        "left": "1275px",
+        "top": "957px",
+        "width": "73px",
+        "height": "auto",
+        "text": "PROGRAMS",
+        "fontName": "Inter",
+        "fontSize": "9px",
+        "lineHeight": "9.72px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "menu-button",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu button",
+        "position": "absolute",
+        "left": "1356px",
+        "top": "946px",
+        "width": "68px",
+        "height": "32px",
+        "fill": "#e7e7e7",
+        "radius": "7px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "menu-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu label",
+        "position": "absolute",
+        "left": "1373px",
+        "top": "957px",
+        "width": "47px",
+        "height": "auto",
+        "text": "MENU",
+        "fontName": "Inter",
+        "fontSize": "9px",
+        "lineHeight": "9.72px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    }
+  ]
+}
