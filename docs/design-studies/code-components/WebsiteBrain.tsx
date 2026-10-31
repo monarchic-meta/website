@@ -4328,17 +4328,298 @@ const drawCornerBrackets = (
   context.stroke();
 };
 
-// Cache only immutable geometry. Each renderer owns its mutable projection and
-// visibility buffers; one card's inspection must never rotate another card.
+// Inline-only derived-data cache. No imports, network, storage permission request,
+// or automatic website/Framer synchronization. Bump this manual source/schema
+// version whenever original anatomical generation or base render plans change.
+const BRAIN_DERIVED_CACHE_VERSION = "c5024620207d5a801582a745f16dc1663500b3bb20a455e9d6bd9b35364ecc7e:packed-v2"
+const BRAIN_DERIVED_CACHE_DB = "monarchic.website-brain.derived"
+const BRAIN_DERIVED_CACHE_STORE = "canonical"
+const BRAIN_DERIVED_CACHE_KEY = "data"
+const BRAIN_DERIVED_FIBERS = 3816
+const BRAIN_DERIVED_NODES = 93036
+const BRAIN_DERIVED_FAMILIES = ["association","cortical-fold","cortical-microfold","cortical-arc","deep","temporal-longitudinal","crown-longitudinal","crown-descending","frontal-diagonal","frontal-loop","frontal-surface","temporal-loop","posterior-fan","posterior-surface","projection-tract","central-tract","local-cortical","interior-depth","posterior-depth","cerebellar-folia","cerebellar-ridge","cerebellar-shell","cerebellar-bridge","stem"] as const
+const BRAIN_DERIVED_REGIONS = ["cerebrum","cerebellum","stem"] as const
+const BRAIN_DERIVED_TIERS = ["dim","medium","active"] as const
+const BRAIN_DERIVED_PLAN_FIELDS = ["strandOffset","strandDrift","strandBend","strandBendPhase","strandStart","strandEnd"] as const
+interface BrainCacheData { fibers: Fiber[]; plans: FiberRenderPlan[] }
+interface PackedBrainRecord {
+  schema: 1; version: string; fiberCount: number; nodeCount: number; strandCount: number; checksum: string
+  nodes: Uint32Array; strands: Uint32Array; points: Float32Array; fade: Float32Array; boundary: Float32Array
+  visibility: Uint8Array; planValues: Float32Array; metrics: Float64Array; tags: Uint8Array; flags: Uint8Array
+}
+interface BrainCacheRead { data?: BrainCacheData; readMs: number; reason: "hit"|"miss"|"absent"|"invalid"|"timeout"|"blocked"|"error" }
+interface BrainCacheHost {
+  getIndexedDB(): IDBFactory | undefined
+  now(): number
+  setTimer(callback: () => void, milliseconds: number): ReturnType<typeof globalThis.setTimeout>
+  clearTimer(timer: ReturnType<typeof globalThis.setTimeout>): void
+  readDeadlineMs: number; writeDeadlineMs: number; writeDelayMs: number
+}
+const brainCacheClock = () => typeof performance === "object" ? performance.now() : Date.now()
+function brainCacheTyped(value: unknown, name: string, length: number): boolean {
+  return ArrayBuffer.isView(value) && Object.prototype.toString.call(value) === "[object "+name+"]" && (value as unknown as {length:number}).length === length
+}
+function brainCacheFreeze(data: BrainCacheData): BrainCacheData {
+  // Nonempty typed arrays cannot be Object.freeze'd. Their bytes are read-only
+  // by contract: renderers copy projection buffers; WB-04 clones adjusted plans.
+  for (const fiber of data.fibers) Object.freeze(fiber)
+  for (const plan of data.plans) Object.freeze(plan)
+  Object.freeze(data.fibers); Object.freeze(data.plans); return Object.freeze(data)
+}
+function brainCacheChecksum(record: PackedBrainRecord, expired: () => boolean): string | undefined {
+  let a=0x811c9dc5,b=0x9e3779b9
+  const multiply=Math.imul
+  const planes=[record.nodes,record.strands,record.points,record.fade,record.boundary,record.visibility,record.planValues,record.metrics,record.tags,record.flags]
+  for (const plane of planes) {
+    // Packed planes own aligned buffers. Hash complete 32-bit words instead of
+    // repeating intrinsic/global lookups for every byte; preserve trailing bytes.
+    const words=new Uint32Array(plane.buffer,plane.byteOffset,plane.byteLength>>>2)
+    for(let i=0;i<words.length;i++) {
+      if((i&4095)===0&&expired())return
+      const word=words[i];a=multiply(a^word,0x01000193);b=multiply(b^word,0x85ebca6b)
+    }
+    const bytes=new Uint8Array(plane.buffer,plane.byteOffset,plane.byteLength)
+    for(let i=words.length*4;i<bytes.length;i++) {
+      const byte=bytes[i];a=multiply(a^byte,0x01000193);b=multiply(b^byte,0x85ebca6b)
+    }
+    a=multiply(a^bytes.length,0x01000193);b=multiply(b^bytes.length,0x85ebca6b)
+  }
+  // An accidental-corruption fingerprint, not a security/authenticity boundary.
+  return (a>>>0).toString(16).padStart(8,"0")+(b>>>0).toString(16).padStart(8,"0")
+}
+function brainCachePackedShape(value: unknown): value is PackedBrainRecord {
+  if(!value||typeof value!=="object")return false
+  const r=value as PackedBrainRecord,n=BRAIN_DERIVED_FIBERS,p=BRAIN_DERIVED_NODES,s=r.strandCount
+  return r.schema===1&&r.version===BRAIN_DERIVED_CACHE_VERSION&&r.fiberCount===n&&r.nodeCount===p&&Number.isInteger(s)&&s>=n&&s<=n*5&&typeof r.checksum==="string"&&/^[a-f0-9]{16}$/.test(r.checksum)
+    &&brainCacheTyped(r.nodes,"Uint32Array",n+1)&&brainCacheTyped(r.strands,"Uint32Array",n+1)
+    &&brainCacheTyped(r.points,"Float32Array",p*3)&&brainCacheTyped(r.fade,"Float32Array",p)&&brainCacheTyped(r.boundary,"Float32Array",p)
+    &&brainCacheTyped(r.visibility,"Uint8Array",s)&&brainCacheTyped(r.planValues,"Float32Array",s*6)
+    &&brainCacheTyped(r.metrics,"Float64Array",n*7)&&brainCacheTyped(r.tags,"Uint8Array",n*4)&&brainCacheTyped(r.flags,"Uint8Array",n)
+    &&[r.nodes,r.strands,r.points,r.fade,r.boundary,r.visibility,r.planValues,r.metrics,r.tags,r.flags].every(plane=>plane.byteOffset===0&&plane.buffer.byteLength===plane.byteLength&&Object.prototype.toString.call(plane.buffer)==="[object ArrayBuffer]")
+}
+function unpackBrainCache(value: unknown, deadline=Infinity, now=brainCacheClock): BrainCacheData | undefined {
+  try {
+    if(!brainCachePackedShape(value))return
+    const r=value,expired=()=>now()>deadline
+    if(expired()||r.nodes[0]!==0||r.strands[0]!==0||r.nodes[BRAIN_DERIVED_FIBERS]!==BRAIN_DERIVED_NODES||r.strands[BRAIN_DERIVED_FIBERS]!==r.strandCount)return
+    if(brainCacheChecksum(r,expired)!==r.checksum)return
+    const fibers: Fiber[]=[],plans: FiberRenderPlan[]=[]
+    const finite=(v:number,min:number,max:number)=>Number.isFinite(v)&&v>=min&&v<=max
+    for(let i=0;i<BRAIN_DERIVED_FIBERS;i++) {
+      if((i&31)===0&&expired())return
+      const a=r.nodes[i],z=r.nodes[i+1],sa=r.strands[i],sz=r.strands[i+1],count=z-a,strandCount=sz-sa,mi=i*7,ti=i*4,flags=r.flags[i]
+      if(count<2||count>512||strandCount<1||strandCount>5||z>BRAIN_DERIVED_NODES||sz>r.strandCount||flags>127)return
+      if(r.tags[ti]>=BRAIN_DERIVED_REGIONS.length||r.tags[ti+1]>=BRAIN_DERIVED_FAMILIES.length||r.tags[ti+2]>=BRAIN_DERIVED_TIERS.length||r.tags[ti+3]>3)return
+      const activityKey=r.metrics[mi],phase=r.metrics[mi+1],speed=r.metrics[mi+2],qualityRank=r.metrics[mi+3],bundleId=r.metrics[mi+4],strandSpread=r.metrics[mi+5],escapeStart=r.metrics[mi+6]
+      if(!finite(activityKey,0,1)||!finite(phase,0,1)||!finite(speed,0,1)||!finite(qualityRank,0,1)||!Number.isInteger(bundleId)||bundleId<0||bundleId>65535||!finite(strandSpread,0,4)||!Number.isInteger(escapeStart)||escapeStart< -1||escapeStart>=count)return
+      for(let k=a*3;k<z*3;k++)if(!finite(r.points[k],-16,16))return
+      for(let k=a;k<z;k++)if(!finite(r.fade[k],0,1)||!finite(r.boundary[k],0,1))return
+      for(let k=sa;k<sz;k++) {
+        if(r.visibility[k]>1)return
+        for(let plane=0;plane<6;plane++)if(!finite(r.planValues[plane*r.strandCount+k],-8,8))return
+        const start=r.planValues[4*r.strandCount+k],end=r.planValues[5*r.strandCount+k]
+        if(start<0||start>1||end<start||end>1)return
+      }
+      // Each recovered array owns its exact-sized ArrayBuffer. Existing geometry
+      // hash tests and consumers must not accidentally include adjacent views.
+      fibers.push({points:r.points.slice(a*3,z*3),projected:new Float32Array(count*3),pointFade:r.fade.slice(a,z),boundaryScale:r.boundary.slice(a,z),
+        region:BRAIN_DERIVED_REGIONS[r.tags[ti]],family:BRAIN_DERIVED_FAMILIES[r.tags[ti+1]],bundleTier:BRAIN_DERIVED_TIERS[r.tags[ti+2]],opacityBand:r.tags[ti+3] as OpacityBand,
+        active:Boolean(flags&1),particle:Boolean(flags&2),hot:Boolean(flags&4),corticalLandmark:Boolean(flags&8),visible:Boolean(flags&16),activityKey,phase,speed,qualityRank,bundleId,strandCount,strandSpread,escapeStart})
+      const plan={suppressed:Boolean(flags&32),liveSuppressed:Boolean(flags&64),strandVisible:r.visibility.slice(sa,sz)} as FiberRenderPlan
+      for(let plane=0;plane<6;plane++)plan[BRAIN_DERIVED_PLAN_FIELDS[plane]]=r.planValues.slice(plane*r.strandCount+sa,plane*r.strandCount+sz)
+      plans.push(plan)
+    }
+    if(expired())return
+    const data=brainCacheFreeze({fibers,plans})
+    return expired()?undefined:data
+  } catch { return }
+}
+function packBrainCache(data: BrainCacheData): PackedBrainRecord | undefined {
+  try {
+    if(data.fibers.length!==BRAIN_DERIVED_FIBERS||data.plans.length!==BRAIN_DERIVED_FIBERS)return
+    let nodeCount=0,strandCount=0
+    for(const fiber of data.fibers) {
+      const nodes=fiber.points?.length/3
+      if(!Number.isInteger(nodes)||nodes<2||nodes>512||!Number.isInteger(fiber.strandCount)||fiber.strandCount<1||fiber.strandCount>5)return
+      nodeCount+=nodes;strandCount+=fiber.strandCount
+      if(nodeCount>BRAIN_DERIVED_NODES)return
+    }
+    if(nodeCount!==BRAIN_DERIVED_NODES)return
+    const r:PackedBrainRecord={schema:1,version:BRAIN_DERIVED_CACHE_VERSION,fiberCount:BRAIN_DERIVED_FIBERS,nodeCount,strandCount,checksum:"",
+      nodes:new Uint32Array(BRAIN_DERIVED_FIBERS+1),strands:new Uint32Array(BRAIN_DERIVED_FIBERS+1),points:new Float32Array(nodeCount*3),fade:new Float32Array(nodeCount),boundary:new Float32Array(nodeCount),visibility:new Uint8Array(strandCount),planValues:new Float32Array(strandCount*6),metrics:new Float64Array(BRAIN_DERIVED_FIBERS*7),tags:new Uint8Array(BRAIN_DERIVED_FIBERS*4),flags:new Uint8Array(BRAIN_DERIVED_FIBERS)}
+    let node=0,strand=0
+    for(let i=0;i<BRAIN_DERIVED_FIBERS;i++) {
+      const f=data.fibers[i],p=data.plans[i],count=f.points.length/3,mi=i*7,ti=i*4
+      if(!brainCacheTyped(f.points,"Float32Array",count*3)||!brainCacheTyped(f.projected,"Float32Array",count*3)||!brainCacheTyped(f.pointFade,"Float32Array",count)||!brainCacheTyped(f.boundaryScale,"Float32Array",count)||!brainCacheTyped(p.strandVisible,"Uint8Array",f.strandCount))return
+      for(const value of f.projected)if(value!==0)return
+      r.nodes[i]=node;r.strands[i]=strand;r.points.set(f.points,node*3);r.fade.set(f.pointFade,node);r.boundary.set(f.boundaryScale,node);r.visibility.set(p.strandVisible,strand)
+      for(let plane=0;plane<6;plane++){const values=p[BRAIN_DERIVED_PLAN_FIELDS[plane]];if(!brainCacheTyped(values,"Float32Array",f.strandCount))return;r.planValues.set(values,plane*strandCount+strand)}
+      r.metrics.set([f.activityKey,f.phase,f.speed,f.qualityRank,f.bundleId,f.strandSpread,f.escapeStart],mi)
+      const region=BRAIN_DERIVED_REGIONS.indexOf(f.region),family=BRAIN_DERIVED_FAMILIES.indexOf(f.family),tier=BRAIN_DERIVED_TIERS.indexOf(f.bundleTier)
+      if(region<0||family<0||tier<0)return
+      r.tags.set([region,family,tier,f.opacityBand],ti)
+      r.flags[i]=(f.active?1:0)|(f.particle?2:0)|(f.hot?4:0)|(f.corticalLandmark?8:0)|(f.visible?16:0)|(p.suppressed?32:0)|(p.liveSuppressed?64:0)
+      node+=count;strand+=f.strandCount
+    }
+    r.nodes[BRAIN_DERIVED_FIBERS]=node;r.strands[BRAIN_DERIVED_FIBERS]=strand
+    r.checksum=brainCacheChecksum(r,()=>false)??""
+    return r
+  } catch { return }
+}
+function createBrainPersistentCache(overrides: Partial<BrainCacheHost> = {}) {
+  const host:BrainCacheHost={getIndexedDB:()=>globalThis.indexedDB,now:brainCacheClock,setTimer:(fn,ms)=>globalThis.setTimeout(fn,ms),clearTimer:id=>globalThis.clearTimeout(id),readDeadlineMs:200,writeDeadlineMs:250,writeDelayMs:300,...overrides}
+  const readBudget=Math.min(250,Math.max(0,host.readDeadlineMs)),writeBudget=Math.min(1000,Math.max(1,host.writeDeadlineMs))
+  let pendingRead:Promise<BrainCacheRead>|undefined,pendingWrite:Promise<boolean>|undefined,queuedData:BrainCacheData|undefined
+  const diagnostics={readReason:"unused",readMs:0,writeState:"unused"}
+  function read():Promise<BrainCacheRead> {
+    if(pendingRead)return pendingRead
+    const started=host.now(),deadline=started+readBudget
+    const task=new Promise<BrainCacheRead>(resolve=>{
+      let settled=false,db:IDBDatabase|undefined,timer:ReturnType<typeof globalThis.setTimeout>|undefined
+      const close=()=>{try{db?.close()}catch{}}
+      const finish=(reason:BrainCacheRead["reason"],data?:BrainCacheData)=>{if(settled)return;settled=true;if(timer!==undefined)host.clearTimer(timer);close();diagnostics.readReason=reason;diagnostics.readMs=host.now()-started;resolve({reason,readMs:diagnostics.readMs,...(data?{data}:{})})}
+      try {
+        // Access itself may throw SecurityError in a restricted iframe.
+        const indexedDB=host.getIndexedDB();if(!indexedDB){finish("absent");return}
+        timer=host.setTimer(()=>finish("timeout"),readBudget)
+        const request=indexedDB.open(BRAIN_DERIVED_CACHE_DB,1)
+        request.onerror=()=>finish("error");request.onblocked=()=>finish("blocked")
+        request.onupgradeneeded=()=>{db=request.result;try{if(!db.objectStoreNames.contains(BRAIN_DERIVED_CACHE_STORE))db.createObjectStore(BRAIN_DERIVED_CACHE_STORE)}catch{};if(settled){close();return}finish("miss")}
+        request.onsuccess=()=>{
+          db=request.result;db.onversionchange=()=>db?.close()
+          if(settled){close();return}
+          try {
+            const transaction=db.transaction(BRAIN_DERIVED_CACHE_STORE,"readonly"),get=transaction.objectStore(BRAIN_DERIVED_CACHE_STORE).get(BRAIN_DERIVED_CACHE_KEY)
+            transaction.onabort=()=>finish("error");transaction.onerror=()=>finish("error");get.onerror=()=>finish("error")
+            get.onsuccess=()=>{if(settled)return;try{if(host.now()>deadline){finish("timeout");return}const value=get.result,data=unpackBrainCache(value,deadline,host.now);finish(data?"hit":value===undefined?"miss":host.now()>deadline?"timeout":"invalid",data)}catch{finish("error")}}
+          } catch {finish("error")}
+        }
+      } catch {finish("error")}
+    })
+    pendingRead=task;void task.then(()=>{if(pendingRead===task)pendingRead=undefined});return task
+  }
+  function writeRecord(record:PackedBrainRecord):Promise<boolean> {
+    return new Promise(resolve=>{
+      let settled=false,db:IDBDatabase|undefined,transaction:IDBTransaction|undefined,timer:ReturnType<typeof globalThis.setTimeout>|undefined
+      const close=()=>{try{db?.close()}catch{}}
+      const finish=(passed:boolean)=>{if(settled)return;settled=true;if(timer!==undefined)host.clearTimer(timer);if(!passed)try{transaction?.abort()}catch{};close();resolve(passed)}
+      try {
+        const indexedDB=host.getIndexedDB();if(!indexedDB){finish(false);return}
+        timer=host.setTimer(()=>finish(false),writeBudget)
+        const request=indexedDB.open(BRAIN_DERIVED_CACHE_DB,1)
+        request.onerror=()=>finish(false);request.onblocked=()=>finish(false)
+        request.onupgradeneeded=()=>{db=request.result;try{if(!db.objectStoreNames.contains(BRAIN_DERIVED_CACHE_STORE))db.createObjectStore(BRAIN_DERIVED_CACHE_STORE)}catch{finish(false)}if(settled)close()}
+        request.onsuccess=()=>{
+          db=request.result;db.onversionchange=()=>db?.close();if(settled){close();return}
+          try {
+            transaction=db.transaction(BRAIN_DERIVED_CACHE_STORE,"readwrite")
+            transaction.oncomplete=()=>finish(true);transaction.onerror=()=>finish(false);transaction.onabort=()=>finish(false)
+            // Only this component's dedicated cache store is replaced. No other
+            // database/store is read, cleared, deleted or migrated.
+            const store=transaction.objectStore(BRAIN_DERIVED_CACHE_STORE);store.clear();store.put(record,BRAIN_DERIVED_CACHE_KEY)
+          } catch {finish(false)}
+        }
+      } catch {finish(false)}
+    })
+  }
+  function writeSoon(data:BrainCacheData):Promise<boolean> {
+    queuedData=data;if(pendingWrite)return pendingWrite
+    diagnostics.writeState="queued"
+    const task=new Promise<boolean>(resolve=>{
+      host.setTimer(()=>{
+        const latest=queuedData;queuedData=undefined
+        const record=latest?packBrainCache(latest):undefined
+        if(!record){diagnostics.writeState="invalid";resolve(false);return}
+        diagnostics.writeState="writing"
+        void writeRecord(record).then(passed=>{diagnostics.writeState=passed?"saved":"unavailable";resolve(passed)},()=>{diagnostics.writeState="unavailable";resolve(false)})
+      },Math.max(0,host.writeDelayMs))
+    })
+    pendingWrite=task;void task.then(()=>{if(pendingWrite===task)pendingWrite=undefined;if(queuedData)void writeSoon(queuedData)});return task
+  }
+  return {read,writeSoon,getDiagnostics:()=>({...diagnostics}),version:BRAIN_DERIVED_CACHE_VERSION}
+}
+
+// Strip this final export declaration when inlining into a standalone component.
+
+// Share exact immutable anatomy and base plans across standalone materials.
+// The schema/source key prevents HMR or a later geometry revision from reusing
+// incompatible buffers. Renderer projections and WB-04 adjustments stay local.
+const BRAIN_GEOMETRY_KEY = Symbol.for("monarchic.website-brain.anatomy.v1.c5024620207d5a801582a745f16dc1663500b3bb20a455e9d6bd9b35364ecc7e")
+interface PreparedBrainGeometry {
+    fibers: Fiber[]; plans: FiberRenderPlan[]; origin: "generated" | "persistent"
+    geometryMs: number; plansMs: number; startedAt: number; readyAt: number
+    persistentReadMs?: number; persistentReadReason?: BrainCacheRead["reason"]
+}
+interface SharedBrainGeometry { state: "pending" | "ready"; startedAt: number; promise: Promise<PreparedBrainGeometry> }
+interface BrainLoadProfile {
+    cacheSource: "generated" | "persistent" | "shared-pending" | "shared-ready"
+    origin?: "generated" | "persistent"; moduleStartedAt: number; moduleWaitMs?: number
+    geometryMs?: number; plansMs?: number; startedAt?: number; readyAt?: number
+    persistentReadMs?: number; persistentReadReason?: BrainCacheRead["reason"]
+}
 let preparedFibers: Fiber[] | undefined
+let preparedRenderPlans: FiberRenderPlan[] | undefined
 let geometryPreparation: Promise<Fiber[]> | undefined
+let brainLoadProfile: BrainLoadProfile | undefined
 const consumedTraces = new WeakMap<HTMLElement, number>()
+let persistentBrainCache: ReturnType<typeof createBrainPersistentCache> | undefined
+function getPersistentBrainCache() {
+    return persistentBrainCache ??= createBrainPersistentCache()
+}
+async function buildBrainGeometry(): Promise<PreparedBrainGeometry> {
+    const startedAt = performance.now(), cache = getPersistentBrainCache()
+    let stored: BrainCacheRead
+    // Only storage failures are recoverable here. A generation rejection must
+    // reach the shared-job retry path, never start a second hidden generation.
+    try { stored = await cache.read() }
+    catch { stored = { reason: "error", readMs: performance.now() - startedAt } }
+    if (stored.data) return { ...stored.data, origin: "persistent", geometryMs: 0, plansMs: 0, startedAt, readyAt: performance.now(), persistentReadMs: stored.readMs, persistentReadReason: stored.reason }
+    const generationStartedAt = performance.now()
+    const fibers = await createFiberField()
+    const geometryReadyAt = performance.now()
+    const plans = fibers.map(createFiberRenderPlan)
+    const readyAt = performance.now()
+    // Unsupported/restricted storage must not incur a useless packing job.
+    // Supported cache misses/corruption are saved after the first-frame window.
+    if (stored.reason === "miss" || stored.reason === "invalid") {
+        try { void cache.writeSoon({ fibers, plans }).catch(() => {}) } catch { /* Optional cache writes never block drawing. */ }
+    }
+    return { fibers, plans, origin: "generated", geometryMs: geometryReadyAt - generationStartedAt, plansMs: readyAt - geometryReadyAt, startedAt, readyAt, persistentReadMs: stored.readMs, persistentReadReason: stored.reason }
+}
+function getPreparedRenderPlans(): FiberRenderPlan[] {
+    if (!preparedRenderPlans) throw new Error("The anatomical render plans are not ready.")
+    return preparedRenderPlans
+}
+function getBrainLoadProfile() {
+    return { version: 1, geometrySource: "c5024620207d5a801582a745f16dc1663500b3bb20a455e9d6bd9b35364ecc7e", state: preparedFibers ? "ready" : geometryPreparation ? "pending" : "empty", ...brainLoadProfile }
+}
 function prepareGeometry(): Promise<Fiber[]> {
     if (preparedFibers) return Promise.resolve(preparedFibers)
-    if (!geometryPreparation) geometryPreparation = createFiberField().then(fibers => {
-        preparedFibers = fibers
-        return fibers
-    }).catch(error => { geometryPreparation = undefined; throw error })
+    if (!geometryPreparation) {
+        const realm = window as unknown as { [key: symbol]: SharedBrainGeometry | undefined }
+        let shared = realm[BRAIN_GEOMETRY_KEY]
+        const moduleStartedAt = performance.now()
+        const cacheSource = shared ? shared.state === "ready" ? "shared-ready" : "shared-pending" : "generated"
+        if (!shared) {
+            const resource = { state: "pending" as "pending" | "ready", startedAt: moduleStartedAt, promise: undefined as unknown as Promise<PreparedBrainGeometry> }
+            // Defer the CPU work until after the shared promise is installed:
+            // simultaneous modules then join one job instead of starting four.
+            resource.promise = Promise.resolve().then(buildBrainGeometry).then(value => { resource.state = "ready"; return value })
+            realm[BRAIN_GEOMETRY_KEY] = resource
+            shared = resource
+        }
+        const resource = shared
+        brainLoadProfile = { cacheSource, moduleStartedAt }
+        geometryPreparation = resource.promise.then(value => {
+            preparedFibers = value.fibers; preparedRenderPlans = value.plans
+            brainLoadProfile = { cacheSource: cacheSource === "generated" && value.origin === "persistent" ? "persistent" : cacheSource, origin: value.origin, moduleStartedAt, moduleWaitMs: performance.now() - moduleStartedAt, geometryMs: value.geometryMs, plansMs: value.plansMs, startedAt: value.startedAt, readyAt: value.readyAt, persistentReadMs: value.persistentReadMs, persistentReadReason: value.persistentReadReason }
+            return value.fibers
+        }).catch(error => {
+            if (realm[BRAIN_GEOMETRY_KEY] === resource) delete realm[BRAIN_GEOMETRY_KEY]
+            geometryPreparation = undefined; preparedFibers = undefined; preparedRenderPlans = undefined
+            throw error
+        })
+    }
     return geometryPreparation
 }
 
@@ -4353,7 +4634,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
   if (!staticContext || !context) throw new Error("Canvas 2D is unavailable in this browser.")
   let staticBitmap: ImageBitmap | undefined, substrateGeneration = 0
   const fibers: Fiber[] = preparedFibers.map(fiber => ({ ...fiber, projected: new Float32Array(fiber.points.length), visible: false }))
-  const renderPlans = fibers.map(createFiberRenderPlan);
+  const renderPlans = getPreparedRenderPlans();
   const executionWaveEligible = new Uint8Array(fibers.length);
   const executionWaveBias = new Float32Array(fibers.length);
   const constructionWaveEligible = new Uint8Array(fibers.length);
@@ -5065,7 +5346,7 @@ function createRenderer(canvas: HTMLCanvasElement, initial: Settings, notify: (s
       // Preserve the website's separate immutable substrate without retaining a
       // second working canvas for every live frame. The coordinator pixel cap
       // describes the output; this separate cache has the same maximum size.
-      if (typeof createImageBitmap === "function") {
+      if (!settings.static && typeof createImageBitmap === "function") {
         try {
           void createImageBitmap(staticCanvas).then(bitmap => {
             if (disposed || generation !== substrateGeneration) { bitmap.close(); return; }
@@ -7550,10 +7831,42 @@ export default function WebsiteBrain(props: Props) {
     const serial = React.useRef(0), lastScroll = React.useRef(-Infinity)
     React.useEffect(() => {
         let active = true
-        prepareGeometry().then(() => { if (active) setReady(true) }).catch(error => { if (active) setError(String(error)) })
+        const host = root.current, surface = canvas.current, mountedAt = performance.now()
+        const localCache = preparedFibers ? "module-ready" : geometryPreparation ? "module-pending" : undefined
+        if (host) {
+            host.dataset.brainMountAt = mountedAt.toFixed(2); host.dataset.brainLoadState = "preparing"
+            delete host.dataset.brainFirstFrameAt; delete host.dataset.brainFirstFrameMs
+        }
+        // Observe the coordinator's committed, resolution-adequate frame. This
+        // also measures cached-copy first frames which never call a renderer.
+        const observeFrame = () => {
+            if (!active || !host || !surface || host.dataset.brainFirstFrameAt) return
+            const state = surface.getAttribute("data-study-state")
+            if (state !== "ready" && state !== "live" && state !== "primed") return
+            const now = performance.now()
+            host.dataset.brainFirstFrameAt = now.toFixed(2); host.dataset.brainFirstFrameMs = (now - mountedAt).toFixed(2)
+            host.dataset.brainLoadState = "painted"
+        }
+        const frameObserver = surface ? new MutationObserver(observeFrame) : undefined
+        if (surface) frameObserver?.observe(surface, { attributes: true, attributeFilter: ["data-study-state", "data-study-frame-width", "data-study-frame-height"] })
+        prepareGeometry().then(() => {
+            if (!active) return
+            const profile = getBrainLoadProfile()
+            if (host) {
+                host.dataset.brainCacheSource = localCache ?? profile.cacheSource ?? "generated"
+                host.dataset.brainGeometryOrigin = profile.origin ?? "generated"
+                host.dataset.brainCacheReadMs = (profile.persistentReadMs ?? 0).toFixed(2)
+                host.dataset.brainCacheReadReason = profile.persistentReadReason ?? "unused"
+                host.dataset.brainGeometryMs = (profile.geometryMs ?? 0).toFixed(2)
+                host.dataset.brainPlansMs = (profile.plansMs ?? 0).toFixed(2)
+                host.dataset.brainPrepareMs = (performance.now() - mountedAt).toFixed(2)
+                host.dataset.brainLoadState = host.dataset.brainFirstFrameAt ? "painted" : "ready"
+            }
+            setReady(true); observeFrame()
+        }).catch(error => { if (active) { if (host) host.dataset.brainLoadState = "error"; setError(String(error)) } })
         const scroll = () => { lastScroll.current = performance.now(); if (root.current) { root.current.dataset.brainPointerSuppressed = "true"; root.current.dataset.brainPointerActive = "false" } }
         window.addEventListener("scroll", scroll, { passive: true, capture: true })
-        return () => { active = false; window.removeEventListener("scroll", scroll, true) }
+        return () => { active = false; frameObserver?.disconnect(); window.removeEventListener("scroll", scroll, true) }
     }, [])
     const settings: Settings = { mode: "website-brain", animate: animate && !paused, static: isStatic, canvasPreview,
         speed: Math.max(0, speed), stillTime, interactive, primary: "#ffd21a", secondary: "#ffffff", ink: "#000000", trace }

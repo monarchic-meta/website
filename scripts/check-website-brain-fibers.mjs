@@ -17,10 +17,12 @@ const sha=data=>crypto.createHash('sha256').update(data).digest('hex');
 const checks=[];
 const check=(name,fn)=>{fn();checks.push({name,passed:true})};
 const priorSources={
-  'WebsiteBrain.tsx':'3b4daaef8469f119271233ab0b530851939234e3d06fb5092f01dd5b67dcf0d4',
-  'WebsiteBrainDither.tsx':'785f81ad5548dc05b7cc96e4509ea168fe335faac205635780f6ec3f796b2da1',
+  'WebsiteBrain.tsx':'922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1',
+  'WebsiteBrainDither.tsx':'b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2',
 };
-check('WB-01 and WB-02 bytes preserved',()=>{
+// These reviewed versions include the authorized shared/persistent load adapter.
+// The separate load check binds unchanged anatomy/drawing to the earlier source.
+check('WB-01 and WB-02 match the reviewed optimized source versions',()=>{
   for(const [name,expected]of Object.entries(priorSources))assert.equal(sha(fs.readFileSync(path.join(repo,'docs/design-studies/code-components',name))),expected);
 });
 const original=fs.readFileSync(path.join(repo,'src/scripts/interactive-brain.ts'),'utf8');
