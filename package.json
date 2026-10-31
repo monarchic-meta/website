@@ -40,7 +40,8 @@
     "check:framer-studies": "node scripts/check-framer-study-resources.mjs",
     "check:website-brain": "node scripts/check-website-brain-port.mjs",
     "check:website-brain-dither": "node scripts/check-website-brain-dither.mjs",
-    "check:website-brain-text": "node scripts/check-website-brain-text.mjs"
+    "check:website-brain-text": "node scripts/check-website-brain-text.mjs",
+    "check:website-brain-fibers": "node scripts/check-website-brain-fibers.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
