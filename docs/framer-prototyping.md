@@ -32,6 +32,9 @@ brings the current site's procedural neural artwork into its own Framer specimen
 page, retaining a manual handoff between the implementations.
 The separate [ordered-dither brain](design-studies/code-components/website-brain-dither.md)
 explores a live limited-palette treatment alongside that unchanged port.
+The [text-dither](design-studies/code-components/website-brain-text.md) and
+[refined-fiber](design-studies/code-components/website-brain-fibers.md) variants
+extend the same anatomical artwork with distinct live rendering treatments.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and
