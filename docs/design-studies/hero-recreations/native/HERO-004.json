@@ -1,0 +1,915 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-004",
+  "title": "Artemii Lebedev / utility overlay and work index",
+  "creator": "Artemii Lebedev",
+  "url": "https://artemiilebedev.com/",
+  "gallery": "https://www.siteinspire.com/website/13624-artemii-lebedev",
+  "background": "#7d8585",
+  "note": "Native utility overlay, eight-row work index and sampled viewport framing. A plain dark viewport replaces the film; no new scenery or source footage. Type and secondary labels are simplified; video, hold and effects controls are not implemented.",
+  "classification": "SOURCE INSPIRATION / STATIC NATIVE RECREATION",
+  "width": 1440,
+  "height": 1000,
+  "sourceEvidence": {
+    "capture": "sources/HERO-004-primary-0.png",
+    "inspected": "2026-10-31",
+    "scope": "Current primary utility/index geometry; source moving-image field retained only as comparison media."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "source-viewport-framing",
+      "parent": "stage",
+      "attrs": {
+        "name": "source viewport framing",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "field-center-vertical",
+      "parent": "source-viewport-framing",
+      "attrs": {
+        "name": "field center vertical",
+        "position": "absolute",
+        "left": "220px",
+        "top": "497px",
+        "width": "1000px",
+        "height": "6px",
+        "fill": "#111616",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "field-horizontal",
+      "parent": "source-viewport-framing",
+      "attrs": {
+        "name": "field horizontal",
+        "position": "absolute",
+        "left": "0px",
+        "top": "502px",
+        "width": "1440px",
+        "height": "6px",
+        "fill": "#111616",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-dark-viewport-bezel",
+      "parent": "source-viewport-framing",
+      "attrs": {
+        "name": "neutral dark viewport bezel",
+        "position": "absolute",
+        "left": "232px",
+        "top": "116px",
+        "width": "984px",
+        "height": "766px",
+        "fill": "#171b1b"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-dark-viewport",
+      "parent": "source-viewport-framing",
+      "attrs": {
+        "name": "neutral dark viewport",
+        "position": "absolute",
+        "left": "241px",
+        "top": "125px",
+        "width": "966px",
+        "height": "748px",
+        "fill": "#050505"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "white-utility-panel",
+      "parent": "stage",
+      "attrs": {
+        "name": "white utility panel",
+        "position": "absolute",
+        "left": "14px",
+        "top": "17px",
+        "width": "504px",
+        "height": "315px",
+        "fill": "#ffffff",
+        "radius": "2px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "source-identity",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "source identity",
+        "position": "absolute",
+        "left": "14px",
+        "top": "16px",
+        "width": "230px",
+        "height": "auto",
+        "text": "ARTEMII LEBEDEV\nART DIRECTOR & DESIGNER",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "navigation-column",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "navigation column",
+        "position": "absolute",
+        "left": "252px",
+        "top": "16px",
+        "width": "210px",
+        "height": "auto",
+        "text": "WORK\nALTER-EGO\nJOURNAL\nINFORMATION\nARCHIVE\nCONTACT",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "19px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "expand-annotation",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "expand annotation",
+        "position": "absolute",
+        "left": "439px",
+        "top": "16px",
+        "width": "64px",
+        "height": "auto",
+        "text": "+",
+        "fontName": "Inter",
+        "fontSize": "15px",
+        "lineHeight": "16.2px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "utility-bottom-rule",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "utility bottom rule",
+        "position": "absolute",
+        "left": "0px",
+        "top": "231.5px",
+        "width": "504px",
+        "height": "1px",
+        "fill": "#b0b0b0",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "project-count-square",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "project count square",
+        "position": "absolute",
+        "left": "14px",
+        "top": "250px",
+        "width": "23px",
+        "height": "23px",
+        "fill": "#000000"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-count",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "project count",
+        "position": "absolute",
+        "left": "21px",
+        "top": "255px",
+        "width": "20px",
+        "height": "auto",
+        "text": "6",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#ffffff",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-count-caption",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "project count caption",
+        "position": "absolute",
+        "left": "14px",
+        "top": "281px",
+        "width": "230px",
+        "height": "auto",
+        "text": "ONGOING PROJECTS",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "commissions-column",
+      "parent": "white-utility-panel",
+      "attrs": {
+        "name": "commissions column",
+        "position": "absolute",
+        "left": "252px",
+        "top": "252px",
+        "width": "230px",
+        "height": "auto",
+        "text": "COMMISSIONS\nCONTACT / INDEX",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "top-annotation-center",
+      "parent": "stage",
+      "attrs": {
+        "name": "top annotation center",
+        "position": "absolute",
+        "left": "662px",
+        "top": "18px",
+        "width": "400px",
+        "height": "auto",
+        "text": "INTERFACE / SELECTED STATE",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "top-right-location",
+      "parent": "stage",
+      "attrs": {
+        "name": "top right location",
+        "position": "absolute",
+        "left": "1045px",
+        "top": "18px",
+        "width": "360px",
+        "height": "auto",
+        "text": "PORTFOLIO STUDY / 2026",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "selected-work-chip",
+      "parent": "stage",
+      "attrs": {
+        "name": "selected work chip",
+        "position": "absolute",
+        "left": "14px",
+        "top": "392px",
+        "width": "113px",
+        "height": "28px",
+        "fill": "#eeeeee",
+        "radius": "2px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "selected-work-caption",
+      "parent": "selected-work-chip",
+      "attrs": {
+        "name": "selected work caption",
+        "position": "absolute",
+        "left": "8px",
+        "top": "8px",
+        "width": "110px",
+        "height": "auto",
+        "text": "SELECTED WORK",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "floating-aligned-work-index",
+      "parent": "stage",
+      "attrs": {
+        "name": "floating aligned work index",
+        "position": "absolute",
+        "left": "662px",
+        "top": "392px",
+        "width": "765px",
+        "height": "240px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "active-project-strip",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "active project strip",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "598px",
+        "height": "25px",
+        "fill": "#eeeeee"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-0",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 0",
+        "position": "absolute",
+        "left": "5px",
+        "top": "6px",
+        "width": "365px",
+        "height": "auto",
+        "text": "PONDER AI",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-0",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 0",
+        "position": "absolute",
+        "left": "383px",
+        "top": "6px",
+        "width": "210px",
+        "height": "auto",
+        "text": "SOFTWARE",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-0",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 0",
+        "position": "absolute",
+        "left": "728px",
+        "top": "6px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2026",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-1",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 1",
+        "position": "absolute",
+        "left": "5px",
+        "top": "35px",
+        "width": "365px",
+        "height": "auto",
+        "text": "CANTOR8",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-1",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 1",
+        "position": "absolute",
+        "left": "383px",
+        "top": "35px",
+        "width": "210px",
+        "height": "auto",
+        "text": "BUSINESS",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-1",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 1",
+        "position": "absolute",
+        "left": "728px",
+        "top": "35px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2026",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-2",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 2",
+        "position": "absolute",
+        "left": "5px",
+        "top": "64px",
+        "width": "365px",
+        "height": "auto",
+        "text": "A BETTER LOU",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-2",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 2",
+        "position": "absolute",
+        "left": "383px",
+        "top": "64px",
+        "width": "210px",
+        "height": "auto",
+        "text": "HEALTHCARE",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-2",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 2",
+        "position": "absolute",
+        "left": "728px",
+        "top": "64px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2026",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-3",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 3",
+        "position": "absolute",
+        "left": "5px",
+        "top": "93px",
+        "width": "365px",
+        "height": "auto",
+        "text": "FREQUENCY BREATHWORK",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-3",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 3",
+        "position": "absolute",
+        "left": "383px",
+        "top": "93px",
+        "width": "210px",
+        "height": "auto",
+        "text": "WELLNESS",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-3",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 3",
+        "position": "absolute",
+        "left": "728px",
+        "top": "93px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2026",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-4",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 4",
+        "position": "absolute",
+        "left": "5px",
+        "top": "122px",
+        "width": "365px",
+        "height": "auto",
+        "text": "GOOM GUM",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-4",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 4",
+        "position": "absolute",
+        "left": "383px",
+        "top": "122px",
+        "width": "210px",
+        "height": "auto",
+        "text": "MUSIC",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-4",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 4",
+        "position": "absolute",
+        "left": "728px",
+        "top": "122px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2025",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-5",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 5",
+        "position": "absolute",
+        "left": "5px",
+        "top": "151px",
+        "width": "365px",
+        "height": "auto",
+        "text": "MONOLITH STUDIO",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-5",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 5",
+        "position": "absolute",
+        "left": "383px",
+        "top": "151px",
+        "width": "210px",
+        "height": "auto",
+        "text": "TATTOO",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-5",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 5",
+        "position": "absolute",
+        "left": "728px",
+        "top": "151px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2024",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-6",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 6",
+        "position": "absolute",
+        "left": "5px",
+        "top": "180px",
+        "width": "365px",
+        "height": "auto",
+        "text": "HUNGRY TIGER",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-6",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 6",
+        "position": "absolute",
+        "left": "383px",
+        "top": "180px",
+        "width": "210px",
+        "height": "auto",
+        "text": "FOOD & DRINK",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-6",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 6",
+        "position": "absolute",
+        "left": "728px",
+        "top": "180px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2025",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-name-7",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project name 7",
+        "position": "absolute",
+        "left": "5px",
+        "top": "209px",
+        "width": "365px",
+        "height": "auto",
+        "text": "OXI INSTRUMENTS",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-class-7",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project class 7",
+        "position": "absolute",
+        "left": "383px",
+        "top": "209px",
+        "width": "210px",
+        "height": "auto",
+        "text": "MUSIC INSTRUMENTS",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#d4d7d7",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "project-year-7",
+      "parent": "floating-aligned-work-index",
+      "attrs": {
+        "name": "project year 7",
+        "position": "absolute",
+        "left": "728px",
+        "top": "209px",
+        "width": "60px",
+        "height": "auto",
+        "text": "2025",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.96px",
+        "textColor": "#e6e8e8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "film-standin-caption",
+      "parent": "stage",
+      "attrs": {
+        "name": "film standin caption",
+        "position": "absolute",
+        "left": "259px",
+        "top": "841px",
+        "width": "800px",
+        "height": "auto",
+        "text": "SOURCE FILM OMITTED / NATIVE VIEWPORT FRAMING STUDY",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#8c9292",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "lower-left-annotation",
+      "parent": "stage",
+      "attrs": {
+        "name": "lower left annotation",
+        "position": "absolute",
+        "left": "14px",
+        "top": "969px",
+        "width": "550px",
+        "height": "auto",
+        "text": "SOURCE INSPIRATION / STATIC OVERLAY",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#eeeeee",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "corner-control-ring",
+      "parent": "stage",
+      "attrs": {
+        "name": "corner control ring",
+        "position": "absolute",
+        "left": "1362px",
+        "top": "917px",
+        "width": "58px",
+        "height": "58px",
+        "radius": "50%",
+        "borderWidth": "1px",
+        "borderColor": "#c6cccc",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "corner-control-dot-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "corner control dot 0",
+        "position": "absolute",
+        "left": "1377px",
+        "top": "944px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#e5eaea",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#e5eaea",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "corner-control-dot-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "corner control dot 1",
+        "position": "absolute",
+        "left": "1389px",
+        "top": "944px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#e5eaea",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#e5eaea",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "corner-control-dot-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "corner control dot 2",
+        "position": "absolute",
+        "left": "1401px",
+        "top": "944px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#e5eaea",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#e5eaea",
+        "borderStyle": "solid"
+      }
+    }
+  ]
+}
