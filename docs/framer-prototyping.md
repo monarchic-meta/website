@@ -30,6 +30,8 @@ explore distinct artwork and composition within that language.
 The [website brain field port](design-studies/code-components/website-brain.md)
 brings the current site's procedural neural artwork into its own Framer specimen
 page, retaining a manual handoff between the implementations.
+The separate [ordered-dither brain](design-studies/code-components/website-brain-dither.md)
+explores a live limited-palette treatment alongside that unchanged port.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and

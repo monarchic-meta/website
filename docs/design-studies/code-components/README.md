@@ -13,6 +13,8 @@ The [website brain field](website-brain.md) is a separate manual port of the
 implemented Monarchic homepage element. It preserves that element's anatomical
 Canvas 2D fibers and interactions in a reusable Framer component, rather than
 adding another source-led bookmark adaptation.
+Its separate [WB-02 ordered-dither variant](website-brain-dither.md) explores a
+limited-palette live surface while preserving the original port.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)
