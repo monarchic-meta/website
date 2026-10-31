@@ -37,7 +37,8 @@
     "smoke:development": "MONARCHIC_WEBSITE_SMOKE_URL=https://website-dev-monarchic.vercel.app MONARCHIC_WEBSITE_EXPECTED_CANONICAL_URL=https://website-dev-monarchic.vercel.app MONARCHIC_WEBSITE_EXPECTED_APP_URL=https://staging-app.monarchic.io node scripts/smoke-production.mjs",
     "smoke:staging": "MONARCHIC_WEBSITE_SMOKE_URL=https://staging.monarchic.io MONARCHIC_WEBSITE_EXPECTED_CANONICAL_URL=https://staging.monarchic.io MONARCHIC_WEBSITE_EXPECTED_APP_URL=https://staging-app.monarchic.io node scripts/smoke-production.mjs",
     "astro": "astro",
-    "check:framer-studies": "node scripts/check-framer-study-resources.mjs"
+    "check:framer-studies": "node scripts/check-framer-study-resources.mjs",
+    "check:website-brain": "node scripts/check-website-brain-port.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
