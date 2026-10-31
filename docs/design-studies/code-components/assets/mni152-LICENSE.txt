@@ -1,0 +1,34 @@
+MNI ICBM152 nonlinear 2009 atlas — retained notice
+
+Copyright (C) 1993–2004 Louis Collins, McConnell Brain Imaging Centre,
+Montreal Neurological Institute, McGill University. Permission to use, copy,
+modify, and distribute this software and its documentation for any purpose
+and without fee is hereby granted, provided that the above copyright notice
+appear in all copies. The authors and McGill University make no representations
+about the suitability of this software for any purpose. It is provided "as is"
+without express or implied warranty.
+The authors are not responsible for any data loss, equipment damage, property
+loss, or injury to subjects or patients resulting from the use or misuse of
+this software package.
+
+Notice source (accessed 2026-10-31):
+https://www.mcgill.ca/bic/software/tools-data-analysis/anatomical-mri/atlases/icbm152-non-linear-2009
+
+Mesh distribution and attribution:
+Chris Rorden / Surf Ice, sample/mni152_2009mini.mz3
+https://github.com/neurolabusc/surf-ice/blob/69f80b6e676ce56d1d99825c3579e59fc1e7e419/sample/mni152_2009mini.mz3
+Source SHA-256: 05f9c228c4608c47f2d11542fa2bb8b8d75d9f8c5bf2d3ed4930d303a72f95a7
+Source size: 508369 bytes
+
+The accompanying reference ties the surface to brain extraction of the MNI152
+average MRI template, using an intensity-50 isosurface. It names the older
+mni152_2009_50.gii file; the mini file's reduction parameters are undocumented.
+https://github.com/neurolabusc/surf-ice/blob/69f80b6e676ce56d1d99825c3579e59fc1e7e419/sample/Reference.txt
+https://github.com/neurolabusc/surf-ice/commit/1642bd28c475c8d524f9302baeb2497e742366e4
+https://neurostars.org/t/how-to-draw-symbols-which-indicate-stimulation-locations-on-rendered-brain/26611/16
+
+Repository adaptation: all mini-file triangles are retained, vertices reindexed,
+coordinates transformed and quantized, normals packed, and a local cavity
+shading term added for two source-led graphic treatments. No new anatomical
+reconstruction is claimed. The Surf Ice software BSD license is not substituted
+for the atlas notice above. See ../solid-brain.md for preparation details.
