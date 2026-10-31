@@ -1,0 +1,1512 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-010",
+  "title": "G!theimagineers / contour rails",
+  "creator": "G!theimagineers / Index Studio",
+  "url": "https://www.gtheimagineers.com/en.html",
+  "gallery": "https://httpster.net/website/gtheimagineers/",
+  "background": "#080808",
+  "note": "Static expanded Vision composition from the inspected archive.23 measured offset circles remain native ellipses. Source prose is replaced with neutral text; hairlines and smaller geometry are approximated. No accordion/motion claimed.",
+  "classification": "SOURCE INSPIRATION / STATIC NATIVE RECREATION",
+  "width": 1440,
+  "height": 1000,
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "archive-field",
+      "parent": "stage",
+      "attrs": {
+        "name": "archive field",
+        "position": "absolute",
+        "left": "0px",
+        "top": "50px",
+        "width": "1440px",
+        "height": "900px",
+        "fill": "#000000"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "numbered-rails",
+      "parent": "stage",
+      "attrs": {
+        "name": "numbered rails",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vision-measured-native-circles",
+      "parent": "stage",
+      "attrs": {
+        "name": "vision measured native circles",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-prose-and-small-symbols",
+      "parent": "stage",
+      "attrs": {
+        "name": "neutral prose and small symbols",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-65",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 65",
+        "position": "absolute",
+        "left": "-385px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-129",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 129",
+        "position": "absolute",
+        "left": "-321px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-720",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 720",
+        "position": "absolute",
+        "left": "270px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-1247",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 1247",
+        "position": "absolute",
+        "left": "797px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-1312",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 1312",
+        "position": "absolute",
+        "left": "862px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-rule-1376",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "vertical rule 1376",
+        "position": "absolute",
+        "left": "926px",
+        "top": "499.6px",
+        "width": "900px",
+        "height": "0.8px",
+        "fill": "#b6bbb2",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-row-rule",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "right row rule",
+        "position": "absolute",
+        "left": "720px",
+        "top": "555.6px",
+        "width": "527px",
+        "height": "0.8px",
+        "fill": "#aab1a7",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "star-column-rule",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "star column rule",
+        "position": "absolute",
+        "left": "670px",
+        "top": "752.6px",
+        "width": "394px",
+        "height": "0.8px",
+        "fill": "#aab1a7",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-number-01",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail number 01",
+        "position": "absolute",
+        "left": "91px",
+        "top": "78px",
+        "width": "45px",
+        "height": "auto",
+        "text": "01",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#f4f4f0",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-title-01",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail title 01",
+        "position": "absolute",
+        "left": "23px",
+        "top": "840px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Manifeste",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c4c9bf",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-number-02",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail number 02",
+        "position": "absolute",
+        "left": "154px",
+        "top": "78px",
+        "width": "45px",
+        "height": "auto",
+        "text": "02",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#f4f4f0",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-title-02",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail title 02",
+        "position": "absolute",
+        "left": "86px",
+        "top": "840px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Vision",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c4c9bf",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-number-03",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail number 03",
+        "position": "absolute",
+        "left": "1276px",
+        "top": "78px",
+        "width": "45px",
+        "height": "auto",
+        "text": "03",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#f4f4f0",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-title-03",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail title 03",
+        "position": "absolute",
+        "left": "1208px",
+        "top": "840px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Perspective",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c4c9bf",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-number-04",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail number 04",
+        "position": "absolute",
+        "left": "1340px",
+        "top": "78px",
+        "width": "45px",
+        "height": "auto",
+        "text": "04",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#f4f4f0",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-title-04",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail title 04",
+        "position": "absolute",
+        "left": "1272px",
+        "top": "840px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Experience",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c4c9bf",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-number-05",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail number 05",
+        "position": "absolute",
+        "left": "1407px",
+        "top": "78px",
+        "width": "45px",
+        "height": "auto",
+        "text": "05",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#f4f4f0",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rail-title-05",
+      "parent": "numbered-rails",
+      "attrs": {
+        "name": "rail title 05",
+        "position": "absolute",
+        "left": "1339px",
+        "top": "840px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Contact",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "textColor": "#c4c9bf",
+        "paragraphSpacing": 0,
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-0-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 0 0",
+        "position": "absolute",
+        "left": "19.3px",
+        "top": "73.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-0-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 0 1",
+        "position": "absolute",
+        "left": "25.8px",
+        "top": "73.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-0-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 0 2",
+        "position": "absolute",
+        "left": "32.3px",
+        "top": "73.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-0-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 0 3",
+        "position": "absolute",
+        "left": "38.8px",
+        "top": "73.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-0-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 0 4",
+        "position": "absolute",
+        "left": "45.3px",
+        "top": "73.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-1-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 1 0",
+        "position": "absolute",
+        "left": "19.3px",
+        "top": "79.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-1-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 1 1",
+        "position": "absolute",
+        "left": "25.8px",
+        "top": "79.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-1-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 1 2",
+        "position": "absolute",
+        "left": "32.3px",
+        "top": "79.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-1-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 1 3",
+        "position": "absolute",
+        "left": "38.8px",
+        "top": "79.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-1-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 1 4",
+        "position": "absolute",
+        "left": "45.3px",
+        "top": "79.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-2-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 2 0",
+        "position": "absolute",
+        "left": "19.3px",
+        "top": "86.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-2-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 2 1",
+        "position": "absolute",
+        "left": "25.8px",
+        "top": "86.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-2-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 2 2",
+        "position": "absolute",
+        "left": "32.3px",
+        "top": "86.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-2-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 2 3",
+        "position": "absolute",
+        "left": "38.8px",
+        "top": "86.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-2-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 2 4",
+        "position": "absolute",
+        "left": "45.3px",
+        "top": "86.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-3-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 3 0",
+        "position": "absolute",
+        "left": "19.3px",
+        "top": "92.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-3-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 3 1",
+        "position": "absolute",
+        "left": "25.8px",
+        "top": "92.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-3-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 3 2",
+        "position": "absolute",
+        "left": "32.3px",
+        "top": "92.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-3-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 3 3",
+        "position": "absolute",
+        "left": "38.8px",
+        "top": "92.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-3-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 3 4",
+        "position": "absolute",
+        "left": "45.3px",
+        "top": "92.8px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-4-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 4 0",
+        "position": "absolute",
+        "left": "19.3px",
+        "top": "99.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-4-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 4 1",
+        "position": "absolute",
+        "left": "25.8px",
+        "top": "99.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-4-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 4 2",
+        "position": "absolute",
+        "left": "32.3px",
+        "top": "99.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-4-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 4 3",
+        "position": "absolute",
+        "left": "38.8px",
+        "top": "99.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "dot-grid-4-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "dot grid 4 4",
+        "position": "absolute",
+        "left": "45.3px",
+        "top": "99.3px",
+        "width": "1.4px",
+        "height": "1.4px",
+        "fill": "#818c78",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#818c78",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-00",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 00",
+        "position": "absolute",
+        "left": "329px",
+        "top": "431px",
+        "width": "138px",
+        "height": "138px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-01",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 01",
+        "position": "absolute",
+        "left": "320px",
+        "top": "424px",
+        "width": "152px",
+        "height": "152px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-02",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 02",
+        "position": "absolute",
+        "left": "312px",
+        "top": "417px",
+        "width": "166px",
+        "height": "166px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-03",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 03",
+        "position": "absolute",
+        "left": "305px",
+        "top": "410px",
+        "width": "180px",
+        "height": "180px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-04",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 04",
+        "position": "absolute",
+        "left": "297px",
+        "top": "403px",
+        "width": "194px",
+        "height": "194px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-05",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 05",
+        "position": "absolute",
+        "left": "293px",
+        "top": "396px",
+        "width": "208px",
+        "height": "208px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-06",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 06",
+        "position": "absolute",
+        "left": "290px",
+        "top": "389px",
+        "width": "222px",
+        "height": "222px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-07",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 07",
+        "position": "absolute",
+        "left": "288px",
+        "top": "382px",
+        "width": "236px",
+        "height": "236px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-08",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 08",
+        "position": "absolute",
+        "left": "289px",
+        "top": "375px",
+        "width": "250px",
+        "height": "250px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-09",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 09",
+        "position": "absolute",
+        "left": "287px",
+        "top": "368px",
+        "width": "264px",
+        "height": "264px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-10",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 10",
+        "position": "absolute",
+        "left": "289px",
+        "top": "361px",
+        "width": "278px",
+        "height": "278px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-11",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 11",
+        "position": "absolute",
+        "left": "289px",
+        "top": "354px",
+        "width": "292px",
+        "height": "292px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-12",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 12",
+        "position": "absolute",
+        "left": "287px",
+        "top": "347px",
+        "width": "306px",
+        "height": "306px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-13",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 13",
+        "position": "absolute",
+        "left": "284px",
+        "top": "340px",
+        "width": "320px",
+        "height": "320px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-14",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 14",
+        "position": "absolute",
+        "left": "277px",
+        "top": "333px",
+        "width": "334px",
+        "height": "334px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-15",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 15",
+        "position": "absolute",
+        "left": "270px",
+        "top": "326px",
+        "width": "348px",
+        "height": "348px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-16",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 16",
+        "position": "absolute",
+        "left": "263px",
+        "top": "319px",
+        "width": "362px",
+        "height": "362px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-17",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 17",
+        "position": "absolute",
+        "left": "255px",
+        "top": "313px",
+        "width": "374px",
+        "height": "374px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-18",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 18",
+        "position": "absolute",
+        "left": "246px",
+        "top": "306px",
+        "width": "388px",
+        "height": "388px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-19",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 19",
+        "position": "absolute",
+        "left": "235px",
+        "top": "299px",
+        "width": "402px",
+        "height": "402px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-20",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 20",
+        "position": "absolute",
+        "left": "225px",
+        "top": "292px",
+        "width": "416px",
+        "height": "416px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-21",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 21",
+        "position": "absolute",
+        "left": "213px",
+        "top": "285px",
+        "width": "430px",
+        "height": "430px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "measured-contour-22",
+      "parent": "vision-measured-native-circles",
+      "attrs": {
+        "name": "measured contour 22",
+        "position": "absolute",
+        "left": "201px",
+        "top": "278px",
+        "width": "444px",
+        "height": "444px",
+        "radius": "50%",
+        "borderWidth": "0.85px",
+        "borderColor": "#b8bdb2",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "prose-neutral-upper",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "prose neutral upper",
+        "position": "absolute",
+        "left": "765px",
+        "top": "307px",
+        "width": "440px",
+        "height": "auto",
+        "text": "Imagination becomes a field of shared ideas.\nPeople and places give those ideas a frame.\nLanguage and geometry meet across the page.\nThe contour reveals a volume through lines.\nEach measure gives the next one room to act.\nQuiet space carries the contrast and rhythm.\nThese words replace the original French.\nThe source construction remains credited.",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "24px",
+        "textColor": "#cdcec8",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-0",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 0",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-1",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 1",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "12.857142857142902deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-2",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 2",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999996px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "25.714285714285666deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-3",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 3",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999999px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "38.571428571428626deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-4",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 4",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999999px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "51.42857142857138deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-5",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 5",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999996px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "64.28571428571433deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-6",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 6",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "77.1428571428571deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-7",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 7",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-8",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 8",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "102.85714285714292deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-9",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 9",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999996px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "115.71428571428565deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-10",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 10",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999999px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "128.5714285714286deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-11",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 11",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999999px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "141.4285714285714deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-12",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 12",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "73.99999999999996px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "154.28571428571433deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "radial-symbol-ray-13",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "radial symbol ray 13",
+        "position": "absolute",
+        "left": "757px",
+        "top": "817.6px",
+        "width": "74px",
+        "height": "0.8px",
+        "fill": "#c7cdc1",
+        "rotation": "167.14285714285708deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-prose-dot",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "small prose dot",
+        "position": "absolute",
+        "left": "912px",
+        "top": "648px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#f0f2e9",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#f0f2e9",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "prose-neutral-lower-heading",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "prose neutral lower heading",
+        "position": "absolute",
+        "left": "972px",
+        "top": "642px",
+        "width": "267px",
+        "height": "auto",
+        "text": "A compact reading field.",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "textColor": "#d3d6cd",
+        "paragraphSpacing": 0
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "prose-neutral-lower",
+      "parent": "neutral-prose-and-small-symbols",
+      "attrs": {
+        "name": "prose neutral lower",
+        "position": "absolute",
+        "left": "912px",
+        "top": "663px",
+        "width": "294px",
+        "height": "auto",
+        "text": "Its long measure turns into a\ncompact reading rhythm, held\nby thin rules and a geometric\nstar. The original French prose\nis deliberately not reproduced.\nThis is an editable study of\ncontour density, proportion,\ncontrast and divided space.\nThe lower panel continues the\nquiet typographic rhythm with\na deliberately small measure.\nEvery rule remains selectable.\nThe source stays visible in credit.",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "21px",
+        "textColor": "#d3d6cd",
+        "paragraphSpacing": 0
+      }
+    }
+  ]
+}
