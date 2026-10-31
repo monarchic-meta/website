@@ -4,12 +4,80 @@ Owner direction recorded on **2026-10-30**. Dial in the visual style first;
 concrete development selections and final copy will follow. This is a brief for
 future prototypes and manual implementation, not a record of shipped changes.
 The [shared navigation direction](shared-navigation.md) applies unchanged.
+The opening direction below incorporates the owner's **2026-10-31** clarification.
 
 Use the homepage first as a proving ground for visual style and tone, drawing on
 the existing style mix. This is continued exploration, not a reset or a final
 design system. Complete and review the homepage first, then begin the first
 individual product page. Detailed copy remains open, and later homepage
 refinements can accompany product-page work after that initial review.
+
+## Homepage opening
+
+Make the homepage opening unusually original, bold and immediately compelling.
+The owner wants the visual composition to break the familiar headline-on-one-side,
+illustration-on-the-other formula. Boldness belongs to the design: copy stays
+restrained, direct and assured, with credible claims and clear identity and
+purpose early in the experience. Visitors should understand who Monarchic is and
+what it does while discovering the greater scope and weight of its work over time.
+
+This is Monarchic's significant first public identity statement. It should feel
+deliberately authored and specific to the company, like a compelling book cover
+that invites deeper reading through distinctive craft and quiet intrigue. The
+18 selected sites are principally references for captivating heroes. Study the
+mechanisms that attract attention and create curiosity, then compose an original
+Monarchic opening; they are not templates for copying whole sites or recognizable
+compositions. Standard content patterns remain available deeper in the page.
+
+The owner finds the current site competent but familiar, with little reason to
+read further. The intended premium experience sets a craft bar across composition,
+original graphics, typography, motion, interactions and details. The distinctive
+hero sets a standard carried through the whole experience. That craft should
+make the identity memorable and express Monarchic's conviction and ambition;
+deeper evidence substantiates the confidence. Premium describes quality within
+the full established style mix, without selecting pricing or a luxury/corporate
+minimalist aesthetic. The owner's “S-tier” description sets a creative
+expectation, not a verified public product claim or approval for superiority
+language.
+
+The owner's analogy to the opening of Nolan's *The Dark Knight* describes
+immediate engagement that sustains a slow burn, with significance becoming
+clearer as the experience unfolds. It is a tonal and structural reference, not
+an instruction to imitate the film, capture scrolling or impose a waiting period.
+After identity, the problems and flagship-product sections can transition into
+ordinary free scrolling. Exact opening composition and interaction remain open.
+
+Subpages prioritize clear navigation and may use more conventional heroes,
+including split compositions. The homepage is the place to establish the more
+distinctive opening. The [hero reference review](design-inspiration/heroes.md)
+records specific visual and motion mechanisms for exploration; its references
+do not prescribe a page structure or approve any factual claim.
+
+Proceed in stages: first make credited recreations to learn the selected heroes'
+visual mechanisms, then produce a substantial range of independently composed
+originals, and only afterward explore original combinations. The eventual mix
+should harmonize **immersive information field**, **evolving geometric identity**
+and **editorial research montage**. These are complementary avenues, not an
+exclusive choice; motion can contribute to all three. Reviewable recreations
+come before new originals or hybrid heroes, following the
+bounded first-wave plan. External work,
+recreations and close adaptations remain credited within **Source inspiration**;
+**Original compositions** is reserved for independently composed work.
+
+## Company vision and research thesis
+
+Monarchic aims to develop general-purpose AI systems capabilities across domains.
+Its research addresses planning, heuristics and strategy, persistent memory,
+alignment, judgment and taste, and verification. The identity should communicate
+that broad ambition through concrete capabilities people can understand.
+
+The owner's research thesis is that, as model providers make inference cheaper,
+systems developers can make those models practical through better orchestration,
+planning and strategies. He sees a possible major next era in AI systems. This
+is company vision and a research thesis, not an established forecast or a claim
+of achieved universal capability. Product availability, in-development work and
+benchmark evidence retain their existing qualifications below; this positioning
+does not select a hero composition or approve superiority claims.
 
 ## Owner's intended journey
 

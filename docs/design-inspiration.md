@@ -17,13 +17,18 @@ records the independent directions and concrete motifs to make more of.
 | [Web and UI](design-inspiration/web-ui.md) | All 19 selected posts: expressive page compositions, digital objects, type, footers, wireframes and roundups |
 | [Graphic design](design-inspiration/graphic-design.md) | Editorial grids, identity systems, dot matrices, halftones, collage, and book previews |
 | [Creative Coding](design-inspiration/creative-coding.md) | All 20 selected posts: point meshes, actual tonal stippling, glass, chrome, luminous forms and technical UI graphics |
+| [Hero references](design-inspiration/heroes.md) | All 18 owner-selected gallery references, their live destinations, concrete visual mechanisms and inspection limits |
 | [Sites](design-inspiration/sites.md) | Verified destinations, their source posts, and the scope of live inspection |
 
 All Web & UI Design references remain included, alongside Graphic Design’s
 expressive type and graphic language and 20 Creative Coding entries. The catalog
-contains **57 stable entries and 77 external URLs**: 67 X source URLs and ten
+has **57 stable entries and 77 external URLs** in those bookmarked collections
+and their site index: 67 X source URLs and ten
 site/support links. Creative Coding contributes 20 bookmarked posts plus one
 credited-original support link; these are 21 source URLs, not 21 bookmarks.
+The additional **18 HERO entries**, selected on **2026-10-31**, are tracked
+separately in the [hero review](design-inspiration/heroes.md). Gallery coverage
+and current live-site inspection have separate evidence notes there.
 
 The [Framer visual kitchen](framer-moodboard.md) separates **Source inspiration**
 from **Original compositions**. WEB-014–017 give four formerly grouped web sources
@@ -80,12 +85,14 @@ Retain source keys and simplification notes; keep post previews in the compariso
 library and source-led recreations in Source inspiration.
 
 Give each new reference the next unused ID in its collection (`WEB`, `GRA`,
-`CC` or `SITE`). Preserve IDs when titles change. ART-001–006 are retired and must not
+`CC`, `HERO` or `SITE`). Preserve IDs when titles change. ART-001–006 are retired and must not
 be reassigned. Record the creator or posting account,
 public permalink, observed visual traits, intended application, evidence scope,
 and review date. Related posts can share an entry when they demonstrate one
 coherent system. Keep site destinations in the site index so their verification
-status can be updated independently of an older post.
+status can be updated independently of an older post. HERO entries keep their
+gallery revision and dated current-site observations together; the site index
+links to that separate review rather than assigning duplicate SITE IDs.
 
 Use original composition and assets when implementing a direction. Attribution
 and a bookmark are not an asset license. Keep factual labels and metrics tied to
@@ -103,6 +110,7 @@ Initial review, Web & UI Design reinspection and Creative Coding review:
 | Graphic Design | 25 bookmarked posts indexed, plus two quoted originals; folder feed reviewed to its visible end |
 | Creative Coding | Folder reviewed to its visible end: 20 bookmarked posts plus one credited-original support link. Visible previews/sampled frames; CC-003 also opened in post detail. Complete clips and code execution were not reviewed. |
 | Live sites | Four destinations visually inspected on desktop; three more verified through page text only |
+| Owner-selected hero references, 2026-10-31 | All 18 gallery links retained as HERO-001–018. Gallery media, primary destinations and sampled live behavior have source-specific evidence and limitations in the [hero review](design-inspiration/heroes.md). |
 
 Post observations come from visible image previews and sampled video frames,
 with exceptions noted per entry. WEB-017’s four gallery images were reviewed at

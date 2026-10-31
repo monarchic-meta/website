@@ -137,6 +137,31 @@ form so the visual difference is apparent.
 
 ## Authoring and application
 
+### Homepage opening
+
+The owner's **2026-10-31** clarification asks for an unusually original, bold and
+immediate homepage opening. Its visual composition should carry the impact;
+copy stays restrained, credible and clear about who Monarchic is and what it
+does. A conventional headline beside an illustration is not the desired starting
+formula for this opening. Subpages can use more familiar, easily navigable heroes.
+This first public identity statement should feel deliberately authored and
+specific to Monarchic. The owner's book-cover analogy describes distinctive
+craft that invites deeper reading through quiet intrigue. The selected hero
+references supply mechanisms for original work, not whole-site templates or
+recognizable compositions to copy.
+
+The opening should attract attention immediately and reveal greater scope and
+meaning as visitors explore. The owner's film-opening analogy describes that
+balance of immediate engagement and a sustained slow burn; it does not specify
+scroll capture, a forced wait or a literal cinematic imitation. After identity,
+the problems and flagship-product sections can flow through ordinary scrolling.
+The [18 hero references](heroes.md) supply concrete mechanisms to explore:
+character-built imagery, living filaments, extreme crop and scale, modular
+geometry, graphic masks, material and framed motion. They complement the full
+style mix rather than making typography the sole direction.
+
+### Studies and implementation
+
 A study can become hero artwork, a poster-like section, a transition, a frame,
 a background, an identity motif or a control. A literal UI application need not
 be chosen before exploring the graphic. Try several independent directions and

@@ -5,6 +5,12 @@ post that led to it. Use with the [catalog hub](../design-inspiration.md) and
 [web references](web-ui.md). A verified destination does not mean the complete
 site, its mobile layout, or its interactions were audited.
 
+The separate [hero review](heroes.md), dated **2026-10-31**, records the 18 newer
+owner-selected gallery references and their primary destinations under
+HERO-001–018. Each entry distinguishes the nominated screenshot or clip from
+the current live site. Keep those dated observations there when revisiting a
+destination; the SITE entries below retain their original review scope.
+
 ## SITE-001 — CROX
 
 - Destination: [live template demo](https://crox.framer.website/), directly linked from the [official Framer listing](https://www.framer.com/marketplace/templates/crox/).
