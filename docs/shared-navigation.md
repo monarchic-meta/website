@@ -35,6 +35,36 @@ centered logo and arbitrary left/right organization are not part of the desired
 direction. The reference does not determine Monarchic's visual layout or menu
 taxonomy.
 
+## Banner and scroll behavior
+
+The owner clarified the following behavior on **2026-10-30**. The slim split R&D
+banner described in the [homepage creative brief](homepage-creative-brief.md)
+starts directly below the navbar at the top of the page. It belongs to the page
+and is visible at the initial top position; it does not travel with the navbar
+as a persistent announcement strip. The owner's earlier phrase "fixed at top of
+screen" describes where it is first encountered, not a viewport-fixed banner.
+
+As the visitor scrolls down, the navbar passes over and covers the banner. On
+**mobile**, after the banner is covered, continued downward scrolling slides the
+navbar upward out of view. Reversing to upward scrolling reveals the navbar
+again. That reveal does not bring the banner back; the banner returns only when
+the visitor reaches the top of the page again. The owner has not yet selected
+whether desktop uses the same hide/reveal behavior.
+
+Record these distinct review states in prototypes and handoffs:
+
+| State | Navbar | Banner | Menu / underlying page |
+| --- | --- | --- | --- |
+| Initial page top | Visible above the banner. | Visible directly below the navbar. | Menu closed. |
+| Downward, after banner coverage | On mobile, slides above the viewport as downward scrolling continues. Desktop hide/reveal remains open. | Covered and no longer visible. | Continue on the same page. |
+| Upward, below page top | On mobile, returns to view. | Remains absent. | Continue on the same page. |
+| Page top again | Visible above the banner. | Visible again in its original page-top position. | Menu closed unless the visitor opens it. |
+| Full-screen menu open | Hamburger is replaced by the top-right X. | Do not bring the page-top banner into the menu when opening below the top. | Full-screen navigation covers the underlying page; closing restores that page and context. |
+
+This records visibility and sequence, rather than selecting CSS positioning,
+pixel thresholds, animation timings, or a desktop rule. It also does not decide
+which other pages carry a banner.
+
 ## Implementation considerations
 
 The following are accessibility considerations inferred for implementation,
@@ -49,6 +79,38 @@ rather than additional owner-specified visual decisions:
   and restore its scroll position when closing.
 - Account for reduced motion if the overlay or dropdowns animate. Exact motion
   and transition treatments have not been selected.
+- For the mobile scroll behavior, keep focused controls available and prevent
+  scroll-driven hiding from moving keyboard focus offscreen. Keep the menu's
+  close control available while it is open. These are inferred interaction
+  safeguards, not additional owner-selected motion rules.
+- Apply reduced-motion handling to navbar hide/reveal as well. Review direction
+  changes and small scroll movements. After anchor navigation or browser scroll
+  restoration, check the banner against the actual page position rather than
+  assuming that navigation returned to the top.
+
+## Framer interaction review
+
+Framer supports native scroll-direction triggers with Scroll Animations and
+Scroll Variants, including navigation that hides downward and returns upward.
+See the official [Scroll Direction update](https://www.framer.com/updates/scroll-direction)
+and [navigation lesson](https://www.framer.com/academy/lessons/scroll-direction).
+This confirms platform capability; it does not establish that an existing
+Monarchic prototype has these interactions wired.
+
+Prefer an editable native navigation component with visible and hidden states
+where the available editor controls can express the sequence. Verify the
+banner-coverage gate separately from direction detection: hiding immediately
+on the first downward movement would skip the owner's requested cover-then-hide
+sequence. Check all five states in Preview at the relevant breakpoints, then
+reload the editor to confirm saved changes, following the
+[Framer workflow](framer-prototyping.md).
+
+If the authoring route cannot express or verify the combined sequence, retain
+clearly identified static state studies and record the missing interaction in
+the handoff. Static frames establish appearance only. Do not describe them as a
+working scroll interaction. A separate self-contained interaction component is
+an optional follow-up if native controls prove insufficient; it has not been
+selected or created by this brief.
 
 ## Open decisions
 
@@ -61,6 +123,15 @@ rather than additional owner-specified visual decisions:
   integration across sites, and the launcher/dashboard implementation.
 - Logo placement, overlay organization, visual treatment, and responsive behavior,
   including when header categories collapse and how dropdowns behave on touch.
+- Desktop navbar persistence versus direction-based hide/reveal; the explicit
+  hide/reveal decision currently applies to mobile.
+- The banner-coverage boundary, page-top tolerance, scroll-distance threshold
+  for direction changes, and handling of small movements or overscroll. These
+  need review against actual navbar/banner dimensions rather than invented
+  values in the decision record.
+- Navbar slide duration, easing, travel, and reduced-motion treatment; behavior
+  when a dropdown or search is open; and whether pages without a banner use a
+  different hide trigger.
 
 Use this brief with the [Framer workflow](framer-prototyping.md) and
 [visual-language brief](design-inspiration/visual-language.md). Record the chosen
