@@ -1,5 +1,10 @@
 # Hero recreations: all eighteen selected references
 
+The [project organization guide](../framer-organization.md) records the
+2026-10-31 **Source inspiration → Heroes → Native / Live** folders and separate
+Web playgrounds, with stable page links and verification status. Earlier names,
+routes and hashes below remain dated recreation evidence.
+
 The owner confirmed on **2026-10-31** that all eighteen selected references must
 be recreated. The first six are an intermediate result, not a stopping point or
 review gate. The complete set contains **twelve native compositions and seven

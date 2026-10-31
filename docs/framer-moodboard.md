@@ -2,6 +2,11 @@
 
 Created 2026-10-22 from the [inspiration catalog](design-inspiration.md).
 
+The [project organization guide](framer-organization.md) records the
+2026-10-31 Source inspiration / Original compositions folders and the separate
+hero collections, with current names, stable page links and verification status.
+The names and counts below retain the dated moodboard checkpoints.
+
 [Open the moodboard](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=uj_I7x6To)
 under **Design → 01 Reference library** in the existing project. The visual
 kitchen uses six Design pages for graphic elements, textures, materials and compositions

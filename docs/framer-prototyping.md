@@ -1,5 +1,10 @@
 # Framer visual prototyping
 
+The [project organization guide](framer-organization.md) records the
+2026-10-31 folder and route map, stable page links and its verification status.
+Use that map for current navigation; earlier handoffs retain their dated names
+and routes as historical evidence.
+
 Use Framer to explore layouts, typography, interactions, and responsive behavior.
 Convert designs manually between Framer and the Astro/Svelte site in either
 direction. The repository and shared catalogs remain authoritative for the

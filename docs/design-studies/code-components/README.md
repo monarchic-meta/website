@@ -1,5 +1,10 @@
 # Live Creative Coding studies
 
+The [project organization guide](../../framer-organization.md) records the
+2026-10-31 Design folders and runnable Web playground routes, with stable page
+links and verification status. Earlier manifests preserve the names and paths
+used by their dated proofs; consult the current map when opening a collection.
+
 This page documents the twenty credited source-led studies. The eight
 [original live compositions](originals.md) have their own Design page, draft
 Preview lab, source files and [manifest](originals-manifest.json).
