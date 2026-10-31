@@ -1,5 +1,8 @@
 # Homepage explorations — Black Instrument and Open Edition
 
+The subsequent [Signal Loom, Vermilion Index and Cold Archive variations](framer-homepage-variations-2026-10-30.md)
+extend these drafts. Counts and verification below record this earlier round.
+
 Created **2026-10-30** in the existing Monarchic Framer project. These are two
 unpublished visual prototypes, with manual handoff under the
 [Framer workflow](framer-prototyping.md). They establish a comparison surface for
