@@ -18,6 +18,7 @@
     "check:webinfo-implementation": "node scripts/check-webinfo-implementation.mjs",
     "check:release-workflow": "node scripts/check-release-workflow.mjs",
     "check:social-preview": "node scripts/check-social-preview.mjs",
+    "check:homepage-navigation": "node scripts/check-homepage-navigation.mjs",
     "vercel": "node scripts/vercel-cli.mjs",
     "vercel:whoami": "node scripts/vercel-cli.mjs whoami",
     "vercel:inspect:production": "node scripts/vercel-cli.mjs inspect https://www.monarchic.io",
