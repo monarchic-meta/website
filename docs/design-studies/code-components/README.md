@@ -20,6 +20,9 @@ The [WB-03 text-dither](website-brain-text.md) and
 finer anatomical bundles as separate additive treatments.
 Their [loading performance handoff](website-brain-performance.md) records the
 shared anatomy/plans, optional persistent cache and scoped before/after samples.
+The separate [WB-05 / WB-06 solid-brain studies](solid-brain.md) use a credited
+MNI MRI-template triangle mesh for dither and text treatments; their handoff
+records mesh provenance, retained licensing and saved Framer verification.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)

@@ -37,6 +37,9 @@ The [text-dither](design-studies/code-components/website-brain-text.md) and
 extend the same anatomical artwork with distinct live rendering treatments.
 Their [loading performance handoff](design-studies/code-components/website-brain-performance.md)
 records shared preparation, optional persistent caching and measurement limits.
+The additive [solid-brain studies](design-studies/code-components/solid-brain.md)
+use a credited MNI MRI-template surface for dither and text treatments, with
+source provenance and saved verification recorded separately from the fibers.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and
