@@ -110,15 +110,16 @@ static images are retained as `static/desktop-mcp.jpg` and
 `website-brain-dither-2026-10-31`. They came directly from the tool's native image
 blocks; they were not downloaded source artwork.
 
-**Actual editor reload and live Preview verification remain blocked.**
+**Initial attempt: editor reload and live Preview verification were blocked.**
 The existing browser tab and fresh Framer tabs repeatedly timed out during page
 inspection; the unchanged WB-01 page also timed out, while a blank control tab
 worked. Even capture of the returned static image in a separate browser tab
 timed out. These observations do not establish the cause. No Canvas controls
 were toggled, and no live browser phase, trace, pause/resume, editor opt-in,
-touch gesture or exported-image behavior was verified for WB-02. The local
-behavior checks and official static renders do not replace that outstanding
-browser review. Do not describe this round as a confirmed editor reload.
+touch gesture or exported-image behavior was verified for WB-02 in that attempt.
+The local behavior checks and official static renders did not replace browser
+review. The following post-reboot pass records the later actual editor checks
+separately.
 
 An independent saved-state read passes all **23 guards**: **23 pages, 131 study
 placements and 12 code sources**, with both new Canvas-motion controls off.
@@ -134,3 +135,37 @@ and blocked browser checks labeled separately. The full final read is 84,007
 bytes, SHA-256 `9d293f9c9994f80ccd5231e0a54c3bdafe8bb8a4f2ab9acfca1a1a40706db5a2`.
 Exact source/test/typecheck receipts are in `validation/final-port`, and final
 read-only source review is in `validation/independent-review.json`.
+
+## Post-reboot browser verification — 2026-10-31
+
+The browser became responsive after the owner's reboot. The unchanged final
+source `785f81ad…b2da1` now passes actual Desktop/Phone Preview and editor review:
+
+- Desktop phase advanced from 39.9387 to 60.9899; a mouse click emitted a signal
+  trace. Pause retained exactly phase 71.06509999999989 across observations 6.8
+  seconds apart, then Play resumed motion.
+- Phone phase advanced from 74.9334 to 83.1541 and Enter emitted a signal trace.
+  Its 351×320px field fits the observed 375px available width without horizontal
+  overflow; Desktop remains 704×582px across 1425px available width.
+- Desktop generated frames are 768×634px; Phone frames are 384×350px. Phone can
+  retain the earlier larger display backing while the managed frames adapt.
+- A full editor reload retained both ready frozen specimens at phase 8, with
+  exact 384×317px Desktop and 384×335px Phone frames at 50% zoom.
+- Explicit Canvas motion advanced only Desktop from 8.1 to 12.8; Phone remained
+  at 8. Restoring No returned both to ready, phase 8. Browser error logs were
+  empty.
+
+These checks establish actual motion and saved reload behavior; they do not
+certify a sustained frame rate. Sampled Desktop postprocess times were about
+19–23 ms and Phone about 10 ms, including pixel readback/quantization/writeback
+but excluding anatomical drawing and display copies. Real touch gestures,
+continuous free-hover sweeps and exported images remain unverified.
+
+Evidence is retained under `website-brain-dither-resume-2026-10-31/browser`:
+`qa.json`, `desktop-preview.png`, `phone-preview.png` and `editor-restored.png`.
+The earlier blocked record remains historical evidence of the first attempt.
+The independent post-Canvas read passes all 13 preservation guards: all 23 page
+hashes, 131 placement dictionaries and 12 source hashes/exports/schemas match
+exactly after restoration. Canvas distribution remains 60 on / 71 off. Its
+84,107-byte raw receipt has SHA-256
+`394fcd6911b08fc0747ca74afd48cd9a09cd4e8214fcc00b42d1ad005fb97c0d`.
