@@ -12,6 +12,11 @@ as a range of complementary directions. Cite stable reference IDs
 when exploring a direction in Framer. Each entry records inspiration to adapt;
 the prototype and manual handoff define the chosen design.
 
+The [shared navigation brief](shared-navigation.md) records the owner's direction
+for all Monarchic sites, including header priorities, authentication-dependent
+app access, and the full-screen menu. It separates those decisions from open
+destinations and inferred accessibility considerations.
+
 The [homepage explorations](framer-prototypes.md) record the first three visual
 directions, their project nodes, source references, and review scope.
 The [second visual round](framer-visual-round-two.md) explores additional palettes,
