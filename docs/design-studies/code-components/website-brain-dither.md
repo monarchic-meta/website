@@ -5,6 +5,11 @@ The [WB-01 source port](website-brain.md) remains available unchanged for
 comparison. This is an additive Framer experiment, with no production-site
 changes or automatic synchronization.
 
+**Revision note — 2026-10-31:** the source hashes and saved-state receipts below
+describe the original dither revision. The [loading performance handoff](website-brain-performance.md)
+records the current shared/persistent preparation revision and its separate
+verification record. The ordered-dither treatment remains unchanged.
+
 ## Construction and provenance
 
 [WebsiteBrainDither.tsx](WebsiteBrainDither.tsx) is a self-contained Framer code

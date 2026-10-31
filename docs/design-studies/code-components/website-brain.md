@@ -5,6 +5,11 @@ brain element in the existing Framer project. **WB-01** is a manual port of an
 existing Monarchic website element, not a new illustration or an X recreation.
 The [current site](https://www.monarchic.io/) remains the visual reference.
 
+**Revision note — 2026-10-31:** the source hashes and saved-state receipts below
+describe the original port revision. The [loading performance handoff](website-brain-performance.md)
+records the current shared/persistent preparation revision and its separate
+verification record. The anatomical drawing and interaction treatment remain.
+
 ## Source and scope
 
 The implementation sources are

@@ -18,6 +18,8 @@ limited-palette live surface while preserving the original port.
 The [WB-03 text-dither](website-brain-text.md) and
 [WB-04 refined-fiber](website-brain-fibers.md) studies explore live glyphs and
 finer anatomical bundles as separate additive treatments.
+Their [loading performance handoff](website-brain-performance.md) records the
+shared anatomy/plans, optional persistent cache and scoped before/after samples.
 
 Five self-contained React 18 Framer code components author twenty live WebGL
 studies, one for each Creative Coding bookmark. [CreativeCodingStudy.tsx](CreativeCodingStudy.tsx)

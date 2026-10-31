@@ -35,6 +35,8 @@ explores a live limited-palette treatment alongside that unchanged port.
 The [text-dither](design-studies/code-components/website-brain-text.md) and
 [refined-fiber](design-studies/code-components/website-brain-fibers.md) variants
 extend the same anatomical artwork with distinct live rendering treatments.
+Their [loading performance handoff](design-studies/code-components/website-brain-performance.md)
+records shared preparation, optional persistent caching and measurement limits.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and

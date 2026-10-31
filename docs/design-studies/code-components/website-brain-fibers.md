@@ -5,6 +5,11 @@ brain. It preserves the unchanged [WB-01 source port](website-brain.md) and
 [WB-02 dither](website-brain-dither.md) for comparison. This is a separate
 Framer study, without production changes or automatic synchronization.
 
+**Revision note — 2026-10-31:** the source hashes and saved-state receipts below
+describe the original fiber revision. The [loading performance handoff](website-brain-performance.md)
+records the current shared/persistent preparation revision and its separate
+verification record. The refined-fiber treatment remains unchanged.
+
 ## Construction
 
 [WebsiteBrainFibers.tsx](WebsiteBrainFibers.tsx) retains all **3,816 original

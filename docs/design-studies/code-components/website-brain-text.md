@@ -5,6 +5,11 @@ It is an additive visual study alongside the unchanged [WB-01 port](website-brai
 and [WB-02 tonal dither](website-brain-dither.md). Production code is unchanged;
 the Framer component is a manual handoff.
 
+**Revision note — 2026-10-31:** the source hashes and saved-state receipts below
+describe the original text revision. The [loading performance handoff](website-brain-performance.md)
+records the current shared/persistent preparation revision and its separate
+verification record. The glyph treatment remains unchanged.
+
 ## Construction
 
 [WebsiteBrainText.tsx](WebsiteBrainText.tsx) preserves the original 3,816-fiber
