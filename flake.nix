@@ -111,6 +111,16 @@
           framer-studies = mkWebsiteCheck "framer-studies" ''
             pnpm run check:framer-studies
           '';
+          hero-recreations = (mkWebsiteCheck "hero-recreations" ''
+            pnpm run check:hero-recreation-study
+            pnpm run check:hero-study-integration
+            pnpm run check:hero-recreation-browser
+          '').overrideAttrs (_: {
+            # Canvas surface writing needs fonts in the isolated browser check.
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           contracts = mkWebsiteCheck "contracts" ''
             pnpm run check:webcomposer
             pnpm run check:webinfo-artifacts

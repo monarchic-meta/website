@@ -44,7 +44,11 @@
     "check:website-brain-fibers": "node scripts/check-website-brain-fibers.mjs",
     "check:website-brain-load": "node scripts/check-website-brain-load.mjs",
     "build:framer-brain-surface": "node scripts/build-framer-brain-surface.mjs --write",
-    "check:solid-brain-study": "node scripts/check-solid-brain-study.mjs"
+    "check:solid-brain-study": "node scripts/check-solid-brain-study.mjs",
+    "check:hero-recreation-study": "node scripts/check-hero-recreation-study.mjs",
+    "check:hero-study-integration": "node scripts/check-hero-study-integration.mjs",
+    "check:hero-recreation-browser": "node scripts/check-hero-recreation-browser.mjs",
+    "build:framer-hero-head": "node scripts/build-framer-hero-head.mjs --write"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

@@ -1,0 +1,19 @@
+Creative Commons Licence
+Infinite, 3D Head Scan by Lee Perry-Smith is licensed under a Creative Commons Attribution 3.0 Unported License.
+Based on a work at www.triplegangers.com.
+Permissions beyond the scope of this license may be available at http://www.ir-ltd.net/
+Please remember: Do what you want with the files, but always mention where you got them from...
+
+Official upstream asset-specific license:
+https://github.com/mrdoob/three.js/blob/dev/examples/models/gltf/LeePerrySmith/LeePerrySmith_License.txt
+https://creativecommons.org/licenses/by/3.0/
+
+Manual prototype adaptation: centered/scaled geometry, signed16 position and
+signed8 normal quantization; all 9,279 source vertices and 17,684 triangles
+retained. A separately authored wrapped-writing material replaces the original
+photographic material. This head is a licensed geometry stand-in for the
+source-led HERO-001 Type Face study after Stephen Kelman; it is not claimed to
+be the geometry used by Stephen Kelman.
+
+Upstream GLB Git blob: cff335de726fa518c1ef80f4c8aa540037b2f5b2
+Upstream GLB SHA-256: 402b8a8ac9f03232e6d64b5962929703a069daf99d3c49ac8eb0e48bedc9c576
