@@ -40,6 +40,11 @@ records shared preparation, optional persistent caching and measurement limits.
 The additive [solid-brain studies](design-studies/code-components/solid-brain.md)
 use a credited MNI MRI-template surface for dither and text treatments, with
 source provenance and saved verification recorded separately from the fibers.
+The [eighteen-reference hero recreation set](design-studies/hero-recreation-complete-handoff.md)
+keeps source-led native compositions and real procedural graphics on separate
+Design pages and draft Preview labs. Its handoff records credits, source
+substitutions, retained work and verification separately from the earlier
+homepage prototypes.
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and

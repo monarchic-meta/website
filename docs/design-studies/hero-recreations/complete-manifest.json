@@ -1,0 +1,2148 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-31",
+  "status": "all-eighteen-selected-hero-references-saved-and-verified",
+  "classification": "Source inspiration",
+  "scope": "Nineteen credited visual-mechanism studies covering eighteen references; manual Framer authoring/handoff, with explicit substitutions and omitted behavior. No production synchronization.",
+  "counts": {
+    "uniqueReferences": 18,
+    "firstWaveReferences": 6,
+    "remainingReferences": 12,
+    "nativeRecipes": 12,
+    "nativeParts": 1853,
+    "historicalNativeRecipes": 4,
+    "historicalNativeParts": 798,
+    "newNativeRecipes": 8,
+    "newNativeParts": 1055,
+    "liveModes": 7,
+    "historicalLiveModes": 2,
+    "newLiveModes": 5,
+    "liveSourceFiles": 2,
+    "treatments": 19,
+    "duplicateReference": "HERO-016 has native and live treatments and is counted once",
+    "framer": {
+      "pages": 34,
+      "codePlacements": 160,
+      "codeSources": 17,
+      "canvasTrue": 60,
+      "canvasFalse": 100,
+      "uniqueHeroReferences": 18,
+      "nativeHeroVersions": 12,
+      "liveHeroVersions": 7,
+      "allHeroVersions": 19
+    }
+  },
+  "completedReferences": [
+    "HERO-001",
+    "HERO-002",
+    "HERO-003",
+    "HERO-004",
+    "HERO-005",
+    "HERO-006",
+    "HERO-007",
+    "HERO-008",
+    "HERO-009",
+    "HERO-010",
+    "HERO-011",
+    "HERO-012",
+    "HERO-013",
+    "HERO-014",
+    "HERO-015",
+    "HERO-016",
+    "HERO-017",
+    "HERO-018"
+  ],
+  "independentOriginalsAdded": 0,
+  "hybridHeroesAdded": 0,
+  "pending": [],
+  "entries": [
+    {
+      "id": "HERO-001",
+      "title": "Type Face",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-001 — Type Face",
+        "metadata": [
+          "- Source: [Recent Design](https://recent.design/i/vmmug5r-type-face).",
+          "- Creator/source post: Stephen Kelman / [@stephenkelman](https://x.com/stephenkelman/status/2093335231604367454).",
+          "- Tags: `text-image`, `volumetric`, `monochrome`, `character-density`."
+        ],
+        "canonicalCreditLines": [
+          "- Creator/source post: Stephen Kelman / [@stephenkelman](https://x.com/stephenkelman/status/2093335231604367454)."
+        ],
+        "sourceLinks": [
+          "https://recent.design/i/vmmug5r-type-face",
+          "https://x.com/stephenkelman/status/2093335231604367454"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroRecreationStudy.tsx",
+          "bytes": 307039,
+          "sha256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+          "mode": "typeface",
+          "creator": "Stephen Kelman",
+          "limits": "Substitute geometry, text/font/material; approximate rotation; no assembly or dispersal",
+          "geometryAttribution": "Infinite, 3D Head Scan by Lee Perry-Smith; via three.js; CC BY 3.0; documented geometry stand-in, not verified as Stephen Kelman's source mesh",
+          "framer": {
+            "componentID": "codeFile/B4OuNLk:default",
+            "designPageID": "RVzvNGZNT",
+            "labPageID": "VR2TaJCqa",
+            "placements": [
+              {
+                "reference": "HERO-001",
+                "placement": "design",
+                "id": "MTBA7CoHj",
+                "expectedMode": "typeface",
+                "verifiedPreset": true,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=MTBA7CoHj"
+              },
+              {
+                "reference": "HERO-001",
+                "placement": "desktop",
+                "id": "kL3s1UVYq",
+                "expectedMode": "typeface",
+                "verifiedPreset": true,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=kL3s1UVYq"
+              },
+              {
+                "reference": "HERO-001",
+                "placement": "phone",
+                "id": "H8Zf2szHAkL3s1UVYq",
+                "expectedMode": "typeface",
+                "verifiedPreset": true,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=H8Zf2szHAkL3s1UVYq"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-002",
+      "title": "Ajedrez Film Poem",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-002 — Ajedrez Film Poem",
+        "metadata": [
+          "- Source: [Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem).",
+          "- Creator/source post: Julián Leiss / [@julianleiss](https://x.com/julianleiss/status/2110868325052149925).",
+          "- Tags: `editorial-film`, `grain`, `montage`, `annotation`, `scale`."
+        ],
+        "canonicalCreditLines": [
+          "- Creator/source post: Julián Leiss / [@julianleiss](https://x.com/julianleiss/status/2110868325052149925)."
+        ],
+        "sourceLinks": [
+          "https://recent.design/i/qfy3385-ajedrez-film-poem",
+          "https://x.com/julianleiss/status/2110868325052149925"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-002.json",
+          "bytes": 111929,
+          "sha256": "532e8972cc5dfbad03a69b43a118fee7c0c68d3b3b734f3d64bd347911c09c04",
+          "parts": 306,
+          "partsSHA256": "30cbb5e22e01cf9e7d9939e9d98431442dd77235c943aa380a7fa0586a6bca6b",
+          "creator": "Julián Leiss / @julianleiss",
+          "sourceURL": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+          "gallery": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+          "sourcePost": "https://x.com/julianleiss/status/2110868325052149925",
+          "width": 1440,
+          "height": 1000,
+          "limits": "Two native still layout studies from the film/poster review: repeated portrait frames and overlapping unequal photo slots. All photographs/hands are explicitly neutral diagram stand-ins. No film timing, sound or unseen sequence claimed.",
+          "framer": {
+            "pageID": "H_ibyOQyy",
+            "artworkID": "ihmbR6lQG",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ihmbR6lQG"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-003",
+      "title": "Agent-first Billing / Polar",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-003 — Agent-first Billing / Polar",
+        "metadata": [
+          "- Source: [Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page).",
+          "- Creator/source post: Polar / [@polar_sh](https://x.com/polar_sh/status/2112520117435195565).",
+          "- Live destination: [Polar field guide](https://polar.sh/field-guide?page=m-credits).",
+          "- Tags: `constructed-identity`, `technical-geometry`, `chapters`, `diagram`."
+        ],
+        "canonicalCreditLines": [
+          "- Creator/source post: Polar / [@polar_sh](https://x.com/polar_sh/status/2112520117435195565).",
+          "- Live destination: [Polar field guide](https://polar.sh/field-guide?page=m-credits)."
+        ],
+        "sourceLinks": [
+          "https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+          "https://x.com/polar_sh/status/2112520117435195565",
+          "https://polar.sh/field-guide?page=m-credits"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-003.json",
+          "bytes": 134402,
+          "sha256": "6f3b701e52f079763cfa28976bbbee5c294ff190a05efd8564c41e2b402bc827",
+          "parts": 344,
+          "partsSHA256": "7706a18fbd7222a29a0cd139b781932667f43fe93382b8a6a1b1bdf752879bfc",
+          "creator": "Polar / @polar_sh",
+          "sourceURL": "https://polar.sh/field-guide",
+          "gallery": "https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+          "sourcePost": "https://x.com/polar_sh/status/2112520117435195565",
+          "width": 1440,
+          "height": 1000,
+          "limits": "Static assembled mark from the inspected primary frame. Native circles, tangent arc strips, guides and control points. Chapter diagrams are simplified; the lower row follows the viewport crop. No assembly animation claimed.",
+          "framer": {
+            "pageID": "H_ibyOQyy",
+            "artworkID": "jYNcbRHFg",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=jYNcbRHFg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-004",
+      "title": "Artemii Lebedev",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-004 — Artemii Lebedev",
+        "metadata": [
+          "- Source: [Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev), published September 23, 2026.",
+          "- Live destination and credited creator: [Artemii Lebedev](https://artemiilebedev.com/).",
+          "- Tags: `moving-image`, `utility-overlay`, `edge-index`, `full-bleed`."
+        ],
+        "canonicalCreditLines": [
+          "- Live destination and credited creator: [Artemii Lebedev](https://artemiilebedev.com/)."
+        ],
+        "sourceLinks": [
+          "https://www.siteinspire.com/website/13624-artemii-lebedev",
+          "https://artemiilebedev.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-004.json",
+          "bytes": 23872,
+          "sha256": "895f04fbd45735079278aa5bece14f368c9078b4b3cd0f3cc61ea933678877ea",
+          "parts": 50,
+          "partsSHA256": "80ec079c0bea3b694ddccedaa86880601b91be8c826327da55667a323e80e914",
+          "creator": "Artemii Lebedev",
+          "sourceURL": "https://artemiilebedev.com/",
+          "gallery": "https://www.siteinspire.com/website/13624-artemii-lebedev",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Native utility overlay, eight-row work index and sampled viewport framing. A plain dark viewport replaces the film; no new scenery or source footage. Type and secondary labels are simplified; video, hold and effects controls are not implemented.",
+          "framer": {
+            "pageID": "tIkB2CJN_",
+            "artworkID": "rBI60r3ht",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rBI60r3ht"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-005",
+      "title": "Maximilian Kaspar",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-005 — Maximilian Kaspar",
+        "metadata": [
+          "- Source: [Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar), published September 22, 2026.",
+          "- Live destination and credited design/art direction/development: [Maximilian Kaspar](https://www.maximiliankaspar.com/).",
+          "- Tags: `light-ground`, `character-image`, `large-type`, `asymmetry`, `grid`."
+        ],
+        "canonicalCreditLines": [
+          "- Live destination and credited design/art direction/development: [Maximilian Kaspar](https://www.maximiliankaspar.com/)."
+        ],
+        "sourceLinks": [
+          "https://www.siteinspire.com/website/13623-maximilian-kaspar",
+          "https://www.maximiliankaspar.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-005.json",
+          "bytes": 108278,
+          "sha256": "836119792649bc5a14b6a2aa46291d2138d9f2c4b88fc128020618b6352c96ee",
+          "parts": 211,
+          "partsSHA256": "d5c89896b477e79e0c88681ce2f4e98885aad0871db0202f5c8a19b2a7f5db2a",
+          "creator": "Maximilian Kaspar / design, art direction and development",
+          "sourceURL": "https://www.maximiliankaspar.com/",
+          "gallery": "https://www.siteinspire.com/website/13623-maximilian-kaspar",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Gallery-revision statement/grid with native pale glyph rows tracing the inspected branching silhouette. Contour, glyph content and typeface are approximations; no character model or animation claimed. Current live wording differs from this selected gallery state.",
+          "framer": {
+            "pageID": "tIkB2CJN_",
+            "artworkID": "ajt0X1O1G",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ajt0X1O1G"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-006",
+      "title": "Mac Moss Studio",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-006 — Mac Moss Studio",
+        "metadata": [
+          "- Source: [Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio), published September 11, 2026.",
+          "- Live destination: [Mac Moss Studio](https://macmoss.studio/).",
+          "- Attribution: Mac Moss / mm.s; no separate website-design credit found in the inspected listing.",
+          "- Tags: `animated-symbols`, `matrix`, `hairline-frame`, `technical-organic`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Mac Moss / mm.s; no separate website-design credit found in the inspected listing."
+        ],
+        "sourceLinks": [
+          "https://www.siteinspire.com/website/13575-mac-moss-studio",
+          "https://macmoss.studio/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+          "bytes": 768604,
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "mode": "macmoss",
+          "creator": "Mac Moss / KEEN",
+          "provenancePath": "docs/design-studies/code-components/assets/hero-mechanism-provenance.json",
+          "provenance": {
+            "reference": "HERO-006",
+            "creator": "Mac Moss / KEEN",
+            "primary": "https://macmoss.studio/KEEN-2",
+            "sourceAsset": "https://freight.cargo.site/t/original/i/5732872bad15333bc9e3bc11d89a41fc7fd43fc32779f7d24c2675d4a42e6acd/Comp_3.gif",
+            "sourceSHA256": "620afc5173c1db2d5b6ccf924536d0b766cf5ff2d209e542e40624feabb5e656",
+            "selectedCells": [
+              {
+                "column": 3,
+                "row": 1,
+                "name": "HEEL STRIKE ZONE"
+              },
+              {
+                "column": 4,
+                "row": 1,
+                "name": "ABRASION RESISTANT UPPER"
+              },
+              {
+                "column": 3,
+                "row": 2,
+                "name": "LONG LASTING TRACTION"
+              },
+              {
+                "column": 4,
+                "row": 2,
+                "name": "ECO RESPONSIBLE UPPER"
+              }
+            ],
+            "omittedCells": 16,
+            "changes": "Only the selected top-right 2×2 cells of the 4×5 sheet. Source timeline sampled at 12 fps (125 vector frames); two tonal contour layers; contour simplification and 255-step cell coordinates (maximum 0.59 source pixel coordinate error). Micrograin, frame and labels are independently rebuilt. No GIF/image/pixel-mask payload is embedded or displayed at runtime.",
+            "vectorPackedSHA256": "713dfacd1537844e3ced2911947472a51fec5f62dbb9b494082685868570b66e",
+            "vectorRawSHA256": "2b9b78c5b3d1a80c508364b5da8428bae79e4f1f519eb07db636bef50e10835e",
+            "vectorPaths": 6513,
+            "vectorPoints": 255976
+          },
+          "framer": {
+            "componentID": "codeFile/FuDaCpX:default",
+            "designPageID": "Q1tIlIqft",
+            "labPageID": "iUjJa5763",
+            "placements": [
+              {
+                "placement": "design",
+                "id": "hK1riWR8f",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=hK1riWR8f",
+                "geometry": {
+                  "width": "960px",
+                  "height": "600px",
+                  "left": "23.3px",
+                  "top": "9.32px",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "macmoss",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "desktop",
+                "id": "P1J_soGfA",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P1J_soGfA",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "600px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "macmoss",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "phone",
+                "id": "M1sPbnURDP1J_soGfA",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=M1sPbnURDP1J_soGfA",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "440px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "macmoss",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-007",
+      "title": "Cantor8",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-007 — Cantor8",
+        "metadata": [
+          "- Source: [Lapa Ninja](https://www.lapa.ninja/post/cantor8/).",
+          "- Live destination: [Cantor8](https://www.cantor8.io/).",
+          "- Attribution: Cantor8; the current primary footer credits the website to [Artemii Lebedev](https://artemiilebedev.com/).",
+          "- Tags: `filaments`, `cobalt`, `network`, `instrument-labels`, `motion`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Cantor8; the current primary footer credits the website to [Artemii Lebedev](https://artemiilebedev.com/)."
+        ],
+        "sourceLinks": [
+          "https://www.lapa.ninja/post/cantor8/",
+          "https://www.cantor8.io/",
+          "https://artemiilebedev.com/"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroRecreationStudy.tsx",
+          "bytes": 307039,
+          "sha256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+          "mode": "cantor",
+          "creator": "Cantor8; website by Artemii Lebedev",
+          "limits": "Independent curve/wind/pointer approximation; not original spring integrator or timing; static peripheral labels; navigation/CTA chrome omitted from field study",
+          "geometryAttribution": null,
+          "framer": {
+            "componentID": "codeFile/B4OuNLk:default",
+            "designPageID": "RVzvNGZNT",
+            "labPageID": "VR2TaJCqa",
+            "placements": [
+              {
+                "reference": "HERO-007",
+                "placement": "design",
+                "id": "MNCM5qolT",
+                "expectedMode": "cantor",
+                "verifiedPreset": true,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=MNCM5qolT"
+              },
+              {
+                "reference": "HERO-007",
+                "placement": "desktop",
+                "id": "lVWxjYalC",
+                "expectedMode": "cantor",
+                "verifiedPreset": true,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=lVWxjYalC"
+              },
+              {
+                "reference": "HERO-007",
+                "placement": "phone",
+                "id": "H8Zf2szHAlVWxjYalC",
+                "expectedMode": "cantor",
+                "verifiedPreset": true,
+                "layoutOverrides": {
+                  "height": 560
+                },
+                "overrideReadbackVerified": true,
+                "overrideVisualReview": true,
+                "savedScale": 1,
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=H8Zf2szHAlVWxjYalC"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-008",
+      "title": "PP Neue Montreal",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-008 — PP Neue Montreal",
+        "metadata": [
+          "- Source: [Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/).",
+          "- Live destination: [Neue Montreal](https://neuemontreal.com/).",
+          "- Attribution: Pangram Pangram is the typeface foundry; separate website-design credit not identified.",
+          "- Tags: `poster-scale`, `vermilion`, `paper-grain`, `cropped-type`, `emblem`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Pangram Pangram is the typeface foundry; separate website-design credit not identified."
+        ],
+        "sourceLinks": [
+          "https://www.lapa.ninja/post/pp-neue-montreal/",
+          "https://neuemontreal.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-008.json",
+          "bytes": 112425,
+          "sha256": "3a3d2f1fb3b29c8fef38094da81f2587cf175205d8d50d60bdeb2744e2da0af9",
+          "parts": 304,
+          "partsSHA256": "a1099d3d2a7f620470b254c5d53da43c9a5654500436b78415977d867f5372cc",
+          "creator": "Pangram Pangram (typeface foundry); separate website-design credit not identified",
+          "sourceURL": "https://neuemontreal.com/",
+          "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Selected archive poster: native giant type, capsules, rules and spiky emblem. Inter substitutes the licensed typeface; grain is reduced to native flecks. The city-film slot is neutral geometry, not source footage. No animation; current broken rule/type overlap is not reproduced.",
+          "framer": {
+            "pageID": "tIkB2CJN_",
+            "artworkID": "eoFFOopBu",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=eoFFOopBu"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-009",
+      "title": "Vercel",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-009 — Vercel",
+        "metadata": [
+          "- Source: [Lapa Ninja](https://www.lapa.ninja/post/vercel-3/).",
+          "- Live destination: [Vercel](https://vercel.com/).",
+          "- Attribution: Vercel; separate website designer not identified. Gallery names Geist as its typeface.",
+          "- Tags: `monochrome`, `isolated-mark`, `halo`, `negative-space`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Vercel; separate website designer not identified. Gallery names Geist as its typeface."
+        ],
+        "sourceLinks": [
+          "https://www.lapa.ninja/post/vercel-3/",
+          "https://vercel.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+          "bytes": 768604,
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "mode": "vercel",
+          "creator": "Vercel",
+          "provenancePath": "docs/design-studies/code-components/assets/hero-mechanism-provenance.json",
+          "provenance": {
+            "reference": "HERO-009",
+            "creator": "Vercel",
+            "selectedRevision": "https://www.lapa.ninja/post/vercel-3/",
+            "inspectedPrimaryImages": [
+              "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/og-home-x.png",
+              "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/media/fallback-dark-glow-desktop.25ylksegigbc-.webp"
+            ],
+            "changes": "Selected dark silhouette/halo material, independently painted from geometric paths and gradients. Halo movement and pointer response approximate light changes; no exact archived animation or original rendering algorithm is claimed. Whole website and current light revision are omitted."
+          },
+          "framer": {
+            "componentID": "codeFile/FuDaCpX:default",
+            "designPageID": "Q1tIlIqft",
+            "labPageID": "iUjJa5763",
+            "placements": [
+              {
+                "placement": "design",
+                "id": "bvsprYLPD",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=bvsprYLPD",
+                "geometry": {
+                  "width": "960px",
+                  "height": "600px",
+                  "left": "23.3px",
+                  "top": "9.32px",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "vercel",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "desktop",
+                "id": "ApPh9jwXj",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ApPh9jwXj",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "600px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "vercel",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "phone",
+                "id": "M1sPbnURDApPh9jwXj",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=M1sPbnURDApPh9jwXj",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "440px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "vercel",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-010",
+      "title": "G!theimagineers",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-010 — G!theimagineers",
+        "metadata": [
+          "- Source: [Httpster](https://httpster.net/website/gtheimagineers/), September 21, 2020; [linked archive image](https://httpster.net/assets/media/z2/gtheimagineers.com-Z2kOnze.webp).",
+          "- Live destination: [G!theimagineers, English](https://www.gtheimagineers.com/en.html).",
+          "- Credit: the live Credits link identifies [Index Studio](https://index.studio/).",
+          "- Tags: `contour-field`, `expanding-rails`, `monochrome`, `hairlines`."
+        ],
+        "canonicalCreditLines": [
+          "- Credit: the live Credits link identifies [Index Studio](https://index.studio/)."
+        ],
+        "sourceLinks": [
+          "https://httpster.net/website/gtheimagineers/",
+          "https://httpster.net/assets/media/z2/gtheimagineers.com-Z2kOnze.webp",
+          "https://www.gtheimagineers.com/en.html",
+          "https://index.studio/"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-010.json",
+          "bytes": 39913,
+          "sha256": "dbc893c83c151bda6577658963a679114c24a1c4a54f24f9e9bbe8b9947750f2",
+          "parts": 88,
+          "partsSHA256": "8a7f3d41857c5ec8177929f50969dce05e79071795dfb674c41ae60eaedfba80",
+          "creator": "G!theimagineers / Index Studio",
+          "sourceURL": "https://www.gtheimagineers.com/en.html",
+          "gallery": "https://httpster.net/website/gtheimagineers/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Static expanded Vision composition from the inspected archive.23 measured offset circles remain native ellipses. Source prose is replaced with neutral text; hairlines and smaller geometry are approximated. No accordion/motion claimed.",
+          "framer": {
+            "pageID": "H_ibyOQyy",
+            "artworkID": "FGXi0U_xL",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=FGXi0U_xL"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-011",
+      "title": "Jon Way Studio / JW.S",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-011 — Jon Way Studio / JW.S",
+        "metadata": [
+          "- Source: [Httpster](https://httpster.net/website/jon-way-studio/), March 31, 2023; [linked archive image](https://httpster.net/assets/media/z1/jonway.studio-1-Z1uCI0E.webp).",
+          "- Live destination and creator: [Jon Way](https://www.jonway.studio/).",
+          "- Tags: `editorial-overlay`, `project-fields`, `index`, `registration-marks`."
+        ],
+        "canonicalCreditLines": [
+          "- Live destination and creator: [Jon Way](https://www.jonway.studio/)."
+        ],
+        "sourceLinks": [
+          "https://httpster.net/website/jon-way-studio/",
+          "https://httpster.net/assets/media/z1/jonway.studio-1-Z1uCI0E.webp",
+          "https://www.jonway.studio/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-011.json",
+          "bytes": 61855,
+          "sha256": "6aefadf09797d643b28df2e92fb6d859e09c027f1a37030512dc31e625b488b8",
+          "parts": 135,
+          "partsSHA256": "7c1bf75e0b506a27efbdee19b586aeb75f458afd1cad0144e099c099612e0e82",
+          "creator": "Jon Way / JW.S",
+          "sourceURL": "https://www.jonway.studio/",
+          "gallery": "https://httpster.net/website/jon-way-studio/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Archived workspace layout: native index rails, contrasting project fields, registration marks and overlapping info sheet. Right-hand photograph/poster uses labeled neutral geometry, not copied artwork. Copy/fonts are changed; archived motion/navigation are not implemented.",
+          "framer": {
+            "pageID": "tIkB2CJN_",
+            "artworkID": "vbyQKvFu3",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=vbyQKvFu3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-012",
+      "title": "Mezmo",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-012 — Mezmo",
+        "metadata": [
+          "- Source: [Httpster](https://httpster.net/website/mezmo/), December 13, 2022; [linked archive image](https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp).",
+          "- Live destination: [Mezmo](https://www.mezmo.com/).",
+          "- Attribution: Mezmo; separate website designer not identified.",
+          "- Tags: `acid-green`, `operational-diagram`, `condensed-type`, `outlined-modules`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Mezmo; separate website designer not identified."
+        ],
+        "sourceLinks": [
+          "https://httpster.net/website/mezmo/",
+          "https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp",
+          "https://www.mezmo.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-012.json",
+          "bytes": 59803,
+          "sha256": "7d16c192cfe78cfd0b748aa7b3458784b478e7d2139b3b765824ca2c98bda6f4",
+          "parts": 143,
+          "partsSHA256": "d43bfe7b0ced8c26cee7993577379b8ef88e9f906acf9d7de1087266b1de351d",
+          "creator": "Mezmo; separate website designer not identified",
+          "sourceURL": "https://www.mezmo.com/",
+          "gallery": "https://httpster.net/website/mezmo/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Archived acid-green platform graphic: native outlined containers, processing modules, routes/arrows and simplified source/destination icons. Condensed type is substituted and minor chrome is reduced. Static diagram; no archived flow animation or current AURA terminal behavior claimed.",
+          "framer": {
+            "pageID": "bS3wbS1E4",
+            "artworkID": "nygjJP4uh",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nygjJP4uh"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-013",
+      "title": "FORMAT",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-013 — FORMAT",
+        "metadata": [
+          "- Source: [Awwwards](https://www.awwwards.com/sites/format).",
+          "- Live destination: [FORMAT](https://format.obys.agency/).",
+          "- Credits: Obys × DES; Awwwards names Obys, Viacheslav Olianishyn and Olha Olianishyna.",
+          "- Tags: `nested-formats`, `geometric-wordmark`, `poster`, `scroll-composition`."
+        ],
+        "canonicalCreditLines": [
+          "- Credits: Obys × DES; Awwwards names Obys, Viacheslav Olianishyn and Olha Olianishyna."
+        ],
+        "sourceLinks": [
+          "https://www.awwwards.com/sites/format",
+          "https://format.obys.agency/"
+        ]
+      },
+      "wave": "historical-first-six",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-013.json",
+          "bytes": 23277,
+          "sha256": "b430797e1ca834b1f73f839262b148f614d8f6fca82c0c5e9c0b42d8e1a13ab8",
+          "parts": 60,
+          "partsSHA256": "b4561ef4f30a7ef6cf2e8c17b73618122d8c323fd971566f7dd2126ffb8b9f46",
+          "creator": "Obys × DES / Viacheslav Olianishyn / Olha Olianishyna",
+          "sourceURL": "https://format.obys.agency/",
+          "gallery": "https://www.awwwards.com/sites/format",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Static source-led format construction. Segmented lettering is hand-built; three unequal panels use neutral photographic stand-ins. Positions summarize the reviewed entrance/initial-scroll composition. No physics, Notes Mode or scroll motion claimed.",
+          "framer": {
+            "pageID": "H_ibyOQyy",
+            "artworkID": "ARdPpi5ec",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ARdPpi5ec"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-014",
+      "title": "Unbelievably Crap",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-014 — Unbelievably Crap",
+        "metadata": [
+          "- Source: [Awwwards](https://www.awwwards.com/sites/unbelievably-crap).",
+          "- Live destination: [Unbelievably Crap](https://www.unbelievablycrap.com/).",
+          "- Creator: Liubomyr Ulytskyi, credited by Awwwards and the primary page.",
+          "- Tags: `scanlines`, `3d-figure`, `surveillance-hud`, `raster`, `edge-information`."
+        ],
+        "canonicalCreditLines": [
+          "- Creator: Liubomyr Ulytskyi, credited by Awwwards and the primary page."
+        ],
+        "sourceLinks": [
+          "https://www.awwwards.com/sites/unbelievably-crap",
+          "https://www.unbelievablycrap.com/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+          "bytes": 768604,
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "mode": "raster",
+          "creator": "Liubomyr Ulytskyi",
+          "provenancePath": "docs/design-studies/code-components/assets/hero-mechanism-provenance.json",
+          "provenance": {
+            "reference": "HERO-014",
+            "creator": "Liubomyr Ulytskyi",
+            "gallery": "https://www.awwwards.com/sites/unbelievably-crap",
+            "selectedImage": "https://assets.awwwards.com/awards/submissions/2026/09/6aa06aafa4f85878540881.png",
+            "target": "Selected white rasterized head/bust, two red bars, large rotated 0039 and peripheral microtype/HUD. This does not recreate the current live full-body subject.",
+            "geometry": {
+              "title": "Infinite, 3D Head Scan",
+              "author": "Lee Perry-Smith",
+              "via": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith",
+              "license": "Creative Commons Attribution 3.0 Unported",
+              "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+              "basedOn": "www.triplegangers.com",
+              "additionalPermissions": "http://www.ir-ltd.net/",
+              "upstreamSHA256": "402b8a8ac9f03232e6d64b5962929703a069daf99d3c49ac8eb0e48bedc9c576",
+              "packedSHA256": "f1edefb08f58862a763832bff1905820bb8b93181958629290df2707c16eca05",
+              "changes": "Centered/scaled, signed16 position and signed8 unit-normal quantization. All 9,279 source vertices and 17,684 triangles retained. Independently authored ordered raster/scanline material and camera motion replace photographic material. Documented head/bust stand-in, not verified as Liubomyr's subject or mesh."
+            },
+            "otherChanges": "Substitute font and microtype, independently generated background dots, approximate camera/scan motion; no full site scroll, figure-tearing behavior or source JavaScript reproduced."
+          },
+          "framer": {
+            "componentID": "codeFile/FuDaCpX:default",
+            "designPageID": "Q1tIlIqft",
+            "labPageID": "iUjJa5763",
+            "placements": [
+              {
+                "placement": "design",
+                "id": "f9_4RBrI3",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=f9_4RBrI3",
+                "geometry": {
+                  "width": "960px",
+                  "height": "600px",
+                  "left": "23.3px",
+                  "top": "9.32px",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "raster",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "desktop",
+                "id": "icobQBS5f",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=icobQBS5f",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "600px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "raster",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "phone",
+                "id": "M1sPbnURDicobQBS5f",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=M1sPbnURDicobQBS5f",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "440px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "raster",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-015",
+      "title": "MECHA",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-015 — MECHA",
+        "metadata": [
+          "- Source: [Awwwards](https://www.awwwards.com/sites/mecha).",
+          "- Listed live destination: [MECHA](https://mecha-xyz.webflow.io/).",
+          "- Credits: Widelab and Grzegorz Leśniewicz. The creator's [case study](https://www.widehue.co/case-studies/mecha) gives detailed role credits.",
+          "- Tags: `wireframe-identity`, `technical-frame`, `serif`, `split-structure`."
+        ],
+        "canonicalCreditLines": [
+          "- Credits: Widelab and Grzegorz Leśniewicz. The creator's [case study](https://www.widehue.co/case-studies/mecha) gives detailed role credits."
+        ],
+        "sourceLinks": [
+          "https://www.awwwards.com/sites/mecha",
+          "https://mecha-xyz.webflow.io/",
+          "https://www.widehue.co/case-studies/mecha"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+          "bytes": 768604,
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "mode": "mecha",
+          "creator": [
+            "Widelab",
+            "Grzegorz Leśniewicz"
+          ],
+          "provenancePath": "docs/design-studies/code-components/assets/hero-mechanism-provenance.json",
+          "provenance": {
+            "reference": "HERO-015",
+            "creators": [
+              "Widelab",
+              "Grzegorz Leśniewicz"
+            ],
+            "primary": "https://mecha-xyz.webflow.io/",
+            "sourceAsset": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
+            "sourceSHA256": "0d484646983d0a7da6d0b3360c7dfb2cbcbfd0837c2452649a044b70978cdab7",
+            "assetLicense": "Unverified; no independent authorship or reusable-license claim",
+            "changes": "Actual primary mark primitive 0 centered/normalized and transformed from its source node. 696 vertices, 1,364 nondegenerate triangles; 24 degenerate faces removed after six-decimal normalization. Derived crease/silhouette edges, independent projection and hidden-line approximation. Timed playback approximates the observed scroll turn; no whole-page scroll behavior or original source JavaScript copied."
+          },
+          "framer": {
+            "componentID": "codeFile/FuDaCpX:default",
+            "designPageID": "Q1tIlIqft",
+            "labPageID": "iUjJa5763",
+            "placements": [
+              {
+                "placement": "design",
+                "id": "pSMjfqgOo",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=pSMjfqgOo",
+                "geometry": {
+                  "width": "960px",
+                  "height": "600px",
+                  "left": "23.3px",
+                  "top": "9.32px",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "mecha",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "desktop",
+                "id": "q_u_nuQ_N",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q_u_nuQ_N",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "600px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "mecha",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "phone",
+                "id": "M1sPbnURDq_u_nuQ_N",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=M1sPbnURDq_u_nuQ_N",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "440px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "mecha",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-016",
+      "title": "Origin",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-016 — Origin",
+        "metadata": [
+          "- Source: [Minimal Gallery](https://minimal.gallery/origin/), September 28, 2026.",
+          "- Live destination: [Origin Studio](https://www.originbrand.io/).",
+          "- Attribution: Origin Studio; gallery submitter Ben Blackburn. Submitter status alone does not establish website authorship.",
+          "- Tags: `wordmark-scale`, `quiet-contrast`, `light-object`, `corner-anchor`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: Origin Studio; gallery submitter Ben Blackburn. Submitter status alone does not establish website authorship."
+        ],
+        "sourceLinks": [
+          "https://minimal.gallery/origin/",
+          "https://www.originbrand.io/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-016.json",
+          "bytes": 37133,
+          "sha256": "db15f10bd9a8d32874d1dee985a16104b5b3ecec7a96189f274a69a36066f7ea",
+          "parts": 83,
+          "partsSHA256": "a1529b4d680117dfd813969014bd066efefab3d0e85852ef43cbf4aab54f1e3f",
+          "creator": "Origin Studio; gallery submitter Ben Blackburn (not proof of website authorship)",
+          "sourceURL": "https://www.originbrand.io/",
+          "gallery": "https://minimal.gallery/origin/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Native wordmark/card study plus two enlarged light-tile keyframes. Rounded lettering and ellipse-built glow approximate the inspected source; copy is shortened. No original rendering method, pointer response or native animation claimed.",
+          "framer": {
+            "pageID": "bS3wbS1E4",
+            "artworkID": "kHUbycf9v",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=kHUbycf9v"
+          }
+        },
+        {
+          "kind": "live-code",
+          "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+          "bytes": 768604,
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "mode": "origin",
+          "creator": "Origin Studio",
+          "provenancePath": "docs/design-studies/code-components/assets/hero-mechanism-provenance.json",
+          "provenance": {
+            "reference": "HERO-016",
+            "creator": "Origin Studio",
+            "primary": "https://www.originbrand.io/",
+            "gallery": "https://minimal.gallery/origin/",
+            "changes": "Independent procedural approximation of the changing blurred white dot/teardrop/flares inside the source's small black tile. Three changing blurred radial-gradient light forms; no original media, exact renderer or input coupling claimed. Native full-hero framing is a separate counterpart."
+          },
+          "framer": {
+            "componentID": "codeFile/FuDaCpX:default",
+            "designPageID": "Q1tIlIqft",
+            "labPageID": "iUjJa5763",
+            "placements": [
+              {
+                "placement": "design",
+                "id": "NNRa59PU3",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=NNRa59PU3",
+                "geometry": {
+                  "width": "960px",
+                  "height": "600px",
+                  "left": "23.3px",
+                  "top": "9.32px",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "origin",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "desktop",
+                "id": "ggHEJZ0Ac",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ggHEJZ0Ac",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "600px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "origin",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              },
+              {
+                "placement": "phone",
+                "id": "M1sPbnURDggHEJZ0Ac",
+                "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=M1sPbnURDggHEJZ0Ac",
+                "geometry": {
+                  "width": "1fr",
+                  "height": "440px",
+                  "maxWidth": "960px",
+                  "position": "relative",
+                  "visible": true
+                },
+                "props": {
+                  "$control__study": "origin",
+                  "$control__animate": true,
+                  "$control__canvasMotion": false,
+                  "$control__speed": 1,
+                  "$control__stillTime": 1,
+                  "$control__artworkScale": 1,
+                  "$control__density": 1,
+                  "$control__intensity": 1,
+                  "$control__motionSpan": 1,
+                  "$control__scanPitch": 2.5,
+                  "$control__blur": 0.65,
+                  "$control__primary": "#c4e5ca",
+                  "$control__light": "#ffffff",
+                  "$control__secondary": "#f3f3f1",
+                  "$control__accent": "#ff0000",
+                  "$control__ink": "#11120f",
+                  "$control__interactive": true,
+                  "$control__showLabels": true
+                },
+                "verified": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-017",
+      "title": "Bleibtgleich 2026",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-017 — Bleibtgleich 2026",
+        "metadata": [
+          "- Source: [Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/), October 25, 2026.",
+          "- Live destination/creator identity: [Maksym Bleibtgleich](https://bleibtgleich.dev/).",
+          "- Tags: `staggered-type`, `organic-mask`, `vertical-rule`, `extreme-scale`."
+        ],
+        "canonicalCreditLines": [
+          "- Live destination/creator identity: [Maksym Bleibtgleich](https://bleibtgleich.dev/)."
+        ],
+        "sourceLinks": [
+          "https://minimal.gallery/bleibtgleich-2026/",
+          "https://bleibtgleich.dev/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-017.json",
+          "bytes": 35667,
+          "sha256": "c8385157d2a9f384bf425a75f4fccedfdf85a373aff924ee577aecb8f088f104",
+          "parts": 93,
+          "partsSHA256": "f99c74557924fc93ce083b3ac0c2421f3e51fa7b935f76cb4b4ca1240c1948ff",
+          "creator": "Maksym Bleibtgleich",
+          "sourceURL": "https://bleibtgleich.dev/",
+          "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Native offset type, vertical rule and the inspected black aperture state with white connected points. Contour is traced with editable horizontal slices; typography is substituted. Static capture only: scroll/time/pointer coupling and image reveals are not reconstructed.",
+          "framer": {
+            "pageID": "bS3wbS1E4",
+            "artworkID": "xvdaw_n4c",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=xvdaw_n4c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HERO-018",
+      "title": "pu—ente",
+      "classification": "Source inspiration",
+      "catalog": {
+        "path": "docs/design-inspiration/heroes.md",
+        "heading": "HERO-018 — pu—ente",
+        "metadata": [
+          "- Source: [Minimal Gallery](https://minimal.gallery/pu-ente/), October 27, 2026.",
+          "- Live destination: [pu—ente](https://www.pu-ente.com/); [graphic-design branch](https://www.pu-ente.com/z/).",
+          "- Attribution: pu—ente; no individual website creator identified in inspected content.",
+          "- Tags: `two-panel-entry`, `modular-geometry`, `linework`, `negative-space`."
+        ],
+        "canonicalCreditLines": [
+          "- Attribution: pu—ente; no individual website creator identified in inspected content."
+        ],
+        "sourceLinks": [
+          "https://minimal.gallery/pu-ente/",
+          "https://www.pu-ente.com/",
+          "https://www.pu-ente.com/z/"
+        ]
+      },
+      "wave": "remaining-twelve",
+      "treatments": [
+        {
+          "kind": "native-recipe",
+          "path": "docs/design-studies/hero-recreations/native/HERO-018.json",
+          "bytes": 15546,
+          "sha256": "e975ede35dd96966308210c44eeea85fece9509de6c3ee83fccf14c4be33ba4b",
+          "parts": 36,
+          "partsSHA256": "b2290b92b60939e85ee9267094f4613dc7775b940332c9c13789eb75d7e29812",
+          "creator": "pu—ente",
+          "sourceURL": "https://www.pu-ente.com/z/",
+          "gallery": "https://minimal.gallery/pu-ente/",
+          "sourcePost": null,
+          "width": 1440,
+          "height": 1000,
+          "limits": "Three inspected graphic-design tiles: Caseti 385, Porcelain Studio and aurea10. Native circles, squares and traced quadrilateral edges; proportions approximate the source capture. Static motifs only, no shader or tile-motion claim.",
+          "framer": {
+            "pageID": "bS3wbS1E4",
+            "artworkID": "N252cia5g",
+            "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=N252cia5g"
+          }
+        }
+      ]
+    }
+  ],
+  "framer": {
+    "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt",
+    "baselineAtContinuation": {
+      "pages": 30,
+      "codePlacements": 145,
+      "codeSources": 16
+    },
+    "verifiedFinal": {
+      "pages": 34,
+      "codePlacements": 160,
+      "codeSources": 17,
+      "canvasTrue": 60,
+      "canvasFalse": 100,
+      "uniqueHeroReferences": 18,
+      "nativeHeroVersions": 12,
+      "liveHeroVersions": 7,
+      "allHeroVersions": 19
+    },
+    "newPages": [
+      {
+        "id": "tIkB2CJN_",
+        "name": "09 / Hero Recreations II",
+        "sha256": "2a2de1a0401c8021971faf840fde21ac43922289f58bbb6d1e4b6acd31c9dbee",
+        "expectedSHA256": "2a2de1a0401c8021971faf840fde21ac43922289f58bbb6d1e4b6acd31c9dbee",
+        "nodeCount": 1501,
+        "passed": true
+      },
+      {
+        "id": "bS3wbS1E4",
+        "name": "10 / Hero Recreations III",
+        "sha256": "b3c2bf71f58fb10bc4ad1088a79574a41cc093d3c5a07387dbd3055b2842e257",
+        "expectedSHA256": "b3c2bf71f58fb10bc4ad1088a79574a41cc093d3c5a07387dbd3055b2842e257",
+        "nodeCount": 558,
+        "passed": true
+      },
+      {
+        "id": "Q1tIlIqft",
+        "name": "11 / Hero Mechanisms",
+        "sha256": "486fbb0b4a8ad84f4a1f6ec2235eb3b01b84ca845f5cd3aed5eae795452532f4",
+        "nodeCount": 131
+      },
+      {
+        "id": "iUjJa5763",
+        "name": "Hero / Further Live Studies",
+        "path": "/prototypes/hero-mechanisms-lab",
+        "draft": true,
+        "sha256": "70ba837b55bc7be056ee38acbd0c41a3ef817975785a023ebe7526c5d27ec6f4",
+        "nodeCount": 305
+      }
+    ],
+    "finalDesignBoardID": "GmvBhghKw",
+    "retiredOwnedBoardID": "sffI1eJjm",
+    "removedDuplicateBoardID": "DKMjmP344",
+    "all10LabIDsRetained": true,
+    "all15NewCanvasMotionOff": true,
+    "wholeOld32PagesPreserved": true,
+    "newComponent": {
+      "path": "docs/design-studies/code-components/HeroMechanismStudy.tsx",
+      "registeredPath": "HeroMechanismStudy.tsx",
+      "componentID": "codeFile/FuDaCpX:default",
+      "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+      "bytes": 768604,
+      "diagnostics": [],
+      "defaults": {
+        "study": "macmoss",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "primary": "#c4e5ca",
+        "light": "#ffffff",
+        "secondary": "#f3f3f1",
+        "accent": "#ff0000",
+        "ink": "#11120f",
+        "interactive": true,
+        "showLabels": true
+      },
+      "registeredSchema": {
+        "controls": {
+          "$control__study": {
+            "type": "enum",
+            "options": [
+              "macmoss",
+              "vercel",
+              "raster",
+              "mecha",
+              "origin"
+            ],
+            "defaultValue": "macmoss",
+            "title": "study"
+          },
+          "$control__animate": {
+            "type": "boolean",
+            "defaultValue": true,
+            "title": "animate"
+          },
+          "$control__canvasMotion": {
+            "type": "boolean",
+            "defaultValue": false,
+            "title": "canvasMotion"
+          },
+          "$control__speed": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "speed"
+          },
+          "$control__stillTime": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "stillTime"
+          },
+          "$control__artworkScale": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "artworkSize"
+          },
+          "$control__density": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "textureDensity"
+          },
+          "$control__intensity": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "intensity"
+          },
+          "$control__motionSpan": {
+            "type": "number",
+            "defaultValue": 1,
+            "title": "motionSpan"
+          },
+          "$control__scanPitch": {
+            "type": "number",
+            "defaultValue": 2.5,
+            "title": "rasterPitch"
+          },
+          "$control__blur": {
+            "type": "number",
+            "defaultValue": 0.65,
+            "title": "lightSoftness"
+          },
+          "$control__primary": {
+            "type": "rgba(r, g, b, a) | color(display-p3 r g b / a) | #rrggbb | var(--token-${id})",
+            "defaultValue": "#c4e5ca",
+            "title": "mintSymbols"
+          },
+          "$control__light": {
+            "type": "rgba(r, g, b, a) | color(display-p3 r g b / a) | #rrggbb | var(--token-${id})",
+            "defaultValue": "#ffffff",
+            "title": "lightPortrait"
+          },
+          "$control__secondary": {
+            "type": "rgba(r, g, b, a) | color(display-p3 r g b / a) | #rrggbb | var(--token-${id})",
+            "defaultValue": "#f3f3f1",
+            "title": "paperField"
+          },
+          "$control__accent": {
+            "type": "rgba(r, g, b, a) | color(display-p3 r g b / a) | #rrggbb | var(--token-${id})",
+            "defaultValue": "#ff0000",
+            "title": "redBars"
+          },
+          "$control__ink": {
+            "type": "rgba(r, g, b, a) | color(display-p3 r g b / a) | #rrggbb | var(--token-${id})",
+            "defaultValue": "#11120f",
+            "title": "ink"
+          },
+          "$control__interactive": {
+            "type": "boolean",
+            "defaultValue": true,
+            "title": "pointer"
+          },
+          "$control__showLabels": {
+            "type": "boolean",
+            "defaultValue": true,
+            "title": "labelsCredits"
+          }
+        }
+      }
+    },
+    "preservationGuards": {
+      "preserved_main": true,
+      "preserved_all30FullPageHashesExact": true,
+      "preserved_all30PageIDsAndOrder": true,
+      "preserved_all16SourceSHABytesExact": true,
+      "preserved_all16RegisteredExportIdentities": true,
+      "preserved_all15ComponentSchemasExact": true,
+      "preserved_exact16SourcePaths": true,
+      "preserved_exact145ControlsAndIDs": true,
+      "preserved_all139LegacyGeometriesExact": true,
+      "preserved_all6FirstWaveGeometriesExact": true,
+      "preserved_canvas60True85False": true,
+      "preserved_shared2NativeDefinitionsExact": true,
+      "preserved_all10NativeNavigationHostsExact": true,
+      "preserved_all6NativeCTAPublicObjectsExact": true,
+      "preserved_native4HeroPageHashExact": true,
+      "preserved_all3FirstWavePageHashesExact": true,
+      "live_bothNewPageIDsExact": true,
+      "live_draftRouteNameExact": true,
+      "live_exactNewSourceSHABytes": true,
+      "live_exact18ControlSchema": true,
+      "live_registeredComponentIdentity": true,
+      "live_cleanSourceWriteDiagnostics": true,
+      "live_exact15AddedInstancesNoExtras": true,
+      "live_all15InstanceIDsAndBindingsExact": true,
+      "live_all15Exact18PresetsCanvasOff": true,
+      "live_all15FullStoredGeometryAndParentExact": true,
+      "live_all5InheritedPhoneOriginalIDsExact": true,
+      "live_all5DesignCodeFieldsLogical960x600": true,
+      "live_all5Desktop600AndPhone440": true,
+      "live_labOnlyApprovedMECHANoteChanged": true,
+      "live_all3MECHAFidelityNotesCorrect": true,
+      "live_all15PersistentAttributionAndLimitsExact": true,
+      "onlyApprovedSurvivorAndNoRetiredDuplicateNodes": true,
+      "all8NewNativeStudiesWholePageHashesExact": true,
+      "exact34PagesWithOnly4Additions": true,
+      "exact160UniqueCodePlacements": true,
+      "exact17SourcePaths": true,
+      "canvas60True100False": true,
+      "all18UniqueHeroReferenceCoverage": true,
+      "live_verifiedNewDesignCanonicalStoredTreeExact": true,
+      "all54SurvivorBlueprintRecordsTextAndCanonicalTreeExact": true
+    },
+    "precision": {
+      "fields": 35,
+      "properties": [
+        "left",
+        "top",
+        "gap"
+      ],
+      "serializationPrecisionPx": 0.01,
+      "maxAbsoluteDifferencePx": 0.005,
+      "scope": "Only the35 declared new Design fields; all other new fields and all old32-page/source guards remain exact.",
+      "actualDesignSHA256": "486fbb0b4a8ad84f4a1f6ec2235eb3b01b84ca845f5cd3aed5eae795452532f4",
+      "sourceDerivedCanonicalSHA256": "0bc73bee0f5c7f8ae0f196871a84769d9143e6687d6d231cccb667b563ddba62",
+      "receipt": "mcp/hero-all18-precision-normalization.json"
+    }
+  },
+  "validation": {
+    "savedStateGuards": 41,
+    "actualBrowser": {
+      "native": {
+        "path": "browser/native-root-proof.json",
+        "bytes": 3882,
+        "sha256": "ccf41264da472e3f6ed33493690f2edf2f286f5c288d554fd054782ac3ae649c"
+      },
+      "live": {
+        "path": "browser/live-final-root-proof.json",
+        "bytes": 9385,
+        "sha256": "79f1342301ae443d33f08ae9b5bd5ca69eef3a5fe49806cac9253ce3f6744efd"
+      },
+      "verifiedEvidenceFiles": 53,
+      "canvasOptIns": 5,
+      "responsivePreviewCases": 10,
+      "allRestoredCanvasMotionFalse": true,
+      "actualEditorReload": true
+    },
+    "focused": {
+      "passed": true,
+      "groups": 15,
+      "script": "scripts/check-hero-mechanism-study.mjs",
+      "receipt": "validation/hero-mechanisms-final/focused.result.json",
+      "testSHA256": "e092d16353729347eb29f6a6bea8b522c7b110c129f05cd466d1d0b31cc076ba"
+    },
+    "mixedWindow": {
+      "passed": true,
+      "placementsPerTarget": 81,
+      "totalPlacements": 162,
+      "groupsPerTarget": 14,
+      "factories": 7,
+      "zoomDPRViewsPerTarget": 27,
+      "allPlacementPansPerTarget": 81,
+      "peakContexts": {
+        "canvas": 1,
+        "preview": 2
+      },
+      "peakGPUOutputSurfacePixels": 1998984,
+      "script": "scripts/check-hero-mechanism-integration.mjs",
+      "groupsPerRealm": 14,
+      "placementsPerRealm": 81,
+      "realms": [
+        "canvas",
+        "preview"
+      ],
+      "receipt": "validation/mixed-window/receipt.json",
+      "runnerSHA256": "b88f365ffff9bb9f5689a90b6390b0894b6a3ff7e961c0003c1142dbe4508e11",
+      "hostSHA256": "f8240a257f25e465d42c8eed343de2ede9ed586b73aadaf130791684106cc117",
+      "scope": "Actual shared coordinator/factories with bounded DOM/GL/Canvas recording, including accurate operative path/gradient state and GL uniforms, source raster adequacy/cache retention, both Canvas2D/WebGL context families."
+    },
+    "browser": {
+      "passed": true,
+      "cases": 10,
+      "script": "scripts/check-hero-mechanism-browser.mjs",
+      "receipt": "validation/hero-mechanisms-final/browser/result.json",
+      "testSHA256": "856a362d53406ee44379f92b540a23d41c0ed360e912de60c2c82671c3a1c438",
+      "scope": "Actual Canvas2D/software-WebGL pixels using actual code and a minimal JSX/React/Framer DOM adapter, not the full React/Framer lifecycle. Exact same-phase replay, per-cell glyph/head/mark/light quality, motion/control changes and actual GL restoration. No hardware FPS claim."
+    },
+    "assetReproduction": {
+      "passed": true,
+      "receipt": "validation/hero-mechanisms-final/asset-reproduction.result.json",
+      "builderSHA256": "29131a72119339f1401583c70a63cf82545d073c76f6a52f4364805dadb76b53",
+      "provenanceSHA256": "b6880b4a71032fc9840db506e1deee43694e3a16f44d2f82f0896041d5f0ae2e"
+    },
+    "nix": {
+      "passed": true,
+      "command": "nix build .#checks.x86_64-linux.hero-mechanisms --no-link --print-out-paths -L",
+      "exitCode": 0,
+      "output": "/nix/store/wnsnjsdhclr7ikzxx4y4bs4b54awvcv5-monarchic-website-hero-mechanisms-0.0.1",
+      "nixSource": "/nix/store/fmgsras5gzxbqz8404g4h1jwlracwi7g-source",
+      "sourceAndChecks": {
+        "flake.nix": {
+          "sha256": "d62191c89dfd34b3e29fd31be89861d8828801184d0339cdc11b620a95a4d285",
+          "bytes": 7102
+        },
+        "package.json": {
+          "sha256": "0bbf37fdf6b2e0c9600d527f872bae348025435ed9587aa1e68dbc3c08480b96",
+          "bytes": 4481
+        },
+        "docs/design-studies/code-components/HeroMechanismStudy.tsx": {
+          "sha256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+          "bytes": 768604
+        },
+        "scripts/check-hero-mechanism-study.mjs": {
+          "sha256": "e092d16353729347eb29f6a6bea8b522c7b110c129f05cd466d1d0b31cc076ba",
+          "bytes": 15875
+        },
+        "scripts/check-hero-mechanism-integration.mjs": {
+          "sha256": "b88f365ffff9bb9f5689a90b6390b0894b6a3ff7e961c0003c1142dbe4508e11",
+          "bytes": 22571
+        },
+        "scripts/hero-mechanism-test-host.mjs": {
+          "sha256": "f8240a257f25e465d42c8eed343de2ede9ed586b73aadaf130791684106cc117",
+          "bytes": 11185
+        },
+        "scripts/check-hero-mechanism-browser.mjs": {
+          "sha256": "856a362d53406ee44379f92b540a23d41c0ed360e912de60c2c82671c3a1c438",
+          "bytes": 15690
+        }
+      }
+    },
+    "localInventory": {
+      "passed": true,
+      "counts": {
+        "uniqueReferences": 18,
+        "firstWaveReferences": 6,
+        "remainingReferences": 12,
+        "nativeRecipes": 12,
+        "nativeParts": 1853,
+        "historicalNativeRecipes": 4,
+        "historicalNativeParts": 798,
+        "newNativeRecipes": 8,
+        "newNativeParts": 1055,
+        "liveModes": 7,
+        "historicalLiveModes": 2,
+        "newLiveModes": 5,
+        "liveSourceFiles": 2,
+        "treatments": 19,
+        "duplicateReference": "HERO-016 has native and live treatments and is counted once"
+      },
+      "preservation": {
+        "localOnly": true,
+        "all16OldSourcesExact": true,
+        "oldSources": [
+          {
+            "path": "docs/design-studies/code-components/CreativeCodingStudy.tsx",
+            "bytes": 61292,
+            "sha256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+            "expectedSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+            "expectedBytes": 61292,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/MaterialCodingStudy.tsx",
+            "bytes": 60763,
+            "sha256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+            "expectedSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+            "expectedBytes": 60763,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/PointCodingStudy.tsx",
+            "bytes": 56931,
+            "sha256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+            "expectedSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+            "expectedBytes": 56931,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/FieldCodingStudy.tsx",
+            "bytes": 60624,
+            "sha256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+            "expectedSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+            "expectedBytes": 60624,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/InterfaceCodingStudy.tsx",
+            "bytes": 68302,
+            "sha256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+            "expectedSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+            "expectedBytes": 68302,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/OriginalSignalStudy.tsx",
+            "bytes": 64578,
+            "sha256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+            "expectedSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+            "expectedBytes": 64578,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/OriginalFormStudy.tsx",
+            "bytes": 66419,
+            "sha256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+            "expectedSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+            "expectedBytes": 66419,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/LogoStudy.tsx",
+            "bytes": 74720,
+            "sha256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf",
+            "expectedSHA256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf",
+            "expectedBytes": 74720,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/LogoDropStudy.tsx",
+            "bytes": 19208,
+            "sha256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+            "expectedSHA256": "43fb6a0ca797d9a404d10a01d8689e6d58ad08c1c965c930adc98e4e4a89fc57",
+            "expectedBytes": 19208,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/HomepageNavigationInteractions.tsx",
+            "bytes": 18454,
+            "sha256": "38cbc56d5a0bb5f1124f9fe1084d99c62f04d6e241b60e5ea4648479b4b7c190",
+            "expectedSHA256": "38cbc56d5a0bb5f1124f9fe1084d99c62f04d6e241b60e5ea4648479b4b7c190",
+            "expectedBytes": 18454,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/WebsiteBrain.tsx",
+            "bytes": 290054,
+            "sha256": "922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1",
+            "expectedSHA256": "922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1",
+            "expectedBytes": 290054,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/WebsiteBrainDither.tsx",
+            "bytes": 297075,
+            "sha256": "b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2",
+            "expectedSHA256": "b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2",
+            "expectedBytes": 297075,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/WebsiteBrainText.tsx",
+            "bytes": 298454,
+            "sha256": "f8d78914a801206f6bdff76c0ae0de616fc6eb962ff2154a46fd8dcc1894b53f",
+            "expectedSHA256": "f8d78914a801206f6bdff76c0ae0de616fc6eb962ff2154a46fd8dcc1894b53f",
+            "expectedBytes": 298454,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/WebsiteBrainFibers.tsx",
+            "bytes": 297884,
+            "sha256": "bb3d4b53a6fdc5df94b59b248ca803c85405d699994fdae2c6e0c741dc7a7732",
+            "expectedSHA256": "bb3d4b53a6fdc5df94b59b248ca803c85405d699994fdae2c6e0c741dc7a7732",
+            "expectedBytes": 297884,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/SolidBrainStudy.tsx",
+            "bytes": 797649,
+            "sha256": "c49251207b700decc5e6e10244a8a24479ca3713c388b6f262dad09c054d8374",
+            "expectedSHA256": "c49251207b700decc5e6e10244a8a24479ca3713c388b6f262dad09c054d8374",
+            "expectedBytes": 797649,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/code-components/HeroRecreationStudy.tsx",
+            "bytes": 307039,
+            "sha256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+            "expectedSHA256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+            "expectedBytes": 307039,
+            "exact": true
+          }
+        ],
+        "all6HistoricalAuthoringRecordsExact": true,
+        "oldNative": [
+          {
+            "path": "docs/design-studies/hero-recreations/native/HERO-003.json",
+            "bytes": 134402,
+            "sha256": "6f3b701e52f079763cfa28976bbbee5c294ff190a05efd8564c41e2b402bc827",
+            "expectedSHA256": "6f3b701e52f079763cfa28976bbbee5c294ff190a05efd8564c41e2b402bc827",
+            "expectedBytes": 134402,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/hero-recreations/native/HERO-010.json",
+            "bytes": 39913,
+            "sha256": "dbc893c83c151bda6577658963a679114c24a1c4a54f24f9e9bbe8b9947750f2",
+            "expectedSHA256": "dbc893c83c151bda6577658963a679114c24a1c4a54f24f9e9bbe8b9947750f2",
+            "expectedBytes": 39913,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/hero-recreations/native/HERO-013.json",
+            "bytes": 23277,
+            "sha256": "b430797e1ca834b1f73f839262b148f614d8f6fca82c0c5e9c0b42d8e1a13ab8",
+            "expectedSHA256": "b430797e1ca834b1f73f839262b148f614d8f6fca82c0c5e9c0b42d8e1a13ab8",
+            "expectedBytes": 23277,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/hero-recreations/native/HERO-002.json",
+            "bytes": 111929,
+            "sha256": "532e8972cc5dfbad03a69b43a118fee7c0c68d3b3b734f3d64bd347911c09c04",
+            "expectedSHA256": "532e8972cc5dfbad03a69b43a118fee7c0c68d3b3b734f3d64bd347911c09c04",
+            "expectedBytes": 111929,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/hero-recreations/native/HERO-010-measured-circles.json",
+            "bytes": 2727,
+            "sha256": "b46e862b334a6b90a89e833dce9cfbef145b52419e9c48db31ba626c929c5a60",
+            "expectedSHA256": "b46e862b334a6b90a89e833dce9cfbef145b52419e9c48db31ba626c929c5a60",
+            "expectedBytes": 2727,
+            "exact": true
+          },
+          {
+            "path": "docs/design-studies/hero-recreations/native/layout.json",
+            "bytes": 1492,
+            "sha256": "4ee6b8d26eab09e0ed4c3c52f599a538a23dda286f67b889984ee5ec1c7d7d5b",
+            "expectedSHA256": "4ee6b8d26eab09e0ed4c3c52f599a538a23dda286f67b889984ee5ec1c7d7d5b",
+            "expectedBytes": 1492,
+            "exact": true
+          }
+        ],
+        "oldHost": {
+          "path": "scripts/check-framer-study-resources.mjs",
+          "bytes": 43831,
+          "sha256": "fe0ba1c7fe081f457332a1ab8a0e9ad052090e7cddd2ef04b3b797d74a6e7a6b",
+          "expectedSHA256": "fe0ba1c7fe081f457332a1ab8a0e9ad052090e7cddd2ef04b3b797d74a6e7a6b",
+          "exact": true
+        },
+        "oldIntegration": {
+          "path": "scripts/check-hero-study-integration.mjs",
+          "bytes": 18479,
+          "sha256": "e6f0a182d4ca15b2e7b97c86e76db3d13d92d080d98279d2e0b042b4fb8bcf97",
+          "expectedSHA256": "e6f0a182d4ca15b2e7b97c86e76db3d13d92d080d98279d2e0b042b4fb8bcf97",
+          "exact": true
+        }
+      },
+      "scope": "Independent LOCAL coverage, authoring-file hashes and preservation inventory. Historical evidence provides expected hashes only. No claim that any current Framer page, source, placement, preset, preview, reload or publication was verified by this inventory."
+    }
+  },
+  "historicalFirstWave": {
+    "manifest": "docs/design-studies/hero-recreations/manifest.json",
+    "path": "docs/design-studies/hero-recreations/manifest.json",
+    "bytes": 20417,
+    "sha256": "9a3504fd43304886f4e0cabbaf20adb7295b2e711fbe5232aeecb3fa24850368",
+    "handoff": "docs/design-studies/hero-recreation-handoff.md",
+    "status": "Retained historical six-reference checkpoint; remaining twelve are completed in this manifest."
+  },
+  "artifactRoot": "hero-recreations-2026-10-31/remaining-12",
+  "evidence": [
+    {
+      "path": "mcp/hero-all18-final-report.json",
+      "bytes": 44204,
+      "sha256": "9772e14de5d4ec4d19b3641e4f9cfb0181b94bbe8076a3cf8d50e6d45e839545"
+    },
+    {
+      "path": "mcp/hero-all18-node-map.json",
+      "bytes": 399563,
+      "sha256": "07534049989441fd5e257743cf2a6b57713d3130ebf286528eb484a516c012e7"
+    },
+    {
+      "path": "mcp/hero-all18-proof-index.json",
+      "bytes": 23492,
+      "sha256": "4012270771dd76552a1b129298b5d24d47d6c0b7cd43e9af2a98918c18e6d8ef"
+    },
+    {
+      "path": "mcp/hero-all18-after-raw.json",
+      "bytes": 193743,
+      "sha256": "eaee2cbe8ded858346187150f237011f7a891d69d0020ea36bc53d8dc884db19"
+    },
+    {
+      "path": "mcp/hero-all18-precision-normalization.json",
+      "bytes": 12038,
+      "sha256": "fdf7ef039c7ff0bdda05ca4359a8fd516331f7bffca05605bde41f64c5c0da15"
+    },
+    {
+      "path": "mcp/native-final-report.json",
+      "bytes": 68544,
+      "sha256": "172ce3b42aae4315486b244aae322a17c8ec18302d6b85d017dd03b0985b9e46"
+    },
+    {
+      "path": "browser/native-root-proof.json",
+      "bytes": 3882,
+      "sha256": "ccf41264da472e3f6ed33493690f2edf2f286f5c288d554fd054782ac3ae649c"
+    },
+    {
+      "path": "browser/live-final-root-proof.json",
+      "bytes": 9385,
+      "sha256": "79f1342301ae443d33f08ae9b5bd5ca69eef3a5fe49806cac9253ce3f6744efd"
+    },
+    {
+      "path": "validation/nix/receipt.json",
+      "bytes": 2476,
+      "sha256": "6c12c10b41970fb0058f367dabc0df9ce6abc9dd86af5c6a4b314c65639f6eba"
+    },
+    {
+      "path": "validation/mixed-window/receipt.json",
+      "bytes": 1882,
+      "sha256": "e24d53a9b880c5c367ca5c1f9969884ed82bb5053a30b3d7877de443dbb4a8a1"
+    },
+    {
+      "path": "validation/hero-mechanisms-final/component-handoff.json",
+      "bytes": 3092,
+      "sha256": "56fba0c96e3702bef2face2ef68e21073d632ac03773cfc2bb2fe5af35ca70b5"
+    },
+    {
+      "path": "validation/coverage-inventory/receipt.json",
+      "bytes": 1175,
+      "sha256": "bf891a9966529c88afb2c0a1d610a25a0cf06a809e81ab60564907f7397248e2"
+    }
+  ],
+  "limitations": [
+    "18 distinct source references have19 versions:12native studies and7live modes; Origin has both native composition and live light counterpart.",
+    "Native studies retain selected source structures and visible fidelity limits; photography/complex media substitutes and live adaptations remain credited Source inspiration.",
+    "Late delivery replaced only the five inflight Design IDs. Approved survivor board GmvBhghKw is blueprint-bound; duplicate DKMjmP344 was deleted through native UI. All ten lab IDs and prior32pages remain unchanged. Native Scale(K) was inspected but not applied. Retired original/duplicate IDs are absent.",
+    "Full old30-page hashes and old16sources/schemas remain exact. The two added native collections also match their frozen final whole-page hashes.",
+    "Actual browser Preview/Canvas evidence and local/Nix resource/pixel/export tests are separate proof scopes; no publishing or production synchronization occurred."
+  ],
+  "pathBase": "repository root; evidence paths are relative to artifactRoot"
+}

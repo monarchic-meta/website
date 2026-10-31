@@ -28,8 +28,11 @@ The separate [hero recreation handoff](../hero-recreation-handoff.md) covers six
 first-wave HERO references: four native studies and the Type Face/Cantor8 modes
 of [HeroRecreationStudy.tsx](HeroRecreationStudy.tsx). These source-led studies
 are separate from the twenty Creative Coding bookmarks and from independently
-composed originals. The handoff distinguishes local code validation from actual
-Framer placement, reload and Preview evidence.
+composed originals. The [complete-set handoff](../hero-recreation-complete-handoff.md)
+adds the remaining twelve references, with eight native artworks and five live
+counterparts, including both native and live Origin studies. The handoffs
+distinguish local code validation from actual Framer placement, reload and
+Preview evidence.
 
 ## Hero recreation component
 
@@ -74,13 +77,71 @@ artwork thresholds.
 Actual Framer reload/Preview evidence is separate in the handoff.
 The first wave is saved and reload verified; both modes pass actual
 Desktop/Phone Preview motion and pause/resume, with separate editor Canvas
-checks. These are still source-led studies; the other twelve hero references
-remain in the backlog.
+checks. All eighteen source-led references are covered by the complete-set
+handoff.
 
 Regenerate the pinned embedded mesh only when needed with
 `nix develop --command pnpm run build:framer-hero-head`; that package script
 already includes `--write` and validates the upstream blob before changing the
 authoring source.
+
+## Additional hero mechanisms
+
+[HeroMechanismStudy.tsx](HeroMechanismStudy.tsx) supplies five independently
+implemented renderers for credited source-led recreations and adaptations:
+
+| Mode | Reference | Runtime mechanism and limits |
+| --- | --- | --- |
+| `macmoss` | HERO-006 / Mac Moss / KEEN | Four source-identified animated symbol cells, reconstructed as two-tone vector contours sampled at 12 fps. The other sixteen cells are omitted. No GIF, pixel mask or remote media is displayed at runtime. |
+| `vercel` | HERO-009 / Vercel | Canvas paths and gradients approximate the selected dark triangle and asymmetric halo. Motion is independently authored; exact archive timing is unverified. |
+| `raster` | HERO-014 / Liubomyr Ulytskyi | WebGL renders the selected portrait composition's raster/scan treatment. The licensed Lee Perry-Smith head is an explicit geometry stand-in, with changed typography and camera motion. |
+| `mecha` | HERO-015 / Widelab, Grzegorz Leśniewicz | Canvas 2D projects crease edges derived from the inspected source mark, with approximate hidden lines and timed orientation. Geometry remains source-led; no independent asset-license claim or full scroll sequence. |
+| `origin` | HERO-016 / Origin Studio | Three procedural blurred light forms approximate the changing small source tile. The native hero composition is a separate counterpart. |
+
+The [provenance record](assets/hero-mechanism-provenance.json) identifies source
+assets, selected cells, mesh topology, hashes, stand-ins and omissions. Preserve
+the [head's CC BY 3.0 credit](assets/hero-head-license.txt). Retain visible wrapper
+attribution if disabling `Labels / credits`.
+
+`Animate`, `Speed`, `Still time`, `Motion span` and `Pointer` control playback.
+`Artwork size` changes the artwork inside its logical layout, without using
+Framer's placement-scale field. Mode-specific controls expose density, light,
+blur, raster pitch and colors. `Canvas motion` defaults off and only enables
+motion on the editor canvas; Preview animates by default. Exports and thumbnails
+remain frozen. These modes use the same shared coordinator and resource limits
+as the earlier studies, including fresh renderer surfaces when changing between
+Canvas 2D and WebGL.
+
+```sh
+nix develop --command pnpm run check:hero-mechanism-study
+nix develop --command pnpm run check:hero-mechanism-integration
+nix develop --command pnpm run check:hero-mechanism-browser
+nix build .#checks.x86_64-linux.hero-mechanisms --no-link -L
+```
+
+The focused check covers strict types, pinned payloads, controls and lifecycle.
+The new integration harness exercises all seven actual factories as 81 mixed
+placements per target, retaining the older harness unchanged. Its bounded
+recording host checks vector paths/gradients and shader state, cache adequacy,
+context-kind changes and shared limits. The browser check inspects actual
+Canvas/WebGL pixels at desktop and phone sizes, including portrait quality
+independently of its red bars. Framer saved-state and motion evidence belongs in
+the complete-set handoff; these local checks do not establish a Framer save or
+hardware performance.
+
+To regenerate the pinned source-derived vectors/mark, provide inspected local
+copies of the exact source assets to the offline preparation command:
+
+```sh
+nix run .#prepare-framer-hero-mechanisms -- \
+  --mac-gif /absolute/path/Comp_3.gif \
+  --mecha-glb /absolute/path/M_Mecha._v2.glb \
+  --output /absolute/path/preparation-artifacts
+```
+
+The Nix app supplies Node, pnpm and ffmpeg. The builder checks both input hashes
+before processing; add `--write` only to update the embedded authoring data.
+Original GIF/GLB files and source JavaScript are not runtime dependencies.
 
 ## Creative Coding component inventory
 

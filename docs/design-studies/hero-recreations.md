@@ -1,22 +1,30 @@
-# Hero recreations: first wave and retained backlog
+# Hero recreations: all eighteen selected references
 
-First-wave work recorded **2026-10-31** from the owner's
-[18 selected hero references](../design-inspiration/heroes.md) and
-[homepage direction](../homepage-creative-brief.md). **Six credited studies are
-saved and verified: four static native and two live procedural.** Actual editor reload,
-separate Canvas-motion checks and Desktop/Phone Preview motion and pause/resume
-checks pass. The final 25-guard read confirms **30 pages, 145 code placements and
-16 code sources**, preserving the original 27 pages, 139 placements and 15
-sources. The [handoff](hero-recreation-handoff.md) records saved links, evidence
-and intentional differences. The other twelve references remain in the backlog.
+The owner confirmed on **2026-10-31** that all eighteen selected references must
+be recreated. The first six are an intermediate result, not a stopping point or
+review gate. The complete set contains **twelve native compositions and seven
+live modes**, covering all eighteen unique HERO keys; Origin has both native
+and live counterparts. Credits and explicit fidelity limits remain with the
+source-led studies before any independent originals or combined heroes.
+
+The owner's [18 selected references](../design-inspiration/heroes.md) and
+[homepage direction](../homepage-creative-brief.md) define this scope. The
+[complete-set handoff](hero-recreation-complete-handoff.md) records the
+twelve-reference continuation and verification; its
+[manifest](hero-recreations/complete-manifest.json) covers all eighteen sources
+and final placements. The historical
+[first-wave handoff](hero-recreation-handoff.md) preserves the initial six and
+its 30-page / 145-placement / 16-source checkpoint; that checkpoint is not the
+final project total or a remaining-reference backlog.
 
 ## Sequence and scope
 
 1. **Learn through credited recreations.** Reinspect the source media, recreate
    bounded visual mechanisms and compare them directly with their references.
-   The first wave is six studies, not six cloned websites.
-2. **Make many independent originals.** Once the recreation phase has reviewable
-   examples, use the lessons to build a substantial range of independently
+   Each reference supplies a focused visual mechanism rather than a complete
+   cloned website.
+2. **Make many independent originals.** After all eighteen source recreations
+   are verified, use the lessons to build a substantial range of independently
    composed studies. Merely changing a source's wording, color or subject does
    not make its recognizable composition original.
 3. **Explore original combinations.** After the original studies, harmonize
@@ -24,20 +32,24 @@ and intentional differences. The other twelve references remain in the backlog.
    **editorial research montage**. These are complementary avenues; motion can
    contribute to all three. No exclusive choice among them is required.
 
-Keep stages distinct during this first wave. Preserve existing website
-prototypes, native recreations, live studies, originals and all 27 baseline
+Keep recreation and original-composition stages distinct. Preserve existing
+website prototypes, native recreations, live studies, originals and all 27 baseline
 Framer pages, including their node IDs, editable parts and credits. New work is
 additive. The saved **07 / Hero Recreations** page contains native work; a
 separate **08 / Hero Live Studies** Design page and draft Preview lab are saved
-for the two procedural studies. Both collections belong to **Source inspiration**,
-separate from Original compositions and full-page prototypes. Their final saved-node
-inventory is retained in the implementation handoff and manifest.
+for the two initial procedural studies. The added native collections are **09 /
+Hero Recreations II** and **10 / Hero Recreations III**, with **11 / Hero
+Mechanisms** and a separate draft lab for the five added live modes. All belong
+to **Source inspiration**, separate from Original compositions and full-page
+prototypes. Their final saved-node inventory is retained in the complete-set
+handoff and manifest.
 
 All HERO-001–018 remain selected. Priority reflects practical dependencies and
 learning value, not a judgment that later references are unwanted. A later
 reference can supply a focused graphic or interaction study without reproducing
-its entire site. Review the first wave before proceeding to new originals;
-remaining source studies stay in the backlog.
+its entire site. Complete all eighteen source-led recreations before proceeding
+to new originals; priority and asset investigation do not remove references from
+that outcome.
 
 ## First-wave initial fidelity targets
 
@@ -63,11 +75,13 @@ motion is added. Motion belongs in the actual Preview component, not displayed
 code or a downloaded video posing as an implementation. A static study may
 remain static when the source's motion is unverified; describe that limit.
 
-## Retained backlog: the other twelve references
+## Continuation: the other twelve references
 
-**P1** follows the first-wave foundations. **P2** requires additional source or
-asset investigation. These are source-led studies within stage 1, not permission
-to start original hybrids ahead of reviewable recreations.
+The table retains initial construction priorities and fidelity targets. **P1**
+followed first-wave foundations; **P2** required additional source/asset
+inspection. All twelve now have authored native or live counterparts in the
+complete-set handoff. These priorities do not defer selected references or
+authorize original hybrids before the recreation phase is finished.
 
 | Priority / reference | Focused recreation | Dependencies and fidelity constraints |
 | --- | --- | --- |
@@ -125,7 +139,7 @@ refresh on pan/zoom. Use the existing 60-placement mixed quality/resource checks
 and extend coverage for new procedural studies; a nonempty bitmap is not a
 minimum-quality test.
 
-The first-wave handoff should contain six credited source-study links, native
+The complete-set handoff must cover all eighteen unique references, native
 editability or code-source links, comparison notes, still and applicable motion
 evidence, recorded limitations and preserved existing-page IDs. Confirm actual
 Framer changes after an editor reload through the

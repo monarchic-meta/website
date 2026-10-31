@@ -460,8 +460,11 @@ with reviewable examples; do not jump straight to a new original or hybrid hero.
 The eventual combination should harmonize **immersive information field**,
 **evolving geometric identity** and **editorial research montage**. Motion can
 contribute to every avenue; it is not a separate third direction. The
-[first-wave recreation plan](../design-studies/hero-recreations.md) defines six
-initial studies and retains all 18 references in a prioritized backlog.
+[recreation plan](../design-studies/hero-recreations.md) requires source-led
+recreations covering all 18 references before independent originals. Its
+[first-wave record](../design-studies/hero-recreation-handoff.md) preserves the
+initial six; the [complete-set handoff](../design-studies/hero-recreation-complete-handoff.md)
+tracks the twelve-reference continuation and final verification.
 Recreations and close adaptations stay credited in **Source inspiration** even
 when their code or geometry is newly authored; reserve **Original compositions**
 for independently composed work.
