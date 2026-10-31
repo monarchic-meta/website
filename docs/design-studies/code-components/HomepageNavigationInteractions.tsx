@@ -132,6 +132,8 @@ export function createNavigationController({
     let keyboardMode = false
     let frame = 0
     let restoreFrame = 0
+    let escapeCloseObserver: MutationObserver | null = null
+    let watchingEscapeClose = false
     let closeIntent = false
     let disposed = false
     let modal: { x: number; y: number; opener: HTMLElement; label: string } | null = null
@@ -240,30 +242,41 @@ export function createNavigationController({
             emit()
         }
     }
+    const stopEscapeWatch = () => {
+        watchingEscapeClose = false
+        escapeCloseObserver?.disconnect()
+    }
+    const hasVisibleModalClose = () => {
+        const label =
+            modal?.label === "Open full navigation"
+                ? "Close full navigation"
+                : "Close search"
+        return Array.from(
+            doc.body.querySelectorAll<HTMLElement>("button[aria-label]")
+        ).some(
+            button =>
+                button.getAttribute("aria-label") === label &&
+                button.getBoundingClientRect().height > 0
+        )
+    }
     const restoreContext = (onlyAfterNativeClose = false) => {
-        if (!modal || restoreFrame || disposed) return
+        if (!modal || disposed) return
+        if (!onlyAfterNativeClose) {
+            stopEscapeWatch()
+            if (restoreFrame) win.cancelAnimationFrame(restoreFrame)
+            restoreFrame = 0
+        }
+        if (restoreFrame) return
         // Two bounded animation frames run after native Tap/close and scroll
-        // unlocking. There is no timer loop, polling or mutation observer.
+        // unlocking. There is no timer loop or polling.
         restoreFrame = win.requestAnimationFrame(() => {
             restoreFrame = win.requestAnimationFrame(() => {
                 restoreFrame = 0
                 if (disposed || !modal) return
-                if (onlyAfterNativeClose) {
-                    const label =
-                        modal.label === "Open full navigation"
-                            ? "Close full navigation"
-                            : "Close search"
-                    const stillOpen = Array.from(
-                        doc.body.querySelectorAll<HTMLElement>("button[aria-label]")
-                    ).some(
-                        button =>
-                            button.getAttribute("aria-label") === label &&
-                            button.getBoundingClientRect().height > 0
-                    )
-                    // Escape belongs to Framer. An open native X means that it
-                    // did not close; keep the snapshot for the real X instead.
-                    if (stillOpen) return
-                }
+                // An open X means native Escape has not finished closing.
+                // Its late removal is observed only during this Escape cycle.
+                if (onlyAfterNativeClose && hasVisibleModalClose()) return
+                stopEscapeWatch()
                 const snapshot = modal
                 const priorBehavior = doc.documentElement.style.scrollBehavior
                 doc.documentElement.style.scrollBehavior = "auto"
@@ -277,9 +290,22 @@ export function createNavigationController({
             })
         })
     }
+    const watchNativeEscapeClose = () => {
+        if (watchingEscapeClose) return
+        if (!escapeCloseObserver) {
+            escapeCloseObserver = new win.MutationObserver(() => {
+                if (!watchingEscapeClose || disposed) return
+                if (!modal) stopEscapeWatch()
+                else if (!hasVisibleModalClose()) restoreContext()
+            })
+        }
+        watchingEscapeClose = true
+        escapeCloseObserver.observe(doc.body, { childList: true, subtree: true })
+    }
     const cancelPointerActivation = () => {
         if (!pendingPointerModal) return
         if (modal?.label === pendingPointerModal.label) {
+            stopEscapeWatch()
             modal = null
             closeIntent = false
             preparedActivation = null
@@ -338,7 +364,9 @@ export function createNavigationController({
         keyboardMode = true
         if (event.key === "Escape" && modal) {
             // Do not prevent or stop the native key event, and do not guess
-            // that Escape closed it. Check once after native handling settles.
+            // that Escape closed it. Observe a late native exit only while
+            // this modal is active, then restore after its X disappears.
+            watchNativeEscapeClose()
             restoreContext(true)
         }
         if (event.key === "Enter" || event.key === " ") {
@@ -378,6 +406,7 @@ export function createNavigationController({
     return {
         dispose() {
             disposed = true
+            stopEscapeWatch()
             releaseBanners()
             if (frame) win.cancelAnimationFrame(frame)
             if (restoreFrame) win.cancelAnimationFrame(restoreFrame)

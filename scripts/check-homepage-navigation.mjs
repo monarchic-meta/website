@@ -107,7 +107,7 @@ class HostEvent {
 }
 
 function environment({ mobile = true, reduced = false, target = "preview", staticRenderer = false, y = 0, bannerHeight = 92, bannerPresent = true, hiddenBannerBeforeVisible = false } = {}) {
-    const nodes = [], media = [], rafs = new Map(), views = [], focusCalls = [], scrollCalls = [], nativeEvents = [];
+    const nodes = [], media = [], rafs = new Map(), views = [], focusCalls = [], scrollCalls = [], nativeEvents = [], mutationObservers = [], mutations = [];
     let serial = 0, activeHooks = null;
     const doc = new EventHost(), win = new EventHost();
     class Element extends EventHost {
@@ -132,12 +132,17 @@ function environment({ mobile = true, reduced = false, target = "preview", stati
         closest() { for (let node = this; node instanceof Element; node = node.parent) if (node.tagName === "BUTTON" && node.attributes["aria-label"]) return node; return null; }
         focus(options) { doc.activeElement = this; focusCalls.push({ element: this, options }); this.dispatchEvent(new HostEvent("focusin", { bubbles: true })); }
     }
+    class HostMutationObserver {
+        constructor(callback) { this.callback = callback; this.target = null; this.options = null; mutationObservers.push(this); }
+        observe(target, options) { this.target = target; this.options = { ...options }; }
+        disconnect() { this.target = null; }
+    }
     doc.documentElement = new Element("html", "", doc);
     doc.documentElement.style.scrollBehavior = "smooth";
     doc.body = new Element("body", "", doc.documentElement);
     doc.activeElement = doc.body;
     doc.defaultView = win;
-    Object.assign(win, { Element, PointerEvent: HostEvent, MouseEvent: HostEvent, scrollX: 13, scrollY: y });
+    Object.assign(win, { Element, PointerEvent: HostEvent, MouseEvent: HostEvent, MutationObserver: HostMutationObserver, scrollX: 13, scrollY: y });
     const hiddenPage = hiddenBannerBeforeVisible ? new Element("div", "", doc.body) : null;
     const hiddenBanner = hiddenPage ? new Element("section", "", hiddenPage) : null;
     if (hiddenBanner) {
@@ -187,6 +192,22 @@ function environment({ mobile = true, reduced = false, target = "preview", stati
     const flushFrame = () => { const callbacks = [...rafs.values()]; rafs.clear(); for (const callback of callbacks) callback(0); };
     const flush = () => { let count = 0; while (rafs.size) { assert(++count <= 20, "bounded RAF work"); flushFrame(); } };
     const scroll = nextY => { win.scrollY = nextY; emit(win, "scroll"); flush(); };
+    const removeElement = element => {
+        const parent = element.parent;
+        assert(parent, "remove a connected fixture element");
+        parent.children = parent.children.filter(child => child !== element);
+        element.parent = null;
+        mutations.push({ type: "childList", target: parent, removedNodes: [element] });
+    };
+    const flushMutations = () => {
+        const records = mutations.splice(0);
+        for (const observer of mutationObservers) {
+            if (!observer.target) continue;
+            const matching = records.filter(record => observer.options.childList && (record.target === observer.target || observer.options.subtree && observer.target.contains(record.target)));
+            if (matching.length) observer.callback(matching, observer);
+        }
+    };
+    const observing = () => mutationObservers.filter(observer => observer.target).length;
     const create = () => api.createNavigationController({ root, banner: doc.getElementById("homepage-rd-banner"), win, doc, onChange: view => views.push({ ...view }) });
     const replaceTrigger = label => {
         const old = triggers[label];
@@ -203,7 +224,7 @@ function environment({ mobile = true, reduced = false, target = "preview", stati
         const render = () => { hooks.index = 0; activeHooks = hooks; const tree = Component(props, forwarded); activeHooks = null; tree.props.ref(root); for (const effect of hooks.effects.splice(0)) effect(); return tree; };
         return { render, tree: render(), forwarded, original, unmount() { for (const hook of hooks.slots) hook.cleanup?.(); } };
     };
-    return { api, doc, win, root, visiblePage, banner, hiddenBanner, triggers, closes, views, focusCalls, scrollCalls, nativeEvents, emit, flush, flushFrame, scroll, create, replaceTrigger, mount, rafs, phone, motion, listenerCount: baselineListeners, initialListenerCount, lastView: () => views.at(-1) };
+    return { api, doc, win, root, visiblePage, banner, hiddenBanner, triggers, closes, views, focusCalls, scrollCalls, nativeEvents, emit, flush, flushFrame, scroll, create, replaceTrigger, mount, rafs, phone, motion, mutationObservers, observing, removeElement, flushMutations, listenerCount: baselineListeners, initialListenerCount, lastView: () => views.at(-1) };
 }
 
 function check(name, run) { run(); checks.push({ name, pass: true }); }
@@ -327,7 +348,10 @@ check("canceled pointer activation releases pending modal state without restorin
     for (const cancellation of ["pointercancel", "pointerup"]) {
         const env = environment({ y: 200 }), controller = env.create();
         env.emit(env.triggers["Open full navigation"], "pointerdown", { pointerType: "touch" });
+        env.emit(env.doc.body, "keydown", { key: "Escape" }); env.flush();
+        assert.equal(env.observing(), 1, "Escape watches only the pending native close");
         env.emit(env.doc.body, cancellation, { pointerType: "touch" });
+        assert.equal(env.observing(), 0, "canceled activation disconnects its close observer");
         env.scroll(208);
         assert.equal(env.lastView().hidden, true, cancellation + " must not leave scroll sampling frozen");
         assert.equal(env.scrollCalls.length, 0, "unopened modal must not restore stale context");
@@ -419,6 +443,7 @@ check("semantic click-only modal activation captures and restores context", () =
 check("modal Escape passes through without asserting native dismissal", () => {
     const env = environment({ y: 1200 }), controller = env.create();
     const opener = env.triggers["Open full navigation"];
+    assert.equal(env.mutationObservers.length, 0, "ordinary mounting does not allocate an observer");
     const events = [env.emit(opener, "pointerdown"), env.emit(opener, "pointerup"), env.emit(opener, "click")];
     env.win.scrollY = 900;
     events.push(env.emit(env.doc.body, "keydown", { key: "Escape" })); env.flush();
@@ -426,11 +451,39 @@ check("modal Escape passes through without asserting native dismissal", () => {
     assert.equal(env.win.scrollY, 900, "a visible native X keeps the saved context pending");
     assert.equal(env.scrollCalls.length, 0, "Escape alone does not imply a native close");
     assert.equal(env.focusCalls.length, 0);
+    assert.equal(env.observing(), 1);
     // This double does not implement Framer's native Escape behavior. Explicit
     // X remains the tested close path for restoring the saved page context.
     env.emit(env.closes["Close full navigation"], "click"); env.flush();
     assert.equal(env.win.scrollY, 1200);
     assert.equal(env.doc.activeElement, opener);
+    assert.equal(env.observing(), 0, "explicit X disconnects native-close observation");
+    controller.dispose();
+});
+check("late native Escape close releases context after the initial two frames", () => {
+    const env = environment({ y: 2302 }), controller = env.create();
+    const opener = env.triggers["Open full navigation"];
+    env.emit(opener, "pointerdown"); env.emit(opener, "pointerup"); env.emit(opener, "click");
+    env.win.scrollX = 0; env.win.scrollY = 2067;
+    const escape = env.emit(env.doc.body, "keydown", { key: "Escape" }); env.flush();
+    assert.notEqual(escape.defaultPrevented, true); assert.notEqual(escape.stopped, true);
+    assert.equal(env.scrollCalls.length, 0, "the native exit transition is still visible after two frames");
+    assert.equal(env.focusCalls.length, 0);
+    assert.equal(env.observing(), 1);
+    const observer = env.mutationObservers[0];
+    assert.equal(observer.target, env.doc.body);
+    assert.deepEqual(observer.options, { childList: true, subtree: true }, "only native child removal is observed");
+    env.emit(env.doc.body, "keydown", { key: "Escape" }); env.flush();
+    assert.equal(env.mutationObservers.length, 1, "repeated Escape reuses the same scoped observer");
+    env.removeElement(env.closes["Close search"]); env.flushMutations(); env.flush();
+    assert.equal(env.scrollCalls.length, 0, "unrelated native close does not release this modal");
+    env.removeElement(env.closes["Close full navigation"]); env.flushMutations(); env.flush();
+    assert.equal(env.win.scrollX, 13); assert.equal(env.win.scrollY, 2302);
+    assert.equal(env.scrollCalls.length, 1, "one restore follows the observed native close");
+    assert.equal(env.doc.activeElement, opener);
+    assert.equal(env.observing(), 0);
+    env.doc.body.focus({ preventScroll: true }); env.scroll(2310);
+    assert.equal(env.lastView().hidden, true, "modal state no longer blocks direction sampling");
     controller.dispose();
 });
 check("unmount cancels samples/restoration and removes all owned listeners", () => {
@@ -442,6 +495,15 @@ check("unmount cancels samples/restoration and removes all owned listeners", () 
     const calls = env.views.length; env.flush(); env.emit(env.win, "scroll");
     assert.equal(env.scrollCalls.length, 0); assert.equal(env.views.length, calls);
     assert.equal(env.listenerCount(), env.initialListenerCount);
+    const waiting = environment({ y: 2342 }), pending = waiting.create();
+    const opener = waiting.triggers["Open full navigation"];
+    waiting.emit(opener, "pointerdown"); waiting.emit(opener, "pointerup"); waiting.emit(opener, "click");
+    waiting.emit(waiting.doc.body, "keydown", { key: "Escape" }); waiting.flush();
+    assert.equal(waiting.observing(), 1);
+    pending.dispose(); assert.equal(waiting.observing(), 0);
+    waiting.removeElement(waiting.closes["Close full navigation"]); waiting.flushMutations(); waiting.flush();
+    assert.equal(waiting.scrollCalls.length, 0, "a late native removal after unmount cannot restore scroll");
+    assert.equal(waiting.listenerCount(), waiting.initialListenerCount); assert.equal(waiting.rafs.size, 0);
 });
 check("repeated mount/dispose does not accumulate listeners or work", () => {
     const env = environment();
@@ -471,5 +533,5 @@ console.log(JSON.stringify({
     sourceSHA256,
     semanticTypeScript: { files: 1, diagnostics: 0, realDOMLibraries: true, externalHostDeclarations: ["react", "framer"] },
     checks,
-    scope: "Actual override/controller source with deterministic DOM, event and React-hook doubles. Tests verify scroll state, native event pass-through, explicit-X context restoration and lifecycle. They do not establish native popup exclusivity or Escape dismissal, Framer overlay integration, browser layout, focus trapping or actual reduced-motion animation; those require separate actual Preview QA. No graphics surfaces or unrelated shader suites are exercised.",
+    scope: "Actual override/controller source with deterministic DOM, event and React-hook doubles. Tests verify scroll state, native event pass-through, context restoration after explicit X or observed native close, scoped observer cleanup and lifecycle. They do not establish native popup exclusivity or Escape dismissal, Framer overlay integration, browser layout, focus trapping or actual reduced-motion animation; those require separate actual Preview QA. No graphics surfaces or unrelated shader suites are exercised.",
 }, null, 2));
