@@ -511,19 +511,21 @@
   },
   "carouselRevision": {
     "helper": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
-      "sha256": "2bb49632e172df0c647753ed955572f541baf27f854a06fa6f7058000e29dd4e",
-      "bytes": 17951
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-frozen/SourcePortfolioCarousel.tsx",
+      "sha256": "265660b0ef9a1875e27e7e81f8ce7c7be7a86dce78e96402c73ef12947af9be9",
+      "bytes": 17973,
+      "repositoryPath": "docs/design-studies/code-components/SourcePortfolioCarousel.tsx"
     },
     "film": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-frozen/SourcePortfolioFilmStudy.tsx",
       "sha256": "8976b38dd490e8bae7de5c58aeba633f0cf46ae8006dc849cfdba2cb6dfda0d2",
-      "bytes": 84410
+      "bytes": 84410,
+      "repositoryPath": "docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx"
     },
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/receipt.json",
-      "sha256": "9525b56252686a39899fb82b611a8a180cc4ee59f521b2419c78ec1f38249dc7",
-      "bytes": 3570
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-receipt.json",
+      "sha256": "116866fead5f395253daa030a667a3a35a2056f31bb418f7aa45dec1407355eb",
+      "bytes": 4981
     },
     "framerInstalled": false,
     "actualPreviewVerified": false,
