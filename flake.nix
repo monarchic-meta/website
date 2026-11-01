@@ -196,6 +196,11 @@
             pnpm run check:source-macmoss-portfolio
             pnpm run check:source-macmoss-browser
           '';
+          source-puente-behaviors = mkWebsiteCheck "source-puente-behaviors" ''
+            export MONARCHIC_PUENTE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-puente-behaviors
+            pnpm run check:source-puente-browser
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

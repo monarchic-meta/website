@@ -1,0 +1,24 @@
+{
+  "reference": "HERO-018",
+  "classification": "Source inspiration / credited unpublished native recreation",
+  "creator": "pu—ente",
+  "source": "https://www.pu-ente.com/",
+  "graphicBranch": "https://www.pu-ente.com/z/",
+  "actor": {
+    "path": "../SourcePuenteBehaviors.tsx",
+    "sha256": "7ba42e994664bd92ba9b8093453d40208281dc57c22dcb53e66f8e18bf2481a6",
+    "bytes": 22084
+  },
+  "sourceFacts": "Current public code supports distinct grayscale palette, fine-pointer half-fill,1.8s split curtain with.12s delay, and clipped16px/26pointtrail. The actual Graphic branch has fifteen static tiles, not autoplay sliders.",
+  "adaptations": [
+    "Graphic branch is presented within the independent Framer draft instead of separate source routing.",
+    "Phone gate geometry is fitted to its assigned native bounds.",
+    "Trail interpolation and curtain easing are independently implemented from source-supported constants."
+  ],
+  "validation": {
+    "nixOutput": "/nix/store/ypmrb3l2k5l01lrxbyxc7s9bdblrns5f-monarchic-website-source-puente-behaviors-0.0.1",
+    "nativeActivation": "Public onTap/click/key bridge, duplicate/cancellation and static behavior covered separately by the native-tap matrix.",
+    "framer": "Actual binding, input, source comparison and reload remain separate."
+  },
+  "resources": "No canvas, WebGL, source behavior imports or runtime asset requests. Native image fills remain individual credited assets."
+}

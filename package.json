@@ -77,6 +77,8 @@
     "check:source-type-proximity": "node scripts/check-source-type-proximity.mjs",
     "check:source-type-proximity-browser": "node scripts/check-source-type-proximity-browser.mjs",
     "check:source-bleibt-opening": "node scripts/check-source-bleibt-opening.mjs",
+    "check:source-puente-behaviors": "node scripts/check-source-puente-behaviors.mjs",
+    "check:source-puente-browser": "node scripts/check-source-puente-browser.mjs",
     "check:source-ajedrez-sequence": "node scripts/check-source-ajedrez-sequence.mjs",
     "check:source-ajedrez-browser": "node scripts/check-source-ajedrez-browser.mjs",
     "check:source-macmoss-portfolio": "node scripts/check-source-macmoss-portfolio.mjs",
