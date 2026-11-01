@@ -103,6 +103,10 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const target = RenderTarget.current()
         const frozen = useIsStaticRenderer() || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail
         const own = React.useRef<HTMLElement | null>(null)
+        const [host, setHost] = React.useState<HTMLElement | null>(null)
+        const bindHost = React.useCallback((node: HTMLElement | null) => {
+            own.current = node; setHost(node); writeRef(ref, node)
+        }, [ref])
         const clock = React.useRef({ time: 0, started: null as number | null })
         const [time, setTime] = React.useState(0)
         const [playing, setPlaying] = React.useState(true)
@@ -113,11 +117,13 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const declaredZoom = props.style?.zoom, parsedZoom = parseFloat(String(declaredZoom ?? 1)) / (String(declaredZoom).endsWith("%") ? 100 : 1)
         const callerZoom = Number.isFinite(parsedZoom) && parsedZoom > 0 ? parsedZoom : 1
         useOwnLayoutEffect(() => {
-            const node = own.current, parent = node?.parentElement
+            const node = host, parent = node?.parentElement
             if (!node || !parent) return
+            let current = true
             // CSS zoom changes layout as well as paint, keeping native movie
             // contents and playback controls together inside a scrollbar gutter.
             const read = () => {
+                if (!current || own.current !== node) return
                 const width = node.offsetWidth * callerZoom, available = parent.clientWidth
                 const next = width > 0 && available > 0 ? Math.min(1, available / width) : 1
                 setFit(current => Math.abs(current - next) < 1e-7 ? current : next)
@@ -125,17 +131,23 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
             read()
             const observer = new ResizeObserver(read)
             observer.observe(node); observer.observe(parent)
-            return () => observer.disconnect()
-        }, [callerZoom])
+            return () => { current = false; observer.disconnect() }
+        }, [callerZoom, host])
         const sample = React.useCallback(() => Math.min(DURATION, Math.max(0, clock.current.time + (clock.current.started === null ? 0 : (performance.now() - clock.current.started) / 1000))), [])
         React.useEffect(() => {
-            if (frozen || !own.current) return
-            const io = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting)); io.observe(own.current)
+            setVisible(false)
+            if (frozen || !host) return
+            let current = true
+            const io = new IntersectionObserver(entries => {
+                if (!current || own.current !== host) return
+                const entry = entries.find(value => value.target === host)
+                if (entry) setVisible(entry.isIntersecting)
+            }); io.observe(host)
             const query = window.matchMedia("(prefers-reduced-motion: reduce)")
             const motion = () => setReduced(query.matches), visibility = () => setHidden(document.hidden)
             motion(); visibility(); query.addEventListener("change", motion); document.addEventListener("visibilitychange", visibility)
-            return () => { io.disconnect(); query.removeEventListener("change", motion); document.removeEventListener("visibilitychange", visibility) }
-        }, [frozen])
+            return () => { current = false; io.disconnect(); query.removeEventListener("change", motion); document.removeEventListener("visibilitychange", visibility) }
+        }, [frozen, host])
         const running = !frozen && !reduced && playing && visible && !hidden && time < DURATION
         React.useEffect(() => {
             if (!running) return
@@ -170,7 +182,7 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const shown = frozen || reduced ? poster : time
         const state: FilmState = { time: shown, index: indexAt(shown), frozen, reduced, playing: !frozen && !reduced && playing,
             active: running, complete: shown >= DURATION, toggle, replay }
-        return <Context.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }}
+        return <Context.Provider value={state}><Component {...props} ref={bindHost}
             style={fit < 1 ? { ...props.style, zoom: callerZoom * fit } : props.style}
             data-source-ajedrez-time={shown} data-source-ajedrez-phase={state.index + 1} data-source-ajedrez-state={PHASES[state.index].name}
             data-source-ajedrez-playback={frozen ? "poster" : reduced ? "reduced-motion" : state.complete ? "complete" : !playing ? "paused" : running ? "playing" : "offscreen"}
