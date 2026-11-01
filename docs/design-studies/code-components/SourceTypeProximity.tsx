@@ -62,7 +62,10 @@ function sectionLink(Component: ComponentType<LayerProps>): ComponentType<LayerP
         const last = React.useRef<{ channel: string; at: number } | null>(null)
         const activate = (channel: string, event: SectionEvent) => {
             if (frozen || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== undefined && event.button !== 0) return
-            const node = own.current, href = node?.getAttribute("href"), fragment = href?.slice(href.lastIndexOf("#") + 1)
+            const node = own.current, directHref = node?.getAttribute("href")
+            const textLinks = directHref ? null : node?.querySelectorAll<HTMLAnchorElement>("a[href]")
+            const href = directHref || (textLinks?.length === 1 ? textLinks[0].getAttribute("href") : null)
+            const fragment = href?.slice(href.lastIndexOf("#") + 1)
             if (!node || !href?.includes("#") || !fragment || !/^montreal-(story|universal|ligatures|weights-chart|languages|accents|variants)$/.test(fragment)) return
             try { if (new URL(href, node.ownerDocument.baseURI).origin !== new URL(node.ownerDocument.baseURI).origin) return } catch { return }
             const shell = node.closest('[data-framer-name="HERO-008 / native interactive shell"]')

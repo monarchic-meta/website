@@ -263,7 +263,11 @@ try {
             onPointerEnter: event => onHoverStart?.(event, { point: { x: event.clientX, y: event.clientY } }),
             onPointerMove, onPointerLeave: event => onHoverEnd?.(event),
         }))
-        const NavWord = exports.withSourceTypeSectionWord(NativeLink), NavLink = exports.withSourceTypeSectionLink(NativeLink)
+        const NativeTextLink = React.forwardRef(({ href, children, onClick, onTap, onKeyDown, ...props }, ref) => React.createElement('div', {
+            ...props, ref, onKeyDown,
+            onClick: event => { onTap?.(event); if (__navDual) onClick?.(event); event.preventDefault() },
+        }, React.createElement('p', null, React.createElement('a', { href }, children))))
+        const NavWord = exports.withSourceTypeSectionWord(NativeLink), NavLink = exports.withSourceTypeSectionLink(NativeTextLink)
         window.__sectionRoot = ReactDOM.createRoot(document.getElementById('mount'))
         window.renderSections = () => ReactDOM.flushSync(() => __sectionRoot.render(React.createElement('div', { 'data-framer-name': 'HERO-008 / native interactive shell' },
             React.createElement('nav', { style: { display: 'flex', gap: 12, position: 'sticky', top: 0, background: '#fff' } }, __sectionIDs.map((id, i) => React.createElement(NavWord, {
@@ -281,8 +285,10 @@ try {
         check('Native source section tap arrives at target ' + i, await page.evaluate(i => __sectionCalls.at(-1)?.id === __sectionIDs[i] && Math.abs(document.getElementById(__sectionIDs[i]).getBoundingClientRect().top) < 1, i))
     }
     const beforeSectionKey = await page.evaluate(() => __sectionCalls.length)
-    await page.locator('#footer-section-link').press('Enter')
-    check('Footer section Enter uses the same owned target without replacing its href', await page.evaluate(before => __sectionCalls.length === before + 1 && __sectionCalls.at(-1).id === 'montreal-story' && document.getElementById('footer-section-link').getAttribute('href') === '#montreal-story', beforeSectionKey))
+    await page.locator('#footer-section-link a').press('Enter')
+    const footerKeyDiagnostic = await page.evaluate(() => ({ calls: __sectionCalls, html: document.getElementById('footer-section-link').outerHTML }))
+    fs.writeFileSync(path.join(output, 'footer-rich-text-key.json'), JSON.stringify({ before: beforeSectionKey, ...footerKeyDiagnostic }, null, 2))
+    check('Footer rich-text Enter resolves its nested native link without replacing it', await page.evaluate(before => __sectionCalls.length === before + 1 && __sectionCalls.at(-1).id === 'montreal-story' && document.getElementById('footer-section-link').tagName === 'DIV' && !document.getElementById('footer-section-link').hasAttribute('href') && document.querySelector('#footer-section-link a').getAttribute('href') === '#montreal-story', beforeSectionKey))
     await page.evaluate(() => { __navDual = true }); const beforeDualSection = await page.evaluate(() => __sectionCalls.length)
     await page.locator('#nav-2').click()
     check('Native tap plus DOM click consume the section action once', await page.evaluate(before => __sectionCalls.length === before + 1, beforeDualSection))
