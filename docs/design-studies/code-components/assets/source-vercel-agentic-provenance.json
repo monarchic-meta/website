@@ -11,9 +11,10 @@
     "preserved": true
   },
   "source": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceVercelAgenticStudy.tsx",
-    "bytes": 60461,
-    "sha256": "c8df6a04070e1ab610b3dcb6717fefa372d75688eda254e1d67ef467c2c30800"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-009/native-hover-correction/SourceVercelAgenticStudy.tsx",
+    "sha256": "1953ef09b0683e083220e6d4067c974d426719935d3923739069a1fcdf222852",
+    "bytes": 60919,
+    "repositoryPath": "docs/design-studies/code-components/SourceVercelAgenticStudy.tsx"
   },
   "inspectionDate": "2026-11-01",
   "observations": [
@@ -32,24 +33,29 @@
   },
   "localValidation": {
     "result": {
-      "path": "/tmp/monarchic-vercel-agentic/result.json",
-      "bytes": 191779,
-      "sha256": "14a8e82824c78751c20d5f30ed242cd4203323605567a053eeede4d6ff8a4795"
+      "path": "/nix/store/0axyxbv12adqlfkvznsv353b745x6pvs-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
+      "sha256": "0bbf1cc1cd94bcc7c226c198e88d0003a8166009cc0f723415d1bbb9793567c5",
+      "bytes": 191988
     },
-    "checks": 29,
+    "checks": 32,
     "mixedPixelPlacements": 120,
     "scope": "Local actualReact18/Chromium current-original recreation, native HOCs,120 realWebGL mixed placements, source geometry and interactions; no actualFramer Preview/editor reload",
     "lockedNix": {
-      "store": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1",
+      "store": "/nix/store/0axyxbv12adqlfkvznsv353b745x6pvs-monarchic-website-source-vercel-agentic-0.0.1",
       "result": {
-        "path": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
-        "bytes": 191774,
-        "sha256": "ec2b07b244c79b097181cb127ee04d1b15d33188a7c71329df4e67ac5c0882ad"
+        "path": "/nix/store/0axyxbv12adqlfkvznsv353b745x6pvs-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
+        "sha256": "0bbf1cc1cd94bcc7c226c198e88d0003a8166009cc0f723415d1bbb9793567c5",
+        "bytes": 191988
       },
-      "checks": 29,
+      "checks": 32,
       "mixedPixelPlacements": 120,
       "fontEnvironment": "DejaVu and Liberation from locked Nix fontconfig; source licensedGeist is not asserted as this local fixture face.",
       "peakContexts": 1
+    },
+    "hoverChannelCorrection": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-009/native-hover-correction/receipt.json",
+      "sha256": "3464796771144bbb3ac862c93e76f3399067264f212ffd7e116a5144a8c2383a",
+      "bytes": 2587
     }
   },
   "evidence": [
@@ -91,8 +97,37 @@
   ],
   "framer": {
     "sourceInstalled": false,
-    "nativeInstalled": false,
+    "nativeInstalled": true,
     "actualPreviewVerified": false,
-    "actualEditorReloadVerified": false
+    "actualEditorReloadVerified": false,
+    "sourceVersionInstalled": "c8df6a04070e1ab610b3dcb6717fefa372d75688eda254e1d67ef467c2c30800",
+    "currentSourceWritePending": true,
+    "nativeModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/308-HERO-009-readonly-closure/output.json",
+      "sha256": "04a37a081f244caf6ada8f82b09be657592761a95761f509ae301d99af728a5b",
+      "bytes": 502957
+    }
+  },
+  "previousLocalValidation": {
+    "result": {
+      "path": "/tmp/monarchic-vercel-agentic/result.json",
+      "bytes": 191779,
+      "sha256": "14a8e82824c78751c20d5f30ed242cd4203323605567a053eeede4d6ff8a4795"
+    },
+    "checks": 29,
+    "mixedPixelPlacements": 120,
+    "scope": "Local actualReact18/Chromium current-original recreation, native HOCs,120 realWebGL mixed placements, source geometry and interactions; no actualFramer Preview/editor reload",
+    "lockedNix": {
+      "store": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1",
+      "result": {
+        "path": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
+        "bytes": 191774,
+        "sha256": "ec2b07b244c79b097181cb127ee04d1b15d33188a7c71329df4e67ac5c0882ad"
+      },
+      "checks": 29,
+      "mixedPixelPlacements": 120,
+      "fontEnvironment": "DejaVu and Liberation from locked Nix fontconfig; source licensedGeist is not asserted as this local fixture face.",
+      "peakContexts": 1
+    }
   }
 }
