@@ -1,0 +1,4031 @@
+{
+  "schemaVersion": 1,
+  "status": "verified standalone delivery",
+  "project": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt",
+  "counts": {
+    "baseline": {
+      "pages": 42,
+      "designPages": 15,
+      "webPages": 27,
+      "codePlacements": 187,
+      "codeSources": 18
+    },
+    "plannedFinal": {
+      "pages": 69,
+      "designPages": 15,
+      "webPages": 54,
+      "codePlacements": 187,
+      "codeSources": 22
+    },
+    "appendReceiptsObserved": {
+      "newPages": 27,
+      "newCodePlacements": 32
+    },
+    "finalActual": {
+      "pages": 69,
+      "designPages": 15,
+      "webPages": 54,
+      "codePlacements": 187,
+      "codeSources": 22
+    }
+  },
+  "preservation": {
+    "oldDesignPages": 15,
+    "oldSources": 18,
+    "oldSourcesWithOnlyReviewedCoordinatorChange": 16,
+    "oldSourcesByteExact": 2,
+    "oldExactSourcePaths": [
+      "LogoDropStudy.tsx",
+      "HomepageNavigationInteractions.tsx"
+    ],
+    "totalCorrectedCoordinatorCopies": 18,
+    "newRendererCoordinatorCopies": 2,
+    "sourceCorrection": {
+      "path": "docs/design-studies/code-components/responsive-display-fix.json",
+      "sha256": "1a2e605a93f6df7c711998c2f1dbe7f28f95fb611100c6fefb18d8a6d2eab19e",
+      "additionalSourceMainCSS": "Origin-only30%radius after incoming Framer style"
+    },
+    "unrelatedWebPages": 21,
+    "historicalManifests": "unchanged",
+    "indexConversion": {
+      "pageIDs": [
+        "VR2TaJCqa",
+        "iUjJa5763",
+        "XpYGM1WKS",
+        "XE5l5uSSR",
+        "mAQ7zz608",
+        "J0_sOtuU9"
+      ],
+      "oldCodeInstancesToRemove": 32,
+      "newCodeInstances": 32,
+      "status": "verified through supplied final proof"
+    },
+    "finalAudit": {
+      "artifact": "validation/final69-independent/result.json",
+      "sha256": "48353f34ad8eeebbdbd765e91878be26afea213b4aed95d84a67a1f828b8421a"
+    }
+  },
+  "pages": [
+    {
+      "id": "HERO-001",
+      "family": "Source inspiration / credited recreation",
+      "title": "Type Face",
+      "route": "/playgrounds/source-inspiration/heroes/hero-001-type-face",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-001.json",
+        "sha256": "e3d7b24cab6c84f39c84e152b6d56f50fce43df5956b59d0bced3da085f43cf1",
+        "parts": 1,
+        "desktop": [
+          1440,
+          900
+        ],
+        "phone": [
+          390,
+          780
+        ]
+      },
+      "credits": "Original: Stephen Kelman · https://x.com/stephenkelman/status/2093335231604367454",
+      "sourceLinks": [
+        {
+          "label": "Original source / Stephen Kelman ↗",
+          "href": "https://x.com/stephenkelman/status/2093335231604367454"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://recent.design/i/vmmug5r-type-face"
+        },
+        {
+          "label": "Head scan / Lee Perry-Smith ↗",
+          "href": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith"
+        },
+        {
+          "label": "Geometry license / CC BY3.0 ↗",
+          "href": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "intentionalDifferences": "Surface-writing volume is the opening itself, with no generic headline added. Head stand-in: Infinite 3D Head Scan by Lee Perry-Smith via three.js, CC BY 3.0, adapted; not verified as Kelman’s source mesh. Text/font/material and rotation are approximations. No source assembly/dispersal sequence claimed.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "surface-writing-head",
+          "mode": "typeface",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "typeface",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 0.65,
+              "stillTime": 2,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#000000",
+              "accent": "#ff0000",
+              "ink": "#000000",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            },
+            "phone": {
+              "study": "typeface",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 0.65,
+              "stillTime": 2,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#000000",
+              "accent": "#ff0000",
+              "ink": "#000000",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "AGtapWT7T",
+        "desktopID": "P0cYMFaWD",
+        "phoneID": "ugF4E8InP",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=AGtapWT7T",
+        "codeInstances": [
+          {
+            "id": "ReA3aiVXZ",
+            "partKey": "surface-writing-head",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "typeface",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 0.65,
+              "$control__stillTime": 2,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#000000",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#000000",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          },
+          {
+            "id": "ugF4E8InPReA3aiVXZ",
+            "original": "ReA3aiVXZ",
+            "partKey": "surface-writing-head",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "typeface",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 0.65,
+              "$control__stillTime": 2,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#000000",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#000000",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-001",
+              "desktop": {
+                "visual": "PASS full surface-written portrait; live phase changes and Pause holds",
+                "screenshot": "HERO-001-Desktop-final-opening.jpg"
+              },
+              "phone": {
+                "visual": "PASS adapted full-volume portrait with accessible Pause",
+                "screenshot": "HERO-001-Phone-final-stable.jpg"
+              },
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-002",
+      "family": "Source inspiration / credited recreation",
+      "title": "Ajedrez Film Poem",
+      "route": "/playgrounds/source-inspiration/heroes/hero-002-ajedrez-film-poem",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-002.json",
+        "sha256": "ab52479f0d00eefd97879dd0cddeec549d4dc8af0351c43f214537f5a0b95321",
+        "parts": 53,
+        "desktop": [
+          1440,
+          900
+        ],
+        "phone": [
+          390,
+          780
+        ]
+      },
+      "credits": "Original: Julián Leiss / @julianleiss · https://recent.design/i/qfy3385-ajedrez-film-poem · https://recent.design/i/qfy3385-ajedrez-film-poem",
+      "sourceLinks": [
+        {
+          "label": "Original source / Julián Leiss ↗",
+          "href": "https://recent.design/i/qfy3385-ajedrez-film-poem"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://recent.design/i/qfy3385-ajedrez-film-poem"
+        }
+      ],
+      "intentionalDifferences": "Selected native film-frame composition reconstructed from actual sampled film09 using the two credited hand photographs in separate native image apertures. Grain/annotations simplified; poem text is not reproduced. This is a still-layout recreation, not playback or timing of the complete52-second film. Earlier repeated-chess and guessed overlap Design studies remain preserved. The gallery post identifies Julián Leiss; the underlying historical hand-photography/archive attribution has not been independently verified, and the tiny recreated catalog annotation is not provenance evidence.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "umff7PeCD",
+        "desktopID": "UAFLn64vV",
+        "phoneID": "praiZCMpT",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=umff7PeCD",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-002",
+              "pageId": "umff7PeCD",
+              "desktop": true,
+              "phone": true,
+              "images": "both credited hand photographs loaded with source crops",
+              "sourceLinks": true,
+              "filmIsStill": true,
+              "screenshots": [
+                "HERO-002-Desktop.jpg",
+                "HERO-002-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-003",
+      "family": "Source inspiration / credited recreation",
+      "title": "Agent-first Billing / Polar",
+      "route": "/playgrounds/source-inspiration/heroes/hero-003-agent-first-billing-polar",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-003.json",
+        "sha256": "3d6ea6fc2340d7cdfdf71768e67c849ed5287119adb0eca97c0e4b4fa5c739fc",
+        "parts": 346,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1640
+        ]
+      },
+      "credits": "Original: Polar / @polar_sh · https://polar.sh/field-guide · https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+      "sourceLinks": [
+        {
+          "label": "Original source / Polar ↗",
+          "href": "https://polar.sh/field-guide"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://recent.design/i/lzxaebw-agent-first-billing-landing-page"
+        }
+      ],
+      "intentionalDifferences": "Small source header mark is represented by the creator name. Static inspected source identity and native chapter field; source wording retained in primary copy, diagrams simplified. Phone reflows the text, construction and all ten chapters rather than shrinking the Desktop opening. No assembly or chapter-navigation animation claimed.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "aDqID00en",
+        "desktopID": "cfgJom6cV",
+        "phoneID": "iv9hsqJyx",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=aDqID00en",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/native-003-010-017-append-output.json",
+          "sha256": "ef51d4a7fe446f51c5eeab6612059d9f1bcbbdb66107200c6e0a9436330e7eff"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-003",
+              "pageId": "aDqID00en",
+              "desktop": {
+                "width": 1440,
+                "screenshot": "HERO-003-preview-state.jpg",
+                "visual": "PASS source hierarchy"
+              },
+              "phone": {
+                "width": 390,
+                "screenshot": "HERO-003-phone-arc-after-reload.jpg",
+                "visual": "PASS continuous crescent after exact new-Phone overlap refinement"
+              },
+              "sourceLinks": [
+                "[ Request early access ]",
+                "Original source / Polar ↗",
+                "Gallery reference ↗"
+              ],
+              "refinement": "59-node shared patch includes48Polar tangents; reloaded editor and actualPhonePreview"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-004",
+      "family": "Source inspiration / credited recreation",
+      "title": "Artemii Lebedev",
+      "route": "/playgrounds/source-inspiration/heroes/hero-004-artemii-lebedev",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-004.json",
+        "sha256": "86563e7970ab54c33a02f8a4dd7c92501678f341e100164c84612be929a97ca0",
+        "parts": 42,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "Original: Artemii Lebedev · https://artemiilebedev.com/ · https://www.siteinspire.com/website/13624-artemii-lebedev",
+      "sourceLinks": [
+        {
+          "label": "Original source / Artemii Lebedev ↗",
+          "href": "https://artemiilebedev.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.siteinspire.com/website/13624-artemii-lebedev"
+        }
+      ],
+      "intentionalDifferences": "Native split utility panel, all eight aligned source index rows and source controls over the clean credited OXI project photograph. OXI Instruments is the active row to match the fixed selected project still. No source video playback, effects or hold controls claimed. Typeface/secondary labels are substitutes; Phone is explicitly adapted.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "sNLGeRYdW",
+        "desktopID": "ANMEajUVw",
+        "phoneID": "kxwsloMoQ",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sNLGeRYdW",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-004",
+              "pageId": "sNLGeRYdW",
+              "desktop": true,
+              "phone": "active-row-backplate-refinement-pending",
+              "images": true,
+              "sourceLinks": true,
+              "sourceFilmIsPoster": true,
+              "screenshots": [
+                "HERO-004-Desktop.jpg",
+                "HERO-004-Phone.jpg"
+              ]
+            },
+            {
+              "id": "HERO-004",
+              "viewport": "phone",
+              "pass": true,
+              "check": "Aftereditorreload302pxactivewhitebarfullycoversMUSICINSTRUMENTSwithoutyearoverlap",
+              "screenshot": "HERO-004-Phone-final-active-strip.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-005",
+      "family": "Source inspiration / credited recreation",
+      "title": "Maximilian Kaspar",
+      "route": "/playgrounds/source-inspiration/heroes/hero-005-maximilian-kaspar",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-005.json",
+        "sha256": "7e4a7787b9f48b9ed9adc35cab109831b5b2841b27aa4915395207ba619728e5",
+        "parts": 211,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          930
+        ]
+      },
+      "credits": "Original: Maximilian Kaspar / design, art direction and development · https://www.maximiliankaspar.com/ · https://www.siteinspire.com/website/13623-maximilian-kaspar",
+      "sourceLinks": [
+        {
+          "label": "Original source / Maximilian Kaspar ↗",
+          "href": "https://www.maximiliankaspar.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.siteinspire.com/website/13623-maximilian-kaspar"
+        }
+      ],
+      "intentionalDifferences": "Gallery-revision statement/grid with native pale glyph rows tracing the inspected branching silhouette. Contour, glyph content and typeface are approximations; no character model or animation claimed. Current live wording differs from this selected gallery state. Explicit new Phone composition is an adaptation, not a verified source mobile clone.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "eXmKseHxD",
+        "desktopID": "Vh47fxWLu",
+        "phoneID": "GEEPKD4TO",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=eXmKseHxD",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/HERO-005-append-output.json",
+          "sha256": "251f632aee4cdb2208aad3317ff8cfae7559dc3b34f8840de70e8b52ec3e8c4c"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-005",
+              "desktop": {
+                "width": 1440,
+                "screenshot": "HERO-005-desktop-opening.jpg",
+                "visual": "PASS full source statement, pale native glyph silhouette and grid"
+              },
+              "phone": {
+                "width": 390,
+                "screenshot": "HERO-005-phone-opening.jpg",
+                "visual": "PASS explicit statement wrap and source hierarchy"
+              },
+              "credit": {
+                "desktopId": "yQ3rEHyzY",
+                "phoneId": "GEEPKD4TOyQ3rEHyzY",
+                "before": "Original source / pu—ente ↗",
+                "after": "Original source / Maximilian Kaspar ↗",
+                "ui": "Desktop Style Content field; inherited Phone",
+                "afterEditorReload": [
+                  "Original source / Maximilian Kaspar ↗",
+                  "Selected gallery reference ↗",
+                  "Original source / Maximilian Kaspar ↗",
+                  "Selected gallery reference ↗"
+                ],
+                "screenshot": "HERO-005-credit-after-reload.jpg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-006",
+      "family": "Source inspiration / credited recreation",
+      "title": "Mac Moss Studio",
+      "route": "/playgrounds/source-inspiration/heroes/hero-006-mac-moss-studio",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-006.json",
+        "sha256": "cb7061e2ab0d3e1c79c10897c6af9eeb4abdbd110c4be163a7cf054a07ac16e1",
+        "parts": 12,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1250
+        ]
+      },
+      "credits": "Original: Mac Moss / KEEN · https://macmoss.studio/KEEN-2",
+      "sourceLinks": [
+        {
+          "label": "Original source / Mac Moss ↗",
+          "href": "https://macmoss.studio/KEEN-2"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.siteinspire.com/website/13575-mac-moss-studio"
+        }
+      ],
+      "intentionalDifferences": "Native broad rail, description, frame and captured clock surround all 20 source glyph cells rebuilt in procedural vector frames. Source organic wordmark and runner photograph are credited native image apertures, not independently authored graphics. Source clock is a captured still value. Frame/micrograin/cadence approximate the source; full site interactions omitted. Phone preserves all 20 cells, not a 4/20 sample.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "complete-source-atlas",
+          "mode": "macmoss",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "macmoss",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#f3f3f1",
+              "accent": "#ff0000",
+              "ink": "#11120f",
+              "showLabels": false,
+              "playbackPosition": "below"
+            },
+            "phone": {
+              "study": "macmoss",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#f3f3f1",
+              "accent": "#ff0000",
+              "ink": "#11120f",
+              "showLabels": false,
+              "playbackPosition": "below"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "c9r_9CrBR",
+        "desktopID": "QiHUcJdGJ",
+        "phoneID": "Cp0mWx122",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=c9r_9CrBR",
+        "codeInstances": [
+          {
+            "id": "JpcsTZBJC",
+            "partKey": "complete-source-atlas",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "macmoss",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#f3f3f1",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#11120f",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          },
+          {
+            "id": "Cp0mWx122JpcsTZBJC",
+            "original": "JpcsTZBJC",
+            "partKey": "complete-source-atlas",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "macmoss",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#f3f3f1",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#11120f",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-006",
+              "pageId": "c9r_9CrBR",
+              "desktop": true,
+              "phone": true,
+              "vectorCells": 20,
+              "sourceImagesLoaded": true,
+              "sourceLinks": true,
+              "pausedPhase": 157.7203000000115,
+              "visibleMotionPair": [
+                "HERO-006-Desktop-live-a.jpg",
+                "HERO-006-Desktop-live-b.jpg"
+              ],
+              "pausedPair": [
+                "HERO-006-Desktop-paused-a.jpg",
+                "HERO-006-Desktop-paused-b.jpg"
+              ],
+              "observedSourceSHA256": "77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a",
+              "rendererRevisionNote": "Drawing core and atlas retained in subsequent coordinator/wrapper fix; Mac aspect unchanged",
+              "screenshots": [
+                "HERO-006-Desktop.jpg",
+                "HERO-006-Phone-paused-opening.jpg"
+              ]
+            },
+            {
+              "id": "HERO-006",
+              "desktop": {
+                "visual": "PASS actualcurrent62twentycellmotion",
+                "screenshot": "HERO-006-Desktop-current62-live-b.jpg"
+              },
+              "phone": {
+                "visual": "PASS actualdirectorylinkopensfullcurrent62twentycellheroandlivePause",
+                "screenshot": "HERO-006-Phone-final-index-navigation.jpg"
+              },
+              "afterReload": true,
+              "sourceRevision": "62f84d32"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-007",
+      "family": "Source inspiration / credited recreation",
+      "title": "Cantor8",
+      "route": "/playgrounds/source-inspiration/heroes/hero-007-cantor8",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-007.json",
+        "sha256": "1cd2e83d85a2d285adb5265c07bfcb3d313e68182a7d8e019b74738a409af559",
+        "parts": 17,
+        "desktop": [
+          1440,
+          810
+        ],
+        "phone": [
+          390,
+          810
+        ]
+      },
+      "credits": "Original: Cantor8; website by Artemii Lebedev · https://www.cantor8.io/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Cantor8 ↗",
+          "href": "https://www.cantor8.io/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.lapa.ninja/post/cantor8/"
+        }
+      ],
+      "intentionalDifferences": "Source full cobalt opening with native low headline/navigation/action and independently reconstructed moving filament geometry. Curve dynamics/timing and source logotype typography are approximations; native peripheral labels are static. Real source action opens the primary contact destination. Phone is explicitly adapted, not a verified source mobile clone.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "canton-filament-field",
+          "mode": "cantor",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "cantor",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 0.65,
+              "stillTime": 2,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#044ab3",
+              "accent": "#ff0000",
+              "ink": "#ffffff",
+              "showLabels": false,
+              "playbackPosition": "below"
+            },
+            "phone": {
+              "study": "cantor",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 0.65,
+              "stillTime": 2,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#044ab3",
+              "accent": "#ff0000",
+              "ink": "#ffffff",
+              "showLabels": false,
+              "playbackPosition": "below"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "NNtv_yybj",
+        "desktopID": "k9M2ECRxi",
+        "phoneID": "VnskNfpzo",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=NNtv_yybj",
+        "codeInstances": [
+          {
+            "id": "lj5Ya6GbY",
+            "partKey": "canton-filament-field",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "cantor",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 0.65,
+              "$control__stillTime": 2,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#044ab3",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#ffffff",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          },
+          {
+            "id": "VnskNfpzolj5Ya6GbY",
+            "original": "lj5Ya6GbY",
+            "partKey": "canton-filament-field",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "cantor",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 0.65,
+              "$control__stillTime": 2,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#044ab3",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#ffffff",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-007",
+              "desktop": {
+                "visual": "PASS native low headline/navigation around130 moving filaments",
+                "screenshot": "HERO-007-Desktop-final-opening.jpg"
+              },
+              "phone": {
+                "visual": "PASS full cobalt opening,110filaments and accessible action/Pause",
+                "screenshot": "HERO-007-Phone-final-opening.jpg"
+              },
+              "playback": "live3.28063→8.84372; paused12.37387 exact in two captures; resumed",
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-008",
+      "family": "Source inspiration / credited recreation",
+      "title": "PP Neue Montreal",
+      "route": "/playgrounds/source-inspiration/heroes/hero-008-pp-neue-montreal",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-008.json",
+        "sha256": "842fc02e025099e80ba781638bb92ef61ea82504ea273b5e1b7b5f49cf335b2a",
+        "parts": 302,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1220
+        ]
+      },
+      "credits": "Original: Pangram Pangram (typeface foundry); separate website-design credit not identified · https://neuemontreal.com/ · https://www.lapa.ninja/post/pp-neue-montreal/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Pangram Pangram / PP Neue Montreal ↗",
+          "href": "https://neuemontreal.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.lapa.ninja/post/pp-neue-montreal/"
+        }
+      ],
+      "intentionalDifferences": "Native full-opening typography, grain, rules and emblem; actual credited city-film photograph mounted only inside its native aperture. Inter substitutes the licensed face. This is one still, not source film playback. Explicit Phone composition is an adaptation rather than a verified source mobile clone.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "b3uK2ocwT",
+        "desktopID": "YiL3I3tMB",
+        "phoneID": "VIDkTdNHN",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=b3uK2ocwT",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-008",
+              "pageId": "b3uK2ocwT",
+              "desktop": true,
+              "phone": true,
+              "images": true,
+              "nativeLargeLettering": true,
+              "sourceLinks": true,
+              "screenshots": [
+                "HERO-008-Desktop.jpg",
+                "HERO-008-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-009",
+      "family": "Source inspiration / credited recreation",
+      "title": "Vercel",
+      "route": "/playgrounds/source-inspiration/heroes/hero-009-vercel",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-009.json",
+        "sha256": "d5a82f328ce39e45b363c19076df9ac461d607078eae6e4c203f2f13552b0d44",
+        "parts": 39,
+        "desktop": [
+          1440,
+          840
+        ],
+        "phone": [
+          390,
+          960
+        ]
+      },
+      "credits": "Original: Vercel · https://vercel.com/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Vercel ↗",
+          "href": "https://vercel.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.lapa.ninja/post/vercel-3/"
+        }
+      ],
+      "intentionalDifferences": "Selected dark Agentic Infrastructure revision, reconstructed as three native zones around independently painted live halo geometry. Source customer names remain Vercel reference content; native typography substitutes their individual logos. Exact archived light algorithm/timing and current light website are not reproduced. Phone recomposes the source zones without a new generic headline.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "central-source-halo",
+          "mode": "vercel",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "vercel",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#000000",
+              "accent": "#ff0000",
+              "ink": "#111111",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            },
+            "phone": {
+              "study": "vercel",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#000000",
+              "accent": "#ff0000",
+              "ink": "#111111",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "WGnsJZqX_",
+        "desktopID": "EoOZCY8X2",
+        "phoneID": "SrzWgme6W",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=WGnsJZqX_",
+        "codeInstances": [
+          {
+            "id": "NK9ITm3uA",
+            "partKey": "central-source-halo",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "vercel",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#000000",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#111111",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          },
+          {
+            "id": "SrzWgme6WNK9ITm3uA",
+            "original": "NK9ITm3uA",
+            "partKey": "central-source-halo",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "vercel",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#000000",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#111111",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-009",
+              "desktop": {
+                "visual": "PASS selected dark revision: native three zones and procedural halo",
+                "screenshot": "HERO-009-Desktop-final-stable.jpg"
+              },
+              "phone": {
+                "visual": "PASS source zones reflow; native controls and halo readable",
+                "screenshot": "HERO-009-Phone-final-opening.jpg"
+              },
+              "playback": "live5.248→9.4772; paused9.7744 exacttwice; resumed",
+              "coldPreview": "initial blank document; toolbarReload rendered currentcomponent",
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-010",
+      "family": "Source inspiration / credited recreation",
+      "title": "G!theimagineers",
+      "route": "/playgrounds/source-inspiration/heroes/hero-010-g-theimagineers",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-010.json",
+        "sha256": "04d2177adadf813773ddc029967e187840453ef2b3bb267dea420608fb617f42",
+        "parts": 88,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1200
+        ]
+      },
+      "credits": "Original: G!theimagineers / Index Studio · https://www.gtheimagineers.com/en.html · https://httpster.net/website/gtheimagineers/",
+      "sourceLinks": [
+        {
+          "label": "Original source / G!theimagineers ↗",
+          "href": "https://www.gtheimagineers.com/en.html"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://httpster.net/website/gtheimagineers/"
+        }
+      ],
+      "intentionalDifferences": "Static expanded Vision arrangement with23 measured native offset circles and native rails. French source prose is shortened/paraphrased rather than copied wholesale. Phone preserves the narrow vertical chapter rails while moving reading matter below the contour. No accordion or source motion claimed.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "APoGf2ASB",
+        "desktopID": "OLdXVPAUp",
+        "phoneID": "WaqKj7kLZ",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=APoGf2ASB",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/native-003-010-017-append-output.json",
+          "sha256": "ef51d4a7fe446f51c5eeab6612059d9f1bcbbdb66107200c6e0a9436330e7eff"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-010",
+              "pageId": "APoGf2ASB",
+              "desktop": {
+                "width": 1440,
+                "screenshot": "HERO-010-desktop-opening.jpg",
+                "visual": "PASS source contour/rails/two reading zones"
+              },
+              "phone": {
+                "width": 390,
+                "screenshot": "HERO-010-phone-safearea-after-reload.jpg",
+                "visual": "PASS all5chapterrailsvisible after exactnewPhone safearea refinement"
+              },
+              "sourceLinks": [
+                "Original source / G!theimagineers ↗",
+                "Gallery reference ↗"
+              ],
+              "refinement": "11explicitPhoneattributechanges; reloadededitorandactualPhonePreview"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-011",
+      "family": "Source inspiration / credited recreation",
+      "title": "Jon Way Studio / JW.S",
+      "route": "/playgrounds/source-inspiration/heroes/hero-011-jon-way-studio-jw-s",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-011.json",
+        "sha256": "035b214453d4f4ee32b0fed463073c7777da82bd6b5a344bb29f68d5745f5dc0",
+        "parts": 117,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1060
+        ]
+      },
+      "credits": "Original: Jon Way / JW.S · https://www.jonway.studio/ · https://httpster.net/website/jon-way-studio/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Jon Way Studio ↗",
+          "href": "https://www.jonway.studio/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://httpster.net/website/jon-way-studio/"
+        }
+      ],
+      "intentionalDifferences": "Archived JW.S native rails, index, contrasting fields and overlapping information sheet with the actual credited poster/wall photograph in its separate native image aperture. Typefaces, condensed source copy and logotype typography are substitutes; no archived motion/navigation behavior claimed. Phone reflows the fields while retaining the overlap.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "MyzKXY0X5",
+        "desktopID": "JIVcPTAX0",
+        "phoneID": "JuvVgN5Ze",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=MyzKXY0X5",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-011",
+              "pageId": "MyzKXY0X5",
+              "desktop": true,
+              "phone": true,
+              "images": true,
+              "sourceLinks": true,
+              "nativeOverlay": true,
+              "screenshots": [
+                "HERO-011-Desktop.jpg",
+                "HERO-011-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-012",
+      "family": "Source inspiration / credited recreation",
+      "title": "Mezmo",
+      "route": "/playgrounds/source-inspiration/heroes/hero-012-mezmo",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-012.json",
+        "sha256": "077d40627964faddb421323d6909b3f282fc435f7eb237a7f9464f9fb1bf9089",
+        "parts": 144,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1040
+        ]
+      },
+      "credits": "Original: Mezmo; separate website designer not identified · https://www.mezmo.com/ · https://httpster.net/website/mezmo/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Mezmo ↗",
+          "href": "https://www.mezmo.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://httpster.net/website/mezmo/"
+        }
+      ],
+      "intentionalDifferences": "Selected archived Mezmo platform opening, not currentAURA. Native diagram/route/icon geometry remains selectable. Source report/heading/customer wording replaces study placeholders; condensed type and logo typography are substitutes. Static source diagram; no archived flow animation claimed. Explicit Phone composition is newly adapted.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "URF4BR9rV",
+        "desktopID": "ezdHZxe_s",
+        "phoneID": "SzBAWtOZt",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=URF4BR9rV",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-012",
+              "pageId": "URF4BR9rV",
+              "desktop": true,
+              "phone": true,
+              "sourceLinks": true,
+              "nativeDiagram": true,
+              "screenshots": [
+                "HERO-012-Desktop.jpg",
+                "HERO-012-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-013",
+      "family": "Source inspiration / credited recreation",
+      "title": "FORMAT",
+      "route": "/playgrounds/source-inspiration/heroes/hero-013-format",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-013.json",
+        "sha256": "93d0dcd1106b7c46e72f14e93c1fae350c23f2023759483c0991f5d18c8e208d",
+        "parts": 52,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1000
+        ]
+      },
+      "credits": "Original FORMAT / Obys × DES · https://format.obys.agency/",
+      "sourceLinks": [
+        {
+          "label": "Original source / FORMAT — Obys × DES ↗",
+          "href": "https://format.obys.agency/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.awwwards.com/sites/format"
+        }
+      ],
+      "intentionalDifferences": "Native solid geometric FORMAT wordmark reconstructed from the newly inspected full opening, narrow attribution rail, white Vertical format sheet, editable circle/dots and actual credited cloud photograph. Native Vertical anchor is an authored interaction requiring actual Section binding; source drag/physics, notes mode, sticky-scroll synchronization, additional format sheets and animations are not claimed. Phone is an explicit adaptation, not a verified source mobile clone.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "rQKy22gM2",
+        "desktopID": "Hg0LaQzze",
+        "phoneID": "ptGfGK5uV",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rQKy22gM2",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/photo-six-append-output.json",
+          "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-013",
+              "pageId": "rQKy22gM2",
+              "desktop": true,
+              "phone": true,
+              "images": true,
+              "sourceLinks": true,
+              "nativeSection": {
+                "desktopAction": "O0hqO19rx",
+                "phoneAction": "ptGfGK5uVO0hqO19rx",
+                "desktopTarget": "et3XFBs2j",
+                "phoneTarget": "ptGfGK5uVet3XFBs2j",
+                "slug": "vertical-format",
+                "desktopY": [
+                  432,
+                  192
+                ],
+                "phoneY": [
+                  350,
+                  110
+                ],
+                "phoneScrollMargin": 110,
+                "nativeInspectorPageAndSectionSelected": true,
+                "reloadPending": true
+              },
+              "screenshots": [
+                "HERO-013-Desktop.jpg",
+                "HERO-013-Phone.jpg",
+                "HERO-013-Desktop-section.jpg",
+                "HERO-013-Phone-section.jpg"
+              ]
+            },
+            {
+              "id": "HERO-013",
+              "afterReload": true,
+              "pass": true,
+              "check": "RealDesktop/PhoneVerticalanchorsretainInterandmoveactualpaper432→192/350→110;authoredscrollmargins192/110",
+              "desktop": {
+                "visual": "PASSnativeSectionafterreload",
+                "screenshot": "HERO-013-Desktop-final-section.jpg"
+              },
+              "phone": {
+                "visual": "PASSnativeSectionafterreload",
+                "screenshot": "HERO-013-Phone-final-section.jpg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-014",
+      "family": "Source inspiration / credited recreation",
+      "title": "Unbelievably Crap",
+      "route": "/playgrounds/source-inspiration/heroes/hero-014-unbelievably-crap",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-014.json",
+        "sha256": "13bf7b4322c95ca41cc8b3d624ed6fe65d85a6f04e435e5fec0edee2f5d346b9",
+        "parts": 55,
+        "desktop": [
+          1440,
+          900
+        ],
+        "phone": [
+          390,
+          800
+        ]
+      },
+      "credits": "Original: Liubomyr Ulytskyi · https://www.unbelievablycrap.com/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Liubomyr Ulytskyi ↗",
+          "href": "https://www.unbelievablycrap.com/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.awwwards.com/sites/unbelievably-crap"
+        },
+        {
+          "label": "Head scan / Lee Perry-Smith ↗",
+          "href": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith"
+        },
+        {
+          "label": "Geometry license / CC BY3.0 ↗",
+          "href": "https://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "intentionalDifferences": "Native framed white portrait opening, 0039, peripheral UI and dark bottom strip surround the actual live red-bar raster/bust surface. Lee Perry-Smith head/bust, CC BY3.0, is an explicit adapted stand-in; no original full-body mesh or source full-scroll reproduction. Ambient light is approximated with48 low-opacity native material layers; Phone composition newly adapted.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "actual-live-raster-portrait",
+          "mode": "raster",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "raster",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#ffffff",
+              "accent": "#ff0000",
+              "ink": "#111111",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            },
+            "phone": {
+              "study": "raster",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#ffffff",
+              "light": "#ffffff",
+              "secondary": "#ffffff",
+              "accent": "#ff0000",
+              "ink": "#111111",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "veYj7qYuv",
+        "desktopID": "x4tNuhQE7",
+        "phoneID": "mKMwQRWpB",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=veYj7qYuv",
+        "codeInstances": [
+          {
+            "id": "xah57fLZV",
+            "partKey": "actual-live-raster-portrait",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "raster",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#ffffff",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#111111",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          },
+          {
+            "id": "mKMwQRWpBxah57fLZV",
+            "original": "xah57fLZV",
+            "partKey": "actual-live-raster-portrait",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "raster",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#ffffff",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#ffffff",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#111111",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-014",
+              "desktop": {
+                "visual": "PASS source framed portrait,48-layer surround, red bars and peripheral native UI",
+                "screenshot": "HERO-014-Desktop-final-opening.jpg"
+              },
+              "phone": {
+                "visual": "PASS explicit Phone portrait adaptation and visible Pause",
+                "screenshot": "HERO-014-Phone-final-opening.jpg"
+              },
+              "playback": "live3.5899→7.7299; paused8.1764exacttwice; resumed",
+              "limits": "Credited LeePerrySmithbuststand-in; no sourcefullbodyclaim",
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-015",
+      "family": "Source inspiration / credited recreation",
+      "title": "MECHA",
+      "route": "/playgrounds/source-inspiration/heroes/hero-015-mecha",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-015.json",
+        "sha256": "fab062713f86771bbb3908a4d67452816e0d290ff110e63ab14a497ac23ceb4e",
+        "parts": 10,
+        "desktop": [
+          1440,
+          900
+        ],
+        "phone": [
+          390,
+          860
+        ]
+      },
+      "credits": "Original: Widelab / Grzegorz Leśniewicz · https://mecha-xyz.webflow.io/",
+      "sourceLinks": [
+        {
+          "label": "Original source / MECHA ↗",
+          "href": "https://mecha-xyz.webflow.io/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://www.awwwards.com/sites/mecha"
+        }
+      ],
+      "intentionalDifferences": "Source serif statement, white field, cropped lower-left mark entry and burgundy action are recreated as one opening. Actual source mark topology: 696 vertices /1364 faces; independent projection/hidden-line/timing. Source mark reuse license remains unverified and credit remains Widelab/Grzegorz Leśniewicz. Typeface/logotype substitute; no source scroll-coupling claimed. Native reveal mask clips artwork only; Pause above it stays accessible.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "entering-source-mecha-mark",
+          "mode": "mecha",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "mecha",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#ffffff",
+              "accent": "#ff0000",
+              "ink": "#222222",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            },
+            "phone": {
+              "study": "mecha",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#ffffff",
+              "accent": "#ff0000",
+              "ink": "#222222",
+              "showLabels": false,
+              "playbackPosition": "overlay"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "igYIXGsXp",
+        "desktopID": "Pc4kbBFwY",
+        "phoneID": "FaJQ7dE5l",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=igYIXGsXp",
+        "codeInstances": [
+          {
+            "id": "uGqxVKy00",
+            "partKey": "entering-source-mecha-mark",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "mecha",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#ffffff",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#222222",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          },
+          {
+            "id": "FaJQ7dE5luGqxVKy00",
+            "original": "uGqxVKy00",
+            "partKey": "entering-source-mecha-mark",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "mecha",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#ffffff",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#222222",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "overlay"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-015",
+              "desktop": {
+                "visual": "PASS source serif statement, cropped lower-left source crease projection and accessiblePause",
+                "screenshot": "HERO-015-Desktop-final-opening.jpg"
+              },
+              "phone": {
+                "visual": "PASS explicit serif wrap and source mark reveal",
+                "screenshot": "HERO-015-Phone-final-opening.jpg"
+              },
+              "playback": "live3.657→7.5629; paused7.8985exacttwice; resumed",
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-016",
+      "family": "Source inspiration / credited recreation",
+      "title": "Origin",
+      "route": "/playgrounds/source-inspiration/heroes/hero-016-origin",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-016.json",
+        "sha256": "65983ee5d504f5d49a9da8761b3eaec43811e3bee247e44cf6d03d4aa920b2cf",
+        "parts": 31,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          930
+        ]
+      },
+      "credits": "Original: Origin Studio; gallery submitter Ben Blackburn (not proof of website authorship) · https://www.originbrand.io/ · https://minimal.gallery/origin/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Origin Studio ↗",
+          "href": "https://www.originbrand.io/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://minimal.gallery/origin/"
+        }
+      ],
+      "intentionalDifferences": "Native full-opening wordmark/card with one compact live light tile. Light motion is an independent approximation; source renderer and input coupling remain unverified. Shortened copy and constructed lettering substitute the source. Enlarged static keyframe annotations remain only on the preserved Design board; new Web has none. Pause/Play is explicitly below the tile.",
+      "influenceIDs": [],
+      "liveSlots": [
+        {
+          "key": "origin-live-light",
+          "mode": "origin",
+          "controlCount": 21,
+          "presets": {
+            "desktop": {
+              "study": "origin",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#f3f3f1",
+              "accent": "#ff0000",
+              "ink": "#11120f",
+              "showLabels": false,
+              "playbackPosition": "below"
+            },
+            "phone": {
+              "study": "origin",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 1,
+              "artworkScale": 1,
+              "density": 1,
+              "intensity": 1,
+              "motionSpan": 1,
+              "glyphSize": 1,
+              "scanPitch": 2.5,
+              "blur": 0.65,
+              "atlasColumns": "4",
+              "interactive": true,
+              "primary": "#c4e5ca",
+              "light": "#ffffff",
+              "secondary": "#f3f3f1",
+              "accent": "#ff0000",
+              "ink": "#11120f",
+              "showLabels": false,
+              "playbackPosition": "below"
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "P7xB05q8z",
+        "desktopID": "EsQK9Tw3h",
+        "phoneID": "HLcOaJsUO",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P7xB05q8z",
+        "codeInstances": [
+          {
+            "id": "a_3UIsNdj",
+            "partKey": "origin-live-light",
+            "placement": "desktop",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "origin",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#f3f3f1",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#11120f",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          },
+          {
+            "id": "HLcOaJsUOa_3UIsNdj",
+            "original": "a_3UIsNdj",
+            "partKey": "origin-live-light",
+            "placement": "phone",
+            "component": "codeFile/DViA0ol:default",
+            "props": {
+              "$control__study": "origin",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 1,
+              "$control__artworkScale": 1,
+              "$control__density": 1,
+              "$control__intensity": 1,
+              "$control__motionSpan": 1,
+              "$control__glyphSize": 1,
+              "$control__scanPitch": 2.5,
+              "$control__blur": 0.65,
+              "$control__atlasColumns": "4",
+              "$control__interactive": true,
+              "$control__primary": "#c4e5ca",
+              "$control__light": "#ffffff",
+              "$control__secondary": "#f3f3f1",
+              "$control__accent": "#ff0000",
+              "$control__ink": "#11120f",
+              "$control__showLabels": false,
+              "$control__playbackPosition": "below"
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/live-seven-append-output.json",
+          "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-016",
+              "pageId": "P7xB05q8z",
+              "desktop": "rounded-code-wrapper-fix-pending",
+              "phone": "rounded-code-wrapper-fix-pending",
+              "nativeComposition": true,
+              "playbackBelow": true,
+              "playbackGap": 8,
+              "visibleMotionPair": "HERO-016-Desktop-live-before-corner-fix-a/b",
+              "observedSourceSHA256": "77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a",
+              "screenshots": [
+                "HERO-016-Desktop.jpg",
+                "HERO-016-Desktop-tile-before-corner-fix.jpg",
+                "HERO-016-Phone-before-corner-fix.jpg"
+              ]
+            },
+            {
+              "id": "HERO-016",
+              "desktop": {
+                "visual": "PASS new62rounded30%tile afterfullreload,8pxplaybackgap",
+                "screenshot": "HERO-016-Desktop-rounded-after-reload.jpg"
+              },
+              "phone": {
+                "visual": "PASS rounded30%lighttile,sourcewordmarkandaccessiblePause",
+                "screenshot": "HERO-016-Phone-final-rounded-live-a.jpg"
+              },
+              "playback": "Phone3.4268→6.3387; paused6.5524exacttwice; resumed",
+              "sourceRevision": "62f84d32",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-017",
+      "family": "Source inspiration / credited recreation",
+      "title": "Bleibtgleich 2026",
+      "route": "/playgrounds/source-inspiration/heroes/hero-017-bleibtgleich-2026",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-017.json",
+        "sha256": "ae33abaae0f10fc070829a2df550bb4c7293759a43f61fb328fbe4bae81e5670",
+        "parts": 93,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          1080
+        ]
+      },
+      "credits": "Original: Maksym Bleibtgleich · https://bleibtgleich.dev/ · https://minimal.gallery/bleibtgleich-2026/",
+      "sourceLinks": [
+        {
+          "label": "Original source / Maksym Bleibtgleich ↗",
+          "href": "https://bleibtgleich.dev/"
+        },
+        {
+          "label": "Gallery reference ↗",
+          "href": "https://minimal.gallery/bleibtgleich-2026/"
+        }
+      ],
+      "intentionalDifferences": "Native offset type, vertical rule and the inspected black aperture state with white connected points. Contour is traced with editable horizontal slices; typography is substituted. Static capture only: scroll/time/pointer coupling and image reveals are not reconstructed. Explicit new Phone composition is an adaptation, not a verified source mobile clone.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "q1Btevkm7",
+        "desktopID": "dBGUb5mXu",
+        "phoneID": "n3A60sEhL",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q1Btevkm7",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/native-003-010-017-append-output.json",
+          "sha256": "ef51d4a7fe446f51c5eeab6612059d9f1bcbbdb66107200c6e0a9436330e7eff"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-017",
+              "pageId": "q1Btevkm7",
+              "desktop": {
+                "width": 1440,
+                "screenshot": "HERO-017-desktop-opening.jpg",
+                "visual": "PASS offset type and aperture"
+              },
+              "phone": {
+                "width": 390,
+                "screenshot": "HERO-017-phone-opening.jpg",
+                "visual": "PASS native reading reflow and aperture"
+              },
+              "sourceLinks": [
+                "Original source / Maksym Bleibtgleich ↗",
+                "Gallery reference ↗"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HERO-018",
+      "family": "Source inspiration / credited recreation",
+      "title": "pu—ente / entry and graphic-design branch",
+      "route": "/playgrounds/source-inspiration/heroes/hero-018-pu-ente",
+      "recipe": {
+        "path": "docs/design-studies/standalone-heroes/native/HERO-018.json",
+        "sha256": "fcbccae8a1e109783e80e225f5c9bb5dc2591373d5d18fc7d834eda9f0643e3e",
+        "parts": 41,
+        "desktop": [
+          1440,
+          1900
+        ],
+        "phone": [
+          390,
+          2070
+        ]
+      },
+      "credits": "Original design: pu—ente. Primary https://www.pu-ente.com/ · graphic source https://www.pu-ente.com/z/ · gallery https://minimal.gallery/pu-ente/",
+      "sourceLinks": [],
+      "intentionalDifferences": "Native entry, selectable lettering and three original source motifs. Inter substitutes Graphie. Art panel is shown for source fidelity; the Art branch is not recreated or linked. Graphic panel navigates to the same-page native branch. Motif proportions remain approximate; no source motion is claimed.",
+      "influenceIDs": [],
+      "liveSlots": [],
+      "framer": {
+        "pageID": "s6UwFN6_K",
+        "desktopID": "cugUAEDPO",
+        "phoneID": "d4OE142N2",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=s6UwFN6_K",
+        "codeInstances": [],
+        "receipt": {
+          "artifact": "mcp/HERO-018-append-output.json",
+          "sha256": "6fb756b064c7daa72a4b628fac1e41ee4274ea45774c1af3a7712bc44561a8ca"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "not applicable; native opening without code instances",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "HERO-018",
+              "viewport": "phone",
+              "check": "Native graphic-design entry action moves real target fromy780 toy0",
+              "pass": true
+            },
+            {
+              "id": "HERO-018",
+              "viewport": "desktop",
+              "check": "Native graphic-design entry action moves actualtargetfromy900 toy0",
+              "pass": true
+            },
+            {
+              "id": "HERO-018",
+              "check": "Fresh editor reload retainsnativeentry/actualbranchlink/credits andPhoneinheritsDesktopSection#graphic-design",
+              "pass": true
+            },
+            {
+              "id": "HERO-018",
+              "check": "AfterwholeeditorreloadactualPreviewstillcompilesnativelinkandclickreachesgalleryy0",
+              "pass": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-010",
+      "family": "Original compositions / Round02",
+      "title": "Pathfield",
+      "route": "/playgrounds/original-compositions/heroes/round-02/pathfield",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-010.json",
+        "sha256": "620a3f28f8372be32b9feeda9e1449c1411d212ee597402020f3ca2aca74b28e",
+        "parts": 13,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-007 / HERO-012 / HERO-010. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-007",
+        "HERO-012",
+        "HERO-010"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "pathfield",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "pathfield",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#0c1110",
+              "primary": "#c5d8be",
+              "ink": "#f1f2e9",
+              "accent": "#d7fb78",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "pathfield",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#0c1110",
+              "primary": "#c5d8be",
+              "ink": "#f1f2e9",
+              "accent": "#d7fb78",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "JzRfzVmvp",
+        "desktopID": "s4iXqev_r",
+        "phoneID": "DxgUOc7Na",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JzRfzVmvp",
+        "codeInstances": [
+          {
+            "id": "QYBmpdu9S",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "pathfield",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#0c1110",
+              "$control__primary": "#c5d8be",
+              "$control__ink": "#f1f2e9",
+              "$control__accent": "#d7fb78",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "DxgUOc7NaQYBmpdu9S",
+            "original": "QYBmpdu9S",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "pathfield",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#0c1110",
+              "$control__primary": "#c5d8be",
+              "$control__ink": "#f1f2e9",
+              "$control__accent": "#d7fb78",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-010",
+              "pageId": "JzRfzVmvp",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                3.1,
+                12.5919
+              ],
+              "pauseHeld": 12.718,
+              "reloadedBeforePreview": true,
+              "screenshots": [
+                "OH-010-Desktop.jpg",
+                "OH-010-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-011",
+      "family": "Original compositions / Round02",
+      "title": "Concordance",
+      "route": "/playgrounds/original-compositions/heroes/round-02/concordance",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-011.json",
+        "sha256": "4bbbac2b8bcbc5e7caa1d999f776f5e35c8e856e543253b34a7f4bdb8a1183da",
+        "parts": 11,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-001 / HERO-005 / HERO-017. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-001",
+        "HERO-005",
+        "HERO-017"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "concordance",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "concordance",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#eeeee8",
+              "primary": "#232724",
+              "ink": "#171b19",
+              "accent": "#a12c2c",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "concordance",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#eeeee8",
+              "primary": "#232724",
+              "ink": "#171b19",
+              "accent": "#a12c2c",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "q8H2voJ0l",
+        "desktopID": "tb8264OBs",
+        "phoneID": "FgDizGIy_",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q8H2voJ0l",
+        "codeInstances": [
+          {
+            "id": "dMx0kS4jR",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "concordance",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#eeeee8",
+              "$control__primary": "#232724",
+              "$control__ink": "#171b19",
+              "$control__accent": "#a12c2c",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "FgDizGIy_dMx0kS4jR",
+            "original": "dMx0kS4jR",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "concordance",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#eeeee8",
+              "$control__primary": "#232724",
+              "$control__ink": "#171b19",
+              "$control__accent": "#a12c2c",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-011",
+              "pageId": "q8H2voJ0l",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                6.0527,
+                19.6894
+              ],
+              "pause": true,
+              "play": true,
+              "screenshots": [
+                "OH-011-Desktop.jpg",
+                "OH-011-Phone.jpg"
+              ],
+              "fontRefinement": "Resolved by OH-011-font-fit-after-reload; text width345.15625 atleft14 within375"
+            },
+            {
+              "id": "OH-011-font-measurement",
+              "font": "Space Grotesk 500",
+              "fontSize": 88,
+              "textWidth": 401.90625,
+              "left": 14,
+              "viewport": 375,
+              "plannedPhoneFontSize": 75,
+              "phoneFrameDemand": [
+                443,
+                1024
+              ]
+            },
+            {
+              "id": "OH-011-font-fit-after-reload",
+              "pageId": "q8H2voJ0l",
+              "phoneFontSize": 75,
+              "lineHeight": 80,
+              "fullBrandFits": true,
+              "screenshot": "OH-011-Phone-after-reload.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-012",
+      "family": "Original compositions / Round02",
+      "title": "Axial Passage",
+      "route": "/playgrounds/original-compositions/heroes/round-02/axialpassage",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-012.json",
+        "sha256": "35f3491ac455514fb7ce98c623fe0c6ad412689998a12c0a9c7bc28e3a0648b9",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-003 / HERO-009 / HERO-015. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-003",
+        "HERO-009",
+        "HERO-015"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "axialpassage",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "axialpassage",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#101112",
+              "primary": "#eeeeea",
+              "ink": "#f7f7f2",
+              "accent": "#898d90",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "axialpassage",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#101112",
+              "primary": "#eeeeea",
+              "ink": "#f7f7f2",
+              "accent": "#898d90",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "y4fcvmX_d",
+        "desktopID": "dEb0guXB4",
+        "phoneID": "YCKiyKDRZ",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=y4fcvmX_d",
+        "codeInstances": [
+          {
+            "id": "HbGMAtiNF",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "axialpassage",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#101112",
+              "$control__primary": "#eeeeea",
+              "$control__ink": "#f7f7f2",
+              "$control__accent": "#898d90",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "YCKiyKDRZHbGMAtiNF",
+            "original": "HbGMAtiNF",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "axialpassage",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#101112",
+              "$control__primary": "#eeeeea",
+              "$control__ink": "#f7f7f2",
+              "$control__accent": "#898d90",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-012",
+              "pageId": "y4fcvmX_d",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                3.9988,
+                18.2359
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "screenshots": [
+                "OH-012-Desktop.jpg",
+                "OH-012-Phone.jpg"
+              ]
+            },
+            {
+              "id": "OH-012",
+              "afterReload": true,
+              "pass": true,
+              "check": "SameliveentryDesktop1200x833→Phone443x1024;display443x1024coversbothnewaxes",
+              "desktop": {
+                "visual": "PASS current5abgeometricactor",
+                "screenshot": "OH-012-Desktop-final-responsive-stable.jpg"
+              },
+              "phone": {
+                "visual": "PASS current5abcorrectaspectanddetail",
+                "screenshot": "OH-012-Phone-final-responsive-stable.jpg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-013",
+      "family": "Original compositions / Round02",
+      "title": "Letterform Engine",
+      "route": "/playgrounds/original-compositions/heroes/round-02/letterengine",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-013.json",
+        "sha256": "b5d20720c4424c1404e86ecad0794cd65d43d18d88109c6c291088c4d8463b30",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-013 / HERO-018 / HERO-008. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-013",
+        "HERO-018",
+        "HERO-008"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "letterengine",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "letterengine",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#e04b33",
+              "primary": "#191b1a",
+              "ink": "#101211",
+              "accent": "#f1e9d4",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "letterengine",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#e04b33",
+              "primary": "#191b1a",
+              "ink": "#101211",
+              "accent": "#f1e9d4",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "RMpymg1pV",
+        "desktopID": "RvdxAUkKg",
+        "phoneID": "cs8qc6Lsn",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=RMpymg1pV",
+        "codeInstances": [
+          {
+            "id": "LkcfNcIrN",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "letterengine",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#e04b33",
+              "$control__primary": "#191b1a",
+              "$control__ink": "#101211",
+              "$control__accent": "#f1e9d4",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "cs8qc6LsnLkcfNcIrN",
+            "original": "LkcfNcIrN",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "letterengine",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#e04b33",
+              "$control__primary": "#191b1a",
+              "$control__ink": "#101211",
+              "$control__accent": "#f1e9d4",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-013",
+              "pageId": "RMpymg1pV",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                5.443,
+                9.489
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "visualMotion": "assembled letters → separated modules",
+              "screenshots": [
+                "OH-013-Desktop.jpg",
+                "OH-013-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-014",
+      "family": "Original compositions / Round02",
+      "title": "Report Cuts",
+      "route": "/playgrounds/original-compositions/heroes/round-02/reportcuts",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-014.json",
+        "sha256": "c7bb279f0540baff69688784940baa14c7000f3bf9e704f3c966d8c16fef1e61",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-002 / HERO-011 / HERO-013. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-002",
+        "HERO-011",
+        "HERO-013"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "reportcuts",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "reportcuts",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#ddd8ca",
+              "primary": "#1c201e",
+              "ink": "#161a18",
+              "accent": "#a73427",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "reportcuts",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#ddd8ca",
+              "primary": "#1c201e",
+              "ink": "#161a18",
+              "accent": "#a73427",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "DvQZQKDNu",
+        "desktopID": "o8tDjTc3O",
+        "phoneID": "yG71zDgRS",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=DvQZQKDNu",
+        "codeInstances": [
+          {
+            "id": "nGR4PPV5v",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "reportcuts",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#ddd8ca",
+              "$control__primary": "#1c201e",
+              "$control__ink": "#161a18",
+              "$control__accent": "#a73427",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "yG71zDgRSnGR4PPV5v",
+            "original": "nGR4PPV5v",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "reportcuts",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#ddd8ca",
+              "$control__primary": "#1c201e",
+              "$control__ink": "#161a18",
+              "$control__accent": "#a73427",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-014",
+              "pageId": "DvQZQKDNu",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                7.3375,
+                13.94
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "visualMotion": "eight-second edit changes report fragments",
+              "screenshots": [
+                "OH-014-Desktop.jpg",
+                "OH-014-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-015",
+      "family": "Original compositions / Round02",
+      "title": "Research Film",
+      "route": "/playgrounds/original-compositions/heroes/round-02/researchfilm",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-015.json",
+        "sha256": "823d3eecd1c4974468277113411ef1385a3d3ad347d2ab60bbb4a2db0fe6cd44",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-004 / HERO-002 / HERO-014. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-004",
+        "HERO-002",
+        "HERO-014"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "researchfilm",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "researchfilm",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 1.8,
+              "interactive": true,
+              "customColors": true,
+              "background": "#0c0e0f",
+              "primary": "#ebe7d9",
+              "ink": "#f3f1e8",
+              "accent": "#5d6b85",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "researchfilm",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 1.8,
+              "interactive": true,
+              "customColors": true,
+              "background": "#0c0e0f",
+              "primary": "#ebe7d9",
+              "ink": "#f3f1e8",
+              "accent": "#5d6b85",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "KTHletWNf",
+        "desktopID": "ek0oHTtX7",
+        "phoneID": "BOHoVgL22",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=KTHletWNf",
+        "codeInstances": [
+          {
+            "id": "wMFOgOMg6",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "researchfilm",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 1.8,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#0c0e0f",
+              "$control__primary": "#ebe7d9",
+              "$control__ink": "#f3f1e8",
+              "$control__accent": "#5d6b85",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "BOHoVgL22wMFOgOMg6",
+            "original": "wMFOgOMg6",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "researchfilm",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 1.8,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#0c0e0f",
+              "$control__primary": "#ebe7d9",
+              "$control__ink": "#f3f1e8",
+              "$control__accent": "#5d6b85",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-015",
+              "pageId": "KTHletWNf",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                4.9083,
+                12.4441
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "screenshots": [
+                "OH-015-Desktop.jpg",
+                "OH-015-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-016",
+      "family": "Original compositions / Round02",
+      "title": "Semantic Aperture",
+      "route": "/playgrounds/original-compositions/heroes/round-02/semanticaperture",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-016.json",
+        "sha256": "c3d5b47de4716dd9b12b6acd9fc8784a3fdb549d8babcf84a51a0e47713a0634",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-003 / HERO-001 / HERO-010. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-003",
+        "HERO-001",
+        "HERO-010"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "semanticaperture",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "semanticaperture",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#263de1",
+              "primary": "#f0eadc",
+              "ink": "#f7f2e4",
+              "accent": "#d59072",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "semanticaperture",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#263de1",
+              "primary": "#f0eadc",
+              "ink": "#f7f2e4",
+              "accent": "#d59072",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "px2UmqdBo",
+        "desktopID": "G_xzjSpdf",
+        "phoneID": "I4B6v8kFj",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=px2UmqdBo",
+        "codeInstances": [
+          {
+            "id": "nMxZmRcnf",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "semanticaperture",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#263de1",
+              "$control__primary": "#f0eadc",
+              "$control__ink": "#f7f2e4",
+              "$control__accent": "#d59072",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "I4B6v8kFjnMxZmRcnf",
+            "original": "nMxZmRcnf",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "semanticaperture",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#263de1",
+              "$control__primary": "#f0eadc",
+              "$control__ink": "#f7f2e4",
+              "$control__accent": "#d59072",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-016",
+              "pageId": "px2UmqdBo",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                4.6632,
+                9.5619
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "screenshots": [
+                "OH-016-Desktop.jpg",
+                "OH-016-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-017",
+      "family": "Original compositions / Round02",
+      "title": "Format Press",
+      "route": "/playgrounds/original-compositions/heroes/round-02/formatpress",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-017.json",
+        "sha256": "6e4ea2ed484f6d245cde80188c13b4f1788d2a16f75e1a41d2f80798f8ff9b80",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-013 / HERO-011 / HERO-018. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-013",
+        "HERO-011",
+        "HERO-018"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "formatpress",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "formatpress",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#3b1b2e",
+              "primary": "#eee7d4",
+              "ink": "#191512",
+              "accent": "#bf795e",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "formatpress",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#3b1b2e",
+              "primary": "#eee7d4",
+              "ink": "#191512",
+              "accent": "#bf795e",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "BtCLrK8nJ",
+        "desktopID": "wJ_OlbKWS",
+        "phoneID": "OXaGpNKi8",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=BtCLrK8nJ",
+        "codeInstances": [
+          {
+            "id": "kj0s6RSHx",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "formatpress",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#3b1b2e",
+              "$control__primary": "#eee7d4",
+              "$control__ink": "#191512",
+              "$control__accent": "#bf795e",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "OXaGpNKi8kj0s6RSHx",
+            "original": "kj0s6RSHx",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "formatpress",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#3b1b2e",
+              "$control__primary": "#eee7d4",
+              "$control__ink": "#191512",
+              "$control__accent": "#bf795e",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-017",
+              "pageId": "BtCLrK8nJ",
+              "desktop": "tagline-contrast-refinement-pending",
+              "phone": true,
+              "phaseAdvanced": [
+                5.7245,
+                93.1403
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "screenshots": [
+                "OH-017-Desktop.jpg",
+                "OH-017-Phone.jpg"
+              ]
+            },
+            {
+              "id": "OH-017",
+              "desktop": {
+                "visual": "PASS refinedpurpose450/84/16/20 readableinsidegeometricnegative space",
+                "screenshot": "OH-017-Desktop-final-purpose-fit.jpg"
+              },
+              "phone": {
+                "visual": "PASS preservedpurpose18/77/17/22 andadequate443x1024livebacking",
+                "screenshot": "OH-017-Phone-final-purpose-fit.jpg"
+              },
+              "sourceRevision": "5ab8e702",
+              "afterReload": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "OH-018",
+      "family": "Original compositions / Round02",
+      "title": "Field Transmission",
+      "route": "/playgrounds/original-compositions/heroes/round-02/fieldtransmission",
+      "recipe": {
+        "path": "docs/design-studies/original-heroes-round-two/native/OH-018.json",
+        "sha256": "5930ee791d549f3bcceadaee6e5c7016ecd6d45b90e9c2f3f43796a5092655ca",
+        "parts": 9,
+        "desktop": [
+          1440,
+          1000
+        ],
+        "phone": [
+          390,
+          900
+        ]
+      },
+      "credits": "HERO-004 / HERO-008 / HERO-014 / HERO-017. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+      "sourceLinks": [],
+      "intentionalDifferences": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+      "influenceIDs": [
+        "HERO-004",
+        "HERO-008",
+        "HERO-014",
+        "HERO-017"
+      ],
+      "liveSlots": [
+        {
+          "key": "full-scene",
+          "mode": "fieldtransmission",
+          "controlCount": 16,
+          "presets": {
+            "desktop": {
+              "study": "fieldtransmission",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#eae6d9",
+              "primary": "#2d3430",
+              "ink": "#171b18",
+              "accent": "#a6c34e",
+              "showPlayback": true
+            },
+            "phone": {
+              "study": "fieldtransmission",
+              "animate": true,
+              "canvasMotion": false,
+              "speed": 1,
+              "stillTime": 3,
+              "artworkScale": 1,
+              "detail": 1,
+              "motionSpan": 1,
+              "ditherPitch": 3.5,
+              "interactive": true,
+              "customColors": true,
+              "background": "#eae6d9",
+              "primary": "#2d3430",
+              "ink": "#171b18",
+              "accent": "#a6c34e",
+              "showPlayback": true
+            }
+          }
+        }
+      ],
+      "framer": {
+        "pageID": "ZOzNIr5dc",
+        "desktopID": "AFKpsVt7w",
+        "phoneID": "YLC6641Pt",
+        "editorURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ZOzNIr5dc",
+        "codeInstances": [
+          {
+            "id": "OrcP6Q4Vm",
+            "partKey": "full-scene",
+            "placement": "desktop",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "fieldtransmission",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#eae6d9",
+              "$control__primary": "#2d3430",
+              "$control__ink": "#171b18",
+              "$control__accent": "#a6c34e",
+              "$control__showPlayback": true
+            }
+          },
+          {
+            "id": "YLC6641PtOrcP6Q4Vm",
+            "original": "OrcP6Q4Vm",
+            "partKey": "full-scene",
+            "placement": "phone",
+            "component": "codeFile/q23ALcP:default",
+            "props": {
+              "$control__study": "fieldtransmission",
+              "$control__animate": true,
+              "$control__canvasMotion": false,
+              "$control__speed": 1,
+              "$control__stillTime": 3,
+              "$control__artworkScale": 1,
+              "$control__detail": 1,
+              "$control__motionSpan": 1,
+              "$control__ditherPitch": 3.5,
+              "$control__interactive": true,
+              "$control__customColors": true,
+              "$control__background": "#eae6d9",
+              "$control__primary": "#2d3430",
+              "$control__ink": "#171b18",
+              "$control__accent": "#a6c34e",
+              "$control__showPlayback": true
+            }
+          }
+        ],
+        "receipt": {
+          "artifact": "mcp/original-nine-append-output.json",
+          "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+        },
+        "appendReturned": true,
+        "finalSavedVerified": true,
+        "savedPresetRead": "passed final187 identity/preset/geometry/parent read; post-restore32newCanvasfalse verified separately",
+        "ui": {
+          "finalPostReloadVerified": true,
+          "desktopObservedPass": true,
+          "phoneObservedPass": true,
+          "evidence": [
+            {
+              "id": "OH-018",
+              "pageId": "ZOzNIr5dc",
+              "desktop": true,
+              "phone": true,
+              "phaseAdvanced": [
+                10.2457,
+                31.2589
+              ],
+              "phoneFrameDemand": [
+                443,
+                1024
+              ],
+              "pause": true,
+              "screenshots": [
+                "OH-018-Desktop.jpg",
+                "OH-018-Phone.jpg"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "codePackage": {
+    "manualOrder": [
+      "SourceHeroMacAtlas0.ts",
+      "SourceHeroMacAtlas1.ts",
+      "SourceHeroPageStudy.tsx"
+    ],
+    "files": [
+      {
+        "path": "docs/design-studies/code-components/SourceHeroMacAtlas0.ts",
+        "sha256": "ce295af7fc27efb67977518af62fafd2e3ab1d0d9f06bb5078fe37b532668412",
+        "bytes": 534016,
+        "role": "literal data module; no component instances"
+      },
+      {
+        "path": "docs/design-studies/code-components/SourceHeroMacAtlas1.ts",
+        "sha256": "714dcd86b68aa09ba544335e18f18797d6e49084a7e14d20776fef5c5f3a2682",
+        "bytes": 534016,
+        "role": "literal data module; no component instances"
+      },
+      {
+        "path": "docs/design-studies/code-components/SourceHeroPageStudy.tsx",
+        "sha256": "62f84d32bf61c7761e8b38b68c5f1ebb35ca42ad95f4e892b3f6d0628e40d8d2",
+        "bytes": 398456,
+        "role": "seven credited live source mechanisms; 21 controls"
+      },
+      {
+        "path": "docs/design-studies/code-components/OriginalHeroRoundTwo.tsx",
+        "sha256": "5ab8e702ef0f42a1f8184638bdf5ab111b519bd20a6cae4fca512c0e650a1dd4",
+        "bytes": 62250,
+        "role": "nine original mechanisms; 16 controls"
+      }
+    ],
+    "relativeImports": [
+      "./SourceHeroMacAtlas0.ts",
+      "./SourceHeroMacAtlas1.ts"
+    ],
+    "currentSourceIdentityAndSchemaReadPassed": true,
+    "currentOriginalIdentityAndSchemaReadPassed": true,
+    "historicalInitial77SourceRegistrationPassed": true,
+    "historicalInitial479OriginalRegistrationPassed": true,
+    "currentRegistrationScope": "Exact current SHA/bytes/componentID/schema read; not a claim of clean Agent write-service TypeScript diagnostics",
+    "sourceDiagnosticDiscrepancy": {
+      "status": "UPDATE_TOOL_DIAGNOSTIC_DISCREPANCY_NOT_CLEARED",
+      "cause": "Unknown; no API/runtime cause is asserted.",
+      "path": "SourceHeroPageStudy.tsx",
+      "sourceSHA256": "62f84d32bf61c7761e8b38b68c5f1ebb35ca42ad95f4e892b3f6d0628e40d8d2",
+      "sourceBytes": 398456,
+      "componentID": "codeFile/DViA0ol:default",
+      "writeDiagnostics": [
+        "Found 2 TypeScript error(s) in SourceHeroPageStudy.tsx:\n\n[ERROR] Cannot find module './SourceHeroMacAtlas0.ts' or its corresponding type declarations.\nContext:\nimport * as React from \"react\"\nimport {addPropertyControls,ControlType,RenderTarget,useIsStaticRenderer} from \"framer\"\nimport {SOURCE_HERO_MAC_ATLAS_0} from \"./SourceHeroMacAtlas0.ts\"\nimport {SOURCE_HERO_MAC_ATLAS_1} from \"./SourceHeroMacAtlas1.ts\"\n\n\n[ERROR] Cannot find module './SourceHeroMacAtlas1.ts' or its corresponding type declarations.\nContext:\nimport {addPropertyControls,ControlType,RenderTarget,useIsStaticRenderer} from \"framer\"\nimport {SOURCE_HERO_MAC_ATLAS_0} from \"./SourceHeroMacAtlas0.ts\"\nimport {SOURCE_HERO_MAC_ATLAS_1} from \"./SourceHeroMacAtlas1.ts\"\n\n// SOURCE INSPIRATION — embedding renderers for seven credited standalone openings.\n\nPlease fix them according to the system instructions."
+      ],
+      "writeReceipt": {
+        "path": "/tmp/monarchic-hero-single-pages-2026-10-31/mcp/responsive-source-update/update-tool-receipt.json",
+        "sha256": "41dd01782143fe031ffbb5011ad24a44a5163b4171df8df26416d86847cf7d91",
+        "bytes": 86101
+      },
+      "recovery": {
+        "path": "/tmp/monarchic-hero-single-pages-2026-10-31/mcp/responsive-source-update/recovery-read-output.json",
+        "sha256": "70485c6c007d39e1ba97285ac5f2ac8a58f53f22bb5cc5e4b61b59ae1601f349",
+        "bytes": 15167
+      },
+      "sameByteProbe": {
+        "status": "partial-stop-inspect-no-retry",
+        "sourceWrites": 0,
+        "sourceBytesChanged": 0,
+        "error": "AgentScriptApiError: api.files.write failed with {\"path\":\"SourceHeroMacAtlas0.ts\"}: api.files.write for SourceHeroMacAtlas0.ts matches the current source; nothing changed.",
+        "receipt": {
+          "path": "/tmp/monarchic-hero-single-pages-2026-10-31/mcp/responsive-source-update/revalidate-package-tool-receipt.json",
+          "sha256": "02a00bb0605e3da554460f0e1f72eda2b6a38a38a4cb91d57946b35cd9562583",
+          "bytes": 2347
+        }
+      },
+      "rootRuntimeEvidence": {
+        "reportedAfterFullEditorReload": true,
+        "originOwnRootAndCanvasCorner": "30%",
+        "macAtlasCells": 20,
+        "macFrames": [
+          40,
+          63
+        ],
+        "macPaths": [
+          189,
+          267
+        ],
+        "nativeCodeEditorVisibleErrors": false,
+        "F8VisibleProblem": false,
+        "images": [
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/browser/HERO-016-Desktop-rounded-after-reload.jpg",
+            "sha256": "aba95fd930ef5b8956b1473eea1e8b378edd31382f9b173b41320b554cf1a3c2",
+            "bytes": 71531
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/browser/SourceMain-native-editor-problem-check.jpg",
+            "sha256": "db1254efb96527261abde310351707f7c03bd5c706f7e0898b35c7ba0c013edd",
+            "bytes": 143736
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/browser/SourceMain-code-editor.jpg",
+            "sha256": "b19c00598ea05f6646d76f8522e07f92513eef560316da05787d40151805266a",
+            "bytes": 142711
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/browser/HERO-006-Desktop-current62-live-a.jpg",
+            "sha256": "02656f898d85d65c6ee33d99a9d51513ea8ca02d142c7d344dcdaface4219da0",
+            "bytes": 111144
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/browser/HERO-006-Desktop-current62-live-b.jpg",
+            "sha256": "f8f95e8cf5f224a9c7bda9c49333c8d4989467db16267278be88abc35d3f4d68",
+            "bytes": 122291
+          }
+        ]
+      },
+      "disposition": "Root authorized the four unexecuted brain updates after actual latest-body rendering and native editor checks. No import edits, diagnostic suppression, same-byte retry or source perturbation was made."
+    },
+    "historicalPreIndexOverrideCatalogDiscrepancy": {
+      "path": "HomepageNavigationInteractions.tsx",
+      "actual": [],
+      "expected": [
+        {
+          "id": "codeFile/do719OQ:withHomepageNavigation",
+          "displayName": "withHomepageNavigation",
+          "type": "override"
+        }
+      ],
+      "sourceSHA256": "38cbc56d5a0bb5f1124f9fe1084d99c62f04d6e241b60e5ea4648479b4b7c190",
+      "sourceBytes": 18454,
+      "sourceExact": true,
+      "bindingProof": {
+        "method": "The independently reviewed tail-four preflight compared the complete current raw ten override records to the accepted baseline using canonical exact equality before its source-only writes. No tree writes followed.",
+        "preflight": {
+          "path": "/tmp/monarchic-hero-single-pages-2026-10-31/mcp/responsive-source-update/tail-four-output.json",
+          "sha256": "b139261760d09926d4c2ce45d0add098b462fa91d174b2261fb76d78140bdb0c",
+          "bytes": 7875
+        },
+        "passed": true,
+        "verifiedExpectedRecords": [
+          {
+            "id": "A_AGBMFGy",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "ZaPMB5dn9A_AGBMFGy",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "g6gZr6RBO",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "Dgfb_pP74g6gZr6RBO",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "XLRWNo5w6",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "bEHwJs3d2XLRWNo5w6",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "pmtLe93Ft",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "x4NPov8shpmtLe93Ft",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "Ehne105R1",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          },
+          {
+            "id": "nmvv0vCT_Ehne105R1",
+            "name": "Navigation / stable behavior host",
+            "override": "codeFile/do719OQ:withHomepageNavigation",
+            "source": "HomepageNavigationInteractions.tsx"
+          }
+        ],
+        "rawRecordsScope": "These are the expected records whose exact equality was verified; not relabeled as a new raw capture."
+      },
+      "scope": "No new source registration or schema change; strict raw mismatch is preserved."
+    },
+    "finalSourceIdentityAndSchemaReadPassed": true,
+    "finalCatalogReflection": {
+      "all22SourceEntriesExact": true,
+      "navigationOverrideExact": true,
+      "acceptedSourceReflection": [],
+      "scope": "Final raw exports are exact; the earlier empty Nav catalog and its unused final fallback remain historical."
+    },
+    "sourceComponentID": "codeFile/DViA0ol:default",
+    "originalComponentID": "codeFile/q23ALcP:default",
+    "automaticSync": false,
+    "sourceOwnAsyncFetch": false
+  },
+  "evidence": {
+    "appendReceipts": [
+      {
+        "artifact": "mcp/HERO-018-append-output.json",
+        "sha256": "6fb756b064c7daa72a4b628fac1e41ee4274ea45774c1af3a7712bc44561a8ca"
+      },
+      {
+        "artifact": "mcp/HERO-005-append-output.json",
+        "sha256": "251f632aee4cdb2208aad3317ff8cfae7559dc3b34f8840de70e8b52ec3e8c4c"
+      },
+      {
+        "artifact": "mcp/native-003-010-017-append-output.json",
+        "sha256": "ef51d4a7fe446f51c5eeab6612059d9f1bcbbdb66107200c6e0a9436330e7eff"
+      },
+      {
+        "artifact": "mcp/photo-six-append-output.json",
+        "sha256": "74d1d8e0a302f72a20ccb8f920d8b093372eb9248d83b99e79215fd537e63854"
+      },
+      {
+        "artifact": "mcp/original-nine-append-output.json",
+        "sha256": "83d47db5a32f3aaf6b1900c4e91875471d0bdc332c841b21675c985d039d40e0"
+      },
+      {
+        "artifact": "mcp/live-seven-append-output.json",
+        "sha256": "fccc3e9b1abdaa90fb8715e62cc7c26d76cfcafa3734a57d5012cf840888f45d"
+      }
+    ],
+    "consolidatedMap": {
+      "artifact": "mcp/standalone-27-node-map-current.json",
+      "sha256": "c4481bb2895e51ecd84803b00e30699b45e61676e53dcb834cd33a0704586bf1"
+    },
+    "historicalInitialMap": {
+      "artifact": "mcp/standalone-27-node-map.json",
+      "sha256": "820d8d17ad81a20f4027ab7a5ea192767a9f52bc8f74cc4ff7deb3832aa75f48"
+    },
+    "currentSourceRegistration": {
+      "artifact": "mcp/current-source-registrations.json",
+      "sha256": "9cbf076b0b3bfc7d36303100c440354b71774945bac7fcd467639c8708a723fe"
+    },
+    "nativeAuthoringPacket": {
+      "artifact": "authoring/final-native-authoring-packet.json",
+      "sha256": "3ee36d3d89268d4d31bafdf13c822d5a15f8269d2913fd984d76d27f48997243"
+    },
+    "unsupportedInstanceAddendum": {
+      "artifact": "authoring/unsupported-instance-attrs-addendum.json",
+      "sha256": "82fa70782ca36ccead8cb3841fe98c524621ef1bc2ae82eb0fc8d46d03ac6892"
+    },
+    "currentBrowser": {
+      "artifact": "browser/current-checks.json",
+      "sha256": "d893d63f4ec4badebecfcb1a267c7ad18fa207d34aa10483eae6e4b6c6ceabf1"
+    },
+    "completedOpeningUI": {
+      "artifact": "browser/final-ui-proof.json",
+      "sha256": "5bae547ce6db7c0ce3e693c22853b9d797451c81642988505de9eeae548555bc"
+    },
+    "completedOpeningAndIndexUI": {
+      "artifact": "browser/final-combined-ui-proof.json",
+      "sha256": "4ad19e7b28ee11d1d97fea19b8038606cd1ec7cc02efd85b6e08c7385722f813"
+    },
+    "sourceRegistration": {
+      "artifact": "mcp/source-package-registration/schema-read-output.json",
+      "sha256": "9b1e74b356ea2ad65a62a03da358495024a2ca12bab5f6063e8c7e6c350bb0a5"
+    },
+    "originalRegistration": {
+      "artifact": "mcp/original-registration/schema-read-output.json",
+      "sha256": "9ce159b1f4a5b86cb8153c16ff7d8c90fe1b3231a93250cd62f0fc2a635afebb"
+    },
+    "localPackage": {
+      "artifact": "validation/source-package/receipt.json",
+      "sha256": "4e98a358004b6f5fe21b677236078667d521bba80656f52b409429c589d722c6"
+    },
+    "localOriginals": {
+      "artifact": "original-round-02/source/component-handoff.json",
+      "sha256": "e8990b4d5f350bc4bb1fbe49fc8f5c09753fe6c50ed0fee88bce1df5d0c7e1a0"
+    },
+    "rootNix": {
+      "artifact": "validation/responsive-display-quality/root-nix-five-checks.json",
+      "sha256": "b8dcb3bb73fcc5f96300b00d98b421dbb2bdf3493b6a8aceddfeba89731a5185"
+    },
+    "historicalPackageNix": {
+      "artifact": "validation/root-package-checks.json",
+      "sha256": "dea626a84fd1b4b992e40f0d5709df3bb451e0936f0e01a732f7b8a5d21aaea7"
+    },
+    "finalInventory": {
+      "artifact": "mcp/standalone-heroes-after-raw.json",
+      "sha256": "4ab482cbb28dd264d68bcc078d44f3034a3cabf6204cf76250eef35ed354aec9"
+    },
+    "finalIndependentAuditReceipt": {
+      "artifact": "validation/final69-independent/receipt.json",
+      "sha256": "8f3df8bbc5db761ae47dbc13c254bff78f3c7a62ae1e60486660c94c62b64efb"
+    },
+    "finalUI": {
+      "artifact": "browser/final-combined-ui-proof.json",
+      "sha256": "4ad19e7b28ee11d1d97fea19b8038606cd1ec7cc02efd85b6e08c7385722f813"
+    }
+  },
+  "notes": [
+    "Source work remains credited; original layouts do not inherit foreign identities.",
+    "A returned append ID is not a saved-state or UI guarantee. Only explicit receipts are promoted into verification.",
+    "Captured clocks, film posters, source mobile adaptations, approximated motion and geometry stand-ins retain their recipe limits.",
+    "Sixteen baseline code files have only the enumerated coordinator correction; two baseline code files remain byte exact. Current SourceMain also has the explicit Origin-only CSS rule.",
+    "The exact SourceMain2307 write-service diagnostic remains recorded with unknown cause; actual runtime probes and source/schema reads are separate evidence.",
+    "All27 standalone pages, six lightweight indexes and preservation are bound to supplied final saved-state and post-reload UI evidence."
+  ]
+}
