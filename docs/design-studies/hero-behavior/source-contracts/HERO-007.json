@@ -141,5 +141,27 @@
       "Phone composition uses current public breakpoints; controlled source Phone behavior remains unobserved.",
       "Avoid duplicating timed canvas labels with old fake static labels."
     ]
+  },
+  "sourceBranding": {
+    "logo": {
+      "url": "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8ba0bebf2f21a6d102fc5_7dc3c5babcb84e9e1fccd29199ccd246_Cantor8%20Logo.svg",
+      "bytes": 16784,
+      "sha256": "9794d83a3f30c19c0e537f5f0301e24c54f4f76ca417812b786ce6b5a8ebba23",
+      "viewBox": [0, 0, 632, 101]
+    },
+    "desktopArrow": {
+      "url": "https://cdn.prod.website-files.com/69e74ca8162801f4b950053a/69e74fc05884ed1de7bac5d3_arrow.png",
+      "bytes": 295,
+      "sha256": "c8d302782922d7d25103c95e1a5401555338b493e4dfc3eace3fdd491e648521",
+      "dimensions": [26, 26]
+    },
+    "baseArrow": {
+      "url": "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8bba2ff6df15b4a373bec_arrow-diagonal.svg",
+      "bytes": 1435,
+      "sha256": "bfd558a7f83b45b004ccef303d0d759e0322b41c80b3b1d94db68b6cc7eaf1ff",
+      "viewBox": [0, 0, 14, 14]
+    },
+    "nativeAuthoring": "Preserve the genuine pixel wordmark and arrow shapes. Keep individual text, tabs, buttons and links editable, including the white active Home tab and white right-hand contact button. Use the logo's fitted aspect ratio rather than cropping it in a generic text-logo box.",
+    "limits": "Individual source assets remain credited comparison/recreation material with unverified reuse rights. The header correction does not implement the source's 620ms arrow hover choreography. Flat native nav fill approximates the source backdrop blur; Phone remains adapted."
   }
 }
