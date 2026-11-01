@@ -155,7 +155,7 @@
     {
       "key": "16-scroll",
       "scrollY": 11513,
-      "visual": "A compact flower/advice card duplicates and shrinks inside a broad dashed rectangular frame crossed by corner-to-center diagonal guides.",
+      "visual": "The existing flower/advice poster shrinks and is carried into a broad dashed rectangular field crossed by corner-to-center diagonal guides; it is the same native composition, not a duplicate or a pointer-spawned chip.",
       "screenshot": "HERO-013-16-scroll.jpg"
     },
     {
@@ -754,5 +754,29 @@
     "documentAt1280x720": 13474.102,
     "scope": "Source-derived ordinary document layout separates the early Usage card, later photo deck and fan; retains the complete sequence through the footer. First-card footer remains visible during the first handoff. Genuine source logo polygons, source photos and native type controls preserve editable parts.",
     "validation": "6 focused checks and48actualReact/Chromium checks passed in the lockedNix environment; same-width corresponding source screenshots reviewed. Actual Framer application/reload and sourceFont binding are separate required gates."
+  },
+  "closingFieldSourceTrace": {
+    "sourceEvidence": "Retained primary HTML, source stylesheet and public implementation inspected; distinct from the earlier screenshot-only causal limits.",
+    "poster": {
+      "sameNode": true,
+      "trigger": "Ordinary document scroll; pointer input is not required.",
+      "targetScale": "250 / 1440",
+      "start": "posterDocumentTop + 1429.12*u - viewportHeight/2 + .02*viewportHeight",
+      "end": "fieldDocumentTop - .45*viewportHeight",
+      "unit": "u = viewportWidth / 1440",
+      "release": "On forward progress1, release into source physics with angular velocity .008. Reverse scroll recaptures the same poster.",
+      "appearance": "Grow an opaque #222 backing and white outline; freeze poster parallax and clock during carry."
+    },
+    "pointerChips": {
+      "trigger": "Separate pointerdown on the guide field",
+      "templates": 21,
+      "exactAssetURLs": 41,
+      "maxSpawned": 30,
+      "replacement": "FIFO; carried poster is additional",
+      "noDrag": true,
+      "noAutoSpawn": true
+    },
+    "scrollbar": "Retained source CSS has no hidden-scrollbar rule. Captures show a right-hand track; document.clientWidth was not recorded. Keep source window-width geometry.",
+    "implementation": "Required follow-on work; the current saved recreation still lacks automatic poster carry and separate pointer chips. Source inspection and a native pool plan do not establish implementation or Preview."
   }
 }
