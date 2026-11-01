@@ -151,6 +151,15 @@
             export MONARCHIC_BLEIBT_MARK_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-mark
           '';
+          source-vercel-light = (mkWebsiteCheck "source-vercel-light" ''
+            export MONARCHIC_VERCEL_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-vercel-light-study
+            pnpm run check:source-vercel-light-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

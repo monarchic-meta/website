@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-009",
+  "title": "Vercel / selected dark interactive triangle light",
+  "classification": "Source inspiration / credited unpublished recreation",
+  "creator": "Vercel",
+  "source": "https://vercel.com/",
+  "gallery": "https://www.lapa.ninja/post/vercel-3/",
+  "selectedArchive": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/sources/HERO-009-selected-current-opening.png",
+    "sha256": "46015f5570cabb3b62ad800c616647043ee0f748b4a107a6e9615b8a65491d73",
+    "bytes": 204680
+  },
+  "evidence": {
+    "nativeContract": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/native-authoring.json",
+      "sha256": "02a660dfe22a177a08ea21436a0d57e61c58275d72c7439614cb1ac9a821b194",
+      "bytes": 58033
+    },
+    "currentPublicCode": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/public-chunk-inspection.json",
+      "sha256": "938345997ea6945c86e2f54e772c7d0728def89b1776404cd0583102c70e4c96",
+      "bytes": 52695
+    },
+    "currentWorker": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/public-worker-inspection.json",
+      "sha256": "273820c9fde306c6be1b431c471f6646615fdc212c8d2b76319ec515a92fbfff",
+      "bytes": 39422
+    },
+    "specificCurrentScripts": [
+      {
+        "url": "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/1ht_en0c5n9g3.js",
+        "sha256": "887ff2814d7d28275314e0fec796c7367eb800e6e8de3fbf2dfda095ec1d0991",
+        "bytes": 38064
+      },
+      {
+        "url": "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/chunks/3ur1jvez-2e16.js",
+        "sha256": "067768947d448a4888c214184577d7e7dac0fe1c26ac0ed803b2adb65e3534c6",
+        "bytes": 32496
+      }
+    ],
+    "worker": [
+      {
+        "url": "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/media/hero-webgl.worker.13-8hqwllxx-r.ts",
+        "sha256": "73cbe15ff66f1f83af2265a59428b757faafa78baa153b53688b483a0aa2f7a8",
+        "bytes": 18334
+      }
+    ]
+  },
+  "geometry": {
+    "logicalSize": [
+      576,
+      400
+    ],
+    "triangle": [
+      [
+        288,
+        128.25
+      ],
+      [
+        216,
+        254.25
+      ],
+      [
+        360,
+        254.25
+      ]
+    ],
+    "orientation": "Upright and fixed. No elapsed rotation or scroll-driven pose."
+  },
+  "implementation": {
+    "material": "Independent analytic WebGL1 strip radiance, soft left/base spill and fine monochrome grain; source-like still, not the original renderer algorithm.",
+    "brush": "Independent bounded Gaussian screen-space stroke response; at most16 active samples, absolute2.4s expiry and hardware uniform-cap fallback. Replay state participates in the real unchanged v2 cache key.",
+    "rgb": "Pointer-up inside the triangle toggles an independent RGB response. Native UI clicks and drags do not toggle.",
+    "capability": "Public native HOC/store bridge. Source-supported current50ms initial activation/immediate switching,60px row expansion with centered−30px panel shift,200ms layout and500/300ms detail fades. Selected archived typography/base positions remain native adaptations.",
+    "secondary": "Optional separate current-source secondary phrase hold2600ms/scramble700ms. Never replaces the selected primary Agentic Infrastructure title.",
+    "resources": "Exact existing v2 coordinator/hook; editor motion off, Canvas12fps/1MP opt-in, Preview30fps/1MP, serial2MPstill; max2contexts including init. No textures/models/downloads or original source behavior JS."
+  },
+  "limitations": [
+    "No controlled source pointer/hover/phone session was available; current public code supports these categories, not exact selected-archive input trajectories.",
+    "Capability activeClick-to-light mapping is unknown; capability selection deliberately does not change light material.",
+    "Independent lighting/brush/RGB response and secondary scramble appearance are approximations; current and selected archived revisions are distinguished.",
+    "Native selected title/CTA/customer marks/Notion handoff are outside this actor and require their own native saved-page verification.",
+    "No Framer save/typecheck/runtime/published claim is supplied by local tests."
+  ],
+  "reuseLicense": "Source/site trademarks remain credited; no third-party website JavaScript, bitmap or proprietary geometry is embedded in this procedural actor."
+}
