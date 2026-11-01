@@ -373,7 +373,7 @@
   },
   "observed": "Only playing film, first Escape effect, Expand/Minimize and wheel-after-minimize were actually observed in prior browser captures. The remaining durations/thresholds below are inspected source-code facts, not new browser interaction tests.",
   "codeInspectedFacts": {
-    "evidence": "Only playing film, first Escape effect, Expand/Minimize and wheel-after-minimize were actually observed in prior browser captures. The remaining durations/thresholds below are inspected source-code facts, not new browser interaction tests.",
+    "evidence": "The original public carousel and all six normal-view Escape appearances have now been captured in an isolated local browser. Earlier incomplete hold probes remain explicitly invalid; only committed-carousel-input verifies real carousel interaction.",
     "defaultProject": 0,
     "selection": {
       "trigger": "Click a source project row; ignore clicks on its actual internal links.",
@@ -417,7 +417,7 @@
         "pointerleave"
       ],
       "enabledAtWidth": 992,
-      "action": "Toggle the source immersive project carousel. Its exact perspective, drag response and transition footprint have not been visually audited; do not call a generic tile row an exact recreation."
+      "action": "The actual named hold control enters a committed perspective carousel. Blank canvas/index holds do not. Source FOV50, Z8,4×2.25 tiles,0.1gap,0.012pressed sensitivity; held drag,release,wheel and second hold exit observed."
     },
     "escape": {
       "desktopMinimumWidth": 768,
@@ -432,7 +432,7 @@
         "infrared",
         "bug-lenses"
       ],
-      "pattern": "First press enables the selected effect; next press disables it and advances the effect index. Only first grain/noise effect was visually observed."
+      "pattern": "First press enables the selected effect; next press disables it and advances its index. All six normal-view appearances were observed; most recreated non-noise effects still differ."
     }
   },
   "resourceContract": {
@@ -467,8 +467,8 @@
   },
   "intentionalDifferences": [
     "Canvas2D center-cover composition replaces native source video/CSS composition. Source film raster pixels remain actual media; fitted easing approximates inspected durations.",
-    "Immersive hold toggles an independently fitted0.70scale/−2degree single film plane. Full source carousel perspective, neighbors, drag/wheel dynamics and exact footprint remain unverified and are not reproduced.",
-    "Only the first grain/noise Escape family was visually observed. The other five appearances are independent approximations of inspected source categories.",
+    "On bindings using SourcePortfolioCarousel, an independent CSS camera-plane carousel replaces the old70%/-2degree snapshot, includes genuine neighboring posters, clamped pressed drag, wheel, side-card selection and captions. Curved velocity mesh and exact inertia remain fitted; historical unbound placements keep their prior rendering.",
+    "All six source Escape appearances have now been visually observed. Five non-noise recreated effects remain independent approximations pending refinement.",
     "Phone swipe thresholds are code-inspected facts, not a controlled source Phone comparison. Responsive utility layout still needs actual Framer/native/source QA.",
     "The last requestVideoFrameCallback timestamp can lag an immediately paused draw by a source-frame interval; source-fidelity tests keep zero color tolerance and test only the annotated and nearest±one genuine decoded frame. Exact source-frame offset is reported rather than hidden.",
     "Default Canvas selected-film loop differs from the full Preview project cycle, protecting editor native selection and still controls.",
@@ -508,5 +508,25 @@
     ],
     "proof": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/film-controller/amendment/receipt.json",
     "unchanged": "All remaining source bytes reconstruct the exact parent after reversing the three declared replacements. Renderer, video player, media gate, video loader, control store, shared coordinator and public controls are unchanged."
+  },
+  "carouselRevision": {
+    "helper": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "sha256": "2bb49632e172df0c647753ed955572f541baf27f854a06fa6f7058000e29dd4e",
+      "bytes": 17951
+    },
+    "film": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "sha256": "8976b38dd490e8bae7de5c58aeba633f0cf46ae8006dc849cfdba2cb6dfda0d2",
+      "bytes": 84410
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/receipt.json",
+      "sha256": "9525b56252686a39899fb82b611a8a180cc4ee59f521b2419c78ec1f38249dc7",
+      "bytes": 3570
+    },
+    "framerInstalled": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
