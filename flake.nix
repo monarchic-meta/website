@@ -140,7 +140,7 @@
             pnpm run check:type-face-sequence
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
-              fontDirectories = [ pkgs.dejavu_fonts ];
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
           native-hero-behaviors = mkWebsiteCheck "native-hero-behaviors" ''
