@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "sourceCreator": "Liubomyr Ulytskyi / Unbelievably Crap",
+  "reuseScope": "Explicitly requested, credited, unpublished source recreation; no asset license verified or rights asserted.",
+  "sourceWebsiteBehaviorJSReused": false,
+  "meshes": [
+    {
+      "name": "figure",
+      "sourceURL": "https://www.unbelievablycrap.com/assets/about/figure.js",
+      "sourceSHA256": "e2e4be5d4b6eda14ced52dfa84da6f20e8abece99da82cda21b23e4d486ffcd3",
+      "rawSHA256": "ed6f499ec65b1428fd4609aac8d8f990e9c46fbbc52f969b57bd5b573701b6b3",
+      "vertices": 29807,
+      "triangles": 62174,
+      "indices": 186522,
+      "bounds": {
+        "min": [
+          -0.15761828422546387,
+          0.000015259021893143654,
+          -0.127608060836792
+        ],
+        "max": [
+          0.15761828422546387,
+          0.9998626708984375,
+          0.12747566401958466
+        ]
+      },
+      "adaptation": {
+        "method": "Pinned gltfpack QEM25 source-body simplification; original source shape, no replacement body.",
+        "manifestSHA256": "333f2e5efebd23ffaf61ff14a3a2e95958bf2fddeb8fbfd2a4804cb59f94d8e4",
+        "vertices": 29807,
+        "triangles": 62174,
+        "quality": "Measured orthographic 2D silhouette comparison at 350, 420 and 675px body height across nine views; all maximum 8-neighbor boundary distances are at most 1px. This is not a certified 3D surface bound or an original-rendering pixel match.",
+        "comparison": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-014/comparison/result.json",
+          "sha256": "9b1150ba26fd7be342bf625fed3189a07fb024b09d72c32e1aa010a328520604"
+        },
+        "additionalPositionQuantizationMaxError": 0.000007628114344626624,
+        "tool": "/nix/store/hbf5snhv7pks857k25lmawzlprfcizm5-meshoptimizer-1.1.1-bin/bin/gltfpack",
+        "toolSHA256": "a48a62c4b1664f1c3f58f3084a136e2f50fc1230903f032fd094be8854c44e9c",
+        "projectLockSHA256": "afeafa42195424b694a12aed92d80ef083cbeadc55d773ca7643acdca8f160b8",
+        "arguments": [
+          "-si",
+          "0.25",
+          "-se",
+          "0.001",
+          "-noq",
+          "-kv"
+        ]
+      },
+      "topology": "Reviewed QEM source-body topology, with 16-bit positions and 8-bit normals; subsequent index-delta coding and DEFLATE are reversible."
+    },
+    {
+      "name": "head",
+      "sourceURL": "https://www.unbelievablycrap.com/assets/about/head.js",
+      "sourceSHA256": "e78779acb42fedafc26d8b2555370037012ad9ce0ab58def7ae145164380cf26",
+      "rawSHA256": "e28ab611492de85cd509c444b58763f3b93ba7b6ab1cb3e722292b19017b047b",
+      "vertices": 17335,
+      "triangles": 35000,
+      "indices": 105000,
+      "bounds": {
+        "min": [
+          -0.5744737200301977,
+          0,
+          -0.40878053252435287
+        ],
+        "max": [
+          0.5744737200301977,
+          1,
+          0.40878053252435287
+        ]
+      },
+      "adaptation": null,
+      "topology": "All original source positions, normal bytes and triangle indices retained. Only reversible index-delta coding and DEFLATE applied."
+    }
+  ],
+  "codec": "Prepared planar positions/normals and bounded zigzag triangle-index deltas compressed with raw DEFLATE. Body QEM adaptation is recorded separately.",
+  "rawBytes": 819275,
+  "rawSHA256": "04a2e6498455300998aff0b981294411296844b7a3d5a4f47421264e2d467947",
+  "packedBytes": 701231,
+  "packedSHA256": "80572711c6c1f998c760efee7c788c657702cfda3ae800b14b54f4fa6fcfa7a4",
+  "parts": [
+    {
+      "path": "SourceHeroJourneyData0.ts",
+      "exportName": "SOURCE_HERO_JOURNEY_DATA_0",
+      "sha256": "f39d41e1061233cebad4e5949bd86a562295225cf47b36e68756bcf9f9c35fbd",
+      "bytes": 500165
+    },
+    {
+      "path": "SourceHeroJourneyData1.ts",
+      "exportName": "SOURCE_HERO_JOURNEY_DATA_1",
+      "sha256": "53160dbbf00a62ce5b029d223a9c76f049e2ae068249b4093df72a6e4806b1f3",
+      "bytes": 435141
+    }
+  ]
+}
