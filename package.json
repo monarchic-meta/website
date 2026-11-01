@@ -86,6 +86,7 @@
     "check:source-macmoss-browser": "node scripts/check-source-macmoss-browser.mjs",
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
     "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs",
+    "check:source-cantor-native-behaviors": "node scripts/check-source-cantor-native-behaviors.mjs",
     "check:source-native-tap": "node scripts/check-source-native-tap.mjs",
     "check:source-montreal-behaviors": "node scripts/check-source-montreal-behaviors.mjs",
     "check:source-portfolio-film-study": "node scripts/check-source-portfolio-film-study.mjs",

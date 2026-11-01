@@ -191,6 +191,10 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-cantor-native-behaviors = mkWebsiteCheck "source-cantor-native-behaviors" ''
+            export MONARCHIC_CANTOR_NATIVE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-cantor-native-behaviors
+          '';
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio
