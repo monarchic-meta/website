@@ -234,6 +234,29 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          hero-behavior = (mkWebsiteCheck "hero-behavior" ''
+            export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
+            export MONARCHIC_MECHA_EVIDENCE_DIR="$out/evidence/mecha"
+            export MONARCHIC_KASPAR_EVIDENCE_DIR="$out/evidence/kaspar"
+            pnpm run check:source-hero-journey-study
+            pnpm run check:source-hero-journey-browser
+            pnpm run check:mecha-scroll-mark
+            pnpm run check:mecha-scroll-mark-browser
+            pnpm run check:source-kaspar-ascii-study
+            pnpm run check:source-kaspar-ascii-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
+          hero-behavior-integration = (mkWebsiteCheck "hero-behavior-integration" ''
+            export MONARCHIC_BEHAVIOR_INTEGRATION_DIR="$out/evidence"
+            pnpm run check:hero-behavior-integration
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
