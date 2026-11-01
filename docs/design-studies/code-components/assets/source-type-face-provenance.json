@@ -122,7 +122,7 @@
         "Frame271/9.0333s begins a new lower-neck entry before the9.6s loop boundary."
       ],
       "fittedMasks": "Two observed states (frames36/1.2s and252/8.4s) supply coarse 24-height×24-arc occupancy fits. Independent per-cell admission/erase deadlines connect these states; a short initial arc write-on preserves lower-neck re-entry. Continuous original trajectories are not recovered.",
-      "unchangedControls": "13 property controls; no pointer or invented scroll story. Loop duration scales the selected9.6s phase.",
+      "unchangedControls": "12 property controls; no pointer or invented scroll story. Loop duration scales the selected9.6s phase.",
       "coarseAdmissionMap": {
         "sha256": "84d2512e43b82b4c8aa0948ec057c961765f162af34816ae4de9418f9167d5bc",
         "bytes": 2304,
@@ -165,7 +165,14 @@
   "currentSource": {
     "path": "docs/design-studies/code-components/TypeFaceSequence.tsx",
     "sha256": "77eec9039cfbb58512ca136a681c31df3460a9b8aca2e1200ec66faf4d939535",
-    "bytes": 242982
+    "bytes": 242982,
+    "publicJavaScriptExports": [
+      "TypeFaceSequence default component",
+      "typeFaceSequenceAt helper"
+    ],
+    "publicFramerComponentRows": 1,
+    "publicPropertyControls": 12,
+    "additionalStyleProp": true
   },
   "validation": {
     "status": "PASS: focused locked Nix source/strict/browser/real-pixel and HMR regressions; actual Framer save/reload paint remains pending.",
