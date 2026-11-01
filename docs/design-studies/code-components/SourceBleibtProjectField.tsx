@@ -227,19 +227,19 @@ export function withBleibtWorkHeading(Component: ComponentType<LayerProps>): Com
             return () => { window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule); if (frame) window.cancelAnimationFrame(frame) }
         }, [frozen])
         return <WorkTerminalContext.Provider value={!frozen && active && terminal}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; mergeRef(ref, node) }} data-source-work-heading-width={width} data-source-work-terminal={!frozen && active && terminal}
-            style={frozen || !active ? props.style : { ...props.style, position: "sticky", top: "50vh", width, marginLeft: "auto", marginRight: "auto", left: "auto", right: "auto", translate: "0 -50%", zIndex: 10 } as React.CSSProperties & { translate?: string }} /></WorkTerminalContext.Provider>
+            style={frozen || !active ? { ...props.style, pointerEvents: "none" } : { ...props.style, position: "sticky", top: "50vh", width, marginLeft: "auto", marginRight: "auto", left: "auto", right: "auto", translate: "0 -50%", zIndex: 2, pointerEvents: "none" } as React.CSSProperties & { translate?: string }} /></WorkTerminalContext.Provider>
     })
 }
 
 export function withBleibtWorkLabel(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const terminal = React.useContext(WorkTerminalContext)
-        return <Component {...props} ref={ref} style={{ ...props.style, opacity: terminal ? 0 : 1, visibility: terminal ? "hidden" : "visible" }} />
+        return <Component {...props} ref={ref} style={{ ...props.style, opacity: terminal ? 0 : 1, visibility: terminal ? "hidden" : "visible", pointerEvents: "none" }} />
     })
 }
 export function withBleibtAllWorks(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const terminal = React.useContext(WorkTerminalContext)
-        return <Component {...props} ref={ref} style={{ ...props.style, opacity: terminal ? 1 : 0, visibility: terminal ? "visible" : "hidden" }} />
+        return <Component {...props} ref={ref} style={{ ...props.style, opacity: terminal ? 1 : 0, visibility: terminal ? "visible" : "hidden", pointerEvents: terminal ? "auto" : "none" }} />
     })
 }
