@@ -1,5 +1,11 @@
 # Hero sequence and interaction audit
 
+The owner's 2026-11-01 correction makes the [original websites and recorded
+source works](../design-studies/hero-behavior/original-source-policy.md) the
+recreation targets. Earlier gallery-revision observations below remain
+historical evidence. Reassess the current originals before using an older
+gallery appearance as an implementation target.
+
 **In progress — 2026-11-01.** All eighteen owner-selected references remain in
 the [complete source list](heroes.md#complete-owner-selected-list). The target is
 their complete opening experience: its meaningful states, interactions and

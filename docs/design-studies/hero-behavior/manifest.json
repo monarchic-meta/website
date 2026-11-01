@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "status": "BASELINE_AUTHORING_THROUGH280_AND_FROZEN_NATIVE_PAINT_THROUGH282_ORIGINAL_SITE_REAUDIT_STARTED",
+  "date": "2026-11-01",
+  "counts": {
+    "references": 18,
+    "pages": 87,
+    "codePlacements": 209,
+    "sourceFiles": 47,
+    "nativeDefinitions": 16
+  },
+  "sourceFidelityApproved": false,
+  "currentOriginalSiteFidelityVerified": false,
+  "framerProject": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt",
+  "sourcePolicy": {
+    "path": "docs/design-studies/hero-behavior/original-source-policy.md",
+    "bytes": 2336,
+    "sha256": "43b020eebb60b3f134318fd9d7074868b7b62f928da69d4264697a26b8c2b427"
+  },
+  "ownerEditedSourceList": {
+    "repositoryPath": "docs/design-inspiration/heroes.md",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/owner-source-list.md",
+    "bytes": 37212,
+    "sha256": "f40959c4865b73865bbca2372dc4a44afdd91567ea7156109779f36c2c4f8900"
+  },
+  "immutableDocumentSnapshots": [
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/README.md",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/README.md",
+      "bytes": 10032,
+      "sha256": "af40fb2e966661ae6cc1eb1715db72e4780f9f821a5bf7e14c5c200ac431e33f"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/handoff.md",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/handoff.md",
+      "bytes": 8756,
+      "sha256": "51124f69355fc1044d6b6f921089e50c72638dbf27cba463acd5d25ecbd33d52"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/coverage.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/coverage.json",
+      "bytes": 39311,
+      "sha256": "dae0e24b6a981820560b320f55bcb16b0e05367e192906c691cdad37a7959f96"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/original-source-policy.md",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/original-source-policy.md",
+      "bytes": 2336,
+      "sha256": "43b020eebb60b3f134318fd9d7074868b7b62f928da69d4264697a26b8c2b427"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/index.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/index.json",
+      "bytes": 3890,
+      "sha256": "8624042dcd42de7d5dd58edc76d324678e9a03b520d3d0eb30e8661a324648af"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-001.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-001.json",
+      "bytes": 1985,
+      "sha256": "d49a5544196afee4a41a0a5b2f596be859ca74982abf1aec503c05d698a746bd"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-002.json",
+      "bytes": 71226,
+      "sha256": "4a944941c3b0f8839334834733f0e87262cf5b6dde88fc573df7fac4a6607281"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-003.json",
+      "bytes": 13330,
+      "sha256": "f89b9e35caf8201aea81be5d9e6d3e6a962d8a338d2f2752cca3e529d3d355f7"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-004.json",
+      "bytes": 10162,
+      "sha256": "b73ac0cb21878f746e3d0356349af46c833559be4a2685fe1d1ed8b52a249274"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-005.json",
+      "bytes": 9328,
+      "sha256": "ad62ae423fbbab2c7a19dccdb9ba066e35e3cb671de0ba2033950cb25e30d618"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-006.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-006.json",
+      "bytes": 5114,
+      "sha256": "5a59c0feeb0036e20e1d2738f0e703d895bfc0f758b8d75060d950cf0e719bef"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-007.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-007.json",
+      "bytes": 13058,
+      "sha256": "1a55e70b22038f9bdf4bb133c86719e2174b0bd94c01c61bf742adb3eec497b4"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-008.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-008.json",
+      "bytes": 17921,
+      "sha256": "c5cb629306a168f0def6f97614dee0bef564334456b361310347869c775b63fc"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-009.json",
+      "bytes": 3305,
+      "sha256": "0193b3db5d8d71a0799055096132305b43bafc0b12a24a92323cfb57a59c38d9"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-010.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-010.json",
+      "bytes": 18961,
+      "sha256": "fadb9a627ee9b2868c7d82cd92cb2ab9c1a0c2c2297b1294ace01ad26f7ce1ec"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-011.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-011.json",
+      "bytes": 3825,
+      "sha256": "aeb46b961894773080934d0a7db5675962bf9956e8d84586bd45cb6b8b34dd39"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-012.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-012.json",
+      "bytes": 4316,
+      "sha256": "6884dd901ab5c3980374074e26b505bca92858f9a32a4e665a433d07aa304905"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-013.json",
+      "bytes": 39098,
+      "sha256": "e4e8b048d800cc3f74d2c663d9040fe8776e4bac5e305dc4e6fa888184f9530d"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-014.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-014.json",
+      "bytes": 2159,
+      "sha256": "c3bd61957124b15fdc7428a6b7422be54f276a2c5d9106e849ec7397687fa007"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-015.json",
+      "bytes": 10373,
+      "sha256": "a00aa37c62d36cba09268fd0ca49bad07f39a3663fed65c561db70991ad9dce5"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-016.json",
+      "bytes": 3161,
+      "sha256": "b37475b308de233e7f091192a0f944b78f5def17d32273990d0dbbba3b7a2452"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-017.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-017.json",
+      "bytes": 14216,
+      "sha256": "1617652465ee3ed1b9fb21e5bb9813f969122f3e87f61fd5551699f4b6d9a905"
+    },
+    {
+      "repositoryPath": "docs/design-studies/hero-behavior/source-contracts/HERO-018.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/docs/source-contracts/HERO-018.json",
+      "bytes": 6405,
+      "sha256": "b983f37d6dd51ad9a20cd64c4e532583bb6e4bbdf24eebf7d6c11bdd91163f1d"
+    }
+  ],
+  "immutableAuthoringSources": [
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceAjedrezSequence.tsx",
+      "bytes": 55156,
+      "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
+    },
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceCantorNativeBehaviors.tsx",
+      "bytes": 7703,
+      "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+    },
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceTypeProximity.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceTypeProximity.tsx",
+      "bytes": 18153,
+      "sha256": "f49abec78adf527dbf69e0244b8e6dd13f4a46b01a051288be86d9f9bd11f11f"
+    },
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceFormatDetails.tsx",
+      "bytes": 96336,
+      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f"
+    }
+  ],
+  "canonicalMap": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/behavior-pages-node-map.json",
+    "bytes": 639432,
+    "sha256": "a4997eb1e300d80a304d2c9eb6a3c9c0d289630e7488ba90ddb620286eab1180"
+  },
+  "finalNativeModel": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/final-project-preimages-after280.json",
+    "bytes": 307667,
+    "sha256": "10300028d6d2a17a7396c8ad24fda96004d749ac488defa9f030a643255ee5c3"
+  },
+  "authoringReceipts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/manifest-final-through282.json",
+    "bytes": 16806,
+    "sha256": "6291f185ef0abd226f14e9986c09305c1ec0af35014200c2daa5607a00379654"
+  },
+  "earlierAuthoringReceipts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/saved-native-authoring-273-277/manifest-through277.json",
+    "bytes": 23017,
+    "sha256": "286f06699a2d071c57ebe327130a0801d4c482d21947a02f97ceeca7d9ce7874"
+  },
+  "nativeFrozenImages": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/images/HERO002-native-phase36-desktop-static.jpg",
+      "bytes": 27681,
+      "sha256": "2e1c58190d9ab30982417ece94a609fe372bc51858a42aba55b471d782dce8ed"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/images/HERO002-native-phase36-phone-static.jpg",
+      "bytes": 21832,
+      "sha256": "22c705221574b0f364fd307e3820338a5a025ae3b27ebe5e49ebd9cd41bf1f4f"
+    }
+  ],
+  "actualNewAnimationOrReloadVerified": false,
+  "browserBoundary": "Connected desktop/IAB remains off after wrong-chat routing. Direct MCP and isolated public-source headless audits are separate.",
+  "next": "Use the original websites/source works in the owner-edited list, reassess current originals, then build their complete source-specific hero behavior. Earlier gallery-led work is retained as comparison; inventories and local tests do not establish full source fidelity."
+}

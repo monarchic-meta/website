@@ -1,6 +1,7 @@
 # Source hero recreations
 
-Recreate the selected source closely: composition, artwork, typography, scale,
+Use the owner’s [original-site source policy](original-source-policy.md).
+Recreate the original source closely: composition, artwork, typography, scale,
 materials, interaction and the complete sequence into following content. Compare
 corresponding states directly. A working animation, first-fold resemblance or
 shared visual template does not establish source fidelity.
@@ -17,6 +18,10 @@ comparison material. Their sealed manifests describe that earlier round. Local
 code tests, saved editor readbacks, actual Preview behavior and source similarity
 are separate checks; none substitutes for the others.
 
+The [current handoff](handoff.md) links all eighteen runnable pages and separates
+actual Preview observations from later MCP authoring. It records the remaining
+source-fidelity gaps and the connected-browser routing boundary.
+
 ## Authoring components
 
 Native frames, text, shapes and individual source-media apertures remain editable.
@@ -26,14 +31,14 @@ No automatic synchronization with the production Astro/Svelte site is introduced
 | Reference | Code | Source characteristic and limits |
 | --- | --- | --- |
 | HERO-001 / Type Face | [TypeFaceSequence](../code-components/TypeFaceSequence.tsx) | Complete 9.6-second assembly, turn and dispersal; credited substitute head, writing and font; fitted timing |
-| HERO-002 / Ajedrez | [SourceAjedrezSequence](../code-components/SourceAjedrezSequence.tsx) | All 37 native scene groups across the 52.314558-second film; photographic motion and audio remain distinct gaps |
+| HERO-002 / Ajedrez | [SourceAjedrezSequence](../code-components/SourceAjedrezSequence.tsx) | 37 native scene groups across the 52.314558-second film, one genuine moving photographic aperture and twelve sampled closing word layouts; independent wording, fitted trajectories, other held photographs and omitted audio remain explicit |
 | HERO-004 / Artemii Lebedev | [SourcePortfolioFilmStudy](../code-components/SourcePortfolioFilmStudy.tsx), [UtilityInk](../code-components/SourcePortfolioUtilityInk.tsx) | Genuine project films, source-supported selection/transition timing, transparent native progress rows and clipped duplicate ink; native case links preserve browser keyboard behavior; immersive layout and later effects are fitted |
 | HERO-005 / Maximilian Kaspar | [SourceKasparASCIIStudy](../code-components/SourceKasparASCIIStudy.tsx) | Actual botanical mesh, pale ASCII reveal and rotation; one selected mesh and an independently adapted Phone layout |
 | HERO-006 / Mac Moss | [SourceMacMossPortfolio](../code-components/SourceMacMossPortfolio.tsx) | Four-photo manual sequence and clock beside the retained 20-cell atlas; source timezone unresolved |
-| HERO-007 / Cantor8 | [SourceCantorInstrument](../code-components/SourceCantorInstrument.tsx) | Source-informed Canvas2D filaments, local spring response and timed labels; independent seeds/integration and Phone adaptation |
+| HERO-007 / Cantor8 | [SourceCantorInstrument](../code-components/SourceCantorInstrument.tsx), [native hover](../code-components/SourceCantorNativeBehaviors.tsx) | Source-informed Canvas2D filaments, spring response and timed labels, plus native diagonal arrow transitions and navigation blur; independent seeds/integration and Phone adaptation |
 | HERO-008 / PP Neue Montreal | [Proximity](../code-components/SourceTypeProximity.tsx), [section behaviors](../code-components/SourceMontrealBehaviors.tsx), [glyph flow](../code-components/SourceMontrealGlyphFlow.tsx), [motion](../code-components/SourceMontrealMotion.tsx), [accents](../code-components/SourceMontrealAccents.tsx) | Actual source fonts, editable proximity letters, postcard flips/tilt, attraction panels, eighteen weight states, orbiting printed posters, scroll-driven axes, pinned glyphs, character wave and cubic punctuation morph; source films remain separate apertures |
 | HERO-009 / Vercel | [SourceVercelLightStudy](../code-components/SourceVercelLightStudy.tsx) | Upright triangle, spill, grain and native capability states; independent material fit and unknown capability-to-light mapping |
-| HERO-013 / FORMAT | [SourceHeroNativeBehaviors](../code-components/SourceHeroNativeBehaviors.tsx), [SourceFormatDetails](../code-components/SourceFormatDetails.tsx) | Source-derived document geometry, separate early and late cards, native fan, clocks, word reel, windows, gauge and poster sequence; exact source logo geometry and individual source photographs; interpolation and Phone remain fitted |
+| HERO-013 / FORMAT | [SourceHeroNativeBehaviors](../code-components/SourceHeroNativeBehaviors.tsx), [SourceFormatDetails](../code-components/SourceFormatDetails.tsx) | Source-derived document geometry, fan, clocks, word reel, windows, gauge, same-poster carry and thirty native field-slot families; genuine source artwork; interpolation and Phone remain fitted, and full-pool Preview verification is pending |
 | HERO-014 / Unbelievably Crap | [SourceHeroJourneyStudy](../code-components/SourceHeroJourneyStudy.tsx) | Actual figure and head through reversible virtual scenes; fitted camera/input curve and substitute biography |
 | HERO-015 / MECHA | [MechaScrollMark](../code-components/MechaScrollMark.tsx) | Actual M geometry, scroll poses and exit; native index/rail bindings use SourceHeroNativeBehaviors |
 | HERO-017 / Bleibtgleich | [SourceBleibtMark](../code-components/SourceBleibtMark.tsx), [OpeningField](../code-components/SourceBleibtOpeningField.tsx), [ProjectField](../code-components/SourceBleibtProjectField.tsx) | Exact final source mark, actual source project images, pointer reveal and native image belt; independent CPU fluid and CSS3D replace source rendering |
@@ -59,7 +64,9 @@ native-like adapter that deliberately drops `onClick`. Verify the actual pointer
 and keyboard controls in Framer Preview after a reload. Decorative transparent
 layers must not intercept those controls.
 
-Keep native scene groups mounted at opacity zero when an override reveals them.
+Keep inactive native scene groups mounted at opacity zero when an override reveals them.
+Preserve explicit still-poster exceptions, including Ajedrez’s authored Title
+wrappers at opacity one.
 Check the actual authored Phone positions and visibility: inherited absolute
 coordinates do not become ordinary flow automatically. The earlier FORMAT
 [Desktop recipe](native/HERO-013.json) and [Phone adaptation](native/HERO-013-phone.json)
@@ -95,6 +102,9 @@ nix build --no-link -L .#checks.x86_64-linux.native-hero-behaviors
 nix build --no-link -L .#checks.x86_64-linux.source-native-tap
 nix build --no-link -L .#checks.x86_64-linux.hero-behavior-integration
 nix build --no-link -L .#checks.x86_64-linux.source-format-pool
+nix build --no-link -L .#checks.x86_64-linux.source-ajedrez
+nix build --no-link -L .#checks.x86_64-linux.source-cantor-native-behaviors
+nix build --no-link -L .#checks.x86_64-linux.source-type-proximity
 ```
 
 The additive mixed check preserves all sixty legacy placements in each tested

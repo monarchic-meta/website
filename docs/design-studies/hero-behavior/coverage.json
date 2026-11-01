@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 4,
+  "status": "BASELINE_THROUGH_MCP280_ORIGINAL_SITE_REAUDIT_IN_PROGRESS",
+  "snapshotAt": "2026-11-01T19:51:46.695Z",
+  "classification": "All 18 remain Source inspiration; none is relabeled Original composition.",
+  "counts": {
+    "references": 18,
+    "pages": 87,
+    "codePlacements": 209,
+    "sourceFiles": 47,
+    "nativeDefinitions": 16
+  },
+  "sourceFidelityApproved": false,
+  "browserAutomation": "OFF after the owner reported tabs opening in another focused chat. These refinements use direct Framer MCP and isolated local Chromium fixtures.",
+  "verificationLevels": [
+    "Observed source evidence",
+    "Local code/media/geometry checks",
+    "Actual registered source and saved native model",
+    "Actual reload/input/paint within named bounds",
+    "Close source fidelity, still unapproved acrossall18"
+  ],
+  "references": [
+    {
+      "id": "HERO-001",
+      "title": "Type Face",
+      "gallery": "https://recent.design/i/vmmug5r-type-face",
+      "source": "https://x.com/stephenkelman/status/2093335231604367454",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-001.json",
+        "bytes": 1985,
+        "sha256": "d49a5544196afee4a41a0a5b2f596be859ca74982abf1aec503c05d698a746bd"
+      },
+      "page": {
+        "id": "XKMW7Ckz5",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-001-type-face",
+        "desktop": "pleNW81xZ",
+        "phone": "Xcj2TScDH"
+      },
+      "coverage": "Head assembly, turn, dispersal and Pause/Play checked after reload.",
+      "sourceLimitations": "Original mesh, subject and writing were unavailable; credited scan, font and text substitutes and fitted pacing remain.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/type-face-framer-runtime-proof.json",
+        "bytes": 1663,
+        "sha256": "5113258081066a3a1571920a105e3f04f4f74099d8c7c0e769dc6e98960a3cf4"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-002",
+      "title": "Ajedrez Film Poem",
+      "gallery": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+      "source": "https://x.com/julianleiss/status/2110868325052149925",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
+        "bytes": 71226,
+        "sha256": "4a944941c3b0f8839334834733f0e87262cf5b6dde88fc573df7fac4a6607281"
+      },
+      "page": {
+        "id": "ANWBjWXdj",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-002-ajedrez",
+        "desktop": "HfF4MPsiJ",
+        "phone": "wh9JF07sV"
+      },
+      "coverage": "Earlier native Desktop and fitted Phone playback reached 37 phases. The revised native perimeter, twelve sampled closing word poses, corrected 51.083333s cut and actual cropped photographic aperture now have MCP model acknowledgments.",
+      "sourceLimitations": "Actual new motion/reload verification is pending. Representative holds, independent verse, horizontal width fits, earlier approximate cuts, other held photo passages, omitted small-grid choreography and missing audio remain explicit.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-after-nine-v2-desktop-host-fixed-sequence.json",
+        "sha256": "68ff62c78526a92b8d956268b3e10510743c16bf570056116bb7ac6bb195c8dc",
+        "bytes": 657475
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-003",
+      "title": "Polar / Field Guide",
+      "gallery": "https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+      "source": "https://polar.sh/field-guide",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
+        "bytes": 13330,
+        "sha256": "f89b9e35caf8201aea81be5d9e6d3e6a962d8a338d2f2752cca3e529d3d355f7"
+      },
+      "page": {
+        "id": "QnxW3i1rV",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-003-polar",
+        "desktop": "DfAVjxPbj",
+        "phone": "FnUUfg4i9"
+      },
+      "coverage": "Nested scrolling, chapter/credits navigation and return checked.",
+      "sourceLimitations": "Opening, Imagine, Core principles and trimmed Credits are recreated; other chapters link to the source. Phone is adapted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/polar-framer-native-navigation-proof.json",
+        "bytes": 1200,
+        "sha256": "dd8c8d37e29e849b91d19d1be9ca061eb8cb26478f3fc6a10240da8bde812a02"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-004",
+      "title": "Artemii Lebedev",
+      "gallery": "https://www.siteinspire.com/website/13624-artemii-lebedev",
+      "source": "https://artemiilebedev.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
+        "bytes": 10162,
+        "sha256": "b73ac0cb21878f746e3d0356349af46c833559be4a2685fe1d1ed8b52a249274"
+      },
+      "page": {
+        "id": "SQpNyO_5_",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-004-artemii-lebedev",
+        "desktop": "LgB2MaBZo",
+        "phone": "jHRlTELMr"
+      },
+      "coverage": "Reload checked the live film, Pause, native text backings and expanded-panel scrolling without horizontal crop.",
+      "sourceLimitations": "Phone opening, immersive geometry and effects are fitted. Hold/swipe and later effects were not isolated in the final check.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO004-framer-final-layout-reload-proof.json",
+        "sha256": "3662e24a5afcae700c9434bf6efbb0fd36d1e9a15f97b01cc475e755ee154bf1",
+        "bytes": 5950
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-005",
+      "title": "Maximilian Kaspar",
+      "gallery": "https://www.siteinspire.com/website/13623-maximilian-kaspar",
+      "source": "https://www.maximiliankaspar.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
+        "bytes": 9328,
+        "sha256": "ad62ae423fbbab2c7a19dccdb9ba066e35e3cb671de0ba2033950cb25e30d618"
+      },
+      "page": {
+        "id": "hQLp25hBb",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-005-maximilian-kaspar",
+        "desktop": "lR30zcOEA",
+        "phone": "NPxNSIUkt"
+      },
+      "coverage": "Source-plant ASCII reveal/rotation, Pause and Phone fit checked.",
+      "sourceLimitations": "Current-source geometry is used; historical model selection and exact pacing remain unverified.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/kaspar-framer-runtime-proof.json",
+        "bytes": 760,
+        "sha256": "c2ebcdcfa5fca820cc0842a298c488b1fbb6c6910158922d9ab6ab21e7e75351"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-006",
+      "title": "Mac Moss Studio",
+      "gallery": "https://www.siteinspire.com/website/13575-mac-moss-studio",
+      "source": "https://macmoss.studio/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-006.json",
+        "bytes": 5114,
+        "sha256": "5a59c0feeb0036e20e1d2738f0e703d895bfc0f758b8d75060d950cf0e719bef"
+      },
+      "page": {
+        "id": "ldRKcp3QP",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-006-mac-moss-studio",
+        "desktop": "V1vG9nLF5",
+        "phone": "z4OuTgh0u"
+      },
+      "coverage": "All 20 atlas cells, next/previous controls, buffer refresh and Phone fit checked.",
+      "sourceLimitations": "GIF motion is sampled into 125 vector frames at 12 fps; grain is simplified. Native Eco video continues playing offscreen.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO006-framer-runtime-proof.json",
+        "bytes": 2784,
+        "sha256": "61313cef320def67d38d6740401c9f31ba93c963db0a17888ebbbcca02fd832f"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-007",
+      "title": "Cantor8",
+      "gallery": "https://www.lapa.ninja/post/cantor8/",
+      "source": "https://www.cantor8.io/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-007.json",
+        "bytes": 13058,
+        "sha256": "1a55e70b22038f9bdf4bb133c86719e2174b0bd94c01c61bf742adb3eec497b4"
+      },
+      "page": {
+        "id": "IhJNN_eMc",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-007-cantor8",
+        "desktop": "yMdvRggxW",
+        "phone": "FWmbJSbKv"
+      },
+      "coverage": "Genuine logo/arrows, active tabs, links and live instrument checked after reload. Source arrow-hover and backdrop behavior is now saved on native layers.",
+      "sourceLimitations": "The newly saved hover/backdrop bindings await reload and actual paint. Instrument spring history, fonts and Phone composition remain fitted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO007-framer-final-header-proof.json",
+        "sha256": "341310c0b50115b4caf16d61891ab5821d8fe6d594d4249edfc1d112b8f82d6a",
+        "bytes": 5933
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-008",
+      "title": "PP Neue Montreal",
+      "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
+      "source": "https://neuemontreal.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-008.json",
+        "bytes": 17921,
+        "sha256": "c5cb629306a168f0def6f97614dee0bef564334456b361310347869c775b63fc"
+      },
+      "page": {
+        "id": "P5fp5dz6E",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-008-pp-neue-montreal",
+        "desktop": "rFmgixdR5",
+        "phone": "ZbOnq0V6k"
+      },
+      "coverage": "Seven effect groups respond on Desktop, Phone and Desktop return. Genuine wave font, six SVG Fits and three distinct media works checked. Navigation/proximity fixes and source-closer reintroduction/language compositions are saved.",
+      "sourceLimitations": "Retest corrected link arrival/proximity. Ten new/reused italic parts need genuine font13 via native UI. New composition reload, source revision/Phone parity and native-media offscreen behavior remain pending.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO008-live-behavior-progress.json",
+        "sha256": "151e5d0b56a661151c148ac1ea5c51dc06ea50fc782a7651e046f92aa2034a04",
+        "bytes": 5388334
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-009",
+      "title": "Vercel dark opening",
+      "gallery": "https://www.lapa.ninja/post/vercel-3/",
+      "source": "https://vercel.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
+        "bytes": 3305,
+        "sha256": "0193b3db5d8d71a0799055096132305b43bafc0b12a24a92323cfb57a59c38d9"
+      },
+      "page": {
+        "id": "XXmRThpe5",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-009-vercel",
+        "desktop": "wQLzHdfQV",
+        "phone": "ejq1L3vvP"
+      },
+      "coverage": "Capability click/Enter, triangle RGB click and Phone fit checked.",
+      "sourceLimitations": "Selected dark archive is followed; light state and row geometry are fitted. Brush causality was not isolated in Framer.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO009-framer-runtime-proof.json",
+        "bytes": 1992,
+        "sha256": "7e570195e716620080846f4a41bfeebd03d1bcab40b4d004f6f06229059007d7"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-010",
+      "title": "G!theimagineers",
+      "gallery": "https://httpster.net/website/gtheimagineers/",
+      "source": "https://www.gtheimagineers.com/en.html",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-010.json",
+        "bytes": 18961,
+        "sha256": "fadb9a627ee9b2868c7d82cd92cb2ab9c1a0c2c2297b1294ace01ad26f7ce1ec"
+      },
+      "page": {
+        "id": "H_UARwj3j",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-010-g-theimagineers",
+        "desktop": "QgyP6unlL",
+        "phone": "qVgA1kAkv"
+      },
+      "coverage": "Six Desktop/seven Phone native states, prose, Skills and responsive repairs checked.",
+      "sourceLimitations": "Geometry and timing are fitted; working actions do not establish pixel-identical source behavior.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/g-framer-qa.json",
+        "bytes": 15523,
+        "sha256": "bf2e38680c6ce1c016fe57516fcf6a3bcbcf4b7efca9d327c3fdd1d1ffed9c29"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-011",
+      "title": "Jon Way Studio / JW.S",
+      "gallery": "https://httpster.net/website/jon-way-studio/",
+      "source": "https://www.jonway.studio/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-011.json",
+        "bytes": 3825,
+        "sha256": "aeb46b961894773080934d0a7db5675962bf9956e8d84586bd45cb6b8b34dd39"
+      },
+      "page": {
+        "id": "C706vJzDs",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-011-jon-way-studio-jw-s",
+        "desktop": "K7Y0sxvVW",
+        "phone": "VywvIcpVf"
+      },
+      "coverage": "Selected 2023 composition, genuine poster, fold and Phone fit checked.",
+      "sourceLimitations": "Historical full extent, scrolling, hover and animation remain unknown; the current site is another revision.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO011-framer-refined-runtime-proof.json",
+        "bytes": 591,
+        "sha256": "524355be265d48a149025c707502ad45e31c43318fc4ad672230cd97d87982ce"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-012",
+      "title": "Mezmo",
+      "gallery": "https://httpster.net/website/mezmo/",
+      "source": "https://www.mezmo.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-012.json",
+        "bytes": 4316,
+        "sha256": "6884dd901ab5c3980374074e26b505bca92858f9a32a4e665a433d07aa304905"
+      },
+      "page": {
+        "id": "tdoHtQiwS",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-012-mezmo",
+        "desktop": "pZbFePzki",
+        "phone": "AwkYH7ggC"
+      },
+      "coverage": "Selected 2022 statement/diagram, source wordmark, fold and complete Phone words checked.",
+      "sourceLimitations": "Historical dynamics and full extent remain unknown. Native font metrics were read; the font binary was not independently inspected.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO012-framer-refined-runtime-proof.json",
+        "bytes": 1364,
+        "sha256": "1d378bdab37e3951c9d656c6f7a6b727abf35b55d14d496a6be87cd64f3d9263"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-013",
+      "title": "FORMAT",
+      "gallery": "https://www.awwwards.com/sites/format",
+      "source": "https://format.obys.agency/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
+        "bytes": 39098,
+        "sha256": "e4e8b048d800cc3f74d2c663d9040fe8776e4bac5e305dc4e6fa888184f9530d"
+      },
+      "page": {
+        "id": "nKpA0uJHr",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-013-format",
+        "desktop": "XxwFuFP4g",
+        "phone": "jXxkHA4mH"
+      },
+      "coverage": "Inputs and typography checked. Actual Slot01 showed different source media, moving poses, Daughter transparency, Canvas hiding and responsive host changes. Same editable poster carries/returns. All 30 native families are now saved.",
+      "sourceLimitations": "Final decoration cleanup, full 30-slot capacity, reload and resource behavior remain unverified. Physics/Phone flow are fitted; parallax, preloader and complete alternate journeys remain partial or omitted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-framer-input-and-word-reload-proof.json",
+        "sha256": "936e013cd28f5f661cbd066dd9a4f4cb65e4920ca87575b545290e8096d9855a",
+        "bytes": 32802
+      },
+      "additionalRuntimeEvidence": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-first-slot-actual-progress.json",
+          "sha256": "6d6d0a75ac045dd69bab983a8f15c1763190b7c312658d40586c3a866d4c437a",
+          "bytes": 288724
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-responsive-fix-actual-progress.json",
+          "sha256": "62b1755adbadf0612b38fbc7a3524c504a937f2e6b5d6d5e84e345cca2dac504",
+          "bytes": 194530
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-slot01-actual-canvas-hidden-proof.json",
+          "sha256": "9aa5487d1949724cf2e13cd428e7d6e12916cd855bafb0cd20ec6f52508b52d5",
+          "bytes": 1231
+        }
+      ],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-014",
+      "title": "Unbelievably Crap",
+      "gallery": "https://www.awwwards.com/sites/unbelievably-crap",
+      "source": "https://www.unbelievablycrap.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-014.json",
+        "bytes": 2159,
+        "sha256": "c3bd61957124b15fdc7428a6b7422be54f276a2c5d9106e849ec7397687fa007"
+      },
+      "page": {
+        "id": "aR0EZq0gQ",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-014-unbelievably-crap",
+        "desktop": "lj1RcF55u",
+        "phone": "HqvQVLOl2"
+      },
+      "coverage": "Source geometry, keyboard chapters/reverse, Pause and Phone navigation checked.",
+      "sourceLimitations": "Wheel/touch progression was not established. Biography, camera, material and Phone framing are adapted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/journey-framer-runtime-proof.json",
+        "bytes": 4152,
+        "sha256": "3787ba220f6e4c9d9841201291469744c57d5cba789dc427f60f0f2642829530"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-015",
+      "title": "MECHA",
+      "gallery": "https://www.awwwards.com/sites/mecha",
+      "source": "https://mecha-xyz.webflow.io/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
+        "bytes": 10373,
+        "sha256": "a00aa37c62d36cba09268fd0ca49bad07f39a3663fed65c561db70991ad9dce5"
+      },
+      "page": {
+        "id": "nwAhAlY6o",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-015-mecha",
+        "desktop": "C2r6jVvN1",
+        "phone": "mWGINlKKX"
+      },
+      "coverage": "The source M responds to scroll and disappears at the project handoff; media checked.",
+      "sourceLimitations": "Projection/curves/Phone are fitted; camera and modal CTA are omitted. One video observation is not a general player budget.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/mecha-framer-runtime-proof.json",
+        "bytes": 2305,
+        "sha256": "4384bce8ff2d2f53c7b165f87bb425253aaff49a44b8b73940a5ec02f991d3d7"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-016",
+      "title": "Origin",
+      "gallery": "https://minimal.gallery/origin/",
+      "source": "https://www.originbrand.io/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
+        "bytes": 3161,
+        "sha256": "b37475b308de233e7f091192a0f944b78f5def17d32273990d0dbbba3b7a2452"
+      },
+      "page": {
+        "id": "JC1r1iwC4",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-016-origin",
+        "desktop": "dZaF7cch_",
+        "phone": "yYG9bk4G0"
+      },
+      "coverage": "Light, Pause, refined wordmark, copy, spinner and Phone fit checked.",
+      "sourceLimitations": "Light is independently fitted rather than the source shader; Phone is adapted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO016-framer-refined-runtime-proof.json",
+        "bytes": 1164,
+        "sha256": "e9e0184c9f14e0b8db3ccf87b27efa8ba56517f257751c81827e231c67f80fce"
+      },
+      "additionalRuntimeEvidence": [],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-017",
+      "title": "Bleibtgleich",
+      "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+      "source": "https://bleibtgleich.dev/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-017.json",
+        "bytes": 14216,
+        "sha256": "1617652465ee3ed1b9fb21e5bb9813f969122f3e87f61fd5551699f4b6d9a905"
+      },
+      "page": {
+        "id": "CRncJJQPQ",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-017-bleibtgleich",
+        "desktop": "SZRO49kF7",
+        "phone": "SCTOUyK5I"
+      },
+      "coverage": "Source typography/images, sticky Work, All Works and fitted Phone menu checked. Real input pinned project 13; a fresh settled read confirmed release.",
+      "sourceLimitations": "A direct image click timed out at acknowledgment but later confirmed release; it was not replayed. CPU fluid, CSS3D, mark morph and Phone framing remain fitted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-framer-final-reload-proof.json",
+        "sha256": "972540b9a608fde1246b1409c9d21269e4adb75352fccca6368087e750bedd7a",
+        "bytes": 4062
+      },
+      "additionalRuntimeEvidence": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-native-project-pin-proof.json",
+          "sha256": "35718e174e0b6a0ca7715853b5f290297964a38d8e4b0d4f0564d484853ca5b1",
+          "bytes": 2378
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-native-typography-preview-correction.json",
+          "sha256": "e7a6ad1471592770e64e8c4a8f1d77b2252badf955806f7bbe0d0dec0b2abd5f",
+          "bytes": 640
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-actual-pin-unpin-proof.json",
+          "sha256": "49d4ef78684202d303c801836ceab38131ff05218d858cbe42752da2ee3c2585",
+          "bytes": 2227
+        }
+      ],
+      "sourceFidelityApproved": false
+    },
+    {
+      "id": "HERO-018",
+      "title": "pu—ente",
+      "gallery": "https://minimal.gallery/pu-ente/",
+      "source": "https://www.pu-ente.com/",
+      "classification": "Source inspiration / credited recreation or close adaptation",
+      "contract": {
+        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-018.json",
+        "bytes": 6405,
+        "sha256": "b983f37d6dd51ad9a20cd64c4e532583bb6e4bbdf24eebf7d6c11bdd91163f1d"
+      },
+      "page": {
+        "id": "W0F97yBQg",
+        "path": "/playgrounds/source-inspiration/heroes/behavior/hero-018-pu-ente",
+        "desktop": "ZXsdmxEfI",
+        "phone": "j2x5GLoH8"
+      },
+      "coverage": "Graphic curtain, 15 projects, return and Phone fit checked. Real pointer input moves the blue SVG head and changes tile info.",
+      "sourceLimitations": "Continuous 26-point trail/easing was not captured. Art is omitted; typography, Phone and category routing are adapted.",
+      "earlierBoundedRuntimeEvidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO018-framer-runtime-proof.json",
+        "bytes": 1472,
+        "sha256": "2bf9df0ee88547c3fc23f5a73cef3f2151406e93b3a2c3adff3c7adf390f3ccf"
+      },
+      "additionalRuntimeEvidence": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO018-actual-native-pointer-proof.json",
+          "sha256": "9cc5e915c2acfc46d4bf9c30ae4bf558274e13637de2bde9cfb1f1321a28bfcd",
+          "bytes": 2074
+        }
+      ],
+      "sourceFidelityApproved": false
+    }
+  ],
+  "pending": [
+    "H2: verify the applied word-motion binding and decoded aperture in actual Preview once browser routing is reliable.",
+    "H8: apply genuine font13 to all ten Desktop and ten Phone italic parts, then check corrected navigation/proximity and both new compositions.",
+    "H7: check the applied native arrow-hover/backdrop effect after reload.",
+    "H13: verify the final decoration cleanup and complete 30-slot pool after reload, including capacity/resource behavior.",
+    "Keep all connected-browser automation off; saved-model checks and local fixtures do not close live gates."
+  ],
+  "sourceContractIndex": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
+    "bytes": 3890,
+    "sha256": "8624042dcd42de7d5dd58edc76d324678e9a03b520d3d0eb30e8661a324648af"
+  },
+  "historicalDetailedCoverage": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
+    "sha256": "69e3f2cea1ad6568a8668722b7e2121b9620e7449ad420222836f387a9a068e0",
+    "bytes": 96127
+  },
+  "boundaries": [
+    "H11/H12 historical dynamics unavailable.",
+    "Native Video/Vimeo are outside the custom decoder gate; native players do not inherit its offscreen guarantees.",
+    "Original259 full raw H8 tree was not recovered after strict rectangle-drift refusal. Distinctfresh261 body was verified and subsequent actual bodies retained; this is not retroactive lossless restoration.",
+    "Existing69-page history and earlier manifests remain untouched."
+  ],
+  "latestEvidence": {
+    "H2": {
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-type-grid-source46-update-278-output.json",
+        "bytes": 469467,
+        "sha256": "e2374db4e5c6795cc6bb9b71176fe65ba49a7270cf43b96b4a1a3eb5668ca104"
+      },
+      "native": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-type-grid-native-binding-279-output.json",
+        "bytes": 461868,
+        "sha256": "d6749ef22700eac17e06c51e52dadbd2a2eeefde3e586dda283a5753b67195e8"
+      },
+      "staticGeometry": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-phase36-hollow-grid-native-276-output.json",
+        "bytes": 478478,
+        "sha256": "1fde082da2f774545642a8d81f0f340f9f4c5856eb87b261eca4628a6a38866f"
+      },
+      "overheadBinding": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-overhead-native-aperture-saved-model-272/HERO-002-overhead-native-aperture-272-output.json",
+        "bytes": 460085,
+        "sha256": "b708dc5a661b72a3db2769b9154884d08753af59afde273bd65e2d5e97bcc92f"
+      },
+      "local": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/final-candidate-receipt.json",
+        "bytes": 4954,
+        "sha256": "c9849a5a97d6aaf59c866c55f033e30f19e0d5ff6e5364274a946e33ef9102ef"
+      },
+      "actualNewMotionPaint": false,
+      "nativeFrozenPaint": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/images/HERO002-native-phase36-desktop-static.jpg",
+          "bytes": 27681,
+          "sha256": "2e1c58190d9ab30982417ece94a609fe372bc51858a42aba55b471d782dce8ed"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/final-authoring-window-278-282/images/HERO002-native-phase36-phone-static.jpg",
+          "bytes": 21832,
+          "sha256": "22c705221574b0f364fd307e3820338a5a025ae3b27ebe5e49ebd9cd41bf1f4f"
+        }
+      ],
+      "actualFrozenNativeVariantPaint": true
+    },
+    "H7": {
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-new-helper-plus-proximity-source-window-274-output.json",
+        "bytes": 462017,
+        "sha256": "ad0575c9fbfdd1df71401be8c3d90ade61c70f23a3774518f02db8de12c7d3f1"
+      },
+      "native": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-native-hover-binding-275-output.json",
+        "bytes": 584656,
+        "sha256": "c6aa8823c7ccc70fe28b3a4751707164cfdc17dd496fda234af58b9727e4d2dd"
+      },
+      "local": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/validation/native-hover/locked-nix-proof.json",
+        "bytes": 1160,
+        "sha256": "e7e212e21696396c26281f261c0dc04dde49b27dc129affd2ed389b367ac10a3"
+      },
+      "actualNewHoverPaint": false
+    },
+    "H8": {
+      "navigation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/three-source-and-H8-navigation-window-270-271/HERO-008-section-bridge-native-271-output.json",
+        "bytes": 1358614,
+        "sha256": "9dd7b1e30f040ac58ded882561af4a8bb8f6a07cd6a86b8ea781a1af9eeacd3a"
+      },
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-new-helper-plus-proximity-source-window-274-output.json",
+        "bytes": 462017,
+        "sha256": "ad0575c9fbfdd1df71401be8c3d90ade61c70f23a3774518f02db8de12c7d3f1"
+      },
+      "composition": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-008-native-source-composition-273/HERO-008-source-composition-native-273-output.json",
+        "bytes": 1194117,
+        "sha256": "49c84e814c062175ae27a51e7805ff433054c2224970caaa1dd2b7729060b65f"
+      },
+      "finiteClosure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-008-native-source-composition-273/HERO-008-source-composition-273-source-peer-closed-representations.json",
+        "bytes": 4724,
+        "sha256": "22b3b5ef851580beca0946ea2dfb6e811771c82bc7e8b15b8c17a47032f55bab"
+      },
+      "local": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/validation/owned-rich-text-navigation/receipt.json",
+        "bytes": 2403,
+        "sha256": "28247c1ce31211b714d0b75956bdceab42d9b6d8f99ae839aaf20eb1b772c85e"
+      },
+      "actualNewNavigationAndCompositionChecked": false
+    },
+    "H13": {
+      "nativePool": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-013-remaining29-native-model-277/HERO-013-remaining29-saved-native-277-output.json",
+        "bytes": 591009,
+        "sha256": "0aede12aa6c52b92b7147bef448a6198ace575da07b3f3f4fca601c040d2e7e3"
+      },
+      "priorSlot01Actual": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-first-slot-actual-progress.json",
+        "bytes": 288724,
+        "sha256": "6d6d0a75ac045dd69bab983a8f15c1763190b7c312658d40586c3a866d4c437a"
+      },
+      "priorResponsiveActual": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-responsive-fix-actual-progress.json",
+        "bytes": 194530,
+        "sha256": "62b1755adbadf0612b38fbc7a3524c504a937f2e6b5d6d5e84e345cca2dac504"
+      },
+      "actualDecorationCleanVerified": false,
+      "actualThirtyPoolRuntimeVerified": false,
+      "actualReloadAndResourceCapacityVerified": false
+    },
+    "H17": {
+      "pinRelease": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-actual-pin-unpin-proof.json",
+        "sha256": "49d4ef78684202d303c801836ceab38131ff05218d858cbe42752da2ee3c2585",
+        "bytes": 2227
+      },
+      "noTimedOutInputReplay": true
+    },
+    "H18": {
+      "pointerHead": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO018-actual-native-pointer-proof.json",
+        "sha256": "9cc5e915c2acfc46d4bf9c30ae4bf558274e13637de2bde9cfb1f1321a28bfcd",
+        "bytes": 2074
+      },
+      "continuousTailVerified": false
+    }
+  },
+  "currentAuthoringSources": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 55156,
+      "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+      "bytes": 7703,
+      "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceTypeProximity.tsx",
+      "bytes": 18153,
+      "sha256": "f49abec78adf527dbf69e0244b8e6dd13f4a46b01a051288be86d9f9bd11f11f"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "bytes": 96336,
+      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f"
+    }
+  ],
+  "snapshotScope": "This records the prior authoring round. The owner subsequently made original websites/source works authoritative; source fidelity must be reassessed against those originals.",
+  "currentRecreationSourcePolicy": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-policy.md",
+    "bytes": 2336,
+    "sha256": "43b020eebb60b3f134318fd9d7074868b7b62f928da69d4264697a26b8c2b427"
+  }
+}
