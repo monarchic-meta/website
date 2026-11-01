@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "classification": "Source inspiration / bounded public control amendment",
+  "rows": [
+    {
+      "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "prior": {
+        "sha256": "d267cc63122a64d013292b207274abf761d98a5510de70253412088c23473624",
+        "bytes": 17435
+      },
+      "amended": {
+        "sha256": "cfc097445bfdacefc0239e23c012ea07133cf4a6f5f316658466bb1e5ddcd218",
+        "bytes": 17448
+      },
+      "change": "Only skip Enter/Space prevention for native controls disabled by static rendering; Ajedrez also preserves reduced-motion keyboard defaults.",
+      "preserved": "Public export IDs, Preview activation, scene/slide/curtain timing, artwork, responsive geometry and native prop/ref forwarding."
+    },
+    {
+      "path": "docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "prior": {
+        "sha256": "b91a419eea39b60edffc532b011eaf76d14c45c50c91fa4a65f4572d3d6d6978",
+        "bytes": 10241
+      },
+      "amended": {
+        "sha256": "36793851c2e0f1690c1d31fe7bc096af8f80da5fdea504fbac7386c6e540f687",
+        "bytes": 10258
+      },
+      "change": "Only skip Enter/Space prevention for native controls disabled by static rendering; Ajedrez also preserves reduced-motion keyboard defaults.",
+      "preserved": "Public export IDs, Preview activation, scene/slide/curtain timing, artwork, responsive geometry and native prop/ref forwarding."
+    },
+    {
+      "path": "docs/design-studies/code-components/SourcePuenteBehaviors.tsx",
+      "prior": {
+        "sha256": "7ba42e994664bd92ba9b8093453d40208281dc57c22dcb53e66f8e18bf2481a6",
+        "bytes": 22084
+      },
+      "amended": {
+        "sha256": "669710110e7167dd09e01cb7b320fe6dc3671e239796024f472b552b568505f3",
+        "bytes": 22110
+      },
+      "change": "Only skip Enter/Space prevention for native controls disabled by static rendering; Ajedrez also preserves reduced-motion keyboard defaults.",
+      "preserved": "Public export IDs, Preview activation, scene/slide/curtain timing, artwork, responsive geometry and native prop/ref forwarding."
+    }
+  ],
+  "tests": [
+    {
+      "path": "scripts/check-source-ajedrez-browser.mjs",
+      "sha256": "2705569571407df18163bdf1c821beae918c31baaa699cc74835d86b1bc2c68b"
+    },
+    {
+      "path": "scripts/check-source-native-tap.mjs",
+      "sha256": "4b8aca26cf23634439003d8f74b4cf29036cf3bc259614b156c02e28ed80f244"
+    }
+  ],
+  "validation": {
+    "ajedrez": {
+      "checks": 109,
+      "nix": "/nix/store/hqpgxwfmaw1ycz68v74jqwqk4fwrql8c-monarchic-website-source-ajedrez-0.0.1",
+      "scope": "All37phase states, actualPause/Play/Replay, pixel-held pause, Canvas/export/thumbnail and reduced defaults, cleanup"
+    },
+    "nativeInputs": {
+      "checks": 44,
+      "nix": "/nix/store/p36mrjy9m9difd33hh515zwvb296ci3d-monarchic-website-source-native-tap-0.0.1",
+      "scope": "React18+Chromium, droppedonClicknativeonTap/dual/cancel/key/ref, newactualcancelablekeydown defaults across3actors×3statictargets"
+    }
+  },
+  "boundary": "Actual Framer source updates and Preview verification remain separate; this receipt records local source/control validation."
+}

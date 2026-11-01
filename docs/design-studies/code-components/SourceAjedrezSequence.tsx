@@ -213,7 +213,7 @@ function button(Component: ComponentType<LayerProps>, kind: "toggle" | "replay")
             aria-disabled={disabled} aria-pressed={kind === "toggle" ? !state.playing : undefined}
             onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); activate("tap", !!event.defaultPrevented) }}
             onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); activate("click", !!event.defaultPrevented) }}
-            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} />
+            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!disabled && !event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} />
     })
 }
 export function withAjedrezPlayPause(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return button(Component, "toggle") }

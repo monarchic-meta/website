@@ -177,7 +177,7 @@ function card(Component: ComponentType<LayerProps>, side: Exclude<Side, null>): 
             onPointerLeave={(event: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(event); if (!event.defaultPrevented) s.hoverCard(null) }}
             onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); event.stopPropagation?.(); activate("tap", !!event.defaultPrevented) }}
             onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); event.stopPropagation(); activate("click", !!event.defaultPrevented) }}
-            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (side === "graphic" && !event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} />
+            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!s.frozen && side === "graphic" && !event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} />
     })
 }
 export function withPuenteArtCard(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return card(Component, "art") }
@@ -203,7 +203,7 @@ export function withPuenteReturnToGate(Component: ComponentType<LayerProps>): Co
         role={props.role ?? "button"} tabIndex={props.tabIndex ?? 0} data-source-puente-layer="return"
         onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); activate("tap", !!event.defaultPrevented) }}
         onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); activate("click", !!event.defaultPrevented) }}
-        onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} /> })
+        onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!s.frozen && !event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} /> })
 }
 
 export function withPuenteProjectTile(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {

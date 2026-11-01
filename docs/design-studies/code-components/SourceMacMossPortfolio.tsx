@@ -115,7 +115,7 @@ function arrow(Component: ComponentType<LayerProps>, direction: 1 | -1): Compone
         role={props.role ?? "button"} tabIndex={props.tabIndex ?? 0} aria-disabled={state.frozen || state.slide.phase !== "settled"}
         onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); activate("tap", !!event.defaultPrevented) }}
         onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); activate("click", !!event.defaultPrevented) }}
-        onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} /> })
+        onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); if (!state.frozen && !event.defaultPrevented && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); activate("key", false) } }} /> })
 }
 export function withMacMossIdahoNext(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return arrow(Component, 1) }
 export function withMacMossIdahoPrevious(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return arrow(Component, -1) }
