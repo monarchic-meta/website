@@ -22,6 +22,9 @@ function getMechaMeshes():MechaMesh[]{
  mechaMeshes=MECHA_MODEL_PACKED.map((text,primitive)=>{const bytes=Uint8Array.from(atob(text),c=>c.charCodeAt(0)),view=new DataView(bytes.buffer),nv=view.getUint32(0,true),ni=view.getUint32(4,true);if(bytes.length!==8+nv*6+ni*2||ni%3)throw Error("Invalid retained MECHA geometry");const vertices=Array.from({length:nv},(_,i)=>[0,1,2].map(k=>view.getInt16(8+i*6+k*2,true)/32767)),faces=Array.from({length:ni/3},(_,i)=>[0,1,2].map(k=>view.getUint16(8+nv*6+(i*3+k)*2,true)));if(faces.some(f=>f.some(i=>i>=nv)))throw Error("MECHA index outside retained mesh");return{vertices,faces,normals:faces.map(f=>mechaNormal(vertices[f[0]],vertices[f[1]],vertices[f[2]])),black:primitive===1}})
  return mechaMeshes
 }
+// The registration owner and cache share a revision: bump it for renderer/art
+// changes so preserved Fast Refresh hooks cannot retain an old entry.factory.
+const MECHA_ARTWORK_REVISION="current-glb-two-materials-drag-spring-keyed-v2"
 const MECHA_SOURCE_STATES=[0,831/900/(2105/720),1478/900/(2105/720),1] as const
 function clampMecha(n:number){return Math.max(0,Math.min(1,Number.isFinite(n)?n:0))}
 function mechaScrollProgress(offset:number,viewport:number,start:number,span:number){return clampMecha((offset/Math.max(1,viewport)-Math.max(0,start))/Math.max(.1,span))}
@@ -446,7 +449,7 @@ function closestMechaScroller(node:HTMLElement):HTMLElement|Window{let parent=no
  * @framerIntrinsicWidth 422
  * @framerIntrinsicHeight 720
  */
-export default function MechaScrollMark(props:Props){
+function MechaSurface(props:Props){
  const{canvasMotion=false,posterProgress=0,scrollEnabled=true,scrollStart=0,scrollSpan=2105/720,artworkScale=1,ink="#000000",background="#ffffff",style}=props,target=RenderTarget.current(),staticRenderer=useIsStaticRenderer(),canvasPreview=canvasMotion&&target===RenderTarget.canvas,isStatic=target===RenderTarget.export||target===RenderTarget.thumbnail||(staticRenderer&&!canvasPreview)||(target===RenderTarget.canvas&&!canvasPreview),root=React.useRef<HTMLDivElement>(null),canvas=React.useRef<HTMLCanvasElement>(null)
  const[scene,setScene]=React.useState<SceneState>({progress:clampMecha(posterProgress)}),[moving,setMoving]=React.useState(false),[error,setError]=React.useState("")
  React.useEffect(()=>{
@@ -482,8 +485,17 @@ export default function MechaScrollMark(props:Props){
   const observer=new ResizeObserver(resize);observer.observe(node);const intersection=new IntersectionObserver(rows=>{visible=rows.some(row=>row.target===node&&row.isIntersecting);if(visible)request();else{release();stop()}});intersection.observe(node);measure()
   return()=>{disposed=true;stop();scroller.removeEventListener("scroll",measure);window.removeEventListener("scroll",discover,true);window.removeEventListener("resize",resize);window.removeEventListener("pointermove",move);window.removeEventListener("pointerup",release);window.removeEventListener("pointercancel",release);window.removeEventListener("blur",focusLoss);node.removeEventListener("pointerdown",down);document.removeEventListener("visibilitychange",visibility);media.removeEventListener("change",reduction);observer.disconnect();intersection.disconnect()}
  },[scrollEnabled,isStatic,scrollStart,scrollSpan,posterProgress,canvasPreview])
- const chosen:SceneState=isStatic?{progress:clampMecha(posterProgress)}:scene,settings:Settings={mode:"mechaScroll",artworkRevision:"current-glb-two-materials-drag-spring-v1",animate:moving&&!isStatic,static:isStatic,canvasPreview,speed:1,stillTime:0,interactive:false,primary:ink,secondary:background,ink,sceneState:chosen,artworkScale:Math.max(.5,Math.min(1.5,artworkScale))},request=useStudySurface(root,canvas,settings,target,"MechaScrollMark.tsx",(_s,e)=>setError(e??""))
+ const chosen:SceneState=isStatic?{progress:clampMecha(posterProgress)}:scene,settings:Settings={mode:"mechaScroll",artworkRevision:MECHA_ARTWORK_REVISION,animate:moving&&!isStatic,static:isStatic,canvasPreview,speed:1,stillTime:0,interactive:false,primary:ink,secondary:background,ink,sceneState:chosen,artworkScale:Math.max(.5,Math.min(1.5,artworkScale))},request=useStudySurface(root,canvas,settings,target,"MechaScrollMark.tsx",(_s,e)=>setError(e??""))
  React.useLayoutEffect(()=>{const host=canvas.current;if(!host||typeof MutationObserver==="undefined")return;const sync=()=>publishMechaFrame(request.getEntry()),observer=new MutationObserver(sync);observer.observe(host,{attributes:true,attributeFilter:["data-study-state","data-study-frame-width","data-study-frame-height"]});sync();return()=>observer.disconnect()},[target])
  return <div ref={root} style={{width:"100%",height:"100%",...style,position:"relative",background,overflow:"hidden",touchAction:"pan-y"}}><canvas ref={canvas} role="img" aria-label="MECHA source M mark, scroll-linked with pressed-drag spring" style={{display:"block",width:"100%",height:"100%"}}/>{error&&<span role="status" style={{position:"absolute",left:8,bottom:8,font:"10px monospace",color:ink}}>Restoring source mark…</span>}</div>
+}
+/**
+ * @framerSupportedLayoutWidth any
+ * @framerSupportedLayoutHeight any
+ * @framerIntrinsicWidth 422
+ * @framerIntrinsicHeight 720
+ */
+export default function MechaScrollMark(props:Props){
+ return <MechaSurface key={MECHA_ARTWORK_REVISION} {...props}/>
 }
 addPropertyControls(MechaScrollMark,{canvasMotion:{type:ControlType.Boolean,title:"Canvas motion",defaultValue:false},posterProgress:{type:ControlType.Number,title:"Poster scene",min:0,max:1,step:.01,defaultValue:0},scrollEnabled:{type:ControlType.Boolean,title:"Scroll link",defaultValue:true},scrollStart:{type:ControlType.Number,title:"Start / viewport",min:0,max:10,step:.05,defaultValue:0},scrollSpan:{type:ControlType.Number,title:"Span / viewports",min:.1,max:10,step:.05,defaultValue:2105/720},artworkScale:{type:ControlType.Number,title:"Artwork size",min:.5,max:1.5,step:.05,defaultValue:1},ink:{type:ControlType.Color,title:"Ink",defaultValue:"#000000"},background:{type:ControlType.Color,title:"Paper",defaultValue:"#ffffff"}})

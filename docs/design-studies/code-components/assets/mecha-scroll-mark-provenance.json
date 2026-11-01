@@ -194,45 +194,41 @@
   },
   "validation": {
     "source": {
-      "path": "docs/design-studies/code-components/MechaScrollMark.tsx",
-      "sha256": "429fbc880ae001ca62041dd042f4edd2974272fb12c5e3587ac0a62fc15c9bea",
-      "bytes": 323362
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/MechaScrollMark.tsx",
+      "sha256": "bd460fe3b64e7ca83a476c0df774a46054368e5375c66294f1e93f52b411b24a",
+      "bytes": 323818
     },
     "strictScript": {
-      "path": "scripts/check-mecha-scroll-mark.mjs",
-      "sha256": "4949b9e8c66ee894f36e868a9b28b2d6a762aef508ff1636a29500cb1496e661",
-      "bytes": 9066
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-mecha-scroll-mark.mjs",
+      "sha256": "80145310dcd8e728b7f03bf36a7c10c5fe7b318c7f7e52839d0ae5e1f4e1f5a8",
+      "bytes": 9096
     },
     "browserScript": {
-      "path": "scripts/check-mecha-scroll-mark-browser.mjs",
-      "sha256": "1befd37ed620f1848abffd65452adc6a579388a587e2d9e272c58ffe8bb6cbd2",
-      "bytes": 14747
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-mecha-scroll-mark-browser.mjs",
+      "sha256": "306bc250a286a9b974dd85b3e666f7dd0d68ed22fd25c3a51ec878ea2fa9228c",
+      "bytes": 21052
     },
     "strictResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/strict-final-result.json",
-      "sha256": "1227a587024fd78c10c4fbc4f785e0011b3c0d56840cef6c6de2e722b3730a29",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/v2/strict-result.json",
+      "sha256": "c95d248b4a598140742f386a88205962486f610371461afd0e3578c5659b7bfa",
       "bytes": 1167
     },
     "browserResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/browser-final/result.json",
-      "sha256": "e962c42b9f4db0727730549d40ab60c17a7b3ec30941b8ecf6c0a0fe4cb2590a",
-      "bytes": 45430
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/v2/browser-final/result.json",
+      "sha256": "b4142ff66107117c506040e7a719f3b637c33720ce02a1a81390f30bd443bfe4",
+      "bytes": 48212
     },
-    "checks": "8 strict/pure/shared-pool groups and4 actual React/Chromium cases: Desktop, Phone touch, nested scroll, initially nonoverflowing ancestor; all passed.",
-    "browserRaster": "CPU Canvas2D (--disable-accelerated-2d-canvas), same actor/source/geometry and unchanged behavioral/pixel assertions; finite30s action/DOM waits.",
-    "retainedFailure": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/software-gpu-incomplete-run.json",
-      "sha256": "965882d43712a15b894ade53ab653183565ac89a09339bba15297201447a47ea",
-      "bytes": 909
+    "checks": "8 strict groups,4 actual React input/scroll cases and1 preserved-hook refresh regression all passed.",
+    "raster": "CPU Canvas2D; earlier software-GPU incomplete run remains retained withv1 provenance, never promoted.",
+    "reproducibleCheck": "nix build .#checks.x86_64-linux.hero-behavior --no-link; lockedv2 result pinned externally in final-source-receipt-v2.json.",
+    "historicalV1Provenance": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/v2/provenance-v1-bd3dad36.json",
+      "sha256": "bd3dad36f0b03f069fd732152dba37a4df04705dc4c1357d861dec95cc1bc510",
+      "bytes": 13039
     },
-    "failureBoundary": "Prior SwiftShader accelerated-2D attempt stalled after the Phone held screenshot with software-GPU CPU saturation. It is retained as incomplete, not a success or source-wall-time equivalence claim.",
-    "sharedCoreProof": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/shared-core-preservation.json",
-      "sha256": "8fd9963f4a33e088fe10c2a1682b8d108081afc4cfcc6c0b3a98e3d65bc7efce",
-      "bytes": 724
-    },
-    "reproducibleCheck": "nix build .#checks.x86_64-linux.hero-behavior --no-link; final locked result pinned externally in implementation/final-source-receipt.json.",
-    "fixtureAdmission": "Meaningful input tests wait for actual current pointer/pose and painted-frame admission before measuring held angles; no source wall-time identity is inferred from software raster scheduling."
+    "actualFramerSaved": false,
+    "actualPreviewVerified": false,
+    "editorReloadVerified": false
   },
   "remainingLimits": [
     "Actual Framer saved source/export identity, editor reload and live Preview drag/scroll/Phone paint are pending writer installation.",
@@ -240,5 +236,23 @@
     "Native affine layout/scroll handoff is fitted, including the narrow profile; exact original page breakpoint and Phone hero extent require native layout evidence.",
     "Canvas2D depth-bin/alpha and quantized geometry are close adaptations, not exact original WebGL compositing.",
     "Source asset reuse license remains unverified."
-  ]
+  ],
+  "refreshCompatibility": {
+    "privateSurface": "MechaSurface",
+    "publicComponent": "MechaScrollMark",
+    "revision": "current-glb-two-materials-drag-spring-keyed-v2",
+    "method": "Key the private registration owner as well as its cache. Shared useStudySurface[target] remains byte-exact; a renderer/art change must bump the private revision.",
+    "preservedHookNegativeControl": "With stable outer and surface proxy React identities, a cache-only revision kept the old entry/factory and marker pixels. The keyed public wrapper remounted a new entry/factory and matched fresh genuine-model pixels.",
+    "fixtureLimit": "Legacy red marker is a test-owned factory identity signal, not a source-comparison rendering. The negative case uses a distinct cache namespace to avoid polluting the positive source revision.",
+    "deltaProof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/v2/exact-source-delta-proof.json",
+      "sha256": "60034ae635efc93395c82196754f5de2b3bf8fe8361dd5bb072df11525e8a1af",
+      "bytes": 1797
+    },
+    "historicalV1Receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/final-source-receipt.json",
+      "sha256": "17d368088c1196ce838b2cb1c8cb49982aa926e5bba90908a0610ffce641bffe",
+      "bytes": 4562
+    }
+  }
 }
