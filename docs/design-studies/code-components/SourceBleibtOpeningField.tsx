@@ -25,7 +25,10 @@ const inputListeners = new Set<(input: Input) => void>()
 function inputAt(x: number, y: number, stamp: number) { const input = { x, y, stamp }; for (const receive of inputListeners) receive(input) }
 export function withBleibtOpeningInput(Component: ComponentType<NativeProps>): ComponentType<NativeProps> {
     return React.forwardRef<HTMLElement, NativeProps>((props, ref) => {
-        const frozen = useIsStaticRenderer() || RenderTarget.current() === RenderTarget.canvas
+        const target = RenderTarget.current(), staticRenderer = useIsStaticRenderer()
+        // The renderer itself gates Canvas opt-in. Relay over native text so
+        // an explicitly moving Canvas study can receive the same input there.
+        const frozen = target === RenderTarget.export || target === RenderTarget.thumbnail || staticRenderer && target !== RenderTarget.canvas
         return <Component {...props} ref={ref}
             onPointerMoveCapture={(e: React.PointerEvent<HTMLElement>) => { props.onPointerMoveCapture?.(e); if (!frozen && !e.defaultPrevented && e.pointerType === "mouse") inputAt(e.clientX, e.clientY, e.timeStamp) }}
             onPointerLeave={(e: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(e); if (!frozen) inputAt(-100000, -100000, e.timeStamp) }}
@@ -46,8 +49,9 @@ function orbitEase(t: number) {
 /** @framerSupportedLayoutWidth any @framerSupportedLayoutHeight any */
 export default function SourceBleibtOpeningField(props: Props) {
     const { image1, image2, image3, image4, animate = true, canvasMotion = false, revealStrength = 3.5, decay = 1.5, style } = props
-    const staticRenderer = useIsStaticRenderer(), isCanvas = RenderTarget.current() === RenderTarget.canvas
-    const frozen = staticRenderer || isCanvas && !canvasMotion || !animate
+    const target = RenderTarget.current(), staticRenderer = useIsStaticRenderer(), isCanvas = target === RenderTarget.canvas
+    const canvasPreview = isCanvas && canvasMotion
+    const frozen = target === RenderTarget.export || target === RenderTarget.thumbnail || staticRenderer && !canvasPreview || isCanvas && !canvasPreview || !animate
     const root = React.useRef<HTMLDivElement | null>(null), canvas = React.useRef<HTMLCanvasElement | null>(null)
     const images = React.useRef<Array<HTMLImageElement | null>>([])
     const queue = React.useRef<Stroke[]>([]), last = React.useRef<Input | null>(null)
