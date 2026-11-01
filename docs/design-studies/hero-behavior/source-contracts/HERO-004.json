@@ -32,6 +32,17 @@
       "phoneSwipe": {
         "minimumPixels": 48,
         "maximumMilliseconds": 700
+      },
+      "scrollbar": {
+        "selector": "::-webkit-scrollbar",
+        "width": "0px",
+        "sourceHTML": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/primary.html",
+          "sha256": "d629759f415a7ba687b133d9ab7fac61905a5bf3e0ab3f6eafb3e49f77c32400",
+          "lines": "82–103"
+        },
+        "scope": "Current public source CSS hides scrollbar width. This is inspected source code, not an additional interaction observation.",
+        "nativePort": "Source policy is ported only within this H4 live Preview document: withFilmPage emits marker-scoped html:has scrollbar CSS, and withFilmUtilityPanel hides the expanded panel gutter while keeping vertical overflow auto. No document mutation or editor/export styling."
       }
     }
   },
@@ -39,7 +50,9 @@
     "Keep compact and expanded utility panels and project rows as editable native layers. Public native onTap and keyboard controls must work in actual Framer Preview.",
     "Use the genuine thirteen project film variants for eight projects. A bounded asynchronous media gate permits at most two active or initializing video decoders; offscreen and static scenes use genuine still posters.",
     "Keep the original first Escape grain effect as an independent material approximation across film and native interface. Later effect states are adaptations until isolated source observation supports them.",
-    "Hold duration and swipe thresholds come from current public code; the fitted immersive composition is not an observed source pose."
+    "Hold duration and swipe thresholds come from current public code; the fitted immersive composition is not an observed source pose.",
+    "The expanded Preview utility panel keeps vertical overflow auto and uses scoped scrollbarWidth:none, matching the source’s zero-width scrollbar without styling the editor or frozen rendering. Actual Framer client-width clearance must be rechecked after the source update.",
+    "Attach withFilmPage only to this H4 page’s Desktop and Phone roots. Its owned marker scopes the source scrollbar policy to live Preview; Canvas, export, thumbnails and static rendering emit neither marker nor style. Preserve source opening dimensions and verify actual document client width after reload."
   ],
   "phone": "Current source code supports swipe navigation. The native Phone composition and immersive framing remain explicitly fitted.",
   "unknown": [
@@ -133,5 +146,15 @@
     "totalBytes": 95953471,
     "method": "Actual HLS streams losslessly remuxed to AVC MP4; 10,187 decoded frames match exactly. Container durations differ by 17–24ms. Film bytes are uploaded to Framer and retained outside Git.",
     "poster": "Individual genuine first-frame AVIF posters, not whole-interface screenshots."
+  },
+  "nativeImplementation": {
+    "path": "../../code-components/SourcePortfolioFilmStudy.tsx",
+    "sha256": "826aa467c8008045f64a579d7d8bb54bf959866bc654e74d61928f469b2354d2",
+    "bytes": 84274,
+    "change": "Only native utility-panel scrollbar clearance and the explicit withFilmPage root scrollbar policy are added. All renderer, decoder, timing, media selection, controls and existing exports are unchanged.",
+    "savedFramerStatus": "Same-file source update, root attachment and actual expanded-panel/document client-width recheck pending.",
+    "newNamedExport": "withFilmPage",
+    "newExportBinding": "Use the genuine export returned by same-file registration; attach only to H4 Desktop and Phone roots.",
+    "renderTargetReference": "https://www.framer.com/developers/components-reference"
   }
 }
