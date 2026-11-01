@@ -160,34 +160,34 @@ function circle(Component: NativeLayer, index: number): NativeLayer {
         return <Component {...props} ref={setNode} data-source-g-circle={index} />
     })
 }
-export function withGHomeLeftMotion(Component: NativeLayer) { return group(Component, "home-left") }
-export function withGHomeRightMotion(Component: NativeLayer) { return group(Component, "home-right") }
-export function withGHomeMotion(Component: NativeLayer) { return group(Component, "home") }
-export function withGManifestoMotion(Component: NativeLayer) { return group(Component, "manifesto") }
-export function withGVisionMotion(Component: NativeLayer) { return group(Component, "vision") }
-export function withGExpertiseMotion(Component: NativeLayer) { return group(Component, "expertise") }
-export function withGExperienceMotion(Component: NativeLayer) { return group(Component, "experience") }
-export function withGContactMotion(Component: NativeLayer) { return group(Component, "contact") }
-export function withGCircle00(Component: NativeLayer) { return circle(Component, 0) }
-export function withGCircle01(Component: NativeLayer) { return circle(Component, 1) }
-export function withGCircle02(Component: NativeLayer) { return circle(Component, 2) }
-export function withGCircle03(Component: NativeLayer) { return circle(Component, 3) }
-export function withGCircle04(Component: NativeLayer) { return circle(Component, 4) }
-export function withGCircle05(Component: NativeLayer) { return circle(Component, 5) }
-export function withGCircle06(Component: NativeLayer) { return circle(Component, 6) }
-export function withGCircle07(Component: NativeLayer) { return circle(Component, 7) }
-export function withGCircle08(Component: NativeLayer) { return circle(Component, 8) }
-export function withGCircle09(Component: NativeLayer) { return circle(Component, 9) }
-export function withGCircle10(Component: NativeLayer) { return circle(Component, 10) }
-export function withGCircle11(Component: NativeLayer) { return circle(Component, 11) }
-export function withGCircle12(Component: NativeLayer) { return circle(Component, 12) }
-export function withGCircle13(Component: NativeLayer) { return circle(Component, 13) }
-export function withGCircle14(Component: NativeLayer) { return circle(Component, 14) }
-export function withGCircle15(Component: NativeLayer) { return circle(Component, 15) }
-export function withGCircle16(Component: NativeLayer) { return circle(Component, 16) }
-export function withGCircle17(Component: NativeLayer) { return circle(Component, 17) }
-export function withGCircle18(Component: NativeLayer) { return circle(Component, 18) }
-export function withGCircle19(Component: NativeLayer) { return circle(Component, 19) }
-export function withGCircle20(Component: NativeLayer) { return circle(Component, 20) }
-export function withGCircle21(Component: NativeLayer) { return circle(Component, 21) }
-export function withGCircle22(Component: NativeLayer) { return circle(Component, 22) }
+export function withGHomeLeftMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "home-left") }
+export function withGHomeRightMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "home-right") }
+export function withGHomeMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "home") }
+export function withGManifestoMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "manifesto") }
+export function withGVisionMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "vision") }
+export function withGExpertiseMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "expertise") }
+export function withGExperienceMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "experience") }
+export function withGContactMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return group(Component, "contact") }
+export function withGCircle00(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 0) }
+export function withGCircle01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 1) }
+export function withGCircle02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 2) }
+export function withGCircle03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 3) }
+export function withGCircle04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 4) }
+export function withGCircle05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 5) }
+export function withGCircle06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 6) }
+export function withGCircle07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 7) }
+export function withGCircle08(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 8) }
+export function withGCircle09(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 9) }
+export function withGCircle10(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 10) }
+export function withGCircle11(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 11) }
+export function withGCircle12(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 12) }
+export function withGCircle13(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 13) }
+export function withGCircle14(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 14) }
+export function withGCircle15(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 15) }
+export function withGCircle16(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 16) }
+export function withGCircle17(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 17) }
+export function withGCircle18(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 18) }
+export function withGCircle19(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 19) }
+export function withGCircle20(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 20) }
+export function withGCircle21(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 21) }
+export function withGCircle22(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return circle(Component, 22) }

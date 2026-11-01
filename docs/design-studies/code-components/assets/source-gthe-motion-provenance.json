@@ -101,15 +101,15 @@
   "rendering": "Retained editable native ellipse layers. Runtime motion uses owned CSS variables/activation selectors; authored inline geometry remains untouched. Canvas/export/thumbnail/reduced motion retain authored stills; only visible Preview groups animate.",
   "source": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceGtheMotion.tsx",
-    "bytes": 15997,
-    "sha256": "36836b189bd2d35c9863e076f5df1e9a78628153b1fccc8b617cb0187f22c80a"
+    "bytes": 17268,
+    "sha256": "f2b2a3ecc1558fa5541e8db6a22c7936ec1d78680508845eb32d20d0ed823cdd"
   },
   "validation": {
-    "store": "/nix/store/7hx9as5qp7c2yfp4xb1rr0g21y31p7hq-monarchic-website-source-gthe-motion-0.0.1",
+    "store": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1",
     "result": {
-      "path": "/nix/store/7hx9as5qp7c2yfp4xb1rr0g21y31p7hq-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
-      "bytes": 67145,
-      "sha256": "6b5a61c9a1521436e1e3cdae5ab358bf1ff1b5414cde2bcf19197ac151a5a006"
+      "path": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+      "bytes": 67224,
+      "sha256": "0a5a8834c57f01263d8baed2fff8412ee1bb547d8dafd8a3e196b5b6a123bf57"
     },
     "checks": 39,
     "scope": "Local ReactDOM native-like Framer HOC fixture; not actual Framer Preview/reload"
@@ -118,5 +118,10 @@
     "Source input/DOM and public source-code observations are distinguished; no original website JavaScript is imported or executed.",
     "Native text paraphrases and licensed-font substitutes remain. Contact initial randomness, numeric integration and global-phase alignment are independently fitted.",
     "Current Framer Preview/moving pixels/reload remains unverified while connected desktop browser is off."
-  ]
+  ],
+  "explicitExportAmendment": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-plan/explicit-export-runtime-proof.json",
+    "bytes": 497,
+    "sha256": "b141b95994203c2da6fdb8a0e42ef1bced43e20cb4797b90cb287c6fdd9be808"
+  }
 }
