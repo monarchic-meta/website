@@ -1,0 +1,175 @@
+{
+  "id": "HERO-007",
+  "name": "Cantor8 native arrow and navigation behaviors",
+  "source": {
+    "source": "https://www.cantor8.io/",
+    "credit": "Cantor8; website by Artemii Lebedev",
+    "evidenceKind": "Retained current primary HTML and stylesheet, separate from selected-archive interaction observations",
+    "fineMedia": "(min-width: 992px) and (hover: hover) and (pointer: fine)",
+    "input": [
+      "hover",
+      "focus-visible"
+    ],
+    "durationMs": 620,
+    "easing": [
+      0.22,
+      1,
+      0.36,
+      1
+    ],
+    "outgoing": {
+      "translate": [
+        24,
+        -24
+      ],
+      "opacity": 0,
+      "zIndex": 2,
+      "headerScale": 1,
+      "ctaScale": 0.85
+    },
+    "incoming": {
+      "restTranslate": [
+        -24,
+        24
+      ],
+      "activeTranslate": [
+        0,
+        0
+      ],
+      "restOpacity": 0,
+      "activeOpacity": 1,
+      "zIndex": 1,
+      "headerScale": 1,
+      "ctaRestScale": 0.85,
+      "ctaActiveScale": 1
+    },
+    "navigation": {
+      "rgba": [
+        0,
+        0,
+        0,
+        0.2784313725490196
+      ],
+      "backdropBlurPx": 7
+    }
+  },
+  "sourceMaterials": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/primary.html",
+      "bytes": 131186,
+      "sha256": "c50f484a3369fbcd520d8f795628e3dc1de35d8449ff81ffda0064003a2fc024"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/source-logo-arrow/primary-shared.css",
+      "bytes": 168580,
+      "sha256": "48393d823543faf72f0c97fed41865e53bbbbe0ea2991bddcedc2ae71dac9aed"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/source-logo-arrow/provenance.json",
+      "bytes": 4084,
+      "sha256": "fc422ca4d5b4e3054a8ca091fe4a9e34dc0ab0a8b6e2332b8b1720a420dd2fe6"
+    }
+  ],
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+    "bytes": 7703,
+    "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+  },
+  "publicExports": [
+    "withCantorHeaderArrowButton",
+    "withCantorCTAArrowButton",
+    "withCantorArrowOutgoing",
+    "withCantorArrowIncoming",
+    "withCantorBlurredNavigation"
+  ],
+  "retainedInstrument": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorInstrument.tsx",
+    "bytes": 227773,
+    "sha256": "7d588222a9085bd2c57893f0a5a239994eeff9c52be8891a75d0822271ac8e78"
+  },
+  "mechanism": {
+    "nativeLayers": true,
+    "ownRefsOnly": true,
+    "callerEventsFirst": true,
+    "duplicateChannelsWithinMs": 350,
+    "disabledHoverFocusReset": true,
+    "ambientRAF": 0,
+    "timers": 0,
+    "WebGLContexts": 0,
+    "mediaDecoders": 0,
+    "externalFetches": 0
+  },
+  "validation": {
+    "local": {
+      "passed": true,
+      "checks": 28,
+      "test": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-cantor-native-behaviors.mjs",
+        "bytes": 20257,
+        "sha256": "8716372f72bb04cca41e5a255083ab8b36fb5c5891d7551caf4ae763cfaf5864"
+      },
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/validation/native-hover/final-local-28/result.json",
+        "bytes": 7602,
+        "sha256": "49c3a64c7b19ac12e174f88f4d45a368c951e44ceb5248ac0b5b2c05c2952216"
+      },
+      "scope": "Actual React18 and isolated local Chromium native-like anchor/Frame fixtures, real media viewport handoff, visible intermediate pixels, exact source endpoints, keyboard focus, cancellation, composited blur, coarse pointer, static targets and cleanup."
+    },
+    "counterfactual": {
+      "sourceSHA256": "6805fe92f7315f1a243380608766ec44b757d35d443eb3c67d59eb334fcf50d9",
+      "failure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/validation/native-hover/media-handoff-before-reset/failure.json",
+        "bytes": 1821,
+        "sha256": "d73f3e1cfb9b23db6bd1e1420a17f996c39dc29510748be001f2d73dec8f6a3c"
+      },
+      "failureMeaning": "On the same connected native host, Desktop hover remained stale after Phone disable/leave and Desktop return before the reset."
+    },
+    "nix": {
+      "passed": true,
+      "command": "nix build .#checks.x86_64-linux.source-cantor-native-behaviors --no-link --print-out-paths",
+      "exitCode": 0,
+      "storePath": "/nix/store/jlgg68w1dm1fvlr7ihb5k7ikk0rjv29w-monarchic-website-source-cantor-native-behaviors-0.0.1",
+      "derivation": "/nix/store/xx0f56v3q9lh04v34jwsbk77dnh0bw38-monarchic-website-source-cantor-native-behaviors-0.0.1.drv",
+      "result": {
+        "path": "/nix/store/jlgg68w1dm1fvlr7ihb5k7ikk0rjv29w-monarchic-website-source-cantor-native-behaviors-0.0.1/evidence/result.json",
+        "bytes": 7602,
+        "sha256": "0216ae3369a2a7a80e58ffa970a963555166dd52e6b2d0c3a9020aaac9052ec9"
+      },
+      "checks": 28,
+      "sourceSHA256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416",
+      "testSHA256": "8716372f72bb04cca41e5a255083ab8b36fb5c5891d7551caf4ae763cfaf5864",
+      "errors": [],
+      "log": {
+        "path": "/tmp/monarchic-cantor-native-nix.log",
+        "bytes": 433,
+        "sha256": "65dfa641e7cefedebca3a75fe889a971c7fa12e4ffc1703308fa0dc9fe947aa4"
+      },
+      "scope": "Focused pure locked Nix check of these exact source/test bytes. Native Framer registration and actual connected Preview remain unverified.",
+      "proof": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/validation/native-hover/locked-nix-proof.json",
+        "bytes": 1160,
+        "sha256": "e7e212e21696396c26281f261c0dc04dde49b27dc129affd2ed389b367ac10a3"
+      }
+    },
+    "framer": {
+      "registrationPassed": false,
+      "savedNativeBindingsPassed": false,
+      "actualPreviewPassed": false,
+      "reason": "No project writes or connected-browser actions performed by this author."
+    }
+  },
+  "nativeBindingPlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/authoring/native-hover-prepared/native-binding-plan.json",
+    "bytes": 42638,
+    "sha256": "d020ebdede706bb236fa7d22fde65a2cf12a097e49367a165c8bbb35e4f7d063"
+  },
+  "limitations": [
+    "Selected-archive hover was not isolated in a live source visit; current primary CSS establishes these states.",
+    "Preserves the approved editable nine-cell header arrow from the source base SVG. Current Desktop CSS uses its source PNG; the CTA uses the actual already uploaded current PNG.",
+    "Existing native header/CTA bounds and typography are preserved, with recorded authored scaling from the retained screenshot. No fresh source DOM-coordinate equivalence claim.",
+    "Existing compact Phone navigation is an adaptation; the source hides its Desktop bars below992px. Phone/coarse input remains still.",
+    "Reduced-motion and static/Canvas freezing are authored accessibility/editor adaptations.",
+    "Native label reveal and other950ms/320ms header effects are outside this bounded arrow/backdrop change.",
+    "Actual five-export Framer registration, native saved-state binding, reload and connected Preview event/blur validation remain pending."
+  ]
+}
