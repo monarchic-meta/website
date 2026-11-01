@@ -66,6 +66,23 @@ Reference library, Recreations, Originals, Live Creative Coding and
 dense native artwork separate from live graphics, move existing groups instead
 of duplicating them, and preserve source credits and stable study IDs.
 
+## Standalone hero pages
+
+Each hero gets its own regular Web page, opening directly on the full composition
+with an explicitly authored Phone treatment. Grouped Design boards remain useful
+for comparison. A Web collection index contains links rather than mounting every
+hero. A code-art specimen alone does not establish a recreation of its source's
+opening: include the defining typography, navigation, scale, negative space and
+media relationships, with source credit and fidelity notes outside the opening.
+
+Keep the first information-field, geometric-identity and research-montage
+originals visibly distinct before combining them. Information must function as
+an inhabited field; identity studies center on an evolving geometric actor;
+montages edit genuine research or diagram fragments. Vary the underlying
+composition, material and motion, and review the first six in grayscale at small
+size. Palette changes and a shared graphic-plus-caption arrangement do not
+establish different directions. Keep earlier work available for comparison.
+
 ## Native editable studies
 
 Build new visual-element recreations primarily from native Framer frames,
