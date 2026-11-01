@@ -1,0 +1,1328 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-014",
+  "title": "Unbelievably Crap",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-014-unbelievably-crap",
+  "width": 1440,
+  "height": 900,
+  "phoneWidth": 390,
+  "phoneHeight": 800,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 800,
+  "background": "#090909",
+  "stageAttrs": {
+    "fill": "#090909",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#090909",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Liubomyr Ulytskyi",
+    "url": "https://www.unbelievablycrap.com/",
+    "gallery": "https://www.awwwards.com/sites/unbelievably-crap",
+    "existingDesignPageID": "Q1tIlIqft",
+    "existingLabPageID": "iUjJa5763",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "f9_4RBrI3"
+      },
+      {
+        "target": "desktop",
+        "id": "icobQBS5f"
+      },
+      {
+        "target": "phone",
+        "id": "M1sPbnURDicobQBS5f"
+      }
+    ],
+    "oldComponentID": "codeFile/FuDaCpX:default"
+  },
+  "parts": [
+    {
+      "key": "ambient-light-falloff-0",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 0",
+        "position": "absolute",
+        "left": "-530px",
+        "top": "-815px",
+        "width": "2500px",
+        "height": "1450px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-330px",
+        "top": "-314.5px",
+        "width": "1050px",
+        "height": "609px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-1",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 1",
+        "position": "absolute",
+        "left": "-509.1667px",
+        "top": "-802.9167px",
+        "width": "2458.3333px",
+        "height": "1425.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-321.25px",
+        "top": "-309.425px",
+        "width": "1032.5px",
+        "height": "598.85px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-2",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 2",
+        "position": "absolute",
+        "left": "-488.3333px",
+        "top": "-790.8333px",
+        "width": "2416.6667px",
+        "height": "1401.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-312.5px",
+        "top": "-304.35px",
+        "width": "1015px",
+        "height": "588.7px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-3",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 3",
+        "position": "absolute",
+        "left": "-467.5px",
+        "top": "-778.75px",
+        "width": "2375px",
+        "height": "1377.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-303.75px",
+        "top": "-299.275px",
+        "width": "997.5px",
+        "height": "578.55px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-4",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 4",
+        "position": "absolute",
+        "left": "-446.6667px",
+        "top": "-766.6667px",
+        "width": "2333.3333px",
+        "height": "1353.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-295px",
+        "top": "-294.2px",
+        "width": "980px",
+        "height": "568.4px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-5",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 5",
+        "position": "absolute",
+        "left": "-425.8333px",
+        "top": "-754.5833px",
+        "width": "2291.6667px",
+        "height": "1329.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-286.25px",
+        "top": "-289.125px",
+        "width": "962.5px",
+        "height": "558.25px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-6",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 6",
+        "position": "absolute",
+        "left": "-405px",
+        "top": "-742.5px",
+        "width": "2250px",
+        "height": "1305px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-277.5px",
+        "top": "-284.05px",
+        "width": "945px",
+        "height": "548.1px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-7",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 7",
+        "position": "absolute",
+        "left": "-384.1667px",
+        "top": "-730.4167px",
+        "width": "2208.3333px",
+        "height": "1280.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-268.75px",
+        "top": "-278.975px",
+        "width": "927.5px",
+        "height": "537.95px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-8",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 8",
+        "position": "absolute",
+        "left": "-363.3333px",
+        "top": "-718.3333px",
+        "width": "2166.6667px",
+        "height": "1256.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-260px",
+        "top": "-273.9px",
+        "width": "910px",
+        "height": "527.8px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-9",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 9",
+        "position": "absolute",
+        "left": "-342.5px",
+        "top": "-706.25px",
+        "width": "2125px",
+        "height": "1232.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-251.25px",
+        "top": "-268.825px",
+        "width": "892.5px",
+        "height": "517.65px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-10",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 10",
+        "position": "absolute",
+        "left": "-321.6667px",
+        "top": "-694.1667px",
+        "width": "2083.3333px",
+        "height": "1208.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-242.5px",
+        "top": "-263.75px",
+        "width": "875px",
+        "height": "507.5px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-11",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 11",
+        "position": "absolute",
+        "left": "-300.8333px",
+        "top": "-682.0833px",
+        "width": "2041.6667px",
+        "height": "1184.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-233.75px",
+        "top": "-258.675px",
+        "width": "857.5px",
+        "height": "497.35px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-12",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 12",
+        "position": "absolute",
+        "left": "-280px",
+        "top": "-670px",
+        "width": "2000px",
+        "height": "1160px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-225px",
+        "top": "-253.6px",
+        "width": "840px",
+        "height": "487.2px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-13",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 13",
+        "position": "absolute",
+        "left": "-259.1667px",
+        "top": "-657.9167px",
+        "width": "1958.3333px",
+        "height": "1135.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-216.25px",
+        "top": "-248.525px",
+        "width": "822.5px",
+        "height": "477.05px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-14",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 14",
+        "position": "absolute",
+        "left": "-238.3333px",
+        "top": "-645.8333px",
+        "width": "1916.6667px",
+        "height": "1111.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-207.5px",
+        "top": "-243.45px",
+        "width": "805px",
+        "height": "466.9px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-15",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 15",
+        "position": "absolute",
+        "left": "-217.5px",
+        "top": "-633.75px",
+        "width": "1875px",
+        "height": "1087.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-198.75px",
+        "top": "-238.375px",
+        "width": "787.5px",
+        "height": "456.75px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-16",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 16",
+        "position": "absolute",
+        "left": "-196.6667px",
+        "top": "-621.6667px",
+        "width": "1833.3333px",
+        "height": "1063.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-190px",
+        "top": "-233.3px",
+        "width": "770px",
+        "height": "446.6px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-17",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 17",
+        "position": "absolute",
+        "left": "-175.8333px",
+        "top": "-609.5833px",
+        "width": "1791.6667px",
+        "height": "1039.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-181.25px",
+        "top": "-228.225px",
+        "width": "752.5px",
+        "height": "436.45px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-18",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 18",
+        "position": "absolute",
+        "left": "-155px",
+        "top": "-597.5px",
+        "width": "1750px",
+        "height": "1015px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-172.5px",
+        "top": "-223.15px",
+        "width": "735px",
+        "height": "426.3px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-19",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 19",
+        "position": "absolute",
+        "left": "-134.1667px",
+        "top": "-585.4167px",
+        "width": "1708.3333px",
+        "height": "990.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-163.75px",
+        "top": "-218.075px",
+        "width": "717.5px",
+        "height": "416.15px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-20",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 20",
+        "position": "absolute",
+        "left": "-113.3333px",
+        "top": "-573.3333px",
+        "width": "1666.6667px",
+        "height": "966.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-155px",
+        "top": "-213px",
+        "width": "700px",
+        "height": "406px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-21",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 21",
+        "position": "absolute",
+        "left": "-92.5px",
+        "top": "-561.25px",
+        "width": "1625px",
+        "height": "942.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-146.25px",
+        "top": "-207.925px",
+        "width": "682.5px",
+        "height": "395.85px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-22",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 22",
+        "position": "absolute",
+        "left": "-71.6667px",
+        "top": "-549.1667px",
+        "width": "1583.3333px",
+        "height": "918.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-137.5px",
+        "top": "-202.85px",
+        "width": "665px",
+        "height": "385.7px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-23",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 23",
+        "position": "absolute",
+        "left": "-50.8333px",
+        "top": "-537.0833px",
+        "width": "1541.6667px",
+        "height": "894.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-128.75px",
+        "top": "-197.775px",
+        "width": "647.5px",
+        "height": "375.55px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-24",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 24",
+        "position": "absolute",
+        "left": "-30px",
+        "top": "-525px",
+        "width": "1500px",
+        "height": "870px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-120px",
+        "top": "-192.7px",
+        "width": "630px",
+        "height": "365.4px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-25",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 25",
+        "position": "absolute",
+        "left": "-9.1667px",
+        "top": "-512.9167px",
+        "width": "1458.3333px",
+        "height": "845.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-111.25px",
+        "top": "-187.625px",
+        "width": "612.5px",
+        "height": "355.25px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-26",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 26",
+        "position": "absolute",
+        "left": "11.6667px",
+        "top": "-500.8333px",
+        "width": "1416.6667px",
+        "height": "821.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-102.5px",
+        "top": "-182.55px",
+        "width": "595px",
+        "height": "345.1px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-27",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 27",
+        "position": "absolute",
+        "left": "32.5px",
+        "top": "-488.75px",
+        "width": "1375px",
+        "height": "797.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-93.75px",
+        "top": "-177.475px",
+        "width": "577.5px",
+        "height": "334.95px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-28",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 28",
+        "position": "absolute",
+        "left": "53.3333px",
+        "top": "-476.6667px",
+        "width": "1333.3333px",
+        "height": "773.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-85px",
+        "top": "-172.4px",
+        "width": "560px",
+        "height": "324.8px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-29",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 29",
+        "position": "absolute",
+        "left": "74.1667px",
+        "top": "-464.5833px",
+        "width": "1291.6667px",
+        "height": "749.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-76.25px",
+        "top": "-167.325px",
+        "width": "542.5px",
+        "height": "314.65px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-30",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 30",
+        "position": "absolute",
+        "left": "95px",
+        "top": "-452.5px",
+        "width": "1250px",
+        "height": "725px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-67.5px",
+        "top": "-162.25px",
+        "width": "525px",
+        "height": "304.5px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-31",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 31",
+        "position": "absolute",
+        "left": "115.8333px",
+        "top": "-440.4167px",
+        "width": "1208.3333px",
+        "height": "700.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-58.75px",
+        "top": "-157.175px",
+        "width": "507.5px",
+        "height": "294.35px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-32",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 32",
+        "position": "absolute",
+        "left": "136.6667px",
+        "top": "-428.3333px",
+        "width": "1166.6667px",
+        "height": "676.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-50px",
+        "top": "-152.1px",
+        "width": "490px",
+        "height": "284.2px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-33",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 33",
+        "position": "absolute",
+        "left": "157.5px",
+        "top": "-416.25px",
+        "width": "1125px",
+        "height": "652.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-41.25px",
+        "top": "-147.025px",
+        "width": "472.5px",
+        "height": "274.05px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-34",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 34",
+        "position": "absolute",
+        "left": "178.3333px",
+        "top": "-404.1667px",
+        "width": "1083.3333px",
+        "height": "628.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-32.5px",
+        "top": "-141.95px",
+        "width": "455px",
+        "height": "263.9px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-35",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 35",
+        "position": "absolute",
+        "left": "199.1667px",
+        "top": "-392.0833px",
+        "width": "1041.6667px",
+        "height": "604.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-23.75px",
+        "top": "-136.875px",
+        "width": "437.5px",
+        "height": "253.75px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-36",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 36",
+        "position": "absolute",
+        "left": "220px",
+        "top": "-380px",
+        "width": "1000px",
+        "height": "580px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-15px",
+        "top": "-131.8px",
+        "width": "420px",
+        "height": "243.6px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-37",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 37",
+        "position": "absolute",
+        "left": "240.8333px",
+        "top": "-367.9167px",
+        "width": "958.3333px",
+        "height": "555.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "-6.25px",
+        "top": "-126.725px",
+        "width": "402.5px",
+        "height": "233.45px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-38",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 38",
+        "position": "absolute",
+        "left": "261.6667px",
+        "top": "-355.8333px",
+        "width": "916.6667px",
+        "height": "531.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "2.5px",
+        "top": "-121.65px",
+        "width": "385px",
+        "height": "223.3px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-39",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 39",
+        "position": "absolute",
+        "left": "282.5px",
+        "top": "-343.75px",
+        "width": "875px",
+        "height": "507.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "11.25px",
+        "top": "-116.575px",
+        "width": "367.5px",
+        "height": "213.15px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-40",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 40",
+        "position": "absolute",
+        "left": "303.3333px",
+        "top": "-331.6667px",
+        "width": "833.3333px",
+        "height": "483.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "20px",
+        "top": "-111.5px",
+        "width": "350px",
+        "height": "203px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-41",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 41",
+        "position": "absolute",
+        "left": "324.1667px",
+        "top": "-319.5833px",
+        "width": "791.6667px",
+        "height": "459.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "28.75px",
+        "top": "-106.425px",
+        "width": "332.5px",
+        "height": "192.85px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-42",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 42",
+        "position": "absolute",
+        "left": "345px",
+        "top": "-307.5px",
+        "width": "750px",
+        "height": "435px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "37.5px",
+        "top": "-101.35px",
+        "width": "315px",
+        "height": "182.7px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-43",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 43",
+        "position": "absolute",
+        "left": "365.8333px",
+        "top": "-295.4167px",
+        "width": "708.3333px",
+        "height": "410.8333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "46.25px",
+        "top": "-96.275px",
+        "width": "297.5px",
+        "height": "172.55px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-44",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 44",
+        "position": "absolute",
+        "left": "386.6667px",
+        "top": "-283.3333px",
+        "width": "666.6667px",
+        "height": "386.6667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "55px",
+        "top": "-91.2px",
+        "width": "280px",
+        "height": "162.4px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-45",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 45",
+        "position": "absolute",
+        "left": "407.5px",
+        "top": "-271.25px",
+        "width": "625px",
+        "height": "362.5px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "63.75px",
+        "top": "-86.125px",
+        "width": "262.5px",
+        "height": "152.25px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-46",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 46",
+        "position": "absolute",
+        "left": "428.3333px",
+        "top": "-259.1667px",
+        "width": "583.3333px",
+        "height": "338.3333px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "72.5px",
+        "top": "-81.05px",
+        "width": "245px",
+        "height": "142.1px"
+      }
+    },
+    {
+      "key": "ambient-light-falloff-47",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "ambient light falloff 47",
+        "position": "absolute",
+        "left": "449.1667px",
+        "top": "-247.0833px",
+        "width": "541.6667px",
+        "height": "314.1667px",
+        "fill": "#eeeeee",
+        "radius": "50%",
+        "opacity": 0.035
+      },
+      "phone": {
+        "left": "81.25px",
+        "top": "-75.975px",
+        "width": "227.5px",
+        "height": "131.95px"
+      }
+    },
+    {
+      "key": "source-white-poster",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source white poster",
+        "position": "absolute",
+        "left": "200px",
+        "top": "115px",
+        "width": "1040px",
+        "height": "575px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "12px",
+        "top": "80px",
+        "width": "351px",
+        "height": "600px"
+      }
+    },
+    {
+      "key": "actual-live-raster-portrait",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "source-white-poster",
+      "attrs": {
+        "name": "actual live raster portrait",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1040px",
+        "height": "575px"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "351px",
+        "height": "600px"
+      },
+      "instanceProps": {
+        "study": "raster",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#ffffff",
+        "light": "#ffffff",
+        "secondary": "#ffffff",
+        "accent": "#ff0000",
+        "ink": "#111111",
+        "showLabels": false,
+        "playbackPosition": "overlay"
+      }
+    },
+    {
+      "key": "native-0039",
+      "type": "RichTextNode",
+      "parent": "source-white-poster",
+      "attrs": {
+        "name": "native 0039",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "74px",
+        "lineHeight": "74px",
+        "paragraphSpacing": 0,
+        "left": "251px",
+        "top": "73px",
+        "width": "200px",
+        "fontWeight": 600,
+        "textColor": "#000000",
+        "rotation": "-90deg",
+        "text": "0039"
+      },
+      "phone": {
+        "left": "25px",
+        "top": "59px",
+        "width": "150px",
+        "fontSize": "48px",
+        "lineHeight": "52px",
+        "rotation": "-90deg"
+      }
+    },
+    {
+      "key": "source-top-left-roles",
+      "type": "RichTextNode",
+      "parent": "source-white-poster",
+      "attrs": {
+        "name": "source top left roles",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "6px",
+        "lineHeight": "8px",
+        "paragraphSpacing": 0,
+        "left": "12px",
+        "top": "7px",
+        "width": "230px",
+        "textColor": "#111111",
+        "text": "DIGITAL DESIGNER     ART DIRECTION\n                    ANIMATION\n                    CREATIVE DEVELOPMENT"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "10px",
+        "width": "260px",
+        "fontSize": "6px",
+        "lineHeight": "8px"
+      }
+    },
+    {
+      "key": "source-projection-catalog",
+      "type": "RichTextNode",
+      "parent": "source-white-poster",
+      "attrs": {
+        "name": "source projection catalog",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "6px",
+        "lineHeight": "8px",
+        "paragraphSpacing": 0,
+        "left": "495px",
+        "top": "70px",
+        "width": "80px",
+        "textColor": "#111111",
+        "text": "PORTRAIT\nSURFACE\nPROJECTION\nINDEX\n\nRASTER\nSCAN"
+      },
+      "phone": {
+        "left": "205px",
+        "top": "65px",
+        "width": "65px",
+        "fontSize": "6px",
+        "lineHeight": "8px"
+      }
+    },
+    {
+      "key": "source-dark-bottom-navigation",
+      "type": "FrameNode",
+      "parent": "source-white-poster",
+      "attrs": {
+        "name": "source dark bottom navigation",
+        "position": "absolute",
+        "left": "0px",
+        "top": "553px",
+        "width": "1040px",
+        "height": "22px",
+        "fill": "#333333"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "578px",
+        "width": "366px",
+        "height": "22px"
+      }
+    },
+    {
+      "key": "source-bottom-menu",
+      "type": "RichTextNode",
+      "parent": "source-dark-bottom-navigation",
+      "attrs": {
+        "name": "source bottom menu",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "8px",
+        "lineHeight": "10px",
+        "paragraphSpacing": 0,
+        "left": "10px",
+        "top": "7px",
+        "width": "1000px",
+        "textColor": "#eeeeee",
+        "text": "INDEX +   WORK +   GALLERY +   ERROR +"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "7px",
+        "width": "350px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-014 / CREDITED RECREATION",
+    "title": "Unbelievably Crap",
+    "influences": "Original: Liubomyr Ulytskyi · https://www.unbelievablycrap.com/",
+    "links": [
+      {
+        "label": "Original source / Liubomyr Ulytskyi ↗",
+        "href": "https://www.unbelievablycrap.com/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.awwwards.com/sites/unbelievably-crap"
+      }
+    ],
+    "limits": "Native framed white portrait opening, 0039, peripheral UI and dark bottom strip surround the actual live red-bar raster/bust surface. Lee Perry-Smith head/bust, CC BY3.0, is an explicit adapted stand-in; no original full-body mesh or source full-scroll reproduction. Ambient light is approximated with48 low-opacity native material layers; Phone composition newly adapted."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "geometryLicense": {
+    "creator": "Lee Perry-Smith",
+    "license": "CC BY3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+    "scope": "Adapted documented head/bust stand-in, not Liubomyr’s original source mesh."
+  },
+  "phoneSafeArea": "Native readable controls stay within375px actual Preview content beside the15px scrollbar in390px Phone frame; full background may bleed to390px.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-016",
+  "title": "Origin",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-016-origin",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 930,
+  "openingHeight": 1000,
+  "phoneOpeningHeight": 930,
+  "background": "#ffffff",
+  "stageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Origin Studio; gallery submitter Ben Blackburn (not proof of website authorship)",
+    "url": "https://www.originbrand.io/",
+    "gallery": "https://minimal.gallery/origin/",
+    "existingDesignPageID": "bS3wbS1E4",
+    "existingNativeArtworkID": "kHUbycf9v",
+    "nativeRecipe": {
+      "path": "docs/design-studies/hero-recreations/native/HERO-016.json",
+      "bytes": 37133,
+      "sha256": "db15f10bd9a8d32874d1dee985a16104b5b3ecec7a96189f274a69a36066f7ea"
+    }
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "constructed-origin-wordmark",
+      "parent": "stage",
+      "attrs": {
+        "name": "constructed origin wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "25px",
+        "width": "390px",
+        "height": "280px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-o-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter o outer",
+        "position": "absolute",
+        "left": "12px",
+        "top": "76px",
+        "width": "314px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "114px"
+      },
+      "phone": {
+        "left": "3.25px",
+        "top": "20.5833px",
+        "width": "85.0417px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-o-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter o counter",
+        "position": "absolute",
+        "left": "61px",
+        "top": "125px",
+        "width": "216px",
+        "height": "168px",
+        "fill": "#ffffff",
+        "radius": "65px"
+      },
+      "phone": {
+        "left": "16.5208px",
+        "top": "33.8542px",
+        "width": "58.5px",
+        "height": "45.5px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-shoulder",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r shoulder",
+        "position": "absolute",
+        "left": "356px",
+        "top": "76px",
+        "width": "214px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "112px"
+      },
+      "phone": {
+        "left": "96.4167px",
+        "top": "20.5833px",
+        "width": "57.9583px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-open-right",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r open right",
+        "position": "absolute",
+        "left": "404px",
+        "top": "126px",
+        "width": "180px",
+        "height": "250px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "109.4167px",
+        "top": "34.125px",
+        "width": "48.75px",
+        "height": "67.7083px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r stem",
+        "position": "absolute",
+        "left": "356px",
+        "top": "187px",
+        "width": "49px",
+        "height": "155px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "96.4167px",
+        "top": "50.6458px",
+        "width": "13.2708px",
+        "height": "41.9792px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-top-terminal",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r top terminal",
+        "position": "absolute",
+        "left": "468px",
+        "top": "76px",
+        "width": "75px",
+        "height": "50px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "126.75px",
+        "top": "20.5833px",
+        "width": "20.3125px",
+        "height": "13.5417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-r-trim",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter r trim",
+        "position": "absolute",
+        "left": "543px",
+        "top": "76px",
+        "width": "42px",
+        "height": "270px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "147.0625px",
+        "top": "20.5833px",
+        "width": "11.375px",
+        "height": "73.125px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "first-i-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "first i stem",
+        "position": "absolute",
+        "left": "578px",
+        "top": "76px",
+        "width": "49px",
+        "height": "266px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "156.5417px",
+        "top": "20.5833px",
+        "width": "13.2708px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "first-i-dot",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "first i dot",
+        "position": "absolute",
+        "left": "578px",
+        "top": "9px",
+        "width": "49px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "156.5417px",
+        "top": "2.4375px",
+        "width": "13.2708px",
+        "height": "13.2708px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "second-i-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "second i stem",
+        "position": "absolute",
+        "left": "1018px",
+        "top": "76px",
+        "width": "49px",
+        "height": "266px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "275.7083px",
+        "top": "20.5833px",
+        "width": "13.2708px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "second-i-dot",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "second i dot",
+        "position": "absolute",
+        "left": "1018px",
+        "top": "9px",
+        "width": "49px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "275.7083px",
+        "top": "2.4375px",
+        "width": "13.2708px",
+        "height": "13.2708px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-hook",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g hook",
+        "position": "absolute",
+        "left": "668px",
+        "top": "232px",
+        "width": "319px",
+        "height": "193px",
+        "fill": "#c9c9c9",
+        "radius": "102px"
+      },
+      "phone": {
+        "left": "180.9167px",
+        "top": "62.8333px",
+        "width": "86.3958px",
+        "height": "52.2708px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-hook-cutout",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g hook cutout",
+        "position": "absolute",
+        "left": "653px",
+        "top": "220px",
+        "width": "285px",
+        "height": "156px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "176.8542px",
+        "top": "59.5833px",
+        "width": "77.1875px",
+        "height": "42.25px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-tail",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g tail",
+        "position": "absolute",
+        "left": "676px",
+        "top": "376px",
+        "width": "205px",
+        "height": "49px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "183.0833px",
+        "top": "101.8333px",
+        "width": "55.5208px",
+        "height": "13.2708px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-bowl-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g bowl outer",
+        "position": "absolute",
+        "left": "657px",
+        "top": "76px",
+        "width": "330px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "112px"
+      },
+      "phone": {
+        "left": "177.9375px",
+        "top": "20.5833px",
+        "width": "89.375px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-g-bowl-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter g bowl counter",
+        "position": "absolute",
+        "left": "706px",
+        "top": "125px",
+        "width": "232px",
+        "height": "168px",
+        "fill": "#ffffff",
+        "radius": "63px"
+      },
+      "phone": {
+        "left": "191.2083px",
+        "top": "33.8542px",
+        "width": "62.8333px",
+        "height": "45.5px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-outer",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n outer",
+        "position": "absolute",
+        "left": "1098px",
+        "top": "76px",
+        "width": "314px",
+        "height": "266px",
+        "fill": "#c9c9c9",
+        "radius": "113px"
+      },
+      "phone": {
+        "left": "297.375px",
+        "top": "20.5833px",
+        "width": "85.0417px",
+        "height": "72.0417px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-counter",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n counter",
+        "position": "absolute",
+        "left": "1147px",
+        "top": "125px",
+        "width": "216px",
+        "height": "265px",
+        "fill": "#ffffff",
+        "radius": "47px"
+      },
+      "phone": {
+        "left": "310.6458px",
+        "top": "33.8542px",
+        "width": "58.5px",
+        "height": "71.7708px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-left-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n left stem",
+        "position": "absolute",
+        "left": "1098px",
+        "top": "204px",
+        "width": "49px",
+        "height": "138px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "297.375px",
+        "top": "55.25px",
+        "width": "13.2708px",
+        "height": "37.375px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "letter-n-right-stem",
+      "parent": "constructed-origin-wordmark",
+      "attrs": {
+        "name": "letter n right stem",
+        "position": "absolute",
+        "left": "1363px",
+        "top": "204px",
+        "width": "49px",
+        "height": "138px",
+        "fill": "#c9c9c9"
+      },
+      "phone": {
+        "left": "369.1458px",
+        "top": "55.25px",
+        "width": "13.2708px",
+        "height": "37.375px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "shortened-proposition",
+      "parent": "stage",
+      "attrs": {
+        "name": "shortened proposition",
+        "position": "absolute",
+        "left": "16px",
+        "top": "826px",
+        "width": "600px",
+        "height": "auto",
+        "text": "Brand systems for founder-led\ncompanies at a turning point.",
+        "fontName": "Inter",
+        "fontSize": "31px",
+        "lineHeight": "36px",
+        "textColor": "#bcbcbc",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "20px",
+        "top": "420px",
+        "width": "350px",
+        "fontSize": "26px",
+        "lineHeight": "30px",
+        "text": "Brand systems for\nfounder-led companies\nat a turning point."
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "utility-card",
+      "parent": "stage",
+      "attrs": {
+        "name": "utility card",
+        "position": "absolute",
+        "left": "1028px",
+        "top": "834px",
+        "width": "396px",
+        "height": "96px",
+        "fill": "#ededed",
+        "radius": "36px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "640px",
+        "width": "350px",
+        "height": "96px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "source-scale-light-tile",
+      "parent": "utility-card",
+      "attrs": {
+        "name": "source scale light tile",
+        "position": "absolute",
+        "left": "12px",
+        "top": "12px",
+        "width": "72px",
+        "height": "72px",
+        "fill": "#000000",
+        "radius": "30%",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "12px",
+        "top": "12px",
+        "width": "72px",
+        "height": "72px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "shortened-card-copy",
+      "parent": "utility-card",
+      "attrs": {
+        "name": "shortened card copy",
+        "position": "absolute",
+        "left": "100px",
+        "top": "16px",
+        "width": "276px",
+        "height": "auto",
+        "text": "Programs built around\nmoments of change.",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "17px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "100px",
+        "top": "16px",
+        "width": "238px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "learn-more",
+      "parent": "stage",
+      "attrs": {
+        "name": "learn more",
+        "position": "absolute",
+        "left": "1160px",
+        "top": "954px",
+        "width": "90px",
+        "height": "auto",
+        "text": "Learn more",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "11.88px",
+        "textColor": "#bbbbbb",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "120px",
+        "top": "812px",
+        "width": "90px",
+        "fontSize": "11px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "programs-button",
+      "parent": "stage",
+      "attrs": {
+        "name": "programs button",
+        "position": "absolute",
+        "left": "1264px",
+        "top": "946px",
+        "width": "83px",
+        "height": "32px",
+        "fill": "#e7e7e7",
+        "radius": "7px"
+      },
+      "phone": {
+        "left": "218px",
+        "top": "800px",
+        "width": "80px",
+        "height": "32px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "programs-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "programs label",
+        "position": "absolute",
+        "left": "1275px",
+        "top": "957px",
+        "width": "73px",
+        "height": "auto",
+        "text": "PROGRAMS",
+        "fontName": "Inter",
+        "fontSize": "9px",
+        "lineHeight": "9.72px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "228px",
+        "top": "811px",
+        "width": "68px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "menu-button",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu button",
+        "position": "absolute",
+        "left": "1356px",
+        "top": "946px",
+        "width": "68px",
+        "height": "32px",
+        "fill": "#e7e7e7",
+        "radius": "7px"
+      },
+      "phone": {
+        "left": "308px",
+        "top": "800px",
+        "width": "64px",
+        "height": "32px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "menu-label",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu label",
+        "position": "absolute",
+        "left": "1373px",
+        "top": "957px",
+        "width": "47px",
+        "height": "auto",
+        "text": "MENU",
+        "fontName": "Inter",
+        "fontSize": "9px",
+        "lineHeight": "9.72px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "326px",
+        "top": "811px",
+        "width": "44px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "origin-live-light",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "source-scale-light-tile",
+      "attrs": {
+        "name": "Origin / compact procedural source light",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "72px",
+        "height": "72px",
+        "radius": "30%",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "72px",
+        "height": "72px",
+        "radius": "30%",
+        "overflow": "visible"
+      },
+      "instanceProps": {
+        "study": "origin",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#c4e5ca",
+        "light": "#ffffff",
+        "secondary": "#f3f3f1",
+        "accent": "#ff0000",
+        "ink": "#11120f",
+        "showLabels": false,
+        "playbackPosition": "below"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-016 / CREDITED RECREATION",
+    "title": "Origin",
+    "influences": "Original: Origin Studio; gallery submitter Ben Blackburn (not proof of website authorship) · https://www.originbrand.io/ · https://minimal.gallery/origin/",
+    "links": [
+      {
+        "label": "Original source / Origin Studio ↗",
+        "href": "https://www.originbrand.io/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://minimal.gallery/origin/"
+      }
+    ],
+    "limits": "Native full-opening wordmark/card with one compact live light tile. Light motion is an independent approximation; source renderer and input coupling remain unverified. Shortened copy and constructed lettering substitute the source. Enlarged static keyframe annotations remain only on the preserved Design board; new Web has none. Pause/Play is explicitly below the tile."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "slotKeys": [
+        "origin-live-light"
+      ],
+      "status": "awaiting-exact-registered-source-receipt"
+    }
+  ],
+  "compactPlayback": {
+    "placement": "below",
+    "tileSize": 72,
+    "reservedBelowPixels": 30,
+    "canvasRounding": "30% radius on actualblackcanvas only; outsidebutton must remain un-clipped by both tile and utility card",
+    "requiredActualPreview": "Visible moving small light plus independently accessible Pause/Play below tile onDesktop andPhone; no enlargedfield replacing sourceutilitytile"
+  },
+  "phoneAdaptation": "Full-width pale wordmark, readable26px proposition and compact72px live utility tile with30px clear playback space; no giant black demo panel.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

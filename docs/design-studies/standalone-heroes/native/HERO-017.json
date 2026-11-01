@@ -1,0 +1,1990 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-017",
+  "title": "Bleibtgleich 2026",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-017-bleibtgleich-2026",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 1080,
+  "openingHeight": 1000,
+  "phoneOpeningHeight": 1080,
+  "background": "#ffffff",
+  "stageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Maksym Bleibtgleich",
+    "url": "https://bleibtgleich.dev/",
+    "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+    "existingDesignPageID": "bS3wbS1E4",
+    "existingNativeArtworkID": "xvdaw_n4c",
+    "nativeRecipe": {
+      "path": "docs/design-studies/hero-recreations/native/HERO-017.json",
+      "bytes": 35667,
+      "sha256": "c8385157d2a9f384bf425a75f4fccedfdf85a373aff924ee577aecb8f088f104"
+    },
+    "inspectedCaptures": [
+      {
+        "path": "../hero-recreations-2026-10-31/remaining-12/sources/HERO-017-primary-0.png",
+        "bytes": 41676,
+        "sha256": "9ba88206d8255f06f51f8a2059643bbef11b73916d55a7b4fb45c851ebd443f0",
+        "scope": "Inspected primary Desktop state; Phone adaptation authored separately"
+      },
+      {
+        "path": "../hero-recreations-2026-10-31/remaining-12/sources/HERO-017-primary-1.png",
+        "bytes": 40933,
+        "sha256": "01914dfe036f46795b80497e9be0c5a18a57d4a49ce7adab336b89a60b4eb7a7",
+        "scope": "Inspected primary Desktop state; Phone adaptation authored separately"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "left-edge-marker",
+      "parent": "stage",
+      "attrs": {
+        "name": "left edge marker",
+        "position": "absolute",
+        "left": "16px",
+        "top": "20px",
+        "width": "15px",
+        "height": "34px",
+        "fill": "#f3f3f3"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "20px",
+        "width": "12px",
+        "height": "28px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "vertical-identity-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "vertical identity rule",
+        "position": "absolute",
+        "left": "263px",
+        "top": "292.5px",
+        "width": "554px",
+        "height": "1px",
+        "fill": "#080808",
+        "rotation": "90deg"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "110px",
+        "width": "1px",
+        "height": "850px",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "location-role",
+      "parent": "stage",
+      "attrs": {
+        "name": "location role",
+        "position": "absolute",
+        "left": "558px",
+        "top": "16px",
+        "width": "320px",
+        "height": "auto",
+        "text": "Based in Kyiv\nWorking w/ TFTL",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "16px",
+        "textColor": "#050505",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "42px",
+        "top": "22px",
+        "width": "230px",
+        "fontSize": "12px",
+        "lineHeight": "16px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "menu-capsule",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu capsule",
+        "position": "absolute",
+        "left": "1350px",
+        "top": "16px",
+        "width": "70px",
+        "height": "26px",
+        "fill": "#000000",
+        "radius": "15px"
+      },
+      "phone": {
+        "left": "312px",
+        "top": "20px",
+        "width": "60px",
+        "height": "26px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "menu-caption",
+      "parent": "stage",
+      "attrs": {
+        "name": "menu caption",
+        "position": "absolute",
+        "left": "1364px",
+        "top": "20px",
+        "width": "60px",
+        "height": "auto",
+        "text": "Menu",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "14.04px",
+        "textColor": "#ffffff",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "326px",
+        "top": "24px",
+        "width": "50px",
+        "fontSize": "12px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "native-organic-aperture",
+      "parent": "stage",
+      "attrs": {
+        "name": "native organic aperture",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "1080px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-1-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 1 0",
+        "position": "absolute",
+        "left": "397.067px",
+        "top": "20px",
+        "width": "10.267px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "53.7615px",
+        "top": "135px",
+        "width": "15.4974px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-2-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 2 0",
+        "position": "absolute",
+        "left": "396.133px",
+        "top": "22px",
+        "width": "17.594px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "52.3517px",
+        "top": "138.0189px",
+        "width": "26.557px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-3-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 3 0",
+        "position": "absolute",
+        "left": "395.2px",
+        "top": "24px",
+        "width": "21.982px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "50.9434px",
+        "top": "141.0377px",
+        "width": "33.1804px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-4-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 4 0",
+        "position": "absolute",
+        "left": "394.267px",
+        "top": "26px",
+        "width": "26.37px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "49.5351px",
+        "top": "144.0566px",
+        "width": "39.8038px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-5-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 5 0",
+        "position": "absolute",
+        "left": "393.333px",
+        "top": "28px",
+        "width": "30.758px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "48.1253px",
+        "top": "147.0755px",
+        "width": "46.4272px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-6-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 6 0",
+        "position": "absolute",
+        "left": "392.4px",
+        "top": "30px",
+        "width": "35.145px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "46.717px",
+        "top": "150.0943px",
+        "width": "53.0491px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-7-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 7 0",
+        "position": "absolute",
+        "left": "391.467px",
+        "top": "32px",
+        "width": "39.533px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "45.3087px",
+        "top": "153.1132px",
+        "width": "59.6725px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-8-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 8 0",
+        "position": "absolute",
+        "left": "390.533px",
+        "top": "34px",
+        "width": "41.878px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "43.8989px",
+        "top": "156.1321px",
+        "width": "63.2121px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-9-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 9 0",
+        "position": "absolute",
+        "left": "389.6px",
+        "top": "36px",
+        "width": "44.224px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "42.4906px",
+        "top": "159.1509px",
+        "width": "66.7532px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-10-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 10 0",
+        "position": "absolute",
+        "left": "388.667px",
+        "top": "38px",
+        "width": "46.569px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "41.0823px",
+        "top": "162.1698px",
+        "width": "70.2928px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-11-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 11 0",
+        "position": "absolute",
+        "left": "387.733px",
+        "top": "40px",
+        "width": "48.914px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "39.6725px",
+        "top": "165.1887px",
+        "width": "73.8325px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-12-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 12 0",
+        "position": "absolute",
+        "left": "386.8px",
+        "top": "42px",
+        "width": "51.259px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "38.2642px",
+        "top": "168.2075px",
+        "width": "77.3721px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-13-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 13 0",
+        "position": "absolute",
+        "left": "385.867px",
+        "top": "44px",
+        "width": "53.604px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "36.8558px",
+        "top": "171.2264px",
+        "width": "80.9117px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-14-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 14 0",
+        "position": "absolute",
+        "left": "384.933px",
+        "top": "46px",
+        "width": "55.949px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "35.446px",
+        "top": "174.2453px",
+        "width": "84.4513px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-15-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 15 0",
+        "position": "absolute",
+        "left": "384px",
+        "top": "48px",
+        "width": "58.294px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "34.0377px",
+        "top": "177.2642px",
+        "width": "87.9909px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-16-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 16 0",
+        "position": "absolute",
+        "left": "383.846px",
+        "top": "50px",
+        "width": "59.522px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.8053px",
+        "top": "180.283px",
+        "width": "89.8445px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-17-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 17 0",
+        "position": "absolute",
+        "left": "383.692px",
+        "top": "52px",
+        "width": "60.413px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.5728px",
+        "top": "183.3019px",
+        "width": "91.1894px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-18-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 18 0",
+        "position": "absolute",
+        "left": "383.538px",
+        "top": "54px",
+        "width": "61.304px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.3404px",
+        "top": "186.3208px",
+        "width": "92.5343px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-19-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 19 0",
+        "position": "absolute",
+        "left": "383.385px",
+        "top": "56px",
+        "width": "62.194px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.1094px",
+        "top": "189.3396px",
+        "width": "93.8777px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-20-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 20 0",
+        "position": "absolute",
+        "left": "383.231px",
+        "top": "58px",
+        "width": "63.085px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.877px",
+        "top": "192.3585px",
+        "width": "95.2226px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-21-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 21 0",
+        "position": "absolute",
+        "left": "383.077px",
+        "top": "60px",
+        "width": "63.976px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.6445px",
+        "top": "195.3774px",
+        "width": "96.5675px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-22-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 22 0",
+        "position": "absolute",
+        "left": "382.824px",
+        "top": "62px",
+        "width": "64.966px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.2626px",
+        "top": "198.3962px",
+        "width": "98.0619px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-23-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 23 0",
+        "position": "absolute",
+        "left": "382.471px",
+        "top": "64px",
+        "width": "66.056px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "31.7298px",
+        "top": "201.4151px",
+        "width": "99.7072px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-24-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 24 0",
+        "position": "absolute",
+        "left": "382.118px",
+        "top": "66px",
+        "width": "67.146px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "31.197px",
+        "top": "204.434px",
+        "width": "101.3525px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-25-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 25 0",
+        "position": "absolute",
+        "left": "381.765px",
+        "top": "68px",
+        "width": "68.235px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "30.6642px",
+        "top": "207.4528px",
+        "width": "102.9962px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-26-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 26 0",
+        "position": "absolute",
+        "left": "381.412px",
+        "top": "70px",
+        "width": "69.388px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "30.1313px",
+        "top": "210.4717px",
+        "width": "104.7366px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-27-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 27 0",
+        "position": "absolute",
+        "left": "381.059px",
+        "top": "72px",
+        "width": "70.541px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "29.5985px",
+        "top": "213.4906px",
+        "width": "106.477px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-28-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 28 0",
+        "position": "absolute",
+        "left": "380.706px",
+        "top": "74px",
+        "width": "71.694px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "29.0657px",
+        "top": "216.5094px",
+        "width": "108.2174px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-29-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 29 0",
+        "position": "absolute",
+        "left": "380.353px",
+        "top": "76px",
+        "width": "72.847px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "28.5328px",
+        "top": "219.5283px",
+        "width": "109.9577px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-30-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 30 0",
+        "position": "absolute",
+        "left": "380px",
+        "top": "78px",
+        "width": "74px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "28px",
+        "top": "222.5472px",
+        "width": "111.6981px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-31-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 31 0",
+        "position": "absolute",
+        "left": "380.667px",
+        "top": "80px",
+        "width": "74.133px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "29.0068px",
+        "top": "225.566px",
+        "width": "111.8989px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-32-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 32 0",
+        "position": "absolute",
+        "left": "381.333px",
+        "top": "82px",
+        "width": "74.267px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "30.0121px",
+        "top": "228.5849px",
+        "width": "112.1011px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-33-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 33 0",
+        "position": "absolute",
+        "left": "382px",
+        "top": "84px",
+        "width": "74px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "31.0189px",
+        "top": "231.6038px",
+        "width": "111.6981px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-34-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 34 0",
+        "position": "absolute",
+        "left": "382.667px",
+        "top": "86px",
+        "width": "73.333px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.0257px",
+        "top": "234.6226px",
+        "width": "110.6913px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-35-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 35 0",
+        "position": "absolute",
+        "left": "383.333px",
+        "top": "88px",
+        "width": "72.667px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.0309px",
+        "top": "237.6415px",
+        "width": "109.686px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-36-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 36 0",
+        "position": "absolute",
+        "left": "384px",
+        "top": "90px",
+        "width": "72px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "34.0377px",
+        "top": "240.6604px",
+        "width": "108.6792px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-37-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 37 0",
+        "position": "absolute",
+        "left": "384.667px",
+        "top": "92px",
+        "width": "71.333px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "35.0445px",
+        "top": "243.6792px",
+        "width": "107.6725px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-38-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 38 0",
+        "position": "absolute",
+        "left": "384.714px",
+        "top": "94px",
+        "width": "71.286px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "35.1155px",
+        "top": "246.6981px",
+        "width": "107.6015px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-39-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 39 0",
+        "position": "absolute",
+        "left": "384.143px",
+        "top": "96px",
+        "width": "71.857px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "34.2536px",
+        "top": "249.717px",
+        "width": "108.4634px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-40-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 40 0",
+        "position": "absolute",
+        "left": "383.571px",
+        "top": "98px",
+        "width": "72.429px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.3902px",
+        "top": "252.7358px",
+        "width": "109.3268px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-41-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 41 0",
+        "position": "absolute",
+        "left": "383px",
+        "top": "100px",
+        "width": "75px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.5283px",
+        "top": "255.7547px",
+        "width": "113.2075px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-42-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 42 0",
+        "position": "absolute",
+        "left": "382.429px",
+        "top": "102px",
+        "width": "77.571px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "31.6664px",
+        "top": "258.7736px",
+        "width": "117.0883px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-43-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 43 0",
+        "position": "absolute",
+        "left": "381.857px",
+        "top": "104px",
+        "width": "80.143px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "30.803px",
+        "top": "261.7925px",
+        "width": "120.9706px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-44-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 44 0",
+        "position": "absolute",
+        "left": "381.286px",
+        "top": "106px",
+        "width": "82.714px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "29.9411px",
+        "top": "264.8113px",
+        "width": "124.8513px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-45-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 45 0",
+        "position": "absolute",
+        "left": "381.333px",
+        "top": "108px",
+        "width": "84.667px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "30.0121px",
+        "top": "267.8302px",
+        "width": "127.7992px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-46-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 46 0",
+        "position": "absolute",
+        "left": "382px",
+        "top": "110px",
+        "width": "84.417px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "31.0189px",
+        "top": "270.8491px",
+        "width": "127.4219px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-47-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 47 0",
+        "position": "absolute",
+        "left": "382.667px",
+        "top": "112px",
+        "width": "82.583px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "32.0257px",
+        "top": "273.8679px",
+        "width": "124.6536px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-48-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 48 0",
+        "position": "absolute",
+        "left": "383.333px",
+        "top": "114px",
+        "width": "80.75px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "33.0309px",
+        "top": "276.8868px",
+        "width": "121.8868px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-49-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 49 0",
+        "position": "absolute",
+        "left": "384px",
+        "top": "116px",
+        "width": "78.917px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "34.0377px",
+        "top": "279.9057px",
+        "width": "119.12px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-50-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 50 0",
+        "position": "absolute",
+        "left": "384.667px",
+        "top": "118px",
+        "width": "77.083px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "35.0445px",
+        "top": "282.9245px",
+        "width": "116.3517px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-51-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 51 0",
+        "position": "absolute",
+        "left": "385.333px",
+        "top": "120px",
+        "width": "75.25px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "36.0498px",
+        "top": "285.9434px",
+        "width": "113.5849px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-52-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 52 0",
+        "position": "absolute",
+        "left": "386px",
+        "top": "122px",
+        "width": "73.81px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "37.0566px",
+        "top": "288.9623px",
+        "width": "111.4113px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-53-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 53 0",
+        "position": "absolute",
+        "left": "386.667px",
+        "top": "124px",
+        "width": "72.762px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "38.0634px",
+        "top": "291.9811px",
+        "width": "109.8294px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-54-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 54 0",
+        "position": "absolute",
+        "left": "387.3px",
+        "top": "126px",
+        "width": "71.748px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "39.0189px",
+        "top": "295px",
+        "width": "108.2989px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-55-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 55 0",
+        "position": "absolute",
+        "left": "387.9px",
+        "top": "128px",
+        "width": "70.767px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "39.9245px",
+        "top": "298.0189px",
+        "width": "106.8181px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-56-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 56 0",
+        "position": "absolute",
+        "left": "388.5px",
+        "top": "130px",
+        "width": "69.786px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "40.8302px",
+        "top": "301.0377px",
+        "width": "105.3374px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-57-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 57 0",
+        "position": "absolute",
+        "left": "389.1px",
+        "top": "132px",
+        "width": "68.805px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "41.7358px",
+        "top": "304.0566px",
+        "width": "103.8566px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-58-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 58 0",
+        "position": "absolute",
+        "left": "389.7px",
+        "top": "134px",
+        "width": "67.824px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "42.6415px",
+        "top": "307.0755px",
+        "width": "102.3758px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-59-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 59 0",
+        "position": "absolute",
+        "left": "390.3px",
+        "top": "136px",
+        "width": "66.843px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "43.5472px",
+        "top": "310.0943px",
+        "width": "100.8951px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-60-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 60 0",
+        "position": "absolute",
+        "left": "390.9px",
+        "top": "138px",
+        "width": "65.862px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "44.4528px",
+        "top": "313.1132px",
+        "width": "99.4143px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-61-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 61 0",
+        "position": "absolute",
+        "left": "391.5px",
+        "top": "140px",
+        "width": "64.881px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "45.3585px",
+        "top": "316.1321px",
+        "width": "97.9336px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-62-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 62 0",
+        "position": "absolute",
+        "left": "392.1px",
+        "top": "142px",
+        "width": "63.9px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "46.2642px",
+        "top": "319.1509px",
+        "width": "96.4528px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-63-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 63 0",
+        "position": "absolute",
+        "left": "392.7px",
+        "top": "144px",
+        "width": "60.967px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "47.1698px",
+        "top": "322.1698px",
+        "width": "92.0257px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-64-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 64 0",
+        "position": "absolute",
+        "left": "393.412px",
+        "top": "146px",
+        "width": "57.922px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "48.2445px",
+        "top": "325.1887px",
+        "width": "87.4294px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-65-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 65 0",
+        "position": "absolute",
+        "left": "394.235px",
+        "top": "148px",
+        "width": "54.765px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "49.4868px",
+        "top": "328.2075px",
+        "width": "82.6642px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-66-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 66 0",
+        "position": "absolute",
+        "left": "395.059px",
+        "top": "150px",
+        "width": "51.608px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "50.7306px",
+        "top": "331.2264px",
+        "width": "77.8989px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-67-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 67 0",
+        "position": "absolute",
+        "left": "395.882px",
+        "top": "152px",
+        "width": "48.451px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "51.9728px",
+        "top": "334.2453px",
+        "width": "73.1336px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-68-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 68 0",
+        "position": "absolute",
+        "left": "396.706px",
+        "top": "154px",
+        "width": "45.294px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "53.2166px",
+        "top": "337.2642px",
+        "width": "68.3683px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-69-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 69 0",
+        "position": "absolute",
+        "left": "397.529px",
+        "top": "156px",
+        "width": "42.834px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "54.4589px",
+        "top": "340.283px",
+        "width": "64.6551px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-70-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 70 0",
+        "position": "absolute",
+        "left": "398.353px",
+        "top": "158px",
+        "width": "40.374px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "55.7026px",
+        "top": "343.3019px",
+        "width": "60.9419px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-71-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 71 0",
+        "position": "absolute",
+        "left": "399.176px",
+        "top": "160px",
+        "width": "37.914px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "56.9449px",
+        "top": "346.3208px",
+        "width": "57.2287px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-72-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 72 0",
+        "position": "absolute",
+        "left": "400px",
+        "top": "162px",
+        "width": "35.455px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "58.1887px",
+        "top": "349.3396px",
+        "width": "53.517px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-73-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 73 0",
+        "position": "absolute",
+        "left": "401.538px",
+        "top": "164px",
+        "width": "32.28px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "60.5102px",
+        "top": "352.3585px",
+        "width": "48.7245px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-74-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 74 0",
+        "position": "absolute",
+        "left": "403.077px",
+        "top": "166px",
+        "width": "28.846px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "62.8332px",
+        "top": "355.3774px",
+        "width": "43.5411px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-75-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 75 0",
+        "position": "absolute",
+        "left": "404.615px",
+        "top": "168px",
+        "width": "25.154px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "65.1547px",
+        "top": "358.3962px",
+        "width": "37.9683px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-76-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 76 0",
+        "position": "absolute",
+        "left": "406.154px",
+        "top": "170px",
+        "width": "21.462px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "67.4777px",
+        "top": "361.4151px",
+        "width": "32.3955px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-77-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 77 0",
+        "position": "absolute",
+        "left": "407.692px",
+        "top": "172px",
+        "width": "17.769px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "69.7992px",
+        "top": "364.434px",
+        "width": "26.8211px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-78-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 78 0",
+        "position": "absolute",
+        "left": "409.231px",
+        "top": "174px",
+        "width": "14.077px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "72.1223px",
+        "top": "367.4528px",
+        "width": "21.2483px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "aperture-contour-slice-79-0",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "aperture contour slice 79 0",
+        "position": "absolute",
+        "left": "413px",
+        "top": "176px",
+        "width": "8.154px",
+        "height": "3px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "left": "77.8113px",
+        "top": "370.4717px",
+        "width": "12.3079px",
+        "height": "4.5283px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "left-connected-point",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "left connected point",
+        "position": "absolute",
+        "left": "389px",
+        "top": "93px",
+        "width": "12px",
+        "height": "12px",
+        "fill": "#ffffff",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#ffffff",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "left": "41.5849px",
+        "top": "245.1887px",
+        "width": "18.1132px",
+        "height": "18.1132px",
+        "borderWidth": "0px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "right-connected-point",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "right connected point",
+        "position": "absolute",
+        "left": "419px",
+        "top": "91px",
+        "width": "12px",
+        "height": "12px",
+        "fill": "#ffffff",
+        "radius": "50%",
+        "borderWidth": "0px",
+        "borderColor": "#ffffff",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "left": "86.8679px",
+        "top": "242.1698px",
+        "width": "18.1132px",
+        "height": "18.1132px",
+        "borderWidth": "0px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "point-connection",
+      "parent": "native-organic-aperture",
+      "attrs": {
+        "name": "point connection",
+        "position": "absolute",
+        "left": "394.967px",
+        "top": "97.15px",
+        "width": "30.067px",
+        "height": "1.7px",
+        "fill": "#ffffff",
+        "rotation": "-3.8140748342903548deg"
+      },
+      "phone": {
+        "left": "50.5917px",
+        "top": "251.4528px",
+        "width": "45.3842px",
+        "height": "2.566px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "large-name",
+      "parent": "stage",
+      "attrs": {
+        "name": "large name",
+        "position": "absolute",
+        "left": "558px",
+        "top": "411px",
+        "width": "870px",
+        "height": "auto",
+        "text": "Maksym\nBleibtgleich",
+        "fontName": "Inter",
+        "fontSize": "88px",
+        "lineHeight": "88px",
+        "textColor": "#000000",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      },
+      "phone": {
+        "left": "42px",
+        "top": "400px",
+        "width": "330px",
+        "fontSize": "44px",
+        "lineHeight": "48px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "designer-role",
+      "parent": "stage",
+      "attrs": {
+        "name": "designer role",
+        "position": "absolute",
+        "left": "378px",
+        "top": "540px",
+        "width": "150px",
+        "height": "auto",
+        "text": "Designer\n& Developer",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "15px",
+        "textColor": "#000000",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "42px",
+        "top": "520px",
+        "width": "280px",
+        "fontSize": "12px",
+        "lineHeight": "16px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "service-statement",
+      "parent": "stage",
+      "attrs": {
+        "name": "service statement",
+        "position": "absolute",
+        "left": "378px",
+        "top": "600px",
+        "width": "1040px",
+        "height": "auto",
+        "text": "Design\nDigital\nProducts,\nUX/UI & Webflow",
+        "fontName": "Inter",
+        "fontSize": "88px",
+        "lineHeight": "89px",
+        "textColor": "#000000",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      },
+      "phone": {
+        "left": "42px",
+        "top": "575px",
+        "width": "330px",
+        "fontSize": "44px",
+        "lineHeight": "47px",
+        "text": "Design\nDigital\nProducts,\nUX/UI &\nWebflow"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "left-pale-fragment",
+      "parent": "stage",
+      "attrs": {
+        "name": "left pale fragment",
+        "position": "absolute",
+        "left": "16px",
+        "top": "912px",
+        "width": "340px",
+        "height": "auto",
+        "text": "bleibt",
+        "fontName": "Inter",
+        "fontSize": "86px",
+        "lineHeight": "92.88px",
+        "textColor": "#e6e6e6",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      },
+      "phone": {
+        "left": "20px",
+        "top": "930px",
+        "width": "290px",
+        "fontSize": "60px",
+        "lineHeight": "65px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "right-pale-fragment",
+      "parent": "stage",
+      "attrs": {
+        "name": "right pale fragment",
+        "position": "absolute",
+        "left": "1200px",
+        "top": "912px",
+        "width": "240px",
+        "height": "auto",
+        "text": "gleich",
+        "fontName": "Inter",
+        "fontSize": "86px",
+        "lineHeight": "92.88px",
+        "textColor": "#e6e6e6",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      },
+      "phone": {
+        "left": "208px",
+        "top": "997px",
+        "width": "180px",
+        "fontSize": "52px",
+        "lineHeight": "57px"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-017 / CREDITED RECREATION",
+    "title": "Bleibtgleich 2026",
+    "influences": "Original: Maksym Bleibtgleich · https://bleibtgleich.dev/ · https://minimal.gallery/bleibtgleich-2026/",
+    "links": [
+      {
+        "label": "Original source / Maksym Bleibtgleich ↗",
+        "href": "https://bleibtgleich.dev/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://minimal.gallery/bleibtgleich-2026/"
+      }
+    ],
+    "limits": "Native offset type, vertical rule and the inspected black aperture state with white connected points. Contour is traced with editable horizontal slices; typography is substituted. Static capture only: scroll/time/pointer coupling and image reveals are not reconstructed. Explicit new Phone composition is an adaptation, not a verified source mobile clone."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "phoneAdaptation": "The sampled aperture remains a solid native editable contour with its original white points, above independently resized staggered name/service type and a persistent vertical rule. No scroll/pointer reveal behavior inferred.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

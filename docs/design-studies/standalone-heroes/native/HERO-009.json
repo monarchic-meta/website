@@ -1,0 +1,1009 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-009",
+  "title": "Vercel",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-009-vercel",
+  "width": 1440,
+  "height": 840,
+  "phoneWidth": 390,
+  "phoneHeight": 960,
+  "openingHeight": 840,
+  "phoneOpeningHeight": 960,
+  "background": "#000000",
+  "stageAttrs": {
+    "fill": "#000000",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#000000",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Vercel",
+    "url": "https://vercel.com/",
+    "gallery": "https://www.lapa.ninja/post/vercel-3/",
+    "existingDesignPageID": "Q1tIlIqft",
+    "existingLabPageID": "iUjJa5763",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "bvsprYLPD"
+      },
+      {
+        "target": "desktop",
+        "id": "ApPh9jwXj"
+      },
+      {
+        "target": "phone",
+        "id": "M1sPbnURDApPh9jwXj"
+      }
+    ],
+    "oldComponentID": "codeFile/FuDaCpX:default"
+  },
+  "parts": [
+    {
+      "key": "central-source-halo",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "stage",
+      "attrs": {
+        "name": "central source halo",
+        "position": "absolute",
+        "left": "432px",
+        "top": "192px",
+        "width": "576px",
+        "height": "400px"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "310px",
+        "width": "375px",
+        "height": "340px"
+      },
+      "instanceProps": {
+        "study": "vercel",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#ffffff",
+        "light": "#ffffff",
+        "secondary": "#000000",
+        "accent": "#ff0000",
+        "ink": "#111111",
+        "showLabels": false,
+        "playbackPosition": "overlay"
+      }
+    },
+    {
+      "key": "small-native-triangle-0",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 0",
+        "position": "absolute",
+        "left": "203px",
+        "top": "18px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "28px",
+        "top": "20px",
+        "width": "0.9px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-1",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 1",
+        "position": "absolute",
+        "left": "202.5px",
+        "top": "19px",
+        "width": "2px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "27.55px",
+        "top": "20.9px",
+        "width": "1.8px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-2",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 2",
+        "position": "absolute",
+        "left": "202px",
+        "top": "20px",
+        "width": "3px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "27.1px",
+        "top": "21.8px",
+        "width": "2.7px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-3",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 3",
+        "position": "absolute",
+        "left": "201.5px",
+        "top": "21px",
+        "width": "4px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "26.65px",
+        "top": "22.7px",
+        "width": "3.6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-4",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 4",
+        "position": "absolute",
+        "left": "201px",
+        "top": "22px",
+        "width": "5px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "26.2px",
+        "top": "23.6px",
+        "width": "4.5px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-5",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 5",
+        "position": "absolute",
+        "left": "200.5px",
+        "top": "23px",
+        "width": "6px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "25.75px",
+        "top": "24.5px",
+        "width": "5.4px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-6",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 6",
+        "position": "absolute",
+        "left": "200px",
+        "top": "24px",
+        "width": "7px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "25.3px",
+        "top": "25.4px",
+        "width": "6.3px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-7",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 7",
+        "position": "absolute",
+        "left": "199.5px",
+        "top": "25px",
+        "width": "8px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "24.85px",
+        "top": "26.3px",
+        "width": "7.2px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-8",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 8",
+        "position": "absolute",
+        "left": "199px",
+        "top": "26px",
+        "width": "9px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "24.4px",
+        "top": "27.2px",
+        "width": "8.1px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-9",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 9",
+        "position": "absolute",
+        "left": "198.5px",
+        "top": "27px",
+        "width": "10px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "23.95px",
+        "top": "28.1px",
+        "width": "9px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-10",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 10",
+        "position": "absolute",
+        "left": "198px",
+        "top": "28px",
+        "width": "11px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "23.5px",
+        "top": "29px",
+        "width": "9.9px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-11",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 11",
+        "position": "absolute",
+        "left": "197.5px",
+        "top": "29px",
+        "width": "12px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "23.05px",
+        "top": "29.9px",
+        "width": "10.8px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-12",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 12",
+        "position": "absolute",
+        "left": "197px",
+        "top": "30px",
+        "width": "13px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "22.6px",
+        "top": "30.8px",
+        "width": "11.7px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-13",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 13",
+        "position": "absolute",
+        "left": "196.5px",
+        "top": "31px",
+        "width": "14px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "22.15px",
+        "top": "31.7px",
+        "width": "12.6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-14",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 14",
+        "position": "absolute",
+        "left": "196px",
+        "top": "32px",
+        "width": "15px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "21.7px",
+        "top": "32.6px",
+        "width": "13.5px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-15",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 15",
+        "position": "absolute",
+        "left": "195.5px",
+        "top": "33px",
+        "width": "16px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "21.25px",
+        "top": "33.5px",
+        "width": "14.4px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-16",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 16",
+        "position": "absolute",
+        "left": "195px",
+        "top": "34px",
+        "width": "17px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "20.8px",
+        "top": "34.4px",
+        "width": "15.3px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "small-native-triangle-17",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "small native triangle 17",
+        "position": "absolute",
+        "left": "194.5px",
+        "top": "35px",
+        "width": "18px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "20.35px",
+        "top": "35.3px",
+        "width": "16.2px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "source-header-navigation",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source header navigation",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "15px",
+        "paragraphSpacing": 0,
+        "left": "235px",
+        "top": "20px",
+        "width": "500px",
+        "textColor": "#969696",
+        "text": "Products⌄    Resources⌄    Enterprise    Pricing"
+      },
+      "phone": {
+        "left": "60px",
+        "top": "24px",
+        "width": "190px",
+        "fontSize": "10px",
+        "lineHeight": "14px",
+        "text": "Products    Pricing"
+      }
+    },
+    {
+      "key": "header-action-0",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "header action 0",
+        "position": "absolute",
+        "left": "1046px",
+        "top": "11px",
+        "width": "76px",
+        "height": "26px",
+        "fill": "#080808",
+        "borderWidth": ".7px",
+        "borderColor": "#333333",
+        "radius": "5px"
+      },
+      "phone": {
+        "left": "268px",
+        "top": "18px",
+        "width": "102px",
+        "height": "29px",
+        "visible": false
+      }
+    },
+    {
+      "key": "header-action-label-0",
+      "type": "RichTextNode",
+      "parent": "header-action-0",
+      "attrs": {
+        "name": "header action label 0",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "9px",
+        "top": "7px",
+        "width": "68px",
+        "textColor": "#cccccc",
+        "text": "Get a Demo"
+      },
+      "phone": {
+        "left": "27px",
+        "top": "8px",
+        "width": "74px",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "visible": false
+      }
+    },
+    {
+      "key": "header-action-1",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "header action 1",
+        "position": "absolute",
+        "left": "1132px",
+        "top": "11px",
+        "width": "49px",
+        "height": "26px",
+        "fill": "#080808",
+        "borderWidth": ".7px",
+        "borderColor": "#333333",
+        "radius": "5px"
+      },
+      "phone": {
+        "left": "268px",
+        "top": "18px",
+        "width": "102px",
+        "height": "29px",
+        "visible": false
+      }
+    },
+    {
+      "key": "header-action-label-1",
+      "type": "RichTextNode",
+      "parent": "header-action-1",
+      "attrs": {
+        "name": "header action label 1",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "9px",
+        "top": "7px",
+        "width": "41px",
+        "textColor": "#cccccc",
+        "text": "Log In"
+      },
+      "phone": {
+        "left": "27px",
+        "top": "8px",
+        "width": "74px",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "visible": false
+      }
+    },
+    {
+      "key": "header-action-2",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "header action 2",
+        "position": "absolute",
+        "left": "1188px",
+        "top": "11px",
+        "width": "57px",
+        "height": "26px",
+        "fill": "#f5f5f5",
+        "borderWidth": ".7px",
+        "borderColor": "#333333",
+        "radius": "5px"
+      },
+      "phone": {
+        "left": "268px",
+        "top": "18px",
+        "width": "102px",
+        "height": "29px",
+        "visible": true
+      }
+    },
+    {
+      "key": "header-action-label-2",
+      "type": "RichTextNode",
+      "parent": "header-action-2",
+      "attrs": {
+        "name": "header action label 2",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "9px",
+        "top": "7px",
+        "width": "49px",
+        "textColor": "#111111",
+        "text": "Sign Up"
+      },
+      "phone": {
+        "left": "27px",
+        "top": "8px",
+        "width": "74px",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "visible": true
+      }
+    },
+    {
+      "key": "agentic-infrastructure",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "agentic infrastructure",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "46px",
+        "lineHeight": "49px",
+        "paragraphSpacing": 0,
+        "left": "195px",
+        "top": "318px",
+        "width": "420px",
+        "letterSpacing": "-0.045em",
+        "textColor": "#e5e5e5",
+        "text": "Agentic\nInfrastructure"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "190px",
+        "width": "350px",
+        "fontSize": "42px",
+        "lineHeight": "44px"
+      }
+    },
+    {
+      "key": "body-action-0",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "body action 0",
+        "position": "absolute",
+        "left": "195px",
+        "top": "434px",
+        "width": "93px",
+        "height": "32px",
+        "fill": "#eeeeee",
+        "borderWidth": ".7px",
+        "borderColor": "#333333",
+        "radius": "20px",
+        "link": {
+          "href": "https://vercel.com/",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "20px",
+        "top": "290px",
+        "width": "130px",
+        "height": "38px"
+      }
+    },
+    {
+      "key": "body-action-label-0",
+      "type": "RichTextNode",
+      "parent": "body-action-0",
+      "attrs": {
+        "name": "body action label 0",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "14px",
+        "paragraphSpacing": 0,
+        "left": "13px",
+        "top": "9px",
+        "width": "100px",
+        "textColor": "#111111",
+        "text": "Deploy now"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "11px",
+        "width": "110px",
+        "fontSize": "12px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "key": "body-action-1",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "body action 1",
+        "position": "absolute",
+        "left": "297px",
+        "top": "434px",
+        "width": "99px",
+        "height": "32px",
+        "fill": "#000000",
+        "borderWidth": ".7px",
+        "borderColor": "#333333",
+        "radius": "20px",
+        "link": {
+          "href": "https://vercel.com/",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "160px",
+        "top": "290px",
+        "width": "130px",
+        "height": "38px"
+      }
+    },
+    {
+      "key": "body-action-label-1",
+      "type": "RichTextNode",
+      "parent": "body-action-1",
+      "attrs": {
+        "name": "body action label 1",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "14px",
+        "paragraphSpacing": 0,
+        "left": "13px",
+        "top": "9px",
+        "width": "100px",
+        "textColor": "#cccccc",
+        "text": "Talk to sales"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "11px",
+        "width": "110px",
+        "fontSize": "12px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "key": "source-agent-statements",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source agent statements",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "11px",
+        "lineHeight": "24px",
+        "paragraphSpacing": 0,
+        "left": "978px",
+        "top": "364px",
+        "width": "300px",
+        "fontWeight": 500,
+        "letterSpacing": "0.03em",
+        "textColor": "#e5e5e5",
+        "text": "FOR CODING AGENTS\nTO SHIP APPS AND AGENTS\nAUTOMATED BY AGENTS"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "680px",
+        "width": "350px",
+        "fontSize": "11px",
+        "lineHeight": "23px"
+      }
+    },
+    {
+      "key": "source-customer-0",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 0",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "195px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "BLACKBOX.AI"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "800px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-customer-1",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 1",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "13px",
+        "paragraphSpacing": 0,
+        "left": "375px",
+        "top": "755px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "charles\nSCHWAB"
+      },
+      "phone": {
+        "left": "210px",
+        "top": "800px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px",
+        "text": "charles SCHWAB"
+      }
+    },
+    {
+      "key": "source-customer-2",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 2",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "515px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "DOORDASH"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "832px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-customer-3",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 3",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "710px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 600,
+        "textColor": "#dddddd",
+        "text": "OpenAI"
+      },
+      "phone": {
+        "left": "210px",
+        "top": "832px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-customer-4",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 4",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "855px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "Supreme"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "864px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-customer-5",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 5",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "1010px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "The Weather Company"
+      },
+      "phone": {
+        "left": "210px",
+        "top": "864px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-customer-6",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source customer 6",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "20px",
+        "paragraphSpacing": 0,
+        "left": "1160px",
+        "top": "761px",
+        "width": "145px",
+        "fontWeight": 500,
+        "textColor": "#dddddd",
+        "text": "Polymarket"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "896px",
+        "width": "170px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-009 / CREDITED RECREATION",
+    "title": "Vercel",
+    "influences": "Original: Vercel · https://vercel.com/",
+    "links": [
+      {
+        "label": "Original source / Vercel ↗",
+        "href": "https://vercel.com/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.lapa.ninja/post/vercel-3/"
+      }
+    ],
+    "limits": "Selected dark Agentic Infrastructure revision, reconstructed as three native zones around independently painted live halo geometry. Source customer names remain Vercel reference content; native typography substitutes their individual logos. Exact archived light algorithm/timing and current light website are not reproduced. Phone recomposes the source zones without a new generic headline."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "phoneSafeArea": "Native readable controls stay within375px actual Preview content beside the15px scrollbar in390px Phone frame; full background may bleed to390px.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "clientDate": "2026-10-31",
+  "status": "source-media-prepared-asset-upload-and-placement-pending",
+  "artifactRoot": "hero-single-pages-2026-10-31",
+  "entries": [
+    {
+      "path": "source-media/HERO-002-chess-board-still.png",
+      "bytes": 151001,
+      "sha256": "9276599795bf0da27ffd0dfd050014d6468fd85a8a536b0a98e4bae8ef7f2a84",
+      "reference": "HERO-002",
+      "source": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "preparation": {
+        "frame": "HERO-002-tail-07.png",
+        "extraction": "ffmpeg8.0.1; start24s, fps1/2; targetframe7or9",
+        "crop": {
+          "left": 0,
+          "top": 180,
+          "width": 480,
+          "height": 484
+        }
+      },
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo authors not independently verified.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-002-hand-left-still.png",
+      "bytes": 38883,
+      "sha256": "f7a9205abf596b5ad1824a4d2180f61e83d9982519ca62ae65fba7c5167a5cf5",
+      "reference": "HERO-002",
+      "source": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "preparation": {
+        "frame": "HERO-002-tail-09.png",
+        "extraction": "ffmpeg8.0.1; start24s, fps1/2; targetframe7or9",
+        "crop": {
+          "left": 0,
+          "top": 277,
+          "width": 234,
+          "height": 161
+        }
+      },
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo authors not independently verified.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-002-hand-right-still.png",
+      "bytes": 26982,
+      "sha256": "c7281fca6a1c11ad7686ee3af14ce78de2c59215ed3ab474d88778571456860a",
+      "reference": "HERO-002",
+      "source": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "preparation": {
+        "frame": "HERO-002-tail-09.png",
+        "extraction": "ffmpeg8.0.1; start24s, fps1/2; targetframe7or9",
+        "crop": {
+          "left": 236,
+          "top": 277,
+          "width": 234,
+          "height": 161
+        }
+      },
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo authors not independently verified.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-004-film-poster.png",
+      "bytes": 545939,
+      "sha256": "2ade0446e1f8e709434704fc67f9dc946721e52316d909801fe49b23393cb5ad",
+      "reference": "HERO-004",
+      "source": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c0e0bd5b6722504e78_oxi-poster.avif",
+      "preparation": {
+        "conversion": "Actual observed OXI project poster; AVIF retained and decoded to PNG; no generated pixels."
+      },
+      "credit": "Artemii Lebedev / selected OXI Instruments project film poster.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-006-runner-still.png",
+      "bytes": 264764,
+      "sha256": "5c8330ec8accf7058dbc96871a190d7e452639e49fd5c0978180506a27ce634b",
+      "reference": "HERO-006",
+      "source": "https://freight.cargo.site/w/450/i/bb46f0eafba18345c8aabaa6a2c1ee9b67d734fccf459ab81a00993e2c50c7b2/keen-icon-lockup.png",
+      "preparation": {
+        "conversion": "Original observed image bytes retained,450×563."
+      },
+      "credit": "Mac Moss Studio / KEEN project; source-selected runner artwork.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-008-city-film-still.png",
+      "bytes": 527518,
+      "sha256": "cf9f731d3ec08e08370c22fd5c1865967e6c39c8728f85e97eeaff6962806376",
+      "reference": "HERO-008",
+      "source": "hero-recreations-2026-10-31/remaining-12/sources/HERO-008-selected-top.png",
+      "preparation": {
+        "crop": {
+          "left": 1334,
+          "top": 615,
+          "width": 560,
+          "height": 425
+        }
+      },
+      "credit": "Pangram Pangram / PP Neue Montreal selected city-film still; separate filmmaker unverified.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-011-poster-still.png",
+      "bytes": 166320,
+      "sha256": "aa4fe3dd5d53544aedd65eb572dcc0b59df14ed190869b4b8c6e39958f5b4eb8",
+      "reference": "HERO-011",
+      "source": "hero-recreations-2026-10-31/remaining-12/sources/HERO-011-selected.png",
+      "preparation": {
+        "crop": {
+          "left": 680,
+          "top": 148,
+          "width": 466,
+          "height": 504
+        }
+      },
+      "credit": "Jon Way / JW.S selected archived photographic poster.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-013-cloud-still.png",
+      "bytes": 17325,
+      "sha256": "ef18108ac30c406bba9561c4897c41d06e29010114ec7260c463797ccae18440",
+      "reference": "HERO-013",
+      "source": "hero-single-pages-2026-10-31/sources/HERO-013-primary-opening.jpg",
+      "preparation": {
+        "crop": {
+          "left": 487,
+          "top": 393,
+          "width": 113,
+          "height": 240
+        }
+      },
+      "credit": "Obys × DES / FORMAT, photographed cloud material from actual opening.",
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "path": "source-media/HERO-006-wordmark.png",
+      "bytes": 10989,
+      "sha256": "e7adeaceb3b8b644bb1821543018be262345e44f690f1353c686aef63ac7fb34",
+      "reference": "HERO-006",
+      "source": "https://freight.cargo.site/w/250/i/81dd87c128fc877b78044d4d682b842dc5069b0944eacbd16a736f5bf368b9d9/logo-mms-01.png",
+      "preparation": {
+        "conversion": "Actual observed250×141sourcewordmark image bytes retained."
+      },
+      "credit": "Mac Moss Studio / original mm.s source wordmark.",
+      "usage": "Credited foreign source identity asset withinSourceinspiration, notanoriginalMonarchiclogo."
+    }
+  ]
+}

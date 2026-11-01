@@ -1,0 +1,1259 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-013",
+  "title": "FORMAT",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-013-format",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 1000,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 850,
+  "background": "#222222",
+  "stageAttrs": {
+    "fill": "#222222",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#222222",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Obys × DES / FORMAT",
+    "url": "https://format.obys.agency/",
+    "gallery": "https://www.awwwards.com/sites/format",
+    "inspectedCaptures": [
+      {
+        "path": "sources/HERO-013-primary-opening.jpg",
+        "bytes": 35121,
+        "sha256": "04d80993477f2e03a0132687ad5cd337553a2b118fbe05866310668a701a4fe8"
+      },
+      {
+        "path": "sources/HERO-013-primary-format-state.jpg",
+        "bytes": 46509,
+        "sha256": "3cce2e6f2f7609dc39f3f18a35a55bccf54da604dc03c974d56351a825c39331"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "key": "architectural-wordmark",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "architectural wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "235px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "86px"
+      }
+    },
+    {
+      "key": "solid-letter-block-0",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-0",
+        "position": "absolute",
+        "left": "20.25px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "5.4844px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-0-cut-tl",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-0",
+      "attrs": {
+        "name": "solid-letter-block-0 chamfer tl",
+        "position": "absolute",
+        "left": "-31.8198px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "-8.6179px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-1",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-1",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "78.75px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "36.8672px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "21.3281px"
+      }
+    },
+    {
+      "key": "solid-letter-block-2",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-2",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "108px",
+        "width": "106.875px",
+        "height": "77.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "36.8672px",
+        "top": "29.25px",
+        "width": "28.9453px",
+        "height": "21.0234px"
+      }
+    },
+    {
+      "key": "solid-letter-block-3",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-3",
+        "position": "absolute",
+        "left": "250.875px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "67.9453px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-3-cut-tl",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-3",
+      "attrs": {
+        "name": "solid-letter-block-3 chamfer tl",
+        "position": "absolute",
+        "left": "-31.8198px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "-8.6179px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-3-cut-bl",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-3",
+      "attrs": {
+        "name": "solid-letter-block-3 chamfer bl",
+        "position": "absolute",
+        "left": "-31.8198px",
+        "top": "178.5552px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "-8.6179px",
+        "top": "48.3587px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-4",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-4",
+        "position": "absolute",
+        "left": "367.875px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "99.6328px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-4-cut-tr",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-4",
+      "attrs": {
+        "name": "solid-letter-block-4 chamfer tr",
+        "position": "absolute",
+        "left": "75.0552px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "20.3274px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-4-cut-br",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-4",
+      "attrs": {
+        "name": "solid-letter-block-4 chamfer br",
+        "position": "absolute",
+        "left": "75.0552px",
+        "top": "178.5552px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "20.3274px",
+        "top": "48.3587px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-5",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-5",
+        "position": "absolute",
+        "left": "483.75px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "131.0156px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-6",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-6",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "131.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "162.7031px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "35.6484px"
+      }
+    },
+    {
+      "key": "solid-letter-block-6-cut-tr",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-6",
+      "attrs": {
+        "name": "solid-letter-block-6 chamfer tr",
+        "position": "absolute",
+        "left": "73.9302px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "20.0228px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-7",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-7",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "163.125px",
+        "width": "104.625px",
+        "height": "67.5px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "162.7031px",
+        "top": "44.1797px",
+        "width": "28.3359px",
+        "height": "18.2813px"
+      }
+    },
+    {
+      "key": "solid-letter-block-7-cut-tr",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-7",
+      "attrs": {
+        "name": "solid-letter-block-7 chamfer tr",
+        "position": "absolute",
+        "left": "56.8953px",
+        "top": "-47.7297px",
+        "width": "95.4594px",
+        "height": "95.4594px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "15.4091px",
+        "top": "-12.9268px",
+        "width": "25.8536px",
+        "height": "25.8536px"
+      }
+    },
+    {
+      "key": "solid-letter-block-8",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-8",
+        "position": "absolute",
+        "left": "715.5px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "193.7813px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-8-cut-tr",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-8",
+      "attrs": {
+        "name": "solid-letter-block-8 chamfer tr",
+        "position": "absolute",
+        "left": "75.0552px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "20.3274px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-9",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-9",
+        "position": "absolute",
+        "left": "831.375px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "225.1641px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-9-cut-tl",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-9",
+      "attrs": {
+        "name": "solid-letter-block-9 chamfer tl",
+        "position": "absolute",
+        "left": "-31.8198px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "-8.6179px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-10",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-10",
+        "position": "absolute",
+        "left": "948.375px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "256.8516px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-10-cut-tl",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-10",
+      "attrs": {
+        "name": "solid-letter-block-10 chamfer tl",
+        "position": "absolute",
+        "left": "-31.8198px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "-8.6179px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-11",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-11",
+        "position": "absolute",
+        "left": "1063.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "287.9297px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-11-cut-tr",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-11",
+      "attrs": {
+        "name": "solid-letter-block-11 chamfer tr",
+        "position": "absolute",
+        "left": "75.0552px",
+        "top": "-31.8198px",
+        "width": "63.6396px",
+        "height": "63.6396px",
+        "rotation": "45deg",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "20.3274px",
+        "top": "-8.6179px",
+        "width": "17.2357px",
+        "height": "17.2357px"
+      }
+    },
+    {
+      "key": "solid-letter-block-12",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-12",
+        "position": "absolute",
+        "left": "1179px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "319.3125px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-12-cut-rect",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-12",
+      "attrs": {
+        "name": "solid-letter-block-12 cut rectangle",
+        "position": "absolute",
+        "left": "0px",
+        "top": "108px",
+        "width": "30.375px",
+        "height": "102.375px",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "29.25px",
+        "width": "8.2266px",
+        "height": "27.7266px"
+      }
+    },
+    {
+      "key": "solid-letter-block-13",
+      "type": "FrameNode",
+      "parent": "architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-13",
+        "position": "absolute",
+        "left": "1296px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "351px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "solid-letter-block-13-cut-rect",
+      "type": "FrameNode",
+      "parent": "solid-letter-block-13",
+      "attrs": {
+        "name": "solid-letter-block-13 cut rectangle",
+        "position": "absolute",
+        "left": "77.625px",
+        "top": "108px",
+        "width": "29.25px",
+        "height": "102.375px",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "21.0234px",
+        "top": "29.25px",
+        "width": "7.9219px",
+        "height": "27.7266px"
+      }
+    },
+    {
+      "key": "white-attribution-rail",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "white attribution rail",
+        "position": "absolute",
+        "left": "20px",
+        "top": "242px",
+        "width": "1400px",
+        "height": "17px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "12px",
+        "top": "88px",
+        "width": "366px",
+        "height": "39px"
+      }
+    },
+    {
+      "key": "project-credit",
+      "type": "RichTextNode",
+      "parent": "white-attribution-rail",
+      "attrs": {
+        "name": "project credit",
+        "position": "absolute",
+        "left": "10px",
+        "top": "1px",
+        "width": "560px",
+        "height": "auto",
+        "text": "Format — Obys and DES Special Project",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "12px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "7px",
+        "top": "3px",
+        "width": "350px",
+        "fontSize": "10px",
+        "lineHeight": "12px"
+      }
+    },
+    {
+      "key": "season-credit",
+      "type": "RichTextNode",
+      "parent": "white-attribution-rail",
+      "attrs": {
+        "name": "season credit",
+        "position": "absolute",
+        "left": "694px",
+        "top": "1px",
+        "width": "350px",
+        "height": "auto",
+        "text": "Grids Season / Design Education Series",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "12px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "7px",
+        "top": "22px",
+        "width": "350px",
+        "fontSize": "9px",
+        "lineHeight": "11px"
+      }
+    },
+    {
+      "key": "notes-caption",
+      "type": "RichTextNode",
+      "parent": "white-attribution-rail",
+      "attrs": {
+        "name": "notes caption",
+        "position": "absolute",
+        "left": "1130px",
+        "top": "1px",
+        "width": "120px",
+        "height": "auto",
+        "text": "Notes Mode",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "12px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "vertical-format",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "vertical format",
+        "position": "absolute",
+        "left": "548px",
+        "top": "432px",
+        "width": "331px",
+        "height": "422px",
+        "fill": "#ffffff",
+        "elementId": "vertical-format",
+        "scrollTargetEnabled": true,
+        "scrollMarginTop": "192px",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "30px",
+        "top": "350px",
+        "width": "330px",
+        "height": "422px",
+        "scrollMarginTop": "110px"
+      }
+    },
+    {
+      "key": "cloud-photograph",
+      "type": "FrameNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "cloud photograph",
+        "position": "absolute",
+        "left": "9px",
+        "top": "9px",
+        "width": "128px",
+        "height": "275px",
+        "fill": "#ededed"
+      },
+      "phone": {
+        "left": "9px",
+        "top": "9px",
+        "width": "128px",
+        "height": "275px"
+      },
+      "bindingKey": "hero-013-cloud"
+    },
+    {
+      "key": "vertical-format-label",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "vertical format label",
+        "position": "absolute",
+        "left": "145px",
+        "top": "197px",
+        "width": "80px",
+        "height": "auto",
+        "text": "Format\nVertical",
+        "fontName": "Inter",
+        "fontSize": "11px",
+        "lineHeight": "12px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "/playgrounds/source-inspiration/heroes/hero-013-format#vertical-format",
+          "smoothScroll": true,
+          "openInNewTab": false
+        }
+      },
+      "phone": {
+        "left": "145px",
+        "top": "197px",
+        "width": "80px",
+        "fontSize": "11px",
+        "lineHeight": "12px"
+      }
+    },
+    {
+      "key": "format-note-number-0",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note number 0",
+        "position": "absolute",
+        "left": "222px",
+        "top": "204px",
+        "width": "24px",
+        "height": "auto",
+        "text": "1.1",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "222px",
+        "top": "204px",
+        "width": "24px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-label-0",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note label 0",
+        "position": "absolute",
+        "left": "252px",
+        "top": "204px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Usage",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "204px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-body-0",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note body 0",
+        "position": "absolute",
+        "left": "252px",
+        "top": "221px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Mobile Design\nPoster Design\nEditorial Design",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "221px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-number-1",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note number 1",
+        "position": "absolute",
+        "left": "222px",
+        "top": "261px",
+        "width": "24px",
+        "height": "auto",
+        "text": "1.2",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "222px",
+        "top": "261px",
+        "width": "24px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-label-1",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note label 1",
+        "position": "absolute",
+        "left": "252px",
+        "top": "261px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Geometry",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "261px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-body-1",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note body 1",
+        "position": "absolute",
+        "left": "252px",
+        "top": "278px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Vertical Ratio\nLinear Edges\nDefined Corners",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "278px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-number-2",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note number 2",
+        "position": "absolute",
+        "left": "222px",
+        "top": "318px",
+        "width": "24px",
+        "height": "auto",
+        "text": "1.3",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "222px",
+        "top": "318px",
+        "width": "24px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-label-2",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note label 2",
+        "position": "absolute",
+        "left": "252px",
+        "top": "318px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Perception",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "318px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-body-2",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note body 2",
+        "position": "absolute",
+        "left": "252px",
+        "top": "335px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Visually Taller\nNarrow Focus\nTight Tension",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "335px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-number-3",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note number 3",
+        "position": "absolute",
+        "left": "222px",
+        "top": "375px",
+        "width": "24px",
+        "height": "auto",
+        "text": "1.4",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "222px",
+        "top": "375px",
+        "width": "24px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-label-3",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note label 3",
+        "position": "absolute",
+        "left": "252px",
+        "top": "375px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Balance",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "375px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "format-note-body-3",
+      "type": "RichTextNode",
+      "parent": "vertical-format",
+      "attrs": {
+        "name": "format note body 3",
+        "position": "absolute",
+        "left": "252px",
+        "top": "392px",
+        "width": "72px",
+        "height": "auto",
+        "text": "Space / Weight",
+        "fontName": "Inter",
+        "fontSize": "7px",
+        "lineHeight": "9px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "252px",
+        "top": "392px",
+        "width": "72px",
+        "fontSize": "7px",
+        "lineHeight": "9px"
+      }
+    },
+    {
+      "key": "circle-material-specimen",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "circle material specimen",
+        "position": "absolute",
+        "left": "885px",
+        "top": "432px",
+        "width": "66px",
+        "height": "66px",
+        "fill": "#ffffff",
+        "radius": "50%"
+      },
+      "phone": {
+        "left": "294px",
+        "top": "205px",
+        "width": "66px",
+        "height": "66px"
+      }
+    },
+    {
+      "key": "circle-dot-0",
+      "type": "FrameNode",
+      "parent": "circle-material-specimen",
+      "attrs": {
+        "name": "circle dot 0",
+        "position": "absolute",
+        "left": "53px",
+        "top": "24px",
+        "width": "9px",
+        "height": "9px",
+        "fill": "#111111",
+        "radius": "50%"
+      },
+      "phone": {
+        "left": "53px",
+        "top": "24px",
+        "width": "9px",
+        "height": "9px"
+      }
+    },
+    {
+      "key": "circle-dot-1",
+      "type": "FrameNode",
+      "parent": "circle-material-specimen",
+      "attrs": {
+        "name": "circle dot 1",
+        "position": "absolute",
+        "left": "43px",
+        "top": "51px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#111111",
+        "radius": "50%"
+      },
+      "phone": {
+        "left": "43px",
+        "top": "51px",
+        "width": "4px",
+        "height": "4px"
+      }
+    },
+    {
+      "key": "circle-dot-2",
+      "type": "FrameNode",
+      "parent": "circle-material-specimen",
+      "attrs": {
+        "name": "circle dot 2",
+        "position": "absolute",
+        "left": "37px",
+        "top": "54px",
+        "width": "4px",
+        "height": "4px",
+        "fill": "#111111",
+        "radius": "50%"
+      },
+      "phone": {
+        "left": "37px",
+        "top": "54px",
+        "width": "4px",
+        "height": "4px"
+      }
+    },
+    {
+      "key": "cloud-thumbnail",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "cloud thumbnail",
+        "position": "absolute",
+        "left": "885px",
+        "top": "503px",
+        "width": "66px",
+        "height": "66px",
+        "fill": "#ededed"
+      },
+      "phone": {
+        "left": "294px",
+        "top": "276px",
+        "width": "66px",
+        "height": "66px"
+      },
+      "bindingKey": "hero-013-cloud"
+    }
+  ],
+  "imageBindings": [
+    {
+      "key": "hero-013-cloud",
+      "path": "source-media/HERO-013-cloud-still.png",
+      "bytes": 17325,
+      "sha256": "ef18108ac30c406bba9561c4897c41d06e29010114ec7260c463797ccae18440",
+      "creator": "Obys × DES / FORMAT, photographed cloud material from actual opening.",
+      "sourceURL": "hero-single-pages-2026-10-31/sources/HERO-013-primary-opening.jpg",
+      "preparation": {
+        "crop": {
+          "left": 487,
+          "top": 393,
+          "width": 113,
+          "height": 240
+        }
+      }
+    }
+  ],
+  "linkBindings": [
+    {
+      "actionKey": "vertical-format-label",
+      "targetKey": "vertical-format",
+      "section": "vertical-format",
+      "requiresActualNativeSectionBinding": true
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-013 / CREDITED RECREATION",
+    "title": "FORMAT — architectural wordmark and Vertical format",
+    "influences": "Original FORMAT / Obys × DES · https://format.obys.agency/",
+    "links": [
+      {
+        "label": "Original source / FORMAT — Obys × DES ↗",
+        "href": "https://format.obys.agency/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.awwwards.com/sites/format"
+      }
+    ],
+    "limits": "Native solid geometric FORMAT wordmark reconstructed from the newly inspected full opening, narrow attribution rail, white Vertical format sheet, editable circle/dots and actual credited cloud photograph. Native Vertical anchor is an authored interaction requiring actual Section binding; source drag/physics, notes mode, sticky-scroll synchronization, additional format sheets and animations are not claimed. Phone is an explicit adaptation, not a verified source mobile clone."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

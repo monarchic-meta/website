@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-007",
+  "title": "Cantor8",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-007-cantor8",
+  "width": 1440,
+  "height": 810,
+  "phoneWidth": 390,
+  "phoneHeight": 810,
+  "openingHeight": 810,
+  "phoneOpeningHeight": 810,
+  "background": "#044ab3",
+  "stageAttrs": {
+    "fill": "#044ab3",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#044ab3",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Cantor8; website by Artemii Lebedev",
+    "url": "https://www.cantor8.io/",
+    "gallery": "https://www.lapa.ninja/post/cantor8/",
+    "existingDesignPageID": "RVzvNGZNT",
+    "existingLabPageID": "VR2TaJCqa",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "MNCM5qolT"
+      },
+      {
+        "target": "desktop",
+        "id": "lVWxjYalC"
+      },
+      {
+        "target": "phone",
+        "id": "H8Zf2szHAlVWxjYalC"
+      }
+    ],
+    "oldComponentID": "codeFile/B4OuNLk:default"
+  },
+  "parts": [
+    {
+      "key": "canton-filament-field",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "stage",
+      "attrs": {
+        "name": "canton filament field",
+        "position": "absolute",
+        "left": "0px",
+        "top": "-7px",
+        "width": "1333.3333px",
+        "height": "780px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "-15.6px",
+        "top": "20px",
+        "width": "390px",
+        "height": "550px",
+        "overflow": "visible"
+      },
+      "instanceProps": {
+        "study": "cantor",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 2,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#ffffff",
+        "light": "#ffffff",
+        "secondary": "#044ab3",
+        "accent": "#ff0000",
+        "ink": "#ffffff",
+        "showLabels": false,
+        "playbackPosition": "below"
+      }
+    },
+    {
+      "key": "source-cantor-wordmark",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source cantor wordmark",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "19px",
+        "lineHeight": "23px",
+        "paragraphSpacing": 0,
+        "left": "32px",
+        "top": "23px",
+        "width": "220px",
+        "fontWeight": 600,
+        "textColor": "#ffffff",
+        "text": "▥ CANTOR8"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "22px",
+        "width": "160px",
+        "fontSize": "15px",
+        "lineHeight": "19px"
+      }
+    },
+    {
+      "key": "main-navigation",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "main navigation",
+        "position": "absolute",
+        "left": "553px",
+        "top": "13px",
+        "width": "336px",
+        "height": "39px",
+        "fill": "#063e94",
+        "radius": "3px"
+      },
+      "phone": {
+        "left": "190px",
+        "top": "18px",
+        "width": "180px",
+        "height": "31px"
+      }
+    },
+    {
+      "key": "main-navigation-links",
+      "type": "RichTextNode",
+      "parent": "main-navigation",
+      "attrs": {
+        "name": "main navigation links",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "paragraphSpacing": 0,
+        "left": "15px",
+        "top": "12px",
+        "width": "320px",
+        "textColor": "#ffffff",
+        "text": "Home    Products    Partners    News    Blog"
+      },
+      "phone": {
+        "left": "10px",
+        "top": "10px",
+        "width": "160px",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "text": "Home    Products    Menu"
+      }
+    },
+    {
+      "key": "contact-navigation",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "contact navigation",
+        "position": "absolute",
+        "left": "1132px",
+        "top": "13px",
+        "width": "276px",
+        "height": "39px",
+        "fill": "#063e94",
+        "radius": "3px"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "contact-navigation-links",
+      "type": "RichTextNode",
+      "parent": "contact-navigation",
+      "attrs": {
+        "name": "contact navigation links",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "paragraphSpacing": 0,
+        "left": "15px",
+        "top": "12px",
+        "width": "255px",
+        "textColor": "#ffffff",
+        "text": "Career    Company    Get in Touch ↗"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "peripheral-label-0",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "peripheral label 0",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "562px",
+        "top": "150px",
+        "width": "180px",
+        "textColor": "#b8d8ec",
+        "text": "DECODING…"
+      },
+      "phone": {
+        "left": "100px",
+        "top": "140px",
+        "width": "90px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "peripheral-label-1",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "peripheral label 1",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "985px",
+        "top": "395px",
+        "width": "180px",
+        "textColor": "#b8d8ec",
+        "text": "VECTORIZING…"
+      },
+      "phone": {
+        "left": "295px",
+        "top": "360px",
+        "width": "90px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "peripheral-label-2",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "peripheral label 2",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "985px",
+        "top": "430px",
+        "width": "180px",
+        "textColor": "#b8d8ec",
+        "text": "INDEXING…"
+      },
+      "phone": {
+        "left": "295px",
+        "top": "390px",
+        "width": "90px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "peripheral-label-3",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "peripheral label 3",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "410px",
+        "top": "535px",
+        "width": "180px",
+        "textColor": "#b8d8ec",
+        "text": "ATTENTION…"
+      },
+      "phone": {
+        "left": "25px",
+        "top": "415px",
+        "width": "90px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "peripheral-label-4",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "peripheral label 4",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "450px",
+        "top": "585px",
+        "width": "180px",
+        "textColor": "#b8d8ec",
+        "text": "SYNTHESIS…"
+      },
+      "phone": {
+        "left": "55px",
+        "top": "450px",
+        "width": "90px",
+        "fontSize": "7px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "source-enterprise-headline",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source enterprise headline",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "56px",
+        "lineHeight": "57px",
+        "paragraphSpacing": 0,
+        "left": "31px",
+        "top": "600px",
+        "width": "900px",
+        "letterSpacing": "-0.04em",
+        "textColor": "#f5f5e7",
+        "text": "Enterprise-Grade\nInfrastructure on Canton"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "530px",
+        "width": "350px",
+        "fontSize": "34px",
+        "lineHeight": "38px",
+        "text": "Enterprise-Grade\nInfrastructure\non Canton"
+      }
+    },
+    {
+      "key": "source-contact-action",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source contact action",
+        "position": "absolute",
+        "left": "31px",
+        "top": "724px",
+        "width": "198px",
+        "height": "50px",
+        "fill": "#f5f5f1",
+        "radius": "2px",
+        "link": {
+          "href": "https://www.cantor8.io/contact",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "20px",
+        "top": "675px",
+        "width": "198px",
+        "height": "45px"
+      }
+    },
+    {
+      "key": "source-contact-action-label",
+      "type": "RichTextNode",
+      "parent": "source-contact-action",
+      "attrs": {
+        "name": "source contact action label",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "16px",
+        "paragraphSpacing": 0,
+        "left": "14px",
+        "top": "19px",
+        "width": "145px",
+        "textColor": "#044ab3",
+        "text": "Get in Touch"
+      },
+      "phone": {
+        "left": "14px",
+        "top": "15px",
+        "width": "140px",
+        "fontSize": "12px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "key": "source-contact-arrow-box",
+      "type": "FrameNode",
+      "parent": "source-contact-action",
+      "attrs": {
+        "name": "source contact arrow box",
+        "position": "absolute",
+        "left": "152px",
+        "top": "4px",
+        "width": "42px",
+        "height": "42px",
+        "fill": "#044ab3"
+      },
+      "phone": {
+        "left": "154px",
+        "top": "4px",
+        "width": "40px",
+        "height": "37px"
+      }
+    },
+    {
+      "key": "source-contact-arrow",
+      "type": "RichTextNode",
+      "parent": "source-contact-arrow-box",
+      "attrs": {
+        "name": "source contact arrow",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "26px",
+        "lineHeight": "29px",
+        "paragraphSpacing": 0,
+        "left": "10px",
+        "top": "7px",
+        "width": "30px",
+        "textColor": "#ffffff",
+        "text": "↗"
+      },
+      "phone": {
+        "left": "10px",
+        "top": "5px",
+        "width": "28px",
+        "fontSize": "23px",
+        "lineHeight": "26px"
+      }
+    },
+    {
+      "key": "source-scroll-label",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source scroll label",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "9px",
+        "lineHeight": "12px",
+        "paragraphSpacing": 0,
+        "left": "1310px",
+        "top": "764px",
+        "width": "110px",
+        "textColor": "#bfd6e6",
+        "text": "SCROLL DOWN"
+      },
+      "phone": {
+        "left": "260px",
+        "top": "765px",
+        "width": "110px",
+        "fontSize": "9px",
+        "lineHeight": "12px"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-007 / CREDITED RECREATION",
+    "title": "Cantor8",
+    "influences": "Original: Cantor8; website by Artemii Lebedev · https://www.cantor8.io/",
+    "links": [
+      {
+        "label": "Original source / Cantor8 ↗",
+        "href": "https://www.cantor8.io/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.lapa.ninja/post/cantor8/"
+      }
+    ],
+    "limits": "Source full cobalt opening with native low headline/navigation/action and independently reconstructed moving filament geometry. Curve dynamics/timing and source logotype typography are approximations; native peripheral labels are static. Real source action opens the primary contact destination. Phone is explicitly adapted, not a verified source mobile clone."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-015",
+  "title": "MECHA",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-015-mecha",
+  "width": 1440,
+  "height": 900,
+  "phoneWidth": 390,
+  "phoneHeight": 860,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 860,
+  "background": "#ffffff",
+  "stageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Widelab / Grzegorz Leśniewicz",
+    "url": "https://mecha-xyz.webflow.io/",
+    "gallery": "https://www.awwwards.com/sites/mecha",
+    "existingDesignPageID": "Q1tIlIqft",
+    "existingLabPageID": "iUjJa5763",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "pSMjfqgOo"
+      },
+      {
+        "target": "desktop",
+        "id": "q_u_nuQ_N"
+      },
+      {
+        "target": "phone",
+        "id": "M1sPbnURDq_u_nuQ_N"
+      }
+    ],
+    "oldComponentID": "codeFile/FuDaCpX:default"
+  },
+  "parts": [
+    {
+      "key": "mecha-source-wordmark",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "mecha source wordmark",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "30px",
+        "lineHeight": "34px",
+        "paragraphSpacing": 0,
+        "left": "30px",
+        "top": "29px",
+        "width": "220px",
+        "fontWeight": 600,
+        "textColor": "#111111",
+        "text": "MECHA"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "22px",
+        "width": "200px",
+        "fontSize": "23px",
+        "lineHeight": "28px"
+      }
+    },
+    {
+      "key": "mecha-source-navigation",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "mecha source navigation",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "14px",
+        "paragraphSpacing": 0,
+        "left": "1120px",
+        "top": "40px",
+        "width": "300px",
+        "textColor": "#25252e",
+        "text": "INVESTMENTS  |  TEAM  |  CONTACT  |  BLOG"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "65px",
+        "width": "350px",
+        "fontSize": "9px",
+        "lineHeight": "12px"
+      }
+    },
+    {
+      "key": "serif-source-statement",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "serif source statement",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Georgia",
+        "fontSize": "54px",
+        "lineHeight": "55px",
+        "paragraphSpacing": 0,
+        "left": "510px",
+        "top": "74px",
+        "width": "800px",
+        "letterSpacing": "-0.035em",
+        "textColor": "#282832",
+        "text": "Robotics will knock over the\nglobal economy. Mecha deploys\nphysical automation into legacy\nindustries"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "122px",
+        "width": "350px",
+        "fontSize": "28px",
+        "lineHeight": "33px",
+        "text": "Robotics will knock\nover the global\neconomy. Mecha deploys\nphysical automation\ninto legacy industries"
+      }
+    },
+    {
+      "key": "entering-mark-workspace",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "entering mark workspace",
+        "position": "absolute",
+        "left": "0px",
+        "top": "346px",
+        "width": "450px",
+        "height": "450px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "300px",
+        "width": "375px",
+        "height": "390px",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "entering-source-mecha-mark",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "entering-mark-workspace",
+      "attrs": {
+        "name": "entering source mecha mark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "450px",
+        "height": "450px"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "375px",
+        "height": "390px"
+      },
+      "instanceProps": {
+        "study": "mecha",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#c4e5ca",
+        "light": "#ffffff",
+        "secondary": "#ffffff",
+        "accent": "#ff0000",
+        "ink": "#222222",
+        "showLabels": false,
+        "playbackPosition": "overlay"
+      }
+    },
+    {
+      "key": "native-mark-reveal-mask",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "native mark reveal mask",
+        "position": "absolute",
+        "left": "0px",
+        "top": "605px",
+        "width": "500px",
+        "height": "210px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "590px",
+        "width": "390px",
+        "height": "110px"
+      }
+    },
+    {
+      "key": "source-burgundy-action",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source burgundy action",
+        "position": "absolute",
+        "left": "1130px",
+        "top": "801px",
+        "width": "280px",
+        "height": "87px",
+        "fill": "#a51c49",
+        "link": {
+          "href": "https://mecha-xyz.webflow.io/",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "110px",
+        "top": "730px",
+        "width": "260px",
+        "height": "80px"
+      }
+    },
+    {
+      "key": "source-burgundy-action-label",
+      "type": "RichTextNode",
+      "parent": "source-burgundy-action",
+      "attrs": {
+        "name": "source burgundy action label",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "14px",
+        "lineHeight": "18px",
+        "paragraphSpacing": 0,
+        "left": "18px",
+        "top": "55px",
+        "width": "240px",
+        "textColor": "#ffffff",
+        "text": "Join the revolution"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "49px",
+        "width": "230px",
+        "fontSize": "13px",
+        "lineHeight": "17px"
+      }
+    },
+    {
+      "key": "source-cta-cross-horizontal",
+      "type": "FrameNode",
+      "parent": "source-burgundy-action",
+      "attrs": {
+        "name": "source cta cross horizontal",
+        "position": "absolute",
+        "left": "248px",
+        "top": "20px",
+        "width": "20px",
+        "height": "1px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "228px",
+        "top": "19px",
+        "width": "18px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "source-cta-cross-vertical",
+      "type": "FrameNode",
+      "parent": "source-burgundy-action",
+      "attrs": {
+        "name": "source cta cross vertical",
+        "position": "absolute",
+        "left": "258px",
+        "top": "10px",
+        "width": "1px",
+        "height": "21px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "237px",
+        "top": "10px",
+        "width": "1px",
+        "height": "19px"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-015 / CREDITED RECREATION",
+    "title": "MECHA",
+    "influences": "Original: Widelab / Grzegorz Leśniewicz · https://mecha-xyz.webflow.io/",
+    "links": [
+      {
+        "label": "Original source / MECHA ↗",
+        "href": "https://mecha-xyz.webflow.io/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.awwwards.com/sites/mecha"
+      }
+    ],
+    "limits": "Source serif statement, white field, cropped lower-left mark entry and burgundy action are recreated as one opening. Actual source mark topology: 696 vertices /1364 faces; independent projection/hidden-line/timing. Source mark reuse license remains unverified and credit remains Widelab/Grzegorz Leśniewicz. Typeface/logotype substitute; no source scroll-coupling claimed. Native reveal mask clips artwork only; Pause above it stays accessible."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "phoneSafeArea": "Native readable controls stay within375px actual Preview content beside the15px scrollbar in390px Phone frame; full background may bleed to390px.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

@@ -1,0 +1,6456 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-008",
+  "title": "PP Neue Montreal",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-008-pp-neue-montreal",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 1220,
+  "openingHeight": 1000,
+  "phoneOpeningHeight": 900,
+  "background": "#fa493d",
+  "stageAttrs": {
+    "fill": "#fa493d",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#fa493d",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Pangram Pangram (typeface foundry); separate website-design credit not identified",
+    "url": "https://neuemontreal.com/",
+    "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
+    "existingDesignPageID": "tIkB2CJN_",
+    "existingNativeArtworkID": "eoFFOopBu",
+    "nativeRecipe": {
+      "path": "docs/design-studies/hero-recreations/native/HERO-008.json",
+      "bytes": 112425,
+      "sha256": "3a3d2f1fb3b29c8fef38094da81f2587cf175205d8d50d60bdeb2744e2da0af9"
+    }
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "paper-grain",
+      "parent": "stage",
+      "attrs": {
+        "name": "paper grain",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "900px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-0",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 0",
+        "position": "absolute",
+        "left": "0px",
+        "top": "79px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "0px",
+        "top": "71.1px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-1",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 1",
+        "position": "absolute",
+        "left": "204.215px",
+        "top": "46.319px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "55.3082px",
+        "top": "41.6871px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-2",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 2",
+        "position": "absolute",
+        "left": "195.237px",
+        "top": "156.667px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "52.8767px",
+        "top": "141.0003px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-3",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 3",
+        "position": "absolute",
+        "left": "437.188px",
+        "top": "351.404px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "118.4051px",
+        "top": "316.2636px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-4",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 4",
+        "position": "absolute",
+        "left": "596.988px",
+        "top": "306.094px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "161.6843px",
+        "top": "275.4846px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-5",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 5",
+        "position": "absolute",
+        "left": "602.551px",
+        "top": "452.364px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "163.1909px",
+        "top": "407.1276px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-6",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 6",
+        "position": "absolute",
+        "left": "871.802px",
+        "top": "618.432px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "236.113px",
+        "top": "556.5888px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-7",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 7",
+        "position": "absolute",
+        "left": "984.929px",
+        "top": "570.16px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "266.7516px",
+        "top": "513.144px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-8",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 8",
+        "position": "absolute",
+        "left": "1018.126px",
+        "top": "748.506px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "275.7425px",
+        "top": "673.6554px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-9",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 9",
+        "position": "absolute",
+        "left": "1301.525px",
+        "top": "880.66px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "352.4964px",
+        "top": "792.594px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-10",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 10",
+        "position": "absolute",
+        "left": "1370.365px",
+        "top": "839.3px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "371.1405px",
+        "top": "755.37px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-11",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 11",
+        "position": "absolute",
+        "left": "1.54px",
+        "top": "43.612px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "0.4171px",
+        "top": "39.2508px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-12",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 12",
+        "position": "absolute",
+        "left": "284.526px",
+        "top": "139.002px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "77.0591px",
+        "top": "125.1018px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-13",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 13",
+        "position": "absolute",
+        "left": "315.875px",
+        "top": "113.942px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "85.5495px",
+        "top": "102.5478px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-14",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 14",
+        "position": "absolute",
+        "left": "431.59px",
+        "top": "336.28px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "116.889px",
+        "top": "302.652px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-15",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 15",
+        "position": "absolute",
+        "left": "699.643px",
+        "top": "394.647px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "189.4866px",
+        "top": "355.1823px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-16",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 16",
+        "position": "absolute",
+        "left": "704.028px",
+        "top": "394.125px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "190.6743px",
+        "top": "354.7125px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-17",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 17",
+        "position": "absolute",
+        "left": "866.412px",
+        "top": "625.275px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "234.6532px",
+        "top": "562.7475px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-18",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 18",
+        "position": "absolute",
+        "left": "1106.499px",
+        "top": "648.974px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "299.6768px",
+        "top": "584.0766px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-19",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 19",
+        "position": "absolute",
+        "left": "1097.131px",
+        "top": "679.496px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "297.1396px",
+        "top": "611.5464px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-20",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 20",
+        "position": "absolute",
+        "left": "1303.669px",
+        "top": "909.625px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "353.077px",
+        "top": "818.6625px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-21",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 21",
+        "position": "absolute",
+        "left": "65.54px",
+        "top": "903.452px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "17.7504px",
+        "top": "813.1068px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-22",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 22",
+        "position": "absolute",
+        "left": "56.998px",
+        "top": "969.337px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "15.437px",
+        "top": "872.4033px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-23",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 23",
+        "position": "absolute",
+        "left": "300.78px",
+        "top": "188.682px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "81.4612px",
+        "top": "169.8138px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-24",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 24",
+        "position": "absolute",
+        "left": "457.989px",
+        "top": "159.545px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "124.0387px",
+        "top": "143.5905px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-25",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 25",
+        "position": "absolute",
+        "left": "464.77px",
+        "top": "262.614px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "125.8752px",
+        "top": "236.3526px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-26",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 26",
+        "position": "absolute",
+        "left": "735.178px",
+        "top": "462.175px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "199.1107px",
+        "top": "415.9575px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-27",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 27",
+        "position": "absolute",
+        "left": "845.725px",
+        "top": "418.598px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "229.0505px",
+        "top": "376.7382px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-28",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 28",
+        "position": "absolute",
+        "left": "880.802px",
+        "top": "558.053px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "238.5505px",
+        "top": "502.2477px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-29",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 29",
+        "position": "absolute",
+        "left": "1164.568px",
+        "top": "730.224px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "315.4038px",
+        "top": "657.2016px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-30",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 30",
+        "position": "absolute",
+        "left": "1231.096px",
+        "top": "681.75px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "333.4218px",
+        "top": "613.575px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-31",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 31",
+        "position": "absolute",
+        "left": "1304.625px",
+        "top": "854.224px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "353.3359px",
+        "top": "768.8016px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-32",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 32",
+        "position": "absolute",
+        "left": "147.152px",
+        "top": "993.331px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "39.8537px",
+        "top": "893.9979px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-33",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 33",
+        "position": "absolute",
+        "left": "176.687px",
+        "top": "949.851px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "47.8527px",
+        "top": "854.8659px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-34",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 34",
+        "position": "absolute",
+        "left": "294.996px",
+        "top": "149.648px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "79.8947px",
+        "top": "134.6832px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-35",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 35",
+        "position": "absolute",
+        "left": "561.81px",
+        "top": "252.349px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "152.1569px",
+        "top": "227.1141px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-36",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 36",
+        "position": "absolute",
+        "left": "565.059px",
+        "top": "223.399px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "153.0368px",
+        "top": "201.0591px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-37",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 37",
+        "position": "absolute",
+        "left": "730.02px",
+        "top": "442.897px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "197.7138px",
+        "top": "398.6073px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-38",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 38",
+        "position": "absolute",
+        "left": "968.211px",
+        "top": "508.418px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "262.2238px",
+        "top": "457.5762px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-39",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 39",
+        "position": "absolute",
+        "left": "958.498px",
+        "top": "502.511px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "259.5932px",
+        "top": "452.2599px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-40",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 40",
+        "position": "absolute",
+        "left": "1167.338px",
+        "top": "732.698px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "316.154px",
+        "top": "659.4282px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-41",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 41",
+        "position": "absolute",
+        "left": "1366.844px",
+        "top": "762.888px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "370.1869px",
+        "top": "686.5992px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-42",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 42",
+        "position": "absolute",
+        "left": "1358.784px",
+        "top": "786.91px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "368.004px",
+        "top": "708.219px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-43",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 43",
+        "position": "absolute",
+        "left": "164.364px",
+        "top": "18.021px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "44.5153px",
+        "top": "16.2189px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-44",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 44",
+        "position": "absolute",
+        "left": "318.975px",
+        "top": "17.22px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "86.3891px",
+        "top": "15.498px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-45",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 45",
+        "position": "absolute",
+        "left": "327.016px",
+        "top": "75.947px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "88.5668px",
+        "top": "68.3523px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-46",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 46",
+        "position": "absolute",
+        "left": "598.539px",
+        "top": "298.15px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "162.1043px",
+        "top": "268.335px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-47",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 47",
+        "position": "absolute",
+        "left": "706.513px",
+        "top": "272.886px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "191.3473px",
+        "top": "245.5974px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-48",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 48",
+        "position": "absolute",
+        "left": "743.503px",
+        "top": "368.645px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "201.3654px",
+        "top": "331.7805px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-49",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 49",
+        "position": "absolute",
+        "left": "1027.591px",
+        "top": "572.737px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "278.3059px",
+        "top": "515.4633px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-50",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 50",
+        "position": "absolute",
+        "left": "1091.828px",
+        "top": "531.261px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "295.7034px",
+        "top": "478.1349px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-51",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 51",
+        "position": "absolute",
+        "left": "1167.732px",
+        "top": "663.769px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "316.2607px",
+        "top": "597.3921px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-52",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 52",
+        "position": "absolute",
+        "left": "9.754px",
+        "top": "841.824px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "2.6417px",
+        "top": "757.6416px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-53",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 53",
+        "position": "absolute",
+        "left": "37.508px",
+        "top": "793.533px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "10.1584px",
+        "top": "714.1797px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-54",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 54",
+        "position": "absolute",
+        "left": "158.418px",
+        "top": "959.913px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "42.9049px",
+        "top": "863.9217px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-55",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 55",
+        "position": "absolute",
+        "left": "423.952px",
+        "top": "105.843px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "114.8203px",
+        "top": "95.2587px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-56",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 56",
+        "position": "absolute",
+        "left": "426.107px",
+        "top": "60.612px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "115.404px",
+        "top": "54.5508px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-57",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 57",
+        "position": "absolute",
+        "left": "593.635px",
+        "top": "255.599px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "160.7761px",
+        "top": "230.0391px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-58",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 58",
+        "position": "absolute",
+        "left": "829.898px",
+        "top": "365.581px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "224.764px",
+        "top": "329.0229px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-59",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 59",
+        "position": "absolute",
+        "left": "819.887px",
+        "top": "333.07px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "222.0527px",
+        "top": "299.763px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-60",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 60",
+        "position": "absolute",
+        "left": "1031.006px",
+        "top": "549.381px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "279.2308px",
+        "top": "494.4429px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-61",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 61",
+        "position": "absolute",
+        "left": "1228.128px",
+        "top": "622.127px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "332.618px",
+        "top": "559.9143px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-62",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 62",
+        "position": "absolute",
+        "left": "1220.594px",
+        "top": "611.101px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "330.5775px",
+        "top": "549.9909px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-63",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 63",
+        "position": "absolute",
+        "left": "27.938px",
+        "top": "839.948px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "7.5665px",
+        "top": "755.9532px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-64",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 64",
+        "position": "absolute",
+        "left": "179.946px",
+        "top": "876.798px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "48.7354px",
+        "top": "789.1182px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-65",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 65",
+        "position": "absolute",
+        "left": "189.287px",
+        "top": "894.504px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "51.2652px",
+        "top": "805.0536px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-66",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 66",
+        "position": "absolute",
+        "left": "461.883px",
+        "top": "126.216px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "125.0933px",
+        "top": "113.5944px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-67",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 67",
+        "position": "absolute",
+        "left": "567.295px",
+        "top": "131.04px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "153.6424px",
+        "top": "117.936px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-68",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 68",
+        "position": "absolute",
+        "left": "606.228px",
+        "top": "182.699px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "164.1867px",
+        "top": "164.4291px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-69",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 69",
+        "position": "absolute",
+        "left": "890.591px",
+        "top": "407.403px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "241.2017px",
+        "top": "366.6627px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-70",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 70",
+        "position": "absolute",
+        "left": "952.561px",
+        "top": "386.331px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "257.9853px",
+        "top": "347.6979px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-71",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 71",
+        "position": "absolute",
+        "left": "1030.858px",
+        "top": "474.77px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "279.1907px",
+        "top": "427.293px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-72",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 72",
+        "position": "absolute",
+        "left": "1312.331px",
+        "top": "683.085px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "355.423px",
+        "top": "614.7765px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-73",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 73",
+        "position": "absolute",
+        "left": "1338.338px",
+        "top": "644.074px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "362.4665px",
+        "top": "579.6666px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-74",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 74",
+        "position": "absolute",
+        "left": "21.854px",
+        "top": "769.525px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "5.9188px",
+        "top": "692.5725px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-75",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 75",
+        "position": "absolute",
+        "left": "286.067px",
+        "top": "953.229px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "77.4765px",
+        "top": "857.9061px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-76",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 76",
+        "position": "absolute",
+        "left": "287.17px",
+        "top": "905.5px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "77.7752px",
+        "top": "814.95px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-77",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 77",
+        "position": "absolute",
+        "left": "457.257px",
+        "top": "65.585px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "123.8404px",
+        "top": "59.0265px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-78",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 78",
+        "position": "absolute",
+        "left": "691.56px",
+        "top": "218.19px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "187.2975px",
+        "top": "196.371px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-79",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 79",
+        "position": "absolute",
+        "left": "681.297px",
+        "top": "171.581px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "184.5179px",
+        "top": "154.4229px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-80",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 80",
+        "position": "absolute",
+        "left": "894.672px",
+        "top": "361.477px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "242.307px",
+        "top": "325.3293px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-81",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 81",
+        "position": "absolute",
+        "left": "1089.391px",
+        "top": "478.689px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "295.0434px",
+        "top": "430.8201px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-82",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 82",
+        "position": "absolute",
+        "left": "1082.43px",
+        "top": "442.957px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "293.1581px",
+        "top": "398.6613px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-83",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 83",
+        "position": "absolute",
+        "left": "1331.503px",
+        "top": "655.741px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "360.6154px",
+        "top": "590.1669px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-84",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 84",
+        "position": "absolute",
+        "left": "40.903px",
+        "top": "735.764px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "11.0779px",
+        "top": "662.1876px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-85",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 85",
+        "position": "absolute",
+        "left": "51.585px",
+        "top": "719.899px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "13.9709px",
+        "top": "647.9091px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-86",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 86",
+        "position": "absolute",
+        "left": "325.211px",
+        "top": "947.032px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "88.078px",
+        "top": "852.3288px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-87",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 87",
+        "position": "absolute",
+        "left": "428.07px",
+        "top": "990.691px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "115.9356px",
+        "top": "891.6219px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-88",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 88",
+        "position": "absolute",
+        "left": "468.977px",
+        "top": "2.283px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "127.0146px",
+        "top": "2.0547px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-89",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 89",
+        "position": "absolute",
+        "left": "753.569px",
+        "top": "234.215px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "204.0916px",
+        "top": "210.7935px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-90",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 90",
+        "position": "absolute",
+        "left": "813.295px",
+        "top": "244.9px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "220.2674px",
+        "top": "220.41px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-91",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 91",
+        "position": "absolute",
+        "left": "894.005px",
+        "top": "289.601px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "242.1264px",
+        "top": "260.6409px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-92",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 92",
+        "position": "absolute",
+        "left": "1174.882px",
+        "top": "516.443px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "318.1972px",
+        "top": "464.7987px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-93",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 93",
+        "position": "absolute",
+        "left": "1199.178px",
+        "top": "499.871px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "324.7774px",
+        "top": "449.8839px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-94",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 94",
+        "position": "absolute",
+        "left": "1325.303px",
+        "top": "580.998px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "358.9362px",
+        "top": "522.8982px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-95",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 95",
+        "position": "absolute",
+        "left": "148.157px",
+        "top": "793.219px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "40.1259px",
+        "top": "713.8971px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-96",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 96",
+        "position": "absolute",
+        "left": "148.251px",
+        "top": "757.03px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "40.1513px",
+        "top": "681.327px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-97",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 97",
+        "position": "absolute",
+        "left": "320.885px",
+        "top": "875.331px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "86.9064px",
+        "top": "787.7979px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-98",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 98",
+        "position": "absolute",
+        "left": "553.199px",
+        "top": "64.433px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "149.8247px",
+        "top": "57.9897px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-99",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 99",
+        "position": "absolute",
+        "left": "542.73px",
+        "top": "17.648px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "146.9894px",
+        "top": "15.8832px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-100",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 100",
+        "position": "absolute",
+        "left": "758.337px",
+        "top": "171.25px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "205.3829px",
+        "top": "154.125px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-101",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 101",
+        "position": "absolute",
+        "left": "950.635px",
+        "top": "330.364px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "257.4636px",
+        "top": "297.3276px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-102",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 102",
+        "position": "absolute",
+        "left": "944.291px",
+        "top": "282.754px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "255.7455px",
+        "top": "254.4786px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-103",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 103",
+        "position": "absolute",
+        "left": "1195.059px",
+        "top": "467.292px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "323.6618px",
+        "top": "420.5628px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-104",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 104",
+        "position": "absolute",
+        "left": "1341.847px",
+        "top": "591.666px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "363.4169px",
+        "top": "532.4994px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-105",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 105",
+        "position": "absolute",
+        "left": "1353.908px",
+        "top": "553.059px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "366.6834px",
+        "top": "497.7531px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-106",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 106",
+        "position": "absolute",
+        "left": "188.523px",
+        "top": "761.986px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "51.0583px",
+        "top": "685.7874px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-107",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 107",
+        "position": "absolute",
+        "left": "288.838px",
+        "top": "849.317px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "78.227px",
+        "top": "764.3853px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-108",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 108",
+        "position": "absolute",
+        "left": "331.751px",
+        "top": "828.907px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "89.8492px",
+        "top": "746.0163px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-109",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 109",
+        "position": "absolute",
+        "left": "616.526px",
+        "top": "53.958px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "166.9758px",
+        "top": "48.5622px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-110",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 110",
+        "position": "absolute",
+        "left": "674.031px",
+        "top": "104.556px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "182.5501px",
+        "top": "94.1004px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-111",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 111",
+        "position": "absolute",
+        "left": "757.171px",
+        "top": "110.253px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "205.0671px",
+        "top": "99.2277px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-112",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 112",
+        "position": "absolute",
+        "left": "1037.409px",
+        "top": "342.022px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "280.9649px",
+        "top": "307.8198px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-113",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 113",
+        "position": "absolute",
+        "left": "1060.028px",
+        "top": "358.79px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "287.0909px",
+        "top": "322.911px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-114",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 114",
+        "position": "absolute",
+        "left": "1188.766px",
+        "top": "396.661px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "321.9575px",
+        "top": "356.9949px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-115",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 115",
+        "position": "absolute",
+        "left": "10.22px",
+        "top": "625.272px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "2.7679px",
+        "top": "562.7448px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-116",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 116",
+        "position": "absolute",
+        "left": "9.348px",
+        "top": "613.496px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "2.5318px",
+        "top": "552.1464px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-117",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 117",
+        "position": "absolute",
+        "left": "184.519px",
+        "top": "687.34px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "49.9739px",
+        "top": "618.606px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-118",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 118",
+        "position": "absolute",
+        "left": "414.813px",
+        "top": "903.139px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "112.3452px",
+        "top": "812.8251px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-119",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 119",
+        "position": "absolute",
+        "left": "404.184px",
+        "top": "870.119px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "109.4665px",
+        "top": "783.1071px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-120",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 120",
+        "position": "absolute",
+        "left": "621.999px",
+        "top": "981.199px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "168.4581px",
+        "top": "883.0791px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-121",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 121",
+        "position": "absolute",
+        "left": "811.859px",
+        "top": "175.433px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "219.8785px",
+        "top": "157.8897px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-122",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 122",
+        "position": "absolute",
+        "left": "806.178px",
+        "top": "129.969px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "218.3399px",
+        "top": "116.9721px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-123",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 123",
+        "position": "absolute",
+        "left": "1058.604px",
+        "top": "276.919px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "286.7052px",
+        "top": "249.2271px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-124",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 124",
+        "position": "absolute",
+        "left": "1202.777px",
+        "top": "442.36px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "325.7521px",
+        "top": "398.124px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-125",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 125",
+        "position": "absolute",
+        "left": "1216.258px",
+        "top": "394.129px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "329.4032px",
+        "top": "354.7161px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-126",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 126",
+        "position": "absolute",
+        "left": "51.816px",
+        "top": "573.054px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "14.0335px",
+        "top": "515.7486px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-127",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 127",
+        "position": "absolute",
+        "left": "149.602px",
+        "top": "704.501px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "40.5172px",
+        "top": "634.0509px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-128",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 128",
+        "position": "absolute",
+        "left": "194.548px",
+        "top": "663.375px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "52.6901px",
+        "top": "597.0375px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-129",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 129",
+        "position": "absolute",
+        "left": "479.46px",
+        "top": "868.126px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "129.8537px",
+        "top": "781.3134px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-130",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 130",
+        "position": "absolute",
+        "left": "534.77px",
+        "top": "962.778px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "144.8335px",
+        "top": "866.5002px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-131",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 131",
+        "position": "absolute",
+        "left": "620.357px",
+        "top": "938.128px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "168.0134px",
+        "top": "844.3152px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-132",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 132",
+        "position": "absolute",
+        "left": "899.909px",
+        "top": "160.732px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "243.7254px",
+        "top": "144.6588px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-133",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 133",
+        "position": "absolute",
+        "left": "920.888px",
+        "top": "218.383px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "249.4072px",
+        "top": "196.5447px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-134",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 134",
+        "position": "absolute",
+        "left": "1052.242px",
+        "top": "218.418px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "284.9822px",
+        "top": "196.5762px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-135",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 135",
+        "position": "absolute",
+        "left": "1312.258px",
+        "top": "449.644px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "355.4032px",
+        "top": "404.6796px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-136",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 136",
+        "position": "absolute",
+        "left": "1310.463px",
+        "top": "472.697px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "354.9171px",
+        "top": "425.4273px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-137",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 137",
+        "position": "absolute",
+        "left": "48.159px",
+        "top": "503.885px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "13.0431px",
+        "top": "453.4965px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-138",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 138",
+        "position": "absolute",
+        "left": "276.404px",
+        "top": "733.894px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "74.8594px",
+        "top": "660.5046px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-139",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 139",
+        "position": "absolute",
+        "left": "265.662px",
+        "top": "727.194px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "71.9501px",
+        "top": "654.4746px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-140",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 140",
+        "position": "absolute",
+        "left": "485.659px",
+        "top": "793.805px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "131.5326px",
+        "top": "714.4245px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-141",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 141",
+        "position": "absolute",
+        "left": "673.063px",
+        "top": "12.843px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "182.2879px",
+        "top": "11.5587px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-142",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 142",
+        "position": "absolute",
+        "left": "668.09px",
+        "top": "983.333px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "180.941px",
+        "top": "884.9997px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-143",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 143",
+        "position": "absolute",
+        "left": "922.138px",
+        "top": "87.138px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "249.7457px",
+        "top": "78.4242px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-144",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 144",
+        "position": "absolute",
+        "left": "1063.695px",
+        "top": "286.226px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "288.0841px",
+        "top": "257.6034px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-145",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 145",
+        "position": "absolute",
+        "left": "1078.633px",
+        "top": "242.457px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "292.1298px",
+        "top": "218.2113px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-146",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 146",
+        "position": "absolute",
+        "left": "1355.093px",
+        "top": "382.605px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "367.0044px",
+        "top": "344.3445px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-147",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 147",
+        "position": "absolute",
+        "left": "10.36px",
+        "top": "554.17px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "2.8058px",
+        "top": "498.753px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-148",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 148",
+        "position": "absolute",
+        "left": "57.369px",
+        "top": "505.7px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "15.5374px",
+        "top": "455.13px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-149",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 149",
+        "position": "absolute",
+        "left": "342.371px",
+        "top": "678.776px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "92.7255px",
+        "top": "610.8984px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-150",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 150",
+        "position": "absolute",
+        "left": "395.512px",
+        "top": "817.187px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "107.1178px",
+        "top": "735.4683px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-151",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 151",
+        "position": "absolute",
+        "left": "483.562px",
+        "top": "773.904px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "130.9647px",
+        "top": "696.5136px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-152",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 152",
+        "position": "absolute",
+        "left": "762.385px",
+        "top": "974.17px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "206.4793px",
+        "top": "876.753px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-153",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 153",
+        "position": "absolute",
+        "left": "781.759px",
+        "top": "76.135px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "211.7264px",
+        "top": "68.5215px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-154",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 154",
+        "position": "absolute",
+        "left": "915.731px",
+        "top": "47.563px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "248.0105px",
+        "top": "42.8067px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-155",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 155",
+        "position": "absolute",
+        "left": "1174.27px",
+        "top": "267.363px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "318.0315px",
+        "top": "240.6267px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-156",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 156",
+        "position": "absolute",
+        "left": "1171.596px",
+        "top": "332.159px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "317.3073px",
+        "top": "298.9431px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-157",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 157",
+        "position": "absolute",
+        "left": "1351.803px",
+        "top": "326.783px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "366.1133px",
+        "top": "294.1047px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-158",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 158",
+        "position": "absolute",
+        "left": "137.972px",
+        "top": "557.085px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "37.3674px",
+        "top": "501.3765px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-159",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 159",
+        "position": "absolute",
+        "left": "127.162px",
+        "top": "586.612px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "34.4397px",
+        "top": "527.9508px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-160",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 160",
+        "position": "absolute",
+        "left": "349.315px",
+        "top": "611.282px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "94.6061px",
+        "top": "550.1538px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-161",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 161",
+        "position": "absolute",
+        "left": "534.249px",
+        "top": "842.31px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "144.6924px",
+        "top": "758.079px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-162",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 162",
+        "position": "absolute",
+        "left": "530.027px",
+        "top": "840.957px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "143.549px",
+        "top": "756.8613px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-163",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 163",
+        "position": "absolute",
+        "left": "785.661px",
+        "top": "900.402px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "212.7832px",
+        "top": "810.3618px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-164",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 164",
+        "position": "absolute",
+        "left": "924.6px",
+        "top": "122.332px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "250.4125px",
+        "top": "110.0988px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-165",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 165",
+        "position": "absolute",
+        "left": "941.034px",
+        "top": "96.662px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "254.8634px",
+        "top": "86.9958px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-166",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 166",
+        "position": "absolute",
+        "left": "1218.351px",
+        "top": "193.16px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "329.9701px",
+        "top": "173.844px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-167",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 167",
+        "position": "absolute",
+        "left": "1311.113px",
+        "top": "396.808px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "355.0931px",
+        "top": "357.1272px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-168",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 168",
+        "position": "absolute",
+        "left": "1360.213px",
+        "top": "355.104px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "368.391px",
+        "top": "319.5936px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-169",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 169",
+        "position": "absolute",
+        "left": "205.259px",
+        "top": "488.318px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "55.591px",
+        "top": "439.4862px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-170",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 170",
+        "position": "absolute",
+        "left": "256.258px",
+        "top": "665.79px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "69.4032px",
+        "top": "599.211px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-171",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 171",
+        "position": "absolute",
+        "left": "346.785px",
+        "top": "617.463px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "93.9209px",
+        "top": "555.7167px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-172",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 172",
+        "position": "absolute",
+        "left": "624.834px",
+        "top": "784.468px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "169.2259px",
+        "top": "706.0212px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-173",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 173",
+        "position": "absolute",
+        "left": "642.641px",
+        "top": "929.716px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "174.0486px",
+        "top": "836.7444px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-174",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 174",
+        "position": "absolute",
+        "left": "779.232px",
+        "top": "884.644px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "211.042px",
+        "top": "796.1796px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-175",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 175",
+        "position": "absolute",
+        "left": "1036.256px",
+        "top": "80.13px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "280.6527px",
+        "top": "72.117px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-176",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 176",
+        "position": "absolute",
+        "left": "1032.746px",
+        "top": "189.379px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "279.702px",
+        "top": "170.4411px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-177",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 177",
+        "position": "absolute",
+        "left": "1215.452px",
+        "top": "157.212px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "329.1849px",
+        "top": "141.4908px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-178",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 178",
+        "position": "absolute",
+        "left": "1439.516px",
+        "top": "373.861px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "389.8689px",
+        "top": "336.4749px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-179",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 179",
+        "position": "absolute",
+        "left": "1428.685px",
+        "top": "445.875px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "386.9355px",
+        "top": "401.2875px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-180",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 180",
+        "position": "absolute",
+        "left": "212.968px",
+        "top": "435.353px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "57.6788px",
+        "top": "391.8177px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-181",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 181",
+        "position": "absolute",
+        "left": "395.416px",
+        "top": "664.352px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "107.0918px",
+        "top": "597.9168px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-182",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 182",
+        "position": "absolute",
+        "left": "391.99px",
+        "top": "700.523px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "106.164px",
+        "top": "630.4707px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-183",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 183",
+        "position": "absolute",
+        "left": "649.173px",
+        "top": "718.857px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "175.8177px",
+        "top": "646.9713px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-184",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 184",
+        "position": "absolute",
+        "left": "785.493px",
+        "top": "950.526px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "212.7377px",
+        "top": "855.4734px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-185",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 185",
+        "position": "absolute",
+        "left": "803.46px",
+        "top": "954.771px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "217.6038px",
+        "top": "859.2939px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-186",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 186",
+        "position": "absolute",
+        "left": "1081.592px",
+        "top": "7.139px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "292.9312px",
+        "top": "6.4251px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-187",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 187",
+        "position": "absolute",
+        "left": "1171.862px",
+        "top": "231.606px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "317.3793px",
+        "top": "208.4454px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-188",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 188",
+        "position": "absolute",
+        "left": "1223.081px",
+        "top": "210.098px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "331.2511px",
+        "top": "189.0882px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-189",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 189",
+        "position": "absolute",
+        "left": "68.124px",
+        "top": "299.275px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "18.4502px",
+        "top": "269.3475px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-190",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 190",
+        "position": "absolute",
+        "left": "117.007px",
+        "top": "507.178px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "31.6894px",
+        "top": "456.4602px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-191",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 191",
+        "position": "absolute",
+        "left": "210.028px",
+        "top": "467.902px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "56.8826px",
+        "top": "421.1118px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-192",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 192",
+        "position": "absolute",
+        "left": "487.258px",
+        "top": "594.07px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "131.9657px",
+        "top": "534.663px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-193",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 193",
+        "position": "absolute",
+        "left": "503.535px",
+        "top": "777.215px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "136.3741px",
+        "top": "699.4935px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-194",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 194",
+        "position": "absolute",
+        "left": "642.745px",
+        "top": "729.412px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "174.0768px",
+        "top": "656.4708px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-195",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 195",
+        "position": "absolute",
+        "left": "898.217px",
+        "top": "890.141px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "243.2671px",
+        "top": "801.1269px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-196",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 196",
+        "position": "absolute",
+        "left": "893.915px",
+        "top": "42.079px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "242.102px",
+        "top": "37.8711px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-197",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 197",
+        "position": "absolute",
+        "left": "1079.105px",
+        "top": "995.592px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "292.2576px",
+        "top": "896.0328px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-198",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 198",
+        "position": "absolute",
+        "left": "1301.036px",
+        "top": "186.014px",
+        "width": "1px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "352.3639px",
+        "top": "167.4126px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-199",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 199",
+        "position": "absolute",
+        "left": "1290.232px",
+        "top": "302.5px",
+        "width": "1.6px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "349.4378px",
+        "top": "272.25px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-200",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 200",
+        "position": "absolute",
+        "left": "76.617px",
+        "top": "267.078px",
+        "width": "2.2px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "20.7504px",
+        "top": "240.3702px",
+        "width": "0.5958px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-201",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 201",
+        "position": "absolute",
+        "left": "256.564px",
+        "top": "480.233px",
+        "width": "1px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "69.4861px",
+        "top": "432.2097px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-202",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 202",
+        "position": "absolute",
+        "left": "253.979px",
+        "top": "559.519px",
+        "width": "1.6px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "68.786px",
+        "top": "503.5671px",
+        "width": "0.5px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-203",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 203",
+        "position": "absolute",
+        "left": "512.673px",
+        "top": "544.13px",
+        "width": "2.2px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "138.8489px",
+        "top": "489.717px",
+        "width": "0.5958px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-204",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 204",
+        "position": "absolute",
+        "left": "646.374px",
+        "top": "771.453px",
+        "width": "1px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "175.0596px",
+        "top": "694.3077px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-205",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 205",
+        "position": "absolute",
+        "left": "665.913px",
+        "top": "814.418px",
+        "width": "1.6px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "180.3514px",
+        "top": "732.9762px",
+        "width": "0.5px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-206",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 206",
+        "position": "absolute",
+        "left": "944.813px",
+        "top": "826.617px",
+        "width": "2.2px",
+        "height": "1.6px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "255.8869px",
+        "top": "743.9553px",
+        "width": "0.5958px",
+        "height": "1.44px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-207",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 207",
+        "position": "absolute",
+        "left": "1032.607px",
+        "top": "58.544px",
+        "width": "1px",
+        "height": "2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "279.6644px",
+        "top": "52.6896px",
+        "width": "0.5px",
+        "height": "1.8px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-208",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 208",
+        "position": "absolute",
+        "left": "1085.972px",
+        "top": "68.628px",
+        "width": "1.6px",
+        "height": "0.8px",
+        "fill": "#bd261e",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "294.1174px",
+        "top": "61.7652px",
+        "width": "0.5px",
+        "height": "0.72px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "paper-fleck-209",
+      "parent": "paper-grain",
+      "attrs": {
+        "name": "paper fleck 209",
+        "position": "absolute",
+        "left": "1370.966px",
+        "top": "114.025px",
+        "width": "2.2px",
+        "height": "1.2px",
+        "fill": "#fbd0bf",
+        "opacity": 0.12
+      },
+      "phone": {
+        "left": "371.3033px",
+        "top": "102.6225px",
+        "width": "0.5958px",
+        "height": "1.08px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "small-monogram-capsule",
+      "parent": "stage",
+      "attrs": {
+        "name": "small monogram capsule",
+        "position": "absolute",
+        "left": "12px",
+        "top": "13px",
+        "width": "50px",
+        "height": "29px",
+        "fill": "#efefeb",
+        "radius": "20px"
+      },
+      "phone": {
+        "left": "12px",
+        "top": "14px",
+        "width": "42px",
+        "height": "28px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "small-monogram",
+      "parent": "small-monogram-capsule",
+      "attrs": {
+        "name": "small monogram",
+        "position": "absolute",
+        "left": "9px",
+        "top": "6px",
+        "width": "45px",
+        "height": "auto",
+        "text": "NM",
+        "fontName": "Inter",
+        "fontSize": "20px",
+        "lineHeight": "24px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "8px",
+        "top": "6px",
+        "width": "34px",
+        "fontSize": "14px",
+        "lineHeight": "16px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "long-nav-capsule",
+      "parent": "stage",
+      "attrs": {
+        "name": "long nav capsule",
+        "position": "absolute",
+        "left": "499px",
+        "top": "12px",
+        "width": "442px",
+        "height": "31px",
+        "fill": "#efefeb",
+        "radius": "22px"
+      },
+      "phone": {
+        "left": "135.1458px",
+        "top": "3.25px",
+        "width": "119.7083px",
+        "height": "8.3958px",
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "long-nav-type",
+      "parent": "long-nav-capsule",
+      "attrs": {
+        "name": "long nav type",
+        "position": "absolute",
+        "left": "24px",
+        "top": "9px",
+        "width": "420px",
+        "height": "auto",
+        "text": "Story  In use  Weights  Ligatures  Languages  Accents  Variants",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "6.5px",
+        "top": "2.4375px",
+        "width": "113.75px",
+        "fontSize": "7px",
+        "lineHeight": "8.75px",
+        "visible": false
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "purchase-capsule",
+      "parent": "stage",
+      "attrs": {
+        "name": "purchase capsule",
+        "position": "absolute",
+        "left": "1293px",
+        "top": "13px",
+        "width": "135px",
+        "height": "29px",
+        "fill": "#161a18",
+        "radius": "20px"
+      },
+      "phone": {
+        "left": "247px",
+        "top": "14px",
+        "width": "131px",
+        "height": "28px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "purchase-capsule-outline",
+      "parent": "stage",
+      "attrs": {
+        "name": "purchase capsule outline",
+        "position": "absolute",
+        "left": "1293px",
+        "top": "13px",
+        "width": "135px",
+        "height": "29px",
+        "borderWidth": "1px",
+        "borderColor": "#dcdedb",
+        "borderStyle": "solid",
+        "radius": "20px"
+      },
+      "phone": {
+        "left": "247px",
+        "top": "14px",
+        "width": "131px",
+        "height": "28px",
+        "borderWidth": "0.2708px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "purchase-caption",
+      "parent": "purchase-capsule",
+      "attrs": {
+        "name": "purchase caption",
+        "position": "absolute",
+        "left": "11px",
+        "top": "9px",
+        "width": "125px",
+        "height": "auto",
+        "text": "Get PP Neue Montreal",
+        "fontName": "Inter",
+        "fontSize": "10px",
+        "lineHeight": "10.8px",
+        "textColor": "#eeeeee",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "9px",
+        "top": "9px",
+        "width": "120px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "travel-guide-heading",
+      "parent": "stage",
+      "attrs": {
+        "name": "travel guide heading",
+        "position": "absolute",
+        "left": "18px",
+        "top": "63px",
+        "width": "550px",
+        "height": "auto",
+        "text": "Official\nTravel Guide",
+        "fontName": "Inter",
+        "fontSize": "53px",
+        "lineHeight": "50px",
+        "textColor": "#eeeeea",
+        "paragraphSpacing": 0,
+        "fontWeight": 600
+      },
+      "phone": {
+        "left": "16px",
+        "top": "72px",
+        "width": "280px",
+        "fontSize": "48px",
+        "lineHeight": "48px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "travel-guide-rule-one",
+      "parent": "stage",
+      "attrs": {
+        "name": "travel guide rule one",
+        "position": "absolute",
+        "left": "18px",
+        "top": "248.5px",
+        "width": "1404px",
+        "height": "1px",
+        "fill": "#151b17",
+        "rotation": "0deg"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "235px",
+        "width": "358px",
+        "height": "1px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "travel-guide-rule-two",
+      "parent": "stage",
+      "attrs": {
+        "name": "travel guide rule two",
+        "position": "absolute",
+        "left": "18px",
+        "top": "425.5px",
+        "width": "1404px",
+        "height": "1px",
+        "fill": "#151b17",
+        "rotation": "0deg"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "340px",
+        "width": "358px",
+        "height": "1px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "guide-description",
+      "parent": "stage",
+      "attrs": {
+        "name": "guide description",
+        "position": "absolute",
+        "left": "18px",
+        "top": "257px",
+        "width": "900px",
+        "height": "auto",
+        "text": "Everything you need to know to experience\nPP Neue Montreal to its fullest.",
+        "fontName": "Inter",
+        "fontSize": "18px",
+        "lineHeight": "19.44px",
+        "textColor": "#111111",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "16px",
+        "top": "250px",
+        "width": "350px",
+        "fontSize": "16px",
+        "lineHeight": "21px",
+        "text": "Everything you need to know\nto experience PP Neue Montreal\nto its fullest."
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "poster-scale-lettering",
+      "parent": "stage",
+      "attrs": {
+        "name": "poster scale lettering",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "900px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "giant-neue",
+      "parent": "poster-scale-lettering",
+      "attrs": {
+        "name": "giant neue",
+        "position": "absolute",
+        "left": "12px",
+        "top": "438px",
+        "width": "1000px",
+        "height": "auto",
+        "text": "Neue",
+        "fontName": "Inter",
+        "fontSize": "220px",
+        "lineHeight": "220px",
+        "textColor": "#161a18",
+        "paragraphSpacing": 0,
+        "fontWeight": 700
+      },
+      "phone": {
+        "left": "16px",
+        "top": "365px",
+        "width": "358px",
+        "fontSize": "112px",
+        "lineHeight": "110px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "giant-montreal",
+      "parent": "poster-scale-lettering",
+      "attrs": {
+        "name": "giant montreal",
+        "position": "absolute",
+        "left": "12px",
+        "top": "616px",
+        "width": "1000px",
+        "height": "auto",
+        "text": "Montreal",
+        "fontName": "Inter",
+        "fontSize": "208px",
+        "lineHeight": "208px",
+        "textColor": "#161a18",
+        "paragraphSpacing": 0,
+        "fontWeight": 700
+      },
+      "phone": {
+        "left": "16px",
+        "top": "475px",
+        "width": "358px",
+        "fontSize": "80px",
+        "lineHeight": "84px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "neutral-city-film-slot",
+      "parent": "stage",
+      "attrs": {
+        "name": "City film still / credited source photograph",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "461px",
+        "width": "422px",
+        "height": "319px",
+        "fill": "#393e3a"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "585px",
+        "width": "358px",
+        "height": "270px"
+      },
+      "bindingKey": "hero-008-city-film-still"
+    },
+    {
+      "type": "FrameNode",
+      "key": "lower-poster-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "lower poster rule",
+        "position": "absolute",
+        "left": "18px",
+        "top": "791.5px",
+        "width": "1404px",
+        "height": "1px",
+        "fill": "#151b17",
+        "rotation": "0deg"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "880px",
+        "width": "358px",
+        "height": "1px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "next-section-black-field",
+      "parent": "stage",
+      "attrs": {
+        "name": "next section black field",
+        "position": "absolute",
+        "left": "0px",
+        "top": "810px",
+        "width": "1440px",
+        "height": "190px",
+        "fill": "#191919"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "900px",
+        "width": "390px",
+        "height": "320px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "next-section-divider",
+      "parent": "stage",
+      "attrs": {
+        "name": "next section divider",
+        "position": "absolute",
+        "left": "634px",
+        "top": "904.6px",
+        "width": "190px",
+        "height": "0.8px",
+        "fill": "#eeeeea",
+        "rotation": "90deg"
+      },
+      "phone": {
+        "left": "194.5px",
+        "top": "900px",
+        "width": "1px",
+        "height": "320px",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "next-section-words",
+      "parent": "stage",
+      "attrs": {
+        "name": "next section words",
+        "position": "absolute",
+        "left": "18px",
+        "top": "851px",
+        "width": "650px",
+        "height": "auto",
+        "text": "Refined,\nReworked,\nReintroduced.",
+        "fontName": "Inter",
+        "fontSize": "28px",
+        "lineHeight": "31px",
+        "textColor": "#eeeeea",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "16px",
+        "top": "940px",
+        "width": "350px",
+        "fontSize": "34px",
+        "lineHeight": "38px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-0",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 0",
+        "position": "absolute",
+        "left": "1331.323px",
+        "top": "68.122px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "75.92235009096747deg"
+      },
+      "phone": {
+        "left": "337.3969px",
+        "top": "95.2366px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 1",
+        "position": "absolute",
+        "left": "1338.79px",
+        "top": "68.775px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-65.92235009096719deg"
+      },
+      "phone": {
+        "left": "339.637px",
+        "top": "95.4325px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 2",
+        "position": "absolute",
+        "left": "1344.283px",
+        "top": "69.744px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "85.92235009096788deg"
+      },
+      "phone": {
+        "left": "341.2849px",
+        "top": "95.7232px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-3",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 3",
+        "position": "absolute",
+        "left": "1351.523px",
+        "top": "71.684px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-55.92235009096747deg"
+      },
+      "phone": {
+        "left": "343.4569px",
+        "top": "96.3052px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-4",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 4",
+        "position": "absolute",
+        "left": "1356.765px",
+        "top": "73.591px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "95.92235009096748deg"
+      },
+      "phone": {
+        "left": "345.0295px",
+        "top": "96.8773px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-5",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 5",
+        "position": "absolute",
+        "left": "1363.558px",
+        "top": "76.759px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-45.92235009096734deg"
+      },
+      "phone": {
+        "left": "347.0674px",
+        "top": "97.8277px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-6",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 6",
+        "position": "absolute",
+        "left": "1368.388px",
+        "top": "79.548px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "105.92235009096734deg"
+      },
+      "phone": {
+        "left": "348.5164px",
+        "top": "98.6644px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-7",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 7",
+        "position": "absolute",
+        "left": "1374.528px",
+        "top": "83.847px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-35.92235009096741deg"
+      },
+      "phone": {
+        "left": "350.3584px",
+        "top": "99.9541px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-8",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 8",
+        "position": "absolute",
+        "left": "1378.801px",
+        "top": "87.433px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "115.92235009096784deg"
+      },
+      "phone": {
+        "left": "351.6403px",
+        "top": "101.0299px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-9",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 9",
+        "position": "absolute",
+        "left": "1384.101px",
+        "top": "92.733px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-25.922350090967466deg"
+      },
+      "phone": {
+        "left": "353.2303px",
+        "top": "102.6199px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-10",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 10",
+        "position": "absolute",
+        "left": "1387.687px",
+        "top": "97.006px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "125.92235009096738deg"
+      },
+      "phone": {
+        "left": "354.3061px",
+        "top": "103.9018px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-11",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 11",
+        "position": "absolute",
+        "left": "1391.986px",
+        "top": "103.146px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-15.922350090967457deg"
+      },
+      "phone": {
+        "left": "355.5958px",
+        "top": "105.7438px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-12",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 12",
+        "position": "absolute",
+        "left": "1394.775px",
+        "top": "107.976px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "135.92235009096748deg"
+      },
+      "phone": {
+        "left": "356.4325px",
+        "top": "107.1928px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-13",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 13",
+        "position": "absolute",
+        "left": "1397.942px",
+        "top": "114.769px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-5.922350090967486deg"
+      },
+      "phone": {
+        "left": "357.3826px",
+        "top": "109.2307px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-14",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 14",
+        "position": "absolute",
+        "left": "1399.85px",
+        "top": "120.011px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "145.9223500909674deg"
+      },
+      "phone": {
+        "left": "357.955px",
+        "top": "110.8033px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-15",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 15",
+        "position": "absolute",
+        "left": "1401.79px",
+        "top": "127.251px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "4.0776499090325915deg"
+      },
+      "phone": {
+        "left": "358.537px",
+        "top": "112.9753px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-16",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 16",
+        "position": "absolute",
+        "left": "1402.759px",
+        "top": "132.744px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "155.92235009096748deg"
+      },
+      "phone": {
+        "left": "358.8277px",
+        "top": "114.6232px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-17",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 17",
+        "position": "absolute",
+        "left": "1403.412px",
+        "top": "140.211px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "14.077649909032527deg"
+      },
+      "phone": {
+        "left": "359.0236px",
+        "top": "116.8633px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-18",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 18",
+        "position": "absolute",
+        "left": "1403.412px",
+        "top": "145.789px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "165.92235009096746deg"
+      },
+      "phone": {
+        "left": "359.0236px",
+        "top": "118.5367px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-19",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 19",
+        "position": "absolute",
+        "left": "1402.759px",
+        "top": "153.256px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "24.07764990903253deg"
+      },
+      "phone": {
+        "left": "358.8277px",
+        "top": "120.7768px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-20",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 20",
+        "position": "absolute",
+        "left": "1401.79px",
+        "top": "158.749px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "175.92235009096746deg"
+      },
+      "phone": {
+        "left": "358.537px",
+        "top": "122.4247px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-21",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 21",
+        "position": "absolute",
+        "left": "1399.85px",
+        "top": "165.989px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "34.077649909032615deg"
+      },
+      "phone": {
+        "left": "357.955px",
+        "top": "124.5967px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-22",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 22",
+        "position": "absolute",
+        "left": "1397.942px",
+        "top": "171.231px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-174.07764990903254deg"
+      },
+      "phone": {
+        "left": "357.3826px",
+        "top": "126.1693px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-23",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 23",
+        "position": "absolute",
+        "left": "1394.775px",
+        "top": "178.024px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "44.07764990903253deg"
+      },
+      "phone": {
+        "left": "356.4325px",
+        "top": "128.2072px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-24",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 24",
+        "position": "absolute",
+        "left": "1391.986px",
+        "top": "182.854px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-164.07764990903254deg"
+      },
+      "phone": {
+        "left": "355.5958px",
+        "top": "129.6562px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-25",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 25",
+        "position": "absolute",
+        "left": "1387.687px",
+        "top": "188.994px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "54.077649909032644deg"
+      },
+      "phone": {
+        "left": "354.3061px",
+        "top": "131.4982px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-26",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 26",
+        "position": "absolute",
+        "left": "1384.101px",
+        "top": "193.267px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-154.07764990903254deg"
+      },
+      "phone": {
+        "left": "353.2303px",
+        "top": "132.7801px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-27",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 27",
+        "position": "absolute",
+        "left": "1378.801px",
+        "top": "198.567px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "64.07764990903219deg"
+      },
+      "phone": {
+        "left": "351.6403px",
+        "top": "134.3701px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-28",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 28",
+        "position": "absolute",
+        "left": "1374.528px",
+        "top": "202.153px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-144.07764990903257deg"
+      },
+      "phone": {
+        "left": "350.3584px",
+        "top": "135.4459px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-29",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 29",
+        "position": "absolute",
+        "left": "1368.388px",
+        "top": "206.452px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "74.07764990903267deg"
+      },
+      "phone": {
+        "left": "348.5164px",
+        "top": "136.7356px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-30",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 30",
+        "position": "absolute",
+        "left": "1363.558px",
+        "top": "209.241px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-134.07764990903271deg"
+      },
+      "phone": {
+        "left": "347.0674px",
+        "top": "137.5723px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-31",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 31",
+        "position": "absolute",
+        "left": "1356.765px",
+        "top": "212.409px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "84.07764990903253deg"
+      },
+      "phone": {
+        "left": "345.0295px",
+        "top": "138.5227px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-32",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 32",
+        "position": "absolute",
+        "left": "1351.523px",
+        "top": "214.316px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-124.07764990903254deg"
+      },
+      "phone": {
+        "left": "343.4569px",
+        "top": "139.0948px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-33",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 33",
+        "position": "absolute",
+        "left": "1344.283px",
+        "top": "216.256px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "94.0776499090327deg"
+      },
+      "phone": {
+        "left": "341.2849px",
+        "top": "139.6768px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-34",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 34",
+        "position": "absolute",
+        "left": "1338.79px",
+        "top": "217.225px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-114.07764990903229deg"
+      },
+      "phone": {
+        "left": "339.637px",
+        "top": "139.9675px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-35",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 35",
+        "position": "absolute",
+        "left": "1331.323px",
+        "top": "217.878px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "104.07764990903254deg"
+      },
+      "phone": {
+        "left": "337.3969px",
+        "top": "140.1634px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-36",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 36",
+        "position": "absolute",
+        "left": "1325.745px",
+        "top": "217.878px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-104.07764990903254deg"
+      },
+      "phone": {
+        "left": "335.7235px",
+        "top": "140.1634px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-37",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 37",
+        "position": "absolute",
+        "left": "1318.278px",
+        "top": "217.225px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "114.07764990903229deg"
+      },
+      "phone": {
+        "left": "333.4834px",
+        "top": "139.9675px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-38",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 38",
+        "position": "absolute",
+        "left": "1312.785px",
+        "top": "216.256px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-94.0776499090327deg"
+      },
+      "phone": {
+        "left": "331.8355px",
+        "top": "139.6768px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-39",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 39",
+        "position": "absolute",
+        "left": "1305.545px",
+        "top": "214.316px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "124.07764990903254deg"
+      },
+      "phone": {
+        "left": "329.6635px",
+        "top": "139.0948px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-40",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 40",
+        "position": "absolute",
+        "left": "1300.303px",
+        "top": "212.409px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-84.07764990903254deg"
+      },
+      "phone": {
+        "left": "328.0909px",
+        "top": "138.5227px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-41",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 41",
+        "position": "absolute",
+        "left": "1293.51px",
+        "top": "209.241px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "134.07764990903271deg"
+      },
+      "phone": {
+        "left": "326.053px",
+        "top": "137.5723px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-42",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 42",
+        "position": "absolute",
+        "left": "1288.679px",
+        "top": "206.452px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-74.07764990903267deg"
+      },
+      "phone": {
+        "left": "324.6037px",
+        "top": "136.7356px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-43",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 43",
+        "position": "absolute",
+        "left": "1282.54px",
+        "top": "202.153px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "144.07764990903254deg"
+      },
+      "phone": {
+        "left": "322.762px",
+        "top": "135.4459px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-44",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 44",
+        "position": "absolute",
+        "left": "1278.267px",
+        "top": "198.567px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-64.07764990903222deg"
+      },
+      "phone": {
+        "left": "321.4801px",
+        "top": "134.3701px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-45",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 45",
+        "position": "absolute",
+        "left": "1272.967px",
+        "top": "193.267px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "154.07764990903254deg"
+      },
+      "phone": {
+        "left": "319.8901px",
+        "top": "132.7801px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-46",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 46",
+        "position": "absolute",
+        "left": "1269.381px",
+        "top": "188.994px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-54.07764990903269deg"
+      },
+      "phone": {
+        "left": "318.8143px",
+        "top": "131.4982px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-47",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 47",
+        "position": "absolute",
+        "left": "1265.082px",
+        "top": "182.854px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "164.0776499090324deg"
+      },
+      "phone": {
+        "left": "317.5246px",
+        "top": "129.6562px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-48",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 48",
+        "position": "absolute",
+        "left": "1262.293px",
+        "top": "178.024px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-44.07764990903253deg"
+      },
+      "phone": {
+        "left": "316.6879px",
+        "top": "128.2072px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-49",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 49",
+        "position": "absolute",
+        "left": "1259.125px",
+        "top": "171.231px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "174.0776499090327deg"
+      },
+      "phone": {
+        "left": "315.7375px",
+        "top": "126.1693px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-50",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 50",
+        "position": "absolute",
+        "left": "1257.217px",
+        "top": "165.989px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-34.077649909032566deg"
+      },
+      "phone": {
+        "left": "315.1651px",
+        "top": "124.5967px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-51",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 51",
+        "position": "absolute",
+        "left": "1255.278px",
+        "top": "158.749px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-175.92235009096746deg"
+      },
+      "phone": {
+        "left": "314.5834px",
+        "top": "122.4247px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-52",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 52",
+        "position": "absolute",
+        "left": "1254.309px",
+        "top": "153.256px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-24.07764990903253deg"
+      },
+      "phone": {
+        "left": "314.2927px",
+        "top": "120.7768px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-53",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 53",
+        "position": "absolute",
+        "left": "1253.656px",
+        "top": "145.789px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-165.92235009096746deg"
+      },
+      "phone": {
+        "left": "314.0968px",
+        "top": "118.5367px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-54",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 54",
+        "position": "absolute",
+        "left": "1253.656px",
+        "top": "140.211px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-14.077649909032527deg"
+      },
+      "phone": {
+        "left": "314.0968px",
+        "top": "116.8633px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-55",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 55",
+        "position": "absolute",
+        "left": "1254.309px",
+        "top": "132.744px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-155.92235009096757deg"
+      },
+      "phone": {
+        "left": "314.2927px",
+        "top": "114.6232px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-56",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 56",
+        "position": "absolute",
+        "left": "1255.278px",
+        "top": "127.251px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-4.077649909032556deg"
+      },
+      "phone": {
+        "left": "314.5834px",
+        "top": "112.9753px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-57",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 57",
+        "position": "absolute",
+        "left": "1257.217px",
+        "top": "120.011px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-145.92235009096729deg"
+      },
+      "phone": {
+        "left": "315.1651px",
+        "top": "110.8033px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-58",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 58",
+        "position": "absolute",
+        "left": "1259.125px",
+        "top": "114.769px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "5.9223500909675915deg"
+      },
+      "phone": {
+        "left": "315.7375px",
+        "top": "109.2307px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-59",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 59",
+        "position": "absolute",
+        "left": "1262.293px",
+        "top": "107.976px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-135.92235009096754deg"
+      },
+      "phone": {
+        "left": "316.6879px",
+        "top": "107.1928px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-60",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 60",
+        "position": "absolute",
+        "left": "1265.082px",
+        "top": "103.146px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "15.922350090967317deg"
+      },
+      "phone": {
+        "left": "317.5246px",
+        "top": "105.7438px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-61",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 61",
+        "position": "absolute",
+        "left": "1269.381px",
+        "top": "97.006px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-125.92235009096738deg"
+      },
+      "phone": {
+        "left": "318.8143px",
+        "top": "103.9018px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-62",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 62",
+        "position": "absolute",
+        "left": "1272.967px",
+        "top": "92.733px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "25.922350090967466deg"
+      },
+      "phone": {
+        "left": "319.8901px",
+        "top": "102.6199px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-63",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 63",
+        "position": "absolute",
+        "left": "1278.267px",
+        "top": "87.433px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-115.92235009096784deg"
+      },
+      "phone": {
+        "left": "321.4801px",
+        "top": "101.0299px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-64",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 64",
+        "position": "absolute",
+        "left": "1282.54px",
+        "top": "83.847px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "35.92235009096747deg"
+      },
+      "phone": {
+        "left": "322.762px",
+        "top": "99.9541px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-65",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 65",
+        "position": "absolute",
+        "left": "1288.679px",
+        "top": "79.548px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-105.92235009096731deg"
+      },
+      "phone": {
+        "left": "324.6037px",
+        "top": "98.6644px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-66",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 66",
+        "position": "absolute",
+        "left": "1293.51px",
+        "top": "76.759px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "45.92235009096741deg"
+      },
+      "phone": {
+        "left": "326.053px",
+        "top": "97.8277px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-67",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 67",
+        "position": "absolute",
+        "left": "1300.303px",
+        "top": "73.591px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-95.92235009096747deg"
+      },
+      "phone": {
+        "left": "328.0909px",
+        "top": "96.8773px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-68",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 68",
+        "position": "absolute",
+        "left": "1305.545px",
+        "top": "71.684px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "55.92235009096749deg"
+      },
+      "phone": {
+        "left": "329.6635px",
+        "top": "96.3052px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-69",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 69",
+        "position": "absolute",
+        "left": "1312.785px",
+        "top": "69.744px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-85.92235009096733deg"
+      },
+      "phone": {
+        "left": "331.8355px",
+        "top": "95.7232px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-70",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 70",
+        "position": "absolute",
+        "left": "1318.278px",
+        "top": "68.775px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "65.92235009096771deg"
+      },
+      "phone": {
+        "left": "333.4834px",
+        "top": "95.4325px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "spiky-circular-emblem-71",
+      "parent": "stage",
+      "attrs": {
+        "name": "spiky circular emblem 71",
+        "position": "absolute",
+        "left": "1325.745px",
+        "top": "68.122px",
+        "width": "22.932px",
+        "height": "2px",
+        "fill": "#161a18",
+        "rotation": "-75.92235009096747deg"
+      },
+      "phone": {
+        "left": "335.7235px",
+        "top": "95.2366px",
+        "width": "6.8796px",
+        "height": "0.6px"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-008 / CREDITED RECREATION",
+    "title": "PP Neue Montreal",
+    "influences": "Original: Pangram Pangram (typeface foundry); separate website-design credit not identified · https://neuemontreal.com/ · https://www.lapa.ninja/post/pp-neue-montreal/",
+    "links": [
+      {
+        "label": "Original source / Pangram Pangram / PP Neue Montreal ↗",
+        "href": "https://neuemontreal.com/"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.lapa.ninja/post/pp-neue-montreal/"
+      }
+    ],
+    "limits": "Native full-opening typography, grain, rules and emblem; actual credited city-film photograph mounted only inside its native aperture. Inter substitutes the licensed face. This is one still, not source film playback. Explicit Phone composition is an adaptation rather than a verified source mobile clone."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "imageBindings": [
+    {
+      "key": "hero-008-city-film-still",
+      "path": "source-media/HERO-008-city-film-still.png",
+      "bytes": 527518,
+      "sha256": "cf9f731d3ec08e08370c22fd5c1865967e6c39c8728f85e97eeaff6962806376",
+      "creator": "Pangram Pangram / selected city-film source",
+      "sourceURL": "https://neuemontreal.com/",
+      "sourceCapture": "hero-recreations-2026-10-31/remaining-12/sources/HERO-008-selected-top.png",
+      "limits": "Actual source photographic still cropped from the retained selected screenshot; no film playback or original footage sequence claimed."
+    }
+  ],
+  "phoneAdaptation": "Poster-scale words keep separate Neue/Montreal measures; readable guide heading/nav capsules, red material, native emblem and a full-width media aperture follow their own Phone positions. Desktop and Phone retain the actual credited city-film photographic still; playback is not recreated. Long navigation condenses onPhone; actual source responsive behavior is not asserted.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

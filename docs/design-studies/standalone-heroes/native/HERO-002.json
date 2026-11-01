@@ -1,0 +1,1234 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-002",
+  "title": "Ajedrez Film Poem",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-002-ajedrez-film-poem",
+  "width": 1440,
+  "height": 900,
+  "phoneWidth": 390,
+  "phoneHeight": 780,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 780,
+  "background": "#b9c2bf",
+  "stageAttrs": {
+    "fill": "#b9c2bf",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#b9c2bf",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Julián Leiss / @julianleiss",
+    "url": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+    "gallery": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+    "existingDesignPageID": "H_ibyOQyy",
+    "existingNativeArtworkID": "ihmbR6lQG",
+    "nativeRecipe": {
+      "path": "docs/design-studies/hero-recreations/native/HERO-002.json",
+      "bytes": 111929,
+      "sha256": "532e8972cc5dfbad03a69b43a118fee7c0c68d3b3b734f3d64bd347911c09c04"
+    },
+    "selectedFrame": "source-media/HERO-002-tail-09.png",
+    "inspectedFrameDescription": "Actual selected movie frame: two-column repeated hand-study strip with intermittent blank/catalog areas; source geometry replaces the earlier guessed portrait-overlap study."
+  },
+  "parts": [
+    {
+      "key": "film-strip",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "film strip",
+        "position": "absolute",
+        "left": "480px",
+        "top": "24px",
+        "width": "480px",
+        "height": "852px",
+        "fill": "#b9c2bf",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "40px",
+        "width": "390px",
+        "height": "692.25px"
+      }
+    },
+    {
+      "key": "photo-0",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 0",
+        "position": "absolute",
+        "left": "0px",
+        "top": "-143px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "-116.1875px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "photo-1",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 1",
+        "position": "absolute",
+        "left": "236px",
+        "top": "-143px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "191.75px",
+        "top": "-116.1875px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-right"
+    },
+    {
+      "key": "photo-2",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 2",
+        "position": "absolute",
+        "left": "0px",
+        "top": "21px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "17.0625px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "photo-3",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 3",
+        "position": "absolute",
+        "left": "0px",
+        "top": "275px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "223.4375px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "photo-4",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 4",
+        "position": "absolute",
+        "left": "236px",
+        "top": "275px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "191.75px",
+        "top": "223.4375px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-right"
+    },
+    {
+      "key": "photo-5",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 5",
+        "position": "absolute",
+        "left": "0px",
+        "top": "439px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "356.6875px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "photo-6",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 6",
+        "position": "absolute",
+        "left": "0px",
+        "top": "668px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "542.75px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "photo-7",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 7",
+        "position": "absolute",
+        "left": "236px",
+        "top": "668px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "191.75px",
+        "top": "542.75px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-right"
+    },
+    {
+      "key": "photo-8",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "photo 8",
+        "position": "absolute",
+        "left": "0px",
+        "top": "832px",
+        "width": "234px",
+        "height": "161px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "676px",
+        "width": "190.125px",
+        "height": "130.8125px"
+      },
+      "bindingKey": "hero-002-hand-left"
+    },
+    {
+      "key": "image-catalog",
+      "type": "RichTextNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "image catalog",
+        "position": "absolute",
+        "left": "342px",
+        "top": "205px",
+        "width": "130px",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "5px",
+        "lineHeight": "7px",
+        "textColor": "#303735",
+        "text": "MUYBRIDGE, Eadweard\nAnimal Locomotion, 1887",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "277.875px",
+        "top": "166.5625px",
+        "width": "105.625px",
+        "fontSize": "6px",
+        "lineHeight": "8px"
+      }
+    },
+    {
+      "key": "frame-marker",
+      "type": "RichTextNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "frame marker",
+        "position": "absolute",
+        "left": "2px",
+        "top": "267px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "5px",
+        "lineHeight": "7px",
+        "textColor": "#303735",
+        "text": "IMG. 20",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "1.625px",
+        "top": "216.9375px",
+        "width": "81.25px",
+        "fontSize": "6px",
+        "lineHeight": "8px"
+      }
+    },
+    {
+      "key": "lower-catalog",
+      "type": "RichTextNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "lower catalog",
+        "position": "absolute",
+        "left": "2px",
+        "top": "602px",
+        "width": "200px",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "5px",
+        "lineHeight": "7px",
+        "textColor": "#303735",
+        "text": "AJEDREZ / 09",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "1.625px",
+        "top": "489.125px",
+        "width": "162.5px",
+        "fontSize": "6px",
+        "lineHeight": "8px"
+      }
+    },
+    {
+      "key": "paper-fleck-0",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 0",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-1",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 1",
+        "position": "absolute",
+        "left": "97.31px",
+        "top": "71.43px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "79.0644px",
+        "top": "58.0369px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-2",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 2",
+        "position": "absolute",
+        "left": "194.62px",
+        "top": "142.86px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "158.1287px",
+        "top": "116.0738px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-3",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 3",
+        "position": "absolute",
+        "left": "291.93px",
+        "top": "214.29px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "237.1931px",
+        "top": "174.1106px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-4",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 4",
+        "position": "absolute",
+        "left": "389.24px",
+        "top": "285.72px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "316.2575px",
+        "top": "232.1475px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-5",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 5",
+        "position": "absolute",
+        "left": "6.55px",
+        "top": "357.15px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "5.3219px",
+        "top": "290.1844px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-6",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 6",
+        "position": "absolute",
+        "left": "103.86px",
+        "top": "428.58px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "84.3863px",
+        "top": "348.2213px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-7",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 7",
+        "position": "absolute",
+        "left": "201.17px",
+        "top": "500.01px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "163.4506px",
+        "top": "406.2581px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-8",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 8",
+        "position": "absolute",
+        "left": "298.48px",
+        "top": "571.44px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "242.515px",
+        "top": "464.295px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-9",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 9",
+        "position": "absolute",
+        "left": "395.79px",
+        "top": "642.87px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "321.5794px",
+        "top": "522.3319px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-10",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 10",
+        "position": "absolute",
+        "left": "13.1px",
+        "top": "714.3px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "10.6438px",
+        "top": "580.3688px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-11",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 11",
+        "position": "absolute",
+        "left": "110.41px",
+        "top": "785.73px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "89.7081px",
+        "top": "638.4056px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-12",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 12",
+        "position": "absolute",
+        "left": "207.72px",
+        "top": "5.16px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "168.7725px",
+        "top": "4.1925px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-13",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 13",
+        "position": "absolute",
+        "left": "305.03px",
+        "top": "76.59px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "247.8369px",
+        "top": "62.2294px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-14",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 14",
+        "position": "absolute",
+        "left": "402.34px",
+        "top": "148.02px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "326.9013px",
+        "top": "120.2663px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-15",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 15",
+        "position": "absolute",
+        "left": "19.65px",
+        "top": "219.45px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "15.9656px",
+        "top": "178.3031px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-16",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 16",
+        "position": "absolute",
+        "left": "116.96px",
+        "top": "290.88px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "95.03px",
+        "top": "236.34px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-17",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 17",
+        "position": "absolute",
+        "left": "214.27px",
+        "top": "362.31px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "174.0944px",
+        "top": "294.3769px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-18",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 18",
+        "position": "absolute",
+        "left": "311.58px",
+        "top": "433.74px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "253.1587px",
+        "top": "352.4138px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-19",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 19",
+        "position": "absolute",
+        "left": "408.89px",
+        "top": "505.17px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "332.2231px",
+        "top": "410.4506px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-20",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 20",
+        "position": "absolute",
+        "left": "26.2px",
+        "top": "576.6px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "21.2875px",
+        "top": "468.4875px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-21",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 21",
+        "position": "absolute",
+        "left": "123.51px",
+        "top": "648.03px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "100.3519px",
+        "top": "526.5244px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-22",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 22",
+        "position": "absolute",
+        "left": "220.82px",
+        "top": "719.46px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "179.4163px",
+        "top": "584.5612px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-23",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 23",
+        "position": "absolute",
+        "left": "318.13px",
+        "top": "790.89px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "258.4806px",
+        "top": "642.5981px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-24",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 24",
+        "position": "absolute",
+        "left": "415.44px",
+        "top": "10.32px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "337.545px",
+        "top": "8.385px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-25",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 25",
+        "position": "absolute",
+        "left": "32.75px",
+        "top": "81.75px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "26.6094px",
+        "top": "66.4219px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-26",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 26",
+        "position": "absolute",
+        "left": "130.06px",
+        "top": "153.18px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "105.6737px",
+        "top": "124.4588px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-27",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 27",
+        "position": "absolute",
+        "left": "227.37px",
+        "top": "224.61px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "184.7381px",
+        "top": "182.4956px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-28",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 28",
+        "position": "absolute",
+        "left": "324.68px",
+        "top": "296.04px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "263.8025px",
+        "top": "240.5325px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-29",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 29",
+        "position": "absolute",
+        "left": "421.99px",
+        "top": "367.47px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "342.8669px",
+        "top": "298.5694px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-30",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 30",
+        "position": "absolute",
+        "left": "39.3px",
+        "top": "438.9px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "31.9313px",
+        "top": "356.6063px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-31",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 31",
+        "position": "absolute",
+        "left": "136.61px",
+        "top": "510.33px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "110.9956px",
+        "top": "414.6431px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-32",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 32",
+        "position": "absolute",
+        "left": "233.92px",
+        "top": "581.76px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "190.06px",
+        "top": "472.68px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-33",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 33",
+        "position": "absolute",
+        "left": "331.23px",
+        "top": "653.19px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "269.1244px",
+        "top": "530.7169px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-34",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 34",
+        "position": "absolute",
+        "left": "428.54px",
+        "top": "724.62px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "348.1887px",
+        "top": "588.7538px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-35",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 35",
+        "position": "absolute",
+        "left": "45.85px",
+        "top": "796.05px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "37.2531px",
+        "top": "646.7906px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-36",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 36",
+        "position": "absolute",
+        "left": "143.16px",
+        "top": "15.48px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "116.3175px",
+        "top": "12.5775px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-37",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 37",
+        "position": "absolute",
+        "left": "240.47px",
+        "top": "86.91px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "195.3819px",
+        "top": "70.6144px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-38",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 38",
+        "position": "absolute",
+        "left": "337.78px",
+        "top": "158.34px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "274.4463px",
+        "top": "128.6513px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    },
+    {
+      "key": "paper-fleck-39",
+      "type": "FrameNode",
+      "parent": "film-strip",
+      "attrs": {
+        "name": "paper fleck 39",
+        "position": "absolute",
+        "left": "435.09px",
+        "top": "229.77px",
+        "width": ".7px",
+        "height": "1.2px",
+        "fill": "#48534e",
+        "opacity": 0.09
+      },
+      "phone": {
+        "left": "353.5106px",
+        "top": "186.6881px",
+        "width": ".6px",
+        "height": ".9px"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-002 / CREDITED RECREATION",
+    "title": "Ajedrez Film Poem",
+    "influences": "Original: Julián Leiss / @julianleiss · https://recent.design/i/qfy3385-ajedrez-film-poem · https://recent.design/i/qfy3385-ajedrez-film-poem",
+    "links": [
+      {
+        "label": "Original source / Julián Leiss ↗",
+        "href": "https://recent.design/i/qfy3385-ajedrez-film-poem"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://recent.design/i/qfy3385-ajedrez-film-poem"
+      }
+    ],
+    "limits": "Selected native film-frame composition reconstructed from actual sampled film09 using the two credited hand photographs in separate native image apertures. Grain/annotations simplified; poem text is not reproduced. This is a still-layout recreation, not playback or timing of the complete52-second film. Earlier repeated-chess and guessed overlap Design studies remain preserved. The gallery post identifies Julián Leiss; the underlying historical hand-photography/archive attribution has not been independently verified, and the tiny recreated catalog annotation is not provenance evidence."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "imageBindings": [
+    {
+      "key": "hero-002-hand-left",
+      "path": "source-media/HERO-002-hand-left-still.png",
+      "bytes": 38883,
+      "sha256": "f7a9205abf596b5ad1824a4d2180f61e83d9982519ca62ae65fba7c5167a5cf5",
+      "creator": "Julián Leiss / Ajedrez Film Poem; underlying archival photo authors not independently verified.",
+      "sourceURL": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "preparation": {
+        "frame": "HERO-002-tail-09.png",
+        "extraction": "ffmpeg8.0.1; start24s, fps1/2; targetframe7or9",
+        "crop": {
+          "left": 0,
+          "top": 277,
+          "width": 234,
+          "height": 161
+        }
+      },
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    },
+    {
+      "key": "hero-002-hand-right",
+      "path": "source-media/HERO-002-hand-right-still.png",
+      "bytes": 26982,
+      "sha256": "c7281fca6a1c11ad7686ee3af14ce78de2c59215ed3ab474d88778571456860a",
+      "creator": "Julián Leiss / Ajedrez Film Poem; underlying archival photo authors not independently verified.",
+      "sourceURL": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "preparation": {
+        "frame": "HERO-002-tail-09.png",
+        "extraction": "ffmpeg8.0.1; start24s, fps1/2; targetframe7or9",
+        "crop": {
+          "left": 236,
+          "top": 277,
+          "width": 234,
+          "height": 161
+        }
+      },
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    }
+  ],
+  "phoneAdaptation": "Single390-wide native film strip with proportional photographic apertures and separately readable catalog microtype, rather than two Design specimens next to each other.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

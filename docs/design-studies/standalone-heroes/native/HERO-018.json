@@ -1,0 +1,1096 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-018",
+  "title": "pu—ente / entry and graphic-design branch",
+  "classification": "SOURCE INSPIRATION / NATIVE FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-018-pu-ente",
+  "width": 1440,
+  "height": 1900,
+  "phoneWidth": 390,
+  "phoneHeight": 2070,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 780,
+  "background": "#d9d5d4",
+  "stageAttrs": {
+    "fill": "#d9d5d4",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#d9d5d4",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "pu—ente",
+    "url": "https://www.pu-ente.com/",
+    "gallery": "https://minimal.gallery/pu-ente/",
+    "graphicBranch": "https://www.pu-ente.com/z/",
+    "inspectedFrame": {
+      "path": "sources/HERO-018-entry.jpg",
+      "bytes": 18984,
+      "sha256": "f07a26206c6b490ac573d92e7729b805421bc3b7bbcd06c76092cf6924883f95"
+    },
+    "existingDesignPageID": "bS3wbS1E4",
+    "existingNativeArtworkID": "N252cia5g",
+    "existingNativeRecipe": "docs/design-studies/hero-recreations/native/HERO-018.json"
+  },
+  "parts": [
+    {
+      "key": "entry-gate",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "entry gate",
+        "position": "absolute",
+        "left": "461.25px",
+        "top": "191.25px",
+        "width": "517.5px",
+        "height": "517.5px"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "215px",
+        "width": "350px",
+        "height": "350px"
+      }
+    },
+    {
+      "key": "gate-personal",
+      "type": "FrameNode",
+      "parent": "entry-gate",
+      "attrs": {
+        "name": "gate personal",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "517.5px",
+        "height": "258.75px",
+        "fill": "#1b1b1b"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "350px",
+        "height": "175px"
+      }
+    },
+    {
+      "key": "gate-personal-title",
+      "type": "RichTextNode",
+      "parent": "gate-personal",
+      "attrs": {
+        "name": "gate personal title",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "20.25px",
+        "lineHeight": "26.325px",
+        "paragraphSpacing": 0,
+        "left": "56.25px",
+        "top": "61.875px",
+        "width": "405px",
+        "fontWeight": 700,
+        "textColor": "#ffffff",
+        "text": "a — arte"
+      },
+      "phone": {
+        "left": "38px",
+        "top": "42px",
+        "width": "274px",
+        "fontSize": "16px",
+        "lineHeight": "20.8px"
+      }
+    },
+    {
+      "key": "gate-personal-copy",
+      "type": "RichTextNode",
+      "parent": "gate-personal",
+      "attrs": {
+        "name": "gate personal copy",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "20.25px",
+        "lineHeight": "26.325px",
+        "paragraphSpacing": 0,
+        "left": "56.25px",
+        "top": "114.75px",
+        "width": "405px",
+        "fontWeight": 400,
+        "textColor": "#ffffff",
+        "text": "lo personal,\nlo que nace de mí.\nsumérgete aquí."
+      },
+      "phone": {
+        "left": "38px",
+        "top": "78px",
+        "width": "274px",
+        "fontSize": "16px",
+        "lineHeight": "20.8px"
+      }
+    },
+    {
+      "key": "gate-graphic-design",
+      "type": "FrameNode",
+      "parent": "entry-gate",
+      "attrs": {
+        "name": "gate graphic design",
+        "position": "absolute",
+        "left": "0px",
+        "top": "258.75px",
+        "width": "517.5px",
+        "height": "258.75px",
+        "fill": "#ffffff",
+        "link": {
+          "href": "/playgrounds/source-inspiration/heroes/hero-018-pu-ente#graphic-design",
+          "smoothScroll": true,
+          "openInNewTab": false
+        }
+      },
+      "phone": {
+        "left": "0px",
+        "top": "175px",
+        "width": "350px",
+        "height": "175px"
+      }
+    },
+    {
+      "key": "gate-graphic-design-title",
+      "type": "RichTextNode",
+      "parent": "gate-graphic-design",
+      "attrs": {
+        "name": "gate graphic design title",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "20.25px",
+        "lineHeight": "26.325px",
+        "paragraphSpacing": 0,
+        "left": "56.25px",
+        "top": "61.875px",
+        "width": "405px",
+        "fontWeight": 700,
+        "textColor": "#1b1b1b",
+        "text": "z — diseño gráfico"
+      },
+      "phone": {
+        "left": "38px",
+        "top": "42px",
+        "width": "274px",
+        "fontSize": "16px",
+        "lineHeight": "20.8px"
+      }
+    },
+    {
+      "key": "gate-graphic-design-copy",
+      "type": "RichTextNode",
+      "parent": "gate-graphic-design",
+      "attrs": {
+        "name": "gate graphic design copy",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "20.25px",
+        "lineHeight": "26.325px",
+        "paragraphSpacing": 0,
+        "left": "56.25px",
+        "top": "114.75px",
+        "width": "405px",
+        "fontWeight": 400,
+        "textColor": "#1b1b1b",
+        "text": "lo comisionado,\nsurge de un encargo.\nempieza aquí."
+      },
+      "phone": {
+        "left": "38px",
+        "top": "78px",
+        "width": "274px",
+        "fontSize": "16px",
+        "lineHeight": "20.8px"
+      }
+    },
+    {
+      "key": "gallery-stage",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "gallery stage",
+        "position": "absolute",
+        "left": "0px",
+        "top": "900px",
+        "width": "1440px",
+        "height": "1000px",
+        "fill": "#333333",
+        "elementId": "graphic-design",
+        "scrollTargetEnabled": true,
+        "scrollMarginTop": "0px",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "780px",
+        "width": "390px",
+        "height": "1290px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-filled-corner-control",
+      "parent": "gallery-stage",
+      "attrs": {
+        "name": "filled corner control",
+        "position": "absolute",
+        "left": "76px",
+        "top": "76px",
+        "width": "32px",
+        "height": "32px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "24px",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-outline-corner-control",
+      "parent": "gallery-stage",
+      "attrs": {
+        "name": "outline corner control",
+        "position": "absolute",
+        "left": "1332px",
+        "top": "76px",
+        "width": "32px",
+        "height": "32px",
+        "borderWidth": "5px",
+        "borderColor": "#ffffff",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "left": "352px",
+        "top": "24px",
+        "width": "18px",
+        "height": "18px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-tile-caseti-385",
+      "parent": "gallery-stage",
+      "attrs": {
+        "name": "tile caseti 385",
+        "position": "absolute",
+        "left": "75px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "80px",
+        "width": "350px",
+        "height": "350px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-tile-porcelain-studio",
+      "parent": "gallery-stage",
+      "attrs": {
+        "name": "tile porcelain studio",
+        "position": "absolute",
+        "left": "530px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "480px",
+        "width": "350px",
+        "height": "350px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-tile-aurea10",
+      "parent": "gallery-stage",
+      "attrs": {
+        "name": "tile aurea10",
+        "position": "absolute",
+        "left": "985px",
+        "top": "285px",
+        "width": "380px",
+        "height": "380px",
+        "fill": "#000000",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "880px",
+        "width": "350px",
+        "height": "350px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-three-lower",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti three lower",
+        "position": "absolute",
+        "left": "25.333px",
+        "top": "153.583px",
+        "width": "129.833px",
+        "height": "129.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "caseti three lower",
+        "position": "absolute",
+        "left": "23.333px",
+        "top": "141.458px",
+        "width": "119.583px",
+        "height": "119.583px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-eight-lower",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti eight lower",
+        "position": "absolute",
+        "left": "121.917px",
+        "top": "131.417px",
+        "width": "152px",
+        "height": "152px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "caseti eight lower",
+        "position": "absolute",
+        "left": "112.292px",
+        "top": "121.042px",
+        "width": "140px",
+        "height": "140px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-eight-upper",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti eight upper",
+        "position": "absolute",
+        "left": "166.25px",
+        "top": "95px",
+        "width": "63.333px",
+        "height": "63.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "caseti eight upper",
+        "position": "absolute",
+        "left": "153.125px",
+        "top": "87.5px",
+        "width": "58.333px",
+        "height": "58.333px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-five-lower",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti five lower",
+        "position": "absolute",
+        "left": "224.833px",
+        "top": "155.167px",
+        "width": "126.667px",
+        "height": "126.667px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "caseti five lower",
+        "position": "absolute",
+        "left": "207.083px",
+        "top": "142.917px",
+        "width": "116.667px",
+        "height": "116.667px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-three-bar",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti three bar",
+        "position": "absolute",
+        "left": "61.75px",
+        "top": "123.658px",
+        "width": "68.083px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      },
+      "phone": {
+        "name": "caseti three bar",
+        "position": "absolute",
+        "left": "56.875px",
+        "top": "113.8955px",
+        "width": "62.708px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-three-link",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti three link",
+        "position": "absolute",
+        "left": "74.967px",
+        "top": "145.825px",
+        "width": "49.566px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "116.56505117707799deg"
+      },
+      "phone": {
+        "name": "caseti three link",
+        "position": "absolute",
+        "left": "69.0486px",
+        "top": "134.3125px",
+        "width": "45.6529px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "116.56505117707799deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-five-bar",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti five bar",
+        "position": "absolute",
+        "left": "281.833px",
+        "top": "123.658px",
+        "width": "64.917px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      },
+      "phone": {
+        "name": "caseti five bar",
+        "position": "absolute",
+        "left": "259.583px",
+        "top": "113.8955px",
+        "width": "59.792px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-caseti-five-link",
+      "parent": "g-tile-caseti-385",
+      "attrs": {
+        "name": "caseti five link",
+        "position": "absolute",
+        "left": "270.145px",
+        "top": "145.825px",
+        "width": "50.294px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "118.17859010995917deg"
+      },
+      "phone": {
+        "name": "caseti five link",
+        "position": "absolute",
+        "left": "248.8178px",
+        "top": "134.3125px",
+        "width": "46.3234px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "118.17859010995917deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-upper-small",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper small",
+        "position": "absolute",
+        "left": "49.083px",
+        "top": "49.083px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain upper small",
+        "position": "absolute",
+        "left": "45.208px",
+        "top": "45.208px",
+        "width": "49.583px",
+        "height": "49.583px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-upper-large",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper large",
+        "position": "absolute",
+        "left": "190px",
+        "top": "49.083px",
+        "width": "139.333px",
+        "height": "139.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain upper large",
+        "position": "absolute",
+        "left": "175px",
+        "top": "45.208px",
+        "width": "128.333px",
+        "height": "128.333px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-center",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain center",
+        "position": "absolute",
+        "left": "161.5px",
+        "top": "161.5px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain center",
+        "position": "absolute",
+        "left": "148.75px",
+        "top": "148.75px",
+        "width": "49.583px",
+        "height": "49.583px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-lower-large",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower large",
+        "position": "absolute",
+        "left": "47.5px",
+        "top": "190px",
+        "width": "139.333px",
+        "height": "139.333px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain lower large",
+        "position": "absolute",
+        "left": "43.75px",
+        "top": "175px",
+        "width": "128.333px",
+        "height": "128.333px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-lower-small",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower small",
+        "position": "absolute",
+        "left": "273.917px",
+        "top": "273.917px",
+        "width": "53.833px",
+        "height": "53.833px",
+        "radius": "50%",
+        "borderWidth": "3.167px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain lower small",
+        "position": "absolute",
+        "left": "252.292px",
+        "top": "252.292px",
+        "width": "49.583px",
+        "height": "49.583px",
+        "radius": "50%",
+        "borderWidth": "2.917px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-upper-square",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain upper square",
+        "position": "absolute",
+        "left": "188.417px",
+        "top": "45.917px",
+        "width": "142.5px",
+        "height": "142.5px",
+        "borderWidth": "2.533px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain upper square",
+        "position": "absolute",
+        "left": "173.542px",
+        "top": "42.292px",
+        "width": "131.25px",
+        "height": "131.25px",
+        "borderWidth": "2.333px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-porcelain-lower-square",
+      "parent": "g-tile-porcelain-studio",
+      "attrs": {
+        "name": "porcelain lower square",
+        "position": "absolute",
+        "left": "45.917px",
+        "top": "188.417px",
+        "width": "142.5px",
+        "height": "142.5px",
+        "borderWidth": "2.533px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      },
+      "phone": {
+        "name": "porcelain lower square",
+        "position": "absolute",
+        "left": "42.292px",
+        "top": "173.542px",
+        "width": "131.25px",
+        "height": "131.25px",
+        "borderWidth": "2.333px",
+        "borderColor": "#f5f5f5",
+        "borderStyle": "solid"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-outer-0",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 0",
+        "position": "absolute",
+        "left": "9.595px",
+        "top": "33.408px",
+        "width": "368.726px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-12.902412527267943deg"
+      },
+      "phone": {
+        "name": "aurea outer 0",
+        "position": "absolute",
+        "left": "8.8375px",
+        "top": "30.7705px",
+        "width": "339.6161px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-12.902412527267943deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-outer-1",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 1",
+        "position": "absolute",
+        "left": "149.876px",
+        "top": "171.158px",
+        "width": "366.831px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "102.716574104659deg"
+      },
+      "phone": {
+        "name": "aurea outer 1",
+        "position": "absolute",
+        "left": "138.0437px",
+        "top": "157.6455px",
+        "width": "337.8707px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "102.716574104659deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-outer-2",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 2",
+        "position": "absolute",
+        "left": "63.7px",
+        "top": "324.742px",
+        "width": "232.016px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      },
+      "phone": {
+        "name": "aurea outer 2",
+        "position": "absolute",
+        "left": "58.6711px",
+        "top": "299.1045px",
+        "width": "213.6989px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-outer-3",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea outer 3",
+        "position": "absolute",
+        "left": "-75.037px",
+        "top": "186.992px",
+        "width": "230.825px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-103.08299067481111deg"
+      },
+      "phone": {
+        "name": "aurea outer 3",
+        "position": "absolute",
+        "left": "-69.113px",
+        "top": "172.2295px",
+        "width": "212.602px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-103.08299067481111deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-middle-0",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 0",
+        "position": "absolute",
+        "left": "97.772px",
+        "top": "143.45px",
+        "width": "141.706px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-13.570434385161487deg"
+      },
+      "phone": {
+        "name": "aurea middle 0",
+        "position": "absolute",
+        "left": "90.0532px",
+        "top": "132.125px",
+        "width": "130.5187px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-13.570434385161487deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-middle-1",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 1",
+        "position": "absolute",
+        "left": "150.196px",
+        "top": "238.45px",
+        "width": "230.025px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "76.05940882971001deg"
+      },
+      "phone": {
+        "name": "aurea middle 1",
+        "position": "absolute",
+        "left": "138.3384px",
+        "top": "219.625px",
+        "width": "211.8651px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "76.05940882971001deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-middle-2",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 2",
+        "position": "absolute",
+        "left": "63.7px",
+        "top": "324.742px",
+        "width": "232.016px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      },
+      "phone": {
+        "name": "aurea middle 2",
+        "position": "absolute",
+        "left": "58.6711px",
+        "top": "299.1045px",
+        "width": "213.6989px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.38637254598126deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-middle-3",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea middle 3",
+        "position": "absolute",
+        "left": "11.502px",
+        "top": "229.742px",
+        "width": "143.246px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-76.5781649321138deg"
+      },
+      "phone": {
+        "name": "aurea middle 3",
+        "position": "absolute",
+        "left": "10.5939px",
+        "top": "211.6045px",
+        "width": "131.9371px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-76.5781649321138deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-inner-0",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 0",
+        "position": "absolute",
+        "left": "98.668px",
+        "top": "169.575px",
+        "width": "84.497px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "12.994616791916506deg"
+      },
+      "phone": {
+        "name": "aurea inner 0",
+        "position": "absolute",
+        "left": "90.8784px",
+        "top": "156.1875px",
+        "width": "77.8262px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "12.994616791916506deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-inner-1",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 1",
+        "position": "absolute",
+        "left": "150.352px",
+        "top": "221.033px",
+        "width": "87.213px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "74.19748604606447deg"
+      },
+      "phone": {
+        "name": "aurea inner 1",
+        "position": "absolute",
+        "left": "138.4821px",
+        "top": "203.583px",
+        "width": "80.3278px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "74.19748604606447deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-inner-2",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 2",
+        "position": "absolute",
+        "left": "120.855px",
+        "top": "253.492px",
+        "width": "86.041px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.24246783912332deg"
+      },
+      "phone": {
+        "name": "aurea inner 2",
+        "position": "absolute",
+        "left": "111.3138px",
+        "top": "233.4795px",
+        "width": "79.2483px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-167.24246783912332deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-inner-3",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea inner 3",
+        "position": "absolute",
+        "left": "67.436px",
+        "top": "202.033px",
+        "width": "86.795px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "-104.79676224505735deg"
+      },
+      "phone": {
+        "name": "aurea inner 3",
+        "position": "absolute",
+        "left": "62.1121px",
+        "top": "186.083px",
+        "width": "79.9428px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "-104.79676224505735deg"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "g-aurea-bridge",
+      "parent": "g-tile-aurea10",
+      "attrs": {
+        "name": "aurea bridge",
+        "position": "absolute",
+        "left": "151.766px",
+        "top": "194.908px",
+        "width": "139.8px",
+        "height": "2.85px",
+        "fill": "#f5f5f5",
+        "rotation": "103.09189306434686deg"
+      },
+      "phone": {
+        "name": "aurea bridge",
+        "position": "absolute",
+        "left": "139.7845px",
+        "top": "179.5205px",
+        "width": "128.7632px",
+        "height": "2.625px",
+        "fill": "#f5f5f5",
+        "rotation": "103.09189306434686deg"
+      }
+    }
+  ],
+  "linkBindings": [
+    {
+      "sourceKey": "gate-graphic-design",
+      "targetKey": "gallery-stage",
+      "section": "graphic-design",
+      "href": "/playgrounds/source-inspiration/heroes/hero-018-pu-ente#graphic-design",
+      "requiredFinalUIBinding": "Native Link inspector Section selection on Desktop and Phone after genuine IDs exist; compiled binding must be verified by real Preview click."
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-018 / CREDITED RECREATION",
+    "title": "pu—ente — entry + graphic-design branch",
+    "influences": "Original design: pu—ente. Primary https://www.pu-ente.com/ · graphic source https://www.pu-ente.com/z/ · gallery https://minimal.gallery/pu-ente/",
+    "limits": "Native entry, selectable lettering and three original source motifs. Inter substitutes Graphie. Art panel is shown for source fidelity; the Art branch is not recreated or linked. Graphic panel navigates to the same-page native branch. Motif proportions remain approximate; no source motion is claimed."
+  },
+  "status": "new-Web-authoring-input-awaiting-root-source-comparison-review-and-actual-Preview",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

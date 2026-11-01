@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-006",
+  "title": "Mac Moss Studio",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-006-mac-moss-studio",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 1250,
+  "openingHeight": 1000,
+  "phoneOpeningHeight": 1250,
+  "background": "#ffffff",
+  "stageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#ffffff",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Mac Moss / KEEN",
+    "url": "https://macmoss.studio/KEEN-2",
+    "gallery": "https://www.siteinspire.com/website/13575-mac-moss-studio",
+    "existingDesignPageID": "Q1tIlIqft",
+    "existingLabPageID": "iUjJa5763",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "hK1riWR8f"
+      },
+      {
+        "target": "desktop",
+        "id": "P1J_soGfA"
+      },
+      {
+        "target": "phone",
+        "id": "M1sPbnURDP1J_soGfA"
+      }
+    ],
+    "oldComponentID": "codeFile/FuDaCpX:default"
+  },
+  "parts": [
+    {
+      "key": "left-white-rail",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "left white rail",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "450px",
+        "height": "1000px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "workspace-rule",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "workspace rule",
+        "position": "absolute",
+        "left": "449.5px",
+        "top": "0px",
+        "width": "1px",
+        "height": "1000px",
+        "fill": "#1b1b1b"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "source-wordmark",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source wordmark",
+        "position": "absolute",
+        "left": "20px",
+        "top": "40px",
+        "width": "280px",
+        "height": "158px",
+        "fill": "#ffffff"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "20px",
+        "width": "190px",
+        "height": "107px"
+      },
+      "bindingKey": "hero-006-wordmark"
+    },
+    {
+      "key": "studio-description",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "studio description",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Georgia",
+        "fontSize": "13px",
+        "lineHeight": "17px",
+        "paragraphSpacing": 0,
+        "left": "474px",
+        "top": "28px",
+        "width": "936px",
+        "textColor": "#181818",
+        "text": "Animation and design studio of Mac Moss.\nValley County, Idaho."
+      },
+      "phone": {
+        "left": "20px",
+        "top": "140px",
+        "width": "350px",
+        "fontSize": "12px",
+        "lineHeight": "16px"
+      }
+    },
+    {
+      "key": "studio-contact",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "studio contact",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "Georgia",
+        "fontSize": "12px",
+        "lineHeight": "15px",
+        "paragraphSpacing": 0,
+        "left": "474px",
+        "top": "67px",
+        "width": "200px",
+        "textColor": "#61ab78",
+        "text": "Contact here.",
+        "link": {
+          "href": "mailto:macmossstudio@gmail.com",
+          "openInNewTab": false
+        }
+      },
+      "phone": {
+        "left": "20px",
+        "top": "176px",
+        "width": "180px",
+        "fontSize": "11px",
+        "lineHeight": "14px"
+      }
+    },
+    {
+      "key": "workspace-top-rule",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "workspace top rule",
+        "position": "absolute",
+        "left": "450px",
+        "top": "97px",
+        "width": "990px",
+        "height": "1px",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "195px",
+        "width": "390px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "complete-source-atlas",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "stage",
+      "attrs": {
+        "name": "complete source atlas",
+        "position": "absolute",
+        "left": "474px",
+        "top": "120px",
+        "width": "468px",
+        "height": "585px",
+        "overflow": "visible"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "220px",
+        "width": "350px",
+        "height": "437.5px",
+        "overflow": "visible"
+      },
+      "instanceProps": {
+        "study": "macmoss",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 1,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#c4e5ca",
+        "light": "#ffffff",
+        "secondary": "#f3f3f1",
+        "accent": "#ff0000",
+        "ink": "#11120f",
+        "showLabels": false,
+        "playbackPosition": "below"
+      }
+    },
+    {
+      "key": "source-runner-photo",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "source runner photo",
+        "position": "absolute",
+        "left": "942px",
+        "top": "120px",
+        "width": "468px",
+        "height": "585px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "705px",
+        "width": "350px",
+        "height": "437.5px"
+      },
+      "bindingKey": "hero-006-runner"
+    },
+    {
+      "key": "workspace-bottom-rule",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "workspace bottom rule",
+        "position": "absolute",
+        "left": "450px",
+        "top": "752px",
+        "width": "990px",
+        "height": "1px",
+        "fill": "#222222"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "1160px",
+        "width": "390px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "next-work-crop",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "next work crop",
+        "position": "absolute",
+        "left": "474px",
+        "top": "780px",
+        "width": "936px",
+        "height": "220px",
+        "fill": "#000000"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "clock-divider",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "clock divider",
+        "position": "absolute",
+        "left": "0px",
+        "top": "930px",
+        "width": "450px",
+        "height": "1px",
+        "fill": "#222222"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "captured-source-clock",
+      "type": "RichTextNode",
+      "parent": "stage",
+      "attrs": {
+        "name": "captured source clock",
+        "position": "absolute",
+        "height": "auto",
+        "fontName": "IBM Plex Mono",
+        "fontSize": "10px",
+        "lineHeight": "13px",
+        "paragraphSpacing": 0,
+        "left": "20px",
+        "top": "964px",
+        "width": "200px",
+        "textColor": "#222222",
+        "text": "20:18:07"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "1180px",
+        "width": "200px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-006 / CREDITED RECREATION",
+    "title": "Mac Moss Studio",
+    "influences": "Original: Mac Moss / KEEN · https://macmoss.studio/KEEN-2",
+    "links": [
+      {
+        "label": "Original source / Mac Moss ↗",
+        "href": "https://macmoss.studio/KEEN-2"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://www.siteinspire.com/website/13575-mac-moss-studio"
+      }
+    ],
+    "limits": "Native broad rail, description, frame and captured clock surround all 20 source glyph cells rebuilt in procedural vector frames. Source organic wordmark and runner photograph are credited native image apertures, not independently authored graphics. Source clock is a captured still value. Frame/micrograin/cadence approximate the source; full site interactions omitted. Phone preserves all 20 cells, not a 4/20 sample."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "imageBindings": [
+    {
+      "key": "hero-006-wordmark",
+      "path": "source-media/HERO-006-wordmark.png",
+      "bytes": 10989,
+      "sha256": "e7adeaceb3b8b644bb1821543018be262345e44f690f1353c686aef63ac7fb34",
+      "creator": "Mac Moss Studio / original mm.s source wordmark.",
+      "sourceURL": "https://freight.cargo.site/w/250/i/81dd87c128fc877b78044d4d682b842dc5069b0944eacbd16a736f5bf368b9d9/logo-mms-01.png",
+      "preparation": {
+        "conversion": "Actual observed250×141sourcewordmark image bytes retained."
+      },
+      "usage": "Credited foreign source identity asset withinSourceinspiration, notanoriginalMonarchiclogo."
+    },
+    {
+      "key": "hero-006-runner",
+      "path": "source-media/HERO-006-runner-still.png",
+      "bytes": 264764,
+      "sha256": "5c8330ec8accf7058dbc96871a190d7e452639e49fd5c0978180506a27ce634b",
+      "creator": "Mac Moss Studio / KEEN project; source-selected runner artwork.",
+      "sourceURL": "https://freight.cargo.site/w/450/i/bb46f0eafba18345c8aabaa6a2c1ee9b67d734fccf459ab81a00993e2c50c7b2/keen-icon-lockup.png",
+      "preparation": {
+        "conversion": "Original observed image bytes retained,450×563."
+      },
+      "usage": "Credited source-led photographic aperture only; native layout/type/graphics remain separate. Not independently authored artwork or implemented-site media."
+    }
+  ],
+  "artifactBase": "hero-single-pages-2026-10-31"
+}

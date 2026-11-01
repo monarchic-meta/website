@@ -1,5 +1,11 @@
 # Hero recreations: all eighteen selected references
 
+The subsequent [standalone opening round](standalone-heroes/README.md) expands
+these graphic studies into one complete hero per regular Web page. It preserves
+the grouped Design studies and their dated evidence below. The full opening
+must include its source's defining type, scale, spacing, navigation and media
+relationships; an isolated mechanism is no longer the Web-page delivery target.
+
 The [project organization guide](../framer-organization.md) records the
 2026-10-31 **Source inspiration → Heroes → Native / Live** folders and separate
 Web playgrounds, with stable page links and verification status. Earlier names,

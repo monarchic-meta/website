@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-001",
+  "title": "Type Face",
+  "classification": "SOURCE INSPIRATION / FULL-OPENING RECREATION",
+  "path": "/playgrounds/source-inspiration/heroes/hero-001-type-face",
+  "width": 1440,
+  "height": 900,
+  "phoneWidth": 390,
+  "phoneHeight": 780,
+  "openingHeight": 900,
+  "phoneOpeningHeight": 780,
+  "background": "#000000",
+  "stageAttrs": {
+    "fill": "#000000",
+    "overflow": "hidden"
+  },
+  "phoneStageAttrs": {
+    "fill": "#000000",
+    "overflow": "hidden"
+  },
+  "source": {
+    "creator": "Stephen Kelman",
+    "url": "https://x.com/stephenkelman/status/2093335231604367454",
+    "gallery": "https://recent.design/i/vmmug5r-type-face",
+    "existingDesignPageID": "RVzvNGZNT",
+    "existingLabPageID": "VR2TaJCqa",
+    "existingPlacements": [
+      {
+        "target": "design",
+        "id": "MTBA7CoHj"
+      },
+      {
+        "target": "desktop",
+        "id": "kL3s1UVYq"
+      },
+      {
+        "target": "phone",
+        "id": "H8Zf2szHAkL3s1UVYq"
+      }
+    ],
+    "oldComponentID": "codeFile/B4OuNLk:default"
+  },
+  "parts": [
+    {
+      "key": "surface-writing-head",
+      "type": "LiveArtSlot",
+      "bindingKey": "source-hero-page",
+      "parent": "stage",
+      "attrs": {
+        "name": "surface writing head",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "900px"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "375px",
+        "height": "780px"
+      },
+      "instanceProps": {
+        "study": "typeface",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 0.65,
+        "stillTime": 2,
+        "artworkScale": 1,
+        "density": 1,
+        "intensity": 1,
+        "motionSpan": 1,
+        "glyphSize": 1,
+        "scanPitch": 2.5,
+        "blur": 0.65,
+        "atlasColumns": "4",
+        "interactive": true,
+        "primary": "#ffffff",
+        "light": "#ffffff",
+        "secondary": "#000000",
+        "accent": "#ff0000",
+        "ink": "#000000",
+        "showLabels": false,
+        "playbackPosition": "overlay"
+      }
+    }
+  ],
+  "liveBindings": [
+    {
+      "key": "source-hero-page",
+      "sourceFile": "SourceHeroPageStudy.tsx",
+      "actualRegisteredComponentID": null,
+      "sourceSHA256": null,
+      "schemaCount": 21,
+      "status": "awaiting-exact-approved-registered-source-receipt"
+    }
+  ],
+  "reviewFooter": {
+    "classification": "SOURCE INSPIRATION / HERO-001 / CREDITED RECREATION",
+    "title": "Type Face",
+    "influences": "Original: Stephen Kelman · https://x.com/stephenkelman/status/2093335231604367454",
+    "links": [
+      {
+        "label": "Original source / Stephen Kelman ↗",
+        "href": "https://x.com/stephenkelman/status/2093335231604367454"
+      },
+      {
+        "label": "Gallery reference ↗",
+        "href": "https://recent.design/i/vmmug5r-type-face"
+      }
+    ],
+    "limits": "Surface-writing volume is the opening itself, with no generic headline added. Head stand-in: Infinite 3D Head Scan by Lee Perry-Smith via three.js, CC BY 3.0, adapted; not verified as Kelman’s source mesh. Text/font/material and rotation are approximations. No source assembly/dispersal sequence claimed."
+  },
+  "status": "new-Web-authoring-input-awaiting-actual-code-composite-root-source-review",
+  "geometryLicense": {
+    "creator": "Lee Perry-Smith",
+    "license": "CC BY 3.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+    "sourceAssetLicense": "docs/design-studies/code-components/assets/hero-head-license.txt",
+    "scope": "Existing documented substitute anatomy, not newly authored or verified as the original TypeFace mesh."
+  },
+  "phoneSafeArea": "Native readable controls stay within375px actual Preview content beside the15px scrollbar in390px Phone frame; full background may bleed to390px.",
+  "artifactBase": "hero-single-pages-2026-10-31"
+}
