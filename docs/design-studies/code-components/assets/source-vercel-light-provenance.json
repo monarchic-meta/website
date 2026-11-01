@@ -83,5 +83,18 @@
     "Native selected title/CTA/customer marks/Notion handoff are outside this actor and require their own native saved-page verification.",
     "No Framer save/typecheck/runtime/published claim is supplied by local tests."
   ],
-  "reuseLicense": "Source/site trademarks remain credited; no third-party website JavaScript, bitmap or proprietary geometry is embedded in this procedural actor."
+  "reuseLicense": "Source/site trademarks remain credited; no third-party website JavaScript, bitmap or proprietary geometry is embedded in this procedural actor.",
+  "typeCompatibility": {
+    "parentSHA256": "1fd4eabc348e4765197f53c5eee0c9f5ee776a6e96ac51e292869661c8f19771",
+    "sourceSHA256": "f763f1d2e36b8594fe0e3f1793de043936a442113fb9615129c9ec95a2adee11",
+    "change": "Exactly3 React.useRef<HTMLElement>(null) → React.useRef<HTMLElement|null>(null) generic assertions, selecting mutable React18 overloads. No runtime code, controls, HOC behavior, shaders or shared coordinator change.",
+    "emittedJS": {
+      "module": "ES2022",
+      "jsx": "React",
+      "sha256": "6828aba2c4af22242bdea676dcd864bc119055198c62fb570254e7561d640594",
+      "bytes": 61811,
+      "byteIdentical": true
+    },
+    "proof": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/validation/type-compatibility/equivalence.json"
+  }
 }
