@@ -177,6 +177,11 @@
             export MONARCHIC_BLEIBT_OPENING_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-opening
           '';
+          source-ajedrez = mkWebsiteCheck "source-ajedrez" ''
+            export MONARCHIC_AJEDREZ_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-ajedrez-sequence
+            pnpm run check:source-ajedrez-browser
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

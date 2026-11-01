@@ -1,0 +1,1200 @@
+{
+  "id": "HERO-002",
+  "title": "Ajedrez Film Poem / full recorded sequence",
+  "credit": "Julián Leiss",
+  "sourcePost": "https://x.com/julianleiss/status/2110868325052149925",
+  "gallery": "https://recent.design/i/qfy3385-ajedrez-film-poem",
+  "classification": "SOURCE INSPIRATION / CREDITED TEMPORAL RECREATION",
+  "evidence": {
+    "rootReview": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/source-media-review.json",
+    "rootReviewSHA256": "8d39028de14d14f883496301bdc669318e40525eeb898de2576458b5edc1e8d5",
+    "sourceFilm": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/source-media/HERO-002-source-film.mp4",
+    "sourceFilmSHA256": "edcffe1664dbe785ee48e7f48e9c9c8ab2f9dbe464d9f887ae669a9209e72ea5",
+    "duration": 52.314558,
+    "dimensions": [
+      480,
+      852
+    ],
+    "fps": 24,
+    "audioPresent": true,
+    "audioAudited": false,
+    "samples": 53,
+    "method": "Root full1s contact sequence plus this reviewer individual-frame checks. No website/scroll behavior supplied."
+  },
+  "presentation": {
+    "nativeBase": [
+      480,
+      852
+    ],
+    "desktop": "Centered portrait movie-like native component, preserve480:852aspect; quiet source credits outside the film field. No fake wide-screen crop.",
+    "phone": "Fullavailablewidth up to390 with aspect-preserving height692.25, actual native editable parts scaled by same portrait model; controls outside film; no horizontal overflow.",
+    "clock": "A time-driven native variant/state controller with Pause/Play/Replay. No invented scrolling. Sourcecut order/time are the contract; source audio omitted unless actually inspected/licensed."
+  },
+  "phases": [
+    {
+      "from": 0,
+      "to": 0.8,
+      "state": "blank-paper",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 0.8,
+      "to": 2.8,
+      "state": "title-metadata",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 2.8,
+      "to": 4,
+      "state": "small-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "state": "numeric-table",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "state": "players-filmstrip",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "state": "scattered-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "state": "pale-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "state": "dark-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "state": "scattered-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "state": "chess-diagram",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "state": "network-grid",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "state": "thread-diagram",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "state": "small-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "state": "indexed-table",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "state": "small-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "state": "poem-layout",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "state": "dark-title",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "state": "pixel-rook",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "state": "indexed-rook-photo",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "state": "horse-filmstrip",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 24,
+      "to": 26,
+      "state": "sculpture-spread",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "state": "contact-sheet",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "state": "pixel-knight",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "state": "indexed-elephant-photo",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 29,
+      "to": 31,
+      "state": "repeated-figure",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 31,
+      "to": 33,
+      "state": "paragraph-layout",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "state": "vertical-photo-strip",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 34,
+      "to": 37,
+      "state": "paragraph-layout",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 37,
+      "to": 39,
+      "state": "overhead-chess-film",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 39,
+      "to": 41,
+      "state": "large-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "state": "hand-photo-strip",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "state": "scattered-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 43,
+      "to": 46,
+      "state": "dense-montage",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "state": "scattered-type",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "state": "dark-globe",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 48,
+      "to": 52,
+      "state": "type-grid",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    },
+    {
+      "from": 52,
+      "to": 52.314558,
+      "state": "end-credits",
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+    }
+  ],
+  "families": {
+    "blank-paper": {
+      "background": "#bbc4c1",
+      "parts": []
+    },
+    "title-metadata": {
+      "native": [
+        {
+          "role": "title",
+          "text": "AJEDREZ",
+          "x": 175,
+          "y": 395,
+          "width": 240,
+          "fontSize": 24,
+          "font": "Georgia/serif"
+        },
+        {
+          "role": "metadata-columns",
+          "x": 20,
+          "y": 40,
+          "width": 440,
+          "height": 20,
+          "fontSize": 5
+        },
+        {
+          "role": "lower-metadata",
+          "x": 20,
+          "y": 675,
+          "width": 440,
+          "height": 110,
+          "fontSize": 5
+        }
+      ]
+    },
+    "numeric-table": {
+      "native": [
+        {
+          "role": "base-two-table",
+          "x": 145,
+          "y": 280,
+          "width": 265,
+          "height": 295,
+          "rows": 11,
+          "columns": 3,
+          "contents": "Native digits: 1,10,100… / 1,2,4,8… / powers-of-two index. Courier is an explicit substitute for source handwriting."
+        }
+      ]
+    },
+    "players-filmstrip": {
+      "photo": "players",
+      "nativeFrames": [
+        {
+          "x": 57,
+          "y": -110,
+          "width": 392,
+          "height": 285
+        },
+        {
+          "x": 57,
+          "y": 282,
+          "width": 392,
+          "height": 285
+        },
+        {
+          "x": 57,
+          "y": 677,
+          "width": 392,
+          "height": 285
+        }
+      ],
+      "motion": "Time-held composition from source sample; do not claim recreated internal film motion from a still."
+    },
+    "chess-diagram": {
+      "native": [
+        {
+          "role": "board",
+          "x": 57,
+          "y": 267,
+          "width": 350,
+          "height": 350,
+          "grid": [
+            8,
+            8
+          ],
+          "border": 2
+        },
+        {
+          "role": "diagram-label",
+          "text": "Diagrama No. 4",
+          "x": 120,
+          "y": 239,
+          "width": 240,
+          "fontSize": 13
+        },
+        {
+          "role": "piece-glyphs",
+          "details": "Native serif chess Unicode glyphs and star markers, positioned from source frame011; board/piece exactness remains a separate visual check."
+        }
+      ]
+    },
+    "network-grid": {
+      "native": [
+        {
+          "role": "cells",
+          "x": 20,
+          "y": 220,
+          "width": 430,
+          "height": 360,
+          "rows": 2,
+          "columns": 3,
+          "cellGap": 12
+        },
+        {
+          "role": "paths",
+          "details": "Native selected line segments inside small grids; topology is a source-informed visual approximation, not invented research data."
+        }
+      ]
+    },
+    "thread-diagram": {
+      "native": [
+        {
+          "role": "line-fan",
+          "x": 42,
+          "y": 230,
+          "width": 350,
+          "height": 390,
+          "lines": 26,
+          "from": "alternating left/right endpoints",
+          "to": "opposite diagonal endpoints"
+        },
+        {
+          "role": "source-annotation",
+          "details": "Brief independently worded specimen description in small serif; no wholesale source manuscript/poem transcription."
+        }
+      ]
+    },
+    "indexed-table": {
+      "native": [
+        {
+          "role": "top-empty-cells",
+          "x": 30,
+          "y": 200,
+          "width": 415,
+          "height": 70,
+          "columns": 8
+        },
+        {
+          "role": "lower-dark-cells",
+          "x": 30,
+          "y": 535,
+          "width": 415,
+          "height": 105,
+          "columns": 8,
+          "rows": 2,
+          "fill": "#222222"
+        }
+      ]
+    },
+    "pixel-rook": {
+      "native": "Threshold-selected source silhouette rebuilt as integer horizontal rectangle runs. Source frame022, light shape on dark field; no imported glyph screenshot."
+    },
+    "indexed-rook-photo": {
+      "photo": "rook-object",
+      "photoFrame": {
+        "x": 104,
+        "y": 258,
+        "width": 272,
+        "height": 338
+      },
+      "native": [
+        {
+          "role": "index-table",
+          "x": 14,
+          "y": 18,
+          "width": 452,
+          "height": 165,
+          "rows": 18,
+          "columns": 4,
+          "fontSize": 5,
+          "rules": 1
+        }
+      ],
+      "background": "#1f2120"
+    },
+    "horse-filmstrip": {
+      "photo": "horse-strip",
+      "nativeFrames": [
+        {
+          "x": 0,
+          "y": 188,
+          "width": 480,
+          "height": 155
+        },
+        {
+          "x": 0,
+          "y": 670,
+          "width": 480,
+          "height": 155
+        }
+      ]
+    },
+    "sculpture-spread": {
+      "photo": "sculpture-detail",
+      "note": "Only a clean upper photographic detail was extracted. Full larger bust below contains source type overlay; retain that gap rather than flattening the entire film frame."
+    },
+    "contact-sheet": {
+      "photo": "contact-sheet-photos",
+      "photoFrame": {
+        "x": 19,
+        "y": 39,
+        "width": 441,
+        "height": 773
+      },
+      "native": [
+        {
+          "role": "outside-caption",
+          "x": 20,
+          "y": 824,
+          "width": 430,
+          "fontSize": 5
+        }
+      ]
+    },
+    "pixel-knight": {
+      "native": "Threshold-selected source silhouette rebuilt as integer horizontal rectangle runs, including two dark eye/stair holes. Source frame028; no bitmap substitution."
+    },
+    "indexed-elephant-photo": {
+      "photo": "elephant-object",
+      "photoFrame": {
+        "x": 84,
+        "y": 290,
+        "width": 310,
+        "height": 276
+      },
+      "native": [
+        {
+          "role": "index-table",
+          "x": 14,
+          "y": 18,
+          "width": 452,
+          "height": 165,
+          "rows": 18,
+          "columns": 4,
+          "fontSize": 5,
+          "rules": 1
+        }
+      ],
+      "background": "#1f2120"
+    },
+    "overhead-chess-film": {
+      "photo": "overhead-chess",
+      "photoFrame": {
+        "x": 0,
+        "y": 153,
+        "width": 480,
+        "height": 510
+      },
+      "note": "Photo still from the real film; preserving actual moving piece/hand action requires the original photographic video crop or further sampled frames, not a fictitious native chess simulation."
+    },
+    "hand-photo-strip": {
+      "photos": [
+        "hand-left",
+        "hand-right"
+      ],
+      "nativeFrames": [
+        {
+          "asset": "hand-left",
+          "x": 0,
+          "y": 20,
+          "width": 233,
+          "height": 164
+        },
+        {
+          "asset": "hand-left",
+          "x": 0,
+          "y": 275,
+          "width": 233,
+          "height": 164
+        },
+        {
+          "asset": "hand-right",
+          "x": 236,
+          "y": 275,
+          "width": 233,
+          "height": 164
+        },
+        {
+          "asset": "hand-left",
+          "x": 0,
+          "y": 440,
+          "width": 233,
+          "height": 164
+        },
+        {
+          "asset": "hand-left",
+          "x": 0,
+          "y": 668,
+          "width": 233,
+          "height": 164
+        },
+        {
+          "asset": "hand-right",
+          "x": 236,
+          "y": 668,
+          "width": 233,
+          "height": 164
+        }
+      ]
+    },
+    "dense-montage": {
+      "photos": [
+        {
+          "asset": "montage-0",
+          "left": 46,
+          "top": 12,
+          "width": 180,
+          "height": 145
+        },
+        {
+          "asset": "montage-1",
+          "left": 239,
+          "top": 12,
+          "width": 180,
+          "height": 145
+        },
+        {
+          "asset": "montage-2",
+          "left": 46,
+          "top": 211,
+          "width": 180,
+          "height": 192
+        },
+        {
+          "asset": "montage-3",
+          "left": 239,
+          "top": 211,
+          "width": 180,
+          "height": 192
+        },
+        {
+          "asset": "montage-4",
+          "left": 46,
+          "top": 438,
+          "width": 180,
+          "height": 148
+        },
+        {
+          "asset": "montage-5",
+          "left": 239,
+          "top": 479,
+          "width": 180,
+          "height": 107
+        },
+        {
+          "asset": "montage-6",
+          "left": 46,
+          "top": 678,
+          "width": 180,
+          "height": 148
+        },
+        {
+          "asset": "montage-7",
+          "left": 239,
+          "top": 678,
+          "width": 180,
+          "height": 148
+        }
+      ],
+      "native": "All outer index labels, captions and spacing remain native. Source images can be introduced in observed sparse→dense order over43–46s; exact intermediate cut times remain approximate."
+    },
+    "dark-globe": {
+      "photo": "globe",
+      "photoFrame": {
+        "x": 119,
+        "y": 312,
+        "width": 242,
+        "height": 237
+      },
+      "native": [
+        {
+          "role": "tiny-coordinate-like-source-caption",
+          "x": 114,
+          "y": 555,
+          "width": 300,
+          "fontSize": 5,
+          "content": "Independent short index/caption; do not imply live observations."
+        }
+      ],
+      "background": "#1f2120"
+    },
+    "type-grid": {
+      "native": [
+        {
+          "role": "scattered-to-grid",
+          "x": 20,
+          "y": 220,
+          "width": 430,
+          "height": 390,
+          "rows": 12,
+          "columns": 7,
+          "fontSize": 8,
+          "words": "Use a clearly declared original word bank or licensed/public-domain text. Exact Borges poem text not transcribed."
+        }
+      ],
+      "motion": "Keyframe native text positions from sparse distribution into straight vertical/horizontal rules at48–51s."
+    },
+    "end-credits": {
+      "background": "#111111",
+      "native": [
+        {
+          "role": "credited-end-title",
+          "text": "AJEDREZ",
+          "x": 20,
+          "y": 20,
+          "width": 250,
+          "fontSize": 8,
+          "textColor": "#bdc6c3"
+        },
+        {
+          "role": "end-credit",
+          "text": "Source film / Julián Leiss",
+          "x": 20,
+          "y": 445,
+          "width": 440,
+          "fontSize": 10,
+          "textColor": "#bdc6c3"
+        }
+      ]
+    }
+  },
+  "silhouettes": [
+    {
+      "state": "pixel-rook",
+      "sourceFrame": 21,
+      "threshold": 150,
+      "rectangles": [
+        {
+          "left": 73,
+          "top": 233,
+          "width": 55,
+          "height": 27
+        },
+        {
+          "left": 184,
+          "top": 233,
+          "width": 111,
+          "height": 27
+        },
+        {
+          "left": 351,
+          "top": 233,
+          "width": 55,
+          "height": 27
+        },
+        {
+          "left": 73,
+          "top": 260,
+          "width": 333,
+          "height": 55
+        },
+        {
+          "left": 101,
+          "top": 316,
+          "width": 277,
+          "height": 26
+        },
+        {
+          "left": 129,
+          "top": 344,
+          "width": 221,
+          "height": 11
+        },
+        {
+          "left": 129,
+          "top": 355,
+          "width": 222,
+          "height": 59
+        },
+        {
+          "left": 129,
+          "top": 414,
+          "width": 221,
+          "height": 12
+        },
+        {
+          "left": 129,
+          "top": 426,
+          "width": 222,
+          "height": 31
+        },
+        {
+          "left": 129,
+          "top": 457,
+          "width": 221,
+          "height": 7
+        },
+        {
+          "left": 129,
+          "top": 464,
+          "width": 222,
+          "height": 18
+        },
+        {
+          "left": 101,
+          "top": 482,
+          "width": 277,
+          "height": 27
+        },
+        {
+          "left": 73,
+          "top": 510,
+          "width": 333,
+          "height": 55
+        },
+        {
+          "left": 46,
+          "top": 565,
+          "width": 388,
+          "height": 55
+        }
+      ],
+      "scope": "Independent native horizontal-run reconstruction from actual source sampled pixel silhouette; antialias/tinted film edges intentionally thresholded."
+    },
+    {
+      "state": "pixel-knight",
+      "sourceFrame": 27,
+      "threshold": 150,
+      "rectangles": [
+        {
+          "left": 212,
+          "top": 219,
+          "width": 55,
+          "height": 27
+        },
+        {
+          "left": 185,
+          "top": 246,
+          "width": 110,
+          "height": 27
+        },
+        {
+          "left": 157,
+          "top": 274,
+          "width": 82,
+          "height": 26
+        },
+        {
+          "left": 268,
+          "top": 274,
+          "width": 55,
+          "height": 26
+        },
+        {
+          "left": 157,
+          "top": 302,
+          "width": 55,
+          "height": 27
+        },
+        {
+          "left": 240,
+          "top": 302,
+          "width": 83,
+          "height": 27
+        },
+        {
+          "left": 157,
+          "top": 329,
+          "width": 166,
+          "height": 27
+        },
+        {
+          "left": 184,
+          "top": 357,
+          "width": 111,
+          "height": 9
+        },
+        {
+          "left": 185,
+          "top": 366,
+          "width": 110,
+          "height": 18
+        },
+        {
+          "left": 157,
+          "top": 385,
+          "width": 166,
+          "height": 27
+        },
+        {
+          "left": 185,
+          "top": 412,
+          "width": 110,
+          "height": 53
+        },
+        {
+          "left": 184,
+          "top": 465,
+          "width": 111,
+          "height": 3
+        },
+        {
+          "left": 157,
+          "top": 468,
+          "width": 166,
+          "height": 27
+        },
+        {
+          "left": 129,
+          "top": 496,
+          "width": 221,
+          "height": 24
+        },
+        {
+          "left": 101,
+          "top": 524,
+          "width": 277,
+          "height": 54
+        },
+        {
+          "left": 74,
+          "top": 579,
+          "width": 332,
+          "height": 55
+        }
+      ],
+      "scope": "Independent native horizontal-run reconstruction from actual source sampled pixel silhouette; antialias/tinted film edges intentionally thresholded."
+    }
+  ],
+  "assets": [
+    {
+      "key": "players",
+      "time": 5,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-006.png",
+      "sourceFrameSHA256": "ba1294678bd759a58ef4e918a1ceab1c8410f062e6af00b9d4d2dfe44abd8bc3",
+      "crop": {
+        "left": 57,
+        "top": 282,
+        "width": 392,
+        "height": 285
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/players.png",
+      "sha256": "6af2df10887496d4db684abdb5583ebb13103f72ef78be7b775ad6dbc29e6aca",
+      "bytes": 68025,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "rook-object",
+      "time": 22,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-023.png",
+      "sourceFrameSHA256": "9fdb3da7d2b9b8c0b41a0af8665235829d5b231da746643ebda84e364fe8bf0f",
+      "crop": {
+        "left": 104,
+        "top": 258,
+        "width": 272,
+        "height": 338
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/rook-object.png",
+      "sha256": "a038e1f21efeb7787a7594645da90fe0d0f61ad2f54a3337e1aed04d7883958b",
+      "bytes": 42232,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "horse-strip",
+      "time": 23,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-024.png",
+      "sourceFrameSHA256": "de13ad935fd30596b676e4f0f961d13ece636a3acca7ed26c29d62f89d86f61e",
+      "crop": {
+        "left": 0,
+        "top": 188,
+        "width": 480,
+        "height": 155
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/horse-strip.png",
+      "sha256": "135dab7cea1fba612afb97ee19ae0b115ff05e99671f883c67175f617a15b2d7",
+      "bytes": 67849,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "sculpture-detail",
+      "time": 24,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-025.png",
+      "sourceFrameSHA256": "62adeaa9c55ea41555d1d0f9912b6a8558840ee64a7665be03b004de5c783e5b",
+      "crop": {
+        "left": 112,
+        "top": 40,
+        "width": 241,
+        "height": 166
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/sculpture-detail.png",
+      "sha256": "0c946cfe2ed178efb36c3e46298967d947ff8eebd9ef2d4189d9299005580a97",
+      "bytes": 18434,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "contact-sheet-photos",
+      "time": 26,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-027.png",
+      "sourceFrameSHA256": "03a0a1b339eba5c3e456b3ae015ce9cabb55f0a185635eff603f87d3d346f43b",
+      "crop": {
+        "left": 19,
+        "top": 39,
+        "width": 441,
+        "height": 773
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/contact-sheet-photos.png",
+      "sha256": "05d5c8d5c6153a9d638210bebd61135f201aeacbc941bdd8436cbc690fc23fba",
+      "bytes": 397954,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Photographic specimen grid material only, caption excluded; native surrounding field/caption/index remain separate."
+    },
+    {
+      "key": "elephant-object",
+      "time": 28,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-029.png",
+      "sourceFrameSHA256": "588f0c783ccb7855d20541a29f3a44e674ad201857ba3c94f40308291a8a4801",
+      "crop": {
+        "left": 84,
+        "top": 290,
+        "width": 310,
+        "height": 276
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/elephant-object.png",
+      "sha256": "bfee9df019d55278dfe120937165e2ca47ad199c0ec1e22a137a08a2bfa38969",
+      "bytes": 71889,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "overhead-chess",
+      "time": 37,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-038.png",
+      "sourceFrameSHA256": "6ca9f7315ada35bb7b9137d68728b8e1b16c11ac2ae6a98af414101b486705fb",
+      "crop": {
+        "left": 0,
+        "top": 153,
+        "width": 480,
+        "height": 510
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/overhead-chess.png",
+      "sha256": "c5ce388e44321bffecbc13942bedf804ee3eb3d754af9abe4b06d7cc34ba49b0",
+      "bytes": 144290,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "hand-left",
+      "time": 41,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-042.png",
+      "sourceFrameSHA256": "472881294aa8d2a56a8af90c8730554081c39effcb71ce05d9e08b2a664cb495",
+      "crop": {
+        "left": 0,
+        "top": 275,
+        "width": 233,
+        "height": 164
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/hand-left.png",
+      "sha256": "703aa5b5cf11d6eabdbb0f424a9946d3357f50eaf0620fc4941ab4441c14c37f",
+      "bytes": 40274,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "hand-right",
+      "time": 41,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-042.png",
+      "sourceFrameSHA256": "472881294aa8d2a56a8af90c8730554081c39effcb71ce05d9e08b2a664cb495",
+      "crop": {
+        "left": 236,
+        "top": 275,
+        "width": 233,
+        "height": 164
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/hand-right.png",
+      "sha256": "d239bc0cbb1a64df94f619b1b9e1f6550aadc3048f5feefa9a6a0e907d702cf6",
+      "bytes": 28200,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "globe",
+      "time": 47,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-048.png",
+      "sourceFrameSHA256": "48dd756345e160a0a9912880fc9674672d6ed5bd0d95bc2a5e2e5904012c49e3",
+      "crop": {
+        "left": 119,
+        "top": 312,
+        "width": 242,
+        "height": 237
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/globe.png",
+      "sha256": "01eb5a01234c2fb70fc630f16d51adfe898456369a3051de5ec7588d8f9903e9",
+      "bytes": 76159,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-0",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 46,
+        "top": 12,
+        "width": 180,
+        "height": 145
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-0.png",
+      "sha256": "5a7aed814474eb4da2811bcbc71e724dfe7fb4e3def048185972fe64989ef47a",
+      "bytes": 41432,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-1",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 239,
+        "top": 12,
+        "width": 180,
+        "height": 145
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-1.png",
+      "sha256": "1b92a0c211241bcec91256a5514211cdeaec483460d6e89a5be58b0712ac3cab",
+      "bytes": 31815,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-2",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 46,
+        "top": 211,
+        "width": 180,
+        "height": 192
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-2.png",
+      "sha256": "07ec17912df84641d37dc8057d80b158316ea08635fb412ade1fed2fe639b2f9",
+      "bytes": 34780,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-3",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 239,
+        "top": 211,
+        "width": 180,
+        "height": 192
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-3.png",
+      "sha256": "1332905862f762d295464766270661420c0ac278afc7863635ece7a2effd5562",
+      "bytes": 52008,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-4",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 46,
+        "top": 438,
+        "width": 180,
+        "height": 148
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-4.png",
+      "sha256": "ab7f4e78b0457b1bf084f80b4584317e42dd15deeb18167139d77c85560f8d9c",
+      "bytes": 29652,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-5",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 239,
+        "top": 479,
+        "width": 180,
+        "height": 107
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-5.png",
+      "sha256": "90a011df70cdb8e8ead8c0fc65833a8241d3b63150f72dd38506d4034bbb8b80",
+      "bytes": 31551,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-6",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 46,
+        "top": 678,
+        "width": 180,
+        "height": 148
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-6.png",
+      "sha256": "53388812283f06520ddb92288d830f262c3d0d6daa4ccd8b3cb970350cfe5c1a",
+      "bytes": 42049,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    },
+    {
+      "key": "montage-7",
+      "time": 44,
+      "sourceFrame": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-045.png",
+      "sourceFrameSHA256": "9d69bada96c9e8b6f636a3273d042ca26edb8148cd9a8a6fd7730b9ec53eaf87",
+      "crop": {
+        "left": 239,
+        "top": 678,
+        "width": 180,
+        "height": 148
+      },
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/assets/montage-7.png",
+      "sha256": "59872412d4cb050a70d80e17afaa7ce26f1a8e13b79aab5c4bb55b5a07cc090a",
+      "bytes": 35749,
+      "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival photo/film authors and licensing unverified.",
+      "scope": "Individual photographic/material crop; not a full authored film frame or UI screenshot."
+    }
+  ],
+  "sourceTextPolicy": "AJEDREZ/title and brief functional labels retained. Long poem/manuscript/caption material must be a visibly declared substitute or licensed/public-domain source; do not imply exact original words.",
+  "remainingFidelityGaps": [
+    "Subsecond cuts and continuous internal photographic motion were not audited.",
+    "Clean full sculpture/figure photography and all contact-sheet individual photo provenance remain unavailable.",
+    "Source audio/voiceover is present but unlistened; do not synthesize it or claim a faithful soundtrack.",
+    "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
+  ]
+}
