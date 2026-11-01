@@ -260,5 +260,34 @@
       "browser/HERO-017-2026-workfield.png"
     ]
   },
-  "validationBoundary": "Only the completed mark endpoint has verified0-channel source-vector raster difference. Local actor interaction and geometry checks do not establish full source fidelity or saved Framer behavior."
+  "validationBoundary": "Only the completed mark endpoint has verified0-channel source-vector raster difference. Local actor interaction and geometry checks do not establish full source fidelity or saved Framer behavior.",
+  "savedPreviewVerification": {
+    "status": "BOUNDED_ACTUAL_PREVIEW_PASS",
+    "pageID": "CRncJJQPQ",
+    "desktopID": "SZRO49kF7",
+    "phoneID": "SCTOUyK5I",
+    "afterEditorReload": true,
+    "evidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-framer-final-reload-proof.json",
+      "bytes": 4062,
+      "sha256": "972540b9a608fde1246b1409c9d21269e4adb75352fccca6368087e750bedd7a"
+    },
+    "nativePinEvidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-native-project-pin-proof.json",
+      "bytes": 2378,
+      "sha256": "35718e174e0b6a0ca7715853b5f290297964a38d8e4b0d4f0564d484853ca5b1"
+    },
+    "verified": [
+      "Rendered source Akzidenz-Grotesk Pro Medium face is 500 / 80px / 70.4px with -3.96006px tracking.",
+      "All four genuine source project images load at their 1011×680 natural dimensions.",
+      "Sticky Work and terminal All Works remain present. A real native image click pins project 6.",
+      "The fitted Phone menu opens 350px cards at x5 inside the 360px client area and closes."
+    ],
+    "limits": [
+      "Second-click unpin dispatch timed out in browser tooling; no settled Framer unpin is claimed. Local native-input tests cover it.",
+      "CPU fluid, CSS3D projection, intermediate mark morph and Phone composition are independently fitted.",
+      "Native model text metrics initially disagreed with rendered inline styles; the intended native typography was reapplied and actual Preview checked.",
+      "These bounded checks do not establish exact historical interaction or pixel identity."
+    ]
+  }
 }

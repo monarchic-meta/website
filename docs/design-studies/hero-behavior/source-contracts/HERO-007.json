@@ -163,5 +163,30 @@
     },
     "nativeAuthoring": "Preserve the genuine pixel wordmark and arrow shapes. Keep individual text, tabs, buttons and links editable, including the white active Home tab and white right-hand contact button. Use the logo's fitted aspect ratio rather than cropping it in a generic text-logo box.",
     "limits": "Individual source assets remain credited comparison/recreation material with unverified reuse rights. The header correction does not implement the source's 620ms arrow hover choreography. Flat native nav fill approximates the source backdrop blur; Phone remains adapted."
+  },
+  "savedPreviewVerification": {
+    "status": "BOUNDED_ACTUAL_PREVIEW_PASS",
+    "pageID": "IhJNN_eMc",
+    "desktopID": "yMdvRggxW",
+    "phoneID": "FWmbJSbKv",
+    "afterEditorReload": true,
+    "evidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO007-framer-final-header-proof.json",
+      "bytes": 5933,
+      "sha256": "341310c0b50115b4caf16d61891ab5821d8fe6d594d4249edfc1d112b8f82d6a"
+    },
+    "verified": [
+      "Genuine source pixel logo and distinct Desktop PNG / Phone SVG arrow assets loaded.",
+      "Active Home and contact tab fills and source destinations match the inspected header.",
+      "Live source-led filament actor retained; actual body and scroll widths match at 1425px Desktop and 360px Phone."
+    ],
+    "retainedEarlierChecks": [
+      "Actual Pause and Foundation handoff verification remain separate earlier evidence."
+    ],
+    "limits": [
+      "Source 620ms arrow hover choreography and native backdrop blur are not reproduced.",
+      "Spring seeds, pointer history, source-font substitutes and the Phone composition remain fitted.",
+      "Passing the bounded rendering/input checks does not establish pixel-identical source fidelity."
+    ]
   }
 }
