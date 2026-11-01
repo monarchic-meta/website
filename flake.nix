@@ -272,6 +272,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-polar-guide = (mkWebsiteCheck "source-polar-guide" ''
+            export MONARCHIC_POLAR_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-polar-guide-controls
+            pnpm run check:source-polar-guide-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''
             export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
             pnpm run check:source-hero-journey-study
