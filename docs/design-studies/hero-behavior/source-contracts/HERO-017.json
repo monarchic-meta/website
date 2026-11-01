@@ -225,10 +225,19 @@
   },
   "currentSourceFont": {
     "family": "Akzidenz Grotesk Pro",
+    "nativeFamily": "Akzidenz-Grotesk Pro",
     "weight": 500,
     "size": 80,
     "lineHeight": 70.4,
-    "substitution": "Native Arial is explicit until the actual family is assigned."
+    "letterSpacingPixels": -3.960064,
+    "file": {
+      "url": "https://cdn.prod.website-files.com/6a2fcc5552066493ef9a5cf9/6a3068329e43bb7aab788e8d_AkzidenzGroteskPro-Md.woff2",
+      "bytes": 32964,
+      "sha256": "7a80cda1bac0a204d2219d105db8a46ada4950b3acc36f9c9e104aa75992aef6",
+      "license": "Unverified; binary retained outside Git for the credited unpublished prototype"
+    },
+    "authoring": "Use the genuine Medium face and source tracking. Arial or Inter changes the measured word widths and wraps the tight source boxes. A native font-picker selection can activate a newly uploaded face for public API lookup; verify the resulting paragraph CSS in Preview.",
+    "widthFit": "Retain source left/top coordinates. A small explicitly recorded native text-box allowance may prevent Framer word wrapping without changing font size or source line breaks."
   },
   "sourceMark": {
     "path": "../assets/HERO-017-mark.svg",
