@@ -200,6 +200,13 @@ An empty error-level console log is insufficient: inspect the editor's size
 warning and require a populated Preview after a fresh reload. A cached earlier
 Preview can still play while the current page export is rejected.
 
+A code-file update can reorder the provider's export catalog while retaining
+every export ID, name and type. Check the complete keyed rows before treating
+that as a design change. If a strict saved snapshot includes enumeration order,
+record the observed order change and refresh that exact metadata snapshot only
+after proving the remaining fields unchanged. Keep later preservation checks
+strict against the refreshed snapshot.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live
