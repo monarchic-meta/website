@@ -275,6 +275,14 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-portfolio-utility-ink = (mkWebsiteCheck "source-portfolio-utility-ink" ''
+            export MONARCHIC_PORTFOLIO_INK_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-portfolio-utility-ink
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
