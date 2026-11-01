@@ -253,6 +253,8 @@
             export MONARCHIC_PORTFOLIO_EVIDENCE_DIR="$out/evidence/playback"
             export MONARCHIC_PORTFOLIO_NATIVE_EVIDENCE_DIR="$out/evidence/native-input"
             export MONARCHIC_PORTFOLIO_RESOURCE_EVIDENCE_DIR="$out/evidence/resources"
+            export MONARCHIC_PORTFOLIO_CAROUSEL_EVIDENCE_DIR="$out/evidence/carousel"
+            pnpm run check:source-portfolio-carousel
             pnpm run check:source-portfolio-film-study
             pnpm run check:source-portfolio-film-browser
             pnpm run check:source-portfolio-native-input
