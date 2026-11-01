@@ -191,6 +191,11 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-macmoss = mkWebsiteCheck "source-macmoss" ''
+            export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-macmoss-portfolio
+            pnpm run check:source-macmoss-browser
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

@@ -79,6 +79,8 @@
     "check:source-bleibt-opening": "node scripts/check-source-bleibt-opening.mjs",
     "check:source-ajedrez-sequence": "node scripts/check-source-ajedrez-sequence.mjs",
     "check:source-ajedrez-browser": "node scripts/check-source-ajedrez-browser.mjs",
+    "check:source-macmoss-portfolio": "node scripts/check-source-macmoss-portfolio.mjs",
+    "check:source-macmoss-browser": "node scripts/check-source-macmoss-browser.mjs",
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
     "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs"
   },
