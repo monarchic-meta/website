@@ -490,5 +490,72 @@
     "focusedChecks": 6,
     "actualReactBrowserChecks": 48,
     "scope": "Current self-contained public89HOC module: strict types/sourcegeometry, native mask silhouette, timers/scroll/reverse/static/reduced/ownvisibility/cleanup and sourceflow. ActualFramerregistration/sourcebinding/reload remainseparate."
+  },
+  "earlyPanelsInputCorrection": {
+    "parentSourceSHA256": "c8118585d79a90237812c14e3196b63e42f383bbefd34a979c4457e30768a4a3",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "sha256": "8a35a4eb8e88f839032d6b17b883f29619dcae343c500b528517a1006af7f3c8",
+      "bytes": 61445
+    },
+    "scope": "Only the decorative early sourceFlow role passes pointer input through in Desktop and Phone/frozen returns. Native geometry, other roles,89exports, renderers and timing are unchanged.",
+    "validation": {
+      "focusedGroups": 6,
+      "actualChromiumChecks": 67,
+      "actualHeaderInputCases": 6,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/early-pointer-pass-through/receipt.json",
+        "sha256": "8be68eff06207d600e9b5e9c55134155fc03532b51d408c2e44a69fbb53b975f",
+        "bytes": 3316
+      },
+      "counterfactual": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/early-pointer-pass-through/counterfactual.json",
+        "sha256": "9a0c74cad01827b12b091d0371e6a494edb60fb41dcc77bd7458f7cdb39a7737",
+        "bytes": 2128
+      },
+      "independentReview": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/early-pointer-pass-through/independent-review.json",
+        "sha256": "8f416642ece2e8a33140af87fa71ece41cf9ccc64c3a8f889ace26811b1cff65",
+        "bytes": 2531
+      }
+    },
+    "boundary": "Local proof only; same-file Framer update, actual native Notes control/reload and root Nix proof are separate. Prior localNixValidation remains the exactc811 parent proof."
+  },
+  "gaugeWordWrappingCorrection": {
+    "parentSourceSHA256": "8a35a4eb8e88f839032d6b17b883f29619dcae343c500b528517a1006af7f3c8",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "sha256": "29d76a0c3bfe03b30552d2f8e3693a0067120643b7ef5d5edd9b48bfb8edafd5",
+      "bytes": 61502
+    },
+    "scope": "Only existing data-format-gauge-ink scoped CSS gains white-space:pre!important and overflow-wrap:normal!important. Native widths,52word IDs,89exports, geometry and timing remain exact; unrelated paragraphs retain normal wrapping.",
+    "rootActualObservation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-native-wrap-failures.json",
+      "sha256": "39f635a0b06a53c727a647f5f11f6c963f1085b32e4dfa9b964e23c267100ad3",
+      "bytes": 8039
+    },
+    "validation": {
+      "focusedGroups": 6,
+      "actualChromiumChecks": 83,
+      "retainedChecks": 48,
+      "pointerChecks": 19,
+      "gaugeChecks": 16,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/gauge-word-wrap/receipt.json",
+        "sha256": "311b2c74d4c35f70d904b7a8959880b07eb02b302e5d53e830776762abe2e9a8",
+        "bytes": 4836
+      },
+      "counterfactual": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/gauge-word-wrap/counterfactual.json",
+        "sha256": "90329d4095adcd9f217db1fb3957e6b2abd18c5abee7dba790351430fa34fb51",
+        "bytes": 19552
+      },
+      "independentReview": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/gauge-word-wrap/independent-review.json",
+        "sha256": "57d1c52c254c94e2e331cea715177b84c0f3174894ec8e801f6d1f659d2a7791",
+        "bytes": 3046
+      }
+    },
+    "boundary": "Local strict/React proof with native-like descendants and deliberately wide monospace, not a claim of source-font pixel identity. Root Nix, registered-source update and actual Framer native word/header retest remain separate. Prior c811 Nix and8a pointer proofs remain historical parents."
   }
 }

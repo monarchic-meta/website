@@ -5,7 +5,7 @@ await page.waitForFunction(()=>state().clockSubscribers===3&&state().clock[0].ti
 // Compare actual CSSclipped nativeFrames against the retained primarySVG, not a generated text substitute.
 const native=await page.locator('#logo').screenshot(),reference=await page.evaluate(async svg=>{const image=new Image();image.src='data:image/svg+xml;base64,'+btoa(svg);await image.decode();const c=document.createElement('canvas');c.width=1400;c.height=Math.ceil(215*1400/1401);const ctx=c.getContext('2d');ctx.fillStyle='#222';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(image,0,0,1400,215*1400/1401);return c.toDataURL('image/png')},svg),a=await sharp(native).ensureAlpha().raw().toBuffer({resolveWithObject:true}),b=await sharp(Buffer.from(reference.split(',')[1],'base64')).resize(a.info.width,a.info.height,{fit:'fill'}).ensureAlpha().raw().toBuffer();let different=0,whiteNative=0,whiteSource=0;for(let i=0;i<a.data.length;i+=4){const x=a.data[i]>127,y=b[i]>127;if(x)whiteNative++;if(y)whiteSource++;if(x!==y)different++}let displacedBeyondOnePixel=0;for(let y=0;y<a.info.height;y++)for(let x=0;x<a.info.width;x++){const k=(y*a.info.width+x)*4,ink=a.data[k]>127;if(ink===(b[k]>127))continue;let adjacent=false;for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const xx=x+dx,yy=y+dy;if(xx>=0&&xx<a.info.width&&yy>=0&&yy<a.info.height&&(b[(yy*a.info.width+xx)*4]>127)===ink)adjacent=true}if(!adjacent)displacedBeyondOnePixel++}fs.writeFileSync(path.join(dir,'silhouette-metrics.json'),JSON.stringify({different,whiteNative,whiteSource,displacedBeyondOnePixel,width:a.info.width,height:a.info.height},null,2));fs.writeFileSync(path.join(dir,'source-14-polygons.png'),Buffer.from(reference.split(',')[1],'base64'));check('All14editable nativeclippedFrame silhouettes match actualprimarySVG within edge antialiasing',different<800&&displacedBeyondOnePixel===0);reports.push({case:'source-vector-silhouette',pixels:a.info.width*a.info.height,differentBinaryPixels:different,displacedBeyondOnePixel,whiteNative,whiteSource});
 await page.evaluate(()=>scrollTo(0,500));await page.waitForTimeout(200);const down=await page.evaluate(()=>state());check('Native scroll accelerates reel forward and reveals sourceflowerparallax',down.reel>later.reel+120&&down.progress>initial.progress&&down.drift!==initial.drift);await page.evaluate(()=>scrollTo(0,300));await page.waitForTimeout(150);const reverse=await page.evaluate(()=>state());check('Reverse ordinaryscroll still accelerates reel in sourceforwarddirection',reverse.reel>down.reel+50);await page.locator('#native-button').click();check('Decorative sourceflower never intercepts native controls',await page.evaluate(()=>__clicked===1));await page.screenshot({path:path.join(dir,'native-details-reel-clock-flower.png')});await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);const reduced=await page.evaluate(()=>state());await page.evaluate(()=>scrollTo(0,600));await page.waitForTimeout(200);const reducedAfter=await page.evaluate(()=>state());check('Reducedmotion freezes reel/clock and flower parallax under actualscroll',reducedAfter.reel===reduced.reel&&reducedAfter.clock[0].time===reduced.clock[0].time&&reducedAfter.progress===.5&&reducedAfter.drift===reduced.drift&&reducedAfter.intervals===0);await page.emulateMedia({reducedMotion:'no-preference'});await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(120);
-for(const target of['canvas','export','thumbnail']){await page.evaluate(target=>{__target=target;__logoWidth=365;render()},target);await page.waitForTimeout(80);const x=await page.evaluate(()=>state());await page.evaluate(()=>scrollTo(0,700));await page.waitForTimeout(100);const y=await page.evaluate(()=>state());check(target+' freezes native clock/reel/flower in a365pxartboard inside1440pxviewport',x.reel===0&&y.reel===0&&x.clock[0].time===Date.UTC(2026,10,1,11)&&y.progress===.5&&x.intervals===0&&y.intervals===0&&await page.locator('#logo').evaluate(n=>n.clientWidth)===365)}await page.evaluate(()=>{__target='preview';render();scrollTo(0,0)});await page.waitForTimeout(100);await page.evaluate(()=>document.getElementById('mount').style.marginTop='10000px');await page.waitForTimeout(100);const off=await page.evaluate(()=>state());check('Actualoffscreen stops native reelRAF and clocktimer',off.frames===0&&off.intervals===0&&off.clockSubscribers===0);await page.evaluate(()=>ReactDOM.flushSync(()=>__root.unmount()));await page.waitForTimeout(50);const cleanup=await page.evaluate(()=>({frames:__frames.size,intervals:__intervals.size,subscribers:detailAPI.clockListeners.size,refs:Object.values(__refs).filter(Boolean).length}));check('Allnative refs/timers/RAF/sharedsubscriptions clean afterunmount',Object.values(cleanup).every(v=>v===0));await extended(page);await layoutCases(page);check('No actualbrowser/Reacterrors',errors.length===0);reports.push({initial,later,down,reverse,reduced,reducedAfter,off,cleanup});const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,reports,errors,scope:'ActualReact18/Chromium CSSclipped editableFrame silhouette vs exactprimarySVG, native clock/reel/paragraphs/refs/transforms, scroll/parallax/reduced/static/ownartboard/offscreen/cleanup. SourceFont was uploaded natively separately; local typography and flowergradient are fixtures, not photo/fontfidelity. Native sourceasset bindings and finalFramerQA separate.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,checks:checks.length,evidence:dir},null,2));await page.close()}catch(e){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({message:String(e),checks,errors},null,2)+'\n');throw e}finally{await browser.close()}
+for(const target of['canvas','export','thumbnail']){await page.evaluate(target=>{__target=target;__logoWidth=365;render()},target);await page.waitForTimeout(80);const x=await page.evaluate(()=>state());await page.evaluate(()=>scrollTo(0,700));await page.waitForTimeout(100);const y=await page.evaluate(()=>state());check(target+' freezes native clock/reel/flower in a365pxartboard inside1440pxviewport',x.reel===0&&y.reel===0&&x.clock[0].time===Date.UTC(2026,10,1,11)&&y.progress===.5&&x.intervals===0&&y.intervals===0&&await page.locator('#logo').evaluate(n=>n.clientWidth)===365)}await page.evaluate(()=>{__target='preview';render();scrollTo(0,0)});await page.waitForTimeout(100);await page.evaluate(()=>document.getElementById('mount').style.marginTop='10000px');await page.waitForTimeout(100);const off=await page.evaluate(()=>state());check('Actualoffscreen stops native reelRAF and clocktimer',off.frames===0&&off.intervals===0&&off.clockSubscribers===0);await page.evaluate(()=>ReactDOM.flushSync(()=>__root.unmount()));await page.waitForTimeout(50);const cleanup=await page.evaluate(()=>({frames:__frames.size,intervals:__intervals.size,subscribers:detailAPI.clockListeners.size,refs:Object.values(__refs).filter(Boolean).length}));check('Allnative refs/timers/RAF/sharedsubscriptions clean afterunmount',Object.values(cleanup).every(v=>v===0));await extended(page);await layoutCases(page);await earlyInputCases(page);await gaugeWordWrapCases(page);check('No actualbrowser/Reacterrors',errors.length===0);reports.push({initial,later,down,reverse,reduced,reducedAfter,off,cleanup});const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,reports,errors,scope:'ActualReact18/Chromium CSSclipped editableFrame silhouette vs exactprimarySVG, native clock/reel/paragraphs/refs/transforms, scroll/parallax/reduced/static/ownartboard/offscreen/cleanup. SourceFont was uploaded natively separately; local typography and flowergradient are fixtures, not photo/fontfidelity. Native sourceasset bindings and finalFramerQA separate.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,checks:checks.length,evidence:dir},null,2));await page.close()}catch(e){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({message:String(e),checks,errors},null,2)+'\n');throw e}finally{await browser.close()}
 
 async function extended(page){
  await page.setViewportSize({width:1440,height:1000});await page.setContent('<!doctype html><style>*{box-sizing:border-box}body{margin:0;background:#222}#mount{position:relative;width:1440px;height:8000px}</style><div id="mount"></div>');
@@ -50,4 +50,126 @@ async function layoutCases(page){
  await page.waitForTimeout(150);const initial=await page.evaluate(()=>layoutState());check('Source-derived native document resolves13474px at1280x720',Math.abs(initial.height-13474.10241380152)<.01&&Math.abs(initial.rect.height-13474.10241380152)<1);check('FirstUsage and laterPerceptionDeck occupy separate source document coordinates',Math.abs(initial.actors.usage.docY-2483.912191579296)<1&&Math.abs(initial.actors['late-deck'].docY-5195.912191579297)<1&&initial.actors.usage.docY!==initial.actors['late-deck'].docY);check('Source697pxwindow extent places crossing/gauge correctly',Math.abs(initial.actors.window.docY-6316.801080468185)<1&&Math.abs(initial.actors.crossing.docY-6829.689969357074)<1&&Math.abs(initial.actors.gauge.docY-7683.61352491263)<1);await page.evaluate(()=>scrollTo(0,715));await page.waitForTimeout(60);const firstScroll=await page.evaluate(()=>layoutState());check('Sourcefirstcardfooter retains≈50px at the recorded715pxfirsthandoff',Math.abs(firstScroll.actors.opening.docY+firstScroll.actors.opening.height-715-50.2222222222)<1);check('Firsthandoff sideTag is placed by source1013px document coordinate',Math.abs(firstScroll.tag.y-(1013*1280/1440-715))<1&&firstScroll.tag.width>151&&firstScroll.tag.width<153);
  const fanStates=[];for(const y of[5038,5758,6473,5758]){await page.evaluate(y=>scrollTo(0,y),y);await page.waitForTimeout(120);fanStates.push(await page.evaluate(()=>layoutState().fan))}check('All14 exact sourcefan shapes resolve their own publicnative elementIds',fanStates.every(s=>s.resolved.length===14&&s.resolved.every(x=>x!=='')));check('Six riveted native sourcecards open and reverse under ordinaryscroll',JSON.stringify(fanStates[0].cards)!==JSON.stringify(fanStates[1].cards)&&JSON.stringify(fanStates[1].cards)!==JSON.stringify(fanStates[2].cards)&&JSON.stringify(fanStates[1].cards)===JSON.stringify(fanStates[3].cards));const a=await page.screenshot();await page.evaluate(()=>scrollTo(0,5038));await page.waitForTimeout(100);await page.evaluate(()=>scrollTo(0,5758));await page.waitForTimeout(100);const b=await page.screenshot(),roi=await page.locator('#source-fan').evaluate(n=>{const r=n.getBoundingClientRect(),left=Math.ceil(Math.max(0,r.left)+3),top=Math.ceil(Math.max(0,r.top)+3);return{left,top,width:Math.floor(Math.min(innerWidth,r.right)-3)-left,height:Math.floor(Math.min(innerHeight,r.bottom)-3)-top}}),ar=await sharp(a).extract(roi).raw().toBuffer(),br=await sharp(b).extract(roi).raw().toBuffer();fs.writeFileSync(path.join(dir,'fan-reverse-a.png'),a);fs.writeFileSync(path.join(dir,'fan-reverse-b.png'),b);let changed=0;for(let i=0;i<ar.length;i++)if(ar[i]!==br[i])changed++;fs.writeFileSync(path.join(dir,'fan-reverse-metrics.json'),JSON.stringify({changed,roi,fanStates},null,2));let binaryChanged=0,edgePixels=0;for(let y=0;y<roi.height;y++)for(let x=0;x<roi.width;x++){const i=(y*roi.width+x)*3;if(ar[i]!==br[i]||ar[i+1]!==br[i+1]||ar[i+2]!==br[i+2]){if((ar[i]>127)!==(br[i]>127))binaryChanged++;let edge=false;for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const xx=x+dx,yy=y+dy;if(xx>=0&&xx<roi.width&&yy>=0&&yy<roi.height&&Math.abs(ar[(yy*roi.width+xx)*3]-ar[i])>30)edge=true}if(edge)edgePixels++}}check('Reversed fan material interiors areexact; differences limitedto1pxAAedges and<0.1%ROI',changed < roi.width * roi.height * .001 * 3 && edgePixels * 3 === changed);await page.screenshot({path:path.join(dir,'source-native-fan-scroll.png')});await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(80);const reduced=await page.evaluate(()=>layoutState().fan);await page.evaluate(()=>scrollTo(0,6000));await page.waitForTimeout(80);check('Reducedmotion keeps fan cardinal geometry without scrollrotation',reduced.open===0&&await page.evaluate(()=>layoutState().fan.open===0));await page.emulateMedia({reducedMotion:'no-preference'});
  for(const target of['canvas','export','thumbnail']){await page.setViewportSize({width:1440,height:1000});await page.evaluate(target=>{__target=target;__layoutWidth=350;renderLayout();scrollTo(0,0)},target);await page.waitForTimeout(80);const s=await page.evaluate(()=>layoutState());check(target+' sourceflow uses own350pxnative artboard rather than1440pxeditor',s.rect.width===350&&s.actors.usage.x===20&&s.actors.usage.width===335&&s.frames===0)}await page.evaluate(()=>ReactDOM.flushSync(()=>__layoutRoot.unmount()));await page.waitForTimeout(50);check('Source document/flow/fan native controllers clean allobservers/RAF afterunmount',await page.evaluate(()=>__frames.size===0&&__intervals.size===0));reports.push({case:'source-derived-full-document',initial,firstScroll,fanStates,reversedChangedChannels:changed,reversedBinaryChangedPixels:binaryChanged,reversedAntialiasEdgePixels:edgePixels,scope:'ActualReact publicnativeFrames, source-derived responsive extent and ordinary-scroll/reverse; exactphoto/font/sourcebrowsercomparison and actualFramer save remain separate.'})
+}
+async function earlyInputCases(page) {
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await page.setContent('<!doctype html><style>*{box-sizing:border-box}html,body{margin:0;background:#eee}#mount{position:relative}button{font-family:Arial}</style><div id="mount"></div>');
+    await page.evaluate(() => {
+        const E = React.createElement;
+        const Native = React.forwardRef((props, ref) => E('div', { ...props, ref }));
+        const Document = exports.withFormatRefinedDocument(Native);
+        const Early = exports.withFormatEarlyPanelsFlow(Native);
+        const HeaderControl = React.forwardRef((props, ref) => {
+            const [pressed, setPressed] = React.useState(false);
+            return E('button', { ...props, ref, type: 'button', 'data-header-control': 'notes', 'aria-pressed': pressed, onClick: () => { window.__headerClicks++; setPressed(v => !v); } }, 'Notes Mode ', E('span', { id: 'format-notes-value' }, pressed ? '1' : '0'));
+        });
+        window.__headerClicks = 0;
+        window.__earlyInputRoot = ReactDOM.createRoot(document.getElementById('mount'));
+        window.renderEarlyInputs = (target, width) => {
+            window.__target = target;
+            const phone = width < 1280;
+            ReactDOM.flushSync(() => __earlyInputRoot.render(E(Document, { id: 'input-document', style: { position: 'relative', width, height: 2300 } },
+                E(HeaderControl, { id: 'format-notes-control', style: { position: 'absolute', left: phone ? 16 : 1034, top: phone ? 96 : 216, width: phone ? 130 : 59, height: phone ? 28 : 16, border: 0, padding: 0, background: '#111', color: '#fff', fontSize: 10, whiteSpace: 'nowrap' } }),
+                // Painted later and spanning the header: actual native early-flow HOC,
+                // including an incoming pointerEvents:auto that must not win.
+                E(Early, { id: 'decorative-early-flow', style: { position: 'absolute', left: 0, top: 0, width, height: 2100, pointerEvents: 'auto' } },
+                    E('div', { style: { position: 'absolute', left: 20, top: 600, width: 90, height: 90, background: '#ccc' } }))
+            )));
+        };
+        window.earlyInputState = () => {
+            const button = document.getElementById('format-notes-control'), early = document.getElementById('decorative-early-flow');
+            const rect = button.getBoundingClientRect(), overlay = early.getBoundingClientRect(), x = rect.x + rect.width / 2, y = rect.y + rect.height / 2, hit = document.elementFromPoint(x, y);
+            return { x, y, hitID: hit?.id ?? '', hitControl: hit?.closest('[data-header-control]')?.id ?? null, pressed: button.getAttribute('aria-pressed'), value: document.getElementById('format-notes-value').textContent, clicks: __headerClicks, button: rect.toJSON(), early: overlay.toJSON(), overlayCoversControl: x >= overlay.left && x <= overlay.right && y >= overlay.top && y <= overlay.bottom };
+        };
+    });
+    const inputCases = [];
+    for (const [target, width, viewport] of [
+        ['preview', 1280, { width: 1280, height: 720 }],
+        ['preview', 390, { width: 390, height: 844 }],
+        ['canvas', 1440, { width: 1440, height: 1000 }],
+        ['canvas', 350, { width: 1440, height: 1000 }],
+        ['export', 350, { width: 1440, height: 1000 }],
+        ['thumbnail', 350, { width: 1440, height: 1000 }],
+    ]) {
+        await page.setViewportSize(viewport);
+        await page.evaluate(({ target, width }) => { renderEarlyInputs(target, width); scrollTo(0, 0); }, { target, width });
+        await page.waitForTimeout(100);
+        const before = await page.evaluate(() => earlyInputState());
+        check(target + width + ' real hit-test reaches native header through covering early-flow region', before.overlayCoversControl && before.hitControl === 'format-notes-control');
+        await page.mouse.click(before.x, before.y);
+        const clicked = await page.evaluate(() => earlyInputState());
+        check(target + width + ' real pointer click reaches header control and changes0to1', clicked.clicks === before.clicks + 1 && clicked.pressed === 'true' && clicked.value === '1');
+        await page.screenshot({ path: path.join(dir, 'early-header-input-' + target + '-' + width + '.png') });
+        await page.mouse.click(clicked.x, clicked.y);
+        const reset = await page.evaluate(() => earlyInputState());
+        check(target + width + ' second real header click returns1to0 without decorative interception', reset.clicks === clicked.clicks + 1 && reset.pressed === 'false' && reset.value === '0');
+        inputCases.push({ target, width, before, clicked, reset });
+    }
+    await page.evaluate(() => ReactDOM.flushSync(() => __earlyInputRoot.unmount()));
+    await page.waitForTimeout(60);
+    check('Early input fixture cleans native document observers/RAF after unmount', await page.evaluate(() => __frames.size === 0 && __intervals.size === 0));
+    reports.push({ case: 'early-native-header-hit-through', inputCases, scope: 'Actual sourceFlow/RefinedDocument HOCs overlay a native-like header button; elementFromPoint plus real pointer clicks prove input delivery. Header Notes state is a fixture, not an additional claim about the separate Notes controller.' });
+}
+async function gaugeWordWrapCases(page) {
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.setContent('<!doctype html><style>*{box-sizing:border-box}html,body{margin:0;background:#eee}#mount{position:relative}</style><div id="mount"></div>');
+    await page.evaluate(() => {
+        const E = React.createElement;
+        const Native = React.forwardRef((props, ref) => E('div', { ...props, ref }));
+        const NativeText = React.forwardRef(({ text, ...props }, ref) => E('div', { ...props, ref }, E('p', { 'data-native-gauge-para': true, style: { margin: 0, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' } }, E('span', { 'data-native-gauge-text': true, style: { whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' } }, text))));
+        const Field = exports.withFormatGaugeField(Native), Word = exports.withFormatGaugeWord(NativeText);
+        const widths = [150.080032349, 151.342056274, 201.586074829, 122.408035278, 162.166061401, 179.148040771];
+        const terms = ['Format', 'Vertical', 'Horizontal', 'Circle', 'Triangle', 'Complex'];
+        window.__gaugeWrapRoot = ReactDOM.createRoot(document.getElementById('mount'));
+        window.renderGaugeWrap = (target, width) => {
+            __target = target;
+            const unit = width / 1440;
+            const words = ['left', 'right'].flatMap(side => Array.from({ length: 26 }, (_, index) => {
+                const name = (((index - 13 + 3) % 6) + 6) % 6;
+                return E(Word, { key: side + index, id: 'format-gauge-' + side + '-' + index, text: '(' + terms[name] + ')', style: { position: 'absolute', width: widths[name] * unit, height: 'auto', fontFamily: 'monospace', fontSize: 42 * unit, lineHeight: '1', color: '#fff' } });
+            }));
+            ReactDOM.flushSync(() => __gaugeWrapRoot.render(E(Field, { id: 'native-gauge-wrap-field', style: { position: 'relative', width, height: 1800 * unit } }, ...words,
+                E('p', { style: { position: 'absolute', left: 0, top: 1700 * unit, width: 80 * unit, margin: 0, fontFamily: 'monospace', fontSize: 42 * unit, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere' } }, E('span', { id: 'unrelated-wrapping-span' }, '(Horizontal)'))
+            )));
+        };
+        window.gaugeWrapState = () => ({
+            words: [...document.querySelectorAll('[data-format-gauge-word]')].map(node => {
+                const span = node.querySelector('[data-native-gauge-text]');
+                return { id: node.id, key: node.dataset.formatGaugeWord, text: span.textContent, lines: span.getClientRects().length, anchor: { left: node.style.left, top: node.style.top, width: node.style.width, rotate: node.style.rotate, scale: node.style.scale }, spanHeight: span.getBoundingClientRect().height };
+            }),
+            unrelatedLines: document.getElementById('unrelated-wrapping-span').getClientRects().length,
+        });
+        window.forceNativeGaugeWrap = force => {
+            for (const node of document.querySelectorAll('[data-native-gauge-para],[data-native-gauge-text]')) {
+                node.style.setProperty('white-space', 'pre-wrap', force ? 'important' : '');
+                node.style.setProperty('overflow-wrap', 'anywhere', force ? 'important' : '');
+            }
+        };
+    });
+    const cases = [];
+    for (const [target, width, viewport] of [
+        ['preview', 1440, { width: 1440, height: 1000 }],
+        ['preview', 350, { width: 390, height: 844 }],
+        ['export', 350, { width: 1440, height: 1000 }],
+    ]) {
+        await page.setViewportSize(viewport);
+        await page.evaluate(({ target, width }) => { renderGaugeWrap(target, width); scrollTo(0, 0); }, { target, width });
+        await page.waitForTimeout(100);
+        const whole = await page.evaluate(() => gaugeWrapState());
+        check(target + width + ' all52 actual gauge spans remain whole despite native-like pre-wrap paragraphs', whole.words.length === 52 && whole.words.every(word => word.lines === 1 && word.key !== 'missing-public-elementId'));
+        await page.evaluate(() => forceNativeGaugeWrap(true));
+        const wrapped = await page.evaluate(() => gaugeWrapState());
+        check(target + width + ' narrow native-like boxes genuinely reproduce multi-line spans when upstream wrapping wins', wrapped.words.some(word => word.lines > 1));
+        check(target + width + ' wrapping never changes the52 native gauge anchors or authored widths', JSON.stringify(whole.words.map(word => word.anchor)) === JSON.stringify(wrapped.words.map(word => word.anchor)));
+        await page.evaluate(() => forceNativeGaugeWrap(false));
+        const restored = await page.evaluate(() => gaugeWrapState());
+        check(target + width + ' scoped source ink rule restores every single-line word with identical anchors', restored.words.every(word => word.lines === 1) && JSON.stringify(whole.words.map(word => word.anchor)) === JSON.stringify(restored.words.map(word => word.anchor)));
+        check(target + width + ' unrelated native paragraphs still wrap normally', whole.unrelatedLines > 1 && restored.unrelatedLines === whole.unrelatedLines);
+        await page.screenshot({ path: path.join(dir, 'gauge-whole-native-words-' + target + '-' + width + '.png') });
+        cases.push({ target, width, whole, wrapped, restored });
+    }
+    await page.evaluate(() => ReactDOM.flushSync(() => __gaugeWrapRoot.unmount()));
+    await page.waitForTimeout(60);
+    check('Scoped gauge native text fixture removes its observers/RAF/style layers after unmount', await page.evaluate(() => __frames.size === 0 && __intervals.size === 0 && document.querySelectorAll('[data-format-gauge-ink]').length === 0));
+    reports.push({ case: 'gauge-native-descendant-nowrap', cases, scope: 'Actual GaugeField/GaugeWord HOCs,52 real public word IDs and source widths with deliberately wide monospace/native p/span wrapping. CSS changes only the word text flow; all measured anchors stay identical and unrelated paragraphs continue wrapping. Source font/pixel fidelity and actual Framer retest remain separate.' });
 }
