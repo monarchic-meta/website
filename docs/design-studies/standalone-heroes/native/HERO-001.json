@@ -108,6 +108,14 @@
       {
         "label": "Gallery reference ↗",
         "href": "https://recent.design/i/vmmug5r-type-face"
+      },
+      {
+        "label": "Head scan / Lee Perry-Smith ↗",
+        "href": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith"
+      },
+      {
+        "label": "Geometry license / CC BY3.0 ↗",
+        "href": "https://creativecommons.org/licenses/by/3.0/"
       }
     ],
     "limits": "Surface-writing volume is the opening itself, with no generic headline added. Head stand-in: Infinite 3D Head Scan by Lee Perry-Smith via three.js, CC BY 3.0, adapted; not verified as Kelman’s source mesh. Text/font/material and rotation are approximations. No source assembly/dispersal sequence claimed."

@@ -1312,6 +1312,14 @@
       {
         "label": "Gallery reference ↗",
         "href": "https://www.awwwards.com/sites/unbelievably-crap"
+      },
+      {
+        "label": "Head scan / Lee Perry-Smith ↗",
+        "href": "https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith"
+      },
+      {
+        "label": "Geometry license / CC BY3.0 ↗",
+        "href": "https://creativecommons.org/licenses/by/3.0/"
       }
     ],
     "limits": "Native framed white portrait opening, 0039, peripheral UI and dark bottom strip surround the actual live red-bar raster/bust surface. Lee Perry-Smith head/bust, CC BY3.0, is an explicit adapted stand-in; no original full-body mesh or source full-scroll reproduction. Ambient light is approximated with48 low-opacity native material layers; Phone composition newly adapted."
