@@ -1,0 +1,33 @@
+{
+  "reference": "HERO-015",
+  "source": "https://mecha-xyz.webflow.io/",
+  "creators": [
+    "Widelab",
+    "Grzegorz Leśniewicz"
+  ],
+  "sourceAsset": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
+  "sourceAssetSHA256": "0d484646983d0a7da6d0b3360c7dfb2cbcbfd0837c2452649a044b70978cdab7",
+  "reuseLicense": "unverified; credited unpublished source recreation",
+  "geometry": {
+    "vertices": 696,
+    "faces": 1364,
+    "edges": 905,
+    "sourceDeclarationSHA256": "8d727547588235c3453e6168ba3b63606fd8860b9a4e44bfb6d496ac7d75c01d",
+    "adaptation": "Exact prior normalized/welded source primitive0 and bevel-edge adjacency; no new shape simplification. Prior adaptation removed24 degenerate faces after six-decimal normalization."
+  },
+  "scroll": {
+    "observedOffsets": [
+      0,
+      666,
+      1391,
+      2105
+    ],
+    "sourceViewport": [
+      1280,
+      720
+    ],
+    "meaning": "settled full mark; narrower sideways mark; smaller upper mark; absent mark",
+    "implementation": "Continuous real nearest-native-scroller/window offset, scaled by viewport height. No wheel interception, virtual document scroll, elapsed-time rotation, pointer response or stillTime substitution.",
+    "limits": "Exact source pose/scroll causality and curves unisolated; independent source-corresponding interpolation. Reverse is authored and tested, not claimed source-verified. Source Phone unverified; explicit responsive adaptation."
+  }
+}

@@ -64,7 +64,9 @@
     "check:original-hero-round-two-integration": "node scripts/check-original-hero-round-two-integration.mjs",
     "build:original-hero-round-two": "node scripts/build-original-hero-round-two.mjs",
     "check:source-hero-journey-study": "node scripts/check-source-hero-journey-study.mjs",
-    "check:source-hero-journey-browser": "node scripts/check-source-hero-journey-browser.mjs"
+    "check:source-hero-journey-browser": "node scripts/check-source-hero-journey-browser.mjs",
+    "check:mecha-scroll-mark": "node scripts/check-mecha-scroll-mark.mjs",
+    "check:mecha-scroll-mark-browser": "node scripts/check-mecha-scroll-mark-browser.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
