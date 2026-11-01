@@ -135,6 +135,17 @@
             pnpm run check:original-hero-integration
             pnpm run check:original-hero-browser
           '';
+          standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
+            pnpm run check:source-hero-page-study
+            pnpm run check:source-hero-page-browser
+            pnpm run check:original-hero-round-two-study
+            pnpm run check:original-hero-round-two-integration
+            pnpm run check:original-hero-round-two-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           contracts = mkWebsiteCheck "contracts" ''
             pnpm run check:webcomposer
             pnpm run check:webinfo-artifacts

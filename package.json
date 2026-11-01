@@ -55,7 +55,13 @@
     "build:framer-hero-mechanisms": "node scripts/build-framer-hero-mechanisms.mjs",
     "check:original-hero-study": "node scripts/check-original-hero-study.mjs",
     "check:original-hero-integration": "node scripts/check-original-hero-integration.mjs",
-    "check:original-hero-browser": "node scripts/check-original-hero-browser.mjs"
+    "check:original-hero-browser": "node scripts/check-original-hero-browser.mjs",
+    "check:source-hero-page-study": "node scripts/check-source-hero-page-study.mjs",
+    "check:source-hero-page-browser": "node scripts/check-source-hero-page-browser.mjs",
+    "check:original-hero-round-two-study": "node scripts/check-original-hero-round-two-study.mjs",
+    "check:original-hero-round-two-browser": "node scripts/check-original-hero-round-two-browser.mjs",
+    "check:original-hero-round-two-integration": "node scripts/check-original-hero-round-two-integration.mjs",
+    "build:original-hero-round-two": "node scripts/build-original-hero-round-two.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
