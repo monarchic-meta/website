@@ -1,0 +1,29 @@
+{
+  "creator": "Mezmo",
+  "source": "https://assets-global.website-files.com/626ad01a9cdb24688668c02e/630f4d59cdb14849bf6bb014_Mezmo-Whitepaper-How-to-Run-Elasticsearch-From-Zero-to-Petabyte-Scale.pdf",
+  "sourcePDFSHA256": "cd666ea9e5682c52dda31556df19981a6cb118fb5ffe61683602e07410df918d",
+  "sourcePDFBytes": 683915,
+  "extraction": "First-page final standalone wordmark vector path frompdftocairo25.10; viewBox croppedonlywith quarter-unitbounds from4xalphaextent. Originalcurvegeometryunchanged; fillmappedtoselected2022website#eaff91.",
+  "sha256": "ae89a23c294c4f84affb504f350f70a6245b8bc19e15fb33e614ddc4f1e2dc7d",
+  "bytes": 6195,
+  "bounds": [
+    49,
+    453.25,
+    153,
+    26
+  ],
+  "credit": "Mezmo historical wordmark; credited source recreation, unverifiedassetreuse license. No wholePDF or sourcebehaviourcode inrepo.",
+  "comparison": "Extractedglyphshapes visually reviewedagainstselected2022Mezmo header; does notclaimcurrentstar-wordmark matches2022.",
+  "referenceID": "HERO-012",
+  "asset": "source-mezmo-historical-wordmark.svg",
+  "scope": "Historical brand geometry for the unpublished credited Framer source recreation. No automatic asset synchronization or production website use.",
+  "validation": {
+    "rasterizedAt": 4,
+    "dimensions": [
+      612,
+      104
+    ],
+    "alphaChannelsChanged": 0,
+    "scope": "NewtightSVGviewBox preserves the originalPDFwordmarkcurvealphaexactly at4x; fill deliberatelyrecoloured toselectedwebsite. ActualnativeFramerbindingverifiedseparately."
+  }
+}
