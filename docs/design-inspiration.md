@@ -18,6 +18,7 @@ records the independent directions and concrete motifs to make more of.
 | [Graphic design](design-inspiration/graphic-design.md) | Editorial grids, identity systems, dot matrices, halftones, collage, and book previews |
 | [Creative Coding](design-inspiration/creative-coding.md) | All 20 selected posts: point meshes, actual tonal stippling, glass, chrome, luminous forms and technical UI graphics |
 | [Hero references — complete list](design-inspiration/heroes.md#complete-owner-selected-list) | All 18 original links in supplied order, primary destinations, visual mechanisms and explicit behavior-inspection limits |
+| [Hero sequences and interactions](design-inspiration/hero-behavior.md) | In-progress source audit: full opening states, scroll and input observations, recreation gaps and remaining unknowns for all 18 references |
 | [Sites](design-inspiration/sites.md) | Verified destinations, their source posts, and the scope of live inspection |
 
 All Web & UI Design references remain included, alongside Graphic Design’s

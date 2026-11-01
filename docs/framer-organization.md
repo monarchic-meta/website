@@ -7,6 +7,11 @@ former hero galleries now serve as lightweight link indexes with no code
 placements. Grouped Design boards retain their editable contents and loading
 boundaries.
 
+The source hero pages are opening studies. They do not yet reproduce the full
+multi-screen or interactive source journeys. The [sequence and interaction audit](design-inspiration/hero-behavior.md)
+records missing states and observed source behavior separately from the saved
+inventory and authored-page checks below.
+
 The [standalone hero handoff](design-studies/standalone-heroes/handoff.md) and
 [manifest](design-studies/standalone-heroes/manifest.json) record the current
 page identities, responsive states, source package and verification. All fifteen

@@ -6,7 +6,14 @@ Desktop and Phone layouts. These are additive to the grouped Design boards.
 The [manifest](manifest.json) binds the actual IDs, routes, recipe hashes,
 credits, responsive presets and evidence references.
 
-**Delivery verification is complete.** The independent final saved-state audit
+**Source-fidelity scope correction:** these are opening studies, not complete
+recreations of the eighteen source experiences. Many sources continue through
+multiple screens, nested scrolling, virtual timelines or interactive chapter
+states that these pages omit. The [sequence and interaction audit](../../design-inspiration/hero-behavior.md)
+records those gaps. The historical manifest and checks below remain intact:
+they verify the authored pages, not complete source-behavior fidelity.
+
+**Authored-page verification is complete.** The independent final saved-state audit
 passes all fifteen checks at 69 pages, 187 code placements and 22 source files.
 Current local checks also pass, including the five Nix check outputs bound to
 the eighteen corrected source files. Current registered source identities,

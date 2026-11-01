@@ -25,7 +25,7 @@ rather than independent websites.
 | --- | --- | --- |
 | HERO-001 | [Type Face — Recent Design](https://recent.design/i/vmmug5r-type-face) | [Stephen Kelman's source post](https://x.com/stephenkelman/status/2093335231604367454) |
 | HERO-002 | [Ajedrez Film Poem — Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem) | [Julián Leiss's source post](https://x.com/julianleiss/status/2110868325052149925) |
-| HERO-003 | [Agent-first Billing — Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page) | [Polar field guide](https://polar.sh/field-guide?page=m-credits) |
+| HERO-003 | [Agent-first Billing — Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page) | [Polar field guide](https://polar.sh/field-guide), [Credits chapter](https://polar.sh/field-guide?page=m-credits) |
 | HERO-004 | [Artemii Lebedev — Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev) | [Artemii Lebedev](https://artemiilebedev.com/) |
 | HERO-005 | [Maximilian Kaspar — Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar) | [Maximilian Kaspar](https://www.maximiliankaspar.com/) |
 | HERO-006 | [Mac Moss Studio — Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio) | [Mac Moss Studio](https://macmoss.studio/) |
@@ -55,6 +55,12 @@ do not reinterpret its eighteen-reference coverage as eighteen completed
 interaction audits. The existing Framer opening studies remain useful visual
 studies, but their layout, playback and preservation checks do not establish
 full source-behavior fidelity.
+
+The [sequence and interaction audit](hero-behavior.md) records the newer browser
+observations, missing recreation states and remaining inspection questions for
+each of the eighteen references. It is explicitly in progress. In particular,
+the white/red Unbelievably Crap portrait is a later state of the current live
+journey, and Polar's Credits query opens a later chapter rather than its entrance.
 
 ## Coverage and evidence
 
@@ -375,6 +381,8 @@ without depending on a familiar two-column hero.
 Scrolling changed panel scale and stacking. Notes Mode and the alternate
 daughter's version were visible but untested. Full page, all shapes, physics
 interactions and responsive behavior were not audited.
+The [later behavior audit](hero-behavior.md#hero-013--format) traverses the long
+essay to its footer and tests both visible modes, with remaining limits recorded.
 
 ### HERO-014 — Unbelievably Crap
 
@@ -400,6 +408,9 @@ resolved into the figure; scroll changed its surrounding text composition and
 pose. Pointer response, full gallery, character-tearing interaction and mobile
 behavior were not tested. Its provocative copy is source context, not proposed
 Monarchic messaging.
+The [later behavior audit](hero-behavior.md#hero-014--unbelievably-crap) follows
+the virtual sequence through the white/red gallery portrait to its terminal red
+scene. The portrait and black figure are states within that same live journey.
 
 ### HERO-015 — MECHA
 
