@@ -25,10 +25,14 @@ type LayerProps = {
     onPointerMove?: React.PointerEventHandler<HTMLElement>
     onHoverStart?: (event: NativeInputEvent, info?: HoverInfo) => void
     onHoverEnd?: (event: NativeInputEvent, info?: HoverInfo) => void
+    onTap?: (event: SectionEvent, info?: unknown) => void
+    onClick?: React.MouseEventHandler<HTMLElement>
+    onKeyDown?: React.KeyboardEventHandler<HTMLElement>
 }
 type Point = { x: number; y: number }
 type NativeInputEvent = { clientX?: number; clientY?: number; defaultPrevented?: boolean; nativeEvent?: { clientX?: number; clientY?: number } }
 type HoverInfo = { point?: Point }
+type SectionEvent = { defaultPrevented?: boolean; preventDefault?: () => void; metaKey?: boolean; ctrlKey?: boolean; shiftKey?: boolean; altKey?: boolean; button?: number }
 type Bounds = { left: number; top: number; width: number; height: number }
 type WordState = { pointer: Point | null; epoch: number; reducedMotion: boolean; register: (measure: () => void) => () => void }
 type TransitionSet = { property: string[]; duration: string[]; timing: string[]; delay: string[] }
@@ -42,6 +46,47 @@ const FRAME_MS = 1000 / 30
 const WEIGHT_PROPERTY = "--source-type-weight"
 let propertyRegistered = false
 const useOwnLayoutEffect = typeof window === "undefined" ? React.useEffect : React.useLayoutEffect
+
+/** Framer Preview rewrites internal hrefs through its route adapter. Resolve
+ * only the seven owned Montreal targets within the same native study shell;
+ * keep the authored href, external links and modified browser clicks intact. */
+function sectionLink(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, forwardedRef) => {
+        const frozen = useIsStaticRenderer() || RenderTarget.current() === RenderTarget.canvas
+        const own = React.useRef<HTMLElement | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => {
+            own.current = node
+            if (typeof forwardedRef === "function") forwardedRef(node)
+            else if (forwardedRef) forwardedRef.current = node
+        }, [forwardedRef])
+        const last = React.useRef<{ channel: string; at: number } | null>(null)
+        const activate = (channel: string, event: SectionEvent) => {
+            if (frozen || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== undefined && event.button !== 0) return
+            const node = own.current, href = node?.getAttribute("href"), fragment = href?.slice(href.lastIndexOf("#") + 1)
+            if (!node || !href?.includes("#") || !fragment || !/^montreal-(story|universal|ligatures|weights-chart|languages|accents|variants)$/.test(fragment)) return
+            try { if (new URL(href, node.ownerDocument.baseURI).origin !== new URL(node.ownerDocument.baseURI).origin) return } catch { return }
+            const shell = node.closest('[data-framer-name="HERO-008 / native interactive shell"]')
+            const target = shell?.querySelector<HTMLElement>(`[id="${fragment}"]`)
+            if (!target) return
+            event.preventDefault?.()
+            const at = performance.now(), previous = last.current
+            if (previous && previous.channel !== channel && at - previous.at < 350) return
+            last.current = { channel, at }
+            target.scrollIntoView({ behavior: "auto", block: "start" })
+        }
+        return <Component {...props} ref={bind}
+            onTap={(event: SectionEvent, info?: unknown) => { props.onTap?.(event, info); activate("tap", event) }}
+            onClick={(event: React.MouseEvent<HTMLElement>) => {
+                props.onClick?.(event)
+                if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && event.button === 0) activate("click", event)
+            }}
+            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => {
+                props.onKeyDown?.(event)
+                if (event.key === "Enter" && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) activate("key", event)
+            }}
+        />
+    })
+}
 
 function registerWeightProperty() {
     if (propertyRegistered || typeof CSS === "undefined" || !CSS.registerProperty) return
@@ -271,4 +316,11 @@ export function withSourceTypeLetter(Component: ComponentType<LayerProps>): Comp
             <style>{css}</style>
         </>
     })
+}
+
+export function withSourceTypeSectionWord(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return withSourceTypeWord(sectionLink(Component))
+}
+export function withSourceTypeSectionLink(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return sectionLink(Component)
 }

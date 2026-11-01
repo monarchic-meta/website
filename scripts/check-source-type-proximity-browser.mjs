@@ -250,8 +250,68 @@ try {
     check('Native event bridge cleans all pending work and caller refs', nativeCleanup.frames === 0 && nativeCleanup.listeners === 0 && nativeCleanup.word === null && nativeCleanup.letter === null)
     const nativeAdapter = { nativeEntry, nativePixelChanges, afterDual, nativeFrozen, nativeCleanup, scope: 'Real React/Chromium native-like component drops mouse handlers and forwards public hover/pointer events. Actual Framer event forwarding remains a separate retest.' }
 
+    await page.evaluate(() => {
+        const base = document.createElement('base'); base.href = 'https://fixture.invalid/playgrounds/source-inspiration/heroes/behavior/hero-008-pp-neue-montreal'; document.head.append(base)
+        const realScroll = HTMLElement.prototype.scrollIntoView
+        window.__sectionCalls = []; window.__navCancel = false; window.__navDual = false; window.__navRefs = {}; window.__navTapCalls = 0
+        HTMLElement.prototype.scrollIntoView = function (options) { __sectionCalls.push({ id: this.id, options }); return realScroll.call(this, options) }
+        window.__sectionIDs = ['story', 'universal', 'weights-chart', 'ligatures', 'languages', 'accents', 'variants'].map(s => 'montreal-' + s)
+        const NativeLink = React.forwardRef(({ onClick, onTap, onKeyDown, onMouseEnter, onMouseMove, onMouseLeave, onHoverStart, onHoverEnd, onPointerMove, ...props }, ref) => React.createElement('a', {
+            ...props, ref, onKeyDown,
+            // Framer's native tap survives while the caller's DOM click prop is dropped.
+            onClick: event => { onTap?.(event); if (__navDual) onClick?.(event); event.preventDefault() },
+            onPointerEnter: event => onHoverStart?.(event, { point: { x: event.clientX, y: event.clientY } }),
+            onPointerMove, onPointerLeave: event => onHoverEnd?.(event),
+        }))
+        const NavWord = exports.withSourceTypeSectionWord(NativeLink), NavLink = exports.withSourceTypeSectionLink(NativeLink)
+        window.__sectionRoot = ReactDOM.createRoot(document.getElementById('mount'))
+        window.renderSections = () => ReactDOM.flushSync(() => __sectionRoot.render(React.createElement('div', { 'data-framer-name': 'HERO-008 / native interactive shell' },
+            React.createElement('nav', { style: { display: 'flex', gap: 12, position: 'sticky', top: 0, background: '#fff' } }, __sectionIDs.map((id, i) => React.createElement(NavWord, {
+                id: 'nav-' + i, key: id, href: './hero-008-pp-neue-montreal?mode=dark#' + id,
+                ref: n => { __navRefs[i] = n }, onTap: e => { __navTapCalls++; if (__navCancel) e.preventDefault() },
+            }, 'Go ' + i))),
+            __sectionIDs.map(id => React.createElement('section', { id, key: id, style: { height: 100, marginTop: 350 } }, id)),
+            React.createElement(NavLink, { id: 'footer-section-link', href: '#montreal-story' }, 'Footer story'),
+            React.createElement('div', { style: { height: 500 } }, 'Following content'),
+        )))
+        __target = 'preview'; __static = false; renderSections(); window.scrollTo(0, 0)
+    })
+    for (let i = 0; i < 7; i++) {
+        await page.locator('#nav-' + i).click()
+        check('Native source section tap arrives at target ' + i, await page.evaluate(i => __sectionCalls.at(-1)?.id === __sectionIDs[i] && Math.abs(document.getElementById(__sectionIDs[i]).getBoundingClientRect().top) < 1, i))
+    }
+    const beforeSectionKey = await page.evaluate(() => __sectionCalls.length)
+    await page.locator('#footer-section-link').press('Enter')
+    check('Footer section Enter uses the same owned target without replacing its href', await page.evaluate(before => __sectionCalls.length === before + 1 && __sectionCalls.at(-1).id === 'montreal-story' && document.getElementById('footer-section-link').getAttribute('href') === '#montreal-story', beforeSectionKey))
+    await page.evaluate(() => { __navDual = true }); const beforeDualSection = await page.evaluate(() => __sectionCalls.length)
+    await page.locator('#nav-2').click()
+    check('Native tap plus DOM click consume the section action once', await page.evaluate(before => __sectionCalls.length === before + 1, beforeDualSection))
+    await page.evaluate(() => { __navCancel = true }); const beforeCanceledSection = await page.evaluate(() => __sectionCalls.length)
+    await page.locator('#nav-0').click()
+    check('Caller cancellation prevents source section navigation', await page.evaluate(before => __sectionCalls.length === before, beforeCanceledSection))
+    await page.evaluate(() => { __navCancel = false }); await page.locator('#nav-0').click({ modifiers: ['Control'] })
+    check('Modified browser activation is not consumed by the section helper', await page.evaluate(before => __sectionCalls.length === before, beforeCanceledSection))
+    await page.evaluate(() => document.getElementById('nav-0').setAttribute('href', 'https://outside.invalid/#montreal-story'))
+    await page.locator('#nav-0').click()
+    check('An external origin retains its native browser link behavior', await page.evaluate(before => __sectionCalls.length === before, beforeCanceledSection))
+    await page.evaluate(() => document.getElementById('nav-0').setAttribute('href', '#montreal-unlisted'))
+    await page.locator('#nav-0').click()
+    check('Unlisted section fragments are not intercepted', await page.evaluate(before => __sectionCalls.length === before, beforeCanceledSection))
+    const sectionStatic = []
+    for (const target of ['canvas', 'export']) {
+        await page.evaluate(target => { __target = target; __static = target === 'export'; renderSections() }, target)
+        const before = await page.evaluate(() => ({ n: __sectionCalls.length, callers: __navTapCalls }))
+        await page.locator('#nav-1').click()
+        const after = await page.evaluate(() => ({ n: __sectionCalls.length, callers: __navTapCalls }))
+        sectionStatic.push({ target, before, after })
+        check('Section ' + target + ' preserves caller input and does not navigate', after.n === before.n && after.callers === before.callers + 1)
+    }
+    check('Section helpers preserve genuine native anchor refs', await page.evaluate(() => Object.values(__navRefs).every(n => n instanceof HTMLAnchorElement)))
+    const sectionNavigation = { calls: await page.evaluate(() => __sectionCalls), static: sectionStatic, scope: 'Real native-like tap and keyboard target arrivals with original hrefs, scoped to the owned study shell. Actual Framer routing remains a separate check.' }
+    await page.evaluate(() => ReactDOM.flushSync(() => __sectionRoot.unmount()))
+    check('Section word wrappers release all measurement listeners', await page.evaluate(() => __listeners.size === 0))
     check('No actual browser errors', errors.length === 0)
-    const result = { passed: true, sourceSHA256: hash(source), testSHA256: hash(fs.readFileSync(import.meta.filename)), fontFixture: { package: '@fontsource-variable/space-grotesk@5.3.0', path: fontFile, sha256: hash(font), range: [300, 700], note: 'Open-licensed fixture proves actual variable glyph rendering; requested source400–900 CSS axis values are checked separately from fixture font range.' }, checks, changedChannels, baseline, entered, midpoint, leave: [leaveStart, leaveMiddle, leaveEnd], updatedTransition, reduced, frozen, cleanup, nativeAdapter, errors, scope: 'Actual React18/Chromium pointer, font pixels, cached bounds, native transition/ref/event preservation, reduced/static targets and cleanup. Actual commercial font assignment and Framer persistence remain separate.' }
+    const result = { passed: true, sourceSHA256: hash(source), testSHA256: hash(fs.readFileSync(import.meta.filename)), fontFixture: { package: '@fontsource-variable/space-grotesk@5.3.0', path: fontFile, sha256: hash(font), range: [300, 700], note: 'Open-licensed fixture proves actual variable glyph rendering; requested source400–900 CSS axis values are checked separately from fixture font range.' }, checks, changedChannels, baseline, entered, midpoint, leave: [leaveStart, leaveMiddle,leaveEnd], updatedTransition, reduced, frozen, cleanup, nativeAdapter, sectionNavigation, errors, scope: 'Actual React18/Chromium pointer, font pixels, cached bounds, native transition/ref/event preservation, owned source-section navigation, reduced/static targets and cleanup. Actual commercial font assignment and Framer persistence remain separate.' }
     fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(result, null, 2) + '\n')
     console.log(JSON.stringify({ passed: true, checks: checks.length, changedChannels, evidence: output, sourceSHA256: result.sourceSHA256 }, null, 2))
 } catch (error) {

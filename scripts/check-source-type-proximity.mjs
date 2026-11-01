@@ -13,7 +13,9 @@ const checks = [], check = (name, fn) => { fn(); checks.push(name) }
 const reactStub = `
 export interface CSSProperties {transition?:string;transitionProperty?:string;transitionDuration?:string;transitionTimingFunction?:string;transitionDelay?:string;fontVariationSettings?:string}
 export type MouseEventHandler<T> = (event:MouseEvent<T>)=>void;
-export interface MouseEvent<T>{clientX:number;clientY:number;defaultPrevented:boolean;currentTarget:T}
+export interface MouseEvent<T>{clientX:number;clientY:number;defaultPrevented:boolean;currentTarget:T;button:number;metaKey:boolean;ctrlKey:boolean;shiftKey:boolean;altKey:boolean;preventDefault():void}
+export interface KeyboardEvent<T>{currentTarget:T;key:string;defaultPrevented:boolean;metaKey:boolean;ctrlKey:boolean;shiftKey:boolean;altKey:boolean;preventDefault():void}
+export type KeyboardEventHandler<T> = (event:KeyboardEvent<T>)=>void;
 export interface PointerEvent<T> extends MouseEvent<T>{pointerId:number}
 export type PointerEventHandler<T> = (event:PointerEvent<T>)=>void;
 export type ComponentType<P> = (props:P)=>unknown;
@@ -65,9 +67,12 @@ check('Actual React18 server rendering is window-free and frozen', () => {
     assert.match(html,/data-source-type-weight="400"/);assert.match(html,/--source-type-weight:400/);assert.match(html,/opacity 2s linear/);assert.match(html,/native caller/)
 })
 check('Self-contained public overrides allocate no renderer/font/network resources', () => {
-    assert.doesNotMatch(source,/\bfetch\(|XMLHttpRequest|querySelector|getElementById|new Image|createElement\(["']canvas|\.getContext\(|@ts-ignore|\bas any\b/)
+    assert.doesNotMatch(source,/\bfetch\(|XMLHttpRequest|new Image|createElement\(["']canvas|\.getContext\(|@ts-ignore|\bas any\b/)
+    assert.doesNotMatch(source.replace(functionText('sectionLink'), ''), /querySelector|getElementById/)
+    assert.match(functionText('sectionLink'), /node\.closest\('\[data-framer-name="HERO-008 \/ native interactive shell"\]'\)/)
+    assert.match(functionText('sectionLink'), /shell\?\.querySelector/)
     assert.match(source,/CSS\.registerProperty/);assert.match(source,/measureLetters\(\)/)
-    assert.deepEqual(Array.from(source.matchAll(/export function (\w+)/g),m=>m[1]),['withSourceTypeWord','withSourceTypeLetter'])
+    assert.deepEqual(Array.from(source.matchAll(/export function (\w+)/g),m=>m[1]),['withSourceTypeWord','withSourceTypeLetter','withSourceTypeSectionWord','withSourceTypeSectionLink'])
 })
 check('Compiled JS and declaration fit the Framer file limit', () => {
     const js=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022,jsx:ts.JsxEmit.React}}).outputText
