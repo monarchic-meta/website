@@ -7,10 +7,10 @@ The [homepage brief](../../homepage-creative-brief.md) governs identity, restrai
 claims, gradual depth and ordinary scrolling after the opening.
 
 All nine Desktop and Phone native compositions have been reviewed locally with
-actual code-generated artwork. That review uses fallback font metrics and does
-not establish a Framer save, working Framer animation or final typography. Final
-placement, source hashes and actual verification belong to the separate manifest
-and handoff for this round.
+actual code-generated artwork. That local review uses fallback font metrics;
+actual Framer verification is separate. The [handoff](handoff.md) links the four
+Design boards and responsive Preview pages. The [manifest](manifest.json) binds
+their placement identities, exact source, recipes and verification evidence.
 
 | ID / recipe | Family / live mode | Whole-opening idea |
 | --- | --- | --- |

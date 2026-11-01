@@ -39,6 +39,32 @@ counterparts, including both native and live Origin studies. The handoffs
 distinguish local code validation from actual Framer placement, reload and
 Preview evidence.
 
+## Original hero component
+
+[OriginalHeroStudy.tsx](OriginalHeroStudy.tsx) supplies nine independently
+composed Canvas 2D modes for the [original hero round](../original-heroes/handoff.md).
+Information fields, geometric identity and editorial research montage are
+explored separately before three combinations. Primary copy, links and layout
+remain native editable layers. The existing Monarchic mark used in two modes
+retains its pinned provenance; the mark itself is not newly authored.
+
+The component exposes composition, motion, structure, artwork size, tonal pitch,
+pointer and palette controls. Its automatic palette follows the selected mode;
+the saved compositions use explicit custom palettes. Change the native stage
+fill along with the artwork background to retain the seamless field. Canvas
+motion starts off, Preview starts animated, and exports/thumbnails remain
+frozen. The shared coordinator governs resolution, caching and live admission.
+
+```sh
+nix develop --command pnpm run check:original-hero-study
+nix develop --command pnpm run check:original-hero-integration
+nix develop --command pnpm run check:original-hero-browser
+nix build .#checks.x86_64-linux.original-heroes --no-link -L
+```
+
+Local renderer/resource checks and actual Framer saved-state, typography and
+interaction checks are separate evidence in the handoff.
+
 ## Hero recreation component
 
 Choose `typeface` for HERO-001's wrapped surface writing or `cantor` for
