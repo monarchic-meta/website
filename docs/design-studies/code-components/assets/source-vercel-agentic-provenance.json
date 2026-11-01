@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-009",
+  "classification": "Source inspiration / credited current-original recreation",
+  "creator": "Vercel",
+  "sourceURL": "https://vercel.com/",
+  "historicalStudy": {
+    "file": "SourceVercelLightStudy.tsx",
+    "sha256": "567ff00135a888e0eca786d4fa8f024619774d22e26e4ab11c54f0d322fe657a",
+    "page": "XXmRThpe5",
+    "preserved": true
+  },
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceVercelAgenticStudy.tsx",
+    "bytes": 60461,
+    "sha256": "c8df6a04070e1ab610b3dcb6717fefa372d75688eda254e1d67ef467c2c30800"
+  },
+  "inspectionDate": "2026-11-01",
+  "observations": [
+    "Current light Agentic Infrastructure hero replaces the old selected-dark revision.",
+    "Triangle click armsRGB. Real pointer sweep paints a broad colored field; second click returns to monochrome.",
+    "Desktop narrative expands on hover; Phone automatically cycles three phrases around3s and has Menu/Escape.",
+    "Hero hands off to currentAgentStack/customer material around900px."
+  ],
+  "implementation": {
+    "renderer": "Independent WebGL1 signed-triangle, soft mono shadows and fitted pastel color field. No original website JavaScript reused.",
+    "native": "Editable native headline/navigation/CTAs/narrative/customer marks/handoff, with10 public native overrides.",
+    "geometry": "Desktop1080×720 field with192×166 triangle; Phone390×400 field with170×146 triangle. Controls use logical CSS dimensions; raster uses transformed bounds andDPR.",
+    "budgets": "Existing ownedv2 resolver/coordinator/hook byte-exact. Two contexts includinginitialization,1Canvas/2Preview live,12fps/1MP opt-inCanvas and serial2MP stills.",
+    "cache": "Separate current-source module/controlsSymbol; private revision in content key and keyed surface remount.",
+    "motion": "Canvas motionoff bydefault; static export frozen; reduced/offscreen clocks stop. Paused pointer cannotpaint. Phonecycle shares paused state."
+  },
+  "localValidation": {
+    "result": {
+      "path": "/tmp/monarchic-vercel-agentic/result.json",
+      "bytes": 191779,
+      "sha256": "14a8e82824c78751c20d5f30ed242cd4203323605567a053eeede4d6ff8a4795"
+    },
+    "checks": 29,
+    "mixedPixelPlacements": 120,
+    "scope": "Local actualReact18/Chromium current-original recreation, native HOCs,120 realWebGL mixed placements, source geometry and interactions; no actualFramer Preview/editor reload",
+    "lockedNix": {
+      "store": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1",
+      "result": {
+        "path": "/nix/store/4m3l9vd5jmwhl361qzfb6qbnvnj566af-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
+        "bytes": 191774,
+        "sha256": "ec2b07b244c79b097181cb127ee04d1b15d33188a7c71329df4e67ac5c0882ad"
+      },
+      "checks": 29,
+      "mixedPixelPlacements": 120,
+      "fontEnvironment": "DejaVu and Liberation from locked Nix fontconfig; source licensedGeist is not asserted as this local fixture face.",
+      "peakContexts": 1
+    }
+  },
+  "evidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/behavior.json",
+      "bytes": 2135472,
+      "sha256": "3f7804fbf941d3a058dd6521da1be75bc4153f7962fcee7806bddf4fb46de560"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/responsive-followup.json",
+      "bytes": 157203,
+      "sha256": "d81757534bd13271db123410edd5b1e92e5df8d83f7f297d90090b4a56915bd7"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/triangle-hit-followup.json",
+      "bytes": 9193,
+      "sha256": "9c2302b6715f2485f2918360b3147140901e3e0be90be36f56fb213193ff5a65"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/root-computed/facts-complete.json",
+      "bytes": 468754,
+      "sha256": "4e303ba53a9b95c7e885c347bd323d77be31b4fc22eba08be40622322bcffaa5"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/palette-comparison.json",
+      "bytes": 740,
+      "sha256": "2640d44177a03556f5cc25afa0a06b18e067abb5fe0013feeaa68f6133a9947b"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/native-recipe-current.json",
+      "bytes": 8324,
+      "sha256": "033d30385b0f56345ffa6ac6a7ae5a4904ddff59c63a5e89fd2417463be3a24c"
+    }
+  ],
+  "limits": [
+    "Worker numerical shader and exact fluid response were not recovered. Gaussian palette/8s brush history/180ms narrative details are independent fits.",
+    "Intermediate responsive layouts, native support prose and unavailable licensed fonts are explicit adaptations. Desktop/Phone source measurements remain distinct from resized-worker buffers.",
+    "This source/test change has no actual Framer Preview/editor-reload evidence."
+  ],
+  "framer": {
+    "sourceInstalled": false,
+    "nativeInstalled": false,
+    "actualPreviewVerified": false,
+    "actualEditorReloadVerified": false
+  }
+}
