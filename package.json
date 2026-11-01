@@ -58,6 +58,7 @@
     "check:original-hero-browser": "node scripts/check-original-hero-browser.mjs",
     "check:source-hero-page-study": "node scripts/check-source-hero-page-study.mjs",
     "check:source-hero-page-browser": "node scripts/check-source-hero-page-browser.mjs",
+    "check:type-face-sequence": "node scripts/check-type-face-sequence.mjs",
     "check:original-hero-round-two-study": "node scripts/check-original-hero-round-two-study.mjs",
     "check:original-hero-round-two-browser": "node scripts/check-original-hero-round-two-browser.mjs",
     "check:original-hero-round-two-integration": "node scripts/check-original-hero-round-two-integration.mjs",

@@ -135,6 +135,14 @@
             pnpm run check:original-hero-integration
             pnpm run check:original-hero-browser
           '';
+          type-face-sequence = (mkWebsiteCheck "type-face-sequence" ''
+            export MONARCHIC_TYPE_FACE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:type-face-sequence
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
