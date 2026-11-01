@@ -746,15 +746,17 @@
   ],
   "refinedSourceFlow": {
     "component": "SourceFormatDetails.tsx",
-    "sourceSHA256": "c8118585d79a90237812c14e3196b63e42f383bbefd34a979c4457e30768a4a3",
-    "publicOverrides": 89,
+    "sourceSHA256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+    "publicOverrides": 123,
     "recipeSHA256": "42ae40bc95040f9da31c74014ae223e652ed8336de23fdf2216475f77ee81255",
     "retainedNativeParts": 271,
     "addedNativeParts": 310,
     "totalNativeParts": 581,
     "documentAt1280x720": 13474.102,
     "scope": "Source-derived ordinary document layout separates the early Usage card, later photo deck and fan; retains the complete sequence through the footer. First-card footer remains visible during the first handoff. Genuine source logo polygons, source photos and native type controls preserve editable parts.",
-    "validation": "6 focused checks and48actualReact/Chromium checks passed in the lockedNix environment; same-width corresponding source screenshots reviewed. Actual Framer application/reload and sourceFont binding are separate required gates."
+    "validation": "6 focused checks and48actualReact/Chromium checks passed in the lockedNix environment; same-width corresponding source screenshots reviewed. Actual Framer application/reload and sourceFont binding are separate required gates.",
+    "initialSourceSHA256": "c8118585d79a90237812c14e3196b63e42f383bbefd34a979c4457e30768a4a3",
+    "initialPublicOverrides": 89
   },
   "closingFieldSourceTrace": {
     "sourceEvidence": "Retained primary HTML, source stylesheet and public implementation inspected; distinct from the earlier screenshot-only causal limits.",
@@ -787,7 +789,7 @@
       "noAutoSpawn": true
     },
     "scrollbar": "Live recheck recorded1280px window and1265px document client width with a visible scrollbar. Keep the source scrollbar and distinguish its client-centered field from window-based scale units.",
-    "implementation": "Required follow-on work; the current saved recreation still lacks automatic poster carry and separate pointer chips. Source inspection and a native pool plan do not establish implementation or Preview.",
+    "implementation": "The123-override source is saved, with the retained Slot01 under a new authored-hidden ordinary pose Frame, plus one prompt wrapper. Actual Slot01 source art, multiple template/geometry changes, falling motion, Daughter transparency, same-poster carry/reverse, responsive current-host movement and Canvas hiding are verified at the recorded earlier source revisions. The final poster-decoration cleanup is saved and locally tested, but its actual Framer retest remains pending; the additional29 slots are still held.",
     "fieldMeasured": {
       "windowWidth": 1280,
       "clientWidth": 1265,
@@ -802,5 +804,63 @@
       "sha256": "e73676d90b6bc43a25e8489a788535bb9167ea052d5632a31830bac977bf0539",
       "scope": "Read-only public DOM/CSS plus actual browser scrolling/click; no private physics state was inspected or source JavaScript executed."
     }
+  },
+  "savedClosingVerification": {
+    "status": "FIRST_RETAINED_SLOT_ACTUAL_MOTION_PASS_FINAL_DECORATION_RETEST_AND_POOL_PENDING",
+    "pageID": "nKpA0uJHr",
+    "sourceBatch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/three-source-and-H8-navigation-window-270-271/three-behavior-source-update-270-output.json",
+      "bytes": 477772,
+      "sha256": "55a1295a126cee9c08ce76300185bf213949dbef4f8bd9e4a28c282bfd8ccfe5"
+    },
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "bytes": 96336,
+      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f"
+    },
+    "retainedSlotIDs": {
+      "desktop": "wLNg24MqB",
+      "compact": "XEEAnleDnwLNg24MqB",
+      "phone": "jXxkHA4mHwLNg24MqB"
+    },
+    "poseID": "IfE8LkUSg",
+    "promptWrapperID": "w3AF9AcGe",
+    "initialActual": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-first-slot-actual-progress.json",
+      "bytes": 288724,
+      "sha256": "6d6d0a75ac045dd69bab983a8f15c1763190b7c312658d40586c3a866d4c437a"
+    },
+    "responsiveCorrectionActual": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-responsive-fix-actual-progress.json",
+      "bytes": 194530,
+      "sha256": "62b1755adbadf0612b38fbc7a3524c504a937f2e6b5d6d5e84e345cca2dac504"
+    },
+    "canvas": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-slot01-actual-canvas-hidden-proof.json",
+      "bytes": 1231,
+      "sha256": "9aa5487d1949724cf2e13cd428e7d6e12916cd855bafb0cd20ec6f52508b52d5"
+    },
+    "localResponsiveCorrection": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/receipt.json",
+      "bytes": 7121,
+      "sha256": "249d85f0817d2fe2e40cda6665db7517e2561ad0419fa2ec61f5888de569aa4a"
+    },
+    "localDecorationCorrection": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/receipt.json",
+      "bytes": 5385,
+      "sha256": "843d49d87be75d974072d69f3e2c5391a88f383954461f85d9e442d67b51b44f"
+    },
+    "verified": [
+      "Real field input reuses the same editable instance with actual source templates0,10,7 and19, changed art/geometry and later moving poses.",
+      "Native Daughter mode hides the plain image under the genuine transparent alternate and reverses.",
+      "The same16-child native poster carries, falls and returns; no screenshot copy or reparenting substitutes for it.",
+      "After the618a correction, actual Phone retains390×1090 poster geometry and one CSS rotation; fresh Desktop/Phone/Desktop source graphics move on the connected pose Frame.",
+      "All three actual Canvas pose wrappers have authored opacity0 without running Preview overrides, hiding their mounted source artwork."
+    ],
+    "openGates": [
+      "The618a actual run exposed retained background/outline/z-index on the original Phone poster. The narrow9661 current-caller decoration fix passes locked Nix5 strict/62 browser checks and is saved, but actual Framer verification is pending.",
+      "Only retained Slot01 is installed. The source21-template/30-slot capacity is not yet a verified actual pool;29 additional slots remain held.",
+      "Matter collision trajectories, Phone flow and some source motion are independently fitted; omitted parallax, preloader and complete alternate journeys remain explicit."
+    ]
   }
 }

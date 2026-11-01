@@ -79,5 +79,21 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/project-trail-inspection-only.js",
       "sha256": "6ce409a18ceb52ebec572cf386c146d7c5b4034b8db526f3cadb5a3e7a2c0ba5"
     }
-  ]
+  ],
+  "nativePointerVerification": {
+    "status": "BOUNDED_ACTUAL_NATIVE_POINTER_PASS",
+    "evidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO018-actual-native-pointer-proof.json",
+      "bytes": 2074,
+      "sha256": "9cc5e915c2acfc46d4bf9c30ae4bf558274e13637de2bde9cfb1f1321a28bfcd"
+    },
+    "verified": [
+      "Actual native project Frames forward pointer input, change their hovered info states and render the appended blue16px SVG head.",
+      "Moving the real pointer from the tile center to the visible title changes the source-local head from150,150 to150,40.07; leaving the tile clears it and reveals the next tile’s info."
+    ],
+    "limits": [
+      "Settled samples did not capture the continuous26-point polyline, so full tail/easing parity is unverified.",
+      "The actual native child-forwarding result is specific to this saved HOC; Ajedrez’s new aperture still needs its own actual paint gate."
+    ]
+  }
 }

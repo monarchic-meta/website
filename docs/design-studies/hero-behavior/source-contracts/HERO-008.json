@@ -119,7 +119,7 @@
       "style": "italic",
       "actualFramerWorkspaceFamily": "PP Neue Montreal",
       "actualWorkspaceStyles": 1,
-      "status": "Uploaded through the native workspace file chooser and verified after a workspace reload. Exact editor font selector/binding is a separate gate; font bytes remain outside Git."
+      "status": "All23 Desktop nonspace wave letters were assigned the genuine uploaded PP Neue Montreal / Extrabold Italic face with the native picker. Actual full saved-model read verifies46 Desktop/Phone copies and138 outer/block/run bindings. Actual Preview paragraph styles confirm800 italic at218px Desktop and54px Phone, without obsolete variable axes. Font bytes remain outside Git."
     }
   },
   "remaining": [
@@ -147,7 +147,7 @@
   ],
   "completeNativePacket": {
     "scenes": 18,
-    "editableParts": 437,
+    "editableParts": 476,
     "individualImageOrSVGAssets": 30,
     "sourceFonts": [
       "PP Neue Montreal Variable",
@@ -155,7 +155,8 @@
     ],
     "fontHandling": "The actual two source variable fonts are uploaded to the Framer workspace and verified after reload. Display supports weight100–900/italic0–1; Text supports weight200–700/italic0–1. Proprietary font bytes remain outside Git.",
     "attractions": "Current code supports eleven panels, open4.8fr/closed1fr, 0.75s transition and 100px label column. Desktop ≥1024 uses hover/reset-first; Phone uses tap and initially closed panels.",
-    "proximity": "28 native word instances with independent letter weight, source weight400→900 over 20px Euclidean proximity; useful defaults and current public-code facts, not a verified historical pointer trajectory."
+    "proximity": "Seven native navigation word Frames contain51 independently weighted Text letters. Native hover/pointer adapters preserve400–900 over20 CSS pixels; the source-style effect and scoped seven-section activation have separate actual Framer input gates.",
+    "initialRecipeEditableParts": 437
   },
   "wideFilms": [
     {
@@ -172,5 +173,60 @@
     "location": "Current source footer: Site by, followed by the Demande Spéciale link.",
     "studio": "https://demandespeciale.ca/",
     "scope": "Current public footer attribution; distinct from archival interaction verification."
+  },
+  "savedBehaviorVerification": {
+    "status": "SEVEN_GROUPS_ACTUAL_PASS_NATIVE_NAVIGATION_CORRECTION_SAVED_RETEST_PENDING",
+    "pageID": "P5fp5dz6E",
+    "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P5fp5dz6E",
+    "sourceBatch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/three-source-and-H8-navigation-window-270-271/three-behavior-source-update-270-output.json",
+      "bytes": 477772,
+      "sha256": "55a1295a126cee9c08ce76300185bf213949dbef4f8bd9e4a28c282bfd8ccfe5"
+    },
+    "nativeFontReadback": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-008-genuine-native-font13-all46-read266/HERO-008-all23-native-font13-readonly-266-output.json",
+      "bytes": 949326,
+      "sha256": "0f61f4e2de37a1bce1a39a93aef172918554eace83e35c8e2f60f26f113686c4"
+    },
+    "nativeFontUI": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO008-native-font13-all23-desktop-ui-proof.json",
+      "bytes": 4355,
+      "sha256": "b825ab5168a716a52d505402f1c8b753f8a94755fd085ba3515c57cc9ebadaab"
+    },
+    "sixSVGPhoneDialog": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO008-phone-display8-fit-proof.json",
+      "bytes": 157,
+      "sha256": "58fa7e1cb4688fd043d2290973e6b5e4a2e3294479307766c71519a4375a1f9d"
+    },
+    "actualBehavior": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO008-live-behavior-progress.json",
+      "bytes": 5388334,
+      "sha256": "151e5d0b56a661151c148ac1ea5c51dc06ea50fc782a7651e046f92aa2034a04"
+    },
+    "navigationSavedModel": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/three-source-and-H8-navigation-window-270-271/HERO-008-section-bridge-native-271-output.json",
+      "bytes": 1358614,
+      "sha256": "9dd7b1e30f040ac58ded882561af4a8bb8f6a07cd6a86b8ea781a1af9eeacd3a"
+    },
+    "navigationLocalValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/validation/owned-section-navigation/receipt.json",
+      "bytes": 2005,
+      "sha256": "9df451b6a53b01c7695333ba010164de7528f1b8aa175a053aa130f1f9fc81ce"
+    },
+    "verified": [
+      "All18 sections exist on one standalone source-experience page, with a real extended ordinary/sticky document sequence.",
+      "Actual Desktop postcards change front/back; pointer entry tilts their printed artwork. Eight printed specimens rotate around the Universal Font title.",
+      "Forward/reverse document scrolling changes actual Display/Text glyph weights;11 attraction panels expand, and Phone activation opens334px panes then collapses.",
+      "The sticky glyph sequence advances and reverses. All six genuine SVG images render with contain-fit; Phone admitsS while Desktop hides it.",
+      "Actual Text/Display chart selection changes native paragraph axes; seven Text and11 Display choices remain separate.",
+      "Genuine-font wave letters and punctuation path morphs visibly change on Desktop and Phone. Pause holds identical visible path poses, and Desktop→Phone→Desktop wave motion resumes on the current host.",
+      "The opening native video loads at readyState4 with muted looping playback. City and punctuation are distinct Vimeo works, each inspected at1280×720 readyState4 with paused=false."
+    ],
+    "openGates": [
+      "The original native section links did not arrive at their targets; a literal-hash UI trial also failed and was restored byte-exact. New scoped tap/click/key bindings and the native proximity-event correction are saved; actual target arrival/hover retesting awaits reliable browser routing.",
+      "Reintroduction and the language support panel still differ materially from the selected archive. A bounded native composition proposal is prepared; this record does not claim it is installed.",
+      "Source Phone composition and selected-revision interaction parity remain adaptations or unknowns. Native Video/Vimeo offscreen pausing is not covered by the custom decoder gate."
+    ],
+    "browserBoundary": "Browser automation was stopped after the owner observed its tabs appearing in another focused desktop chat, despite matching session metadata. MCP saved-model checks do not substitute for reload or live Preview checks."
   }
 }
