@@ -27,11 +27,11 @@ No automatic synchronization with the production Astro/Svelte site is introduced
 | --- | --- | --- |
 | HERO-001 / Type Face | [TypeFaceSequence](../code-components/TypeFaceSequence.tsx) | Complete 9.6-second assembly, turn and dispersal; credited substitute head, writing and font; fitted timing |
 | HERO-002 / Ajedrez | [SourceAjedrezSequence](../code-components/SourceAjedrezSequence.tsx) | All 37 native scene groups across the 52.314558-second film; photographic motion and audio remain distinct gaps |
-| HERO-004 / Artemii Lebedev | [SourcePortfolioFilmStudy](../code-components/SourcePortfolioFilmStudy.tsx) | Genuine project films, source-supported selection/transition timing and native utility interface; immersive layout and later effects are fitted |
+| HERO-004 / Artemii Lebedev | [SourcePortfolioFilmStudy](../code-components/SourcePortfolioFilmStudy.tsx), [UtilityInk](../code-components/SourcePortfolioUtilityInk.tsx) | Genuine project films, source-supported selection/transition timing, transparent native progress rows and clipped duplicate ink; native case links preserve browser keyboard behavior; immersive layout and later effects are fitted |
 | HERO-005 / Maximilian Kaspar | [SourceKasparASCIIStudy](../code-components/SourceKasparASCIIStudy.tsx) | Actual botanical mesh, pale ASCII reveal and rotation; one selected mesh and an independently adapted Phone layout |
 | HERO-006 / Mac Moss | [SourceMacMossPortfolio](../code-components/SourceMacMossPortfolio.tsx) | Four-photo manual sequence and clock beside the retained 20-cell atlas; source timezone unresolved |
 | HERO-007 / Cantor8 | [SourceCantorInstrument](../code-components/SourceCantorInstrument.tsx) | Source-informed Canvas2D filaments, local spring response and timed labels; independent seeds/integration and Phone adaptation |
-| HERO-008 / PP Neue Montreal | [SourceTypeProximity](../code-components/SourceTypeProximity.tsx), [native section behaviors](../code-components/SourceMontrealBehaviors.tsx), [split glyph flow](../code-components/SourceMontrealGlyphFlow.tsx) | Actual variable fonts, editable proximity letters, postcard flips, attraction panels, eighteen weight states and source-derived pinned glyph geometry; source films remain separate apertures |
+| HERO-008 / PP Neue Montreal | [Proximity](../code-components/SourceTypeProximity.tsx), [section behaviors](../code-components/SourceMontrealBehaviors.tsx), [glyph flow](../code-components/SourceMontrealGlyphFlow.tsx), [motion](../code-components/SourceMontrealMotion.tsx), [accents](../code-components/SourceMontrealAccents.tsx) | Actual source fonts, editable proximity letters, postcard flips/tilt, attraction panels, eighteen weight states, orbiting printed posters, scroll-driven axes, pinned glyphs, character wave and cubic punctuation morph; source films remain separate apertures |
 | HERO-009 / Vercel | [SourceVercelLightStudy](../code-components/SourceVercelLightStudy.tsx) | Upright triangle, spill, grain and native capability states; independent material fit and unknown capability-to-light mapping |
 | HERO-013 / FORMAT | [SourceHeroNativeBehaviors](../code-components/SourceHeroNativeBehaviors.tsx), [SourceFormatDetails](../code-components/SourceFormatDetails.tsx) | Source-derived document geometry, separate early and late cards, native fan, clocks, word reel, windows, gauge and poster sequence; exact source logo geometry and individual source photographs; interpolation and Phone remain fitted |
 | HERO-014 / Unbelievably Crap | [SourceHeroJourneyStudy](../code-components/SourceHeroJourneyStudy.tsx) | Actual figure and head through reversible virtual scenes; fitted camera/input curve and substitute biography |
@@ -61,9 +61,11 @@ layers must not intercept those controls.
 
 Keep native scene groups mounted at opacity zero when an override reveals them.
 Check the actual authored Phone positions and visibility: inherited absolute
-coordinates do not become ordinary flow automatically. The FORMAT Desktop
-[recipe](native/HERO-013.json) and [Phone adaptation](native/HERO-013-phone.json)
-are separate; Desktop actor tracks apply only at widths of at least 1280px.
+coordinates do not become ordinary flow automatically. The earlier FORMAT
+[Desktop recipe](native/HERO-013.json) and [Phone adaptation](native/HERO-013-phone.json)
+remain as lineage. The [refined source-flow contract](source-contracts/HERO-013.json)
+records the source-derived sequence and its current code/recipe pins. Desktop
+actor tracks apply only at widths of at least 1280px.
 
 Exports, thumbnails and the default editor canvas remain static. Canvas motion is
 an explicit opt-in at 12fps and 1MP. Preview animation, native navigation and
