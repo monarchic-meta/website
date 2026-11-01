@@ -21,26 +21,40 @@ the selected gallery revision distinct from its current destination: several
 live sites have changed, and the first two references are recorded motion works
 rather than independent websites.
 
-| ID | Selected reference | Primary destination or source work |
-| --- | --- | --- |
-| HERO-001 | [Type Face — Recent Design](https://recent.design/i/vmmug5r-type-face) | [Stephen Kelman's source post](https://x.com/stephenkelman/status/2093335231604367454) |
-| HERO-002 | [Ajedrez Film Poem — Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem) | [Julián Leiss's source post](https://x.com/julianleiss/status/2110868325052149925) |
-| HERO-003 | [Agent-first Billing — Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page) | [Polar field guide](https://polar.sh/field-guide), [Credits chapter](https://polar.sh/field-guide?page=m-credits) |
-| HERO-004 | [Artemii Lebedev — Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev) | [Artemii Lebedev](https://artemiilebedev.com/) |
-| HERO-005 | [Maximilian Kaspar — Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar) | [Maximilian Kaspar](https://www.maximiliankaspar.com/) |
-| HERO-006 | [Mac Moss Studio — Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio) | [Mac Moss Studio](https://macmoss.studio/) |
-| HERO-007 | [Cantor8 — Lapa Ninja](https://www.lapa.ninja/post/cantor8/) | [Cantor8](https://www.cantor8.io/) |
-| HERO-008 | [PP Neue Montreal — Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/) | [Neue Montreal](https://neuemontreal.com/) |
-| HERO-009 | [Vercel — Lapa Ninja](https://www.lapa.ninja/post/vercel-3/) | [Vercel](https://vercel.com/) |
-| HERO-010 | [G!theimagineers — Httpster](https://httpster.net/website/gtheimagineers/) | [G!theimagineers, English](https://www.gtheimagineers.com/en.html) |
-| HERO-011 | [Jon Way Studio — Httpster](https://httpster.net/website/jon-way-studio/) | [Jon Way](https://www.jonway.studio/) |
-| HERO-012 | [Mezmo — Httpster](https://httpster.net/website/mezmo/) | [Mezmo](https://www.mezmo.com/) |
-| HERO-013 | [FORMAT — Awwwards](https://www.awwwards.com/sites/format) | [FORMAT](https://format.obys.agency/) |
-| HERO-014 | [Unbelievably Crap — Awwwards](https://www.awwwards.com/sites/unbelievably-crap) | [Unbelievably Crap](https://www.unbelievablycrap.com/) |
-| HERO-015 | [MECHA — Awwwards](https://www.awwwards.com/sites/mecha) | [MECHA](https://mecha-xyz.webflow.io/) |
-| HERO-016 | [Origin — Minimal Gallery](https://minimal.gallery/origin/) | [Origin Studio](https://www.originbrand.io/) |
-| HERO-017 | [Bleibtgleich 2026 — Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/) | [Maksym Bleibtgleich](https://bleibtgleich.dev/) |
-| HERO-018 | [pu—ente — Minimal Gallery](https://minimal.gallery/pu-ente/) | [pu—ente](https://www.pu-ente.com/), [graphic-design branch](https://www.pu-ente.com/z/) |
+The **gallery / award listing** records where the reference was discovered;
+the **original website / source post** identifies the work itself. Use the
+original website to inspect live scroll, hover and pointer behavior, while
+retaining the selected gallery capture when the current site is a different
+revision. Entry pages and chapter/branch deep links are labeled separately.
+For HERO-001 and HERO-002, inspect the recorded source work rather than assuming
+there is a separate interactive website.
+Their direct media links are **Recent Design CDN copies**, with the original X
+posts retained for attribution. The higher-resolution MP4s, smaller previously
+reviewed copies and still posters are labeled separately below. All six media
+URLs returned HTTP 200 with the expected video/image content type on
+**2026-11-01**; checking these links does not establish a new visual audit of the
+higher-resolution copies.
+
+| ID | Gallery / award listing (selected reference) | Original website / source post | Destination kind |
+| --- | --- | --- | --- |
+| HERO-001 | [Type Face — Recent Design](https://recent.design/i/vmmug5r-type-face) | [Stephen Kelman's original post](https://x.com/stephenkelman/status/2093335231604367454); [direct MP4 — 2160×2160](https://cdn.recent.design/items/vmmug5r/0/2160x2160.mp4) | Recorded work / X post |
+| HERO-002 | [Ajedrez Film Poem — Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem) | [Julián Leiss's original post](https://x.com/julianleiss/status/2110868325052149925); [direct MP4 — 1080×1920](https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4) | Recorded work / X post |
+| HERO-003 | [Agent-first Billing — Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page) | [Polar field guide — entry](https://polar.sh/field-guide), [Credits chapter — deep link](https://polar.sh/field-guide?page=m-credits) | Original website |
+| HERO-004 | [Artemii Lebedev — Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev) | [Artemii Lebedev](https://artemiilebedev.com/) | Original website |
+| HERO-005 | [Maximilian Kaspar — Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar) | [Maximilian Kaspar](https://www.maximiliankaspar.com/) | Original website |
+| HERO-006 | [Mac Moss Studio — Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio) | [Mac Moss Studio](https://macmoss.studio/) | Original website |
+| HERO-007 | [Cantor8 — Lapa Ninja](https://www.lapa.ninja/post/cantor8/) | [Cantor8](https://www.cantor8.io/) | Original website |
+| HERO-008 | [PP Neue Montreal — Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/) | [Neue Montreal](https://neuemontreal.com/) | Original website |
+| HERO-009 | [Vercel — Lapa Ninja](https://www.lapa.ninja/post/vercel-3/) | [Vercel](https://vercel.com/) | Original website |
+| HERO-010 | [G!theimagineers — Httpster](https://httpster.net/website/gtheimagineers/) | [G!theimagineers — English entry](https://www.gtheimagineers.com/en.html) | Original website |
+| HERO-011 | [Jon Way Studio — Httpster](https://httpster.net/website/jon-way-studio/) | [Jon Way](https://www.jonway.studio/) | Original website |
+| HERO-012 | [Mezmo — Httpster](https://httpster.net/website/mezmo/) | [Mezmo](https://www.mezmo.com/) | Original website |
+| HERO-013 | [FORMAT — Awwwards](https://www.awwwards.com/sites/format) | [FORMAT](https://format.obys.agency/) | Original website |
+| HERO-014 | [Unbelievably Crap — Awwwards](https://www.awwwards.com/sites/unbelievably-crap) | [Unbelievably Crap](https://www.unbelievablycrap.com/) | Original website |
+| HERO-015 | [MECHA — Awwwards](https://www.awwwards.com/sites/mecha) | [MECHA — listed deployment](https://mecha-xyz.webflow.io/) | Original website |
+| HERO-016 | [Origin — Minimal Gallery](https://minimal.gallery/origin/) | [Origin Studio](https://www.originbrand.io/) | Original website |
+| HERO-017 | [Bleibtgleich 2026 — Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/) | [Maksym Bleibtgleich](https://bleibtgleich.dev/) | Original website |
+| HERO-018 | [pu—ente — Minimal Gallery](https://minimal.gallery/pu-ente/) | [pu—ente — entry](https://www.pu-ente.com/), [graphic-design branch — deep link](https://www.pu-ente.com/z/) | Original website |
 
 ### Full hero behavior
 
@@ -83,8 +97,10 @@ were copied into the repository.
 
 ### HERO-001 — Type Face
 
-- Source: [Recent Design](https://recent.design/i/vmmug5r-type-face).
-- Creator/source post: Stephen Kelman / [@stephenkelman](https://x.com/stephenkelman/status/2093335231604367454).
+- Gallery / award listing: [Recent Design](https://recent.design/i/vmmug5r-type-face).
+- Original source post: Stephen Kelman / [@stephenkelman](https://x.com/stephenkelman/status/2093335231604367454).
+- Direct media (Recent CDN copy): [higher-resolution MP4 — 2160×2160](https://cdn.recent.design/items/vmmug5r/0/2160x2160.mp4); [still poster — WebP](https://cdn.recent.design/items/vmmug5r/0/poster/1200.webp).
+- Previously reviewed media copy: [MP4 — 720×720](https://cdn.recent.design/items/vmmug5r/0/720x720.mp4).
 - Tags: `text-image`, `volumetric`, `monochrome`, `character-density`.
 
 A head and neck emerge from tiny white writing against black. Curved horizontal
@@ -104,8 +120,10 @@ post was inaccessible; no separate live website was supplied.
 
 ### HERO-002 — Ajedrez Film Poem
 
-- Source: [Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem).
-- Creator/source post: Julián Leiss / [@julianleiss](https://x.com/julianleiss/status/2110868325052149925).
+- Gallery / award listing: [Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem).
+- Original source post: Julián Leiss / [@julianleiss](https://x.com/julianleiss/status/2110868325052149925).
+- Direct media (Recent CDN copy): [higher-resolution MP4 — 1080×1920](https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4); [still poster — WebP](https://cdn.recent.design/items/qfy3385/0/poster/675.webp).
+- Previously reviewed media copy: [MP4 — 480×852](https://cdn.recent.design/items/qfy3385/0/480x852.mp4).
 - Tags: `editorial-film`, `grain`, `montage`, `annotation`, `scale`.
 
 A tall black-and-white film combines archival chess material, grain and
@@ -126,9 +144,9 @@ returned 403; the gallery's narrative description was not independently verified
 
 ### HERO-003 — Agent-first Billing / Polar
 
-- Source: [Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page).
-- Creator/source post: Polar / [@polar_sh](https://x.com/polar_sh/status/2112520117435195565).
-- Live destination: [Polar field guide](https://polar.sh/field-guide?page=m-credits).
+- Gallery / award listing: [Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page).
+- Original source post: Polar / [@polar_sh](https://x.com/polar_sh/status/2112520117435195565).
+- Original website: [Polar field guide — entry](https://polar.sh/field-guide); [Credits chapter — deep link](https://polar.sh/field-guide?page=m-credits).
 - Tags: `constructed-identity`, `technical-geometry`, `chapters`, `diagram`.
 
 On charcoal, a bright identity construction uses overlapping circles, radius
@@ -150,8 +168,8 @@ conventional copy/object arrangement need not define Monarchic's homepage.
 
 ### HERO-004 — Artemii Lebedev
 
-- Source: [Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev), published September 23, 2026.
-- Live destination and credited creator: [Artemii Lebedev](https://artemiilebedev.com/).
+- Gallery / award listing: [Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev), published September 23, 2026.
+- Original website and credited creator: [Artemii Lebedev](https://artemiilebedev.com/).
 - Tags: `moving-image`, `utility-overlay`, `edge-index`, `full-bleed`.
 
 A playing film fills the screen beneath a sharply bounded white utility panel
@@ -172,8 +190,8 @@ different background-project moments.
 
 ### HERO-005 — Maximilian Kaspar
 
-- Source: [Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar), published September 22, 2026.
-- Live destination and credited design/art direction/development: [Maximilian Kaspar](https://www.maximiliankaspar.com/).
+- Gallery / award listing: [Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar), published September 22, 2026.
+- Original website and credited design/art direction/development: [Maximilian Kaspar](https://www.maximiliankaspar.com/).
 - Tags: `light-ground`, `character-image`, `large-type`, `asymmetry`, `grid`.
 
 Faint vertical columns divide an almost white canvas. A tiny square/name and
@@ -195,8 +213,8 @@ reflect different revisions.
 
 ### HERO-006 — Mac Moss Studio
 
-- Source: [Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio), published September 11, 2026.
-- Live destination: [Mac Moss Studio](https://macmoss.studio/).
+- Gallery / award listing: [Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio), published September 11, 2026.
+- Original website: [Mac Moss Studio](https://macmoss.studio/).
 - Attribution: Mac Moss / mm.s; no separate website-design credit found in the inspected listing.
 - Tags: `animated-symbols`, `matrix`, `hairline-frame`, `technical-organic`.
 
@@ -219,8 +237,8 @@ interactions were not reviewed.
 
 ### HERO-007 — Cantor8
 
-- Source: [Lapa Ninja](https://www.lapa.ninja/post/cantor8/).
-- Live destination: [Cantor8](https://www.cantor8.io/).
+- Gallery / award listing: [Lapa Ninja](https://www.lapa.ninja/post/cantor8/).
+- Original website: [Cantor8](https://www.cantor8.io/).
 - Attribution: Cantor8; the current primary footer credits the website to [Artemii Lebedev](https://artemiilebedev.com/).
 - Tags: `filaments`, `cobalt`, `network`, `instrument-labels`, `motion`.
 
@@ -244,8 +262,8 @@ not inferred from the appearance.
 
 ### HERO-008 — PP Neue Montreal
 
-- Source: [Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/).
-- Live destination: [Neue Montreal](https://neuemontreal.com/).
+- Gallery / award listing: [Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/).
+- Original website: [Neue Montreal](https://neuemontreal.com/).
 - Attribution: Pangram Pangram is the typeface foundry. The current source footer credits the website to [Demande Spéciale](https://demandespeciale.ca/) (verified 2026-11-01).
 - Tags: `poster-scale`, `vermilion`, `paper-grain`, `cropped-type`, `emblem`.
 
@@ -267,8 +285,8 @@ established. Current first-fold text/rule overlap was observed, not endorsed.
 
 ### HERO-009 — Vercel
 
-- Source: [Lapa Ninja](https://www.lapa.ninja/post/vercel-3/).
-- Live destination: [Vercel](https://vercel.com/).
+- Gallery / award listing: [Lapa Ninja](https://www.lapa.ninja/post/vercel-3/).
+- Original website: [Vercel](https://vercel.com/).
 - Attribution: Vercel; separate website designer not identified. Gallery names Geist as its typeface.
 - Tags: `monochrome`, `isolated-mark`, `halo`, `negative-space`.
 
@@ -290,8 +308,8 @@ response and the full motion sequence were not established.
 
 ### HERO-010 — G!theimagineers
 
-- Source: [Httpster](https://httpster.net/website/gtheimagineers/), September 21, 2020; [linked archive image](https://httpster.net/assets/media/z2/gtheimagineers.com-Z2kOnze.webp).
-- Live destination: [G!theimagineers, English](https://www.gtheimagineers.com/en.html).
+- Gallery / award listing: [Httpster](https://httpster.net/website/gtheimagineers/), September 21, 2020; [linked archive image](https://httpster.net/assets/media/z2/gtheimagineers.com-Z2kOnze.webp).
+- Original website: [G!theimagineers, English](https://www.gtheimagineers.com/en.html).
 - Credit: the live Credits link identifies [Index Studio](https://index.studio/).
 - Tags: `contour-field`, `expanding-rails`, `monochrome`, `hairlines`.
 
@@ -313,8 +331,8 @@ The gallery browser page stalled; its archive media worked.
 
 ### HERO-011 — Jon Way Studio / JW.S
 
-- Source: [Httpster](https://httpster.net/website/jon-way-studio/), March 31, 2023; [linked archive image](https://httpster.net/assets/media/z1/jonway.studio-1-Z1uCI0E.webp).
-- Live destination and creator: [Jon Way](https://www.jonway.studio/).
+- Gallery / award listing: [Httpster](https://httpster.net/website/jon-way-studio/), March 31, 2023; [linked archive image](https://httpster.net/assets/media/z1/jonway.studio-1-Z1uCI0E.webp).
+- Original website and creator: [Jon Way](https://www.jonway.studio/).
 - Tags: `editorial-overlay`, `project-fields`, `index`, `registration-marks`.
 
 The selected white archive places two large contrasting project fields beside
@@ -336,8 +354,8 @@ portfolio interaction.
 
 ### HERO-012 — Mezmo
 
-- Source: [Httpster](https://httpster.net/website/mezmo/), December 13, 2022; [linked archive image](https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp).
-- Live destination: [Mezmo](https://www.mezmo.com/).
+- Gallery / award listing: [Httpster](https://httpster.net/website/mezmo/), December 13, 2022; [linked archive image](https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp).
+- Original website: [Mezmo](https://www.mezmo.com/).
 - Attribution: Mezmo; separate website designer not identified.
 - Tags: `acid-green`, `operational-diagram`, `condensed-type`, `outlined-modules`.
 
@@ -361,8 +379,8 @@ commands were submitted. The archived diagram's animation is unverified.
 
 ### HERO-013 — FORMAT
 
-- Source: [Awwwards](https://www.awwwards.com/sites/format).
-- Live destination: [FORMAT](https://format.obys.agency/).
+- Gallery / award listing: [Awwwards](https://www.awwwards.com/sites/format).
+- Original website: [FORMAT](https://format.obys.agency/).
 - Credits: Obys × DES; Awwwards names Obys, Viacheslav Olianishyn and Olha Olianishyna.
 - Tags: `nested-formats`, `geometric-wordmark`, `poster`, `scroll-composition`.
 
@@ -386,8 +404,8 @@ essay to its footer and tests both visible modes, with remaining limits recorded
 
 ### HERO-014 — Unbelievably Crap
 
-- Source: [Awwwards](https://www.awwwards.com/sites/unbelievably-crap).
-- Live destination: [Unbelievably Crap](https://www.unbelievablycrap.com/).
+- Gallery / award listing: [Awwwards](https://www.awwwards.com/sites/unbelievably-crap).
+- Original website: [Unbelievably Crap](https://www.unbelievablycrap.com/).
 - Creator: Liubomyr Ulytskyi, credited by Awwwards and the primary page.
 - Tags: `scanlines`, `3d-figure`, `surveillance-hud`, `raster`, `edge-information`.
 
@@ -414,8 +432,8 @@ scene. The portrait and black figure are states within that same live journey.
 
 ### HERO-015 — MECHA
 
-- Source: [Awwwards](https://www.awwwards.com/sites/mecha).
-- Listed live destination: [MECHA](https://mecha-xyz.webflow.io/).
+- Gallery / award listing: [Awwwards](https://www.awwwards.com/sites/mecha).
+- Original website (listed deployment): [MECHA](https://mecha-xyz.webflow.io/).
 - Credits: Widelab and Grzegorz Leśniewicz. The creator's [case study](https://www.widehue.co/case-studies/mecha) gives detailed role credits.
 - Tags: `wireframe-identity`, `technical-frame`, `serif`, `split-structure`.
 
@@ -438,8 +456,8 @@ motion control scheme was inferred.
 
 ### HERO-016 — Origin
 
-- Source: [Minimal Gallery](https://minimal.gallery/origin/), September 28, 2026.
-- Live destination: [Origin Studio](https://www.originbrand.io/).
+- Gallery / award listing: [Minimal Gallery](https://minimal.gallery/origin/), September 28, 2026.
+- Original website: [Origin Studio](https://www.originbrand.io/).
 - Attribution: Origin Studio; gallery submitter Ben Blackburn. Submitter status alone does not establish website authorship.
 - Tags: `wordmark-scale`, `quiet-contrast`, `light-object`, `corner-anchor`.
 
@@ -461,8 +479,8 @@ video, which was not separately reviewed.
 
 ### HERO-017 — Bleibtgleich 2026
 
-- Source: [Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/), October 25, 2026.
-- Live destination/creator identity: [Maksym Bleibtgleich](https://bleibtgleich.dev/).
+- Gallery / award listing: [Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/), October 25, 2026.
+- Original website/creator identity: [Maksym Bleibtgleich](https://bleibtgleich.dev/).
 - Tags: `staggered-type`, `organic-mask`, `vertical-rule`, `extreme-scale`.
 
 A single thin vertical rule organizes an unusually asymmetric white opening.
@@ -483,8 +501,8 @@ the sampled scroll and are not part of this visual claim.
 
 ### HERO-018 — pu—ente
 
-- Source: [Minimal Gallery](https://minimal.gallery/pu-ente/), October 27, 2026.
-- Live destination: [pu—ente](https://www.pu-ente.com/); [graphic-design branch](https://www.pu-ente.com/z/).
+- Gallery / award listing: [Minimal Gallery](https://minimal.gallery/pu-ente/), October 27, 2026.
+- Original website: [pu—ente](https://www.pu-ente.com/); [graphic-design branch](https://www.pu-ente.com/z/).
 - Attribution: pu—ente; no individual website creator identified in inspected content.
 - Tags: `two-panel-entry`, `modular-geometry`, `linework`, `negative-space`.
 
