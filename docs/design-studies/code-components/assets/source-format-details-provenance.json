@@ -653,9 +653,9 @@
     "closingPosterCarry"
   ],
   "closingFieldPool": {
-    "status": "LOCAL_BOUND_SOURCE_NATIVE_FRAMER_PAINT_PENDING",
-    "sourceSHA256": "b54843bfe8e50f5c833d49712b7e91e27763558aa877881b8034b721133cdabb",
-    "sourceBytes": 95427,
+    "status": "Initial b548 native first-slot Desktop interaction passed; current responsive caller-style/pose fix is locally validated and awaits same-file Framer update and actual responsive retest.",
+    "sourceSHA256": "618a459fe0c511197bd3e60c962aebbf0d0d5287e854981a0cb532fcefd23e2c",
+    "sourceBytes": 95483,
     "parentCarrierSourceSHA256": "5c7c8f0933a1a3ef1fdf75bf36e96a6272152652586682d3d89a29ca27c963e0",
     "implementation": "Independent bounded source-inspired chip physics with thirty stable native pose Frames and one retained native component instance per Frame. The same native poster remains a sibling and keeps its existing descendants. No poster bitmap, drag gesture, source website behavior JavaScript, global physics store or GPU allocation is introduced.",
     "nativeBinding": {
@@ -1621,9 +1621,77 @@
       "Independent collision fit and bounded integration, not Matter trajectory parity.",
       "Source prompt fade is retained; the source 0.9s/0.13s entrance stagger is not reconstructed.",
       "Phone retains its fitted authored geometry; the complete source Phone journey remains unverified.",
-      "The final 123-export source is not yet registered. Actual retained Slot01 must prove a non-default variant, a second later choice, moving geometry, native Daughter transparency, initial no-flash and Canvas/static state before the remaining 29 instances.",
+      "The initial b548 123-export source was registered with actual Desktop non-default moving art and Daughter toggling. Phone exposed inherited Desktop poster dimensions and double rotation; the current responsive correction requires actual Framer retest before the remaining29 instances.",
       "Existing historical source/renderer receipts stay immutable; current binding is manual and specific to this Framer native definition."
     ],
     "assetReuse": "Actual public source bitmaps retained for this credited unpublished recreation. Reuse license is unverified; no production licensing claim is made. Source CSS sizing adaptations are identified separately from original source bytes."
+  },
+  "responsiveNativeStyleOwnershipCorrection": {
+    "sourceSHA256": "618a459fe0c511197bd3e60c962aebbf0d0d5287e854981a0cb532fcefd23e2c",
+    "sourceBytes": 95483,
+    "parentSourceSHA256": "b54843bfe8e50f5c833d49712b7e91e27763558aa877881b8034b721133cdabb",
+    "actualFailure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/actual-framer-b548-before.json",
+      "sha256": "6d6d0a75ac045dd69bab983a8f15c1763190b7c312658d40586c3a866d4c437a",
+      "bytes": 288724
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/receipt.json",
+      "sha256": "249d85f0817d2fe2e40cda6665db7517e2561ad0419fa2ec61f5888de569aa4a",
+      "bytes": 7121
+    },
+    "scope": {
+      "changes": 2,
+      "reverseReconstructsParentExactly": true,
+      "all123ExportNamesAndOrderExact": true,
+      "scope": [
+        "Unregistration stops restoring an obsolete caller declaration snapshot after React has already committed a new native breakpoint. Normal original/reverse/frozen poster restoration paths remain.",
+        "Primitive wrapper React style remains its fixed authored hidden base. Its existing world alone writes live position, size, opacity and CSS rotate, avoiding the actual native rotate-to-transform double application."
+      ],
+      "unchanged": "World ownership, host-ref dependencies, slot/native IDs, collision implementation,21 genuine choices,30 FIFO budget, source geometry constants, clock/timers, Daughter state and all123 public identities."
+    },
+    "validation": {
+      "poolFocusedGroups": 5,
+      "detailsStrictGroups": 6,
+      "actualReactChromiumChecks": 59,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/pool-browser59.json",
+        "sha256": "224bac31a48f6f65e049ef805f2a787867e3695ed35a292216e18d1803ca343e",
+        "bytes": 60180
+      },
+      "counterfactual": {
+        "sourceSHA256": "b54843bfe8e50f5c833d49712b7e91e27763558aa877881b8034b721133cdabb",
+        "observations": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/b548-counterfactual.json",
+          "sha256": "feb365f11fef08739faa827f44c9e2143ce21937c2329857ba8259aa26559cae",
+          "bytes": 4947
+        },
+        "screenshot": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/b548-counterfactual-phone.png",
+          "sha256": "01caaf8a93aa83af6b75cb780995ccd308e5be5ecaa7e5e9b80d94a77379f169",
+          "bytes": 6734
+        },
+        "failure": "Unchanged b548 fails the new real React/Chromium native responsive geometry assertion: Phone poster stays1440×1617/x0; observed old native transform matrix plus current CSS rotate. The original53 fixture assertions passed before this bounded added case."
+      }
+    },
+    "actualFramerRetestPassed": false,
+    "remaining29NativeSlotsAuthorized": false,
+    "lockedNix": {
+      "command": "nix build .#checks.x86_64-linux.source-format-pool --no-link --print-out-paths",
+      "exitCode": 0,
+      "path": "/nix/store/x641npcddi2j7v2xq0l8r5av6np17sn1-monarchic-website-source-format-pool-0.0.1",
+      "poolFocusedGroups": 5,
+      "browserChecks": 59,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/nix-browser59.json",
+        "sha256": "bf5626c5b32b8aaa7570cfac8db0bdcdb1d78b003dbe29be793576ed4d096026",
+        "bytes": 60053
+      },
+      "log": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/nix-build.log",
+        "sha256": "f3f6fa38e7be218034175090442a73e8a56936dd58429af0c6f8c57b12cd267e",
+        "bytes": 397
+      }
+    }
   }
 }

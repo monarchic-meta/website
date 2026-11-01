@@ -434,7 +434,7 @@ function createFormatClosingWorld() {
     let observer: ResizeObserver | null = null
     const detach = () => { observer?.disconnect(); observer=null;if(attached){window.removeEventListener("scroll",schedule);window.removeEventListener("resize",changed);document.removeEventListener("visibilitychange",changed)}attached=false }
     const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced || !poster || !field) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
-    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); restore(value); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
+    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); /* React has already committed the next caller style; never restore stale breakpoint declarations here. */ if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
     const slotPose = (index: number, knownRatio?:number): DetailStyle => {
         const chip = chips.find(b => b.slot === index), binding = formatChipVariantRuntime()
         if (!chip || !field || !binding || binding.values.length !== 21) return { opacity: 0, pointerEvents: "none" }
@@ -511,7 +511,7 @@ function formatNativeChipSlot(Component: NativeLayer, index: number): NativeLaye
         const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null)
         useOwnLayoutEffect(() => { const node = own.current; if (!world || !node) return; return world.registerSlot(index, node) }, [world])
         return <FormatChipSlotContext.Provider value={index}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }}
-            data-format-chip-slot={index} aria-hidden="true" style={{ ...props.style, ...(world?.slotPose(index) ?? { opacity: 0, pointerEvents: "none" }) }} /></FormatChipSlotContext.Provider>
+            data-format-chip-slot={index} aria-hidden="true" style={{ ...props.style, opacity: 0, pointerEvents: "none" }} /></FormatChipSlotContext.Provider>
     }) as NativeLayer
 }
 /** Native variant roots may remount. Physics and visibility belong to the stable
