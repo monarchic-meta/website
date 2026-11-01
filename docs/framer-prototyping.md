@@ -174,6 +174,16 @@ editor; dropping a contain instruction can crop the source graphic. Test the
 whole document extent too: sticky headings need a suitable overflow ancestor,
 and the final animation state must be reachable before the prototype ends.
 
+Check the editor's status messages when saved layers are absent from Preview.
+The Ajedrez page's 3,433 native models survived saved reads while Framer reported
+that the web page was too large to update; Preview retained an empty stage.
+The saved model remained available for editing. Framer's
+[size-limit guidance](https://www.framer.com/help/articles/module-too-large-warning/)
+recommends reusable components. Package the largest scene groups with the
+supported native component conversion, retain editable parts and actual ID
+lineage, and verify responsive variants, override placement and playback after
+conversion. Verify generated-page output alongside the saved tree.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live
