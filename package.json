@@ -104,7 +104,8 @@
     "check:source-montreal-motion-browser": "node scripts/check-source-montreal-motion-browser.mjs",
     "check:source-portfolio-utility-ink": "node scripts/check-source-portfolio-utility-ink.mjs",
     "check:source-montreal-accents": "node scripts/check-source-montreal-accents.mjs",
-    "check:source-montreal-accents-browser": "node scripts/check-source-montreal-accents-browser.mjs"
+    "check:source-montreal-accents-browser": "node scripts/check-source-montreal-accents-browser.mjs",
+    "check:source-gthe-motion": "node scripts/check-source-gthe-motion.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

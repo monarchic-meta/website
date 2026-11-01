@@ -1,0 +1,122 @@
+{
+  "schema": "monarchic.source-native-motion.v1",
+  "reference": "HERO-010",
+  "classification": "Source inspiration / credited recreation",
+  "sourceURL": "https://www.gtheimagineers.com/en.html",
+  "creator": "G!theimagineers; website by Index Studio",
+  "inspectionDate": "2026-11-01",
+  "sourcePolicy": "Current original source, not its httpster listing",
+  "evidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/audit.json",
+      "bytes": 122452,
+      "sha256": "9ee5cb0aecc25783f17b2d1c08490ca1ca7d865dab6fb5e5f36f0d7b1d14e7b2"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/audit.json",
+      "bytes": 195584,
+      "sha256": "9d8370f40d0b516c1804713153c638f6ade762e39eae2be50a97394845be7860"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed-completion/audit.json",
+      "bytes": 249523,
+      "sha256": "3ce5f79d05f55333e8e50510b8ae942573ad25085c8102bd6529fc1eed28a5fa"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/phone-contact/audit.json",
+      "bytes": 5245,
+      "sha256": "e9a19079e67c70a7b3079296a2b01676ef87e2dad5abf9ed5bbf74b76af3b939"
+    }
+  ],
+  "sourceScripts": [
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/First.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/aa2fc30972651e4c.js",
+      "sha256": "aa2fc30972651e4c9bb4e6de88c8a36668e0cbe7170a2c32777ee3b7523d18c7",
+      "bytes": 2473
+    },
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/Third.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/b9fafdc5ad98f3ff.js",
+      "sha256": "b9fafdc5ad98f3ff46638678ec3e26972d1dd40da41d6b218ece1f45d6ce0546",
+      "bytes": 2497
+    },
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/Fourth.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/5d5fb04510f0f567.js",
+      "sha256": "5d5fb04510f0f56714145545973719bfc8c9bbafd04891ee98d936fe8d3dee2b",
+      "bytes": 1874
+    },
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/Home.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/a5dad42cc9177a8f.js",
+      "sha256": "a5dad42cc9177a8f98702c6954ce456bbba409d009c9bffb48ba2681daa5c50d",
+      "bytes": 983
+    },
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/Second.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/996d109e971bcdf3.js",
+      "sha256": "996d109e971bcdf3ece4877e3ce1b8dd2dd2c10faef49427b82e994e221b04ee",
+      "bytes": 2778
+    },
+    {
+      "url": "https://www.gtheimagineers.com/assets/js/animations/Fifth.js",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/scripts/2e0831962ecbb60f.js",
+      "sha256": "2e0831962ecbb60f857438c2732de200ae589a2323005e73c733ad9ee0786290",
+      "bytes": 4804
+    }
+  ],
+  "families": [
+    {
+      "name": "Home",
+      "nativeShapes": 5,
+      "behavior": "Finite1500ms ring draw,150ms source path stagger; fixed initial orientations instead of source random flips."
+    },
+    {
+      "name": "Manifesto",
+      "nativeShapes": 6,
+      "behavior": "Alternating horizontal contractions with source-supported1500ms movement and2000ms dwell plus Desktop100ms offset."
+    },
+    {
+      "name": "Vision",
+      "nativeShapes": 23,
+      "behavior": "Nested circles shrink and alternate horizontal centers; smallest enters first."
+    },
+    {
+      "name": "Expertise",
+      "nativeShapes": 15,
+      "behavior": "Continuous tilted ellipse sections through a spindle-like envelope;1200ms entry."
+    },
+    {
+      "name": "Experience",
+      "nativeShapes": 9,
+      "behavior": "Stacked circles acquire vertical offsets and continuously phased radii."
+    },
+    {
+      "name": "Contact",
+      "nativeShapes": 5,
+      "behavior": "Changing gravity, wall and pair collisions; independent small deterministic solver replaces source Matter.js/random starts."
+    }
+  ],
+  "rendering": "Retained editable native ellipse layers. Runtime motion uses owned CSS variables/activation selectors; authored inline geometry remains untouched. Canvas/export/thumbnail/reduced motion retain authored stills; only visible Preview groups animate.",
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceGtheMotion.tsx",
+    "bytes": 15997,
+    "sha256": "36836b189bd2d35c9863e076f5df1e9a78628153b1fccc8b617cb0187f22c80a"
+  },
+  "validation": {
+    "store": "/nix/store/7hx9as5qp7c2yfp4xb1rr0g21y31p7hq-monarchic-website-source-gthe-motion-0.0.1",
+    "result": {
+      "path": "/nix/store/7hx9as5qp7c2yfp4xb1rr0g21y31p7hq-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+      "bytes": 67145,
+      "sha256": "6b5a61c9a1521436e1e3cdae5ab358bf1ff1b5414cde2bcf19197ac151a5a006"
+    },
+    "checks": 39,
+    "scope": "Local ReactDOM native-like Framer HOC fixture; not actual Framer Preview/reload"
+  },
+  "limits": [
+    "Source input/DOM and public source-code observations are distinguished; no original website JavaScript is imported or executed.",
+    "Native text paraphrases and licensed-font substitutes remain. Contact initial randomness, numeric integration and global-phase alignment are independently fitted.",
+    "Current Framer Preview/moving pixels/reload remains unverified while connected desktop browser is off."
+  ]
+}

@@ -199,6 +199,10 @@
             export MONARCHIC_CANTOR_NATIVE_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-cantor-native-behaviors
           '';
+          source-gthe-motion = mkWebsiteCheck "source-gthe-motion" ''
+            export MONARCHIC_GTHE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-gthe-motion
+          '';
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio
