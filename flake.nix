@@ -160,6 +160,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-type-proximity = (mkWebsiteCheck "source-type-proximity" ''
+            export MONARCHIC_TYPE_PROXIMITY_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-type-proximity
+            pnpm run check:source-type-proximity-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
