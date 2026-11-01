@@ -147,6 +147,11 @@ while Framer silently omits unsupported property values. When the representation
 is unclear, set one real value through the native picker and inspect its public
 model before applying the remaining bindings.
 
+Native component variants can use IDs as values while the picker displays names.
+Read a genuine picker assignment back through the public model and verify the
+responsive result in Preview. A stored display name can survive a readback while
+the generated component still falls back to its default variant.
+
 Resolve source fonts to genuine available faces. A native picker selection may
 be needed to activate a newly uploaded custom face. Verify the rendered paragraph's
 family, weight, tracking and line count in Preview: a requested font name does
