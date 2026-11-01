@@ -96,6 +96,7 @@
     "check:source-montreal-glyph-flow": "node scripts/check-source-montreal-glyph-flow.mjs",
     "check:source-format-details": "node scripts/check-source-format-details.mjs",
     "check:source-format-details-browser": "node scripts/check-source-format-details-browser.mjs",
+    "check:source-format-closing-browser": "node scripts/check-source-format-closing-browser.mjs",
     "check:source-montreal-motion": "node scripts/check-source-montreal-motion.mjs",
     "check:source-montreal-motion-browser": "node scripts/check-source-montreal-motion-browser.mjs",
     "check:source-portfolio-utility-ink": "node scripts/check-source-portfolio-utility-ink.mjs",

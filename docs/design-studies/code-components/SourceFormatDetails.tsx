@@ -8,11 +8,13 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * Independent public React HOCs implement the source-supported tiny Berlin
  * clock, large accelerated dial,100s record, running reel, triangle clips,
  * scroll-driven three-pair window, circular word gauge, late seven-photo deck,
- * terminal2.6s click/clack phases and decorative flower grounds.
+ * terminal2.6s click/clack phases, decorative flower grounds and the same
+ * native poster’s automatic scroll carry, physics release and reverse.
  * No source website behavior JavaScript is copied or executed here.
  * Known fits: scroll/Lenis velocity normalization, macro/phase anchors,
  * window scrub easing, gauge growth/morph interpolation, deck-ground collapse
- * and exact first-entry word stagger. Source pointer-spawned physics chips,
+ * and exact first-entry word stagger. Closing floor/rotation collisions are an
+ * independent fit; photo parallax remains omitted. Source pointer-spawned chips,
  * preloader, omitted fan/interstitials and complete Notes placement are absent.
  * Canvas/export/thumbnail and reduced motion freeze. Live native timers/RAF
  * suspend offscreen/hidden; no GPU context or runtime media/font fetch.
@@ -167,7 +169,7 @@ function polygonClip(Component: NativeLayer, polygon: string): NativeLayer { ret
 export function withFormatTriangleOutline(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(100% 8.409171563%, 54.281314941% 100%, 45.652634016% 100%, 0% 8.541855605%, 4.263715534% 0%, 95.802420735% 0%)") }
 export function withFormatTriangleLeftMask(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(100% 0%, 100% 100%, 92.830526159% 100%, 0% 0%)") }
 export function withFormatTriangleRightMask(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(0% 0%, 0% 100%, 7.1683% 100%, 100% 0%)") }
-export function withFormatPosterHand(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), now = React.useSyncExternalStore(live ? subscribeClock : emptySubscribe, live ? getClock : serverClock, serverClock), angle = new Date(now).getSeconds() * 30; return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-poster-second={angle} style={{ ...props.style, rotate: `${angle}deg`, transformOrigin: "0 0", pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
+export function withFormatPosterHand(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), held = React.useContext(PosterCarryContext), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen || held), now = React.useSyncExternalStore(live ? subscribeClock : emptySubscribe, live ? getClock : serverClock, serverClock), heldAngle = React.useRef(new Date(now).getSeconds() * 30); if (!held) heldAngle.current = new Date(now).getSeconds() * 30; const angle = heldAngle.current; return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-poster-second={angle} style={{ ...props.style, rotate: `${angle}deg`, transformOrigin: "0 0", pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
 const WINDOW_PAIRS = [{ top: "Desert Tree", foot: "Frozen Bloom" }, { top: "Lost Dreams", foot: "Silent Fog" }, { top: "Fading Hour", foot: "Restless Wind" }] as const
 const WindowContext = React.createContext({ at: 0, unit: 1 })
 /** Source window strip is scroll-driven through3pairs with.8s scrub; it is not an autoplay slideshow. */
@@ -268,10 +270,14 @@ function sourceLayout(width: number, height: number): SourceLayout {
 const SourceLayoutContext = React.createContext({ width: 1440, height: 810, frozen: true, phone: false, layout: sourceLayout(1440, 810) })
 export function withFormatRefinedDocument(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
+        const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), closing = React.useRef<FormatClosingWorld | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
         useOwnLayoutEffect(() => { const node = own.current; if (!node) return; let frame = 0; const read = () => { frame = 0; const width = frozen ? node.clientWidth || 1440 : window.innerWidth, height = frozen ? width < 1280 ? 844 : 810 : window.innerHeight; setView(v => v.width === width && v.height === height ? v : { width, height }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen) window.addEventListener("resize", schedule); return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("resize", schedule) } }, [frozen])
         const phone = view.width < 1280, layout = sourceLayout(view.width, view.height), style = frozen || phone ? props.style : { ...props.style, width: view.width, height: layout.body }
-        return <SourceLayoutContext.Provider value={{ ...view, frozen, phone, layout }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-source-height={layout.body} style={style} /></SourceLayoutContext.Provider>
+        if (!closing.current) closing.current = createFormatClosingWorld()
+        const world = closing.current
+        useOwnLayoutEffect(() => { world.configure({ frozen, reduced, phone, root: own.current }) }, [world, frozen, reduced, phone])
+        useOwnLayoutEffect(() => () => world.dispose(), [world])
+        return <FormatClosingContext.Provider value={world}><SourceLayoutContext.Provider value={{ ...view, frozen, phone, layout }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-source-height={layout.body} style={style} /></SourceLayoutContext.Provider></FormatClosingContext.Provider>
     }) as NativeLayer
 }
 type FlowRole = "opening-card" | "usage" | "dials" | "triangle" | "window" | "crossing" | "gauge" | "poster" | "field" | "footer" | "late-deck" | "seven" | "early" | "fan" | "fog"
@@ -340,3 +346,103 @@ export function withFormatSevenGround(Component: ComponentType<LayerProps>): Com
 export function withFormatSevenImage(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(SevenGroundContext), extra = state.height * 140 / 1701; return <Component {...props} ref={ref} style={{ ...props.style, width: "100%", top: state.drift, height: state.height + extra, pointerEvents: "none" }} /> }) as NativeLayer }
 
 export function withFormatCutHardLight(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, mixBlendMode: "hard-light" }} />) as NativeLayer }
+
+/** FORMAT's same native poster carries into the inner field. Independent public
+ * own-ref geometry/controller; no source behavior JS, bitmap poster or reparent.
+ * Physics integrates source-scale gravity at60Hz and paints at30Hz. Collision
+ * trajectories are independently fitted, not claimed byte-equivalent to Matter.
+ */
+type ClosingRegistration = { node: HTMLElement; transform: string; width: string; left: string; top: string; height: string; origin: string; background: string; outline: string; z: string; pointer: string }
+type ClosingBody = { x: number; y: number; vx: number; vy: number; angle: number; angular: number; quiet: number }
+type ClosingConfig = { frozen: boolean; reduced: boolean; phone: boolean; root: HTMLElement | null }
+function createFormatClosingWorld() {
+    let poster: ClosingRegistration | null = null, field: ClosingRegistration | null = null, config: ClosingConfig = { frozen: true, reduced: false, phone: false, root: null }, frame = 0, previous = 0, painted = 0, accumulator = 0, body: ClosingBody | null = null, lastCenter = 0, held = false, attached = false
+    const listeners = new Set<() => void>(), clamp = (x: number) => Math.max(0, Math.min(1, x)), ease = (x: number) => x < .5 ? 2 * x * x : 1 - 2 * (1 - x) * (1 - x)
+    const stopped = () => config.frozen || config.reduced || typeof document !== "undefined" && document.hidden
+    const save = (node: HTMLElement, style: React.CSSProperties): ClosingRegistration => { const css = (key: keyof React.CSSProperties, fallback: string, unit = "px") => typeof style[key] === "number" ? style[key] + unit : String(style[key] ?? fallback); return { node, transform: css("transform", "", ""), width: css("width", node.style.width), left: css("left", node.style.left), top: css("top", node.style.top), height: css("height", node.style.height), origin: css("transformOrigin", node.style.transformOrigin, ""), background: css("backgroundColor", node.style.backgroundColor, ""), outline: css("outline", node.style.outline, ""), z: css("zIndex", node.style.zIndex, ""), pointer: css("pointerEvents", node.style.pointerEvents, "") } }
+    const restore = (r: ClosingRegistration) => { const s = r.node.style; s.transform = r.transform; s.width = r.width; s.left = r.left; s.top = r.top; s.height = r.height; s.transformOrigin = r.origin; s.backgroundColor = r.background; s.outline = r.outline; s.zIndex = r.z; s.pointerEvents = r.pointer }
+    const setHeld = (value: boolean) => { if (held !== value) { held = value; listeners.forEach(fn => fn()) } }
+    const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0 }
+    const geometry = () => {
+        if (!poster || !field) return null
+        const p = poster.node, f = field.node
+        // Temporarily restore only our own transforms, before the same-frame paint.
+        // This measures the real untransformed native boxes without feedback.
+        p.style.transform = poster.transform
+        p.style.transformOrigin = poster.origin
+        f.style.left = field.left; f.style.top = field.top; f.style.height = field.height
+        const ownerRect = config.root?.getBoundingClientRect(), ownerScale = ownerRect && config.root ? ownerRect.width / Math.max(1, config.root.offsetWidth) : 1, ownerLeft = ownerRect?.left ?? 0
+        const unit = config.phone ? p.getBoundingClientRect().width / 1440 : window.innerWidth / 1440 * ownerScale
+        if (!config.phone) {
+            p.style.width = document.documentElement.clientWidth * ownerScale / Math.max(.001, unit) + "px"
+            const old = f.getBoundingClientRect(), logical = f.offsetWidth, ratio = logical > 0 ? old.width / logical : unit
+            const parent = f.parentElement?.getBoundingClientRect()
+            f.style.left = (parseFloat(field.left) || 0) + (ownerLeft + (document.documentElement.clientWidth * ownerScale - old.width) / 2 - old.left) / Math.max(.001, ratio) + "px"
+            if (parent) f.style.top = (parseFloat(field.top) || 0) + (parent.top - old.top) / Math.max(.001, ratio) + "px"
+            f.style.height = (window.innerHeight * 1.43 * ownerScale - 40 * unit) / Math.max(.001, ratio) + "px"
+        }
+        const pr = p.getBoundingClientRect(), fr = f.getBoundingClientRect(), visual = pr.width / Math.max(1, p.offsetWidth)
+        return { p, f, pr, fr, unit, visual, ownerScale, sourceCenterX: ownerLeft + window.innerWidth / 2 * ownerScale, top: Math.round(pr.top + window.scrollY), fieldTop: Math.round(fr.top + window.scrollY), fieldWidth: Math.round(fr.width), physicalWidth: window.innerWidth * ownerScale * 250 / 1440, height: pr.height * 250 / 1440 }
+    }
+    const paint = (now: number, integrate: boolean) => {
+        if (!poster || !field) return false
+        if (stopped()) { restore(poster); restore(field); body = null; setHeld(false); return false }
+        const g = geometry(); if (!g) return false
+        const { p, pr, fr, unit, visual } = g, start = g.top + 1429.12 * unit - window.innerHeight / 2 + .02 * window.innerHeight, end = Math.max(start + 1, g.fieldTop - .45 * window.innerHeight), progress = clamp((window.scrollY - start) / (end - start)), scale = 1 + (250 / 1440 - 1) * ease(clamp(progress / .75)), follow = ease(clamp(progress / .35)), targetY = (1 - ease(progress)) * window.innerHeight / 2 + ease(progress) * (.45 * window.innerHeight + 100 * unit + pr.height / 2 * 250 / 1440), ordinaryY = pr.top + pr.height / 2, xOffset = progress * (fr.left + g.fieldWidth / 2 - g.sourceCenterX)
+        const paintBiasX = pr.left + pr.width / 2 - g.sourceCenterX
+        let centerX = pr.left + pr.width / 2 + xOffset, centerY = ordinaryY + (targetY - ordinaryY) * follow, angle = 0
+        if (progress >= 1 && !body) body = { x: g.fieldWidth / 2, y: 100 * unit + pr.height / 2 * 250 / 1440, vx: 0, vy: Math.max(0, Math.min(40, centerY - lastCenter)), angle: 0, angular: .008, quiet: 0 }
+        if (body) {
+            if (progress <= 0) body = null
+            else if (progress < .97) {
+                const targetX = centerX - paintBiasX - fr.left, target = centerY - fr.top, dx = targetX - body.x, dy = target - body.y, distance = Math.hypot(dx, dy), max = 45 + Math.abs(centerY - lastCenter), amount = Math.min(1, max / Math.max(1, distance))
+                body.vx = dx * amount; body.vy = dy * amount; body.angular = 0
+                if (integrate) { body.x += body.vx; body.y += body.vy; body.angle *= .75 }
+                if (distance < 8 && Math.abs(body.angle) < .02) body = null
+            } else if (integrate) {
+                const dt = previous ? Math.min(100, Math.max(0, now - previous)) : 1000 / 30
+                accumulator += dt
+                while (accumulator >= 1000 / 60) {
+                    accumulator -= 1000 / 60
+                    const b = body; b.vx *= .97; b.vy = b.vy * .97 + 1.8 * .001 * (1000 / 60) ** 2 * g.ownerScale; b.x += b.vx; b.y += b.vy; b.angle += b.angular; b.angular *= .97
+                    const halfW = Math.abs(Math.cos(b.angle)) * g.physicalWidth / 2 + Math.abs(Math.sin(b.angle)) * g.height / 2, halfH = Math.abs(Math.sin(b.angle)) * g.physicalWidth / 2 + Math.abs(Math.cos(b.angle)) * g.height / 2
+                    if (b.x < halfW) { b.x = halfW; b.vx = Math.abs(b.vx) * .1 }
+                    if (b.x > fr.width - halfW) { b.x = Math.max(halfW, fr.width - halfW); b.vx = -Math.abs(b.vx) * .1 }
+                    if (b.y > fr.height - halfH) { b.y = fr.height - halfH; b.vy = -Math.abs(b.vy) * .1; b.vx *= .6; b.angular *= .6; const beforeAngle=b.angle,nextAngle=b.angle*.8,side=beforeAngle<0?-1:1,corner=(a:number)=>side*g.physicalWidth/2*Math.cos(a)-g.height/2*Math.sin(a);b.x+=corner(beforeAngle)-corner(nextAngle);b.angle=nextAngle; if (Math.abs(b.vy) < .1) b.vy = 0; b.quiet = Math.abs(b.vx) + Math.abs(b.vy) + Math.abs(b.angular) < .02 ? b.quiet + 1 : 0 }
+                }
+            }
+            if (body) { centerX = fr.left + body.x + paintBiasX; centerY = fr.top + body.y; angle = body.angle }
+        }
+        lastCenter = centerY; previous = now; setHeld(progress > 0 || body !== null)
+        if (!held) { restore(poster); if (!config.phone) p.style.width = document.documentElement.clientWidth * g.ownerScale / Math.max(.001, unit) + "px" }
+        else {
+            const tx = (centerX - pr.left) / Math.max(.001, visual), ty = (centerY - pr.top) / Math.max(.001, visual)
+            p.style.transformOrigin = "0 0"; p.style.transform = poster.transform + ` translate(${tx}px,${ty}px) rotate(${angle}rad) scale(${scale}) translate(${-p.offsetWidth / 2}px,${-p.offsetHeight / 2}px)`
+            p.style.backgroundColor = "#222222"; p.style.zIndex = "2"; p.style.pointerEvents = poster.pointer; p.style.outline = `${clamp(progress / .5) / Math.max(.001, visual * scale)}px solid white`
+        }
+        p.setAttribute("data-format-carried-progress", String(progress)); p.setAttribute("data-format-carried-state", body ? progress < .97 ? "returning" : "falling" : held ? "carried" : "original"); p.setAttribute("data-format-carried-children", String(p.children.length))
+        return Boolean(body && body.quiet < 30 && (fr.bottom > 0 && fr.top < window.innerHeight || centerY + g.height / 2 > 0 && centerY - g.height / 2 < window.innerHeight))
+    }
+    const tick = (now: number) => { frame = 0; if (stopped()) return; if (now - painted >= 1000 / 30) { painted = now; if (paint(now, true)) frame = requestAnimationFrame(tick); else { previous=0;accumulator=0 } } else frame = requestAnimationFrame(tick) }
+    const schedule = () => { if (!stopped() && !frame) frame = requestAnimationFrame(tick) }
+    const changed = () => { cancel(); if (config.frozen || config.reduced) { if (poster) { restore(poster); poster.node.setAttribute("data-format-carried-progress", "0"); poster.node.setAttribute("data-format-carried-state", "original") } if (field) restore(field); body = null; setHeld(false) } else if (!stopped()) { paint(performance.now(), false); schedule() } }
+    let observer: ResizeObserver | null = null
+    const detach = () => { observer?.disconnect(); observer=null;if(attached){window.removeEventListener("scroll",schedule);window.removeEventListener("resize",changed);document.removeEventListener("visibilitychange",changed)}attached=false }
+    const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
+    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); restore(value); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null; cancel() } }
+    return { register, configure: (next: ClosingConfig) => { config = next;if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; listeners.clear() } }
+}
+type FormatClosingWorld = ReturnType<typeof createFormatClosingWorld>
+const FormatClosingContext = React.createContext<FormatClosingWorld | null>(null)
+const PosterCarryContext = React.createContext(false)
+function closingPoster(Component: NativeLayer): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null), held = React.useSyncExternalStore(world?.subscribe ?? emptySubscribe, world?.getHeld ?? (() => false), () => false)
+        useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("poster", node, props.style ?? {}) }, [world, props.style])
+        return <PosterCarryContext.Provider value={held}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-carried-poster="same-native-node" /></PosterCarryContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatCarriedPoster(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(closingPoster(Component), "poster") }
+export function withFormatClosingField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null); useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("field", node, props.style ?? {}) }, [world, props.style]); return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-closing-field="inner-native-field" style={{ ...props.style, overflow: "hidden" }} /> }) as NativeLayer
+}

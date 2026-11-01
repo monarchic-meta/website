@@ -557,5 +557,59 @@
       }
     },
     "boundary": "Local strict/React proof with native-like descendants and deliberately wide monospace, not a claim of source-font pixel identity. Root Nix, registered-source update and actual Framer native word/header retest remain separate. Prior c811 Nix and8a pointer proofs remain historical parents."
+  },
+  "closingPosterCarry": {
+    "status": "LOCAL_CARRIER_STAGE_NATIVE_BINDING_AND_FRAMER_PREVIEW_PENDING",
+    "parentSourceSHA256": "29d76a0c3bfe03b30552d2f8e3693a0067120643b7ef5d5edd9b48bfb8edafd5",
+    "sourceSHA256": "5c7c8f0933a1a3ef1fdf75bf36e96a6272152652586682d3d89a29ca27c963e0",
+    "sourceBytes": 75795,
+    "source": "FORMAT / Obys × DES Special Project, https://format.obys.agency/",
+    "implementation": "Independently authored public own-ref controller for the SAME native poster, ordinary window scroll, shrink/release/reverse and held poster dial. No source website behavior JavaScript is imported or executed. No poster bitmap or DOM reparenting.",
+    "bindings": [
+      {
+        "export": "withFormatCarriedPoster",
+        "key": "poster-advice",
+        "primaryID": "N_iF1Nw8B",
+        "preserve": "Existing group and every native descendant/replica ID"
+      },
+      {
+        "export": "withFormatClosingField",
+        "key": "poster-guide-box",
+        "primaryID": "ADkCOaiOW",
+        "scope": "Inner dashed field, not its1440-unit parent; public own-ref bounds"
+      }
+    ],
+    "sourceFacts": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "clientWidth": 1265,
+      "posterClientWidth": 1265,
+      "posterHeight": 1437.328125,
+      "fieldLeft": 10.28125,
+      "fieldWidth": 1244.4375,
+      "sourceScrollY": 11513,
+      "sourceCarriedBounds": [
+        515.56787109375,
+        410.7373046875,
+        219.6180419921875,
+        249.5361328125
+      ],
+      "unit": "window.innerWidth/1440; poster paint width remains client-based",
+      "timeline": "1429.12u anchor, .02H offset, .45H field handoff,250/1440 compactscale; source integer offset/client rounding retained",
+      "layer": 2
+    },
+    "quality": "Actual React18/Chromium same21-node fixture preserves parent/children, matches source11513 carried pose within0.15px, tests native inherited scaleu and ancestor.scale.5 carry/reverse, release/floor, Phone own geometry, Canvas/export/thumbnail/reduced freeze and cleanup. Existing83 detail cases retained; actual Framer remains a separate gate.",
+    "resourcePolicy": "No GPU/media/font allocation. Integrate source-scale gravity at60Hz with bounded substeps; paint at30Hz. Stop hidden/offscreen; Canvas/export/thumbnail/reduced use original authored native pose without closing window listeners or physics RAF.",
+    "limits": [
+      "Independent rectangle floor/corner angular settling; not Matter trajectory parity.",
+      "Phone uses actual authored fitted geometry; source full Phone journey remains unverified.",
+      "Photo parallax remains omitted; no invented image motion.",
+      "Pointer-spawned30-slot/21-template pool is a separate following change and is absent from this carrier-only commit.",
+      "Registered old89 exports and all native geometry/IDs remain authoritative; final combined module will be registered only after review."
+    ],
+    "browserCommand": "pnpm run check:source-format-closing-browser",
+    "evidence": "hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/"
   }
 }

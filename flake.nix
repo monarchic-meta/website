@@ -259,8 +259,10 @@
           });
           source-format-details = (mkWebsiteCheck "source-format-details" ''
             export MONARCHIC_FORMAT_DETAIL_EVIDENCE_DIR="$out/evidence"
+            export MONARCHIC_FORMAT_CLOSING_EVIDENCE_DIR="$out/evidence/closing"
             pnpm run check:source-format-details
             pnpm run check:source-format-details-browser
+            pnpm run check:source-format-closing-browser
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
