@@ -84,7 +84,8 @@
     "check:source-macmoss-portfolio": "node scripts/check-source-macmoss-portfolio.mjs",
     "check:source-macmoss-browser": "node scripts/check-source-macmoss-browser.mjs",
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
-    "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs"
+    "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs",
+    "check:source-native-tap": "node scripts/check-source-native-tap.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

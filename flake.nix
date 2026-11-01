@@ -201,6 +201,10 @@
             pnpm run check:source-puente-behaviors
             pnpm run check:source-puente-browser
           '';
+          source-native-tap = mkWebsiteCheck "source-native-tap" ''
+            export MONARCHIC_NATIVE_TAP_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-native-tap
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

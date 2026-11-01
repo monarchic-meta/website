@@ -16,10 +16,26 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * These public React 18 HOCs preserve all props, native transforms and refs.
  */
 
+type NativeActivationEvent = { defaultPrevented?: boolean; preventDefault?: () => void; stopPropagation?: () => void }
+type NativeActivationChannel = "tap" | "click" | "key"
+// Framer native motion layers expose onTap; DOM fixtures can also emit click.
+// Alternate channels within one gesture are consumed once, including a caller's
+// cancellation. Repeated gestures through the same channel remain responsive.
+function useNativeActivation(action: () => void, frozen = false) {
+    const last = React.useRef<{ channel: NativeActivationChannel; at: number } | null>(null)
+    return (channel: NativeActivationChannel, prevented: boolean) => {
+        const at = typeof performance === "undefined" ? Date.now() : performance.now(), previous = last.current
+        if (previous && channel !== previous.channel && at - previous.at < 350) return
+        last.current = { channel, at }
+        if (!frozen && !prevented) action()
+    }
+}
+
 type LayerProps = {
     [key: string]: unknown
     style?: React.CSSProperties
     onClick?: React.MouseEventHandler<HTMLElement>
+    onTap?: (event: NativeActivationEvent, info?: unknown) => void
     onKeyDown?: React.KeyboardEventHandler<HTMLElement>
     tabIndex?: number
 }
@@ -639,6 +655,7 @@ function useToggle(name: ToggleName) {
 function toggleButton(Component: NativeLayer, name: ToggleName): NativeLayer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const { enabled, frozen } = useToggle(name)
+        const activate = useNativeActivation(() => toggle(name), frozen)
         return <Component
             {...props}
             ref={ref}
@@ -647,7 +664,11 @@ function toggleButton(Component: NativeLayer, name: ToggleName): NativeLayer {
             aria-pressed={enabled}
             onClick={(event: React.MouseEvent<HTMLElement>) => {
                 props.onClick?.(event)
-                if (!frozen && !event.defaultPrevented) toggle(name)
+                activate("click", !!event.defaultPrevented)
+            }}
+            onTap={(event: NativeActivationEvent, info?: unknown) => {
+                props.onTap?.(event, info)
+                activate("tap", !!event.defaultPrevented)
             }}
             onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => {
                 props.onKeyDown?.(event)
@@ -657,7 +678,7 @@ function toggleButton(Component: NativeLayer, name: ToggleName): NativeLayer {
                     (event.key === "Enter" || event.key === " ")
                 ) {
                     event.preventDefault()
-                    toggle(name)
+                    activate("key", false)
                 }
             }}
         />
@@ -674,7 +695,8 @@ function toggleLayer(Component: NativeLayer, name: ToggleName): NativeLayer {
                 ...props.style,
                 opacity: enabled ? 1 : 0,
                 visibility: enabled ? "visible" : "hidden",
-                pointerEvents: enabled ? props.style?.pointerEvents : "none",
+                // Notes and daughter artwork are decorative, even when visible.
+                pointerEvents: "none",
             }}
         />
     })
