@@ -184,6 +184,19 @@ supported native component conversion, retain editable parts and actual ID
 lineage, and verify responsive variants, override placement and playback after
 conversion. Verify generated-page output alongside the saved tree.
 
+In the Ajedrez export, an instance's authored opacity remained on a generated
+outer container while its override controlled the inner component root. An
+opaque inner root could not overcome that hidden ancestor. Keep reused scene
+instances opaque and put their timed visibility override on an ordinary parent
+Frame. Check actual ancestor styles and visible artwork in Preview.
+
+Saved definition attributes also differed from the generated page: the native
+definition editor showed current artwork while page instances retained older
+contents. A reversible native opacity edit, `1 → 0.99 → 1`, on each explicitly
+opaque Primary variant refreshed the page Canvas. Full Preview then exposed the
+1,048,576-byte module limit. Check component publication, Phone metrics and page
+compilation together; correct saved attributes alone do not establish success.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live
