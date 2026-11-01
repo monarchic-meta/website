@@ -2,32 +2,243 @@
   "reference": "HERO-015",
   "source": "https://mecha-xyz.webflow.io/",
   "creators": [
+    "MECHA",
     "Widelab",
     "Grzegorz Leśniewicz"
   ],
   "sourceAsset": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
   "sourceAssetSHA256": "0d484646983d0a7da6d0b3360c7dfb2cbcbfd0837c2452649a044b70978cdab7",
-  "reuseLicense": "unverified; credited unpublished source recreation",
+  "sourceAssetBytes": 434228,
+  "reuseLicense": "unverified; credited unpublished Source inspiration recreation",
   "geometry": {
     "vertices": 696,
     "faces": 1364,
     "edges": 905,
     "sourceDeclarationSHA256": "8d727547588235c3453e6168ba3b63606fd8860b9a4e44bfb6d496ac7d75c01d",
-    "adaptation": "Exact prior normalized/welded source primitive0 and bevel-edge adjacency; no new shape simplification. Prior adaptation removed24 degenerate faces after six-decimal normalization."
+    "adaptation": "Retained prior primitive0 declaration unchanged as historical lineage; the renderer now uses both genuine source primitives below.",
+    "historicalOnly": true
   },
-  "scroll": {
-    "observedOffsets": [
-      0,
-      666,
-      1391,
-      2105
+  "currentGeometry": {
+    "sourceNode": "m_SHAPE.003",
+    "sourceMesh": "Curve.013",
+    "sourceNodeTransform": "Quaternion90° X, uniform10×scale; common scale cancels in source normalization.",
+    "normalization": {
+      "min": [
+        -0.0513453409075737,
+        -0.052267659455537796,
+        -0.009062077850103378
+      ],
+      "max": [
+        0.05134526640176773,
+        0.04242471233010292,
+        0.009062070399522781
+      ],
+      "center": [
+        -3.725290298461914e-8,
+        -0.004921473562717438,
+        -3.725290298461914e-9
+      ],
+      "span": 0.10269060730934143,
+      "maxNormalizedError": 0.00003051850947599719
+    },
+    "primitives": [
+      {
+        "primitive": 0,
+        "sourceMaterial": "white",
+        "sourceVertices": 696,
+        "weldedVertices": 696,
+        "triangles": 1388,
+        "bytes": 12512,
+        "packedSHA256": "e221d6272a4547da5de52ba5a8be3d28b0ec777446e3626c8e139bcddb42b8c2"
+      },
+      {
+        "primitive": 1,
+        "sourceMaterial": "BLACK",
+        "sourceVertices": 9360,
+        "weldedVertices": 8612,
+        "triangles": 16968,
+        "bytes": 153488,
+        "packedSHA256": "312fe48c30822e1981620f77e09c2fc48e737795c7be4384dc9186086c66b2e6"
+      }
     ],
-    "sourceViewport": [
-      1280,
-      720
+    "decimation": false,
+    "positionEncoding": "signed16 normalized coordinates; Uint16 triangle indices; exactly coincident positions welded",
+    "retainedTriangleCount": 18356,
+    "frustum": 2.4675566499509327
+  },
+  "observedBehavior": {
+    "audit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/audit-contract.json",
+      "sha256": "3662809b3624557fd2e764f34c3b1940c3a2f9148828a407c7416907bae77d2a",
+      "bytes": 9110
+    },
+    "sourceCode": "Retained primary-inline-scripts.js; inspected for parameters and causality, not imported into the implementation.",
+    "pointer": {
+      "hover": "No response without a press.",
+      "pressedDrag": "Mouse or touch client-pixel displacement; 0.006 radians per pixel, clamped to ±25° on both axes.",
+      "spring": {
+        "stiffness": 80,
+        "damping": 14,
+        "maximumDeltaSeconds": 0.1
+      },
+      "release": "Target returns to zero; no autonomous idle rotation.",
+      "rotationOrder": "YXZ; scroll yaw plus pressed yaw, with independent pitch."
+    },
+    "scroll": {
+      "start": "Hero top at viewport top.",
+      "end": "Hero bottom at viewport 10%.",
+      "yawRadians": [
+        0,
+        3.141592653589793
+      ],
+      "scrubSeconds": 2,
+      "desktopObservedHeroHeight": 900,
+      "desktopViewport": [
+        1440,
+        900
+      ],
+      "desktopYawOffset": [
+        0,
+        810
+      ],
+      "reverse": "Observed public scroll causality and authored reverse; focused browser checks require exact canonical return."
+    }
+  },
+  "rendering": {
+    "implementation": "Independent single-surface Canvas2D projection of both source material primitives. No source behavior JavaScript, Three.js runtime, new WebGL context or dependency.",
+    "camera": "Source orthographic (5,5,5) looking at origin, target size1.8, diagonal XZ padding1.35.",
+    "materials": {
+      "white": "Source white, opacity0.7, front/back passes.",
+      "black": "Source black opaque thin geometry; source closed-mesh rear faces culled for the Canvas2D projection."
+    },
+    "compositing": "128 finite depth bins with separate rear-white/front-white/black paths. This approximates original WebGL triangle depth and transparent blending; exact per-pixel equivalence is not claimed.",
+    "defaultInk": {
+      "prior": "#171717",
+      "current": "#000000",
+      "reason": "Actual current source material is black; the existing public Ink control remains available."
+    },
+    "quality": "Existing shared v2 still/live cache, transformed-screen resolution adequacy, 2MP serial still and 1MP Canvas-motion budgets are preserved. Renderer requires zero WebGL contexts."
+  },
+  "fittedHandoff": {
+    "existingPublicControlsPreserved": 8,
+    "fullPathSpanViewports": 2.923611111111111,
+    "scrollStartDefault": 0,
+    "desktopSamples": [
+      {
+        "offset": 0,
+        "size": 1,
+        "centerYFraction": 0.43349
+      },
+      {
+        "offset": 831,
+        "size": 0.9267,
+        "centerYFraction": 0.43424
+      },
+      {
+        "offset": 1478,
+        "size": 0.5,
+        "centerYFraction": 0.23773
+      },
+      {
+        "offset": 2631.25,
+        "size": 0.5,
+        "centerYFraction": -0.17621,
+        "alpha": 0
+      }
     ],
-    "meaning": "settled full mark; narrower sideways mark; smaller upper mark; absent mark",
-    "implementation": "Continuous real nearest-native-scroller/window offset, scaled by viewport height. No wheel interception, virtual document scroll, elapsed-time rotation, pointer response or stillTime substitution.",
-    "limits": "Exact source pose/scroll causality and curves unisolated; independent source-corresponding interpolation. Reverse is authored and tested, not claimed source-verified. Source Phone unverified; explicit responsive adaptation."
-  }
+    "interpolation": "Independent smooth interpolation through measured source poses; these native affine transforms are fitted rather than source CSS curve equivalence.",
+    "yaw": "Default full-path span keeps public compatibility; yaw reaches π at0.9 viewport and catches up over2 active seconds.",
+    "phone": "Separate source-corresponding camera aperture profile. Source page switches at991 CSS pixels, while this self-contained actor uses its authored narrow width to choose the phone profile; native responsive layout and exact full-hero trigger extent remain installation checks.",
+    "narrowFollowupLimit": "The auxiliary390-wide desktop-mode follow-up had a15px scrollbar and is not the canonical mobile390 capture."
+  },
+  "lifecycle": {
+    "canvas": "Still by default; explicit Canvas motion opt-in only for RenderTarget.canvas at12fps.",
+    "static": "Export/thumbnail and reduced motion freeze deterministic geometry; ordinary Preview interactions use30fps maximum emitted poses.",
+    "offscreen": "Release live work, retain last sharp frame, resume without wall-time catch-up.",
+    "input": "No wheel interception, no preventDefault, touch-action pan-y; pointercancel/up/blur release the spring.",
+    "cleanup": "Observers, pointer/scroll/visibility listeners and RAF are removed. Spring completion snaps only the final sub-epsilon pose to its canonical target for exact cache replay.",
+    "sharedCompatibility": "rgb, getStudyPool and useStudySurface bodies remain byte-for-byte identical to the retained shared implementation; private artworkRevision invalidates only obsolete Mecha material frames."
+  },
+  "visualEvidence": {
+    "sourceEntry": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/002-desktop-entry-settled.png",
+      "sha256": "002983a6f8e9707ea9277211536696656e65a78690ea5bb3a461e7d28aeee4f6",
+      "bytes": 70655
+    },
+    "sourcePressed": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/022-desktop-visible-mark-held-drag.png",
+      "sha256": "40155a24d9e58ccaf92842392000c117ddddf43bfa8c951bb014dddad276812b",
+      "bytes": 74435
+    },
+    "sourceRelease": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/023-desktop-visible-mark-release-spring.png",
+      "sha256": "72ea1bfb8c0c78b9a0e4605314cb43f9bfcfe73a75dd065718bacb7935fb3ca2",
+      "bytes": 70866
+    },
+    "candidateEntry": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/candidate-current-desktop-entry.png",
+      "sha256": "1d862317b2d5b9d9374df99bb5b88a863b0228ef58ffbe6819ebcbdf8e1842c2",
+      "bytes": 28500
+    },
+    "candidatePressed": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/candidate-current-desktop-held.png",
+      "sha256": "0566056bfbd2eace631521540bf98edfc3d7746647d90b001649a72536e4e50e",
+      "bytes": 30623
+    },
+    "candidateRelease": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/candidate-current-desktop-release.png",
+      "sha256": "1d862317b2d5b9d9374df99bb5b88a863b0228ef58ffbe6819ebcbdf8e1842c2",
+      "bytes": 28500
+    },
+    "scope": "Isolated local React/Chromium mark-only fixture, at the same Desktop source viewport and fitted native mark placement. Surrounding native typography is intentionally outside this code component."
+  },
+  "validation": {
+    "source": {
+      "path": "docs/design-studies/code-components/MechaScrollMark.tsx",
+      "sha256": "429fbc880ae001ca62041dd042f4edd2974272fb12c5e3587ac0a62fc15c9bea",
+      "bytes": 323362
+    },
+    "strictScript": {
+      "path": "scripts/check-mecha-scroll-mark.mjs",
+      "sha256": "4949b9e8c66ee894f36e868a9b28b2d6a762aef508ff1636a29500cb1496e661",
+      "bytes": 9066
+    },
+    "browserScript": {
+      "path": "scripts/check-mecha-scroll-mark-browser.mjs",
+      "sha256": "1befd37ed620f1848abffd65452adc6a579388a587e2d9e272c58ffe8bb6cbd2",
+      "bytes": 14747
+    },
+    "strictResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/strict-final-result.json",
+      "sha256": "1227a587024fd78c10c4fbc4f785e0011b3c0d56840cef6c6de2e722b3730a29",
+      "bytes": 1167
+    },
+    "browserResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/browser-final/result.json",
+      "sha256": "e962c42b9f4db0727730549d40ab60c17a7b3ec30941b8ecf6c0a0fe4cb2590a",
+      "bytes": 45430
+    },
+    "checks": "8 strict/pure/shared-pool groups and4 actual React/Chromium cases: Desktop, Phone touch, nested scroll, initially nonoverflowing ancestor; all passed.",
+    "browserRaster": "CPU Canvas2D (--disable-accelerated-2d-canvas), same actor/source/geometry and unchanged behavioral/pixel assertions; finite30s action/DOM waits.",
+    "retainedFailure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/software-gpu-incomplete-run.json",
+      "sha256": "965882d43712a15b894ade53ab653183565ac89a09339bba15297201447a47ea",
+      "bytes": 909
+    },
+    "failureBoundary": "Prior SwiftShader accelerated-2D attempt stalled after the Phone held screenshot with software-GPU CPU saturation. It is retained as incomplete, not a success or source-wall-time equivalence claim.",
+    "sharedCoreProof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/shared-core-preservation.json",
+      "sha256": "8fd9963f4a33e088fe10c2a1682b8d108081afc4cfcc6c0b3a98e3d65bc7efce",
+      "bytes": 724
+    },
+    "reproducibleCheck": "nix build .#checks.x86_64-linux.hero-behavior --no-link; final locked result pinned externally in implementation/final-source-receipt.json.",
+    "fixtureAdmission": "Meaningful input tests wait for actual current pointer/pose and painted-frame admission before measuring held angles; no source wall-time identity is inferred from software raster scheduling."
+  },
+  "remainingLimits": [
+    "Actual Framer saved source/export identity, editor reload and live Preview drag/scroll/Phone paint are pending writer installation.",
+    "The full current-original native manifesto/investment/team/contact story and Phone More/menu are outside this finite mark correction.",
+    "Native affine layout/scroll handoff is fitted, including the narrow profile; exact original page breakpoint and Phone hero extent require native layout evidence.",
+    "Canvas2D depth-bin/alpha and quantized geometry are close adaptations, not exact original WebGL compositing.",
+    "Source asset reuse license remains unverified."
+  ]
 }
