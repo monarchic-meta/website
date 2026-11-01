@@ -146,6 +146,9 @@ after writing it; validate arrays of files separately. A component can compile
 while Framer silently omits unsupported property values. When the representation
 is unclear, set one real value through the native picker and inspect its public
 model before applying the remaining bindings.
+An array can require typed file entries even when an individual File control
+accepts a single asset reference. Preserve the native picker representation and
+item order; do not infer the array format from its React prop type.
 
 Native component variants can use IDs as values while the picker displays names.
 Read a genuine picker assignment back through the public model and verify the
@@ -157,6 +160,13 @@ be needed to activate a newly uploaded custom face. Verify the rendered paragrap
 family, weight, tracking and line count in Preview: a requested font name does
 not prove that Framer avoided a fallback. Preserve source positions while giving
 single-word text boxes a documented allowance for native layout rounding.
+
+Check generated paragraph and inline-span styles after changing native text
+metrics. The public outer node and its virtual text children can report the
+requested values while Preview retains earlier inline formatting. If those
+disagree, apply the intended metrics through the native text controls and check
+Preview again. Verify each responsive layout separately before capturing the
+next preservation baseline.
 
 Use supported image-fitting properties. If the public model does not expose Fit,
 use an image frame with the intended fitted aspect ratio or set Fit in the native
