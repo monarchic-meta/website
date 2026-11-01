@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-005",
+  "sourceCreator": "Maximilian Kaspar; upstream botanical scan creator/license unverified",
+  "sourceURL": "https://maximiliankaspar.github.io/ascii-animation/model6.b9b49eee.stl",
+  "sourceSHA256": "fbf1a3285ded57b7af88e51d1edcd41b116bd7bfe05adce53a01d86ef122fc14",
+  "sourceBytes": 5805384,
+  "sourceTriangles": 116106,
+  "selection": "The narrow upright stem, lower-left pod/leaf cluster and upper-right branching best match the selected gallery silhouette among the seven actual source meshes; exact selected load/yaw remains unverified.",
+  "reuseScope": "Credited unpublished source recreation; no ownership or asset-license assertion.",
+  "sourceWebsiteBehaviorJSReused": false,
+  "adaptation": {
+    "method": "Pinned meshoptimizer gltfpack QEM, then normalized source framing and bounded position/normal quantization",
+    "tool": "/nix/store/hbf5snhv7pks857k25lmawzlprfcizm5-meshoptimizer-1.1.1-bin/bin/gltfpack",
+    "toolSHA256": "a48a62c4b1664f1c3f58f3084a136e2f50fc1230903f032fd094be8854c44e9c",
+    "arguments": [
+      "-i",
+      "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/qem/kaspar-source.glb",
+      "-o",
+      "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/qem/kaspar-qem.glb",
+      "-si",
+      "0.35",
+      "-sp",
+      "-se",
+      "0.0004",
+      "-noq",
+      "-kv"
+    ],
+    "sourceBounds": {
+      "min": [
+        -3.897825241088867,
+        -1.788502812385559,
+        -3.6866326332092285
+      ],
+      "max": [
+        3.800905227661133,
+        0.26969003677368164,
+        4.949771404266357
+      ]
+    },
+    "sourceHeight": 8.636404037475586,
+    "center": [
+      -0.04846000671386719,
+      -0.7594063878059387,
+      1.3936050358940575
+    ],
+    "targetRatio": 0.35,
+    "actualTriangleRatio": 0.4042857388937695,
+    "maxNormalizedPositionQuantizationError": 0.000007629301168821101,
+    "normalDiscontinuityPolicy": "Permissive QEM can simplify across source flat-normal seams; geometric silhouette and material error are measured separately.",
+    "sourceCameraFOV": 4.5,
+    "sourceCameraDistance": 100,
+    "inferredAzimuthRadiansPerSecond": 0.12,
+    "inference": "Source adds .002 per animation frame; .12rad/s assumes60fps, not a measured source rate.",
+    "silhouetteReview": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/comparison/result.json",
+      "sha256": "b1565ccb017911819d34d3b07ee395f5555ab683717afd55ef39202e4de418c0",
+      "views": 8,
+      "minimumIoU": 0.9986279442030642,
+      "maximum8NeighborBoundaryDistance": 1.4142135381698608,
+      "scope": "Independent CPU orthographic triangle projection of full actual STL and pinned QEM. 350/720px full-body height at0/.288/.96/π2 azimuth. 8-neighbor chamfer pixel distances; not a certified3D surface bound or the original source renderer/ASCII pixels. Extra16-bit runtime quantization is separately bounded in provenance."
+    },
+    "projectLockSHA256": "afeafa42195424b694a12aed92d80ef083cbeadc55d773ca7643acdca8f160b8"
+  },
+  "mesh": {
+    "vertices": 114863,
+    "triangles": 46940,
+    "indices": 140820,
+    "min": [
+      -0.4457138894465348,
+      -0.11915797594856671,
+      -0.5882352941176471
+    ],
+    "max": [
+      0.4457138894465348,
+      0.11913614977087932,
+      0.4117647058823529
+    ]
+  },
+  "codec": {
+    "name": "Bounded zigzag triangle deltas and raw DEFLATE",
+    "rawBytes": 1175515,
+    "rawSHA256": "237f99fb1a74f05049f1b8ca1cc3f48705c3ed947211f549bad2af889362e9fd",
+    "packedBytes": 658436,
+    "packedSHA256": "ba517b9a08d6609e3f482e1f24b7adc4a5bc201518311a5eeaf262d5072eb185"
+  },
+  "data": {
+    "path": "SourceKasparASCIIData.ts",
+    "bytes": 878063,
+    "sha256": "69548109a7f852e2d8d64606ee1f038c1d425183ce38f361422f3073d5e9779a"
+  },
+  "artifacts": {
+    "sourceGLB": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/qem/kaspar-source.glb",
+      "sha256": "8ff0eb276e12a4e8babce28856453a5075b3d2e49cea77ad22ecd2a6f92d4f90"
+    },
+    "qemGLB": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/qem/kaspar-qem.glb",
+      "sha256": "1c30a56b98d16f2dcb9a7e6ffffbb6c71a74e83fa8d231609e34eadca31ae3fe"
+    }
+  },
+  "auxiliaryTargets": {
+    "geometryFramebufferMaximumTexels": 131072,
+    "glyphAtlasTexels": 23040,
+    "additionalWebGLContexts": 0,
+    "scope": "These bounded intermediate textures use the same renderer/context lease. Shared pixel receipts measure final output surfaces, not all texture storage."
+  }
+}

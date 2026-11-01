@@ -1,0 +1,47 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import crypto from 'node:crypto'
+import zlib from 'node:zlib'
+import { spawnSync } from 'node:child_process'
+
+// Manual, offline source-data preparation. No website renderer or interaction JS.
+const args=process.argv.slice(2),arg=name=>{const at=args.indexOf(name);return at<0?undefined:args[at+1]}
+const sourcePath=arg('--source'),output=arg('--output'),work=arg('--work'),gltfpack=arg('--gltfpack')
+if(!sourcePath||!output||!work||!gltfpack)throw Error('Use --source <retained model6 STL> --output <new component directory> --work <artifact directory> --gltfpack <Nix executable>')
+const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex')
+if(hash(fs.readFileSync(gltfpack))!=='a48a62c4b1664f1c3f58f3084a136e2f50fc1230903f032fd094be8854c44e9c')throw Error('Unreviewed Nix geometry tool');
+const source=fs.readFileSync(sourcePath),sourceSHA256='fbf1a3285ded57b7af88e51d1edcd41b116bd7bfe05adce53a01d86ef122fc14'
+if(hash(source)!==sourceSHA256)throw Error('Unreviewed source STL')
+const triangles=source.readUInt32LE(80)
+if(source.length!==84+triangles*50||triangles!==116106)throw Error('Invalid source STL envelope')
+const positions=Buffer.alloc(triangles*36),normals=Buffer.alloc(triangles*36),min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity]
+for(let i=0;i<triangles;i++)for(let vertex=0;vertex<3;vertex++)for(let axis=0;axis<3;axis++){
+ const value=source.readFloatLE(84+i*50+12+vertex*12+axis*4),normal=source.readFloatLE(84+i*50+axis*4)
+ if(!Number.isFinite(value)||!Number.isFinite(normal))throw Error('Nonfinite source STL')
+ positions.writeFloatLE(value,i*36+vertex*12+axis*4);normals.writeFloatLE(normal,i*36+vertex*12+axis*4)
+ min[axis]=Math.min(min[axis],value);max[axis]=Math.max(max[axis],value)
+}
+function glb(document,binary){const json=Buffer.from(JSON.stringify(document)),j=Buffer.alloc(Math.ceil(json.length/4)*4,32),b=Buffer.alloc(Math.ceil(binary.length/4)*4);json.copy(j);binary.copy(b);const header=Buffer.alloc(12),jh=Buffer.alloc(8),bh=Buffer.alloc(8);header.writeUInt32LE(0x46546c67);header.writeUInt32LE(2,4);header.writeUInt32LE(12+8+j.length+8+b.length,8);jh.writeUInt32LE(j.length);jh.writeUInt32LE(0x4e4f534a,4);bh.writeUInt32LE(b.length);bh.writeUInt32LE(0x004e4942,4);return Buffer.concat([header,jh,j,bh,b])}
+fs.mkdirSync(work,{recursive:true});fs.mkdirSync(output,{recursive:true})
+const input=path.join(work,'kaspar-source.glb'),reduced=path.join(work,'kaspar-qem.glb'),ratio=Number(arg('--ratio')??.35)
+if(!(ratio>0&&ratio<=1))throw Error('Invalid reduction ratio')
+const inputGLB=glb({asset:{version:'2.0',generator:'Independent source-STL conversion'},buffers:[{byteLength:positions.length+normals.length}],bufferViews:[{buffer:0,byteOffset:0,byteLength:positions.length},{buffer:0,byteOffset:positions.length,byteLength:normals.length}],accessors:[{bufferView:0,componentType:5126,count:triangles*3,type:'VEC3',min,max},{bufferView:1,componentType:5126,count:triangles*3,type:'VEC3'}],meshes:[{primitives:[{attributes:{POSITION:0,NORMAL:1},mode:4}]}],nodes:[{mesh:0}],scenes:[{nodes:[0]}],scene:0},Buffer.concat([positions,normals]));fs.writeFileSync(input,inputGLB)
+const toolArguments=['-i',input,'-o',reduced,'-si',String(ratio),'-sp','-se','0.0004','-noq','-kv']
+const run=spawnSync(gltfpack,toolArguments,{encoding:'utf8'});fs.writeFileSync(path.join(work,'gltfpack.stdout.txt'),run.stdout??'');fs.writeFileSync(path.join(work,'gltfpack.stderr.txt'),run.stderr??'');if(run.status!==0)throw Error('Pinned QEM tool failed: '+run.stderr)
+const bytes=fs.readFileSync(reduced),document=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)).toString()),binStart=28+bytes.readUInt32LE(12),binary=bytes.subarray(binStart)
+const primitive=document.meshes[0].primitives[0]
+function accessor(index){const a=document.accessors[index],view=document.bufferViews[a.bufferView],size=a.type==='VEC3'?3:1,unit={5126:4,5125:4,5123:2}[a.componentType],out=[];if(!unit)throw Error('Unexpected QEM component');for(let i=0;i<a.count;i++)for(let j=0;j<size;j++){const offset=(view.byteOffset??0)+(a.byteOffset??0)+i*(view.byteStride??unit*size)+j*unit;out.push(a.componentType===5126?binary.readFloatLE(offset):a.componentType===5125?binary.readUInt32LE(offset):binary.readUInt16LE(offset))}return out}
+const p=accessor(primitive.attributes.POSITION),n=accessor(primitive.attributes.NORMAL),indices=primitive.indices===undefined?Array.from({length:p.length/3},(_,i)=>i):accessor(primitive.indices),count=p.length/3
+if(count<3||count>200000||indices.length%3||indices.some(x=>x>=count))throw Error('Unexpected QEM topology')
+const bodyHeight=max[2]-min[2],center=[(max[0]+min[0])/2,(max[1]+min[1])/2,min[2]+bodyHeight/1.7],normalized=p.map((x,i)=>(x-center[i%3])/bodyHeight),lo=[Infinity,Infinity,Infinity],hi=[-Infinity,-Infinity,-Infinity]
+for(let i=0;i<normalized.length;i++){lo[i%3]=Math.min(lo[i%3],normalized[i]);hi[i%3]=Math.max(hi[i%3],normalized[i])}
+const coordinate=Buffer.alloc(count*9);let maxError=0
+for(let i=0;i<normalized.length;i++){const axis=i%3,q=Math.round((normalized[i]-lo[axis])/(hi[axis]-lo[axis])*65535);coordinate.writeUInt16LE(q,i*2);maxError=Math.max(maxError,Math.abs(normalized[i]-(lo[axis]+q/65535*(hi[axis]-lo[axis]))));coordinate.writeInt8(Math.round(Math.max(-1,Math.min(1,n[i]))*127),count*6+i)}
+const deltas=[];let previous=0;for(const index of indices){let v=((index-previous)<<1)^((index-previous)>>31);previous=index;while(v>127){deltas.push((v&127)|128);v>>>=7}deltas.push(v)}
+const header=Buffer.alloc(64);header.write('KAS1');header.writeUInt32LE(count,4);header.writeUInt32LE(indices.length,8);header.writeUInt32LE(deltas.length,12);for(let i=0;i<3;i++){header.writeDoubleLE(lo[i],16+i*8);header.writeDoubleLE(hi[i],40+i*8)}
+const raw=Buffer.concat([header,coordinate,Buffer.from(deltas)]),packed=zlib.deflateRawSync(raw,{level:9}),encoded=packed.toString('base64'),data='// Source inspiration / HERO-005 / Maximilian Kaspar. Public botanical mesh license unverified.\nexport const SOURCE_KASPAR_ASCII_DATA: string = "'+encoded+'"\n'
+if(Buffer.byteLength(data)>950000)throw Error('Data helper exceeds reviewed single-file budget')
+fs.writeFileSync(path.join(output,'SourceKasparASCIIData.ts'),data);fs.mkdirSync(path.join(output,'assets'),{recursive:true})
+const metadata={auxiliaryTargets:{geometryFramebufferMaximumTexels:512*256,glyphAtlasTexels:' .:-=+*1#%@0$!*'.length*32*48,additionalWebGLContexts:0,scope:'These bounded intermediate textures use the same renderer/context lease. Shared pixel receipts measure final output surfaces, not all texture storage.'},schemaVersion:1,reference:'HERO-005',sourceCreator:'Maximilian Kaspar; upstream botanical scan creator/license unverified',sourceURL:'https://maximiliankaspar.github.io/ascii-animation/model6.b9b49eee.stl',sourceSHA256,sourceBytes:source.length,sourceTriangles:triangles,selection:'The narrow upright stem, lower-left pod/leaf cluster and upper-right branching best match the selected gallery silhouette among the seven actual source meshes; exact selected load/yaw remains unverified.',reuseScope:'Credited unpublished source recreation; no ownership or asset-license assertion.',sourceWebsiteBehaviorJSReused:false,adaptation:{method:'Pinned meshoptimizer gltfpack QEM, then normalized source framing and bounded position/normal quantization',tool:gltfpack,toolSHA256:hash(fs.readFileSync(gltfpack)),projectLockSHA256:hash(fs.readFileSync(new URL('../flake.lock',import.meta.url))),arguments:toolArguments,sourceBounds:{min,max},sourceHeight:bodyHeight,center,targetRatio:ratio,actualTriangleRatio:indices.length/3/triangles,maxNormalizedPositionQuantizationError:maxError,normalDiscontinuityPolicy:'Permissive QEM can simplify across source flat-normal seams; geometric silhouette and material error are measured separately.',sourceCameraFOV:4.5,sourceCameraDistance:100,inferredAzimuthRadiansPerSecond:.12,inference:'Source adds .002 per animation frame; .12rad/s assumes60fps, not a measured source rate.'},mesh:{vertices:count,triangles:indices.length/3,indices:indices.length,min:lo,max:hi},codec:{name:'Bounded zigzag triangle deltas and raw DEFLATE',rawBytes:raw.length,rawSHA256:hash(raw),packedBytes:packed.length,packedSHA256:hash(packed)},data:{path:'SourceKasparASCIIData.ts',bytes:Buffer.byteLength(data),sha256:hash(data)},artifacts:{sourceGLB:{path:input,sha256:hash(inputGLB)},qemGLB:{path:reduced,sha256:hash(bytes)}}}
+if(arg('--comparison')){const review=fs.readFileSync(arg('--comparison'));const parsed=JSON.parse(review);if(parsed.qemGLBSHA256!==metadata.artifacts.qemGLB.sha256)throw Error('Comparison does not bind this QEM');metadata.adaptation.silhouetteReview={path:arg('--comparison'),sha256:hash(review),views:parsed.rows.length,minimumIoU:Math.min(...parsed.rows.map(r=>r.silhouetteIoU)),maximum8NeighborBoundaryDistance:Math.max(...parsed.rows.map(r=>r.max8NeighborBoundaryDistance)),scope:parsed.method};}
+fs.writeFileSync(path.join(output,'assets/source-kaspar-ascii-provenance.json'),JSON.stringify(metadata,null,2)+'\n');fs.writeFileSync(path.join(work,'normalized-positions.f32le'),Buffer.from(new Float32Array(normalized).buffer));fs.writeFileSync(path.join(work,'normals.f32le'),Buffer.from(new Float32Array(n).buffer));fs.writeFileSync(path.join(work,'indices.u32le'),Buffer.from(new Uint32Array(indices).buffer));console.log(JSON.stringify(metadata,null,2))
