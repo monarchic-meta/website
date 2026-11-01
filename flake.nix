@@ -143,6 +143,10 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          native-hero-behaviors = mkWebsiteCheck "native-hero-behaviors" ''
+            export MONARCHIC_NATIVE_BEHAVIOR_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-hero-native-behaviors
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

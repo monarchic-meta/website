@@ -1,0 +1,5078 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-013",
+  "title": "FORMAT / long native sequence",
+  "classification": "SOURCE INSPIRATION / CREDited NATIVE BEHAVIOR ITERATION",
+  "source": {
+    "creator": "Obys × DES",
+    "url": "https://format.obys.agency/",
+    "gallery": "https://www.awwwards.com/sites/format",
+    "behaviorJSReused": false,
+    "phoneObserved": false
+  },
+  "width": 1440,
+  "viewportHeight": 810,
+  "documentHeight": 15158.25,
+  "sourceViewport": {
+    "width": 1280,
+    "height": 720,
+    "documentHeight": 13474
+  },
+  "phoneWidth": 390,
+  "phoneHeight": 844,
+  "background": "#222222",
+  "parts": [
+    {
+      "key": "opening-wordmark",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "273px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "opening-architectural-wordmark",
+      "type": "FrameNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "name": "architectural wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "235px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-0",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-0",
+        "position": "absolute",
+        "left": "20.25px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-1",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-1",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "78.75px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-2",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-2",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "108px",
+        "width": "106.875px",
+        "height": "77.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-3",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-3",
+        "position": "absolute",
+        "left": "250.875px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-4",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-4",
+        "position": "absolute",
+        "left": "367.875px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-5",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-5",
+        "position": "absolute",
+        "left": "483.75px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-6",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-6",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "131.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-7",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-7",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "163.125px",
+        "width": "104.625px",
+        "height": "67.5px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-8",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-8",
+        "position": "absolute",
+        "left": "715.5px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-9",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-9",
+        "position": "absolute",
+        "left": "831.375px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-10",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-10",
+        "position": "absolute",
+        "left": "948.375px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-11",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-11",
+        "position": "absolute",
+        "left": "1063.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-12",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-12",
+        "position": "absolute",
+        "left": "1179px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-13",
+      "type": "FrameNode",
+      "parent": "opening-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-13",
+        "position": "absolute",
+        "left": "1296px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "source-nav",
+      "type": "FrameNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "244px",
+        "width": "1400px",
+        "height": "16px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "source-credit",
+      "type": "RichTextNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "position": "absolute",
+        "left": "30px",
+        "top": "242px",
+        "width": "500px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Obys × DES / FORMAT"
+      }
+    },
+    {
+      "key": "source-season",
+      "type": "RichTextNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "position": "absolute",
+        "left": "724px",
+        "top": "247px",
+        "width": "240px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Season / 2026"
+      }
+    },
+    {
+      "key": "notes-toggle",
+      "type": "RichTextNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "position": "absolute",
+        "left": "1058px",
+        "top": "242px",
+        "width": "160px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Notes mode [0]"
+      }
+    },
+    {
+      "key": "daughter-toggle",
+      "type": "RichTextNode",
+      "parent": "opening-wordmark",
+      "attrs": {
+        "position": "absolute",
+        "left": "1235px",
+        "top": "242px",
+        "width": "185px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Daughter version [0]"
+      }
+    },
+    {
+      "key": "vertical-opening",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "409px",
+        "height": "426px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "vertical-paper",
+      "type": "FrameNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "vertical-photo",
+      "type": "FrameNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "113px",
+        "height": "426px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "vertical-opening-index",
+      "type": "RichTextNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "128px",
+        "top": "24px",
+        "width": "30px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "01"
+      }
+    },
+    {
+      "key": "vertical-opening-meta",
+      "type": "RichTextNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "161px",
+        "top": "14px",
+        "width": "140px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "FORMAT / Vertical"
+      }
+    },
+    {
+      "key": "vertical-opening-title",
+      "type": "RichTextNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "161px",
+        "top": "24px",
+        "width": "180px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Vertical"
+      }
+    },
+    {
+      "key": "vertical-shout",
+      "type": "RichTextNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "8px",
+        "top": "223px",
+        "width": "315px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "42px",
+        "lineHeight": "38px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "VERTICAL\nFORMAT"
+      }
+    },
+    {
+      "key": "vertical-disk",
+      "type": "FrameNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "341px",
+        "top": "0px",
+        "width": "68px",
+        "height": "68px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-0",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "60px",
+        "top": "33px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-1",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "52.0919px",
+        "top": "52.0919px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-2",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "33px",
+        "top": "60px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-3",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "13.9081px",
+        "top": "52.0919px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-4",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "6px",
+        "top": "33px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-5",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "13.9081px",
+        "top": "13.9081px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-6",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "33px",
+        "top": "6px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-dot-7",
+      "type": "FrameNode",
+      "parent": "vertical-disk",
+      "attrs": {
+        "position": "absolute",
+        "left": "52.0919px",
+        "top": "13.9081px",
+        "width": "2px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "vertical-opening-daughter-vertical",
+      "type": "FrameNode",
+      "parent": "vertical-opening",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "horizontal-wide",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1045px",
+        "height": "448px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "horizontal-photo",
+      "type": "FrameNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "355px",
+        "height": "448px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "horizontal-paper",
+      "type": "FrameNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "355px",
+        "top": "0px",
+        "width": "690px",
+        "height": "448px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "horizontal-wide-index",
+      "type": "RichTextNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "372px",
+        "top": "26px",
+        "width": "30px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "02"
+      }
+    },
+    {
+      "key": "horizontal-wide-meta",
+      "type": "RichTextNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "405px",
+        "top": "16px",
+        "width": "140px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "FORMAT / Horizontal"
+      }
+    },
+    {
+      "key": "horizontal-wide-title",
+      "type": "RichTextNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "405px",
+        "top": "26px",
+        "width": "180px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Horizontal"
+      }
+    },
+    {
+      "key": "horizontal-shout",
+      "type": "RichTextNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "372px",
+        "top": "212px",
+        "width": "650px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "64px",
+        "lineHeight": "57px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "HORIZONTAL\nFORMAT",
+        "letterSpacing": "-2px"
+      }
+    },
+    {
+      "key": "horizontal-wide-daughter-horizontal",
+      "type": "FrameNode",
+      "parent": "horizontal-wide",
+      "attrs": {
+        "position": "absolute",
+        "left": "355px",
+        "top": "0px",
+        "width": "690px",
+        "height": "448px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "vertical-deck",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "deck-paper",
+      "type": "FrameNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "vertical-deck-index",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "19px",
+        "width": "30px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "03"
+      }
+    },
+    {
+      "key": "vertical-deck-meta",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "43px",
+        "top": "9px",
+        "width": "140px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "FORMAT / Usage"
+      }
+    },
+    {
+      "key": "vertical-deck-title",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "43px",
+        "top": "19px",
+        "width": "180px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Usage"
+      }
+    },
+    {
+      "key": "deck-no-0",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "236px",
+        "top": "21px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "01"
+      }
+    },
+    {
+      "key": "deck-measure-0",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "265px",
+        "top": "21px",
+        "width": "65px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Dimensions"
+      }
+    },
+    {
+      "key": "deck-no-1",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "236px",
+        "top": "75px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "02"
+      }
+    },
+    {
+      "key": "deck-measure-1",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "265px",
+        "top": "75px",
+        "width": "65px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "Usage"
+      }
+    },
+    {
+      "key": "deck-no-2",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "236px",
+        "top": "129px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "03"
+      }
+    },
+    {
+      "key": "deck-measure-2",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "265px",
+        "top": "129px",
+        "width": "65px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "Orientation"
+      }
+    },
+    {
+      "key": "deck-no-3",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "236px",
+        "top": "183px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "04"
+      }
+    },
+    {
+      "key": "deck-measure-3",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "265px",
+        "top": "183px",
+        "width": "65px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "Format"
+      }
+    },
+    {
+      "key": "deck-large",
+      "type": "RichTextNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "8px",
+        "top": "223px",
+        "width": "320px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "42px",
+        "lineHeight": "38px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "VERTICAL\nFORMAT"
+      }
+    },
+    {
+      "key": "vertical-deck-daughter-deck",
+      "type": "FrameNode",
+      "parent": "vertical-deck",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "paired-dials",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "697px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "dial-left",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "0px",
+        "width": "697px",
+        "height": "697px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "dial-left-mark-0",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "676.5px",
+        "top": "341.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "01",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-1",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "632.8243px",
+        "top": "504.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "02",
+        "rotation": "30deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-2",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "513.5px",
+        "top": "623.8243px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "03",
+        "rotation": "60deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-3",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "350.5px",
+        "top": "667.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "04",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-4",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "187.5px",
+        "top": "623.8243px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "05",
+        "rotation": "120deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-5",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "68.1757px",
+        "top": "504.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "06",
+        "rotation": "150deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-6",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "24.5px",
+        "top": "341.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "07",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-7",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "68.1757px",
+        "top": "178.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "08",
+        "rotation": "210deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-8",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "187.5px",
+        "top": "59.1757px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "09",
+        "rotation": "240deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-9",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "350.5px",
+        "top": "15.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "10",
+        "rotation": "270deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-10",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "513.5px",
+        "top": "59.1757px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "11",
+        "rotation": "300deg"
+      }
+    },
+    {
+      "key": "dial-left-mark-11",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "632.8243px",
+        "top": "178.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "12",
+        "rotation": "330deg"
+      }
+    },
+    {
+      "key": "dial-left-hub",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "366px",
+        "top": "346px",
+        "width": "5px",
+        "height": "5px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "dial-left-hand",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "368.5px",
+        "top": "348.5px",
+        "width": "286px",
+        "height": "1px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "rotation": "20deg",
+        "transformOrigin": "0% 50%"
+      }
+    },
+    {
+      "key": "paired-dials-daughter-dial",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "0px",
+        "width": "697px",
+        "height": "697px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "dial-right",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "0px",
+        "width": "697px",
+        "height": "697px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "dial-right-mark-0",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1379.5px",
+        "top": "341.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "01",
+        "rotation": "0deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-1",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1335.8243px",
+        "top": "504.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "02",
+        "rotation": "30deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-2",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1216.5px",
+        "top": "623.8243px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "03",
+        "rotation": "60deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-3",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1053.5px",
+        "top": "667.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "04",
+        "rotation": "90deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-4",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "890.5px",
+        "top": "623.8243px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "05",
+        "rotation": "120deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-5",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "771.1757px",
+        "top": "504.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "06",
+        "rotation": "150deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-6",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "727.5px",
+        "top": "341.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "07",
+        "rotation": "180deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-7",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "771.1757px",
+        "top": "178.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "08",
+        "rotation": "210deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-8",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "890.5px",
+        "top": "59.1757px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "09",
+        "rotation": "240deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-9",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1053.5px",
+        "top": "15.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "10",
+        "rotation": "270deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-10",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1216.5px",
+        "top": "59.1757px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "11",
+        "rotation": "300deg"
+      }
+    },
+    {
+      "key": "dial-right-mark-11",
+      "type": "RichTextNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1335.8243px",
+        "top": "178.5px",
+        "width": "36px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "12",
+        "rotation": "330deg"
+      }
+    },
+    {
+      "key": "dial-right-hub",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1069px",
+        "top": "346px",
+        "width": "5px",
+        "height": "5px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "dial-right-hand",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "1071.5px",
+        "top": "348.5px",
+        "width": "286px",
+        "height": "1px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "rotation": "-30deg",
+        "transformOrigin": "0% 50%"
+      }
+    },
+    {
+      "key": "paired-dials-daughter-side-a",
+      "type": "FrameNode",
+      "parent": "paired-dials",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "0px",
+        "width": "697px",
+        "height": "697px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "triangle-format",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "704px",
+        "height": "609px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper",
+      "type": "FrameNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "704px",
+        "height": "609px",
+        "fill": "#00000000",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-0",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "704px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-1",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "3.6667px",
+        "top": "6.3438px",
+        "width": "696.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-2",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.3333px",
+        "top": "12.6875px",
+        "width": "689.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-3",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "11px",
+        "top": "19.0313px",
+        "width": "682px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-4",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "14.6667px",
+        "top": "25.375px",
+        "width": "674.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-5",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "18.3333px",
+        "top": "31.7188px",
+        "width": "667.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-6",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "22px",
+        "top": "38.0625px",
+        "width": "660px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-7",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "25.6667px",
+        "top": "44.4063px",
+        "width": "652.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-8",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "29.3333px",
+        "top": "50.75px",
+        "width": "645.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-9",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "33px",
+        "top": "57.0938px",
+        "width": "638px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-10",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "36.6667px",
+        "top": "63.4375px",
+        "width": "630.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-11",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "40.3333px",
+        "top": "69.7813px",
+        "width": "623.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-12",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "44px",
+        "top": "76.125px",
+        "width": "616px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-13",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "47.6667px",
+        "top": "82.4688px",
+        "width": "608.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-14",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "51.3333px",
+        "top": "88.8125px",
+        "width": "601.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-15",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "55px",
+        "top": "95.1563px",
+        "width": "594px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-16",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "58.6667px",
+        "top": "101.5px",
+        "width": "586.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-17",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "62.3333px",
+        "top": "107.8438px",
+        "width": "579.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-18",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "66px",
+        "top": "114.1875px",
+        "width": "572px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-19",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "69.6667px",
+        "top": "120.5313px",
+        "width": "564.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-20",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "73.3333px",
+        "top": "126.875px",
+        "width": "557.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-21",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "77px",
+        "top": "133.2188px",
+        "width": "550px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-22",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "80.6667px",
+        "top": "139.5625px",
+        "width": "542.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-23",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "84.3333px",
+        "top": "145.9063px",
+        "width": "535.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-24",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "88px",
+        "top": "152.25px",
+        "width": "528px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-25",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "91.6667px",
+        "top": "158.5938px",
+        "width": "520.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-26",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "95.3333px",
+        "top": "164.9375px",
+        "width": "513.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-27",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "99px",
+        "top": "171.2813px",
+        "width": "506px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-28",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "102.6667px",
+        "top": "177.625px",
+        "width": "498.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-29",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "106.3333px",
+        "top": "183.9688px",
+        "width": "491.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-30",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "110px",
+        "top": "190.3125px",
+        "width": "484px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-31",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "113.6667px",
+        "top": "196.6563px",
+        "width": "476.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-32",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "117.3333px",
+        "top": "203px",
+        "width": "469.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-33",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "121px",
+        "top": "209.3438px",
+        "width": "462px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-34",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "124.6667px",
+        "top": "215.6875px",
+        "width": "454.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-35",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "128.3333px",
+        "top": "222.0313px",
+        "width": "447.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-36",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "132px",
+        "top": "228.375px",
+        "width": "440px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-37",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "135.6667px",
+        "top": "234.7188px",
+        "width": "432.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-38",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "139.3333px",
+        "top": "241.0625px",
+        "width": "425.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-39",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "143px",
+        "top": "247.4063px",
+        "width": "418px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-40",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "146.6667px",
+        "top": "253.75px",
+        "width": "410.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-41",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "150.3333px",
+        "top": "260.0938px",
+        "width": "403.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-42",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "154px",
+        "top": "266.4375px",
+        "width": "396px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-43",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "157.6667px",
+        "top": "272.7813px",
+        "width": "388.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-44",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "161.3333px",
+        "top": "279.125px",
+        "width": "381.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-45",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "165px",
+        "top": "285.4688px",
+        "width": "374px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-46",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "168.6667px",
+        "top": "291.8125px",
+        "width": "366.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-47",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "172.3333px",
+        "top": "298.1563px",
+        "width": "359.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-48",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "176px",
+        "top": "304.5px",
+        "width": "352px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-49",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "179.6667px",
+        "top": "310.8438px",
+        "width": "344.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-50",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "183.3333px",
+        "top": "317.1875px",
+        "width": "337.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-51",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "187px",
+        "top": "323.5313px",
+        "width": "330px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-52",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "190.6667px",
+        "top": "329.875px",
+        "width": "322.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-53",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "194.3333px",
+        "top": "336.2188px",
+        "width": "315.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-54",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "198px",
+        "top": "342.5625px",
+        "width": "308px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-55",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "201.6667px",
+        "top": "348.9063px",
+        "width": "300.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-56",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "205.3333px",
+        "top": "355.25px",
+        "width": "293.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-57",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "209px",
+        "top": "361.5938px",
+        "width": "286px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-58",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "212.6667px",
+        "top": "367.9375px",
+        "width": "278.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-59",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "216.3333px",
+        "top": "374.2813px",
+        "width": "271.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-60",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "220px",
+        "top": "380.625px",
+        "width": "264px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-61",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "223.6667px",
+        "top": "386.9688px",
+        "width": "256.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-62",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "227.3333px",
+        "top": "393.3125px",
+        "width": "249.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-63",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "231px",
+        "top": "399.6563px",
+        "width": "242px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-64",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "234.6667px",
+        "top": "406px",
+        "width": "234.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-65",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "238.3333px",
+        "top": "412.3438px",
+        "width": "227.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-66",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "242px",
+        "top": "418.6875px",
+        "width": "220px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-67",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "245.6667px",
+        "top": "425.0313px",
+        "width": "212.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-68",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "249.3333px",
+        "top": "431.375px",
+        "width": "205.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-69",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "253px",
+        "top": "437.7188px",
+        "width": "198px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-70",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "256.6667px",
+        "top": "444.0625px",
+        "width": "190.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-71",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "260.3333px",
+        "top": "450.4063px",
+        "width": "183.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-72",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "264px",
+        "top": "456.75px",
+        "width": "176px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-73",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "267.6667px",
+        "top": "463.0938px",
+        "width": "168.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-74",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "271.3333px",
+        "top": "469.4375px",
+        "width": "161.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-75",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "275px",
+        "top": "475.7813px",
+        "width": "154px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-76",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "278.6667px",
+        "top": "482.125px",
+        "width": "146.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-77",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "282.3333px",
+        "top": "488.4688px",
+        "width": "139.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-78",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "286px",
+        "top": "494.8125px",
+        "width": "132px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-79",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "289.6667px",
+        "top": "501.1563px",
+        "width": "124.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-80",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "293.3333px",
+        "top": "507.5px",
+        "width": "117.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-81",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "297px",
+        "top": "513.8438px",
+        "width": "110px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-82",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "300.6667px",
+        "top": "520.1875px",
+        "width": "102.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-83",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "304.3333px",
+        "top": "526.5313px",
+        "width": "95.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-84",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "308px",
+        "top": "532.875px",
+        "width": "88px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-85",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "311.6667px",
+        "top": "539.2188px",
+        "width": "80.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-86",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "315.3333px",
+        "top": "545.5625px",
+        "width": "73.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-87",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "319px",
+        "top": "551.9063px",
+        "width": "66px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-88",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.6667px",
+        "top": "558.25px",
+        "width": "58.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-89",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "326.3333px",
+        "top": "564.5938px",
+        "width": "51.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-90",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "330px",
+        "top": "570.9375px",
+        "width": "44px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-91",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "333.6667px",
+        "top": "577.2813px",
+        "width": "36.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-92",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "337.3333px",
+        "top": "583.625px",
+        "width": "29.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-93",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "341px",
+        "top": "589.9688px",
+        "width": "22px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-94",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "344.6667px",
+        "top": "596.3125px",
+        "width": "14.6667px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-95",
+      "type": "FrameNode",
+      "parent": "triangle-paper",
+      "attrs": {
+        "position": "absolute",
+        "left": "348.3333px",
+        "top": "602.6563px",
+        "width": "7.3333px",
+        "height": "6.9438px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "triangle-stud-a",
+      "type": "FrameNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "29px",
+        "top": "24px",
+        "width": "33px",
+        "height": "33px",
+        "fill": "#222222",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "triangle-stud-b",
+      "type": "FrameNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "642px",
+        "top": "24px",
+        "width": "33px",
+        "height": "33px",
+        "fill": "#222222",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "triangle-heading",
+      "type": "RichTextNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "175px",
+        "top": "18px",
+        "width": "354px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "42px",
+        "lineHeight": "43.68px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "TRIANGLE",
+        "textAlignment": "center"
+      }
+    },
+    {
+      "key": "triangle-meta",
+      "type": "RichTextNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "46px",
+        "top": "86px",
+        "width": "220px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "FORMAT / 04"
+      }
+    },
+    {
+      "key": "triangle-index",
+      "type": "RichTextNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "349px",
+        "top": "582px",
+        "width": "40px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "04"
+      }
+    },
+    {
+      "key": "triangle-format-daughter-tri",
+      "type": "FrameNode",
+      "parent": "triangle-format",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "704px",
+        "height": "609px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "photo-window",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1045px",
+        "height": "448px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "window-paper",
+      "type": "FrameNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1045px",
+        "height": "448px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "window-shot-0",
+      "type": "FrameNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "14px",
+        "top": "40px",
+        "width": "316px",
+        "height": "368.5px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "window-shot-1",
+      "type": "FrameNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "359px",
+        "top": "40px",
+        "width": "316px",
+        "height": "368.5px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "window-shot-2",
+      "type": "FrameNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "704px",
+        "top": "40px",
+        "width": "316px",
+        "height": "368.5px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "photo-window-index",
+      "type": "RichTextNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "415px",
+        "top": "28px",
+        "width": "30px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "05"
+      }
+    },
+    {
+      "key": "photo-window-meta",
+      "type": "RichTextNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "448px",
+        "top": "18px",
+        "width": "140px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#bfbfbf",
+        "text": "FORMAT / Horizontal"
+      }
+    },
+    {
+      "key": "photo-window-title",
+      "type": "RichTextNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "448px",
+        "top": "28px",
+        "width": "180px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Horizontal"
+      }
+    },
+    {
+      "key": "photo-window-daughter-win",
+      "type": "FrameNode",
+      "parent": "photo-window",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1045px",
+        "height": "448px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "crossing-strips",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "841px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "strip-photo-left",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "0px",
+        "width": "697px",
+        "height": "226px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "strip-photo-right",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "0px",
+        "width": "697px",
+        "height": "226px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "strip-west-band-1",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "44px",
+        "width": "697px",
+        "height": "32px",
+        "fill": "#e9e9e9",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "strip-west-band-2",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "97px",
+        "width": "697px",
+        "height": "32px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "strip-west-label",
+      "type": "RichTextNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "95px",
+        "top": "56px",
+        "width": "450px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "HORIZONTAL / FORMAT"
+      }
+    },
+    {
+      "key": "strip-east-band-1",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "44px",
+        "width": "697px",
+        "height": "32px",
+        "fill": "#e9e9e9",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "strip-east-band-2",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "97px",
+        "width": "697px",
+        "height": "32px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "strip-east-label",
+      "type": "RichTextNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "798px",
+        "top": "56px",
+        "width": "450px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "HORIZONTAL / FORMAT"
+      }
+    },
+    {
+      "key": "crossing-strips-daughter-vee-west",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "44px",
+        "width": "697px",
+        "height": "182px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "crossing-strips-daughter-vee-east",
+      "type": "FrameNode",
+      "parent": "crossing-strips",
+      "attrs": {
+        "position": "absolute",
+        "left": "723px",
+        "top": "0px",
+        "width": "159px",
+        "height": "226px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "oversized-ring-field",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1800px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "ring-west",
+      "type": "FrameNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "-540px",
+        "top": "-220px",
+        "width": "1900px",
+        "height": "1900px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "ring-west-cut",
+      "type": "FrameNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "-360px",
+        "top": "-40px",
+        "width": "1540px",
+        "height": "1540px",
+        "fill": "#222222",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "ring-east",
+      "type": "FrameNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "650px",
+        "top": "0px",
+        "width": "1820px",
+        "height": "1820px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "ring-east-cut",
+      "type": "FrameNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "830px",
+        "top": "180px",
+        "width": "1460px",
+        "height": "1460px",
+        "fill": "#222222",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "ring-center",
+      "type": "FrameNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "684px",
+        "top": "700px",
+        "width": "72px",
+        "height": "72px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "ring-label",
+      "type": "RichTextNode",
+      "parent": "oversized-ring-field",
+      "attrs": {
+        "position": "absolute",
+        "left": "550px",
+        "top": "650px",
+        "width": "500px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "24px",
+        "lineHeight": "24.96px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "CIRCLE / TRIANGLE",
+        "rotation": "-35deg"
+      }
+    },
+    {
+      "key": "poster-advice",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1617px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "poster-photograph",
+      "type": "FrameNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "0px",
+        "width": "697px",
+        "height": "843px",
+        "fill": "#dddddd",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "poster-label",
+      "type": "RichTextNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "735px",
+        "top": "24px",
+        "width": "620px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "92px",
+        "lineHeight": "95.68px",
+        "fontWeight": 400,
+        "textColor": "#ffffff",
+        "text": "FORMAT",
+        "letterSpacing": "-4px"
+      }
+    },
+    {
+      "key": "poster-advice-copy",
+      "type": "RichTextNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "735px",
+        "top": "185px",
+        "width": "620px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "64px",
+        "lineHeight": "58px",
+        "fontWeight": 400,
+        "textColor": "#ffffff",
+        "text": "A FORMAT\nSHAPES THE\nCOMPOSITION."
+      }
+    },
+    {
+      "key": "poster-advice-dial",
+      "type": "FrameNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "735px",
+        "top": "540px",
+        "width": "360px",
+        "height": "360px",
+        "fill": "#ffffff",
+        "overflow": "visible",
+        "radius": "50%"
+      }
+    },
+    {
+      "key": "poster-dial-rule",
+      "type": "FrameNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "915px",
+        "top": "720px",
+        "width": "145px",
+        "height": "2px",
+        "fill": "#000000",
+        "overflow": "visible",
+        "rotation": "-25deg"
+      }
+    },
+    {
+      "key": "poster-advice-daughter-poster-shot",
+      "type": "FrameNode",
+      "parent": "poster-advice",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "0px",
+        "width": "697px",
+        "height": "843px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "poster-guides",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "810px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "poster-guide-box",
+      "type": "FrameNode",
+      "parent": "poster-guides",
+      "attrs": {
+        "position": "absolute",
+        "left": "180px",
+        "top": "100px",
+        "width": "1080px",
+        "height": "540px",
+        "fill": "#00000000",
+        "overflow": "visible",
+        "border": "1px dashed #aaaaaa"
+      }
+    },
+    {
+      "key": "poster-guide-diagonal-a",
+      "type": "FrameNode",
+      "parent": "poster-guides",
+      "attrs": {
+        "position": "absolute",
+        "left": "180px",
+        "top": "100px",
+        "width": "1208px",
+        "height": "1px",
+        "fill": "#aaaaaa",
+        "overflow": "visible",
+        "rotation": "26.565deg",
+        "transformOrigin": "0% 0%"
+      }
+    },
+    {
+      "key": "poster-guide-diagonal-b",
+      "type": "FrameNode",
+      "parent": "poster-guides",
+      "attrs": {
+        "position": "absolute",
+        "left": "180px",
+        "top": "640px",
+        "width": "1208px",
+        "height": "1px",
+        "fill": "#aaaaaa",
+        "overflow": "visible",
+        "rotation": "-26.565deg",
+        "transformOrigin": "0% 0%"
+      }
+    },
+    {
+      "key": "format-footer",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "273px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "footer-architectural-wordmark",
+      "type": "FrameNode",
+      "parent": "format-footer",
+      "attrs": {
+        "name": "architectural wordmark",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "235px",
+        "fill": "#222222",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-0",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-0",
+        "position": "absolute",
+        "left": "20.25px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-1",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-1",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "78.75px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-2",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-2",
+        "position": "absolute",
+        "left": "136.125px",
+        "top": "108px",
+        "width": "106.875px",
+        "height": "77.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-3",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-3",
+        "position": "absolute",
+        "left": "250.875px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-4",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-4",
+        "position": "absolute",
+        "left": "367.875px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-5",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-5",
+        "position": "absolute",
+        "left": "483.75px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-6",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-6",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "131.625px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-7",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-7",
+        "position": "absolute",
+        "left": "600.75px",
+        "top": "163.125px",
+        "width": "104.625px",
+        "height": "67.5px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-8",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-8",
+        "position": "absolute",
+        "left": "715.5px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-9",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-9",
+        "position": "absolute",
+        "left": "831.375px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-10",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-10",
+        "position": "absolute",
+        "left": "948.375px",
+        "top": "20.25px",
+        "width": "105.75px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-11",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-11",
+        "position": "absolute",
+        "left": "1063.125px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-12",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-12",
+        "position": "absolute",
+        "left": "1179px",
+        "top": "20.25px",
+        "width": "108px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-13",
+      "type": "FrameNode",
+      "parent": "footer-architectural-wordmark",
+      "attrs": {
+        "name": "solid-letter-block-13",
+        "position": "absolute",
+        "left": "1296px",
+        "top": "20.25px",
+        "width": "106.875px",
+        "height": "210.375px",
+        "fill": "#ffffff",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "key": "footer-native-rail",
+      "type": "FrameNode",
+      "parent": "format-footer",
+      "attrs": {
+        "position": "absolute",
+        "left": "20px",
+        "top": "244px",
+        "width": "1400px",
+        "height": "16px",
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "footer-credit",
+      "type": "RichTextNode",
+      "parent": "format-footer",
+      "attrs": {
+        "position": "absolute",
+        "left": "30px",
+        "top": "242px",
+        "width": "500px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Obys × DES / FORMAT"
+      }
+    },
+    {
+      "key": "footer-season",
+      "type": "RichTextNode",
+      "parent": "format-footer",
+      "attrs": {
+        "position": "absolute",
+        "left": "724px",
+        "top": "247px",
+        "width": "240px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "12.48px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Season / 2026"
+      }
+    },
+    {
+      "key": "notes-layer",
+      "type": "FrameNode",
+      "parent": "stage",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "810px",
+        "fill": "#00000000",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "note-0",
+      "type": "FrameNode",
+      "parent": "notes-layer",
+      "attrs": {
+        "position": "absolute",
+        "left": "500px",
+        "top": "280px",
+        "width": "143px",
+        "height": "54px",
+        "fill": "#e0ddbf",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "note-0-label",
+      "type": "RichTextNode",
+      "parent": "note-0",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "01",
+        "opacity": 0.4
+      }
+    },
+    {
+      "key": "note-0-copy",
+      "type": "RichTextNode",
+      "parent": "note-0",
+      "attrs": {
+        "position": "absolute",
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Vertical format"
+      }
+    },
+    {
+      "key": "note-1",
+      "type": "FrameNode",
+      "parent": "notes-layer",
+      "attrs": {
+        "position": "absolute",
+        "left": "970px",
+        "top": "100px",
+        "width": "143px",
+        "height": "54px",
+        "fill": "#e0ddbf",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "note-1-label",
+      "type": "RichTextNode",
+      "parent": "note-1",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "02",
+        "opacity": 0.4
+      }
+    },
+    {
+      "key": "note-1-copy",
+      "type": "RichTextNode",
+      "parent": "note-1",
+      "attrs": {
+        "position": "absolute",
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "Orientation changes the field"
+      }
+    },
+    {
+      "key": "note-2",
+      "type": "FrameNode",
+      "parent": "notes-layer",
+      "attrs": {
+        "position": "absolute",
+        "left": "160px",
+        "top": "590px",
+        "width": "143px",
+        "height": "54px",
+        "fill": "#e0ddbf",
+        "overflow": "visible",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "note-2-label",
+      "type": "RichTextNode",
+      "parent": "note-2",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "03",
+        "opacity": 0.4
+      }
+    },
+    {
+      "key": "note-2-copy",
+      "type": "RichTextNode",
+      "parent": "note-2",
+      "attrs": {
+        "position": "absolute",
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "height": "auto",
+        "fontName": "Inter",
+        "fontSize": "8px",
+        "lineHeight": "8.32px",
+        "fontWeight": 400,
+        "textColor": "#000000",
+        "text": "A format frames the image"
+      }
+    }
+  ],
+  "actors": [
+    {
+      "key": "opening-wordmark",
+      "width": 1440,
+      "height": 273,
+      "sourceClass": "logo-fixed/nav",
+      "anchor": "entry",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "vertical-opening",
+      "width": 409,
+      "height": 426,
+      "sourceClass": "block-one",
+      "anchor": "entry",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "horizontal-wide",
+      "width": 1045,
+      "height": 448,
+      "sourceClass": "wide",
+      "anchor": "first handoff",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "vertical-deck",
+      "width": 335,
+      "height": 426,
+      "sourceClass": "deck",
+      "anchor": "usage card",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "paired-dials",
+      "width": 1440,
+      "height": 697,
+      "sourceClass": "dial/side-a",
+      "anchor": "large clock passage",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "triangle-format",
+      "width": 704,
+      "height": 609,
+      "sourceClass": "tri",
+      "anchor": "triangle passage",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "photo-window",
+      "width": 1045,
+      "height": 448,
+      "sourceClass": "win",
+      "anchor": "photo/circle passage",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "crossing-strips",
+      "width": 1440,
+      "height": 841,
+      "sourceClass": "vee",
+      "anchor": "crossing band passage",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "oversized-ring-field",
+      "width": 1440,
+      "height": 1800,
+      "sourceClass": "gauge",
+      "anchor": "circle/triangle band passage",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "poster-advice",
+      "width": 1440,
+      "height": 1617,
+      "sourceClass": "poster",
+      "anchor": "poster and advice",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "poster-guides",
+      "width": 1440,
+      "height": 810,
+      "sourceClass": "field",
+      "anchor": "outro guide frame",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "format-footer",
+      "width": 1440,
+      "height": 273,
+      "sourceClass": "footer",
+      "anchor": "terminal",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    },
+    {
+      "key": "notes-layer",
+      "width": 1440,
+      "height": 810,
+      "sourceClass": "notes",
+      "anchor": "toggle overlay",
+      "evidence": "Source CSS base dimensions; placement/transform tracks refer to root browser captures. Unknown interpolation is an independent approximation."
+    }
+  ],
+  "imageBindings": [
+    {
+      "key": "vertical-photo",
+      "asset": {
+        "url": "https://format.obys.agency/assets/vertical-card-DzgfrpMV.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/vertical-card-DzgfrpMV.webp",
+        "bytes": 99562,
+        "sha256": "2eb61b2cc2eafba1614b6dfda0d828d35282308d0d9eaed3a77a3349ed361cb3",
+        "width": 524,
+        "height": 1851,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "vertical-opening-daughter-vertical",
+      "asset": {
+        "url": "https://format.obys.agency/kid/vertical.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/vertical.webp",
+        "bytes": 594718,
+        "sha256": "34cc81fe3f141704d0429cd42f7185719fc90eb6713cac88aa76161d4ae0f689",
+        "width": 670,
+        "height": 852,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "horizontal-photo",
+      "asset": {
+        "url": "https://format.obys.agency/assets/horizontal-CWAIze4S.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/horizontal-CWAIze4S.webp",
+        "bytes": 148272,
+        "sha256": "206b0525b97849855e884cf8e40e4d63fbcabce81ebe80f7b2dab42e4d27dca7",
+        "width": 710,
+        "height": 896,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "horizontal-wide-daughter-horizontal",
+      "asset": {
+        "url": "https://format.obys.agency/kid/horizontal.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/horizontal.webp",
+        "bytes": 1466538,
+        "sha256": "ec83094a4dabc11785cec2b0b23edd9b4ee2368083e81107595591c0fb14af2b",
+        "width": 1380,
+        "height": 896,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "vertical-deck-daughter-deck",
+      "asset": {
+        "url": "https://format.obys.agency/kid/deck.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/deck.webp",
+        "bytes": 569762,
+        "sha256": "5ea44750c32351e1d6bc5bf244b514dc53c8b3d43ea48f0dbf2a5291cf5ef730",
+        "width": 670,
+        "height": 852,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "paired-dials-daughter-dial",
+      "asset": {
+        "url": "https://format.obys.agency/kid/dial.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/dial.webp",
+        "bytes": 1732518,
+        "sha256": "01f491e79792fa180a10f564abbbf2ee8c8b0728caba5bd7062fab3a23c65d0a",
+        "width": 1394,
+        "height": 1394,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "paired-dials-daughter-side-a",
+      "asset": {
+        "url": "https://format.obys.agency/kid/side-a.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/side-a.webp",
+        "bytes": 1514178,
+        "sha256": "ae3e929730ebea64e495eb1b420bc91254441722fb8baa91dec5fee55d6c5f87",
+        "width": 1298,
+        "height": 1298,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "triangle-format-daughter-tri",
+      "asset": {
+        "url": "https://format.obys.agency/kid/tri.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/tri.webp",
+        "bytes": 1140688,
+        "sha256": "03eb1334dbf1b269de3f85c6f42719ffb94c4e44baf0cb20d63438e57d70335c",
+        "width": 1408,
+        "height": 1217,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "window-shot-0",
+      "asset": {
+        "url": "https://format.obys.agency/assets/a-B09-tIjy.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/a-B09-tIjy.webp",
+        "bytes": 16634,
+        "sha256": "d92fb51d754b296fe2cef4c1438499dd48daa4785b93ba8fda937fefbd2a0aba",
+        "width": 316,
+        "height": 398,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "window-shot-1",
+      "asset": {
+        "url": "https://format.obys.agency/assets/b-Bh_L6HFx.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/b-Bh_L6HFx.webp",
+        "bytes": 6566,
+        "sha256": "08a5341d9aaef4e7709706e0bb723243cc8ec31aac89b860874fb5a1bc56f460",
+        "width": 316,
+        "height": 398,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "window-shot-2",
+      "asset": {
+        "url": "https://format.obys.agency/assets/c-CgW8p4ax.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/c-CgW8p4ax.webp",
+        "bytes": 8010,
+        "sha256": "332ce23b08b2ea6ac9d9c3e22c30592e8079bdd9db8a10e562ba129d1a274c50",
+        "width": 316,
+        "height": 399,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "photo-window-daughter-win",
+      "asset": {
+        "url": "https://format.obys.agency/kid/win.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/win.webp",
+        "bytes": 2153938,
+        "sha256": "11b11de6dc9b672e2f84de314396ee5707ec1f228cbc98775c3f2689f7739bad",
+        "width": 2090,
+        "height": 896,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "strip-photo-left",
+      "asset": {
+        "url": "https://format.obys.agency/assets/rec-left-CR_1c09C.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/rec-left-CR_1c09C.webp",
+        "bytes": 117778,
+        "sha256": "201a390b99d0cf555d73ac5c6bda64003e46dce18163046c78f1b5f086e9ee48",
+        "width": 1394,
+        "height": 452,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "strip-photo-right",
+      "asset": {
+        "url": "https://format.obys.agency/assets/rec-right-CyoYXL7w.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/rec-right-CyoYXL7w.webp",
+        "bytes": 18554,
+        "sha256": "d54dcd192ebe2485befd30389a939036314f5c488f6a819d59bdb895c4c94f6d",
+        "width": 1076,
+        "height": 452,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "crossing-strips-daughter-vee-west",
+      "asset": {
+        "url": "https://format.obys.agency/kid/vee-west.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/vee-west.webp",
+        "bytes": 258632,
+        "sha256": "41cf6f820694755dbab6f9141ea86b4f6026a1011ce020769866787b88adf8f6",
+        "width": 1394,
+        "height": 364,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "crossing-strips-daughter-vee-east",
+      "asset": {
+        "url": "https://format.obys.agency/kid/vee-east.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/vee-east.webp",
+        "bytes": 344030,
+        "sha256": "21a45294a2b59fa855e27cf9ed5d166506f81335d4af616b7faedfb9eecee167",
+        "width": 477,
+        "height": 678,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    },
+    {
+      "key": "poster-photograph",
+      "asset": {
+        "url": "https://format.obys.agency/assets/poster-BewnwD3v.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/assets/poster-BewnwD3v.webp",
+        "bytes": 24730,
+        "sha256": "83ca433465565af7ca0b809ad63c6537f89ca630f60cc03fe70fec14ec06ec8e",
+        "width": 1380,
+        "height": 1668,
+        "format": "webp",
+        "credit": "FORMAT / Obys × DES; individual photo authors/license not identified in inspected page; credited source recreation only."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%"
+    },
+    {
+      "key": "poster-advice-daughter-poster-shot",
+      "asset": {
+        "url": "https://format.obys.agency/kid/poster-shot.webp",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/kid-assets/poster-shot.webp",
+        "bytes": 2701984,
+        "sha256": "c99a174b3c4b7d6d6c6ef8218f0db28672f045e2323470ba0306339ec238b6d1",
+        "width": 1380,
+        "height": 1668,
+        "hasAlpha": true,
+        "credit": "FORMAT / Obys × DES; sourceDaughterversiongraphicasset, individualdrawingauthorship/license not independently verified."
+      },
+      "fillImageSize": "cover",
+      "fillImagePositionX": "50%",
+      "fillImagePositionY": "50%",
+      "conditionalLayer": "daughter"
+    }
+  ],
+  "scrollTracks": [
+    {
+      "targetKey": "opening-wordmark",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 0,
+          "logicalScrollY": 0,
+          "left": 0,
+          "viewportTop": 0,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 715,
+          "logicalScrollY": 804.375,
+          "left": 0,
+          "viewportTop": -40,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0.2
+        },
+        {
+          "sourceScrollY": 2147,
+          "logicalScrollY": 2415.375,
+          "left": 0,
+          "viewportTop": -273,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Fading/moving wordmark is observed; exact scroll response approximated. Toggles must remain accessible through native top utility controls."
+    },
+    {
+      "targetKey": "vertical-opening",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 0,
+          "logicalScrollY": 0,
+          "left": 553,
+          "viewportTop": 436,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 715,
+          "logicalScrollY": 804.375,
+          "left": 553,
+          "viewportTop": -330,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Initial paper and clock are native; source photo remains an aperture."
+    },
+    {
+      "targetKey": "horizontal-wide",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 0,
+          "logicalScrollY": 0,
+          "left": 198,
+          "viewportTop": 868,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 715,
+          "logicalScrollY": 804.375,
+          "left": 198,
+          "viewportTop": 63,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 2147,
+          "logicalScrollY": 2415.375,
+          "left": 198,
+          "viewportTop": -450,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Settled wide paper observed at source715; native transition overlaps the wordmark."
+    },
+    {
+      "targetKey": "vertical-deck",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 1440,
+          "logicalScrollY": 1620,
+          "left": 552,
+          "viewportTop": 500,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 2147,
+          "logicalScrollY": 2415.375,
+          "left": 552,
+          "viewportTop": 195,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 2878,
+          "logicalScrollY": 3237.75,
+          "left": 552,
+          "viewportTop": -480,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Small centered card photographed at source2147; no invented hover response."
+    },
+    {
+      "targetKey": "paired-dials",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 2147,
+          "logicalScrollY": 2415.375,
+          "left": 0,
+          "viewportTop": 750,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 2878,
+          "logicalScrollY": 3237.75,
+          "left": 0,
+          "viewportTop": 50,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 3594,
+          "logicalScrollY": 4043.25,
+          "left": 0,
+          "viewportTop": -700,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Both giant circular faces observed; optional slow hand rotation is source-inspired timing approximation, not captured exact clock state."
+    },
+    {
+      "targetKey": "triangle-format",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 2878,
+          "logicalScrollY": 3237.75,
+          "left": 368,
+          "viewportTop": 850,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 3594,
+          "logicalScrollY": 4043.25,
+          "left": 368,
+          "viewportTop": 80,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 4306,
+          "logicalScrollY": 4844.25,
+          "left": 368,
+          "viewportTop": -620,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 6473,
+          "logicalScrollY": 7282.125,
+          "left": 368,
+          "viewportTop": 650,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 7196,
+          "logicalScrollY": 8095.5,
+          "left": 368,
+          "viewportTop": 72,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 7913,
+          "logicalScrollY": 8902.125,
+          "left": 368,
+          "viewportTop": -610,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Triangle appears in multiple source passages. Reuse the same actor with observed independent positions; exact return trajectory unmeasured."
+    },
+    {
+      "targetKey": "photo-window",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 5038,
+          "logicalScrollY": 5667.75,
+          "left": 198,
+          "viewportTop": 720,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 5758,
+          "logicalScrollY": 6477.75,
+          "left": 198,
+          "viewportTop": 110,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 6473,
+          "logicalScrollY": 7282.125,
+          "left": 198,
+          "viewportTop": -450,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Three photographic apertures under a native circular/white clipping composition; exact source spring dynamics not observed."
+    },
+    {
+      "targetKey": "crossing-strips",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 5758,
+          "logicalScrollY": 6477.75,
+          "left": 0,
+          "viewportTop": 780,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 6473,
+          "logicalScrollY": 7282.125,
+          "left": 0,
+          "viewportTop": 100,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 7196,
+          "logicalScrollY": 8095.5,
+          "left": 0,
+          "viewportTop": -450,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Real red-tree media stays photographic; text and masking bands native."
+    },
+    {
+      "targetKey": "oversized-ring-field",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 7196,
+          "logicalScrollY": 8095.5,
+          "left": 0,
+          "viewportTop": 780,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 7913,
+          "logicalScrollY": 8902.125,
+          "left": 0,
+          "viewportTop": -80,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 8630,
+          "logicalScrollY": 9708.75,
+          "left": 0,
+          "viewportTop": -630,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 9356,
+          "logicalScrollY": 10525.5,
+          "left": 0,
+          "viewportTop": -1050,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Huge crossing arcs and central changing geometry are browser-observed. Ring dimensions/curves are measured visual approximation; preserve crop rather than fit whole circles."
+    },
+    {
+      "targetKey": "poster-advice",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 9356,
+          "logicalScrollY": 10525.5,
+          "left": 0,
+          "viewportTop": 820,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 10070,
+          "logicalScrollY": 11328.75,
+          "left": 0,
+          "viewportTop": 40,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 10791,
+          "logicalScrollY": 12139.875,
+          "left": 0,
+          "viewportTop": -120,
+          "scale": 0.85,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 11513,
+          "logicalScrollY": 12952.125,
+          "left": 360,
+          "viewportTop": 70,
+          "scale": 0.48,
+          "rotation": -5,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 12237,
+          "logicalScrollY": 13766.625,
+          "left": 380,
+          "viewportTop": 110,
+          "scale": 0.42,
+          "rotation": 18,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 12744,
+          "logicalScrollY": 14337,
+          "left": 400,
+          "viewportTop": 160,
+          "scale": 0.36,
+          "rotation": -8,
+          "opacity": 1
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Framed flower/advice becomes smaller and later tilted. Observed poses only; exact clacking/physics not measured. Advice copy independently paraphrased to avoid copying source prose."
+    },
+    {
+      "targetKey": "poster-guides",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 10791,
+          "logicalScrollY": 12139.875,
+          "left": 0,
+          "viewportTop": 800,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 11513,
+          "logicalScrollY": 12952.125,
+          "left": 0,
+          "viewportTop": 0,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 12237,
+          "logicalScrollY": 13766.625,
+          "left": 0,
+          "viewportTop": 0,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        },
+        {
+          "sourceScrollY": 12744,
+          "logicalScrollY": 14337,
+          "left": 0,
+          "viewportTop": -700,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Dashed frame/cross guides appear around the shrinking card."
+    },
+    {
+      "targetKey": "format-footer",
+      "domain": "ordinary document scroll at Desktop1280×720, converted to1440base",
+      "poses": [
+        {
+          "sourceScrollY": 12237,
+          "logicalScrollY": 13766.625,
+          "left": 0,
+          "viewportTop": 1000,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 0
+        },
+        {
+          "sourceScrollY": 12744,
+          "logicalScrollY": 14337,
+          "left": 0,
+          "viewportTop": 540,
+          "scale": 1,
+          "rotation": 0,
+          "opacity": 1
+        }
+      ],
+      "interpolation": "Independent eased interpolation between retained observed poses, not measured source scrub curve.",
+      "note": "Actual terminal FORMAT footer observed; position bounds use retained source end frame."
+    }
+  ],
+  "toggles": {
+    "notes": {
+      "default": false,
+      "targetKeys": [
+        "note-0",
+        "note-1",
+        "note-2"
+      ],
+      "transition": {
+        "opacity": [
+          0,
+          1
+        ],
+        "duration": 0.18
+      },
+      "sourceEvidence": "Root actual Notes0→1 showed yellow annotations. Exact per-note reveal wave/placement across full alternate journey unverified; these concise annotations are independently placed paraphrases."
+    },
+    "daughter": {
+      "default": false,
+      "targetKeys": [
+        "vertical-opening-daughter-vertical",
+        "horizontal-wide-daughter-horizontal",
+        "vertical-deck-daughter-deck",
+        "paired-dials-daughter-dial",
+        "paired-dials-daughter-side-a",
+        "triangle-format-daughter-tri",
+        "photo-window-daughter-win",
+        "crossing-strips-daughter-vee-west",
+        "crossing-strips-daughter-vee-east",
+        "poster-advice-daughter-poster-shot"
+      ],
+      "sourceEvidence": "Root actual toggle0→1 changed image overlays. Matching individual source graphics available and pinned; entire alternate journey not browser audited."
+    }
+  },
+  "nativeType": {
+    "family": "Inter substitutes Obys Sans; do not upload unverified source font",
+    "copy": "Short functional labels retained; advice and notes independently paraphrased. Do not add invented editorial claims."
+  },
+  "phoneAdaptation": {
+    "status": "Explicit independent adaptation; actual source Phone unavailable",
+    "viewport": [
+      390,
+      844
+    ],
+    "strategy": "Preserve each full actor aspect with per-actor scale; minimum native functional label9px, body12px. Opening wordmark390wide, utilityrail2rows, centered specimen cards with margins20; paired dials stack sequentially, triangle350wide, images remain their native apertures, wide specimens pan/crop rather than stretch. Ordinary page scrolling; Notes/Daughter remain reachable.",
+    "actorWidthMap": {
+      "opening-wordmark": 390,
+      "vertical-opening": 335,
+      "horizontal-wide": 660,
+      "vertical-deck": 335,
+      "paired-dials": 760,
+      "triangle-format": 350,
+      "photo-window": 660,
+      "crossing-strips": 780,
+      "oversized-ring-field": 780,
+      "poster-advice": 700,
+      "poster-guides": 390,
+      "format-footer": 390
+    }
+  },
+  "implementationBoundary": [
+    "This is a new authoring recipe, not proof of a saved Framer implementation.",
+    "Native actor dimensions derive public source CSS; retained source captures establish scene order and selected viewport poses.",
+    "Scroll interpolation, cropped-circle geometry, native contour spring loops, and Phone arrangement are independent approximations.",
+    "Do not flatten any UI/card/wordmark into a screenshot or use source /chips pre-rendered complete UI bitmaps.",
+    "Individual source photos and Daughter graphics remain credited assets with unknown individual licenses; no rights claim.",
+    "Authoring correction: the thirteen Notes/Daughter target frames stay mounted with visible:true and native opacity:0. Public code overrides own their Preview opacity/visibility; hidden/unmounted native frames cannot be revealed by CSS alone."
+  ],
+  "inputs": {
+    "contractSHA256": "7b7329ff8ae1f9b94e3d607e9294b5db79d6fdcf14bfcde0d390d426d409e255",
+    "assetAddendumSHA256": "21366fab99f96b4bee2c23f28cf761df55637ccbecf5ca15c59b127df1f66412",
+    "sourceCSSSHA256": "961aaa31d6a2abe3941da7679f10964bd2c8c2fa043e1f1d08e05397064722c5",
+    "observationSHA256": "725e18a81ce8caade9c4e2804fdc2237f5b42997d0eab9dbc570efe0a3b4890c"
+  }
+}

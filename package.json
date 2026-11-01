@@ -68,7 +68,8 @@
     "check:mecha-scroll-mark": "node scripts/check-mecha-scroll-mark.mjs",
     "check:mecha-scroll-mark-browser": "node scripts/check-mecha-scroll-mark-browser.mjs",
     "check:source-kaspar-ascii-study": "node scripts/check-source-kaspar-ascii-study.mjs",
-    "check:source-kaspar-ascii-browser": "node scripts/check-source-kaspar-ascii-browser.mjs"
+    "check:source-kaspar-ascii-browser": "node scripts/check-source-kaspar-ascii-browser.mjs",
+    "check:source-hero-native-behaviors": "node scripts/check-source-hero-native-behaviors.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

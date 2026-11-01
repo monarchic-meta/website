@@ -1,0 +1,2809 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-013",
+  "desktopInput": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/native-authoring.json",
+    "sha256": "b0f5bc064129d254e01bd74f5da56c16af6baf4d38a2c35789c31203287c3f4d",
+    "parts": 265
+  },
+  "phoneWidth": 390,
+  "phoneViewportHeight": 844,
+  "phoneDocumentHeight": 9200,
+  "scope": "Explicit unobserved-source Phone adaptation. This addendum changes only responsive authoring fields; Desktop source geometry remains byte-for-byte input.",
+  "phoneOverrides": [
+    {
+      "key": "opening-wordmark",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "125px"
+      }
+    },
+    {
+      "key": "opening-architectural-wordmark",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "63.6458px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-0",
+      "phone": {
+        "left": "5.4844px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-1",
+      "phone": {
+        "left": "36.8672px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "21.3281px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-2",
+      "phone": {
+        "left": "36.8672px",
+        "top": "29.25px",
+        "width": "28.9453px",
+        "height": "21.0234px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-3",
+      "phone": {
+        "left": "67.9453px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-4",
+      "phone": {
+        "left": "99.6328px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-5",
+      "phone": {
+        "left": "131.0156px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-6",
+      "phone": {
+        "left": "162.7031px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "35.6484px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-7",
+      "phone": {
+        "left": "162.7031px",
+        "top": "44.1797px",
+        "width": "28.3359px",
+        "height": "18.2813px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-8",
+      "phone": {
+        "left": "193.7813px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-9",
+      "phone": {
+        "left": "225.1641px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-10",
+      "phone": {
+        "left": "256.8516px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-11",
+      "phone": {
+        "left": "287.9297px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-12",
+      "phone": {
+        "left": "319.3125px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "opening-solid-letter-block-13",
+      "phone": {
+        "left": "351px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "source-nav",
+      "phone": {
+        "left": "0px",
+        "top": "78px",
+        "width": "390px",
+        "height": "42px"
+      }
+    },
+    {
+      "key": "source-credit",
+      "phone": {
+        "left": "10px",
+        "top": "80px",
+        "width": "235px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "source-season",
+      "phone": {
+        "left": "245px",
+        "top": "80px",
+        "width": "135px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "notes-toggle",
+      "phone": {
+        "left": "10px",
+        "top": "101px",
+        "width": "165px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "daughter-toggle",
+      "phone": {
+        "left": "195px",
+        "top": "101px",
+        "width": "185px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "vertical-opening",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "348.9242px"
+      }
+    },
+    {
+      "key": "vertical-paper",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "274.3888px",
+        "height": "348.9242px"
+      }
+    },
+    {
+      "key": "vertical-photo",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "92.555px",
+        "height": "348.9242px"
+      }
+    },
+    {
+      "key": "vertical-opening-index",
+      "phone": {
+        "left": "104.8411px",
+        "top": "19.6577px",
+        "width": "24.5721px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "vertical-opening-meta",
+      "phone": {
+        "left": "131.8704px",
+        "top": "11.467px",
+        "width": "114.6699px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "vertical-opening-title",
+      "phone": {
+        "left": "131.8704px",
+        "top": "19.6577px",
+        "width": "147.4328px",
+        "fontSize": "9.8289px",
+        "lineHeight": "10.222px"
+      }
+    },
+    {
+      "key": "vertical-shout",
+      "phone": {
+        "left": "6.5526px",
+        "top": "182.6528px",
+        "width": "258.0073px",
+        "fontSize": "34.401px",
+        "lineHeight": "31.1247px"
+      }
+    },
+    {
+      "key": "vertical-disk",
+      "phone": {
+        "left": "279.3032px",
+        "top": "0px",
+        "width": "55.6968px",
+        "height": "55.6968px"
+      }
+    },
+    {
+      "key": "vertical-dot-0",
+      "phone": {
+        "left": "49.1443px",
+        "top": "27.0293px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-1",
+      "phone": {
+        "left": "42.667px",
+        "top": "42.667px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-2",
+      "phone": {
+        "left": "27.0293px",
+        "top": "49.1443px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-3",
+      "phone": {
+        "left": "11.3917px",
+        "top": "42.667px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-4",
+      "phone": {
+        "left": "4.9144px",
+        "top": "27.0293px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-5",
+      "phone": {
+        "left": "11.3917px",
+        "top": "11.3917px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-6",
+      "phone": {
+        "left": "27.0293px",
+        "top": "4.9144px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-dot-7",
+      "phone": {
+        "left": "42.667px",
+        "top": "11.3917px",
+        "width": "1.6381px",
+        "height": "1.6381px"
+      }
+    },
+    {
+      "key": "vertical-opening-daughter-vertical",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "274.3888px",
+        "height": "348.9242px"
+      }
+    },
+    {
+      "key": "horizontal-wide",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "660px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "horizontal-photo",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "224.2105px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "horizontal-paper",
+      "phone": {
+        "left": "224.2105px",
+        "top": "0px",
+        "width": "435.7895px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "horizontal-wide-index",
+      "phone": {
+        "left": "234.9474px",
+        "top": "16.4211px",
+        "width": "18.9474px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "horizontal-wide-meta",
+      "phone": {
+        "left": "255.7895px",
+        "top": "10.1053px",
+        "width": "88.4211px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "horizontal-wide-title",
+      "phone": {
+        "left": "255.7895px",
+        "top": "16.4211px",
+        "width": "113.6842px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "horizontal-shout",
+      "phone": {
+        "left": "234.9474px",
+        "top": "133.8947px",
+        "width": "410.5263px",
+        "fontSize": "40.4211px",
+        "lineHeight": "36px",
+        "letterSpacing": "-1.2632px"
+      }
+    },
+    {
+      "key": "horizontal-wide-daughter-horizontal",
+      "phone": {
+        "left": "224.2105px",
+        "top": "0px",
+        "width": "435.7895px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "vertical-deck",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px"
+      }
+    },
+    {
+      "key": "deck-paper",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px"
+      }
+    },
+    {
+      "key": "vertical-deck-index",
+      "phone": {
+        "left": "10px",
+        "top": "19px",
+        "width": "30px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "vertical-deck-meta",
+      "phone": {
+        "left": "43px",
+        "top": "9px",
+        "width": "140px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "vertical-deck-title",
+      "phone": {
+        "left": "43px",
+        "top": "19px",
+        "width": "180px",
+        "fontSize": "12px",
+        "lineHeight": "12.48px"
+      }
+    },
+    {
+      "key": "deck-no-0",
+      "phone": {
+        "left": "236px",
+        "top": "21px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-measure-0",
+      "phone": {
+        "left": "265px",
+        "top": "21px",
+        "width": "65px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-no-1",
+      "phone": {
+        "left": "236px",
+        "top": "75px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-measure-1",
+      "phone": {
+        "left": "265px",
+        "top": "75px",
+        "width": "65px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-no-2",
+      "phone": {
+        "left": "236px",
+        "top": "129px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-measure-2",
+      "phone": {
+        "left": "265px",
+        "top": "129px",
+        "width": "65px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-no-3",
+      "phone": {
+        "left": "236px",
+        "top": "183px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-measure-3",
+      "phone": {
+        "left": "265px",
+        "top": "183px",
+        "width": "65px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "deck-large",
+      "phone": {
+        "left": "8px",
+        "top": "223px",
+        "width": "320px",
+        "fontSize": "42px",
+        "lineHeight": "38px"
+      }
+    },
+    {
+      "key": "vertical-deck-daughter-deck",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "335px",
+        "height": "426px"
+      }
+    },
+    {
+      "key": "paired-dials",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "760px",
+        "height": "367.8611px"
+      }
+    },
+    {
+      "key": "dial-left",
+      "phone": {
+        "left": "10.5556px",
+        "top": "0px",
+        "width": "367.8611px",
+        "height": "367.8611px"
+      }
+    },
+    {
+      "key": "dial-left-mark-0",
+      "phone": {
+        "left": "357.0417px",
+        "top": "180.2361px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-1",
+      "phone": {
+        "left": "333.9906px",
+        "top": "266.2639px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-2",
+      "phone": {
+        "left": "271.0139px",
+        "top": "329.2406px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-3",
+      "phone": {
+        "left": "184.9861px",
+        "top": "352.2917px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-4",
+      "phone": {
+        "left": "98.9583px",
+        "top": "329.2406px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-5",
+      "phone": {
+        "left": "35.9816px",
+        "top": "266.2639px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-6",
+      "phone": {
+        "left": "12.9306px",
+        "top": "180.2361px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-7",
+      "phone": {
+        "left": "35.9816px",
+        "top": "94.2083px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-8",
+      "phone": {
+        "left": "98.9583px",
+        "top": "31.2316px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-9",
+      "phone": {
+        "left": "184.9861px",
+        "top": "8.1806px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-10",
+      "phone": {
+        "left": "271.0139px",
+        "top": "31.2316px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-mark-11",
+      "phone": {
+        "left": "333.9906px",
+        "top": "94.2083px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-left-hub",
+      "phone": {
+        "left": "193.1667px",
+        "top": "182.6111px",
+        "width": "2.6389px",
+        "height": "2.6389px"
+      }
+    },
+    {
+      "key": "dial-left-hand",
+      "phone": {
+        "left": "194.4861px",
+        "top": "183.9306px",
+        "width": "150.9444px",
+        "height": "0.5278px"
+      }
+    },
+    {
+      "key": "paired-dials-daughter-dial",
+      "phone": {
+        "left": "10.5556px",
+        "top": "0px",
+        "width": "367.8611px",
+        "height": "367.8611px"
+      }
+    },
+    {
+      "key": "dial-right",
+      "phone": {
+        "left": "381.5833px",
+        "top": "0px",
+        "width": "367.8611px",
+        "height": "367.8611px"
+      }
+    },
+    {
+      "key": "dial-right-mark-0",
+      "phone": {
+        "left": "728.0694px",
+        "top": "180.2361px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-1",
+      "phone": {
+        "left": "705.0184px",
+        "top": "266.2639px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-2",
+      "phone": {
+        "left": "642.0417px",
+        "top": "329.2406px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-3",
+      "phone": {
+        "left": "556.0139px",
+        "top": "352.2917px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-4",
+      "phone": {
+        "left": "469.9861px",
+        "top": "329.2406px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-5",
+      "phone": {
+        "left": "407.0094px",
+        "top": "266.2639px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-6",
+      "phone": {
+        "left": "383.9583px",
+        "top": "180.2361px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-7",
+      "phone": {
+        "left": "407.0094px",
+        "top": "94.2083px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-8",
+      "phone": {
+        "left": "469.9861px",
+        "top": "31.2316px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-9",
+      "phone": {
+        "left": "556.0139px",
+        "top": "8.1806px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-10",
+      "phone": {
+        "left": "642.0417px",
+        "top": "31.2316px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-mark-11",
+      "phone": {
+        "left": "705.0184px",
+        "top": "94.2083px",
+        "width": "19px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "dial-right-hub",
+      "phone": {
+        "left": "564.1944px",
+        "top": "182.6111px",
+        "width": "2.6389px",
+        "height": "2.6389px"
+      }
+    },
+    {
+      "key": "dial-right-hand",
+      "phone": {
+        "left": "565.5139px",
+        "top": "183.9306px",
+        "width": "150.9444px",
+        "height": "0.5278px"
+      }
+    },
+    {
+      "key": "paired-dials-daughter-side-a",
+      "phone": {
+        "left": "381.5833px",
+        "top": "0px",
+        "width": "367.8611px",
+        "height": "367.8611px"
+      }
+    },
+    {
+      "key": "triangle-format",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "350px",
+        "height": "302.7699px"
+      }
+    },
+    {
+      "key": "triangle-paper",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "350px",
+        "height": "302.7699px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-0",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "350px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-1",
+      "phone": {
+        "left": "1.8229px",
+        "top": "3.1539px",
+        "width": "346.3542px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-2",
+      "phone": {
+        "left": "3.6458px",
+        "top": "6.3077px",
+        "width": "342.7083px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-3",
+      "phone": {
+        "left": "5.4688px",
+        "top": "9.4616px",
+        "width": "339.0625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-4",
+      "phone": {
+        "left": "7.2917px",
+        "top": "12.6154px",
+        "width": "335.4167px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-5",
+      "phone": {
+        "left": "9.1146px",
+        "top": "15.7693px",
+        "width": "331.7708px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-6",
+      "phone": {
+        "left": "10.9375px",
+        "top": "18.9231px",
+        "width": "328.125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-7",
+      "phone": {
+        "left": "12.7604px",
+        "top": "22.077px",
+        "width": "324.4792px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-8",
+      "phone": {
+        "left": "14.5833px",
+        "top": "25.2308px",
+        "width": "320.8333px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-9",
+      "phone": {
+        "left": "16.4063px",
+        "top": "28.3847px",
+        "width": "317.1875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-10",
+      "phone": {
+        "left": "18.2292px",
+        "top": "31.5385px",
+        "width": "313.5417px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-11",
+      "phone": {
+        "left": "20.0521px",
+        "top": "34.6924px",
+        "width": "309.8958px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-12",
+      "phone": {
+        "left": "21.875px",
+        "top": "37.8462px",
+        "width": "306.25px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-13",
+      "phone": {
+        "left": "23.6979px",
+        "top": "41.0001px",
+        "width": "302.6042px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-14",
+      "phone": {
+        "left": "25.5208px",
+        "top": "44.1539px",
+        "width": "298.9583px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-15",
+      "phone": {
+        "left": "27.3438px",
+        "top": "47.3078px",
+        "width": "295.3125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-16",
+      "phone": {
+        "left": "29.1667px",
+        "top": "50.4616px",
+        "width": "291.6667px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-17",
+      "phone": {
+        "left": "30.9896px",
+        "top": "53.6155px",
+        "width": "288.0208px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-18",
+      "phone": {
+        "left": "32.8125px",
+        "top": "56.7694px",
+        "width": "284.375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-19",
+      "phone": {
+        "left": "34.6354px",
+        "top": "59.9232px",
+        "width": "280.7292px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-20",
+      "phone": {
+        "left": "36.4583px",
+        "top": "63.0771px",
+        "width": "277.0833px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-21",
+      "phone": {
+        "left": "38.2813px",
+        "top": "66.2309px",
+        "width": "273.4375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-22",
+      "phone": {
+        "left": "40.1042px",
+        "top": "69.3848px",
+        "width": "269.7917px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-23",
+      "phone": {
+        "left": "41.9271px",
+        "top": "72.5386px",
+        "width": "266.1458px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-24",
+      "phone": {
+        "left": "43.75px",
+        "top": "75.6925px",
+        "width": "262.5px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-25",
+      "phone": {
+        "left": "45.5729px",
+        "top": "78.8463px",
+        "width": "258.8542px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-26",
+      "phone": {
+        "left": "47.3958px",
+        "top": "82.0002px",
+        "width": "255.2083px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-27",
+      "phone": {
+        "left": "49.2188px",
+        "top": "85.1541px",
+        "width": "251.5625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-28",
+      "phone": {
+        "left": "51.0417px",
+        "top": "88.3079px",
+        "width": "247.9167px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-29",
+      "phone": {
+        "left": "52.8646px",
+        "top": "91.4618px",
+        "width": "244.2708px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-30",
+      "phone": {
+        "left": "54.6875px",
+        "top": "94.6156px",
+        "width": "240.625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-31",
+      "phone": {
+        "left": "56.5104px",
+        "top": "97.7695px",
+        "width": "236.9792px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-32",
+      "phone": {
+        "left": "58.3333px",
+        "top": "100.9233px",
+        "width": "233.3333px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-33",
+      "phone": {
+        "left": "60.1563px",
+        "top": "104.0772px",
+        "width": "229.6875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-34",
+      "phone": {
+        "left": "61.9792px",
+        "top": "107.231px",
+        "width": "226.0417px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-35",
+      "phone": {
+        "left": "63.8021px",
+        "top": "110.3849px",
+        "width": "222.3958px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-36",
+      "phone": {
+        "left": "65.625px",
+        "top": "113.5387px",
+        "width": "218.75px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-37",
+      "phone": {
+        "left": "67.4479px",
+        "top": "116.6926px",
+        "width": "215.1042px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-38",
+      "phone": {
+        "left": "69.2708px",
+        "top": "119.8464px",
+        "width": "211.4583px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-39",
+      "phone": {
+        "left": "71.0938px",
+        "top": "123.0003px",
+        "width": "207.8125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-40",
+      "phone": {
+        "left": "72.9167px",
+        "top": "126.1541px",
+        "width": "204.1667px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-41",
+      "phone": {
+        "left": "74.7396px",
+        "top": "129.308px",
+        "width": "200.5208px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-42",
+      "phone": {
+        "left": "76.5625px",
+        "top": "132.4618px",
+        "width": "196.875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-43",
+      "phone": {
+        "left": "78.3854px",
+        "top": "135.6157px",
+        "width": "193.2292px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-44",
+      "phone": {
+        "left": "80.2083px",
+        "top": "138.7695px",
+        "width": "189.5833px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-45",
+      "phone": {
+        "left": "82.0313px",
+        "top": "141.9234px",
+        "width": "185.9375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-46",
+      "phone": {
+        "left": "83.8542px",
+        "top": "145.0772px",
+        "width": "182.2917px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-47",
+      "phone": {
+        "left": "85.6771px",
+        "top": "148.2311px",
+        "width": "178.6458px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-48",
+      "phone": {
+        "left": "87.5px",
+        "top": "151.3849px",
+        "width": "175px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-49",
+      "phone": {
+        "left": "89.3229px",
+        "top": "154.5388px",
+        "width": "171.3542px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-50",
+      "phone": {
+        "left": "91.1458px",
+        "top": "157.6926px",
+        "width": "167.7083px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-51",
+      "phone": {
+        "left": "92.9688px",
+        "top": "160.8465px",
+        "width": "164.0625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-52",
+      "phone": {
+        "left": "94.7917px",
+        "top": "164.0004px",
+        "width": "160.4167px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-53",
+      "phone": {
+        "left": "96.6146px",
+        "top": "167.1542px",
+        "width": "156.7708px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-54",
+      "phone": {
+        "left": "98.4375px",
+        "top": "170.3081px",
+        "width": "153.125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-55",
+      "phone": {
+        "left": "100.2604px",
+        "top": "173.4619px",
+        "width": "149.4792px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-56",
+      "phone": {
+        "left": "102.0833px",
+        "top": "176.6158px",
+        "width": "145.8333px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-57",
+      "phone": {
+        "left": "103.9063px",
+        "top": "179.7696px",
+        "width": "142.1875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-58",
+      "phone": {
+        "left": "105.7292px",
+        "top": "182.9235px",
+        "width": "138.5417px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-59",
+      "phone": {
+        "left": "107.5521px",
+        "top": "186.0774px",
+        "width": "134.8958px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-60",
+      "phone": {
+        "left": "109.375px",
+        "top": "189.2312px",
+        "width": "131.25px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-61",
+      "phone": {
+        "left": "111.1979px",
+        "top": "192.3851px",
+        "width": "127.6042px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-62",
+      "phone": {
+        "left": "113.0208px",
+        "top": "195.5389px",
+        "width": "123.9583px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-63",
+      "phone": {
+        "left": "114.8438px",
+        "top": "198.6928px",
+        "width": "120.3125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-64",
+      "phone": {
+        "left": "116.6667px",
+        "top": "201.8466px",
+        "width": "116.6667px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-65",
+      "phone": {
+        "left": "118.4896px",
+        "top": "205.0005px",
+        "width": "113.0208px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-66",
+      "phone": {
+        "left": "120.3125px",
+        "top": "208.1543px",
+        "width": "109.375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-67",
+      "phone": {
+        "left": "122.1354px",
+        "top": "211.3082px",
+        "width": "105.7292px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-68",
+      "phone": {
+        "left": "123.9583px",
+        "top": "214.462px",
+        "width": "102.0833px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-69",
+      "phone": {
+        "left": "125.7813px",
+        "top": "217.6159px",
+        "width": "98.4375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-70",
+      "phone": {
+        "left": "127.6042px",
+        "top": "220.7697px",
+        "width": "94.7917px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-71",
+      "phone": {
+        "left": "129.4271px",
+        "top": "223.9236px",
+        "width": "91.1458px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-72",
+      "phone": {
+        "left": "131.25px",
+        "top": "227.0774px",
+        "width": "87.5px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-73",
+      "phone": {
+        "left": "133.0729px",
+        "top": "230.2313px",
+        "width": "83.8542px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-74",
+      "phone": {
+        "left": "134.8958px",
+        "top": "233.3851px",
+        "width": "80.2083px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-75",
+      "phone": {
+        "left": "136.7188px",
+        "top": "236.539px",
+        "width": "76.5625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-76",
+      "phone": {
+        "left": "138.5417px",
+        "top": "239.6928px",
+        "width": "72.9167px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-77",
+      "phone": {
+        "left": "140.3646px",
+        "top": "242.8467px",
+        "width": "69.2708px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-78",
+      "phone": {
+        "left": "142.1875px",
+        "top": "246.0005px",
+        "width": "65.625px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-79",
+      "phone": {
+        "left": "144.0104px",
+        "top": "249.1544px",
+        "width": "61.9792px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-80",
+      "phone": {
+        "left": "145.8333px",
+        "top": "252.3082px",
+        "width": "58.3333px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-81",
+      "phone": {
+        "left": "147.6563px",
+        "top": "255.4621px",
+        "width": "54.6875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-82",
+      "phone": {
+        "left": "149.4792px",
+        "top": "258.6159px",
+        "width": "51.0417px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-83",
+      "phone": {
+        "left": "151.3021px",
+        "top": "261.7698px",
+        "width": "47.3958px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-84",
+      "phone": {
+        "left": "153.125px",
+        "top": "264.9237px",
+        "width": "43.75px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-85",
+      "phone": {
+        "left": "154.9479px",
+        "top": "268.0775px",
+        "width": "40.1042px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-86",
+      "phone": {
+        "left": "156.7708px",
+        "top": "271.2314px",
+        "width": "36.4583px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-87",
+      "phone": {
+        "left": "158.5938px",
+        "top": "274.3852px",
+        "width": "32.8125px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-88",
+      "phone": {
+        "left": "160.4167px",
+        "top": "277.5391px",
+        "width": "29.1667px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-89",
+      "phone": {
+        "left": "162.2396px",
+        "top": "280.6929px",
+        "width": "25.5208px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-90",
+      "phone": {
+        "left": "164.0625px",
+        "top": "283.8468px",
+        "width": "21.875px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-91",
+      "phone": {
+        "left": "165.8854px",
+        "top": "287.0006px",
+        "width": "18.2292px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-92",
+      "phone": {
+        "left": "167.7083px",
+        "top": "290.1545px",
+        "width": "14.5833px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-93",
+      "phone": {
+        "left": "169.5313px",
+        "top": "293.3084px",
+        "width": "10.9375px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-94",
+      "phone": {
+        "left": "171.3542px",
+        "top": "296.4622px",
+        "width": "7.2917px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-paper-scan-95",
+      "phone": {
+        "left": "173.1771px",
+        "top": "299.6161px",
+        "width": "3.6458px",
+        "height": "3.4522px"
+      }
+    },
+    {
+      "key": "triangle-stud-a",
+      "phone": {
+        "left": "14.4176px",
+        "top": "11.9318px",
+        "width": "16.4063px",
+        "height": "16.4063px"
+      }
+    },
+    {
+      "key": "triangle-stud-b",
+      "phone": {
+        "left": "319.1761px",
+        "top": "11.9318px",
+        "width": "16.4063px",
+        "height": "16.4063px"
+      }
+    },
+    {
+      "key": "triangle-heading",
+      "phone": {
+        "left": "87.0028px",
+        "top": "8.9489px",
+        "width": "175.9943px",
+        "fontSize": "20.8807px",
+        "lineHeight": "21.7159px"
+      }
+    },
+    {
+      "key": "triangle-meta",
+      "phone": {
+        "left": "22.8693px",
+        "top": "42.7557px",
+        "width": "109.375px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "triangle-index",
+      "phone": {
+        "left": "173.5085px",
+        "top": "289.3466px",
+        "width": "19.8864px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "triangle-format-daughter-tri",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "350px",
+        "height": "302.7699px"
+      }
+    },
+    {
+      "key": "photo-window",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "660px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "window-paper",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "660px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "window-shot-0",
+      "phone": {
+        "left": "8.8421px",
+        "top": "25.2632px",
+        "width": "199.5789px",
+        "height": "232.7368px"
+      }
+    },
+    {
+      "key": "window-shot-1",
+      "phone": {
+        "left": "226.7368px",
+        "top": "25.2632px",
+        "width": "199.5789px",
+        "height": "232.7368px"
+      }
+    },
+    {
+      "key": "window-shot-2",
+      "phone": {
+        "left": "444.6316px",
+        "top": "25.2632px",
+        "width": "199.5789px",
+        "height": "232.7368px"
+      }
+    },
+    {
+      "key": "photo-window-index",
+      "phone": {
+        "left": "262.1053px",
+        "top": "17.6842px",
+        "width": "18.9474px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "photo-window-meta",
+      "phone": {
+        "left": "282.9474px",
+        "top": "11.3684px",
+        "width": "88.4211px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "photo-window-title",
+      "phone": {
+        "left": "282.9474px",
+        "top": "17.6842px",
+        "width": "113.6842px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "photo-window-daughter-win",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "660px",
+        "height": "282.9474px"
+      }
+    },
+    {
+      "key": "crossing-strips",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "780px",
+        "height": "455.5417px"
+      }
+    },
+    {
+      "key": "strip-photo-left",
+      "phone": {
+        "left": "10.8333px",
+        "top": "0px",
+        "width": "377.5417px",
+        "height": "122.4167px"
+      }
+    },
+    {
+      "key": "strip-photo-right",
+      "phone": {
+        "left": "391.625px",
+        "top": "0px",
+        "width": "377.5417px",
+        "height": "122.4167px"
+      }
+    },
+    {
+      "key": "strip-west-band-1",
+      "phone": {
+        "left": "10.8333px",
+        "top": "23.8333px",
+        "width": "377.5417px",
+        "height": "17.3333px"
+      }
+    },
+    {
+      "key": "strip-west-band-2",
+      "phone": {
+        "left": "10.8333px",
+        "top": "52.5417px",
+        "width": "377.5417px",
+        "height": "17.3333px"
+      }
+    },
+    {
+      "key": "strip-west-label",
+      "phone": {
+        "left": "51.4583px",
+        "top": "30.3333px",
+        "width": "243.75px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "strip-east-band-1",
+      "phone": {
+        "left": "391.625px",
+        "top": "23.8333px",
+        "width": "377.5417px",
+        "height": "17.3333px"
+      }
+    },
+    {
+      "key": "strip-east-band-2",
+      "phone": {
+        "left": "391.625px",
+        "top": "52.5417px",
+        "width": "377.5417px",
+        "height": "17.3333px"
+      }
+    },
+    {
+      "key": "strip-east-label",
+      "phone": {
+        "left": "432.25px",
+        "top": "30.3333px",
+        "width": "243.75px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "crossing-strips-daughter-vee-west",
+      "phone": {
+        "left": "10.8333px",
+        "top": "23.8333px",
+        "width": "377.5417px",
+        "height": "98.5833px"
+      }
+    },
+    {
+      "key": "crossing-strips-daughter-vee-east",
+      "phone": {
+        "left": "391.625px",
+        "top": "0px",
+        "width": "86.125px",
+        "height": "122.4167px"
+      }
+    },
+    {
+      "key": "oversized-ring-field",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "780px",
+        "height": "975px"
+      }
+    },
+    {
+      "key": "ring-west",
+      "phone": {
+        "left": "-292.5px",
+        "top": "-119.1667px",
+        "width": "1029.1667px",
+        "height": "1029.1667px"
+      }
+    },
+    {
+      "key": "ring-west-cut",
+      "phone": {
+        "left": "-195px",
+        "top": "-21.6667px",
+        "width": "834.1667px",
+        "height": "834.1667px"
+      }
+    },
+    {
+      "key": "ring-east",
+      "phone": {
+        "left": "352.0833px",
+        "top": "0px",
+        "width": "985.8333px",
+        "height": "985.8333px"
+      }
+    },
+    {
+      "key": "ring-east-cut",
+      "phone": {
+        "left": "449.5833px",
+        "top": "97.5px",
+        "width": "790.8333px",
+        "height": "790.8333px"
+      }
+    },
+    {
+      "key": "ring-center",
+      "phone": {
+        "left": "370.5px",
+        "top": "379.1667px",
+        "width": "39px",
+        "height": "39px"
+      }
+    },
+    {
+      "key": "ring-label",
+      "phone": {
+        "left": "297.9167px",
+        "top": "352.0833px",
+        "width": "270.8333px",
+        "fontSize": "13px",
+        "lineHeight": "13.52px"
+      }
+    },
+    {
+      "key": "poster-advice",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "1090px"
+      }
+    },
+    {
+      "key": "poster-photograph",
+      "phone": {
+        "left": "20px",
+        "top": "0px",
+        "width": "350px",
+        "height": "423px"
+      }
+    },
+    {
+      "key": "poster-label",
+      "phone": {
+        "left": "20px",
+        "top": "455px",
+        "width": "350px",
+        "fontSize": "58px",
+        "lineHeight": "58px",
+        "letterSpacing": "-2px"
+      }
+    },
+    {
+      "key": "poster-advice-copy",
+      "phone": {
+        "left": "20px",
+        "top": "540px",
+        "width": "350px",
+        "fontSize": "39px",
+        "lineHeight": "37px"
+      }
+    },
+    {
+      "key": "poster-advice-dial",
+      "phone": {
+        "left": "70px",
+        "top": "740px",
+        "width": "250px",
+        "height": "250px"
+      }
+    },
+    {
+      "key": "poster-dial-rule",
+      "phone": {
+        "left": "195px",
+        "top": "865px",
+        "width": "100px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "poster-advice-daughter-poster-shot",
+      "phone": {
+        "left": "20px",
+        "top": "0px",
+        "width": "350px",
+        "height": "423px"
+      }
+    },
+    {
+      "key": "poster-guides",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "500px"
+      }
+    },
+    {
+      "key": "poster-guide-box",
+      "phone": {
+        "left": "20px",
+        "top": "145px",
+        "width": "350px",
+        "height": "175px"
+      }
+    },
+    {
+      "key": "poster-guide-diagonal-a",
+      "phone": {
+        "left": "20px",
+        "top": "145px",
+        "width": "391.3px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "poster-guide-diagonal-b",
+      "phone": {
+        "left": "20px",
+        "top": "320px",
+        "width": "391.3px",
+        "height": "1px"
+      }
+    },
+    {
+      "key": "format-footer",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "125px"
+      }
+    },
+    {
+      "key": "footer-architectural-wordmark",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "63.6458px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-0",
+      "phone": {
+        "left": "5.4844px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-1",
+      "phone": {
+        "left": "36.8672px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "21.3281px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-2",
+      "phone": {
+        "left": "36.8672px",
+        "top": "29.25px",
+        "width": "28.9453px",
+        "height": "21.0234px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-3",
+      "phone": {
+        "left": "67.9453px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-4",
+      "phone": {
+        "left": "99.6328px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-5",
+      "phone": {
+        "left": "131.0156px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-6",
+      "phone": {
+        "left": "162.7031px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "35.6484px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-7",
+      "phone": {
+        "left": "162.7031px",
+        "top": "44.1797px",
+        "width": "28.3359px",
+        "height": "18.2813px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-8",
+      "phone": {
+        "left": "193.7813px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-9",
+      "phone": {
+        "left": "225.1641px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-10",
+      "phone": {
+        "left": "256.8516px",
+        "top": "5.4844px",
+        "width": "28.6406px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-11",
+      "phone": {
+        "left": "287.9297px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-12",
+      "phone": {
+        "left": "319.3125px",
+        "top": "5.4844px",
+        "width": "29.25px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-solid-letter-block-13",
+      "phone": {
+        "left": "351px",
+        "top": "5.4844px",
+        "width": "28.9453px",
+        "height": "56.9766px"
+      }
+    },
+    {
+      "key": "footer-native-rail",
+      "phone": {
+        "left": "0px",
+        "top": "78px",
+        "width": "390px",
+        "height": "42px"
+      }
+    },
+    {
+      "key": "footer-credit",
+      "phone": {
+        "left": "10px",
+        "top": "80px",
+        "width": "230px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "footer-season",
+      "phone": {
+        "left": "245px",
+        "top": "80px",
+        "width": "135px",
+        "fontSize": "10px",
+        "lineHeight": "13px"
+      }
+    },
+    {
+      "key": "notes-layer",
+      "phone": {
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "219.375px"
+      }
+    },
+    {
+      "key": "note-0",
+      "phone": {
+        "left": "20px",
+        "top": "135px",
+        "width": "143px",
+        "height": "54px"
+      }
+    },
+    {
+      "key": "note-0-label",
+      "phone": {
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "note-0-copy",
+      "phone": {
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "note-1",
+      "phone": {
+        "left": "220px",
+        "top": "290px",
+        "width": "143px",
+        "height": "54px"
+      }
+    },
+    {
+      "key": "note-1-label",
+      "phone": {
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "note-1-copy",
+      "phone": {
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "note-2",
+      "phone": {
+        "left": "20px",
+        "top": "520px",
+        "width": "143px",
+        "height": "54px"
+      }
+    },
+    {
+      "key": "note-2-label",
+      "phone": {
+        "left": "10px",
+        "top": "6px",
+        "width": "24px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    },
+    {
+      "key": "note-2-copy",
+      "phone": {
+        "left": "41px",
+        "top": "8px",
+        "width": "92px",
+        "fontSize": "9px",
+        "lineHeight": "10px"
+      }
+    }
+  ],
+  "phoneScrollTracks": [
+    {
+      "targetKey": "opening-wordmark",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 0,
+          "left": 0,
+          "viewportTop": 0,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 460,
+          "left": 0,
+          "viewportTop": -125,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "vertical-opening",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 0,
+          "left": 28,
+          "viewportTop": 235,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 520,
+          "left": 28,
+          "viewportTop": -220,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "horizontal-wide",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 460,
+          "left": -135,
+          "viewportTop": 150,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 1200,
+          "left": -135,
+          "viewportTop": -448,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "vertical-deck",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 1300,
+          "left": 28,
+          "viewportTop": 180,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 1900,
+          "left": 28,
+          "viewportTop": -426,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "paired-dials",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 2000,
+          "left": 0,
+          "viewportTop": 120,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 2400,
+          "left": -370,
+          "viewportTop": 120,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 2950,
+          "left": -370,
+          "viewportTop": -700,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "triangle-format",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 3100,
+          "left": 20,
+          "viewportTop": 180,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 3700,
+          "left": 20,
+          "viewportTop": -350,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "photo-window",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 3800,
+          "left": -135,
+          "viewportTop": 120,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 4400,
+          "left": -270,
+          "viewportTop": -450,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "crossing-strips",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 4500,
+          "left": 0,
+          "viewportTop": 130,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 5100,
+          "left": -390,
+          "viewportTop": -450,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "oversized-ring-field",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 5250,
+          "left": 0,
+          "viewportTop": 100,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 5800,
+          "left": 0,
+          "viewportTop": -500,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 6200,
+          "left": 0,
+          "viewportTop": -900,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "poster-advice",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 6500,
+          "left": 0,
+          "viewportTop": 100,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 7100,
+          "left": 0,
+          "viewportTop": -450,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 7700,
+          "left": 60,
+          "viewportTop": 40,
+          "opacity": 1,
+          "scale": 0.65,
+          "rotation": 10
+        },
+        {
+          "scrollY": 8150,
+          "left": 80,
+          "viewportTop": 120,
+          "opacity": 1,
+          "scale": 0.5,
+          "rotation": -8
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "poster-guides",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 7700,
+          "left": 0,
+          "viewportTop": 0,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 8150,
+          "left": 0,
+          "viewportTop": 0,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 8450,
+          "left": 0,
+          "viewportTop": -500,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "format-footer",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 8500,
+          "left": 0,
+          "viewportTop": 600,
+          "opacity": 0,
+          "scale": 1,
+          "rotation": 0
+        },
+        {
+          "scrollY": 8800,
+          "left": 0,
+          "viewportTop": 480,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    },
+    {
+      "targetKey": "notes-layer",
+      "domain": "Phone ordinary document scroll in390×844viewport",
+      "poses": [
+        {
+          "scrollY": 0,
+          "left": 0,
+          "viewportTop": 0,
+          "opacity": 1,
+          "scale": 1,
+          "rotation": 0
+        }
+      ],
+      "scope": "Independently authored Phone adaptation, not observed source Phone choreography. Wide photographic actors/rings deliberately crop; small paper cards and poster prose reflow."
+    }
+  ],
+  "notes": [
+    "Notes/Daughter utility actions reflow to a native two-row rail.",
+    "Minimum native functional text9px; small cards remain335pxwide.",
+    "The poster photograph and advice text reflow vertically; never compress the Desktop two columns into unreadable type.",
+    "Large rings/photo strips deliberately exceed viewport and crop; no horizontal page overflow.",
+    "Retain existing actual source image bindings and credits."
+  ]
+}
