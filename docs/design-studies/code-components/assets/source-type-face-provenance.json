@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-001",
+  "classification": "Source inspiration / credited close recreation",
+  "source": {
+    "creator": "Stephen Kelman",
+    "title": "Type Face",
+    "creatorURL": "https://stephenkelman.co.uk/type-face",
+    "originalPost": "https://x.com/stephenkelman/status/2093335231604367454",
+    "selectedMovie": {
+      "url": "https://cdn.recent.design/items/vmmug5r/0/2160x2160.mp4",
+      "sha256": "dd4571a567969bbfebb5573497a9df1482bafb0bdd7234ca74bde4d83057afcb",
+      "bytes": 18688496,
+      "width": 2160,
+      "height": 2160,
+      "fps": 30,
+      "frames": 288,
+      "duration": 9.6,
+      "audio": false
+    },
+    "currentCreatorMovie": {
+      "url": "https://stephenkelman.co.uk/assets/site/video/type-face-01-2160.mp4",
+      "sha256": "1f45ab2aa89f11c1de575568b7f1589c61f7737a703c31e5a80714f1c758cf0c",
+      "bytes": 13346236,
+      "relationship": "Same 9.6-second format but different poses/render; not substituted for the owner-selected CDN revision."
+    },
+    "creatorFacts": [
+      "Creator identifies the Saint-Raymond Augustus wearing an oak crown.",
+      "Creator identifies Res Gestae writing and Times New Roman.",
+      "No creator working mesh or rendering code was recovered from the public page."
+    ]
+  },
+  "sculpture": {
+    "title": "Auguste couronné de chêne / museum object Ra57",
+    "attribution": "Musée Saint-Raymond / IMA Solutions",
+    "descriptionURL": "https://commons.wikimedia.org/wiki/File:MSR-Auguste-Ra57.stl",
+    "downloadURL": "https://upload.wikimedia.org/wikipedia/commons/1/1e/MSR-Auguste-Ra57.stl",
+    "museumModelURL": "https://sketchfab.com/3d-models/buste-dauguste-couronne-de-chene-6ccc01ad1cda47f3b2511ef6fbf07e0b",
+    "currentLicense": "CC0 1.0; current Commons file page and VRT ticket 2024051410005487 retained externally. Historical 2018 upload metadata said CC BY-SA; that historical label is not asserted as the current release.",
+    "sha256": "ae7cf113e071b6735b01f938bf15877f972cab08865ab2d3e4536ea297c85a8a",
+    "bytes": 23847284,
+    "sha1": "63c89e6ec20cb3196cf4a39f8fc7d4aca1305e96",
+    "triangles": 476944,
+    "identityLimit": "The sculpture identity is grounded in the creator page and museum model. Byte identity to the creator’s working mesh is unknown."
+  },
+  "adaptation": {
+    "priorSource": {
+      "sha256": "3a72aee8d59a4d2b0184df693f7107548ac08610d9c600396016b6789bee8d85",
+      "relationship": "Replaces this component’s credited Lee Perry-Smith stand-in. Existing HeroRecreationStudy and other source actors are preserved."
+    },
+    "normalization": {
+      "height": 498.76527404785156,
+      "sourceMin": [
+        -236.3644256591797,
+        -264.457763671875,
+        -95.03559875488281
+      ],
+      "sourceMax": [
+        95.03204345703125,
+        234.30751037597656,
+        143.91879272460938
+      ],
+      "formula": "Position X/Z centered on original axis bounds; Y offset by min; all divided by original Y span. No nonuniform deformation."
+    },
+    "qem": {
+      "toolVersion": "meshoptimizer / gltfpack 1.1.1",
+      "toolSHA256": "a48a62c4b1664f1c3f58f3084a136e2f50fc1230903f032fd094be8854c44e9c",
+      "args": [
+        "-si",
+        "0.1",
+        "-se",
+        "0.001",
+        "-noq",
+        "-kv"
+      ],
+      "inputGLBSHA256": "b22e717ffb208fffbc91c5fb7abfbaa6dda888f6c84718a3b53ff79ac0c23646",
+      "outputGLBSHA256": "b63322ea1198d83aef76745ec1c7f2809f0545d13ac7e2ed3a2a26aeefcc1ce0",
+      "vertices": 29845,
+      "triangles": 59728,
+      "errorScope": "Independent orthographic silhouette tests at 400/675 px across 0/90/180 degrees: IoU≥0.99858, maximum boundary distance≤1.414px. This does not prove original-film pixel equivalence."
+    },
+    "contours": {
+      "format": "TFC1",
+      "rows": 192,
+      "planesWorldY": [
+        -0.75,
+        0.99
+      ],
+      "closedLoops": 342,
+      "points": 35108,
+      "packedSHA256": "37a9d612e2169b9b873049ae55a3abec5e1cb4cf91c7323516072e4e4d6aa611",
+      "packedBytes": 142238,
+      "base64Bytes": 189652,
+      "simplification": "Horizontal section curves of the reviewed museum QEM; per-plane RDP tolerance0.0006world units, quantization≤1/60000. One closed two-point zero-area path was omitted.",
+      "rendering": "Density selects 62–186 original planes. Arc-length serif ribbons use bounded WebGL1 Uint16 batches; no bitmap sculpture or new illustration."
+    },
+    "camera": {
+      "yaw0Radians": 5.759586531581287,
+      "direction": -1,
+      "pitchRadians": 0.3,
+      "screenRollRadians": -0.05,
+      "method": "Independent normalized source-ink silhouette-row profile fit over five corresponding full-head states. Camera is fitted, not recovered."
+    },
+    "writing": {
+      "text": "Two original Latin Res Gestae excerpts (§§1/34), public domain; independently placed, not a copy of the selected film’s English translation.",
+      "sourceURL": "https://la.wikisource.org/wiki/Res_gestae",
+      "fontStack": "Times New Roman, Liberation Serif, serif",
+      "linuxFixtureFace": "Liberation Serif 2.1.5, confirmed with the exact locked Nix FONTCONFIG_FILE; no claim that Linux rendered licensed Times New Roman.",
+      "atlas": [
+        2048,
+        512
+      ],
+      "atlasRows": 32,
+      "limit": "Exact source wording, glyph metrics, row starts, camera and contour spacing are not recovered."
+    },
+    "timing": {
+      "observedMovieFacts": [
+        "Frame0 begins with a partial lower-neck assembly.",
+        "Resolved head turns during the middle sequence.",
+        "Late departure removes lower writing before upper-head fragments.",
+        "Frame270/9.000s is completely black.",
+        "Frame271/9.0333s begins a new lower-neck entry before the9.6s loop boundary."
+      ],
+      "fittedMasks": "Two observed states (frames36/1.2s and252/8.4s) supply coarse 24-height×24-arc occupancy fits. Independent per-cell admission/erase deadlines connect these states; a short initial arc write-on preserves lower-neck re-entry. Continuous original trajectories are not recovered.",
+      "unchangedControls": "13 property controls; no pointer or invented scroll story. Loop duration scales the selected9.6s phase.",
+      "coarseAdmissionMap": {
+        "sha256": "84d2512e43b82b4c8aa0948ec057c961765f162af34816ae4de9418f9167d5bc",
+        "bytes": 2304,
+        "dimensions": [
+          24,
+          24
+        ],
+        "sourceFrames": [
+          {
+            "frame": 36,
+            "seconds": 1.2,
+            "sha256": "f90619e2715b48dc7cef837e69bb41050dd33e5e13600c86b838865f80747222",
+            "bytes": 607325
+          },
+          {
+            "frame": 252,
+            "seconds": 8.4,
+            "sha256": "fca71301440f294c04207e4357c9598cc5b8a498f8563efd04f5837d2a505095",
+            "bytes": 183079
+          }
+        ],
+        "sampling": "Projected outward-facing museum contours; source 720 px luminance averaged in 15×15 px neighborhoods, threshold 8/255. Back-facing unobserved bins do not imply source absence.",
+        "channels": "Red=entry coverage, green=exit coverage, blue=0, alpha=255. Binary coverage only; no source text or glyph bitmap is embedded.",
+        "runtime": "One 2304-byte nearest-filtered texture in the existing WebGL renderer; no new context, renderer or RAF.",
+        "fitLimit": "Only two temporal states ground the occupancy table. Latin placement and between-state row/arc deadlines remain independent fits."
+      }
+    },
+    "sharedRuntime": {
+      "preserved": "RGB resolver, complete v2 per-window coordinator, surface hook, static/Canvas gates and controls are unchanged apart from attribution text.",
+      "limits": "At most 2 WebGL contexts including initialization,1 live editor/2 live Preview; Canvas default off,12 fps/1 MP Canvas opt-in, serial stills≤2 MP. Existing resolution-adequacy cache and sharp handoff are retained.",
+      "cacheRevision": {
+        "setting": "artworkRevision",
+        "value": "augustus-tfc1-37a9d612-admissions-84d2512e-v1",
+        "publicControl": false,
+        "behavior": "The existing v2 content key already includes this private setting. A keyed private surface remounts its factory when the revision changes; shared hook/coordinator/RGB bodies remain unchanged.",
+        "proof": "Without a revision the same-filename negative control reused obsolete head pixels without invoking the new factory. Revised cache handoff and real React preserved-identity/key swap both matched a fresh Augustus still with one new factory call and peak 1 context."
+      }
+    }
+  },
+  "currentSource": {
+    "path": "docs/design-studies/code-components/TypeFaceSequence.tsx",
+    "sha256": "77eec9039cfbb58512ca136a681c31df3460a9b8aca2e1200ec66faf4d939535",
+    "bytes": 242982
+  },
+  "validation": {
+    "status": "PASS: focused locked Nix source/strict/browser/real-pixel and HMR regressions; actual Framer save/reload paint remains pending.",
+    "command": "pnpm run check:type-face-sequence",
+    "strictGroups": 7,
+    "temporalFrames": 10,
+    "mixedPixelPlacements": 120,
+    "mixedScope": "60 placements per legacy/new coordinator leader, minimum head ink/detail plus resource/cleanup checks; unchanged old actor retained.",
+    "actualFramerSaved": false,
+    "actualFramerReloadPaint": false,
+    "reason": "This is source/test provenance. No connected browser automation or Framer write is performed by this change.",
+    "hmrCases": [
+      "Same-window old cached still negative control and corrected revised-source handoff.",
+      "Real React18 preserved outer/surface proxy identities; actual public wrapper revision key recreated the surface and new factory."
+    ],
+    "lockedNix": {
+      "command": "nix build .#checks.x86_64-linux.type-face-sequence --no-link --print-out-paths -L",
+      "store": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1",
+      "results": {
+        "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f",
+        "bytes": 29513
+      },
+      "strictGroups": 7,
+      "temporalFrames": 10,
+      "mixedPixelPlacements": 120,
+      "actualPeakContexts": 1,
+      "hmrCachePassed": true,
+      "hmrReactKeyedSurfacePassed": true,
+      "emittedTotalBytes": 250319,
+      "errors": 0
+    },
+    "test": {
+      "path": "scripts/check-type-face-sequence.mjs",
+      "sha256": "f7f3426e74844880ce1764ebed9b580d61ae83b1b597e322b955095c88837119",
+      "bytes": 23782
+    }
+  },
+  "externalEvidence": {
+    "directory": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001",
+    "selectedFullSourceRetained": true,
+    "primaryHTMLRetained": true,
+    "meshAndContourBuildersRetained": true,
+    "sourceComparisonFrames": [
+      "final-comparisons/source-actor-1.2.png",
+      "final-comparisons/source-actor-2.4.png",
+      "final-comparisons/source-actor-4.8.png",
+      "final-comparisons/source-actor-8.4.png",
+      "final-comparisons/source-bands-1.2.png",
+      "final-comparisons/source-bands-8.4.png"
+    ],
+    "pinnedArtifacts": [
+      {
+        "name": "mesh-preparation.json",
+        "sha256": "94583dcb51913d508680cd0d1210c360f645ada18b5b1891c9d2520d4e97ee0e",
+        "bytes": 1663
+      },
+      {
+        "name": "contour-preparation.json",
+        "sha256": "736d91f1f4cb0d8b399f7745a874ee9e2bad3feb3f9094c0f44dff70e24dab45",
+        "bytes": 1231
+      },
+      {
+        "name": "camera-profile-fit.json",
+        "sha256": "1ac91b08a0dbf666fdac4a24c8edb30e7e603dbf2e18991ad26b17f296acd512",
+        "bytes": 18369
+      },
+      {
+        "name": "mesh-comparison/result.json",
+        "sha256": "8a8b74724ae7b5944148a4246a4ecabc7089fed4c9f00a972636524bae9ced6b",
+        "bytes": 1945
+      },
+      {
+        "name": "temporal-ink-bounds.json",
+        "sha256": "0e7753af7d16178d426ea977d3f7fc8838f24198eca266a1bd844b7f2a8efb06",
+        "bytes": 45561
+      },
+      {
+        "name": "source-band-mask-fit.json",
+        "sha256": "0f4ec669068db1fd492c9612e539e721f835e19b663e70e53a201159e2869ca1",
+        "bytes": 31375
+      },
+      {
+        "name": "reproduction/manifest.json",
+        "sha256": "5769b2915d7754d4c270c5c782d8ef931d618296a5c587a909f771ba6ad18992",
+        "bytes": 1060
+      },
+      {
+        "name": "linux-font-resolution.json",
+        "sha256": "c372cf4029c51572b35f7fba847639ab4e76ffe58e12238efedbe50ccf448378",
+        "bytes": 655
+      }
+    ],
+    "finalLockedNixComparisonFrames": [
+      "final-comparisons/source-77eec-1.2.png",
+      "final-comparisons/source-77eec-2.4.png",
+      "final-comparisons/source-77eec-4.8.png",
+      "final-comparisons/source-77eec-8.4.png"
+    ]
+  }
+}
