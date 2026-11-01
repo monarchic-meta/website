@@ -68,6 +68,11 @@ of duplicating them, and preserve source credits and stable study IDs.
 
 ## Standalone hero pages
 
+The [standalone hero handoff](design-studies/standalone-heroes/handoff.md) records
+the eighteen source openings, nine Round02 originals, page links and verification
+boundaries. Its current manifest is separate from the earlier grouped-board
+handoffs.
+
 Each hero gets its own regular Web page, opening directly on the full composition
 with an explicitly authored Phone treatment. Grouped Design boards remain useful
 for comparison. A Web collection index contains links rather than mounting every

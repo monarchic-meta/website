@@ -1,25 +1,29 @@
 # Framer project organization
 
-The current authored inventory is **42 pages: 15 Design and 27 Web**, with
-**187 code placements and 18 code sources**. Design pages use native nested
-folders; Web pages use the hierarchy of their route prefixes. Separate boards
-retain their contents and loading boundaries.
+The current authored inventory is **69 pages: 15 Design and 54 Web**, with
+**187 code placements and 22 code files**. Each of the eighteen source hero
+recreations and nine Round02 originals has its own regular Web page. The six
+former hero galleries now serve as lightweight link indexes with no code
+placements. Grouped Design boards retain their editable contents and loading
+boundaries.
 
-The **2026-10-31** folder organization verified the preceding 34 pages, 160 code
-placements and 17 sources after an editor reload. Its frozen
-[organization manifest](framer-organization-manifest.json) remains the historical
-baseline, with the former/current names, routes and proof hashes for those pages.
-The subsequent [original hero round](design-studies/original-heroes/handoff.md)
-adds four Design boards, four draft Web playgrounds and 27 code placements.
-That addition is verified after editor reload, responsive Preview playback and
-separate Canvas opt-in/restoration checks. Its independent preservation audit
-confirms that all preceding collections remain exact.
+The [standalone hero handoff](design-studies/standalone-heroes/handoff.md) and
+[manifest](design-studies/standalone-heroes/manifest.json) record the current
+page identities, responsive states, source package and verification. All fifteen
+earlier Design pages and twenty-one unrelated Web pages retain their complete
+stored contents. All eighteen earlier code identities remain: sixteen receive
+only the enumerated responsive bitmap-copy correction; two remain byte-exact.
+Their artwork, controls and placement presets stay unchanged. The thirty-two old
+Web gallery placements were replaced by thirty-two placements on individual hero
+pages.
 
-The folder-only pass changed membership, page names, routes and mapped internal
-links while preserving page types, descendants, artwork, controls and sources.
-The original hero addition is separate new work; the earlier pages are retained.
-The [manual Framer workflow](framer-prototyping.md) still governs implementation
-handoff. Neither operation publishes or synchronizes with the implemented site.
+The frozen [34-page organization manifest](framer-organization-manifest.json)
+and [42-page original hero handoff](design-studies/original-heroes/handoff.md)
+retain their dated states. Folder organization, the first hero round and the
+standalone expansion are separate operations. The
+[manual Framer workflow](framer-prototyping.md) governs implementation handoff;
+these prototypes are unpublished and do not synchronize with the implemented
+site.
 
 ## Design: editable visual collections
 
@@ -48,12 +52,13 @@ collection's source keys, credits and fidelity limits.
 | Original compositions | [Graphic elements](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | Eighteen retained MB studies and their combination playground. |
 | Original compositions | [Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2) | Eight independent OL studies. |
 | Original compositions | [Logo treatments](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ) | Thirteen original treatments of the existing Monarchic logo. |
-| Original compositions / Heroes | [Information fields](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=xpjehgQOy) | OH-001–002, independently composed information-field openings. |
-| Original compositions / Heroes | [Geometric identity](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=J1NVQTs9i) | OH-003–004, original identity treatments and native type. |
-| Original compositions / Heroes | [Research montage](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=S1P8iri0J) | OH-005–006, original generated graphic specimens and editorial composition. |
-| Original compositions / Heroes | [Synthesis](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=IPdEBIc6J) | OH-007–009, three original combinations of the preceding avenues. |
+| Original compositions / Heroes | [Information fields](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=xpjehgQOy) | OH-001–002; retained Round01 comparison board. |
+| Original compositions / Heroes | [Geometric identity](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=J1NVQTs9i) | OH-003–004; retained Round01 comparison board. |
+| Original compositions / Heroes | [Research montage](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=S1P8iri0J) | OH-005–006; retained Round01 comparison board. |
+| Original compositions / Heroes | [Synthesis](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=IPdEBIc6J) | OH-007–009; retained Round01 comparison board. |
 
-The four original hero boards have separate responsive Web counterparts below.
+The four Round01 original hero boards remain comparison material. Their former
+Web galleries now index the individual Round02 openings below.
 HERO reference keys appear as mechanism influences in their review footers;
 external source layouts or geometry are not imported. OH-003 and OH-008 retain
 explicit provenance for the existing canonical Monarchic mark.
@@ -117,8 +122,8 @@ the MRI anatomy. Keep source provenance visible in each specimen.
 | Folder | Page | Route |
 | --- | --- | --- |
 | Playgrounds / Source inspiration | [Creative coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=SqfboNSM6) | `/playgrounds/source-inspiration/creative-coding` |
-| Playgrounds / Source inspiration / Heroes | [Surface writing & filaments](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VR2TaJCqa) | `/playgrounds/source-inspiration/heroes/surface-writing-filaments` |
-| Playgrounds / Source inspiration / Heroes | [Light, vectors & wireframes](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=iUjJa5763) | `/playgrounds/source-inspiration/heroes/light-vectors-wireframes` |
+| Playgrounds / Source inspiration / Heroes | [Source heroes — all eighteen (index)](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VR2TaJCqa) | `/playgrounds/source-inspiration/heroes/surface-writing-filaments` |
+| Playgrounds / Source inspiration / Heroes | [Live source heroes (index)](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=iUjJa5763) | `/playgrounds/source-inspiration/heroes/light-vectors-wireframes` |
 | Playgrounds / Original compositions | [Creative coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=N5Uh3X9KH) | `/playgrounds/original-compositions/creative-coding` |
 | Playgrounds / Original compositions / Heroes | [Information fields](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XpYGM1WKS) | `/playgrounds/original-compositions/heroes/information-fields` |
 | Playgrounds / Original compositions / Heroes | [Geometric identity](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XE5l5uSSR) | `/playgrounds/original-compositions/heroes/geometric-identity` |
@@ -131,6 +136,51 @@ the MRI anatomy. Keep source provenance visible in each specimen.
 | Playgrounds / Monarchic graphics / Brain | [Refined fibers](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=HQL8UQ3La) | `/playgrounds/monarchic-graphics/brain/refined-fibers` |
 | Playgrounds / Monarchic graphics / Brain | [Solid anatomy — Dither](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=fRamy0U53) | `/playgrounds/monarchic-graphics/brain/solid-dither` |
 | Playgrounds / Monarchic graphics / Brain | [Solid anatomy — Text](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=Co5wpXpOb) | `/playgrounds/monarchic-graphics/brain/solid-text` |
+
+## Web: standalone hero openings
+
+Each page opens on one complete composition with an authored Phone layout.
+Source pages sit under **Playgrounds / Source inspiration / Heroes**; Round02
+originals sit under **Playgrounds / Original compositions / Heroes / Round02**.
+The six existing hero directory routes remain stable. Their links open these
+individual pages without mounting several live graphics together.
+
+The first six originals explore distinct information environments, geometric
+identities and research montages. The last three combine those approaches.
+Source credits, geometry stand-ins, captured film stills and intentional
+simplifications remain visible below the relevant opening. The
+[handoff](design-studies/standalone-heroes/handoff.md) owns their detailed
+fidelity and playback evidence.
+
+| Reference | Opening | Direction | Route |
+| --- | --- | --- | --- |
+| HERO-001 | [Type Face](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=AGtapWT7T) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-001-type-face` |
+| HERO-002 | [Ajedrez Film Poem](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=umff7PeCD) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-002-ajedrez-film-poem` |
+| HERO-003 | [Agent-first Billing / Polar](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=aDqID00en) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-003-agent-first-billing-polar` |
+| HERO-004 | [Artemii Lebedev](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sNLGeRYdW) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-004-artemii-lebedev` |
+| HERO-005 | [Maximilian Kaspar](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=eXmKseHxD) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-005-maximilian-kaspar` |
+| HERO-006 | [Mac Moss Studio](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=c9r_9CrBR) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-006-mac-moss-studio` |
+| HERO-007 | [Cantor8](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=NNtv_yybj) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-007-cantor8` |
+| HERO-008 | [PP Neue Montreal](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=b3uK2ocwT) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-008-pp-neue-montreal` |
+| HERO-009 | [Vercel](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=WGnsJZqX_) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-009-vercel` |
+| HERO-010 | [G!theimagineers](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=APoGf2ASB) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-010-g-theimagineers` |
+| HERO-011 | [Jon Way Studio / JW.S](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=MyzKXY0X5) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-011-jon-way-studio-jw-s` |
+| HERO-012 | [Mezmo](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=URF4BR9rV) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-012-mezmo` |
+| HERO-013 | [FORMAT](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=rQKy22gM2) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-013-format` |
+| HERO-014 | [Unbelievably Crap](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=veYj7qYuv) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-014-unbelievably-crap` |
+| HERO-015 | [MECHA](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=igYIXGsXp) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-015-mecha` |
+| HERO-016 | [Origin](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P7xB05q8z) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-016-origin` |
+| HERO-017 | [Bleibtgleich 2026](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q1Btevkm7) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-017-bleibtgleich-2026` |
+| HERO-018 | [pu—ente / entry and graphic-design branch](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=s6UwFN6_K) | Source inspiration | `/playgrounds/source-inspiration/heroes/hero-018-pu-ente` |
+| OH-010 | [Pathfield](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JzRfzVmvp) | Information field | `/playgrounds/original-compositions/heroes/round-02/pathfield` |
+| OH-011 | [Concordance](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q8H2voJ0l) | Information field | `/playgrounds/original-compositions/heroes/round-02/concordance` |
+| OH-012 | [Axial Passage](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=y4fcvmX_d) | Geometric identity | `/playgrounds/original-compositions/heroes/round-02/axialpassage` |
+| OH-013 | [Letterform Engine](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=RMpymg1pV) | Geometric identity | `/playgrounds/original-compositions/heroes/round-02/letterengine` |
+| OH-014 | [Report Cuts](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=DvQZQKDNu) | Research montage | `/playgrounds/original-compositions/heroes/round-02/reportcuts` |
+| OH-015 | [Research Film](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=KTHletWNf) | Research montage | `/playgrounds/original-compositions/heroes/round-02/researchfilm` |
+| OH-016 | [Semantic Aperture](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=px2UmqdBo) | Information + geometry | `/playgrounds/original-compositions/heroes/round-02/semanticaperture` |
+| OH-017 | [Format Press](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=BtCLrK8nJ) | Geometry + montage | `/playgrounds/original-compositions/heroes/round-02/formatpress` |
+| OH-018 | [Field Transmission](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ZOzNIr5dc) | Combined direction | `/playgrounds/original-compositions/heroes/round-02/fieldtransmission` |
 
 ## Current routes and historical evidence
 
@@ -178,7 +228,7 @@ not change, so existing renderer-regression evidence remains separate from this
 organization verification. This 34-page proof remains unchanged by the later
 original hero addition.
 
-## Original hero addition — verified
+## Original hero addition — verified historical 42-page state
 
 The eight new page links come from the append's returned node map and complete
 saved-state readback. The total is 42 pages, 187 code placements and 18 sources.
