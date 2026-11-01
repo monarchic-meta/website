@@ -653,9 +653,9 @@
     "closingPosterCarry"
   ],
   "closingFieldPool": {
-    "status": "Initial b548 native first-slot Desktop interaction passed; current responsive caller-style/pose fix is locally validated and awaits same-file Framer update and actual responsive retest.",
-    "sourceSHA256": "618a459fe0c511197bd3e60c962aebbf0d0d5287e854981a0cb532fcefd23e2c",
-    "sourceBytes": 95483,
+    "status": "Actual618 Desktop/Phone geometry and single-rotation gates passed; current original-pose decoration cleanup is locally validated and awaits same-file Framer update and actual retest.",
+    "sourceSHA256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+    "sourceBytes": 96336,
     "parentCarrierSourceSHA256": "5c7c8f0933a1a3ef1fdf75bf36e96a6272152652586682d3d89a29ca27c963e0",
     "implementation": "Independent bounded source-inspired chip physics with thirty stable native pose Frames and one retained native component instance per Frame. The same native poster remains a sibling and keeps its existing descendants. No poster bitmap, drag gesture, source website behavior JavaScript, global physics store or GPU allocation is introduced.",
     "nativeBinding": {
@@ -1690,6 +1690,55 @@
       "log": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-pose-takeover/nix-build.log",
         "sha256": "f3f6fa38e7be218034175090442a73e8a56936dd58429af0c6f8c57b12cd267e",
+        "bytes": 397
+      }
+    }
+  },
+  "responsiveDecorationOwnershipCorrection": {
+    "sourceSHA256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+    "sourceBytes": 96336,
+    "parentSourceSHA256": "618a459fe0c511197bd3e60c962aebbf0d0d5287e854981a0cb532fcefd23e2c",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/receipt.json",
+      "sha256": "843d49d87be75d974072d69f3e2c5391a88f383954461f85d9e442d67b51b44f",
+      "bytes": 5385
+    },
+    "actualBefore": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/actual-framer618-before.json",
+      "sha256": "62b1755adbadf0612b38fbc7a3524c504a937f2e6b5d6d5e84e345cca2dac504",
+      "bytes": 194530
+    },
+    "scope": {
+      "reverseReconstructs618Exactly": true,
+      "all123ExportedBodiesNamesOrderByteExact": true,
+      "scope": "Poster registration cleanup restores only world-owned background/outline/z-index from a render-updated current caller-style ref, clearing unspecified inline decoration to reveal native CSS. Current caller shorthand and explicit outline longhands are respected. No old dimensions are restored.",
+      "unchanged": "618’s responsive dimensions and imperative-only slot pose, same poster/native IDs, world state ownership, geometry,21 genuine media choices,30 FIFO budget, collision/timers/visibility and all123 exports."
+    },
+    "localValidation": {
+      "browserChecks": 62,
+      "strictGroups": 6,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/browser62.json",
+        "sha256": "a6628cd6ef40c56270edf60864aacaaf01e0f8895c7c218b00574152279384f9",
+        "bytes": 65367
+      }
+    },
+    "actualFramerRetestPassed": false,
+    "remaining29NativeSlotsAuthorized": false,
+    "lockedNix": {
+      "command": "nix build .#checks.x86_64-linux.source-format-pool --no-link --print-out-paths",
+      "exitCode": 0,
+      "path": "/nix/store/70crfm6dyzn4zwdwrvd9h47qkkha5db9-monarchic-website-source-format-pool-0.0.1",
+      "poolFocusedGroups": 5,
+      "browserChecks": 62,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/nix-browser62.json",
+        "sha256": "c38ee6950330b7ae998f8cdeb49cefdb9e5656c578a9388cea345be03c86c3f6",
+        "bytes": 65316
+      },
+      "log": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/nix-build.log",
+        "sha256": "00725155b8aa1d3024697731fce44dd85c2638be5fec487bcf5247973a0ba577",
         "bytes": 397
       }
     }

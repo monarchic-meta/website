@@ -363,6 +363,14 @@ function createFormatClosingWorld() {
     const stopped = () => config.frozen || config.reduced || typeof document !== "undefined" && document.hidden
     const save = (node: HTMLElement, style: React.CSSProperties): ClosingRegistration => { const css = (key: keyof React.CSSProperties, fallback: string, unit = "px") => typeof style[key] === "number" ? style[key] + unit : String(style[key] ?? fallback); return { node, transform: css("transform", "", ""), width: css("width", node.style.width), left: css("left", node.style.left), top: css("top", node.style.top), height: css("height", node.style.height), origin: css("transformOrigin", node.style.transformOrigin, ""), background: css("backgroundColor", node.style.backgroundColor, ""), outline: css("outline", node.style.outline, ""), z: css("zIndex", node.style.zIndex, ""), pointer: css("pointerEvents", node.style.pointerEvents, "") } }
     const restore = (r: ClosingRegistration) => { const s = r.node.style; s.transform = r.transform; s.width = r.width; s.left = r.left; s.top = r.top; s.height = r.height; s.transformOrigin = r.origin; s.backgroundColor = r.background; s.outline = r.outline; s.zIndex = r.z; s.pointerEvents = r.pointer }
+    const restoreDecoration = (node: HTMLElement, style: React.CSSProperties = {}) => {
+        const s = node.style
+        s.backgroundColor = ""
+        if (style.background !== undefined) s.background = String(style.background)
+        if (style.backgroundColor !== undefined) s.backgroundColor = String(style.backgroundColor)
+        s.zIndex = String(style.zIndex ?? ""); s.outline = String(style.outline ?? "")
+        for (const key of ["outlineColor", "outlineStyle", "outlineWidth"] as const) if (style[key] !== undefined) s[key] = typeof style[key] === "number" ? style[key] + "px" : String(style[key])
+    }
     const setHeld = (value: boolean) => { if (held !== value) { held = value; listeners.forEach(fn => fn()) } }
     const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0; chipPrevious=0; chipAccumulator=0 }
     const geometry = () => {
@@ -434,7 +442,7 @@ function createFormatClosingWorld() {
     let observer: ResizeObserver | null = null
     const detach = () => { observer?.disconnect(); observer=null;if(attached){window.removeEventListener("scroll",schedule);window.removeEventListener("resize",changed);document.removeEventListener("visibilitychange",changed)}attached=false }
     const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced || !poster || !field) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
-    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); /* React has already committed the next caller style; never restore stale breakpoint declarations here. */ if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
+    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties, currentStyle?: () => React.CSSProperties | undefined) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); /* React has already committed the next caller style; never restore stale breakpoint declarations here. */ if (role === "poster") restoreDecoration(node, currentStyle?.()); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
     const slotPose = (index: number, knownRatio?:number): DetailStyle => {
         const chip = chips.find(b => b.slot === index), binding = formatChipVariantRuntime()
         if (!chip || !field || !binding || binding.values.length !== 21) return { opacity: 0, pointerEvents: "none" }
@@ -465,8 +473,9 @@ const FormatClosingContext = React.createContext<FormatClosingWorld | null>(null
 const PosterCarryContext = React.createContext(false)
 function closingPoster(Component: NativeLayer): NativeLayer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null), held = React.useSyncExternalStore(world?.subscribe ?? emptySubscribe, world?.getHeld ?? (() => false), () => false)
-        useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("poster", node, props.style ?? {}) }, [world, props.style])
+        const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null), currentStyle = React.useRef(props.style), held = React.useSyncExternalStore(world?.subscribe ?? emptySubscribe, world?.getHeld ?? (() => false), () => false)
+        currentStyle.current = props.style
+        useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("poster", node, props.style ?? {}, () => currentStyle.current) }, [world, props.style])
         return <PosterCarryContext.Provider value={held}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-carried-poster="same-native-node" /></PosterCarryContext.Provider>
     }) as NativeLayer
 }
