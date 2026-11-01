@@ -1,0 +1,335 @@
+{
+  "schema": "source-polar-guide-current-provenance.v1",
+  "classification": "Source inspiration / HERO-003 / current original source recreation",
+  "status": "LOCAL_SOURCE_AND_FIXTURES_PASS_NATIVE_SCHEMA_SAVE_RELOAD_AND_ACTUAL_PAINT_PENDING",
+  "source": {
+    "url": "https://polar.sh/field-guide",
+    "creator": "Polar",
+    "credit": "Source SVG artwork and Imagine film: Polar. Independently authored study controls and explanatory summaries.",
+    "license": "Reuse license not established in the retained audit; no licensing assertion or publication claim.",
+    "audit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/audit-contract.json",
+      "sha256": "4015b5de9eb950267e6346281a2dccdbf8c1a084846c02c0686f8a02a8c0d1ae",
+      "bytes": 5164
+    },
+    "sourceHTML": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/049-desktop-real-wheel-stream-handoff.html",
+      "sha256": "7ccc1ba8cc9c96e1915923fa857d0ca5fcf7822abad97900ea00a3bdcbf588b3",
+      "bytes": 345103
+    },
+    "facts": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/public-script-022-80990a77ce.js.pretty.js",
+        "sha256": "828ecfa0957d3d88cc04365026c61c18c5fda44ff984518ad44704d90602b663",
+        "bytes": 52306
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/public-script-025-f8e2bb1fc0.js.pretty.js",
+        "sha256": "4fe894163d2bcde2118de72fe11be7a2811670f9504c39e0182456f9d54b8e5e",
+        "bytes": 120643
+      }
+    ],
+    "behaviorProgramReuse": false
+  },
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePolarGuideControls.tsx",
+    "sha256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+    "bytes": 90763
+  },
+  "tests": {
+    "strict": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-controls.mjs",
+      "sha256": "a83c8c3e682e98789eff364a249acd9ea970e64cfc120ad0cb449054fd542e64",
+      "bytes": 8030,
+      "groups": 6,
+      "passed": true
+    },
+    "browser": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-browser.mjs",
+      "sha256": "925ea009b4c9c682ff9de090045d0f84e8c8797169a640d18916440ec7e6f04a",
+      "bytes": 19328,
+      "groups": 36,
+      "passed": true,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/validation/final/result.json",
+        "sha256": "8c959914447a7363086fe7fa307e205650468b118c0cb8fea2b81298431c1de5",
+        "bytes": 3048
+      }
+    },
+    "lockedNix": {
+      "status": "PASS",
+      "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+      "strictGroups": 6,
+      "browserChecks": 36,
+      "fonts": "Locked DejaVu and Liberation Fontconfig",
+      "browserReceipt": {
+        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+        "bytes": 3102
+      },
+      "historical": {
+        "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+        "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+        "strictGroups": 6,
+        "browserChecks": 36,
+        "passed": true,
+        "staticScrollerGuardCovered": false
+      }
+    },
+    "actualFramerPaint": false,
+    "editorReload": false,
+    "scope": "Actual React18/Chromium sourceSVG detail and paused pixels, native tap/keyboard/cancellation, native-name nested navigation, responsive scroller DOM replacement for navigation,1024TOC transition, early-access navigation, own motion budget and mocked official movieSDK interface. Actual provider playback and Framer native forwarding remain separate."
+  },
+  "publicAPI": {
+    "explicitHOCs": 68,
+    "componentNames": [
+      "SourcePolarGuideControls",
+      "SourcePolarFilm"
+    ],
+    "expectedCatalogRows": 70,
+    "actualCatalogRows": null,
+    "controls": {
+      "SourcePolarGuideControls": 5,
+      "SourcePolarFilm": 3
+    },
+    "hocs": [
+      "withPolarGuide",
+      "withPolarScroller",
+      "withPolarRailMarker",
+      "withPolarMain",
+      "withPolarRail",
+      "withPolarHeaderIdentity",
+      "withPolarContent",
+      "withPolarDiagramRow",
+      "withPolarNotes",
+      "withPolarHeader",
+      "withPolarDiagram",
+      "withPolarTocGrid",
+      "withPolarEarlyAccess",
+      "withPolarPlayback",
+      "withPolarPlaybackValue",
+      "withPolarHome",
+      "withPolarChapter00",
+      "withPolarChapter01",
+      "withPolarChapter02",
+      "withPolarChapter03",
+      "withPolarChapter04",
+      "withPolarChapter05",
+      "withPolarChapter06",
+      "withPolarChapter07",
+      "withPolarChapter08",
+      "withPolarChapter09",
+      "withPolarChapter10",
+      "withPolarPage01",
+      "withPolarPage02",
+      "withPolarPage03",
+      "withPolarPage04",
+      "withPolarPage05",
+      "withPolarPage06",
+      "withPolarPage07",
+      "withPolarPage08",
+      "withPolarPage09",
+      "withPolarPage10",
+      "withPolarPage11",
+      "withPolarPage12",
+      "withPolarPage13",
+      "withPolarPage14",
+      "withPolarPage15",
+      "withPolarPage16",
+      "withPolarPage17",
+      "withPolarPage18",
+      "withPolarPage19",
+      "withPolarPage20",
+      "withPolarPage21",
+      "withPolarPage22",
+      "withPolarPage23",
+      "withPolarPage24",
+      "withPolarPage25",
+      "withPolarPage26",
+      "withPolarPage27",
+      "withPolarPage28",
+      "withPolarPage29",
+      "withPolarPage30",
+      "withPolarPage31",
+      "withPolarToc01",
+      "withPolarToc02",
+      "withPolarToc03",
+      "withPolarToc04",
+      "withPolarToc05",
+      "withPolarToc06",
+      "withPolarToc07",
+      "withPolarToc08",
+      "withPolarToc09",
+      "withPolarToc10"
+    ]
+  },
+  "scope": {
+    "parts": 815,
+    "nativeSVG": 80,
+    "nativeText": 381,
+    "nativeFrames": 350,
+    "codeSlots": 4,
+    "chapters": 11,
+    "mainFigures": 31,
+    "toc": 10,
+    "railButtons": 43
+  },
+  "artwork": {
+    "exactSourceMainSVGs": 32,
+    "liveShellsEmbedded": [
+      "m-ledger",
+      "m-meter",
+      "m-credits"
+    ],
+    "retainedSourceManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/source-geometry-and-text-reference.json",
+      "sha256": "7cbfe4b07150225f5d778d93a9eb88b141a466aaeae08d77683589ad05abe082",
+      "bytes": 68545
+    },
+    "nativeRecipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/native-authoring.json",
+      "sha256": "e043af50ac3dfb70b9c8672b9f702b360c8062ab6fdb8072c94f6762b4d27d93",
+      "bytes": 834276
+    },
+    "derivation": "Main SVG artwork preserves source path/shape/text/viewBox data, with namespace and explicit source-like monospace fallback. The native recipe merges a root fallback/color style without duplicate attributes and materializes the retained non-scaling-stroke rule on 10 TOC mini diagrams. All original SVG files remain separately pinned.",
+    "newPainting": false,
+    "wholePageBitmapArt": false,
+    "tocCorners": {
+      "count": 40,
+      "source": "Four 12 px native HTML corner spans on each of 10 TOC cards; no duplicate overlays on the framed main SVGs.",
+      "normalStroke": "#8f8f8f",
+      "hoverStroke": "#625fff",
+      "hoverTransitionMs": 75,
+      "sourceCSS": {
+        "url": "https://polar.sh/_next/static/immutable/chunks/1fs0wpldwspuv.css",
+        "status": 200,
+        "bytes": 228299,
+        "sha256": "84dd469323c26e90c47ccb9de05c201155b04e8cccc20c51ac33c4c15c3a49a4",
+        "indigo500": "#625fff"
+      },
+      "meter": "The four existing registration paths remain byte-exact inside the embedded source SVG; no additional meter overlay."
+    }
+  },
+  "behavior": {
+    "navigation": "11 chapters align their start;31 figures align their center; active nearest figure updates the page query; home removes that query. Keyboard arrows cycle figures and0–9 select chapters00–09;E adds one model event andR resets.",
+    "eventStream": "Independent deterministic example using the source 72/16/12 event split, 120–1519 token quantities, 260–680 ms cadence, 64-event bound and 10,000-credit grants. Ledger, meter and credits share one model while admitted; numerical/random histories are not byte-equivalent to source.",
+    "construction": "Independently authored per-path construction from public timing facts: threshold 0.4 for figures at a 1.3 pace, source stroke/fill/text groups and cubic easing;TOC threshold 0.15 with the isIntersecting predicate and a 110 ms DOM-order batch stagger. Once seen, it does not restart. Actual nativeSVG DOM forwarding is a future gate; asset-only DOM falls back to static artwork.",
+    "sourceProgramTextImported": false
+  },
+  "resources": {
+    "ownedWebGLContexts": 0,
+    "ownedCanvasElements": 0,
+    "ownPerWindowGate": {
+      "canvas": 1,
+      "preview": 2,
+      "motionPixels": 1000000,
+      "canvasFrameIntervalMs": 84
+    },
+    "canvasDefaultMotion": false,
+    "canvasOptIn": "Only RenderTarget.canvas and explicit canvasMotion; export/thumbnail always frozen.",
+    "transformedBoundsAndDPR": true,
+    "legacyRule": "Any mounted canvas[data-study-source], including static legacy still canvases and HERO-016, conservatively blocks all SVG/film automatic motion. DOM/attribute/scroll changes revoke admission and every model paint rechecks the gate. The legacy pool is never mutated and no fake canvas/lease is created.",
+    "inactive": "Inactive actors hold their SVG snapshot and unsubscribe from model updates. Event timer exists only while a real admitted member is present. Explicit user event/reset is a bounded state action.",
+    "movie": "One genuine cross-origin iframe may be retained paused. Its browser-owned media decoder is not observable through the old HTMLVideoElement decoder gate; it joins this module Preview admission and is inert when not admitted. Zero owned GL does not mean zero browser/other-study work.",
+    "mixedBoard": "Conservative mounted-canvas blocking restricts automatic SVG motion on mixed legacy boards. Existing 60 legacy renderer quality evidence is not newly rerun or relabeled by these 36 groups."
+  },
+  "movie": {
+    "sourceURL": "https://iframe.cloudflarestream.com/dd150505f55955403f2e2dd190771af7?muted=true&preload=metadata&loop=true",
+    "sourceDurationSeconds": 85.11,
+    "sourceResolution": [
+      1280,
+      720
+    ],
+    "SDK": "https://embed.cloudflarestream.com/embed/sdk.latest.js",
+    "SDKDocs": "https://developers.cloudflare.com/stream/viewing-videos/using-the-stream-player/using-the-player-api/",
+    "poster": {
+      "url": "https://customer-wl21dabnj6qtvcai.cloudflarestream.com/dd150505f55955403f2e2dd190771af7/thumbnails/thumbnail.jpg?time=0s&height=720",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 38175,
+      "sha256": "e1498a33302a581b4d0232f489da82499718f63157e615d50cee567756c3cda5",
+      "derivation": "Actual customer-domain-prefix and video UID from original Stream HTML; documented Cloudflare thumbnail endpoint; first frame0s.",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/original-film-frame0.jpg"
+    },
+    "posterContent": "The genuine 0 s source frame is near-black opening grain; no meaningful later image is invented.",
+    "actualSourceAudit": "Visible playback and offscreen pause were observed in the retained audit; complete 85 s content/loop wrap/seek/fullscreen equivalence were not established.",
+    "localSDKTest": "Public-interface fixture only, no actual provider or Framer playback claim."
+  },
+  "nativePlan": {
+    "recipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/native-authoring.json",
+      "sha256": "e043af50ac3dfb70b9c8672b9f702b360c8062ab6fdb8072c94f6762b4d27d93",
+      "bytes": 834276
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/native-validation.json",
+      "sha256": "9fde29e87373c0d7926fcdca6ef7d05ccbc30ea940c07609d7ec7443f5d2ef30",
+      "bytes": 2083
+    },
+    "historicalPage": "QnxW3i1rV",
+    "actualPage": null,
+    "actualSourceModule": null,
+    "actualIDs": null,
+    "sourceRows": 31,
+    "nativeRoots": [
+      1440,
+      768,
+      390
+    ],
+    "preserveNativeCopy": true,
+    "form": {
+      "status": "UNBOUND_GENUINE_NATIVE_INPUT_COMPONENTS_REQUIRED_FOR_EDITABLE_INPUT_BEHAVIOR",
+      "fields": [
+        {
+          "label": "Company Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "Website URL",
+          "type": "url",
+          "required": true
+        },
+        {
+          "label": "Contact Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "label": "Contact Name",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "submit": "Original-site exit only; no recreated backend endpoint"
+    },
+    "svgValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/svg-recipe-validation.json",
+      "sha256": "7faee07ca5b8c26b0a64905d038b1631bb3a3adac886edb837c5dffcc0722441",
+      "bytes": 12810
+    },
+    "sourceSequence": "Home composition, ten-card TOC, genuine film, chapters 00–10, early-access destination and study credits.",
+    "staticCanvasGeometry": "Each native SVG wrapper authors its actual source viewBox ratio; the native editor does not depend on overrides to correct a generic square.",
+    "wireValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/native-recipe-wire-validation.json",
+      "sha256": "c4cc4eb5f55d4582032fca8ed66c61df3dc2def47a5413fee9a5ba299c1e2fc4",
+      "bytes": 777
+    }
+  },
+  "differences": [
+    "Adjacent explanatory paragraphs are independently authored source-grounded summaries; original titles and SVG diagram text remain credited. Native line counts and full scroll extent differ.",
+    "SVG construction requires actual owned native SVG DOM; an asset-only DOM representation remains a declared static construction fallback, pending actual Framer verification.",
+    "Original film is a genuine third-party iframe. Its browser-owned decoder is outside the old HTMLVideoElement gate; it joins this module’s conservative two-Preview gate. One active iframe is declared; no zero-browser-resource claim.",
+    "Any canvas[data-study-source], including HERO-016, conservatively blocks all new SVG/iframe automatic motion. No legacy pool mutation or fake lease.",
+    "Source early-access form layout is represented by editable native labels/frames with a real original-site exit. Native input catalogue binding and submission/backend behavior remain unresolved; this recipe does not send enquiries.",
+    "Geist Mono and PP Neue Montreal native font availability/binding remain actual catalogue gates; explicit Inter/monospace substitutions are visible in prepared data.",
+    "Actual saved page, editor reload, SVG-node DOM forwarding, provider controls and Desktop/Phone behavior remain separate future gates."
+  ],
+  "staticLayoutCorrection": {
+    "parentSourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+    "delta": "The scroller applies its live height, flex and padding only when not frozen. The actual React18 SSR regression preserves authored Phone 796 px height and 28 px padding instead of imposing Desktop padding.",
+    "previewRenderingUnchanged": true,
+    "publicExportsUnchanged": true
+  }
+}
