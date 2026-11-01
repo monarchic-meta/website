@@ -1,0 +1,284 @@
+{
+  "id": "HERO-015",
+  "title": "MECHA",
+  "sourceURL": "https://mecha-xyz.webflow.io/",
+  "selectedGallery": "https://www.awwwards.com/sites/mecha",
+  "credit": "Widelab / Grzegorz Leśniewicz; source M mark license unverified",
+  "classification": "Source inspiration / credited interactive recreation",
+  "scope": "Settled manifesto-to-investment handoff with persistent rail/index and source-corresponding M transition. Root sampled first investment and entry into second, not the entire10775px page.",
+  "sourceViewport": [
+    1280,
+    720
+  ],
+  "layout": {
+    "background": "#ffffff",
+    "ink": "#171717",
+    "divider": "#d8d8d8",
+    "accent": "#8f194a",
+    "rail": {
+      "x": 0,
+      "y": 0,
+      "width": 422,
+      "height": 720,
+      "wordmark": {
+        "x": 28,
+        "y": 28,
+        "width": 102,
+        "height": 24
+      },
+      "Mmark": {
+        "x": 129,
+        "y": 192,
+        "width": 165,
+        "height": 230
+      },
+      "investmentIndex": {
+        "x": 28,
+        "y": 574,
+        "width": 366,
+        "rows": "Header plus three28pxrows"
+      }
+    },
+    "content": {
+      "x": 422,
+      "width": 858,
+      "topNavigation": "Compactcellnavtopright",
+      "manifesto": "Large serif statement startingx450/y70; approximately50px size/47pxleading, fourlines, no generic sans substitution."
+    },
+    "action": {
+      "x": 995,
+      "y": 614,
+      "width": 243,
+      "height": 86,
+      "anchor": "Fixedbottomrightburgundyactionwithsmallthinarrow"
+    }
+  },
+  "sourceText": {
+    "shortQuote": "Robotics will knock over the global economy.",
+    "rest": "AttributedparaphraseofMechaapplyingphysicalautomationtoestablishedindustries; fitintothesameserifstatementblock.",
+    "indexLabels": [
+      "Tomorrow Recycling",
+      "Aescape",
+      "The Non-Fiction Revolution"
+    ],
+    "smallLabels": [
+      "Manifesto",
+      "Investments",
+      "Team",
+      "Contact",
+      "Blog"
+    ],
+    "claimBoundary": "Allcompanynames/contentarecreditedexternalreferencecontent,notMonarchicproductsorclaims."
+  },
+  "stateMap": [
+    {
+      "key": "loader",
+      "scrollY": 0,
+      "visual": "Gray giant-MECHAloadingframe. Do not use this as settledhero; actualrootobservedthewhitesceneafterloading.",
+      "screenshot": "HERO-015-01-entry.jpg"
+    },
+    {
+      "key": "settled",
+      "scrollY": 0,
+      "visual": "FullwireframeMcenteredwithinwideleftrail,indexbelow; largefour-lineserifmanifestoatright;nativecellnav/PE-VCdetailrowandburgundyaction.",
+      "screenshot": "HERO-015-02-loaded-entry.jpg"
+    },
+    {
+      "key": "first-investment",
+      "scrollY": 666,
+      "visual": "FirstinvestmenttitleTomorrowRecyclingoccupiesright; smallsourcecaptionabove,compacticons/logo/descriptionbelow. M rotates sideways andbecomesnarrower; rail/indexremain.",
+      "screenshot": "HERO-015-03-scroll.jpg"
+    },
+    {
+      "key": "first-investment-media",
+      "scrollY": 1391,
+      "visual": "Nativecontentincludesagrayscaleindustrialimage,brightcoloredmaterialclassificationview,smallmachinephoto; Mnowverysmallnearupperrailcenter.",
+      "screenshot": "HERO-015-04-scroll.jpg"
+    },
+    {
+      "key": "mark-exit",
+      "scrollY": 2105,
+      "visual": "Mhaslefttherail; wordmark/indexstillpersistent. Rightcontainsasparseindustrialplan,smallmachineimageandlargerobotgrippermaterial.",
+      "screenshot": "HERO-015-05-scroll.jpg"
+    },
+    {
+      "key": "second-investment-enters",
+      "scrollY": 2796,
+      "visual": "Aescapeheadingbeginsloweronright; retainedrailindexmovesactiveemphasis; mediafieldcontinuesabove.",
+      "screenshot": "HERO-015-06-scroll.jpg"
+    },
+    {
+      "key": "index-jump",
+      "input": "ClicksecondinvestmentAescape",
+      "scrollY": 3144,
+      "visual": "Secondinvestmentisreachedbyrealindexaction; noquerychangewasrecorded.",
+      "screenshot": "HERO-015-07-index-select-two.jpg"
+    }
+  ],
+  "motionContract": {
+    "observed": "Msize/orientationchangesacrossforwardscrollstatesanddisappearsby2105; indexclickjumpssecondinvestment.",
+    "unresolved": "Exactsourceyaw/scaleversusscrollcurveversusindependenttimewasnotisolated; do notclaimexactcontrolscheme.",
+    "implementation": "Bindsource-correspondingMpose/size/visibilitytosectionsorcontinuousscroll;keepfullMsettledinitially. ExistingactualsourceMmesh696vertices/1364facescanbereusedwithcredit; independentprojection/timingremainsdeclared. A timeloopunderfixedtextaloneisinsufficient."
+  },
+  "assets": {
+    "actualMarkURL": "https://pub-1b4063cac4b14c2ba151fd94c6eb8117.r2.dev/M_Mecha._v2.glb",
+    "sourceHTML": {
+      "path": "HERO-015/primary.html",
+      "bytes": 202682,
+      "sha256": "29400eba65f8978a364df447b75e9b8a95076a2ab50e8484c55503843d802650"
+    },
+    "mediaIndex": {
+      "path": "HERO-015/primary-inspection.json",
+      "bytes": 8350,
+      "sha256": "ec127d52dc03674f7427304b4a314e2a95e092a639cadfa925ae1f58355abd9f"
+    },
+    "available": "ActualprimaryHTMLlistsindividualcompanyphotos,technicalillustrations,logosandWebM/MP4media,withURLsretainedinmediaIndex. ExistingmarkgeometryisalreadyinSourceHeroPageStudy/earlierassetpreparation.",
+    "requiredBeforeUpload": "MapactualDOM/projectcontainerstoassetssoRecyclingandAescapemediadonotcross. Useactualphotographyforphotographicapertures; recreatebasicnativeUI/rules/type. No genericrobotstockorunknownmetricinvention."
+  },
+  "phone": {
+    "status": "SourcePhoneunverified; explicitadaptationrequired.",
+    "layout": "Compactsourceidentity/indexandreadableserifstatement;graphicremainsfullinitialmarkandscales/moveswithopening,notclippedcorner-only. Keepthreeinvestmentdestinationsreachable."
+  },
+  "acceptance": [
+    "SettledopeningcontainscompleteMwithinrail,notjustanenteringcroppedfragment.",
+    "Forwardscrollpreservesthewordmark/indexwhileMreorients,shrinksandexits.",
+    "Firstinvestmenttitle/mediahandoffhascorrectsourceordering.",
+    "Aescapeindexactionreachestherealsecondsection; repeated/backscrollrecoverboundedstates.",
+    "Media/sourceclaimsandlicenseunknownstaycredited; Phoneandcouplinglimitsremainexplicit."
+  ],
+  "evidence": [
+    {
+      "id": "HERO-015",
+      "action": "01-entry",
+      "note": "Currentlivewhiteopeningbeforewheel",
+      "metrics": {
+        "bodyHeight": 10775,
+        "height": 720,
+        "scrollHeight": 10775,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-01-entry.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-01-entry.jpg",
+        "bytes": 11786,
+        "sha256": "49dd014532a2618742a7637d17fa2e30f1c6a330d2046514a91bd472942886c8"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "02-loaded-entry",
+      "note": "Recordpostpreloaderheroifvisible",
+      "metrics": {
+        "bodyHeight": 10775,
+        "height": 720,
+        "scrollHeight": 10775,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-02-loaded-entry.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-02-loaded-entry.jpg",
+        "bytes": 51349,
+        "sha256": "d3ac7576af8be3382d3243e9449ed31164f8e70351a09445bcdb331f5dc19308"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "03-scroll",
+      "note": "Trackmanifestointoinvestments;recordrail/mark/contentseparately",
+      "metrics": {
+        "bodyHeight": 10775,
+        "height": 720,
+        "scrollHeight": 10775,
+        "scrollY": 666,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-03-scroll.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-03-scroll.jpg",
+        "bytes": 43760,
+        "sha256": "e68d428ccd442f48266d8d4b8f2874b711a05ac2196d0eda6aeae5dbeebabdbb"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "04-scroll",
+      "note": "Trackmanifestointoinvestments;recordrail/mark/contentseparately",
+      "metrics": {
+        "bodyHeight": 10775,
+        "height": 720,
+        "scrollHeight": 10775,
+        "scrollY": 1391,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-04-scroll.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-04-scroll.jpg",
+        "bytes": 87485,
+        "sha256": "72be13584a23a735a1c167b3a18a9c5ac8e2108222c8ca1d6edc9a5cb3954ef8"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "05-scroll",
+      "note": "Trackmanifestointoinvestments;recordrail/mark/contentseparately",
+      "metrics": {
+        "bodyHeight": 10775,
+        "height": 720,
+        "scrollHeight": 10775,
+        "scrollY": 2105,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-05-scroll.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-05-scroll.jpg",
+        "bytes": 62198,
+        "sha256": "6a896a184599f7fa8986bdcab8a29b39d305d289c943eed57ef95badd46d930f"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "06-scroll",
+      "note": "Trackmanifestointoinvestments;recordrail/mark/contentseparately",
+      "metrics": {
+        "bodyHeight": 10773,
+        "height": 720,
+        "scrollHeight": 10773,
+        "scrollY": 2796,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-06-scroll.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-06-scroll.jpg",
+        "bytes": 48374,
+        "sha256": "bbaf05201247f9f83127ad82b91ae8cd87f6550dff975732f4b84d6105d4ec84"
+      }
+    },
+    {
+      "id": "HERO-015",
+      "action": "07-index-select-two",
+      "note": "ClicksecondinvestmentAESCAPEindexentry",
+      "metrics": {
+        "bodyHeight": 10773,
+        "height": 720,
+        "scrollHeight": 10773,
+        "scrollY": 3144,
+        "width": 1280
+      },
+      "screenshot": "HERO-015-07-index-select-two.jpg",
+      "url": "https://mecha-xyz.webflow.io/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-015-07-index-select-two.jpg",
+        "bytes": 37377,
+        "sha256": "c00b0e83e7ab11fb0a78fabf5766abc27545ceeb241d51e717a8aaef32ee7b77"
+      }
+    }
+  ]
+}

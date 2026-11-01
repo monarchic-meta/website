@@ -1,0 +1,54 @@
+{
+  "id": "HERO-016",
+  "title": "Origin / quiet wordmark and changinglighttile",
+  "creator": "OriginStudio; BenBlackburn listed as gallerysubmitter only",
+  "gallery": "https://minimal.gallery/origin/",
+  "source": "https://www.originbrand.io/",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "sourceCaptures": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-recreations-2026-10-31/remaining-12/sources/HERO-016-primary-0.png",
+      "sha256": "fb0ab9fd87b76f40b6382629801482fd04b3dc92be3d280d87a7ffeac723ae45"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-recreations-2026-10-31/remaining-12/sources/HERO-016-primary-1.png",
+      "sha256": "3b8d665425be6131d32116231e2c908be091dbb35f5c2162145355aab683e0bd"
+    }
+  ],
+  "layout": "A huge pale Origin wordmark above a quiet proposition at lower left; a rounded utility card at lower right contains a 58px black tile and changing blurred white light. Preserve those proportions.",
+  "sequence": {
+    "observed": "Twoactualsourceframes show different lightforms and cardbounds; timevsinputcausewasnotisolated.",
+    "webPrimaryNow": "Current publicreadablepage hasPrograms/Menu controls, then founderturning-pointsection, embeddedAmbientdots-fieldVimeolink, PartnerProgramsaccordions andSelectedPartnerships. This is contentpresence, not verifiedcontrolbehavior.",
+    "requiredBoundary": "Keepopeningquietscalehierarchy; followingProgramscontent should be nativeordinaryscroll unless actualsourcebehaviorconfirmsapinnedstate."
+  },
+  "nativeImplementation": "Keep the actual-size 58px procedural light inside the compact utility card and retain the large native wordmark. The source tile rendering technique remains unverified. The independent live study has an accessible internal Pause control, retained as an explicit review adaptation rather than part of the original source UI.",
+  "remaining": [
+    "Compacttileasset/renderingmethod",
+    "Cardresizeinputcause",
+    "Menu/programsstatevisuals",
+    "Ambientvideoactualrelationshiptotheopening",
+    "SourcePhone"
+  ],
+  "network": "DirectprimaryHTMLfetchfailed; officialwebreadwasaccessible. Failureisretainedratherthanretiredreference.",
+  "savedGeometryRefinement": {
+    "desktop": [
+      1280,
+      720
+    ],
+    "light": [
+      58,
+      58
+    ],
+    "proposition": {
+      "left": 10,
+      "top": 580,
+      "width": 550,
+      "fontSize": 30,
+      "lineHeight": 32,
+      "fontWeight": 600,
+      "lines": 4
+    },
+    "boundary": "Native text and eight editable static spinner dots saved; Phone layout and internal Pause remain independent adaptations."
+  }
+}

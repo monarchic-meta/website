@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-01",
+  "scope": "Manual authoring contracts. These distinguish observed source states from public-code inference and approximated authoring. Neither an implementation-completion claim nor Framer persistence evidence. Raw media and session captures remain outside this repository.",
+  "completeOwnerList": "../../../design-inspiration/heroes.md#complete-owner-selected-list",
+  "records": [
+    {
+      "id": "HERO-001",
+      "path": "HERO-001.json",
+      "bytes": 1985,
+      "sha256": "d49a5544196afee4a41a0a5b2f596be859ca74982abf1aec503c05d698a746bd"
+    },
+    {
+      "id": "HERO-002",
+      "path": "HERO-002.json",
+      "bytes": 40384,
+      "sha256": "6f0dd668cfee11284e5a65ac824fedba6a5f3f2475f19ad78cda4dea6ac5119c"
+    },
+    {
+      "id": "HERO-003",
+      "path": "HERO-003.json",
+      "bytes": 13330,
+      "sha256": "f89b9e35caf8201aea81be5d9e6d3e6a962d8a338d2f2752cca3e529d3d355f7"
+    },
+    {
+      "id": "HERO-004",
+      "path": "HERO-004.json",
+      "bytes": 6092,
+      "sha256": "8f3110381dd886daad4d2da222b0f15d1ccaa76bf17405acdfcd9eac54bec621"
+    },
+    {
+      "id": "HERO-005",
+      "path": "HERO-005.json",
+      "bytes": 9328,
+      "sha256": "ad62ae423fbbab2c7a19dccdb9ba066e35e3cb671de0ba2033950cb25e30d618"
+    },
+    {
+      "id": "HERO-006",
+      "path": "HERO-006.json",
+      "bytes": 5114,
+      "sha256": "5a59c0feeb0036e20e1d2738f0e703d895bfc0f758b8d75060d950cf0e719bef"
+    },
+    {
+      "id": "HERO-007",
+      "path": "HERO-007.json",
+      "bytes": 6673,
+      "sha256": "018902f39f7e0aefada82a035b9c553558a2cc73ee379df42087dd32b18dcac2"
+    },
+    {
+      "id": "HERO-008",
+      "path": "HERO-008.json",
+      "bytes": 7379,
+      "sha256": "ab8a840f29c1a971c359ba53a0f77f1528305ca9ec9d8d74cf1d7ce6d0c05de5"
+    },
+    {
+      "id": "HERO-009",
+      "path": "HERO-009.json",
+      "bytes": 3305,
+      "sha256": "0193b3db5d8d71a0799055096132305b43bafc0b12a24a92323cfb57a59c38d9"
+    },
+    {
+      "id": "HERO-010",
+      "path": "HERO-010.json",
+      "bytes": 18961,
+      "sha256": "fadb9a627ee9b2868c7d82cd92cb2ab9c1a0c2c2297b1294ace01ad26f7ce1ec"
+    },
+    {
+      "id": "HERO-011",
+      "path": "HERO-011.json",
+      "bytes": 3825,
+      "sha256": "aeb46b961894773080934d0a7db5675962bf9956e8d84586bd45cb6b8b34dd39"
+    },
+    {
+      "id": "HERO-012",
+      "path": "HERO-012.json",
+      "bytes": 4316,
+      "sha256": "6884dd901ab5c3980374074e26b505bca92858f9a32a4e665a433d07aa304905"
+    },
+    {
+      "id": "HERO-013",
+      "path": "HERO-013.json",
+      "bytes": 29342,
+      "sha256": "3d4c9d6c6ff2e4d19f61310851862f1929b34fceeadb707451ffa4fb9c880e98"
+    },
+    {
+      "id": "HERO-014",
+      "path": "HERO-014.json",
+      "bytes": 2159,
+      "sha256": "c3bd61957124b15fdc7428a6b7422be54f276a2c5d9106e849ec7397687fa007"
+    },
+    {
+      "id": "HERO-015",
+      "path": "HERO-015.json",
+      "bytes": 10373,
+      "sha256": "a00aa37c62d36cba09268fd0ca49bad07f39a3663fed65c561db70991ad9dce5"
+    },
+    {
+      "id": "HERO-016",
+      "path": "HERO-016.json",
+      "bytes": 3161,
+      "sha256": "b37475b308de233e7f091192a0f944b78f5def17d32273990d0dbbba3b7a2452"
+    },
+    {
+      "id": "HERO-017",
+      "path": "HERO-017.json",
+      "bytes": 10726,
+      "sha256": "e99ae0fb5d9ecfb9f961442d057ee827aa9fa31f4c4e5658b86c6dabfea1adb2"
+    },
+    {
+      "id": "HERO-018",
+      "path": "HERO-018.json",
+      "bytes": 5376,
+      "sha256": "09b39cce72f87f529d5b7ae9a4e5e3161a89730e89cbb2147ebec87ef5dd42ad"
+    }
+  ]
+}

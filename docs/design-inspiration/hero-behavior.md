@@ -1,6 +1,6 @@
 # Hero sequence and interaction audit
 
-**In progress — 2026-10-31.** All eighteen owner-selected references remain in
+**In progress — 2026-11-01.** All eighteen owner-selected references remain in
 the [complete source list](heroes.md#complete-owner-selected-list). The target is
 their complete opening experience: its meaningful states, interactions and
 handoff into the following content. That experience can span several screens,
@@ -11,6 +11,14 @@ The existing [standalone recreations](../design-studies/standalone-heroes/handof
 are preserved. Their saved-state, responsive and playback checks verify the
 authored studies; they do not establish full fidelity to the source sequences.
 The gaps below identify further source inspection and recreation work.
+
+The additive [behavior recreation round](../design-studies/hero-behavior/README.md)
+retains [authoring contracts for all eighteen references](../design-studies/hero-behavior/source-contracts/index.json).
+New live actors and native interaction pages are being built against those
+contracts. The source observations below retain their original evidence
+boundaries; “current gap” describes the preserved first-fold study, rather than
+claiming that a later local actor is saved and verified in Framer. The new
+round records implementation and reload/Preview verification separately.
 
 ## Evidence boundary
 
@@ -43,7 +51,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Evidence:** the retained gallery movie and samples at 0, 2, 4, 6 and 8 seconds
   show sparse writing, a resolved head, rotation and later sparse patches.
   Continuous timing and the loop boundary have not been reviewed.
-- **Current gap:** the recreation supplies a rotating written surface on a
+- **Earlier study gap:** the recreation supplies a rotating written surface on a
   credited head stand-in. It omits assembly and dispersal.
 - **Next inspection:** watch the complete movie, record phase boundaries and
   inspect any player/input behavior. Do not invent a scrolling website for a
@@ -57,7 +65,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Evidence:** the actual 52-second source film is retained. Sampled contact
   sheets show chessboards, hands, photographs, diagrams and changing type
   compositions. Full pacing, sound and voiceover have not been audited.
-- **Current gap:** one native photographic spread replaces a changing film.
+- **Earlier study gap:** one native photographic spread replaces a changing film.
   The other scenes, cuts and temporal typography are absent.
 - **Next inspection:** build a timestamped shot/type timeline from the complete
   film; distinguish observed audio from the gallery's description. Preserve the
@@ -80,7 +88,7 @@ Source-led changes remain credited in **Source inspiration**.
   20,565 and `?page=m-credits`, with credit/event demonstrations. Selecting
   Agent-first Billing returns to offset 0 and the canonical URL. Query-selected
   Credits is a later chapter, not the landing hero.
-- **Current gap:** static construction geometry and chapter tiles do not
+- **Earlier study gap:** static construction geometry and chapter tiles do not
   reproduce assembly, nested scrolling, chapter jumps or changing demonstrations.
 - **Still unverified:** complete assembly timing, film playback, all ten
   chapters, individual demo inputs, reverse scrolling and source Phone states.
@@ -98,7 +106,7 @@ Source-led changes remain credited in **Source inspiration**.
   articles and case links; Minimize restores the compact panel. After a downward
   wheel gesture the document remains 720px high at window offset 0, with no
   detected inner scroller. That gesture alone does not establish a scroll story.
-- **Current gap:** a fixed OXI photograph and selected row replace the film and
+- **Earlier study gap:** a fixed OXI photograph and selected row replace the film and
   project-selection experience. Hold, Esc effects and expansion are absent.
 - **Still unverified:** isolated row hover versus click, click-and-hold view
   switching, other Esc states, project transitions and touch/Phone alternatives.
@@ -111,7 +119,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Evidence:** gallery Desktop/Phone stills establish the branching glyph form,
   grid and asymmetric statement. Earlier live visual navigation stalled. Current
   copy differs from the selected job-availability statement.
-- **Current gap:** a static native glyph contour and statement do not establish
+- **Earlier study gap:** a static native glyph contour and statement do not establish
   any source animation, pointer response or transition into projects.
 - **Next inspection:** obtain a reliable live sequence; test stationary wait,
   pointer movement and scrolling separately. Preserve the gallery revision
@@ -125,7 +133,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Earlier observation:** the twenty symbols change within their four-by-five
   matrix. The retained GIF was sampled into 125 vector frames at 12 fps; the
   opening capture includes the broad rail, runner and following media edge.
-- **Current gap:** all twenty cells animate, but the portfolio/media sequence,
+- **Earlier study gap:** all twenty cells animate, but the portfolio/media sequence,
   live clock, project navigation and rail behavior are not recreated.
 - **Next inspection:** watch the complete loop in context, then scroll through
   following media and a project transition. Check rail persistence, runner/media
@@ -139,7 +147,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Earlier observation:** successive live frames showed changing filaments and
   peripheral labels. Initial scrolling retained navigation; the following
   content continues on cobalt.
-- **Current gap:** independent filament animation and static labels omit any
+- **Earlier study gap:** independent filament animation and static labels omit any
   source scroll progression, changing instrument labels or menu transition.
 - **Next inspection:** separate time, pointer and scroll effects; follow the
   network/headline through the Foundation handoff. Check menu and contact
@@ -153,7 +161,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Earlier observation:** the red opening leads into a black composition with
   green/cream type. A tall selected archive is retained, but the complete
   choreography and city-film playback were not reviewed.
-- **Current gap:** the recreation ends with the red composition and a film
+- **Earlier study gap:** the recreation ends with the red composition and a film
   still; subsequent typographic scenes and type/scroll interactions are absent.
 - **Next inspection:** map the red-to-black transition and subsequent scenes to
   determine the opening's real extent. Inspect the film, capsule navigation and
@@ -168,7 +176,7 @@ Source-led changes remain credited in **Source inspiration**.
   opening zones into product content. Earlier current-site frames showed a
   changing halo/shadow, without isolating its input or full sequence. The current
   theme may differ from the selected dark revision.
-- **Current gap:** an approximate live halo does not recreate any selected
+- **Earlier study gap:** an approximate live halo does not recreate any selected
   pointer behavior, changing statements or product-section transition.
 - **Next inspection:** obtain matching revision motion where possible; separately
   test current wait, pointer and first-scroll handoff. Do not apply current-site
@@ -187,7 +195,7 @@ Source-led changes remain credited in **Source inspiration**.
   nested Skills area; Experience and Contact display different content. Selecting
   Manifesto returns to its chapter state. This is an interactive accordion
   viewport rather than an ordinary tall hero.
-- **Current gap:** one static expanded arrangement omits the accordion,
+- **Earlier study gap:** one static expanded arrangement omits the accordion,
   arc-to-ring transition and other chapter states.
 - **Still unverified:** full nested prose and Skills content, every settled
   geometric transition, isolated hover, keyboard and source Phone navigation.
@@ -201,7 +209,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Evidence:** the selected 2023 archive shows overlapping project fields,
   an information sheet and index. The previously reached current site was a
   different Jon Way/Stradis presentation, not proof of the archived controls.
-- **Current gap:** Navigate/Explore, project/index transitions and any moving
+- **Earlier study gap:** Navigate/Explore, project/index transitions and any moving
   information sheet remain static or absent.
 - **Next inspection:** recover a matching recording or archived primary version.
   If unavailable, keep the selected interaction unknown; do not infer its
@@ -215,7 +223,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Evidence:** the selected 2022 green operational-diagram opening is retained
   as a still. The earlier configuration-panel click belongs to the different
   current AURA presentation, not that archived diagram.
-- **Current gap:** the native diagram has no verified source flow animation,
+- **Earlier study gap:** the native diagram has no verified source flow animation,
   module interaction or transition into the next section.
 - **Next inspection:** seek a matching archive recording before assigning flow
   behavior. Keep current AURA inspection separate; no terminal command is needed
@@ -237,7 +245,7 @@ Source-led changes remain credited in **Source inspiration**.
   yellow callouts. Enabling My 6 y.o. Daughter's Version adds colorful drawn
   overlays after loading, visible in the opening photograph and clock. Both
   controls were restored to 0. The complete alternate journey was not audited.
-- **Current gap:** the recreation contains the wordmark, one Vertical sheet and
+- **Earlier study gap:** the recreation contains the wordmark, one Vertical sheet and
   a native anchor. It omits the subsequent format sequence, continuous changes,
   Notes Mode and other interactions. An anchor is not equivalent to the source
   scroll choreography.
@@ -267,7 +275,7 @@ Source-led changes remain credited in **Source inspiration**.
   Work and Gallery are separately linked routes; neither was traversed in this
   pass. A taller document or ordinary document-scroll animation would not by
   itself recreate this control model.
-- **Current gap:** a white/red bust stand-in with local raster motion omits the
+- **Earlier study gap:** a white/red bust stand-in with local raster motion omits the
   introduction, full-body environment and virtual narrative, including the
   transitions and outro.
 - **Still unverified:** exact wheel sensitivity and phase boundaries, complete
@@ -289,7 +297,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **New control observation:** selecting Aescape in the left index moves to
   offset 3,144 and activates the second investment. The persistent rail and
   changing content are part of the sequence, not a fixed cropped logo frame.
-- **Current gap:** independent mark rotation under a fixed statement omits
+- **Earlier study gap:** independent mark rotation under a fixed statement omits
   the settled opening's full rail composition, source scroll coupling, changing
   investment content and index transitions.
 - **Still unverified:** exact mark-to-scroll coupling, reverse movement, the
@@ -305,7 +313,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Earlier observation:** pale light forms and information-card size changed
   across captures. Their input coupling was not isolated. The linked ambient
   dots-field video was not reviewed.
-- **Current gap:** the small approximate light loop sits inside a static
+- **Earlier study gap:** the small approximate light loop sits inside a static
   wordmark/card composition. Card resizing, source input behavior and subsequent
   progression are absent.
 - **Next inspection:** measure the card during untouched wait, hover/leave and
@@ -329,7 +337,7 @@ Source-led changes remain credited in **Source inspiration**.
   that drag, hover or scrolling alone drives the mask. Likewise, the first wheel
   gesture coincided with the loader finishing; it does not establish a reveal
   requiring input.
-- **Current gap:** a fixed black aperture, text and rule omit moving masks,
+- **Earlier study gap:** a fixed black aperture, text and rule omit moving masks,
   image reveals and the complete identity-to-work progression.
 - **Still unverified:** isolated time/pointer/scroll causality, mask media,
   continuous choreography, reverse movement and source Phone states. The work
@@ -344,7 +352,7 @@ Source-led changes remain credited in **Source inspiration**.
 - **Earlier observation:** entry navigation reached the graphic-design branch.
   Its first geometric tiles were inspected; complete tile motion and gallery
   extent were not reviewed.
-- **Current gap:** the native entry links to an adapted same-page branch with
+- **Earlier study gap:** the native entry links to an adapted same-page branch with
   three static motifs. It does not reproduce the source's separate-route/back
   behavior or complete graphic gallery.
 - **Next inspection:** test gate hover/click, transition and return behavior,

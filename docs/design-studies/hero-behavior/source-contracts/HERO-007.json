@@ -1,0 +1,145 @@
+{
+  "id": "HERO-007",
+  "title": "Cantor8 / filament instrument and Foundation handoff",
+  "creator": "Cantor8; visual implementation source credit retained from catalog, creator not independently identified here",
+  "gallery": "https://www.lapa.ninja/post/cantor8/",
+  "source": "https://www.cantor8.io/",
+  "evidenceBoundary": "Prior live captures establish changing filaments/peripheral labels and navigation persistence; current public application code and DOM establish the facts below without new visual interaction verification.",
+  "layout": {
+    "source1280": {
+      "background": "#044AB3",
+      "logoAndNav": "Quiet top rail, source logo left; links/Menu right.",
+      "circle": {
+        "x": 422,
+        "y": 144,
+        "diameter": 435
+      },
+      "headline": {
+        "x": 28,
+        "y": 527,
+        "fontSize": 50,
+        "lineHeight": 57,
+        "lines": [
+          "Enterprise-Grade",
+          "Infrastructure on Canton"
+        ]
+      },
+      "cta": {
+        "x": 28,
+        "y": 644,
+        "width": 176,
+        "height": 45
+      },
+      "scrollCue": "Bottom right."
+    },
+    "native": "Keep nav/headline/CTA/scroll cue and Foundation editorial copy native; field boundaries disappear into the same cobalt fill."
+  },
+  "sequence": {
+    "time": {
+      "sourceImplementation": "130Desktop/110Mobile quadratic paths from center to perimeter, global rotation .055radians/s, spring/wind bends, fading flow highlights.",
+      "labels": "Batches5Desktop/3Mobile; each labels enter over.45s, hold1–2s, leave.55s, staggered; exact current tokens and cycles are source implementation facts, not newly observed event timing."
+    },
+    "pointer": {
+      "sourceImplementation": "Fine hover pointer enables local line impulse within155px, spring stiffness12/damping4.8, bend capped300px. Touch-like devices do not use pointer forces.",
+      "observed": "Not newly isolated in browser. A new independent implementation should be called source-supported until actual wait/pointer A/B comparison."
+    },
+    "scroll": {
+      "hero": "Ordinary initial hero scroll into Foundation, source nav retained in earlier capture. Exact hero graphic fade/offset not isolated.",
+      "important": "The source pixel wipe is NOT the hero→Foundation transition. Actual DOM binds it only to later built-for→products, products→cutting-edge, cutting-edge→light--theme sections.",
+      "laterPixelTransitions": [
+        {
+          "from": "#044AB3",
+          "to": "#151515",
+          "accent": "#6FE3FF",
+          "triggerID": "built-for",
+          "targetID": "products",
+          "sourceImplementation": "25columns×6rows, progress from trigger bottom/bottom to target top/top, first half reveal then color settle. Not browser-verified here."
+        },
+        {
+          "from": "#151515",
+          "to": "#044AB3",
+          "accent": "#6FE3FF",
+          "triggerID": "products",
+          "targetID": "cutting-edge",
+          "sourceImplementation": "25columns×6rows, progress from trigger bottom/bottom to target top/top, first half reveal then color settle. Not browser-verified here."
+        },
+        {
+          "from": "#044AB3",
+          "to": "#FFFFFF",
+          "accent": "#6FE3FF",
+          "triggerID": "cutting-edge",
+          "targetID": "light--theme",
+          "sourceImplementation": "25columns×6rows, progress from trigger bottom/bottom to target top/top, first half reveal then color settle. Not browser-verified here."
+        }
+      ]
+    },
+    "endHandoff": "Foundation: short section label, large institutional-workflow headline, body/CTA. Following partners/products are ordinary following content, not necessarily part of the opening instrument."
+  },
+  "nativeImplementation": {
+    "graphic": "Upgrade the existing source-inspired field with independently coded local spring interaction and actual label batch behavior; do not reuse source JS.",
+    "sourceUI": "Keep source labels/copy bounded and credited; contact actions may navigate to original source, never submit forms during QA.",
+    "phone": "Explicit responsive adaptation until source Phone is visually observed; source implementation switches ring factor at991px, path count at767px."
+  },
+  "inspectionPins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/primary.html",
+      "sha256": "c50f484a3369fbcd520d8f795628e3dc1de35d8449ff81ffda0064003a2fc024"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/circle-inspection-only.js",
+      "sha256": "df472549fa9eac69c6e947a8670753482920763c03b2ed2dbd605554e0e774a7"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/inline-inspection-only.js",
+      "sha256": "0cba0d9e589a47d879bba634808c86b81d5e82f0adf94949d888f6cd3894c86d"
+    }
+  ],
+  "currentPublicFacts": {
+    "basis": "Current original public implementation inspected; no foreign behavior code imported.",
+    "renderer": "Canvas2D, not WebGL.",
+    "center": [
+      0.5,
+      0.5
+    ],
+    "radius": "min(width,height) × 0.30 at widths ≥991px; ×0.43 below991px. The path-count and label-count breakpoint is separately767px.",
+    "paths": {
+      "desktop": 130,
+      "phone": 110
+    },
+    "pointRadiusPixels": [
+      2,
+      3.3
+    ],
+    "rotationRadiansPerSecond": 0.055,
+    "windStrength": 52,
+    "spring": {
+      "stiffness": 12,
+      "damping": 4.8,
+      "impulse": 3900,
+      "pointerRadiusPixels": 155,
+      "falloff": 1.7,
+      "cap": 300
+    },
+    "labels": {
+      "desktop": 5,
+      "phone": 3,
+      "fadeInSeconds": 0.45,
+      "holdSeconds": [
+        1,
+        2
+      ],
+      "fadeOutSeconds": 0.55,
+      "font": "Fragment Mono, embedded with SIL OFL notice"
+    },
+    "handoff": "Ordinary source Foundation content follows the opening. The later pixel wipe is not moved to the hero boundary."
+  },
+  "nativeRecreation": {
+    "actor": "../../code-components/SourceCantorInstrument.tsx",
+    "nativeInput": "withCantorInput on the intro common ancestor; preserve native overlays and links.",
+    "limits": [
+      "Independent deterministic bounded pointer history and spring replay fit; no claim of pixel parity with the source.",
+      "Phone composition uses current public breakpoints; controlled source Phone behavior remains unobserved.",
+      "Avoid duplicating timed canvas labels with old fake static labels."
+    ]
+  }
+}

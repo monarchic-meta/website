@@ -1,0 +1,83 @@
+{
+  "id": "HERO-018",
+  "title": "pu—ente / category gate to graphic design",
+  "creator": "pu—ente",
+  "gallery": "https://minimal.gallery/pu-ente/",
+  "source": "https://www.pu-ente.com/",
+  "graphicSource": "https://www.pu-ente.com/z/",
+  "evidenceBoundary": "Root retained actual entry/graphic branch captures and working native entry link. Additional controls below are current public source implementation facts, not newly browser-observed hover or route animation.",
+  "layout": {
+    "source1280": {
+      "viewport": [
+        1280,
+        720
+      ],
+      "gate": {
+        "x": 410,
+        "y": 130,
+        "width": 460,
+        "height": 460,
+        "halves": 2,
+        "halfHeight": 230
+      },
+      "textInset": 50,
+      "fontSize": 18,
+      "lineHeight": 23.4,
+      "background": "#D9D5D5",
+      "upper": "#1B1B1B",
+      "lower": "#FFFFFF"
+    },
+    "native": "Use editable half-screen backgrounds, two230px cards, native Spanish category labels and real graphic-branch link. Preserve selected3motifs and expand graphic gallery from actual branch assets; no Art collection import."
+  },
+  "sequence": {
+    "entry": {
+      "sourceImplementation": "Initial grayscale3-color combination. Clicking outside cards randomizes3distinct colors from #1B1B1B/#323232/#7A7A7A/#D9D5D5/#FFFFFF; text contrast changes.",
+      "hover": "Fine-pointer card hover expands that card color into its matching upper/lower background half. Source cursor turns red#C8102E on Art and blue#0057FF on Graphic. Coarse pointers skip this hover behavior.",
+      "observed": "Entry layout/click to branch observed earlier. Random outside click and hover expansion not newly visually verified."
+    },
+    "routeTransition": {
+      "sourceImplementation": "On card click, upper half+matching upper card move−60vh; lower half+lower card move+60vh with.12sdelay. Current JS duration1.8s/easepower3.in. Source comment mentions an older3.2s demo; do not mistake stale comment for current constant.",
+      "implementation": "Independent native variants may reproduce the split curtain before revealing the gallery on the same new standalone page. If source route architecture is adapted, state that clearly."
+    },
+    "graphicGallery": {
+      "sourceImplementation": "The retained Graphic branch contains fifteen static project tiles in actual source order. None has gallery-slider; do not add2600ms autoplay from an unrelated shared slider function. Fine-pointer blue square/trail stays clipped to the hovered tile:16px square,26 trail points, disabled at≤900px or coarse pointer.",
+      "observed": "Retained entry/gallery captures establish artwork and layout. Trail and route timing are supported by current public-code inspection; local actual React checks verify the independent implementation, not original input causality."
+    },
+    "endHandoff": "Graphic category is the destination. Project-detail navigation and category/back transitions are beyond current observed opening gate; preserve real source links without fabricating destination pages."
+  },
+  "nativeImplementation": {
+    "priority": [
+      "Editable460px two-half gate with fine-pointer half-fill and outside-click palette randomization.",
+      "Source-supported split-curtain entry into the full fifteen-tile Graphic gallery.",
+      "Clipped blue trail for fine pointers and current source Info panel timing; native onTap and keyboard activation."
+    ],
+    "phone": "Explicit centered460gate→availablewidth adaptation, stacked2halves; source implementation disables coarse hover/trail. Keep tap target and return-to-gate accessible.",
+    "actor": "../../code-components/SourcePuenteBehaviors.tsx"
+  },
+  "inspectionPins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/primary.html",
+      "sha256": "beb89b29f48582819354aa1e69e1a1ef0643805347264c187035eb59d519918b"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/graphic-branch.html",
+      "sha256": "abbba2407800ad0a154807abd1569433d66e77d4188bd93f60e3075f19e70d7d"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/home-animation-inspection-only.js",
+      "sha256": "cc01ed5b2c8ae5b6fe560fcd008094cdeb53658978f03d0816a5bb97c6945416"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/home-to-category-inspection-only.js",
+      "sha256": "03adfeed66ecb43a62ebee37d997cb6e6af860cdebd942f9558cf083f4557a1e"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/gallery-slider-inspection-only.js",
+      "sha256": "96ec121cbb0c981ac762aafb2e05b8ae44470ae07eb95670e83831c6d63077ab"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-018/project-trail-inspection-only.js",
+      "sha256": "6ce409a18ceb52ebec572cf386c146d7c5b4034b8db526f3cadb5a3e7a2c0ba5"
+    }
+  ]
+}

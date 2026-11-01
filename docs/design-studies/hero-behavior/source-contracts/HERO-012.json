@@ -1,0 +1,69 @@
+{
+  "id": "HERO-012",
+  "title": "Mezmo / selected2022operational diagram",
+  "creator": "Mezmo",
+  "gallery": "https://httpster.net/website/mezmo/",
+  "source": "https://www.mezmo.com/",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "selectedArchive": {
+    "url": "https://httpster.net/assets/media/wp/mezmo.com-wPbpp.webp",
+    "capture": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-recreations-2026-10-31/remaining-12/sources/HERO-012-selected.png",
+      "sha256": "3c6c079fe4c1c3cc33007ad3e24d45e226ede7b3a02e37e834d1a1f9cb6e8608"
+    },
+    "date": "2022-12-13"
+  },
+  "nativeComposition": "Acid green condensed headline on dark green-black, an outlined Observability Platform, the vertical Enrich/Correlate/Transform/Log Analysis flow, Control at left and Route at right, an announcement strip and customer grid. Preserve the selected 2022 layout rather than the current AURA redesign.",
+  "revisionBoundary": "CurrentAURASREagent scenario/configuration terminal is a different revision, not evidence for2022diagram animation. Do not replace the selectedgraphic with currentterminal or runcommands/networkactions.",
+  "interactionPlan": "Retain sourceflowlabels/relativegeometry. Any animatedconnectortrace or nodehover added without matching2022recording must be called an independent explanatory adaptation, not verified originalmotion. Nativeordinaryscroll handoff may be reconstructed from the retained fullarchive only where followingcontentisvisible.",
+  "remaining": [
+    "Matching2022animation/hovercontrols",
+    "Whetherdiagramisstaticorinteractive",
+    "Fullheroboundary/handoff",
+    "SelectedPhone"
+  ],
+  "pins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-012/primary.html",
+      "sha256": "68bfd9c6c73a879b48fbeef506aff05ac5a36b0b4cd2e2304f4cbfe780b36bc1"
+    }
+  ],
+  "additionalPrimaryEvidence": {
+    "url": "https://www.flowout.com/case-studies/mezmo",
+    "author": "Flowout",
+    "inspected": "2026-11-01",
+    "supports": "The development agency describes a Webflow rebuild with custom Lottie animations and source design work from Mezmo.",
+    "boundary": "The case study does not prove which Lottie or input behavior belongs to the selected2022 hero diagram. No invented connector pulses are attributed to the source."
+  },
+  "historicalWordmark": {
+    "sourcePDF": "https://assets-global.website-files.com/626ad01a9cdb24688668c02e/630f4d59cdb14849bf6bb014_Mezmo-Whitepaper-How-to-Run-Elasticsearch-From-Zero-to-Petabyte-Scale.pdf",
+    "sourcePDFSHA256": "cd666ea9e5682c52dda31556df19981a6cb118fb5ffe61683602e07410df918d",
+    "assetSHA256": "ae89a23c294c4f84affb504f350f70a6245b8bc19e15fb33e614ddc4f1e2dc7d",
+    "assetBytes": 6195,
+    "geometry": "Actual historical wordmark vector path extracted from the official whitepaper cover, compared visually with the selected 2022 header. Source curve geometry preserved; only selected-site fill and tight viewBox applied.",
+    "classification": "Credited SVG source asset study; separate from native editable UI",
+    "framerStatus": "Upload/binding still requires actual saved editor readback and Preview verification."
+  },
+  "savedGeometryRefinement": {
+    "selectedViewport": [
+      1280,
+      720
+    ],
+    "nativeStage": [
+      1440,
+      810
+    ],
+    "scale": 1.125,
+    "gutters": 72,
+    "centralFieldWidth": 1296,
+    "headline": {
+      "fontFamily": "Roboto Condensed",
+      "weight": 700,
+      "fontSize": 101.25,
+      "lineHeight": 81,
+      "letterSpacing": "-0.08em"
+    },
+    "boundary": "Source-based native geometry and historical wordmark saved and read back; actual Preview typography remains a separate gate. Phone is independently adapted, and historical motion remains unverified."
+  }
+}

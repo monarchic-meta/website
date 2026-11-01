@@ -1,0 +1,411 @@
+{
+  "id": "HERO-003",
+  "title": "Agent-first Billing / Polar",
+  "sourceURL": "https://polar.sh/field-guide",
+  "selectedGallery": "https://recent.design/i/lzxaebw-agent-first-billing-landing-page",
+  "credit": "Polar / @polar_sh",
+  "classification": "Source inspiration / credited interactive recreation",
+  "scope": "Landing construction, chapter collection, moving monochrome Imagine aperture and handoff into Core principles. The ten subsequent guide chapters are content after that opening, not proven complete by the landing audit.",
+  "sourceCapture": [
+    1280,
+    720
+  ],
+  "shell": {
+    "background": "#121212",
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 48,
+      "position": "fixed",
+      "mark": {
+        "x": 30,
+        "y": 14,
+        "width": 20,
+        "height": 20
+      },
+      "identity": {
+        "x": 529,
+        "y": 18
+      },
+      "action": {
+        "x": 1050,
+        "y": 18
+      }
+    },
+    "chapterRail": {
+      "x": 0,
+      "y": 48,
+      "width": 64,
+      "height": 672,
+      "position": "fixed",
+      "labels": "00–10, tiny mono labels/ticks; active chapter expands its readable label."
+    },
+    "contentPane": {
+      "x": 64,
+      "y": 48,
+      "width": 1216,
+      "height": 672,
+      "overflowY": "scroll",
+      "observedScrollHeight": 26703
+    },
+    "ordinaryWindowScroll": false
+  },
+  "landing": {
+    "settledNativeGeometry": {
+      "headline": {
+        "x": 88,
+        "y": 166,
+        "width": 480,
+        "fontSize": 56,
+        "lineHeight": 60,
+        "lines": [
+          "Agent-first Billing",
+          "A Field Guide"
+        ]
+      },
+      "description": {
+        "x": 88,
+        "y": 320,
+        "width": 485,
+        "fontSize": 28,
+        "lineHeight": 34,
+        "treatment": "Paraphrase source proposition at matching visual density; source product claim is not Monarchic copy."
+      },
+      "action": {
+        "x": 88,
+        "y": 418
+      },
+      "construction": {
+        "firstCircle": [
+          752,
+          170,
+          256,
+          256
+        ],
+        "secondCircle": [
+          924,
+          170,
+          258,
+          256
+        ],
+        "bars": "Thick white vertical/left-facing 0/45/90degree spokes; curved right segment; tiny square nodes, radius/angle labels, dotted guidelines."
+      },
+      "chapterTiles": {
+        "firstRowTop": 652,
+        "columns": 5,
+        "width": 206,
+        "gap": 16,
+        "x": [
+          88,
+          310,
+          532,
+          754,
+          976
+        ],
+        "secondRow": "Five further tiles; captured at viewport y154 after inner scroll720.",
+        "nativeDiagramKeys": [
+          "code outline",
+          "event chain",
+          "meter arcs",
+          "local blocks",
+          "identity tree",
+          "guardrail steps",
+          "simulation bell",
+          "credits step",
+          "entitlement branches",
+          "payment-provider tree"
+        ]
+      }
+    },
+    "entryMotion": {
+      "observed": "Geometry resolves during untouched wait.",
+      "unknown": "Exact draw order and complete duration were not measured.",
+      "independentImplementation": "Animate construction strokes/nodes from faint guide state into settled mark; preserve readable native text; label timing approximation. Do not claim source assembly timing exact."
+    }
+  },
+  "stateMap": [
+    {
+      "key": "entry",
+      "input": "Fresh URL without query; no interaction.",
+      "innerScrollTop": 0,
+      "visual": "Large low-left type, dominant upper-right constructed white mark, first row of chapter cards beginning below.",
+      "sourceImage": "HERO-003-02-entry-settled.jpg"
+    },
+    {
+      "key": "chapter-grid",
+      "input": "Wheel inside content pane.",
+      "innerScrollTop": 720,
+      "visual": "Two-row chapter field has moved up; bottom row Guardrails/Simulations/Credits/Entitlements/provider is fully visible, large dark media field enters below. Fixed header/rail remain.",
+      "sourceImage": "HERO-003-03-landing-scroll.jpg"
+    },
+    {
+      "key": "principles-handoff",
+      "input": "Second wheel advance inside same pane.",
+      "innerScrollTop": 1440,
+      "url": "?page=m-principle",
+      "visual": "Black rectangular aperture at x88..1182 and y16..382; centered small Imagine title, narrow textured monochrome strip near x418..850/y150..195. Below it a large chapter00 title begins near x88/y638. This records the opening-to-content boundary.",
+      "sourceImage": "HERO-003-04-principles-handoff.jpg"
+    },
+    {
+      "key": "credits-selection",
+      "input": "Click native Credits chapter control.",
+      "innerScrollTop": 20565,
+      "url": "?page=m-credits",
+      "visual": "Chapter08 heading near x88/y78, explanatory copy, a wide bracketed event/balance ledger and a right explanation column. Source table values change; no demo input was isolated.",
+      "sourceImage": "HERO-003-05-credits-selected.jpg"
+    },
+    {
+      "key": "return-entry",
+      "input": "Click landing identity/chapter control.",
+      "innerScrollTop": 0,
+      "url": "canonical without query",
+      "visual": "Returns to landing construction and chapter collection.",
+      "sourceImage": "HERO-003-06-return-entry.jpg"
+    }
+  ],
+  "navigation": {
+    "required": "All ten named tiles and fixed chapter controls must have real destinations. Keep corresponding source deep links for guide chapters not actually recreated; do not label empty authored targets as complete chapter reconstructions.",
+    "chapters": [
+      "Billing as code",
+      "Events",
+      "Meters",
+      "Local-first",
+      "Identities",
+      "Guardrails",
+      "Simulations",
+      "Credits",
+      "Entitlements",
+      "Bring your own PSP"
+    ],
+    "ownedInteraction": "Use a real nested scroll pane and scoped current-section state; keep window at0 on Desktop. Record query/deep-link adaptation explicitly if prototype routes differ."
+  },
+  "assets": {
+    "available": "Existing native346-part construction/tile recipe and retained current source HTML.",
+    "missing": "The Imagine moving monochrome strip has no direct media URL in primary HTML; do not substitute unrelated stock film or claim complete film playback. Public guide JS is inspection-only; exact asset/algorithm still unidentified.",
+    "nativeAlternative": "Reconstruct observed monochrome strip as a declared graphic approximation while keeping its source layout/transition and recording the media limitation."
+  },
+  "phone": {
+    "status": "Source Phone not visually audited. Explicit adaptation required.",
+    "constraints": "Fixed compact header, usable chapter access, single-column content; genuine nested scrolling only if controls remain usable. Do not uniform-scale Desktop construction/ten-card grid."
+  },
+  "verification": {
+    "required": [
+      "Entry versus settled mark changes during wait.",
+      "Nested pane advances while window offset remains0.",
+      "Chapter grid and Imagine-to-principles handoff appear in correct order.",
+      "Credits selection and landing return reach real destinations.",
+      "Phone copy/actions remain readable; exports frozen; old pages unchanged."
+    ],
+    "unknown": [
+      "Full guide chapters and demo controls",
+      "Exact entry/aperture timing",
+      "Complete reverse behavior",
+      "Source Phone/reduced-motion"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "HERO-003",
+      "action": "01-guide-entry",
+      "note": "Fieldguidewithoutquery;distinguishselectedlandingfromchapterstate",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-003-01-guide-entry.jpg",
+      "url": "https://polar.sh/field-guide",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-01-guide-entry.jpg",
+        "bytes": 35481,
+        "sha256": "b746be1136448d64d21d1534569b0747c21dab34ed6263422abf9633b32931a1"
+      }
+    },
+    {
+      "id": "HERO-003",
+      "action": "02-entry-settled",
+      "note": "Untouchedsettledlogoconstructionandlanding",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-003-02-entry-settled.jpg",
+      "url": "https://polar.sh/field-guide",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-02-entry-settled.jpg",
+        "bytes": 45734,
+        "sha256": "4f71f8a3a5902d441aa4f1bf12636230c3c9b447b968f21d776db1ec2d7084bb"
+      }
+    },
+    {
+      "id": "HERO-003",
+      "action": "03-landing-scroll",
+      "note": "Nestedfield-guidescroll;globalwindowoffsetremainszero",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "scrollers": [
+          {
+            "height": 672,
+            "id": "",
+            "rect": {
+              "bottom": 720,
+              "height": 672,
+              "left": 64,
+              "right": 1280,
+              "top": 48,
+              "width": 1216,
+              "x": 64,
+              "y": 48
+            },
+            "scrollHeight": 26703,
+            "scrollTop": 720,
+            "tag": "DIV"
+          }
+        ],
+        "width": 1280
+      },
+      "screenshot": "HERO-003-03-landing-scroll.jpg",
+      "url": "https://polar.sh/field-guide",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-03-landing-scroll.jpg",
+        "bytes": 44322,
+        "sha256": "47dd9e7b7b3f8f9460dfe73d80ad24eb85ae14547bfd5d023db059bb0dd3bbb1"
+      }
+    },
+    {
+      "id": "HERO-003",
+      "action": "04-principles-handoff",
+      "note": "Afterchaptergrid;inspectfirstcontenthandoff",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "scrollers": [
+          {
+            "height": 672,
+            "id": "",
+            "rect": {
+              "bottom": 720,
+              "height": 672,
+              "left": 64,
+              "right": 1280,
+              "top": 48,
+              "width": 1216,
+              "x": 64,
+              "y": 48
+            },
+            "scrollHeight": 26703,
+            "scrollTop": 1440,
+            "tag": "DIV"
+          }
+        ],
+        "width": 1280
+      },
+      "screenshot": "HERO-003-04-principles-handoff.jpg",
+      "url": "https://polar.sh/field-guide?page=m-principle",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-04-principles-handoff.jpg",
+        "bytes": 26105,
+        "sha256": "777ed3a72631a49baca79486ff437350e2e3a7da91883fdb152b0e5dcef9f954"
+      }
+    },
+    {
+      "id": "HERO-003",
+      "action": "05-credits-selected",
+      "note": "SelectCreditsvianativechapterbutton;preservequeryandnestedoffset",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "scrollers": [
+          {
+            "height": 672,
+            "id": "",
+            "rect": {
+              "bottom": 720,
+              "height": 672,
+              "left": 64,
+              "right": 1280,
+              "top": 48,
+              "width": 1216,
+              "x": 64,
+              "y": 48
+            },
+            "scrollHeight": 26703,
+            "scrollTop": 20565,
+            "tag": "DIV"
+          }
+        ],
+        "width": 1280
+      },
+      "screenshot": "HERO-003-05-credits-selected.jpg",
+      "url": "https://polar.sh/field-guide?page=m-credits",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-05-credits-selected.jpg",
+        "bytes": 55517,
+        "sha256": "5f39c6a08d07172b3c157a49cb890812a6650ae296a832e2e6cd765802538cda"
+      }
+    },
+    {
+      "id": "HERO-003",
+      "action": "06-return-entry",
+      "note": "Chapterentrybuttonreturnstest;demosareguidecontentafterhero",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "scrollers": [
+          {
+            "height": 672,
+            "id": "",
+            "rect": {
+              "bottom": 720,
+              "height": 672,
+              "left": 64,
+              "right": 1280,
+              "top": 48,
+              "width": 1216,
+              "x": 64,
+              "y": 48
+            },
+            "scrollHeight": 26703,
+            "scrollTop": 0,
+            "tag": "DIV"
+          }
+        ],
+        "width": 1280
+      },
+      "screenshot": "HERO-003-06-return-entry.jpg",
+      "url": "https://polar.sh/field-guide",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-003-06-return-entry.jpg",
+        "bytes": 47272,
+        "sha256": "d276e464f0ede74176047d87651e97ddaff62825930fe2f16468f4a274f5f57e"
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "HERO-003/primary.html",
+      "bytes": 324365,
+      "sha256": "b1044bd49689fa1865c27ec7394014f34cf432bf3e703d441631a8760ee20018"
+    },
+    {
+      "path": "HERO-003/primary-inspection.json",
+      "bytes": 194,
+      "sha256": "4e076d7973aaa8dc1dc8cf3747ca39b9fc1e3839bfd39b2ab21400c54c0daec2"
+    }
+  ]
+}

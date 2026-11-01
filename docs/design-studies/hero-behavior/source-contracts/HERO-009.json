@@ -1,0 +1,41 @@
+{
+  "id": "HERO-009",
+  "title": "Vercel / selected dark three-zone opening",
+  "creator": "Vercel",
+  "gallery": "https://www.lapa.ninja/post/vercel-3/",
+  "source": "https://vercel.com/",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "selectedArchive": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-single-pages-2026-10-31/sources/HERO-009-selected-current-full-browser.jpg",
+    "sha256": "006e78e0521a40f6fac5147da27cfaf75c6d4a9d46c5d651d2105c269a6064d0"
+  },
+  "archiveDimensions": [
+    1920,
+    6144
+  ],
+  "layout": {
+    "opening": "Blacknav/largeverticalnegative space; compact leftheading/actions, isolated centertriangle+whitehalo, rightmonospaceagentstatements; customerwordmarks loweredge.",
+    "handoff": "Customerrow leads into denser product/infrastructure sections. Preserve that visual density transition in native following content; don’t end the page immediately beneath a tiny trianglethumbnail."
+  },
+  "timePointer": "Earlier current live captures showed changing halo/shadow but no isolated cause. Current publicHTML has same AgenticInfrastructure heading and product headings; currenttheme/revision differs from selecteddark archive. Neither that text nor currentJS proves the archived pointer algorithm.",
+  "nativeImplementation": {
+    "shape": "Use the upright fixed source triangle at logical576×400, strong left/base spill, dark occluder and fine grain. SourceVercelLightStudy independently recreates that material and bounded pointer response; no elapsed rotation or invented source camera scrub.",
+    "UI": "Native heading/action/menu/customerrow and actual source links. Never implement or test fileupload/deployment from source Drop-to-deploy controls.",
+    "phone": "Explicit responsive adaptation, preserving emblem as focalfield and keeping rightstatements readable.",
+    "capabilities": "Current public code supports a 50ms activation delay, 60px expansion, 24→84px source row, a centered −30px shift, 200ms height and 500/300ms detail fades. Native authored Desktop rows retain their 30px base and expand to90px; that is an explicit geometry adaptation. Actual Framer pointer and keyboard activation, detail visibility and triangle RGB toggle were verified. The active capability-to-light mapping remains unknown and is not invented."
+  },
+  "remaining": [
+    "Matchingrevisionwait/pointersequence",
+    "Exacthalo/lightsourcecausality",
+    "Menustates",
+    "Firstscrollhandofftiming"
+  ],
+  "pins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/primary.html",
+      "sha256": "c6b09131e5317f1cba3b627ae78687e6772899773c699dda09fe092c691729d5"
+    }
+  ],
+  "actorProvenance": "../../code-components/assets/source-vercel-light-provenance.json"
+}

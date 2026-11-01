@@ -1,0 +1,577 @@
+{
+  "id": "HERO-010",
+  "title": "G!theimagineers",
+  "sourceURL": "https://www.gtheimagineers.com/en.html",
+  "galleryURL": "https://httpster.net/website/gtheimagineers/",
+  "classification": "Source inspiration / credited interactive recreation",
+  "credit": "G!theimagineers; website Index Studio",
+  "revision": "Selected2020accordionviewport; primaryHTML/CSS still matches namedchapters/structuralmechanism.",
+  "inspection": {
+    "freshPublicHTMLAndCSS": true,
+    "newBrowserAccess": false,
+    "existingBrowserActions": "RootselectedallfivechapterrailsandreturnedtoManifesto; Visionuntouchedwaitshowedcontourdevelopingintorings. NestedproseandSkillsaffordancevisible.",
+    "limits": "Sourceimplementationinspectionaddsgeometry/layout/timingfacts,butdoesnotverifyeverysettledanimationorPhonebehavior."
+  },
+  "inputModel": {
+    "initialState": "home",
+    "states": [
+      "home",
+      "manifesto",
+      "vision",
+      "expertise",
+      "experience",
+      "contact"
+    ],
+    "navigation": "Fivechapterrailsselectnamedstate;brand/homepromptreturnsHome. No ordinarypagegrowthonDesktop.",
+    "observedBrowserWindow": {
+      "width": 1280,
+      "height": 720,
+      "documentHeight": 720,
+      "windowScrollY": 0
+    },
+    "nestedScrolling": "Activepane prosecolumn scrolls; Expertise has two nested disclosure groups.",
+    "implementationOnly": "PublicMain.js resets window scroll onselection; Desktopslidingduration1000ms/outQuint andcontaineropacity500ms. This timingisnotnewbrowsermeasurement."
+  },
+  "desktopGeometry": {
+    "breakpoint": "min-width1025",
+    "referenceViewport": [
+      1280,
+      720
+    ],
+    "background": "#000000",
+    "ink": "#ffffff",
+    "strokePx": 1,
+    "brandRail": {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": "100vh",
+      "logo": {
+        "x": 24,
+        "y": 23,
+        "width": 33,
+        "height": 33
+      },
+      "languageControl": "Rotated270deg atleft46/bottom35; brandrail ishomehitarea."
+    },
+    "rail": {
+      "width": 80,
+      "number": {
+        "top": 35,
+        "align": "center"
+      },
+      "label": {
+        "bottom": 35,
+        "writingMode": "vertical-rl",
+        "rotation": 180
+      }
+    },
+    "activePanel": {
+      "width": "W−6×80",
+      "left": "80+stateIndex×80,whereManifestoindex1…Contactindex5",
+      "height": "100vh",
+      "graphicColumn": "50%including80pxrightinset",
+      "copyColumn": "50%,borderLeft1px,overflowYscroll",
+      "introPadding": "315px55px75px",
+      "body": "BorderTop1px;maincopy55pxhorizontal/100pxtop;padding; miniaturegraphiccolumn1/3 andtext2/3; Manifesto/Experience reverseminiature side."
+    },
+    "at1280": {
+      "panelWidth": 800,
+      "manifesto": [
+        160,
+        960
+      ],
+      "vision": [
+        240,
+        1040
+      ],
+      "expertise": [
+        320,
+        1120
+      ],
+      "experience": [
+        400,
+        1200
+      ],
+      "contact": [
+        480,
+        1280
+      ],
+      "visionGraphic": {
+        "column": [
+          240,
+          640
+        ],
+        "svgBox": [
+          240,
+          200,
+          320,
+          320
+        ],
+        "circleDiameter": 307.2
+      },
+      "visionCopy": {
+        "x": 640,
+        "width": 400,
+        "textX": 695,
+        "textWidth": 290,
+        "introTop": 315
+      }
+    },
+    "type": {
+      "sourceFamily": "GT Cinetype",
+      "substitute": "Useavailableexplicitmonospacedsans/substituteandrecord; sourcefontlicenseunverified,donotuploadfontwithoutscope.",
+      "body": [
+        16,
+        24
+      ],
+      "intro": [
+        20,
+        30
+      ],
+      "expertiseAndContactIntro": [
+        28,
+        30
+      ],
+      "rail": 14,
+      "pointTitle": 24,
+      "email": 24,
+      "links": 20
+    }
+  },
+  "home": {
+    "composition": "Twoequalgraphicfieldsabovedetailsstrip;bothseparatedby1pxwhitehairlines. Fiveclosedrailsatright.",
+    "at1280": {
+      "heroGraphicArea": [
+        80,
+        0,
+        800,
+        490
+      ],
+      "leftCell": [
+        80,
+        0,
+        400,
+        490
+      ],
+      "rightCell": [
+        480,
+        0,
+        400,
+        490
+      ],
+      "detailsStrip": [
+        80,
+        490,
+        800,
+        230
+      ]
+    },
+    "footerContent": "Servicecategoriesatleft;Paris/location/email/yearatright; matchsourcefooterdensityratherthan genericcard.",
+    "motion": "Circularelementsdrawfromarcsfollowingentry; sourceimplementationstagger150ms/1500msstroke-draw with randomorientation. Browsercapturerecordedpartialarcs; exactrandomseedingnotverified."
+  },
+  "chapters": [
+    {
+      "state": "manifesto",
+      "number": "01",
+      "label": "Manifesto",
+      "sourceID": "first",
+      "graphic": {
+        "kind": "6co-centeredellipses",
+        "viewBox": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "center": [
+          50,
+          50
+        ],
+        "ry": 48,
+        "rxEndpoints": [
+          48,
+          39.4,
+          30.8,
+          22.2,
+          13.6,
+          5
+        ],
+        "motion": "Timecyclesbetweenacircleandsixnarrowingellipses. Publicsourceimplementation1500msmoveswith2000msrepeatdelay; independentnativeconstruction,notwebsiteJScopy."
+      },
+      "copy": {
+        "treatment": "Attributedbodyparaphrase,retainrelativeparagraphdensity;rawHTMLisinspectiononly.",
+        "intro": "A changing practice imagines what comes next, questions established limits and treats unfamiliar problems as opportunities to make something new.",
+        "body": [
+          "The studio joins creative direction with architecture, stagecraft, imagery, sound and technical production.",
+          "Its work spans live performance, events, festivals, entertainment and retail.",
+          "A Paris base and varied professional backgrounds shape a practical, collaborative way of approaching each brief.",
+          "The approach stays responsive to the conditions of each project."
+        ]
+      },
+      "lowerGraphic": "TenoffsetcirclesfrominlineSVG,retainedgeometrynotphotography."
+    },
+    {
+      "state": "vision",
+      "number": "02",
+      "label": "Vision",
+      "sourceID": "second",
+      "graphic": {
+        "kind": "23offsetcircles",
+        "viewBox": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "count": 23,
+        "initial": {
+          "cx": 50,
+          "cy": 50,
+          "r": 48
+        },
+        "finalFamily": "i0..22:r48−33×i/22;cx50+1.2i−2.4max(0,i−14);cy50. Alternatemirrorscxabout50.",
+        "motion": "Sourceimplementationalternatesleft/rightoffsetfamiliesover1500mswith2000mshold;entrycirclesstagger30ms(reversearrayorder). Browseractuallyconfirmedcircle→denseringsduringstationarywait."
+      },
+      "copy": {
+        "treatment": "Attributedparaphrase;keeporiginal20px/30pxcolumnscaleandcomparablelinecount.",
+        "intro": "The collective works across science, technology and human experience, looking for practical forms that unfamiliar ideas can take.",
+        "body": [
+          "Changes in the industry strengthened commitments to respect, clearer working relationships and more responsible production.",
+          "The studio pursues lower-impact events, transparent costs and closer links between live and virtual audiences.",
+          "Its design and management work turns those commitments into coordinated productions."
+        ]
+      },
+      "lowerGraphic": "12thinradialstripsfrominline100×100SVG."
+    },
+    {
+      "state": "expertise",
+      "number": "03",
+      "label": "Expertise",
+      "sourceID": "third",
+      "graphic": {
+        "kind": "15rotatingellipsesections",
+        "viewBox": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "groupRotation": -30,
+        "initial": {
+          "center": [
+            50,
+            50
+          ],
+          "rx": 48,
+          "ry": 48
+        },
+        "sourceSupportedMotion": "Timedellipsesprogressalonganaxistosuggestarotatingellipsoid;sourceenterblend1200ms/stagger20ms. Settledgeometrynotobservedintheclickcapture;labelthislimit."
+      },
+      "copy": {
+        "treatment": "Attributedparaphrase.",
+        "intro": "Independent collaborators adapt the team’s disciplines to the needs, constraints and opportunities of each project."
+      },
+      "disclosures": [
+        {
+          "number": "01",
+          "label": "Skills",
+          "items": [
+            "Art direction",
+            "Concept development",
+            "Architecture",
+            "Scenography",
+            "Set and stage design",
+            "Lighting",
+            "Audio",
+            "Imagery",
+            "Stagecraft",
+            "Production",
+            "Management",
+            "Experience design"
+          ]
+        },
+        {
+          "number": "02",
+          "label": "What we cover",
+          "items": [
+            "Events",
+            "Live shows",
+            "Television",
+            "Festivals",
+            "Clubs",
+            "Performances",
+            "Entertainment",
+            "Retail",
+            "Hotels",
+            "Restaurants",
+            "Event halls"
+          ]
+        }
+      ],
+      "interaction": "Disclosureplus/minusandcontentexpansionaresupportedbypublicHTML/CSS/handler;rootbrowseronlyreachedtheSkillsclosedaffordance,notexpandedcontents."
+    },
+    {
+      "state": "experience",
+      "number": "04",
+      "label": "Experience",
+      "sourceID": "fourth",
+      "graphic": {
+        "kind": "9verticallyseparatedcircles",
+        "viewBox": [
+          0,
+          0,
+          100,
+          200
+        ],
+        "sourceGeometry": "Circlecx50;initialcy100/r48;targetcy100+(4−i)×9;radiusoscillates30..48withstaggeredphase.",
+        "motion": "Timedverticalcirclefamily;sourceenterblend1500ms/stagger50ms. Screenshotcapturedanearlycircle,notthesettledloop."
+      },
+      "copy": {
+        "treatment": "Attributedparaphrase.",
+        "intro": "Shared experience across creative and technical disciplines gives the studio a collective way to resolve difficult production problems.",
+        "body": [
+          "Years of work in live, virtual and hybrid settings inform the process.",
+          "The team combines artistic and technical practice rather than separating the idea from its delivery.",
+          "Specialisms range from lighting and sound to networks, motion control and virtual production."
+        ]
+      },
+      "lowerGraphic": "Squarecontainingacircle,white1pxoutline;bodyandminiaturepositionsreverseasManifesto."
+    },
+    {
+      "state": "contact",
+      "number": "05",
+      "label": "Contact",
+      "sourceID": "fifth",
+      "graphic": {
+        "kind": "5bouncingoutlinecircles",
+        "sourceGeometry": "Fivecirclesr17in100unitwideworld,verticalextentfollowscolumnaspect;sourcecodeusestimevaryinggravityandwall/floorcollisions.",
+        "motion": "Publicimplementation-only:loopinggravityroughly−0.1…0.7,bouncingcircles. Contactclickcaptureisearlyandcirclesmostlyaboveviewport;settledphysicsnotobserved."
+      },
+      "copy": {
+        "introLabel": "Contact us",
+        "email": "vincent@gtheimagineers.com"
+      },
+      "actions": [
+        {
+          "label": "Mentions",
+          "href": "https://www.gtheimagineers.com/assets/downloads/GTI_mentions.pdf"
+        },
+        {
+          "label": "Credits",
+          "href": "https://index.studio/"
+        }
+      ],
+      "lowerGeometry": "Contactcopycolumnjustifiedbottom;introabovetwo120pxrows(email;twolinks)."
+    }
+  ],
+  "phone": {
+    "status": "ExplicitauthoringadaptationgroundedinpublicmobileCSS;actualsourcePhoneunverified.",
+    "sourceCSS": "≤1024:55pxfixedheader;languagecontrolhidden;menutogglesfive100pxnavigationrows;onlyselectedsectiondisplayed;graphicgenerally65%viewportwidth,Experience45%;activecontentusesnormalverticalscroll.",
+    "required": "Retainallfivechapters+Homeanddisclosureswithlargeclick/touchtargets;donotshrinkDesktoprailsintoPhone. VerifyactualPhonePreviewandrecordadaptation."
+  },
+  "nativeAuthoring": {
+    "preserve": "Allprevious69pages/source22exact;createadditivebehaviorstudy.",
+    "construction": "Selectablenativeframes/text/circles/ellipses;reuse88-partVisioncirclefieldasonevariant,notallstates. Useactualvariants/actionsonlydocumentedAPIs.",
+    "sceneOrder": "Home→allfiveindependentchapterstates;sourcehasnofixedlinearcompletionafterContact.",
+    "contentCopyLimit": "ShortsourceUIlabelsandbodyparaphrases;rawsourceparagraphsarenotanauthoredcopybundle.",
+    "missingAssets": "Noneforstructuralnativegeometry.Sourcefontsubstitutionremainsintentional;sourceanimationisindependentlyreconstructed,notoriginalJSreuse."
+  },
+  "evidence": [
+    {
+      "id": "HERO-010",
+      "action": "01-entry",
+      "note": "Currentlivechapterrailentrance",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-01-entry.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-01-entry.jpg",
+        "sha256": "785c63abee3dc56264a5900854aae8f0b768f9003165d137f061ed46a4ab2fc7",
+        "bytes": 33209
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "02-open-vision",
+      "note": "ClicknamedVisionrailfromlanding;observepanelreflowandcontent",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-02-open-vision.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-02-open-vision.jpg",
+        "sha256": "98f4f3fb721bf02c2fab79f875d5579621ebcb40be2459e2cef0135168129b5a",
+        "bytes": 54078
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "03-vision-settled",
+      "note": "UntouchedsettledVisionstateafterclick",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-03-vision-settled.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-03-vision-settled.jpg",
+        "sha256": "2d61ba83c2e4bc8de470d5d9d9e00d8ba6e921b345597fa12c2f6adaa8474511",
+        "bytes": 83530
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "04-open-expertise",
+      "note": "ClicknamedExpertiserail;observechapterreplacement",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-04-open-expertise.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-04-open-expertise.jpg",
+        "sha256": "46015923576460a5294182203e442c03f693647b4470007a3e63574e066651b8",
+        "bytes": 46497
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "05-experience",
+      "note": "SelectExperiencechapter",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-05-experience.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-05-experience.jpg",
+        "sha256": "3ad95ca0a861f0c55d294d610f2a1e0221b080396f7ba6b90470c0965eb80be9",
+        "bytes": 42264
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "06-contact",
+      "note": "SelectContactchapterwithoutactivatingemaillinks",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-06-contact.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-06-contact.jpg",
+        "sha256": "76c2501d5681cff48e230d90b2ae642d6af24cba8ccea13e54383830375f41a7",
+        "bytes": 26125
+      }
+    },
+    {
+      "id": "HERO-010",
+      "action": "07-manifesto",
+      "note": "ReturntoManifestochapter",
+      "metrics": {
+        "bodyHeight": 720,
+        "height": 720,
+        "scrollHeight": 720,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-010-07-manifesto.jpg",
+      "url": "https://www.gtheimagineers.com/en.html",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-010-07-manifesto.jpg",
+        "sha256": "8f1ec7afaa7c4a4b1aaf2370b15891466fcf5694d2a831630bad255156b053f2",
+        "bytes": 49107
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "HERO-010/primary.html",
+      "sha256": "4bee5fcabd4fb6596ed1f02b903d64f63096a9ba2e89e4cc688a20fd0d90185a",
+      "bytes": 28482
+    },
+    {
+      "path": "HERO-010/desktop.css",
+      "sha256": "59f8bf1e74333afdfa93b3792aee7af168d3bbcc6380cef5cd50b27d78c1dfaa",
+      "bytes": 9901
+    },
+    {
+      "path": "HERO-010/mobile.css",
+      "sha256": "3bda15638f44df5b7aedc64e40a427064992d1eef3459d9b1fc483dc409887b9",
+      "bytes": 7904
+    },
+    {
+      "path": "HERO-010/typography.css",
+      "sha256": "d3392b14f8dcf3e7d454ada0dcf26d06f19d88e51949d7dedca0895ee3abe537",
+      "bytes": 1573
+    },
+    {
+      "path": "HERO-010/global.css",
+      "sha256": "4f3e46022a4e0dbb8aaa271233e54f2877647e41a61df6c36825789da5c949b0",
+      "bytes": 666
+    },
+    {
+      "path": "HERO-010/Main-inspection-only.js",
+      "sha256": "d75307ec8bd90140e7181091bad2fb3a6f9e2fce082016f600adb448b77c3421",
+      "bytes": 3826
+    },
+    {
+      "path": "HERO-010/Home-inspection-only.js",
+      "sha256": "a5dad42cc9177a8f98702c6954ce456bbba409d009c9bffb48ba2681daa5c50d",
+      "bytes": 983
+    },
+    {
+      "path": "HERO-010/First-inspection-only.js",
+      "sha256": "aa2fc30972651e4c9bb4e6de88c8a36668e0cbe7170a2c32777ee3b7523d18c7",
+      "bytes": 2473
+    },
+    {
+      "path": "HERO-010/Second-inspection-only.js",
+      "sha256": "996d109e971bcdf3ece4877e3ce1b8dd2dd2c10faef49427b82e994e221b04ee",
+      "bytes": 2778
+    },
+    {
+      "path": "HERO-010/Third-inspection-only.js",
+      "sha256": "b9fafdc5ad98f3ff46638678ec3e26972d1dd40da41d6b218ece1f45d6ce0546",
+      "bytes": 2497
+    },
+    {
+      "path": "HERO-010/Fourth-inspection-only.js",
+      "sha256": "5d5fb04510f0f56714145545973719bfc8c9bbafd04891ee98d936fe8d3dee2b",
+      "bytes": 1874
+    },
+    {
+      "path": "HERO-010/Fifth-inspection-only.js",
+      "sha256": "2e0831962ecbb60f857438c2732de200ae589a2323005e73c733ad9ee0786290",
+      "bytes": 4804
+    }
+  ]
+}

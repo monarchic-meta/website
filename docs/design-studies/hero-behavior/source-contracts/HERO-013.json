@@ -1,0 +1,758 @@
+{
+  "id": "HERO-013",
+  "title": "FORMAT",
+  "sourceURL": "https://format.obys.agency/",
+  "selectedGallery": "https://www.awwwards.com/sites/format",
+  "credit": "Obys × DES",
+  "classification": "Source inspiration / credited long-form interactive recreation",
+  "inspection": {
+    "newBrowserAccess": false,
+    "rootObservedTraversal": "1280×720 document13474px; entry+17forward captures to12744 with actual FORMATfooter. Notes/Daughter controls tested separately.",
+    "causalLimits": "Scroll establishes progression through the format essay; retained captures do not establish exact scrub curves, hover/drag physics, or all motion causality."
+  },
+  "layout": {
+    "sourceViewport": [
+      1280,
+      720
+    ],
+    "documentHeight": 13474,
+    "background": "#232323",
+    "ink": "#000000",
+    "paper": "#ffffff",
+    "openingWordmark": {
+      "x": 18,
+      "y": 18,
+      "width": 1230,
+      "height": 188,
+      "construction": "Use existing editable chamfered native FORMAT geometry; no replacement screenshot."
+    },
+    "utilityRail": {
+      "y": 214,
+      "height": 14,
+      "content": "Small left source credit, right Notes/Daughter toggles."
+    },
+    "initialVerticalCard": {
+      "x": 486,
+      "y": 383,
+      "width": 294,
+      "photo": "cloud vertical material atleft of card; native small index at right",
+      "nearbyClock": "White small disk with black points, separate native construction."
+    },
+    "horizontalAtScroll715": {
+      "x": 174,
+      "y": 56,
+      "width": 912,
+      "height": 394,
+      "split": "Left312px materialphoto; wide white center; large applicationtypeatright; four smaller dependent cards cross nearby edges."
+    },
+    "clocksAt2878": {
+      "diameter": "Approximately49%viewportwidth per disk",
+      "construction": "Independent native circles/rings, black points and small markers; do not flatten the face text into an imported screenshot."
+    },
+    "triangle": {
+      "shape": "Downward white triangle/trapezoid with clipped tip and black corner markers",
+      "copyTreatment": "Keep short format label and use attributed compact paraphrase for descriptive words; source artwork is credited."
+    },
+    "bandScene": {
+      "construction": "Oversized native circular rings cropped by viewport; rotate short labels and pale ticks along arc; central small marker changes from triangle to circle."
+    },
+    "flowerAndOutro": {
+      "photography": "Actual source poster-BewnwD3v.webp, cropped as its photographic aperture.",
+      "construction": "Native advice/type, circles/dial, guide frame and diagonal lines; later transform the entire native group as card, with photo remaining just one layer."
+    }
+  },
+  "sequence": [
+    {
+      "key": "01-entry",
+      "scrollY": 0,
+      "visual": "Architectural FORMAT wordmark across almost full width; narrow white credit/toggle rail; detached Vertical paper centered lower, cloud-photo strip on its left and tiny typographic index on its right; separate dot-clock and cloud square beside it.",
+      "screenshot": "HERO-013-01-entry.jpg"
+    },
+    {
+      "key": "02-scroll-one",
+      "scrollY": 715,
+      "visual": "Wide white Horizontal panel overlaps the now-gray wordmark: pale cloudy photo occupies left third; dense large black application words occupy right third; smaller orientation cards sit to both sides and below, over a gray flower/material ground.",
+      "screenshot": "HERO-013-02-scroll-one.jpg"
+    },
+    {
+      "key": "03-scroll-three",
+      "scrollY": 2147,
+      "visual": "A compact centered Vertical usage card floats in broad charcoal space; its small upper index turns across orientations while the bottom uses very large stacked utility type.",
+      "screenshot": "HERO-013-03-scroll-three.jpg"
+    },
+    {
+      "key": "04-scroll",
+      "scrollY": 2878,
+      "visual": "Two huge white circular formats: left clock/ring with three black moving dots and small numbers; right thick outlined disk holds repeated circular-format words with a soft gray central aperture; horizontal pill specimens remain above.",
+      "screenshot": "HERO-013-04-scroll.jpg"
+    },
+    {
+      "key": "05-scroll",
+      "scrollY": 3594,
+      "visual": "Large inverted white triangle on gray cloudy ground, with tiny black corner/edge points, small Triangle heading and stacked centered words compressed toward the tip.",
+      "screenshot": "HERO-013-05-scroll.jpg"
+    },
+    {
+      "key": "06-scroll",
+      "scrollY": 4306,
+      "visual": "An enlarged gray photographic/material field dominates; a small white horizontal specimen card crosses its upper edge and remains crisp against the image.",
+      "screenshot": "HERO-013-06-scroll.jpg"
+    },
+    {
+      "key": "07-scroll",
+      "scrollY": 5038,
+      "visual": "Compact Vertical card with stacked image apertures floats centrally; a large white circle begins entering below.",
+      "screenshot": "HERO-013-07-scroll.jpg"
+    },
+    {
+      "key": "08-scroll",
+      "scrollY": 5758,
+      "visual": "White circular format contains a black-framed angular collage around a shaded center; below, a white horizontal triptych holds three contrasting photographed specimens.",
+      "screenshot": "HERO-013-08-scroll.jpg"
+    },
+    {
+      "key": "09-scroll",
+      "scrollY": 6473,
+      "visual": "White horizontal image panels and narrow red/tree strips cross the field; the next inverted Triangle title enters below them.",
+      "screenshot": "HERO-013-09-scroll.jpg"
+    },
+    {
+      "key": "10-scroll",
+      "scrollY": 7196,
+      "visual": "Inverted white triangle centered on charcoal; stacked black words narrow downward to a small triangle tip.",
+      "screenshot": "HERO-013-10-scroll.jpg"
+    },
+    {
+      "key": "11-scroll",
+      "scrollY": 7913,
+      "visual": "Two enormous white circular/triangular bands approach from both lower sides, with small rotated labels and pale repeated text following their curves; a tiny central triangular marker separates them.",
+      "screenshot": "HERO-013-11-scroll.jpg"
+    },
+    {
+      "key": "12-scroll",
+      "scrollY": 8630,
+      "visual": "The opposing large curved white bands continue past the viewport, leaving a central dark aperture with one small white circle; this is a continuation of the crossing-band scene, not an unrelated new card.",
+      "screenshot": "HERO-013-12-scroll.jpg"
+    },
+    {
+      "key": "13-scroll",
+      "scrollY": 9356,
+      "visual": "White disk and large arced lettering/slogan cross the top-left; a small Vertical specimen index remains at upper right, preserving extreme differences of scale.",
+      "screenshot": "HERO-013-13-scroll.jpg"
+    },
+    {
+      "key": "14-scroll",
+      "scrollY": 10070,
+      "visual": "A large framed black-and-white flower photograph occupies the left; native typographic advice and white/dial circles occupy the right with deliberately uneven baselines.",
+      "screenshot": "HERO-013-14-scroll.jpg"
+    },
+    {
+      "key": "15-scroll",
+      "scrollY": 10791,
+      "visual": "The flower-and-advice composition is constrained by tall narrow lines; nearby circles and rotated words continue changing their relationship.",
+      "screenshot": "HERO-013-15-scroll.jpg"
+    },
+    {
+      "key": "16-scroll",
+      "scrollY": 11513,
+      "visual": "A compact flower/advice card duplicates and shrinks inside a broad dashed rectangular frame crossed by corner-to-center diagonal guides.",
+      "screenshot": "HERO-013-16-scroll.jpg"
+    },
+    {
+      "key": "17-scroll",
+      "scrollY": 12237,
+      "visual": "One compact rectangular card rotates diagonally across dashed guide axes; short repeated caption fragments occupy the lower edge.",
+      "screenshot": "HERO-013-17-scroll.jpg"
+    },
+    {
+      "key": "18-scroll",
+      "scrollY": 12744,
+      "visual": "The card remains above the large architectural FORMAT footer, whose segmented letters rise across the viewport bottom.",
+      "screenshot": "HERO-013-18-scroll.jpg"
+    }
+  ],
+  "controls": [
+    {
+      "key": "notes",
+      "label": "Notes Mode",
+      "observedAction": "Checkbox0→1 adds visible yellow callouts.",
+      "required": "A real checkbox/nativevariant toggles yellow explanation callouts in the appropriate scene; restore/off state removes them.",
+      "limits": "Exact callout text/placement outside captured entry not fully measured; retain concise paraphrase rather than inventing source claims."
+    },
+    {
+      "key": "daughter",
+      "label": "Daughter version",
+      "observedAction": "0→1, later settled view adds colorful drawn overlays to opening photo/clock; bothcontrolsrestored0.",
+      "required": "Toggle actual source-led alternate graphic layers, with credit and bounded visual scope.",
+      "limits": "Full alternate journey not traversed; original variant assets/paths need source inspection. Do not claim the entire alternate essay recreated from one observed opening."
+    }
+  ],
+  "assets": {
+    "provenance": {
+      "path": "HERO-013/assets/provenance.json",
+      "bytes": 9932,
+      "sha256": "bfaf6fd66a4feb8a9c23fffdefe3b5a8b1071136c292270a9bb07acab83d8776"
+    },
+    "availableFiles": [
+      {
+        "url": "https://format.obys.agency/assets/vertical-card-DzgfrpMV.webp",
+        "path": "HERO-013/assets/vertical-card-DzgfrpMV.webp",
+        "sha256": "2eb61b2cc2eafba1614b6dfda0d828d35282308d0d9eaed3a77a3349ed361cb3",
+        "width": 524,
+        "height": 1851
+      },
+      {
+        "url": "https://format.obys.agency/assets/flower-CVKgWteV.webp",
+        "path": "HERO-013/assets/flower-CVKgWteV.webp",
+        "sha256": "bee917a4fa973c875fe70f1028b606c1d79e1461e7e5c9ca7f58d21b689b46da",
+        "width": 1440,
+        "height": 998
+      },
+      {
+        "url": "https://format.obys.agency/assets/horizontal-CWAIze4S.webp",
+        "path": "HERO-013/assets/horizontal-CWAIze4S.webp",
+        "sha256": "206b0525b97849855e884cf8e40e4d63fbcabce81ebe80f7b2dab42e4d27dca7",
+        "width": 710,
+        "height": 896
+      },
+      {
+        "url": "https://format.obys.agency/assets/screens-BQ9sth5J.webp",
+        "path": "HERO-013/assets/screens-BQ9sth5J.webp",
+        "sha256": "219e2b44b585966dd6904d078069a3564abc05c89b27fa8026add42d3589058f",
+        "width": 758,
+        "height": 848
+      },
+      {
+        "url": "https://format.obys.agency/assets/tri-fog-BzhW1aqF.webp",
+        "path": "HERO-013/assets/tri-fog-BzhW1aqF.webp",
+        "sha256": "6b01ec52fa46973295f2484fb82584a2e03dc96debf4b2b8e7dbd0b326f3e4f7",
+        "width": 1440,
+        "height": 1288
+      },
+      {
+        "url": "https://format.obys.agency/assets/a-B09-tIjy.webp",
+        "path": "HERO-013/assets/a-B09-tIjy.webp",
+        "sha256": "d92fb51d754b296fe2cef4c1438499dd48daa4785b93ba8fda937fefbd2a0aba",
+        "width": 316,
+        "height": 398
+      },
+      {
+        "url": "https://format.obys.agency/assets/b-Bh_L6HFx.webp",
+        "path": "HERO-013/assets/b-Bh_L6HFx.webp",
+        "sha256": "08a5341d9aaef4e7709706e0bb723243cc8ec31aac89b860874fb5a1bc56f460",
+        "width": 316,
+        "height": 398
+      },
+      {
+        "url": "https://format.obys.agency/assets/c-CgW8p4ax.webp",
+        "path": "HERO-013/assets/c-CgW8p4ax.webp",
+        "sha256": "332ce23b08b2ea6ac9d9c3e22c30592e8079bdd9db8a10e562ba129d1a274c50",
+        "width": 316,
+        "height": 399
+      },
+      {
+        "url": "https://format.obys.agency/assets/bg7-DimjdT4q.webp",
+        "path": "HERO-013/assets/bg7-DimjdT4q.webp",
+        "sha256": "f234b2eb343ab9ff162386bafe5bd5858a73f7a57e7b9969c55d88e81f560667",
+        "width": 1440,
+        "height": 1701
+      },
+      {
+        "url": "https://format.obys.agency/assets/d-CezkVoqu.webp",
+        "path": "HERO-013/assets/d-CezkVoqu.webp",
+        "sha256": "c569a40709e04504bd4e837a4425fa36aed9fb0b1ff42fecdd8aab389ccdeb99",
+        "width": 316,
+        "height": 398
+      },
+      {
+        "url": "https://format.obys.agency/assets/e-CYwPQZib.webp",
+        "path": "HERO-013/assets/e-CYwPQZib.webp",
+        "sha256": "7d94c20fd35e94e6a82e639328b1b91ca1acc087d321508972ed994e69b4a0b8",
+        "width": 316,
+        "height": 399
+      },
+      {
+        "url": "https://format.obys.agency/assets/f-DI0ib4TW.webp",
+        "path": "HERO-013/assets/f-DI0ib4TW.webp",
+        "sha256": "ba654c508fe672fa40ee47c512e09a9c768b6212b8214be266a4b9f32f57211a",
+        "width": 316,
+        "height": 398
+      },
+      {
+        "url": "https://format.obys.agency/assets/tri-bg-BUX7DWVI.webp",
+        "path": "HERO-013/assets/tri-bg-BUX7DWVI.webp",
+        "sha256": "3f340afa5a9dd2ec9af8239fa99f349a9f03e65c3db9493232b112796292eadf",
+        "width": 631,
+        "height": 1014
+      },
+      {
+        "url": "https://format.obys.agency/assets/special-DCkX6FsC.webp",
+        "path": "HERO-013/assets/special-DCkX6FsC.webp",
+        "sha256": "70b816acd385848634e3a59e192e60ed8e3b10c5eecc8634d2fb95726f66564d",
+        "width": 706,
+        "height": 654
+      },
+      {
+        "url": "https://format.obys.agency/assets/rec-left-CR_1c09C.webp",
+        "path": "HERO-013/assets/rec-left-CR_1c09C.webp",
+        "sha256": "201a390b99d0cf555d73ac5c6bda64003e46dce18163046c78f1b5f086e9ee48",
+        "width": 1394,
+        "height": 452
+      },
+      {
+        "url": "https://format.obys.agency/assets/rec-right-CyoYXL7w.webp",
+        "path": "HERO-013/assets/rec-right-CyoYXL7w.webp",
+        "sha256": "d54dcd192ebe2485befd30389a939036314f5c488f6a819d59bdb895c4c94f6d",
+        "width": 1076,
+        "height": 452
+      },
+      {
+        "url": "https://format.obys.agency/assets/poster-BewnwD3v.webp",
+        "path": "HERO-013/assets/poster-BewnwD3v.webp",
+        "sha256": "83ca433465565af7ca0b809ad63c6537f89ca630f60cc03fe70fec14ec06ec8e",
+        "width": 1380,
+        "height": 1668
+      }
+    ],
+    "usage": "These are individual photographic/material assets, not whole hero screenshots. Keep panel boundaries, wordmarks, clocks, type, rules, triangle/ring geometry selectable native parts.",
+    "missing": "Exact daughter-version vector overlays and any source pointer/drag mechanism not yet extracted/verified."
+  },
+  "nativeIteration": {
+    "required": "One continuous regularWebpage retains the source essay progression; direct entry starts at the top. All17later visual stages must be reachable by real scrolling, not a static card grid or text-only chapter list.",
+    "motion": "Use source-corresponding scroll/section transforms and independently timed clock/card motion where observed. Record scrub/easing approximations; do not create forced waits.",
+    "loading": "Keep each active graphic bounded/offscreen-stopped and photographic assets cropped by nativeframes. Grouped oldDesignboards and current69pages remain exact.",
+    "phone": "An explicit source-led adaptation is necessary; root did not inspect sourcePhone. Reflow small reading indices and format cards instead of shrinking the entire13kDesktop composition."
+  },
+  "acceptance": [
+    "Entry reproduces wordmark/rail/Vertical spatial relationships.",
+    "Ordinary scrolling reaches Horizontal, circles, Triangle, crossing bands, slogan, flower/advice, rotating card and footer in order.",
+    "Notes/Daughter switches visibly change corresponding layers and restore cleanly.",
+    "Native parts remain selectable; image apertures use credited actualmedia.",
+    "No claim of verified drag/Phone/reduced-motion or entire alternate-version behavior before testing."
+  ],
+  "evidence": [
+    {
+      "id": "HERO-013",
+      "action": "01-entry",
+      "note": "FullcurrentFORMATentrancebeforeuserinput",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-01-entry.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-01-entry.jpg",
+        "bytes": 35077,
+        "sha256": "bf6d41a472708be6ea9ea626bcecb9fd0335dbb79a9c34a35675649870c055c1"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "02-scroll-one",
+      "note": "Oneviewportscrollfromentry",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 715,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-02-scroll-one.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-02-scroll-one.jpg",
+        "bytes": 99240,
+        "sha256": "5b0b7d852c8554c61968b52f7369122febea75bc9285794d4eb7ff4316096882"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "03-scroll-three",
+      "note": "Threeviewportscrollpositionsfromentry;checkformatchanges",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 2147,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-03-scroll-three.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-03-scroll-three.jpg",
+        "bytes": 22661,
+        "sha256": "a359f01d0d136a9cca7159506ff6cbbfc3864ea3932d45c8741d46a2bd75dc3d"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "04-scroll",
+      "note": "Forwardoneviewporteach;sourcefullsequence",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 2878,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-04-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-04-scroll.jpg",
+        "bytes": 73771,
+        "sha256": "a967fb04b6e4f501d2f2da14b2042771ac69ad91846fc0d3a755f0d81ad00b13"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "05-scroll",
+      "note": "Forwardoneviewporteach;sourcefullsequence",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 3594,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-05-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-05-scroll.jpg",
+        "bytes": 78398,
+        "sha256": "8225b250033b6f86e9866759802b554d996576eb60597bfde7f037d761537946"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "06-scroll",
+      "note": "Forwardoneviewporteach;sourcefullsequence",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 4306,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-06-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-06-scroll.jpg",
+        "bytes": 62221,
+        "sha256": "958a373dc0f48717c9e141e480b9f099137fd08f7ed5b2fad4a3066fd1870ea6"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "07-scroll",
+      "note": "Forwardoneviewporteach;sourcefullsequence",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 5038,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-07-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-07-scroll.jpg",
+        "bytes": 24013,
+        "sha256": "3d7a79f61a944cdeb7c7723546f13dee0f08101a186b244cf34bfb354ae0793d"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "08-scroll",
+      "note": "Forwardoneviewporteach;continuingformatessay",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 5758,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-08-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-08-scroll.jpg",
+        "bytes": 69113,
+        "sha256": "c821238766067ac690fd6979a62a4f7ec800ff2d71c7102e6aeeeff54e8c0d1e"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "09-scroll",
+      "note": "Forwardoneviewporteach;continuingformatessay",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 6473,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-09-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-09-scroll.jpg",
+        "bytes": 73084,
+        "sha256": "898719f2548d480ff523e7e224538f04f80770dc5f2e1071eb0235ed5c77eaf7"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "10-scroll",
+      "note": "Forwardoneviewporteach;continuingformatessay",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 7196,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-10-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-10-scroll.jpg",
+        "bytes": 29172,
+        "sha256": "43b99f0267c2cb319ab67f0b237ea672d0ce9f6c12d17d78de681579942632ad"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "11-scroll",
+      "note": "Forwardoneviewporteach;continuingformatessay",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 7913,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-11-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-11-scroll.jpg",
+        "bytes": 26427,
+        "sha256": "23a45296a3f7264489c203160e32274195b675b05c09209ad21a72d3ac2a615d"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "12-scroll",
+      "note": "Forwardoneviewporteach;continuingformatessay",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 8630,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-12-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-12-scroll.jpg",
+        "bytes": 27722,
+        "sha256": "25d8c16264f849a9db686614ab02ff769b9bbf8bcfa6cd8f84401007868e71e2"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "13-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 9356,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-13-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-13-scroll.jpg",
+        "bytes": 32828,
+        "sha256": "d7254b6102b729e0c2b2d2a1d84e2dacce5d1987d3dbca57502b68006b80b651"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "14-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 10070,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-14-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-14-scroll.jpg",
+        "bytes": 43228,
+        "sha256": "8d59cb94b008067ad728733053ae891cf50bbd9f9e9220f24100814c7b079590"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "15-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 10791,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-15-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-15-scroll.jpg",
+        "bytes": 32326,
+        "sha256": "1e8c33c6d6d3b1031e2f9fb7ff06ab7c0d9408ccd64f34a244f50765879e4532"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "16-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 11513,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-16-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-16-scroll.jpg",
+        "bytes": 23185,
+        "sha256": "5ecc9133aa7c37e72a52e25779b2232a853ee8f4567a0d058e6f54f06ecbe88f"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "17-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 12237,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-17-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-17-scroll.jpg",
+        "bytes": 32994,
+        "sha256": "46fe52fabec44bf3443bea7a5994f53fa2b5dd5921a2df801d1451a6264a6c3b"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "18-scroll",
+      "note": "Continueuntilactualdocumentend",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 12744,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-18-scroll.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-18-scroll.jpg",
+        "bytes": 31319,
+        "sha256": "880f69abdeae59480012ec34f2b8d891e44c50fe3b086b48ddbd204cf41690ec"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "19-notes-mode",
+      "note": "ExplicitNotesModecheckboxclickedfrom0to1",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-19-notes-mode.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-19-notes-mode.jpg",
+        "bytes": 38844,
+        "sha256": "5f0499fc95e4c142c0bbcc933e1aa8e5bf320d3d533566de1106695b80944996"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "20-daughter-version",
+      "note": "Visiblealternateversiontoggle;notfullalternatejourneyreview",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-20-daughter-version.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-20-daughter-version.jpg",
+        "bytes": 38685,
+        "sha256": "a647b12ae2f2727cdb683b8c4bec387129b819546e7008cda9871be7984f0ca9"
+      }
+    },
+    {
+      "id": "HERO-013",
+      "action": "21-daughter-settled",
+      "note": "Checkboxenabled;recordlaterloadedappearancewithoutinferringfullvariant",
+      "metrics": {
+        "bodyHeight": 13474,
+        "height": 720,
+        "scrollHeight": 13474,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-013-21-daughter-settled.jpg",
+      "url": "https://format.obys.agency/",
+      "image": {
+        "path": "../hero-behavior-audit-2026-10-31/browser/HERO-013-21-daughter-settled.jpg",
+        "bytes": 46129,
+        "sha256": "d8a0e3beaa97ac49c89c70433bfb536193aa805dbd0dbf84aea9af488f74df8c"
+      }
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "HERO-013/primary.html",
+      "bytes": 97284,
+      "sha256": "ab1ddbdce66e0a2b45ab9ac88154140a30cb7f42d7e8ac7bcf1334397863a940"
+    },
+    {
+      "path": "HERO-013/primary-inspection.json",
+      "bytes": 734,
+      "sha256": "0a1eed9a229d61f31395e095cab4a1f794b6e959bf1176e8d16bc82755602d5e"
+    }
+  ],
+  "refinedSourceFlow": {
+    "component": "SourceFormatDetails.tsx",
+    "sourceSHA256": "c8118585d79a90237812c14e3196b63e42f383bbefd34a979c4457e30768a4a3",
+    "publicOverrides": 89,
+    "recipeSHA256": "42ae40bc95040f9da31c74014ae223e652ed8336de23fdf2216475f77ee81255",
+    "retainedNativeParts": 271,
+    "addedNativeParts": 310,
+    "totalNativeParts": 581,
+    "documentAt1280x720": 13474.102,
+    "scope": "Source-derived ordinary document layout separates the early Usage card, later photo deck and fan; retains the complete sequence through the footer. First-card footer remains visible during the first handoff. Genuine source logo polygons, source photos and native type controls preserve editable parts.",
+    "validation": "6 focused checks and48actualReact/Chromium checks passed in the lockedNix environment; same-width corresponding source screenshots reviewed. Actual Framer application/reload and sourceFont binding are separate required gates."
+  }
+}

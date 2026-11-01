@@ -1,0 +1,159 @@
+{
+  "id": "HERO-008",
+  "title": "PP Neue Montreal / typographic travel-guide sequence",
+  "creator": "Pangram Pangram; separate website designer unverified",
+  "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
+  "source": "https://neuemontreal.com/",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "selectedArchive": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-recreations-2026-10-31/remaining-12/sources/HERO-008-selected-full.png",
+    "sha256": "d9b5404760ab34fdbdea99345b9eb0cb552189a736c9269fe6f98d7435c67533"
+  },
+  "archiveDimensions": [
+    1920,
+    20710
+  ],
+  "sequence": [
+    {
+      "sourceImageY": [
+        0,
+        1200
+      ],
+      "composition": "Vermilion paper-grain opening, quietcapsule nav, immense black Neue/Montreal, small cityfilm aperture and spikyoutline."
+    },
+    {
+      "sourceImageY": [
+        1200,
+        3000
+      ],
+      "composition": "Black field; green/cream/gray multicolor italic poster sentence left, postcardphotography right, followedbyStory/weightcolumns and typeface-evolution rules."
+    },
+    {
+      "sourceImageY": [
+        3000,
+        4800
+      ],
+      "composition": "Large centered three-line UniversalFonttitle surroundedby angled printedphotographic specimens; sources are actual printart assets, not new paintings."
+    },
+    {
+      "sourceImageY": [
+        4800,
+        6600
+      ],
+      "composition": "Broad city-film landscape with centered white type, then colorful vertical weight/attraction columns. This is already wellbeyond the oldsingle redfold."
+    },
+    {
+      "sourceImageY": [
+        6600,
+        7800
+      ],
+      "composition": "Giant split glyph: 8 in the selected archive, with a source-supported later N state; no substituted g."
+    },
+    {
+      "sourceImageY": [
+        7800,
+        9000
+      ],
+      "composition": "Ligature circles and interleaved glyph specimens."
+    },
+    {
+      "sourceImageY": [
+        9000,
+        10500
+      ],
+      "composition": "Eighteen weight states: eleven Display and seven Text styles."
+    },
+    {
+      "sourceImageY": [
+        10500,
+        12200
+      ],
+      "composition": "Language photography and three colored accent bands."
+    },
+    {
+      "sourceImageY": [
+        12200,
+        14100
+      ],
+      "composition": "Ticket carousel and the separate punctuation film."
+    },
+    {
+      "sourceImageY": [
+        14100,
+        16500
+      ],
+      "composition": "Printed book fan and type variant carousel."
+    },
+    {
+      "sourceImageY": [
+        16500,
+        20710
+      ],
+      "composition": "Vermilion footer with source links and Demande Spéciale credit."
+    }
+  ],
+  "liveHTMLRelation": "Current public headings follow the same broad travel-guide/content order, but exact redfold overlap and current scroll transforms must not silently replace the selected archive.",
+  "actualPhotographicFilm": {
+    "url": "https://framerusercontent.com/assets/XFVX6jaxToykdjjsmM3uRB9CnPw.mp4",
+    "foundIn": "Current public primary HTML video src",
+    "motionBoundary": "The actual small city clip is H.264, 169 frames at24fps, 7.041667s and2,062,799B. The two wide Vimeo films are separate assets, not repetitions of this small loop."
+  },
+  "nativeImplementation": {
+    "art": "Keep red/black fields, editable cropped type, rules/capsule/emblem native. Photographic city/printed postcards remain credited individual image/video apertures.",
+    "interaction": "Apply only supported current-source mechanisms to the selected archived compositions: proximity, postcard state changes, attraction panels, and later split glyph. Distinguish current public-code constants from selected still observations.",
+    "scroll": "Use ordinary scroll for source sequence unless actual matching revision evidence establishes a pin/scrub. Do not invent cinematic forced waits.",
+    "sectionControllers": {
+      "core": "SourceMontrealBehaviors.tsx",
+      "glyph": "SourceMontrealGlyphFlow.tsx",
+      "proximity": "SourceTypeProximity.tsx",
+      "glyphGeometry": "Source 8-based Display/Text scales determine the pinned scene and N travel. Phone S uses a full-width container with the 8-derived height and preserveAspectRatio meet; it is not resized from the S viewBox width. Both masks split horizontally.",
+      "playback": "One owned per-window playback store controls ambient motion without disabling scroll navigation. Actual Framer compilation, variable font selection and native bindings require separate verification."
+    }
+  },
+  "remaining": [
+    "Exact boundary at which the source hero ends",
+    "Controlled matching-revision pointer sequence",
+    "Source Phone visual comparison"
+  ],
+  "pins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/primary.html",
+      "sha256": "5ad3b564c77123f34e0dc0d8f10e294d0dbda9239731988ca13858cb66d4f71e"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/archive-section-1200.png",
+      "sha256": "e2c247b56c4bc35daa644465445e62e6e61770242565b951d590a81462dc1115"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/archive-section-3000.png",
+      "sha256": "02fccfe55cc64f1fa244293844d60dfbf97b22f3e3f0ec805d37c8030141a766"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/archive-section-4800.png",
+      "sha256": "4409c88c6f22bb14d1a79e9b347fc7da2f2748e796c4e5a8df3aed8e96512b53"
+    }
+  ],
+  "completeNativePacket": {
+    "scenes": 18,
+    "editableParts": 437,
+    "individualImageOrSVGAssets": 30,
+    "sourceFonts": [
+      "PP Neue Montreal Variable",
+      "PP Neue Montreal Text Variable"
+    ],
+    "fontHandling": "The actual two source variable fonts are uploaded to the Framer workspace and verified after reload. Display supports weight100–900/italic0–1; Text supports weight200–700/italic0–1. Proprietary font bytes remain outside Git.",
+    "attractions": "Current code supports eleven panels, open4.8fr/closed1fr, 0.75s transition and 100px label column. Desktop ≥1024 uses hover/reset-first; Phone uses tap and initially closed panels.",
+    "proximity": "28 native word instances with independent letter weight, source weight400→900 over 20px Euclidean proximity; useful defaults and current public-code facts, not a verified historical pointer trajectory."
+  },
+  "wideFilms": [
+    {
+      "id": "1189166135",
+      "role": "Pont Louis-H.-La Fontaine landscape film"
+    },
+    {
+      "id": "1188502875",
+      "role": "Centre-ville punctuation film"
+    }
+  ]
+}

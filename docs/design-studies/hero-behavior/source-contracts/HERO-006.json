@@ -1,0 +1,76 @@
+{
+  "id": "HERO-006",
+  "title": "Mac Moss Studio / complete atlas opening",
+  "creator": "Mac Moss / mm.s",
+  "gallery": "https://www.siteinspire.com/website/13575-mac-moss-studio",
+  "source": "https://macmoss.studio/",
+  "projectSource": "https://macmoss.studio/KEEN-2",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "layout": {
+    "source1280": "Fixed-looking white studio rail400px (~31.25%viewport) left; working surface on right, small editorial description, full4×5 atlas~408.84×511.06 adjacent runnerphoto of equalextent. Preserve irregular source wordmark as credited asset or actual native geometry, not plain type.",
+    "phone": "Earlier selected phone gallery is the authority; all20cells must stay4×5 when compact. Do not spread cells into20independentpages or collapse to4."
+  },
+  "sequence": {
+    "confirmed": "Retained source Comp_3.gif has changing symbols; independently sampled125vectorframes at12fps, all20sourcecells recreated. This is a sampled timed source loop, not a verified pointer-driven simulation.",
+    "nativeHandoff": "Complete source working surface: the 20-cell atlas and runner, followed by the genuine Eco-End film, a printed pair, then the manual four-photo sequence. Keep the studio identity and source project links native.",
+    "sourceHTML": "Current primary includes Comp_3.gif and Eco-End-Horizontal-1.gif plus source logo; Cargo embeds a broad project inventory. A media URL inside the inventory alone does not establish its position immediately after the KEEN opening.",
+    "currentPublicFacts": {
+      "basis": "Current public HTML/CSS and media inspection, distinct from historical input observation.",
+      "rail": "Fixed studio panel: 32% viewport width, 1.7rem padding; hidden on Phone.",
+      "photos": "Four genuine source photos, next/previous selection, wrapping order, two-photo 0.5s slide. No invented autoplay.",
+      "clock": "Updating local HH:mm:ss. Source timezone is unresolved; do not label the browser-local clock as Idaho time."
+    }
+  },
+  "media": [
+    {
+      "url": "https://freight.cargo.site/t/original/i/81dd87c128fc877b78044d4d682b842dc5069b0944eacbd16a736f5bf368b9d9/logo-mms-01.png",
+      "role": "Actual irregular studio wordmark"
+    },
+    {
+      "url": "https://freight.cargo.site/t/original/i/5732872bad15333bc9e3bc11d89a41fc7fd43fc32779f7d24c2675d4a42e6acd/Comp_3.gif",
+      "role": "Actual full20sourceatlas"
+    },
+    {
+      "url": "https://freight.cargo.site/t/original/i/bb46f0eafba18345c8aabaa6a2c1ee9b67d734fccf459ab81a00993e2c50c7b2/keen-icon-lockup.png",
+      "role": "KEEN source project material"
+    },
+    {
+      "url": "https://freight.cargo.site/t/original/i/e8646611dd1db9ef367526c34a10b084208aec0941e42ea0e67712a99034cae1/Eco-End-Horizontal-1.gif",
+      "role": "Genuine Eco-End source animation, identified in the complete retained source sequence"
+    },
+    {
+      "url": "https://freight.cargo.site/t/original/i/3d9a193d6f3d9d995ca79210b7a7138a36a3cff61f87169e0b9d0a71f14ff4fc/keen-logo-paths.jpg",
+      "role": "KEEN source project material"
+    },
+    {
+      "url": "https://freight.cargo.site/t/original/i/682aab468e1c16b3ae2e15663a5a117657c5f93691901d18534c11628bd8815e/keen-signs.jpg",
+      "role": "KEEN source project material"
+    }
+  ],
+  "nextImplementation": [
+    "Preserve the full 20-cell code atlas and source-timed changes.",
+    "Keep the complete native working surface, original studio logo and actual runner/project images.",
+    "Use the genuine 107-frame VFR Eco-End film and its first-frame poster, then printed pair and four-image manual gallery.",
+    "Native Next/Previous controls must respond to Framer onTap as well as keyboard."
+  ],
+  "remaining": [
+    "Exact historical source timezone",
+    "Project-navigation transition",
+    "Actual matching-revision Phone interactions"
+  ],
+  "pins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-006/primary.html",
+      "sha256": "8b589d7867643a4a2ec523889b35c4fbcd790a08aa84b18748984e75bdf12d9d"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-006/keen.html",
+      "sha256": "f3a14a854ccb50d956aad3f632e25ebc0222b509e935295caba916e5f6b8643d"
+    }
+  ],
+  "mediaAdaptations": {
+    "photos": "Four source photographs resized to 2560px for loading; individual assets remain credited.",
+    "film": "107 original animation frames retained as VFR video; measured SSIM 0.988038 and a 10ms final-duration difference, explicitly recorded as a loading adaptation."
+  }
+}

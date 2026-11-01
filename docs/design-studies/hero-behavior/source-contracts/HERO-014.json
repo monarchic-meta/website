@@ -1,0 +1,52 @@
+{
+  "id": "HERO-014",
+  "title": "Unbelievably Crap",
+  "creator": "Liubomyr Ulytskyi",
+  "gallery": "https://www.awwwards.com/sites/unbelievably-crap",
+  "source": "https://www.unbelievablycrap.com/",
+  "classification": "Source inspiration / credited virtual-scroll recreation",
+  "evidenceBoundary": "Root browser observed the changing full-screen virtual scene sequence through the terminal red scene while the document stayed at scroll offset zero. Source body/head geometry was inspected separately. Camera/input curves and source Phone states were not completely measured.",
+  "presentation": {
+    "type": "Bounded reversible virtual wheel/touch/key journey, with ambient motion paused independently of navigation.",
+    "documentScrollY": 0
+  },
+  "phases": [
+    "Black scene with full figure",
+    "Biographical columns and figure",
+    "Torn white surface transition",
+    "White scene with red actual-source head",
+    "Red reveal",
+    "Terminal red composition"
+  ],
+  "geometry": {
+    "bodySource": "https://www.unbelievablycrap.com/assets/about/figure.js",
+    "bodyReduction": {
+      "vertices": 29807,
+      "faces": 62174
+    },
+    "head": {
+      "vertices": 17335,
+      "faces": 35000
+    },
+    "upstreamLicense": "Unverified; source-credited unpublished prototype, no asset-rights claim.",
+    "provenance": "../../code-components/assets/source-hero-journey-provenance.json"
+  },
+  "authoring": {
+    "file": "../../code-components/SourceHeroJourneyStudy.tsx",
+    "supportFiles": [
+      "../../code-components/SourceHeroJourneyData0.ts",
+      "../../code-components/SourceHeroJourneyData1.ts"
+    ],
+    "canvasMotion": false,
+    "posterProgress": 0,
+    "startProgress": 0,
+    "inputTravel": 6400,
+    "pointerStrength": 0
+  },
+  "remainingFidelityGaps": [
+    "Input travel, pose interpolation, ground material and projected writing are independent approximations.",
+    "Biography is independently authored substitute text.",
+    "Phone is an independent adaptation, not an observed original layout.",
+    "Actual Framer persistence, controls and visual comparisons remain separate from isolated React/WebGL checks."
+  ]
+}

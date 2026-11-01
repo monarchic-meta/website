@@ -1,0 +1,57 @@
+{
+  "id": "HERO-001",
+  "title": "Type Face",
+  "creator": "Stephen Kelman",
+  "gallery": "https://recent.design/i/vmmug5r-type-face",
+  "source": "https://x.com/stephenkelman/status/2093335231604367454",
+  "classification": "Source inspiration / credited motion-work recreation",
+  "evidence": {
+    "kind": "Retained source film; complete duration sampled at approximately 0.4-second intervals, with full-size resolved-frame comparison.",
+    "durationSeconds": 9.6,
+    "width": 720,
+    "height": 720,
+    "fps": 30,
+    "audio": false,
+    "sha256": "c31b1705d0bed90fd0e1e1133953053c0ec07ae68280396da1171f0888512c7b",
+    "sessionArtifact": "hero-journeys-2026-11-01/source-media-review.json"
+  },
+  "presentation": {
+    "type": "Recorded square motion work; no independent interactive website was supplied.",
+    "input": "Elapsed playback, pause and replay; do not invent scrolling or pointer deformation."
+  },
+  "phases": [
+    {
+      "seconds": [
+        0,
+        2.1
+      ],
+      "visual": "Sparse writing assembles into the surface."
+    },
+    {
+      "seconds": [
+        2.1,
+        7
+      ],
+      "visual": "Resolved written head turns."
+    },
+    {
+      "seconds": [
+        7,
+        9.6
+      ],
+      "visual": "Writing disperses into sparse patches before the loop."
+    }
+  ],
+  "authoring": {
+    "file": "../../code-components/TypeFaceSequence.tsx",
+    "posterTime": 2.4,
+    "canvasMotion": false,
+    "previewStartsAt": 0,
+    "scope": "Independently authored timing, surface writing and projection fitted to retained source frames."
+  },
+  "remainingFidelityGaps": [
+    "The source subject mesh, font and exact writing are unavailable. The recreation uses the credited Lee Perry-Smith CC BY 3.0 head, Georgia and public-domain Shakespeare text.",
+    "Phase boundaries and rotation are visually fitted approximations, not recovered original parameters.",
+    "Framer reload and actual Preview checks remain separate from renderer tests."
+  ]
+}

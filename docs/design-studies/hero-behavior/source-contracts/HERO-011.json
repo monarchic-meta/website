@@ -1,0 +1,72 @@
+{
+  "id": "HERO-011",
+  "title": "Jon Way Studio / selected2023editorial workspace",
+  "creator": "Jon Way",
+  "gallery": "https://httpster.net/website/jon-way-studio/",
+  "source": "https://www.jonway.studio/",
+  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
+  "selectedArchive": {
+    "url": "https://httpster.net/assets/media/z1/jonway.studio-1-Z1uCI0E.webp",
+    "capture": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-recreations-2026-10-31/remaining-12/sources/HERO-011-selected.png",
+      "sha256": "12326c8f901ce8522ee222bf2e58ece7aa983bf8783511017054ad59e33aa255"
+    },
+    "date": "2023-03-31"
+  },
+  "nativeComposition": "Two contrasting project panels (black awards grid and pale photographic poster), a central overlapping JW.S identity/index sheet, hairline rules, numbered rows, registration marks and the Navigate/Explore control. The genuine poster remains a credited individual image aperture; surrounding UI remains native and editable.",
+  "currentRevision": "Current primaryHTML contains JonWay/Stradisidentity and202imageURLs plus a contemporarymotionruntime. The earlier narrowbrowserobservation saw a sparseblackholdingpresentation, not proof that the entirecurrentpage hasno gallery. Neither currentruntime nor assets establish2023Navigate/Explore behavior.",
+  "interactionPlan": "Do not silently substitute currentStradisgallery for selected2023composition. A native Navigate/Explore switch could be independently authored from the visible affordance, but its exact effect must be labeledunverified/adapted. Sourcearchiveimage alone cannot specify scroll/hover transformations.",
+  "remaining": [
+    "Matching2023recordingorarchivedinteractivepage",
+    "Navigate/Exploreactualeffect",
+    "Portfoliohover/drag/scrollmechanism",
+    "End/handoff"
+  ],
+  "pins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-011/primary.html",
+      "sha256": "a9dbf9b3cae3867d083d5333a9f2bfee56d6944102f5e6aa39aaf58ba77cd2cf"
+    }
+  ],
+  "additionalPrimaryEvidence": {
+    "url": "https://dribbble.com/shots/20550365-JWS-2023-Beta-1-0",
+    "author": "Jon Way",
+    "title": "JWS® (2023) Beta 1.0",
+    "inspected": "2026-11-01",
+    "supports": "The author describes an Explore catalog searchable by tags and metadata, recurring recommended tags, and tag-page interconnection diagrams. This confirms an exploratory catalog beyond the archived opening.",
+    "boundary": "This primary write-up does not establish the exact selected opening animation, Navigate control transition, scroll trajectory or complete visual handoff. Do not fabricate these from the prose."
+  },
+  "savedGeometryRefinement": {
+    "selectedViewport": [
+      1280,
+      720
+    ],
+    "nativeStage": [
+      1440,
+      810
+    ],
+    "scale": 1.125,
+    "panels": {
+      "left": [
+        136.125,
+        166.5,
+        525.375,
+        568.125
+      ],
+      "right": [
+        765,
+        166.5,
+        525.375,
+        568.125
+      ]
+    },
+    "identitySheet": [
+      499.5,
+      302.625,
+      427.5,
+      284.625
+    ],
+    "boundary": "Native fields read back after saving; actual Preview/source comparison is a separate gate. Phone remains an independent adaptation. Historical interactions remain unverified."
+  }
+}

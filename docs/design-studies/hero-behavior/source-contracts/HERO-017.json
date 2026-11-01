@@ -1,0 +1,254 @@
+{
+  "id": "HERO-017",
+  "title": "Bleibtgleich2026 / identity, fluid reveal and native project field",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+  "sequence": {
+    "entry": "The actual organic95×160 source mark and white opening sit above an asymmetric name/service composition. The mark is a2D vector asset, not an animated3D head. Native name starts at488.875,359.4375 in the observed1280×720 view.",
+    "forward": "Full source document5892px. Intro is1913.515625px, followed by the1531.546875px Work section. Its647.109375px square project field starts at document2471.921875px. Preserve the full identity and execution statement before that Work handoff.",
+    "input": "Pointer movement reveals the four-picture orbit behind a white fluid mask. Source public code supports an actual sixteen-plane project belt with drag, hover, pin and scroll-unpin. An earlier mark-area drag alone did not isolate time versus pointer causality."
+  },
+  "nativeAuthoring": [
+    "Use the exact source SVG mark, native type, rule and two-state three-card menu. Preserve the measured asymmetric name/service layout.",
+    "Keep four actual source assets in the separate opening orbit/reveal; preserve all sixteen genuine project image placements in the following field, including repeated WIP artwork.",
+    "Work24–26 has a sticky width expansion/contraction around the field and switches to AllWorks at the terminal point. At observed1280×720 scroll2160 its width is785px and visual top324.796875px.",
+    "Source mask simulation isWebGL2 and source project field isThree/WebGL. Independent CPU-mask/CSS3D replacements remain declared approximations; exact final mark-vector parity is a separate, narrower result."
+  ],
+  "phone": "Source Phone behavior remains unobserved. Native Phone is explicitly adapted; no source-fidelity claim for that layout.",
+  "unknown": [
+    "Selected-archive original timing versus current public-code timings",
+    "Original fluid material/pixel parity with the independent CPU implementation",
+    "Exact source interpolation of hover/pin/reveal versus the independent CSS3D fit",
+    "Source Phone, touch and reduced-motion appearance",
+    "Full source Awards/footer beyond the hero-to-Work handoff"
+  ],
+  "classification": "SOURCE INSPIRATION / BEHAVIOR ITERATION CONTRACT",
+  "browserEvidence": "Parent root actual retained actions/captures; no new agent browser access.",
+  "evidence": [
+    {
+      "id": "HERO-017",
+      "action": "01-entry",
+      "note": "Currentliveentrancebeforegesture",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-01-entry.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-01-entry.jpg",
+        "sha256": "845d7c2e5d0683c3a81e95184c3336b999a86fe103c0c38364f294c5717599a2"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "02-loaded-entry",
+      "note": "Afterinitialpageassets;noinputyet",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-02-loaded-entry.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-02-loaded-entry.jpg",
+        "sha256": "845d7c2e5d0683c3a81e95184c3336b999a86fe103c0c38364f294c5717599a2"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "03-scroll-test",
+      "note": "Oneviewportinputfromblankentrance;do notclaimloadedbehaviorifstillblank",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 697,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-03-scroll-test.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-03-scroll-test.jpg",
+        "sha256": "cf40e4049b5e125a8b1aeef05af28fc9b57ff27a7bc7486b9e0b2ac36ba5ad66"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "04-top-loaded",
+      "note": "Reversetoentryaftervisiblecontentappeared",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-04-top-loaded.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-04-top-loaded.jpg",
+        "sha256": "41944590f2f0a36006b2454c5a35aab876229d681693c2b1381cf66ead51b964"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "05-pointer-drag",
+      "note": "Dragfromvisibleblackmasktowardright;donotinferplainhoverfromdrag",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 0,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-05-pointer-drag.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-05-pointer-drag.jpg",
+        "sha256": "2e191d54f77a7ac1c66fc630186d5e1a4b1a75f570ab03eca51372e3d78710eb"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "06-scroll",
+      "note": "Trackheroexitandworkhandoffwithoneviewportsteps",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 700,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-06-scroll.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-06-scroll.jpg",
+        "sha256": "e5f7a8520f8297c981c7598349470b511f59e8acce87196c54255f1b3e81bc11"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "07-scroll",
+      "note": "Trackheroexitandworkhandoffwithoneviewportsteps",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 1439,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-07-scroll.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-07-scroll.jpg",
+        "sha256": "6492b1630ea26013a24adb5278606994bb45f51b605a0ab31312013b94b7bdb3"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "08-scroll",
+      "note": "Trackheroexitandworkhandoffwithoneviewportsteps",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 2113,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-08-scroll.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-08-scroll.jpg",
+        "sha256": "b732626332684960ec8b2f62ab7334bfd56b2a343da49ff6362d1de25aa02404"
+      }
+    },
+    {
+      "id": "HERO-017",
+      "action": "09-scroll",
+      "note": "Trackheroexitandworkhandoffwithoneviewportsteps",
+      "metrics": {
+        "bodyHeight": 5892,
+        "height": 720,
+        "scrollHeight": 5892,
+        "scrollY": 2823,
+        "width": 1280
+      },
+      "screenshot": "HERO-017-09-scroll.jpg",
+      "url": "https://bleibtgleich.dev/",
+      "screenshotPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-audit-2026-10-31/browser/HERO-017-09-scroll.jpg",
+        "sha256": "9f4de47a25b43a739267af77813219b96faa13c373738d8162347d41b18e58e3"
+      }
+    }
+  ],
+  "sourceCodeFacts": {
+    "url": "https://assets.slater.app/slater/20419/62015.js?v=629877",
+    "sha256": "8b3779792648bf2aadd5b5e0c0bda61037e3183ea2a60001ba15719a5e0e2b17",
+    "scope": "Read-only current public-code inspection, not imported/reused code or direct observation of every behavior.",
+    "mark": {
+      "viewBox": [
+        0,
+        0,
+        95,
+        160
+      ],
+      "rectangleRevealSeconds": 0.8,
+      "morphSeconds": 1.2,
+      "ease": "cubic-bezier(.25,1,.5,1)"
+    },
+    "opening": {
+      "pictures": 4,
+      "orbitSeconds": 24,
+      "advanceSeconds": 2.5,
+      "advanceStaggerSeconds": 0.075
+    },
+    "projectField": {
+      "pictures": 16,
+      "uniqueArtwork": 13,
+      "fibonacciCandidates": 40,
+      "beltAbsY": 0.55,
+      "radius": 1.85,
+      "planeWidth": 0.4,
+      "cameraFovDegrees": 48,
+      "autoRadiansPer60HzFrame": 0.003,
+      "pinScale": 3.2,
+      "dragVelocityCap": 0.11
+    }
+  },
+  "currentSourceFont": {
+    "family": "Akzidenz Grotesk Pro",
+    "weight": 500,
+    "size": 80,
+    "lineHeight": 70.4,
+    "substitution": "Native Arial is explicit until the actual family is assigned."
+  },
+  "sourceMark": {
+    "path": "../assets/HERO-017-mark.svg",
+    "sha256": "be391475e4e35a06958a13ef6ead6d14c63f569872e31eebeb8ea3953365a382",
+    "creator": "Maksym Bleibtgleich",
+    "license": "Unverified; credited unpublished prototype"
+  },
+  "sourceInspectionSupplement": {
+    "archive": "hero-journeys-2026-11-01",
+    "geometry": "HERO-017-public-native-geometry.json",
+    "detail": "HERO-017-public-native-detail.json",
+    "field": "HERO-017-public-project-field.json",
+    "imageDimensions": "HERO-017-public-project-dimensions.json",
+    "menu": "HERO-017-menu-observed.json",
+    "captures": [
+      "browser/HERO-017-2026-current-entry.png",
+      "browser/HERO-017-2026-menu.png",
+      "browser/HERO-017-2026-midhero.png",
+      "browser/HERO-017-2026-workfield.png"
+    ]
+  },
+  "validationBoundary": "Only the completed mark endpoint has verified0-channel source-vector raster difference. Local actor interaction and geometry checks do not establish full source fidelity or saved Framer behavior."
+}

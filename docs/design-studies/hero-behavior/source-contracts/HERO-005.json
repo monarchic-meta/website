@@ -1,0 +1,234 @@
+{
+  "id": "HERO-005",
+  "title": "Maximilian Kaspar / ASCII opening",
+  "creator": "Maximilian Kaspar",
+  "gallery": "https://www.siteinspire.com/website/13623-maximilian-kaspar",
+  "source": "https://www.maximiliankaspar.com/",
+  "evidenceBoundary": "Selected gallery and prior captures establish layout. Current public iframe/asset inspection establishes implementation facts only; this is not a new visual browser interaction audit.",
+  "revision": {
+    "selected": "Swiss-based statement with open-for-new-position wording.",
+    "current": "Working-at-stuiq wording. Keep selected wording/layout as selected archive; identify current renderer mechanics as current-source-supported adaptation."
+  },
+  "layout": {
+    "native": "Preserve the existing asymmetric huge left statement, ruled grid and center pale glyph field. The ASCII graphic is a 3D surface projection, not a cartoon head or static hand-drawn branch.",
+    "artViewer": "https://maximiliankaspar.github.io/ascii-animation/",
+    "rendererMaterial": {
+      "background": "#ffffff",
+      "glyph": "#ADADAD",
+      "font": "Courier New / monospace",
+      "characters": " .:-=+*1#%@0$!*",
+      "sourceCamera": {
+        "fov": 4.5,
+        "position": [
+          0,
+          100,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "lookAt": [
+          0,
+          0,
+          0
+        ]
+      },
+      "sourceInitialization": {
+        "viewportWidthFactor": 1.1,
+        "heightFactor": 1,
+        "domDelayMs": 1000,
+        "geometryReadyVisibilityDelayMs": 300
+      },
+      "sourceResolution": {
+        "desktop": 0.2,
+        "mobile": 0.25
+      },
+      "limits": "Actual subject choice and source initial random selection are not matched to the gallery frame yet."
+    }
+  },
+  "sequence": {
+    "implementationFacts": [
+      "One of seven imported STL models is selected randomly on load.",
+      "Geometry centers x/y and shifts z by minZ+height/1.7, then rotates x byπ.",
+      "A clipping plane reveals the loaded geometry over about1second after it becomes visible.",
+      "After loading, rotation.z advances .002per requestAnimationFrame. This is frame-rate-dependent source behavior, not a measured fixed angular speed.",
+      "No pointer controller appears in the actual ASCII viewer application tail; primary-page cursor/gallery effects must not be attributed to the mesh."
+    ],
+    "observed": "Source gallery still only; continuous viewer reveal/rotation was not newly browser-observed.",
+    "handoff": "Primary HTML includes a scroll-down cue and subsequent Projects section. The exact fade/overlap/handoff choreography and source Phone states remain unobserved."
+  },
+  "assets": [
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model4.8092bd51.stl",
+      "name": "2CaWZ-source-model.stl",
+      "status": 200,
+      "bytes": 20855684,
+      "sha256": "807fb31f20786d5e8239ba47264dc24245e2de5d09477cf968b5650fac414b29",
+      "triangles": 417112,
+      "binaryLengthExact": true,
+      "min": [
+        -4.303471565246582,
+        -3.456033229827881,
+        -4.318202018737793
+      ],
+      "max": [
+        4.260329246520996,
+        3.456033229827881,
+        4.318202018737793
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model3.04497f78.stl",
+      "name": "4cm2x-source-model.stl",
+      "status": 200,
+      "bytes": 18591184,
+      "sha256": "8b643da2f902f9d156c605f029ef695dd14bf565169c869e4eac1266d000a6a7",
+      "triangles": 371822,
+      "binaryLengthExact": true,
+      "min": [
+        -2.5883781909942627,
+        -2.637295722961426,
+        -3.89005970954895
+      ],
+      "max": [
+        2.454103708267212,
+        2.334895133972168,
+        4.746344089508057
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model5.4e5e173c.stl",
+      "name": "arGbA-source-model.stl",
+      "status": 200,
+      "bytes": 11900084,
+      "sha256": "b970f449ce8ca180d853dd2fb5a012603365a879e58b2a930967b284c4a930bc",
+      "triangles": 238000,
+      "binaryLengthExact": true,
+      "min": [
+        -4.065314769744873,
+        -2.301703929901123,
+        -4.931085586547852
+      ],
+      "max": [
+        3.653381109237671,
+        2.0917296409606934,
+        3.7053184509277344
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model7.df00ba67.stl",
+      "name": "bBnFJ-source-model.stl",
+      "status": 200,
+      "bytes": 5736884,
+      "sha256": "21fe76dcb5d9853c5b06cb1661bef7c7df501d966be03edc3dfd096e47129e59",
+      "triangles": 114736,
+      "binaryLengthExact": true,
+      "min": [
+        -4.204934597015381,
+        -1.5734022855758667,
+        -4.338305950164795
+      ],
+      "max": [
+        2.1901564598083496,
+        2.1855828762054443,
+        4.298098087310791
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model2.b4c7a5a2.stl",
+      "name": "cLUCU-source-model.stl",
+      "status": 200,
+      "bytes": 20302284,
+      "sha256": "413bedbe0fc1e9647ae0a844c826b66dd937bbe0d28c1265f8f91c8a1e04a600",
+      "triangles": 406044,
+      "binaryLengthExact": true,
+      "min": [
+        -4.615790843963623,
+        -2.196716785430908,
+        -4.318202018737793
+      ],
+      "max": [
+        3.102905035018921,
+        2.196716785430908,
+        4.318202018737793
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model8.ffe6b519.stl",
+      "name": "g1dJX-source-model.stl",
+      "status": 200,
+      "bytes": 12789684,
+      "sha256": "0183281c138514bff66dc6c07db29bb1dbe6a44148ec46a2529e9f8ee37297cf",
+      "triangles": 255792,
+      "binaryLengthExact": true,
+      "min": [
+        -3.068681001663208,
+        -4.0673041343688965,
+        -4.8975911140441895
+      ],
+      "max": [
+        2.7586476802825928,
+        2.319120168685913,
+        3.7388126850128174
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    },
+    {
+      "id": "HERO-005",
+      "url": "https://maximiliankaspar.github.io/ascii-animation/model6.b9b49eee.stl",
+      "name": "kuZQl-source-model.stl",
+      "status": 200,
+      "bytes": 5805384,
+      "sha256": "fbf1a3285ded57b7af88e51d1edcd41b116bd7bfe05adce53a01d86ef122fc14",
+      "triangles": 116106,
+      "binaryLengthExact": true,
+      "min": [
+        -3.897825241088867,
+        -1.788502812385559,
+        -3.6866326332092285
+      ],
+      "max": [
+        3.800905227661133,
+        0.26969003677368164,
+        4.949771404266357
+      ],
+      "license": "Unverified source mesh/object license and upstream authorship; do not assert original geometry authorship or rights."
+    }
+  ],
+  "nativeImplementation": {
+    "editable": "Statement/grid/header/scroll cue/project handoff remain native.",
+    "procedural": "New independently authored ASCII rasterizer can consume a credited actual source STL, with bounded simplification/quantization measured before upload. Do not copy the original renderer JS.",
+    "performance": "STLs total about96MB and up417112triangles each. Do not embed all seven raw assets blindly; identify the selected gallery subject, then simplify/pack a bounded asset or explicitly label a smaller source-supported selection."
+  },
+  "inspectionPins": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/primary.html",
+      "sha256": "85caa1b69c07ac0e9b52a32bd4c6139bbb35ccf726537e65e4eb5f3098bae456"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/ascii-primary.html",
+      "sha256": "5d28b783390b18bbc1590450ed633b5a432d57d400fe1b0fa7a457bebf90428f"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/ascii-renderer-inspection-only.js",
+      "sha256": "5e33375ed13cfa54b2efc48685e5b713c4402411567f38276038d29ac33b29c4"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/model-metadata.json",
+      "sha256": "45ae030d4af12562688da3fd6a3323122ce8fa21820b15a6c1f7f5d10f24cfa5"
+    }
+  ]
+}
