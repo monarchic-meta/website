@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "id": "OH-004",
+  "title": "Room for systems",
+  "creator": "Monarchic / independently composed layout and procedural artwork",
+  "classification": "ORIGINAL COMPOSITION",
+  "family": "Evolving geometric identity",
+  "familyOrder": 2,
+  "familyPage": "Geometric identity",
+  "order": 4,
+  "mode": "fold",
+  "background": "#2139ee",
+  "width": 1200,
+  "height": 850,
+  "phone": {
+    "width": 351,
+    "height": 700,
+    "layout": "Explicit native overrides; no uniform scaling."
+  },
+  "note": "An original pale folded solid is intersected by a native acid title plane at −12°. The reading sequence runs from an upright opening into the oblique cut, joining type and geometry instead of separating them into columns. Original visual metaphor; no operational data or results.",
+  "composition": {
+    "mechanism": "An original pale folded solid is intersected by a native acid title plane at −12°. The reading sequence runs from an upright opening into the oblique cut, joining type and geometry instead of separating them into columns.",
+    "independence": "No external symbol, measured apparatus, wordmark or source layout is imported. The independently composed diagonal native plane intentionally intersects the original fold.",
+    "fullOpening": true,
+    "boundedImageCard": false,
+    "header": "Quiet native brand/R&D orientation with existing product and research links; full navigation interactions are outside this opening study.",
+    "banner": "Selected existing development/research examples; no latest-release or recency claim.",
+    "scroll": "Normal page flow continues after identity; no capture, forced wait or mandatory animation completion."
+  },
+  "influences": [
+    {
+      "id": "HERO-006",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-010",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-016",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    }
+  ],
+  "artwork": {
+    "sourcePath": "docs/design-studies/code-components/OriginalHeroStudy.tsx",
+    "slotKey": "live-art",
+    "mode": "fold",
+    "desktop": {
+      "x": 120,
+      "y": 112,
+      "width": 960,
+      "height": 600
+    },
+    "phone": {
+      "x": 0,
+      "y": 104,
+      "width": 351,
+      "height": 440
+    },
+    "backgroundMatchesStage": true,
+    "palette": {
+      "background": "#2139ee",
+      "primary": "#eceee1",
+      "ink": "#101312",
+      "accent": "#d9ff72"
+    },
+    "quietZones": {
+      "desktop": [
+        {
+          "x": 0,
+          "y": 20,
+          "width": 800,
+          "height": 135
+        }
+      ],
+      "phone": [
+        {
+          "x": 0,
+          "y": 25,
+          "width": 351,
+          "height": 123
+        }
+      ]
+    },
+    "focalDirection": "Strong diagonal fold, deliberately crossed by the native acid reading plane. Preserve the exposed upper tip and lower sweep; no separate two-column image box.",
+    "instanceProps": {
+      "study": "fold",
+      "animate": true,
+      "canvasMotion": false,
+      "speed": 1,
+      "stillTime": 3,
+      "artworkScale": 1,
+      "detail": 1,
+      "motionSpan": 1,
+      "ditherPitch": 3.5,
+      "interactive": true,
+      "customColors": true,
+      "background": "#2139ee",
+      "primary": "#eceee1",
+      "ink": "#101312",
+      "accent": "#d9ff72",
+      "showPlayback": true
+    },
+    "playbackControlBay": {
+      "desktop": {
+        "x": 840,
+        "y": 8,
+        "width": 118,
+        "height": 32
+      },
+      "phone": {
+        "x": 272,
+        "y": 8,
+        "width": 76,
+        "height": 30
+      },
+      "position": "top-right within the artwork; native text boxes keep this area clear"
+    },
+    "sourceSHA256": "0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341",
+    "sourceBytes": 54090
+  },
+  "nativeCopy": {
+    "headlines": [
+      "Room for",
+      "better systems."
+    ],
+    "purpose": "Independent research and development\nfor AI systems.",
+    "primaryCTA": {
+      "text": "Explore our work ↗",
+      "href": "https://www.monarchic.io/products"
+    },
+    "rdBanner": {
+      "development": {
+        "text": "Development / RepoIntel ↗",
+        "href": "https://www.monarchic.io/products/mcp-repointel"
+      },
+      "research": {
+        "text": "Research / ExplicitMem ↗",
+        "href": "https://www.monarchic.io/research/explicitmem"
+      }
+    }
+  },
+  "reviewFooter": {
+    "classification": "ORIGINAL COMPOSITION / EVOLVING GEOMETRIC IDENTITY",
+    "title": "OH-004 / Room for systems",
+    "influences": "Mechanism influences: HERO-006, HERO-010, HERO-016. Independently composed geometry, material and layout.",
+    "limits": "Original visual metaphor. No live operations, invented results, measurement data, papers or source asset replicas. Native copy/layout separate from code-generated art."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "opening-ground",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / opening ground",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1200px",
+        "height": "850px",
+        "fill": "#2139ee"
+      },
+      "phone": {
+        "width": "351px",
+        "height": "700px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "brand",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / brand",
+        "position": "absolute",
+        "left": "40px",
+        "top": "24px",
+        "width": "230px",
+        "height": "auto",
+        "text": "MONARCHIC",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "fontWeight": 700,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.045em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "18px",
+        "width": "170px",
+        "fontSize": "18px",
+        "lineHeight": "24px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rd-orientation",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / rd orientation",
+        "position": "absolute",
+        "left": "302px",
+        "top": "29px",
+        "width": "490px",
+        "height": "auto",
+        "text": "RESEARCH & DEVELOPMENT",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#c1c6e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "187px",
+        "top": "21px",
+        "width": "148px",
+        "fontSize": "9px",
+        "lineHeight": "14px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "products-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / products link",
+        "position": "absolute",
+        "left": "902px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Products ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / research link",
+        "position": "absolute",
+        "left": "1044px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Research ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "header-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / header rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "67px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#5466ed"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "55px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "development-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / development banner",
+        "position": "absolute",
+        "left": "48px",
+        "top": "79px",
+        "width": "540px",
+        "height": "auto",
+        "text": "Development / RepoIntel ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#c1c6e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products/mcp-repointel"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "65px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / research banner",
+        "position": "absolute",
+        "left": "650px",
+        "top": "79px",
+        "width": "530px",
+        "height": "auto",
+        "text": "Research / ExplicitMem ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#c1c6e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research/explicitmem"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "84px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "banner-divider",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / banner divider",
+        "position": "absolute",
+        "left": "610px",
+        "top": "78px",
+        "width": "1px",
+        "height": "20px",
+        "fill": "#5466ed"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "LiveArtSlot",
+      "key": "live-art",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / live art",
+        "position": "absolute",
+        "left": "120px",
+        "top": "112px",
+        "width": "960px",
+        "height": "600px",
+        "visible": true
+      },
+      "phone": {
+        "left": "0px",
+        "top": "104px",
+        "width": "351px",
+        "height": "440px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "acid-tab",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / acid tab",
+        "position": "absolute",
+        "left": "40px",
+        "top": "128px",
+        "width": "116px",
+        "height": "9px",
+        "fill": "#d9ff72"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "125px",
+        "width": "68px",
+        "height": "5px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "diagonal-title-plane",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / diagonal title plane",
+        "position": "absolute",
+        "left": "64px",
+        "top": "337px",
+        "width": "1080px",
+        "height": "112px",
+        "fill": "#d9ff72",
+        "rotation": "-12deg"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "headline-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / headline 1",
+        "position": "absolute",
+        "left": "70px",
+        "top": "145px",
+        "width": "900px",
+        "height": "auto",
+        "text": "Room for",
+        "fontName": "Inter",
+        "fontSize": "88px",
+        "lineHeight": "100px",
+        "fontWeight": 700,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.055em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "146px",
+        "width": "318px",
+        "fontSize": "44px",
+        "lineHeight": "47px",
+        "text": "Room for\nbetter systems."
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "headline-2",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / headline 2",
+        "position": "absolute",
+        "left": "92px",
+        "top": "343px",
+        "width": "1024px",
+        "height": "auto",
+        "text": "better systems.",
+        "fontName": "Inter",
+        "fontSize": "85px",
+        "lineHeight": "100px",
+        "fontWeight": 700,
+        "textColor": "#101312",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.055em",
+        "rotation": "-12deg"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "purpose-copy",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / purpose copy",
+        "position": "absolute",
+        "left": "64px",
+        "top": "724px",
+        "width": "670px",
+        "height": "auto",
+        "text": "Independent research and development\nfor AI systems.",
+        "fontName": "Inter",
+        "fontSize": "19px",
+        "lineHeight": "26px",
+        "fontWeight": 400,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "555px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "22px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "primary-action",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / primary action",
+        "position": "absolute",
+        "left": "875px",
+        "top": "729px",
+        "width": "318px",
+        "height": "auto",
+        "text": "Explore our work ↗",
+        "fontName": "Inter",
+        "fontSize": "18px",
+        "lineHeight": "25px",
+        "fontWeight": 500,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "624px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "23px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "action-underline",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / action underline",
+        "position": "absolute",
+        "left": "875px",
+        "top": "760px",
+        "width": "250px",
+        "height": "1px",
+        "fill": "#5466ed"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "652px",
+        "width": "160px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "normal-scroll-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / normal scroll rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "784px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#5466ed"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "670px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "normal-scroll-handoff",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-004 / normal scroll handoff",
+        "position": "absolute",
+        "left": "40px",
+        "top": "804px",
+        "width": "900px",
+        "height": "auto",
+        "text": "Start with the questions ↓",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "29px",
+        "fontWeight": 500,
+        "textColor": "#f4f3e8",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "680px",
+        "width": "315px",
+        "fontSize": "14px",
+        "lineHeight": "18px"
+      }
+    }
+  ],
+  "phoneWidth": 351,
+  "phoneHeight": 700,
+  "influenceIDs": [
+    "HERO-006",
+    "HERO-010",
+    "HERO-016"
+  ]
+}

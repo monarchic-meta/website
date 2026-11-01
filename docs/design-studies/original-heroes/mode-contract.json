@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "status": "paired-local-composition-reviewed-not-yet-Framer-saved",
+  "classification": "Original compositions",
+  "stages": {
+    "desktop": {
+      "width": 1200,
+      "height": 850,
+      "code": {
+        "x": 120,
+        "y": 112,
+        "width": 960,
+        "height": 600
+      }
+    },
+    "phone": {
+      "width": 351,
+      "height": 700,
+      "code": {
+        "x": 0,
+        "y": 104,
+        "width": 351,
+        "height": 440
+      }
+    },
+    "web": {
+      "desktopViewport": 1440,
+      "desktopStage": "centered1200px same-background opening",
+      "phoneViewport": 390,
+      "phoneStage": "responsive1fr/maxWidth351 centered; minimum12pxouterpadding"
+    }
+  },
+  "layering": "Ordered parts. LiveArtSlot is replaced by one registered code instance; later native parts overlay it. Per-part phone attrs are applied to actual inherited $originalId. No uniform scaling.",
+  "families": [
+    {
+      "order": 1,
+      "name": "Information fields",
+      "ids": [
+        "OH-001",
+        "OH-002"
+      ]
+    },
+    {
+      "order": 2,
+      "name": "Geometric identity",
+      "ids": [
+        "OH-003",
+        "OH-004"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "Research montage",
+      "ids": [
+        "OH-005",
+        "OH-006"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "Synthesis",
+      "ids": [
+        "OH-007",
+        "OH-008",
+        "OH-009"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "OH-001",
+      "mode": "counterfield",
+      "path": "native/OH-001.json",
+      "background": "#101511",
+      "focal": "Broad currents below and around the title; preserve a deep quiet upper reading interval."
+    },
+    {
+      "id": "OH-002",
+      "mode": "atlas",
+      "path": "native/OH-002.json",
+      "background": "#eee9df",
+      "focal": "Ribbon/texture occupies the upper and middle field. The broad lower identity band stays quiet."
+    },
+    {
+      "id": "OH-003",
+      "mode": "axial",
+      "path": "native/OH-003.json",
+      "background": "#dce3e4",
+      "focal": "Large monochrome owned mark at the center. Keep top and bottom edge words distinct from the mark."
+    },
+    {
+      "id": "OH-004",
+      "mode": "fold",
+      "path": "native/OH-004.json",
+      "background": "#2139ee",
+      "focal": "Strong diagonal from lower-left to upper-right; upper-left title space is carved from the field."
+    },
+    {
+      "id": "OH-005",
+      "mode": "palimpsest",
+      "path": "native/OH-005.json",
+      "background": "#e9e4d9",
+      "focal": "Separate graphic specimens cross above/below a quiet horizontal native band; no fake papers or measured charts."
+    },
+    {
+      "id": "OH-006",
+      "mode": "assemblage",
+      "path": "native/OH-006.json",
+      "background": "#ed4e35",
+      "focal": "Central diagonal arrangement with visible negative gaps; native words frame the montage rather than sit beside it."
+    },
+    {
+      "id": "OH-007",
+      "mode": "counterfold",
+      "path": "native/OH-007.json",
+      "background": "#141613",
+      "focal": "All three avenues connect around a central reading interval, leaving texture and geometry visible at its edges."
+    },
+    {
+      "id": "OH-008",
+      "mode": "indexorbit",
+      "path": "native/OH-008.json",
+      "background": "#dce2ea",
+      "focal": "A sweeping off-axis field occupies the gaps between the two native word fragments; avoid measured-ring/HUD styling."
+    },
+    {
+      "id": "OH-009",
+      "mode": "researchfield",
+      "path": "native/OH-009.json",
+      "background": "#eee9de",
+      "focal": "Strong upper graphic cluster, with a quieter lower field for a confident full-width closing statement."
+    }
+  ],
+  "scope": "Nine original openings following completed18source recreations; six family studies precede three syntheses. No source-ledgeometry/photography/results imported. Candidate composition, not production design approval.",
+  "controls": {
+    "count": 16,
+    "palettePolicy": "Every instance uses the exact16-property dictionary in recipe.artwork.instanceProps, including customColors:true and explicit4palette colors. Fresh registered schema must confirm these source defaults before placement."
+  },
+  "artworkSource": {
+    "path": "docs/design-studies/code-components/OriginalHeroStudy.tsx",
+    "sha256": "0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341",
+    "bytes": 54090
+  }
+}

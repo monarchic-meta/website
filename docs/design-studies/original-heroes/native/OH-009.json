@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "id": "OH-009",
+  "title": "A wider view",
+  "creator": "Monarchic / independently composed layout and procedural artwork",
+  "classification": "ORIGINAL COMPOSITION",
+  "family": "Synthesis",
+  "familyOrder": 4,
+  "familyPage": "Synthesis",
+  "order": 9,
+  "mode": "researchfield",
+  "background": "#eee9de",
+  "width": 1200,
+  "height": 850,
+  "phone": {
+    "width": 351,
+    "height": 700,
+    "layout": "Explicit native overrides; no uniform scaling."
+  },
+  "note": "An original changing geometric assembly carries fine information material inside an editorial field; the large native statement occupies the lower fold. Original visual metaphor; no operational data, metrics or experimental results are depicted.",
+  "composition": {
+    "mechanism": "An original changing geometric assembly carries fine information material inside an editorial field; the large native statement occupies the lower fold.",
+    "independence": "No source symbol atlas, operational diagram, tiny Origin tile or film/documents are imported; forms express inquiry as a visual metaphor.",
+    "fullOpening": true,
+    "boundedImageCard": false,
+    "header": "Quiet native brand/R&D orientation with existing product and research links; full navigation interactions are outside this opening study.",
+    "banner": "Selected existing development/research examples; no latest-release or recency claim.",
+    "scroll": "Normal page flow continues after identity; no capture, forced wait or mandatory animation completion."
+  },
+  "influences": [
+    {
+      "id": "HERO-002",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-006",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-012",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-016",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    }
+  ],
+  "artwork": {
+    "sourcePath": "docs/design-studies/code-components/OriginalHeroStudy.tsx",
+    "slotKey": "live-art",
+    "mode": "researchfield",
+    "desktop": {
+      "x": 120,
+      "y": 112,
+      "width": 960,
+      "height": 600
+    },
+    "phone": {
+      "x": 0,
+      "y": 104,
+      "width": 351,
+      "height": 440
+    },
+    "backgroundMatchesStage": true,
+    "palette": {
+      "background": "#eee9de",
+      "primary": "#191b1a",
+      "ink": "#191b1a",
+      "accent": "#c39a4d"
+    },
+    "quietZones": {
+      "desktop": [
+        {
+          "x": 0,
+          "y": 390,
+          "width": 900,
+          "height": 210
+        }
+      ],
+      "phone": [
+        {
+          "x": 0,
+          "y": 320,
+          "width": 351,
+          "height": 120
+        }
+      ]
+    },
+    "focalDirection": "Strong upper graphic cluster, with a quieter lower field for a confident full-width closing statement.",
+    "instanceProps": {
+      "study": "researchfield",
+      "animate": true,
+      "canvasMotion": false,
+      "speed": 1,
+      "stillTime": 3,
+      "artworkScale": 1,
+      "detail": 1,
+      "motionSpan": 1,
+      "ditherPitch": 3.5,
+      "interactive": true,
+      "customColors": true,
+      "background": "#eee9de",
+      "primary": "#191b1a",
+      "ink": "#191b1a",
+      "accent": "#c39a4d",
+      "showPlayback": true
+    },
+    "playbackControlBay": {
+      "desktop": {
+        "x": 840,
+        "y": 8,
+        "width": 118,
+        "height": 32
+      },
+      "phone": {
+        "x": 272,
+        "y": 8,
+        "width": 76,
+        "height": 30
+      },
+      "position": "top-right within the artwork; native text boxes keep this area clear"
+    },
+    "sourceSHA256": "0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341",
+    "sourceBytes": 54090
+  },
+  "nativeCopy": {
+    "headlines": [
+      "A wider view\nof AI systems."
+    ],
+    "purpose": "An independent research and development firm.",
+    "primaryCTA": {
+      "text": "Explore our work ↗",
+      "href": "https://www.monarchic.io/products"
+    },
+    "rdBanner": {
+      "development": {
+        "text": "Development / RepoIntel ↗",
+        "href": "https://www.monarchic.io/products/mcp-repointel"
+      },
+      "research": {
+        "text": "Research / ExplicitMem ↗",
+        "href": "https://www.monarchic.io/research/explicitmem"
+      }
+    }
+  },
+  "reviewFooter": {
+    "classification": "ORIGINAL COMPOSITION / SYNTHESIS",
+    "title": "OH-009 / A wider view",
+    "influences": "Mechanism influences: HERO-002, HERO-006, HERO-012, HERO-016. Independently composed geometry, material and layout.",
+    "limits": "Original visual metaphor. No live operations, invented results, measurement data, papers or source asset replicas. Native copy/layout separate from code-generated art."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "opening-ground",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / opening ground",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1200px",
+        "height": "850px",
+        "fill": "#eee9de"
+      },
+      "phone": {
+        "width": "351px",
+        "height": "700px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "brand",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / brand",
+        "position": "absolute",
+        "left": "40px",
+        "top": "24px",
+        "width": "230px",
+        "height": "auto",
+        "text": "MONARCHIC",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "fontWeight": 700,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.045em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "18px",
+        "width": "170px",
+        "fontSize": "18px",
+        "lineHeight": "24px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rd-orientation",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / rd orientation",
+        "position": "absolute",
+        "left": "302px",
+        "top": "29px",
+        "width": "490px",
+        "height": "auto",
+        "text": "RESEARCH & DEVELOPMENT",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#4c4c49",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "187px",
+        "top": "21px",
+        "width": "148px",
+        "fontSize": "9px",
+        "lineHeight": "14px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "products-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / products link",
+        "position": "absolute",
+        "left": "902px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Products ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / research link",
+        "position": "absolute",
+        "left": "1044px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Research ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "header-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / header rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "67px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#bbb8af"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "55px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "development-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / development banner",
+        "position": "absolute",
+        "left": "48px",
+        "top": "79px",
+        "width": "540px",
+        "height": "auto",
+        "text": "Development / RepoIntel ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#4c4c49",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products/mcp-repointel"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "65px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / research banner",
+        "position": "absolute",
+        "left": "650px",
+        "top": "79px",
+        "width": "530px",
+        "height": "auto",
+        "text": "Research / ExplicitMem ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#4c4c49",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research/explicitmem"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "84px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "banner-divider",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / banner divider",
+        "position": "absolute",
+        "left": "610px",
+        "top": "78px",
+        "width": "1px",
+        "height": "20px",
+        "fill": "#bbb8af"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "LiveArtSlot",
+      "key": "live-art",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / live art",
+        "position": "absolute",
+        "left": "120px",
+        "top": "112px",
+        "width": "960px",
+        "height": "600px",
+        "visible": true
+      },
+      "phone": {
+        "left": "0px",
+        "top": "104px",
+        "width": "351px",
+        "height": "440px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "upper-editorial-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / upper editorial rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "107px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#bbb8af"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "102px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "headline-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / headline 1",
+        "position": "absolute",
+        "left": "55px",
+        "top": "532px",
+        "width": "1080px",
+        "height": "auto",
+        "text": "A wider view\nof AI systems.",
+        "fontName": "Inter",
+        "fontSize": "78px",
+        "lineHeight": "82px",
+        "fontWeight": 700,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.055em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "440px",
+        "width": "318px",
+        "fontSize": "42px",
+        "lineHeight": "46px",
+        "text": "A wider view\nof AI systems."
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "purpose-copy",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / purpose copy",
+        "position": "absolute",
+        "left": "64px",
+        "top": "724px",
+        "width": "720px",
+        "height": "auto",
+        "text": "An independent research and development firm.",
+        "fontName": "Inter",
+        "fontSize": "19px",
+        "lineHeight": "26px",
+        "fontWeight": 400,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "555px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "22px",
+        "text": "An independent research\nand development firm."
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "primary-action",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / primary action",
+        "position": "absolute",
+        "left": "875px",
+        "top": "729px",
+        "width": "318px",
+        "height": "auto",
+        "text": "Explore our work ↗",
+        "fontName": "Inter",
+        "fontSize": "18px",
+        "lineHeight": "25px",
+        "fontWeight": 500,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "624px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "23px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "action-underline",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / action underline",
+        "position": "absolute",
+        "left": "875px",
+        "top": "760px",
+        "width": "250px",
+        "height": "1px",
+        "fill": "#bbb8af"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "652px",
+        "width": "160px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "normal-scroll-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / normal scroll rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "784px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#bbb8af"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "670px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "normal-scroll-handoff",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-009 / normal scroll handoff",
+        "position": "absolute",
+        "left": "40px",
+        "top": "804px",
+        "width": "900px",
+        "height": "auto",
+        "text": "Start with the questions ↓",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "29px",
+        "fontWeight": 500,
+        "textColor": "#191b1a",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "680px",
+        "width": "315px",
+        "fontSize": "14px",
+        "lineHeight": "18px"
+      }
+    }
+  ],
+  "phoneWidth": 351,
+  "phoneHeight": 700,
+  "influenceIDs": [
+    "HERO-002",
+    "HERO-006",
+    "HERO-012",
+    "HERO-016"
+  ]
+}

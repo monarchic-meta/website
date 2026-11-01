@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "id": "OH-002",
+  "title": "Context atlas",
+  "creator": "Monarchic / independently composed layout and procedural artwork",
+  "classification": "ORIGINAL COMPOSITION",
+  "family": "Immersive information fields",
+  "familyOrder": 1,
+  "familyPage": "Information fields",
+  "order": 2,
+  "mode": "atlas",
+  "background": "#eee9df",
+  "width": 1200,
+  "height": 850,
+  "phone": {
+    "width": 351,
+    "height": 700,
+    "layout": "Explicit native overrides; no uniform scaling."
+  },
+  "note": "A cropped cobalt data-ribbon traverses an expansive paper field; a low monumental company name anchors the moving texture. Original visual metaphor; no operational data, metrics or experimental results are depicted.",
+  "composition": {
+    "mechanism": "A cropped cobalt data-ribbon traverses an expansive paper field; a low monumental company name anchors the moving texture.",
+    "independence": "No source ASCII silhouette, typeface specimen, operational diagram, film aperture or source layout is reproduced.",
+    "fullOpening": true,
+    "boundedImageCard": false,
+    "header": "Quiet native brand/R&D orientation with existing product and research links; full navigation interactions are outside this opening study.",
+    "banner": "Selected existing development/research examples; no latest-release or recency claim.",
+    "scroll": "Normal page flow continues after identity; no capture, forced wait or mandatory animation completion."
+  },
+  "influences": [
+    {
+      "id": "HERO-005",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-008",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    },
+    {
+      "id": "HERO-012",
+      "scope": "Visual mechanism only; no external geometry, mark, source wording or recognizable composition imported."
+    }
+  ],
+  "artwork": {
+    "sourcePath": "docs/design-studies/code-components/OriginalHeroStudy.tsx",
+    "slotKey": "live-art",
+    "mode": "atlas",
+    "desktop": {
+      "x": 120,
+      "y": 112,
+      "width": 960,
+      "height": 600
+    },
+    "phone": {
+      "x": 0,
+      "y": 104,
+      "width": 351,
+      "height": 440
+    },
+    "backgroundMatchesStage": true,
+    "palette": {
+      "background": "#eee9df",
+      "primary": "#2c4df4",
+      "ink": "#171a1b",
+      "accent": "#ed5032"
+    },
+    "quietZones": {
+      "desktop": [
+        {
+          "x": 0,
+          "y": 390,
+          "width": 960,
+          "height": 210
+        }
+      ],
+      "phone": [
+        {
+          "x": 0,
+          "y": 365,
+          "width": 351,
+          "height": 75
+        }
+      ]
+    },
+    "focalDirection": "Ribbon/texture occupies the upper and middle field. The broad lower identity band stays quiet.",
+    "instanceProps": {
+      "study": "atlas",
+      "animate": true,
+      "canvasMotion": false,
+      "speed": 1,
+      "stillTime": 3,
+      "artworkScale": 1,
+      "detail": 1,
+      "motionSpan": 1,
+      "ditherPitch": 3.5,
+      "interactive": true,
+      "customColors": true,
+      "background": "#eee9df",
+      "primary": "#2c4df4",
+      "ink": "#171a1b",
+      "accent": "#ed5032",
+      "showPlayback": true
+    },
+    "playbackControlBay": {
+      "desktop": {
+        "x": 840,
+        "y": 8,
+        "width": 118,
+        "height": 32
+      },
+      "phone": {
+        "x": 272,
+        "y": 8,
+        "width": 76,
+        "height": 30
+      },
+      "position": "top-right within the artwork; native text boxes keep this area clear"
+    },
+    "sourceSHA256": "0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341",
+    "sourceBytes": 54090
+  },
+  "nativeCopy": {
+    "headlines": [
+      "MONARCHIC"
+    ],
+    "purpose": "An independent R&D firm\nworking on the systems around AI.",
+    "primaryCTA": {
+      "text": "Explore our work ↗",
+      "href": "https://www.monarchic.io/products"
+    },
+    "rdBanner": {
+      "development": {
+        "text": "Development / RepoIntel ↗",
+        "href": "https://www.monarchic.io/products/mcp-repointel"
+      },
+      "research": {
+        "text": "Research / ExplicitMem ↗",
+        "href": "https://www.monarchic.io/research/explicitmem"
+      }
+    }
+  },
+  "reviewFooter": {
+    "classification": "ORIGINAL COMPOSITION / IMMERSIVE INFORMATION FIELDS",
+    "title": "OH-002 / Context atlas",
+    "influences": "Mechanism influences: HERO-005, HERO-008, HERO-012. Independently composed geometry, material and layout.",
+    "limits": "Original visual metaphor. No live operations, invented results, measurement data, papers or source asset replicas. Native copy/layout separate from code-generated art."
+  },
+  "parts": [
+    {
+      "type": "FrameNode",
+      "key": "opening-ground",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / opening ground",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1200px",
+        "height": "850px",
+        "fill": "#eee9df"
+      },
+      "phone": {
+        "width": "351px",
+        "height": "700px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "brand",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / brand",
+        "position": "absolute",
+        "left": "40px",
+        "top": "24px",
+        "width": "230px",
+        "height": "auto",
+        "text": "MONARCHIC",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "fontWeight": 700,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.045em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "18px",
+        "width": "170px",
+        "fontSize": "18px",
+        "lineHeight": "24px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "rd-orientation",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / rd orientation",
+        "position": "absolute",
+        "left": "302px",
+        "top": "29px",
+        "width": "490px",
+        "height": "auto",
+        "text": "RESEARCH & DEVELOPMENT",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#4b4c4a",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "187px",
+        "top": "21px",
+        "width": "148px",
+        "fontSize": "9px",
+        "lineHeight": "14px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "products-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / products link",
+        "position": "absolute",
+        "left": "902px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Products ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-link",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / research link",
+        "position": "absolute",
+        "left": "1044px",
+        "top": "29px",
+        "width": "130px",
+        "height": "auto",
+        "text": "Research ↗",
+        "fontName": "Inter",
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "fontWeight": 500,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "header-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / header rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "67px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#bab7b0"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "55px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "development-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / development banner",
+        "position": "absolute",
+        "left": "48px",
+        "top": "79px",
+        "width": "540px",
+        "height": "auto",
+        "text": "Development / RepoIntel ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#4b4c4a",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products/mcp-repointel"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "65px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "research-banner",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / research banner",
+        "position": "absolute",
+        "left": "650px",
+        "top": "79px",
+        "width": "530px",
+        "height": "auto",
+        "text": "Research / ExplicitMem ↗",
+        "fontName": "Inter",
+        "fontSize": "12px",
+        "lineHeight": "18px",
+        "fontWeight": 400,
+        "textColor": "#4b4c4a",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research/explicitmem"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "84px",
+        "width": "315px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "banner-divider",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / banner divider",
+        "position": "absolute",
+        "left": "610px",
+        "top": "78px",
+        "width": "1px",
+        "height": "20px",
+        "fill": "#bab7b0"
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "type": "LiveArtSlot",
+      "key": "live-art",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / live art",
+        "position": "absolute",
+        "left": "120px",
+        "top": "112px",
+        "width": "960px",
+        "height": "600px",
+        "visible": true
+      },
+      "phone": {
+        "left": "0px",
+        "top": "104px",
+        "width": "351px",
+        "height": "440px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "identity-window",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / identity window",
+        "position": "absolute",
+        "left": "48px",
+        "top": "124px",
+        "width": "514px",
+        "height": "140px",
+        "fill": "#eee9df"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "104px",
+        "width": "252px",
+        "height": "160px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "atlas-intro",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / atlas intro",
+        "position": "absolute",
+        "left": "62px",
+        "top": "151px",
+        "width": "476px",
+        "height": "auto",
+        "text": "A wider field of inquiry.",
+        "fontName": "Inter",
+        "fontSize": "35px",
+        "lineHeight": "43px",
+        "fontWeight": 500,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.045em"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "135px",
+        "width": "230px",
+        "fontSize": "30px",
+        "lineHeight": "35px",
+        "text": "A wider field\nof inquiry."
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "atlas-purpose",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / atlas purpose",
+        "position": "absolute",
+        "left": "64px",
+        "top": "209px",
+        "width": "477px",
+        "height": "auto",
+        "text": "Independent research and development\nfor AI systems.",
+        "fontName": "Inter",
+        "fontSize": "17px",
+        "lineHeight": "24px",
+        "fontWeight": 400,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "211px",
+        "width": "230px",
+        "fontSize": "15px",
+        "lineHeight": "21px",
+        "text": "Independent R&D\nfor AI systems."
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "headline-1",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / headline 1",
+        "position": "absolute",
+        "left": "48px",
+        "top": "527px",
+        "width": "1110px",
+        "height": "auto",
+        "text": "MONARCHIC",
+        "fontName": "Inter",
+        "fontSize": "134px",
+        "lineHeight": "146px",
+        "fontWeight": 700,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "letterSpacing": "-.055em"
+      },
+      "phone": {
+        "left": "16px",
+        "top": "481px",
+        "width": "325px",
+        "fontSize": "48px",
+        "lineHeight": "59px",
+        "text": "MONARCHIC"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "purpose-copy",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / purpose copy",
+        "position": "absolute",
+        "left": "64px",
+        "top": "714px",
+        "width": "670px",
+        "height": "auto",
+        "text": "An independent R&D firm\nworking on the systems around AI.",
+        "fontName": "Inter",
+        "fontSize": "19px",
+        "lineHeight": "26px",
+        "fontWeight": 400,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "555px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "22px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "primary-action",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / primary action",
+        "position": "absolute",
+        "left": "825px",
+        "top": "666px",
+        "width": "318px",
+        "height": "auto",
+        "text": "Explore our work ↗",
+        "fontName": "Inter",
+        "fontSize": "18px",
+        "lineHeight": "25px",
+        "fontWeight": 500,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "624px",
+        "width": "315px",
+        "fontSize": "16px",
+        "lineHeight": "23px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "action-underline",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / action underline",
+        "position": "absolute",
+        "left": "825px",
+        "top": "697px",
+        "width": "250px",
+        "height": "1px",
+        "fill": "#bab7b0"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "652px",
+        "width": "160px"
+      }
+    },
+    {
+      "type": "FrameNode",
+      "key": "normal-scroll-rule",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / normal scroll rule",
+        "position": "absolute",
+        "left": "40px",
+        "top": "784px",
+        "width": "1120px",
+        "height": "1px",
+        "fill": "#bab7b0"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "670px",
+        "width": "315px"
+      }
+    },
+    {
+      "type": "RichTextNode",
+      "key": "normal-scroll-handoff",
+      "parent": "stage",
+      "attrs": {
+        "name": "OH-002 / normal scroll handoff",
+        "position": "absolute",
+        "left": "40px",
+        "top": "804px",
+        "width": "900px",
+        "height": "auto",
+        "text": "Start with the questions ↓",
+        "fontName": "Inter",
+        "fontSize": "22px",
+        "lineHeight": "29px",
+        "fontWeight": 500,
+        "textColor": "#171a1b",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "680px",
+        "width": "315px",
+        "fontSize": "14px",
+        "lineHeight": "18px"
+      }
+    }
+  ],
+  "phoneWidth": 351,
+  "phoneHeight": 700,
+  "influenceIDs": [
+    "HERO-005",
+    "HERO-008",
+    "HERO-012"
+  ]
+}
