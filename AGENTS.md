@@ -51,6 +51,15 @@
   credits and editable contents. Source inspiration spans the reference,
   recreation and source-led live-study pages; page separation does not change
   attribution or turn a recreation into an original.
+- Give each full hero experience its own regular Framer Web page. Its sequence
+  may span multiple screens or use nested or virtual scrolling. Before
+  recreating it, inspect the complete sequence, isolate input-to-state behavior
+  and identify its transition into following content. For static or recorded
+  source work, inspect its still or temporal sequence without inventing scroll
+  behavior. Keep owner-selected archive revisions distinct from current sites.
+  Use the [hero behavior audit](docs/design-inspiration/hero-behavior.md) to
+  record observed behavior, unknowns and recreation gaps. Authored rendering,
+  playback and saved-state validation remain separate from source fidelity.
 - Use self-contained Framer code components for procedural graphics, shaders,
   and motion studies when native layers would flatten the effect. Keep their
   source under `docs/design-studies/code-components`, expose useful visual

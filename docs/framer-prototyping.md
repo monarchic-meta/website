@@ -73,12 +73,24 @@ the eighteen source openings, nine Round02 originals, page links and verificatio
 boundaries. Its current manifest is separate from the earlier grouped-board
 handoffs.
 
-Each hero gets its own regular Web page, opening directly on the full composition
-with an explicitly authored Phone treatment. Grouped Design boards remain useful
-for comparison. A Web collection index contains links rather than mounting every
-hero. A code-art specimen alone does not establish a recreation of its source's
-opening: include the defining typography, navigation, scale, negative space and
-media relationships, with source credit and fidelity notes outside the opening.
+Each full hero experience gets its own regular Web page, opening directly on
+the composition with an explicitly authored Phone treatment. The experience may
+span multiple screens or use nested or virtual scrolling; its first viewport
+does not define its extent. Grouped Design boards remain useful for comparison.
+A Web collection index contains links rather than mounting every hero. Include
+the defining typography, navigation, scale, negative space, media relationships
+and interaction sequence, with source credit and fidelity notes outside the
+opening.
+
+Use the [hero sequence and interaction audit](design-inspiration/hero-behavior.md)
+before recreating a source. Inspect its full sequence and transition into
+following content, isolating time, scroll and pointer inputs before attributing
+state changes to them. Record controls, reverse/back behavior and unknowns.
+For static or recorded works, inspect the still or temporal sequence without
+inventing scroll behavior. Keep the owner's selected archive revision distinct
+from a different current site. Rendering quality, working playback and saved
+persistence verify the authored prototype; source fidelity requires a separate
+comparison with the observed source experience.
 
 Keep the first information-field, geometric-identity and research-montage
 originals visibly distinct before combining them. Information must function as
