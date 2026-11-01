@@ -6,9 +6,10 @@
   "credit": "Obys × DES",
   "classification": "Source inspiration / credited long-form interactive recreation",
   "inspection": {
-    "newBrowserAccess": false,
+    "newBrowserAccess": true,
     "rootObservedTraversal": "1280×720 document13474px; entry+17forward captures to12744 with actual FORMATfooter. Notes/Daughter controls tested separately.",
-    "causalLimits": "Scroll establishes progression through the format essay; retained captures do not establish exact scrub curves, hover/drag physics, or all motion causality."
+    "causalLimits": "The closing carry, separate pointer spawn, gravity and reverse recapture are now directly observed. Exact interpolation, collision parameters, all21random templates and FIFO30 capacity remain public-code facts or independent fits rather than isolated live measurements.",
+    "closingRecheck": "2026-11-01: actual original site at1280×720; native scrolling reached11513 and12237, real field click spawned a genuine circle.webp chip, and reverse scrolling to10070 restored the same21-child poster at its original full size."
   },
   "layout": {
     "sourceViewport": [
@@ -765,7 +766,16 @@
       "end": "fieldDocumentTop - .45*viewportHeight",
       "unit": "u = viewportWidth / 1440",
       "release": "On forward progress1, release into source physics with angular velocity .008. Reverse scroll recaptures the same poster.",
-      "appearance": "Grow an opaque #222 backing and white outline; freeze poster parallax and clock during carry."
+      "appearance": "Grow an opaque #222 backing and white outline; freeze poster parallax and clock during carry.",
+      "measuredSourceSize": {
+        "windowWidth": 1280,
+        "clientWidth": 1265,
+        "height": 1437.328125,
+        "width": 1265,
+        "scaleAt11513": 0.173611,
+        "scaledWidthAt11513": 219.6180419921875,
+        "scaledHeightAt11513": 249.5361328125
+      }
     },
     "pointerChips": {
       "trigger": "Separate pointerdown on the guide field",
@@ -776,7 +786,21 @@
       "noDrag": true,
       "noAutoSpawn": true
     },
-    "scrollbar": "Retained source CSS has no hidden-scrollbar rule. Captures show a right-hand track; document.clientWidth was not recorded. Keep source window-width geometry.",
-    "implementation": "Required follow-on work; the current saved recreation still lacks automatic poster carry and separate pointer chips. Source inspection and a native pool plan do not establish implementation or Preview."
+    "scrollbar": "Live recheck recorded1280px window and1265px document client width with a visible scrollbar. Keep the source scrollbar and distinguish its client-centered field from window-based scale units.",
+    "implementation": "Required follow-on work; the current saved recreation still lacks automatic poster carry and separate pointer chips. Source inspection and a native pool plan do not establish implementation or Preview.",
+    "fieldMeasured": {
+      "windowWidth": 1280,
+      "clientWidth": 1265,
+      "left": 10.28125,
+      "width": 1244.4375,
+      "documentTop": 11926.59375,
+      "height": 994.03125,
+      "centering": "The field is centered in the1265px document client area; window-width units still determine its nominal dimensions."
+    },
+    "liveEvidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-source-live-closing-interaction.json",
+      "sha256": "e73676d90b6bc43a25e8489a788535bb9167ea052d5632a31830bac977bf0539",
+      "scope": "Read-only public DOM/CSS plus actual browser scrolling/click; no private physics state was inspected or source JavaScript executed."
+    }
   }
 }
