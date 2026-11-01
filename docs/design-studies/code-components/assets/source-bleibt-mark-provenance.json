@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-017",
+  "classification": "Source inspiration / animated vector asset recreation",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+  "asset": {
+    "path": "../../hero-behavior/assets/HERO-017-mark.svg",
+    "sha256": "be391475e4e35a06958a13ef6ead6d14c63f569872e31eebeb8ea3953365a382",
+    "bytes": 3710,
+    "viewBox": [
+      0,
+      0,
+      95,
+      160
+    ],
+    "method": "Exact original public SVG path. Preserve as an external asset study; not Monarchic original artwork."
+  },
+  "actor": {
+    "path": "../SourceBleibtMark.tsx",
+    "sha256": "e992b712a50054cfaf20ebf5416c7349286fb813b3c954a05e71f12089076beb",
+    "method": "Independently authored rectangle reveal and contour interpolation.192 arclength outer points fitted to rectangle by center rays; exact original compound path at completion."
+  },
+  "sourceFacts": {
+    "kind": "Current public behavior-code inspection, separate from selected archive observation",
+    "revealSeconds": 0.8,
+    "morphSeconds": 1.2,
+    "ease": "cubic-bezier(.25,1,.5,1)"
+  },
+  "validation": {
+    "local": "ActualReact18/Chromium, final190×320 source vector raster has0differentchannels; pause/resume/replay, Canvas12fps and export/reduced freeze.",
+    "nixOutput": "/nix/store/qrrm3gh096mi34dd1acw00g5p40jw5xl-monarchic-website-source-bleibt-mark-0.0.1",
+    "framer": "Registration and persistence tracked separately; not established by local tests."
+  },
+  "license": "Unverified source asset reuse rights. Credited unpublished prototype; attribution is not a license grant.",
+  "limitations": [
+    "Intermediate contour correspondence is fitted, not recovered source MorphSVG behavior.",
+    "This actor does not recreate the separate fluid opening or Work project field."
+  ]
+}
