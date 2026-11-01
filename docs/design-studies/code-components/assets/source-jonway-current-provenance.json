@@ -5,8 +5,8 @@
   "policy": "Current original is the target. Preserve historical gallery-based pages and credits as separate comparisons. The new recreation stays in Source inspiration.",
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceJonWayAccordion.tsx",
-    "sha256": "6d2b267aa8dea9684aea72a1195cbfe7c47605bf49a9bb0e5dd9e51ef121fe54",
-    "bytes": 173300,
+    "sha256": "7314f8e8dc0f9680924f8df6ad9e345d8a87ef0a91cde1fdb833513f5ba514ee",
+    "bytes": 173364,
     "exports": [
       "SourceJonWayAccordion",
       "SourceJonWayProjectMark",
@@ -53,8 +53,8 @@
   ],
   "check": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
-    "sha256": "8331767804c68ea9f514bc31c3fc442357fed1dd3d694947342d5e74d7c2c7e8",
-    "bytes": 25738,
+    "sha256": "b4735e1d83fd75f2e02b981b2c46972c39f8bf8ffe59f4449a589161e0a6f503",
+    "bytes": 27799,
     "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
     "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
   },
@@ -65,7 +65,16 @@
     "checks": 41,
     "retainedSourceMedia": true,
     "actualFramerSaved": false,
-    "actualFramerPreview": false
+    "actualFramerPreview": false,
+    "verifiedSourceSHA256": "6d2b267aa8dea9684aea72a1195cbfe7c47605bf49a9bb0e5dd9e51ef121fe54",
+    "applicability": "Genuine media/runtime41 proof was captured before the explicit generic-props correction. Its complete emitted JavaScript is byte-identical to the corrected source, as separately pinned. Current strict props and full browser check are rerun before installation.",
+    "currentLockedTypeAndBrowserProof": {
+      "path": "/nix/store/1f6v6xhjdny06192j87zd1lhcbw0204v-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
+      "sha256": "676067eb0a281e67b50d4abcbec250df86360d5fda8365d071abf50a72247b1c",
+      "bytes": 5825,
+      "checks": 41,
+      "sourcePinsExact": true
+    }
   },
   "sourceComparison": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/candidate-comparison-method.json",
@@ -80,7 +89,7 @@
   ],
   "remainingGates": [
     "Root final source-comparison review",
-    "Genuine registered Framer public export IDs and native source font binding",
+    "Existing codeFile/miST1qf source-only typing correction, four same IDs and diagnostics readback; genuine native source font binding",
     "Distinct regular current-original page creation, save and editor reload",
     "Actual Framer Desktop/Phone inputs, source media paint, pause, reverse and responsive state checks"
   ],
@@ -1640,5 +1649,20 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-effect-entry-facts.json",
     "sha256": "dbcbc209e8349d8d90794268dbdedabe459623e7cccaf4d02bc9551f21cde883",
     "bytes": 2055
+  },
+  "typeOnlyCorrection": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/type-only-fix-302/lineage.json",
+    "sha256": "1f1b5bf82ef5c7b64ca080f58e580c1179edd69c67bd650058054c50f88f9ac6",
+    "bytes": 2490,
+    "previousActualFramerReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/three-current-source-window-302/output.json",
+      "sha256": "7458b19be723dc55c8a5e6617b766912cdff2511a204c0f6b3cd7936e686b9c3",
+      "bytes": 239078
+    },
+    "retainedCodeFileID": "codeFile/miST1qf",
+    "publicIDsPreserved": true,
+    "emittedJavaScriptIdentical": true,
+    "oldBarePropsCounterfactualDiagnosticCount": 2,
+    "correctedDiagnosticCount": 0
   }
 }

@@ -13,6 +13,7 @@ import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } f
 
 const JWSPlayback = React.createContext<{ paused: boolean; toggle: () => void } | null>(null)
 type Props = { animate?: boolean; canvasMotion?: boolean; paused?: boolean; stillIndex?: number; showPlayback?: boolean; artwork?: string; replay?: number; style?: React.CSSProperties }
+type LayerProps = { onClick?: (event: React.MouseEvent<HTMLElement>) => void; onTap?: (event: { defaultPrevented?: boolean }, info?: unknown) => void; onKeyDown?: (event: React.KeyboardEvent<HTMLElement>) => void; [key: string]: unknown }
 type Size = { width: number; height: number; screenWidth: number }
 type Geometry = { left: number; width: number; inset: number }
 const MATERIAL_BLOCKS = [{"layout":"Desktop","scale":1,"x":0,"y":0,"columns":2,"rows":185},{"layout":"Desktop","scale":2,"x":400,"y":0,"columns":4,"rows":185},{"layout":"Desktop","scale":3,"x":0,"y":185,"columns":6,"rows":185},{"layout":"Desktop","scale":4,"x":0,"y":370,"columns":8,"rows":185},{"layout":"Phone","scale":1,"x":1600,"y":370,"columns":2,"rows":342},{"layout":"Phone","scale":2,"x":0,"y":555,"columns":2,"rows":342},{"layout":"Phone","scale":3,"x":400,"y":555,"columns":3,"rows":342},{"layout":"Phone","scale":4,"x":1200,"y":0,"columns":4,"rows":342}]
@@ -221,14 +222,14 @@ export function SourceJonWayProjectMark({ animate = true, canvasMotion = false, 
     const displayed = frozen || reduced ? clamp(Math.round(stillFrame), 0, 199) : frame
     return <div ref={setHost} role="img" aria-label="Jon Way current-project animated source mark" data-jws-mark-frame={displayed} data-jws-mark-visible={visible} style={{ ...style, width: style?.width ?? 60, height: style?.height ?? 75, backgroundImage: `url(${PROJECT_MARK_SPRITES[displayed < 100 ? 0 : 1]})`, backgroundSize: "2000% 500%", backgroundPosition: `${displayed % 20 / 19 * 100}% ${Math.floor(displayed % 100 / 20) / 4 * 100}%`, backgroundRepeat: "no-repeat" }} />
 }
-export function withJonWayExperience(Component: ComponentType): ComponentType {
-    return React.forwardRef<HTMLElement, Record<string, unknown>>((props, ref) => {
+export function withJonWayExperience(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const [paused, setPaused] = React.useState(false)
         return <JWSPlayback.Provider value={{ paused, toggle: () => setPaused(value => !value) }}><Component {...props} ref={ref} /></JWSPlayback.Provider>
     })
 }
-export function withJonWayPause(Component: ComponentType): ComponentType {
-    return React.forwardRef<HTMLElement, { onClick?: (event: React.MouseEvent<HTMLElement>) => void; onTap?: (event: { defaultPrevented?: boolean }, info?: unknown) => void; onKeyDown?: (event: React.KeyboardEvent<HTMLElement>) => void; [key: string]: unknown }>((props, ref) => {
+export function withJonWayPause(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const playback = React.useContext(JWSPlayback), activation = React.useRef<{ channel: string; at: number } | null>(null)
         const activate = (channel: string, event: { defaultPrevented?: boolean }) => {
             const now = performance.now(), previous = activation.current

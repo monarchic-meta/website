@@ -50,8 +50,8 @@
   ],
   "check": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
-    "sha256": "8331767804c68ea9f514bc31c3fc442357fed1dd3d694947342d5e74d7c2c7e8",
-    "bytes": 25738,
+    "sha256": "b4735e1d83fd75f2e02b981b2c46972c39f8bf8ffe59f4449a589161e0a6f503",
+    "bytes": 27799,
     "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
     "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
   },
@@ -62,7 +62,14 @@
     "checks": 41,
     "retainedSourceMedia": true,
     "actualFramerSaved": false,
-    "actualFramerPreview": false
+    "actualFramerPreview": false,
+    "currentLockedTypeAndBrowserProof": {
+      "path": "/nix/store/1f6v6xhjdny06192j87zd1lhcbw0204v-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
+      "sha256": "676067eb0a281e67b50d4abcbec250df86360d5fda8365d071abf50a72247b1c",
+      "bytes": 5825,
+      "checks": 41,
+      "sourcePinsExact": true
+    }
   },
   "sourceComparison": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/candidate-comparison-method.json",
