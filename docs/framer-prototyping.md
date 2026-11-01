@@ -285,6 +285,21 @@ are different authoring routes; a prompt visible in the Agent panel does not
 mean every later edit used that Agent. Check the actual tool history when
 describing the route used for a particular change.
 
+### Connected-browser routing incident — 2026-11-01
+
+The owner observed automation opening tabs in another focused desktop chat,
+despite browser-session metadata matching this chat, and closed those tabs.
+Connected-browser automation is stopped for this work. Do not reopen tabs,
+inspect the other chat, or reset its viewport while routing remains unreliable.
+Continue authorized authoring through the independently verified Framer MCP
+project connection and isolated local browser fixtures. Resuming the connected
+browser requires explicit owner direction and a verified visible destination.
+
+MCP model acknowledgments and readbacks establish stored editor data; local
+fixtures establish behavior under their adapters. Neither establishes actual
+Framer Preview painting or survival of an editor reload. Keep those checks
+pending instead of reporting the affected studies as verified.
+
 ## Manual handoff
 
 For Framer-to-code work, inspect the relevant prototype and implement the chosen
