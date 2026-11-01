@@ -1,0 +1,342 @@
+import * as React from "react"
+import type { ComponentType } from "react"
+import { RenderTarget, useIsStaticRenderer } from "framer"
+/**
+ * SOURCE INSPIRATION / HERO-013 — FORMAT, Obys and DES Special Project.
+ * Exact14 primary inline-SVG polygons clip editable native Frames, including
+ * the closing mark. Individual source photographs and typography remain native.
+ * Independent public React HOCs implement the source-supported tiny Berlin
+ * clock, large accelerated dial,100s record, running reel, triangle clips,
+ * scroll-driven three-pair window, circular word gauge, late seven-photo deck,
+ * terminal2.6s click/clack phases and decorative flower grounds.
+ * No source website behavior JavaScript is copied or executed here.
+ * Known fits: scroll/Lenis velocity normalization, macro/phase anchors,
+ * window scrub easing, gauge growth/morph interpolation, deck-ground collapse
+ * and exact first-entry word stagger. Source pointer-spawned physics chips,
+ * preloader, omitted fan/interstitials and complete Notes placement are absent.
+ * Canvas/export/thumbnail and reduced motion freeze. Live native timers/RAF
+ * suspend offscreen/hidden; no GPU context or runtime media/font fetch.
+ */
+type LayerProps = { [key: string]: unknown; style?: React.CSSProperties; children?: React.ReactNode }
+type NativeLayer = ComponentType<LayerProps>
+type DetailStyle = React.CSSProperties & { translate?: string; rotate?: string; scale?: string }
+const useOwnLayoutEffect = typeof window === "undefined" ? React.useEffect : React.useLayoutEffect
+const STATIC_TIME = Date.UTC(2026, 10, 1, 11, 0, 0)
+const emptySubscribe = (_notify: () => void) => () => {}
+const serverClock = () => STATIC_TIME
+function writeRef<T>(ref: React.ForwardedRef<T>, value: T | null) { if (typeof ref === "function") ref(value); else if (ref) ref.current = value }
+function useReducedMotion() { const [reduced, setReduced] = React.useState(false); React.useEffect(() => { const query = window.matchMedia("(prefers-reduced-motion: reduce)"), update = () => setReduced(query.matches); update(); query.addEventListener("change", update); return () => query.removeEventListener("change", update) }, []); return reduced }
+function frozenTarget() { const target = RenderTarget.current(); return useIsStaticRenderer() || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail }
+const FORMAT_POLYGONS: readonly string[] = [
+    "polygon(0% 21.551386149%, 0% 100%, 42.05823101% 100%, 100% 100%, 100% 0%, 42.05823101% 0%, 0% 21.551386149%)",
+    "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%)",
+    "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%)",
+    "polygon(0% 21.551393138%, 0% 78.448746993%, 41.984120473% 100%, 100% 100%, 100% 0%, 41.984120473% 0%, 0% 21.551393138%)",
+    "polygon(0% 0%, 0% 100%, 57.942042461% 100%, 100% 78.448746993%, 100% 21.551393138%, 57.942042461% 0%, 0% 0%)",
+    "polygon(0% 0%, 0% 100%, 42.058869108% 100%, 100% 100%, 100% 0%, 42.058869108% 0%, 0% 0%)",
+    "polygon(0% 0%, 0% 100%, 100% 100%, 100% 40.510974957%, 49.586092715% 0%, 0% 0%)",
+    "polygon(0% 0%, 0% 100%, 100% 100%, 34.838116262% 0%, 0% 0%)",
+    "polygon(0% 0%, 0% 100%, 57.941130892% 100%, 100% 100%, 100% 21.54313458%, 57.941130892% 0%, 0% 0%)",
+    "polygon(0% 21.543141567%, 0% 100%, 42.057957539% 100%, 100% 100%, 100% 0%, 42.057957539% 0%, 0% 21.543141567%)",
+    "polygon(0% 21.543141567%, 0% 100%, 41.981678137% 100%, 100% 100%, 100% 0%, 41.981678137% 0%, 0% 21.543141567%)",
+    "polygon(0% 0%, 0% 100%, 57.948951686% 100%, 100% 100%, 100% 21.543141567%, 57.948951686% 0%, 0% 0%)",
+    "polygon(27.219690064% 0%, 0% 0%, 0% 21.543141567%, 0% 51.298752842%, 27.219690064% 51.298752842%, 27.219690064% 100%, 100% 100%, 100% 0%, 27.219690064% 0%)",
+    "polygon(73.053344313% 0%, 0% 0%, 0% 21.543141567%, 0% 51.298752842%, 0% 100%, 73.053344313% 100%, 73.053344313% 51.298752842%, 100% 51.298752842%, 100% 21.543141567%, 100% 0%, 73.053344313% 0%)"
+]
+function clip(Component: NativeLayer, index: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} data-format-source-polygon={index} style={{ ...props.style, clipPath: FORMAT_POLYGONS[index], WebkitClipPath: FORMAT_POLYGONS[index] }} />) as NativeLayer }
+export function withFormatLogo01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 0) }
+export function withFormatLogo02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 1) }
+export function withFormatLogo03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 2) }
+export function withFormatLogo04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 3) }
+export function withFormatLogo05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 4) }
+export function withFormatLogo06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 5) }
+export function withFormatLogo07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 6) }
+export function withFormatLogo08(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 7) }
+export function withFormatLogo09(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 8) }
+export function withFormatLogo10(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 9) }
+export function withFormatLogo11(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 10) }
+export function withFormatLogo12(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 11) }
+export function withFormatLogo13(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 12) }
+export function withFormatLogo14(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clip(Component, 13) }
+function useOwnVisibility(ref: React.RefObject<HTMLElement | null>, frozen: boolean) {
+    const [visible, setVisible] = React.useState(false), [hidden, setHidden] = React.useState(false), [reduced, setReduced] = React.useState(false)
+    React.useEffect(() => {
+        const node = ref.current; if (!node || frozen) return
+        const query = window.matchMedia("(prefers-reduced-motion: reduce)"), motion = () => setReduced(query.matches), visibility = () => setHidden(document.hidden)
+        motion(); visibility(); const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting)); observer.observe(node)
+        query.addEventListener("change", motion); document.addEventListener("visibilitychange", visibility)
+        return () => { observer.disconnect(); query.removeEventListener("change", motion); document.removeEventListener("visibilitychange", visibility) }
+    }, [frozen])
+    return !frozen && visible && !hidden && !reduced
+}
+let clockNow = STATIC_TIME, clockTimer: ReturnType<typeof setInterval> | null = null
+const clockListeners = new Set<() => void>()
+function getClock() { return clockNow }
+function subscribeClock(notify: () => void) {
+    clockListeners.add(notify)
+    if (clockTimer === null) { clockNow = Date.now(); clockTimer = setInterval(() => { clockNow = Date.now(); clockListeners.forEach(fn => fn()) }, 250) }
+    return () => { clockListeners.delete(notify); if (!clockListeners.size && clockTimer !== null) { clearInterval(clockTimer); clockTimer = null } }
+}
+const CLOCK_SIZES = [2, 3, 5] as const
+function berlinAngles(time: number) {
+    const values: Record<string, number> = {}
+    for (const part of new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" }).formatToParts(new Date(time))) if (part.type !== "literal") values[part.type] = Number(part.value)
+    const second = values.second % 60, minute = values.minute + second / 60, hour = values.hour % 12 + minute / 60
+    return [second * Math.PI / 30, minute * Math.PI / 30, hour * Math.PI / 6]
+}
+function radialBalls(angles: readonly number[], sizes: readonly number[], center: number, rail: number) {
+    const radii = sizes.map(r => rail - r)
+    // Independently solve radial circle intersection, keeping larger balls
+    // inward from smaller ones when their angular paths meet.
+    for (let i = 1; i < 3; i++) for (let j = 0; j < i; j++) {
+        const delta = angles[j] - angles[i], projection = radii[j] * Math.cos(delta), across = radii[j] * Math.sin(delta), clearance = sizes[i] + sizes[j]
+        if (projection > 0 && Math.abs(across) < clearance) radii[i] = Math.min(radii[i], projection - Math.sqrt(clearance * clearance - across * across))
+    }
+    return angles.map((angle, i) => ({ x: center + Math.sin(angle) * radii[i] - sizes[i], y: center - Math.cos(angle) * radii[i] - sizes[i], radius: sizes[i], angle, orbit: radii[i] }))
+}
+function berlinBalls(time: number) { return radialBalls(berlinAngles(time), CLOCK_SIZES, 34, 27) }
+function clockBall(Component: NativeLayer, index: number): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), now = React.useSyncExternalStore(live ? subscribeClock : emptySubscribe, live ? getClock : serverClock, serverClock), [unit, setUnit] = React.useState(1)
+        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; const measure = () => { const width = parseFloat(getComputedStyle(node).width); if (Number.isFinite(width) && width > 0) setUnit(width / (CLOCK_SIZES[index] * 2)) }; measure(); const observer = new ResizeObserver(measure); observer.observe(node); return () => observer.disconnect() }, [])
+        const ball = berlinBalls(now)[index]
+        return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-berlin-clock={index} data-format-clock-time={now} style={{ ...props.style, left: ball.x * unit, top: ball.y * unit, pointerEvents: "none" }} />
+    }) as NativeLayer
+}
+export function withFormatMiniSecond(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clockBall(Component, 0) }
+export function withFormatMiniMinute(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clockBall(Component, 1) }
+export function withFormatMiniHour(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return clockBall(Component, 2) }
+export function withFormatRunningReel(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), [phase, setPhase] = React.useState(0), motion = React.useRef({ start: 0, boost: 0, lastY: 0, unit: 1 })
+        React.useEffect(() => {
+            const node = own.current; if (!node || frozen) { setPhase(0); return }
+            const state = motion.current; state.start = performance.now(); state.boost = 0; state.lastY = window.scrollY
+            const measure = () => { const width = parseFloat(getComputedStyle(node).width); state.unit = Number.isFinite(width) && width > 0 ? width / 348 : 1 }, scroll = () => { state.boost += Math.abs(window.scrollY - state.lastY) * 26 / 60; state.lastY = window.scrollY }
+            measure(); const observer = new ResizeObserver(measure); observer.observe(node); window.addEventListener("scroll", scroll, { passive: true })
+            return () => { observer.disconnect(); window.removeEventListener("scroll", scroll) }
+        }, [frozen])
+        React.useEffect(() => { if (!live) return; let frame = 0, previous = -Infinity; const tick = (now: number) => { if (now - previous >= 1000 / 30) { previous = now; const state = motion.current; setPhase((((now - state.start) / 1000 * 14 + state.boost) % 756) * state.unit) } frame = requestAnimationFrame(tick) }; frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame) }, [live])
+        return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-reel={frozen ? 0 : phase} style={{ ...props.style, translate: `0px ${frozen ? 0 : -phase}px`, pointerEvents: "none" } as DetailStyle} />
+    }) as NativeLayer
+}
+type FlowerState = { progress: number; unit: number }
+const FlowerContext = React.createContext<FlowerState>({ progress: .5, unit: 1 })
+export function withFormatFlowerGround(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), [reduced, setReduced] = React.useState(false), [state, setState] = React.useState({ progress: .5, unit: 1, desktop: false })
+        React.useEffect(() => { if (frozen) return; const query = window.matchMedia("(prefers-reduced-motion: reduce)"), update = () => setReduced(query.matches); update(); query.addEventListener("change", update); return () => query.removeEventListener("change", update) }, [frozen])
+        useOwnLayoutEffect(() => {
+            const node = own.current; if (!node) return; let frame = 0
+            const measure = () => { frame = 0; const desktop = !frozen && window.innerWidth >= 1280, unit = desktop ? window.innerWidth / 1440 : parseFloat(getComputedStyle(node).width) / 1497 || 1, rect = node.getBoundingClientRect(); setState({ desktop, unit, progress: frozen || reduced ? .5 : Math.max(0, Math.min(1, (window.innerHeight - rect.top) / (window.innerHeight + rect.height))) }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(measure) }
+            measure(); const observer = new ResizeObserver(frozen ? measure : schedule); observer.observe(node)
+            if (!frozen) { if (!reduced) window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule) }
+            return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) }
+        }, [frozen, reduced])
+        const style = state.desktop ? { left: -26 * state.unit, top: 1074 * state.unit, width: 1497 * state.unit, height: 999 * state.unit } : {}
+        return <FlowerContext.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-flower-ground="true" style={{ ...props.style, ...style, pointerEvents: "none", overflow: "hidden" }} /></FlowerContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatFlowerDrift(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(FlowerContext); return <Component {...props} ref={ref} data-format-flower-drift={state.progress} style={{ ...props.style, top: -70 * state.unit, height: 1139 * state.unit, translate: `0px ${(-70 + 140 * state.progress) * state.unit}px`, pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer
+}
+const LARGE_SIZES = [8.152, 13.5865, 20.38] as const
+const LARGE_RATES = [1, .25, 1 / 12] as const
+const LargeDialContext = React.createContext({ angles: berlinAngles(STATIC_TIME), unit: 1 })
+/** Source large dial initializesBerlin, then accelerates its three hands by time and absolute ordinaryscroll. */
+export function withFormatLargeDial(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), active = React.useRef(false), state = React.useRef({ base: berlinAngles(STATIC_TIME), phase: 0, lastY: 0 }), [angles, setAngles] = React.useState(berlinAngles(STATIC_TIME)), [unit, setUnit] = React.useState(1)
+        const publish = () => setAngles(state.current.base.map((angle, i) => angle + state.current.phase * LARGE_RATES[i]))
+        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; const measure = () => { const width = parseFloat(getComputedStyle(node).width); if (width > 0) setUnit(width / 697) }; measure(); const observer = new ResizeObserver(measure); observer.observe(node); return () => observer.disconnect() }, [])
+        React.useEffect(() => { state.current = { base: berlinAngles(frozen ? STATIC_TIME : Date.now()), phase: 0, lastY: frozen ? 0 : window.scrollY }; publish(); if (frozen) return; const scroll = () => { const next = window.scrollY, distance = Math.abs(next - state.current.lastY); state.current.lastY = next; if (active.current) { state.current.phase += 240 * Math.PI / 180 * distance / Math.max(1, window.innerHeight); publish() } }; window.addEventListener("scroll", scroll, { passive: true }); return () => window.removeEventListener("scroll", scroll) }, [frozen])
+        React.useEffect(() => { active.current = live; state.current.lastY = window.scrollY; if (!live) return; let frame = 0, previous = performance.now(), painted = previous; const tick = (now: number) => { if (now - painted >= 1000 / 30) { state.current.phase += 24 * Math.PI / 180 * (now - previous) / 1000; painted = now; publish(); previous = now } frame = requestAnimationFrame(tick) }; frame = requestAnimationFrame(tick); return () => { active.current = false; cancelAnimationFrame(frame) } }, [live])
+        return <LargeDialContext.Provider value={{ angles: frozen ? berlinAngles(STATIC_TIME) : angles, unit }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-large-dial={angles[0]} style={{ ...props.style, pointerEvents: "none" }} /></LargeDialContext.Provider>
+    }) as NativeLayer
+}
+function largeBall(Component: NativeLayer, index: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(LargeDialContext), ball = radialBalls(state.angles, LARGE_SIZES, 348.5, 252.034)[index]; return <Component {...props} ref={ref} data-format-large-ball={index} style={{ ...props.style, left: ball.x * state.unit, top: ball.y * state.unit, pointerEvents: "none" }} /> }) as NativeLayer }
+export function withFormatDialSecond(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return largeBall(Component, 0) }
+export function withFormatDialMinute(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return largeBall(Component, 1) }
+export function withFormatDialHour(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return largeBall(Component, 2) }
+export function withFormatRecordSurface(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, maskImage: "radial-gradient(circle closest-side, transparent 8.7517934%, black 8.76%)", WebkitMaskImage: "radial-gradient(circle closest-side, transparent 8.7517934%, black 8.76%)", pointerEvents: "none" }} />) as NativeLayer }
+export function withFormatRecordGlass(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)", maskImage: "radial-gradient(circle closest-side, transparent 16.1%, black 16.5%)", WebkitMaskImage: "radial-gradient(circle closest-side, transparent 16.1%, black 16.5%)", pointerEvents: "none" }} />) as NativeLayer }
+export function withFormatRecordSpin(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), angle = React.useRef(0), [rotation, setRotation] = React.useState(0); React.useEffect(() => { if (!live) return; let frame = 0, previous = performance.now(); const tick = (now: number) => { if (now - previous >= 1000 / 30) { angle.current = (angle.current + (now - previous) * 360 / 100000) % 360; previous = now; setRotation(angle.current) } frame = requestAnimationFrame(tick) }; frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame) }, [live]); return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-record-turn={frozen ? 0 : rotation} style={{ ...props.style, rotate: `${frozen ? 0 : rotation}deg`, transformOrigin: "50% 50%", pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer
+}
+function polygonClip(Component: NativeLayer, polygon: string): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, clipPath: polygon, WebkitClipPath: polygon, pointerEvents: "none" }} />) as NativeLayer }
+export function withFormatTriangleOutline(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(100% 8.409171563%, 54.281314941% 100%, 45.652634016% 100%, 0% 8.541855605%, 4.263715534% 0%, 95.802420735% 0%)") }
+export function withFormatTriangleLeftMask(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(100% 0%, 100% 100%, 92.830526159% 100%, 0% 0%)") }
+export function withFormatTriangleRightMask(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return polygonClip(Component, "polygon(0% 0%, 0% 100%, 7.1683% 100%, 100% 0%)") }
+export function withFormatPosterHand(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), now = React.useSyncExternalStore(live ? subscribeClock : emptySubscribe, live ? getClock : serverClock, serverClock), angle = new Date(now).getSeconds() * 30; return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-poster-second={angle} style={{ ...props.style, rotate: `${angle}deg`, transformOrigin: "0 0", pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
+const WINDOW_PAIRS = [{ top: "Desert Tree", foot: "Frozen Bloom" }, { top: "Lost Dreams", foot: "Silent Fog" }, { top: "Fading Hour", foot: "Restless Wind" }] as const
+const WindowContext = React.createContext({ at: 0, unit: 1 })
+/** Source window strip is scroll-driven through3pairs with.8s scrub; it is not an autoplay slideshow. */
+export function withFormatWindowSequence(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen), [state, setState] = React.useState({ at: 0, unit: 1 }), value = React.useRef(0), wake = React.useRef<() => void>(() => {})
+        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; const measure = () => { const width = parseFloat(getComputedStyle(node).width); if (width > 0) setState(previous => ({ ...previous, unit: width / 1045 })) }; measure(); const observer = new ResizeObserver(measure); observer.observe(node); return () => observer.disconnect() }, [])
+        React.useEffect(() => {
+            if (frozen || !live) return; let frame = 0, previous = performance.now()
+            const target = () => { const rect = own.current!.getBoundingClientRect(); return Math.max(0, Math.min(3, (window.innerHeight - rect.top + 126 * rect.width / 1045) / Math.max(1, window.innerHeight + 697 * rect.width / 1045) * 3)) }
+            const tick = (now: number) => { frame = 0; const next = target(), dt = Math.max(0, Math.min(.1, (now - previous) / 1000)); if (dt < 1 / 30) { frame = requestAnimationFrame(tick); return }; previous = now; value.current += (next - value.current) * (1 - Math.exp(-dt / .16)); if (Math.abs(next - value.current) < .00001) value.current = next; setState(state => ({ ...state, at: value.current })); if (value.current !== next) frame = requestAnimationFrame(tick) }
+            const schedule = () => { if (!frame) { previous = performance.now(); frame = requestAnimationFrame(tick) } }; wake.current = schedule; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule); schedule()
+            return () => { wake.current = () => {}; if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) }
+        }, [frozen, live])
+        return <WindowContext.Provider value={frozen ? { at: 0, unit: state.unit } : state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-window-at={frozen ? 0 : state.at} style={{ ...props.style, pointerEvents: "none" }} /></WindowContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatWindowDisc(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(WindowContext); return <Component {...props} ref={ref} style={{ ...props.style, rotate: `${state.at * 90}deg`, transformOrigin: "50% 50%", pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
+export function withFormatWindowPhotoStrip(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(WindowContext); return <Component {...props} ref={ref} style={{ ...props.style, translate: `0px ${-(state.at % 3) * 368.5 * state.unit}px`, pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
+function windowPhoto(Component: NativeLayer, index: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(WindowContext), brightness = 1 - Math.min(1, Math.abs(index - state.at % 3)) * .45; return <Component {...props} ref={ref} style={{ ...props.style, filter: `brightness(${brightness})`, pointerEvents: "none" }} /> }) as NativeLayer }
+export function withFormatWindowPhoto01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowPhoto(Component, 0) }
+export function withFormatWindowPhoto02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowPhoto(Component, 1) }
+export function withFormatWindowPhoto03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowPhoto(Component, 2) }
+export function withFormatWindowPhoto04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowPhoto(Component, 3) }
+function windowName(Component: NativeLayer, quarter: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(WindowContext), index = Math.floor(state.at), pair = WINDOW_PAIRS[index % 3], next = WINDOW_PAIRS[(index + 1) % 3], side = (quarter + index) % 4, text = side === 0 ? pair.top : side === 2 ? pair.foot : side === 3 ? next.top : next.foot; return <Component {...props} ref={ref} text={text} /> }) as NativeLayer }
+export function withFormatWindowName01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowName(Component, 0) }
+export function withFormatWindowName02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowName(Component, 1) }
+export function withFormatWindowName03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowName(Component, 2) }
+export function withFormatWindowName04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return windowName(Component, 3) }
+const GAUGE_NAMES = ["Format", "Vertical", "Horizontal", "Circle", "Triangle", "Complex"] as const
+const GAUGE_WIDTHS = [150.080032349, 151.342056274, 201.586074829, 122.408035278, 162.166061401, 179.148040771] as const
+const GaugeContext = React.createContext({ progress: 0, unit: 1, active: -13, stopped: true })
+export function withFormatGaugeField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), reduced = useReducedMotion(), stopped = frozen || reduced, own = React.useRef<HTMLElement | null>(null), [state, setState] = React.useState({ progress: 0, unit: 1, active: -13 })
+        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; let frame = 0; const read = () => { frame = 0; const width = parseFloat(getComputedStyle(node).width), unit = width > 0 ? width / 1440 : 1, rect = node.getBoundingClientRect(), screenUnit = rect.width / 1440, raw = stopped ? 0 : Math.max(0, Math.min(1, (window.innerHeight * 1.05 - (rect.top + 1218.5 * screenUnit)) / Math.max(1, window.innerHeight * .55))), progress = raw < .5 ? 4 * raw ** 3 : 1 - (-2 * raw + 2) ** 3 / 2; setState({ progress, unit, active: Math.round(-13 * (1 - progress)) }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(stopped ? read : schedule); observer.observe(node); if (!stopped) { window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule) }; return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) } }, [stopped])
+        return <GaugeContext.Provider value={{ ...state, stopped }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-gauge-active={state.active} data-format-gauge-progress={state.progress} style={{ ...props.style, pointerEvents: "none" }} /></GaugeContext.Provider>
+    }) as NativeLayer
+}
+/** Each native word declares public elementId format-gauge-{left|right}-{0..25}; no Framer/private tree lookup. */
+export function withFormatGaugeWord(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(GaugeContext), frozen = frozenTarget(), inkId = React.useId().replace(/[^\w-]/g, "_"), own = React.useRef<HTMLElement | null>(null), [identity, setIdentity] = React.useState<{ side: string; index: number } | null>(null)
+        useOwnLayoutEffect(() => { const match = own.current?.id.match(/^format-gauge-(left|right)-(\d+)$/); if (match && Number(match[2]) < 26) setIdentity({ side: match[1], index: Number(match[2]) }) }, [])
+        const order = (identity?.index ?? 13) - 13, name = ((order + 3) % 6 + 6) % 6, angle = order * Math.PI / 24, active = order === state.active, scale = active ? 1 : 12 / 42, width = GAUGE_WIDTHS[name], radius = active ? 693.5 - width : 455.5, side = identity?.side ?? "left", c = Math.cos(angle), s = Math.sin(angle), dy = -21 + (side === "right" ? 2 : -2), x = side === "left" ? c * radius - s * dy * scale : 1440 - c * radius + (-width * c + dy * s) * scale, y = 1218.5 + s * radius + (side === "left" ? c * dy : width * s + dy * c) * scale
+        return <><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-gauge-ink={inkId} data-format-gauge-word={identity ? `${side}/${order}` : "missing-public-elementId"} data-format-gauge-read={active} style={{ ...props.style, left: x * state.unit, top: y * state.unit, rotate: `${(side === "right" ? -1 : 1) * order * 7.5}deg`, scale: String(scale), transformOrigin: "0 0", color: active ? "#000000" : "#bfbfbf", transition: state.stopped ? "none" : "left .45s cubic-bezier(.22,1,.36,1), top .45s cubic-bezier(.22,1,.36,1), scale .45s cubic-bezier(.22,1,.36,1), color .25s linear", pointerEvents: "none" } as DetailStyle} /><style>{`[data-format-gauge-ink="${inkId}"],[data-format-gauge-ink="${inkId}"] *{color:${active ? "#000000" : "#bfbfbf"}!important}`}</style></>
+    }) as NativeLayer
+}
+export function withFormatGaugeWhiteRing(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, maskImage: "radial-gradient(circle closest-side, transparent 1.3388437%, black 1.35%)", WebkitMaskImage: "radial-gradient(circle closest-side, transparent 1.3388437%, black 1.35%)", pointerEvents: "none" }} />) as NativeLayer }
+export function withFormatGaugeBlackRing(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, maskImage: "radial-gradient(circle closest-side, transparent 16.4983165%, black 16.51%)", WebkitMaskImage: "radial-gradient(circle closest-side, transparent 16.4983165%, black 16.51%)", pointerEvents: "none" }} />) as NativeLayer }
+function resample(points: readonly (readonly number[])[], count = 72) { const segments = points.map((a, i) => { const b = points[(i + 1) % points.length]; return { a, b, length: Math.hypot(a[0] - b[0], a[1] - b[1]) } }), total = segments.reduce((sum, s) => sum + s.length, 0); return Array.from({ length: count }, (_, i) => { let distance = total * i / count; for (const s of segments) { if (distance <= s.length || s === segments[segments.length - 1]) { const t = s.length ? distance / s.length : 0; return [s.a[0] + (s.b[0] - s.a[0]) * t, s.a[1] + (s.b[1] - s.a[1]) * t] }; distance -= s.length }; return [...points[0]] }) }
+function gaugeShape(index: number, pane: number) {
+    const w = 20 / 41, h = 22 / 41, rect = (width: number, height: number) => [[.5 - width / 2, .5 - height / 2], [.5 + width / 2, .5 - height / 2], [.5 + width / 2, .5 + height / 2], [.5 - width / 2, .5 + height / 2]], circle = (cx: number, cy: number, r: number, from: number, sweep: number) => Array.from({ length: 96 }, (_, i) => [cx + Math.cos(from + i / 96 * sweep) * r, cy + Math.sin(from + i / 96 * sweep) * r])
+    if (pane === 1 && index !== 0 && index !== 5) return Array.from({ length: 72 }, () => [.5, 31 / 41])
+    if (index === 0) { const sx = (x: number) => .5 - w / 2 + x * w, tall = 20 * 214.085 / 227.01 / 41, sy = (y: number) => .5 - tall / 2 + y * tall; return resample(pane ? [[sx(.5275), sy(0)], [sx(.5275), sy(1)], [sx(1 - 46.057 / 227.01), sy(1)], [sx(1), sy(1 - 46.138 / 214.085)], [sx(1), sy(46.138 / 214.085)], [sx(1 - 46.057 / 227.01), sy(0)]] : [[sx(0), sy(46.138 / 214.085)], [sx(0), sy(1 - 46.138 / 214.085)], [sx(46.057 / 227.01), sy(1)], [sx(.5 - .055 / 2), sy(1)], [sx(.5 - .055 / 2), sy(0)], [sx(46.057 / 227.01), sy(0)]]) }
+    if (index === 1) return resample(rect(17 / 41, h)); if (index === 2) return resample(rect(w, 15 / 41)); if (index === 3) return resample(circle(.5, .5, w / 2, -Math.PI / 2, Math.PI * 2)); if (index === 4) { const high = w * 28.531 / 32.999; return resample([[.5 + w / 2, .7108785 - .084 * high], [.2560976 + .5427 * w, .7108785 - high], [.2560976 + .4564 * w, .7108785 - high], [.2560976, .7108785 - .0855 * high], [.2560976 + .0427 * w, .7108785], [.2560976 + .958 * w, .7108785]]) }; return resample(pane ? [[.25609756, 21 / 41], [.74390244, 21 / 41], [.74390244, 1], [.25609756, 1]] : circle(.5, w / 2, w / 2, Math.PI, Math.PI * 2))
+}
+function gaugePane(Component: NativeLayer, pane: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(GaugeContext), index = ((state.active + 3) % 6 + 6) % 6, points = gaugeShape(index, pane), clipPath = "polygon(" + points.map(([x, y]) => `${(x * 100).toFixed(6)}% ${(y * 100).toFixed(6)}%`).join(",") + ")"; return <Component {...props} ref={ref} data-format-gauge-shape={GAUGE_NAMES[index]} style={{ ...props.style, width: "100%", height: "100%", clipPath, WebkitClipPath: clipPath, transition: state.stopped ? "none" : "clip-path .55s cubic-bezier(.65,0,.35,1)", pointerEvents: "none" }} /> }) as NativeLayer }
+export function withFormatGaugePaneA(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return gaugePane(Component, 0) }
+export function withFormatGaugePaneB(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return gaugePane(Component, 1) }
+export function withFormatGaugeShape(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(GaugeContext), size = (20 + state.progress * 315) * 41 / 20 * state.unit; return <Component {...props} ref={ref} style={{ ...props.style, left: 720 * state.unit - size / 2, top: 1218.5 * state.unit - size / 2, width: size, height: size, pointerEvents: "none" }} /> }) as NativeLayer }
+
+/** Source field alternates the two native word groups every1.3s (2.6s step-end cycle). The original pointer-spawned physics chips remain outside this bounded detail module. */
+function flickWord(Component: NativeLayer, phase: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen); return <><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-click-phase={phase} style={{ ...props.style, opacity: phase ? .25 : 1, animation: live ? `source-format-click-flick 2.6s step-end ${phase ? "-1.3s" : "0s"} infinite` : "none", pointerEvents: "none" }} /><style>{`@keyframes source-format-click-flick{0%{opacity:1}50%{opacity:.25}}@media(prefers-reduced-motion:reduce){[data-format-click-phase]{animation:none!important}}`}</style></> }) as NativeLayer }
+export function withFormatClickPhaseA(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return flickWord(Component, 0) }
+export function withFormatClickPhaseB(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return flickWord(Component, 1) }
+export function withFormatFieldRule(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, backgroundImage: "repeating-linear-gradient(to right,#676767 0 4px,transparent 4px 12px)", backgroundColor: "transparent", pointerEvents: "none" }} />) as NativeLayer }
+const DeckContext = React.createContext({ offset: 290, grey: 0, unit: 1 })
+/** Source reel has seven99.5862px native slots with5px gaps. Its later ordinary-scroll drift is.18px/px. Its section geometry is independently derived from the public source constants; sourceLenis smoothing is not reproduced. */
+export function withFormatDeckRuntime(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), [state, setState] = React.useState({ offset: 290, grey: 0, unit: 1 })
+        useOwnLayoutEffect(() => {
+            const node = own.current; if (!node) return; let frame = 0
+            const read = () => { frame = 0; const width = parseFloat(getComputedStyle(node).width), unit = width > 0 ? width / 335 : 1, l = sourceLayout(window.innerWidth, window.innerHeight), u = l.unit, start = l.group + 2646 * u - window.innerHeight, end = l.deck + 213 * u - window.innerHeight / 2, y = frozen || reduced ? 0 : window.scrollY, progress = frozen || reduced ? 0 : Math.max(0, Math.min(1, (y - start) / Math.max(1, end - start))), eased = progress < .5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2, step = Math.round(99.586212 * u) + Math.round(5 * u), offset = frozen || reduced ? 290 : (Math.round(290 * u) + (Math.round(163.171875 * u) - 3 * step - Math.round(290 * u)) * eased - Math.max(0, y - end) * .18) / u; setState({ unit, offset, grey: Math.max(0, Math.min(1, progress / .18)) }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }
+            read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen && !reduced) { window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule) }
+            return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) }
+        }, [frozen, reduced])
+        return <DeckContext.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-deck-offset={state.offset} data-format-deck-grey={state.grey} style={{ ...props.style, pointerEvents: "none" }} /></DeckContext.Provider>
+    }) as NativeLayer
+}
+function deckPhoto(Component: NativeLayer, index: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(DeckContext), step = 104.586212, period = step * 7, raw = state.offset + index * step, y = ((raw + step) % period + period) % period - step; return <Component {...props} ref={ref} data-format-deck-photo={index} style={{ ...props.style, top: y * state.unit, pointerEvents: "none" }} /> }) as NativeLayer }
+export function withFormatDeckPhoto01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 0) }
+export function withFormatDeckPhoto02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 1) }
+export function withFormatDeckPhoto03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 2) }
+export function withFormatDeckPhoto04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 3) }
+export function withFormatDeckPhoto05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 4) }
+export function withFormatDeckPhoto06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 5) }
+export function withFormatDeckPhoto07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return deckPhoto(Component, 6) }
+export function withFormatDeckInk(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(DeckContext), inkId = React.useId().replace(/[^\w-]/g, "_"), size = parseFloat(String(props.style?.fontSize ?? 8)), level = Math.round((size >= 24 ? 229 : 191) * state.grey); return <><Component {...props} ref={ref} data-format-deck-ink={inkId} style={{ ...props.style, color: `rgb(${level},${level},${level})`, pointerEvents: "none" }} /><style>{`[data-format-deck-ink="${inkId}"],[data-format-deck-ink="${inkId}"] *{color:rgb(${level},${level},${level})!important}`}</style></> }) as NativeLayer }
+type SourceLayout = { unit: number; group: number; deck: number; fan: number; window: number; crossing: number; gauge: number; poster: number; field: number; footer: number; body: number; fieldHeight: number }
+/** Independent algebra from inspected source dimensions: windowsection697px includes its448px aperture. The inverse cubic matches sourcepower2.inOut, with no behavior-JS import. */
+function sourceLayout(width: number, height: number): SourceLayout {
+    const unit = width / 1440, diagonal = Math.ceil(Math.hypot(width, height)), ratio = Math.min(1, height / Math.max(1, diagonal)), inverse = ratio < .5 ? Math.cbrt(ratio / 4) : 1 - Math.cbrt((1 - ratio) / 4)
+    const group = 1554 * unit + 513 * unit / 2 - height / 2 + height * .763 * (.44 + inverse) + height, deck = group + 2646 * unit + height * .5, fan = deck + 432 * unit, windowAt = fan + 703 * unit, crossing = windowAt + 703 * unit, gauge = crossing + 960.664 * unit, poster = gauge + 2056 * unit, field = poster + 2717 * unit, fieldHeight = height * 1.43 - 40 * unit, footer = field + fieldHeight + 350 * unit
+    return { unit, group, deck, fan, window: windowAt, crossing, gauge, poster, field, footer, body: footer + 273 * unit, fieldHeight }
+}
+const SourceLayoutContext = React.createContext({ width: 1440, height: 810, frozen: true, phone: false, layout: sourceLayout(1440, 810) })
+export function withFormatRefinedDocument(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
+        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; let frame = 0; const read = () => { frame = 0; const width = frozen ? node.clientWidth || 1440 : window.innerWidth, height = frozen ? width < 1280 ? 844 : 810 : window.innerHeight; setView(v => v.width === width && v.height === height ? v : { width, height }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen) window.addEventListener("resize", schedule); return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("resize", schedule) } }, [frozen])
+        const phone = view.width < 1280, layout = sourceLayout(view.width, view.height), style = frozen || phone ? props.style : { ...props.style, width: view.width, height: layout.body }
+        return <SourceLayoutContext.Provider value={{ ...view, frozen, phone, layout }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-source-height={layout.body} style={style} /></SourceLayoutContext.Provider>
+    }) as NativeLayer
+}
+type FlowRole = "opening-card" | "usage" | "dials" | "triangle" | "window" | "crossing" | "gauge" | "poster" | "field" | "footer" | "late-deck" | "seven" | "early" | "fan" | "fog"
+function sourceFlow(Component: NativeLayer, role: FlowRole): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(SourceLayoutContext), l = state.layout, u = l.unit
+        if (state.phone) return <Component {...props} ref={ref} />
+        const positions: Record<FlowRole, readonly number[]> = { "opening-card": [553, 436 * u, 409, 426], usage: [552, l.group, 335, 426], dials: [0, l.group + 596 * u, 1440, 697], triangle: [368, l.group + 1299 * u, 704, 608.664], window: [198, l.window + 126 * u, 1045, 448], crossing: [0, l.crossing, 1440, 840.664], gauge: [0, l.gauge, 1440, 2050], poster: [0, l.poster, 1440, 1617], field: [0, l.field, 1440, l.fieldHeight / u], footer: [0, l.footer, 1440, 273], "late-deck": [552.5, l.deck, 335, 426], seven: [0, l.group, 1440, 2646], early: [0, 0, 1440, 2067], fan: [367, l.fan, 706, 697], fog: [0, l.fan + 348.5 * u, 1440, (l.crossing + 232 * u - l.fan - 348.5 * u) / u] }, [x, y, width, height] = positions[role]
+        return <Component {...props} ref={ref} data-format-source-flow={role} style={{ ...props.style, position: "absolute", left: x * u, top: y, width, height, scale: String(u), rotate: "0deg", transformOrigin: "0 0", opacity: 1 } as DetailStyle} />
+    }) as NativeLayer
+}
+export function withFormatOpeningCardFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "opening-card") }
+export function withFormatUsageFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "usage") }
+export function withFormatDialsFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "dials") }
+export function withFormatTriangleFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "triangle") }
+export function withFormatWindowFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "window") }
+export function withFormatCrossingFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "crossing") }
+export function withFormatGaugeFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "gauge") }
+export function withFormatPosterFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "poster") }
+export function withFormatFieldFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "field") }
+export function withFormatFooterFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "footer") }
+export function withFormatLateDeckFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "late-deck") }
+export function withFormatSevenBlocksFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "seven") }
+export function withFormatEarlyPanelsFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "early") }
+export function withFormatFanFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "fan") }
+export function withFormatFogFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(Component, "fog") }
+const FanContext = React.createContext({ open: 0, unit: 1 })
+export function withFormatFanMechanism(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), [open, setOpen] = React.useState(0), [unit, setUnit] = React.useState(1); useOwnLayoutEffect(() => { const node = own.current; if (!node) return; let frame = 0; const read = () => { frame = 0; const rect = node.getBoundingClientRect(), logicalWidth = parseFloat(getComputedStyle(node).width), progress = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / Math.max(1, window.innerHeight + rect.height))); setUnit(logicalWidth > 0 ? logicalWidth / 706 : 1); setOpen(frozen || reduced ? 0 : progress - .5) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen && !reduced) { window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule) }; return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) } }, [frozen, reduced]); return <FanContext.Provider value={{ open, unit }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-fan-open={open} style={{ ...props.style, pointerEvents: "none" }} /></FanContext.Provider> }) as NativeLayer
+}
+function fanCard(Component: NativeLayer, index: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(FanContext), base = index === 5 ? 0 : index + 1, angle = (base + (index + 3) * state.open) * 60; return <Component {...props} ref={ref} data-format-fan-card={index} style={{ ...props.style, rotate: `${angle}deg`, transformOrigin: "12.398373984% 13.034188034%", maskImage: `radial-gradient(circle ${9.3786 * state.unit}px at 12.398373984% 13.034188034%, transparent 92%, black 100%)`, WebkitMaskImage: `radial-gradient(circle ${9.3786 * state.unit}px at 12.398373984% 13.034188034%, transparent 92%, black 100%)`, pointerEvents: "none" } as DetailStyle} /> }) as NativeLayer }
+export function withFormatFanCard01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 0) }
+export function withFormatFanCard02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 1) }
+export function withFormatFanCard03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 2) }
+export function withFormatFanCard04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 3) }
+export function withFormatFanCard05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 4) }
+export function withFormatFanCard06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return fanCard(Component, 5) }
+export function withFormatSpecialPunch(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, maskImage: "radial-gradient(circle closest-side, transparent 73.70030581%, black 73.71%)", WebkitMaskImage: "radial-gradient(circle closest-side, transparent 73.70030581%, black 73.71%)", pointerEvents: "none" }} />) as NativeLayer }
+
+const FAN_POLYGONS = [
+    "polygon(73.053837426% 0.000000000%,0.000000000% 0.000000000%,0.000000000% 21.543201921%,0.000000000% 51.298616403%,0.000000000% 100.000000000%,73.053837426% 100.000000000%,73.053837426% 51.298616403%,100.000000000% 51.298616403%,100.000000000% 21.543201921%,100.000000000% 0.000000000%,73.053837426% 0.000000000%)",
+    "polygon(27.218530369% 0.000000000%,0.000000000% 0.000000000%,0.000000000% 21.543141567%,0.000000000% 51.298752842%,27.218530369% 51.298752842%,27.218530369% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,27.218530369% 0.000000000%)",
+    "polygon(0.000000000% 21.543104934%,0.000000000% 100.000000000%,41.983453431% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,41.983453431% 0.000000000%,0.000000000% 21.543104934%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,57.942042461% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 21.543094875%,57.942042461% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,57.941951304% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 21.543141567%,57.941951304% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 21.543141567%,0.000000000% 100.000000000%,42.058485716% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,42.058485716% 0.000000000%,0.000000000% 21.543141567%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,42.058160980% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,42.058160980% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 40.510824346%,49.585629007% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,100.000000000% 100.000000000%,34.837516901% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 21.551356495%,0.000000000% 78.448736926%,41.983544587% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,41.983544587% 0.000000000%,0.000000000% 21.551356495%)",
+    "polygon(0.000000000% 0.000000000%,0.000000000% 100.000000000%,57.942042461% 100.000000000%,100.000000000% 78.448310089%,100.000000000% 21.551362938%,57.942042461% 0.000000000%,0.000000000% 0.000000000%)",
+    "polygon(0.000000000% 21.551428815%,0.000000000% 100.000000000%,42.058231010% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%,42.058231010% 0.000000000%,0.000000000% 21.551428815%)",
+    "polygon(100.000000000% 0.000000000%,0.000000000% 0.000000000%,0.000000000% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%)",
+    "polygon(100.000000000% 0.000000000%,0.000000000% 0.000000000%,0.000000000% 100.000000000%,100.000000000% 100.000000000%,100.000000000% 0.000000000%)"
+] as const
+export function withFormatFanShape(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const own = React.useRef<HTMLElement | null>(null), [index, setIndex] = React.useState<number | null>(null); useOwnLayoutEffect(() => { const match = own.current?.id.match(/^format-fan-shape-(\d+)$/); if (match && Number(match[1]) < FAN_POLYGONS.length) setIndex(Number(match[1])) }, []); const clipPath = index === null ? undefined : FAN_POLYGONS[index]; return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-fan-shape={index} style={{ ...props.style, clipPath, WebkitClipPath: clipPath, pointerEvents: "none" }} /> }) as NativeLayer }
+const SevenGroundContext = React.createContext({ height: 1701, drift: 0 })
+export function withFormatSevenGround(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(SourceLayoutContext), frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), [geometry, setGeometry] = React.useState({ x: 0, y: 3740, width: 1440, height: 1701, clip: "none", drift: 0 })
+        useOwnLayoutEffect(() => { if (state.phone || frozen) return; let frame = 0; const read = () => { frame = 0; const l = state.layout, u = l.unit, y = window.scrollY, start = l.group + 2646 * u - state.height, end = l.deck + 213 * u - state.height / 2, p = reduced ? 0 : Math.max(0, Math.min(1, (y - start) / Math.max(1, end - start))), eased = p < .5 ? 4 * p ** 3 : 1 - (-2 * p + 2) ** 3 / 2, imageH = Math.round(99.586212 * u), step = imageH + Math.round(5 * u), period = step * 7, offset = Math.round(290 * u) + (Math.round(163.171875 * u) - 3 * step - Math.round(290 * u)) * eased - Math.max(0, y - end) * .18, slot = ((offset + 4 * step) % period + period) % period - step, destX = state.width / 2 - 167.5 * u + Math.round(128 * u), destY = l.deck + slot, originY = l.group + 945 * u, height = 1701 * u + (imageH - 1701 * u) * eased, top = originY + (destY - originY) * eased, width = state.width + (Math.round(78.913185 * u) - state.width) * eased, clip = p === 1 ? `inset(${Math.max(0, l.deck - top)}px 0px ${Math.max(0, top + height - l.deck - 426 * u)}px 0px)` : "none", progress = reduced ? .5 : Math.max(0, Math.min(1, (y - (start - (2646 * u + state.height) + 2646 * u)) / (2646 * u + state.height))), travel = 70 / 1701 * height; setGeometry({ x: destX * eased, y: top, width, height, clip, drift: -travel + travel * 2 * progress }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); if (!reduced) window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule); return () => { if (frame) cancelAnimationFrame(frame); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule) } }, [state.width, state.height, state.phone, frozen, reduced])
+        const style: React.CSSProperties | undefined = state.phone ? props.style : frozen ? { ...props.style, position: "absolute", left: 0, top: state.layout.group + 945 * state.layout.unit, width: state.width, height: 1701 * state.layout.unit, overflow: "hidden", pointerEvents: "none" } : { ...props.style, position: "absolute", left: geometry.x, top: geometry.y, width: geometry.width, height: geometry.height, clipPath: geometry.clip, overflow: "hidden", pointerEvents: "none" }
+        return <SevenGroundContext.Provider value={{ height: state.phone || frozen ? 1701 : geometry.height, drift: geometry.drift }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-seven-ground="true" style={style} /></SevenGroundContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatSevenImage(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(SevenGroundContext), extra = state.height * 140 / 1701; return <Component {...props} ref={ref} style={{ ...props.style, width: "100%", top: state.drift, height: state.height + extra, pointerEvents: "none" }} /> }) as NativeLayer }
+
+export function withFormatCutHardLight(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, mixBlendMode: "hard-light" }} />) as NativeLayer }

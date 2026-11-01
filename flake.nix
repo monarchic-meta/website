@@ -257,6 +257,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-format-details = (mkWebsiteCheck "source-format-details" ''
+            export MONARCHIC_FORMAT_DETAIL_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-details
+            pnpm run check:source-format-details-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

@@ -1,0 +1,494 @@
+{
+  "id": "HERO-013",
+  "classification": "Source inspiration / credited native source geometry and independent details",
+  "credit": "FORMAT — Obys and DES Special Project",
+  "sourceURL": "https://format.obys.agency/",
+  "galleryURL": "https://www.awwwards.com/sites/format",
+  "sourceHTMLSHA256": "ab1ddbdce66e0a2b45ab9ac88154140a30cb7f42d7e8ac7bcf1334397863a940",
+  "sourceViewBox": [
+    0,
+    0,
+    1401,
+    215
+  ],
+  "nativeParent": {
+    "left": 20,
+    "top": 19.7068,
+    "width": 1400,
+    "height": 214.8465381870093
+  },
+  "shapes": [
+    {
+      "index": 0,
+      "key": "opening-solid-letter-block-0",
+      "sourceD": "M0 46.1383V214.085H46.1383H109.701V1.90735e-05H46.1383L0 46.1383Z",
+      "sourceBox": [
+        0,
+        0.0000190735,
+        109.701,
+        214.0849809265
+      ],
+      "nativeBox": [
+        0,
+        0.000019059885795860098,
+        109.62269807280514,
+        213.93217223204854
+      ],
+      "polygon": "polygon(0% 21.551386149%, 0% 100%, 42.05823101% 100%, 100% 100%, 100% 0%, 42.05823101% 0%, 0% 21.551386149%)"
+    },
+    {
+      "index": 1,
+      "key": "opening-solid-letter-block-1",
+      "sourceD": "M226.434 0H117.715V79.9239H226.434V0Z",
+      "sourceBox": [
+        117.715,
+        0,
+        108.719,
+        79.9239
+      ],
+      "nativeBox": [
+        117.6309778729479,
+        0,
+        108.64139900071378,
+        79.86685224839401
+      ],
+      "polygon": "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%)"
+    },
+    {
+      "index": 2,
+      "key": "opening-solid-letter-block-2",
+      "sourceD": "M226.434 88.0225H117.715V167.946H226.434V88.0225Z",
+      "sourceBox": [
+        117.715,
+        88.0225,
+        108.719,
+        79.9235
+      ],
+      "nativeBox": [
+        117.6309778729479,
+        87.95967166309778,
+        108.64139900071378,
+        79.86645253390436
+      ],
+      "polygon": "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%)"
+    },
+    {
+      "index": 3,
+      "key": "opening-solid-letter-block-3",
+      "sourceD": "M234.453 46.1383V167.947L280.51 214.085H344.154V0H280.51L234.453 46.1383Z",
+      "sourceBox": [
+        234.453,
+        0,
+        109.701,
+        214.085
+      ],
+      "nativeBox": [
+        234.28565310492507,
+        0,
+        109.62269807280514,
+        213.93219129193434
+      ],
+      "polygon": "polygon(0% 21.551393138%, 0% 78.448746993%, 41.984120473% 100%, 100% 100%, 100% 0%, 41.984120473% 0%, 0% 21.551393138%)"
+    },
+    {
+      "index": 4,
+      "key": "opening-solid-letter-block-4",
+      "sourceD": "M351.762 0V214.085H415.325L461.463 167.947V46.1383L415.325 0H351.762Z",
+      "sourceBox": [
+        351.762,
+        0,
+        109.70100000000002,
+        214.085
+      ],
+      "nativeBox": [
+        351.51092077087793,
+        0,
+        109.62269807280515,
+        213.93219129193434
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 57.942042461% 100%, 100% 78.448746993%, 100% 21.551393138%, 57.942042461% 0%, 0% 0%)"
+    },
+    {
+      "index": 5,
+      "key": "opening-solid-letter-block-5",
+      "sourceD": "M469.484 0V214.167H515.623H579.185V0H515.623H469.484Z",
+      "sourceBox": [
+        469.484,
+        0,
+        109.70099999999996,
+        214.167
+      ],
+      "nativeBox": [
+        469.1488936473947,
+        0,
+        109.62269807280511,
+        214.0141327623126
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 42.058869108% 100%, 100% 100%, 100% 0%, 42.058869108% 0%, 0% 0%)"
+    },
+    {
+      "index": 6,
+      "key": "opening-solid-letter-block-6",
+      "sourceD": "M587.199 0V134.488H695.919V54.4824L641.109 0H587.199Z",
+      "sourceBox": [
+        587.199,
+        0,
+        108.72000000000003,
+        134.488
+      ],
+      "nativeBox": [
+        586.7798715203426,
+        0,
+        108.64239828693792,
+        134.392005710207
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 100% 100%, 100% 40.510974957%, 49.586092715% 0%, 0% 0%)"
+    },
+    {
+      "index": 7,
+      "key": "opening-solid-letter-block-7",
+      "sourceD": "M587.199 143.569V214.658H695.919L625.075 143.569H587.199Z",
+      "sourceBox": [
+        587.199,
+        143.569,
+        108.72000000000003,
+        71.089
+      ],
+      "nativeBox": [
+        586.7798715203426,
+        143.46652391149178,
+        108.64239828693792,
+        71.03825838686652
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 100% 100%, 34.838116262% 0%, 0% 0%)"
+    },
+    {
+      "index": 8,
+      "key": "opening-solid-letter-block-8",
+      "sourceD": "M703.934 1.90735e-05V214.167H767.496H813.635V46.1383L767.496 1.90735e-05H703.934Z",
+      "sourceBox": [
+        703.934,
+        0.0000190735,
+        109.70100000000002,
+        214.1669809265
+      ],
+      "nativeBox": [
+        703.4315488936473,
+        0.000019059885795860098,
+        109.62269807280515,
+        214.0141137024268
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 57.941130892% 100%, 100% 100%, 100% 21.54313458%, 57.941130892% 0%, 0% 0%)"
+    },
+    {
+      "index": 9,
+      "key": "opening-solid-letter-block-9",
+      "sourceD": "M821.246 46.1383V214.167H867.384H930.947V0H867.384L821.246 46.1383Z",
+      "sourceBox": [
+        821.246,
+        0,
+        109.70100000000002,
+        214.167
+      ],
+      "nativeBox": [
+        820.6598144182726,
+        0,
+        109.62269807280515,
+        214.0141327623126
+      ],
+      "polygon": "polygon(0% 21.543141567%, 0% 100%, 42.057957539% 100%, 100% 100%, 100% 0%, 42.057957539% 0%, 0% 21.543141567%)"
+    },
+    {
+      "index": 10,
+      "key": "opening-solid-letter-block-10",
+      "sourceD": "M938.965 46.1383V214.167H985.021H1048.67V0H985.021L938.965 46.1383Z",
+      "sourceBox": [
+        938.965,
+        0,
+        109.70500000000004,
+        214.167
+      ],
+      "nativeBox": [
+        938.2947894361171,
+        0,
+        109.62669521770168,
+        214.0141327623126
+      ],
+      "polygon": "polygon(0% 21.543141567%, 0% 100%, 41.981678137% 100%, 100% 100%, 100% 0%, 41.981678137% 0%, 0% 21.543141567%)"
+    },
+    {
+      "index": 11,
+      "key": "opening-solid-letter-block-11",
+      "sourceD": "M1056.27 0V214.167H1119.84H1165.97V46.1383L1119.84 0H1056.27Z",
+      "sourceBox": [
+        1056.27,
+        0,
+        109.70000000000005,
+        214.167
+      ],
+      "nativeBox": [
+        1055.5160599571734,
+        0,
+        109.62169878658105,
+        214.0141327623126
+      ],
+      "polygon": "polygon(0% 0%, 0% 100%, 57.948951686% 100%, 100% 100%, 100% 21.543141567%, 57.948951686% 0%, 0% 0%)"
+    },
+    {
+      "index": 12,
+      "key": "opening-solid-letter-block-12",
+      "sourceD": "M1203.85 0H1173.99V46.1383V109.865H1203.85V214.167H1283.69V0H1203.85Z",
+      "sourceBox": [
+        1173.99,
+        0,
+        109.70000000000005,
+        214.167
+      ],
+      "nativeBox": [
+        1173.152034261242,
+        0,
+        109.62169878658105,
+        214.0141327623126
+      ],
+      "polygon": "polygon(27.219690064% 0%, 0% 0%, 0% 21.543141567%, 0% 51.298752842%, 27.219690064% 51.298752842%, 27.219690064% 100%, 100% 100%, 100% 0%, 27.219690064% 0%)"
+    },
+    {
+      "index": 13,
+      "key": "opening-solid-letter-block-13",
+      "sourceD": "M1371.55 0H1291.71V46.1383V109.865V214.167H1371.55V109.865H1401V46.1383V0H1371.55Z",
+      "sourceBox": [
+        1291.71,
+        0,
+        109.28999999999996,
+        214.167
+      ],
+      "nativeBox": [
+        1290.7880085653105,
+        0,
+        109.21199143468947,
+        214.0141327623126
+      ],
+      "polygon": "polygon(73.053344313% 0%, 0% 0%, 0% 21.543141567%, 0% 51.298752842%, 0% 100%, 73.053344313% 100%, 73.053344313% 51.298752842%, 100% 51.298752842%, 100% 21.543141567%, 100% 0%, 73.053344313% 0%)"
+    }
+  ],
+  "geometryLicense": "Unverified; actual primary inlineSVG reused for credited unpublished recreation, not claimed originalCodexart.",
+  "sourceWebsiteBehaviorJSReused": false,
+  "clock": {
+    "timeZone": "Europe/Berlin",
+    "updateMilliseconds": 250,
+    "center": [
+      34,
+      34
+    ],
+    "outerRailRadius": 27,
+    "ballRadii": [
+      2,
+      3,
+      5
+    ],
+    "frozenUTC": "2026-11-01T11:00:00.000Z",
+    "method": "Independent radial circle-clearance math from source facts."
+  },
+  "reel": {
+    "text": [
+      "Desktop",
+      "Business Cards",
+      "Editorial",
+      "TV",
+      "Advert"
+    ],
+    "nativeTextWidth": 348,
+    "nativeFontSize": 42,
+    "nativeLineHeight": 37.8,
+    "top": -180,
+    "sourceRepeatLines": 40,
+    "authoredLines": 20,
+    "loopNativePixels": 756,
+    "baseNativePixelsPerSecond": 14,
+    "sourceVelocityMultiplier": 26,
+    "method": "Native ordinary-window absolute delta normalized60Hz fits originalLenisvelocity; not source-exact eased scroll."
+  },
+  "flower": {
+    "frame": {
+      "left": -26,
+      "top": 1074,
+      "width": 1497,
+      "height": 999
+    },
+    "imageTop": -70,
+    "imageHeight": 1139,
+    "parallaxRange": [
+      -70,
+      70
+    ],
+    "sourceAssetSHA256": "bee917a4fa973c875fe70f1028b606c1d79e1461e7e5c9ca7f58d21b689b46da",
+    "sourceURL": "https://format.obys.agency/assets/flower-CVKgWteV.webp",
+    "bitmapNotBundled": true
+  },
+  "font": {
+    "actualNativeFamily": "Obys Sans",
+    "sourceURL": "https://format.obys.agency/fonts/ObysSans-Regular.woff2",
+    "sha256": "2d6e1af3075ea8a3577dac5c210a808873bf6c06e23df2e11d4a8acfc7a1292e",
+    "bytes": 6272,
+    "binaryInRepo": false,
+    "registration": "Root verified actualnativeCustomFontUIupload; actualFramertypefaceassignment remainswriterstep."
+  },
+  "scope": "Corrects14retainednativewordmarkFrames, tinyclock/realrunningreel/genuineflowerground. Doesnotestablishallsourcechapters/preloader/Notes/Phonefidelity.",
+  "detailScopes": {
+    "sourceFacts": [
+      "14primarySVG paths and their bounding boxes, same14footerpaths",
+      "Tinyclock:Europe/Berlin source250ms query and ball radii2/3/5; largeclock24degrees/s with source-supported240scroll factor and ratios1/.25/1/12",
+      "100s record revolution and central-hole/glass dimensions",
+      "Native42px/37.8lineheight five-term reel; source base14px/s and26absolutevelocity coefficient",
+      "Scroll-driven3genuinephoto pairs/4slots each side; source.8scrub, not autoplay",
+      "52sourcegaugewords,26each side,7.5degree spacing,6sourceformat names",
+      "Late deck source7slots,99.586212height+5gap;source.18ordinaryscroll drift",
+      "Terminal2.6s step-end click/clack phases with1.3s offset",
+      "Responsive source document algebra keeps the true697pxwindowsection, separate firstUsage/laterPerception deck, exact firstscroll sidepanels and six14-path riveted lettercards. At1280×720 computedbody13474.102px matches observed13474px."
+    ],
+    "independentFits": [
+      "Lenis smoothing replaced by ordinaryscroll normalization",
+      "Window scrub exponential settling approximates original GSAP scrub",
+      "Gauge progress/growth and72point shape correspondence independently fitted",
+      "Terminal word entry/stagger simplified; source pointer physics not implemented"
+    ],
+    "notCompleted": [
+      "Source preload-curtain/logotype arrival and footer repeat-arrival timing",
+      "Exact clock/burst transition and magnetic poster-letter physics",
+      "Pointer-spawned field chips and played-state word removal",
+      "Full Notes placement and complete alternate Daughter journey",
+      "Actual source Phone behavior"
+    ]
+  },
+  "publicExports": [
+    "withFormatLogo01",
+    "withFormatLogo02",
+    "withFormatLogo03",
+    "withFormatLogo04",
+    "withFormatLogo05",
+    "withFormatLogo06",
+    "withFormatLogo07",
+    "withFormatLogo08",
+    "withFormatLogo09",
+    "withFormatLogo10",
+    "withFormatLogo11",
+    "withFormatLogo12",
+    "withFormatLogo13",
+    "withFormatLogo14",
+    "withFormatMiniSecond",
+    "withFormatMiniMinute",
+    "withFormatMiniHour",
+    "withFormatRunningReel",
+    "withFormatFlowerGround",
+    "withFormatFlowerDrift",
+    "withFormatLargeDial",
+    "withFormatDialSecond",
+    "withFormatDialMinute",
+    "withFormatDialHour",
+    "withFormatRecordSurface",
+    "withFormatRecordGlass",
+    "withFormatRecordSpin",
+    "withFormatTriangleOutline",
+    "withFormatTriangleLeftMask",
+    "withFormatTriangleRightMask",
+    "withFormatPosterHand",
+    "withFormatWindowSequence",
+    "withFormatWindowDisc",
+    "withFormatWindowPhotoStrip",
+    "withFormatWindowPhoto01",
+    "withFormatWindowPhoto02",
+    "withFormatWindowPhoto03",
+    "withFormatWindowPhoto04",
+    "withFormatWindowName01",
+    "withFormatWindowName02",
+    "withFormatWindowName03",
+    "withFormatWindowName04",
+    "withFormatGaugeField",
+    "withFormatGaugeWord",
+    "withFormatGaugeWhiteRing",
+    "withFormatGaugeBlackRing",
+    "withFormatGaugePaneA",
+    "withFormatGaugePaneB",
+    "withFormatGaugeShape",
+    "withFormatClickPhaseA",
+    "withFormatClickPhaseB",
+    "withFormatFieldRule",
+    "withFormatDeckRuntime",
+    "withFormatDeckPhoto01",
+    "withFormatDeckPhoto02",
+    "withFormatDeckPhoto03",
+    "withFormatDeckPhoto04",
+    "withFormatDeckPhoto05",
+    "withFormatDeckPhoto06",
+    "withFormatDeckPhoto07",
+    "withFormatDeckInk",
+    "withFormatRefinedDocument",
+    "withFormatOpeningCardFlow",
+    "withFormatUsageFlow",
+    "withFormatDialsFlow",
+    "withFormatTriangleFlow",
+    "withFormatWindowFlow",
+    "withFormatCrossingFlow",
+    "withFormatGaugeFlow",
+    "withFormatPosterFlow",
+    "withFormatFieldFlow",
+    "withFormatFooterFlow",
+    "withFormatLateDeckFlow",
+    "withFormatSevenBlocksFlow",
+    "withFormatEarlyPanelsFlow",
+    "withFormatFanFlow",
+    "withFormatFogFlow",
+    "withFormatFanMechanism",
+    "withFormatFanCard01",
+    "withFormatFanCard02",
+    "withFormatFanCard03",
+    "withFormatFanCard04",
+    "withFormatFanCard05",
+    "withFormatFanCard06",
+    "withFormatSpecialPunch",
+    "withFormatFanShape",
+    "withFormatSevenGround",
+    "withFormatSevenImage",
+    "withFormatCutHardLight"
+  ],
+  "sourceFont": {
+    "family": "Obys Sans",
+    "sourceURL": "https://format.obys.agency/fonts/ObysSans-Regular.woff2",
+    "bytes": 6272,
+    "sha256": "2d6e1af3075ea8a3577dac5c210a808873bf6c06e23df2e11d4a8acfc7a1292e",
+    "nativeUpload": "Owner/root verified nativeCustomFont upload; commercialfont binary remains external, not embedded in this module/repository.",
+    "licence": "Unverified; credited unpublished source recreation."
+  },
+  "resourcePolicy": {
+    "gpuContexts": 0,
+    "runtimeFetches": 0,
+    "liveNativePaintMaxFPS": 30,
+    "clockIntervalMS": 250,
+    "staticTargets": [
+      "canvas",
+      "export",
+      "thumbnail"
+    ],
+    "reducedMotion": "No timed/parallax/gauge/deck motion",
+    "cleanup": "Observers/listeners/clocksubscribers/RAF removed after unmount"
+  },
+  "nativeFont": "Actual uploaded native Obys Sans; commercial binary remains external.",
+  "sourceFlow": {
+    "referenceViewport": [
+      1280,
+      720
+    ],
+    "expectedBodyHeight": 13474.102413801516,
+    "windowSectionHeight": 697,
+    "sourceDimensions": "Independent algebra from public source constants; no original behaviorJS imported.",
+    "sourceFanNativeGeometry": "Sixcards,14blackpolygon parts and native rivet/glass layers, source60degree formula driven by ordinaryscroll/reverse."
+  },
+  "localNixValidation": {
+    "path": "/nix/store/lr736bg7fdxdfbpncsy031mwg526nav7-monarchic-website-source-format-details-0.0.1",
+    "sourceSHA256": "c8118585d79a90237812c14e3196b63e42f383bbefd34a979c4457e30768a4a3",
+    "sourceBytes": 61306,
+    "focusedChecks": 6,
+    "actualReactBrowserChecks": 48,
+    "scope": "Current self-contained public89HOC module: strict types/sourcegeometry, native mask silhouette, timers/scroll/reverse/static/reduced/ownvisibility/cleanup and sourceflow. ActualFramerregistration/sourcebinding/reload remainseparate."
+  }
+}

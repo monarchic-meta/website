@@ -1,0 +1,28 @@
+<svg width="1401" height="215"  viewBox="0 0 1401 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FORMAT">
+          <g class="logo-letter" data-letter="F">
+            <path d="M0 46.1383V214.085H46.1383H109.701V1.90735e-05H46.1383L0 46.1383Z" fill="#ffffff"/>
+            <path d="M226.434 0H117.715V79.9239H226.434V0Z" fill="#ffffff"/>
+            <path d="M226.434 88.0225H117.715V167.946H226.434V88.0225Z" fill="#ffffff"/>
+          </g>
+          <g class="logo-letter" data-letter="O">
+            <path d="M234.453 46.1383V167.947L280.51 214.085H344.154V0H280.51L234.453 46.1383Z" fill="#ffffff"/>
+            <path d="M351.762 0V214.085H415.325L461.463 167.947V46.1383L415.325 0H351.762Z" fill="#ffffff"/>
+          </g>
+          <g class="logo-letter" data-letter="R">
+            <path d="M469.484 0V214.167H515.623H579.185V0H515.623H469.484Z" fill="#ffffff"/>
+            <path d="M587.199 0V134.488H695.919V54.4824L641.109 0H587.199Z" fill="#ffffff"/>
+            <path d="M587.199 143.569V214.658H695.919L625.075 143.569H587.199Z" fill="#ffffff"/>
+          </g>
+          <g class="logo-letter" data-letter="M">
+            <path d="M703.934 1.90735e-05V214.167H767.496H813.635V46.1383L767.496 1.90735e-05H703.934Z" fill="#ffffff"/>
+            <path d="M821.246 46.1383V214.167H867.384H930.947V0H867.384L821.246 46.1383Z" fill="#ffffff"/>
+          </g>
+          <g class="logo-letter" data-letter="A">
+            <path d="M938.965 46.1383V214.167H985.021H1048.67V0H985.021L938.965 46.1383Z" fill="#ffffff"/>
+            <path d="M1056.27 0V214.167H1119.84H1165.97V46.1383L1119.84 0H1056.27Z" fill="#ffffff"/>
+          </g>
+          <g class="logo-letter" data-letter="T">
+            <path d="M1203.85 0H1173.99V46.1383V109.865H1203.85V214.167H1283.69V0H1203.85Z" fill="#ffffff"/>
+            <path d="M1371.55 0H1291.71V46.1383V109.865V214.167H1371.55V109.865H1401V46.1383V0H1371.55Z" fill="#ffffff"/>
+          </g>
+        </svg>
