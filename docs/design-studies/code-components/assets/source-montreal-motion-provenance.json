@@ -1,0 +1,63 @@
+{
+  "referenceID": "HERO-008",
+  "classification": "Source inspiration",
+  "sourceTitle": "PP Neue Montreal",
+  "sourceCredit": "Pangram Pangram",
+  "siteCredit": "Demande Spéciale",
+  "liveURL": "https://neuemontreal.com/",
+  "galleryURL": "https://www.lapa.ninja/post/pp-neue-montreal/",
+  "construction": "Independent public React native-layer HOCs from retained source facts. No original website behavior code, private DOM queries, whole UI posters, runtime fonts/media, Canvas or WebGL.",
+  "mechanisms": {
+    "orbit": {
+      "durationSeconds": 40,
+      "posters": 8,
+      "radiusFraction": 0.32,
+      "cardWidth": "circumference/8*.6",
+      "aspect": 1.25,
+      "introMilliseconds": 1200,
+      "ease": "easeOutCubic",
+      "observerThreshold": 0.2,
+      "entryGate": "Source isIntersecting callback only; numericthreshold .2. Runtime entries govern partial-visibility start.",
+      "introClock": "After first entry wall-time advances offscreen withoutRAF; rotation holds. ExplicitPause/reduced suspend both."
+    },
+    "city": {
+      "scrollOffsets": [
+        "start start",
+        "end start"
+      ],
+      "end": 0.7,
+      "display": [
+        900,
+        100
+      ],
+      "text": [
+        200,
+        700
+      ]
+    },
+    "tilt": {
+      "perspective": 500,
+      "desktopDegrees": 20,
+      "phoneDegrees": 1,
+      "desktopScale": 1.1,
+      "phoneScale": 1
+    }
+  },
+  "boundaries": [
+    "Current function facts do not establish historical archive pointer/scroll behavior.",
+    "Native selectable poster elements replace original private Canvas image prerendering. No source JS reused.",
+    "Public ordinary/nested scroll replaces source Framer Motion motion value implementation; source endpoint math and names are retained.",
+    "Pointer updates use RAF coalescing and cached own bounds instead of the original2ms debounce/repeated rotated bounds read.",
+    "Shared native pause, reduced-motion and hidden-document policy are study accessibility/resource additions.",
+    "Existing city-weight-copy is a declared authored explanatory substitute; this actor does not claim source text reproduction.",
+    "Fixture pixels use owned card colors and an open-licensed SpaceGrotesk font (300–700 axis); actual source commercial Display100–900/Text200–700 font appearance requires native Framer verification."
+  ],
+  "nixValidation": {
+    "path": "/nix/store/vb9x66z3xi11x2zxzzqmh5viy1vywf0i-monarchic-website-source-montreal-motion-0.0.1",
+    "sourceSHA256": "4262d0ff1a9c891698b18515d14575e3fad8fa5b715ca43addea797a86bbe0a5",
+    "sourceBytes": 17600,
+    "focusedChecks": 4,
+    "actualReactBrowserChecks": 38,
+    "scope": "Native own-sized geometry, orbit/pause/exactheldpixels, actualnumericIOandisIntersectingpredicate, sourceentrancewallclock/visiblerotation, scroll/reverse/axes, nativepointerfallback/cancellation and cleanup. ActualFramerregistration/bindings/fontselectionareseparate."
+  }
+}

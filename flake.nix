@@ -266,6 +266,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-montreal-motion = (mkWebsiteCheck "source-montreal-motion" ''
+            export MONARCHIC_MONTREAL_MOTION_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-montreal-motion
+            pnpm run check:source-montreal-motion-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
