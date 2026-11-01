@@ -45,6 +45,11 @@
 - Keep external work, recreations, and close adaptations credited within
   **Source inspiration**, including when Codex authors the recreation or
   adaptation. Reserve **Original compositions** for independently composed work.
+- Source recreations should closely match the selected original's composition,
+  artwork, typography, scale, materials and complete interaction sequence.
+  Compare corresponding source states directly. A shared visual template,
+  generic substitute effect or first-screen snapshot does not satisfy this;
+  record unavoidable substitutions and unobserved behavior explicitly.
 - Keep the reference library, native recreations, original compositions and live
   coding studies on separate Framer Design pages so opening one collection does
   not mount the entire moodboard. Move existing groups while preserving IDs,
