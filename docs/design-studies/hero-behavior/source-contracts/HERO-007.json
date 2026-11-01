@@ -140,29 +140,43 @@
       "Independent deterministic bounded pointer history and spring replay fit; no claim of pixel parity with the source.",
       "Phone composition uses current public breakpoints; controlled source Phone behavior remains unobserved.",
       "Avoid duplicating timed canvas labels with old fake static labels."
-    ]
+    ],
+    "nativeHover": "SourceCantorNativeBehaviors.tsx supplies source-supported native arrow transitions and navigation backdrop filtering; exact stored bindings are recorded below."
   },
   "sourceBranding": {
     "logo": {
       "url": "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8ba0bebf2f21a6d102fc5_7dc3c5babcb84e9e1fccd29199ccd246_Cantor8%20Logo.svg",
       "bytes": 16784,
       "sha256": "9794d83a3f30c19c0e537f5f0301e24c54f4f76ca417812b786ce6b5a8ebba23",
-      "viewBox": [0, 0, 632, 101]
+      "viewBox": [
+        0,
+        0,
+        632,
+        101
+      ]
     },
     "desktopArrow": {
       "url": "https://cdn.prod.website-files.com/69e74ca8162801f4b950053a/69e74fc05884ed1de7bac5d3_arrow.png",
       "bytes": 295,
       "sha256": "c8d302782922d7d25103c95e1a5401555338b493e4dfc3eace3fdd491e648521",
-      "dimensions": [26, 26]
+      "dimensions": [
+        26,
+        26
+      ]
     },
     "baseArrow": {
       "url": "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8bba2ff6df15b4a373bec_arrow-diagonal.svg",
       "bytes": 1435,
       "sha256": "bfd558a7f83b45b004ccef303d0d759e0322b41c80b3b1d94db68b6cc7eaf1ff",
-      "viewBox": [0, 0, 14, 14]
+      "viewBox": [
+        0,
+        0,
+        14,
+        14
+      ]
     },
     "nativeAuthoring": "Preserve the genuine pixel wordmark and arrow shapes. Keep individual text, tabs, buttons and links editable, including the white active Home tab and white right-hand contact button. Use the logo's fitted aspect ratio rather than cropping it in a generic text-logo box.",
-    "limits": "Individual source assets remain credited comparison/recreation material with unverified reuse rights. The header correction does not implement the source's 620ms arrow hover choreography. Flat native nav fill approximates the source backdrop blur; Phone remains adapted."
+    "limits": "Source assets remain credited recreation material. Hover constants come from current public CSS; selected-archive interaction causality and controlled source Phone comparison remain unverified. The existing native nine-cell header arrow is retained rather than replaced with the current-source PNG."
   },
   "savedPreviewVerification": {
     "status": "BOUNDED_ACTUAL_PREVIEW_PASS",
@@ -184,9 +198,59 @@
       "Actual Pause and Foundation handoff verification remain separate earlier evidence."
     ],
     "limits": [
-      "Source 620ms arrow hover choreography and native backdrop blur are not reproduced.",
+      "The later native arrow-hover and backdrop additions have MCP model acknowledgments, but no actual post-change hover/blur or editor reload verification while connected-browser routing is unreliable.",
       "Spring seeds, pointer history, source-font substitutes and the Phone composition remain fitted.",
       "Passing the bounded rendering/input checks does not establish pixel-identical source fidelity."
+    ],
+    "scope": "These actual Preview observations predate the later274/275 hover refinement. They verify the retained base header/instrument; the new hover/blur and reload checks remain pending."
+  },
+  "nativeHoverRefinement": {
+    "status": "MCP_SOURCE_AND_NATIVE_BINDINGS_APPLIED_ACTUAL_PREVIEW_PENDING",
+    "pageID": "IhJNN_eMc",
+    "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=IhJNN_eMc",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+      "bytes": 7703,
+      "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+    },
+    "publicOverrides": 5,
+    "sourceBatch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-new-helper-plus-proximity-source-window-274-output.json",
+      "bytes": 462017,
+      "sha256": "ad0575c9fbfdd1df71401be8c3d90ade61c70f23a3774518f02db8de12c7d3f1"
+    },
+    "nativeBinding": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-native-hover-binding-275-output.json",
+      "bytes": 584656,
+      "sha256": "c6aa8823c7ccc70fe28b3a4751707164cfdc17dd496fda234af58b9727e4d2dd"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-native-behaviors-provenance.json",
+      "bytes": 7777,
+      "sha256": "7a07214134590ac8009f0f857fab3a626bdd00a33fd3be372031cdaf6524913b"
+    },
+    "localValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-007/validation/native-hover/locked-nix-proof.json",
+      "bytes": 1160,
+      "sha256": "e7e212e21696396c26281f261c0dc04dde49b27dc129affd2ed389b367ac10a3"
+    },
+    "storedModel": {
+      "newPrimaryFrames": 12,
+      "newTruePhoneFrames": 12,
+      "primaryOnlyCellMoves": 9,
+      "primaryHOCBindings": 8,
+      "inheritedPhoneHOCChecks": 8,
+      "sourceFiles": 47,
+      "userCodePlacements": 209,
+      "nativeDefinitions": 16
+    },
+    "behavior": "Fine-pointer Desktop620ms diagonal outgoing/incoming arrows with source easing; CTA scale variation and7px navigation backdrop blur. Native shapes, source arrow media, URLs, Phone base SVG and all original cell identities remain editable.",
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "limits": [
+      "Current public-source constants inform the animation; the selected archive does not independently verify those input causes.",
+      "Focus behavior and Phone disable/reset are declared adaptations. Actual pointer/focus painting and filter support still require Framer Preview.",
+      "Connected-browser automation remains off after the owner observed wrong-chat tab routing; local Chromium fixtures and MCP model checks are separate evidence levels."
     ]
   }
 }
