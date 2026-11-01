@@ -45,6 +45,16 @@ typography, negative space and media placement complete the opening. Origin's
 playback control belongs below its small tile. Hide review labels where they
 would introduce graphics absent from the source.
 
+The source component is a three-file manual handoff. Keep
+[SourceHeroMacAtlas0.ts](../code-components/SourceHeroMacAtlas0.ts) and
+[SourceHeroMacAtlas1.ts](../code-components/SourceHeroMacAtlas1.ts) beside the
+main component, with their filenames and relative imports intact. They contain
+the two halves of its losslessly packed vector data, without external requests
+or additional component instances. Register the data files before the main
+component. Splitting the package keeps each compiled file below Framer's 1 MiB
+limit; copying the main file alone leaves its imports unresolved. All twenty
+glyphs, 125 sampled frames and quantized contour points are retained.
+
 ## Playback and verification
 
 Canvas motion defaults off. Explicit editor opt-in is separate from Preview

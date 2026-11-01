@@ -91,9 +91,27 @@
       "key": "source-hero-page",
       "sourceFile": "SourceHeroPageStudy.tsx",
       "actualRegisteredComponentID": null,
-      "sourceSHA256": null,
+      "sourceSHA256": "77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a",
       "schemaCount": 21,
-      "status": "awaiting-exact-approved-registered-source-receipt"
+      "status": "awaiting-exact-approved-registered-source-receipt",
+      "sourceBytes": 398407,
+      "supportFiles": [
+        {
+          "sourceFile": "SourceHeroMacAtlas0.ts",
+          "sourcePath": "docs/design-studies/code-components/SourceHeroMacAtlas0.ts",
+          "sha256": "ce295af7fc27efb67977518af62fafd2e3ab1d0d9f06bb5078fe37b532668412",
+          "bytes": 534016,
+          "kind": "literal vector data module"
+        },
+        {
+          "sourceFile": "SourceHeroMacAtlas1.ts",
+          "sourcePath": "docs/design-studies/code-components/SourceHeroMacAtlas1.ts",
+          "sha256": "714dcd86b68aa09ba544335e18f18797d6e49084a7e14d20776fef5c5f3a2682",
+          "bytes": 534016,
+          "kind": "literal vector data module"
+        }
+      ],
+      "packagePolicy": "Manually upload both exact sibling data modules before the main component; preserve filenames/imports. No automatic synchronization or external CDN data dependency."
     }
   ],
   "reviewFooter": {
