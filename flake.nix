@@ -169,6 +169,10 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-bleibt-project-field = mkWebsiteCheck "source-bleibt-project-field" ''
+            export MONARCHIC_BLEIBT_FIELD_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-bleibt-project-field
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-017",
+  "classification": "Source inspiration / native procedural asset study",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "gallery": "https://minimal.gallery/bleibtgleich-2026/",
+  "actor": {
+    "path": "../SourceBleibtProjectField.tsx",
+    "sha256": "e1ec2267f140d9211e5896a056df48e5d6b23b53574b0d9b74fc905eb2ec65a6",
+    "bytes": 17779,
+    "method": "Independent CSS3D projection and public native Framer HOCs. Image fills and text remain editable; no imported source behaviorJavaScript or Three/WebGL dependency."
+  },
+  "sourceGeometry": {
+    "kind": "Current public-code facts and actual DOM geometry, distinct from historical input observation",
+    "viewport": [
+      1280,
+      720
+    ],
+    "planes": 16,
+    "uniqueImages": 13,
+    "fibonacciCandidates": 40,
+    "beltAbsY": 0.55,
+    "radius": 1.85,
+    "planeWidth": 0.4,
+    "cameraFovDegrees": 48,
+    "autoRadiansPer60HzFrame": 0.003,
+    "pinScale": 3.2,
+    "fieldLogicalRect": [
+      316.4375,
+      2471.921875,
+      647.109375,
+      647.109375
+    ],
+    "featuredSection": [
+      0,
+      1913.515625,
+      1280,
+      1531.546875
+    ],
+    "observedHeadingAtScroll2160": {
+      "width": 785,
+      "top": 324.796875
+    }
+  },
+  "sourceImages": [
+    {
+      "placement": 1,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a6ba34a52217319fe1fbd57_img-cover-velor-app.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 2,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660df2554cadd26cc0e5f4_img-cover-bleibtgleich-25.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 3,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660aa2e419e49ca43e041b_img-work-in-progress-cover.avif",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "placement": 4,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660aa2e419e49ca43e041b_img-work-in-progress-cover.avif",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "placement": 5,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660dd9f64b053327a540d1_img-cover-jds.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 6,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660aa2e419e49ca43e041b_img-work-in-progress-cover.avif",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "placement": 7,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660dcf6a5afe2ac40d6100_img-cover-nabil-issa-concept.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 8,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660aa2e419e49ca43e041b_img-work-in-progress-cover.avif",
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "placement": 9,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660dfa6a5afe2ac40d6bc7_img-cover-grabl-app.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 10,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a763729d43e0aa8e4d7f402_mkaan-cover_converted.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 11,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e042e5ac3690957fa67_img-cover-fool-miniapp.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 12,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e0b36062aa76138a9d1_img-cover-metrics-over-aesthetics.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 13,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e1b36062aa76138ac6b_img-cover-do-lorem-ipsum.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 14,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e2312af271ff52c6ab5_img-cover-cybernation.avif",
+      "width": 1011,
+      "height": 1360
+    },
+    {
+      "placement": 15,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e29f6f7472625bc9e17_img-cover-grabl-app-logo.avif",
+      "width": 1011,
+      "height": 680
+    },
+    {
+      "placement": 16,
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e3368a1aa809715cbdd_img-cover-xpm-platform.avif",
+      "width": 1011,
+      "height": 680
+    }
+  ],
+  "validation": {
+    "local": "ActualReact18 SSR/native CSS3D,16planes/aspects/ref/events, realhover/clickpin/drag/scroll, static350px field,785px source sticky width/top, terminalAllWorks/reverse andcleanup.",
+    "nixOutput": "/nix/store/wvmkqxhkq9bfr1nmw995bw54kwxl4iym-monarchic-website-source-bleibt-project-field-0.0.1",
+    "framer": "Native attachment and reload proof remain separate."
+  },
+  "limits": [
+    "CSS3D replaces the source WebGL material. Reveal order and hover/pin interpolation are fitted.",
+    "Phone is independently adapted; source Phone was not observed.",
+    "Untransformed native field, native image order/aspects and overflow-visible sticky ancestors are required.",
+    "This actor covers the Work handoff, not the separate opening fluid or whole source site."
+  ],
+  "license": "Original project art and source geometry belong to their creators. Reuse rights unverified; credited unpublished prototype. Source imagebytes are not stored in Git."
+}
