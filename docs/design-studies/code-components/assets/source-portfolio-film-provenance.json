@@ -471,7 +471,8 @@
     "Only the first grain/noise Escape family was visually observed. The other five appearances are independent approximations of inspected source categories.",
     "Phone swipe thresholds are code-inspected facts, not a controlled source Phone comparison. Responsive utility layout still needs actual Framer/native/source QA.",
     "The last requestVideoFrameCallback timestamp can lag an immediately paused draw by a source-frame interval; source-fidelity tests keep zero color tolerance and test only the annotated and nearest±one genuine decoded frame. Exact source-frame offset is reported rather than hidden.",
-    "Default Canvas selected-film loop differs from the full Preview project cycle, protecting editor native selection and still controls."
+    "Default Canvas selected-film loop differs from the full Preview project cycle, protecting editor native selection and still controls.",
+    "Pausing stores immutable movie pixels and releases the decoder; resuming seeks to the recorded media time and may repeat an adjacent source frame. Within the fitted immersive view, left/right keyboard selection is an independent accessibility control, not verified source behavior."
   ],
   "syntheticFixtures": {
     "manifest": "scripts/fixtures/portfolio-film/manifest.json",
@@ -479,8 +480,23 @@
     "purpose": "Owned deterministic FFmpeg testsrc2/hue test patterns for pure-Nix controller/resource/decoder tests only; never product art or source appearance evidence."
   },
   "verification": {
-    "local": "Seven strict groups, two Chromium/React layouts and sixteen actual source-film frame comparisons passed on the parent. Current native cancellation and two-field media/resource tests pass on the amendment, including an explicitly delayed HTTP poster response. Each retained report names its actual source SHA; the closed byte proof records inherited drawing evidence.",
-    "actualFramer": "Pending source registration, schema/HOC discovery, native bindings and actual editor reload/Preview behavior QA."
+    "local": "All four pure Nix commands passed directly on frozen f29: strict types, two real React/Chromium layouts, native motion callbacks and two-field media/resources including an explicitly held late HTTP poster response. The sixteen actual source-film comparisons retain their true parent629 SHA; the closed three-replacement proof shows drawing and media-decoder equivalence.",
+    "actualFramer": "Component file registered cleanly with exact f29 source, default export Z06zNxt,25 controls and23 overrides. Native page bindings, source-comparison interactions and actual editor reload/Preview QA remain pending.",
+    "pureNix": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/film-controller/nix/receipt.json",
+      "sha256": "d26138e30e092c9d432a3f1c2877ca47c48fc64bc011b371040a96ca9ccc6891",
+      "bytes": 3633
+    },
+    "mixedIntegration": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/validation/behavior-integration/with-film-cantor/final-nix/receipt.json",
+      "sha256": "ff1be64fcde020098ed06db2b6fad04e96f5e19b79db8b72afa3a0559f904454",
+      "bytes": 7775
+    },
+    "componentFileRegistration": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/film-controller/registration/receipt.json",
+      "sha256": "ef540d94956054bd41c51675eaab59c4cd328d640432243754280a8ffff50427",
+      "bytes": 4664
+    }
   },
   "runtimeAmendment": {
     "parentSHA256": "629651d0e322a6c71482231269bb2f6495d651c04ffb9602c1adf05c5e19d8e8",
