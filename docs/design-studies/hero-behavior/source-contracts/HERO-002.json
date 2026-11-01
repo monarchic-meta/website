@@ -243,15 +243,15 @@
     },
     {
       "from": 48,
-      "to": 52,
+      "to": 51.083333333333336,
       "state": "type-grid",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "The closing pale-to-dark cut is observed at source frame1226/24fps (51.083333s); phase36 entry remains the approximate48s boundary."
     },
     {
-      "from": 52,
+      "from": 51.083333333333336,
       "to": 52.314558,
       "state": "end-credits",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited.",
+      "boundaryPrecision": "The closing pale-to-dark cut is observed at source frame1226/24fps (51.083333s); phase36 entry remains the approximate48s boundary.",
       "sourceMeaning": "closing poem composition; the historical end-credits controller key is retained for compatibility"
     }
   ],
@@ -1457,7 +1457,7 @@
   ],
   "sourceTextPolicy": "AJEDREZ/title and brief functional labels retained. Long poem/manuscript/caption material must be a visibly declared substitute or licensed/public-domain source; do not imply exact original words.",
   "remainingFidelityGaps": [
-    "Subsecond cuts and continuous internal photographic motion were not audited.",
+    "The48–52s source interval is inspected at24fps. Earlier subsecond cuts, the exact late scattered-word entry, continuous photography outside the cropped37–39s aperture and full per-word trajectories remain incomplete.",
     "The selected film supplies genuine held photographic crops; underlying photographic authors and reuse licenses remain unverified.",
     "Source audio/voiceover is present but unlistened; do not synthesize it or claim a faithful soundtrack.",
     "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
@@ -1557,10 +1557,10 @@
     "compilation": "Nine native scene components reduced the generated page enough to update after a fresh editor reload. Their genuine Phone variants retain localized editable parts. The ed00776c controller has actual responsive playback/fit recovery and a complete37-scene Desktop Replay. Current1f1f465b preserves those44 exported bodies and adds one saved photographic-motion HOC; its actual native canvas/Preview check is pending. Earlier size rejection and cached/empty Preview observations remain historical evidence; a quiet console alone is not a compilation check."
   },
   "savedPreviewVerification": {
-    "status": "PRIOR_DESKTOP37_PHONE_ART37_PASS_NEW_OVERHEAD_APERTURE_ACTUAL_PAINT_PENDING",
+    "status": "PRIOR37_PHASE_ACTUAL_PASS_NEW_APERTURE_AND_WORD_SEQUENCE_MCP_APPLIED_PREVIEW_PENDING",
     "pageID": "ANWBjWXdj",
     "afterEditorReload": true,
-    "liveFramerSourceSHA256": "1f1f465bec64d9075d5774f676006638bf0016c1183aec68e64d1ffb36543e9b",
+    "liveFramerSourceSHA256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d",
     "evidence": {
       "full37PhaseClockRun": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-final-desktop-sequence.json",
@@ -1682,10 +1682,12 @@
     "limits": [
       "The first capture of all 37 scenes predates corrected component publication; current scenes 2, 10 and 11 have separate superseding evidence.",
       "Substitute verse and fitted fonts, held photographs, approximate cuts, still grain and omitted audio remain explicit source differences.",
-      "Phase36 holds a fitted grid arrangement while the source changes from scattered words at48seconds to a sparse grid with an empty center. A native geometry refinement is queued.",
+      "The earlier phase36 held one arrangement. Revised native49s perimeter and12 sampled word poses now have MCP acknowledgments; their actual Framer motion is unverified.",
       "The complete Phone native-art capture uses ac767; the ed00776c change only rebinds host observers and has separate actual responsive playback/fit evidence. Do not relabel the historical Phone capture as an ed00776c continuous37-scene run."
     ],
-    "previewVerifiedSourceSHA256": "ed00776c09e8e3dee9f3086cc871356200d6137987222f06ee897ba31c64c327"
+    "previewVerifiedSourceSHA256": "ed00776c09e8e3dee9f3086cc871356200d6137987222f06ee897ba31c64c327",
+    "currentCodeAfterEditorReload": false,
+    "scope": "The retained afterEditorReload=true and verified list describe the earlier source revisions named in their captures. They do not verify the new46-export source, aperture or native word-motion binding."
   },
   "overheadPhotographicMotion": {
     "status": "SOURCE_AND_NATIVE_BINDING_SAVED_ACTUAL_PAINT_PENDING",
@@ -1701,8 +1703,8 @@
     },
     "source": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
-      "bytes": 28881,
-      "sha256": "1f1f465bec64d9075d5774f676006638bf0016c1183aec68e64d1ffb36543e9b"
+      "bytes": 55156,
+      "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photo-provenance.json",
@@ -1710,7 +1712,7 @@
       "sha256": "c4790d4cb3426e94e3cf8b0eaf44fd923426e22ece96199c92eb847f5cacc881"
     },
     "export": "withAjedrezOverheadMotion",
-    "publicOverrides": 45,
+    "publicOverrides": 46,
     "retainedApertures": {
       "desktop": "HfkfZ9q4q",
       "phone": "wh9JF07sVHfkfZ9q4q"
@@ -1741,8 +1743,111 @@
     },
     "limits": [
       "The clean source49-frame crop is fitted into the existing37–39 second phase. Actual Framer native child/canvas visibility, moving pixels and shared-clock controls still require Preview verification.",
-      "Other players/horse/hand passages retain held photographs or omit native timed strip assembly. Phase36 still needs the approved hollow-grid refinement and source48→49 timing inspection.",
-      "All earlier complete-scene/Phone captures retain their original source revision; the new45-export source has no claimed full Framer playback capture."
+      "Other players/horse/hand passages retain held photographs or omit native timed strip assembly. Phase36 static geometry and12 sampled word poses are applied later, with explicit source-fit limits and pending actual paint.",
+      "Earlier complete-scene/Phone captures retain their original source revisions. Current46-export motion has local tests and model acknowledgments, without a claimed new full Framer playback capture."
+    ],
+    "initialSource": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/SourceAjedrezSequence-before-ending.tsx",
+      "bytes": 28881,
+      "sha256": "1f1f465bec64d9075d5774f676006638bf0016c1183aec68e64d1ffb36543e9b"
+    },
+    "initialPublicOverrides": 45
+  },
+  "closingWordMotion": {
+    "status": "MCP_SOURCE_STATIC_GEOMETRY_AND_INSTANCE_BINDING_APPLIED_ACTUAL_PREVIEW_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 55156,
+      "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
+    },
+    "publicOverrides": 46,
+    "preservedExistingPublicOverrides": 45,
+    "export": "withAjedrezTypeGridMotion",
+    "sourceBatch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-type-grid-source46-update-278-output.json",
+      "bytes": 469467,
+      "sha256": "e2374db4e5c6795cc6bb9b71176fe65ba49a7270cf43b96b4a1a3eb5668ca104"
+    },
+    "nativeBinding": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-type-grid-native-binding-279-output.json",
+      "bytes": 461868,
+      "sha256": "d6749ef22700eac17e06c51e52dadbd2a2eeefde3e586dda283a5753b67195e8"
+    },
+    "nativeStaticGeometry": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-002-native-word-sequence-276-278-279/HERO-002-phase36-hollow-grid-native-276-output.json",
+      "bytes": 478478,
+      "sha256": "1fde082da2f774545642a8d81f0f340f9f4c5856eb87b261eca4628a6a38866f"
+    },
+    "instances": {
+      "desktop": "CBoSsw3cj",
+      "phone": "wh9JF07sVCBoSsw3cj"
+    },
+    "definition": {
+      "id": "WI8tUBhix",
+      "desktopVariant": "YqjnGMBXV",
+      "phoneVariant": "IZS406b_V"
+    },
+    "clock": "Existing Film Context/master clock; no additional RAF, renderer or media player.",
+    "sourceObservation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/temporal-state-packet.json",
+      "bytes": 10585,
+      "sha256": "5f3e63cae8a5ff18835e10fd8cdd792c077ee1447ee9d7d033a9e6ebedf9db79"
+    },
+    "sourceTimingAddendum": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/timing-coverage-addendum.json",
+      "bytes": 1209,
+      "sha256": "2858bffacf4dd828c97eb00498fe725caa2f8f668f8fa969e593c3182c3c4dea"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-type-grid-provenance.json",
+      "bytes": 69071,
+      "sha256": "e713e1d3401e865f96770d83c1c86f51056595cf38e0c6352b0fe47d99537bb6"
+    },
+    "localValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/final-candidate-receipt.json",
+      "bytes": 4954,
+      "sha256": "c9849a5a97d6aaf59c866c55f033e30f19e0d5ff6e5364274a946e33ef9102ef"
+    },
+    "nativeComparisonImages": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/comparison-compact-right.png",
+        "bytes": 102771,
+        "sha256": "c13ab0cf86d77c47db8b83741a79a94a49bec2fe7b436e964000ac0e7d59ac95"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/comparison-hollow-perimeter.png",
+        "bytes": 156298,
+        "sha256": "df6b4db288e1d9ea2cc019b0f7a97c6a023c815a33d9e13a3938327b31141794"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/comparison-two-columns.png",
+        "bytes": 163410,
+        "sha256": "1aa895b68fc2db330426a8845335700098ab878b17626f0afb733973caf3ad96"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/implementation/comparison-late-grid.png",
+        "bytes": 159063,
+        "sha256": "ac13e639ba23eb2727cb26c4d6732349502fc3acd16f6962e9a2ef3041280dfe"
+      }
+    ],
+    "implementation": {
+      "retainedWords": 84,
+      "retainedRules": 24,
+      "nativeStaticAttributeTargets": 504,
+      "nativeStaticScalarFields": 1176,
+      "sampledPoses": 12,
+      "gridVisibleFrom": 48.708333333333336,
+      "darkEndingFrom": 51.083333333333336,
+      "sourceDuration": 52.314558,
+      "canvasAndExport": "Authored native poster; live transforms, positions and rule opacity are restored."
+    },
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "limits": [
+      "Twelve representative sample holds reconstruct broad topology, not all97 word trajectories or source easing. Some representative geometry is admitted at its observed substate entry rather than its later sampled image time.",
+      "Native wording is independent. Horizontal compression fits measured source-ink slots without changing font height; word identities and Phone scaling are declared fits.",
+      "The hollow perimeter occupies only frames1174–1176; later small dark-grid choreography is omitted.",
+      "Actual native child visibility, motion, controls and responsive/source correspondence require Framer Preview once browser routing is reliable."
     ]
   }
 }
