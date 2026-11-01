@@ -86,7 +86,8 @@
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
     "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs",
     "check:source-native-tap": "node scripts/check-source-native-tap.mjs",
-    "check:source-montreal-behaviors": "node scripts/check-source-montreal-behaviors.mjs"
+    "check:source-montreal-behaviors": "node scripts/check-source-montreal-behaviors.mjs",
+    "check:source-montreal-glyph-flow": "node scripts/check-source-montreal-glyph-flow.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

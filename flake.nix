@@ -213,6 +213,14 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-montreal-glyph-flow = (mkWebsiteCheck "source-montreal-glyph-flow" ''
+            export MONARCHIC_MONTREAL_GLYPH_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-montreal-glyph-flow
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

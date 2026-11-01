@@ -1,0 +1,55 @@
+{
+  "reference": "HERO-008",
+  "classification": "Source inspiration / independent native glyph-flow recreation",
+  "creator": "Pangram Pangram",
+  "source": "https://neuemontreal.com/",
+  "actor": {
+    "path": "../SourceMontrealGlyphFlow.tsx",
+    "sha256": "78be6ad409aed6b1ac62432a3495183568c217b4e76fb20b528c94077c31864f",
+    "bytes": 9634,
+    "exports": 13
+  },
+  "sourceFacts": {
+    "basis": "Current public geometry/function inspection, separate from selected archive stills. Original behavior JavaScript is not reused.",
+    "scale": {
+      "display": "W/166",
+      "text": "W/157"
+    },
+    "viewBoxHeights": {
+      "display": [
+        159,
+        154,
+        146
+      ],
+      "text": [
+        157,
+        145,
+        140
+      ]
+    },
+    "desktopNWidths": {
+      "display": "158W/166",
+      "text": "143W/157"
+    },
+    "scene": "ViewportH + max(Display8H+NH,Text8H+NH)",
+    "mask": "Horizontal upper Display/lower Text halves with common baseline",
+    "scroll": "clamp(-(sceneTop-scrollParentTop),0,travel); baseline=H/2-offset;Phone adds.06H",
+    "phoneS": "Full-width native contain-fit SVG container; height uses the same8 scale as other source geometry."
+  },
+  "requirements": [
+    "Keep all six genuine source SVG image Frames mounted and credited.",
+    "Use native overflow-visible flow ancestors and sticky clipped viewport.",
+    "Each source family retains its own dimensions and baseline offsets; no generic font substitutes."
+  ],
+  "adaptations": [
+    "Canvas/export/thumbnail choose a representative8-centered authoring pose.",
+    "Reduced motion removes pinned travel and retains that still.",
+    "Dynamic ancestor-scroll-mode discovery is not added; source-like parent is identified when mounted."
+  ],
+  "validation": {
+    "nixOutput": "/nix/store/19wwcx8spacbj5cm5lkardd69vlbm5my-monarchic-website-source-montreal-glyph-flow-0.0.1",
+    "actualReactChecks": 18,
+    "peerReview": "Source specialist independently checked source math, native horizontal masks, own-bounds/scroller cleanup and public ref/prop behavior.",
+    "framer": "Actual attachment, source image fills, reload and Preview behavior remain separate."
+  }
+}
