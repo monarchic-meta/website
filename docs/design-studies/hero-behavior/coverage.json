@@ -55,8 +55,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
-        "bytes": 71226,
-        "sha256": "4a944941c3b0f8839334834733f0e87262cf5b6dde88fc573df7fac4a6607281"
+        "bytes": 79266,
+        "sha256": "8b2a5c32b1f518320dc2b5f6476ce3df23a9b1ccb9e97e482c84eb99ece26f41"
       },
       "page": {
         "id": "ANWBjWXdj",
@@ -64,15 +64,20 @@
         "desktop": "HfF4MPsiJ",
         "phone": "wh9JF07sV"
       },
-      "coverage": "Earlier native Desktop and fitted Phone playback reached 37 phases. The revised native perimeter, twelve sampled closing word poses, corrected 51.083333s cut and actual cropped photographic aperture now have MCP model acknowledgments.",
-      "sourceLimitations": "Actual new motion/reload verification is pending. Representative holds, independent verse, horizontal width fits, earlier approximate cuts, other held photo passages, omitted small-grid choreography and missing audio remain explicit.",
+      "coverage": "Earlier native Desktop and fitted Phone reached37 phases. MCP288 now saves the full portrait49-frame photographic interval at its exact881/24–930/24 cuts; the prior native perimeter and twelve sampled closing-word poses remain.",
+      "sourceLimitations": "Actual latest Framer moving paint/reload remains pending. Other held photo passages, independent verse, representative closing-word fits, omitted small-grid choreography and audio remain explicit.",
       "earlierBoundedRuntimeEvidence": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-after-nine-v2-desktop-host-fixed-sequence.json",
         "sha256": "68ff62c78526a92b8d956268b3e10510743c16bf570056116bb7ac6bb195c8dc",
         "bytes": 657475
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalCorrection": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
+        "bytes": 5618,
+        "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
+      }
     },
     {
       "id": "HERO-003",
@@ -555,7 +560,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3890,
-    "sha256": "8624042dcd42de7d5dd58edc76d324678e9a03b520d3d0eb30e8661a324648af"
+    "sha256": "0ae7867eacc82d919ed9311eee4282625a207899a57d196eb6be966eab7367ff"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -696,8 +701,8 @@
   "currentAuthoringSources": [
     {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
-      "bytes": 55156,
-      "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
+      "bytes": 57829,
+      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
     },
     {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
@@ -720,5 +725,16 @@
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-policy.md",
     "bytes": 2336,
     "sha256": "43b020eebb60b3f134318fd9d7074868b7b62f928da69d4264697a26b8c2b427"
+  },
+  "latestOriginalSourceCorrection": {
+    "id": "HERO-002",
+    "modelCommand": 288,
+    "manifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
+      "bytes": 5618,
+      "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
+    },
+    "actualPreviewVerified": false,
+    "actualEditorReloadVerified": false
   }
 }

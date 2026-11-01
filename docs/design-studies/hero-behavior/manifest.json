@@ -223,5 +223,33 @@
   ],
   "actualNewAnimationOrReloadVerified": false,
   "browserBoundary": "Connected desktop/IAB remains off after wrong-chat routing. Direct MCP and isolated public-source headless audits are separate.",
-  "next": "Use the original websites/source works in the owner-edited list, reassess current originals, then build their complete source-specific hero behavior. Earlier gallery-led work is retained as comparison; inventories and local tests do not establish full source fidelity."
+  "next": "Use the original websites/source works in the owner-edited list, reassess current originals, then build their complete source-specific hero behavior. Earlier gallery-led work is retained as comparison; inventories and local tests do not establish full source fidelity.",
+  "currentOriginalSourceUpdates": {
+    "report": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
+      "bytes": 1789,
+      "sha256": "8341079ff53dbd2e0bd9a61d071efbc3f916be1a54f35c56d8d52911f0c797e0"
+    },
+    "coverage": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
+      "bytes": 40094,
+      "sha256": "27d28c59e185da6ad0f92fe902985d7cb9f2202adc84bdd3a3aa7b74fe583750"
+    },
+    "contractIndex": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
+      "bytes": 3890,
+      "sha256": "0ae7867eacc82d919ed9311eee4282625a207899a57d196eb6be966eab7367ff"
+    },
+    "HERO002": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
+      "bytes": 79266,
+      "sha256": "8b2a5c32b1f518320dc2b5f6476ce3df23a9b1ccb9e97e482c84eb99ece26f41"
+    },
+    "modelWindow": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
+      "bytes": 5618,
+      "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
+    },
+    "actualNewAnimationOrReloadVerified": false
+  }
 }

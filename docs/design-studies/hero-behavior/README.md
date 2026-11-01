@@ -1,5 +1,7 @@
 # Source hero recreations
 
+Current original-site revisions are tracked in [original source updates](original-source-updates.md).
+
 Use the owner’s [original-site source policy](original-source-policy.md).
 Recreate the original source closely: composition, artwork, typography, scale,
 materials, interaction and the complete sequence into following content. Compare

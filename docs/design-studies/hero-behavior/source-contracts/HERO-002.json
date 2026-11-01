@@ -183,9 +183,9 @@
     },
     {
       "from": 31,
-      "to": 33,
+      "to": 36.708333333333336,
       "state": "paragraph-layout",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "End follows inspected high-resolution source frame881 at24fps."
     },
     {
       "from": 33,
@@ -195,21 +195,21 @@
     },
     {
       "from": 34,
-      "to": 37,
+      "to": 36.708333333333336,
       "state": "paragraph-layout",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "End follows inspected high-resolution source frame881 at24fps."
     },
     {
-      "from": 37,
-      "to": 39,
+      "from": 36.708333333333336,
+      "to": 38.75,
       "state": "overhead-chess-film",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "Full portrait source frames881 through929 inclusive at24fps."
     },
     {
-      "from": 39,
+      "from": 38.75,
       "to": 41,
       "state": "large-type",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "Entry follows inspected high-resolution source frame930 at24fps; later cut remains prior fit."
     },
     {
       "from": 41,
@@ -1457,7 +1457,7 @@
   ],
   "sourceTextPolicy": "AJEDREZ/title and brief functional labels retained. Long poem/manuscript/caption material must be a visibly declared substitute or licensed/public-domain source; do not imply exact original words.",
   "remainingFidelityGaps": [
-    "The48–52s source interval is inspected at24fps. Earlier subsecond cuts, the exact late scattered-word entry, continuous photography outside the cropped37–39s aperture and full per-word trajectories remain incomplete.",
+    "The48–52s interval is inspected at24fps; frames881–929 now play as the full portrait photo. Other earlier subsecond cuts, exact late scattered-word entry, continuous photography outside that interval and full per-word trajectories remain incomplete.",
     "The selected film supplies genuine held photographic crops; underlying photographic authors and reuse licenses remain unverified.",
     "Source audio/voiceover is present but unlistened; do not synthesize it or claim a faithful soundtrack.",
     "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
@@ -1690,7 +1690,7 @@
     "scope": "The retained afterEditorReload=true and verified list describe the earlier source revisions named in their captures. They do not verify the new46-export source, aperture or native word-motion binding."
   },
   "overheadPhotographicMotion": {
-    "status": "SOURCE_AND_NATIVE_BINDING_SAVED_ACTUAL_PAINT_PENDING",
+    "status": "HISTORICAL_CROP_SUPERSEDED_BY_FULL_PORTRAIT_MCP288",
     "sourceBatch": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/three-source-and-H8-navigation-window-270-271/three-behavior-source-update-270-output.json",
       "bytes": 477772,
@@ -1702,12 +1702,12 @@
       "sha256": "b708dc5a661b72a3db2769b9154884d08753af59afde273bd65e2d5e97bcc92f"
     },
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceAjedrezSequence.tsx",
       "bytes": 55156,
       "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
     },
     "provenance": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photo-provenance.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/assets/source-ajedrez-photo-provenance.json",
       "bytes": 4633,
       "sha256": "c4790d4cb3426e94e3cf8b0eaf44fd923426e22ece96199c92eb847f5cacc881"
     },
@@ -1756,7 +1756,7 @@
   "closingWordMotion": {
     "status": "MCP_SOURCE_STATIC_GEOMETRY_AND_INSTANCE_BINDING_APPLIED_ACTUAL_PREVIEW_PENDING",
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/baseline-through282/code/SourceAjedrezSequence.tsx",
       "bytes": 55156,
       "sha256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d"
     },
@@ -1848,6 +1848,150 @@
       "Native wording is independent. Horizontal compression fits measured source-ink slots without changing font height; word identities and Phone scaling are declared fits.",
       "The hollow perimeter occupies only frames1174–1176; later small dark-grid choreography is omitted.",
       "Actual native child visibility, motion, controls and responsive/source correspondence require Framer Preview once browser routing is reliable."
+    ]
+  },
+  "currentOriginalPhotographicCorrection": {
+    "status": "SOURCE_ASSETS_AND_MCP_MODEL_SAVED_ACTUAL_FRAMER_PLAYBACK_AND_RELOAD_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 57829,
+      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photo-provenance.json",
+      "bytes": 26574,
+      "sha256": "b0636490a1427ca5da158b69a5af15e8ca9b5606760f7495acecbe906b7d860f"
+    },
+    "sourceURL": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
+    "sourceMedia": {
+      "url": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
+      "sha256": "9b12175445d3b6045f28b5e5cc11d95addb1a4d9ac8a3e049a3da46e6f96e45f",
+      "bytes": 24910614,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "videoFrames": 1251,
+      "duration": 52.314558,
+      "audio": "Unreviewed and omitted; high/low CDN encoded audio differs. CDN copy, original master not established."
+    },
+    "clip": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-portrait-960x1704-crf28.mp4",
+      "sha256": "cd56bf7c91ecefca753360a1b1341a7c0e26251884836570c8549d4b19f24e35",
+      "bytes": 775300,
+      "contentType": "video/mp4",
+      "frameRange": {
+        "firstInclusive": 881,
+        "lastInclusive": 929,
+        "count": 49
+      },
+      "url": "https://framerusercontent.com/assets/zTyAxXsvlZOY1rr4U0Vhfo71oY.mp4",
+      "width": 960,
+      "height": 1704,
+      "fps": 24
+    },
+    "poster": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-photo-poster-960x1704-q90.jpg",
+      "sha256": "8f82f2c246004f6bb1b4566dcdeb294103b9d207d5f2183492eb3b3ad7c42ee0",
+      "bytes": 243112,
+      "contentType": "image/jpeg",
+      "sourceFrame": 904,
+      "encoding": "One JPEG quality90 candidate; original full PNG retained externally.",
+      "sourcePNG": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-photo-poster-960x1704.png",
+        "sha256": "9dae9a181a7975475f745fa01831899907bb20f257f12b7e3eb09600c4619eaa",
+        "bytes": 1500698
+      }
+    },
+    "timing": {
+      "from": 36.708333333333336,
+      "toExclusive": 38.75,
+      "frames": 49,
+      "fps": 24
+    },
+    "native": {
+      "desktop": {
+        "id": "HfkfZ9q4q",
+        "left": 0,
+        "top": 0,
+        "width": 480,
+        "height": 852
+      },
+      "phone": {
+        "id": "wh9JF07sVHfkfZ9q4q",
+        "left": 0,
+        "top": 0,
+        "width": 375,
+        "height": 666
+      },
+      "preserved": "All other H2 fields,46 exports,86 other page bodies,16 definitions,209 code placements and47 source rows exact; no creates, moves or deletes."
+    },
+    "controller": "Same Film Context/master clock and shared H4 decoder admission. One retained high-resolution decoded frame repaints paused bounds/DPR changes with no decoder or RAF.",
+    "localValidation": {
+      "passed": true,
+      "store": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1",
+      "sourceSHA256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "strictGroups": 8,
+      "retainedBrowserChecks": 171,
+      "retainedCases": 6,
+      "photoChecks": 26,
+      "controller": {
+        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/result.json",
+        "sha256": "579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569",
+        "bytes": 1205854
+      },
+      "photo": {
+        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/photographic-aperture/result.json",
+        "sha256": "d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0",
+        "bytes": 11099
+      },
+      "scope": "Reproducible source/controller/native-like decoding validation. This metadata-only proof field is appended after the successful derivation; source/tests are unchanged. Actual Framer paint remains pending."
+    },
+    "genuineClipValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/browser-genuine-paused-zoom/result.json",
+      "sha256": "be969387e2a91e87506bc9cf645406342dff6584f9bfe686e88069ca692423da",
+      "bytes": 11246,
+      "sourceSHA256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "checks": 26,
+      "scope": "Actual selected source-derived video decoded by Chromium with real ReactDOM/native-like Frame forwarding, including paused zoom and exact held-frame replay. This does not establish actual Framer paint."
+    },
+    "finalReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/final-source-receipt.json",
+      "bytes": 3838,
+      "sha256": "0003b04e4ac5359414a9e8fee942f9b4c8812101ade7c6208f25e36773d67b9e"
+    },
+    "uploadReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/upload-receipt.json",
+      "bytes": 6083,
+      "sha256": "77dd0254392ed0619cd66deaf4aa4c8bd6883d900a81862a23f185abfc492604"
+    },
+    "mcpManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
+      "bytes": 5618,
+      "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
+    },
+    "mcpReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/HERO-002-full-photo-combined-288-output.json",
+      "sha256": "94ec6767721f60068a602f97cc259247fb34bf25b07e02dc2d2441132b4af448",
+      "bytes": 474478
+    },
+    "actualSummary": {
+      "exactFinalSourceReadback": true,
+      "all46CompleteExportRowsPreserved": true,
+      "diagnosticsEmpty": true,
+      "exactTwoRetainedFrameChanges": true,
+      "allOtherH2NativeAndVirtualFieldsExact": true,
+      "all86OtherCompleteBodiesExact": true,
+      "all16FullDefinitionsExact": true,
+      "all209CompleteCodeRecordsExact": true,
+      "all47CompleteCatalogRowsExact": true,
+      "noCreatesMovesDeletes": true
+    },
+    "actualMovingPaintVerified": false,
+    "actualEditorReloadVerified": false,
+    "limits": [
+      "CRF28 reduces transfer to775300 bytes at960×1704; some halftone/edge softness versus the retained1080×1920 source is declared.",
+      "The native poster is a genuine full frame; the downloaded photograph is material for the source film, not a flattened replacement of native typography.",
+      "Other photo passages and representative closing-word poses keep their declared simplifications. Earlier actual Framer proofs establish only their captured source revision."
     ]
   }
 }
