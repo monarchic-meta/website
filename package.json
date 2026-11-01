@@ -75,7 +75,8 @@
     "check:source-bleibt-mark": "node scripts/check-source-bleibt-mark.mjs",
     "check:source-bleibt-project-field": "node scripts/check-source-bleibt-project-field.mjs",
     "check:source-type-proximity": "node scripts/check-source-type-proximity.mjs",
-    "check:source-type-proximity-browser": "node scripts/check-source-type-proximity-browser.mjs"
+    "check:source-type-proximity-browser": "node scripts/check-source-type-proximity-browser.mjs",
+    "check:source-bleibt-opening": "node scripts/check-source-bleibt-opening.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

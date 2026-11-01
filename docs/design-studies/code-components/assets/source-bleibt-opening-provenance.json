@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-017",
+  "classification": "Source inspiration / procedural asset recreation",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "actor": {
+    "path": "../SourceBleibtOpeningField.tsx",
+    "sha256": "f2960bef731de3cae3c5a5c019405a5dbfc26f59f7c869af443f1e83607b9085",
+    "bytes": 16455,
+    "controls": 8,
+    "nativeInputRelay": "withBleibtOpeningInput"
+  },
+  "sourceAssets": {
+    "image1": "bleibt-project-0",
+    "image2": "bleibt-project-1",
+    "image3": "bleibt-project-5",
+    "image4": "bleibt-project-9"
+  },
+  "assetURLs": [
+    {
+      "key": "bleibt-project-0",
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a6ba34a52217319fe1fbd57_img-cover-velor-app.avif",
+      "credit": "Maksym Bleibtgleich / source project artwork. Reuse rights and individual contributors unverified."
+    },
+    {
+      "key": "bleibt-project-1",
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660df2554cadd26cc0e5f4_img-cover-bleibtgleich-25.avif",
+      "credit": "Maksym Bleibtgleich / source project artwork. Reuse rights and individual contributors unverified."
+    },
+    {
+      "key": "bleibt-project-5",
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660dfa6a5afe2ac40d6bc7_img-cover-grabl-app.avif",
+      "credit": "Maksym Bleibtgleich / source project artwork. Reuse rights and individual contributors unverified."
+    },
+    {
+      "key": "bleibt-project-9",
+      "url": "https://cdn.prod.website-files.com/6a36a3fb2e061ee276a4e112/6a660e1b36062aa76138ac6b_img-cover-do-lorem-ipsum.avif",
+      "credit": "Maksym Bleibtgleich / source project artwork. Reuse rights and individual contributors unverified."
+    }
+  ],
+  "sourceFacts": {
+    "kind": "Current public-code inspection, distinct from selected-archive observation",
+    "pictures": 4,
+    "wholeOrbitSeconds": 24,
+    "advanceSeconds": 2.5,
+    "staggerSeconds": 0.075,
+    "maskColor": "#ffffff"
+  },
+  "implementation": {
+    "mask": "Independent bounded CPU advection/diffusion over actual source project assets; replaces source WebGL2 simulation.",
+    "orbit": "Independent visibility-aware wall-clock phase continues while white/idle with no idle drawing.",
+    "bounds": "Canvasmotion only explicit inRenderTarget.canvas,12fps/1MP. Preview30fps/1MP. NativeCanvaswidth governs Phone. Logical fluid grid retained across transformed output refresh."
+  },
+  "validation": {
+    "local": "StrictDOM/Reacttypes, actualReactSSR and three browser groups: source-at-rest/pointer alpha/orbit/clicks, idle orbit phase and zero idle RAF, transformed output/reduced/export/Phone/cleanup.",
+    "nixOutput": "/nix/store/mddh8jqz0vnjj3as5pxxqxbkw80k1hja-monarchic-website-source-bleibt-opening-0.0.1",
+    "framer": "Native File controls and input relay must be attached and verified after reload separately."
+  },
+  "limits": [
+    "CPU grid/noise/easing approximate the source WebGL2 material; no pixel-for-pixel material claim.",
+    "Native page typography, mark, dividers and menu remain outside this component.",
+    "Phone source appearance remains unobserved; opening background is disabled there."
+  ],
+  "license": "Project artwork belongs to its source creators. Reuse rights unverified; credited unpublished prototype. No foreign imagebytes or behaviorJavaScript are embedded in this module."
+}

@@ -173,6 +173,10 @@
             export MONARCHIC_BLEIBT_FIELD_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-project-field
           '';
+          source-bleibt-opening = mkWebsiteCheck "source-bleibt-opening" ''
+            export MONARCHIC_BLEIBT_OPENING_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-bleibt-opening
+          '';
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
