@@ -14,6 +14,8 @@ const reactStub = `
 export interface CSSProperties {transition?:string;transitionProperty?:string;transitionDuration?:string;transitionTimingFunction?:string;transitionDelay?:string;fontVariationSettings?:string}
 export type MouseEventHandler<T> = (event:MouseEvent<T>)=>void;
 export interface MouseEvent<T>{clientX:number;clientY:number;defaultPrevented:boolean;currentTarget:T}
+export interface PointerEvent<T> extends MouseEvent<T>{pointerId:number}
+export type PointerEventHandler<T> = (event:PointerEvent<T>)=>void;
 export type ComponentType<P> = (props:P)=>unknown;
 export interface Context<T>{Provider:ComponentType<{value:T;children?:unknown}>;__type?:T}
 export function createContext<T>(v:T):Context<T>;

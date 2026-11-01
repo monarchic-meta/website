@@ -22,8 +22,13 @@ type LayerProps = {
     onMouseEnter?: React.MouseEventHandler<HTMLElement>
     onMouseMove?: React.MouseEventHandler<HTMLElement>
     onMouseLeave?: React.MouseEventHandler<HTMLElement>
+    onPointerMove?: React.PointerEventHandler<HTMLElement>
+    onHoverStart?: (event: NativeInputEvent, info?: HoverInfo) => void
+    onHoverEnd?: (event: NativeInputEvent, info?: HoverInfo) => void
 }
 type Point = { x: number; y: number }
+type NativeInputEvent = { clientX?: number; clientY?: number; defaultPrevented?: boolean; nativeEvent?: { clientX?: number; clientY?: number } }
+type HoverInfo = { point?: Point }
 type Bounds = { left: number; top: number; width: number; height: number }
 type WordState = { pointer: Point | null; epoch: number; reducedMotion: boolean; register: (measure: () => void) => () => void }
 type TransitionSet = { property: string[]; duration: string[]; timing: string[]; delay: string[] }
@@ -110,6 +115,7 @@ export function withSourceTypeWord(Component: ComponentType<LayerProps>): Compon
         const pending = React.useRef<Point | null>(null)
         const frame = React.useRef(0)
         const lastFrame = React.useRef(0)
+        const lastInput = React.useRef<{ kind: string; channel: string; at: number; point: Point | null; canceled: boolean } | null>(null)
         const measurements = React.useRef(new Set<() => void>())
         const register = React.useCallback((measure: () => void) => {
             measurements.current.add(measure)
@@ -161,34 +167,53 @@ export function withSourceTypeWord(Component: ComponentType<LayerProps>): Compon
             }
             frame.current = window.requestAnimationFrame(tick)
         }
+        function input(kind: "enter" | "move" | "leave", channel: "mouse" | "pointer" | "hover", event: NativeInputEvent, info?: HoverInfo) {
+            const x = event.clientX ?? event.nativeEvent?.clientX ?? info?.point?.x
+            const y = event.clientY ?? event.nativeEvent?.clientY ?? info?.point?.y
+            const point = Number.isFinite(x) && Number.isFinite(y) ? { x: x!, y: y! } : null
+            if (kind !== "leave" && !point) return
+            const at = performance.now(), prior = lastInput.current
+            const distance = point && prior?.point ? Math.hypot(point.x - prior.point.x, point.y - prior.point.y) : 0
+            const samePoint = kind === "move" ? distance === 0 : distance < 2
+            if (prior && at - prior.at < 350 && samePoint && (prior.kind === kind && prior.channel !== channel || prior.kind === "enter" && prior.canceled && kind === "move")) return
+            // Record canceled native input too, so a duplicate mouse channel
+            // cannot bypass the caller's cancellation of the same gesture.
+            lastInput.current = { kind, channel, at, point, canceled: !!event.defaultPrevented }
+            if (event.defaultPrevented) return
+            if (kind === "move") { pending.current = point; schedule(); return }
+            if (frame.current) window.cancelAnimationFrame(frame.current)
+            frame.current = 0
+            pending.current = kind === "leave" ? null : point
+            if (kind === "enter") measureLetters()
+            setPointer(pending.current)
+        }
         const value = React.useMemo(() => ({ pointer, epoch, reducedMotion, register }), [pointer, epoch, reducedMotion, register])
         if (frozen) return <Component {...props} ref={ref} />
         return <WordContext.Provider value={value}>
             <Component {...props} ref={ref}
                 onMouseEnter={(event: React.MouseEvent<HTMLElement>) => {
                     props.onMouseEnter?.(event)
-                    if (event.defaultPrevented) return
-                    if (frame.current) window.cancelAnimationFrame(frame.current)
-                    frame.current = 0
-                    pending.current = { x: event.clientX, y: event.clientY }
-                    // Re-measure resting letter boxes once, before the first
-                    // painted weight update. Do not feed changed widths back.
-                    measureLetters()
-                    setPointer(pending.current)
+                    input("enter", "mouse", event)
                 }}
                 onMouseMove={(event: React.MouseEvent<HTMLElement>) => {
                     props.onMouseMove?.(event)
-                    if (event.defaultPrevented) return
-                    pending.current = { x: event.clientX, y: event.clientY }
-                    schedule()
+                    input("move", "mouse", event)
                 }}
                 onMouseLeave={(event: React.MouseEvent<HTMLElement>) => {
                     props.onMouseLeave?.(event)
-                    if (event.defaultPrevented) return
-                    pending.current = null
-                    if (frame.current) window.cancelAnimationFrame(frame.current)
-                    frame.current = 0
-                    setPointer(null)
+                    input("leave", "mouse", event)
+                }}
+                onPointerMove={(event: React.PointerEvent<HTMLElement>) => {
+                    props.onPointerMove?.(event)
+                    input("move", "pointer", event)
+                }}
+                onHoverStart={(event: NativeInputEvent, info?: HoverInfo) => {
+                    props.onHoverStart?.(event, info)
+                    input("enter", "hover", event, info)
+                }}
+                onHoverEnd={(event: NativeInputEvent, info?: HoverInfo) => {
+                    props.onHoverEnd?.(event, info)
+                    input("leave", "hover", event, info)
                 }}
             />
         </WordContext.Provider>

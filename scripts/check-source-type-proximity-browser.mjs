@@ -9,7 +9,7 @@ import { chromium } from '@playwright/test'
 const require = createRequire(import.meta.url)
 const repo = fileURLToPath(new URL('../', import.meta.url))
 const ts = require('typescript')
-const file = path.join(repo, 'docs/design-studies/code-components/SourceTypeProximity.tsx')
+const file = process.env.MONARCHIC_TYPE_PROXIMITY_SOURCE_PATH ?? path.join(repo, 'docs/design-studies/code-components/SourceTypeProximity.tsx')
 const source = fs.readFileSync(file, 'utf8')
 const hash = data => crypto.createHash('sha256').update(data).digest('hex')
 const output = process.env.MONARCHIC_TYPE_PROXIMITY_EVIDENCE_DIR ?? '/tmp/monarchic-source-type-proximity-browser'
@@ -175,8 +175,83 @@ try {
     await page.waitForTimeout(50)
     const cleanup = await page.evaluate(() => ({ frames: __frames.size, listeners: __listeners.size, wordRef: __refs.word, letterRef: __refs[0] }))
     check('Unmount cancels pending RAF, removes listeners and clears forwarded refs', cleanup.frames === 0 && cleanup.listeners === 0 && cleanup.wordRef === null && cleanup.letterRef === null)
+    await page.evaluate(() => {
+        window.__nativeEvents = { start: 0, move: 0, end: 0, mouseEnter: 0, mouseMove: 0, mouseLeave: 0, click: 0 }
+        window.__nativeCancel = ''; window.__nativeDual = false
+        const NativeWord = React.forwardRef(({ onMouseEnter, onMouseMove, onMouseLeave, onHoverStart, onHoverEnd, onPointerMove, ...props }, ref) => React.createElement('div', {
+            ...props, ref,
+            onPointerEnter: event => { const info = { point: { x: event.clientX, y: event.clientY } }; window.__nativeInfo = info; onHoverStart?.(event, info); if (__nativeDual) onMouseEnter?.(event) },
+            onPointerMove: event => { if (window.__nativeMoveChannel !== 'mouse') onPointerMove?.(event); if (__nativeDual || window.__nativeMoveChannel === 'mouse') onMouseMove?.(event) },
+            onPointerLeave: event => { const info = { point: { x: event.clientX, y: event.clientY } }; onHoverEnd?.(event, info); if (__nativeDual) onMouseLeave?.(event) },
+        }))
+        const NativeOnlyWord = exports.withSourceTypeWord(NativeWord)
+        window.__nativeRoot = ReactDOM.createRoot(document.getElementById('mount'))
+        window.renderNative = () => ReactDOM.flushSync(() => __nativeRoot.render(React.createElement(NativeOnlyWord, {
+            className: 'word', id: 'word', ref: node => { __refs.word = node }, title: 'Native hover caller',
+            onHoverStart: (event, info) => { __nativeEvents.start++; window.__forwardedNativeInfo = info; if (__nativeCancel === 'start') event.preventDefault() },
+            onPointerMove: event => { __nativeEvents.move++; if (__nativeCancel === 'move') event.preventDefault() },
+            onHoverEnd: event => { __nativeEvents.end++; if (__nativeCancel === 'end') event.preventDefault() },
+            onMouseEnter: () => __nativeEvents.mouseEnter++, onMouseMove: () => __nativeEvents.mouseMove++, onMouseLeave: () => __nativeEvents.mouseLeave++,
+            onClick: () => __nativeEvents.click++,
+        }, Array.from('Story').map((letter, i) => React.createElement(Letter, { key: i, id: 'letter-' + i, className: 'letter', ref: node => { __refs[i] = node } }, React.createElement('p', null, React.createElement('span', null, letter)))))))
+        window.scrollTo(0, 0); renderNative()
+    })
+    await page.waitForTimeout(50)
+    await page.evaluate(() => { const p = center(); document.getElementById('word').style.transform = 'translate(' + (Math.ceil(p.x) - p.x) + 'px,' + (Math.ceil(p.y) - p.y) + 'px)' })
+    await page.mouse.move(550, 350)
+    await page.screenshot({ path: path.join(output, 'native-resting.png'), clip: { x: 80, y: 20, width: 350, height: 110 } })
+    const nativeCenter = await page.evaluate(() => center())
+    await page.mouse.move(nativeCenter.x, nativeCenter.y)
+    await page.waitForTimeout(80)
+    const nativeEntry = await page.evaluate(() => ({ letters: snapshot(), events: { ...__nativeEvents }, infoPreserved: __nativeInfo === __forwardedNativeInfo, refs: __refs.word?.id === 'word' && __refs[0]?.id === 'letter-0' }))
+    fs.writeFileSync(path.join(output, 'native-entry-observation.json'), JSON.stringify({ sourceSHA256: hash(source), nativeEntry }, null, 2) + '\n')
+    check('Native Frame dropping mouse props activates through real hover and pointer channels', nativeEntry.letters[0].target >= 895 && nativeEntry.letters[0].epoch > 0 && nativeEntry.events.start === 1 && nativeEntry.events.mouseEnter === 0)
+    check('Native hover info, caller refs and unrelated props are preserved', nativeEntry.infoPreserved && nativeEntry.refs && await page.evaluate(() => document.getElementById('word').title === 'Native hover caller'))
+    await page.screenshot({ path: path.join(output, 'native-hovered.png'), clip: { x: 80, y: 20, width: 350, height: 110 } })
+    const nativeRest = await sharp(path.join(output, 'native-resting.png')).raw().toBuffer(), nativeHover = await sharp(path.join(output, 'native-hovered.png')).raw().toBuffer()
+    let nativePixelChanges = 0
+    for (let i = 0; i < nativeRest.length; i++) if (nativeRest[i] !== nativeHover[i]) nativePixelChanges++
+    check('Native hover adapters change actual variable-font glyph pixels', nativePixelChanges > 100)
+    await page.mouse.move(nativeCenter.x, nativeCenter.y + 10); await page.waitForTimeout(60)
+    check('Native pointer movement retains the exact650 falloff bin', (await page.evaluate(() => snapshot()[0])).target === 650)
+    await page.evaluate(() => { __nativeMoveChannel = 'mouse' }); await page.mouse.move(nativeCenter.x, nativeCenter.y + 9); await page.waitForTimeout(60)
+    await page.evaluate(() => { __nativeMoveChannel = 'pointer' }); await page.mouse.move(nativeCenter.x, nativeCenter.y + 10); await page.waitForTimeout(60)
+    check('Native channel handoff preserves a legitimate1px pointer movement', (await page.evaluate(() => snapshot()[0])).target === 650)
+    const beforeNativeMove = await page.evaluate(() => snapshot()[0].target)
+    await page.evaluate(() => { __nativeCancel = 'move' }); await page.mouse.move(nativeCenter.x + 8, nativeCenter.y + 10); await page.waitForTimeout(60)
+    check('Caller native pointer cancellation prevents helper mutation', (await page.evaluate(() => snapshot()[0])).target === beforeNativeMove)
+    await page.evaluate(() => { __nativeCancel = ''; __nativeDual = true }); await page.mouse.move(550, 350); await page.waitForTimeout(550)
+    const beforeDual = await page.evaluate(() => ({ reads: __rectReads, epoch: snapshot()[0].epoch }))
+    await page.mouse.move(nativeCenter.x, nativeCenter.y); await page.waitForTimeout(60)
+    const afterDual = await page.evaluate(() => ({ reads: __rectReads, row: snapshot()[0], events: { ...__nativeEvents } }))
+    check('Dual native hover/mouse entry measures each current letter only once', afterDual.reads === beforeDual.reads + 5 && afterDual.row.epoch === beforeDual.epoch + 1 && afterDual.row.target >= 895 && afterDual.events.mouseEnter > 0)
+    await page.mouse.move(550, 350); await page.waitForTimeout(550); await page.evaluate(() => { __nativeCancel = 'start' })
+    await page.mouse.move(nativeCenter.x, nativeCenter.y); await page.waitForTimeout(60)
+    check('Canceled native hover also suppresses its duplicate mouse entry', (await page.evaluate(() => snapshot()[0])).target === 400)
+    await page.evaluate(() => { __nativeCancel = ''; __nativeDual = false }); await page.mouse.move(550, 350); await page.mouse.move(nativeCenter.x, nativeCenter.y); await page.waitForTimeout(60)
+    await page.evaluate(() => { __nativeCancel = 'end' }); await page.mouse.move(550, 350); await page.waitForTimeout(60)
+    check('Caller native hover-end cancellation retains the active helper state', (await page.evaluate(() => snapshot()[0])).target >= 895)
+    await page.evaluate(() => { __nativeCancel = '' }); await page.mouse.move(nativeCenter.x, nativeCenter.y); await page.mouse.move(550, 350); await page.waitForTimeout(550)
+    check('Native hover end returns to400 and leaves zero idle RAF', await page.evaluate(() => snapshot()[0].value === 400 && __frames.size === 0))
+    const nativeBeforeRefresh = await page.evaluate(() => ({ reads: __rectReads, epoch: snapshot()[0].epoch }))
+    await page.evaluate(() => { document.getElementById('word').style.marginLeft = '25px'; dispatchEvent(new Event('resize')) })
+    await page.waitForTimeout(30)
+    check('Native adapter keeps current-ref bounds refresh after layout change', await page.evaluate(before => __rectReads === before.reads + 5 && snapshot()[0].epoch > before.epoch, nativeBeforeRefresh))
+    await page.locator('#word').click(); check('Native adapter preserves unrelated click behavior', await page.evaluate(() => __nativeEvents.click === 1))
+    const nativeFrozen = []
+    for (const target of ['canvas', 'export']) {
+        await page.evaluate(target => { __target = target; __static = target === 'export'; renderNative() }, target)
+        const before = await page.evaluate(() => __requests); await page.mouse.move(550, 350); const p = await page.evaluate(() => center()); await page.mouse.move(p.x, p.y); await page.waitForTimeout(40)
+        const frozenState = await page.evaluate(() => ({ letters: snapshot(), requests: __requests }))
+        nativeFrozen.push({ target, ...frozenState }); check('Native ' + target + ' forwards caller events without pointer animation', frozenState.requests === before && frozenState.letters.every(row => row.target === 400))
+    }
+    await page.evaluate(() => ReactDOM.flushSync(() => __nativeRoot.unmount())); await page.waitForTimeout(40)
+    const nativeCleanup = await page.evaluate(() => ({ frames: __frames.size, listeners: __listeners.size, word: __refs.word, letter: __refs[0] }))
+    check('Native event bridge cleans all pending work and caller refs', nativeCleanup.frames === 0 && nativeCleanup.listeners === 0 && nativeCleanup.word === null && nativeCleanup.letter === null)
+    const nativeAdapter = { nativeEntry, nativePixelChanges, afterDual, nativeFrozen, nativeCleanup, scope: 'Real React/Chromium native-like component drops mouse handlers and forwards public hover/pointer events. Actual Framer event forwarding remains a separate retest.' }
+
     check('No actual browser errors', errors.length === 0)
-    const result = { passed: true, sourceSHA256: hash(source), testSHA256: hash(fs.readFileSync(import.meta.filename)), fontFixture: { package: '@fontsource-variable/space-grotesk@5.3.0', path: fontFile, sha256: hash(font), range: [300, 700], note: 'Open-licensed fixture proves actual variable glyph rendering; requested source400–900 CSS axis values are checked separately from fixture font range.' }, checks, changedChannels, baseline, entered, midpoint, leave: [leaveStart, leaveMiddle, leaveEnd], updatedTransition, reduced, frozen, cleanup, errors, scope: 'Actual React18/Chromium pointer, font pixels, cached bounds, native transition/ref/event preservation, reduced/static targets and cleanup. Actual commercial font assignment and Framer persistence remain separate.' }
+    const result = { passed: true, sourceSHA256: hash(source), testSHA256: hash(fs.readFileSync(import.meta.filename)), fontFixture: { package: '@fontsource-variable/space-grotesk@5.3.0', path: fontFile, sha256: hash(font), range: [300, 700], note: 'Open-licensed fixture proves actual variable glyph rendering; requested source400–900 CSS axis values are checked separately from fixture font range.' }, checks, changedChannels, baseline, entered, midpoint, leave: [leaveStart, leaveMiddle, leaveEnd], updatedTransition, reduced, frozen, cleanup, nativeAdapter, errors, scope: 'Actual React18/Chromium pointer, font pixels, cached bounds, native transition/ref/event preservation, reduced/static targets and cleanup. Actual commercial font assignment and Framer persistence remain separate.' }
     fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(result, null, 2) + '\n')
     console.log(JSON.stringify({ passed: true, checks: checks.length, changedChannels, evidence: output, sourceSHA256: result.sourceSHA256 }, null, 2))
 } catch (error) {
