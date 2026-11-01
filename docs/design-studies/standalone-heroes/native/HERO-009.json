@@ -486,7 +486,8 @@
         "fill": "#080808",
         "borderWidth": ".7px",
         "borderColor": "#333333",
-        "radius": "5px"
+        "radius": "5px",
+        "borderStyle": "solid"
       },
       "phone": {
         "left": "268px",
@@ -537,7 +538,8 @@
         "fill": "#080808",
         "borderWidth": ".7px",
         "borderColor": "#333333",
-        "radius": "5px"
+        "radius": "5px",
+        "borderStyle": "solid"
       },
       "phone": {
         "left": "268px",
@@ -588,7 +590,8 @@
         "fill": "#f5f5f5",
         "borderWidth": ".7px",
         "borderColor": "#333333",
-        "radius": "5px"
+        "radius": "5px",
+        "borderStyle": "solid"
       },
       "phone": {
         "left": "268px",
@@ -670,7 +673,8 @@
         "link": {
           "href": "https://vercel.com/",
           "openInNewTab": true
-        }
+        },
+        "borderStyle": "solid"
       },
       "phone": {
         "left": "20px",
@@ -723,7 +727,8 @@
         "link": {
           "href": "https://vercel.com/",
           "openInNewTab": true
-        }
+        },
+        "borderStyle": "solid"
       },
       "phone": {
         "left": "160px",

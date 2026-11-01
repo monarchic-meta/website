@@ -184,15 +184,13 @@
         "left": "474px",
         "top": "120px",
         "width": "468px",
-        "height": "585px",
-        "overflow": "visible"
+        "height": "585px"
       },
       "phone": {
         "left": "20px",
         "top": "220px",
         "width": "350px",
-        "height": "437.5px",
-        "overflow": "visible"
+        "height": "437.5px"
       },
       "instanceProps": {
         "study": "macmoss",

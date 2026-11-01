@@ -690,17 +690,13 @@
         "left": "0px",
         "top": "0px",
         "width": "72px",
-        "height": "72px",
-        "radius": "30%",
-        "overflow": "visible"
+        "height": "72px"
       },
       "phone": {
         "left": "0px",
         "top": "0px",
         "width": "72px",
-        "height": "72px",
-        "radius": "30%",
-        "overflow": "visible"
+        "height": "72px"
       },
       "instanceProps": {
         "study": "origin",
