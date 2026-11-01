@@ -35,5 +35,20 @@
     "actualReactChecks": 44,
     "peerReview": "Brain independently reviewed core and then the corrected frozen-key-default guard. Native-like fixture deliberately drops onClick; all18weights, descendant CSS, tap/keyboard/cancellation, timing/pause, Desktop ratio/hover, Phone flow/reduced/static/ref/timer/listener cleanup pass.",
     "framer": "Actual native Context, font selection, page binding and reload/Preview checks remain separate."
+  },
+  "framerPublicSignatures": {
+    "path": "docs/design-studies/code-components/SourceMontrealBehaviors.tsx",
+    "prior": {
+      "sha256": "b58f3a5af0cfa1ab2fe1b439b40433df5fd5dc21aee7d4eaaa9c996db5498a70",
+      "bytes": 20058
+    },
+    "amended": {
+      "sha256": "37e45fc6f6933722741ad56d29792164fffecdc9422bf4b9860c077e0cc056bd",
+      "bytes": 21038
+    },
+    "publicSignatures": 35,
+    "transpiledJavaScriptExact": true,
+    "compiledJavaScriptSHA256": "38009eb9e15821dcedf99b0373c010777bccb1e43148c9976071e169acaa49cc",
+    "reason": "Actual Framer misclassified Native aliases. Explicit public ComponentType<Props> annotations preserve runtime JavaScript exactly while exposing the native override surface; actual Framer catalog verification remains separate."
   }
 }

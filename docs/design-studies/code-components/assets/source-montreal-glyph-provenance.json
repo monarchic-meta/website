@@ -51,5 +51,20 @@
     "actualReactChecks": 18,
     "peerReview": "Source specialist independently checked source math, native horizontal masks, own-bounds/scroller cleanup and public ref/prop behavior.",
     "framer": "Actual attachment, source image fills, reload and Preview behavior remain separate."
+  },
+  "framerPublicSignatures": {
+    "path": "docs/design-studies/code-components/SourceMontrealGlyphFlow.tsx",
+    "prior": {
+      "sha256": "78be6ad409aed6b1ac62432a3495183568c217b4e76fb20b528c94077c31864f",
+      "bytes": 9634
+    },
+    "amended": {
+      "sha256": "6a261cb2898e0826036b5eba63c4a0a8532bcee2abeed0a799f992ba160940c6",
+      "bytes": 9998
+    },
+    "publicSignatures": 13,
+    "transpiledJavaScriptExact": true,
+    "compiledJavaScriptSHA256": "b32af32489bf413590a2c9bd1a9a26ddf754bb2b174b30bd42ef46ce27480187",
+    "reason": "Actual Framer misclassified Native aliases. Explicit public ComponentType<Props> annotations preserve runtime JavaScript exactly while exposing the native override surface; actual Framer catalog verification remains separate."
   }
 }

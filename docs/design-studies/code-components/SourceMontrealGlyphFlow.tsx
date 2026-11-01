@@ -47,7 +47,7 @@ function scrollContainer(node: HTMLElement): HTMLElement | null {
     }
     return null
 }
-export function withMontrealGlyphScene(Component: Native): Native {
+export function withMontrealGlyphScene(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const frozen = useFrozen(), own = React.useRef<HTMLElement | null>(null), [state, setState] = React.useState(INITIAL)
         React.useLayoutEffect(() => {
@@ -84,7 +84,7 @@ export function withMontrealGlyphScene(Component: Native): Native {
         return <GlyphContext.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-montreal-glyph-scene="true" data-montreal-glyph-offset={state.offset} data-montreal-glyph-travel={state.travel} style={{ ...props.style, position: "relative", height: state.height + (state.reduced ? 0 : state.travel), overflow: "visible" }} /></GlyphContext.Provider>
     }) as Native
 }
-export function withMontrealGlyphViewport(Component: Native): Native {
+export function withMontrealGlyphViewport(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(GlyphContext)
         return <Component {...props} ref={ref} data-montreal-glyph-viewport="true" style={{ ...props.style, position: state.frozen || state.reduced ? "relative" : "sticky", top: 0, left: 0, width: "100%", height: state.height, overflow: "hidden" }} />
@@ -96,8 +96,8 @@ function mask(Component: Native, family: Family): Native {
         return <Component {...props} ref={ref} style={{ ...props.style, position: "absolute", left: 0, top: family === "display" ? 0 : state.height / 2, width: "100%", height: state.height / 2, overflow: "hidden", pointerEvents: "none" }} />
     }) as Native
 }
-export function withMontrealGlyphDisplayMask(Component: Native): Native { return mask(Component, "display") }
-export function withMontrealGlyphTextMask(Component: Native): Native { return mask(Component, "text") }
+export function withMontrealGlyphDisplayMask(Component: ComponentType<Props>): ComponentType<Props> { return mask(Component, "display") }
+export function withMontrealGlyphTextMask(Component: ComponentType<Props>): ComponentType<Props> { return mask(Component, "text") }
 function glyph(Component: Native, family: Family, kind: Glyph): Native {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(GlyphContext), metrics = state[family], shown = kind !== "S" || state.phone
@@ -108,13 +108,13 @@ function glyph(Component: Native, family: Family, kind: Glyph): Native {
         return <Component {...props} ref={ref} data-montreal-glyph={`${family}-${kind}`} aria-hidden={!shown} style={{ ...props.style, position: "absolute", left: (state.width - width) / 2, top: y, width, height, opacity: shown ? 1 : 0, visibility: shown ? "visible" : "hidden", pointerEvents: "none" }} />
     }) as Native
 }
-export function withMontrealGlyphDisplay8(Component: Native): Native { return glyph(Component, "display", "8") }
-export function withMontrealGlyphDisplayN(Component: Native): Native { return glyph(Component, "display", "N") }
-export function withMontrealGlyphDisplayS(Component: Native): Native { return glyph(Component, "display", "S") }
-export function withMontrealGlyphText8(Component: Native): Native { return glyph(Component, "text", "8") }
-export function withMontrealGlyphTextN(Component: Native): Native { return glyph(Component, "text", "N") }
-export function withMontrealGlyphTextS(Component: Native): Native { return glyph(Component, "text", "S") }
-export function withMontrealGlyphDivider(Component: Native): Native {
+export function withMontrealGlyphDisplay8(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "display", "8") }
+export function withMontrealGlyphDisplayN(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "display", "N") }
+export function withMontrealGlyphDisplayS(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "display", "S") }
+export function withMontrealGlyphText8(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "text", "8") }
+export function withMontrealGlyphTextN(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "text", "N") }
+export function withMontrealGlyphTextS(Component: ComponentType<Props>): ComponentType<Props> { return glyph(Component, "text", "S") }
+export function withMontrealGlyphDivider(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(GlyphContext)
         return <Component {...props} ref={ref} style={{ ...props.style, left: 0, top: state.height / 2 - .5, width: "100%", height: 1, pointerEvents: "none" }} />
@@ -123,5 +123,5 @@ export function withMontrealGlyphDivider(Component: Native): Native {
 function label(Component: Native, family: Family): Native {
     return React.forwardRef<HTMLElement, Props>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, top: "auto", bottom: family === "display" ? "calc(50% + 8px)" : 16, pointerEvents: "none" }} />) as Native
 }
-export function withMontrealGlyphDisplayLabel(Component: Native): Native { return label(Component, "display") }
-export function withMontrealGlyphTextLabel(Component: Native): Native { return label(Component, "text") }
+export function withMontrealGlyphDisplayLabel(Component: ComponentType<Props>): ComponentType<Props> { return label(Component, "display") }
+export function withMontrealGlyphTextLabel(Component: ComponentType<Props>): ComponentType<Props> { return label(Component, "text") }

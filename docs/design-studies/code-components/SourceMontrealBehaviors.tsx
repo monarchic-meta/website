@@ -81,17 +81,17 @@ function useLive(ref: React.RefObject<HTMLElement | null>, frozen: boolean) {
     }, [frozen])
     return !frozen && !held && visible && !reduced && !hidden
 }
-export function withMontrealPlayback(Component: Native): Native {
+export function withMontrealPlayback(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const frozen = useFrozen(), held = usePaused(frozen), activate = useActivation(() => { const store = playbackStore(); store.paused = !store.paused; store.listeners.forEach(fn => fn()) }, frozen)
         return <Component {...props} {...activationProps(props, activate, frozen)} ref={ref} role="button" tabIndex={props.tabIndex ?? 0} aria-pressed={held} />
     }) as Native
 }
-export function withMontrealPlaybackLabel(Component: Native): Native {
+export function withMontrealPlaybackLabel(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => <Component {...props} ref={ref} text={usePaused(useFrozen()) ? "PLAY MOTION" : "PAUSE MOTION"} />) as Native
 }
 const Faces = React.createContext({ back: false })
-export function withMontrealPostcards(Component: Native): Native {
+export function withMontrealPostcards(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const frozen = useFrozen(), own = React.useRef<HTMLElement | null>(null), live = useLive(own, frozen), elapsed = React.useRef(0), [back, setBack] = React.useState(false)
         React.useEffect(() => {
@@ -116,12 +116,12 @@ function face(Component: Native, back: boolean): Native {
         return <Component {...props} ref={ref} aria-hidden={!selected} style={{ ...props.style, opacity: selected ? 1 : 0, visibility: selected ? "visible" : "hidden", pointerEvents: selected ? props.style?.pointerEvents : "none" }} />
     }) as Native
 }
-export function withMontrealPostcardFront(Component: Native): Native { return face(Component, false) }
-export function withMontrealPostcardBack(Component: Native): Native { return face(Component, true) }
+export function withMontrealPostcardFront(Component: ComponentType<Props>): ComponentType<Props> { return face(Component, false) }
+export function withMontrealPostcardBack(Component: ComponentType<Props>): ComponentType<Props> { return face(Component, true) }
 
 type AttractionsState = { active: number; phone: boolean; width: number; frozen: boolean; reduced: boolean; select: (index: number) => void }
 const Attractions = React.createContext<AttractionsState>({ active: 0, phone: false, width: 1440, frozen: true, reduced: false, select() {} })
-export function withMontrealAttractions(Component: Native): Native {
+export function withMontrealAttractions(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const frozen = useFrozen(), own = React.useRef<HTMLElement | null>(null), [width, setWidth] = React.useState(1440), [chosen, setChosen] = React.useState(0), phone = width < 1024
         React.useLayoutEffect(() => {
@@ -151,24 +151,24 @@ function attraction(Component: Native, index: number): Native {
         return <Pane.Provider value={{ index, selected }}><Component {...props} {...activationProps(props, activate, state.frozen)} ref={ref} role="button" tabIndex={props.tabIndex ?? 0} aria-expanded={selected} data-montreal-attraction={index} style={{ ...props.style, position: "absolute", left: state.phone ? 0 : unit * (index + (state.active >= 0 && state.active < index ? 3.8 : 0)), top: state.phone ? 160 + index * 74 + (state.active >= 0 && state.active < index ? 260 : 0) : 210, width: state.phone ? state.width : unit * (selected ? 4.8 : 1), height: state.phone ? 74 + (selected ? 260 : 0) : 540, overflow: "hidden", transition: state.frozen || state.reduced ? "none" : "left .75s cubic-bezier(.65,0,.15,1), top .75s cubic-bezier(.65,0,.15,1), width .75s cubic-bezier(.65,0,.15,1), height .75s cubic-bezier(.65,0,.15,1)" }} onMouseEnter={(event: ActivationEvent) => hover(event, "onMouseEnter")} onHoverStart={(event: ActivationEvent, info?: unknown) => hover(event, "onHoverStart", info)} /></Pane.Provider>
     }) as Native
 }
-export function withMontrealAttraction01(Component: Native): Native { return attraction(Component, 0) }
-export function withMontrealAttraction02(Component: Native): Native { return attraction(Component, 1) }
-export function withMontrealAttraction03(Component: Native): Native { return attraction(Component, 2) }
-export function withMontrealAttraction04(Component: Native): Native { return attraction(Component, 3) }
-export function withMontrealAttraction05(Component: Native): Native { return attraction(Component, 4) }
-export function withMontrealAttraction06(Component: Native): Native { return attraction(Component, 5) }
-export function withMontrealAttraction07(Component: Native): Native { return attraction(Component, 6) }
-export function withMontrealAttraction08(Component: Native): Native { return attraction(Component, 7) }
-export function withMontrealAttraction09(Component: Native): Native { return attraction(Component, 8) }
-export function withMontrealAttraction10(Component: Native): Native { return attraction(Component, 9) }
-export function withMontrealAttraction11(Component: Native): Native { return attraction(Component, 10) }
-export function withMontrealAttractionHeading(Component: Native): Native {
+export function withMontrealAttraction01(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 0) }
+export function withMontrealAttraction02(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 1) }
+export function withMontrealAttraction03(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 2) }
+export function withMontrealAttraction04(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 3) }
+export function withMontrealAttraction05(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 4) }
+export function withMontrealAttraction06(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 5) }
+export function withMontrealAttraction07(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 6) }
+export function withMontrealAttraction08(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 7) }
+export function withMontrealAttraction09(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 8) }
+export function withMontrealAttraction10(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 9) }
+export function withMontrealAttraction11(Component: ComponentType<Props>): ComponentType<Props> { return attraction(Component, 10) }
+export function withMontrealAttractionHeading(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(Attractions), pane = React.useContext(Pane), active = state.phone || pane.selected
         return <Component {...props} ref={ref} style={{ ...props.style, left: state.phone ? 58 : pane.selected ? 100 : 62, top: state.phone ? 22 : pane.selected ? 40 : 132, rotate: active ? "0deg" : "90deg", transformOrigin: "0 0", pointerEvents: "none", transition: state.frozen || state.reduced ? "none" : "rotate .75s cubic-bezier(.65,0,.15,1), left .75s cubic-bezier(.65,0,.15,1), top .75s cubic-bezier(.65,0,.15,1)" } as MotionStyle} />
     }) as Native
 }
-export function withMontrealAttractionBody(Component: Native): Native {
+export function withMontrealAttractionBody(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(Attractions), pane = React.useContext(Pane)
         return <Component {...props} ref={ref} aria-hidden={!pane.selected} style={{ ...props.style, left: state.phone ? 58 : 100, top: state.phone ? 82 : 210, width: state.phone ? Math.max(1, state.width - 82) : Math.max(1, state.width * 4.8 / 14.8 - 124), opacity: pane.selected ? 1 : 0, pointerEvents: "none", transition: state.frozen || state.reduced ? "none" : "opacity .75s cubic-bezier(.65,0,.15,1)" }} />
@@ -182,7 +182,7 @@ const DISPLAY_NAMES = ["Hairline", "Extralight", "Thin", "Light", "Book", "Regul
 const TEXT_NAMES = ["Thin", "Light", "Book", "Regular", "Medium", "Semibold", "Bold"]
 type ChartState = { family: Family; weight: number; frozen: boolean; chooseFamily: (family: Family) => void; chooseWeight: (index: number) => void }
 const Chart = React.createContext<ChartState>({ family: "display", weight: 900, frozen: true, chooseFamily() {}, chooseWeight() {} })
-export function withMontrealChart(Component: Native): Native {
+export function withMontrealChart(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const frozen = useFrozen(), [state, setState] = React.useState<{ family: Family; weight: number }>({ family: "display", weight: 900 })
         const context: ChartState = { ...(frozen ? { family: "display" as Family, weight: 900 } : state), frozen,
@@ -198,8 +198,8 @@ function chartMode(Component: Native, family: Family): Native {
         return <Component {...props} {...activationProps(props, activate, state.frozen)} ref={ref} role="button" tabIndex={props.tabIndex ?? 0} aria-pressed={selected} style={{ ...props.style, opacity: selected ? 1 : .5 }} />
     }) as Native
 }
-export function withMontrealDisplayMode(Component: Native): Native { return chartMode(Component, "display") }
-export function withMontrealTextMode(Component: Native): Native { return chartMode(Component, "text") }
+export function withMontrealDisplayMode(Component: ComponentType<Props>): ComponentType<Props> { return chartMode(Component, "display") }
+export function withMontrealTextMode(Component: ComponentType<Props>): ComponentType<Props> { return chartMode(Component, "text") }
 function chartWeight(Component: Native, index: number): Native {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(Chart), weights = state.family === "display" ? DISPLAY : TEXT, names = state.family === "display" ? DISPLAY_NAMES : TEXT_NAMES, exists = index < weights.length, activate = useActivation(() => state.chooseWeight(index), state.frozen)
@@ -207,22 +207,22 @@ function chartWeight(Component: Native, index: number): Native {
         return <Component {...props} {...activationProps(props, activate, state.frozen)} ref={ref} text={names[index] ?? ""} role="button" tabIndex={exists ? props.tabIndex ?? 0 : -1} aria-pressed={exists && state.weight === weights[index]} aria-hidden={!exists} style={{ ...props.style, opacity: !exists ? 0 : state.weight === weights[index] ? 1 : .5, pointerEvents: exists ? props.style?.pointerEvents : "none" }} onMouseEnter={(event: ActivationEvent) => hover(event, "onMouseEnter")} onHoverStart={(event: ActivationEvent, info?: unknown) => hover(event, "onHoverStart", info)} />
     }) as Native
 }
-export function withMontrealWeight01(Component: Native): Native { return chartWeight(Component, 0) }
-export function withMontrealWeight02(Component: Native): Native { return chartWeight(Component, 1) }
-export function withMontrealWeight03(Component: Native): Native { return chartWeight(Component, 2) }
-export function withMontrealWeight04(Component: Native): Native { return chartWeight(Component, 3) }
-export function withMontrealWeight05(Component: Native): Native { return chartWeight(Component, 4) }
-export function withMontrealWeight06(Component: Native): Native { return chartWeight(Component, 5) }
-export function withMontrealWeight07(Component: Native): Native { return chartWeight(Component, 6) }
-export function withMontrealWeight08(Component: Native): Native { return chartWeight(Component, 7) }
-export function withMontrealWeight09(Component: Native): Native { return chartWeight(Component, 8) }
-export function withMontrealWeight10(Component: Native): Native { return chartWeight(Component, 9) }
-export function withMontrealWeight11(Component: Native): Native { return chartWeight(Component, 10) }
+export function withMontrealWeight01(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 0) }
+export function withMontrealWeight02(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 1) }
+export function withMontrealWeight03(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 2) }
+export function withMontrealWeight04(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 3) }
+export function withMontrealWeight05(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 4) }
+export function withMontrealWeight06(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 5) }
+export function withMontrealWeight07(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 6) }
+export function withMontrealWeight08(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 7) }
+export function withMontrealWeight09(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 8) }
+export function withMontrealWeight10(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 9) }
+export function withMontrealWeight11(Component: ComponentType<Props>): ComponentType<Props> { return chartWeight(Component, 10) }
 function specimen(Component: Native, family: Family): Native {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(Chart), id = React.useId().replace(/[^a-zA-Z0-9_-]/g, "_"), selected = state.family === family, selector = `[data-montreal-specimen="${id}"]`
         return <><Component {...props} ref={ref} data-montreal-specimen={id} data-montreal-specimen-family={family} aria-hidden={!selected} style={{ ...props.style, opacity: selected ? 1 : 0, visibility: selected ? "visible" : "hidden", pointerEvents: "none" }} /><style>{`${selector},${selector} *{font-variation-settings:"wght" ${state.weight}!important}`}</style></>
     }) as Native
 }
-export function withMontrealDisplaySpecimen(Component: Native): Native { return specimen(Component, "display") }
-export function withMontrealTextSpecimen(Component: Native): Native { return specimen(Component, "text") }
+export function withMontrealDisplaySpecimen(Component: ComponentType<Props>): ComponentType<Props> { return specimen(Component, "display") }
+export function withMontrealTextSpecimen(Component: ComponentType<Props>): ComponentType<Props> { return specimen(Component, "text") }
