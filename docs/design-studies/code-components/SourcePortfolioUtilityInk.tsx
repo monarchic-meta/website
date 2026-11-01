@@ -32,3 +32,5 @@ export function withFilmGoomInk(Component:ComponentType<Props>):ComponentType<Pr
 export function withFilmMonolithInk(Component:ComponentType<Props>):ComponentType<Props>{return ink(Component,5)}
 export function withFilmTigerInk(Component:ComponentType<Props>):ComponentType<Props>{return ink(Component,6)}
 export function withFilmOxiInk(Component:ComponentType<Props>):ComponentType<Props>{return ink(Component,7)}
+/** Native case links keep their keyboard defaults outside the parent film row. */
+export function withFilmCaseExit(Component:ComponentType<Props>):ComponentType<Props>{return React.forwardRef<HTMLElement,Props>((props,ref)=>{const frozen=useFrozen();return <Component {...props} ref={ref} onKeyDown={(event:React.KeyboardEvent<HTMLElement>)=>{const caller=props.onKeyDown;if(typeof caller==="function")caller(event);if(!frozen&&(event.key==="Enter"||event.key===" "))event.stopPropagation()}}/>}) as ComponentType<Props>}

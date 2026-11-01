@@ -1,0 +1,83 @@
+{
+  "id": "HERO-004",
+  "classification": "Source inspiration / unpublished native ink companion",
+  "creator": "Artemii Lebedev",
+  "source": "https://artemiilebedev.com/",
+  "sourceEvidence": {
+    "primary": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/primary.html",
+      "sha256": "d629759f415a7ba687b133d9ab7fac61905a5bf3e0ab3f6eafb3e49f77c32400",
+      "bytes": 212538
+    },
+    "nativeSourcePacket": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/native-film-authoring-packet.json",
+      "sha256": "a6a5311a368ca46b96d15c6838562cb73bf563f1230a48968788e9c325af2621",
+      "bytes": 30252
+    },
+    "observed": "Retained primary CSS/DOM use transparent rows, full-width white fill, white base native-like text and a clipped duplicate black layer."
+  },
+  "adaptation": {
+    "geometry": "Native editable text and frames; no foreign website behavior JS is reused.",
+    "behavior": "Read-only consumer of our own monarchic.source-portfolio-controls.v1 producer. Bind under corresponding unchanged f29 Row, so the store exists before layout effect.",
+    "duplicateSemantics": "Black duplicate Text nodes have no href; clipping parent is aria-hidden/pointer-events:none. White base exit alone remains a real native link.",
+    "freeze": "Canvas/export/thumbnail zero-fill matches unchanged progress HOC; Pause/reduced hold producer current progress. No new timer, media, GL, RAF, or shared coordinator changes.",
+    "keyboardExit": "One native case-link override forwards its caller and in livePreview stops Enter/Space propagation without preventing browser defaults; frozen targets forward untouched. The8clipHOCs remain byte-exact59ab."
+  },
+  "sourceFile": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioUtilityInk.tsx",
+    "sha256": "8b1c0a2deb80d3e1a72a2d7be2a5cfb19f1435f6c96a7268e11fbc305e4a64ad",
+    "bytes": 4492
+  },
+  "parentFilm": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "sha256": "f29bf5225c57e22b70b5f1d58d4481fac3f26af5f3cf794f2c6795f4a7f71ce6",
+    "bytes": 83495
+  },
+  "validation": {
+    "checks": 19,
+    "currentReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/utility-ink/case-exit-amendment/receipt.json",
+      "sha256": "16ec2b316406061ef83baac13a4f6ff842796cfc8e380e324c486d6b7dbeca6d",
+      "bytes": 2266
+    },
+    "clipPixelProofCarriedForward": true,
+    "eightVariedBackgroundHalfFillChannelDifferences": 0,
+    "pausedChannelDifferences": 0
+  },
+  "nativePacket": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/native-authoring.json",
+    "sha256": "f2491111f8fbd33fb36ed3d4dfe2afbe93c52a1e50f2031bed0236fb30497d51",
+    "bytes": 135059
+  },
+  "status": {
+    "localFrozen": true,
+    "framerSourceRegistered": false,
+    "actualNativeBindingQA": false
+  },
+  "sourceLineage": {
+    "parentSHA256": "59abff18d3470f405a800d4f09c42a48e003a883400898f3bd970a58ecbe4fba",
+    "parentBytes": 3969,
+    "unchangedPrefixBytes": 3969,
+    "appendedBytes": 523,
+    "amendmentReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/utility-ink/case-exit-amendment/receipt.json",
+      "sha256": "16ec2b316406061ef83baac13a4f6ff842796cfc8e380e324c486d6b7dbeca6d",
+      "bytes": 2266
+    }
+  },
+  "parentPureNix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/utility-ink/nix/receipt.json",
+    "sha256": "bbb178b3aac66e71c39d79610c5b4b3b20574f7ccf884795e479510cfa700eec",
+    "bytes": 6861,
+    "storePath": "/nix/store/bas0fdgp3hdz2c45b88j94d7s7pwfpxl-monarchic-website-source-portfolio-utility-ink-0.0.1",
+    "passed": true,
+    "checks": 14
+  },
+  "currentPureNix": {
+    "path": "/nix/store/cyaga53cal6w9lxjp6dz630bbyvaj77m-monarchic-website-source-portfolio-utility-ink-0.0.1",
+    "sourceSHA256": "8b1c0a2deb80d3e1a72a2d7be2a5cfb19f1435f6c96a7268e11fbc305e4a64ad",
+    "sourceBytes": 4492,
+    "checks": 19,
+    "scope": "Prior8ink functions exact plus one case-link bridge; actual f29 native parent/anchor default navigation, caller cancellation and static propagation. No film/decoder/coordinator change; actualFramer binding remains separate."
+  }
+}
