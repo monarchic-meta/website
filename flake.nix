@@ -211,6 +211,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-current-originals = (mkWebsiteCheck "source-current-originals" ''
+            export MONARCHIC_CURRENT_ORIGINALS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:current-originals-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio

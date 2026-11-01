@@ -106,6 +106,7 @@
     "check:source-montreal-accents": "node scripts/check-source-montreal-accents.mjs",
     "check:source-montreal-accents-browser": "node scripts/check-source-montreal-accents-browser.mjs",
     "check:source-gthe-motion": "node scripts/check-source-gthe-motion.mjs",
+    "check:current-originals-browser": "node scripts/check-current-originals-browser.mjs",
     "check:source-vercel-agentic": "node scripts/check-source-vercel-agentic.mjs"
   },
   "dependencies": {
