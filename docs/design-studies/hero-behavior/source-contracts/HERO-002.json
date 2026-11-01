@@ -27,7 +27,7 @@
       852
     ],
     "desktop": "Centered portrait movie-like native component, preserve480:852aspect; quiet source credits outside the film field. No fake wide-screen crop.",
-    "phone": "An authored 375 × 666 film view sits inside a 375 × 742 movie and controls group. In a 375 px desktop browser Preview, the scrollbar leaves 360 px and currently crops 15 px. A uniform responsive fit is pending; Phone source behavior remains an adaptation.",
+    "phone": "The authored 375 × 666 view and 375 × 742 movie/controls fit the actual parent client width uniformly. At a 375 px Preview viewport/client360 the zoom is .96; at320/client305 it is .813333. Native review notes wrap with16px side pins. Phone source behavior remains an adaptation.",
     "clock": "A time-driven native variant/state controller with Pause/Play/Replay. No invented scrolling. Sourcecut order/time are the contract; source audio omitted unless actually inspected/licensed."
   },
   "phases": [
@@ -1463,7 +1463,7 @@
     "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
   ],
   "sourceFidelityRefinement": {
-    "status": "DESKTOP_SOURCE_ART_VERIFIED_PHONE_FIT_PENDING",
+    "status": "NATIVE_EXPORT_AND_RESPONSIVE_PLAYBACK_PASS_GRID_REFINEMENT_PENDING",
     "plan": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/plan.json",
       "bytes": 31546,
@@ -1488,7 +1488,7 @@
     "closingText": "Independently written substitute text follows the observed closing-poem arrangement; it does not reproduce the Borges poem."
   },
   "nativePackaging": {
-    "method": "Three supported native component conversions retain editable scene contents, with explicit ID lineage. Ordinary Frame wrappers hold phase overrides; native instances and both definition variants remain opaque and have no phase override.",
+    "method": "Supported native component conversions retain editable scene contents and explicit ID lineage. Ordinary Frame wrappers hold phase overrides; native instances and both definition variants remain opaque without phase overrides. The title wrapper is authored visible for a useful static editor poster; Preview clock visibility supersedes it.",
     "components": [
       {
         "phase": 2,
@@ -1510,15 +1510,57 @@
         "primary": "QLpwKNEMh",
         "phone": "AuCSOnzQy",
         "wrapper": "YOCMxk2Zh"
+      },
+      {
+        "phase": 12,
+        "definition": "buuA9sESe",
+        "primary": "DNVA7P3bw",
+        "phone": "ZD4LSzmXD",
+        "wrapper": "mdPULqrIY"
+      },
+      {
+        "phase": 19,
+        "definition": "HhAEDtuSt",
+        "primary": "HogoBn4ty",
+        "phone": "pUczNv8ct",
+        "wrapper": "rUCxla9EG"
+      },
+      {
+        "phase": 24,
+        "definition": "a4H5zLFRy",
+        "primary": "owPP7aK96",
+        "phone": "M_78bYwVo",
+        "wrapper": "Y40BO7mwz"
+      },
+      {
+        "phase": 32,
+        "definition": "xX5NKc6cw",
+        "primary": "S6cFfaAWG",
+        "phone": "vHBjI9L4b",
+        "wrapper": "beCoWYQ51"
+      },
+      {
+        "phase": 34,
+        "definition": "steA660X2",
+        "primary": "YE0MUO7Z6",
+        "phone": "sB21AUPTp",
+        "wrapper": "xeO5mlMDL"
+      },
+      {
+        "phase": 36,
+        "definition": "WI8tUBhix",
+        "primary": "YqjnGMBXV",
+        "phone": "IZS406b_V",
+        "wrapper": "JSN6WLDXE"
       }
     ],
-    "compilation": "The generated page exceeded 1,048,576 bytes after the native definition refresh. Reusing a third scene restores actual Preview compilation; correct saved models alone were insufficient."
+    "compilation": "Nine native scene components reduce the generated page enough to update after a fresh editor reload. Their genuine Phone variants retain the localized editable parts. The current ed00776c controller has44 unchanged override rows, empty diagnostics, actual responsive playback/fit recovery, and a complete37-scene Desktop Replay. Earlier fourth-component size rejection and cached/empty Preview observations remain historical evidence; a quiet console alone is not a compilation check."
   },
   "savedPreviewVerification": {
-    "status": "DESKTOP_CURRENT_SOURCE_ART_PASS_PHONE_FIT_PENDING",
+    "status": "DESKTOP37_PHONE_ART37_AND_ACTUAL_RESPONSIVE_HOST_PASS",
     "pageID": "ANWBjWXdj",
     "afterEditorReload": true,
-    "liveFramerSourceSHA256": "cfc097445bfdacefc0239e23c012ea07133cf4a6f5f316658466bb1e5ddcd218",
+    "liveFramerSourceSHA256": "ed00776c09e8e3dee9f3086cc871356200d6137987222f06ee897ba31c64c327",
     "evidence": {
       "full37PhaseClockRun": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-final-desktop-sequence.json",
@@ -1544,18 +1586,104 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-third-component-actual-phone-picker.json",
         "bytes": 418,
         "sha256": "f14c8d076b5933b7e64444c3c60bdeee06eb32365f10122a083309b714bc7924"
+      },
+      "phone37PhaseClockRun": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-final-phone-37-fit-sequence.json",
+        "bytes": 101340,
+        "sha256": "3a6318d7036a306bc5797d96f221e3029d8a985f36afaba5927960d9c7750f8f"
+      },
+      "phoneNativeMetrics": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-current-phone-native-metrics.json",
+        "bytes": 5372,
+        "sha256": "bc2f7eb368aba430c60b25db38b8fa4363f7dcc2e564ae62da3b7c40d090050e"
+      },
+      "phoneControls": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-fitted-phone-real-controls.json",
+        "bytes": 4752,
+        "sha256": "814d4ee663979435c6bc1f486368d370e7d77856c915092ac058de2acfe0800f"
+      },
+      "canvasTitlePoster": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-native-canvas-title-poster-proof.json",
+        "bytes": 455,
+        "sha256": "150d282f49dff44a06938f0bb1738d247359aca056adb29b19593e56b74eba4f"
+      },
+      "phone320CreditsAndOpening": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-native-footer-320-and-opening-proof.json",
+        "bytes": 4607,
+        "sha256": "0b02efc0b5d169062507e17e3eda335a5c060f319ecf86db3b9734cff8646e14"
+      },
+      "nixResponsiveFit": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-responsive-fit-nix-proof.json",
+        "bytes": 629,
+        "sha256": "00afe2e50569eea36d29055bf9a8430ad8e0843053533f48344b752b2edcc36c"
+      },
+      "fourthNativePublication": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-phase36-native-publication-proof.json",
+        "bytes": 461,
+        "sha256": "91d2b3e51d28b75233a1b26b7acb2d681841686ca323890ccc297d8a92ea6f18"
+      },
+      "freshExportFailure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-phase36-preview-publication-pending.json",
+        "bytes": 762,
+        "sha256": "b6461e711e59d46b2efaed51b4b78649eba48294e89aa8beab7ba111f5d45265"
+      },
+      "actualFourthComponentExportWarning": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-fourth-component-export-warning.json",
+        "bytes": 959,
+        "sha256": "6b993caa8c7941dbd8f309f1d7b131c0c573715ad466a56b8fa619911bcfb3a4"
+      },
+      "nineNativePublication": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-five-native-publication-proof.json",
+        "bytes": 17365,
+        "sha256": "fe7e8d2bd3f4b7ada4e86bea36cf00be4a83482f1ed63e5eab7ed824fb87f620"
+      },
+      "phone37AfterNine": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-after-nine-v2-phone-375-sequence.json",
+        "bytes": 665072,
+        "sha256": "8bcd4db40159ca808e1b1030ca7b5d44cd03a193663d88e2bd92ac7a0e6e9ead"
+      },
+      "desktopResponsiveHostFailure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-after-nine-desktop-host-swap-failure.json",
+        "bytes": 28425,
+        "sha256": "9ddd13277a9a63819972b82fe76091973e7bff02279f63c50bbef03254fe49a1"
+      },
+      "responsiveHostLocalFix": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/validation/responsive-native-host/receipt.json",
+        "bytes": 3635,
+        "sha256": "6b2b436a4ff00249b514de693114c16c5dd8ddb7120f1c211b766417fa7db13f"
+      },
+      "currentNativeBindings": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/authoring/current-native-source-bindings-through-233.json",
+        "bytes": 763869,
+        "sha256": "9bbec8fd07f28c589ada28c376301c765fcfd8d5305e12692bece10d44f53981"
+      },
+      "hostFixedDesktop37": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-after-nine-v2-desktop-host-fixed-sequence.json",
+        "bytes": 657475,
+        "sha256": "68ff62c78526a92b8d956268b3e10510743c16bf570056116bb7ac6bb195c8dc"
+      },
+      "actualResponsiveHostReplacement": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-host-fixed-actual-responsive-proof.json",
+        "bytes": 85867,
+        "sha256": "26371dc5d81bd5f4565ba17d7ffb9e5d7f627d2c188d6a67d591b1f439a1afa4"
       }
     },
     "verified": [
       "All 37 timed states reached 52.314558 seconds; actual Pause held 1.3915 seconds and Replay restarted the sequence.",
       "After native publication and reuse of three scenes, Desktop scenes 2, 10 and 11 visibly paint current source paper, corrected serif metadata and diagrams without added study annotations.",
-      "The independently written closing poem follows the observed source arrangement with 7/8 px Courier Prime; its dark fill matches the sampled source background.",
-      "The native Phone picker selects genuine AuCSOnzQy; its definition renders at 375 × 666."
+      "The independently written closing poem follows the observed source arrangement with Desktop7/8 px and Phone5/6 px Courier Prime; its dark fill matches the sampled source background.",
+      "The native Phone picker selects genuine AuCSOnzQy; its definition renders at 375 × 666.",
+      "Current ac767 Phone Preview completed all37 phases at52.314558 seconds with fitted source-art scenes and ready images. Pause held .1845 seconds across800ms, and Play resumed to .4566.",
+      "At320/client305, review notes all fit x16/width273 with10px and6px vertical gaps and no horizontal document overflow. Native title-only editor poster does not run the clock.",
+      "After nine native scene conversions, the actual reloaded Phone Preview covers all37 scenes and reaches52.314558seconds; phase16 was captured on a separate Replay pass after an inter-segment observation gap.",
+      "The saved ed00776c controller completed all37 Desktop scenes in one continuous actual Replay pass through52.314558seconds after editor/Preview reload. No error-level messages occurred during the capture; two earlier Framer service-unregister messages remain recorded.",
+      "Actual Desktop→Phone→Desktop host replacement preserves playing state and advances1.3436→2.7943→4.3451seconds while fitting widths480→360→480. The earlier observer defect is reproduced separately as a failed historical check."
     ],
     "limits": [
       "The first capture of all 37 scenes predates corrected component publication; current scenes 2, 10 and 11 have separate superseding evidence.",
-      "The full painted Phone sequence and narrow fit remain pending. The observed 375/360 px crop is a failed check.",
-      "Substitute verse and fitted fonts, held photographs, approximate cuts, still grain and omitted audio remain explicit source differences."
+      "Substitute verse and fitted fonts, held photographs, approximate cuts, still grain and omitted audio remain explicit source differences.",
+      "Phase36 holds a fitted grid arrangement while the source changes from scattered words at48seconds to a sparse grid with an empty center. A native geometry refinement is queued.",
+      "The complete Phone native-art capture uses ac767; the ed00776c change only rebinds host observers and has separate actual responsive playback/fit evidence. Do not relabel the historical Phone capture as an ed00776c continuous37-scene run."
     ]
   }
 }
