@@ -6,14 +6,17 @@
   "source": "https://x.com/stephenkelman/status/2093335231604367454",
   "classification": "Source inspiration / credited motion-work recreation",
   "evidence": {
-    "kind": "Retained source film; complete duration sampled at approximately 0.4-second intervals, with full-size resolved-frame comparison.",
-    "durationSeconds": 9.6,
-    "width": 720,
-    "height": 720,
+    "kind": "Owner-listed2160square film, creator identification and genuine public museum scan; actual source and independent recreation compared at corresponding full-frame states.",
+    "url": "https://cdn.recent.design/items/vmmug5r/0/2160x2160.mp4",
+    "sha256": "dd4571a567969bbfebb5573497a9df1482bafb0bdd7234ca74bde4d83057afcb",
+    "bytes": 18688496,
+    "width": 2160,
+    "height": 2160,
     "fps": 30,
+    "frames": 288,
+    "duration": 9.6,
     "audio": false,
-    "sha256": "c31b1705d0bed90fd0e1e1133953053c0ec07ae68280396da1171f0888512c7b",
-    "sessionArtifact": "hero-journeys-2026-11-01/source-media-review.json"
+    "creatorURL": "https://stephenkelman.co.uk/type-face"
   },
   "presentation": {
     "type": "Recorded square motion work; no independent interactive website was supplied.",
@@ -23,23 +26,32 @@
     {
       "seconds": [
         0,
-        2.1
+        2.112
       ],
-      "visual": "Sparse writing assembles into the surface."
+      "visual": "Partial lower-neck entry assembles the contour writing.",
+      "basis": "Fitted admission deadlines, not recovered original parameters."
     },
     {
       "seconds": [
-        2.1,
+        2.112,
         7
       ],
-      "visual": "Resolved written head turns."
+      "visual": "Resolved written Augustus bust turns."
     },
     {
       "seconds": [
         7,
+        9
+      ],
+      "visual": "Lower-to-upper writing departure, reaching the observed black frame270.",
+      "basis": "Two source states ground coarse24-by24 admission/erase fits; continuous original trajectories remain unknown."
+    },
+    {
+      "seconds": [
+        9,
         9.6
       ],
-      "visual": "Writing disperses into sparse patches before the loop."
+      "visual": "Frame270 is black; new lower-neck writing enters from frame271 before the loop boundary."
     }
   ],
   "authoring": {
@@ -47,11 +59,93 @@
     "posterTime": 2.4,
     "canvasMotion": false,
     "previewStartsAt": 0,
-    "scope": "Independently authored timing, surface writing and projection fitted to retained source frames."
+    "scope": "Credited Augustus museum contours with independent Latin ribbon placement and fitted camera/admission deadlines; original-site and owner-listed film evidence replace the earlier Lee Perry-Smith stand-in."
   },
   "remainingFidelityGaps": [
-    "The source subject mesh, font and exact writing are unavailable. The recreation uses the credited Lee Perry-Smith CC BY 3.0 head, Georgia and public-domain Shakespeare text.",
-    "Phase boundaries and rotation are visually fitted approximations, not recovered original parameters.",
-    "Framer reload and actual Preview checks remain separate from renderer tests."
-  ]
+    "The sculpture is identified from the creator and museum sources; byte identity to the creator working mesh is unknown.",
+    "Latin excerpts and glyph placement are independent. Preferred Times New Roman falls back to verified Liberation Serif in the Linux fixture.",
+    "Camera and between-frame admission/erase trajectories are fits, not recovered original parameters.",
+    "Actual Framer Preview paint and persistence after an editor reload remain unverified."
+  ],
+  "historicalReview": {
+    "evidence": {
+      "kind": "Retained source film; complete duration sampled at approximately 0.4-second intervals, with full-size resolved-frame comparison.",
+      "durationSeconds": 9.6,
+      "width": 720,
+      "height": 720,
+      "fps": 30,
+      "audio": false,
+      "sha256": "c31b1705d0bed90fd0e1e1133953053c0ec07ae68280396da1171f0888512c7b",
+      "sessionArtifact": "hero-journeys-2026-11-01/source-media-review.json"
+    },
+    "phases": [
+      {
+        "seconds": [
+          0,
+          2.1
+        ],
+        "visual": "Sparse writing assembles into the surface."
+      },
+      {
+        "seconds": [
+          2.1,
+          7
+        ],
+        "visual": "Resolved written head turns."
+      },
+      {
+        "seconds": [
+          7,
+          9.6
+        ],
+        "visual": "Writing disperses into sparse patches before the loop."
+      }
+    ],
+    "remainingFidelityGaps": [
+      "The source subject mesh, font and exact writing are unavailable. The recreation uses the credited Lee Perry-Smith CC BY 3.0 head, Georgia and public-domain Shakespeare text.",
+      "Phase boundaries and rotation are visually fitted approximations, not recovered original parameters.",
+      "Framer reload and actual Preview checks remain separate from renderer tests."
+    ],
+    "status": "Earlier gallery-media review and stand-in authoring; superseded by the current original-source revision below. Retained as history."
+  },
+  "currentOriginalSourceRevision": {
+    "date": "2026-11-01",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/TypeFaceSequence.tsx",
+      "bytes": 242982,
+      "sha256": "77eec9039cfbb58512ca136a681c31df3460a9b8aca2e1200ec66faf4d939535"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-type-face-provenance.json",
+      "bytes": 12978,
+      "sha256": "c357098cfc394ceaec047f475426f3a0ee734016d3a28fb69ce6e89249a7b346"
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001-source-window-299/output.json",
+      "bytes": 470088,
+      "sha256": "0f818d344eec137e67c48ea192a0d18b8c4a2d0133580d9c6ee644197a2de197"
+    },
+    "finalSourceReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001/final-source-receipt.json",
+      "bytes": 3269,
+      "sha256": "23dd8362750b2d1627edf417ac47332e2d784ff3ffa5b946f2cc64b01bae7839"
+    },
+    "modelCommand": 299,
+    "writeScope": "One existing code file only. No native-layer changes. Same genuine default component row,12property controls/defaults,87pages,16native definitions,209code placements,48source files.",
+    "renderedValidation": {
+      "store": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1",
+      "result": {
+        "path": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1/evidence/results.json",
+        "bytes": 29513,
+        "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f"
+      },
+      "strictGroups": 7,
+      "temporalFrames": 10,
+      "mixedPixelPlacements": 120,
+      "actualPeakContexts": 1
+    },
+    "actualMCPModelReadback": true,
+    "actualPreviewVerified": false,
+    "actualEditorReloadVerified": false
+  }
 }

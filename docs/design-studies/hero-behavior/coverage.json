@@ -28,8 +28,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-001.json",
-        "bytes": 1985,
-        "sha256": "d49a5544196afee4a41a0a5b2f596be859ca74982abf1aec503c05d698a746bd"
+        "bytes": 6355,
+        "sha256": "ba3b8e318c735175c22b143995d1cf0431e04faf9b74b42e3739a35fe0e82180"
       },
       "page": {
         "id": "XKMW7Ckz5",
@@ -37,15 +37,56 @@
         "desktop": "pleNW81xZ",
         "phone": "Xcj2TScDH"
       },
-      "coverage": "Head assembly, turn, dispersal and Pause/Play checked after reload.",
-      "sourceLimitations": "Original mesh, subject and writing were unavailable; credited scan, font and text substitutes and fitted pacing remain.",
+      "coverage": "Current Augustus source/rendering verified locally; exact MCP299 source/model readback. Actual current Preview/reload pending.",
+      "sourceLimitations": "Museum geometry is identified; creator working-mesh bytes, exact glyph placement, camera and continuous timing are not recovered.",
       "earlierBoundedRuntimeEvidence": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/type-face-framer-runtime-proof.json",
         "bytes": 1663,
         "sha256": "5113258081066a3a1571920a105e3f04f4f74099d8c7c0e769dc6e98960a3cf4"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "historicalCoverage": "Head assembly, turn, dispersal and Pause/Play checked after reload.",
+      "currentOriginalSourceRevision": {
+        "date": "2026-11-01",
+        "source": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/TypeFaceSequence.tsx",
+          "bytes": 242982,
+          "sha256": "77eec9039cfbb58512ca136a681c31df3460a9b8aca2e1200ec66faf4d939535"
+        },
+        "provenance": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-type-face-provenance.json",
+          "bytes": 12978,
+          "sha256": "c357098cfc394ceaec047f475426f3a0ee734016d3a28fb69ce6e89249a7b346"
+        },
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001-source-window-299/output.json",
+          "bytes": 470088,
+          "sha256": "0f818d344eec137e67c48ea192a0d18b8c4a2d0133580d9c6ee644197a2de197"
+        },
+        "finalSourceReceipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001/final-source-receipt.json",
+          "bytes": 3269,
+          "sha256": "23dd8362750b2d1627edf417ac47332e2d784ff3ffa5b946f2cc64b01bae7839"
+        },
+        "modelCommand": 299,
+        "writeScope": "One existing code file only. No native-layer changes. Same genuine default component row,12property controls/defaults,87pages,16native definitions,209code placements,48source files.",
+        "renderedValidation": {
+          "store": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1",
+          "result": {
+            "path": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1/evidence/results.json",
+            "bytes": 29513,
+            "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f"
+          },
+          "strictGroups": 7,
+          "temporalFrames": 10,
+          "mixedPixelPlacements": 120,
+          "actualPeakContexts": 1
+        },
+        "actualMCPModelReadback": true,
+        "actualPreviewVerified": false,
+        "actualEditorReloadVerified": false
+      }
     },
     {
       "id": "HERO-002",
@@ -276,8 +317,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-010.json",
-        "bytes": 18961,
-        "sha256": "fadb9a627ee9b2868c7d82cd92cb2ab9c1a0c2c2297b1294ace01ad26f7ce1ec"
+        "bytes": 24380,
+        "sha256": "bf2196e35595bdf1ef783c39bd64bda3d2d65ec79d95952af394c9ce2e04e21d"
       },
       "page": {
         "id": "H_UARwj3j",
@@ -285,7 +326,7 @@
         "desktop": "QgyP6unlL",
         "phone": "qVgA1kAkv"
       },
-      "coverage": "Six Desktop/seven Phone native states, prose, Skills and responsive repairs checked.",
+      "coverage": "Current original six-family native motion verified locally; exact MCP294 native bindings and300 source/model readback. Actual current Preview/reload pending.",
       "sourceLimitations": "Geometry and timing are fitted; working actions do not establish pixel-identical source behavior.",
       "earlierBoundedRuntimeEvidence": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/g-framer-qa.json",
@@ -293,7 +334,75 @@
         "sha256": "bf2e38680c6ce1c016fe57516fcf6a3bcbcf4b7efca9d327c3fdd1d1ffed9c29"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "historicalCoverage": "Six Desktop/seven Phone native states, prose, Skills and responsive repairs checked.",
+      "currentOriginalSourceRevision": {
+        "date": "2026-11-01",
+        "source": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceGtheMotion.tsx",
+          "bytes": 17668,
+          "sha256": "8c3666db2ff97d7ba4b837d989689fb9bfc8afea71c56a16ba8de571efdeb037"
+        },
+        "provenance": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-gthe-motion-provenance.json",
+          "bytes": 9247,
+          "sha256": "3c9e74ffb000512fe53204987c04d052dd27f2ec5a6a50cf2579910242f3f00f"
+        },
+        "localValidation": {
+          "store": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1",
+          "result": {
+            "path": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+            "bytes": 67662,
+            "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c"
+          },
+          "checks": 43,
+          "scope": "Local ReactDOM native-like Framer HOC fixture, including Framer pseudo-border and competing retained native transform; not actual Framer Preview/reload"
+        },
+        "nativeModel": {
+          "window": 294,
+          "receipt": {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/output.json",
+            "bytes": 625381,
+            "sha256": "b3211138d1f41762064893bafa8503d6e9c32d6bb12c81f4c0f8c3962910e129"
+          },
+          "bindings": 1820,
+          "logicalBindings": 140,
+          "replicaBindings": 1680,
+          "paddingFields": 26,
+          "desktopBreakpoint": 1025,
+          "previewVerified": false,
+          "editorReloadVerified": false
+        },
+        "sourceModel": {
+          "modelCommand": 300,
+          "receipt": {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-integration-source-window-300/output.json",
+            "bytes": 473972,
+            "sha256": "99e6b577e73b6da75adebf2ff9f78eb2236c307f1ad3bafbfe8fe0f076e71756"
+          },
+          "sourceReadbackExact": true,
+          "publicOverrides": 31,
+          "nativeWrites": 0,
+          "counts": {
+            "pages": 87,
+            "nativeDefinitions": 16,
+            "codePlacements": 209,
+            "sourceFiles": 48
+          }
+        },
+        "nativeIntegration": {
+          "preserveAuthoredBorders": true,
+          "rendering": "Retain native border/radius/background; runtime adds no duplicate border. Reduced-motion selector holds the authored geometry even if retained legacy native loop metadata writes inline transforms. Group sizing remains authored in reduced motion. Phone reduced motion also disables procedural media-query sizing and restores the authored group dimensions.",
+          "legacyLoopArchive": {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/obsolete-loop-effect-finite-archive.json",
+            "bytes": 3942185,
+            "sha256": "b5b48d550820655bf1142d2ad64ca0662cad2504b8aab0dcd02f4be0718c6d27"
+          },
+          "limitation": "Legacy native loopEffect metadata remains because the supported mutation schema has no verified unset operation. Visual freeze is tested; this does not establish that the native animation scheduler is stopped."
+        },
+        "actualPreviewVerified": false,
+        "actualEditorReloadVerified": false
+      }
     },
     {
       "id": "HERO-011",
@@ -560,7 +669,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3890,
-    "sha256": "0ae7867eacc82d919ed9311eee4282625a207899a57d196eb6be966eab7367ff"
+    "sha256": "aaa400deeaa5ba68cafdafbd9b421311e6f00b2653729fa9a0b66046760a59b7"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -727,13 +836,15 @@
     "sha256": "43b020eebb60b3f134318fd9d7074868b7b62f928da69d4264697a26b8c2b427"
   },
   "latestOriginalSourceCorrection": {
-    "id": "HERO-002",
-    "modelCommand": 288,
-    "manifest": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
-      "bytes": 5618,
-      "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
-    },
+    "ids": [
+      "HERO-001",
+      "HERO-010"
+    ],
+    "modelCommands": [
+      299,
+      294,
+      300
+    ],
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false
   }

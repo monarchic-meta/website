@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 1789,
-      "sha256": "8341079ff53dbd2e0bd9a61d071efbc3f916be1a54f35c56d8d52911f0c797e0"
+      "bytes": 3096,
+      "sha256": "47237d46c20287468a15b8a9aa06c947fdfa355604da7484056a0a5cd9640f94"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 40094,
-      "sha256": "27d28c59e185da6ad0f92fe902985d7cb9f2202adc84bdd3a3aa7b74fe583750"
+      "bytes": 46366,
+      "sha256": "73814a36bcc07765c3c6a47c37aca4fd0bb3d613df742734e045e3e5f6da4521"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3890,
-      "sha256": "0ae7867eacc82d919ed9311eee4282625a207899a57d196eb6be966eab7367ff"
+      "sha256": "aaa400deeaa5ba68cafdafbd9b421311e6f00b2653729fa9a0b66046760a59b7"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -250,6 +250,28 @@
       "bytes": 5618,
       "sha256": "886c19389f26be33884b77f585d56b675319df73adcb5a1a0131d79fde5b034e"
     },
-    "actualNewAnimationOrReloadVerified": false
+    "actualNewAnimationOrReloadVerified": false,
+    "HERO001": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-001.json",
+      "bytes": 6355,
+      "sha256": "ba3b8e318c735175c22b143995d1cf0431e04faf9b74b42e3739a35fe0e82180"
+    },
+    "HERO010": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-010.json",
+      "bytes": 24380,
+      "sha256": "bf2196e35595bdf1ef783c39bd64bda3d2d65ec79d95952af394c9ce2e04e21d"
+    },
+    "latestModelWindows": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO001-source-window-299/output.json",
+        "bytes": 470088,
+        "sha256": "0f818d344eec137e67c48ea192a0d18b8c4a2d0133580d9c6ee644197a2de197"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-integration-source-window-300/output.json",
+        "bytes": 473972,
+        "sha256": "99e6b577e73b6da75adebf2ff9f78eb2236c307f1ad3bafbfe8fe0f076e71756"
+      }
+    ]
   }
 }

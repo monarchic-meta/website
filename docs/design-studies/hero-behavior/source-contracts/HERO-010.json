@@ -5,12 +5,36 @@
   "galleryURL": "https://httpster.net/website/gtheimagineers/",
   "classification": "Source inspiration / credited interactive recreation",
   "credit": "G!theimagineers; website Index Studio",
-  "revision": "Selected2020accordionviewport; primaryHTML/CSS still matches namedchapters/structuralmechanism.",
+  "revision": "Current original English site. Source layout/navigation, six graphic motion families, Phone menu/contact and nested Skills inspected independently of the old gallery.",
   "inspection": {
     "freshPublicHTMLAndCSS": true,
-    "newBrowserAccess": false,
+    "newBrowserAccess": true,
     "existingBrowserActions": "RootselectedallfivechapterrailsandreturnedtoManifesto; Visionuntouchedwaitshowedcontourdevelopingintorings. NestedproseandSkillsaffordancevisible.",
-    "limits": "Sourceimplementationinspectionaddsgeometry/layout/timingfacts,butdoesnotverifyeverysettledanimationorPhonebehavior."
+    "limits": "Actual isolated public-source input captures and primary source-code observations are separate. The recreation uses independent timing/physics fits. Actual new Framer Preview/editor-reload paint is unverified.",
+    "historicalLimits": "Sourceimplementationinspectionaddsgeometry/layout/timingfacts,butdoesnotverifyeverysettledanimationorPhonebehavior.",
+    "isolatedPublicBrowserAccess": true,
+    "currentEvidence": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/audit.json",
+        "bytes": 122452,
+        "sha256": "9ee5cb0aecc25783f17b2d1c08490ca1ca7d865dab6fb5e5f36f0d7b1d14e7b2"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed/audit.json",
+        "bytes": 195584,
+        "sha256": "9d8370f40d0b516c1804713153c638f6ade762e39eae2be50a97394845be7860"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/directed-completion/audit.json",
+        "bytes": 249523,
+        "sha256": "3ce5f79d05f55333e8e50510b8ae942573ad25085c8102bd6529fc1eed28a5fa"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-010/phone-contact/audit.json",
+        "bytes": 5245,
+        "sha256": "e9a19079e67c70a7b3079296a2b01676ef87e2dad5abf9ed5bbf74b76af3b939"
+      }
+    ]
   },
   "inputModel": {
     "initialState": "home",
@@ -346,7 +370,7 @@
       "graphic": {
         "kind": "5bouncingoutlinecircles",
         "sourceGeometry": "Fivecirclesr17in100unitwideworld,verticalextentfollowscolumnaspect;sourcecodeusestimevaryinggravityandwall/floorcollisions.",
-        "motion": "Publicimplementation-only:loopinggravityroughly−0.1…0.7,bouncingcircles. Contactclickcaptureisearlyandcirclesmostlyaboveviewport;settledphysicsnotobserved."
+        "motion": "Actual source Contact captured with five moving outline circles, including390-by429 Phone field. Independent deterministic collision/gravity solver fits the observed mechanics; it does not reuse source Matter.js or random starts."
       },
       "copy": {
         "introLabel": "Contact us",
@@ -366,7 +390,7 @@
     }
   ],
   "phone": {
-    "status": "ExplicitauthoringadaptationgroundedinpublicmobileCSS;actualsourcePhoneunverified.",
+    "status": "Current original Phone menu/chapter/Contact states captured in an isolated public browser. Native text/font choices retain the declared adaptations.",
     "sourceCSS": "≤1024:55pxfixedheader;languagecontrolhidden;menutogglesfive100pxnavigationrows;onlyselectedsectiondisplayed;graphicgenerally65%viewportwidth,Experience45%;activecontentusesnormalverticalscroll.",
     "required": "Retainallfivechapters+Homeanddisclosureswithlargeclick/touchtargets;donotshrinkDesktoprailsintoPhone. VerifyactualPhonePreviewandrecordadaptation."
   },
@@ -573,5 +597,72 @@
       "sha256": "2e0831962ecbb60f857438c2732de200ae589a2323005e73c733ad9ee0786290",
       "bytes": 4804
     }
-  ]
+  ],
+  "currentOriginalSourceRevision": {
+    "date": "2026-11-01",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceGtheMotion.tsx",
+      "bytes": 17668,
+      "sha256": "8c3666db2ff97d7ba4b837d989689fb9bfc8afea71c56a16ba8de571efdeb037"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-gthe-motion-provenance.json",
+      "bytes": 9247,
+      "sha256": "3c9e74ffb000512fe53204987c04d052dd27f2ec5a6a50cf2579910242f3f00f"
+    },
+    "localValidation": {
+      "store": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1",
+      "result": {
+        "path": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+        "bytes": 67662,
+        "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c"
+      },
+      "checks": 43,
+      "scope": "Local ReactDOM native-like Framer HOC fixture, including Framer pseudo-border and competing retained native transform; not actual Framer Preview/reload"
+    },
+    "nativeModel": {
+      "window": 294,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/output.json",
+        "bytes": 625381,
+        "sha256": "b3211138d1f41762064893bafa8503d6e9c32d6bb12c81f4c0f8c3962910e129"
+      },
+      "bindings": 1820,
+      "logicalBindings": 140,
+      "replicaBindings": 1680,
+      "paddingFields": 26,
+      "desktopBreakpoint": 1025,
+      "previewVerified": false,
+      "editorReloadVerified": false
+    },
+    "sourceModel": {
+      "modelCommand": 300,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-integration-source-window-300/output.json",
+        "bytes": 473972,
+        "sha256": "99e6b577e73b6da75adebf2ff9f78eb2236c307f1ad3bafbfe8fe0f076e71756"
+      },
+      "sourceReadbackExact": true,
+      "publicOverrides": 31,
+      "nativeWrites": 0,
+      "counts": {
+        "pages": 87,
+        "nativeDefinitions": 16,
+        "codePlacements": 209,
+        "sourceFiles": 48
+      }
+    },
+    "nativeIntegration": {
+      "preserveAuthoredBorders": true,
+      "rendering": "Retain native border/radius/background; runtime adds no duplicate border. Reduced-motion selector holds the authored geometry even if retained legacy native loop metadata writes inline transforms. Group sizing remains authored in reduced motion. Phone reduced motion also disables procedural media-query sizing and restores the authored group dimensions.",
+      "legacyLoopArchive": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/obsolete-loop-effect-finite-archive.json",
+        "bytes": 3942185,
+        "sha256": "b5b48d550820655bf1142d2ad64ca0662cad2504b8aab0dcd02f4be0718c6d27"
+      },
+      "limitation": "Legacy native loopEffect metadata remains because the supported mutation schema has no verified unset operation. Visual freeze is tested; this does not establish that the native animation scheduler is stopped."
+    },
+    "actualPreviewVerified": false,
+    "actualEditorReloadVerified": false
+  }
 }
