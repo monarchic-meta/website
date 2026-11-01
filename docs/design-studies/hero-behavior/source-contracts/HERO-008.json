@@ -147,7 +147,7 @@
   ],
   "completeNativePacket": {
     "scenes": 18,
-    "editableParts": 476,
+    "editableParts": 486,
     "individualImageOrSVGAssets": 30,
     "sourceFonts": [
       "PP Neue Montreal Variable",
@@ -156,7 +156,8 @@
     "fontHandling": "The actual two source variable fonts are uploaded to the Framer workspace and verified after reload. Display supports weight100–900/italic0–1; Text supports weight200–700/italic0–1. Proprietary font bytes remain outside Git.",
     "attractions": "Current code supports eleven panels, open4.8fr/closed1fr, 0.75s transition and 100px label column. Desktop ≥1024 uses hover/reset-first; Phone uses tap and initially closed panels.",
     "proximity": "Seven native navigation word Frames contain51 independently weighted Text letters. Native hover/pointer adapters preserve400–900 over20 CSS pixels; the source-style effect and scoped seven-section activation have separate actual Framer input gates.",
-    "initialRecipeEditableParts": 437
+    "initialRecipeEditableParts": 437,
+    "preCompositionEditableParts": 476
   },
   "wideFilms": [
     {
@@ -175,7 +176,7 @@
     "scope": "Current public footer attribution; distinct from archival interaction verification."
   },
   "savedBehaviorVerification": {
-    "status": "SEVEN_GROUPS_ACTUAL_PASS_NATIVE_NAVIGATION_CORRECTION_SAVED_RETEST_PENDING",
+    "status": "EARLIER_SEVEN_GROUPS_ACTUAL_PASS_NEW_NAVIGATION_AND_COMPOSITION_MCP_APPLIED_RETEST_PENDING",
     "pageID": "P5fp5dz6E",
     "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P5fp5dz6E",
     "sourceBatch": {
@@ -223,10 +224,81 @@
       "The opening native video loads at readyState4 with muted looping playback. City and punctuation are distinct Vimeo works, each inspected at1280×720 readyState4 with paused=false."
     ],
     "openGates": [
-      "The original native section links did not arrive at their targets; a literal-hash UI trial also failed and was restored byte-exact. New scoped tap/click/key bindings and the native proximity-event correction are saved; actual target arrival/hover retesting awaits reliable browser routing.",
-      "Reintroduction and the language support panel still differ materially from the selected archive. A bounded native composition proposal is prepared; this record does not claim it is installed.",
+      "Native navigation/proximity corrections are applied:28 section bindings and the four-override source support native hover/pointer channels, owned targets and nested rich-text anchors. Local strict/Chromium checks pass; actual seven-target arrival/hover still awaits reliable connected-browser routing.",
+      "The two source composition corrections are applied in the model, with23 logical retained patches and10 new Primary/truePhone families. Actual rendering/source comparison and final genuine-font13 picker assignment for ten new/reused italic targets on each breakpoint remain pending.",
       "Source Phone composition and selected-revision interaction parity remain adaptations or unknowns. Native Video/Vimeo offscreen pausing is not covered by the custom decoder gate."
     ],
-    "browserBoundary": "Browser automation was stopped after the owner observed its tabs appearing in another focused desktop chat, despite matching session metadata. MCP saved-model checks do not substitute for reload or live Preview checks."
+    "browserBoundary": "Browser automation was stopped after the owner observed its tabs appearing in another focused desktop chat, despite matching session metadata. MCP saved-model checks do not substitute for reload or live Preview checks.",
+    "currentNavigationSource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceTypeProximity.tsx",
+      "bytes": 18153,
+      "sha256": "f49abec78adf527dbf69e0244b8e6dd13f4a46b01a051288be86d9f9bd11f11f"
+    },
+    "currentNavigationSourceBatch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-007-native-hover-and-proximity-274-275/HERO-007-new-helper-plus-proximity-source-window-274-output.json",
+      "bytes": 462017,
+      "sha256": "ad0575c9fbfdd1df71401be8c3d90ade61c70f23a3774518f02db8de12c7d3f1"
+    },
+    "richTextNavigationLocalValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/validation/owned-rich-text-navigation/receipt.json",
+      "bytes": 2403,
+      "sha256": "28247c1ce31211b714d0b75956bdceab42d9b6d8f99ae839aaf20eb1b772c85e"
+    }
+  },
+  "nativeSourceComposition": {
+    "status": "MCP_APPLIED_WITH_FINITE_SETTER_REPRESENTATIONS_CLOSED_ACTUAL_PREVIEW_PENDING",
+    "sourceProposal": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/fidelity-refinement/native-composition/proposal.json",
+      "bytes": 106494,
+      "sha256": "5a6c8b1702126995a981022704f2c383bb1dd8cecfb25a0d810d8c38252c85c4"
+    },
+    "nativeReadback": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-008-native-source-composition-273/HERO-008-source-composition-native-273-output.json",
+      "bytes": 1194117,
+      "sha256": "49c84e814c062175ae27a51e7805ff433054c2224970caaa1dd2b7729060b65f"
+    },
+    "finiteRepresentationClosure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO-008-native-source-composition-273/HERO-008-source-composition-273-source-peer-closed-representations.json",
+      "bytes": 4724,
+      "sha256": "22b3b5ef851580beca0946ea2dfb6e811771c82bc7e8b15b8c17a47032f55bab"
+    },
+    "wholePageCanonicalSHA256": "68e69ed7f3c8a1920181d28f22270349daf1ce851e3009664193b575222fae98",
+    "storedModel": {
+      "retainedLogicalPatchTargets": 23,
+      "newPrimaryParts": 10,
+      "newTruePhoneParts": 10,
+      "moves": 0,
+      "deletes": 0,
+      "sceneHeightChanges": 0,
+      "overrideChanges": 0
+    },
+    "composition": "Multicolor staggered italic phrase on the left with compact upright postcards on the right; orange Language Support card overlays the full-height Expo flags photograph. Original photographic assets, source links, all existing native IDs and all wave-font bindings are retained.",
+    "temporaryItalicFace": {
+      "family": "PP Neue Montreal Variable",
+      "weight": 800,
+      "italicAxis": 1,
+      "logicalTargets": 10,
+      "phoneCopies": 10,
+      "finalSourceFont13PickerVerified": false
+    },
+    "approvedLocalArtboards": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/fidelity-refinement/native-composition/reintroduction-desktop-proposal.png",
+        "bytes": 229102,
+        "sha256": "3f4d410503e73ceda98f00b605ff5892d0329cb06baa1618921ab55baf9cb9d3"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/fidelity-refinement/native-composition/languages-desktop-proposal.png",
+        "bytes": 4426381,
+        "sha256": "188a3dd4523fb6cbf04631e67a480e08e9eaa6350d8d561ef22bfa621512fa6e"
+      }
+    ],
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "limits": [
+      "The original273 strict receipt remains intact. A separate exact per-ID closure accounts only for five new Phone decimal lexemes,16 default textVerticalAlignment materializations and four intended canonical rotation aliases; no broad normalization or mutation replay was used.",
+      "The approved local artboards are design proposals, not Framer Preview screenshots.",
+      "Phone composition and source-revision interaction equivalence remain declared fits or unknowns."
+    ]
   }
 }
