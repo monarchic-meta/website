@@ -511,24 +511,29 @@
   },
   "carouselRevision": {
     "helper": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-frozen/SourcePortfolioCarousel.tsx",
-      "sha256": "265660b0ef9a1875e27e7e81f8ce7c7be7a86dce78e96402c73ef12947af9be9",
-      "bytes": 17973,
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/frozen/SourcePortfolioCarousel.tsx",
+      "bytes": 18022,
+      "sha256": "140c34842dd058e12d9209cc52786eaf9108306cf8af351d4994a8fa4f8603c3",
       "repositoryPath": "docs/design-studies/code-components/SourcePortfolioCarousel.tsx"
     },
     "film": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-frozen/SourcePortfolioFilmStudy.tsx",
-      "sha256": "8976b38dd490e8bae7de5c58aeba633f0cf46ae8006dc849cfdba2cb6dfda0d2",
-      "bytes": 84410,
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/frozen/SourcePortfolioFilmStudy.tsx",
+      "bytes": 84713,
+      "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0",
       "repositoryPath": "docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx"
     },
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-receipt.json",
-      "sha256": "116866fead5f395253daa030a667a3a35a2056f31bb418f7aa45dec1407355eb",
-      "bytes": 4981
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/final-source-receipt.json",
+      "bytes": 5494,
+      "sha256": "c414467de8c4c653cbee87ab198d1a03c70bea3394f99f96585ee14c68b609a9"
     },
     "framerInstalled": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "privateArtworkRevision": {
+    "value": "managed-carousel-cache-v1",
+    "scope": "Private cache identity and keyed movie surface; no new public control.",
+    "negativeControls": "Cache-key-only retained the stale renderer; surface-key-only reused the stale inset bitmap. Both boundaries pass the actual pixel comparison."
   }
 }
