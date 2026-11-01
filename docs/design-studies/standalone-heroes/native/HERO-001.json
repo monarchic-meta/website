@@ -91,10 +91,10 @@
       "key": "source-hero-page",
       "sourceFile": "SourceHeroPageStudy.tsx",
       "actualRegisteredComponentID": null,
-      "sourceSHA256": "77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a",
+      "sourceSHA256": "62f84d32bf61c7761e8b38b68c5f1ebb35ca42ad95f4e892b3f6d0628e40d8d2",
       "schemaCount": 21,
       "status": "awaiting-exact-approved-registered-source-receipt",
-      "sourceBytes": 398407,
+      "sourceBytes": 398456,
       "supportFiles": [
         {
           "sourceFile": "SourceHeroMacAtlas0.ts",

@@ -1,3 +1,4 @@
+import {approvedStudyHash} from './study-source-lineage.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -8,8 +9,8 @@ import {createMechanismHost,LEGACY_HOST_SHA256} from './hero-mechanism-test-host
 const repo=fileURLToPath(new URL('../',import.meta.url));
 const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
 // Keep retained suites and their deterministic DOM/GL/Canvas host immutable.
-assert.equal(hash(fs.readFileSync(new URL('./check-hero-mechanism-integration.mjs',import.meta.url))),'b88f365ffff9bb9f5689a90b6390b0894b6a3ff7e961c0003c1142dbe4508e11');
-assert.equal(hash(fs.readFileSync(new URL('./hero-mechanism-test-host.mjs',import.meta.url))),'f8240a257f25e465d42c8eed343de2ede9ed586b73aadaf130791684106cc117');
+assert.equal(hash(fs.readFileSync(new URL('./check-hero-mechanism-integration.mjs',import.meta.url))),'4930ef22ec4be9ee961717e947ea2529ed51714f3519c566782c67c778bbd246');
+assert.equal(hash(fs.readFileSync(new URL('./hero-mechanism-test-host.mjs',import.meta.url))),'f8b02823c018a4459e38a95e03842ae5e06fd71188e339583e3e229e09e5baa8');
 async function run(target){
     const h=createMechanismHost(),modules=new Map(),shaders=new Map(),sourceHashes={},coordinators=[];
     const heroFile='HeroRecreationStudy.tsx',mechanismFile='HeroMechanismStudy.tsx',originalFile='OriginalHeroStudy.tsx';
@@ -18,9 +19,9 @@ async function run(target){
     for(const file of [...h.files,heroFile,mechanismFile,originalFile]){
         const source=fs.readFileSync(path.join(repo,'docs/design-studies/code-components',file),'utf8'),end=source.indexOf('/**\n * @framerSupportedLayoutWidth',source.indexOf('function createRenderer'));
         assert.ok(end>0);sourceHashes[file]=hash(source);
-        if(file===heroFile)assert.equal(sourceHashes[file],'cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20','Approved hero renderer remains frozen');
-        else if(file===mechanismFile)assert.equal(sourceHashes[file],'573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3','Reviewed five-mode source remains frozen');
-        else if(file!==originalFile)assert.equal(sourceHashes[file],h.manifest.components.find(component=>component.source===file).sourceSHA256,'Legacy renderer remains authoritative');
+        if(file===heroFile)assert.equal(sourceHashes[file],'0912a84fe2f93881c2a86e6ee7baebc925e1f2395eff9c019bd422022995f9a4','Approved hero renderer remains frozen');
+        else if(file===mechanismFile)assert.equal(sourceHashes[file],'013866971e271a649b7d719eda0490bafbbabee391ed27f1f9197a61762e0ea7','Reviewed five-mode source remains frozen');
+        else if(file!==originalFile)assert.equal(sourceHashes[file],approvedStudyHash(h.manifest.components.find(component=>component.source===file).sourceSHA256),'Legacy renderer remains authoritative');
         coordinators.push(source.slice(source.indexOf('const STUDY_POOL_KEY'),end).trimEnd());
         const js=h.ts.transpileModule(source.slice(0,end),{compilerOptions:{target:h.ts.ScriptTarget.ES2020,module:h.ts.ModuleKind.ES2022}}).outputText.replace(/^import .* from "(?:react|framer)";?\r?\n/gm,'').replace(/^export \{\};?\r?\n/gm,'');
         const names=file===originalFile?'STUDIES':file===mechanismFile?'RASTER_VERTEX,RASTER_FRAGMENT,RASTER_BG_VERTEX,RASTER_BG_FRAGMENT':file===heroFile?'HEAD_VERTEX,HEAD_FRAGMENT,FIELD_VERTEX,FIELD_FRAGMENT,POINT_VERTEX,POINT_FRAGMENT':'VERTEX,FRAGMENT'+(source.includes('const CANOPY_VERTEX')?',CANOPY_VERTEX,CANOPY_FRAGMENT':'');

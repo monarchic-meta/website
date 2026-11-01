@@ -649,7 +649,7 @@ function getStudyPool():StudyPool {
         context2D(result).drawImage(source,0,0,width,height);return result
     }
     const copy=(source:HTMLCanvasElement,target:HTMLCanvasElement,preserveLarger:boolean)=>{
-        const keep=preserveLarger&&target.width*target.height>source.width*source.height
+        const keep=preserveLarger&&target.width>=source.width&&target.height>=source.height
         const width=keep?target.width:source.width,height=keep?target.height:source.height,c=context2D(target)
         if(target.width===width&&target.height===height){c.drawImage(source,0,0,width,height);return}
         // Stage before changing dimensions. Resizing clears canvas pixels; an

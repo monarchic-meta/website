@@ -1,3 +1,4 @@
+import {approvedStudyHash} from './study-source-lineage.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -9,9 +10,9 @@ import{readSourceHeroPackage,installSourceHeroDataModules,sourceHeroPackageMetad
 const repo=fileURLToPath(new URL('../',import.meta.url));
 const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
 // Keep retained suites and their deterministic DOM/GL/Canvas host immutable.
-assert.equal(hash(fs.readFileSync(new URL('./check-hero-mechanism-integration.mjs',import.meta.url))),'b88f365ffff9bb9f5689a90b6390b0894b6a3ff7e961c0003c1142dbe4508e11');
-assert.equal(hash(fs.readFileSync(new URL('./hero-mechanism-test-host.mjs',import.meta.url))),'f8240a257f25e465d42c8eed343de2ede9ed586b73aadaf130791684106cc117');
-assert.equal(hash(fs.readFileSync(new URL('./check-original-hero-integration.mjs',import.meta.url))),"1e45333068a3cc874bd12f8a7df6f17340feae17dfb4c6f1f34284e9f57305a3",'Retained original mixed runner remains unchanged');
+assert.equal(hash(fs.readFileSync(new URL('./check-hero-mechanism-integration.mjs',import.meta.url))),'4930ef22ec4be9ee961717e947ea2529ed51714f3519c566782c67c778bbd246');
+assert.equal(hash(fs.readFileSync(new URL('./hero-mechanism-test-host.mjs',import.meta.url))),'f8b02823c018a4459e38a95e03842ae5e06fd71188e339583e3e229e09e5baa8');
+assert.equal(hash(fs.readFileSync(new URL('./check-original-hero-integration.mjs',import.meta.url))),"13d8e5f473b8b46be446824189a305900488ac540082387b54c140791fc465ca",'Retained original mixed runner remains unchanged');
 async function run(target){
     const h=createRoundTwoHost(),sourcePackage=readSourceHeroPackage(repo,h.ts),supportModules=installSourceHeroDataModules(sourcePackage,h.context),modules=new Map(),shaders=new Map(),sourceHashes={},coordinators=[];
     const heroFile='HeroRecreationStudy.tsx',mechanismFile='HeroMechanismStudy.tsx',originalFile='OriginalHeroStudy.tsx',roundTwoFile='OriginalHeroRoundTwo.tsx',sourcePageFile='SourceHeroPageStudy.tsx';
@@ -20,12 +21,12 @@ async function run(target){
     for(const file of [...h.files,heroFile,mechanismFile,originalFile,sourcePageFile,roundTwoFile]){
         const source=fs.readFileSync(path.join(repo,'docs/design-studies/code-components',file),'utf8'),end=source.indexOf('/**\n * @framerSupportedLayoutWidth',source.indexOf('function createRenderer'));
         assert.ok(end>0);sourceHashes[file]=hash(source);
-        if(file===heroFile)assert.equal(sourceHashes[file],'cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20','Approved hero renderer remains frozen');
-        else if(file===mechanismFile)assert.equal(sourceHashes[file],'573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3','Reviewed five-mode source remains frozen');
-        else if(file===sourcePageFile)assert.equal(sourceHashes[file],'77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a');
-        else if(file===originalFile)assert.equal(sourceHashes[file],'0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341');
-        else if(file===roundTwoFile)assert.equal(sourceHashes[file],'479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127');
-        else assert.equal(sourceHashes[file],h.manifest.components.find(component=>component.source===file).sourceSHA256,'Legacy renderer remains authoritative');
+        if(file===heroFile)assert.equal(sourceHashes[file],'0912a84fe2f93881c2a86e6ee7baebc925e1f2395eff9c019bd422022995f9a4','Approved hero renderer remains frozen');
+        else if(file===mechanismFile)assert.equal(sourceHashes[file],'013866971e271a649b7d719eda0490bafbbabee391ed27f1f9197a61762e0ea7','Reviewed five-mode source remains frozen');
+        else if(file===sourcePageFile)assert.equal(sourceHashes[file],'62f84d32bf61c7761e8b38b68c5f1ebb35ca42ad95f4e892b3f6d0628e40d8d2');
+        else if(file===originalFile)assert.equal(sourceHashes[file],'c95a74776a0a96834a07d37e1ebdf64c2a013c46384a1206bb864614c5c818ac');
+        else if(file===roundTwoFile)assert.equal(sourceHashes[file],'5ab8e702ef0f42a1f8184638bdf5ab111b519bd20a6cae4fca512c0e650a1dd4');
+        else assert.equal(sourceHashes[file],approvedStudyHash(h.manifest.components.find(component=>component.source===file).sourceSHA256),'Legacy renderer remains authoritative');
         coordinators.push(source.slice(source.indexOf('const STUDY_POOL_KEY'),end).trimEnd());
         const js=h.ts.transpileModule(source.slice(0,end),{compilerOptions:{target:h.ts.ScriptTarget.ES2020,module:file===sourcePageFile?h.ts.ModuleKind.CommonJS:h.ts.ModuleKind.ES2022}}).outputText.replace(/^import .* from "(?:react|framer)";?\r?\n/gm,'').replace(/^export \{\};?\r?\n/gm,'');
         const names=[originalFile,roundTwoFile,sourcePageFile].includes(file)?'STUDIES':file===mechanismFile?'RASTER_VERTEX,RASTER_FRAGMENT,RASTER_BG_VERTEX,RASTER_BG_FRAGMENT':file===heroFile?'HEAD_VERTEX,HEAD_FRAGMENT,FIELD_VERTEX,FIELD_FRAGMENT,POINT_VERTEX,POINT_FRAGMENT':'VERTEX,FRAGMENT'+(source.includes('const CANOPY_VERTEX')?',CANOPY_VERTEX,CANOPY_FRAGMENT':'');
@@ -93,6 +94,23 @@ async function run(target){
         pool.runStatic(()=>{const surface=new h.Canvas();surface.width=1;surface.height=1;const renderer=modules.get(e.source).createRenderer(surface,{...e.settings,managed:true,static:true,renderWidth:e.logicalWidth,renderHeight:e.logicalHeight,managedBufferWidth:e.frameWidth,managedBufferHeight:e.frameHeight,pixelBudget:2000000},()=>{},phase);try{renderer.setPointer(...pointer);renderer.renderAt(phase);fresh=structuredClone(surface.frame);return surface.width*surface.height}finally{renderer.dispose()}});
         assert.ok(candidate&&fresh);const select=f=>f.kind==='2d'?{kind:f.kind,paintHash:f.paintHash,paintOps:f.paintOps,pathFills:f.pathFills,gradients:f.gradients,mode:f.mode,phase:f.phase,mechanism:f.mechanism,original:f.original,tonalHash:f.tonalHash,sourcePage:f.sourcePage}:{shader:f.shader,passes:f.passes,uniforms:f.uniforms,sourcePage:f.sourcePage};
         assert.deepEqual(select(candidate),select(fresh),'Cached output matches fresh same-phase/pointer/control/path/material state: '+e.fixture.id);caps();
+    }
+    async function responsiveDisplayRegression(){
+        const e=entries.find(entry=>entry.fixture.roundTwo&&entry.settings.mode==='axialpassage'&&entry.fixture.role==='main'),saved={...e.settings},priorWindow=[h.window.innerWidth,h.window.innerHeight,h.window.devicePixelRatio];
+        assert.ok(e);for(const other of entries)other.root.setRect(-10000,-10000,100,60);
+        h.window.innerWidth=1600;h.window.innerHeight=1100;h.window.devicePixelRatio=1;
+        const layout=(width,height,screenWidth=width)=>{e.root.clientWidth=e.display.clientWidth=width;e.root.clientHeight=e.display.clientHeight=height;e.root.setRect(20,30,screenWidth,screenWidth*height/width);h.window.dispatchEvent({type:'resize'})};
+        layout(1440,1000);pool.update(e,{...saved,animate:true,static:false,canvasPreview:true});await tick(25);
+        assert.deepEqual([e.frameWidth,e.frameHeight],[1200,833],'Desktop begins with its actual1M live raster');
+        layout(390,900);await tick(25);quality(e,1000000);freshMatch(e);
+        assert.deepEqual([e.frameWidth,e.frameHeight],[443,1024]);assert.ok(e.display.width>=443&&e.display.height>=1024,'A larger-area landscape display cannot undersample Phone vertically');
+        pool.update(e,{...saved,animate:false});const paused=e.framePhase;layout(1440,1000,1100);await tick(35);quality(e);assert.deepEqual([e.frameWidth,e.frameHeight],[1152,800]);
+        layout(390,900);await tick(35);quality(e);freshMatch(e);assert.equal(e.framePhase,paused,'Paused responsive recomposition retains actual phase');assert.ok(e.display.width>=443&&e.display.height>=1024);
+        pool.update(e,{...saved,animate:false,stillTime:8});h.window.devicePixelRatio=1.5;layout(390,900);await tick(35);quality(e);assert.deepEqual([e.frameWidth,e.frameHeight],[610,1408]);
+        h.window.devicePixelRatio=1;layout(1440,1000);await tick(35);pool.update(e,{...saved,animate:true,static:false,canvasPreview:true,stillTime:8});layout(390,900);for(let step=0;step<12&&(e.frameWidth!==443||e.frameHeight!==1024);step++)await tick(1);assert.deepEqual([e.frameWidth,e.frameHeight],[443,1024]);assert.equal(e.framePhase,8,'First live frame starts at the selected canonical phase');assert.ok(e.display.width>=1536&&e.display.height>=1066,'Adequate larger Desktop backing may still be retained');const jobs=pool.debug().completedStillJobs;
+        pool.update(e,{...saved,animate:false,stillTime:8});h.window.devicePixelRatio=1.5;h.window.dispatchEvent({type:'resize'});await tick(15);quality(e);freshMatch(e);assert.equal(e.framePhase,8);assert.deepEqual([e.frameWidth,e.frameHeight],[610,1408]);assert.equal(pool.debug().completedStillJobs,jobs,'The larger cached Phone frame restores without warm rendering');assert.ok(e.display.width>=610&&e.display.height>=1408,'Cached Phone copy also retains adequate display axes');
+        pool.update(e,saved);e.root.clientWidth=e.display.clientWidth=e.fixture.width;e.root.clientHeight=e.display.clientHeight=e.fixture.height;[h.window.innerWidth,h.window.innerHeight,h.window.devicePixelRatio]=priorWindow;project(.05);await settle('responsive regression restored');
+        record('Same entry Desktop-to-Phone live, paused and cached copies retain both demanded display axes, phase, geometry and shared budgets');
     }
     const handledInjectedFailures=[];
     const record=name=>{checks.push(name);console.error(target+" / "+name)};
@@ -191,6 +209,7 @@ async function run(target){
         record('All48 new static/export replicas freeze canonically;16 two-million-pixel one-shots share serial admission and tonal readback follows fresh composition');
     }
     project(.05);assert.equal(h.stats().created,0,'Registration yields before initialization');await tick(500);assert.equal(entries.length,156);assert.equal(entries.filter(e=>!e.fixture.hero&&!e.fixture.mechanism&&!e.fixture.original&&!e.fixture.roundTwo&&!e.fixture.sourcePage&&e.hasFrame).length,60,JSON.stringify({errors,missing:entries.filter(e=>!e.hasFrame).map(e=>e.fixture.id),debug:pool.debug()}));assert.equal(entries.filter(e=>e.fixture.hero&&e.hasFrame).length,6,JSON.stringify(errors));assert.equal(entries.filter(e=>e.fixture.mechanism&&e.hasFrame).length,15,JSON.stringify(errors));assert.equal(entries.filter(e=>e.fixture.original&&e.hasFrame).length,27,JSON.stringify(errors));assert.equal(new Set(entries.filter(e=>e.fixture.original&&e.fixture.role==='main').map(e=>e.display.frame.paintHash)).size,9,'Nine distinct original constructions');assert.equal(entries.filter(e=>e.fixture.roundTwo&&e.hasFrame).length,27);assert.equal(entries.filter(e=>e.fixture.sourcePage&&e.hasFrame).length,21);for(const e of entries)quality(e);assert.equal(h.active.size,0);record('60 legacy +6 first-wave +15 mechanism +27 Round01 +21 standalone-source +27 RoundTwo replicas bootstrap with ten actual factories and zero retained paused contexts');
+    await responsiveDisplayRegression();
     let zoomCases=0;for(const dpr of [1,1.5,2]){h.window.devicePixelRatio=dpr;for(const zoom of [.05,.25,1])for(const role of Object.keys(roles)){project(zoom,roles[role].x,0);await settle(role+' zoom/DPR');zoomCases++}}
     record('All visible replicas refresh source quality without hover at three zooms and three DPRs ('+zoomCases+' views)');
     for(const e of entries){project(.4,e.fixture.worldX,e.fixture.worldY);await settle('pan '+e.fixture.id);quality(e);if(e.fixture.hero||e.fixture.mechanism||e.fixture.original||e.fixture.roundTwo||e.fixture.sourcePage)freshMatch(e)}record('Pan all156 placements; cached hero frames match fresh actual renderer state at adequate resolution');

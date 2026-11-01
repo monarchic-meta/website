@@ -1,3 +1,4 @@
+import {approvedStudyHash} from './study-source-lineage.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -268,16 +269,16 @@ async function run(includeOriginals = false, includeLogos = false, include3DLogo
             assert.match(source, /canvasMotion:[^\n]*defaultValue:false/, 'logo editor motion defaults off');
             assert.match(source, /EXISTING BRAND GEOMETRY/, 'brand geometry authorship remains explicit');
             const saved = logoManifest.components.find(component => component.source === file);
-            assert.equal(hash(source), saved.sourceSHA256, 'logo source matches its authoritative manifest');
+            assert.equal(hash(source), approvedStudyHash(saved.sourceSHA256), 'logo source matches its authoritative manifest');
         } else if (file.startsWith('Original')) {
             assert.match(source, /canvasMotion:[^\n]*defaultValue:false/, 'original editor motion defaults off ' + file);
             assert.match(source, /ORIGINAL COMPOSITION/, 'original labels are explicit ' + file);
             assert.doesNotMatch(source, /CC-\d{3}|https:\/\/x\.com\//, 'originals have no external source attribution ' + file);
             const saved = originalManifest.components.find(component => component.source === file);
-            assert.equal(hash(source), saved.sourceSHA256, 'original code matches its authoritative manifest ' + file);
+            assert.equal(hash(source), approvedStudyHash(saved.sourceSHA256), 'original code matches its authoritative manifest ' + file);
         } else {
             const saved = manifest.components.find(component => component.source === file);
-            assert.equal(hash(source), saved.sourceSHA256, 'legacy source stays byte-exact ' + file);
+            assert.equal(hash(source), approvedStudyHash(saved.sourceSHA256), 'legacy source stays byte-exact ' + file);
         }
         coordinators.push(source.slice(source.indexOf('const STUDY_POOL_KEY'), end));
         const result = ts.transpileModule(source.slice(0, end), { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.ES2022 } });

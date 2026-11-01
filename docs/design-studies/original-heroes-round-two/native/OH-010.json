@@ -13,8 +13,8 @@
   "path": "/playgrounds/original-compositions/heroes/round-02/pathfield",
   "artwork": {
     "sourcePath": "docs/design-studies/code-components/OriginalHeroRoundTwo.tsx",
-    "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
-    "sourceBytes": 62247,
+    "sourceSHA256": "5ab8e702ef0f42a1f8184638bdf5ab111b519bd20a6cae4fca512c0e650a1dd4",
+    "sourceBytes": 62250,
     "instanceProps": {
       "study": "pathfield",
       "animate": true,
@@ -46,8 +46,8 @@
       "type": "LiveArtSlot",
       "bindingKey": "original-round-two",
       "sourcePath": "OriginalHeroRoundTwo.tsx",
-      "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
-      "sourceBytes": 62247,
+      "sourceSHA256": "5ab8e702ef0f42a1f8184638bdf5ab111b519bd20a6cae4fca512c0e650a1dd4",
+      "sourceBytes": 62250,
       "props": {
         "study": "pathfield",
         "animate": true,

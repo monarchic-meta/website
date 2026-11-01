@@ -15,7 +15,7 @@ import {fileURLToPath} from 'node:url';
 const repo=fileURLToPath(new URL('../',import.meta.url));
 const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
 const hostSource=fs.readFileSync(path.join(repo,'scripts/check-framer-study-resources.mjs'),'utf8');
-assert.equal(hash(hostSource),'fe0ba1c7fe081f457332a1ab8a0e9ad052090e7cddd2ef04b3b797d74a6e7a6b','Review fixture adapter when the retained legacy harness changes');
+assert.equal(hash(hostSource),'3d4cbedf31dda19a00b3b966266576bae32b226b2a91782a8b6f88090063604f','Review fixture adapter when the retained legacy harness changes');
 let host=hostSource.slice(hostSource.indexOf('    const repo ='),hostSource.indexOf('    const modules = new Map()'));
 function replace(from,to){assert.ok(host.includes(from),'Retained host adapter anchor: '+from.slice(0,60));host=host.replace(from,to)}
 replace('const repo = fileURLToPath(new URL("../", import.meta.url));','const repo = repoPath;');

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "scope": "Per-axis display copy condition across18 files; one additional explicit SourceMain Origin root-radius rule. Rendering geometry/materials/data/presets unchanged.",
+  "old": "const keep=preserveLarger&&target.width*target.height>source.width*source.height",
+  "next": "const keep=preserveLarger&&target.width>=source.width&&target.height>=source.height",
+  "files": [
+    {
+      "file": "CreativeCodingStudy.tsx",
+      "beforeBytes": 61292,
+      "afterBytes": 61295,
+      "beforeSHA256": "f73dbc9ac0795ef040088002e48ddbbb81caaf9d3dfe795fc321c954f169499f",
+      "afterSHA256": "98b8fbee65436e8d788dd609314811ad9d5c6285bf405dc5739172ab1da362e6",
+      "nonCoordinatorSHA256": "3d5754e118cfa5247c7a7c457a4db5289401149fda006a305f2450e3ba7c06b7",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "FieldCodingStudy.tsx",
+      "beforeBytes": 60624,
+      "afterBytes": 60627,
+      "beforeSHA256": "8e186fcf709107ba8d9998f417052cb5dff40942e42d5e2d82d890b29ddeca8e",
+      "afterSHA256": "6308760560a3f8f9be0dbd4966963ddf1301af43168e1ee9741e9f0590b29fb2",
+      "nonCoordinatorSHA256": "9efe00617c35a65d161497b7c48c60ec4824a98e0f4aafba04df293ed9956d4d",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "HeroMechanismStudy.tsx",
+      "beforeBytes": 768604,
+      "afterBytes": 768607,
+      "beforeSHA256": "573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3",
+      "afterSHA256": "013866971e271a649b7d719eda0490bafbbabee391ed27f1f9197a61762e0ea7",
+      "nonCoordinatorSHA256": "1fb23805f2ee8f377fdfd4cc34fc941bc544ab3e0e75670177fd10c5def80c58",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "HeroRecreationStudy.tsx",
+      "beforeBytes": 307039,
+      "afterBytes": 307042,
+      "beforeSHA256": "cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20",
+      "afterSHA256": "0912a84fe2f93881c2a86e6ee7baebc925e1f2395eff9c019bd422022995f9a4",
+      "nonCoordinatorSHA256": "51535c1efe0b68bf5a3e7a3f90793fc56dc4d6b12280f56fc4fc0e5ec7360bba",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "InterfaceCodingStudy.tsx",
+      "beforeBytes": 68302,
+      "afterBytes": 68305,
+      "beforeSHA256": "689447525b447274a15ee226483c209d9be2f11e3f5f1dcf0203457a934d69b3",
+      "afterSHA256": "813c619141fbc57daa9bbbaf75788a028cd645d049318b7906f25b2fa3d00eee",
+      "nonCoordinatorSHA256": "bc6631562384e771ed09ee4f242047f9b306bc68a3ad5c20b5c3a735d17c7d54",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "LogoStudy.tsx",
+      "beforeBytes": 74720,
+      "afterBytes": 74723,
+      "beforeSHA256": "d35aa37adc1bd80c9b41c15cdbc8dbc339c81efe624b270e630d1f4bb043a9cf",
+      "afterSHA256": "fc28346db576b946521e99738e6573ef890b84ff8cd7078905320585ac64b1e5",
+      "nonCoordinatorSHA256": "2ea841af475b174602a82191139f3c2a6c5123020f2b39a69c03d3fc91f90a95",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "MaterialCodingStudy.tsx",
+      "beforeBytes": 60763,
+      "afterBytes": 60766,
+      "beforeSHA256": "b10caeded2a1388a86c2b5d861acead5482ec66ba81371bdf88608e94c8748eb",
+      "afterSHA256": "b2755bfd1ffe20722085f5fc63f6bf137ad47cb1a329f3ae6f43adf9b8911af4",
+      "nonCoordinatorSHA256": "ee98b117945757d503cf3519b23e1aabf971ed67431498110080b6d5e23104f2",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "OriginalFormStudy.tsx",
+      "beforeBytes": 66419,
+      "afterBytes": 66422,
+      "beforeSHA256": "bda86b55310c537e0c0e214d93ad1045104ae0ee29a1f67f14a206ab8d806002",
+      "afterSHA256": "3f532a08e1ee6d642e8af5cfa6689eb048e35ba6e156e6a39ccf12d5af30218d",
+      "nonCoordinatorSHA256": "536c7851866f07fa3a582167470989f655e914cf756c44dd42b5e4d868437fcf",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "OriginalHeroRoundTwo.tsx",
+      "beforeBytes": 62247,
+      "afterBytes": 62250,
+      "beforeSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
+      "afterSHA256": "5ab8e702ef0f42a1f8184638bdf5ab111b519bd20a6cae4fca512c0e650a1dd4",
+      "nonCoordinatorSHA256": "af48cd7b075d3128a7398acb63c41e8c0d2e8d936a606d42f0c3af51a5ae10c8",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "OriginalHeroStudy.tsx",
+      "beforeBytes": 54090,
+      "afterBytes": 54093,
+      "beforeSHA256": "0140fb493c7804fff5f92e7493d334c21168f8a0fd4e7ec9154cc5c6c8216341",
+      "afterSHA256": "c95a74776a0a96834a07d37e1ebdf64c2a013c46384a1206bb864614c5c818ac",
+      "nonCoordinatorSHA256": "1cd48102902c80dbd33a5681b667d54bb9b869a70e5f7a373bd9ed2e36fb79b1",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "OriginalSignalStudy.tsx",
+      "beforeBytes": 64578,
+      "afterBytes": 64581,
+      "beforeSHA256": "ac24c88eb598560a6da8e565a93ccec9699996593ceeb3dbc6f9a7a39d5c69c2",
+      "afterSHA256": "944e0e0248912de74b2252f819414468d6e4759d21477fd21f019920f267e9f4",
+      "nonCoordinatorSHA256": "6e9435afe2982afc69d78f7125e798e4077d2526b86dbc3991cef2a446f31574",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "PointCodingStudy.tsx",
+      "beforeBytes": 56931,
+      "afterBytes": 56934,
+      "beforeSHA256": "6dc676258769747de3541ba556e432c9c40392deff6768dba48d8a531ed5728b",
+      "afterSHA256": "d6d7b03af51040c3dfcc26818e58013fef1dcea0766379d0e56e6e90c693efda",
+      "nonCoordinatorSHA256": "0ce977d9b4d438be2ba9b282bb78302cec0f27a8dd3f6887559c37714fb93838",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "SolidBrainStudy.tsx",
+      "beforeBytes": 797649,
+      "afterBytes": 797652,
+      "beforeSHA256": "c49251207b700decc5e6e10244a8a24479ca3713c388b6f262dad09c054d8374",
+      "afterSHA256": "ee26e2a30025f484c1849ed0dcc0a5fc02a2abd4c7aaaa6c3fcaa7a1fe320d25",
+      "nonCoordinatorSHA256": "dbfac9336795f01fcd8d6c947f4b2ba3cc8bb7a449f340dca744bea0601f5f07",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "SourceHeroPageStudy.tsx",
+      "beforeBytes": 398407,
+      "afterBytes": 398456,
+      "beforeSHA256": "77c9ca368e49e922462cc00aa24618bd41a01a33fec5d195a7775150a4e48e2a",
+      "afterSHA256": "62f84d32bf61c7761e8b38b68c5f1ebb35ca42ad95f4e892b3f6d0628e40d8d2",
+      "nonCoordinatorSHA256": "6be83ba30ac9eea8506138817cfa8899d574f2a84b9c6b0d3dbe7cfdfe8a80c5",
+      "nonCoordinatorBytesExact": false,
+      "unchangedOutsideDeclaredChanges": true,
+      "additionalChanges": [
+        {
+          "kind": "Origin wrapper owns30%radius after Framerstyle spread; allothermodesunchanged",
+          "before": "borderRadius:\"inherit\",...style,position:\"relative\"",
+          "after": "borderRadius:\"inherit\",...style,...(study===\"origin\"?{borderRadius:\"30%\"}:{}),position:\"relative\""
+        }
+      ]
+    },
+    {
+      "file": "WebsiteBrain.tsx",
+      "beforeBytes": 290054,
+      "afterBytes": 290057,
+      "beforeSHA256": "922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1",
+      "afterSHA256": "510d857475dc71c76039cbbd3f4e2865ca8b408db5d1fc120c03c7eaffe4de16",
+      "nonCoordinatorSHA256": "45a40e13f0e0f567c7a051b59a7a251240c974edda5657b81fbd0bee484b2c0d",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "WebsiteBrainDither.tsx",
+      "beforeBytes": 297075,
+      "afterBytes": 297078,
+      "beforeSHA256": "b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2",
+      "afterSHA256": "c2168de6bef16cdd76b05e717ac48b626dc5db3e808b71e706f5b403684aebc2",
+      "nonCoordinatorSHA256": "5d6b432afaa806bc4a8c3aeaaff74fba03c775823b0c42c64c359f9fa740cd2b",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "WebsiteBrainFibers.tsx",
+      "beforeBytes": 297884,
+      "afterBytes": 297887,
+      "beforeSHA256": "bb3d4b53a6fdc5df94b59b248ca803c85405d699994fdae2c6e0c741dc7a7732",
+      "afterSHA256": "591233c39a75011e1d0da79802bee4568617493b2d42556a765149bc599d010f",
+      "nonCoordinatorSHA256": "83b7bc3cf82361d81acac80478fa1a10efee627f8bc135d0b449fe9fef936686",
+      "nonCoordinatorBytesExact": true
+    },
+    {
+      "file": "WebsiteBrainText.tsx",
+      "beforeBytes": 298454,
+      "afterBytes": 298457,
+      "beforeSHA256": "f8d78914a801206f6bdff76c0ae0de616fc6eb962ff2154a46fd8dcc1894b53f",
+      "afterSHA256": "a2008e332547e85cfc2e89b3ebc40fb4d2af3fb03faa6dc704789164000cf8c4",
+      "nonCoordinatorSHA256": "457155e2a674b37b0bba16a58a03d1571c91cabc6001d2fe241575dc365a35f4",
+      "nonCoordinatorBytesExact": true
+    }
+  ]
+}

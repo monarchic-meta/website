@@ -1,3 +1,4 @@
+import {approvedStudyHash} from './study-source-lineage.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -14,7 +15,7 @@ import {fileURLToPath} from 'node:url';
 const repo=fileURLToPath(new URL('../',import.meta.url));
 const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
 const hostSource=fs.readFileSync(path.join(repo,'scripts/check-framer-study-resources.mjs'),'utf8');
-assert.equal(hash(hostSource),'fe0ba1c7fe081f457332a1ab8a0e9ad052090e7cddd2ef04b3b797d74a6e7a6b','Review fixture adapter when the retained legacy harness changes');
+assert.equal(hash(hostSource),'3d4cbedf31dda19a00b3b966266576bae32b226b2a91782a8b6f88090063604f','Review fixture adapter when the retained legacy harness changes');
 let host=hostSource.slice(hostSource.indexOf('    const repo ='),hostSource.indexOf('    const modules = new Map()'));
 function replace(from,to){assert.ok(host.includes(from),'Retained host adapter anchor: '+from.slice(0,60));host=host.replace(from,to)}
 replace('const repo = fileURLToPath(new URL("../", import.meta.url));','const repo = repoPath;');
@@ -36,8 +37,8 @@ async function run(target){
     for(const file of [...h.files,heroFile]){
         const source=fs.readFileSync(path.join(repo,'docs/design-studies/code-components',file),'utf8'),end=source.indexOf('/**\n * @framerSupportedLayoutWidth',source.indexOf('function createRenderer'));
         assert.ok(end>0);sourceHashes[file]=hash(source);
-        if(file===heroFile)assert.equal(sourceHashes[file],'cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20','Approved hero renderer remains frozen');
-        else assert.equal(sourceHashes[file],h.manifest.components.find(component=>component.source===file).sourceSHA256,'Legacy renderer remains authoritative');
+        if(file===heroFile)assert.equal(sourceHashes[file],'0912a84fe2f93881c2a86e6ee7baebc925e1f2395eff9c019bd422022995f9a4','Approved hero renderer remains frozen');
+        else assert.equal(sourceHashes[file],approvedStudyHash(h.manifest.components.find(component=>component.source===file).sourceSHA256),'Legacy renderer remains authoritative');
         coordinators.push(source.slice(source.indexOf('const STUDY_POOL_KEY'),end).trimEnd());
         const js=h.ts.transpileModule(source.slice(0,end),{compilerOptions:{target:h.ts.ScriptTarget.ES2020,module:h.ts.ModuleKind.ES2022}}).outputText.replace(/^import .* from "(?:react|framer)";?\r?\n/gm,'').replace(/^export \{\};?\r?\n/gm,'');
         const names=file===heroFile?'HEAD_VERTEX,HEAD_FRAGMENT,FIELD_VERTEX,FIELD_FRAGMENT,POINT_VERTEX,POINT_FRAGMENT':'VERTEX,FRAGMENT'+(source.includes('const CANOPY_VERTEX')?',CANOPY_VERTEX,CANOPY_FRAGMENT':'');

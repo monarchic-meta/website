@@ -17,8 +17,8 @@ const sha=data=>crypto.createHash('sha256').update(data).digest('hex');
 const checks=[];
 const check=(name,fn)=>{fn();checks.push({name,passed:true})};
 const priorSources={
-  'WebsiteBrain.tsx':'922d3c257bcf86502d729f657980c70ab4aae243d1780e0e2a1d0513c763bac1',
-  'WebsiteBrainDither.tsx':'b1ce26e3582d7a6d00f09d790aa9569101dcc33289da965b12ca703c6e0041c2',
+  'WebsiteBrain.tsx':'510d857475dc71c76039cbbd3f4e2865ca8b408db5d1fc120c03c7eaffe4de16',
+  'WebsiteBrainDither.tsx':'c2168de6bef16cdd76b05e717ac48b626dc5db3e808b71e706f5b403684aebc2',
 };
 // These reviewed versions include the authorized shared/persistent load adapter.
 // The separate load check binds unchanged anatomy/drawing to the earlier source.
