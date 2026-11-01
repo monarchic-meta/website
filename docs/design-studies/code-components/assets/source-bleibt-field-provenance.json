@@ -7,8 +7,8 @@
   "gallery": "https://minimal.gallery/bleibtgleich-2026/",
   "actor": {
     "path": "../SourceBleibtProjectField.tsx",
-    "sha256": "e1ec2267f140d9211e5896a056df48e5d6b23b53574b0d9b74fc905eb2ec65a6",
-    "bytes": 17779,
+    "sha256": "80231201d49b502741356cd4a3a6c817f99d4bb22dc1eb3cc3b4212ac8c3daa2",
+    "bytes": 18780,
     "method": "Independent CSS3D projection and public native Framer HOCs. Image fills and text remain editable; no imported source behaviorJavaScript or Three/WebGL dependency."
   },
   "sourceGeometry": {
@@ -143,8 +143,14 @@
   ],
   "validation": {
     "local": "ActualReact18 SSR/native CSS3D,16planes/aspects/ref/events, realhover/clickpin/drag/scroll, static350px field,785px source sticky width/top, terminalAllWorks/reverse andcleanup.",
-    "nixOutput": "/nix/store/wvmkqxhkq9bfr1nmw995bw54kwxl4iym-monarchic-website-source-bleibt-project-field-0.0.1",
-    "framer": "Native attachment and reload proof remain separate."
+    "nixOutput": "/nix/store/zibfl1fvg88mrncbzyd8bmqzp12czyh1-monarchic-website-source-bleibt-project-field-0.0.1",
+    "framer": "Native attachment and reload proof remain separate.",
+    "nativeTapAmendment": {
+      "parentSHA256": "e1ec2267f140d9211e5896a056df48e5d6b23b53574b0d9b74fc905eb2ec65a6",
+      "local": "Six actual React18/Chromium groups pass: native adapter drops onClick; public onTap pin/unpin, rapid gestures, dual-channel deduplication and caller cancellation, plus prior native geometry, drag, scrolling, static Phone and cleanup.",
+      "result": "/nix/store/zibfl1fvg88mrncbzyd8bmqzp12czyh1-monarchic-website-source-bleibt-project-field-0.0.1/evidence/result.json",
+      "priorNixOutput": "/nix/store/wvmkqxhkq9bfr1nmw995bw54kwxl4iym-monarchic-website-source-bleibt-project-field-0.0.1"
+    }
   },
   "limits": [
     "CSS3D replaces the source WebGL material. Reveal order and hover/pin interpolation are fitted.",

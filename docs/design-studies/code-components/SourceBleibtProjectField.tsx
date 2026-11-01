@@ -19,6 +19,7 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * actor. Canvas/exports freeze; there is no Canvas bitmap or WebGL context.
  */
 
+type NativeTapEvent = { defaultPrevented?: boolean }
 type LayerProps = {
     [key: string]: unknown
     style?: React.CSSProperties
@@ -29,6 +30,7 @@ type LayerProps = {
     onPointerEnter?: React.PointerEventHandler<HTMLElement>
     onPointerLeave?: React.PointerEventHandler<HTMLElement>
     onClick?: React.MouseEventHandler<HTMLElement>
+    onTap?: (event: NativeTapEvent, info?: unknown) => void
 }
 type Vec = readonly [number, number, number]
 type State = {
@@ -139,6 +141,17 @@ function plane(index: number, Component: ComponentType<LayerProps>): ComponentTy
         const reveal = state.frozen ? 1 : out((state.time - index * .015) / 1.4)
         const breath = state.frozen ? 0 : (.5 * (Math.sin((state.time * .1 + original[1] * 1.85 * 1.5) * Math.PI * 2) + 1)) * .1
         const selected = state.pinned === index
+        const lastActivation = React.useRef<{ channel: "tap" | "click"; at: number } | null>(null)
+        const activate = (channel: "tap" | "click", prevented: boolean) => {
+            const at = typeof performance === "undefined" ? Date.now() : performance.now()
+            const previous = lastActivation.current
+            // Framer native Frames expose onTap; ordinary DOM layers emit click.
+            // Consume the alternate event for one gesture, including cancellation,
+            // while allowing consecutive gestures from either individual channel.
+            if (previous && previous.channel !== channel && at - previous.at < 350) return
+            lastActivation.current = { channel, at }
+            if (!state.frozen && !prevented && !state.dragged.current && n[2] > .05 && reveal > .995) state.setPinned(selected ? -1 : index)
+        }
         const facing = selected || state.hovered === index
         const normal: Vec = facing ? [0, 0, 1] : n
         const right: Vec = facing ? [1, 0, 0] : r
@@ -155,7 +168,8 @@ function plane(index: number, Component: ComponentType<LayerProps>): ComponentTy
             style={{ ...props.style, position: "absolute", left: "50%", top: "50%", width, height, translate: "-50% -50%", transform: `${native && native !== "none" ? native + " " : ""}matrix3d(${matrix})`, transformOrigin: "50% 50%", backfaceVisibility: "visible", opacity, zIndex: selected ? 999 : Math.round((z + 2) * 100), transition: state.frozen ? "none" : "transform 100ms linear, opacity 100ms linear" } as React.CSSProperties & { translate?: string }}
             onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); if (!state.frozen && e.pointerType === "mouse" && n[2] > .05 && reveal > .995) state.setHovered(index) }}
             onPointerLeave={(e: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(e); if (state.hovered === index) state.setHovered(-1) }}
-            onClick={(e: React.MouseEvent<HTMLElement>) => { props.onClick?.(e); if (!state.frozen && !e.defaultPrevented && !state.dragged.current && n[2] > .05 && reveal > .995) state.setPinned(selected ? -1 : index) }}
+            onClick={(e: React.MouseEvent<HTMLElement>) => { props.onClick?.(e); activate("click", e.defaultPrevented) }}
+            onTap={(e: NativeTapEvent, info?: unknown) => { props.onTap?.(e, info); activate("tap", !!e.defaultPrevented) }}
         />
     })
 }
