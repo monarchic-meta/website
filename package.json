@@ -111,7 +111,8 @@
     "check:source-portfolio-carousel": "node scripts/check-source-portfolio-carousel.mjs",
     "check:source-portfolio-effects": "node scripts/check-source-portfolio-effects.mjs",
     "check:source-polar-guide-controls": "node scripts/check-source-polar-guide-controls.mjs",
-    "check:source-polar-guide-browser": "node scripts/check-source-polar-guide-browser.mjs"
+    "check:source-polar-guide-browser": "node scripts/check-source-polar-guide-browser.mjs",
+    "check:source-portfolio-carousel-hmr": "node scripts/check-source-portfolio-carousel-hmr.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
