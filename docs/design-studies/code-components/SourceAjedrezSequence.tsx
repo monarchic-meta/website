@@ -96,6 +96,7 @@ function indexAt(time: number) {
     return t >= DURATION ? PHASES.length - 1 : PHASES.findIndex(phase => t >= phase.from && t < phase.to)
 }
 function writeRef<T>(ref: React.ForwardedRef<T>, value: T | null) { if (typeof ref === "function") ref(value); else if (ref) ref.current = value }
+const useOwnLayoutEffect = typeof window === "undefined" ? React.useEffect : React.useLayoutEffect
 
 function film(Component: ComponentType<LayerProps>, poster: number): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
@@ -108,6 +109,24 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const [visible, setVisible] = React.useState(false)
         const [hidden, setHidden] = React.useState(false)
         const [reduced, setReduced] = React.useState(false)
+        const [fit, setFit] = React.useState(1)
+        const declaredZoom = props.style?.zoom, parsedZoom = parseFloat(String(declaredZoom ?? 1)) / (String(declaredZoom).endsWith("%") ? 100 : 1)
+        const callerZoom = Number.isFinite(parsedZoom) && parsedZoom > 0 ? parsedZoom : 1
+        useOwnLayoutEffect(() => {
+            const node = own.current, parent = node?.parentElement
+            if (!node || !parent) return
+            // CSS zoom changes layout as well as paint, keeping native movie
+            // contents and playback controls together inside a scrollbar gutter.
+            const read = () => {
+                const width = node.offsetWidth * callerZoom, available = parent.clientWidth
+                const next = width > 0 && available > 0 ? Math.min(1, available / width) : 1
+                setFit(current => Math.abs(current - next) < 1e-7 ? current : next)
+            }
+            read()
+            const observer = new ResizeObserver(read)
+            observer.observe(node); observer.observe(parent)
+            return () => observer.disconnect()
+        }, [callerZoom])
         const sample = React.useCallback(() => Math.min(DURATION, Math.max(0, clock.current.time + (clock.current.started === null ? 0 : (performance.now() - clock.current.started) / 1000))), [])
         React.useEffect(() => {
             if (frozen || !own.current) return
@@ -152,6 +171,7 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const state: FilmState = { time: shown, index: indexAt(shown), frozen, reduced, playing: !frozen && !reduced && playing,
             active: running, complete: shown >= DURATION, toggle, replay }
         return <Context.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }}
+            style={fit < 1 ? { ...props.style, zoom: callerZoom * fit } : props.style}
             data-source-ajedrez-time={shown} data-source-ajedrez-phase={state.index + 1} data-source-ajedrez-state={PHASES[state.index].name}
             data-source-ajedrez-playback={frozen ? "poster" : reduced ? "reduced-motion" : state.complete ? "complete" : !playing ? "paused" : running ? "playing" : "offscreen"}
         /></Context.Provider>
