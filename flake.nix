@@ -205,6 +205,14 @@
             export MONARCHIC_NATIVE_TAP_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-native-tap
           '';
+          source-montreal-behaviors = (mkWebsiteCheck "source-montreal-behaviors" ''
+            export MONARCHIC_MONTREAL_BEHAVIORS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-montreal-behaviors
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

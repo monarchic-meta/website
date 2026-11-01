@@ -1,0 +1,39 @@
+{
+  "reference": "HERO-008",
+  "classification": "Source inspiration / independent native behavior recreation",
+  "creator": "Pangram Pangram",
+  "source": "https://neuemontreal.com/",
+  "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
+  "actor": {
+    "path": "../SourceMontrealBehaviors.tsx",
+    "sha256": "b58f3a5af0cfa1ab2fe1b439b40433df5fd5dc21aee7d4eaaa9c996db5498a70",
+    "bytes": 20058,
+    "exports": 35
+  },
+  "sourceFacts": {
+    "postcards": "First face switch2.2s, subsequent1.8s. Individual front/back source images remain native image fills.",
+    "attractions": "Eleven panels, open/closed4.8:1,0.75s cubic-bezier(.65,0,.15,1). Desktop hover/reset-first; Phone tap and initially closed.",
+    "weights": "Eleven Display weights100–900; seven Text weights250–700. Actual two font families are assigned to separate native specimens."
+  },
+  "differences": [
+    "Current public-code facts do not prove selected historical input timing.",
+    "Phone headers74px and260px open bodies follow the explicit native adaptation.",
+    "Attraction child label positions and shortened copy are fitted.",
+    "Family change retains the nearest supported weight as an explicit adaptation.",
+    "Postcard time pauses offscreen/hidden/reduced; source resource scheduling may differ."
+  ],
+  "implementation": {
+    "nativeBindings": 57,
+    "newNativeParts": 5,
+    "sourceBehaviorReused": false,
+    "runtimeMediaFetch": false,
+    "rendererAllocation": false,
+    "playbackState": "Owned per-window Symbol.for(monarchic.sourceMontreal.playback.v1) store shared with the motion HOCs; no editor internals."
+  },
+  "validation": {
+    "nixOutput": "/nix/store/y5ay12n37pb48khn886w6in3kr6v7f4i-monarchic-website-source-montreal-behaviors-0.0.1",
+    "actualReactChecks": 44,
+    "peerReview": "Brain independently reviewed core and then the corrected frozen-key-default guard. Native-like fixture deliberately drops onClick; all18weights, descendant CSS, tap/keyboard/cancellation, timing/pause, Desktop ratio/hover, Phone flow/reduced/static/ref/timer/listener cleanup pass.",
+    "framer": "Actual native Context, font selection, page binding and reload/Preview checks remain separate."
+  }
+}
