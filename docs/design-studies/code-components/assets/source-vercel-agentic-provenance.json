@@ -96,16 +96,36 @@
     "This source/test change has no actual Framer Preview/editor-reload evidence."
   ],
   "framer": {
-    "sourceInstalled": false,
+    "sourceInstalled": true,
     "nativeInstalled": true,
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false,
-    "sourceVersionInstalled": "c8df6a04070e1ab610b3dcb6717fefa372d75688eda254e1d67ef467c2c30800",
-    "currentSourceWritePending": true,
+    "sourceVersionInstalled": "1953ef09b0683e083220e6d4067c974d426719935d3923739069a1fcdf222852",
+    "currentSourceWritePending": false,
     "nativeModelReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/308-HERO-009-readonly-closure/output.json",
       "sha256": "04a37a081f244caf6ada8f82b09be657592761a95761f509ae301d99af728a5b",
       "bytes": 502957
+    },
+    "currentSourceReadback": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
+      "bytes": 247139,
+      "sha256": "ed2024fa3f3497f919766971febe410094337a02d075a360799b9a020343668c"
+    },
+    "sourceWriteAcknowledgment": "MCP315 transport timed out; original acknowledgment and diagnostics unavailable. MCP316/317 confirm exact source, public schema and full retained project model. The uncertain write was not replayed.",
+    "actualStaticNativePaintVerified": true,
+    "staticNativePaint": {
+      "desktop": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/319-HERO-009-static-page-context/desktop-native-stage.jpg",
+        "bytes": 39942,
+        "sha256": "6357fc54a083c01564de288420430fbe0b20467cec9978df18749602cad1fd1f"
+      },
+      "phone": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/319-HERO-009-static-page-context/phone-native-stage.jpg",
+        "bytes": 18176,
+        "sha256": "4e7e701606f8f2a3471bb642d68d6efce9e6ced1604c42099e32e1e56e0ecae5"
+      },
+      "scope": "Actual native Framer still renders at1440×900/390×850; not moving Preview or editor reload."
     }
   },
   "previousLocalValidation": {
