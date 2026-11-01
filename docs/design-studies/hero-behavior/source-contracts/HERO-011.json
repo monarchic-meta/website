@@ -68,5 +68,44 @@
       284.625
     ],
     "boundary": "Native fields read back after saving; actual Preview/source comparison is a separate gate. Phone remains an independent adaptation. Historical interactions remain unverified."
+  },
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "CURRENT_PAGE_MODEL_CONFIRMED",
+    "page": {
+      "id": "AfQRBgsJO",
+      "desktop": "vTpXZzefA",
+      "compact": "TKqCHqKgi",
+      "phone": "OYoOmoOIe",
+      "path": "/playgrounds/source-inspiration/heroes/current/hero-011-jon-way"
+    },
+    "sourceRows": 4,
+    "sourceControls": {
+      "gallery": 7,
+      "mark": 4
+    },
+    "sourceTypingReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/implementation/typing-correction-current-receipt.json",
+      "bytes": 1747,
+      "sha256": "c29dc51c3eb55b96f6f1f1c5e958ec206b5e0f8dde6b02a47246811bae53d5ad"
+    },
+    "modelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/309-HERO-011-footer-center/output.json",
+      "bytes": 671664,
+      "sha256": "85154771d6a7e25481c4c0c2ccc7dd7554c90ba4131cc87a44a6ee600e9b253e"
+    },
+    "finiteNativeClosure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/309-HERO-011-footer-center/peer-contact-link-closure.json",
+      "bytes": 4114,
+      "sha256": "6312590a0b8e98bfb8d536d06c1950adba3a16dbfc8372cc4d47401c255e1e6b"
+    },
+    "behavior": "Current tall photographic accordion: seven narrow columns with source200px/Desktop and responsivePhone fits, actual hover/tap expansion, source entry wave and200-frame project-mark film. Centered native footer has been corrected.",
+    "next": [
+      "Verify actual Framer moving paint, true top/bottom pins, interaction and reload."
+    ]
   }
 }

@@ -48,5 +48,26 @@
     "Biography is independently authored substitute text.",
     "Phone is an independent adaptation, not an observed original layout.",
     "Actual Framer persistence, controls and visual comparisons remain separate from isolated React/WebGL checks."
-  ]
+  ],
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "LOCAL_FULL_JOURNEY_SOURCE_FROZEN_TRANSFER_PENDING",
+    "implementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/final-source-receipt.json",
+      "bytes": 21257,
+      "sha256": "f8755238320e124e256b30bc9c95e4609ab3e95ae559c7960f29b8a200cdca89"
+    },
+    "behavior": "Full124-line travel,300-pixel white interval,70-column strip, tall head section, source head-click turn/shrink and red-footer overlap. The head settles on the existing clock.",
+    "intentionalDifferences": [
+      "The procedural material, camera, terrain, text and responsive fits remain bounded approximations."
+    ],
+    "next": [
+      "Transfer the exact13-control source while preserving retained placements.",
+      "Compare moving material and actual Framer Preview/reload."
+    ]
+  }
 }

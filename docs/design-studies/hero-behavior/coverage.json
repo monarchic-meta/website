@@ -155,8 +155,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
-        "bytes": 10162,
-        "sha256": "b73ac0cb21878f746e3d0356349af46c833559be4a2685fe1d1ed8b52a249274"
+        "bytes": 11777,
+        "sha256": "3a8616ee163e407bb5ccbc9daf0005455dcb8244e9e6da1c4ca20d85c5f0ac46"
       },
       "page": {
         "id": "SQpNyO_5_",
@@ -172,7 +172,15 @@
         "bytes": 5950
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "LOCAL_CORRECTIONS_FROZEN_NATIVE_BINDING_PENDING"
+      }
     },
     {
       "id": "HERO-005",
@@ -290,8 +298,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
-        "bytes": 3305,
-        "sha256": "0193b3db5d8d71a0799055096132305b43bafc0b12a24a92323cfb57a59c38d9"
+        "bytes": 5291,
+        "sha256": "f5367a9a03910a5b6fd0ada3615b20cbdac7abf3cffa986b442d5861e238ea66"
       },
       "page": {
         "id": "XXmRThpe5",
@@ -307,7 +315,22 @@
         "sha256": "7e570195e716620080846f4a41bfeebd03d1bcab40b4d004f6f06229059007d7"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "CURRENT_PAGE_MODEL_CONFIRMED_NEW_HOVER_SOURCE_WRITE_PENDING",
+        "page": {
+          "id": "ebD8S_8Xo",
+          "desktop": "u5sNosRy9",
+          "compact": "rEeaw1frt",
+          "phone": "o1O9VNMak",
+          "path": "/playgrounds/source-inspiration/heroes/current/hero-009-vercel-agentic"
+        }
+      }
     },
     {
       "id": "HERO-010",
@@ -412,8 +435,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-011.json",
-        "bytes": 3825,
-        "sha256": "aeb46b961894773080934d0a7db5675962bf9956e8d84586bd45cb6b8b34dd39"
+        "bytes": 6053,
+        "sha256": "bbbdca9d1b02fce4ef86917484f487798c69924d811602b8970e657a4a375812"
       },
       "page": {
         "id": "C706vJzDs",
@@ -429,7 +452,22 @@
         "sha256": "524355be265d48a149025c707502ad45e31c43318fc4ad672230cd97d87982ce"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "CURRENT_PAGE_MODEL_CONFIRMED",
+        "page": {
+          "id": "AfQRBgsJO",
+          "desktop": "vTpXZzefA",
+          "compact": "TKqCHqKgi",
+          "phone": "OYoOmoOIe",
+          "path": "/playgrounds/source-inspiration/heroes/current/hero-011-jon-way"
+        }
+      }
     },
     {
       "id": "HERO-012",
@@ -439,8 +477,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-012.json",
-        "bytes": 4316,
-        "sha256": "6884dd901ab5c3980374074e26b505bca92858f9a32a4e665a433d07aa304905"
+        "bytes": 6094,
+        "sha256": "5e60b20540bf72844b9bf9340abe6996c0beaecdac281db8c7f68f51e3200e90"
       },
       "page": {
         "id": "tdoHtQiwS",
@@ -456,7 +494,22 @@
         "sha256": "1d378bdab37e3951c9d656c6f7a6b727abf35b55d14d496a6be87cd64f3d9263"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "CURRENT_PAGE_CREATED_RETAINED_HEADER_CORRECTION_PENDING",
+        "page": {
+          "id": "A2ZhTsALK",
+          "desktop": "KlPcKpJsq",
+          "compact": "DYmr99GZ9",
+          "phone": "XAXV5n3aJ",
+          "path": "/playgrounds/source-inspiration/heroes/current/hero-012-mezmo-aura"
+        }
+      }
     },
     {
       "id": "HERO-013",
@@ -509,8 +562,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-014.json",
-        "bytes": 2159,
-        "sha256": "c3bd61957124b15fdc7428a6b7422be54f276a2c5d9106e849ec7397687fa007"
+        "bytes": 3476,
+        "sha256": "b1f96ad19a6a9a8d1cbcce15dd7c59c7bff3ed94b4d6234ef2c14a7422972e8b"
       },
       "page": {
         "id": "aR0EZq0gQ",
@@ -526,7 +579,15 @@
         "sha256": "3787ba220f6e4c9d9841201291469744c57d5cba789dc427f60f0f2642829530"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "LOCAL_FULL_JOURNEY_SOURCE_FROZEN_TRANSFER_PENDING"
+      }
     },
     {
       "id": "HERO-015",
@@ -536,8 +597,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
-        "bytes": 10373,
-        "sha256": "a00aa37c62d36cba09268fd0ca49bad07f39a3663fed65c561db70991ad9dce5"
+        "bytes": 11690,
+        "sha256": "e6104523076fc8c769e38f0c6666c431ee63c30790aa1fb397952e0c3a3ae9e5"
       },
       "page": {
         "id": "nwAhAlY6o",
@@ -553,7 +614,15 @@
         "sha256": "4384bce8ff2d2f53c7b165f87bb425253aaff49a44b8b73940a5ec02f991d3d7"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+        "classification": "Source inspiration / credited recreation",
+        "fullFidelityApproved": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false,
+        "status": "LOCAL_GENUINE_MARK_SOURCE_FROZEN_TRANSFER_PENDING"
+      }
     },
     {
       "id": "HERO-016",
@@ -669,7 +738,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3890,
-    "sha256": "aaa400deeaa5ba68cafdafbd9b421311e6f00b2653729fa9a0b66046760a59b7"
+    "sha256": "e0fc2ecf99a2b15e5d1b6edb3b27edaa2172330cfc8fbe1866c64bfbbd9965c2"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -838,13 +907,26 @@
   "latestOriginalSourceCorrection": {
     "ids": [
       "HERO-001",
-      "HERO-010"
+      "HERO-002",
+      "HERO-004",
+      "HERO-009",
+      "HERO-010",
+      "HERO-011",
+      "HERO-012",
+      "HERO-014",
+      "HERO-015"
     ],
     "modelCommands": [
+      288,
       299,
       294,
-      300
+      300,
+      305,
+      308,
+      309,
+      310
     ],
+    "pendingMezmoRepair": "311 stopped before mutation at its complete preimage guard; read-only diagnosis follows.",
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false
   }

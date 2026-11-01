@@ -65,5 +65,37 @@
       "letterSpacing": "-0.08em"
     },
     "boundary": "Source-based native geometry and historical wordmark saved and read back; actual Preview typography remains a separate gate. Phone is independently adapted, and historical motion remains unverified."
+  },
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "CURRENT_PAGE_CREATED_RETAINED_HEADER_CORRECTION_PENDING",
+    "page": {
+      "id": "A2ZhTsALK",
+      "desktop": "KlPcKpJsq",
+      "compact": "DYmr99GZ9",
+      "phone": "XAXV5n3aJ",
+      "path": "/playgrounds/source-inspiration/heroes/current/hero-012-mezmo-aura"
+    },
+    "sourceRows": 1,
+    "sourceControls": 5,
+    "sourceTypingReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/implementation/typing-correction-current-receipt.json",
+      "bytes": 1444,
+      "sha256": "35b214b593ffaa3aacbb4f68e79efdc68e4bda1643720e011a1cea5ec2c8da92"
+    },
+    "modelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/310-HERO-012/output.json",
+      "bytes": 839156,
+      "sha256": "cc2249c8d939e0d895e1a7dca645c35829fdafaedcbd331b406c8dcc3e942fcf"
+    },
+    "behavior": "Current blue opening with a code-generated terminal,71 native part families,18 genuine vectors and customer handoff on1440/992/390 roots.",
+    "next": [
+      "Close fixed header parents/positions and native shadow readback after fresh preimage diagnosis.",
+      "Verify actual Framer terminal motion and reload."
+    ]
   }
 }

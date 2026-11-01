@@ -37,5 +37,41 @@
       "sha256": "c6b09131e5317f1cba3b627ae78687e6772899773c699dda09fe092c691729d5"
     }
   ],
-  "actorProvenance": "../../code-components/assets/source-vercel-light-provenance.json"
+  "actorProvenance": "../../code-components/assets/source-vercel-light-provenance.json",
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "CURRENT_PAGE_MODEL_CONFIRMED_NEW_HOVER_SOURCE_WRITE_PENDING",
+    "page": {
+      "id": "ebD8S_8Xo",
+      "desktop": "u5sNosRy9",
+      "compact": "rEeaw1frt",
+      "phone": "o1O9VNMak",
+      "path": "/playgrounds/source-inspiration/heroes/current/hero-009-vercel-agentic"
+    },
+    "sourceControls": 12,
+    "sourceRows": 11,
+    "modelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/308-HERO-009-readonly-closure/output.json",
+      "bytes": 502957,
+      "sha256": "04a37a081f244caf6ada8f82b09be657592761a95761f509ae301d99af728a5b"
+    },
+    "hoverCorrection": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-009/native-hover-correction/receipt.json",
+      "bytes": 2587,
+      "sha256": "3464796771144bbb3ac862c93e76f3399067264f212ffd7e116a5144a8c2383a"
+    },
+    "behavior": "Current pale source with192×166 Desktop/170×146 Phone triangle, direct click arming and pointer RGB brush. Native narrative, header, source vectors and customer handoff remain editable.",
+    "intentionalDifferences": [
+      "Static customer rail replaces the source marquee.",
+      "Native Inter/Geist layout and some following prose have explicit fits."
+    ],
+    "next": [
+      "Transfer the frozen Framer onHoverStart/onHoverEnd bridge.",
+      "Verify actual Framer moving paint, native hover and reload."
+    ]
+  }
 }

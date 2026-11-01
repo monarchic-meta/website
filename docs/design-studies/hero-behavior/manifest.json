@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 3096,
-      "sha256": "47237d46c20287468a15b8a9aa06c947fdfa355604da7484056a0a5cd9640f94"
+      "bytes": 5261,
+      "sha256": "b762798ef403e5cdc42271270fe4271bc02130aea446b7f2a2d1a538d95b11ef"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 46366,
-      "sha256": "73814a36bcc07765c3c6a47c37aca4fd0bb3d613df742734e045e3e5f6da4521"
+      "bytes": 50178,
+      "sha256": "4fed282d33e781b14891f6aed8cf6779a1aa4c3393a33ce686fc9b82d52fac83"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3890,
-      "sha256": "aaa400deeaa5ba68cafdafbd9b421311e6f00b2653729fa9a0b66046760a59b7"
+      "sha256": "e0fc2ecf99a2b15e5d1b6edb3b27edaa2172330cfc8fbe1866c64bfbbd9965c2"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -272,6 +272,60 @@
         "bytes": 473972,
         "sha256": "99e6b577e73b6da75adebf2ff9f78eb2236c307f1ad3bafbfe8fe0f076e71756"
       }
-    ]
+    ],
+    "HERO004": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
+      "bytes": 11777,
+      "sha256": "3a8616ee163e407bb5ccbc9daf0005455dcb8244e9e6da1c4ca20d85c5f0ac46"
+    },
+    "HERO009": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
+      "bytes": 5291,
+      "sha256": "f5367a9a03910a5b6fd0ada3615b20cbdac7abf3cffa986b442d5861e238ea66"
+    },
+    "HERO011": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-011.json",
+      "bytes": 6053,
+      "sha256": "bbbdca9d1b02fce4ef86917484f487798c69924d811602b8970e657a4a375812"
+    },
+    "HERO012": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-012.json",
+      "bytes": 6094,
+      "sha256": "5e60b20540bf72844b9bf9340abe6996c0beaecdac281db8c7f68f51e3200e90"
+    },
+    "HERO014": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-014.json",
+      "bytes": 3476,
+      "sha256": "b1f96ad19a6a9a8d1cbcce15dd7c59c7bff3ed94b4d6234ef2c14a7422972e8b"
+    },
+    "HERO015": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
+      "bytes": 11690,
+      "sha256": "e6104523076fc8c769e38f0c6666c431ee63c30790aa1fb397952e0c3a3ae9e5"
+    },
+    "nativeCurrentPages": {
+      "HERO-009": {
+        "id": "ebD8S_8Xo",
+        "desktop": "u5sNosRy9",
+        "compact": "rEeaw1frt",
+        "phone": "o1O9VNMak",
+        "path": "/playgrounds/source-inspiration/heroes/current/hero-009-vercel-agentic"
+      },
+      "HERO-011": {
+        "id": "AfQRBgsJO",
+        "desktop": "vTpXZzefA",
+        "compact": "TKqCHqKgi",
+        "phone": "OYoOmoOIe",
+        "path": "/playgrounds/source-inspiration/heroes/current/hero-011-jon-way"
+      },
+      "HERO-012": {
+        "id": "A2ZhTsALK",
+        "desktop": "KlPcKpJsq",
+        "compact": "DYmr99GZ9",
+        "phone": "XAXV5n3aJ",
+        "path": "/playgrounds/source-inspiration/heroes/current/hero-012-mezmo-aura"
+      }
+    },
+    "pending": "Mezmo retained header preimage diagnosis; H4/H14/H15/Vercel source/native transfers; Polar,Origin andFORMAT refinements; actualFramer Preview/reload."
   }
 }

@@ -189,5 +189,28 @@
         "sha256": "3662e24a5afcae700c9434bf6efbb0fd36d1e9a15f97b01cc475e755ee154bf1"
       }
     }
+  },
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "LOCAL_CORRECTIONS_FROZEN_NATIVE_BINDING_PENDING",
+    "carousel": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-receipt.json",
+      "bytes": 4981,
+      "sha256": "116866fead5f395253daa030a667a3a35a2056f31bb418f7aa45dec1407355eb"
+    },
+    "escapeEffects": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-source-effects/receipt.json",
+      "bytes": 1695,
+      "sha256": "6d56b681e200b15b14a14797ade7bd33ef6012bc644a36bbd0b9f95fffa6b478"
+    },
+    "behavior": "Committed named650ms hold enters a source-sized carousel; pressed drag/release/wheel/sidecard navigation and grayscale neighbors replace the old small single-plane fit. Six Escape material families now have independent code reconstructions.",
+    "next": [
+      "Bind the six carousel overrides and one source-effects override to retained native targets.",
+      "Check genuine moving film, curve/inertia differences and actual Framer Preview/reload."
+    ]
   }
 }
