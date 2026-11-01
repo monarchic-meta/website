@@ -17,7 +17,7 @@ records the independent directions and concrete motifs to make more of.
 | [Web and UI](design-inspiration/web-ui.md) | All 19 selected posts: expressive page compositions, digital objects, type, footers, wireframes and roundups |
 | [Graphic design](design-inspiration/graphic-design.md) | Editorial grids, identity systems, dot matrices, halftones, collage, and book previews |
 | [Creative Coding](design-inspiration/creative-coding.md) | All 20 selected posts: point meshes, actual tonal stippling, glass, chrome, luminous forms and technical UI graphics |
-| [Hero references](design-inspiration/heroes.md) | All 18 owner-selected gallery references, their live destinations, concrete visual mechanisms and inspection limits |
+| [Hero references — complete list](design-inspiration/heroes.md#complete-owner-selected-list) | All 18 original links in supplied order, primary destinations, visual mechanisms and explicit behavior-inspection limits |
 | [Sites](design-inspiration/sites.md) | Verified destinations, their source posts, and the scope of live inspection |
 
 All Web & UI Design references remain included, alongside Graphic Design’s

@@ -14,6 +14,48 @@ then develop an independently composed Monarchic opening. Its first public
 identity statement should feel deliberately authored and company-specific. The
 owner's book-cover analogy calls for distinctive craft and quiet intrigue.
 
+## Complete owner-selected list
+
+These are the **original eighteen links**, in the owner's supplied order. Keep
+the selected gallery revision distinct from its current destination: several
+live sites have changed, and the first two references are recorded motion works
+rather than independent websites.
+
+| ID | Selected reference | Primary destination or source work |
+| --- | --- | --- |
+| HERO-001 | [Type Face — Recent Design](https://recent.design/i/vmmug5r-type-face) | [Stephen Kelman's source post](https://x.com/stephenkelman/status/2093335231604367454) |
+| HERO-002 | [Ajedrez Film Poem — Recent Design](https://recent.design/i/qfy3385-ajedrez-film-poem) | [Julián Leiss's source post](https://x.com/julianleiss/status/2110868325052149925) |
+| HERO-003 | [Agent-first Billing — Recent Design](https://recent.design/i/lzxaebw-agent-first-billing-landing-page) | [Polar field guide](https://polar.sh/field-guide?page=m-credits) |
+| HERO-004 | [Artemii Lebedev — Siteinspire](https://www.siteinspire.com/website/13624-artemii-lebedev) | [Artemii Lebedev](https://artemiilebedev.com/) |
+| HERO-005 | [Maximilian Kaspar — Siteinspire](https://www.siteinspire.com/website/13623-maximilian-kaspar) | [Maximilian Kaspar](https://www.maximiliankaspar.com/) |
+| HERO-006 | [Mac Moss Studio — Siteinspire](https://www.siteinspire.com/website/13575-mac-moss-studio) | [Mac Moss Studio](https://macmoss.studio/) |
+| HERO-007 | [Cantor8 — Lapa Ninja](https://www.lapa.ninja/post/cantor8/) | [Cantor8](https://www.cantor8.io/) |
+| HERO-008 | [PP Neue Montreal — Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/) | [Neue Montreal](https://neuemontreal.com/) |
+| HERO-009 | [Vercel — Lapa Ninja](https://www.lapa.ninja/post/vercel-3/) | [Vercel](https://vercel.com/) |
+| HERO-010 | [G!theimagineers — Httpster](https://httpster.net/website/gtheimagineers/) | [G!theimagineers, English](https://www.gtheimagineers.com/en.html) |
+| HERO-011 | [Jon Way Studio — Httpster](https://httpster.net/website/jon-way-studio/) | [Jon Way](https://www.jonway.studio/) |
+| HERO-012 | [Mezmo — Httpster](https://httpster.net/website/mezmo/) | [Mezmo](https://www.mezmo.com/) |
+| HERO-013 | [FORMAT — Awwwards](https://www.awwwards.com/sites/format) | [FORMAT](https://format.obys.agency/) |
+| HERO-014 | [Unbelievably Crap — Awwwards](https://www.awwwards.com/sites/unbelievably-crap) | [Unbelievably Crap](https://www.unbelievablycrap.com/) |
+| HERO-015 | [MECHA — Awwwards](https://www.awwwards.com/sites/mecha) | [MECHA](https://mecha-xyz.webflow.io/) |
+| HERO-016 | [Origin — Minimal Gallery](https://minimal.gallery/origin/) | [Origin Studio](https://www.originbrand.io/) |
+| HERO-017 | [Bleibtgleich 2026 — Minimal Gallery](https://minimal.gallery/bleibtgleich-2026/) | [Maksym Bleibtgleich](https://bleibtgleich.dev/) |
+| HERO-018 | [pu—ente — Minimal Gallery](https://minimal.gallery/pu-ente/) | [pu—ente](https://www.pu-ente.com/), [graphic-design branch](https://www.pu-ente.com/z/) |
+
+### Full hero behavior
+
+The owner's subsequent correction on **2026-10-31** makes the whole opening
+experience the recreation target, including sequences spanning multiple screens,
+scroll-driven changes, pointer movement, hover, drag or hold interactions, and
+the transition into the next section. A first viewport or a sampled animation
+loop does not establish coverage of that experience.
+
+The observations below are the earlier visual review. Keep its explicit limits;
+do not reinterpret its eighteen-reference coverage as eighteen completed
+interaction audits. The existing Framer opening studies remain useful visual
+studies, but their layout, playback and preservation checks do not establish
+full source-behavior fidelity.
+
 ## Coverage and evidence
 
 All 18 selected visuals were inspected: gallery screenshots, sampled playing
