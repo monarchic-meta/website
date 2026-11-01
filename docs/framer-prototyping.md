@@ -50,6 +50,14 @@ keeps source-led native compositions and real procedural graphics on separate
 Design pages and draft Preview labs. Its handoff records credits, source
 substitutions, retained work and verification separately from the earlier
 homepage prototypes.
+
+The [original hero round](design-studies/original-heroes/handoff.md) follows that
+source learning with nine independent compositions: two information fields, two
+geometric identities, two research montages and three combinations. Native
+typography and framing surround real procedural artwork; the new collection
+belongs under Original compositions rather than Source inspiration. Its handoff
+records the current delivery and verification status.
+
 The [visual kitchen moodboard](framer-moodboard.md) brings catalog references and
 independent graphic elements into six Design pages in the same project:
 Reference library, Recreations, Originals, Live Creative Coding and

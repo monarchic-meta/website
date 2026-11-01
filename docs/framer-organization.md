@@ -1,21 +1,25 @@
 # Framer project organization
 
-The **2026-10-31** organization keeps the existing **34 pages: 11 Design and
-23 Web**, with their page IDs, artwork, credits and responsive states. Design
-pages use native nested folders; Web pages use the hierarchy of their route
-prefixes. The separate boards retain their contents and loading boundaries.
-The names and routes below are saved and verified after an editor reload. The
-[organization manifest](framer-organization-manifest.json) maps every stable page
-ID from its former name and route to its current location, with proof hashes.
+The current authored inventory is **42 pages: 15 Design and 27 Web**, with
+**187 code placements and 18 code sources**. Design pages use native nested
+folders; Web pages use the hierarchy of their route prefixes. Separate boards
+retain their contents and loading boundaries.
 
-The project retains 160 code placements and 17 code sources. Folder organization
-changes page membership, display names, routes and any internal links that need
-the mapped route update. It preserves page types, descendant IDs, artwork,
-component sources, controls, geometry and draft states. No new pages, artworks or
-placements are introduced, and no existing work is pruned or converted between
-Design and Web. The [manual Framer workflow](framer-prototyping.md) still governs
-implementation handoff. This organization performed no publish operation or
-synchronization with the implemented site.
+The **2026-10-31** folder organization verified the preceding 34 pages, 160 code
+placements and 17 sources after an editor reload. Its frozen
+[organization manifest](framer-organization-manifest.json) remains the historical
+baseline, with the former/current names, routes and proof hashes for those pages.
+The subsequent [original hero round](design-studies/original-heroes/handoff.md)
+adds four Design boards, four draft Web playgrounds and 27 code placements.
+That addition is verified after editor reload, responsive Preview playback and
+separate Canvas opt-in/restoration checks. Its independent preservation audit
+confirms that all preceding collections remain exact.
+
+The folder-only pass changed membership, page names, routes and mapped internal
+links while preserving page types, descendants, artwork, controls and sources.
+The original hero addition is separate new work; the earlier pages are retained.
+The [manual Framer workflow](framer-prototyping.md) still governs implementation
+handoff. Neither operation publishes or synchronizes with the implemented site.
 
 ## Design: editable visual collections
 
@@ -44,6 +48,15 @@ collection's source keys, credits and fidelity limits.
 | Original compositions | [Graphic elements](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sZvxQvQHd) | Eighteen retained MB studies and their combination playground. |
 | Original compositions | [Live Creative Coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=sLT2tXsB2) | Eight independent OL studies. |
 | Original compositions | [Logo treatments](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=wSe9_qdcJ) | Thirteen original treatments of the existing Monarchic logo. |
+| Original compositions / Heroes | [Information fields](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=xpjehgQOy) | OH-001–002, independently composed information-field openings. |
+| Original compositions / Heroes | [Geometric identity](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=J1NVQTs9i) | OH-003–004, original identity treatments and native type. |
+| Original compositions / Heroes | [Research montage](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=S1P8iri0J) | OH-005–006, original generated graphic specimens and editorial composition. |
+| Original compositions / Heroes | [Synthesis](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=IPdEBIc6J) | OH-007–009, three original combinations of the preceding avenues. |
+
+The four original hero boards have separate responsive Web counterparts below.
+HERO reference keys appear as mechanism influences in their review footers;
+external source layouts or geometry are not imported. OH-003 and OH-008 retain
+explicit provenance for the existing canonical Monarchic mark.
 
 Static native artwork, source comparisons and asset specimens can stay on
 Design pages. Live code components can also animate there through their explicit
@@ -107,6 +120,10 @@ the MRI anatomy. Keep source provenance visible in each specimen.
 | Playgrounds / Source inspiration / Heroes | [Surface writing & filaments](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=VR2TaJCqa) | `/playgrounds/source-inspiration/heroes/surface-writing-filaments` |
 | Playgrounds / Source inspiration / Heroes | [Light, vectors & wireframes](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=iUjJa5763) | `/playgrounds/source-inspiration/heroes/light-vectors-wireframes` |
 | Playgrounds / Original compositions | [Creative coding](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=N5Uh3X9KH) | `/playgrounds/original-compositions/creative-coding` |
+| Playgrounds / Original compositions / Heroes | [Information fields](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XpYGM1WKS) | `/playgrounds/original-compositions/heroes/information-fields` |
+| Playgrounds / Original compositions / Heroes | [Geometric identity](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XE5l5uSSR) | `/playgrounds/original-compositions/heroes/geometric-identity` |
+| Playgrounds / Original compositions / Heroes | [Research montage](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=mAQ7zz608) | `/playgrounds/original-compositions/heroes/research-montage` |
+| Playgrounds / Original compositions / Heroes | [Synthesis](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=J0_sOtuU9) | `/playgrounds/original-compositions/heroes/synthesis` |
 | Playgrounds / Monarchic graphics | [Logo treatments](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=XFbUB39EK) | `/playgrounds/monarchic-graphics/logo-treatments` |
 | Playgrounds / Monarchic graphics / Brain | [Website fiber field](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nDuZgzAIZ) | `/playgrounds/monarchic-graphics/brain/website-fiber-field` |
 | Playgrounds / Monarchic graphics / Brain | [Ordered dither](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=qawbJ_Hpc) | `/playgrounds/monarchic-graphics/brain/ordered-dither` |
@@ -130,9 +147,9 @@ mapping and a fresh check. Source post URLs, creator links and links to the
 implemented Monarchic site keep their existing destinations. Folder organization
 does not add redirects or publish prototype routes.
 
-## Saved verification
+## Historical organization baseline — 34 pages
 
-The final saved capture and an independent local comparison passed on
+The folder-only pass's final saved capture and independent local comparison passed on
 **2026-10-31**. All 34 complete stored page trees match their baseline after
 reversing only 33 declared page names, 22 route changes and 48 specific link
 targets. Framer automatically remapped those links; the conditional repair found
@@ -152,13 +169,27 @@ Pause/Play, gallery navigation to Signal / Field, brain-study peer navigation,
 and the three moved homepage solutions anchors. Signal Loom's anchor was also
 checked at Phone width. The anchors land below the header at 90px.
 
-The manifest records the capture hashes, complete page-tree artifact, local
+The historical organization manifest records capture hashes, complete page trees, local
 validation, browser evidence and scope limits. The compact baseline does not
 prove unchanged unreferenced asset bytes or the whole route-segment graph; full
 page bodies, asset references, existing asset-folder structure and exact final
 page paths are checked. New folder child order is recorded. Renderer code did
 not change, so existing renderer-regression evidence remains separate from this
-organization verification.
+organization verification. This 34-page proof remains unchanged by the later
+original hero addition.
+
+## Original hero addition — verified
+
+The eight new page links come from the append's returned node map and complete
+saved-state readback. The total is 42 pages, 187 code placements and 18 sources.
+The independent 31-check preservation audit confirms all 34 preceding complete
+page trees and all eight new complete trees after Canvas restoration. Actual
+editor reload, native font/rotation layout, 18 Desktop/Phone Preview cases and
+nine separate Canvas opt-ins passed. The
+[original hero handoff](design-studies/original-heroes/handoff.md) owns their
+delivery evidence. The historical 34-page organization proof remains frozen;
+the new [manifest](design-studies/original-heroes/manifest.json) records this
+addition's exact source, identities and proof hashes.
 
 Treat an MCP result or timeout as provisional. Inspect the saved project and
 reload the editor before retrying creation: delayed delivery can otherwise
