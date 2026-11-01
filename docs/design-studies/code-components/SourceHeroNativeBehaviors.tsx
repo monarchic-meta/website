@@ -715,6 +715,24 @@ export function withFormatDaughter(Component: ComponentType<LayerProps>): Compon
     return toggleLayer(Component, "daughter")
 }
 
+/** Plain chip artwork must disappear beneath transparent Daughter alternatives. */
+export function withFormatDaughterOriginal(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const { enabled } = useToggle("daughter")
+        return <Component
+            {...props}
+            ref={ref}
+            aria-hidden={enabled}
+            style={{
+                ...props.style,
+                opacity: enabled ? 0 : 1,
+                visibility: enabled ? "hidden" : "visible",
+                pointerEvents: "none",
+            }}
+        />
+    })
+}
+
 function toggleValue(Component: NativeLayer, name: ToggleName): NativeLayer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const { enabled } = useToggle(name)

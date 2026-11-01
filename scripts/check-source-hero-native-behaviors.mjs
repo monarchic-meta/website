@@ -10,6 +10,7 @@ import {chromium} from '@playwright/test';
 
 const repo=fileURLToPath(new URL('../',import.meta.url));
 const require=createRequire(import.meta.url);
+const sharp=createRequire(require.resolve('astro/package.json'))('sharp');
 const file=path.join(repo,'docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx');
 const source=fs.readFileSync(file,'utf8');
 const packet=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/hero-behavior/native/HERO-013.json')));
@@ -78,11 +79,24 @@ try {
             make('withFormatDaughter','daughter-layer',{opacity:0,position:'fixed',top:40}),
             make('withMechaIndex','mecha-index',{left:28,top:574,width:366,height:100,transform:'translateZ(0)'}),
             ...['Tomorrow','Aescape','Nonfiction'].map((name,i)=>make('withMecha'+name+'Row','mecha-row-'+(i+1),{opacity:1,height:28,width:366})),
+            ...Array.from({length:21},(_,i)=>React.createElement('div',{key:'source-chip-'+i,style:{position:'fixed',left:400+(i%7)*64,top:30+Math.floor(i/7)*64,width:60,height:60,background:'#222'}},
+                make('withFormatDaughterOriginal','chip-original-'+i,{position:'absolute',left:0,top:0,width:60,height:60,background:'#ee3322',transform:'translateZ(0)'},{text:'',title:'retained original chip'}),
+                make('withFormatDaughter','chip-daughter-'+i,{position:'absolute',left:0,top:0,width:60,height:60,background:'linear-gradient(to right,#2288cc 0 50%,transparent 50% 100%)'},{text:''})
+            )),
             React.createElement('div',{key:'review',style:{height:1000}},'review')
         ));
         renderNative();
     },{actorNames,posePacket});
     await page.waitForFunction(()=>refs['opening-wordmark']?.style.position==='fixed');
+    const chipPixels=async()=>{
+        const shot=await page.screenshot({clip:{x:400,y:30,width:60,height:60}}),{data,info}=await sharp(shot).removeAlpha().raw().toBuffer({resolveWithObject:true});
+        const rgb=(x,y)=>[...data.subarray((y*info.width+x)*info.channels,(y*info.width+x)*info.channels+3)];
+        return{left:rgb(10,40),transparentHalf:rgb(50,40)};
+    };
+    const chipOriginalPixels=await chipPixels();
+    const chipOriginalAttrs=await page.evaluate(()=>Array.from({length:21},(_,i)=>{const n=refs['chip-original-'+i];return{retained:n.dataset.retained,title:n.title,className:n.className,transform:n.style.transform,hasRef:n instanceof HTMLElement}}));
+    assert.deepEqual(chipOriginalPixels,{left:[238,51,34],transparentHalf:[238,51,34]});
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>getComputedStyle(refs['chip-original-'+i]).visibility==='visible'&&getComputedStyle(refs['chip-daughter-'+i]).visibility==='hidden').every(Boolean)));
     const actions=[];
     for(const[key,track]of Object.entries(posePacket)) for(const pose of track.poses){
         const scrollY=pose.y*1280/1440;
@@ -111,6 +125,18 @@ try {
     await page.keyboard.press('Enter');
     await page.waitForFunction(()=>getComputedStyle(refs['daughter-layer']).opacity==='1');
     assert.equal(await page.evaluate(()=>refs['daughter-value'].textContent),'1');
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>getComputedStyle(refs['chip-original-'+i]).visibility==='hidden'&&getComputedStyle(refs['chip-daughter-'+i]).visibility==='visible').every(Boolean)));
+    const chipDaughterPixels=await chipPixels();
+    assert.deepEqual(chipDaughterPixels,{left:[34,136,204],transparentHalf:[34,34,34]});
+    assert.deepEqual(await page.evaluate(()=>Array.from({length:21},(_,i)=>{const n=refs['chip-original-'+i];return{retained:n.dataset.retained,title:n.title,className:n.className,transform:n.style.transform,hasRef:n instanceof HTMLElement}})),chipOriginalAttrs);
+    assert.ok(chipOriginalAttrs.every(n=>n.retained==='native'&&n.title==='retained original chip'&&n.className==='preserved-native-class'&&n.hasRef&&n.transform.includes('translateZ(')));
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>{const n=refs['chip-original-'+i];return n.getAttribute('aria-hidden')==='true'&&getComputedStyle(n).pointerEvents==='none'}).every(Boolean)));
+    await page.getByRole('button',{name:'daughter',exact:true}).click();
+    await page.waitForFunction(()=>getComputedStyle(refs['chip-original-0']).visibility==='visible');
+    assert.deepEqual(await chipPixels(),chipOriginalPixels);
+    await page.getByRole('button',{name:'daughter',exact:true}).click();
+    await page.waitForFunction(()=>getComputedStyle(refs['chip-original-0']).visibility==='hidden');
+    reports.push({case:'All21 native plain/Daughter pairs share the same toggle; transparent alternate regions reveal the backing, not the original bitmap; reverse preserves refs/props/transform',chipOriginalPixels,chipDaughterPixels,passed:true});
     await page.getByRole('button',{name:'notes',exact:true}).click();
     await page.waitForFunction(()=>getComputedStyle(refs['note-layer']).visibility==='hidden');
     assert.equal(await page.evaluate(()=>refs['notes-value'].textContent),'0');
@@ -135,12 +161,15 @@ try {
     await page.setViewportSize({width:1280,height:720});
     await page.evaluate(()=>{target='canvas';renderNative()});
     await page.waitForFunction(()=>listenerCounts.scroll===0&&listenerCounts.resize===0);
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>getComputedStyle(refs['chip-original-'+i]).visibility==='visible'&&getComputedStyle(refs['chip-daughter-'+i]).visibility==='hidden').every(Boolean)));
     await page.getByRole('button',{name:'notes',exact:true}).click();
     assert.equal(await page.evaluate(()=>getComputedStyle(refs['note-layer']).visibility),'hidden');
     await page.evaluate(()=>{target='export';staticRenderer=true;renderNative()});
     await page.waitForFunction(()=>refs['opening-wordmark'].style.position!=='fixed');
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>getComputedStyle(refs['chip-original-'+i]).visibility==='visible'&&getComputedStyle(refs['chip-daughter-'+i]).visibility==='hidden').every(Boolean)));
     await page.evaluate(()=>nativeRoot.unmount());
     assert.deepEqual(await page.evaluate(()=>listenerCounts),{scroll:0,resize:0});
+    assert.ok(await page.evaluate(()=>Array.from({length:21},(_,i)=>refs['chip-original-'+i]===null&&refs['chip-daughter-'+i]===null).every(Boolean)));
     reports.push({case:'Canvas/export freeze and full listener/ref cleanup',passed:true});
     await page.screenshot({path:path.join(evidence,'after-cleanup.png')});
     await page.close();
