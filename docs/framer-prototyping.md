@@ -148,9 +148,10 @@ for editing individual shapes; a code component exposes its source and visual
 parameters instead. Keep both forms where they help exploration.
 
 The code component sources are self-contained TypeScript/React under
-`docs/design-studies/code-components`. Framer supplies its runtime and code-file
+`docs/design-studies/code-components`. Framer supplies their runtime and code-file
 diagnostics; the website's TypeScript project excludes this authoring directory.
-They add no React dependency or runtime integration to the Astro/Svelte site.
+Locked React 18 development dependencies support isolated browser tests; these
+components do not integrate into the Astro/Svelte site runtime.
 
 Keep exports and thumbnails static. Editor-canvas motion defaults off; expose an
 explicit **Canvas motion** opt-in when seeing the effect beside its reference

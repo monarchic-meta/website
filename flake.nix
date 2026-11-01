@@ -21,7 +21,7 @@
           pnpmDeps = pkgs.fetchPnpmDeps {
             inherit pname version;
             src = ./.;
-            hash = "sha256-tIajqyVK5PK2yKx6DyQER1IAfISVlDLcdRNkmO3+7nk=";
+            hash = "sha256-hOgMj2YoCf/kk7lgpesR83v/RfwWpGkSZpaBowXsNAQ=";
             fetcherVersion = 3;
           };
           website = pkgs.stdenvNoCC.mkDerivation {
@@ -70,7 +70,7 @@
           pnpmDeps = pkgs.fetchPnpmDeps {
             inherit pname version;
             src = ./.;
-            hash = "sha256-tIajqyVK5PK2yKx6DyQER1IAfISVlDLcdRNkmO3+7nk=";
+            hash = "sha256-hOgMj2YoCf/kk7lgpesR83v/RfwWpGkSZpaBowXsNAQ=";
             fetcherVersion = 3;
           };
           mkWebsiteCheck = name: command: pkgs.stdenvNoCC.mkDerivation {
