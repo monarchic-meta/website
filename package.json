@@ -87,6 +87,11 @@
     "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs",
     "check:source-native-tap": "node scripts/check-source-native-tap.mjs",
     "check:source-montreal-behaviors": "node scripts/check-source-montreal-behaviors.mjs",
+    "check:source-portfolio-film-study": "node scripts/check-source-portfolio-film-study.mjs",
+    "check:source-portfolio-film-browser": "node scripts/check-source-portfolio-film-browser.mjs",
+    "check:source-portfolio-native-input": "node scripts/check-source-portfolio-native-input.mjs",
+    "check:source-portfolio-film-resources": "node scripts/check-source-portfolio-film-resources.mjs",
+    "check:source-portfolio-film-rgb": "node scripts/check-source-portfolio-film-rgb.mjs",
     "check:source-montreal-glyph-flow": "node scripts/check-source-montreal-glyph-flow.mjs"
   },
   "dependencies": {

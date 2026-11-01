@@ -221,6 +221,19 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-portfolio-film = (mkWebsiteCheck "source-portfolio-film" ''
+            export MONARCHIC_PORTFOLIO_EVIDENCE_DIR="$out/evidence/playback"
+            export MONARCHIC_PORTFOLIO_NATIVE_EVIDENCE_DIR="$out/evidence/native-input"
+            export MONARCHIC_PORTFOLIO_RESOURCE_EVIDENCE_DIR="$out/evidence/resources"
+            pnpm run check:source-portfolio-film-study
+            pnpm run check:source-portfolio-film-browser
+            pnpm run check:source-portfolio-native-input
+            pnpm run check:source-portfolio-film-resources
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

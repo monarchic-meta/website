@@ -1,0 +1,75 @@
+{
+  "purpose": "Owned FFmpeg testsrc2/hue patterns for deterministic media/controller/resource tests. They are never used as source-fidelity evidence or product artwork.",
+  "generator": "scripts/build-portfolio-film-fixtures.mjs",
+  "ffmpegVersion": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "frameRate": 12,
+  "durationSeconds": 3,
+  "specifications": [
+    {
+      "name": "desktop",
+      "width": 320,
+      "height": 180,
+      "hue": 0
+    },
+    {
+      "name": "phone",
+      "width": 180,
+      "height": 320,
+      "hue": 160
+    },
+    {
+      "name": "alternate",
+      "width": 320,
+      "height": 180,
+      "hue": 110
+    },
+    {
+      "name": "alternate-phone",
+      "width": 180,
+      "height": 320,
+      "hue": 300
+    }
+  ],
+  "files": [
+    {
+      "file": "desktop.webm",
+      "bytes": 45292,
+      "sha256": "9e2ab0b838769dbe4b5b5ad1cb4a919e600670af19052852ddbcf1c31c47fbe5"
+    },
+    {
+      "file": "desktop.png",
+      "bytes": 15875,
+      "sha256": "2a74424c48b332574bf4ff7c9d707f4b42e337306ee9b5b5229f84dce7ed60ac"
+    },
+    {
+      "file": "phone.webm",
+      "bytes": 47864,
+      "sha256": "afbb30db581a1e4ee47cab8b478a9a6007ce66f43dcd8d04feab1e0fe675a4ef"
+    },
+    {
+      "file": "phone.png",
+      "bytes": 16406,
+      "sha256": "cf6c1e4fb868ab78e66f49c84130d1a3e09dff7a45dafd3a7b2bbb3d07fedd74"
+    },
+    {
+      "file": "alternate.webm",
+      "bytes": 44431,
+      "sha256": "a077512f65e99a5180808e7500e204d5e978f5a573075e9782a8dd099891f53e"
+    },
+    {
+      "file": "alternate.png",
+      "bytes": 14611,
+      "sha256": "26d2e7e34095f7e32bec37ef5793e1b2be0f6e6327d2dd181eac917cd680646d"
+    },
+    {
+      "file": "alternate-phone.webm",
+      "bytes": 46176,
+      "sha256": "a7ec60ca6dcddf73d9a79deb0f90676dda71c143d77914bfb55e7026e357e384"
+    },
+    {
+      "file": "alternate-phone.png",
+      "bytes": 16809,
+      "sha256": "bab5d8e082b5d11c1eaa885dc332a7bb099d8b26515c8a180aeb3a7f52054524"
+    }
+  ]
+}

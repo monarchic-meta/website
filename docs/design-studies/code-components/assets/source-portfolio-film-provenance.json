@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "id": "HERO-004",
+  "classification": "Credited source-led behavior recreation; unpublished Framer draft",
+  "source": "https://artemiilebedev.com/",
+  "gallery": "https://www.siteinspire.com/website/13624-artemii-lebedev",
+  "creator": "Artemii Lebedev",
+  "credit": "Actual case films shown in Artemii Lebedev’s portfolio. Individual case-film authors and reuse license are unverified; no licensing or publication permission is asserted.",
+  "implementation": "Independent Canvas2D film presentation and React/native public overrides. No original website behavior JavaScript was copied or executed.",
+  "sourcePacket": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/native-film-authoring-packet.json",
+    "sha256": "a6a5311a368ca46b96d15c6838562cb73bf563f1230a48968788e9c325af2621"
+  },
+  "manualMediaMap": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/mcp/HERO-004-film-poster-upload-map.json",
+    "sha256": "b56e32b7a3a4f9c53638d6dd1f0acdb2ad2397c8b33dcb41590d39a0c39acc8c",
+    "note": "Artifact-only upload ledger. The actor accepts actual File URL props; no Framer asset URLs or whole source films are embedded in repository code."
+  },
+  "projects": [
+    {
+      "index": 0,
+      "title": "Ponder AI",
+      "category": "Software",
+      "year": 2026,
+      "desktopFilm": "film-01",
+      "phoneFilm": "film-02"
+    },
+    {
+      "index": 1,
+      "title": "Cantor8",
+      "category": "Business",
+      "year": 2026,
+      "desktopFilm": "film-03",
+      "phoneFilm": "film-04"
+    },
+    {
+      "index": 2,
+      "title": "A Better Lou",
+      "category": "Healthcare",
+      "year": 2026,
+      "desktopFilm": "film-05",
+      "phoneFilm": "film-05"
+    },
+    {
+      "index": 3,
+      "title": "Frequency Breathwork",
+      "category": "Wellness",
+      "year": 2026,
+      "desktopFilm": "film-06",
+      "phoneFilm": "film-07"
+    },
+    {
+      "index": 4,
+      "title": "Goom Gum",
+      "category": "Music",
+      "year": 2025,
+      "desktopFilm": "film-08",
+      "phoneFilm": "film-08"
+    },
+    {
+      "index": 5,
+      "title": "Monolith Studio",
+      "category": "Tattoo",
+      "year": 2024,
+      "desktopFilm": "film-09",
+      "phoneFilm": "film-10"
+    },
+    {
+      "index": 6,
+      "title": "Hungry Tiger",
+      "category": "Food & Drink",
+      "year": 2025,
+      "desktopFilm": "film-11",
+      "phoneFilm": "film-12"
+    },
+    {
+      "index": 7,
+      "title": "OXI Instruments",
+      "category": "Music Instruments",
+      "year": 2025,
+      "desktopFilm": "film-13",
+      "phoneFilm": "film-13"
+    }
+  ],
+  "sourceFilms": [
+    {
+      "id": "film-01",
+      "sha256": "d5cbe1f6a9ee4b19efea392ebd2d849d6e8089ad4e5aa5aa8b6b914bc15367e2",
+      "bytes": 8811280,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 619,
+      "durationSeconds": 20.615622,
+      "sourceMaster": "https://stream.mux.com/GAEzjd6qjXjGicGb9w9KJ00mSc5eMROp9ZuFRaSMmMxU.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c032632ad41e57328c_d76286bcac75ac2cc78115d24e4f462c_ponder-desktop-poster.avif",
+      "verifiedDecodedFrames": 619,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-02",
+      "sha256": "dc3eab62ff53be0578c07e4027eb2a3a943bda0427191e4134239746e36bcdc8",
+      "bytes": 8152514,
+      "width": 786,
+      "height": 1704,
+      "frameRate": "30/1",
+      "frames": 600,
+      "durationSeconds": 19.976911,
+      "sourceMaster": "https://stream.mux.com/pBnKQbYXe1qJJ6vpjwJzarphCtUPrBLZXwx7m6p1Qg4.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf93d4f2c8ef70b099_ponder-mobile-poster.avif",
+      "verifiedDecodedFrames": 600,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-03",
+      "sha256": "a60a31fe5ea9b89121fa09898a4bb057d4d5e9891c0a5f7650eee55108672f2c",
+      "bytes": 4857929,
+      "width": 1560,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 1203,
+      "durationSeconds": 40.079422,
+      "sourceMaster": "https://stream.mux.com/Y2zqu2hNRqeZpjvbN5u2uqIZSb6Omb00N5biSe3T8dJY.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c0beb1853c814c4137_cantor8-desktop-poster.avif",
+      "verifiedDecodedFrames": 1203,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-04",
+      "sha256": "811f7a7535db0d5364df641c836977679877396c1e94bb387fbd57ad3696123c",
+      "bytes": 7001920,
+      "width": 786,
+      "height": 1704,
+      "frameRate": "30/1",
+      "frames": 1200,
+      "durationSeconds": 39.976911,
+      "sourceMaster": "https://stream.mux.com/02PC2jXinMNAjn00scoPDItX8mrlEy3C3PTCaWU3nV6x8.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf51d05ada753a66d7_cantor8-mobile-poster.avif",
+      "verifiedDecodedFrames": 1200,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-05",
+      "sha256": "88a1f9e3902c60dc241c785098822997ce80fcf85d1a581f49efe1c252b17181",
+      "bytes": 4116892,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 592,
+      "durationSeconds": 19.715622,
+      "sourceMaster": "https://stream.mux.com/i8pyPYDmlEVmy00yTtf00X4phP8avJDLWIyjj3kkYox9U.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf226293d1eaef43d7_a-better-lou-poster.avif",
+      "verifiedDecodedFrames": 592,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-06",
+      "sha256": "29c3de41aae6e0be65d017026d63b7b0321b0e390f125a7ff4ab12d1d52279b7",
+      "bytes": 5817858,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 1083,
+      "durationSeconds": 36.082289,
+      "sourceMaster": "https://stream.mux.com/slqqJK6hyKzijWCB8QdhgWwBGlgTlfVgSfXyIZgrlHY.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf1de548607161f8f2_fb-desktop-poster.avif",
+      "verifiedDecodedFrames": 1083,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-07",
+      "sha256": "4eb9c504fbba4ae6f464ba40877b19024d81d46227fce9e15a2a2fda9fe9091f",
+      "bytes": 8620793,
+      "width": 786,
+      "height": 1704,
+      "frameRate": "30/1",
+      "frames": 1033,
+      "durationSeconds": 34.410244,
+      "sourceMaster": "https://stream.mux.com/noN1RrcxltjRnacddWtqJVwLD00udheVXDQZbrx40101jo.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bfbeb1853c814c410f_fb-mobile-poster.avif",
+      "verifiedDecodedFrames": 1033,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-08",
+      "sha256": "2a8712238589b5ed355216fc7799137ceefdf9a9baca81343c12b25829d83398",
+      "bytes": 18666726,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 600,
+      "durationSeconds": 19.982289,
+      "sourceMaster": "https://stream.mux.com/3801JF9OBy74xIwIxHVl5dGZ61oj2MiGeWVufXxovucQ.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf226293d1eaef43ed_goom-poster.avif",
+      "verifiedDecodedFrames": 600,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-09",
+      "sha256": "ae19bc50e1608c2d1eaa8bd21f36f9b33495790834513ec8482760fc55ffeb39",
+      "bytes": 6759042,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 860,
+      "durationSeconds": 28.648956,
+      "sourceMaster": "https://stream.mux.com/01Ts02bPTg01Yauq94O4gCqsC1f7RK6ziRqWD6zE3PoB8k.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf1d7d922b5e50e717_monolith-desktop-poster.avif",
+      "verifiedDecodedFrames": 860,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-10",
+      "sha256": "91a80618315ef629be13c2fee0e11a1df4b13770ab2aed2bff450bf8c0ba91ba",
+      "bytes": 5991497,
+      "width": 786,
+      "height": 1704,
+      "frameRate": "30/1",
+      "frames": 859,
+      "durationSeconds": 28.610244,
+      "sourceMaster": "https://stream.mux.com/p4t021fSRfTwvPsGtTrUWBZ3NhabA8pu98XPMb4CDqWo.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf40b7d2894d9deda4_monolith-mobile-poster.avif",
+      "verifiedDecodedFrames": 859,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-11",
+      "sha256": "f340c7a9d42e292744c02a14aa8415b1cc2046115351855abd1755af2ce4350e",
+      "bytes": 6516525,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 600,
+      "durationSeconds": 19.982289,
+      "sourceMaster": "https://stream.mux.com/m2ud00kf9U6hlBBPLnb7H8ICnfaA82GCopIvg019oYPUU.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2dc7fbc4421c75c1ca0036_hungry-stop-frame-1.avif",
+      "verifiedDecodedFrames": 600,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-12",
+      "sha256": "bdfeb53ba2eb792fc092c61b1a8bfbe98f3d4a64ba6182095ba1e6882d7d9ddf",
+      "bytes": 1780797,
+      "width": 786,
+      "height": 1704,
+      "frameRate": "30/1",
+      "frames": 600,
+      "durationSeconds": 19.976911,
+      "sourceMaster": "https://stream.mux.com/4HtKXPr2iHcjj6LJoOYB3OcH1hdJxEerPmIj9x0001CTc.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2dc7fbc4421c75c1ca0036_hungry-stop-frame-1.avif",
+      "verifiedDecodedFrames": 600,
+      "sourcePixelSequenceExact": true
+    },
+    {
+      "id": "film-13",
+      "sha256": "a451297cd70c3b33a1af9cd78435c861ef755c3719a578ea3448d965aa52291e",
+      "bytes": 8859698,
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 338,
+      "durationSeconds": 11.248956,
+      "sourceMaster": "https://stream.mux.com/nXwwaFDpwX8nU1901dhDRLZnGOuoobaDJ2uY2aobdyQ00.m3u8?min_resolution=720p",
+      "sourcePosterURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c0e0bd5b6722504e78_oxi-poster.avif",
+      "verifiedDecodedFrames": 338,
+      "sourcePixelSequenceExact": true
+    }
+  ],
+  "sourcePosters": [
+    {
+      "index": 0,
+      "film": "film-01",
+      "sha256": "25a63f4f9ade1657b349cbdfa107bf481b7d795c40291b13280af3c204d2a3fb",
+      "bytes": 5969,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c032632ad41e57328c_d76286bcac75ac2cc78115d24e4f462c_ponder-desktop-poster.avif"
+    },
+    {
+      "index": 1,
+      "film": "film-02",
+      "sha256": "e9260e28f6ffc3e762f5360ea8d21510a9dcac92253517c924bbe7b75329c115",
+      "bytes": 3356,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf93d4f2c8ef70b099_ponder-mobile-poster.avif"
+    },
+    {
+      "index": 2,
+      "film": "film-03",
+      "sha256": "4a69865a45f4d7ccc69b4622b316ae9230ecf737b1907246dea4b671363337ce",
+      "bytes": 12808,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c0beb1853c814c4137_cantor8-desktop-poster.avif"
+    },
+    {
+      "index": 3,
+      "film": "film-04",
+      "sha256": "2177419f1558aa006a060e294d913d1e8a11ca5d74a359e68012703c099a2a14",
+      "bytes": 5064,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf51d05ada753a66d7_cantor8-mobile-poster.avif"
+    },
+    {
+      "index": 4,
+      "film": "film-05",
+      "sha256": "3a1ebc8b75e2cd6379e9a9906d93b94c366757041a0205c725283ffbb57a479e",
+      "bytes": 7739,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf226293d1eaef43d7_a-better-lou-poster.avif"
+    },
+    {
+      "index": 5,
+      "film": "film-06",
+      "sha256": "ab010b73efbe742ed2175afd45e888b05401f8ee31da4fd611e11cb2fd8b1367",
+      "bytes": 23798,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf1de548607161f8f2_fb-desktop-poster.avif"
+    },
+    {
+      "index": 6,
+      "film": "film-07",
+      "sha256": "38f6e887da136dd1fc91a2a58a66aab804f4cf3e11883c06fcc4af47f8ee757e",
+      "bytes": 13493,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bfbeb1853c814c410f_fb-mobile-poster.avif"
+    },
+    {
+      "index": 7,
+      "film": "film-08",
+      "sha256": "6d7a57d9058441db3fe9bb9abf91c83c589ccb87beb5c7dbea6931940140cff4",
+      "bytes": 23859,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf226293d1eaef43ed_goom-poster.avif"
+    },
+    {
+      "index": 8,
+      "film": "film-09",
+      "sha256": "f7645b06cae5af8d9db8f2ebc3d250a9ce917e208381e73feaca4166f9bf7423",
+      "bytes": 16826,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf1d7d922b5e50e717_monolith-desktop-poster.avif"
+    },
+    {
+      "index": 9,
+      "film": "film-10",
+      "sha256": "cad6c5c1df8ce0f0b763e18cbea80dcc572adb5e1cf140fe116f0ddd363413a8",
+      "bytes": 4629,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466bf40b7d2894d9deda4_monolith-mobile-poster.avif"
+    },
+    {
+      "index": 10,
+      "film": "film-11",
+      "sha256": "5d76f5d73a7482ae01ee1ab2b6dbde7e5be98470ba8ae7e4b765fbabe61e0f5a",
+      "bytes": 9344,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2dc7fbc4421c75c1ca0036_hungry-stop-frame-1.avif"
+    },
+    {
+      "index": 11,
+      "film": "film-12",
+      "sha256": "5d76f5d73a7482ae01ee1ab2b6dbde7e5be98470ba8ae7e4b765fbabe61e0f5a",
+      "bytes": 9344,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2dc7fbc4421c75c1ca0036_hungry-stop-frame-1.avif"
+    },
+    {
+      "index": 12,
+      "film": "film-13",
+      "sha256": "ecbe4107c4977186a07240e253609ce5ba1c3d43406736c9218164a7df58b49e",
+      "bytes": 13520,
+      "sourceURL": "https://cdn.prod.website-files.com/6a1b2e526a4e9824d2a86727/6a2466c0e0bd5b6722504e78_oxi-poster.avif"
+    }
+  ],
+  "sourceMedia": {
+    "wholeRemuxes": 13,
+    "decodedFrames": 10187,
+    "totalMP4Bytes": 95953471,
+    "scope": "Whole public HLS movies remuxed without re-encoding. Decoded-frame identity is retained in the source packet; container timestamps and bytes differ from the original segment streams. Actual source posters are not asserted to equal video frame0."
+  },
+  "selection": {
+    "initialCurrentPublicProject": "Ponder AI",
+    "initialProject": 0,
+    "selectedOlderGalleryOpening": "OXI Instruments",
+    "note": "Current observed source film sequence is a distinct revision from the older OXI comparison page. The original snapshot remains preserved."
+  },
+  "observed": "Only playing film, first Escape effect, Expand/Minimize and wheel-after-minimize were actually observed in prior browser captures. The remaining durations/thresholds below are inspected source-code facts, not new browser interaction tests.",
+  "codeInspectedFacts": {
+    "evidence": "Only playing film, first Escape effect, Expand/Minimize and wheel-after-minimize were actually observed in prior browser captures. The remaining durations/thresholds below are inspected source-code facts, not new browser interaction tests.",
+    "defaultProject": 0,
+    "selection": {
+      "trigger": "Click a source project row; ignore clicks on its actual internal links.",
+      "hover": "Hover changes row styling; source hover guard does not select a different film.",
+      "autoplayMs": 20000,
+      "progress": "Native row progress fills over the same20s clock; project advancement is separate from each film’s own loop duration.",
+      "entrance": {
+        "durationMs": 2000,
+        "rotationDegrees": 4,
+        "scaleFrom": 1.3,
+        "scaleTo": 1,
+        "brightness": 0.78,
+        "fromGrayscalePercent": 100,
+        "fromBlurPixels": 10
+      },
+      "outgoing": {
+        "clipDurationMs": 1000,
+        "translateYTo": -125,
+        "translationDurationMs": 1100
+      },
+      "phoneSwipe": {
+        "enabledBelowWidth": 992,
+        "minVerticalPixels": 48,
+        "maxElapsedMs": 700,
+        "causality": "Code-inspected; actual Phone behavior unverified."
+      }
+    },
+    "panel": {
+      "openMs": 920,
+      "closeMs": 820,
+      "easeOpen": "power3.out",
+      "easeClose": "power3.inOut"
+    },
+    "hold": {
+      "durationMs": 650,
+      "diameterPixels": 56,
+      "cancelMovementPixels": 14,
+      "cancelOn": [
+        "pointerup",
+        "pointercancel",
+        "pointerleave"
+      ],
+      "enabledAtWidth": 992,
+      "action": "Toggle the source immersive project carousel. Its exact perspective, drag response and transition footprint have not been visually audited; do not call a generic tile row an exact recreation."
+    },
+    "escape": {
+      "desktopMinimumWidth": 768,
+      "requiresFineHover": true,
+      "disabledForReducedMotion": true,
+      "debounceMs": 260,
+      "sequence": [
+        "loop-noise",
+        "pixel-grid",
+        "editorial-grid",
+        "cursor-gradient",
+        "infrared",
+        "bug-lenses"
+      ],
+      "pattern": "First press enables the selected effect; next press disables it and advances the effect index. Only first grain/noise effect was visually observed."
+    }
+  },
+  "resourceContract": {
+    "coordinator": "Exact current shared v2 resolver/coordinator/hook, including both-axis display adequacy",
+    "actualWebGLContexts": 0,
+    "sharedLiveAdmission": {
+      "canvas": 1,
+      "preview": 2
+    },
+    "liveOutputPixelCeiling": 1000000,
+    "stillOutputPixelCeiling": 2000000,
+    "canvasMaximumFPS": 12,
+    "previewMaximumFPS": 30,
+    "mediaGate": "Separate per-window exclusive owner; at most active+incoming two HTMLVideoElement sources including initialization. Serial seeks preempt and restore live ownership.",
+    "preparation": "Canvas-off uses only the selected genuine poster. Missing poster or nonzero Poster time prepares one serial real-film seek; it never mounts13 videos.",
+    "cpuSourceFrames": "At most three immutable prepared/snapshot canvases per field, each at most2MP; this source cache is separate from shared output bitmap caches.",
+    "staleWork": "Abort/generation checks cancel stale loads, seeks and incoming films; source elements lose src/load on release; all timers/frame callbacks/listeners/observers release on cleanup."
+  },
+  "editorAndExport": {
+    "canvasMotionDefault": false,
+    "canvasOptIn": "Only the selected film loops in the editor; project auto-advance and native interaction remain Preview-only.",
+    "static": "Exports, thumbnails and default Canvas freeze the selected poster or requested serial seek.",
+    "reducedMotion": "Selected poster and no active movie decoder.",
+    "preview": "Actual selected film loops with source20s project auto-advance, source native UI controls and bounded transitions."
+  },
+  "nativeInterface": {
+    "publicOverrides": 23,
+    "mountedDetails": "Expanded native groups must remain visible:true with opacity0, not visible:false.",
+    "activation": "Native Frame public onTap/onTapStart/onPan/onTapCancel plus caller-first event/info forwarding; alternate tap/click/key channel within350ms is deduplicated without delaying same-channel gestures. Caller defaultPrevented wins.",
+    "sourceCopy": "All project rows, names, biography/contacts, source credits and expanded columns remain native editable Framer content outside film pixels.",
+    "playback": "Prefer showPlayback:false with a native PlaybackButton so the built-in bottom-right button does not overlap the native hold circle."
+  },
+  "intentionalDifferences": [
+    "Canvas2D center-cover composition replaces native source video/CSS composition. Source film raster pixels remain actual media; fitted easing approximates inspected durations.",
+    "Immersive hold toggles an independently fitted0.70scale/−2degree single film plane. Full source carousel perspective, neighbors, drag/wheel dynamics and exact footprint remain unverified and are not reproduced.",
+    "Only the first grain/noise Escape family was visually observed. The other five appearances are independent approximations of inspected source categories.",
+    "Phone swipe thresholds are code-inspected facts, not a controlled source Phone comparison. Responsive utility layout still needs actual Framer/native/source QA.",
+    "The last requestVideoFrameCallback timestamp can lag an immediately paused draw by a source-frame interval; source-fidelity tests keep zero color tolerance and test only the annotated and nearest±one genuine decoded frame. Exact source-frame offset is reported rather than hidden.",
+    "Default Canvas selected-film loop differs from the full Preview project cycle, protecting editor native selection and still controls."
+  ],
+  "syntheticFixtures": {
+    "manifest": "scripts/fixtures/portfolio-film/manifest.json",
+    "builder": "scripts/build-portfolio-film-fixtures.mjs",
+    "purpose": "Owned deterministic FFmpeg testsrc2/hue test patterns for pure-Nix controller/resource/decoder tests only; never product art or source appearance evidence."
+  },
+  "verification": {
+    "local": "Seven strict groups, two Chromium/React layouts and sixteen actual source-film frame comparisons passed on the parent. Current native cancellation and two-field media/resource tests pass on the amendment, including an explicitly delayed HTTP poster response. Each retained report names its actual source SHA; the closed byte proof records inherited drawing evidence.",
+    "actualFramer": "Pending source registration, schema/HOC discovery, native bindings and actual editor reload/Preview behavior QA."
+  },
+  "runtimeAmendment": {
+    "parentSHA256": "629651d0e322a6c71482231269bb2f6495d651c04ffb9602c1adf05c5e19d8e8",
+    "currentSHA256": "f29bf5225c57e22b70b5f1d58d4481fac3f26af5f3cf794f2c6795f4a7f71ce6",
+    "currentBytes": 83495,
+    "changes": [
+      "Frozen native hold cancellation callbacks preserve another active same-window hold.",
+      "A late source poster may enter the bounded source cache but cannot replace a paused snapshot of the same film."
+    ],
+    "proof": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/validation/film-controller/amendment/receipt.json",
+    "unchanged": "All remaining source bytes reconstruct the exact parent after reversing the three declared replacements. Renderer, video player, media gate, video loader, control store, shared coordinator and public controls are unchanged."
+  }
+}
