@@ -140,6 +140,25 @@ Let the layer panel load, observe the selection after copying, then read the
 clipboard. Auto-height rich text can retain placeholder bounds in copied data;
 use the measured editor dimensions and visual inspection when checking clipping.
 
+Code-component File controls receive URLs in React, but native tree edits need
+the actual tool-returned asset references. Read every requested media value back
+after writing it; validate arrays of files separately. A component can compile
+while Framer silently omits unsupported property values. When the representation
+is unclear, set one real value through the native picker and inspect its public
+model before applying the remaining bindings.
+
+Resolve source fonts to genuine available faces. A native picker selection may
+be needed to activate a newly uploaded custom face. Verify the rendered paragraph's
+family, weight, tracking and line count in Preview: a requested font name does
+not prove that Framer avoided a fallback. Preserve source positions while giving
+single-word text boxes a documented allowance for native layout rounding.
+
+Use supported image-fitting properties. If the public model does not expose Fit,
+use an image frame with the intended fitted aspect ratio or set Fit in the native
+editor; dropping a contain instruction can crop the source graphic. Test the
+whole document extent too: sticky headings need a suitable overflow ancestor,
+and the final animation state must be reachable before the prototype ends.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live
