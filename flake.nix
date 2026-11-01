@@ -177,11 +177,15 @@
             export MONARCHIC_BLEIBT_OPENING_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-opening
           '';
-          source-ajedrez = mkWebsiteCheck "source-ajedrez" ''
+          source-ajedrez = (mkWebsiteCheck "source-ajedrez" ''
             export MONARCHIC_AJEDREZ_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-ajedrez-sequence
             pnpm run check:source-ajedrez-browser
-          '';
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           source-cantor-instrument = (mkWebsiteCheck "source-cantor-instrument" ''
             export MONARCHIC_CANTOR_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-cantor-instrument
