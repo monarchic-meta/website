@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "OH-012",
+  "mode": "axialpassage",
+  "title": "Axial Passage",
+  "family": "Geometric identity",
+  "classification": "ORIGINAL COMPOSITION / ROUND02",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 900,
+  "background": "#101112",
+  "path": "/playgrounds/original-compositions/heroes/round-02/axialpassage",
+  "artwork": {
+    "sourcePath": "docs/design-studies/code-components/OriginalHeroRoundTwo.tsx",
+    "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
+    "sourceBytes": 62247,
+    "instanceProps": {
+      "study": "axialpassage",
+      "animate": true,
+      "canvasMotion": false,
+      "speed": 1,
+      "stillTime": 3,
+      "artworkScale": 1,
+      "detail": 1,
+      "motionSpan": 1,
+      "ditherPitch": 3.5,
+      "interactive": true,
+      "customColors": true,
+      "background": "#101112",
+      "primary": "#eeeeea",
+      "ink": "#f7f7f2",
+      "accent": "#898d90",
+      "showPlayback": true
+    }
+  },
+  "influenceIDs": [
+    "HERO-003",
+    "HERO-009",
+    "HERO-015"
+  ],
+  "parts": [
+    {
+      "key": "full-scene",
+      "parent": "stage",
+      "type": "LiveArtSlot",
+      "bindingKey": "original-round-two",
+      "sourcePath": "OriginalHeroRoundTwo.tsx",
+      "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
+      "sourceBytes": 62247,
+      "props": {
+        "study": "axialpassage",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 3,
+        "artworkScale": 1,
+        "detail": 1,
+        "motionSpan": 1,
+        "ditherPitch": 3.5,
+        "interactive": true,
+        "customColors": true,
+        "background": "#101112",
+        "primary": "#eeeeea",
+        "ink": "#f7f7f2",
+        "accent": "#898d90",
+        "showPlayback": true
+      },
+      "attrs": {
+        "name": "OH-012 / live axialpassage / full opening surface",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px"
+      },
+      "phone": {
+        "width": "390px",
+        "height": "900px"
+      }
+    },
+    {
+      "key": "nav-products",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / nav-products",
+        "text": "Products",
+        "position": "absolute",
+        "left": "50px",
+        "top": "42px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "nav-solutions",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / nav-solutions",
+        "text": "Solutions",
+        "position": "absolute",
+        "left": "155px",
+        "top": "42px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "nav-research",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / nav-research",
+        "text": "Research",
+        "position": "absolute",
+        "left": "260px",
+        "top": "42px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "try",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / try",
+        "text": "Try",
+        "position": "absolute",
+        "left": "1290px",
+        "top": "42px",
+        "width": "80px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://app.monarchic.io"
+        }
+      },
+      "phone": {
+        "left": "280px",
+        "top": "20px",
+        "width": "52px",
+        "fontSize": "14px",
+        "lineHeight": "18px"
+      }
+    },
+    {
+      "key": "menu",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / menu",
+        "text": "☰",
+        "position": "absolute",
+        "left": "1374px",
+        "top": "41px",
+        "width": "32px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "19px",
+        "lineHeight": "20.330000000000002px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "344px",
+        "top": "19px",
+        "width": "28px",
+        "fontSize": "20px",
+        "lineHeight": "22px"
+      }
+    },
+    {
+      "key": "brand",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / brand",
+        "text": "Monarchic",
+        "position": "absolute",
+        "left": "45px",
+        "top": "218px",
+        "width": "630px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "81px",
+        "lineHeight": "86.67px",
+        "fontWeight": 500,
+        "textColor": "#f7f7f2",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "655px",
+        "width": "360px",
+        "fontSize": "48px",
+        "lineHeight": "55px"
+      }
+    },
+    {
+      "key": "purpose",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / purpose",
+        "text": "Research &\ndevelopment.",
+        "position": "absolute",
+        "left": "50px",
+        "top": "337px",
+        "width": "580px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "46px",
+        "lineHeight": "49.220000000000006px",
+        "fontWeight": 500,
+        "textColor": "#eeeeea",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "20px",
+        "top": "724px",
+        "width": "330px",
+        "fontSize": "28px",
+        "lineHeight": "33px"
+      }
+    },
+    {
+      "key": "scope",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-012 / scope",
+        "text": "AI SYSTEMS / INDEPENDENT R&D",
+        "position": "absolute",
+        "left": "52px",
+        "top": "910px",
+        "width": "700px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#898d90",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "20px",
+        "top": "833px",
+        "width": "340px",
+        "fontSize": "11px",
+        "lineHeight": "16px"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "ORIGINAL COMPOSITION / OH-012 / ROUND02",
+    "title": "Axial Passage",
+    "influences": "HERO-003 / HERO-009 / HERO-015. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+    "limits": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+    "sourcePaths": [
+      "src/lib/productDetails.ts",
+      "src/lib/explicitmemBenchmark.ts",
+      "src/lib/mcpResearch.ts",
+      "src/pages/research/index.astro",
+      "src/components/SystemField.astro",
+      "docs/design-studies/code-components/assets/monarchic-logo.svg"
+    ]
+  }
+}

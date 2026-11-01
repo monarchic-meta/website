@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "id": "OH-010",
+  "mode": "pathfield",
+  "title": "Pathfield",
+  "family": "Information fields",
+  "classification": "ORIGINAL COMPOSITION / ROUND02",
+  "width": 1440,
+  "height": 1000,
+  "phoneWidth": 390,
+  "phoneHeight": 900,
+  "background": "#0c1110",
+  "path": "/playgrounds/original-compositions/heroes/round-02/pathfield",
+  "artwork": {
+    "sourcePath": "docs/design-studies/code-components/OriginalHeroRoundTwo.tsx",
+    "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
+    "sourceBytes": 62247,
+    "instanceProps": {
+      "study": "pathfield",
+      "animate": true,
+      "canvasMotion": false,
+      "speed": 1,
+      "stillTime": 3,
+      "artworkScale": 1,
+      "detail": 1,
+      "motionSpan": 1,
+      "ditherPitch": 3.5,
+      "interactive": true,
+      "customColors": true,
+      "background": "#0c1110",
+      "primary": "#c5d8be",
+      "ink": "#f1f2e9",
+      "accent": "#d7fb78",
+      "showPlayback": true
+    }
+  },
+  "influenceIDs": [
+    "HERO-007",
+    "HERO-012",
+    "HERO-010"
+  ],
+  "parts": [
+    {
+      "key": "full-scene",
+      "parent": "stage",
+      "type": "LiveArtSlot",
+      "bindingKey": "original-round-two",
+      "sourcePath": "OriginalHeroRoundTwo.tsx",
+      "sourceSHA256": "479dbd3230bdac6458b5390fdc73aa1b6f14b0481565631258603f2a3ff7d127",
+      "sourceBytes": 62247,
+      "props": {
+        "study": "pathfield",
+        "animate": true,
+        "canvasMotion": false,
+        "speed": 1,
+        "stillTime": 3,
+        "artworkScale": 1,
+        "detail": 1,
+        "motionSpan": 1,
+        "ditherPitch": 3.5,
+        "interactive": true,
+        "customColors": true,
+        "background": "#0c1110",
+        "primary": "#c5d8be",
+        "ink": "#f1f2e9",
+        "accent": "#d7fb78",
+        "showPlayback": true
+      },
+      "attrs": {
+        "name": "OH-010 / live pathfield / full opening surface",
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1440px",
+        "height": "1000px"
+      },
+      "phone": {
+        "width": "390px",
+        "height": "900px"
+      }
+    },
+    {
+      "key": "nav-products",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / nav-products",
+        "text": "Products",
+        "position": "absolute",
+        "left": "895px",
+        "top": "36px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "nav-solutions",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / nav-solutions",
+        "text": "Solutions",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "36px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/products"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "nav-research",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / nav-research",
+        "text": "Research",
+        "position": "absolute",
+        "left": "1105px",
+        "top": "36px",
+        "width": "100px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://www.monarchic.io/research"
+        }
+      },
+      "phone": {
+        "visible": false
+      }
+    },
+    {
+      "key": "try",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / try",
+        "text": "Try",
+        "position": "absolute",
+        "left": "1290px",
+        "top": "36px",
+        "width": "80px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "14px",
+        "lineHeight": "14.98px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0,
+        "link": {
+          "href": "https://app.monarchic.io"
+        }
+      },
+      "phone": {
+        "left": "280px",
+        "top": "20px",
+        "width": "52px",
+        "fontSize": "14px",
+        "lineHeight": "18px"
+      }
+    },
+    {
+      "key": "menu",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / menu",
+        "text": "☰",
+        "position": "absolute",
+        "left": "1374px",
+        "top": "35px",
+        "width": "32px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "19px",
+        "lineHeight": "20.330000000000002px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "344px",
+        "top": "19px",
+        "width": "28px",
+        "fontSize": "20px",
+        "lineHeight": "22px"
+      }
+    },
+    {
+      "key": "brand",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / brand",
+        "text": "Monarchic",
+        "position": "absolute",
+        "left": "38px",
+        "top": "30px",
+        "width": "390px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "32px",
+        "lineHeight": "34.24px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "16px",
+        "width": "220px",
+        "fontSize": "25px",
+        "lineHeight": "29px"
+      }
+    },
+    {
+      "key": "purpose",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / purpose",
+        "text": "AI RESEARCH & DEVELOPMENT",
+        "position": "absolute",
+        "left": "40px",
+        "top": "79px",
+        "width": "460px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "13px",
+        "lineHeight": "13.91px",
+        "fontWeight": 500,
+        "textColor": "#c5d8be",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "51px",
+        "width": "260px",
+        "fontSize": "10px",
+        "lineHeight": "15px"
+      }
+    },
+    {
+      "key": "memory-anchor",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / memory-anchor",
+        "text": "Memory",
+        "position": "absolute",
+        "left": "1000px",
+        "top": "135px",
+        "width": "350px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "65px",
+        "lineHeight": "69.55px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "205px",
+        "top": "173px",
+        "width": "175px",
+        "fontSize": "37px",
+        "lineHeight": "42px"
+      }
+    },
+    {
+      "key": "reasoning-anchor",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / reasoning-anchor",
+        "text": "Reasoning",
+        "position": "absolute",
+        "left": "65px",
+        "top": "350px",
+        "width": "500px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "61px",
+        "lineHeight": "65.27000000000001px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "331px",
+        "width": "230px",
+        "fontSize": "39px",
+        "lineHeight": "43px"
+      }
+    },
+    {
+      "key": "verification-anchor",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / verification-anchor",
+        "text": "Verification",
+        "position": "absolute",
+        "left": "985px",
+        "top": "646px",
+        "width": "430px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "52px",
+        "lineHeight": "55.64px",
+        "fontWeight": 500,
+        "textColor": "#c5d8be",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "175px",
+        "top": "467px",
+        "width": "210px",
+        "fontSize": "28px",
+        "lineHeight": "34px"
+      }
+    },
+    {
+      "key": "identity",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / identity",
+        "text": "Intelligence,\nin context.",
+        "position": "absolute",
+        "left": "40px",
+        "top": "710px",
+        "width": "900px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "100px",
+        "lineHeight": "107px",
+        "fontWeight": 500,
+        "textColor": "#f1f2e9",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "18px",
+        "top": "655px",
+        "width": "360px",
+        "fontSize": "48px",
+        "lineHeight": "51px"
+      }
+    },
+    {
+      "key": "scope",
+      "parent": "stage",
+      "type": "RichTextNode",
+      "attrs": {
+        "name": "OH-010 / scope",
+        "text": "Research and software for AI systems that work in context.",
+        "position": "absolute",
+        "left": "44px",
+        "top": "938px",
+        "width": "870px",
+        "height": "auto",
+        "fontName": "Space Grotesk",
+        "fontSize": "16px",
+        "lineHeight": "17.12px",
+        "fontWeight": 500,
+        "textColor": "#c5d8be",
+        "paragraphSpacing": 0
+      },
+      "phone": {
+        "left": "20px",
+        "top": "827px",
+        "width": "345px",
+        "fontSize": "12px",
+        "lineHeight": "18px"
+      }
+    }
+  ],
+  "reviewFooter": {
+    "classification": "ORIGINAL COMPOSITION / OH-010 / ROUND02",
+    "title": "Pathfield",
+    "influences": "HERO-007 / HERO-012 / HERO-010. Independent composition; owned mark only in OH-012, OH-016 and OH-018.",
+    "limits": "Round02 full-opening candidate; first six retain pure lanes and the last three deliberately combine them. Actual vocabulary and report/diagram fragments are taken from named repository sources. No live operational state, new publication or cross-dataset performance claim is implied.",
+    "sourcePaths": [
+      "src/lib/productDetails.ts",
+      "src/lib/explicitmemBenchmark.ts",
+      "src/lib/mcpResearch.ts",
+      "src/pages/research/index.astro",
+      "src/components/SystemField.astro",
+      "docs/design-studies/code-components/assets/monarchic-logo.svg"
+    ]
+  }
+}

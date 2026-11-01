@@ -1,5 +1,11 @@
 # Original Monarchic hero candidates
 
+This is the retained first round. The owner's review found that its three
+directions shared too much of the same graphic vocabulary. The subsequent
+[round two](../original-heroes-round-two/README.md) separates the pure directions
+before combining them and gives each new hero its own regular Web page. Keep
+these earlier Design studies as comparison material.
+
 These nine independently composed openings follow the completed
 [eighteen source recreations](../hero-recreation-complete-handoff.md). They are
 **Original compositions**: six family explorations precede three syntheses.
