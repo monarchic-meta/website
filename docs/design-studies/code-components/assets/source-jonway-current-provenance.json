@@ -53,8 +53,8 @@
   ],
   "check": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
-    "sha256": "b4735e1d83fd75f2e02b981b2c46972c39f8bf8ffe59f4449a589161e0a6f503",
-    "bytes": 27799,
+    "sha256": "97642b2946a3cf6616c0ea1504dd158010324f39fbe47efc78df2ad8b5057a8f",
+    "bytes": 29752,
     "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
     "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
   },
@@ -69,9 +69,9 @@
     "verifiedSourceSHA256": "6d2b267aa8dea9684aea72a1195cbfe7c47605bf49a9bb0e5dd9e51ef121fe54",
     "applicability": "Genuine media/runtime41 proof was captured before the explicit generic-props correction. Its complete emitted JavaScript is byte-identical to the corrected source, as separately pinned. Current strict props and full browser check are rerun before installation.",
     "currentLockedTypeAndBrowserProof": {
-      "path": "/nix/store/1f6v6xhjdny06192j87zd1lhcbw0204v-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
-      "sha256": "676067eb0a281e67b50d4abcbec250df86360d5fda8365d071abf50a72247b1c",
-      "bytes": 5825,
+      "path": "/nix/store/qmh9gmxdy1y9gmidv83y9bka1njgci1z-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
+      "sha256": "e64c4ab07027ede012b22220d9511749b3b7a3bc0761eb43a968f2a7137caa7e",
+      "bytes": 6245,
       "checks": 41,
       "sourcePinsExact": true
     }

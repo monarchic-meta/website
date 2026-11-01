@@ -5,8 +5,8 @@
   "policy": "Current original is the target. Preserve historical gallery-based pages and credits as separate comparisons. The new recreation stays in Source inspiration.",
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
-    "sha256": "5fde3fcbec56312d9a78f388d12abce2a01def9ea282bd6e52ca7be2dfe56155",
-    "bytes": 15512,
+    "sha256": "22827a5f9a682690b6f834b89c4c9299b90f3696378aff3698d6fae09782351e",
+    "bytes": 15632,
     "exports": [
       "SourceMezmoTerminal"
     ]
@@ -50,8 +50,8 @@
   ],
   "check": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
-    "sha256": "b4735e1d83fd75f2e02b981b2c46972c39f8bf8ffe59f4449a589161e0a6f503",
-    "bytes": 27799,
+    "sha256": "97642b2946a3cf6616c0ea1504dd158010324f39fbe47efc78df2ad8b5057a8f",
+    "bytes": 29752,
     "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
     "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
   },
@@ -64,12 +64,14 @@
     "actualFramerSaved": false,
     "actualFramerPreview": false,
     "currentLockedTypeAndBrowserProof": {
-      "path": "/nix/store/1f6v6xhjdny06192j87zd1lhcbw0204v-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
-      "sha256": "676067eb0a281e67b50d4abcbec250df86360d5fda8365d071abf50a72247b1c",
-      "bytes": 5825,
+      "path": "/nix/store/qmh9gmxdy1y9gmidv83y9bka1njgci1z-monarchic-website-source-current-originals-0.0.1/evidence/result.json",
+      "sha256": "e64c4ab07027ede012b22220d9511749b3b7a3bc0761eb43a968f2a7137caa7e",
+      "bytes": 6245,
       "checks": 41,
       "sourcePinsExact": true
-    }
+    },
+    "verifiedSourceSHA256": "5fde3fcbec56312d9a78f388d12abce2a01def9ea282bd6e52ca7be2dfe56155",
+    "applicability": "Genuine media41 proof precedes a structural container-query style annotation only. Runtime JavaScript is byte-identical; strict older CSS and current browser checks are rerun."
   },
   "sourceComparison": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/candidate-comparison-method.json",
@@ -83,9 +85,21 @@
   ],
   "remainingGates": [
     "Root final source-comparison review",
-    "Genuine registered Framer public export IDs and native source font binding",
+    "Existing CobHlqS source-only CSS typing correction, same default ID and five controls; genuine native font binding",
     "Distinct regular current-original page creation, save and editor reload",
     "Actual Framer Desktop/Phone inputs, source media paint, pause, reverse and responsive state checks"
   ],
-  "connectedDesktopOrIABUsed": false
+  "connectedDesktopOrIABUsed": false,
+  "typeOnlyCorrection": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/type-only-fix-304/lineage.json",
+    "sha256": "d5ff3c8922e70a2e4d269fb381495cbc2481b4bc26cad567c467111799246bd8",
+    "bytes": 1861,
+    "actualFramerReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/three-current-source-window-302/completion-304-output.json",
+      "sha256": "7f278fac503fea7c1e676f428b9ffd612e4ed92259fb05918c5a10909055cdeb",
+      "bytes": 238826
+    },
+    "retainedCodeFileID": "codeFile/CobHlqS",
+    "emittedJavaScriptIdentical": true
+  }
 }

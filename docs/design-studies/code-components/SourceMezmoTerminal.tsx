@@ -10,6 +10,7 @@ import { addPropertyControls, ControlType, RenderTarget, useIsStaticRenderer } f
 // Scenario prose is independently summarized; source ANSI brand is represented
 // as editable DOM glyph cells. Exact original transcript/typing times unclaimed.
 
+type ContainerStyle = React.CSSProperties & { containerType?: "inline-size"; containerName?: string }
 type Props = { animate?: boolean; canvasMotion?: boolean; paused?: boolean; stillStage?: number; showPlayback?: boolean; style?: React.CSSProperties }
 type Row = { at: number; text: string; color?: string }
 const colors = { text: "#c6d1d8", muted: "#88959e", yellow: "#ffe134", purple: "#e66de4", green: "#9ee84c", cyan: "#6ed4dd" }
@@ -107,7 +108,7 @@ export default function SourceMezmoTerminal({ animate = true, canvasMotion = fal
     }
     const history = Array.from({ length: effectiveStage }, (_, index) => index + 1)
     return <div ref={setHost} onClick={(event: React.MouseEvent<HTMLDivElement>) => { if (!frozen && !(event.target instanceof Element && event.target.closest("button,input,[role=dialog]"))) inputRef.current?.focus() }} data-source-reference="HERO-012" data-source-current-original="https://www.mezmo.com/" data-mezmo-stage={effectiveStage} data-mezmo-time={effectiveTime.toFixed(3)} data-mezmo-paused={held || paused} data-mezmo-visible={visible} data-mezmo-frozen={frozen} data-mezmo-stream={stream}
-        style={{ ...style, position: "relative", width: style?.width ?? "100%", height: style?.height ?? 522, minWidth: 0, color: colors.text, background: "#0b0e11", borderRadius: 6, overflow: "hidden", boxShadow: "0 0 10px #a484c7", font: "11px/1.48 ui-monospace,SFMono-Regular,Consolas,monospace", letterSpacing: ".055em", containerType: "inline-size", containerName: "source-mezmo" }}>
+        style={{ ...style, position: "relative", width: style?.width ?? "100%", height: style?.height ?? 522, minWidth: 0, color: colors.text, background: "#0b0e11", borderRadius: 6, overflow: "hidden", boxShadow: "0 0 10px #a484c7", font: "11px/1.48 ui-monospace,SFMono-Regular,Consolas,monospace", letterSpacing: ".055em", containerType: "inline-size", containerName: "source-mezmo" } as ContainerStyle}>
         <style>{"@container source-mezmo (max-width: 600px){.source-mezmo-wordmark{display:none}}"}</style>
         <div aria-hidden="true" style={{ height: 23, display: "flex", alignItems: "center", gap: 6, paddingLeft: 7, background: "#bdbdbd" }}>{["#ff4c64", "#ffcb28", "#00d832"].map(color => <span key={color} style={{ width: 10, height: 10, borderRadius: "50%", border: "1px solid #0003", background: color }} />)}</div>
         <div ref={scrollRef} role="log" aria-label="AURA prerecorded study output" aria-live="polite" aria-relevant="additions" style={{ height: "calc(100% - 62px)", overflow: "auto", padding: "25px 15px 15px", overflowWrap: "anywhere", scrollbarWidth: "thin" }}>
