@@ -264,6 +264,14 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-portfolio-effects = (mkWebsiteCheck "source-portfolio-effects" ''
+            export MONARCHIC_PORTFOLIO_EFFECTS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-portfolio-effects
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''
             export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
             pnpm run check:source-hero-journey-study
