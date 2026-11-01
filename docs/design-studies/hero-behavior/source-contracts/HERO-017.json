@@ -281,13 +281,19 @@
       "Rendered source Akzidenz-Grotesk Pro Medium face is 500 / 80px / 70.4px with -3.96006px tracking.",
       "All four genuine source project images load at their 1011×680 natural dimensions.",
       "Sticky Work and terminal All Works remain present. A real native image click pins project 6.",
-      "The fitted Phone menu opens 350px cards at x5 inside the 360px client area and closes."
+      "The fitted Phone menu opens 350px cards at x5 inside the 360px client area and closes.",
+      "A fresh Preview run pinned native project 13, then a direct image activation released it to the small project field; public DOM and screenshots confirm pinned 13 → -1."
     ],
     "limits": [
-      "Second-click unpin dispatch timed out in browser tooling; no settled Framer unpin is claimed. Local native-input tests cover it.",
+      "A wrapper-targeted release attempt did not change selection. The subsequent direct image click reported an input acknowledgment timeout, but the fresh settled DOM confirmed release; that input was not replayed. This verifies pin/release within the recorded target sequence, not every pointer path.",
       "CPU fluid, CSS3D projection, intermediate mark morph and Phone composition are independently fitted.",
       "Native model text metrics initially disagreed with rendered inline styles; the intended native typography was reapplied and actual Preview checked.",
       "These bounded checks do not establish exact historical interaction or pixel identity."
-    ]
+    ],
+    "nativePinUnpinEvidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO017-actual-pin-unpin-proof.json",
+      "bytes": 2227,
+      "sha256": "49d4ef78684202d303c801836ceab38131ff05218d858cbe42752da2ee3c2585"
+    }
   }
 }
