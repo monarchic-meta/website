@@ -1,0 +1,1644 @@
+{
+  "referenceID": "HERO-011",
+  "sourceURL": "https://www.jonway.studio/",
+  "capturedAt": "2026-11-01",
+  "policy": "Current original is the target. Preserve historical gallery-based pages and credits as separate comparisons. The new recreation stays in Source inspiration.",
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceJonWayAccordion.tsx",
+    "sha256": "6d2b267aa8dea9684aea72a1195cbfe7c47605bf49a9bb0e5dd9e51ef121fe54",
+    "bytes": 173300,
+    "exports": [
+      "SourceJonWayAccordion",
+      "SourceJonWayProjectMark",
+      "withJonWayExperience",
+      "withJonWayPause"
+    ]
+  },
+  "sourcePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-plan.json",
+    "sha256": "50c1289eabb6a891bcce15dfa7191d821d72b0b93119da8b00d6659248972da3",
+    "bytes": 7609
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/native-recipe.json",
+    "sha256": "d48db2fd5d071ffa1ff3af4d8894509423f01818880e81bc9011d2d0bdcd7a03",
+    "bytes": 7487
+  },
+  "fontEvidence": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-fonts.json",
+    "sha256": "770c86f48827441feb7685c1b25e15dba00f85a6f6d78439610969fd2020f783",
+    "bytes": 2592
+  },
+  "actualSourceEvidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/method.json",
+      "sha256": "e3e1590a73d2b81bc7fda66f89f1af0b1f713141ba537c813ad2bb36b9eb43b9",
+      "bytes": 518
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/behavior.json",
+      "sha256": "45ba39d14db2abf9edf545563972677f18da815aa3c2cbfbf46927ee21d8735a",
+      "bytes": 4151966
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/responsive-followup.json",
+      "sha256": "a0136ce5fba32701aa7f17ffbbccd2d4548333c9d7b7d4e380c85e062e91ca6a",
+      "bytes": 190574
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-response.html",
+      "sha256": "a9dbf9b3cae3867d083d5333a9f2bfee56d6944102f5e6aa39aaf58ba77cd2cf",
+      "bytes": 866511
+    }
+  ],
+  "check": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
+    "sha256": "8331767804c68ea9f514bc31c3fc442357fed1dd3d694947342d5e74d7c2c7e8",
+    "bytes": 25738,
+    "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
+    "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
+  },
+  "localProof": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/implementation/focused-browser-result.json",
+    "sha256": "15af531fad50a7a132bcf046cae4100bd4b0ab31220c14a2a56545184d1901cd",
+    "bytes": 5712,
+    "checks": 41,
+    "retainedSourceMedia": true,
+    "actualFramerSaved": false,
+    "actualFramerPreview": false
+  },
+  "sourceComparison": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/candidate-comparison-method.json",
+    "sha256": "f9345cdaa661806024bfb569c768132f466832d2d22a47eccfc3685778b26321",
+    "bytes": 557
+  },
+  "intentionalDifferences": [
+    "One DOM field and one selected-photo Canvas2D surface replace the original shared WebGL2 renderer and 200 presentation canvases; at most six owned selected-photo references.",
+    "Entry uses the observed 0.1 s child duration and 0.04 s stagger, then cover-to-contain hover de-pixelation over 0.6 s. Fractional entry scale samples use the nearest retained integer-scale material; easing and sampling are independently fitted.",
+    "The genuine 200-frame mark retains original 96×120 visible RGBA pixels in two 1.152 MP sheets, with no downsampling. Playback starts in logical active time after decode and respects pause/offscreen/static rendering.",
+    "Native header, linked project shell, footer, brand artwork and credits remain separate editable layers. Typography must be bound through genuine Framer native font selection."
+  ],
+  "remainingGates": [
+    "Root final source-comparison review",
+    "Genuine registered Framer public export IDs and native source font binding",
+    "Distinct regular current-original page creation, save and editor reload",
+    "Actual Framer Desktop/Phone inputs, source media paint, pause, reverse and responsive state checks"
+  ],
+  "connectedDesktopOrIABUsed": false,
+  "gallery": {
+    "manifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/gallery-200-assets.json",
+      "sha256": "485af56d3532e3ca0893d52cf096bdd75971cb982cc2ec92273702c26a415b60",
+      "bytes": 133618
+    },
+    "distinctPhotos": 200,
+    "rows": [
+      {
+        "index": 0,
+        "sourceKey": "c5d3b2dc-f700-4cbf-8282-53b79a7659ce",
+        "url": "https://www.jonway.studio/assets/c5d3b2dc-f700-4cbf-8282-53b79a7659ce-768.jpg",
+        "sha256": "eb2ece402e96374fa5fb943d4c927a16157eb670ca8706ef7c65a27c94739476",
+        "bytes": 23189
+      },
+      {
+        "index": 1,
+        "sourceKey": "f8330ea5-333d-4838-8aa8-4e087c993578",
+        "url": "https://www.jonway.studio/assets/f8330ea5-333d-4838-8aa8-4e087c993578-768.jpg",
+        "sha256": "7d1f8e44159335865240bd6df1a5eacc39c6be7426573a9ce003d831adfbc1d1",
+        "bytes": 25046
+      },
+      {
+        "index": 2,
+        "sourceKey": "794c31de-26da-41bb-9342-05f9f875eac1",
+        "url": "https://www.jonway.studio/assets/794c31de-26da-41bb-9342-05f9f875eac1-768.jpg",
+        "sha256": "4c54ae83fb4f7f762eaaf24b694607c5af9e413f6e1ee4cb74c6a4a0de7f8c0b",
+        "bytes": 59618
+      },
+      {
+        "index": 3,
+        "sourceKey": "3591ed50-84d2-4151-b8ea-6b970f2f983d",
+        "url": "https://www.jonway.studio/assets/3591ed50-84d2-4151-b8ea-6b970f2f983d-768.jpg",
+        "sha256": "e8ec961cab981812698e6aedbd87f1a9477303e6a4b0acd13400cc229e1f4321",
+        "bytes": 39281
+      },
+      {
+        "index": 4,
+        "sourceKey": "4f5a5b86-adb5-4696-8b13-772ee4f7fedb",
+        "url": "https://www.jonway.studio/assets/4f5a5b86-adb5-4696-8b13-772ee4f7fedb-768.jpg",
+        "sha256": "d0b79c2573c0c90ab4905bf304bb2df517e8ff0909961a06e752e342306930df",
+        "bytes": 57045
+      },
+      {
+        "index": 5,
+        "sourceKey": "b3dbf61b-04ac-44cf-9e40-802dedf5577a",
+        "url": "https://www.jonway.studio/assets/b3dbf61b-04ac-44cf-9e40-802dedf5577a-768.jpg",
+        "sha256": "bd706c9377dc5bb7c33c6b4743b69422877de87950b9391cfcd209ae65c76401",
+        "bytes": 8812
+      },
+      {
+        "index": 6,
+        "sourceKey": "b736cb8c-9729-4a62-9632-1012b0e7e0b9",
+        "url": "https://www.jonway.studio/assets/b736cb8c-9729-4a62-9632-1012b0e7e0b9-768.jpg",
+        "sha256": "859d98e439285e673ef4f3b1d9fcf4e49de55d2c9d0313d62bc4fe16f2582635",
+        "bytes": 31250
+      },
+      {
+        "index": 7,
+        "sourceKey": "7c5427f7-11d6-45f4-b053-ae0b1823543b",
+        "url": "https://www.jonway.studio/assets/7c5427f7-11d6-45f4-b053-ae0b1823543b-768.jpg",
+        "sha256": "e899400c4d71f08aebf5e34a375520a4e4bb7ffe41f516d94bc0e2b367e3b73f",
+        "bytes": 11134
+      },
+      {
+        "index": 8,
+        "sourceKey": "44d743f8-e221-4ed1-9d61-44cd008cf754",
+        "url": "https://www.jonway.studio/assets/44d743f8-e221-4ed1-9d61-44cd008cf754-768.jpg",
+        "sha256": "60c568b46d4fa77c5cd2c51e17d01bba383654c3a99ea7f11ee81c07f703740f",
+        "bytes": 43201
+      },
+      {
+        "index": 9,
+        "sourceKey": "8c0e8ba8-64fd-4dc3-b9f2-b3a7978a0073",
+        "url": "https://www.jonway.studio/assets/8c0e8ba8-64fd-4dc3-b9f2-b3a7978a0073-768.jpg",
+        "sha256": "b49e827e443bd58820187b605feb33585dc1b9a15be9d9a8c5477c20d2dbfe44",
+        "bytes": 25202
+      },
+      {
+        "index": 10,
+        "sourceKey": "6b3cf622-afac-48ca-bd66-89b34633d66b",
+        "url": "https://www.jonway.studio/assets/6b3cf622-afac-48ca-bd66-89b34633d66b-768.jpg",
+        "sha256": "64087c8e8207fda2b59192f960bc1bf03f26813eed4f38592da34aaefcf93c68",
+        "bytes": 7394
+      },
+      {
+        "index": 11,
+        "sourceKey": "9d986be5-5744-470e-82c5-b2b858c7e8d9",
+        "url": "https://www.jonway.studio/assets/9d986be5-5744-470e-82c5-b2b858c7e8d9-768.jpg",
+        "sha256": "b7594fb9558bc8dab922e89560bf591b6ddfcf20e67fb39e4d13b4e7fb1ca1e1",
+        "bytes": 37478
+      },
+      {
+        "index": 12,
+        "sourceKey": "66bce54a-2448-4543-8bfb-14658d4fc8d9",
+        "url": "https://www.jonway.studio/assets/66bce54a-2448-4543-8bfb-14658d4fc8d9-768.jpg",
+        "sha256": "a5fc083ae59e916526cf985d04fb3d550b0c3d5f6a9c2de3a43ace08fa436bda",
+        "bytes": 56216
+      },
+      {
+        "index": 13,
+        "sourceKey": "b728bea8-74c2-49eb-938c-6e8c54becb63",
+        "url": "https://www.jonway.studio/assets/b728bea8-74c2-49eb-938c-6e8c54becb63-768.jpg",
+        "sha256": "025080ed0fae4c18ffeb93d27cd526a9c640f1bccaa42a9cca3bcaf11acdf75f",
+        "bytes": 71282
+      },
+      {
+        "index": 14,
+        "sourceKey": "7087fd71-e757-498f-a431-1d070d647ebe",
+        "url": "https://www.jonway.studio/assets/7087fd71-e757-498f-a431-1d070d647ebe-768.jpg",
+        "sha256": "dc758eab93f427af3acbcc2b8c45a37352726e314b3ee6e76fa63bbb32fdeefa",
+        "bytes": 56517
+      },
+      {
+        "index": 15,
+        "sourceKey": "738c7a9a-61f4-4a82-a5f6-4952f1beb38e",
+        "url": "https://www.jonway.studio/assets/738c7a9a-61f4-4a82-a5f6-4952f1beb38e-768.jpg",
+        "sha256": "c48a12c83b8b2c7016589e8430a84246553b49796f6c6e2ce24b16d9a4830304",
+        "bytes": 92811
+      },
+      {
+        "index": 16,
+        "sourceKey": "eafbb7ae-abf3-473d-818e-83f08c53c834",
+        "url": "https://www.jonway.studio/assets/eafbb7ae-abf3-473d-818e-83f08c53c834-768.jpg",
+        "sha256": "fe1e9d027d9ceff3085e816556a37719b56a291fb5287a374825dd0d7d9196b0",
+        "bytes": 74328
+      },
+      {
+        "index": 17,
+        "sourceKey": "5b0d278c-7f16-4fe8-84bd-39545b42fdbf",
+        "url": "https://www.jonway.studio/assets/5b0d278c-7f16-4fe8-84bd-39545b42fdbf-768.jpg",
+        "sha256": "a39a7c5c097c6ce3884a13f1c6cb029a79c997df471df6fb93ed6d06c2271ccf",
+        "bytes": 59328
+      },
+      {
+        "index": 18,
+        "sourceKey": "89d58cff-c163-4f45-b61f-b54b1e9fa1e6",
+        "url": "https://www.jonway.studio/assets/89d58cff-c163-4f45-b61f-b54b1e9fa1e6-768.jpg",
+        "sha256": "947e6c063e0fce44af9427da7233062be37bc603b5f2ea605631f7b6837635b0",
+        "bytes": 126602
+      },
+      {
+        "index": 19,
+        "sourceKey": "aed9c856-7509-40c3-8985-a45099d552e9",
+        "url": "https://www.jonway.studio/assets/aed9c856-7509-40c3-8985-a45099d552e9-768.jpg",
+        "sha256": "dcfae43e262b0c72566b22e0956e9eaa39ecb4407f5307ae8968695b35fba4dc",
+        "bytes": 15060
+      },
+      {
+        "index": 20,
+        "sourceKey": "03bc80a9-f2ce-45c3-8439-ed67d24632a7",
+        "url": "https://www.jonway.studio/assets/03bc80a9-f2ce-45c3-8439-ed67d24632a7-768.jpg",
+        "sha256": "03f59c39967e73bf27f96a6a84b1f359c610083185166d4793639eeb685811b9",
+        "bytes": 76434
+      },
+      {
+        "index": 21,
+        "sourceKey": "e1125abc-629b-4c1f-8674-603a376b1cd1",
+        "url": "https://www.jonway.studio/assets/e1125abc-629b-4c1f-8674-603a376b1cd1-768.jpg",
+        "sha256": "9c6aa1458432b18e09d3bd78f6aa72cc891e6fca3f01304c3f63ab5506e98a27",
+        "bytes": 27994
+      },
+      {
+        "index": 22,
+        "sourceKey": "3f02c279-3b55-4320-b4a9-299ce0d9b555",
+        "url": "https://www.jonway.studio/assets/3f02c279-3b55-4320-b4a9-299ce0d9b555-768.jpg",
+        "sha256": "f2742318294c380c30d7ac1dfef9eec752b3cc8be53e4e417507c7dc6a85e12d",
+        "bytes": 15578
+      },
+      {
+        "index": 23,
+        "sourceKey": "9ecf043b-29d6-44a7-99f5-0e719133a01b",
+        "url": "https://www.jonway.studio/assets/9ecf043b-29d6-44a7-99f5-0e719133a01b-768.jpg",
+        "sha256": "4f778c26451a256b821d267970ae5dca4e68de94553cf18740c2b7b9f9e63e26",
+        "bytes": 24938
+      },
+      {
+        "index": 24,
+        "sourceKey": "2651fab2-2234-4379-9ede-3081cc59870e",
+        "url": "https://www.jonway.studio/assets/2651fab2-2234-4379-9ede-3081cc59870e-768.jpg",
+        "sha256": "291bab389f927b606d02000dd0089736fa9fdd7ab3b038b17baa68fe6d609933",
+        "bytes": 23639
+      },
+      {
+        "index": 25,
+        "sourceKey": "86156ce6-3e1b-4039-9daf-a79af42fa123",
+        "url": "https://www.jonway.studio/assets/86156ce6-3e1b-4039-9daf-a79af42fa123-768.jpg",
+        "sha256": "814f22334dbce4de865fefbf91cd59f21f68c28c42a61c6c4f87e2a0d7a7897e",
+        "bytes": 7494
+      },
+      {
+        "index": 26,
+        "sourceKey": "c22d9857-f96c-4e07-a9ef-740ad270f123",
+        "url": "https://www.jonway.studio/assets/c22d9857-f96c-4e07-a9ef-740ad270f123-768.jpg",
+        "sha256": "cdd35258afdb9645e43ce76272aa8271a2066e2415e6e152cf43d3ee9f17da1c",
+        "bytes": 9361
+      },
+      {
+        "index": 27,
+        "sourceKey": "c3bf0f18-b02b-41cf-984e-5cb9ea2fdc83",
+        "url": "https://www.jonway.studio/assets/c3bf0f18-b02b-41cf-984e-5cb9ea2fdc83-768.jpg",
+        "sha256": "85629bb60002e1382a07546137949fa4d83c06e7ae2c0303c713a97fb208e185",
+        "bytes": 39833
+      },
+      {
+        "index": 28,
+        "sourceKey": "b1f1b689-ca84-4100-801c-e9a6cc6613ed",
+        "url": "https://www.jonway.studio/assets/b1f1b689-ca84-4100-801c-e9a6cc6613ed-768.jpg",
+        "sha256": "8701da477bd29c0583ce7269bf9841cdd13c493ecefdca37fa3eb995f161aa1d",
+        "bytes": 7461
+      },
+      {
+        "index": 29,
+        "sourceKey": "b9a52ce5-9bdf-46e8-aae9-bc6a7911e5e4",
+        "url": "https://www.jonway.studio/assets/b9a52ce5-9bdf-46e8-aae9-bc6a7911e5e4-768.jpg",
+        "sha256": "2190c9b894d63fcc1426ed81d36e2f2ca923dd41fcd4edea9069f986cacb00fc",
+        "bytes": 61616
+      },
+      {
+        "index": 30,
+        "sourceKey": "2aa3244b-64a9-47cb-86a1-4e0ae726f55d",
+        "url": "https://www.jonway.studio/assets/2aa3244b-64a9-47cb-86a1-4e0ae726f55d-768.jpg",
+        "sha256": "905316170034a1346e15b385668139f226828a83f780e35abcd13da2507e6c73",
+        "bytes": 45159
+      },
+      {
+        "index": 31,
+        "sourceKey": "acc13141-4350-4841-9731-d996706cc594",
+        "url": "https://www.jonway.studio/assets/acc13141-4350-4841-9731-d996706cc594-768.jpg",
+        "sha256": "d2a93efce7b2cdda52d6ac678cc20fb63020f414fa33644912710bc3a5d621c4",
+        "bytes": 83208
+      },
+      {
+        "index": 32,
+        "sourceKey": "18e7cc10-83af-4c42-8999-dbbd31f2f3f7",
+        "url": "https://www.jonway.studio/assets/18e7cc10-83af-4c42-8999-dbbd31f2f3f7-768.jpg",
+        "sha256": "d27fe5acd470bbda92abfb5d511a7638468baa12cb2111b47f13cb3c1eeecfef",
+        "bytes": 31703
+      },
+      {
+        "index": 33,
+        "sourceKey": "6c430b8d-0224-4ffa-b488-aefa65d398ca",
+        "url": "https://www.jonway.studio/assets/6c430b8d-0224-4ffa-b488-aefa65d398ca-768.jpg",
+        "sha256": "6e8e85504dd4eef3d34aa781245955452e75f6cae22d6b0eaa663fd78a1b11a6",
+        "bytes": 43504
+      },
+      {
+        "index": 34,
+        "sourceKey": "15b0dc85-887f-47ff-b977-295671911f29",
+        "url": "https://www.jonway.studio/assets/15b0dc85-887f-47ff-b977-295671911f29-768.jpg",
+        "sha256": "4bcd8a15e4a3511b5c4290c405ae3a62c623e4a794038e96bcaf5b901007b99d",
+        "bytes": 91861
+      },
+      {
+        "index": 35,
+        "sourceKey": "fb5cfff1-3ca0-4630-b381-627a35fe5936",
+        "url": "https://www.jonway.studio/assets/fb5cfff1-3ca0-4630-b381-627a35fe5936-768.jpg",
+        "sha256": "7ed538c450848a04f1a7f36248a711e06ba9fd078f8efedc3250a4d8806bd1eb",
+        "bytes": 112986
+      },
+      {
+        "index": 36,
+        "sourceKey": "92266fef-c55a-48ad-93dc-255afae6ebf3",
+        "url": "https://www.jonway.studio/assets/92266fef-c55a-48ad-93dc-255afae6ebf3-768.jpg",
+        "sha256": "02cdbac3a6719e334220d856728ae255f805dcbbb6509ac5c55ce71a7cfb083a",
+        "bytes": 54853
+      },
+      {
+        "index": 37,
+        "sourceKey": "e6adbe6c-62c4-48d9-b5e5-1fc6525dc8ad",
+        "url": "https://www.jonway.studio/assets/e6adbe6c-62c4-48d9-b5e5-1fc6525dc8ad-768.jpg",
+        "sha256": "80eaba7ab85c49a6d372a8cd9e665a77b67a933bf3a5f6e7a7b3b3822b2f2d4a",
+        "bytes": 41728
+      },
+      {
+        "index": 38,
+        "sourceKey": "f43911b3-9c15-4722-af9f-4c5c7589845f",
+        "url": "https://www.jonway.studio/assets/f43911b3-9c15-4722-af9f-4c5c7589845f-768.jpg",
+        "sha256": "c7f4aa5c833c593ed311d3bedb1246fc22b7c3108a1d5b637871705effdc227f",
+        "bytes": 47386
+      },
+      {
+        "index": 39,
+        "sourceKey": "0ce86189-9298-4f6b-93f6-a82d5fced781",
+        "url": "https://www.jonway.studio/assets/0ce86189-9298-4f6b-93f6-a82d5fced781-768.jpg",
+        "sha256": "9284de06267ddb4018c8b49618bee60c1229ff0edcdedbdf439abf501e4cf207",
+        "bytes": 31470
+      },
+      {
+        "index": 40,
+        "sourceKey": "8e2c1540-a1b8-4e86-a67a-7d7c0e0ab01d",
+        "url": "https://www.jonway.studio/assets/8e2c1540-a1b8-4e86-a67a-7d7c0e0ab01d-768.jpg",
+        "sha256": "40b66e6541fc0d800c0d2af26bd51a77e41d8dad2bf55b716fcdf7d9f26d63be",
+        "bytes": 35991
+      },
+      {
+        "index": 41,
+        "sourceKey": "a77c390d-b52d-4093-9556-a8cbae8120f8",
+        "url": "https://www.jonway.studio/assets/a77c390d-b52d-4093-9556-a8cbae8120f8-768.jpg",
+        "sha256": "8c2817fb10fc00ce73eb3a460cfc341cde3c880865e08af584b430ed181a2103",
+        "bytes": 5460
+      },
+      {
+        "index": 42,
+        "sourceKey": "0a648e61-330e-483b-a6f2-46becf64c5f9",
+        "url": "https://www.jonway.studio/assets/0a648e61-330e-483b-a6f2-46becf64c5f9-768.jpg",
+        "sha256": "ad7853bed6b4da62f563a6ca71ca99096bad233096a671c89540658850454459",
+        "bytes": 173493
+      },
+      {
+        "index": 43,
+        "sourceKey": "1c36834f-c3d3-47ed-9558-2778aa28e561",
+        "url": "https://www.jonway.studio/assets/1c36834f-c3d3-47ed-9558-2778aa28e561-768.jpg",
+        "sha256": "638d1728a9363451e3e844e21e572850e27ebf5e5f9d67dafe538cece3f096bb",
+        "bytes": 19050
+      },
+      {
+        "index": 44,
+        "sourceKey": "a082b1de-1857-493e-8103-11d2bcc51709",
+        "url": "https://www.jonway.studio/assets/a082b1de-1857-493e-8103-11d2bcc51709-768.jpg",
+        "sha256": "5b1117614eb18d10f8438dd7423261a53ba2d84326787b145a5556344fcfec0c",
+        "bytes": 154858
+      },
+      {
+        "index": 45,
+        "sourceKey": "b195145b-bae7-4cb0-9b42-232d7740ab87",
+        "url": "https://www.jonway.studio/assets/b195145b-bae7-4cb0-9b42-232d7740ab87-768.jpg",
+        "sha256": "0fc6b24db875f7bdb980d32c80873bf3b568005858956c9d95c7764e0303e584",
+        "bytes": 19041
+      },
+      {
+        "index": 46,
+        "sourceKey": "c2184712-db53-413e-a38c-8de559fc2513",
+        "url": "https://www.jonway.studio/assets/c2184712-db53-413e-a38c-8de559fc2513-768.jpg",
+        "sha256": "17bd638d31a6f6f63e6218d3c89c605ff6600df021e3a5a2d385551dae8d45d9",
+        "bytes": 76910
+      },
+      {
+        "index": 47,
+        "sourceKey": "8e003f18-b8d5-43a0-87f9-f9c4721c1ba6",
+        "url": "https://www.jonway.studio/assets/8e003f18-b8d5-43a0-87f9-f9c4721c1ba6-768.jpg",
+        "sha256": "cc31cba3081c9d9edd1f5c333c092d180744ee4085cd2af33c78b70f50bf89e7",
+        "bytes": 37345
+      },
+      {
+        "index": 48,
+        "sourceKey": "2d328e50-5574-4b04-b475-c467b356ef74",
+        "url": "https://www.jonway.studio/assets/2d328e50-5574-4b04-b475-c467b356ef74-768.jpg",
+        "sha256": "0a6ce9678aab8ac236197b1b7054cf8cacbd0d0dded30d457ab02b3818ce9672",
+        "bytes": 40187
+      },
+      {
+        "index": 49,
+        "sourceKey": "e83c209c-d654-443e-bcf0-fdb59b7f936b",
+        "url": "https://www.jonway.studio/assets/e83c209c-d654-443e-bcf0-fdb59b7f936b-768.jpg",
+        "sha256": "fccd5aa45e867f40740ea040a049cc5f0519e48ae85fef94603d060720f357a8",
+        "bytes": 48050
+      },
+      {
+        "index": 50,
+        "sourceKey": "2a3dbe6f-b9f8-40cb-80cd-a2f59d25d8a0",
+        "url": "https://www.jonway.studio/assets/2a3dbe6f-b9f8-40cb-80cd-a2f59d25d8a0-768.jpg",
+        "sha256": "0b0d6cf73a425140263ff518640619569222190cf2aacedae8dfacb09aa4b805",
+        "bytes": 64598
+      },
+      {
+        "index": 51,
+        "sourceKey": "f21a057c-8729-4362-83ab-836258fb0c62",
+        "url": "https://www.jonway.studio/assets/f21a057c-8729-4362-83ab-836258fb0c62-768.jpg",
+        "sha256": "4b3836bb17ee5593a44f602154e94f12d2068bdce3f641128ee032b1e7b93202",
+        "bytes": 38922
+      },
+      {
+        "index": 52,
+        "sourceKey": "59418f97-f815-4bc3-85be-192826a58c7e",
+        "url": "https://www.jonway.studio/assets/59418f97-f815-4bc3-85be-192826a58c7e-768.jpg",
+        "sha256": "36272d9edcc4e195d58044279d64c671b612d7a34bd48a42792c33575023a557",
+        "bytes": 39090
+      },
+      {
+        "index": 53,
+        "sourceKey": "03dd4143-9100-4330-9b47-a54f25ebd3af",
+        "url": "https://www.jonway.studio/assets/03dd4143-9100-4330-9b47-a54f25ebd3af-768.jpg",
+        "sha256": "ec3cbcd8a7970448c3112ecad72e84eb9a8e28495e3265a1073061da2adeddaf",
+        "bytes": 52196
+      },
+      {
+        "index": 54,
+        "sourceKey": "239538da-1e68-4d1f-bae4-96b860397c61",
+        "url": "https://www.jonway.studio/assets/239538da-1e68-4d1f-bae4-96b860397c61-768.jpg",
+        "sha256": "c66c7262ca670ae2b92d3ff7a9e7e12594e96fca6f1d80e099df907f8996bccf",
+        "bytes": 43771
+      },
+      {
+        "index": 55,
+        "sourceKey": "05b6d8e7-bbfe-444a-8a86-ef3ff8957736",
+        "url": "https://www.jonway.studio/assets/05b6d8e7-bbfe-444a-8a86-ef3ff8957736-768.jpg",
+        "sha256": "d5da37682d9c289af0e883cd7ba43463afb1daa0b4a3cb2cf2884d52f62ddc9e",
+        "bytes": 31875
+      },
+      {
+        "index": 56,
+        "sourceKey": "9933e919-f78d-4fd6-a696-69abf70803db",
+        "url": "https://www.jonway.studio/assets/9933e919-f78d-4fd6-a696-69abf70803db-768.jpg",
+        "sha256": "7271993360e03182cd6ad52a0745fa27c4498df9a303cb66cb086ef078838abc",
+        "bytes": 35963
+      },
+      {
+        "index": 57,
+        "sourceKey": "dcc5bf40-dfc7-400d-818b-3cf2a88ece05",
+        "url": "https://www.jonway.studio/assets/dcc5bf40-dfc7-400d-818b-3cf2a88ece05-768.jpg",
+        "sha256": "de47e780820ecf497d1d5b1a8faaf9c954f4b4141d15debfbb7160f626107e51",
+        "bytes": 88587
+      },
+      {
+        "index": 58,
+        "sourceKey": "89316d16-ca01-4a8f-980e-c8eec588ff0c",
+        "url": "https://www.jonway.studio/assets/89316d16-ca01-4a8f-980e-c8eec588ff0c-768.jpg",
+        "sha256": "5e2fb443bb7462fc3f873788230e1b8efa5f06d2a9b299b391164d9eecaed650",
+        "bytes": 51895
+      },
+      {
+        "index": 59,
+        "sourceKey": "0d0fffcc-7090-4578-aeec-f94af2df7cfd",
+        "url": "https://www.jonway.studio/assets/0d0fffcc-7090-4578-aeec-f94af2df7cfd-768.jpg",
+        "sha256": "f3d3b028d4d8ae45fa41075dddd955de0a316b51dd2fe99f4910924550cdf0d6",
+        "bytes": 29426
+      },
+      {
+        "index": 60,
+        "sourceKey": "eb6b30e2-f582-4188-9f5a-c84f1c1e8955",
+        "url": "https://www.jonway.studio/assets/eb6b30e2-f582-4188-9f5a-c84f1c1e8955-768.jpg",
+        "sha256": "ddf995fa90dd9b092374ee7b27c8514df7a7487089fdedc24532096a2ef176e0",
+        "bytes": 51007
+      },
+      {
+        "index": 61,
+        "sourceKey": "3cc4763b-9db4-4540-ac6e-a116ca61a9ef",
+        "url": "https://www.jonway.studio/assets/3cc4763b-9db4-4540-ac6e-a116ca61a9ef-768.jpg",
+        "sha256": "f61c7b7d366fc9b895c1e75c3441ba1abc9b09d9bc9d1ec41f3a3e0b99bea631",
+        "bytes": 65123
+      },
+      {
+        "index": 62,
+        "sourceKey": "59e566ed-6f70-4308-829b-2bafd748c23e",
+        "url": "https://www.jonway.studio/assets/59e566ed-6f70-4308-829b-2bafd748c23e-768.jpg",
+        "sha256": "4d88e38bb7385910a1554316c33aad16d76073e873fce9b98671d6eee3b7e6f1",
+        "bytes": 10582
+      },
+      {
+        "index": 63,
+        "sourceKey": "723e107f-d05a-4eec-aea8-1edd82be4b8f",
+        "url": "https://www.jonway.studio/assets/723e107f-d05a-4eec-aea8-1edd82be4b8f-768.jpg",
+        "sha256": "f0ce90a474f37691aeab3366cd5626125a2d77cafd0d22e44e264e532ddf5457",
+        "bytes": 46270
+      },
+      {
+        "index": 64,
+        "sourceKey": "790f1db4-1d1e-4318-a29a-40c2bc305bc8",
+        "url": "https://www.jonway.studio/assets/790f1db4-1d1e-4318-a29a-40c2bc305bc8-768.jpg",
+        "sha256": "77a19b0392d1dfec06a37d12a8f259d455bc32430358c1ce662a3ad75d8103c7",
+        "bytes": 8993
+      },
+      {
+        "index": 65,
+        "sourceKey": "d4c33bae-8d34-4fd1-9520-34eddd706338",
+        "url": "https://www.jonway.studio/assets/d4c33bae-8d34-4fd1-9520-34eddd706338-768.jpg",
+        "sha256": "755adf14dabfb8d12e7172441b149be82c96d38ece64bc2aad1c1ad451f9ae66",
+        "bytes": 101789
+      },
+      {
+        "index": 66,
+        "sourceKey": "297199b3-bf09-4ce9-a609-dbb6a39a038e",
+        "url": "https://www.jonway.studio/assets/297199b3-bf09-4ce9-a609-dbb6a39a038e-768.jpg",
+        "sha256": "6acc1ccab5e44cf60e035035010467c7c0845a37a73e8a97cf0b68a1cefdb1aa",
+        "bytes": 32230
+      },
+      {
+        "index": 67,
+        "sourceKey": "421e4c8d-424a-496a-b5d9-1c05675ce9cf",
+        "url": "https://www.jonway.studio/assets/421e4c8d-424a-496a-b5d9-1c05675ce9cf-768.jpg",
+        "sha256": "61471c4f1bacc5b60ed19d10fe308d5e2d1ba96b19016f5b2bf880ebd9145c0f",
+        "bytes": 19474
+      },
+      {
+        "index": 68,
+        "sourceKey": "36b6f7ac-28dd-4888-b85d-608a7f355969",
+        "url": "https://www.jonway.studio/assets/36b6f7ac-28dd-4888-b85d-608a7f355969-768.jpg",
+        "sha256": "a21b4911c970c46358337a874c5979f9b94922ac7d18e75546a279d91c32576f",
+        "bytes": 14936
+      },
+      {
+        "index": 69,
+        "sourceKey": "30a6b416-6618-4ec1-bbaa-99044c116110",
+        "url": "https://www.jonway.studio/assets/30a6b416-6618-4ec1-bbaa-99044c116110-768.jpg",
+        "sha256": "102e342669bb120cf758cba9de99588f371414eaa10b3cb73b5983419b048b8e",
+        "bytes": 18178
+      },
+      {
+        "index": 70,
+        "sourceKey": "408bc5d2-ca5e-4e9e-8737-91a4a55a7e40",
+        "url": "https://www.jonway.studio/assets/408bc5d2-ca5e-4e9e-8737-91a4a55a7e40-768.jpg",
+        "sha256": "94c39a3dec7d145e5252577c17506a3debe185122a0817b79504f97f66c22e43",
+        "bytes": 35884
+      },
+      {
+        "index": 71,
+        "sourceKey": "3b1c96b6-4e80-451f-9a48-1fdae2282647",
+        "url": "https://www.jonway.studio/assets/3b1c96b6-4e80-451f-9a48-1fdae2282647-768.jpg",
+        "sha256": "30ad7143f647fffa658070354d2fd83c0cd260e4b4c92a853372baa54d4fc33d",
+        "bytes": 25913
+      },
+      {
+        "index": 72,
+        "sourceKey": "ca7a63b7-54c0-4703-ba90-41558ff00548",
+        "url": "https://www.jonway.studio/assets/ca7a63b7-54c0-4703-ba90-41558ff00548-768.jpg",
+        "sha256": "3577b9f2f15f53c839f105f2edc3663edafbb0d97e8d7cfba25ebfad1db8d61f",
+        "bytes": 62622
+      },
+      {
+        "index": 73,
+        "sourceKey": "351fe5b8-3d7c-4dd2-a743-eb2fe6660204",
+        "url": "https://www.jonway.studio/assets/351fe5b8-3d7c-4dd2-a743-eb2fe6660204-768.jpg",
+        "sha256": "691b3c37e29b8fbda9adbeb6a81c50a29f14adf35c592082e55f0abe7f8863db",
+        "bytes": 29893
+      },
+      {
+        "index": 74,
+        "sourceKey": "9b2dda2f-fc10-4f4a-b72f-a71ca0665ef2",
+        "url": "https://www.jonway.studio/assets/9b2dda2f-fc10-4f4a-b72f-a71ca0665ef2-768.jpg",
+        "sha256": "3cd927226a59b97c0541d3cfc3ab00d3a042d9f1bc8073531778db75befe1173",
+        "bytes": 22221
+      },
+      {
+        "index": 75,
+        "sourceKey": "c1f3cab9-911c-426b-95c4-393de1fcc75c",
+        "url": "https://www.jonway.studio/assets/c1f3cab9-911c-426b-95c4-393de1fcc75c-768.jpg",
+        "sha256": "e776f4603da0f5ded5893669d0ea19f2f313e70e8b228a0703fd53d13041b555",
+        "bytes": 19785
+      },
+      {
+        "index": 76,
+        "sourceKey": "97c61c70-1283-44dd-aad5-8e5cc27e336d",
+        "url": "https://www.jonway.studio/assets/97c61c70-1283-44dd-aad5-8e5cc27e336d-768.jpg",
+        "sha256": "65e9d581caf347229b2b3d1155ae238961cfa19ef3c8cbd647e51f72198f16e9",
+        "bytes": 29955
+      },
+      {
+        "index": 77,
+        "sourceKey": "785c59d1-5cfb-44b2-95e8-12b6d7debf83",
+        "url": "https://www.jonway.studio/assets/785c59d1-5cfb-44b2-95e8-12b6d7debf83-768.jpg",
+        "sha256": "e21e80a42d149454fa679e188df6c0cfd74bad2e9360631d089ed8c02ca85fc2",
+        "bytes": 19434
+      },
+      {
+        "index": 78,
+        "sourceKey": "926b03f5-5753-4904-92bd-cb53fbef77e8",
+        "url": "https://www.jonway.studio/assets/926b03f5-5753-4904-92bd-cb53fbef77e8-768.jpg",
+        "sha256": "d86bab5289338885ae703342a4ce2f6620571c715012f051eff9280c0decee66",
+        "bytes": 10130
+      },
+      {
+        "index": 79,
+        "sourceKey": "472db62e-6d37-4506-beee-56085e12c3ee",
+        "url": "https://www.jonway.studio/assets/472db62e-6d37-4506-beee-56085e12c3ee-768.jpg",
+        "sha256": "4fdb77d6bc09600973e562c5f5ebe96c2018e79c02a4416c72bee1ac925c5772",
+        "bytes": 11599
+      },
+      {
+        "index": 80,
+        "sourceKey": "2ee728c3-d6de-49cd-a990-238840993748",
+        "url": "https://www.jonway.studio/assets/2ee728c3-d6de-49cd-a990-238840993748-768.jpg",
+        "sha256": "e7e42392d42316c4ecfd4fe54ba8d64ac1315957eea3b54ceadb70484b3dc0d0",
+        "bytes": 95548
+      },
+      {
+        "index": 81,
+        "sourceKey": "4fa99509-efc5-4cf7-8a8d-8d92a3d02bc8",
+        "url": "https://www.jonway.studio/assets/4fa99509-efc5-4cf7-8a8d-8d92a3d02bc8-768.jpg",
+        "sha256": "5d4562497ea1e76cb57386135a89f173b5e0d13034c83df0d418bf46777b864e",
+        "bytes": 24988
+      },
+      {
+        "index": 82,
+        "sourceKey": "a208f3ac-290b-41f0-9fa7-8ab5d6ae2782",
+        "url": "https://www.jonway.studio/assets/a208f3ac-290b-41f0-9fa7-8ab5d6ae2782-768.jpg",
+        "sha256": "317faa27a54f3826f7394f52b1e967044f65e75cf6752e174c11d01b7e2f550a",
+        "bytes": 67635
+      },
+      {
+        "index": 83,
+        "sourceKey": "30a74966-93d0-4591-9648-a3ea22c59a54",
+        "url": "https://www.jonway.studio/assets/30a74966-93d0-4591-9648-a3ea22c59a54-768.jpg",
+        "sha256": "980785955bcc31b33438403844726c7ebc698ce7425683b64886faf1d2d23a7e",
+        "bytes": 46665
+      },
+      {
+        "index": 84,
+        "sourceKey": "f191e58d-63a0-4d97-8b72-450bc40f803c",
+        "url": "https://www.jonway.studio/assets/f191e58d-63a0-4d97-8b72-450bc40f803c-768.jpg",
+        "sha256": "25772ea33cd443669b7bdfd6b396525218c1c96fd394f0eaabb1d6bbcedab5a6",
+        "bytes": 38056
+      },
+      {
+        "index": 85,
+        "sourceKey": "c53963ec-c238-48d1-9883-737e656a0dc8",
+        "url": "https://www.jonway.studio/assets/c53963ec-c238-48d1-9883-737e656a0dc8-768.jpg",
+        "sha256": "527cb99719c16e02a0fe4ba180ab0e2fe289a7ec497d0f8a89b54e6f58463526",
+        "bytes": 49129
+      },
+      {
+        "index": 86,
+        "sourceKey": "9889adf4-bc69-45d3-b7a8-22f646429184",
+        "url": "https://www.jonway.studio/assets/9889adf4-bc69-45d3-b7a8-22f646429184-768.jpg",
+        "sha256": "915982df0a4bb9b5003bfd26bfdb6a9d72f583c58fb389ded05fdb27b46cb3ad",
+        "bytes": 44936
+      },
+      {
+        "index": 87,
+        "sourceKey": "5911fb1a-2549-4e72-bacc-8196a82751b6",
+        "url": "https://www.jonway.studio/assets/5911fb1a-2549-4e72-bacc-8196a82751b6-768.jpg",
+        "sha256": "b01d566989bf7270ccb5cffd06218b2f885ae283b6ca2b9df5d1266bba183e59",
+        "bytes": 54822
+      },
+      {
+        "index": 88,
+        "sourceKey": "2fdafab6-6591-487f-b238-743534e5ce50",
+        "url": "https://www.jonway.studio/assets/2fdafab6-6591-487f-b238-743534e5ce50-768.jpg",
+        "sha256": "2723dd7aecf741e07b222b40a779c4880ce28453e51702a7eec22b4931e609bd",
+        "bytes": 81862
+      },
+      {
+        "index": 89,
+        "sourceKey": "567d0edc-af13-4a9e-87e9-44602e2fa20d",
+        "url": "https://www.jonway.studio/assets/567d0edc-af13-4a9e-87e9-44602e2fa20d-768.jpg",
+        "sha256": "b17fdf8ceb3ac466089fea817c4018c71e01b26a47ff3b0e82fcea56900679c2",
+        "bytes": 37505
+      },
+      {
+        "index": 90,
+        "sourceKey": "ffa7af03-122c-471f-8593-fbeb69e8d3f4",
+        "url": "https://www.jonway.studio/assets/ffa7af03-122c-471f-8593-fbeb69e8d3f4-768.jpg",
+        "sha256": "cfe7c9378c8accd3377a2a4364fe10b6b3067b7dda1476b861f12eb9c293ca0f",
+        "bytes": 44187
+      },
+      {
+        "index": 91,
+        "sourceKey": "711e26db-c9ed-4776-9748-78d28d58156c",
+        "url": "https://www.jonway.studio/assets/711e26db-c9ed-4776-9748-78d28d58156c-768.jpg",
+        "sha256": "14326efb23bbede73f9b4bee96e6f76cc3b5238b26e7e26b490a77229940a442",
+        "bytes": 11479
+      },
+      {
+        "index": 92,
+        "sourceKey": "8d682d60-a17f-4ff5-9f43-bdb02607a8dd",
+        "url": "https://www.jonway.studio/assets/8d682d60-a17f-4ff5-9f43-bdb02607a8dd-768.jpg",
+        "sha256": "dc0e4a629e492b14ff52a7458f86aca6129c28a26d36b090de3c51597d715a53",
+        "bytes": 40102
+      },
+      {
+        "index": 93,
+        "sourceKey": "84810f30-7180-4684-b848-940589252ec9",
+        "url": "https://www.jonway.studio/assets/84810f30-7180-4684-b848-940589252ec9-768.jpg",
+        "sha256": "7cd5713014c2451aaaa5a671c81532ad3e8405680324b96858d55625ba60fa49",
+        "bytes": 26071
+      },
+      {
+        "index": 94,
+        "sourceKey": "74691dc3-7512-4535-9be3-bd127644d81c",
+        "url": "https://www.jonway.studio/assets/74691dc3-7512-4535-9be3-bd127644d81c-768.jpg",
+        "sha256": "52a90b8ec7e03df191db37fe1f98fda35e55dde5f44c0804747ba7d45c98e86c",
+        "bytes": 48399
+      },
+      {
+        "index": 95,
+        "sourceKey": "f44aec71-14c0-4d93-9315-d768700403f2",
+        "url": "https://www.jonway.studio/assets/f44aec71-14c0-4d93-9315-d768700403f2-768.jpg",
+        "sha256": "eadc72b8402c8c21032c5792edec46b353d296f9db7d704df0e1afa47d290f8d",
+        "bytes": 18475
+      },
+      {
+        "index": 96,
+        "sourceKey": "3bbc5f88-9904-413a-9ac7-5a45b38915fd",
+        "url": "https://www.jonway.studio/assets/3bbc5f88-9904-413a-9ac7-5a45b38915fd-768.jpg",
+        "sha256": "bfc7674b94bd340c11ac20c148ecb17c62f6e40afa375737b85d5fdd68f9b8f2",
+        "bytes": 15076
+      },
+      {
+        "index": 97,
+        "sourceKey": "5318cf46-17e3-41a7-9446-c349d8823f37",
+        "url": "https://www.jonway.studio/assets/5318cf46-17e3-41a7-9446-c349d8823f37-768.jpg",
+        "sha256": "43dfd8f4bcddb9c3920e7d3cc19536725ee036133edcec81fc1db5e6f38464bd",
+        "bytes": 25581
+      },
+      {
+        "index": 98,
+        "sourceKey": "0c7d1eed-c218-4920-8a8a-fdd4a111ab7a",
+        "url": "https://www.jonway.studio/assets/0c7d1eed-c218-4920-8a8a-fdd4a111ab7a-768.jpg",
+        "sha256": "ed8011eb218cdc2a4751d5a404a28ca8aaee2d15381fc6b1f76ecdb2ec1b2897",
+        "bytes": 58206
+      },
+      {
+        "index": 99,
+        "sourceKey": "dc70a363-b7ba-43df-9b1b-ef6497b22dd1",
+        "url": "https://www.jonway.studio/assets/dc70a363-b7ba-43df-9b1b-ef6497b22dd1-768.jpg",
+        "sha256": "9d1331224f61fde536f291ac47fd6322ea3cc0636abe0e1051eec3fb4041db7c",
+        "bytes": 46801
+      },
+      {
+        "index": 100,
+        "sourceKey": "717a62cb-b5a1-4ccb-a13a-f436d91d7c28",
+        "url": "https://www.jonway.studio/assets/717a62cb-b5a1-4ccb-a13a-f436d91d7c28-768.jpg",
+        "sha256": "c14bd6010af6738129db7e5ddf7736a9659d87b50f745c8542ee0d5d57b70934",
+        "bytes": 9068
+      },
+      {
+        "index": 101,
+        "sourceKey": "e1c6d96a-26d1-42ec-b2c5-b3c1c5553903",
+        "url": "https://www.jonway.studio/assets/e1c6d96a-26d1-42ec-b2c5-b3c1c5553903-768.jpg",
+        "sha256": "c3a6b3011696a3b913c658b2b97c78db7c194fde26fd83137ea505387f78a8ff",
+        "bytes": 19673
+      },
+      {
+        "index": 102,
+        "sourceKey": "6d84633f-5f68-4e9d-83db-247ffbac7f39",
+        "url": "https://www.jonway.studio/assets/6d84633f-5f68-4e9d-83db-247ffbac7f39-768.jpg",
+        "sha256": "09b86d000c61beca8577a5fc43d5e2942ef9c515c56047ec3beb69fef6273936",
+        "bytes": 11288
+      },
+      {
+        "index": 103,
+        "sourceKey": "343d564c-20a9-472f-9cfc-caa5ba580f10",
+        "url": "https://www.jonway.studio/assets/343d564c-20a9-472f-9cfc-caa5ba580f10-768.jpg",
+        "sha256": "a320ca0cdab4c8e62fd3b495b3a3218b039cc282a67f273bfd59ce54e0856308",
+        "bytes": 45503
+      },
+      {
+        "index": 104,
+        "sourceKey": "b4ac87bf-2e16-4c5d-8a18-125e5386164a",
+        "url": "https://www.jonway.studio/assets/b4ac87bf-2e16-4c5d-8a18-125e5386164a-768.jpg",
+        "sha256": "5ca8251a9ec36a27a9c545497d6252a3a3fc65e4fe95ef783e3b18b4407dd2bc",
+        "bytes": 20096
+      },
+      {
+        "index": 105,
+        "sourceKey": "d3d1a3da-bb4a-4c28-b922-252d99635cca",
+        "url": "https://www.jonway.studio/assets/d3d1a3da-bb4a-4c28-b922-252d99635cca-768.jpg",
+        "sha256": "e1d7709ea73cf9cebdffccf0cfa78499adbe07f8d8189990ee4565059e2dad23",
+        "bytes": 24368
+      },
+      {
+        "index": 106,
+        "sourceKey": "a6bc9e14-5182-44dd-8c55-8e41a60313b9",
+        "url": "https://www.jonway.studio/assets/a6bc9e14-5182-44dd-8c55-8e41a60313b9-768.jpg",
+        "sha256": "e8a8520f3c8a270e074138b4f0164ff6d7347a3ed79cc5038b6029cf5e3166a4",
+        "bytes": 15727
+      },
+      {
+        "index": 107,
+        "sourceKey": "4b693569-cebb-474d-a19b-5dee65a6bbed",
+        "url": "https://www.jonway.studio/assets/4b693569-cebb-474d-a19b-5dee65a6bbed-768.jpg",
+        "sha256": "3205c6203118e6d9d3f86b23dd6b77388d1f7ad6764ef47f1cc1aa6f327c9490",
+        "bytes": 43739
+      },
+      {
+        "index": 108,
+        "sourceKey": "993d6511-54f5-4ee7-8a03-147d9b3678b6",
+        "url": "https://www.jonway.studio/assets/993d6511-54f5-4ee7-8a03-147d9b3678b6-768.jpg",
+        "sha256": "739bba60ef252fdba8e3711680387e050bfb13b32d31374d608874ae11a904dd",
+        "bytes": 18219
+      },
+      {
+        "index": 109,
+        "sourceKey": "a29244bc-4d65-4409-bd7b-f9e8f9d90221",
+        "url": "https://www.jonway.studio/assets/a29244bc-4d65-4409-bd7b-f9e8f9d90221-768.jpg",
+        "sha256": "dc735df9b59c005d1af662c3b1ac41a7346491f2b332da0daae4eb7a4c47dcd8",
+        "bytes": 62071
+      },
+      {
+        "index": 110,
+        "sourceKey": "ccc8d644-a869-47c6-bce5-dbf24e086217",
+        "url": "https://www.jonway.studio/assets/ccc8d644-a869-47c6-bce5-dbf24e086217-768.jpg",
+        "sha256": "93104c15bcba9008355cfcf976dabb93737d7771de2f0ad55666e428694525bc",
+        "bytes": 54103
+      },
+      {
+        "index": 111,
+        "sourceKey": "cd390f7d-fb2d-4160-98f2-9ecb466e9b94",
+        "url": "https://www.jonway.studio/assets/cd390f7d-fb2d-4160-98f2-9ecb466e9b94-768.jpg",
+        "sha256": "0e611d9ac8739441cd0da98893a5a8cc5fe09fd22daa082651ecfac000964b77",
+        "bytes": 14570
+      },
+      {
+        "index": 112,
+        "sourceKey": "d714cf8d-adfc-492f-b362-71f98dbbd0fb",
+        "url": "https://www.jonway.studio/assets/d714cf8d-adfc-492f-b362-71f98dbbd0fb-768.jpg",
+        "sha256": "c55770dd94fb597b3d8246ae8951659b3fc332a9bd905ac73448c42353c92f02",
+        "bytes": 52825
+      },
+      {
+        "index": 113,
+        "sourceKey": "7c2189be-7e5c-4947-8eac-b179d9a39682",
+        "url": "https://www.jonway.studio/assets/7c2189be-7e5c-4947-8eac-b179d9a39682-768.jpg",
+        "sha256": "6a6e93ad3f2ef1f28ef6f41f414db12dfd49fa4d71e1c98c4bfeda4a60ec88c5",
+        "bytes": 18340
+      },
+      {
+        "index": 114,
+        "sourceKey": "a863ee44-0edd-4cf0-9106-568897f09df0",
+        "url": "https://www.jonway.studio/assets/a863ee44-0edd-4cf0-9106-568897f09df0-480.jpg",
+        "sha256": "c4fff2615c0399e0af2a11b4ae4989ae4a4a60c17e05f4072c921265486d2313",
+        "bytes": 4467
+      },
+      {
+        "index": 115,
+        "sourceKey": "cc40d517-87e1-4b06-bc97-755e8e6f4550",
+        "url": "https://www.jonway.studio/assets/cc40d517-87e1-4b06-bc97-755e8e6f4550-768.jpg",
+        "sha256": "97a0fcb899c61fc116a6bfecdefa0e3eae99833ea5961e38bea98fd09ca57eac",
+        "bytes": 39357
+      },
+      {
+        "index": 116,
+        "sourceKey": "d8af597a-e589-4cde-8c87-560a4898a4dc",
+        "url": "https://www.jonway.studio/assets/d8af597a-e589-4cde-8c87-560a4898a4dc-768.jpg",
+        "sha256": "5519d55607ed52b078da2ec852ca7a633bfdb0d75ce0d40f811507765aa5301a",
+        "bytes": 115610
+      },
+      {
+        "index": 117,
+        "sourceKey": "312fa24e-a3ef-4e24-8e88-6d5d6006bc23",
+        "url": "https://www.jonway.studio/assets/312fa24e-a3ef-4e24-8e88-6d5d6006bc23-768.jpg",
+        "sha256": "41742c1c0f5f03b633e4aab48e65338b09609272fdf553eb20d731049a2b34c0",
+        "bytes": 137144
+      },
+      {
+        "index": 118,
+        "sourceKey": "0ab76914-c65b-408f-92c9-5b820cfa80ba",
+        "url": "https://www.jonway.studio/assets/0ab76914-c65b-408f-92c9-5b820cfa80ba-768.jpg",
+        "sha256": "da39c84f6db610bc895daf475ffa3999bf8d49e55f995e6d21a50f6b735fb3b9",
+        "bytes": 54599
+      },
+      {
+        "index": 119,
+        "sourceKey": "6f851d67-902a-4b63-87d2-8fc5ec2dfa98",
+        "url": "https://www.jonway.studio/assets/6f851d67-902a-4b63-87d2-8fc5ec2dfa98-768.jpg",
+        "sha256": "8288b9da79d66b952ca00c00e5ccf382df72f3eb66f4eb98e5a7a4085621c356",
+        "bytes": 20115
+      },
+      {
+        "index": 120,
+        "sourceKey": "0e4a6ddc-8fa9-43a6-9693-27688704f2b7",
+        "url": "https://www.jonway.studio/assets/0e4a6ddc-8fa9-43a6-9693-27688704f2b7-768.jpg",
+        "sha256": "4bb7371f3ea89b4b46a8e5d0ba4570425aa4840a2d2a39101fa40af02847a28f",
+        "bytes": 165928
+      },
+      {
+        "index": 121,
+        "sourceKey": "ad0af8b3-8b8c-4af2-b02e-7bcceffaa2bb",
+        "url": "https://www.jonway.studio/assets/ad0af8b3-8b8c-4af2-b02e-7bcceffaa2bb-768.jpg",
+        "sha256": "7ecfd66028267eb072817cd710013383061cb0acf730f7b5809735a03f811df9",
+        "bytes": 18082
+      },
+      {
+        "index": 122,
+        "sourceKey": "65a660cd-4d4c-4065-b924-32147deb37fd",
+        "url": "https://www.jonway.studio/assets/65a660cd-4d4c-4065-b924-32147deb37fd-768.jpg",
+        "sha256": "41e0bd3765b8c21eba34fb07bd4412d9ced9df6eaf5ef495fa4fe5262817753e",
+        "bytes": 8959
+      },
+      {
+        "index": 123,
+        "sourceKey": "7dc7526a-4f5b-45b9-91f2-0375bd6acede",
+        "url": "https://www.jonway.studio/assets/7dc7526a-4f5b-45b9-91f2-0375bd6acede-768.jpg",
+        "sha256": "7ecac1c93d9c651ff509c771b0231e2151624ea906f52d8c16c7ea52ad7e913f",
+        "bytes": 24179
+      },
+      {
+        "index": 124,
+        "sourceKey": "d966d3bc-5420-4c70-8bcd-2400951214a9",
+        "url": "https://www.jonway.studio/assets/d966d3bc-5420-4c70-8bcd-2400951214a9-768.jpg",
+        "sha256": "d7c16e2ed284cb22da1f72c63a81fda12fc3eec5d6115f5f848fd51009b5cf0d",
+        "bytes": 18462
+      },
+      {
+        "index": 125,
+        "sourceKey": "e115b425-346c-46eb-87a1-fcee61e6c2ce",
+        "url": "https://www.jonway.studio/assets/e115b425-346c-46eb-87a1-fcee61e6c2ce-768.jpg",
+        "sha256": "89164299642999f6d6ce8356da1681b026a1619951ee8acd2317142d78f73131",
+        "bytes": 17874
+      },
+      {
+        "index": 126,
+        "sourceKey": "a6e49da5-5361-47c3-9ba9-cfb709d31329",
+        "url": "https://www.jonway.studio/assets/a6e49da5-5361-47c3-9ba9-cfb709d31329-768.jpg",
+        "sha256": "b9a0e5e3f823e3f7fc931589d808646d002f2d73c9074e19c61dd8bd24e3ce24",
+        "bytes": 13399
+      },
+      {
+        "index": 127,
+        "sourceKey": "66df64c3-65b2-4f7b-8665-549a91520d6b",
+        "url": "https://www.jonway.studio/assets/66df64c3-65b2-4f7b-8665-549a91520d6b-768.jpg",
+        "sha256": "a1a2efbc9bd20642877dabdeb316fa6b2187f2ed44bac81371fe89aaa13823fa",
+        "bytes": 26968
+      },
+      {
+        "index": 128,
+        "sourceKey": "42608fa0-8918-4fdd-8be4-d15a6ac13dc1",
+        "url": "https://www.jonway.studio/assets/42608fa0-8918-4fdd-8be4-d15a6ac13dc1-768.jpg",
+        "sha256": "c42f988232d8c4075543eecabb3caf8fc1d177b33f7a14d412843559232baadd",
+        "bytes": 52233
+      },
+      {
+        "index": 129,
+        "sourceKey": "82cf942c-7266-4887-98a5-60d9b37e936c",
+        "url": "https://www.jonway.studio/assets/82cf942c-7266-4887-98a5-60d9b37e936c-768.jpg",
+        "sha256": "976943f3c19e45d76d42e083dd76f67229dbad0ff8d54156d9122f30424ab74f",
+        "bytes": 39021
+      },
+      {
+        "index": 130,
+        "sourceKey": "597862b6-4076-466f-8798-8ebc72e614c6",
+        "url": "https://www.jonway.studio/assets/597862b6-4076-466f-8798-8ebc72e614c6-768.jpg",
+        "sha256": "2b9948dcec0af1186e0fd4663ed62ec6be10e108daf0f0ab94eb1d444fd4a2c2",
+        "bytes": 21699
+      },
+      {
+        "index": 131,
+        "sourceKey": "fa6984bd-fc0c-4b99-9098-01ab9db69d98",
+        "url": "https://www.jonway.studio/assets/fa6984bd-fc0c-4b99-9098-01ab9db69d98-768.jpg",
+        "sha256": "58761d52c33b0ac7d56588391208bd40588f5986d28a1798cf5413b58bb1d5e8",
+        "bytes": 23622
+      },
+      {
+        "index": 132,
+        "sourceKey": "83918f02-403a-4339-b878-e224e68b357d",
+        "url": "https://www.jonway.studio/assets/83918f02-403a-4339-b878-e224e68b357d-768.jpg",
+        "sha256": "3af8dff52f9119e5265fbda78eddc83e255d110a7bf170d9a8f413596f4174ba",
+        "bytes": 70707
+      },
+      {
+        "index": 133,
+        "sourceKey": "2941e929-8b9f-4801-a258-73ceafadfecc",
+        "url": "https://www.jonway.studio/assets/2941e929-8b9f-4801-a258-73ceafadfecc-768.jpg",
+        "sha256": "13c601fad37bbf247534fb85d60be59b31c0995c4e854f83f13a8533239f975d",
+        "bytes": 30061
+      },
+      {
+        "index": 134,
+        "sourceKey": "88e85eab-6a98-4ae5-a2f5-fc9da711ef67",
+        "url": "https://www.jonway.studio/assets/88e85eab-6a98-4ae5-a2f5-fc9da711ef67-768.jpg",
+        "sha256": "796308476aebcb35b5119cd2c7c6a817b596e2b6f35f1f32333bc3526602a94b",
+        "bytes": 43337
+      },
+      {
+        "index": 135,
+        "sourceKey": "ae23ae6f-60d8-4167-83d6-ee07920aaea5",
+        "url": "https://www.jonway.studio/assets/ae23ae6f-60d8-4167-83d6-ee07920aaea5-768.jpg",
+        "sha256": "3a519baa3476bd3f77ac3a16a3da88767c10304aa26066a61790fbc338942b78",
+        "bytes": 27048
+      },
+      {
+        "index": 136,
+        "sourceKey": "5a70e14f-c323-4495-8b24-ae66a93c7b8d",
+        "url": "https://www.jonway.studio/assets/5a70e14f-c323-4495-8b24-ae66a93c7b8d-768.jpg",
+        "sha256": "3b5b1d4844b290fdbd2046b2c2997e6128681d16021149dfe6e08bf8408dfc21",
+        "bytes": 45403
+      },
+      {
+        "index": 137,
+        "sourceKey": "f41011e9-775d-43ca-832b-9422dae3c3d2",
+        "url": "https://www.jonway.studio/assets/f41011e9-775d-43ca-832b-9422dae3c3d2-768.jpg",
+        "sha256": "904cf6c3d97da5816c0a8b3d68556f9e83cbe0bb0b6316289257c9fdeb5c165d",
+        "bytes": 9168
+      },
+      {
+        "index": 138,
+        "sourceKey": "975725c3-c19e-4ff9-a7c0-dec381666df8",
+        "url": "https://www.jonway.studio/assets/975725c3-c19e-4ff9-a7c0-dec381666df8-768.jpg",
+        "sha256": "3946211ecc96f8017b6ea6d02e5e390f2ec2a0691d56995a1346004fa3a4af90",
+        "bytes": 10438
+      },
+      {
+        "index": 139,
+        "sourceKey": "fc5f4649-9638-457d-b459-892abe256104",
+        "url": "https://www.jonway.studio/assets/fc5f4649-9638-457d-b459-892abe256104-768.jpg",
+        "sha256": "8438b15d68c3c6dd617fb2244b8a1e78335605c372a68440f279c3a326ce7f87",
+        "bytes": 14755
+      },
+      {
+        "index": 140,
+        "sourceKey": "74595650-8265-4f75-b51f-b6f13baaef5f",
+        "url": "https://www.jonway.studio/assets/74595650-8265-4f75-b51f-b6f13baaef5f-768.jpg",
+        "sha256": "f6954aa7126f478cebaa7ef1a5945bb8f28ae87353e0c2812b389dc911caa2de",
+        "bytes": 88804
+      },
+      {
+        "index": 141,
+        "sourceKey": "d0ef6880-4206-461c-8f01-f4e5e4fec7ec",
+        "url": "https://www.jonway.studio/assets/d0ef6880-4206-461c-8f01-f4e5e4fec7ec-768.jpg",
+        "sha256": "01e47bcc93624bead98b410ddd46c6c86c87395e7191370ba974e40ccd42df4b",
+        "bytes": 9838
+      },
+      {
+        "index": 142,
+        "sourceKey": "ea8c25ab-3584-4171-825b-34884a743111",
+        "url": "https://www.jonway.studio/assets/ea8c25ab-3584-4171-825b-34884a743111-768.jpg",
+        "sha256": "ecdf1d07a35dd943130101af8f211672e1b41076383b6d3b97ae96ae8374ba3b",
+        "bytes": 19210
+      },
+      {
+        "index": 143,
+        "sourceKey": "2ec0ffed-379b-498c-bc0c-9b92c742c156",
+        "url": "https://www.jonway.studio/assets/2ec0ffed-379b-498c-bc0c-9b92c742c156-768.jpg",
+        "sha256": "8d420fed2de2e15f86ea6af6ab5211107921ffbcbc0c7bfbd028a38ee1da3f1a",
+        "bytes": 23084
+      },
+      {
+        "index": 144,
+        "sourceKey": "3665da55-0305-4e70-b1c6-28ac320f8972",
+        "url": "https://www.jonway.studio/assets/3665da55-0305-4e70-b1c6-28ac320f8972-768.jpg",
+        "sha256": "31c78cfde8d9f601ab2a149ebb63edbdb585e56bfdd203ef846901dd9b38cb34",
+        "bytes": 70362
+      },
+      {
+        "index": 145,
+        "sourceKey": "6618f8b0-ec74-4e19-afe9-ad86851a70d5",
+        "url": "https://www.jonway.studio/assets/6618f8b0-ec74-4e19-afe9-ad86851a70d5-768.jpg",
+        "sha256": "f7f38192b4846274d56cf36b27c40b33343fdc26e48982aa4ba7aff7e0e1c66b",
+        "bytes": 10422
+      },
+      {
+        "index": 146,
+        "sourceKey": "c6ad423a-4686-41eb-89e0-87ccb2144c50",
+        "url": "https://www.jonway.studio/assets/c6ad423a-4686-41eb-89e0-87ccb2144c50-768.jpg",
+        "sha256": "f1e905b34098ded1560ac6a8495c418a8c702a96d4e4abd4d176e6f793fcc595",
+        "bytes": 15943
+      },
+      {
+        "index": 147,
+        "sourceKey": "ed6e8969-a5e5-4470-95df-8093379f6e3a",
+        "url": "https://www.jonway.studio/assets/ed6e8969-a5e5-4470-95df-8093379f6e3a-768.jpg",
+        "sha256": "22a11ea808ca6ea27277e47eeddd390d67d6ef608a032293cdb9157e427fac65",
+        "bytes": 12347
+      },
+      {
+        "index": 148,
+        "sourceKey": "ff71d7aa-7a6e-428c-85f5-fd72a7678017",
+        "url": "https://www.jonway.studio/assets/ff71d7aa-7a6e-428c-85f5-fd72a7678017-768.jpg",
+        "sha256": "433599ffac89fdde3c08ce8b474771e7548f6bfcfda3d3fe7225507bf137bfe3",
+        "bytes": 14127
+      },
+      {
+        "index": 149,
+        "sourceKey": "af58d36d-bde6-47f1-96b1-6e4f76bd0840",
+        "url": "https://www.jonway.studio/assets/af58d36d-bde6-47f1-96b1-6e4f76bd0840-768.jpg",
+        "sha256": "b3b8c9be3da56a553aa9718fab3b75c9c85e3d62bee94d3161c40a6de4ba4cd3",
+        "bytes": 31243
+      },
+      {
+        "index": 150,
+        "sourceKey": "11db61fb-b835-4bd7-95b4-8ff3e78e581b",
+        "url": "https://www.jonway.studio/assets/11db61fb-b835-4bd7-95b4-8ff3e78e581b-768.jpg",
+        "sha256": "3c8488f915b3a1edc97989102a0fffb6c0c29de1608b25a8c07fa047b0faa3d4",
+        "bytes": 12112
+      },
+      {
+        "index": 151,
+        "sourceKey": "43e30881-c45f-4ad3-b0b7-f34b04db772b",
+        "url": "https://www.jonway.studio/assets/43e30881-c45f-4ad3-b0b7-f34b04db772b-768.jpg",
+        "sha256": "30e32749daf5a190045a77d281080597425214e2cc3279cdac9f92a352a37100",
+        "bytes": 61298
+      },
+      {
+        "index": 152,
+        "sourceKey": "2a9bdbf2-fa34-4b79-8fae-033dd5514ee6",
+        "url": "https://www.jonway.studio/assets/2a9bdbf2-fa34-4b79-8fae-033dd5514ee6-768.jpg",
+        "sha256": "4cf229ce0c0d843fc1e3eaf5feab725b9ad6153c8088fb74a895966b793420dc",
+        "bytes": 75505
+      },
+      {
+        "index": 153,
+        "sourceKey": "ff138349-158e-4279-b394-52f65bd91bea",
+        "url": "https://www.jonway.studio/assets/ff138349-158e-4279-b394-52f65bd91bea-768.jpg",
+        "sha256": "0f332496ef0916a79c1277cca4ff073d772d789fe07bac43aa7ddd2466096546",
+        "bytes": 12362
+      },
+      {
+        "index": 154,
+        "sourceKey": "fd6bae83-2404-47d5-9762-ef47274c7e6b",
+        "url": "https://www.jonway.studio/assets/fd6bae83-2404-47d5-9762-ef47274c7e6b-768.jpg",
+        "sha256": "14244c507723448994a15eb8c5e13789c6c976dd9f603632c739ce3524453371",
+        "bytes": 14785
+      },
+      {
+        "index": 155,
+        "sourceKey": "a642c7b8-ae58-41b4-b604-2391fd620955",
+        "url": "https://www.jonway.studio/assets/a642c7b8-ae58-41b4-b604-2391fd620955-768.jpg",
+        "sha256": "a0d5ccefc309fcaf3310201730a683e14e6c545951c6e40f6f35dca69fb17b60",
+        "bytes": 20906
+      },
+      {
+        "index": 156,
+        "sourceKey": "c982e2d6-ed64-4ea4-a0c4-ed5dc0f4807a",
+        "url": "https://www.jonway.studio/assets/c982e2d6-ed64-4ea4-a0c4-ed5dc0f4807a-768.jpg",
+        "sha256": "a6c50be370f4d21f9e418aefa04b00484b467dd02e5d846b711579af29772e71",
+        "bytes": 47072
+      },
+      {
+        "index": 157,
+        "sourceKey": "deea2ba5-77f2-4fe4-b1c7-b3fdd3b8cce9",
+        "url": "https://www.jonway.studio/assets/deea2ba5-77f2-4fe4-b1c7-b3fdd3b8cce9-768.jpg",
+        "sha256": "cf838261ec15a2da09619ba125f4fdcf3e245aab7fab1bb700e32d3aa366b163",
+        "bytes": 19934
+      },
+      {
+        "index": 158,
+        "sourceKey": "475071b5-07f5-458a-98e7-215c0f4aeeb6",
+        "url": "https://www.jonway.studio/assets/475071b5-07f5-458a-98e7-215c0f4aeeb6-768.jpg",
+        "sha256": "7a1366dfe0973a63efc12556ce12958abeb85c1bdb173cc74ee281d586bd5637",
+        "bytes": 57474
+      },
+      {
+        "index": 159,
+        "sourceKey": "98bf3b16-b2ee-40bb-b0dd-313e600903b0",
+        "url": "https://www.jonway.studio/assets/98bf3b16-b2ee-40bb-b0dd-313e600903b0-768.jpg",
+        "sha256": "780b7cf22850b94dea32549af15960fd24e5ad31c21bb5e27c51a3bbe89f26f0",
+        "bytes": 20882
+      },
+      {
+        "index": 160,
+        "sourceKey": "59107cb3-5f60-45fb-8733-97f617680b6e",
+        "url": "https://www.jonway.studio/assets/59107cb3-5f60-45fb-8733-97f617680b6e-768.jpg",
+        "sha256": "f97fa0b72550d61bbb01ee573a30c1e01c6964a499490443fb194406e1172587",
+        "bytes": 14451
+      },
+      {
+        "index": 161,
+        "sourceKey": "0357e4bd-22b7-4ebc-bbf8-b4269df9c79c",
+        "url": "https://www.jonway.studio/assets/0357e4bd-22b7-4ebc-bbf8-b4269df9c79c-768.jpg",
+        "sha256": "366b58f07eb84efdb9be94bcaef0aa2ff67856c89c81b27e4c7878c915f1b97a",
+        "bytes": 388685
+      },
+      {
+        "index": 162,
+        "sourceKey": "4e35b3a8-5866-474f-ab3b-bb1ba2fd9167",
+        "url": "https://www.jonway.studio/assets/4e35b3a8-5866-474f-ab3b-bb1ba2fd9167-768.jpg",
+        "sha256": "e9a2dc6efd3267ab82999a48b7ceb63a2c218a72a80505eea6b1238ed058b2c6",
+        "bytes": 366031
+      },
+      {
+        "index": 163,
+        "sourceKey": "76576d58-ae92-45f6-8261-6421e73df238",
+        "url": "https://www.jonway.studio/assets/76576d58-ae92-45f6-8261-6421e73df238-768.jpg",
+        "sha256": "662be8458a95bcf094986bb08e5f0c6bbac1ba4a1b1c90ccfc71c1be50f0b16d",
+        "bytes": 56743
+      },
+      {
+        "index": 164,
+        "sourceKey": "26c068bd-ef2d-411d-a376-89be06e4f33c",
+        "url": "https://www.jonway.studio/assets/26c068bd-ef2d-411d-a376-89be06e4f33c-768.jpg",
+        "sha256": "e31ada6c6a90e6114724bb025a6ca538f95d3dc7f027fbd79584539f579c17be",
+        "bytes": 74518
+      },
+      {
+        "index": 165,
+        "sourceKey": "2f8cf6e1-57dd-457c-ad90-ed51451c4e85",
+        "url": "https://www.jonway.studio/assets/2f8cf6e1-57dd-457c-ad90-ed51451c4e85-768.jpg",
+        "sha256": "d40235d3e0272c2965a486d851145943dd7f3462872cb9bd998e622f1fedcb49",
+        "bytes": 58898
+      },
+      {
+        "index": 166,
+        "sourceKey": "1fbed314-d4fd-44c4-844a-3d83bcbc274c",
+        "url": "https://www.jonway.studio/assets/1fbed314-d4fd-44c4-844a-3d83bcbc274c-768.jpg",
+        "sha256": "ce98558192df8110239d03384d21bebe19b96dbe752e73a002db8cc85e387206",
+        "bytes": 26892
+      },
+      {
+        "index": 167,
+        "sourceKey": "52b7e399-b260-428d-92b6-db7847d365bc",
+        "url": "https://www.jonway.studio/assets/52b7e399-b260-428d-92b6-db7847d365bc-768.jpg",
+        "sha256": "14d7396589ce0fe1dff64ed8d03a7a434efa1115923eae8069b8196bb346166f",
+        "bytes": 57003
+      },
+      {
+        "index": 168,
+        "sourceKey": "112ceaae-97d2-483b-b725-5d5994f1b68d",
+        "url": "https://www.jonway.studio/assets/112ceaae-97d2-483b-b725-5d5994f1b68d-768.jpg",
+        "sha256": "348c079ad827f48761ee31c6c8602f67f52a8816554931cf2ed943e35dd527ca",
+        "bytes": 26150
+      },
+      {
+        "index": 169,
+        "sourceKey": "257c926d-de01-4274-a988-b678a5426c11",
+        "url": "https://www.jonway.studio/assets/257c926d-de01-4274-a988-b678a5426c11-768.jpg",
+        "sha256": "232a66accce35414ab3699642b7b761a901d7e6d69b95bfc6ccf964c59780fa5",
+        "bytes": 17850
+      },
+      {
+        "index": 170,
+        "sourceKey": "3ca90582-ed6c-46a9-b651-c76972b0d79b",
+        "url": "https://www.jonway.studio/assets/3ca90582-ed6c-46a9-b651-c76972b0d79b-768.jpg",
+        "sha256": "2195e1580f6bb3d8d116e625516d445f53c5440df4dd70aa7c7f321739a5ecef",
+        "bytes": 27882
+      },
+      {
+        "index": 171,
+        "sourceKey": "e45a7963-df7a-40e0-9bec-7431a0bd6a07",
+        "url": "https://www.jonway.studio/assets/e45a7963-df7a-40e0-9bec-7431a0bd6a07-768.jpg",
+        "sha256": "39885025209a74936ac6ffa9faa044d7abfad6db661707c77b50019a0c7129f3",
+        "bytes": 70377
+      },
+      {
+        "index": 172,
+        "sourceKey": "e58febbc-298d-4eb3-8929-108e92cd7f71",
+        "url": "https://www.jonway.studio/assets/e58febbc-298d-4eb3-8929-108e92cd7f71-768.jpg",
+        "sha256": "74a730f2962e248530e56c45127f2baa810f9af11da3238ecec8126c7c7f3f95",
+        "bytes": 118165
+      },
+      {
+        "index": 173,
+        "sourceKey": "734fa888-74b3-4fd9-ae2c-da29d1eb9005",
+        "url": "https://www.jonway.studio/assets/734fa888-74b3-4fd9-ae2c-da29d1eb9005-768.jpg",
+        "sha256": "e5bd7502cab1c1caa0dbf73461b6ea58d35e99482c6157a4ce72553fc037d004",
+        "bytes": 37959
+      },
+      {
+        "index": 174,
+        "sourceKey": "aa2b2288-3b83-41d7-a350-21b28831ab53",
+        "url": "https://www.jonway.studio/assets/aa2b2288-3b83-41d7-a350-21b28831ab53-768.jpg",
+        "sha256": "23ed7f83a89c7dd90e43749bb7a65573f705839f7b2e180bdff342cff1d59821",
+        "bytes": 32125
+      },
+      {
+        "index": 175,
+        "sourceKey": "9b0692e0-c239-4ab5-8a66-4e0844d8b7f2",
+        "url": "https://www.jonway.studio/assets/9b0692e0-c239-4ab5-8a66-4e0844d8b7f2-768.jpg",
+        "sha256": "901a5d5f3ce8138b5bf505fd7740be692bad14c157701685728c6f49d76215ba",
+        "bytes": 24543
+      },
+      {
+        "index": 176,
+        "sourceKey": "7f2fcbb0-69d5-4d10-8b09-14a2673d054a",
+        "url": "https://www.jonway.studio/assets/7f2fcbb0-69d5-4d10-8b09-14a2673d054a-768.jpg",
+        "sha256": "25dc4c5ec09abce83482055d1bf422eef5506a2b095e8ebfc75b41bc753384be",
+        "bytes": 34789
+      },
+      {
+        "index": 177,
+        "sourceKey": "696e22cc-143e-400f-b103-ee26d57cb045",
+        "url": "https://www.jonway.studio/assets/696e22cc-143e-400f-b103-ee26d57cb045-768.jpg",
+        "sha256": "164639714b66eaaac5323ea91f7edb7f1078b92e56ec4615bd8b53f5e2890e18",
+        "bytes": 19598
+      },
+      {
+        "index": 178,
+        "sourceKey": "eebb0652-2d27-40ef-976e-a0fc6c08a45f",
+        "url": "https://www.jonway.studio/assets/eebb0652-2d27-40ef-976e-a0fc6c08a45f-768.jpg",
+        "sha256": "7752a41a052d637f429821b8ace3759759b788e7a342f1449d7b741274b9ac57",
+        "bytes": 4596
+      },
+      {
+        "index": 179,
+        "sourceKey": "18fb629b-d257-40a5-9a01-683e3924f8b9",
+        "url": "https://www.jonway.studio/assets/18fb629b-d257-40a5-9a01-683e3924f8b9-768.jpg",
+        "sha256": "0877d2853f72bfaff6b6f537434d24a18c490c39cc1c691f4d54eb3f89a94458",
+        "bytes": 41835
+      },
+      {
+        "index": 180,
+        "sourceKey": "79dee6c2-0838-43f1-8772-6355abd23833",
+        "url": "https://www.jonway.studio/assets/79dee6c2-0838-43f1-8772-6355abd23833-768.jpg",
+        "sha256": "058ad52f7db6a04e6e5514fcc0214a6c79d84877b15b6f5104536f4f0b710159",
+        "bytes": 38290
+      },
+      {
+        "index": 181,
+        "sourceKey": "74bd9104-d996-4947-96af-53dc5d41e7a3",
+        "url": "https://www.jonway.studio/assets/74bd9104-d996-4947-96af-53dc5d41e7a3-768.jpg",
+        "sha256": "011ab565085894acdc2a87e88997aaa8554f027475361287df4148ee2ce403df",
+        "bytes": 24199
+      },
+      {
+        "index": 182,
+        "sourceKey": "2d733050-2252-4ee6-b2ab-9e1d03498e69",
+        "url": "https://www.jonway.studio/assets/2d733050-2252-4ee6-b2ab-9e1d03498e69-768.jpg",
+        "sha256": "27f347c78b8cc868ffa92e6deadb5a86a1cf5e632f59d360ef4a1e21fa8118cb",
+        "bytes": 45495
+      },
+      {
+        "index": 183,
+        "sourceKey": "c9613f81-c219-449c-9028-be89b4f34a4b",
+        "url": "https://www.jonway.studio/assets/c9613f81-c219-449c-9028-be89b4f34a4b-768.jpg",
+        "sha256": "ff49237f88e4d9ee7982e240be60f51fec92b12bca022267b58db6d26228bc5d",
+        "bytes": 314795
+      },
+      {
+        "index": 184,
+        "sourceKey": "86f17d1e-b5f0-4e48-a2d3-a166e6127c97",
+        "url": "https://www.jonway.studio/assets/86f17d1e-b5f0-4e48-a2d3-a166e6127c97-768.jpg",
+        "sha256": "6a5fb56ce59709166c42b5a7c7ef1059497f6ecd8027623264239d68ca10ed26",
+        "bytes": 47891
+      },
+      {
+        "index": 185,
+        "sourceKey": "1d16db85-5b11-4d7d-9c16-c71b66ceb34a",
+        "url": "https://www.jonway.studio/assets/1d16db85-5b11-4d7d-9c16-c71b66ceb34a-768.jpg",
+        "sha256": "bebcc1feb0a235e9b04550a9b081addafbfaf14a8878fb6ba60ddf0be4731e76",
+        "bytes": 45772
+      },
+      {
+        "index": 186,
+        "sourceKey": "9e5435d2-2219-4434-bc49-3d9db89b9ce4",
+        "url": "https://www.jonway.studio/assets/9e5435d2-2219-4434-bc49-3d9db89b9ce4-768.jpg",
+        "sha256": "a393fdc78bc42dd3ed4f912eef10be94e96c4d922f0a172aafcc6a9ec072a13b",
+        "bytes": 35997
+      },
+      {
+        "index": 187,
+        "sourceKey": "d164c1a7-24af-471f-9a68-7050994bc8f4",
+        "url": "https://www.jonway.studio/assets/d164c1a7-24af-471f-9a68-7050994bc8f4-768.jpg",
+        "sha256": "e9a392ebae9c2dc51c98050a76d714742dd6e041add3fa0aed7cbe8548898340",
+        "bytes": 40339
+      },
+      {
+        "index": 188,
+        "sourceKey": "5c505339-4139-47d5-8f53-5483f4bc2468",
+        "url": "https://www.jonway.studio/assets/5c505339-4139-47d5-8f53-5483f4bc2468-768.jpg",
+        "sha256": "7387d7e5cce9c89851140161873d6feaac4823c8eaa0f2d8631af57b24b5cc63",
+        "bytes": 59188
+      },
+      {
+        "index": 189,
+        "sourceKey": "250b760c-d649-49d1-b592-000c1e5829e4",
+        "url": "https://www.jonway.studio/assets/250b760c-d649-49d1-b592-000c1e5829e4-768.jpg",
+        "sha256": "c2ea542df6631f3473da20c8eb4cd21ee346fe0ff30ae1cbe183651047d2a804",
+        "bytes": 20796
+      },
+      {
+        "index": 190,
+        "sourceKey": "ee0cf55d-39e7-4dda-9b6b-235e1dee804f",
+        "url": "https://www.jonway.studio/assets/ee0cf55d-39e7-4dda-9b6b-235e1dee804f-768.jpg",
+        "sha256": "8d08487b2a5696f665eb2e80ce18fe234bfc6069c1cb4360ac93a2210c82e55f",
+        "bytes": 36903
+      },
+      {
+        "index": 191,
+        "sourceKey": "3af6bf26-469a-4700-8f0a-0aa2095a14a6",
+        "url": "https://www.jonway.studio/assets/3af6bf26-469a-4700-8f0a-0aa2095a14a6-768.jpg",
+        "sha256": "d7ab76b3402faab66a0bfa43e5e1842931344ad64bcdec4a7eb3155aad42cd79",
+        "bytes": 32740
+      },
+      {
+        "index": 192,
+        "sourceKey": "7560512d-31c3-47a1-acb4-218a1f26084a",
+        "url": "https://www.jonway.studio/assets/7560512d-31c3-47a1-acb4-218a1f26084a-768.jpg",
+        "sha256": "cc5e803e69f105fe018a494c1e6212a90e4379af0601b1cc1897fceaf579a7f7",
+        "bytes": 66828
+      },
+      {
+        "index": 193,
+        "sourceKey": "c6e088cd-bd9c-4031-8851-d809b41329cf",
+        "url": "https://www.jonway.studio/assets/c6e088cd-bd9c-4031-8851-d809b41329cf-768.jpg",
+        "sha256": "17d39b08d7ff5375582e610c4b30fdab4867b5f799f666c286b20f7632aadfab",
+        "bytes": 139779
+      },
+      {
+        "index": 194,
+        "sourceKey": "3758b6ff-0528-4b6a-80c7-0d908ec451c9",
+        "url": "https://www.jonway.studio/assets/3758b6ff-0528-4b6a-80c7-0d908ec451c9-768.jpg",
+        "sha256": "3e0b4794c993bb273064fa7c118c0aa233b3094591f24cb4356c024a91eb7a72",
+        "bytes": 115468
+      },
+      {
+        "index": 195,
+        "sourceKey": "87af038f-871f-4493-9e7b-094378feffc4",
+        "url": "https://www.jonway.studio/assets/87af038f-871f-4493-9e7b-094378feffc4-768.jpg",
+        "sha256": "5f654adfd048bd5ffe2f53f4276af2443d4886a5dfacf8aa80377b07f16889e6",
+        "bytes": 58373
+      },
+      {
+        "index": 196,
+        "sourceKey": "c1ecff2e-ef65-4a30-ae7a-9235b7819e60",
+        "url": "https://www.jonway.studio/assets/c1ecff2e-ef65-4a30-ae7a-9235b7819e60-768.jpg",
+        "sha256": "ce99bc7059f4b3da57c473686659c3aa50d4eb8b298520c3af6ac7ca39018e4a",
+        "bytes": 107132
+      },
+      {
+        "index": 197,
+        "sourceKey": "9ae7ccd5-cf3c-4645-bbeb-55289ceac6fa",
+        "url": "https://www.jonway.studio/assets/9ae7ccd5-cf3c-4645-bbeb-55289ceac6fa-768.jpg",
+        "sha256": "d173a1caafddaeb26848cdfbdd732988ce5a5058abf9b4e9a44ebac6c5cdc496",
+        "bytes": 49859
+      },
+      {
+        "index": 198,
+        "sourceKey": "7bb8a2e1-16c1-4af9-aaf0-287c616d963a",
+        "url": "https://www.jonway.studio/assets/7bb8a2e1-16c1-4af9-aaf0-287c616d963a-768.jpg",
+        "sha256": "fbf8d550cde47fb7204e99051f3b16a48bb535167aea8d3f077eec2d4aaa1ac0",
+        "bytes": 120822
+      },
+      {
+        "index": 199,
+        "sourceKey": "a83281ad-ba6c-4e56-860c-1de4eff993f0",
+        "url": "https://www.jonway.studio/assets/a83281ad-ba6c-4e56-860c-1de4eff993f0-768.jpg",
+        "sha256": "7f2577f42aa627b3c06a3eac9c7cd08717c31f532d805f84ed4109aac8ced437",
+        "bytes": 91309
+      }
+    ]
+  },
+  "collapsedMaterial": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/collapsed-cover-entry-atlas-2000x900.webp",
+    "sha256": "a2e7f36f87b131c034838d625354342956e553e7814e4c215f96b328499fa5ce",
+    "bytes": 1134864,
+    "width": 2000,
+    "height": 900,
+    "pixels": 1800000,
+    "sourceManifestSHA256": "485af56d3532e3ca0893d52cf096bdd75971cb982cc2ec92273702c26a415b60",
+    "blocks": [
+      {
+        "layout": "Desktop",
+        "scale": 1,
+        "x": 0,
+        "y": 0,
+        "columns": 2,
+        "rows": 185,
+        "sourceW": 8,
+        "sourceH": 740
+      },
+      {
+        "layout": "Desktop",
+        "scale": 2,
+        "x": 400,
+        "y": 0,
+        "columns": 4,
+        "rows": 185,
+        "sourceW": 8,
+        "sourceH": 740
+      },
+      {
+        "layout": "Desktop",
+        "scale": 3,
+        "x": 0,
+        "y": 185,
+        "columns": 6,
+        "rows": 185,
+        "sourceW": 8,
+        "sourceH": 740
+      },
+      {
+        "layout": "Desktop",
+        "scale": 4,
+        "x": 0,
+        "y": 370,
+        "columns": 8,
+        "rows": 185,
+        "sourceW": 8,
+        "sourceH": 740
+      },
+      {
+        "layout": "Phone",
+        "scale": 1,
+        "x": 1600,
+        "y": 370,
+        "columns": 2,
+        "rows": 342,
+        "sourceW": 4,
+        "sourceH": 684
+      },
+      {
+        "layout": "Phone",
+        "scale": 2,
+        "x": 0,
+        "y": 555,
+        "columns": 2,
+        "rows": 342,
+        "sourceW": 4,
+        "sourceH": 684
+      },
+      {
+        "layout": "Phone",
+        "scale": 3,
+        "x": 400,
+        "y": 555,
+        "columns": 3,
+        "rows": 342,
+        "sourceW": 4,
+        "sourceH": 684
+      },
+      {
+        "layout": "Phone",
+        "scale": 4,
+        "x": 1200,
+        "y": 0,
+        "columns": 4,
+        "rows": 342,
+        "sourceW": 4,
+        "sourceH": 684
+      }
+    ],
+    "derivation": "Independent center-cover/bilinear point sampling from200actualphotos. Eight packed blocks retainD/Phone sample grids at entryscale1/2/3/4 so transformedcolumns do not just magnify a low-resolution base. Exactsourcepixelate grid facts; fractionalintermediate scales are independently approximated by neareststoredscale. No wholehero screenshot or sourceJS.",
+    "runtimeURL": "https://framerusercontent.com/images/dXd5Hm1l7gcGD8ljlC1EtFU3TI.webp",
+    "uploadReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/atlas-upload-receipt-301.json",
+      "sha256": "89c7aa5c7196207ffea854f6dabd12e6850ccd7564ad4c91b20a13931bf0d2fe",
+      "bytes": 1396
+    }
+  },
+  "markMaterial": {
+    "sourceURL": "https://www.jonway.studio/assets/4a57e3ad-bb24-4d56-8c73-f7dc8ed1ea2d.webp",
+    "sourceSHA256": "50ff4f48a5985699b29bde6c43972f1143ae2da4b29ce8f70efef619617bffa3",
+    "frames": 200,
+    "frameMilliseconds": 50,
+    "frameSize": [
+      96,
+      120
+    ],
+    "resampling": false,
+    "sheets": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/project-mark-sheet-0.webp",
+        "sha256": "0e757be153c26fd5838b54dcef94b24457e76f1c9f666fe8e2070ec1be662480",
+        "bytes": 38380,
+        "width": 1920,
+        "height": 600,
+        "pixels": 1152000,
+        "firstFrame": 0,
+        "lastFrame": 99
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/project-mark-sheet-1.webp",
+        "sha256": "ae260f0a6d7c75e22667b9d8d49391c8d1d88c2329b0c2bab4484109c04e6cee",
+        "bytes": 29748,
+        "width": 1920,
+        "height": 600,
+        "pixels": 1152000,
+        "firstFrame": 100,
+        "lastFrame": 199
+      }
+    ],
+    "pixelProof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-mark-pixel-proof.json",
+      "sha256": "9051803ccfbd79fa2b3378878cfa3a5788722070e496fa84ecf39334a1b9efc4",
+      "bytes": 783
+    }
+  },
+  "observedEffect": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-effect-entry-facts.json",
+    "sha256": "dbcbc209e8349d8d90794268dbdedabe459623e7cccaf4d02bc9551f21cde883",
+    "bytes": 2055
+  },
+  "footerPixelBounds": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO011/source-effect-entry-facts.json",
+    "sha256": "dbcbc209e8349d8d90794268dbdedabe459623e7cccaf4d02bc9551f21cde883",
+    "bytes": 2055
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "referenceID": "HERO-012",
+  "sourceURL": "https://www.mezmo.com/",
+  "capturedAt": "2026-11-01",
+  "policy": "Current original is the target. Preserve historical gallery-based pages and credits as separate comparisons. The new recreation stays in Source inspiration.",
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
+    "sha256": "5fde3fcbec56312d9a78f388d12abce2a01def9ea282bd6e52ca7be2dfe56155",
+    "bytes": 15512,
+    "exports": [
+      "SourceMezmoTerminal"
+    ]
+  },
+  "sourcePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/source-plan.json",
+    "sha256": "ed20b6c8cd833714b035683749ac7ac2715c457b16ff825f6d8d3e25b1c57d84",
+    "bytes": 4650
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/native-recipe.json",
+    "sha256": "2337cfd256af3014bfcb77cfcf0a98654662e7335d3fa70218a67ab61d8a8fb1",
+    "bytes": 5765
+  },
+  "fontEvidence": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/source-fonts.json",
+    "sha256": "ee74b8413673bd1f7e40488c2dec52587f7b4d159c5d0b05e26d13c01471a38d",
+    "bytes": 3757
+  },
+  "actualSourceEvidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/method.json",
+      "sha256": "ac2c0569369594a469ebb4f8ce9b403a906660b26cc8d71ff8e166041710e3e2",
+      "bytes": 514
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/behavior.json",
+      "sha256": "bd03c6b2ff022eea45b1a86e2f6305dc5a3ffa7674253a75fa87b602a1760bc1",
+      "bytes": 1560317
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/responsive-followup.json",
+      "sha256": "517dfd7372c76c465575f92e326e44c77cf9b5b7cc88e0c5a8f520b6686a55a3",
+      "bytes": 135410
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/source-response.html",
+      "sha256": "68bfd9c6c73a879b48fbeef506aff05ac5a36b0b4cd2e2304f4cbfe780b36bc1",
+      "bytes": 252163
+    }
+  ],
+  "check": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
+    "sha256": "8331767804c68ea9f514bc31c3fc442357fed1dd3d694947342d5e74d7c2c7e8",
+    "bytes": 25738,
+    "command": "nix build .#checks.x86_64-linux.source-current-originals --no-link",
+    "optionalGenuineMedia": "MONARCHIC_ORIGINAL_SITES_DIR points to retained original-sites-2026-11-01 for the same focused check using genuine source media; default reproducible fixture uses owned material."
+  },
+  "localProof": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/implementation/focused-browser-result.json",
+    "sha256": "15af531fad50a7a132bcf046cae4100bd4b0ab31220c14a2a56545184d1901cd",
+    "bytes": 5712,
+    "checks": 41,
+    "retainedSourceMedia": true,
+    "actualFramerSaved": false,
+    "actualFramerPreview": false
+  },
+  "sourceComparison": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/candidate-comparison-method.json",
+    "sha256": "f9345cdaa661806024bfb569c768132f466832d2d22a47eccfc3685778b26321",
+    "bytes": 557
+  },
+  "intentionalDifferences": [
+    "Only the actually exercised default payment scenario is recreated; transcript/configuration summaries and typing rhythm are independently authored, with no backend or tool calls.",
+    "Source AURA ANSI wordmark uses semantic colored glyph rows and is hidden on Phone as actually observed.",
+    "Cookie overlay, unrelated product forms, complete dropdown navigation, five-scenario selection and full below-fold website are excluded. Native heading, CTAs and initial following-content handoff are separate editable layers."
+  ],
+  "remainingGates": [
+    "Root final source-comparison review",
+    "Genuine registered Framer public export IDs and native source font binding",
+    "Distinct regular current-original page creation, save and editor reload",
+    "Actual Framer Desktop/Phone inputs, source media paint, pause, reverse and responsive state checks"
+  ],
+  "connectedDesktopOrIABUsed": false
+}
