@@ -96,5 +96,15 @@
       "byteIdentical": true
     },
     "proof": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/validation/type-compatibility/equivalence.json"
+  },
+  "nativeInputCompatibility": {
+    "sourceSHA256": "567ff00135a888e0eca786d4fa8f024619774d22e26e4ab11c54f0d322fe657a",
+    "parentSHA256": "f763f1d2e36b8594fe0e3f1793de043936a442113fb9615129c9ec95a2adee11",
+    "scope": "Only native callback forwarding,350ms alternate-channel activation bridge, panel mouse/hover leave and row mouse/hover/focus/click/tap/key handlers. Caller defaultPrevented and(event,info) are preserved; canceled first channel consumes its duplicate. Repeated same-channel gestures remain immediate.",
+    "unchangedRendererAndStoreAndSharedPrefixSHA256": "0fcdac174e155d5b3897a39fc3766c14be80af236e6e479783863963cd84abea",
+    "unchangedComponentControlsDetailAndScrambleTailSHA256": "6039406a817652232fd43b0749be176c98b1edc2d50a40b97327fa5ee85c5ffb",
+    "comparison": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-009/validation/native-input/change-scope.json",
+    "actualFramerGate": "Pending actual new native Frame bindings and pointer/hover after a reload; local native-like model is not Framer persistence.",
+    "nixOutput": "/nix/store/i489wqzyfl1hfp6g1fzd230lz3aydm7j-monarchic-website-source-vercel-light-0.0.1"
   }
 }
