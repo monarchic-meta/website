@@ -135,7 +135,11 @@ for(const width of process.env.MONARCHIC_AJEDREZ_HOST_ONLY?[]:[375,320]) {
     await page.setViewportSize({width:1440,height:1000});await flush(150)
     const replaced=await page.evaluate(()=>({oldDisconnected:!__oldPhone.isConnected,newHost:document.getElementById('host-film')!==__oldPhone,...hostSnap()}))
     await page.evaluate(()=>{document.getElementById('host-parent').style.marginTop='0px'})
-    await flush(350);const desktop=await page.evaluate(()=>hostSnap())
+    await flush(350);const visibleDesktop=await page.evaluate(()=>hostSnap())
+    // Real IntersectionObserver delivery may follow the virtual-clock advance.
+    // Advance again after delivery so the resumed clock has a frame to publish.
+    await flush(100);const desktop=await page.evaluate(()=>hostSnap())
+    fs.writeFileSync(path.join(dir,'responsive-host-desktop-readback.json'),JSON.stringify({offscreen,replaced,visibleDesktop,desktop},null,2)+'\n')
     check('responsive native replacement drops the old Phone DOM while retaining the mounted override fixture',replaced.oldDisconnected&&replaced.newHost&&desktop.tag==='SECTION'&&desktop.fixtureMounts===1&&desktop.forwardedRef)
     check('visible replacement Desktop resumes from the held clock and refits its actual480px host',desktop.playback==='playing'&&desktop.time>offscreen.time&&desktop.logicalWidth===480&&desktop.zoom===1&&desktop.rect.width===480&&desktop.documentScroll===desktop.client)
     const stalePhoneCallbacks=await page.evaluate(()=>{const records=__observerRecords.filter(r=>!r.active&&r.targets.has(__oldPhone)&&r.entries.some(e=>e.target===__oldPhone));for(const r of records)r.callback(r.entries,r.observer);return records.map(r=>r.name)})
