@@ -27,7 +27,7 @@
       852
     ],
     "desktop": "Centered portrait movie-like native component, preserve480:852aspect; quiet source credits outside the film field. No fake wide-screen crop.",
-    "phone": "Fullavailablewidth up to390 with aspect-preserving height692.25, actual native editable parts scaled by same portrait model; controls outside film; no horizontal overflow.",
+    "phone": "An authored 375 × 666 film view sits inside a 375 × 742 movie and controls group. In a 375 px desktop browser Preview, the scrollbar leaves 360 px and currently crops 15 px. A uniform responsive fit is pending; Phone source behavior remains an adaptation.",
     "clock": "A time-driven native variant/state controller with Pause/Play/Replay. No invented scrolling. Sourcecut order/time are the contract; source audio omitted unless actually inspected/licensed."
   },
   "phases": [
@@ -251,7 +251,8 @@
       "from": 52,
       "to": 52.314558,
       "state": "end-credits",
-      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited.",
+      "sourceMeaning": "closing poem composition; the historical end-credits controller key is retained for compatibility"
     }
   ],
   "families": {
@@ -661,27 +662,291 @@
       "motion": "Keyframe native text positions from sparse distribution into straight vertical/horizontal rules at48–51s."
     },
     "end-credits": {
-      "background": "#111111",
+      "sourceRole": "Closing poem layout, not a study-credit screen.",
+      "legacyControllerKey": "end-credits",
+      "background": "#2c2c2c",
+      "sourceObservedInk": {
+        "title": [
+          185,
+          45
+        ],
+        "firstBlock": [
+          185,
+          279
+        ],
+        "secondLead": [
+          185,
+          364
+        ],
+        "inset": [
+          251,
+          383
+        ],
+        "thirdBlock": [
+          185,
+          450
+        ],
+        "fourthBlock": [
+          185,
+          517
+        ],
+        "reference": [
+          185,
+          790
+        ],
+        "sampledRowBands": [
+          [
+            279,
+            284
+          ],
+          [
+            288,
+            294
+          ],
+          [
+            298,
+            304
+          ],
+          [
+            307,
+            312
+          ],
+          [
+            317,
+            321
+          ],
+          [
+            328,
+            331
+          ],
+          [
+            336,
+            340
+          ],
+          [
+            342,
+            342
+          ],
+          [
+            345,
+            350
+          ],
+          [
+            364,
+            369
+          ],
+          [
+            375,
+            379
+          ],
+          [
+            383,
+            388
+          ],
+          [
+            393,
+            398
+          ],
+          [
+            403,
+            407
+          ],
+          [
+            413,
+            418
+          ],
+          [
+            421,
+            426
+          ],
+          [
+            432,
+            437
+          ],
+          [
+            450,
+            456
+          ],
+          [
+            460,
+            464
+          ],
+          [
+            469,
+            474
+          ],
+          [
+            479,
+            484
+          ],
+          [
+            488,
+            493
+          ],
+          [
+            498,
+            502
+          ],
+          [
+            517,
+            521
+          ],
+          [
+            526,
+            531
+          ],
+          [
+            536,
+            540
+          ],
+          [
+            545,
+            550
+          ],
+          [
+            555,
+            559
+          ],
+          [
+            564,
+            570
+          ]
+        ],
+        "lineHeightFit": 9.5,
+        "measurement": {
+          "roi": {
+            "x": 170,
+            "y": 260,
+            "width": 190,
+            "height": 350
+          },
+          "grayscaleThreshold": "pixel>75",
+          "rowInclusion": "at least3brightpixels",
+          "scope": "Text ink bands only; isolated descender bands may split a single text line. No source words were transcribed."
+        }
+      },
       "native": [
         {
-          "role": "credited-end-title",
-          "text": "AJEDREZ",
-          "x": 20,
-          "y": 20,
-          "width": 250,
-          "fontSize": 8,
-          "textColor": "#bdc6c3"
+          "key": "film-phase-37-title",
+          "position": "absolute",
+          "left": "185px",
+          "top": "42px",
+          "width": "250px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "7px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "AJEDREZ"
         },
         {
-          "role": "end-credit",
-          "text": "Source film / Julián Leiss",
-          "x": 20,
-          "y": 445,
-          "width": 440,
-          "fontSize": 10,
-          "textColor": "#bdc6c3"
+          "key": "film-phase-37-credit",
+          "position": "absolute",
+          "left": "185px",
+          "top": "787px",
+          "width": "250px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "7px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "REF. BORGES, J. L. (1960).\nEL HACEDOR / TEXTO INDEPENDIENTE"
+        },
+        {
+          "key": "film-phase-37-poem-stanza-01",
+          "position": "absolute",
+          "left": "185px",
+          "top": "276px",
+          "width": "150px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "8px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "Una pieza cambia de lugar.\nEl borde queda quieto.\nCada turno abre un camino\ny deja otro sin recorrer.\nLa mano se retira;\nla forma permanece.\nTodavía hay espacio\npara el siguiente paso."
+        },
+        {
+          "key": "film-phase-37-poem-stanza-02-left",
+          "position": "absolute",
+          "left": "185px",
+          "top": "361px",
+          "width": "150px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "8px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "Una pieza avanza,\nla mano descansa.\nEl borde:"
+        },
+        {
+          "key": "film-phase-37-poem-stanza-02-inset",
+          "position": "absolute",
+          "left": "251px",
+          "top": "380px",
+          "width": "170px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "8px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "conserva su forma,\nla sombra vuelve\nal centro\ny el ritmo cambia.\nOtra figura espera,\notra responde."
+        },
+        {
+          "key": "film-phase-37-poem-stanza-03",
+          "position": "absolute",
+          "left": "185px",
+          "top": "447px",
+          "width": "150px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "8px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "La mirada vuelve\nsobre un camino,\ncompara\ndos posibilidades\ny encuentra\nuna diferencia."
+        },
+        {
+          "key": "film-phase-37-poem-stanza-04",
+          "position": "absolute",
+          "left": "185px",
+          "top": "514px",
+          "width": "150px",
+          "height": "auto",
+          "fontName": "Courier Prime",
+          "fontWeight": 400,
+          "fontStyle": "normal",
+          "fontSize": "8px",
+          "lineHeight": "9.5px",
+          "textColor": "#c1cac6",
+          "visible": true,
+          "opacity": 1,
+          "text": "La mano se retira;\nla forma permanece.\nTodavía hay espacio\npara el siguiente paso.\nOtra figura espera,\notra responde."
         }
-      ]
+      ],
+      "limits": "Native box y-values are about3px above the observed Courier-like ink. Bodyfont8/9.5 and title/footer7/9.5 are available-font fits; confirm painted rows in Preview."
     }
   },
   "silhouettes": [
@@ -1193,8 +1458,104 @@
   "sourceTextPolicy": "AJEDREZ/title and brief functional labels retained. Long poem/manuscript/caption material must be a visibly declared substitute or licensed/public-domain source; do not imply exact original words.",
   "remainingFidelityGaps": [
     "Subsecond cuts and continuous internal photographic motion were not audited.",
-    "Clean full sculpture/figure photography and all contact-sheet individual photo provenance remain unavailable.",
+    "The selected film supplies genuine held photographic crops; underlying photographic authors and reuse licenses remain unverified.",
     "Source audio/voiceover is present but unlistened; do not synthesize it or claim a faithful soundtrack.",
     "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
-  ]
+  ],
+  "sourceFidelityRefinement": {
+    "status": "DESKTOP_SOURCE_ART_VERIFIED_PHONE_FIT_PENDING",
+    "plan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/plan.json",
+      "bytes": 31546,
+      "sha256": "c17cbd430d2930ad36c23dc178580331aff5d3fc4659f677cf97a054f387a466"
+    },
+    "colorSupplement": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase37-color-supplement.json",
+      "bytes": 5282,
+      "sha256": "49db625fb0675b9d63c2aa89449fee95857ddcb1ff626bf958b672e6025e73fc"
+    },
+    "paper": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-002-frames/frame-001.png",
+      "bytes": 9860,
+      "sha256": "bab1d3072d2a700b365ca7ba287cbe44a2b820a93577a94eb0a83560204a037a"
+    },
+    "titleMetadata": [
+      "The long Borges poem is not copied. The short author/title/publication citation is factual.",
+      "Tiny left-hand numeric/language codes and the version date are omitted rather than guessed.",
+      "Archive list is deliberately abridged to six clearly readable source names; do not claim a complete source-credit transcription.",
+      "Existing recreation disclosures remain outside the film."
+    ],
+    "closingText": "Independently written substitute text follows the observed closing-poem arrangement; it does not reproduce the Borges poem."
+  },
+  "nativePackaging": {
+    "method": "Three supported native component conversions retain editable scene contents, with explicit ID lineage. Ordinary Frame wrappers hold phase overrides; native instances and both definition variants remain opaque and have no phase override.",
+    "components": [
+      {
+        "phase": 2,
+        "definition": "EOdZnzUVi",
+        "primary": "M4Y0lY_c5",
+        "phone": "lN48Xgk5P",
+        "wrapper": "f9Orz_1qs"
+      },
+      {
+        "phase": 10,
+        "definition": "Vl5K6Yzbr",
+        "primary": "cpSroNJX1",
+        "phone": "mYyVGbezj",
+        "wrapper": "uJwMr9FgA"
+      },
+      {
+        "phase": 11,
+        "definition": "VH6FIZJLA",
+        "primary": "QLpwKNEMh",
+        "phone": "AuCSOnzQy",
+        "wrapper": "YOCMxk2Zh"
+      }
+    ],
+    "compilation": "The generated page exceeded 1,048,576 bytes after the native definition refresh. Reusing a third scene restores actual Preview compilation; correct saved models alone were insufficient."
+  },
+  "savedPreviewVerification": {
+    "status": "DESKTOP_CURRENT_SOURCE_ART_PASS_PHONE_FIT_PENDING",
+    "pageID": "ANWBjWXdj",
+    "afterEditorReload": true,
+    "liveFramerSourceSHA256": "cfc097445bfdacefc0239e23c012ea07133cf4a6f5f316658466bb1e5ddcd218",
+    "evidence": {
+      "full37PhaseClockRun": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-final-desktop-sequence.json",
+        "bytes": 99217,
+        "sha256": "36c2e3f0e174a56004e06b2e12e58e7e87dbaae0c45e67e3d3238ca98cc699a9"
+      },
+      "controls": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-final-desktop-controls.json",
+        "bytes": 5172,
+        "sha256": "ea410ed32ac7b3f1e161b2e0d6d526ae87aca2d97899c95f9c969f5cc3942c31"
+      },
+      "currentReusedScenes": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-refreshed-desktop-three-scene-proof.json",
+        "bytes": 21629,
+        "sha256": "9abe3419c6139ead6c5f88464b8738fd3900839ab7f74d1036f424f292ecd78b"
+      },
+      "phoneFitFailure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-phone-375-fit-failure.json",
+        "bytes": 551,
+        "sha256": "dce0c03495ab1f103c141edeae834fcb0b5e8672bb62336f3ad5ad3addef09ba"
+      },
+      "phoneNativePicker": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO002-third-component-actual-phone-picker.json",
+        "bytes": 418,
+        "sha256": "f14c8d076b5933b7e64444c3c60bdeee06eb32365f10122a083309b714bc7924"
+      }
+    },
+    "verified": [
+      "All 37 timed states reached 52.314558 seconds; actual Pause held 1.3915 seconds and Replay restarted the sequence.",
+      "After native publication and reuse of three scenes, Desktop scenes 2, 10 and 11 visibly paint current source paper, corrected serif metadata and diagrams without added study annotations.",
+      "The independently written closing poem follows the observed source arrangement with 7/8 px Courier Prime; its dark fill matches the sampled source background.",
+      "The native Phone picker selects genuine AuCSOnzQy; its definition renders at 375 × 666."
+    ],
+    "limits": [
+      "The first capture of all 37 scenes predates corrected component publication; current scenes 2, 10 and 11 have separate superseding evidence.",
+      "The full painted Phone sequence and narrow fit remain pending. The observed 375/360 px crop is a failed check.",
+      "Substitute verse and fitted fonts, held photographs, approximate cuts, still grain and omitted audio remain explicit source differences."
+    ]
+  }
 }
