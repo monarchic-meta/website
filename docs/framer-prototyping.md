@@ -196,6 +196,9 @@ contents. A reversible native opacity edit, `1 → 0.99 → 1`, on each explicit
 opaque Primary variant refreshed the page Canvas. Full Preview then exposed the
 1,048,576-byte module limit. Check component publication, Phone metrics and page
 compilation together; correct saved attributes alone do not establish success.
+An empty error-level console log is insufficient: inspect the editor's size
+warning and require a populated Preview after a fresh reload. A cached earlier
+Preview can still play while the current page export is rejected.
 
 ## Live code graphics
 

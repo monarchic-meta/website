@@ -94,6 +94,7 @@ nix build --no-link -L .#checks.x86_64-linux.hero-behavior
 nix build --no-link -L .#checks.x86_64-linux.native-hero-behaviors
 nix build --no-link -L .#checks.x86_64-linux.source-native-tap
 nix build --no-link -L .#checks.x86_64-linux.hero-behavior-integration
+nix build --no-link -L .#checks.x86_64-linux.source-format-pool
 ```
 
 The additive mixed check preserves all sixty legacy placements in each tested
@@ -101,3 +102,8 @@ pool realm and adds the new procedural actors. It compares fresh artwork pixels
 and resource counts. Native source fidelity, actual Framer compilation and saved
 page verification remain separate, reference-specific requirements. Use the
 [sequence audit](../../design-inspiration/hero-behavior.md) for those boundaries.
+
+The focused Format pool check uses owned fixture images for reproducibility.
+Its optional `H13_NATIVE_CHIP_ASSETS` packet supplies separately retained genuine
+source bitmaps for a source-media run. Keep those results distinct from the
+actual Framer variant, visible-ink and Canvas checks.
