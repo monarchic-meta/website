@@ -12,6 +12,10 @@ owner's selected revision from a site's current live design. A recreation
 retains its creator, source links and fidelity notes under **Source inspiration**.
 New code or native authorship does not turn a source composition into an original.
 
+The [standalone handoff](handoff.md) and [evidence manifest](manifest.json)
+include all eighteen source pages and nine original Round02 pages. They separate
+returned IDs and local checks from final saved-state and post-reload verification.
+
 ## Composition contract
 
 The `native/HERO-xxx.json` recipes describe editable frames, shapes, text and

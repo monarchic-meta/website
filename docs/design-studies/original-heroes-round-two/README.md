@@ -5,17 +5,22 @@ the three directions need visibly different structures before they are combined.
 Each recipe describes one complete hero for its own regular Framer Web page.
 The earlier Design boards remain available for comparison.
 
-| Recipe | Direction | Composition |
-| --- | --- | --- |
-| [OH-010 — Pathfield](native/OH-010.json) | Information field | A spatial writing environment with depth, parallax and distinct semantic anchors. |
-| [OH-011 — Concordance](native/OH-011.json) | Information field | A dense, flat field of prose with a large reading interval cut through it. |
-| [OH-012 — Axial Passage](native/OH-012.json) | Geometric identity | A solid monochrome Monarchic mark with depth and movement along its own diagonal axis. |
-| [OH-013 — Letterform Engine](native/OH-013.json) | Geometric identity | Architectural lettering built from moving modules on vermilion. |
-| [OH-014 — Report Cuts](native/OH-014.json) | Research montage | Large, rotated fragments of actual report copy, question counts and limitations. |
-| [OH-015 — Research Film](native/OH-015.json) | Research montage | A dithered edit combining an architecture crop, a question table and a limitations excerpt. |
-| [OH-016 — Semantic Aperture](native/OH-016.json) | Information + geometry | Workflow writing occupies an oversized owned-mark aperture on cobalt. |
-| [OH-017 — Format Press](native/OH-017.json) | Geometry + montage | A monumental M exposes moving report and table fragments. |
-| [OH-018 — Field Transmission](native/OH-018.json) | Combined direction | Writing, a smaller owned mark, a report crop and an architecture diagram cross an editorial identity seam. |
+| Recipe | Direction | Composition | Framer |
+| --- | --- | --- | --- |
+| [OH-010 — Pathfield](native/OH-010.json) | Information field | A spatial writing environment with depth, parallax and distinct semantic anchors. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JzRfzVmvp) |
+| [OH-011 — Concordance](native/OH-011.json) | Information field | A dense, flat field of prose with a large reading interval cut through it. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=q8H2voJ0l) |
+| [OH-012 — Axial Passage](native/OH-012.json) | Geometric identity | A solid monochrome Monarchic mark with depth and movement along its own diagonal axis. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=y4fcvmX_d) |
+| [OH-013 — Letterform Engine](native/OH-013.json) | Geometric identity | Architectural lettering built from moving modules on vermilion. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=RMpymg1pV) |
+| [OH-014 — Report Cuts](native/OH-014.json) | Research montage | Large, rotated fragments of actual report copy, question counts and limitations. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=DvQZQKDNu) |
+| [OH-015 — Research Film](native/OH-015.json) | Research montage | A dithered edit combining an architecture crop, a question table and a limitations excerpt. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=KTHletWNf) |
+| [OH-016 — Semantic Aperture](native/OH-016.json) | Information + geometry | Workflow writing occupies an oversized owned-mark aperture on cobalt. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=px2UmqdBo) |
+| [OH-017 — Format Press](native/OH-017.json) | Geometry + montage | A monumental M exposes moving report and table fragments. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=BtCLrK8nJ) |
+| [OH-018 — Field Transmission](native/OH-018.json) | Combined direction | Writing, a smaller owned mark, a report crop and an architecture diagram cross an editorial identity seam. | [Open](https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ZOzNIr5dc) |
+
+The [standalone handoff](../standalone-heroes/handoff.md) and
+[manifest](../standalone-heroes/manifest.json) record actual page IDs, frozen
+code, responsive presets and the current verification boundary. The source
+recreations remain separate from these originals.
 
 The first six compositions were compared in grayscale and on Phone before the
 three combinations were developed. Color supplements their different density,
