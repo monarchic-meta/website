@@ -1,0 +1,78 @@
+{
+  "id": "HERO-007",
+  "classification": "Source inspiration / credited source-supported recreation",
+  "creator": "Cantor8; website credited to Artemii Lebedev in catalog",
+  "sourceURL": "https://www.cantor8.io/",
+  "galleryURL": "https://www.lapa.ninja/post/cantor8/",
+  "behaviorJSReused": false,
+  "sourceEvidence": "Current public configuration/DOM inspected; retained live frames show changing filaments/labels. Source pointer timing not newly browser-isolated.",
+  "font": {
+    "name": "Fragment Mono Regular",
+    "familyAlias": "SourceCantorFragmentMono",
+    "modified": false,
+    "binarySHA256": "0fe011f425873c2e0fc73a189e394e340ad48d2b9a99a576bdeec75cee000460",
+    "bytes": 125368,
+    "gitblob": "863b0ccaeb7f21afefe8a3476ad0eddddde516c7",
+    "source": "https://api.github.com/repos/google/fonts/git/blobs/863b0ccaeb7f21afefe8a3476ad0eddddde516c7",
+    "license": "SIL Open Font License1.1",
+    "licenseFile": "source-cantor-fragment-mono-OFL.txt",
+    "licenseSHA256": "ef14426248ca0404eae1ae65e61802b1627b5ec33aab117fb36edf401a81636e",
+    "versionBoundary": "Official unmodified GoogleFonts FragmentMono binary; equivalence to the website-hosted font revision has not been established."
+  },
+  "model": {
+    "renderer": "Independent Canvas2D quadratic paths and perimeter labels",
+    "desktopPaths": 130,
+    "narrowPaths": 110,
+    "pathBreakpointMax": 767,
+    "radiusFactor": {
+      "atLeast991": 0.3,
+      "narrow": 0.43
+    },
+    "rotationRadiansPerSecond": 0.055,
+    "windPixels": 52,
+    "springStiffness": 12,
+    "springDamping": 4.8,
+    "pointerRadius": 155,
+    "pointerImpulse": 3900,
+    "pointerFalloff": 1.7,
+    "bendCap": 300,
+    "labels": {
+      "desktop": 5,
+      "narrow": 3,
+      "enter": 0.45,
+      "hold": "1–2",
+      "exit": 0.55
+    }
+  },
+  "adaptation": [
+    "Independent deterministic random seeds/label ordering/gradient fit, not exact random source playback.",
+    "Analytic wind and fixed1/60 pointer-spring replay replace original hidden sequential integration.",
+    "Pointer history retains8seconds/maximum256events; discarded transient tails explicitly approximate.",
+    "Phone visual layout/input unobserved; source code breakpoints guide adaptation.",
+    "Native source nav/headline/CTA and ordinary Foundation handoff remain outside actor; no hero pixel wipe."
+  ],
+  "resources": {
+    "runtimeFetch": false,
+    "webGL": false,
+    "sharedCoordinator": "exactv2",
+    "canvasDefaultFrozen": true,
+    "canvasOptInFPS": 12,
+    "previewFPS": 30,
+    "livePixels": 1000000,
+    "stillPixels": 2000000,
+    "liveCanvas": 1,
+    "livePreview": 2
+  },
+  "build": "node scripts/build-source-cantor-font.mjs [--font-path PINNED_TTF --license-path PINNED_OFL] [--write]",
+  "actor": {
+    "path": "../SourceCantorInstrument.tsx",
+    "sha256": "7d588222a9085bd2c57893f0a5a239994eeff9c52be8891a75d0822271ac8e78",
+    "bytes": 227773
+  },
+  "validation": {
+    "nixOutput": "/nix/store/dqk4xbbwikxdppwx2adpxiw75fif9cr3-monarchic-website-source-cantor-instrument-0.0.1",
+    "focusedChecks": 8,
+    "actualReactBrowserChecks": 46,
+    "scope": "Source-informed geometry, analytic spring replay, real pixel equality, native input relay, labels, responsive bounds, mixed leaders, cache refinement and resource lifecycle. Actual Framer persistence and source input fidelity are separate."
+  }
+}

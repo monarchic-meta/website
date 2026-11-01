@@ -182,6 +182,15 @@
             pnpm run check:source-ajedrez-sequence
             pnpm run check:source-ajedrez-browser
           '';
+          source-cantor-instrument = (mkWebsiteCheck "source-cantor-instrument" ''
+            export MONARCHIC_CANTOR_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-cantor-instrument
+            pnpm run check:source-cantor-instrument-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser
