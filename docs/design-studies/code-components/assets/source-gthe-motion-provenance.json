@@ -101,18 +101,18 @@
   "rendering": "Retained editable native ellipse layers. Runtime motion uses owned CSS variables/activation selectors; authored inline geometry remains untouched. Canvas/export/thumbnail/reduced motion retain authored stills; only visible Preview groups animate.",
   "source": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceGtheMotion.tsx",
-    "bytes": 17268,
-    "sha256": "f2b2a3ecc1558fa5541e8db6a22c7936ec1d78680508845eb32d20d0ed823cdd"
+    "bytes": 17668,
+    "sha256": "8c3666db2ff97d7ba4b837d989689fb9bfc8afea71c56a16ba8de571efdeb037"
   },
   "validation": {
-    "store": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1",
+    "store": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1",
     "result": {
-      "path": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
-      "bytes": 67224,
-      "sha256": "0a5a8834c57f01263d8baed2fff8412ee1bb547d8dafd8a3e196b5b6a123bf57"
+      "path": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+      "bytes": 67662,
+      "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c"
     },
-    "checks": 39,
-    "scope": "Local ReactDOM native-like Framer HOC fixture; not actual Framer Preview/reload"
+    "checks": 43,
+    "scope": "Local ReactDOM native-like Framer HOC fixture, including Framer pseudo-border and competing retained native transform; not actual Framer Preview/reload"
   },
   "limits": [
     "Source input/DOM and public source-code observations are distinguished; no original website JavaScript is imported or executed.",
@@ -123,5 +123,40 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-plan/explicit-export-runtime-proof.json",
     "bytes": 497,
     "sha256": "b141b95994203c2da6fdb8a0e42ef1bced43e20cb4797b90cb287c6fdd9be808"
+  },
+  "previousTypedExportValidation": {
+    "store": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1",
+    "result": {
+      "path": "/nix/store/2mkazz9wksm3mwzfypay07dlljjiyi15-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+      "bytes": 67224,
+      "sha256": "0a5a8834c57f01263d8baed2fff8412ee1bb547d8dafd8a3e196b5b6a123bf57"
+    },
+    "checks": 39,
+    "scope": "Local ReactDOM native-like Framer HOC fixture; not actual Framer Preview/reload"
+  },
+  "nativeModel": {
+    "window": 294,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/output.json",
+      "bytes": 625381,
+      "sha256": "b3211138d1f41762064893bafa8503d6e9c32d6bb12c81f4c0f8c3962910e129"
+    },
+    "bindings": 1820,
+    "logicalBindings": 140,
+    "replicaBindings": 1680,
+    "paddingFields": 26,
+    "desktopBreakpoint": 1025,
+    "previewVerified": false,
+    "editorReloadVerified": false
+  },
+  "nativeIntegration": {
+    "preserveAuthoredBorders": true,
+    "rendering": "Retain native border/radius/background; runtime adds no duplicate border. Reduced-motion selector holds the authored geometry even if retained legacy native loop metadata writes inline transforms. Group sizing remains authored in reduced motion. Phone reduced motion also disables procedural media-query sizing and restores the authored group dimensions.",
+    "legacyLoopArchive": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO010-native-motion-window-294/obsolete-loop-effect-finite-archive.json",
+      "bytes": 3942185,
+      "sha256": "b5b48d550820655bf1142d2ad64ca0662cad2504b8aab0dcd02f4be0718c6d27"
+    },
+    "limitation": "Legacy native loopEffect metadata remains because the supported mutation schema has no verified unset operation. Visual freeze is tested; this does not establish that the native animation scheduler is stopped."
   }
 }

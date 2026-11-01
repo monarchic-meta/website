@@ -99,7 +99,8 @@ function pose(mode: Mode, i: number, t: number, phone: boolean, ratio: number, b
     return { x: b.x, y: b.y, rx: 17, ry: 17 }
 }
 const OWN_VARS = ["left", "top", "width", "height", "angle", "mask"] as const
-const ACTIVE_RULE = '[data-source-g-circle][data-source-g-active="true"]{left:var(--source-g-left)!important;top:var(--source-g-top)!important;width:var(--source-g-width)!important;height:var(--source-g-height)!important;transform-origin:50% 50%!important;transform:translate(-50%,-50%) rotate(var(--source-g-angle))!important;border:1px solid #fff!important;border-radius:50%!important;background:transparent!important;mask-image:var(--source-g-mask,none)!important;-webkit-mask-image:var(--source-g-mask,none)!important}'
+const REDUCED_RULE = '@media(prefers-reduced-motion:reduce){[data-source-g-frozen="false"][data-source-g-motion] [data-source-g-circle]{transform:none!important}[data-source-g-frozen="false"][data-source-g-motion="expertise"] [data-source-g-circle]{transform:rotate(-30deg)!important}}'
+const ACTIVE_RULE = '[data-source-g-circle][data-source-g-active="true"]{left:var(--source-g-left)!important;top:var(--source-g-top)!important;width:var(--source-g-width)!important;height:var(--source-g-height)!important;transform-origin:50% 50%!important;transform:translate(-50%,-50%) rotate(var(--source-g-angle))!important;mask-image:var(--source-g-mask,none)!important;-webkit-mask-image:var(--source-g-mask,none)!important}'
 function clearPose(node: HTMLElement) {
     delete node.dataset.sourceGActive
     for (const key of OWN_VARS) node.style.removeProperty("--source-g-" + key)
@@ -109,6 +110,7 @@ function group(Component: NativeLayer, mode: Mode): NativeLayer {
         const [host, setHost] = React.useState<HTMLElement | null>(null), actors = React.useRef(new Map<number, HTMLElement>())
         const setNode = React.useCallback((node: HTMLElement | null) => { setHost(node); assignRef(forwarded, node) }, [forwarded])
         const frozen = useIsStaticRenderer() || frozenTarget()
+        const [reduced, setReduced] = React.useState(false)
         const registry = React.useMemo<Registry>(() => ({ add(index, node) {
             actors.current.set(index, node)
             return () => { if (actors.current.get(index) === node) actors.current.delete(index); clearPose(node) }
@@ -121,7 +123,7 @@ function group(Component: NativeLayer, mode: Mode): NativeLayer {
             const stop = () => { if (frame) cancelAnimationFrame(frame); frame = 0; last = 0; host.dataset.sourceGRunning = "false" }
             const tick = (now: number) => {
                 frame = 0
-                if (disposed || !visible || reduce.matches || document.hidden) { stop(); if (reduce.matches) restore(); return }
+                if (disposed || !visible || reduce.matches || document.hidden) { stop(); if (reduce.matches) { setReduced(true); restore() } return }
                 const dt = last ? Math.min(.05, (now - last) / 1000) : 0; last = now; elapsed += dt
                 if (mode === "contact") physics(balls, elapsed, dt, host.clientHeight / Math.max(1, host.clientWidth) * 100)
                 if (now - previousPaint >= 1000 / 30 - .5) {
@@ -140,13 +142,13 @@ function group(Component: NativeLayer, mode: Mode): NativeLayer {
                 if (mode.startsWith("home") && elapsed >= 2.2) { stop(); return }
                 host.dataset.sourceGRunning = "true"; frame = requestAnimationFrame(tick)
             }
-            const update = () => { if (!visible || document.hidden || reduce.matches) { stop(); if (reduce.matches) restore() } else if (!frame && !(mode.startsWith("home") && elapsed >= 2.2)) frame = requestAnimationFrame(tick) }
+            const update = () => { setReduced(reduce.matches); if (!visible || document.hidden || reduce.matches) { stop(); if (reduce.matches) restore() } else if (!frame && !(mode.startsWith("home") && elapsed >= 2.2)) frame = requestAnimationFrame(tick) }
             const observer = new IntersectionObserver(entries => { visible = entries.some(entry => entry.isIntersecting && entry.intersectionRect.width > 0 && entry.intersectionRect.height > 0); update() }, { threshold: 0 })
-            observer.observe(host); reduce.addEventListener("change", update); document.addEventListener("visibilitychange", update)
+            setReduced(reduce.matches); observer.observe(host); reduce.addEventListener("change", update); document.addEventListener("visibilitychange", update)
             return () => { disposed = true; stop(); restore(); observer.disconnect(); reduce.removeEventListener("change", update); document.removeEventListener("visibilitychange", update) }
         }, [frozen, mode, host])
-        const sizing: React.CSSProperties = frozen ? {} : mode === "home-left" || mode === "home-right" ? { width: "calc(100% - var(--source-g-home-padding, 200px))", height: "auto", aspectRatio: "1", flexShrink: 0 } : mode === "home" ? {} : mode === "contact" ? { width: "100%", height: "100%", flexShrink: 0 } : { width: mode === "experience" ? "90%" : "100%", maxWidth: mode === "experience" ? "40vh" : "60vh", height: "auto", aspectRatio: mode === "experience" ? "1 / 2" : "1", flexShrink: 0 }
-        return <RegistryContext.Provider value={registry}><style>{ACTIVE_RULE + '@media(max-width:1024px){[data-source-g-frozen="false"][data-source-g-motion="home-left"],[data-source-g-frozen="false"][data-source-g-motion="home-right"]{--source-g-home-padding:60px}[data-source-g-frozen="false"][data-source-g-motion="manifesto"],[data-source-g-frozen="false"][data-source-g-motion="vision"],[data-source-g-frozen="false"][data-source-g-motion="expertise"]{width:65%!important;max-width:none!important}[data-source-g-frozen="false"][data-source-g-motion="experience"]{width:45%!important;max-width:none!important}[data-source-g-frozen="false"][data-source-g-motion="contact"]{height:110vw!important}}'}</style><Component {...props} style={{ ...props.style, ...sizing }} ref={setNode} data-source-g-motion={mode} data-source-g-frozen={String(frozen)} /></RegistryContext.Provider>
+        const sizing: React.CSSProperties = frozen || reduced ? {} : mode === "home-left" || mode === "home-right" ? { width: "calc(100% - var(--source-g-home-padding, 200px))", height: "auto", aspectRatio: "1", flexShrink: 0 } : mode === "home" ? {} : mode === "contact" ? { width: "100%", height: "100%", flexShrink: 0 } : { width: mode === "experience" ? "90%" : "100%", maxWidth: mode === "experience" ? "40vh" : "60vh", height: "auto", aspectRatio: mode === "experience" ? "1 / 2" : "1", flexShrink: 0 }
+        return <RegistryContext.Provider value={registry}><style>{ACTIVE_RULE + REDUCED_RULE + '@media(max-width:1024px) and (prefers-reduced-motion:no-preference){[data-source-g-frozen="false"][data-source-g-motion="home-left"],[data-source-g-frozen="false"][data-source-g-motion="home-right"]{--source-g-home-padding:60px}[data-source-g-frozen="false"][data-source-g-motion="manifesto"],[data-source-g-frozen="false"][data-source-g-motion="vision"],[data-source-g-frozen="false"][data-source-g-motion="expertise"]{width:65%!important;max-width:none!important}[data-source-g-frozen="false"][data-source-g-motion="experience"]{width:45%!important;max-width:none!important}[data-source-g-frozen="false"][data-source-g-motion="contact"]{height:110vw!important}}'}</style><Component {...props} style={{ ...props.style, ...sizing }} ref={setNode} data-source-g-motion={mode} data-source-g-frozen={String(frozen)} /></RegistryContext.Provider>
     })
 }
 function circle(Component: NativeLayer, index: number): NativeLayer {

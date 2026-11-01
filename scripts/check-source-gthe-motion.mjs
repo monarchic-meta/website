@@ -25,7 +25,7 @@ try {
     await page.addScriptTag({ content: react }); await page.addScriptTag({ content: reactDOM })
     await page.addScriptTag({ content: `window.target='preview';window.staticRenderer=false;window.require=name=>name==='react'?window.React:{RenderTarget:{canvas:'canvas',export:'export',thumbnail:'thumbnail',current:()=>target},useIsStaticRenderer:()=>staticRenderer};window.exports={};(function(require,exports){${code}})(window.require,window.exports);window.sourceG=window.exports;` })
     await page.addScriptTag({ content: `
-        const adapter=React.forwardRef((props,ref)=>{const {children,nativeTag='div',...rest}=props;return React.createElement(nativeTag,{...rest,ref},children)});
+        const adapter=React.forwardRef((props,ref)=>{const {children,nativeTag='div',framerPseudoBorder,...rest}=props;return React.createElement(nativeTag,{...rest,ref,...(framerPseudoBorder?{'data-framer-border':'true'}:{})},children)});
         const families={home:['Home',5,960,670],manifesto:['Manifesto',6,400,400],vision:['Vision',23,400,400],expertise:['Expertise',15,400,400],experience:['Experience',9,360,720],contact:['Contact',5,480,480]};
         const groups=Object.fromEntries(Object.entries(families).map(([name,row])=>[name,sourceG['withG'+row[0]+'Motion'](adapter)]));
         const circles=Array.from({length:23},(_,i)=>sourceG['withGCircle'+String(i).padStart(2,'0')](adapter));
@@ -38,6 +38,8 @@ try {
         const Left=sourceG.withGHomeLeftMotion(adapter),Right=sourceG.withGHomeRightMotion(adapter);
         window.renderHomeCells=()=>{window.target='preview';window.staticRenderer=false;Object.assign(document.querySelector('#root').style,{width:'100%',height:'900px'});const cell=(Group,count)=>React.createElement('div',{style:{flex:1,display:'flex',alignItems:'center',justifyContent:'center'}},React.createElement(Group,{style:{position:'relative',width:200,height:200}},Array.from({length:count},(_,i)=>React.createElement(circles[i],{key:i,style:{position:'absolute',boxSizing:'border-box',left:17,top:23,width:101,height:101,border:'1px solid white',borderRadius:'50%'}}))));app.render(React.createElement('div',{id:'cells',style:{width:innerWidth<1025?'100vw':'calc(100vw - 480px)',height:670,display:'flex'}},cell(Left,1),cell(Right,4)))};
     `})
+    await page.addStyleTag({content:'[data-framer-border=true]::after{content:"";border:1px solid white;box-sizing:border-box;border-radius:inherit;pointer-events:none;width:100%;height:100%;position:absolute;top:0;left:0}'})
+    await page.addScriptTag({content:`window.renderFramerBorders=()=>{window.target='preview';window.staticRenderer=false;Object.assign(document.querySelector('#root').style,{width:'400px',height:'400px'});app.render(React.createElement(groups.manifesto,{id:'study',style:{position:'relative',width:400,height:400}},React.createElement(circles[3],{framerPseudoBorder:true,style:{position:'absolute',boxSizing:'border-box',left:17,top:23,width:101,height:101,borderRadius:'50%',border:'none'}})))}`})
     const snapshots = []
     await page.evaluate(() => renderStudy('home')); await page.waitForTimeout(350)
     let a = await page.evaluate(() => readStudy()); verify('Home entry actually masks native ring strokes', a.actors.length === 5 && a.actors.some(n => n.mask.includes('conic-gradient')))
@@ -52,6 +54,9 @@ try {
         verify(mode + ' uses finite nonnegative ellipse dimensions', later.actors.every(n => n.rect.every(Number.isFinite) && n.rect[2] >= 0 && n.rect[3] >= 0))
         await page.screenshot({ path: out + '/' + mode + '-moving.png' }); snapshots.push({ early, later })
     }
+    await page.evaluate(() => renderFramerBorders());await page.waitForTimeout(250)
+    verify('Native Framer pseudo-border remains the only visible stroke', await page.evaluate(() => {const n=document.querySelector('[data-source-g-circle]');return getComputedStyle(n).borderTopWidth==='0px'&&getComputedStyle(n,'::after').borderTopWidth==='1px'&&n.dataset.sourceGActive==='true'}))
+    verify('Procedural motion leaves native fill/radius/border attributes authoritative', await page.evaluate(() => {const n=document.querySelector('[data-source-g-circle]');return n.style.borderTopStyle==='none'&&n.style.borderRadius==='50%'&&n.style.background===''}))
     await page.evaluate(() => renderStudy('vision')); await page.waitForTimeout(200)
     await page.evaluate(() => { document.querySelector('#study').style.marginTop='2000px' }); await page.waitForTimeout(180)
     const off = await page.evaluate(() => readStudy()); await page.waitForTimeout(250); const held = await page.evaluate(() => readStudy())
@@ -66,6 +71,9 @@ try {
     await page.emulateMedia({ reducedMotion: 'reduce' }); await page.waitForTimeout(100); a = await page.evaluate(() => readStudy())
     fs.writeFileSync(out+'/reduced-state.json',JSON.stringify(a,null,2));
     verify('Reduced motion restores the authored native pose and stops RAF', a.running === 'false' && a.actors.every(n => n.rect.join(',') === '17,23,101,101'))
+    await page.evaluate(() => { document.querySelector('[data-source-g-circle]').style.transform='translateX(14px) rotateY(70deg)' })
+    verify('Reduced pose takes precedence over retained native inline loop transforms', await page.evaluate(() => getComputedStyle(document.querySelector('[data-source-g-circle]')).transform === 'none'))
+    await page.evaluate(() => { document.querySelector('[data-source-g-circle]').style.transform='' })
     await page.emulateMedia({ reducedMotion: 'no-preference' }); await page.waitForTimeout(200)
     verify('Motion preference can resume without remounting', (await page.evaluate(() => readStudy())).running === 'true')
     for (const target of ['canvas','export','thumbnail']) {
@@ -84,6 +92,10 @@ try {
     verify('Source Phone Vision retains65% graphic width and23 native circles', await page.evaluate(() => Math.abs(document.querySelector('#study').clientWidth - 253.5) < 1 && document.querySelectorAll('[data-source-g-circle]').length === 23))
     await page.evaluate(() => renderStudy('contact'));await page.waitForTimeout(180)
     verify('Source Phone Contact uses the observed100-by110 world', await page.evaluate(() => document.querySelector('#study').clientWidth === 390 && Math.abs(document.querySelector('#study').clientHeight - 429) < 1))
+    await page.emulateMedia({ reducedMotion: 'reduce' }); await page.waitForTimeout(100)
+    fs.writeFileSync(out+'/phone-reduced-state.json',JSON.stringify(await page.evaluate(()=>({w:document.querySelector('#study').clientWidth,h:document.querySelector('#study').clientHeight,style:document.querySelector('#study').getAttribute('style'),read:readStudy()})),null,2))
+    verify('Phone reduced motion preserves authored group dimensions and native shape positions', await page.evaluate(() => document.querySelector('#study').clientWidth === 480 && document.querySelector('#study').clientHeight === 480 && readStudy().actors.every(n => n.rect.join(',') === '17,23,101,101')))
+    await page.emulateMedia({ reducedMotion: 'no-preference' })
     await page.setViewportSize({width:1440,height:900});await page.evaluate(() => renderStudy('vision')); await page.waitForTimeout(180)
     await page.evaluate(() => { window.detachedActors=[...document.querySelectorAll('[data-source-g-circle]')]; app.unmount() }); await page.waitForTimeout(100)
     verify('Unmount restores native styles on detached retained nodes', await page.evaluate(() => detachedActors.every(n => n.style.left==='17px' && n.style.top==='23px' && n.style.width==='101px' && n.style.transform==='' && !n.style.getPropertyValue('--source-g-left') && !n.hasAttribute('data-source-g-active'))))
