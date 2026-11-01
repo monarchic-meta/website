@@ -246,7 +246,7 @@ not inferred from the appearance.
 
 - Source: [Lapa Ninja](https://www.lapa.ninja/post/pp-neue-montreal/).
 - Live destination: [Neue Montreal](https://neuemontreal.com/).
-- Attribution: Pangram Pangram is the typeface foundry; separate website-design credit not identified.
+- Attribution: Pangram Pangram is the typeface foundry. The current source footer credits the website to [Demande Spéciale](https://demandespeciale.ca/) (verified 2026-11-01).
 - Tags: `poster-scale`, `vermilion`, `paper-grain`, `cropped-type`, `emblem`.
 
 Huge black lettering nearly fills a saturated vermilion field textured with fine

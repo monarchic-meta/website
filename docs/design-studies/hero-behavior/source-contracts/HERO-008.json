@@ -1,7 +1,7 @@
 {
   "id": "HERO-008",
   "title": "PP Neue Montreal / typographic travel-guide sequence",
-  "creator": "Pangram Pangram; separate website designer unverified",
+  "creator": "Pangram Pangram (typeface); Demande Spéciale (website)",
   "gallery": "https://www.lapa.ninja/post/pp-neue-montreal/",
   "source": "https://neuemontreal.com/",
   "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
@@ -109,6 +109,17 @@
       "proximity": "SourceTypeProximity.tsx",
       "glyphGeometry": "Source 8-based Display/Text scales determine the pinned scene and N travel. Phone S uses a full-width container with the 8-derived height and preserveAspectRatio meet; it is not resized from the S viewBox width. Both masks split horizontally.",
       "playback": "One owned per-window playback store controls ambient motion without disabling scroll navigation. Actual Framer compilation, variable font selection and native bindings require separate verification."
+    },
+    "accentTypeface": {
+      "sourceFile": "font-13.woff2",
+      "sha256": "0fc0739173228c2aeb788378726dd3c809c2844f61d8d2a1751879b00b7efa0e",
+      "bytes": 94244,
+      "sourceCSSFamily": "PP Neue Montreal Extrabold Italic",
+      "weight": 800,
+      "style": "italic",
+      "actualFramerWorkspaceFamily": "PP Neue Montreal",
+      "actualWorkspaceStyles": 1,
+      "status": "Uploaded through the native workspace file chooser and verified after a workspace reload. Exact editor font selector/binding is a separate gate; font bytes remain outside Git."
     }
   },
   "remaining": [
@@ -155,5 +166,11 @@
       "id": "1188502875",
       "role": "Centre-ville punctuation film"
     }
-  ]
+  ],
+  "siteCreditEvidence": {
+    "source": "https://neuemontreal.com/",
+    "location": "Current source footer: Site by, followed by the Demande Spéciale link.",
+    "studio": "https://demandespeciale.ca/",
+    "scope": "Current public footer attribution; distinct from archival interaction verification."
+  }
 }
