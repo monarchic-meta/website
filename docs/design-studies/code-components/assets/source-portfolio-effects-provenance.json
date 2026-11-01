@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-004",
+  "classification": "Source inspiration / independent credited recreation",
+  "creator": "Artemii Lebedev",
+  "sourceURL": "https://artemiilebedev.com/",
+  "source": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-source-effects/SourcePortfolioEffects.tsx",
+    "sha256": "f642864b9e2827feca5b458f33818b1e32d5ebac60a18a36bfceb8043694eea5",
+    "bytes": 16750,
+    "repositoryPath": "docs/design-studies/code-components/SourcePortfolioEffects.tsx"
+  },
+  "inspection": {
+    "script": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/esc-effects-inspection-only.js",
+      "sha256": "da7f1b48551a41ddff604b638d05e961e77de2047ad6b5a1f4eaade18a9f2eae",
+      "bytes": 20033
+    },
+    "note": "Public source inspected only; no original website JavaScript imported or executed by this module.",
+    "observedStates": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/normal-fx-and-carousel/audit.json",
+      "sha256": "8810f0d3a63144089b23d67094c0b50ecffda53e4651debb48274430e04c59fb",
+      "bytes": 138084
+    }
+  },
+  "families": [
+    "Low-resolution film grain with overlay material",
+    "14px rust-colored pixel grid with source stacking over native UI",
+    "48px editorial baselines and native utility/project-column alignment",
+    "Real pointer-following pink/blue/gold and green gradient fields",
+    "Actual grayscale/contrast/sepia thermal backdrop, scanlines and vignette",
+    "Five moving backdrop-filter lenses in three material families with independent caption copy"
+  ],
+  "runtime": {
+    "existingFilmControlsByteExact": true,
+    "independentRAF": 0,
+    "independentVideoElements": 0,
+    "ownedWebGLContexts": 0,
+    "scope": "Closest owned data-source-film-page=hero-004 with exactly one source-film canvas; never borrow another page’s active actor.",
+    "continuousAdmission": "Only data-study-state=live on that owned film; pause/offscreen/unadmitted updates hold their pose.",
+    "rasterPixelCeiling": 1000000,
+    "canvasMotion": false,
+    "exportAndThumbnail": "No procedural DOM mounted.",
+    "projectSelection": "The effect phase holds across the movie clock reset."
+  },
+  "validation": {
+    "lockedNix": {
+      "path": "/nix/store/yna9878rix3wqy0m8wzapxnmg0ri5xg6-monarchic-website-source-portfolio-effects-0.0.1/evidence/result.json",
+      "sha256": "38f40ab52ea3676a0b77e30e0493eecd8f0798837b7bcc88e73e2a90b1e239fa",
+      "bytes": 1933
+    },
+    "checks": 23,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-source-effects/receipt.json",
+      "sha256": "6d56b681e200b15b14a14797ade7bd33ef6012bc644a36bbd0b9f95fffa6b478",
+      "bytes": 1695
+    },
+    "scope": "Actual React/Chromium native-frame fixture with an explicit film admission/clock and owned colored backdrop. CSS backdrop and raster pixels checked; not actual Framer Preview."
+  },
+  "limits": [
+    "Seeded lens starts and independent caption text replace random source placements and meme copy.",
+    "Editorial vertical guides measure retained utility/project hooks when available; narrow fallback columns are declared fits.",
+    "Motion uses the admitted film clock instead of an extra whole-document wall-clock loop.",
+    "Native Framer binding, actual Preview and editor reload remain pending."
+  ],
+  "framer": {
+    "installed": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  }
+}
