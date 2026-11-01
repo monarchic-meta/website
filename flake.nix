@@ -203,6 +203,14 @@
             export MONARCHIC_GTHE_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-gthe-motion
           '';
+          source-vercel-agentic = (mkWebsiteCheck "source-vercel-agentic" ''
+            export MONARCHIC_VERCEL_AGENTIC_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-vercel-agentic
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio
