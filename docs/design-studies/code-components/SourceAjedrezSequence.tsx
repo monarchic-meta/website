@@ -54,9 +54,9 @@ const PHASES: readonly Phase[] = [
     { from: 29, to: 31, name: "repeated-figure" },
     { from: 31, to: 33, name: "paragraph-layout" },
     { from: 33, to: 34, name: "vertical-photo-strip" },
-    { from: 34, to: 37, name: "paragraph-layout" },
-    { from: 37, to: 39, name: "overhead-chess-film" },
-    { from: 39, to: 41, name: "large-type" },
+    { from: 34, to: 881 / 24, name: "paragraph-layout" },
+    { from: 881 / 24, to: 930 / 24, name: "overhead-chess-film" },
+    { from: 930 / 24, to: 41, name: "large-type" },
     { from: 41, to: 42, name: "hand-photo-strip" },
     { from: 42, to: 43, name: "scattered-type" },
     { from: 43, to: 46, name: "dense-montage" },
@@ -263,9 +263,9 @@ export function withAjedrezTime(Component: ComponentType<LayerProps>): Component
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(Context); return <Component {...props} ref={ref} text={`${state.time.toFixed(1)} / 52.3 s`} /> })
 }
 
-// The URL is bound only after the 49-frame silent source crop has a genuine
-// uploaded runtime URL. Native image fill remains the poster while unbound.
-function ajedrezOverheadSource(): string | null { return "https://framerusercontent.com/assets/8mNQ0LUIe80fn27qQfvQoduVI.mp4" }
+// The URL is bound only after the 49-frame full photographic interval has a
+// genuine uploaded runtime URL. Native image fill supplies the static poster.
+function ajedrezOverheadSource(): string | null { return "https://framerusercontent.com/assets/zTyAxXsvlZOY1rr4U0Vhfo71oY.mp4" }
 type AjedrezPhotoLease = { create: () => HTMLVideoElement; release: (video: HTMLVideoElement) => void; trackAbort: (video: HTMLVideoElement, cancel: () => void) => void; finish: () => void }
 type AjedrezPhotoClient = { kind: "live" | "still"; enabled: boolean; priority: number; start: (lease: AjedrezPhotoLease) => void; stop: () => void }
 type AjedrezPhotoGate = { add: (input: AjedrezPhotoClient) => { update: (next: Partial<AjedrezPhotoClient>) => void; remove: () => void }; debug: () => { clients: number; decoders: number; peakDecoders: number; owner: number | null; kind: string | null; failures: string[] } }
@@ -298,15 +298,41 @@ function ajedrezPhotoGate(): AjedrezPhotoGate {
     registry[key] = gate; return gate
 }
 type AjedrezTimedVideo = HTMLVideoElement & { requestVideoFrameCallback?: (callback: (now: number, metadata: { mediaTime: number }) => void) => number; cancelVideoFrameCallback?: (id: number) => void }
-/** Source frames 881..929 (480x510 crop) fit the existing 37..39s phase.
- * Only photographic pixels use a 244,800px 2D surface; native text/art stays
- * outside it. Shared Film Context owns time, controls and responsive fitting. */
+function presentAjedrezPhoto(surface: HTMLCanvasElement, image: HTMLCanvasElement, force = false) {
+    const bounds = surface.getBoundingClientRect(), dpr = Math.max(1, window.devicePixelRatio || 1)
+    const wantedWidth = Math.max(1, Math.ceil(bounds.width * dpr)), wantedHeight = Math.max(1, Math.ceil(bounds.height * dpr))
+    const scale = Math.min(1, 960 / wantedWidth, 1704 / wantedHeight, Math.sqrt(2000000 / (wantedWidth * wantedHeight)))
+    const width = Math.max(1, Math.floor(wantedWidth * scale)), height = Math.max(1, Math.floor(wantedHeight * scale))
+    const resized = surface.width !== width || surface.height !== height
+    if (resized) { surface.width = width; surface.height = height }
+    if (resized || force) surface.getContext("2d")?.drawImage(image, 0, 0, width, height)
+}
+/** Full source photographic frames 881..929 at their original 24 fps cuts.
+ * Only photographic pixels use this 2D surface; the existing Film Context owns
+ * time, controls and responsive fitting. Buffers follow transformed bounds/DPR
+ * under 2MP and the 960x1704 media resolution. A held decoded frame refreshes
+ * paused zoom without another decoder or RAF. Canvas/export stays native. */
 export function withAjedrezOverheadMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, forwardedRef) => {
-        const state = React.useContext(Context), latest = React.useRef(state), own = React.useRef<HTMLElement | null>(null), canvas = React.useRef<HTMLCanvasElement | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null), [ready, setReady] = React.useState(false), [status, setStatus] = React.useState("poster")
+        const state = React.useContext(Context), latest = React.useRef(state), own = React.useRef<HTMLElement | null>(null), canvas = React.useRef<HTMLCanvasElement | null>(null), held = React.useRef<HTMLCanvasElement | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null), [ready, setReady] = React.useState(false), [status, setStatus] = React.useState("poster")
         latest.current = state
         const bindHost = React.useCallback((node: HTMLElement | null) => { own.current = node; setHost(node); writeRef(forwardedRef, node) }, [forwardedRef]), url = ajedrezOverheadSource(), live = state.index === 28 && state.active && !state.frozen && !state.reduced && !!url
-        React.useEffect(() => { setReady(false); setStatus(url ? "poster" : "unbound") }, [host, state.frozen, state.reduced, url])
+        React.useEffect(() => { held.current = null; setReady(false); setStatus(url ? "poster" : "unbound"); return () => { held.current = null } }, [host, state.frozen, state.reduced, url])
+        React.useEffect(() => {
+            const surface = canvas.current
+            if (!host || !surface || state.frozen || state.reduced) return
+            let disposed = false
+            const refresh = () => {
+                const image = held.current, current = latest.current
+                if (!disposed && own.current === host && canvas.current === surface && image && current.index === 28 && !current.frozen && !current.reduced) presentAjedrezPhoto(surface, image)
+            }
+            const resize = new ResizeObserver(refresh), mutation = new MutationObserver(refresh)
+            for (let node: HTMLElement | null = host; node; node = node.parentElement) {
+                resize.observe(node); mutation.observe(node, { attributes: true, attributeFilter: ["style", "class"] })
+            }
+            window.addEventListener("resize", refresh); window.visualViewport?.addEventListener("resize", refresh)
+            return () => { disposed = true; resize.disconnect(); mutation.disconnect(); window.removeEventListener("resize", refresh); window.visualViewport?.removeEventListener("resize", refresh) }
+        }, [host, state.frozen, state.reduced])
         React.useEffect(() => {
             const surface = canvas.current
             if (!live || !host || !surface || !url) return
@@ -314,7 +340,7 @@ export function withAjedrezOverheadMotion(Component: ComponentType<LayerProps>):
             if (!context) { setStatus("2d-unavailable"); return }
             let disposed = false, stopVideo = () => {}
             const current = () => !disposed && own.current === host && canvas.current === surface
-            const target = () => Math.min(2, Math.max(0, (latest.current.time - 37) / 2) * 49 / 24)
+            const target = () => Math.min(48 / 24, Math.max(0, latest.current.time - 881 / 24))
             const client = ajedrezPhotoGate().add({ kind: "live", enabled: true, priority: 1,
                 start(lease) {
                     if (!current()) return
@@ -325,11 +351,15 @@ export function withAjedrezOverheadMotion(Component: ComponentType<LayerProps>):
                         if (!valid() || video.readyState < 2 || video.seeking) return
                         const wanted = target()
                         if (Math.abs(mediaTime - wanted) > .09) { video.currentTime = wanted; return }
-                        context.drawImage(video, 0, 0, 480, 510); setReady(true); setStatus("moving")
+                        let image = held.current
+                        if (!image) { image = document.createElement("canvas"); image.width = 960; image.height = 1704; held.current = image }
+                        const imageContext = image.getContext("2d")
+                        if (!imageContext) { setStatus("2d-unavailable"); return }
+                        imageContext.drawImage(video, 0, 0, image.width, image.height); presentAjedrezPhoto(surface, image, true); setReady(true); setStatus("moving")
                         surface.setAttribute("data-source-ajedrez-photo-media-time", String(mediaTime)); surface.setAttribute("data-source-ajedrez-photo-film-time", String(latest.current.time))
                     }
                     const schedule = () => { if (!valid()) return; if (video.requestVideoFrameCallback) videoFrame = video.requestVideoFrameCallback((_now, metadata) => { paint(metadata.mediaTime); schedule() }); else frame = requestAnimationFrame(() => { frame = 0; paint(); schedule() }) }
-                    const play = () => { if (!valid() || started) return; started = true; video.playbackRate = 49 / 48; schedule(); void video.play().catch(() => { if (valid()) setStatus("playback-blocked") }) }
+                    const play = () => { if (!valid() || started) return; started = true; video.playbackRate = 1; schedule(); void video.play().catch(() => { if (valid()) setStatus("playback-blocked") }) }
                     const seek = () => { if (!valid()) return; const wanted = target(); if (Math.abs(video.currentTime - wanted) > .001) video.currentTime = wanted; else { paint(); play() } }
                     const settled = () => { if (valid()) { paint(); play() } }, failed = () => { if (valid()) setStatus("media-error") }
                     stopVideo = () => { if (stopped) return; stopped = true; if (videoFrame !== undefined) video.cancelVideoFrameCallback?.(videoFrame); if (frame) cancelAnimationFrame(frame); video.removeEventListener("loadedmetadata", seek); video.removeEventListener("loadeddata", settled); video.removeEventListener("seeked", settled); video.removeEventListener("error", failed); video.pause() }
@@ -340,7 +370,7 @@ export function withAjedrezOverheadMotion(Component: ComponentType<LayerProps>):
         }, [live, host, url])
         const shown = ready && !state.frozen && !state.reduced && state.index === 28
         return <Component {...props} ref={bindHost} data-source-ajedrez-photo="overhead" data-source-ajedrez-photo-status={status} data-source-ajedrez-photo-live={live}>
-            {props.children}<canvas ref={canvas} width={480} height={510} aria-hidden="true" data-source-ajedrez-photo-surface="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none", opacity: shown ? 1 : 0 }} />
+            {props.children}<canvas ref={canvas} width={480} height={852} aria-hidden="true" data-source-ajedrez-photo-surface="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none", opacity: shown ? 1 : 0 }} />
         </Component>
     })
 }

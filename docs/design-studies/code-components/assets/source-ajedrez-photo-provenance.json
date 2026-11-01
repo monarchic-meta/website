@@ -1,96 +1,344 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "reference": "HERO-002",
-  "classification": "Source inspiration / credited photographic aperture recreation",
+  "classification": "Source inspiration / full photographic interval recreation",
   "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival film authors and reuse rights remain unverified.",
   "source": {
-    "url": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
-    "sha256": "edcffe1664dbe785ee48e7f48e9c9c8ab2f9dbe464d9f887ae669a9209e72ea5",
-    "bytes": 2426168,
-    "width": 480,
-    "height": 852,
+    "url": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
+    "sha256": "9b12175445d3b6045f28b5e5cc11d95addb1a4d9ac8a3e049a3da46e6f96e45f",
+    "bytes": 24910614,
+    "width": 1080,
+    "height": 1920,
     "fps": 24,
+    "videoFrames": 1251,
     "duration": 52.314558,
-    "audio": "Present in original; unreviewed and deliberately omitted from derivative."
+    "audio": "Unreviewed and omitted; high/low CDN encoded audio differs. CDN copy, original master not established.",
+    "postURL": "https://x.com/julianleiss/status/2110868325052149925"
   },
   "derivative": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/overhead-chess-frames-881-929.mp4",
-    "sha256": "8b658fcd9dcabea0d45bd53fd657507ad031ba09c68392fce91a485776ec1cf9",
-    "bytes": 193779,
-    "role": "Individual moving photographic aperture only, without the source film typography or whole portrait frame.",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-portrait-960x1704-crf28.mp4",
+    "sha256": "cd56bf7c91ecefca753360a1b1341a7c0e26251884836570c8549d4b19f24e35",
+    "bytes": 775300,
+    "role": "Full portrait photographic pixels only; no source poem, interface or paper margin.",
     "frameRange": {
       "firstInclusive": 881,
       "lastInclusive": 929,
       "count": 49
     },
-    "crop": {
-      "left": 0,
-      "top": 153,
-      "width": 480,
-      "height": 510,
-      "exact": true
-    },
+    "crop": null,
     "encoding": {
-      "tool": "ffmpeg8.1.2 from Nix",
+      "tool": "Pinned Nix ffmpeg8.1.2",
       "video": "H.264/libx264",
-      "crf": 18,
+      "crf": 28,
       "preset": "medium",
       "pixelFormat": "yuv420p",
       "fps": 24,
       "audio": false,
-      "fastStart": true
+      "fastStart": true,
+      "dimensions": [
+        960,
+        1704
+      ]
     },
     "duration": 2.0416666666666665,
-    "runtimeURL": "https://framerusercontent.com/assets/8mNQ0LUIe80fn27qQfvQoduVI.mp4",
-    "runtimeBinding": "Genuine HTTP201 upload268, exact derived bytes and source lineage retained in the official external receipt. No source/native Framer binding is claimed by this provenance.",
-    "uploadReceipt": "/tmp/monarchic-hero-behavior-iterations-2026-11-01/mcp/HERO-002-overhead-chess-upload-268-output.json"
+    "runtimeURL": "https://framerusercontent.com/assets/zTyAxXsvlZOY1rr4U0Vhfo71oY.mp4",
+    "runtimeBinding": "Genuine HTTP201 upload283 of the selected 775300-byte full-portrait clip. Source/native Framer updates remain separate.",
+    "quality": {
+      "candidates": [
+        {
+          "crf": 24,
+          "bytes": 2040574,
+          "sha256": "4001b7fbb204a6816b1fe04adf7066efb5758cdd509290290dcbfdb0312ff276",
+          "quality": [
+            {
+              "width": 480,
+              "frames": 49,
+              "meanSSIM": 0.9816048571428572,
+              "minSSIM": 0.976503
+            },
+            {
+              "width": 960,
+              "frames": 49,
+              "meanSSIM": 0.9658402857142857,
+              "minSSIM": 0.953374
+            }
+          ]
+        },
+        {
+          "crf": 28,
+          "bytes": 775300,
+          "sha256": "cd56bf7c91ecefca753360a1b1341a7c0e26251884836570c8549d4b19f24e35",
+          "quality": [
+            {
+              "width": 480,
+              "frames": 49,
+              "meanSSIM": 0.9639899795918369,
+              "minSSIM": 0.95396
+            },
+            {
+              "width": 960,
+              "frames": 49,
+              "meanSSIM": 0.9411598163265302,
+              "minSSIM": 0.919512
+            }
+          ]
+        }
+      ],
+      "comparison": "compact-encode-comparison-480.png",
+      "detail": "compact-encode-detail-960.png",
+      "scope": "Exactly two efficient full-portrait candidates. SSIM over all49 frames at actual480 and960 target widths; same Lanczos scale. Scores measure pixel similarity, not full fidelity."
+    },
+    "adaptation": "Slight halftone/edge softening at a practical775KB; all49 frames/fullportrait geometry retained. Native aspect480×852 differs from1080×1920 by0.1565%.",
+    "uploadReceipt": "/tmp/monarchic-hero-behavior-iterations-2026-11-01/mcp/HERO-002-full-photo-clip-upload-283-output.json"
+  },
+  "poster": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-photo-poster-960x1704-q90.jpg",
+    "sha256": "8f82f2c246004f6bb1b4566dcdeb294103b9d207d5f2183492eb3b3ad7c42ee0",
+    "bytes": 243112,
+    "sourceFrame": 904,
+    "sourceDimensions": [
+      1080,
+      1920
+    ],
+    "dimensions": [
+      960,
+      1704
+    ],
+    "runtimeAssetReference": "data:framer/asset-reference,kWnPuC4ioSGWpZ7z8fOpn1uS48.jpg?originalFilename=HERO-002-Ajedrez-source-full-photo-frame904-960x1704.jpg&width=960&height=1704",
+    "encoding": "JPEG quality90/4:4:4/mozjpeg; original decoded resized PNG retained externally.",
+    "sourcePNG": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/full-photo-poster-960x1704.png",
+      "sha256": "9dae9a181a7975475f745fa01831899907bb20f257f12b7e3eb09600c4619eaa",
+      "bytes": 1500698
+    },
+    "runtimeURL": "https://framerusercontent.com/images/kWnPuC4ioSGWpZ7z8fOpn1uS48.jpg",
+    "referenceStatus": "Genuine uploaded/resolved reference; native frame binding remains pending."
   },
   "nativeBinding": {
     "desktop": "HfkfZ9q4q",
     "phone": "wh9JF07sVHfkfZ9q4q",
-    "sourceHierarchy": "Existing ordinary aperture Frame under film-phase-29, beneath the same Film Context. No native child nodes exist inside this aperture; its source image fill remains the poster.",
+    "parents": [
+      "EAxzauVcb",
+      "wh9JF07sVEAxzauVcb"
+    ],
     "desktopGeometry": [
       0,
-      153,
+      0,
       480,
-      510
+      852
     ],
     "phoneGeometry": [
       0,
-      120,
+      0,
       375,
-      398
+      666
     ],
-    "preserve": "Native IDs/parents/geometry and image fill; all outside typography, rules and editable phase contents."
+    "preserve": "Same IDs, parents, widths, HOC; native fill becomes fullphoto poster after genuine upload. Outside controls/credits and four hidden metadata parts remain unchanged.",
+    "nativeSaved": false
   },
   "playback": {
     "filmRange": [
-      37,
-      39
+      36.708333333333336,
+      38.75
     ],
     "sourceRangeSeconds": [
       36.708333333333336,
       38.75
     ],
-    "sourceRate": 1.0208333333333333,
-    "fit": "The 49 source frames are fitted to the existing two-second native phase; adjacent cuts are unchanged and remain approximate.",
-    "clock": "The existing same-module Film Context is the only timeline. Pause/replay/offscreen/document-hidden/reduced/frozen states control admission; no independent media clock drives the film.",
-    "decoder": "One live client uses the existing monarchic.source-portfolio-media.v1 gate and the shared two-decoder cap. An actual preexisting H4 gate is exercised by focused browser checks.",
-    "surface": "One 480×510 2D canvas supplies only photographic pixels. It retains the last decoded image on pause and is hidden for Canvas/export/reduced targets; native fill supplies the static poster.",
-    "bound": 244800
-  },
-  "localEvidence": {
-    "actualClipBrowser": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/browser-final-source/result.json",
-      "sha256": "7fbaeacbb154d9e6a028a60515fec02f12440ac1a9b25ddd46aa281dbec2deb0",
-      "bytes": 6108
+    "sourceRate": 1,
+    "clock": "Existing FilmContext only, no extra RAF/media clock.",
+    "decoder": "Existing monarchic.source-portfolio-media.v1 admission; one own/two global decoder maximum.",
+    "surface": "One transformed-bounds/DPR display canvas under 2MP and source960×1704, plus one retained full-resolution decoded frame (1635840 pixels). Paused resize/owned-ancestor style changes redraw the exact held frame without a decoder or RAF; Canvas/export/reduced stays native.",
+    "bound": 2000000,
+    "sourceResolutionBound": 1635840,
+    "retainedFrame": {
+      "width": 960,
+      "height": 1704,
+      "pixels": 1635840,
+      "scope": "Private per-HOC 2D frame, released on host/frozen/reduced/URL change or unmount; no global cache."
     },
-    "scope": "Actual local decoded source pixels and native-like React Frame child forwarding; actual Framer compilation/paint/persistence still require the retained-aperture probe.",
-    "original44Preservation": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/original44-preservation-review.json",
-      "sha256": "ba1083e50f94e2dde5a9f165fbc1336815dc16e6f31f41b9640b90839d23ff30",
-      "bytes": 2054
+    "pausedRefresh": {
+      "resizeObservers": 1,
+      "mutationObservers": 1,
+      "scope": "Only the current host and its actual ancestors; style/class attribute observation, window and visualViewport resize. No subtree/global mutation subscription.",
+      "extraRAFs": 0,
+      "extraDecoders": 0
     }
   },
-  "remaining": "Final locked Nix and actual Framer native Frame child-forwarding/clock/decoder/moving-paint/Phone proof remain required. Other photo-strip choreography, film audio and exact cuts are not restored by this single aperture."
+  "lineage": {
+    "parentSHA256": "b811f34ecb64b8116fc9883a62834bed19ce1439ab7dfc2daa308077575c2e3d",
+    "parentBytes": 55156,
+    "parentPhotoRegion": "// The URL is bound only after the 49-frame silent source crop has a genuine\n// uploaded runtime URL. Native image fill remains the poster while unbound.\nfunction ajedrezOverheadSource(): string | null { return \"https://framerusercontent.com/assets/8mNQ0LUIe80fn27qQfvQoduVI.mp4\" }\ntype AjedrezPhotoLease = { create: () => HTMLVideoElement; release: (video: HTMLVideoElement) => void; trackAbort: (video: HTMLVideoElement, cancel: () => void) => void; finish: () => void }\ntype AjedrezPhotoClient = { kind: \"live\" | \"still\"; enabled: boolean; priority: number; start: (lease: AjedrezPhotoLease) => void; stop: () => void }\ntype AjedrezPhotoGate = { add: (input: AjedrezPhotoClient) => { update: (next: Partial<AjedrezPhotoClient>) => void; remove: () => void }; debug: () => { clients: number; decoders: number; peakDecoders: number; owner: number | null; kind: string | null; failures: string[] } }\n// Same owned admission protocol as SourcePortfolioFilmStudy; this self-contained\n// file neither imports that actor nor creates a second independent decoder cap.\nfunction ajedrezPhotoGate(): AjedrezPhotoGate {\n    const key = Symbol.for(\"monarchic.source-portfolio-media.v1\"), registry = window as unknown as Record<symbol, unknown>, existing = registry[key] as AjedrezPhotoGate | undefined\n    if (existing) return existing\n    type Client = AjedrezPhotoClient & { id: number; videos: Set<HTMLVideoElement>; aborts: Map<HTMLVideoElement, () => void> }\n    const clients = new Map<number, Client>(), failures: string[] = []\n    let sequence = 0, owner: Client | null = null, peak = 0, pumping = false, again = false\n    const decoderCount = () => [...clients.values()].reduce((n, c) => n + c.videos.size, 0)\n    function release(record: Client, video: HTMLVideoElement) { if (!record.videos.delete(video)) return; const cancel = record.aborts.get(video); record.aborts.delete(video); cancel?.(); try { video.pause(); video.removeAttribute(\"src\"); video.load() } catch {} }\n    function stop(record: Client) { try { record.stop() } catch (error) { failures.push(String(error)) } finally { for (const video of [...record.videos]) release(record, video) } }\n    function pump() {\n        if (pumping) { again = true; return }; pumping = true\n        try { do {\n            again = false\n            const eligible = [...clients.values()].filter(c => c.enabled), next = eligible.filter(c => c.kind === \"still\").sort((a, b) => a.id - b.id)[0] ?? eligible.filter(c => c.kind === \"live\").sort((a, b) => b.priority - a.priority || b.id - a.id)[0] ?? null\n            if (owner === next) continue\n            if (owner) { const previous = owner; owner = null; stop(previous) }\n            if (next) {\n                owner = next\n                const lease: AjedrezPhotoLease = { create() { if (owner !== next) throw Error(\"Stale film media lease\"); if (decoderCount() >= 2) throw Error(\"Film decoder budget exceeded\"); const video = document.createElement(\"video\"); video.muted = true; video.playsInline = true; video.preload = \"metadata\"; video.crossOrigin = \"anonymous\"; next.videos.add(video); peak = Math.max(peak, decoderCount()); return video }, release: video => release(next, video), trackAbort(video, cancel) { if (next.videos.has(video)) next.aborts.set(video, (() => { const previous = next.aborts.get(video); return () => { previous?.(); cancel() } })()) }, finish() { if (owner !== next) return; next.enabled = false; owner = null; stop(next); again = true; pump() } }\n                try { next.start(lease) } catch (error) { failures.push(String(error)); next.enabled = false; owner = null; stop(next); again = true }\n            }\n        } while (again) } finally { pumping = false }\n    }\n    const gate: AjedrezPhotoGate = { add(input) { const record: Client = { ...input, id: ++sequence, videos: new Set(), aborts: new Map() }; clients.set(record.id, record); pump(); return { update(next) { Object.assign(record, next); pump() }, remove() { if (owner === record) { owner = null; stop(record) } else stop(record); clients.delete(record.id); pump() } } }, debug: () => ({ clients: clients.size, decoders: decoderCount(), peakDecoders: peak, owner: owner?.id ?? null, kind: owner?.kind ?? null, failures: [...failures] }) }\n    registry[key] = gate; return gate\n}\ntype AjedrezTimedVideo = HTMLVideoElement & { requestVideoFrameCallback?: (callback: (now: number, metadata: { mediaTime: number }) => void) => number; cancelVideoFrameCallback?: (id: number) => void }\n/** Source frames 881..929 (480x510 crop) fit the existing 37..39s phase.\n * Only photographic pixels use a 244,800px 2D surface; native text/art stays\n * outside it. Shared Film Context owns time, controls and responsive fitting. */\nexport function withAjedrezOverheadMotion(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {\n    return React.forwardRef<HTMLElement, LayerProps>((props, forwardedRef) => {\n        const state = React.useContext(Context), latest = React.useRef(state), own = React.useRef<HTMLElement | null>(null), canvas = React.useRef<HTMLCanvasElement | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null), [ready, setReady] = React.useState(false), [status, setStatus] = React.useState(\"poster\")\n        latest.current = state\n        const bindHost = React.useCallback((node: HTMLElement | null) => { own.current = node; setHost(node); writeRef(forwardedRef, node) }, [forwardedRef]), url = ajedrezOverheadSource(), live = state.index === 28 && state.active && !state.frozen && !state.reduced && !!url\n        React.useEffect(() => { setReady(false); setStatus(url ? \"poster\" : \"unbound\") }, [host, state.frozen, state.reduced, url])\n        React.useEffect(() => {\n            const surface = canvas.current\n            if (!live || !host || !surface || !url) return\n            const context = surface.getContext(\"2d\")\n            if (!context) { setStatus(\"2d-unavailable\"); return }\n            let disposed = false, stopVideo = () => {}\n            const current = () => !disposed && own.current === host && canvas.current === surface\n            const target = () => Math.min(2, Math.max(0, (latest.current.time - 37) / 2) * 49 / 24)\n            const client = ajedrezPhotoGate().add({ kind: \"live\", enabled: true, priority: 1,\n                start(lease) {\n                    if (!current()) return\n                    const video = lease.create() as AjedrezTimedVideo\n                    let stopped = false, videoFrame: number | undefined, frame = 0, started = false\n                    const valid = () => current() && !stopped\n                    const paint = (mediaTime = video.currentTime) => {\n                        if (!valid() || video.readyState < 2 || video.seeking) return\n                        const wanted = target()\n                        if (Math.abs(mediaTime - wanted) > .09) { video.currentTime = wanted; return }\n                        context.drawImage(video, 0, 0, 480, 510); setReady(true); setStatus(\"moving\")\n                        surface.setAttribute(\"data-source-ajedrez-photo-media-time\", String(mediaTime)); surface.setAttribute(\"data-source-ajedrez-photo-film-time\", String(latest.current.time))\n                    }\n                    const schedule = () => { if (!valid()) return; if (video.requestVideoFrameCallback) videoFrame = video.requestVideoFrameCallback((_now, metadata) => { paint(metadata.mediaTime); schedule() }); else frame = requestAnimationFrame(() => { frame = 0; paint(); schedule() }) }\n                    const play = () => { if (!valid() || started) return; started = true; video.playbackRate = 49 / 48; schedule(); void video.play().catch(() => { if (valid()) setStatus(\"playback-blocked\") }) }\n                    const seek = () => { if (!valid()) return; const wanted = target(); if (Math.abs(video.currentTime - wanted) > .001) video.currentTime = wanted; else { paint(); play() } }\n                    const settled = () => { if (valid()) { paint(); play() } }, failed = () => { if (valid()) setStatus(\"media-error\") }\n                    stopVideo = () => { if (stopped) return; stopped = true; if (videoFrame !== undefined) video.cancelVideoFrameCallback?.(videoFrame); if (frame) cancelAnimationFrame(frame); video.removeEventListener(\"loadedmetadata\", seek); video.removeEventListener(\"loadeddata\", settled); video.removeEventListener(\"seeked\", settled); video.removeEventListener(\"error\", failed); video.pause() }\n                    lease.trackAbort(video, stopVideo); video.addEventListener(\"loadedmetadata\", seek); video.addEventListener(\"loadeddata\", settled); video.addEventListener(\"seeked\", settled); video.addEventListener(\"error\", failed); setStatus(\"loading\"); video.src = url; video.load()\n                }, stop() { stopVideo() },\n            })\n            return () => { disposed = true; client.remove() }\n        }, [live, host, url])\n        const shown = ready && !state.frozen && !state.reduced && state.index === 28\n        return <Component {...props} ref={bindHost} data-source-ajedrez-photo=\"overhead\" data-source-ajedrez-photo-status={status} data-source-ajedrez-photo-live={live}>\n            {props.children}<canvas ref={canvas} width={480} height={510} aria-hidden=\"true\" data-source-ajedrez-photo-surface=\"true\" style={{ position: \"absolute\", inset: 0, width: \"100%\", height: \"100%\", pointerEvents: \"none\", opacity: shown ? 1 : 0 }} />\n        </Component>\n    })\n}\n\n\n",
+    "currentRegionSHA256": "77eafcaf99a1fc141cc1e7ee31cc391517df8a072d36f9c0b7ff474c3f58d3cc",
+    "currentSourceSHA256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+    "currentSourceBytes": 57829,
+    "allowedAdjacentCutAmendments": [
+      {
+        "old": "{ from: 34, to: 37, name: \"paragraph-layout\" }",
+        "current": "{ from: 34, to: 881 / 24, name: \"paragraph-layout\" }"
+      },
+      {
+        "old": "{ from: 37, to: 39, name: \"overhead-chess-film\" }",
+        "current": "{ from: 881 / 24, to: 930 / 24, name: \"overhead-chess-film\" }"
+      },
+      {
+        "old": "{ from: 39, to: 41, name: \"large-type\" }",
+        "current": "{ from: 930 / 24, to: 41, name: \"large-type\" }"
+      }
+    ],
+    "scope": "Replace only the private photographic region and these three exact table rows; all remaining bytes reconstructb811, including all45 unrelated public functions and sampled word motion."
+  },
+  "priorCrop": {
+    "schemaVersion": 1,
+    "reference": "HERO-002",
+    "classification": "Source inspiration / credited photographic aperture recreation",
+    "credit": "Julián Leiss / Ajedrez Film Poem; underlying archival film authors and reuse rights remain unverified.",
+    "source": {
+      "url": "https://cdn.recent.design/items/qfy3385/0/480x852.mp4",
+      "sha256": "edcffe1664dbe785ee48e7f48e9c9c8ab2f9dbe464d9f887ae669a9209e72ea5",
+      "bytes": 2426168,
+      "width": 480,
+      "height": 852,
+      "fps": 24,
+      "duration": 52.314558,
+      "audio": "Present in original; unreviewed and deliberately omitted from derivative."
+    },
+    "derivative": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/overhead-chess-frames-881-929.mp4",
+      "sha256": "8b658fcd9dcabea0d45bd53fd657507ad031ba09c68392fce91a485776ec1cf9",
+      "bytes": 193779,
+      "role": "Individual moving photographic aperture only, without the source film typography or whole portrait frame.",
+      "frameRange": {
+        "firstInclusive": 881,
+        "lastInclusive": 929,
+        "count": 49
+      },
+      "crop": {
+        "left": 0,
+        "top": 153,
+        "width": 480,
+        "height": 510,
+        "exact": true
+      },
+      "encoding": {
+        "tool": "ffmpeg8.1.2 from Nix",
+        "video": "H.264/libx264",
+        "crf": 18,
+        "preset": "medium",
+        "pixelFormat": "yuv420p",
+        "fps": 24,
+        "audio": false,
+        "fastStart": true
+      },
+      "duration": 2.0416666666666665,
+      "runtimeURL": "https://framerusercontent.com/assets/8mNQ0LUIe80fn27qQfvQoduVI.mp4",
+      "runtimeBinding": "Genuine HTTP201 upload268, exact derived bytes and source lineage retained in the official external receipt. No source/native Framer binding is claimed by this provenance.",
+      "uploadReceipt": "/tmp/monarchic-hero-behavior-iterations-2026-11-01/mcp/HERO-002-overhead-chess-upload-268-output.json"
+    },
+    "nativeBinding": {
+      "desktop": "HfkfZ9q4q",
+      "phone": "wh9JF07sVHfkfZ9q4q",
+      "sourceHierarchy": "Existing ordinary aperture Frame under film-phase-29, beneath the same Film Context. No native child nodes exist inside this aperture; its source image fill remains the poster.",
+      "desktopGeometry": [
+        0,
+        153,
+        480,
+        510
+      ],
+      "phoneGeometry": [
+        0,
+        120,
+        375,
+        398
+      ],
+      "preserve": "Native IDs/parents/geometry and image fill; all outside typography, rules and editable phase contents."
+    },
+    "playback": {
+      "filmRange": [
+        37,
+        39
+      ],
+      "sourceRangeSeconds": [
+        36.708333333333336,
+        38.75
+      ],
+      "sourceRate": 1.0208333333333333,
+      "fit": "The 49 source frames are fitted to the existing two-second native phase; adjacent cuts are unchanged and remain approximate.",
+      "clock": "The existing same-module Film Context is the only timeline. Pause/replay/offscreen/document-hidden/reduced/frozen states control admission; no independent media clock drives the film.",
+      "decoder": "One live client uses the existing monarchic.source-portfolio-media.v1 gate and the shared two-decoder cap. An actual preexisting H4 gate is exercised by focused browser checks.",
+      "surface": "One 480×510 2D canvas supplies only photographic pixels. It retains the last decoded image on pause and is hidden for Canvas/export/reduced targets; native fill supplies the static poster.",
+      "bound": 244800
+    },
+    "localEvidence": {
+      "actualClipBrowser": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/browser-final-source/result.json",
+        "sha256": "7fbaeacbb154d9e6a028a60515fec02f12440ac1a9b25ddd46aa281dbec2deb0",
+        "bytes": 6108
+      },
+      "scope": "Actual local decoded source pixels and native-like React Frame child forwarding; actual Framer compilation/paint/persistence still require the retained-aperture probe.",
+      "original44Preservation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/photographic-motion-inspection/original44-preservation-review.json",
+        "sha256": "ba1083e50f94e2dde5a9f165fbc1336815dc16e6f31f41b9640b90839d23ff30",
+        "bytes": 2054
+      }
+    },
+    "remaining": "Final locked Nix and actual Framer native Frame child-forwarding/clock/decoder/moving-paint/Phone proof remain required. Other photo-strip choreography, film audio and exact cuts are not restored by this single aperture."
+  },
+  "remaining": "Native fullfield geometry/poster binding and actual Framer compilation/moving paint/reload remain separate gates. Original materials remain retained; other native phases keep their declared adaptations.",
+  "localEvidence": {
+    "pausedZoomCounterfactual": {
+      "sourceSHA256": "5028017cd5e4a7ecd1860ec1eb61615e30900c355c368755903d66cdf038af7c",
+      "path": "/tmp/monarchic-ajedrez-full-photo-paused-zoom-before/paused-zoom-live-readback.json",
+      "sha256": "df64addf5d1d80dc6d508cd5a674068820bdbf96c83f86e507bf9ecd58afc3b3",
+      "finding": "At DPR1 a paused 240×426 buffer stayed unchanged when its display zoomed to480×852; exact source media time stayed fixed and decoder count was0."
+    },
+    "preZoomNix": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/pre-paused-zoom-nix-proof.json",
+      "sha256": "95f666201c98c9827836b1a73880ff16e9d6f900f0055e645cb749788c7bcfbe",
+      "scope": "Passed pre-zoom source5028; retained as historical evidence, not final source validation."
+    },
+    "priorSynthetic": {
+      "path": "/tmp/monarchic-ajedrez-full-photo-synthetic-fit/result.json",
+      "sha256": "61ee9d14cd9e66fae546bf241febda78d02fc4e5b60301a95fb561abd6826ca2"
+    },
+    "priorGenuineClip": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/browser-genuine-clip/result.json",
+      "sha256": "8d832b873510d8ceb00c9affed0ebdb0e2e9dc0819661d8dc36d05086dfe45be"
+    },
+    "priorBindingStage": "The earlier69eb/5028 evidence remains historical. Current paused-zoom source has separate genuine-clip and locked Nix evidence; the earlier private-URL equivalence does not claim equivalence to the later retained-frame logic.",
+    "currentGenuineClip": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/browser-genuine-paused-zoom/result.json",
+      "sha256": "be969387e2a91e87506bc9cf645406342dff6584f9bfe686e88069ca692423da",
+      "bytes": 11246,
+      "sourceSHA256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "checks": 26,
+      "scope": "Actual selected source-derived video decoded by Chromium with real ReactDOM/native-like Frame forwarding, including paused zoom and exact held-frame replay. This does not establish actual Framer paint."
+    },
+    "lockedNix": {
+      "passed": true,
+      "store": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1",
+      "sourceSHA256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "strictGroups": 8,
+      "retainedBrowserChecks": 171,
+      "retainedCases": 6,
+      "photoChecks": 26,
+      "controller": {
+        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/result.json",
+        "sha256": "579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569",
+        "bytes": 1205854
+      },
+      "photo": {
+        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/photographic-aperture/result.json",
+        "sha256": "d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0",
+        "bytes": 11099
+      },
+      "scope": "Reproducible source/controller/native-like decoding validation. This metadata-only proof field is appended after the successful derivation; source/tests are unchanged. Actual Framer paint remains pending."
+    },
+    "terminalFixtureCorrection": "The existing full-controller fixture advances the actual remaining duration before its unchanged exact terminal/zero-RAF assertion. Its former fixed500ms wait stopped before52.314558 after the earlier closing cut moved to51.083333."
+  },
+  "uploadReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/photographic-correction/upload-receipt.json",
+    "sha256": "77dd0254392ed0619cd66deaf4aa4c8bd6883d900a81862a23f185abfc492604",
+    "bytes": 6083
+  }
 }
