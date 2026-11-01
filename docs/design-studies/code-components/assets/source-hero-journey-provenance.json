@@ -91,5 +91,257 @@
       "sha256": "53160dbbf00a62ce5b029d223a9c76f049e2ae068249b4093df72a6e4806b1f3",
       "bytes": 435141
     }
-  ]
+  ],
+  "currentOriginalImplementation": {
+    "schema": "current-source-journey-v1",
+    "source": "https://www.unbelievablycrap.com/",
+    "sourceAudit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/audit-contract.json",
+      "sha256": "981a3d3634b98b4e9d19b9cbe2d754f41e5de41013c436d8849409c5e26d1b2a",
+      "bytes": 7783
+    },
+    "priorMain": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/SourceHeroJourneyStudy-prior.tsx",
+      "sha256": "56d7ffda953b487e9d996d366dcfbdfa0311f6ac99b04ee893b1595aac4e70b8",
+      "bytes": 68299
+    },
+    "main": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
+      "sha256": "7d980376a919b95d3154c4b3f2e82746bcf94389f9284b5fe3984be14e20d3a1",
+      "bytes": 95330
+    },
+    "sourceWebsiteBehaviorJSReused": false,
+    "publicSchema": {
+      "components": 1,
+      "actualPropertyControls": 13,
+      "additionalStyleProp": true,
+      "dataModulesUnchanged": true
+    },
+    "sharedRuntime": {
+      "rgbAndCoordinatorBytes": 25511,
+      "rgbAndCoordinatorSHA256": "281fdff6726bf1c3a5bb605318ed3dda350ed6980c31e0f9f5691b1c183c4feb",
+      "closedHookBytes": 4235,
+      "closedHookSHA256": "0935d9273b031749dfa655637f308614d40aba884381b0c32e4ad7da58dad02a",
+      "bothByteExactToPrior": true,
+      "contextsIncludingInitialization": 2,
+      "liveCanvas": 1,
+      "livePreview": 2,
+      "canvasFPS": 12,
+      "canvasPixels": 1000000,
+      "serialStillPixels": 2000000,
+      "overview": "Retained Canvas2D committed-frame overview",
+      "privateArtworkRevision": "current-source-travel-head-turn-settling-v1",
+      "keyedPrivateMount": true
+    },
+    "sourceEvidence": {
+      "primaryAlgorithms": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/about-text.js",
+          "sha256": "8630c472072ccee2223ed10b4b7b384b4857089c9f5816227e0e8f4472225fdd",
+          "bytes": 23996
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/mask-scroll.js",
+          "sha256": "7956111c70a7b36058164807ccad2c9b10a5e85b1fc8109ff8a5c07a80441d88",
+          "bytes": 95309
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/block2.js",
+          "sha256": "af0edff68dc45e1069594d59c885870bc8af4c9200a2b88472048a554019e906",
+          "bytes": 31105
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/head-spin.js",
+          "sha256": "b685b859b735b1455e176ada50dba0dd7f9412469bf1ae1b50b450502d4d84eb",
+          "bytes": 13479
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/touch-scroll.js",
+          "sha256": "f9b3cb827c2901a97c62001f4b34dd7b7c34a84118cd58991abe5bebd8994432",
+          "bytes": 6224
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/footer.js",
+          "sha256": "04e2f49b3978c966422d32de64416ede49b503bf5b8bbd4df6e72f9f95a45fa9",
+          "bytes": 22299
+        }
+      ],
+      "styles": {
+        "scope": "Public primary stylesheet reads only; no source behavior code imported or executed, no browser/accounts/cookies.",
+        "files": [
+          {
+            "url": "https://www.unbelievablycrap.com/css/about.css",
+            "status": 200,
+            "bytes": 14381,
+            "sha256": "45146b0ad8f0177624279b09d2473eb0285242bdcdfbcccf014158d226df53ae"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/css/block2.css",
+            "status": 200,
+            "bytes": 7751,
+            "sha256": "aebf6421bb0b970931c3e3b44e54308ef3c8812b8ed7958dcb21e60eb9a402da"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/css/tscroll.css",
+            "status": 200,
+            "bytes": 5952,
+            "sha256": "fee0bb7078e23432ba0e5b79625e3e780ce5c32f2a07e4e3df2603aaca784f1c"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/css/footer.css",
+            "status": 200,
+            "bytes": 20273,
+            "sha256": "67c25ae04e9ab1d2a604291aabd01df458a081680bcee7b0b64c67a1c1b04259"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/css/base.css",
+            "status": 200,
+            "bytes": 6068,
+            "sha256": "785116c8c1eec45699d1a56421c1f8297114de48dc1a66987b76efe5e54b71fa"
+          }
+        ]
+      },
+      "stripVectors": {
+        "scope": "Three exact primary source vector assets explicitly named in the retained strip markup/CSS; no behavior JavaScript or new illustration.",
+        "assets": [
+          {
+            "url": "https://www.unbelievablycrap.com/assets/tscroll/num-0039.svg",
+            "status": 200,
+            "name": "num-0039.svg",
+            "bytes": 2623,
+            "sha256": "3ce0c9146db7deaedae24620ec0d1e8e4edbbe8eefc82d9575ad024410d52a09"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/assets/tscroll/arrow.svg",
+            "status": 200,
+            "name": "arrow.svg",
+            "bytes": 231,
+            "sha256": "fbf646622efb3fe72edbceb962bb6030fe294f65cebb068754ac363cbfd84666"
+          },
+          {
+            "url": "https://www.unbelievablycrap.com/assets/tscroll/logo-0309.svg",
+            "status": 200,
+            "name": "logo-0309.svg",
+            "bytes": 3076,
+            "sha256": "198efa7e4b8a20b5deea1138ef682f87fa835ce0f75aa7d880dc4282b4604282"
+          }
+        ]
+      },
+      "stripGeometry": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/strip-layout-facts.json",
+        "sha256": "69fb4b653c25130990d3881fd8175a1c83f6511a2d2504731ffe3a2c81087a7c",
+        "bytes": 6782
+      }
+    },
+    "implemented": {
+      "windowScrollY": 0,
+      "copy": {
+        "rows": 124,
+        "heightAt900": 1174,
+        "maxTravel": 2466,
+        "independentText": true,
+        "wording": "Existing independently authored biography lines repeated to match source line mass; not a verified paraphrase of the full source biography.",
+        "wheelPixelsPerPixel": 1,
+        "mouseDragPixelsPerPixel": 0.2,
+        "sourceTurnDegreesPerPixel": 0.22
+      },
+      "whiteMask": {
+        "travel": 300,
+        "settlingTimeConstantSeconds": 0.5,
+        "method": "Independent multi-scale tear/frost/lens/chromatic-fringe material and DOM clip; not the original many-context shader stack."
+      },
+      "head": {
+        "travel": "1644 + 5.4 × viewport height",
+        "travelAt900": 6504,
+        "idleDegreesPerSecond": 4,
+        "columns": [
+          35,
+          35
+        ],
+        "columnWidths": [
+          91,
+          71
+        ],
+        "columnGap": 64,
+        "linePitch": 11,
+        "independentWords": true,
+        "sourceSVGStrip": true,
+        "click": {
+          "turnsPerClick": 1,
+          "durationMilliseconds": 1100,
+          "shrinkFraction": 0.17,
+          "easingControlPoints": [
+            1,
+            0,
+            0.4,
+            1.06
+          ],
+          "maximumQueuedTurns": 4,
+          "additivePoseAndExactBaseRestoration": true
+        },
+        "scrollPose": "Fitted base yaw; source strip miniature rotation uses 0.06 degrees per head-travel pixel."
+      },
+      "footer": {
+        "admissionFractionOfHeadTravel": 0.59,
+        "revealTravel": 300,
+        "settlingTimeConstantSeconds": 0.5,
+        "redMultiplyPreservesHead": true,
+        "exactPrimaryRingPath": true,
+        "independentBodyAndCaptions": true
+      },
+      "input": {
+        "wheel": true,
+        "sourceLikeBlackSceneMouseDrag": true,
+        "headClick": true,
+        "headClickWhileAmbientPaused": true,
+        "reverse": true,
+        "keyboard": "Arrow/Home/End/Page navigation and Enter head-turn are explicit accessibility extensions.",
+        "phone": "Existing full Phone journey and touch navigation retained as an adaptation; the current original instead shows a desktop-preferred notice."
+      },
+      "frameValidity": "Actual progress, independent mask/footer transition plans, head-turn queue and artwork revision participate in the unmodified shared content key; the keyed private surface invalidates old renderer factories on HMR."
+    },
+    "limits": [
+      "The retained source code permits copy-to-white overlap at 84% copy travel. The large-wheel audit reached full 2466px before the white phase. This finite recreation follows the measured full-span progression; it does not claim exact early-overlap/wheel-history equivalence.",
+      "Absolute model camera, ambient audit orientation and between-state head pose remain independently fitted; genuine existing source meshes are preserved.",
+      "The source geographic/dotted ground data has not been identified. The existing independent dithered terrain remains an explicit material/composition approximation.",
+      "PP Supply Sans and PP Supply Mono are preferred CSS family names; no font file is bundled or newly uploaded. Local fallback typography and text width differ.",
+      "The full original biography and song-lyric captions are not copied. Independent substitute biography, words and captions preserve visual density and sequence only.",
+      "The existing ten-row award rail is a bounded historical UI approximation; the full current award loop is not reconstructed.",
+      "Head drag, x-ray brush, dormant clock and complete work/gallery/error routes are outside this finite implementation. Pointer strength remains zero by default.",
+      "The strip, footer and copy remain component-owned DOM because they are continuously coupled to the virtual scene. Existing native outer source credits remain separate.",
+      "Source readouts observed during a slow software browser session do not establish exact real-time completion of every source filter or camera phase.",
+      "Actual Framer moving paint, saved module graph and editor reload are separate gates and remain pending while connected browser automation is disabled."
+    ],
+    "validation": {
+      "strictCommand": "pnpm run check:source-hero-journey-study",
+      "browserCommand": "pnpm run check:source-hero-journey-browser",
+      "browser": "Actual React18.3.1 DOM, Canvas2D and software WebGL; two layouts and old/new shared-pool leaders.",
+      "tests": [
+        {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-study.mjs",
+          "sha256": "a11e96257aa97ea6310815805d5a245ec334f35dac3321d9d325b431a2efff7c",
+          "bytes": 13850
+        },
+        {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-browser.mjs",
+          "sha256": "4abf0934bf89fa2e9eedd631787654103692d90c0654e220cd6cb04960e77fda",
+          "bytes": 17051
+        }
+      ],
+      "status": "Local strict12 groups and both actual React/browser layouts passed on the exact frozen source/tests. Locked Nix evidence is retained externally; actual Framer moving paint/reload remains pending.",
+      "localStrictGroups": 12,
+      "localBrowserLayouts": [
+        {
+          "width": 1280,
+          "height": 720,
+          "leader": "new Journey v2"
+        },
+        {
+          "width": 390,
+          "height": 800,
+          "leader": "unchanged old SourceHeroPageStudy v2 first"
+        }
+      ]
+    }
+  }
 }
