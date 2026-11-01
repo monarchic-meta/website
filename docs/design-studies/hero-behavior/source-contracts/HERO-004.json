@@ -152,9 +152,42 @@
     "sha256": "826aa467c8008045f64a579d7d8bb54bf959866bc654e74d61928f469b2354d2",
     "bytes": 84274,
     "change": "Only native utility-panel scrollbar clearance and the explicit withFilmPage root scrollbar policy are added. All renderer, decoder, timing, media selection, controls and existing exports are unchanged.",
-    "savedFramerStatus": "Same-file source update, root attachment and actual expanded-panel/document client-width recheck pending.",
+    "savedFramerStatus": "Same-file826 source and genuine withFilmPage export recovered from actual saved read127; bothH4roots andnativebackings saved128. Post-editor-reload Desktop/Phone layout and playback checks passed within the recorded bounds.",
     "newNamedExport": "withFilmPage",
     "newExportBinding": "Use the genuine export returned by same-file registration; attach only to H4 Desktop and Phone roots.",
-    "renderTargetReference": "https://www.framer.com/developers/components-reference"
+    "renderTargetReference": "https://www.framer.com/developers/components-reference",
+    "previewVerification": {
+      "desktop": {
+        "viewport": [
+          1440,
+          810
+        ],
+        "documentClientWidth": 1440,
+        "documentScrollWidth": 1440,
+        "expandedPanelClientWidth": 504,
+        "expandedPanelScrollWidth": 504
+      },
+      "phone": {
+        "viewport": [
+          390,
+          844
+        ],
+        "documentClientWidth": 390,
+        "documentScrollWidth": 390,
+        "expandedPanelClientWidth": 374,
+        "expandedPanelScrollWidth": 374,
+        "openingHeight": 1000,
+        "documentHeight": 1092,
+        "layout": "Fitted Phone opening; source-exact viewport-height geometry is not claimed."
+      },
+      "nativeBackings": "The105×22 pale selected-work backing and20×18 black count backing render with the retained editable text in bothlayouts.",
+      "media": "Earlier actual8project/13variant checks remain linked. This reload rechecked genuine moving project7video and nativePause; exact paused clock/media time held across reads.",
+      "writeDiagnostics": "The126 write response was lost; actual127 exactsource/export recovery and subsequent workingPreview establish persistence/compilation, without a clean write-diagnostic claim.",
+      "remainingLimits": "Hold/swipe causality and five later fitted effects were not isolated in this final browser check; local input tests and declared fits remain separate.",
+      "evidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO004-framer-final-layout-reload-proof.json",
+        "sha256": "3662e24a5afcae700c9434bf6efbb0fd36d1e9a15f97b01cc475e755ee154bf1"
+      }
+    }
   }
 }
