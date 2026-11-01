@@ -1,0 +1,71 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+import {createMechanismHost} from './hero-mechanism-test-host.mjs';
+
+// Exact source assets/codec, strict DOM typing, actual geometry and submitted
+// paths/materials in a bounded host. Pixel/artwork and pool regressions have
+// separate browser and mixed-placement suites; no simulated pixels are claimed.
+const repo=fileURLToPath(new URL('../',import.meta.url)),ts=createRequire(import.meta.url)('typescript');
+const file=path.join(repo,'docs/design-studies/code-components/SourceHeroPageStudy.tsx'),source=fs.readFileSync(file,'utf8');
+const hash=value=>crypto.createHash('sha256').update(value).digest('hex'),checks=[],check=(name,fn)=>{fn();checks.push(name);};
+const logo=fs.readFileSync(path.join(repo,'docs/design-studies/code-components/LogoStudy.tsx'),'utf8');
+check('Byte-exact common color resolver, v2 coordinator and lifecycle hook',()=>{
+  for(const[start,end]of [['const colorCache=new Map','function createRenderer('],['// Embedded identically in the five standalone Framer files.','function useStudySurface('],['function useStudySurface(','/**\n * @framerSupportedLayoutWidth']])assert.ok(source.includes(logo.slice(logo.indexOf(start),logo.indexOf(end,logo.indexOf(start)))));
+  const art=source.slice(source.indexOf('type Mode='),source.indexOf('const colorCache=new Map'));assert.ok(!/requestAnimationFrame|setTimeout|setInterval|getImageData|readPixels|createFiberField|prepareGeometry/.test(art),'Graphics own no clocks/readback/streamline preprocessing');
+});
+const declarations=new Map([
+  [path.join(repo,'__mechanism-react.d.ts'),`export interface CSSProperties{[key:string]:string|number|undefined};export interface RefObject<T>{current:T|null};export function useRef<T>(value:T):{current:T};export function useRef<T>(value:T|null):RefObject<T>;export function useState<T>(value:T):[T,(value:T|((prior:T)=>T))=>void];export function useEffect(fn:()=>void|(()=>void),deps:unknown[]):void;export function useLayoutEffect(fn:()=>void|(()=>void),deps:unknown[]):void;export function createElement(...args:any[]):any;interface HostEvent{currentTarget:HTMLElement;target:EventTarget;pointerType:string;clientX:number;clientY:number;stopPropagation():void}declare global{namespace JSX{interface IntrinsicElements{[tag:string]:{[key:string]:unknown;onPointerMoveCapture?:(e:HostEvent)=>void;onPointerMove?:(e:HostEvent)=>void;onPointerDown?:(e:HostEvent)=>void;onPointerUp?:(e:HostEvent)=>void;onClick?:(e:HostEvent)=>void}}}}`],
+  [path.join(repo,'__mechanism-framer.d.ts'),`export const RenderTarget:{canvas:string;export:string;thumbnail:string;current():string};export const ControlType:Record<string,string>;export function useIsStaticRenderer():boolean;export function addPropertyControls(component:unknown,controls:unknown):void;`],
+]);
+check('Strict semantic TypeScript against real DOM libraries',()=>{
+  const options={strict:true,noEmit:true,skipLibCheck:true,target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext,moduleResolution:ts.ModuleResolutionKind.Node10,jsx:ts.JsxEmit.React,baseUrl:repo,paths:{react:['__mechanism-react.d.ts'],framer:['__mechanism-framer.d.ts']}};
+  const host=ts.createCompilerHost(options),read=host.readFile.bind(host),exists=host.fileExists.bind(host);host.readFile=p=>declarations.get(p)??read(p);host.fileExists=p=>declarations.has(p)||exists(p);host.getSourceFile=(p,v)=>{const text=host.readFile(p);return text===undefined?undefined:ts.createSourceFile(p,text,v,true);};
+  const diagnostics=ts.getPreEmitDiagnostics(ts.createProgram([file],options,host));assert.equal(diagnostics.length,0,ts.formatDiagnosticsWithColorAndContext(diagnostics.slice(0,8),{getCurrentDirectory:()=>repo,getCanonicalFileName:x=>x,getNewLine:()=> '\n'}));
+});
+const h=createMechanismHost(),boundary=source.indexOf('// Embedded identically in the five standalone Framer files.'),core=ts.transpileModule(source.slice(source.indexOf('type Mode='),boundary),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.None}}).outputText;
+const api=vm.runInContext('(function(){'+core+';return{createRenderer,getHeroHead,SurfaceCore,MechanismCore};})()',h.context);
+const oldSource=fs.readFileSync(path.join(repo,'docs/design-studies/code-components/HeroMechanismStudy.tsx'),'utf8'),oldCore=ts.transpileModule(oldSource.slice(oldSource.indexOf('type Mode='),oldSource.indexOf('// Embedded identically in the five standalone Framer files.')),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.None}}).outputText;
+const old=vm.runInContext('(function(){'+oldCore+';return{getMacFrames};})()',h.context),atlas=api.MechanismCore;
+const packed=Buffer.from(atlas.MAC_VECTOR_BASE64,'base64'),raw=atlas.unpackVectorBlock(packed,atlas.MAC_VECTOR_RAW_BYTES),frames=atlas.getMacFrames();
+check('Complete20-cell atlas retains125 source frames, two tonal vector layers and bounded topology',()=>{
+ assert.equal(hash(packed),'a370ec1d3233c774c300ab6655ef2658869a3ee6c724de8855ef135d43b15107');assert.equal(raw.length,2447208);assert.equal(frames.length,125);assert.equal(atlas.MAC_SYMBOLS.length,20);assert.equal(new Set(atlas.MAC_SYMBOLS.map(s=>s.key)).size,20);
+ for(let cell=0;cell<20;cell++){assert.ok(frames[12][cell].some(layer=>layer.length>0),'Defaultstillresolvesall20glyphs');assert.ok(frames.filter(frame=>frame[cell].some(layer=>layer.length>0)).length>=100,'Everycellretainsitsvisiblecycle; sourcefadegapsareallowed');}
+ let paths=0,points=0;for(const frame of frames){assert.equal(frame.length,20);for(const cell of frame){assert.equal(cell.length,2);for(const layer of cell)for(const loop of layer){assert.ok(loop.length>=6&&loop.length%2===0);paths++;points+=loop.length/2;assert.ok(loop.every(n=>n>=0&&n<=255));}}}assert.equal(paths,28223);assert.equal(points,1190377);
+ const canonicalHeader=Buffer.alloc(8);canonicalHeader.writeUInt32LE(0x32564d4d);canonicalHeader.writeUInt16LE(125,4);canonicalHeader.writeUInt16LE(12,6);const absolute=[canonicalHeader],word=n=>{const b=Buffer.alloc(2);b.writeUInt16LE(n);absolute.push(b);};for(const frame of frames)for(const cell of frame)for(const layer of cell){word(layer.length);for(const loop of layer){word(loop.length/2);absolute.push(Buffer.from(loop));}}assert.equal(hash(Buffer.concat(absolute)),'fa333ad2870e61a9cea601def5c3eb733646e57017e1447a8e4b34d0612a0e71','All1,190,377pointsandfulltopologyexacttobefore-delta528source');
+ for(const frame of [0,12,36,72,124])for(const[index,prior]of [[2,0],[3,1],[6,2],[7,3]])assert.equal(JSON.stringify(frames[frame][index]),JSON.stringify(old.getMacFrames()[frame][prior]),'Priorfour sourceglyphs remain exactwithincompleteatlas');
+ assert.equal(atlas.getMacFrames(),frames);assert.equal(atlas.getMacPaths(12),atlas.getMacPaths(12));
+});
+check('Vector codec rejects truncated, malformed and incorrect-length data',()=>{for(const bytes of [[],[0x10],[0,0,0],[15,1],[0xf0,255]])assert.throws(()=>atlas.unpackVectorBlock(Uint8Array.from(bytes),16));assert.throws(()=>atlas.unpackVectorBlock(packed,raw.length-1));assert.throws(()=>atlas.unpackVectorBlock(packed.subarray(0,packed.length-64),raw.length));});
+check('One exact shared geometry payload and one shared scheduler, with no old source edits',()=>{
+ assert.equal((source.match(/const HERO_HEAD_BASE64=/g)??[]).length,1);assert.equal((source.match(/const STUDY_POOL_KEY=/g)??[]).length,1);assert.equal((source.match(/function useStudySurface\(/g)??[]).length,1);
+ const head=Buffer.from(source.match(/const HERO_HEAD_BASE64="([^"]+)"/)[1],'base64');assert.equal(hash(head),'f1edefb08f58862a763832bff1905820bb8b93181958629290df2707c16eca05');const mesh=api.getHeroHead();assert.equal(mesh.positions.length,9279*3);assert.equal(mesh.indices.length,53052);assert.ok(mesh.indices.every(i=>i<9279));
+ assert.equal(hash(oldSource),'573e9af6ad7728927d455e6c3ccef1536f28cf70c385d98e91c16044f61d96d3');assert.equal(hash(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/HeroRecreationStudy.tsx'))),'cd2887061f8be4cc77ce45a14bfdf205a6cf3a2e147a9ac48baad3dfaf0bbb20');
+});
+const defaults={animate:true,static:false,canvasPreview:false,speed:1,stillTime:1,artworkScale:1,density:1,intensity:1,motionSpan:1,glyphSize:1,scanPitch:2.5,blur:.65,atlasColumns:4,showLabels:true,interactive:true,primary:'#c4e5ca',light:'#ffffff',secondary:'#f3f3f1',accent:'#ff0000',ink:'#11120f',managed:true,renderWidth:960,renderHeight:600,managedBufferWidth:1024,managedBufferHeight:640,pixelBudget:1000000};
+const fingerprint=c=>JSON.stringify(c.frame),states=[];
+for(const mode of ['typeface','cantor','macmoss','vercel','raster','mecha','origin'])check(mode+' renderer submits full geometry/material, exact raster and deterministic phase',()=>{
+ const canvas=new h.Canvas(),settings={...defaults,mode,...mode==='typeface'?{primary:'#fff',ink:'#000'}:mode==='cantor'?{primary:'#fff',secondary:'#044ab3'}:{}},renderer=api.createRenderer(canvas,settings,()=>{});renderer.renderAt(1);assert.ok(canvas.frame);assert.equal(canvas.width,1024);assert.equal(canvas.height,640);const initial=fingerprint(canvas);renderer.renderAt(1);assert.equal(fingerprint(canvas),initial);renderer.renderAt(3);assert.notEqual(fingerprint(canvas),initial);renderer.renderAt(1);
+ if(mode==='macmoss'){assert.equal(canvas.frame.pathFills,40);assert.equal(canvas.attributes['data-hero-vector-cells'],'20');assert.equal(canvas.attributes['data-hero-vector-frame'],'12');renderer.update({...settings,atlasColumns:2});renderer.renderAt(1);assert.equal(canvas.frame.pathFills,40);assert.notEqual(fingerprint(canvas),initial);renderer.update(settings);}
+ if(mode==='origin')assert.equal(canvas.frame.gradients,3);if(mode==='mecha')assert.ok(Number(canvas.attributes['data-hero-visible-edges'])>200);
+ renderer.update({...settings,motionSpan:0});renderer.renderAt(1);const frozen=JSON.parse(fingerprint(canvas));renderer.renderAt(3);const later=JSON.parse(fingerprint(canvas));delete frozen.phase;delete later.phase;assert.deepEqual(later,frozen);
+ for(const[w,hh]of [[384,317],[384,335],[384,481],[384,1920],[768,634]]){renderer.update({...settings,managedBufferWidth:w,managedBufferHeight:hh});assert.equal(canvas.width,w);assert.equal(canvas.height,hh);assert.ok(canvas.width*canvas.height<=1000000);renderer.renderAt(1);assert.ok(canvas.frame);}
+ assert.throws(()=>renderer.update({...settings,mode:mode==='origin'?'typeface':'origin'}),/fresh managed surface/);renderer.dispose();states.push({mode,kind:canvas.contextKind});
+});
+check('Embedding schema exposes21 useful controls and outside-art playback without Canvas/export motion',()=>{
+ const effects=[],captured=[];let target='canvas',schema;
+ const React={Fragment:Symbol('fragment'),useRef:value=>({current:value}),useState:value=>[value,()=>{}],useEffect:fn=>effects.push(fn),useLayoutEffect(){},createElement:(type,props,...children)=>({type,props,children})};
+ const framer={RenderTarget:{canvas:'canvas',export:'export',thumbnail:'thumbnail',current:()=>target},ControlType:{},useIsStaticRenderer:()=>false,addPropertyControls(component,controls){schema=controls;}};
+ const end=source.indexOf('/**\n * @framerSupportedLayoutWidth',boundary),fixture=source.slice(0,boundary)+'function useStudySurface(...args:any[]){capture(args[2]);return()=>{}}\n'+source.slice(end),module=ts.transpileModule(fixture,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText,exports={};
+ Function('require','exports','window','document','performance','atob','capture',module)(name=>name==='react'?React:framer,exports,{addEventListener(){},removeEventListener(){}},h.document,{now:()=>0},atob,s=>captured.push(s));
+ assert.equal(Object.keys(schema).length,21);assert.ok(schema.artworkScale&&!schema.scale);assert.equal(schema.canvasMotion.defaultValue,false);assert.deepEqual(schema.study.options,['typeface','cantor','macmoss','vercel','raster','mecha','origin']);
+ exports.default({canvasMotion:false});assert.equal(captured.at(-1).static,true);exports.default({canvasMotion:true});assert.equal(captured.at(-1).static,false);for(target of ['export','thumbnail']){const t=exports.default({canvasMotion:true});assert.equal(captured.at(-1).static,true);assert.equal(captured.at(-1).canvasPreview,false);assert.ok(!t.children.flat().some(x=>x?.type==='button'));}
+ target='preview';const tile=exports.default({study:'origin',showLabels:false,playbackPosition:'below'}),button=tile.children.flat().find(x=>x?.type==='button');assert.equal(tile.props.style.overflow,'visible');assert.equal(button.props.style.top,'calc(100% + 8px)');assert.equal(button.props.style.color,'#11120f');assert.equal(button.props['aria-label'],'Pause Origin / compact light');assert.ok(!JSON.stringify(tile).includes('SOURCE INSPIRATION /'));
+});
+check('Every disposed context is released and no cross-kind/invalid-alpha state occurs',()=>{assert.equal(h.active.size,0);assert.equal(h.recording.kindConflicts,0);assert.equal(h.recording.invalidAlpha,0);});
+console.log(JSON.stringify({passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,atlas:{cells:20,frames:125,packedBytes:packed.length,rawBytes:raw.length,packedSHA256:hash(packed),rawSHA256:hash(raw)},states,recording:h.recording,scope:'Strict semantic DOM TypeScript, preserved old source hashes, full20-cell vectors, submitted geometry/material and exact managed raster. Actual browser pixels and Framer persistence remain separate gates.'},null,2));
