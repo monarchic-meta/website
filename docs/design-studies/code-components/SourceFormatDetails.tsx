@@ -14,7 +14,8 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * Known fits: scroll/Lenis velocity normalization, macro/phase anchors,
  * window scrub easing, gauge growth/morph interpolation, deck-ground collapse
  * and exact first-entry word stagger. Closing floor/rotation collisions are an
- * independent fit; photo parallax remains omitted. Source pointer-spawned chips,
+ * independent fit; photo parallax remains omitted. Source pointer-spawned bitmap chips use
+ *30 native slots/21 templates and independently fitted bounded collisions. The
  * preloader, omitted fan/interstitials and complete Notes placement are absent.
  * Canvas/export/thumbnail and reduced motion freeze. Live native timers/RAF
  * suspend offscreen/hidden; no GPU context or runtime media/font fetch.
@@ -353,25 +354,27 @@ export function withFormatCutHardLight(Component: ComponentType<LayerProps>): Co
  * trajectories are independently fitted, not claimed byte-equivalent to Matter.
  */
 type ClosingRegistration = { node: HTMLElement; transform: string; width: string; left: string; top: string; height: string; origin: string; background: string; outline: string; z: string; pointer: string }
-type ClosingBody = { x: number; y: number; vx: number; vy: number; angle: number; angular: number; quiet: number }
+type ClosingBody = FormatCollisionBody
 type ClosingConfig = { frozen: boolean; reduced: boolean; phone: boolean; root: HTMLElement | null }
 function createFormatClosingWorld() {
     let poster: ClosingRegistration | null = null, field: ClosingRegistration | null = null, config: ClosingConfig = { frozen: true, reduced: false, phone: false, root: null }, frame = 0, previous = 0, painted = 0, accumulator = 0, body: ClosingBody | null = null, lastCenter = 0, held = false, attached = false
-    const listeners = new Set<() => void>(), clamp = (x: number) => Math.max(0, Math.min(1, x)), ease = (x: number) => x < .5 ? 2 * x * x : 1 - 2 * (1 - x) * (1 - x)
+    let chips: FormatChipBody[] = [], sequence = 0, played = false, chipAccumulator = 0, chipPrevious = 0, lastFieldWidth = 0, lastFieldHeight = 0, lastScroll = 0, lastScrollTime = 0, fastScroll = false
+    const slots = new Map<number,{node:HTMLElement}>(), chipListeners = new Set<()=>void>(), promptListeners = new Set<()=>void>(), listeners = new Set<() => void>(), clamp = (x: number) => Math.max(0, Math.min(1, x)), ease = (x: number) => x < .5 ? 2 * x * x : 1 - 2 * (1 - x) * (1 - x)
     const stopped = () => config.frozen || config.reduced || typeof document !== "undefined" && document.hidden
     const save = (node: HTMLElement, style: React.CSSProperties): ClosingRegistration => { const css = (key: keyof React.CSSProperties, fallback: string, unit = "px") => typeof style[key] === "number" ? style[key] + unit : String(style[key] ?? fallback); return { node, transform: css("transform", "", ""), width: css("width", node.style.width), left: css("left", node.style.left), top: css("top", node.style.top), height: css("height", node.style.height), origin: css("transformOrigin", node.style.transformOrigin, ""), background: css("backgroundColor", node.style.backgroundColor, ""), outline: css("outline", node.style.outline, ""), z: css("zIndex", node.style.zIndex, ""), pointer: css("pointerEvents", node.style.pointerEvents, "") } }
     const restore = (r: ClosingRegistration) => { const s = r.node.style; s.transform = r.transform; s.width = r.width; s.left = r.left; s.top = r.top; s.height = r.height; s.transformOrigin = r.origin; s.backgroundColor = r.background; s.outline = r.outline; s.zIndex = r.z; s.pointerEvents = r.pointer }
     const setHeld = (value: boolean) => { if (held !== value) { held = value; listeners.forEach(fn => fn()) } }
-    const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0 }
+    const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0; chipPrevious=0; chipAccumulator=0 }
     const geometry = () => {
         if (!poster || !field) return null
-        const p = poster.node, f = field.node
+        const p = poster.node, f = field.node, ownerRect = config.root?.getBoundingClientRect()
+        if(ownerRect&&(ownerRect.width<=0||ownerRect.height<=0))return null
         // Temporarily restore only our own transforms, before the same-frame paint.
         // This measures the real untransformed native boxes without feedback.
         p.style.transform = poster.transform
         p.style.transformOrigin = poster.origin
         f.style.left = field.left; f.style.top = field.top; f.style.height = field.height
-        const ownerRect = config.root?.getBoundingClientRect(), ownerScale = ownerRect && config.root ? ownerRect.width / Math.max(1, config.root.offsetWidth) : 1, ownerLeft = ownerRect?.left ?? 0
+        const ownerScale = ownerRect && config.root ? ownerRect.width / Math.max(1, config.root.offsetWidth) : 1, ownerLeft = ownerRect?.left ?? 0
         const unit = config.phone ? p.getBoundingClientRect().width / 1440 : window.innerWidth / 1440 * ownerScale
         if (!config.phone) {
             p.style.width = document.documentElement.clientWidth * ownerScale / Math.max(.001, unit) + "px"
@@ -381,17 +384,18 @@ function createFormatClosingWorld() {
             if (parent) f.style.top = (parseFloat(field.top) || 0) + (parent.top - old.top) / Math.max(.001, ratio) + "px"
             f.style.height = (window.innerHeight * 1.43 * ownerScale - 40 * unit) / Math.max(.001, ratio) + "px"
         }
-        const pr = p.getBoundingClientRect(), fr = f.getBoundingClientRect(), visual = pr.width / Math.max(1, p.offsetWidth)
+        const pr = p.getBoundingClientRect(), fr = f.getBoundingClientRect();if(pr.width<=0||pr.height<=0||fr.width<=0||fr.height<=0)return null;const visual = pr.width / Math.max(1, p.offsetWidth)
         return { p, f, pr, fr, unit, visual, ownerScale, sourceCenterX: ownerLeft + window.innerWidth / 2 * ownerScale, top: Math.round(pr.top + window.scrollY), fieldTop: Math.round(fr.top + window.scrollY), fieldWidth: Math.round(fr.width), physicalWidth: window.innerWidth * ownerScale * 250 / 1440, height: pr.height * 250 / 1440 }
     }
     const paint = (now: number, integrate: boolean) => {
         if (!poster || !field) return false
         if (stopped()) { restore(poster); restore(field); body = null; setHeld(false); return false }
         const g = geometry(); if (!g) return false
+        fastScroll=lastScrollTime>0&&Math.abs(window.scrollY-lastScroll)*1000/Math.max(4,now-lastScrollTime)/Math.max(1,window.innerHeight)>.15;lastScroll=window.scrollY;lastScrollTime=now
         const { p, pr, fr, unit, visual } = g, start = g.top + 1429.12 * unit - window.innerHeight / 2 + .02 * window.innerHeight, end = Math.max(start + 1, g.fieldTop - .45 * window.innerHeight), progress = clamp((window.scrollY - start) / (end - start)), scale = 1 + (250 / 1440 - 1) * ease(clamp(progress / .75)), follow = ease(clamp(progress / .35)), targetY = (1 - ease(progress)) * window.innerHeight / 2 + ease(progress) * (.45 * window.innerHeight + 100 * unit + pr.height / 2 * 250 / 1440), ordinaryY = pr.top + pr.height / 2, xOffset = progress * (fr.left + g.fieldWidth / 2 - g.sourceCenterX)
         const paintBiasX = pr.left + pr.width / 2 - g.sourceCenterX
         let centerX = pr.left + pr.width / 2 + xOffset, centerY = ordinaryY + (targetY - ordinaryY) * follow, angle = 0
-        if (progress >= 1 && !body) body = { x: g.fieldWidth / 2, y: 100 * unit + pr.height / 2 * 250 / 1440, vx: 0, vy: Math.max(0, Math.min(40, centerY - lastCenter)), angle: 0, angular: .008, quiet: 0 }
+        if (progress >= 1 && !body) body = { x: g.fieldWidth / 2, y: 100 * unit + pr.height / 2 * 250 / 1440, vx: 0, vy: Math.max(0, Math.min(40, centerY - lastCenter)), angle: 0, angular: .008, quiet: 0, width: g.physicalWidth, height: g.height, shape: "rectangle", restitution: .1, friction: .6 }
         if (body) {
             if (progress <= 0) body = null
             else if (progress < .97) {
@@ -413,24 +417,48 @@ function createFormatClosingWorld() {
             }
             if (body) { centerX = fr.left + body.x + paintBiasX; centerY = fr.top + body.y; angle = body.angle }
         }
+        simulateChips(g, now, integrate)
         lastCenter = centerY; previous = now; setHeld(progress > 0 || body !== null)
         if (!held) { restore(poster); if (!config.phone) p.style.width = document.documentElement.clientWidth * g.ownerScale / Math.max(.001, unit) + "px" }
         else {
             const tx = (centerX - pr.left) / Math.max(.001, visual), ty = (centerY - pr.top) / Math.max(.001, visual)
-            p.style.transformOrigin = "0 0"; p.style.transform = poster.transform + ` translate(${tx}px,${ty}px) rotate(${angle}rad) scale(${scale}) translate(${-p.offsetWidth / 2}px,${-p.offsetHeight / 2}px)`
+            p.style.transformOrigin = "0 0"; p.style.transform = (poster.transform === "none" ? "" : poster.transform) + ` translate(${tx}px,${ty}px) rotate(${angle}rad) scale(${scale}) translate(${-p.offsetWidth / 2}px,${-p.offsetHeight / 2}px)`
             p.style.backgroundColor = "#222222"; p.style.zIndex = "2"; p.style.pointerEvents = poster.pointer; p.style.outline = `${clamp(progress / .5) / Math.max(.001, visual * scale)}px solid white`
         }
         p.setAttribute("data-format-carried-progress", String(progress)); p.setAttribute("data-format-carried-state", body ? progress < .97 ? "returning" : "falling" : held ? "carried" : "original"); p.setAttribute("data-format-carried-children", String(p.children.length))
-        return Boolean(body && body.quiet < 30 && (fr.bottom > 0 && fr.top < window.innerHeight || centerY + g.height / 2 > 0 && centerY - g.height / 2 < window.innerHeight))
+        return Boolean(body && body.quiet < 30 && (fr.bottom > 0 && fr.top < window.innerHeight || centerY + g.height / 2 > 0 && centerY - g.height / 2 < window.innerHeight) || g.fr.bottom>0&&g.fr.top<window.innerHeight&&chips.some(b=>b.quiet<30))
     }
     const tick = (now: number) => { frame = 0; if (stopped()) return; if (now - painted >= 1000 / 30) { painted = now; if (paint(now, true)) frame = requestAnimationFrame(tick); else { previous=0;accumulator=0 } } else frame = requestAnimationFrame(tick) }
     const schedule = () => { if (!stopped() && !frame) frame = requestAnimationFrame(tick) }
-    const changed = () => { cancel(); if (config.frozen || config.reduced) { if (poster) { restore(poster); poster.node.setAttribute("data-format-carried-progress", "0"); poster.node.setAttribute("data-format-carried-state", "original") } if (field) restore(field); body = null; setHeld(false) } else if (!stopped()) { paint(performance.now(), false); schedule() } }
+    const changed = () => { cancel(); if (config.frozen || config.reduced) { if (poster) { restore(poster); poster.node.setAttribute("data-format-carried-progress", "0"); poster.node.setAttribute("data-format-carried-state", "original") } if (field) restore(field); body = null; chips=[]; if(field)field.node.setAttribute("data-format-chip-count","0");if(config.frozen&&played){played=false;promptListeners.forEach(fn=>fn())}chipListeners.forEach(fn=>fn()); paintSlots(); setHeld(false) } else if (!stopped()) { paint(performance.now(), false); schedule() } }
     let observer: ResizeObserver | null = null
     const detach = () => { observer?.disconnect(); observer=null;if(attached){window.removeEventListener("scroll",schedule);window.removeEventListener("resize",changed);document.removeEventListener("visibilitychange",changed)}attached=false }
-    const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
-    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); restore(value); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null; cancel() } }
-    return { register, configure: (next: ClosingConfig) => { config = next;if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; listeners.clear() } }
+    const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced || !poster || !field) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
+    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); restore(value); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
+    const slotPose = (index: number, knownRatio?:number): DetailStyle => {
+        const chip = chips.find(b => b.slot === index), binding = formatChipVariantRuntime()
+        if (!chip || !field || !binding || binding.values.length !== 21) return { opacity: 0, pointerEvents: "none" }
+        const ratio = knownRatio ?? field.node.getBoundingClientRect().width / Math.max(1, field.node.offsetWidth)
+        return { position: "absolute", left: (chip.x - chip.width / 2) / Math.max(.001, ratio) - field.node.clientLeft, top: (chip.y - chip.height / 2) / Math.max(.001, ratio) - field.node.clientTop, width: chip.width / Math.max(.001, ratio), height: chip.height / Math.max(.001, ratio), rotate: `${chip.angle}rad`, transformOrigin: "50% 50%", opacity: 1, pointerEvents: "none" }
+    }
+    const paintSlots = () => { const ratio=field?field.node.getBoundingClientRect().width/Math.max(1,field.node.offsetWidth):1;for (const [index, entry] of slots) { const pose = slotPose(index,ratio), s = entry.node.style; s.opacity = String(pose.opacity); s.pointerEvents = "none"; if (pose.opacity === 1) { s.position = "absolute"; s.left = pose.left + "px"; s.top = pose.top + "px"; s.width = pose.width + "px"; s.height = pose.height + "px"; s.setProperty("rotate", String(pose.rotate)); s.transformOrigin = "50% 50%" } entry.node.setAttribute("data-format-chip-template", String(chips.find(b => b.slot === index)?.template ?? -1)) } }
+    const simulateChips = (g: NonNullable<ReturnType<typeof geometry>>, now: number, integrate: boolean) => {
+        if (lastFieldWidth && (Math.abs(lastFieldWidth-g.fr.width)>.1 || Math.abs(lastFieldHeight-g.fr.height)>.1)) for(const b of chips){const x=g.fr.width/lastFieldWidth,y=g.fr.height/lastFieldHeight;b.x*=x;b.y*=y;b.width*=x;b.height*=y;b.vx*=x;b.vy*=y}
+        lastFieldWidth=g.fr.width;lastFieldHeight=g.fr.height
+        if(integrate&&chips.length&&(body||g.fr.bottom>0&&g.fr.top<window.innerHeight)){chipAccumulator+=chipPrevious?Math.min(100,Math.max(0,now-chipPrevious)):1000/30;while(chipAccumulator>=1000/60){chipAccumulator-=1000/60;const moving=[...chips,...(body?[body]:[])];for(const b of chips){if(b.quiet>=30)continue;b.vx*=.99;b.vy=b.vy*.99+(fastScroll?-.2:1)*.001*(1000/60)**2*g.ownerScale;b.x+=b.vx;b.y+=b.vy;b.angle+=b.angular;b.angular*=.99;const c=Math.abs(Math.cos(b.angle)),s=Math.abs(Math.sin(b.angle)),halfW=b.shape==="circle"?b.width/2:c*b.width/2+s*b.height/2,halfH=b.shape==="circle"?b.height/2:s*b.width/2+c*b.height/2;if(b.x<halfW){b.x=halfW;b.vx=Math.abs(b.vx)*.15}if(b.x>g.fr.width-halfW){b.x=Math.max(halfW,g.fr.width-halfW);b.vx=-Math.abs(b.vx)*.15}if(b.y>g.fr.height-halfH){b.y=g.fr.height-halfH;b.vy=-Math.abs(b.vy)*.15;b.vx*=.6;b.angular*=.6;if(b.shape!=="circle")b.angle+=(Math.round(b.angle/(Math.PI/2))*Math.PI/2-b.angle)*.2;if(Math.abs(b.vy)<.1)b.vy=0;b.quiet=Math.abs(b.vx)+Math.abs(b.vy)+Math.abs(b.angular)<.02?b.quiet+1:0}}for(let pass=0;pass<2;pass++)for(let i=0;i<moving.length;i++)for(let j=0;j<i;j++)if(moving[i].quiet<30||moving[j].quiet<30)formatResolveContact(moving[i],moving[j]);const removed=chips.filter(b=>b.y<-g.fr.height);if(removed.length){chips=chips.filter(b=>!removed.includes(b));chipListeners.forEach(fn=>fn())}}}
+        chipPrevious=now;paintSlots()
+    }
+    const spawn = (clientX: number, clientY: number) => {
+        const binding=formatChipVariantRuntime();if(stopped()||!field||!poster||!binding||binding.values.length!==21||slots.size===0)return
+        const g=geometry();if(!g||clientX<g.fr.left||clientX>g.fr.right||clientY<g.fr.top||clientY>g.fr.bottom)return
+        const available=Array.from(slots.keys()).sort((a,b)=>a-b),free=available.find(index=>!chips.some(b=>b.slot===index));let slot=free
+        if(slot===undefined){const oldest=chips.reduce((a,b)=>a.order<b.order?a:b);slot=oldest.slot;chips=chips.filter(b=>b!==oldest)}
+        const template=Math.min(20,Math.floor(Math.random()*21)),[w,h,shape]=FORMAT_CHIP_SIZES[template],width=w/2*g.unit,height=h/2*g.unit
+        chips.push({slot,template,order:++sequence,x:clientX-g.fr.left,y:clientY-g.fr.top-height*.35,vx:0,vy:0,angle:(Math.random()-.5)*.4,angular:0,quiet:0,width,height,shape,restitution:.15,friction:.4});if(!played){played=true;promptListeners.forEach(fn=>fn())}chipListeners.forEach(fn=>fn());field.node.setAttribute("data-format-chip-count",String(chips.length));paintSlots();schedule()
+    }
+    const registerSlot = (index: number,node: HTMLElement) => {if(index<0||index>=30||slots.has(index))throw Error("One owned native chip slot per index");const original={left:node.style.left,top:node.style.top,width:node.style.width,height:node.style.height,opacity:node.style.opacity,rotate:node.style.getPropertyValue("rotate"),pointer:node.style.pointerEvents};slots.set(index,{node});paintSlots();return()=>{slots.delete(index);chips=chips.filter(b=>b.slot!==index);const s=node.style;s.left=original.left;s.top=original.top;s.width=original.width;s.height=original.height;s.opacity=original.opacity;s.setProperty("rotate",original.rotate);s.pointerEvents=original.pointer;chipListeners.forEach(fn=>fn())}}
+
+    return { register, registerSlot, slotPose, spawn, canInput:()=>!stopped(), subscribeChips:(notify:()=>void)=>{chipListeners.add(notify);return()=>{chipListeners.delete(notify)}}, getTemplate:(index:number)=>chips.find(b=>b.slot===index)?.template??-1, subscribePrompts:(notify:()=>void)=>{promptListeners.add(notify);return()=>{promptListeners.delete(notify)}}, getPlayed:()=>played, configure: (next: ClosingConfig) => { config = next; if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; chips=[];slots.clear();chipListeners.clear();promptListeners.clear();listeners.clear() } }
 }
 type FormatClosingWorld = ReturnType<typeof createFormatClosingWorld>
 const FormatClosingContext = React.createContext<FormatClosingWorld | null>(null)
@@ -444,5 +472,102 @@ function closingPoster(Component: NativeLayer): NativeLayer {
 }
 export function withFormatCarriedPoster(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return sourceFlow(closingPoster(Component), "poster") }
 export function withFormatClosingField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
-    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null); useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("field", node, props.style ?? {}) }, [world, props.style]); return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-closing-field="inner-native-field" style={{ ...props.style, overflow: "hidden" }} /> }) as NativeLayer
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null), input = useFormatFieldInput(world,props); useOwnLayoutEffect(() => { const node = own.current; if (!node || !world) return; return world.register("field", node, props.style ?? {}) }, [world, props.style]); return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-closing-field="inner-native-field" {...input} style={{ ...props.style, overflow: "hidden" }} /> }) as NativeLayer
+}
+
+type FormatCollisionBody = { x: number; y: number; vx: number; vy: number; angle: number; angular: number; quiet: number; width: number; height: number; shape: "rectangle" | "circle" | "polygon"; restitution: number; friction: number }
+const FORMAT_CHIP_SIZES: readonly (readonly [number, number, "rectangle" | "circle" | "polygon"])[] = [[335,426,"rectangle"],[335,426,"rectangle"],[335,426,"rectangle"],[335,226,"rectangle"],[705,327,"rectangle"],[1044,447,"rectangle"],[170,122,"rectangle"],[170,122,"rectangle"],[533,157,"rectangle"],[695,157,"rectangle"],[696,225,"rectangle"],[696,225,"rectangle"],[157,157,"circle"],[513,513,"circle"],[697,697,"circle"],[697,697,"circle"],[697,697,"circle"],[697,698,"circle"],[136,136,"circle"],[704.001,608.664,"polygon"],[704.001,608.664,"polygon"]]
+function formatCollisionVertices(b: FormatCollisionBody) {
+    const corners = b.shape === "polygon" ? [[704.001,51.1836],[382.141,608.664],[321.395,608.664],[0,51.9912],[30.0166,0],[674.45,0]].map(([x,y])=>[(x/704.001-.5)*b.width,(y/608.664-.5)*b.height]) : [[-b.width/2,-b.height/2],[b.width/2,-b.height/2],[b.width/2,b.height/2],[-b.width/2,b.height/2]], c = Math.cos(b.angle), s = Math.sin(b.angle)
+    return corners.map(([x,y])=>({x:b.x+x*c-y*s,y:b.y+x*s+y*c}))
+}
+function formatResolveContact(a: FormatCollisionBody, b: FormatCollisionBody) {
+    const radiusA = Math.hypot(a.width,a.height)/2, radiusB = Math.hypot(b.width,b.height)/2
+    if (Math.abs(a.x-b.x)>radiusA+radiusB || Math.abs(a.y-b.y)>radiusA+radiusB) return false
+    const av = formatCollisionVertices(a), bv = formatCollisionVertices(b), axes: {x:number;y:number}[] = []
+    const add = (x:number,y:number) => { const n=Math.hypot(x,y);if(n>1e-9)axes.push({x:x/n,y:y/n}) }
+    for (const [body,points] of [[a,av],[b,bv]] as const) if(body.shape!=="circle") for(let i=0;i<points.length;i++){const p=points[i],q=points[(i+1)%points.length];add(-(q.y-p.y),q.x-p.x)}
+    if(a.shape==="circle"&&b.shape==="circle")add(b.x-a.x,b.y-a.y)
+    for(const[circle,points]of[[a,bv],[b,av]]as const)if(circle.shape==="circle"){let nearest=points[0];for(const p of points)if(Math.hypot(p.x-circle.x,p.y-circle.y)<Math.hypot(nearest.x-circle.x,nearest.y-circle.y))nearest=p;add(nearest.x-circle.x,nearest.y-circle.y)}
+    let depth=Infinity,normal={x:1,y:0}
+    const project=(body:FormatCollisionBody,points:ReturnType<typeof formatCollisionVertices>,axis:{x:number;y:number})=>body.shape==="circle"?[body.x*axis.x+body.y*axis.y-body.width/2,body.x*axis.x+body.y*axis.y+body.width/2]:[Math.min(...points.map(p=>p.x*axis.x+p.y*axis.y)),Math.max(...points.map(p=>p.x*axis.x+p.y*axis.y))]
+    for(const axis of axes){const pa=project(a,av,axis),pb=project(b,bv,axis),overlap=Math.min(pa[1],pb[1])-Math.max(pa[0],pb[0]);if(overlap<=0)return false;if(overlap<depth){depth=overlap;normal=axis}}
+    if(!Number.isFinite(depth))return false
+    if((b.x-a.x)*normal.x+(b.y-a.y)*normal.y<0)normal={x:-normal.x,y:-normal.y}
+    const massA=Math.max(1,a.width*a.height*.001),massB=Math.max(1,b.width*b.height*.001),ia=1/massA,ib=1/massB,total=ia+ib,correction=Math.max(0,depth-.01)*.8/total
+    a.x-=normal.x*correction*ia;a.y-=normal.y*correction*ia;b.x+=normal.x*correction*ib;b.y+=normal.y*correction*ib
+    const speed=(b.vx-a.vx)*normal.x+(b.vy-a.vy)*normal.y
+    if(speed<0){const impulse=-(1+Math.min(a.restitution,b.restitution))*speed/total;a.vx-=normal.x*impulse*ia;a.vy-=normal.y*impulse*ia;b.vx+=normal.x*impulse*ib;b.vy+=normal.y*impulse*ib;const tangent={x:-normal.y,y:normal.x},sliding=(b.vx-a.vx)*tangent.x+(b.vy-a.vy)*tangent.y,friction=Math.max(-impulse*Math.min(a.friction,b.friction),Math.min(impulse*Math.min(a.friction,b.friction),-sliding/total));a.vx-=tangent.x*friction*ia;a.vy-=tangent.y*friction*ia;b.vx+=tangent.x*friction*ib;b.vy+=tangent.y*friction*ib;a.angular-=friction*ia/Math.max(20,a.width);b.angular+=friction*ib/Math.max(20,b.width)}
+    a.quiet=0;b.quiet=0;return true
+}
+
+/** Filled only from the genuine saved native schema, before registration. The
+ * first retained real Slot01 Preview probe still gates the other29 instances. */
+function formatChipVariantRuntime(): { prop: string; values: readonly string[]; schemaSHA256: string } | null { return {"prop":"variant","values":["ZeTdYyitj","fWcPOwQMJ","PfrCqgE65","dklxBAWmC","P5Hcrgipt","wzzUQ4t9B","FcBO6OrMo","jre40CVsx","ltfV0W5Co","h7TCqQnnn","d1FgwTdhY","yAnof6n2O","MRrwNLCtD","iKQVlAxtH","n_S6P9HO0","G5o4GShQG","BqLSZdoBV","lzxMcJ1hw","Rc8kcV4Ux","lcbPhQ29y","PxDrzupdu"],"schemaSHA256":"2105714425b8c685d5e28da267245f0dd45473335052ffab2bc0dda5192a58cc"} }
+type FormatChipBody = FormatCollisionBody & { slot: number; template: number; order: number }
+const FormatChipSlotContext = React.createContext(-1)
+function formatNativeChipSlot(Component: NativeLayer, index: number): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const world = React.useContext(FormatClosingContext), own = React.useRef<HTMLElement | null>(null)
+        useOwnLayoutEffect(() => { const node = own.current; if (!world || !node) return; return world.registerSlot(index, node) }, [world])
+        return <FormatChipSlotContext.Provider value={index}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }}
+            data-format-chip-slot={index} aria-hidden="true" style={{ ...props.style, ...(world?.slotPose(index) ?? { opacity: 0, pointerEvents: "none" }) }} /></FormatChipSlotContext.Provider>
+    }) as NativeLayer
+}
+/** Native variant roots may remount. Physics and visibility belong to the stable
+ * primitive parent Frame; this inner native-instance override only selects art. */
+export function withFormatChipVariant(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const world = React.useContext(FormatClosingContext), index = React.useContext(FormatChipSlotContext)
+        const template = React.useSyncExternalStore(world?.subscribeChips ?? emptySubscribe, () => world?.getTemplate(index) ?? -1, () => -1)
+        const binding = formatChipVariantRuntime(), variant = template >= 0 && binding ? { [binding.prop]: binding.values[template] } : {}
+        return <Component {...props} {...variant} ref={ref} data-format-chip-variant={template} aria-hidden="true"
+            style={{ ...props.style, position: "absolute", left: 0, top: 0, width: "100%", height: "100%", pointerEvents: "none", ...(index < 0 ? { opacity: 0 } : {}) }} />
+    })
+}
+export function withFormatChipPrompts(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>((props,ref)=>{const world=React.useContext(FormatClosingContext),frozen=frozenTarget(),played=React.useSyncExternalStore(world?.subscribePrompts??emptySubscribe,world?.getPlayed??(()=>false),()=>false);return <Component {...props} ref={ref} data-format-chip-prompts={played?"played":"unplayed"} style={{...props.style,opacity:played?0:props.style?.opacity??1,transition:frozen?"none":"opacity .5s linear",pointerEvents:"none"}}/>})as NativeLayer}
+
+export function withFormatChipSlot01(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,0)}
+export function withFormatChipSlot02(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,1)}
+export function withFormatChipSlot03(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,2)}
+export function withFormatChipSlot04(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,3)}
+export function withFormatChipSlot05(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,4)}
+export function withFormatChipSlot06(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,5)}
+export function withFormatChipSlot07(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,6)}
+export function withFormatChipSlot08(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,7)}
+export function withFormatChipSlot09(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,8)}
+export function withFormatChipSlot10(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,9)}
+export function withFormatChipSlot11(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,10)}
+export function withFormatChipSlot12(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,11)}
+export function withFormatChipSlot13(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,12)}
+export function withFormatChipSlot14(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,13)}
+export function withFormatChipSlot15(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,14)}
+export function withFormatChipSlot16(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,15)}
+export function withFormatChipSlot17(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,16)}
+export function withFormatChipSlot18(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,17)}
+export function withFormatChipSlot19(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,18)}
+export function withFormatChipSlot20(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,19)}
+export function withFormatChipSlot21(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,20)}
+export function withFormatChipSlot22(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,21)}
+export function withFormatChipSlot23(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,22)}
+export function withFormatChipSlot24(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,23)}
+export function withFormatChipSlot25(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,24)}
+export function withFormatChipSlot26(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,25)}
+export function withFormatChipSlot27(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,26)}
+export function withFormatChipSlot28(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,27)}
+export function withFormatChipSlot29(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,28)}
+export function withFormatChipSlot30(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return formatNativeChipSlot(Component,29)}
+type FormatFieldEvent = { clientX?: number; clientY?: number; defaultPrevented?: boolean; nativeEvent?: { clientX?: number; clientY?: number }; touches?: ArrayLike<{clientX:number;clientY:number}> }
+function useFormatFieldInput(world: FormatClosingWorld | null,props: LayerProps) {
+    const last = React.useRef<{channel:"pointer"|"tap";at:number;x:number;y:number}|null>(null)
+    const accept = (channel:"pointer"|"tap",event:FormatFieldEvent,info?:{point?:{x:number;y:number}}) => {
+        if(!world?.canInput())return
+        const touch=event.touches?.[0],x=event.clientX??event.nativeEvent?.clientX??touch?.clientX??info?.point?.x,y=event.clientY??event.nativeEvent?.clientY??touch?.clientY??info?.point?.y
+        if(!Number.isFinite(x)||!Number.isFinite(y))return
+        const at=performance.now(),before=last.current
+        if(before&&before.channel!==channel&&at-before.at<350&&Math.hypot(x!-before.x,y!-before.y)<2)return
+        last.current={channel,at,x:x!,y:y!}
+        Promise.resolve().then(()=>{if(!event.defaultPrevented&&world.canInput())world.spawn(x!,y!)})
+    }
+    return { onPointerDown:(event:FormatFieldEvent)=>{if(typeof props.onPointerDown==="function")props.onPointerDown(event);accept("pointer",event)},onTapStart:(event:FormatFieldEvent,info?:{point?:{x:number;y:number}})=>{if(typeof props.onTapStart==="function")props.onTapStart(event,info);accept("tap",event,info)} }
 }

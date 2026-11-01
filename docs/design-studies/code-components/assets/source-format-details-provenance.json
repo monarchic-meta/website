@@ -449,7 +449,41 @@
     "withFormatFanShape",
     "withFormatSevenGround",
     "withFormatSevenImage",
-    "withFormatCutHardLight"
+    "withFormatCutHardLight",
+    "withFormatCarriedPoster",
+    "withFormatClosingField",
+    "withFormatChipVariant",
+    "withFormatChipPrompts",
+    "withFormatChipSlot01",
+    "withFormatChipSlot02",
+    "withFormatChipSlot03",
+    "withFormatChipSlot04",
+    "withFormatChipSlot05",
+    "withFormatChipSlot06",
+    "withFormatChipSlot07",
+    "withFormatChipSlot08",
+    "withFormatChipSlot09",
+    "withFormatChipSlot10",
+    "withFormatChipSlot11",
+    "withFormatChipSlot12",
+    "withFormatChipSlot13",
+    "withFormatChipSlot14",
+    "withFormatChipSlot15",
+    "withFormatChipSlot16",
+    "withFormatChipSlot17",
+    "withFormatChipSlot18",
+    "withFormatChipSlot19",
+    "withFormatChipSlot20",
+    "withFormatChipSlot21",
+    "withFormatChipSlot22",
+    "withFormatChipSlot23",
+    "withFormatChipSlot24",
+    "withFormatChipSlot25",
+    "withFormatChipSlot26",
+    "withFormatChipSlot27",
+    "withFormatChipSlot28",
+    "withFormatChipSlot29",
+    "withFormatChipSlot30"
   ],
   "sourceFont": {
     "family": "Obys Sans",
@@ -611,5 +645,985 @@
     ],
     "browserCommand": "pnpm run check:source-format-closing-browser",
     "evidence": "hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/"
+  },
+  "historicalEvidenceFields": [
+    "localNixValidation",
+    "earlyPanelsInputCorrection",
+    "gaugeWordWrappingCorrection",
+    "closingPosterCarry"
+  ],
+  "closingFieldPool": {
+    "status": "LOCAL_BOUND_SOURCE_NATIVE_FRAMER_PAINT_PENDING",
+    "sourceSHA256": "b54843bfe8e50f5c833d49712b7e91e27763558aa877881b8034b721133cdabb",
+    "sourceBytes": 95427,
+    "parentCarrierSourceSHA256": "5c7c8f0933a1a3ef1fdf75bf36e96a6272152652586682d3d89a29ca27c963e0",
+    "implementation": "Independent bounded source-inspired chip physics with thirty stable native pose Frames and one retained native component instance per Frame. The same native poster remains a sibling and keeps its existing descendants. No poster bitmap, drag gesture, source website behavior JavaScript, global physics store or GPU allocation is introduced.",
+    "nativeBinding": {
+      "componentID": "d9JtUP1Vu",
+      "schemaSHA256": "2105714425b8c685d5e28da267245f0dd45473335052ffab2bc0dda5192a58cc",
+      "actualReadReceiptSHA256": "98d535ff2e025eb57ca0ee1399d128282dc0447d9ca8b4f22f58f915ce2395b6",
+      "runtimePropName": "variant",
+      "templates": [
+        {
+          "index": 0,
+          "key": "vert-a",
+          "actualVariantID": "ZeTdYyitj",
+          "actualControlValue": "ZeTdYyitj",
+          "runtimeValue": "ZeTdYyitj",
+          "schemaOptionLabel": "vert-a",
+          "observedUIValue": "_string_ZeTdYyitj",
+          "plainID": "nugCt9DOC",
+          "daughterID": "cJJhZx778"
+        },
+        {
+          "index": 1,
+          "key": "vert-b",
+          "actualVariantID": "fWcPOwQMJ",
+          "actualControlValue": "fWcPOwQMJ",
+          "runtimeValue": "fWcPOwQMJ",
+          "schemaOptionLabel": "vert-b",
+          "observedUIValue": "_string_fWcPOwQMJ",
+          "plainID": "fWcPOwQMJnugCt9DOC",
+          "daughterID": "fWcPOwQMJcJJhZx778"
+        },
+        {
+          "index": 2,
+          "key": "vert-c",
+          "actualVariantID": "PfrCqgE65",
+          "actualControlValue": "PfrCqgE65",
+          "runtimeValue": "PfrCqgE65",
+          "schemaOptionLabel": "vert-c",
+          "observedUIValue": "_string_PfrCqgE65",
+          "plainID": "PfrCqgE65nugCt9DOC",
+          "daughterID": "PfrCqgE65cJJhZx778"
+        },
+        {
+          "index": 3,
+          "key": "plate",
+          "actualVariantID": "dklxBAWmC",
+          "actualControlValue": "dklxBAWmC",
+          "runtimeValue": "dklxBAWmC",
+          "schemaOptionLabel": "plate",
+          "observedUIValue": "_string_dklxBAWmC",
+          "plainID": "dklxBAWmCnugCt9DOC",
+          "daughterID": "dklxBAWmCcJJhZx778"
+        },
+        {
+          "index": 4,
+          "key": "special",
+          "actualVariantID": "P5Hcrgipt",
+          "actualControlValue": "P5Hcrgipt",
+          "runtimeValue": "P5Hcrgipt",
+          "schemaOptionLabel": "special",
+          "observedUIValue": "_string_P5Hcrgipt",
+          "plainID": "P5HcrgiptnugCt9DOC",
+          "daughterID": "P5HcrgiptcJJhZx778"
+        },
+        {
+          "index": 5,
+          "key": "wide",
+          "actualVariantID": "wzzUQ4t9B",
+          "actualControlValue": "wzzUQ4t9B",
+          "runtimeValue": "wzzUQ4t9B",
+          "schemaOptionLabel": "wide",
+          "observedUIValue": "_string_wzzUQ4t9B",
+          "plainID": "wzzUQ4t9BnugCt9DOC",
+          "daughterID": "wzzUQ4t9BcJJhZx778"
+        },
+        {
+          "index": 6,
+          "key": "hrzntl",
+          "actualVariantID": "FcBO6OrMo",
+          "actualControlValue": "FcBO6OrMo",
+          "runtimeValue": "FcBO6OrMo",
+          "schemaOptionLabel": "hrzntl",
+          "observedUIValue": "_string_FcBO6OrMo",
+          "plainID": "FcBO6OrMonugCt9DOC",
+          "daughterID": "FcBO6OrMocJJhZx778"
+        },
+        {
+          "index": 7,
+          "key": "tall",
+          "actualVariantID": "jre40CVsx",
+          "actualControlValue": "jre40CVsx",
+          "runtimeValue": "jre40CVsx",
+          "schemaOptionLabel": "tall",
+          "observedUIValue": "_string_jre40CVsx",
+          "plainID": "jre40CVsxnugCt9DOC",
+          "daughterID": "jre40CVsxcJJhZx778"
+        },
+        {
+          "index": 8,
+          "key": "rule",
+          "actualVariantID": "ltfV0W5Co",
+          "actualControlValue": "ltfV0W5Co",
+          "runtimeValue": "ltfV0W5Co",
+          "schemaOptionLabel": "rule",
+          "observedUIValue": "_string_ltfV0W5Co",
+          "plainID": "ltfV0W5ConugCt9DOC",
+          "daughterID": "ltfV0W5CocJJhZx778"
+        },
+        {
+          "index": 9,
+          "key": "pill",
+          "actualVariantID": "h7TCqQnnn",
+          "actualControlValue": "h7TCqQnnn",
+          "runtimeValue": "h7TCqQnnn",
+          "schemaOptionLabel": "pill",
+          "observedUIValue": "_string_h7TCqQnnn",
+          "plainID": "h7TCqQnnnnugCt9DOC",
+          "daughterID": "h7TCqQnnncJJhZx778"
+        },
+        {
+          "index": 10,
+          "key": "red",
+          "actualVariantID": "d1FgwTdhY",
+          "actualControlValue": "d1FgwTdhY",
+          "runtimeValue": "d1FgwTdhY",
+          "schemaOptionLabel": "red",
+          "observedUIValue": "_string_d1FgwTdhY",
+          "plainID": "d1FgwTdhYnugCt9DOC",
+          "daughterID": "d1FgwTdhYcJJhZx778"
+        },
+        {
+          "index": 11,
+          "key": "usage",
+          "actualVariantID": "yAnof6n2O",
+          "actualControlValue": "yAnof6n2O",
+          "runtimeValue": "yAnof6n2O",
+          "schemaOptionLabel": "usage",
+          "observedUIValue": "_string_yAnof6n2O",
+          "plainID": "yAnof6n2OnugCt9DOC",
+          "daughterID": "yAnof6n2OcJJhZx778"
+        },
+        {
+          "index": 12,
+          "key": "knob",
+          "actualVariantID": "MRrwNLCtD",
+          "actualControlValue": "MRrwNLCtD",
+          "runtimeValue": "MRrwNLCtD",
+          "schemaOptionLabel": "knob",
+          "observedUIValue": "_string_MRrwNLCtD",
+          "plainID": "MRrwNLCtDnugCt9DOC",
+          "daughterID": "MRrwNLCtDcJJhZx778"
+        },
+        {
+          "index": 13,
+          "key": "circle",
+          "actualVariantID": "iKQVlAxtH",
+          "actualControlValue": "iKQVlAxtH",
+          "runtimeValue": "iKQVlAxtH",
+          "schemaOptionLabel": "circle",
+          "observedUIValue": "_string_iKQVlAxtH",
+          "plainID": "iKQVlAxtHnugCt9DOC",
+          "daughterID": "iKQVlAxtHcJJhZx778"
+        },
+        {
+          "index": 14,
+          "key": "dial",
+          "actualVariantID": "n_S6P9HO0",
+          "actualControlValue": "n_S6P9HO0",
+          "runtimeValue": "n_S6P9HO0",
+          "schemaOptionLabel": "dial",
+          "observedUIValue": "_string_n_S6P9HO0",
+          "plainID": "n_S6P9HO0nugCt9DOC",
+          "daughterID": "n_S6P9HO0cJJhZx778"
+        },
+        {
+          "index": 15,
+          "key": "side",
+          "actualVariantID": "G5o4GShQG",
+          "actualControlValue": "G5o4GShQG",
+          "runtimeValue": "G5o4GShQG",
+          "schemaOptionLabel": "side",
+          "observedUIValue": "_string_G5o4GShQG",
+          "plainID": "G5o4GShQGnugCt9DOC",
+          "daughterID": "G5o4GShQGcJJhZx778"
+        },
+        {
+          "index": 16,
+          "key": "shards",
+          "actualVariantID": "BqLSZdoBV",
+          "actualControlValue": "BqLSZdoBV",
+          "runtimeValue": "BqLSZdoBV",
+          "schemaOptionLabel": "shards",
+          "observedUIValue": "_string_BqLSZdoBV",
+          "plainID": "BqLSZdoBVnugCt9DOC",
+          "daughterID": "BqLSZdoBVcJJhZx778"
+        },
+        {
+          "index": 17,
+          "key": "night",
+          "actualVariantID": "lzxMcJ1hw",
+          "actualControlValue": "lzxMcJ1hw",
+          "runtimeValue": "lzxMcJ1hw",
+          "schemaOptionLabel": "night",
+          "observedUIValue": "_string_lzxMcJ1hw",
+          "plainID": "lzxMcJ1hwnugCt9DOC",
+          "daughterID": "lzxMcJ1hwcJJhZx778"
+        },
+        {
+          "index": 18,
+          "key": "face",
+          "actualVariantID": "Rc8kcV4Ux",
+          "actualControlValue": "Rc8kcV4Ux",
+          "runtimeValue": "Rc8kcV4Ux",
+          "schemaOptionLabel": "face",
+          "observedUIValue": "_string_Rc8kcV4Ux",
+          "plainID": "Rc8kcV4UxnugCt9DOC",
+          "daughterID": "Rc8kcV4UxcJJhZx778"
+        },
+        {
+          "index": 19,
+          "key": "tri",
+          "actualVariantID": "lcbPhQ29y",
+          "actualControlValue": "lcbPhQ29y",
+          "runtimeValue": "lcbPhQ29y",
+          "schemaOptionLabel": "tri",
+          "observedUIValue": "_string_lcbPhQ29y",
+          "plainID": "lcbPhQ29ynugCt9DOC",
+          "daughterID": "lcbPhQ29ycJJhZx778"
+        },
+        {
+          "index": 20,
+          "key": "tri-b",
+          "actualVariantID": "PxDrzupdu",
+          "actualControlValue": "PxDrzupdu",
+          "runtimeValue": "PxDrzupdu",
+          "schemaOptionLabel": "tri-b",
+          "observedUIValue": "_string_PxDrzupdu",
+          "plainID": "PxDrzupdunugCt9DOC",
+          "daughterID": "PxDrzupducJJhZx778"
+        }
+      ],
+      "apiDefault": null,
+      "apiDefaultEvidence": "The retained Desktop/Compact/Phone instance records explicitly omit the variant control field. No default property is invented.",
+      "observedUISelection": {
+        "label": "vert-a",
+        "value": "_string_ZeTdYyitj",
+        "normalizedNativeID": "ZeTdYyitj"
+      },
+      "nativePrimaryID": "ZeTdYyitj",
+      "evidence": [
+        {
+          "path": "/tmp/monarchic-hero-behavior-iterations-2026-11-01/mcp/HERO-002-footers-HERO-013-slot01-bounded-readonly-228-output.json",
+          "sha256": "98d535ff2e025eb57ca0ee1399d128282dc0447d9ca8b4f22f58f915ce2395b6",
+          "bytes": 468893
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO013-native-pool-21-picker-proof.json",
+          "sha256": "7bc46bff62fa95cd5027ad1de9756ffcea924745f55c94bf05e755dca39dca17",
+          "bytes": 1940
+        },
+        {
+          "path": "/tmp/monarchic-hero-behavior-iterations-2026-11-01/mcp/HERO-013-retained-native21-completion-221-output.json",
+          "sha256": "12dd217b7e0ba28b9a86e69aa94a1a9f15202960838e578fed4646b6dc1563d7",
+          "bytes": 490473
+        }
+      ],
+      "normalization": "Strip exactly the UI _string_ prefix only after every encoded option has been checked as that prefix plus its exact saved native Frame ID. No label-to-ID guessing.",
+      "runtimeNonDefaultPaintPassed": false
+    },
+    "bindings": {
+      "componentID": "d9JtUP1Vu",
+      "retainedSlot01": {
+        "desktop": "wLNg24MqB",
+        "compact": "XEEAnleDnwLNg24MqB",
+        "phone": "jXxkHA4mHwLNg24MqB"
+      },
+      "poseWrapper": {
+        "type": "FrameNode",
+        "opacity": 0,
+        "fill": null,
+        "layout": null,
+        "overflow": "visible",
+        "overrideNames": [
+          "withFormatChipSlot01",
+          "withFormatChipSlot02",
+          "withFormatChipSlot03",
+          "withFormatChipSlot04",
+          "withFormatChipSlot05",
+          "withFormatChipSlot06",
+          "withFormatChipSlot07",
+          "withFormatChipSlot08",
+          "withFormatChipSlot09",
+          "withFormatChipSlot10",
+          "withFormatChipSlot11",
+          "withFormatChipSlot12",
+          "withFormatChipSlot13",
+          "withFormatChipSlot14",
+          "withFormatChipSlot15",
+          "withFormatChipSlot16",
+          "withFormatChipSlot17",
+          "withFormatChipSlot18",
+          "withFormatChipSlot19",
+          "withFormatChipSlot20",
+          "withFormatChipSlot21",
+          "withFormatChipSlot22",
+          "withFormatChipSlot23",
+          "withFormatChipSlot24",
+          "withFormatChipSlot25",
+          "withFormatChipSlot26",
+          "withFormatChipSlot27",
+          "withFormatChipSlot28",
+          "withFormatChipSlot29",
+          "withFormatChipSlot30"
+        ]
+      },
+      "innerInstance": {
+        "opacity": 1,
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%",
+        "overrideName": "withFormatChipVariant"
+      },
+      "fieldID": "ADkCOaiOW",
+      "samePosterID": "N_iF1Nw8B",
+      "promptWrapper": "withFormatChipPrompts",
+      "primaryOnlyReparent": true
+    },
+    "templates": [
+      {
+        "index": 0,
+        "key": "vert-a",
+        "sourceDimensions": {
+          "width": 335,
+          "height": 426
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/vert-a.webp",
+          "sourceSHA256": "67df8505e5ac0d40b5413252acd335391222e7d12e6875e66dfd60d4b057f767",
+          "sourceBytes": 7562,
+          "nativeAssetSHA256": "e01dcf20df15b9c5ce1b8e62b5c47c04437f870fb18589f089932c7bf527548e",
+          "nativeAssetBytes": 69492,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/vert-a-kid.webp",
+          "sourceSHA256": "67e4609efe68a1b2d70e8eae7e0ca93ab88d5954454fa92923b1b6b792181a7b",
+          "sourceBytes": 53396,
+          "nativeAssetSHA256": "77fa754dae922fcdad676dffdfd166ff686665a36256007e7f1205e4b4d56d2f",
+          "nativeAssetBytes": 412476,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 1,
+        "key": "vert-b",
+        "sourceDimensions": {
+          "width": 335,
+          "height": 426
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/vert-b.webp",
+          "sourceSHA256": "2cfd186ac8da315a18ec016e1450536e41bfcbfce931ab181d5c86b21bac8a51",
+          "sourceBytes": 12068,
+          "nativeAssetSHA256": "67aa62b168e4c0f8977c89a8d4b0eb5f93b5ba868593b7d486280580b3890305",
+          "nativeAssetBytes": 71392,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/vert-b-kid.webp",
+          "sourceSHA256": "7c236eaba9717bc820aec75da54fdc64f14cee25019d680b954e94c21bb4a6f0",
+          "sourceBytes": 96066,
+          "nativeAssetSHA256": "a8270cb3227101a1a500a5aa2d0c4de7fcc67c04e87ff1eb34c5cd7514f51f64",
+          "nativeAssetBytes": 559390,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 2,
+        "key": "vert-c",
+        "sourceDimensions": {
+          "width": 335,
+          "height": 426
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/vert-c.webp",
+          "sourceSHA256": "fce3b0790017b5febb903ac071bc37072a89d1b91db6586c876ba3fbee5573fe",
+          "sourceBytes": 8968,
+          "nativeAssetSHA256": "cc42e62c91d3cafc8d77138073e7653dd93d6e5d6a7a77b439b2de2fe107a218",
+          "nativeAssetBytes": 97938,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/vert-c-kid.webp",
+          "sourceSHA256": "32a8e6cae81848c6babfc387aee6eebfbba71be4538ff8d381a0364605391b21",
+          "sourceBytes": 52806,
+          "nativeAssetSHA256": "b480f003430e3fca277adf246130d826c4fdb31ec0720568927f6f30a03587fc",
+          "nativeAssetBytes": 427168,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 3,
+        "key": "plate",
+        "sourceDimensions": {
+          "width": 335,
+          "height": 226
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/plate.webp",
+          "sourceSHA256": "ea29c0f8166386a8b2f98de4691acd92dd8fe2edfa571efc773ffa7c9b887c7a",
+          "sourceBytes": 13854,
+          "nativeAssetSHA256": "28de525d08642861da15c4371554b587fd6417b745b598fb05c24197b340dd3b",
+          "nativeAssetBytes": 81856,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/plate-kid.webp",
+          "sourceSHA256": "b0a7b16cd391e0ace1c3daf95292bf3e72e7c54ae08f33b136a905589a4b20de",
+          "sourceBytes": 41028,
+          "nativeAssetSHA256": "f707ea852ae8c5f6e2ac8203d6df3c12cb9220d31bcfa2c8ae5dfc77859d59ca",
+          "nativeAssetBytes": 143464,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 4,
+        "key": "special",
+        "sourceDimensions": {
+          "width": 705,
+          "height": 327
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/special.webp",
+          "sourceSHA256": "29f6cf5e35240949ba1f85aea78136934d703a6b77e6895f40474e35f59ca7bd",
+          "sourceBytes": 23464,
+          "nativeAssetSHA256": "6ecef7083682ba39c992934eb975cc26f8e562726e32e918a34267c33f03317e",
+          "nativeAssetBytes": 270286,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/special-kid.webp",
+          "sourceSHA256": "08653b098621e0730df40ae397b7cb64600573aa302228edd8b6c32be52cc193",
+          "sourceBytes": 134156,
+          "nativeAssetSHA256": "3d5aa654a59a3c907829832c8698f49678702f4b85417f561f631c217722849a",
+          "nativeAssetBytes": 793896,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 5,
+        "key": "wide",
+        "sourceDimensions": {
+          "width": 1044,
+          "height": 447
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/wide.webp",
+          "sourceSHA256": "e969892b01f0e2fcc3b7a426ed3ff99c7ec0ba4bab1294d09fa9176771d998c2",
+          "sourceBytes": 24422,
+          "nativeAssetSHA256": "e969892b01f0e2fcc3b7a426ed3ff99c7ec0ba4bab1294d09fa9176771d998c2",
+          "nativeAssetBytes": 24422,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/wide-kid.webp",
+          "sourceSHA256": "328d687730629f94f523c455fbe6e8ec9bd7e4997069aa8d221720f3c4d1c900",
+          "sourceBytes": 142328,
+          "nativeAssetSHA256": "328d687730629f94f523c455fbe6e8ec9bd7e4997069aa8d221720f3c4d1c900",
+          "nativeAssetBytes": 142328,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 6,
+        "key": "hrzntl",
+        "sourceDimensions": {
+          "width": 170,
+          "height": 122
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/hrzntl.webp",
+          "sourceSHA256": "74e24718eeb0b2138063ab7850b43bac1ee15ec8370c9b52aab01eb423b96860",
+          "sourceBytes": 2646,
+          "nativeAssetSHA256": "74e24718eeb0b2138063ab7850b43bac1ee15ec8370c9b52aab01eb423b96860",
+          "nativeAssetBytes": 2646,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/hrzntl-kid.webp",
+          "sourceSHA256": "1ad08b75c24c94a0e0fe675033f8410f641ed96553c49bb52c46001f194b8801",
+          "sourceBytes": 13398,
+          "nativeAssetSHA256": "60d495822cd66ed6d5c456bc1a376e7701a812e42d11c90302442104bf8df2b3",
+          "nativeAssetBytes": 91644,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 7,
+        "key": "tall",
+        "sourceDimensions": {
+          "width": 170,
+          "height": 122
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/tall.webp",
+          "sourceSHA256": "c3a165b766fb4cae3441cf9bfb036db90c40dae2e8511517de7910c23e5daa97",
+          "sourceBytes": 2450,
+          "nativeAssetSHA256": "c3a165b766fb4cae3441cf9bfb036db90c40dae2e8511517de7910c23e5daa97",
+          "nativeAssetBytes": 2450,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/tall-kid.webp",
+          "sourceSHA256": "991114eeeb794a755caf820c2231194c6d5e31f60804e5011900d93ff1d8f473",
+          "sourceBytes": 8554,
+          "nativeAssetSHA256": "48e3edff35e8e1dd144d58de2ba8870ee442c164022739ad38cd4d2c42e5ba97",
+          "nativeAssetBytes": 70936,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 8,
+        "key": "rule",
+        "sourceDimensions": {
+          "width": 533,
+          "height": 157
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/rule.webp",
+          "sourceSHA256": "ad9ce4935710702430b4ef2490a3c67a8d0be6491d37ed0ac5f5d42c53b14bbc",
+          "sourceBytes": 3874,
+          "nativeAssetSHA256": "ad9ce4935710702430b4ef2490a3c67a8d0be6491d37ed0ac5f5d42c53b14bbc",
+          "nativeAssetBytes": 3874,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/rule-kid.webp",
+          "sourceSHA256": "07066730bae1a314d9566361d2718e10a678d4e0fe1aee43c0fb112c8df62b29",
+          "sourceBytes": 29476,
+          "nativeAssetSHA256": "07066730bae1a314d9566361d2718e10a678d4e0fe1aee43c0fb112c8df62b29",
+          "nativeAssetBytes": 29476,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 9,
+        "key": "pill",
+        "sourceDimensions": {
+          "width": 695,
+          "height": 157
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/pill.webp",
+          "sourceSHA256": "1abc90054353f11fd6d86acbf7181030cfdcf1941f7a86a2fd2962a626c465bc",
+          "sourceBytes": 7698,
+          "nativeAssetSHA256": "1abc90054353f11fd6d86acbf7181030cfdcf1941f7a86a2fd2962a626c465bc",
+          "nativeAssetBytes": 7698,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/pill-kid.webp",
+          "sourceSHA256": "20b59bf92dde87282c3b37b8f62548c89d8bc1f07da73abfd6b863c3129785b0",
+          "sourceBytes": 39930,
+          "nativeAssetSHA256": "20b59bf92dde87282c3b37b8f62548c89d8bc1f07da73abfd6b863c3129785b0",
+          "nativeAssetBytes": 39930,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 10,
+        "key": "red",
+        "sourceDimensions": {
+          "width": 696,
+          "height": 225
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/red.webp",
+          "sourceSHA256": "ee2c6173d4b00aec3903e06a9ffd5cf9bd7c316ece0a360622885e525a449f3c",
+          "sourceBytes": 12160,
+          "nativeAssetSHA256": "ee2c6173d4b00aec3903e06a9ffd5cf9bd7c316ece0a360622885e525a449f3c",
+          "nativeAssetBytes": 12160,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/red-kid.webp",
+          "sourceSHA256": "35afa0540c7d45f1e95c4fa433ac8c0ed78975383365e45373739ea0f4bbecd5",
+          "sourceBytes": 67204,
+          "nativeAssetSHA256": "35afa0540c7d45f1e95c4fa433ac8c0ed78975383365e45373739ea0f4bbecd5",
+          "nativeAssetBytes": 67204,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 11,
+        "key": "usage",
+        "sourceDimensions": {
+          "width": 696,
+          "height": 225
+        },
+        "collision": "rectangle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/usage.webp",
+          "sourceSHA256": "9a6ab5bffe90aefa1f61b8247ff91168e5f093d33c87e60a51c660edad0d1497",
+          "sourceBytes": 15852,
+          "nativeAssetSHA256": "9a6ab5bffe90aefa1f61b8247ff91168e5f093d33c87e60a51c660edad0d1497",
+          "nativeAssetBytes": 15852,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/usage-kid.webp",
+          "sourceSHA256": "a3206f6555d6484bc94a25cf9c734a1bd6182bd77dde6c90e994cb95d7d49da6",
+          "sourceBytes": 46490,
+          "nativeAssetSHA256": "dc85126c383556c8ed7245ed2b0e99e9291ca03bd3d11e8769f83a3ce78393a4",
+          "nativeAssetBytes": 195362,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 12,
+        "key": "knob",
+        "sourceDimensions": {
+          "width": 157,
+          "height": 157
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/knob.webp",
+          "sourceSHA256": "e514da9fa8624c9e05fde02457e1330051e21ef06eb1820273db2a97c06dfb3b",
+          "sourceBytes": 3482,
+          "nativeAssetSHA256": "e514da9fa8624c9e05fde02457e1330051e21ef06eb1820273db2a97c06dfb3b",
+          "nativeAssetBytes": 3482,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/knob-kid.webp",
+          "sourceSHA256": "825f7becc7f897831552db10c515ce9776cca713be9d54dd820a4363540fe1f6",
+          "sourceBytes": 18502,
+          "nativeAssetSHA256": "825f7becc7f897831552db10c515ce9776cca713be9d54dd820a4363540fe1f6",
+          "nativeAssetBytes": 18502,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 13,
+        "key": "circle",
+        "sourceDimensions": {
+          "width": 513,
+          "height": 513
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/circle.webp",
+          "sourceSHA256": "b3d6784132c7df40a2881a98aa676c20bf35d6bec87661603c454c365a5038d7",
+          "sourceBytes": 13104,
+          "nativeAssetSHA256": "b3d6784132c7df40a2881a98aa676c20bf35d6bec87661603c454c365a5038d7",
+          "nativeAssetBytes": 13104,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/circle-kid.webp",
+          "sourceSHA256": "48fe4e1b596dd7e0c41050da3fde7df5c5bd4ecb0aa0e69a5517c01a655817f1",
+          "sourceBytes": 63652,
+          "nativeAssetSHA256": "48fe4e1b596dd7e0c41050da3fde7df5c5bd4ecb0aa0e69a5517c01a655817f1",
+          "nativeAssetBytes": 63652,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 14,
+        "key": "dial",
+        "sourceDimensions": {
+          "width": 697,
+          "height": 697
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/dial.webp",
+          "sourceSHA256": "f13bc29b879282d38e26ceb98781cb9a79f070de04c2e75ae126fdfff166b5e8",
+          "sourceBytes": 17416,
+          "nativeAssetSHA256": "f13bc29b879282d38e26ceb98781cb9a79f070de04c2e75ae126fdfff166b5e8",
+          "nativeAssetBytes": 17416,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/dial-kid.webp",
+          "sourceSHA256": "511ab3728318a3df411dad588adb2226c7c5cb3a91a5f498f9fc161a582c59c1",
+          "sourceBytes": 140106,
+          "nativeAssetSHA256": "511ab3728318a3df411dad588adb2226c7c5cb3a91a5f498f9fc161a582c59c1",
+          "nativeAssetBytes": 140106,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 15,
+        "key": "side",
+        "sourceDimensions": {
+          "width": 697,
+          "height": 697
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/side.webp",
+          "sourceSHA256": "033a1eee36e43eb691ae806be06f3d2c38c75eb0290699098389c5378d6a175e",
+          "sourceBytes": 39574,
+          "nativeAssetSHA256": "033a1eee36e43eb691ae806be06f3d2c38c75eb0290699098389c5378d6a175e",
+          "nativeAssetBytes": 39574,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/side-kid.webp",
+          "sourceSHA256": "66cce229b22e70bc08aacefd9dbc07cf33d2f21abe77d15028512fe438e50755",
+          "sourceBytes": 151638,
+          "nativeAssetSHA256": "66cce229b22e70bc08aacefd9dbc07cf33d2f21abe77d15028512fe438e50755",
+          "nativeAssetBytes": 151638,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 16,
+        "key": "shards",
+        "sourceDimensions": {
+          "width": 697,
+          "height": 697
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/shards.webp",
+          "sourceSHA256": "72b033b35adc8af49ab6196e00f4335d3050919a158e74c90af9e2fe08177621",
+          "sourceBytes": 23164,
+          "nativeAssetSHA256": "72b033b35adc8af49ab6196e00f4335d3050919a158e74c90af9e2fe08177621",
+          "nativeAssetBytes": 23164,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/shards-kid.webp",
+          "sourceSHA256": "66757f43624a0ab7840688ba8b05629715054bf44267dfe2e77fd7003a5451cb",
+          "sourceBytes": 123452,
+          "nativeAssetSHA256": "66757f43624a0ab7840688ba8b05629715054bf44267dfe2e77fd7003a5451cb",
+          "nativeAssetBytes": 123452,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 17,
+        "key": "night",
+        "sourceDimensions": {
+          "width": 697,
+          "height": 698
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/night.webp",
+          "sourceSHA256": "8f75f3532bfad3ba51d475aeca830bd1df5cb023b8ecd8ebbdf8ab902b42f034",
+          "sourceBytes": 21412,
+          "nativeAssetSHA256": "78d0412a5a0669f584ba81ac101575b9dc551d83cd0362255c64cce7f2a918f5",
+          "nativeAssetBytes": 94980,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/night.webp",
+          "sourceSHA256": "8f75f3532bfad3ba51d475aeca830bd1df5cb023b8ecd8ebbdf8ab902b42f034",
+          "sourceBytes": 21412,
+          "nativeAssetSHA256": "78d0412a5a0669f584ba81ac101575b9dc551d83cd0362255c64cce7f2a918f5",
+          "nativeAssetBytes": 94980,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": true
+      },
+      {
+        "index": 18,
+        "key": "face",
+        "sourceDimensions": {
+          "width": 136,
+          "height": 136
+        },
+        "collision": "circle",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/face.webp",
+          "sourceSHA256": "5e7adf44aa85ca16fdf0329c9ea15d209742afd12726148ca513e0a880b8e90a",
+          "sourceBytes": 6040,
+          "nativeAssetSHA256": "5e7adf44aa85ca16fdf0329c9ea15d209742afd12726148ca513e0a880b8e90a",
+          "nativeAssetBytes": 6040,
+          "sourceSizingAdaptation": false,
+          "derivation": "Exact source bitmap aspect already matches the declared source CSS box; unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/face-kid.webp",
+          "sourceSHA256": "a94707b1dc0e12af2aa5157282e3be67ae83b4eaf80da813be800a689ae32c98",
+          "sourceBytes": 5666,
+          "nativeAssetSHA256": "5f6254925bbfce7c046f8986286da2c79bec8c03d6af3aa7bd8c08fcb2e38883",
+          "nativeAssetBytes": 53314,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 19,
+        "key": "tri",
+        "sourceDimensions": {
+          "width": 704.001,
+          "height": 608.664
+        },
+        "collision": "polygon",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/tri.webp",
+          "sourceSHA256": "6c600d57c9b284dfe8c3f1d6d6980ebc09cbe0638fc085e2e05ebf83a7b4caad",
+          "sourceBytes": 71288,
+          "nativeAssetSHA256": "a7d8a0f25d2188c4540381ec30e1916dbec3fb02d2a1aecc1cff8032abb983c0",
+          "nativeAssetBytes": 268836,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/tri-kid.webp",
+          "sourceSHA256": "6aa94a002ac9c624a56f6994a91d8a3d0c668d12c6b04854e3a6e40c69c65303",
+          "sourceBytes": 143596,
+          "nativeAssetSHA256": "04ec7c348272e4a01e95c50c168e7ae0f7c2c4f09e5ffdcbd639ed51508b53d5",
+          "nativeAssetBytes": 992206,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      },
+      {
+        "index": 20,
+        "key": "tri-b",
+        "sourceDimensions": {
+          "width": 704.001,
+          "height": 608.664
+        },
+        "collision": "polygon",
+        "plain": {
+          "sourceURL": "https://format.obys.agency/chips/tri-b.webp",
+          "sourceSHA256": "9f076d126d27f867dd79e76ceea8010eff7a83a345efcd5f51e6b5cf0b719ba5",
+          "sourceBytes": 24784,
+          "nativeAssetSHA256": "89af0275ff1b4e5641691399c1a983afffd321100707193fbfa840bb834a4c8c",
+          "nativeAssetBytes": 137054,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "daughter": {
+          "sourceURL": "https://format.obys.agency/chips/tri-b-kid.webp",
+          "sourceSHA256": "90c8759da2042dcb86f6a2fe4846d8121016dbcda63064074ba8afe10473b725",
+          "sourceBytes": 139704,
+          "nativeAssetSHA256": "4f09564aa982e27e4c3dbf19f1020d53fad2a7ccdea67d58ca1434bd5cfe956e",
+          "nativeAssetBytes": 936704,
+          "sourceSizingAdaptation": true,
+          "derivation": "Decoded source bitmap resized to twice the exact source CSS box, rounded to integer raster dimensions, fit:fill; encoded WebP lossless. This bakes the source img width/height100% stretch so native default-cover cannot introduce a new aspect crop. Raw source remains unchanged."
+        },
+        "nightReusesPlain": false
+      }
+    ],
+    "resourcePolicy": {
+      "maximumPointerChips": 30,
+      "maximumBodiesIncludingSamePoster": 31,
+      "integrationHz": 60,
+      "paintHz": 30,
+      "maximumCatchupMs": 100,
+      "maximumContactPairsPerStep": 930,
+      "offscreenAndHiddenPause": true,
+      "canvasWithoutOverrides": "Native primitive wrappers author opacity0, so an unmodified default native instance cannot flash in editor Canvas.",
+      "nativeFrozenTargets": "Canvas/export/thumbnail/reduced state keeps the authored poster and hidden idle pool.",
+      "nativeDaughterState": "Existing SourceHeroNativeBehaviors module and its inverse image gate; not duplicated in the pool controller."
+    },
+    "localEvidence": {
+      "sourceBitmapBrowserChecks": 53,
+      "sourceAlphaReferenceDifferenceChannels": 0,
+      "missingInverseCounterfactualDifferentChannels": 433,
+      "proof": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/pool-browser-wrappers-source-assets.json",
+        "sha256": "d111e1505a919d1618ce656c4138f37c321b05a85b7afb487babb61958d6d7d1",
+        "bytes": 50196
+      },
+      "mapping": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/native-binding-228-receipt.json",
+        "sha256": "059e902efd8201e1729fbee8d716e7b2abfba2a8ede2a5c1dbbb27f5136ab247",
+        "bytes": 1786
+      },
+      "wrapperLayout": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/wrapper-layout-contract-pending.json",
+        "sha256": "c63a0069be5eec3b0e5a729a9cfb1733fc438807d87ed7c17c07a2145fd0dcca",
+        "bytes": 32765
+      },
+      "peerReview": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/carried-poster/final-bound-independent-review.json",
+        "sha256": "750e79c49f64ed8bc58458e9608d2593c55941215077a300f6b4837403a9b295",
+        "bytes": 989
+      },
+      "scope": "Actual React18/Chromium native-like Frames, genuine bitmaps and actual Native67 HOCs. The earlier source-bitmap run uses identical bytes outside the final closed metadata binding body. It is not a Framer runtime-paint claim."
+    },
+    "validationCommands": [
+      "pnpm run check:source-format-details",
+      "pnpm run check:source-format-pool",
+      "pnpm run check:source-format-pool-browser"
+    ],
+    "limits": [
+      "Independent collision fit and bounded integration, not Matter trajectory parity.",
+      "Source prompt fade is retained; the source 0.9s/0.13s entrance stagger is not reconstructed.",
+      "Phone retains its fitted authored geometry; the complete source Phone journey remains unverified.",
+      "The final 123-export source is not yet registered. Actual retained Slot01 must prove a non-default variant, a second later choice, moving geometry, native Daughter transparency, initial no-flash and Canvas/static state before the remaining 29 instances.",
+      "Existing historical source/renderer receipts stay immutable; current binding is manual and specific to this Framer native definition."
+    ],
+    "assetReuse": "Actual public source bitmaps retained for this credited unpublished recreation. Reuse license is unverified; no production licensing claim is made. Source CSS sizing adaptations are identified separately from original source bytes."
   }
 }
