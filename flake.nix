@@ -283,6 +283,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-montreal-accents = (mkWebsiteCheck "source-montreal-accents" ''
+            export MONARCHIC_MONTREAL_ACCENTS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-montreal-accents
+            pnpm run check:source-montreal-accents-browser
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           standalone-heroes = (mkWebsiteCheck "standalone-heroes" ''
             pnpm run check:source-hero-page-study
             pnpm run check:source-hero-page-browser

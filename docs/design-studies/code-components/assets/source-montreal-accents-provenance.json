@@ -1,0 +1,128 @@
+{
+  "id": "HERO-008",
+  "classification": "Source inspiration / independently implemented current-code-supported native accents",
+  "creator": "Pangram Pangram / PP Neue Montreal",
+  "source": "https://neuemontreal.com/",
+  "sourceEvidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/public-module-0-inspection-only.mjs",
+      "sha256": "1fbde0af47d7c6ae572ae58942d6adff74ba170b0ac5498943b0cf7579005fa2",
+      "bytes": 1187746
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/validation/accents/font-measurements.json",
+      "sha256": "4a518eedaaf41230edec4644a09d749df09698bab5036a8823599850bb885354",
+      "bytes": 6599
+    }
+  ],
+  "sourceGeometrySHA256": "a7e7ac38ed430f6cd850ab1d4a03f708a54b4a859980b29ffa0f0a3658a02bd7",
+  "adaptation": {
+    "implementation": "Independent native public HOCs; no foreign behavior JavaScript imported. Four actual cubic path data constants retained as credited source geometry.",
+    "wave": {
+      "lines": [
+        "Already in Use,",
+        "Worldwide!"
+      ],
+      "positions": 25,
+      "nonSpaceAnimatedGlyphs": 23,
+      "staticSpaceFrames": 2,
+      "spaceAdvanceEm": 0.28,
+      "letterSpacingEm": -0.04,
+      "lineHeight": 0.9,
+      "fit": "Measured using actual source font and source fit criterion at1420/351logical widths:218/54px. Individual native advances are rounded to nearest pixel. Runtime adaptive text fitting is not implemented.",
+      "sourceSpanBehavior": "Spaces advance global index but do not animate. Both lines use one continuous delay index.",
+      "amplitudePx": {
+        "desktop": 12,
+        "phone": 4
+      },
+      "periodSeconds": 1.4,
+      "delayPerPositionSeconds": 0.07
+    },
+    "semicolon": {
+      "sourceViewBox": [
+        0,
+        0,
+        130,
+        680
+      ],
+      "commaTranslateY": 394,
+      "sourceDesktopHeight": "65vh",
+      "maxHeightPx": 600,
+      "sourcePhoneHeight": "35vh",
+      "sourceIntermediateHeight": "50vh (not separately authored in the two frozen layouts)",
+      "timelineSeconds": {
+        "initialDelay": 1.8,
+        "toRound": 0.8,
+        "holdRound": 1,
+        "toSquare": 0.8,
+        "holdSquare": 1
+      },
+      "easing": [
+        0.76,
+        0,
+        0.24,
+        1
+      ],
+      "native": "Two selectable native filled Frames are clipped with exact scaled cubic data; source contain alignment is retained."
+    },
+    "limits": [
+      "This is current public code-supported behavior, not a newly isolated selected-archive input observation.",
+      "Existing bead ticker motion is outside this package; no invented morphTick coupling is added.",
+      "Only the two specific source heading strings animate; no repetitive extra text animation.",
+      "Phone semicolon is raised24px from the hidden legacy placeholder so the comma clears the static bottom bead rail; source Phone composition remains an explicit adaptation.",
+      "Native glyph fitting is fixed to the two declared layout sizes; intermediate widths require a separately reviewed native layout.",
+      "Native font must use the actual uploaded italic800 face. Fallback monospace in the pure-Nix motion fixture is explicitly not source typography proof.",
+      "Morph initial static CSS path and its animation backend have a measured one-pixel antialias edge difference; exact cubic coordinates and same-backend paused/hold pixels are separately proved."
+    ]
+  },
+  "nativeMaterial": {
+    "fontSource": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/source-media/fonts/font-13.woff2",
+      "sha256": "0fc0739173228c2aeb788378726dd3c809c2844f61d8d2a1751879b00b7efa0e",
+      "bytes": 94244
+    },
+    "fontSourceURL": "https://framerusercontent.com/assets/P9JXOrUdoLjj1NJPyhjVz51AeEg.woff2",
+    "fontCSSFamily": "PP Neue Montreal Extrabold Italic",
+    "fontNativeUIFamily": "PP Neue Montreal",
+    "weight": 800,
+    "style": "italic",
+    "rights": "Unverified external source font; outside Git for credited unpublished source recreation. No production license assertion."
+  },
+  "publicAPI": {
+    "overrides": 29,
+    "defaultComponent": false,
+    "propertyControls": 0,
+    "binds": 29,
+    "preserveOldNativePlaceholders": [
+      "languages-wave-line1",
+      "languages-wave-line2",
+      "punctuation-semicolon"
+    ]
+  },
+  "lifecycle": {
+    "canvasContexts": 0,
+    "webglContexts": 0,
+    "jsRAF": 0,
+    "timers": 0,
+    "ambient": "CSS animations pause via shared Core store, own IntersectionObserver and document visibility. All observers/subscriptions clean on unmount."
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/validation/accents/receipt.json",
+    "sha256": "6c2a645ef4609a4f909a409dbe25f2218b36cd3b4e4824b0c1df83ef6d76423b",
+    "bytes": 4992
+  },
+  "status": {
+    "localFrozen": true,
+    "framerSourceRegistered": false,
+    "actualNativeBindingsVerified": false,
+    "actualReloadUI": false
+  },
+  "nixValidation": {
+    "path": "/nix/store/vxgx0zmc1c0069wk827md4faqpbb4ahg-monarchic-website-source-montreal-accents-0.0.1",
+    "sourceSHA256": "e6355cf6dab8a3fe16cfc42282bc43ce3797502d16f0170a039ecb90e226720e",
+    "sourceBytes": 12523,
+    "focusedChecks": 4,
+    "actualReactChecks": 22,
+    "scope": "Actual native CSS character wave, source cubic semicolon geometry, exact same-backend paused/hold replay, reduced/static/ownvisibility/sharedPause and cleanup. Cross static/compositor AA is bounded to1px shape edges; actual Framer/font/binding verification remains separate."
+  }
+}
