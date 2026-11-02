@@ -1,0 +1,135 @@
+{
+  "reference": "HERO-005",
+  "classification": "Credited Source inspiration recreation; unpublished prototype",
+  "sourceURL": "https://www.maximiliankaspar.com/",
+  "creator": "Maximilian Kaspar",
+  "sourceBehaviorJavaScriptReused": false,
+  "implementation": "Independent native Framer overrides. The existing credited source-mesh ASCII renderer remains byte-exact and separate.",
+  "source": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/SourceKasparNativeBehaviors.tsx",
+    "bytes": 26792,
+    "sha256": "3f9acdbc536992df11f6ee2f0d5c1bdf20bc0ffb34b6180dc7d43a3b09ab56fc"
+  },
+  "test": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/check-source-kaspar-native.mjs",
+    "bytes": 15846,
+    "sha256": "50bbc7df101ffd1b68f3ec2d1a1eb6ce7277f1f2376d6c5d835bccb59cb2c109"
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/native-authoring.json",
+    "bytes": 111767,
+    "sha256": "3c752450eef6c3a1fed6294ca92f23d8b1579d8795423d96b5a3b2961df9d389"
+  },
+  "actualSourceInput": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/audit.json",
+    "bytes": 427782,
+    "sha256": "c05ebcb118a837f51aaa5f7199f305babd9cd8863100b4e0735281241486d8d6"
+  },
+  "materials": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/materials/primary-material-references.json",
+    "bytes": 4294,
+    "sha256": "b3bc743e8c905f5890119277393cd260a8e4417cfe29e2955b3b091c0af2d37f"
+  },
+  "sourceStyleFacts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/../current-primary-style.css",
+    "bytes": 58634,
+    "sha256": "1c41bfe3b3c0c180565dafee9994a42183fb23ca4d8f342cf60b93913704f087"
+  },
+  "public": {
+    "overrideFunctions": 13,
+    "newCodeComponents": 0,
+    "newPropertyControls": 0,
+    "retainedASCIIControls": 12,
+    "retainedASCIISource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceKasparASCIIStudy.tsx",
+      "bytes": 54331,
+      "sha256": "4f964d5b39678ed005cebf53dcabb3a7c1acd6f8d764254406ca1830a9e369d2"
+    },
+    "retainedASCIIData": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceKasparASCIIData.ts",
+      "bytes": 878063,
+      "sha256": "69548109a7f852e2d8d64606ee1f038c1d425183ce38f361422f3073d5e9779a"
+    }
+  },
+  "native": {
+    "newPage": true,
+    "historicalPagePreserved": "hQLp25hBb",
+    "nativeFamilies": 58,
+    "existingCodeComponentFamilies": 1,
+    "responsiveRoots": [
+      1440,
+      768,
+      390
+    ],
+    "expectedNewCodePlacements": 3,
+    "newDefinitions": 0
+  },
+  "behavior": [
+    "Full current viewport statement, source font fit and first-line indentation.",
+    "Existing genuine source geometry reveal/rotation, fixed navigation and following project handoff.",
+    "Real pointer cue and its measured scroll retirement.",
+    "A toggles four native word-range scan boxes; Shift+G toggles the separate layout grid.",
+    "Project description opens at the source intersection threshold and supports explicit native tap/click/key toggles.",
+    "Four genuine photographs expand independently and reflow native Desktop/Phone cards."
+  ],
+  "lifecycle": {
+    "ownedWebGLContexts": 0,
+    "ownedMediaDecoders": 0,
+    "ownedCanvases": 0,
+    "scan": "One explicit-input800–1400ms event timer; no idle RAF.",
+    "pointer": "One transient damped RAF chain, ending at rest, leaving, retirement, hidden/reduced state or cleanup.",
+    "static": "Canvas/export/thumbnail keep native geometry and deterministic fine grid, with no owned world/effects/listeners/motion.",
+    "existingASCII": "The shared v2 resource coordinator is unchanged. Hiding the native field ancestor at hero exit releases its motion through the existing pool.",
+    "cleanup": "Owned styles, roles, SVG, listeners, observers, timer and transient RAF restore or release."
+  },
+  "localComposition": {
+    "desktop": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/local-native-1440-layout.json",
+      "bytes": 655,
+      "sha256": "6c99ace72432345a16d1103ec809cd8c52472e43ddec9f297802a9e5b5e39e03"
+    },
+    "phone": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/local-native-390-layout.json",
+      "bytes": 659,
+      "sha256": "a1cdda65a44192ba1ccf7e0bf0a6b3f9e6bdea77df238eb08c745b4561e26382"
+    },
+    "scope": "Local React/native-like recipe with genuine source font/photos and existing actual renderer, not Framer Preview."
+  },
+  "intentionalDifferences": [
+    "One genuine source plant and selected yaw replace seven random meshes; existing quantized geometry, material and glyph fits remain.",
+    "Native editor type uses available Roboto Mono/Inter. Preview uses the exact public Bugrino font URL with verified CORS, fallback and font-ready refit; no automatic font synchronization.",
+    "The project description is independently summarized; native metadata/photos retain credits.",
+    "The complete opening and first four handoff photographs are included. Later project media and the remaining portfolio are beyond this hero-to-project target.",
+    "Four scan selections share one bounded timer instead of four timers. Cue reveal and fine-grid opacity are fits.",
+    "Gallery transforms animate650ms; collection height commits immediately rather than using the source delayed height/collapse timeline.",
+    "Compact768 is a fit between observed Desktop1440 and Phone390."
+  ],
+  "verification": {
+    "finalLockedNixPending": false,
+    "actualFramerModelInstalled": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "lockedNix": {
+      "out": "/nix/store/ld95lb4j128d9bm3m5dd24862vgc0zv3-monarchic-website-source-kaspar-native-0.0.1",
+      "result": {
+        "path": "/nix/store/ld95lb4j128d9bm3m5dd24862vgc0zv3-monarchic-website-source-kaspar-native-0.0.1/evidence/result.json",
+        "bytes": 3027,
+        "sha256": "ecca56783dd37e8032b4c9096d5f39f0acbf21be6b22ec73f861b528774aa650"
+      },
+      "checks": 38
+    },
+    "canceledTapRegression": {
+      "negative": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/canceled-tap-negative.json",
+        "bytes": 252,
+        "sha256": "dc0b168057a6089e4b1c612fd99bf643cfcb2f9de0a873a747cc33061cd2cb28"
+      },
+      "exactDelta": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/cancellation-delta-proof.json",
+        "bytes": 1498,
+        "sha256": "39facb9be1222329e7bd75a626db4d123a3b5c4e99b21f75e671b4aac41acbf5"
+      },
+      "positive": "Final focused suite rejects cancellation leaks and preserves native child-link exclusion."
+    }
+  }
+}
