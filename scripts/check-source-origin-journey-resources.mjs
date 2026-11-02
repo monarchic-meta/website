@@ -8,7 +8,10 @@ import { fileURLToPath } from 'node:url'
 
 const here=path.dirname(fileURLToPath(import.meta.url)),repo=fileURLToPath(new URL('../',import.meta.url)),require=createRequire(path.join(repo,'package.json')),ts=require('typescript'),{chromium}=require('@playwright/test')
 const file=path.join(repo,'docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx'),source=fs.readFileSync(file,'utf8'),testBytes=fs.readFileSync(fileURLToPath(import.meta.url)),hash=b=>crypto.createHash('sha256').update(b).digest('hex')
-assert.equal(hash(source),'5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007')
+assert.equal(hash(source),'e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8')
+const menuNoWrapRefinement="type(menuLabel,'white-space:nowrap!important;'),"
+assert.equal(source.split(menuNoWrapRefinement).length,2,'One frozen menu no-wrap refinement')
+assert.equal(hash(source.replace(menuNoWrapRefinement,'')),'5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007','Renderer and resource code match the preceding source byte for byte')
 const evidence=path.join(process.env.MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR??'/tmp/monarchic-source-origin-native','journey-resources');fs.mkdirSync(evidence,{recursive:true});fs.writeFileSync(path.join(evidence,'tested-source.tsx'),source)
 const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText
 const profile=fs.mkdtempSync(path.join(os.tmpdir(),'origin-b-aggregate-')),browser=await chromium.launchPersistentContext(profile,{headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,viewport:{width:1440,height:900},deviceScaleFactor:2,args:['--disable-dev-shm-usage']})
