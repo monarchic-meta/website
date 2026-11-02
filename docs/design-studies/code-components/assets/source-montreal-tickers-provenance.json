@@ -1,0 +1,125 @@
+{
+  "schema": "source-montreal-tickers.v1",
+  "id": "HERO-008",
+  "classification": "Source inspiration / credited recreation",
+  "sourceURL": "https://neuemontreal.com/",
+  "credit": "Pangram Pangram / PP Neue Montreal. Independently authored native ticker/drag controllers; original website JavaScript is not imported.",
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMontrealAccents.tsx",
+    "bytes": 23900,
+    "sha256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12"
+  },
+  "legacyParent": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/SourceMontrealAccents.parent.tsx",
+    "bytes": 12523,
+    "sha256": "e6355cf6dab8a3fe16cfc42282bc43ce3797502d16f0170a039ecb90e226720e"
+  },
+  "unchangedLegacyBytes": 12523,
+  "legacyPublicOverrides": 29,
+  "sourcePublicOverrides": 33,
+  "newOverrides": [
+    "withMontrealAccentTickers",
+    "withMontrealTicketTicker",
+    "withMontrealPunctuationTickers",
+    "withMontrealTickerPart"
+  ],
+  "componentsAdded": 0,
+  "controlsAdded": 0,
+  "sourceFacts": {
+    "accents": {
+      "directions": [
+        "reverse",
+        "default",
+        "reverse"
+      ],
+      "desktopVelocity": 50,
+      "phoneVelocity": 25,
+      "gap": 2
+    },
+    "tickets": {
+      "direction": "reverse",
+      "velocity": 50,
+      "gap": 64,
+      "draggable": true
+    },
+    "punctuation": {
+      "direction": "reverse",
+      "desktopVelocity": 50,
+      "tabletVelocity": 25,
+      "phoneHidden": true,
+      "gap": 56,
+      "iconSize": 56
+    }
+  },
+  "sourceObservation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/source-observation/observation.json",
+    "bytes": 32723,
+    "sha256": "4b637bf23f758eee7dd7680c8a61f34e9ded67af21c3a377c2ecd2648fe0c5a3"
+  },
+  "localImplementationReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/final-source-receipt.json",
+    "bytes": 6321,
+    "sha256": "14dc243fea0230ab42faa4a3ec290b1d7a93009d51697824f9592ca2eb9cc125"
+  },
+  "peerCarry": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/root-final-carry.json",
+    "bytes": 440,
+    "sha256": "fd189310a988f26d97e8da45c69ef7559e8a7c80f662871f9dc0506edfda9874"
+  },
+  "nativeBindingPlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/native-binding-plan.json",
+    "bytes": 34633,
+    "sha256": "2554545fab1e63c49159e1a658da024b9be83fe39cac3b663971dbdd6b71327d"
+  },
+  "nativeScope": {
+    "newNodes": 0,
+    "moves": 0,
+    "deletes": 0,
+    "geometryWrites": 0,
+    "existingBindings": 118,
+    "primary": 59,
+    "phone": 59,
+    "owners": 6,
+    "parts": 112
+  },
+  "tests": {
+    "lockedNix": "/nix/store/mrhssn70b3rwdbgc9pcjb8s08ggh8zsq-monarchic-website-source-montreal-accents-0.0.1",
+    "strictGroups": 4,
+    "retainedBrowserChecks": 22,
+    "newTickerBrowserChecks": 31,
+    "retained": {
+      "path": "/nix/store/mrhssn70b3rwdbgc9pcjb8s08ggh8zsq-monarchic-website-source-montreal-accents-0.0.1/evidence/result.json",
+      "bytes": 4650,
+      "sha256": "e24bae896b3896691bbf64044c3936a83bb787718760187764d119d541d8d716"
+    },
+    "tickers": {
+      "path": "/nix/store/mrhssn70b3rwdbgc9pcjb8s08ggh8zsq-monarchic-website-source-montreal-accents-0.0.1/evidence/tickers/result.json",
+      "bytes": 37381,
+      "sha256": "3e5f2c1d396a8679a6335a684224d4e00a2f55f10ab2afad0bd8bcd505cc600e"
+    },
+    "editorPlacements": 60,
+    "minimumAreaAndMultipleTonesChecked": true,
+    "negativeBeforeCopyHitFix": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/SourceMontrealAccents.f433-before-copy-hit-fix.tsx",
+      "bytes": 23552,
+      "sha256": "f433bca521953deee3433d9e54f8f48eb95488d81ec06398a6653c7850435fd1"
+    }
+  },
+  "resources": {
+    "newCanvas": 0,
+    "newWebGL": 0,
+    "clock": "One own RAF per visible, admitted native section; no clock during Canvas/export/thumbnail/reduced/hidden/offscreen or sharedPause.",
+    "copies": "Generated inert edge copies preserve native editable originals and their rotations."
+  },
+  "differences": [
+    "Native ticket sizes/rotations and relative vertical composition retain the authored fit; new ticker positions/gaps and motion follow source.",
+    "Dragging follows actual observed direction/capture; precise original inertial release curve is not characterized. This implementation holds auto motion during an active drag and resumes at release.",
+    "Phone bead rails are hidden only in live source view. Canvas/export/reduced stills retain the existing authored native geometry.",
+    "Actual Framer named-layer/ref forwarding, source font identity, saved binding, Preview and editor reload remain separate gates.",
+    "No morphTick listener or automatic text-fit behavior is invented."
+  ],
+  "sourceRegisteredInFramer": false,
+  "actualNativeBindingsVerified": false,
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false
+}
