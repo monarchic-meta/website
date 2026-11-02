@@ -302,6 +302,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf pkgs.inter ];
             };
           });
+          source-origin-native-mixed = (mkWebsiteCheck "source-origin-native-mixed" ''
+            export MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-origin-native-mixed
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''
             export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
             pnpm run check:source-hero-journey-study
