@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "LOCAL_OPAQUE_TOOLTIP_6_STRICT_40_BROWSER_LOCKED_NIX_PASS_FRAMER_UPDATE_PENDING",
+  "status": "LOCAL_LIVE_TOC_6_STRICT_54_BROWSER_LOCKED_NIX_PASS_FRAMER_UPDATE_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -33,16 +33,17 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePolarGuideControls.tsx",
-    "bytes": 90915,
-    "sha256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285"
+    "bytes": 91007,
+    "sha256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d"
   },
   "tests": {
     "strict": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-controls.mjs",
-      "sha256": "68e1e03f07a1f147a11e5f202fdec2306a451859a9155c166ff13a556dc15b9f",
-      "bytes": 8649,
+      "bytes": 8697,
+      "sha256": "ca932837d202898fadf698ab8d4c1d93232b3c0cc0518d79270bf3d154a8cded",
       "groups": 6,
-      "passed": true
+      "passed": true,
+      "fixtureDelta": "Closed CSS declaration adds only gridTemplateRows,gridAutoRows,aspectRatio. All prior six semantic groups remain."
     },
     "browser": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-browser.mjs",
@@ -51,17 +52,17 @@
       "groups": 40,
       "passed": true,
       "receipt": {
-        "path": "/nix/store/j1wxg9vy1vm0nrv3kwyilagjs2g7pk9x-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
         "bytes": 3351,
-        "sha256": "fc752ecf55e258e9a2cf1d7922412e2a8ce68d5d1f340b7fd78a483869a64aa8"
+        "sha256": "b7e4b9d040560cf1f0f5b2e6f08fd80bdfaa32f61e832fb09dd80f5fad32edde"
       }
     },
     "lockedNix": {
       "status": "PASS",
-      "path": "/nix/store/j1wxg9vy1vm0nrv3kwyilagjs2g7pk9x-monarchic-website-source-polar-guide-0.0.1",
-      "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
+      "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d",
       "strictGroups": 6,
-      "browserChecks": 40,
+      "browserChecks": 54,
       "fonts": "Locked DejaVu and Liberation Fontconfig",
       "browserReceipt": {
         "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
@@ -92,7 +93,19 @@
     },
     "actualFramerPaint": false,
     "editorReload": false,
-    "scope": "Actual React18/Chromium sourceSVG detail and paused pixels, native tap/keyboard/cancellation, native-name nested navigation, responsive scroller DOM replacement for navigation,1024TOC transition, early-access navigation, own motion budget and mocked official movieSDK interface. Actual provider playback and Framer native forwarding remain separate."
+    "scope": "Actual React18/Chromium sourceSVG detail and paused pixels, native tap/keyboard/cancellation, native-name nested navigation, responsive scroller DOM replacement for navigation,1024TOC transition, early-access navigation, own motion budget and mocked official movieSDK interface. Actual provider playback and Framer native forwarding remain separate.",
+    "nativeTocOwnership": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-toc.mjs",
+      "bytes": 8061,
+      "sha256": "8615407a193ddada5406fcdd2932c10d742b905debb0dba7d53140b88d81d454",
+      "groups": 14,
+      "passed": true,
+      "receipt": {
+        "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1/evidence/toc/result.json",
+        "bytes": 16517,
+        "sha256": "2fbfdf2b2ca05c4d5863284cff3e78f82958c7d6cc59da294a2f6d226ab22ac9"
+      }
+    }
   },
   "publicAPI": {
     "explicitHOCs": 68,
@@ -358,9 +371,9 @@
   "framerCurrentModel": {
     "installed": true,
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/compatibility-source-window-326/output.json",
-      "bytes": 517717,
-      "sha256": "8b79eec77f3d8ad46eed63c32c9e2ef5288f779134bd320d17f2563222fc033a"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-source-window-342/output.json",
+      "bytes": 534066,
+      "sha256": "55bebf03a04ed9d0a927899a47acb6c58b454205993f047199114c9232018f7a"
     },
     "diagnostics": [],
     "rows": 70,
@@ -371,8 +384,8 @@
     "nativeGuideInstalled": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false,
-    "sourceSHA256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
-    "pendingTooltipSourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285"
+    "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
+    "pendingNativeTocRuntimeSourceSHA256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d"
   },
   "historicalBeforeOpaqueTooltip": {
     "implementation": {
@@ -438,6 +451,72 @@
     "newOpaqueNativeIdChecks": 4,
     "oldSourceReproducesHoverFailure": true,
     "public70RowsAnd5_3ControlsUnchanged": true,
-    "sourceUpdatePending": true
+    "sourceUpdatePending": false
+  },
+  "historicalBeforeNativeTocOwnership": {
+    "implementation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-fix/source31ef.tsx",
+      "bytes": 90915,
+      "sha256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285"
+    },
+    "strict": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-toc-runtime-ownership-fix/strict-before-real-css-properties.mjs",
+      "sha256": "68e1e03f07a1f147a11e5f202fdec2306a451859a9155c166ff13a556dc15b9f",
+      "bytes": 8649,
+      "groups": 6,
+      "passed": true
+    },
+    "lockedNix": {
+      "status": "PASS",
+      "path": "/nix/store/j1wxg9vy1vm0nrv3kwyilagjs2g7pk9x-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
+      "strictGroups": 6,
+      "browserChecks": 40,
+      "fonts": "Locked DejaVu and Liberation Fontconfig",
+      "browserReceipt": {
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
+        "bytes": 3102
+      },
+      "parent": {
+        "status": "PASS",
+        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
+        "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+        "strictGroups": 6,
+        "browserChecks": 36,
+        "fonts": "Locked DejaVu and Liberation Fontconfig",
+        "browserReceipt": {
+          "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+          "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+          "bytes": 3102
+        },
+        "historical": {
+          "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+          "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+          "strictGroups": 6,
+          "browserChecks": 36,
+          "passed": true,
+          "staticScrollerGuardCovered": false
+        }
+      }
+    }
+  },
+  "nativeTocRuntimeOwnership": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-toc-runtime-ownership-fix/final-source-receipt.json",
+      "bytes": 1925,
+      "sha256": "06d858c114b7b83f174a25f3e57043e87e190329c19ac99bb17d2504acb6397b"
+    },
+    "portable": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-toc-runtime-ownership-fix/portable-local-receipt.json",
+      "bytes": 509,
+      "sha256": "49ab1c954e521ceddb64d7e8781c299ee3649b798a64c0b3a0eb8f3bb7e8189e"
+    },
+    "sourceDelta": "Exactly two live-only style expressions: grid clears fixed native height/row tracks; source TOC cards own auto height and square aspect. Frozen Canvas/export/thumbnail keep numeric authored geometry.",
+    "old31efReproducesFixedTrackAndCardMismatch": true,
+    "old40PredicatesUnchanged": true,
+    "newActualFixedNativeCases": 14,
+    "all70ExportsAnd5_3ControlCallsUnchanged": true,
+    "actualFramerSourceUpdate": false
   }
 }
