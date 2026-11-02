@@ -1,0 +1,325 @@
+{
+  "id": "HERO-016",
+  "classification": "Source inspiration / current original-site recreation",
+  "credit": "Origin Brand — https://www.originbrand.io/; editable native recreation with independently authored field/controller behavior.",
+  "sourceURL": "https://www.originbrand.io/",
+  "scope": "Stage A opening, Menu, Cedar reel and first-tap Programs handoff only. The full following story and scroll chrome are separate Stage B work.",
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
+    "sha256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
+    "bytes": 38082,
+    "publicOverrides": [
+      "withOriginMenuController",
+      "withOriginMenuToggle",
+      "withOriginMenuClose",
+      "withOriginMenuSurface",
+      "withOriginMenuVideo",
+      "withOriginProgramsField",
+      "withOriginRetiredLight"
+    ],
+    "components": 0,
+    "propertyControls": 0,
+    "genuineVideoURL": "https://framerusercontent.com/assets/yPlezlzE9ZAB2mu46NRrZ7qaQNk.webm",
+    "sourceWebsiteBehaviorJSReused": false
+  },
+  "parentFrozen632": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/SourceOriginNativeBehaviors-632e3ad6-historical.tsx",
+      "sha256": "632e3ad6789f48aebc9b8a4672d7f0b5f10a836197be321b03bc91d11198aae3",
+      "bytes": 37846
+    },
+    "freeze": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/stage-a-local-freeze.json",
+      "sha256": "b34b199307180895bfe9cd953b6398edde3e418002d45f9b4102d3d4f8226ea5",
+      "bytes": 6181
+    }
+  },
+  "reviewedContextCorrection": {
+    "freeze": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/stage-a-context-init-fixed-freeze.json",
+      "sha256": "895d5d62f027b0fd30b63acdf793b6646675a73995c8e5886e2163bd0e663a62",
+      "bytes": 7346
+    },
+    "onlyChangedProductionFunction": "withOriginProgramsField",
+    "exactOneFunctionInverseTo632": true,
+    "otherSixPublicAndAllPrivateMathLayoutBodiesExact": true,
+    "negative": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/motion-admission-old632-negative-evidence/negative-result.json",
+      "sha256": "256a550d219b400cbbdbf86dd02f9e4e4c6520b76a26a64ae1fe6021a588627e",
+      "bytes": 937
+    },
+    "rule": "Acquire both2D contexts before appending canvas or registering field motion. Null/throw retires both buffers; setup/draw failure cleans observer/listeners/fieldHost registration.",
+    "independentlyEditedByPorter": false
+  },
+  "publicTypeFixtures": [
+    {
+      "file": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/origin-native/react.d.ts",
+        "sha256": "ca877a886c1fa6aca21fb4d52f25d6756cc8fea04dbbfcac9a664ed35f5433d3",
+        "bytes": 775
+      },
+      "exactByteCopyOfExternalFixture": true,
+      "original": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/__react.d.ts",
+        "sha256": "ca877a886c1fa6aca21fb4d52f25d6756cc8fea04dbbfcac9a664ed35f5433d3",
+        "bytes": 775
+      }
+    },
+    {
+      "file": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/origin-native/framer.d.ts",
+        "sha256": "54a5d1a34d7eec80b9afbb1d48edf8e4244d0a684d0f348fc55df6f7789aef6b",
+        "bytes": 137
+      },
+      "exactByteCopyOfExternalFixture": true,
+      "original": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/__framer.d.ts",
+        "sha256": "54a5d1a34d7eec80b9afbb1d48edf8e4244d0a684d0f348fc55df6f7789aef6b",
+        "bytes": 137
+      }
+    }
+  ],
+  "layoutFixture": {
+    "file": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/origin-native/layout.json",
+      "sha256": "5eaacc49c1ac8bc6aadce24414e3e0345cf78ade2d10b35680ed7af9525185b2",
+      "bytes": 62919
+    },
+    "original": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/native-authoring-dictionary.json",
+      "sha256": "9ebaaa75c4be071fafc884e6b01e41643ff8c67a9d8dc72e06eb753fce033cc2",
+      "bytes": 159381
+    },
+    "scope": "Only fields read by the native-like renderer. Excluded source-limits row is omitted; links retain consumed href only. Source native authoring dictionary remains unchanged outside Git.",
+    "consumedFieldProjections": [
+      {
+        "layout": "desktop",
+        "rows": 72,
+        "consumedProjectionSHA256": "d65bf89ea037fba5a629189dcfdc6fd3cf528eef6bf7d092ce015e482cb84e6c",
+        "exact": true
+      },
+      {
+        "layout": "compact",
+        "rows": 72,
+        "consumedProjectionSHA256": "dad2d43afddcd76706066ebccdda25c6d22edc6aebd3f2546af8218edeb9f990",
+        "exact": true
+      },
+      {
+        "layout": "phone",
+        "rows": 72,
+        "consumedProjectionSHA256": "0b644dbfba5789b1bcaed7caca7aae9f52fc8e9c6b4c2f90a0ef316e24030419",
+        "exact": true
+      }
+    ]
+  },
+  "portableTests": {
+    "evidenceEnv": "MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR",
+    "defaultEvidenceRoot": "/tmp/monarchic-source-origin-native",
+    "chromiumEnv": "PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH",
+    "freshTemporaryProfiles": true,
+    "desktopOrIABUsed": false,
+    "tests": [
+      {
+        "kind": "strict",
+        "file": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-origin-native-strict.mjs",
+          "sha256": "a95a0c3f63e763f9f8e71e298b8ecfca02da7ef69b65198024d1e17f6fbe4941",
+          "bytes": 2142
+        },
+        "checks": 3,
+        "result": {
+          "path": "/tmp/origin-native-port-dc569/strict/result.json",
+          "sha256": "3b26569c9a0672ce677d75e278435a348356c373a5fcb6cb544e1672796ad6ad",
+          "bytes": 619
+        },
+        "command": "node scripts/check-source-origin-native-strict.mjs"
+      },
+      {
+        "kind": "browser",
+        "file": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-origin-native-browser.mjs",
+          "sha256": "7c113bf9a2ff41a5feef49740b88d8b0adbb53b4305d280ff35998d0c4e93248",
+          "bytes": 13910
+        },
+        "checks": 31,
+        "result": {
+          "path": "/tmp/origin-native-port-dc569/browser/result.json",
+          "sha256": "4422dc05f1f127c1e662228250399fab6cae847cd74c264a6bbb7fcfe5b1982c",
+          "bytes": 2662
+        },
+        "command": "node scripts/check-source-origin-native-browser.mjs"
+      },
+      {
+        "kind": "motion",
+        "file": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-origin-native-motion.mjs",
+          "sha256": "091658e996bc7e2fa92d97fb3c93ed86332f93c946448c342f09d14e739cc2cc",
+          "bytes": 10602
+        },
+        "checks": 21,
+        "result": {
+          "path": "/tmp/origin-native-port-dc569/motion/result.json",
+          "sha256": "d5c0deda3330eab01205e35bc5c371861b56e015065243e7f0a8b84e18ab8630",
+          "bytes": 1836
+        },
+        "command": "node scripts/check-source-origin-native-motion.mjs"
+      },
+      {
+        "kind": "responsive",
+        "file": {
+          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-origin-native-responsive.mjs",
+          "sha256": "875f7451371941033e3dc57a8cd111e0b913095c028ffb6853ce8d69eae3d3c2",
+          "bytes": 10813
+        },
+        "checks": 36,
+        "result": {
+          "path": "/tmp/origin-native-port-dc569/responsive/result.json",
+          "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137",
+          "bytes": 14731
+        },
+        "command": "node scripts/check-source-origin-native-responsive.mjs"
+      }
+    ],
+    "historical632PortablePass": {
+      "strict": 3,
+      "browser": 31,
+      "motion": 16,
+      "responsive": 36,
+      "root": "/tmp/origin-native-port-632"
+    },
+    "allReviewedVerificationExpressionsByteExact": true,
+    "exactReversePortReconstructsEachReviewedExternalScript": true,
+    "onlyChanges": [
+      "Derive repository/fixture/source paths from import.meta.url.",
+      "Use the locked Chromium executable environment and one evidence directory with script subdirectories.",
+      "Use the owned portfolio decoder fixture by default; optionally verify external genuine Cedar bytes.",
+      "Use the trimmed layout fixture with exact same consumed D/Compact/Phone values."
+    ],
+    "reviewedWaitCorrection": "Writer replaced one pre-host-swap200ms sleep with positive current video readyState>=2. The subsequent actual media-release assertion is byte exact."
+  },
+  "mediaFixture": {
+    "default": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/portfolio-film/desktop.webm",
+      "sha256": "9e2ab0b838769dbe4b5b5ad1cb4a919e600670af19052852ddbcf1c31c47fbe5",
+      "bytes": 45292
+    },
+    "origin": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/portfolio-film/manifest.json",
+      "sha256": "e39c47c8690cde30e8a6b0b9d69ea1838e074c5d81fac262116cc3d6398b6068",
+      "bytes": 1994
+    },
+    "purpose": "Owned synthetic pattern proves actual decode/admission/release; it is not product artwork or source-appearance proof.",
+    "genuineMediaEnv": "MONARCHIC_ORIGIN_NATIVE_MEDIA",
+    "optionalGenuine": {
+      "sha256": "ae5cb6e892a77372d925901802e72e349ae91309843dcc3b558b95ed537f8207",
+      "bytes": 846106,
+      "binaryInRepository": false
+    },
+    "genuinePriorAndCorrectedLocalEvidence": [
+      {
+        "file": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/strict-result.json",
+          "sha256": "3b26569c9a0672ce677d75e278435a348356c373a5fcb6cb544e1672796ad6ad",
+          "bytes": 619
+        },
+        "checks": 3
+      },
+      {
+        "file": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/browser-evidence/result.json",
+          "sha256": "92b30303fa6c5770aea137e39447347ba5b320bfc8f18e2c15bc5e4364d7e909",
+          "bytes": 2402
+        },
+        "checks": 31
+      },
+      {
+        "file": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/motion-admission-evidence/result.json",
+          "sha256": "d5c0deda3330eab01205e35bc5c371861b56e015065243e7f0a8b84e18ab8630",
+          "bytes": 1836
+        },
+        "checks": 21
+      },
+      {
+        "file": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/responsive-native-evidence/result.json",
+          "sha256": "08e47b3cbba6540d3e6cfed927784ccda380dd118fa6897eca144f176adb71e5",
+          "bytes": 14731
+        },
+        "checks": 36
+      }
+    ],
+    "materialReferences": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/../materials/native-material-references-after299.json",
+      "sha256": "6d6c2d82298fa4d274ce9468b053a96afcdb3b746f79ab417ccc0ca3486d1f86",
+      "bytes": 1711
+    }
+  },
+  "sourceFacts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/../source-facts-frozen.json",
+    "sha256": "501db460b7ca3fa2e3ed90c27cb4d029fa4494c0bd1a0093ad32a9ee75cad0d4",
+    "bytes": 6794
+  },
+  "resources": {
+    "webglContexts": 0,
+    "decoders": "Existing shared portfolio per-window gate; zero when closed/Phone/short/static/reduced/offscreen, at most one Cedar decoder while eligible.",
+    "motion": "Private2D gate: one liveCanvas or two livePreview fields; any mounted legacy study canvas conservatively vetoes live motion.",
+    "canvasMotion": "Off by default. Explicit canvasMotion true applies only to Canvas, at12fps/1MP.",
+    "previewAndStillPixels": "At most2MP; retained stills resize to actual transformed bounds and capped DPR2.",
+    "cleanup": "Own refs, listeners/observers, canvas buffers, decoder leases and motion clients are released."
+  },
+  "knownDifferences": [
+    "Inter native fit; STK Bureau Sans unavailable by positive public getter",
+    "Scalar-field implementation is independently authored from source formula; source STK material/font exactness and live Framer forwarding remain pending",
+    "Stage A covers opening/Menu/Cedar/Programs first-tap. Full home following story and scroll chrome belong to separately prepared Stage B."
+  ],
+  "validation": {
+    "localPortablePassed": true,
+    "strictGroups": 3,
+    "browserChecks": 88,
+    "lockedNixPassed": true,
+    "lockedNixOwner": "Root",
+    "sourceRegistered": false,
+    "nativeBindingsSaved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "lockedNix": {
+      "out": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1",
+      "results": {
+        "strict": {
+          "path": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+          "bytes": 619,
+          "sha256": "3b26569c9a0672ce677d75e278435a348356c373a5fcb6cb544e1672796ad6ad"
+        },
+        "browser": {
+          "path": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+          "bytes": 2662,
+          "sha256": "4422dc05f1f127c1e662228250399fab6cae847cd74c264a6bbb7fcfe5b1982c"
+        },
+        "motion": {
+          "path": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+          "bytes": 1836,
+          "sha256": "d5c0deda3330eab01205e35bc5c371861b56e015065243e7f0a8b84e18ab8630"
+        },
+        "responsive": {
+          "path": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "bytes": 14749,
+          "sha256": "5312876c4a6175dee19e9b0f100fac07eb4b6d9f1aed976ce583a50820eca723"
+        }
+      }
+    },
+    "additionalMixed60CoveragePending": true
+  },
+  "portReview": {
+    "deltaReport": {
+      "path": "/tmp/origin-native-port-delta.json",
+      "sha256": "1d032abed35a9c9192b764ed3e2dd410ea2d0a37f106c0b2e13943929fb4986f",
+      "bytes": 20597
+    },
+    "sourceLogicPreservedExceptReviewedWriterFix": true,
+    "allAssertionsPreserved": true,
+    "noPackageOrFlakeEdits": true,
+    "noBStageWorkEdits": true,
+    "commitPendingRootReview": true
+  }
+}
