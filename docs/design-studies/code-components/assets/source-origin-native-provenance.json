@@ -313,7 +313,7 @@
         "Native editable Inter is an explicit substitute for original STK Bureau Sans"
       ]
     },
-    "additionalMixed60CoveragePending": true,
+    "additionalMixed60CoveragePending": false,
     "lockedNixBeforeInterFontEnvironment": {
       "out": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1",
       "results": {
@@ -338,6 +338,41 @@
           "sha256": "5312876c4a6175dee19e9b0f100fac07eb4b6d9f1aed976ce583a50820eca723"
         }
       }
+    },
+    "mixed60": {
+      "passed": true,
+      "script": {
+        "path": "scripts/check-source-origin-native-mixed.mjs",
+        "bytes": 22547,
+        "sha256": "62af13aac0fdc9fec721d9ad82783f56bba39dad0f11980a24200365b0bad600"
+      },
+      "independentLocalReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/portable-mixed60/receipt.json",
+        "bytes": 6000,
+        "sha256": "5999ba313e459d86ee20b5c89f77bfd2f52138b9f2ddb80fb3de488c5b400eb2"
+      },
+      "lockedNixOut": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1",
+      "lockedNixResult": {
+        "path": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+        "bytes": 261099,
+        "sha256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
+      },
+      "checks": 19,
+      "placements": 60,
+      "legacyModes": 20,
+      "actualOriginHOCWorlds": 40,
+      "quality": "Every card has meaningful contrast, variance, spatial ink and edge activity; all buffers are adequate on both axes after two ancestor zoom/pan steps without hover or Play. Every retained bitmap equals fresh same-state actual renderer/HOC pixels.",
+      "resources": {
+        "peakActualWebGLContexts": 1,
+        "peakActualWebGLPixels": 256000,
+        "maxMovingPreview": 2,
+        "maxMovingCanvas": 1,
+        "finalClients": 0,
+        "finalActualWebGLContexts": 0,
+        "finalPendingRAF": 0
+      },
+      "defaultContextBoundary": "Mixed fresh readbacks explicitly use willReadFrequently2D; the retained88 checks cover production-default2D context options.",
+      "actualFramerPreviewVerified": false
     }
   },
   "portReview": {
