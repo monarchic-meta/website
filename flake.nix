@@ -299,7 +299,7 @@
             pnpm run check:source-origin-native-responsive
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
-              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf pkgs.inter ];
             };
           });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''

@@ -284,6 +284,37 @@
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
     "lockedNix": {
+      "out": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1",
+      "results": {
+        "strict": {
+          "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+          "bytes": 619,
+          "sha256": "3b26569c9a0672ce677d75e278435a348356c373a5fcb6cb544e1672796ad6ad"
+        },
+        "browser": {
+          "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+          "bytes": 2662,
+          "sha256": "4422dc05f1f127c1e662228250399fab6cae847cd74c264a6bbb7fcfe5b1982c"
+        },
+        "motion": {
+          "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+          "bytes": 1836,
+          "sha256": "d5c0deda3330eab01205e35bc5c371861b56e015065243e7f0a8b84e18ab8630"
+        },
+        "responsive": {
+          "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "bytes": 14731,
+          "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
+        }
+      },
+      "fontEnvironment": "DejaVu Sans, Liberation and the actual Inter4.1 native fallback. This corrects an accidental missing-font serif fallback in the local fixture only; source and native authoring dictionary are unchanged.",
+      "visualReview": [
+        "Desktop1440 and Phone390 screenshots inspected after adding Inter",
+        "Native editable Inter is an explicit substitute for original STK Bureau Sans"
+      ]
+    },
+    "additionalMixed60CoveragePending": true,
+    "lockedNixBeforeInterFontEnvironment": {
       "out": "/nix/store/s05gsjv754skaxnm4ffb70pimm2839c7-monarchic-website-source-origin-native-0.0.1",
       "results": {
         "strict": {
@@ -307,8 +338,7 @@
           "sha256": "5312876c4a6175dee19e9b0f100fac07eb4b6d9f1aed976ce583a50820eca723"
         }
       }
-    },
-    "additionalMixed60CoveragePending": true
+    }
   },
   "portReview": {
     "deltaReport": {
