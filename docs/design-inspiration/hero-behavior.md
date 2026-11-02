@@ -316,15 +316,25 @@ Source-led changes remain credited in **Source inspiration**.
 [Selected gallery](https://minimal.gallery/origin/) ·
 [Primary site](https://www.originbrand.io/)
 
-- **Earlier observation:** pale light forms and information-card size changed
-  across captures. Their input coupling was not isolated. The linked ambient
-  dots-field video was not reviewed.
-- **Earlier study gap:** the small approximate light loop sits inside a static
-  wordmark/card composition. Card resizing, source input behavior and subsequent
-  progression are absent.
-- **Next inspection:** measure the card during untouched wait, hover/leave and
-  scrolling separately. Follow the identity into programs; establish whether the
-  ambient field belongs to that opening story and inspect Phone.
+- **Current original-site observation:** the source-sized opening and Menu/Cedar
+  reel lead into a 250vh expanding film, six selectable Programs, four
+  partnership cards and the footer. Retained Desktop/Phone captures and public
+  code isolate the field models, program selection, scroll reveal, pointer heat
+  and docked mark/logotype. The original Operational program crashes; the local
+  implementation deliberately repairs that branch.
+- **Local implementation:** the committed 22-override controller contains the
+  opening and full following journey. Three strict groups and 199
+  browser/resource checks pass in locked Nix: 88 retained opening checks, 37
+  journey checks, 26 provider-mock checks, 19 mixed-placement checks and 29
+  aggregate field/heat checks. The mixed suite covers 60 placements; the
+  aggregate fixture covers three native-like worlds and cleanup.
+- **Remaining gates:** both current native assemblies, actual moving Framer
+  Preview and editor reload are pending. The genuine Vimeo ready/play/pause
+  handshake was blocked by the provider's security challenge; provider mocks
+  prove lifecycle handling only. Local Canvas-target guards do not establish
+  override execution in the editor Canvas, so generated native posters remain
+  part of the authoring plan. Inter and the independent scalar-field material
+  remain explicit source differences. See the [Origin provenance](../design-studies/code-components/assets/source-origin-journey-provenance.json).
 
 ## HERO-017 — Bleibtgleich 2026
 

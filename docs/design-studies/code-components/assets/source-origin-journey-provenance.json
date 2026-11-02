@@ -31,7 +31,9 @@
       390
     ],
     "mountedOpacityRepresentations": 13,
-    "assembly": "Lift retained Controller from HeroStage to actual responsive root; insert following stage immediately after HeroStage, ahead of retained review/credit utilities. Keep source IDs/credits. No duplicate nested world."
+    "assembly": "Lift retained Controller from HeroStage to actual responsive root; insert following stage immediately after HeroStage, ahead of retained review/credit utilities. Keep source IDs/credits. No duplicate nested world.",
+    "status": "Prepared semantic recipe only. Opening32 and following155 native families remain unsaved; listed widths are intended responsive roots, not proof of current native assembly.",
+    "openingPrimitiveFamilies": 32
   },
   "behavior": {
     "programs": "Six independently authored scalar-field models, source labels/selection, outgoing reverse260ms, in-flow Phone picker and repaired source Operational branch.",
@@ -43,8 +45,9 @@
     "webGLContextsAdded": 0,
     "ownedWorld": "One clock and one combined surface budget per world, one Canvas/two Preview admissions; conservative actual legacy-canvas veto.",
     "pixels": "1MP Canvas/2MP Preview aggregate fields+heat and bounded raster buffers per admitted world; actual transformed screen bounds and DPR2 with logical CSS controls.",
-    "canvas": "Off by default; Canvas-only opt-in12fps; export/thumbnail frozen.",
-    "provider": "One real iframe including initialization/retirement across Preview worlds, global Menu barrier, synchronous detach before bounded pause/destroy settlement. No fake HTMLVideoElement lease. Source16:9 cover via existing ResizeObserver; poster retained until positive documented play acknowledgement."
+    "canvas": "Local RenderTarget guards keep motion off by default, allow Canvas-only opt-in12fps and freeze export/thumbnail. Official Framer code overrides execute in Preview/published sites; those fixture branches do not prove actual editor-Canvas execution. Generated native posters are required for editor stills.",
+    "provider": "One real iframe including initialization/retirement across Preview worlds, global Menu barrier, synchronous detach before bounded pause/destroy settlement. No fake HTMLVideoElement lease. Source16:9 cover via existing ResizeObserver; poster retained until positive documented play acknowledgement.",
+    "overrideExecutionDocumentation": "https://www.framer.com/developers/overrides-introduction"
   },
   "tests": {
     "lockedNix": {
@@ -99,7 +102,16 @@
       "newJourneyBrowser": 37,
       "newProviderLifecycle": 26,
       "mixedChecks": 19,
-      "mixedPlacements": 60
+      "mixedPlacements": 60,
+      "browserResourceChecks": 199,
+      "browserResourceBreakdown": {
+        "retainedOpening": 88,
+        "followingJourney": 37,
+        "providerMockLifecycle": 26,
+        "mixed60Placements": 19,
+        "threeWorldProgramsHeat": 29
+      },
+      "countingBoundary": "199 browser/resource assertions plus3 strict groups, all on final5089. External owner-upgrade and server-render receipts are separate; real external Vimeo playback and Framer paint are not included."
     },
     "baselinePortability": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/baseline-port-prepared/report.json",
@@ -195,12 +207,18 @@
     "nativeFollowingSaved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "additionalThreeWorldProgramsHeatFixturePending": false
+    "additionalThreeWorldProgramsHeatFixturePending": false,
+    "strictGroups": 3,
+    "browserResourceChecks": 199,
+    "nativeOpeningSaved": false,
+    "sourceRegistrationScope": "Final5089 source with22 public overrides; source/native transfer is separate from the historical page and local checks.",
+    "sourceFidelityApproved": false
   },
   "knownDifferences": [
     "Scalar/procedural material and seeded model transfer are independent fits, not original shader code.",
     "Inter is the native authored font substitute until genuine source-family native binding is available.",
     "Source Operational branch crashes; this recreation deliberately presents a working matching model.",
-    "Actual native/code DOM forwarding, external film playback, moving Framer Preview and editor reload remain separate gates."
+    "Actual native/code DOM forwarding, external film playback, moving Framer Preview and editor reload remain separate gates.",
+    "The native opening32 and following155 families, actual native/code forwarding, generated editor posters and responsive saved bounds still need their own authoring/readback gates. Local success does not establish complete source fidelity."
   ]
 }

@@ -472,10 +472,22 @@ compact luminous brain/logo window. Alternate where the visual weight sits;
 the original composition can stay restrained while still having an unusual
 silhouette. Essential identity copy needs appropriate contrast when prototyped.
 
-**Evidence:** gallery and live opening inspected. Captures show changing pale
-forms in the black tile and a changing card size. Its media/rendering method and
-input response were not audited; the live page also links an ambient dots-field
-video, which was not separately reviewed.
+**Current source evidence:** the opening, Menu/Cedar reel and complete following
+home journey have been inspected in isolated public browser contexts. The source
+continues through a 250vh expanding film, six selectable Programs, four
+partnership cards and the footer. Captures and retained public code distinguish
+the scalar-field models, scroll reveal, pointer heat and docked mark/logotype.
+The source's Operational program crashes; the independent recreation repairs
+that branch and records the difference.
+
+**Recreation status:** the committed 22-override controller passes three strict
+groups and 199 browser/resource checks in locked Nix. These cover the full local
+journey, responsive input, provider lifecycle mocks and resource limits. Native
+opening and following-content assembly are still pending, as are actual moving
+Framer Preview and editor-reload checks. The genuine Vimeo handshake was blocked
+by the provider's security challenge; mock lifecycle checks do not prove external
+playback. Inter typography and the independently authored procedural material
+remain declared fits. See the [current Origin provenance](../design-studies/code-components/assets/source-origin-journey-provenance.json).
 
 ### HERO-017 — Bleibtgleich 2026
 
