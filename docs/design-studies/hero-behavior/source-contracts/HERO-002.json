@@ -183,9 +183,9 @@
     },
     {
       "from": 31,
-      "to": 36.708333333333336,
+      "to": 33,
       "state": "paragraph-layout",
-      "boundaryPrecision": "End follows inspected high-resolution source frame881 at24fps."
+      "boundaryPrecision": "Approximate1s observation bounds; continuous/subsecond cuts not audited."
     },
     {
       "from": 33,
@@ -1853,9 +1853,11 @@
   "currentOriginalPhotographicCorrection": {
     "status": "SOURCE_ASSETS_AND_MCP_MODEL_SAVED_ACTUAL_FRAMER_PLAYBACK_AND_RELOAD_PENDING",
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0-SourceAjedrezSequence.tsx",
       "bytes": 57829,
-      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
+      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "historicalSnapshot": true
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photo-provenance.json",

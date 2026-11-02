@@ -96,8 +96,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
-        "bytes": 79266,
-        "sha256": "8b2a5c32b1f518320dc2b5f6476ce3df23a9b1ccb9e97e482c84eb99ece26f41"
+        "bytes": 79586,
+        "sha256": "abd3fb63f87e0f7a6f84f35fff18c2800c9617e32346f3943b4ac123353f7907"
       },
       "page": {
         "id": "ANWBjWXdj",
@@ -760,7 +760,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "602376e261f4d7cfbdfe9e8f7d1c8d82833ed3dcd09338aa54bac94a324a1771"
+    "sha256": "9e91a0911615c83e13ba9f68c20016d503c28787ce9dcf3cb5e2d35b3aa88942"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -900,9 +900,11 @@
   },
   "currentAuthoringSources": [
     {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0-SourceAjedrezSequence.tsx",
       "bytes": 57829,
-      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
+      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0",
+      "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "historicalSnapshot": true
     },
     {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
