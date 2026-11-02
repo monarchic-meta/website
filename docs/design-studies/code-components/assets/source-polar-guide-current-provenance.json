@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "LOCAL_COMPATIBILITY6_STRICT_36_BROWSER_LOCKED_NIX_PASS_SAME_FILE_FRAMER_UPDATE_PENDING",
+  "status": "LOCAL_OPAQUE_TOOLTIP_6_STRICT_40_BROWSER_LOCKED_NIX_PASS_FRAMER_UPDATE_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -33,8 +33,8 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePolarGuideControls.tsx",
-    "sha256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
-    "bytes": 90871
+    "bytes": 90915,
+    "sha256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285"
   },
   "tests": {
     "strict": {
@@ -46,22 +46,22 @@
     },
     "browser": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-browser.mjs",
-      "sha256": "b0a571af784be8acb85c0b37845bb2932ee470973f29f21f976c1a1d090b6e18",
-      "bytes": 19400,
-      "groups": 36,
+      "bytes": 21020,
+      "sha256": "8063e9787b41c3b268354927b63613b4f2bac6a8a54a7046876d8c035944ba00",
+      "groups": 40,
       "passed": true,
       "receipt": {
-        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
-        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
-        "bytes": 3102
+        "path": "/nix/store/j1wxg9vy1vm0nrv3kwyilagjs2g7pk9x-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "bytes": 3351,
+        "sha256": "fc752ecf55e258e9a2cf1d7922412e2a8ce68d5d1f340b7fd78a483869a64aa8"
       }
     },
     "lockedNix": {
       "status": "PASS",
-      "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1",
-      "sourceSHA256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+      "path": "/nix/store/j1wxg9vy1vm0nrv3kwyilagjs2g7pk9x-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
       "strictGroups": 6,
-      "browserChecks": 36,
+      "browserChecks": 40,
       "fonts": "Locked DejaVu and Liberation Fontconfig",
       "browserReceipt": {
         "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
@@ -370,6 +370,74 @@
     ],
     "nativeGuideInstalled": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "sourceSHA256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+    "pendingTooltipSourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285"
+  },
+  "historicalBeforeOpaqueTooltip": {
+    "implementation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-fix/bed6-parent.tsx",
+      "sha256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+      "bytes": 90871
+    },
+    "browser": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-fix/browser-before.mjs",
+      "sha256": "b0a571af784be8acb85c0b37845bb2932ee470973f29f21f976c1a1d090b6e18",
+      "bytes": 19400,
+      "groups": 36,
+      "passed": true,
+      "receipt": {
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
+        "bytes": 3102
+      }
+    },
+    "lockedNix": {
+      "status": "PASS",
+      "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+      "strictGroups": 6,
+      "browserChecks": 36,
+      "fonts": "Locked DejaVu and Liberation Fontconfig",
+      "browserReceipt": {
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
+        "bytes": 3102
+      },
+      "parent": {
+        "status": "PASS",
+        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
+        "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+        "strictGroups": 6,
+        "browserChecks": 36,
+        "fonts": "Locked DejaVu and Liberation Fontconfig",
+        "browserReceipt": {
+          "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+          "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+          "bytes": 3102
+        },
+        "historical": {
+          "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+          "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+          "strictGroups": 6,
+          "browserChecks": 36,
+          "passed": true,
+          "staticScrollerGuardCovered": false
+        }
+      }
+    }
+  },
+  "opaqueNativeTooltipFix": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-fix/final-source-receipt.json",
+      "bytes": 2438,
+      "sha256": "050fe92a2a1fda86828d2be90c168a600d21481b1a887cef76add2adfa44a9bb"
+    },
+    "onlyProductionDelta": "One reveal CSS selector uses preserved semantic native name instead of semantic-looking IDs. Actual Framer IDs are opaque.",
+    "allExisting36ChecksByteExact": true,
+    "newOpaqueNativeIdChecks": 4,
+    "oldSourceReproducesHoverFailure": true,
+    "public70RowsAnd5_3ControlsUnchanged": true,
+    "sourceUpdatePending": true
   }
 }
