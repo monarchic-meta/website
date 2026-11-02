@@ -72,7 +72,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CURRENT_PAGE_CREATED_RETAINED_HEADER_CORRECTION_PENDING",
+    "status": "CURRENT_PAGE_AND_RETAINED_HEADER_MODEL_CONFIRMED",
     "page": {
       "id": "A2ZhTsALK",
       "desktop": "KlPcKpJsq",
@@ -94,8 +94,12 @@
     },
     "behavior": "Current blue opening with a code-generated terminal,71 native part families,18 genuine vectors and customer handoff on1440/992/390 roots.",
     "next": [
-      "Close fixed header parents/positions and native shadow readback after fresh preimage diagnosis.",
-      "Verify actual Framer terminal motion and reload."
-    ]
+      "Verify actual Framer static paint, terminal motion and reload."
+    ],
+    "headerCorrection": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/313-HERO-012-exact-color-rebased-headers/output.json",
+      "bytes": 497242,
+      "sha256": "ca3eaf1d50d1c3068ae468f47ef7f4be24471ddd013f13fef247e5dc5bb54fe5"
+    }
   }
 }

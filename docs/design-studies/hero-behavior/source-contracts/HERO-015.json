@@ -287,20 +287,23 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "LOCAL_GENUINE_MARK_SOURCE_FROZEN_TRANSFER_PENDING",
+    "status": "KEYED_SOURCE_AND_SAVED_INK_MODEL_CONFIRMED",
     "implementationReceipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/final-source-receipt.json",
-      "bytes": 4562,
-      "sha256": "17d368088c1196ce838b2cb1c8cb49982aa926e5bba90908a0610ffce641bffe"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/implementation/final-source-receipt-v2.json",
+      "bytes": 3342,
+      "sha256": "668ebb58ae1206df6ce8507e0c5278e3d1362c2dbf239fcf779cae7d5643a050"
     },
     "behavior": "Both genuine GLB primitives are retained, with white translucent body, black outline, source camera footprint, pressed-only spring and scroll yaw. The former no-op pointer path is replaced.",
     "intentionalDifferences": [
       "Canvas2D depth/compositing and antialiasing remain an explicit fit."
     ],
     "next": [
-      "Transfer exact existing eight-control source.",
-      "Change only the two retained saved ink values to source black.",
       "Verify actual Framer moving paint and reload."
-    ]
+    ],
+    "modelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/source-native-v2-window-320/output.json",
+      "bytes": 647536,
+      "sha256": "ef38316833ef4c9b1807cd1ff88977a2dd3d9b287aa881cc39d4c34819296294"
+    }
   }
 }

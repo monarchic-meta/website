@@ -55,7 +55,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "LOCAL_FULL_JOURNEY_SOURCE_FROZEN_TRANSFER_PENDING",
+    "status": "SOURCE_MODEL_CONFIRMED_KNOWN_ISOLATED_DIAGNOSTICS_PAINT_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/final-source-receipt.json",
       "bytes": 21257,
@@ -66,8 +66,21 @@
       "The procedural material, camera, terrain, text and responsive fits remain bounded approximations."
     ],
     "next": [
-      "Transfer the exact13-control source while preserving retained placements.",
       "Compare moving material and actual Framer Preview/reload."
-    ]
+    ],
+    "sourceReadbackReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
+      "bytes": 247139,
+      "sha256": "ed2024fa3f3497f919766971febe410094337a02d075a360799b9a020343668c"
+    },
+    "knownDiagnostics": {
+      "code": 2307,
+      "count": 2,
+      "modules": [
+        "./SourceHeroJourneyData0.ts",
+        "./SourceHeroJourneyData1.ts"
+      ],
+      "scope": "Exactly the historical isolated-module helper diagnostics. Imports/helper bytes match the earlier painted version. The write is not described as compile-clean."
+    }
   }
 }

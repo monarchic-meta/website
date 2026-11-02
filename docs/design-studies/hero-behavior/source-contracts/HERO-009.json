@@ -44,7 +44,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CURRENT_PAGE_MODEL_CONFIRMED_NEW_HOVER_SOURCE_WRITE_PENDING",
+    "status": "CURRENT_PAGE_AND_CORRECTED_SOURCE_MODEL_CONFIRMED_STATIC_PAINT_VERIFIED",
     "page": {
       "id": "ebD8S_8Xo",
       "desktop": "u5sNosRy9",
@@ -70,8 +70,27 @@
       "Native Inter/Geist layout and some following prose have explicit fits."
     ],
     "next": [
-      "Transfer the frozen Framer onHoverStart/onHoverEnd bridge.",
       "Verify actual Framer moving paint, native hover and reload."
-    ]
+    ],
+    "sourceReadbackReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
+      "bytes": 247139,
+      "sha256": "ed2024fa3f3497f919766971febe410094337a02d075a360799b9a020343668c"
+    },
+    "originalWriteAcknowledgment": "315 transport timeout; original acknowledgment/diagnostics unavailable.316/317 confirm exact1953 source/schemas and complete preservation; no replay.",
+    "staticPaint": {
+      "desktop": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/319-HERO-009-static-page-context/desktop-native-stage.jpg",
+        "bytes": 39942,
+        "sha256": "6357fc54a083c01564de288420430fbe0b20467cec9978df18749602cad1fd1f"
+      },
+      "phone": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/319-HERO-009-static-page-context/phone-native-stage.jpg",
+        "bytes": 18176,
+        "sha256": "4e7e701606f8f2a3471bb642d68d6efce9e6ced1604c42099e32e1e56e0ecae5"
+      },
+      "actualFramerStaticPaintVerified": true,
+      "scope": "Actual native JPEG stills1440×900 and390×850; not moving Preview or editor reload."
+    }
   }
 }

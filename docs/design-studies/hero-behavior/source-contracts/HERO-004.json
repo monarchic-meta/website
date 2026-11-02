@@ -148,7 +148,7 @@
     "poster": "Individual genuine first-frame AVIF posters, not whole-interface screenshots."
   },
   "nativeImplementation": {
-    "path": "../../code-components/SourcePortfolioFilmStudy.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/826aa467c8008045f64a579d7d8bb54bf959866bc654e74d61928f469b2354d2-SourcePortfolioFilmStudy.tsx",
     "sha256": "826aa467c8008045f64a579d7d8bb54bf959866bc654e74d61928f469b2354d2",
     "bytes": 84274,
     "change": "Only native utility-panel scrollbar clearance and the explicit withFilmPage root scrollbar policy are added. All renderer, decoder, timing, media selection, controls and existing exports are unchanged.",
@@ -188,7 +188,9 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO004-framer-final-layout-reload-proof.json",
         "sha256": "3662e24a5afcae700c9434bf6efbb0fd36d1e9a15f97b01cc475e755ee154bf1"
       }
-    }
+    },
+    "repositoryPath": "docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "historicalSnapshot": true
   },
   "currentOriginalSourceUpdate": {
     "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
@@ -196,7 +198,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "LOCAL_CORRECTIONS_FROZEN_NATIVE_BINDING_PENDING",
+    "status": "FINAL_LOCKED_CHECK_PASS_SOURCE_NATIVE_TRANSFER_PENDING",
     "carousel": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-carousel-implementation/grayscale-receipt.json",
       "bytes": 4981,
@@ -209,8 +211,30 @@
     },
     "behavior": "Committed named650ms hold enters a source-sized carousel; pressed drag/release/wheel/sidecard navigation and grayscale neighbors replace the old small single-plane fit. Six Escape material families now have independent code reconstructions.",
     "next": [
-      "Bind the six carousel overrides and one source-effects override to retained native targets.",
-      "Check genuine moving film, curve/inertia differences and actual Framer Preview/reload."
-    ]
+      "Transfer corrected source and bind the six carousel overrides plus source-effects override.",
+      "Compare genuine moving film, fitted curve/inertia and actual Framer Preview/reload."
+    ],
+    "staleCacheObservation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/actual-old-to-new-stale-cache-observation.json",
+      "bytes": 4058,
+      "sha256": "c7871d45f31066626361ed6b32f09b2dd4c469842d75ee805a8643102bb3181c"
+    },
+    "hmrLocal": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/hmr-local-result.json",
+      "bytes": 5576,
+      "sha256": "c1b63139b0ae4976d0dc4e0b6168dcb0f824a734df273ba97299a426744a5ff0"
+    },
+    "finalImplementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/final-source-receipt.json",
+      "bytes": 5494,
+      "sha256": "c414467de8c4c653cbee87ab198d1a03c70bea3394f99f96585ee14c68b609a9"
+    },
+    "lockedChecks": {
+      "commands": 6,
+      "carouselChecks": 22,
+      "hmrCases": 3,
+      "retainedCommands": 4,
+      "scope": "Final frozen8d5e main and140c helper; actual React renderer/cache handoff with two independently failing negative controls."
+    }
   }
 }

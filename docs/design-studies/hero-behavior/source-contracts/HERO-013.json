@@ -815,9 +815,11 @@
       "sha256": "55a1295a126cee9c08ce76300185bf213949dbef4f8bd9e4a28c282bfd8ccfe5"
     },
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f-SourceFormatDetails.tsx",
       "bytes": 96336,
-      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f"
+      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "historicalSnapshot": true
     },
     "retainedSlotIDs": {
       "desktop": "wLNg24MqB",
@@ -889,9 +891,11 @@
       "existingSlot01AndOutsideFieldsPreserved": true,
       "nativeDefinitionID": "d9JtUP1Vu",
       "source": {
-        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f-SourceFormatDetails.tsx",
         "bytes": 96336,
-        "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f"
+        "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+        "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+        "historicalSnapshot": true
       },
       "policy": "Root approved reversible unpublished authoring after seven retained critical Slot01 observations. Actual final decoration/full-pool/reload-resource flags remained false throughout; no success was inferred from the model append.",
       "limits": [
