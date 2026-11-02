@@ -553,8 +553,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
-        "bytes": 41012,
-        "sha256": "9ecc08e5ae6178dba27e69e0cb6e883e596a362f9ea043a63a33cb36f4fbad49"
+        "bytes": 43219,
+        "sha256": "3f09d7f640ff869b864be2c6dc7f95f62a0439e40adbf7b873c951e9133aa12b"
       },
       "page": {
         "id": "nKpA0uJHr",
@@ -588,7 +588,41 @@
       ],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "GLYPH_AND_TRAVELLING_PIP_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+        "status": "GLYPH_PIP_AND_ARCHIVE_NATIVE_AUTHORED_READBACK_CONFIRMED_PAINT_PREVIEW_RELOAD_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      },
+      "currentOriginalNativeModel": {
+        "pageID": "nKpA0uJHr",
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nKpA0uJHr",
+        "roots": {
+          "Desktop": "XxwFuFP4g",
+          "Compact Desktop": "XEEAnleDn",
+          "Phone": "jXxkHA4mH"
+        },
+        "sourceSHA256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
+        "publicOverrides": 124,
+        "native": {
+          "newGlyphFamilies": 86,
+          "newEndpointFamilies": 1,
+          "newArchiveFrameFamilies": 1,
+          "newTotalFamilies": 88,
+          "newNativeCopies": 264,
+          "realObysNativeBlockRunFontTuples": 774,
+          "fontNameWrites": 0,
+          "oldLineFamiliesMoved": 10,
+          "oldActualLineCopiesMoved": 30,
+          "oldStylesRestored": true,
+          "oldNodesDeleted": 0,
+          "codeComponentsAdded": 0
+        },
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-actual-authoring-receipt.json",
+          "bytes": 5959,
+          "sha256": "818930801c6287ea4d2bc0227fd325cc96ed66439f419e4bd5e2a81d39774157"
+        },
+        "sourceDiagnosticsClean": true,
+        "actualNewStaticPaintVerified": false,
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       }
@@ -815,7 +849,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "537bdfc8bef0390344f9079e1a0589fe1dfe43f5991157cf30192d1e98619268"
+    "sha256": "20932f5287820e507bff3d15996f28f8153523391babdcd19b7c2a714a95859b"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

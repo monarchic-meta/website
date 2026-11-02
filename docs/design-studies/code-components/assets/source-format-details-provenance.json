@@ -1745,7 +1745,7 @@
     }
   },
   "gaugePosterGlyphMagnet": {
-    "status": "LOCAL_IMPLEMENTATION_FROZEN_NATIVE_AUTHORING_AND_ACTUAL_PAINT_PENDING",
+    "status": "SOURCE_NATIVE_GLYPHS_AND_ARCHIVE_AUTHORED_READBACK_CONFIRMED_PAINT_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/SourceFormatDetails-2fbf7918.tsx",
       "sha256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
@@ -1934,6 +1934,47 @@
         "sha256": "d50728610eb919cb10e87bfce3bd266dd7095a046992277f3e5960fa283c7a32",
         "bytes": 3030
       }
+    },
+    "nativeAuthoring": {
+      "pageID": "nKpA0uJHr",
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nKpA0uJHr",
+      "roots": {
+        "Desktop": "XxwFuFP4g",
+        "Compact Desktop": "XEEAnleDn",
+        "Phone": "jXxkHA4mH"
+      },
+      "sourceSHA256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
+      "publicOverrides": 124,
+      "native": {
+        "newGlyphFamilies": 86,
+        "newEndpointFamilies": 1,
+        "newArchiveFrameFamilies": 1,
+        "newTotalFamilies": 88,
+        "newNativeCopies": 264,
+        "realObysNativeBlockRunFontTuples": 774,
+        "fontNameWrites": 0,
+        "oldLineFamiliesMoved": 10,
+        "oldActualLineCopiesMoved": 30,
+        "oldStylesRestored": true,
+        "oldNodesDeleted": 0,
+        "codeComponentsAdded": 0
+      },
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-actual-authoring-receipt.json",
+        "bytes": 5959,
+        "sha256": "818930801c6287ea4d2bc0227fd325cc96ed66439f419e4bd5e2a81d39774157"
+      },
+      "sourceDiagnosticsClean": true,
+      "actualNewStaticPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false,
+      "limits": [
+        "392/400/406 native paints demonstrably retain old mixedcase overlap despite false visibility/zero opacity/transparent ink getters;415 restores originalstyles and archives oldlines offcanvas under clipped Frame.",
+        "No new actual paint after415 completed:417 never started because416 lost transport;419/421 confirm exact authoring09eb only.",
+        "Real installed Obys family+774 tuples are positive; distinctive final glyph paint still unverified after archive.",
+        "Phone fullstory remains historical adaptation; current original onlyclock/logo/sorry splash still pending separate plan.",
+        "Actual scroll/pip magnet/reverse endpoint, compiled Preview and editorreload remain unverified."
+      ]
     }
   }
 }

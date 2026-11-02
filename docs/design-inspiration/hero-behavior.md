@@ -271,6 +271,12 @@ Source-led changes remain credited in **Source inspiration**.
   scrolling and exact timing/coupling of each animated element. The new traversal
   improves extent coverage; it does not complete this reference's interaction
   audit.
+- **Current authored update:** the124-override source,86 editable native glyph
+  families, endpoint and comparison archive are read back through MCP421.
+  Final archive paint and actual Preview/reload remain unverified after a
+  stalled capture. Current390×844 source inspection shows a clock/logo splash
+  saying the experience is designed for desktop; the older full-story Phone
+  recreation is a separate adaptation, and the actual splash is not built yet.
 
 ## HERO-014 — Unbelievably Crap
 

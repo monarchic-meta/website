@@ -910,7 +910,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "GLYPH_AND_TRAVELLING_PIP_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+    "status": "GLYPH_PIP_AND_ARCHIVE_NATIVE_AUTHORED_READBACK_CONFIRMED_PAINT_PREVIEW_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-source-receipt.json",
       "bytes": 9181,
@@ -918,9 +918,50 @@
     },
     "behavior": "Eighty-six native uppercase glyphs respond to the travelling circle with source-grounded attraction, spring and tangent rotation; one endpoint family preserves the source resting circle. All earlier work stays retained.",
     "next": [
-      "Update the same existing source file with its124 genuine overrides.",
-      "Duplicate native source-font text into the87 new editable families, preserving the ten old comparison lines.",
-      "Verify actual Framer font forwarding, motion, responsive host replacement and editor reload."
+      "Verify fresh actual native paint after the bounded archive move, then pip/glyph response and reverse endpoint in Preview.",
+      "Recreate the current original mobile clock/logo splash; preserve the older full-story Phone adaptation separately.",
+      "Confirm the Framer editor state after a reload before reporting it as saved."
+    ],
+    "nativeModel": {
+      "pageID": "nKpA0uJHr",
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=nKpA0uJHr",
+      "roots": {
+        "Desktop": "XxwFuFP4g",
+        "Compact Desktop": "XEEAnleDn",
+        "Phone": "jXxkHA4mH"
+      },
+      "sourceSHA256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
+      "publicOverrides": 124,
+      "native": {
+        "newGlyphFamilies": 86,
+        "newEndpointFamilies": 1,
+        "newArchiveFrameFamilies": 1,
+        "newTotalFamilies": 88,
+        "newNativeCopies": 264,
+        "realObysNativeBlockRunFontTuples": 774,
+        "fontNameWrites": 0,
+        "oldLineFamiliesMoved": 10,
+        "oldActualLineCopiesMoved": 30,
+        "oldStylesRestored": true,
+        "oldNodesDeleted": 0,
+        "codeComponentsAdded": 0
+      },
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-actual-authoring-receipt.json",
+        "bytes": 5959,
+        "sha256": "818930801c6287ea4d2bc0227fd325cc96ed66439f419e4bd5e2a81d39774157"
+      },
+      "sourceDiagnosticsClean": true,
+      "actualNewStaticPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "nativeModelLimits": [
+      "392/400/406 native paints demonstrably retain old mixedcase overlap despite false visibility/zero opacity/transparent ink getters;415 restores originalstyles and archives oldlines offcanvas under clipped Frame.",
+      "No new actual paint after415 completed:417 never started because416 lost transport;419/421 confirm exact authoring09eb only.",
+      "Real installed Obys family+774 tuples are positive; distinctive final glyph paint still unverified after archive.",
+      "Phone fullstory remains historical adaptation; current original onlyclock/logo/sorry splash still pending separate plan.",
+      "Actual scroll/pip magnet/reverse endpoint, compiled Preview and editorreload remain unverified."
     ]
   }
 }
