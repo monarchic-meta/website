@@ -520,7 +520,11 @@ function ajedrezPhotographicMetadata(key: string): boolean { return /-(?:credit|
 function ajedrezPhotographicCaption(key: string, pose: AjedrezPhotoPose): boolean {
     return pose.name.startsWith('hand-') ? /film-phase-31-photo-hand-(?:catalog|line)$/.test(key) : pose.name === 'earth' && /film-phase-35-caption$/.test(key)
 }
-type AjedrezStillImageRecord = { image: HTMLImageElement; state: 'queued' | 'loading' | 'ready' | 'failed'; listeners: Set<() => void> }
+type AjedrezStillImageRecord = { image: HTMLImageElement; raster?: HTMLCanvasElement; state: 'queued' | 'loading' | 'ready' | 'failed'; listeners: Set<() => void> }
+function ajedrezPhotographicRasterReady(record: AjedrezStillImageRecord | undefined): boolean {
+    const raster = record?.raster, image = record?.image
+    return !!raster && raster.width > 1 && raster.height > 1 && (!image?.naturalWidth || raster.width === image.naturalWidth && raster.height === image.naturalHeight)
+}
 type AjedrezStillCache = {
     peek: (url: string) => AjedrezStillImageRecord | undefined
     watch: (url: string, listener: () => void) => { record: AjedrezStillImageRecord; release: () => void }
@@ -559,41 +563,66 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
         if (backend.generation >= AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation) return
         backend.implementation = AJEDREZ_STILL_CACHE_IMPLEMENTATION; backend.generation = AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation
         const records = backend.records
+        const clearRaster = (record: AjedrezStillImageRecord) => { if (record.raster) { record.raster.width = 1; record.raster.height = 1; record.raster = undefined } }
+        const rasterValid = (record: AjedrezStillImageRecord) => ajedrezPhotographicRasterReady(record)
+        const discard = (url: string, record: AjedrezStillImageRecord) => { records.delete(url); clearRaster(record); record.image.removeAttribute('src') }
+        const resident = () => [...records.values()].filter(record => rasterValid(record) || record.image.naturalWidth > 0).length
+        const normalize = (record: AjedrezStillImageRecord) => {
+            const width = record.image.naturalWidth, height = record.image.naturalHeight
+            if (!width || !height || width * height > 2000000) throw new Error('Photographic atlas exceeds its intrinsic pixel budget')
+            clearRaster(record)
+            const raster = document.createElement('canvas'); raster.width = width; raster.height = height; raster.dataset.sourceAjedrezAtlasRaster = 'true'
+            try {
+                const context = raster.getContext('2d'); if (!context) throw new Error('Photographic raster context unavailable')
+                context.drawImage(record.image, 0, 0, width, height)
+                context.getImageData(0, 0, 1, 1)
+                record.raster = raster
+            } catch (error) { raster.width = 1; raster.height = 1; throw error }
+        }
         const prune = () => {
             for (const [url, record] of records) {
                 if (records.size <= 6) break
                 if (record.listeners.size || record.state === 'queued' || record.state === 'loading') continue
-                records.delete(url); record.image.removeAttribute('src')
+                discard(url, record)
             }
         }
         backend.pump = () => {
             if (backend.loading) return
+            for (const record of records.values()) if (record.state === 'ready' && record.listeners.size && !rasterValid(record)) {
+                record.state = 'queued'; if (!backend.queue.includes(record)) backend.queue.unshift(record)
+            }
             const record = backend.queue.shift()
             if (!record) return
-            if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) records.delete(url) }); backend.pump(); return }
+            if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) discard(url, record) }); backend.pump(); return }
+            const image = record.image, loaded = image.complete && image.naturalWidth > 0
+            if (!loaded && resident() >= 6) {
+                for (const [url, idle] of records) { if (resident() < 6) break; if (!idle.listeners.size && idle.state === 'ready') discard(url, idle) }
+                if (resident() >= 6) { backend.queue.unshift(record); return }
+            }
             backend.loading = record; record.state = 'loading'
-            const image = record.image
             const finish = (state: 'ready' | 'failed') => {
                 if (backend.loading !== record || record.image !== image) return
                 image.onload = null; image.onerror = null
+                if (state === 'ready') { try { normalize(record) } catch { state = 'failed'; clearRaster(record); image.removeAttribute('src') } }
                 record.state = state; backend.loading = null
                 for (const listener of [...record.listeners]) listener()
                 backend.pump()
             }
+            if (loaded) { finish('ready'); return }
             image.onload = () => finish('ready'); image.onerror = () => finish('failed')
             image.src = image.getAttribute('data-source-url') ?? ''
         }
         backend.retry = (url, record) => {
-            if (record.state !== 'failed' && !(record.state === 'ready' && !record.image.naturalWidth)) return
-            record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src')
+            if (record.state !== 'failed' && !(record.state === 'ready' && !rasterValid(record) && !record.image.naturalWidth)) return
+            clearRaster(record); record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src')
             record.image = makeImage(url); record.state = 'queued'; backend.queue.push(record)
         }
         backend.empty = (url, record) => {
             if (record.listeners.size) return
-            if (record.state === 'ready') { prune(); return }
+            if (record.state === 'ready') { prune(); backend.pump(); return }
             const index = backend.queue.indexOf(record); if (index >= 0) backend.queue.splice(index, 1)
             if (backend.loading === record) { record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src'); backend.loading = null }
-            record.state = 'failed'
+            clearRaster(record); record.state = 'failed'
             if (records.get(url) === record) records.delete(url)
             backend.pump()
         }
@@ -629,7 +658,7 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
         }
         cache.peek = url => {
             const record = records.get(url)
-            if (record?.state === 'ready' && !record.image.naturalWidth) record.state = 'failed'
+            if (record?.state === 'ready' && !rasterValid(record)) { if (!record.image.naturalWidth) record.state = 'failed'; else if (record.listeners.size) backend.pump() }
             return record
         }
         cache.watch = (url, listener) => backend.watch(url, listener)
@@ -637,12 +666,13 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
     }
     const create = (cache: AjedrezStillCache, records: Map<string, AjedrezStillImageRecord>, retries: Set<string>) => {
         const backend: AjedrezStillBackend = {
-            records, queue: [], loading: null, implementation: null, generation: -1, pump() {}, retry() {}, empty() {}, release() {},
+            records, queue: [...records.values()].filter(record => record.state === 'queued'), loading: null, implementation: null, generation: -1, pump() {}, retry() {}, empty() {}, release() {},
             watch() { throw new Error('Photographic cache is not initialized') },
         }
         install(cache, backend)
         for (const url of retries) { const record = records.get(url); if (record?.listeners.size) backend.retry(url, record) }
         backend.pump()
+        for (const record of records.values()) if (record.state === 'ready' && record.raster) for (const listener of [...record.listeners]) listener()
     }
     if (cached?.backend) { install(cached, cached.backend); return cached }
     if (cached?.bridge) { cached.bridge.update([...AJEDREZ_PHOTO_ATLAS_URLS, ...AJEDREZ_PHOTO_LEGACY_V2_URLS], create, AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation); cached.bridge.check(); return cached }
@@ -652,6 +682,7 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
         // delivery replaces them. Wait for that serial queue
         // to become idle, then keep the same API, records, images and listeners.
         const legacyPeek = cached.peek.bind(cached), legacyWatch = cached.watch.bind(cached)
+        const deferred = new Map<string, AjedrezStillImageRecord>()
         const urls = new Set([...AJEDREZ_PHOTO_ATLAS_URLS, ...AJEDREZ_PHOTO_LEGACY_V2_URLS].filter((url): url is string => url !== null)), retries = new Set<string>(), images = new Set<HTMLImageElement>()
         let done = false, checking = false, installer = create, installerGeneration = AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation
         const wake = () => queueMicrotask(check)
@@ -670,14 +701,18 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
                     }
                     return
                 }
-                done = true; cleanup(); delete cached.bridge; installer(cached, records, retries)
+                done = true; cleanup(); delete cached.bridge; for (const [url, record] of deferred) if (record.listeners.size) records.set(url, record); installer(cached, records, retries)
             } finally { checking = false }
         }
         cached.bridge = { check, update(next, nextInstaller, generation) { for (const url of next) if (url) urls.add(url); if (generation > installerGeneration) { installer = nextInstaller; installerGeneration = generation } } }
+        cached.peek = url => deferred.get(url) ?? legacyPeek(url)
         cached.watch = (url, listener) => {
             urls.add(url)
             const prior = legacyPeek(url), retry = prior?.state === 'failed' || prior?.state === 'ready' && !prior.image.naturalWidth
-            const lease = legacyWatch(url, listener)
+            const fresh = !prior
+            const record = fresh ? deferred.get(url) ?? { image: makeImage(url), state: 'queued' as const, listeners: new Set<() => void>() } : prior
+            const lease = fresh ? { record, release() { record.listeners.delete(listener); if (!record.listeners.size) deferred.delete(url) } } : legacyWatch(url, listener)
+            if (fresh) { record.listeners.add(listener); deferred.set(url, record) }
             if (retry) retries.add(url)
             check()
             return { record: lease.record, release() { if (cached.backend) cached.backend.release(url, lease.record, listener); else { lease.release(); check() } } }
@@ -734,6 +769,8 @@ function useAjedrezPhotographicComposition(host: HTMLElement | null, state: Film
             for (const part of pose.rects) {
                 const tile = AJEDREZ_PHOTO_TILES[part.tile], url = AJEDREZ_PHOTO_ATLAS_URLS[tile.atlas]
                 desired.add(tile.atlas)
+                const retained = watches.get(tile.atlas)
+                if (url && retained?.record.state === 'ready' && !ajedrezPhotographicRasterReady(retained.record)) ajedrezPhotographicImages().peek(url)
                 if (url && !watches.has(tile.atlas)) {
                     const cache = ajedrezPhotographicImages()
                     if (load || cache.peek(url)?.state === 'ready') watches.set(tile.atlas, cache.watch(url, refresh))
@@ -769,7 +806,7 @@ function useAjedrezPhotographicComposition(host: HTMLElement | null, state: Film
                     return
                 }
                 const needed = [...new Set(pose.rects.map(part => AJEDREZ_PHOTO_TILES[part.tile].atlas))]
-                if (needed.some(index => !AJEDREZ_PHOTO_ATLAS_URLS[index] || watches.get(index)?.record.state !== 'ready')) { hide(); return }
+                if (needed.some(index => !AJEDREZ_PHOTO_ATLAS_URLS[index] || watches.get(index)?.record.state !== 'ready' || !ajedrezPhotographicRasterReady(watches.get(index)?.record))) { hide(); return }
                 if (!surface) {
                     surface = document.createElement('canvas'); surface.setAttribute('aria-hidden', 'true'); surface.setAttribute('data-source-ajedrez-photographic-composition', 'true')
                     Object.assign(surface.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', pointerEvents: 'none', zIndex: '1' })
@@ -787,7 +824,7 @@ function useAjedrezPhotographicComposition(host: HTMLElement | null, state: Film
                     // Native metadata is layered above this material below.
                     context.save(); context.beginPath(); context.rect(0, 0, 480, 852); context.clip()
                     for (const part of pose.rects) {
-                        const tile = AJEDREZ_PHOTO_TILES[part.tile], image = watches.get(tile.atlas)?.record.image
+                        const tile = AJEDREZ_PHOTO_TILES[part.tile], image = watches.get(tile.atlas)?.record.raster
                         if (image) context.drawImage(image, ...tile.rect, ...part.rect)
                     }
                     context.restore(); last = key
@@ -824,7 +861,7 @@ function useAjedrezPhotographicComposition(host: HTMLElement | null, state: Film
         owner.current = { refresh }; refresh()
         return () => {
             disposed = true; owner.current = null; restore(); resize.disconnect(); mutation.disconnect(); transforms.disconnect(); window.removeEventListener('resize', refresh); window.visualViewport?.removeEventListener('resize', refresh)
-            for (const watch of watches.values()) watch.release(); watches.clear(); surface?.remove()
+            for (const watch of [...watches.values()].sort((a, b) => Number(a.record.state === 'ready') - Number(b.record.state === 'ready'))) watch.release(); watches.clear(); surface?.remove()
         }
     }, [host, state.frozen, state.reduced, AJEDREZ_PHOTO_COMPOSITION_REVISION])
     useOwnLayoutEffect(() => { owner.current?.refresh() }, [state.time, state.index, state.active])

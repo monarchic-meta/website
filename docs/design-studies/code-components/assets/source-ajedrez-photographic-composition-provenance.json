@@ -2,7 +2,7 @@
   "schema": "source-ajedrez-photographic-composition.v1",
   "reference": "HERO-002",
   "classification": "Source inspiration / credited close recreation",
-  "status": "LOCAL_CACHE_RELEASE_AND_URI_COMPATIBILITY_VALIDATED_TRANSFER_PENDING",
+  "status": "LOCAL_INTRINSIC_NORMALIZER_TARGETED_PASS_FULL_CONTINUATION_PENDING",
   "credit": "Julián Leiss / Ajedrez Film Poem; source archival photograph authors remain unverified.",
   "source": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/../source-1080x1920.mp4",
@@ -18,8 +18,8 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
-    "bytes": 88297,
-    "sha256": "01f70443744e4eb3a49d6ecb1bd4496a70c42a0362ad69af107b6748673bea38"
+    "bytes": 92196,
+    "sha256": "f64d640c6871bc2d2ddc4a83e2135f223f95bf8346169fd4ef2190cedcc3c46e"
   },
   "lineage": {
     "parent": {
@@ -28,7 +28,7 @@
       "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
     },
     "extensionStart": "\n// Source-cut photographic compositions.",
-    "extensionSHA256": "1390b72bc724ec376fde3db14293631e6b7bec5e25d7e62556ac8ccd29a75e9d",
+    "extensionSHA256": "3bf0b82a6e773a0f61e3a352aa1d7caf2a0257de440bcc189c5af8627714f948",
     "filmHookLine": "        useAjedrezPhotographicComposition(host, state)\n",
     "headerAmendment": {
       "old": " * through its shared clock. Other photographic passages remain still-held;\n * their internal motion and unreviewed audio are not claimed as restored.",
@@ -1140,7 +1140,9 @@
     "imageFailure": "Only a NEW watch requeues a failed record and shares one serial retry with retained owners; same-pose refresh cannot loop it. Final failed-listener release removes the entry.",
     "cacheHMR": "Same Symbol/cache object and mutable backend/record map survive module replacement. Monotone module generation prevents an older factory from downgrading newer methods. Exact v2 predecessor migrates in place only after its retained serial queue is idle; its listeners and image records survive.",
     "legacyRelease": "Bridged leases delegate to the current backend after installation. Existing predecessor listener sets retain identity; their final deletion/clear notifies the current backend, cancelling migrated retries and immediately admitting queued work. Cancelled records become failed and are removed.",
-    "legacyURIs": "The immutable registered predecessor four image URLs remain explicit alongside current URLs, including when all current delivery URLs change."
+    "legacyURIs": "The immutable registered predecessor four image URLs remain explicit alongside current URLs, including when all current delivery URLs change.",
+    "rasterNormalization": "Every admitted image or SVG normalizes once at its full intrinsic width/height into an origin-clean ≤2,000,000pixel 2D source. Actual photo crops consume that CanvasImageSource; HTMLImage driver fields remain intact. Lazy serial warming, ≤6 resident atlas records, raster cleared on eviction/retry/cancel, no RAF/WebGL/video.",
+    "capacity": "Pinned-capacity pressure queues new atlases rather than warming all29; releasing a ready resident immediately admits queued current material. Cleanup releases queued work before ready owners to avoid warming during freeze."
   },
   "nativeCaptionPlan": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/four-editable-caption-recipe-v3.json",
@@ -1164,11 +1166,34 @@
       "sha256": "77886180549dbac16b1943225e93fa25d48076a8dbb44d8c63e1f800abf16fbb"
     },
     "framerSourceRegistered": false,
-    "nativeCaptionsCreated": false,
+    "nativeCaptionsCreated": true,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
     "sourceFidelityApproved": false,
-    "exactSourceBrowserResult": {
+    "reproducibleChecker": "scripts/check-source-ajedrez-photo-composition.mjs",
+    "ownedSVGFixtureChecks": 49,
+    "exactSourceStrictResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/normalizer-strict9.json",
+      "bytes": 1258,
+      "sha256": "e402d8dac759cff9f945234b91060ceb736cdc62ffffaf1eaa749c6208411604",
+      "checks": 9,
+      "nodeVersion": "22.22.2"
+    },
+    "currentSourceSnapshot": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/SourceAjedrezSequence-normalizer-f64d640c.tsx",
+      "bytes": 92196,
+      "sha256": "f64d640c6871bc2d2ddc4a83e2135f223f95bf8346169fd4ef2190cedcc3c46e"
+    },
+    "previousLockedA2": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/root-locked-a2-receipt.json",
+      "bytes": 4609,
+      "sha256": "61957323f5c4c664e088fdebdb8b74ee7a0316a2d7910b4e57fd81a512215f1d",
+      "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
+      "checkerSHA256": "a95cc608898c81747a8f0228095281bae2b18ab43b753f9359511d9a8bee2054",
+      "historicalPass": "9 strict +171 retained +26 aperture +37 composition",
+      "availability": "Automatic nix-gc.service at midnight2026-11-02 removed its unrooted store outputs. Immutable external receipt61957323 and exact source/test snapshots remain; do not treat those old store files as currently retrievable or relabel later runs as that evidence."
+    },
+    "previousCacheSliceResult": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-release-compat-genuine/result.json",
       "bytes": 10212,
       "sha256": "085fe711e5602c8d8cce2fc074643ed1166fa2b5370ef71bbc9e3befb0c30450",
@@ -1184,16 +1209,7 @@
       },
       "scope": "Fresh local genuine-material run, not a Nix derivation or Framer Preview."
     },
-    "reproducibleChecker": "scripts/check-source-ajedrez-photo-composition.mjs",
-    "ownedSVGFixtureChecks": 49,
-    "exactSourceStrictResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-release-compat-strict.json",
-      "bytes": 1258,
-      "sha256": "d99b1cf2c2134ab3a39db50a2f5062247f2515bafc6aea0d553300ff2e7a62e9",
-      "checks": 9,
-      "nodeVersion": "22.22.2"
-    },
-    "exactOwnedResult": {
+    "previousOwnedCacheSliceResult": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-release-compat-owned/result.json",
       "bytes": 9838,
       "sha256": "3f4d497212af836109372dec965eb82bcfd8b5f1498105b8ca1e7e40e48c7bf1",
@@ -1203,20 +1219,37 @@
       "chromiumVersion": "147.0.7727.116",
       "checkerSHA256": "83295816bb7d534eea43aaa8808b9463a2778f68d408b0acb6cdff3a02fa2ab3"
     },
-    "currentSourceSnapshot": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/SourceAjedrezSequence-release-compat-01f70443.tsx",
-      "bytes": 88297,
-      "sha256": "01f70443744e4eb3a49d6ecb1bd4496a70c42a0362ad69af107b6748673bea38"
+    "targetedNormalizer": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/normalizer-targeted-public-slot7/result.json",
+      "bytes": 3487,
+      "sha256": "7f1ff2e5f6ff6b2cceccafdfad86e03ca0788355ee0682384e876cadf403a89f",
+      "sourceSHA256": "f64d640c6871bc2d2ddc4a83e2135f223f95bf8346169fd4ef2190cedcc3c46e",
+      "test": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/normalizer-targeted-checker-cb91a382.mjs",
+        "bytes": 14291,
+        "sha256": "cb91a382e990d7655ecbf9ed64abb703b3d595afbcfc84bd74b7ad550460f86c"
+      },
+      "checks": 25,
+      "scope": "Production cache extraction and one previously-proven public slot7. All29/464 asset proofs are reused, not rerun. Full assembled native/controller suite remains pending."
     },
-    "previousLockedA2": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/root-locked-a2-receipt.json",
-      "bytes": 4609,
-      "sha256": "61957323f5c4c664e088fdebdb8b74ee7a0316a2d7910b4e57fd81a512215f1d",
+    "svgDeliveryProof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/framer-exact-svg29-v1/final-29-exact-svg-bindings.json",
+      "bytes": 63854,
+      "sha256": "ed9e90d347d1eb8ef4c553abb2c137a4dac2dc8234b266e50ea6a59512a92725",
+      "all29FullRGBAExact": true,
+      "normalizedCropChecks": 464,
+      "rawSvgCropDifference": "118/464 direct SVG crops differed by up to6RGB while alpha stayed exact; direct and normalized paths are not claimed equal.",
+      "currentSourceURLsRemainPrior4Images": true,
+      "fullSVGBindingPending": true
+    },
+    "previousActualFramerSlice": {
       "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
-      "checkerSHA256": "a95cc608898c81747a8f0228095281bae2b18ab43b753f9359511d9a8bee2054",
-      "historicalPass": "9 strict +171 retained +26 aperture +37 composition",
-      "availability": "Automatic nix-gc.service at midnight2026-11-02 removed its unrooted store outputs. Immutable external receipt61957323 and exact source/test snapshots remain; do not treat those old store files as currently retrievable or relabel later runs as that evidence."
-    }
+      "bytes": 80251,
+      "exports": 46,
+      "nativeCaptionNodes": 4,
+      "scope": "Writer confirms actual project retains approved a2 source plus four native captions; current normalizer is not transferred."
+    },
+    "nativeCaptionsCreatedForSourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7"
   },
   "legacyCacheV2Regression": {
     "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",

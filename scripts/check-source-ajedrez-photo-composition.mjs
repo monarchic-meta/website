@@ -183,14 +183,17 @@ const server = http.createServer((req, res) => { const i = Number(new URL(req.ur
             await page.addScriptTag({ content: boot });
             await page.evaluate(() => setState({ time: 10, index: 30, active: true, reduced: false, frozen: false }));
             const snapshots = [];
-            for (let i = 0; i < 12; i++) {
+            for (let i = 0; i < (mode === 'negative-retained' ? 6 : 12); i++) {
                 await page.evaluate(time => setState({ time, index: 30, active: true }), 10 + i * 2);
                 await page.waitForFunction(name => snap().pose === name && snap().visible === 'visible', 'hand-cache-' + i);
                 const lease = await page.evaluate(all => { const records = all.map(url => __photoCache().peek(url)).filter(Boolean); return { records: records.length, listeners: records.reduce((n, r) => n + r.listeners.size, 0), idle: records.filter(r => r.state === 'ready' && !r.listeners.size).length, loading: records.filter(r => r.state === 'loading').length, raf: __raf, video: __video, webgl: __webgl }; }, [...urls, ...longUrls]);
                 snapshots.push(lease);
             }
-            if (mode === 'negative-retained')
-                check('negativecontrol proves oldwatches canpinmorethan6 atlases withoutpast-pose releases', snapshots.at(-1).listeners >= 12);
+            if (mode === 'negative-retained') {
+                await page.evaluate(() => setState({time:22,index:30,active:true}));
+                await page.waitForFunction(url => __photoCache().peek(url)?.state === 'queued',longUrls[6]);
+                check('negativecontrol shows retained past-pose watches stall later source admission at the six-resident limit',await page.evaluate(all=>{const records=all.map(url=>__photoCache().peek(url)).filter(Boolean);return records.reduce((n,r)=>n+r.listeners.size,0)>=7&&records.filter(r=>r.raster?.width>1).length<=6},longUrls));
+            }
             else
                 check('longseek across12atlasURLs retainscurrentleaseonly, boundsiidlecache andone serialwarmwithoutmediaorRAF', snapshots.every(r => r.listeners === 1 && r.idle <= 6 && r.loading <= 1 && r.raf === 0 && r.video === 0 && r.webgl === 0));
             fs.writeFileSync(out + '/cache-' + mode + '.json', JSON.stringify(snapshots, null, 2) + '\n');
