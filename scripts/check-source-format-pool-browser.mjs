@@ -34,12 +34,17 @@ async function checkResponsiveNativeTakeover() {
   await nativePage.waitForTimeout(100);await nativePage.evaluate(()=>scrollTo(0,13600));await nativePage.waitForTimeout(100);await nativePage.mouse.click(700,300);await nativePage.waitForTimeout(90);
   const desktopSpawn=await nativePage.evaluate(()=>responsiveSnapshot());
   await nativePage.setViewportSize({width:390,height:856});await nativePage.evaluate(()=>{renderResponsive();scrollTo(0,0)});await nativePage.waitForTimeout(120);
+  const phoneBeforeReregistration=await nativePage.evaluate(()=>responsiveSnapshot());
+  // Model the observed late Desktop controller write after CSS has switched:
+  // the next native registration must reveal authored Phone CSS, never capture it.
+  await nativePage.evaluate(()=>{document.getElementById('responsive-poster').style.width='1384.61px';renderResponsive()});await nativePage.waitForTimeout(100);
   const phoneOriginal=await nativePage.evaluate(()=>responsiveSnapshot());
+  check('Phone re-registration clears stale imperative Desktop width and reveals native390px CSS',Math.abs(phoneOriginal.poster.width-390)<.1,{phoneBeforeReregistration,phoneOriginal});
   await nativePage.evaluate(()=>{Math.random=()=>.45;scrollTo(0,7327)});await nativePage.waitForTimeout(100);await nativePage.mouse.click(180,300);await nativePage.waitForTimeout(60);const phoneA=await nativePage.evaluate(()=>responsiveSnapshot());await nativePage.waitForTimeout(100);const phoneB=await nativePage.evaluate(()=>responsiveSnapshot());
   await nativePage.screenshot({path:dir+'/responsive-native-phone.png'});
   // Capture all concrete observations before assertions so the frozen-source
   // counterfactual retains both the style leak and the doubled rotation.
-  const report={case:'native-responsive-caller-css-and-imperative-pose',desktopSpawn,phoneOriginal,phoneA,phoneB,scope:'Real React/Chromium fixture with source HOCs, actual saved265 Phone CSS dimensions and a native-like rotate-to-transform compiler; not an actual Framer paint claim.'};
+  const report={case:'native-responsive-caller-css-and-imperative-pose',desktopSpawn,phoneBeforeReregistration,phoneOriginal,phoneA,phoneB,scope:'Real React/Chromium fixture with source HOCs, actual saved265 Phone CSS dimensions and a native-like rotate-to-transform compiler; not an actual Framer paint claim.'};
   fs.writeFileSync(dir+'/responsive-native-takeover-observations.json',JSON.stringify(report,null,2)+'\n');
   check('Native responsive Phone keeps authored390×1090 poster instead of restored Desktop geometry',Math.abs(phoneOriginal.poster.width-390)<.1&&Math.abs(phoneOriginal.poster.height-1090)<.1&&phoneOriginal.poster.left==='-7.5px'&&phoneOriginal.poster.top==='6100px',phoneOriginal);
   check('Phone original pose clears obsolete world background, stacking and outline',phoneOriginal.poster.decoration.background==='rgba(0, 0, 0, 0)'&&phoneOriginal.poster.decoration.zIndex==='auto'&&phoneOriginal.poster.decoration.outlineStyle==='none',phoneOriginal);

@@ -483,7 +483,8 @@
     "withFormatChipSlot27",
     "withFormatChipSlot28",
     "withFormatChipSlot29",
-    "withFormatChipSlot30"
+    "withFormatChipSlot30",
+    "withFormatPosterGlyph"
   ],
   "sourceFont": {
     "family": "Obys Sans",
@@ -1740,6 +1741,198 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-013/validation/responsive-decoration-ownership/nix-build.log",
         "sha256": "00725155b8aa1d3024697731fce44dd85c2638be5fec487bcf5247973a0ba577",
         "bytes": 397
+      }
+    }
+  },
+  "gaugePosterGlyphMagnet": {
+    "status": "LOCAL_IMPLEMENTATION_FROZEN_NATIVE_AUTHORING_AND_ACTUAL_PAINT_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/SourceFormatDetails-2fbf7918.tsx",
+      "sha256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
+      "bytes": 110470,
+      "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx"
+    },
+    "parentSource": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/SourceFormatDetails-prior9661.tsx",
+      "sha256": "9661c22a8743b375511021c5a03d03f47346b0922458f2aa6f46e8970172d79f",
+      "bytes": 96336
+    },
+    "classification": "Source inspiration; current FORMAT by Obys × DES Special Project.",
+    "sourceURL": "https://format.obys.agency/",
+    "sourceEvidence": {
+      "rest": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/forward-0.json",
+        "sha256": "62a48fa5483ee73c1d03ac51647d15aef07a69414336c8bde8d9b96a538860f7",
+        "bytes": 42949
+      },
+      "titleMotion": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/forward-2.json",
+        "sha256": "babc80081ac778c74f95d475f90f674f5cd772bf746435b6fdb2d27f0bbf61a1",
+        "bytes": 45373
+      },
+      "adviceMotion": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/forward-3.json",
+        "sha256": "3deaf79a93aee71ee053b1a437287a2e2bedd526319043b81bf4e9207aca45a1",
+        "bytes": 47457
+      },
+      "endpoint": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/forward-5.json",
+        "sha256": "bd436bb22b8535a80a37e75bdf77c4fa070f4061a8ea74c9fcbfa541aaf13414",
+        "bytes": 46287
+      },
+      "pointerVsScroll": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/causality/result.json",
+        "sha256": "385dfc922d5df9c2d4a9e1eb07dec02ff24b5e75d55f1d27586544ee46e12d5e",
+        "bytes": 8551
+      }
+    },
+    "implementation": "Independently authored circle exclusion/outer attraction and tangent rotation on86 editable native glyph refs. The same retained native pip follows the late source path and hands off to one native endpoint circle. No website behavior JavaScript is imported, and no paragraph bitmap/canvas is substituted.",
+    "sourceFacts": {
+      "glyphs": 86,
+      "oldLineFamilies": 10,
+      "visibleCase": "Original h2/h3 poster CSS text-transform:uppercase; the new editable glyphs store the visible uppercase, preserving the mixed-case hidden original line strings.",
+      "outerRangeRadiusMultiplier": 1.75,
+      "outerAttraction": 0.22,
+      "spring": 0.09,
+      "velocityDamping": 0.85,
+      "rotationInterpolation": 0.18,
+      "restThreshold": 0.01,
+      "rotation": "Tangent alignment wrapped to±90 degrees; source34 normalization is not a34-degree clamp.",
+      "collisionSupport": "Circle radius plus projection of the rotated glyph AABB",
+      "pipDiameter": [
+        20,
+        335
+      ],
+      "sourceGaugeAxisRelativeToPoster": -837.5,
+      "sourceEndpointCenter": [
+        1252.5,
+        1429.12
+      ],
+      "circleEasing": "Source power2.out cubic easing",
+      "causality": "Real scroll moves the pip; held pointer movement only showed tiny residual spring settling, not a pointer target. Reverse scroll restores prior glyph response."
+    },
+    "resourcePolicy": {
+      "newGPUContexts": 0,
+      "newCanvases": 0,
+      "newRuntimeFontsOrMedia": 0,
+      "newAnimationClocks": 0,
+      "clock": "Existing closing-world RAF only; fixed60Hz spring substeps, maximum30Hz native paint, sleeps after convergence, cancels offscreen/hidden.",
+      "reactUpdates": "No per-frame React glyph renders; write only owned prefixed CSS variables under owned data flags.",
+      "staticTargets": "Canvas/export/thumbnail/reduced remove new owned motion and show native endpoint/rest glyphs. Existing historical Phone extension freezes this Desktop-only source magnet."
+    },
+    "lifecycle": {
+      "revisionKey": "native-poster-magnet-87-keyed-v2",
+      "purpose": "The private keyed document owner replaces an old hook-retained closing world whose API lacks registerMagnet, while preserving all old public HOC identities.",
+      "proof": "Actual React retained public/private proxies keep the legacy world without a revision change; the keyed current owner installs the real new registration API and disposes old RAF/listeners.",
+      "responsive": "Actual host state rebinds the existing observer/clock; old ref cleanup cannot erase a newly registered glyph/pip/endpoint.",
+      "registrationGeometryOwnership": {
+        "proof": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/width-handoff-regression/proof.json",
+          "sha256": "d50728610eb919cb10e87bfce3bd266dd7095a046992277f3e5960fa283c7a32",
+          "bytes": 3030
+        },
+        "oldLockedFailureRetained": true,
+        "negativeStalePhoneWidth": 1384.61,
+        "currentNativePhoneWidth": 390,
+        "rule": "When caller geometry is unspecified, clear only controller-owned inline geometry to reveal native CSS. Never use a live imperative pose as the next caller default."
+      }
+    },
+    "nativeRecipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/native-glyph-plan.json",
+      "sha256": "737e4f61bf2e8ed373960a7e3caff3f67cce77678d1a3cc18c543bc0de0810a3",
+      "bytes": 363306
+    },
+    "sourceDeltaProof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/source-delta-proof.json",
+      "sha256": "c42f696d40883229579201fda5bb9348dd9bebf42ec7bc36af70a7f3180dd42c",
+      "bytes": 3121
+    },
+    "fontBoundary": {
+      "sourceFamily": "Obys Sans",
+      "binaryInRepository": false,
+      "sourceFontSHA256": "2d6e1af3075ea8a3577dac5c210a808873bf6c06e23df2e11d4a8acfc7a1292e",
+      "cors": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/font-origin-response.json",
+        "sha256": "f3b81f91646b8fbd6cc9df5f3022f1ff4310ecc475ba50217ccf3b276e2b1b3f",
+        "bytes": 624
+      },
+      "crossOriginFontFaceEnabled": false,
+      "authoring": "Duplicate actual previously uploaded native source lines to preserve font internals; never treat fontName-only patch acknowledgment as font assignment.",
+      "nativeNewGlyphTypefaceVerified": false,
+      "localSourceFontGeometry": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/source-font-rest-geometry-comparison-v2.json",
+        "sha256": "f34b6f4a7bd484b4a113a907b96416d47e29d6684ec5793cf61b89aa22813ade",
+        "bytes": 1669
+      }
+    },
+    "validationCommands": [
+      "pnpm run check:source-format-details",
+      "pnpm run check:source-format-details-browser",
+      "pnpm run check:source-format-closing-browser",
+      "pnpm run check:source-format-pool",
+      "pnpm run check:source-format-pool-browser",
+      "nix build .#checks.x86_64-linux.source-format-details --no-link --print-out-paths"
+    ],
+    "limits": [
+      "Actual Framer source registration/new124th export/native glyph duplicate/paint and reload gates remain pending.",
+      "The late gauge-to-poster pip path is source supported; the earlier Vee-to-gauge flight is not newly reconstructed by this change.",
+      "Source60Hz continuous ticker is independently integrated at60Hz and painted at30Hz with convergence sleep; no exact timing/trajectory parity is claimed.",
+      "Existing full-source Phone is a logo/clock splash; the historical fitted Phone poster/pool is preserved as an explicit extension.",
+      "All30 native pool families already exist; final full-capacity/reload/resource and decoration actual gates remain separate."
+    ],
+    "actualFramerRegistered": false,
+    "actualNativeGlyphsAuthored": false,
+    "afterEditorReload": false,
+    "actualPreviewPaint": false,
+    "localValidation": {
+      "details": {
+        "command": "nix build .#checks.x86_64-linux.source-format-details --no-link --print-out-paths -L --keep-failed --option eval-cache false",
+        "path": "/nix/store/c80rr4ni4bqawbvza6f2rs15m48891kc-monarchic-website-source-format-details-0.0.1",
+        "strictGroups": 8,
+        "actualReactBrowserChecks": 103,
+        "closingChecks": 22,
+        "result": {
+          "path": "/nix/store/c80rr4ni4bqawbvza6f2rs15m48891kc-monarchic-website-source-format-details-0.0.1/evidence/result.json",
+          "sha256": "1331d4d16fd2d122adec45165f75dbaf4e27749faef37080ba89fa11d4a15c68",
+          "bytes": 884813
+        },
+        "closing": {
+          "path": "/nix/store/c80rr4ni4bqawbvza6f2rs15m48891kc-monarchic-website-source-format-details-0.0.1/evidence/closing/browser-result.json",
+          "sha256": "daf279bcef71186d78fbc9b34d843e9dab137eaa992d5ca8a7c25b447c690bdf",
+          "bytes": 9244
+        },
+        "log": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/locked-details-v2.log",
+          "sha256": "75197586570da849045acfe2b5f6c5992e89861996c75ebe6c7ed6177fc451dd",
+          "bytes": 40736
+        }
+      },
+      "pool": {
+        "command": "nix build .#checks.x86_64-linux.source-format-pool --no-link --print-out-paths -L --keep-failed",
+        "path": "/nix/store/33fp3c2z8mv8v2w76l787nqpblv86chd-monarchic-website-source-format-pool-0.0.1",
+        "strictGroups": 5,
+        "actualReactBrowserChecks": 63,
+        "result": {
+          "path": "/nix/store/33fp3c2z8mv8v2w76l787nqpblv86chd-monarchic-website-source-format-pool-0.0.1/evidence/pool-browser.json",
+          "sha256": "07f53feefa118fb41e9936806f0b4ec6c9dbed2fd2ca83b466fc52491d8fa8e5",
+          "bytes": 67147
+        },
+        "log": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/locked-pool-v2.log",
+          "sha256": "4458ae77dbc9d003d7ec56b7d7f47af0dea9addb3abf1ba5e34a9b502342d282",
+          "bytes": 39996
+        }
+      },
+      "optionalExternalSourceFont": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/source-font-rest-geometry-comparison-v2.json",
+        "sha256": "f34b6f4a7bd484b4a113a907b96416d47e29d6684ec5793cf61b89aa22813ade",
+        "bytes": 1669
+      },
+      "refreshNegativeAndPositive": "Included in103 details checks: actual preserved-HOC/private proxy keeps old world without changed key and installs actual new API after revision-key handoff; cleanup leaves0 pendingRAF/viewport/media listeners.",
+      "failedPriorWidthGateRetained": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/width-handoff-regression/proof.json",
+        "sha256": "d50728610eb919cb10e87bfce3bd266dd7095a046992277f3e5960fa283c7a32",
+        "bytes": 3030
       }
     }
   }

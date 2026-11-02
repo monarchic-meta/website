@@ -228,10 +228,16 @@ function gaugeShape(index: number, pane: number) {
     if (index === 0) { const sx = (x: number) => .5 - w / 2 + x * w, tall = 20 * 214.085 / 227.01 / 41, sy = (y: number) => .5 - tall / 2 + y * tall; return resample(pane ? [[sx(.5275), sy(0)], [sx(.5275), sy(1)], [sx(1 - 46.057 / 227.01), sy(1)], [sx(1), sy(1 - 46.138 / 214.085)], [sx(1), sy(46.138 / 214.085)], [sx(1 - 46.057 / 227.01), sy(0)]] : [[sx(0), sy(46.138 / 214.085)], [sx(0), sy(1 - 46.138 / 214.085)], [sx(46.057 / 227.01), sy(1)], [sx(.5 - .055 / 2), sy(1)], [sx(.5 - .055 / 2), sy(0)], [sx(46.057 / 227.01), sy(0)]]) }
     if (index === 1) return resample(rect(17 / 41, h)); if (index === 2) return resample(rect(w, 15 / 41)); if (index === 3) return resample(circle(.5, .5, w / 2, -Math.PI / 2, Math.PI * 2)); if (index === 4) { const high = w * 28.531 / 32.999; return resample([[.5 + w / 2, .7108785 - .084 * high], [.2560976 + .5427 * w, .7108785 - high], [.2560976 + .4564 * w, .7108785 - high], [.2560976, .7108785 - .0855 * high], [.2560976 + .0427 * w, .7108785], [.2560976 + .958 * w, .7108785]]) }; return resample(pane ? [[.25609756, 21 / 41], [.74390244, 21 / 41], [.74390244, 1], [.25609756, 1]] : circle(.5, w / 2, w / 2, Math.PI, Math.PI * 2))
 }
-function gaugePane(Component: NativeLayer, pane: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(GaugeContext), index = ((state.active + 3) % 6 + 6) % 6, points = gaugeShape(index, pane), clipPath = "polygon(" + points.map(([x, y]) => `${(x * 100).toFixed(6)}% ${(y * 100).toFixed(6)}%`).join(",") + ")"; return <Component {...props} ref={ref} data-format-gauge-shape={GAUGE_NAMES[index]} style={{ ...props.style, width: "100%", height: "100%", clipPath, WebkitClipPath: clipPath, transition: state.stopped ? "none" : "clip-path .55s cubic-bezier(.65,0,.35,1)", pointerEvents: "none" }} /> }) as NativeLayer }
+function gaugePane(Component: NativeLayer, pane: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(GaugeContext), index = ((state.active + 3) % 6 + 6) % 6, points = gaugeShape(index, pane), clipPath = "polygon(" + points.map(([x, y]) => `${(x * 100).toFixed(6)}% ${(y * 100).toFixed(6)}%`).join(",") + ")"; return <Component {...props} ref={ref} data-format-gauge-shape={GAUGE_NAMES[index]} style={{ ...props.style, width: "100%", height: "100%", backgroundColor: "var(--source-format-pip-color,#ffffff)", clipPath, WebkitClipPath: clipPath, transition: state.stopped ? "none" : "clip-path .55s cubic-bezier(.65,0,.35,1)", pointerEvents: "none" }} /> }) as NativeLayer }
 export function withFormatGaugePaneA(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return gaugePane(Component, 0) }
 export function withFormatGaugePaneB(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return gaugePane(Component, 1) }
-export function withFormatGaugeShape(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const state = React.useContext(GaugeContext), size = (20 + state.progress * 315) * 41 / 20 * state.unit; return <Component {...props} ref={ref} style={{ ...props.style, left: 720 * state.unit - size / 2, top: 1218.5 * state.unit - size / 2, width: size, height: size, pointerEvents: "none" }} /> }) as NativeLayer }
+export function withFormatGaugeShape(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(GaugeContext), world = React.useContext(FormatClosingContext), remove = React.useRef<(() => void) | null>(null), size = (20 + state.progress * 315) * 41 / 20 * state.unit
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node && world ? world.registerMagnet("pip", node) : null; writeRef(ref, node) }, [world, ref])
+        return <Component {...props} ref={bind} data-format-magnet-pip="retained-native-ring-center" style={{ ...props.style, left: 720 * state.unit - size / 2, top: 1218.5 * state.unit - size / 2, width: size, height: size, pointerEvents: "none" }} />
+    }) as NativeLayer
+}
 
 /** Source field alternates the two native word groups every1.3s (2.6s step-end cycle). The original pointer-spawned physics chips remain outside this bounded detail module. */
 function flickWord(Component: NativeLayer, phase: number): NativeLayer { return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), live = useOwnVisibility(own, frozen); return <><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-click-phase={phase} style={{ ...props.style, opacity: phase ? .25 : 1, animation: live ? `source-format-click-flick 2.6s step-end ${phase ? "-1.3s" : "0s"} infinite` : "none", pointerEvents: "none" }} /><style>{`@keyframes source-format-click-flick{0%{opacity:1}50%{opacity:.25}}@media(prefers-reduced-motion:reduce){[data-format-click-phase]{animation:none!important}}`}</style></> }) as NativeLayer }
@@ -269,17 +275,22 @@ function sourceLayout(width: number, height: number): SourceLayout {
     return { unit, group, deck, fan, window: windowAt, crossing, gauge, poster, field, footer, body: footer + 273 * unit, fieldHeight }
 }
 const SourceLayoutContext = React.createContext({ width: 1440, height: 810, frozen: true, phone: false, layout: sourceLayout(1440, 810) })
-export function withFormatRefinedDocument(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
-    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), closing = React.useRef<FormatClosingWorld | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
-        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; let frame = 0; const read = () => { frame = 0; const width = frozen ? node.clientWidth || 1440 : window.innerWidth, height = frozen ? width < 1280 ? 844 : 810 : window.innerHeight; setView(v => v.width === width && v.height === height ? v : { width, height }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen) window.addEventListener("resize", schedule); return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("resize", schedule) } }, [frozen])
+// Revision-key the owner of hook-retained worlds when controller protocols change.
+const FORMAT_DOCUMENT_REVISION="native-poster-magnet-87-keyed-v2"
+type FormatDocumentSurfaceProps = { Native: NativeLayer; layer: LayerProps; nativeRef: React.ForwardedRef<HTMLElement> }
+function FormatDocumentSurface({ Native: Component, layer: props, nativeRef: ref }: FormatDocumentSurfaceProps) {
+        const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), closing = React.useRef<FormatClosingWorld | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
+        useOwnLayoutEffect(() => { const node = host; if (!node) return; let frame = 0; const read = () => { frame = 0; const width = frozen ? node.clientWidth || 1440 : window.innerWidth, height = frozen ? width < 1280 ? 844 : 810 : window.innerHeight; setView(v => v.width === width && v.height === height ? v : { width, height }) }, schedule = () => { if (!frame) frame = requestAnimationFrame(read) }; read(); const observer = new ResizeObserver(frozen ? read : schedule); observer.observe(node); if (!frozen) window.addEventListener("resize", schedule); return () => { observer.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("resize", schedule) } }, [frozen, host])
+        const bind = React.useCallback((node: HTMLElement | null) => { own.current = node; setHost(old => old === node ? old : node); writeRef(ref, node) }, [ref])
         const phone = view.width < 1280, layout = sourceLayout(view.width, view.height), style = frozen || phone ? props.style : { ...props.style, width: view.width, height: layout.body }
         if (!closing.current) closing.current = createFormatClosingWorld()
         const world = closing.current
-        useOwnLayoutEffect(() => { world.configure({ frozen, reduced, phone, root: own.current }) }, [world, frozen, reduced, phone])
+        useOwnLayoutEffect(() => { world.configure({ frozen, reduced, phone, root: host }) }, [world, frozen, reduced, phone, host])
         useOwnLayoutEffect(() => () => world.dispose(), [world])
-        return <FormatClosingContext.Provider value={world}><SourceLayoutContext.Provider value={{ ...view, frozen, phone, layout }}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }} data-format-source-height={layout.body} style={style} /></SourceLayoutContext.Provider></FormatClosingContext.Provider>
-    }) as NativeLayer
+        return <FormatClosingContext.Provider value={world}><SourceLayoutContext.Provider value={{ ...view, frozen, phone, layout }}><><Component {...props} ref={bind} data-format-source-height={layout.body} style={style} /><style>{FORMAT_MAGNET_STYLE}</style></></SourceLayoutContext.Provider></FormatClosingContext.Provider>
+    }
+export function withFormatRefinedDocument(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <FormatDocumentSurface key={FORMAT_DOCUMENT_REVISION} Native={Component} layer={props} nativeRef={ref} />) as NativeLayer
 }
 type FlowRole = "opening-card" | "usage" | "dials" | "triangle" | "window" | "crossing" | "gauge" | "poster" | "field" | "footer" | "late-deck" | "seven" | "early" | "fan" | "fog"
 function sourceFlow(Component: NativeLayer, role: FlowRole): NativeLayer {
@@ -353,14 +364,83 @@ export function withFormatCutHardLight(Component: ComponentType<LayerProps>): Co
  * Physics integrates source-scale gravity at60Hz and paints at30Hz. Collision
  * trajectories are independently fitted, not claimed byte-equivalent to Matter.
  */
+/** Native glyphs share the closing world's one owned RAF. Source-supported
+ * radial exclusion/attraction is integrated at60Hz and painted at30Hz;
+ * the stable target can sleep instead of running an idle ticker forever. */
+type FormatMagnetGlyph = { node: HTMLElement; x: number; y: number; vx: number; vy: number; turn: number }
+type FormatMagnetGeometry = { p: HTMLElement; pr: DOMRect; top: number; unit: number; visual: number }
+const FORMAT_MAGNET_STYLE = `[data-format-magnet-owned="1"]{translate:var(--source-format-magnet-x) var(--source-format-magnet-y)!important;rotate:var(--source-format-magnet-turn)!important;transform-origin:50% 50%!important}[data-format-pip-owned="1"]{left:var(--source-format-pip-left)!important;top:var(--source-format-pip-top)!important;width:var(--source-format-pip-size)!important;height:var(--source-format-pip-size)!important;rotate:var(--source-format-pip-turn)!important;visibility:var(--source-format-pip-visibility)!important;transform-origin:50% 50%!important}[data-format-pip-endpoint-owned="1"]{opacity:var(--source-format-pip-endpoint-opacity)!important;pointer-events:none!important}`
+const FORMAT_MAGNET_PATH: readonly (readonly [number, number])[] = [[-900,720],[-780,716],[-650,700],[-500,655],[-350,585],[-200,490],[-60,390],[60,322],[190,318],[340,400],[430,500],[520,640],[610,810],[700,920],[790,1030],[880,1105],[980,1160],[1100,1205],[1240,1238],[1429.12,1252.5]]
+function formatMagnetX(y: number) { let before = FORMAT_MAGNET_PATH[0]; for (const after of FORMAT_MAGNET_PATH.slice(1)) { if (y <= after[0]) { const mix = Math.max(0, Math.min(1, (y - before[0]) / (after[0] - before[0]))); return before[1] + (after[1] - before[1]) * mix }; before = after }; return before[1] }
+function formatMagnetSupport(radius: number, halfW: number, halfH: number, nx: number, ny: number, turn: number) { const c = Math.abs(Math.cos(turn * Math.PI / 180)), s = Math.abs(Math.sin(turn * Math.PI / 180)); return radius + Math.abs(nx) * (halfW * c + halfH * s) + Math.abs(ny) * (halfW * s + halfH * c) }
+function stepFormatMagnetGlyph(glyph: FormatMagnetGlyph, rest: { x: number; y: number; halfW: number; halfH: number }, magnet: { x: number; y: number; radius: number } | null) {
+    let targetX = 0, targetY = 0, targetTurn = 0
+    if (magnet) {
+        const dx = rest.x - magnet.x, dy = rest.y - magnet.y, distance = Math.hypot(dx, dy), nx = distance > .0001 ? dx / distance : 1, ny = distance > .0001 ? dy / distance : 0, support = formatMagnetSupport(magnet.radius, rest.halfW, rest.halfH, nx, ny, glyph.turn), range = magnet.radius * 1.75
+        let strength = 0
+        if (distance < support) { targetX = magnet.x + nx * support - rest.x; targetY = magnet.y + ny * support - rest.y; strength = 1 }
+        else if (distance < range) { strength = 1 - (distance - support) / Math.max(1, range - support); const pull = (distance - support) * .22 * strength; targetX = -nx * pull; targetY = -ny * pull }
+        // A tangent direction, wrapped to±90°. The source's34 normalization
+        // cancels at full strength; it is not a34-degree clamp.
+        targetTurn = (((Math.atan2(dy, dx) * 180 / Math.PI + 180) % 180 + 180) % 180 - 90) * strength
+    }
+    glyph.vx = (glyph.vx + (targetX - glyph.x) * .09) * .85; glyph.vy = (glyph.vy + (targetY - glyph.y) * .09) * .85
+    glyph.x += glyph.vx; glyph.y += glyph.vy; glyph.turn += (targetTurn - glyph.turn) * .18
+    if (magnet) {
+        const dx = rest.x + glyph.x - magnet.x, dy = rest.y + glyph.y - magnet.y, distance = Math.hypot(dx, dy), nx = distance > .0001 ? dx / distance : 1, ny = distance > .0001 ? dy / distance : 0, support = formatMagnetSupport(magnet.radius, rest.halfW, rest.halfH, nx, ny, glyph.turn)
+        if (distance < support) { glyph.x = magnet.x + nx * support - rest.x; glyph.y = magnet.y + ny * support - rest.y; glyph.vx *= .5; glyph.vy *= .5 }
+    }
+    const moving = Math.abs(targetX - glyph.x) + Math.abs(targetY - glyph.y) + Math.abs(targetTurn - glyph.turn) + Math.abs(glyph.vx) + Math.abs(glyph.vy) > .01
+    if (!magnet && !moving) glyph.x = glyph.y = glyph.vx = glyph.vy = glyph.turn = 0
+    return moving
+}
+function createFormatPosterMagnet() {
+    const glyphs = new Map<number, FormatMagnetGlyph>(); let pip: HTMLElement | null = null, endpoint: HTMLElement | null = null, previous = 0, accumulated = 0, frames = 0, motionPending = true
+    const set = (node: HTMLElement, key: string, value: string) => { if (node.style.getPropertyValue(key) !== value) node.style.setProperty(key, value) }
+    const flag = (node: HTMLElement, key: string) => { if (node.getAttribute(key) !== "1") node.setAttribute(key, "1") }
+    const clear = (node: HTMLElement, attribute: string, keys: readonly string[]) => { node.removeAttribute(attribute); for (const key of keys) node.style.removeProperty(key) }
+    const glyphKeys = ["--source-format-magnet-x", "--source-format-magnet-y", "--source-format-magnet-turn"]
+    const pipKeys = ["--source-format-pip-left", "--source-format-pip-top", "--source-format-pip-size", "--source-format-pip-turn", "--source-format-pip-visibility", "--source-format-pip-color"]
+    const clearGlyph = (glyph: FormatMagnetGlyph) => clear(glyph.node, "data-format-magnet-owned", glyphKeys)
+    const pause = () => { previous = 0; accumulated = 0; motionPending = true }
+    const reset = () => { pause(); for (const glyph of glyphs.values()) { glyph.x = glyph.y = glyph.vx = glyph.vy = glyph.turn = 0; clearGlyph(glyph) }; if (pip) clear(pip, "data-format-pip-owned", pipKeys); if (endpoint) clear(endpoint, "data-format-pip-endpoint-owned", ["--source-format-pip-endpoint-opacity"]) }
+    const registerGlyph = (index: number, node: HTMLElement) => { if (index < 0 || index >= 86) throw Error("FORMAT magnet glyph index outside86 native parts"); const old = glyphs.get(index); if (old) clearGlyph(old); const value = { node, x: 0, y: 0, vx: 0, vy: 0, turn: 0 }; glyphs.set(index, value); pause(); return () => { clearGlyph(value); if (glyphs.get(index) === value) glyphs.delete(index); pause() } }
+    const registerPip = (node: HTMLElement) => { if (pip && pip !== node) clear(pip, "data-format-pip-owned", pipKeys); pip = node; pause(); return () => { clear(node, "data-format-pip-owned", pipKeys); if (pip === node) pip = null; pause() } }
+    const registerEndpoint = (node: HTMLElement) => { if (endpoint && endpoint !== node) clear(endpoint, "data-format-pip-endpoint-owned", ["--source-format-pip-endpoint-opacity"]); endpoint = node; pause(); return () => { clear(node, "data-format-pip-endpoint-owned", ["--source-format-pip-endpoint-opacity"]); if (endpoint === node) endpoint = null; pause() } }
+    const paint = (now: number, integrate: boolean, g: FormatMagnetGeometry, enabled: boolean) => {
+        if (!enabled || glyphs.size !== 86 || !pip?.isConnected || !endpoint?.isConnected) { reset(); return false }
+        const u = g.unit, viewport = window.innerHeight, y = window.scrollY, axis = g.top - 837.5 * u, ending = g.top + 1429.12 * u, start = axis - viewport / 2, phase = Math.max(0, Math.min(1, (y - start) / Math.max(1, ending - axis))), sourceY = Math.min(ending, y + viewport / 2), sourceX = formatMagnetX((sourceY - g.top) / Math.max(.001, u)), diameter = 20 + 315 * (1 - (1 - phase) ** 3), circle = { x: g.pr.left + sourceX * u, y: sourceY, radius: diameter * u / 2 }, complete = phase >= 1
+        const parent = pip.offsetParent as HTMLElement | null, parentRect = parent?.getBoundingClientRect(), parentScale = parent && parentRect ? parentRect.width / Math.max(1, parent.offsetWidth) : 0
+        if (!parent || !parentRect || parentScale <= 0 || g.visual <= 0) { pause(); return false }
+        // Read all native rest boxes before writing any owned variables. CSS
+        // translate/rotate never change offsetLeft/Top or recapture a live pose.
+        const restRows = Array.from(glyphs.values()).map(glyph => { let x = 0, y = 0, node: HTMLElement | null = glyph.node; for (; node && node !== g.p; node = node.offsetParent as HTMLElement | null) { x += node.offsetLeft; y += node.offsetTop }; return { glyph, inside: node === g.p, rest: { x: g.pr.left + (x + glyph.node.offsetWidth / 2) * g.visual, y: g.top + (y + glyph.node.offsetHeight / 2) * g.visual, halfW: glyph.node.offsetWidth * g.visual / 2, halfH: glyph.node.offsetHeight * g.visual / 2 } } })
+        if (restRows.some(row => !row.inside || !row.glyph.node.isConnected)) { reset(); return false }
+        const ownsTravel = y >= start, size = (ownsTravel ? diameter : 20) * 41 / 20 * u / parentScale, centerX = ownsTravel ? circle.x : g.pr.left + 720 * u, centerY = ownsTravel ? circle.y : axis
+        set(pip, "--source-format-pip-left", ((centerX - parentRect.left) / parentScale - size / 2 - parent.clientLeft) + "px"); set(pip, "--source-format-pip-top", ((centerY - y - parentRect.top) / parentScale - size / 2 - parent.clientTop) + "px"); set(pip, "--source-format-pip-size", size + "px"); set(pip, "--source-format-pip-turn", "0deg"); set(pip, "--source-format-pip-visibility", complete ? "hidden" : "visible"); set(pip, "--source-format-pip-color", "#ffffff"); flag(pip, "data-format-pip-owned")
+        set(endpoint, "--source-format-pip-endpoint-opacity", complete ? "1" : "0"); flag(endpoint, "data-format-pip-endpoint-owned")
+        const onScreen = g.pr.bottom > 0 && g.pr.top < viewport || ownsTravel && !complete && circle.y - y + circle.radius > 0 && circle.y - y - circle.radius < viewport
+        if (!onScreen) { pause(); return false }
+        if (integrate) accumulated += previous ? Math.min(100, Math.max(0, now - previous)) : 1000 / 30
+        previous = now; let moving = motionPending, steps = 0
+        while (accumulated >= 1000 / 60) { accumulated -= 1000 / 60; steps++; moving = false; for (const row of restRows) moving = stepFormatMagnetGlyph(row.glyph, row.rest, ownsTravel && !complete ? circle : null) || moving }
+        if (steps) motionPending = moving
+        for (const { glyph } of restRows) { if (glyph.x || glyph.y || glyph.turn) { set(glyph.node, "--source-format-magnet-x", glyph.x / g.visual + "px"); set(glyph.node, "--source-format-magnet-y", glyph.y / g.visual + "px"); set(glyph.node, "--source-format-magnet-turn", glyph.turn + "deg"); flag(glyph.node, "data-format-magnet-owned") } else clearGlyph(glyph) }
+        frames++; g.p.setAttribute("data-format-magnet-glyph-count", String(glyphs.size)); g.p.setAttribute("data-format-magnet-phase", String(phase)); g.p.setAttribute("data-format-magnet-frames", String(frames))
+        return moving
+    }
+    return { paint, pause, reset, registerGlyph, registerPip, registerEndpoint, nodes: () => [...Array.from(glyphs.values(), value => value.node), ...[pip, endpoint].filter((node): node is HTMLElement => node !== null)], dispose: () => { reset(); glyphs.clear(); pip = endpoint = null }, debug: () => ({ glyphs: glyphs.size, hasPip: Boolean(pip), hasEndpoint: Boolean(endpoint), frames }) }
+}
+
 type ClosingRegistration = { node: HTMLElement; transform: string; width: string; left: string; top: string; height: string; origin: string; background: string; outline: string; z: string; pointer: string }
 type ClosingBody = FormatCollisionBody
 type ClosingConfig = { frozen: boolean; reduced: boolean; phone: boolean; root: HTMLElement | null }
 function createFormatClosingWorld() {
+    const magnet = createFormatPosterMagnet()
     let poster: ClosingRegistration | null = null, field: ClosingRegistration | null = null, config: ClosingConfig = { frozen: true, reduced: false, phone: false, root: null }, frame = 0, previous = 0, painted = 0, accumulator = 0, body: ClosingBody | null = null, lastCenter = 0, held = false, attached = false
     let chips: FormatChipBody[] = [], sequence = 0, played = false, chipAccumulator = 0, chipPrevious = 0, lastFieldWidth = 0, lastFieldHeight = 0, lastScroll = 0, lastScrollTime = 0, fastScroll = false
     const slots = new Map<number,{node:HTMLElement}>(), chipListeners = new Set<()=>void>(), promptListeners = new Set<()=>void>(), listeners = new Set<() => void>(), clamp = (x: number) => Math.max(0, Math.min(1, x)), ease = (x: number) => x < .5 ? 2 * x * x : 1 - 2 * (1 - x) * (1 - x)
-    const stopped = () => config.frozen || config.reduced || typeof document !== "undefined" && document.hidden
+    const stopped = () => !config.root || config.frozen || config.reduced || typeof document !== "undefined" && document.hidden
     const save = (node: HTMLElement, style: React.CSSProperties): ClosingRegistration => { const css = (key: keyof React.CSSProperties, fallback: string, unit = "px") => typeof style[key] === "number" ? style[key] + unit : String(style[key] ?? fallback); return { node, transform: css("transform", "", ""), width: css("width", node.style.width), left: css("left", node.style.left), top: css("top", node.style.top), height: css("height", node.style.height), origin: css("transformOrigin", node.style.transformOrigin, ""), background: css("backgroundColor", node.style.backgroundColor, ""), outline: css("outline", node.style.outline, ""), z: css("zIndex", node.style.zIndex, ""), pointer: css("pointerEvents", node.style.pointerEvents, "") } }
     const restore = (r: ClosingRegistration) => { const s = r.node.style; s.transform = r.transform; s.width = r.width; s.left = r.left; s.top = r.top; s.height = r.height; s.transformOrigin = r.origin; s.backgroundColor = r.background; s.outline = r.outline; s.zIndex = r.z; s.pointerEvents = r.pointer }
     const restoreDecoration = (node: HTMLElement, style: React.CSSProperties = {}) => {
@@ -372,7 +452,7 @@ function createFormatClosingWorld() {
         for (const key of ["outlineColor", "outlineStyle", "outlineWidth"] as const) if (style[key] !== undefined) s[key] = typeof style[key] === "number" ? style[key] + "px" : String(style[key])
     }
     const setHeld = (value: boolean) => { if (held !== value) { held = value; listeners.forEach(fn => fn()) } }
-    const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0; chipPrevious=0; chipAccumulator=0 }
+    const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0; previous = 0; painted = 0; accumulator = 0; chipPrevious=0; chipAccumulator=0; magnet.pause() }
     const geometry = () => {
         if (!poster || !field) return null
         const p = poster.node, f = field.node, ownerRect = config.root?.getBoundingClientRect()
@@ -397,8 +477,9 @@ function createFormatClosingWorld() {
     }
     const paint = (now: number, integrate: boolean) => {
         if (!poster || !field) return false
-        if (stopped()) { restore(poster); restore(field); body = null; setHeld(false); return false }
-        const g = geometry(); if (!g) return false
+        if (stopped()) { magnet.reset(); restore(poster); restore(field); body = null; setHeld(false); return false }
+        const g = geometry(); if (!g) { magnet.pause(); return false }
+        const magnetMoving = magnet.paint(now, integrate, g, !config.phone)
         fastScroll=lastScrollTime>0&&Math.abs(window.scrollY-lastScroll)*1000/Math.max(4,now-lastScrollTime)/Math.max(1,window.innerHeight)>.15;lastScroll=window.scrollY;lastScrollTime=now
         const { p, pr, fr, unit, visual } = g, start = g.top + 1429.12 * unit - window.innerHeight / 2 + .02 * window.innerHeight, end = Math.max(start + 1, g.fieldTop - .45 * window.innerHeight), progress = clamp((window.scrollY - start) / (end - start)), scale = 1 + (250 / 1440 - 1) * ease(clamp(progress / .75)), follow = ease(clamp(progress / .35)), targetY = (1 - ease(progress)) * window.innerHeight / 2 + ease(progress) * (.45 * window.innerHeight + 100 * unit + pr.height / 2 * 250 / 1440), ordinaryY = pr.top + pr.height / 2, xOffset = progress * (fr.left + g.fieldWidth / 2 - g.sourceCenterX)
         const paintBiasX = pr.left + pr.width / 2 - g.sourceCenterX
@@ -434,15 +515,15 @@ function createFormatClosingWorld() {
             p.style.backgroundColor = "#222222"; p.style.zIndex = "2"; p.style.pointerEvents = poster.pointer; p.style.outline = `${clamp(progress / .5) / Math.max(.001, visual * scale)}px solid white`
         }
         p.setAttribute("data-format-carried-progress", String(progress)); p.setAttribute("data-format-carried-state", body ? progress < .97 ? "returning" : "falling" : held ? "carried" : "original"); p.setAttribute("data-format-carried-children", String(p.children.length))
-        return Boolean(body && body.quiet < 30 && (fr.bottom > 0 && fr.top < window.innerHeight || centerY + g.height / 2 > 0 && centerY - g.height / 2 < window.innerHeight) || g.fr.bottom>0&&g.fr.top<window.innerHeight&&chips.some(b=>b.quiet<30))
+        return magnetMoving || Boolean(body && body.quiet < 30 && (fr.bottom > 0 && fr.top < window.innerHeight || centerY + g.height / 2 > 0 && centerY - g.height / 2 < window.innerHeight) || g.fr.bottom>0&&g.fr.top<window.innerHeight&&chips.some(b=>b.quiet<30))
     }
-    const tick = (now: number) => { frame = 0; if (stopped()) return; if (now - painted >= 1000 / 30) { painted = now; if (paint(now, true)) frame = requestAnimationFrame(tick); else { previous=0;accumulator=0 } } else frame = requestAnimationFrame(tick) }
+    const tick = (now: number) => { frame = 0; if (stopped()) return; if (now - painted >= 1000 / 30) { painted = now; if (paint(now, true)) frame = requestAnimationFrame(tick); else { previous=0;accumulator=0;magnet.pause() } } else frame = requestAnimationFrame(tick) }
     const schedule = () => { if (!stopped() && !frame) frame = requestAnimationFrame(tick) }
-    const changed = () => { cancel(); if (config.frozen || config.reduced) { if (poster) { restore(poster); poster.node.setAttribute("data-format-carried-progress", "0"); poster.node.setAttribute("data-format-carried-state", "original") } if (field) restore(field); body = null; chips=[]; if(field)field.node.setAttribute("data-format-chip-count","0");if(config.frozen&&played){played=false;promptListeners.forEach(fn=>fn())}chipListeners.forEach(fn=>fn()); paintSlots(); setHeld(false) } else if (!stopped()) { paint(performance.now(), false); schedule() } }
+    const changed = () => { cancel(); if (config.phone) magnet.reset(); if (config.frozen || config.reduced) { magnet.reset(); if (poster) { restore(poster); poster.node.setAttribute("data-format-carried-progress", "0"); poster.node.setAttribute("data-format-carried-state", "original") } if (field) restore(field); body = null; chips=[]; if(field)field.node.setAttribute("data-format-chip-count","0");if(config.frozen&&played){played=false;promptListeners.forEach(fn=>fn())}chipListeners.forEach(fn=>fn()); paintSlots(); setHeld(false) } else if (!stopped()) { paint(performance.now(), false); schedule() } }
     let observer: ResizeObserver | null = null
     const detach = () => { observer?.disconnect(); observer=null;if(attached){window.removeEventListener("scroll",schedule);window.removeEventListener("resize",changed);document.removeEventListener("visibilitychange",changed)}attached=false }
-    const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced || !poster || !field) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node) }
-    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties, currentStyle?: () => React.CSSProperties | undefined) => { const value = save(node, style); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); /* React has already committed the next caller style; never restore stale breakpoint declarations here. */ if (role === "poster") restoreDecoration(node, currentStyle?.()); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
+    const attach = () => { if (attached || typeof window === "undefined" || config.frozen || config.reduced || !poster || !field) return; attached = true; window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", changed); document.addEventListener("visibilitychange", changed); observer = new ResizeObserver(changed); if (poster) observer.observe(poster.node); if (field) observer.observe(field.node); for (const node of magnet.nodes()) observer.observe(node) }
+    const register = (role: "poster" | "field", node: HTMLElement, style: React.CSSProperties, currentStyle?: () => React.CSSProperties | undefined) => { const authored: React.CSSProperties = { ...style }; for (const key of ["width", "height", "left", "top", "transform", "transformOrigin"] as const) if (authored[key] === undefined) authored[key] = ""; const value = save(node, authored); restore(value); if (role === "poster") poster = value; else field = value; attach(); observer?.observe(node); changed(); return () => { observer?.unobserve(node); /* React has already committed the next caller style; never restore stale breakpoint declarations here. */ if (role === "poster") restoreDecoration(node, currentStyle?.()); if (role === "poster" && poster === value) { poster = null; body = null; setHeld(false) } if (role === "field" && field === value) field = null;if(!poster||!field)detach(); cancel() } }
     const slotPose = (index: number, knownRatio?:number): DetailStyle => {
         const chip = chips.find(b => b.slot === index), binding = formatChipVariantRuntime()
         if (!chip || !field || !binding || binding.values.length !== 21) return { opacity: 0, pointerEvents: "none" }
@@ -466,7 +547,8 @@ function createFormatClosingWorld() {
     }
     const registerSlot = (index: number,node: HTMLElement) => {if(index<0||index>=30||slots.has(index))throw Error("One owned native chip slot per index");const original={left:node.style.left,top:node.style.top,width:node.style.width,height:node.style.height,opacity:node.style.opacity,rotate:node.style.getPropertyValue("rotate"),pointer:node.style.pointerEvents};slots.set(index,{node});paintSlots();return()=>{slots.delete(index);chips=chips.filter(b=>b.slot!==index);const s=node.style;s.left=original.left;s.top=original.top;s.width=original.width;s.height=original.height;s.opacity=original.opacity;s.setProperty("rotate",original.rotate);s.pointerEvents=original.pointer;chipListeners.forEach(fn=>fn())}}
 
-    return { register, registerSlot, slotPose, spawn, canInput:()=>!stopped(), subscribeChips:(notify:()=>void)=>{chipListeners.add(notify);return()=>{chipListeners.delete(notify)}}, getTemplate:(index:number)=>chips.find(b=>b.slot===index)?.template??-1, subscribePrompts:(notify:()=>void)=>{promptListeners.add(notify);return()=>{promptListeners.delete(notify)}}, getPlayed:()=>played, configure: (next: ClosingConfig) => { config = next; if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; chips=[];slots.clear();chipListeners.clear();promptListeners.clear();listeners.clear() } }
+    const registerMagnet = (role: "glyph" | "pip" | "endpoint", node: HTMLElement, index = -1) => { const remove = role === "glyph" ? magnet.registerGlyph(index, node) : role === "pip" ? magnet.registerPip(node) : magnet.registerEndpoint(node); observer?.observe(node); changed(); return () => { observer?.unobserve(node); remove(); schedule() } }
+    return { registerMagnet, magnetDebug: magnet.debug, register, registerSlot, slotPose, spawn, canInput:()=>!stopped(), subscribeChips:(notify:()=>void)=>{chipListeners.add(notify);return()=>{chipListeners.delete(notify)}}, getTemplate:(index:number)=>chips.find(b=>b.slot===index)?.template??-1, subscribePrompts:(notify:()=>void)=>{promptListeners.add(notify);return()=>{promptListeners.delete(notify)}}, getPlayed:()=>played, configure: (next: ClosingConfig) => { if (config.root && config.root !== next.root) observer?.unobserve(config.root); config = next; if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); magnet.dispose(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; chips=[];slots.clear();chipListeners.clear();promptListeners.clear();listeners.clear() } }
 }
 type FormatClosingWorld = ReturnType<typeof createFormatClosingWorld>
 const FormatClosingContext = React.createContext<FormatClosingWorld | null>(null)
@@ -579,4 +661,18 @@ function useFormatFieldInput(world: FormatClosingWorld | null,props: LayerProps)
         Promise.resolve().then(()=>{if(!event.defaultPrevented&&world.canInput())world.spawn(x!,y!)})
     }
     return { onPointerDown:(event:FormatFieldEvent)=>{if(typeof props.onPointerDown==="function")props.onPointerDown(event);accept("pointer",event)},onTapStart:(event:FormatFieldEvent,info?:{point?:{x:number;y:number}})=>{if(typeof props.onTapStart==="function")props.onTapStart(event,info);accept("tap",event,info)} }
+}
+
+/** Public native elementId contract: format-poster-glyph-0..85 and
+ * format-poster-pip-end. Each part remains an editable native layer. */
+export function withFormatPosterGlyph(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const world = React.useContext(FormatClosingContext), remove = React.useRef<(() => void) | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => {
+            remove.current?.(); remove.current = null
+            if (node && world) { const match = node.id.match(/^format-poster-glyph-(\d+)$/); if (match && Number(match[1]) < 86) remove.current = world.registerMagnet("glyph", node, Number(match[1])); else if (node.id === "format-poster-pip-end") remove.current = world.registerMagnet("endpoint", node) }
+            writeRef(ref, node)
+        }, [world, ref])
+        return <Component {...props} ref={bind} data-format-poster-glyph-part="editable-native" />
+    }) as NativeLayer
 }
