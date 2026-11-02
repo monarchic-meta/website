@@ -228,10 +228,17 @@
     },
     "actualFramerSaved": false,
     "actualPreviewVerified": false,
-    "editorReloadVerified": false
+    "editorReloadVerified": false,
+    "actualFramerModelInstalled": true,
+    "currentModelReadback": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/source-native-v2-window-320/output.json",
+      "bytes": 647536,
+      "sha256": "ef38316833ef4c9b1807cd1ff88977a2dd3d9b287aa881cc39d4c34819296294"
+    },
+    "modelScope": "MCP320 confirms exact keyedv2 source, one public row, clean diagnostics, eight controls with only source-black Ink default, and exact two retained native ink values. All89other page bodies,16definitions,221code records and51source catalogs are preserved."
   },
   "remainingLimits": [
-    "Actual Framer saved source/export identity, editor reload and live Preview drag/scroll/Phone paint are pending writer installation.",
+    "Exact source/export identity and two retained black-ink controls are confirmed through MCP320. Actual editor reload and live Preview drag/scroll/Phone paint remain unverified.",
     "The full current-original native manifesto/investment/team/contact story and Phone More/menu are outside this finite mark correction.",
     "Native affine layout/scroll handoff is fitted, including the narrow profile; exact original page breakpoint and Phone hero extent require native layout evidence.",
     "Canvas2D depth-bin/alpha and quantized geometry are close adaptations, not exact original WebGL compositing.",
