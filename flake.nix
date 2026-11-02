@@ -297,6 +297,8 @@
             pnpm run check:source-origin-native-browser
             pnpm run check:source-origin-native-motion
             pnpm run check:source-origin-native-responsive
+            pnpm run check:source-origin-journey-browser
+            pnpm run check:source-origin-journey-provider
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf pkgs.inter ];
@@ -305,6 +307,14 @@
           source-origin-native-mixed = (mkWebsiteCheck "source-origin-native-mixed" ''
             export MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-origin-native-mixed
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
+          source-origin-journey-resources = (mkWebsiteCheck "source-origin-journey-resources" ''
+            export MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-origin-journey-resources
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
