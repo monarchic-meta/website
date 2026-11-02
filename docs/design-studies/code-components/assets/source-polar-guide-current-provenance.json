@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "LOCAL_SOURCE_AND_FIXTURES_PASS_NATIVE_SCHEMA_SAVE_RELOAD_AND_ACTUAL_PAINT_PENDING",
+  "status": "LOCAL_COMPATIBILITY6_STRICT_36_BROWSER_LOCKED_NIX_PASS_SAME_FILE_FRAMER_UPDATE_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -33,48 +33,61 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePolarGuideControls.tsx",
-    "sha256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
-    "bytes": 90763
+    "sha256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+    "bytes": 90871
   },
   "tests": {
     "strict": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-controls.mjs",
-      "sha256": "a83c8c3e682e98789eff364a249acd9ea970e64cfc120ad0cb449054fd542e64",
-      "bytes": 8030,
+      "sha256": "68e1e03f07a1f147a11e5f202fdec2306a451859a9155c166ff13a556dc15b9f",
+      "bytes": 8649,
       "groups": 6,
       "passed": true
     },
     "browser": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-browser.mjs",
-      "sha256": "925ea009b4c9c682ff9de090045d0f84e8c8797169a640d18916440ec7e6f04a",
-      "bytes": 19328,
+      "sha256": "b0a571af784be8acb85c0b37845bb2932ee470973f29f21f976c1a1d090b6e18",
+      "bytes": 19400,
       "groups": 36,
       "passed": true,
       "receipt": {
-        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/validation/final/result.json",
-        "sha256": "8c959914447a7363086fe7fa307e205650468b118c0cb8fea2b81298431c1de5",
-        "bytes": 3048
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
+        "bytes": 3102
       }
     },
     "lockedNix": {
       "status": "PASS",
-      "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
-      "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+      "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
       "strictGroups": 6,
       "browserChecks": 36,
       "fonts": "Locked DejaVu and Liberation Fontconfig",
       "browserReceipt": {
-        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
-        "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
         "bytes": 3102
       },
-      "historical": {
-        "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
-        "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+      "parent": {
+        "status": "PASS",
+        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
+        "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
         "strictGroups": 6,
         "browserChecks": 36,
-        "passed": true,
-        "staticScrollerGuardCovered": false
+        "fonts": "Locked DejaVu and Liberation Fontconfig",
+        "browserReceipt": {
+          "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+          "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+          "bytes": 3102
+        },
+        "historical": {
+          "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+          "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+          "strictGroups": 6,
+          "browserChecks": 36,
+          "passed": true,
+          "staticScrollerGuardCovered": false
+        }
       }
     },
     "actualFramerPaint": false,
@@ -331,5 +344,15 @@
     "delta": "The scroller applies its live height, flex and padding only when not frozen. The actual React18 SSR regression preserves authored Phone 796 px height and 28 px padding instead of imposing Desktop padding.",
     "previewRenderingUnchanged": true,
     "publicExportsUnchanged": true
+  },
+  "inertCompatibility": {
+    "parentSourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+    "source324": "Actual source create acknowledged70genuine rows but exposed TS2322 on JSX string inert. Same-file correction, no recreation.",
+    "delta": "Stable iframe ref sets native node.inert=true before provider factory/paint; nullable mutable React18 ref; no JSX inert attribute or cast.",
+    "inverseByteExact": true,
+    "public70RowsAnd5_3ControlsUnchanged": true,
+    "oldStringFormRejectedByTightenedBooleanContract": true,
+    "actualReact18DOMInitialInertAndPlaybackOffscreenChecks": true,
+    "actualNewSourceRegistration": false
   }
 }
