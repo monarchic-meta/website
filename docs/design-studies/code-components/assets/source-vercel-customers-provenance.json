@@ -1,0 +1,125 @@
+{
+  "schema": "source-vercel-customers.v1",
+  "id": "HERO-009",
+  "classification": "Source inspiration / credited recreation",
+  "sourceURL": "https://vercel.com/",
+  "credit": "Vercel and credited customer marks. Independently authored native rail behavior; source website JavaScript is not imported.",
+  "sourceObservations": {
+    "responsive": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/observed-responsive-timing.json",
+      "bytes": 84123,
+      "sha256": "2a3f5f795661781d0c027eedf7391fdcbe8dbd9d80e2e17f245e2aeb80fcb74b"
+    },
+    "exactBreakpoint": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/observed-breakpoint.json",
+      "bytes": 112904,
+      "sha256": "be133b2e54bbb2f8992ecbaeb0b50e013992d2148f913165550dd596e56cfd24"
+    },
+    "facts": {
+      "containerBoundaryPx": 961,
+      "desktop": "Static native six-brand grid",
+      "smaller": "Two repeated source strips translate left; six exact native SVG marks",
+      "computedDurationMs": 40000,
+      "declaredLocalSpeed": "50s; inherited CSS animation token computes40s",
+      "periodPx": 892,
+      "gapPx": 48,
+      "itemPaddingEachSidePx": 4,
+      "markWidthsPx": [
+        79,
+        130,
+        67,
+        116,
+        51,
+        113
+      ],
+      "markHeightsPx": [
+        16,
+        15,
+        18,
+        14,
+        40,
+        26
+      ],
+      "reducedMotion": "Static horizontal scrolling"
+    }
+  },
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceVercelAgenticStudy.tsx",
+    "bytes": 69145,
+    "sha256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+  },
+  "parent": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/parent-source-1953.tsx",
+    "bytes": 60919,
+    "sha256": "1953ef09b0683e083220e6d4067c974d426719935d3923739069a1fcdf222852"
+  },
+  "onlySourceDelta": "One additive HOC inserted before the unchanged default-component annotation. All old renderer, controls, exports and source bytes reconstruct exactly on removal.",
+  "publicAPI": {
+    "before": 11,
+    "after": 12,
+    "newOverride": "withVercelAgenticCustomerRail",
+    "componentControlCount": 12,
+    "componentsAdded": 0,
+    "controlsAdded": 0
+  },
+  "tests": {
+    "lockedNix": "/nix/store/ki6vax0jljpz4q11xzn8g0s6z6wmj6i9-monarchic-website-source-vercel-agentic-0.0.1",
+    "retained": {
+      "path": "/nix/store/ki6vax0jljpz4q11xzn8g0s6z6wmj6i9-monarchic-website-source-vercel-agentic-0.0.1/evidence/result.json",
+      "bytes": 191987,
+      "sha256": "4c1dfbe0fd353adf16776be251aa9a134428010814120772578b40efab90a790"
+    },
+    "customers": {
+      "path": "/nix/store/ki6vax0jljpz4q11xzn8g0s6z6wmj6i9-monarchic-website-source-vercel-agentic-0.0.1/evidence/customers/result.json",
+      "bytes": 2261,
+      "sha256": "9c0759c6d47e83ab4a3c95811f82c32ea321beb9a978f90e4cef081fcc3e83ab"
+    },
+    "retainedChecks": 32,
+    "newBrowserChecks": 25,
+    "mixedEditorPlacements": 60,
+    "peerReview": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/montreal-peer-review.json",
+      "bytes": 2540,
+      "sha256": "af8bdf24530b9f44c059e0e23a5e95c876e47e1afd040bdd0a80ef02f45d0023"
+    }
+  },
+  "nativeBindings": {
+    "creates": 0,
+    "moves": 0,
+    "deletes": 0,
+    "geometryWrites": 0,
+    "sourceModule": "SourceVercelAgenticStudy.tsx",
+    "rows": [
+      {
+        "id": "t2oBrIoc5",
+        "layout": "Desktop",
+        "name": "HERO-009 / Current original / customer-rail",
+        "type": "FrameNode",
+        "override": "withVercelAgenticCustomerRail"
+      },
+      {
+        "id": "rEeaw1frtt2oBrIoc5",
+        "layout": "Compact",
+        "name": "HERO-009 / Current original / customer-rail",
+        "type": "FrameNode",
+        "override": "withVercelAgenticCustomerRail"
+      },
+      {
+        "id": "o1O9VNMakt2oBrIoc5",
+        "layout": "Phone",
+        "name": "HERO-009 / Current original / customer-rail",
+        "type": "FrameNode",
+        "override": "withVercelAgenticCustomerRail"
+      }
+    ]
+  },
+  "differences": [
+    "Reduced motion uses one accessible brand sequence rather than duplicate static sequences.",
+    "Returning from the wide static layout retains the prior owned clock phase; original reset behavior is unobserved.",
+    "Live mirrors refresh on native child replacement or resizing; late SVG attribute-only edits require resize/reload. Native original artwork remains editable and unchanged on Canvas."
+  ],
+  "sourceRegisteredInFramer": false,
+  "actualNativeBindingsVerified": false,
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false
+}

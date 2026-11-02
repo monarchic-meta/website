@@ -594,6 +594,116 @@ function VercelAgenticSurface(props: Props) {
         {(error || status === "recovering") && <span role="status" style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center", color: "#555", fontSize: 10 }}>Restoring light…</span>}
     </div>
 }
+// Current original: the customer marquee is below the961px container boundary.
+// Its six source SVGs stay native/editable. Only Preview creates moving mirrors;
+// Canvas/export/thumbnail keep the authored native layout without a live clock.
+export function withVercelAgenticCustomerRail(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>(function AgenticCustomerRail(props, forwardedRef) {
+        const frozen = vercelFrozen(), controls = useVercelControls(frozen)
+        const [host, setHost] = React.useState<HTMLElement | null>(null)
+        const time = React.useRef(0), update = React.useRef<(() => void) | null>(null)
+        const receive = React.useCallback((node: HTMLElement | null) => {
+            setHost(node); vercelWriteRef(forwardedRef, node)
+        }, [forwardedRef])
+        React.useLayoutEffect(() => {
+            if (!host || frozen) return
+            const widths = [79, 130, 67, 116, 51, 113], heights = [16, 15, 18, 14, 40, 26]
+            const period = widths.reduce((sum, width) => sum + width + 8 + 48, 0)
+            const restoreStyles: Array<() => void> = []
+            let overlay: HTMLElement | null = null, animation: Animation | null = null
+            let visible = false, active = true, queued = false
+            const write = (element: HTMLElement | SVGElement, key: string, value: string) => {
+                const before = element.style.getPropertyValue(key), priority = element.style.getPropertyPriority(key)
+                restoreStyles.push(() => { if (before) element.style.setProperty(key, before, priority); else element.style.removeProperty(key) })
+                element.style.setProperty(key, value)
+            }
+            const clear = () => {
+                if (animation) { time.current = Number(animation.currentTime ?? time.current); animation.cancel(); animation = null }
+                overlay?.remove(); overlay = null
+                restoreStyles.splice(0).reverse().forEach(restore => restore())
+            }
+            const refresh = () => {
+                const state = getVercelControls()?.get() ?? VERCEL_DEFAULT
+                if (!animation) return
+                if (visible && !document.hidden && !state.paused && !state.reduced && !state.menuOpen) animation.play()
+                else animation.pause()
+            }
+            const build = () => {
+                clear()
+                if (!active || !host.isConnected || host.clientWidth >= 961) return
+                const originals = Array.from(host.querySelectorAll<HTMLElement | SVGElement>('[data-framer-name]'))
+                    .filter(node => /^HERO-009 \/ Current original \/ customer-[0-5]$/.test(node.getAttribute('data-framer-name') ?? ''))
+                    .sort((a, b) => Number(a.getAttribute('data-framer-name')?.slice(-1)) - Number(b.getAttribute('data-framer-name')?.slice(-1)))
+                if (originals.length !== 6) return
+                const artwork = originals.map(node => node.matches('svg,img') ? node : node.querySelector<HTMLElement | SVGElement>('svg,img'))
+                if (artwork.some(node => !node)) return
+                overlay = document.createElement('div')
+                overlay.setAttribute('data-vercel-customer-overlay', '')
+                Object.assign(overlay.style, { position: 'absolute', inset: '0', pointerEvents: 'none', userSelect: 'none' })
+                const track = document.createElement('div')
+                track.setAttribute('data-vercel-customer-track', '')
+                Object.assign(track.style, { position: 'absolute', left: '0', top: '0', width: period + 'px', height: '100%', willChange: controls.reduced ? 'auto' : 'transform' })
+                overlay.appendChild(track)
+                const copies = controls.reduced ? 1 : Math.ceil(host.clientWidth / period) + 1
+                const prefix = 'vercel-customer-' + Math.random().toString(36).slice(2) + '-'
+                for (let copy = 0; copy < copies; copy++) {
+                    let x = copy * period + 4
+                    for (let index = 0; index < artwork.length; index++) {
+                        const image = artwork[index]!.cloneNode(true) as HTMLElement | SVGElement
+                        const ids = new Map<string, string>()
+                        for (const node of [image, ...Array.from(image.querySelectorAll('[id]'))]) {
+                            const id = node.getAttribute('id')
+                            if (id) { const next = prefix + copy + '-' + index + '-' + ids.size; ids.set(id, next); node.setAttribute('id', next) }
+                        }
+                        for (const node of [image, ...Array.from(image.querySelectorAll('*'))]) {
+                            for (const attribute of Array.from(node.attributes)) {
+                                let value = attribute.value
+                                for (const [id, next] of ids) {
+                                    value = value.replaceAll('url(#' + id + ')', 'url(#' + next + ')')
+                                    if ((attribute.name === 'href' || attribute.name === 'xlink:href') && value === '#' + id) value = '#' + next
+                                }
+                                if (value !== attribute.value) node.setAttribute(attribute.name, value)
+                            }
+                        }
+                        image.removeAttribute('data-framer-name')
+                        if (copy) image.setAttribute('aria-hidden', 'true')
+                        Object.assign(image.style, { position: 'absolute', left: x + 'px', top: (host.clientHeight - heights[index]) / 2 + 'px', width: widths[index] + 'px', height: heights[index] + 'px', transform: 'none', display: 'block', maxWidth: 'none', pointerEvents: 'none' })
+                        track.appendChild(image); x += widths[index] + 8 + 48
+                    }
+                }
+                originals.forEach(node => write(node, 'visibility', 'hidden'))
+                write(host, 'overflow-x', controls.reduced ? 'auto' : 'hidden'); write(host, 'overflow-y', 'hidden')
+                host.appendChild(overlay)
+                if (!controls.reduced) {
+                    // The original currently computes40s even though its local
+                    // --marquee-speed says50s: the inherited animation token is
+                    // resolved at the source root. Match the observed motion.
+                    animation = track.animate([{ transform: 'translateX(0px)' }, { transform: 'translateX(-' + period + 'px)' }], { duration: 40000, iterations: Infinity, easing: 'linear' })
+                    animation.pause(); animation.currentTime = time.current; refresh()
+                }
+            }
+            const resize = new ResizeObserver(build)
+            const intersection = new IntersectionObserver(entries => { visible = entries.some(entry => entry.isIntersecting && entry.intersectionRatio > 0); refresh() })
+            const mutation = new MutationObserver(records => {
+                const changed = records.some(record => !(record.target instanceof Element && record.target.closest('[data-vercel-customer-overlay]')) && [...Array.from(record.addedNodes), ...Array.from(record.removedNodes)].some(node => !(node instanceof Element && node.matches('[data-vercel-customer-overlay]'))))
+                if (changed && !queued) { queued = true; queueMicrotask(() => { queued = false; if (active) build() }) }
+            })
+            update.current = refresh
+            resize.observe(host); intersection.observe(host)
+            mutation.observe(host, { childList: true, subtree: true })
+            document.addEventListener('visibilitychange', refresh); build()
+            return () => {
+                active = false; update.current = null
+                resize.disconnect(); intersection.disconnect(); mutation.disconnect()
+                document.removeEventListener('visibilitychange', refresh); clear()
+            }
+        }, [host, frozen, controls.reduced])
+        React.useLayoutEffect(() => { update.current?.() }, [controls.paused, controls.menuOpen])
+        return <Component {...props} ref={receive} />
+    })
+}
+
+
 /**
  * @framerSupportedLayoutWidth any
  * @framerSupportedLayoutHeight any

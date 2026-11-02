@@ -205,7 +205,9 @@
           '';
           source-vercel-agentic = (mkWebsiteCheck "source-vercel-agentic" ''
             export MONARCHIC_VERCEL_AGENTIC_EVIDENCE_DIR="$out/evidence"
+            export MONARCHIC_VERCEL_CUSTOMERS_EVIDENCE_DIR="$out/evidence/customers"
             pnpm run check:source-vercel-agentic
+            pnpm run check:source-vercel-customers
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
