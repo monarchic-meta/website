@@ -648,8 +648,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
-        "bytes": 3161,
-        "sha256": "b37475b308de233e7f091192a0f944b78f5def17d32273990d0dbbba3b7a2452"
+        "bytes": 5483,
+        "sha256": "94dec2d9eba7c57fc6bce15561a5d89300f43032094cb4f79887c72a7d37bcef"
       },
       "page": {
         "id": "JC1r1iwC4",
@@ -665,7 +665,12 @@
         "sha256": "e9e0184c9f14e0b8db3ccf87b27efa8ba56517f257751c81827e231c67f80fce"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "status": "SOURCE_SIZED_OPENING_AND_MENU_LOCAL_PASS_FULL_STORY_IN_PROGRESS",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      }
     },
     {
       "id": "HERO-017",
@@ -754,7 +759,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3891,
-    "sha256": "ca732eb760c2b6a21578bc3cf70ec0039f7bb408b6b8e86c2aebdc17690e146a"
+    "sha256": "ff4a037b33297c9f06547c601f9e143efcdbc2a924bf024910b5b4d790467f99"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

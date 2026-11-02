@@ -50,5 +50,44 @@
       "lines": 4
     },
     "boundary": "Native text and eight editable static spinner dots saved; Phone layout and internal Pause remain independent adaptations."
+  },
+  "currentOriginalSourceUpdate": {
+    "target": "Current original Origin website in the owner-edited list; earlier gallery-led work remains retained.",
+    "classification": "Source inspiration / credited recreation",
+    "status": "SOURCE_SIZED_OPENING_AND_MENU_LOCAL_PASS_FULL_STORY_IN_PROGRESS",
+    "sourceSHA256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
+    "publicOverrides": 7,
+    "components": 0,
+    "propertyControls": 0,
+    "implementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/portable-mixed60/receipt.json",
+      "bytes": 6000,
+      "sha256": "5999ba313e459d86ee20b5c89f77bfd2f52138b9f2ddb80fb3de488c5b400eb2"
+    },
+    "lockedFocusedResult": {
+      "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+      "bytes": 14731,
+      "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
+    },
+    "lockedMixedResult": {
+      "path": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+      "bytes": 261099,
+      "sha256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
+    },
+    "checks": {
+      "strictGroups": 3,
+      "focusedBrowser": 88,
+      "mixed": 19,
+      "mixedPlacements": 60
+    },
+    "behavior": "Source-sized native opening, genuine eight-path wordmark, six-part mark, Programs field, responsive first-tap behavior, keyboard/focus/cancellation-aware full menu and genuine Cedar reel admission. Full expanding-film/Programs/Partnerships/footer journey is in progress.",
+    "next": [
+      "Transfer the seven genuine overrides and bind the current source-sized native opening/menu; preserve the earlier native IDs and controls.",
+      "Finish the independently authored full following story, including six distinct program models, scroll reveal, heat, chrome and genuine provider lifecycle.",
+      "Verify actual native paint, moving Framer Preview and editor reload."
+    ],
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
