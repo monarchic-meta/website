@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "FULL_GUIDE_MODEL_PRESENT_STATIC_PAINT_AND_UNSUPPORTED_NATIVE_FIELDS_PENDING",
+  "status": "FULL_GUIDE_NATIVE_MODEL_AND_STATIC_PAINT_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -96,7 +96,6 @@
         "sha256": "2c511a727fbccdef4168101a1ccd47fbc5b69bd3172aadbad6ddbada1da4ffba"
       }
     },
-    "actualFramerPaint": false,
     "editorReload": false,
     "scope": "Actual React18/Chromium sourceSVG detail and paused pixels, native tap/keyboard/cancellation, native-name nested navigation, responsive scroller DOM replacement for navigation,1024TOC transition, early-access navigation, own motion budget and mocked official movieSDK interface. Actual provider playback and Framer native forwarding remain separate.",
     "nativeTocOwnership": {
@@ -110,7 +109,9 @@
         "bytes": 16517,
         "sha256": "2c511a727fbccdef4168101a1ccd47fbc5b69bd3172aadbad6ddbada1da4ffba"
       }
-    }
+    },
+    "actualNativeStaticPaintVerified": true,
+    "actualFramerPreviewPaintVerified": false
   },
   "publicAPI": {
     "explicitHOCs": 68,
@@ -364,7 +365,7 @@
     "Any canvas[data-study-source], including HERO-016, conservatively blocks all new SVG/iframe automatic motion. No legacy pool mutation or fake lease.",
     "Source early-access form layout is represented by editable native labels/frames with a real original-site exit. Native input catalogue binding and submission/backend behavior remain unresolved; this recipe does not send enquiries.",
     "Geist Mono and PP Neue Montreal native font availability/binding remain actual catalogue gates; explicit Inter/monospace substitutions are visible in prepared data.",
-    "Actual saved page, editor reload, SVG-node DOM forwarding, provider controls and Desktop/Phone behavior remain separate future gates."
+    "Actual model and serial native Desktop/Phone paint are confirmed. Moving Preview, editor reload, native SVG DOM forwarding and provider controls remain separate checks."
   ],
   "staticLayoutCorrection": {
     "parentSourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
@@ -399,7 +400,17 @@
     "actualPreviewVerified": false,
     "afterEditorReload": false,
     "sourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163",
-    "actualNativeStaticPaintVerified": false
+    "actualNativeStaticPaintVerified": true,
+    "afterRebootPreservation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/reboot-full-preservation-352/output.json",
+      "bytes": 17746,
+      "sha256": "f57cbf512fae3530d896a80e98e035af5729908efbe7bf64d47f5a2e9bcbcdf3"
+    },
+    "staticPaintReview": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/visual-review.json",
+      "bytes": 2561,
+      "sha256": "5d33f85f233d03d71993ea34f9ed461d917fdb8413e5d01d0bc78df3ddfad893"
+    }
   },
   "historicalBeforeOpaqueTooltip": {
     "implementation": {
@@ -631,7 +642,7 @@
       "missingConstraintsLocked": 126,
       "missingNativePointerEventsNone": 120,
       "blackCornerFillsAfterDocumentedNullAttempt": 120,
-      "surfaceConclusion": "Both rgba alpha0 and documented fill:null read back opaque black. Actual native paint remains uninspected; do not retry/replay either call or claim transparency."
+      "surfaceConclusion": "Four actual serial native exports show proper fine brackets and no opaque corner blocks. SVGNode.fill getter is not proof of an opaque native surface. No further corner-fill mutation is needed."
     },
     "preserved": {
       "oldPages": 90,
@@ -640,7 +651,7 @@
       "codePlacements": 233,
       "sourceFiles": 54
     },
-    "actualNativeStaticPaintVerified": false,
+    "actualNativeStaticPaintVerified": true,
     "actualPreviewVerified": false,
     "afterEditorReload": false,
     "nullSurfaceAttempt": {
@@ -648,6 +659,45 @@
       "bytes": 39319,
       "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
     },
-    "latestCompleteOwnerSHA256": "fb4da68193c9cc1ff12c1da2910cc26ee42bb094dd8b1ff557fbd908c4f4c123"
+    "latestCompleteOwnerSHA256": "fb4da68193c9cc1ff12c1da2910cc26ee42bb094dd8b1ff557fbd908c4f4c123",
+    "actualImages": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-0.jpg",
+        "height": 497,
+        "width": 1264,
+        "pixels": 628208,
+        "bytes": 32992,
+        "sha256": "900f9bdccc06ea91b6afdcec399cd3480e21ccdb6594d0cbf125888bb588e117"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-1.jpg",
+        "height": 860,
+        "width": 334,
+        "pixels": 287240,
+        "bytes": 22018,
+        "sha256": "92975160d811dc5d2ddd5f9ff467f925a61f6785d62837a3054a2b44b776174e"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-2.jpg",
+        "height": 1200,
+        "width": 1440,
+        "pixels": 1728000,
+        "bytes": 59310,
+        "sha256": "6bcf8b8694725b6b229df2389ac4e9aa341d669816566a282fb0db71d0271f27"
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-3.jpg",
+        "height": 874,
+        "width": 390,
+        "pixels": 340860,
+        "bytes": 24740,
+        "sha256": "c4ccc12a6f02a38b34ccaf277e5617dc57751f86ec4e045ba4ae9c02b526cbdd"
+      }
+    ],
+    "fullPreservationAfter349And350": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/reboot-full-preservation-352/output.json",
+      "bytes": 17746,
+      "sha256": "f57cbf512fae3530d896a80e98e035af5729908efbe7bf64d47f5a2e9bcbcdf3"
+    }
   }
 }

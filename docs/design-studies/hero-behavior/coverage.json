@@ -128,8 +128,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
-        "bytes": 18567,
-        "sha256": "3b74a47a0da07b793be38ba4e93d3f2409bb839e54e91121cdb0eaf0a895429f"
+        "bytes": 21116,
+        "sha256": "f05e766352c246f3908385eaf934efe99d13ece572354e2bf7698c102b239a3e"
       },
       "page": {
         "id": "QnxW3i1rV",
@@ -147,9 +147,10 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "FULL_GUIDE_MODEL_PRESENT_STATIC_PAINT_AND_UNSUPPORTED_NATIVE_FIELDS_PENDING",
+        "status": "FULL_GUIDE_NATIVE_MODEL_AND_STATIC_PAINT_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
         "actualFramerPreviewVerified": false,
-        "afterEditorReload": false
+        "afterEditorReload": false,
+        "actualNativeStaticPaintVerified": true
       }
     },
     {
@@ -759,7 +760,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "657882e9c429a3df5e789d4e089c0528634edcf44fbb07a32c7fe169c1d8c9fc"
+    "sha256": "87b67600d5d5a8bbe55351bdf56a6d737fb3f9017bcf9665b3ae878012000fd2"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -972,15 +973,20 @@
       347,
       348,
       349,
-      350
+      350,
+      351,
+      352,
+      353,
+      354
     ],
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false,
     "actualStaticPaintVerified": [
-      "HERO-009"
+      "HERO-009",
+      "HERO-003"
     ],
     "pending": [
-      "Polar actual native corner paint and unsupported native fields",
+      "Polar actual SVG forwarding, provider controls, moving Preview and editor reload",
       "Kaspar/FORMAT source and native transfer",
       "Origin opening/following native/source transfer; final22-HOC local journey checks complete",
       "Actual moving Framer Preview and editor reload"
@@ -1007,6 +1013,18 @@
         "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
       },
       "original327And343AcknowledgmentsAvailable": false
+    },
+    "polarAfterReboot": {
+      "fullPreservation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/reboot-full-preservation-352/output.json",
+        "bytes": 17746,
+        "sha256": "f57cbf512fae3530d896a80e98e035af5729908efbe7bf64d47f5a2e9bcbcdf3"
+      },
+      "staticPaintReview": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/visual-review.json",
+        "bytes": 2561,
+        "sha256": "5d33f85f233d03d71993ea34f9ed461d917fdb8413e5d01d0bc78df3ddfad893"
+      }
     }
   }
 }

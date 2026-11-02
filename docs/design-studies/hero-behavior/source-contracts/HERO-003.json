@@ -414,7 +414,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "FULL_GUIDE_MODEL_PRESENT_STATIC_PAINT_AND_UNSUPPORTED_NATIVE_FIELDS_PENDING",
+    "status": "FULL_GUIDE_NATIVE_MODEL_AND_STATIC_PAINT_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/compatibility-inert/final-compatibility-proof.json",
       "bytes": 1879,
@@ -433,13 +433,13 @@
     ],
     "behavior": "Complete current guide:11chapters,31figure plates,43rail buttons,10contents cards, query/navigation controls, first-view SVG construction, three continuing diagrams and genuine film provider.815parts in each true Desktop/Compact/Phone root. Local checks and saved-model readbacks do not establish actual Framer motion.",
     "next": [
-      "Inspect actual native home/contents-card paint before any further corner-material correction; no replay of327,343,349 or350.",
-      "Verify SVG forwarding, genuine film provider controls, actual moving Preview and editor reload."
+      "Verify actual native SVG DOM forwarding, genuine provider controls and full moving sequence in Framer Preview.",
+      "Verify persistence in the actual editor after reload."
     ],
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-polar-guide-current-provenance.json",
-      "bytes": 33909,
-      "sha256": "1b87bbf0b3b83a06e8e8c787913f32ae2dd4a48c63e9b37d622e1020bdaf0616"
+      "bytes": 36847,
+      "sha256": "ae76767c95b1bc1a1715dd58138c78434a1197bb7f653d8996f246418697f621"
     },
     "nativePage": {
       "id": "oaxCWfuHe",
@@ -483,7 +483,7 @@
         "missingConstraintsLocked": 126,
         "missingNativePointerEventsNone": 120,
         "blackCornerFillsAfterDocumentedNullAttempt": 120,
-        "surfaceConclusion": "Both rgba alpha0 and documented fill:null read back opaque black. Actual native paint remains uninspected; do not retry/replay either call or claim transparency."
+        "surfaceConclusion": "Four actual serial native exports show proper fine brackets and no opaque corner blocks. SVGNode.fill getter is not proof of an opaque native surface. No further corner-fill mutation is needed."
       },
       "preserved": {
         "oldPages": 90,
@@ -492,7 +492,7 @@
         "codePlacements": 233,
         "sourceFiles": 54
       },
-      "actualNativeStaticPaintVerified": false,
+      "actualNativeStaticPaintVerified": true,
       "actualPreviewVerified": false,
       "afterEditorReload": false,
       "nullSurfaceAttempt": {
@@ -500,7 +500,52 @@
         "bytes": 39319,
         "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
       },
-      "latestCompleteOwnerSHA256": "fb4da68193c9cc1ff12c1da2910cc26ee42bb094dd8b1ff557fbd908c4f4c123"
+      "latestCompleteOwnerSHA256": "fb4da68193c9cc1ff12c1da2910cc26ee42bb094dd8b1ff557fbd908c4f4c123",
+      "actualImages": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-0.jpg",
+          "height": 497,
+          "width": 1264,
+          "pixels": 628208,
+          "bytes": 32992,
+          "sha256": "900f9bdccc06ea91b6afdcec399cd3480e21ccdb6594d0cbf125888bb588e117"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-1.jpg",
+          "height": 860,
+          "width": 334,
+          "pixels": 287240,
+          "bytes": 22018,
+          "sha256": "92975160d811dc5d2ddd5f9ff467f925a61f6785d62837a3054a2b44b776174e"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-2.jpg",
+          "height": 1200,
+          "width": 1440,
+          "pixels": 1728000,
+          "bytes": 59310,
+          "sha256": "6bcf8b8694725b6b229df2389ac4e9aa341d669816566a282fb0db71d0271f27"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/native-inspection-3.jpg",
+          "height": 874,
+          "width": 390,
+          "pixels": 340860,
+          "bytes": 24740,
+          "sha256": "c4ccc12a6f02a38b34ccaf277e5617dc57751f86ec4e045ba4ae9c02b526cbdd"
+        }
+      ],
+      "fullPreservationAfter349And350": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/reboot-full-preservation-352/output.json",
+        "bytes": 17746,
+        "sha256": "f57cbf512fae3530d896a80e98e035af5729908efbe7bf64d47f5a2e9bcbcdf3"
+      }
+    },
+    "actualNativeStaticPaintVerified": true,
+    "staticPaintReview": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/visual-review.json",
+      "bytes": 2561,
+      "sha256": "5d33f85f233d03d71993ea34f9ed461d917fdb8413e5d01d0bc78df3ddfad893"
     }
   }
 }

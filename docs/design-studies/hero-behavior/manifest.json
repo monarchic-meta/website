@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 7772,
-      "sha256": "cba0c52ed41a5a06cf2a683b920b1ffc6c58d21620fb060a8fc68669a2cf7298"
+      "bytes": 7901,
+      "sha256": "d7884ab2115380f636225b2b0ee80985d71b5f30023263507d1324fe9e82e21a"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 53287,
-      "sha256": "919cb2143ebfe9afac72b76835e7a78f02d793010d003532e30286c69b653534"
+      "bytes": 54181,
+      "sha256": "5c86b1f9e1dfb880041dacd6e70bd68eaf52a7e54729726369ca0166517159ec"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3892,
-      "sha256": "657882e9c429a3df5e789d4e089c0528634edcf44fbb07a32c7fe169c1d8c9fc"
+      "sha256": "87b67600d5d5a8bbe55351bdf56a6d737fb3f9017bcf9665b3ae878012000fd2"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -332,7 +332,7 @@
         "phone": "kfvNvxrcn"
       }
     },
-    "pending": "Polar actual native corner paint and unsupported native fields; Kaspar/FORMAT source and native transfer; Origin opening/following native/source transfer; final22-HOC local journey checks complete; Actual moving Framer Preview and editor reload",
+    "pending": "Polar actual SVG forwarding, provider controls, moving Preview and editor reload; Kaspar/FORMAT source and native transfer; Origin opening/following native/source transfer; final22-HOC local journey checks complete; Actual moving Framer Preview and editor reload",
     "latestCompleteSourceReadback": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
       "bytes": 247139,
@@ -344,7 +344,8 @@
       "sha256": "ef38316833ef4c9b1807cd1ff88977a2dd3d9b287aa881cc39d4c34819296294"
     },
     "actualNativeStaticPaintVerified": [
-      "HERO-009"
+      "HERO-009",
+      "HERO-003"
     ],
     "finalPortfolioLocalReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/current-private-revision/final-source-receipt.json",
@@ -358,8 +359,8 @@
     },
     "HERO003": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
-      "bytes": 18567,
-      "sha256": "3b74a47a0da07b793be38ba4e93d3f2409bb839e54e91121cdb0eaf0a895429f"
+      "bytes": 21116,
+      "sha256": "f05e766352c246f3908385eaf934efe99d13ece572354e2bf7698c102b239a3e"
     },
     "HERO005": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
@@ -403,6 +404,16 @@
         "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
       },
       "original327And343AcknowledgmentsAvailable": false
+    },
+    "latestPolarPreservationAfterReboot": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/reboot-full-preservation-352/output.json",
+      "bytes": 17746,
+      "sha256": "f57cbf512fae3530d896a80e98e035af5729908efbe7bf64d47f5a2e9bcbcdf3"
+    },
+    "latestPolarStaticPaint": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/visual-review.json",
+      "bytes": 2561,
+      "sha256": "5d33f85f233d03d71993ea34f9ed461d917fdb8413e5d01d0bc78df3ddfad893"
     }
   }
 }
