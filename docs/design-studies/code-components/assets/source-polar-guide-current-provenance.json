@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "LOCAL_LIVE_TOC_6_STRICT_54_BROWSER_LOCKED_NIX_PASS_FRAMER_UPDATE_PENDING",
+  "status": "LOCAL_FINAL_6_STRICT_55_BROWSER_LOCKED_NIX_PASS_SAME_SHAPE_FRAMER_UPDATE_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -33,8 +33,8 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePolarGuideControls.tsx",
-    "bytes": 91007,
-    "sha256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d"
+    "bytes": 91046,
+    "sha256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163"
   },
   "tests": {
     "strict": {
@@ -47,22 +47,22 @@
     },
     "browser": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-polar-guide-browser.mjs",
-      "bytes": 21020,
-      "sha256": "8063e9787b41c3b268354927b63613b4f2bac6a8a54a7046876d8c035944ba00",
-      "groups": 40,
+      "bytes": 21572,
+      "sha256": "fcde9983dca286719da84842e9840aeccbadf89f20a8f29d03e913c60595915b",
+      "groups": 41,
       "passed": true,
       "receipt": {
-        "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
-        "bytes": 3351,
-        "sha256": "b7e4b9d040560cf1f0f5b2e6f08fd80bdfaa32f61e832fb09dd80f5fad32edde"
+        "path": "/nix/store/028kjxkrngr01zc792h5h6kd1kr3hzy0-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "bytes": 3458,
+        "sha256": "daf42d6e0d2af93fd58233c4e1d2f49134a26d999533d5155f03c917a892a0df"
       }
     },
     "lockedNix": {
       "status": "PASS",
-      "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1",
-      "sourceSHA256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d",
+      "path": "/nix/store/028kjxkrngr01zc792h5h6kd1kr3hzy0-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163",
       "strictGroups": 6,
-      "browserChecks": 54,
+      "browserChecks": 55,
       "fonts": "Locked DejaVu and Liberation Fontconfig",
       "browserReceipt": {
         "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
@@ -101,9 +101,9 @@
       "groups": 14,
       "passed": true,
       "receipt": {
-        "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1/evidence/toc/result.json",
+        "path": "/nix/store/028kjxkrngr01zc792h5h6kd1kr3hzy0-monarchic-website-source-polar-guide-0.0.1/evidence/toc/result.json",
         "bytes": 16517,
-        "sha256": "2fbfdf2b2ca05c4d5863284cff3e78f82958c7d6cc59da294a2f6d226ab22ac9"
+        "sha256": "2c511a727fbccdef4168101a1ccd47fbc5b69bd3172aadbad6ddbada1da4ffba"
       }
     }
   },
@@ -385,7 +385,7 @@
     "actualPreviewVerified": false,
     "afterEditorReload": false,
     "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
-    "pendingNativeTocRuntimeSourceSHA256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d"
+    "pendingNativeTocRuntimeSourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163"
   },
   "historicalBeforeOpaqueTooltip": {
     "implementation": {
@@ -518,5 +518,67 @@
     "newActualFixedNativeCases": 14,
     "all70ExportsAnd5_3ControlCallsUnchanged": true,
     "actualFramerSourceUpdate": false
+  },
+  "historicalBeforeTooltipMaterial": {
+    "implementation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-tooltip-material-fix/source364-parent.tsx",
+      "bytes": 91007,
+      "sha256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d"
+    },
+    "browser": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-tooltip-material-fix/browser-before.mjs",
+      "bytes": 21020,
+      "sha256": "8063e9787b41c3b268354927b63613b4f2bac6a8a54a7046876d8c035944ba00",
+      "groups": 40,
+      "passed": true,
+      "receipt": {
+        "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "bytes": 3351,
+        "sha256": "b7e4b9d040560cf1f0f5b2e6f08fd80bdfaa32f61e832fb09dd80f5fad32edde"
+      }
+    },
+    "lockedNix": {
+      "status": "PASS",
+      "path": "/nix/store/79y4r7lhamniz8a6lrzfry4cr5q22gjw-monarchic-website-source-polar-guide-0.0.1",
+      "sourceSHA256": "364876394d8bff938c5f0f21be8f62c9ff46dabefa7fdde8bd996a44b7a4ba9d",
+      "strictGroups": 6,
+      "browserChecks": 54,
+      "fonts": "Locked DejaVu and Liberation Fontconfig",
+      "browserReceipt": {
+        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
+        "bytes": 3102
+      },
+      "parent": {
+        "status": "PASS",
+        "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1",
+        "sourceSHA256": "1864dc8dfeeb49f2f5588c6ed5a2335cfd9e830b9301b5b69788d76d07da4bb5",
+        "strictGroups": 6,
+        "browserChecks": 36,
+        "fonts": "Locked DejaVu and Liberation Fontconfig",
+        "browserReceipt": {
+          "path": "/nix/store/3w9br3f2r6iyxj9vqzz459mq2l1pwk5d-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+          "sha256": "c6200fbd5fa5a2b2d133b6be91caa5b30883e94400d58f5b73a8bc7b78d90cd5",
+          "bytes": 3102
+        },
+        "historical": {
+          "sourceSHA256": "f216bea98632c48b21d63ef4c45a97606191d6bfd878e5447afb99cf8b81c740",
+          "path": "/nix/store/7sznadinyvwdk80myyg0x87zfhqmdxh6-monarchic-website-source-polar-guide-0.0.1",
+          "strictGroups": 6,
+          "browserChecks": 36,
+          "passed": true,
+          "staticScrollerGuardCovered": false
+        }
+      }
+    }
+  },
+  "nativeTooltipMaterialFix": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-tooltip-material-fix/final-source-receipt.json",
+      "bytes": 2305,
+      "sha256": "e8122200389c34525070816c078f45ef52f7479013ce294d1f3813f97509fd80"
+    },
+    "intent": "Original141414 tooltip background and pointer-events:none retained against native inline defaults; all prior source styling/opaqueID/Toc changes kept.",
+    "sourceUpdatePending": true
   }
 }
