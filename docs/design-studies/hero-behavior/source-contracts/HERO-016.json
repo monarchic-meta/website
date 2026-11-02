@@ -57,59 +57,53 @@
     "status": "FULL_JOURNEY_LOCAL_PASS_SOURCE_AND_NATIVE_TRANSFER_PENDING",
     "implementation": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
-      "bytes": 107182,
-      "sha256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+      "bytes": 107230,
+      "sha256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
       "publicOverrides": 22,
       "retainedOverrides": 7,
       "additiveOverrides": 15,
       "components": 0,
       "propertyControls": 0
     },
-    "sourceSHA256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+    "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
     "publicOverrides": 22,
     "components": 0,
     "propertyControls": 0,
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-origin-journey-provenance.json",
-      "bytes": 14058,
-      "sha256": "06c35ca5d706ab3cb215099c0000127a15c5789a8dab438cd938126e419e842c"
+      "bytes": 14722,
+      "sha256": "12c12ab29e5d16886369ef2ca6d4f2df1010604b58ae05aa9b57f9510aa2b441"
     },
     "lockedFocusedResults": {
       "strict": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
         "bytes": 1088,
-        "sha256": "664870d6129fe5279fdbfc9e993a485d9492358350f3fc71d450a84d8802178e",
-        "checks": 3
+        "sha256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6"
       },
       "browser": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
         "bytes": 2663,
-        "sha256": "c66354ae3458a0b4a0b06e375f9f94463db274d3787c51c939d0ad6e88e6d174",
-        "checks": 31
+        "sha256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6"
       },
       "motion": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
         "bytes": 1836,
-        "sha256": "66964a3910651d2eeeb62bf308c3ddc476374b09e4e710203b23164c2d279e6a",
-        "checks": 21
+        "sha256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0"
       },
       "responsive": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
-        "bytes": 14731,
-        "sha256": "5653430475a932ee4d086707071e1ab2a62d57cfbe4fcfdbb69fc70536def6fa",
-        "checks": 36
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+        "bytes": 15068,
+        "sha256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded"
       },
       "journey-browser": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
-        "bytes": 73591,
-        "sha256": "2e6b90901edc27d8d1645f8585af03144554aee844a99d0a6a7970d0c98df8d2",
-        "checks": 37
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+        "bytes": 75727,
+        "sha256": "591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3"
       },
       "journey-provider": {
-        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
-        "bytes": 3042,
-        "sha256": "bb02db09edf58fe704ff7eed25d7cb1a1bbad3b522275bbcad03c6dc6e0e0419",
-        "checks": 26
+        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+        "bytes": 3136,
+        "sha256": "5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0"
       },
       "mixed": {
         "path": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
@@ -125,9 +119,10 @@
     },
     "checks": {
       "strictGroups": 3,
-      "browserResourceChecks": 199,
+      "currentFocusedBrowser": 155,
+      "retainedResourceByExactCodeCarry": 48,
       "breakdown": {
-        "retainedOpening": 88,
+        "retainedOpening": 92,
         "followingJourney": 37,
         "providerMockLifecycle": 26,
         "mixed60Placements": 19,
@@ -188,6 +183,15 @@
       "fullFidelityApproved": false,
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
+    },
+    "menuNoWrapFix": {
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/native-menu-nowrap/final-source-receipt.json",
+        "bytes": 4840,
+        "sha256": "9b06a1ebeadebc8252f9c2ee9d62c9b16b15283defe4394849c11ffba13fae56"
+      },
+      "sourceOnlyChange": "type(menuLabel,'white-space:nowrap!important;'),",
+      "allPublicAndRenderingBodiesUnchanged": true
     }
   }
 }

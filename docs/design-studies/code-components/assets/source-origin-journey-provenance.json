@@ -7,8 +7,8 @@
   "scope": "Stage A opening/menu plus full following home journey:250vh expanding film, six distinct Programs, four Partnerships, footer, scroll heat and docked mark/logotype.",
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
-    "bytes": 107182,
-    "sha256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+    "bytes": 107230,
+    "sha256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
     "publicOverrides": 22,
     "retainedOverrides": 7,
     "additiveOverrides": 15,
@@ -51,44 +51,38 @@
   },
   "tests": {
     "lockedNix": {
-      "focused": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1",
+      "focused": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1",
       "mixed": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1",
       "results": {
         "strict": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
           "bytes": 1088,
-          "sha256": "664870d6129fe5279fdbfc9e993a485d9492358350f3fc71d450a84d8802178e",
-          "checks": 3
+          "sha256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6"
         },
         "browser": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
           "bytes": 2663,
-          "sha256": "c66354ae3458a0b4a0b06e375f9f94463db274d3787c51c939d0ad6e88e6d174",
-          "checks": 31
+          "sha256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6"
         },
         "motion": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
           "bytes": 1836,
-          "sha256": "66964a3910651d2eeeb62bf308c3ddc476374b09e4e710203b23164c2d279e6a",
-          "checks": 21
+          "sha256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0"
         },
         "responsive": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
-          "bytes": 14731,
-          "sha256": "5653430475a932ee4d086707071e1ab2a62d57cfbe4fcfdbb69fc70536def6fa",
-          "checks": 36
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "bytes": 15068,
+          "sha256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded"
         },
         "journey-browser": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
-          "bytes": 73591,
-          "sha256": "2e6b90901edc27d8d1645f8585af03144554aee844a99d0a6a7970d0c98df8d2",
-          "checks": 37
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+          "bytes": 75727,
+          "sha256": "591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3"
         },
         "journey-provider": {
-          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
-          "bytes": 3042,
-          "sha256": "bb02db09edf58fe704ff7eed25d7cb1a1bbad3b522275bbcad03c6dc6e0e0419",
-          "checks": 26
+          "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+          "bytes": 3136,
+          "sha256": "5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0"
         },
         "mixed": {
           "path": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
@@ -98,20 +92,22 @@
         }
       },
       "strictGroups": 3,
-      "baselineBrowser": 88,
+      "baselineBrowser": 92,
       "newJourneyBrowser": 37,
       "newProviderLifecycle": 26,
       "mixedChecks": 19,
       "mixedPlacements": 60,
-      "browserResourceChecks": 199,
+      "browserResourceChecks": 203,
       "browserResourceBreakdown": {
-        "retainedOpening": 88,
+        "retainedOpening": 92,
         "followingJourney": 37,
         "providerMockLifecycle": 26,
         "mixed60Placements": 19,
         "threeWorldProgramsHeat": 29
       },
-      "countingBoundary": "199 browser/resource assertions plus3 strict groups, all on final5089. External owner-upgrade and server-render receipts are separate; real external Vimeo playback and Framer paint are not included."
+      "countingBoundary": "Currente337 locked focused suite:3strict +155browser assertions including4new Inter native paragraph cases. Earlier5089 locked mixed19 andaggregate29 remain separately pinned; their renderer/gate/controller bodies are byte-exact by whole-module inverse, not re-executed for the menu-only CSS edit.",
+      "currentSourceFocusedBrowser": 155,
+      "retainedResourceChecksByExactCodeCarry": 48
     },
     "baselinePortability": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/baseline-port-prepared/report.json",
@@ -209,10 +205,12 @@
     "afterEditorReload": false,
     "additionalThreeWorldProgramsHeatFixturePending": false,
     "strictGroups": 3,
-    "browserResourceChecks": 199,
+    "browserResourceChecks": 203,
     "nativeOpeningSaved": false,
-    "sourceRegistrationScope": "Final5089 source with22 public overrides; source/native transfer is separate from the historical page and local checks.",
-    "sourceFidelityApproved": false
+    "sourceRegistrationScope": "Finale337 source with22public overrides; native/source transfer remains separate from local verification and historical sourceA7.",
+    "sourceFidelityApproved": false,
+    "currentSourceFocusedBrowserChecks": 155,
+    "retainedResourceChecksByExactCodeCarry": 48
   },
   "knownDifferences": [
     "Scalar/procedural material and seeded model transfer are independent fits, not original shader code.",
@@ -220,5 +218,14 @@
     "Source Operational branch crashes; this recreation deliberately presents a working matching model.",
     "Actual native/code DOM forwarding, external film playback, moving Framer Preview and editor reload remain separate gates.",
     "The native opening32 and following155 families, actual native/code forwarding, generated editor posters and responsive saved bounds still need their own authoring/readback gates. Local success does not establish complete source fidelity."
-  ]
+  ],
+  "menuNoWrapFix": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/native-menu-nowrap/final-source-receipt.json",
+      "bytes": 4840,
+      "sha256": "9b06a1ebeadebc8252f9c2ee9d62c9b16b15283defe4394849c11ffba13fae56"
+    },
+    "sourceOnlyChange": "type(menuLabel,'white-space:nowrap!important;'),",
+    "allPublicAndRenderingBodiesUnchanged": true
+  }
 }
