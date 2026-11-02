@@ -215,7 +215,7 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "CURRENT_NATIVE_BEHAVIOR_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+        "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_STATIC_PAINT_CHECKED_PREVIEW_AND_RELOAD_PENDING",
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       },
