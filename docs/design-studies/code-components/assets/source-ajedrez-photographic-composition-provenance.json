@@ -18,8 +18,8 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
-    "bytes": 80277,
-    "sha256": "d5e714e963351a56f53182a0a8dc940f31d51473a3c5372e5582c33b7249cfa2"
+    "bytes": 80251,
+    "sha256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7"
   },
   "lineage": {
     "parent": {
@@ -28,7 +28,7 @@
       "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
     },
     "extensionStart": "\n// Source-cut photographic compositions.",
-    "extensionSHA256": "dce80c16d0482b0df87bea98e043a529719b274af5bad0a458c0206d112f2e9e",
+    "extensionSHA256": "a85786bf4dbd6c2163cec3f3e79338c7779c491f5932e00ac1d90e7358bc0225",
     "filmHookLine": "        useAjedrezPhotographicComposition(host, state)\n",
     "headerAmendment": {
       "old": " * through its shared clock. Other photographic passages remain still-held;\n * their internal motion and unreviewed audio are not claimed as restored.",
@@ -1136,7 +1136,8 @@
     "canvas": "Off for editor/export/thumbnail/reduced; native authored poster remains.",
     "buffer": "Transformed bounds×DPR; cap960×1704 and2,000,000pixels; cached ready images refresh paused and replaced hosts.",
     "semanticNativeScenes": "Source-corresponding existing groups5/27/31/35 temporarily override oldclock-selectedgroup during photographic cuts. Phase opacity/visibility/aria restore against latest baseclock while custom late caller styles remain intact; allothernative content/IDs staymounted.",
-    "metadata": "Native source metadata and independent caption/line remain text above full-extent clean photographic tiles. All old source groups/IDs remain mounted."
+    "metadata": "Native source metadata and independent caption/line remain text above full-extent clean photographic tiles. All old source groups/IDs remain mounted.",
+    "imageFailure": "A failed material retains the native fallback without same-pose retry. Final listener release discards the failed entry, so later replay/re-entry retries the actual URL."
   },
   "nativeCaptionPlan": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/four-editable-caption-recipe-v3.json",
@@ -1165,19 +1166,19 @@
     "afterEditorReload": false,
     "sourceFidelityApproved": false,
     "exactSourceBrowserResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/browser-genuine-final/result.json",
-      "bytes": 5009,
-      "sha256": "1d3975df8d3d5388b4a90a950cdc2d8bf52ba8c2856ed0942150ce0794e85ab6",
-      "sourceSHA256": "d5e714e963351a56f53182a0a8dc940f31d51473a3c5372e5582c33b7249cfa2",
-      "checks": 33,
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/browser-genuine-retry/result.json",
+      "bytes": 5462,
+      "sha256": "74b1f11cfe8e143f2be417abd184869b0354933fef901b35d964489ec3637cc6",
+      "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
+      "checks": 37,
       "genuineSourceMaterial": true
     },
     "reproducibleChecker": "scripts/check-source-ajedrez-photo-composition.mjs",
-    "ownedSVGFixtureChecks": 33,
+    "ownedSVGFixtureChecks": 37,
     "exactSourceStrictResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/strict-final.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/strict-retry.json",
       "bytes": 1258,
-      "sha256": "aa2dfb770f8ecf2e26a3e9c388a012c1dc334b7f9b702cad107e6d008327a995",
+      "sha256": "f05120c162479a21a2bffb98d76cb7d3a1b5d79595c88e7b7e214b6a92381112",
       "checks": 9
     }
   }

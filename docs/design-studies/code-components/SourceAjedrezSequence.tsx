@@ -565,7 +565,7 @@ function ajedrezPhotographicImages() {
         return { record: own, release() {
             own.listeners.delete(listener)
             if (own.listeners.size) return
-            if (own.state === 'ready' || own.state === 'failed') { prune(); return }
+            if (own.state === 'ready') { prune(); return }
             const index = queue.indexOf(own); if (index >= 0) queue.splice(index, 1)
             if (loading === own) { own.image.onload = null; own.image.onerror = null; own.image.removeAttribute('src'); loading = null }
             records.delete(url); pump()
