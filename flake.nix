@@ -181,6 +181,8 @@
             export MONARCHIC_AJEDREZ_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-ajedrez-sequence
             pnpm run check:source-ajedrez-browser
+            export MONARCHIC_AJEDREZ_COMPOSITION_EVIDENCE_DIR="$out/evidence/photographic-composition"
+            pnpm run check:source-ajedrez-photo-composition
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
