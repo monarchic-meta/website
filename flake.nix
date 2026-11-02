@@ -291,6 +291,17 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-origin-native = (mkWebsiteCheck "source-origin-native" ''
+            export MONARCHIC_ORIGIN_NATIVE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-origin-native-strict
+            pnpm run check:source-origin-native-browser
+            pnpm run check:source-origin-native-motion
+            pnpm run check:source-origin-native-responsive
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''
             export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
             pnpm run check:source-hero-journey-study
