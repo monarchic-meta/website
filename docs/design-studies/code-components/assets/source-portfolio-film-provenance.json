@@ -527,9 +527,19 @@
       "bytes": 5494,
       "sha256": "c414467de8c4c653cbee87ab198d1a03c70bea3394f99f96585ee14c68b609a9"
     },
-    "framerInstalled": false,
+    "framerInstalled": true,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "sourceModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/source-window-322/output.json",
+      "bytes": 497460,
+      "sha256": "cf2c328ad771c0726eca44a62d5474e7609c010092ce46402e4d10a31331d05c"
+    },
+    "nativeModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/native-window-323/complete-model-proof.json",
+      "bytes": 3283,
+      "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
+    }
   },
   "privateArtworkRevision": {
     "value": "managed-carousel-cache-v1",

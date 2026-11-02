@@ -903,5 +903,24 @@
         "Browser automation remains off after wrong-chat routing. No new actual Framer Preview or reload checks were performed for this append."
       ]
     }
+  },
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list. Earlier selected-gallery evidence remains historical.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "GLYPH_AND_TRAVELLING_PIP_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+    "implementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-source-receipt.json",
+      "bytes": 9181,
+      "sha256": "7f1c94000da2eb7be824bb964c4f6c54b69d127cae5d0cc9c1091ee0a8e52a72"
+    },
+    "behavior": "Eighty-six native uppercase glyphs respond to the travelling circle with source-grounded attraction, spring and tangent rotation; one endpoint family preserves the source resting circle. All earlier work stays retained.",
+    "next": [
+      "Update the same existing source file with its124 genuine overrides.",
+      "Duplicate native source-font text into the87 new editable families, preserving the ten old comparison lines.",
+      "Verify actual Framer font forwarding, motion, responsive host replacement and editor reload."
+    ]
   }
 }

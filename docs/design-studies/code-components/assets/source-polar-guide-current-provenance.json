@@ -354,5 +354,22 @@
     "oldStringFormRejectedByTightenedBooleanContract": true,
     "actualReact18DOMInitialInertAndPlaybackOffscreenChecks": true,
     "actualNewSourceRegistration": false
+  },
+  "framerCurrentModel": {
+    "installed": true,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/compatibility-source-window-326/output.json",
+      "bytes": 517717,
+      "sha256": "8b79eec77f3d8ad46eed63c32c9e2ef5288f779134bd320d17f2563222fc033a"
+    },
+    "diagnostics": [],
+    "rows": 70,
+    "controlCounts": [
+      5,
+      3
+    ],
+    "nativeGuideInstalled": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

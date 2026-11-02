@@ -61,11 +61,22 @@
     "Seeded lens starts and independent caption text replace random source placements and meme copy.",
     "Editorial vertical guides measure retained utility/project hooks when available; narrow fallback columns are declared fits.",
     "Motion uses the admitted film clock instead of an extra whole-document wall-clock loop.",
-    "Native Framer binding, actual Preview and editor reload remain pending."
+    "Source and native bindings are confirmed through MCP322–323. Actual moving Preview and editor reload remain unverified."
   ],
   "framer": {
-    "installed": false,
+    "installed": true,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "genuineOverride": "codeFile/fTk_HXl:withPortfolioSourceEffects",
+    "sourceModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/source-window-322/output.json",
+      "bytes": 497460,
+      "sha256": "cf2c328ad771c0726eca44a62d5474e7609c010092ce46402e4d10a31331d05c"
+    },
+    "nativeModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/native-window-323/complete-model-proof.json",
+      "bytes": 3283,
+      "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
+    }
   }
 }

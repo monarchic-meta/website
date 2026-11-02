@@ -407,5 +407,34 @@
       "bytes": 194,
       "sha256": "4e076d7973aaa8dc1dc8cf3747ca39b9fc1e3839bfd39b2ab21400c54c0daec2"
     }
-  ]
+  ],
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list. Earlier selected-gallery evidence remains historical.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "FULL_GUIDE_SOURCE_MODEL_CONFIRMED_NATIVE_GUIDE_PENDING",
+    "implementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/compatibility-inert/final-compatibility-proof.json",
+      "bytes": 1879,
+      "sha256": "85e43ba54573541ea0fad7d5a3d8dce1f7da93e52b5466a3cd24aac9826ca4ef"
+    },
+    "sourceModelReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/compatibility-source-window-326/output.json",
+      "bytes": 517717,
+      "sha256": "8b79eec77f3d8ad46eed63c32c9e2ef5288f779134bd320d17f2563222fc033a"
+    },
+    "source": "bed6dafc419f46a662e2b9551e29f240ba060c54bdef09e2f574f46b6fae0898",
+    "publicRows": 70,
+    "controlCounts": [
+      5,
+      3
+    ],
+    "behavior": "Full current eleven-chapter guide, thirty-one figure plates, chapter/TOC controls, constructed native SVG diagrams and genuine film provider. Source/code is registered; the new815-part native page has not been authored.",
+    "next": [
+      "Create the current guide page with true Desktop/Compact/Phone roots, retaining the earlier comparison page.",
+      "Verify actual native SVG forwarding, provider interactions, paint and editor reload."
+    ]
+  }
 }

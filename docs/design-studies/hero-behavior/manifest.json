@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 5835,
-      "sha256": "69bf3c5c51ef2cefab46505c570c34b3ed9201fe13306b856c852b12ac3457c0"
+      "bytes": 6634,
+      "sha256": "b81fae714ecfd96af07c4f5778592dd83bdee43b01688788986d732257c4d4f6"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 50695,
-      "sha256": "a1e71d2c494f44c64ab869badccc4b80daa0ff9247fb28e94222b820f2b30a9f"
+      "bytes": 51493,
+      "sha256": "f01e17ceae5d5011e85c5972987e755e09587b8f64df939738ea9002faa1d87b"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
-      "bytes": 3890,
-      "sha256": "6fef14ab6c7b929c76699efd3cd6427c9091585768f0077cf634c9578e6d139b"
+      "bytes": 3891,
+      "sha256": "ca732eb760c2b6a21578bc3cf70ec0039f7bb408b6b8e86c2aebdc17690e146a"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -275,8 +275,8 @@
     ],
     "HERO004": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
-      "bytes": 13508,
-      "sha256": "9986602b5c83662847393da79f14bc793e9b1f0c83353accce2b8b8e3d5bea3f"
+      "bytes": 14476,
+      "sha256": "6d5689a5a419f46b81d427c2c2c7f29bb8650cff4a4156b11f2e37da3d2e2737"
     },
     "HERO009": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
@@ -326,7 +326,7 @@
         "path": "/playgrounds/source-inspiration/heroes/current/hero-012-mezmo-aura"
       }
     },
-    "pending": "H4 source/native transfers; Polar,Origin andFORMAT refinements; actualFramer movingPreview/reload.",
+    "pending": "Polar native guide; Kaspar/FORMAT source and native transfer; Origin opening and full following story; actual Framer moving Preview/reload.",
     "latestCompleteSourceReadback": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
       "bytes": 247139,
@@ -347,8 +347,28 @@
     },
     "HERO013": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
-      "bytes": 39646,
-      "sha256": "3c0f477345403947c17972b57f9216d387d0a93f63113ae36ec38e634f0e848a"
+      "bytes": 41012,
+      "sha256": "9ecc08e5ae6178dba27e69e0cb6e883e596a362f9ea043a63a33cb36f4fbad49"
+    },
+    "HERO003": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
+      "bytes": 15129,
+      "sha256": "9a87354660c1514c590c00ccb40ecb8626d2d06db9c87eb522dd9bd601e3045c"
+    },
+    "HERO005": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
+      "bytes": 10578,
+      "sha256": "278d6b2a731ed0ee392a9a043b0a5eac28c9b75c4abf56c0f83d85f869df9bac"
+    },
+    "latestPortfolioNativeModel": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/native-window-323/complete-model-proof.json",
+      "bytes": 3283,
+      "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
+    },
+    "latestPolarSource": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/compatibility-source-window-326/output.json",
+      "bytes": 517717,
+      "sha256": "8b79eec77f3d8ad46eed63c32c9e2ef5288f779134bd320d17f2563222fc033a"
     }
   }
 }

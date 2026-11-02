@@ -230,5 +230,23 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-005/model-metadata.json",
       "sha256": "45ae030d4af12562688da3fd6a3323122ce8fa21820b15a6c1f7f5d10f24cfa5"
     }
-  ]
+  ],
+  "currentOriginalSourceUpdate": {
+    "target": "Current original website/source work in the owner-edited list. Earlier selected-gallery evidence remains historical.",
+    "classification": "Source inspiration / credited recreation",
+    "fullFidelityApproved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "status": "CURRENT_NATIVE_BEHAVIOR_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+    "implementationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/final-source-receipt.json",
+      "bytes": 5303,
+      "sha256": "3ccd980a8e8c0ff3e93a864ef042c50f5d81446d09dcce59b4561a1f0c65ce4f"
+    },
+    "behavior": "Complete current opening with the existing actual ASCII renderer, source font fitting, pointer cue, keyboard scan/layout grid and independently expanding first four project photographs.",
+    "next": [
+      "Transfer the thirteen-override module and create the current native page, preserving the older gallery-led page.",
+      "Verify actual source-font/override forwarding, native paint, gestures and editor reload."
+    ]
+  }
 }

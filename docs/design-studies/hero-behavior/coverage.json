@@ -128,8 +128,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
-        "bytes": 13330,
-        "sha256": "f89b9e35caf8201aea81be5d9e6d3e6a962d8a338d2f2752cca3e529d3d355f7"
+        "bytes": 15129,
+        "sha256": "9a87354660c1514c590c00ccb40ecb8626d2d06db9c87eb522dd9bd601e3045c"
       },
       "page": {
         "id": "QnxW3i1rV",
@@ -145,7 +145,12 @@
         "sha256": "dd8c8d37e29e849b91d19d1be9ca061eb8cb26478f3fc6a10240da8bde812a02"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "status": "FULL_GUIDE_SOURCE_MODEL_CONFIRMED_NATIVE_GUIDE_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      }
     },
     {
       "id": "HERO-004",
@@ -155,8 +160,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-004.json",
-        "bytes": 13508,
-        "sha256": "9986602b5c83662847393da79f14bc793e9b1f0c83353accce2b8b8e3d5bea3f"
+        "bytes": 14476,
+        "sha256": "6d5689a5a419f46b81d427c2c2c7f29bb8650cff4a4156b11f2e37da3d2e2737"
       },
       "page": {
         "id": "SQpNyO_5_",
@@ -179,7 +184,7 @@
         "fullFidelityApproved": false,
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false,
-        "status": "FINAL_LOCKED_CHECK_PASS_SOURCE_NATIVE_TRANSFER_PENDING"
+        "status": "SOURCE_AND_NATIVE_CAROUSEL_EFFECTS_MODEL_CONFIRMED"
       }
     },
     {
@@ -190,8 +195,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
-        "bytes": 9328,
-        "sha256": "ad62ae423fbbab2c7a19dccdb9ba066e35e3cb671de0ba2033950cb25e30d618"
+        "bytes": 10578,
+        "sha256": "278d6b2a731ed0ee392a9a043b0a5eac28c9b75c4abf56c0f83d85f869df9bac"
       },
       "page": {
         "id": "hQLp25hBb",
@@ -207,7 +212,12 @@
         "sha256": "c2ebcdcfa5fca820cc0842a298c488b1fbb6c6910158922d9ab6ab21e7e75351"
       },
       "additionalRuntimeEvidence": [],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "status": "CURRENT_NATIVE_BEHAVIOR_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      }
     },
     {
       "id": "HERO-006",
@@ -520,8 +530,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
-        "bytes": 39646,
-        "sha256": "3c0f477345403947c17972b57f9216d387d0a93f63113ae36ec38e634f0e848a"
+        "bytes": 41012,
+        "sha256": "9ecc08e5ae6178dba27e69e0cb6e883e596a362f9ea043a63a33cb36f4fbad49"
       },
       "page": {
         "id": "nKpA0uJHr",
@@ -553,7 +563,12 @@
           "bytes": 1231
         }
       ],
-      "sourceFidelityApproved": false
+      "sourceFidelityApproved": false,
+      "currentOriginalSourceUpdate": {
+        "status": "GLYPH_AND_TRAVELLING_PIP_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      }
     },
     {
       "id": "HERO-014",
@@ -738,8 +753,8 @@
   ],
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
-    "bytes": 3890,
-    "sha256": "6fef14ab6c7b929c76699efd3cd6427c9091585768f0077cf634c9578e6d139b"
+    "bytes": 3891,
+    "sha256": "ca732eb760c2b6a21578bc3cf70ec0039f7bb408b6b8e86c2aebdc17690e146a"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -917,7 +932,10 @@
       "HERO-011",
       "HERO-012",
       "HERO-014",
-      "HERO-015"
+      "HERO-015",
+      "HERO-003",
+      "HERO-005",
+      "HERO-013"
     ],
     "modelCommands": [
       288,
@@ -933,7 +951,12 @@
       316,
       317,
       319,
-      320
+      320,
+      322,
+      323,
+      324,
+      325,
+      326
     ],
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false,
@@ -941,9 +964,10 @@
       "HERO-009"
     ],
     "pending": [
-      "H4 private revision source/native transfer",
-      "Polar/Origin/FORMAT authoring",
-      "Actual moving Framer Preview and editor reload"
+      "Polar full native page",
+      "Kaspar/FORMAT source and native transfer",
+      "Origin source/native refinements and full following story",
+      "Actual Framer moving Preview and editor reload"
     ]
   }
 }
