@@ -283,6 +283,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-kaspar-native = (mkWebsiteCheck "source-kaspar-native" ''
+            export MONARCHIC_KASPAR_NATIVE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-kaspar-native
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-current-journey = (mkWebsiteCheck "source-current-journey" ''
             export MONARCHIC_JOURNEY_EVIDENCE_DIR="$out/evidence/journey"
             pnpm run check:source-hero-journey-study

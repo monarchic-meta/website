@@ -69,6 +69,7 @@
     "check:mecha-scroll-mark-browser": "node scripts/check-mecha-scroll-mark-browser.mjs",
     "check:source-kaspar-ascii-study": "node scripts/check-source-kaspar-ascii-study.mjs",
     "check:source-kaspar-ascii-browser": "node scripts/check-source-kaspar-ascii-browser.mjs",
+    "check:source-kaspar-native": "node scripts/check-source-kaspar-native.mjs",
     "check:hero-behavior-integration": "node scripts/check-hero-behavior-integration.mjs",
     "check:source-hero-native-behaviors": "node scripts/check-source-hero-native-behaviors.mjs",
     "check:source-vercel-light-study": "node scripts/check-source-vercel-light-study.mjs",
