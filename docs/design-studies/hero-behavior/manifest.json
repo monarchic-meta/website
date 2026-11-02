@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 6787,
-      "sha256": "e6ac8a4791aeb8390c44bfd459e80825c31b1f9ef9501ef549c9b739662603bf"
+      "bytes": 7772,
+      "sha256": "cba0c52ed41a5a06cf2a683b920b1ffc6c58d21620fb060a8fc68669a2cf7298"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 51707,
-      "sha256": "f13d15d60c212c84517f941ba8546548fb31f939af1c52673b84efc5b0dfa760"
+      "bytes": 53287,
+      "sha256": "919cb2143ebfe9afac72b76835e7a78f02d793010d003532e30286c69b653534"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
-      "bytes": 3891,
-      "sha256": "ff4a037b33297c9f06547c601f9e143efcdbc2a924bf024910b5b4d790467f99"
+      "bytes": 3892,
+      "sha256": "657882e9c429a3df5e789d4e089c0528634edcf44fbb07a32c7fe169c1d8c9fc"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -324,9 +324,15 @@
         "compact": "DYmr99GZ9",
         "phone": "XAXV5n3aJ",
         "path": "/playgrounds/source-inspiration/heroes/current/hero-012-mezmo-aura"
+      },
+      "HERO-003": {
+        "id": "oaxCWfuHe",
+        "desktop": "YfqmCk3m0",
+        "compact": "i4kvQAIQ3",
+        "phone": "kfvNvxrcn"
       }
     },
-    "pending": "Polar native guide; Kaspar/FORMAT source and native transfer; Origin opening and full following story; actual Framer moving Preview/reload.",
+    "pending": "Polar actual native corner paint and unsupported native fields; Kaspar/FORMAT source and native transfer; Origin opening/following native/source transfer; final22-HOC local journey checks complete; Actual moving Framer Preview and editor reload",
     "latestCompleteSourceReadback": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
       "bytes": 247139,
@@ -352,8 +358,8 @@
     },
     "HERO003": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
-      "bytes": 15129,
-      "sha256": "9a87354660c1514c590c00ccb40ecb8626d2d06db9c87eb522dd9bd601e3045c"
+      "bytes": 18567,
+      "sha256": "3b74a47a0da07b793be38ba4e93d3f2409bb839e54e91121cdb0eaf0a895429f"
     },
     "HERO005": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
@@ -366,14 +372,37 @@
       "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
     },
     "latestPolarSource": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/compatibility-source-window-326/output.json",
-      "bytes": 517717,
-      "sha256": "8b79eec77f3d8ad46eed63c32c9e2ef5288f779134bd320d17f2563222fc033a"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/toc-tooltip-final-source-window-348/output.json",
+      "bytes": 534085,
+      "sha256": "90258b86aba714cf4a771f981a1bcbb7ba6a70d70e4c487ee87558e47ad90169"
     },
     "HERO016": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
-      "bytes": 5483,
-      "sha256": "94dec2d9eba7c57fc6bce15561a5d89300f43032094cb4f79887c72a7d37bcef"
+      "bytes": 10512,
+      "sha256": "21721b1af859885b0c88a6ca36d1c006ac5b4d2941c87c3b4ab553fa743be70c"
+    },
+    "latestPolarNativeGeometry": {
+      "pages": 91,
+      "nativeDefinitions": 16,
+      "codePlacements": 233,
+      "sourceFiles": 54,
+      "fullOld90And16PreservationThrough347": true,
+      "sourceReadback348": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/toc-tooltip-final-source-window-348/output.json",
+        "bytes": 534085,
+        "sha256": "90258b86aba714cf4a771f981a1bcbb7ba6a70d70e4c487ee87558e47ad90169"
+      },
+      "geometryReadback349": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/finite-geometry-native-window-349-durable/output.json",
+        "bytes": 202667,
+        "sha256": "de5231e6afe00ac913d68b8defd378755e88c288adc137d366a7cc3c0884339a"
+      },
+      "surfaceAttempt350": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/corner-null-fill-window-350/output.json",
+        "bytes": 39319,
+        "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
+      },
+      "original327And343AcknowledgmentsAvailable": false
     }
   }
 }

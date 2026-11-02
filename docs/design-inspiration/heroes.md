@@ -160,11 +160,15 @@ then connect a concise movement to a real planning, memory or verification
 diagram. This reference is particularly strong for extending one identity
 mechanism into a family of explanatory product graphics.
 
-**Evidence:** gallery recording and live hero inspected; live chapter navigation
-and changing credit/event values confirmed. The complete logo-assembly cycle
-was not characterized. Query-selected live content differs from the gallery's
-landing view; the hero was reached through its visible chapter control. Its
-conventional copy/object arrangement need not define Monarchic's homepage.
+**Evidence:** the current original was audited from its entry URL on Desktop
+and Phone: chapters00–10,31 figure plates,43 rail buttons, ten contents cards,
+hover dimming, chapter and figure jumps, URL updates and reverse scrolling.
+The genuine85.11-second Cloudflare film visibly advances, pauses and stops
+offscreen. Three SVG demonstrations continue moving after their construction.
+Precise draw easing, the full film and loop wrap remain unmeasured. Framer's
+new native guide and local behavior checks do not establish actual Preview or
+reload verification. The source-led recreation retains attribution and
+declares its summarized explanatory copy and form limitations.
 
 ### HERO-004 — Artemii Lebedev
 

@@ -128,8 +128,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
-        "bytes": 15129,
-        "sha256": "9a87354660c1514c590c00ccb40ecb8626d2d06db9c87eb522dd9bd601e3045c"
+        "bytes": 18567,
+        "sha256": "3b74a47a0da07b793be38ba4e93d3f2409bb839e54e91121cdb0eaf0a895429f"
       },
       "page": {
         "id": "QnxW3i1rV",
@@ -147,7 +147,7 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "FULL_GUIDE_SOURCE_MODEL_CONFIRMED_NATIVE_GUIDE_PENDING",
+        "status": "FULL_GUIDE_MODEL_PRESENT_STATIC_PAINT_AND_UNSUPPORTED_NATIVE_FIELDS_PENDING",
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       }
@@ -648,8 +648,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
-        "bytes": 5483,
-        "sha256": "94dec2d9eba7c57fc6bce15561a5d89300f43032094cb4f79887c72a7d37bcef"
+        "bytes": 10512,
+        "sha256": "21721b1af859885b0c88a6ca36d1c006ac5b4d2941c87c3b4ab553fa743be70c"
       },
       "page": {
         "id": "JC1r1iwC4",
@@ -667,7 +667,7 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "SOURCE_SIZED_OPENING_AND_MENU_LOCAL_PASS_FULL_STORY_IN_PROGRESS",
+        "status": "FULL_JOURNEY_LOCAL_PASS_SOURCE_AND_NATIVE_TRANSFER_PENDING",
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       }
@@ -758,8 +758,8 @@
   ],
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
-    "bytes": 3891,
-    "sha256": "ff4a037b33297c9f06547c601f9e143efcdbc2a924bf024910b5b4d790467f99"
+    "bytes": 3892,
+    "sha256": "657882e9c429a3df5e789d4e089c0528634edcf44fbb07a32c7fe169c1d8c9fc"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -961,7 +961,18 @@
       323,
       324,
       325,
-      326
+      326,
+      328,
+      329,
+      340,
+      342,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350
     ],
     "actualPreviewVerified": false,
     "actualEditorReloadVerified": false,
@@ -969,10 +980,33 @@
       "HERO-009"
     ],
     "pending": [
-      "Polar full native page",
+      "Polar actual native corner paint and unsupported native fields",
       "Kaspar/FORMAT source and native transfer",
-      "Origin source/native refinements and full following story",
-      "Actual Framer moving Preview and editor reload"
-    ]
+      "Origin opening/following native/source transfer; final22-HOC local journey checks complete",
+      "Actual moving Framer Preview and editor reload"
+    ],
+    "latestCurrentModel": {
+      "pages": 91,
+      "nativeDefinitions": 16,
+      "codePlacements": 233,
+      "sourceFiles": 54,
+      "fullOld90And16PreservationThrough347": true,
+      "sourceReadback348": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/toc-tooltip-final-source-window-348/output.json",
+        "bytes": 534085,
+        "sha256": "90258b86aba714cf4a771f981a1bcbb7ba6a70d70e4c487ee87558e47ad90169"
+      },
+      "geometryReadback349": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/finite-geometry-native-window-349-durable/output.json",
+        "bytes": 202667,
+        "sha256": "de5231e6afe00ac913d68b8defd378755e88c288adc137d366a7cc3c0884339a"
+      },
+      "surfaceAttempt350": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/corner-null-fill-window-350/output.json",
+        "bytes": 39319,
+        "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
+      },
+      "original327And343AcknowledgmentsAvailable": false
+    }
   }
 }

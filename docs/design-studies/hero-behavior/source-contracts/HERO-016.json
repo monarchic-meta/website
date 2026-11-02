@@ -54,40 +54,140 @@
   "currentOriginalSourceUpdate": {
     "target": "Current original Origin website in the owner-edited list; earlier gallery-led work remains retained.",
     "classification": "Source inspiration / credited recreation",
-    "status": "SOURCE_SIZED_OPENING_AND_MENU_LOCAL_PASS_FULL_STORY_IN_PROGRESS",
-    "sourceSHA256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
-    "publicOverrides": 7,
+    "status": "FULL_JOURNEY_LOCAL_PASS_SOURCE_AND_NATIVE_TRANSFER_PENDING",
+    "implementation": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
+      "bytes": 107182,
+      "sha256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+      "publicOverrides": 22,
+      "retainedOverrides": 7,
+      "additiveOverrides": 15,
+      "components": 0,
+      "propertyControls": 0
+    },
+    "sourceSHA256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+    "publicOverrides": 22,
     "components": 0,
     "propertyControls": 0,
-    "implementationReceipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/portable-mixed60/receipt.json",
-      "bytes": 6000,
-      "sha256": "5999ba313e459d86ee20b5c89f77bfd2f52138b9f2ddb80fb3de488c5b400eb2"
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-origin-journey-provenance.json",
+      "bytes": 14058,
+      "sha256": "06c35ca5d706ab3cb215099c0000127a15c5789a8dab438cd938126e419e842c"
     },
-    "lockedFocusedResult": {
-      "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
-      "bytes": 14731,
-      "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
+    "lockedFocusedResults": {
+      "strict": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+        "bytes": 1088,
+        "sha256": "664870d6129fe5279fdbfc9e993a485d9492358350f3fc71d450a84d8802178e",
+        "checks": 3
+      },
+      "browser": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+        "bytes": 2663,
+        "sha256": "c66354ae3458a0b4a0b06e375f9f94463db274d3787c51c939d0ad6e88e6d174",
+        "checks": 31
+      },
+      "motion": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+        "bytes": 1836,
+        "sha256": "66964a3910651d2eeeb62bf308c3ddc476374b09e4e710203b23164c2d279e6a",
+        "checks": 21
+      },
+      "responsive": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+        "bytes": 14731,
+        "sha256": "5653430475a932ee4d086707071e1ab2a62d57cfbe4fcfdbb69fc70536def6fa",
+        "checks": 36
+      },
+      "journey-browser": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+        "bytes": 73591,
+        "sha256": "2e6b90901edc27d8d1645f8585af03144554aee844a99d0a6a7970d0c98df8d2",
+        "checks": 37
+      },
+      "journey-provider": {
+        "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+        "bytes": 3042,
+        "sha256": "bb02db09edf58fe704ff7eed25d7cb1a1bbad3b522275bbcad03c6dc6e0e0419",
+        "checks": 26
+      },
+      "mixed": {
+        "path": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+        "bytes": 261099,
+        "sha256": "3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4",
+        "checks": 19
+      }
     },
-    "lockedMixedResult": {
-      "path": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
-      "bytes": 261099,
-      "sha256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
+    "lockedAggregateResult": {
+      "path": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1/evidence/journey-resources/result.json",
+      "bytes": 80095,
+      "sha256": "5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1"
     },
     "checks": {
       "strictGroups": 3,
-      "focusedBrowser": 88,
-      "mixed": 19,
+      "browserResourceChecks": 199,
+      "breakdown": {
+        "retainedOpening": 88,
+        "followingJourney": 37,
+        "providerMockLifecycle": 26,
+        "mixed60Placements": 19,
+        "threeWorldProgramsHeat": 29
+      },
       "mixedPlacements": 60
     },
-    "behavior": "Source-sized native opening, genuine eight-path wordmark, six-part mark, Programs field, responsive first-tap behavior, keyboard/focus/cancellation-aware full menu and genuine Cedar reel admission. Full expanding-film/Programs/Partnerships/footer journey is in progress.",
+    "behavior": "Source-sized opening/menu followed by250vh expanding film, six distinct program models, four partnerships, footer, scroll heat and docked brand chrome. Independent controllers and procedural materials; genuine credited marks, photographs and source-film providers.",
+    "nativeTransfer": {
+      "openingSaved": false,
+      "followingSaved": false,
+      "stageARegistrationSourceSHA256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
+      "stageAFollowedByFinal22OverrideSource": true
+    },
+    "providerBoundary": "Real Vimeo handshake blocked by provider security challenge.26 mocked lifecycle checks do not establish external playback.",
     "next": [
-      "Transfer the seven genuine overrides and bind the current source-sized native opening/menu; preserve the earlier native IDs and controls.",
-      "Finish the independently authored full following story, including six distinct program models, scroll reveal, heat, chrome and genuine provider lifecycle.",
-      "Verify actual native paint, moving Framer Preview and editor reload."
+      "Transfer native opening and following story using the prepared typed field tables, retaining historical IDs/controls.",
+      "Verify actual native paint, moving Framer Preview, provider playback and editor reload."
     ],
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "historicalOpeningOnlyUpdate": {
+      "target": "Current original Origin website in the owner-edited list; earlier gallery-led work remains retained.",
+      "classification": "Source inspiration / credited recreation",
+      "status": "SOURCE_SIZED_OPENING_AND_MENU_LOCAL_PASS_FULL_STORY_IN_PROGRESS",
+      "sourceSHA256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
+      "publicOverrides": 7,
+      "components": 0,
+      "propertyControls": 0,
+      "implementationReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/portable-mixed60/receipt.json",
+        "bytes": 6000,
+        "sha256": "5999ba313e459d86ee20b5c89f77bfd2f52138b9f2ddb80fb3de488c5b400eb2"
+      },
+      "lockedFocusedResult": {
+        "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+        "bytes": 14731,
+        "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
+      },
+      "lockedMixedResult": {
+        "path": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+        "bytes": 261099,
+        "sha256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
+      },
+      "checks": {
+        "strictGroups": 3,
+        "focusedBrowser": 88,
+        "mixed": 19,
+        "mixedPlacements": 60
+      },
+      "behavior": "Source-sized native opening, genuine eight-path wordmark, six-part mark, Programs field, responsive first-tap behavior, keyboard/focus/cancellation-aware full menu and genuine Cedar reel admission. Full expanding-film/Programs/Partnerships/footer journey is in progress.",
+      "next": [
+        "Transfer the seven genuine overrides and bind the current source-sized native opening/menu; preserve the earlier native IDs and controls.",
+        "Finish the independently authored full following story, including six distinct program models, scroll reveal, heat, chrome and genuine provider lifecycle.",
+        "Verify actual native paint, moving Framer Preview and editor reload."
+      ],
+      "fullFidelityApproved": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

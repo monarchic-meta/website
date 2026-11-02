@@ -1,7 +1,7 @@
 {
   "schema": "source-polar-guide-current-provenance.v1",
   "classification": "Source inspiration / HERO-003 / current original source recreation",
-  "status": "LOCAL_FINAL_6_STRICT_55_BROWSER_LOCKED_NIX_PASS_SAME_SHAPE_FRAMER_UPDATE_PENDING",
+  "status": "FULL_GUIDE_MODEL_PRESENT_STATIC_PAINT_AND_UNSUPPORTED_NATIVE_FIELDS_PENDING",
   "source": {
     "url": "https://polar.sh/field-guide",
     "creator": "Polar",
@@ -65,9 +65,9 @@
       "browserChecks": 55,
       "fonts": "Locked DejaVu and Liberation Fontconfig",
       "browserReceipt": {
-        "path": "/nix/store/lnssayy6ngkpiqnyp8bl21cx026ya9qb-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
-        "sha256": "bf8759b418b191ba29e319e7a90b6ab612496accf7f2ffcec0f78ece227aa8f7",
-        "bytes": 3102
+        "path": "/nix/store/028kjxkrngr01zc792h5h6kd1kr3hzy0-monarchic-website-source-polar-guide-0.0.1/evidence/result.json",
+        "bytes": 3458,
+        "sha256": "daf42d6e0d2af93fd58233c4e1d2f49134a26d999533d5155f03c917a892a0df"
       },
       "parent": {
         "status": "PASS",
@@ -89,6 +89,11 @@
           "passed": true,
           "staticScrollerGuardCovered": false
         }
+      },
+      "tocReceipt": {
+        "path": "/nix/store/028kjxkrngr01zc792h5h6kd1kr3hzy0-monarchic-website-source-polar-guide-0.0.1/evidence/toc/result.json",
+        "bytes": 16517,
+        "sha256": "2c511a727fbccdef4168101a1ccd47fbc5b69bd3172aadbad6ddbada1da4ffba"
       }
     },
     "actualFramerPaint": false,
@@ -114,7 +119,7 @@
       "SourcePolarFilm"
     ],
     "expectedCatalogRows": 70,
-    "actualCatalogRows": null,
+    "actualCatalogRows": 70,
     "controls": {
       "SourcePolarGuideControls": 5,
       "SourcePolarFilm": 3
@@ -294,9 +299,18 @@
       "bytes": 2083
     },
     "historicalPage": "QnxW3i1rV",
-    "actualPage": null,
-    "actualSourceModule": null,
-    "actualIDs": null,
+    "actualPage": "oaxCWfuHe",
+    "actualSourceModule": "codeFile/fkIJFjE",
+    "actualIDs": {
+      "desktop": "YfqmCk3m0",
+      "compact": "i4kvQAIQ3",
+      "phone": "kfvNvxrcn",
+      "completeNativeTree": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/distinct-current-proof-329/saved-page-packets-from330/full-original-native-receipt.json.saved-own-page.json",
+        "bytes": 2819097,
+        "sha256": "b9bc46f047c5c008708f2b58fa270a89bbffb09c739c8002ba2e758e12668731"
+      }
+    },
     "sourceRows": 31,
     "nativeRoots": [
       1440,
@@ -336,7 +350,7 @@
       "bytes": 12810
     },
     "sourceSequence": "Home composition, ten-card TOC, genuine film, chapters 00–10, early-access destination and study credits.",
-    "staticCanvasGeometry": "Each native SVG wrapper authors its actual source viewBox ratio; the native editor does not depend on overrides to correct a generic square.",
+    "staticCanvasGeometry": "All126 numeric source-ratio heights and87 genuine SVG intrinsic dimensions read back positively after349. Framer omitted requested constraintsLocked; live overrides own responsive ratios.",
     "wireValidation": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/native-recipe-wire-validation.json",
       "sha256": "c4cc4eb5f55d4582032fca8ed66c61df3dc2def47a5413fee9a5ba299c1e2fc4",
@@ -371,9 +385,9 @@
   "framerCurrentModel": {
     "installed": true,
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/opaque-tooltip-source-window-342/output.json",
-      "bytes": 534066,
-      "sha256": "55bebf03a04ed9d0a927899a47acb6c58b454205993f047199114c9232018f7a"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/toc-tooltip-final-source-window-348/output.json",
+      "bytes": 534085,
+      "sha256": "90258b86aba714cf4a771f981a1bcbb7ba6a70d70e4c487ee87558e47ad90169"
     },
     "diagnostics": [],
     "rows": 70,
@@ -381,11 +395,11 @@
       5,
       3
     ],
-    "nativeGuideInstalled": false,
+    "nativeGuideInstalled": true,
     "actualPreviewVerified": false,
     "afterEditorReload": false,
-    "sourceSHA256": "31efab4db2db3157035ff52d261d46c129eb4b741810fb8511d681fa03d4c285",
-    "pendingNativeTocRuntimeSourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163"
+    "sourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163",
+    "actualNativeStaticPaintVerified": false
   },
   "historicalBeforeOpaqueTooltip": {
     "implementation": {
@@ -517,7 +531,7 @@
     "old40PredicatesUnchanged": true,
     "newActualFixedNativeCases": 14,
     "all70ExportsAnd5_3ControlCallsUnchanged": true,
-    "actualFramerSourceUpdate": false
+    "actualFramerSourceUpdate": true
   },
   "historicalBeforeTooltipMaterial": {
     "implementation": {
@@ -579,6 +593,61 @@
       "sha256": "e8122200389c34525070816c078f45ef52f7479013ce294d1f3813f97509fd80"
     },
     "intent": "Original141414 tooltip background and pointer-events:none retained against native inline defaults; all prior source styling/opaqueID/Toc changes kept.",
-    "sourceUpdatePending": true
+    "sourceUpdatePending": false
+  },
+  "nativeModelReadback": {
+    "page": "oaxCWfuHe",
+    "roots": {
+      "desktop": "YfqmCk3m0",
+      "compact": "i4kvQAIQ3",
+      "phone": "kfvNvxrcn",
+      "completeNativeTree": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/distinct-current-proof-329/saved-page-packets-from330/full-original-native-receipt.json.saved-own-page.json",
+        "bytes": 2819097,
+        "sha256": "b9bc46f047c5c008708f2b58fa270a89bbffb09c739c8002ba2e758e12668731"
+      }
+    },
+    "partsPerRoot": 815,
+    "original327AcknowledgmentAvailable": false,
+    "original343AcknowledgmentAvailable": false,
+    "fontRailSeal": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/font-rail-full-postseal-347/output.json",
+      "bytes": 261129,
+      "sha256": "2a0b015e710f8e61ca1379486c9237a1d67f4786de80284c052519a5b54b800d"
+    },
+    "geometryRead": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/finite-geometry-native-window-349-durable/output.json",
+      "bytes": 202667,
+      "sha256": "de5231e6afe00ac913d68b8defd378755e88c288adc137d366a7cc3c0884339a"
+    },
+    "geometry": {
+      "acknowledgedRows": 401,
+      "exactNumericHeights": 126,
+      "exactGenuineSvgIntrinsics": 87,
+      "exactScrollPolicies": 3,
+      "exactCompactDiagramRows": 31,
+      "exactCompactNotes": 31,
+      "exactTocGrids": 3,
+      "missingConstraintsLocked": 126,
+      "missingNativePointerEventsNone": 120,
+      "blackCornerFillsAfterDocumentedNullAttempt": 120,
+      "surfaceConclusion": "Both rgba alpha0 and documented fill:null read back opaque black. Actual native paint remains uninspected; do not retry/replay either call or claim transparency."
+    },
+    "preserved": {
+      "oldPages": 90,
+      "definitions": 16,
+      "currentPages": 91,
+      "codePlacements": 233,
+      "sourceFiles": 54
+    },
+    "actualNativeStaticPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "nullSurfaceAttempt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/corner-null-fill-window-350/output.json",
+      "bytes": 39319,
+      "sha256": "25d23cf05bc00d6f489ccb3b60c1976bdf8804fec0ea2f8c68c6ec853fc1530a"
+    },
+    "latestCompleteOwnerSHA256": "fb4da68193c9cc1ff12c1da2910cc26ee42bb094dd8b1ff557fbd908c4f4c123"
   }
 }

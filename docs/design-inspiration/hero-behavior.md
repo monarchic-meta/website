@@ -96,9 +96,21 @@ Source-led changes remain credited in **Source inspiration**.
   Credits is a later chapter, not the landing hero.
 - **Earlier study gap:** static construction geometry and chapter tiles do not
   reproduce assembly, nested scrolling, chapter jumps or changing demonstrations.
-- **Still unverified:** complete assembly timing, film playback, all ten
-  chapters, individual demo inputs, reverse scrolling and source Phone states.
-  The landing-to-principles boundary is observed; the full guide is not audited.
+- **Current original-site audit:** the later isolated1440×900 and390×844 pass
+  covers chapters00–10,31 figure plates,43 rail buttons, ten contents cards,
+  chapter-start versus figure-center jumps, URL state, hover dimming and reverse
+  Phone scrolling. The original85.11-second Cloudflare film visibly advances,
+  pauses and stops offscreen. Three continuing SVG groups are identified.
+- **Current recreation:** the new815-part native guide preserves three actual
+  responsive roots and the earlier comparison page. The controller supplies
+  first-view construction, navigation, live SVG demonstrations and the genuine
+  film provider. Model checks and local browser fixtures remain distinct from
+  actual Framer Preview and editor-reload verification.
+- **Still unverified:** precise original construction easing, the complete film
+  and loop wrap, seek/fullscreen behavior, actual recreated SVG forwarding and
+  provider behavior in Framer. Adjacent explanatory copy is summarized, so the
+  recreation's complete scroll length differs. The early-access form retains
+  native labels and an original-site exit without a submission backend.
 
 ## HERO-004 — Artemii Lebedev
 

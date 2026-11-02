@@ -19,8 +19,8 @@
     {
       "id": "HERO-003",
       "path": "HERO-003.json",
-      "bytes": 15129,
-      "sha256": "9a87354660c1514c590c00ccb40ecb8626d2d06db9c87eb522dd9bd601e3045c"
+      "bytes": 18567,
+      "sha256": "3b74a47a0da07b793be38ba4e93d3f2409bb839e54e91121cdb0eaf0a895429f"
     },
     {
       "id": "HERO-004",
@@ -97,8 +97,8 @@
     {
       "id": "HERO-016",
       "path": "HERO-016.json",
-      "bytes": 5483,
-      "sha256": "94dec2d9eba7c57fc6bce15561a5d89300f43032094cb4f79887c72a7d37bcef"
+      "bytes": 10512,
+      "sha256": "21721b1af859885b0c88a6ca36d1c006ac5b4d2941c87c3b4ab553fa743be70c"
     },
     {
       "id": "HERO-017",

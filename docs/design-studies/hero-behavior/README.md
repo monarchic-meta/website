@@ -53,9 +53,13 @@ unrelated stand-ins without recording that difference.
 
 HERO-003 / Polar and HERO-010 / G! primarily use native navigation and compositions.
 HERO-011 / Jon Way and HERO-012 / Mezmo retain selected historical layouts; the
-matching historical interaction sequences remain unverified. HERO-016 / Origin
-keeps its changing light inside the original small utility card rather than
-expanding it into a full-screen graphic.
+matching historical interaction sequences remain unverified. HERO-016 / Origin's
+[22-override controller](../code-components/SourceOriginNativeBehaviors.tsx) keeps
+the opening light in its small utility card and continues through the expanding
+film, six Programs, four partnership cards and footer. Its [provenance](../code-components/assets/source-origin-journey-provenance.json) records3 strict
+groups and199 locked browser/resource checks. The current native opening and
+following assemblies, actual Framer motion and editor reload remain pending;
+real Vimeo playback is unverified after the provider blocked the handshake.
 
 ## Interaction and rendering checks
 
