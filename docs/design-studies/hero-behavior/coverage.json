@@ -196,8 +196,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-005.json",
-        "bytes": 10578,
-        "sha256": "278d6b2a731ed0ee392a9a043b0a5eac28c9b75c4abf56c0f83d85f869df9bac"
+        "bytes": 11907,
+        "sha256": "2aba933e66ef3bae1cc8cadb221104c96585f4e55069928415d3ad3f353686a0"
       },
       "page": {
         "id": "hQLp25hBb",
@@ -216,6 +216,28 @@
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
         "status": "CURRENT_NATIVE_BEHAVIOR_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      },
+      "currentOriginalNativeModel": {
+        "pageID": "oGk5Yov2t",
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=oGk5Yov2t",
+        "roots": {
+          "Desktop": "RsdzVK_Wt",
+          "Compact": "RqRELZN5U",
+          "Phone": "WlbnD7erf"
+        },
+        "sourceSHA256": "3f9acdbc536992df11f6ee2f0d5c1bdf20bc0ffb34b6180dc7d43a3b09ab56fc",
+        "publicOverrides": 13,
+        "nativeFamilies": 59,
+        "nativeCopies": 177,
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-actual-native-receipt.json",
+          "bytes": 3925,
+          "sha256": "11050125485f68a152939eca0b8cc65fc8172a501e7588232b982c88530f173e"
+        },
+        "sourceDiagnosticsClean": true,
+        "actualNativeStaticPaintVerified": true,
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       }
@@ -760,7 +782,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "9e91a0911615c83e13ba9f68c20016d503c28787ce9dcf3cb5e2d35b3aa88942"
+    "sha256": "7f7588a806a429c8f776a877eeff9fd619ad7f73e10bd9d2e6c2a705ba976e60"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

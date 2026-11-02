@@ -237,7 +237,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CURRENT_NATIVE_BEHAVIOR_SOURCE_LOCKED_LOCAL_PASS_FRAMER_PENDING",
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_STATIC_PAINT_CHECKED_PREVIEW_AND_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/final-source-receipt.json",
       "bytes": 5303,
@@ -245,8 +245,35 @@
     },
     "behavior": "Complete current opening with the existing actual ASCII renderer, source font fitting, pointer cue, keyboard scan/layout grid and independently expanding first four project photographs.",
     "next": [
-      "Transfer the thirteen-override module and create the current native page, preserving the older gallery-led page.",
-      "Verify actual source-font/override forwarding, native paint, gestures and editor reload."
+      "Verify actual source-font/override forwarding, pointer/keyboard/project-photo behavior and editor reload.",
+      "Review the declared native font substitution and missing first-line indent against source Preview."
+    ],
+    "nativeModel": {
+      "pageID": "oGk5Yov2t",
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=oGk5Yov2t",
+      "roots": {
+        "Desktop": "RsdzVK_Wt",
+        "Compact": "RqRELZN5U",
+        "Phone": "WlbnD7erf"
+      },
+      "sourceSHA256": "3f9acdbc536992df11f6ee2f0d5c1bdf20bc0ffb34b6180dc7d43a3b09ab56fc",
+      "publicOverrides": 13,
+      "nativeFamilies": 59,
+      "nativeCopies": 177,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-actual-native-receipt.json",
+        "bytes": 3925,
+        "sha256": "11050125485f68a152939eca0b8cc65fc8172a501e7588232b982c88530f173e"
+      },
+      "sourceDiagnosticsClean": true,
+      "actualNativeStaticPaintVerified": true,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "intentionalDifferences": [
+      "Native Inter115/80/50 substitutes unavailable native Bugrino; sourcePreview realBugrinoCSS unchanged and unverified in actualPreview.",
+      "Native firstline25%indent absent; runtime sourcehelper retainsit.",
+      "Opening and firstportfolio/project/photos, not fullportfolio."
     ]
   }
 }
