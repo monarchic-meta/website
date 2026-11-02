@@ -278,6 +278,7 @@
             export MONARCHIC_POLAR_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-polar-guide-controls
             pnpm run check:source-polar-guide-browser
+            pnpm run check:source-polar-guide-toc
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
