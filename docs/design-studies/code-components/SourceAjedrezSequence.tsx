@@ -529,8 +529,10 @@ type AjedrezStillCache = {
 }
 type AjedrezStillBackend = {
     records: Map<string, AjedrezStillImageRecord>; queue: AjedrezStillImageRecord[]; loading: AjedrezStillImageRecord | null
+    observedListeners?: WeakSet<Set<() => void>>
     implementation: object | null; generation: number; pump: () => void
     retry: (url: string, record: AjedrezStillImageRecord) => void
+    empty: (url: string, record: AjedrezStillImageRecord) => void
     release: (url: string, record: AjedrezStillImageRecord, listener: () => void) => void
     watch: AjedrezStillCache['watch']
 }
@@ -538,6 +540,7 @@ type AjedrezStillBridge = {
     check: () => void
     update: (urls: readonly (string | null)[], install: (cache: AjedrezStillCache, records: Map<string, AjedrezStillImageRecord>, retries: Set<string>) => void, generation: number) => void
 }
+const AJEDREZ_PHOTO_LEGACY_V2_URLS: readonly string[] = ["https://framerusercontent.com/images/yg9xF4rt6vHHybPn1RJAjmInI.webp","https://framerusercontent.com/images/AMhcnp9RVCv88auPf4ls7Ew9peI.webp","https://framerusercontent.com/images/jzqgoKWwCJXxoJQgAExnHzC6p6g.webp","https://framerusercontent.com/images/HKE7hnjLxsy9Bgs0EzcV1oVrWT4.webp"]
 const AJEDREZ_STILL_CACHE_IMPLEMENTATION = Object.freeze({ revision: 3, generation: (() => {
     if (typeof window === 'undefined') return 0
     const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-cache-code-generation.v1')
@@ -585,15 +588,16 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
             record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src')
             record.image = makeImage(url); record.state = 'queued'; backend.queue.push(record)
         }
-        backend.release = (url, record, listener) => {
-            record.listeners.delete(listener)
+        backend.empty = (url, record) => {
             if (record.listeners.size) return
             if (record.state === 'ready') { prune(); return }
             const index = backend.queue.indexOf(record); if (index >= 0) backend.queue.splice(index, 1)
             if (backend.loading === record) { record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src'); backend.loading = null }
+            record.state = 'failed'
             if (records.get(url) === record) records.delete(url)
             backend.pump()
         }
+        backend.release = (url, record, listener) => { record.listeners.delete(listener); if (!record.listeners.size) backend.empty(url, record) }
         backend.watch = (url, listener) => {
             let record = records.get(url)
             if (!record) {
@@ -603,6 +607,25 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
             record.listeners.add(listener); backend.pump()
             const own = record
             return { record: own, release() { backend.release(url, own, listener) } }
+        }
+        // Original v2 leases retain their release closures. Observe their own
+        // listener set, without replacing its identity, so its final deletion
+        // cancels a retry through the current backend rather than the old queue.
+        const observed = backend.observedListeners ?? new WeakSet<Set<() => void>>()
+        backend.observedListeners = observed
+        for (const [url, record] of records) {
+            const listeners = record.listeners
+            if (observed.has(listeners)) continue
+            observed.add(listeners)
+            Object.defineProperty(listeners, 'delete', { configurable: true, value(listener: () => void) {
+                const removed = Set.prototype.delete.call(listeners, listener)
+                if (removed && !listeners.size) backend.empty(url, record)
+                return removed
+            } })
+            Object.defineProperty(listeners, 'clear', { configurable: true, value() {
+                const had = listeners.size; Set.prototype.clear.call(listeners)
+                if (had) backend.empty(url, record)
+            } })
         }
         cache.peek = url => {
             const record = records.get(url)
@@ -614,7 +637,7 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
     }
     const create = (cache: AjedrezStillCache, records: Map<string, AjedrezStillImageRecord>, retries: Set<string>) => {
         const backend: AjedrezStillBackend = {
-            records, queue: [], loading: null, implementation: null, generation: -1, pump() {}, retry() {}, release() {},
+            records, queue: [], loading: null, implementation: null, generation: -1, pump() {}, retry() {}, empty() {}, release() {},
             watch() { throw new Error('Photographic cache is not initialized') },
         }
         install(cache, backend)
@@ -622,13 +645,14 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
         backend.pump()
     }
     if (cached?.backend) { install(cached, cached.backend); return cached }
-    if (cached?.bridge) { cached.bridge.update(AJEDREZ_PHOTO_ATLAS_URLS, create, AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation); cached.bridge.check(); return cached }
+    if (cached?.bridge) { cached.bridge.update([...AJEDREZ_PHOTO_ATLAS_URLS, ...AJEDREZ_PHOTO_LEGACY_V2_URLS], create, AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation); cached.bridge.check(); return cached }
     if (cached) {
         // The registered predecessor has only peek/watch closures. Its four
-        // source URLs are retained in the new table. Wait for that serial queue
+        // source URLs remain an explicit compatibility set even after raw-file
+        // delivery replaces them. Wait for that serial queue
         // to become idle, then keep the same API, records, images and listeners.
         const legacyPeek = cached.peek.bind(cached), legacyWatch = cached.watch.bind(cached)
-        const urls = new Set(AJEDREZ_PHOTO_ATLAS_URLS.filter((url): url is string => url !== null)), retries = new Set<string>(), images = new Set<HTMLImageElement>()
+        const urls = new Set([...AJEDREZ_PHOTO_ATLAS_URLS, ...AJEDREZ_PHOTO_LEGACY_V2_URLS].filter((url): url is string => url !== null)), retries = new Set<string>(), images = new Set<HTMLImageElement>()
         let done = false, checking = false, installer = create, installerGeneration = AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation
         const wake = () => queueMicrotask(check)
         const mutation = new MutationObserver(wake)
@@ -656,7 +680,7 @@ function ajedrezPhotographicImages(): AjedrezStillCache {
             const lease = legacyWatch(url, listener)
             if (retry) retries.add(url)
             check()
-            return { record: lease.record, release() { lease.release(); check() } }
+            return { record: lease.record, release() { if (cached.backend) cached.backend.release(url, lease.record, listener); else { lease.release(); check() } } }
         }
         check(); return cached
     }
