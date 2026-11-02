@@ -671,8 +671,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-016.json",
-        "bytes": 10953,
-        "sha256": "9e71e402e2c34c9098eabd518100bcf8dd419d40281aadbbb8f6d81a1fda66e0"
+        "bytes": 13100,
+        "sha256": "f08f95930fb97a80846370e7786a38d1a854438d8183f6d69ca458ceff8ec5e7"
       },
       "page": {
         "id": "JC1r1iwC4",
@@ -690,7 +690,40 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "status": "FULL_JOURNEY_LOCAL_PASS_SOURCE_AND_NATIVE_TRANSFER_PENDING",
+        "status": "FULL_JOURNEY_SOURCE_AND_NATIVE_AUTHORED_READBACK_CONFIRMED_PREVIEW_RELOAD_PENDING",
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      },
+      "currentOriginalNativeModel": {
+        "pageID": "JC1r1iwC4",
+        "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JC1r1iwC4",
+        "roots": {
+          "Desktop": "dZaF7cch_",
+          "Compact": "wFQoD3Rrw",
+          "Phone": "yYG9bk4G0"
+        },
+        "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
+        "publicOverrides": 22,
+        "native": {
+          "newFamilies": 155,
+          "newCopies": 465,
+          "FrameNodes": 252,
+          "RichTextNodes": 207,
+          "SVGNodes": 6,
+          "fontTuples": 624,
+          "nonFontTextLineBreaks": 3,
+          "codeComponentsAdded": 0,
+          "controllerCountPerFullBreakpoint": 1,
+          "oldHeroControllersCleared": 3,
+          "followingAfterHeroBeforeReview": true
+        },
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/final-actual-authoring-receipt.json",
+          "bytes": 5618,
+          "sha256": "8a7dbe3a9def33ee9d410420e017646e1c1c8dc03b9bb52c967cb19b0b3a7539"
+        },
+        "sourceDiagnosticsClean": true,
+        "actualNewStaticPaintVerified": false,
         "actualFramerPreviewVerified": false,
         "afterEditorReload": false
       }
@@ -782,7 +815,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "7f7588a806a429c8f776a877eeff9fd619ad7f73e10bd9d2e6c2a705ba976e60"
+    "sha256": "537bdfc8bef0390344f9079e1a0589fe1dfe43f5991157cf30192d1e98619268"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

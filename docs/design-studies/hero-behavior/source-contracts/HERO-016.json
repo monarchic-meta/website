@@ -54,7 +54,7 @@
   "currentOriginalSourceUpdate": {
     "target": "Current original Origin website in the owner-edited list; earlier gallery-led work remains retained.",
     "classification": "Source inspiration / credited recreation",
-    "status": "FULL_JOURNEY_LOCAL_PASS_SOURCE_AND_NATIVE_TRANSFER_PENDING",
+    "status": "FULL_JOURNEY_SOURCE_AND_NATIVE_AUTHORED_READBACK_CONFIRMED_PREVIEW_RELOAD_PENDING",
     "implementation": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
       "bytes": 107230,
@@ -71,8 +71,8 @@
     "propertyControls": 0,
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-origin-journey-provenance.json",
-      "bytes": 14722,
-      "sha256": "12c12ab29e5d16886369ef2ca6d4f2df1010604b58ae05aa9b57f9510aa2b441"
+      "bytes": 16786,
+      "sha256": "ea8336bdb7cec44ffa1f57be965efa2254905b1d9f3d39048abc66bac49764af"
     },
     "lockedFocusedResults": {
       "strict": {
@@ -135,12 +135,16 @@
       "openingSaved": false,
       "followingSaved": false,
       "stageARegistrationSourceSHA256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
-      "stageAFollowedByFinal22OverrideSource": true
+      "stageAFollowedByFinal22OverrideSource": true,
+      "openingAuthoredAndReadBack": true,
+      "followingAuthoredAndReadBack": true,
+      "saveClaimRequiresEditorReload": true,
+      "actualFollowingStaticPaintVerified": false
     },
     "providerBoundary": "Real Vimeo handshake blocked by provider security challenge.26 mocked lifecycle checks do not establish external playback.",
     "next": [
-      "Transfer native opening and following story using the prepared typed field tables, retaining historical IDs/controls.",
-      "Verify actual native paint, moving Framer Preview, provider playback and editor reload."
+      "Verify actual new native painting and full scroll/menu/program/provider behavior in Framer Preview.",
+      "Confirm the Framer editor state after a reload before reporting it as saved."
     ],
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
@@ -192,6 +196,46 @@
       },
       "sourceOnlyChange": "type(menuLabel,'white-space:nowrap!important;'),",
       "allPublicAndRenderingBodiesUnchanged": true
-    }
+    },
+    "nativeModel": {
+      "pageID": "JC1r1iwC4",
+      "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JC1r1iwC4",
+      "roots": {
+        "Desktop": "dZaF7cch_",
+        "Compact": "wFQoD3Rrw",
+        "Phone": "yYG9bk4G0"
+      },
+      "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
+      "publicOverrides": 22,
+      "native": {
+        "newFamilies": 155,
+        "newCopies": 465,
+        "FrameNodes": 252,
+        "RichTextNodes": 207,
+        "SVGNodes": 6,
+        "fontTuples": 624,
+        "nonFontTextLineBreaks": 3,
+        "codeComponentsAdded": 0,
+        "controllerCountPerFullBreakpoint": 1,
+        "oldHeroControllersCleared": 3,
+        "followingAfterHeroBeforeReview": true
+      },
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/final-actual-authoring-receipt.json",
+        "bytes": 5618,
+        "sha256": "8a7dbe3a9def33ee9d410420e017646e1c1c8dc03b9bb52c967cb19b0b3a7539"
+      },
+      "sourceDiagnosticsClean": true,
+      "actualNewStaticPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "nativeModelLimits": [
+      "No new native static image completed: readonly416 capture batch lost transport without receipt. No new exports started afterward.",
+      "Three new reveal-sticky nodes omit requested native sticky getter; authored runtime CSS enforces sticky. Actual Preview behavior remains unverified.",
+      "Relative-frame zero offsets and native link defaults are representation differences; raw known new-field gaps retained in405closure.",
+      "Native Inter substitutes unavailable native STKMiso; no customfont selector attempt.",
+      "Actual Vimeo decoded playback remains provider-blocked/unverified; no mock-playback claim."
+    ]
   }
 }

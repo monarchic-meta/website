@@ -57,9 +57,10 @@ matching historical interaction sequences remain unverified. HERO-016 / Origin's
 [22-override controller](../code-components/SourceOriginNativeBehaviors.tsx) keeps
 the opening light in its small utility card and continues through the expanding
 film, six Programs, four partnership cards and footer. Its [provenance](../code-components/assets/source-origin-journey-provenance.json) records3 strict
-groups and199 locked browser/resource checks. The current native opening and
-following assemblies, actual Framer motion and editor reload remain pending;
-real Vimeo playback is unverified after the provider blocked the handshake.
+groups,155 current focused browser checks and48 separately pinned resource checks
+carried by exact renderer code. Both native assemblies are authored and independently
+read back. New following-content paint, actual Framer motion and editor reload
+remain pending; real Vimeo playback is unverified after the provider blocked the handshake.
 
 ## Interaction and rendering checks
 

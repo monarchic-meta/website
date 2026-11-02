@@ -199,7 +199,7 @@
   },
   "validation": {
     "lockedNixPassed": true,
-    "sourceRegisteredInFramer": false,
+    "sourceRegisteredInFramer": true,
     "nativeFollowingSaved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
@@ -207,10 +207,13 @@
     "strictGroups": 3,
     "browserResourceChecks": 203,
     "nativeOpeningSaved": false,
-    "sourceRegistrationScope": "Finale337 source with22public overrides; native/source transfer remains separate from local verification and historical sourceA7.",
+    "sourceRegistrationScope": "Exacte337 source/22overrides and all native opening/following parts independently read through MCP419/421; no editor-reload or new following-paint claim.",
     "sourceFidelityApproved": false,
     "currentSourceFocusedBrowserChecks": 155,
-    "retainedResourceChecksByExactCodeCarry": 48
+    "retainedResourceChecksByExactCodeCarry": 48,
+    "nativeOpeningAuthoredAndReadBack": true,
+    "nativeFollowingAuthoredAndReadBack": true,
+    "actualNewNativeStaticPaintVerified": false
   },
   "knownDifferences": [
     "Scalar/procedural material and seeded model transfer are independent fits, not original shader code.",
@@ -227,5 +230,45 @@
     },
     "sourceOnlyChange": "type(menuLabel,'white-space:nowrap!important;'),",
     "allPublicAndRenderingBodiesUnchanged": true
+  },
+  "nativeAuthoring": {
+    "pageID": "JC1r1iwC4",
+    "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=JC1r1iwC4",
+    "roots": {
+      "Desktop": "dZaF7cch_",
+      "Compact": "wFQoD3Rrw",
+      "Phone": "yYG9bk4G0"
+    },
+    "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
+    "publicOverrides": 22,
+    "native": {
+      "newFamilies": 155,
+      "newCopies": 465,
+      "FrameNodes": 252,
+      "RichTextNodes": 207,
+      "SVGNodes": 6,
+      "fontTuples": 624,
+      "nonFontTextLineBreaks": 3,
+      "codeComponentsAdded": 0,
+      "controllerCountPerFullBreakpoint": 1,
+      "oldHeroControllersCleared": 3,
+      "followingAfterHeroBeforeReview": true
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/final-actual-authoring-receipt.json",
+      "bytes": 5618,
+      "sha256": "8a7dbe3a9def33ee9d410420e017646e1c1c8dc03b9bb52c967cb19b0b3a7539"
+    },
+    "sourceDiagnosticsClean": true,
+    "actualNewStaticPaintVerified": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "limits": [
+      "No new native static image completed: readonly416 capture batch lost transport without receipt. No new exports started afterward.",
+      "Three new reveal-sticky nodes omit requested native sticky getter; authored runtime CSS enforces sticky. Actual Preview behavior remains unverified.",
+      "Relative-frame zero offsets and native link defaults are representation differences; raw known new-field gaps retained in405closure.",
+      "Native Inter substitutes unavailable native STKMiso; no customfont selector attempt.",
+      "Actual Vimeo decoded playback remains provider-blocked/unverified; no mock-playback claim."
+    ]
   }
 }

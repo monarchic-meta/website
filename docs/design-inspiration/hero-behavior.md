@@ -334,13 +334,17 @@ Source-led changes remain credited in **Source inspiration**.
   code isolate the field models, program selection, scroll reveal, pointer heat
   and docked mark/logotype. The original Operational program crashes; the local
   implementation deliberately repairs that branch.
-- **Local implementation:** the committed 22-override controller contains the
-  opening and full following journey. Three strict groups and 199
-  browser/resource checks pass in locked Nix: 88 retained opening checks, 37
-  journey checks, 26 provider-mock checks, 19 mixed-placement checks and 29
-  aggregate field/heat checks. The mixed suite covers 60 placements; the
-  aggregate fixture covers three native-like worlds and cleanup.
-- **Remaining gates:** both current native assemblies, actual moving Framer
+- **Local implementation:** the22-override controller contains the opening and
+  full following journey. Finale337 passes3 strict groups and155 focused
+  browser checks in locked Nix:92 opening/responsive,37 journey and26 provider
+  mocks. Separately pinned19 mixed-placement and29 aggregate field/heat checks
+  are carried by exact renderer code. The mixed suite covers60 placements;
+  the aggregate fixture covers three native-like worlds and cleanup.
+- **Native authoring:** both current assemblies are independently read back
+  through MCP421, including155 new following-content families across three
+  breakpoints and one full-root controller per breakpoint. This does not
+  establish actual new painting or persistence after an editor reload.
+- **Remaining gates:** new following-content paint, actual moving Framer
   Preview and editor reload are pending. The genuine Vimeo ready/play/pause
   handshake was blocked by the provider's security challenge; provider mocks
   prove lifecycle handling only. Local Canvas-target guards do not establish
