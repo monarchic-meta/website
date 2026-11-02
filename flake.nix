@@ -394,8 +394,10 @@
           });
           source-montreal-accents = (mkWebsiteCheck "source-montreal-accents" ''
             export MONARCHIC_MONTREAL_ACCENTS_EVIDENCE_DIR="$out/evidence"
+            export MONARCHIC_MONTREAL_TICKERS_EVIDENCE_DIR="$out/evidence/tickers"
             pnpm run check:source-montreal-accents
             pnpm run check:source-montreal-accents-browser
+            pnpm run check:source-montreal-tickers-browser
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
