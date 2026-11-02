@@ -113,8 +113,8 @@
   },
   "status": {
     "localFrozen": true,
-    "framerSourceRegistered": false,
-    "actualNativeBindingsVerified": false,
+    "framerSourceRegistered": true,
+    "actualNativeBindingsVerified": true,
     "actualReloadUI": false
   },
   "nixValidation": {
@@ -124,5 +124,27 @@
     "focusedChecks": 4,
     "actualReactChecks": 22,
     "scope": "Actual native CSS character wave, source cubic semicolon geometry, exact same-backend paused/hold replay, reduced/static/ownvisibility/sharedPause and cleanup. Cross static/compositor AA is bounded to1px shape edges; actual Framer/font/binding verification remains separate."
+  },
+  "currentSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMontrealAccents.tsx",
+    "bytes": 23900,
+    "sha256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12",
+    "overrides": 33,
+    "legacy29Preserved": true
+  },
+  "currentAuthoring": {
+    "tickers": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/final-actual-authoring-receipt.json",
+      "bytes": 3573,
+      "sha256": "28517d474477e5685fd876daa17bb66cd515fb8acf87ee615f8a1dc969085f09"
+    },
+    "genuineFont13": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/font13-clone-write492-494/final-actual-authoring-receipt.json",
+      "bytes": 6078,
+      "sha256": "20ba367b665873ebc43a9ea8d8ca2c5d9781a5b35316172d9e00a56b0a16de16"
+    },
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

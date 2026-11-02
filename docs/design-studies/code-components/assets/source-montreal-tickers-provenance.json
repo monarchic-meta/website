@@ -103,6 +103,28 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/SourceMontrealAccents.f433-before-copy-hit-fix.tsx",
       "bytes": 23552,
       "sha256": "f433bca521953deee3433d9e54f8f48eb95488d81ec06398a6653c7850435fd1"
+    },
+    "revalidated": {
+      "output": "/nix/store/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1/result.json",
+          "bytes": 4650,
+          "sha256": "fbef4973bb8a456624e6943fd9487cf7c480d92f8d451415d1df28f5cdd454bf",
+          "passed": true,
+          "checks": 22,
+          "sourceSHA256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1/tickers/result.json",
+          "bytes": 36791,
+          "sha256": "2cfad462475d69797102caec05fd3230a727a6aa5f7bb4f27507f736fd26510b",
+          "passed": true,
+          "checks": 31,
+          "sourceSHA256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12"
+        }
+      ],
+      "scope": "Fresh locked Nix run with durable external evidence; historical test outputs remain listed as originally recorded."
     }
   },
   "resources": {
@@ -115,11 +137,21 @@
     "Native ticket sizes/rotations and relative vertical composition retain the authored fit; new ticker positions/gaps and motion follow source.",
     "Dragging follows actual observed direction/capture; precise original inertial release curve is not characterized. This implementation holds auto motion during an active drag and resumes at release.",
     "Phone bead rails are hidden only in live source view. Canvas/export/reduced stills retain the existing authored native geometry.",
-    "Actual Framer named-layer/ref forwarding, source font identity, saved binding, Preview and editor reload remain separate gates.",
+    "Source registration and118 native bindings are independently read back. Twenty additional native Font13 copies were replaced using genuine uploaded-face templates. Actual current paint, Preview and editor reload remain separate gates.",
     "No morphTick listener or automatic text-fit behavior is invented."
   ],
-  "sourceRegisteredInFramer": false,
-  "actualNativeBindingsVerified": false,
+  "sourceRegisteredInFramer": true,
+  "actualNativeBindingsVerified": true,
   "actualFramerPreviewVerified": false,
-  "afterEditorReload": false
+  "afterEditorReload": false,
+  "actualAuthoringReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/final-actual-authoring-receipt.json",
+    "bytes": 3573,
+    "sha256": "28517d474477e5685fd876daa17bb66cd515fb8acf87ee615f8a1dc969085f09"
+  },
+  "currentNativeFont13Receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/font13-clone-write492-494/final-actual-authoring-receipt.json",
+    "bytes": 6078,
+    "sha256": "20ba367b665873ebc43a9ea8d8ca2c5d9781a5b35316172d9e00a56b0a16de16"
+  }
 }

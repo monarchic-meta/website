@@ -176,7 +176,7 @@
     "scope": "Current public footer attribution; distinct from archival interaction verification."
   },
   "savedBehaviorVerification": {
-    "status": "EARLIER_SEVEN_GROUPS_ACTUAL_PASS_NEW_NAVIGATION_AND_COMPOSITION_MCP_APPLIED_RETEST_PENDING",
+    "status": "EARLIER_LIVE_GROUPS_VERIFIED_TICKERS_AND_GENUINE_FONT13_AUTHORED_CURRENT_PREVIEW_RELOAD_PENDING",
     "pageID": "P5fp5dz6E",
     "projectURL": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=P5fp5dz6E",
     "sourceBatch": {
@@ -225,7 +225,7 @@
     ],
     "openGates": [
       "Native navigation/proximity corrections are applied:28 section bindings and the four-override source support native hover/pointer channels, owned targets and nested rich-text anchors. Local strict/Chromium checks pass; actual seven-target arrival/hover still awaits reliable connected-browser routing.",
-      "The two source composition corrections are applied in the model, with23 logical retained patches and10 new Primary/truePhone families. Actual rendering/source comparison and final genuine-font13 picker assignment for ten new/reused italic targets on each breakpoint remain pending.",
+      "Source composition and ticker corrections are authored and independently read back. All20 additional italic targets now use genuine static Font13 through cloned native rich text; actual current rendering/source comparison and editor reload remain pending.",
       "Source Phone composition and selected-revision interaction parity remain adaptations or unknowns. Native Video/Vimeo offscreen pausing is not covered by the custom decoder gate."
     ],
     "browserBoundary": "Browser automation was stopped after the owner observed its tabs appearing in another focused desktop chat, despite matching session metadata. MCP saved-model checks do not substitute for reload or live Preview checks.",
@@ -246,7 +246,7 @@
     }
   },
   "nativeSourceComposition": {
-    "status": "MCP_APPLIED_WITH_FINITE_SETTER_REPRESENTATIONS_CLOSED_ACTUAL_PREVIEW_PENDING",
+    "status": "SOURCE_COMPOSITION_TICKERS_AND_GENUINE_FONT13_AUTHORED_ACTUAL_PREVIEW_RELOAD_PENDING",
     "sourceProposal": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-008/fidelity-refinement/native-composition/proposal.json",
       "bytes": 106494,
@@ -279,7 +279,8 @@
       "italicAxis": 1,
       "logicalTargets": 10,
       "phoneCopies": 10,
-      "finalSourceFont13PickerVerified": false
+      "finalSourceFont13PickerVerified": false,
+      "historicalOnly": true
     },
     "approvedLocalArtboards": [
       {
@@ -299,6 +300,38 @@
       "The original273 strict receipt remains intact. A separate exact per-ID closure accounts only for five new Phone decimal lexemes,16 default textVerticalAlignment materializations and four intended canonical rotation aliases; no broad normalization or mutation replay was used.",
       "The approved local artboards are design proposals, not Framer Preview screenshots.",
       "Phone composition and source-revision interaction equivalence remain declared fits or unknowns."
-    ]
+    ],
+    "genuineItalicReplacement": {
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/font13-clone-write492-494/final-actual-authoring-receipt.json",
+        "bytes": 6078,
+        "sha256": "20ba367b665873ebc43a9ea8d8ca2c5d9781a5b35316172d9e00a56b0a16de16"
+      },
+      "logicalFamilies": 10,
+      "actualRichTextCopies": 20,
+      "nativeBlockRunTuples": 60,
+      "totalGenuineActiveRichTextCopies": 66,
+      "old20PreservedInOffcanvasArchive": true,
+      "geometryContentColorsSpacingParentsAndOrderExact": true,
+      "ownerSHA256": "16e2f16d47a51c3938bed3b5cd238a0ae4bab7c5af8959d70c47545daf16fe83",
+      "actualPaintVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
+  },
+  "nativeTickers": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-008/ticker-refinement/implementation/final-actual-authoring-receipt.json",
+      "bytes": 3573,
+      "sha256": "28517d474477e5685fd876daa17bb66cd515fb8acf87ee615f8a1dc969085f09"
+    },
+    "sourceSHA256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12",
+    "publicOverrides": 33,
+    "old29RowsRetained": true,
+    "nativeBindings": 118,
+    "newNodes": 0,
+    "geometryWrites": 0,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
