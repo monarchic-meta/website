@@ -2,7 +2,7 @@
   "schema": "source-ajedrez-photographic-composition.v1",
   "reference": "HERO-002",
   "classification": "Source inspiration / credited close recreation",
-  "status": "LOCAL_IMPLEMENTATION_BOUND_TO_FOUR_UPLOADED_ATLASES_NATIVE_AND_SOURCE_TRANSFER_PENDING",
+  "status": "LOCAL_CACHE_V3_VALIDATED_SOURCE_AND_NATIVE_TRANSFER_PENDING",
   "credit": "Julián Leiss / Ajedrez Film Poem; source archival photograph authors remain unverified.",
   "source": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/../source-1080x1920.mp4",
@@ -18,8 +18,8 @@
   },
   "implementation": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
-    "bytes": 80251,
-    "sha256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7"
+    "bytes": 86378,
+    "sha256": "56a7224d8d4536e37c28e5a723ff8031b34376565ee09d7f2b39b5e624d4e243"
   },
   "lineage": {
     "parent": {
@@ -28,7 +28,7 @@
       "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
     },
     "extensionStart": "\n// Source-cut photographic compositions.",
-    "extensionSHA256": "a85786bf4dbd6c2163cec3f3e79338c7779c491f5932e00ac1d90e7358bc0225",
+    "extensionSHA256": "62391e39f01c6954f1694f2af94874335eca538f354e328c3a2352a8d34cf51c",
     "filmHookLine": "        useAjedrezPhotographicComposition(host, state)\n",
     "headerAmendment": {
       "old": " * through its shared clock. Other photographic passages remain still-held;\n * their internal motion and unreviewed audio are not claimed as restored.",
@@ -1137,7 +1137,8 @@
     "buffer": "Transformed bounds×DPR; cap960×1704 and2,000,000pixels; cached ready images refresh paused and replaced hosts.",
     "semanticNativeScenes": "Source-corresponding existing groups5/27/31/35 temporarily override oldclock-selectedgroup during photographic cuts. Phase opacity/visibility/aria restore against latest baseclock while custom late caller styles remain intact; allothernative content/IDs staymounted.",
     "metadata": "Native source metadata and independent caption/line remain text above full-extent clean photographic tiles. All old source groups/IDs remain mounted.",
-    "imageFailure": "A failed material retains the native fallback without same-pose retry. Final listener release discards the failed entry, so later replay/re-entry retries the actual URL."
+    "imageFailure": "Only a NEW watch requeues a failed record and shares one serial retry with retained owners; same-pose refresh cannot loop it. Final failed-listener release removes the entry.",
+    "cacheHMR": "Same Symbol/cache object and mutable backend/record map survive module replacement. Monotone module generation prevents an older factory from downgrading newer methods. Exact v2 predecessor migrates in place only after its retained serial queue is idle; its listeners and image records survive."
   },
   "nativeCaptionPlan": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/four-editable-caption-recipe-v3.json",
@@ -1166,20 +1167,59 @@
     "afterEditorReload": false,
     "sourceFidelityApproved": false,
     "exactSourceBrowserResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/browser-genuine-retry/result.json",
-      "bytes": 5462,
-      "sha256": "74b1f11cfe8e143f2be417abd184869b0354933fef901b35d964489ec3637cc6",
-      "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
-      "checks": 37,
-      "genuineSourceMaterial": true
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-exact-genuine-node22/result.json",
+      "bytes": 9362,
+      "sha256": "1076938e938c72ca0ccd32ed263a9727c37d2e2b3693ccdb1773fc29eb93c9dd",
+      "sourceSHA256": "56a7224d8d4536e37c28e5a723ff8031b34376565ee09d7f2b39b5e624d4e243",
+      "checks": 45,
+      "genuineSourceMaterial": true,
+      "nodeVersion": "22.22.2",
+      "chromiumVersion": "147.0.7727.116",
+      "checker": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-exact-checker.mjs",
+        "bytes": 46473,
+        "sha256": "5339ab176af7207c4deaea10923ac7ee1b3c3fcf9b6ffdc9f6802d2b38d8c353"
+      },
+      "scope": "Fresh local genuine-material run after tool restoration; not a Nix derivation or Framer Preview."
     },
     "reproducibleChecker": "scripts/check-source-ajedrez-photo-composition.mjs",
-    "ownedSVGFixtureChecks": 37,
+    "ownedSVGFixtureChecks": 45,
     "exactSourceStrictResult": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/strict-retry.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-strict-node22.json",
       "bytes": 1258,
-      "sha256": "f05120c162479a21a2bffb98d76cb7d3a1b5d79595c88e7b7e214b6a92381112",
-      "checks": 9
+      "sha256": "d1eff8a5125e667dfec3729d26776fa8bb6c4845c9935c341026ae582404db8e",
+      "checks": 9,
+      "nodeVersion": "22.22.2"
+    },
+    "exactOwnedResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/cache-v3-exact-owned/result.json",
+      "bytes": 8988,
+      "sha256": "fab800f39531618b75c753e6b9eb226dce6fcafb8ca9b17c6a98772fbfbe785a",
+      "sourceSHA256": "56a7224d8d4536e37c28e5a723ff8031b34376565ee09d7f2b39b5e624d4e243",
+      "checks": 45,
+      "nodeVersion": "24.21.0",
+      "chromiumVersion": "156.0.8078.73",
+      "checkerSHA256": "5339ab176af7207c4deaea10923ac7ee1b3c3fcf9b6ffdc9f6802d2b38d8c353"
+    },
+    "currentSourceSnapshot": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/SourceAjedrezSequence-cache-v3-56a7224d.tsx",
+      "bytes": 86378,
+      "sha256": "56a7224d8d4536e37c28e5a723ff8031b34376565ee09d7f2b39b5e624d4e243"
+    },
+    "previousLockedA2": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/root-locked-a2-receipt.json",
+      "bytes": 4609,
+      "sha256": "61957323f5c4c664e088fdebdb8b74ee7a0316a2d7910b4e57fd81a512215f1d",
+      "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
+      "checkerSHA256": "a95cc608898c81747a8f0228095281bae2b18ab43b753f9359511d9a8bee2054",
+      "historicalPass": "9 strict +171 retained +26 aperture +37 composition",
+      "availability": "Automatic nix-gc.service at midnight2026-11-02 removed its unrooted store outputs. Immutable external receipt61957323 and exact source/test snapshots remain; do not treat those old store files as currently retrievable or relabel later runs as that evidence."
     }
+  },
+  "legacyCacheV2Regression": {
+    "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
+    "functionSHA256": "8d88303e8ee0f074b67b8d3a51a631724e9af4fab7755ef34ab3fdaf3785e0b0",
+    "code": "function ajedrezPhotographicImages() {\n    const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-images.v2')\n    type Cache = { peek: (url: string) => AjedrezStillImageRecord | undefined; watch: (url: string, listener: () => void) => { record: AjedrezStillImageRecord; release: () => void } }\n    const cached = registry[key] as Cache | undefined\n    if (cached) return cached\n    const records = new Map<string, AjedrezStillImageRecord>(), queue: AjedrezStillImageRecord[] = []\n    let loading: AjedrezStillImageRecord | null = null\n    const pump = () => {\n        if (loading) return\n        const record = queue.shift()\n        if (!record) return\n        if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) records.delete(url) }); pump(); return }\n        loading = record; record.state = 'loading'\n        const finish = (state: 'ready' | 'failed') => {\n            if (loading !== record) return\n            record.image.onload = null; record.image.onerror = null\n            record.state = state; loading = null\n            for (const listener of [...record.listeners]) listener()\n            pump()\n        }\n        record.image.onload = () => finish('ready'); record.image.onerror = () => finish('failed')\n        record.image.src = record.image.getAttribute('data-source-url') ?? ''\n    }\n    const prune = () => {\n        for (const [url, record] of records) {\n            if (records.size <= 6) break\n            if (record.listeners.size || record.state === 'queued' || record.state === 'loading') continue\n            records.delete(url); record.image.removeAttribute('src')\n        }\n    }\n    const cache: Cache = { peek: url => records.get(url), watch(url, listener) {\n        let record = records.get(url)\n        if (!record) {\n            const image = new Image(); image.crossOrigin = 'anonymous'; image.decoding = 'async'; image.setAttribute('data-source-url', url)\n            record = { image, state: 'queued', listeners: new Set() }; records.set(url, record); queue.push(record)\n        }\n        records.delete(url); records.set(url, record)\n        record.listeners.add(listener); pump()\n        const own = record\n        return { record: own, release() {\n            own.listeners.delete(listener)\n            if (own.listeners.size) return\n            if (own.state === 'ready') { prune(); return }\n            const index = queue.indexOf(own); if (index >= 0) queue.splice(index, 1)\n            if (loading === own) { own.image.onload = null; own.image.onerror = null; own.image.removeAttribute('src'); loading = null }\n            records.delete(url); pump()\n        } }\n    } }\n    registry[key] = cache; return cache\n}",
+    "scope": "Exact prior v2 cache factory, retained as regression fixture for an in-place implementation upgrade. No runtime dependency on external artifacts."
   }
 }

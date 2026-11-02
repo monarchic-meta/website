@@ -19,12 +19,13 @@ function ownedAtlas(index) {
     const parts = tiles.map(([key, tile], j) => { const [x, y, w, h] = tile.rect, seed = parseInt(crypto.createHash('sha256').update(key).digest('hex').slice(0, 6), 16), color = [60 + seed % 150, 50 + (seed >>> 8) % 150, 40 + (seed >>> 16) % 150]; return '<g><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" fill="rgb(' + color.join(',') + ')"/><path d="M' + x + ' ' + y + 'L' + (x + w) + ' ' + (y + h) + 'M' + (x + w) + ' ' + y + 'L' + x + ' ' + (y + h) + '" stroke="#eee" stroke-width="3"/><rect x="' + (x + 5) + '" y="' + (y + 5) + '" width="' + Math.max(1, w - 10) + '" height="' + Math.max(1, h - 10) + '" fill="url(#owned-grid)" opacity=".8"/></g>'; }).join('');
     return '<svg xmlns="http://www.w3.org/2000/svg" width="' + item.width + '" height="' + item.height + '"><defs><pattern id="owned-grid" width="13" height="13" patternUnits="userSpaceOnUse"><path d="M0 0H13V13" fill="none" stroke="#171717" stroke-width="2"/></pattern></defs>' + parts + '</svg>';
 }
-const checks = [], requests = [], errors = [], failedOnce = new Set(), check = (name, ok) => { assert.ok(ok, name); checks.push(name); };
+const checks = [], requests = [], errors = [], failedOnce = new Set(), requestLog = [], heldResponses = [], check = (name, ok) => { assert.ok(ok, name); checks.push(name); };
+let activeRequests = 0;
 const server = http.createServer((req, res) => { const i = Number(new URL(req.url, 'http://127.0.0.1').pathname.split('/').at(-1)); if (!Number.isInteger(i) || !map.atlases[i]) {
     res.writeHead(404);
     res.end();
     return;
-} requests.push(i); const requestURL = new URL(req.url, 'http://127.0.0.1'); if (requestURL.searchParams.has('fail-once') && !failedOnce.has(req.url)) { failedOnce.add(req.url); res.writeHead(503); res.end(); return; } const send = () => { res.writeHead(200, { 'Content-Type': genuine ? 'image/webp' : 'image/svg+xml', 'Access-Control-Allow-Origin': '*' }); if (genuine) fs.createReadStream(map.atlases[i].path).pipe(res); else res.end(ownedAtlas(i)); }; if (requestURL.searchParams.has('cold')) setTimeout(send, 160); else send(); });
+} requests.push(i); const log = { url: req.url, activeAtStart: ++activeRequests }; requestLog.push(log); res.once('finish', () => { activeRequests--; }); const requestURL = new URL(req.url, 'http://127.0.0.1'); if (requestURL.searchParams.has('fail-once') && !failedOnce.has(req.url)) { failedOnce.add(req.url); res.writeHead(503); res.end(); return; } const send = () => { res.writeHead(200, { 'Content-Type': genuine ? 'image/webp' : 'image/svg+xml', 'Access-Control-Allow-Origin': '*' }); if (genuine) fs.createReadStream(map.atlases[i].path).pipe(res); else res.end(ownedAtlas(i)); }; if (requestURL.searchParams.has('hold')) heldResponses.push(send); else if (requestURL.searchParams.has('cold')) setTimeout(send, 160); else send(); });
 (async () => {
     await new Promise(r => server.listen(0, '127.0.0.1', r));
     const urls = map.atlases.map((_, i) => 'http://127.0.0.1:' + server.address().port + '/' + i), bound = source.replace(/^const AJEDREZ_PHOTO_ATLAS_URLS:.*$/m, 'const AJEDREZ_PHOTO_ATLAS_URLS: readonly (string | null)[] = ' + JSON.stringify(urls)), js = ts.transpileModule(bound, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText + '\nwindow.__useComposition=useAjedrezPhotographicComposition;window.__photoPose=ajedrezPhotoPose;window.__photoIndex=indexAt;', react = fs.readFileSync(repo + '/node_modules/react/umd/react.development.js', 'utf8'), dom = fs.readFileSync(repo + '/node_modules/react-dom/umd/react-dom.development.js', 'utf8');
@@ -253,6 +254,24 @@ const server = http.createServer((req, res) => { const i = Number(new URL(req.ur
         await page.evaluate(() => setState({ time: 10 }));
         await page.waitForFunction(() => snap().pose === 'hand-retry' && snap().visible === 'visible');
         check('source re-entry retries a previously failed URL and restores real image pixels with one serial request', requests.length === beforeRetry + 2 && await page.evaluate(() => snap().parts === 1 && snap().video === 0 && snap().raf === 0 && snap().webgl === 0));
+        const retainedFailureURL = urls[0] + '?fail-once=retained-owner', retainedCode = retryCode.replace(retryURL, retainedFailureURL), beforeRetained = requests.length;
+        await page.addScriptTag({ content: moduleCode(retainedCode) });
+        await page.evaluate(() => setState({ time: 10, index: 30, active: true, playing: true }));
+        await page.waitForFunction(url => __photoCache().peek(url)?.state === 'failed', retainedFailureURL);
+        await page.evaluate(() => { for (let i = 0; i < 5; i++) setState({ time: 10 + i / 100, active: false, playing: false }); });
+        check('a paused failed owner retains its listener without issuing repeated source-image requests', requests.length === beforeRetained + 1 && await page.evaluate(url => __photoCache().peek(url).listeners.size === 1 && __photoCache().peek(url).state === 'failed', retainedFailureURL));
+        await page.evaluate(() => {
+            const host = document.getElementById('film').cloneNode(true); host.id = 'secondary-film'; host.style.position = 'absolute'; host.style.left = '500px'; host.querySelectorAll('canvas').forEach(node => node.remove()); document.body.appendChild(host);
+            const control = document.createElement('div'); document.body.appendChild(control);
+            const state = { ...__state, time: 10, active: true, playing: true };
+            function Secondary() { __useComposition(host, state); return null; }
+            window.__secondaryHost = host; window.__secondaryControl = control; window.__secondaryRoot = ReactDOM.createRoot(control);
+            ReactDOM.flushSync(() => __secondaryRoot.render(React.createElement(Secondary)));
+        });
+        await page.waitForFunction(() => document.querySelector('#secondary-film canvas')?.style.visibility === 'visible' && snap().visible === 'visible');
+        check('a new owner retries the retained failure once and restores both paused and active source compositions', requests.length === beforeRetained + 2 && await page.evaluate(url => __photoCache().peek(url).listeners.size === 2 && __photoCache().peek(url).state === 'ready' && __state.playing === false && __state.active === false && snap().pixels === document.querySelector('#secondary-film canvas').toDataURL() && __video === 0 && __webgl === 0 && __raf === 0, retainedFailureURL));
+        await page.evaluate(() => { ReactDOM.flushSync(() => __secondaryRoot.unmount()); __secondaryHost.remove(); __secondaryControl.remove(); });
+        check('removing the second owner releases its watch while the paused first composition retains its sharp image', await page.evaluate(url => __photoCache().peek(url).listeners.size === 1 && snap().visible === 'visible', retainedFailureURL));
         await page.addScriptTag({ content: moduleCode(bound) });
         await page.evaluate(() => setState({ time: 985 / 24, index: 30, active: true }));
         await page.waitForFunction(() => snap().pose === 'hand-reveal-four');
@@ -269,9 +288,35 @@ const server = http.createServer((req, res) => { const i = Number(new URL(req.ur
         check('unboundatlasURLs retainexactnativeimagefallback andmake no image requests', await page.evaluate(() => !document.querySelector('canvas') && snap().backing === '0.9') && requests.length === beforeUnbound);
         await page.evaluate(() => ReactDOM.flushSync(() => __root.unmount()));
         check('unmount releases observers, imperativesurfaces, native mutations and callerref', await page.evaluate(() => __observers.size === 0 && !document.querySelector('canvas') && __caller.current === null));
+        const provenance = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-ajedrez-photographic-composition-provenance.json'))), legacy = provenance.legacyCacheV2Regression;
+        assert.equal(crypto.createHash('sha256').update(legacy.code).digest('hex'), legacy.functionSHA256);
+        const legacyFailureURL = urls[0] + '?fail-once=legacy-v2', legacyBusyURL = urls[0] + '?hold=legacy-busy', beforeLegacy = requests.length, legacyLogStart = requestLog.length;
+        await page.evaluate(() => { delete window[Symbol.for('monarchic.source-ajedrez-photographic-images.v2')]; });
+        const legacyJS = ts.transpileModule(legacy.code, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.None } }).outputText;
+        await page.addScriptTag({ content: '(()=>{' + legacyJS + ';window.__legacyImageCache=ajedrezPhotographicImages;})()' });
+        await page.evaluate(url => { window.__legacyCache = __legacyImageCache(); window.__legacyReadyA = 0; window.__legacyReadyB = 0; window.__legacyLeaseA = __legacyCache.watch(url, () => { if (__legacyCache.peek(url)?.state === 'ready') __legacyReadyA++; }); }, legacyFailureURL);
+        await page.waitForFunction(url => __legacyCache.peek(url)?.state === 'failed', legacyFailureURL);
+        await page.evaluate(url => { window.__legacyNegativeLease = __legacyCache.watch(url, () => { __legacyReadyB++; }); }, legacyFailureURL);
+        await page.waitForTimeout(40);
+        check('exact legacy-v2 negative fixture reproduces a retained failure poisoning a second owner', requests.length === beforeLegacy + 1 && await page.evaluate(url => __legacyCache.peek(url).state === 'failed' && __legacyReadyA === 0 && __legacyReadyB === 0 && __legacyCache.peek(url).listeners.size === 2, legacyFailureURL));
+        await page.evaluate(url => { __legacyNegativeLease.release(); window.__legacyBusyLease = __legacyCache.watch(url, () => {}); }, legacyBusyURL);
+        const upgradeCode = bound.replace(/^const AJEDREZ_PHOTO_ATLAS_URLS:.*$/m, 'const AJEDREZ_PHOTO_ATLAS_URLS: readonly (string | null)[] = ' + JSON.stringify([legacyFailureURL, legacyBusyURL]));
+        const exposeCache = code => moduleCode(code).replace('window.__useComposition=useAjedrezPhotographicComposition;', 'window.__useComposition=useAjedrezPhotographicComposition;window.__currentImageCache=ajedrezPhotographicImages;');
+        await page.addScriptTag({ content: exposeCache(upgradeCode) });
+        await page.evaluate(url => { window.__upgradedCache = __currentImageCache(); window.__legacyLeaseB = __upgradedCache.watch(url, () => { if (__upgradedCache.peek(url)?.state === 'ready') __legacyReadyB++; }); }, legacyFailureURL);
+        check('the legacy upgrade bridge waits while the retained predecessor actually has an in-flight image', await page.evaluate(url => !!__upgradedCache.bridge && !__upgradedCache.backend && __upgradedCache.peek(url).state === 'loading', legacyBusyURL));
+        for (const send of heldResponses.splice(0)) send();
+        await page.waitForFunction(url => __upgradedCache.peek(url)?.state === 'ready' && __legacyReadyA === 1 && __legacyReadyB === 1, legacyFailureURL);
+        check('in-place cache upgrade preserves legacy listeners and waits for the existing serial load before one shared retry', requests.length === beforeLegacy + 3 && requestLog.slice(legacyLogStart).every(row => row.activeAtStart === 1) && await page.evaluate(() => __upgradedCache === __legacyCache && !!__upgradedCache.backend && !__upgradedCache.bridge && __observers.size === 0 && __raf === 0 && __video === 0 && __webgl === 0));
+        await page.evaluate(() => { window.__olderImageFactory = __currentImageCache; window.__retainedBackend = __upgradedCache.backend; window.__retainedRecords = __retainedBackend.records; });
+        await page.addScriptTag({ content: exposeCache(upgradeCode) });
+        await page.evaluate(() => { window.__newestCache = __currentImageCache(); window.__newestImplementation = __newestCache.backend.implementation; __olderImageFactory(); __legacyImageCache(); });
+        check('same-schema module upgrade retains the shared backend and older factories cannot reinstall an obsolete implementation', requests.length === beforeLegacy + 3 && await page.evaluate(() => __newestCache === __legacyCache && __newestCache.backend === __retainedBackend && __newestCache.backend.records === __retainedRecords && __newestCache.backend.implementation === __newestImplementation));
+        await page.evaluate(() => { __legacyLeaseA.release(); __legacyLeaseB.release(); __legacyBusyLease.release(); });
+        check('legacy and upgraded leases release cleanly with no retained listeners or upgrade observers', await page.evaluate(() => [...__newestCache.backend.records.values()].every(record => record.listeners.size === 0) && __newestCache.backend.records.size <= 6 && __observers.size === 0));
         check('noactualReact/browsererrors', errors.length === 0);
         const result = { passed: true, sourceSHA256: crypto.createHash('sha256').update(source).digest('hex'), checks, requests, errors, first: { ...first, pixels: undefined }, sourceAtlasFiles: map.atlases.map(x => ({ sha256: x.sha256, bytes: x.bytes, pixels: x.pixels ?? x.width * x.height, ownedFixture: !!x.ownedFixture })), genuineSourceMaterial: !!genuine, fixtureScope: genuine ? 'Retained original photo materials' : 'Independently generated SVG tile fixtures for reproducible lifecycle/geometry/pixel checks', framerPreviewVerified: false };
-        fs.writeFileSync(out + '/result.json', JSON.stringify(result, null, 2) + '\n');
+        fs.writeFileSync(out + '/result.json', JSON.stringify({ ...result, requestLog }, null, 2) + '\n');
         console.log(JSON.stringify({ passed: true, checks: checks.length, requests: requests.length, source: result.sourceSHA256 }));
         await page.close();
     }

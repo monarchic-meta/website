@@ -521,58 +521,149 @@ function ajedrezPhotographicCaption(key: string, pose: AjedrezPhotoPose): boolea
     return pose.name.startsWith('hand-') ? /film-phase-31-photo-hand-(?:catalog|line)$/.test(key) : pose.name === 'earth' && /film-phase-35-caption$/.test(key)
 }
 type AjedrezStillImageRecord = { image: HTMLImageElement; state: 'queued' | 'loading' | 'ready' | 'failed'; listeners: Set<() => void> }
-/** One serial image warm-up queue shared by every instance. This is not the
- * film decoder gate: these are held photographs, so no video or GPU is needed. */
-function ajedrezPhotographicImages() {
-    const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-images.v2')
-    type Cache = { peek: (url: string) => AjedrezStillImageRecord | undefined; watch: (url: string, listener: () => void) => { record: AjedrezStillImageRecord; release: () => void } }
-    const cached = registry[key] as Cache | undefined
-    if (cached) return cached
-    const records = new Map<string, AjedrezStillImageRecord>(), queue: AjedrezStillImageRecord[] = []
-    let loading: AjedrezStillImageRecord | null = null
-    const pump = () => {
-        if (loading) return
-        const record = queue.shift()
-        if (!record) return
-        if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) records.delete(url) }); pump(); return }
-        loading = record; record.state = 'loading'
-        const finish = (state: 'ready' | 'failed') => {
-            if (loading !== record) return
-            record.image.onload = null; record.image.onerror = null
-            record.state = state; loading = null
-            for (const listener of [...record.listeners]) listener()
-            pump()
-        }
-        record.image.onload = () => finish('ready'); record.image.onerror = () => finish('failed')
-        record.image.src = record.image.getAttribute('data-source-url') ?? ''
-    }
-    const prune = () => {
-        for (const [url, record] of records) {
-            if (records.size <= 6) break
-            if (record.listeners.size || record.state === 'queued' || record.state === 'loading') continue
-            records.delete(url); record.image.removeAttribute('src')
-        }
-    }
-    const cache: Cache = { peek: url => records.get(url), watch(url, listener) {
-        let record = records.get(url)
-        if (!record) {
-            const image = new Image(); image.crossOrigin = 'anonymous'; image.decoding = 'async'; image.setAttribute('data-source-url', url)
-            record = { image, state: 'queued', listeners: new Set() }; records.set(url, record); queue.push(record)
-        }
-        records.delete(url); records.set(url, record)
-        record.listeners.add(listener); pump()
-        const own = record
-        return { record: own, release() {
-            own.listeners.delete(listener)
-            if (own.listeners.size) return
-            if (own.state === 'ready') { prune(); return }
-            const index = queue.indexOf(own); if (index >= 0) queue.splice(index, 1)
-            if (loading === own) { own.image.onload = null; own.image.onerror = null; own.image.removeAttribute('src'); loading = null }
-            records.delete(url); pump()
-        } }
-    } }
-    registry[key] = cache; return cache
+type AjedrezStillCache = {
+    peek: (url: string) => AjedrezStillImageRecord | undefined
+    watch: (url: string, listener: () => void) => { record: AjedrezStillImageRecord; release: () => void }
+    backend?: AjedrezStillBackend
+    bridge?: AjedrezStillBridge
 }
+type AjedrezStillBackend = {
+    records: Map<string, AjedrezStillImageRecord>; queue: AjedrezStillImageRecord[]; loading: AjedrezStillImageRecord | null
+    implementation: object | null; generation: number; pump: () => void
+    retry: (url: string, record: AjedrezStillImageRecord) => void
+    release: (url: string, record: AjedrezStillImageRecord, listener: () => void) => void
+    watch: AjedrezStillCache['watch']
+}
+type AjedrezStillBridge = {
+    check: () => void
+    update: (urls: readonly (string | null)[], install: (cache: AjedrezStillCache, records: Map<string, AjedrezStillImageRecord>, retries: Set<string>) => void, generation: number) => void
+}
+const AJEDREZ_STILL_CACHE_IMPLEMENTATION = Object.freeze({ revision: 3, generation: (() => {
+    if (typeof window === 'undefined') return 0
+    const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-cache-code-generation.v1')
+    const generation = (typeof registry[key] === 'number' ? registry[key] as number : 0) + 1
+    registry[key] = generation; return generation
+})() })
+/** The cache object and backend survive module replacement. A new watch can
+ * retry a failed material for every retained owner; a refresh cannot loop it. */
+function ajedrezPhotographicImages(): AjedrezStillCache {
+    const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-images.v2')
+    const cached = registry[key] as AjedrezStillCache | undefined
+    const makeImage = (url: string) => {
+        const image = new Image(); image.crossOrigin = 'anonymous'; image.decoding = 'async'; image.setAttribute('data-source-url', url); return image
+    }
+    const install = (cache: AjedrezStillCache, backend: AjedrezStillBackend) => {
+        if (backend.generation >= AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation) return
+        backend.implementation = AJEDREZ_STILL_CACHE_IMPLEMENTATION; backend.generation = AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation
+        const records = backend.records
+        const prune = () => {
+            for (const [url, record] of records) {
+                if (records.size <= 6) break
+                if (record.listeners.size || record.state === 'queued' || record.state === 'loading') continue
+                records.delete(url); record.image.removeAttribute('src')
+            }
+        }
+        backend.pump = () => {
+            if (backend.loading) return
+            const record = backend.queue.shift()
+            if (!record) return
+            if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) records.delete(url) }); backend.pump(); return }
+            backend.loading = record; record.state = 'loading'
+            const image = record.image
+            const finish = (state: 'ready' | 'failed') => {
+                if (backend.loading !== record || record.image !== image) return
+                image.onload = null; image.onerror = null
+                record.state = state; backend.loading = null
+                for (const listener of [...record.listeners]) listener()
+                backend.pump()
+            }
+            image.onload = () => finish('ready'); image.onerror = () => finish('failed')
+            image.src = image.getAttribute('data-source-url') ?? ''
+        }
+        backend.retry = (url, record) => {
+            if (record.state !== 'failed' && !(record.state === 'ready' && !record.image.naturalWidth)) return
+            record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src')
+            record.image = makeImage(url); record.state = 'queued'; backend.queue.push(record)
+        }
+        backend.release = (url, record, listener) => {
+            record.listeners.delete(listener)
+            if (record.listeners.size) return
+            if (record.state === 'ready') { prune(); return }
+            const index = backend.queue.indexOf(record); if (index >= 0) backend.queue.splice(index, 1)
+            if (backend.loading === record) { record.image.onload = null; record.image.onerror = null; record.image.removeAttribute('src'); backend.loading = null }
+            if (records.get(url) === record) records.delete(url)
+            backend.pump()
+        }
+        backend.watch = (url, listener) => {
+            let record = records.get(url)
+            if (!record) {
+                record = { image: makeImage(url), state: 'queued', listeners: new Set() }; records.set(url, record); backend.queue.push(record)
+            } else backend.retry(url, record)
+            records.delete(url); records.set(url, record)
+            record.listeners.add(listener); backend.pump()
+            const own = record
+            return { record: own, release() { backend.release(url, own, listener) } }
+        }
+        cache.peek = url => {
+            const record = records.get(url)
+            if (record?.state === 'ready' && !record.image.naturalWidth) record.state = 'failed'
+            return record
+        }
+        cache.watch = (url, listener) => backend.watch(url, listener)
+        cache.backend = backend
+    }
+    const create = (cache: AjedrezStillCache, records: Map<string, AjedrezStillImageRecord>, retries: Set<string>) => {
+        const backend: AjedrezStillBackend = {
+            records, queue: [], loading: null, implementation: null, generation: -1, pump() {}, retry() {}, release() {},
+            watch() { throw new Error('Photographic cache is not initialized') },
+        }
+        install(cache, backend)
+        for (const url of retries) { const record = records.get(url); if (record?.listeners.size) backend.retry(url, record) }
+        backend.pump()
+    }
+    if (cached?.backend) { install(cached, cached.backend); return cached }
+    if (cached?.bridge) { cached.bridge.update(AJEDREZ_PHOTO_ATLAS_URLS, create, AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation); cached.bridge.check(); return cached }
+    if (cached) {
+        // The registered predecessor has only peek/watch closures. Its four
+        // source URLs are retained in the new table. Wait for that serial queue
+        // to become idle, then keep the same API, records, images and listeners.
+        const legacyPeek = cached.peek.bind(cached), legacyWatch = cached.watch.bind(cached)
+        const urls = new Set(AJEDREZ_PHOTO_ATLAS_URLS.filter((url): url is string => url !== null)), retries = new Set<string>(), images = new Set<HTMLImageElement>()
+        let done = false, checking = false, installer = create, installerGeneration = AJEDREZ_STILL_CACHE_IMPLEMENTATION.generation
+        const wake = () => queueMicrotask(check)
+        const mutation = new MutationObserver(wake)
+        const cleanup = () => { mutation.disconnect(); for (const image of images) { image.removeEventListener('load', wake); image.removeEventListener('error', wake) }; images.clear() }
+        const check = () => {
+            if (done || checking) return
+            checking = true
+            try {
+                const records = new Map<string, AjedrezStillImageRecord>()
+                for (const url of urls) { const record = legacyPeek(url); if (record) records.set(url, record) }
+                if ([...records.values()].some(record => record.state === 'loading' || record.state === 'queued')) {
+                    for (const record of records.values()) if (!images.has(record.image)) {
+                        images.add(record.image); mutation.observe(record.image, { attributes: true, attributeFilter: ['src'] })
+                        record.image.addEventListener('load', wake); record.image.addEventListener('error', wake)
+                    }
+                    return
+                }
+                done = true; cleanup(); delete cached.bridge; installer(cached, records, retries)
+            } finally { checking = false }
+        }
+        cached.bridge = { check, update(next, nextInstaller, generation) { for (const url of next) if (url) urls.add(url); if (generation > installerGeneration) { installer = nextInstaller; installerGeneration = generation } } }
+        cached.watch = (url, listener) => {
+            urls.add(url)
+            const prior = legacyPeek(url), retry = prior?.state === 'failed' || prior?.state === 'ready' && !prior.image.naturalWidth
+            const lease = legacyWatch(url, listener)
+            if (retry) retries.add(url)
+            check()
+            return { record: lease.record, release() { lease.release(); check() } }
+        }
+        check(); return cached
+    }
+    const cache: AjedrezStillCache = { peek() { return undefined }, watch() { throw new Error('Photographic cache is not initialized') } }
+    registry[key] = cache; create(cache, new Map(), new Set()); return cache
+}
+
 function useAjedrezPhotographicComposition(host: HTMLElement | null, state: FilmState) {
     const latest = React.useRef(state), owner = React.useRef<{ refresh: () => void } | null>(null)
     latest.current = state
