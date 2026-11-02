@@ -333,8 +333,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-009.json",
-        "bytes": 6782,
-        "sha256": "629bb2272b678694503472db30cb27ee9a75b4d445234763e47665295bd4b2fd"
+        "bytes": 9932,
+        "sha256": "32b0b6c366bc85b38ec670e1bcc1e90d2d750c254bb14d7b0bd69a0df41eb6d0"
       },
       "page": {
         "id": "XXmRThpe5",
@@ -352,20 +352,29 @@
       "additionalRuntimeEvidence": [],
       "sourceFidelityApproved": false,
       "currentOriginalSourceUpdate": {
-        "target": "Current original website/source work in the owner-edited list; earlier selected-gallery fields remain historical comparison evidence.",
-        "classification": "Source inspiration / credited recreation",
-        "fullFidelityApproved": false,
+        "status": "CURRENT_SOURCE_AND_CUSTOMER_RAIL_AUTHORED_READBACK_CONFIRMED_PREVIEW_RELOAD_PENDING",
         "actualFramerPreviewVerified": false,
-        "afterEditorReload": false,
-        "status": "CURRENT_PAGE_AND_CORRECTED_SOURCE_MODEL_CONFIRMED_STATIC_PAINT_VERIFIED",
-        "page": {
-          "id": "ebD8S_8Xo",
-          "desktop": "u5sNosRy9",
-          "compact": "rEeaw1frt",
-          "phone": "o1O9VNMak",
-          "path": "/playgrounds/source-inspiration/heroes/current/hero-009-vercel-agentic"
+        "afterEditorReload": false
+      },
+      "currentOriginalNativeModel": {
+        "pageID": "ebD8S_8Xo",
+        "roots": {
+          "Desktop": "u5sNosRy9",
+          "Compact": "rEeaw1frt",
+          "Phone": "o1O9VNMak"
         },
-        "actualFramerStaticPaintVerified": true
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/final-actual-authoring-receipt.json",
+          "bytes": 2702,
+          "sha256": "47c5e14129bf14bbe596526137c2b9b21c27cbe3411fc55b64e16c5746d99d08"
+        },
+        "sourceSHA256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90",
+        "publicRows": 12,
+        "publicOverrides": 11,
+        "components": 1,
+        "nativeRailBindings": 3,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
       }
     },
     {
@@ -853,7 +862,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3892,
-    "sha256": "88d390116008857daf134b2a293d3a6e28b8ea3a7ab3e605cd8a57ed8e120a60"
+    "sha256": "7476089f2af7aac7e3cf296ae5f9139d57a3e5827559f3a1481bd845b7dd6a7b"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

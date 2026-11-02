@@ -44,7 +44,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CURRENT_PAGE_AND_CORRECTED_SOURCE_MODEL_CONFIRMED_STATIC_PAINT_VERIFIED",
+    "status": "CURRENT_SOURCE_AND_CUSTOMER_RAIL_AUTHORED_READBACK_CONFIRMED_PREVIEW_RELOAD_PENDING",
     "page": {
       "id": "ebD8S_8Xo",
       "desktop": "u5sNosRy9",
@@ -53,7 +53,7 @@
       "path": "/playgrounds/source-inspiration/heroes/current/hero-009-vercel-agentic"
     },
     "sourceControls": 12,
-    "sourceRows": 11,
+    "sourceRows": 12,
     "modelReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/308-HERO-009-readonly-closure/output.json",
       "bytes": 502957,
@@ -66,11 +66,14 @@
     },
     "behavior": "Current pale source with192×166 Desktop/170×146 Phone triangle, direct click arming and pointer RGB brush. Native narrative, header, source vectors and customer handoff remain editable.",
     "intentionalDifferences": [
-      "Static customer rail replaces the source marquee.",
-      "Native Inter/Geist layout and some following prose have explicit fits."
+      "Native Inter/Geist layout and some following prose have explicit fits.",
+      "Reduced motion uses one accessible brand sequence rather than duplicate static sequences.",
+      "Returning from the wide static layout retains the prior owned clock phase; original reset behavior is unobserved.",
+      "Live mirrors refresh on native child replacement or resizing; late SVG attribute-only edits require resize/reload. Native original artwork remains editable and unchanged on Canvas."
     ],
     "next": [
-      "Verify actual Framer moving paint, native hover and reload."
+      "Verify the actual narrow customer rail, wide grid, pointer light and native hover in Framer Preview.",
+      "Confirm the editor state after a reload before reporting it as saved."
     ],
     "sourceReadbackReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/existing-source-corrections-317-full-readonly-closure/output.json",
@@ -91,6 +94,55 @@
       },
       "actualFramerStaticPaintVerified": true,
       "scope": "Actual native JPEG stills1440×900 and390×850; not moving Preview or editor reload."
+    },
+    "sourceRowsBeforeCustomerRail": 11,
+    "publicOverrides": 11,
+    "retainedDefaultComponents": 1,
+    "customerRail": {
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceVercelAgenticStudy.tsx",
+        "bytes": 69145,
+        "sha256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+      },
+      "authoringReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO009/current-marquee/final-actual-authoring-receipt.json",
+        "bytes": 2702,
+        "sha256": "47c5e14129bf14bbe596526137c2b9b21c27cbe3411fc55b64e16c5746d99d08"
+      },
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-vercel-customers-provenance.json",
+        "bytes": 7707,
+        "sha256": "684d2a5b15a981f4d1958771a4ac3d6d384899ce93abcc9f4833c6eacf4b4881"
+      },
+      "pageID": "ebD8S_8Xo",
+      "nativeBindings": 3,
+      "publicRows": 12,
+      "publicOverrides": 11,
+      "defaultControlSchemaCount": 12,
+      "sourceSmallWidthCutoff": 961,
+      "periodPx": 892,
+      "durationSeconds": 40,
+      "postGcValidation": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1/customers/result.json",
+          "bytes": 2261,
+          "sha256": "1479c08d7922717d958f5b076945b152a50aea6afa447b769026eadaeaf3235a",
+          "passed": true,
+          "checks": 25,
+          "sourceSHA256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1/result.json",
+          "bytes": 191988,
+          "sha256": "cee15ce69fed4f85d29bd4ebf2bb69a644a98bdfcb6dc165914a993905053273",
+          "passed": true,
+          "checks": 32,
+          "sourceSHA256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+        }
+      ],
+      "actualNewStaticPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }
