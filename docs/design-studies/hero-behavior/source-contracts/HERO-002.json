@@ -1937,14 +1937,22 @@
       "retainedCases": 6,
       "photoChecks": 26,
       "controller": {
-        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/result.json",
-        "sha256": "579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569",
-        "bytes": 1205854
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/result.json",
+          "expectedSHA256": "579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569",
+          "expectedBytes": 1205854
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569"
       },
       "photo": {
-        "path": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/photographic-aperture/result.json",
-        "sha256": "d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0",
-        "bytes": 11099
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/photographic-aperture/result.json",
+          "expectedSHA256": "d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0",
+          "expectedBytes": 11099
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0"
       },
       "scope": "Reproducible source/controller/native-like decoding validation. This metadata-only proof field is appended after the successful derivation; source/tests are unchanged. Actual Framer paint remains pending."
     },

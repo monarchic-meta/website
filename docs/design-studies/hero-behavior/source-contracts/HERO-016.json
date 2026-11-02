@@ -76,46 +76,78 @@
     },
     "lockedFocusedResults": {
       "strict": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
-        "bytes": 1088,
-        "sha256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+          "expectedSHA256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6",
+          "expectedBytes": 1088
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6"
       },
       "browser": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
-        "bytes": 2663,
-        "sha256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+          "expectedSHA256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6",
+          "expectedBytes": 2663
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6"
       },
       "motion": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
-        "bytes": 1836,
-        "sha256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+          "expectedSHA256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0",
+          "expectedBytes": 1836
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0"
       },
       "responsive": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
-        "bytes": 15068,
-        "sha256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "expectedSHA256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded",
+          "expectedBytes": 15068
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded"
       },
       "journey-browser": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
-        "bytes": 75727,
-        "sha256": "591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+          "expectedSHA256": "591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3",
+          "expectedBytes": 75727
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3"
       },
       "journey-provider": {
-        "path": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
-        "bytes": 3136,
-        "sha256": "5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+          "expectedSHA256": "5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0",
+          "expectedBytes": 3136
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0"
       },
       "mixed": {
-        "path": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
-        "bytes": 261099,
-        "sha256": "3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4",
-        "checks": 19
+        "checks": 19,
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+          "expectedSHA256": "3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4",
+          "expectedBytes": 261099
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4"
       }
     },
     "lockedAggregateResult": {
-      "path": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1/evidence/journey-resources/result.json",
-      "bytes": 80095,
-      "sha256": "5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1"
+      "availability": "UNAVAILABLE_AFTER_NIX_GC",
+      "unavailableEvidence": {
+        "originalNixPath": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1/evidence/journey-resources/result.json",
+        "expectedSHA256": "5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1",
+        "expectedBytes": 80095
+      },
+      "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1"
     },
     "checks": {
       "strictGroups": 3,
@@ -163,14 +195,22 @@
         "sha256": "5999ba313e459d86ee20b5c89f77bfd2f52138b9f2ddb80fb3de488c5b400eb2"
       },
       "lockedFocusedResult": {
-        "path": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
-        "bytes": 14731,
-        "sha256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "expectedSHA256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137",
+          "expectedBytes": 14731
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137"
       },
       "lockedMixedResult": {
-        "path": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
-        "bytes": 261099,
-        "sha256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
+        "availability": "UNAVAILABLE_AFTER_NIX_GC",
+        "unavailableEvidence": {
+          "originalNixPath": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+          "expectedSHA256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59",
+          "expectedBytes": 261099
+        },
+        "availabilityRecord": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/evidence-availability.json#78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59"
       },
       "checks": {
         "strictGroups": 3,
@@ -236,6 +276,20 @@
       "Relative-frame zero offsets and native link defaults are representation differences; raw known new-field gaps retained in405closure.",
       "Native Inter substitutes unavailable native STKMiso; no customfont selector attempt.",
       "Actual Vimeo decoded playback remains provider-blocked/unverified; no mock-playback claim."
-    ]
+    ],
+    "postGcRevalidation": {
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/receipt.json",
+        "bytes": 13247,
+        "sha256": "3150db7812b9c706e9f3762b29a9e3f301300ff8b127009b9bdb3a7eaa00d6cd"
+      },
+      "strictGroups": 3,
+      "currentFocusedBrowser": 155,
+      "currentResourceBrowser": 48,
+      "currentTotalBrowser": 203,
+      "allCurrentSourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

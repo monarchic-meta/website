@@ -135,9 +135,11 @@
     "renderedValidation": {
       "store": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1",
       "result": {
-        "path": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1/evidence/results.json",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/recovered/7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f.json",
         "bytes": 29513,
-        "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f"
+        "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f",
+        "originalNixPath": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1/evidence/results.json",
+        "availability": "EXACT_BYTES_RECOVERED"
       },
       "strictGroups": 7,
       "temporalFrames": 10,

@@ -613,9 +613,11 @@
     "localValidation": {
       "store": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1",
       "result": {
-        "path": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/recovered/3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c.json",
         "bytes": 67662,
-        "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c"
+        "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c",
+        "originalNixPath": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+        "availability": "EXACT_BYTES_RECOVERED"
       },
       "checks": 43,
       "scope": "Local ReactDOM native-like Framer HOC fixture, including Framer pseudo-border and competing retained native transform; not actual Framer Preview/reload"

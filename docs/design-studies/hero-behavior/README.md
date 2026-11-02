@@ -103,6 +103,13 @@ browser fixtures check inputs, timing, actual pixels, reduced motion, static
 exports, resolution and resource recovery. Nix outputs keep PNG/JSON evidence
 under `evidence`.
 
+The quick checks below use `--no-link`; their outputs can be garbage-collected.
+For evidence that will be cited later, use `--out-link` in a durable directory
+outside the checkout, then copy the output's `evidence` directory outside
+`/nix/store` and pin that copy. Record the original derivation, source and test
+hashes as well. Keep a rerun distinct from an unavailable historical result;
+never replace the historical result's expected hash with the rerun's hash.
+
 ```sh
 nix build --no-link -L .#checks.x86_64-linux.hero-behavior
 nix build --no-link -L .#checks.x86_64-linux.native-hero-behaviors

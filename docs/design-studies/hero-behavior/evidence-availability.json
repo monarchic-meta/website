@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "reason": "System nix-gc.service removed unrooted local check outputs. Repository code, external source snapshots and Framer authoring receipts remain intact.",
+  "policy": "Recovered copies retain exactly the original bytes/hash. Unavailable historical results retain their original expected identity without pretending to be retrievable files. New runs are separate evidence.",
+  "lastSuccessfulGlobalPinCheck": {
+    "pins": 469,
+    "errors": 0,
+    "exactTimestampNotRecorded": true
+  },
+  "recoveryScan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/exact-recovery-scan.json",
+    "bytes": 2041,
+    "sha256": "5a44fb8ac997fc39c4bea9976543a64ca11b68ef86e8093d3a7d6dc8138e81e0"
+  },
+  "matchingSystemJournal": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/matching-gc-journal.txt",
+    "bytes": 1237,
+    "sha256": "61e12423555530a13ecdf5c3d2a3677aebebab3684969c2d93bc173e2bb6063b"
+  },
+  "artifacts": [
+    {
+      "originalNixPath": "/nix/store/iv9njfxl23gp3bi2zk5cpwvf89cg997p-monarchic-website-type-face-sequence-0.0.1/evidence/results.json",
+      "expectedSHA256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f",
+      "expectedBytes": 29513,
+      "availability": "EXACT_BYTES_RECOVERED",
+      "recoveredCopy": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/recovered/7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f.json",
+        "bytes": 29513,
+        "sha256": "7c90def05e7228fbf9f3c1e1febcfe021855b9a2347e01527468de0b128ae56f"
+      }
+    },
+    {
+      "originalNixPath": "/nix/store/gjmdl8xf6pzxfiwgmhan1vchfc2mcg65-monarchic-website-source-gthe-motion-0.0.1/evidence/result.json",
+      "expectedSHA256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c",
+      "expectedBytes": 67662,
+      "availability": "EXACT_BYTES_RECOVERED",
+      "recoveredCopy": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/recovered/3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c.json",
+        "bytes": 67662,
+        "sha256": "3776bd7fb675755d1de5b8a22df9e38569d72eae934c47b5464ca5452dcaac8c"
+      }
+    },
+    {
+      "originalNixPath": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/result.json",
+      "expectedSHA256": "579b1fcd98fbc75927cb4a83ca7768733fb0155ee4140ad3e72303f1e2751569",
+      "expectedBytes": 1205854,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/rdmnhn4bb64mx9mi664v4a6wyl78nldz-monarchic-website-source-ajedrez-0.0.1/evidence/photographic-aperture/result.json",
+      "expectedSHA256": "d1aa7eede371a526b8c9e5f6c996f5e470fae18c38e646d25745f845e9298bf0",
+      "expectedBytes": 11099,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+      "expectedSHA256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6",
+      "expectedBytes": 1088,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+      "expectedSHA256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6",
+      "expectedBytes": 2663,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+      "expectedSHA256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0",
+      "expectedBytes": 1836,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+      "expectedSHA256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded",
+      "expectedBytes": 15068,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+      "expectedSHA256": "591421e48277472f3576ebd27bd9148877d51d85dea862cf9bf7515cb6e57de3",
+      "expectedBytes": 75727,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/gnmvqb6wlyf3mablx1diydxm8smc2yc4-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+      "expectedSHA256": "5ca9bc141e7b7ed8aa2f71b3482f225d5736883b6cedcb17babb5b92280937b0",
+      "expectedBytes": 3136,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+      "expectedSHA256": "3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4",
+      "expectedBytes": 261099,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1/evidence/journey-resources/result.json",
+      "expectedSHA256": "5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1",
+      "expectedBytes": 80095,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/5411jmy0knw5ys4jp5rnd6fzgw83qz02-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+      "expectedSHA256": "e1a286511bba7b409efcc046209b6dcf5a8dd60e3f78079b048bce991e3b5137",
+      "expectedBytes": 14731,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    },
+    {
+      "originalNixPath": "/nix/store/5qnr5wyxsjwmwnjgas82gnqa20111ybb-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+      "expectedSHA256": "78bea917e2816f508e160a1ba3913b981e408a31256cd8ca1aac3808e4ce5c59",
+      "expectedBytes": 261099,
+      "availability": "UNAVAILABLE_AFTER_NIX_GC"
+    }
+  ],
+  "currentRevalidation": [
+    {
+      "check": "source-origin-native",
+      "state": "PASSED",
+      "output": "/nix/store/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/browser/result.json",
+          "bytes": 2663,
+          "sha256": "d6e65bf236b2680cff4f239d261f7f5342a9b3700812f9a2457d358a00d8b3c6",
+          "passed": true,
+          "checks": 31,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/journey-browser/result.json",
+          "bytes": 76649,
+          "sha256": "519bf54142a77fcd7f19ffa66eb3a86015be80a4b0a8ea256ed82a7640c0d4af",
+          "passed": true,
+          "checks": 37,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/journey-provider/result.json",
+          "bytes": 3042,
+          "sha256": "d32803ff627f150c7c51dc9a8769c84ab9c46222d6ef22063e71038b15fa1740",
+          "passed": true,
+          "checks": 26,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/motion/result.json",
+          "bytes": 1836,
+          "sha256": "7aa0e44ea1a79d37d41217ba75948ea988fa64e06e1335f2c97b184e8800aea0",
+          "passed": true,
+          "checks": 21,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/responsive/result.json",
+          "bytes": 15068,
+          "sha256": "5db1ac87dd98886a7e69257ffea249106e1811352bac3b97e82d27abbef48ded",
+          "passed": true,
+          "checks": 40,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jan07rfjsq38jyz2wc2v10r6i8d65nvw-monarchic-website-source-origin-native-0.0.1/strict/result.json",
+          "bytes": 1088,
+          "sha256": "901ba41edccfa6d18c73e074ad1a1de7e52dbb86e9cf42c867bba578044dd9b6",
+          "passed": true,
+          "checks": 3,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        }
+      ]
+    },
+    {
+      "check": "source-origin-native-mixed",
+      "state": "PASSED",
+      "output": "/nix/store/jkh72r2075yca7caz9fa0k0gb05cbq99-monarchic-website-source-origin-native-mixed-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jkh72r2075yca7caz9fa0k0gb05cbq99-monarchic-website-source-origin-native-mixed-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/jkh72r2075yca7caz9fa0k0gb05cbq99-monarchic-website-source-origin-native-mixed-0.0.1/mixed/result.json",
+          "bytes": 261098,
+          "sha256": "e662772a8b2c4fcde40810f0d7bf8319dc4342886bffa832e70d5ad6d1add0ee",
+          "passed": true,
+          "checks": 19,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        }
+      ]
+    },
+    {
+      "check": "source-origin-journey-resources",
+      "state": "PASSED",
+      "output": "/nix/store/qpsm1xl8zhqsbxbaw5lgh6c4dncxdxh2-monarchic-website-source-origin-journey-resources-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/qpsm1xl8zhqsbxbaw5lgh6c4dncxdxh2-monarchic-website-source-origin-journey-resources-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/qpsm1xl8zhqsbxbaw5lgh6c4dncxdxh2-monarchic-website-source-origin-journey-resources-0.0.1/journey-resources/result.json",
+          "bytes": 80256,
+          "sha256": "68596ac0ab74feefa7a811e10dd965c08f317dd56e489cf4c475863358f32b57",
+          "passed": true,
+          "checks": 29,
+          "sourceSHA256": "e33719ea750af27177737213b9ebb68c3a54988ddb210029cfa23370abfc0bc8"
+        }
+      ]
+    },
+    {
+      "check": "source-montreal-accents",
+      "state": "PASSED",
+      "output": "/nix/store/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1/result.json",
+          "bytes": 4650,
+          "sha256": "fbef4973bb8a456624e6943fd9487cf7c480d92f8d451415d1df28f5cdd454bf",
+          "passed": true,
+          "checks": 22,
+          "sourceSHA256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/xcv04cx5shiryw5n74bhb86k65shdkk3-monarchic-website-source-montreal-accents-0.0.1/tickers/result.json",
+          "bytes": 36791,
+          "sha256": "2cfad462475d69797102caec05fd3230a727a6aa5f7bb4f27507f736fd26510b",
+          "passed": true,
+          "checks": 31,
+          "sourceSHA256": "adee308cab012134dfbca946a7967265f325827289f1480629f09b7dd83e3e12"
+        }
+      ]
+    },
+    {
+      "check": "source-vercel-agentic",
+      "state": "PASSED",
+      "output": "/nix/store/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1/customers/result.json",
+          "bytes": 2261,
+          "sha256": "1479c08d7922717d958f5b076945b152a50aea6afa447b769026eadaeaf3235a",
+          "passed": true,
+          "checks": 25,
+          "sourceSHA256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/pbjgma01iiz52wc5lmqm4qj1c2mlfs3s-monarchic-website-source-vercel-agentic-0.0.1/result.json",
+          "bytes": 191988,
+          "sha256": "cee15ce69fed4f85d29bd4ebf2bb69a644a98bdfcb6dc165914a993905053273",
+          "passed": true,
+          "checks": 32,
+          "sourceSHA256": "3285555ee88c319984ea226ef3fe87d7a2f501afae63b0c5632f4bfff18a3a90"
+        }
+      ]
+    },
+    {
+      "check": "source-kaspar-native",
+      "state": "PASSED",
+      "output": "/nix/store/nf8py6c4yfa694rlxiiyyx9xr2rcxq8k-monarchic-website-source-kaspar-native-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/nf8py6c4yfa694rlxiiyyx9xr2rcxq8k-monarchic-website-source-kaspar-native-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/nf8py6c4yfa694rlxiiyyx9xr2rcxq8k-monarchic-website-source-kaspar-native-0.0.1/result.json",
+          "bytes": 3027,
+          "sha256": "6d398f3d06d511061acf2f108a6b03ea7bf82730939b988667c20a6fbb11377f",
+          "passed": true,
+          "checks": 38,
+          "sourceSHA256": "3f9acdbc536992df11f6ee2f0d5c1bdf20bc0ffb34b6180dc7d43a3b09ab56fc"
+        }
+      ]
+    },
+    {
+      "check": "source-polar-guide",
+      "state": "PASSED",
+      "output": "/nix/store/5cy0mnaigq19sa0wjkkzxbqwaavszhkr-monarchic-website-source-polar-guide-0.0.1",
+      "durableEvidence": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/5cy0mnaigq19sa0wjkkzxbqwaavszhkr-monarchic-website-source-polar-guide-0.0.1",
+      "results": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/5cy0mnaigq19sa0wjkkzxbqwaavszhkr-monarchic-website-source-polar-guide-0.0.1/result.json",
+          "bytes": 3458,
+          "sha256": "bb990ab74df21067cbf4aa7a4e859cd72399d440d899e2f6ce38c7f5b3c204cc",
+          "passed": true,
+          "checks": 41,
+          "sourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/5cy0mnaigq19sa0wjkkzxbqwaavszhkr-monarchic-website-source-polar-guide-0.0.1/toc/result.json",
+          "bytes": 16517,
+          "sha256": "2c511a727fbccdef4168101a1ccd47fbc5b69bd3172aadbad6ddbada1da4ffba",
+          "passed": true,
+          "checks": 14,
+          "sourceSHA256": "a2f0f1ba65372609b4ced576d84d12e85d056a51f0d951f12752a5d7ef919163"
+        }
+      ]
+    }
+  ],
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false,
+  "latestStatusObserved": "2026-11-02T16:32:29.984Z",
+  "recoveryCheckpoint": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/recovery-after-interruption-2026-11-02/2026-11-02T16-16-36.019Z/checkpoint.json",
+  "currentRevalidationReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/evidence-gc-recovery-2026-11-02/resumed-seven-suites/receipt.json",
+    "bytes": 13247,
+    "sha256": "3150db7812b9c706e9f3762b29a9e3f301300ff8b127009b9bdb3a7eaa00d6cd"
+  },
+  "previousCombinedRunFailure": {
+    "check": "source-origin-native",
+    "assertion": "Active admitted fixture video actually decodes",
+    "resolution": "Unmodified isolated31 passed. Replaced fixed readiness assumption with bounded actual readyState wait; all7 locked derivations then passed. Original decode assertion remains."
+  }
+}
