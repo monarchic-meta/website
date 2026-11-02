@@ -1,0 +1,1184 @@
+{
+  "schema": "source-ajedrez-photographic-composition.v1",
+  "reference": "HERO-002",
+  "classification": "Source inspiration / credited close recreation",
+  "status": "LOCAL_IMPLEMENTATION_BOUND_TO_FOUR_UPLOADED_ATLASES_NATIVE_AND_SOURCE_TRANSFER_PENDING",
+  "credit": "Julián Leiss / Ajedrez Film Poem; source archival photograph authors remain unverified.",
+  "source": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/../source-1080x1920.mp4",
+    "bytes": 24910614,
+    "sha256": "9b12175445d3b6045f28b5e5cc11d95addb1a4d9ac8a3e049a3da46e6f96e45f",
+    "url": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
+    "originalPost": "https://x.com/julianleiss/status/2110868325052149925",
+    "fps": 24,
+    "sourceLogicalSize": [
+      480,
+      852
+    ]
+  },
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 80277,
+    "sha256": "d5e714e963351a56f53182a0a8dc940f31d51473a3c5372e5582c33b7249cfa2"
+  },
+  "lineage": {
+    "parent": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/frozen-v1/parent-source-778dd206.tsx",
+      "bytes": 57829,
+      "sha256": "778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0"
+    },
+    "extensionStart": "\n// Source-cut photographic compositions.",
+    "extensionSHA256": "dce80c16d0482b0df87bea98e043a529719b274af5bad0a458c0206d112f2e9e",
+    "filmHookLine": "        useAjedrezPhotographicComposition(host, state)\n",
+    "headerAmendment": {
+      "old": " * through its shared clock. Other photographic passages remain still-held;\n * their internal motion and unreviewed audio are not claimed as restored.",
+      "current": " * through its shared clock. Clean archival photo tiles also follow examined\n * hard-cut compositions without another video decoder or animation loop.\n * Remaining unmapped photographic passages and unreviewed audio stay explicit."
+    },
+    "exactParentReconstruction": true,
+    "publicExports": 46,
+    "globalPhases": 37,
+    "duration": 52.314558,
+    "oldDecoderAndTypeGridBodiesUnchanged": true
+  },
+  "map": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/atlas/material-map.json",
+    "bytes": 18876,
+    "sha256": "1596b4e176d2b27947565186ad3c11ccf51929ab3013b0bd8e2c8ef5d5878d1d"
+  },
+  "atlases": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/atlas/photographic-materials-1.webp",
+      "bytes": 541614,
+      "sha256": "8bcc87989c51e2b9891c9b92995746d4c53256e0e4a669632f3ec0e2baa15076",
+      "width": 1384,
+      "height": 1386,
+      "pixels": 1918224,
+      "tiles": [
+        "players-dark-1",
+        "player-one-1",
+        "room-1",
+        "player-one-2",
+        "hand-3",
+        "tournament-hall-a-2"
+      ],
+      "index": 0,
+      "url": "https://framerusercontent.com/images/yg9xF4rt6vHHybPn1RJAjmInI.webp",
+      "filename": "hero-002-photographic-materials-1-8bcc87989c51.webp",
+      "reference": "data:framer/asset-reference,hyfjqdP97jKZgIQn5izxF3mDdW4.webp?originalFilename=yg9xF4rt6vHHybPn1RJAjmInI.webp&width=1384&height=1386"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/atlas/photographic-materials-2.webp",
+      "bytes": 528482,
+      "sha256": "d355f547cb8a4311fa4c2b2399239fda43fa81fa1b6baaaa49af12c076dd39bc",
+      "width": 1274,
+      "height": 1400,
+      "pixels": 1783600,
+      "tiles": [
+        "players-chess-1",
+        "players-papers-1",
+        "tournament-hall-a-1",
+        "earth-0",
+        "players-dark-2"
+      ],
+      "index": 1,
+      "url": "https://framerusercontent.com/images/AMhcnp9RVCv88auPf4ls7Ew9peI.webp",
+      "filename": "hero-002-photographic-materials-2-d355f547cb8a.webp",
+      "reference": "data:framer/asset-reference,4xh93DPppZGV8Tw0YbNIKA8g6o.webp?originalFilename=AMhcnp9RVCv88auPf4ls7Ew9peI.webp&width=1274&height=1400"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/atlas/photographic-materials-3.webp",
+      "bytes": 886700,
+      "sha256": "75b180a17d7a14af0f3ad26cb3e073feec830f2faf309099f3da4a08ad10f4d8",
+      "width": 1378,
+      "height": 1392,
+      "pixels": 1918176,
+      "tiles": [
+        "tournament-hall-b-1",
+        "players-chess-0",
+        "players-chess-2",
+        "room-0",
+        "hand-1",
+        "hand-2",
+        "tournament-hall-b-2",
+        "tournament-hall-a-0"
+      ],
+      "index": 2,
+      "url": "https://framerusercontent.com/images/jzqgoKWwCJXxoJQgAExnHzC6p6g.webp",
+      "filename": "hero-002-photographic-materials-3-75b180a17d7a.webp",
+      "reference": "data:framer/asset-reference,JS9VJcWnxDxJ9BESOqITs806A.webp?originalFilename=jzqgoKWwCJXxoJQgAExnHzC6p6g.webp&width=1378&height=1392"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/atlas/photographic-materials-4.webp",
+      "bytes": 465988,
+      "sha256": "05f3625d29541f2ce443919b13d87e9d5e5a5f20738a293924842db0995eb1d2",
+      "width": 1382,
+      "height": 970,
+      "pixels": 1340540,
+      "tiles": [
+        "room-2",
+        "players-dark-0",
+        "hand-4",
+        "player-one-0",
+        "tournament-hall-b-0",
+        "players-papers-0",
+        "players-papers-2"
+      ],
+      "index": 3,
+      "url": "https://framerusercontent.com/images/HKE7hnjLxsy9Bgs0EzcV1oVrWT4.webp",
+      "filename": "hero-002-photographic-materials-4-05f3625d2954.webp",
+      "reference": "data:framer/asset-reference,fOQ6kxu33R8mbPFEthaxZrY1b0.webp?originalFilename=HKE7hnjLxsy9Bgs0EzcV1oVrWT4.webp&width=1382&height=970"
+    }
+  ],
+  "tiles": [
+    {
+      "key": "room-0",
+      "frame": 82,
+      "sourceRect": [
+        70,
+        0,
+        358,
+        176
+      ],
+      "atlas": 2,
+      "rect": [
+        442,
+        708,
+        716,
+        352
+      ]
+    },
+    {
+      "key": "room-1",
+      "frame": 82,
+      "sourceRect": [
+        70,
+        297,
+        358,
+        242
+      ],
+      "atlas": 0,
+      "rect": [
+        664,
+        650,
+        716,
+        484
+      ]
+    },
+    {
+      "key": "room-2",
+      "frame": 82,
+      "sourceRect": [
+        70,
+        678,
+        358,
+        174
+      ],
+      "atlas": 3,
+      "rect": [
+        2,
+        2,
+        716,
+        348
+      ]
+    },
+    {
+      "key": "player-one-0",
+      "frame": 104,
+      "sourceRect": [
+        62,
+        0,
+        359,
+        100
+      ],
+      "atlas": 3,
+      "rect": [
+        470,
+        352,
+        718,
+        200
+      ]
+    },
+    {
+      "key": "player-one-1",
+      "frame": 104,
+      "sourceRect": [
+        62,
+        259,
+        359,
+        323
+      ],
+      "atlas": 0,
+      "rect": [
+        664,
+        2,
+        718,
+        646
+      ]
+    },
+    {
+      "key": "player-one-2",
+      "frame": 104,
+      "sourceRect": [
+        62,
+        740,
+        359,
+        112
+      ],
+      "atlas": 0,
+      "rect": [
+        664,
+        1136,
+        718,
+        224
+      ]
+    },
+    {
+      "key": "players-dark-0",
+      "frame": 108,
+      "sourceRect": [
+        79,
+        0,
+        330,
+        136
+      ],
+      "atlas": 3,
+      "rect": [
+        720,
+        2,
+        660,
+        272
+      ]
+    },
+    {
+      "key": "players-dark-1",
+      "frame": 108,
+      "sourceRect": [
+        79,
+        237,
+        330,
+        380
+      ],
+      "atlas": 0,
+      "rect": [
+        2,
+        2,
+        660,
+        760
+      ]
+    },
+    {
+      "key": "players-dark-2",
+      "frame": 108,
+      "sourceRect": [
+        79,
+        718,
+        330,
+        134
+      ],
+      "atlas": 1,
+      "rect": [
+        2,
+        1130,
+        660,
+        268
+      ]
+    },
+    {
+      "key": "players-papers-0",
+      "frame": 113,
+      "sourceRect": [
+        54,
+        0,
+        369,
+        84
+      ],
+      "atlas": 3,
+      "rect": [
+        470,
+        554,
+        738,
+        168
+      ]
+    },
+    {
+      "key": "players-papers-1",
+      "frame": 113,
+      "sourceRect": [
+        54,
+        289,
+        369,
+        277
+      ],
+      "atlas": 1,
+      "rect": [
+        2,
+        574,
+        738,
+        554
+      ]
+    },
+    {
+      "key": "players-papers-2",
+      "frame": 113,
+      "sourceRect": [
+        54,
+        771,
+        369,
+        81
+      ],
+      "atlas": 3,
+      "rect": [
+        470,
+        724,
+        738,
+        162
+      ]
+    },
+    {
+      "key": "players-chess-0",
+      "frame": 120,
+      "sourceRect": [
+        57,
+        0,
+        392,
+        176
+      ],
+      "atlas": 2,
+      "rect": [
+        442,
+        2,
+        784,
+        352
+      ]
+    },
+    {
+      "key": "players-chess-1",
+      "frame": 120,
+      "sourceRect": [
+        57,
+        282,
+        392,
+        285
+      ],
+      "atlas": 1,
+      "rect": [
+        2,
+        2,
+        784,
+        570
+      ]
+    },
+    {
+      "key": "players-chess-2",
+      "frame": 120,
+      "sourceRect": [
+        57,
+        677,
+        392,
+        175
+      ],
+      "atlas": 2,
+      "rect": [
+        442,
+        356,
+        784,
+        350
+      ]
+    },
+    {
+      "key": "tournament-hall-a-0",
+      "frame": 792,
+      "sourceRect": [
+        251,
+        0,
+        219,
+        143
+      ],
+      "atlas": 2,
+      "rect": [
+        2,
+        1092,
+        438,
+        286
+      ]
+    },
+    {
+      "key": "tournament-hall-a-1",
+      "frame": 792,
+      "sourceRect": [
+        251,
+        226,
+        219,
+        398
+      ],
+      "atlas": 1,
+      "rect": [
+        742,
+        574,
+        438,
+        796
+      ]
+    },
+    {
+      "key": "tournament-hall-a-2",
+      "frame": 792,
+      "sourceRect": [
+        251,
+        707,
+        219,
+        145
+      ],
+      "atlas": 0,
+      "rect": [
+        2,
+        1094,
+        438,
+        290
+      ]
+    },
+    {
+      "key": "tournament-hall-b-0",
+      "frame": 800,
+      "sourceRect": [
+        251,
+        0,
+        219,
+        143
+      ],
+      "atlas": 3,
+      "rect": [
+        2,
+        682,
+        438,
+        286
+      ]
+    },
+    {
+      "key": "tournament-hall-b-1",
+      "frame": 800,
+      "sourceRect": [
+        251,
+        226,
+        219,
+        398
+      ],
+      "atlas": 2,
+      "rect": [
+        2,
+        2,
+        438,
+        796
+      ]
+    },
+    {
+      "key": "tournament-hall-b-2",
+      "frame": 800,
+      "sourceRect": [
+        251,
+        707,
+        219,
+        145
+      ],
+      "atlas": 2,
+      "rect": [
+        2,
+        800,
+        438,
+        290
+      ]
+    },
+    {
+      "key": "hand-1",
+      "frame": 985,
+      "sourceRect": [
+        0,
+        275,
+        233,
+        164
+      ],
+      "atlas": 2,
+      "rect": [
+        442,
+        1062,
+        466,
+        328
+      ]
+    },
+    {
+      "key": "hand-2",
+      "frame": 985,
+      "sourceRect": [
+        236,
+        275,
+        233,
+        164
+      ],
+      "atlas": 2,
+      "rect": [
+        910,
+        1062,
+        466,
+        328
+      ]
+    },
+    {
+      "key": "hand-3",
+      "frame": 985,
+      "sourceRect": [
+        0,
+        440,
+        233,
+        164
+      ],
+      "atlas": 0,
+      "rect": [
+        2,
+        764,
+        466,
+        328
+      ]
+    },
+    {
+      "key": "hand-4",
+      "frame": 985,
+      "sourceRect": [
+        236,
+        440,
+        233,
+        164
+      ],
+      "atlas": 3,
+      "rect": [
+        2,
+        352,
+        466,
+        328
+      ]
+    },
+    {
+      "key": "earth-0",
+      "frame": 1116,
+      "sourceRect": [
+        119,
+        312,
+        242,
+        237
+      ],
+      "atlas": 1,
+      "rect": [
+        788,
+        2,
+        484,
+        474
+      ]
+    }
+  ],
+  "poses": [
+    {
+      "name": "room",
+      "first": 82,
+      "last": 91,
+      "rects": [
+        {
+          "tile": "room-0",
+          "rect": [
+            70,
+            0,
+            358,
+            176
+          ]
+        },
+        {
+          "tile": "room-1",
+          "rect": [
+            70,
+            297,
+            358,
+            242
+          ]
+        },
+        {
+          "tile": "room-2",
+          "rect": [
+            70,
+            678,
+            358,
+            174
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player-one",
+      "first": 104,
+      "last": 108,
+      "rects": [
+        {
+          "tile": "player-one-0",
+          "rect": [
+            62,
+            0,
+            359,
+            100
+          ]
+        },
+        {
+          "tile": "player-one-1",
+          "rect": [
+            62,
+            259,
+            359,
+            323
+          ]
+        },
+        {
+          "tile": "player-one-2",
+          "rect": [
+            62,
+            740,
+            359,
+            112
+          ]
+        }
+      ]
+    },
+    {
+      "name": "players-dark",
+      "first": 108,
+      "last": 113,
+      "rects": [
+        {
+          "tile": "players-dark-0",
+          "rect": [
+            79,
+            0,
+            330,
+            136
+          ]
+        },
+        {
+          "tile": "players-dark-1",
+          "rect": [
+            79,
+            237,
+            330,
+            380
+          ]
+        },
+        {
+          "tile": "players-dark-2",
+          "rect": [
+            79,
+            718,
+            330,
+            134
+          ]
+        }
+      ]
+    },
+    {
+      "name": "players-papers",
+      "first": 113,
+      "last": 120,
+      "rects": [
+        {
+          "tile": "players-papers-0",
+          "rect": [
+            54,
+            0,
+            369,
+            84
+          ]
+        },
+        {
+          "tile": "players-papers-1",
+          "rect": [
+            54,
+            289,
+            369,
+            277
+          ]
+        },
+        {
+          "tile": "players-papers-2",
+          "rect": [
+            54,
+            771,
+            369,
+            81
+          ]
+        }
+      ]
+    },
+    {
+      "name": "players-chess",
+      "first": 120,
+      "last": 128,
+      "rects": [
+        {
+          "tile": "players-chess-0",
+          "rect": [
+            57,
+            0,
+            392,
+            176
+          ]
+        },
+        {
+          "tile": "players-chess-1",
+          "rect": [
+            57,
+            282,
+            392,
+            285
+          ]
+        },
+        {
+          "tile": "players-chess-2",
+          "rect": [
+            57,
+            677,
+            392,
+            175
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tournament-hall-a",
+      "first": 792,
+      "last": 800,
+      "rects": [
+        {
+          "tile": "tournament-hall-a-0",
+          "rect": [
+            251,
+            0,
+            219,
+            143
+          ]
+        },
+        {
+          "tile": "tournament-hall-a-1",
+          "rect": [
+            251,
+            226,
+            219,
+            398
+          ]
+        },
+        {
+          "tile": "tournament-hall-a-2",
+          "rect": [
+            251,
+            707,
+            219,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tournament-hall-b",
+      "first": 800,
+      "last": 809,
+      "rects": [
+        {
+          "tile": "tournament-hall-b-0",
+          "rect": [
+            251,
+            0,
+            219,
+            143
+          ]
+        },
+        {
+          "tile": "tournament-hall-b-1",
+          "rect": [
+            251,
+            226,
+            219,
+            398
+          ]
+        },
+        {
+          "tile": "tournament-hall-b-2",
+          "rect": [
+            251,
+            707,
+            219,
+            145
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hand-reveal-one",
+      "first": 967,
+      "last": 973,
+      "rects": [
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            668,
+            233,
+            164
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hand-reveal-two",
+      "first": 973,
+      "last": 979,
+      "rects": [
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            668,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            668,
+            233,
+            164
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hand-reveal-three",
+      "first": 979,
+      "last": 985,
+      "rects": [
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            668,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            668,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            21,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            440,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            833,
+            233,
+            164
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hand-reveal-four",
+      "first": 985,
+      "last": 1001,
+      "rects": [
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            -145,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            275,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-1",
+          "rect": [
+            0,
+            668,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-2",
+          "rect": [
+            236,
+            668,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            21,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-4",
+          "rect": [
+            236,
+            21,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            440,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-4",
+          "rect": [
+            236,
+            440,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-3",
+          "rect": [
+            0,
+            833,
+            233,
+            164
+          ]
+        },
+        {
+          "tile": "hand-4",
+          "rect": [
+            236,
+            833,
+            233,
+            164
+          ]
+        }
+      ]
+    },
+    {
+      "name": "earth",
+      "first": 1116,
+      "last": 1143,
+      "rects": [
+        {
+          "tile": "earth-0",
+          "rect": [
+            119,
+            312,
+            242,
+            237
+          ]
+        }
+      ]
+    }
+  ],
+  "renderer": {
+    "videoDecodersAdded": 0,
+    "webglContextsAdded": 0,
+    "ownAnimationLoopsAdded": 0,
+    "imageWarming": "Serial shared queue. Only first photo atlas-set prewarms during visible/playing intro; then current pose and all imminentposes within0.8s. Past scene subscriptions released; at most6idle records, with onlycurrent/imminent records pinned.",
+    "sourceCuts": "Exact24fps holds; no invented camera interpolation.",
+    "canvas": "Off for editor/export/thumbnail/reduced; native authored poster remains.",
+    "buffer": "Transformed bounds×DPR; cap960×1704 and2,000,000pixels; cached ready images refresh paused and replaced hosts.",
+    "semanticNativeScenes": "Source-corresponding existing groups5/27/31/35 temporarily override oldclock-selectedgroup during photographic cuts. Phase opacity/visibility/aria restore against latest baseclock while custom late caller styles remain intact; allothernative content/IDs staymounted.",
+    "metadata": "Native source metadata and independent caption/line remain text above full-extent clean photographic tiles. All old source groups/IDs remain mounted."
+  },
+  "nativeCaptionPlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/four-editable-caption-recipe-v3.json",
+    "bytes": 5998,
+    "sha256": "030965dec6d87afa6db39ac1d972be731fe978df3b15008336b67376013a97a7"
+  },
+  "remaining": [
+    "Hard-cut/held-photo composition, no invented camera interpolation. Native text and geometry remain separate.",
+    "Normalized source bounds measured at480x852, crop edge tolerance1px.",
+    "Horse, changing indexed objects, sculpture/contact-grid and montage photo sequencing remain subsequent slices.",
+    "No complete hero bitmap, original poem body, additional decoder, WebGL context or independent animation loop.",
+    "Complete original-state source fidelity is not approved. The continuation map/asset work covers additional negatives, historical artifacts, objects, horse/contact/figure and montage cuts separately.",
+    "Four new phase31caption/line nodes and actual source registration are pending."
+  ],
+  "validation": {
+    "strictSemanticPassed": true,
+    "parentInverseByteExact": true,
+    "latestPreHeaderBehaviorResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/browser-genuine/result.json",
+      "bytes": 4391,
+      "sha256": "77886180549dbac16b1943225e93fa25d48076a8dbb44d8c63e1f800abf16fbb"
+    },
+    "framerSourceRegistered": false,
+    "nativeCaptionsCreated": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "sourceFidelityApproved": false,
+    "exactSourceBrowserResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/browser-genuine-final/result.json",
+      "bytes": 5009,
+      "sha256": "1d3975df8d3d5388b4a90a950cdc2d8bf52ba8c2856ed0942150ce0794e85ab6",
+      "sourceSHA256": "d5e714e963351a56f53182a0a8dc940f31d51473a3c5372e5582c33b7249cfa2",
+      "checks": 33,
+      "genuineSourceMaterial": true
+    },
+    "reproducibleChecker": "scripts/check-source-ajedrez-photo-composition.mjs",
+    "ownedSVGFixtureChecks": 33,
+    "exactSourceStrictResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/strict-final.json",
+      "bytes": 1258,
+      "sha256": "aa2dfb770f8ecf2e26a3e9c388a012c1dc334b7f9b702cad107e6d008327a995",
+      "checks": 9
+    }
+  }
+}

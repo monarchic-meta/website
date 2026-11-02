@@ -9,8 +9,9 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * subsecond cuts/interpolation are approximate. This is a temporal work, not
  * a website scroll journey. No original behavior JS or poem body is copied.
  * The overhead-chess aperture can play the credited silent 49-frame source crop
- * through its shared clock. Other photographic passages remain still-held;
- * their internal motion and unreviewed audio are not claimed as restored.
+ * through its shared clock. Clean archival photo tiles also follow examined
+ * hard-cut compositions without another video decoder or animation loop.
+ * Remaining unmapped photographic passages and unreviewed audio stay explicit.
  *
  * One Film parent must contain all native phase groups and added playback UI.
  * Keep each phase group mounted visible:true/opacity0, with editable native
@@ -185,6 +186,7 @@ function film(Component: ComponentType<LayerProps>, poster: number): ComponentTy
         const shown = frozen || reduced ? poster : time
         const state: FilmState = { time: shown, index: indexAt(shown), frozen, reduced, playing: !frozen && !reduced && playing,
             active: running, complete: shown >= DURATION, toggle, replay }
+        useAjedrezPhotographicComposition(host, state)
         return <Context.Provider value={state}><Component {...props} ref={bindHost}
             style={fit < 1 ? { ...props.style, zoom: callerZoom * fit } : props.style}
             data-source-ajedrez-time={shown} data-source-ajedrez-phase={state.index + 1} data-source-ajedrez-state={PHASES[state.index].name}
@@ -491,3 +493,226 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
         return <Component {...props} ref={bindHost} data-source-ajedrez-type-grid="sampled-native-words" />
     })
 }
+
+// Source-cut photographic compositions. Only clean archival photograph tiles
+// enter this layer. Native words, diagrams, rules and controls stay editable.
+// Hard cuts follow original24fps frames; no camera easing or new movie clock.
+type AjedrezPhotoRect = readonly [number, number, number, number]
+type AjedrezPhotoTile = { atlas: number; rect: AjedrezPhotoRect }
+type AjedrezPhotoPose = { name: string; first: number; last: number; nativePhaseIndex?: number; renderNativePhaseIndex?: number; sourceBackgroundColor?: string; paper?: string; ink?: string; rects: readonly { tile: string; rect: AjedrezPhotoRect }[] }
+const AJEDREZ_PHOTO_ATLAS_URLS: readonly (string | null)[] = ["https://framerusercontent.com/images/yg9xF4rt6vHHybPn1RJAjmInI.webp","https://framerusercontent.com/images/AMhcnp9RVCv88auPf4ls7Ew9peI.webp","https://framerusercontent.com/images/jzqgoKWwCJXxoJQgAExnHzC6p6g.webp","https://framerusercontent.com/images/HKE7hnjLxsy9Bgs0EzcV1oVrWT4.webp"]
+const AJEDREZ_PHOTO_TILES: Readonly<Record<string, AjedrezPhotoTile>> = {"room-0":{"atlas":2,"rect":[442,708,716,352]},"room-1":{"atlas":0,"rect":[664,650,716,484]},"room-2":{"atlas":3,"rect":[2,2,716,348]},"player-one-0":{"atlas":3,"rect":[470,352,718,200]},"player-one-1":{"atlas":0,"rect":[664,2,718,646]},"player-one-2":{"atlas":0,"rect":[664,1136,718,224]},"players-dark-0":{"atlas":3,"rect":[720,2,660,272]},"players-dark-1":{"atlas":0,"rect":[2,2,660,760]},"players-dark-2":{"atlas":1,"rect":[2,1130,660,268]},"players-papers-0":{"atlas":3,"rect":[470,554,738,168]},"players-papers-1":{"atlas":1,"rect":[2,574,738,554]},"players-papers-2":{"atlas":3,"rect":[470,724,738,162]},"players-chess-0":{"atlas":2,"rect":[442,2,784,352]},"players-chess-1":{"atlas":1,"rect":[2,2,784,570]},"players-chess-2":{"atlas":2,"rect":[442,356,784,350]},"tournament-hall-a-0":{"atlas":2,"rect":[2,1092,438,286]},"tournament-hall-a-1":{"atlas":1,"rect":[742,574,438,796]},"tournament-hall-a-2":{"atlas":0,"rect":[2,1094,438,290]},"tournament-hall-b-0":{"atlas":3,"rect":[2,682,438,286]},"tournament-hall-b-1":{"atlas":2,"rect":[2,2,438,796]},"tournament-hall-b-2":{"atlas":2,"rect":[2,800,438,290]},"hand-1":{"atlas":2,"rect":[442,1062,466,328]},"hand-2":{"atlas":2,"rect":[910,1062,466,328]},"hand-3":{"atlas":0,"rect":[2,764,466,328]},"hand-4":{"atlas":3,"rect":[2,352,466,328]},"earth-0":{"atlas":1,"rect":[788,2,484,474]}}
+const AJEDREZ_PHOTO_POSES: readonly AjedrezPhotoPose[] = [{"name":"room","first":82,"last":91,"rects":[{"tile":"room-0","rect":[70,0,358,176]},{"tile":"room-1","rect":[70,297,358,242]},{"tile":"room-2","rect":[70,678,358,174]}]},{"name":"player-one","first":104,"last":108,"rects":[{"tile":"player-one-0","rect":[62,0,359,100]},{"tile":"player-one-1","rect":[62,259,359,323]},{"tile":"player-one-2","rect":[62,740,359,112]}]},{"name":"players-dark","first":108,"last":113,"rects":[{"tile":"players-dark-0","rect":[79,0,330,136]},{"tile":"players-dark-1","rect":[79,237,330,380]},{"tile":"players-dark-2","rect":[79,718,330,134]}]},{"name":"players-papers","first":113,"last":120,"rects":[{"tile":"players-papers-0","rect":[54,0,369,84]},{"tile":"players-papers-1","rect":[54,289,369,277]},{"tile":"players-papers-2","rect":[54,771,369,81]}]},{"name":"players-chess","first":120,"last":128,"rects":[{"tile":"players-chess-0","rect":[57,0,392,176]},{"tile":"players-chess-1","rect":[57,282,392,285]},{"tile":"players-chess-2","rect":[57,677,392,175]}]},{"name":"tournament-hall-a","first":792,"last":800,"rects":[{"tile":"tournament-hall-a-0","rect":[251,0,219,143]},{"tile":"tournament-hall-a-1","rect":[251,226,219,398]},{"tile":"tournament-hall-a-2","rect":[251,707,219,145]}]},{"name":"tournament-hall-b","first":800,"last":809,"rects":[{"tile":"tournament-hall-b-0","rect":[251,0,219,143]},{"tile":"tournament-hall-b-1","rect":[251,226,219,398]},{"tile":"tournament-hall-b-2","rect":[251,707,219,145]}]},{"name":"hand-reveal-one","first":967,"last":973,"rects":[{"tile":"hand-1","rect":[0,-145,233,164]},{"tile":"hand-1","rect":[0,275,233,164]},{"tile":"hand-1","rect":[0,668,233,164]}]},{"name":"hand-reveal-two","first":973,"last":979,"rects":[{"tile":"hand-1","rect":[0,-145,233,164]},{"tile":"hand-2","rect":[236,-145,233,164]},{"tile":"hand-1","rect":[0,275,233,164]},{"tile":"hand-2","rect":[236,275,233,164]},{"tile":"hand-1","rect":[0,668,233,164]},{"tile":"hand-2","rect":[236,668,233,164]}]},{"name":"hand-reveal-three","first":979,"last":985,"rects":[{"tile":"hand-1","rect":[0,-145,233,164]},{"tile":"hand-2","rect":[236,-145,233,164]},{"tile":"hand-1","rect":[0,275,233,164]},{"tile":"hand-2","rect":[236,275,233,164]},{"tile":"hand-1","rect":[0,668,233,164]},{"tile":"hand-2","rect":[236,668,233,164]},{"tile":"hand-3","rect":[0,21,233,164]},{"tile":"hand-3","rect":[0,440,233,164]},{"tile":"hand-3","rect":[0,833,233,164]}]},{"name":"hand-reveal-four","first":985,"last":1001,"rects":[{"tile":"hand-1","rect":[0,-145,233,164]},{"tile":"hand-2","rect":[236,-145,233,164]},{"tile":"hand-1","rect":[0,275,233,164]},{"tile":"hand-2","rect":[236,275,233,164]},{"tile":"hand-1","rect":[0,668,233,164]},{"tile":"hand-2","rect":[236,668,233,164]},{"tile":"hand-3","rect":[0,21,233,164]},{"tile":"hand-4","rect":[236,21,233,164]},{"tile":"hand-3","rect":[0,440,233,164]},{"tile":"hand-4","rect":[236,440,233,164]},{"tile":"hand-3","rect":[0,833,233,164]},{"tile":"hand-4","rect":[236,833,233,164]}]},{"name":"earth","first":1116,"last":1143,"rects":[{"tile":"earth-0","rect":[119,312,242,237]}]}]
+// Object identity changes on a module reload even when the control schema stays identical.
+const AJEDREZ_PHOTO_COMPOSITION_REVISION = Object.freeze({ source: 'photo-cuts-20261101-v3', materialMapSHA256: '1596b4e176d2b27947565186ad3c11ccf51929ab3013b0bd8e2c8ef5d5878d1d', uploadedURLSetSHA256: '851e9735732b4cc7e724b7d588082b0820c345555f38c47e6b1f800bebcfb6d2' })
+function ajedrezPhotoPose(time: number): AjedrezPhotoPose | null {
+    const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)
+    return AJEDREZ_PHOTO_POSES.find(pose => frame >= pose.first && frame < pose.last) ?? null
+}
+function ajedrezPhotographicBacking(name: string): boolean {
+    return /(?:^|\/\s*)film-phase-(?:05-photo-\d+|27-hall-\d+|31-hand-\d+|35-globe)$/.test(name)
+}
+function ajedrezPhotographicFamily(pose: AjedrezPhotoPose): number {
+    return pose.renderNativePhaseIndex ?? pose.nativePhaseIndex ?? (pose.name.startsWith('hand-') ? 30 : pose.name.startsWith('tournament-') ? 26 : pose.name === 'earth' ? 34 : 4)
+}
+function ajedrezPhotographicNativeKey(node: HTMLElement): string { return (node.getAttribute('data-framer-name') ?? '').split('/').pop()?.trim() ?? '' }
+function ajedrezPhotographicMetadata(key: string): boolean { return /-(?:credit|index|record|bottom-rule)$/.test(key) }
+function ajedrezPhotographicCaption(key: string, pose: AjedrezPhotoPose): boolean {
+    return pose.name.startsWith('hand-') ? /film-phase-31-photo-hand-(?:catalog|line)$/.test(key) : pose.name === 'earth' && /film-phase-35-caption$/.test(key)
+}
+type AjedrezStillImageRecord = { image: HTMLImageElement; state: 'queued' | 'loading' | 'ready' | 'failed'; listeners: Set<() => void> }
+/** One serial image warm-up queue shared by every instance. This is not the
+ * film decoder gate: these are held photographs, so no video or GPU is needed. */
+function ajedrezPhotographicImages() {
+    const registry = window as unknown as Record<symbol, unknown>, key = Symbol.for('monarchic.source-ajedrez-photographic-images.v2')
+    type Cache = { peek: (url: string) => AjedrezStillImageRecord | undefined; watch: (url: string, listener: () => void) => { record: AjedrezStillImageRecord; release: () => void } }
+    const cached = registry[key] as Cache | undefined
+    if (cached) return cached
+    const records = new Map<string, AjedrezStillImageRecord>(), queue: AjedrezStillImageRecord[] = []
+    let loading: AjedrezStillImageRecord | null = null
+    const pump = () => {
+        if (loading) return
+        const record = queue.shift()
+        if (!record) return
+        if (!record.listeners.size) { records.forEach((value, url) => { if (value === record) records.delete(url) }); pump(); return }
+        loading = record; record.state = 'loading'
+        const finish = (state: 'ready' | 'failed') => {
+            if (loading !== record) return
+            record.image.onload = null; record.image.onerror = null
+            record.state = state; loading = null
+            for (const listener of [...record.listeners]) listener()
+            pump()
+        }
+        record.image.onload = () => finish('ready'); record.image.onerror = () => finish('failed')
+        record.image.src = record.image.getAttribute('data-source-url') ?? ''
+    }
+    const prune = () => {
+        for (const [url, record] of records) {
+            if (records.size <= 6) break
+            if (record.listeners.size || record.state === 'queued' || record.state === 'loading') continue
+            records.delete(url); record.image.removeAttribute('src')
+        }
+    }
+    const cache: Cache = { peek: url => records.get(url), watch(url, listener) {
+        let record = records.get(url)
+        if (!record) {
+            const image = new Image(); image.crossOrigin = 'anonymous'; image.decoding = 'async'; image.setAttribute('data-source-url', url)
+            record = { image, state: 'queued', listeners: new Set() }; records.set(url, record); queue.push(record)
+        }
+        records.delete(url); records.set(url, record)
+        record.listeners.add(listener); pump()
+        const own = record
+        return { record: own, release() {
+            own.listeners.delete(listener)
+            if (own.listeners.size) return
+            if (own.state === 'ready' || own.state === 'failed') { prune(); return }
+            const index = queue.indexOf(own); if (index >= 0) queue.splice(index, 1)
+            if (loading === own) { own.image.onload = null; own.image.onerror = null; own.image.removeAttribute('src'); loading = null }
+            records.delete(url); pump()
+        } }
+    } }
+    registry[key] = cache; return cache
+}
+function useAjedrezPhotographicComposition(host: HTMLElement | null, state: FilmState) {
+    const latest = React.useRef(state), owner = React.useRef<{ refresh: () => void } | null>(null)
+    latest.current = state
+    useOwnLayoutEffect(() => {
+        if (!host || state.frozen || state.reduced || !AJEDREZ_PHOTO_ATLAS_URLS.some(Boolean)) return
+        let disposed = false, painting = false, nativePhotographsSeen = false, scene: HTMLElement | null = null, last = '', surface: HTMLCanvasElement | null = null
+        const admittedFamilies = new Set<number>()
+        const watches = new Map<number, { record: AjedrezStillImageRecord; release: () => void }>()
+        const changed = new Map<HTMLElement, Map<string, { value: string; priority: string; own: string }>>()
+        const changedAttributes = new Map<HTMLElement, Map<string, { value: string | null; own: string }>>()
+        const restore = () => {
+            for (const [node, fields] of changed) for (const [field, prior] of fields) {
+                if (node.style.getPropertyValue(field) !== prior.own || node.style.getPropertyPriority(field) !== 'important') continue
+                const phase = Number(node.getAttribute('data-source-ajedrez-group')), nativePhase = phase >= 1 && phase <= 37, active = phase === latest.current.index + 1
+                if (nativePhase && prior.priority !== 'important' && field === 'opacity' && ['', '0', '1'].includes(prior.value)) node.style.setProperty(field, active ? '1' : '0')
+                else if (nativePhase && prior.priority !== 'important' && field === 'visibility' && ['', 'visible', 'hidden'].includes(prior.value)) node.style.setProperty(field, active ? 'visible' : 'hidden')
+                else if (prior.value) node.style.setProperty(field, prior.value, prior.priority); else node.style.removeProperty(field)
+            }
+            changed.clear()
+            for (const [node, fields] of changedAttributes) for (const [field, prior] of fields) {
+                if (node.getAttribute(field) !== prior.own) continue
+                const phase = Number(node.getAttribute('data-source-ajedrez-group'))
+                if (field === 'aria-hidden' && phase >= 1 && phase <= 37 && [null, 'true', 'false'].includes(prior.value)) node.setAttribute(field, String(phase !== latest.current.index + 1))
+                else if (prior.value === null) node.removeAttribute(field); else node.setAttribute(field, prior.value)
+            }
+            changedAttributes.clear()
+        }
+        const set = (node: HTMLElement, field: string, value: string) => {
+            let fields = changed.get(node); if (!fields) { fields = new Map(); changed.set(node, fields) }
+            if (!fields.has(field)) fields.set(field, { value: node.style.getPropertyValue(field), priority: node.style.getPropertyPriority(field), own: '' })
+            node.style.setProperty(field, value, 'important')
+            const saved = fields.get(field); if (saved) saved.own = node.style.getPropertyValue(field)
+        }
+        const hide = () => { restore(); if (surface) surface.style.visibility = 'hidden'; last = '' }
+        const attribute = (node: HTMLElement, field: string, value: string) => {
+            let fields = changedAttributes.get(node); if (!fields) { fields = new Map(); changedAttributes.set(node, fields) }
+            if (!fields.has(field)) fields.set(field, { value: node.getAttribute(field), own: value })
+            node.setAttribute(field, value)
+        }
+        const phaseVisibility = (node: HTMLElement, visible: boolean) => { set(node, 'opacity', visible ? '1' : '0'); set(node, 'visibility', visible ? 'visible' : 'hidden'); attribute(node, 'aria-hidden', String(!visible)) }
+        const desired = new Set<number>()
+        const warm = (pose: AjedrezPhotoPose | null, load: boolean) => {
+            if (!pose) return
+            for (const part of pose.rects) {
+                const tile = AJEDREZ_PHOTO_TILES[part.tile], url = AJEDREZ_PHOTO_ATLAS_URLS[tile.atlas]
+                desired.add(tile.atlas)
+                if (url && !watches.has(tile.atlas)) {
+                    const cache = ajedrezPhotographicImages()
+                    if (load || cache.peek(url)?.state === 'ready') watches.set(tile.atlas, cache.watch(url, refresh))
+                }
+            }
+        }
+        const refresh = () => {
+            if (disposed || painting || !host.isConnected) return
+            painting = true
+            try {
+                const current = latest.current, pose = ajedrezPhotoPose(current.time)
+                if (!nativePhotographsSeen) nativePhotographsSeen = !!host.querySelector('[data-framer-name$="film-phase-05-photo-0"],[data-framer-name$="film-phase-31-hand-0"],[data-framer-name$="film-phase-35-globe"]')
+                if (!nativePhotographsSeen) { hide(); return }
+                if (current.frozen || current.reduced) { hide(); return }
+                desired.clear(); warm(pose, current.active)
+                if (current.active) {
+                    const first = AJEDREZ_PHOTO_POSES.reduce((first, value) => value.first < first.first ? value : first, AJEDREZ_PHOTO_POSES[0])
+                    if (first && current.time < first.first / 24) warm(first, true)
+                    for (const upcoming of AJEDREZ_PHOTO_POSES.filter(value => value.first / 24 > current.time && value.first / 24 - current.time <= .8)) warm(upcoming, true)
+                }
+                for (const [index, watch] of watches) if (!desired.has(index)) { watch.release(); watches.delete(index) }
+                const visualIndex = pose ? ajedrezPhotographicFamily(pose) : current.index
+                const nextScene = host.querySelector<HTMLElement>('[data-source-ajedrez-group="' + (visualIndex + 1) + '"]')
+                if (!nextScene) { hide(); return }
+                if (scene !== nextScene) { restore(); scene = nextScene; last = ''; resize.observe(scene) }
+                const declaredFamily = [4, 26, 30, 34].includes(current.index)
+                if (!pose) {
+                    hide()
+                    // Once a genuine source photo interval ends, do not bring
+                    // back the old held image for the rest of its approximate
+                    // one-second native phase. Other native content is intact.
+                    if (declaredFamily && admittedFamilies.has(current.index)) for (const node of Array.from(scene.querySelectorAll<HTMLElement>('[data-framer-name]'))) if (ajedrezPhotographicBacking(node.getAttribute('data-framer-name') ?? '')) set(node, 'opacity', '0')
+                    return
+                }
+                const needed = [...new Set(pose.rects.map(part => AJEDREZ_PHOTO_TILES[part.tile].atlas))]
+                if (needed.some(index => !AJEDREZ_PHOTO_ATLAS_URLS[index] || watches.get(index)?.record.state !== 'ready')) { hide(); return }
+                if (!surface) {
+                    surface = document.createElement('canvas'); surface.setAttribute('aria-hidden', 'true'); surface.setAttribute('data-source-ajedrez-photographic-composition', 'true')
+                    Object.assign(surface.style, { position: 'absolute', inset: '0', width: '100%', height: '100%', pointerEvents: 'none', zIndex: '1' })
+                }
+                if (surface.parentElement !== scene) scene.appendChild(surface)
+                const bounds = scene.getBoundingClientRect(), dpr = Math.max(1, window.devicePixelRatio || 1), wantedW = Math.max(1, Math.ceil(bounds.width * dpr)), wantedH = Math.max(1, Math.ceil(bounds.height * dpr))
+                const scale = Math.min(1, 960 / wantedW, 1704 / wantedH, Math.sqrt(2000000 / (wantedW * wantedH))), width = Math.max(1, Math.floor(wantedW * scale)), height = Math.max(1, Math.floor(wantedH * scale))
+                const key = pose.name + ':' + width + ':' + height
+                if (last !== key) {
+                    surface.width = width; surface.height = height
+                    const context = surface.getContext('2d')
+                    if (!context) { hide(); return }
+                    context.setTransform(width / 480, 0, 0, height / 852, 0, 0); context.clearRect(0, 0, 480, 852)
+                    // Full clean photograph extent, including clipped edge repeats.
+                    // Native metadata is layered above this material below.
+                    context.save(); context.beginPath(); context.rect(0, 0, 480, 852); context.clip()
+                    for (const part of pose.rects) {
+                        const tile = AJEDREZ_PHOTO_TILES[part.tile], image = watches.get(tile.atlas)?.record.image
+                        if (image) context.drawImage(image, ...tile.rect, ...part.rect)
+                    }
+                    context.restore(); last = key
+                }
+                restore()
+                const dark = pose.name === 'earth'
+                for (const group of Array.from(host.querySelectorAll<HTMLElement>('[data-source-ajedrez-group]'))) {
+                    const index = Number(group.getAttribute('data-source-ajedrez-group')) - 1
+                    if (index === visualIndex || index === current.index) phaseVisibility(group, index === visualIndex)
+                }
+                if (dark) set(scene, 'background-color', '#1f2120')
+                const named = Array.from(scene.querySelectorAll<HTMLElement>('[data-framer-name]'))
+                for (const node of named) {
+                    const key = ajedrezPhotographicNativeKey(node), metadata = ajedrezPhotographicMetadata(key), caption = ajedrezPhotographicCaption(key, pose)
+                    const ownsMetadata = Array.from(node.querySelectorAll<HTMLElement>('[data-framer-name]')).some(child => ajedrezPhotographicMetadata(ajedrezPhotographicNativeKey(child)))
+                    if (dark && ownsMetadata) set(node, 'background-color', '#1f2120')
+                    if (metadata || caption) {
+                        if (caption) set(node, 'opacity', '1')
+                        set(node, 'z-index', '2')
+                        if (dark) for (const text of [node, ...Array.from(node.querySelectorAll<HTMLElement>('p,span'))]) set(text, 'color', '#c1cac6')
+                    } else if (ajedrezPhotographicBacking(key)) set(node, 'opacity', '0')
+                    else {
+                        const paragraph = node.querySelector('p'), nativeText = node.matches('[data-framer-component-type="RichTextContainer"]') || paragraph?.closest('[data-framer-name]') === node
+                        if (nativeText && !(Number.parseInt(getComputedStyle(node).zIndex, 10) >= 2)) set(node, 'z-index', '2')
+                    }
+                }
+                admittedFamilies.add(visualIndex); surface.style.visibility = 'visible'; surface.setAttribute('data-source-ajedrez-photo-pose', pose.name); surface.setAttribute('data-source-ajedrez-photo-source-frame', String(pose.first)); surface.setAttribute('data-source-ajedrez-photo-count', String(pose.rects.length))
+            } catch { hide() } finally { painting = false }
+        }
+        const resize = new ResizeObserver(refresh), mutation = new MutationObserver(refresh), transforms = new MutationObserver(refresh)
+        resize.observe(host); mutation.observe(host, { childList: true, subtree: true })
+        for (let node: HTMLElement | null = host; node; node = node.parentElement) { resize.observe(node); transforms.observe(node, { attributes: true, attributeFilter: ['style', 'class'] }) }
+        window.addEventListener('resize', refresh); window.visualViewport?.addEventListener('resize', refresh)
+        owner.current = { refresh }; refresh()
+        return () => {
+            disposed = true; owner.current = null; restore(); resize.disconnect(); mutation.disconnect(); transforms.disconnect(); window.removeEventListener('resize', refresh); window.visualViewport?.removeEventListener('resize', refresh)
+            for (const watch of watches.values()) watch.release(); watches.clear(); surface?.remove()
+        }
+    }, [host, state.frozen, state.reduced, AJEDREZ_PHOTO_COMPOSITION_REVISION])
+    useOwnLayoutEffect(() => { owner.current?.refresh() }, [state.time, state.index, state.active])
+}
+// End source-cut photographic compositions.
+
