@@ -31,7 +31,7 @@ function bundle(file) {
     assert.ok(end > 0, 'Retained core boundary ' + file)
     assert.equal(ts.preProcessFile(text).importedFiles.filter(x => x.fileName.startsWith('./')).length, 0, 'No silently omitted legacy data import')
     const js = ts.transpileModule(text.slice(0, end), { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText
-    return '(function(){const exports={};const require=n=>n==="react"?{}:{RenderTarget:{canvas:"canvas",export:"export",thumbnail:"thumbnail"}};' + js + ';legacyModules[' + JSON.stringify(file) + ']={createRenderer,getStudyPool}})();'
+    return '(function(){const exports={};const require=n=>n==="react"?{}:{RenderTarget:{preview:"preview",canvas:"canvas",export:"export",thumbnail:"thumbnail"}};' + js + ';legacyModules[' + JSON.stringify(file) + ']={createRenderer,getStudyPool}})();'
 }
 const legacyBundles = [...new Set(fixtures.map(x => x.file))].map(file => ({ file, code: bundle(file) }))
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'origin-native-mixed-'))
@@ -69,7 +69,7 @@ try {
     })
     for (const item of legacyBundles) await page.addScriptTag({ content: item.code })
     for (const name of ['react', 'react-dom']) await page.addScriptTag({ path: path.join(path.dirname(require.resolve(name + '/package.json')), 'umd/' + name + '.development.js') })
-    await page.addScriptTag({ content: 'window.exports={};(function(){const require=n=>n==="react"?window.React:{RenderTarget:{canvas:"canvas",export:"export",thumbnail:"thumbnail",current:()=>window.target},useIsStaticRenderer:()=>window.isStatic};' + originJS + '})();window.originSource=exports;' })
+    await page.addScriptTag({ content: 'window.exports={};(function(){const require=n=>n==="react"?window.React:{RenderTarget:{preview:"preview",canvas:"canvas",export:"export",thumbnail:"thumbnail",current:()=>window.target},useIsStaticRenderer:()=>window.isStatic};' + originJS + '})();window.originSource=exports;' })
     await page.evaluate(fixtures => {
         window.pool = legacyModules[fixtures[0].file].getStudyPool(); for (const module of Object.values(legacyModules)) if (module.getStudyPool() !== pool) throw Error('Legacy modules must retain one actual shared pool')
         window.placements = []; window.legacy = []
@@ -82,7 +82,7 @@ try {
         window.renderOrigins = () => ReactDOM.flushSync(() => originRoot.render(E(React.Fragment, null, ...origins.map(p => ReactDOM.createPortal(E(Controller, { id: 'origin-world-' + p.key, canvasMotion: originOptIn, style: { position: 'relative', width: p.width, height: p.height } }, E(Field, { id: 'origin-field-' + p.key, style: { position: 'absolute', left: 0, top: 0, width: p.width, height: p.height, background: '#08080a', overflow: 'hidden' } })), p.mount, p.key)))))
         window.originDemand = p => { const r = (p.mount.querySelector('[id="origin-field-' + p.key + '"]') ?? p.tile).getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1), budget = target === 'canvas' ? 1000000 : 2000000; let width = Math.max(2, Math.floor(r.width * dpr)), height = Math.max(2, Math.floor(r.height * dpr)); if (width * height > budget) { const scale = Math.sqrt(budget / (width * height)); width = Math.max(2, Math.floor(width * scale)); height = Math.max(2, Math.floor(height * scale)) } return { width, height, rect: r.toJSON() } }
         window.adequate = () => placements.every(p => { if (p.kind === 'origin') { const c = p.mount.querySelector('canvas[data-origin-field]'), d = originDemand(p); return c && c.width >= d.width && c.height >= d.height } const e = p.entry, r = p.tile.getBoundingClientRect(); return e.visible && e.hasFrame && !e.needsStill && e.frameKey === e.contentKey && Math.abs(e.rect.width - r.width) < .01 && Math.abs(e.rect.height - r.height) < .01 && Math.abs(e.rect.left - r.left) < .01 && Math.abs(e.rect.top - r.top) < .01 && e.frameWidth >= e.desiredWidth && e.frameHeight >= e.desiredHeight && p.display.width >= e.desiredWidth && p.display.height >= e.desiredHeight })
-        window.snapshot = () => ({ placements: placements.map(p => { const c = p.kind === 'origin' ? p.mount.querySelector('canvas[data-origin-field]') : p.display, d = p.kind === 'origin' ? originDemand(p) : { width: p.entry.desiredWidth, height: p.entry.desiredHeight, rect: p.tile.getBoundingClientRect().toJSON() }; return { kind: p.kind, id: p.kind === 'origin' ? p.key : p.fixture.id, demand: d, ...quality(c) } }), pool: pool.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v1')]?.debug(), pendingRAF: pendingRAF.size, activeGL: [...actualGL].filter(gl => !gl.isContextLost()).length, peakGL, peakGLPixels })
+        window.snapshot = () => ({ placements: placements.map(p => { const c = p.kind === 'origin' ? p.mount.querySelector('canvas[data-origin-field]') : p.display, d = p.kind === 'origin' ? originDemand(p) : { width: p.entry.desiredWidth, height: p.entry.desiredHeight, rect: p.tile.getBoundingClientRect().toJSON() }; return { kind: p.kind, id: p.kind === 'origin' ? p.key : p.fixture.id, demand: d, ...quality(c) } }), pool: pool.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v2')]?.debug(), pendingRAF: pendingRAF.size, activeGL: [...actualGL].filter(gl => !gl.isContextLost()).length, peakGL, peakGLPixels })
         window.changeAncestors = (x, y, dpr, pan) => { Object.defineProperty(window, 'devicePixelRatio', { value: dpr, configurable: true }); for (const p of placements) { p.tile.style.transform = 'scale(' + p.scale * x + ',' + p.scale * y + ')'; if (pan) { p.tile.style.left = 13 + p.index % 10 * 136 + 'px'; p.tile.style.top = 15 + Math.floor(p.index / 10) * 160 + 'px' } } }
         renderOrigins()
     }, fixtures)
@@ -107,20 +107,20 @@ try {
     fs.writeFileSync(path.join(evidence, 'origin-references.json'), JSON.stringify(originReferences, null, 2) + '\n')
     verify('All40 Origin copies equal fresh same-size real-HOC still pixels', originReferences.every(r => r.dimensionsMatch && r.changed === 0))
     await page.evaluate(() => { for (const p of legacy) { pool.remove(p.entry); p.display.remove() } placements = placements.filter(p => p.kind === 'origin'); target = 'preview'; isStatic = false; originOptIn = false; renderOrigins() })
-    await page.waitForFunction(() => { const g = window[Symbol.for('monarchic.origin-native-motion.v1')].debug(); return g.preview === 2 && g.canvas === 0 && g.legacyCanvases === 0 })
+    await page.waitForFunction(() => { const g = window[Symbol.for('monarchic.origin-native-motion.v2')].debug(); return g.preview === 2 && g.canvas === 0 && g.legacyCanvases === 0 })
     const previewBefore = await page.evaluate(() => origins.map(p => quality(p.mount.querySelector('canvas')).checksum)); await page.waitForTimeout(350)
-    const previewAfter = await page.evaluate(() => ({ hashes: origins.map(p => quality(p.mount.querySelector('canvas')).checksum), gate: window[Symbol.for('monarchic.origin-native-motion.v1')].debug(), raf: pendingRAF.size }))
+    const previewAfter = await page.evaluate(() => ({ hashes: origins.map(p => quality(p.mount.querySelector('canvas')).checksum), gate: window[Symbol.for('monarchic.origin-native-motion.v2')].debug(), raf: pendingRAF.size }))
     verify('After actual legacy retirement only two Preview Origin fields move', previewAfter.hashes.filter((n, i) => n !== previewBefore[i]).length === 2 && previewAfter.raf <= 2)
-    await page.evaluate(() => { target = 'canvas'; isStatic = true; originOptIn = true; renderOrigins() }); await page.waitForFunction(() => window[Symbol.for('monarchic.origin-native-motion.v1')].debug().canvas === 1)
+    await page.evaluate(() => { target = 'canvas'; isStatic = true; originOptIn = true; renderOrigins() }); await page.waitForFunction(() => window[Symbol.for('monarchic.origin-native-motion.v2')].debug().canvas === 1)
     const canvasBefore = await page.evaluate(() => origins.map(p => quality(p.mount.querySelector('canvas')).checksum)); await page.waitForTimeout(350)
-    const canvasAfter = await page.evaluate(() => ({ hashes: origins.map(p => quality(p.mount.querySelector('canvas')).checksum), gate: window[Symbol.for('monarchic.origin-native-motion.v1')].debug(), raf: pendingRAF.size }))
+    const canvasAfter = await page.evaluate(() => ({ hashes: origins.map(p => quality(p.mount.querySelector('canvas')).checksum), gate: window[Symbol.for('monarchic.origin-native-motion.v2')].debug(), raf: pendingRAF.size }))
     verify('Forty explicit Canvas opt-ins admit only one changing Origin field', canvasAfter.hashes.filter((n, i) => n !== canvasBefore[i]).length === 1 && canvasAfter.raf <= 1)
     await page.evaluate(() => { const p = legacy[0]; p.tile.append(p.display); p.entry = pool.add({ root: p.tile, display: p.display, source: p.fixture.file, target: 'canvas', settings: p.fixture.settings, factory: (...args) => legacyModules[p.fixture.file].createRenderer(...args), notify: (_s, error) => { if (error) legacyErrors.push(error) } }); window.returnedLegacy = p })
-    await page.waitForFunction(() => window[Symbol.for('monarchic.origin-native-motion.v1')].debug().admitted === 0)
-    const veto = await page.evaluate(() => ({ gate: window[Symbol.for('monarchic.origin-native-motion.v1')].debug(), raf: pendingRAF.size }))
+    await page.waitForFunction(() => window[Symbol.for('monarchic.origin-native-motion.v2')].debug().admitted === 0)
+    const veto = await page.evaluate(() => ({ gate: window[Symbol.for('monarchic.origin-native-motion.v2')].debug(), raf: pendingRAF.size }))
     verify('Reintroducing an actual legacy pool canvas revokes every Origin clock', veto.gate.legacyCanvases === 1 && veto.raf === 0)
     await page.evaluate(() => { ReactDOM.flushSync(() => originRoot.unmount()); pool.remove(returnedLegacy.entry); returnedLegacy.display.remove() }); await page.waitForTimeout(100)
-    const cleanup = await page.evaluate(() => ({ pool: pool.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v1')].debug(), raf: pendingRAF.size, activeGL: [...actualGL].filter(gl => !gl.isContextLost()).length, peakGL, peakGLPixels, legacyErrors }))
+    const cleanup = await page.evaluate(() => ({ pool: pool.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v2')].debug(), raf: pendingRAF.size, activeGL: [...actualGL].filter(gl => !gl.isContextLost()).length, peakGL, peakGLPixels, legacyErrors }))
     verify('Mixed run never exceeds two actual GL contexts or2MP active GL buffers', cleanup.peakGL <= 2 && cleanup.peakGLPixels <= 2000000)
     verify('Cleanup releases every legacy entry/context and Origin client/RAF', cleanup.pool.entryCount === 0 && cleanup.pool.activeContexts === 0 && cleanup.gate.clients === 0 && cleanup.gate.admitted === 0 && cleanup.raf === 0 && cleanup.activeGL === 0)
     verify('No actual renderer or browser errors', errors.length === 0 && cleanup.legacyErrors.length === 0)
@@ -129,7 +129,7 @@ try {
     fs.writeFileSync(path.join(evidence, 'result.json'), JSON.stringify(result, null, 2) + '\n')
     console.log(JSON.stringify({ passed: true, checks: checks.length, placements: 60, evidence }))
 } catch (error) {
-    const state = await page.evaluate(() => ({ pool: window.pool?.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v1')]?.debug(), legacyErrors: window.legacyErrors, activeGL: [...(window.actualGL ?? [])].filter(gl => !gl.isContextLost()).length })).catch(() => null)
+    const state = await page.evaluate(() => ({ pool: window.pool?.debug(), gate: window[Symbol.for('monarchic.origin-native-motion.v2')]?.debug(), legacyErrors: window.legacyErrors, activeGL: [...(window.actualGL ?? [])].filter(gl => !gl.isContextLost()).length })).catch(() => null)
     fs.writeFileSync(path.join(evidence, 'failure.json'), JSON.stringify({ error: String(error), checks, reports, errors, state }, null, 2) + '\n')
     throw error
 } finally { await browser.close(); fs.rmSync(profile, { recursive: true, force: true }) }

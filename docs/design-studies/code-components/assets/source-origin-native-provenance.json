@@ -3,9 +3,9 @@
   "classification": "Source inspiration / current original-site recreation",
   "credit": "Origin Brand — https://www.originbrand.io/; editable native recreation with independently authored field/controller behavior.",
   "sourceURL": "https://www.originbrand.io/",
-  "scope": "Stage A opening, Menu, Cedar reel and first-tap Programs handoff only. The full following story and scroll chrome are separate Stage B work.",
+  "scope": "Historical Stage A opening/Menu/Cedar/first-tap implementation. The repository file now contains the full following Stage B recorded in source-origin-journey-provenance.json.",
   "source": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/candidate/StageA-dc569-parent.tsx",
     "sha256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97",
     "bytes": 38082,
     "publicOverrides": [
@@ -20,7 +20,8 @@
     "components": 0,
     "propertyControls": 0,
     "genuineVideoURL": "https://framerusercontent.com/assets/yPlezlzE9ZAB2mu46NRrZ7qaQNk.webm",
-    "sourceWebsiteBehaviorJSReused": false
+    "sourceWebsiteBehaviorJSReused": false,
+    "currentRepositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx"
   },
   "parentFrozen632": {
     "source": {
@@ -386,5 +387,6 @@
     "noPackageOrFlakeEdits": true,
     "noBStageWorkEdits": true,
     "commitPendingRootReview": true
-  }
+  },
+  "subsequentFullJourney": "source-origin-journey-provenance.json"
 }

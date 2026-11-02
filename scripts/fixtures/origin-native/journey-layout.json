@@ -1,0 +1,3296 @@
+{
+  "schema": "monarchic.origin.stage-b.native-plan.v1",
+  "status": "offline proposed; no source/native/API writes",
+  "study": "HERO-016",
+  "source": "https://www.originbrand.io/",
+  "credit": "Source inspiration · HERO-016 · Origin · https://www.originbrand.io/",
+  "preserve": {
+    "pageID": "JC1r1iwC4",
+    "desktopID": "dZaF7cch_",
+    "phoneID": "yYG9bk4G0",
+    "heroStageID": "VVV_prZ0H",
+    "heroFieldID": "bPjBD0lgM",
+    "allStageAIDsAndParts": true,
+    "oldActorPlacementsRetiredOnlyByStageA": true,
+    "sourceCandidate": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/candidate/StageA-parent.tsx",
+      "sha256": "632e3ad6789f48aebc9b8a4672d7f0b5f10a836197be321b03bc91d11198aae3",
+      "bytes": 37846
+    },
+    "nativeStageADictionary": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/native-authoring-dictionary.json",
+      "sha256": "9ebaaa75c4be071fafc884e6b01e41643ff8c67a9d8dc72e06eb753fce033cc2",
+      "bytes": 159381
+    },
+    "writerStageAFreeze": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-native-source-plan/candidate/stage-a-local-freeze.json",
+      "sha256": "b34b199307180895bfe9cd953b6398edde3e418002d45f9b4102d3d4f8226ea5",
+      "bytes": 6181
+    }
+  },
+  "world": "Lift existing MenuController binding to owned full breakpoint/root. Current attachOriginHeroLayout targets named HeroStage only, so no100svh style on full home. Keep one owned world; do not duplicate Menu/media store.",
+  "responsive": {
+    "authoringDesktop": 1440,
+    "authoringPhone": 390,
+    "sourceProgramBreakpoint": 900,
+    "sourceFooterBreakpoints": [
+      1024,
+      640
+    ],
+    "existingNativeRootPolicy": "Stage A writer owns true breakpoint/native-CSS reconciliation. This plan adds no new root or opaque ID. Native D/P snapshot geometry is explicit; live fluid layout uses measured/source CSS within owned sections."
+  },
+  "parts": [
+    {
+      "key": "stage-b",
+      "parent": "owned-home-root",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "relative",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "7406px"
+      },
+      "phone": {
+        "height": "5448.16px"
+      },
+      "layoutPolicy": "Relative vertical flow of the four section siblings is mandatory. Writer must bind the documented native Stack shape or equivalent own scoped layout; do not insert these as overlapping freeform children.",
+      "role": "New relative-flow following content after retained HeroStage; actual world root stays the existing full breakpoint. Live own layout uses true content height, not fixed fake scroll."
+    },
+    {
+      "key": "reveal-section",
+      "parent": "stage-b",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "relative",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "2250px"
+      },
+      "phone": {
+        "height": "2110px"
+      },
+      "override": "withOriginScrollReveal",
+      "liveCSS": {
+        "height": "250vh"
+      }
+    },
+    {
+      "key": "reveal-sticky",
+      "parent": "reveal-section",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "sticky",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "900px",
+        "overflow": "clip"
+      },
+      "phone": {
+        "height": "844px"
+      }
+    },
+    {
+      "key": "reveal-intro",
+      "parent": "reveal-sticky",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "80px",
+        "text": "When your company reaches its next turning point",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "100%",
+        "height": "24px",
+        "textAlignment": "center",
+        "opacity": 0.85
+      },
+      "phone": {
+        "top": "60px",
+        "fontSize": 12
+      }
+    },
+    {
+      "key": "reveal-left",
+      "parent": "reveal-sticky",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "100px",
+        "top": "420px",
+        "text": "A strong business plan",
+        "color": "#f6f4ee",
+        "fontSize": 46,
+        "fontWeight": 300,
+        "width": "340px",
+        "height": "60px",
+        "textAlignment": "right"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "250px",
+        "width": "350px",
+        "height": "40px",
+        "fontSize": 24,
+        "textAlignment": "center"
+      }
+    },
+    {
+      "key": "reveal-right",
+      "parent": "reveal-sticky",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "985px",
+        "top": "420px",
+        "text": "needs a connected brand",
+        "color": "#f6f4ee",
+        "fontSize": 46,
+        "fontWeight": 300,
+        "width": "340px",
+        "height": "60px"
+      },
+      "phone": {
+        "left": "20px",
+        "top": "545px",
+        "width": "350px",
+        "height": "40px",
+        "fontSize": 24,
+        "textAlignment": "center"
+      }
+    },
+    {
+      "key": "reveal-card",
+      "parent": "reveal-sticky",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "482.5px",
+        "top": "320px",
+        "fill": "#090909",
+        "visible": true,
+        "opacity": 1,
+        "width": "460px",
+        "height": "260px",
+        "borderRadius": 8,
+        "overflow": "clip"
+      },
+      "phone": {
+        "left": "27.3px",
+        "top": "322px",
+        "width": "335.4px",
+        "height": "200px"
+      },
+      "role": "Own scroll HOC interpolates card width/height/radius from real window progress; native authoring is entry static pose."
+    },
+    {
+      "key": "reveal-vimeo",
+      "parent": "reveal-card",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%",
+        "fill": null,
+        "visible": true,
+        "opacity": 1
+      },
+      "phone": {},
+      "binding": {
+        "sourceURL": "https://player.vimeo.com/video/1210376240?background=1&autoplay=1&loop=1&muted=1&dnt=1",
+        "sourceCodeConstant": true,
+        "editableFrameGeometry": true,
+        "urlInspectorSupported": false
+      },
+      "role": "Primitive native geometry, genuine iframe exists only while admitted in live Preview. No native Vimeo component or guessed forwarding shape.",
+      "override": "withOriginJourneyFilm"
+    },
+    {
+      "key": "reveal-message",
+      "parent": "reveal-sticky",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#00000080",
+        "visible": true,
+        "opacity": 0,
+        "width": "100%",
+        "height": "900px"
+      },
+      "phone": {
+        "height": "844px"
+      },
+      "role": "Mounted native message; own reveal opacity from source timeline, pointer enabled only when actually visible."
+    },
+    {
+      "key": "reveal-message-copy",
+      "parent": "reveal-message",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "100px",
+        "top": "335px",
+        "text": "Explore the next stage for your business and the brand that will support it.",
+        "color": "#f6f4ee",
+        "fontSize": 46,
+        "fontWeight": 400,
+        "width": "1225px",
+        "height": "110px",
+        "textAlignment": "center"
+      },
+      "phone": {
+        "left": "24px",
+        "top": "300px",
+        "width": "342px",
+        "height": "140px",
+        "fontSize": 30
+      }
+    },
+    {
+      "key": "reveal-book",
+      "parent": "reveal-message",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "610px",
+        "top": "500px",
+        "text": "BOOK A CALL",
+        "color": "#f6f4ee",
+        "fontSize": 11,
+        "fontWeight": 300,
+        "width": "205px",
+        "height": "36px",
+        "textAlignment": "center",
+        "link": {
+          "href": "https://calendly.com/benjamingblackburn/new-meeting?month=2026-10",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "92.5px",
+        "top": "475px",
+        "width": "205px",
+        "height": "36px"
+      },
+      "role": "Real observed source booking exit; native editable link, never a fake form."
+    },
+    {
+      "key": "programs",
+      "parent": "stage-b",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "relative",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "900px"
+      },
+      "phone": {
+        "height": "844px"
+      },
+      "override": "withOriginProgramsSection",
+      "liveCSS": {
+        "minHeight": "100svh",
+        "phoneHeight": "auto",
+        "sectionOrder": [
+          "heading",
+          "intro",
+          "lower"
+        ]
+      }
+    },
+    {
+      "key": "programs-heading",
+      "parent": "programs",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "102.4375px",
+        "text": "Partner Programs",
+        "color": "#f6f4ee",
+        "fontSize": 123.84,
+        "fontWeight": 600,
+        "width": "1405px",
+        "height": "121.359375px",
+        "lineHeight": 121.363
+      },
+      "phone": {
+        "left": "8px",
+        "top": "63px",
+        "width": "374px",
+        "height": "45.859375px",
+        "fontSize": 46.8,
+        "lineHeight": 45.864
+      }
+    },
+    {
+      "key": "program-intro-rule",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "261px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "1405px",
+        "height": "1px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-intro-label",
+      "parent": "programs",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "280px",
+        "text": "WHO IS THIS FOR?",
+        "color": "#f6f4ee",
+        "fontSize": 11,
+        "fontWeight": 300,
+        "width": "250px",
+        "height": "20px",
+        "opacity": 0.55
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-intro-copy",
+      "parent": "programs",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "332.594px",
+        "top": "280px",
+        "text": "Each program connects a business turning point with the brand work that comes next.",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "350px",
+        "height": "45px",
+        "opacity": 0.55
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-list",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "402.625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "438.984px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      },
+      "role": "Native six rows; Preview row/detail CSS uses400ms height+opacity, preserves mounted native details."
+    },
+    {
+      "key": "program-row-0",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "183.453125px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-0",
+      "parent": "program-row-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-0",
+      "parent": "program-row-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Unification",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram1",
+      "state": {
+        "projectIndex": 0
+      }
+    },
+    {
+      "key": "program-plus-0",
+      "parent": "program-row-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-0",
+      "parent": "program-plus-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-0",
+      "parent": "program-plus-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-0",
+      "parent": "program-row-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "162.453125px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 0
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-0",
+      "parent": "program-detail-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Bring separate brands, products and acquisitions into one connected system.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-0",
+      "parent": "program-detail-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=unification"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-row-1",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "183.453125px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "52.90625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-1",
+      "parent": "program-row-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-1",
+      "parent": "program-row-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Market Creator",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram2",
+      "state": {
+        "projectIndex": 1
+      }
+    },
+    {
+      "key": "program-plus-1",
+      "parent": "program-row-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-1",
+      "parent": "program-plus-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-1",
+      "parent": "program-plus-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-1",
+      "parent": "program-row-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 1
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-1",
+      "parent": "program-detail-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Build a clear identity around a market opportunity that customers can recognize.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-1",
+      "parent": "program-detail-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=market-creator"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-row-2",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "236.359375px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "52.90625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-2",
+      "parent": "program-row-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-2",
+      "parent": "program-row-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Raising the Stakes",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram3",
+      "state": {
+        "projectIndex": 2
+      }
+    },
+    {
+      "key": "program-plus-2",
+      "parent": "program-row-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-2",
+      "parent": "program-plus-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-2",
+      "parent": "program-plus-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-2",
+      "parent": "program-row-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 2
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-2",
+      "parent": "program-detail-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Give an expanding company the credibility and reach needed for its next stage.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-2",
+      "parent": "program-detail-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=raising-the-stakes"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-row-3",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "289.265625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "52.90625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-3",
+      "parent": "program-row-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-3",
+      "parent": "program-row-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Moving Upmarket",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram4",
+      "state": {
+        "projectIndex": 3
+      }
+    },
+    {
+      "key": "program-plus-3",
+      "parent": "program-row-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-3",
+      "parent": "program-plus-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-3",
+      "parent": "program-plus-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-3",
+      "parent": "program-row-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 3
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-3",
+      "parent": "program-detail-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Connect a stronger market position with a brand that can support larger ambitions.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-3",
+      "parent": "program-detail-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=moving-upmarket"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-row-4",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "342.171875px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "52.90625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-4",
+      "parent": "program-row-4",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-4",
+      "parent": "program-row-4",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Static to Operational",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram5",
+      "state": {
+        "projectIndex": 4
+      }
+    },
+    {
+      "key": "program-plus-4",
+      "parent": "program-row-4",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-4",
+      "parent": "program-plus-4",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-4",
+      "parent": "program-plus-4",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-4",
+      "parent": "program-row-4",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 4
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-4",
+      "parent": "program-detail-4",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Turn a static identity into practical systems that a team can use every day.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-4",
+      "parent": "program-detail-4",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=static-to-operational"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-row-5",
+      "parent": "program-list",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "395.078125px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "52.90625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "program-rule-5",
+      "parent": "program-row-5",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee8c",
+        "visible": true,
+        "opacity": 1,
+        "width": "698px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-select-5",
+      "parent": "program-row-5",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "9px",
+        "text": "Local to National",
+        "color": "#f6f4ee",
+        "fontSize": 21.6,
+        "fontWeight": 500,
+        "width": "302.594px",
+        "height": "31.90625px"
+      },
+      "phone": {},
+      "override": "withOriginProgram6",
+      "state": {
+        "projectIndex": 5
+      }
+    },
+    {
+      "key": "program-plus-5",
+      "parent": "program-row-5",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "681px",
+        "top": "17px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "16px"
+      },
+      "phone": {},
+      "role": "Two editable1px native strokes; active vertical stroke scaleY0/opacity0 over300ms."
+    },
+    {
+      "key": "program-plus-h-5",
+      "parent": "program-plus-5",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "7.5px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "16px",
+        "height": "1px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-plus-v-5",
+      "parent": "program-plus-5",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "7.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 1,
+        "width": "1px",
+        "height": "16px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-detail-5",
+      "parent": "program-row-5",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "322.594px",
+        "top": "9px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "338.906px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {},
+      "state": {
+        "selectedIndex": 5
+      },
+      "role": "Native detail text and real CTA; authored initial selection0. Own section HOC updates primitive geometry, not text HTML."
+    },
+    {
+      "key": "program-copy-5",
+      "parent": "program-detail-5",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "4px",
+        "text": "Carry a locally established business into a broader national market.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "320px",
+        "height": "100px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-contact-5",
+      "parent": "program-detail-5",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "112.453125px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=local-to-national"
+        }
+      },
+      "phone": {},
+      "role": "Separate native real contact exit; activation must not bubble into row selection."
+    },
+    {
+      "key": "program-device",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "1150.047px",
+        "top": "567.0625px",
+        "fill": "#0f0f0f",
+        "visible": true,
+        "opacity": 1,
+        "width": "264.953px",
+        "height": "322.9375px",
+        "borderRadius": 76
+      },
+      "phone": {
+        "left": "35.09375px",
+        "top": "136.859375px",
+        "width": "319.796875px",
+        "height": "389.78125px",
+        "borderRadius": 48
+      }
+    },
+    {
+      "key": "program-device-inner",
+      "parent": "program-device",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "10px",
+        "fill": "#08080a",
+        "visible": true,
+        "opacity": 1,
+        "width": "244.953px",
+        "height": "302.9375px",
+        "borderRadius": 66,
+        "overflow": "clip"
+      },
+      "phone": {
+        "left": "10px",
+        "top": "10px",
+        "width": "299.796875px",
+        "height": "369.78125px",
+        "borderRadius": 40
+      },
+      "override": "withOriginJourneyProgramField",
+      "role": "One independently authored Canvas2D scalar-field surface, source six model data; no six mounted canvases/decoders."
+    },
+    {
+      "key": "program-picker",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "550px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "698px",
+        "height": "57.734375px"
+      },
+      "phone": {
+        "visible": true,
+        "left": "8px",
+        "top": "566.640625px",
+        "width": "374px",
+        "height": "57.734375px",
+        "opacity": 1
+      },
+      "override": "withOriginProgramPicker"
+    },
+    {
+      "key": "program-picker-value",
+      "parent": "program-picker",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "15px",
+        "text": "Unification",
+        "color": "#f6f4ee",
+        "fontSize": 21.45,
+        "fontWeight": 500,
+        "width": "340px",
+        "height": "27.734375px"
+      },
+      "phone": {},
+      "override": "withOriginProgramValue"
+    },
+    {
+      "key": "program-picker-menu",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "8px",
+        "top": "624.375px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "0px",
+        "overflow": "clip"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 1
+      },
+      "role": "Six mounted option rows, in flow; closed authored height0, open measured258px. No overlay over following content."
+    },
+    {
+      "key": "program-option-0",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Unification",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram1",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-option-1",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "43px",
+        "text": "Market Creator",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram2",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-option-2",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "86px",
+        "text": "Raising the Stakes",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram3",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-option-3",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "129px",
+        "text": "Moving Upmarket",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram4",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-option-4",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "172px",
+        "text": "Static to Operational",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram5",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-option-5",
+      "parent": "program-picker-menu",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "215px",
+        "text": "Local to National",
+        "color": "#f6f4ee",
+        "fontSize": 17,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "43px"
+      },
+      "phone": {},
+      "override": "withOriginProgram6",
+      "role": "Phone native option using the same selection HOC; selected state and option semantics."
+    },
+    {
+      "key": "program-phone-details",
+      "parent": "programs",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "8px",
+        "top": "642.375px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {
+        "visible": true,
+        "opacity": 1
+      },
+      "role": "Six mounted native Phone detail groups; section controls only selected group/flow. Duplicate independent text remains editable."
+    },
+    {
+      "key": "program-phone-detail-0",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-0",
+      "parent": "program-phone-detail-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Bring separate brands, products and acquisitions into one connected system.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-0",
+      "parent": "program-phone-detail-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=unification"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-detail-1",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-1",
+      "parent": "program-phone-detail-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Build a clear identity around a market opportunity that customers can recognize.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-1",
+      "parent": "program-phone-detail-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=market-creator"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-detail-2",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-2",
+      "parent": "program-phone-detail-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Give an expanding company the credibility and reach needed for its next stage.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-2",
+      "parent": "program-phone-detail-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=raising-the-stakes"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-detail-3",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-3",
+      "parent": "program-phone-detail-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Connect a stronger market position with a brand that can support larger ambitions.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-3",
+      "parent": "program-phone-detail-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=moving-upmarket"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-detail-4",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-4",
+      "parent": "program-phone-detail-4",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Turn a static identity into practical systems that a team can use every day.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-4",
+      "parent": "program-phone-detail-4",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=static-to-operational"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-detail-5",
+      "parent": "program-phone-details",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "374px",
+        "height": "145.5625px"
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-copy-5",
+      "parent": "program-phone-detail-5",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Carry a locally established business into a broader national market.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "374px",
+        "height": "89.5625px",
+        "opacity": 0.55
+      },
+      "phone": {}
+    },
+    {
+      "key": "program-phone-contact-5",
+      "parent": "program-phone-detail-5",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "89.5625px",
+        "text": "CONTACT",
+        "color": "#f6f4ee",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "width": "90.547px",
+        "height": "36px",
+        "link": {
+          "href": "https://www.originbrand.io/contact?focus=local-to-national"
+        }
+      },
+      "phone": {}
+    },
+    {
+      "key": "partnerships",
+      "parent": "stage-b",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "relative",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "3356px"
+      },
+      "phone": {
+        "height": "1863.984375px"
+      },
+      "role": "Native source photo mosaic; Phone true flow. Live own CSS may fit independent typography without fake document spacers."
+    },
+    {
+      "key": "partnerships-heading",
+      "parent": "partnerships",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "96px",
+        "text": "Selected Partnerships",
+        "color": "#f6f4ee",
+        "fontSize": 52,
+        "fontWeight": 500,
+        "width": "1405px",
+        "height": "57.1875px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "56px",
+        "width": "374px",
+        "height": "30.796875px",
+        "fontSize": 28
+      }
+    },
+    {
+      "key": "partnership-0",
+      "parent": "partnerships",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "201.1875px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "1405px",
+        "height": "883.8125px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "118.796875px",
+        "width": "374px",
+        "height": "287.0625px"
+      },
+      "override": "withOriginPartnershipCard",
+      "link": {
+        "href": "https://www.originbrand.io/partnerships/bhm-ai"
+      },
+      "role": "Real source case exit with native image-mask hover radius20px/400ms and image scale1.02/600ms; preserve browser modified-click semantics."
+    },
+    {
+      "key": "partnership-photo-mask-0",
+      "parent": "partnership-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "800.015625px",
+        "borderRadius": 5,
+        "overflow": "clip"
+      },
+      "phone": {
+        "height": "210.0625px"
+      }
+    },
+    {
+      "key": "partnership-image-0",
+      "parent": "partnership-photo-mask-0",
+      "type": "ImageAssetSlot",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%"
+      },
+      "phone": {},
+      "bindingKey": "partnership-0",
+      "imagePolicy": "cover;source-center",
+      "material": {
+        "key": "partnership-0",
+        "url": "https://www.originbrand.io/images/projects/birmingham-ai/bhm-ai-cover-landscape-3600.webp",
+        "observedDisplayURL": "https://www.originbrand.io/_next/image?url=%2Fimages%2Fprojects%2Fbirmingham-ai%2Fbhm-ai-cover-landscape-3600.webp&w=3840&q=75&dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "derivation": "Original asset path explicitly present in the public Next Image URL parameter; no image alteration.",
+        "status": 200,
+        "contentType": "image/webp",
+        "bytes": 1438826,
+        "sha256": "e4c41efc5a9b5b838b9b67d3f33bd3a73529d544d669817f3cfdec7b07ad529f",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/partnership-0.webp",
+        "alt": "BHM AI wordmark and mark across a band of blue light",
+        "noAccountOrCookieHeaders": true,
+        "width": 3600,
+        "height": 2400,
+        "format": "webp",
+        "usage": "Genuine source project image, editable native image fill. No recreation/poster screenshot.",
+        "reuseLicense": "Unverified; retained for credited unpublished source recreation, no licensing assertion"
+      }
+    },
+    {
+      "key": "partnership-title-0",
+      "parent": "partnership-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "818.015625px",
+        "text": "Birmingham AI",
+        "color": "#f6f4ee",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "width": "100%",
+        "height": "29px"
+      },
+      "phone": {
+        "top": "224.0625px",
+        "fontSize": 20,
+        "height": "24px"
+      }
+    },
+    {
+      "key": "partnership-tags-0",
+      "parent": "partnership-0",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "860.015625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "100%",
+        "height": "24px"
+      },
+      "phone": {
+        "top": "255.0625px",
+        "height": "22px",
+        "opacity": 1
+      },
+      "role": "Native tag parent: Desktop resting0, hover/focus1, Phone coarse1; source250ms opacity."
+    },
+    {
+      "key": "partnership-tag-0-0",
+      "parent": "partnership-tags-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Brand Identity",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "122px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-tag-0-1",
+      "parent": "partnership-tags-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "130px",
+        "top": "0px",
+        "text": "Brand Activation",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "138px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-tag-0-2",
+      "parent": "partnership-tags-0",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "276px",
+        "top": "0px",
+        "text": "Website",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "66px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-1",
+      "parent": "partnerships",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "1147.09375px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "872.890625px",
+        "height": "1184.8125px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "445.859375px",
+        "width": "374px",
+        "height": "544.0625px"
+      },
+      "override": "withOriginPartnershipCard",
+      "link": {
+        "href": "https://www.originbrand.io/partnerships/caravan"
+      },
+      "role": "Real source case exit with native image-mask hover radius20px/400ms and image scale1.02/600ms; preserve browser modified-click semantics."
+    },
+    {
+      "key": "partnership-photo-mask-1",
+      "parent": "partnership-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "1101.015625px",
+        "borderRadius": 5,
+        "overflow": "clip"
+      },
+      "phone": {
+        "height": "467.0625px"
+      }
+    },
+    {
+      "key": "partnership-image-1",
+      "parent": "partnership-photo-mask-1",
+      "type": "ImageAssetSlot",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%"
+      },
+      "phone": {},
+      "bindingKey": "partnership-1",
+      "imagePolicy": "cover;source-center",
+      "material": {
+        "key": "partnership-1",
+        "url": "https://www.originbrand.io/images/projects/caravan/Event_Post.png",
+        "observedDisplayURL": "https://www.originbrand.io/_next/image?url=%2Fimages%2Fprojects%2Fcaravan%2FEvent_Post.png&w=3840&q=75&dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "derivation": "Original asset path explicitly present in the public Next Image URL parameter; no image alteration.",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2462678,
+        "sha256": "be0ef1950ad310285417abc7cbc9b5eaa8b90dc51218fdfab724a382f661bcd3",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/partnership-1.png",
+        "alt": "Caravan room signage on a tablet: Live Demo, Implementing AI Agents, Room 03",
+        "noAccountOrCookieHeaders": true,
+        "width": 1391,
+        "height": 1391,
+        "format": "png",
+        "usage": "Genuine source project image, editable native image fill. No recreation/poster screenshot.",
+        "reuseLicense": "Unverified; retained for credited unpublished source recreation, no licensing assertion"
+      }
+    },
+    {
+      "key": "partnership-title-1",
+      "parent": "partnership-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "1119.015625px",
+        "text": "Caravan",
+        "color": "#f6f4ee",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "width": "100%",
+        "height": "29px"
+      },
+      "phone": {
+        "top": "481.0625px",
+        "fontSize": 20,
+        "height": "24px"
+      }
+    },
+    {
+      "key": "partnership-tags-1",
+      "parent": "partnership-1",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "1161.015625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "100%",
+        "height": "24px"
+      },
+      "phone": {
+        "top": "512.0625px",
+        "height": "22px",
+        "opacity": 1
+      },
+      "role": "Native tag parent: Desktop resting0, hover/focus1, Phone coarse1; source250ms opacity."
+    },
+    {
+      "key": "partnership-tag-1-0",
+      "parent": "partnership-tags-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Brand Identity",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "122px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-tag-1-1",
+      "parent": "partnership-tags-1",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "130px",
+        "top": "0px",
+        "text": "Brand Imagery Tool",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "154px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-2",
+      "parent": "partnerships",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "897.828125px",
+        "top": "1860.3125px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "517.15625px",
+        "height": "611.65625px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "1029.921875px",
+        "width": "374px",
+        "height": "451px"
+      },
+      "override": "withOriginPartnershipCard",
+      "link": {
+        "href": "https://www.originbrand.io/partnerships/cedar"
+      },
+      "role": "Real source case exit with native image-mask hover radius20px/400ms and image scale1.02/600ms; preserve browser modified-click semantics."
+    },
+    {
+      "key": "partnership-photo-mask-2",
+      "parent": "partnership-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "527.859375px",
+        "borderRadius": 5,
+        "overflow": "clip"
+      },
+      "phone": {
+        "height": "374px"
+      }
+    },
+    {
+      "key": "partnership-image-2",
+      "parent": "partnership-photo-mask-2",
+      "type": "ImageAssetSlot",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%"
+      },
+      "phone": {},
+      "bindingKey": "partnership-2",
+      "imagePolicy": "cover;source-center",
+      "material": {
+        "key": "partnership-2",
+        "url": "https://www.originbrand.io/images/projects/cedar/business-card-wood-2000.jpg",
+        "observedDisplayURL": "https://www.originbrand.io/_next/image?url=%2Fimages%2Fprojects%2Fcedar%2Fbusiness-card-wood-2000.jpg&w=3840&q=75&dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "derivation": "Original asset path explicitly present in the public Next Image URL parameter; no image alteration.",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 585639,
+        "sha256": "17256cbca26b7f435c3db10f38611150cda5125e8e90ebd252603deb2d8c8413",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/partnership-2.jpg",
+        "alt": "Cedar Creative business card on a wooden table",
+        "noAccountOrCookieHeaders": true,
+        "width": 1599,
+        "height": 2000,
+        "format": "jpeg",
+        "usage": "Genuine source project image, editable native image fill. No recreation/poster screenshot.",
+        "reuseLicense": "Unverified; retained for credited unpublished source recreation, no licensing assertion"
+      }
+    },
+    {
+      "key": "partnership-title-2",
+      "parent": "partnership-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "545.859375px",
+        "text": "Cedar",
+        "color": "#f6f4ee",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "width": "100%",
+        "height": "29px"
+      },
+      "phone": {
+        "top": "388px",
+        "fontSize": 20,
+        "height": "24px"
+      }
+    },
+    {
+      "key": "partnership-tags-2",
+      "parent": "partnership-2",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "587.859375px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "100%",
+        "height": "24px"
+      },
+      "phone": {
+        "top": "419px",
+        "height": "22px",
+        "opacity": 1
+      },
+      "role": "Native tag parent: Desktop resting0, hover/focus1, Phone coarse1; source250ms opacity."
+    },
+    {
+      "key": "partnership-tag-2-0",
+      "parent": "partnership-tags-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Brand Identity",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "122px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-tag-2-1",
+      "parent": "partnership-tags-2",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "130px",
+        "top": "0px",
+        "text": "Motion Identity",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "130px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-3",
+      "parent": "partnerships",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "364.734375px",
+        "top": "2575.5625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "1050.25px",
+        "height": "684.421875px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "1520.921875px",
+        "width": "374px",
+        "height": "287.0625px"
+      },
+      "override": "withOriginPartnershipCard",
+      "link": {
+        "href": "https://www.originbrand.io/partnerships/axios"
+      },
+      "role": "Real source case exit with native image-mask hover radius20px/400ms and image scale1.02/600ms; preserve browser modified-click semantics."
+    },
+    {
+      "key": "partnership-photo-mask-3",
+      "parent": "partnership-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "600.625px",
+        "borderRadius": 5,
+        "overflow": "clip"
+      },
+      "phone": {
+        "height": "210.0625px"
+      }
+    },
+    {
+      "key": "partnership-image-3",
+      "parent": "partnership-photo-mask-3",
+      "type": "ImageAssetSlot",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "100%",
+        "height": "100%"
+      },
+      "phone": {},
+      "bindingKey": "partnership-3",
+      "imagePolicy": "cover;source-center",
+      "material": {
+        "key": "partnership-3",
+        "url": "https://www.originbrand.io/images/projects/axios/card-wordmark-rain.webp",
+        "observedDisplayURL": "https://www.originbrand.io/_next/image?url=%2Fimages%2Fprojects%2Faxios%2Fcard-wordmark-rain.webp&w=3840&q=75&dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "derivation": "Original asset path explicitly present in the public Next Image URL parameter; no image alteration.",
+        "status": 200,
+        "contentType": "image/webp",
+        "bytes": 87716,
+        "sha256": "3adb9bb7d0ddb5fad2d6e1f0e67890d57227a98cbf26400c334cef08ccd07eeb",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/partnership-3.webp",
+        "alt": "The Axios wordmark printed on black, beaded with water",
+        "noAccountOrCookieHeaders": true,
+        "width": 1200,
+        "height": 654,
+        "format": "webp",
+        "usage": "Genuine source project image, editable native image fill. No recreation/poster screenshot.",
+        "reuseLicense": "Unverified; retained for credited unpublished source recreation, no licensing assertion"
+      }
+    },
+    {
+      "key": "partnership-title-3",
+      "parent": "partnership-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "618.625px",
+        "text": "Axios",
+        "color": "#f6f4ee",
+        "fontSize": 24,
+        "fontWeight": 600,
+        "width": "100%",
+        "height": "29px"
+      },
+      "phone": {
+        "top": "224.0625px",
+        "fontSize": 20,
+        "height": "24px"
+      }
+    },
+    {
+      "key": "partnership-tags-3",
+      "parent": "partnership-3",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "660.625px",
+        "fill": null,
+        "visible": true,
+        "opacity": 0,
+        "width": "100%",
+        "height": "24px"
+      },
+      "phone": {
+        "top": "255.0625px",
+        "height": "22px",
+        "opacity": 1
+      },
+      "role": "Native tag parent: Desktop resting0, hover/focus1, Phone coarse1; source250ms opacity."
+    },
+    {
+      "key": "partnership-tag-3-0",
+      "parent": "partnership-tags-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "text": "Brand Identity",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "122px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "partnership-tag-3-1",
+      "parent": "partnership-tags-3",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "130px",
+        "top": "0px",
+        "text": "Website",
+        "color": "#f6f4ee",
+        "fontSize": 16,
+        "fontWeight": 300,
+        "width": "66px",
+        "height": "24px",
+        "opacity": 1
+      },
+      "phone": {
+        "top": "0px",
+        "height": "22px",
+        "fontSize": 13
+      },
+      "role": "Editable source-factual tag text; visibility belongs to native parent group."
+    },
+    {
+      "key": "footer",
+      "parent": "stage-b",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "relative",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#000",
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "900px"
+      },
+      "phone": {
+        "height": "630.171875px"
+      },
+      "override": "withOriginFooterReveal"
+    },
+    {
+      "key": "footer-frame",
+      "parent": "footer",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "10px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "1405px",
+        "height": "880px"
+      },
+      "phone": {
+        "left": "8px",
+        "top": "8px",
+        "width": "374px",
+        "height": "614.171875px"
+      }
+    },
+    {
+      "key": "footer-dot-0",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "0px"
+      }
+    },
+    {
+      "key": "footer-dot-1",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "702.5px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "184px",
+        "top": "0px"
+      }
+    },
+    {
+      "key": "footer-dot-2",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "1399px",
+        "top": "0px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "368px",
+        "top": "0px"
+      }
+    },
+    {
+      "key": "footer-dot-3",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "874px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "0px",
+        "top": "608.171875px"
+      }
+    },
+    {
+      "key": "footer-dot-4",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "702.5px",
+        "top": "874px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "184px",
+        "top": "608.171875px"
+      }
+    },
+    {
+      "key": "footer-dot-5",
+      "parent": "footer-frame",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "1399px",
+        "top": "874px",
+        "fill": "#f6f4ee",
+        "visible": true,
+        "opacity": 0.9,
+        "width": "6px",
+        "height": "6px",
+        "borderRadius": "50%"
+      },
+      "phone": {
+        "left": "368px",
+        "top": "608.171875px"
+      }
+    },
+    {
+      "key": "footer-tagline",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "43.2px",
+        "top": "38px",
+        "text": "Strategy, identity and digital systems\nfor a company’s next chapter.",
+        "color": "#f6f4ee",
+        "fontSize": 14,
+        "fontWeight": 300,
+        "width": "240px",
+        "height": "40px"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "34px",
+        "width": "338px",
+        "height": "40px"
+      }
+    },
+    {
+      "key": "footer-nav-0",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "38px",
+        "text": "Home",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "300px",
+        "height": "23.25px",
+        "link": {
+          "href": "https://www.originbrand.io/"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "110px",
+        "width": "338px",
+        "height": "23.25px"
+      }
+    },
+    {
+      "key": "footer-nav-1",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "61.25px",
+        "text": "Partnerships",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "300px",
+        "height": "23.25px",
+        "link": {
+          "href": "https://www.originbrand.io/partnerships"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "133.25px",
+        "width": "338px",
+        "height": "23.25px"
+      }
+    },
+    {
+      "key": "footer-nav-2",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "84.5px",
+        "text": "Philosophy",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "300px",
+        "height": "23.25px",
+        "link": {
+          "href": "https://www.originbrand.io/philosophy"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "156.5px",
+        "width": "338px",
+        "height": "23.25px"
+      }
+    },
+    {
+      "key": "footer-nav-3",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "107.75px",
+        "text": "Contact",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "300px",
+        "height": "23.25px",
+        "link": {
+          "href": "https://www.originbrand.io/contact"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "179.75px",
+        "width": "338px",
+        "height": "23.25px"
+      }
+    },
+    {
+      "key": "footer-intro",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "43.2px",
+        "top": "642px",
+        "text": "We connect a company’s direction, identity and everyday tools so its brand can grow with the business.",
+        "color": "#f6f4ee",
+        "fontSize": 40,
+        "fontWeight": 600,
+        "width": "620px",
+        "height": "190px",
+        "opacity": 0.55
+      },
+      "phone": {
+        "left": "18px",
+        "top": "250px",
+        "width": "338px",
+        "height": "116px",
+        "fontSize": 24
+      }
+    },
+    {
+      "key": "footer-email",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "750px",
+        "text": "info@originbrand.io",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "280px",
+        "height": "22.5px",
+        "link": {
+          "href": "mailto:info@originbrand.io"
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "402px",
+        "width": "338px"
+      }
+    },
+    {
+      "key": "footer-location",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "772.5px",
+        "text": "Birmingham, AL",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "280px",
+        "height": "22.5px"
+      },
+      "phone": {
+        "left": "18px",
+        "top": "424.5px",
+        "width": "338px"
+      }
+    },
+    {
+      "key": "footer-copyright",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "1217px",
+        "top": "750px",
+        "text": "© 2026 Origin Studio",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "170px",
+        "height": "22.5px",
+        "opacity": 0.55
+      },
+      "phone": {
+        "left": "18px",
+        "top": "459px",
+        "width": "338px"
+      }
+    },
+    {
+      "key": "footer-social",
+      "parent": "footer-frame",
+      "type": "RichTextNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "901.8px",
+        "top": "817px",
+        "text": "LinkedIn",
+        "color": "#f6f4ee",
+        "fontSize": 15,
+        "fontWeight": 300,
+        "width": "280px",
+        "height": "22.5px",
+        "link": {
+          "href": "https://www.linkedin.com/company/originbrand/",
+          "openInNewTab": true
+        }
+      },
+      "phone": {
+        "left": "18px",
+        "top": "503.5px",
+        "width": "338px"
+      }
+    },
+    {
+      "key": "journey-heat",
+      "parent": "owned-home-root",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "fixed",
+        "left": "0px",
+        "top": "0px",
+        "fill": null,
+        "visible": true,
+        "opacity": 1,
+        "width": "100%",
+        "height": "100vh",
+        "pointerEvents": "none"
+      },
+      "phone": {},
+      "override": "withOriginJourneyHeat",
+      "role": "One independently authored input-driven Canvas2D overlay. Source scroll-edge and touch trails remain distinct models, composite/aggregate budget accounted."
+    },
+    {
+      "key": "chrome-mark-pill",
+      "parent": "owned-home-root",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "fixed",
+        "right": "130px",
+        "top": "10px",
+        "width": "55px",
+        "height": "42px",
+        "fill": "rgba(0, 0, 0, .04)",
+        "borderRadius": 5,
+        "visible": true,
+        "opacity": 0,
+        "link": {
+          "href": "https://www.originbrand.io/"
+        }
+      },
+      "phone": {
+        "right": "93px",
+        "top": "8px",
+        "width": "55px"
+      },
+      "role": "Genuine native Home exit, no custom activation/modified-click interception. Private full-home chrome owns source scroll fade and current light/dark pill treatment; authored hidden in Canvas."
+    },
+    {
+      "key": "chrome-mark-svg",
+      "parent": "chrome-mark-pill",
+      "type": "SVGNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "10px",
+        "top": "10.427px",
+        "width": "35px",
+        "height": "21.146px",
+        "svg": "<svg width=\"96\" height=\"58\" viewBox=\"0 0 96 58\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.7054 34.3123C8.85641 34.3123 11.4108 31.7579 11.4108 28.6068C11.4108 25.4559 8.85641 22.9014 5.7054 22.9014C2.55439 22.9014 0 25.4559 0 28.6068C0 31.7579 2.55439 34.3123 5.7054 34.3123Z\" fill=\"#C8C8C8\"/>\n<path d=\"M87.9553 34.3123C91.1064 34.3123 93.6607 31.7579 93.6607 28.6068C93.6607 25.4559 91.1064 22.9014 87.9553 22.9014C84.8043 22.9014 82.25 25.4559 82.25 28.6068C82.25 31.7579 84.8043 34.3123 87.9553 34.3123Z\" fill=\"#C8C8C8\"/>\n<path d=\"M33.1586 11.3967C36.3095 11.3967 38.864 8.84225 38.864 5.69124C38.864 2.54023 36.3095 -0.0141602 33.1586 -0.0141602C30.0075 -0.0141602 27.4531 2.54023 27.4531 5.69124C27.4531 8.84225 30.0075 11.3967 33.1586 11.3967Z\" fill=\"#C8C8C8\"/>\n<path d=\"M60.4828 11.3967C63.6337 11.3967 66.1881 8.84225 66.1881 5.69124C66.1881 2.54023 63.6337 -0.0141602 60.4828 -0.0141602C57.3317 -0.0141602 54.7773 2.54023 54.7773 5.69124C54.7773 8.84225 57.3317 11.3967 60.4828 11.3967Z\" fill=\"#C8C8C8\"/>\n<path d=\"M33.1586 57.2266C36.3095 57.2266 38.864 54.6723 38.864 51.5214C38.864 48.3703 36.3095 45.8159 33.1586 45.8159C30.0075 45.8159 27.4531 48.3703 27.4531 51.5214C27.4531 54.6723 30.0075 57.2266 33.1586 57.2266Z\" fill=\"#C8C8C8\"/>\n<path d=\"M60.4828 57.2266C63.6337 57.2266 66.1881 54.6723 66.1881 51.5214C66.1881 48.3703 63.6337 45.8159 60.4828 45.8159C57.3317 45.8159 54.7773 48.3703 54.7773 51.5214C54.7773 54.6723 57.3317 57.2266 60.4828 57.2266Z\" fill=\"#C8C8C8\"/>\n</svg>\n",
+        "visible": true,
+        "opacity": 1
+      },
+      "phone": {},
+      "material": {
+        "key": "docked-mark",
+        "url": "https://www.originbrand.io/images/figma/Mark_Grey.svg?dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/Mark_Grey.svg",
+        "sha256": "f063b9e2253bba0982fd08f8b5b333f2e8144ec21b2183c4ffca338940476731",
+        "bytes": 1510,
+        "contentType": "image/svg+xml",
+        "sourceObservedRect": {
+          "x": 1250,
+          "y": 20.5,
+          "width": 35.0009765625,
+          "height": 21.146438598632812,
+          "documentTop": 20.5
+        },
+        "reuseLicense": "Unverified; no licensing assertion"
+      }
+    },
+    {
+      "key": "chrome-logotype-pill",
+      "parent": "owned-home-root",
+      "type": "FrameNode",
+      "attrs": {
+        "position": "fixed",
+        "right": "10px",
+        "top": "10px",
+        "width": "115px",
+        "height": "42px",
+        "fill": "rgba(0, 0, 0, .04)",
+        "borderRadius": 5,
+        "visible": true,
+        "opacity": 0,
+        "link": {
+          "href": "https://www.originbrand.io/"
+        }
+      },
+      "phone": {
+        "right": "8px",
+        "top": "8px",
+        "width": "80px"
+      },
+      "role": "Genuine native Home exit, no custom activation/modified-click interception. Private full-home chrome owns source scroll fade and current light/dark pill treatment; authored hidden in Canvas."
+    },
+    {
+      "key": "chrome-logotype-svg",
+      "parent": "chrome-logotype-pill",
+      "type": "SVGNode",
+      "attrs": {
+        "position": "absolute",
+        "left": "14.5px",
+        "top": "8.1px",
+        "width": "86px",
+        "height": "25.8px",
+        "svg": "<svg width=\"100\" height=\"30\" viewBox=\"0 0 100 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18.9855 6.25819C17.6646 5.33105 16.0538 4.78711 14.3171 4.78711H8.14162C6.40497 4.78711 4.79529 5.33105 3.4733 6.25819C1.37325 7.73044 0 10.1683 0 12.9287V15.7369C0 18.4962 1.37325 20.9352 3.4733 22.4063C4.79529 23.3334 6.40497 23.8774 8.14162 23.8774H14.3171C16.0538 23.8774 17.6635 23.3334 18.9855 22.4063C21.0855 20.9352 22.4587 18.4962 22.4587 15.7369V12.9287C22.4587 10.1694 21.0855 7.73044 18.9855 6.25819ZM18.9855 18.2295C18.9855 19.3314 18.0921 20.2247 16.9902 20.2247H5.46852C4.36666 20.2247 3.4733 19.3314 3.4733 18.2295V10.435C3.4733 9.33313 4.36666 8.43977 5.46852 8.43977H16.9902C18.0921 8.43977 18.9855 9.33313 18.9855 10.435V18.2295Z\" fill=\"#C8C8C8\"/>\n<path d=\"M38.1208 4.78711H32.8084C28.3125 4.78711 24.668 8.43162 24.668 12.9276V23.8774H28.1401V10.435C28.1401 9.33313 29.0335 8.43977 30.1353 8.43977H38.1208V4.78711Z\" fill=\"#C8C8C8\"/>\n<path d=\"M40.3605 4.78828V23.8774H43.8327V4.78711H40.3594L40.3605 4.78828Z\" fill=\"#C8C8C8\"/>\n<path d=\"M75.2221 4.78711H71.75V23.8774H75.2221V4.78711Z\" fill=\"#C8C8C8\"/>\n<path d=\"M69.4865 12.6426C69.4854 12.5762 69.483 12.5098 69.4795 12.4434C69.4772 12.3933 69.4737 12.3433 69.4702 12.2932C69.4691 12.2699 69.4679 12.2454 69.4656 12.2221C69.4656 12.2163 69.4656 12.2105 69.4644 12.2035C69.4597 12.1452 69.4539 12.087 69.4481 12.0288C69.4423 11.9729 69.4364 11.9158 69.4295 11.8587C69.4295 11.8529 69.4283 11.8482 69.4271 11.8436C69.4236 11.8156 69.4201 11.7877 69.4155 11.7609C69.4096 11.7143 69.4038 11.6677 69.3957 11.6223C69.3864 11.5617 69.377 11.5023 69.3666 11.4429C69.3642 11.4254 69.3607 11.4091 69.3572 11.3916C69.3502 11.3497 69.3421 11.3078 69.3339 11.2659C69.3281 11.2379 69.3223 11.2111 69.3176 11.1843C69.3072 11.1377 69.2978 11.0911 69.2873 11.0457C69.285 11.0341 69.2815 11.0236 69.2804 11.0131C69.2652 10.9514 69.2512 10.8896 69.2349 10.8291C69.2221 10.7778 69.2082 10.7254 69.193 10.6742C69.1872 10.6544 69.1825 10.6334 69.1767 10.6148C69.1616 10.5635 69.1476 10.5123 69.1313 10.4622C69.0905 10.3282 69.0462 10.1954 68.9973 10.065C68.981 10.0196 68.9636 9.97531 68.9461 9.92988C68.9368 9.90542 68.9275 9.88097 68.917 9.85651C68.8972 9.80526 68.8762 9.75401 68.8541 9.70392C68.8517 9.69693 68.8482 9.68995 68.8459 9.68412C68.825 9.6352 68.804 9.58628 68.7819 9.53736C68.7516 9.46981 68.7201 9.40225 68.6875 9.3347C68.6689 9.29393 68.6491 9.25433 68.6281 9.21473C68.6037 9.16464 68.578 9.11456 68.5512 9.06447C68.5466 9.05399 68.5407 9.04467 68.5349 9.03419C68.5186 9.00274 68.5011 8.97129 68.4837 8.93985C68.465 8.90374 68.4452 8.8688 68.4243 8.83502C68.4091 8.80823 68.394 8.78144 68.3789 8.75582C68.3684 8.73718 68.3579 8.71971 68.3462 8.70107C68.3311 8.67661 68.3171 8.65099 68.3008 8.62653C68.2775 8.58809 68.2531 8.54849 68.2286 8.51005C68.2135 8.48676 68.1995 8.46463 68.1843 8.44133C68.1494 8.38659 68.1133 8.33185 68.076 8.27827C68.055 8.24682 68.0341 8.21653 68.012 8.18625C67.998 8.16529 67.984 8.14549 67.9689 8.12569C67.9316 8.07211 67.8932 8.01969 67.8535 7.96844C67.8337 7.94049 67.8128 7.9137 67.7906 7.88691C67.7604 7.84498 67.7266 7.80422 67.6928 7.76345C67.687 7.7553 67.68 7.74714 67.673 7.73782C67.6497 7.70871 67.6264 7.67958 67.602 7.65163C67.5775 7.62135 67.5519 7.59106 67.5251 7.56078C67.4983 7.52933 67.4727 7.50021 67.4459 7.46993C67.3329 7.34297 67.2176 7.21951 67.0976 7.10071C67.0848 7.08789 67.072 7.07508 67.058 7.06227C66.9928 6.99704 66.9252 6.93298 66.8577 6.87241C66.8286 6.84446 66.7994 6.81767 66.7692 6.79204C66.7098 6.73846 66.6492 6.68605 66.5875 6.6348C66.5572 6.60802 66.5269 6.58356 66.4954 6.55793C66.464 6.53231 66.4337 6.50668 66.4023 6.48222C66.3766 6.46242 66.351 6.44146 66.3254 6.42282C66.3114 6.41117 66.2974 6.40069 66.2846 6.39137C66.2602 6.37274 66.2357 6.3541 66.2113 6.33663C66.1751 6.30867 66.139 6.28189 66.1018 6.25626C66.075 6.23646 66.0494 6.21782 66.0226 6.19919C66.0202 6.19686 66.0191 6.19569 66.0167 6.19569C66.0109 6.19103 66.0051 6.18754 66.0004 6.18404C65.9643 6.15842 65.9282 6.13396 65.8921 6.1095C65.8502 6.08038 65.8082 6.05359 65.7663 6.0268C65.7244 5.99885 65.6813 5.97206 65.6382 5.94527C65.5963 5.91848 65.5532 5.89169 65.5089 5.86607C65.5089 5.86607 65.5077 5.86607 65.5066 5.86607C65.4635 5.84044 65.4204 5.81482 65.3773 5.79036C65.3342 5.76474 65.2888 5.74027 65.2445 5.71698C65.2002 5.69252 65.1548 5.66806 65.1106 5.64477C65.071 5.6238 65.0313 5.604 64.9906 5.5842C64.9277 5.55275 64.8648 5.5213 64.8007 5.49335C64.739 5.46306 64.6761 5.43511 64.6132 5.40832C64.541 5.37571 64.4688 5.34542 64.3954 5.31631C64.3593 5.30116 64.322 5.28719 64.2847 5.27321C64.2731 5.26739 64.2614 5.26389 64.2486 5.25923C64.209 5.24409 64.1694 5.22895 64.1298 5.21497C64.0809 5.19634 64.0308 5.17886 63.9819 5.16256C63.947 5.15091 63.912 5.13926 63.8771 5.12762C63.8584 5.12063 63.8398 5.1148 63.8212 5.10898C63.7827 5.09617 63.7431 5.08452 63.7035 5.07287C63.6569 5.05773 63.6092 5.04375 63.5614 5.03094C63.5055 5.01463 63.4485 4.99949 63.3914 4.98435C63.3355 4.96921 63.2784 4.9564 63.2213 4.94242C63.1934 4.93543 63.1654 4.92961 63.1363 4.92262C63.1014 4.91447 63.0664 4.90748 63.0315 4.89932C63.0058 4.8935 62.9802 4.88884 62.9546 4.88418C62.9266 4.87836 62.8987 4.87253 62.8719 4.86788C62.8405 4.86089 62.8102 4.85623 62.7787 4.8504C62.7647 4.84808 62.7519 4.84575 62.738 4.84342C62.689 4.83526 62.6389 4.82711 62.59 4.81896C62.5842 4.81779 62.5784 4.81663 62.5726 4.81663C62.5271 4.80964 62.4829 4.80265 62.4375 4.79683C62.4037 4.79217 62.3687 4.78751 62.335 4.78401C62.2837 4.77702 62.2324 4.7712 62.18 4.76654C62.1171 4.75955 62.0542 4.7549 61.9925 4.74907C61.9785 4.74907 61.9669 4.74674 61.9529 4.74674C61.8923 4.74208 61.8318 4.73859 61.7712 4.7351H61.7619C61.6955 4.7316 61.6291 4.72927 61.5627 4.72694H61.5557C61.487 4.72461 61.4171 4.72461 61.3484 4.72461H54.1596C54.0908 4.72461 54.021 4.72461 53.9522 4.72694H53.9452C53.8789 4.72927 53.8125 4.73044 53.7461 4.7351H53.7368C53.6762 4.73859 53.6156 4.74208 53.5551 4.74674C53.5422 4.74674 53.5294 4.74907 53.5155 4.74907C53.4526 4.7549 53.3897 4.75955 53.3279 4.76654C53.2767 4.7712 53.2243 4.77702 53.173 4.78401C53.1392 4.78751 53.1043 4.79217 53.0705 4.79683C53.0204 4.80382 52.9703 4.8108 52.9203 4.81779C52.8667 4.82594 52.8143 4.8341 52.763 4.84342C52.7514 4.84575 52.7397 4.84691 52.7281 4.84924C52.6966 4.85506 52.6664 4.85972 52.6349 4.86671C52.6069 4.87137 52.579 4.87719 52.5522 4.88302C52.5266 4.88768 52.501 4.8935 52.4753 4.89816C52.4404 4.90515 52.4054 4.9133 52.3705 4.92145C52.3425 4.92728 52.3146 4.93427 52.2855 4.94126C52.2284 4.95523 52.1725 4.96804 52.1154 4.98318C52.0584 4.99833 52.0024 5.01347 51.9454 5.02978C51.8976 5.04259 51.851 5.05656 51.8033 5.07171C51.7637 5.08335 51.7241 5.095 51.6856 5.10781C51.667 5.11364 51.6484 5.11946 51.6297 5.12645C51.5948 5.1381 51.5598 5.14974 51.5249 5.16139C51.4748 5.1777 51.4259 5.19517 51.377 5.21381C51.3397 5.22778 51.3036 5.2406 51.2675 5.25457C51.2523 5.2604 51.2372 5.26506 51.2221 5.27204C51.1906 5.28369 51.1592 5.2965 51.1277 5.30932C51.0928 5.32329 51.059 5.33727 51.0241 5.35241C50.8517 5.42346 50.6828 5.50033 50.5174 5.5842C50.4766 5.604 50.437 5.62497 50.3974 5.64477C50.352 5.66806 50.3077 5.69252 50.2635 5.71698C50.218 5.74144 50.1738 5.76474 50.1307 5.79036C50.0876 5.81482 50.0445 5.84044 50.0014 5.86607C50.0014 5.86607 50.0002 5.86607 49.9991 5.86607C49.956 5.89286 49.9129 5.91848 49.8698 5.94527C49.8267 5.97089 49.7836 5.99885 49.7417 6.0268C49.6997 6.05359 49.6566 6.08155 49.6159 6.1095C49.5798 6.13396 49.5437 6.15842 49.5075 6.18404C49.5017 6.18637 49.4959 6.19103 49.4912 6.19569C49.4889 6.19569 49.4877 6.19802 49.4854 6.19919C49.4586 6.21782 49.4318 6.23646 49.4062 6.25626C49.3689 6.28189 49.3328 6.30751 49.2967 6.33663C49.2723 6.35526 49.2478 6.37274 49.2233 6.39137C49.2094 6.40069 49.1954 6.41117 49.1826 6.42282C49.157 6.44262 49.1313 6.46242 49.1057 6.48222C49.0743 6.50668 49.0428 6.53231 49.0125 6.55793C48.9822 6.58239 48.9508 6.60802 48.9205 6.6348C48.8599 6.68489 48.7994 6.7373 48.7388 6.79204C48.7109 6.8165 48.6841 6.84096 48.6561 6.86659C48.5862 6.93065 48.5175 6.99588 48.4499 7.06227C48.4301 7.08207 48.4104 7.1007 48.3906 7.12167C48.2997 7.21252 48.2112 7.3057 48.125 7.40121C48.0947 7.43382 48.0656 7.4676 48.0365 7.50021C48.0178 7.52002 48.0004 7.54098 47.9829 7.56195C47.9736 7.57243 47.9642 7.58175 47.9573 7.59223C47.9316 7.62135 47.9072 7.65163 47.8839 7.68075C47.8396 7.73316 47.7977 7.78674 47.7546 7.84032C47.7208 7.88342 47.687 7.92651 47.6544 7.97077C47.6055 8.03484 47.5578 8.10006 47.5123 8.16645C47.4844 8.20489 47.4576 8.24332 47.432 8.28176C47.3947 8.33534 47.3586 8.39008 47.3236 8.44483C47.3155 8.45764 47.3073 8.47045 47.2992 8.4821C47.2479 8.56247 47.1978 8.644 47.1489 8.72553C47.1268 8.7628 47.1047 8.80008 47.0837 8.83735C47.0639 8.87229 47.0429 8.90723 47.0243 8.94218C47.0068 8.97363 46.9905 9.00507 46.973 9.03652C46.9451 9.08661 46.9183 9.13785 46.8927 9.1891C46.8682 9.23802 46.8438 9.28694 46.8205 9.33586C46.7972 9.38362 46.7739 9.4337 46.7517 9.48262C46.7436 9.50126 46.7343 9.51989 46.7261 9.53853C46.676 9.64918 46.6295 9.761 46.5852 9.87398C46.5829 9.87747 46.5817 9.88097 46.5805 9.88446C46.5572 9.94503 46.5339 10.0056 46.5118 10.0662C46.4885 10.1291 46.4664 10.192 46.4454 10.2537C46.4431 10.2607 46.4408 10.2688 46.4384 10.2747C46.4198 10.3306 46.4011 10.3865 46.3837 10.4435C46.3639 10.5076 46.3452 10.5717 46.3266 10.6357C46.3138 10.68 46.3022 10.7254 46.2893 10.7697C46.2777 10.8116 46.2684 10.8524 46.2567 10.8943C46.2462 10.9374 46.2358 10.9817 46.2253 11.0248C46.2101 11.0911 46.1962 11.1564 46.1822 11.2228C46.1682 11.288 46.1566 11.3555 46.1437 11.4219C46.1193 11.5559 46.0983 11.691 46.082 11.8261C46.0645 11.9612 46.0506 12.0987 46.0401 12.2361C46.0238 12.4434 46.0156 12.6519 46.0156 12.8627V15.6709C46.0156 15.714 46.0156 15.7571 46.0156 15.8002C46.0284 16.5934 46.1542 17.3598 46.3779 18.082C46.9171 19.8256 48.026 21.3165 49.4877 22.3415C50.8086 23.2686 52.4194 23.8126 54.1561 23.8126H61.3449C63.0792 23.8126 64.6877 23.2698 66.0086 22.345V24.3472C66.0086 25.449 65.1152 26.3424 64.0134 26.3424H47.3097V29.8157H61.3449C65.8409 29.8157 69.4854 26.1712 69.4854 21.6752V12.8639C69.4854 12.7963 69.4854 12.7299 69.483 12.6636C69.483 12.6577 69.483 12.6519 69.483 12.6449L69.4865 12.6426ZM64.0215 20.1587H51.4865C50.3846 20.1587 49.4912 19.2654 49.4912 18.1635V10.369C49.4912 9.26714 50.3846 8.37378 51.4865 8.37378H64.0215C65.1234 8.37378 66.0167 9.26714 66.0167 10.369V18.1635C66.0167 18.5118 65.927 18.8391 65.7698 19.1244C65.4309 19.7406 64.7751 20.1587 64.0215 20.1587Z\" fill=\"#C8C8C8\"/>\n<path d=\"M91.8264 4.78711H85.6287C81.1328 4.78711 77.4883 8.43162 77.4883 12.9276V23.8762H80.9616V10.4338C80.9616 9.33197 81.8549 8.43861 82.9568 8.43861H94.5007C95.6025 8.43861 96.4959 9.33197 96.4959 10.4338V23.8762H99.9692V12.9276C99.9692 8.43162 96.3247 4.78711 91.8287 4.78711H91.8264Z\" fill=\"#C8C8C8\"/>\n<path d=\"M43.8327 0H40.3594V3.47329H43.8327V0Z\" fill=\"#C8C8C8\"/>\n<path d=\"M75.2233 0H71.75V3.47329H75.2233V0Z\" fill=\"#C8C8C8\"/>\n</svg>\n",
+        "visible": true,
+        "opacity": 1
+      },
+      "phone": {
+        "left": "10px",
+        "top": "12px",
+        "width": "60px",
+        "height": "18px"
+      },
+      "material": {
+        "key": "docked-logotype",
+        "url": "https://www.originbrand.io/images/figma/Logotype_Grey.svg?dpl=dpl_DFGAk9yk49QeMsJeiKUzjcj35J2b",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/assets/Logotype_Grey.svg",
+        "sha256": "1d4bcde68d5b7a123bc610fa6ce07f068846f358040b0b1673cb1fa5733f33b6",
+        "bytes": 11003,
+        "contentType": "image/svg+xml",
+        "sourceObservedRect": {
+          "x": 1314.5,
+          "y": 18,
+          "width": 86,
+          "height": 25.800003051757812,
+          "documentTop": 18
+        },
+        "reuseLicense": "Unverified; no licensing assertion"
+      }
+    }
+  ],
+  "unresolved": {
+    "actualNewPartIDs": true,
+    "newExportIDs": true,
+    "liveSourceSHAAndRows": true,
+    "currentProjectPreimage": true,
+    "nativeVimeoModuleAndControls": false,
+    "actualImageAssetReferences": true,
+    "actualFontFamilySelector": true,
+    "actualProviderReadyPlayPauseAcknowledgement": true
+  },
+  "copy": "Independent concise replacement prose; source project/program names and factual UI labels retained. No full original paragraph/verse is copied.",
+  "materialPolicy": "Only genuine source image assets; comparison field screenshots are not placed as procedural artwork.",
+  "referenceLayout": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/measured-layout.json",
+    "sha256": "9eff9af85b3cf6d0a679aea33bb6a1fdfac1b06328aff1dc02402bf63fb142f9",
+    "bytes": 23455
+  },
+  "limits": [
+    "Parts are a finite planned editable hierarchy, not a saved Framer claim.",
+    "Actual native Frame/RichText layout/public event forwarding and responsive replacement must be proved after registration.",
+    "Native attrs may require writer’s documented shape adapter; no guessed CSS/property names or IDs may be sent directly."
+  ],
+  "nativeNamePrefix": "HERO-016 / Source / following / ",
+  "chromeAddition": {
+    "approvedScope": "Four genuine native families only; old8large wordmark SVG nodes remain untouched.",
+    "sourceMode": "Home primary HTML passes variant light/revealNavOnScroll true. This is a fade of separate docked nodes, not a path morph.",
+    "desktop": {
+      "scrollStart": "hero bottom at55% viewport",
+      "scrollEnd": "hero bottom at10% viewport",
+      "scrubSeconds": 0.5
+    },
+    "reducedThresholdPx": 480
+  },
+  "mountedLayoutPolicy": {
+    "reason": "Native responsive roots may switch before the source900px boundary. Inactive native groups must remain present for public own-scoped responsive CSS.",
+    "strategy": "New-only primitive layers visible true; authored opacity zero for hidden layout; Preview scoped CSS owns admission, Canvas/static retains authored pose.",
+    "count": 13
+  }
+}

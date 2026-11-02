@@ -1,0 +1,206 @@
+{
+  "schema": "source-origin-full-journey.v1",
+  "id": "HERO-016",
+  "classification": "Source inspiration / credited current original-site recreation",
+  "sourceURL": "https://www.originbrand.io/",
+  "credit": "Origin Brand. Genuine referenced marks, photographs, Cedar reel and Vimeo showreel retain their source credit. Native assembly and procedural models/controllers are independently authored; no original website behavior JS is imported.",
+  "scope": "Stage A opening/menu plus full following home journey:250vh expanding film, six distinct Programs, four Partnerships, footer, scroll heat and docked mark/logotype.",
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceOriginNativeBehaviors.tsx",
+    "bytes": 107182,
+    "sha256": "5089e8500780719e003b588a33a6ddfa5ad37e087ea9d157bb050ec8a944a007",
+    "publicOverrides": 22,
+    "retainedOverrides": 7,
+    "additiveOverrides": 15,
+    "components": 0,
+    "propertyControls": 0
+  },
+  "parentStageA": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/candidate/StageA-dc569-parent.tsx",
+    "bytes": 38082,
+    "sha256": "dc5693023aa3096c707425968540d120467c01b2f7a6e327e1c4e4bbf467be97"
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/origin-native/journey-layout.json",
+    "bytes": 102203,
+    "sha256": "3ed42dc40c936a47714d8ef83de16d13fb03ecf70ca300c76f1a65cc0c778cce",
+    "newPrimitiveFamilies": 155,
+    "breakpoints": [
+      1440,
+      901,
+      390
+    ],
+    "mountedOpacityRepresentations": 13,
+    "assembly": "Lift retained Controller from HeroStage to actual responsive root; insert following stage immediately after HeroStage, ahead of retained review/credit utilities. Keep source IDs/credits. No duplicate nested world."
+  },
+  "behavior": {
+    "programs": "Six independently authored scalar-field models, source labels/selection, outgoing reverse260ms, in-flow Phone picker and repaired source Operational branch.",
+    "reveal": "Native scroll250vh with source.5s scrub, forward/reverse native card and docked chrome; reduced mode removes blank travel and uses exact480px chrome threshold.",
+    "partnerships": "Genuine source material remains separate from owned synthetic test image fixture; photo hover/tags and footer staged reveal are native groups.",
+    "heat": "Source-grounded scroll velocity units deltaY/dt*16.67/130, pointer heat, reduced freeze and expiring/retired output buffer."
+  },
+  "resources": {
+    "webGLContextsAdded": 0,
+    "ownedWorld": "One clock and one combined surface budget per world, one Canvas/two Preview admissions; conservative actual legacy-canvas veto.",
+    "pixels": "1MP Canvas/2MP Preview aggregate fields+heat and bounded raster buffers per admitted world; actual transformed screen bounds and DPR2 with logical CSS controls.",
+    "canvas": "Off by default; Canvas-only opt-in12fps; export/thumbnail frozen.",
+    "provider": "One real iframe including initialization/retirement across Preview worlds, global Menu barrier, synchronous detach before bounded pause/destroy settlement. No fake HTMLVideoElement lease. Source16:9 cover via existing ResizeObserver; poster retained until positive documented play acknowledgement."
+  },
+  "tests": {
+    "lockedNix": {
+      "focused": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1",
+      "mixed": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1",
+      "results": {
+        "strict": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/strict/result.json",
+          "bytes": 1088,
+          "sha256": "664870d6129fe5279fdbfc9e993a485d9492358350f3fc71d450a84d8802178e",
+          "checks": 3
+        },
+        "browser": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/browser/result.json",
+          "bytes": 2663,
+          "sha256": "c66354ae3458a0b4a0b06e375f9f94463db274d3787c51c939d0ad6e88e6d174",
+          "checks": 31
+        },
+        "motion": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/motion/result.json",
+          "bytes": 1836,
+          "sha256": "66964a3910651d2eeeb62bf308c3ddc476374b09e4e710203b23164c2d279e6a",
+          "checks": 21
+        },
+        "responsive": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/responsive/result.json",
+          "bytes": 14731,
+          "sha256": "5653430475a932ee4d086707071e1ab2a62d57cfbe4fcfdbb69fc70536def6fa",
+          "checks": 36
+        },
+        "journey-browser": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-browser/result.json",
+          "bytes": 73591,
+          "sha256": "2e6b90901edc27d8d1645f8585af03144554aee844a99d0a6a7970d0c98df8d2",
+          "checks": 37
+        },
+        "journey-provider": {
+          "path": "/nix/store/7ij9ydm2nalsngxpypvw04ckv6ahvd4w-monarchic-website-source-origin-native-0.0.1/evidence/journey-provider/result.json",
+          "bytes": 3042,
+          "sha256": "bb02db09edf58fe704ff7eed25d7cb1a1bbad3b522275bbcad03c6dc6e0e0419",
+          "checks": 26
+        },
+        "mixed": {
+          "path": "/nix/store/dl05s3g4l9wi1c8qa9wfhff2gmwqjzbk-monarchic-website-source-origin-native-mixed-0.0.1/evidence/mixed/result.json",
+          "bytes": 261099,
+          "sha256": "3599e100056d34db68f80d187e1fcd78cf417c3311b4fbcc1ebf01b902bcc0c4",
+          "checks": 19
+        }
+      },
+      "strictGroups": 3,
+      "baselineBrowser": 88,
+      "newJourneyBrowser": 37,
+      "newProviderLifecycle": 26,
+      "mixedChecks": 19,
+      "mixedPlacements": 60
+    },
+    "baselinePortability": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/baseline-port-prepared/report.json",
+      "bytes": 1791,
+      "sha256": "aed66094392de9a7d20c325192aff4e41b321e62d5750330d80233a9a0ac26fb"
+    },
+    "journeyPortability": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/journey-portability-diff.json",
+      "bytes": 4126,
+      "sha256": "50b2ea2775b273418e91b80f10a0369e2ec1e58138ac387ef519a1c2e5975a8f"
+    },
+    "journeyFinalLocal": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/journey-port-final-proof.json",
+      "bytes": 1023,
+      "sha256": "6b68b62db0e4ba5e1aac03a9affb49feb503b4320ded67505576488019e650e0"
+    },
+    "ownerUpgradeFinalCarry": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/owner-upgrade/final5089-carry.json",
+      "bytes": 1669,
+      "sha256": "0b27e93c71aebafbee1fb0efc89f5939659c1b3b2c3cdbd29224de367ed72d25"
+    },
+    "serverRender": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/server-render.json",
+      "bytes": 306,
+      "sha256": "73c3322b30b93ac1ba331dc17848ddcb8cc766fb5b2397efa96b2e7a1961665e"
+    },
+    "ownedFixtures": "Existing synthetic portfolio WebM and four independently drawn SVG test images. They verify decode/geometry/lifecycle, not source media appearance.",
+    "aggregateThreeWorlds": {
+      "script": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-origin-journey-resources.mjs",
+        "bytes": 17135,
+        "sha256": "db93eb30efe202fea6263b73cd0333a83220aaa0f60898fdeef6bc9ec019fdcb"
+      },
+      "local": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/aggregate-resources/portable-local-receipt.json",
+        "bytes": 4215,
+        "sha256": "946623c6360bedefd638b9edac240ed5ec113814d344e21181736da7c1bde4a0"
+      },
+      "portability": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/aggregate-resources/portability-delta.json",
+        "bytes": 1549,
+        "sha256": "51ec4f7b2438e13441b29ce2378ecb47e962be1a7db6798af4d15d250966a89f"
+      },
+      "external": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/aggregate-resources/aggregate-resource-receipt.json",
+        "bytes": 8250,
+        "sha256": "d03922efdbbce5f7a2fc743f37758ef150edf99fce03724e71b1c496393e0307"
+      },
+      "lockedNix": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1",
+      "result": {
+        "path": "/nix/store/7mxjkc4m95bcn5jga6b8kk6kaw1nm532-monarchic-website-source-origin-journey-resources-0.0.1/evidence/journey-resources/result.json",
+        "bytes": 80095,
+        "sha256": "5bfc653768317162bf8e3fb405c71f13cd32b7a8326338845852a115212ac1e1"
+      },
+      "checks": 29,
+      "cleanup": {
+        "gate": {
+          "clients": 0,
+          "admitted": 0,
+          "canvas": 0,
+          "preview": 0,
+          "legacyCanvases": 0
+        },
+        "frames": 0,
+        "listeners": 0,
+        "observed": 0,
+        "canvases": 0,
+        "glRequests": 0
+      },
+      "scope": "Three actual native-like worlds: combined Programs+Hero+Heat pixels, two moving Preview/one Canvas clock, actual alpha, both-axis paused zoom, legacy exclusion and full cleanup. No actual Framer claim.",
+      "preservedInitialPackagingFailure": {
+        "file": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/validation/aggregate-resources/nix-before-jj-snapshot-failure.log",
+          "bytes": 2119,
+          "sha256": "20c9410e2e029998fae3b944b3343976398904f6b8e49254bfd666c2fec86a3c"
+        },
+        "reason": "New test was not yet included in the Jujutsu/Git flake source snapshot. After jj status captured it, the unchanged check passed in locked Nix. No production fix or relaxed assertion."
+      }
+    }
+  },
+  "actualProvider": {
+    "observation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO016-stage-b/root-provider-observation/result.json",
+      "bytes": 3502,
+      "sha256": "828ee628a830966274ed463998c4562457a35ab441dda1de8be3118884ecbd73"
+    },
+    "readyPlayPauseVerified": false,
+    "boundary": "The actual original Vimeo iframe was restricted by its security challenge in a fresh isolated anonymous browser. Lifecycle mock tests do not establish external playback; no access-control bypass."
+  },
+  "validation": {
+    "lockedNixPassed": true,
+    "sourceRegisteredInFramer": false,
+    "nativeFollowingSaved": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "additionalThreeWorldProgramsHeatFixturePending": false
+  },
+  "knownDifferences": [
+    "Scalar/procedural material and seeded model transfer are independent fits, not original shader code.",
+    "Inter is the native authored font substitute until genuine source-family native binding is available.",
+    "Source Operational branch crashes; this recreation deliberately presents a working matching model.",
+    "Actual native/code DOM forwarding, external film playback, moving Framer Preview and editor reload remain separate gates."
+  ]
+}
