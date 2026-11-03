@@ -94,6 +94,46 @@
     "limits": [
       "Settled samples did not capture the continuous26-point polyline, so full tail/easing parity is unverified.",
       "The actual native child-forwarding result is specific to this saved HOC; Ajedrez’s new aperture still needs its own actual paint gate."
-    ]
+    ],
+    "scope": "Historical settled native pointer/head samples only; the new quadratic source refinement has separate unverified actual Framer gates."
+  },
+  "quadraticTrailRefinement": {
+    "date": "2026-11-03",
+    "status": "FOCUSED_NIX_PASSED_ACTUAL_SOURCE_AUTHORING_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/SourcePuenteBehaviors.tsx",
+      "bytes": 22547,
+      "sha256": "aa0758a5bb692d99f20b24b9a6939bed9727dbba9ad84c701aa586a3a0662d8c"
+    },
+    "previousRegisteredActor": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/previous-source.tsx",
+      "bytes": 22110,
+      "sha256": "669710110e7167dd09e01cb7b320fe6dc3671e239796024f472b552b568505f3"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/validation-receipt.json",
+      "bytes": 5016,
+      "sha256": "c7853af5b9518f96493b3d51c411b0f062af37b2cdfa4822cccdd8e1fe866f4a"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
+      "bytes": 4430,
+      "sha256": "11f4c329f04506f0ab13ed5a907891c3f9223d231b914d2da636edd4e8c2a6c7"
+    },
+    "publicOverrides": 13,
+    "localChecks": {
+      "strictGeometrySSR": 6,
+      "browser": 27
+    },
+    "behavior": "Replace straight SVG segments with source-supported quadratic midpoints; use the source axis-wise0.5px resting test and pixel-aligned16px square. The moving26-point trail retains native artwork and drains to idle without RAF.",
+    "sourceEvidence": "Retained public implementation facts, not a new original-site pointer audit. Native SVG,30Hz publication, time-normalized0.32 easing and fitted curtain curve remain explicit adaptations.",
+    "remaining": [
+      "Compare corresponding original-source moving path and curtain/gate/reverse states.",
+      "The full-viewport white difference cursor outside tiles is still omitted.",
+      "Actual Framer source compilation, native painting, Preview and editor reload."
+    ],
+    "nativeWrites": 0,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
