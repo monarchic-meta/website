@@ -117,8 +117,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
-      "bytes": 7733,
-      "sha256": "deafb6ef4f01fc4c37a3e7f4951e1979bbcffc8bb2de3ff7845d4fb4eb3008fe"
+      "bytes": 8941,
+      "sha256": "70451b2c07f1aee9bad2e67427f591e5f72b1ee6a7092af52cc8794f9dde1b7b"
     },
     "publicOverrides": 13,
     "localChecks": {
@@ -171,8 +171,8 @@
     "afterEditorReload": false,
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
-      "bytes": 7733,
-      "sha256": "deafb6ef4f01fc4c37a3e7f4951e1979bbcffc8bb2de3ff7845d4fb4eb3008fe"
+      "bytes": 8941,
+      "sha256": "70451b2c07f1aee9bad2e67427f591e5f72b1ee6a7092af52cc8794f9dde1b7b"
     },
     "scope": "The missing outside-tile cursor is implemented and locally validated. Earlier quadratic-trail receipts retain their historical omission note. Actual Framer painting/Preview/reload remain separate.",
     "actualAuthoring": {
@@ -182,5 +182,28 @@
     },
     "actualCompilerDiagnostics": 0,
     "nativeOwnerSHA256": "1977bacd736545b26ed82a2b06514ceec7a01def709ce0622f062085b27e3db3"
+  },
+  "curtainEasingCorrection": {
+    "status": "LOCAL_48_CHECKS_PASS_ACTUAL_SOURCE_WRITE_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-power3-v1/frozen-f5ee831b/SourcePuenteBehaviors.tsx",
+      "bytes": 27337,
+      "sha256": "f5ee831b5101a2c90f96580c8c26db7e72f093534da249b4f5c4cbd15cac6ed5"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-power3-v1/validation-receipt.json",
+      "bytes": 5966,
+      "sha256": "faeed9f751b725d4cf4f8a36ecf4b7c6a2f120cebfbf1ccdebcb3bddc33be4dd"
+    },
+    "sourceMathematics": "Retained source uses GSAP power3.in. Independently generated CSS linear() with128segments reproduces t^4 with normalized interpolation error below0.000092;1.8s duration/120ms lower delay/60vh travel remain exact.",
+    "checks": {
+      "static": 7,
+      "browser": 41,
+      "total": 48
+    },
+    "preservation": "Same13public overrides; exact old-source inverse; no native edits, new loop, timer, renderer or context.",
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "remaining": "Compare full corresponding source moving/reverse states and actual native Framer Preview/reload."
   }
 }

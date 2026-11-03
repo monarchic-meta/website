@@ -6,14 +6,14 @@
   "graphicBranch": "https://www.pu-ente.com/z/",
   "actor": {
     "path": "../SourcePuenteBehaviors.tsx",
-    "sha256": "db35d99709759061f711e4797916d6645111c3395edefc612041e6bc3a7e5283",
-    "bytes": 26928
+    "sha256": "f5ee831b5101a2c90f96580c8c26db7e72f093534da249b4f5c4cbd15cac6ed5",
+    "bytes": 27337
   },
   "sourceFacts": "Current public code supports distinct grayscale palette, fine-pointer half-fill,1.8s split curtain with.12s delay, and clipped16px/26pointtrail. The actual Graphic branch has fifteen static tiles, not autoplay sliders.",
   "adaptations": [
     "Graphic branch is presented within the independent Framer draft instead of separate source routing.",
     "Phone gate geometry is fitted to its assigned native bounds.",
-    "The native SVG now uses the source quadratic midpoint geometry. A30Hz publication cap, time-normalized0.32 easing and finite rest replace the source continuous Canvas loop; curtain easing remains a fitted cubic.",
+    "The native SVG now uses the source quadratic midpoint geometry. A30Hz publication cap, time-normalized0.32 easing and finite rest replace the source continuous Canvas loop; curtain easing now follows the source fourth-power curve with a bounded CSS linear() approximation.",
     "A small DOM square replaces the source full-window cursor canvas; the existing tile SVG replaces its blue trail canvas.",
     "Source frame-based0.32 easing is time-normalized; source continuous idle scheduling is replaced with finite rest.",
     "Reduced motion retains the standard native pointer throughout; no custom cursor or cursor:none style is installed.",
@@ -109,5 +109,26 @@
     },
     "actualCompilerDiagnostics": 0,
     "nativeOwnerSHA256": "1977bacd736545b26ed82a2b06514ceec7a01def709ce0622f062085b27e3db3"
+  },
+  "curtainEasingCorrection": {
+    "status": "LOCAL_48_CHECKS_PASS_ACTUAL_SOURCE_WRITE_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-power3-v1/frozen-f5ee831b/SourcePuenteBehaviors.tsx",
+      "bytes": 27337,
+      "sha256": "f5ee831b5101a2c90f96580c8c26db7e72f093534da249b4f5c4cbd15cac6ed5"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-power3-v1/validation-receipt.json",
+      "bytes": 5966,
+      "sha256": "faeed9f751b725d4cf4f8a36ecf4b7c6a2f120cebfbf1ccdebcb3bddc33be4dd"
+    },
+    "checks": {
+      "static": 7,
+      "browser": 41,
+      "total": 48
+    },
+    "behavior": "Source1.8s split curtain, lower120ms delay and60vh travel retained.129 CSS linear stops replace fitted cubic with fourth-power curve; no animation loop added.",
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

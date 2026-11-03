@@ -11,7 +11,7 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * These are code-supported, not newly browser-observed archive interactions.
  * No original source behavior JS is reused. The SVG trail expresses the
  * source's quadratic midpoint geometry while retaining the native artwork.
- * The CSS cubic curtain curve approximates the source GSAP power3.in ease.
+ * A bounded CSS linear() curve follows source power3.in (fourth power).
  *
  * One Experience parent contains GateStage and GraphicGallery. Gate contains
  * the two cards; UpperHalf/LowerHalf are separate viewport backgrounds. Attach
@@ -91,12 +91,19 @@ function nextCombo(): Combo {
     const pick = () => pool.splice(Math.floor(Math.random() * pool.length), 1)[0]
     return { background: pick(), art: pick(), graphic: pick() }
 }
+// Source power3.in is t^4. This static 128-segment curve replaces the fitted
+// cubic without another animation loop. Its interpolation error is below
+// 0.000092 of the travel distance, including decimal rounding.
+const PUENTE_CURTAIN_LINEAR = `linear(${Array.from({ length: 129 }, (_, index) => {
+    const progress = index / 128
+    return `${Number((progress ** 4).toFixed(9))} ${progress * 100}%`
+}).join(",")})`
 function curtainStyle(state: Experience, side: Exclude<Side, null>, existing: React.CSSProperties | undefined) {
     const lower = side === "graphic", moving = state.phase === "leaving"
     return { ...existing,
         transform: [existing?.transform, moving ? `translateY(${(lower ? 1 : -1) * state.viewportHeight * .6}px)` : ""].filter(Boolean).join(" "),
         transition: state.reduced || state.frozen ? "none" : moving
-            ? `transform 1.8s cubic-bezier(.895,.03,.685,.22) ${lower ? ".12s" : "0s"}`
+            ? `transform 1.8s ${PUENTE_CURTAIN_LINEAR} ${lower ? ".12s" : "0s"}`
             : "background-color 1s ease-in-out, color 1s ease-in-out",
     }
 }

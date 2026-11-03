@@ -109,8 +109,8 @@
     {
       "id": "HERO-018",
       "path": "HERO-018.json",
-      "bytes": 12293,
-      "sha256": "bb692125b509733d15dc02dbb873d86feb066a1c8ca712bca453b032823b41f0"
+      "bytes": 13748,
+      "sha256": "c0b2f8594e71172d8d261285c7a80bb94dbe0728d00395fc089065b16c5606a9"
     }
   ],
   "currentRecreationSourcePolicy": "../original-source-policy.md",
