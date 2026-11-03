@@ -409,5 +409,47 @@
       "actualPreviewVerified": false,
       "afterEditorReload": false
     }
+  },
+  "contactNativeUI": {
+    "status": "LOCAL38_CHECKS_PASS_NATIVE_PACKET_IN_PREPARATION",
+    "classification": "Source inspiration / credited recreation",
+    "sourceModule": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaContact.tsx",
+      "bytes": 28595,
+      "sha256": "271407933dc60163c618cf7ddfe1e54732675fec44ec133aaed8fe5e7c57f018"
+    },
+    "publicNativeOverrides": 36,
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-contact-provenance.json",
+      "bytes": 5794,
+      "sha256": "4bc0aa5f61653ec1f78c98a7becf5e7e34b9cfafd35809f3ac98c803c5dd41ca"
+    },
+    "validation": {
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/result.json",
+        "bytes": 40715,
+        "sha256": "4d8f700fe0f427eabb773400dee3649ddb8474217990b9dc568380d3e8ddff82"
+      },
+      "checks": 38,
+      "strictAndSSR": 8,
+      "browser": 30,
+      "pageErrors": 0,
+      "oneBrowserClosed": true,
+      "scope": "ExactD/P sourcepanel/form/input/modelclip bounds, genuinecomparisonfonts, WAAPI source delays/easing/phases, caller cancellation/dedupe, nativeinner-input style forwarding, sourcePhonewrapscroll/reopen, reduced/frozen/unmount/leasecleanup."
+    },
+    "actualFramer": {
+      "sourceRegistered": false,
+      "nativeWritten": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "remaining": [
+      "Copy/placeholder/body text remain editable. Subtitle is independently paraphrased. No backend, submission or invented success state.",
+      "Original fonts are fixedexternalcomparison inputs only. Current Framer has no NeueHaas/Flecha. NativeCanvas inherits genuineInter/Georgia; liveCSS fallsbackArial/Georgia until manual source-font admission. Actual nativefont painting remains unverified.",
+      "A11y labels, keyboardactivation/focusreturn and reduced/static handling follow projectpolicy; they are not sourceinteraction observations.",
+      "Tablet/intermediate line segmentation is not fully observed; exact1440/390 source correspondence is tested.",
+      "SourcePhonev2 scrolling targeted the wrong root. Current source DOM/code establish wrapownership; actual source touch/scroll/reopen must be confirmed with a shortv3 audit.",
+      "Actual nativeinput/ref/font/WAAPI forwarding and actor coupling require realFramerPreview; local DOM is a facade, notFramernative paint."
+    ]
   }
 }

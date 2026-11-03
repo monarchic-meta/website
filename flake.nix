@@ -114,6 +114,23 @@
               };
             }
           ];
+          # Exact originals are fixed comparison inputs, not site/runtime fonts.
+          sourceMechaContactComparisonFonts = pkgs.linkFarm "monarchic-mecha-contact-test-inputs" [
+            {
+              name = "NeueHaasGroteskText-55Roman-Web.woff2";
+              path = pkgs.fetchurl {
+                url = "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef926_NeueHaasGroteskText-55Roman-Web.woff2";
+                hash = "sha256-NzjWIAdjfdaMv4E/RByUaUGXvdk4pvlTsXjoezXsCPQ=";
+              };
+            }
+            {
+              name = "FlechaM-Regular.woff2";
+              path = pkgs.fetchurl {
+                url = "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef932_FlechaM-Regular.woff2";
+                hash = "sha256-4/IrUAoqUHIZfQ4BhPeCFGHzDK4L1lrzuS+OQNYPUc4=";
+              };
+            }
+          ];
           # Fixed original materials are comparison-only test inputs.
           sourceFormatClockMaterials = pkgs.linkFarm "monarchic-format-intro-clock-test-inputs" [
             {
@@ -331,6 +348,15 @@
             export MONARCHIC_MECHA_CONTACT_EVIDENCE_DIR="$out/evidence"
             pnpm run check:mecha-contact-mark
           '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
+          source-mecha-contact = (mkWebsiteCheck "source-mecha-contact" ''
+            export MONARCHIC_MECHA_CONTACT_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-mecha-contact
+          '').overrideAttrs (_: {
+            MONARCHIC_MECHA_CONTACT_SOURCE_FONT_DIR = sourceMechaContactComparisonFonts;
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };

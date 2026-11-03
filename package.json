@@ -140,7 +140,8 @@
     "check:source-cantor-opening": "node scripts/check-source-cantor-opening.mjs",
     "check:source-format-intro-clock": "node scripts/check-source-format-intro-clock.mjs",
     "check:source-cantor-rolling-text": "node scripts/check-source-cantor-rolling-text.mjs",
-    "check:source-format-notes": "node scripts/check-source-format-notes.mjs"
+    "check:source-format-notes": "node scripts/check-source-format-notes.mjs",
+    "check:source-mecha-contact": "node scripts/check-source-mecha-contact.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

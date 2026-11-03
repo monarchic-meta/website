@@ -1,0 +1,89 @@
+{
+  "reference": "HERO-015",
+  "classification": "Source inspiration / credited recreation",
+  "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
+  "source": "https://mecha-xyz.webflow.io/",
+  "status": "LOCAL38_CHECKS_PASS_NATIVE_PACKET_IN_PREPARATION",
+  "sourceModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaContact.tsx",
+    "bytes": 28595,
+    "sha256": "271407933dc60163c618cf7ddfe1e54732675fec44ec133aaed8fe5e7c57f018"
+  },
+  "repositorySource": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaContact.tsx",
+  "checker": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/check-source-mecha-contact.mjs",
+    "bytes": 25013,
+    "sha256": "b7f54732d0c933e262bd2959e93800312f4f92851a328ff4a684fd1984c72fc0"
+  },
+  "sourceGeometryFixture": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/source-mecha-contact-geometry.json",
+    "bytes": 16795,
+    "sha256": "720f288d3795c1544649ab839e25018d79a680de70ada337875412378d961db8"
+  },
+  "genuineComparisonFonts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/source-font-comparison/acquisition.json",
+    "bytes": 1390,
+    "sha256": "6d915e05873ba5d32925c1aefb988c63624dcfa3da38ca6717767c9ab9781d88"
+  },
+  "publicNativeOverrides": 36,
+  "existingTomorrow": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaTomorrowDetail.tsx",
+      "bytes": 15281,
+      "sha256": "fccf92d790ae5ecb5aee489fff9c7cf63ce1b5a0fe4f01fc4494829b1f57ce6b"
+    },
+    "preserved": "Existing seven-HOC fccf body is untouched and composed, not replaced with a new store."
+  },
+  "validation": {
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/result.json",
+      "bytes": 40715,
+      "sha256": "4d8f700fe0f427eabb773400dee3649ddb8474217990b9dc568380d3e8ddff82"
+    },
+    "checks": 38,
+    "strictAndSSR": 8,
+    "browser": 30,
+    "pageErrors": 0,
+    "oneBrowserClosed": true,
+    "scope": "ExactD/P sourcepanel/form/input/modelclip bounds, genuinecomparisonfonts, WAAPI source delays/easing/phases, caller cancellation/dedupe, nativeinner-input style forwarding, sourcePhonewrapscroll/reopen, reduced/frozen/unmount/leasecleanup."
+  },
+  "sourceFacts": {
+    "opening": "400ms cubic fader;900msbackground+modeldelays150/250;1000msnamelines610/690/770;rest950;pagepush−200/1200.",
+    "closing": "Wrapper/background900ms;fader720+400ms;1120reset; originalchildentrycontinues insideclosingwrap.",
+    "sourceHTML": "Close inside.modal-wrap; nativecaptionfont10pxfixedPhone. Logicalgraphic422px remainsinside293.390625pxclip.",
+    "sourceReopen": "Source resets backgroundLenis to0 but doesnotreset modal-wrap.scrollTop; preserve independent scroll."
+  },
+  "nativePreparation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-preparation-not-applied.json",
+    "bytes": 5405,
+    "sha256": "7a4c06ae3b72dadf7280f54fb76298f4bbe17c2a46bd6360ee1b0c6138a5bbeb"
+  },
+  "differences": [
+    "Copy/placeholder/body text remain editable. Subtitle is independently paraphrased. No backend, submission or invented success state.",
+    "Original fonts are fixedexternalcomparison inputs only. Current Framer has no NeueHaas/Flecha. NativeCanvas inherits genuineInter/Georgia; liveCSS fallsbackArial/Georgia until manual source-font admission. Actual nativefont painting remains unverified.",
+    "A11y labels, keyboardactivation/focusreturn and reduced/static handling follow projectpolicy; they are not sourceinteraction observations.",
+    "Tablet/intermediate line segmentation is not fully observed; exact1440/390 source correspondence is tested.",
+    "SourcePhonev2 scrolling targeted the wrong root. Current source DOM/code establish wrapownership; actual source touch/scroll/reopen must be confirmed with a shortv3 audit.",
+    "Actual nativeinput/ref/font/WAAPI forwarding and actor coupling require realFramerPreview; local DOM is a facade, notFramernative paint."
+  ],
+  "resources": {
+    "newRenderer": 0,
+    "newOwnRAF": 0,
+    "newAmbientTimer": 0,
+    "finitePhaseTimer": 1,
+    "genuineFields": 3,
+    "actor": "Separate newnamedMechaContactMark shares existingpool/budget; its35-check proof is independent.",
+    "editableModalComposition": 1
+  },
+  "actualFramer": {
+    "sourceRegistered": false,
+    "nativeWritten": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/nix-target-evaluation-receipt.json",
+    "bytes": 443,
+    "sha256": "2d96f3e34b68ef9d3b332cd95ef53dc175799ba16be499915a707475c4cb864f"
+  }
+}
