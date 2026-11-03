@@ -1206,8 +1206,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-intro-clock-provenance.json",
-      "bytes": 4944,
-      "sha256": "b17b35422ec2eb675e9fe1b5685b7631f8ed5e5d3014a081f1ea8e2e0eea5a44"
+      "bytes": 5384,
+      "sha256": "91ab6572ebb2b6b55e064944a96c43b0eea44d6090f3898406ab5ec37367c589"
     },
     "validation": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/validation-receipt.json",

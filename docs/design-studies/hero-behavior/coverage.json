@@ -579,7 +579,7 @@
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
         "bytes": 62422,
-        "sha256": "48260ae0fb35025f79426d82e55f5f5a94dcaa1406b3deb9945251fe02532fb2"
+        "sha256": "d3ab6777d4b39daf42e7b17be2580306374698f6546ac22eacd17a25c05ac107"
       },
       "page": {
         "id": "nKpA0uJHr",
@@ -874,7 +874,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3894,
-    "sha256": "42985497702c0726eb39238e795e6bf3e1bc57fc8bc2fd8cb5bf56c6d4481914"
+    "sha256": "a1b6ff7e3542f2e240aa058f3f82a2b4c2e78fc8c61ecd5335ffc86170f4a85c"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
