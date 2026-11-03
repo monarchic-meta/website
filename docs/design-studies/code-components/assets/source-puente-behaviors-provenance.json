@@ -6,19 +6,63 @@
   "graphicBranch": "https://www.pu-ente.com/z/",
   "actor": {
     "path": "../SourcePuenteBehaviors.tsx",
-    "sha256": "7ba42e994664bd92ba9b8093453d40208281dc57c22dcb53e66f8e18bf2481a6",
-    "bytes": 22084
+    "sha256": "aa0758a5bb692d99f20b24b9a6939bed9727dbba9ad84c701aa586a3a0662d8c",
+    "bytes": 22547
   },
   "sourceFacts": "Current public code supports distinct grayscale palette, fine-pointer half-fill,1.8s split curtain with.12s delay, and clipped16px/26pointtrail. The actual Graphic branch has fifteen static tiles, not autoplay sliders.",
   "adaptations": [
     "Graphic branch is presented within the independent Framer draft instead of separate source routing.",
     "Phone gate geometry is fitted to its assigned native bounds.",
-    "Trail interpolation and curtain easing are independently implemented from source-supported constants."
+    "The native SVG now uses the source quadratic midpoint geometry. A30Hz publication cap, time-normalized0.32 easing and finite rest replace the source continuous Canvas loop; curtain easing remains a fitted cubic."
   ],
   "validation": {
-    "nixOutput": "/nix/store/ypmrb3l2k5l01lrxbyxc7s9bdblrns5f-monarchic-website-source-puente-behaviors-0.0.1",
+    "nixOutput": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/nix-root",
     "nativeActivation": "Public onTap/click/key bridge, duplicate/cancellation and static behavior covered separately by the native-tap matrix.",
-    "framer": "Actual binding, input, source comparison and reload remain separate."
+    "framer": "Actual binding, input, source comparison and reload remain separate.",
+    "priorNixOutput": "/nix/store/ypmrb3l2k5l01lrxbyxc7s9bdblrns5f-monarchic-website-source-puente-behaviors-0.0.1"
   },
-  "resources": "No canvas, WebGL, source behavior imports or runtime asset requests. Native image fills remain individual credited assets."
+  "resources": "No canvas, WebGL, source behavior imports or runtime asset requests. Native image fills remain individual credited assets.",
+  "historicalInitialActor": {
+    "sha256": "7ba42e994664bd92ba9b8093453d40208281dc57c22dcb53e66f8e18bf2481a6",
+    "bytes": 22084,
+    "note": "Initial authoring provenance; the later registered source before this correction is the frozen66971011 actor below."
+  },
+  "quadraticTrailRefinement": {
+    "date": "2026-11-03",
+    "previousActualActor": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/previous-source.tsx",
+      "bytes": 22110,
+      "sha256": "669710110e7167dd09e01cb7b320fe6dc3671e239796024f472b552b568505f3"
+    },
+    "sourceGeometry": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/source-geometry-plan.json",
+      "bytes": 1561,
+      "sha256": "42b892ad9d1c7626ad3c44966e1633fc132bfc47b7a59bb2015d8770783829a7"
+    },
+    "currentActor": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/SourcePuenteBehaviors.tsx",
+      "bytes": 22547,
+      "sha256": "aa0758a5bb692d99f20b24b9a6939bed9727dbba9ad84c701aa586a3a0662d8c"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/validation-receipt.json",
+      "bytes": 5016,
+      "sha256": "c7853af5b9518f96493b3d51c411b0f062af37b2cdfa4822cccdd8e1fe866f4a"
+    },
+    "publicOverrides": 13,
+    "nativeWrites": 0,
+    "behavior": "Curved quadratic midpoint segments preserve the moving26-point stroke; axis-wise0.5px rest and a rounded16px square match retained source implementation facts. Rest drains the tail and stops RAF; native artwork, refs, callbacks, coarse pointers and frozen targets are preserved.",
+    "status": "FOCUSED_NIX_PASSED_ACTUAL_SOURCE_UPDATE_PENDING",
+    "checks": {
+      "static": 6,
+      "browser": 27
+    },
+    "limits": [
+      "Retained public-code facts support the geometry; corresponding live original-source pointer states still need comparison.",
+      "The existing outside-tile white difference cursor is not reconstructed by this finite in-tile change.",
+      "Actual Framer source compilation, native painting, Preview and editor reload remain unverified."
+    ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
+  }
 }

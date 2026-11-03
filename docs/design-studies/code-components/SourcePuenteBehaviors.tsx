@@ -9,8 +9,8 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * colors, split curtain 1.8s/power3.in with a .12s lower delay and .6 viewport
  * displacement; graphic-tile info .3s and blue16px/26-point pointer trail.
  * These are code-supported, not newly browser-observed archive interactions.
- * No original source behavior JS is reused. SVG polyline trail interpolation
- * is a declared approximation to the source Canvas's quadratic curve.
+ * No original source behavior JS is reused. The SVG trail expresses the
+ * source's quadratic midpoint geometry while retaining the native artwork.
  * The CSS cubic curtain curve approximates the source GSAP power3.in ease.
  *
  * One Experience parent contains GateStage and GraphicGallery. Gate contains
@@ -76,6 +76,15 @@ function isFrozen() {
 function foreground(color: string) {
     const r = parseInt(color.slice(1, 3), 16), g = parseInt(color.slice(3, 5), 16), b = parseInt(color.slice(5, 7), 16)
     return Math.sqrt(.299 * r * r + .587 * g * g + .114 * b * b) < 140 ? "#ffffff" : "#1b1b1b"
+}
+function projectTrailPath(points: Point[]) {
+    if (points.length < 2) return ""
+    const first = points[0], last = points[points.length - 1]
+    const curves = points.slice(1, -2).map((point, index) => {
+        const next = points[index + 2]
+        return `Q${point.x},${point.y} ${(point.x + next.x) / 2},${(point.y + next.y) / 2}`
+    })
+    return `M${first.x},${first.y} ${curves.join(" ")} L${last.x},${last.y}`
 }
 function nextCombo(): Combo {
     const pool = PALETTE.slice()
@@ -226,7 +235,7 @@ export function withPuenteProjectTile(Component: ComponentType<LayerProps>): Com
                 current.current = { x: from.x + (to.x - from.x) * mix, y: from.y + (to.y - from.y) * mix }
                 const head = current.current, last = points.current[points.current.length - 1]
                 if (!last || Math.hypot(head.x - last.x, head.y - last.y) > 1.5) points.current = [...points.current, { ...head }].slice(-26)
-                const moving = Math.hypot(to.x - head.x, to.y - head.y) > .5
+                const moving = Math.abs(to.x - head.x) > .5 || Math.abs(to.y - head.y) > .5
                 if (!moving && points.current.length > 1) points.current = points.current.slice(1)
                 if (now - published.current >= 1000 / 30) { published.current = now; setTrail(points.current.slice()) }
                 if (moving || points.current.length > 1) pending.current = requestAnimationFrame(tick)
@@ -241,8 +250,8 @@ export function withPuenteProjectTile(Component: ComponentType<LayerProps>): Com
             onPointerEnter={(event: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(event); if (!event.defaultPrevented && event.pointerType !== "touch" && s.fine) { setHovered(true); update(event) } }}
             onPointerMove={(event: React.PointerEvent<HTMLElement>) => { props.onPointerMove?.(event); if (!event.defaultPrevented) update(event) }}
             onPointerLeave={(event: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(event); setHovered(false); stop() }}
-        >{props.children}{head && <svg aria-hidden="true" data-source-puente-trail="polyline-adaptation" width="100%" height="100%" style={{ position: "absolute", inset: 0, pointerEvents: "none", overflow: "hidden", zIndex: 9998 }}>
-            {trail.length > 1 ? <polyline points={trail.map(p => `${p.x},${p.y}`).join(" ")} fill="none" stroke="#0057ff" strokeWidth={16} strokeLinejoin="round" strokeLinecap="butt" /> : <rect x={head.x - 8} y={head.y - 8} width={16} height={16} fill="#0057ff" />}
+        >{props.children}{head && <svg aria-hidden="true" data-source-puente-trail="quadratic-source-fit" width="100%" height="100%" style={{ position: "absolute", inset: 0, pointerEvents: "none", overflow: "hidden", zIndex: 9998 }}>
+            {trail.length > 1 ? <path d={projectTrailPath(trail)} fill="none" stroke="#0057ff" strokeWidth={16} strokeLinejoin="round" strokeLinecap="butt" /> : <rect x={Math.round(head.x - 8)} y={Math.round(head.y - 8)} width={16} height={16} fill="#0057ff" />}
         </svg>}</Component></TileContext.Provider>
     })
 }
