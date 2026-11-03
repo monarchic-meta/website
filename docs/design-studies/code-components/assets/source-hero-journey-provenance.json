@@ -107,8 +107,8 @@
     },
     "main": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
-      "sha256": "7d980376a919b95d3154c4b3f2e82746bcf94389f9284b5fe3984be14e20d3a1",
-      "bytes": 95330
+      "bytes": 101953,
+      "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
     },
     "sourceWebsiteBehaviorJSReused": false,
     "publicSchema": {
@@ -130,7 +130,7 @@
       "canvasPixels": 1000000,
       "serialStillPixels": 2000000,
       "overview": "Retained Canvas2D committed-frame overview",
-      "privateArtworkRevision": "current-source-travel-head-turn-settling-v1",
+      "privateArtworkRevision": "current-source-phased-input-handoff-v2",
       "keyedPrivateMount": true
     },
     "sourceEvidence": {
@@ -243,7 +243,10 @@
         "wording": "Existing independently authored biography lines repeated to match source line mass; not a verified paraphrase of the full source biography.",
         "wheelPixelsPerPixel": 1,
         "mouseDragPixelsPerPixel": 0.2,
-        "sourceTurnDegreesPerPixel": 0.22
+        "sourceTurnDegreesPerPixel": 0.22,
+        "handoffAt": 0.84,
+        "handoffTravel": 2071.44,
+        "settlingTimeConstantSeconds": 0.02
       },
       "whiteMask": {
         "travel": 300,
@@ -279,7 +282,8 @@
           "maximumQueuedTurns": 4,
           "additivePoseAndExactBaseRestoration": true
         },
-        "scrollPose": "Fitted base yaw; source strip miniature rotation uses 0.06 degrees per head-travel pixel."
+        "scrollPose": "Fitted base yaw; source strip miniature rotation uses 0.06 degrees per head-travel pixel.",
+        "settlingTimeConstantSeconds": 0.02
       },
       "footer": {
         "admissionFractionOfHeadTravel": 0.59,
@@ -296,12 +300,13 @@
         "headClickWhileAmbientPaused": true,
         "reverse": true,
         "keyboard": "Arrow/Home/End/Page navigation and Enter head-turn are explicit accessibility extensions.",
-        "phone": "Existing full Phone journey and touch navigation retained as an adaptation; the current original instead shows a desktop-preferred notice."
+        "phone": "Existing full Phone journey and touch navigation retained as an adaptation; the current original instead shows a desktop-preferred notice.",
+        "phaseTargets": "Copy→mask→head targets accept the same source-order gesture, using retained84% copy admission,300px mask, mask-target hold and rendered90% white gate; reverse head travel blocks mask rewind. Normalized start/poster coordinates remain independent authoring seeks."
       },
-      "frameValidity": "Actual progress, independent mask/footer transition plans, head-turn queue and artwork revision participate in the unmodified shared content key; the keyed private surface invalidates old renderer factories on HMR."
+      "frameValidity": "Actual private copy/mask/head plans, mask/footer easing, head-turn queue and artwork revision enter the unmodified shared content key. Committed bitmap travel metadata updates the existing DOM copy/columns, with no new scheduler/coordinator."
     },
     "limits": [
-      "The retained source code permits copy-to-white overlap at 84% copy travel. The large-wheel audit reached full 2466px before the white phase. This finite recreation follows the measured full-span progression; it does not claim exact early-overlap/wheel-history equivalence.",
+      "Phase thresholds/filter constants now come from retained original public code, not a fresh original-site input audit. Separate target/current gates replace the former full-span concatenation. Browser event-loop latency, continuous between-input timing and fitted render sampling remain explicit.",
       "Absolute model camera, ambient audit orientation and between-state head pose remain independently fitted; genuine existing source meshes are preserved.",
       "The source geographic/dotted ground data has not been identified. The existing independent dithered terrain remains an explicit material/composition approximation.",
       "PP Supply Sans and PP Supply Mono are preferred CSS family names; no font file is bundled or newly uploaded. Local fallback typography and text width differ.",
@@ -310,37 +315,155 @@
       "Head drag, x-ray brush, dormant clock and complete work/gallery/error routes are outside this finite implementation. Pointer strength remains zero by default.",
       "The strip, footer and copy remain component-owned DOM because they are continuously coupled to the virtual scene. Existing native outer source credits remain separate.",
       "Source readouts observed during a slow software browser session do not establish exact real-time completion of every source filter or camera phase.",
-      "Actual Framer moving paint, saved module graph and editor reload are separate gates and remain pending while connected browser automation is disabled."
+      "Actual Framer moving paint, saved module graph and editor reload are separate gates and remain pending while connected browser automation is disabled.",
+      "Current public390×844 Phone source shows the desktop-preferred notice and does not mount the story. This retained responsive full-journey component, its touch factor2.4 and lack of source touch momentum remain an adaptation; source-code touch speed1.6/friction.94/minVel.4 is distinct evidence, not a newly observed live Phone journey."
     ],
     "validation": {
-      "strictCommand": "pnpm run check:source-hero-journey-study",
-      "browserCommand": "pnpm run check:source-hero-journey-browser",
-      "browser": "Actual React18.3.1 DOM, Canvas2D and software WebGL; two layouts and old/new shared-pool leaders.",
+      "strictCommand": "nice -n10 lockedNode22 scripts/check-source-hero-journey-study.mjs",
+      "browserCommand": "MONARCHIC_JOURNEY_EVIDENCE_DIR=validation-fbbcb38f/browser PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=lockedChromium147 nice -n10 lockedNode22 scripts/check-source-hero-journey-browser.mjs",
       "tests": [
         {
           "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-study.mjs",
-          "sha256": "a11e96257aa97ea6310815805d5a245ec334f35dac3321d9d325b431a2efff7c",
-          "bytes": 13850
+          "bytes": 17508,
+          "sha256": "124ac06559d6d84fca1aeff716ab5b8b5e8e5b0834e19131873570864618e488"
         },
         {
           "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-browser.mjs",
-          "sha256": "4abf0934bf89fa2e9eedd631787654103692d90c0654e220cd6cb04960e77fda",
-          "bytes": 17051
+          "bytes": 19880,
+          "sha256": "d2418f1d7998fb96526065419c187e1f22d7eb388cb62455febab9c01524ba18"
         }
       ],
-      "status": "Local strict12 groups and both actual React/browser layouts passed on the exact frozen source/tests. Locked Nix evidence is retained externally; actual Framer moving paint/reload remains pending.",
-      "localStrictGroups": 12,
+      "status": "Exact frozen phased-input source passed16 semantic/helper groups and both existing React/browser layouts once, including the focused real-wheel forward/reverse gates. No full-site/integration rerun or fresh original-source input audit.",
+      "strictResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/strict-result.json",
+        "bytes": 2578,
+        "sha256": "0a6b743e65efa3be3a9c7bcf7377d60b4723ff9012002e0ddad3b9ed9d7725f0"
+      },
+      "browserResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/browser/result.json",
+        "bytes": 51364,
+        "sha256": "df6d5c6a3484d7ffacb9a8e568c1a2c25c0c18dac78744cae72b43004dce5639"
+      },
+      "pending": false,
+      "localStrictGroups": 16,
       "localBrowserLayouts": [
         {
+          "name": "desktop",
           "width": 1280,
-          "height": 720,
-          "leader": "new Journey v2"
+          "height": 720
         },
         {
+          "name": "phone",
           "width": 390,
-          "height": 800,
-          "leader": "unchanged old SourceHeroPageStudy v2 first"
+          "height": 800
         }
+      ],
+      "nodeVersion": "22.22.2",
+      "chromiumVersion": "147.0.7727.116",
+      "actualFramerTransferred": false,
+      "actualFramerPreviewVerified": false
+    },
+    "priorNormalizedInput": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/SourceHeroJourneyStudy-prior-7d980376.tsx",
+      "bytes": 95330,
+      "sha256": "7d980376a919b95d3154c4b3f2e82746bcf94389f9284b5fe3984be14e20d3a1"
+    },
+    "phasedInputCorrection": {
+      "schema": "source-phased-input-correction.v1",
+      "status": "LOCALLY_VALIDATED_PENDING_FRAMER",
+      "sourceObservation": "Retained2026-11-01 public code and captures only; no new browser, fetch or source input audit.",
+      "prior": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/SourceHeroJourneyStudy-prior-7d980376.tsx",
+        "bytes": 95330,
+        "sha256": "7d980376a919b95d3154c4b3f2e82746bcf94389f9284b5fe3984be14e20d3a1"
+      },
+      "sourceEvidence": [
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/about-text.js",
+          "bytes": 23996,
+          "sha256": "8630c472072ccee2223ed10b4b7b384b4857089c9f5816227e0e8f4472225fdd"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/mask-scroll.js",
+          "bytes": 95309,
+          "sha256": "7956111c70a7b36058164807ccad2c9b10a5e85b1fc8109ff8a5c07a80441d88"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/block2.js",
+          "bytes": 31105,
+          "sha256": "af0edff68dc45e1069594d59c885870bc8af4c9200a2b88472048a554019e906"
+        },
+        {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/primary-code/touch-scroll.js",
+          "bytes": 6224,
+          "sha256": "f9b3cb827c2901a97c62001f4b34dd7b7c34a84118cd58991abe5bebd8994432"
+        }
+      ],
+      "targets": {
+        "copyMax": 2466,
+        "copyHandoffAt": 0.84,
+        "copyTauSeconds": 0.02,
+        "maskTravel": 300,
+        "maskTauSeconds": 0.5,
+        "headForwardGateRenderedMask": 0.9,
+        "reverseMaskGateHeadPixels": 0.5,
+        "copyHoldMaskTargetPixels": 0.5,
+        "headTauSeconds": 0.02
+      },
+      "noNewScheduler": true,
+      "publicControls": 13,
+      "geometryHelpersUnchanged": true,
+      "sharedCoordinatorUnchanged": true,
+      "actualFramerTransferred": false,
+      "actualFramerPreviewVerified": false,
+      "localValidationPending": false,
+      "priorValidation": {
+        "strictCommand": "pnpm run check:source-hero-journey-study",
+        "browserCommand": "pnpm run check:source-hero-journey-browser",
+        "browser": "Actual React18.3.1 DOM, Canvas2D and software WebGL; two layouts and old/new shared-pool leaders.",
+        "tests": [
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/check-source-hero-journey-study-prior-a11e9625.mjs",
+            "bytes": 13850,
+            "sha256": "a11e96257aa97ea6310815805d5a245ec334f35dac3321d9d325b431a2efff7c"
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/check-source-hero-journey-browser-prior-4abf0934.mjs",
+            "bytes": 17051,
+            "sha256": "4abf0934bf89fa2e9eedd631787654103692d90c0654e220cd6cb04960e77fda"
+          }
+        ],
+        "status": "The previous normalized-input12-group/browser receipts remain historical. The source-derived phased-input delta is awaiting its single authorized focused validation; no current pass is claimed yet.",
+        "localStrictGroups": 12,
+        "localBrowserLayouts": [
+          {
+            "width": 1280,
+            "height": 720,
+            "leader": "new Journey v2"
+          },
+          {
+            "width": 390,
+            "height": 800,
+            "leader": "unchanged old SourceHeroPageStudy v2 first"
+          }
+        ],
+        "previousNormalizedInputStatus": "Local strict12 groups and both actual React/browser layouts passed on the exact frozen source/tests. Locked Nix evidence is retained externally; actual Framer moving paint/reload remains pending."
+      },
+      "preservation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/preservation-delta.json",
+        "bytes": 1127,
+        "sha256": "2409d2f8632ad1a96fe3055cce563684cd838d980169faeb5b30a9d32c5128e8"
+      },
+      "sourceSnapshot": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/SourceHeroJourneyStudy-fbbcb38f.tsx",
+        "bytes": 101953,
+        "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
+      },
+      "observationLimits": [
+        "No new source fetch/browser/input audit; thresholds derive from retained2026-11-01 public code and captures.",
+        "Source browser listener/paint ordering and continuous sampling latency are fitted; the helper processes source-order target gates on the existing managed clock.",
+        "2466px copy extent remains the prior1440×900 source reference; public poster/start coordinates and narrow full-story adaptation remain unchanged.",
+        "Original public Phone390×844 notice remains distinct from the retained responsive full-journey adaptation; its touch2.4/no-momentum behavior is not promoted as the original source path."
       ]
     }
   }
