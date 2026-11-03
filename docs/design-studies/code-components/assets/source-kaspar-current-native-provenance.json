@@ -192,11 +192,18 @@
       "newPublicHOCs": 0,
       "asciiRendererOrDataChanged": false,
       "sharedResourceCoordinatorChanged": false,
-      "actualFramerSourceUpdate": false,
-      "actualFramerSavedReadback": false,
+      "actualFramerSourceUpdate": true,
+      "actualFramerSavedReadback": true,
       "actualFramerPreview": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "readbackScope": "Exact source/catalog/native model after authoring; actual moving Preview and editor reload remain unverified."
     },
-    "nativeIndentBoundary": "Existing Preview uses source25% first-line CSS indent. Retained current NodeProperties docs537/539 do not positively expose a native indentation setter; no guessed native property/write. This does not establish that no such API exists."
+    "nativeIndentBoundary": "Existing Preview uses source25% first-line CSS indent. Retained current NodeProperties docs537/539 do not positively expose a native indentation setter; no guessed native property/write. This does not establish that no such API exists.",
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H5-final-actual-source-receipt.json",
+      "bytes": 3587,
+      "sha256": "190167e8a3083d0ab734cd1b53824722f40bd1c4d4ec385bd8794de667d5bc7d"
+    },
+    "currentStatus": "SOURCE_COMPILE_CLEAN_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING"
   }
 }

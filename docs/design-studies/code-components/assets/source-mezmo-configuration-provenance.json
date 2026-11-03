@@ -37,12 +37,17 @@
     "The existing terminal transcript and timing remain independently summarized. The existing five public controls and default export are preserved.",
     "Four alternate canned scenarios exist behind a hidden source select; no visible scenario chooser is invented from that catalog. Header dropdowns and other user-accessible terminal branches remain separate work."
   ],
-  "currentStatus": "LOCAL_FULL_REGRESSION_PASSED_TRANSFER_PENDING",
+  "currentStatus": "SOURCE_COMPILE_CLEAN_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
   "actualFramerPreviewVerified": false,
   "afterEditorReload": false,
   "fullRegression": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-nix-full-regression/validation-receipt.json",
     "bytes": 2079,
     "sha256": "80aea577d6995bf2a06ccad78e9ab7824e227404b723c4b52138026d746f1db5"
+  },
+  "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H12-final-actual-source-receipt.json",
+    "bytes": 1979,
+    "sha256": "3529b04e15b616eae3bc006c670b44fd4ddc103a7d1c6a182762748df69b36bf"
   }
 }

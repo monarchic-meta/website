@@ -414,7 +414,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "FULL_GUIDE_NATIVE_MODEL_AND_STATIC_PAINT_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
+    "status": "FULL_GUIDE_NATIVE_INPUTS_MODEL_CONFIRMED_PREVIEW_AND_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/full-current-guide-prepared/compatibility-inert/final-compatibility-proof.json",
       "bytes": 1879,
@@ -431,10 +431,11 @@
       5,
       3
     ],
-    "behavior": "Complete current guide:11chapters,31figure plates,43rail buttons,10contents cards, query/navigation controls, first-view SVG construction, three continuing diagrams and genuine film provider.815parts in each true Desktop/Compact/Phone root. Local checks and saved-model readbacks do not establish actual Framer motion.",
+    "behavior": "Complete retained guide:11chapters,31figure plates,43rail buttons,10contents cards, query/navigation controls, first-view SVG construction, three continuing diagrams and genuine film provider. The815 retained parts in each true Desktop/Compact/Phone root now have four additional native early-access input nodes per root. Local checks and model readbacks do not establish actual Framer motion or typing.",
     "next": [
       "Verify actual native SVG DOM forwarding, genuine provider controls and full moving sequence in Framer Preview.",
-      "Verify persistence in the actual editor after reload."
+      "Verify persistence in the actual editor after reload.",
+      "Verify all four actual native inputs accept typing in each relevant Preview layout, including labels, required/url/email semantics and hidden placeholders."
     ],
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-polar-guide-current-provenance.json",
@@ -546,6 +547,57 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-static-state-353/visual-review.json",
       "bytes": 2561,
       "sha256": "5d33f85f233d03d71993ea34f9ed461d917fdb8413e5d01d0bc78df3ddfad893"
-    }
+    },
+    "nativeEarlyAccessInputs": {
+      "date": "2026-11-03",
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-input-expansion-planning-v1/final-actual-authoring-receipt.json",
+        "bytes": 3427,
+        "sha256": "4d6d2b611b1f94902f7049dc7435a130385f6c19335e91aa4d89dcb3a631c84c"
+      },
+      "actualNodeMap": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO003/native-input-expansion-planning-v1/final-actual-native-four-field-map.json",
+        "bytes": 2938,
+        "sha256": "43fed3e5d8d24f1e9bd96a0f49606e5c0ceda43101ad50055a398c907ad8aeed"
+      },
+      "inputType": "FormPlainTextInputNode",
+      "logicalFields": 4,
+      "physicalCopies": 12,
+      "fields": [
+        {
+          "name": "startupName",
+          "type": "text",
+          "placeholder": "Acme, Inc"
+        },
+        {
+          "name": "website",
+          "type": "url",
+          "placeholder": "https://yourcompany.com"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "you@company.com"
+        },
+        {
+          "name": "contactName",
+          "type": "text",
+          "placeholder": "Jane Doe"
+        }
+      ],
+      "nativeFont": "PP Neue Montreal Variable / normal /400",
+      "desktopCompactMetrics": "14px /20px",
+      "phoneMetrics": "16px /24px",
+      "preservation": "All original Frames, labels, placeholder IDs/text/fonts/parents remain; only twelve old placeholder visibility fields are false. Removing the twelve new input nodes and restoring those twelve fields reproduces the exact previous owner fb4.",
+      "sourceAndControlsUnchanged": true,
+      "submission": "No Form/action/backend/source/HOC added. Existing original-site exits remain unchanged.",
+      "nativeBorder": "Literal native border plus all width getters are0px; missing-width linter warning contradicts those complete zero-width getters and was not retried.",
+      "semanticLabel": "Generic ariaLabel was rejected by the actual native input type and remains absent. The actual accessible name/label association is unverified; unsupported attributes were not retried.",
+      "actualNativePaintVerified": false,
+      "actualTypingVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "staticPaintScope": "The four earlier native images in staticPaintReview precede the new inputs. They do not verify current field paint, hidden-placeholder paint or typing."
   }
 }

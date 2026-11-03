@@ -7,32 +7,34 @@
   "publicOverride": "withVisibleNativeVideo",
   "source": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
-    "bytes": 9710,
-    "sha256": "a3069ce29ee44fb831816355314d263a3419b6f0ae8ce2ca8aa7ac8618e36bc3"
+    "bytes": 10555,
+    "sha256": "d79f16963bd4b1d41ce6dcf7b04acbffaf7c981abd1a70fc5dcd85004f8553d6"
   },
   "test": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-native-video-visibility.mjs",
-    "bytes": 26160,
-    "sha256": "64181dc64c15c20cef6568f2ed35f1c9dd48c791bd3906ebdb331742a24d102f"
+    "bytes": 31441,
+    "sha256": "d901fe75fca5dd9b846800ff3c9b486aee6877c4ac98b5a640215df462d60508"
   },
   "validation": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
-    "bytes": 3311,
-    "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/manual-video-mode-d79f1696/validation-receipt.json",
+    "bytes": 5333,
+    "sha256": "67508923cc66e55927ed9f10ff501de9de9e4a095d19f9760cf2d4365d773951"
   },
   "behavior": [
     "Retain the existing native video, its source/poster/loop/mute/controls and caller events.",
     "Admit playback only for a visible host and video, a visible document and a permitted motion target. Freeze Canvas/export/thumbnail/reduced motion.",
     "Retain native manual Pause across viewport, video and host replacement; release observers/listeners and prevent late Play from escaping suspension.",
     "Create no media element, decoder, canvas, timer or animation loop.",
-    "Recheck settled CSS transition/animation paint through scoped completion events; no polling or extra clock."
+    "Recheck settled CSS transition/animation paint through scoped completion events; no polling or extra clock.",
+    "The explicit manual override waits for an admitted native Play before starting media; hidden Play is rejected, previous unpaused playback may resume on viewport return, and manual Pause remains latched."
   ],
   "integrationBoundary": [
     "The native Framer Video forwards a Playing control but its runtime playing prop and HTMLElement ref bridge have not been observed.",
-    "Keep serialized Playing true while testing the override bridge. If the live host is not forwarded, retain the caller playback value.",
-    "A native-like React fixture is not proof of actual native Framer offscreen suspension or idle editor behavior."
+    "Keep serialized Playing true on the two existing Mac Moss autoplay loops while testing their host bridge; live automatic mode fails open to caller playback if no host is forwarded. New manual studies instead retain serialized Playing false and require an available native Play control.",
+    "A native-like React fixture is not proof of actual native Framer offscreen suspension or idle editor behavior.",
+    "Manual mode needs a native Play affordance while Playing=false; a player that mounts its sole affordance only when Playing=true cannot bootstrap this mode."
   ],
-  "currentStatus": "SOURCE_COMPILE_CLEAN_TWO_NATIVE_BINDINGS_CONFIRMED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
+  "currentStatus": "TWO_HOC_COMPILE_CLEAN_OLD_BINDINGS_PRESERVED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
   "actualFramerPreviewVerified": false,
   "afterEditorReload": false,
   "priorValidation": {
@@ -46,9 +48,21 @@
     "sha256": "95b057c333fdd1c37ff47049c07b23b1cd48384793fdc6cb9770be87bc69dd77"
   },
   "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/manual-video-helper-actual548/final-actual-authoring-receipt.json",
+    "bytes": 2518,
+    "sha256": "19f34a6807bfa8619f7fbdbdd44de3c5caa5aa32bc9f99abc29cd3181461b97b"
+  },
+  "registeredOverride": "codeFile/ggQ_udg:withVisibleNativeVideo",
+  "automaticOnlyValidation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
+    "bytes": 3311,
+    "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+  },
+  "publicManualOverride": "withVisibleManualNativeVideo",
+  "registeredManualOverride": "codeFile/ggQ_udg:withVisibleManualNativeVideo",
+  "automaticCSSCompletionAuthoring": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-CSS-completion-final-authoring-receipt.json",
     "bytes": 3787,
     "sha256": "3d0bc5e777e918216835ddda5ae15299734308a0675913efd14ea453cf0bde10"
-  },
-  "registeredOverride": "codeFile/ggQ_udg:withVisibleNativeVideo"
+  }
 }

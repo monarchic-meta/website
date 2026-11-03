@@ -72,7 +72,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CURRENT_PAGE_AND_RETAINED_HEADER_MODEL_CONFIRMED",
+    "status": "CONFIGURATION_SOURCE_UPDATED_HEADER_MODEL_RETAINED_PREVIEW_AND_RELOAD_PENDING",
     "page": {
       "id": "A2ZhTsALK",
       "desktop": "KlPcKpJsq",
@@ -100,6 +100,65 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/313-HERO-012-exact-color-rebased-headers/output.json",
       "bytes": 497242,
       "sha256": "ca3eaf1d50d1c3068ae468f47ef7f4be24471ddd013f13fef247e5dc5bb54fe5"
+    },
+    "configurationDrawer": {
+      "status": "SOURCE_COMPILER_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_PENDING",
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mezmo-configuration-provenance.json",
+        "bytes": 3611,
+        "sha256": "ae48a40a87b885e8c55376c94320fae31d91568253cfdde91a5ea265994f36a1"
+      },
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
+        "bytes": 33814,
+        "sha256": "8a3a2fcfa3beae9910a66c4dd2526cdd0130883cc48d7f79f578103512641e9f"
+      },
+      "validation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-source-typography/validation-receipt.json",
+        "bytes": 2556,
+        "sha256": "99ba764e295782572d5a45d6cd2be53300c424de4ab0e10230ec7824ebf75e1f"
+      },
+      "fullRegression": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-nix-full-regression/validation-receipt.json",
+        "bytes": 2079,
+        "sha256": "80aea577d6995bf2a06ccad78e9ab7824e227404b723c4b52138026d746f1db5"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H12-final-actual-source-receipt.json",
+        "bytes": 1979,
+        "sha256": "3529b04e15b616eae3bc006c670b44fd4ddc103a7d1c6a182762748df69b36bf"
+      },
+      "behavior": "Viewport-level 720px/96vw source drawer at y100, complete 266-line inert public configuration, 180 ms motion with Escape/backdrop close, 1200 ms Copy feedback, source syntax/header emphasis and reduced-motion interruption cleanup. Native headers retain their 94/78px dimensions and z20; the portal backdrop clips below them.",
+      "publicControls": 5,
+      "defaultRows": 1,
+      "placements": 3,
+      "nativeWrites": 0,
+      "sourceDataExecuted": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "headerNavigationSourceAudit": {
+      "date": "2026-11-03",
+      "observedBrief": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-audit-v1/observed-brief.json",
+        "bytes": 14102,
+        "sha256": "f342d74cf784a616a11c46f75bcf5fb89af448850d2d182def33ec58c697d7c2"
+      },
+      "scope": "One browser, strictly serial fresh anonymous Desktop-fine and Phone-touch contexts;70 corresponding observations/16 action groups/errors0. No Framer, accounts, external submissions or desktop/IAB.",
+      "observed": [
+        "Desktop hover opens all four groups, list hover retains and pointer leave closes. Focus alone stays closed; Enter opens, ArrowDown reaches first link, Escape closes/restores trigger.",
+        "Desktop visible link counts3/6/9/6 versus25 DOM entries; Customers is hidden only on Desktop.",
+        "Nav remains at992 and changes to the78px hamburger header at991.",
+        "Phone has a light358px card at x16/y94 below the78px header, with a70vh cap; one group opens at a time and About includes Customers.",
+        "Escape while a Phone group is open closes that group, not the main menu. Hamburger closes the main menu and remains a three-line glyph."
+      ],
+      "unobserved": [
+        "Second/main-only Escape, outside-close, short-height touch scroll/body behavior and expanded Compact992 card geometry.",
+        "Body overflow getter remained visible and tested inner scrollTop stayed0 while content fit; neither establishes touch-scroll locking."
+      ],
+      "implementationStatus": "SOURCE_AUDITED_NATIVE_RECREATION_PENDING",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }

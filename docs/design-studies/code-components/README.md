@@ -48,6 +48,14 @@ pauses hidden/offscreen playback, and retains a manual Pause across viewport
 and host changes. Canvas, export, thumbnail and reduced motion request stills;
 the override creates no decoder, canvas, timer or animation loop.
 
+Use `withVisibleManualNativeVideo` for source media that should wait for Play.
+It keeps Playing disabled until an admitted native Play event, retains manual
+Pause across viewport/host changes, and can resume previously started media
+when it returns to view. The original override manages autoplay source loops.
+Both use the same visibility and cleanup implementation. The native player's
+Play controls must remain available while Playing is disabled; this still
+requires verification on the actual Framer instances.
+
 The [provenance](assets/source-native-video-visibility-provenance.json) records
 the focused Nix check and the integration boundary. The native-like React test
 does not prove Framer's native host-ref or Playing-prop bridge. Keep serialized

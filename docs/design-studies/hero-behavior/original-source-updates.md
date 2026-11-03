@@ -20,11 +20,18 @@ Preview checks; all eighteen references are not approved for close fidelity.
   MCP526. Sixteen semantic groups and both real-wheel browser layouts pass;
   the same two isolated helper-import diagnostics remain unresolved. Its
   thirteen controls, both placements and entire native owner are preserved.
-- Mac Moss's existing Eco videos have a visibility override through MCP534,
-  with zero source diagnostics and only two override bindings changed. The
-  focused Nix check passes 39 lifecycle cases, including completed CSS fades.
+- Mac Moss's existing Eco videos have the shared automatic/manual visibility
+  helper through MCP549, with zero source diagnostics and both original
+  bindings preserved. The focused Nix check passes 59 lifecycle cases.
   Actual native host/Playing forwarding, offscreen suspension and idle Canvas
   remain unverified; serialized Playing stays enabled pending that observation.
+- Polar's four early-access fields are now genuine native inputs in all three
+  layouts through MCP547. Their fonts/semantics and retained hidden placeholder
+  layers are read back; actual typing, accessible names and paint remain open.
+- Mezmo's viewport-level configuration drawer is authored through MCP551, with
+  the complete 266-line public display data, source typography and reversible
+  closing behavior. Kaspar's delayed gallery-height sequence is authored through
+  MCP553. Both sources compile cleanly and preserve their existing native owners.
 
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.

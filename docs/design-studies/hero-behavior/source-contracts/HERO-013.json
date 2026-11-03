@@ -967,7 +967,7 @@
     ],
     "currentMobileSourceExperience": {
       "source": {
-        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/root-reviewed-host-fix-v2/SourceFormatDetails.tsx",
         "bytes": 119864,
         "sha256": "0f32c3821d3cf987ef9b16bd183dc61779804f2310cecb1d2c265a5fc2f6d507"
       },
@@ -994,7 +994,8 @@
       "allOutsidePreserved": true,
       "actualPaintVerified": false,
       "actualFramerPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "sourceScope": "Frozen source delivered for the 129-override mobile experience; later photo and word-entry work is tracked separately."
     }
   }
 }

@@ -77,27 +77,27 @@
   "nativeVideoLifecycleUpdate": {
     "date": "2026-11-03",
     "classification": "Source inspiration / native playback resource adaptation",
-    "status": "SOURCE_COMPILE_CLEAN_TWO_BINDINGS_CONFIRMED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
+    "status": "TWO_HOC_COMPILE_CLEAN_OLD_BINDINGS_PRESERVED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
     "implementation": "../../code-components/SourceNativeVideoVisibility.tsx",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-native-video-visibility-provenance.json",
-      "bytes": 3538,
-      "sha256": "31286eeb194a57768b40d4788ac78c1a0f729a47f8b0d0c6a40939e3dc8414b0"
+      "bytes": 4941,
+      "sha256": "efa4d5e7eccb0f310b36ab18f2d663f31f706af245996b0f6a6126db7b860fd0"
     },
     "source": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
-      "bytes": 9710,
-      "sha256": "a3069ce29ee44fb831816355314d263a3419b6f0ae8ce2ca8aa7ac8618e36bc3"
+      "bytes": 10555,
+      "sha256": "d79f16963bd4b1d41ce6dcf7b04acbffaf7c981abd1a70fc5dcd85004f8553d6"
     },
     "validation": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
-      "bytes": 3311,
-      "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/manual-video-mode-d79f1696/validation-receipt.json",
+      "bytes": 5333,
+      "sha256": "67508923cc66e55927ed9f10ff501de9de9e4a095d19f9760cf2d4365d773951"
     },
     "actualAuthoring": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-CSS-completion-final-authoring-receipt.json",
-      "bytes": 3787,
-      "sha256": "3d0bc5e777e918216835ddda5ae15299734308a0675913efd14ea453cf0bde10"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/manual-video-helper-actual548/final-actual-authoring-receipt.json",
+      "bytes": 2518,
+      "sha256": "19f34a6807bfa8619f7fbdbdd44de3c5caa5aa32bc9f99abc29cd3181461b97b"
     },
     "registeredOverride": "codeFile/ggQ_udg:withVisibleNativeVideo",
     "nativeTargets": [
@@ -105,12 +105,24 @@
       "z4OuTgh0unOy3uJOKl"
     ],
     "preservation": "Only two native codeOverride bindings changed. Serialized Playing:true, source/poster/loop/mute/controls, geometry and the rest of each native owner remain intact.",
-    "localChecks": 39,
+    "localChecks": 59,
     "actualNativeHostAndPlayingBridgeVerified": false,
     "actualOffscreenSuspensionVerified": false,
     "idleCanvasVerified": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "next": "Observe native host-ref/Playing forwarding and actual visible/offscreen/manual-pause/reduced/static behavior before changing serialized Playing or calling the real video lifecycle fixed."
+    "next": "Observe native host-ref/Playing forwarding and actual visible/offscreen/manual-pause/reduced/static behavior before changing serialized Playing or calling the real video lifecycle fixed.",
+    "priorAutomaticAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-CSS-completion-final-authoring-receipt.json",
+      "bytes": 3787,
+      "sha256": "3d0bc5e777e918216835ddda5ae15299734308a0675913efd14ea453cf0bde10"
+    },
+    "priorAutomaticValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
+      "bytes": 3311,
+      "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+    },
+    "registeredManualOverride": "codeFile/ggQ_udg:withVisibleManualNativeVideo",
+    "manualPolicy": "The additional manual override waits for a native Play event; its first intended use is the new HERO-015 sheet. This does not establish the actual native host/control/Playing bridge."
   }
 }

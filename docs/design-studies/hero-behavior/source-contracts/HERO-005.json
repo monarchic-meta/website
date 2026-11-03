@@ -237,7 +237,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_STATIC_PAINT_CHECKED_PREVIEW_AND_RELOAD_PENDING",
+    "status": "GALLERY_TIMING_SOURCE_UPDATED_NATIVE_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/current-native-detail/final-v2/final-source-receipt.json",
       "bytes": 5303,
@@ -268,12 +268,43 @@
       "sourceDiagnosticsClean": true,
       "actualNativeStaticPaintVerified": true,
       "actualFramerPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "scope": "Historical native geometry and first source delivery. The later galleryHeightTiming receipt supersedes the source hash while preserving this owner and its thirteen override bindings."
     },
     "intentionalDifferences": [
       "Native Inter115/80/50 substitutes unavailable native Bugrino; sourcePreview realBugrinoCSS unchanged and unverified in actualPreview.",
       "Native firstline25%indent absent; runtime sourcehelper retainsit.",
       "Opening and firstportfolio/project/photos, not fullportfolio."
-    ]
+    ],
+    "galleryHeightTiming": {
+      "status": "SOURCE_COMPILER_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_PENDING",
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-kaspar-current-native-provenance.json",
+        "bytes": 12856,
+        "sha256": "8da9ece2a407086ed5a7eb65cd6ef38c0b693be85540e1765c189f61ad833c7b"
+      },
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceKasparNativeBehaviors.tsx",
+        "bytes": 29449,
+        "sha256": "a08470e71afe68f92a7ebf9a84a6ae0c0fbdd0e8857f6a0399041982daf2c883"
+      },
+      "validation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/gallery-height-timing-v2/focused-validation-receipt.json",
+        "bytes": 6133,
+        "sha256": "71529fc19cb6ea0fc84428a19dfd064824a3134d0b43f5e7e8f1c2e2b2ba21fd"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H5-final-actual-source-receipt.json",
+        "bytes": 3587,
+        "sha256": "190167e8a3083d0ab734cd1b53824722f40bd1c4d4ec385bd8794de667d5bc7d"
+      },
+      "behavior": "The four-card gallery expands over 650 ms; collapse waits 450 ms then shrinks over 400 ms while cards retain 650 ms FLIP. Height-only root resizing no longer refits the unchanged hero text each animation frame.",
+      "publicOverrides": 13,
+      "nativeWrites": 0,
+      "newControls": 0,
+      "curveFit": "The retained cubic-bezier(.65,0,.35,1) curve approximates source GSAP power2.inOut; the 650/450/400 ms sequence is source-observed.",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }
