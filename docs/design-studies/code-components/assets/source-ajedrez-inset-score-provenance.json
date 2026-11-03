@@ -1,0 +1,65 @@
+{
+  "reference": "HERO-002",
+  "classification": "Source inspiration / credited recreation",
+  "creator": "Julián Leiss / Ajedrez Film Poem",
+  "sourceFilm": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
+  "status": "LOCAL_SOURCE_VALIDATED_NATIVE_AUTHORING_PENDING",
+  "source": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/frozen-a804/SourceAjedrezSequence.tsx",
+    "bytes": 201266,
+    "sha256": "a804fd6e347b7a38dfe70cc35b6067e0c9e7a8d91a93496e0c01a8644c4ef810"
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/validation-receipt.json",
+    "bytes": 5930,
+    "sha256": "653930ae2060c99d9ccf5b2c229f6b191f6e65d195f0d8329b370e23a1633278"
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/final-native-recipe-a804/native-primary-19-family-recipe.json",
+    "bytes": 45861,
+    "sha256": "1462147eec9c0d83ae49c327ffdbd26239578c555691f0bd420fa356c59abbb7"
+  },
+  "observedSourceTiming": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/source-native-plan.json",
+    "bytes": 9349,
+    "sha256": "fa66325fa68f373f4d07185b781cc03a26348a82a80746b62bb08d2385f84604"
+  },
+  "sourceFrames": {
+    "first": 1193,
+    "lastInclusive": 1195,
+    "exclusiveEnd": 1196,
+    "sourceFPS": 24
+  },
+  "behavior": "The source inset table is admitted only for presented frames1193–1195. Its cache key is independent of the held word sample. Opacity value/priority ownership restores the authored state and preserves newer caller values. Visibility-only edges do not repeat84 Range measurements.",
+  "previousSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/previous-SourceAjedrezSequence.tsx",
+    "bytes": 198707,
+    "sha256": "b7002d261f463ffb3accd2067991288226ed576af36801941ec34f133ff9cf23"
+  },
+  "declaredInverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/frozen-a804/source-ajedrez-inset-score-inverse.json",
+    "bytes": 6429,
+    "sha256": "3fa03395d8aa43405b284f9d1ad3e81637ddbb077560cc3e2601e48004944ac9"
+  },
+  "publicOverrides": 46,
+  "newNativeFamiliesPlanned": 19,
+  "expectedNativeCopies": 38,
+  "newNativeInstances": 0,
+  "checks": {
+    "static": 10,
+    "browser": 32,
+    "total": 42,
+    "errors": 0
+  },
+  "preservation": "The exact declared inverse restores b700/198707B. All46 exports,45 unrelated public bodies,84 word IDs/strings/12representative poses,24 old rules,37 phases and the166 photographic poses remain unchanged.",
+  "resources": "No new scheduler, RAF, timer, media, Canvas, WebGL, native instance or asset. Existing shared Film clock and owned observers drive admission.",
+  "limitations": [
+    "Only the short missing score table is reconstructed, using fitted native rule geometry and independent tiny labels. Full word trajectories remain sampled.",
+    "Local fixture captions use the default browser serif family. Its image proof establishes bounded admission/geometry, not native Courier Prime font fidelity. Genuine native caption clones are specified separately.",
+    "Native centered90deg caption rotation is supported by documentation and existing compensated rule geometry; actual painted caption alignment remains unverified.",
+    "Source is locally validated but not yet authored in Framer; actual Preview and reload remain separate."
+  ],
+  "actualNativeWrites": 0,
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false
+}

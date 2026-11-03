@@ -2070,5 +2070,40 @@
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
     "sourceFidelityApproved": false
+  },
+  "lateInsetScoreTable": {
+    "status": "LOCAL_SOURCE_VALIDATED_NATIVE_AUTHORING_PENDING",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-inset-score-provenance.json",
+      "bytes": 4219,
+      "sha256": "ce981ba1f19700d9595d64486a18046379a9ffc00ede2a211567dec9a8b2b8c2"
+    },
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/frozen-a804/SourceAjedrezSequence.tsx",
+      "bytes": 201266,
+      "sha256": "a804fd6e347b7a38dfe70cc35b6067e0c9e7a8d91a93496e0c01a8644c4ef810"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/validation-receipt.json",
+      "bytes": 5930,
+      "sha256": "653930ae2060c99d9ccf5b2c229f6b191f6e65d195f0d8329b370e23a1633278"
+    },
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/final-native-recipe-a804/native-primary-19-family-recipe.json",
+      "bytes": 45861,
+      "sha256": "1462147eec9c0d83ae49c327ffdbd26239578c555691f0bd420fa356c59abbb7"
+    },
+    "sourceFrames": {
+      "first": 1193,
+      "lastInclusive": 1195,
+      "exclusiveEnd": 1196,
+      "sourceFPS": 24
+    },
+    "scope": "A separately editable native score table appears only in the three observed presentation frames. Full word trajectories and other nonphotographic source differences remain open.",
+    "publicOverrides": 46,
+    "newNativeFamiliesPlanned": 19,
+    "physicalCopiesPlanned": 38,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

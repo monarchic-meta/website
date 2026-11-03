@@ -1,0 +1,48 @@
+{
+  "reference": "HERO-002",
+  "previousSHA256": "b7002d261f463ffb3accd2067991288226ed576af36801941ec34f133ff9cf23",
+  "previousBytes": 198707,
+  "scope": "Exact reversible edits to the inset score-table controller and its documentation only. Reverse these declared edits to preserve every preceding photographic, clock and other public body byte.",
+  "patches": [
+    {
+      "before": "// The brief49s perimeter is the authored native/Canvas poster. Later small dark\n// grid choreography and all per-frame source trajectories remain unrebuilt.",
+      "after": "// The brief49s perimeter is the authored native/Canvas poster. The separate\n// dark inset table appears on source frames1193–1195 only. Complete per-frame\n// word trajectories remain sampled, not reconstructed by that finite table."
+    },
+    {
+      "before": "function ajedrezTypeSample(time: number): AjedrezTypeSample {",
+      "after": "const AJEDREZ_TYPE_INSET = \"film-phase-36-inset-score-grid\"\nfunction ajedrezInsetScoreVisible(time: number) {\n    const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)\n    return frame >= 1193 && frame < 1196\n}\nfunction ajedrezTypeSample(time: number): AjedrezTypeSample {"
+    },
+    {
+      "before": "            const ruleRecords = new Map<HTMLElement, { value: string; priority: string }>()\n            let disposed = false, dirty = true, previousSample = -1, previousWidth = -1",
+      "after": "            const ruleRecords = new Map<HTMLElement, { value: string; priority: string }>()\n            type InsetOpacity = { before: { value: string; priority: string }; written: { value: string; priority: string } }\n            const insetRecords = new Map<HTMLElement, InsetOpacity>()\n            let disposed = false, dirty = true, previousSample = -1, previousWidth = -1, previousInset: boolean | null = null"
+    },
+    {
+      "before": "            const clear = () => { for (const [node, record] of records) restore(node, record); records.clear(); for (const node of ruleRecords.keys()) restoreRule(node) }",
+      "after": "            const insetOpacity = (node: HTMLElement) => ({ value: node.style.getPropertyValue(\"opacity\"), priority: node.style.getPropertyPriority(\"opacity\") })\n            const sameOpacity = (a: { value: string; priority: string }, b: { value: string; priority: string }) => a.value === b.value && a.priority === b.priority\n            const restoreInset = (node: HTMLElement) => {\n                const record = insetRecords.get(node)\n                if (record && sameOpacity(insetOpacity(node), record.written)) {\n                    if (record.before.value) node.style.setProperty(\"opacity\", record.before.value, record.before.priority)\n                    else node.style.removeProperty(\"opacity\")\n                }\n                insetRecords.delete(node)\n            }\n            const writeInset = (node: HTMLElement, visible: boolean) => {\n                const current = insetOpacity(node), old = insetRecords.get(node)\n                const before = old && sameOpacity(current, old.written) ? old.before : current\n                node.style.setProperty(\"opacity\", visible ? \"1\" : \"0\")\n                insetRecords.set(node, { before, written: insetOpacity(node) })\n            }\n            const clear = () => { for (const [node, record] of records) restore(node, record); records.clear(); for (const node of ruleRecords.keys()) restoreRule(node); for (const node of insetRecords.keys()) restoreInset(node) }"
+    },
+    {
+      "before": "if (!live) { clear(); dirty = true; previousSample = -1; host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\");",
+      "after": "if (!live) { clear(); dirty = true; previousSample = -1; previousInset = null; host.setAttribute(\"data-source-ajedrez-inset-score\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\");"
+    },
+    {
+      "before": "                // A held sample needs no repeated text measurement or layout.\n                if (!dirty && previousSample === sample.sourceFrame && previousWidth === host.offsetWidth) return\n                dirty = false; previousSample = sample.sourceFrame; previousWidth = host.offsetWidth",
+      "after": "                // The independent three-frame inset can enter/exit while the\n                // representative word sample stays held. Its edges must not be\n                // swallowed by that cache, or repeat all84 text measurements.\n                const insetVisible = ajedrezInsetScoreVisible(current.time)\n                const positionsChanged = dirty || previousSample !== sample.sourceFrame || previousWidth !== host.offsetWidth\n                if (!positionsChanged && previousInset === insetVisible) return\n                dirty = false; previousSample = sample.sourceFrame; previousWidth = host.offsetWidth; previousInset = insetVisible"
+    },
+    {
+      "before": "                for (const node of ruleRecords.keys()) if (!host.contains(node)) restoreRule(node)",
+      "after": "                for (const node of ruleRecords.keys()) if (!host.contains(node)) restoreRule(node)\n                for (const node of insetRecords.keys()) if (!host.contains(node)) restoreInset(node)"
+    },
+    {
+      "before": "                    if (ruleNames.has(name)) {",
+      "after": "                    if (name === AJEDREZ_TYPE_INSET) writeInset(node, insetVisible)\n                    if (ruleNames.has(name)) {"
+    },
+    {
+      "before": "                    write(node, Math.round(sample.xy[index * 2] * unit * 100) / 100, Math.round(sample.xy[index * 2 + 1] * unit * 100) / 100, sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit); count++",
+      "after": "                    if (positionsChanged) write(node, Math.round(sample.xy[index * 2] * unit * 100) / 100, Math.round(sample.xy[index * 2 + 1] * unit * 100) / 100, sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)\n                    count++"
+    },
+    {
+      "before": "                host.setAttribute(\"data-source-ajedrez-grid-sample\", String(sample.sourceFrame));",
+      "after": "                host.setAttribute(\"data-source-ajedrez-inset-score\", insetVisible ? \"visible\" : \"hidden\")\n                host.setAttribute(\"data-source-ajedrez-grid-sample\", String(sample.sourceFrame));"
+    }
+  ]
+}
