@@ -1993,5 +1993,344 @@
     "actualPaintVerified": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "sourcePhotoParallaxFirstTwo": {
+    "status": "LOCAL_COMPOSITE_VALIDATION_PASSED_NATIVE_AUTHORING_PENDING",
+    "sourceURL": "https://format.obys.agency/",
+    "classification": "Source inspiration / bounded current FORMAT photo recreation",
+    "credit": "FORMAT — Obys and DES Special Project",
+    "parentSourceSHA256": "0f32c3821d3cf987ef9b16bd183dc61779804f2310cecb1d2c265a5fc2f6d507",
+    "parentSourceBytes": 119864,
+    "parentPublicExports": 129,
+    "currentPublicExports": 131,
+    "old129BodiesByteIdentical": true,
+    "sourceFacts": {
+      "positiveEvidence": "Retained original module Zc() and CSS; no new live source inspection or isolated pixel-motion audit.",
+      "apertureSelectors": [
+        ".block-one__photo",
+        ".wide__photo"
+      ],
+      "scrollStart": "aperture documentY − viewportHeight",
+      "scrollEnd": "aperture documentY + apertureHeight",
+      "drift": 0.07,
+      "offset": "logicalHeight * .07 * (2 * clamp((viewportHeight − apertureTop)/(viewportHeight + visualHeight)) − 1)",
+      "imageTop": "−7%",
+      "imageHeight": "114%",
+      "nativeGeometryFit": "Use transformed screen bounds for traversal and logical clientHeight for CSS amplitude; ordinary scroll replaces original GSAP/Lenis traversal."
+    },
+    "evidence": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-module.js",
+        "sha256": "88c3ba72cae2663359669a93f6a12d0c4c2ba6e4c36f74586c969c7c19f31310",
+        "bytes": 257696
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-styles.css",
+        "sha256": "961aaa31d6a2abe3941da7679f10964bd2c8c2fa043e1f1d08e05397064722c5",
+        "bytes": 54589
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-http-response.html",
+        "sha256": "ab1ddbdce66e0a2b45ab9ac88154140a30cb7f42d7e8ac7bcf1334397863a940",
+        "bytes": 97284
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/native-actual-read-stills-392/actual-data.json",
+        "sha256": "45708bb46b37df2eaf89ccdbdae4e4079c8cc91ff61656ff06d33b1a12f92a0b",
+        "bytes": 2087774
+      }
+    ],
+    "implementation": {
+      "newExports": [
+        "withFormatPhotoAperture",
+        "withFormatPhotoImage"
+      ],
+      "sourceBehaviorJSCopied": false,
+      "newAssetRequests": 0,
+      "newCanvas": 0,
+      "newGPUContexts": 0,
+      "newDecoders": 0,
+      "newTimers": 0,
+      "paint": "Event-driven, at most30Hz while visible; one pending requestAnimationFrame per visible aperture and no idle animation loop. Own IO/RO/MO and scroll/visibility listeners release on host change/unmount.",
+      "nativeMaterial": "The same retained individual photo Frame is moved into one new clipping Frame; no whole hero/card bitmap, replacement artwork or material conversion.",
+      "frozen": "Canvas/export/thumbnail/reduced and source Phone return authored image styles unchanged.",
+      "scope": "First two photographs only. The existing seven-ground drift/late deck remain unchanged; other photos, source first-entry8word stagger, Notes and early Vee pip remain open."
+    },
+    "nativeRecipe": [
+      {
+        "layout": "Desktop",
+        "existingImageID": "x6BvGBgcO",
+        "existingParentID": "eWqeAixu8",
+        "logicalWrapperKey": "photo-aperture-x6BvGBgcO",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / vertical-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "10px",
+          "width": "131px",
+          "height": "406px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "x6BvGBgcO",
+          "parent": "photo-aperture-x6BvGBgcO",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,d5Zd7xJpYLfv81SOiNRo7tTjXZo.webp?originalFilename=BONBFX6oSXjQOuijMdq4J1ZvwM.webp&width=524&height=1851",
+        "phoneBoundary": null,
+        "preserveOriginalStacking": {
+          "siblingIndex": 1,
+          "followingSiblingID": "U0lazwQM4",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      },
+      {
+        "layout": "Desktop",
+        "existingImageID": "QcA1JR_pk",
+        "existingParentID": "dvgurGEDa",
+        "logicalWrapperKey": "photo-aperture-QcA1JR_pk",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / horizontal-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "0px",
+          "width": "355px",
+          "height": "448px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "QcA1JR_pk",
+          "parent": "photo-aperture-QcA1JR_pk",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,qkXTEBDNbkJq4VnLhaujhP5HOk.webp?originalFilename=OCaUNEzLk3TMok14qxwy00Yg.webp&width=710&height=896",
+        "phoneBoundary": null,
+        "preserveOriginalStacking": {
+          "siblingIndex": 0,
+          "followingSiblingID": "vF8wW9n6l",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      },
+      {
+        "layout": "Compact",
+        "existingImageID": "XEEAnleDnx6BvGBgcO",
+        "existingParentID": "XEEAnleDneWqeAixu8",
+        "logicalWrapperKey": "photo-aperture-XEEAnleDnx6BvGBgcO",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / vertical-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "10px",
+          "width": "131px",
+          "height": "406px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "XEEAnleDnx6BvGBgcO",
+          "parent": "photo-aperture-XEEAnleDnx6BvGBgcO",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,d5Zd7xJpYLfv81SOiNRo7tTjXZo.webp?originalFilename=BONBFX6oSXjQOuijMdq4J1ZvwM.webp&width=524&height=1851",
+        "phoneBoundary": null,
+        "preserveOriginalStacking": {
+          "siblingIndex": 1,
+          "followingSiblingID": "XEEAnleDnU0lazwQM4",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      },
+      {
+        "layout": "Compact",
+        "existingImageID": "XEEAnleDnQcA1JR_pk",
+        "existingParentID": "XEEAnleDndvgurGEDa",
+        "logicalWrapperKey": "photo-aperture-XEEAnleDnQcA1JR_pk",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / horizontal-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "0px",
+          "width": "355px",
+          "height": "448px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "XEEAnleDnQcA1JR_pk",
+          "parent": "photo-aperture-XEEAnleDnQcA1JR_pk",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,qkXTEBDNbkJq4VnLhaujhP5HOk.webp?originalFilename=OCaUNEzLk3TMok14qxwy00Yg.webp&width=710&height=896",
+        "phoneBoundary": null,
+        "preserveOriginalStacking": {
+          "siblingIndex": 0,
+          "followingSiblingID": "XEEAnleDnvF8wW9n6l",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      },
+      {
+        "layout": "Phone historical adaptation",
+        "existingImageID": "jXxkHA4mHx6BvGBgcO",
+        "existingParentID": "jXxkHA4mHeWqeAixu8",
+        "logicalWrapperKey": "photo-aperture-jXxkHA4mHx6BvGBgcO",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / vertical-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "8.19px",
+          "width": "107.298288509px",
+          "height": "332.542787286px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "jXxkHA4mHx6BvGBgcO",
+          "parent": "photo-aperture-jXxkHA4mHx6BvGBgcO",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,d5Zd7xJpYLfv81SOiNRo7tTjXZo.webp?originalFilename=BONBFX6oSXjQOuijMdq4J1ZvwM.webp&width=524&height=1851",
+        "phoneBoundary": "No oversize/offset authored. Exact neutral wrapper+child composition retains old image bounds, asset and center crop; phone=true bypasses both live roles.",
+        "preserveOriginalStacking": {
+          "siblingIndex": 1,
+          "followingSiblingID": "jXxkHA4mHU0lazwQM4",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      },
+      {
+        "layout": "Phone historical adaptation",
+        "existingImageID": "jXxkHA4mHQcA1JR_pk",
+        "existingParentID": "jXxkHA4mHdvgurGEDa",
+        "logicalWrapperKey": "photo-aperture-jXxkHA4mHQcA1JR_pk",
+        "createWrapper": {
+          "type": "FrameNode",
+          "name": "HERO-013 / horizontal-photo / source-parallax aperture",
+          "position": "absolute",
+          "left": "0px",
+          "top": "0px",
+          "width": "224.2105px",
+          "height": "282.9474px",
+          "opacity": 1,
+          "visible": true,
+          "overflow": "clip",
+          "fill": "rgba(0,0,0,0)",
+          "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoAperture"
+        },
+        "moveExistingImage": {
+          "id": "jXxkHA4mHQcA1JR_pk",
+          "parent": "photo-aperture-jXxkHA4mHQcA1JR_pk",
+          "preserveAllOtherProperties": true,
+          "attributes": {
+            "left": "0px",
+            "top": "0px",
+            "codeOverride": "SourceFormatDetails.tsx:withFormatPhotoImage"
+          },
+          "keepExistingWidthHeightWithoutSetter": true
+        },
+        "genuineAssetReference": "data:framer/asset-reference,qkXTEBDNbkJq4VnLhaujhP5HOk.webp?originalFilename=OCaUNEzLk3TMok14qxwy00Yg.webp&width=710&height=896",
+        "phoneBoundary": "No oversize/offset authored. Exact neutral wrapper+child composition retains old image bounds, asset and center crop; phone=true bypasses both live roles.",
+        "preserveOriginalStacking": {
+          "siblingIndex": 0,
+          "followingSiblingID": "jXxkHA4mHvF8wW9n6l",
+          "rule": "New wrapper must occupy the former image sibling slot. Do not append it above the original overlaid native text."
+        }
+      }
+    ],
+    "validation": {
+      "sourceSHA256": "180481d028b72d37a55ec0f9e266e0e98d740df241d7c532bee5dca9f0328994",
+      "staticMathSSRChecks": 19,
+      "strictPublicTypeAndRetainedHelperChecks": 10,
+      "focusedBrowserChecks": 18,
+      "combinedNarrowChecks": 37,
+      "browserResult": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/photo-parallax-first-two-v1/observer-coalescing-v2/browser/result.json",
+      "browserResultSHA256": "d5a7696fcd3e81f3ccd69eac9fa6924de5833b516da4d3b175234663448083dc",
+      "strictResult": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/photo-parallax-first-two-v1/observer-coalescing-v2/strict-result.json",
+      "strictResultSHA256": "fd0ee86504501c937e55a987ea642637d3e4584c377d6efac5464652546b6302",
+      "animatedAncestorPaints": 23,
+      "animatedAncestorElapsedMS": 1037.5,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "earlyPipBoundary": {
+      "peerNote": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-coupling-light-review-v1/coupling-note.json",
+      "sourceFact": "The original zero-size page-level pip travels from Vee into gauge and later poster. Current authored KJBnCp7m5 is inside clipped gauge U5AOUWXvy; a transform-only patch would clip it.",
+      "nextBranch": "Independent page-level stage or shared provider coupling is required; no marker motion invented in this photo slice."
+    },
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "observerCoalescing": {
+      "rejectedParentSHA256": "e5fd08436067b868341df9e6e591267329a7fd6562daee36d8f43c4fe7b61977",
+      "finding": "Source-only review found direct measure()/lastPaint resets in MO/RO callbacks could bypass30Hz admission during animated ancestor transforms.",
+      "correction": "MO/RO callbacks only cancel hidden work or schedule the existing coalesced RAF; initial measurement remains bounded, and source/window visibility admission alone can reset first-paint timing.",
+      "test": "New focused fixture drives native ancestor translation using original browser RAF and counts actual photo offset attribute commits over1s. Phone neutral geometry/crop is asserted separately."
+    },
+    "pointerPreservation": {
+      "sourceSHA256": "277989abbaa1c5cbc5201b749b966a4b417b5dbe00ba04e522741f0908f1b820",
+      "parentSourceSHA256": "180481d028b72d37a55ec0f9e266e0e98d740df241d7c532bee5dca9f0328994",
+      "exactRuntimeDelta": "Only the new image role pointerEvents:none property is removed; all other source bytes are identical to validated180481d0.",
+      "sourceFacts": "Retained first two source photographs are plain img children; old392 native Frames have no own link/override attributes. Input is preserved regardless: new parallax has no need to disable caller pointer events or handlers.",
+      "pointerSmoke": {
+        "result": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/photo-parallax-first-two-v1/pointer-preservation-277989ab/pointer-result.json",
+        "sha256": "62e1e83971baae7ae20041628c8db319710b74632507da8c43e481aa5c702a54",
+        "checks": 24,
+        "actualMouseHit": true,
+        "callerPointerStyleAndHandlerPreserved": true,
+        "errors": 0,
+        "cleanupPassed": true
+      },
+      "reusedProof": "The37 photo math/geometry/resource/Phone checks and10 strict/helper checks on exact180481d0 remain immutable parent evidence. They are not relabelled as new277 runs; only the pointer-style delta received a fresh focused smoke.",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

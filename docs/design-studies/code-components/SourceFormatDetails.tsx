@@ -770,3 +770,74 @@ export function withFormatMobileMessage(Component: ComponentType<LayerProps>): C
 const FORMAT_MOBILE_STYLE = `[data-format-mobile-part="credit"]{display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;white-space:pre!important}
 [data-format-mobile-part="credit"]>[data-framer-name]{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;width:max-content!important;height:auto!important;flex:0 0 auto!important;transform:none!important}
 [data-format-mobile-part="credit"] p,[data-format-mobile-part="credit"] span{white-space:pre!important}`
+
+/** Additive source-photo drift. The retained current FORMAT code maps every
+ * selected aperture's top-bottom traversal linearly from -7% to +7% of its
+ * height. Native material stays a separate editable Frame, enlarged to114%
+ * above its clipped aperture; no photograph/screenshot is created here.
+ * First finite binding: the original Vertical and Horizontal card photographs.
+ */
+type FormatPhotoState = { enabled: boolean; offset: number }
+const FormatPhotoContext = React.createContext<FormatPhotoState>({ enabled: false, offset: 0 })
+function formatPhotoOffset(top: number, visualHeight: number, viewportHeight: number, logicalHeight: number) {
+    const progress = Math.max(0, Math.min(1, (viewportHeight - top) / Math.max(1, viewportHeight + visualHeight)))
+    return logicalHeight * .07 * (2 * progress - 1)
+}
+function formatPhotoPainted(host: HTMLElement) {
+    for (let node: HTMLElement | null = host; node; node = node.parentElement) {
+        const css = getComputedStyle(node)
+        if (css.display === "none" || css.visibility !== "visible" || Number(css.opacity) === 0) return false
+    }
+    return true
+}
+export function withFormatPhotoAperture(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), reduced = useReducedMotion(), layout = React.useContext(SourceLayoutContext), held = React.useContext(PosterCarryContext)
+        const [host, setHost] = React.useState<HTMLElement | null>(null), [pose, setPose] = React.useState<FormatPhotoState>({ enabled: false, offset: 0 })
+        const bind = React.useCallback((node: HTMLElement | null) => { setHost(previous => previous === node ? previous : node); writeRef(ref, node) }, [ref])
+        useOwnLayoutEffect(() => {
+            if (!host) return
+            if (frozen || reduced || layout.phone) { setPose(previous => previous.enabled ? { enabled: false, offset: 0 } : previous); return }
+            // Source poster carry holds its last drift. This first binding does
+            // not change that poster or its separate reverse compensation.
+            if (held) return
+            let active = true, frame = 0, visible = false, lastPaint = 0
+            const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0 }
+            const measure = () => {
+                if (!active || document.hidden || !formatPhotoPainted(host)) return
+                const box = host.getBoundingClientRect(), logicalHeight = host.clientHeight
+                if (box.height <= 0 || logicalHeight <= 0) return
+                const offset = formatPhotoOffset(box.top, box.height, window.innerHeight, logicalHeight)
+                setPose(previous => previous.enabled && Math.abs(previous.offset - offset) < .001 ? previous : { enabled: true, offset })
+            }
+            const read = (now: number) => {
+                frame = 0
+                if (!active || !visible || document.hidden || !formatPhotoPainted(host)) return
+                if (now - lastPaint < 1000 / 30) { frame = requestAnimationFrame(read); return }
+                lastPaint = now; measure()
+            }
+            const schedule = () => { if (active && visible && !document.hidden && formatPhotoPainted(host) && !frame) frame = requestAnimationFrame(read) }
+            const visibility = () => { if (document.hidden) cancel(); else { lastPaint = 0; schedule() } }
+            // An initial bounded measurement supplies the correct crop even
+            // before IntersectionObserver's first asynchronous admission.
+            measure()
+            const intersection = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (visible) { lastPaint = 0; schedule() } else cancel() })
+            // Geometry/style notifications use the same finite30Hz admission
+            // as scroll. Immediate measurements here would bypass that budget
+            // when a native ancestor animates its transform each frame.
+            const resize = new ResizeObserver(schedule)
+            const paint = new MutationObserver(() => { if (!formatPhotoPainted(host)) cancel(); else schedule() })
+            for (let node: HTMLElement | null = host; node; node = node.parentElement) paint.observe(node, { attributes: true, attributeFilter: ["style", "class", "hidden"] })
+            intersection.observe(host); resize.observe(host)
+            window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule); document.addEventListener("visibilitychange", visibility)
+            return () => { active = false; cancel(); intersection.disconnect(); resize.disconnect(); paint.disconnect(); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule); document.removeEventListener("visibilitychange", visibility) }
+        }, [host, frozen, reduced, layout.phone, held])
+        return <FormatPhotoContext.Provider value={pose}><Component {...props} ref={bind} data-format-photo-aperture={pose.enabled ? "live" : "native-still"} data-format-photo-offset={pose.offset} style={pose.enabled ? { ...props.style, overflow: "hidden" } : props.style} /></FormatPhotoContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatPhotoImage(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const pose = React.useContext(FormatPhotoContext)
+        return <Component {...props} ref={ref} data-format-photo-material="editable-native-frame" style={pose.enabled ? { ...props.style, position: "absolute", left: 0, top: "-7%", width: "100%", height: "114%", translate: `0px ${pose.offset}px` } as DetailStyle : props.style} />
+    }) as NativeLayer
+}
