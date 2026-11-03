@@ -13,6 +13,9 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * of spending playback work behind the board. It does not recreate the source
  * site's hidden-tab GIF clock. Canvas, exports and reduced motion stay still.
  * A missing native host keeps the caller's live Playing value unchanged.
+ * The manual variant begins with Playing false and admits native controls
+ * without starting the film. Only an admitted native Play marks it started;
+ * visibility returns may then resume it unless the user manually paused it.
  * No media element, decoder, canvas, timer or animation loop is created here.
  */
 type LayerProps = { [key: string]: unknown; style?: React.CSSProperties }
@@ -41,13 +44,14 @@ function visiblePaint(host: HTMLElement) {
     return true
 }
 
-export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+function visibleNativeVideo(Component: ComponentType<LayerProps>, autoplay: boolean): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const target = RenderTarget.current()
         const frozen = useIsStaticRenderer() || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail
         const [host, setHost] = React.useState<HTMLElement | null>(null)
         const [playback, setPlayback] = React.useState<{ host: HTMLElement | null; allowed: boolean }>({ host: null, allowed: false })
         const manuallyPaused = React.useRef(false)
+        const started = React.useRef(autoplay)
         const bind = React.useCallback((node: HTMLElement | null) => {
             setHost(previous => previous === node ? previous : node)
             writeRef(ref, node)
@@ -64,7 +68,7 @@ export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): Co
                 if (owns(entry) && !entry.video.paused) entry.video.pause()
             }
             const play = (entry: ManagedVideo) => {
-                if (!active || !owns(entry) || !entry.permission.allowed || manuallyPaused.current || entry.pending || !entry.video.paused) return
+                if (!active || !owns(entry) || !entry.permission.allowed || !started.current || manuallyPaused.current || entry.pending || !entry.video.paused) return
                 try {
                     entry.pending = true
                     const result = entry.video.play()
@@ -105,7 +109,7 @@ export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): Co
                         entry.onPlay = () => {
                             if (!owns(entry)) return
                             if (!permission.allowed) hold(entry)
-                            else { manuallyPaused.current = false; setPlaying(true) }
+                            else { started.current = true; manuallyPaused.current = false; setPlaying(true) }
                         }
                         entry.onReady = () => play(entry)
                         managed = entry
@@ -120,7 +124,7 @@ export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): Co
                     videoVisibility.observe(node, { attributes: true, attributeFilter: ["style", "class", "hidden"] })
                 }
                 const admitted = !frozen && intersecting && !document.hidden && !reduced?.matches && visiblePaint(host)
-                setPlaying(admitted && !manuallyPaused.current)
+                setPlaying(admitted && started.current && !manuallyPaused.current)
                 if (!entry || !owns(entry)) return
                 const allowed = admitted && visiblePaint(entry.video)
                 const changed = allowed !== entry.permission.allowed
@@ -164,7 +168,17 @@ export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): Co
                 if (wasOwner) host.removeAttribute("data-source-native-video-active")
             }
         }, [host, frozen])
-        const playing = !frozen && (host ? playback.host === host && playback.allowed : props.playing ?? true)
+        const playing = !frozen && (host ? playback.host === host && playback.allowed : autoplay ? props.playing ?? true : false)
         return <Component {...props} ref={bind} playing={playing} data-source-native-video-visibility={host ? "managed" : "awaiting-host"} />
     })
+}
+
+/** Existing automatic source-film behavior, including lazy native admission. */
+export function withVisibleNativeVideo(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return visibleNativeVideo(Component, true)
+}
+
+/** Manual native controls first; hidden and frozen films remain suspended. */
+export function withVisibleManualNativeVideo(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return visibleNativeVideo(Component, false)
 }

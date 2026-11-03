@@ -73,7 +73,7 @@ vm.runInNewContext('(function(require,exports){' + compiled + '})(require,export
         useIsStaticRenderer: () => mode.static,
     },
 })
-check('Exactly one public native override is exported', Object.keys(exported).join() === 'withVisibleNativeVideo')
+check('Existing automatic override and one additive manual override are exported', Object.keys(exported).sort().join() === 'withVisibleManualNativeVideo,withVisibleNativeVideo')
 const ServerNative = React.forwardRef(({ playing, ...props }, ref) => React.createElement('div', { ...props, ref, 'data-playing': String(playing) }))
 const ServerVideo = exported.withVisibleNativeVideo(ServerNative)
 for (const [target, staticFlag] of [['preview', false], ['canvas', false], ['export', false], ['thumbnail', false], ['preview', true]]) {
@@ -85,6 +85,12 @@ for (const [target, staticFlag] of [['preview', false], ['canvas', false], ['exp
     check('SSR ' + target + '/' + staticFlag + ' preserves caller playback before host forwarding and freezes static targets',
         html.includes('data-playing="' + expectedPlaying + '"') && html.includes('data-native-caller="preserved"') &&
         html.includes('data-source-native-video-visibility="awaiting-host"') && html.includes('Preserved native child') && html.includes('opacity:0.8'))
+}
+const ServerManual = exported.withVisibleManualNativeVideo(ServerNative)
+for (const [target, staticFlag] of [['preview', false], ['canvas', false], ['export', false], ['thumbnail', false], ['preview', true]]) {
+    mode.target = target; mode.static = staticFlag
+    const html = server.renderToString(React.createElement(ServerManual, { playing: true, 'data-native-caller': 'preserved' }, 'Manual native child'))
+    check('Manual SSR ' + target + '/' + staticFlag + ' begins paused even before a native host forwards', html.includes('data-playing="false"') && html.includes('Manual native child') && html.includes('data-native-caller="preserved"'))
 }
 mode.target = 'preview'; mode.static = false
 check('An unforwarded live host retains an explicitly paused caller', server.renderToString(
@@ -167,8 +173,9 @@ try {
         Object.defineProperty(document, 'hidden', { configurable: true, get: () => __hidden })
         window.setHidden = value => { __hidden = value; document.dispatchEvent(new Event('visibilitychange')) }
         window.__originalPlay = HTMLMediaElement.prototype.play
-        window.__delayPlay = false; window.__pendingPlays = new Map()
+        window.__delayPlay = false; window.__pendingPlays = new Map(); window.__playCalls = 0
         HTMLMediaElement.prototype.play = function () {
+            __playCalls++
             if (!__delayPlay) return __originalPlay.call(this)
             if (!__pendingPlays.has(this)) {
                 let resolve, reject
@@ -189,7 +196,7 @@ try {
     await page.addScriptTag({ content: '(function(){const exports={};const require=name=>name==="react"?window.React:{RenderTarget:{canvas:"canvas",export:"export",thumbnail:"thumbnail",current:()=>__target},useIsStaticRenderer:()=>__static};' + compiled + ';window.VideoAPI=exports;})()\n//# sourceURL=native-video-module.js' })
     await page.evaluate(() => {
         const E = React.createElement
-        const Native = React.forwardRef(({ playing, callerPlaying, lazy, empty, hostTag, videoKey, objectRef, children, ...props }, ref) => {
+        const Native = React.forwardRef(({ playing, callerPlaying, lazy, empty, hostTag, videoKey, objectRef, manual, children, ...props }, ref) => {
             const [admitted, setAdmitted] = React.useState(!lazy), media = React.useRef(null)
             React.useEffect(() => { if (playing) setAdmitted(true) }, [playing])
             React.useEffect(() => {
@@ -203,13 +210,13 @@ try {
                 !empty && admitted ? E('div', { id: 'native-player-inner' }, E('video', { key: videoKey, id: 'film', ref: media, src: '/desktop.webm', poster: '/desktop.png', muted: true, loop: true, controls: true, playsInline: true, preload: 'auto' })) : null,
                 children)
         })
-        const Managed = VideoAPI.withVisibleNativeVideo(Native)
+        const Managed = VideoAPI.withVisibleNativeVideo(Native), Manual = VideoAPI.withVisibleManualNativeVideo(Native)
         const callerRef = node => { __refs.push(node); window.__callerRef = node }
         window.app = ReactDOM.createRoot(document.getElementById('mount'))
         window.fixture = { key: 0, callerPlaying: true, lazy: false, empty: false, hostTag: 'div', videoKey: 0, objectRef: false }
         window.render = patch => {
             Object.assign(fixture, patch)
-            ReactDOM.flushSync(() => app.render(E(Managed, {
+            ReactDOM.flushSync(() => app.render(E(fixture.manual ? Manual : Managed, {
                 ...fixture, playing: fixture.callerPlaying, id: 'native-host', title: 'Caller native video', 'data-caller': 'preserved',
                 ref: fixture.objectRef ? __objectRef : callerRef,
                 style: { width: 240, height: 135, position: 'relative' },
@@ -326,6 +333,47 @@ try {
     await page.waitForTimeout(220)
     check('A real delayed play after unmount is paused and cannot advance the detached film', await page.evaluate(time => retiredVideo.paused && Math.abs(retiredVideo.currentTime - time) < .025, retiredTime))
     check('Unmount releases source listeners, observers, refs and pending work', await page.evaluate(() => __observers.size === 0 && __listeners.length === 0 && __objectRef.current === null && __pendingPlays.size === 0 && Object.values(__work).every(value => value === 0)))
+    const automaticChecks = checks.length
+    await page.evaluate(() => {
+        window.app = ReactDOM.createRoot(document.getElementById('mount'))
+        __target = 'preview'; __static = false; __delayPlay = false
+        window.manualCallsBefore = __playCalls
+        render({ manual: true, key: 5, callerPlaying: true, lazy: false, empty: false, hostTag: 'div', videoKey: 5, objectRef: true })
+    })
+    await wait(() => snapshot().admitted === 'true' && snapshot().media?.ready >= 2 && snapshot().playing === 'false')
+    await hold('Manual mode admits native controls without autoplay or a Playing-true bootstrap')
+    check('Manual initial visible admission creates zero play calls despite caller Playing true', await page.evaluate(() => __playCalls === manualCallsBefore && snapshot().media.time === 0))
+    await page.evaluate(() => scrollTo(0, 1000)); await wait(() => snapshot().admitted === 'false')
+    await page.evaluate(() => document.getElementById('film').play()?.catch(() => {}))
+    await hold('An unstarted hidden native Play is immediately held and does not mark manual mode started')
+    await page.evaluate(() => scrollTo(0, 0)); await wait(() => snapshot().admitted === 'true')
+    await hold('The first visible return remains paused after a rejected hidden Play')
+    await page.evaluate(() => document.getElementById('film').play()); await playing()
+    const manualStart = await page.evaluate(() => snapshot().media.time)
+    await page.waitForTimeout(250)
+    check('An actually admitted native Play starts the existing decoded film and Playing prop', await page.evaluate(time => snapshot().media.time > time + .08 && snapshot().playing === 'true', manualStart))
+    await page.evaluate(() => scrollTo(0, 1000)); await hold('A previously started manual film suspends while offscreen')
+    await page.evaluate(() => scrollTo(0, 0)); await playing()
+    check('A visibility return resumes only the previously started unpaused manual film', await page.evaluate(() => !snapshot().media.paused))
+    await page.evaluate(() => document.getElementById('film').pause()); await hold('Manual native Pause remains explicit after first start')
+    await page.evaluate(() => scrollTo(0, 1000)); await wait(() => snapshot().admitted === 'false')
+    await page.evaluate(() => scrollTo(0, 0)); await wait(() => snapshot().admitted === 'true')
+    await hold('Manual native Pause survives the viewport round trip')
+    await page.evaluate(() => { window.manualOldVideo = document.getElementById('film'); render({ videoKey: 6 }) })
+    await wait(() => document.getElementById('film') !== manualOldVideo && snapshot().media?.ready >= 2)
+    await hold('Replacing the manual native video preserves the user Pause')
+    await page.evaluate(() => { window.manualOldHost = document.getElementById('native-host'); render({ hostTag: 'section' }) })
+    await wait(() => snapshot().admitted === 'true' && snapshot().media?.ready >= 2)
+    await hold('Replacing the manual native host also preserves user Pause')
+    check('Manual replacements release detached host/video ownership and retain the genuine object ref', await page.evaluate(() => manualOldVideo.paused && !manualOldHost.isConnected && __objectRef.current === document.getElementById('native-host') && [...__observers].every(o => !o.targets.has(manualOldHost))))
+    await page.evaluate(() => document.getElementById('film').play()); await playing()
+    await page.evaluate(() => document.getElementById('owner').style.opacity = '0'); await hold('Closing a native-sheet ancestor suspends a started manual film')
+    await page.evaluate(() => document.getElementById('owner').style.opacity = '1'); await playing()
+    await page.evaluate(() => { __target = 'canvas'; render() }); await hold('Canvas freezes a previously started manual film')
+    await page.evaluate(() => { __target = 'preview'; render() }); await playing()
+    await page.evaluate(() => ReactDOM.flushSync(() => app.unmount()))
+    check('Manual cleanup leaves no listeners, observers, native refs or added clock workload', await page.evaluate(() => __observers.size === 0 && __listeners.length === 0 && __objectRef.current === null && __pendingPlays.size === 0 && Object.values(__work).every(v => v === 0)))
+    samples.push({ state: 'manual-cleanup', automaticChecks, resources: await page.evaluate(() => ({ observers: __observers.size, listeners: __listeners.length, work: __work })) })
     check('Only owned loopback assets were requested and no browser runtime errors occurred', externalRequests.length === 0 && errors.length === 0)
     samples.push({ state: 'visible', visible, advanced }, { state: 'cleanup', resources: await page.evaluate(() => ({ observers: __observers.size, listeners: __listeners.length, work: __work })) })
     fs.writeFileSync(path.join(output, 'result.json'), JSON.stringify(result(), null, 2) + '\n')
