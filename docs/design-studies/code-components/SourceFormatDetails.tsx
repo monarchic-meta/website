@@ -962,3 +962,12 @@ export function withFormatGaugeFlowAndField(Component: ComponentType<LayerProps>
         return <FlowAndField {...props} ref={bind} data-format-gauge-flight="same-owner-native-ring" />
     })
 }
+
+/** Cached source .wide is ordinary document flow, not the earlier fitted
+ * fixed-position actor. Keep the authored Phone and renderer still intact. */
+export function withFormatHorizontalWideFlow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(SourceLayoutContext), frozen = frozenTarget(), u = state.layout.unit
+        return <Component {...props} ref={ref} data-format-source-flow="wide" style={frozen || state.frozen || state.phone ? props.style : { ...props.style, position: "absolute", left: 198 * u, top: 868 * u, width: 1045, height: 448, scale: String(u), rotate: "0deg", transformOrigin: "0 0", opacity: 1 } as DetailStyle} />
+    })
+}

@@ -431,6 +431,15 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-format-wide-flow = (mkWebsiteCheck "source-format-wide-flow" ''
+            export MONARCHIC_FORMAT_WIDE_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-details
+            pnpm run check:source-format-wide-flow
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           source-format-pool = (mkWebsiteCheck "source-format-pool" ''
             export MONARCHIC_FORMAT_POOL_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-format-pool

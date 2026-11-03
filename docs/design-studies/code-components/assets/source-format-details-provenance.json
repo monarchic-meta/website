@@ -2526,5 +2526,62 @@
     "oldImageAndWordBodiesPreserved": true,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "horizontalWideOrdinaryFlow": {
+    "status": "FROZEN_LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_BINDING_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/validation-88d8605e/SourceFormatDetails.tsx",
+      "sha256": "88d8605e98e857c745cd3b6eaf8ce5fff5eb7fa85e3d2ec239fe68ed2deacaa2",
+      "bytes": 139486
+    },
+    "credit": "Source inspiration / FORMAT — Obys and DES Special Project",
+    "sourceFact": ".wide is absolute left198u/top868u/1045×448, not a fixedposition scrollkeyframeactor. Source143 provides exactly that ordinaryflow in D/C.",
+    "sourceCSS": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-styles.css",
+      "sha256": "961aaa31d6a2abe3941da7679f10964bd2c8c2fa043e1f1d08e05397064722c5",
+      "bytes": 54589
+    },
+    "publicBodies": "The entire138708Ba3source/142publicbodies remainbyte-identical; one778Boverride isappended.",
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/native-binding-final-plan.json",
+      "sha256": "e0cb178f91fd3b0cfab78ce600e315358390f5a5c3e72f813ba0b6012c534d11",
+      "bytes": 6299
+    },
+    "validationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/validation-88d8605e/validation-receipt.json",
+      "sha256": "a2240e96fea532978adbe90b9d71fd2ae63c174efcf68207de1972bea1186e3a",
+      "bytes": 4537
+    },
+    "validation": {
+      "strictGroups": 10,
+      "focusedChecks": 33,
+      "staticChecks": 8,
+      "browserChecks": 25,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/validation-88d8605e/result.json",
+        "sha256": "bb99e430cfef02ab0c41e1e753ea835f94bf795df1e6b68c0e0abc96539dffac",
+        "bytes": 8645
+      },
+      "oldActorNegativeModule": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/validation-88d8605e/legacy-negative-module.tsx",
+        "sha256": "67bba0a23e1f99e05bdb5ec87f5b3cbdd749ea881a439751f511fd241f7a3ee4",
+        "bytes": 23191
+      }
+    },
+    "resources": "No newtimer/frame/context/observer/media/asset; state usesexisting sourceLayoutcontext. SameNativeDOM/children/refs preserved duringD/C/Phone/freeze transitions.",
+    "testWiring": {
+      "pnpm": "check:source-format-wide-flow",
+      "nix": "source-format-wide-flow",
+      "execution": "Wiringpreparedonly; completedlocked directchecks notrerun."
+    },
+    "limitations": [
+      "Facts are retained originalCSS and independently recreated ordinary nativeflow, not a new source input audit.",
+      "SourceCSS .wide absolute198u/868u/1045×448 replaces only the oldfixedkeyframeactor; original142public/privatebodies remainunaltered.",
+      "Phone exactly preserves currentnative−142.5/1010/660×282.9474; allfrozen targets/callerrefs/children remain.",
+      "ActualFramer143compilation/classification, threeactualbindingpatches, SourceFont/assetpaint andsavedreloadremainwritergates.",
+      "The introductory513pxclock/fixedburst and18genuineNotes remain separate next implementation branches."
+    ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
