@@ -499,3 +499,184 @@ export default function MechaScrollMark(props:Props){
  return <MechaSurface key={MECHA_ARTWORK_REVISION} {...props}/>
 }
 addPropertyControls(MechaScrollMark,{canvasMotion:{type:ControlType.Boolean,title:"Canvas motion",defaultValue:false},posterProgress:{type:ControlType.Number,title:"Poster scene",min:0,max:1,step:.01,defaultValue:0},scrollEnabled:{type:ControlType.Boolean,title:"Scroll link",defaultValue:true},scrollStart:{type:ControlType.Number,title:"Start / viewport",min:0,max:10,step:.05,defaultValue:0},scrollSpan:{type:ControlType.Number,title:"Span / viewports",min:.1,max:10,step:.05,defaultValue:2105/720},artworkScale:{type:ControlType.Number,title:"Artwork size",min:.5,max:1.5,step:.05,defaultValue:1},ink:{type:ControlType.Color,title:"Ink",defaultValue:"#000000"},background:{type:ControlType.Color,title:"Paper",defaultValue:"#ffffff"}})
+/**
+ * SOURCE INSPIRATION / HERO-015 — MECHA contact-modal mark.
+ * Append-only: the previous scroll renderer/default component/eight controls are
+ * byte-exact. The actual two packed GLB primitives and shared per-window v2
+ * coordinator are reused. No source behavior JS, WebGL or second clock.
+ * Packed coordinates span2; source target max dimension1.8 requires scale.9.
+ * The source FrontSide maroon.75 and sky-blue materials stay transparent.
+ * Opaque pool proxies schedule the bounded private alpha output; they are never
+ * shown as artwork. Retained output policy is24MP shared plus8MP alpha.
+ */
+interface MechaContactProps { canvasMotion?:boolean; paused?:boolean; stillTime?:number; entryOffset?:number; artworkScale?:number; style?:React.CSSProperties }
+interface MechaContactSettings extends Settings { contactPaused:boolean; contactEntryOffset:number }
+const MECHA_CONTACT_REVISION="source-contact-two-primitives-frontside-ortho-alpha-v2"
+const MECHA_CONTACT_ALPHA_KEY=Symbol.for("monarchic.mecha-contact-alpha.v1")
+interface MechaContactAlpha {
+ id:number;epoch:number;root:HTMLDivElement;proxy:HTMLCanvasElement;display:HTMLCanvasElement
+ entry:StudyEntry|null;pool:StudyPool|null;settings:MechaContactSettings;valid:boolean;pending:boolean
+ frameKey:string;framePhase:number;lastPaint:number;disposed:boolean
+}
+interface MechaContactAlphaLedger {serial:number;records:Set<MechaContactAlpha>;byProxy:WeakMap<HTMLCanvasElement,MechaContactAlpha>;peakPixels:number;evictions:number;copyErrors:number}
+function mechaContactAlphaLedger(){
+ const realm=window as unknown as {[key:symbol]:MechaContactAlphaLedger|undefined}
+ return realm[MECHA_CONTACT_ALPHA_KEY]??(realm[MECHA_CONTACT_ALPHA_KEY]={serial:0,records:new Set(),byProxy:new WeakMap(),peakPixels:0,evictions:0,copyErrors:0})
+}
+function mechaContactAlphaPixels(ledger:MechaContactAlphaLedger){return[...ledger.records].reduce((sum,row)=>sum+row.display.width*row.display.height,0)}
+function mechaContactAlphaRevision(row:MechaContactAlpha){return MECHA_CONTACT_REVISION+"/"+row.id+"/"+row.epoch}
+function mechaContactAlphaDebug(){
+ const ledger=mechaContactAlphaLedger(),shared=getStudyPool().debug() as {displayPixels:number},alphaPixels=mechaContactAlphaPixels(ledger)
+ return{alphaPixels,alphaPixelBudget:8000000,peakAlphaPixels:ledger.peakPixels,combinedDisplayPixels:shared.displayPixels+alphaPixels,combinedRetainedPolicy:32000000,evictions:ledger.evictions,copyErrors:ledger.copyErrors,outputs:ledger.records.size}
+}
+function mechaContactAlphaRefresh(row:MechaContactAlpha){
+ if(row.disposed||row.pending||!row.entry||!row.pool||!mechaContactPainted(row.root))return
+ const e=row.entry
+ if(row.valid&&row.frameKey===e.frameKey&&Math.abs(row.framePhase-e.framePhase)<.000001)return
+ // Opaque v2 cache hits are scheduling metadata only. An evicted or different
+ // alpha pose always requires a genuine serial paint at a new local epoch.
+ row.epoch++;row.pending=true;row.settings={...row.settings,artworkRevision:mechaContactAlphaRevision(row)};row.pool.update(e,row.settings)
+}
+function mechaContactAlphaPublish(row:MechaContactAlpha,source:HTMLCanvasElement,settings:Settings,time:number){
+ if(row.disposed)return
+ const ledger=mechaContactAlphaLedger(),nextPixels=source.width*source.height,current=row.display.width*row.display.height
+ const stale=[...ledger.records].filter(other=>other!==row&&other.valid&&!mechaContactPainted(other.root)).sort((a,b)=>a.lastPaint-b.lastPaint)
+ for(const other of stale){
+  if(mechaContactAlphaPixels(ledger)-current+nextPixels<=8000000)break
+  other.display.width=1;other.display.height=1;other.valid=false;other.pending=false;other.display.setAttribute("data-mecha-contact-alpha-valid","false");ledger.evictions++
+ }
+ if(mechaContactAlphaPixels(ledger)-current+nextPixels>8000000)throw Error("The transparent contact output budget is occupied by visible frames.")
+ const target=row.display,oldWidth=target.width,oldHeight=target.height,resized=oldWidth!==source.width||oldHeight!==source.height
+ let backup:HTMLCanvasElement|undefined
+ if(resized&&row.valid){backup=document.createElement("canvas");backup.width=oldWidth;backup.height=oldHeight;backup.getContext("2d",{alpha:true})?.drawImage(target,0,0)}
+ try{
+  if(resized){target.width=source.width;target.height=source.height}
+  const output=target.getContext("2d",{alpha:true});if(!output)throw Error("Could not create the transparent contact display.")
+  output.setTransform(1,0,0,1,0,0);output.globalAlpha=1;output.globalCompositeOperation="copy";output.drawImage(source,0,0,target.width,target.height);output.globalCompositeOperation="source-over"
+ }catch(error){
+  ledger.copyErrors++
+  if(backup){target.width=oldWidth;target.height=oldHeight;const output=target.getContext("2d",{alpha:true});if(output){output.globalCompositeOperation="copy";output.drawImage(backup,0,0);output.globalCompositeOperation="source-over"}}
+  throw error
+ }finally{if(backup){backup.width=1;backup.height=1}}
+ row.valid=true;row.pending=false;row.lastPaint=performance.now();row.frameKey=row.entry?.contentKey??"static";row.framePhase=time
+ ledger.peakPixels=Math.max(ledger.peakPixels,mechaContactAlphaPixels(ledger))
+ target.setAttribute("data-mecha-contact-alpha-valid","true");target.setAttribute("data-study-frame-width",String(source.width));target.setAttribute("data-study-frame-height",String(source.height));mechaContactMetadata(target,settings,time)
+}
+function mechaContactYaw(time:number){const t=Math.max(0,Number.isFinite(time)?time:0);return t<2.4?-Math.PI/3*Math.pow(1-t/2.4,4):(t-2.4)*.27}
+function mechaContactMetadata(canvas:HTMLCanvasElement,settings:Settings,time:number){
+ const contact=settings as MechaContactSettings
+ canvas.setAttribute("data-mecha-contact-time",String(time));canvas.setAttribute("data-mecha-contact-yaw",String(mechaContactYaw(time+contact.contactEntryOffset)))
+ canvas.setAttribute("data-mecha-contact-camera","ortho4world/5,5,5");canvas.setAttribute("data-mecha-contact-materials","FrontSide/maroon.75/skyblue1")
+ canvas.setAttribute("data-mecha-contact-world-span",String(2*.9*settings.artworkScale))
+}
+function createMechaContactRenderer(canvas:HTMLCanvasElement,initial:Settings,_notify:(status:Status,error?:string)=>void,resumeTime=0){
+ const context=canvas.getContext("2d",{alpha:true});if(!context)throw Error("Canvas graphics are unavailable.");const ctx:CanvasRenderingContext2D=context
+ let settings=initial,disposed=false,time=resumeTime,width=1,height=1,bw=1,bh=1
+ function resize(){width=Math.max(1,settings.renderWidth??canvas.clientWidth??420);height=Math.max(1,settings.renderHeight??canvas.clientHeight??630);[bw,bh]=mechaBuffer(settings,width,height);if(canvas.width!==bw||canvas.height!==bh){canvas.width=1;canvas.height=1;canvas.width=bw;canvas.height=bh}}
+ function renderAt(phase:number){
+  if(disposed)return;time=phase
+  ctx.setTransform(bw/width,0,0,bh/height,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation="source-over";ctx.shadowBlur=0;ctx.clearRect(0,0,width,height)
+  const contact=settings as MechaContactSettings,yaw=mechaContactYaw(phase+contact.contactEntryOffset),c=Math.cos(yaw),s=Math.sin(yaw)
+  const rotate=([x,y,z]:number[])=>[c*x+s*z,y,-s*x+c*z],project=([x,y,z]:number[])=>[(x-z)*Math.SQRT1_2,(-x+2*y-z)/Math.sqrt(6),(x+y+z)/Math.sqrt(3)]
+  const prepared=getMechaMeshes().map(mesh=>({mesh,points:mesh.vertices.map(value=>project(rotate(value)))})),depths=prepared.flatMap(row=>row.points.map(point=>point[2]))
+  const low=Math.min(...depths),high=Math.max(...depths),bins=Array.from({length:128},()=>[[],[]] as number[][][][]),fit=height/4*.9*settings.artworkScale
+  let frontTriangles=0
+  for(const{mesh,points}of prepared)for(let index=0;index<mesh.faces.length;index++){
+   const normal=rotate(mesh.normals[index]);if((normal[0]+normal[1]+normal[2])/Math.sqrt(3)<=0)continue
+   const face=mesh.faces[index],depth=face.reduce((sum,vertex)=>sum+points[vertex][2],0)/3,bin=Math.max(0,Math.min(127,Math.floor((depth-low)/Math.max(.00001,high-low)*127)))
+   bins[bin][mesh.black?1:0].push(face.map(vertex=>points[vertex]));frontTriangles++
+  }
+  // Bounded painter-order batches retain the genuine mesh/material regions.
+  // This independent Canvas rasterization does not claim WebGL edge parity.
+  for(const materials of bins)for(let material=0;material<2;material++){
+   const triangles=materials[material];if(!triangles.length)continue
+   ctx.beginPath();ctx.fillStyle=material===1?"#c5f0f7":"#911a46";ctx.globalAlpha=material===1?1:.75
+   for(const triangle of triangles){triangle.forEach((point,index)=>{const x=width/2+point[0]*fit,y=height/2-point[1]*fit;if(index)ctx.lineTo(x,y);else ctx.moveTo(x,y)});ctx.closePath()}
+   ctx.fill()
+  }
+  ctx.globalAlpha=1;canvas.setAttribute("data-mecha-contact-front-triangles",String(frontTriangles));mechaContactMetadata(canvas,settings,phase)
+  const output=settings.colorHost?mechaContactAlphaLedger().byProxy.get(settings.colorHost):undefined
+  if(output)try{mechaContactAlphaPublish(output,canvas,settings,phase);output.display.setAttribute("data-mecha-contact-front-triangles",String(frontTriangles))}catch(error){output.pending=false;throw error}
+ }
+ resize();return{update(next:Settings){if(disposed)return;settings=next;resize()},resize,renderAt,setPointer(_x:number,_y:number,_staticPose=false){},dispose(){disposed=true;canvas.width=1;canvas.height=1},getSnapshot(){return{time,lost:false}}}
+}
+function publishMechaContactFrame(row:MechaContactAlpha){
+ const e=row.entry;if(!e?.hasFrame||e.frameKey!==e.contentKey)return false
+ if(!row.valid||row.frameKey!==e.frameKey||Math.abs(row.framePhase-e.framePhase)>.000001){mechaContactAlphaRefresh(row);return false}
+ for(const name of["state","frame-width","frame-height","demand-width","demand-height"]) {const value=row.proxy.getAttribute("data-study-"+name);if(value!==null)row.display.setAttribute("data-study-"+name,value)}
+ return true
+}
+function useMechaContactSurface(root:React.RefObject<HTMLDivElement>,proxy:React.RefObject<HTMLCanvasElement>,display:React.RefObject<HTMLCanvasElement>,settings:MechaContactSettings,target:ReturnType<typeof RenderTarget.current>,notify:(status:Status,error?:string)=>void){
+ const entry=React.useRef<StudyEntry|null>(null),pool=React.useRef<StudyPool|null>(null),alpha=React.useRef<MechaContactAlpha|null>(null),current=React.useRef(settings),callback=React.useRef(notify),snapshot=React.useRef<{stillTime:number;time:number}|null>(null),staticKey=React.useRef("")
+ current.current=settings;callback.current=notify
+ const oneShot=()=>{
+  const host=display.current,row=alpha.current;if(!host||!row)return
+  const stage=document.createElement("canvas"),next=current.current,width=host.clientWidth||root.current?.clientWidth||420,height=host.clientHeight||root.current?.clientHeight||630
+  const dpr=Math.max(.1,Math.min(2,window.devicePixelRatio||1)),long=Math.max(384,Math.ceil(Math.max(width,height)*dpr/128)*128)
+  let bw=width>=height?long:long*width/height,bh=width>=height?long*height/width:long;const fit=Math.min(1,Math.sqrt(2000000/(bw*bh)));bw=Math.max(1,Math.floor(bw*fit));bh=Math.max(1,Math.min(Math.floor(2000000/bw),Math.floor(bh*fit)))
+  let renderer:StudyRenderer|undefined
+  try{
+   renderer=createMechaContactRenderer(stage,{...next,managed:true,static:true,renderWidth:width,renderHeight:height,managedBufferWidth:bw,managedBufferHeight:bh,pixelBudget:2000000,colorHost:row.proxy},(_status,error)=>{if(error)callback.current("recovering",error)},next.stillTime);renderer.renderAt(next.stillTime)
+   host.setAttribute("data-study-frame-width",String(stage.width));host.setAttribute("data-study-frame-height",String(stage.height));host.setAttribute("data-study-demand-width",String(bw));host.setAttribute("data-study-demand-height",String(bh));host.setAttribute("data-study-state","ready");mechaContactMetadata(host,next,next.stillTime);callback.current("static");return stage.width*stage.height
+  }catch(error){callback.current("recovering",String(error))}finally{renderer?.dispose();stage.width=1;stage.height=1}
+ }
+ React.useLayoutEffect(()=>{
+  if(!root.current||!proxy.current||!display.current)return
+  staticKey.current="";const ledger=mechaContactAlphaLedger(),row:MechaContactAlpha={id:++ledger.serial,epoch:0,root:root.current,proxy:proxy.current,display:display.current,entry:null,pool:null,settings:current.current,valid:false,pending:false,frameKey:"",framePhase:0,lastPaint:0,disposed:false}
+  row.display.width=1;row.display.height=1;row.proxy.width=1;row.proxy.height=1;ledger.records.add(row);ledger.byProxy.set(row.proxy,row);alpha.current=row
+  const destroy=()=>{row.disposed=true;ledger.byProxy.delete(row.proxy);ledger.records.delete(row);row.display.width=1;row.display.height=1;row.proxy.width=1;row.proxy.height=1;alpha.current=null}
+  if(target===RenderTarget.export||target===RenderTarget.thumbnail)return destroy
+  const shared=getStudyPool();pool.current=shared;row.pool=shared;row.settings={...current.current,artworkRevision:mechaContactAlphaRevision(row)}
+  const added=shared.add({root:root.current,display:proxy.current,source:"MechaScrollMark.tsx:MechaContactMark",target:target===RenderTarget.canvas?"canvas":"preview",settings:row.settings,factory:createMechaContactRenderer,notify:(status,error)=>callback.current(status,error)})
+  const saved=snapshot.current;added.phase=saved&&saved.stillTime===current.current.stillTime?saved.time:current.current.static||current.current.contactPaused?current.current.stillTime:0
+  entry.current=added;row.entry=added
+  const sync=()=>publishMechaContactFrame(row),observer=new MutationObserver(sync);observer.observe(row.proxy,{attributes:true,attributeFilter:["data-study-state","data-study-frame-width","data-study-frame-height"]})
+  const visible=new IntersectionObserver(()=>mechaContactAlphaRefresh(row));visible.observe(row.root)
+  return()=>{observer.disconnect();visible.disconnect();snapshot.current={stillTime:added.settings.stillTime,time:added.phase};shared.remove(added);entry.current=null;pool.current=null;destroy()}
+ },[target])
+ React.useLayoutEffect(()=>{
+  if(entry.current&&alpha.current){const row=alpha.current;row.settings={...settings,artworkRevision:mechaContactAlphaRevision(row)};pool.current?.update(entry.current,row.settings)}
+  else if(target===RenderTarget.export||target===RenderTarget.thumbnail){const key=String(target)+"/"+JSON.stringify(settings)+"/"+(display.current?.clientWidth??0)+"/"+(display.current?.clientHeight??0)+"/"+(window.devicePixelRatio||1);if(staticKey.current!==key){staticKey.current=key;getStudyPool().runStatic(oneShot)}}
+ },[settings,target])
+ return()=>{if(alpha.current)mechaContactAlphaRefresh(alpha.current)}
+}
+function mechaContactPainted(node:HTMLElement){for(let parent:HTMLElement|null=node;parent;parent=parent.parentElement){const style=getComputedStyle(parent);if(parent.hidden||style.display==="none"||style.visibility!=="visible"||Number(style.opacity)===0)return false}const box=node.getBoundingClientRect();return box.width>0&&box.height>0&&box.right>0&&box.bottom>0&&box.left<window.innerWidth&&box.top<window.innerHeight}
+function MechaContactSurface(props:MechaContactProps){
+ const{canvasMotion=false,paused=false,stillTime=2.4,entryOffset=0,artworkScale=1,style}=props,target=RenderTarget.current(),staticRenderer=useIsStaticRenderer(),canvasPreview=canvasMotion&&target===RenderTarget.canvas
+ const isStatic=target===RenderTarget.export||target===RenderTarget.thumbnail||(staticRenderer&&!canvasPreview)||(target===RenderTarget.canvas&&!canvasPreview)
+ const root=React.useRef<HTMLDivElement>(null),proxy=React.useRef<HTMLCanvasElement>(null),canvas=React.useRef<HTMLCanvasElement>(null),refreshAlpha=React.useRef<()=>void>(()=>{}),[admitted,setAdmitted]=React.useState(false),[error,setError]=React.useState("")
+ React.useLayoutEffect(()=>{
+  const node=root.current;if(!node||target===RenderTarget.export||target===RenderTarget.thumbnail){setAdmitted(false);return}
+  let active=true,intersects=false
+  const ancestors:HTMLElement[]=[],animations=new Map<Animation,()=>void>()
+  const read=()=>{
+   if(!active)return
+   setAdmitted(!isStatic&&intersects&&!document.hidden&&mechaContactPainted(node));refreshAlpha.current()
+   // The native Contact sheet uses WAAPI. Its completion does not dispatch a
+   // CSS transitionend/animationend event; observe only those owned ancestors.
+   for(const parent of ancestors)for(const animation of parent.getAnimations?.()??[]){
+    if(animations.has(animation)||animation.playState==="finished"||animation.playState==="idle")continue
+    const complete=()=>{animation.removeEventListener("finish",complete);animation.removeEventListener("cancel",complete);animations.delete(animation);read()}
+    animations.set(animation,complete);animation.addEventListener("finish",complete);animation.addEventListener("cancel",complete)
+   }
+  }
+  const observer=new IntersectionObserver(rows=>{for(const row of rows)if(row.target===node)intersects=row.isIntersecting;read()});observer.observe(node)
+  const attributes=new MutationObserver(read)
+  for(let parent:HTMLElement|null=node;parent;parent=parent.parentElement){ancestors.push(parent);attributes.observe(parent,{attributes:true,attributeFilter:["style","class","hidden","data-mecha-contact-state"]})}
+  const completed=(event:Event)=>{if(ancestors.includes(event.target as HTMLElement))read()}
+  for(const parent of ancestors){parent.addEventListener("transitionend",completed);parent.addEventListener("animationend",completed)}
+  document.addEventListener("visibilitychange",read)
+  return()=>{active=false;observer.disconnect();attributes.disconnect();document.removeEventListener("visibilitychange",read);for(const parent of ancestors){parent.removeEventListener("transitionend",completed);parent.removeEventListener("animationend",completed)}for(const[animation,complete]of animations){animation.removeEventListener("finish",complete);animation.removeEventListener("cancel",complete)}animations.clear()}
+ },[isStatic,target])
+ const settings:MechaContactSettings={mode:"mechaScroll",artworkRevision:MECHA_CONTACT_REVISION,animate:admitted&&!paused&&!isStatic,static:isStatic,canvasPreview,speed:1,stillTime:Math.max(0,Number.isFinite(stillTime)?stillTime:2.4),interactive:false,primary:"#911a46",secondary:"#911a46",ink:"#c5f0f7",sceneState:{progress:0},artworkScale:Math.max(.5,Math.min(1.5,Number.isFinite(artworkScale)?artworkScale:1)),contactPaused:paused,contactEntryOffset:Math.max(0,Number.isFinite(entryOffset)?entryOffset:0)}
+ refreshAlpha.current=useMechaContactSurface(root,proxy,canvas,settings,target,(_status,message)=>setError(message??""))
+ return <div ref={root} data-mecha-contact-admitted={admitted&&!paused&&!isStatic} style={{width:"100%",height:"100%",...style,position:"relative",background:"transparent",overflow:"hidden",pointerEvents:"none"}}><canvas ref={proxy} aria-hidden="true" style={{position:"absolute",inset:0,display:"block",width:"100%",height:"100%",opacity:0,pointerEvents:"none"}}/><canvas ref={canvas} role="img" aria-label="MECHA contact mark from the original two GLB materials" style={{position:"absolute",inset:0,display:"block",width:"100%",height:"100%"}}/>{error&&<span role="status" style={{position:"absolute",left:8,bottom:8,font:"10px monospace",color:"#c5f0f7"}}>Restoring source mark…</span>}</div>
+}
+/**
+ * @framerSupportedLayoutWidth any
+ * @framerSupportedLayoutHeight any
+ * @framerIntrinsicWidth 420
+ * @framerIntrinsicHeight 630
+ */
+export function MechaContactMark(props:MechaContactProps){return <MechaContactSurface key={MECHA_CONTACT_REVISION} {...props}/>}
+addPropertyControls(MechaContactMark,{canvasMotion:{type:ControlType.Boolean,title:"Canvas motion",defaultValue:false},paused:{type:ControlType.Boolean,title:"Paused",defaultValue:false},stillTime:{type:ControlType.Number,title:"Still / seconds",min:0,max:60,step:.1,defaultValue:2.4},entryOffset:{type:ControlType.Number,title:"Entry offset",min:0,max:3,step:.01,defaultValue:0},artworkScale:{type:ControlType.Number,title:"Artwork size",min:.5,max:1.5,step:.01,defaultValue:1}})

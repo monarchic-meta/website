@@ -123,12 +123,12 @@
   "framerOverrideCompatibility": {
     "status": "SOURCE_COMPILE_CLEAN_SEVEN_OVERRIDES_NATIVE_AUTHORING_PENDING",
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowDetail.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/framer-override-compatibility/validation/SourceMechaTomorrowDetail.tsx",
       "bytes": 15265,
       "sha256": "98e20f748ceea5cbb650b027c43fb7503bb510778bdf567fb7cbf1453ef54221"
     },
     "test": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-tomorrow-detail.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/framer-override-compatibility/validation/check-source-mecha-tomorrow-detail.mjs",
       "bytes": 19663,
       "sha256": "2476cca102042e49a0e71235314a46686b021f80b63027e7146c4e8fd35951ed"
     },
@@ -197,5 +197,16 @@
     ],
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "namedContactGuardScope": {
+    "reason": "Contact named component appends after the byte-exact323818B legacy mark. Tomorrow behavior is unchanged; the current checker scopes the olddefault/eightcontrols independently.",
+    "historicalCurrentChecker": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/legacy-tomorrow-guard-proposal/check-source-mecha-tomorrow-detail.before.mjs",
+    "reviewedProposal": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/legacy-tomorrow-guard-proposal/proposal.json",
+    "currentChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-tomorrow-detail.mjs",
+      "bytes": 22326,
+      "sha256": "dc5ff6f3e3c27ad2ba2a94878e7bca703947e5f253811d1fedc96c09a3120d7a"
+    },
+    "rerun": "Syntax verified for this guard amendment; old Tomorrow proofs retain exact historical source/checker inputs."
   }
 }

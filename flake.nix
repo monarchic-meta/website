@@ -327,6 +327,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          mecha-contact-mark = (mkWebsiteCheck "mecha-contact-mark" ''
+            export MONARCHIC_MECHA_CONTACT_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:mecha-contact-mark
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio

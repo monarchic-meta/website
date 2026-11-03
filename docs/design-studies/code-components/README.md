@@ -68,6 +68,23 @@ keeps actual Framer admission, source-state comparison and reload distinct.
 nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
+## Mecha contact mark
+
+The named `MechaContactMark` export in [MechaScrollMark.tsx](MechaScrollMark.tsx)
+recreates HERO-015’s contact-panel model using its genuine geometry and source
+camera. It keeps translucent maroon and opaque cyan materials on a transparent
+canvas. The existing renderer and eight default controls remain byte-exact.
+
+Its [provenance](assets/mecha-scroll-mark-provenance.json) records eight strict
+and coordinator checks plus 27 browser checks. The shared context limit remains
+two; an additional 8MP alpha-output ledger makes the combined retained-display
+ceiling 32MP. Source blending, spin timing and actual Framer composition retain
+separate fidelity and Preview gates. The work is credited Source inspiration.
+
+```sh
+nix build .#checks.x86_64-linux.mecha-contact-mark --max-jobs 1 --cores 2
+```
+
 ## FORMAT introductory clock
 
 The seven added native overrides in [SourceFormatDetails.tsx](SourceFormatDetails.tsx)

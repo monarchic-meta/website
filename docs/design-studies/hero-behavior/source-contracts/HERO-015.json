@@ -311,8 +311,8 @@
     "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_ACTUAL_PAINT_PREVIEW_AND_RELOAD_PENDING",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-detail-provenance.json",
-      "bytes": 12461,
-      "sha256": "3280f966472477782b40b4841354b2eed21c17bbfc22659328b543c22eb7cd5f"
+      "bytes": 13881,
+      "sha256": "008dc2de56dbc2c35f764b00309e0c2e536c043f88dddfe8e00eecaa4a2dc7ee"
     },
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation/SourceMechaTomorrowDetail.tsx",
@@ -361,5 +361,53 @@
     "actualCompilerDiagnostics": 0,
     "publicOverrides": 7,
     "scope": "Tomorrow Recycling Phone MORE sheet:35editablefamilies across70D/Pparts,12genuineRTEfamilies,7separate media,2746px content with independent scroll and Close. Sharedvariantroles use tested Desktop guard. Contactmodal/otherprojectdetails and actualFrameranimation/media/reload remainopen."
+  },
+  "contactLiveMark": {
+    "status": "LOCAL_8_STRICT_COORDINATOR_AND27_BROWSER_PASS_ACTUAL_AUTHORING_PENDING",
+    "classification": "Source inspiration / credited recreation",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/root-frozen-validated-inputs/MechaScrollMark.tsx",
+      "bytes": 343885,
+      "sha256": "cca8b47d02225762ec03b01c3527c9a0ac82d3a44fd3553bc71bc26c5eb4d5c0"
+    },
+    "currentRepositorySource": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/MechaScrollMark.tsx",
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/root-frozen-validation-receipt.json",
+      "bytes": 4738,
+      "sha256": "93bbddde523ded83d1a457d2f7b4ed4633a6a25c60b80044e0eb7f41821bbaa1"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/mecha-scroll-mark-provenance.json",
+      "bytes": 28593,
+      "sha256": "d01d92b4eb08838650fef338e5737a83216495957be872ec06046329bb1a0052"
+    },
+    "nix": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/nix-target-evaluation-receipt.json",
+      "bytes": 512,
+      "sha256": "f2f913dc736bf61da4c5905eca35a690a08d0f0fb0a49742adc3d340556d9760"
+    },
+    "namedComponent": "MechaContactMark",
+    "propertyControls": 5,
+    "preservation": "Exact323818B oldrenderer/default/eightcontrols prefix; existing native/source owner changes are separate.",
+    "materials": "Genuine two-primitive model and orthographic source camera; transparent maroon.75 and opaque cyan, independent Canvas painter projection. Not source WebGL blending parity.",
+    "resources": {
+      "maxSharedContexts": 2,
+      "alphaOutputBudget": 8000000,
+      "priorDisplayBudget": 24000000,
+      "combinedDisplayPolicy": 32000000,
+      "mixedMeasuredPixels": 9649664,
+      "cleanupOutputs": 0
+    },
+    "limits": [
+      "Depth-bin edge/blending approximation; normalized60Hz spin and asset-ready timing are fits.",
+      "Phone logicalwidthclientWidth rounds by less1px; logicalheight422 is separate from293pxclip.",
+      "Actual Framer named registration, native composition, Preview and editor reload are not established by the local proof."
+    ],
+    "actualFramer": {
+      "sourceWritten": false,
+      "nativePlaced": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

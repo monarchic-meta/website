@@ -66,6 +66,7 @@
     "check:source-hero-journey-study": "node scripts/check-source-hero-journey-study.mjs",
     "check:source-hero-journey-browser": "node scripts/check-source-hero-journey-browser.mjs",
     "check:mecha-scroll-mark": "node scripts/check-mecha-scroll-mark.mjs",
+    "check:mecha-contact-mark": "node scripts/check-mecha-contact-mark.mjs",
     "check:mecha-scroll-mark-browser": "node scripts/check-mecha-scroll-mark-browser.mjs",
     "check:source-kaspar-ascii-study": "node scripts/check-source-kaspar-ascii-study.mjs",
     "check:source-kaspar-ascii-browser": "node scripts/check-source-kaspar-ascii-browser.mjs",

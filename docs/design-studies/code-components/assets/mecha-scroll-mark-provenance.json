@@ -194,9 +194,11 @@
   },
   "validation": {
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/MechaScrollMark.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/before/MechaScrollMark.tsx",
       "sha256": "bd460fe3b64e7ca83a476c0df774a46054368e5375c66294f1e93f52b411b24a",
-      "bytes": 323818
+      "bytes": 323818,
+      "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/MechaScrollMark.tsx",
+      "currentSuccessor": "contactMark.source"
     },
     "strictScript": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-mecha-scroll-mark.mjs",
@@ -261,5 +263,213 @@
       "sha256": "17d368088c1196ce838b2cb1c8cb49982aa926e5bba90908a0610ffce641bffe",
       "bytes": 4562
     }
+  },
+  "contactMark": {
+    "status": "Local current-source proof complete:8 strict/SSR/coordinator groups and27 real Chromium groups passed. Actual Framer named-export registration, native UI composition, Preview and saved reload remain pending.",
+    "classification": "Source inspiration / HERO-015 / close source-led recreation",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/MechaScrollMark.tsx",
+      "sha256": "cca8b47d02225762ec03b01c3527c9a0ac82d3a44fd3553bc71bc26c5eb4d5c0",
+      "bytes": 343885
+    },
+    "checker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-mecha-contact-mark.mjs",
+      "sha256": "8c9aa487248373ba3d070e413b4c934143b518d2abdb364d96df0239291fb830",
+      "bytes": 38154
+    },
+    "preservedPrefix": {
+      "bytes": 323818,
+      "sha256": "bd460fe3b64e7ca83a476c0df774a46054368e5375c66294f1e93f52b411b24a",
+      "scope": "Entire previous geometry, default renderer/component, eight controls and shared coordinator are byte-exact."
+    },
+    "namedComponent": {
+      "export": "MechaContactMark",
+      "evidence": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-writer611/seal614-actual-data.json",
+        "sha256": "7a4099d584be22188460cc0dbb2eebd32c5e31fe1970f62608e75db14c3fbf43",
+        "bytes": 173633
+      },
+      "scope": "Actual project614 positively contains SourcePolarFilm and SourceJonWayProjectMark as named component exports alongside default components. The new Contact export is not yet registered/read back."
+    },
+    "geometry": {
+      "primitives": 2,
+      "vertices": [
+        696,
+        8612
+      ],
+      "triangles": [
+        1388,
+        16968
+      ],
+      "packedLargestSpan": 2,
+      "packedScale": 0.9,
+      "sourceWorldSpan": 1.8,
+      "pixelScale": "logicalHeight / 4 * 0.9; logical CSS dimensions stay independent of raster resolution.",
+      "camera": "Original orthographic left/right +/-2*aspect, top/bottom +/-2; camera (5,5,5) looks at origin.",
+      "materials": [
+        "white primitive -> #911a46 alpha0.75 FrontSide",
+        "BLACK primitive -> #c5f0f7 opaque FrontSide"
+      ],
+      "compositing": "Transparent Canvas2D canonical raster;128 depth bins are an explicit approximation of original WebGL depth/transparent compositing."
+    },
+    "motion": {
+      "sourceEntry": "yaw -pi/3 to0 in2.4s, GSAP power3.out (quartic remaining distance).",
+      "sourceContinuation": ".0045 radians per original requestAnimationFrame.",
+      "adaptation": "Continuation is normalized to0.27 radians/second (60Hz fit). The shared admitted clock freezes offscreen/hidden/paused/reduced; source kept its renderer loop running.",
+      "entryLatency": "Original GLB-ready time is not observed. The authored entry starts on resource admission, with an explicit optional entryOffset control; no source asset latency is claimed."
+    },
+    "alpha": {
+      "method": "One genuine canonical alpha paint then one owned alpha display copy. Opaque v2 output/cache is hidden and used only for scheduling/resolution metadata; it is never a visible fallback.",
+      "budget": {
+        "existingSharedOutputPolicy": 24000000,
+        "privateAlphaOutputBudget": 8000000,
+        "combinedRetainedOutputPolicy": 32000000
+      },
+      "refresh": "Per-placement revision prevents cross-placement opaque cache admission. Offscreen-only alpha eviction invalidates its owned pose; visible re-entry or a mismatched opaque-cache pose requests a new serial paint at a local epoch without hover/Play. The existing ancestor visibility/WAAPI observer invokes the refresh guard for paused and Canvas-frozen actors too, including opacity re-entry without a new intersection threshold.",
+      "quality": "Visible alpha frames are not evicted. Copy failures preserve genuine prior alpha frames, release the pending flag and remain independent from opaque-cache failures. No per-frame pixel readback or readback matting.",
+      "cleanup": "Owned output canvases shrink to1x1, ledger/map entries are removed, observers disconnected and the existing pool entry released. Native ancestor WAAPI finish/cancel listeners are scoped and removed alongside CSS completion listeners, so a zero-opacity entry can readmit without another clock."
+    },
+    "nativeActorBounds": {
+      "desktop": {
+        "logicalWidth": 420,
+        "logicalHeight": 630,
+        "clip": {
+          "x": 935,
+          "y": 135,
+          "width": 420,
+          "height": 630
+        }
+      },
+      "phone": {
+        "logicalWidth": 322.1875,
+        "logicalHeight": 422,
+        "clip": {
+          "x": 33.90625,
+          "y": 64.296875,
+          "width": 322.1875,
+          "height": 293.390625
+        },
+        "childOffsetY": -64.296875,
+        "inheritedRasterLimit": "Shared v2 uses integer clientWidth: the renderer receives322 for exact native CSS322.1875; logicalHeight422 and native clip293.390625 remain exact. This subpixel width difference is declared, not treated as exact camera-aspect parity."
+      },
+      "scope": "Source-observed actor bounds from contact-opening-v2; native UI authoring and corresponding Preview clipping remain Root/writer work."
+    },
+    "validation": {
+      "focusedResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-complete-proof-v3/result.json",
+        "sha256": "c8620d99e927c2f30fffbcf889b2dc4065f2708c594fd73f739ffaf10e87a98a",
+        "bytes": 189671,
+        "strictAndCoordinatorGroups": 8,
+        "browserGroups": 27,
+        "mixedPlacements": 61,
+        "mixedCombinedDisplayPixels": 9649664,
+        "browserPeakAlphaPixels": 6272640,
+        "browserPeakSharedContexts": 2,
+        "cleanup": {
+          "outputs": 0,
+          "displayPixels": 0,
+          "timers": 0,
+          "rafs": 0,
+          "observers": {
+            "MutationObserver": 0,
+            "ResizeObserver": 0,
+            "IntersectionObserver": 0
+          }
+        },
+        "scope": "Actual standalone factories/coordinator in retained deterministic61-placement host; independent real Contact RGBA/material/source-camera/alpha/fresh-render/cache/zoom/lifecycle pixels in one anonymous browser context. GLSL pixels of all60legacy placements and actual Framer are not re-proved by this extension."
+      },
+      "actualFramerAuthored": false,
+      "actualPreviewVerified": false,
+      "editorReloadVerified": false,
+      "checkerScope": "StrictES2020/SSR; retained deterministic actual five legacy factories60placements plus Contact; one actual Chromium context for alpha raster/materials/Phoneclipping/zoom/cache/animation/Pause/hidden/reduced/Canvas/export/copy-failure/8MPeviction/re-entry/focus-handoff/cleanup.",
+      "firstPartial": {
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-first-proof/failure.json",
+          "sha256": "27b2d3684532ac3aab2f2f5c2730aee0b44d839cd462477cc01fe339121a78d0",
+          "bytes": 94252
+        },
+        "source": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-first-proof/MechaScrollMark.tsx",
+          "sha256": "49b3f8e724d4251aad94f502aae17c26a949c0cb27f32156792209a18b3f7002",
+          "bytes": 343589
+        },
+        "checker": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-first-proof/check-mecha-contact-mark.mjs",
+          "sha256": "ff72b882878a00e50ea1693fa981abfb0b7e74fe46a411a200b384f04f97eeed",
+          "bytes": 36324
+        },
+        "staticGroupsPassed": 8,
+        "browserGroupsPassed": 6,
+        "failure": "The test demanded <0.05px logical-width difference from322.1875 despite inherited integer clientWidth322. Fixed only the test and added future live-state failure captures; all current source bytes stayed unchanged."
+      },
+      "secondPartial": {
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/browser-tail-v2/failure.json",
+          "sha256": "893b9f04a2269c0d7e471fc4ddd247dd8555b93d1941acbf1008a06acfa43707",
+          "bytes": 11095
+        },
+        "source": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/browser-tail-v2/MechaScrollMark.tsx",
+          "sha256": "49b3f8e724d4251aad94f502aae17c26a949c0cb27f32156792209a18b3f7002",
+          "bytes": 343589
+        },
+        "checker": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/browser-tail-v2/check-mecha-contact-mark.mjs",
+          "sha256": "e59409f6b7fd27ed1b649a2242ae826fb06a1104c507f00c2d094a84494efbed",
+          "bytes": 37002
+        },
+        "browserGroupsPassed": 19,
+        "failure": "The fixture read retained DOM ready/valid before the requested replacement completed. The saved later live capture is genuine transparent pixels. ready() now also requires owned validity/no-pending/matching current content and phase/!needsStill."
+      },
+      "syntax": "node --check passed; strictES2020/DOM compile also passed in the exact current-source proof.",
+      "visualReview": {
+        "images": [
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-complete-proof-v3/desktop-transparent-on-white.png",
+            "sha256": "0847cf8e0a7e808ebba9129afe02f110d871e7a3cf026ef2ecbd5a68cdc9b3c4",
+            "bytes": 78081
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-complete-proof-v3/desktop-transparent-on-dark.png",
+            "sha256": "cdb2fc63bce58ea80e7f43f529b624b89859f9bb75a57643d8581d60f06bf03c",
+            "bytes": 78932
+          },
+          {
+            "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/frozen-complete-proof-v3/phone-original-clip.png",
+            "sha256": "88ec41ab34e5225977a4b38652568687ab8327168d11effb93fb9ef72fb912cf",
+            "bytes": 39231
+          }
+        ],
+        "scope": "Local renders inspected after pass; alternate black/white backdrops test alpha. Original-camera math and genuine packed geometry are measured, while exact original WebGL blending and an unobserved source asset-ready yaw are not claimed."
+      }
+    },
+    "remainingLimits": [
+      "Independent Canvas painter ordering is not exact source WebGL blending/edge parity.",
+      "The normalized elapsed-time spin and suspended shared resource clock are declared fits.",
+      "Original asset-ready latency and exact corresponding yaw in retained settled screenshots remain unobserved.",
+      "The named Contact export, native clipping, actual Preview animation and saved reload have not been verified in Framer."
+    ],
+    "sourceFacts": [
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/desktop-open-settled.json",
+        "sha256": "9fdd9228505a83ecad1d4253645d3ac9c5ea658671a2c7fb62523e0614af65ac",
+        "bytes": 37949
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/phone-open-settled.json",
+        "sha256": "e02c2237407ebc2222c6bce806b0c556af932b39a06e516724d6f958a32193fe",
+        "bytes": 38493
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/desktop-fresh-contact-inline-inspection-only.js",
+        "sha256": "66a711868e6c825be5d0eaa717c2129f6c996add54e523f0bfa4842a847db18b",
+        "bytes": 10690
+      },
+      {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/model-verification.json",
+        "sha256": "e5f8386de8597960c6dbebc874792677525272e2036a43ea2d196e3eddf7a0ce",
+        "bytes": 304
+      }
+    ]
   }
 }
