@@ -1,0 +1,38 @@
+{
+  "reference": "HERO-012",
+  "classification": "Source inspiration / credited recreation",
+  "creator": "Mezmo",
+  "source": "https://www.mezmo.com/",
+  "status": "FOCUSED_CHECKS_PASSED_ACTUAL_SOURCE_TRANSFER_PENDING",
+  "sourceFile": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/validation/SourceMezmoTerminal.tsx",
+    "bytes": 37606,
+    "sha256": "730e46b60bc2d488ceae25c60d9b902f8292299eaa119b7abc4d0122a02d08e2"
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/validation-receipt.json",
+    "bytes": 3347,
+    "sha256": "35fae5cfbc9666d9c6cb27d8746b632e1d9e1b6a1fe8dd27a80b5b0c4fbefafb"
+  },
+  "sourceAudit": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/observed-brief.json",
+    "bytes": 2141,
+    "sha256": "53e07f7fa954ad73874232c95c09276868bf3be03f7485d8c1ac7cb9118f98b6"
+  },
+  "scope": [
+    "Chronological stage output and command responses survive subsequent work.",
+    "/clear removes the full rendered transcript and intro while keeping workflow/stream state; bareclear/cls reset workflow.",
+    "ArrowUp/Down recalls adjacent-deduplicated commands and restores an unsubmitted draft; CtrlC clears draft/cursor without resettingworkflow.",
+    "Sourcehelp/unknowncommand behavior replaces invented/reset. Compact mode applies to future stages without rewriting oldoutput. Busyinputisreadonly.",
+    "Source18ms initialtypingconstant and genuine followupprompts are retained; no newclock/network/backend.",
+    "Allcurrent266-lineconfigdrawer lifecycle/typing/static/offscreen/reduced/unmount checks remain in the42-casefocusedpass."
+  ],
+  "limits": [
+    "Default stageprose and streamed timing/density remain independently summarized; compact results use the existing summarized rows.",
+    "Stream panel remains inside the terminal rather than the source below-aperturepanel.",
+    "Arrowhistorysourcecaptures were not settled and are bounded accordingly; retained sourcekeyboardimplementation supports the independently recreatedbehavior.",
+    "OtherJonWaybrowserpath unchanged and not repeated. ActualFramercompiler/nativepainting/Preview/reload are separate."
+  ],
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false
+}
