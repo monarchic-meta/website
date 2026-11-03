@@ -105,5 +105,41 @@
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
     }
+  },
+  "helperDeclarationCost": {
+    "status": "LOCAL_FOUR_CHECKS_PASS_ACTUAL_SOURCE_DELIVERY_PENDING",
+    "sourcePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/source-write-plan.json",
+      "bytes": 6719,
+      "sha256": "32ab1212ae6e05c03a743cbe7c42af5c2dfb759e649e111bf5cb5a162a6863c7"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/targeted-result.json",
+      "bytes": 2238,
+      "sha256": "65aa4a1aa188dfa3da409d60f5620701dbb1c73ce6d250255015455e1376ea22"
+    },
+    "inverse": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/final-inverse-receipt.json",
+      "bytes": 3491,
+      "sha256": "177f0bd9cb6d46943f6b2fe28abdcc59e5bc57838d47f715de04a634d1eb306e"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-hero-journey-provenance.json",
+      "bytes": 29447,
+      "sha256": "9233dc1c7835b0f81a8da62d3b6b8bd80ff9f1c53791b7c9c2cdade4595d72cc"
+    },
+    "measuredDeclarationBytes": {
+      "before": 935084,
+      "after": 114
+    },
+    "runtime": "Both emitted JavaScript files, packed/inflated geometry and main fbbcb38f source remain byte-exact. Existing generator now preserves explicit string contracts.",
+    "diagnosticBoundary": "This reduces measured unnecessary literal declaration output. Neither helper exceeded the hypothesized1048576 combined bytes; no established causal explanation for actual TS2307 or claim of runtime/loading improvement.",
+    "actualFramer": {
+      "helpersWritten": false,
+      "mainCompilerClean": false,
+      "knownPriorImportDiagnostics": 2,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

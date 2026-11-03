@@ -82,14 +82,14 @@
     {
       "path": "SourceHeroJourneyData0.ts",
       "exportName": "SOURCE_HERO_JOURNEY_DATA_0",
-      "sha256": "f39d41e1061233cebad4e5949bd86a562295225cf47b36e68756bcf9f9c35fbd",
-      "bytes": 500165
+      "sha256": "6649e527b1e0707f92f5877e1ec2c799ac70ea2177791aa341eee0cee140c3fb",
+      "bytes": 500173
     },
     {
       "path": "SourceHeroJourneyData1.ts",
       "exportName": "SOURCE_HERO_JOURNEY_DATA_1",
-      "sha256": "53160dbbf00a62ce5b029d223a9c76f049e2ae068249b4093df72a6e4806b1f3",
-      "bytes": 435141
+      "sha256": "29e37346f804462a3b4a0e495e423103b14d05bfc77e4357bf99b82c3bd34f9d",
+      "bytes": 435149
     }
   ],
   "currentOriginalImplementation": {
@@ -323,7 +323,7 @@
       "browserCommand": "MONARCHIC_JOURNEY_EVIDENCE_DIR=validation-fbbcb38f/browser PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=lockedChromium147 nice -n10 lockedNode22 scripts/check-source-hero-journey-browser.mjs",
       "tests": [
         {
-          "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-study.mjs",
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/before/check-source-hero-journey-study.mjs",
           "bytes": 17508,
           "sha256": "124ac06559d6d84fca1aeff716ab5b8b5e8e5b0834e19131873570864618e488"
         },
@@ -465,6 +465,77 @@
         "2466px copy extent remains the prior1440×900 source reference; public poster/start coordinates and narrow full-story adaptation remain unchanged.",
         "Original public Phone390×844 notice remains distinct from the retained responsive full-journey adaptation; its touch2.4/no-momentum behavior is not promoted as the original source path."
       ]
+    }
+  },
+  "compileCostCorrection": {
+    "scope": "Explicit string annotations in the two retained geometry helpers avoid inferred declarations that repeat the encoded data. This is a compile-cost correction; actual Framer TS2307/import diagnostics remain unresolved until separately observed.",
+    "priorCanonicalProvenance": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/before/source-hero-journey-provenance.json",
+      "bytes": 24789,
+      "sha256": "08f3a311c4263c463338bf3aa184cc9e81d224deb0e76493a42905eadbc5f928"
+    },
+    "beforeManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/before-manifest.json",
+      "bytes": 2197,
+      "sha256": "f7d4eb4b91c5dafc8ebc3daa4b48af3b0630dda05e63f71f0bb972267a70a3f9"
+    },
+    "sourceCompilerMeasurement": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-import-diagnostics-light-review-v1/compiler-size-hypothesis-receipt.json",
+      "bytes": 9063,
+      "sha256": "057e2d92909687ebfc482e0e5f45ad2b673b947c55548784b2e26e95ecd98594"
+    },
+    "runtimeIdentity": "The type-only patch must emit byte-identical runtime JavaScript, with unchanged packed/raw geometry hashes, helper export names, file names, main imports, main source and native placements.",
+    "validation": {
+      "status": "PASS_FOUR_LOCAL_DATA_AND_DECLARATION_CHECKS",
+      "command": "nice -n 10 /nix/store/lr2c5f2y7q62pzfrkclgsy5yj31hsn5l-nodejs-22.23.4/bin/node scripts/check-source-hero-journey-study.mjs --data-only",
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/targeted-result.json",
+        "bytes": 2238,
+        "sha256": "65aa4a1aa188dfa3da409d60f5620701dbb1c73ce6d250255015455e1376ea22"
+      },
+      "checks": 4,
+      "typescriptVersion": "5.9.3",
+      "totalDeclarationBytes": 114,
+      "previousMeasuredDeclarationBytes": 935084,
+      "declarationBytesRemoved": 934970,
+      "runtimeJavascriptByteIdentical": true,
+      "mainSourceByteExact": true,
+      "actualFramerAuthored": false,
+      "actualFramerDiagnosticsResolved": false,
+      "actualPreviewVerified": false
+    },
+    "priorParts": [
+      {
+        "path": "SourceHeroJourneyData0.ts",
+        "exportName": "SOURCE_HERO_JOURNEY_DATA_0",
+        "sha256": "f39d41e1061233cebad4e5949bd86a562295225cf47b36e68756bcf9f9c35fbd",
+        "bytes": 500165
+      },
+      {
+        "path": "SourceHeroJourneyData1.ts",
+        "exportName": "SOURCE_HERO_JOURNEY_DATA_1",
+        "sha256": "53160dbbf00a62ce5b029d223a9c76f049e2ae068249b4093df72a6e4806b1f3",
+        "bytes": 435141
+      }
+    ],
+    "currentChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-study.mjs",
+      "bytes": 21773,
+      "sha256": "9eaa6f4aec32c621df6f72d7ebe47cc67ee0ce5d81e62af84c6352033a093767"
+    },
+    "historicalCheckerPathCorrection": {
+      "reason": "The previous validation retains its exact prior checker bytes/hash through a frozen external copy; current tooling is recorded separately.",
+      "priorPin": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/before/check-source-hero-journey-study.mjs",
+        "bytes": 17508,
+        "sha256": "124ac06559d6d84fca1aeff716ab5b8b5e8e5b0834e19131873570864618e488"
+      },
+      "currentRepositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-hero-journey-study.mjs"
+    },
+    "sourceWritePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/source-write-plan.json",
+      "bytes": 6719,
+      "sha256": "32ab1212ae6e05c03a743cbe7c42af5c2dfb759e649e111bf5cb5a162a6863c7"
     }
   }
 }
