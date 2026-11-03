@@ -837,9 +837,9 @@
       "source": "https://www.pu-ente.com/",
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
-        "path": "docs/design-studies/hero-behavior/source-contracts/HERO-018.json",
-        "bytes": 13748,
-        "sha256": "c0b2f8594e71172d8d261285c7a80bb94dbe0728d00395fc089065b16c5606a9"
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-018.json",
+        "bytes": 14212,
+        "sha256": "40923800908e36372a7c8ee834503fc75d1f427ee2c9ac6acc06b08b38507010"
       },
       "page": {
         "id": "W0F97yBQg",
@@ -874,7 +874,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3894,
-    "sha256": "37d58b9b0cda06a988c5b2868020f248aef8bd8f7e7880cc6461f5ffa44761b0"
+    "sha256": "3c2272f87bfed1c371241aff93efc8a3d1a57c57f1161a89e6df896ae8dfb377"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

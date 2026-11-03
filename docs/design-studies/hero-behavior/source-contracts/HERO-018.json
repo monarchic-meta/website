@@ -184,7 +184,7 @@
     "nativeOwnerSHA256": "1977bacd736545b26ed82a2b06514ceec7a01def709ce0622f062085b27e3db3"
   },
   "curtainEasingCorrection": {
-    "status": "LOCAL_48_CHECKS_PASS_ACTUAL_SOURCE_WRITE_PENDING",
+    "status": "MCP_SOURCE_APPLIED665_AND_READ_BACK670_ACTUAL_PREVIEW_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-power3-v1/frozen-f5ee831b/SourcePuenteBehaviors.tsx",
       "bytes": 27337,
@@ -204,6 +204,13 @@
     "preservation": "Same13public overrides; exact old-source inverse; no native edits, new loop, timer, renderer or context.",
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "remaining": "Compare full corresponding source moving/reverse states and actual native Framer Preview/reload."
+    "remaining": "Compare full corresponding source moving/reverse states and actual native Framer Preview/reload.",
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/curtain-writer665/final-actual-source-authoring-receipt670.json",
+      "bytes": 1288,
+      "sha256": "30d6fdc3bf2521886306ed7d0037f2f671a7074d394e4a047381b1697186bb71"
+    },
+    "actualFramerSourceWritten": true,
+    "actualCompilerDiagnostics": 0
   }
 }
