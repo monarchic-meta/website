@@ -209,7 +209,7 @@ export function withMechaTomorrowDetailClose(Component: ComponentType<LayerProps
 export function withMechaTomorrowDetailBackground(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail()
-        if (!state || state.frozen) return <Component {...props} ref={ref} />
+        if (!state || state.frozen || !state.phone) return <Component {...props} ref={ref} />
         const animation = state.reduced ? "none" : state.phase === "opening" ? `mechaTomorrowPageUp 1.2s ${MENU_EASE} both` : state.phase === "closing" ? `mechaTomorrowPageBack 1.2s ${MENU_EASE} both` : "none"
         return <Component {...props} ref={ref} aria-hidden={state.active ? true : props["aria-hidden"]} style={{ ...props.style, translate: state.active ? "0 -200px" : props.style?.translate, animation }} />
     })

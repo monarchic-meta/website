@@ -121,7 +121,7 @@
     "afterEditorReload": false
   },
   "framerOverrideCompatibility": {
-    "status": "LOCAL_49_STRICT_AND_21_BROWSER_CHECKS_PASSED_TRANSFER_PENDING",
+    "status": "SOURCE_COMPILE_CLEAN_SEVEN_OVERRIDES_NATIVE_AUTHORING_PENDING",
     "source": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowDetail.tsx",
       "bytes": 15265,
@@ -138,6 +138,32 @@
       "sha256": "56f08c1fa97f78f2252c7932cf8468acea4583f81fc3b628c5b4bbd9088d015e"
     },
     "changes": "Use ES2020-compatible final-array indexing and explicit ComponentType<LayerProps> public argument/return annotations. Keep all seven export names and the native plan unchanged.",
-    "actualFramerClassificationVerified": false
+    "actualFramerClassificationVerified": true,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H15-final-actual-source-receipt.json",
+      "bytes": 4585,
+      "sha256": "bc6d1ef57e81e259c7bc48ae0283160b18e1c6fe51bc8c303389c20afa73a53d"
+    },
+    "currentStatus": "SOURCE_COMPILE_CLEAN_SEVEN_OVERRIDES_NATIVE_AUTHORING_PENDING",
+    "codeFileID": "codeFile/ibfuuNl"
+  },
+  "sharedVariantBindingCorrection": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation/SourceMechaTomorrowDetail.tsx",
+      "bytes": 15281,
+      "sha256": "fccf92d790ae5ecb5aee489fff9c7cf63ce1b5a0fe4f01fc4494829b1f57ce6b"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation-receipt.json",
+      "bytes": 2442,
+      "sha256": "0a8d0da12e86f7cb7d20be5174292f656dad1b36975386cac6dac94ee24ebc66"
+    },
+    "behavior": "Background override returns caller component unchanged while phone=false; one additional guard only.",
+    "publicOverrides": 7,
+    "physicalBindingPolicy": "11 logical Primary writes bind22 actual D/P copies. Existing6prior controller copies are empty; new8logical roles bind16newcopies. More/overlay remainhiddenDesktop; VideoPlayingfalse/controlstrue.",
+    "actualSourceUpdate": false,
+    "nativeBindingsAuthored": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

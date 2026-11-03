@@ -207,6 +207,12 @@ record the observed order change and refresh that exact metadata snapshot only
 after proving the remaining fields unchanged. Keep later preservation checks
 strict against the refreshed snapshot.
 
+Native `codeOverride` assignments are shared across responsive variants. The
+MECHA sheet authoring confirmed that writing a Phone copy also changes its
+Primary copy. Read the previous binding on every affected copy, account for
+those shared writes in preservation checks, and gate Phone behavior in the
+override itself. Desktop and frozen paths must preserve caller styles.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live
