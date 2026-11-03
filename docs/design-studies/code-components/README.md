@@ -93,8 +93,9 @@ prior144 overrides remain byte-exact. No renderer, media or wall clock is added;
 one finite controller updates only while geometry changes.
 
 The [provenance](assets/source-format-intro-clock-provenance.json) records85
-passing local checks, the23-family editable-layer plan and pending native
-authoring. All eighteen Notes and further Daughter states remain separate work.
+passing local checks and native authoring through MCP684:23 families/69 copies
+and126 genuine font tuples. Actual paint, Preview and reload remain open.
+All eighteen Notes and further Daughter states remain separate work.
 
 ```sh
 nix build .#checks.x86_64-linux.source-format-intro-clock --max-jobs 1 --cores 2

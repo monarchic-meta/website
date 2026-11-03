@@ -1198,7 +1198,7 @@
     }
   },
   "introductoryClockBurst": {
-    "status": "LOCAL_VALIDATED_SOURCE_NATIVE_AUTHORING_PENDING",
+    "status": "MCP_SOURCE_AND23_NATIVE_FAMILIES_APPLIED_THROUGH684_ACTUAL_PREVIEW_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/SourceFormatDetails.tsx",
       "bytes": 158666,
@@ -1206,8 +1206,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-intro-clock-provenance.json",
-      "bytes": 5384,
-      "sha256": "91ab6572ebb2b6b55e064944a96c43b0eea44d6090f3898406ab5ec37367c589"
+      "bytes": 6811,
+      "sha256": "32ebf635ae0081df24e1ac923bf713fa0335fe173a70cbcc5a7871dda59203c5"
     },
     "validation": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/validation-receipt.json",
@@ -1237,17 +1237,46 @@
     "sourceFacts": "Retained original Jc/CSS/HTML and four corresponding source frames. Source offsetHeight rounding, available document width versus viewport width, hand/circle growth and source timing formulas are retained. No new live original-site behavior audit is claimed.",
     "preservation": "All144 previous public bodies are a byte-exact prefix. The shared Native behavior source, existing Daughter toggle, all old controls/assets/native IDs and context bindings remain unchanged. The23new-family subtree has an exact-removal inverse.",
     "actualFramer": {
-      "sourceRegistered": false,
-      "nativeWritten": false,
-      "assetWritten": false,
+      "sourceRegistered": true,
+      "nativeWritten": true,
+      "assetWritten": true,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "compilerDiagnostics": 0,
+      "publicOverrides": 151,
+      "logicalFamilies": 23,
+      "physicalCopies": 69,
+      "genuineObysFontTuples": 126,
+      "sceneContextBoundLast": true,
+      "desktopCompactVisiblePhoneFalse": true,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/final-actual-clock-authoring-receipt684.json",
+        "bytes": 5657,
+        "sha256": "916c2982fbe9aec6d3a07e862af3f6f540aebe89f2308ba7ec2a6a51b3af6722"
+      },
+      "currentMap": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/immutable-final-clock-map684.json",
+        "bytes": 8971,
+        "sha256": "0b4377f7be42671b2cc93e4fe804e9d3e662060ed10872a71f319b233974858b"
+      },
+      "ownerSHA256": "564e07590977197b64c2fdf59aeb64f629119e355ada5b5020851b912e887327",
+      "wholeOriginalOwnerInverseSHA256": "9846b0c94bc3c45afee9e65e192df9f58d9915fca2fd3a664dec7fb7f5a786c4"
     },
     "remaining": [
       "All eighteen Notes, missing Daughter variant subjects/placement/pixelation beyond this right-subject toggle.",
       "Native font/asset preflight and direct authoring; actual RTE DOM-id/ref forwarding, affine containing blocks and local stack paint.",
       "Complete moving Framer Preview and editor reload persistence.",
       "Original Lenis smoothing, exact temporal source fit and arbitrary3D perspective remain separate limits."
-    ]
+    ],
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/final-actual-clock-authoring-receipt684.json",
+      "bytes": 5657,
+      "sha256": "916c2982fbe9aec6d3a07e862af3f6f540aebe89f2308ba7ec2a6a51b3af6722"
+    },
+    "actualNativeMap": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/immutable-final-clock-map684.json",
+      "bytes": 8971,
+      "sha256": "0b4377f7be42671b2cc93e4fe804e9d3e662060ed10872a71f319b233974858b"
+    }
   }
 }

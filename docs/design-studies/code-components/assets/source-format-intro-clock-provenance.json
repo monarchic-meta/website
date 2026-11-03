@@ -3,7 +3,7 @@
   "classification": "Source inspiration / credited recreation",
   "creator": "FORMAT / Obys",
   "source": "https://format.obys.agency/",
-  "status": "LOCAL_VALIDATED_SOURCE_NATIVE_AUTHORING_PENDING",
+  "status": "MCP_CLOCK_SOURCE_AND_NATIVE_APPLIED_THROUGH684_ACTUAL_PREVIEW_PENDING",
   "actor": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/SourceFormatDetails.tsx",
     "bytes": 158666,
@@ -76,13 +76,33 @@
     "Original Lenis smoothing, exact temporal source fit and arbitrary3D perspective remain separate limits."
   ],
   "actualFramer": {
-    "sourceRegistered": false,
-    "nativeWritten": false,
-    "assetWritten": false,
+    "sourceRegistered": true,
+    "nativeWritten": true,
+    "assetWritten": true,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "compilerDiagnostics": 0,
+    "publicOverrides": 151,
+    "logicalFamilies": 23,
+    "physicalCopies": 69,
+    "genuineObysFontTuples": 126,
+    "sceneContextBoundLast": true,
+    "desktopCompactVisiblePhoneFalse": true,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/final-actual-clock-authoring-receipt684.json",
+      "bytes": 5657,
+      "sha256": "916c2982fbe9aec6d3a07e862af3f6f540aebe89f2308ba7ec2a6a51b3af6722"
+    },
+    "currentMap": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/clock-writer671/immutable-final-clock-map684.json",
+      "bytes": 8971,
+      "sha256": "0b4377f7be42671b2cc93e4fe804e9d3e662060ed10872a71f319b233974858b"
+    },
+    "ownerSHA256": "564e07590977197b64c2fdf59aeb64f629119e355ada5b5020851b912e887327",
+    "wholeOriginalOwnerInverseSHA256": "9846b0c94bc3c45afee9e65e192df9f58d9915fca2fd3a664dec7fb7f5a786c4"
   },
   "repositorySource": "docs/design-studies/code-components/SourceFormatDetails.tsx",
   "validatedSourceCommit": "bdae3f91",
-  "historyBoundary": "This finite clock receipt pins its immutable151-role source. Later append-only Notes/Daughter work in the canonical repository file has separate validation and authoring receipts."
+  "historyBoundary": "This finite clock receipt pins its immutable151-role source. Later append-only Notes/Daughter work in the canonical repository file has separate validation and authoring receipts.",
+  "actualNativeFit": "Only nested zero-size burst NativeStyle uses ordinary absolute default because fixed is restricted to page-breakpoint children. Its runtime fixed CSS is unchanged; actual DOM positioning remains a Preview gate. No corrective write was needed."
 }
