@@ -131,5 +131,72 @@
       },
       "positive": "Final focused suite rejects cancellation leaks and preserves native child-link exclusion."
     }
+  },
+  "galleryTimingCorrection": {
+    "revision": "source-gallery-height-timeline-v2",
+    "scope": "Only the existing first-project four-card collection; all13 public native overrides,59 existing native families and the separate ASCII renderer/data remain unchanged.",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceKasparNativeBehaviors.tsx",
+      "bytes": 29449,
+      "sha256": "a08470e71afe68f92a7ebf9a84a6ae0c0fbdd0e8857f6a0399041982daf2c883"
+    },
+    "test": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-kaspar-native.mjs",
+      "bytes": 19924,
+      "sha256": "a08a0fbd9e88c0dfcdeeea8e33773dd6de183269fd70fb4984b09e8abbe1df4b"
+    },
+    "sourceFacts": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/gallery-height-timing-v2/source-contract.json",
+      "bytes": 7185,
+      "sha256": "8fb14697c5bb0543089ff4b070a8788e4383a5b5db10449f796b38cb5088ea6f"
+    },
+    "focusedValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/gallery-height-timing-v2/focused-validation-receipt.json",
+      "bytes": 6133,
+      "sha256": "71529fc19cb6ea0fc84428a19dfd064824a3134d0b43f5e7e8f1c2e2b2ba21fd"
+    },
+    "rawFocusedResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/gallery-height-timing-v2/focused-browser-first/result.json",
+      "bytes": 3914,
+      "sha256": "e278fa00f1347bf5c0cd715abf87d91004f3b108c963b28b80e44ba15bc2bbb0"
+    },
+    "historicalProvenance": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-005/gallery-height-timing-v2/prior-native-provenance.json",
+      "bytes": 8059,
+      "sha256": "d3bc9b0c9df50f23004ac9db2eaefb773fc346578e85d3d99132b76602ae7945"
+    },
+    "observedTiming": {
+      "expansion": {
+        "delayMs": 0,
+        "durationMs": 650
+      },
+      "collapse": {
+        "delayMs": 450,
+        "durationMs": 400
+      },
+      "cardGeometryDurationMs": 650
+    },
+    "supersedesHistoricalDifference": "Gallery transforms animate650ms; collection height commits immediately rather than using the source delayed height/collapse timeline.",
+    "implementation": "One finite height WAAPI effect in the existing animation owner. Interruption releases the prior owner synchronously; reduced/hidden/offscreen states settle the selected natural height. Cleanup restores original native inline height/priority and transition attribute. Root height-only changes do not refit the unchanged hero; hero dimensions and font events still refit.",
+    "declaredCurveFit": "The retained cubic-bezier(.65,0,.35,1) curve approximates source GSAP power2.inOut; the650/450/400ms sequence is source-observed.",
+    "verification": {
+      "strictSemanticTypeScript": true,
+      "nativeLikeBrowserChecks": 47,
+      "focusedRunPassed": true,
+      "focusedRunErrors": 0,
+      "syntaxPassed": true,
+      "lockedDerivationRun": false,
+      "toolchain": "Existing Nix Node22.23.4/Chromium147 and flake-evaluated DejaVu/Liberation fontconfig, pnpm script, nice10,one fresh context; full details in focusedValidation.",
+      "newNativeWrites": 0,
+      "newCodeControls": 0,
+      "newPublicHOCs": 0,
+      "asciiRendererOrDataChanged": false,
+      "sharedResourceCoordinatorChanged": false,
+      "actualFramerSourceUpdate": false,
+      "actualFramerSavedReadback": false,
+      "actualFramerPreview": false,
+      "afterEditorReload": false
+    },
+    "nativeIndentBoundary": "Existing Preview uses source25% first-line CSS indent. Retained current NodeProperties docs537/539 do not positively expose a native indentation setter; no guessed native property/write. This does not establish that no such API exists."
   }
 }

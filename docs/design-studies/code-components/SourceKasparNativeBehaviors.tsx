@@ -57,7 +57,7 @@ const CSS = `
 [data-kaspar-current-page] [data-kaspar-native="project-header"] { cursor:pointer; }
 [data-kaspar-current-page] [data-kaspar-native="project-body"] { overflow:hidden!important; height:0!important; transition:height .4s cubic-bezier(.65,0,.35,1); }
 [data-kaspar-current-page] [data-kaspar-native="project-body"][data-kaspar-open="true"] { height:var(--kaspar-body-height)!important; }
-[data-kaspar-current-page] [data-kaspar-native="gallery"] { position:relative!important; width:calc(100% - 10px)!important; height:auto!important; margin:0 5px!important; padding:0!important; display:flex!important; flex-wrap:wrap!important; align-items:stretch!important; align-content:start!important; gap:28px 0!important; }
+[data-kaspar-current-page] [data-kaspar-native="gallery"] { position:relative!important; width:calc(100% - 10px)!important; height:auto; margin:0 5px!important; padding:0!important; display:flex!important; flex-wrap:wrap!important; align-items:stretch!important; align-content:start!important; gap:28px 0!important; }
 [data-kaspar-current-page] [data-kaspar-native="card"] { position:relative!important; left:auto!important; top:auto!important; width:25%!important; height:auto!important; flex:0 0 auto!important; padding:0 5px!important; cursor:pointer; user-select:none; transform-origin:0 0; }
 [data-kaspar-current-page] [data-kaspar-native="card"][data-kaspar-expanded="true"] { width:50%!important; }
 [data-kaspar-current-page] [data-kaspar-native="card"] > * { width:100%!important; }
@@ -118,6 +118,7 @@ function createKasparNativeWorld(root: HTMLElement) {
     root.append(owner)
     let disposed = false, scan = false, timer: ReturnType<typeof setTimeout> | undefined
     let revealTimer: ReturnType<typeof setTimeout> | undefined, revealing = 0
+    let stopGalleryHeight: (() => void) | undefined
     let cueFrame = 0, cueGone = false, cueStarted = false
     let pointer = [0, 0], current = [0, 0]
     let lastActivation: { node: HTMLElement; channel: string; time: number } | undefined
@@ -129,6 +130,19 @@ function createKasparNativeWorld(root: HTMLElement) {
         if (!node) continue
         const values = properties.map(name => [name, node.style.getPropertyValue(name), node.style.getPropertyPriority(name)])
         restores.push(() => values.forEach(([name, value, priority]) => node.style.setProperty(name, value, priority)))
+    }
+    const gallery = query("gallery")
+    if (gallery) {
+        const height = gallery.style.getPropertyValue("height"), priority = gallery.style.getPropertyPriority("height")
+        const transitioning = gallery.getAttribute("data-kaspar-transitioning")
+        // A normal-priority auto height admits the owned WAAPI height effect.
+        // The original native inline value is restored when this world exits.
+        gallery.style.setProperty("height", "auto")
+        restores.push(() => {
+            gallery.style.setProperty("height", height, priority)
+            if (transitioning === null) gallery.removeAttribute("data-kaspar-transitioning")
+            else gallery.setAttribute("data-kaspar-transitioning", transitioning)
+        })
     }
 
     function fitHeadline() {
@@ -248,13 +262,37 @@ function createKasparNativeWorld(root: HTMLElement) {
         const gallery = target.closest<HTMLElement>(selector("gallery"))
         if (!gallery || revealing || revealTimer !== undefined) return
         const cards = Array.from(gallery.querySelectorAll<HTMLElement>(selector("card")))
-        const before = cards.map(card => card.getBoundingClientRect())
+        stopGalleryHeight?.()
         animations.forEach(animation => animation.cancel()); animations.clear()
+        const before = cards.map(card => card.getBoundingClientRect()), previousHeight = gallery.offsetHeight
         const expand = !selected.has(target)
         if (expand) selected.add(target); else selected.delete(target)
         target.dataset.kasparExpanded = String(expand)
         target.setAttribute("aria-expanded", String(expand))
-        const after = cards.map(card => card.getBoundingClientRect())
+        const after = cards.map(card => card.getBoundingClientRect()), nextHeight = gallery.offsetHeight
+        if (!reduced.matches) {
+            // Source script-7 changes card geometry over650ms. Collection height
+            // grows alongside it; shrinking waits450ms then runs400ms, so the
+            // content below cannot jump upward under the moving cards.
+            gallery.style.setProperty("height", `${previousHeight}px`)
+            gallery.dataset.kasparTransitioning = "true"
+            const height = gallery.animate([{ height: `${previousHeight}px` }, { height: `${nextHeight}px` }], {
+                duration: expand ? 650 : 400, delay: expand ? 0 : 450,
+                easing: "cubic-bezier(.65,0,.35,1)", fill: "both",
+            })
+            const finish = () => {
+                if (stopGalleryHeight !== finish) return
+                stopGalleryHeight = undefined
+                animations.delete(height)
+                height.onfinish = height.oncancel = null
+                height.cancel()
+                if (disposed) return
+                gallery.style.setProperty("height", "auto")
+                gallery.removeAttribute("data-kaspar-transitioning")
+            }
+            stopGalleryHeight = finish
+            animations.add(height); height.onfinish = height.oncancel = finish
+        }
         if (!reduced.matches) cards.forEach((card, i) => {
             if (!after[i].width || !after[i].height) return
             const a = card.animate([
@@ -282,11 +320,22 @@ function createKasparNativeWorld(root: HTMLElement) {
     }
     function motion() {
         if (reduced.matches || document.hidden || !visible(root)) {
+            stopGalleryHeight?.()
             clearScan(); stopCue(); animations.forEach(a => a.cancel()); animations.clear()
         } else if (scan) drawScan()
     }
-    const resized = () => { fitHeadline(); scroll(); const body = query("project-body"); if (body?.dataset.kasparOpen === "true") setBody(true) }
-    const observer = new ResizeObserver(resized), intersection = new IntersectionObserver(motion)
+    let heroWidth = 0, heroHeight = 0
+    const resized = () => {
+        const hero = query("hero")
+        heroWidth = hero?.clientWidth ?? 0; heroHeight = hero?.clientHeight ?? 0
+        fitHeadline(); scroll(); const body = query("project-body"); if (body?.dataset.kasparOpen === "true") setBody(true)
+    }
+    const observer = new ResizeObserver(() => {
+        const hero = query("hero")
+        // Gallery height changes resize the page, but not the opening's type.
+        // Refit only actual hero geometry; font events still call resized.
+        if ((hero?.clientWidth ?? 0) !== heroWidth || (hero?.clientHeight ?? 0) !== heroHeight) resized()
+    }), intersection = new IntersectionObserver(motion)
     observer.observe(root); intersection.observe(root)
     const intro = new IntersectionObserver(entries => {
         entries.forEach(entry => { if (entry.isIntersecting && !opened.has(entry.target as HTMLElement)) { opened.add(entry.target as HTMLElement); setBody(true) } })
@@ -336,9 +385,9 @@ function createKasparNativeWorld(root: HTMLElement) {
     document.fonts?.ready.then(() => { if (!disposed) resized() })
     document.fonts?.load("115px KasparSourceBugrino").then(() => { if (!disposed) resized() }).catch(() => {})
     document.fonts?.addEventListener("loadingdone", resized)
-    fitHeadline()
+    resized()
     return () => {
-        disposed = true; clearScan(); stopCue(); animations.forEach(a => a.cancel()); animations.clear()
+        disposed = true; stopGalleryHeight?.(); clearScan(); stopCue(); animations.forEach(a => a.cancel()); animations.clear()
         if (revealTimer !== undefined) clearTimeout(revealTimer)
         observer.disconnect(); intersection.disconnect(); intro.disconnect(); reveal.disconnect(); owner.remove()
         document.removeEventListener("click", activate); document.removeEventListener("keydown", activate)
