@@ -6,12 +6,12 @@
   "capturedSource": "2026-11-01",
   "implementation": "../SourceMezmoTerminal.tsx",
   "source": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-source-typography/SourceMezmoTerminal.tsx",
     "bytes": 33814,
     "sha256": "8a3a2fcfa3beae9910a66c4dd2526cdd0130883cc48d7f79f578103512641e9f"
   },
   "test": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-source-typography/check-current-originals-browser.mjs",
     "bytes": 36599,
     "sha256": "47945baec161d72724ab92d0ccb1c1bd526c00c072ce5e9d9e00b52cbef199df"
   },
@@ -49,5 +49,6 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H12-H5-H15-source550-onward/H12-final-actual-source-receipt.json",
     "bytes": 1979,
     "sha256": "3529b04e15b616eae3bc006c670b44fd4ddc103a7d1c6a182762748df69b36bf"
-  }
+  },
+  "scope": "Frozen configuration-only source/test delivered through551. The later terminal command/history correction has its own source and42-check proof in source-mezmo-terminal-commands-provenance.json; no historical proof is relabeled."
 }

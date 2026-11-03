@@ -105,8 +105,8 @@
       "status": "SOURCE_COMPILER_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_PENDING",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mezmo-configuration-provenance.json",
-        "bytes": 3611,
-        "sha256": "ae48a40a87b885e8c55376c94320fae31d91568253cfdde91a5ea265994f36a1"
+        "bytes": 4121,
+        "sha256": "9dd8d43befdc0086594f3db9bb884da4d12c5f90da797c93667ea3577f28e84d"
       },
       "source": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/previous-source.tsx",
@@ -168,6 +168,42 @@
         "bytes": 14102,
         "sha256": "f342d74cf784a616a11c46f75bcf5fb89af448850d2d182def33ec58c697d7c2"
       }
+    },
+    "terminalCommands": {
+      "date": "2026-11-03",
+      "status": "SOURCE_COMPILE_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/validation/SourceMezmoTerminal.tsx",
+        "bytes": 37606,
+        "sha256": "730e46b60bc2d488ceae25c60d9b902f8292299eaa119b7abc4d0122a02d08e2"
+      },
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mezmo-terminal-commands-provenance.json",
+        "bytes": 3024,
+        "sha256": "f2b47002639c14734a5a15ad875ced9d2d2b11eaeca596e0b13d55074c138a0c"
+      },
+      "validation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/validation-receipt.json",
+        "bytes": 3347,
+        "sha256": "35fae5cfbc9666d9c6cb27d8746b632e1d9e1b6a1fe8dd27a80b5b0c4fbefafb"
+      },
+      "sourceAudit": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/observed-brief.json",
+        "bytes": 2141,
+        "sha256": "53e07f7fa954ad73874232c95c09276868bf3be03f7485d8c1ac7cb9118f98b6"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-writer584/final-actual-terminal-source-receipt.json",
+        "bytes": 1378,
+        "sha256": "0287297c3dbe4af481112d5b5849ffc336d9a1321bd06979a4fc82179c7de196"
+      },
+      "publicControls": 5,
+      "defaultRows": 1,
+      "placements": 3,
+      "behavior": "Full-output clear with workflow preservation, chronological commands/output, inputhistory anddraft restoration, CtrlC, genuinehelp/unknowncommands and compact futuretoolresults. Source18ms initialtyping/genuinefollowupprompts; no newclock/backend.",
+      "remaining": "Defaultinvestigationprose/timing/density stillsummarized. Streamin-aperture remainsafitversussourcebelow-aperturepanel. ActualFramerPreview/reloadunverified.",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }

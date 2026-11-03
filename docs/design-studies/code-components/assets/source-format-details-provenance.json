@@ -1995,7 +1995,7 @@
     "afterEditorReload": false
   },
   "sourcePhotoParallaxFirstTwo": {
-    "status": "LOCAL_COMPOSITE_VALIDATION_PASSED_NATIVE_AUTHORING_PENDING",
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
     "sourceURL": "https://format.obys.agency/",
     "classification": "Source inspiration / bounded current FORMAT photo recreation",
     "credit": "FORMAT — Obys and DES Special Project",
@@ -2331,10 +2331,16 @@
       "reusedProof": "The37 photo math/geometry/resource/Phone checks and10 strict/helper checks on exact180481d0 remain immutable parent evidence. They are not relabelled as new277 runs; only the pointer-style delta received a fresh focused smoke.",
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
-    }
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H18-H13-after-H15/H13-final-actual-authoring-receipt.json",
+      "bytes": 6256,
+      "sha256": "49d371316b26182060c08a316e1c94e1d1adde3d529dfba532d5a8a20042fab4"
+    },
+    "historicalScope": "Earlier slice-only plan/proof fields remain historical. The combined141-override source and10family native receipt supersede authoring-pending statements; early-pip and later Notes are separate."
   },
   "fieldEntrance": {
-    "status": "FROZEN_NONEXECUTING_REVIEW_PACKET",
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
     "sourceURL": "https://format.obys.agency/",
     "credit": "FORMAT — Obys and DES Special Project",
     "sourceSHA256": "9dd33006340c4880180e48e341e40ce182b2b64bff6712ab40878b79a426255b",
@@ -2436,10 +2442,16 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/combined-photo-entry-native-primary-v1.json",
       "sha256": "bebbdb115e41da0d4628fd69f2eea6cf2809d6461f5cb4f0c12cd822ebb86362",
       "bytes": 14161
-    }
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H18-H13-after-H15/H13-final-actual-authoring-receipt.json",
+      "bytes": 6256,
+      "sha256": "49d371316b26182060c08a316e1c94e1d1adde3d529dfba532d5a8a20042fab4"
+    },
+    "historicalScope": "Earlier slice-only plan/proof fields remain historical. The combined141-override source and10family native receipt supersede authoring-pending statements; early-pip and later Notes are separate."
   },
   "earlyPipFlight": {
-    "status": "FROZEN_LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_AUTHORING_PENDING",
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-flight-v1/validation-a3c31077/SourceFormatDetails.tsx",
       "sha256": "a3c310770d7c69bb912790d8424672446c0030b7156987b67c07df26604f80c3",
@@ -2485,6 +2497,33 @@
       "Actual Framer compilation/classification/native hierarchy/ref forwarding/paint/reload remain writer gates.",
       "Remaining original photographs, Notes, alternate journeys and other full-site fidelity gaps are not completed by this branch."
     ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-writer583/final-actual-early-pip-receipt.json",
+      "bytes": 2756,
+      "sha256": "1116c86584bd857156ce55b7ae38275d7ef1653d84d3aa0bf6b50c36c37db50b"
+    },
+    "authoringScope": "Source142/compiler0 andactual3ringfamilies movedoutofexistingclips; exactoldowner9976inverse. Actualpaint/refbridge/Preview/reload remainunverified."
+  },
+  "combinedPhotoAndEntryAuthoring": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/field-entrance-v1/validation-9dd33006/SourceFormatDetails.tsx",
+      "bytes": 136339,
+      "sha256": "9dd33006340c4880180e48e341e40ce182b2b64bff6712ab40878b79a426255b"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H18-H13-after-H15/H13-final-actual-authoring-receipt.json",
+      "bytes": 6256,
+      "sha256": "49d371316b26182060c08a316e1c94e1d1adde3d529dfba532d5a8a20042fab4"
+    },
+    "sourceOverrides": 141,
+    "newNativeFamilies": 10,
+    "newPhysicalFrames": 30,
+    "physicalBindings": 63,
+    "nativeOwnerSHA256": "99763ee1ba2c8050b8323845e43295646b844f6fb4f62be1112c0c82bbc05e2d",
+    "oldOwnerInverseExact": true,
+    "oldImageAndWordBodiesPreserved": true,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
   }

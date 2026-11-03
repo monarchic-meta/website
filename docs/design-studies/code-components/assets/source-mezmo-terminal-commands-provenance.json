@@ -3,7 +3,7 @@
   "classification": "Source inspiration / credited recreation",
   "creator": "Mezmo",
   "source": "https://www.mezmo.com/",
-  "status": "FOCUSED_CHECKS_PASSED_ACTUAL_SOURCE_TRANSFER_PENDING",
+  "status": "SOURCE_COMPILE_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
   "sourceFile": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/validation/SourceMezmoTerminal.tsx",
     "bytes": 37606,
@@ -34,5 +34,10 @@
     "OtherJonWaybrowserpath unchanged and not repeated. ActualFramercompiler/nativepainting/Preview/reload are separate."
   ],
   "actualFramerPreviewVerified": false,
-  "afterEditorReload": false
+  "afterEditorReload": false,
+  "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-writer584/final-actual-terminal-source-receipt.json",
+    "bytes": 1378,
+    "sha256": "0287297c3dbe4af481112d5b5849ffc336d9a1321bd06979a4fc82179c7de196"
+  }
 }

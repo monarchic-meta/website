@@ -40,6 +40,13 @@ Preview checks; all eighteen references are not approved for close fidelity.
   thirteen overrides and native page unchanged. Six static and 27 browser
   checks pass. The outside-tile cursor and original moving-state comparison
   remain separate gaps.
+- FORMAT's first two photo apertures and eight word masks are authored through
+  MCP581. Its subsequent Vee-to-gauge flight compiles and is attached through
+  MCP587, preserving the original ring and panes. Remaining photo fields,
+  Notes/Daughter coverage and actual Preview/reload are still open.
+- Mezmo's terminal clear, history, draft restoration and compact tool-view state
+  compile through MCP584, retaining its five controls and native page. The
+  42-check focused fixture also retains the configuration-drawer checks.
 
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.
