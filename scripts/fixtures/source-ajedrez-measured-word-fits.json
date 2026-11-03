@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 1,
+  "status": "TWO_SOURCE_GLYPH_GEOMETRY_FITS_FOR_INDEPENDENT_NATIVE_STRINGS",
+  "sourceCredit": "Julián Leiss / Ajedrez Film Poem",
+  "sourcePost": "https://x.com/julianleiss/status/2110868325052149925",
+  "originalPlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/measured-1169-1173-two-actor-plan.json",
+    "bytes": 35875,
+    "sha256": "fa3442a59119e36b7356e23df0fc0aac20433478007553c53e5d0114874bf500"
+  },
+  "parent": {
+    "sha256": "a804fd6e347b7a38dfe70cc35b6067e0c9e7a8d91a93496e0c01a8644c4ef810",
+    "bytes": 201266
+  },
+  "scope": {
+    "firstFrame": 1169,
+    "lastFrameExclusive": 1174,
+    "seconds": [
+      48.708333333333336,
+      48.916666666666664
+    ],
+    "actors": 2,
+    "framesPerActor": 5
+  },
+  "actorIndices": [
+    60,
+    25
+  ],
+  "rows": [
+    {
+      "frame": 1169,
+      "positions": [
+        [
+          60,
+          284,
+          480.5,
+          17
+        ],
+        [
+          25,
+          320,
+          289.5,
+          31
+        ]
+      ]
+    },
+    {
+      "frame": 1170,
+      "positions": [
+        [
+          60,
+          188,
+          216.5,
+          16
+        ],
+        [
+          25,
+          151,
+          216.5,
+          31
+        ]
+      ]
+    },
+    {
+      "frame": 1171,
+      "positions": [
+        [
+          60,
+          188,
+          216.5,
+          17
+        ],
+        [
+          25,
+          151,
+          216.5,
+          31
+        ]
+      ]
+    },
+    {
+      "frame": 1172,
+      "positions": [
+        [
+          60,
+          188,
+          215.5,
+          16
+        ],
+        [
+          25,
+          152,
+          215.5,
+          30
+        ]
+      ]
+    },
+    {
+      "frame": 1173,
+      "positions": [
+        [
+          60,
+          188,
+          215.5,
+          17
+        ],
+        [
+          25,
+          151,
+          215.5,
+          31
+        ]
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "nativeActor": {
+        "wordIndex": 60,
+        "desktopID": "v_i9gMUSo",
+        "phoneID": "IZS406b_Vv_i9gMUSo",
+        "name": "film-phase-36-grid-word-10-0",
+        "independentText": "figura"
+      },
+      "nativeOffset": {
+        "x": 0,
+        "y": -3.5
+      },
+      "retainedAnchorEvidence": {
+        "frame": 1172,
+        "reviewNeeded": false,
+        "bitmapIoU": 0.6522,
+        "uniqueShapeMargin": 0.0807,
+        "associationLimit": "Independent identity fit to observed source-ink geometry; not verified source token tracking"
+      },
+      "poses": [
+        {
+          "frame": 1169,
+          "candidateIndex": 61,
+          "sourceInkBounds": {
+            "left": 284,
+            "top": 484,
+            "width": 17,
+            "height": 4
+          },
+          "sourceMaskRows": [
+            "01100010010010010",
+            "01110111011010111",
+            "01010101001100111",
+            "11010111101100111"
+          ],
+          "logical480": {
+            "left": 284,
+            "top": 480.5,
+            "sourceWidth": 17
+          }
+        },
+        {
+          "frame": 1170,
+          "candidateIndex": 9,
+          "sourceInkBounds": {
+            "left": 188,
+            "top": 220,
+            "width": 16,
+            "height": 5
+          },
+          "sourceMaskRows": [
+            "0000000000000000",
+            "1100000010010010",
+            "1010111011010011",
+            "1010111101100101",
+            "1010111101100111"
+          ],
+          "logical480": {
+            "left": 188,
+            "top": 216.5,
+            "sourceWidth": 16
+          }
+        },
+        {
+          "frame": 1171,
+          "candidateIndex": 10,
+          "sourceInkBounds": {
+            "left": 188,
+            "top": 220,
+            "width": 17,
+            "height": 5
+          },
+          "sourceMaskRows": [
+            "10000000000000000",
+            "11100110110100110",
+            "10101110011100010",
+            "10101111011001011",
+            "10101111011001110"
+          ],
+          "logical480": {
+            "left": 188,
+            "top": 216.5,
+            "sourceWidth": 17
+          }
+        },
+        {
+          "frame": 1172,
+          "candidateIndex": 9,
+          "sourceInkBounds": {
+            "left": 188,
+            "top": 219,
+            "width": 16,
+            "height": 6
+          },
+          "sourceMaskRows": [
+            "0000000000000000",
+            "1000000000000000",
+            "1110111011010011",
+            "1010111101110101",
+            "1010111101100111",
+            "0000000001100000"
+          ],
+          "logical480": {
+            "left": 188,
+            "top": 215.5,
+            "sourceWidth": 16
+          }
+        },
+        {
+          "frame": 1173,
+          "candidateIndex": 19,
+          "sourceInkBounds": {
+            "left": 188,
+            "top": 219,
+            "width": 17,
+            "height": 6
+          },
+          "sourceMaskRows": [
+            "00000000000000000",
+            "10000000000000000",
+            "11101110110100110",
+            "10101110011101010",
+            "10101111011001111",
+            "00100000011000100"
+          ],
+          "logical480": {
+            "left": 188,
+            "top": 215.5,
+            "sourceWidth": 17
+          }
+        }
+      ],
+      "adjacentCorrespondence": [
+        {
+          "fromFrame": 1169,
+          "fromIndex": 61,
+          "toFrame": 1170,
+          "toIndex": 9,
+          "reciprocalBest": true,
+          "score": 0.829268,
+          "alignment": {
+            "dx": -1,
+            "dy": 1
+          },
+          "forwardMargin": 0.252345,
+          "reverseMargin": 0.25784,
+          "forwardRunnerUp": {
+            "index": 1,
+            "score": 0.576923,
+            "bounds": {
+              "left": 157,
+              "top": 206,
+              "width": 16,
+              "height": 6
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 73,
+            "score": 0.571429,
+            "bounds": {
+              "left": 302,
+              "top": 524,
+              "width": 17,
+              "height": 5
+            }
+          }
+        },
+        {
+          "fromFrame": 1170,
+          "fromIndex": 9,
+          "toFrame": 1171,
+          "toIndex": 10,
+          "reciprocalBest": true,
+          "score": 0.772727,
+          "alignment": {
+            "dx": 0,
+            "dy": 0
+          },
+          "forwardMargin": 0.223708,
+          "reverseMargin": 0.212727,
+          "forwardRunnerUp": {
+            "index": 1,
+            "score": 0.54902,
+            "bounds": {
+              "left": 157,
+              "top": 206,
+              "width": 16,
+              "height": 6
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 2,
+            "score": 0.56,
+            "bounds": {
+              "left": 179,
+              "top": 206,
+              "width": 16,
+              "height": 6
+            }
+          }
+        },
+        {
+          "fromFrame": 1171,
+          "fromIndex": 10,
+          "toFrame": 1172,
+          "toIndex": 9,
+          "reciprocalBest": true,
+          "score": 0.695652,
+          "alignment": {
+            "dx": 0,
+            "dy": 1
+          },
+          "forwardMargin": 0.176421,
+          "reverseMargin": 0.104743,
+          "forwardRunnerUp": {
+            "index": 2,
+            "score": 0.519231,
+            "bounds": {
+              "left": 179,
+              "top": 205,
+              "width": 17,
+              "height": 7
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 16,
+            "score": 0.590909,
+            "bounds": {
+              "left": 129,
+              "top": 234,
+              "width": 17,
+              "height": 6
+            }
+          }
+        },
+        {
+          "fromFrame": 1172,
+          "fromIndex": 9,
+          "toFrame": 1173,
+          "toIndex": 19,
+          "reciprocalBest": true,
+          "score": 0.897436,
+          "alignment": {
+            "dx": 0,
+            "dy": 0
+          },
+          "forwardMargin": 0.316041,
+          "reverseMargin": 0.334936,
+          "forwardRunnerUp": {
+            "index": 25,
+            "score": 0.581395,
+            "bounds": {
+              "left": 129,
+              "top": 233,
+              "width": 17,
+              "height": 7
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 2,
+            "score": 0.5625,
+            "bounds": {
+              "left": 179,
+              "top": 205,
+              "width": 17,
+              "height": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "nativeActor": {
+        "wordIndex": 25,
+        "desktopID": "DSb56xasv",
+        "phoneID": "IZS406b_VDSb56xasv",
+        "name": "film-phase-36-grid-word-4-3",
+        "independentText": "línea"
+      },
+      "nativeOffset": {
+        "x": 0,
+        "y": -3.5
+      },
+      "retainedAnchorEvidence": {
+        "frame": 1172,
+        "reviewNeeded": false,
+        "bitmapIoU": 0.6273,
+        "uniqueShapeMargin": 0.172,
+        "associationLimit": "Independent identity fit to observed source-ink geometry; not verified source token tracking"
+      },
+      "poses": [
+        {
+          "frame": 1169,
+          "candidateIndex": 3,
+          "sourceInkBounds": {
+            "left": 320,
+            "top": 293,
+            "width": 31,
+            "height": 5
+          },
+          "sourceMaskRows": [
+            "0110001101111011001110011101110",
+            "0110000101100010101111010101110",
+            "0110001101110010111110011000100",
+            "1111101101000010101010010001110",
+            "1001011001111111001100111111111"
+          ],
+          "logical480": {
+            "left": 320,
+            "top": 289.5,
+            "sourceWidth": 31
+          }
+        },
+        {
+          "frame": 1170,
+          "candidateIndex": 8,
+          "sourceInkBounds": {
+            "left": 151,
+            "top": 220,
+            "width": 31,
+            "height": 5
+          },
+          "sourceMaskRows": [
+            "0010000110111001000110011000111",
+            "0111000110101011110101010001111",
+            "0111000100110011010111011000010",
+            "0111010100100011010111011000100",
+            "1101111100111011111101011100111"
+          ],
+          "logical480": {
+            "left": 151,
+            "top": 216.5,
+            "sourceWidth": 31
+          }
+        },
+        {
+          "frame": 1171,
+          "candidateIndex": 9,
+          "sourceInkBounds": {
+            "left": 151,
+            "top": 220,
+            "width": 31,
+            "height": 5
+          },
+          "sourceMaskRows": [
+            "0110000111111011100111011111111",
+            "0111000100101010010101010001111",
+            "0111000100110010010110011100010",
+            "0111110100101010010111011010101",
+            "1101111000111011101101011100111"
+          ],
+          "logical480": {
+            "left": 151,
+            "top": 216.5,
+            "sourceWidth": 31
+          }
+        },
+        {
+          "frame": 1172,
+          "candidateIndex": 8,
+          "sourceInkBounds": {
+            "left": 152,
+            "top": 219,
+            "width": 30,
+            "height": 6
+          },
+          "sourceMaskRows": [
+            "010000100000000000100011000000",
+            "111000110111011111101011111111",
+            "111000100110010010111011000010",
+            "111010100110010010110011000100",
+            "111111100111011111101011110111",
+            "100000000111001000100010100000"
+          ],
+          "logical480": {
+            "left": 152,
+            "top": 215.5,
+            "sourceWidth": 30
+          }
+        },
+        {
+          "frame": 1173,
+          "candidateIndex": 18,
+          "sourceInkBounds": {
+            "left": 151,
+            "top": 219,
+            "width": 31,
+            "height": 6
+          },
+          "sourceMaskRows": [
+            "0000000000000000000000000000000",
+            "0110000111111111100111011111111",
+            "0111000100111010010101010000010",
+            "0111000100110010010110011000110",
+            "0111110100101011011101011110101",
+            "1101101000111011101100011100110"
+          ],
+          "logical480": {
+            "left": 151,
+            "top": 215.5,
+            "sourceWidth": 31
+          }
+        }
+      ],
+      "adjacentCorrespondence": [
+        {
+          "fromFrame": 1169,
+          "fromIndex": 3,
+          "toFrame": 1170,
+          "toIndex": 8,
+          "reciprocalBest": true,
+          "score": 0.59633,
+          "alignment": {
+            "dx": 1,
+            "dy": 0
+          },
+          "forwardMargin": 0.19633,
+          "reverseMargin": 0.111182,
+          "forwardRunnerUp": {
+            "index": 18,
+            "score": 0.4,
+            "bounds": {
+              "left": 175,
+              "top": 248,
+              "width": 30,
+              "height": 5
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 31,
+            "score": 0.485149,
+            "bounds": {
+              "left": 279,
+              "top": 380,
+              "width": 31,
+              "height": 5
+            }
+          }
+        },
+        {
+          "fromFrame": 1170,
+          "fromIndex": 8,
+          "toFrame": 1171,
+          "toIndex": 9,
+          "reciprocalBest": true,
+          "score": 0.785714,
+          "alignment": {
+            "dx": 0,
+            "dy": 0
+          },
+          "forwardMargin": 0.355808,
+          "reverseMargin": 0.411883,
+          "forwardRunnerUp": {
+            "index": 63,
+            "score": 0.429907,
+            "bounds": {
+              "left": 214,
+              "top": 331,
+              "width": 31,
+              "height": 5
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 23,
+            "score": 0.373832,
+            "bounds": {
+              "left": 175,
+              "top": 261,
+              "width": 29,
+              "height": 7
+            }
+          }
+        },
+        {
+          "fromFrame": 1171,
+          "fromIndex": 9,
+          "toFrame": 1172,
+          "toIndex": 8,
+          "reciprocalBest": true,
+          "score": 0.618182,
+          "alignment": {
+            "dx": -1,
+            "dy": 1
+          },
+          "forwardMargin": 0.22163,
+          "reverseMargin": 0.173737,
+          "forwardRunnerUp": {
+            "index": 45,
+            "score": 0.396552,
+            "bounds": {
+              "left": 147,
+              "top": 288,
+              "width": 31,
+              "height": 6
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 63,
+            "score": 0.444444,
+            "bounds": {
+              "left": 214,
+              "top": 331,
+              "width": 31,
+              "height": 5
+            }
+          }
+        },
+        {
+          "fromFrame": 1172,
+          "fromIndex": 8,
+          "toFrame": 1173,
+          "toIndex": 18,
+          "reciprocalBest": true,
+          "score": 0.708738,
+          "alignment": {
+            "dx": 1,
+            "dy": 0
+          },
+          "forwardMargin": 0.225131,
+          "reverseMargin": 0.299214,
+          "forwardRunnerUp": {
+            "index": 86,
+            "score": 0.483607,
+            "bounds": {
+              "left": 17,
+              "top": 691,
+              "width": 31,
+              "height": 6
+            }
+          },
+          "reverseRunnerUp": {
+            "index": 16,
+            "score": 0.409524,
+            "bounds": {
+              "left": 152,
+              "top": 233,
+              "width": 30,
+              "height": 6
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceFrames": [
+    {
+      "frame": 1169,
+      "relativePath": "frame-1169.png",
+      "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457",
+      "bytes": 73857
+    },
+    {
+      "frame": 1170,
+      "relativePath": "frame-1170.png",
+      "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e",
+      "bytes": 79241
+    },
+    {
+      "frame": 1171,
+      "relativePath": "frame-1171.png",
+      "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491",
+      "bytes": 69391
+    },
+    {
+      "frame": 1172,
+      "relativePath": "frame-1172.png",
+      "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c",
+      "bytes": 79069
+    },
+    {
+      "frame": 1173,
+      "relativePath": "frame-1173.png",
+      "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291",
+      "bytes": 78395
+    }
+  ],
+  "sourceFrameRoot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-002/fidelity-refinement/phase36-temporal-inspection/frames",
+  "inversePatches": [
+    {
+      "name": "private measured table/helpers only",
+      "after": "// Two existing independent-word actors have reviewed source-glyph geometry\n// across these five recorded frames. These literal fits retain the1172 anchors;\n// they do not identify poem tokens, infer easing or move the other82 actors.\n// Each row is [actor60 left,top,width, actor25 left,top,width], logical480px.\nconst AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [number, number, number, number, number, number])[] = [\n    [284, 480.5, 17, 320, 289.5, 31],\n    [188, 216.5, 16, 151, 216.5, 31],\n    [188, 216.5, 17, 151, 216.5, 31],\n    [188, 215.5, 16, 152, 215.5, 30],\n    [188, 215.5, 17, 151, 215.5, 31],\n]\n// One effect-dependency slot stays stable per host, but changes when either\n// the native host or this module changes. Weak keys do not retain native DOM.\nconst AJEDREZ_TYPE_MEASURED_OWNERS = new WeakMap<HTMLElement, object>()\nfunction ajedrezTypeMeasuredOwner(host: HTMLElement | null) {\n    if (!host) return null\n    let token = AJEDREZ_TYPE_MEASURED_OWNERS.get(host)\n    if (!token) { token = {}; AJEDREZ_TYPE_MEASURED_OWNERS.set(host, token) }\n    return token\n}\nfunction ajedrezTypeMeasuredFrame(time: number) {\n    const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)\n    return frame >= 1169 && frame < 1174 ? frame : -1\n}\nfunction ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (index !== 60 && index !== 25) return null\n    const row = AJEDREZ_TYPE_MEASURED_FITS[frame - 1169], offset = index === 60 ? 0 : 3\n    return row ? { left: row[offset], top: row[offset + 1], width: row[offset + 2] } : null\n}\n",
+      "before": ""
+    },
+    {
+      "name": "let disposed = false, dirty = true, previousSample",
+      "after": "            let disposed = false, dirty = true, previousSample = -1, previousMeasuredFrame = -1, previousWidth = -1, previousInset: boolean | null = null",
+      "before": "            let disposed = false, dirty = true, previousSample = -1, previousWidth = -1, previousInset: boolean | null = null"
+    },
+    {
+      "name": "if (!live) { clear(); dirty = true; previousSample",
+      "after": "                if (!live) { clear(); dirty = true; previousSample = -1; previousMeasuredFrame = -1; previousInset = null; host.setAttribute(\"data-source-ajedrez-inset-score\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-count\", \"0\"); return }",
+      "before": "                if (!live) { clear(); dirty = true; previousSample = -1; previousInset = null; host.setAttribute(\"data-source-ajedrez-inset-score\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-count\", \"0\"); return }"
+    },
+    {
+      "name": "const sample = ajedrezTypeSample(current.time)",
+      "after": "                const sample = ajedrezTypeSample(current.time), measuredFrame = ajedrezTypeMeasuredFrame(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1",
+      "before": "                const sample = ajedrezTypeSample(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1"
+    },
+    {
+      "name": "cache includes finite measured frame",
+      "after": "                const measuredChanged = previousMeasuredFrame !== measuredFrame\n                if (!positionsChanged && !measuredChanged && previousInset === insetVisible) return\n                dirty = false; previousSample = sample.sourceFrame; previousMeasuredFrame = measuredFrame; previousWidth = host.offsetWidth; previousInset = insetVisible",
+      "before": "                if (!positionsChanged && previousInset === insetVisible) return\n                dirty = false; previousSample = sample.sourceFrame; previousWidth = host.offsetWidth; previousInset = insetVisible"
+    },
+    {
+      "name": "only changed measured actors gain individual writes",
+      "after": "                    const measured = ajedrezTypeMeasuredFit(measuredFrame, index)\n                    if (positionsChanged || measuredChanged && measured !== null) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, sample.sourceFrame === 1176 ? null : (measured?.width ?? sample.widths[index]) * unit, screenUnit)",
+      "before": "                    if (positionsChanged) write(node, Math.round(sample.xy[index * 2] * unit * 100) / 100, Math.round(sample.xy[index * 2 + 1] * unit * 100) / 100, sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)"
+    },
+    {
+      "name": "one dependency token supports retained hook owner refresh",
+      "after": "        }, [ajedrezTypeMeasuredOwner(host)])",
+      "before": "        }, [host])"
+    }
+  ],
+  "preservation": {
+    "publicHOCs": 46,
+    "photographicPoses": 166,
+    "nativeInsetFamilies": 19,
+    "otherWordActors": 82
+  },
+  "limits": [
+    "Independent text remains unchanged; source-glyph placement does not establish poem-word identity.",
+    "Literal24fps measured bounds only;1px scan/antialias variation does not establish easing.",
+    "Only1169..1173 two-actor slice; no full closing trajectory fidelity claim.",
+    "Source pictures are retained comparison evidence; no browser/source/native/reload proof yet."
+  ]
+}

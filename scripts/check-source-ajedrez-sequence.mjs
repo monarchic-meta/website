@@ -6,8 +6,12 @@ import crypto from 'node:crypto'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 const require=createRequire(import.meta.url),ts=require('typescript'),repo=fileURLToPath(new URL('../',import.meta.url)),file=path.join(repo,'docs/design-studies/code-components/SourceAjedrezSequence.tsx'),source=fs.readFileSync(file,'utf8'),hash=b=>crypto.createHash('sha256').update(b).digest('hex'),checks=[],check=(n,f)=>{f();checks.push(n)}
+const measuredChanges=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/assets/source-ajedrez-measured-word-fits-inverse.json')))
+let previousMeasuredSource=source
+for(const patch of measuredChanges.patches){assert.equal(previousMeasuredSource.split(patch.after).length-1,1,'Each measured-fit edit has one exact inverse');previousMeasuredSource=previousMeasuredSource.replace(patch.after,patch.before)}
+check('Sparse measured fits and retained-host refresh are the only delta from a804',()=>{assert.equal(hash(previousMeasuredSource),measuredChanges.parent.sha256);assert.equal(Buffer.byteLength(previousMeasuredSource),measuredChanges.parent.bytes)})
 const insetChanges=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/assets/source-ajedrez-inset-score-inverse.json')))
-let previousInsetSource=source
+let previousInsetSource=previousMeasuredSource
 for(const patch of insetChanges.patches.slice().reverse()){assert.equal(previousInsetSource.split(patch.after).length-1,1,'Each declared inset edit has one exact inverse');previousInsetSource=previousInsetSource.replace(patch.after,patch.before)}
 assert.equal(hash(previousInsetSource),insetChanges.previousSHA256,'Exact inverse restores the actual preceding source including all photographic bytes')
 assert.equal(Buffer.byteLength(previousInsetSource),insetChanges.previousBytes)

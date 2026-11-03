@@ -401,6 +401,35 @@ function ajedrezTypeSample(time: number): AjedrezTypeSample {
     for (const next of AJEDREZ_TYPE_SAMPLES) { if (next.frame > frame) break; sample = next }
     return sample
 }
+// Two existing independent-word actors have reviewed source-glyph geometry
+// across these five recorded frames. These literal fits retain the1172 anchors;
+// they do not identify poem tokens, infer easing or move the other82 actors.
+// Each row is [actor60 left,top,width, actor25 left,top,width], logical480px.
+const AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [number, number, number, number, number, number])[] = [
+    [284, 480.5, 17, 320, 289.5, 31],
+    [188, 216.5, 16, 151, 216.5, 31],
+    [188, 216.5, 17, 151, 216.5, 31],
+    [188, 215.5, 16, 152, 215.5, 30],
+    [188, 215.5, 17, 151, 215.5, 31],
+]
+// One effect-dependency slot stays stable per host, but changes when either
+// the native host or this module changes. Weak keys do not retain native DOM.
+const AJEDREZ_TYPE_MEASURED_OWNERS = new WeakMap<HTMLElement, object>()
+function ajedrezTypeMeasuredOwner(host: HTMLElement | null) {
+    if (!host) return null
+    let token = AJEDREZ_TYPE_MEASURED_OWNERS.get(host)
+    if (!token) { token = {}; AJEDREZ_TYPE_MEASURED_OWNERS.set(host, token) }
+    return token
+}
+function ajedrezTypeMeasuredFrame(time: number) {
+    const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)
+    return frame >= 1169 && frame < 1174 ? frame : -1
+}
+function ajedrezTypeMeasuredFit(frame: number, index: number) {
+    if (index !== 60 && index !== 25) return null
+    const row = AJEDREZ_TYPE_MEASURED_FITS[frame - 1169], offset = index === 60 ? 0 : 3
+    return row ? { left: row[offset], top: row[offset + 1], width: row[offset + 2] } : null
+}
 /** Attach only to the existing phase36 native component instance, beneath its
  * existing Phase36 wrapper. Public native layer names scope all84 words; no
  * generated text, private Framer data or new visual layer is created. */
@@ -419,7 +448,7 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
             const ruleRecords = new Map<HTMLElement, { value: string; priority: string }>()
             type InsetOpacity = { before: { value: string; priority: string }; written: { value: string; priority: string } }
             const insetRecords = new Map<HTMLElement, InsetOpacity>()
-            let disposed = false, dirty = true, previousSample = -1, previousWidth = -1, previousInset: boolean | null = null
+            let disposed = false, dirty = true, previousSample = -1, previousMeasuredFrame = -1, previousWidth = -1, previousInset: boolean | null = null
             const restore = (node: HTMLElement, record: Owned) => {
                 for (const property of properties) if (record.written[property] !== undefined && node.style.getPropertyValue(property) === record.written[property]) {
                     const original = record.before[property]
@@ -484,15 +513,16 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
             const refresh = () => {
                 if (disposed || own.current !== host) return
                 const current = latest.current, live = current.index === 35 && !current.frozen && !current.reduced
-                if (!live) { clear(); dirty = true; previousSample = -1; previousInset = null; host.setAttribute("data-source-ajedrez-inset-score", "native-poster"); host.setAttribute("data-source-ajedrez-grid-status", "native-poster"); host.setAttribute("data-source-ajedrez-grid-count", "0"); return }
-                const sample = ajedrezTypeSample(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1
+                if (!live) { clear(); dirty = true; previousSample = -1; previousMeasuredFrame = -1; previousInset = null; host.setAttribute("data-source-ajedrez-inset-score", "native-poster"); host.setAttribute("data-source-ajedrez-grid-status", "native-poster"); host.setAttribute("data-source-ajedrez-grid-count", "0"); return }
+                const sample = ajedrezTypeSample(current.time), measuredFrame = ajedrezTypeMeasuredFrame(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1
                 // The independent three-frame inset can enter/exit while the
                 // representative word sample stays held. Its edges must not be
                 // swallowed by that cache, or repeat all84 text measurements.
                 const insetVisible = ajedrezInsetScoreVisible(current.time)
                 const positionsChanged = dirty || previousSample !== sample.sourceFrame || previousWidth !== host.offsetWidth
-                if (!positionsChanged && previousInset === insetVisible) return
-                dirty = false; previousSample = sample.sourceFrame; previousWidth = host.offsetWidth; previousInset = insetVisible
+                const measuredChanged = previousMeasuredFrame !== measuredFrame
+                if (!positionsChanged && !measuredChanged && previousInset === insetVisible) return
+                dirty = false; previousSample = sample.sourceFrame; previousMeasuredFrame = measuredFrame; previousWidth = host.offsetWidth; previousInset = insetVisible
                 for (const [node, record] of records) if (!host.contains(node)) { restore(node, record); records.delete(node) }
                 for (const node of ruleRecords.keys()) if (!host.contains(node)) restoreRule(node)
                 for (const node of insetRecords.keys()) if (!host.contains(node)) restoreInset(node)
@@ -509,7 +539,8 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
                         }
                     }
                     if (index === undefined) continue
-                    if (positionsChanged) write(node, Math.round(sample.xy[index * 2] * unit * 100) / 100, Math.round(sample.xy[index * 2 + 1] * unit * 100) / 100, sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)
+                    const measured = ajedrezTypeMeasuredFit(measuredFrame, index)
+                    if (positionsChanged || measuredChanged && measured !== null) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, sample.sourceFrame === 1176 ? null : (measured?.width ?? sample.widths[index]) * unit, screenUnit)
                     count++
                 }
                 host.setAttribute("data-source-ajedrez-inset-score", insetVisible ? "visible" : "hidden")
@@ -520,7 +551,7 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
             const resize = new ResizeObserver(invalidate), mutation = new MutationObserver(invalidate)
             resize.observe(host); mutation.observe(host, { childList: true, subtree: true })
             return () => { disposed = true; resize.disconnect(); mutation.disconnect(); if (update.current === refresh) update.current = null; clear() }
-        }, [host])
+        }, [ajedrezTypeMeasuredOwner(host)])
         useOwnLayoutEffect(() => { update.current?.() }, [state.time, state.index, state.frozen, state.reduced])
         return <Component {...props} ref={bindHost} data-source-ajedrez-type-grid="sampled-native-words" />
     })

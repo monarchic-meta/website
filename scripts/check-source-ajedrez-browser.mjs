@@ -216,7 +216,14 @@ if(!process.env.MONARCHIC_AJEDREZ_GRID_ONLY){
     },fixture)
     const flush=async(ms=100)=>{await page.clock.runFor(ms);await page.waitForTimeout(20);await page.evaluate(()=>ReactDOM.flushSync(()=>{}))}
     await flush(100)
-    const geometryEqual=(snapshot,pose,unit)=>snapshot.words.every((word,index)=>word.left===Math.round(pose.xy[index*2]*unit*100)/100&&word.top===Math.round(pose.xy[index*2+1]*unit*100)/100)
+    const measuredFits=JSON.parse(fs.readFileSync(path.join(repo,'scripts/fixtures/source-ajedrez-measured-word-fits.json')))
+    const geometryEqual=(snapshot,pose,unit)=>{
+        const measured=measuredFits.rows.find(row=>row.frame===pose.activationFrame)
+        return snapshot.words.every((word,index)=>{
+            const point=measured?.positions.find(point=>point[0]===index)
+            return word.left===Math.round((point?.[1]??pose.xy[index*2])*unit*100)/100&&word.top===Math.round((point?.[2]??pose.xy[index*2+1])*unit*100)/100
+        })
+    }
     const initial=await page.evaluate(()=>gridSnapshot())
     check('type-grid owns all84 native text layers while preserving24 rules, IDs, caller ref and content',initial.count===84&&initial.ref&&initial.words.every((word,i)=>word.name===fixture.words[i].name&&word.id===fixture.words[i].desktopID&&word.text===fixture.words[i].independentText)&&initial.rules.length===24&&initial.caller.title==='native caller retained'&&initial.caller.transform==='translateZ(0px)')
     const poseReads=[]
