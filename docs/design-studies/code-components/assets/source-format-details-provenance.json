@@ -2437,5 +2437,55 @@
       "sha256": "bebbdb115e41da0d4628fd69f2eea6cf2809d6461f5cb4f0c12cd822ebb86362",
       "bytes": 14161
     }
+  },
+  "earlyPipFlight": {
+    "status": "FROZEN_LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_AUTHORING_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-flight-v1/validation-a3c31077/SourceFormatDetails.tsx",
+      "sha256": "a3c310770d7c69bb912790d8424672446c0030b7156987b67c07df26604f80c3",
+      "bytes": 138708
+    },
+    "credit": "Source inspiration / FORMAT — Obys and DES Special Project",
+    "retainedSourceFacts": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-coupling-light-review-v1/coupling-note.json",
+      "sha256": "78709d5b65f126e6a0ac3caaafe952a97650418e3c66053a7e0fe5c50b92420a",
+      "bytes": 11315
+    },
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-flight-v1/native-primary-ring-final-plan.json",
+      "sha256": "52acf5fd61c2bbf34aab2eaaa5c3b2a7c91b4e98f567030208966cc4082328d7",
+      "bytes": 24638
+    },
+    "validationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/early-pip-flight-v1/validation-a3c31077/validation-receipt.json",
+      "sha256": "a17f31740129e67019f10616e42e641c351d22a446e66726798e71cb8cde46f4",
+      "bytes": 14033
+    },
+    "publicBodies": "All141 prior exported override function bodies remain byte-identical. Only private magnet/registry/revision and one appended composed provider role change.",
+    "sourceMotion": "Sourcepower2.inOut Vee→gauge center/180→0 turn/1.65→1scale/black→white, then unchanged existing source poster path/diameter/endpoint. One optional registered flight node enables it only after actual native hierarchy is ready.",
+    "nativeDelta": "Move only onePrimary ringfamily from clippedU5 to existing visible-overflowrxNY; rebind outer composedprovider and clear innerprovider. No new stage/Frame/RTE/material/media.",
+    "resourceProof": "One existing continuousworld tick; finite sourceGaugeField read measured separately. Early visible offscreen-poster pose paints on scroll with no ambient RAF; cleanup/static/Phone/reduced allreleaseownedwork.",
+    "validation": {
+      "strictGroups": 10,
+      "staticChecks": 41,
+      "browserChecks": 30,
+      "totalFocusedChecks": 71,
+      "sourceSHA256": "a3c310770d7c69bb912790d8424672446c0030b7156987b67c07df26604f80c3",
+      "testSHA256": "c6401574d5b8f2c0efc9fceeb651d7bbd93a35e66b1df58e38821540b3ce0a64"
+    },
+    "testWiring": {
+      "pnpm": "check:source-format-early-pip",
+      "nix": "source-format-early-pip",
+      "execution": "Prepared only; no Nix rerun or unrelated broad-physics rerun was performed."
+    },
+    "unavoidableDifferences": [
+      "Original motion equations come from cached bu()/CSS/DOM, not a newly observed source input sequence.",
+      "The retained native gauge morph/font fitting is unchanged; this branch adds source-grounded motion and reuses the same editable panes.",
+      "Phone is current source notice plus historical native story adaptation; its original780px gauge and ring field are retained and no owned early flight is active.",
+      "Actual Framer compilation/classification/native hierarchy/ref forwarding/paint/reload remain writer gates.",
+      "Remaining original photographs, Notes, alternate journeys and other full-site fidelity gaps are not completed by this branch."
+    ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

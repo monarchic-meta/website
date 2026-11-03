@@ -276,7 +276,7 @@ function sourceLayout(width: number, height: number): SourceLayout {
 }
 const SourceLayoutContext = React.createContext({ width: 1440, height: 810, frozen: true, phone: false, layout: sourceLayout(1440, 810) })
 // Revision-key the owner of hook-retained worlds when controller protocols change.
-const FORMAT_DOCUMENT_REVISION="native-poster-magnet-87-keyed-v2"
+const FORMAT_DOCUMENT_REVISION="native-poster-magnet-88-flight-keyed-v3"
 type FormatDocumentSurfaceProps = { Native: NativeLayer; layer: LayerProps; nativeRef: React.ForwardedRef<HTMLElement> }
 function FormatDocumentSurface({ Native: Component, layer: props, nativeRef: ref }: FormatDocumentSurfaceProps) {
         const frozen = frozenTarget(), reduced = useReducedMotion(), own = React.useRef<HTMLElement | null>(null), closing = React.useRef<FormatClosingWorld | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null), [view, setView] = React.useState({ width: 1440, height: 810 })
@@ -395,7 +395,7 @@ function stepFormatMagnetGlyph(glyph: FormatMagnetGlyph, rest: { x: number; y: n
     return moving
 }
 function createFormatPosterMagnet() {
-    const glyphs = new Map<number, FormatMagnetGlyph>(); let pip: HTMLElement | null = null, endpoint: HTMLElement | null = null, previous = 0, accumulated = 0, frames = 0, motionPending = true
+    const glyphs = new Map<number, FormatMagnetGlyph>(); let pip: HTMLElement | null = null, endpoint: HTMLElement | null = null, flight: HTMLElement | null = null, previous = 0, accumulated = 0, frames = 0, motionPending = true
     const set = (node: HTMLElement, key: string, value: string) => { if (node.style.getPropertyValue(key) !== value) node.style.setProperty(key, value) }
     const flag = (node: HTMLElement, key: string) => { if (node.getAttribute(key) !== "1") node.setAttribute(key, "1") }
     const clear = (node: HTMLElement, attribute: string, keys: readonly string[]) => { node.removeAttribute(attribute); for (const key of keys) node.style.removeProperty(key) }
@@ -407,6 +407,7 @@ function createFormatPosterMagnet() {
     const registerGlyph = (index: number, node: HTMLElement) => { if (index < 0 || index >= 86) throw Error("FORMAT magnet glyph index outside86 native parts"); const old = glyphs.get(index); if (old) clearGlyph(old); const value = { node, x: 0, y: 0, vx: 0, vy: 0, turn: 0 }; glyphs.set(index, value); pause(); return () => { clearGlyph(value); if (glyphs.get(index) === value) glyphs.delete(index); pause() } }
     const registerPip = (node: HTMLElement) => { if (pip && pip !== node) clear(pip, "data-format-pip-owned", pipKeys); pip = node; pause(); return () => { clear(node, "data-format-pip-owned", pipKeys); if (pip === node) pip = null; pause() } }
     const registerEndpoint = (node: HTMLElement) => { if (endpoint && endpoint !== node) clear(endpoint, "data-format-pip-endpoint-owned", ["--source-format-pip-endpoint-opacity"]); endpoint = node; pause(); return () => { clear(node, "data-format-pip-endpoint-owned", ["--source-format-pip-endpoint-opacity"]); if (endpoint === node) endpoint = null; pause() } }
+    const registerFlight = (node: HTMLElement) => { flight = node; pause(); return () => { if (flight === node) flight = null; pause() } }
     const paint = (now: number, integrate: boolean, g: FormatMagnetGeometry, enabled: boolean) => {
         if (!enabled || glyphs.size !== 86 || !pip?.isConnected || !endpoint?.isConnected) { reset(); return false }
         const u = g.unit, viewport = window.innerHeight, y = window.scrollY, axis = g.top - 837.5 * u, ending = g.top + 1429.12 * u, start = axis - viewport / 2, phase = Math.max(0, Math.min(1, (y - start) / Math.max(1, ending - axis))), sourceY = Math.min(ending, y + viewport / 2), sourceX = formatMagnetX((sourceY - g.top) / Math.max(.001, u)), diameter = 20 + 315 * (1 - (1 - phase) ** 3), circle = { x: g.pr.left + sourceX * u, y: sourceY, radius: diameter * u / 2 }, complete = phase >= 1
@@ -416,8 +417,9 @@ function createFormatPosterMagnet() {
         // translate/rotate never change offsetLeft/Top or recapture a live pose.
         const restRows = Array.from(glyphs.values()).map(glyph => { let x = 0, y = 0, node: HTMLElement | null = glyph.node; for (; node && node !== g.p; node = node.offsetParent as HTMLElement | null) { x += node.offsetLeft; y += node.offsetTop }; return { glyph, inside: node === g.p, rest: { x: g.pr.left + (x + glyph.node.offsetWidth / 2) * g.visual, y: g.top + (y + glyph.node.offsetHeight / 2) * g.visual, halfW: glyph.node.offsetWidth * g.visual / 2, halfH: glyph.node.offsetHeight * g.visual / 2 } } })
         if (restRows.some(row => !row.inside || !row.glyph.node.isConnected)) { reset(); return false }
-        const ownsTravel = y >= start, size = (ownsTravel ? diameter : 20) * 41 / 20 * u / parentScale, centerX = ownsTravel ? circle.x : g.pr.left + 720 * u, centerY = ownsTravel ? circle.y : axis
-        set(pip, "--source-format-pip-left", ((centerX - parentRect.left) / parentScale - size / 2 - parent.clientLeft) + "px"); set(pip, "--source-format-pip-top", ((centerY - y - parentRect.top) / parentScale - size / 2 - parent.clientTop) + "px"); set(pip, "--source-format-pip-size", size + "px"); set(pip, "--source-format-pip-turn", "0deg"); set(pip, "--source-format-pip-visibility", complete ? "hidden" : "visible"); set(pip, "--source-format-pip-color", "#ffffff"); flag(pip, "data-format-pip-owned")
+        const early = flight?.isConnected ? formatEarlyPipPose(y, viewport, u, g.top, g.pr.left) : null
+        const ownsTravel = y >= start, size = (ownsTravel ? diameter : 20) * 41 / 20 * u / parentScale * (early?.scale ?? 1), centerX = early?.x ?? (ownsTravel ? circle.x : g.pr.left + 720 * u), centerY = early?.y ?? (ownsTravel ? circle.y : axis)
+        set(pip, "--source-format-pip-left", ((centerX - parentRect.left) / parentScale - size / 2 - parent.clientLeft) + "px"); set(pip, "--source-format-pip-top", ((centerY - y - parentRect.top) / parentScale - size / 2 - parent.clientTop) + "px"); set(pip, "--source-format-pip-size", size + "px"); set(pip, "--source-format-pip-turn", (early?.turn ?? 0) + "deg"); set(pip, "--source-format-pip-visibility", complete ? "hidden" : "visible"); set(pip, "--source-format-pip-color", early?.color ?? "#ffffff"); flag(pip, "data-format-pip-owned")
         set(endpoint, "--source-format-pip-endpoint-opacity", complete ? "1" : "0"); flag(endpoint, "data-format-pip-endpoint-owned")
         const onScreen = g.pr.bottom > 0 && g.pr.top < viewport || ownsTravel && !complete && circle.y - y + circle.radius > 0 && circle.y - y - circle.radius < viewport
         if (!onScreen) { pause(); return false }
@@ -429,7 +431,7 @@ function createFormatPosterMagnet() {
         frames++; g.p.setAttribute("data-format-magnet-glyph-count", String(glyphs.size)); g.p.setAttribute("data-format-magnet-phase", String(phase)); g.p.setAttribute("data-format-magnet-frames", String(frames))
         return moving
     }
-    return { paint, pause, reset, registerGlyph, registerPip, registerEndpoint, nodes: () => [...Array.from(glyphs.values(), value => value.node), ...[pip, endpoint].filter((node): node is HTMLElement => node !== null)], dispose: () => { reset(); glyphs.clear(); pip = endpoint = null }, debug: () => ({ glyphs: glyphs.size, hasPip: Boolean(pip), hasEndpoint: Boolean(endpoint), frames }) }
+    return { paint, pause, reset, registerGlyph, registerPip, registerEndpoint, registerFlight, nodes: () => [...Array.from(glyphs.values(), value => value.node), ...[pip, endpoint, flight].filter((node): node is HTMLElement => node !== null)], dispose: () => { reset(); glyphs.clear(); pip = endpoint = flight = null }, debug: () => ({ glyphs: glyphs.size, hasPip: Boolean(pip), hasEndpoint: Boolean(endpoint), frames }) }
 }
 
 type ClosingRegistration = { node: HTMLElement; transform: string; width: string; left: string; top: string; height: string; origin: string; background: string; outline: string; z: string; pointer: string }
@@ -547,7 +549,7 @@ function createFormatClosingWorld() {
     }
     const registerSlot = (index: number,node: HTMLElement) => {if(index<0||index>=30||slots.has(index))throw Error("One owned native chip slot per index");const original={left:node.style.left,top:node.style.top,width:node.style.width,height:node.style.height,opacity:node.style.opacity,rotate:node.style.getPropertyValue("rotate"),pointer:node.style.pointerEvents};slots.set(index,{node});paintSlots();return()=>{slots.delete(index);chips=chips.filter(b=>b.slot!==index);const s=node.style;s.left=original.left;s.top=original.top;s.width=original.width;s.height=original.height;s.opacity=original.opacity;s.setProperty("rotate",original.rotate);s.pointerEvents=original.pointer;chipListeners.forEach(fn=>fn())}}
 
-    const registerMagnet = (role: "glyph" | "pip" | "endpoint", node: HTMLElement, index = -1) => { const remove = role === "glyph" ? magnet.registerGlyph(index, node) : role === "pip" ? magnet.registerPip(node) : magnet.registerEndpoint(node); observer?.observe(node); changed(); return () => { observer?.unobserve(node); remove(); schedule() } }
+    const registerMagnet = (role: "glyph" | "pip" | "endpoint" | "flight", node: HTMLElement, index = -1) => { const remove = role === "glyph" ? magnet.registerGlyph(index, node) : role === "pip" ? magnet.registerPip(node) : role === "flight" ? magnet.registerFlight(node) : magnet.registerEndpoint(node); observer?.observe(node); changed(); return () => { observer?.unobserve(node); remove(); schedule() } }
     return { registerMagnet, magnetDebug: magnet.debug, register, registerSlot, slotPose, spawn, canInput:()=>!stopped(), subscribeChips:(notify:()=>void)=>{chipListeners.add(notify);return()=>{chipListeners.delete(notify)}}, getTemplate:(index:number)=>chips.find(b=>b.slot===index)?.template??-1, subscribePrompts:(notify:()=>void)=>{promptListeners.add(notify);return()=>{promptListeners.delete(notify)}}, getPlayed:()=>played, configure: (next: ClosingConfig) => { if (config.root && config.root !== next.root) observer?.unobserve(config.root); config = next; if(config.frozen||config.reduced)detach();else attach();if (config.root) observer?.observe(config.root); changed() }, subscribe: (notify: () => void) => { listeners.add(notify); return () => { listeners.delete(notify) } }, getHeld: () => held, dispose: () => { cancel(); detach(); magnet.dispose(); if (poster) restore(poster); if (field) restore(field); poster = null; field = null; body = null; chips=[];slots.clear();chipListeners.clear();promptListeners.clear();listeners.clear() } }
 }
 type FormatClosingWorld = ReturnType<typeof createFormatClosingWorld>
@@ -937,3 +939,26 @@ export function withFormatFieldEntryWord05(Component: ComponentType<LayerProps>)
 export function withFormatFieldEntryWord06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 5) }
 export function withFormatFieldEntryWord07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 6) }
 export function withFormatFieldEntryWord08(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 7) }
+
+/** Retained original bu(): the Vee flight shares the poster owner's clock.
+ * Its native ring is a sibling of the clipped gauge runtime, inside the
+ * existing overflow-visible gauge group. The optional registration leaves
+ * old native placements on their previous pose until that group is bound. */
+function formatEarlyPipPose(scroll: number, viewport: number, unit: number, posterTop: number, ownerLeft: number) {
+    const axis = posterTop - 837.5 * unit, originY = axis - 1370.914 * unit
+    const start = originY - viewport / 2, end = Math.max(start + 1, axis - viewport)
+    const raw = Math.max(0, Math.min(1, (scroll - start) / (end - start)))
+    const progress = raw < .5 ? 4 * raw ** 3 : 1 - (-2 * raw + 2) ** 3 / 2, a = 1 - progress
+    const y = Math.min(posterTop + 1429.12 * unit - axis, scroll + viewport / 2 - axis)
+    const pathX = formatMagnetX((axis + y - posterTop) / Math.max(.001, unit)) * unit
+    const channel = Math.round(255 * Math.max(0, Math.min(1, progress / .2)))
+    return { x: ownerLeft + pathX + (698.5 - 720) * unit * a, y: axis - 1370.914 * unit * a + y * progress, turn: 180 * a, scale: 1 + (33 / 20 - 1) * a, color: `rgb(${channel},${channel},${channel})`, progress }
+}
+export function withFormatGaugeFlowAndField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    const FlowAndField = withFormatGaugeField(withFormatGaugeFlow(Component))
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const world = React.useContext(FormatClosingContext), remove = React.useRef<(() => void) | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node && world ? world.registerMagnet("flight", node) : null; writeRef(ref, node) }, [world, ref])
+        return <FlowAndField {...props} ref={bind} data-format-gauge-flight="same-owner-native-ring" />
+    })
+}

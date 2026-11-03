@@ -109,6 +109,7 @@
     "check:source-format-details": "node scripts/check-source-format-details.mjs",
     "check:source-format-photo-parallax": "node scripts/check-source-format-photo-parallax.mjs",
     "check:source-format-field-entry": "node scripts/check-source-format-field-entry.mjs",
+    "check:source-format-early-pip": "node scripts/check-source-format-early-pip.mjs",
     "check:source-format-mobile-browser": "node scripts/check-source-format-mobile-browser.mjs",
     "check:source-format-details-browser": "node scripts/check-source-format-details-browser.mjs",
     "check:source-format-closing-browser": "node scripts/check-source-format-closing-browser.mjs",
