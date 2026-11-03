@@ -235,6 +235,14 @@
             export MONARCHIC_NATIVE_VIDEO_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-native-video-visibility
           '';
+          source-mecha-tomorrow-detail = (mkWebsiteCheck "source-mecha-tomorrow-detail" ''
+            export MONARCHIC_MECHA_DETAIL_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-mecha-tomorrow-detail
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio
