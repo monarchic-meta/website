@@ -11,6 +11,9 @@ Preview checks; all eighteen references are not approved for close fidelity.
 - Ajedrez's complete photographic continuation is authored through MCP519:
   166 poses, 30 exact-delivery atlases, 119 new native families and two caption
   updates. Earlier scenes, controls and 46 public exports are preserved.
+  The missing three-frame score table is authored through MCP622 with
+  19 editable layer families and genuine Courier Prime captions. Ten strict
+  and 32 grid-only checks pass; full word trajectories and actual paint remain open.
 - Neue Montreal's tickers and all twenty additional genuine Font13 copies are
   authored. Those font assignments are no longer a pending implementation task.
 - FORMAT's current mobile clock/logo splash is authored through MCP510, with

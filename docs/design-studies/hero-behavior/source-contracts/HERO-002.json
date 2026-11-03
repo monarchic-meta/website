@@ -2072,11 +2072,11 @@
     "sourceFidelityApproved": false
   },
   "lateInsetScoreTable": {
-    "status": "LOCAL_SOURCE_VALIDATED_NATIVE_AUTHORING_PENDING",
+    "status": "SOURCE_COMPILER_CLEAN_NATIVE_INSET_READ_BACK_PREVIEW_PENDING",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-inset-score-provenance.json",
-      "bytes": 4219,
-      "sha256": "ce981ba1f19700d9595d64486a18046379a9ffc00ede2a211567dec9a8b2b8c2"
+      "bytes": 6163,
+      "sha256": "71f1edd0fd91b0f02de00b1f63474f7f90276187d74a297a98d95acfacd99ad7"
     },
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/frozen-a804/SourceAjedrezSequence.tsx",
@@ -2101,9 +2101,21 @@
     },
     "scope": "A separately editable native score table appears only in the three observed presentation frames. Full word trajectories and other nonphotographic source differences remain open.",
     "publicOverrides": 46,
-    "newNativeFamiliesPlanned": 19,
-    "physicalCopiesPlanned": 38,
     "actualFramerPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/grid-inset-writer617/final-actual-grid-inset-authoring-receipt.json",
+      "bytes": 8439,
+      "sha256": "eea82f167002a97d058619490628e402eb7783e83ed6cd01ab3df9188c6f4a96"
+    },
+    "nativeAuthoring": {
+      "logicalFamilies": 19,
+      "physicalParts": 38,
+      "genuineFontTuples": 18,
+      "compilerDiagnostics": 0,
+      "canonicalDefinitionSHA256": "829965d6c967cd3673890a6123d3c46225cb102d74aea8bb7a76b88cc0425c00",
+      "inverseDefinitionSHA256": "d0787a3031f766b48e4c1a7ac2e8baa75e2f641244548e79d93537e781f147e8",
+      "allOldInstanceBindingsAndChildOrdersPreserved": true
+    }
   }
 }

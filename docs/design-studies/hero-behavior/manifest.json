@@ -227,23 +227,23 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 13740,
-      "sha256": "958c867d9c6f9b5b0c62bb38817dc9400a66f1fade157030f8ffe24e5ce53115"
+      "bytes": 13971,
+      "sha256": "585c9c83608ee73b1f022cc5933293f8143d0f3520f25f1d8b370305d5eb3e28"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 64534,
-      "sha256": "dec129669cad827f8c708a36d662cace73ab6294da3f7d959a92faa4783d9f1f"
+      "bytes": 64931,
+      "sha256": "3d3daa11981d5e18eae2eeb5a686c52bc9cbc2cea25d7563d8c5649581b08b52"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3894,
-      "sha256": "267c09be7ff816a5cff39dad0f4b2a07aacb689b3fded34a33b6245e0d91a780"
+      "sha256": "d990b57a12e0116c51d4abc5d29234264e422909453a745661b92d12ba6d66d7"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
-      "bytes": 86698,
-      "sha256": "8690f15396ce34788ae31d9a3a77e445abb53d8105911c1ac486a1df20623dbd"
+      "bytes": 87437,
+      "sha256": "464f648f219ef9b8448ae38a341ba3588ece3b7b40314d648e7fe012f9de26f1"
     },
     "modelWindow": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
@@ -471,6 +471,11 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-writer611/final-actual-poster-authoring-receipt.json",
         "bytes": 6600,
         "sha256": "8980c664297b1f8ffa6405b95279925c93f85d74b081713df538eafb1b2dc5fa"
+      },
+      "ajedrezInsetScoreTable": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/grid-inset-writer617/final-actual-grid-inset-authoring-receipt.json",
+        "bytes": 8439,
+        "sha256": "eea82f167002a97d058619490628e402eb7783e83ed6cd01ab3df9188c6f4a96"
       }
     },
     "currentCensusThrough598": {

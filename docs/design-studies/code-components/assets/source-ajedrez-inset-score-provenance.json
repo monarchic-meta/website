@@ -3,7 +3,7 @@
   "classification": "Source inspiration / credited recreation",
   "creator": "Julián Leiss / Ajedrez Film Poem",
   "sourceFilm": "https://cdn.recent.design/items/qfy3385/0/1080x1920.mp4",
-  "status": "LOCAL_SOURCE_VALIDATED_NATIVE_AUTHORING_PENDING",
+  "status": "SOURCE_COMPILER_CLEAN_NATIVE_INSET_READ_BACK_PREVIEW_PENDING",
   "source": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/frozen-a804/SourceAjedrezSequence.tsx",
     "bytes": 201266,
@@ -42,8 +42,6 @@
     "sha256": "3fa03395d8aa43405b284f9d1ad3e81637ddbb077560cc3e2601e48004944ac9"
   },
   "publicOverrides": 46,
-  "newNativeFamiliesPlanned": 19,
-  "expectedNativeCopies": 38,
   "newNativeInstances": 0,
   "checks": {
     "static": 10,
@@ -59,7 +57,47 @@
     "Native centered90deg caption rotation is supported by documentation and existing compensated rule geometry; actual painted caption alignment remains unverified.",
     "Source is locally validated but not yet authored in Framer; actual Preview and reload remain separate."
   ],
-  "actualNativeWrites": 0,
+  "actualNativeWrites": 88,
   "actualFramerPreviewVerified": false,
-  "afterEditorReload": false
+  "afterEditorReload": false,
+  "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/grid-inset-writer617/final-actual-grid-inset-authoring-receipt.json",
+    "bytes": 8439,
+    "sha256": "eea82f167002a97d058619490628e402eb7783e83ed6cd01ab3df9188c6f4a96"
+  },
+  "nativeAuthoring": {
+    "logicalFamilies": 19,
+    "physicalParts": 38,
+    "frameFamilies": 16,
+    "physicalFrames": 32,
+    "richTextFamilies": 3,
+    "physicalRTEs": 6,
+    "genuineCourierNativeBlockRunTuples": 18,
+    "fontFamilyStyleWeightAxesSetterWrites": 0,
+    "onlyPrimaryStructuralCalls": true,
+    "existingNativePropertyWrites": 0,
+    "codeBindingWrites": 0,
+    "newAssets": 0,
+    "newDefinitions": 0,
+    "newPageInstances": 0,
+    "newMediaOrSchedulers": 0,
+    "bothGroupsVisibleTrueDefaultOpacity0": true,
+    "canonicalDefinitionSHA256": "829965d6c967cd3673890a6123d3c46225cb102d74aea8bb7a76b88cc0425c00",
+    "oldDefinitionInverseSHA256": "d0787a3031f766b48e4c1a7ac2e8baa75e2f641244548e79d93537e781f147e8",
+    "unchangedPageOwnerSHA256": "36ad51d1f5c318aa6bf5dd9c7e2dbc41c7a8bee1f5920aa54b79ed203d513671"
+  },
+  "normalizations": {
+    "total": 111,
+    "counts": {
+      "omitted-absolute-default:position": 38,
+      "equivalent-color-representation:fill": 2,
+      "native-pixel-scalar-rounding:left": 28,
+      "native-pixel-scalar-rounding:top": 25,
+      "equivalent-color-representation:textColor": 18
+    },
+    "immediateCallbackHash": "25f95f597962369b13be5f908fc9ef75bea4338de8d7fbae7b1e0ed58051325e",
+    "boundary": "The independent canonical read differs from immediate621 only by18 new-caption textColor representations: reverting rgb(72,82,77) to#48524D reproduces the exact immediate hash. No correction/retry was performed.",
+    "fullRecordsInEvidence": true
+  },
+  "actualNativeWritesUnit": "Acknowledged native operations across619/620/621; the source write618 is separate."
 }
