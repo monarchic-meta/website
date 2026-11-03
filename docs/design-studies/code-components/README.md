@@ -39,6 +39,26 @@ counterparts, including both native and live Origin studies. The handoffs
 distinguish local code validation from actual Framer placement, reload and
 Preview evidence.
 
+## Native source-video playback
+
+[SourceNativeVideoVisibility.tsx](SourceNativeVideoVisibility.tsx) supplies the
+`withVisibleNativeVideo` override for an existing native Video. Its first target
+is HERO-006's genuine Eco-End film. It preserves the media and native controls,
+pauses hidden/offscreen playback, and retains a manual Pause across viewport
+and host changes. Canvas, export, thumbnail and reduced motion request stills;
+the override creates no decoder, canvas, timer or animation loop.
+
+The [provenance](assets/source-native-video-visibility-provenance.json) records
+the focused Nix check and the integration boundary. The native-like React test
+does not prove Framer's native host-ref or Playing-prop bridge. Keep serialized
+Playing enabled until that bridge is observed in actual Preview; a missing live
+host retains the caller's playback value. Actual offscreen suspension, idle
+editor behavior and persistence after reload remain unverified.
+
+```sh
+nix build .#checks.x86_64-linux.source-native-video-visibility --max-jobs 1 --cores 2
+```
+
 ## Original hero component
 
 [OriginalHeroStudy.tsx](OriginalHeroStudy.tsx) supplies nine independently

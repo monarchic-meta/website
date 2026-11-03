@@ -94,6 +94,7 @@
     "check:source-ajedrez-photo-composition": "node scripts/check-source-ajedrez-photo-composition.mjs",
     "check:source-macmoss-portfolio": "node scripts/check-source-macmoss-portfolio.mjs",
     "check:source-macmoss-browser": "node scripts/check-source-macmoss-browser.mjs",
+    "check:source-native-video-visibility": "node scripts/check-source-native-video-visibility.mjs",
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
     "check:source-cantor-instrument-browser": "node scripts/check-source-cantor-instrument-browser.mjs",
     "check:source-cantor-native-behaviors": "node scripts/check-source-cantor-native-behaviors.mjs",

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "classification": "Source inspiration / source-credited native media lifecycle adaptation",
+  "firstReference": "HERO-006",
+  "firstSource": "https://macmoss.studio/",
+  "implementation": "../SourceNativeVideoVisibility.tsx",
+  "publicOverride": "withVisibleNativeVideo",
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
+    "bytes": 9710,
+    "sha256": "a3069ce29ee44fb831816355314d263a3419b6f0ae8ce2ca8aa7ac8618e36bc3"
+  },
+  "test": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-native-video-visibility.mjs",
+    "bytes": 26160,
+    "sha256": "64181dc64c15c20cef6568f2ed35f1c9dd48c791bd3906ebdb331742a24d102f"
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
+    "bytes": 3311,
+    "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+  },
+  "behavior": [
+    "Retain the existing native video, its source/poster/loop/mute/controls and caller events.",
+    "Admit playback only for a visible host and video, a visible document and a permitted motion target. Freeze Canvas/export/thumbnail/reduced motion.",
+    "Retain native manual Pause across viewport, video and host replacement; release observers/listeners and prevent late Play from escaping suspension.",
+    "Create no media element, decoder, canvas, timer or animation loop.",
+    "Recheck settled CSS transition/animation paint through scoped completion events; no polling or extra clock."
+  ],
+  "integrationBoundary": [
+    "The native Framer Video forwards a Playing control but its runtime playing prop and HTMLElement ref bridge have not been observed.",
+    "Keep serialized Playing true while testing the override bridge. If the live host is not forwarded, retain the caller playback value.",
+    "A native-like React fixture is not proof of actual native Framer offscreen suspension or idle editor behavior."
+  ],
+  "currentStatus": "SOURCE_COMPILE_CLEAN_TWO_NATIVE_BINDINGS_CONFIRMED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false,
+  "priorValidation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-visibility-validation/validation-receipt.json",
+    "bytes": 1793,
+    "sha256": "aa800bdfc9195fc4556343cc64f90e0b93b2191a240817ea51ae23fda4b518ac"
+  },
+  "priorActualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-final-authoring-receipt.json",
+    "bytes": 3870,
+    "sha256": "95b057c333fdd1c37ff47049c07b23b1cd48384793fdc6cb9770be87bc69dd77"
+  },
+  "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-CSS-completion-final-authoring-receipt.json",
+    "bytes": 3787,
+    "sha256": "3d0bc5e777e918216835ddda5ae15299734308a0675913efd14ea453cf0bde10"
+  },
+  "registeredOverride": "codeFile/ggQ_udg:withVisibleNativeVideo"
+}

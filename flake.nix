@@ -223,6 +223,10 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-native-video-visibility = mkWebsiteCheck "source-native-video-visibility" ''
+            export MONARCHIC_NATIVE_VIDEO_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-native-video-visibility
+          '';
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-macmoss-portfolio
