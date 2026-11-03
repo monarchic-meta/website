@@ -124,6 +124,7 @@
     "check:source-gthe-motion": "node scripts/check-source-gthe-motion.mjs",
     "check:current-originals-browser": "node scripts/check-current-originals-browser.mjs",
     "check:source-mezmo-configuration": "node scripts/check-current-originals-browser.mjs --mezmo-only",
+    "check:source-mezmo-header-navigation": "node scripts/check-source-mezmo-header-navigation.mjs",
     "check:source-mecha-tomorrow-detail": "node scripts/check-source-mecha-tomorrow-detail.mjs",
     "check:source-vercel-agentic": "node scripts/check-source-vercel-agentic.mjs",
     "check:source-vercel-customers": "node scripts/check-source-vercel-customers.mjs",

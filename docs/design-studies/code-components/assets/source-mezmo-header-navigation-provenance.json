@@ -1,0 +1,146 @@
+{
+  "reference": "HERO-012",
+  "classification": "Source inspiration / credited source recreation",
+  "creator": "Mezmo",
+  "sourceURL": "https://www.mezmo.com/",
+  "scope": "The actual opening header navigation: four category dropdowns, Compact behavior and Phone menu. Existing terminal, its one default export and five controls remain separate and untouched.",
+  "sourceBehaviorJavaScriptReused": false,
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoHeaderNavigation.tsx",
+    "bytes": 26836,
+    "sha256": "56eda5ad78ec15212358de606ae175c50707fc9df34ce7dcf6b421d57d573cec",
+    "frozenSnapshot": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-native-v1/frozen-focused-36/SourceMezmoHeaderNavigation.tsx",
+    "publicOverrideFunctions": 27,
+    "newCodeComponents": 0,
+    "newPropertyControls": 0
+  },
+  "focusedTest": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mezmo-header-navigation.mjs",
+    "bytes": 22479,
+    "sha256": "8f62a7ab113b7c94ea1d272a2c643ef0004afbde0ab55207a86c1aeb567ff0ba"
+  },
+  "observedSource93": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-audit-v1/final-observed-brief.json",
+    "bytes": 20689,
+    "sha256": "97d978e56a129c39e0682814e23c92216f3a8f144652e71a615acfda0255ffcb"
+  },
+  "actualExistingHeaderAndFontPreflight": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-preflight582/read582-actual-data.json",
+    "bytes": 94581,
+    "sha256": "541450489fd89947b0cdd3b45df2d8785ba7d74a08e21f641c4686d27cd9d43e"
+  },
+  "nativePrimaryRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-native-v1/native-primary-recipe.json",
+    "bytes": 64434,
+    "sha256": "c7d65340e33288029915fe54a2bf9cd9e9efc1dabd51ff9c4808c3d0c0fc7a50"
+  },
+  "localValidation": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-native-v1/focused-controller-receipt.json",
+      "bytes": 3940,
+      "sha256": "7c0b0a6d253df6bab5fdce1d653250919372047619b306b072c8d33da1d77e52"
+    },
+    "rawResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-navigation-native-v1/focused-first/result.json",
+      "bytes": 3371,
+      "sha256": "b4fb6e73a79052fa646b30984f205739428cf18349a99872dd9577ec4dda31ef"
+    },
+    "ES2020Strict": true,
+    "SSR": true,
+    "nativeLikeBrowserChecks": 36,
+    "errors": 0,
+    "oneFreshAnonymousContextClosed": true,
+    "toolchain": {
+      "node": "Nix22.23.4",
+      "chromium": "Nix147",
+      "fontconfig": "/nix/store/v75wwcg1z3ykbrywr34irdw4b626yd4i-fonts.conf",
+      "nice": 10,
+      "browserContexts": 1,
+      "closed": true
+    },
+    "fixtureBoundary": "Owned native-like DOM/system font and genuine inline14px p/span styles. This checks behavior/lifecycle/geometry, not actual Framer native font paint or context/ref bridge."
+  },
+  "sourceContracts": {
+    "Desktop1440VisibleLinks": [
+      3,
+      6,
+      9,
+      6
+    ],
+    "Compact992VisibleLinks": [
+      3,
+      6,
+      9,
+      7
+    ],
+    "Phone390VisibleLinks": [
+      3,
+      6,
+      9,
+      7
+    ],
+    "phoneCutoffMaxPx": 991,
+    "phoneHeaderHeightPx": 78,
+    "phoneHitFrame": [
+      50,
+      68
+    ],
+    "originalArtwork": [
+      18,
+      14
+    ],
+    "menuHeightCap": "70vh",
+    "bodyScrollChainPreserved": true,
+    "bodyLock": false,
+    "sourceAnimationMs": 300,
+    "animationTimingEvidence": "Retained actual data-duration300/data-easing ease; first/150/550ms observations establish vertical entrance rather than a fitted independent timing curve.",
+    "keyboard": "Focus alone does not open Desktop group. Enter opens/toggles; ArrowDown admits its first native link. Escape closes selected group first, then Phone main menu. Outside source-menu clicks/taps dismiss it."
+  },
+  "nativePlan": {
+    "pageID": "A2ZhTsALK",
+    "newFamilies": 52,
+    "expectedInheritedPhysicalCopies": 156,
+    "existingBindingFamilies": 6,
+    "actualExistingBindingTargets": 18,
+    "all18ExistingPriorsNullIn582": true,
+    "sharedPrimaryOverrideSemantics": true,
+    "rootBindingLast": true,
+    "oldIDsRetained": true,
+    "oldSerializedGeometryTextFontOrParentsChanged": false,
+    "oldSVGUnstretched": true,
+    "newHitFrameSeparate": true,
+    "actualOnest400And600CatalogAndTemplatesPositive": true,
+    "actualAURASVGBytesExact": true,
+    "nativeWritesExecuted": false
+  },
+  "lifecycle": {
+    "newMediaCanvasesWebGLNetworkExecutors": 0,
+    "newRAFOrTimers": 0,
+    "phoneMenu": "At most one owned finite300ms WAAPI entrance/exit. Reduced/hidden/frozen/cleanup cancel or settle it.",
+    "resources": "Scoped observers/listeners, callbacks and one menu effect clean up. Root caller styles and native refs remain preserved. No polling, scroll interception or shared terminal controller."
+  },
+  "declaredFits": [
+    "Desktop panel anchors retain original native label geometry and normalize any transformed owner scale. Existing authored labels differ slightly from source natural text boxes; source/native paint comparison remains a gate.",
+    "AURA genuine49x21 artwork is preserved inside the observed33.59375px Phone link linebox; tiny baseline alignment is a fit.",
+    "Source-relative destinations are normalized to their actual public source URLs, while Get started keeps source target_blank. No link was followed or submission made during authoring/tests."
+  ],
+  "verification": {
+    "lockedNixDerivationPending": false,
+    "actualFramerSourceRegistered": false,
+    "actualNativeMenuAuthored": false,
+    "actualSavedNativeReadback": false,
+    "actualFramerInputAndPreview": false,
+    "afterEditorReload": false,
+    "nixTargetEvaluated": true,
+    "nixDerivationPath": "/nix/store/r3wjr44hgz9rh2liss3djj0rxd3z3wna-monarchic-website-source-mezmo-header-navigation-0.0.1.drv",
+    "lockedNixDerivationExecuted": false,
+    "nixBoundary": "Only drvPath was evaluated as wiring proof; no locked build execution claim. Exact same source/test already passed36 focused checks on the cached Nix toolchain."
+  },
+  "pendingGates": [
+    "Root focused code/native review and locked Nix target, without rerunning unrelated source/render suites.",
+    "Actual Framer source registration with27 genuine override rows and0components/controls.",
+    "One Primary native pilot using documented native attributes; then52family creation with actual inherited ID/ground readback, shared bindings and rootLAST.",
+    "Exact whole-owner scope inverse, all other pages/catalogs/code/terminal preservation, genuine inner font tuple and source-art paint.",
+    "Actual Desktop/Compact/Phone interactions, body scroll chain, transformed placement, hidden/reduced/static behavior and editor reload before saved-state claims."
+  ]
+}
