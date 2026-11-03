@@ -52,7 +52,11 @@
     "opening": "400ms cubic fader;900msbackground+modeldelays150/250;1000msnamelines610/690/770;rest950;pagepush−200/1200.",
     "closing": "Wrapper/background900ms;fader720+400ms;1120reset; originalchildentrycontinues insideclosingwrap.",
     "sourceHTML": "Close inside.modal-wrap; nativecaptionfont10pxfixedPhone. Logicalgraphic422px remainsinside293.390625pxclip.",
-    "sourceReopen": "Source resets backgroundLenis to0 but doesnotreset modal-wrap.scrollTop; preserve independent scroll."
+    "sourceReopen": "Source resets backgroundLenis to0 but doesnotreset modal-wrap.scrollTop; preserve independent scroll.",
+    "actualWheel": "Originalmodal-wrap reaches171 viarealwheel, Closemoves20−scroll, documentY0; Escapeclose/reopenretains171. Hidden display scrollTop0 getter is not a reset.",
+    "actualTouch": "The oneCDPtouchgesture caused no source scroll. It doesnotestablishgeneralTouchsupport or failure.",
+    "badge": "Genuine266×50PNG/filter:none/mixBlendMode:normal/opacity1; sourceCSSclassnameis-invert isnot a colorfilter.",
+    "actionStrokes": "All4sourcePhoneSend/Closestroke x/y/w/h matchthelocal51-proofexactly (delta0)."
   },
   "nativePreparation": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-preparation-not-applied.json",
@@ -64,7 +68,7 @@
     "Original fonts are fixedexternalcomparison inputs only. Current Framer has no NeueHaas/Flecha. NativeCanvas inherits genuineInter/Georgia; liveCSS fallsbackArial/Georgia until manual source-font admission. Actual nativefont painting remains unverified.",
     "A11y labels, keyboardactivation/focusreturn and reduced/static handling follow projectpolicy; they are not sourceinteraction observations.",
     "Tablet/intermediate line segmentation is not fully observed; exact1440/390 source correspondence is tested.",
-    "SourcePhonev2 scrolling targeted the wrong root. Current source DOM/code establish wrapownership; actual source touch/scroll/reopen must be confirmed with a shortv3 audit.",
+    "OriginalPhonewheel/close/reopen and badge/glyph facts are now independently audited. Touchgesture didnotmove the source; localDOM functionality and actualFramerTouch remain separate gates.",
     "Actual nativeinput/ref/font/WAAPI forwarding and actor coupling require realFramerPreview; local DOM is a facade, notFramernative paint."
   ],
   "resources": {
@@ -138,5 +142,10 @@
     "Contactglyphs use horizontal+right-edge vertical1pxstrokes; hamburger45degree rules do not apply.",
     "Duplicate synthetic click must prevent its own anchor default even when tap already opened/cancelled."
   ],
-  "nativeGap": "48logical/96D/Pcopies now have finitegeometry,3genuineinputs,1namedactorperlayout andexplicitoldRoot/2push/CTApriors. Manualbadgeasset, genuinefontadmission andfreshnativehref/bridge remain separate actual gates."
+  "nativeGap": "48logical/96D/Pcopies now have finitegeometry,3genuineinputs,1namedactorperlayout andexplicitoldRoot/2push/CTApriors. Manualbadgeasset, genuinefontadmission andfreshnativehref/bridge remain separate actual gates.",
+  "originalPhoneObservation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-scroll-v3-corrected/frozen-observed-receipt.json",
+    "bytes": 10346,
+    "sha256": "75ef1a922ecd1be6aa5e439477615223ffeb1e9207474c180eaa876b8fbd6732"
+  }
 }

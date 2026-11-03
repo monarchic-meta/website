@@ -1365,5 +1365,22 @@
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "daughterAdditionalMaterials": {
+    "status": "NINE_GENUINE_ASSETS_DELIVERED_ONCE_ALL_RGBA_EXACT_NO_NATIVE_PLACEMENTS",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-ref-swap697/final-nine-genuine-material-delivery-receipt712.json",
+      "bytes": 13151,
+      "sha256": "2a5c93785bd7e3127b71fc2d1a77efb938763fc3bdcf8e101de7a288757367f0"
+    },
+    "count": 9,
+    "sourceBytes": 3433528,
+    "newNativeNodes": 0,
+    "newNativeBindings": 0,
+    "reuploads": 0,
+    "remaining": "Self-containedDaughter pixel/mask/radius roles and validated11-family nativeadapter; oldgenericrole substitution is not approved.",
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
