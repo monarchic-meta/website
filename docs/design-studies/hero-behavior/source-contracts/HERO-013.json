@@ -910,7 +910,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "GLYPH_PIP_AND_ARCHIVE_NATIVE_AUTHORED_READBACK_CONFIRMED_PAINT_PREVIEW_RELOAD_PENDING",
+    "status": "GLYPH_PIP_ARCHIVE_AND_MOBILE_NATIVE_AUTHORED_READBACK_CONFIRMED_PAINT_PREVIEW_RELOAD_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-source-receipt.json",
       "bytes": 9181,
@@ -919,7 +919,7 @@
     "behavior": "Eighty-six native uppercase glyphs respond to the travelling circle with source-grounded attraction, spring and tangent rotation; one endpoint family preserves the source resting circle. All earlier work stays retained.",
     "next": [
       "Verify fresh actual native paint after the bounded archive move, then pip/glyph response and reverse endpoint in Preview.",
-      "Recreate the current original mobile clock/logo splash; preserve the older full-story Phone adaptation separately.",
+      "Verify current mobile/coarse splash, live clock, short landscape and source links in actual Preview; the older full-story Phone content is preserved beneath it.",
       "Confirm the Framer editor state after a reload before reporting it as saved."
     ],
     "nativeModel": {
@@ -954,14 +954,47 @@
       "sourceDiagnosticsClean": true,
       "actualNewStaticPaintVerified": false,
       "actualFramerPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "historicalOnly": true,
+      "asOf": "Glyph/pip/archive authoring before the mobile append; see currentMobileSourceExperience for latest source and native owner."
     },
     "nativeModelLimits": [
       "392/400/406 native paints demonstrably retain old mixedcase overlap despite false visibility/zero opacity/transparent ink getters;415 restores originalstyles and archives oldlines offcanvas under clipped Frame.",
       "No new actual paint after415 completed:417 never started because416 lost transport;419/421 confirm exact authoring09eb only.",
       "Real installed Obys family+774 tuples are positive; distinctive final glyph paint still unverified after archive.",
-      "Phone fullstory remains historical adaptation; current original onlyclock/logo/sorry splash still pending separate plan.",
+      "The historical full-story Phone adaptation remains mounted beneath the newly authored current-source mobile splash. Real Phone/coarse/landscape rendering and editor reload remain unverified.",
       "Actual scroll/pip magnet/reverse endpoint, compiled Preview and editorreload remain unverified."
-    ]
+    ],
+    "currentMobileSourceExperience": {
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+        "bytes": 119864,
+        "sha256": "0f32c3821d3cf987ef9b16bd183dc61779804f2310cecb1d2c265a5fc2f6d507"
+      },
+      "publicOverrides": 129,
+      "old124BodiesAndRowsRetained": true,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/framer-authoring502-onward/final-actual-authoring-receipt.json",
+        "bytes": 7378,
+        "sha256": "cc405e7bdb91b725b86b54030d6675d8bc86c109b0d931a8318e595158172b0c"
+      },
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-mobile-provenance.json",
+        "bytes": 6659,
+        "sha256": "64b42af5f72e64c2027e1bdcb94a19851c6993d7e43a1ca0935573c9172ee48b"
+      },
+      "ownerSHA256": "ebbb68dac1e9dc1d7f2a6ecafe9729527838fc52139256ce8853af08417a5d70",
+      "sourceDiagnostics": 0,
+      "newNativeFamilies": 43,
+      "newNativeCopies": 129,
+      "genuineObysFontTuples": 183,
+      "roles": 15,
+      "retainedClipAndBallBindings": 51,
+      "oldOwnerInverseExact": true,
+      "allOutsidePreserved": true,
+      "actualPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

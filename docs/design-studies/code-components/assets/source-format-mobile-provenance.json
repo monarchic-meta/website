@@ -86,10 +86,10 @@
   "limits": [
     "Placeholder native-like logo/Arial fixture validates logic/positions/lifecycle, not actualFramer typography/artwork.",
     "Fine pointer768–1279 follows preserved authored story; unobserved source intermediary behavior is not inferred.",
-    "Genuine nativeclone/storedfont verification, actualpaint/Preview/editorreload remain separate."
+    "Source/font/layer authoring is independently read back; actual paint, Preview and editor reload remain separate."
   ],
-  "sourceRegisteredInFramer": false,
-  "nativeApplied": false,
+  "sourceRegisteredInFramer": true,
+  "nativeApplied": true,
   "actualPaintVerified": false,
   "actualFramerPreviewVerified": false,
   "afterEditorReload": false,
@@ -101,5 +101,47 @@
   "hostReplacementFix": [
     "New mobile-only IO observes actual current DOM host, disconnects old targets, ignores stale callbacks and releases all observers. Visible DIV→SECTION replacement retains one shared250ms timer.",
     "Use React.CSSProperties for mobile style; strict stub now explicitly models translate/rotate/scale string|number. Clears the actualFramer503 narrow-DetailStyle typing cause without changing124prior source bodies."
-  ]
+  ],
+  "actualNativeBindingsVerified": true,
+  "actualAuthoringReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/framer-authoring502-onward/final-actual-authoring-receipt.json",
+    "bytes": 7378,
+    "sha256": "cc405e7bdb91b725b86b54030d6675d8bc86c109b0d931a8318e595158172b0c"
+  },
+  "actualNative": {
+    "families": 43,
+    "actualParts": 129,
+    "actualRTEs": 60,
+    "genuineObysNativeBlockRunTuples": 183,
+    "newRoleBindings": 15,
+    "retainedClipAndBallBindings": 51,
+    "newPlateOldLargeDialHOCsCleared": 3,
+    "ACKs": 299,
+    "oldIDsContentControlsPreserved": true,
+    "fontNameStyleWeightAxesSetterWrites": 0,
+    "bodyScrollPreservedBehindOverlay": true,
+    "noNewBodyLock": true,
+    "ownerSHA256": "ebbb68dac1e9dc1d7f2a6ecafe9729527838fc52139256ce8853af08417a5d70",
+    "oldOwnerInverseSHA256": "09eb1a1a588f284b082edd9684b662ea42325d92fa6e3a0011f6241007011aec",
+    "sourceDiagnostics": 0,
+    "allOutsidePreserved": true
+  },
+  "nativeReadbackLimits": {
+    "absoluteDefaultsOmitted": 111,
+    "creditStackDefaultsOmitted": {
+      "parts": 15,
+      "fields": [
+        "constraintsLocked:false",
+        "left:0",
+        "top:0"
+      ]
+    },
+    "linkRelGetters": {
+      "copies": 6,
+      "requested": "noopener",
+      "settledGetter": "",
+      "actualPreviewRelNotVerified": true,
+      "repeatedSetterTrials": 0
+    }
+  }
 }
