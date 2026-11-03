@@ -85,12 +85,12 @@ try {
                     ]), n('Divider', 'divider')]),
                     n('Close', 'close', [text('CloseLabel', 'close-label', 'Close'), icon('CloseIcon', 'close-icon')]),
                     n('ModelPane', 'model-pane', n('ModelClip', 'model-clip', n('Graphic', 'graphic', null, { style: { outline: '1px dashed rgba(197,240,247,.4)' } })))
-                ])], { style: { position: 'absolute', top: 0, left: 0, width: phone ? 390 : 1440, height: phone ? 844 : 900, opacity: 0, pointerEvents: 'none' } }),
+                ])], { style: { position: 'absolute', top: 0, left: 0, width: phone ? 390 : 1440, height: phone ? 844 : 900, opacity: 0, pointerEvents: 'none', scale: String(1280 / 1425), transform: 'scale(.91)', transformOrigin: '0 0' } }),
                 E('div', { id: 'wrapped-native-probe', style: { position: 'absolute', top: 3600, width: 250 } }, n('Input', 'wrapped-native-field', E('input', { id: 'wrapped-native-input', style: { fontFamily: 'Arial', fontSize: 10, lineHeight: '10px', width: '70%', height: 5, padding: 8, border: '6px solid red', color: 'red', background: 'white' } })))
             ))
         }
         window.app = ReactDOM.createRoot(document.getElementById('mount')); window.tap = id => { const node = document.getElementById(id); node.__tap({ currentTarget: node, defaultPrevented: false, preventDefault() { this.defaultPrevented = true } }) }
-        window.read = () => { const ids = ['overlay', 'background', 'fader', 'wrap', 'form-pane', 'form', 'title', 'headlines', 'fields', 'model-pane', 'model-clip', 'graphic', 'close', 'name', 'email', 'message', 'divider', 'send', 'send-label', 'send-icon', 'send-icon-h', 'send-icon-v', 'close-label', 'close-icon', 'close-icon-h', 'close-icon-v']; return { state: document.getElementById('root').dataset.mechaContactState, width: innerWidth, clientWidth: document.documentElement.clientWidth, y: scrollY, focus: document.activeElement.id, timers: [...__timers.values()], overflow: document.documentElement.style.overflowY, wrapScroll: document.getElementById('wrap').scrollTop, wrapExtent: document.getElementById('wrap').scrollHeight, parts: Object.fromEntries(ids.map(id => { const node = document.querySelector('[data-fixture-key="' + id + '"]'), s = getComputedStyle(node); return [id, { bounds: node.getBoundingClientRect().toJSON(), transform: s.transform, opacity: s.opacity, fontSize: s.fontSize, lineHeight: s.lineHeight, overflow: s.overflowY, display: s.display, color: s.color, backgroundColor: s.backgroundColor }] })) } }
+        window.read = () => { const ids = ['overlay', 'background', 'fader', 'wrap', 'form-pane', 'form', 'title', 'headlines', 'fields', 'model-pane', 'model-clip', 'graphic', 'close', 'name', 'email', 'message', 'divider', 'name-rule', 'email-rule', 'message-rule', 'send', 'send-label', 'send-icon', 'send-icon-h', 'send-icon-v', 'close-label', 'close-icon', 'close-icon-h', 'close-icon-v']; return { state: document.getElementById('root').dataset.mechaContactState, width: innerWidth, clientWidth: document.documentElement.clientWidth, y: scrollY, focus: document.activeElement.id, timers: [...__timers.values()], overflow: document.documentElement.style.overflowY, wrapScroll: document.getElementById('wrap').scrollTop, wrapExtent: document.getElementById('wrap').scrollHeight, parts: Object.fromEntries(ids.map(id => { const node = document.querySelector('[data-fixture-key="' + id + '"]'), s = getComputedStyle(node); return [id, { bounds: node.getBoundingClientRect().toJSON(), transform: s.transform, scale: s.scale, transformOrigin: s.transformOrigin, opacity: s.opacity, fontSize: s.fontSize, lineHeight: s.lineHeight, overflow: s.overflowY, display: s.display, color: s.color, backgroundColor: s.backgroundColor }] })) } }
         render()
     })
     await wait(() => __refs.trigger && document.getElementById('root').dataset.mechaContactState === 'closed'); await page.evaluate(() => document.fonts.ready)
@@ -116,6 +116,7 @@ try {
         samples.push({ phase: variant + '-source-geometry', differences }); return differences
     }
     const compareInner = async (variant, state) => {
+        check(variant + ' live overlay resets the authored Canvas fit and transform before source viewport geometry', state.parts.overlay.transform === 'none' && state.parts.overlay.scale === '1' && state.parts.overlay.transformOrigin === '0px 0px')
         const differences = []
         for (const [key, original] of Object.entries(geometry.states[variant].derivedDetails)) {
             if (original.display) { if (state.parts[key].display !== original.display) differences.push({ key, display: state.parts[key].display }); continue }
@@ -126,6 +127,32 @@ try {
         }
         samples.push({ phase: variant + '-source-css-inner-geometry', differences })
         check(variant + ' source divider and Send/Close leaf bounds follow retained source CSS', differences.length === 0)
+        const colors = Object.fromEntries(geometry.sourceColors.keys.map(key => [key, { backgroundColor: state.parts[key].backgroundColor, opacity: state.parts[key].opacity }]))
+        const colorsMatch = values => Object.values(values).every(value => value.backgroundColor === geometry.sourceColors.expected.backgroundColor && value.opacity === geometry.sourceColors.expected.opacity)
+        samples.push({ phase: variant + '-source-css-stroke-colors', expected: geometry.sourceColors.expected, colors })
+        check(variant + ' source white-at20percent divider and field-rule colors match cached original CSS', colorsMatch(colors))
+        if (variant === 'desktop') {
+            const scaleNegative = await page.evaluate(() => {
+                const node = document.querySelector('[data-fixture-key=overlay]'), before = node.getBoundingClientRect(), properties = ['scale', 'transform'].map(property => ({ property, value: node.style.getPropertyValue(property), priority: node.style.getPropertyPriority(property) }))
+                node.style.scale = String(1280 / 1425); node.style.transform = 'scale(.91)'
+                const fitted = node.getBoundingClientRect()
+                for (const { property, value, priority } of properties) if (value) node.style.setProperty(property, value, priority); else node.style.removeProperty(property)
+                const restored = node.getBoundingClientRect()
+                return { source: [before.width, before.height], fitted: [fitted.width, fitted.height], restored: [restored.width, restored.height] }
+            })
+            samples.push({ phase: 'authored-overlay-fit-negative', ...scaleNegative })
+            check('Retaining the authored Canvas scale fails the independent live viewport bounds gate', scaleNegative.source.every((value, i) => Math.abs(value - scaleNegative.restored[i]) < .01) && scaleNegative.source[0] - scaleNegative.fitted[0] > 100)
+            const negative = await page.evaluate(() => {
+                const node = document.getElementById('name-rule'), old = ['background', 'opacity'].map(property => ({ property, value: node.style.getPropertyValue(property), priority: node.style.getPropertyPriority(property) }))
+                node.style.background = 'rgba(197,240,247,.3)'; node.style.opacity = '1'
+                const css = getComputedStyle(node), wrong = { backgroundColor: css.backgroundColor, opacity: css.opacity }
+                for (const { property, value, priority } of old) if (value) node.style.setProperty(property, value, priority); else node.style.removeProperty(property)
+                const restored = getComputedStyle(node)
+                return { wrong, restored: { backgroundColor: restored.backgroundColor, opacity: restored.opacity } }
+            })
+            samples.push({ phase: 'prior-cyan-stroke-negative', ...negative })
+            check('The old cyan-at30percent stroke fails the independent source-color gate and restores exact current styles', !colorsMatch({ wrong: negative.wrong }) && colorsMatch({ restored: negative.restored }))
+        }
         check(variant + ' action icons remain editable two-stroke Frames with one-CSS-pixel lines and the correct divider parent', await page.evaluate(() =>
             document.getElementById('divider').parentElement.id === 'form-pane' && ['send-icon', 'close-icon'].every(id => {
                 const icon = document.getElementById(id), h = document.getElementById(id + '-h'), v = document.getElementById(id + '-v')

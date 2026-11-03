@@ -788,5 +788,33 @@
       ".action-line.is-h transform-origin100%; no Contact45deg rule observed",
       "contact-line source parent.form-popup, right0 width1px height100%"
     ]
+  },
+  "sourceColors": {
+    "provenance": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/primary-style-0.css",
+      "sha256": "a6a5f7d22ac87a2a3bdf6d719b603753f1642699f6f09969281adb316ae17e17",
+      "bytes": 130052,
+      "kind": "Derived from cached original CSS and observed source parent bounds, not newly measured original inner-leaf rectangles.",
+      "rules": [
+        ":root --_🟢-colors---primary--pure-white:#fff",
+        ".line.is-right.is-inverted{background-color:var(--_🟢-colors---primary--pure-white);opacity:.2}",
+        ".line.is-bottom.is-animated.modal-14{background-color:var(--_🟢-colors---primary--pure-white);opacity:.2}"
+      ],
+      "scope": "Exact cached original CSS values/class applicability. No newly fetched CSS or source color inference from the local implementation."
+    },
+    "expected": {
+      "backgroundColor": "rgb(255, 255, 255)",
+      "opacity": "0.2"
+    },
+    "keys": [
+      "divider",
+      "name-rule",
+      "email-rule",
+      "message-rule"
+    ],
+    "oldIncorrect": {
+      "backgroundColor": "rgba(197, 240, 247, 0.3)",
+      "opacity": "1"
+    }
   }
 }

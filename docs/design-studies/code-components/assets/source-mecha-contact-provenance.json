@@ -3,22 +3,22 @@
   "classification": "Source inspiration / credited recreation",
   "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
   "source": "https://mecha-xyz.webflow.io/",
-  "status": "LOCAL51_CHECKS_PASS_NATIVE48_PACKET_READY_IMPORT_PATH_PENDING",
+  "status": "LOCAL57_CHECKS_PASS_NATIVE48_IMPORT_PATH_PENDING",
   "sourceModule": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/SourceMechaContact.tsx",
-    "bytes": 30422,
-    "sha256": "fddc223086d71d2743f3b4a0807fc216300f9f63b198ffb6f21b2efb8f9918a3"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/SourceMechaContact.tsx",
+    "bytes": 30471,
+    "sha256": "7ba1c6b229bb6b8d1b87e6cc1a89b3d0752de5d7f2b0ddd631e15668bfaeaff5"
   },
   "repositorySource": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaContact.tsx",
   "checker": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/check-source-mecha-contact.mjs",
-    "bytes": 30651,
-    "sha256": "9c8fccf57185a0dfbe3d35128c0e325f3f5a3d5624f1319a5b3741aab458d642"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/check-source-mecha-contact.mjs",
+    "bytes": 34154,
+    "sha256": "6c873ac90ac947d47986274b218a1a559580645043cc10bbccdfc0ea6871502b"
   },
   "sourceGeometryFixture": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/source-mecha-contact-geometry.json",
-    "bytes": 21331,
-    "sha256": "df9eb20c0691564e3846e7d8a4fb897c9c1562efef72ea383c910fa50edcf37d"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/source-mecha-contact-geometry.json",
+    "bytes": 22578,
+    "sha256": "22a0fcf8aaf2b608f742e24f81fad4394a61e97bc281038abaa62516a6150540"
   },
   "genuineComparisonFonts": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/source-font-comparison/acquisition.json",
@@ -36,17 +36,18 @@
   },
   "validation": {
     "result": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/result.json",
-      "bytes": 82238,
-      "sha256": "3bb973eb89a98b048877d4f1eb275464d4795ca084ced20f0a75493a661cab9a"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/result.json",
+      "bytes": 99762,
+      "sha256": "6ef5269b4c43944bf720e8b0600009887380024f18ea22f6b939e735f23cc4ff"
     },
-    "checks": 51,
+    "checks": 57,
     "strictAndSSR": 8,
-    "browser": 43,
+    "browser": 49,
     "allPrevious38Retained": true,
     "pageErrors": 0,
     "oneBrowserClosed": true,
-    "scope": "Prior geometry/phase/input/lifecycle contracts plus genuine-anchor no-navigation on tap/click/cancel/key, original divider parent, original Send padding/direction/glyph stroke sizes and source-CSS leafbounds."
+    "scope": "All prior 51 assertions retained, plus source white rules at 20% opacity, old cyan negative controls, and valid live scale/transform reset against an independently scaled native-like overlay.",
+    "allPrevious51Retained": true
   },
   "sourceFacts": {
     "opening": "400ms cubic fader;900msbackground+modeldelays150/250;1000msnamelines610/690/770;rest950;pagepush−200/1200.",
@@ -56,7 +57,8 @@
     "actualWheel": "Originalmodal-wrap reaches171 viarealwheel, Closemoves20−scroll, documentY0; Escapeclose/reopenretains171. Hidden display scrollTop0 getter is not a reset.",
     "actualTouch": "The oneCDPtouchgesture caused no source scroll. It doesnotestablishgeneralTouchsupport or failure.",
     "badge": "Genuine266×50PNG/filter:none/mixBlendMode:normal/opacity1; sourceCSSclassnameis-invert isnot a colorfilter.",
-    "actionStrokes": "All4sourcePhoneSend/Closestroke x/y/w/h matchthelocal51-proofexactly (delta0)."
+    "actionStrokes": "All4sourcePhoneSend/Closestroke x/y/w/h matchthelocal51-proofexactly (delta0).",
+    "rules": "All three input rules and the form-pane divider use pure white at opacity 0.2, as independently retained in the original CSS."
   },
   "nativePreparation": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-preparation-not-applied.json",
@@ -122,14 +124,14 @@
     }
   },
   "nativePlan": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/native-construction-plan.json",
-    "bytes": 57067,
-    "sha256": "fc6c4fa203fd0e4e8c8547ca051247ebbfc0d89c9ed5927ea405d41623ce930d"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v3/native-construction-plan.json",
+    "bytes": 62559,
+    "sha256": "68455567b2df096d5ec827d2edb3d09a4b12ab0f5a8db92ca344a0cf9c4c1a85"
   },
   "nativePlanReceipt": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/receipt.json",
-    "bytes": 1361,
-    "sha256": "3326bfdbaff560979ca636ea7140f1206a357e9deb9d10561de9b2f3aa7c690f"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/frozen-57-receipt.json",
+    "bytes": 3037,
+    "sha256": "bddf94abc93dfb978ef50ca42a0ba0854ebeb6d03b78bdb7a45acd8ef218db0e"
   },
   "innerLeafRectangles": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/inner-leaf-rectangles.json",
@@ -140,12 +142,65 @@
     "Divider belongs inside form-pane, notmodel-pane.",
     "Send stacks its right-hand stroke glyph above the label with exactsource12/12/16/18rem-derived padding.",
     "Contactglyphs use horizontal+right-edge vertical1pxstrokes; hamburger45degree rules do not apply.",
-    "Duplicate synthetic click must prevent its own anchor default even when tap already opened/cancelled."
+    "Duplicate synthetic click must prevent its own anchor default even when tap already opened/cancelled.",
+    "The rules and divider use white at 20% opacity; the prior cyan rule paint was incorrect.",
+    "Only the new Desktop overlay receives a native Canvas fit. Live layout clears that inherited transform and scale using valid React 18 CSS strings. Frozen caller styles remain exact."
   ],
-  "nativeGap": "48logical/96D/Pcopies now have finitegeometry,3genuineinputs,1namedactorperlayout andexplicitoldRoot/2push/CTApriors. Manualbadgeasset, genuinefontadmission andfreshnativehref/bridge remain separate actual gates.",
+  "nativeGap": "The 48-family / 96-copy construction packet now includes source colors, finite D/P geometry, three genuine fields per layout, actor logical/clip dimensions and an overlay-only Desktop Canvas fit. Framer source import, exact badge upload, native creation/bindings and genuine font admission remain separate gates.",
   "originalPhoneObservation": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-scroll-v3-corrected/frozen-observed-receipt.json",
     "bytes": 10346,
     "sha256": "75ef1a922ecd1be6aa5e439477615223ffeb1e9207474c180eaa876b8fbd6732"
-  }
+  },
+  "historical51": {
+    "sourceModule": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/SourceMechaContact.tsx",
+      "bytes": 30422,
+      "sha256": "fddc223086d71d2743f3b4a0807fc216300f9f63b198ffb6f21b2efb8f9918a3"
+    },
+    "checker": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/check-source-mecha-contact.mjs",
+      "bytes": 30651,
+      "sha256": "9c8fccf57185a0dfbe3d35128c0e325f3f5a3d5624f1319a5b3741aab458d642"
+    },
+    "sourceGeometryFixture": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/source-mecha-contact-geometry.json",
+      "bytes": 21331,
+      "sha256": "df9eb20c0691564e3846e7d8a4fb897c9c1562efef72ea383c910fa50edcf37d"
+    },
+    "validation": {
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/result.json",
+        "bytes": 82238,
+        "sha256": "3bb973eb89a98b048877d4f1eb275464d4795ca084ced20f0a75493a661cab9a"
+      },
+      "checks": 51,
+      "strictAndSSR": 8,
+      "browser": 43,
+      "allPrevious38Retained": true,
+      "pageErrors": 0,
+      "oneBrowserClosed": true,
+      "scope": "Prior geometry/phase/input/lifecycle contracts plus genuine-anchor no-navigation on tap/click/cancel/key, original divider parent, original Send padding/direction/glyph stroke sizes and source-CSS leafbounds."
+    },
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/native-construction-plan.json",
+      "bytes": 57067,
+      "sha256": "fc6c4fa203fd0e4e8c8547ca051247ebbfc0d89c9ed5927ea405d41623ce930d"
+    },
+    "nativePlanReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/receipt.json",
+      "bytes": 1361,
+      "sha256": "3326bfdbaff560979ca636ea7140f1206a357e9deb9d10561de9b2f3aa7c690f"
+    }
+  },
+  "validationFailures": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-1",
+      "diagnosis": "Numeric CSS scale was serialized incorrectly by React 18; corrected the production value to string 1 and the independently authored fixture scale to a string."
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-2",
+      "diagnosis": "One new negative test queried an authored ID replaced by the existing dialog accessibility ID. Corrected only that fixture query to its owned data marker; production source remained exact."
+    }
+  ]
 }

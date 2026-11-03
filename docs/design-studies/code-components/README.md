@@ -92,7 +92,7 @@ sheet with a separate source contact dialog. Its40 native overrides preserve
 the opening/closing timeline, editable fields and independent Phone scrolling.
 The live mark above remains a separate component.
 
-The [panel provenance](assets/source-mecha-contact-provenance.json) records51
+The [panel provenance](assets/source-mecha-contact-provenance.json) records57
 local checks with genuine external comparison fonts. The48-family native packet
 is ready; supported imports and actual Framer runtime remain separate gates. Source fonts are absent
 from the current project; native and live fallback faces remain explicit fits.

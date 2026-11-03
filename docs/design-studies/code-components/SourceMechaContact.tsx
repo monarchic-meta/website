@@ -144,7 +144,7 @@ function styleFor(role: Role, s: State): React.CSSProperties {
     const flow: React.CSSProperties = { position: "relative", top: "auto", left: "auto", right: "auto", bottom: "auto", minWidth: 0, flex: "0 0 auto" }
     const text: React.CSSProperties = { fontFamily: '"Neue Haas Grotesk",Arial,sans-serif', fontSize: r, lineHeight: 1.5, letterSpacing: "normal", fontWeight: 400, color: "#c5f0f7" }
     switch (role) {
-        case "overlay": return { position: "fixed", inset: 0, width: "100%", height: "100dvh", display: active ? "block" : "none", opacity: active ? 1 : 0, overflow: "hidden", zIndex: 2147483647, background: "transparent", pointerEvents: active ? "auto" : "none" }
+        case "overlay": return { position: "fixed", inset: 0, width: "100%", height: "100dvh", display: active ? "block" : "none", opacity: active ? 1 : 0, overflow: "hidden", zIndex: 2147483647, background: "transparent", pointerEvents: active ? "auto" : "none", transform: "none", scale: "1", transformOrigin: "0 0" }
         case "background": return { position: "absolute", inset: 0, width: "100%", height: "100%", background: "#911a46", transform: close || !active ? "translateY(100%)" : "translateY(0%)", zIndex: 1 }
         case "fader": return { position: "absolute", inset: 0, width: "100%", height: "100%", background: "rgba(255,255,255,.5)", opacity: close || !active ? 0 : 1, zIndex: 0 }
         case "wrap": return { position: "relative", width: "100%", height: "100%", display: "flex", flexDirection: phone ? "column" : "row", overflowY: phone ? "auto" : "visible", overflowX: phone ? "hidden" : "visible", overscrollBehaviorY: "contain", transform: close ? "translateY(100%)" : "translateY(0%)", zIndex: 2 }
@@ -163,7 +163,7 @@ function styleFor(role: Role, s: State): React.CSSProperties {
         case "name": case "email": case "message": return { ...flow, width: "100%", height: "auto", display: "flex", flexDirection: "column", gap: .75 * r, paddingBottom: .75 * r, gridColumn: role === "message" ? "1 / -1" : "auto", transform: active ? "translateY(0%)" : "translateY(150%)", overflow: "hidden" }
         case "label": return { ...flow, ...text, width: "100%", height: phone ? 15 : .9375 * r, fontSize: phone ? 10 : .625 * r, lineHeight: 1.5, textTransform: "uppercase" }
         case "input": case "textarea": return { ...flow, ...text, width: "100%", height: (role === "textarea" ? 3.8125 : 1.25) * r, minHeight: (role === "textarea" ? 3.8125 : 1.25) * r, lineHeight: 1.44, letterSpacing: ".02em", padding: 0, border: 0, borderRadius: 0, background: "transparent", outlineOffset: 3, resize: "none" }
-        case "rule": return { position: "absolute", bottom: 0, left: 0, width: "100%", height: 1, background: "rgba(197,240,247,.3)" }
+        case "rule": return { position: "absolute", bottom: 0, left: 0, width: "100%", height: 1, background: "#fff", opacity: .2 }
         case "send": return { ...flow, width: "100%", minHeight: 6.25 * r, height: 6.25 * r, gridColumn: "1 / -1", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "flex-start", gap: 1.25 * r, padding: `${.75 * r}px ${.75 * r}px ${r}px ${1.125 * r}px`, background: "#c5f0f7", color: "#262933", cursor: "pointer", overflow: "clip", transform: active ? "translateY(0%)" : "translateY(150%)" }
         case "send-label": return { ...flow, ...text, width: "auto", height: 1.5 * r, color: "#262933" }
         // The source action glyphs are two editable, unrotated strokes. Their
@@ -177,7 +177,7 @@ function styleFor(role: Role, s: State): React.CSSProperties {
         case "graphic": return { ...flow, width: "100%", height: phone ? "50dvh" : "100%", minHeight: phone ? "50dvh" : "70dvh", flexShrink: 0 }
         case "close": return { position: "absolute", right: padding, top: phone ? 20 : padding, width: 5 * r, height: 1.5 * r, zIndex: 99999, display: "flex", alignItems: "center", justifyContent: "space-between", cursor: "pointer", transform: active ? "translateX(0px)" : `translateX(${3 * r}px)`, opacity: active ? 1 : 0 }
         case "close-label": return { ...flow, ...text, width: "auto", height: 1.5 * r }
-        case "divider": return { position: "absolute", top: 0, right: 0, width: 1, height: "100%", background: "rgba(197,240,247,.3)", display: phone ? "none" : "block", transformOrigin: "50% 0%", transform: active ? "scaleY(1)" : "scaleY(0)" }
+        case "divider": return { position: "absolute", top: 0, right: 0, width: 1, height: "100%", background: "#fff", opacity: .2, display: phone ? "none" : "block", transformOrigin: "50% 0%", transform: active ? "scaleY(1)" : "scaleY(0)" }
     }
 }
 function role(Component: ComponentType<Props>, name: Role): ComponentType<Props> {

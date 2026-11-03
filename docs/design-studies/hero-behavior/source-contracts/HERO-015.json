@@ -421,32 +421,33 @@
     }
   },
   "contactNativeUI": {
-    "status": "LOCAL51_CHECKS_PASS_NATIVE48_PACKET_READY_IMPORT_PATH_PENDING",
+    "status": "LOCAL57_CHECKS_PASS_NATIVE48_IMPORT_PATH_PENDING",
     "classification": "Source inspiration / credited recreation",
     "sourceModule": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/SourceMechaContact.tsx",
-      "bytes": 30422,
-      "sha256": "fddc223086d71d2743f3b4a0807fc216300f9f63b198ffb6f21b2efb8f9918a3"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/SourceMechaContact.tsx",
+      "bytes": 30471,
+      "sha256": "7ba1c6b229bb6b8d1b87e6cc1a89b3d0752de5d7f2b0ddd631e15668bfaeaff5"
     },
     "publicNativeOverrides": 40,
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-contact-provenance.json",
-      "bytes": 10481,
-      "sha256": "121ff1cea725d401774052d7fbaaa07e49d337bd0f0aeef80fe0295795eff5aa"
+      "bytes": 14703,
+      "sha256": "b83047c400be4b34e13d6c97354f3c0912a78c308151d4313465299431af4f22"
     },
     "validation": {
       "result": {
-        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/result.json",
-        "bytes": 82238,
-        "sha256": "3bb973eb89a98b048877d4f1eb275464d4795ca084ced20f0a75493a661cab9a"
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/result.json",
+        "bytes": 99762,
+        "sha256": "6ef5269b4c43944bf720e8b0600009887380024f18ea22f6b939e735f23cc4ff"
       },
-      "checks": 51,
+      "checks": 57,
       "strictAndSSR": 8,
-      "browser": 43,
+      "browser": 49,
       "allPrevious38Retained": true,
       "pageErrors": 0,
       "oneBrowserClosed": true,
-      "scope": "Prior geometry/phase/input/lifecycle contracts plus genuine-anchor no-navigation on tap/click/cancel/key, original divider parent, original Send padding/direction/glyph stroke sizes and source-CSS leafbounds."
+      "scope": "All prior 51 assertions retained, plus source white rules at 20% opacity, old cyan negative controls, and valid live scale/transform reset against an independently scaled native-like overlay.",
+      "allPrevious51Retained": true
     },
     "actualFramer": {
       "sourceRegistered": false,
@@ -459,15 +460,25 @@
       "Original fonts are fixedexternalcomparison inputs only. Current Framer has no NeueHaas/Flecha. NativeCanvas inherits genuineInter/Georgia; liveCSS fallsbackArial/Georgia until manual source-font admission. Actual nativefont painting remains unverified.",
       "A11y labels, keyboardactivation/focusreturn and reduced/static handling follow projectpolicy; they are not sourceinteraction observations.",
       "Tablet/intermediate line segmentation is not fully observed; exact1440/390 source correspondence is tested.",
-      "SourcePhonev2 scrolling targeted the wrong root. Current source DOM/code establish wrapownership; actual source touch/scroll/reopen must be confirmed with a shortv3 audit.",
+      "OriginalPhonewheel/close/reopen and badge/glyph facts are now independently audited. Touchgesture didnotmove the source; localDOM functionality and actualFramerTouch remain separate gates.",
       "Actual nativeinput/ref/font/WAAPI forwarding and actor coupling require realFramerPreview; local DOM is a facade, notFramernative paint."
     ],
     "nativePlan": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/native-construction-plan.json",
-      "bytes": 57067,
-      "sha256": "fc6c4fa203fd0e4e8c8547ca051247ebbfc0d89c9ed5927ea405d41623ce930d"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v3/native-construction-plan.json",
+      "bytes": 62559,
+      "sha256": "68455567b2df096d5ec827d2edb3d09a4b12ab0f5a8db92ca344a0cf9c4c1a85"
     },
     "nativeFamilies": 48,
-    "physicalCopies": 96
+    "physicalCopies": 96,
+    "originalPhoneObservation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-scroll-v3-corrected/frozen-observed-receipt.json",
+      "bytes": 10346,
+      "sha256": "75ef1a922ecd1be6aa5e439477615223ffeb1e9207474c180eaa876b8fbd6732"
+    },
+    "nativePlanReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/frozen-57-receipt.json",
+      "bytes": 3037,
+      "sha256": "bddf94abc93dfb978ef50ca42a0ba0854ebeb6d03b78bdb7a45acd8ef218db0e"
+    }
   }
 }
