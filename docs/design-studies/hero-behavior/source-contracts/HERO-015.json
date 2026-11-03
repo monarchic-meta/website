@@ -363,7 +363,7 @@
     "scope": "Tomorrow Recycling Phone MORE sheet:35editablefamilies across70D/Pparts,12genuineRTEfamilies,7separate media,2746px content with independent scroll and Close. Sharedvariantroles use tested Desktop guard. Contactmodal/otherprojectdetails and actualFrameranimation/media/reload remainopen."
   },
   "contactLiveMark": {
-    "status": "LOCAL_8_STRICT_COORDINATOR_AND27_BROWSER_PASS_ACTUAL_AUTHORING_PENDING",
+    "status": "MCP_NAMED_SOURCE_REGISTERED687_NATIVE_COMPOSITION_PENDING",
     "classification": "Source inspiration / credited recreation",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-mark-implementation-v1/root-frozen-validated-inputs/MechaScrollMark.tsx",
@@ -404,10 +404,20 @@
       "Actual Framer named registration, native composition, Preview and editor reload are not established by the local proof."
     ],
     "actualFramer": {
-      "sourceWritten": false,
+      "sourceWritten": true,
       "nativePlaced": false,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "actualCompilerDiagnostics": 0,
+      "namedRow": "codeFile/ktWb6ig:MechaContactMark",
+      "actualNamedControls": 5,
+      "legacyDefaultControls": 8,
+      "legacyTwoPlacementsPreserved": true,
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-actor-writer685/final-source-only-authoring-receipt687.json",
+        "bytes": 2764,
+        "sha256": "8b9245f041c868646ae94f770cc2546b9bdff0805d35a758faa5e49fae293f55"
+      }
     }
   },
   "contactNativeUI": {

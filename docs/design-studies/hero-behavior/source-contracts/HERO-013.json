@@ -1347,5 +1347,23 @@
         "sha256": "11f6c92963a9d7f391811152bd4169b62fba3d7e3df08c74f68358684bc13982"
       }
     }
+  },
+  "daughterSubjectReferenceCorrection": {
+    "status": "SIX_EXISTING_FILLS_CORRECTED_THROUGH703_ACTUAL_PREVIEW_PENDING",
+    "scope": "Swap the genuine deck/v-card assets at two retained native subjects across D/C/P; no geometry, imagecrop, fonts, order, source, HOC or newgroup changes.",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-ref-swap697/final-two-subject-fill-authoring-receipt703.json",
+      "bytes": 6063,
+      "sha256": "f867e95b6dc63df284162bc6c20b5911fdad0673c8c06d7fb259be2d15c213ca"
+    },
+    "logicalSubjects": 2,
+    "physicalCopies": 6,
+    "actualFillSetterAcknowledgments": 4,
+    "legitimateInheritedReplicas": 2,
+    "source151AndShared25Preserved": true,
+    "catalogBoundary": "Components.list retains151 genuineDetails overrides plus40 unbound placeholders after restore695. The exactrepresentation is preserved; sourcewrite returns151 with0diagnostics. No catalog reset/deletion.",
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
