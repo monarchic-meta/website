@@ -971,3 +971,17 @@ export function withFormatHorizontalWideFlow(Component: ComponentType<LayerProps
         return <Component {...props} ref={ref} data-format-source-flow="wide" style={frozen || state.frozen || state.phone ? props.style : { ...props.style, position: "absolute", left: 198 * u, top: 868 * u, width: 1045, height: 448, scale: String(u), rotate: "0deg", transformOrigin: "0 0", opacity: 1 } as DetailStyle} />
     })
 }
+
+/** This newly owned poster aperture must not trap independently translated
+ * source photo layers below the moving native glyphs. Native host defaults
+ * are normalized explicitly; ordinary overflow clipping is retained. */
+const FORMAT_POSTER_PHOTO_FLAT: DetailStyle = {
+    opacity: 1, transform: "none", translate: "none", rotate: "none", scale: "none",
+    perspective: "none", transformStyle: "flat", filter: "none", backdropFilter: "none",
+    clipPath: "none", WebkitClipPath: "none", maskImage: "none", WebkitMaskImage: "none",
+    isolation: "auto", contain: "none", willChange: "auto", mixBlendMode: "normal", zIndex: "auto",
+}
+export function withFormatPosterPhotoAperture(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    const FlatHost = React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} data-format-poster-photo-aperture="flat-native-host" style={{ ...props.style, ...FORMAT_POSTER_PHOTO_FLAT }} />)
+    return withFormatPhotoAperture(FlatHost)
+}

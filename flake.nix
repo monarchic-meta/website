@@ -73,6 +73,30 @@
             hash = "sha256-hOgMj2YoCf/kk7lgpesR83v/RfwWpGkSZpaBowXsNAQ=";
             fetcherVersion = 3;
           };
+          # Fixed originals are comparison-only test inputs, never site assets.
+          sourceFormatPosterMaterials = pkgs.linkFarm "monarchic-format-poster-stack-test-inputs" [
+            {
+              name = "assets/poster-BewnwD3v.webp";
+              path = pkgs.fetchurl {
+                url = "https://format.obys.agency/assets/poster-BewnwD3v.webp";
+                hash = "sha256-g8pDNGVWWvfKC4Ca1jxlN/icpjD2DMA/5w/sFOwG7I4=";
+              };
+            }
+            {
+              name = "kid-assets/poster-shot.webp";
+              path = pkgs.fetchurl {
+                url = "https://format.obys.agency/kid/poster-shot.webp";
+                hash = "sha256-yZoXSzxLfW1sbvghjw2yhnLwReIyNHC6AwYznsI4ttE=";
+              };
+            }
+            {
+              name = "source-font/ObysSans-Regular.woff2";
+              path = pkgs.fetchurl {
+                url = "https://format.obys.agency/fonts/ObysSans-Regular.woff2";
+                hash = "sha256-LW4a8wdeqKNXfaxcIQqAiHO/bAbiPfLhHUqKz8ehKS4=";
+              };
+            }
+          ];
           mkWebsiteCheck = name: command: pkgs.stdenvNoCC.mkDerivation {
             inherit pname version pnpmDeps;
             name = "${pname}-${name}-${version}";
@@ -429,6 +453,15 @@
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
+          source-format-poster-stack = (mkWebsiteCheck "source-format-poster-stack" ''
+            export MONARCHIC_FORMAT_POSTER_STACK_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-poster-stack
+          '').overrideAttrs (_: {
+            MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatPosterMaterials;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
           source-format-wide-flow = (mkWebsiteCheck "source-format-wide-flow" ''

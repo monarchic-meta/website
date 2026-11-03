@@ -134,7 +134,8 @@
     "check:source-polar-guide-controls": "node scripts/check-source-polar-guide-controls.mjs",
     "check:source-polar-guide-browser": "node scripts/check-source-polar-guide-browser.mjs",
     "check:source-polar-guide-toc": "node scripts/check-source-polar-guide-toc.mjs",
-    "check:source-portfolio-carousel-hmr": "node scripts/check-source-portfolio-carousel-hmr.mjs"
+    "check:source-portfolio-carousel-hmr": "node scripts/check-source-portfolio-carousel-hmr.mjs",
+    "check:source-format-poster-stack": "node scripts/check-source-format-poster-stack.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

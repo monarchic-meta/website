@@ -918,7 +918,7 @@
     },
     "behavior": "Eighty-six native uppercase glyphs respond to the travelling circle with source-grounded attraction, spring and tangent rotation; one endpoint family preserves the source resting circle. All earlier work stays retained.",
     "next": [
-      "Complete the poster/Daughter stack-safe photo aperture and compare its moving glyph overlap.",
+      "Author the validated independent-layer poster aperture, preserving the current native owner and Daughter toggle; compare moving paint in actual Preview.",
       "Recreate the introductory 513px clock and fixed burst, then expand all eighteen source Notes and remaining genuine Daughter states.",
       "Compare corresponding source states in actual Framer Preview and verify after editor reload."
     ],
@@ -1020,8 +1020,8 @@
       "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 129227,
-        "sha256": "137837ec0fa270c88916e79dfa68cb67135303eb44b0808b0e4b4cf2aee32505"
+        "bytes": 134621,
+        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
       },
       "behavior": "First two source photographs have editable clipping apertures and source7%parallax. Eight original native words enter in sourceDOMorder with.9s/.13sstagger before shared2.6sflick. Originalassets/text/fonts/rectangles preserved; Phonehistoricalgeometry frozen.",
       "localValidation": {
@@ -1087,8 +1087,8 @@
       "authoringScope": "Source142/compiler0 andactual3ringfamilies movedoutofexistingclips; exactoldowner9976inverse. Actualpaint/refbridge/Preview/reload remainunverified.",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 129227,
-        "sha256": "137837ec0fa270c88916e79dfa68cb67135303eb44b0808b0e4b4cf2aee32505"
+        "bytes": 134621,
+        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
       },
       "nativeOwnerSHA256": "3a8db8f5c3b4f6dbfd5d01b49c14fc44b25e0db471f8cd5bae706925a3798515",
       "sharedBindings": 6,
@@ -1121,8 +1121,8 @@
       "afterEditorReload": false,
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 129227,
-        "sha256": "137837ec0fa270c88916e79dfa68cb67135303eb44b0808b0e4b4cf2aee32505"
+        "bytes": 134621,
+        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
       }
     },
     "horizontalWideOrdinaryFlow": {
@@ -1145,6 +1145,37 @@
       "publicOverrides": 143,
       "sharedPhysicalBindings": 3,
       "behavior": "The source wide photo has ordinary absolute document positioning, replacing the old fixed-position scroll actor. Existing image wrapper, children and scalar geometry remain preserved.",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "posterPhotoIndependentLayers": {
+      "status": "LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_AUTHORING_PENDING",
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
+        "bytes": 134621,
+        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
+      },
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/SourceFormatDetails.tsx",
+        "sha256": "77d827161e7aed0ddfbe14245964f3731bcfb4d6e741bb69dfc7a9e663aa5bac",
+        "bytes": 140510
+      },
+      "validationReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/validation-receipt.json",
+        "sha256": "93024c34532c7e4ed4874fa4f6ccc329abd2c3479ecf7086ceb22e234c5eddc8",
+        "bytes": 9688
+      },
+      "nativePlan": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/native-primary-poster-final-plan.json",
+        "sha256": "48a0e38d583808dcd99868d8e2249db534c7e26936bb5c3ee94e131917f77e00",
+        "bytes": 37528
+      },
+      "publicOverrides": 144,
+      "newPrimaryFamiliesPlanned": 2,
+      "physicalCopiesPlanned": 6,
+      "behavior": "Two original photo layers translate independently. The new neutral aperture avoids a shared stacking context, and the new removable Daughter host owns layer6 while preserving the old toggle and image IDs.",
+      "localChecks": 46,
+      "strictChecks": 10,
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
     }

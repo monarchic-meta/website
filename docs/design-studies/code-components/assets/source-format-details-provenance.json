@@ -2615,5 +2615,80 @@
     "derivedGetterBoundary": "Six triangle/fog parents become transparent and lose their twelve image-position getters; the new bitmap children preserve the genuine image AssetReferences and explicit centered crops. No setter retry was attempted.",
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "posterPhotoIndependentLayers": {
+    "referenceID": "HERO-013",
+    "status": "validated-local-source-and-bounded-composition-awaiting-Framer-authoring",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/SourceFormatDetails.tsx",
+      "sha256": "77d827161e7aed0ddfbe14245964f3731bcfb4d6e741bb69dfc7a9e663aa5bac",
+      "bytes": 140510
+    },
+    "newPublicRole": "withFormatPosterPhotoAperture",
+    "totalPublicRoles": 144,
+    "preservedPrefixSHA256": "88d8605e98e857c745cd3b6eaf8ce5fff5eb7fa85e3d2ec239fe68ed2deacaa2",
+    "sharedNativeSourceUnchanged": "67bba0a23e1f99e05bdb5ec87f5b3cbdd749ea881a439751f511fd241f7a3ee4",
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/native-primary-poster-final-plan.json",
+      "sha256": "48a0e38d583808dcd99868d8e2249db534c7e26936bb5c3ee94e131917f77e00",
+      "bytes": 37528
+    },
+    "validationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/validation-receipt.json",
+      "sha256": "93024c34532c7e4ed4874fa4f6ccc329abd2c3479ecf7086ceb22e234c5eddc8",
+      "bytes": 9688
+    },
+    "focusedResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/result.json",
+      "sha256": "d45a859f45521c0f647ab5a3305879f39f553d0477e71229570b24d45264a83d",
+      "bytes": 15134,
+      "checks": 46,
+      "staticChecks": 18,
+      "browserChecks": 28
+    },
+    "strictResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/strict-result.json",
+      "sha256": "81c0257761c44ccaa9bfe761526c3328bccb17e73466b3876e9aa324f1776861",
+      "bytes": 1383,
+      "checks": 10
+    },
+    "fixture": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/source-format-poster-stack-fixture.json",
+      "sha256": "6cd66dd145746f5e9e4809d2cfab7351586f28cb0eaf4422d4bbc5b90fbbd0aa",
+      "bytes": 30763
+    },
+    "sourceFacts": "The source clips two independently translated image layers without a shared stacking context; Daughter is layer6. Only the new aperture neutralizes context-triggering defaults. The new removable Daughter moving host owns native zIndex6; existing Daughter store/HOC, asset references and old IDs stay unchanged.",
+    "currentLiteralNativeBoundary": "Read599/600: basephoto0, Daughter28,94 direct siblings. Bounding-box overlap alone did not produce sampled glyph-ink overlap. Three model poses per Desktop/Compact retained; the separate−24px real-font stress is a CSS contract probe, not source motion.",
+    "pixelLimit": {
+      "onlyCase": "Compact source-model pose2",
+      "maxColorChannels": 3,
+      "max8BitError": 1,
+      "exactAlpha": true,
+      "exactOffPhotoPixels": true,
+      "priorObservedRMSE": 0.006462876147645064,
+      "finalObservedChangedChannels": 0,
+      "priorFailure": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-stress-contract/failure.json",
+        "sha256": "20a44672e50187dd6af80da723ae1c2dacc34a1c7d41436e2a78de8e2e0a4a2b",
+        "bytes": 7834
+      },
+      "diagnosis": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-stress-contract/pixel-diagnosis.json",
+        "sha256": "96164fbe4d804725572ae76c55583d0aa0e93e6b0767a51eb56214780b5f8617",
+        "bytes": 860
+      },
+      "sourceIdenticalPixelApproval": false
+    },
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "reproducibleCheck": {
+      "pnpm": "pnpm run check:source-format-poster-stack",
+      "nix": "nix build .#checks.x86_64-linux.source-format-poster-stack",
+      "evaluatedDerivation": "/nix/store/8f6da5bki7q5rhnmrvrrmxyr69dflxzb-monarchic-website-source-format-poster-stack-0.0.1.drv",
+      "evaluationOnly": true,
+      "nixBuildExecuted": false,
+      "localFrozenBrowserProof": "Separate recorded46-check nice10 Node22/Chromium147 run; unchanged source/test, no redundant browser run for wiring.",
+      "fixedInputs": "Nix fetchurl provides the three exact original photo/Daughter/font inputs, assembled under MONARCHIC_FORMAT_CACHED_MEDIA_ROOT. No binary test assets are committed and no substitute material is used."
+    }
   }
 }
