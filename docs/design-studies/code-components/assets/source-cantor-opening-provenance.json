@@ -148,10 +148,12 @@
       "status": "TARGET_EVALUATES_FOCUSED_DIRECT_LOCKED_NIX_TOOLS_PASS_NO_DERIVATION_BUILD"
     },
     "framer": {
-      "sourceRegistered": false,
+      "sourceRegistered": true,
       "nativeWritten": false,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "moduleID": "codeFile/j9eNsgo",
+      "compilerDiagnostics": 0
     }
   },
   "authoringBoundary": {
@@ -222,5 +224,24 @@
     "Original random seeds, label ordering/curves, menu interpolation and transient scroll scale remain declared fits.",
     "Earlier accepted wide-header geometry remains a source-supported fit; the rolling-text behavior is a separate pending implementation.",
     "The external original comparison fonts are fixed test/reference inputs only; runtime uses genuine project font tuples."
-  ]
+  ],
+  "actualSourceRegistration": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/source-registration-chapter-receipt.json",
+    "bytes": 5884,
+    "sha256": "9133463f747c7181c6a1c0d36d6caad2e47c83193fc4e1c8b8f6e61d78b676f5"
+  },
+  "actualHeadlineFontPilots": {
+    "Desktop": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/font-family-pilot624/final-desktop-font-family-pilot-receipt.json",
+      "bytes": 5672,
+      "sha256": "15996b387945dd4dc80249cdd5de3e2019dc24bba2c3330130c10d9f63768881"
+    },
+    "Phone": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/phone-font-pilot627/final-phone-font-chapter-receipt.json",
+      "bytes": 1419,
+      "sha256": "c37280e8fe597a83869a63086918f25784b6d12f6ec3269e3b119d3c3b531914"
+    },
+    "scope": "Only headline-family admission is closed: four Desktop and five Phone Native/Block/Run rows, natural normal400 defaults; optional axes remain absent. Other assignments, medium500 and native structure remain separate chapters.",
+    "actualNativePaintVerified": false
+  }
 }

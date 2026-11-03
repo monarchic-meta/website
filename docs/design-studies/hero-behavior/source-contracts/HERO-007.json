@@ -254,7 +254,7 @@
     ]
   },
   "openingFoundationMenuRefinement": {
-    "status": "LOCAL_50_CHECKS_PASS_ACTUAL_FONT_PILOT_PENDING",
+    "status": "SOURCE_REGISTERED_NATIVE_AUTHORING_IN_PROGRESS",
     "source": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
       "bytes": 33991,
@@ -262,8 +262,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-provenance.json",
-      "bytes": 10628,
-      "sha256": "8f3c592c2329f9acd0980b101650a48cbd729ca28c51875528347712022a1812"
+      "bytes": 12117,
+      "sha256": "69515c8ab58cdea3070c4b39941cef442accf09eff6c82c290e7712488e06ad4"
     },
     "pageID": "IhJNN_eMc",
     "classification": "Source inspiration / credited recreation",
@@ -279,7 +279,7 @@
       "realExistingInstrument": true,
       "PhoneTouch": true,
       "genuineComparisonFontsOutsideRuntime": true,
-      "sourceRegistered": false,
+      "sourceRegistered": true,
       "nativeWritten": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false
@@ -287,6 +287,25 @@
     "remainingImplementation": [
       "Source rolling line-inner hover/reveal transitions (950 ms / 320 ms) are substantive follow-up work, not covered by this finite opening batch."
     ],
-    "preservation": "The existing instrument and five native hover/backdrop HOCs remain byte-exact. No new renderer, media, clock, RAF or GPU context."
+    "preservation": "The existing instrument and five native hover/backdrop HOCs remain byte-exact. No new renderer, media, clock, RAF or GPU context.",
+    "actualSourceRegistration": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/source-registration-chapter-receipt.json",
+      "bytes": 5884,
+      "sha256": "9133463f747c7181c6a1c0d36d6caad2e47c83193fc4e1c8b8f6e61d78b676f5"
+    },
+    "actualHeadlineFontPilots": {
+      "Desktop": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/font-family-pilot624/final-desktop-font-family-pilot-receipt.json",
+        "bytes": 5672,
+        "sha256": "15996b387945dd4dc80249cdd5de3e2019dc24bba2c3330130c10d9f63768881"
+      },
+      "Phone": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/phone-font-pilot627/final-phone-font-chapter-receipt.json",
+        "bytes": 1419,
+        "sha256": "c37280e8fe597a83869a63086918f25784b6d12f6ec3269e3b119d3c3b531914"
+      },
+      "scope": "Only headline-family admission is closed: four Desktop and five Phone Native/Block/Run rows, natural normal400 defaults; optional axes remain absent. Other assignments, medium500 and native structure remain separate chapters.",
+      "actualNativePaintVerified": false
+    }
   }
 }
