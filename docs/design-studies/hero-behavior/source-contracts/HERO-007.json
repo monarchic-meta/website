@@ -252,5 +252,41 @@
       "Focus behavior and Phone disable/reset are declared adaptations. Actual pointer/focus painting and filter support still require Framer Preview.",
       "Connected-browser automation remains off after the owner observed wrong-chat tab routing; local Chromium fixtures and MCP model checks are separate evidence levels."
     ]
+  },
+  "openingFoundationMenuRefinement": {
+    "status": "LOCAL_50_CHECKS_PASS_ACTUAL_FONT_PILOT_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
+      "bytes": 33991,
+      "sha256": "910767a75f23ea0398328245d86ec6cafc056afeb30770a84ae0ad48d8ede46a"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-provenance.json",
+      "bytes": 10628,
+      "sha256": "8f3c592c2329f9acd0980b101650a48cbd729ca28c51875528347712022a1812"
+    },
+    "pageID": "IhJNN_eMc",
+    "classification": "Source inspiration / credited recreation",
+    "scope": "Viewport-height opening, persistent header, full eleven-link Phone menu and ordinary Foundation editorial/circuit handoff. Later pixel wipes remain outside this opening target.",
+    "observation": "Twenty-six fresh public-source states, including genuine Phone entry at scroll zero. The older Phone captures began at nonzero scroll and do not establish entry.",
+    "sourceFits": [
+      "Independent instrument filament seeds and bounded spring history remain retained.",
+      "The observed Phone panel endpoints are reproduced with a fitted 800 ms interpolation, not an independently measured source duration.",
+      "Desktop field growth is fitted to observed bounds; no fade or source-unobserved Escape close/body lock is invented."
+    ],
+    "validation": {
+      "focusedChecks": 50,
+      "realExistingInstrument": true,
+      "PhoneTouch": true,
+      "genuineComparisonFontsOutsideRuntime": true,
+      "sourceRegistered": false,
+      "nativeWritten": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "remainingImplementation": [
+      "Source rolling line-inner hover/reveal transitions (950 ms / 320 ms) are substantive follow-up work, not covered by this finite opening batch."
+    ],
+    "preservation": "The existing instrument and five native hover/backdrop HOCs remain byte-exact. No new renderer, media, clock, RAF or GPU context."
   }
 }

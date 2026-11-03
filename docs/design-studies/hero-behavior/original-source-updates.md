@@ -60,6 +60,11 @@ Preview checks; all eighteen references are not approved for close fidelity.
   Its 27 overrides compile cleanly and 36 local checks pass. Actual native
   input, font paint, body scroll chaining and editor reload remain unverified.
 
+Cantor8’s corrected opening, full eleven-link Phone menu and Foundation handoff
+now pass 50 focused local checks with the actual existing instrument. The new
+module adds no renderer or animation loop. Its native font pilot and Framer
+authoring are next; rolling text transitions remain a separate implementation gap.
+
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.
 Nonphotographic Ajedrez states, other missing source interactions and later

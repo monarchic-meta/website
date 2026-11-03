@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 13971,
-      "sha256": "585c9c83608ee73b1f022cc5933293f8143d0f3520f25f1d8b370305d5eb3e28"
+      "bytes": 14291,
+      "sha256": "43b546e36fc0e4d72bb0917774e7abbfc261164260ca60f97657b89a7c99d2e5"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
       "bytes": 64931,
-      "sha256": "3d3daa11981d5e18eae2eeb5a686c52bc9cbc2cea25d7563d8c5649581b08b52"
+      "sha256": "f29323f07de83fbf15c2a8352902efd943262b3f4db7352a0d8e482b037f2c04"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3894,
-      "sha256": "d990b57a12e0116c51d4abc5d29234264e422909453a745661b92d12ba6d66d7"
+      "sha256": "bb614ff24f7d3ff2342c41a3dc14fd3a68ad40c34b0e2505e66edb3237aac5bd"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",

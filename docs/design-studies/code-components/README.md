@@ -39,6 +39,24 @@ counterparts, including both native and live Origin studies. The handoffs
 distinguish local code validation from actual Framer placement, reload and
 Preview evidence.
 
+## Cantor8 opening and Foundation
+
+[SourceCantorOpening.tsx](SourceCantorOpening.tsx) supplies native overrides for
+HERO-007’s viewport opening, eleven-link Phone menu and ordinary Foundation
+handoff. It retains the existing instrument and five hover/backdrop overrides;
+no renderer, timer or animation loop is added. The source-led work remains
+credited in Source inspiration.
+
+The [provenance](assets/source-cantor-opening-provenance.json) separates its
+50 passing local checks from pending actual Framer authoring, paint and reload.
+The fixture uses genuine source fonts as fixed external comparison inputs;
+they are not copied into the repository or runtime. Native font admission has
+its own bounded pilot. Rolling line hover/reveal remains follow-up work.
+
+```sh
+nix build .#checks.x86_64-linux.source-cantor-opening --max-jobs 1 --cores 2
+```
+
 ## Native source-video playback
 
 [SourceNativeVideoVisibility.tsx](SourceNativeVideoVisibility.tsx) supplies the

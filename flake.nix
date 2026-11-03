@@ -97,6 +97,23 @@
               };
             }
           ];
+          # Fixed originals are comparison-only test inputs, never site assets.
+          sourceCantorComparisonFonts = pkgs.linkFarm "monarchic-cantor-opening-test-inputs" [
+            {
+              name = "PPNeueMontreal-regular.woff2";
+              path = pkgs.fetchurl {
+                url = "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8b85d4a1e818463de692b_PPNeueMontreal-Regular.woff2";
+                hash = "sha256-GgIKDMwrKa0JG3E4ZLE12ff7bTEU5pYg9tVu65q++8w=";
+              };
+            }
+            {
+              name = "PPNeueMontreal-medium.woff2";
+              path = pkgs.fetchurl {
+                url = "https://cdn.prod.website-files.com/697b3b78220c15e1a8ecaeb2/69e8b85dd59e1682e8287e73_PPNeueMontreal-Medium.woff2";
+                hash = "sha256-EaGyJ6T0Mr3FWHpSnTSkarvtcGe24fuRPbDEiccXWCg=";
+              };
+            }
+          ];
           mkWebsiteCheck = name: command: pkgs.stdenvNoCC.mkDerivation {
             inherit pname version pnpmDeps;
             name = "${pname}-${name}-${version}";
@@ -219,6 +236,15 @@
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
+          source-cantor-opening = (mkWebsiteCheck "source-cantor-opening" ''
+            export MONARCHIC_CANTOR_OPENING_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-cantor-opening
+          '').overrideAttrs (_: {
+            MONARCHIC_CANTOR_SOURCE_FONT_DIR = sourceCantorComparisonFonts;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
           source-cantor-native-behaviors = mkWebsiteCheck "source-cantor-native-behaviors" ''

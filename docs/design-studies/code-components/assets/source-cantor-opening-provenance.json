@@ -1,0 +1,226 @@
+{
+  "id": "HERO-007",
+  "name": "Cantor8 native opening, Phone menu and Foundation coupling",
+  "classification": "Source inspiration / credited recreation",
+  "source": {
+    "url": "https://www.cantor8.io/",
+    "credit": "Cantor8; website by Artemii Lebedev as retained in the catalog",
+    "scope": "Opening-layout correction, full eleven-link Phone menu and initial Foundation editorial/circuit handoff. Whole-site clone and later pixel wipes are excluded."
+  },
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
+    "bytes": 33991,
+    "sha256": "910767a75f23ea0398328245d86ec6cafc056afeb30770a84ae0ad48d8ede46a"
+  },
+  "publicOverrides": [
+    "withCantorOpeningRoot",
+    "withCantorViewportHero",
+    "withCantorSourceFieldFrame",
+    "withCantorPersistentHeader",
+    "withCantorDesktopNavigationOnly",
+    "withCantorSourceMainNavAnchor",
+    "withCantorSourceContactNavAnchor",
+    "withCantorSourceLogo",
+    "withCantorHeroCopy",
+    "withCantorSourceHeadline",
+    "withCantorHeroActionFrame",
+    "withCantorSourceScrollCue",
+    "withCantorSourceFoundation",
+    "withCantorFoundationLabel",
+    "withCantorFoundationHeadingWrap",
+    "withCantorFoundationHeading",
+    "withCantorFoundationExecution",
+    "withCantorFoundationContent",
+    "withCantorFoundationDeckWrap",
+    "withCantorFoundationDeck",
+    "withCantorFoundationBody",
+    "withCantorFoundationCompany",
+    "withCantorFoundationCompanyLabel",
+    "withCantorFoundationCompanyArrow",
+    "withCantorFineArtworkOnly",
+    "withCantorBaseArtworkOnly",
+    "withCantorPhoneMenuBody",
+    "withCantorPhoneMenuMain",
+    "withCantorPhoneMenuBottom",
+    "withCantorPhoneMenuSection",
+    "withCantorPhoneMenuTitle",
+    "withCantorPhoneMenuSublist",
+    "withCantorPhoneMenuMainLink",
+    "withCantorPhoneMenuHomeLink",
+    "withCantorPhoneMenuSubLink",
+    "withCantorPhoneMenuLinkText",
+    "withCantorPhoneMenuSocialBase",
+    "withCantorPhoneMenuSocialSup",
+    "withCantorPhoneMenuRule",
+    "withCantorPhoneMenuActiveSquare",
+    "withCantorPhoneCubeIcon",
+    "withCantorPhoneCubeTopLeft",
+    "withCantorPhoneCubeTopRight",
+    "withCantorPhoneCubeBottomLeft",
+    "withCantorPhoneCubeBottomRight",
+    "withCantorPhoneMenuMiddleCube",
+    "withCantorPhoneMenuLabel",
+    "withCantorPhoneCloseLabel",
+    "withCantorPhoneMenuToggle",
+    "withCantorPhoneMenuPanel",
+    "withCantorFoundationCircuitMain",
+    "withCantorFoundationCircuitSub"
+  ],
+  "existingIndependentInstrument": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorInstrument.tsx",
+    "bytes": 227773,
+    "sha256": "7d588222a9085bd2c57893f0a5a239994eeff9c52be8891a75d0822271ac8e78"
+  },
+  "existingFiveNativeHOCs": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+    "bytes": 7703,
+    "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+  },
+  "evidence": {
+    "fresh26StateAudit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/final-observed-brief.json",
+      "bytes": 41920,
+      "sha256": "b1b658c505afdc182ba0a9b23f50806782302f03928328add0b8a1da7c0e8111"
+    },
+    "consolidatedCSS": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/consolidated-source-css-inventory.json",
+      "bytes": 175555,
+      "sha256": "0440855290aef0a71296c8ff748af8f4da37a3e85337be86a993a30917e02511"
+    },
+    "floatingLabels": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/floating-label-inventory.json",
+      "bytes": 16065,
+      "sha256": "71b4f74d539ad602af44c7574f06cbe249c984f76ec9fdc8a22d09ef4e58e7b6"
+    },
+    "sourceFontAcquisition": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/source-font-comparison/acquisition.json",
+      "bytes": 1775,
+      "sha256": "bd427a12598f2962e21ccc8d3802854b19da1286c646983c24b884504d569958"
+    },
+    "actualNativePreflight608": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/actual-preflight608/read608-actual-data.json",
+      "bytes": 287365,
+      "sha256": "dd749667bd3eb6ae17438794501c7c0a2e422f0ca736ff088e443f5544762003"
+    },
+    "actualGenuineFont609": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/actual-preflight608/fonts609-output.json",
+      "bytes": 14498,
+      "sha256": "ac9d568f1a30eac8767b030fbeb43f1628aef8c0cc7a42ce93594dd8dded33f5"
+    },
+    "nativeRecipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/native-primary-recipe.json",
+      "bytes": 80874,
+      "sha256": "dcf84031c69ede037c31877e37761912358ae4ba5ea4ada6db2c182e04d90d68"
+    }
+  },
+  "implementationBoundary": {
+    "oldInstrumentAndFiveHOCsByteExact": true,
+    "newCodeComponents": 0,
+    "newControls": 0,
+    "newRenderers": 0,
+    "newOwnRAF": 0,
+    "newOwnTimers": 0,
+    "newGPUContexts": 0,
+    "newMedia": 0,
+    "nativeFrameHostedSVG": true,
+    "noSVGOverrideAttempt": true,
+    "menuFiniteWAAPI": 1,
+    "sourceFontsInRepositoryOrRuntime": false,
+    "noAutomaticAssetOrFontSync": true
+  },
+  "validation": {
+    "focused": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/consolidated-focused-receipt.json",
+      "bytes": 14024,
+      "sha256": "6b2f427d4c97fe107e987f1c616537a3b113822000efe6999587ce541796931b"
+    },
+    "passed": true,
+    "checks": 50,
+    "typedES2020DOM": true,
+    "SSR": true,
+    "realExistingInstrument": true,
+    "nativeLikeBrowser": true,
+    "genuineExternalSourceComparisonFonts": true,
+    "nix": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/opening-foundation-menu-v1/implementation/nix-target-evaluation-receipt.json",
+      "bytes": 632,
+      "sha256": "fcfab39cbfe94d931c20fc9791166cc3ff3c2c36ac098eeecf8a3665eb9c8efd",
+      "status": "TARGET_EVALUATES_FOCUSED_DIRECT_LOCKED_NIX_TOOLS_PASS_NO_DERIVATION_BUILD"
+    },
+    "framer": {
+      "sourceRegistered": false,
+      "nativeWritten": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
+  },
+  "authoringBoundary": {
+    "newLogicalFamilies": 72,
+    "expectedPhysicalCopies": 144,
+    "existingBindingFamilies": 13,
+    "retainedFontAssignments": 16,
+    "fontPilotAndConditionalFallback": "One documented exact609 existing-RTE tuple pilot; positively compare Native/Block/Run. On custom-font NOOP, restore and retain/hide old IDs, clone genuine templates into intended composed rectangles; never try aliases or delete IDs.",
+    "preserveCredits": [
+      "oWugwaWIu",
+      "jLr5hP9Qm"
+    ],
+    "sharedOverridePolicy": "Primary-only logical family operations; resolve actual D/P copies; context binding last; fresh priors for the three extra descendant targets."
+  },
+  "observedVsFits": {
+    "observed": [
+      "Viewport-height opening",
+      "Normal scroll toFoundation and back, fixedsourceheader",
+      "Phone panel endpoints scale.78+translateX100%↔identity",
+      "All11source links, originalMenu/Close labels/fivecubes",
+      "Escape leavesPhonepanelopen",
+      "SourceFoundation content and genuineSVG geometry",
+      "Source pulse progress/dash/fade formulas from retainedinline data"
+    ],
+    "fitted": [
+      "800ms menu interpolation/easing; endpoint captures do not measure exactduration",
+      "Desktop +10% reversible field scroll scale response; no fade isinvented",
+      "Source pixel-font metrics depend on genuine current font admission",
+      "Hero/Company CTA bounded geometry interpolated from actualDesktop/Phone compositions",
+      "Social superscripts are independent native text, .75em and−.35em raised placement; visual/source glyph alignment remains an explicit fit.",
+      "Main/contact Desktop header wrappers preserve the earlier accepted native geometry; genuine font/active-link source bounds need actual corresponding-state comparison."
+    ],
+    "requiredFieldExtentDerivation": {
+      "Desktop": {
+        "logicalWH": [
+          1440,
+          1406.25
+        ],
+        "baseScale": 0.64,
+        "sourceRadius": 270,
+        "derivedRadius": 270,
+        "derivedCenter": [
+          720,
+          450
+        ]
+      },
+      "Phone": {
+        "logicalWH": [
+          390,
+          897.872340425532
+        ],
+        "baseScale": 0.94,
+        "sourceRadius": 157.638,
+        "derivedRadius": 157.63799999999998,
+        "derivedCenter": [
+          195,
+          383
+        ]
+      }
+    },
+    "noPointerParityClaim": true
+  },
+  "knownStillMissingImplementation": [
+    "Original rolling line-text hover/reveal from retained .line-inner950ms/320ms treatment. This is an explicit subsequent implementation task, not actual Framer QA or unavoidable substitution."
+  ],
+  "limits": [
+    "Actual Framer font setter applicability, SVG-child path admission, input painting and reload persistence are not established by the local fixture.",
+    "Original random seeds, label ordering/curves, menu interpolation and transient scroll scale remain declared fits.",
+    "Earlier accepted wide-header geometry remains a source-supported fit; the rolling-text behavior is a separate pending implementation.",
+    "The external original comparison fonts are fixed test/reference inputs only; runtime uses genuine project font tuples."
+  ]
+}
