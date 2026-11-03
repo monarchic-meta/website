@@ -147,8 +147,10 @@ editable; temporary Canvas2D buffers disappear when the reveal finishes.
 The [provenance](assets/source-format-daughter-provenance.json) records 40 focused
 checks and the retained shared-module regression. Decoding is serial, temporary
 buffers share a 2MP limit, and Canvas/export/thumbnail remain still. Failed or
-interrupted work retains the native image. Native authoring, actual Preview and
-reload remain separate gates; four source spark materials are still missing.
+interrupted work retains the native image. Framer authoring is read back through
+MCP720: 11 new families, 33 Frame copies and 72 role assignments. Actual paint,
+Preview and reload remain open. Four recovered source spark materials await delivery
+and implementation.
 
 ```sh
 nix build .#checks.x86_64-linux.source-format-daughter-effects --max-jobs 1 --cores 2

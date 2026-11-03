@@ -90,6 +90,27 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-writer688/final-restored-clock-notes-held-receipt695.json",
       "bytes": 3096,
       "sha256": "11f6c92963a9d7f391811152bd4169b62fba3d7e3df08c74f68358684bc13982"
+    },
+    "currentSharedAfterDaughter": {
+      "sourceSHA256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54",
+      "publicOverrides": 49,
+      "compilerDiagnostics": 0,
+      "actualReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/final-source49-native11-authoring-receipt720.json",
+        "bytes": 5201,
+        "sha256": "4c3f1a328384c76159c0c23abd8423d9058f3a5b6607b23473e7367934ec7b6f"
+      },
+      "sameStoreImportRequired": true
+    },
+    "temporaryNotesCatalogRows": {
+      "historicalAfter695": "151 genuine overrides plus40 unbound Component placeholders; no manual deletion.",
+      "fresh714": "The40 placeholders disappeared automatically. All151 genuine Details rows/schemas and source remain exact.",
+      "after719": "Independent current read confirms only151 genuine Details rows.",
+      "actualReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/final-source49-native11-authoring-receipt720.json",
+        "bytes": 5201,
+        "sha256": "4c3f1a328384c76159c0c23abd8423d9058f3a5b6607b23473e7367934ec7b6f"
+      }
     }
   },
   "remaining": [

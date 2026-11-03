@@ -1294,8 +1294,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-notes-provenance.json",
-      "bytes": 13112,
-      "sha256": "acddbe158a28c51c9b482f9498ed616ad94a1a908e37c32dd943c5a147567a2d"
+      "bytes": 14512,
+      "sha256": "0c0837eb41f61e1932d618843061723686ca826aed2e13a57083fe6aa68cae01"
     },
     "receipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/validation-and-handoff-receipt.json",
@@ -1384,7 +1384,7 @@
     "afterEditorReload": false
   },
   "daughterLiveEffects": {
-    "status": "LOCAL40_AND_LEGACY_SHARED_REGRESSION_PASS_NATIVE_AUTHORING_IN_PROGRESS",
+    "status": "AUTHORING_THROUGH_MCP720_PREVIEW_AND_RELOAD_PENDING",
     "classification": "Source inspiration / credited recreation",
     "sourceModule": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/SourceHeroNativeBehaviors.tsx",
@@ -1393,8 +1393,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-daughter-provenance.json",
-      "bytes": 7055,
-      "sha256": "88833f5412b59d402d83bbba2abc9baa52add49a3a19788fbba81564295192a8"
+      "bytes": 8918,
+      "sha256": "b86b5f161c4b69d105cfb7890693436c05e6a0d5df692e802033458eb84b1ad5"
     },
     "receipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/validation-and-handoff-receipt.json",
@@ -1441,15 +1441,38 @@
       }
     },
     "actualFramer": {
-      "sourceRegistered": false,
-      "newFamiliesAuthored": false,
-      "nativeBindingsVerified": false,
+      "sourceRegistered": true,
+      "publicNativeOverrides": 49,
+      "compilerDiagnostics": 0,
+      "newFamiliesAuthored": 11,
+      "newFrameCopies": 33,
+      "logicalRoleAssignments": 24,
+      "nativeBindingsVerified": 72,
+      "currentOwner": "5051d9f01b765888cd3227e17c95c496b8f836d10a526eb82408b84f075893dd",
+      "wholePriorOwnerInverse": "9d0e011af94c47a98abac63b105f0098b3027cd0a540c46a07691dede6fd004e",
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/final-source49-native11-authoring-receipt720.json",
+        "bytes": 5201,
+        "sha256": "4c3f1a328384c76159c0c23abd8423d9058f3a5b6607b23473e7367934ec7b6f"
+      },
+      "map": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/immutable-final-source49-native11-map720.json",
+        "bytes": 6678,
+        "sha256": "db6277d6070f8b75f56acba0ee7ba095fc385884a31aebc403ecc19a54bb3ae3"
+      },
+      "oldPhoneGeometryPreserved": true,
+      "otherPagesPreserved": 91,
+      "nativeDefinitionsPreserved": 16,
+      "codePlacementsPreserved": 237,
+      "sourceCatalogsChecked": 60,
+      "nativeRepresentations": "All33 new Frame position:absolute getters omit the default. No other native adaptation is admitted.",
+      "actualPaintVerified": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false
     },
     "remaining": [
-      "Complete current source49 and native11/72-binding authoring, then compare corresponding Preview states and reload.",
-      "Four genuine spark materials and geometry remain separate unfinished work.",
+      "Compare corresponding animated Preview states, native DOM/ref forwarding and editor reload.",
+      "Four genuine spark assets are recovered; delivery and the finite button effect remain unfinished.",
       "Notes shared import remains unresolved; active Details151 and all closing21 variants/30 slots stay unchanged."
     ]
   }

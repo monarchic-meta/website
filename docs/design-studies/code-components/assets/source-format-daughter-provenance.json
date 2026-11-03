@@ -3,7 +3,7 @@
   "classification": "Source inspiration / credited recreation",
   "credit": "FORMAT / Obys × DES",
   "source": "https://format.obys.agency/",
-  "status": "LOCAL40_AND_LEGACY_SHARED_REGRESSION_PASS_NATIVE_AUTHORING_IN_PROGRESS",
+  "status": "AUTHORING_THROUGH_MCP720_PREVIEW_AND_RELOAD_PENDING",
   "sourceModule": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/SourceHeroNativeBehaviors.tsx",
     "bytes": 54385,
@@ -114,10 +114,41 @@
     "No uncached spark artwork or closing21variant/30slot changes are included."
   ],
   "actualFramer": {
-    "sourceRegistered": false,
-    "newFamiliesAuthored": false,
-    "nativeBindingsVerified": false,
+    "sourceRegistered": true,
+    "publicNativeOverrides": 49,
+    "compilerDiagnostics": 0,
+    "newFamiliesAuthored": 11,
+    "newFrameCopies": 33,
+    "logicalRoleAssignments": 24,
+    "nativeBindingsVerified": 72,
+    "currentOwner": "5051d9f01b765888cd3227e17c95c496b8f836d10a526eb82408b84f075893dd",
+    "wholePriorOwnerInverse": "9d0e011af94c47a98abac63b105f0098b3027cd0a540c46a07691dede6fd004e",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/final-source49-native11-authoring-receipt720.json",
+      "bytes": 5201,
+      "sha256": "4c3f1a328384c76159c0c23abd8423d9058f3a5b6607b23473e7367934ec7b6f"
+    },
+    "map": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-writer-preparation714/immutable-final-source49-native11-map720.json",
+      "bytes": 6678,
+      "sha256": "db6277d6070f8b75f56acba0ee7ba095fc385884a31aebc403ecc19a54bb3ae3"
+    },
+    "oldPhoneGeometryPreserved": true,
+    "otherPagesPreserved": 91,
+    "nativeDefinitionsPreserved": 16,
+    "codePlacementsPreserved": 237,
+    "sourceCatalogsChecked": 60,
+    "nativeRepresentations": "All33 new Frame position:absolute getters omit the default. No other native adaptation is admitted.",
+    "actualPaintVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "nextSourceSlice": {
+    "materials": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/source-assets/verified-materials.json",
+      "bytes": 2368,
+      "sha256": "28bf2935d8398302b6f2ecfd45c211b141f41547dac59e7f7cd3ee55bba74cea"
+    },
+    "status": "FOUR_GENUINE_SPARK_ASSETS_RECOVERED_NOT_YET_UPLOADED_OR_IMPLEMENTED"
   }
 }
