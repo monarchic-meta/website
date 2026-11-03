@@ -33,7 +33,7 @@ const layerDeclaration = 'type LayerProps = { onClick?: (event: React.MouseEvent
 const previousJonWay = sources.SourceJonWayAccordion.replace(layerDeclaration, '').replaceAll('Component: ComponentType<LayerProps>): ComponentType<LayerProps> {', 'Component: ComponentType): ComponentType {').replace('React.forwardRef<HTMLElement, LayerProps>', 'React.forwardRef<HTMLElement, Record<string, unknown>>').replace('React.forwardRef<HTMLElement, LayerProps>', 'React.forwardRef<HTMLElement, { onClick?: (event: React.MouseEvent<HTMLElement>) => void; onTap?: (event: { defaultPrevented?: boolean }, info?: unknown) => void; onKeyDown?: (event: React.KeyboardEvent<HTMLElement>) => void; [key: string]: unknown }>')
 assert.equal(hash(previousJonWay), '6d2b267aa8dea9684aea72a1195cbfe7c47605bf49a9bb0e5dd9e51ef121fe54')
 const previousMezmo = sources.SourceMezmoTerminal.replace('type ContainerStyle = React.CSSProperties & { containerType?: "inline-size"; containerName?: string }\n', '').replace('containerName: "source-mezmo" } as ContainerStyle}>', 'containerName: "source-mezmo" }}>')
-assert.equal(hash(previousMezmo), '85c049ebb13dfe145540f8a5853fe3dc848d579e3c22f7f15641b006ca772539')
+assert.equal(hash(previousMezmo), '60c1c686fde758889f346703e74e7e633e7685d8ec8851a19f11518bf4d1124b')
 const mezmoNegativeDiagnostics = typeDiagnostics(undefined, previousMezmo)
 assert.ok(mezmoNegativeDiagnostics.some(d => ts.flattenDiagnosticMessageText(d.messageText, ' ').includes('containerType')), 'Old Framer CSS counterfactual rejects unsupported container fields')
 const mezmoPreviousJavaScript = ts.transpileModule(previousMezmo, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText
