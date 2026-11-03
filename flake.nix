@@ -132,6 +132,15 @@
             }
           ];
           # Fixed original materials are comparison-only test inputs.
+          sourceFormatDaughterMaterials = pkgs.linkFarm "monarchic-format-daughter-test-inputs"
+            (map (asset: {
+              name = asset.relativePath;
+              path = pkgs.fetchurl {
+                url = asset.sourceURL;
+                sha256 = asset.sha256;
+              };
+            }) (builtins.fromJSON (builtins.readFile ./scripts/fixtures/source-format-daughter-materials.json)).assets);
+          # Fixed original materials are comparison-only test inputs.
           sourceFormatClockMaterials = pkgs.linkFarm "monarchic-format-intro-clock-test-inputs" [
             {
               name = "kid-assets/clock.webp";
@@ -558,6 +567,15 @@
             pnpm run check:source-format-notes
           '').overrideAttrs (_: {
             MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatClockMaterials;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
+          source-format-daughter-effects = (mkWebsiteCheck "source-format-daughter-effects" ''
+            export MONARCHIC_FORMAT_DAUGHTER_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-daughter-effects
+          '').overrideAttrs (_: {
+            MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatDaughterMaterials;
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };

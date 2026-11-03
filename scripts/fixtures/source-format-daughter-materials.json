@@ -1,0 +1,227 @@
+{
+  "reference": "HERO-013",
+  "credit": "FORMAT / Obys × DES",
+  "purpose": "Exact comparison-only test inputs for credited native asset effects; no production runtime synchronization.",
+  "assets": [
+    {
+      "key": "vertical",
+      "relativePath": "kid-assets/vertical.webp",
+      "sourceURL": "https://format.obys.agency/kid/vertical.webp",
+      "bytes": 594718,
+      "sha256": "34cc81fe3f141704d0429cd42f7185719fc90eb6713cac88aa76161d4ae0f689",
+      "width": 670,
+      "height": 852,
+      "hasAlpha": true
+    },
+    {
+      "key": "mini",
+      "relativePath": "kid-assets/mini.webp",
+      "sourceURL": "https://format.obys.agency/kid/mini.webp",
+      "bytes": 35958,
+      "sha256": "4feee861c0ac5e16c43cf45be45fb8ef220ad88f5075553746e05932b5ad42a8",
+      "width": 204,
+      "height": 204,
+      "hasAlpha": true
+    },
+    {
+      "key": "horizontal",
+      "relativePath": "kid-assets/horizontal.webp",
+      "sourceURL": "https://format.obys.agency/kid/horizontal.webp",
+      "bytes": 1466538,
+      "sha256": "ec83094a4dabc11785cec2b0b23edd9b4ee2368083e81107595591c0fb14af2b",
+      "width": 1380,
+      "height": 896,
+      "hasAlpha": true
+    },
+    {
+      "key": "tag",
+      "relativePath": "kid-assets/tag.webp",
+      "sourceURL": "https://format.obys.agency/kid/tag.webp",
+      "bytes": 225996,
+      "sha256": "32310e577e96757f4115acd36133453ee4c57bca14747d0d8e5e637783bb7dba",
+      "width": 513,
+      "height": 366,
+      "hasAlpha": true
+    },
+    {
+      "key": "side",
+      "relativePath": "kid-assets/side.webp",
+      "sourceURL": "https://format.obys.agency/kid/side.webp",
+      "bytes": 241656,
+      "sha256": "f6dab51233abcfe6dfae3c1e35c10deb9664e09fcd29d3976acc7b7edfd11538",
+      "width": 513,
+      "height": 366,
+      "hasAlpha": true
+    },
+    {
+      "key": "screens",
+      "relativePath": "kid-assets/screens.webp",
+      "sourceURL": "https://format.obys.agency/kid/screens.webp",
+      "bytes": 283270,
+      "sha256": "a39a67459363d2fb52050379963050095c5c85f411def8f47601172347e6f6f3",
+      "width": 399,
+      "height": 678,
+      "hasAlpha": true
+    },
+    {
+      "key": "clock",
+      "relativePath": "kid-assets/clock.webp",
+      "sourceURL": "https://format.obys.agency/kid/clock.webp",
+      "bytes": 1002720,
+      "sha256": "ac5656432ec96c3771dbac37faa71b1bc569f5cc9875a6ebd39b93563e67c5ed",
+      "width": 1026,
+      "height": 1026,
+      "hasAlpha": true
+    },
+    {
+      "key": "deck",
+      "relativePath": "kid-assets/deck.webp",
+      "sourceURL": "https://format.obys.agency/kid/deck.webp",
+      "bytes": 569762,
+      "sha256": "5ea44750c32351e1d6bc5bf244b514dc53c8b3d43ea48f0dbf2a5291cf5ef730",
+      "width": 670,
+      "height": 852,
+      "hasAlpha": true
+    },
+    {
+      "key": "v-card",
+      "relativePath": "kid-assets/v-card.webp",
+      "sourceURL": "https://format.obys.agency/kid/v-card.webp",
+      "bytes": 611494,
+      "sha256": "35db7afbf61dfa609f99d27d85923b8764a0c052fe9da0a4e718315be8208c1b",
+      "width": 670,
+      "height": 852,
+      "hasAlpha": true
+    },
+    {
+      "key": "tile",
+      "relativePath": "kid-assets/tile.webp",
+      "sourceURL": "https://format.obys.agency/kid/tile.webp",
+      "bytes": 88330,
+      "sha256": "7c1c5f220b03a1d8fdbf494b4aa536670e76c1234c920ad8276e8decf2ca2bae",
+      "width": 316,
+      "height": 316,
+      "hasAlpha": true
+    },
+    {
+      "key": "bar",
+      "relativePath": "kid-assets/bar.webp",
+      "sourceURL": "https://format.obys.agency/kid/bar.webp",
+      "bytes": 282670,
+      "sha256": "ea2092e480ade8a12de8471a84ad05b19a1a9150e343e9a5cca0101fe0e43e43",
+      "width": 1068,
+      "height": 316,
+      "hasAlpha": true
+    },
+    {
+      "key": "pill",
+      "relativePath": "kid-assets/pill.webp",
+      "sourceURL": "https://format.obys.agency/kid/pill.webp",
+      "bytes": 528638,
+      "sha256": "5b8d41e7c9c7660c3a165b4348b88b39610e7a7342772711bf48f5fe37dd2013",
+      "width": 1392,
+      "height": 316,
+      "hasAlpha": true
+    },
+    {
+      "key": "dial",
+      "relativePath": "kid-assets/dial.webp",
+      "sourceURL": "https://format.obys.agency/kid/dial.webp",
+      "bytes": 1732518,
+      "sha256": "01f491e79792fa180a10f564abbbf2ee8c8b0728caba5bd7062fab3a23c65d0a",
+      "width": 1394,
+      "height": 1394,
+      "hasAlpha": true
+    },
+    {
+      "key": "side-a",
+      "relativePath": "kid-assets/side-a.webp",
+      "sourceURL": "https://format.obys.agency/kid/side-a.webp",
+      "bytes": 1514178,
+      "sha256": "ae3e929730ebea64e495eb1b420bc91254441722fb8baa91dec5fee55d6c5f87",
+      "width": 1298,
+      "height": 1298,
+      "hasAlpha": true
+    },
+    {
+      "key": "tri",
+      "relativePath": "kid-assets/tri.webp",
+      "sourceURL": "https://format.obys.agency/kid/tri.webp",
+      "bytes": 1140688,
+      "sha256": "03eb1334dbf1b269de3f85c6f42719ffb94c4e44baf0cb20d63438e57d70335c",
+      "width": 1408,
+      "height": 1217,
+      "hasAlpha": true
+    },
+    {
+      "key": "special",
+      "relativePath": "kid-assets/special.webp",
+      "sourceURL": "https://format.obys.agency/kid/special.webp",
+      "bytes": 472158,
+      "sha256": "f7638c5afb2ebe2cefa2373f02405f6da93dac0a40e33b0ebf3d8d30bae4756e",
+      "width": 704,
+      "height": 654,
+      "hasAlpha": true
+    },
+    {
+      "key": "fan",
+      "relativePath": "kid-assets/fan.webp",
+      "sourceURL": "https://format.obys.agency/kid/fan.webp",
+      "bytes": 1274852,
+      "sha256": "b71c1877a4922731afb16760f62490d90680819a4dff01bc52a3d9f89fe4b333",
+      "width": 1378,
+      "height": 1378,
+      "hasAlpha": true
+    },
+    {
+      "key": "win",
+      "relativePath": "kid-assets/win.webp",
+      "sourceURL": "https://format.obys.agency/kid/win.webp",
+      "bytes": 2153938,
+      "sha256": "11b11de6dc9b672e2f84de314396ee5707ec1f228cbc98775c3f2689f7739bad",
+      "width": 2090,
+      "height": 896,
+      "hasAlpha": true
+    },
+    {
+      "key": "vee-west",
+      "relativePath": "kid-assets/vee-west.webp",
+      "sourceURL": "https://format.obys.agency/kid/vee-west.webp",
+      "bytes": 258632,
+      "sha256": "41cf6f820694755dbab6f9141ea86b4f6026a1011ce020769866787b88adf8f6",
+      "width": 1394,
+      "height": 364,
+      "hasAlpha": true
+    },
+    {
+      "key": "vee-east",
+      "relativePath": "kid-assets/vee-east.webp",
+      "sourceURL": "https://format.obys.agency/kid/vee-east.webp",
+      "bytes": 344030,
+      "sha256": "21a45294a2b59fa855e27cf9ed5d166506f81335d4af616b7faedfb9eecee167",
+      "width": 477,
+      "height": 678,
+      "hasAlpha": true
+    },
+    {
+      "key": "vee-tri",
+      "relativePath": "kid-assets/vee-tri.webp",
+      "sourceURL": "https://format.obys.agency/kid/vee-tri.webp",
+      "bytes": 1105250,
+      "sha256": "e0dd9c561911522702a693f23918d313cfeb2ff8db090015817dfd596297ed66",
+      "width": 1408,
+      "height": 1217,
+      "hasAlpha": true
+    },
+    {
+      "key": "poster-shot",
+      "relativePath": "kid-assets/poster-shot.webp",
+      "sourceURL": "https://format.obys.agency/kid/poster-shot.webp",
+      "bytes": 2701984,
+      "sha256": "c99a174b3c4b7d6d6c6ef8218f0db28672f045e2323470ba0306339ec238b6d1",
+      "width": 1380,
+      "height": 1668,
+      "hasAlpha": true
+    }
+  ]
+}

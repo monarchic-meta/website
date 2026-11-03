@@ -1382,5 +1382,75 @@
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "daughterLiveEffects": {
+    "status": "LOCAL40_AND_LEGACY_SHARED_REGRESSION_PASS_NATIVE_AUTHORING_IN_PROGRESS",
+    "classification": "Source inspiration / credited recreation",
+    "sourceModule": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/SourceHeroNativeBehaviors.tsx",
+      "bytes": 54385,
+      "sha256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-daughter-provenance.json",
+      "bytes": 7055,
+      "sha256": "88833f5412b59d402d83bbba2abc9baa52add49a3a19788fbba81564295192a8"
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/validation-and-handoff-receipt.json",
+      "bytes": 7588,
+      "sha256": "b2b5498f7cfa906dd6e92a1b7148498c0399536f699b515e406cd88506abf00a"
+    },
+    "publicOverrides": 49,
+    "materialRoles": 22,
+    "plateRoles": 2,
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/native11-and-existing13-binding-packet.json",
+      "bytes": 56846,
+      "sha256": "34422f585df700cd0359a39c1c96862ea00bfe45dff1b56695cda63af0ef5ff8"
+    },
+    "newNativeFamilies": 11,
+    "physicalCopies": 33,
+    "existingArtBindingCopies": 39,
+    "validation": {
+      "checks": 40,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/validation-ca5087d3-shell200/result.json",
+        "bytes": 8230,
+        "sha256": "d9783ec041002977533b6789eb8be9c63e352107f318ad05052e4dc26c14dd3f"
+      },
+      "legacyShared": {
+        "checks": 4,
+        "browserReportGroups": 5,
+        "source": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/SourceHeroNativeBehaviors.tsx",
+          "bytes": 54385,
+          "sha256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54"
+        },
+        "checker": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/check-source-hero-native-behaviors.mjs",
+          "bytes": 20964,
+          "sha256": "e9aa137daeaf0865d73abb66df1f67fa01ba5a03ba2e7ecafab4263f577a2c55"
+        },
+        "result": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/result.json",
+          "bytes": 22545,
+          "sha256": "a5853ceba741e653f36aa005eb5343245e6eae8f958df545f7f0a84b1cf83459"
+        },
+        "scope": "All42 old source poses,21 alternate/original pairs, native callbacks/props/refs, reverse, Phone, frozen targets and cleanup remain covered."
+      }
+    },
+    "actualFramer": {
+      "sourceRegistered": false,
+      "newFamiliesAuthored": false,
+      "nativeBindingsVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "remaining": [
+      "Complete current source49 and native11/72-binding authoring, then compare corresponding Preview states and reload.",
+      "Four genuine spark materials and geometry remain separate unfinished work.",
+      "Notes shared import remains unresolved; active Details151 and all closing21 variants/30 slots stay unchanged."
+    ]
   }
 }

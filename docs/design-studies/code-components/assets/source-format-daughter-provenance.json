@@ -1,0 +1,123 @@
+{
+  "reference": "HERO-013",
+  "classification": "Source inspiration / credited recreation",
+  "credit": "FORMAT / Obys × DES",
+  "source": "https://format.obys.agency/",
+  "status": "LOCAL40_AND_LEGACY_SHARED_REGRESSION_PASS_NATIVE_AUTHORING_IN_PROGRESS",
+  "sourceModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/SourceHeroNativeBehaviors.tsx",
+    "bytes": 54385,
+    "sha256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/check-source-format-daughter-effects.mjs",
+    "bytes": 35587,
+    "sha256": "255dcda467968f27adc118e35156368eae2cb4e1e2320595c88bcaa07f6d1468"
+  },
+  "materialFixture": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/source-format-daughter-materials.json",
+    "bytes": 7244,
+    "sha256": "262654eca214e5525a05b57c98955250c8e8c3306be6979f0095bbfeea1f289a"
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/validation-and-handoff-receipt.json",
+    "bytes": 7588,
+    "sha256": "b2b5498f7cfa906dd6e92a1b7148498c0399536f699b515e406cd88506abf00a"
+  },
+  "validation": {
+    "checks": 40,
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/validation-ca5087d3-shell200/result.json",
+      "bytes": 8230,
+      "sha256": "d9783ec041002977533b6789eb8be9c63e352107f318ad05052e4dc26c14dd3f"
+    },
+    "legacyShared": {
+      "checks": 4,
+      "browserReportGroups": 5,
+      "source": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/SourceHeroNativeBehaviors.tsx",
+        "bytes": 54385,
+        "sha256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54"
+      },
+      "checker": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/check-source-hero-native-behaviors.mjs",
+        "bytes": 20964,
+        "sha256": "e9aa137daeaf0865d73abb66df1f67fa01ba5a03ba2e7ecafab4263f577a2c55"
+      },
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/legacy-shared49-regression/result.json",
+        "bytes": 22545,
+        "sha256": "a5853ceba741e653f36aa005eb5343245e6eae8f958df545f7f0a84b1cf83459"
+      },
+      "scope": "All42 old source poses,21 alternate/original pairs, native callbacks/props/refs, reverse, Phone, frozen targets and cleanup remain covered."
+    }
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/native11-and-existing13-binding-packet.json",
+    "bytes": 56846,
+    "sha256": "34422f585df700cd0359a39c1c96862ea00bfe45dff1b56695cda63af0ef5ff8"
+  },
+  "materials": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-ref-swap697/final-nine-genuine-material-delivery-receipt712.json",
+    "bytes": 13151,
+    "sha256": "2a5c93785bd7e3127b71fc2d1a77efb938763fc3bdcf8e101de7a288757367f0"
+  },
+  "sourceFacts": {
+    "divisors": [
+      64,
+      32,
+      16,
+      8,
+      4,
+      2
+    ],
+    "draws": 6,
+    "stepMs": 70,
+    "visibleWaveMs": 40,
+    "terminal": "Sixthdiv2 draw occurs at nominal350ms and immediately restoresNative/removescanvas in same task; no final70ms hold.",
+    "sourcePropertyCopy": "Literal Zu copies left/top/width/height/zIndex/clipPath/borderRadius/transform/objectFit, not maskImage. Native final masks retained; omission alone does not prove visible intermediate occlusion."
+  },
+  "resources": {
+    "transientPixelsLimit": 2000000,
+    "observedPeakPixels": 609261,
+    "serialPendingDecode": true,
+    "decodedCacheEntriesLimit": 6,
+    "decodedPixelsLimit": 12000000,
+    "newWebGLContexts": 0,
+    "ambientClock": false,
+    "canvasExportThumbnailMotion": false
+  },
+  "preservation": {
+    "old25Prefix391Exact": true,
+    "publicOverrides": 49,
+    "newMaterialRoles": 22,
+    "newPlateRoles": 2,
+    "closing21Variants30SlotsUnchanged": true,
+    "noCrossFileImports": true,
+    "noDuplicatedToggleStore": true
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/nix-target-evaluation-receipt.json",
+    "bytes": 823,
+    "sha256": "394535519654e47de0000f259459cd468cd5bf442dd3e1be5134f11b29105153"
+  },
+  "differences": [
+    "Cancellation/resize/hidden/reduced/freeze/budget/decodefailure falls back to the sharp Native image, rather than preserving an unfinished source canvas.",
+    "Only visible transient pixel effects are rendered; originalnear/offscreen material network behavior is delegated to authenticNative asset loading and is not claimed identical."
+  ],
+  "limits": [
+    "Cached primary-source equations, not a fresh original input audit.",
+    "Only public owned refs/ancestor markers are used; actual Framer DOM forwarding, authoring and Preview/reload remain separate gates.",
+    "The literal source Zu property list omits mask-image; visible intermediate occlusion is not established by code omission alone.",
+    "Sharp native fallback replaces source transient behavior on budget/decode/resize/hidden/reduced/off/freeze interruption.",
+    "SourcePhone remains its splash; historical NativePhone artwork geometry and pose stay unchanged.",
+    "No uncached spark artwork or closing21variant/30slot changes are included."
+  ],
+  "actualFramer": {
+    "sourceRegistered": false,
+    "newFamiliesAuthored": false,
+    "nativeBindingsVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  }
+}

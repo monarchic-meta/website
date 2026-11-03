@@ -137,6 +137,23 @@ separate gates.
 nix build .#checks.x86_64-linux.source-format-notes --max-jobs 1 --cores 2
 ```
 
+## FORMAT alternate artwork effects
+
+The 24 appended roles in [SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx)
+add finite pixel reveals to 22 genuine artworks and scroll-driven corners to two
+native plates. The previous 25 roles remain byte-exact. Source images stay
+editable; temporary Canvas2D buffers disappear when the reveal finishes.
+
+The [provenance](assets/source-format-daughter-provenance.json) records 40 focused
+checks and the retained shared-module regression. Decoding is serial, temporary
+buffers share a 2MP limit, and Canvas/export/thumbnail remain still. Failed or
+interrupted work retains the native image. Native authoring, actual Preview and
+reload remain separate gates; four source spark materials are still missing.
+
+```sh
+nix build .#checks.x86_64-linux.source-format-daughter-effects --max-jobs 1 --cores 2
+```
+
 ## Native source-video playback
 
 [SourceNativeVideoVisibility.tsx](SourceNativeVideoVisibility.tsx) supplies the
