@@ -213,6 +213,14 @@ Primary copy. Read the previous binding on every affected copy, account for
 those shared writes in preservation checks, and gate Phone behavior in the
 override itself. Desktop and frozen paths must preserve caller styles.
 
+The current MCP tree API rejects `codeOverride` on `SVGNode`. Keep genuine SVG
+artwork inside a native Frame and bind its behavior to that Frame. Preserve the
+SVG's size, body, visibility and IDs; if a wrapper is needed, move only the
+Primary SVG and normalize its local position while preserving the composed
+rectangle in every responsive copy. A returned operation acknowledgment can
+contain rejected properties, so inspect its apply diagnostics as well as the
+stored result.
+
 ## Live code graphics
 
 Use [Framer code components](design-studies/code-components/README.md) for live

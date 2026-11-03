@@ -31,6 +31,7 @@ Current pending gates:
 - H2: verify the authored 166-pose/30-atlas continuation, native catalog/guides/metadata, word motion and decoded aperture in actual Preview and after reload; remaining nonphotographic/closing-state fidelity work is listed separately in the backlog.
 - H8: the 20 additional genuine Font13 copies and six tickers are authored. Check their actual paint, Tickets dragging, corrected navigation/proximity, both new compositions, native-media lifecycle and editor reload.
 - H7: check the saved native arrow-hover/backdrop effect after reload.
+- H12: the four header dropdowns and Phone menu are authored through MCP598, with 53 native families and 27 cleanly compiled overrides. Compare actual native font paint, Desktop/Phone input, scroll chaining and reload. Terminal transcript/stream fidelity remains separate.
 - H6: verify the native visibility override's real host/Playing bridge, offscreen pause, manual controls, static targets and reload. Local video fixtures and a clean source compile do not close that gate.
 - H14: resolve the two helper-import diagnostics and compare the authored phased wheel/touch/reverse journey in actual Preview and after reload.
 - H13: the 43-family current mobile clock/logo splash is authored. Verify its mobile/coarse/landscape behavior and links, archive/glyph/pip paint, the complete 30-slot pool and editor reload; omitted or uninspected source states remain separate reconstruction work.

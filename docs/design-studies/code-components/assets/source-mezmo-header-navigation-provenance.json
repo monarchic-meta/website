@@ -106,12 +106,16 @@
     "sharedPrimaryOverrideSemantics": true,
     "rootBindingLast": true,
     "oldIDsRetained": true,
-    "oldSerializedGeometryTextFontOrParentsChanged": false,
     "oldSVGUnstretched": true,
     "newHitFrameSeparate": true,
     "actualOnest400And600CatalogAndTemplatesPositive": true,
     "actualAURASVGBytesExact": true,
-    "nativeWritesExecuted": false
+    "nativeWritesExecuted": true,
+    "finalAuthoredFamilies": 53,
+    "finalAuthoredPhysicalCopies": 159,
+    "initialRecipeBoundary": "The original 52-family recipe was applied. The actual MCP rejected codeOverride on the existing SVG, so one supported inert Frame host family was added. The unchanged SVG artwork remains inside that host.",
+    "initialRecipeChangedOldGeometryTextFontOrParents": false,
+    "finalOldSVGParentAdapter": "The supported Frame host moves the old Primary SVG and resets only its left/top. The composed artwork rectangle and three inherited SVG bodies remain unchanged."
   },
   "lifecycle": {
     "newMediaCanvasesWebGLNetworkExecutors": 0,
@@ -126,21 +130,40 @@
   ],
   "verification": {
     "lockedNixDerivationPending": false,
-    "actualFramerSourceRegistered": false,
-    "actualNativeMenuAuthored": false,
-    "actualSavedNativeReadback": false,
+    "actualFramerSourceRegistered": true,
+    "actualNativeMenuAuthored": true,
     "actualFramerInputAndPreview": false,
     "afterEditorReload": false,
     "nixTargetEvaluated": true,
     "nixDerivationPath": "/nix/store/r3wjr44hgz9rh2liss3djj0rxd3z3wna-monarchic-website-source-mezmo-header-navigation-0.0.1.drv",
     "lockedNixDerivationExecuted": false,
-    "nixBoundary": "Only drvPath was evaluated as wiring proof; no locked build execution claim. Exact same source/test already passed36 focused checks on the cached Nix toolchain."
+    "nixBoundary": "Only drvPath was evaluated as wiring proof; no locked build execution claim. Exact same source/test already passed36 focused checks on the cached Nix toolchain.",
+    "readbackBoundary": "Actual native model and compiler readback through MCP598; this is not actual paint, Preview input or persistence after an editor reload.",
+    "actualNativeModelReadback": true
   },
   "pendingGates": [
-    "Root focused code/native review and locked Nix target, without rerunning unrelated source/render suites.",
-    "Actual Framer source registration with27 genuine override rows and0components/controls.",
-    "One Primary native pilot using documented native attributes; then52family creation with actual inherited ID/ground readback, shared bindings and rootLAST.",
-    "Exact whole-owner scope inverse, all other pages/catalogs/code/terminal preservation, genuine inner font tuple and source-art paint.",
-    "Actual Desktop/Compact/Phone interactions, body scroll chain, transformed placement, hidden/reduced/static behavior and editor reload before saved-state claims."
-  ]
+    "Actual Desktop/Compact/Phone interactions and source font paint, body scroll chain, transformed placement, hidden/reduced/static behavior and editor reload.",
+    "Actual native Frame-host ref forwarding and Phone hit target in Framer Preview. Local native-like fixtures do not prove that bridge."
+  ],
+  "actualAuthoring": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-writer588/final-actual-header-authoring-receipt.json",
+    "bytes": 7140,
+    "sha256": "b83174edcb12f63dca0859738a2aee983e96cd0d509ea8326d47e6a1f5879a20"
+  },
+  "actualAuthoringScope": {
+    "sourceModuleID": "codeFile/ELfga2U",
+    "compilerDiagnostics": 0,
+    "publicOverrides": 27,
+    "controls": 0,
+    "newFamilies": 53,
+    "physicalParts": 159,
+    "genuineOnestNativeBlockRunTuples": 297,
+    "oldPhysicalBindings": 15,
+    "newPhysicalBindings": 138,
+    "ownerSHA256": "460f2c799fb85e72f3d6bdbec6091138d338a86a6d8b2dededd4d964a383f8d1",
+    "inverseOriginalOwnerSHA256": "6cbc60c09559d433541d7fb679c19dda97b0a56b75995ff1dc6964707de5e4ba",
+    "all91OtherOwnersPreserved": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  }
 }

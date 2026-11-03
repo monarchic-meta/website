@@ -47,6 +47,10 @@ Preview checks; all eighteen references are not approved for close fidelity.
 - Mezmo's terminal clear, history, draft restoration and compact tool-view state
   compile through MCP584, retaining its five controls and native page. The
   42-check focused fixture also retains the configuration-drawer checks.
+- Mezmo’s four header dropdowns and Phone menu are authored through MCP598:
+  53 native families, 159 responsive parts and 297 genuine Onest font tuples.
+  Its 27 overrides compile cleanly and 36 local checks pass. Actual native
+  input, font paint, body scroll chaining and editor reload remain unverified.
 
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.

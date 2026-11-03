@@ -72,7 +72,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "CONFIGURATION_SOURCE_UPDATED_HEADER_MODEL_RETAINED_PREVIEW_AND_RELOAD_PENDING",
+    "status": "HEADER_AND_TERMINAL_AUTHORED_PREVIEW_AND_RELOAD_PENDING",
     "page": {
       "id": "A2ZhTsALK",
       "desktop": "KlPcKpJsq",
@@ -94,7 +94,8 @@
     },
     "behavior": "Current blue opening with a code-generated terminal,71 native part families,18 genuine vectors and customer handoff on1440/992/390 roots.",
     "next": [
-      "Verify actual Framer static paint, terminal motion and reload."
+      "Compare actual native header/terminal paint, Desktop and Phone input, body scroll chaining, complete opening handoff and editor reload.",
+      "Refine the default transcript density/timing and separate stream-panel fit against the original."
     ],
     "headerCorrection": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/current-native-page-authoring-prepared/313-HERO-012-exact-color-rebased-headers/output.json",
@@ -204,6 +205,29 @@
       "remaining": "Defaultinvestigationprose/timing/density stillsummarized. Streamin-aperture remainsafitversussourcebelow-aperturepanel. ActualFramerPreview/reloadunverified.",
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
+    },
+    "headerNavigation": {
+      "status": "SOURCE_COMPILER_CLEAN_NATIVE_MODEL_READ_BACK_PREVIEW_PENDING",
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mezmo-header-navigation-provenance.json",
+        "bytes": 8811,
+        "sha256": "46ca123a8c10dd3366e4633fcb20e28f7eba60b372d1633db7e3496554eebae9"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/header-writer588/final-actual-header-authoring-receipt.json",
+        "bytes": 7140,
+        "sha256": "b83174edcb12f63dca0859738a2aee983e96cd0d509ea8326d47e6a1f5879a20"
+      },
+      "behavior": "Four source-grounded Desktop category menus, Compact Customers visibility and the Phone accordion/menu, keyboard behavior and source scroll chaining. The 991px source breakpoint and finite 300ms menu transition are tested locally.",
+      "publicOverrides": 27,
+      "controls": 0,
+      "newPrimaryFamilies": 53,
+      "newPhysicalParts": 159,
+      "genuineOnestNativeBlockRunTuples": 297,
+      "sourceModuleID": "codeFile/ELfga2U",
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false,
+      "apiBoundary": "MCP rejected codeOverride on SVGNode. One native Frame host family carries the artwork override, preserving the original three SVG bodies, visibility and dimensions. All writes target Primary originals; responsive copies inherit the shared bindings."
     }
   }
 }
