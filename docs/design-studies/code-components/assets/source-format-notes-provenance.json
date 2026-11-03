@@ -1,0 +1,133 @@
+{
+  "reference": "HERO-013",
+  "classification": "Source inspiration / credited recreation",
+  "credit": "FORMAT / Obys × DES",
+  "source": "https://format.obys.agency/",
+  "status": "LOCAL_NOTES10_STRICT45_FOCUSED_AND_SHARED25_REGRESSION_PASS_ACTUAL_AUTHORING_PENDING",
+  "immutableInputs": [
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceFormatDetails.tsx",
+      "bytes": 185809,
+      "sha256": "416b27251756cd11528fab4210cff7a84c0314710fa4c2c45bc3e82e604caefb"
+    },
+    {
+      "repositoryPath": "docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceHeroNativeBehaviors.tsx",
+      "bytes": 24207,
+      "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
+    },
+    {
+      "repositoryPath": "scripts/check-source-format-details.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-details.mjs",
+      "bytes": 9555,
+      "sha256": "f165401ad775a68c2159a9bec6a12e7ef6f4925430050a0fac13ff6e2494a156"
+    },
+    {
+      "repositoryPath": "scripts/check-source-format-notes.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-notes.mjs",
+      "bytes": 28489,
+      "sha256": "ef8135421997e14a3469f202fda73a47ea318866fecb8b85a2e8d0863593e27e"
+    },
+    {
+      "repositoryPath": "scripts/check-source-hero-native-behaviors.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-hero-native-behaviors.mjs",
+      "bytes": 20191,
+      "sha256": "fa7dac21131b2e4785b79a242f3dee68d0ca8775eeb0a0645e37a4cbe9db1f77"
+    },
+    {
+      "repositoryPath": "scripts/fixtures/source-format-notes-geometry.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/source-format-notes-geometry.json",
+      "bytes": 4655,
+      "sha256": "eda4fd30e52102042f782fdca3d6ff981bac950a8b9af2a44c824ec7f80fe063"
+    }
+  ],
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/validation-and-handoff-receipt.json",
+    "bytes": 12756,
+    "sha256": "bc49a93e13c3c81f7871c95eefadaa3109cd398ef2c5a54aa3dd7cb1f64a0a10"
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/native-notes91-final-plan.json",
+    "bytes": 86970,
+    "sha256": "d0b1b4ed1bee429554781d89231bbaaf775dc8514dc91488e4dbd95c66c491f4"
+  },
+  "strict": {
+    "command": "nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-details.mjs",
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/strict-result.json",
+      "bytes": 1383,
+      "sha256": "083bcf6ee52a14baf27e4b8909499efed0183e8f2f26cf18a642107abf80c1d7"
+    },
+    "passed": 10
+  },
+  "focused": {
+    "command": "MONARCHIC_FORMAT_NOTES_EVIDENCE_DIR=/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/nix/store/d54vyyazy7bhpyb3lf0pfwgpc1h2s7yr-chromium-unwrapped-147.0.7727.116/libexec/chromium/chromium nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-notes.mjs",
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/result.json",
+      "bytes": 37671,
+      "sha256": "3f6b44e94e6c4bb5da22082e6e3652af11fb5025ead7015ed4899566afcc88ed"
+    },
+    "passed": 45,
+    "static": 12,
+    "browser": 33,
+    "all10TailComparisonsZeroDiff": true,
+    "negativePlainRectangleCaught": true,
+    "browserClosed": true,
+    "contextClosed": true,
+    "heavyTokenReleased": true
+  },
+  "sharedRegression": {
+    "status": "PASS_FOUR_STATIC_AND_FIVE_BROWSER_REPORT_GROUPS",
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/shared25-regression/result.json",
+      "bytes": 22545,
+      "sha256": "ca5128a6bcae5dcc94657683be165190e63dbe4a819dfb4cfe87e904266b0ed9"
+    },
+    "details": "42source-pose samples, retained21Daughtervariant pair/negativecontrols, nativeprops/ref andcleanup; no old assertion removed."
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/nix-target-evaluation-receipt.json",
+    "bytes": 314,
+    "sha256": "f4a725c7354754b2b480e89281f3f1809a193cf4d32dd197663866d3a3940d41"
+  },
+  "sourceFacts": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/notes18-source-construction-plan.json",
+    "bytes": 41400,
+    "sha256": "d32ba4b012664099ccd9ebccbb5bf982e08cbc3f302cf92020e7ad259dddfacf"
+  },
+  "sourceDifferences": [
+    "All18paper sentences are independently paraphrased with corresponding meaning/line density; exact source wording intentionally differs. All18fit unchanged source heights.",
+    "Label Native8.32px template default is retained; live source CSS uses normal line-height. Body uses1.",
+    "Ku-style screen-rect placement follows the ordinary unscaled/unrotated story root. Arbitrary transformed-owner geometry is not claimed.",
+    "Reduced motion/hidden transitions use settled state; new Notes remain off in Phone/editor/static modes."
+  ],
+  "preservation": {
+    "details151PrefixSHA256": "ab379f8a695b508a2e96450a7ca96803baeb28b08312303f6ce083ce336b9761",
+    "shared24PrefixSHA256": "67bba0a23e1f99e05bdb5ec87f5b3cbdd749ea881a439751f511fd241f7a3ee4",
+    "noDuplicateStore": true,
+    "noNewRendererClockGPUOrMedia": true,
+    "oldThreeNotes": "Retain original IDs in a hidden archive; no deletion"
+  },
+  "native": {
+    "newFamilies": 91,
+    "physicalCopies": 273,
+    "frameFamilies": 55,
+    "richTextFamilies": 36,
+    "existingBindingFamilies": 18,
+    "sourceAttachments": 16,
+    "sourcePapers": 18,
+    "sourceBodies": "Native editable labels and paraphrasedcopy; fullpaper polygon/tail masks match exactsource pixels."
+  },
+  "actualFramer": {
+    "sourceRegistered": false,
+    "nativeWritten": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "remaining": [
+    "Actual191/25catalog/compiler registration and native91family packet, after clock69closure.",
+    "Actual font paint, timedNativeinput, sourcecorrespondingstates and editorreload.",
+    "Other Daughter22image/mask/pixel variants remain separate source completion work."
+  ]
+}

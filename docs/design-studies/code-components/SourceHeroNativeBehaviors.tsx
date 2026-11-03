@@ -800,3 +800,15 @@ export function withMechaAescapeRow(Component: ComponentType<LayerProps>): Compo
 export function withMechaNonfictionRow(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return mechaIndexRow(Component, 3)
 }
+
+/** Public prop bridge for the independently owned source Notes chapter.
+ * Reuse the existing two toggles; leave child fade/mask ownership to that chapter.
+ * The native layer stays present in Preview so hiding it cannot cut off its fade.
+ */
+export function withFormatNotesStateBridge(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const notes = useToggle("notes"), daughter = useToggle("daughter"), target = RenderTarget.current()
+        const frozen = useIsStaticRenderer() || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail
+        return <Component {...props} ref={ref} data-format-notes-enabled={!frozen && notes.enabled ? "1" : "0"} data-format-daughter-enabled={!frozen && daughter.enabled ? "1" : "0"} aria-hidden="true" style={{ ...props.style, opacity: frozen ? 0 : 1, visibility: frozen ? "hidden" : "visible", pointerEvents: "none" }} />
+    })
+}

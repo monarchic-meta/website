@@ -101,6 +101,23 @@ All eighteen Notes and further Daughter states remain separate work.
 nix build .#checks.x86_64-linux.source-format-intro-clock --max-jobs 1 --cores 2
 ```
 
+## FORMAT source notes
+
+[SourceFormatDetails.tsx](SourceFormatDetails.tsx) adds eighteen editable papers
+on sixteen source anchors. A single appended bridge in
+[SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx) reuses the existing
+Notes and Daughter state. The old151 Details and24 shared roles stay byte-exact.
+
+The [notes provenance](assets/source-format-notes-provenance.json) records ten
+strict and45 focused checks, plus the shared-module regression. The visible
+papers use the original50ms stagger, fade and mask timing; all five tail shapes
+match the original polygon pixels at both tested sizes. Copy is paraphrased.
+The91-family native plan, actual Framer paint and reload are separate gates.
+
+```sh
+nix build .#checks.x86_64-linux.source-format-notes --max-jobs 1 --cores 2
+```
+
 ## Native source-video playback
 
 [SourceNativeVideoVisibility.tsx](SourceNativeVideoVisibility.tsx) supplies the

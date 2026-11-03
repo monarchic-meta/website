@@ -139,7 +139,8 @@
     "check:source-format-poster-stack": "node scripts/check-source-format-poster-stack.mjs",
     "check:source-cantor-opening": "node scripts/check-source-cantor-opening.mjs",
     "check:source-format-intro-clock": "node scripts/check-source-format-intro-clock.mjs",
-    "check:source-cantor-rolling-text": "node scripts/check-source-cantor-rolling-text.mjs"
+    "check:source-cantor-rolling-text": "node scripts/check-source-cantor-rolling-text.mjs",
+    "check:source-format-notes": "node scripts/check-source-format-notes.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",

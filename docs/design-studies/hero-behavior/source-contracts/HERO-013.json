@@ -1278,5 +1278,64 @@
       "bytes": 8971,
       "sha256": "0b4377f7be42671b2cc93e4fe804e9d3e662060ed10872a71f319b233974858b"
     }
+  },
+  "sourceNotes18": {
+    "status": "LOCAL_NOTES10_STRICT45_FOCUSED_AND_SHARED25_REGRESSION_PASS_ACTUAL_AUTHORING_PENDING",
+    "classification": "Source inspiration / credited recreation",
+    "source": {
+      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceFormatDetails.tsx",
+      "bytes": 185809,
+      "sha256": "416b27251756cd11528fab4210cff7a84c0314710fa4c2c45bc3e82e604caefb"
+    },
+    "shared": {
+      "repositoryPath": "docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceHeroNativeBehaviors.tsx",
+      "bytes": 24207,
+      "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-notes-provenance.json",
+      "bytes": 8482,
+      "sha256": "583cdbd17497913685f0e313f2d207dc9dc7b2f4da7534102d1ad9413741cfca"
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/validation-and-handoff-receipt.json",
+      "bytes": 12756,
+      "sha256": "bc49a93e13c3c81f7871c95eefadaa3109cd398ef2c5a54aa3dd7cb1f64a0a10"
+    },
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/native-notes91-final-plan.json",
+      "bytes": 86970,
+      "sha256": "d0b1b4ed1bee429554781d89231bbaaf775dc8514dc91488e4dbd95c66c491f4"
+    },
+    "checks": {
+      "strict": 10,
+      "focused": 45,
+      "sharedStatic": 4,
+      "sharedBrowserReportGroups": 5
+    },
+    "native": {
+      "newFamilies": 91,
+      "physicalCopies": 273,
+      "frameFamilies": 55,
+      "richTextFamilies": 36,
+      "existingBindingFamilies": 18,
+      "sourceAttachments": 16,
+      "sourcePapers": 18,
+      "sourceBodies": "Native editable labels and paraphrasedcopy; fullpaper polygon/tail masks match exactsource pixels."
+    },
+    "sourceDifferences": [
+      "All18paper sentences are independently paraphrased with corresponding meaning/line density; exact source wording intentionally differs. All18fit unchanged source heights.",
+      "Label Native8.32px template default is retained; live source CSS uses normal line-height. Body uses1.",
+      "Ku-style screen-rect placement follows the ordinary unscaled/unrotated story root. Arbitrary transformed-owner geometry is not claimed.",
+      "Reduced motion/hidden transitions use settled state; new Notes remain off in Phone/editor/static modes."
+    ],
+    "actualFramer": {
+      "sourceRegistered": false,
+      "nativeWritten": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

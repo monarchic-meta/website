@@ -19,10 +19,19 @@ fs.mkdirSync(evidence,{recursive:true});
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const checks=[];
 assert.ok(!/\bany\b|@ts-ignore|@ts-expect-error|querySelector|getElementById|\.innerHTML\s*=/.test(source),'Public typed layer props; no private document lookups');
+const bridgeAt=source.indexOf('\n/** Public prop bridge');
+assert.ok(bridgeAt>0&&hash(source.slice(0,bridgeAt))==='67bba0a23e1f99e05bdb5ec87f5b3cbdd749ea881a439751f511fd241f7a3ee4','The previously verified24-HOC source prefix remains byte-exact');
+const ast=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX),exportsAST=ast.statements.filter(node=>ts.isFunctionDeclaration(node)&&node.modifiers?.some(modifier=>modifier.kind===ts.SyntaxKind.ExportKeyword)),append=ast.statements.filter(node=>node.end>bridgeAt);
+assert.equal(exportsAST.length,25,'Current public contract has the original24 plus one Notes bridge');
+assert.ok(append.length===1&&ts.isFunctionDeclaration(append[0])&&append[0].name?.text==='withFormatNotesStateBridge','Only the one public bridge follows the exact old prefix');
+const bridge=source.slice(bridgeAt,append[0].end);
+assert.match(bridge,/export function withFormatNotesStateBridge\(Component: ComponentType<LayerProps>\): ComponentType<LayerProps>/);
+assert.ok(bridge.includes('useToggle("notes")')&&bridge.includes('useToggle("daughter")')&&!/new Set|new Map|createContext|useState|useSyncExternalStore|let toggles/.test(bridge),'Bridge composes the existing stores without introducing another store');
+checks.push('Exact old24 prefix and one public typed Notes bridge; no duplicated store');
 
 const declarations=new Map([
     [path.join(repo,'__native-react.d.ts'),`export interface CSSProperties{[key:string]:string|number|undefined}; export type Ref<T>=((value:T|null)=>void)|{current:T|null}|null; export type ComponentType<P={}>=(props:P)=>unknown; export function forwardRef<T,P>(render:(props:P,ref:Ref<T>)=>unknown):ComponentType<P>; export function useSyncExternalStore<T>(subscribe:(notify:()=>void)=>()=>void,getSnapshot:()=>T,getServerSnapshot:()=>T):T; export interface MouseEvent<T>{currentTarget:T;defaultPrevented:boolean};export interface KeyboardEvent<T> extends MouseEvent<T>{key:string;preventDefault():void};export type MouseEventHandler<T>=(event:MouseEvent<T>)=>void;export type KeyboardEventHandler<T>=(event:KeyboardEvent<T>)=>void;export function useRef<T>(value:T):{current:T};export function createElement(...args:unknown[]):unknown;`],
-    [path.join(repo,'__native-framer.d.ts'),`export const RenderTarget:{canvas:string;current():string};export function useIsStaticRenderer():boolean;`],
+    [path.join(repo,'__native-framer.d.ts'),`export const RenderTarget:{canvas:string;export:string;thumbnail:string;current():string};export function useIsStaticRenderer():boolean;`],
 ]);
 const options={strict:true,noEmit:true,skipLibCheck:true,target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext,moduleResolution:ts.ModuleResolutionKind.Node10,jsx:ts.JsxEmit.React,baseUrl:repo,paths:{react:['__native-react.d.ts'],framer:['__native-framer.d.ts']}};
 const host=ts.createCompilerHost(options),read=host.readFile.bind(host),exists=host.fileExists.bind(host);
@@ -35,11 +44,20 @@ checks.push('Strict semantic TypeScript with actual DOM libraries and explicit R
 
 const code=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText;
 const ssrModule={exports:{}};
-vm.runInNewContext(`(function(require,exports){${code}\n})(require,module.exports)`,{module:ssrModule,require:name=>name==='react'?require('react'):{RenderTarget:{canvas:'canvas',current:()=> 'preview'},useIsStaticRenderer:()=>false}});
+let ssrTarget='preview';
+vm.runInNewContext(`(function(require,exports){${code}\n})(require,module.exports)`,{module:ssrModule,require:name=>name==='react'?require('react'):{RenderTarget:{canvas:'canvas',export:'export',thumbnail:'thumbnail',current:()=>ssrTarget},useIsStaticRenderer:()=>false}});
 const React=require('react');
 const ssr=require('react-dom/server').renderToString(React.createElement(ssrModule.exports.withFormatWordmark(React.forwardRef((props,ref)=>React.createElement('div',{...props,ref}))),{style:{transform:'translateZ(0)'},'data-preserved':'yes'}));
 assert.ok(ssr.includes('data-preserved="yes"')&&ssr.includes('translateZ(0)'));
 checks.push('Actual React 18 server render has no window access and preserves native props/transform');
+const BridgeNative=React.forwardRef((props,ref)=>React.createElement('div',{...props,ref}));
+for(const target of ['preview','canvas','export','thumbnail']){
+    ssrTarget=target;
+    const html=require('react-dom/server').renderToString(React.createElement(ssrModule.exports.withFormatNotesStateBridge(BridgeNative),{'data-preserved':'bridge',style:{transform:'translateZ(0)'}},'Editable native bridge children'));
+    assert.ok(html.includes('data-preserved="bridge"')&&html.includes('translateZ(0)')&&html.includes('Editable native bridge children')&&html.includes('data-format-notes-enabled="0"')&&html.includes('data-format-daughter-enabled="0"'));
+    assert.ok(html.includes(target==='preview'?'visibility:visible':'visibility:hidden'),'Explicit frozen target remains an off still');
+}
+checks.push('New bridge realReactSSR preserves props/children and independently freezes Canvas/export/thumbnail');
 
 const react=fs.readFileSync(path.join(path.dirname(require.resolve('react/package.json')),'umd/react.development.js'),'utf8');
 const reactDOM=fs.readFileSync(path.join(path.dirname(require.resolve('react-dom/package.json')),'umd/react-dom.development.js'),'utf8');
@@ -63,7 +81,7 @@ try {
     page.on('pageerror',e=>errors.push(e.message));
     await page.setContent('<!doctype html><style>html,body{margin:0;background:#222;color:white}button{position:fixed;bottom:5px;z-index:20}#notes{left:5px}#daughter{left:90px}</style><div id="app"></div>');
     await page.addScriptTag({content:react});await page.addScriptTag({content:reactDOM});
-    await page.addScriptTag({content:`window.target='preview';window.staticRenderer=false;window.listenerCounts={scroll:0,resize:0};const add=window.addEventListener.bind(window),remove=window.removeEventListener.bind(window);window.addEventListener=(n,...a)=>{if(n in listenerCounts)listenerCounts[n]++;return add(n,...a)};window.removeEventListener=(n,...a)=>{if(n in listenerCounts)listenerCounts[n]--;return remove(n,...a)};window.nativeModule={};(function(require,exports){${code}\nwindow.nativeViewport=()=>viewport;})(name=>name==='react'?React:{RenderTarget:{canvas:'canvas',current:()=>target},useIsStaticRenderer:()=>staticRenderer},nativeModule);`});
+    await page.addScriptTag({content:`window.target='preview';window.staticRenderer=false;window.listenerCounts={scroll:0,resize:0};const add=window.addEventListener.bind(window),remove=window.removeEventListener.bind(window);window.addEventListener=(n,...a)=>{if(n in listenerCounts)listenerCounts[n]++;return add(n,...a)};window.removeEventListener=(n,...a)=>{if(n in listenerCounts)listenerCounts[n]--;return remove(n,...a)};window.nativeModule={};(function(require,exports){${code}\nwindow.nativeViewport=()=>viewport;})(name=>name==='react'?React:{RenderTarget:{canvas:'canvas',export:'export',thumbnail:'thumbnail',current:()=>target},useIsStaticRenderer:()=>staticRenderer},nativeModule);`});
     await page.evaluate(({actorNames,posePacket})=>{
         window.clicks=0;window.refs={};window.nativeRoot=ReactDOM.createRoot(document.getElementById('app'));
         const Layer=React.forwardRef(({text,...props},ref)=>React.createElement(props.id==='notes'||props.id==='daughter'?'button':'div',{...props,ref},text??props.children));

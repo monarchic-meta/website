@@ -1137,3 +1137,360 @@ export function withFormatIntroClockBall(Component: ComponentType<LayerProps>): 
         return <Component {...props} ref={bind} data-format-intro-clock-ball={part} style={state.live && part ? { ...props.style, position: "absolute", left: 0, top: 0, width: pose.diameter, height: pose.diameter, marginLeft: -pose.diameter / 2, marginTop: -pose.diameter / 2, borderRadius: "50%", backgroundColor: part === "dot" ? "#000000" : part === "light" ? "#ffffff" : "#222222", transformOrigin: "50% 50%", transform: `scale(${scale})`, translate: "none", rotate: "none", scale: "none", opacity: part === "dot" ? pose.dotOpacity : 1, pointerEvents: "none" } as DetailStyle : props.style} />
     })
 }
+
+/** Eighteen source Notes: exact geometry/tails/wave, independently paraphrased copy.
+ * Original Ku/Xc/CSS facts are retained in the source audit; original sentences
+ * are not copied into the prototype. Native paper/body/tail/RTE parts stay editable.
+ * Only finite layout refreshes measure anchors. Scrolling does not chase artwork.
+ */
+import { withFormatNotesStateBridge } from "./SourceHeroNativeBehaviors.tsx"
+type FormatNoteSpec = { anchor: string; side: "left" | "right" | "up" | "down"; tail: "start" | "end"; from: "top" | "bottom"; dx: number; dy: number; height: number; copyWidth: number; copy: string }
+const FORMAT_NOTES: readonly FormatNoteSpec[] = [
+    {
+        "anchor": "block-one__card",
+        "side": "right",
+        "tail": "start",
+        "from": "top",
+        "dx": -147,
+        "dy": 0,
+        "height": 41,
+        "copyWidth": 92,
+        "copy": "Vertical framing gives upright lines more influence."
+    },
+    {
+        "anchor": "block-one__round",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 75,
+        "dy": 33,
+        "height": 33,
+        "copyWidth": 84,
+        "copy": "The hands show Berlin time, including daylight saving."
+    },
+    {
+        "anchor": "block-one__card",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 341,
+        "dy": 317,
+        "height": 33,
+        "copyWidth": 87,
+        "copy": "Make the vertical structure carry the composition."
+    },
+    {
+        "anchor": "wide",
+        "side": "down",
+        "tail": "start",
+        "from": "top",
+        "dx": 824,
+        "dy": -38,
+        "height": 33,
+        "copyWidth": 88,
+        "copy": "Split one format into several smaller formats."
+    },
+    {
+        "anchor": "screens__card",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 341,
+        "dy": 96,
+        "height": 41,
+        "copyWidth": 89,
+        "copy": "Here, the composition pairs a slender vertical strip with a wide horizontal block."
+    },
+    {
+        "anchor": "clock",
+        "side": "right",
+        "tail": "start",
+        "from": "top",
+        "dx": -146,
+        "dy": 251,
+        "height": 41,
+        "copyWidth": 92,
+        "copy": "With a circular frame, radii and diameters become useful organizing lines."
+    },
+    {
+        "anchor": "clock",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 519,
+        "dy": 251,
+        "height": 33,
+        "copyWidth": 89,
+        "copy": "Let movement follow the shape of the circular frame."
+    },
+    {
+        "anchor": "tile",
+        "side": "down",
+        "tail": "start",
+        "from": "top",
+        "dx": 10,
+        "dy": -47,
+        "height": 41,
+        "copyWidth": 89,
+        "copy": "A frame like this naturally pulls the eye toward its middle."
+    },
+    {
+        "anchor": "pill",
+        "side": "down",
+        "tail": "start",
+        "from": "top",
+        "dx": 259,
+        "dy": -47,
+        "height": 41,
+        "copyWidth": 83,
+        "copy": "Let the content respond to the outline that contains it, rather than fighting it."
+    },
+    {
+        "anchor": "side-a",
+        "side": "down",
+        "tail": "end",
+        "from": "top",
+        "dx": -29,
+        "dy": 45,
+        "height": 41,
+        "copyWidth": 89,
+        "copy": "Centered alignment gains strength from the geometry of this particular frame."
+    },
+    {
+        "anchor": "tri",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 515,
+        "dy": 390,
+        "height": 41,
+        "copyWidth": 83,
+        "copy": "Put a complex frame’s edges to work: let them create visual tension."
+    },
+    {
+        "anchor": "deck",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 341,
+        "dy": 0,
+        "height": 33,
+        "copyWidth": 90,
+        "copy": "An upright format, organized by upright lines."
+    },
+    {
+        "anchor": "fan__disc",
+        "side": "down",
+        "tail": "end",
+        "from": "top",
+        "dx": -88,
+        "dy": 114,
+        "height": 41,
+        "copyWidth": 89,
+        "copy": "Let an object’s physical behavior inform the way this format moves."
+    },
+    {
+        "anchor": "win__plate--west",
+        "side": "down",
+        "tail": "start",
+        "from": "top",
+        "dx": 0,
+        "dy": -47,
+        "height": 41,
+        "copyWidth": 83,
+        "copy": "Try less expected ways of fitting different formats together."
+    },
+    {
+        "anchor": "vee__card--west",
+        "side": "down",
+        "tail": "start",
+        "from": "top",
+        "dx": 178,
+        "dy": -39,
+        "height": 33,
+        "copyWidth": 83,
+        "copy": "Horizontal structure supports a horizontal frame."
+    },
+    {
+        "anchor": "vee__plate",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 526,
+        "dy": 375,
+        "height": 41,
+        "copyWidth": 89,
+        "copy": "Echo the frame’s geometry in its inner shapes to create a repeating visual rhythm."
+    },
+    {
+        "anchor": "poster",
+        "side": "left",
+        "tail": "start",
+        "from": "top",
+        "dx": 1280,
+        "dy": 20,
+        "height": 57,
+        "copyWidth": 89,
+        "copy": "On a screen this looks horizontal. Its physical form is vertical, with a composition designed to read comfortably in either orientation."
+    },
+    {
+        "anchor": "field",
+        "side": "up",
+        "tail": "start",
+        "from": "bottom",
+        "dx": 0,
+        "dy": 3,
+        "height": 49,
+        "copyWidth": 92,
+        "copy": "Repeat a few visual rules across different formats so they read as a connected family."
+    }
+]
+type FormatNoteBox = { left: number; top: number; width: number; height: number }
+type FormatNoteGeometry = { paper: FormatNoteBox; body: FormatNoteBox; tail: FormatNoteBox & { clip: string }; label: { left: number; top: number }; copy: { left: number; top: number; width: number } }
+function formatNoteGeometry(note: FormatNoteSpec, unit: number, anchor: { left: number; top: number; bottom: number }, root: { left: number; top: number }): FormatNoteGeometry {
+    const pad = Math.max(1, Math.round(3 * unit)), width = Math.round(140 * unit), height = Math.round(note.height * unit), left = note.side === "left" ? pad : 0, top = note.side === "up" ? pad : 0, horizontal = note.side === "up" || note.side === "down"
+    const tail = note.side === "right" ? { left: width, top: 0, width: pad, height: pad, clip: "polygon(0 0,100% 0,0 100%)" }
+        : note.side === "left" ? { left: 0, top: 0, width: pad, height: pad, clip: "polygon(0 0,100% 0,100% 100%)" }
+        : note.side === "up" ? { left: 0, top: 0, width: pad, height: pad, clip: "polygon(0 0,100% 100%,0 100%)" }
+        : { left: note.tail === "end" ? width - pad : 0, top: height, width: pad, height: pad, clip: note.tail === "end" ? "polygon(0 0,100% 0,100% 100%)" : "polygon(0 0,100% 0,0 100%)" }
+    return { paper: { left: Math.round(anchor.left - root.left + note.dx * unit) - left, top: Math.round((note.from === "bottom" ? anchor.bottom : anchor.top) - root.top + note.dy * unit), width: horizontal ? width : width + pad, height: horizontal ? height + pad : height }, body: { left, top, width, height }, tail, label: { left: Math.round(10 * unit) + left, top: Math.round(6 * unit) + top }, copy: { left: Math.round(41 * unit) + left, top: Math.round(8 * unit) + top, width: Math.round(note.copyWidth * unit) } }
+}
+function formatNotesWave(boxes: readonly ({ top: number; bottom: number } | null)[], height: number) {
+    const visible = boxes.map((box, index) => ({ box, index })).filter(row => row.box && row.box.bottom > 0 && row.box.top < height).sort((a, b) => a.box!.top - b.box!.top), delays = boxes.map(() => 0)
+    visible.forEach((row, order) => { delays[row.index] = order * .05 }); return delays
+}
+function formatNoteClip(note: FormatNoteSpec, pad: number) {
+    if (note.side === "right") return `polygon(0 0,100% 0,calc(100% - ${pad}px) ${pad}px,calc(100% - ${pad}px) 100%,0 100%)`
+    if (note.side === "left") return `polygon(0 0,100% 0,100% 100%,${pad}px 100%,${pad}px ${pad}px)`
+    if (note.side === "up") return `polygon(0 0,${pad}px ${pad}px,100% ${pad}px,100% 100%,0 100%)`
+    return note.tail === "end" ? `polygon(0 0,100% 0,100% 100%,calc(100% - ${pad}px) calc(100% - ${pad}px),0 calc(100% - ${pad}px))` : `polygon(0 0,100% 0,100% calc(100% - ${pad}px),${pad}px calc(100% - ${pad}px),0 100%)`
+}
+type FormatNotesState = { unit: number; enabled: boolean; daughter: boolean; animate: boolean; poses: readonly (FormatNoteGeometry | null)[]; delays: readonly number[] }
+type FormatNotesAnchor = { node: HTMLElement; rect?: readonly [number, number, number, number] }
+type FormatNotesAPI = { state: FormatNotesState; anchor: (key: string, node: HTMLElement, rect?: readonly [number, number, number, number]) => () => void; paper: (index: number, node: HTMLElement) => () => void; layer: (node: HTMLElement) => () => void; mode: (node: HTMLElement, notes: boolean, daughter: boolean) => void }
+const FORMAT_NOTES_REVISION = {}
+const FORMAT_NOTES_EMPTY: FormatNotesState = { unit: 1, enabled: false, daughter: false, animate: false, poses: FORMAT_NOTES.map(() => null), delays: FORMAT_NOTES.map(() => 0) }
+const FormatNotesContext = React.createContext<FormatNotesAPI>({ state: FORMAT_NOTES_EMPTY, anchor: () => () => {}, paper: () => () => {}, layer: () => () => {}, mode: () => {} })
+const FormatNotePaperContext = React.createContext({ index: 0, geometry: formatNoteGeometry(FORMAT_NOTES[0], 1, { left: 0, top: 0, bottom: 0 }, { left: 0, top: 0 }), unit: 1 })
+function formatNotesDocument(Component: NativeLayer): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const layout = React.useContext(SourceLayoutContext), anchors = React.useRef(new Map<string, FormatNotesAnchor>()), papers = React.useRef(new Map<number, HTMLElement>()), layer = React.useRef<HTMLElement | null>(null), mode = React.useRef({ notes: false, daughter: false }), enabled = React.useRef(false), wake = React.useRef<() => void>(() => {}), sizing = React.useRef<ResizeObserver | null>(null)
+        const [state, setState] = React.useState<FormatNotesState>(FORMAT_NOTES_EMPTY)
+        const registerAnchor = React.useCallback((key: string, node: HTMLElement, rect?: readonly [number, number, number, number]) => {
+            const previous = anchors.current.get(key); if (previous) sizing.current?.unobserve(previous.node)
+            const row = { node, rect }; anchors.current.set(key, row); sizing.current?.observe(node); wake.current()
+            return () => { if (anchors.current.get(key) === row) { anchors.current.delete(key); sizing.current?.unobserve(node); wake.current() } }
+        }, [])
+        const registerPaper = React.useCallback((index: number, node: HTMLElement) => { papers.current.set(index, node); wake.current(); return () => { if (papers.current.get(index) === node) { papers.current.delete(index); wake.current() } } }, [])
+        const registerLayer = React.useCallback((node: HTMLElement) => {
+            const previous = layer.current; if (previous) sizing.current?.unobserve(previous)
+            layer.current = node; sizing.current?.observe(node); wake.current()
+            return () => { if (layer.current === node) { layer.current = null; sizing.current?.unobserve(node); mode.current = { notes: false, daughter: false }; wake.current() } }
+        }, [])
+        const publish = React.useCallback((node: HTMLElement, notes: boolean, daughter: boolean) => { if (layer.current !== node) return; mode.current = { notes, daughter }; wake.current() }, [])
+        useOwnLayoutEffect(() => {
+            if (layout.frozen || layout.phone) { enabled.current = false; setState(previous => previous.enabled || previous.daughter || previous.animate ? { ...previous, enabled: false, daughter: false, animate: false } : previous); return }
+            let active = true, frame = 0
+            const media = window.matchMedia("(prefers-reduced-motion: reduce)")
+            const read = () => {
+                frame = 0; if (!active) return
+                const root = layer.current, unit = window.innerWidth / 1440
+                if (!root?.isConnected) { enabled.current = false; setState(previous => previous.enabled || previous.daughter ? { ...previous, enabled: false, daughter: false } : previous); return }
+                const rootBox = root.getBoundingClientRect(), boxes = new Map<string, { left: number; top: number; bottom: number }>()
+                for (const [key, row] of anchors.current) {
+                    if (!row.node.isConnected) continue
+                    const box = row.node.getBoundingClientRect()
+                    if (row.rect) { const scale = box.width / Math.max(1, parseFloat(getComputedStyle(row.node).width)), [x, y, , height] = row.rect; boxes.set(key, { left: box.left + x * scale, top: box.top + y * scale, bottom: box.top + (y + height) * scale }) }
+                    else boxes.set(key, box)
+                }
+                const poses = FORMAT_NOTES.map(note => { const box = boxes.get(note.anchor); return box ? formatNoteGeometry(note, unit, box, rootBox) : null }), on = mode.current.notes, daughter = mode.current.daughter, animate = !document.hidden && !media.matches, enabling = on && !enabled.current
+                const delayBoxes = poses.map((pose, index) => { const node = papers.current.get(index); if (!pose || !node?.isConnected) return null; return { top: rootBox.top + pose.paper.top, bottom: rootBox.top + pose.paper.top + pose.paper.height } })
+                const wave = enabling ? formatNotesWave(delayBoxes, window.innerHeight) : null
+                enabled.current = on
+                setState(previous => {
+                    const next: FormatNotesState = { unit, enabled: on, daughter, animate, poses, delays: wave ?? (!on ? FORMAT_NOTES.map(() => 0) : previous.delays) }
+                    return JSON.stringify(next) === JSON.stringify(previous) ? previous : next
+                })
+            }
+            const schedule = () => { if (active && !frame) frame = requestAnimationFrame(read) }
+            const resize = new ResizeObserver(schedule); sizing.current = resize
+            if (layer.current) resize.observe(layer.current)
+            for (const row of anchors.current.values()) resize.observe(row.node)
+            wake.current = schedule; schedule()
+            window.addEventListener("resize", schedule); document.addEventListener("visibilitychange", schedule); media.addEventListener("change", schedule)
+            document.fonts?.ready.then(() => { if (active) schedule() })
+            return () => { active = false; if (wake.current === schedule) wake.current = () => {}; if (sizing.current === resize) sizing.current = null; resize.disconnect(); if (frame) cancelAnimationFrame(frame); window.removeEventListener("resize", schedule); document.removeEventListener("visibilitychange", schedule); media.removeEventListener("change", schedule) }
+        }, [layout.width, layout.height, layout.frozen, layout.phone, FORMAT_NOTES_REVISION])
+        return <FormatNotesContext.Provider value={{ state, anchor: registerAnchor, paper: registerPaper, layer: registerLayer, mode: publish }}><Component {...props} ref={ref} /></FormatNotesContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatDocumentAndSourceNotes(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return withFormatRefinedDocument(formatNotesDocument(Component)) }
+function formatNotesLayer(Component: NativeLayer): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const api = React.useContext(FormatNotesContext), frozen = frozenTarget(), own = React.useRef<HTMLElement | null>(null), remove = React.useRef<(() => void) | null>(null), flags = React.useRef({ notes: false, daughter: false })
+        flags.current = { notes: props["data-format-notes-enabled"] === "1", daughter: props["data-format-daughter-enabled"] === "1" }
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); own.current = node; remove.current = node ? api.layer(node) : null; if (node) api.mode(node, flags.current.notes, flags.current.daughter); writeRef(ref, node) }, [api.layer, api.mode, ref])
+        useOwnLayoutEffect(() => { if (own.current) api.mode(own.current, props["data-format-notes-enabled"] === "1", props["data-format-daughter-enabled"] === "1") }, [api.mode, props["data-format-notes-enabled"], props["data-format-daughter-enabled"]])
+        return <Component {...props} ref={bind} data-format-source-notes-layer="true" aria-hidden="true" style={frozen ? props.style : { ...props.style, position: "absolute", left: 0, top: 0, width: "100%", height: 0, zIndex: 7, overflow: "visible", pointerEvents: "none" }} />
+    }) as NativeLayer
+}
+export function withFormatSourceNotesLayer(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return withFormatNotesStateBridge(formatNotesLayer(Component)) }
+function formatNoteAnchor(Component: NativeLayer, key: string, rect?: readonly [number, number, number, number]): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const api = React.useContext(FormatNotesContext), remove = React.useRef<(() => void) | null>(null), bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node ? api.anchor(key, node, rect) : null; writeRef(ref, node) }, [api.anchor, key, rect, ref])
+        return <Component {...props} ref={bind} />
+    }) as NativeLayer
+}
+const FORMAT_NOTE_VEE_WEST: readonly [number, number, number, number] = [20, 0, 697, 226]
+export function withFormatNotesOpeningCard(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatOpeningCardFlow(Component), "block-one__card") }
+export function withFormatNotesTinyClock(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "block-one__round") }
+export function withFormatNotesWide(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatHorizontalWideFlow(Component), "wide") }
+export function withFormatNotesScreens(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "screens__card") }
+export function withFormatNotesIntroClock(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatIntroClockDial(Component), "clock") }
+export function withFormatNotesTile(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "tile") }
+export function withFormatNotesPill(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "pill") }
+export function withFormatNotesSideA(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatRecordSurface(Component), "side-a") }
+export function withFormatNotesTriangle(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatTriangleFlow(Component), "tri") }
+export function withFormatNotesDeck(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatLateDeckFlow(Component), "deck") }
+export function withFormatNotesFan(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatRecordSurface(Component), "fan__disc") }
+export function withFormatNotesWindowWest(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "win__plate--west") }
+export function withFormatNotesVeeWest(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatCrossingFlow(Component), "vee__card--west", FORMAT_NOTE_VEE_WEST) }
+export function withFormatNotesVeeTriangle(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatTriangleOutline(Component), "vee__plate") }
+export function withFormatNotesPoster(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatPosterFlow(Component), "poster") }
+export function withFormatNotesField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatFieldFlow(Component), "field") }
+function formatNotePaper(Component: NativeLayer, index: number): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const api = React.useContext(FormatNotesContext), frozen = frozenTarget(), remove = React.useRef<(() => void) | null>(null), geometry = api.state.poses[index] ?? formatNoteGeometry(FORMAT_NOTES[index], api.state.unit, { left: 0, top: 0, bottom: 0 }, { left: 0, top: 0 })
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node ? api.paper(index, node) : null; writeRef(ref, node) }, [api.paper, index, ref]), on = !frozen && api.state.enabled && !!api.state.poses[index], delay = api.state.delays[index] ?? 0
+        const transition = !api.state.animate || frozen ? "none" : on ? `opacity 180ms ease ${delay}s, mask-size 340ms ease ${delay}s, -webkit-mask-size 340ms ease ${delay}s` : "opacity 180ms ease 0s, mask-size 0s linear 180ms, -webkit-mask-size 0s linear 180ms", clip = formatNoteClip(FORMAT_NOTES[index], geometry.tail.width)
+        return <FormatNotePaperContext.Provider value={{ index, geometry, unit: api.state.unit }}><Component {...props} ref={bind} data-format-source-note={index} aria-hidden="true" style={{ ...props.style, ...(frozen ? {} : { ...geometry.paper, position: "absolute", transform: "translateZ(0)", clipPath: clip, WebkitClipPath: clip }), opacity: on ? 1 : 0, pointerEvents: "none", userSelect: "none", maskImage: "linear-gradient(#000,#000)", WebkitMaskImage: "linear-gradient(#000,#000)", maskSize: on ? "100% 100%" : "100% 0%", WebkitMaskSize: on ? "100% 100%" : "100% 0%", maskRepeat: "no-repeat", WebkitMaskRepeat: "no-repeat", transition }} /></FormatNotePaperContext.Provider>
+    }) as NativeLayer
+}
+function formatNotePart(Component: NativeLayer, part: "body" | "tail" | "label" | "copy"): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatNotePaperContext), frozen = frozenTarget(), id = React.useId().replace(/[^\w-]/g, "_"), raw = state.geometry[part], box = part === "tail" ? { left: raw.left, top: raw.top, width: state.geometry.tail.width, height: state.geometry.tail.height } : raw, text = part === "label" || part === "copy", ink = text ? { fontSize: 8 * state.unit, lineHeight: part === "label" ? "normal" : 1, letterSpacing: "normal", color: "#000000", opacity: part === "label" ? .4 : 1, margin: 0, textAlign: "left" as const } : {}, clip = part === "tail" ? { clipPath: frozen ? state.geometry.tail.clip : "none", WebkitClipPath: frozen ? state.geometry.tail.clip : "none" } : {}
+        return <><Component {...props} ref={ref} data-format-source-note-part={part} data-format-note-ink={text && !frozen ? id : undefined} style={frozen ? { ...props.style, ...clip } : { ...props.style, ...box, ...ink, ...clip, position: "absolute", pointerEvents: "none" }} />{text && !frozen && <style>{`[data-format-note-ink="${id}"],[data-format-note-ink="${id}"] *{font-size:${8 * state.unit}px!important;line-height:${part === "label" ? "normal" : "1"}!important;letter-spacing:normal!important;color:#000!important;text-align:left!important}`}</style>}</>
+    }) as NativeLayer
+}
+export function withFormatSourceNoteBody(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePart(Component, "body") }
+export function withFormatSourceNoteTail(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePart(Component, "tail") }
+export function withFormatSourceNoteLabel(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePart(Component, "label") }
+export function withFormatSourceNoteCopy(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePart(Component, "copy") }
+export function withFormatSourceNote01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 0) }
+export function withFormatSourceNote02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 1) }
+export function withFormatSourceNote03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 2) }
+export function withFormatSourceNote04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 3) }
+export function withFormatSourceNote05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 4) }
+export function withFormatSourceNote06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 5) }
+export function withFormatSourceNote07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 6) }
+export function withFormatSourceNote08(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 7) }
+export function withFormatSourceNote09(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 8) }
+export function withFormatSourceNote10(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 9) }
+export function withFormatSourceNote11(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 10) }
+export function withFormatSourceNote12(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 11) }
+export function withFormatSourceNote13(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 12) }
+export function withFormatSourceNote14(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 13) }
+export function withFormatSourceNote15(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 14) }
+export function withFormatSourceNote16(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 15) }
+export function withFormatSourceNote17(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 16) }
+export function withFormatSourceNote18(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNotePaper(Component, 17) }

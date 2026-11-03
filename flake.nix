@@ -525,6 +525,17 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-format-notes = (mkWebsiteCheck "source-format-notes" ''
+            export MONARCHIC_FORMAT_DETAIL_EVIDENCE_DIR="$out/evidence/strict"
+            export MONARCHIC_FORMAT_NOTES_EVIDENCE_DIR="$out/evidence/notes"
+            pnpm run check:source-format-details
+            pnpm run check:source-format-notes
+          '').overrideAttrs (_: {
+            MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatClockMaterials;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-format-poster-stack = (mkWebsiteCheck "source-format-poster-stack" ''
             export MONARCHIC_FORMAT_POSTER_STACK_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-format-poster-stack
