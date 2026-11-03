@@ -2528,7 +2528,7 @@
     "afterEditorReload": false
   },
   "horizontalWideOrdinaryFlow": {
-    "status": "FROZEN_LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_BINDING_PENDING",
+    "status": "SOURCE_COMPILER_CLEAN_SHARED_NATIVE_BINDING_READ_BACK_PREVIEW_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-ordinary-flow-v1/validation-88d8605e/SourceFormatDetails.tsx",
       "sha256": "88d8605e98e857c745cd3b6eaf8ce5fff5eb7fa85e3d2ec239fe68ed2deacaa2",
@@ -2578,9 +2578,41 @@
       "Facts are retained originalCSS and independently recreated ordinary nativeflow, not a new source input audit.",
       "SourceCSS .wide absolute198u/868u/1045×448 replaces only the oldfixedkeyframeactor; original142public/privatebodies remainunaltered.",
       "Phone exactly preserves currentnative−142.5/1010/660×282.9474; allfrozen targets/callerrefs/children remain.",
-      "ActualFramer143compilation/classification, threeactualbindingpatches, SourceFont/assetpaint andsavedreloadremainwritergates.",
+      "Actual 143-override compilation and three inherited bindings are confirmed through MCP607. Actual source-font/asset paint, Preview scrolling and editor reload remain open.",
       "The introductory513pxclock/fixedburst and18genuineNotes remain separate next implementation branches."
     ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-writer605/final-actual-wide-authoring-receipt.json",
+      "bytes": 2668,
+      "sha256": "d9d3db793410fdfc5839846593be34dfc1f6d0854e8c807f7a0df65f8f417d93"
+    },
+    "publicOverrides": 143
+  },
+  "remainingNonposterPhotoApertures": {
+    "status": "SEVEN_FIELDS_AUTHORED_NATIVE_MODEL_READ_BACK_PREVIEW_PENDING",
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/remaining-photo-writer599/final-actual-nonposter-authoring-receipt.json",
+      "bytes": 3598,
+      "sha256": "14f0ec73b5f390f31c3d4d1c66c3f9210867a1c4541221bc3c34e1c8b381577a"
+    },
+    "scope": "Seven source photo fields: screens, special, triangle-right, fog, mini-square and the two Vee photos. The separate poster field is deliberately excluded while live Daughter/glyph stacking is corrected.",
+    "newPrimaryFamilies": 9,
+    "newPhysicalFrames": 27,
+    "logicalPrimaryBindings": 14,
+    "physicalBindings": 42,
+    "movedPrimaryImageFamilies": 5,
+    "adaptedImageFillFamilies": 2,
+    "assetsUploaded": 0,
+    "sourceWrites": 0,
+    "sourceOverridesAtAuthoring": 142,
+    "localNeutralValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/remaining-zc-apertures-v1/validation-receipt.json",
+      "bytes": 3857,
+      "sha256": "3b935f45c571f133b48ef310e6981dca620e0dd73248eb9657d5df89b1590f32"
+    },
+    "derivedGetterBoundary": "Six triangle/fog parents become transparent and lose their twelve image-position getters; the new bitmap children preserve the genuine image AssetReferences and explicit centered crops. No setter retry was attempted.",
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
   }
