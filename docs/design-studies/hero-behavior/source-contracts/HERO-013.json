@@ -910,7 +910,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "PHOTO_PARALLAX_AND_WIDE_FLOW_AUTHORED_OTHER_SOURCE_BRANCHES_PENDING",
+    "status": "TEN_PHOTO_APERTURES_PIP_AND_WIDE_FLOW_AUTHORED_OTHER_SOURCE_BRANCHES_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/glyph-magnet-current/implementation/final-source-receipt.json",
       "bytes": 9181,
@@ -918,7 +918,6 @@
     },
     "behavior": "Eighty-six native uppercase glyphs respond to the travelling circle with source-grounded attraction, spring and tangent rotation; one endpoint family preserves the source resting circle. All earlier work stays retained.",
     "next": [
-      "Author the validated independent-layer poster aperture, preserving the current native owner and Daughter toggle; compare moving paint in actual Preview.",
       "Recreate the introductory 513px clock and fixed burst, then expand all eighteen source Notes and remaining genuine Daughter states.",
       "Compare corresponding source states in actual Framer Preview and verify after editor reload."
     ],
@@ -1020,8 +1019,8 @@
       "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_PREVIEW_AND_RELOAD_PENDING",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 134621,
-        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
+        "bytes": 135511,
+        "sha256": "80c1746b18c26b5d819b90ae44420a857c6fe49bf5531552d39ded4a390356c7"
       },
       "behavior": "First two source photographs have editable clipping apertures and source7%parallax. Eight original native words enter in sourceDOMorder with.9s/.13sstagger before shared2.6sflick. Originalassets/text/fonts/rectangles preserved; Phonehistoricalgeometry frozen.",
       "localValidation": {
@@ -1087,8 +1086,8 @@
       "authoringScope": "Source142/compiler0 andactual3ringfamilies movedoutofexistingclips; exactoldowner9976inverse. Actualpaint/refbridge/Preview/reload remainunverified.",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 134621,
-        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
+        "bytes": 135511,
+        "sha256": "80c1746b18c26b5d819b90ae44420a857c6fe49bf5531552d39ded4a390356c7"
       },
       "nativeOwnerSHA256": "3a8db8f5c3b4f6dbfd5d01b49c14fc44b25e0db471f8cd5bae706925a3798515",
       "sharedBindings": 6,
@@ -1121,8 +1120,8 @@
       "afterEditorReload": false,
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 134621,
-        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
+        "bytes": 135511,
+        "sha256": "80c1746b18c26b5d819b90ae44420a857c6fe49bf5531552d39ded4a390356c7"
       }
     },
     "horizontalWideOrdinaryFlow": {
@@ -1149,11 +1148,11 @@
       "afterEditorReload": false
     },
     "posterPhotoIndependentLayers": {
-      "status": "LOCAL_VALIDATION_COMPLETE_ACTUAL_NATIVE_AUTHORING_PENDING",
+      "status": "SOURCE_COMPILER_CLEAN_NATIVE_LAYERS_READ_BACK_PREVIEW_PENDING",
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-details-provenance.json",
-        "bytes": 134621,
-        "sha256": "538d4d071c8f524ac25291379f087ec0c5ad8a5d13eaef6161d77a46960d4beb"
+        "bytes": 135511,
+        "sha256": "80c1746b18c26b5d819b90ae44420a857c6fe49bf5531552d39ded4a390356c7"
       },
       "source": {
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/SourceFormatDetails.tsx",
@@ -1177,7 +1176,25 @@
       "localChecks": 46,
       "strictChecks": 10,
       "actualFramerPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-writer611/final-actual-poster-authoring-receipt.json",
+        "bytes": 6600,
+        "sha256": "8980c664297b1f8ffa6405b95279925c93f85d74b081713df538eafb1b2dc5fa"
+      },
+      "nativeAuthoring": {
+        "newPrimaryFamilies": 2,
+        "newPhysicalCopies": 6,
+        "physicalBindings": 9,
+        "preservedOldDaughterToggleBindings": 3,
+        "sourceOverrides": 144,
+        "compilerDiagnostics": 0,
+        "ownerSHA256": "9846b0c94bc3c45afee9e65e192df9f58d9915fca2fd3a664dec7fb7f5a786c4",
+        "inverseOwnerSHA256": "6ed6bf9dce6c7be2f459920ec4521bf6d67c93d5b1d14bdc60e293862006d4c8",
+        "actualPaintVerified": false,
+        "actualFramerPreviewVerified": false,
+        "afterEditorReload": false
+      }
     }
   }
 }

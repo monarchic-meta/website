@@ -2009,7 +2009,7 @@
   "completePhotographicContinuation": {
     "status": "SOURCE_AND_NATIVE_AUTHORED_INDEPENDENTLY_READ_BACK_PAINT_PREVIEW_RELOAD_PENDING",
     "source": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/late-score-grid-v1/previous-SourceAjedrezSequence.tsx",
       "bytes": 198707,
       "sha256": "b7002d261f463ffb3accd2067991288226ed576af36801941ec34f133ff9cf23"
     },
@@ -2022,8 +2022,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photographic-composition-provenance.json",
-      "bytes": 580799,
-      "sha256": "25af07b9650746e5f425c7d0bd4fce497eab60c1e10e508739894378adacf73c"
+      "bytes": 580898,
+      "sha256": "05467ac2436ce392b44098ad4b095b574132616a881c3f2fddb2c9c568ad667b"
     },
     "localValidation": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/full-final-b7002d26/validation-receipt.json",

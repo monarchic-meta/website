@@ -227,23 +227,23 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 13617,
-      "sha256": "ef5fa3c6c6a9766c0a3a69dd7781d975f466d7071944e004bfcdb4ab24b4b282"
+      "bytes": 13740,
+      "sha256": "958c867d9c6f9b5b0c62bb38817dc9400a66f1fade157030f8ffe24e5ce53115"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
-      "bytes": 64138,
-      "sha256": "8fd21719285b493ee9f5c54b42400acf3c9a48a0d4ade8b58f4725e27cb34831"
+      "bytes": 64534,
+      "sha256": "7504ec755a7e5d132b3466315ad77d88ceece8ed7a42d5b980b2afd194b3bad8"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3894,
-      "sha256": "e2950ed95690b5eda0487ef7b643814214fa6cfdf7d652ac8aa0185c134f53a2"
+      "sha256": "e49a480ef390028b9a2d1cb77a482ec04ed2af68e8f0fe5f825907da4a943fa3"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
-      "bytes": 84623,
-      "sha256": "52f1592597c1c08e84dfdc568011f24d227b708e15ce2073183b21971f1e3ea9"
+      "bytes": 84722,
+      "sha256": "aca4a1df85daa3305e97ebc65f3ea9ec6372b68c76bdfdc71634b8354a8065b5"
     },
     "modelWindow": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-iterations-2026-11-01/HERO002-full-photo-window-288/manifest.json",
@@ -354,8 +354,8 @@
     },
     "HERO013": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
-      "bytes": 58160,
-      "sha256": "91a7c347b8407b4179c270faf8ad922cd172177a53f38ddcb45122b3af5e760a"
+      "bytes": 58948,
+      "sha256": "5c6ad4a7305645890f175a0d2f444915f199b8ab982753b2dc9e899d51173fa1"
     },
     "HERO003": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-003.json",
@@ -466,6 +466,11 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-writer610/final-actual-source-authoring-receipt.json",
         "bytes": 1425,
         "sha256": "88f6040f62db5469e682b9d323beedf7f9938d06d329ffcf81d83855cb61a250"
+      },
+      "formatIndependentPosterLayers": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-writer611/final-actual-poster-authoring-receipt.json",
+        "bytes": 6600,
+        "sha256": "8980c664297b1f8ffa6405b95279925c93f85d74b081713df538eafb1b2dc5fa"
       }
     },
     "currentCensusThrough598": {

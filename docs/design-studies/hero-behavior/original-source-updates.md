@@ -45,8 +45,10 @@ Preview checks; all eighteen references are not approved for close fidelity.
   MCP581. Its subsequent Vee-to-gauge flight compiles and is attached through
   MCP587, preserving the original ring and panes. Seven more photo fields are
   attached through MCP604, and the wide photo’s ordinary document flow is
-  corrected through MCP607. Poster stacking, the introductory clock, expanded
-  Notes/Daughter coverage and actual Preview/reload remain open.
+  corrected through MCP607. The poster’s independent layers are authored
+  through MCP614, completing all ten photo apertures while preserving the
+  Daughter toggle. The introductory clock, expanded Notes/Daughter coverage
+  and actual Preview/reload remain open.
 - Mezmo's terminal clear, history, draft restoration and compact tool-view state
   compile through MCP584, retaining its five controls and native page. The
   42-check focused fixture also retains the configuration-drawer checks.

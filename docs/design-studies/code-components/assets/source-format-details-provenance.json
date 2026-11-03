@@ -2618,7 +2618,7 @@
   },
   "posterPhotoIndependentLayers": {
     "referenceID": "HERO-013",
-    "status": "validated-local-source-and-bounded-composition-awaiting-Framer-authoring",
+    "status": "SOURCE_COMPILER_CLEAN_NATIVE_LAYERS_READ_BACK_PREVIEW_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-stack-correction-v1/validation-77d82716-final/SourceFormatDetails.tsx",
       "sha256": "77d827161e7aed0ddfbe14245964f3731bcfb4d6e741bb69dfc7a9e663aa5bac",
@@ -2689,6 +2689,24 @@
       "nixBuildExecuted": false,
       "localFrozenBrowserProof": "Separate recorded46-check nice10 Node22/Chromium147 run; unchanged source/test, no redundant browser run for wiring.",
       "fixedInputs": "Nix fetchurl provides the three exact original photo/Daughter/font inputs, assembled under MONARCHIC_FORMAT_CACHED_MEDIA_ROOT. No binary test assets are committed and no substitute material is used."
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/poster-writer611/final-actual-poster-authoring-receipt.json",
+      "bytes": 6600,
+      "sha256": "8980c664297b1f8ffa6405b95279925c93f85d74b081713df538eafb1b2dc5fa"
+    },
+    "nativeAuthoring": {
+      "newPrimaryFamilies": 2,
+      "newPhysicalCopies": 6,
+      "physicalBindings": 9,
+      "preservedOldDaughterToggleBindings": 3,
+      "sourceOverrides": 144,
+      "compilerDiagnostics": 0,
+      "ownerSHA256": "9846b0c94bc3c45afee9e65e192df9f58d9915fca2fd3a664dec7fb7f5a786c4",
+      "inverseOwnerSHA256": "6ed6bf9dce6c7be2f459920ec4521bf6d67c93d5b1d14bdc60e293862006d4c8",
+      "actualPaintVerified": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }
