@@ -27,10 +27,11 @@ All 18 source-led behavior pages exist in Framer. The historical MCP280 inventor
 
 Current pending gates:
 
-- H2: verify the applied word-motion binding and decoded aperture in actual Preview once browser routing is reliable.
-- H8: apply genuine font13 to all ten Desktop and ten Phone italic parts, then check corrected navigation/proximity and both new compositions.
+- The [complete remaining-work backlog](remaining-work.md) separates missing implementation, source inspection, actual Framer verification, declared substitutions and the later original-hero stage across all 18 references.
+- H2: verify the authored 166-pose/30-atlas continuation, native catalog/guides/metadata, word motion and decoded aperture in actual Preview and after reload; remaining nonphotographic/closing-state fidelity work is listed separately in the backlog.
+- H8: the 20 additional genuine Font13 copies and six tickers are authored. Check their actual paint, Tickets dragging, corrected navigation/proximity, both new compositions, native-media lifecycle and editor reload.
 - H7: check the saved native arrow-hover/backdrop effect after reload.
-- H13: verify archive/glyph/pip paint and the complete30-slot pool after reload; recreate the current mobile clock/logo splash separately.
+- H13: the 43-family current mobile clock/logo splash is authored. Verify its mobile/coarse/landscape behavior and links, archive/glyph/pip paint, the complete 30-slot pool and editor reload; omitted or uninspected source states remain separate reconstruction work.
 - H16: check the complete new native journey, provider playback and editor persistence; the capture transport stalled before new following-content images completed.
 - Keep all connected-browser automation off; saved-model checks and local fixtures do not close live gates.
 
