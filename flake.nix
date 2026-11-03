@@ -223,6 +223,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-mezmo-configuration = (mkWebsiteCheck "source-mezmo-configuration" ''
+            export MONARCHIC_CURRENT_ORIGINALS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-mezmo-configuration
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-native-video-visibility = mkWebsiteCheck "source-native-video-visibility" ''
             export MONARCHIC_NATIVE_VIDEO_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-native-video-visibility

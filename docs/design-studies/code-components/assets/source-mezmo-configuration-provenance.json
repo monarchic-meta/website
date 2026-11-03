@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "referenceID": "HERO-012",
+  "classification": "Source inspiration / current Mezmo source recreation",
+  "sourceURL": "https://www.mezmo.com/",
+  "capturedSource": "2026-11-01",
+  "implementation": "../SourceMezmoTerminal.tsx",
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
+    "bytes": 33325,
+    "sha256": "d6cea9b104213006d9815c5ef58924352b133680db0a48b9ee3752a4c802bcef"
+  },
+  "test": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-current-originals-browser.mjs",
+    "bytes": 36599,
+    "sha256": "9995515adac14b0df9c2687eaf11564c1701cdd8edbaef19f5a240fa1a715d55"
+  },
+  "publicConfiguration": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/original-config.toml",
+    "bytes": 11514,
+    "sha256": "f7f065eda513dba05c935c407edaf58ba40ee39b8712bef957f907137813f712"
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/config-drawer-correction/final-nix-full-regression/validation-receipt.json",
+    "bytes": 2079,
+    "sha256": "80aea577d6995bf2a06ccad78e9ab7824e227404b723c4b52138026d746f1db5"
+  },
+  "behavior": [
+    "Viewport-level720px/96vw drawer at source y100, 180ms reversible motion and independent scrolling.",
+    "All266 genuine public TOML lines remain inert display/clipboard data; nothing is parsed as an infrastructure configuration or executed.",
+    "Source header stays visible/hit-testable; Copy shows copied/n-a then resets at1200ms; Escape/backdrop close restores terminal focus.",
+    "Reduced motion enabled during exit completes dismissal, and static/Canvas/export/thumbnail targets omit the portal."
+  ],
+  "implementationDifferences": [
+    "The portal backdrop is clipped below Framer’s actual94px Desktop/Compact or78px Phone header to reproduce the source’s header stacking without mutating the retained native headers.",
+    "The existing terminal transcript and timing remain independently summarized. The existing five public controls and default export are preserved.",
+    "Four alternate canned scenarios exist behind a hidden source select; no visible scenario chooser is invented from that catalog. Header dropdowns and other user-accessible terminal branches remain separate work."
+  ],
+  "currentStatus": "LOCAL_FULL_REGRESSION_PASSED_TRANSFER_PENDING",
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false
+}
