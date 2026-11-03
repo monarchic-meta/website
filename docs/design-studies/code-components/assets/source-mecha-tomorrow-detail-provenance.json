@@ -98,5 +98,26 @@
     "sourceSHA256": "133617f18775598c84a150aa2748951b209e91aee633f043de9f3f8c55c6a763",
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "react18RefCompatibility": {
+    "parentSourceSHA256": "133617f18775598c84a150aa2748951b209e91aee633f043de9f3f8c55c6a763",
+    "sourceSHA256": "d17fbadca235ee132184b3e4bf18d2301cd180b2ef3c7667567a7888b2365604",
+    "issue": "Strict React18 useRef<T>(initialValue:T|null) selects readonly RefObject<T>. Old trigger.current assignment failed TS2540 at150:114 under real overloads; previous facade incorrectly returned mutable refs for all nullable calls.",
+    "correction": "Explicit HTMLElement|null type selects the mutable React18 overload. No runtime code change.",
+    "emittedJavaScript": {
+      "byteIdentical": true,
+      "sha256": "2210fb10b6ea29392f736fa1d4edf68dff097d1d7b42f9188215aceabcea4240",
+      "bytes": 14223
+    },
+    "validation": {
+      "strictSSRPlanChecks": 47,
+      "staticResult": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/react18-ref-compatibility/static-result.json",
+      "staticResultSHA256": "862da2eaf5bff0a4a5a6fc0f62c360f3f50bc32717c74fdbe9b2f071b94a7bf5",
+      "browserProofReusedFrom": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/tomorrow-detail-133617f1/result.json",
+      "browserChecksReused": 21,
+      "whyNoBrowserRerun": "Exact emitted JavaScript is byte-identical to the already executed133617f1 runtime."
+    },
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

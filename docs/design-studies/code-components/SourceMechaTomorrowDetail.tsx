@@ -97,7 +97,7 @@ function focusable(panel: HTMLElement) {
 export function withMechaTomorrowDetailRoot(Component: Layer): Layer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const target = RenderTarget.current(), staticRenderer = useIsStaticRenderer(), frozen = staticRenderer || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail
-        const root = React.useRef<HTMLElement>(null), panel = React.useRef<HTMLElement>(null), closeButton = React.useRef<HTMLElement>(null), trigger = React.useRef<HTMLElement>(null)
+        const root = React.useRef<HTMLElement | null>(null), panel = React.useRef<HTMLElement | null>(null), closeButton = React.useRef<HTMLElement | null>(null), trigger = React.useRef<HTMLElement | null>(null)
         const bind = useRefPair(root, ref), token = React.useId().replace(/[^a-zA-Z0-9]/g, ""), panelID = "mecha-tomorrow-detail-" + token
         const [phase, setPhase] = React.useState<Phase>("closed"), [phone, setPhone] = React.useState(false), [reduced, setReduced] = React.useState(false)
         const active = phase !== "closed"
@@ -169,7 +169,7 @@ export function withMechaTomorrowMore(Component: Layer): Layer {
 /** Full viewport native overlay; its authored children stay selectable. */
 export function withMechaTomorrowDetailOverlay(Component: Layer): Layer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const state = useDetail(), own = React.useRef<HTMLElement>(null), bind = useRefPair(state?.panel ?? own, ref)
+        const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(state?.panel ?? own, ref)
         if (!state || state.frozen) return <Component {...props} ref={bind} />
         return <Component {...props} ref={bind} id={state.panelID} role="dialog" aria-modal={state.active || undefined} aria-label="Tomorrow Recycling / source project details" aria-hidden={!state.active} tabIndex={-1}
             style={{ ...props.style, position: "fixed", inset: 0, width: "100vw", height: "100dvh", zIndex: 1000, opacity: state.active ? 1 : 0, visibility: state.active ? "visible" : "hidden", pointerEvents: state.active ? "auto" : "none" }} />
@@ -179,7 +179,7 @@ export function withMechaTomorrowDetailOverlay(Component: Layer): Layer {
 /** Apply to the white scrolling native sheet, not its content-height frame. */
 export function withMechaTomorrowDetailSheet(Component: Layer): Layer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const state = useDetail(), own = React.useRef<HTMLElement>(null), bind = useRefPair(own, ref)
+        const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(own, ref)
         React.useLayoutEffect(() => { if (state?.phase === "opening" || state?.phase === "open" && state.reduced) { if (own.current) own.current.scrollTop = 0 } }, [state?.phase, state?.reduced])
         if (!state || state.frozen) return <Component {...props} ref={bind} />
         const animation = state.reduced ? "none" : state.phase === "opening" ? `mechaTomorrowSheetIn .9s ${MENU_EASE} .15s both` : state.phase === "closing" ? `mechaTomorrowSheetOut .9s ${MENU_EASE} both` : "none"
@@ -198,7 +198,7 @@ export function withMechaTomorrowDetailFader(Component: Layer): Layer {
 
 export function withMechaTomorrowDetailClose(Component: Layer): Layer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
-        const state = useDetail(), own = React.useRef<HTMLElement>(null), bind = useRefPair(state?.closeButton ?? own, ref), activate = useActivation(() => state?.hide(), !state || state.frozen)
+        const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(state?.closeButton ?? own, ref), activate = useActivation(() => state?.hide(), !state || state.frozen)
         return <Component {...props} ref={bind} role="button" tabIndex={props.tabIndex ?? 0}
             onTap={(event: NativeEvent, info: unknown) => { props.onTap?.(event, info); activate("tap", event) }}
             onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); activate("click", event) }}
