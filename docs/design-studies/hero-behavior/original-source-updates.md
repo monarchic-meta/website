@@ -38,8 +38,9 @@ Preview checks; all eighteen references are not approved for close fidelity.
   copies start idle. Actual opening, manual media and reload remain unverified.
 - pu—ente's smooth quadratic trail correction compiles through MCP576 with its
   thirteen overrides and native page unchanged. Six static and 27 browser
-  checks pass. The outside-tile cursor and original moving-state comparison
-  remain separate gaps.
+  checks pass. Its outside-tile white difference cursor is added through
+  MCP610 with 43 current focused checks and no new canvas or context.
+  Original moving-state comparison and actual Preview/reload remain open.
 - FORMAT's first two photo apertures and eight word masks are authored through
   MCP581. Its subsequent Vee-to-gauge flight compiles and is attached through
   MCP587, preserving the original ring and panes. Seven more photo fields are

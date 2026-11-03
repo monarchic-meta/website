@@ -838,8 +838,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-018.json",
-        "bytes": 9414,
-        "sha256": "5d95e4ad62fd591229b3f4a29cb977a42c3909b0391f350981667b00b5cf1d1a"
+        "bytes": 12293,
+        "sha256": "bb692125b509733d15dc02dbb873d86feb066a1c8ca712bca453b032823b41f0"
       },
       "page": {
         "id": "W0F97yBQg",
@@ -873,8 +873,8 @@
   ],
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
-    "bytes": 3893,
-    "sha256": "7723a110e351a32a27819575e62d5436dd2dc3b25863bca7d088d224d6a1e709"
+    "bytes": 3894,
+    "sha256": "ef90e6fd31e0c3a08156882889dcf6f3138c4449049ffc6f06bc91daa7fabc7d"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
@@ -1188,6 +1188,11 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/wide-writer605/final-actual-wide-authoring-receipt.json",
         "bytes": 2668,
         "sha256": "d9d3db793410fdfc5839846593be34dfc1f6d0854e8c807f7a0df65f8f417d93"
+      },
+      "puenteOutsideDifferenceCursor": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-writer610/final-actual-source-authoring-receipt.json",
+        "bytes": 1425,
+        "sha256": "88f6040f62db5469e682b9d323beedf7f9938d06d329ffcf81d83855cb61a250"
       }
     },
     "currentCensusThrough598": {

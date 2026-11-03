@@ -199,11 +199,72 @@ function ink(Component: ComponentType<LayerProps>, side: Exclude<Side, null>): C
 }
 export function withPuenteArtText(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return ink(Component, "art") }
 export function withPuenteGraphicText(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return ink(Component, "graphic") }
+// A small DOM square replaces the source's viewport-sized cursor canvas. It
+// uses viewport coordinates outside the clipped tile trail, so it needs no
+// bitmap, context or continuous idle loop. Each gallery owns and cleans it up.
+function useGalleryDifferenceCursor(node: HTMLElement | null, state: Experience, id: string) {
+    React.useEffect(() => {
+        if (!node || state.frozen || state.reduced || state.phase !== "gallery" || !state.trailEnabled) return
+        const cursor = document.createElement("div"), style = document.createElement("style")
+        cursor.setAttribute("data-source-puente-outside-cursor", id)
+        cursor.setAttribute("aria-hidden", "true")
+        style.setAttribute("data-source-puente-cursor-style", id)
+        cursor.hidden = true
+        Object.assign(cursor.style, { position: "fixed", left: "0px", top: "0px", width: "16px", height: "16px", background: "#ffffff", mixBlendMode: "difference", pointerEvents: "none", zIndex: "9999" })
+        style.textContent = '[data-source-puente-cursor-owner="' + id + '"],[data-source-puente-cursor-owner="' + id + '"] *{cursor:none!important}'
+        document.body.appendChild(cursor); document.head.appendChild(style)
+        let pending = 0, previous = 0, current: Point | null = null, target: Point | null = null, last: Point | null = null
+        const cancel = () => { if (pending) cancelAnimationFrame(pending); pending = 0; previous = 0 }
+        const hide = () => { cancel(); cursor.hidden = true; current = null; target = null }
+        const paint = (point: Point) => { cursor.style.left = Math.round(point.x - 8) + "px"; cursor.style.top = Math.round(point.y - 8) + "px"; cursor.hidden = false }
+        const tick = (now: number) => {
+            pending = 0
+            if (!current || !target || document.hidden) { hide(); return }
+            const dt = previous ? Math.min(.05, (now - previous) / 1000) : 1 / 60; previous = now
+            const mix = 1 - Math.pow(.68, dt * 60)
+            current = { x: current.x + (target.x - current.x) * mix, y: current.y + (target.y - current.y) * mix }
+            const moving = Math.abs(target.x - current.x) > .5 || Math.abs(target.y - current.y) > .5
+            if (!moving) current = { ...target }
+            paint(current)
+            if (moving) pending = requestAnimationFrame(tick)
+        }
+        const sample = (point: Point) => {
+            const hit = document.elementFromPoint(point.x, point.y)
+            if (document.hidden || !hit || !node.contains(hit) || hit.closest("[data-source-puente-project]")) { hide(); return }
+            target = point
+            if (!current) { current = { ...point }; paint(current) }
+            if (!pending) pending = requestAnimationFrame(tick)
+        }
+        const move = (event: PointerEvent) => {
+            if (event.defaultPrevented || event.pointerType === "touch") { last = null; hide(); return }
+            last = { x: event.clientX, y: event.clientY }; sample(last)
+        }
+        const leave = () => { last = null; hide() }
+        const reposition = () => { if (last) sample(last) }
+        const visibility = () => { if (document.hidden) leave() }
+        // Window bubbling runs after the native layer's React callbacks, so
+        // their preventDefault remains authoritative for this source effect.
+        window.addEventListener("pointermove", move)
+        node.addEventListener("pointerleave", leave)
+        window.addEventListener("scroll", reposition, { passive: true, capture: true })
+        window.addEventListener("resize", reposition)
+        window.addEventListener("blur", leave)
+        document.addEventListener("visibilitychange", visibility)
+        return () => {
+            leave(); window.removeEventListener("pointermove", move); node.removeEventListener("pointerleave", leave)
+            window.removeEventListener("scroll", reposition, true); window.removeEventListener("resize", reposition); window.removeEventListener("blur", leave)
+            document.removeEventListener("visibilitychange", visibility); cursor.remove(); style.remove()
+        }
+    }, [node, state.frozen, state.phase, state.trailEnabled, state.reduced, id])
+}
+
 export function withPuenteGraphicGallery(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
-    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const s = React.useContext(Context), own = React.useRef<HTMLElement | null>(null)
-        useOwnLayoutEffect(() => { const node = own.current; if (!node) return; const measure = () => s.setGalleryHeight(node.clientHeight); measure(); const observer = new ResizeObserver(measure); observer.observe(node); return () => observer.disconnect() }, [s.setGalleryHeight])
-        return <Component {...props} ref={(node: HTMLElement | null) => { own.current = node; writeRef(ref, node) }}
-            data-source-puente-layer="gallery" aria-hidden={s.phase === "entry"}
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => { const s = React.useContext(Context), [host, setHost] = React.useState<HTMLElement | null>(null), cursorID = React.useId().replace(/[^\w-]/g, "_")
+        const attach = React.useCallback((node: HTMLElement | null) => { setHost(node); writeRef(ref, node) }, [ref])
+        useGalleryDifferenceCursor(host, s, cursorID)
+        useOwnLayoutEffect(() => { if (!host) return; const measure = () => s.setGalleryHeight(host.clientHeight); measure(); const observer = new ResizeObserver(measure); observer.observe(host); return () => observer.disconnect() }, [host, s.setGalleryHeight])
+        return <Component {...props} ref={attach}
+            data-source-puente-layer="gallery" data-source-puente-cursor-owner={cursorID} aria-hidden={s.phase === "entry"}
             style={{ ...props.style, top: 0, opacity: s.phase === "entry" ? 0 : 1, pointerEvents: s.phase === "gallery" ? "auto" : "none", zIndex: 1 }} />
     })
 }

@@ -117,8 +117,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
-      "bytes": 4819,
-      "sha256": "29a1b6f3d19c767385680d91d08cc3825bc238ff4b0b5d200edaa47894910627"
+      "bytes": 7733,
+      "sha256": "deafb6ef4f01fc4c37a3e7f4951e1979bbcffc8bb2de3ff7845d4fb4eb3008fe"
     },
     "publicOverrides": 13,
     "localChecks": {
@@ -140,5 +140,47 @@
       "bytes": 2107,
       "sha256": "f70b5c6cdbac61857daff9a735895fe559fc860410b830cbf7eef4d8aff609ed"
     }
+  },
+  "outsideDifferenceCursor": {
+    "status": "SOURCE_COMPILER_CLEAN_NATIVE_OWNER_PRESERVED_PREVIEW_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/frozen-db35d997/SourcePuenteBehaviors.tsx",
+      "bytes": 26928,
+      "sha256": "db35d99709759061f711e4797916d6645111c3395edefc612041e6bc3a7e5283"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/validation-receipt.json",
+      "bytes": 4457,
+      "sha256": "26b567013fa9f64789080ab3e825c534b897fd7a71b893bf71b4fba2fa5821f5"
+    },
+    "sourceAudit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/observed-source-brief.json",
+      "bytes": 2942,
+      "sha256": "dd2e7da2570a71b8534ed4a0c921ef90cf00f560c56e925274064147c5ee6927"
+    },
+    "publicOverrides": 13,
+    "checks": {
+      "static": 6,
+      "browser": 37,
+      "total": 43,
+      "errors": 0
+    },
+    "behavior": "One gallery-owned body-mounted16px white difference square outside native project tiles. Existing clipped blue trail remains inside. Stable host replacement, caller cancellation, transformed coordinates, narrow/coarse/reduced/static/hidden cleanup and actual blend pixels are tested.",
+    "resources": "No new canvas, WebGL, asset request, clock or timer. The cursor admits one finite event-driven easing RAF and stops at rest; all listeners, styles and DOM nodes clean up.",
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
+      "bytes": 7733,
+      "sha256": "deafb6ef4f01fc4c37a3e7f4951e1979bbcffc8bb2de3ff7845d4fb4eb3008fe"
+    },
+    "scope": "The missing outside-tile cursor is implemented and locally validated. Earlier quadratic-trail receipts retain their historical omission note. Actual Framer painting/Preview/reload remain separate.",
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-writer610/final-actual-source-authoring-receipt.json",
+      "bytes": 1425,
+      "sha256": "88f6040f62db5469e682b9d323beedf7f9938d06d329ffcf81d83855cb61a250"
+    },
+    "actualCompilerDiagnostics": 0,
+    "nativeOwnerSHA256": "1977bacd736545b26ed82a2b06514ceec7a01def709ce0622f062085b27e3db3"
   }
 }

@@ -6,14 +6,18 @@
   "graphicBranch": "https://www.pu-ente.com/z/",
   "actor": {
     "path": "../SourcePuenteBehaviors.tsx",
-    "sha256": "aa0758a5bb692d99f20b24b9a6939bed9727dbba9ad84c701aa586a3a0662d8c",
-    "bytes": 22547
+    "sha256": "db35d99709759061f711e4797916d6645111c3395edefc612041e6bc3a7e5283",
+    "bytes": 26928
   },
   "sourceFacts": "Current public code supports distinct grayscale palette, fine-pointer half-fill,1.8s split curtain with.12s delay, and clipped16px/26pointtrail. The actual Graphic branch has fifteen static tiles, not autoplay sliders.",
   "adaptations": [
     "Graphic branch is presented within the independent Framer draft instead of separate source routing.",
     "Phone gate geometry is fitted to its assigned native bounds.",
-    "The native SVG now uses the source quadratic midpoint geometry. A30Hz publication cap, time-normalized0.32 easing and finite rest replace the source continuous Canvas loop; curtain easing remains a fitted cubic."
+    "The native SVG now uses the source quadratic midpoint geometry. A30Hz publication cap, time-normalized0.32 easing and finite rest replace the source continuous Canvas loop; curtain easing remains a fitted cubic.",
+    "A small DOM square replaces the source full-window cursor canvas; the existing tile SVG replaces its blue trail canvas.",
+    "Source frame-based0.32 easing is time-normalized; source continuous idle scheduling is replaced with finite rest.",
+    "Reduced motion retains the standard native pointer throughout; no custom cursor or cursor:none style is installed.",
+    "The cursor is scoped to its own gallery; re-entering from a project tile seeds the current pointer rather than carrying a separate global cursor history."
   ],
   "validation": {
     "nixOutput": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/nix-root",
@@ -69,5 +73,41 @@
       "bytes": 2107,
       "sha256": "f70b5c6cdbac61857daff9a735895fe559fc860410b830cbf7eef4d8aff609ed"
     }
+  },
+  "outsideDifferenceCursor": {
+    "status": "SOURCE_COMPILER_CLEAN_NATIVE_OWNER_PRESERVED_PREVIEW_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/frozen-db35d997/SourcePuenteBehaviors.tsx",
+      "bytes": 26928,
+      "sha256": "db35d99709759061f711e4797916d6645111c3395edefc612041e6bc3a7e5283"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/validation-receipt.json",
+      "bytes": 4457,
+      "sha256": "26b567013fa9f64789080ab3e825c534b897fd7a71b893bf71b4fba2fa5821f5"
+    },
+    "sourceAudit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-v1/observed-source-brief.json",
+      "bytes": 2942,
+      "sha256": "dd2e7da2570a71b8534ed4a0c921ef90cf00f560c56e925274064147c5ee6927"
+    },
+    "publicOverrides": 13,
+    "checks": {
+      "static": 6,
+      "browser": 37,
+      "total": 43,
+      "errors": 0
+    },
+    "behavior": "One gallery-owned body-mounted16px white difference square outside native project tiles. Existing clipped blue trail remains inside. Stable host replacement, caller cancellation, transformed coordinates, narrow/coarse/reduced/static/hidden cleanup and actual blend pixels are tested.",
+    "resources": "No new canvas, WebGL, asset request, clock or timer. The cursor admits one finite event-driven easing RAF and stops at rest; all listeners, styles and DOM nodes clean up.",
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/outside-cursor-writer610/final-actual-source-authoring-receipt.json",
+      "bytes": 1425,
+      "sha256": "88f6040f62db5469e682b9d323beedf7f9938d06d329ffcf81d83855cb61a250"
+    },
+    "actualCompilerDiagnostics": 0,
+    "nativeOwnerSHA256": "1977bacd736545b26ed82a2b06514ceec7a01def709ce0622f062085b27e3db3"
   }
 }
