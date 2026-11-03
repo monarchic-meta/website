@@ -107,7 +107,7 @@
     }
   },
   "helperDeclarationCost": {
-    "status": "LOCAL_FOUR_CHECKS_PASS_ACTUAL_SOURCE_DELIVERY_PENDING",
+    "status": "MCP_HELPERS_APPLIED666_667_MAIN_REFRESH668_NOOP_READ670_MAIN_DIAGNOSTICS_UNRESOLVED",
     "sourcePlan": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/source-write-plan.json",
       "bytes": 6719,
@@ -125,8 +125,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-hero-journey-provenance.json",
-      "bytes": 29447,
-      "sha256": "9233dc1c7835b0f81a8da62d3b6b8bd80ff9f1c53791b7c9c2cdade4595d72cc"
+      "bytes": 30132,
+      "sha256": "da60526add9335e8bf11bba9d0dfc7588051488b58f00eb857f00cd7f5f14f6a"
     },
     "measuredDeclarationBytes": {
       "before": 935084,
@@ -135,11 +135,23 @@
     "runtime": "Both emitted JavaScript files, packed/inflated geometry and main fbbcb38f source remain byte-exact. Existing generator now preserves explicit string contracts.",
     "diagnosticBoundary": "This reduces measured unnecessary literal declaration output. Neither helper exceeded the hypothesized1048576 combined bytes; no established causal explanation for actual TS2307 or claim of runtime/loading improvement.",
     "actualFramer": {
-      "helpersWritten": false,
+      "helpersWritten": true,
       "mainCompilerClean": false,
       "knownPriorImportDiagnostics": 2,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "helperCompilerDiagnostics": [
+        0,
+        0
+      ],
+      "mainRefreshAttemptedExactlyOnce": true,
+      "mainRefreshAccepted": false,
+      "freshMainDiagnosticsReturned": false
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-writer666/final-actual-typed-helper-authoring-receipt670.json",
+      "bytes": 4264,
+      "sha256": "98e65a6d9ba9bb9247ee41b6cc9082f1e4dc14b26d770f9d4b1f4517c17078cd"
     }
   }
 }

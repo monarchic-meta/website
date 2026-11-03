@@ -500,7 +500,7 @@
       "declarationBytesRemoved": 934970,
       "runtimeJavascriptByteIdentical": true,
       "mainSourceByteExact": true,
-      "actualFramerAuthored": false,
+      "actualFramerAuthored": true,
       "actualFramerDiagnosticsResolved": false,
       "actualPreviewVerified": false
     },
@@ -536,6 +536,12 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/source-write-plan.json",
       "bytes": 6719,
       "sha256": "32ab1212ae6e05c03a743cbe7c42af5c2dfb759e649e111bf5cb5a162a6863c7"
-    }
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-writer666/final-actual-typed-helper-authoring-receipt670.json",
+      "bytes": 4264,
+      "sha256": "98e65a6d9ba9bb9247ee41b6cc9082f1e4dc14b26d770f9d4b1f4517c17078cd"
+    },
+    "actualDiagnosticBoundary": "Both helper sources compile cleanly and retain their LocalModule IDs/names. The single byte-identical main refresh668 was refused as unchanged, with no fresh diagnostics; the last observed twoTS2307 import diagnostics remain unresolved. No retry or whitespace mutation."
   }
 }
