@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "referenceID": "HERO-015",
+  "classification": "Source inspiration / close recreation",
+  "source": "https://mecha-xyz.webflow.io/",
+  "credits": "MECHA / Widelab / Grzegorz Leśniewicz",
+  "pageID": "nwAhAlY6o",
+  "preflight": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/light-H3-H15-preflight535/actual-data535.json",
+    "sha256": "526232626a305484bc36a9e650bbe9c65e63249d992baa27267ab1a6a625f750",
+    "ownerSHA256": "cb81ea26638f6b7b32ffa69b134cf3cc83019f41174a3810efa6b6aef3cc7e25"
+  },
+  "sourceModule": "SourceMechaTomorrowDetail.tsx",
+  "layout": {
+    "width": 390,
+    "height": 844,
+    "contentHeight": 2746,
+    "liveBreakpoint": 991,
+    "atOtherWidths": "Existing Phone page remains unchanged. New sheet uses its native390-unit composition; broader widths are a fitted layout, not a measured second source state."
+  },
+  "bindings": [
+    {
+      "id": "mWGINlKKX",
+      "export": "withMechaTomorrowDetailRoot",
+      "preserveExistingChildren": true
+    },
+    {
+      "id": "mWGINlKKXPKF6jZ2p_",
+      "export": "withMechaTomorrowDetailBackground"
+    },
+    {
+      "id": "mWGINlKKXrbuviBqh6",
+      "export": "withMechaTomorrowDetailBackground"
+    }
+  ],
+  "preserve": {
+    "allExistingIDs": true,
+    "allExistingBodyCopy": true,
+    "markFile": "MechaScrollMark.tsx",
+    "markSHA256": "bd460fe3b64e7ca83a476c0df774a46054368e5375c66294f1e93f52b411b24a",
+    "markPublicControls": 8,
+    "sharedNativeBehaviorFileUnchanged": true
+  },
+  "authoring": {
+    "mode": "additive native frames/RTEs and existing genuine media instances; no whole-sheet bitmap",
+    "textKey": "text and typographyFrom are recipe instructions, not direct NativeStyle attributes",
+    "rootOpacity": "New overlay visible:true opacity:0. Live overlay HOC owns visibility/opacity; static editor/export stays closed.",
+    "copy": "Only labels and factual metrics are transcribed; body is independently authored. Georgia/Inter are inherited genuine existing native fonts; source Flecha M/Neue Haas faces remain a declared fit.",
+    "fontVerification": "Clone typography from actual535 RTE; positively read Native/Block/Run tuples after authoring. No fabricated font variant IDs.",
+    "geometry": "Rectangles are390px source-state measurements. Snapshot034 was still entering (sheet y47.112926); media Ys subtract that offset. Sequentially sampled DOM/capture endpoints can differ by~22px; non-media text positions from retained settled035/structure and034 heading. Do not call this new source inspection.",
+    "close": "Overlay sibling to scrolling sheet; remains reachable while sheet scrolls.",
+    "links": "Website and thumb are real external links. Previous/Next source controls are intentionally omitted until other project details are audited; do not invent navigation."
+  },
+  "rows": [
+    {
+      "key": "more",
+      "parent": "mWGINlKKXmnE1nbNA1",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-more",
+      "attributes": {
+        "position": "absolute",
+        "left": "310px",
+        "top": "32px",
+        "width": "60px",
+        "height": "24px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "rgba(0,0,0,0)",
+        "override": "withMechaTomorrowMore"
+      }
+    },
+    {
+      "key": "more-label",
+      "parent": "more",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-more-label",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "4px",
+        "width": "44px",
+        "height": "16px",
+        "visible": true,
+        "opacity": 1,
+        "text": "MORE",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "10px",
+        "lineHeight": "15px",
+        "textColor": "#171717"
+      }
+    },
+    {
+      "key": "overlay",
+      "parent": "mWGINlKKX",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-overlay",
+      "attributes": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "844px",
+        "visible": true,
+        "opacity": 0,
+        "fill": "rgba(0,0,0,0)",
+        "overflow": "visible",
+        "override": "withMechaTomorrowDetailOverlay"
+      }
+    },
+    {
+      "key": "fader",
+      "parent": "overlay",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-fader",
+      "attributes": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "844px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#ffffff73",
+        "override": "withMechaTomorrowDetailFader"
+      }
+    },
+    {
+      "key": "sheet",
+      "parent": "overlay",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-sheet",
+      "attributes": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "844px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#ffffff",
+        "overflow": "scroll",
+        "override": "withMechaTomorrowDetailSheet"
+      }
+    },
+    {
+      "key": "content",
+      "parent": "sheet",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-content",
+      "attributes": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "2746px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#ffffff",
+        "overflow": "visible"
+      }
+    },
+    {
+      "key": "close",
+      "parent": "overlay",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-close",
+      "attributes": {
+        "position": "absolute",
+        "left": "281px",
+        "top": "20px",
+        "width": "81px",
+        "height": "24px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "rgba(0,0,0,0)",
+        "override": "withMechaTomorrowDetailClose"
+      }
+    },
+    {
+      "key": "close-label",
+      "parent": "close",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-close-label",
+      "attributes": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "3px",
+        "width": "50px",
+        "height": "18px",
+        "visible": true,
+        "opacity": 1,
+        "text": "Close",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "14px",
+        "lineHeight": "18px",
+        "textColor": "#171717"
+      }
+    },
+    {
+      "key": "close-arrow-shaft",
+      "parent": "close",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-close-arrow-shaft",
+      "attributes": {
+        "position": "absolute",
+        "left": "61px",
+        "top": "11px",
+        "width": "18px",
+        "height": "1px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#171717"
+      }
+    },
+    {
+      "key": "close-arrow-upper",
+      "parent": "close",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-close-arrow-upper",
+      "attributes": {
+        "position": "absolute",
+        "left": "74px",
+        "top": "8px",
+        "width": "6px",
+        "height": "1px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#171717",
+        "rotation": 45
+      }
+    },
+    {
+      "key": "close-arrow-lower",
+      "parent": "close",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-close-arrow-lower",
+      "attributes": {
+        "position": "absolute",
+        "left": "74px",
+        "top": "12px",
+        "width": "6px",
+        "height": "1px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#171717",
+        "rotation": -45
+      }
+    },
+    {
+      "key": "metadata",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metadata",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "36px",
+        "width": "260px",
+        "height": "45px",
+        "visible": true,
+        "opacity": 1,
+        "text": "TOMORROWRECYCLING.COM\nWASTE MANAGEMENT\nROBOTICS & AI",
+        "typographyFrom": "mWGINlKKXx1UdDKvXt",
+        "paragraphSpacing": 0,
+        "fontSize": "10px",
+        "lineHeight": "15px",
+        "textColor": "#171717"
+      }
+    },
+    {
+      "key": "title",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-title",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "179.359379px",
+        "width": "358px",
+        "height": "76px",
+        "visible": true,
+        "opacity": 1,
+        "text": "Tomorrow\nRecycling",
+        "typographyFrom": "mWGINlKKXs1YwretX5",
+        "paragraphSpacing": 0,
+        "fontSize": "40.625px",
+        "lineHeight": "37.375px",
+        "letterSpacing": "-0.02em",
+        "textColor": "#171717"
+      }
+    },
+    {
+      "key": "title-rule",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-title-rule",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "295px",
+        "width": "358px",
+        "height": "0.7px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    },
+    {
+      "key": "body",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-body",
+      "attributes": {
+        "position": "absolute",
+        "left": "162.578125px",
+        "top": "339.5px",
+        "width": "211.421875px",
+        "height": "140.75px",
+        "visible": true,
+        "opacity": 1,
+        "text": "Tomorrow Recycling combines machine vision with robotic sorting to recover more reusable material. The project connects real-time process data, technical development and equipment on the plant floor. Its published case study reports gains in material recovery, lower headcount and greater automated sortation.",
+        "typographyFrom": "mWGINlKKXTLwZok0Se",
+        "paragraphSpacing": 0,
+        "fontSize": "12.1875px",
+        "lineHeight": "17.55px",
+        "textColor": "#777777"
+      }
+    },
+    {
+      "key": "website",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-website",
+      "attributes": {
+        "position": "absolute",
+        "left": "163.578125px",
+        "top": "522.15625px",
+        "width": "73.40625px",
+        "height": "24px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#ffffff",
+        "border": "1px solid #777777",
+        "link": "https://www.tomorrowrecycling.com/"
+      }
+    },
+    {
+      "key": "website-label",
+      "parent": "website",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-website-label",
+      "attributes": {
+        "position": "absolute",
+        "left": "8px",
+        "top": "5px",
+        "width": "60px",
+        "height": "14px",
+        "visible": true,
+        "opacity": 1,
+        "text": "WEBSITE",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#171717"
+      }
+    },
+    {
+      "key": "metric-rule-0",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-metric-rule-0",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "564px",
+        "width": "358px",
+        "height": "0.5px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    },
+    {
+      "key": "metric-label-0",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-label-0",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "573px",
+        "width": "300px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "INCREASE IN MATERIAL RECOVERY RATE",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999"
+      }
+    },
+    {
+      "key": "metric-value-0",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-value-0",
+      "attributes": {
+        "position": "absolute",
+        "left": "335px",
+        "top": "573px",
+        "width": "39px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "25%",
+        "typographyFrom": "mWGINlKKXbu_TuQ8Xf",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999",
+        "textAlignment": "right"
+      }
+    },
+    {
+      "key": "metric-rule-1",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-metric-rule-1",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "598px",
+        "width": "358px",
+        "height": "0.5px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    },
+    {
+      "key": "metric-label-1",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-label-1",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "607px",
+        "width": "300px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "HEADCOUNT REDUCTION",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999"
+      }
+    },
+    {
+      "key": "metric-value-1",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-value-1",
+      "attributes": {
+        "position": "absolute",
+        "left": "335px",
+        "top": "607px",
+        "width": "39px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "52%",
+        "typographyFrom": "mWGINlKKXbu_TuQ8Xf",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999",
+        "textAlignment": "right"
+      }
+    },
+    {
+      "key": "metric-rule-2",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-metric-rule-2",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "632px",
+        "width": "358px",
+        "height": "0.5px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    },
+    {
+      "key": "metric-label-2",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-label-2",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "641px",
+        "width": "300px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "AUTOMATED SORTATION",
+        "typographyFrom": "mWGINlKKXfVR8E7eis",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999"
+      }
+    },
+    {
+      "key": "metric-value-2",
+      "parent": "content",
+      "type": "RichTextNode",
+      "name": "HERO-015 / tomorrow-detail-metric-value-2",
+      "attributes": {
+        "position": "absolute",
+        "left": "335px",
+        "top": "641px",
+        "width": "39px",
+        "height": "15px",
+        "visible": true,
+        "opacity": 1,
+        "text": "76%",
+        "typographyFrom": "mWGINlKKXbu_TuQ8Xf",
+        "paragraphSpacing": 0,
+        "fontSize": "9px",
+        "lineHeight": "13px",
+        "textColor": "#999999",
+        "textAlignment": "right"
+      }
+    },
+    {
+      "key": "metric-end",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-metric-end",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "666px",
+        "width": "358px",
+        "height": "0.5px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    },
+    {
+      "key": "thumb",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-thumb",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "315.1875px",
+        "width": "118.078125px",
+        "height": "118.078125px",
+        "visible": true,
+        "opacity": 1,
+        "fillFromSourceURL": "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef9a3_Group%202147203502.png",
+        "overflow": "clip",
+        "link": "https://www.tomorrowrecycling.com/"
+      }
+    },
+    {
+      "key": "industrial",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-industrial",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "761.8593635559082px",
+        "width": "327.25px",
+        "height": "219.3125px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "data:framer/asset-reference,JF1AKanNgiIwAtD1Oq3Bj7kR1w.png?originalFilename=gyd9t1C9xXZhdha3mTlsBq3BQ.png&width=752&height=504",
+        "overflow": "clip",
+        "cloneFrom": "mWGINlKKXQW_H4Dkvh"
+      }
+    },
+    {
+      "key": "pick",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-pick",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "1423.8906135559082px",
+        "width": "164.671875px",
+        "height": "207.8125px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "data:framer/asset-reference,LfL25kQ5GyQilyyt6HIwmE71cfI.jpg?originalFilename=3IjMFBa2dxVWwo7lFBxKo7SJl9s.jpg&width=504&height=636",
+        "overflow": "clip",
+        "cloneFrom": "mWGINlKKXO8VDX1xi6"
+      }
+    },
+    {
+      "key": "export",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-export",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "1779.6562385559082px",
+        "width": "358px",
+        "height": "262.1719970703125px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "data:framer/asset-reference,h0y3ESbpje1cqnQYHzEfUhzRk0Q.png?originalFilename=wmvdlVJ8exBYGQEdT3X2ADlwnI.png&width=1226&height=896",
+        "overflow": "clip",
+        "cloneFrom": "mWGINlKKXFutt0HRW6"
+      }
+    },
+    {
+      "key": "vision-film",
+      "parent": "content",
+      "type": "ComponentInstanceNode",
+      "name": "HERO-015 / tomorrow-detail-vision-film",
+      "attributes": {
+        "position": "absolute",
+        "left": "68.375px",
+        "top": "1009.1718635559082px",
+        "width": "321.625px",
+        "height": "306.5px",
+        "visible": true,
+        "opacity": 1,
+        "component": "lRDHiNWNVWmE0lqtoVHP",
+        "$control__srcType": "URL",
+        "$control__srcUrl": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Greenwaycomputervision%20Short2.webm",
+        "$control__loop": true,
+        "$control__posterEnabled": true,
+        "$control__poster": "data:framer/asset-reference,DQw8LCKtDX40jFw7y0h6Y3aZD8E.jpg?originalFilename=KDmNitAB9nDTKyPvgjcr3n008.jpg&width=936&height=892",
+        "$control__controls": true,
+        "$control__muted": true,
+        "$control__objectFit": "cover",
+        "$control__playing": false,
+        "$control__backgroundColor": "rgba(0,0,0,0)",
+        "$control__volume": 25,
+        "cloneFrom": "mWGINlKKXHIIpMJIQp"
+      }
+    },
+    {
+      "key": "gripper-film",
+      "parent": "content",
+      "type": "ComponentInstanceNode",
+      "name": "HERO-015 / tomorrow-detail-gripper-film",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "2214.3282356262207px",
+        "width": "187px",
+        "height": "246.453125px",
+        "visible": true,
+        "opacity": 1,
+        "component": "lRDHiNWNVWmE0lqtoVHP",
+        "$control__srcType": "URL",
+        "$control__srcUrl": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Reka%201%20Grey.webm",
+        "$control__loop": true,
+        "$control__posterEnabled": true,
+        "$control__poster": "data:framer/asset-reference,IwkOcj20gAmB6Tw2JAgY4sOEHk.avif?originalFilename=HERO-015-tomorrow-5-poster.avif&width=856&height=830",
+        "$control__controls": true,
+        "$control__muted": true,
+        "$control__objectFit": "cover",
+        "$control__playing": false,
+        "$control__backgroundColor": "rgba(0,0,0,0)",
+        "$control__volume": 25,
+        "cloneFrom": "mWGINlKKXbTQxQ8Aw0"
+      }
+    },
+    {
+      "key": "robot-film",
+      "parent": "content",
+      "type": "ComponentInstanceNode",
+      "name": "HERO-015 / tomorrow-detail-robot-film",
+      "attributes": {
+        "position": "absolute",
+        "left": "243.21875px",
+        "top": "2495.2032356262207px",
+        "width": "146.78125px",
+        "height": "87.890625px",
+        "visible": true,
+        "opacity": 1,
+        "component": "lRDHiNWNVWmE0lqtoVHP",
+        "$control__srcType": "URL",
+        "$control__srcUrl": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Tr%20Greenville%20Robot%20Edit.webm",
+        "$control__loop": true,
+        "$control__posterEnabled": true,
+        "$control__poster": "data:framer/asset-reference,51mqbe67EXLjsIMfuGdydcrFoFA.jpg?originalFilename=rpBiN0V0D5k8WEcRHOvpIL9Y9s.jpg&width=708&height=424",
+        "$control__controls": true,
+        "$control__muted": true,
+        "$control__objectFit": "cover",
+        "$control__playing": false,
+        "$control__backgroundColor": "rgba(0,0,0,0)",
+        "$control__volume": 25,
+        "cloneFrom": "mWGINlKKXXNKsOyecD"
+      }
+    },
+    {
+      "key": "bottom-rule",
+      "parent": "content",
+      "type": "FrameNode",
+      "name": "HERO-015 / tomorrow-detail-bottom-rule",
+      "attributes": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "2686px",
+        "width": "358px",
+        "height": "0.7px",
+        "visible": true,
+        "opacity": 1,
+        "fill": "#d8d8d8"
+      }
+    }
+  ],
+  "media": [
+    {
+      "key": "thumb",
+      "sourceURL": "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef9a3_Group%202147203502.png",
+      "nativeMaterial": "One source image not present in535 native tree; writer must resolve genuine reference, no replacement glyph."
+    },
+    {
+      "key": "industrial",
+      "sourceURL": "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef9bd_Group%202147203505%20(3).png",
+      "sourceRect": {
+        "x": 16,
+        "y": 808.9722900390625,
+        "width": 327.25,
+        "height": 219.3125
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXQW_H4Dkvh",
+      "genuineAssetReference": "data:framer/asset-reference,JF1AKanNgiIwAtD1Oq3Bj7kR1w.png?originalFilename=gyd9t1C9xXZhdha3mTlsBq3BQ.png&width=752&height=504"
+    },
+    {
+      "key": "pick",
+      "sourceURL": "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef959_fsaxvvvas-p-500.jpg",
+      "sourceRect": {
+        "x": 16,
+        "y": 1471.0035400390625,
+        "width": 164.671875,
+        "height": 207.8125
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXO8VDX1xi6",
+      "genuineAssetReference": "data:framer/asset-reference,LfL25kQ5GyQilyyt6HIwmE71cfI.jpg?originalFilename=3IjMFBa2dxVWwo7lFBxKo7SJl9s.jpg&width=504&height=636"
+    },
+    {
+      "key": "export",
+      "sourceURL": "https://cdn.prod.website-files.com/6a180066e6ba27b81a7ef915/6a180066e6ba27b81a7ef9c2_ready%20for%20export.png",
+      "sourceRect": {
+        "x": 16,
+        "y": 1826.7691650390625,
+        "width": 358,
+        "height": 262.1719970703125
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXFutt0HRW6",
+      "genuineAssetReference": "data:framer/asset-reference,h0y3ESbpje1cqnQYHzEfUhzRk0Q.png?originalFilename=wmvdlVJ8exBYGQEdT3X2ADlwnI.png&width=1226&height=896"
+    },
+    {
+      "key": "vision-film",
+      "sourceURL": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Greenwaycomputervision%20Short2.webm",
+      "sourcePoster": "https://cdn.prod.website-files.com/69e776c5f7729eda0138d932/69eab0a15f1a891d41f61e84_jfground.jpg",
+      "sourceRect": {
+        "x": 68.375,
+        "y": 1056.2847900390625,
+        "width": 321.625,
+        "height": 306.5
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXHIIpMJIQp",
+      "autoplay": false,
+      "controls": true,
+      "limit": "Manual native playback; visibility suspension of actual Framer Video is not proved by this controller. No new shader/model/video decoder in HOCs."
+    },
+    {
+      "key": "gripper-film",
+      "sourceURL": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Reka%201%20Grey.webm",
+      "sourcePoster": "https://cdn.prod.website-files.com/69e776c5f7729eda0138d932/69fb8f9769b6245e6438db08_Group%202147203513%20(1).avif",
+      "sourceRect": {
+        "x": 16,
+        "y": 2261.441162109375,
+        "width": 187,
+        "height": 246.453125
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXbTQxQ8Aw0",
+      "autoplay": false,
+      "controls": true,
+      "limit": "Manual native playback; visibility suspension of actual Framer Video is not proved by this controller. No new shader/model/video decoder in HOCs."
+    },
+    {
+      "key": "robot-film",
+      "sourceURL": "https://widelabco.sfo3.cdn.digitaloceanspaces.com/Tr%20Greenville%20Robot%20Edit.webm",
+      "sourcePoster": "https://cdn.prod.website-files.com/69e776c5f7729eda0138d932/69eab315984261e89c9370e8_AMPSortation_nosound%204.jpg",
+      "sourceRect": {
+        "x": 243.21875,
+        "y": 2542.316162109375,
+        "width": 146.78125,
+        "height": 87.890625
+      },
+      "normalizationSubtractY": 47.1129264831543,
+      "cloneFrom": "mWGINlKKXXNKsOyecD",
+      "autoplay": false,
+      "controls": true,
+      "limit": "Manual native playback; visibility suspension of actual Framer Video is not proved by this controller. No new shader/model/video decoder in HOCs."
+    }
+  ],
+  "limits": [
+    "Only first Tomorrow MORE opening/Close was actually observed. Escape/animation curves are retained-source-code facts. Other project details and previous/next wrapping are unobserved in retained click audit.",
+    "Contact modal is separate: distinct orthographic M/camera, maroon/cyan materials, text and form. It remains unimplemented; no generic main M is substituted.",
+    "Source modal video playback was paused/unready in captured034. This slice uses manual native controls/autoplay off until actual visibility lifecycle can be verified.",
+    "No Framer Preview, editor paint, actual native video suspension, or post-reload persistence is established by a local native-like fixture."
+  ]
+}

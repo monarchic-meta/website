@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "referenceID": "HERO-015",
+  "source": "https://mecha-xyz.webflow.io/",
+  "classification": "Source inspiration / close recreation",
+  "credits": "MECHA / Widelab / Grzegorz Leśniewicz",
+  "sourceModule": "SourceMechaTomorrowDetail.tsx",
+  "nativePlan": "docs/design-studies/code-components/assets/source-mecha-tomorrow-detail-native-plan.json",
+  "evidence": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/033-phone-phone-first-investment-before-more.json",
+      "sha256": "fd27573ac7695fa51f4231676fc5f18b484607488726a18946829569a40cf8e8",
+      "bytes": 80388
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/034-phone-phone-more-result.json",
+      "sha256": "0c9926f8d786f0fdeb6a93e526ee891e222079880ad7b0f2c63e9c7025bb9a79",
+      "bytes": 88679
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/035-phone-phone-more-closed.json",
+      "sha256": "59801c4e0db0dddfe8e4b2aa055861623cae0d1b39141e865119f88bf46bec27",
+      "bytes": 88687
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-more-actual.json",
+      "sha256": "c0fa6af66eb6d942490c4cd177de8fadc26d4f35d793b78369b577132e8d367c",
+      "bytes": 39419
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-more-overlay-structure.json",
+      "sha256": "b74a651ed7e6778e905e24109c7389913db955922033927bb265fb3f5c1ade1a",
+      "bytes": 6074
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/primary-inline-scripts.js",
+      "sha256": "10e1b887853e05eeffd1547419f73dd7b4ec30373143e50a5a3b3e0a74643100",
+      "bytes": 74026
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/primary-style-0.css",
+      "sha256": "a6a5f7d22ac87a2a3bdf6d719b603753f1642699f6f09969281adb316ae17e17",
+      "bytes": 130052
+    }
+  ],
+  "observed": {
+    "viewport": [
+      390,
+      844
+    ],
+    "backgroundScrollY": 585,
+    "detailScrollHeight": 2746,
+    "openButton": "First investment MORE",
+    "closeButton": "Close",
+    "backgroundPreservedAfterClose": true
+  },
+  "sourceCodeFacts": {
+    "module": "Projects Detail Modal Script",
+    "sheetInSeconds": 0.9,
+    "sheetDelaySeconds": 0.15,
+    "faderSeconds": 0.4,
+    "pagePushY": -200,
+    "pagePushSeconds": 1.2,
+    "menuEase": [
+      0.82,
+      0,
+      0.18,
+      1
+    ],
+    "closingCleanupSeconds": 1.12,
+    "Escape": true
+  },
+  "implementation": {
+    "independentNativeHOCs": 7,
+    "sourceSheetLandsSeconds": 1.05,
+    "openingStateCompletesSeconds": 1.2,
+    "backgroundScrollOwner": "Nearest actual scrollable ancestor, otherwise documentElement; priority-preserving owned styles restored, URL changes respected.",
+    "resources": "0 RAF,0 WebGL,0 canvas,0 own video/model/fetch; one finite phase timer only. Native media are separately manual.",
+    "frozen": "Canvas/export/thumbnail/useIsStaticRenderer preserve authored closed native layers without subscriptions/timers.",
+    "publicExistingControlsUnchanged": true,
+    "sourceBehaviorJSCopied": false,
+    "bodyCopy": "independently authored",
+    "faderEase": "CSS ease-in-out is a declared fit to source power2.inOut",
+    "closingBoundary": "Closing sheet/fader cleanup uses source1120ms; CSS background back uses1200ms, so the final80ms completes by a small endpoint snap when closed. This is an explicit fitted transition boundary, not fresh timing observation.",
+    "nativeMediaGate": "The shared SourceNativeVideoVisibility.tsx currently auto-starts on visible admission even with native playing=false. Therefore the finite manual-video plan does not bind it yet. A supported shared manual mode or explicit observed autoplay decision is required before claiming actual playback/suspension."
+  },
+  "limits": [
+    "Only first Tomorrow MORE opening/Close was actually observed. Escape/animation curves are retained-source-code facts. Other project details and previous/next wrapping are unobserved in retained click audit.",
+    "Contact modal is separate: distinct orthographic M/camera, maroon/cyan materials, text and form. It remains unimplemented; no generic main M is substituted.",
+    "Source modal video playback was paused/unready in captured034. This slice uses manual native controls/autoplay off until actual visibility lifecycle can be verified.",
+    "No Framer Preview, editor paint, actual native video suspension, or post-reload persistence is established by a local native-like fixture."
+  ],
+  "validation": {
+    "resultPath": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/tomorrow-detail-133617f1/result.json",
+    "resultSHA256": "3b5773e8a77a9b2f785f865d48f13ee70ef777f92133df3108d3452e83f979de",
+    "staticChecks": 47,
+    "browserChecks": 21,
+    "sourceSHA256": "133617f18775598c84a150aa2748951b209e91aee633f043de9f3f8c55c6a763",
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
+  }
+}
