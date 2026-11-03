@@ -2,7 +2,7 @@
   "schema": "source-ajedrez-photographic-composition.v1",
   "reference": "HERO-002",
   "classification": "Source inspiration / credited close recreation",
-  "status": "Complete166-pose photographic continuation validated locally; actual Framer source/native authoring, reload and Preview remain pending.",
+  "status": "All 166 photographic poses and the complete native continuation are authored and independently read back in Framer; actual paint, Preview and editor reload remain unverified.",
   "credit": "Julián Leiss / Ajedrez Film Poem; source archival photograph authors remain unverified.",
   "source": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/../source-1080x1920.mp4",
@@ -29216,15 +29216,15 @@
     "Native original poem wording is independently authored; complete original-poem/whole-film typographic parity is not claimed.",
     "Catalog progress numerals and abbreviated current-object footer IDs are observed but unreadable; no invented accession IDs or generic substitute footer.",
     "Source640 guide bands and sculpture/figure poem occlusions remain explicitly unseen source photo pixels; recovered clean643 material is reused for642/643.",
-    "Native font identity/AA/fractional guides, source scan jitter and representative field grain remain fitted.",
+    "Courier Prime normal 400/700 assignment is verified in native rich text; source font/AA, fractional guides, scan jitter and representative field grain remain fitted.",
     "Selected source hard-cut photo poses restore observed temporal states; no invented camera interpolation, extra clock, video decoder, WebGL context or whole-hero bitmap.",
-    "Actual Framer source registration,238 native additions/2existing caption updates, saved reload and Preview validation remain separate pending delivery steps."
+    "Source registration and all 238 native additions/two existing caption updates are independently read back. Actual paint, Preview and editor reload remain separate pending verification."
   ],
   "validation": {
     "strictSemanticPassed": true,
     "parentInverseByteExact": true,
-    "framerSourceRegistered": false,
-    "nativeCaptionsCreated": false,
+    "framerSourceRegistered": true,
+    "nativeCaptionsCreated": true,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
     "sourceFidelityApproved": false,
@@ -29370,7 +29370,8 @@
       "sourceObservedIntent": 700,
       "officialCapability": "fonts.get(Courier Prime) advertises400/700 normal/italic; NativeStyle documents numeric fontWeight.",
       "delivery": "After RootGO, writer may set700 once on the first NEW planned700 RTE and verify genuine Native/Block/Run variant references. If only a scalar changes, retain actual400 and record the weight fit. No old template/private font identifiers change."
-    }
+    },
+    "actualNativeBindingsVerified": true
   },
   "legacyCacheV2Regression": {
     "sourceSHA256": "a2e7a9b7a6d4347877799f002ae93ae426f3bec6fbef9830481057ea1008bac7",
@@ -29425,5 +29426,76 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/framer-exact-svg30-slot29-v1/final-30-exact-svg-bindings.json",
     "bytes": 67876,
     "sha256": "a61763d046477fe7a61ad7a5cbf6db5d29f5d7edad6efba17b5101ec4d1cac86"
+  },
+  "actualAuthoring": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/full-authoring511-onward/final-actual-authoring-receipt.json",
+      "bytes": 13244,
+      "sha256": "d7471dbc520711ef824864dd1471319ea2a623cf48dd3ce97689d659f18895df"
+    },
+    "pageID": "ANWBjWXdj",
+    "ownerSHA256": "36ad51d1f5c318aa6bf5dd9c7e2dbc41c7a8bee1f5920aa54b79ed203d513671",
+    "sourceDiagnostics": 0,
+    "publicOverrides": 46,
+    "native": {
+      "families": 119,
+      "actualNewCopies": 238,
+      "actualNewRTEs": 128,
+      "actualNewFrameCopies": 110,
+      "onlyExistingCaptionUpdates": [
+        "IfPnhpS6e",
+        "wh9JF07sVIfPnhpS6e"
+      ],
+      "old37GroupsIDsAndControlsPreserved": true,
+      "mutations": {
+        "pilot513": 8,
+        "batch515": 454,
+        "batch516": 667,
+        "batch517": 194,
+        "totalACKs": 1323,
+        "unknownACKs": 0,
+        "replayedMutations": 0
+      },
+      "newOverrideBindings": 0,
+      "allInheritedTemplateHOCsCleared": true
+    },
+    "fonts": {
+      "family": "Courier Prime",
+      "style": "normal",
+      "variableAxesAbsent": true,
+      "newNativeBlockRunTuples": 1020,
+      "weight400Tuples": 822,
+      "weight700Tuples": 198,
+      "pilot": {
+        "primary": "d897O_yvW",
+        "phone": "wh9JF07sVd897O_yvW",
+        "documentedSDK": "NativeStyle.fontWeight:number; api.fonts.get CourierPrime weights400/700/stylesnormal/italic",
+        "fontWeightSetterWrites": 6,
+        "genuineAll6ReadBackAt514": true,
+        "other700RowsCloneVerifiedPilotVariant": true,
+        "oldTemplateWrites": 0,
+        "privateOpaqueHandlesNotExposedBySDK": true
+      },
+      "fontNameStyleAxesSetterWrites": 0,
+      "templateAliases": {
+        "RnEBqeKmo": "LbhtJowoQ",
+        "BjjJm78Vq": "LbhtJowoQ",
+        "pUczNv8ctRnEBqeKmo": "wh9JF07sVLbhtJowoQ",
+        "M_78bYwVoBjjJm78Vq": "wh9JF07sVLbhtJowoQ"
+      },
+      "noTransientDefinitionEdits": true
+    },
+    "defaultGetterOmissions": {
+      "total": 262,
+      "positionAbsoluteOmitted": 238,
+      "paragraphSpacingZeroOmitted": 24,
+      "representationOnly": true,
+      "repeatedSetterTrials": 0
+    },
+    "wholeOldOwnerInverseExact": true,
+    "allOutsidePreserved": true,
+    "actualPaintVerified": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

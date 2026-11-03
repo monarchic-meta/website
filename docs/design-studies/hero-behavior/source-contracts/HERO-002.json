@@ -1457,10 +1457,10 @@
   ],
   "sourceTextPolicy": "AJEDREZ/title and brief functional labels retained. Long poem/manuscript/caption material must be a visibly declared substitute or licensed/public-domain source; do not imply exact original words.",
   "remainingFidelityGaps": [
-    "The48–52s interval is inspected at24fps; frames881–929 now play as the full portrait photo. Other earlier subsecond cuts, exact late scattered-word entry, continuous photography outside that interval and full per-word trajectories remain incomplete.",
+    "Selected photographic intervals now use 166 inspected source poses and the genuine 49-frame moving aperture. Closing word paths, nonphotographic typography, scan jitter and thin native guides remain sampled or fitted; actual Framer playback is not yet verified.",
     "The selected film supplies genuine held photographic crops; underlying photographic authors and reuse licenses remain unverified.",
     "Source audio/voiceover is present but unlistened; do not synthesize it or claim a faithful soundtrack.",
-    "If only these crops and native state families are implemented, report the precise still-held photographic portions and approximate cuts instead of claiming exact full movie reproduction."
+    "The native sequence uses independently authored poem wording and declares unresolved source pixels, tiny footer IDs, chart details and omitted audio. This is not a claim of exact complete-film reproduction."
   ],
   "sourceFidelityRefinement": {
     "status": "NATIVE_EXPORT_AND_RESPONSIVE_PLAYBACK_PASS_GRID_REFINEMENT_PENDING",
@@ -1554,7 +1554,8 @@
         "wrapper": "JSN6WLDXE"
       }
     ],
-    "compilation": "Nine native scene components reduced the generated page enough to update after a fresh editor reload. Their genuine Phone variants retain localized editable parts. The ed00776c controller has actual responsive playback/fit recovery and a complete37-scene Desktop Replay. Current1f1f465b preserves those44 exported bodies and adds one saved photographic-motion HOC; its actual native canvas/Preview check is pending. Earlier size rejection and cached/empty Preview observations remain historical evidence; a quiet console alone is not a compilation check."
+    "compilation": "The current b700 source compiles in Framer with zero diagnostics and all 46 existing public rows unchanged. Original native component definitions and all 37 scene groups are preserved; see completePhotographicContinuation for current authoring evidence. Earlier controller/reload observations remain historical.",
+    "priorCompilationRecord": "Nine native scene components reduced the generated page enough to update after a fresh editor reload. Their genuine Phone variants retain localized editable parts. The ed00776c controller has actual responsive playback/fit recovery and a complete37-scene Desktop Replay. Current1f1f465b preserves those44 exported bodies and adds one saved photographic-motion HOC; its actual native canvas/Preview check is pending. Earlier size rejection and cached/empty Preview observations remain historical evidence; a quiet console alone is not a compilation check."
   },
   "savedPreviewVerification": {
     "status": "PRIOR37_PHASE_ACTUAL_PASS_NEW_APERTURE_AND_WORD_SEQUENCE_MCP_APPLIED_PREVIEW_PENDING",
@@ -1851,7 +1852,7 @@
     ]
   },
   "currentOriginalPhotographicCorrection": {
-    "status": "SOURCE_ASSETS_AND_MCP_MODEL_SAVED_ACTUAL_FRAMER_PLAYBACK_AND_RELOAD_PENDING",
+    "status": "HISTORICAL_OVERHEAD_APERTURE_AUTHORING_RECORD",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/historical-source-pins/778dd2065d259db9a375963cf79903c5306ea86ad427baf87a395f4e704701d0-SourceAjedrezSequence.tsx",
       "bytes": 57829,
@@ -2002,6 +2003,72 @@
       "CRF28 reduces transfer to775300 bytes at960×1704; some halftone/edge softness versus the retained1080×1920 source is declared.",
       "The native poster is a genuine full frame; the downloaded photograph is material for the source film, not a flattened replacement of native typography.",
       "Other photo passages and representative closing-word poses keep their declared simplifications. Earlier actual Framer proofs establish only their captured source revision."
-    ]
+    ],
+    "historicalOnly": true
+  },
+  "completePhotographicContinuation": {
+    "status": "SOURCE_AND_NATIVE_AUTHORED_INDEPENDENTLY_READ_BACK_PAINT_PREVIEW_RELOAD_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 198707,
+      "sha256": "b7002d261f463ffb3accd2067991288226ed576af36801941ec34f133ff9cf23"
+    },
+    "pageID": "ANWBjWXdj",
+    "url": "https://framer.com/projects/monarchic-io--V4oBgJHPFpR16fflzUp7-1YmJt?node=ANWBjWXdj",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/full-authoring511-onward/final-actual-authoring-receipt.json",
+      "bytes": 13244,
+      "sha256": "d7471dbc520711ef824864dd1471319ea2a623cf48dd3ce97689d659f18895df"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-photographic-composition-provenance.json",
+      "bytes": 580799,
+      "sha256": "25af07b9650746e5f425c7d0bd4fce497eab60c1e10e508739894378adacf73c"
+    },
+    "localValidation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/remaining-photographic-motion/implementation/full-final-b7002d26/validation-receipt.json",
+      "bytes": 5001,
+      "sha256": "59a24648a105a21ec8a1fb94da40e6d18d5d5d6965096e29ecbdbf217ab3a5d6"
+    },
+    "strictChecks": 9,
+    "genuineControllerChecks": 70,
+    "sourcePoses": 166,
+    "photographicTiles": 234,
+    "exactPublicAtlases": 30,
+    "nativeFamilies": 119,
+    "newNativeCopies": 238,
+    "newRichTextCopies": 128,
+    "existingCaptionUpdates": [
+      "IfPnhpS6e",
+      "wh9JF07sVIfPnhpS6e"
+    ],
+    "publicOverrides": 46,
+    "old37GroupsAndControlsPreserved": true,
+    "sourceDiagnostics": 0,
+    "fonts": {
+      "family": "Courier Prime",
+      "style": "normal",
+      "nativeBlockRunTuples": 1020,
+      "weight400Tuples": 822,
+      "weight700Tuples": 198,
+      "oldTemplatesUnchanged": true,
+      "componentDefinitionsUnchanged": true
+    },
+    "renderer": "The existing Film Context clock drives source hard cuts, native catalog rows and guide/annotation states. A 2D cache holds at most six atlases, alongside the existing photographic surface and single moving-aperture decoder; no extra animation clock, video decoder or WebGL.",
+    "sourceDifferences": [
+      "Native original poem wording is independently authored; complete original-poem/whole-film typographic parity is not claimed.",
+      "Catalog progress numerals and abbreviated current-object footer IDs are observed but unreadable; no invented accession IDs or generic substitute footer.",
+      "Source640 guide bands and sculpture/figure poem occlusions remain explicitly unseen source photo pixels; recovered clean643 material is reused for642/643.",
+      "Courier Prime normal 400/700 assignment is verified in native rich text; source font/AA, fractional guides, scan jitter and representative field grain remain fitted.",
+      "Selected source hard-cut photo poses restore observed temporal states; no invented camera interpolation, extra clock, video decoder, WebGL context or whole-hero bitmap.",
+      "Source registration and all 238 native additions/two existing caption updates are independently read back. Actual paint, Preview and editor reload remain separate pending verification."
+    ],
+    "ownerSHA256": "36ad51d1f5c318aa6bf5dd9c7e2dbc41c7a8bee1f5920aa54b79ed203d513671",
+    "oldOwnerInverseSHA256": "35a56c14e82e9e5463ee593fbe5d61f71be6e29c708132980659ee88fbdc8e5a",
+    "allOutsidePreserved": true,
+    "actualPaintVerified": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "sourceFidelityApproved": false
   }
 }
