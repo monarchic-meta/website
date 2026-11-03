@@ -1,0 +1,105 @@
+{
+  "id": "HERO-013",
+  "classification": "Source inspiration / credited recreation",
+  "sourceURL": "https://format.obys.agency/",
+  "credit": "FORMAT — Obys and DES Special Project",
+  "implementation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+    "bytes": 119864,
+    "sha256": "0f32c3821d3cf987ef9b16bd183dc61779804f2310cecb1d2c265a5fc2f6d507"
+  },
+  "publicOverrides": 129,
+  "retainedPublicOverrides": 124,
+  "parentSHA256": "2fbf7918d17498985cf618badd9951786be2235738aca35f337ce316ac6f6221",
+  "parentExactInverse": true,
+  "newOverrides": [
+    "withFormatMobileSplash",
+    "withFormatMobileLogo",
+    "withFormatMobileDial",
+    "withFormatMobileCredit",
+    "withFormatMobileMessage"
+  ],
+  "sourceFacts": {
+    "trigger": "width<=767px OR pointer:coarse",
+    "landscapeException": "width>height AND height<=620px hides the dial and reflows logo/footer",
+    "baseWidth": 393,
+    "logo": [
+      19,
+      19.707,
+      354,
+      54.239
+    ],
+    "dial": "min(353u, viewportHeight-190u), centered; source697-unit native dial",
+    "creditBottom": 55,
+    "messageBottom": 19,
+    "message": "Sorry, this experience is designed\nfor desktop devices.",
+    "bodyScroll": "Retained observed scrolling behind fixed overlay; no global body lock inferred from CSS."
+  },
+  "observedPhoneContract": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/../phone-contract-observed.json",
+    "bytes": 327,
+    "sha256": "560aca82c6e285327ad1054e47c4868b7745ca678b5ed5889f3bc04505a7a1af"
+  },
+  "sourceAndNativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/source-and-native-plan-v1.json",
+    "bytes": 3414,
+    "sha256": "9da6b54177440a249ee5527a301b2591985a0ecd9a71cf2c4f030b8d0c685e8d"
+  },
+  "review": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/root-reviewed-host-fix-v2/review.json",
+    "bytes": 2411,
+    "sha256": "2d26adc108059fbe6f94fa7aa45a869badd95893f7121aa549aa35ec6466ed4f"
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/writer-native43-plan-v1.json",
+    "bytes": 152214,
+    "sha256": "a3c08caaa88a511f206ec5f88cee4137a9b13615286874036f671e6ed4c99753"
+  },
+  "nativeScope": {
+    "newFamilies": 43,
+    "actualCopies": 129,
+    "frames": 23,
+    "richText": 20,
+    "oldNativeIDsPreserved": true,
+    "genuineObysFontTemplates": true
+  },
+  "validation": {
+    "output": "/nix/store/4sdbp51ajg4c5d1cvl1mqwrp0zbj1zyx-monarchic-website-source-format-mobile-0.0.1",
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/root-reviewed-host-fix-v2/nix-evidence/result.json",
+      "bytes": 5141,
+      "sha256": "11b5407844c102ebe86ca215cf36494f3ee36a44e6789a00c2cab01723ff7bfc"
+    },
+    "strictGroups": 10,
+    "browserChecks": 21,
+    "maxJobs": 1,
+    "cores": 2,
+    "nice": 10
+  },
+  "resources": {
+    "newRAF": 0,
+    "newWebGL": 0,
+    "newCanvas": 0,
+    "newMedia": 0,
+    "timer": "Reuses the existing shared250ms Berlin clock only for a visible Preview dial; hidden/reduced/frozen/unmount release its subscription."
+  },
+  "limits": [
+    "Placeholder native-like logo/Arial fixture validates logic/positions/lifecycle, not actualFramer typography/artwork.",
+    "Fine pointer768–1279 follows preserved authored story; unobserved source intermediary behavior is not inferred.",
+    "Genuine nativeclone/storedfont verification, actualpaint/Preview/editorreload remain separate."
+  ],
+  "sourceRegisteredInFramer": false,
+  "nativeApplied": false,
+  "actualPaintVerified": false,
+  "actualFramerPreviewVerified": false,
+  "afterEditorReload": false,
+  "priorSourceRegistration": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/mobile-splash/framer-authoring502-onward/source503-output.json",
+    "bytes": 1782,
+    "sha256": "7f43ccd416472dd2599f2e4560461b167f1d9df461659a5e90fd4bfb819a1b3f"
+  },
+  "hostReplacementFix": [
+    "New mobile-only IO observes actual current DOM host, disconnects old targets, ignores stale callbacks and releases all observers. Visible DIV→SECTION replacement retains one shared250ms timer.",
+    "Use React.CSSProperties for mobile style; strict stub now explicitly models translate/rotate/scale string|number. Clears the actualFramer503 narrow-DetailStyle typing cause without changing124prior source bodies."
+  ]
+}

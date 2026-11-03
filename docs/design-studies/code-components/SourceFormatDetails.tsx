@@ -676,3 +676,97 @@ export function withFormatPosterGlyph(Component: ComponentType<LayerProps>): Com
         return <Component {...props} ref={bind} data-format-poster-glyph-part="editable-native" />
     }) as NativeLayer
 }
+
+type FormatMobileView = { width: number; height: number; coarse: boolean; show: boolean; landscape: boolean; frozen: boolean }
+const FormatMobileContext = React.createContext<FormatMobileView>({ width: 393, height: 844, coarse: false, show: true, landscape: false, frozen: true })
+function formatMobileView(width: number, height: number, coarse: boolean, frozen: boolean): FormatMobileView {
+    return { width, height, coarse, show: width <= 767 || coarse, landscape: width > height && height <= 620, frozen }
+}
+function formatMobileNumber(value: unknown, fallback: number) { const number = typeof value === "number" ? value : parseFloat(String(value)); return Number.isFinite(number) && number > 0 ? number : fallback }
+function useFormatMobileVisibility(host: HTMLElement | null, frozen: boolean) {
+    const [seen, setSeen] = React.useState<{ host: HTMLElement | null; visible: boolean }>({ host: null, visible: false })
+    const [hidden, setHidden] = React.useState(false), [reduced, setReduced] = React.useState(false)
+    useOwnLayoutEffect(() => {
+        if (!host || frozen) return
+        let active = true
+        const query = window.matchMedia("(prefers-reduced-motion: reduce)"), motion = () => setReduced(query.matches), visibility = () => setHidden(document.hidden)
+        motion(); visibility()
+        const observer = new IntersectionObserver(([entry]) => { if (active) setSeen({ host, visible: entry.isIntersecting }) })
+        observer.observe(host); query.addEventListener("change", motion); document.addEventListener("visibilitychange", visibility)
+        return () => { active = false; observer.disconnect(); query.removeEventListener("change", motion); document.removeEventListener("visibilitychange", visibility) }
+    }, [host, frozen])
+    return !frozen && seen.host === host && seen.visible && !hidden && !reduced
+}
+/** Current source splash: width<=767 or coarse pointer. The retained story stays
+ * mounted behind the fixed surface; the source's landscape rule hides its dial. */
+export function withFormatMobileSplash(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), [view, setView] = React.useState(() => formatMobileView(
+            !frozen && typeof window !== "undefined" ? window.innerWidth : formatMobileNumber(props.style?.width, 393),
+            !frozen && typeof window !== "undefined" ? window.innerHeight : formatMobileNumber(props.style?.height, 844), false, frozen))
+        useOwnLayoutEffect(() => {
+            if (frozen) return
+            const query = window.matchMedia("(pointer: coarse)"), read = () => {
+                const next = formatMobileView(window.innerWidth, window.innerHeight, query.matches, false)
+                setView(old => old.width === next.width && old.height === next.height && old.coarse === next.coarse && old.frozen === next.frozen ? old : next)
+            }
+            read(); window.addEventListener("resize", read); query.addEventListener("change", read)
+            return () => { window.removeEventListener("resize", read); query.removeEventListener("change", read) }
+        }, [frozen])
+        const current = { ...view, frozen }, style: React.CSSProperties = frozen ? props.style ?? {} : {
+            ...props.style, position: "fixed", inset: 0, width: view.width, height: view.height, background: "#222222", overflow: "hidden", zIndex: 10000,
+            opacity: view.show ? 1 : 0, visibility: view.show ? "visible" : "hidden", pointerEvents: view.show ? "auto" : "none",
+        }
+        return <FormatMobileContext.Provider value={current}><Component {...props} ref={ref} data-format-mobile-splash="source" aria-hidden={!view.show} style={style} /><style>{FORMAT_MOBILE_STYLE}</style></FormatMobileContext.Provider>
+    }) as NativeLayer
+}
+type FormatMobileRole = "logo" | "dial" | "credit" | "message"
+function formatMobilePart(Component: NativeLayer, role: FormatMobileRole): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const view = React.useContext(FormatMobileContext), own = React.useRef<HTMLElement | null>(null), [host, setHost] = React.useState<HTMLElement | null>(null)
+        const defaults = role === "logo" ? [1400, 214.846538187] : role === "dial" ? [697, 697] : [355, role === "message" ? 24 : 12]
+        const [box, setBox] = React.useState(() => ({ width: formatMobileNumber(props.style?.width, defaults[0]), height: formatMobileNumber(props.style?.height, defaults[1]) }))
+        const [painted, setPainted] = React.useState(false)
+        const bind = React.useCallback((node: HTMLElement | null) => { own.current = node; setHost(old => old === node ? old : node); writeRef(ref, node) }, [ref])
+        useOwnLayoutEffect(() => {
+            if (!host) return
+            const read = () => { const css = getComputedStyle(host), next = { width: formatMobileNumber(css.width, defaults[0]), height: formatMobileNumber(css.height, defaults[1]) }; setBox(old => old.width === next.width && old.height === next.height ? old : next) }
+            read(); if (view.frozen) return
+            const observer = new ResizeObserver(read); observer.observe(host); return () => observer.disconnect()
+        }, [host, props.style?.width, props.style?.height, view.frozen])
+        useOwnLayoutEffect(() => {
+            if (!host || view.frozen || role !== "dial") return
+            const read = () => {
+                let shown = true
+                for (let node: HTMLElement | null = host; node; node = node.parentElement) { const css = getComputedStyle(node); if (css.display === "none" || css.visibility !== "visible" || Number(css.opacity) === 0) { shown = false; break } }
+                setPainted(old => old === shown ? old : shown)
+            }
+            const observer = new MutationObserver(read)
+            for (let node: HTMLElement | null = host; node; node = node.parentElement) observer.observe(node, { attributes: true, attributeFilter: ["style", "class"] })
+            read(); return () => observer.disconnect()
+        }, [host, view.frozen])
+        const u = view.width / 393, face = Math.max(0, Math.min(353 * u, view.height - 190 * u)), landscapeFont = Math.min(12 * u, .034 * view.height)
+        const live = useFormatMobileVisibility(host, view.frozen || !view.show || view.landscape || !painted || face <= 0 || role !== "dial")
+        const now = React.useSyncExternalStore(live ? subscribeClock : emptySubscribe, live ? getClock : serverClock, serverClock)
+        let style: React.CSSProperties = props.style ?? {}
+        if (!view.frozen) {
+            if (role === "logo") {
+                const width = view.landscape ? view.width - 40 : 354 * u, height = view.landscape ? width * 54.239 / 354 : 54.239 * u
+                style = { ...style, position: "absolute", left: view.landscape ? 20 : 19 * u, top: view.landscape ? 20 : 19.707 * u, transformOrigin: "0 0", transform: `scale(${width / box.width},${height / box.height})`, pointerEvents: "none" }
+            } else if (role === "dial") style = { ...style, position: "absolute", left: "50%", top: "50%", transformOrigin: "50% 50%", transform: `translate(-50%,-50%) scale(${face / box.width})`, opacity: view.landscape ? 0 : 1, visibility: view.landscape ? "hidden" : "visible", pointerEvents: "none" }
+            else {
+                const base = view.landscape ? landscapeFont / 12 : u, scale = base * 355 / box.width
+                style = { ...style, position: "absolute", left: (view.width - box.width * scale) / 2, top: "auto", bottom: role === "credit" ? view.landscape ? 20 + 3 * landscapeFont : 55 * u : view.landscape ? 20 : 19 * u, transformOrigin: "0 100%", transform: `scale(${scale})`, pointerEvents: role === "credit" ? "auto" : "none" }
+            }
+        }
+        const part = <Component {...props} ref={bind} data-format-mobile-part={role} data-format-mobile-clock-time={role === "dial" ? now : undefined} style={style} />
+        return role === "dial" ? <LargeDialContext.Provider value={{ angles: berlinAngles(now), unit: box.width / 697 }}>{part}</LargeDialContext.Provider> : part
+    }) as NativeLayer
+}
+export function withFormatMobileLogo(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatMobilePart(Component, "logo") }
+export function withFormatMobileDial(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatMobilePart(Component, "dial") }
+export function withFormatMobileCredit(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatMobilePart(Component, "credit") }
+export function withFormatMobileMessage(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatMobilePart(Component, "message") }
+const FORMAT_MOBILE_STYLE = `[data-format-mobile-part="credit"]{display:flex!important;align-items:center!important;justify-content:center!important;gap:0!important;white-space:pre!important}
+[data-format-mobile-part="credit"]>[data-framer-name]{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;width:max-content!important;height:auto!important;flex:0 0 auto!important;transform:none!important}
+[data-format-mobile-part="credit"] p,[data-format-mobile-part="credit"] span{white-space:pre!important}`
