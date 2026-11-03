@@ -64,8 +64,8 @@ Cantor8’s corrected opening, full eleven-link Phone menu and Foundation handof
 now pass 50 focused local checks with the actual existing instrument. The new
 module compiles through MCP631 with52overrides and no renderer or animation
 loop. The headline family is admitted on both layouts; the remaining native
-structure and fonts are in progress. Rolling text transitions remain a separate
-implementation gap.
+structure and fonts are in progress. The separate ten-label rolling module
+passes43 local checks and awaits its own Framer authoring.
 
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.

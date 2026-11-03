@@ -262,8 +262,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-provenance.json",
-      "bytes": 12117,
-      "sha256": "69515c8ab58cdea3070c4b39941cef442accf09eff6c82c290e7712488e06ad4"
+      "bytes": 12614,
+      "sha256": "3790d9c4abb50b0e1b1cb6e788c9f20f6a7ec243f8409e6788a3cbaa5b8290fc"
     },
     "pageID": "IhJNN_eMc",
     "classification": "Source inspiration / credited recreation",
@@ -285,7 +285,7 @@
       "afterEditorReload": false
     },
     "remainingImplementation": [
-      "Source rolling line-inner hover/reveal transitions (950 ms / 320 ms) are substantive follow-up work, not covered by this finite opening batch."
+      "Separate rolling module now passes43 local checks; actual source/bindings and public DOM admission remain pending its own receipt."
     ],
     "preservation": "The existing instrument and five native hover/backdrop HOCs remain byte-exact. No new renderer, media, clock, RAF or GPU context.",
     "actualSourceRegistration": {
@@ -306,6 +306,38 @@
       },
       "scope": "Only headline-family admission is closed: four Desktop and five Phone Native/Block/Run rows, natural normal400 defaults; optional axes remain absent. Other assignments, medium500 and native structure remain separate chapters.",
       "actualNativePaintVerified": false
+    }
+  },
+  "rollingTextRefinement": {
+    "status": "LOCAL_43_CHECKS_PASS_ACTUAL_AUTHORING_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorRollingText.tsx",
+      "bytes": 13298,
+      "sha256": "64879d4374f0e34d1aa78011e4e3b8d01dcf28c3d8a3681a478a56c372c6a0ba"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-rolling-text-provenance.json",
+      "bytes": 7908,
+      "sha256": "acdbc09836b7987355c7b2451ea5c03d7589e1d045e7b9b2e3a88adbb98d06e5"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/final-focused-receipt.json",
+      "bytes": 7870,
+      "sha256": "0df518df7122e59715e292a4b57be32db55961b242ce6ee6dea27b16d5863456"
+    },
+    "nativeRecipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/native-binding-recipe.json",
+      "bytes": 8655,
+      "sha256": "879e6d5e22b5eef7ad5c0fcc8fb2b6224c7d0f444f191105378c16c0c878040c"
+    },
+    "sourceSupported": "Initial wide/fine wrapping of ten opening labels. Source950ms vertical roll is separate from320ms sibling-opacity transition for seven header links.",
+    "preservation": "New four-HOC module composes unchanged opening910 and legacy five-HOC module. No new native frames, renderer, clock, RAF or timer; editable text and semantic links retained.",
+    "differences": "Reduced/static/editor motion follows project policy. Native public paragraph supplies source inner line; generated duplicate uses empty speech alternative where supported.",
+    "actualFramer": {
+      "sourceRegistered": false,
+      "nativeWritten": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }

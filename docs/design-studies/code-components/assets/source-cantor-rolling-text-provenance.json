@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-007",
+  "classification": "Source inspiration / close behavior recreation",
+  "sourceURL": "https://www.cantor8.io/",
+  "credit": "Source inspiration / Cantor8, website by Artemii Lebedev. Close behavior recreation, not an original Monarchic composition.",
+  "scope": "Only the ten selected opening labels and seven-link header opacity relation. Phone-menu/headings/body and24later-script targets remain untouched.",
+  "source": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorRollingText.tsx",
+    "bytes": 13298,
+    "sha256": "64879d4374f0e34d1aa78011e4e3b8d01dcf28c3d8a3681a478a56c372c6a0ba"
+  },
+  "test": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-cantor-rolling-text.mjs",
+    "bytes": 34400,
+    "sha256": "1ee94ff589b6272682f2a0498d284757bb8e1cb7c607ea1dde5fcf7c6bdd6111"
+  },
+  "sourcePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/source-supported-plan.json",
+    "bytes": 18577,
+    "sha256": "901d1eb6fe9ef383d502551803b18c596ccc2ce642c912e8a45451d8ff85cdb0"
+  },
+  "retainedSourceDOM": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/retained-target-inventory.json",
+    "bytes": 50095,
+    "sha256": "306513ed2969f1efbfce76bb0305f0e36c7e1344ffc478b3a8f493deecd24dfd"
+  },
+  "retainedWrappingScript": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/actual-wrapping-script.txt",
+    "bytes": 1232,
+    "sha256": "4067f2707b5cdc1c582e787aa270f62f04064a484a9be1b83134323cd3c3b411"
+  },
+  "retainedSourceCSS": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/actual-rolling-and-header-css.txt",
+    "bytes": 3675,
+    "sha256": "5b6efe00db7f536a135f0c343fe1c763dcccd71fe906cfa2a6d872ca1f424234"
+  },
+  "unchangedOpening": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
+    "bytes": 33991,
+    "sha256": "910767a75f23ea0398328245d86ec6cafc056afeb30770a84ae0ad48d8ede46a"
+  },
+  "unchangedLegacyFive": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorNativeBehaviors.tsx",
+    "bytes": 7703,
+    "sha256": "3d984648e5cafe49e1f7cc525afd7f8f54dd3135a10d21616d62de8504545416"
+  },
+  "bindingRecipe": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/native-binding-recipe.json",
+    "bytes": 8655,
+    "sha256": "879e6d5e22b5eef7ad5c0fcc8fb2b6224c7d0f444f191105378c16c0c878040c"
+  },
+  "sourceFacts": {
+    "rollingDurationMs": 950,
+    "rollingEasing": "cubic-bezier(0.16,1,0.3,1)",
+    "headerOpacityDurationMs": 320,
+    "headerOpacityEasing": "cubic-bezier(0.22,1,0.36,1)",
+    "siblingOpacity": 0.65,
+    "initialFineMedia": "(min-width: 992px) and (hover: hover) and (pointer: fine)",
+    "openingLabels": 10,
+    "headerParticipants": 7,
+    "sourceDesktopWrapped": 34,
+    "sourcePhoneWrapped": 0
+  },
+  "implementation": {
+    "newFrames": 0,
+    "newRenderers": 0,
+    "newRAF": 0,
+    "newTimers": 0,
+    "publicHOCs": 4,
+    "logicalBindingFamilies": 11,
+    "actualNativeContentsModified": false,
+    "localImport": "./SourceCantorOpening.tsx",
+    "editableText": "Existing Native/Block/Run records and real DOM text remain intact; only scoped DOMattributes/CSS paint are temporarily owned.",
+    "accessibleCopy": "CSS content attr(...) / emptystring suppresses alternate speech where supported; otherwise preserve plain text and record admission failure."
+  },
+  "intentionalDifferences": [
+    "Reducedmotion/editor/staticexport:retain rest text and disable rolling/dimming transitions under projectmotionpolicy; sourcecustomrollingCSS does not explicitly do this.",
+    "NativepublicDOMparagraph supplies the inner movingblock rather than destructively wrappingtextContent as originalWebflowscript did. Geometry/state/timings remain sourceCSS-derived."
+  ],
+  "validation": {
+    "status": "PASS_43_STRICT_SSR_REAL_REACT_CHROMIUM_NATIVE_LIKE_CHECKS",
+    "command": "MONARCHIC_CANTOR_ROLLING_EVIDENCE_DIR=/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/focused-hidden-body MONARCHIC_CANTOR_SOURCE_FONT_DIR=<retainedverifiedsourcefontdir> nice -n10 lockedNode22 scripts/check-source-cantor-rolling-text.mjs",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/focused-hidden-body/result.json",
+      "bytes": 46706,
+      "sha256": "adda6cf86db527d2a3f5683b0a0171ae98b9fbe97d6797d63c3e77aca2520e8e"
+    },
+    "checks": 43,
+    "sourceExact": true,
+    "testExact": true,
+    "node": "22.23.4",
+    "chromium": "147.0.7727.116",
+    "contexts": 1,
+    "browserClosed": true,
+    "actualFramerWrites": 0,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "nixEvaluation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/nix-target-evaluation-receipt.json",
+      "bytes": 588,
+      "sha256": "1d4c81c1f95cc27b35e1f70c1242703cba5f2015e333333ecc3cf95fecd41671"
+    }
+  },
+  "limitations": [
+    "ActualFramer forwardedhost/semanticanchor/innerparagraph paint after the ongoing72familyauthoring.",
+    "Exact keyboard:focus-visible effect on the original at correspondingstates and actual duplicateaccessible-name handling.",
+    "Actual original intermediate transition/reversal pixelstates; CSS timing is directsource-supported, not fresh measuredanimation.",
+    "Original behavior afterinitialPhone→wide navigation ifWebflow reinvokes initializer; noresize listener exists in thiscustomscript."
+  ],
+  "finalFocusedReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/final-focused-receipt.json",
+    "bytes": 7870,
+    "sha256": "0df518df7122e59715e292a4b57be32db55961b242ce6ee6dea27b16d5863456"
+  },
+  "historicalFailures": [
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/focused-first/pre-browser-process-failure.json",
+      "bytes": 1633,
+      "sha256": "49cf99db5120707aa70b19b2cffad31ce0954aa19cd7ccaa67e5d5c758651aed"
+    },
+    {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/focused-locked-sharp/failure.json",
+      "bytes": 36154,
+      "sha256": "3cd63c8da647ffaac599f94c54dc4ea63fcf6c28169ed6dd4b97a137aa34189e"
+    }
+  ],
+  "actualAuthored": false,
+  "actualPreviewVerified": false,
+  "afterEditorReload": false
+}

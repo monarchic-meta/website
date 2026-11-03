@@ -51,10 +51,20 @@ The [provenance](assets/source-cantor-opening-provenance.json) separates its
 50 passing local checks from pending actual Framer authoring, paint and reload.
 The fixture uses genuine source fonts as fixed external comparison inputs;
 they are not copied into the repository or runtime. Native font admission has
-its own bounded pilot. Rolling line hover/reveal remains follow-up work.
+its own bounded pilot. Rolling line hover/reveal has a separate module below.
 
 ```sh
 nix build .#checks.x86_64-linux.source-cantor-opening --max-jobs 1 --cores 2
+```
+
+[SourceCantorRollingText.tsx](SourceCantorRollingText.tsx) adds the original
+ten-label950ms roll and seven-link320ms opacity relation. Its43 focused checks
+cover actual moving pixels, focus, edited text, frozen rendering and cleanup.
+The [rolling provenance](assets/source-cantor-rolling-text-provenance.json)
+keeps actual Framer admission, source-state comparison and reload distinct.
+
+```sh
+nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
 ## FORMAT introductory clock
