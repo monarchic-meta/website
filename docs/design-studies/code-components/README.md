@@ -48,7 +48,8 @@ no renderer, timer or animation loop is added. The source-led work remains
 credited in Source inspiration.
 
 The [provenance](assets/source-cantor-opening-provenance.json) separates its
-50 passing local checks from pending actual Framer authoring, paint and reload.
+50 passing local checks and completed native model authoring through MCP664
+from pending actual paint, Preview and editor reload.
 The fixture uses genuine source fonts as fixed external comparison inputs;
 they are not copied into the repository or runtime. Native font admission has
 its own bounded pilot. Rolling line hover/reveal has a separate module below.

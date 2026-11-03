@@ -254,7 +254,7 @@
     ]
   },
   "openingFoundationMenuRefinement": {
-    "status": "SOURCE_REGISTERED_NATIVE_AUTHORING_IN_PROGRESS",
+    "status": "MCP_SOURCE_AND_NATIVE_APPLIED_THROUGH664_ACTUAL_PREVIEW_PENDING",
     "source": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
       "bytes": 33991,
@@ -262,8 +262,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-provenance.json",
-      "bytes": 12614,
-      "sha256": "3790d9c4abb50b0e1b1cb6e788c9f20f6a7ec243f8409e6788a3cbaa5b8290fc"
+      "bytes": 14283,
+      "sha256": "e4470afd469c9c3306e3391df1f665cc7f02f22d715af4a12165f040023abcca"
     },
     "pageID": "IhJNN_eMc",
     "classification": "Source inspiration / credited recreation",
@@ -280,7 +280,7 @@
       "PhoneTouch": true,
       "genuineComparisonFontsOutsideRuntime": true,
       "sourceRegistered": true,
-      "nativeWritten": false,
+      "nativeWritten": true,
       "actualPreviewVerified": false,
       "afterEditorReload": false
     },
@@ -306,6 +306,34 @@
       },
       "scope": "Only headline-family admission is closed: four Desktop and five Phone Native/Block/Run rows, natural normal400 defaults; optional axes remain absent. Other assignments, medium500 and native structure remain separate chapters.",
       "actualNativePaintVerified": false
+    },
+    "actualNativeAuthoring": {
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/final-actual-h7-authoring-receipt664.json",
+        "bytes": 6719,
+        "sha256": "d5583abba20ebbbf1ae57a3a3da12441b3a034135449fc178f0edf76e5823d9b"
+      },
+      "currentMap": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/immutable-final-current-native-map664.json",
+        "bytes": 31563,
+        "sha256": "c35dfb848364c037bb7335b90412e28393a3b1a88d785894ed7c66fd5e0eb1a3"
+      },
+      "ownerSHA256": "b611fdab46187d4352bbf6e30159e3b37fe79bb6abd54c61c2194d6a0f4f70bb",
+      "wholeOriginalOwnerInverseSHA256": "1ec2b814adfcc9a95b8c3bbea43aaa9dd5dd1035a1cbb4c158eff866ea72e799",
+      "newFamilies": 83,
+      "physicalCopies": 166,
+      "frameCopies": 104,
+      "richTextCopies": 58,
+      "svgCopies": 4,
+      "activeGenuineFontTuples": 101,
+      "newGenuineFontTuples": 174,
+      "sharedBindings": 166,
+      "legacyBindingsRetained": 18,
+      "semanticAnchorMappings": 18,
+      "oldHiddenOriginals": 22,
+      "other91PageOwnersAnd16DefinitionsExact": true,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
     }
   },
   "rollingTextRefinement": {

@@ -62,9 +62,9 @@ Preview checks; all eighteen references are not approved for close fidelity.
 
 Cantor8’s corrected opening, full eleven-link Phone menu and Foundation handoff
 now pass 50 focused local checks with the actual existing instrument. The new
-module compiles through MCP631 with52overrides and no renderer or animation
-loop. The headline family is admitted on both layouts; the remaining native
-structure and fonts are in progress. The separate ten-label rolling module
+module and83 native families/166 copies are authored through MCP664, with
+101 active genuine font tuples,166 new role bindings and18 retained hover
+bindings. The complete original-owner inverse and91 other page owners pass. The separate ten-label rolling module
 passes43 local checks and awaits its own Framer authoring.
 
 These are authoring/readback results. Actual current paint, complete Preview

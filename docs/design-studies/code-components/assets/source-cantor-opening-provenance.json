@@ -149,11 +149,12 @@
     },
     "framer": {
       "sourceRegistered": true,
-      "nativeWritten": false,
+      "nativeWritten": true,
       "actualPreviewVerified": false,
       "afterEditorReload": false,
       "moduleID": "codeFile/j9eNsgo",
-      "compilerDiagnostics": 0
+      "compilerDiagnostics": 0,
+      "modelAndOutsideClosureThrough": 664
     }
   },
   "authoringBoundary": {
@@ -166,7 +167,11 @@
       "oWugwaWIu",
       "jLr5hP9Qm"
     ],
-    "sharedOverridePolicy": "Primary-only logical family operations; resolve actual D/P copies; context binding last; fresh priors for the three extra descendant targets."
+    "sharedOverridePolicy": "Primary-only logical family operations; resolve actual D/P copies; context binding last; fresh priors for the three extra descendant targets.",
+    "plannedLayoutFamilies": 72,
+    "actualFamiliesWithGenuine500Fallback": 83,
+    "actualPhysicalCopies": 166,
+    "genuine500FallbackFamilies": 11
   },
   "observedVsFits": {
     "observed": [
@@ -217,7 +222,7 @@
     "noPointerParityClaim": true
   },
   "limits": [
-    "Actual Framer font setter applicability, SVG-child path admission, input painting and reload persistence are not established by the local fixture.",
+    "Native structure, genuine font tuples, frame-hosted SVG bodies and all role/semantic-link mappings are positively read back through664. Actual DOM paint, input behavior and persistence after an editor reload remain unverified.",
     "Original random seeds, label ordering/curves, menu interpolation and transient scroll scale remain declared fits.",
     "Earlier accepted wide-header geometry remains a source-supported fit; the rolling-text behavior is a separate pending implementation.",
     "The external original comparison fonts are fixed test/reference inputs only; runtime uses genuine project font tuples."
@@ -251,5 +256,33 @@
       "sha256": "acdbc09836b7987355c7b2451ea5c03d7589e1d045e7b9b2e3a88adbb98d06e5"
     },
     "scope": "Separate four-HOC/ten-label implementation,43 local checks pass; source/bindings/actual paint remain pending. The earlier50-check opening proof did not include it."
+  },
+  "actualNativeAuthoring": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/final-actual-h7-authoring-receipt664.json",
+      "bytes": 6719,
+      "sha256": "d5583abba20ebbbf1ae57a3a3da12441b3a034135449fc178f0edf76e5823d9b"
+    },
+    "currentMap": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/immutable-final-current-native-map664.json",
+      "bytes": 31563,
+      "sha256": "c35dfb848364c037bb7335b90412e28393a3b1a88d785894ed7c66fd5e0eb1a3"
+    },
+    "ownerSHA256": "b611fdab46187d4352bbf6e30159e3b37fe79bb6abd54c61c2194d6a0f4f70bb",
+    "wholeOriginalOwnerInverseSHA256": "1ec2b814adfcc9a95b8c3bbea43aaa9dd5dd1035a1cbb4c158eff866ea72e799",
+    "newFamilies": 83,
+    "physicalCopies": 166,
+    "frameCopies": 104,
+    "richTextCopies": 58,
+    "svgCopies": 4,
+    "activeGenuineFontTuples": 101,
+    "newGenuineFontTuples": 174,
+    "sharedBindings": 166,
+    "legacyBindingsRetained": 18,
+    "semanticAnchorMappings": 18,
+    "oldHiddenOriginals": 22,
+    "other91PageOwnersAnd16DefinitionsExact": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
