@@ -99,7 +99,7 @@
   },
   "quadraticTrailRefinement": {
     "date": "2026-11-03",
-    "status": "FOCUSED_NIX_PASSED_ACTUAL_SOURCE_AUTHORING_PENDING",
+    "status": "SOURCE_COMPILE_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO018/quadratic-trail-v1/SourcePuenteBehaviors.tsx",
       "bytes": 22547,
@@ -117,8 +117,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-puente-behaviors-provenance.json",
-      "bytes": 4430,
-      "sha256": "11f4c329f04506f0ab13ed5a907891c3f9223d231b914d2da636edd4e8c2a6c7"
+      "bytes": 4819,
+      "sha256": "29a1b6f3d19c767385680d91d08cc3825bc238ff4b0b5d200edaa47894910627"
     },
     "publicOverrides": 13,
     "localChecks": {
@@ -130,10 +130,15 @@
     "remaining": [
       "Compare corresponding original-source moving path and curtain/gate/reverse states.",
       "The full-viewport white difference cursor outside tiles is still omitted.",
-      "Actual Framer source compilation, native painting, Preview and editor reload."
+      "Actual native painting, Preview interaction and editor reload. Source now compiles with13actualoverrides and unchanged native owner."
     ],
     "nativeWrites": 0,
     "actualFramerPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H18-H13-after-H15/H18-final-actual-source-receipt.json",
+      "bytes": 2107,
+      "sha256": "f70b5c6cdbac61857daff9a735895fe559fc860410b830cbf7eef4d8aff609ed"
+    }
   }
 }

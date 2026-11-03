@@ -305,5 +305,61 @@
       "bytes": 647536,
       "sha256": "ef38316833ef4c9b1807cd1ff88977a2dd3d9b287aa881cc39d4c34819296294"
     }
+  },
+  "currentTomorrowPhoneDetail": {
+    "date": "2026-11-03",
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_ACTUAL_PAINT_PREVIEW_AND_RELOAD_PENDING",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-detail-provenance.json",
+      "bytes": 12461,
+      "sha256": "3280f966472477782b40b4841354b2eed21c17bbfc22659328b543c22eb7cd5f"
+    },
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation/SourceMechaTomorrowDetail.tsx",
+      "bytes": 15281,
+      "sha256": "fccf92d790ae5ecb5aee489fff9c7cf63ce1b5a0fe4f01fc4494829b1f57ce6b"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation-receipt.json",
+      "bytes": 2442,
+      "sha256": "0a8d0da12e86f7cb7d20be5174292f656dad1b36975386cac6dac94ee24ebc66"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/final-actual-authoring-receipt.json",
+      "bytes": 7532,
+      "sha256": "ffffad893efe5ef503b77356ed71225b5301e40f570b29a2b9f4c952f66710b8"
+    },
+    "pageID": "nwAhAlY6o",
+    "sourceCredit": "MECHA / Widelab / Grzegorz Leśniewicz",
+    "native": {
+      "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_ACTUAL_PAINT_PREVIEW_AND_RELOAD_PENDING",
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/final-actual-authoring-receipt.json",
+        "bytes": 7532,
+        "sha256": "ffffad893efe5ef503b77356ed71225b5301e40f570b29a2b9f4c952f66710b8"
+      },
+      "actualNodeMap": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/known-all35-map.json",
+        "bytes": 2981,
+        "sha256": "ac17c1737c55d8e601ddf01f9ec9b8b388442a917b8a13a11427475a992ea3c4"
+      },
+      "logicalFamilies": 35,
+      "physicalCopies": 70,
+      "genuineFontTuples": 78,
+      "physicalVideoCopies": 6,
+      "sharedBindings": 22,
+      "preservation": "Old owner inverseCB81 exact;91 otherowners/16defs/58sourcebodies/237code/schema preserved with explicit571/574read boundary.",
+      "nativeVideos": "All6newcopies serializedPlayingfalse/Controlstrue; manualHOC shared D/P. Actualnativehost/ref/Playingforwarding not verified.",
+      "sourceFits": [
+        "Inherited Inter/Georgia substitute source NeueHaas/Flecha M.",
+        "Body independently composed; source factual metrics retained.",
+        "One genuine232px PNGupload is CDN optimized: meanRGBA absoluteDelta0.1635/255,max12. No pixel-exact claim."
+      ],
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "actualCompilerDiagnostics": 0,
+    "publicOverrides": 7,
+    "scope": "Tomorrow Recycling Phone MORE sheet:35editablefamilies across70D/Pparts,12genuineRTEfamilies,7separate media,2746px content with independent scroll and Close. Sharedvariantroles use tested Desktop guard. Contactmodal/otherprojectdetails and actualFrameranimation/media/reload remainopen."
   }
 }

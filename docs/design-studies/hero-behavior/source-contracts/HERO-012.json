@@ -109,7 +109,7 @@
         "sha256": "ae48a40a87b885e8c55376c94320fae31d91568253cfdde91a5ea265994f36a1"
       },
       "source": {
-        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMezmoTerminal.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO012/terminal-command-audit-v1/previous-source.tsx",
         "bytes": 33814,
         "sha256": "8a3a2fcfa3beae9910a66c4dd2526cdd0130883cc48d7f79f578103512641e9f"
       },
@@ -135,7 +135,8 @@
       "nativeWrites": 0,
       "sourceDataExecuted": false,
       "actualFramerPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "sourceScope": "Frozen8a3configuration source delivered through551; command/history work is tracked separately."
     },
     "headerNavigationSourceAudit": {
       "date": "2026-11-03",

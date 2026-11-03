@@ -32,6 +32,14 @@ Preview checks; all eighteen references are not approved for close fidelity.
   the complete 266-line public display data, source typography and reversible
   closing behavior. Kaspar's delayed gallery-height sequence is authored through
   MCP553. Both sources compile cleanly and preserve their existing native owners.
+- MECHA's Tomorrow Recycling Phone detail sheet is authored through MCP574:
+  35 editable layer families across Desktop/Phone, separate source media and
+  shared responsive overrides. Its source compiles cleanly; all six new video
+  copies start idle. Actual opening, manual media and reload remain unverified.
+- pu—ente's smooth quadratic trail correction compiles through MCP576 with its
+  thirteen overrides and native page unchanged. Six static and 27 browser
+  checks pass. The outside-tile cursor and original moving-state comparison
+  remain separate gaps.
 
 These are authoring/readback results. Actual current paint, complete Preview
 behavior and persistence after an editor reload remain separate open gates.

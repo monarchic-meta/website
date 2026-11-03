@@ -73,8 +73,8 @@
     {
       "id": "HERO-012",
       "path": "HERO-012.json",
-      "bytes": 11539,
-      "sha256": "c020043de11944324acaf1ff7def6a298ec4d180400b5edef4251ecde193c934"
+      "bytes": 11752,
+      "sha256": "355df39b1d04b2a4d98723d043c1206e7e30a4cceaf02ccaa8ef85fb2baeccc0"
     },
     {
       "id": "HERO-013",
@@ -91,8 +91,8 @@
     {
       "id": "HERO-015",
       "path": "HERO-015.json",
-      "bytes": 11910,
-      "sha256": "31f655df66a69ee1e61d67dd4abb468829b9cf707eba7a6de83db3d54da82380"
+      "bytes": 15607,
+      "sha256": "3020075c745282192a910ffb5c405be8fbd99fd49b4353af2eae41d03fc0da06"
     },
     {
       "id": "HERO-016",
@@ -109,8 +109,8 @@
     {
       "id": "HERO-018",
       "path": "HERO-018.json",
-      "bytes": 8973,
-      "sha256": "44e358f61e2b5e0cc5a90c4a32591415f8fc65d24c67289e4cc5165abd85f663"
+      "bytes": 9414,
+      "sha256": "5d95e4ad62fd591229b3f4a29cb977a42c3909b0391f350981667b00b5cf1d1a"
     }
   ],
   "currentRecreationSourcePolicy": "../original-source-policy.md",

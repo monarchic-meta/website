@@ -161,8 +161,40 @@
     "behavior": "Background override returns caller component unchanged while phone=false; one additional guard only.",
     "publicOverrides": 7,
     "physicalBindingPolicy": "11 logical Primary writes bind22 actual D/P copies. Existing6prior controller copies are empty; new8logical roles bind16newcopies. More/overlay remainhiddenDesktop; VideoPlayingfalse/controlstrue.",
-    "actualSourceUpdate": false,
-    "nativeBindingsAuthored": false,
+    "actualSourceUpdate": true,
+    "nativeBindingsAuthored": true,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/final-actual-authoring-receipt.json",
+      "bytes": 7532,
+      "sha256": "ffffad893efe5ef503b77356ed71225b5301e40f570b29a2b9f4c952f66710b8"
+    }
+  },
+  "nativeTomorrowAuthoring": {
+    "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_ACTUAL_PAINT_PREVIEW_AND_RELOAD_PENDING",
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/final-actual-authoring-receipt.json",
+      "bytes": 7532,
+      "sha256": "ffffad893efe5ef503b77356ed71225b5301e40f570b29a2b9f4c952f66710b8"
+    },
+    "actualNodeMap": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/native-primary-adapter-v1/known-all35-map.json",
+      "bytes": 2981,
+      "sha256": "ac17c1737c55d8e601ddf01f9ec9b8b388442a917b8a13a11427475a992ea3c4"
+    },
+    "logicalFamilies": 35,
+    "physicalCopies": 70,
+    "genuineFontTuples": 78,
+    "physicalVideoCopies": 6,
+    "sharedBindings": 22,
+    "preservation": "Old owner inverseCB81 exact;91 otherowners/16defs/58sourcebodies/237code/schema preserved with explicit571/574read boundary.",
+    "nativeVideos": "All6newcopies serializedPlayingfalse/Controlstrue; manualHOC shared D/P. Actualnativehost/ref/Playingforwarding not verified.",
+    "sourceFits": [
+      "Inherited Inter/Georgia substitute source NeueHaas/Flecha M.",
+      "Body independently composed; source factual metrics retained.",
+      "One genuine232px PNGupload is CDN optimized: meanRGBA absoluteDelta0.1635/255,max12. No pixel-exact claim."
+    ],
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
   }

@@ -227,18 +227,18 @@
   "currentOriginalSourceUpdates": {
     "report": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/original-source-updates.md",
-      "bytes": 11941,
-      "sha256": "570efdb9ec9a377dafaef997de5c82aac7b72a544e0c96f4913676d59c85be9b"
+      "bytes": 12507,
+      "sha256": "9373184f4ec1ce0193cf22d5abe4c7707b76344e507469712907aa5b7c28a03e"
     },
     "coverage": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/coverage.json",
       "bytes": 61638,
-      "sha256": "a2264b3f9ee97c6aec218d4c70834a3d41c3a9e4f3e12518b397739099bcef78"
+      "sha256": "cf226efe0a9d5a89c61fdede759ea62cd165ce249dc5ae72d583adb92ed61ccc"
     },
     "contractIndex": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
       "bytes": 3893,
-      "sha256": "172205ccb5041787b850e8bed8dd73d25e77fceb94e2e10025f8bf04684af39e"
+      "sha256": "ff182aa2ba2d2d3a4770555c8428202416acaccdf4d46c6c95e364bd782e5417"
     },
     "HERO002": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
@@ -290,8 +290,8 @@
     },
     "HERO012": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-012.json",
-      "bytes": 11539,
-      "sha256": "c020043de11944324acaf1ff7def6a298ec4d180400b5edef4251ecde193c934"
+      "bytes": 11752,
+      "sha256": "355df39b1d04b2a4d98723d043c1206e7e30a4cceaf02ccaa8ef85fb2baeccc0"
     },
     "HERO014": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-014.json",
@@ -300,8 +300,8 @@
     },
     "HERO015": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
-      "bytes": 11910,
-      "sha256": "31f655df66a69ee1e61d67dd4abb468829b9cf707eba7a6de83db3d54da82380"
+      "bytes": 15607,
+      "sha256": "3020075c745282192a910ffb5c405be8fbd99fd49b4353af2eae41d03fc0da06"
     },
     "nativeCurrentPages": {
       "HERO-009": {

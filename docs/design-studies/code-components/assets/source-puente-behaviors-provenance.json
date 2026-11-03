@@ -52,7 +52,7 @@
     "publicOverrides": 13,
     "nativeWrites": 0,
     "behavior": "Curved quadratic midpoint segments preserve the moving26-point stroke; axis-wise0.5px rest and a rounded16px square match retained source implementation facts. Rest drains the tail and stops RAF; native artwork, refs, callbacks, coarse pointers and frozen targets are preserved.",
-    "status": "FOCUSED_NIX_PASSED_ACTUAL_SOURCE_UPDATE_PENDING",
+    "status": "SOURCE_COMPILE_CLEAN_NATIVE_MODEL_PRESERVED_PREVIEW_AND_RELOAD_PENDING",
     "checks": {
       "static": 6,
       "browser": 27
@@ -63,6 +63,11 @@
       "Actual Framer source compilation, native painting, Preview and editor reload remain unverified."
     ],
     "actualFramerPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H18-H13-after-H15/H18-final-actual-source-receipt.json",
+      "bytes": 2107,
+      "sha256": "f70b5c6cdbac61857daff9a735895fe559fc860410b830cbf7eef4d8aff609ed"
+    }
   }
 }
