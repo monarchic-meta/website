@@ -27,7 +27,6 @@ type LayerProps = {
     onKeyDown?: React.KeyboardEventHandler<HTMLElement>
     tabIndex?: number
 }
-type Layer = ComponentType<LayerProps>
 type RefSlot = { current: HTMLElement | null }
 type DetailState = {
     phase: Phase
@@ -94,7 +93,7 @@ function focusable(panel: HTMLElement) {
 }
 
 /** Apply to the existing source shell; all authored children and props survive. */
-export function withMechaTomorrowDetailRoot(Component: Layer): Layer {
+export function withMechaTomorrowDetailRoot(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const target = RenderTarget.current(), staticRenderer = useIsStaticRenderer(), frozen = staticRenderer || target === RenderTarget.canvas || target === RenderTarget.export || target === RenderTarget.thumbnail
         const root = React.useRef<HTMLElement | null>(null), panel = React.useRef<HTMLElement | null>(null), closeButton = React.useRef<HTMLElement | null>(null), trigger = React.useRef<HTMLElement | null>(null)
@@ -128,7 +127,7 @@ export function withMechaTomorrowDetailRoot(Component: Layer): Layer {
                 if (event.key === "Escape") { event.preventDefault(); setPhase("closing"); return }
                 const frame = panel.current
                 if (event.key !== "Tab" || !frame) return
-                const nodes = focusable(frame), first = nodes[0] ?? frame, last = nodes.at(-1) ?? frame
+                const nodes = focusable(frame), first = nodes[0] ?? frame, last = nodes[nodes.length - 1] ?? frame
                 if (!nodes.length || event.shiftKey && (document.activeElement === first || !frame.contains(document.activeElement))) { event.preventDefault(); last.focus({ preventScroll: true }) }
                 else if (!event.shiftKey && (document.activeElement === last || !frame.contains(document.activeElement))) { event.preventDefault(); first.focus({ preventScroll: true }) }
             }
@@ -155,7 +154,7 @@ export function withMechaTomorrowDetailRoot(Component: Layer): Layer {
 }
 
 /** Attach to a new native MORE button; Desktop remains untouched. */
-export function withMechaTomorrowMore(Component: Layer): Layer {
+export function withMechaTomorrowMore(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail(), activate = useActivation(node => state?.show(node), !state || state.frozen || !state.phone)
         return <Component {...props} ref={ref} role="button" tabIndex={props.tabIndex ?? 0} aria-controls={state?.panelID} aria-expanded={state?.active ?? false}
@@ -167,7 +166,7 @@ export function withMechaTomorrowMore(Component: Layer): Layer {
 }
 
 /** Full viewport native overlay; its authored children stay selectable. */
-export function withMechaTomorrowDetailOverlay(Component: Layer): Layer {
+export function withMechaTomorrowDetailOverlay(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(state?.panel ?? own, ref)
         if (!state || state.frozen) return <Component {...props} ref={bind} />
@@ -177,7 +176,7 @@ export function withMechaTomorrowDetailOverlay(Component: Layer): Layer {
 }
 
 /** Apply to the white scrolling native sheet, not its content-height frame. */
-export function withMechaTomorrowDetailSheet(Component: Layer): Layer {
+export function withMechaTomorrowDetailSheet(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(own, ref)
         React.useLayoutEffect(() => { if (state?.phase === "opening" || state?.phase === "open" && state.reduced) { if (own.current) own.current.scrollTop = 0 } }, [state?.phase, state?.reduced])
@@ -187,7 +186,7 @@ export function withMechaTomorrowDetailSheet(Component: Layer): Layer {
     })
 }
 
-export function withMechaTomorrowDetailFader(Component: Layer): Layer {
+export function withMechaTomorrowDetailFader(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail()
         if (!state || state.frozen) return <Component {...props} ref={ref} />
@@ -196,7 +195,7 @@ export function withMechaTomorrowDetailFader(Component: Layer): Layer {
     })
 }
 
-export function withMechaTomorrowDetailClose(Component: Layer): Layer {
+export function withMechaTomorrowDetailClose(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail(), own = React.useRef<HTMLElement | null>(null), bind = useRefPair(state?.closeButton ?? own, ref), activate = useActivation(() => state?.hide(), !state || state.frozen)
         return <Component {...props} ref={bind} role="button" tabIndex={props.tabIndex ?? 0}
@@ -207,7 +206,7 @@ export function withMechaTomorrowDetailClose(Component: Layer): Layer {
 }
 
 /** Bind existing background siblings; do not translate the overlay's ancestor. */
-export function withMechaTomorrowDetailBackground(Component: Layer): Layer {
+export function withMechaTomorrowDetailBackground(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = useDetail()
         if (!state || state.frozen) return <Component {...props} ref={ref} />

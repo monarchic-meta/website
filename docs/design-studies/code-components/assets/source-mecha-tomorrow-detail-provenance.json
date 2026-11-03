@@ -119,5 +119,25 @@
     },
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "framerOverrideCompatibility": {
+    "status": "LOCAL_49_STRICT_AND_21_BROWSER_CHECKS_PASSED_TRANSFER_PENDING",
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowDetail.tsx",
+      "bytes": 15265,
+      "sha256": "98e20f748ceea5cbb650b027c43fb7503bb510778bdf567fb7cbf1453ef54221"
+    },
+    "test": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-tomorrow-detail.mjs",
+      "bytes": 19663,
+      "sha256": "2476cca102042e49a0e71235314a46686b021f80b63027e7146c4e8fd35951ed"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/framer-override-compatibility/validation-receipt.json",
+      "bytes": 2388,
+      "sha256": "56f08c1fa97f78f2252c7932cf8468acea4583f81fc3b628c5b4bbd9088d015e"
+    },
+    "changes": "Use ES2020-compatible final-array indexing and explicit ComponentType<LayerProps> public argument/return annotations. Keep all seven export names and the native plan unchanged.",
+    "actualFramerClassificationVerified": false
   }
 }
