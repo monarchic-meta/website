@@ -126,10 +126,12 @@ on sixteen source anchors. A single appended bridge in
 Notes and Daughter state. The old151 Details and24 shared roles stay byte-exact.
 
 The [notes provenance](assets/source-format-notes-provenance.json) records ten
-strict and45 focused checks, plus the shared-module regression. The visible
+strict and50 focused checks, plus the shared-module regression. The visible
 papers use the original50ms stagger, fade and mask timing; all five tail shapes
 match the original polygon pixels at both tested sizes. Copy is paraphrased.
-The91-family native plan, actual Framer paint and reload are separate gates.
+The actual shared-module import diagnostic keeps the91-family native plan on
+hold; the clean151-role clock source is restored. Actual paint and reload are
+separate gates.
 
 ```sh
 nix build .#checks.x86_64-linux.source-format-notes --max-jobs 1 --cores 2

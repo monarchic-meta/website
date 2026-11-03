@@ -3,79 +3,34 @@
   "classification": "Source inspiration / credited recreation",
   "credit": "FORMAT / Obys × DES",
   "source": "https://format.obys.agency/",
-  "status": "LOCAL_NOTES10_STRICT45_FOCUSED_AND_SHARED25_REGRESSION_PASS_ACTUAL_AUTHORING_PENDING",
-  "immutableInputs": [
-    {
-      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceFormatDetails.tsx",
-      "bytes": 185809,
-      "sha256": "416b27251756cd11528fab4210cff7a84c0314710fa4c2c45bc3e82e604caefb"
-    },
-    {
-      "repositoryPath": "docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceHeroNativeBehaviors.tsx",
-      "bytes": 24207,
-      "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
-    },
-    {
-      "repositoryPath": "scripts/check-source-format-details.mjs",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-details.mjs",
-      "bytes": 9555,
-      "sha256": "f165401ad775a68c2159a9bec6a12e7ef6f4925430050a0fac13ff6e2494a156"
-    },
-    {
-      "repositoryPath": "scripts/check-source-format-notes.mjs",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-notes.mjs",
-      "bytes": 28489,
-      "sha256": "ef8135421997e14a3469f202fda73a47ea318866fecb8b85a2e8d0863593e27e"
-    },
-    {
-      "repositoryPath": "scripts/check-source-hero-native-behaviors.mjs",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-hero-native-behaviors.mjs",
-      "bytes": 20191,
-      "sha256": "fa7dac21131b2e4785b79a242f3dee68d0ca8775eeb0a0645e37a4cbe9db1f77"
-    },
-    {
-      "repositoryPath": "scripts/fixtures/source-format-notes-geometry.json",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/source-format-notes-geometry.json",
-      "bytes": 4655,
-      "sha256": "eda4fd30e52102042f782fdca3d6ff981bac950a8b9af2a44c824ec7f80fe063"
-    }
-  ],
+  "status": "LOCAL10_STRICT50_FOCUSED_PASS_ACTUAL_IMPORT_DIAGNOSTIC_NATIVE_HELD",
   "receipt": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/validation-and-handoff-receipt.json",
-    "bytes": 12756,
-    "sha256": "bc49a93e13c3c81f7871c95eefadaa3109cd398ef2c5a54aa3dd7cb1f64a0a10"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/validation-and-handoff-receipt.json",
+    "bytes": 6861,
+    "sha256": "49ea392b39ee703b7f9e7d7b0b66240d46a057fe29c1ee17227b7a50ddfc5d68"
   },
   "nativePlan": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/native-notes91-final-plan.json",
-    "bytes": 86970,
-    "sha256": "d0b1b4ed1bee429554781d89231bbaaf775dc8514dc91488e4dbd95c66c491f4"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/native-notes91-final-plan.json",
+    "bytes": 91608,
+    "sha256": "e862139ade43828ba58153425d2127238f106e02a35b4b3fd3941cb25b116716"
   },
   "strict": {
-    "command": "nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-details.mjs",
     "result": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/strict-result.json",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-3dcf9273-carried-poster/strict-result.json",
       "bytes": 1383,
-      "sha256": "083bcf6ee52a14baf27e4b8909499efed0183e8f2f26cf18a642107abf80c1d7"
+      "sha256": "41fceffc0b11c8ce3bde34a34698e4120c993a7fdd4ab0dca5050fe8537e02fb"
     },
     "passed": 10
   },
   "focused": {
-    "command": "MONARCHIC_FORMAT_NOTES_EVIDENCE_DIR=/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/nix/store/d54vyyazy7bhpyb3lf0pfwgpc1h2s7yr-chromium-unwrapped-147.0.7727.116/libexec/chromium/chromium nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-notes.mjs",
     "result": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/result.json",
-      "bytes": 37671,
-      "sha256": "3f6b44e94e6c4bb5da22082e6e3652af11fb5025ead7015ed4899566afcc88ed"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-3dcf9273-hidden-settlement/result.json",
+      "bytes": 38623,
+      "sha256": "31a55b73899efa96e98864d460ffbd8d7fa5e0ccfe01aaa27a1e9d104a90163a"
     },
-    "passed": 45,
-    "static": 12,
-    "browser": 33,
-    "all10TailComparisonsZeroDiff": true,
-    "negativePlainRectangleCaught": true,
-    "browserClosed": true,
-    "contextClosed": true,
-    "heavyTokenReleased": true
+    "passed": 50,
+    "old45Retained": true,
+    "all10TailPairsZeroDiff": true
   },
   "sharedRegression": {
     "status": "PASS_FOUR_STATIC_AND_FIVE_BROWSER_REPORT_GROUPS",
@@ -120,14 +75,133 @@
     "sourceBodies": "Native editable labels and paraphrasedcopy; fullpaper polygon/tail masks match exactsource pixels."
   },
   "actualFramer": {
-    "sourceRegistered": false,
+    "sharedSourceRegistered": true,
+    "sharedPublicOverrides": 25,
+    "sharedCompilerDiagnostics": 0,
+    "notesSourceAttempt690": true,
+    "notesCompilerDiagnostic": "TS2307 Cannot find module ./SourceHeroNativeBehaviors.tsx",
+    "restoredClockSource": "ab379f8a695b508a2e96450a7ca96803baeb28b08312303f6ce083ce336b9761",
+    "restoredClockPublicOverrides": 151,
+    "restoredClockCompilerDiagnostics": 0,
     "nativeWritten": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "recoveryReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-writer688/final-restored-clock-notes-held-receipt695.json",
+      "bytes": 3096,
+      "sha256": "11f6c92963a9d7f391811152bd4169b62fba3d7e3df08c74f68358684bc13982"
+    }
   },
   "remaining": [
-    "Actual191/25catalog/compiler registration and native91family packet, after clock69closure.",
+    "Resolve actualFramer project-local import without a duplicate store or suppressed diagnostics; native91families held. Exact191 candidate passed local10+50; actualactiveDetails is restored151clock.",
     "Actual font paint, timedNativeinput, sourcecorrespondingstates and editorreload.",
     "Other Daughter22image/mask/pixel variants remain separate source completion work."
-  ]
+  ],
+  "historical416": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/validation-and-handoff-receipt.json",
+      "bytes": 12756,
+      "sha256": "bc49a93e13c3c81f7871c95eefadaa3109cd398ef2c5a54aa3dd7cb1f64a0a10"
+    },
+    "immutableInputs": [
+      {
+        "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceFormatDetails.tsx",
+        "bytes": 185809,
+        "sha256": "416b27251756cd11528fab4210cff7a84c0314710fa4c2c45bc3e82e604caefb"
+      },
+      {
+        "repositoryPath": "docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceHeroNativeBehaviors.tsx",
+        "bytes": 24207,
+        "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
+      },
+      {
+        "repositoryPath": "scripts/check-source-format-details.mjs",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-details.mjs",
+        "bytes": 9555,
+        "sha256": "f165401ad775a68c2159a9bec6a12e7ef6f4925430050a0fac13ff6e2494a156"
+      },
+      {
+        "repositoryPath": "scripts/check-source-format-notes.mjs",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-format-notes.mjs",
+        "bytes": 28489,
+        "sha256": "ef8135421997e14a3469f202fda73a47ea318866fecb8b85a2e8d0863593e27e"
+      },
+      {
+        "repositoryPath": "scripts/check-source-hero-native-behaviors.mjs",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/check-source-hero-native-behaviors.mjs",
+        "bytes": 20191,
+        "sha256": "fa7dac21131b2e4785b79a242f3dee68d0ca8775eeb0a0645e37a4cbe9db1f77"
+      },
+      {
+        "repositoryPath": "scripts/fixtures/source-format-notes-geometry.json",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/source-format-notes-geometry.json",
+        "bytes": 4655,
+        "sha256": "eda4fd30e52102042f782fdca3d6ff981bac950a8b9af2a44c824ec7f80fe063"
+      }
+    ],
+    "strict": {
+      "command": "nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-details.mjs",
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/strict-result.json",
+        "bytes": 1383,
+        "sha256": "083bcf6ee52a14baf27e4b8909499efed0183e8f2f26cf18a642107abf80c1d7"
+      },
+      "passed": 10
+    },
+    "focused": {
+      "command": "MONARCHIC_FORMAT_NOTES_EVIDENCE_DIR=/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/nix/store/d54vyyazy7bhpyb3lf0pfwgpc1h2s7yr-chromium-unwrapped-147.0.7727.116/libexec/chromium/chromium nice -n10 /nix/store/6x6v11xjf0psckgqmyhfyhw9bdma0rn6-nodejs-22.22.2/bin/node scripts/check-source-format-notes.mjs",
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/validation-416b2725-full-paper-clip/result.json",
+        "bytes": 37671,
+        "sha256": "3f6b44e94e6c4bb5da22082e6e3652af11fb5025ead7015ed4899566afcc88ed"
+      },
+      "passed": 45,
+      "static": 12,
+      "browser": 33,
+      "all10TailComparisonsZeroDiff": true,
+      "negativePlainRectangleCaught": true,
+      "browserClosed": true,
+      "contextClosed": true,
+      "heavyTokenReleased": true
+    },
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/native-notes91-final-plan.json",
+      "bytes": 86970,
+      "sha256": "d0b1b4ed1bee429554781d89231bbaaf775dc8514dc91488e4dbd95c66c491f4"
+    }
+  },
+  "sourceModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/SourceFormatDetails.tsx",
+    "bytes": 185812,
+    "sha256": "3dcf9273c8d0936b0e4fc3e00a18a0def156905c4336bdcc173023f29bb664b3"
+  },
+  "sharedModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/SourceHeroNativeBehaviors.tsx",
+    "bytes": 24207,
+    "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
+  },
+  "currentChecker": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/check-source-format-notes.mjs",
+    "bytes": 32368,
+    "sha256": "dda746d32ce5eaffaf16f739209effb0e640f76e18f9f0fd0392cc42e52286a7"
+  },
+  "correction": {
+    "oneSourceChange": true,
+    "from": "withFormatPosterFlow",
+    "to": "withFormatCarriedPoster",
+    "function": "withFormatNotesPoster",
+    "old151abPrefixExact": true,
+    "allOtherNotesBodiesExact": true,
+    "shared391Exact": true,
+    "currentActualPriori": "codeFile/prQOthG:withFormatCarriedPoster",
+    "all3CopiesVerified": true,
+    "preflight": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-writer688/preflight688-actual-data.json",
+      "bytes": 2263851,
+      "sha256": "7a82007e543c000e5b89d76549fd1863f4d264de9b5d0a2235e3801280f794fa"
+    },
+    "other17BindingFamiliesMatchActual": true
+  }
 }

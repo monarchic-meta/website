@@ -1456,7 +1456,7 @@ export function withFormatNotesFan(Component: ComponentType<LayerProps>): Compon
 export function withFormatNotesWindowWest(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(Component, "win__plate--west") }
 export function withFormatNotesVeeWest(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatCrossingFlow(Component), "vee__card--west", FORMAT_NOTE_VEE_WEST) }
 export function withFormatNotesVeeTriangle(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatTriangleOutline(Component), "vee__plate") }
-export function withFormatNotesPoster(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatPosterFlow(Component), "poster") }
+export function withFormatNotesPoster(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatCarriedPoster(Component), "poster") }
 export function withFormatNotesField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatNoteAnchor(withFormatFieldFlow(Component), "field") }
 function formatNotePaper(Component: NativeLayer, index: number): NativeLayer {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {

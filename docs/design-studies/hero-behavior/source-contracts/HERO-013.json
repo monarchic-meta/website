@@ -1280,38 +1280,36 @@
     }
   },
   "sourceNotes18": {
-    "status": "LOCAL_NOTES10_STRICT45_FOCUSED_AND_SHARED25_REGRESSION_PASS_ACTUAL_AUTHORING_PENDING",
+    "status": "LOCAL10_STRICT50_FOCUSED_PASS_ACTUAL_IMPORT_DIAGNOSTIC_NATIVE_HELD",
     "classification": "Source inspiration / credited recreation",
     "source": {
-      "repositoryPath": "docs/design-studies/code-components/SourceFormatDetails.tsx",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceFormatDetails.tsx",
-      "bytes": 185809,
-      "sha256": "416b27251756cd11528fab4210cff7a84c0314710fa4c2c45bc3e82e604caefb"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/SourceFormatDetails.tsx",
+      "bytes": 185812,
+      "sha256": "3dcf9273c8d0936b0e4fc3e00a18a0def156905c4336bdcc173023f29bb664b3"
     },
     "shared": {
-      "repositoryPath": "docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/SourceHeroNativeBehaviors.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/SourceHeroNativeBehaviors.tsx",
       "bytes": 24207,
       "sha256": "391497aa3de9f1c664c06fa1d7c62d0b9ab17bd19efffe8f23550f441e5429ac"
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-notes-provenance.json",
-      "bytes": 8482,
-      "sha256": "583cdbd17497913685f0e313f2d207dc9dc7b2f4da7534102d1ad9413741cfca"
+      "bytes": 13112,
+      "sha256": "acddbe158a28c51c9b482f9498ed616ad94a1a908e37c32dd943c5a147567a2d"
     },
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/validation-and-handoff-receipt.json",
-      "bytes": 12756,
-      "sha256": "bc49a93e13c3c81f7871c95eefadaa3109cd398ef2c5a54aa3dd7cb1f64a0a10"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/validation-and-handoff-receipt.json",
+      "bytes": 6861,
+      "sha256": "49ea392b39ee703b7f9e7d7b0b66240d46a057fe29c1ee17227b7a50ddfc5d68"
     },
     "nativePlan": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-416b2725/native-notes91-final-plan.json",
-      "bytes": 86970,
-      "sha256": "d0b1b4ed1bee429554781d89231bbaaf775dc8514dc91488e4dbd95c66c491f4"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/native-notes91-final-plan.json",
+      "bytes": 91608,
+      "sha256": "e862139ade43828ba58153425d2127238f106e02a35b4b3fd3941cb25b116716"
     },
     "checks": {
       "strict": 10,
-      "focused": 45,
+      "focused": 50,
       "sharedStatic": 4,
       "sharedBrowserReportGroups": 5
     },
@@ -1332,10 +1330,22 @@
       "Reduced motion/hidden transitions use settled state; new Notes remain off in Phone/editor/static modes."
     ],
     "actualFramer": {
-      "sourceRegistered": false,
+      "sharedSourceRegistered": true,
+      "sharedPublicOverrides": 25,
+      "sharedCompilerDiagnostics": 0,
+      "notesSourceAttempt690": true,
+      "notesCompilerDiagnostic": "TS2307 Cannot find module ./SourceHeroNativeBehaviors.tsx",
+      "restoredClockSource": "ab379f8a695b508a2e96450a7ca96803baeb28b08312303f6ce083ce336b9761",
+      "restoredClockPublicOverrides": 151,
+      "restoredClockCompilerDiagnostics": 0,
       "nativeWritten": false,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "recoveryReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-writer688/final-restored-clock-notes-held-receipt695.json",
+        "bytes": 3096,
+        "sha256": "11f6c92963a9d7f391811152bd4169b62fba3d7e3df08c74f68358684bc13982"
+      }
     }
   }
 }
