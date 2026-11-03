@@ -2332,5 +2332,110 @@
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
     }
+  },
+  "fieldEntrance": {
+    "status": "FROZEN_NONEXECUTING_REVIEW_PACKET",
+    "sourceURL": "https://format.obys.agency/",
+    "credit": "FORMAT — Obys and DES Special Project",
+    "sourceSHA256": "9dd33006340c4880180e48e341e40ce182b2b64bff6712ab40878b79a426255b",
+    "sourceBytes": 136339,
+    "sourceFacts": {
+      "wordCount": 8,
+      "DOMOrder": [
+        "lv9BJjxIY",
+        "amVDJADUP",
+        "w4NJ2pR1W",
+        "BRNz1vkXR",
+        "o6lfaFIg7",
+        "BMxXGv0Sz",
+        "NESyvBC7_",
+        "mMKaoTu7n"
+      ],
+      "phaseOrder": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trigger": "First .field__call (left call) top reaches viewport bottom; once:true",
+      "nativeTriggerMaskIndex": 2,
+      "entrance": "Translate110%→0; .9s power3.out, stagger .13s in DOM order.",
+      "lastCompletion": 1.81,
+      "flick": "Only after all8 complete: one common2.6s step-end origin, phase1 offset−1.3s; phase0/1 opacity levels1/.25.",
+      "sourceTinyTicks": {
+        "fontSize": 12,
+        "lineHeight": 18
+      },
+      "oldNativeTinyTickLineHeight": 10.8
+    },
+    "addedRoles": [
+      "withFormatStaggeredFieldPrompts",
+      "withFormatFieldWordMask",
+      "withFormatFieldEntryWord01",
+      "withFormatFieldEntryWord02",
+      "withFormatFieldEntryWord03",
+      "withFormatFieldEntryWord04",
+      "withFormatFieldEntryWord05",
+      "withFormatFieldEntryWord06",
+      "withFormatFieldEntryWord07",
+      "withFormatFieldEntryWord08"
+    ],
+    "implementation": "Eight original editable RTEs move into neutral native masks; appended same-file context controls source.9s/.13s110%-entry before common2.6s flick. Retains played fade/private canInput/Phone/static rendering, with no new timer/frame/media/GPU.",
+    "nativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/field-entrance-v1/native-primary-eight-mask-plan.json",
+      "sha256": "8c448b5608b58ac12360b4316125f653231e6b261b171812dd8eb7158664d702",
+      "bytes": 101266
+    },
+    "validationReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/field-entrance-v1/validation-9dd33006/validation-receipt.json",
+      "sha256": "d40e79702dbe537eddae50cf35b22274196151de31c761b64be27e501bb32c12",
+      "bytes": 5614
+    },
+    "validation": {
+      "strictGroups": 10,
+      "narrowChecks": 36,
+      "staticChecks": 15,
+      "browserChecks": 21,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/field-entrance-v1/validation-9dd33006/result.json",
+        "sha256": "fe8e84031ed7e8f27ecb2feabd94a6bddffa3abce1c8ed9b8686c62a7256a80b",
+        "bytes": 11205
+      },
+      "initialFailurePreserved": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/field-entrance-v1/validation-9dd33006/attempt1/failure.json",
+        "sha256": "8576deb9c61934bee9f9b8a24ea1e82cc7ea7ac5ea62c18e59d874567a4fbc94",
+        "bytes": 5361
+      }
+    },
+    "testWiring": {
+      "pnpm": [
+        "check:source-format-photo-parallax",
+        "check:source-format-field-entry"
+      ],
+      "nix": [
+        "source-format-photo-parallax",
+        "source-format-field-entry"
+      ],
+      "nixExecution": "New wiring is prepared; it has not been rerun after these direct frozen-source proofs."
+    },
+    "intentionalDifferences": [
+      "No new source visit/input audit; source DOM/GSAP/CSS facts are retained cached originals.",
+      "Original native word text retains ellipsis glyphs while source has three periods; existing font shape/AA and exact glyph fitting are unchanged.",
+      "Offscreen/hidden/private-input suspension uses bounded local CSS visible-time adaptation, not a new global ticker or invented public Pause control.",
+      "Phone current splash/historical full-story static appearance remains unchanged; exact old word dimensions/typography are preserved.",
+      "Actual Framer compilation/ref forwarding/paint/interaction/reload are unverified and separate authoring gates.",
+      "This slice does not complete other photographs, Notes, early Vee-to-gauge pip flight, alternate journeys or whole-site fidelity."
+    ],
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "combinedNativePlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/combined-photo-entry-native-primary-v1.json",
+      "sha256": "bebbdb115e41da0d4628fd69f2eea6cf2809d6461f5cb4f0c12cd822ebb86362",
+      "bytes": 14161
+    }
   }
 }

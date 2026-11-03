@@ -841,3 +841,99 @@ export function withFormatPhotoImage(Component: ComponentType<LayerProps>): Comp
         return <Component {...props} ref={ref} data-format-photo-material="editable-native-frame" style={pose.enabled ? { ...props.style, position: "absolute", left: 0, top: "-7%", width: "100%", height: "114%", translate: `0px ${pose.offset}px` } as DetailStyle : props.style} />
     }) as NativeLayer
 }
+
+/** Source field words: one masked8-word entrance, then a common flick clock.
+ * Native public elementIds format-field-mask-{0..7} encode the retained
+ * DOM order. Rebind all8 old phase roles instead of mounting duplicate clocks.
+ * CSS motion pauses as one group offscreen/hidden; source Phone keeps its
+ * historical native geometry and the old1/.25 still phase appearance.
+ */
+const FORMAT_FIELD_PHASES = [0, 1, 0, 1, 0, 0, 1, 0] as const
+const FORMAT_FIELD_ENTRY = "source-format-field-entry"
+const FORMAT_FIELD_FLICK = "source-format-field-flick"
+const FORMAT_FIELD_EASE = "linear(" + Array.from({ length: 33 }, (_, index) => (1 - (1 - index / 32) ** 4).toFixed(8)).join(",") + ")"
+type FormatFieldEntryState = {
+    phase: "native" | "waiting" | "entering" | "entered"
+    running: boolean
+    registerMask: (index: number, node: HTMLElement) => () => void
+    registerWord: (index: number, node: HTMLElement) => () => void
+    complete: (index: number) => void
+}
+const FormatFieldEntryContext = React.createContext<FormatFieldEntryState | null>(null)
+function formatFieldMaskIdentity(node: HTMLElement | null) {
+    const match = node?.id.match(/^format-field-mask-([0-7])$/)
+    return match ? Number(match[1]) : null
+}
+export function withFormatStaggeredFieldPrompts(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = frozenTarget(), reduced = useReducedMotion(), layout = React.useContext(SourceLayoutContext), world = React.useContext(FormatClosingContext)
+        const played = React.useSyncExternalStore(world?.subscribePrompts ?? emptySubscribe, world?.getPlayed ?? (() => false), () => false)
+        const masks = React.useRef(new Map<number, HTMLElement>()), words = React.useRef(new Map<number, HTMLElement>()), started = React.useRef(false)
+        const [revision, setRevision] = React.useState(0), [host, setHost] = React.useState<HTMLElement | null>(null), [entered, setEntered] = React.useState(false), [done, setDone] = React.useState(false), [running, setRunning] = React.useState(false)
+        const bind = React.useCallback((node: HTMLElement | null) => { setHost(previous => previous === node ? previous : node); writeRef(ref, node) }, [ref])
+        const registerMask = React.useCallback((index: number, node: HTMLElement) => { masks.current.set(index, node); setRevision(value => value + 1); return () => { if (masks.current.get(index) === node) { masks.current.delete(index); setRevision(value => value + 1) } } }, [])
+        const registerWord = React.useCallback((index: number, node: HTMLElement) => { words.current.set(index, node); setRevision(value => value + 1); return () => { if (words.current.get(index) === node) { words.current.delete(index); setRevision(value => value + 1) } } }, [])
+        const complete = React.useCallback((index: number) => { if (index === 7) setDone(true) }, [])
+        const stopped = frozen || reduced || layout.frozen || layout.phone, ready = masks.current.size === 8 && words.current.size === 8
+        useOwnLayoutEffect(() => () => { masks.current.clear(); words.current.clear() }, [])
+        useOwnLayoutEffect(() => {
+            if (!host || stopped || !ready) { setRunning(false); return }
+            let active = true
+            const read = () => {
+                if (!active) return
+                const box = host.getBoundingClientRect(), visible = box.bottom > 0 && box.top < window.innerHeight && box.right > 0 && box.left < window.innerWidth
+                const allowed = visible && !document.hidden && !played && formatPhotoPainted(host) && (!world || world.canInput())
+                setRunning(previous => previous === allowed ? previous : allowed)
+                const trigger = masks.current.get(2)
+                if (!started.current && trigger && !played && !document.hidden && formatPhotoPainted(host) && trigger.getBoundingClientRect().top <= window.innerHeight) { started.current = true; setEntered(true) }
+            }
+            const intersection = new IntersectionObserver(read), resize = new ResizeObserver(read), paint = new MutationObserver(read)
+            intersection.observe(host); resize.observe(host)
+            const trigger = masks.current.get(2); if (trigger) resize.observe(trigger)
+            for (let node: HTMLElement | null = host; node; node = node.parentElement) paint.observe(node, { attributes: true, attributeFilter: ["style", "class", "hidden"] })
+            read(); window.addEventListener("scroll", read, { passive: true }); window.addEventListener("resize", read); document.addEventListener("visibilitychange", read)
+            return () => { active = false; intersection.disconnect(); resize.disconnect(); paint.disconnect(); window.removeEventListener("scroll", read); window.removeEventListener("resize", read); document.removeEventListener("visibilitychange", read) }
+        }, [host, stopped, ready, revision, played, world])
+        const phase: FormatFieldEntryState["phase"] = stopped || !ready ? "native" : !entered ? "waiting" : done ? "entered" : "entering"
+        const value: FormatFieldEntryState = { phase, running, registerMask, registerWord, complete }
+        return <FormatFieldEntryContext.Provider value={value}><Component {...props} ref={bind} data-format-field-entry={phase} data-format-field-ready={ready} data-format-field-running={running} data-format-chip-prompts={played ? "played" : "unplayed"} style={{ ...props.style, opacity: played ? 0 : props.style?.opacity ?? 1, transition: frozen ? "none" : "opacity .5s linear", pointerEvents: "none" }} /><style>{`@keyframes ${FORMAT_FIELD_ENTRY}{from{translate:0px var(--source-format-entry-shift)}to{translate:0px 0px}}@keyframes ${FORMAT_FIELD_FLICK}{0%{opacity:1}50%{opacity:.25}}[data-format-entry-live="true"][data-format-field-word="0"],[data-format-entry-live="true"][data-format-field-word="0"] *,[data-format-entry-live="true"][data-format-field-word="1"],[data-format-entry-live="true"][data-format-field-word="1"] *{line-height:18px!important}`}</style></FormatFieldEntryContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatFieldWordMask(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatFieldEntryContext), [host, setHost] = React.useState<HTMLElement | null>(null), [index, setIndex] = React.useState<number | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => { setHost(previous => previous === node ? previous : node); writeRef(ref, node) }, [ref])
+        useOwnLayoutEffect(() => { setIndex(formatFieldMaskIdentity(host)) }, [host])
+        useOwnLayoutEffect(() => { if (host && index !== null && state) return state.registerMask(index, host) }, [host, index, state?.registerMask])
+        const live = Boolean(state && state.phase !== "native" && index !== null), height = index !== null && index < 2 ? 18 : 37.8
+        const top = index === 0 ? "5px" : index === 1 ? "calc(100% - 23px)" : "calc(50% - 38px)"
+        return <Component {...props} ref={bind} data-format-field-mask={index ?? "missing-public-elementId"} style={live ? { ...props.style, top, height, overflow: state?.phase === "entered" ? "visible" : "hidden", pointerEvents: "none" } : { ...props.style, pointerEvents: "none" }} />
+    }) as NativeLayer
+}
+function formatFieldEntryWord(Component: NativeLayer, index: number): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatFieldEntryContext), [host, setHost] = React.useState<HTMLElement | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => { setHost(previous => previous === node ? previous : node); writeRef(ref, node) }, [ref])
+        useOwnLayoutEffect(() => { if (host && state) return state.registerWord(index, host) }, [host, index, state?.registerWord])
+        useOwnLayoutEffect(() => {
+            if (!host || !state) return
+            const complete = state.complete
+            const end = (event: AnimationEvent) => { if (event.target === host && event.animationName === FORMAT_FIELD_ENTRY) Promise.resolve().then(() => { if (host.isConnected && !event.defaultPrevented) complete(index) }) }
+            host.addEventListener("animationend", end)
+            return () => host.removeEventListener("animationend", end)
+        }, [host, index, state?.complete])
+        const phase = FORMAT_FIELD_PHASES[index], live = Boolean(state && state.phase !== "native"), height = index < 2 ? 18 : 37.8
+        const animation = !live || state?.phase === "waiting" ? "none" : state?.phase === "entering" ? `${FORMAT_FIELD_ENTRY} .9s ${FORMAT_FIELD_EASE} ${index * .13}s both` : `${FORMAT_FIELD_FLICK} 2.6s step-end ${phase ? "-1.3s" : "0s"} infinite`
+        const style = { ...props.style, opacity: phase ? .25 : 1, animation, pointerEvents: "none", ...(live ? { translate: state?.phase === "waiting" ? `0px ${height * 1.1}px` : "0px 0px", animationPlayState: state?.running ? "running" : "paused", "--source-format-entry-shift": `${height * 1.1}px` } : {}) } as DetailStyle
+        return <Component {...props} ref={bind} data-format-field-word={index} data-format-entry-live={live} data-format-click-phase={phase} style={style} />
+    }) as NativeLayer
+}
+
+export function withFormatFieldEntryWord01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 0) }
+export function withFormatFieldEntryWord02(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 1) }
+export function withFormatFieldEntryWord03(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 2) }
+export function withFormatFieldEntryWord04(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 3) }
+export function withFormatFieldEntryWord05(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 4) }
+export function withFormatFieldEntryWord06(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 5) }
+export function withFormatFieldEntryWord07(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 6) }
+export function withFormatFieldEntryWord08(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatFieldEntryWord(Component, 7) }

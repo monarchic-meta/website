@@ -107,6 +107,8 @@
     "check:source-portfolio-film-rgb": "node scripts/check-source-portfolio-film-rgb.mjs",
     "check:source-montreal-glyph-flow": "node scripts/check-source-montreal-glyph-flow.mjs",
     "check:source-format-details": "node scripts/check-source-format-details.mjs",
+    "check:source-format-photo-parallax": "node scripts/check-source-format-photo-parallax.mjs",
+    "check:source-format-field-entry": "node scripts/check-source-format-field-entry.mjs",
     "check:source-format-mobile-browser": "node scripts/check-source-format-mobile-browser.mjs",
     "check:source-format-details-browser": "node scripts/check-source-format-details-browser.mjs",
     "check:source-format-closing-browser": "node scripts/check-source-format-closing-browser.mjs",

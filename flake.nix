@@ -397,6 +397,23 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-format-photo-parallax = (mkWebsiteCheck "source-format-photo-parallax" ''
+            export MONARCHIC_FORMAT_PHOTO_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-photo-parallax
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
+          source-format-field-entry = (mkWebsiteCheck "source-format-field-entry" ''
+            export MONARCHIC_FORMAT_ENTRY_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-details
+            pnpm run check:source-format-field-entry
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
           source-format-pool = (mkWebsiteCheck "source-format-pool" ''
             export MONARCHIC_FORMAT_POOL_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-format-pool
