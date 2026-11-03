@@ -14,6 +14,7 @@ const file = path.join(repo, 'docs/design-studies/code-components/SourceFormatDe
 const source = fs.readFileSync(file, 'utf8'), hash = value => crypto.createHash('sha256').update(value).digest('hex')
 const output = process.env.MONARCHIC_FORMAT_EARLY_PIP_EVIDENCE_DIR ?? '/tmp/monarchic-format-early-pip'
 const checks = [], samples = [], errors = [], check = (name, condition) => { assert.ok(condition, name); checks.push(name) }
+const ownedChapterStart=source.indexOf("\n/** Retained original bu():"),ownedChapterEnd=ts.createSourceFile('owned-format-chapter.tsx',source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX).statements.find(node=>ts.isFunctionDeclaration(node)&&node.name?.text==='withFormatGaugeFlowAndField')?.end;assert.ok(ownedChapterStart>0&&ownedChapterEnd>ownedChapterStart,'The owned chapter boundary is present');const ownedChapter=source.slice(ownedChapterStart,ownedChapterEnd)
 fs.mkdirSync(output, { recursive: true })
 const ast = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
 const publicRows = ast.statements.filter(node => ts.isFunctionDeclaration(node) && node.modifiers?.some(modifier => modifier.kind === ts.SyntaxKind.ExportKeyword)).map(node => [node.name.text, node.getText()])
@@ -22,8 +23,8 @@ check('The added composed provider remains alongside later separately checked ro
 const marker = source.indexOf('\n/** Retained original bu():')
 check('The approved private magnet/registry delta is finite and exact', marker > 0 && hash(source.slice(0, marker)) === 'e3311634a1d40c549eccef4ef48dde4cebd7575a6a1dfc7992a7e947b04f0fc4')
 check('The previous entrance implementation is unchanged', hash(source.slice(source.indexOf('\n/** Source field words:'), marker)) === '5ed30f24b39c97c3e629fb3193d77ce1d332d35514ed25d95cde443c5aa86129')
-check('The appended flight branch adds no scheduler, renderer, media, fetch or relative module', !/requestAnimationFrame|setTimeout|setInterval|new Image|\bfetch\(|getContext\(|querySelector|innerHTML|from\s+["']\./.test(source.slice(marker)))
-check('The composed role uses direct public ES2020-compatible types', /export function withFormatGaugeFlowAndField\(Component: ComponentType<LayerProps>\): ComponentType<LayerProps>/.test(source) && !/\.at\(|useRef<HTMLElement>\(null\)/.test(source.slice(marker)))
+check('The appended flight branch adds no scheduler, renderer, media, fetch or relative module', !/requestAnimationFrame|setTimeout|setInterval|new Image|\bfetch\(|getContext\(|querySelector|innerHTML|from\s+["']\./.test(ownedChapter))
+check('The composed role uses direct public ES2020-compatible types', /export function withFormatGaugeFlowAndField\(Component: ComponentType<LayerProps>\): ComponentType<LayerProps>/.test(source) && !/\.at\(|useRef<HTMLElement>\(null\)/.test(ownedChapter))
 check('Hot source replacement keys a fresh world rather than retaining the old registry', source.includes('const FORMAT_DOCUMENT_REVISION="native-poster-magnet-88-flight-keyed-v3"'))
 const compiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2020, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText
 const React = require('react'), exports = {}

@@ -57,6 +57,21 @@ its own bounded pilot. Rolling line hover/reveal remains follow-up work.
 nix build .#checks.x86_64-linux.source-cantor-opening --max-jobs 1 --cores 2
 ```
 
+## FORMAT introductory clock
+
+The seven added native overrides in [SourceFormatDetails.tsx](SourceFormatDetails.tsx)
+recreate the ordinary introductory clock and its three viewport circles. The
+prior144 overrides remain byte-exact. No renderer, media or wall clock is added;
+one finite controller updates only while geometry changes.
+
+The [provenance](assets/source-format-intro-clock-provenance.json) records85
+passing local checks, the23-family editable-layer plan and pending native
+authoring. All eighteen Notes and further Daughter states remain separate work.
+
+```sh
+nix build .#checks.x86_64-linux.source-format-intro-clock --max-jobs 1 --cores 2
+```
+
 ## Native source-video playback
 
 [SourceNativeVideoVisibility.tsx](SourceNativeVideoVisibility.tsx) supplies the

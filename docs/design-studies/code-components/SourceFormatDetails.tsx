@@ -985,3 +985,155 @@ export function withFormatPosterPhotoAperture(Component: ComponentType<LayerProp
     const FlatHost = React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} data-format-poster-photo-aperture="flat-native-host" style={{ ...props.style, ...FORMAT_POSTER_PHOTO_FLAT }} />)
     return withFormatPhotoAperture(FlatHost)
 }
+
+/** Genuine introductory513px clock, retained original Jc() facts. The dial is
+ * ordinary document content; only its three-circle burst is viewport-fixed.
+ * Source offsetHeight rounds the section height, independently of CSS sizing.
+ * This does not add the later697px dial, an invented pin or a wall clock. */
+type FormatIntroClockGeometry = { sectionTop: number; sectionHeight: number; clockLeft: number; clockTop: number; physicalUnit: number }
+function formatIntroClockPose(width: number, height: number, scroll: number, geometry?: FormatIntroClockGeometry) {
+    const unit = Math.max(1, width) / 1440, viewport = Math.max(1, height), physicalUnit = geometry?.physicalUnit ?? unit
+    const sectionTop = geometry?.sectionTop ?? 1554 * unit, sectionHeight = geometry?.sectionHeight ?? Math.round(513 * unit)
+    const clamp = (value: number) => Math.max(0, Math.min(1, value)), cubicOut = (value: number) => 1 - (1 - value) ** 3
+    const quadratic = (value: number) => value < .5 ? 2 * value * value : 1 - (-2 * value + 2) ** 2 / 2
+    const cubic = (value: number) => value < .5 ? 4 * value ** 3 : 1 - (-2 * value + 2) ** 3 / 2
+    const n = sectionHeight / 2 + viewport / 2, b = .763 * viewport, runway = n + 1.44 * b
+    const time = Math.max(0, Math.min(runway, scroll - (sectionTop - viewport))), after = time - n
+    const angle = after <= 0 ? 330 * clamp(time / n) : 330 + 60 * cubicOut(clamp(after / b))
+    const diameter = Math.ceil(Math.hypot(Math.max(1, width), viewport)), onset = .82 * n, growthEnd = n + b
+    const progress = clamp((time - onset) / (growthEnd - onset)), pivot = (n - onset) / (growthEnd - onset)
+    const seed = 16.3041 * physicalUnit / diameter, dotScale = (seed ** (1 / (1 - quadratic(pivot)))) ** (1 - quadratic(progress))
+    const rim = 220.2 - 32.3, inside = clamp((513 / 2 - dotScale * diameter / (2 * physicalUnit)) / rim), blend = inside * inside * (3 - 2 * inside)
+    const clockX = (geometry?.clockLeft ?? (width - 513 * unit) / 2) + 256.5 * physicalUnit
+    const clockY = (geometry?.clockTop ?? sectionTop - scroll) + 256.5 * physicalUnit
+    const orbit = (330 + 120 * cubicOut(clamp(after / b))) * Math.PI / 180
+    const centerX = clockX + (width / 2 - clockX) * (1 - blend), centerY = clockY + (viewport / 2 - clockY) * (1 - blend)
+    return { unit, time, runway, angle, active: ((Math.round(angle / 30) % 12) + 12) % 12, diameter,
+        x: centerX + rim * blend * physicalUnit * Math.cos(orbit), y: centerY + rim * blend * physicalUnit * Math.sin(orbit),
+        dotOpacity: clamp((time - onset) / ((n - onset) * .5)), dotScale,
+        lightScale: cubic(clamp((after - .22 * b) / b)), darkScale: cubic(clamp((after - .44 * b) / b)) }
+}
+type FormatIntroClockPose = ReturnType<typeof formatIntroClockPose>
+type FormatIntroClockFrame = { x: number; y: number; inverse: string }
+type FormatIntroClockState = { live: boolean; enabled: boolean; unit: number; pose: FormatIntroClockPose; frame: FormatIntroClockFrame; register: (role: "dial" | "burst", node: HTMLElement) => () => void }
+const FORMAT_INTRO_CLOCK_STILL = formatIntroClockPose(1440, 810, 0)
+const FORMAT_INTRO_CLOCK_FRAME = { x: 0, y: 0, inverse: "matrix(1,0,0,1,0,0)" }
+const FORMAT_INTRO_CLOCK_REVISION = {}
+const FormatIntroClockContext = React.createContext<FormatIntroClockState>({ live: false, enabled: false, unit: 1, pose: FORMAT_INTRO_CLOCK_STILL, frame: FORMAT_INTRO_CLOCK_FRAME, register: () => () => {} })
+
+/** A zero-size owned fixed host gives three affine probes without querying
+ * Framer's private DOM. Counter-transform its 2D containing-block matrix so
+ * the native circles keep viewport dimensions under scale/rotation/borders.
+ * Only this host's owned translate is changed temporarily and restored. */
+function formatIntroClockFrame(node: HTMLElement, targetX: number, targetY: number): FormatIntroClockFrame | null {
+    const previous = node.style.getPropertyValue("translate"), priority = node.style.getPropertyPriority("translate")
+    try {
+        node.style.setProperty("translate", "0px 0px"); const origin = node.getBoundingClientRect()
+        if (origin.width > .000001 || origin.height > .000001) return null
+        // Wide basis vectors avoid magnifying DOMRect quantization after a
+        // long document scroll; this zero-size host never changes layout.
+        node.style.setProperty("translate", "256px 0px"); const horizontal = node.getBoundingClientRect()
+        node.style.setProperty("translate", "0px 256px"); const vertical = node.getBoundingClientRect()
+        const a = (horizontal.left - origin.left) / 256, b = (horizontal.top - origin.top) / 256, c = (vertical.left - origin.left) / 256, d = (vertical.top - origin.top) / 256, determinant = a * d - b * c
+        if (!Number.isFinite(determinant) || Math.abs(determinant) < .000001) return null
+        const aa = d / determinant, bb = -b / determinant, cc = -c / determinant, dd = a / determinant
+        const x = targetX - origin.left, y = targetY - origin.top
+        return { x: aa * x + cc * y, y: bb * x + dd * y, inverse: `matrix(${aa},${bb},${cc},${dd},0,0)` }
+    } finally { if (previous) node.style.setProperty("translate", previous, priority); else node.style.removeProperty("translate") }
+}
+export function withFormatIntroClockScene(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const layout = React.useContext(SourceLayoutContext), frozen = frozenTarget(), reduced = useReducedMotion(), live = !frozen && !reduced && !layout.frozen && !layout.phone
+        const [host, setHost] = React.useState<HTMLElement | null>(null), [state, setState] = React.useState({ enabled: false, pose: FORMAT_INTRO_CLOCK_STILL, frame: FORMAT_INTRO_CLOCK_FRAME })
+        const parts = React.useRef(new Map<"dial" | "burst", HTMLElement>()), wake = React.useRef<() => void>(() => {}), sizing = React.useRef<ResizeObserver | null>(null)
+        const register = React.useCallback((role: "dial" | "burst", node: HTMLElement) => {
+            const previous = parts.current.get(role)
+            if (role === "dial" && previous) sizing.current?.unobserve(previous)
+            parts.current.set(role, node)
+            if (role === "dial") sizing.current?.observe(node)
+            wake.current()
+            return () => { if (parts.current.get(role) === node) { if (role === "dial") sizing.current?.unobserve(node); parts.current.delete(role) } }
+        }, [])
+        const bind = React.useCallback((node: HTMLElement | null) => { setHost(old => old === node ? old : node); writeRef(ref, node) }, [ref])
+        useOwnLayoutEffect(() => {
+            if (!host || !live) { setState(old => old.enabled ? { ...old, enabled: false } : old); return }
+            let active = true, frame = 0, last = 0
+            const cancel = () => { if (frame) cancelAnimationFrame(frame); frame = 0 }
+            const read = () => {
+                const dial = parts.current.get("dial"), burst = parts.current.get("burst")
+                if (!active || document.hidden || !host.isConnected || !dial?.isConnected || !burst?.isConnected || !formatPhotoPainted(host)) return
+                if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+                const box = host.getBoundingClientRect(), dialBox = dial.getBoundingClientRect()
+                if (box.width <= 0 || box.height <= 0 || host.offsetWidth <= 0) return
+                const physicalUnit = layout.layout.unit * box.width / host.offsetWidth
+                const pose = formatIntroClockPose(window.innerWidth, window.innerHeight, window.scrollY, { sectionTop: box.top + window.scrollY, sectionHeight: host.offsetHeight, clockLeft: dialBox.left, clockTop: dialBox.top, physicalUnit })
+                const position = formatIntroClockFrame(burst, pose.x, pose.y)
+                if (!position) return
+                setState(old => old.enabled && (Object.keys(pose) as (keyof FormatIntroClockPose)[]).every(key => old.pose[key] === pose[key]) && old.frame.x === position.x && old.frame.y === position.y && old.frame.inverse === position.inverse ? old : { enabled: true, pose, frame: position })
+            }
+            const tick = (now: number) => { frame = 0; if (!active || document.hidden || !formatPhotoPainted(host)) return; if (now - last < 1000 / 30) { frame = requestAnimationFrame(tick); return }; last = now; read() }
+            const schedule = () => { if (active && host.isConnected && !document.hidden && formatPhotoPainted(host) && !frame) frame = requestAnimationFrame(tick) }
+            const visibility = () => { if (document.hidden) cancel(); else schedule() }
+            const completion = (event: Event) => { const target = event.target; if (target instanceof Element && target.contains(host)) schedule() }
+            wake.current = schedule; last = performance.now(); read()
+            const resize = new ResizeObserver(schedule), paint = new MutationObserver(() => { if (!formatPhotoPainted(host)) cancel(); else schedule() })
+            sizing.current = resize
+            resize.observe(host); resize.observe(parts.current.get("dial") ?? host)
+            for (let node: HTMLElement | null = host; node; node = node.parentElement) paint.observe(node, { attributes: true, attributeFilter: ["style", "class", "hidden"] })
+            window.addEventListener("scroll", schedule, { passive: true }); window.addEventListener("resize", schedule); document.addEventListener("visibilitychange", visibility)
+            document.addEventListener("transitionend", completion, true); document.addEventListener("animationend", completion, true)
+            return () => { active = false; cancel(); if (wake.current === schedule) wake.current = () => {}; if (sizing.current === resize) sizing.current = null; resize.disconnect(); paint.disconnect(); window.removeEventListener("scroll", schedule); window.removeEventListener("resize", schedule); document.removeEventListener("visibilitychange", visibility); document.removeEventListener("transitionend", completion, true); document.removeEventListener("animationend", completion, true) }
+        }, [host, live, layout.layout.unit, FORMAT_INTRO_CLOCK_REVISION])
+        // Existing native story groups are auto-level transform contexts.
+        // A new local level0 preserves the source's relative content order;
+        // source level1 would incorrectly cover every later native group.
+        const unit = layout.layout.unit, availableWidth = live && typeof document !== "undefined" ? document.documentElement.clientWidth : layout.width, style: React.CSSProperties | undefined = layout.phone ? { ...props.style, display: "none" } : live ? { ...props.style, ...FORMAT_POSTER_PHOTO_FLAT, position: "absolute", left: 0, top: 1554 * unit, width: availableWidth, height: 513 * unit, overflow: "visible", zIndex: 0, pointerEvents: "none" } as DetailStyle : props.style
+        const pose = live && state.enabled ? state.pose : FORMAT_INTRO_CLOCK_STILL
+        return <FormatIntroClockContext.Provider value={{ ...state, enabled: live && state.enabled, pose, live, unit, register }}><Component {...props} ref={bind} data-format-intro-clock-scene="ordinary-source-flow" data-format-intro-clock-time={pose.time} style={style} /></FormatIntroClockContext.Provider>
+    })
+}
+export function withFormatIntroClockDial(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), remove = React.useRef<(() => void) | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node ? state.register("dial", node) : null; writeRef(ref, node) }, [state.register, ref])
+        return <Component {...props} ref={bind} data-format-intro-clock-dial="genuine-513px-anchor" style={state.live ? { ...props.style, position: "absolute", left: "50%", top: 0, width: 513 * state.unit, height: 513 * state.unit, transform: "none", translate: "-50% 0px", rotate: "none", scale: "none", overflow: "visible", borderRadius: "50%", backgroundColor: "#ffffff" } as DetailStyle : props.style} />
+    })
+}
+export function withFormatIntroClockMark(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), [index, setIndex] = React.useState(-1), id = React.useId().replace(/[^\w-]/g, "_")
+        const bind = React.useCallback((node: HTMLElement | null) => { const match = node?.id.match(/^format-intro-clock-mark-(\d+)$/); setIndex(match && Number(match[1]) < 12 ? Number(match[1]) : -1); writeRef(ref, node) }, [ref])
+        const live = state.live && index >= 0, u = state.unit, angle = index * 30, ink = index === state.pose.active ? "#000000" : "#bfbfbf"
+        const style = live ? { ...props.style, position: "absolute", left: (256.5 + 220.2 * Math.cos(angle * Math.PI / 180)) * u, top: (256.5 + 220.2 * Math.sin(angle * Math.PI / 180)) * u, width: 46 * u, height: 11 * u, transform: `translate(-50%,-50%) rotate(${angle}deg)`, translate: "none", rotate: "none", scale: "none", color: ink, fontSize: 12 * u, lineHeight: .9, letterSpacing: "normal", textAlign: "right", whiteSpace: "nowrap" } as DetailStyle : props.style
+        return <><Component {...props} ref={bind} data-format-intro-clock-mark={id} data-format-intro-clock-active={index === state.pose.active} style={style} />{live && <style>{`[data-format-intro-clock-mark="${id}"],[data-format-intro-clock-mark="${id}"] *{font-size:${12 * u}px!important;line-height:.9!important;letter-spacing:normal!important;color:${ink}!important;text-align:right!important}`}</style>}</>
+    })
+}
+export function withFormatIntroClockHand(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), u = state.unit
+        return <Component {...props} ref={ref} data-format-intro-clock-angle={state.pose.angle} style={state.live ? { ...props.style, position: "absolute", left: 255 * u, top: 247 * u, width: 197 * u, height: 19 * u, transform: `rotate(${state.pose.angle}deg)`, transformOrigin: "0 50%", translate: "none", rotate: "none", scale: "none", color: "#000000" } as DetailStyle : props.style} />
+    })
+}
+export function withFormatIntroClockHandPart(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), [part, setPart] = React.useState(""), id = React.useId().replace(/[^\w-]/g, "_")
+        const bind = React.useCallback((node: HTMLElement | null) => { const match = node?.id.match(/^format-intro-clock-hand-(near|far|rule)$/); setPart(match?.[1] ?? ""); writeRef(ref, node) }, [ref])
+        const live = state.live && Boolean(part), u = state.unit, rule = part === "rule", size = part === "near" ? 8 : 12
+        const style = live ? { ...props.style, position: "absolute", left: part === "far" ? 165 * u : 0, top: (rule ? 18 : part === "near" ? 2 : 0) * u, ...(rule ? { width: 196 * u, height: 1, backgroundColor: "#000000" } : { color: "#000000", fontSize: size * u, lineHeight: 1.5, letterSpacing: "normal", textAlign: "left", whiteSpace: "nowrap" }) } as DetailStyle : props.style
+        return <><Component {...props} ref={bind} data-format-intro-clock-hand-part={id} style={style} />{live && !rule && <style>{`[data-format-intro-clock-hand-part="${id}"],[data-format-intro-clock-hand-part="${id}"] *{font-size:${size * u}px!important;line-height:1.5!important;letter-spacing:normal!important;text-align:left!important;color:#000!important}`}</style>}</>
+    })
+}
+export function withFormatIntroClockBurst(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), remove = React.useRef<(() => void) | null>(null)
+        const bind = React.useCallback((node: HTMLElement | null) => { remove.current?.(); remove.current = node ? state.register("burst", node) : null; writeRef(ref, node) }, [state.register, ref])
+        return <Component {...props} ref={bind} data-format-intro-clock-burst="viewport-frame" style={state.live ? { ...props.style, ...FORMAT_POSTER_PHOTO_FLAT, position: "fixed", left: 0, top: 0, width: 0, height: 0, minWidth: 0, minHeight: 0, maxWidth: 0, maxHeight: 0, padding: 0, borderWidth: 0, transformOrigin: "0 0", translate: `${state.frame.x}px ${state.frame.y}px`, transform: state.frame.inverse, overflow: "visible", zIndex: 10, opacity: state.enabled ? 1 : 0, pointerEvents: "none" } as DetailStyle : props.style} />
+    })
+}
+export function withFormatIntroClockBall(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatIntroClockContext), [part, setPart] = React.useState(""), bind = React.useCallback((node: HTMLElement | null) => { const match = node?.id.match(/^format-intro-clock-ball-(dot|light|dark)$/); setPart(match?.[1] ?? ""); writeRef(ref, node) }, [ref])
+        const pose = state.pose, scale = part === "dot" ? pose.dotScale : part === "light" ? pose.lightScale : pose.darkScale
+        return <Component {...props} ref={bind} data-format-intro-clock-ball={part} style={state.live && part ? { ...props.style, position: "absolute", left: 0, top: 0, width: pose.diameter, height: pose.diameter, marginLeft: -pose.diameter / 2, marginTop: -pose.diameter / 2, borderRadius: "50%", backgroundColor: part === "dot" ? "#000000" : part === "light" ? "#ffffff" : "#222222", transformOrigin: "50% 50%", transform: `scale(${scale})`, translate: "none", rotate: "none", scale: "none", opacity: part === "dot" ? pose.dotOpacity : 1, pointerEvents: "none" } as DetailStyle : props.style} />
+    })
+}

@@ -114,6 +114,23 @@
               };
             }
           ];
+          # Fixed original materials are comparison-only test inputs.
+          sourceFormatClockMaterials = pkgs.linkFarm "monarchic-format-intro-clock-test-inputs" [
+            {
+              name = "kid-assets/clock.webp";
+              path = pkgs.fetchurl {
+                url = "https://format.obys.agency/kid/clock.webp";
+                hash = "sha256-rFZWQy7JbDdx26w3+qcbG8Vp9cyYdabr05uTVj5nxe0=";
+              };
+            }
+            {
+              name = "source-font/ObysSans-Regular.woff2";
+              path = pkgs.fetchurl {
+                url = "https://format.obys.agency/fonts/ObysSans-Regular.woff2";
+                hash = "sha256-LW4a8wdeqKNXfaxcIQqAiHO/bAbiPfLhHUqKz8ehKS4=";
+              };
+            }
+          ];
           mkWebsiteCheck = name: command: pkgs.stdenvNoCC.mkDerivation {
             inherit pname version pnpmDeps;
             name = "${pname}-${name}-${version}";
@@ -479,6 +496,16 @@
           '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts ];
+            };
+          });
+          source-format-intro-clock = (mkWebsiteCheck "source-format-intro-clock" ''
+            export MONARCHIC_FORMAT_INTRO_CLOCK_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-details
+            pnpm run check:source-format-intro-clock
+          '').overrideAttrs (_: {
+            MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatClockMaterials;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
           source-format-poster-stack = (mkWebsiteCheck "source-format-poster-stack" ''

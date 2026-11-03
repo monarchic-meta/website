@@ -1,0 +1,85 @@
+{
+  "reference": "HERO-013",
+  "classification": "Source inspiration / credited recreation",
+  "creator": "FORMAT / Obys",
+  "source": "https://format.obys.agency/",
+  "status": "LOCAL_VALIDATED_SOURCE_NATIVE_AUTHORING_PENDING",
+  "actor": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+    "bytes": 158666,
+    "sha256": "ab379f8a695b508a2e96450a7ca96803baeb28b08312303f6ce083ce336b9761"
+  },
+  "frozenActor": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/SourceFormatDetails.tsx",
+    "bytes": 158666,
+    "sha256": "ab379f8a695b508a2e96450a7ca96803baeb28b08312303f6ce083ce336b9761"
+  },
+  "validation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/validation-ab379f8a/validation-receipt.json",
+    "bytes": 13075,
+    "sha256": "3497f92eeb7d47969fab92290098c18194279506f6a1964e3d791eeda49a8cd6"
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/native-clock-23-family-supported-adapter.json",
+    "bytes": 106430,
+    "sha256": "685fc1d07adc89eabe8e4f9f040f5a9488ec81ae622e43a093c146d43b94d003"
+  },
+  "nativeAdapter": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/supported-api-adapter-receipt.json",
+    "bytes": 3835,
+    "sha256": "dd6afbf5aabc5425399504a1d7bdd722c3f1cc323a62a1b13954de4c700f8b91"
+  },
+  "nixEvaluation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/intro-clock-burst-v1/nix-target-evaluation-receipt.json",
+    "bytes": 588,
+    "sha256": "a36322a675452f3d7d695f6652795fa2e008b24b11e231d584025ef00576fa07"
+  },
+  "scope": "The introductory ordinary513px clock and viewport-fixed three-circle burst. This is distinct from the later697px dial and the current Phone splash.",
+  "implementation": {
+    "sourceRoles": 151,
+    "existingPrefixRoles": 144,
+    "newRoles": 7,
+    "existingPrefixSHA256": "77d827161e7aed0ddfbe14245964f3731bcfb4d6e741bb69dfc7a9e663aa5bac",
+    "newNativeFamilies": 23,
+    "newResponsiveCopies": 69,
+    "nativeRTEFamilies": 14,
+    "newGPUContexts": 0,
+    "newCanvas": 0,
+    "newMedia": 0,
+    "newWallClock": 0,
+    "finiteController": "One coalesced30Hz scroll/resize/visibility controller, idle at rest; observes same-scene dial replacement and ancestor completion.",
+    "fixedFrame": "Three temporary synchronous affine probes on the new zero-size host; restores owned translate value/priority, handles2D transformed/bordered native containing blocks."
+  },
+  "sourceFacts": "Retained original Jc/CSS/HTML and four corresponding source frames. Source offsetHeight rounding, available document width versus viewport width, hand/circle growth and source timing formulas are retained. No new live original-site behavior audit is claimed.",
+  "asset": {
+    "url": "https://format.obys.agency/kid/clock.webp",
+    "sha256": "ac5656432ec96c3771dbac37faa71b1bc569f5cc9875a6ebd39b93563e67c5ed",
+    "bytes": 1002720,
+    "width": 1026,
+    "height": 1026,
+    "policy": "Genuine clock-specific Daughter subject; native import requires exact-byte manual delivery. Comparison-only Nix input does not add it to the site runtime."
+  },
+  "checks": {
+    "strictSemanticAndSSR": 10,
+    "focusedStatic": 28,
+    "focusedBrowser": 47,
+    "total": 85,
+    "sourceAndTestsFrozen": true,
+    "nixTargetEvaluates": true,
+    "nixBuildExecuted": false
+  },
+  "preservation": "All144 previous public bodies are a byte-exact prefix. The shared Native behavior source, existing Daughter toggle, all old controls/assets/native IDs and context bindings remain unchanged. The23new-family subtree has an exact-removal inverse.",
+  "remaining": [
+    "All eighteen Notes, missing Daughter variant subjects/placement/pixelation beyond this right-subject toggle.",
+    "Native font/asset preflight and direct authoring; actual RTE DOM-id/ref forwarding, affine containing blocks and local stack paint.",
+    "Complete moving Framer Preview and editor reload persistence.",
+    "Original Lenis smoothing, exact temporal source fit and arbitrary3D perspective remain separate limits."
+  ],
+  "actualFramer": {
+    "sourceRegistered": false,
+    "nativeWritten": false,
+    "assetWritten": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  }
+}
