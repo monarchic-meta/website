@@ -57,7 +57,8 @@
   "remaining": [
     "Exact historical source timezone",
     "Project-navigation transition",
-    "Actual matching-revision Phone interactions"
+    "Actual matching-revision Phone interactions",
+    "Actual native host/Playing bridge, offscreen suspension, idle editor Canvas and reload for the new visibility override"
   ],
   "pins": [
     {
@@ -72,5 +73,44 @@
   "mediaAdaptations": {
     "photos": "Four source photographs resized to 2560px for loading; individual assets remain credited.",
     "film": "107 original animation frames retained as VFR video; measured SSIM 0.988038 and a 10ms final-duration difference, explicitly recorded as a loading adaptation."
+  },
+  "nativeVideoLifecycleUpdate": {
+    "date": "2026-11-03",
+    "classification": "Source inspiration / native playback resource adaptation",
+    "status": "SOURCE_COMPILE_CLEAN_TWO_BINDINGS_CONFIRMED_ACTUAL_NATIVE_BRIDGE_UNVERIFIED",
+    "implementation": "../../code-components/SourceNativeVideoVisibility.tsx",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-native-video-visibility-provenance.json",
+      "bytes": 3538,
+      "sha256": "31286eeb194a57768b40d4788ac78c1a0f729a47f8b0d0c6a40939e3dc8414b0"
+    },
+    "source": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
+      "bytes": 9710,
+      "sha256": "a3069ce29ee44fb831816355314d263a3419b6f0ae8ce2ca8aa7ac8618e36bc3"
+    },
+    "validation": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/offscreen-video-css-completion-validation/validation-receipt.json",
+      "bytes": 3311,
+      "sha256": "e92e2a83bd0263ab6221b5d040cb3eb8a98c774415f46c02aaca0451bdb1852b"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H6-CSS-completion-final-authoring-receipt.json",
+      "bytes": 3787,
+      "sha256": "3d0bc5e777e918216835ddda5ae15299734308a0675913efd14ea453cf0bde10"
+    },
+    "registeredOverride": "codeFile/ggQ_udg:withVisibleNativeVideo",
+    "nativeTargets": [
+      "nOy3uJOKl",
+      "z4OuTgh0unOy3uJOKl"
+    ],
+    "preservation": "Only two native codeOverride bindings changed. Serialized Playing:true, source/poster/loop/mute/controls, geometry and the rest of each native owner remain intact.",
+    "localChecks": 39,
+    "actualNativeHostAndPlayingBridgeVerified": false,
+    "actualOffscreenSuspensionVerified": false,
+    "idleCanvasVerified": false,
+    "actualFramerPreviewVerified": false,
+    "afterEditorReload": false,
+    "next": "Observe native host-ref/Playing forwarding and actual visible/offscreen/manual-pause/reduced/static behavior before changing serialized Playing or calling the real video lifecycle fixed."
   }
 }

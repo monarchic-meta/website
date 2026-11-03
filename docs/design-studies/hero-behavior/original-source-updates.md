@@ -2,6 +2,41 @@
 
 The owner's revised [source list](../../design-inspiration/heroes.md#complete-owner-selected-list) is authoritative. Earlier gallery-led pages remain comparison material. See the [source policy](original-source-policy.md) for the browser and evidence boundaries.
 
+## Latest authoring status — 2026-11-03
+
+The [handoff](handoff.md) and [remaining-work backlog](remaining-work.md) record
+the current state. There is substantial reconstruction work beyond reload and
+Preview checks; all eighteen references are not approved for close fidelity.
+
+- Ajedrez's complete photographic continuation is authored through MCP519:
+  166 poses, 30 exact-delivery atlases, 119 new native families and two caption
+  updates. Earlier scenes, controls and 46 public exports are preserved.
+- Neue Montreal's tickers and all twenty additional genuine Font13 copies are
+  authored. Those font assignments are no longer a pending implementation task.
+- FORMAT's current mobile clock/logo splash is authored through MCP510, with
+  43 native families and a cleanly compiled 129-override source. The historical
+  full-story Phone adaptation remains preserved beneath the current splash.
+- Unbelievably Crap's copy/mask/head input correction is authored through
+  MCP526. Sixteen semantic groups and both real-wheel browser layouts pass;
+  the same two isolated helper-import diagnostics remain unresolved. Its
+  thirteen controls, both placements and entire native owner are preserved.
+- Mac Moss's existing Eco videos have a visibility override through MCP534,
+  with zero source diagnostics and only two override bindings changed. The
+  focused Nix check passes 39 lifecycle cases, including completed CSS fades.
+  Actual native host/Playing forwarding, offscreen suspension and idle Canvas
+  remain unverified; serialized Playing stays enabled pending that observation.
+
+These are authoring/readback results. Actual current paint, complete Preview
+behavior and persistence after an editor reload remain separate open gates.
+Nonphotographic Ajedrez states, other missing source interactions and later
+original-hero refinements remain in the backlog.
+
+## Earlier authoring records
+
+The records below describe their individual earlier stages and receipts. A
+statement that work was pending at that stage does not supersede the latest
+authoring status above.
+
 Ajedrez's overhead photographic interval is corrected in Framer through MCP288: the complete portrait photo occupies the film field on Desktop and Phone, with49 source frames at24fps from36.708333s through38.75s. The transferred clip is775300 bytes at960×1704. The shared controller preserves46 public exports, Pause/Replay and the existing decoder budget. Paused zoom now repaints the retained sharp frame without restarting motion.
 
 The locked Nix check passed8 strict groups,171 retained controller/browser checks and26 photographic checks. MCP readback confirms the source and both retained frame geometries; it does not establish actual moving paint or persistence after an editor reload. Those checks remain pending while connected desktop-browser automation is off.

@@ -55,7 +55,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "SOURCE_MODEL_CONFIRMED_KNOWN_ISOLATED_DIAGNOSTICS_PAINT_PENDING",
+    "status": "PHASED_INPUT_SOURCE_AUTHORED_TWO_HELPER_DIAGNOSTICS_PAINT_PENDING",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/final-source-receipt.json",
       "bytes": 21257,
@@ -80,7 +80,30 @@
         "./SourceHeroJourneyData0.ts",
         "./SourceHeroJourneyData1.ts"
       ],
-      "scope": "Exactly the historical isolated-module helper diagnostics. Imports/helper bytes match the earlier painted version. The write is not described as compile-clean."
+      "scope": "The two historical helper-import diagnostics recur on the actual write. Readback confirms canonical filenames, symbols and bytes for both real LocalModuleNode helpers. The checker origin and actual runtime module resolution remain unverified; the write is not described as compile-clean."
+    },
+    "phasedInputCorrection": {
+      "date": "2026-11-03",
+      "behavior": "Copy enters the 300px mask at .84 × 2466 = 2071.44px travel. The rendered mask reaches .9 before a later forward input may advance the head; reverse input releases the head before the mask and copy. Existing clock owns the .02s copy/head and .5s mask easing.",
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
+        "bytes": 101953,
+        "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
+      },
+      "validation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/validation-receipt.json",
+        "bytes": 3574,
+        "sha256": "5115e7c77102807c7fbcdc4c1c92e30cbcd42c84c99714ee378ae4cb63ea8787"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/finite-H14-H6-authoring524-onward/H14-final-authoring-receipt.json",
+        "bytes": 2461,
+        "sha256": "81240e4d5d81fb60fe68209dc57b0529ab277150bf77f79a375450b205b8e1d9"
+      },
+      "preservation": "One default catalog row, all thirteen controls, both full placements and the whole native owner are unchanged.",
+      "compilerClean": false,
+      "actualFramerPreviewVerified": false,
+      "afterEditorReload": false
     }
   }
 }
