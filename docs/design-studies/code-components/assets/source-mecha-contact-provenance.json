@@ -3,29 +3,29 @@
   "classification": "Source inspiration / credited recreation",
   "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
   "source": "https://mecha-xyz.webflow.io/",
-  "status": "LOCAL38_CHECKS_PASS_NATIVE_PACKET_IN_PREPARATION",
+  "status": "LOCAL51_CHECKS_PASS_NATIVE48_PACKET_READY_IMPORT_PATH_PENDING",
   "sourceModule": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaContact.tsx",
-    "bytes": 28595,
-    "sha256": "271407933dc60163c618cf7ddfe1e54732675fec44ec133aaed8fe5e7c57f018"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/SourceMechaContact.tsx",
+    "bytes": 30422,
+    "sha256": "fddc223086d71d2743f3b4a0807fc216300f9f63b198ffb6f21b2efb8f9918a3"
   },
   "repositorySource": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaContact.tsx",
   "checker": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/check-source-mecha-contact.mjs",
-    "bytes": 25013,
-    "sha256": "b7f54732d0c933e262bd2959e93800312f4f92851a328ff4a684fd1984c72fc0"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/check-source-mecha-contact.mjs",
+    "bytes": 30651,
+    "sha256": "9c8fccf57185a0dfbe3d35128c0e325f3f5a3d5624f1319a5b3741aab458d642"
   },
   "sourceGeometryFixture": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/source-mecha-contact-geometry.json",
-    "bytes": 16795,
-    "sha256": "720f288d3795c1544649ab839e25018d79a680de70ada337875412378d961db8"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/source-mecha-contact-geometry.json",
+    "bytes": 21331,
+    "sha256": "df9eb20c0691564e3846e7d8a4fb897c9c1562efef72ea383c910fa50edcf37d"
   },
   "genuineComparisonFonts": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-opening-v2/source-font-comparison/acquisition.json",
     "bytes": 1390,
     "sha256": "6d915e05873ba5d32925c1aefb988c63624dcfa3da38ca6717767c9ab9781d88"
   },
-  "publicNativeOverrides": 36,
+  "publicNativeOverrides": 40,
   "existingTomorrow": {
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaTomorrowDetail.tsx",
@@ -36,16 +36,17 @@
   },
   "validation": {
     "result": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/result.json",
-      "bytes": 40715,
-      "sha256": "4d8f700fe0f427eabb773400dee3649ddb8474217990b9dc568380d3e8ddff82"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/result.json",
+      "bytes": 82238,
+      "sha256": "3bb973eb89a98b048877d4f1eb275464d4795ca084ced20f0a75493a661cab9a"
     },
-    "checks": 38,
+    "checks": 51,
     "strictAndSSR": 8,
-    "browser": 30,
+    "browser": 43,
+    "allPrevious38Retained": true,
     "pageErrors": 0,
     "oneBrowserClosed": true,
-    "scope": "ExactD/P sourcepanel/form/input/modelclip bounds, genuinecomparisonfonts, WAAPI source delays/easing/phases, caller cancellation/dedupe, nativeinner-input style forwarding, sourcePhonewrapscroll/reopen, reduced/frozen/unmount/leasecleanup."
+    "scope": "Prior geometry/phase/input/lifecycle contracts plus genuine-anchor no-navigation on tap/click/cancel/key, original divider parent, original Send padding/direction/glyph stroke sizes and source-CSS leafbounds."
   },
   "sourceFacts": {
     "opening": "400ms cubic fader;900msbackground+modeldelays150/250;1000msnamelines610/690/770;rest950;pagepush−200/1200.",
@@ -85,5 +86,57 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/nix-target-evaluation-receipt.json",
     "bytes": 443,
     "sha256": "2d96f3e34b68ef9d3b332cd95ef53dc175799ba16be499915a707475c4cb864f"
-  }
+  },
+  "historical38": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/SourceMechaContact.tsx",
+      "bytes": 28595,
+      "sha256": "271407933dc60163c618cf7ddfe1e54732675fec44ec133aaed8fe5e7c57f018"
+    },
+    "checker": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/check-source-mecha-contact.mjs",
+      "bytes": 25013,
+      "sha256": "b7f54732d0c933e262bd2959e93800312f4f92851a328ff4a684fd1984c72fc0"
+    },
+    "fixture": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/source-mecha-contact-geometry.json",
+      "bytes": 16795,
+      "sha256": "720f288d3795c1544649ab839e25018d79a680de70ada337875412378d961db8"
+    },
+    "validation": {
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/third-proof/result.json",
+        "bytes": 40715,
+        "sha256": "4d8f700fe0f427eabb773400dee3649ddb8474217990b9dc568380d3e8ddff82"
+      },
+      "checks": 38,
+      "strictAndSSR": 8,
+      "browser": 30,
+      "pageErrors": 0,
+      "oneBrowserClosed": true,
+      "scope": "ExactD/P sourcepanel/form/input/modelclip bounds, genuinecomparisonfonts, WAAPI source delays/easing/phases, caller cancellation/dedupe, nativeinner-input style forwarding, sourcePhonewrapscroll/reopen, reduced/frozen/unmount/leasecleanup."
+    }
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/native-construction-plan.json",
+    "bytes": 57067,
+    "sha256": "fc6c4fa203fd0e4e8c8547ca051247ebbfc0d89c9ed5927ea405d41623ce930d"
+  },
+  "nativePlanReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-construction-plan-v2/receipt.json",
+    "bytes": 1361,
+    "sha256": "3326bfdbaff560979ca636ea7140f1206a357e9deb9d10561de9b2f3aa7c690f"
+  },
+  "innerLeafRectangles": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/inner-detail-correction-v1/proof-1/inner-leaf-rectangles.json",
+    "bytes": 9907,
+    "sha256": "1d165cf14939c97d21d74ace7d0a03032ef7bcc91befb37194a88880165fbe68"
+  },
+  "sourceCorrections": [
+    "Divider belongs inside form-pane, notmodel-pane.",
+    "Send stacks its right-hand stroke glyph above the label with exactsource12/12/16/18rem-derived padding.",
+    "Contactglyphs use horizontal+right-edge vertical1pxstrokes; hamburger45degree rules do not apply.",
+    "Duplicate synthetic click must prevent its own anchor default even when tap already opened/cancelled."
+  ],
+  "nativeGap": "48logical/96D/Pcopies now have finitegeometry,3genuineinputs,1namedactorperlayout andexplicitoldRoot/2push/CTApriors. Manualbadgeasset, genuinefontadmission andfreshnativehref/bridge remain separate actual gates."
 }

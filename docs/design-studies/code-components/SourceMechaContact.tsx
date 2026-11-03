@@ -106,7 +106,13 @@ function useActivation(action: (node: HTMLElement | null) => void, frozen: boole
     return (channel: string, event: Event) => {
         if (frozen || event.repeat) return
         const time = performance.now(), previous = last.current
-        if (previous && previous.channel !== channel && time - previous.time < 350) return
+        if (previous && previous.channel !== channel && time - previous.time < 350) {
+            // The second channel still has its own browser default. In
+            // particular, a click following Framer's tap can navigate an
+            // anchor even though its modal action was correctly deduplicated.
+            event.preventDefault?.()
+            return
+        }
         // Consume a caller-cancelled tap/click too: its alternate synthetic
         // channel is the same physical gesture and must not reopen the panel.
         last.current = { channel, time }
@@ -132,7 +138,7 @@ function useMotion(node: HTMLElement | null, state: State, target: Motion, durat
         return () => { const painted = getComputedStyle(node); previous.current = { ...(target.transform !== undefined ? { transform: painted.transform } : {}), ...(target.opacity !== undefined ? { opacity: Number(painted.opacity) } : {}) }; animation.onfinish = null; animation.cancel(); if (running.current === animation) running.current = null }
     }, [node, state.phase, state.frozen, state.reduced, key, duration, openDelay, closeDelay, ease])
 }
-type Role = "overlay" | "background" | "fader" | "wrap" | "form-pane" | "form" | "title" | "badge" | "badge-art" | "headlines" | "title-mask" | "title-first" | "title-second" | "subtitle-mask" | "subtitle" | "fields" | "field-mask" | "wide-field-mask" | "name" | "email" | "message" | "input" | "textarea" | "label" | "rule" | "send" | "send-label" | "model-pane" | "model-clip" | "graphic" | "close" | "close-label" | "divider"
+type Role = "overlay" | "background" | "fader" | "wrap" | "form-pane" | "form" | "title" | "badge" | "badge-art" | "headlines" | "title-mask" | "title-first" | "title-second" | "subtitle-mask" | "subtitle" | "fields" | "field-mask" | "wide-field-mask" | "name" | "email" | "message" | "input" | "textarea" | "label" | "rule" | "send" | "send-label" | "model-pane" | "model-clip" | "graphic" | "close" | "close-label" | "divider" | "send-icon" | "close-icon" | "action-line-horizontal" | "action-line-vertical"
 function styleFor(role: Role, s: State): React.CSSProperties {
     const r = s.rem, phone = s.phone, active = s.phase !== "closed", close = s.phase === "closing", padding = phone ? 16 : 28, titleSize = s.width <= 767 ? 2 : phone ? 3.25 : 3.75, titleLine = s.width <= 767 ? 1.02 : phone ? .96 : .92
     const flow: React.CSSProperties = { position: "relative", top: "auto", left: "auto", right: "auto", bottom: "auto", minWidth: 0, flex: "0 0 auto" }
@@ -158,8 +164,14 @@ function styleFor(role: Role, s: State): React.CSSProperties {
         case "label": return { ...flow, ...text, width: "100%", height: phone ? 15 : .9375 * r, fontSize: phone ? 10 : .625 * r, lineHeight: 1.5, textTransform: "uppercase" }
         case "input": case "textarea": return { ...flow, ...text, width: "100%", height: (role === "textarea" ? 3.8125 : 1.25) * r, minHeight: (role === "textarea" ? 3.8125 : 1.25) * r, lineHeight: 1.44, letterSpacing: ".02em", padding: 0, border: 0, borderRadius: 0, background: "transparent", outlineOffset: 3, resize: "none" }
         case "rule": return { position: "absolute", bottom: 0, left: 0, width: "100%", height: 1, background: "rgba(197,240,247,.3)" }
-        case "send": return { ...flow, width: "100%", minHeight: 6.25 * r, height: 6.25 * r, gridColumn: "1 / -1", display: "flex", alignItems: "flex-end", padding: 1.0625 * r, background: "#c5f0f7", color: "#262933", cursor: "pointer", transform: active ? "translateY(0%)" : "translateY(150%)" }
+        case "send": return { ...flow, width: "100%", minHeight: 6.25 * r, height: 6.25 * r, gridColumn: "1 / -1", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "flex-start", gap: 1.25 * r, padding: `${.75 * r}px ${.75 * r}px ${r}px ${1.125 * r}px`, background: "#c5f0f7", color: "#262933", cursor: "pointer", overflow: "clip", transform: active ? "translateY(0%)" : "translateY(150%)" }
         case "send-label": return { ...flow, ...text, width: "auto", height: 1.5 * r, color: "#262933" }
+        // The source action glyphs are two editable, unrotated strokes. Their
+        // boxes scale in rem; their line thickness remains one CSS pixel.
+        case "send-icon": return { ...flow, width: 1.15 * r, height: 1.25 * r, marginLeft: "auto", marginBottom: "auto", color: "#262933" }
+        case "close-icon": return { ...flow, width: 1.25 * r, height: 1.25 * r, color: "#c5f0f7" }
+        case "action-line-horizontal": return { position: "absolute", left: 0, top: "50%", width: "100%", height: 1, background: "currentColor", transform: "translateY(-50%)", transformOrigin: "100%" }
+        case "action-line-vertical": return { position: "absolute", right: 0, top: 0, width: 1, height: "100%", background: "currentColor" }
         case "model-pane": return { ...flow, order: phone ? -1 : 0, width: phone ? "100%" : 35 * r, height: phone ? "50dvh" : "100%", padding: phone ? "48px 16px" : padding, display: "flex", alignItems: "center", justifyContent: "center" }
         case "model-clip": return { ...flow, width: phone ? "90%" : "100%", maxWidth: phone ? "none" : 26.25 * r, height: phone ? "90%" : "auto", aspectRatio: phone ? "auto" : "2 / 3", overflow: "clip", display: "flex", alignItems: "center", justifyContent: "center", transform: active ? "translateY(0%)" : "translateY(100%)", opacity: active ? 1 : 0 }
         case "graphic": return { ...flow, width: "100%", height: phone ? "50dvh" : "100%", minHeight: phone ? "50dvh" : "70dvh", flexShrink: 0 }
@@ -252,3 +264,7 @@ export function withMechaContactModelClip(Component: ComponentType<Props>): Comp
 export function withMechaContactGraphic(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "graphic") }
 export function withMechaContactCloseLabel(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "close-label") }
 export function withMechaContactDivider(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "divider") }
+export function withMechaContactSendIcon(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "send-icon") }
+export function withMechaContactCloseIcon(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "close-icon") }
+export function withMechaContactActionLineHorizontal(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "action-line-horizontal") }
+export function withMechaContactActionLineVertical(Component: ComponentType<Props>): ComponentType<Props> { return role(Component, "action-line-vertical") }

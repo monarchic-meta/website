@@ -88,13 +88,13 @@ nix build .#checks.x86_64-linux.mecha-contact-mark --max-jobs 1 --cores 2
 ## Mecha contact panel
 
 [SourceMechaContact.tsx](SourceMechaContact.tsx) composes the existing Tomorrow
-sheet with a separate source contact dialog. Its36 native overrides preserve
+sheet with a separate source contact dialog. Its40 native overrides preserve
 the opening/closing timeline, editable fields and independent Phone scrolling.
 The live mark above remains a separate component.
 
-The [panel provenance](assets/source-mecha-contact-provenance.json) records38
-local checks with genuine external comparison fonts. The native construction
-packet and actual Framer runtime are separate gates. Source fonts are absent
+The [panel provenance](assets/source-mecha-contact-provenance.json) records51
+local checks with genuine external comparison fonts. The48-family native packet
+is ready; supported imports and actual Framer runtime remain separate gates. Source fonts are absent
 from the current project; native and live fallback faces remain explicit fits.
 The prototype retains a draft without submitting it or inventing success.
 

@@ -308,7 +308,87 @@
             "align": "center"
           }
         }
-      ]
+      ],
+      "derivedDetails": {
+        "send": {
+          "bounds": {
+            "x": 172.5,
+            "y": 645.1875,
+            "width": 520,
+            "height": 100
+          }
+        },
+        "send-label": {
+          "bounds": {
+            "x": 190.5,
+            "y": 705.1875,
+            "height": 24
+          }
+        },
+        "send-icon": {
+          "bounds": {
+            "x": 662.1,
+            "y": 657.1875,
+            "width": 18.4,
+            "height": 20
+          }
+        },
+        "send-icon-h": {
+          "bounds": {
+            "x": 662.1,
+            "y": 666.6875,
+            "width": 18.4,
+            "height": 1
+          }
+        },
+        "send-icon-v": {
+          "bounds": {
+            "x": 679.5,
+            "y": 657.1875,
+            "width": 1,
+            "height": 20
+          }
+        },
+        "close-label": {
+          "bounds": {
+            "x": 1317,
+            "y": 28,
+            "height": 24
+          }
+        },
+        "close-icon": {
+          "bounds": {
+            "x": 1377,
+            "y": 30,
+            "width": 20,
+            "height": 20
+          }
+        },
+        "close-icon-h": {
+          "bounds": {
+            "x": 1377,
+            "y": 39.5,
+            "width": 20,
+            "height": 1
+          }
+        },
+        "close-icon-v": {
+          "bounds": {
+            "x": 1396,
+            "y": 30,
+            "width": 1,
+            "height": 20
+          }
+        },
+        "divider": {
+          "bounds": {
+            "x": 864,
+            "y": 0,
+            "width": 1,
+            "height": 900
+          }
+        }
+      }
     },
     "phone": {
       "sourceSnapshot": {
@@ -616,7 +696,97 @@
             "align": "left"
           }
         }
-      ]
+      ],
+      "derivedDetails": {
+        "send": {
+          "bounds": {
+            "x": 16,
+            "y": 896.75,
+            "width": 358,
+            "height": 101.796875
+          }
+        },
+        "send-label": {
+          "bounds": {
+            "x": 34.32451923076923,
+            "y": 957.8257211538462,
+            "height": 24.43269230769231
+          }
+        },
+        "send-icon": {
+          "bounds": {
+            "x": 343.0519230769231,
+            "y": 908.9663461538462,
+            "width": 18.73173076923077,
+            "height": 20.360576923076927
+          }
+        },
+        "send-icon-h": {
+          "bounds": {
+            "x": 343.0519230769231,
+            "y": 918.6466346153846,
+            "width": 18.73173076923077,
+            "height": 1
+          }
+        },
+        "send-icon-v": {
+          "bounds": {
+            "x": 360.78365384615387,
+            "y": 908.9663461538462,
+            "width": 1,
+            "height": 20.360576923076927
+          }
+        },
+        "close-label": {
+          "bounds": {
+            "x": 292.5625,
+            "y": 20,
+            "height": 24.43269230769231
+          }
+        },
+        "close-icon": {
+          "bounds": {
+            "x": 353.6394230769231,
+            "y": 22.030649038461537,
+            "width": 20.360576923076927,
+            "height": 20.360576923076927
+          }
+        },
+        "close-icon-h": {
+          "bounds": {
+            "x": 353.6394230769231,
+            "y": 31.7109375,
+            "width": 20.360576923076927,
+            "height": 1
+          }
+        },
+        "close-icon-v": {
+          "bounds": {
+            "x": 373,
+            "y": 22.030649038461537,
+            "width": 1,
+            "height": 20.360576923076927
+          }
+        },
+        "divider": {
+          "display": "none"
+        }
+      }
     }
+  },
+  "innerDetailProvenance": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/primary-style-0.css",
+    "sha256": "a6a5f7d22ac87a2a3bdf6d719b603753f1642699f6f09969281adb316ae17e17",
+    "bytes": 130052,
+    "kind": "Derived from cached original CSS and observed source parent bounds, not newly measured original inner-leaf rectangles.",
+    "rules": [
+      ".action-button padding .75rem .75rem 1rem 1.125rem; flex-flow column",
+      ".action-button.is-s height6.25rem; icon margin-bottom:auto keeps icon top/label bottom",
+      ".is-svg.is-button-icon.is-action.is-auto.is-b width1.15rem; height1.25rem",
+      ".is-svg.is-button-icon.is-action.is-2 width/height1.25rem",
+      ".action-line height1px width100%; .is-v width1px height100%",
+      ".action-line.is-h transform-origin100%; no Contact45deg rule observed",
+      "contact-line source parent.form-popup, right0 width1px height100%"
+    ]
   }
 }
