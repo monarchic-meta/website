@@ -142,7 +142,13 @@
       "actualRuntimeImportResolutionVerified": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false,
-      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted."
+      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted.",
+      "supportedAPIAudit": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/comment-probe-writer836/cached-supported-path-api-audit-after843.json",
+        "bytes": 7622,
+        "sha256": "2671a7f239393391ed80364d128104508ae8bed1c1c002417da4a79671c24cf8"
+      },
+      "actualRuntimeQuestionPending": true
     }
   },
   "helperDeclarationCost": {
@@ -164,8 +170,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-hero-journey-provenance.json",
-      "bytes": 32477,
-      "sha256": "1ed00bddd50acdf0c266a3ea46eb064ed7d91aece2238d1646ba64ed331f9cbc"
+      "bytes": 33718,
+      "sha256": "6d3f7b4468e39f0dc4d9cae4c08465037895395beacba2eeb39b13a7e7b00f9f"
     },
     "measuredDeclarationBytes": {
       "before": 935084,

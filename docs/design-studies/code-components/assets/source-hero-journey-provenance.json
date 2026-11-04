@@ -503,7 +503,20 @@
       "actualRuntimeImportResolutionVerified": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false,
-      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted."
+      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted.",
+      "supportedAPIAudit": {
+        "receipt": {
+          "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/comment-probe-writer836/cached-supported-path-api-audit-after843.json",
+          "bytes": 7622,
+          "sha256": "2671a7f239393391ed80364d128104508ae8bed1c1c002417da4a79671c24cf8"
+        },
+        "officialPluginCodeFile": "https://www.framer.com/developers/reference/plugins-code-file",
+        "officialPath": "https://www.framer.com/developers/reference/plugins-code-file-path",
+        "officialTypecheck": "https://www.framer.com/developers/reference/plugins-code-file-typecheck",
+        "officialTypecheckCode": "https://www.framer.com/developers/reference/plugins-typecheck-code",
+        "boundary": "The official Plugin API documents path/name/typecheck/rename, but the retained agent SDK exposes a different source/withLineNumbers wrapper and no documented Plugin bridge. Effective filesystem paths and isolated-versus-project checking remain unproven. No extension trials, guessed URLs or code restructuring follow from these diagnostics.",
+        "actualRuntimeQuestionPending": true
+      }
     }
   },
   "compileCostCorrection": {
