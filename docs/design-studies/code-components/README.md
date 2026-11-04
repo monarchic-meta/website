@@ -80,6 +80,19 @@ keeps actual Framer admission, source-state comparison and reload distinct.
 nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
+## Neue Montreal attraction text
+
+The [Desktop inset correction](assets/source-montreal-attraction-inset-provenance.json)
+places attraction body text at125px inside the panel: the100px label column,
+1px separator and24px content padding. Its width preserves the24px right
+inset; Phone geometry remains unchanged.
+
+The87 local checks preserve all44 earlier checks and add responsive DOM edges,
+native callbacks and the1023/1024 transition. The old source fails the expected
+25px inset control. Exact code,35 override IDs and114 bindings are independently
+read through859. Actual Preview and editor reload remain open. Run
+`pnpm run check:source-montreal-behaviors` or its existing Nix target serially.
+
 ## Bleibtgleich field drift
 
 The [pointer-drift correction](assets/source-bleibt-pointer-drift-provenance.json)

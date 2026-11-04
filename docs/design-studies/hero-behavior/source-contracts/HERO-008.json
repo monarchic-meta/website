@@ -333,5 +333,34 @@
     "geometryWrites": 0,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "attractionBodyInset": {
+    "status": "SOURCEB6EA_AUTHORED_AND_INDEPENDENTLY_SEALED859_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-montreal-attraction-inset-provenance.json",
+      "bytes": 6563,
+      "sha256": "961b33cbd4e01d2e4722451a7249b117d2f07ffe7bfff98b891cb901e930848e"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMontrealBehaviors.tsx",
+      "bytes": 21038,
+      "sha256": "b6eaf3fcb19eb76adaae7f3cd54c0c45530fc6a033bafb5b5f510854c8a8e0e1"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-writer852/final-h8-attraction-inset-source-only-authoring-receipt859.json",
+      "bytes": 8155,
+      "sha256": "7522a83ccc5e00a1bec0750dadf0d8b64731f045b8b3ca9a9fb4f6fab582914b"
+    },
+    "desktopLeft": 125,
+    "desktopWidthDeduction": 149,
+    "rightInset": 24,
+    "phoneUnchanged": true,
+    "browserChecks": 87,
+    "retainedChecks": 44,
+    "newChecks": 43,
+    "oldSourceNegativeConfirmed": true,
+    "nativeBindingCopiesPreserved": 114,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

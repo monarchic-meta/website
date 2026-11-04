@@ -1,0 +1,128 @@
+{
+  "reference": "HERO-008",
+  "classification": "Source inspiration / credited source layout correction",
+  "creator": "Pangram Pangram / Neue Montreal",
+  "status": "SOURCEB6EA_AUTHORED_AND_INDEPENDENTLY_SEALED859_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMontrealBehaviors.tsx",
+    "bytes": 21038,
+    "sha256": "b6eaf3fcb19eb76adaae7f3cd54c0c45530fc6a033bafb5b5f510854c8a8e0e1"
+  },
+  "previousSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/SourceMontrealBehaviors.original.tsx",
+    "bytes": 21038,
+    "sha256": "37e45fc6f6933722741ad56d29792164fffecdc9422bf4b9860c077e0cc056bd"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-montreal-behaviors.mjs",
+    "bytes": 24366,
+    "sha256": "a906ac524deb05421b9deeb01cc7f7a8fd3350d8c9a76f85c59ab1290d5f6b02"
+  },
+  "sourceEvidence": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/source-spans.json",
+    "bytes": 21045,
+    "sha256": "329cd43fd9e7dea05493c5c350c9dbb306bad568582fe75a64976796382688ed"
+  },
+  "proposal": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/proposal.json",
+    "bytes": 4485,
+    "sha256": "bd3febd21e9d659e054f3f5d89e39060dda976923ceb1677eae724b802631d51"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/inverse.patch",
+    "bytes": 984,
+    "sha256": "f2d28ca673a96b79be07c62939fb329e51f8012eb2e43aa3074f73f7ef5a42e4"
+  },
+  "correction": {
+    "scope": "Desktop attraction body horizontal ink origin only",
+    "left": 125,
+    "width": "openPanelWidth - 149",
+    "rightInset": 24,
+    "basis": "100px label column +1px separator +24px content padding; direct native RichText children have no additional wrapper padding.",
+    "phone": "Existing left58,top82,width(ownerWidth-82) remains unchanged; independent Phone adaptation, not source-exact claim."
+  },
+  "preserved": {
+    "publicExports": 35,
+    "nativeIDsFontsCaptionsImagesUnchanged": true,
+    "otherSourceBytesExactOutsideTwoSubstrings": true,
+    "providerAndMotionActorsUnchanged": true
+  },
+  "validation": {
+    "strictDiagnostics": 0,
+    "browserChecks": 87,
+    "retainedChecks": 44,
+    "newChecks": 43,
+    "browserErrors": 0,
+    "summary": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/run-02/summary.json",
+      "bytes": 3333,
+      "sha256": "203578e685c307f402b3d40ec1bce64490b79cd69dbc7e8bcda5b2e40d74034c"
+    },
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/run-02/candidate/result.json",
+      "bytes": 54682,
+      "sha256": "cac40099542afd64ca80a7f5fdf417b4c4184b5b1b667f993158878a7ecde634"
+    },
+    "oldSourceNegative": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/run-02/original-negative/failure.json",
+      "bytes": 4140,
+      "sha256": "d9a73dfa27809a1a457ae89673a2302a85ca69f0ee76bfaf13347261623131bc"
+    },
+    "negative": "Only the expected first1024px panel0 edge assertion failed: left100,width208.09375,right24. Candidate left125,width183.09375,right24.",
+    "widths": [
+      1024,
+      1280,
+      1440,
+      1920
+    ],
+    "selectedPanels": [
+      0,
+      3,
+      10
+    ],
+    "phoneWidths": [
+      390,
+      1023
+    ],
+    "breakpointCrossing": "1023 to1024 to1023",
+    "portablePacket": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-proposal-v1/portable-harness-packet/manifest.json",
+      "bytes": 4313,
+      "sha256": "d08d1e568614fd77923b8218e7c289cbeb98e83a19875bf35f345baa0807d79f"
+    },
+    "portableParity": "Only repository/dependency preamble differs from exact executed checker. All44 original assertion bodies preserved.",
+    "canonicalBrowserRepeated": false,
+    "fullMatrixRerun": false
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO008/attraction-inset-writer852/final-h8-attraction-inset-source-only-authoring-receipt859.json",
+      "bytes": 8155,
+      "sha256": "7522a83ccc5e00a1bec0750dadf0d8b64731f045b8b3ca9a9fb4f6fab582914b"
+    },
+    "module": "codeFile/e3jkH4e",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 35,
+    "nativeBindingCopies": 114,
+    "nativeBindingParentsAndOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 700,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "This fixes one demonstrated Desktop inset; vertical alignment, heading geometry, source font/copy and complete opening-boundary parity remain separate.",
+    "Source DOM snapshot width800 was an initial state; responsive width is supported by retained primary function math, not treated as settled DOM evidence.",
+    "Native/provider media and actual Framer Preview/reload are unverified by this local DOM proof."
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-montreal-behaviors",
+    "evaluated": true,
+    "derivationPath": "/nix/store/5a1ldbjmfmk30jmdy3mks4l28014gkx6-monarchic-website-source-montreal-behaviors-0.0.1.drv",
+    "fullNixBuildExecuted": false
+  }
+}
