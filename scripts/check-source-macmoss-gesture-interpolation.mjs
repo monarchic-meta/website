@@ -6,8 +6,16 @@ import {fileURLToPath} from 'node:url'
 import assert from 'node:assert/strict'
 const repo=fileURLToPath(new URL('../',import.meta.url)),require=createRequire(import.meta.url),ts=require('typescript'),{chromium}=require('@playwright/test')
 const pin=p=>{const b=fs.readFileSync(p);return{path:p,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')}}
+function restoreTouchLeave(runtimeSource) {
+    const entry = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-macmoss-gallery-touch-leave-inverse.json'), 'utf8'))
+    assert.equal(crypto.createHash('sha256').update(runtimeSource).digest('hex'), entry.from.sha256, 'Actual source matches authoritative touch successor')
+    let restored = runtimeSource
+    for (const patch of entry.patches) { assert.equal(restored.split(patch.find).length, patch.count + 1, patch.name); restored = restored.replace(patch.find, patch.replace) }
+    assert.equal(crypto.createHash('sha256').update(restored).digest('hex'), entry.to.sha256, 'Exact touch inverse restores4d guards')
+    return restored
+}
 const sourceFile=path.join(repo,'docs/design-studies/code-components/SourceMacMossPortfolio.tsx'),source=fs.readFileSync(sourceFile,'utf8'),outBase=process.env.MONARCHIC_MACMOSS_INTERPOLATION_EVIDENCE_DIR??'/tmp/monarchic-source-macmoss-interpolation'
-assert.equal(pin(sourceFile).sha256,'4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1');fs.mkdirSync(outBase,{recursive:true});const out=fs.mkdtempSync(path.join(outBase,'run-'))
+assert.equal(crypto.createHash('sha256').update(restoreTouchLeave(source)).digest('hex'),'4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1');fs.mkdirSync(outBase,{recursive:true});const out=fs.mkdtempSync(path.join(outBase,'run-'))
 const code=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText
 const react=fs.readFileSync(path.join(path.dirname(require.resolve('react/package.json')),'umd/react.development.js'),'utf8'),dom=fs.readFileSync(path.join(path.dirname(require.resolve('react-dom/package.json')),'umd/react-dom.development.js'),'utf8')
 let browser,context,page,failure=null;const cases=[],errors=[],closure={mouseReleased:false,contextClosed:false,browserClosed:false}

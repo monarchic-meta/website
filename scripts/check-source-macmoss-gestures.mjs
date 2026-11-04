@@ -7,7 +7,15 @@ import { fileURLToPath } from 'node:url'
 const repo = fileURLToPath(new URL('../', import.meta.url)), fixtures = path.join(repo, 'scripts/fixtures/source-macmoss-gesture')
 const require = createRequire(path.join(repo, 'package.json')), ts = require('typescript'), { chromium } = require('@playwright/test')
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex'), pin = file => { const bytes = fs.readFileSync(file); return { path: file, bytes: bytes.length, sha256: hash(bytes) } }
-const candidate = path.join(repo, 'docs/design-studies/code-components/SourceMacMossPortfolio.tsx'), source = fs.readFileSync(candidate, 'utf8'), before = fs.readFileSync(path.join(fixtures, 'SourceMacMossPortfolio.before-68b.tsx.txt'), 'utf8'), inverse = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-macmoss-gallery-gesture-inverse.json'), 'utf8'))
+function restoreTouchLeave(runtimeSource) {
+    const entry = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-macmoss-gallery-touch-leave-inverse.json'), 'utf8'))
+    assert.equal(crypto.createHash('sha256').update(runtimeSource).digest('hex'), entry.from.sha256, 'Actual source matches authoritative touch successor')
+    let restored = runtimeSource
+    for (const patch of entry.patches) { assert.equal(restored.split(patch.find).length, patch.count + 1, patch.name); restored = restored.replace(patch.find, patch.replace) }
+    assert.equal(crypto.createHash('sha256').update(restored).digest('hex'), entry.to.sha256, 'Exact touch inverse restores4d guards')
+    return restored
+}
+const candidate = path.join(repo, 'docs/design-studies/code-components/SourceMacMossPortfolio.tsx'), runtimeSource = fs.readFileSync(candidate, 'utf8'), source = restoreTouchLeave(runtimeSource), before = fs.readFileSync(path.join(fixtures, 'SourceMacMossPortfolio.before-68b.tsx.txt'), 'utf8'), inverse = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-macmoss-gallery-gesture-inverse.json'), 'utf8'))
 assert.equal(hash(source), '4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1')
 assert.equal(process.versions.node.split('.')[0], '22')
 const runBase = process.env.MONARCHIC_MACMOSS_GESTURE_EVIDENCE_DIR ?? '/tmp/monarchic-source-macmoss-gestures'
@@ -28,7 +36,7 @@ try {
     }
     const step = before.slice(before.indexOf('        const step = React.useCallback'), before.indexOf('        const state: PortfolioState')).trim()
     check('Original arrow step body exact', source.includes(step))
-    const code = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText
+    const code = ts.transpileModule(runtimeSource, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React } }).outputText
     const react = fs.readFileSync(path.join(path.dirname(require.resolve('react/package.json')), 'umd/react.development.js'), 'utf8'), dom = fs.readFileSync(path.join(path.dirname(require.resolve('react-dom/package.json')), 'umd/react-dom.development.js'), 'utf8')
     browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, headless: true })
     context = await browser.newContext({ viewport: { width: 1280, height: 900 }, deviceScaleFactor: 1, hasTouch: true })

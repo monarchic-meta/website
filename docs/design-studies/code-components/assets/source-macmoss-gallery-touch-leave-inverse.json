@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "from": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/SourceMacMossPortfolio.touch-leave-candidate.tsx",
+    "bytes": 22562,
+    "sha256": "ef146240138eb69373840177d2f9d6d9514cf919940b49b26c1dcdc72cf1ae87"
+  },
+  "to": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "bytes": 21991,
+    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+  },
+  "patches": [
+    {
+      "name": "unsampled-sub10px-comment-only",
+      "find": "// Cancel/lost-capture handling is an independent safe return.\n                // Returns at10/11px are observed; sub10px source ordering stays open.",
+      "replace": "// Cancel/lost-capture handling is an independent safe return. A tiny\n                // horizontal pose also returns; its source click ordering is open.",
+      "count": 1
+    },
+    {
+      "name": "accurate-private-comment",
+      "find": "Cancel/lost-capture handling is an independent safe return.",
+      "replace": "Cancel/leave handling is an independent safe return.",
+      "count": 1
+    },
+    {
+      "name": "accurate-private-comment",
+      "find": "A fresh safe pointerdown retires only an older pointer receipt.",
+      "replace": "A fresh safe pointerdown retires only an older mouse receipt.",
+      "count": 1
+    },
+    {
+      "name": "ignore-known-secondary-photo-tap",
+      "find": "const activatePhoto = (channel: \"tap\" | \"click\", event: NativeActivationEvent) => {\n            if (event.isPrimary === false) return\n            const target =",
+      "replace": "const activatePhoto = (channel: \"tap\" | \"click\", event: NativeActivationEvent) => {\n            const target =",
+      "count": 1
+    },
+    {
+      "name": "mouseleave-normal-source-release",
+      "find": "onPointerLeave={(event: NativePointerEvent) => { props.onPointerLeave?.(event); state.finishPointer(event) }}",
+      "replace": "onPointerLeave={(event: NativePointerEvent) => { props.onPointerLeave?.(event); state.finishPointer(event, true) }}",
+      "count": 1
+    },
+    {
+      "name": "live-touch-arbitration-only",
+      "find": "style={{ ...props.style, overflow: \"hidden\", ...(state.frozen ? {} : { touchAction: \"pan-y pinch-zoom\" }) }}",
+      "replace": "style={{ ...props.style, overflow: \"hidden\" }}",
+      "count": 1
+    },
+    {
+      "name": "require-known-primary-touch",
+      "find": "if (event.button !== 0 || event.isPrimary === false || (event.pointerType === \"touch\" && event.isPrimary !== true) || drag.current) return",
+      "replace": "if (event.button !== 0 || event.isPrimary === false || drag.current) return",
+      "count": 1
+    },
+    {
+      "name": "admit-primary-touch",
+      "find": "if (event.pointerType !== \"mouse\" && event.pointerType !== \"touch\") {\n                // Other pointer photo activation is an adaptation, not dragging.",
+      "replace": "if (event.pointerType !== \"mouse\") {\n                // Photo taps on Phone are an adaptation, not touch dragging.",
+      "count": 1
+    },
+    {
+      "name": "primary-photo-activation-event-shape",
+      "find": "target?: EventTarget | null; currentTarget?: EventTarget | null; pointerType?: string; isPrimary?: boolean }",
+      "replace": "target?: EventTarget | null; currentTarget?: EventTarget | null }",
+      "count": 1
+    },
+    {
+      "name": "source-observed-touch-leave-and-tiny-boundary",
+      "find": " * Current390px coarse-touch source tap/swipe and Desktop10/11px returns are\n * observed. Mouseleave is normal release; source commits before outside mouseup.\n * Source gallery pan-y permits vertical page scrolling without a slide; the\n * live viewport adds pinch-zoom as an explicit adaptation. Cancel/lost-capture\n * safe return, sub10px details and the one-viewport clamp remain bounded fits.\n * Input/state observations do not certify full source-media paint or pixel identity.",
+      "replace": " * Mouse drag only. Phone photo taps, tiny-drag ordering and cancel/leave cleanup\n * are explicit adaptations; source touch/cancel/tiny behavior remains unobserved.",
+      "count": 1
+    }
+  ],
+  "restoresCurrent4dExactly": true
+}

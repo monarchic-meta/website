@@ -19,14 +19,18 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * >10 logical pixels to suppress the following photo click. Observed8% returns,
  * 48% advances, and reverse drag returns to the preceding photo. Existing native
  * photos stay editable; both drag release and return start at their live pose.
- * Mouse drag only. Phone photo taps, tiny-drag ordering and cancel/leave cleanup
- * are explicit adaptations; source touch/cancel/tiny behavior remains unobserved.
+ * Current390px coarse-touch source tap/swipe and Desktop10/11px returns are
+ * observed. Mouseleave is normal release; source commits before outside mouseup.
+ * Source gallery pan-y permits vertical page scrolling without a slide; the
+ * live viewport adds pinch-zoom as an explicit adaptation. Cancel/lost-capture
+ * safe return, sub10px details and the one-viewport clamp remain bounded fits.
+ * Input/state observations do not certify full source-media paint or pixel identity.
  * Clock is native text HH:mm:ss, once per second while visible; it uses the
  * viewer's local timezone, an explicit adaptation because source timezone is
  * unresolved. Static clock20:18:07 is the retained source poster, not Idaho time.
  */
 
-type NativeActivationEvent = { defaultPrevented?: boolean; preventDefault?: () => void; stopPropagation?: () => void; target?: EventTarget | null; currentTarget?: EventTarget | null }
+type NativeActivationEvent = { defaultPrevented?: boolean; preventDefault?: () => void; stopPropagation?: () => void; target?: EventTarget | null; currentTarget?: EventTarget | null; pointerType?: string; isPrimary?: boolean }
 type NativeActivationChannel = "tap" | "click" | "key"
 // Framer native motion layers expose onTap; DOM fixtures can also emit click.
 // Alternate channels within one gesture are consumed once, including a caller's
@@ -140,16 +144,16 @@ export function withMacMossPortfolio(Component: ComponentType<LayerProps>): Comp
             if (!blockPhoto.current) step(1)
         }
         function startPointer(event: NativePointerEvent) {
-            if (event.pointerType !== "mouse") {
-                // Photo taps on Phone are an adaptation, not touch dragging.
-                // A fresh safe pointerdown retires only an older mouse receipt.
+            if (event.pointerType !== "mouse" && event.pointerType !== "touch") {
+                // Other pointer photo activation is an adaptation, not dragging.
+                // A fresh safe pointerdown retires only an older pointer receipt.
                 if (photoTarget(event, event.currentTarget) === true) {
                     if (event.defaultPrevented) blockPhoto.current = true
                     else if (!frozen && !busy.current) blockPhoto.current = false
                 }
                 return
             }
-            if (event.button !== 0 || event.isPrimary === false || drag.current) return
+            if (event.button !== 0 || event.isPrimary === false || (event.pointerType === "touch" && event.isPrimary !== true) || drag.current) return
             const host = event.currentTarget
             if (photoTarget(event, host) !== true) return
             if (event.defaultPrevented) { blockPhoto.current = true; return }
@@ -188,8 +192,8 @@ export function withMacMossPortfolio(Component: ComponentType<LayerProps>): Comp
             if (!cancel && active.horizontal && active.distance >= active.logicalWidth / 5) {
                 runPose(neighbor, active.index, active.direction, { selected: pose.other, other: pose.selected, exit: -active.direction })
             } else {
-                // Cancel/leave handling is an independent safe return. A tiny
-                // horizontal pose also returns; its source click ordering is open.
+                // Cancel/lost-capture handling is an independent safe return.
+                // Returns at10/11px are observed; sub10px source ordering stays open.
                 runPose(active.index, neighbor, active.direction, { selected: pose.selected, other: pose.other, exit: active.direction })
             }
         }
@@ -203,12 +207,12 @@ export function withMacMossPortfolio(Component: ComponentType<LayerProps>): Comp
 export function withMacMossIdahoViewport(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
     return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
         const state = React.useContext(Context)
-        return <Component {...props} ref={ref} style={{ ...props.style, overflow: "hidden" }}
+        return <Component {...props} ref={ref} style={{ ...props.style, overflow: "hidden", ...(state.frozen ? {} : { touchAction: "pan-y pinch-zoom" }) }}
             onPointerDown={(event: NativePointerEvent) => { props.onPointerDown?.(event); state.startPointer(event) }}
             onPointerMove={(event: NativePointerEvent) => { props.onPointerMove?.(event); state.movePointer(event) }}
             onPointerUp={(event: NativePointerEvent) => { props.onPointerUp?.(event); state.finishPointer(event) }}
             onPointerCancel={(event: NativePointerEvent) => { props.onPointerCancel?.(event); state.finishPointer(event, true) }}
-            onPointerLeave={(event: NativePointerEvent) => { props.onPointerLeave?.(event); state.finishPointer(event, true) }}
+            onPointerLeave={(event: NativePointerEvent) => { props.onPointerLeave?.(event); state.finishPointer(event) }}
             onLostPointerCapture={(event: NativePointerEvent) => { props.onLostPointerCapture?.(event); state.finishPointer(event, true) }}
             onDragStart={(event: NativeActivationEvent) => { props.onDragStart?.(event); state.preventNativeDrag(event) }} />
     })
@@ -220,6 +224,7 @@ function photo(Component: ComponentType<LayerProps>, index: number): ComponentTy
         const bind = React.useCallback((node: HTMLElement | null) => { ownPhoto.current = node; writeRef(ref, node) }, [ref])
         const activate = useNativeActivation(() => state.photoNext(), state.frozen)
         const activatePhoto = (channel: "tap" | "click", event: NativeActivationEvent) => {
+            if (event.isPrimary === false) return
             const target = photoTarget(event, ownPhoto.current)
             // An opaque native onTap cannot establish that a child was safe.
             // A later DOM click with a real target may still supply that proof;
