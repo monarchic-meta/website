@@ -443,8 +443,12 @@
           });
           source-macmoss = mkWebsiteCheck "source-macmoss" ''
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
+            export MONARCHIC_MACMOSS_GESTURE_EVIDENCE_DIR="$out/evidence/gestures"
+            export MONARCHIC_MACMOSS_INTERPOLATION_EVIDENCE_DIR="$out/evidence/interpolation"
             pnpm run check:source-macmoss-portfolio
             pnpm run check:source-macmoss-browser
+            pnpm run check:source-macmoss-gestures
+            pnpm run check:source-macmoss-interpolation
           '';
           source-puente-behaviors = mkWebsiteCheck "source-puente-behaviors" ''
             export MONARCHIC_PUENTE_EVIDENCE_DIR="$out/evidence"
