@@ -306,6 +306,17 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-cantor-opening-rolling = (mkWebsiteCheck "source-cantor-opening-rolling" ''
+            export MONARCHIC_CANTOR_ROLLING_EVIDENCE_DIR="$out/evidence/rolling"
+            pnpm run check:source-cantor-opening-rolling
+            export MONARCHIC_CANTOR_OPENING_EVIDENCE_DIR="$out/evidence/opening"
+            pnpm run check:source-cantor-opening-rolling-retained
+          '').overrideAttrs (_: {
+            MONARCHIC_CANTOR_SOURCE_FONT_DIR = sourceCantorComparisonFonts;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-cantor-rolling-text = (mkWebsiteCheck "source-cantor-rolling-text" ''
             export MONARCHIC_CANTOR_ROLLING_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-cantor-rolling-text

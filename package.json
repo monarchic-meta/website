@@ -148,7 +148,9 @@
     "check:source-ajedrez-two-track-extension": "node scripts/check-source-ajedrez-two-track-extension.mjs",
     "check:source-mecha-tomorrow-contact": "node scripts/check-source-mecha-tomorrow-contact.mjs",
     "check:source-mecha-tomorrow-contact-retained": "node scripts/check-source-mecha-tomorrow-contact-retained.mjs",
-    "check:source-format-back-navigation": "node scripts/check-source-format-back-navigation.mjs"
+    "check:source-format-back-navigation": "node scripts/check-source-format-back-navigation.mjs",
+    "check:source-cantor-opening-rolling": "node scripts/check-source-cantor-opening-rolling.mjs",
+    "check:source-cantor-opening-rolling-retained": "node scripts/check-source-cantor-opening-rolling-retained.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
