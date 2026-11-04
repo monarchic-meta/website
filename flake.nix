@@ -455,6 +455,16 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-portfolio-release-velocity = (mkWebsiteCheck "source-portfolio-release-velocity" ''
+            export MONARCHIC_H4_RELEASE_OUT="$out/evidence/release"
+            pnpm run check:source-portfolio-release-velocity
+            export MONARCHIC_PORTFOLIO_CAROUSEL_EVIDENCE_DIR="$out/evidence/retained"
+            pnpm run check:source-portfolio-carousel
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-portfolio-film = (mkWebsiteCheck "source-portfolio-film" ''
             export MONARCHIC_PORTFOLIO_EVIDENCE_DIR="$out/evidence/playback"
             export MONARCHIC_PORTFOLIO_NATIVE_EVIDENCE_DIR="$out/evidence/native-input"
