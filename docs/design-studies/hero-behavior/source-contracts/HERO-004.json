@@ -258,7 +258,7 @@
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
         "bytes": 7819,
-        "sha256": "514a5bfae29de59f6bdbc02de58e8de9104a3f5a3e98e86fa5ba111d0791ba4b"
+        "sha256": "e0bc057bd1d5b7a97f44d79770638fed255254747c7e8bf044c95c4513ef6744"
       },
       "focusedChecks": 33,
       "canonicalStaticChecks": 10,
@@ -281,13 +281,14 @@
     "status": "SOURCE1CB_AUTHORED_AND_INDEPENDENTLY_SEALED867_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
-      "bytes": 8036,
-      "sha256": "b0e5280e7535ccca57b8efa91823e88c283a64d35abdabdbda782ac01e7ca8f6"
+      "bytes": 8836,
+      "sha256": "2d3e3b5b46899200cb1bb648ebfe317cea9621f5f3746e4aec985f83fe2cb862"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-caption-anchor.tsx.txt",
       "bytes": 21968,
-      "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+      "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b",
+      "historical": true
     },
     "actualAuthoring": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-writer864/final-h4-settling-source-only-authoring-receipt867.json",
@@ -307,5 +308,33 @@
     "movieSelectionCouplingStillFitted": true,
     "captionTextCorrectlyFollowsTarget": true,
     "captionMotionStillFitted": true
+  },
+  "captionAnchor": {
+    "status": "SOURCE2985_AUTHORED_AND_INDEPENDENTLY_SEALED875_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-caption-anchor-provenance.json",
+      "bytes": 6986,
+      "sha256": "f7254f306cd7694b01d5ccb4d05b2a9b95f11335128b392612075ff0c0c548f6"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "bytes": 22704,
+      "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-writer872/final-h4-caption-source-only-authoring-receipt875.json",
+      "bytes": 9178,
+      "sha256": "1964a69a3f4b2170f5ca8362be0b1f304d1351e3df828c25c9f545e46f7a0847"
+    },
+    "focusedChecks": 12,
+    "nativeDOMRows": 42,
+    "sourceRuleRows": 14,
+    "currentCardAnchor": true,
+    "targetTextPreserved": true,
+    "noOuterInterpolation": true,
+    "nativeTextStripAndWidthSpringsMissing": true,
+    "linearProjectionStillFitted": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

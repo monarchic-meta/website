@@ -5,9 +5,10 @@
   "source": "https://artemiilebedev.com/",
   "status": "SOURCE1CB_AUTHORED_AND_INDEPENDENTLY_SEALED867_PREVIEW_RELOAD_OPEN",
   "helperSource": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-caption-anchor.tsx.txt",
     "bytes": 21968,
-    "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+    "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b",
+    "historical": true
   },
   "historicalReleaseHelper": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-settling.tsx.txt",
@@ -119,9 +120,10 @@
   },
   "historyPolicy": "Historical60c helper is pinned directly by fixture. No provenance backlink cycle is introduced; root owns later historical/current documentation reconciliation.",
   "checker": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-anchor-proposal-v1/release-checker.before.mjs",
     "bytes": 36220,
-    "sha256": "f3bd68387878c5e227dcb2a02c9f9d2c354496bb79f774c4b190a50482b6a636"
+    "sha256": "f3bd68387878c5e227dcb2a02c9f9d2c354496bb79f774c4b190a50482b6a636",
+    "historical": true
   },
   "retainedChecker": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-carousel.mjs",
@@ -145,6 +147,15 @@
       "lines": "2513–2539 and2635",
       "canonicalIndexPolicyStillDiffers": true
     },
-    "historicalReceiptNote": "The frozen passing receipt used an overbroad caption/store/movie limitation. This amendment corrects that interpretation without rewriting historical evidence."
+    "historicalReceiptNote": "The frozen passing receipt used an overbroad caption/store/movie limitation. This amendment corrects that interpretation without rewriting historical evidence.",
+    "captionMotionAmendment": "Source outer placement is direct without a spring. Native text-strip/column-width springs are missing; current Caption successor corrects only the anchor using the existing flat projection."
+  },
+  "captionAnchorSuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-caption-anchor-provenance.json",
+      "bytes": 6986,
+      "sha256": "f7254f306cd7694b01d5ccb4d05b2a9b95f11335128b392612075ff0c0c548f6"
+    },
+    "sourceSHA256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
   }
 }

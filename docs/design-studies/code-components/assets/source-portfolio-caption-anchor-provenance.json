@@ -1,0 +1,134 @@
+{
+  "reference": "HERO-004",
+  "classification": "Source inspiration / independently authored native caption anchor",
+  "creator": "Artemii Lebedev",
+  "source": "https://artemiilebedev.com/",
+  "status": "SOURCE2985_AUTHORED_AND_INDEPENDENTLY_SEALED875_PREVIEW_RELOAD_OPEN",
+  "helperSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "bytes": 22704,
+    "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+  },
+  "historicalSettlingHelper": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-caption-anchor.tsx.txt",
+    "bytes": 21968,
+    "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-caption-anchor-inverse.json",
+    "bytes": 2484,
+    "sha256": "a3fcfb35b8606e750584edd0647401dfc3a6aea880fe53fe1daf243b013a3db2"
+  },
+  "focusedChecker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-caption-anchor.mjs",
+    "bytes": 12430,
+    "sha256": "1fe8573a640906362bd39dc9d4f0af316be47d1aa460d017682344b9f1b60ebc"
+  },
+  "nearestTable": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-caption-nearest.json",
+    "bytes": 1459,
+    "sha256": "92ef9d541d179c7c2bc687bb76661a9d352ddee79e0da6ee18aee323a8a38be0"
+  },
+  "releaseGuardAdapter": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "bytes": 37180,
+    "sha256": "25f62c9e92c0b1127f914294fbf6ebc10ba82e5b2b5bef16cbeb445c28066b49"
+  },
+  "sourceRule": {
+    "nearest": "Ascending rep0 project scan; source world arithmetic and strict less-than comparison retained, including floating-point ties.",
+    "captionLeft": "Existing linear CSS geometry.left + (nearest current card - current offset) * geometry.step.",
+    "outerMotion": "Direct source left/top/width assignment and transition:none; unused POS_LERP constants are not behavior.",
+    "text": "Caption text correctly follows target index. Source text-strip and year/industry width springs are missing in this native recreation.",
+    "sourceScript": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/carousel-inspection-only.js",
+      "bytes": 126812,
+      "sha256": "3b98626175042b6bbcf4b77dcf6296012d59640ae8d13404346fd7e7f6214240"
+    },
+    "sourceLines": {
+      "nearest": "1394–1405",
+      "projectedBounds": "1407 onward",
+      "outerPlacement": "2201–2223",
+      "targetText": "2498–2510",
+      "textSprings": "2284–2286 and2387–2435"
+    },
+    "primaryHTML": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/primary.html",
+      "bytes": 212538,
+      "sha256": "d629759f415a7ba687b133d9ab7fac61905a5bf3e0ab3f6eafb3e49f77c32400",
+      "line": 4271,
+      "utf8ByteOffset": 201130,
+      "rule": ".home-immersive-caption{transition:none !important;}"
+    }
+  },
+  "preservation": {
+    "onlyCaptionHOCChanges": true,
+    "everyOtherSourceByteExactTo1cb": true,
+    "film": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "bytes": 84713,
+      "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0"
+    },
+    "publicRoles": 6,
+    "noNewRAFGraphicsMediaOrNativeParts": true
+  },
+  "validation": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-anchor-proposal-v1/final-receipt.json",
+      "bytes": 6574,
+      "sha256": "ac4e924bf9ba3de50876fa9f7f5c424328188981f31c48c2168fc9eb85f2bcfa"
+    },
+    "focusedResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-anchor-proposal-v1/run-01/result.json",
+      "bytes": 31703,
+      "sha256": "6472233fa12bca85170b25f19b30394424d74b97b46cdbdd6be2d5ba386d7a7c"
+    },
+    "focusedChecks": 12,
+    "nativeDOMRows": 42,
+    "sourceBoundaryRows": 14,
+    "geometries": 3,
+    "strictDiagnostics": 0,
+    "browserErrors": 0,
+    "canonicalStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-anchor-proposal-v1/canonical-static/static-result.json",
+      "bytes": 2388,
+      "sha256": "37170340eaf59ab17b68cbd211bdbe79cf06fce55d79922f39f93fd86eaf70d5"
+    },
+    "canonicalStaticChecks": 10,
+    "releaseAdapter": "Only approved Caption inverse is used for historical1cb hash/body guards. Actual2985 is compiled and used for future runtime checks.",
+    "releaseAdapterBrowserRepeated": false,
+    "focusedBrowserRepeated": false,
+    "prior43And22ApplyToByteExactSurfaceAndFilm": true
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-writer872/final-h4-caption-source-only-authoring-receipt875.json",
+      "bytes": 9178,
+      "sha256": "1964a69a3f4b2170f5ca8362be0b1f304d1351e3df828c25c9f545e46f7a0847"
+    },
+    "module": "codeFile/Y3WuYFQ",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 6,
+    "nativeBindingCopies": 12,
+    "nativeBindingsParentsOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 709,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "build": {
+    "target": "checks.x86_64-linux.source-portfolio-caption-anchor",
+    "evaluated": true,
+    "derivationPath": "/nix/store/pmnx03cnqq14m87vyr657fwrc9mri3s0-monarchic-website-source-portfolio-caption-anchor-0.0.1.drv",
+    "fullNixBuildExecuted": false
+  },
+  "limits": [
+    "Caption horizontal projection still uses the existing linear CSS card geometry rather than source curved projected bounds.",
+    "Source text-strip and year/industry column-width springs are missing; intro and responsive fits remain separate.",
+    "Movie playback still follows the target while source playback follows current selectedIndex; changing caption text to current would be incorrect.",
+    "Actual Framer painting, Preview and editor reload remain unverified."
+  ]
+}

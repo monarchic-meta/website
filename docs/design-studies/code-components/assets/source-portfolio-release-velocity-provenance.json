@@ -147,8 +147,8 @@
   "settlingSuccessor": {
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
-      "bytes": 8036,
-      "sha256": "b0e5280e7535ccca57b8efa91823e88c283a64d35abdabdbda782ac01e7ca8f6"
+      "bytes": 8836,
+      "sha256": "2d3e3b5b46899200cb1bb648ebfe317cea9621f5f3746e4aec985f83fe2cb862"
     },
     "sourceSHA256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
   }

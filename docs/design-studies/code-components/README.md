@@ -42,20 +42,20 @@ Preview evidence.
 ## Artemii carousel motion
 
 The [release target](assets/source-portfolio-release-velocity-provenance.json)
-retains the source velocity filter and world-to-card projection. The
-[current-offset correction](assets/source-portfolio-settling-provenance.json)
-moves the carousel toward that target by0.1 per rendered callback and lets a
-new drag take over its current position. It preserves the film, velocity
-helpers, five other public roles and entry transition. The0.001px terminal
-snap is a cleanup approximation. Caption text correctly follows the target;
-movie playback should follow current position. Caption motion, curved
-projection, materials and Phone still need source refinement.
+retains source velocity/projection; [settling](assets/source-portfolio-settling-provenance.json)
+uses0.1 per rendered callback and lets a new drag take over its current position.
+The [caption anchor](assets/source-portfolio-caption-anchor-provenance.json)
+follows the nearest current card using source scan order/ties, while caption
+text correctly follows the target. Outer position updates directly without
+interpolation. Native text-strip and column-width springs are missing; curved
+projection/materials, Phone and current-position movie selection remain open.
 
-The43 focused,22 retained film-integration and10 canonical static checks pass.
-Exact helper code and12 native bindings are independently read through867;
-actual Framer Preview and reload remain open. Run
-`pnpm run check:source-portfolio-release-velocity` and
-`pnpm run check:source-portfolio-carousel` serially.
+The unchanged Surface/film retain43 focused/22 integration passes. Caption12
+checks cover42 native DOM rows; the approved inverse adapter passes10 canonical
+static checks on the actual2985 helper. Code and12 bindings are independently
+read through875. Actual Framer Preview/reload remain open. Run
+`check:source-portfolio-release-velocity`, `check:source-portfolio-carousel` and
+`check:source-portfolio-caption-anchor` with pnpm, serially.
 
 ## Cantor8 opening and Foundation
 
