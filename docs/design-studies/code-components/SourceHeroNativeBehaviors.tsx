@@ -1149,3 +1149,209 @@ export function withFormatDaughterSourceVeeTri(Component: ComponentType<LayerPro
 export function withFormatDaughterSourcePosterShot(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatDaughterSource(Component, "poster-shot") }
 export function withFormatDaughterSourceBarPlate(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatDaughterSource(Component, undefined, "bar") }
 export function withFormatDaughterSourcePillPlate(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatDaughterSource(Component, undefined, "pill") }
+
+/** Source Daughter sparks — HERO-013 / FORMAT / Obys × DES.
+ * The exact retained source tick equations and four genuine non-square images.
+ * Four Framer URL bindings were manually delivered and pixel-verified.
+ * Three bursts/twelve particles and serial decoding are resource adaptations.
+ * Canvas, exports, thumbnails and reduced motion never emit decorative sparks.
+ */
+type FormatSparkKey = "a" | "b" | "c" | "d"
+type FormatSparkMaterial = { key: FormatSparkKey; url: string | null; width: number; height: number; sha256: string }
+const FORMAT_SPARK_MATERIALS: FormatSparkMaterial[] = [
+    { key: "a", url: "https://framerusercontent.com/images/i8ll2Cv87bMowMKajzzzKehwEWs.webp", width: 221, height: 304, sha256: "6580a99320e869654d8977243c53de049e53ccfb748bb13792c394c399d83217" },
+    { key: "b", url: "https://framerusercontent.com/images/Z5VpKbzKscUUcarw2wN08hBIYH8.webp", width: 283, height: 246, sha256: "a2f435ba674eacabeb110a51c2428757daa86b2a40cd0a825d033ca5f14019fa" },
+    { key: "c", url: "https://framerusercontent.com/images/F1NvRCX4KRo20F7tlZmZmXiy8k.webp", width: 203, height: 321, sha256: "0f8f0d49be0a07834ac1a6e12e969c44a2623db1623c702cf42f20f30b46c82b" },
+    { key: "d", url: "https://framerusercontent.com/images/xas7I3OccsW6yp5T3pHoOCqH8E.webp", width: 303, height: 247, sha256: "99fb5c0523d3a2aaf14fe53abe0b9e1f849737a696858f401b3175303e2e63de" },
+]
+const FORMAT_SPARK_REVISION = {}, FORMAT_SPARK_BURSTS = 3, FORMAT_SPARK_CACHE_PIXELS = 276_806
+const FORMAT_SPARK_MANAGER_KEY = Symbol.for("monarchic.format.daughter.sparks.v1")
+type FormatSparkEvent = NativeActivationEvent & { currentTarget?: EventTarget | null; clientX?: number; clientY?: number; key?: string }
+type FormatSparkPoint = readonly [number, number]
+type FormatSparkOwner = { node: HTMLElement; frozen: () => boolean; materials: FormatSparkMaterial[]; disposed: boolean }
+type FormatSparkAttempt = { channel: NativeActivationChannel; before: boolean; callerState: boolean; callerSeen: boolean; cancelled: boolean; point: FormatSparkPoint | null }
+type FormatSparkBridge = { active: FormatSparkAttempt | null; owner: FormatSparkOwner | null }
+type FormatSparkBody = { x: number; y: number; vx: number; vy: number; turn: number; spin: number }
+type FormatSparkBurst = { owner: FormatSparkOwner; serial: number; point: FormatSparkPoint }
+type FormatSparkSpawn = { burst: FormatSparkBurst; index: number; point: FormatSparkPoint; due: number }
+type FormatSparkParticle = FormatSparkBody & { burst: FormatSparkBurst; element: HTMLImageElement; record: FormatSparkRecord | null }
+type FormatSparkRecord = { material: FormatSparkMaterial; url: string; image: HTMLImageElement | null; ready: boolean; particles: Set<FormatSparkParticle>; touch: number }
+type FormatSparkAdmission = { record: FormatSparkRecord; image: HTMLImageElement; token: object; decoding: boolean; cancelled: boolean }
+function formatSparkPoint(event: FormatSparkEvent, owner: FormatSparkOwner | null): FormatSparkPoint | null {
+    if (event.clientX && Number.isFinite(event.clientX) && Number.isFinite(event.clientY)) return [event.clientX, event.clientY!]
+    const node = event.currentTarget instanceof HTMLElement ? event.currentTarget : owner?.node
+    if (!node) return null
+    const box = node.getBoundingClientRect(); return [box.left + box.width / 2, box.top + box.height / 2]
+}
+function formatSparkBody(point: FormatSparkPoint, index: number, unit: number, random = Math.random): FormatSparkBody {
+    const c = (index - 1.5) / 1.5, l = Math.max(0, Math.min(1, point[1] / (140 * unit)))
+    return { x: point[0], y: point[1], vx: (c * 9 + (random() - .5) * 3) * (1 + (1 - l) * 2), vy: -(11 + random() * 6) * l, turn: (random() - .5) * 40, spin: (random() - .5) * 14 }
+}
+function formatSparkTick(body: FormatSparkBody) { body.vy += .62; body.x += body.vx; body.y += body.vy; body.turn += body.spin }
+function formatSparkAllowed(owner: FormatSparkOwner, reduced: boolean) {
+    if (owner.disposed || owner.frozen() || reduced || document.hidden || !owner.node.isConnected) return false
+    for (let node: HTMLElement | null = owner.node; node; node = node.parentElement) {
+        const style = getComputedStyle(node)
+        if (style.display === "none" || style.visibility === "hidden" || Number(style.opacity) <= .001) return false
+    }
+    const box = owner.node.getBoundingClientRect()
+    return box.width > 0 && box.height > 0 && box.bottom > 0 && box.top < window.innerHeight && box.right > 0 && box.left < window.innerWidth
+}
+function createFormatSparkManager() {
+    const owners = new Set<FormatSparkOwner>(), bursts: FormatSparkBurst[] = [], pending: FormatSparkSpawn[] = [], particles = new Set<FormatSparkParticle>(), records = new Map<string, FormatSparkRecord>()
+    const shared = formatDaughterResourceGate(), media = window.matchMedia("(prefers-reduced-motion: reduce)"), targets = new Map<HTMLElement, Set<FormatSparkOwner>>()
+    let timer = 0, frame = 0, serial = 0, clock = 0, disposed = false, cancelling = false, admission: FormatSparkAdmission | null = null
+    const allowed = (owner: FormatSparkOwner) => !disposed && formatSparkAllowed(owner, media.matches)
+    const release = (current: FormatSparkAdmission) => {
+        if (admission !== current) return
+        admission = null; if (shared.flight === current.token) shared.flight = null
+        for (const notify of Array.from(shared.waiters)) notify()
+    }
+    const removeRecord = (record: FormatSparkRecord) => {
+        if (records.get(record.url) === record) records.delete(record.url)
+        const current = admission?.record === record ? admission : null
+        if (current) current.cancelled = true
+        if (record.image) { record.image.onload = null; record.image.onerror = null; record.image.removeAttribute("src"); record.image = null }
+        if (current && !current.decoding) release(current)
+    }
+    const removeParticle = (particle: FormatSparkParticle) => {
+        if (!particles.delete(particle)) return
+        particle.element.removeAttribute("src"); particle.element.remove()
+        const record = particle.record; particle.record = null
+        if (record) { record.particles.delete(particle); if (!record.ready && !record.particles.size) removeRecord(record) }
+    }
+    const prune = () => { for (let i = bursts.length - 1; i >= 0; i--) if (!pending.some(job => job.burst === bursts[i]) && !Array.from(particles).some(p => p.burst === bursts[i])) bursts.splice(i, 1) }
+    const stopIdle = () => { if (!pending.length && timer) { window.clearTimeout(timer); timer = 0 }; if (!particles.size && frame) { window.cancelAnimationFrame(frame); frame = 0 }; prune() }
+    const cancelBurst = (burst: FormatSparkBurst) => {
+        const was = cancelling; cancelling = true
+        for (let i = pending.length - 1; i >= 0; i--) if (pending[i].burst === burst) pending.splice(i, 1)
+        for (const particle of Array.from(particles)) if (particle.burst === burst) removeParticle(particle)
+        const index = bursts.indexOf(burst); if (index >= 0) bursts.splice(index, 1)
+        cancelling = was
+    }
+    const cancelOwner = (owner: FormatSparkOwner) => { const was = cancelling; cancelling = true; for (const burst of bursts.slice()) if (burst.owner === owner) cancelBurst(burst); cancelling = was; stopIdle(); scheduleTimer(); pump() }
+    const clear = () => { const was = cancelling; cancelling = true; if (timer) window.clearTimeout(timer); if (frame) window.cancelAnimationFrame(frame); timer = 0; frame = 0; for (const burst of bursts.slice()) cancelBurst(burst); for (const record of Array.from(records.values())) removeRecord(record); cancelling = was }
+    const attach = (particle: FormatSparkParticle, record: FormatSparkRecord) => {
+        if (particles.has(particle) && !particle.burst.owner.disposed && allowed(particle.burst.owner) && record.ready) particle.element.src = record.url
+    }
+    const pump = () => {
+        if (disposed || cancelling || admission || shared.flight || document.hidden || media.matches) return
+        const record = Array.from(records.values()).find(record => !record.ready && record.particles.size > 0)
+        if (!record) return
+        const image = new Image(), current: FormatSparkAdmission = { record, image, token: {}, decoding: false, cancelled: false }
+        admission = current; shared.flight = current.token; record.image = image; image.crossOrigin = "anonymous"; image.decoding = "async"
+        const failed = () => {
+            if (admission !== current) return
+            for (const particle of record.particles) particle.record = null
+            record.particles.clear(); removeRecord(record); release(current)
+        }
+        image.onerror = failed
+        image.onload = () => {
+            if (admission !== current || current.cancelled || disposed) return
+            current.decoding = true
+            let decoded: Promise<void>
+            try { decoded = image.decode() } catch { failed(); return }
+            Promise.resolve(decoded).then(() => {
+                if (admission !== current) return
+                if (current.cancelled || disposed || records.get(record.url) !== record) { release(current); return }
+                if (image.naturalWidth !== record.material.width || image.naturalHeight !== record.material.height) { failed(); return }
+                image.onload = null; image.onerror = null; record.ready = true; record.touch = ++clock
+                for (const particle of record.particles) attach(particle, record)
+                release(current)
+            }, failed)
+        }
+        image.src = record.url
+    }
+    const materialFor = (particle: FormatSparkParticle, material: FormatSparkMaterial) => {
+        const url = material.url; if (!url) return
+        let record = records.get(url)
+        if (!record) {
+            const size = material.width * material.height
+            const pixels = () => Array.from(records.values()).reduce((n, r) => n + r.material.width * r.material.height, 0)
+            const idle = Array.from(records.values()).filter(r => r.particles.size === 0 && r.ready).sort((a, b) => a.touch - b.touch)
+            while (idle.length && (records.size >= 4 || pixels() + size > FORMAT_SPARK_CACHE_PIXELS)) removeRecord(idle.shift()!)
+            if (records.size >= 4 || pixels() + size > FORMAT_SPARK_CACHE_PIXELS) return
+            record = { material, url, image: null, ready: false, particles: new Set(), touch: ++clock }; records.set(url, record)
+        }
+        particle.record = record; record.particles.add(particle); record.touch = ++clock
+        if (record.ready) attach(particle, record); else pump()
+    }
+    const animate = () => {
+        frame = 0; if (disposed) return
+        for (const particle of Array.from(particles)) {
+            if (!allowed(particle.burst.owner)) { cancelOwner(particle.burst.owner); continue }
+            formatSparkTick(particle)
+            particle.element.style.transform = `translate3d(${particle.x}px,${particle.y}px,0) rotate(${particle.turn}deg)`
+            if (particle.y > window.innerHeight + 400) removeParticle(particle)
+        }
+        stopIdle(); if (particles.size) frame = window.requestAnimationFrame(animate)
+    }
+    const spawn = (job: FormatSparkSpawn) => {
+        if (!allowed(job.burst.owner)) { cancelOwner(job.burst.owner); return }
+        const unit = window.innerWidth / 1440, element = document.createElement("img"), body = formatSparkBody(job.point, job.index, unit)
+        element.alt = ""; element.setAttribute("aria-hidden", "true"); element.setAttribute("data-format-daughter-spark", String(job.burst.serial) + ":" + job.index)
+        element.style.cssText = `position:fixed;left:0;top:0;width:${92 * unit}px;height:auto;margin-left:${-46 * unit}px;margin-top:${-46 * unit}px;z-index:55;pointer-events:none;will-change:transform;transform:translate3d(${job.point[0]}px,${job.point[1]}px,0)`
+        document.body.appendChild(element)
+        const particle: FormatSparkParticle = { ...body, burst: job.burst, element, record: null }; particles.add(particle)
+        materialFor(particle, job.burst.owner.materials[job.index]); if (!frame) frame = window.requestAnimationFrame(animate)
+    }
+    const runDue = () => { timer = 0; if (disposed) return; const now = performance.now(); for (const job of pending.slice().sort((a, b) => a.due - b.due || a.burst.serial - b.burst.serial || a.index - b.index)) if (job.due <= now + .1) { const index = pending.indexOf(job); if (index >= 0) { pending.splice(index, 1); spawn(job) } }; stopIdle(); scheduleTimer() }
+    const scheduleTimer = () => { if (timer) window.clearTimeout(timer); timer = 0; if (disposed || cancelling || !pending.length) return; timer = window.setTimeout(runDue, Math.max(0, Math.min(...pending.map(job => job.due)) - performance.now())) }
+    const suspend = () => { if (document.hidden || media.matches) clear() }
+    const observer = typeof IntersectionObserver === "undefined" ? null : new IntersectionObserver(entries => { for (const entry of entries) if (!entry.isIntersecting) for (const owner of targets.get(entry.target as HTMLElement) ?? []) if (!allowed(owner)) cancelOwner(owner) })
+    const resume = () => pump(); shared.waiters.add(resume)
+    document.addEventListener("visibilitychange", suspend); media.addEventListener("change", suspend)
+    const api = {
+        register: (owner: FormatSparkOwner) => {
+            owners.add(owner); let set = targets.get(owner.node); if (!set) { set = new Set(); targets.set(owner.node, set); observer?.observe(owner.node) }; set.add(owner)
+            return () => { owner.disposed = true; cancelOwner(owner); owners.delete(owner); const set = targets.get(owner.node); set?.delete(owner); if (!set?.size) { targets.delete(owner.node); observer?.unobserve(owner.node) }; if (!owners.size) api.dispose() }
+        },
+        burst: (owner: FormatSparkOwner, point: FormatSparkPoint) => {
+            if (!owners.has(owner) || !allowed(owner) || owner.materials.length !== 4 || owner.materials.some(material => !material.url)) return
+            while (bursts.length >= FORMAT_SPARK_BURSTS) cancelBurst(bursts[0])
+            const burst = { owner, serial: ++serial, point }, now = performance.now(); bursts.push(burst)
+            for (let index = 0; index < 4; index++) pending.push({ burst, index, point, due: now + index * 55 })
+            scheduleTimer()
+        },
+        debug: () => ({ owners: owners.size, bursts: bursts.length, burstPoints: bursts.map(burst => ({ serial: burst.serial, point: burst.point })), particles: particles.size, pending: pending.length, records: records.size, naturalPixels: Array.from(records.values()).reduce((n, r) => n + r.material.width * r.material.height, 0), admission: admission ? 1 : 0, sharedFlight: shared.flight ? 1 : 0, timer: timer ? 1 : 0, frame: frame ? 1 : 0 }),
+        dispose: () => { if (disposed) return; disposed = true; shared.waiters.delete(resume); clear(); observer?.disconnect(); document.removeEventListener("visibilitychange", suspend); media.removeEventListener("change", suspend); targets.clear(); owners.clear(); const scope = window as unknown as { [key: symbol]: unknown }; if (scope[FORMAT_SPARK_MANAGER_KEY] === api) delete scope[FORMAT_SPARK_MANAGER_KEY] },
+    }
+    return api
+}
+function formatSparkManager() {
+    const scope = window as unknown as { [key: symbol]: ReturnType<typeof createFormatSparkManager> | undefined }
+    return scope[FORMAT_SPARK_MANAGER_KEY] ?? (scope[FORMAT_SPARK_MANAGER_KEY] = createFormatSparkManager())
+}
+function formatSparkObserve(Component: NativeLayer): NativeLayer {
+    return React.forwardRef<HTMLElement, LayerProps>((input, ref) => {
+        const { __formatDaughterSparkBridge, ...props } = input, bridge = __formatDaughterSparkBridge as FormatSparkBridge
+        const run = (channel: NativeActivationChannel, event: FormatSparkEvent, handler: () => void) => {
+            const prior = bridge.active, before = toggles.daughter, attempt: FormatSparkAttempt = { channel, before, callerState: before, callerSeen: false, cancelled: !!event.defaultPrevented, point: formatSparkPoint(event, bridge.owner) }
+            bridge.active = attempt
+            try {
+                handler()
+                if (attempt.callerSeen && !attempt.cancelled && attempt.callerState === before && !before && toggles.daughter && attempt.point && bridge.owner) formatSparkManager().burst(bridge.owner, attempt.point)
+            } finally { bridge.active = prior }
+        }
+        return <Component {...props} ref={ref} onClick={(event: React.MouseEvent<HTMLElement>) => run("click", event, () => props.onClick?.(event))} onTap={(event: NativeActivationEvent, info?: unknown) => run("tap", event, () => props.onTap?.(event, info))} onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => run("key", event, () => props.onKeyDown?.(event))} />
+    }) as NativeLayer
+}
+export function withFormatDaughterSparks(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    const Legacy = withFormatDaughterButton(formatSparkObserve(Component))
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = formatDaughterFrozen(useIsStaticRenderer()), frozenNow = React.useRef(frozen), bridge = React.useRef<FormatSparkBridge>({ active: null, owner: null }), [node, setNode] = React.useState<HTMLElement | null>(null)
+        frozenNow.current = frozen
+        const bind = React.useCallback((node: HTMLElement | null) => { setNode(node); formatDaughterRef(ref, node) }, [ref])
+        useFormatDaughterLayoutEffect(() => {
+            if (!node || frozen) return
+            const owner: FormatSparkOwner = { node, materials: FORMAT_SPARK_MATERIALS, frozen: () => frozenNow.current, disposed: false }; bridge.current.owner = owner
+            const remove = formatSparkManager().register(owner)
+            return () => { if (bridge.current.owner === owner) bridge.current.owner = null; remove() }
+        }, [node, frozen, FORMAT_SPARK_REVISION])
+        const caller = (channel: NativeActivationChannel, event: NativeActivationEvent) => { const attempt = bridge.current.active; if (attempt?.channel === channel) { attempt.callerSeen = true; attempt.cancelled = !!event.defaultPrevented; attempt.callerState = toggles.daughter } }
+        return <Legacy {...props} ref={bind} __formatDaughterSparkBridge={bridge.current}
+            onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); caller("click", event) }}
+            onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); caller("tap", event) }}
+            onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); caller("key", event) }} />
+    }) as NativeLayer
+}

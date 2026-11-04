@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-013",
+  "classification": "Source inspiration / genuine comparison-only bitmap fixtures",
+  "credit": "FORMAT / Obys × DES",
+  "sourceSite": "https://format.obys.agency/",
+  "purpose": "Four exact genuine source WebPs for local tests; runtime uses manual verifiedFramerURLs, without asset synchronization.",
+  "totalBytes": 212036,
+  "totalNaturalPixels": 276806,
+  "actualDelivery": {
+    "receiptSHA256": "1b1a999c99807a9ba5ba748c2e358a9303639fc5b424670b9f189dd8b111f9c5",
+    "receiptBytes": 10508,
+    "count": 4,
+    "allPublicOriginalBytesAndFullWHRGBAAlphaExact": true
+  },
+  "assets": [
+    {
+      "key": "a",
+      "relativePath": "spark-a.webp",
+      "sourceURL": "https://format.obys.agency/kid/spark/spark-a.webp",
+      "bytes": 35988,
+      "sha256": "6580a99320e869654d8977243c53de049e53ccfb748bb13792c394c399d83217",
+      "width": 221,
+      "height": 304,
+      "hasAlpha": true,
+      "finalFramerURL": "https://framerusercontent.com/images/i8ll2Cv87bMowMKajzzzKehwEWs.webp",
+      "publicSHA256": "6580a99320e869654d8977243c53de049e53ccfb748bb13792c394c399d83217",
+      "publicBytes": 35988,
+      "rgbaExact": true,
+      "alphaExact": true
+    },
+    {
+      "key": "b",
+      "relativePath": "spark-b.webp",
+      "sourceURL": "https://format.obys.agency/kid/spark/spark-b.webp",
+      "bytes": 63540,
+      "sha256": "a2f435ba674eacabeb110a51c2428757daa86b2a40cd0a825d033ca5f14019fa",
+      "width": 283,
+      "height": 246,
+      "hasAlpha": true,
+      "finalFramerURL": "https://framerusercontent.com/images/Z5VpKbzKscUUcarw2wN08hBIYH8.webp",
+      "publicSHA256": "a2f435ba674eacabeb110a51c2428757daa86b2a40cd0a825d033ca5f14019fa",
+      "publicBytes": 63540,
+      "rgbaExact": true,
+      "alphaExact": true
+    },
+    {
+      "key": "c",
+      "relativePath": "spark-c.webp",
+      "sourceURL": "https://format.obys.agency/kid/spark/spark-c.webp",
+      "bytes": 46658,
+      "sha256": "0f8f0d49be0a07834ac1a6e12e969c44a2623db1623c702cf42f20f30b46c82b",
+      "width": 203,
+      "height": 321,
+      "hasAlpha": true,
+      "finalFramerURL": "https://framerusercontent.com/images/F1NvRCX4KRo20F7tlZmZmXiy8k.webp",
+      "publicSHA256": "0f8f0d49be0a07834ac1a6e12e969c44a2623db1623c702cf42f20f30b46c82b",
+      "publicBytes": 46658,
+      "rgbaExact": true,
+      "alphaExact": true
+    },
+    {
+      "key": "d",
+      "relativePath": "spark-d.webp",
+      "sourceURL": "https://format.obys.agency/kid/spark/spark-d.webp",
+      "bytes": 65850,
+      "sha256": "99fb5c0523d3a2aaf14fe53abe0b9e1f849737a696858f401b3175303e2e63de",
+      "width": 303,
+      "height": 247,
+      "hasAlpha": true,
+      "finalFramerURL": "https://framerusercontent.com/images/xas7I3OccsW6yp5T3pHoOCqH8E.webp",
+      "publicSHA256": "99fb5c0523d3a2aaf14fe53abe0b9e1f849737a696858f401b3175303e2e63de",
+      "publicBytes": 65850,
+      "rgbaExact": true,
+      "alphaExact": true
+    }
+  ],
+  "old49HeldDecode": {
+    "key": "vertical",
+    "relativePath": "old49-vertical.webp",
+    "sourceURL": "https://format.obys.agency/kid/vertical.webp",
+    "bytes": 594718,
+    "sha256": "34cc81fe3f141704d0429cd42f7185719fc90eb6713cac88aa76161d4ae0f689",
+    "width": 670,
+    "height": 852,
+    "hasAlpha": true,
+    "policy": "Reuse existing49source-media Nix input viaMONARCHIC_FORMAT_CACHED_MEDIA_ROOT/kid-assets/vertical.webp or directMONARCHIC_FORMAT_SPARK_OLD49_MEDIA_PATH. No additional runtime bitmap or duplicate upstreamJS."
+  }
+}
