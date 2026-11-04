@@ -93,7 +93,11 @@ adds the observed horizontal mouse tracking, drag return/commit and photo click
 activation to the four editable images. It uses the source rounded20% threshold,
 suppresses photo activation after drags beyond10px, and starts500ms ease-in-out
 transitions from the live photo positions. The one-RAF prepared startup, wide
-drag clamp, leave/cancel/tiny/Phone adaptations and source unknowns stay explicit.
+drag clamp and cancel handling remain explicit boundaries. A later
+[source input observation](assets/source-macmoss-gallery-input-observations.json)
+confirms the10/11px click ordering, source mouseleave commit, Phone horizontal
+swipe and vertical page scrolling. Current4d still needs the leave and Touch
+corrections; source observation does not establish recreation behavior.
 
 The existing5 static,47 browser and44 native-tap checks pass, alongside70 focused
 assertions and four real-time CSS interpolation cases. The portable70/4 entries

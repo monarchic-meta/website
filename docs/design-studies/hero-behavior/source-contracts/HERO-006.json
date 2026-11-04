@@ -194,5 +194,16 @@
     "actualPointerRefForwardingVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "galleryInputObservations": {
+    "status": "SOURCE_TINY_LEAVE_TOUCH_AND_VERTICAL_SCROLL_OBSERVED_CURRENT4D_GAPS_CONFIRMED",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-input-observations.json",
+      "bytes": 5805,
+      "sha256": "d4bbd32fb4d4379f138f8a38d64f191a2e382cefdcdcc3b321e48384d3965bb1"
+    },
+    "observed": "Trusted Desktop tiny/leave and Phone horizontal/vertical source input; current4d still returns on leave and omits Touch dragging.",
+    "recreationChangeAuthored": false,
+    "actualPreviewReloadVerified": false
   }
 }

@@ -1,0 +1,86 @@
+{
+  "reference": "HERO-006",
+  "classification": "Source inspiration / source input observation, separate from recreation validation",
+  "creator": "Mac Moss Studio",
+  "source": "https://macmoss.studio/",
+  "status": "SOURCE_TINY_LEAVE_TOUCH_AND_VERTICAL_SCROLL_OBSERVED_CURRENT4D_GAPS_CONFIRMED",
+  "identity": "Current Cargo gallery with four retained Idaho image identities/order and slideshow configuration; every context passed identity guards.",
+  "evidence": {
+    "desktopAndHorizontalTouch": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-observation-v3/overall-result.json",
+      "bytes": 2641,
+      "sha256": "27735a07b010d2155251093e9265c80fd0b5eee427b954b1f0609f16a6f641e3"
+    },
+    "desktop": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-observation-v3/attempt-003-desktop/result.json",
+      "bytes": 410567,
+      "sha256": "76930179776a4e9726503e0bb8e443404d51f6620b1f92f015477a0f58a524f9"
+    },
+    "phoneHorizontal": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-observation-v3/attempt-003-phone/result.json",
+      "bytes": 231321,
+      "sha256": "3a91920b5c337d983b487131f387c19751ff0dedb91d0248c25b120f360f26ac"
+    },
+    "phoneVerticalClosure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-vertical-scroll-observation-v1/overall-result.json",
+      "bytes": 1683,
+      "sha256": "0ad1234773b01fb08ce691e5ec948eeb456a275625bf7925ddf78047333eec70"
+    },
+    "phoneVertical": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-vertical-scroll-observation-v1/attempt-004-phone/result.json",
+      "bytes": 142214,
+      "sha256": "250a10464f59cc90a34d40f449773ac193e203e1b18a2689c731e6a8c45f9961"
+    },
+    "launcherFailure": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-vertical-scroll-observation-v1/launcher-preflight-failure.json",
+      "bytes": 167,
+      "sha256": "4d418037e5c2699a309b2d11be6ec5d308897137b083d14970410bc3e2c76fd2"
+    }
+  },
+  "observations": {
+    "desktop": {
+      "plainPhotoClick": "Advances one slide during trusted click dispatch.",
+      "tiny10Pixels": "Track follows10px and returns. shouldClick remains true; trusted click capture/bubble occurs while return animation is active and does not advance.",
+      "tiny11Pixels": "Track follows11px and returns. shouldClick is false and the gallery click does not reach document/gallery.",
+      "leave": "Last inside drag743px of828px commits index1→2 during mouseout capture→bubble, before mouseup outside. Mouseup outside does not change selection.",
+      "explicitPointerCapture": "No Desktop capture events observed; retained bundle has no explicit setPointerCapture. This is not a no-capture claim for Touch."
+    },
+    "phone": {
+      "viewport": [
+        390,
+        720
+      ],
+      "listWidth": 349,
+      "tap": "Trusted tap advances one slide during click dispatch.",
+      "horizontal": "175px left swipe follows pointer and commits at touchend; page scrollY1968 stays fixed.",
+      "capture": "Native implicit Touch got/lostpointercapture observed despite no explicit source setPointerCapture.",
+      "vertical": "One downward vertical swipe scrolls pageY1968→1844; index0 and settled track−349 remain unchanged. touchmove is not prevented at capture or bubble. Pointercancel/lostTouchcapture occur during native scrolling.",
+      "touchActionChain": "Gallery ancestor computes pan-y; list and track compute auto. Effective source policy must include the ancestor, not only the list."
+    }
+  },
+  "recreationBoundary": {
+    "currentSourceSHA256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1",
+    "currentSourceBytes": 21991,
+    "mouseLeave": "Current defensive return differs from observed source commit.",
+    "touch": "Current actor admits mouse dragging only; Touch tracking must be implemented.",
+    "tiny": "Existing10/11px semantics are source-supported and must be preserved.",
+    "actualFramerForwardingPreviewReloadVerified": false
+  },
+  "scope": {
+    "anonymousOwnedBrowsersOnly": true,
+    "connectedDesktopOrIAB": false,
+    "cookiesOrStorageImported": false,
+    "sourceOrCanonicalWritesDuringObservation": 0,
+    "allContextsAndBrowsersClosed": true,
+    "syntheticDOMCancelSent": false,
+    "sourceBehaviorAndIdentitiesVerified": true,
+    "fullSourceImagePaintClaimed": false,
+    "mediaNote": "Some snapshots retain1px Cargo lazy placeholders; these traces prove input/state and identity, not source media fidelity.",
+    "launcherNote": "An initial shell stderr redirection path failed before process start, browser launch or source requests; the corrected single Phone observation is retained separately."
+  },
+  "remaining": [
+    "Pointercancel/lostcapture outside the observed native vertical-scroll path remain unobserved source boundaries.",
+    "Wide-drag clamp reachability remains unobserved;743/828px did not reach the current±1 clamp.",
+    "Timezone, project navigation, native Video lifecycle and actual Framer Preview/reload are separate work."
+  ]
+}

@@ -252,8 +252,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-006.json",
-        "bytes": 12783,
-        "sha256": "de027750c27088783537559956cbc64d94ab4917f1c1c23b4416f2ba29342a74"
+        "bytes": 13434,
+        "sha256": "32375528dfbd1810c20bff64441f74f1841035715a8f8cc0f3782198f404e389"
       },
       "page": {
         "id": "ldRKcp3QP",
@@ -874,7 +874,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3896,
-    "sha256": "3b7aa2a91f58ae43d3be85b6cd9f70109950e4ae9d2ef3aec99fcb7d7bf2ef99"
+    "sha256": "8b686740424a9c6fff2da0c90c5211b0a326f399f2590af2c5c85a755edaa505"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",
