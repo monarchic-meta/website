@@ -35,12 +35,19 @@ type LayerProps = {
     onTap?: (event: NativeTapEvent, info?: unknown) => void
 }
 type Vec = readonly [number, number, number]
+type Quat = readonly [number, number, number, number]
+type PlaneLift = {
+    liftT: number; inOverlay: boolean; cooldown: number; opacity: number
+    snapPos: Vec; snapQuat: Quat; worldPos: Vec; worldQuat: Quat
+}
+function freshLift(): PlaneLift { return { liftT: 0, inOverlay: false, cooldown: 0, opacity: 1, snapPos: [0, 0, 0], snapQuat: [0, 0, 0, 1], worldPos: [0, 0, 0], worldQuat: [0, 0, 0, 1] } }
 type State = {
     width: number; height: number; time: number; angle: number; frozen: boolean
     hovered: number; pinned: number; dragged: React.MutableRefObject<boolean>
     setHovered: (i: number) => void; setPinned: (i: number) => void
+    lifts: React.MutableRefObject<PlaneLift[]>
 }
-const DEFAULT: State = { width: 647, height: 647, time: 0, angle: 0, frozen: true, hovered: -1, pinned: -1, dragged: { current: false }, setHovered() {}, setPinned() {} }
+const DEFAULT: State = { width: 647, height: 647, time: 0, angle: 0, frozen: true, hovered: -1, pinned: -1, dragged: { current: false }, lifts: { current: [] }, setHovered() {}, setPinned() {} }
 const FieldContext = React.createContext<State>(DEFAULT)
 const WorkTerminalContext = React.createContext(false)
 const useOwnLayoutEffect = typeof window === "undefined" ? React.useEffect : React.useLayoutEffect
@@ -52,6 +59,30 @@ const POINTS: Vec[] = Array.from({ length: 40 }, (_, i) => {
 const clamp = (x: number) => Math.max(0, Math.min(1, x))
 function out(t: number) { return 1 - (1 - clamp(t)) ** 3 }
 function normalize(v: Vec): Vec { const n = Math.hypot(...v) || 1; return [v[0] / n, v[1] / n, v[2] / n] }
+function basisQuat(right: Vec, up: Vec, normal: Vec): Quat {
+    const [m11, m21, m31] = right, [m12, m22, m32] = up, [m13, m23, m33] = normal
+    const trace = m11 + m22 + m33
+    let x = 0, y = 0, z = 0, w = 1
+    if (trace > 0) { const s = .5 / Math.sqrt(trace + 1); w = .25 / s; x = (m32 - m23) * s; y = (m13 - m31) * s; z = (m21 - m12) * s }
+    else if (m11 > m22 && m11 > m33) { const s = 2 * Math.sqrt(1 + m11 - m22 - m33); w = (m32 - m23) / s; x = .25 * s; y = (m12 + m21) / s; z = (m13 + m31) / s }
+    else if (m22 > m33) { const s = 2 * Math.sqrt(1 + m22 - m11 - m33); w = (m13 - m31) / s; x = (m12 + m21) / s; y = .25 * s; z = (m23 + m32) / s }
+    else { const s = 2 * Math.sqrt(1 + m33 - m11 - m22); w = (m21 - m12) / s; x = (m13 + m31) / s; y = (m23 + m32) / s; z = .25 * s }
+    const length = Math.hypot(x, y, z, w) || 1
+    return [x / length, y / length, z / length, w / length]
+}
+function slerpQuat(a: Quat, b: Quat, t: number): Quat {
+    let dot = a.reduce((sum, value, i) => sum + value * b[i], 0), target = b
+    if (dot < 0) { target = [-b[0], -b[1], -b[2], -b[3]]; dot = -dot }
+    if (dot > .9995) { const q = a.map((value, i) => value + (target[i] - value) * t), length = Math.hypot(...q) || 1; return q.map(value => value / length) as unknown as Quat }
+    const theta = Math.acos(Math.min(1, dot)), inverse = 1 / Math.sin(theta)
+    const left = Math.sin((1 - t) * theta) * inverse, right = Math.sin(t * theta) * inverse
+    return a.map((value, i) => value * left + target[i] * right) as unknown as Quat
+}
+function quatBasis(q: Quat): { right: Vec; up: Vec; normal: Vec } {
+    const [x, y, z, w] = q, xx = x * x, yy = y * y, zz = z * z
+    return { right: [1 - 2 * (yy + zz), 2 * (x * y + z * w), 2 * (x * z - y * w)], up: [2 * (x * y - z * w), 1 - 2 * (xx + zz), 2 * (y * z + x * w)], normal: [2 * (x * z + y * w), 2 * (y * z - x * w), 1 - 2 * (xx + yy)] }
+}
+function mixVec(a: Vec, b: Vec, t: number): Vec { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t] }
 function mergeRef<T>(ref: React.ForwardedRef<T>, node: T | null) { if (typeof ref === "function") ref(node); else if (ref) ref.current = node }
 
 export function withBleibtProjectField(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
@@ -63,7 +94,8 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
         const [reduced, setReduced] = React.useState(false)
         const [pose, setPose] = React.useState({ time: 0, angle: 0 })
         const [hovered, setHovered] = React.useState(-1)
-        const [pinned, setPinned] = React.useState(-1)
+        const [pinned, setPinnedState] = React.useState(-1)
+        const lifts = React.useRef<PlaneLift[]>(Array.from({ length: 16 }, freshLift))
         const pinnedRef = React.useRef(-1)
         pinnedRef.current = pinned
         const pointerInside = React.useRef(false)
@@ -71,6 +103,17 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
         const drag = React.useRef<{ id: number; start: number; last: number } | null>(null)
         const velocity = React.useRef(0), angle = React.useRef(0), elapsed = React.useRef(0), idle = React.useRef(0)
         const drift = React.useRef(.003), driftTarget = React.useRef(.003)
+        const setPinned = (index: number) => {
+            if (index >= 0) {
+                const lift = lifts.current[index]
+                // Snapshot the last committed logical CSS target. Existing
+                // 100ms hover paint may still be interpolating; this is a fit,
+                // not a computed-style capture of the source mesh world pose.
+                if (!lift.inOverlay) { lift.snapPos = lift.worldPos; lift.snapQuat = lift.worldQuat; lift.inOverlay = true }
+                lift.cooldown = 0; lift.opacity = 1
+            }
+            pinnedRef.current = index; setPinnedState(index)
+        }
         const trackMouseInside = (e: React.PointerEvent<HTMLElement>) => {
             if (frozen || reduced || !visible || e.pointerType !== "mouse") return
             const bounds = e.currentTarget.getBoundingClientRect()
@@ -110,13 +153,33 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
                 drift.current += (driftTarget.current - drift.current) * (drag.current ? .18 : .03) * step
                 velocity.current *= Math.pow(drag.current ? .9 : .94, step)
                 angle.current += (velocity.current + drift.current) * step
+                // Source pin lift shares this field clock. Preserve its zero
+                // overlay integration step before reattaching; the existing
+                // 30Hz publication may coalesce that step before it is painted.
+                lifts.current.forEach((lift, index) => {
+                    if (lift.cooldown > 0) lift.cooldown = Math.max(0, lift.cooldown - dt)
+                    const selected = pinnedRef.current === index
+                    if (!selected && lift.inOverlay && lift.liftT === 0) { lift.inOverlay = false; lift.cooldown = .4 }
+                    if (!lift.inOverlay) return
+                    const target = selected ? 1 : 0
+                    lift.liftT += .12 * (target - lift.liftT) * step
+                    if (!target && lift.liftT < .005) lift.liftT = 0
+                    else if (target && lift.liftT > .995) lift.liftT = 1
+                    if (selected) lift.opacity = 1
+                    else {
+                        const original = POINTS[index], dot = original[2] * Math.cos(angle.current) - original[0] * Math.sin(angle.current)
+                        const facingOpacity = dot > .25 ? 1 : dot > 0 ? .1 + dot / .25 * .9 : .1
+                        const opacityTarget = lift.liftT + facingOpacity * (1 - lift.liftT)
+                        lift.opacity += .12 * (opacityTarget - lift.opacity) * step
+                    }
+                })
                 if (now - published >= 1000 / 30) { published = now; setPose({ time: elapsed.current, angle: angle.current }) }
                 frame = window.requestAnimationFrame(tick)
             }
             frame = window.requestAnimationFrame(tick)
             return () => { window.cancelAnimationFrame(frame); pointerInside.current = false }
         }, [frozen, reduced, visible])
-        const state: State = { ...size, ...pose, frozen: frozen || reduced, hovered, pinned, dragged, setHovered, setPinned }
+        const state: State = { ...size, ...pose, frozen: frozen || reduced, hovered, pinned, dragged, lifts, setHovered, setPinned }
         const halfFov = 24 * Math.PI / 180
         const perspective = size.height / (2 * Math.tan(halfFov))
         return <FieldContext.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; mergeRef(ref, node) }}
@@ -158,6 +221,9 @@ function plane(index: number, Component: ComponentType<LayerProps>): ComponentTy
         const reveal = state.frozen ? 1 : out((state.time - index * .015) / 1.4)
         const breath = state.frozen ? 0 : (.5 * (Math.sin((state.time * .1 + original[1] * 1.85 * 1.5) * Math.PI * 2) + 1)) * .1
         const selected = state.pinned === index
+        const lift = state.lifts.current[index]
+        const overlay = !state.frozen && !!lift?.inOverlay
+        const canHover = !overlay && !(lift?.cooldown)
         const lastActivation = React.useRef<{ channel: "tap" | "click"; at: number } | null>(null)
         const activate = (channel: "tap" | "click", prevented: boolean) => {
             const at = typeof performance === "undefined" ? Date.now() : performance.now()
@@ -167,23 +233,24 @@ function plane(index: number, Component: ComponentType<LayerProps>): ComponentTy
             // while allowing consecutive gestures from either individual channel.
             if (previous && previous.channel !== channel && at - previous.at < 350) return
             lastActivation.current = { channel, at }
-            if (!state.frozen && !prevented && !state.dragged.current && n[2] > .05 && reveal > .995) state.setPinned(selected ? -1 : index)
+            if (!state.frozen && !prevented && !state.dragged.current && (selected || (canHover && n[2] > .05 && reveal > .995))) state.setPinned(selected ? -1 : index)
         }
-        const facing = selected || state.hovered === index
-        const normal: Vec = facing ? [0, 0, 1] : n
-        const right: Vec = facing ? [1, 0, 0] : r
-        const vertical: Vec = facing ? [0, 1, 0] : up
-        const scale = selected ? 3.2 : reveal
-        const x = selected ? 0 : n[0] * (1.85 + breath) * reveal
-        const y = selected ? 0 : n[1] * (1.85 + breath) * reveal
-        const z = selected ? 1.8 : n[2] * (1.85 + breath) * reveal
+        const facing = (state.frozen && selected) || (canHover && state.hovered === index)
+        const beltPos: Vec = [n[0] * (1.85 + breath) * reveal, n[1] * (1.85 + breath) * reveal, n[2] * (1.85 + breath) * reveal]
+        const beltQuat = basisQuat(r, up, n), frontQuat: Quat = [0, 0, 0, 1]
+        const worldPos: Vec = overlay ? mixVec(selected ? lift.snapPos : beltPos, [0, 0, 1.8], lift.liftT) : selected ? [0, 0, 1.8] : beltPos
+        const worldQuat = overlay ? slerpQuat(selected ? lift.snapQuat : beltQuat, frontQuat, lift.liftT) : facing ? frontQuat : beltQuat
+        const { right, up: vertical, normal } = quatBasis(worldQuat)
+        const scale = overlay ? 1 + (3.2 - 1) * lift.liftT : selected ? 3.2 : reveal
+        const [x, y, z] = worldPos
         const matrix = [right[0] * scale, -right[1] * scale, right[2] * scale, 0, -vertical[0] * scale, vertical[1] * scale, -vertical[2] * scale, 0, normal[0] * scale, -normal[1] * scale, normal[2] * scale, 0, x * unit, -y * unit, z * unit, 1].map(v => +v.toFixed(7)).join(",")
-        const opacity = selected || facing ? 1 : (n[2] > .25 ? 1 : n[2] > 0 ? .1 + n[2] / .25 * .9 : .1) * reveal
+        const opacity = overlay ? selected ? 1 : lift.opacity : selected || facing ? 1 : (n[2] > .25 ? 1 : n[2] > 0 ? .1 + n[2] / .25 * .9 : .1) * reveal
+        useOwnLayoutEffect(() => { if (lift) { lift.worldPos = worldPos; lift.worldQuat = worldQuat } }, [lift, x, y, z, worldQuat[0], worldQuat[1], worldQuat[2], worldQuat[3]])
         const width = .4 * unit, height = width / ASPECT[index]
         const native = props.style?.transform
-        return <Component {...props} ref={ref} data-source-bleibt-plane={index} data-source-plane-facing={n[2]} data-source-plane-reveal={reveal}
-            style={{ ...props.style, position: "absolute", left: "50%", top: "50%", width, height, translate: "-50% -50%", transform: `${native && native !== "none" ? native + " " : ""}matrix3d(${matrix})`, transformOrigin: "50% 50%", backfaceVisibility: "visible", opacity, zIndex: selected ? 999 : Math.round((z + 2) * 100), transition: state.frozen ? "none" : "transform 100ms linear, opacity 100ms linear" } as React.CSSProperties & { translate?: string }}
-            onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); if (!state.frozen && e.pointerType === "mouse" && n[2] > .05 && reveal > .995) state.setHovered(index) }}
+        return <Component {...props} ref={ref} data-source-bleibt-plane={index} data-source-plane-facing={n[2]} data-source-plane-reveal={reveal} data-source-plane-lift={overlay ? lift.liftT : 0} data-source-plane-overlay={overlay} data-source-plane-cooldown={lift?.cooldown ?? 0}
+            style={{ ...props.style, position: "absolute", left: "50%", top: "50%", width, height, translate: "-50% -50%", transform: `${native && native !== "none" ? native + " " : ""}matrix3d(${matrix})`, transformOrigin: "50% 50%", backfaceVisibility: "visible", opacity, zIndex: overlay ? selected ? 999 : 500 : selected ? 999 : Math.round((z + 2) * 100), transition: state.frozen || overlay ? "none" : "transform 100ms linear, opacity 100ms linear" } as React.CSSProperties & { translate?: string }}
+            onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); if (!state.frozen && canHover && e.pointerType === "mouse" && n[2] > .05 && reveal > .995) state.setHovered(index) }}
             onPointerLeave={(e: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(e); if (state.hovered === index) state.setHovered(-1) }}
             onClick={(e: React.MouseEvent<HTMLElement>) => { props.onClick?.(e); activate("click", e.defaultPrevented) }}
             onTap={(e: NativeTapEvent, info?: unknown) => { props.onTap?.(e, info); activate("tap", !!e.defaultPrevented) }}

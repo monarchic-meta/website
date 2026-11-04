@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reference": "HERO-017",
+  "classification": "Source inspiration / public-code inspection evidence, never an imported runtime",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "runtimeURL": "https://assets.slater.app/slater/20419/62015.js?v=629877",
+  "retainedRuntime": {
+    "sha256": "8b3779792648bf2aadd5b5e0c0bda61037e3183ea2a60001ba15719a5e0e2b17",
+    "bytes": 98108
+  },
+  "boundary": "These exact current public-code excerpts establish source operations. They are separate from source interaction observation, independent authored local proof and actual Framer Preview/reload.",
+  "operations": [
+    {
+      "name": "capture-and-reattach",
+      "line": 2,
+      "utf8ByteStart": 54251,
+      "utf8ByteEndExclusive": 54724,
+      "sha256": "bb30b13432073a094058b2246ab6dc21c5363ca49c32f7b11cd18670ff6c7530",
+      "bytes": 473,
+      "excerpt": "function l(e){e.inOverlay||(e.mesh.getWorldPosition(e.snapPos),e.mesh.getWorldQuaternion(e.snapQuat),te.remove(e.mesh),e.mesh.position.copy(e.snapPos),e.mesh.quaternion.copy(e.snapQuat),e.mesh.scale.setScalar(1),ne.add(e.mesh),e.inOverlay=!0)}function c(e){e.inOverlay&&(ne.remove(e.mesh),e.mesh.position.copy(e.origPos),e.mesh.quaternion.copy(e.origQuat),e.mesh.scale.setScalar(1),e.mesh.renderOrder=0,e.mat.depthTest=!0,e._t=0,e.cooldown=P,te.add(e.mesh),e.inOverlay=!1)}"
+    },
+    {
+      "name": "lift-and-release-opacity",
+      "line": 2,
+      "utf8ByteStart": 55527,
+      "utf8ByteEndExclusive": 56262,
+      "sha256": "f6a179029d0a17975ecc6b56714dae0ad8233d8ff63b9d38cd1b2842ab72507a",
+      "bytes": 735,
+      "excerpt": "const p=u?1:0;if(r.liftT+=.12*(p-r.liftT)*n,0===p&&r.liftT<.005?r.liftT=0:1===p&&r.liftT>.995&&(r.liftT=1),r.inOverlay){const e=r.origPos.y*F,t=o(ze+e)*I;B.copy(r.origPos).addScaledVector(r.origDir,t).applyQuaternion(G),Y.copy(r.origQuat).premultiply(G);const i=u?r.snapPos:B,a=u?r.snapQuat:Y;X.lerpVectors(i,J,r.liftT),r.mesh.position.copy(X),V.slerpQuaternions(a,ee,r.liftT),r.mesh.quaternion.copy(V);const s=1+(S-1)*r.liftT;if(r.mesh.scale.setScalar(s),r.mesh.renderOrder=u?O:D,r.mat.depthTest=!1,r.hoverable=!1,u)r.mat.opacity=1;else{Z.copy(K).applyQuaternion(r.origQuat).applyQuaternion(G),W.copy(E.position).normalize();const e=Z.dot(W),t=e>.25?1:e>0?.1+e/.25*.9:.1,o=r.liftT+t*(1-r.liftT);r.mat.opacity+=.12*(o-r.mat.opacity)*n}"
+    },
+    {
+      "name": "guarded-mesh-raycast",
+      "line": 2,
+      "utf8ByteStart": 54012,
+      "utf8ByteEndExclusive": 54067,
+      "sha256": "01b3b57662d0c0c14f4e087e813b37dee4c1082ab84c8b51d1bd7b7c59d7e804",
+      "bytes": 55,
+      "excerpt": "u.raycast=function(e,t){p.hoverable&&m.call(this,e,t)},"
+    },
+    {
+      "name": "ordinary-raycast-eligibility",
+      "line": 2,
+      "utf8ByteStart": 56801,
+      "utf8ByteEndExclusive": 56887,
+      "sha256": "448af131e4545b178fc695b43b5cd79be3b00bfc62d47697cd6c236784cb3cc9",
+      "bytes": 86,
+      "excerpt": "r.hoverable=i>.05&&0===r.cooldown&&\"shown\"===Be,r.mat.opacity+=.1*(l-r.mat.opacity)*n)"
+    },
+    {
+      "name": "click-uses-guarded-raycaster",
+      "line": 2,
+      "utf8ByteStart": 59991,
+      "utf8ByteEndExclusive": 60194,
+      "sha256": "a9f1b7bd517e0ec49226596ec92907ebef5a0692a1c935cf75ca08f75d26d4e5",
+      "bytes": 203,
+      "excerpt": "Oe=()=>{if(Le)return;be.setFromCamera(Ee,E);const e=be.intersectObjects(ie,!1),t=e.length?oe.find((t=>t.mesh===e[0].object)):null;t&&!t.pinned?(we&&d(),t.pinned=!0,t.cooldown=0,we=t,de(t.slug)):we&&u()},"
+    },
+    {
+      "name": "pin-lift-constants",
+      "line": 2,
+      "utf8ByteStart": 57576,
+      "utf8ByteEndExclusive": 57687,
+      "sha256": "97dd12e08306e41ad64802333efa8c6e8514b7926677e965b5ea3ed037bfdb58",
+      "bytes": 111,
+      "excerpt": "T=1.8,S=3.2,k=.11,M=.013,A=.9,L=.94,C=.003,R=1e3,P=.4,I=.1,q=.1,F=1.5,O=999,D=500,$=3,z=1.4,H=.015,U=.6,N=.008,"
+    }
+  ],
+  "canonicalImplementation": "Independent React/native CSS3D; no source JavaScript or Three runtime imported or executed."
+}

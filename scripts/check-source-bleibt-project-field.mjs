@@ -1,3 +1,4 @@
+import {runPinLiftProof} from './check-source-bleibt-pin-lift-proof.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -46,14 +47,16 @@ try{
  await page.screenshot({path:path.join(evidence,'02-native-source-picture-pinned.png')});
  await page.evaluate(()=>{document.body.style.minHeight='2400px';scrollTo(0,50)});await page.waitForFunction(()=>Number(refs.field.dataset.sourceFieldPinned)===-1);
  await page.evaluate(()=>{scrollTo(0,0);tapOnly=true;render()});await page.waitForTimeout(370);
- const tapChosen=await page.evaluate(()=>Array.from({length:16},(_,i)=>i).find(i=>Number(refs[i].dataset.sourcePlaneFacing)>.3));
+ const tapChosen=await page.evaluate(()=>Array.from({length:16},(_,i)=>i).find(i=>Number(refs[i].dataset.sourcePlaneFacing)>.3&&refs[i].dataset.sourcePlaneOverlay!=='true'&&Number(refs[i].dataset.sourcePlaneCooldown)===0));
  const beforeTap=await page.evaluate(()=>({click:calls,tap:tapCalls}));
  await page.locator('#picture-'+tapChosen).click({force:true});await page.waitForFunction(i=>Number(refs.field.dataset.sourceFieldPinned)===i,tapChosen);
  assert.deepEqual(await page.evaluate(()=>({click:calls,tap:tapCalls})),{click:beforeTap.click,tap:beforeTap.tap+1});
  await page.locator('#picture-'+tapChosen).click({force:true});await page.waitForFunction(()=>Number(refs.field.dataset.sourceFieldPinned)===-1);
  await page.evaluate(()=>{tapOnly=false;dualTap=true;render()});await page.waitForTimeout(370);
+ await page.waitForFunction(index=>refs[index].dataset.sourcePlaneOverlay!=='true'&&Number(refs[index].dataset.sourcePlaneCooldown)===0,tapChosen);
  await page.locator('#picture-'+tapChosen).click({force:true});await page.waitForFunction(i=>Number(refs.field.dataset.sourceFieldPinned)===i,tapChosen);
  await page.locator('#picture-'+tapChosen).click({force:true});await page.waitForFunction(()=>Number(refs.field.dataset.sourceFieldPinned)===-1);
+ await page.waitForFunction(index=>refs[index].dataset.sourcePlaneOverlay!=='true'&&Number(refs[index].dataset.sourcePlaneCooldown)===0,tapChosen);
  await page.evaluate(()=>cancelTap=true);await page.locator('#picture-'+tapChosen).click({force:true});await page.waitForTimeout(60);assert.equal(await page.evaluate(()=>Number(refs.field.dataset.sourceFieldPinned)),-1);
  await page.evaluate(()=>{cancelTap=false;dualTap=false;render()});await page.waitForTimeout(370);
  reports.push({case:'Native adapter drops onClick: tap-only pin/unpin, repeated gestures, dual-channel once and canceled tap suppresses fallback click',tapChosen});
@@ -274,6 +277,7 @@ try{
  fs.writeFileSync(path.join(evidence,'focused-numeric-trace.json'),JSON.stringify(focusedTrace,null,2)+'\n');
  reports.push({case:'Focused actor cleanup leaves no RAF or graphics resources',numericCases:focusedTrace.length});
 
+ await runPinLiftProof(page,{source,ts,evidence,reports,hash});
  await page.close();
 }catch(error){
  const failurePage=browser.contexts().flatMap(context=>context.pages()).at(-1);
@@ -281,4 +285,4 @@ try{
  if(failurePage){await failurePage.screenshot({path:path.join(evidence,'failure.png')}).catch(()=>{});fs.writeFileSync(path.join(evidence,'failure.html'),await failurePage.content().catch(()=>''));failure.lastDOM=await failurePage.evaluate(()=>({focused:document.querySelector('#focused-field')?.outerHTML,frames:window.frames?.size,manualFrames:window.manualFrames?.size,counts:window.focusCounts,manualNow:window.manualNow})).catch(()=>null)}
  fs.writeFileSync(path.join(evidence,'failure.json'),JSON.stringify(failure,null,2)+'\n');throw error;
 }finally{await browser.close()}
-assert.deepEqual(errors,[]);const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),reports,errors,scope:'Actual React18 native DOM projection, pointer drag/hover/click, scrolling and lifecycle. Source parameter geometry and original effect fidelity are distinct; CSS3D hover/pin easing is a declared fit. This candidate has no new Framer binding/persistence verification; the earlier bounded saved Preview evidence remains separate.'};fs.writeFileSync(path.join(evidence,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,sourceSHA256:result.sourceSHA256,reports:reports.length,evidence},null,2));
+assert.deepEqual(errors,[]);const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),reports,errors,scope:'Actual React18 native DOM projection, pointer drag/hover/click, scrolling and lifecycle. Source parameter geometry and original effect fidelity are distinct; CSS3D projection, the committed CSS-target snapshot and 30Hz presentation remain declared fits; the source pin-lift recurrence is checked independently. This candidate has no new Framer binding/persistence verification; the earlier bounded saved Preview evidence remains separate.'};fs.writeFileSync(path.join(evidence,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,sourceSHA256:result.sourceSHA256,reports:reports.length,evidence},null,2));

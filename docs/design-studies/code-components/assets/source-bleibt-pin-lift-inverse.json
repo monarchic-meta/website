@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "indexUnits": "UTF-16 code units",
+  "applicationOrder": "Apply listed reverse operations in descending source coordinate order. Each before string must match exactly.",
+  "source": {
+    "path": "docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+    "bytes": 25781,
+    "sha256": "60b4d8b26c998cb85e446d52d2c9ed953dba1b9eb8c96a1da270bdfdd49d3648"
+  },
+  "preimage": {
+    "fixtureId": "HERO017-source9b-before-continuous-pin-lift",
+    "path": "docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+    "bytes": 20234,
+    "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec",
+    "storage": "Reconstruct exact9b from current60b with these compact inverse operations; no duplicate baseline source file."
+  },
+  "reverse": [
+    {
+      "start": 18504,
+      "length": 1001,
+      "before": "        return <Component {...props} ref={ref} data-source-bleibt-plane={index} data-source-plane-facing={n[2]} data-source-plane-reveal={reveal} data-source-plane-lift={overlay ? lift.liftT : 0} data-source-plane-overlay={overlay} data-source-plane-cooldown={lift?.cooldown ?? 0}\n            style={{ ...props.style, position: \"absolute\", left: \"50%\", top: \"50%\", width, height, translate: \"-50% -50%\", transform: `${native && native !== \"none\" ? native + \" \" : \"\"}matrix3d(${matrix})`, transformOrigin: \"50% 50%\", backfaceVisibility: \"visible\", opacity, zIndex: overlay ? selected ? 999 : 500 : selected ? 999 : Math.round((z + 2) * 100), transition: state.frozen || overlay ? \"none\" : \"transform 100ms linear, opacity 100ms linear\" } as React.CSSProperties & { translate?: string }}\n            onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); if (!state.frozen && canHover && e.pointerType === \"mouse\" && n[2] > .05 && reveal > .995) state.setHovered(index) }}\n",
+      "after": "        return <Component {...props} ref={ref} data-source-bleibt-plane={index} data-source-plane-facing={n[2]} data-source-plane-reveal={reveal}\n            style={{ ...props.style, position: \"absolute\", left: \"50%\", top: \"50%\", width, height, translate: \"-50% -50%\", transform: `${native && native !== \"none\" ? native + \" \" : \"\"}matrix3d(${matrix})`, transformOrigin: \"50% 50%\", backfaceVisibility: \"visible\", opacity, zIndex: selected ? 999 : Math.round((z + 2) * 100), transition: state.frozen ? \"none\" : \"transform 100ms linear, opacity 100ms linear\" } as React.CSSProperties & { translate?: string }}\n            onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); if (!state.frozen && e.pointerType === \"mouse\" && n[2] > .05 && reveal > .995) state.setHovered(index) }}\n"
+    },
+    {
+      "start": 18062,
+      "length": 332,
+      "before": "        const opacity = overlay ? selected ? 1 : lift.opacity : selected || facing ? 1 : (n[2] > .25 ? 1 : n[2] > 0 ? .1 + n[2] / .25 * .9 : .1) * reveal\n        useOwnLayoutEffect(() => { if (lift) { lift.worldPos = worldPos; lift.worldQuat = worldQuat } }, [lift, x, y, z, worldQuat[0], worldQuat[1], worldQuat[2], worldQuat[3]])\n",
+      "after": "        const opacity = selected || facing ? 1 : (n[2] > .25 ? 1 : n[2] > 0 ? .1 + n[2] / .25 * .9 : .1) * reveal\n"
+    },
+    {
+      "start": 17017,
+      "length": 766,
+      "before": "        const facing = (state.frozen && selected) || (canHover && state.hovered === index)\n        const beltPos: Vec = [n[0] * (1.85 + breath) * reveal, n[1] * (1.85 + breath) * reveal, n[2] * (1.85 + breath) * reveal]\n        const beltQuat = basisQuat(r, up, n), frontQuat: Quat = [0, 0, 0, 1]\n        const worldPos: Vec = overlay ? mixVec(selected ? lift.snapPos : beltPos, [0, 0, 1.8], lift.liftT) : selected ? [0, 0, 1.8] : beltPos\n        const worldQuat = overlay ? slerpQuat(selected ? lift.snapQuat : beltQuat, frontQuat, lift.liftT) : facing ? frontQuat : beltQuat\n        const { right, up: vertical, normal } = quatBasis(worldQuat)\n        const scale = overlay ? 1 + (3.2 - 1) * lift.liftT : selected ? 3.2 : reveal\n        const [x, y, z] = worldPos\n",
+      "after": "        const facing = selected || state.hovered === index\n        const normal: Vec = facing ? [0, 0, 1] : n\n        const right: Vec = facing ? [1, 0, 0] : r\n        const vertical: Vec = facing ? [0, 1, 0] : up\n        const scale = selected ? 3.2 : reveal\n        const x = selected ? 0 : n[0] * (1.85 + breath) * reveal\n        const y = selected ? 0 : n[1] * (1.85 + breath) * reveal\n        const z = selected ? 1.8 : n[2] * (1.85 + breath) * reveal\n"
+    },
+    {
+      "start": 16838,
+      "length": 169,
+      "before": "            if (!state.frozen && !prevented && !state.dragged.current && (selected || (canHover && n[2] > .05 && reveal > .995))) state.setPinned(selected ? -1 : index)\n",
+      "after": "            if (!state.frozen && !prevented && !state.dragged.current && n[2] > .05 && reveal > .995) state.setPinned(selected ? -1 : index)\n"
+    },
+    {
+      "start": 15964,
+      "length": 162,
+      "before": "        const lift = state.lifts.current[index]\n        const overlay = !state.frozen && !!lift?.inOverlay\n        const canHover = !overlay && !(lift?.cooldown)\n",
+      "after": ""
+    },
+    {
+      "start": 12184,
+      "length": 133,
+      "before": "        const state: State = { ...size, ...pose, frozen: frozen || reduced, hovered, pinned, dragged, lifts, setHovered, setPinned }\n",
+      "after": "        const state: State = { ...size, ...pose, frozen: frozen || reduced, hovered, pinned, dragged, setHovered, setPinned }\n"
+    },
+    {
+      "start": 10382,
+      "length": 1412,
+      "before": "                // Source pin lift shares this field clock. Preserve its zero\n                // overlay integration step before reattaching; the existing\n                // 30Hz publication may coalesce that step before it is painted.\n                lifts.current.forEach((lift, index) => {\n                    if (lift.cooldown > 0) lift.cooldown = Math.max(0, lift.cooldown - dt)\n                    const selected = pinnedRef.current === index\n                    if (!selected && lift.inOverlay && lift.liftT === 0) { lift.inOverlay = false; lift.cooldown = .4 }\n                    if (!lift.inOverlay) return\n                    const target = selected ? 1 : 0\n                    lift.liftT += .12 * (target - lift.liftT) * step\n                    if (!target && lift.liftT < .005) lift.liftT = 0\n                    else if (target && lift.liftT > .995) lift.liftT = 1\n                    if (selected) lift.opacity = 1\n                    else {\n                        const original = POINTS[index], dot = original[2] * Math.cos(angle.current) - original[0] * Math.sin(angle.current)\n                        const facingOpacity = dot > .25 ? 1 : dot > 0 ? .1 + dot / .25 * .9 : .1\n                        const opacityTarget = lift.liftT + facingOpacity * (1 - lift.liftT)\n                        lift.opacity += .12 * (opacityTarget - lift.opacity) * step\n                    }\n                })\n",
+      "after": ""
+    },
+    {
+      "start": 7155,
+      "length": 624,
+      "before": "        const setPinned = (index: number) => {\n            if (index >= 0) {\n                const lift = lifts.current[index]\n                // Snapshot the last committed logical CSS target. Existing\n                // 100ms hover paint may still be interpolating; this is a fit,\n                // not a computed-style capture of the source mesh world pose.\n                if (!lift.inOverlay) { lift.snapPos = lift.worldPos; lift.snapQuat = lift.worldQuat; lift.inOverlay = true }\n                lift.cooldown = 0; lift.opacity = 1\n            }\n            pinnedRef.current = index; setPinnedState(index)\n        }\n",
+      "after": ""
+    },
+    {
+      "start": 6552,
+      "length": 147,
+      "before": "        const [pinned, setPinnedState] = React.useState(-1)\n        const lifts = React.useRef<PlaneLift[]>(Array.from({ length: 16 }, freshLift))\n",
+      "after": "        const [pinned, setPinned] = React.useState(-1)\n"
+    },
+    {
+      "start": 3722,
+      "length": 2031,
+      "before": "function basisQuat(right: Vec, up: Vec, normal: Vec): Quat {\n    const [m11, m21, m31] = right, [m12, m22, m32] = up, [m13, m23, m33] = normal\n    const trace = m11 + m22 + m33\n    let x = 0, y = 0, z = 0, w = 1\n    if (trace > 0) { const s = .5 / Math.sqrt(trace + 1); w = .25 / s; x = (m32 - m23) * s; y = (m13 - m31) * s; z = (m21 - m12) * s }\n    else if (m11 > m22 && m11 > m33) { const s = 2 * Math.sqrt(1 + m11 - m22 - m33); w = (m32 - m23) / s; x = .25 * s; y = (m12 + m21) / s; z = (m13 + m31) / s }\n    else if (m22 > m33) { const s = 2 * Math.sqrt(1 + m22 - m11 - m33); w = (m13 - m31) / s; x = (m12 + m21) / s; y = .25 * s; z = (m23 + m32) / s }\n    else { const s = 2 * Math.sqrt(1 + m33 - m11 - m22); w = (m21 - m12) / s; x = (m13 + m31) / s; y = (m23 + m32) / s; z = .25 * s }\n    const length = Math.hypot(x, y, z, w) || 1\n    return [x / length, y / length, z / length, w / length]\n}\nfunction slerpQuat(a: Quat, b: Quat, t: number): Quat {\n    let dot = a.reduce((sum, value, i) => sum + value * b[i], 0), target = b\n    if (dot < 0) { target = [-b[0], -b[1], -b[2], -b[3]]; dot = -dot }\n    if (dot > .9995) { const q = a.map((value, i) => value + (target[i] - value) * t), length = Math.hypot(...q) || 1; return q.map(value => value / length) as unknown as Quat }\n    const theta = Math.acos(Math.min(1, dot)), inverse = 1 / Math.sin(theta)\n    const left = Math.sin((1 - t) * theta) * inverse, right = Math.sin(t * theta) * inverse\n    return a.map((value, i) => value * left + target[i] * right) as unknown as Quat\n}\nfunction quatBasis(q: Quat): { right: Vec; up: Vec; normal: Vec } {\n    const [x, y, z, w] = q, xx = x * x, yy = y * y, zz = z * z\n    return { right: [1 - 2 * (yy + zz), 2 * (x * y + z * w), 2 * (x * z - y * w)], up: [2 * (x * y - z * w), 1 - 2 * (xx + zz), 2 * (y * z + x * w)], normal: [2 * (x * z + y * w), 2 * (y * z - x * w), 1 - 2 * (xx + yy)] }\n}\nfunction mixVec(a: Vec, b: Vec, t: number): Vec { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t] }\n",
+      "after": ""
+    },
+    {
+      "start": 2639,
+      "length": 195,
+      "before": "const DEFAULT: State = { width: 647, height: 647, time: 0, angle: 0, frozen: true, hovered: -1, pinned: -1, dragged: { current: false }, lifts: { current: [] }, setHovered() {}, setPinned() {} }\n",
+      "after": "const DEFAULT: State = { width: 647, height: 647, time: 0, angle: 0, frozen: true, hovered: -1, pinned: -1, dragged: { current: false }, setHovered() {}, setPinned() {} }\n"
+    },
+    {
+      "start": 2590,
+      "length": 47,
+      "before": "    lifts: React.MutableRefObject<PlaneLift[]>\n",
+      "after": ""
+    },
+    {
+      "start": 1947,
+      "length": 402,
+      "before": "type Quat = readonly [number, number, number, number]\ntype PlaneLift = {\n    liftT: number; inOverlay: boolean; cooldown: number; opacity: number\n    snapPos: Vec; snapQuat: Quat; worldPos: Vec; worldQuat: Quat\n}\nfunction freshLift(): PlaneLift { return { liftT: 0, inOverlay: false, cooldown: 0, opacity: 1, snapPos: [0, 0, 0], snapQuat: [0, 0, 0, 1], worldPos: [0, 0, 0], worldQuat: [0, 0, 0, 1] } }\n",
+      "after": ""
+    }
+  ],
+  "restores9bExactly": true
+}
