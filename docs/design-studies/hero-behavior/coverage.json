@@ -98,8 +98,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-002.json",
-        "bytes": 87437,
-        "sha256": "464f648f219ef9b8448ae38a341ba3588ece3b7b40314d648e7fe012f9de26f1"
+        "bytes": 91633,
+        "sha256": "3393f943c6cdea764efb7efa47990a8a42c743263ebfd979ecc8e182632ea8dd"
       },
       "page": {
         "id": "ANWBjWXdj",
@@ -578,8 +578,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-013.json",
-        "bytes": 76145,
-        "sha256": "f3c8569a23af8556e463d7034a2a178f9c09b623d196f5e4a76d2e609fe6801a"
+        "bytes": 80612,
+        "sha256": "570a3c2b5d4b5ee8d4f05f28b1ede39d11502371451adf74af3aef123447044c"
       },
       "page": {
         "id": "nKpA0uJHr",
@@ -695,8 +695,8 @@
       "classification": "Source inspiration / credited recreation or close adaptation",
       "contract": {
         "path": "docs/design-studies/hero-behavior/source-contracts/HERO-015.json",
-        "bytes": 23128,
-        "sha256": "e2ae0718f58244ff368051018c35c7c2bdcf02befe8d36d932c057800dcb7624"
+        "bytes": 25240,
+        "sha256": "9bee507fe03cd0b32f707da11246508720e8b897c527f902d67be79f1aa62cf5"
       },
       "page": {
         "id": "nwAhAlY6o",
@@ -874,7 +874,7 @@
   "sourceContractIndex": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/hero-behavior/source-contracts/index.json",
     "bytes": 3894,
-    "sha256": "c4a3bda819a4f2fd4785487317393c56806a65820bcc1797129d0b3503b84aef"
+    "sha256": "715b9443edd58895882bbfe227723bfa38d3203a6019cac26c7de68010286353"
   },
   "historicalDetailedCoverage": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/all18-coverage/coverage-draft.json.historical-before-current-freeze",

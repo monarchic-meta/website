@@ -1,0 +1,116 @@
+{
+  "reference": "HERO-013",
+  "classification": "Source inspiration / credited recreation",
+  "credit": "FORMAT / Obys × DES",
+  "source": "https://format.obys.agency/",
+  "status": "SOURCE50_SINGLE_BUTTON_AUTHORED_THROUGH741_PREVIEW_RELOAD_PENDING",
+  "sourceModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/portable34-normalized/SourceHeroNativeBehaviors.tsx",
+    "bytes": 73172,
+    "sha256": "aeb727d3dd158135de6f8c67abe44e4bcee2dc00e91624cc5a9bd237fb1389ce"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/portable34-normalized/check-format-daughter-sparks.mjs",
+    "bytes": 23780,
+    "sha256": "837ce18a87ce6e73b752ab73125635668462f81e5576750fbf682708d3d33d83"
+  },
+  "materials": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/portable34-normalized/source-format-daughter-sparks-materials.json",
+    "bytes": 3495,
+    "sha256": "c4330dc56616bff3231cdbccf0e467b6a7150e41a0c1eccdb8afc4cc694db822"
+  },
+  "sourceOracleTrace": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/portable34-normalized/source-format-daughter-sparks-oracle-trace.json",
+    "bytes": 221612,
+    "sha256": "82039fd8ef16274e114a01cc9b08ab90c18d42054afdb492aa820f25f53855a3"
+  },
+  "old49Prefix": {
+    "bytes": 54385,
+    "sha256": "ca5087d337ca2f61e0a443ad711b3b265630d987c594aeb3f370314d58d42a54"
+  },
+  "validation": {
+    "checks": 34,
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/portable34-normalized/result.json",
+      "bytes": 5316,
+      "sha256": "6a4116fefa7e94e12d6cdde7af044a5435d031c50ce20b312bd7187b41d68321"
+    },
+    "oldMaterialStaticChecks": 9,
+    "oldMaterialResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/legacy-material-static/static-result.json",
+      "bytes": 1887,
+      "sha256": "eb1c891991e465e0f182f684e8f2cf9f8943ae99e13e458e8f489dca01ba5883"
+    },
+    "firstExternal33": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/frozen-local33-v1/receipt.json",
+      "bytes": 6998,
+      "sha256": "a1906c23e0b137c63104a978ccfc86b8cde648cea100ef3d43729937255093b8"
+    }
+  },
+  "actualMaterialDelivery": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/spark-delivery-writer729/final-four-spark-delivery-receipt732.json",
+    "bytes": 10508,
+    "sha256": "1b1a999c99807a9ba5ba748c2e358a9303639fc5b424670b9f189dd8b111f9c5"
+  },
+  "resources": {
+    "newCanvasWebGLVideo": 0,
+    "maximumBursts": 3,
+    "maximumParticlesIncludingDelayed": 12,
+    "finiteTimer": 1,
+    "finiteRAF": 1,
+    "serialDecodeSharedWithOld49": true,
+    "spriteCacheMaxNaturalPixels": 276806,
+    "spriteCacheMaxBytes": 212036,
+    "combinedDecodedMaterialPixelsLimit": 12276806,
+    "editorExportThumbnailMotion": false
+  },
+  "sourceBehavior": {
+    "spriteCount": 4,
+    "delaysMs": [
+      0,
+      55,
+      110,
+      165
+    ],
+    "logicalWidth": 92,
+    "height": "Original intrinsic ratio",
+    "margins": "Both−46×viewportUnit",
+    "zIndex": 55,
+    "trigger": "Same accepted false→true Daughter gesture, retaining cancellation, dedupe, keyboard semantics and its point.",
+    "physics": "Literal original per-tick gravity, velocity, random and spin; no invented flight or refresh-rate normalization."
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/sparks-writer-preparation739/final-source50-single-button-authoring-receipt741.json",
+      "bytes": 5941,
+      "sha256": "afcca53be7215088b4e7f4daa820634ab63e43847087daa62d0b890527a5ed8d"
+    },
+    "map": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/sparks-writer-preparation739/immutable-source50-single-button-map741.json",
+      "bytes": 2067,
+      "sha256": "81a406ddcb5ee4d836a5a3c08b74510c916675381137b5ceb4e4326ac4d82d58"
+    },
+    "sourceWritten": true,
+    "compilerDiagnostics": 0,
+    "genuineOverrides": 50,
+    "all49PriorRowsAndSchemasExact": true,
+    "newButtonFamiliesBound": 1,
+    "actualButtonCopies": 3,
+    "ownerAt741": "b576f27d15dac6c1050bf36a0925ee0f096a8771e8619e2ae9e6ff203e9e5655",
+    "wholePriorOwnerInverse": "5051d9f01b765888cd3227e17c95c496b8f836d10a526eb82408b84f075893dd",
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-sparks-v1/canonical-validation/nix-target-evaluation.json",
+    "bytes": 303,
+    "sha256": "fe7dd2bc5bd715ec493b6829b523d58bed97084959577afb0dd22e665e017482"
+  },
+  "differences": [
+    "The fourth burst removes the oldest whole burst to retain a12-particle bound.",
+    "Decode is serialized with old49 material work and holds pending leases through cancellation/HMR.",
+    "Hidden/reduced/static/frozen/detached placements cancel work; captured random seed and refresh-rate fidelity are not claimed.",
+    "Local DOM, loaded-image and handler proofs do not establish actual Framer forwarding or paint."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "reference": "HERO-015",
+  "classification": "Source inspiration / credited source recreation",
+  "source": "https://mecha-xyz.webflow.io/",
+  "credit": [
+    "MECHA / Mecha Capital",
+    "Widelab",
+    "Grzegorz Leśniewicz"
+  ],
+  "status": "AUTHORING_AND_READBACK_CLOSED_ACTUAL_PAINT_PREVIEW_RELOAD_UNVERIFIED",
+  "scope": "The missing third metric, genuine source thumbnail and attributed body paragraph in the first Tomorrow Recycling handoff.",
+  "plan": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/opening-first-handoff-correction-v1/native-correction-plan.json",
+    "sha256": "85facb0b67ed581f674799c6835ebba90815ba7afb1a4c9a17650e4fbc265fe7",
+    "bytes": 12906
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/first-handoff-writer721/final-first-handoff-authoring-receipt728.json",
+    "bytes": 5962,
+    "sha256": "4f53ba4327150f252279fe428d86e1b793c0010426a30cffa6b2aa5a0c6f952b"
+  },
+  "map": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/first-handoff-writer721/immutable-final-first-handoff-map728.json",
+    "bytes": 6768,
+    "sha256": "08adc089d128433bef0642a688f49ac78d0c62b556c3dc87340ff22334f89baf"
+  },
+  "nativeFamilies": 4,
+  "physicalCopies": 8,
+  "sourceWrites": 0,
+  "newBindings": 0,
+  "uploads": 0,
+  "sourceMetric": {
+    "label": "AUTOMATED SORTATION",
+    "value": "76%",
+    "meaning": "A source-reported proportion of automated sortation; not accuracy or increased recovery."
+  },
+  "actualFramer": {
+    "ownerAt728": "599f05fcbfb3f96e32fe0c8495203f729c7938293ddc48bdf1f0991eb59d0ed6",
+    "priorWholeOwnerInverse": "bc9bee1e738c2af509586e4860c14d35d159a8d66f6418540b9ddf12ad4b855d",
+    "newDesktopVisible": 4,
+    "newPhoneHidden": 4,
+    "newFontTuplesVerified": 12,
+    "bodyTextCopiesUpdated": 2,
+    "sourceAssetAndLinkExact": true,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "representation": [
+    {
+      "id": "YLFvLIXTJ",
+      "key": "left",
+      "requested": "201.515625px",
+      "actual": "201.52px",
+      "deltaPixels": 0.004375
+    }
+  ],
+  "preservation": {
+    "all91OutsideOwnersExact": true,
+    "all16DefinitionsExact": true,
+    "all237CodePlacementBodiesExact": true,
+    "currentH15OwnerExact": true,
+    "currentH13Daughter5051Exact": true,
+    "all60CurrentCatalogsExact": true,
+    "allSchemasExact": true,
+    "all3SourcePinsExact": true,
+    "globalCountsExact": true
+  },
+  "limits": [
+    "Native source fonts remain Inter fits.",
+    "Native34px metric pitch and retained first-section composition are explicit adaptations.",
+    "Body auto-height, overlap and the visual native result remain unverified in Framer Preview/editor paint.",
+    "Source<=991 versus native<1280 Phone boundary remains unchanged."
+  ]
+}

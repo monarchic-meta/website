@@ -1,0 +1,107 @@
+{
+  "reference": "HERO-002",
+  "classification": "Source inspiration / credited recorded-film recreation",
+  "credit": "Julián Leiss / Ajedrez Film Poem",
+  "status": "TWO_GLYPH_GEOMETRY_FITS_AUTHORED_THROUGH737_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/final-e1f045c3-33checks/SourceAjedrezSequence.tsx",
+    "bytes": 203271,
+    "sha256": "e1f045c368f34c6f36cb30d57596c78c0bf702e0d789dbba8d91ac96a60c4271"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/final-e1f045c3-33checks/check-source-ajedrez-measured-word-fits.mjs",
+    "bytes": 37929,
+    "sha256": "9ccaa81c5afa08e8e855b6b66dc0321faa18f243a02b3b2a5bdbeaecdfb4e7c2"
+  },
+  "fixture": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/final-e1f045c3-33checks/source-ajedrez-measured-word-fits.json",
+    "bytes": 22713,
+    "sha256": "e162fca6d6a0e3e0371617f26938cc127f303bfb75e2246cbcb44d48fb631dce"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/final-e1f045c3-33checks/arrival-delta-inverse.json",
+    "bytes": 5651,
+    "sha256": "58092c68bb98a2aab0cfb6762da7141935185a99dea44b15f9d1675925ec7194"
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/final-e1f045c3-33checks/validation-and-handoff-receipt.json",
+    "bytes": 17761,
+    "sha256": "1bdcab2cb392874dc56f9e0bdf4401834e735344a08b211e6f874e4c3c1d2f1b"
+  },
+  "scope": {
+    "actors": 2,
+    "unchangedActors": 82,
+    "firstFrame": 1169,
+    "lastFrameExclusive": 1174,
+    "sourceFrameRate": 24,
+    "independentStrings": [
+      "figura",
+      "línea"
+    ],
+    "sourceTokenIdentityClaim": false,
+    "easingClaim": false
+  },
+  "validation": {
+    "checks": 33,
+    "staticAndSSR": 10,
+    "sourcePNGAdmission": 1,
+    "browser": 22,
+    "legacyStrictChecks": 11,
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/validation-e1-inset-aware/result.json",
+      "bytes": 327359,
+      "sha256": "398536be87810a169dfa1548aea0fa79db3ff3d85424586192ed250da4c36a2d"
+    },
+    "legacy": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/root-strict-e1-result.json",
+      "bytes": 1458,
+      "sha256": "9c95789c948637c6ad23360fb0f029fb2395e5c0c08b491310b84bc7c2363ad9"
+    },
+    "oldHeldPoseNegative": true,
+    "retainedHookRefreshNegative": true,
+    "allOther84NodeIdentitiesPreserved": true,
+    "sourceWidthsAndPhoneAffineChecked": true,
+    "insetReadDeltas": [
+      0,
+      84,
+      0,
+      0,
+      0,
+      84,
+      0
+    ]
+  },
+  "preservation": {
+    "publicOverrides": 46,
+    "unrelatedPublicBodiesExact": 45,
+    "photoPoses": 166,
+    "insetFamilies": 19,
+    "noNewTimerRAFMediaGPU": true,
+    "nativeChanges": 0
+  },
+  "actualFramer": {
+    "delivery": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/two-actor-writer736/final-two-actor-source-authoring-receipt737.json",
+      "bytes": 3594,
+      "sha256": "3f81902cb0ce8c04dd64d5208a6a55fb0cfa492caa1e0eeea9e9a0786f464f3f"
+    },
+    "sourceWritten": true,
+    "compilerDiagnostics": 0,
+    "all46RowsIDsAndSchemasExact": true,
+    "nativePageAndDefinitionUnchanged": true,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/implementation-two-actor-v1/nix-target-evaluation.json",
+    "bytes": 241,
+    "sha256": "06f1d0814e044571b0de3617f22a91d1b573534cfe3a894ce18b36b44b4ce4d2"
+  },
+  "limits": [
+    "Measured source-glyph geometry fits retain independently authored text; they do not reproduce or translate the source poem.",
+    "Only two actors over five frames change. The other82 actors and broader closing trajectories remain unfinished sampled holds.",
+    "Most1px changes can reflect scan/antialias variation; no recovered physical easing or invented terminal frames.",
+    "Observed local DOM/hook behavior does not prove actual Framer rendering, HMR or persistence."
+  ]
+}

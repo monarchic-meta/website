@@ -149,11 +149,27 @@ checks and the retained shared-module regression. Decoding is serial, temporary
 buffers share a 2MP limit, and Canvas/export/thumbnail remain still. Failed or
 interrupted work retains the native image. Framer authoring is read back through
 MCP720: 11 new families, 33 Frame copies and 72 role assignments. Actual paint,
-Preview and reload remain open. Four recovered source spark materials await delivery
-and implementation.
+Preview and reload remain open. The separate four-sprite button effect is authored through MCP741; actual
+Preview and reload remain open.
 
 ```sh
 nix build .#checks.x86_64-linux.source-format-daughter-effects --max-jobs 1 --cores 2
+```
+
+## FORMAT Daughter particles
+
+The appended `withFormatDaughterSparks` role in
+[SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx) composes the
+existing Daughter button. Four genuine source images follow its recorded
+per-tick motion after an accepted activation. The prior 49 roles remain exact.
+
+The [provenance](assets/source-format-daughter-sparks-provenance.json) records
+34 portable checks, source-only Canvas/static freezes, serial decoding and
+bounded bursts. Framer source and the three button copies are read back through
+MCP741. Actual input, painting and reload remain open.
+
+```sh
+nix build .#checks.x86_64-linux.source-format-daughter-sparks --max-jobs 1 --cores 2
 ```
 
 ## Native source-video playback
