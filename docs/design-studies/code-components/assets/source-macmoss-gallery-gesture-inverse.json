@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "from": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/SourceMacMossPortfolio.gesture-candidate.tsx",
+    "path": "docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
     "bytes": 21991,
     "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
   },
   "to": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "path": "scripts/fixtures/source-macmoss-gesture/SourceMacMossPortfolio.before-68b.tsx.txt",
     "bytes": 10285,
     "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
   },
