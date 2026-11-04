@@ -113,7 +113,21 @@ export function withPortfolioCarouselSurface(Component:ComponentType<LayerProps>
     })
 }
 export function withPortfolioCarouselIndex(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselIndex(props,ref){const frozen=useCarouselFrozen(),world=useCarouselLayout(frozen);return <Component {...props} ref={ref} style={{...props.style,...(!frozen?{opacity:world.active?0:1,pointerEvents:world.active?'none':props.style?.pointerEvents,display:world.active?'none':props.style?.display}:{})}}/>})}
-export function withPortfolioCarouselCaption(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselCaption(props,ref){const frozen=useCarouselFrozen(),world=useCarouselLayout(frozen),geometry=carouselGeometry(world.width,world.height);return <Component {...props} ref={ref} aria-hidden={!world.active} style={{...props.style,...(!frozen?{position:'absolute',left:geometry.left,top:geometry.top+geometry.tileHeight+12,width:geometry.tileWidth,height:20,opacity:world.active?1:0,pointerEvents:'none'}:{})}}/>})}
+export function withPortfolioCarouselCaption(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselCaption(props,ref){
+    const frozen=useCarouselFrozen(),world=useCarouselLayout(frozen),geometry=carouselGeometry(world.width,world.height)
+    // Source scans rep0 tiles in project order and keeps the first exact tie.
+    // Preserve its world-unit arithmetic; Math.round(offset) differs at ties.
+    const center=(CAROUSEL_PROJECTS.length-1)/2,sourceStep=4.1,scroll=(center-world.offset)*sourceStep
+    let nearest=0,distance=Infinity
+    for(let project=0;project<CAROUSEL_PROJECTS.length;project++){
+        const next=Math.abs((project-center)*sourceStep+scroll)
+        if(next<distance){distance=next;nearest=project}
+    }
+    // Horizontal CSS projection remains a fit to source projected tile bounds;
+    // target text, missing text-strip/width springs and film playback are separate.
+    const left=geometry.left+(nearest-world.offset)*geometry.step
+    return <Component {...props} ref={ref} aria-hidden={!world.active} style={{...props.style,...(!frozen?{position:'absolute',left,top:geometry.top+geometry.tileHeight+12,width:geometry.tileWidth,height:20,opacity:world.active?1:0,pointerEvents:'none',transition:'none'}:{})}}/>
+})}
 function carouselText(Component:ComponentType<LayerProps>,column:number):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselText(props,ref){const frozen=useCarouselFrozen(),state=useCarouselControls(frozen);return <Component {...props} ref={ref} text={frozen?props.text:CAROUSEL_PROJECTS[state.project][column]}/>})}
 export function withPortfolioCarouselName(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return carouselText(Component,0)}
 export function withPortfolioCarouselCategory(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return carouselText(Component,1)}

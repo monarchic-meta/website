@@ -1,0 +1,14 @@
+{
+  "reference": "HERO-004",
+  "scope": "Only the independently reviewed caption anchor HOC; historical43 guards normalize this exact approved slice, while strict/runtime checks compile actual source",
+  "source": {
+    "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+  },
+  "historical": {
+    "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+  },
+  "startMarker": "export function withPortfolioCarouselCaption(",
+  "endMarker": "\nfunction carouselText(",
+  "approvedCaption": "export function withPortfolioCarouselCaption(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselCaption(props,ref){\n    const frozen=useCarouselFrozen(),world=useCarouselLayout(frozen),geometry=carouselGeometry(world.width,world.height)\n    // Source scans rep0 tiles in project order and keeps the first exact tie.\n    // Preserve its world-unit arithmetic; Math.round(offset) differs at ties.\n    const center=(CAROUSEL_PROJECTS.length-1)/2,sourceStep=4.1,scroll=(center-world.offset)*sourceStep\n    let nearest=0,distance=Infinity\n    for(let project=0;project<CAROUSEL_PROJECTS.length;project++){\n        const next=Math.abs((project-center)*sourceStep+scroll)\n        if(next<distance){distance=next;nearest=project}\n    }\n    // Horizontal CSS projection remains a fit to source projected tile bounds;\n    // target text, missing text-strip/width springs and film playback are separate.\n    const left=geometry.left+(nearest-world.offset)*geometry.step\n    return <Component {...props} ref={ref} aria-hidden={!world.active} style={{...props.style,...(!frozen?{position:'absolute',left,top:geometry.top+geometry.tileHeight+12,width:geometry.tileWidth,height:20,opacity:world.active?1:0,pointerEvents:'none',transition:'none'}:{})}}/>\n})}",
+  "historicalCaption": "export function withPortfolioCarouselCaption(Component:ComponentType<LayerProps>):ComponentType<LayerProps>{return React.forwardRef<HTMLElement,LayerProps>(function CarouselCaption(props,ref){const frozen=useCarouselFrozen(),world=useCarouselLayout(frozen),geometry=carouselGeometry(world.width,world.height);return <Component {...props} ref={ref} aria-hidden={!world.active} style={{...props.style,...(!frozen?{position:'absolute',left:geometry.left,top:geometry.top+geometry.tileHeight+12,width:geometry.tileWidth,height:20,opacity:world.active?1:0,pointerEvents:'none'}:{})}}/>})}"
+}
