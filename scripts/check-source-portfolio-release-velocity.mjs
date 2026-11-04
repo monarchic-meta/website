@@ -19,14 +19,18 @@ const emit=text=>ts.transpileModule(text,{fileName:'SourcePortfolioCarousel.tsx'
 const literalTarget=(offset,velocity)=>{const unit=4+.1,s=(8-1)/2;const momentum=(velocity*.01*3)/(1-.94),projected=Math.max(-(7-s)*unit,Math.min(s*unit,(-offset+s)*unit+momentum));return Math.max(0,Math.min(7,Math.round(-projected/unit+s)))};
 const literalVelocity=(old,lastX,lastAt,x,at,scale=1)=>(at-lastAt)>0&&Number.isFinite(at-lastAt)?old*.85+((x-lastX)*scale/(at-lastAt))*.15:old;
 const result=()=>({passed:true,source:pin(file),preimage:pin(preimageFile),checker:pin(fileURLToPath(import.meta.url)),checks,samples,errors,
-  scope:'Source-code-supported velocity target and per-callback current-position settling. Numeric histories are synthetic tests. Caption text correctly follows target index; movie playback remains target-coupled while source playback follows current index. Caption anchor uses a source-ordered nearest-current-card linear CSS fit; native text-strip/width springs remain absent. Tiny terminal cleanup and movie coupling remain separate limitations. No actual Framer Preview/reload proof.',
+  scope:'Source-code-supported velocity target and per-callback current-position settling. Numeric histories are synthetic tests. Caption text correctly follows target index; private movie requests follow current index; painted output may lag readiness. Caption anchor uses a source-ordered nearest-current-card linear CSS fit; native text-strip/width springs remain absent. Tiny terminal cleanup and movie coupling remain separate limitations. No actual Framer Preview/reload proof.',
   compilerVersion:ts.version,nodeVersion:process.version,actualFramerWrites:0,actualPreviewVerified:false,afterEditorReload:false});
 fs.mkdirSync(out,{recursive:true});
 try {
+  const presentationInverseFile=process.env.MONARCHIC_H4_PRESENTATION_INVERSE??path.join(repo,'scripts/fixtures/source-portfolio-presentation-inverse.json'),presentationInverseBytes=fs.readFileSync(presentationInverseFile),presentationInverse=JSON.parse(presentationInverseBytes);
+assert.equal(hash(presentationInverseBytes),'c7b9fd0bc01ce5289f808f6f75a2b37c48fd1a27db4d5c3739e72c3a39491c7e');
+const historicalPresentation=(text,key)=>{const spec=presentationInverse[key];assert.equal(hash(text),spec.sourceSHA256);for(const edit of spec.edits){assert.equal(text.split(edit.after).length,2);text=text.replace(edit.after,edit.before)}assert.equal(hash(text),spec.historicalSHA256);return text};
+const historicalPresentationHelper=historicalPresentation(source,'helper');
   const captionInverseFile=process.env.MONARCHIC_H4_CAPTION_INVERSE??path.join(repo,'scripts/fixtures/source-portfolio-caption-anchor-inverse.json'),captionInverseBytes=fs.readFileSync(captionInverseFile),captionInverse=JSON.parse(captionInverseBytes);
-  assert.equal(hash(captionInverseBytes),'a3fcfb35b8606e750584edd0647401dfc3a6aea880fe53fe1daf243b013a3db2');assert.equal(hash(source),captionInverse.source.sha256);
-  const captionStart=source.indexOf(captionInverse.startMarker),captionEnd=source.indexOf(captionInverse.endMarker,captionStart);assert.ok(captionStart>=0&&captionEnd>captionStart);assert.equal(source.slice(captionStart,captionEnd),captionInverse.approvedCaption);
-  const historicalCaptionSource=source.slice(0,captionStart)+captionInverse.historicalCaption+source.slice(captionEnd);
+  assert.equal(hash(captionInverseBytes),'a3fcfb35b8606e750584edd0647401dfc3a6aea880fe53fe1daf243b013a3db2');assert.equal(hash(historicalPresentationHelper),captionInverse.source.sha256);
+  const captionStart=historicalPresentationHelper.indexOf(captionInverse.startMarker),captionEnd=historicalPresentationHelper.indexOf(captionInverse.endMarker,captionStart);assert.ok(captionStart>=0&&captionEnd>captionStart);assert.equal(historicalPresentationHelper.slice(captionStart,captionEnd),captionInverse.approvedCaption);
+  const historicalCaptionSource=historicalPresentationHelper.slice(0,captionStart)+captionInverse.historicalCaption+historicalPresentationHelper.slice(captionEnd);
   assert.equal(hash(historicalCaptionSource),captionInverse.historical.sha256);assert.equal(hash(before),'60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177');
   const releaseHelpers=text=>text.slice(text.indexOf('function carouselReleaseVelocity'),text.indexOf('/** Wrap the retained code component'));
   check('Pinned60c release velocity/projection helpers remain byte-exact',releaseHelpers(source)===releaseHelpers(before));
@@ -34,8 +38,8 @@ try {
   const publicBodies=text=>new Map(parse(text).statements.filter(n=>ts.isFunctionDeclaration(n)&&n.modifiers?.some(m=>m.kind===ts.SyntaxKind.ExportKeyword)).map(n=>[n.name.text,n.getText(parse(text))]));
   const a=publicBodies(before),b=publicBodies(historicalCaptionSource);
   check('After the approved narrow Caption inverse, all six roles and five historical non-Surface bodies are byte-exact',a.size===6&&b.size===6&&[...a].every(([name,text])=>b.has(name)&&(name==='withPortfolioCarouselSurface'||b.get(name)===text)));
-  const marker='// SOURCE INSPIRATION',film=fs.readFileSync(path.resolve(repo,plan.evidence.retainedFilm.path),'utf8');
-  check('Exact shared film controller/media preserved;600ms second easing removed',source.slice(0,source.indexOf(marker))===before.slice(0,before.indexOf(marker))&&hash(film)===plan.evidence.retainedFilm.sha256&&!source.includes('600ms')&&source.includes('(targetOffset.current-currentOffset.current)*.1'));
+  const marker='// SOURCE INSPIRATION',film=fs.readFileSync(process.env.MONARCHIC_H4_PRESENTATION_FILM??path.resolve(repo,plan.evidence.retainedFilm.path),'utf8'),historicalPresentationFilm=historicalPresentation(film,'film');
+  check('Exact shared film controller/media preserved;600ms second easing removed',source.slice(0,source.indexOf(marker))===before.slice(0,before.indexOf(marker))&&hash(historicalPresentationFilm)===plan.evidence.retainedFilm.sha256&&!source.includes('600ms')&&source.includes('(targetOffset.current-currentOffset.current)*.1'));
   assert.equal(hash(fs.readFileSync(factsFile)),'b5090530f1fe1ed3387ff6259e6269c4c69fc89f79384ccde8ab74f01c49e08f');
   assert.deepEqual(plan.sourceDefaults,{projects:8,tileWidthWorld:4,tileGapWorld:.1,tileStepWorld:4.1,sourceScrollCenterCards:3.5,dragSensitivity:.012,velocityOldWeight:.85,velocityInstantWeight:.15,momentumNumerator:[.01,3],momentumFriction:.94});
   for(const row of plan.independentCases)assert.equal(literalTarget(row.offset,row.velocity),row.expected);

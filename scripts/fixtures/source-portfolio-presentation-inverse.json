@@ -1,0 +1,36 @@
+{
+  "reference": "HERO-004",
+  "scope": "Only approved private presentation bridge edits; historical guards normalize, actual compilers/runtimes use actual actors",
+  "helper": {
+    "sourceSHA256": "83ee8d8635d44c6b84de0a95f6abfd7874b0f0f0f8bdddd5e44ab259eeace678",
+    "historicalSHA256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004",
+    "edits": [
+      {
+        "after": "        // Source playback rounds current scroll. Caption's nearest-tile scan\n        // has different half-card behavior and intentionally stays separate.\n        const playbackCenter=(CAROUSEL_PROJECTS.length-1)/2,playbackStep=4.1,playbackScroll=(playbackCenter-offset)*playbackStep\n        const presentationProject=filmProject(Math.round(-playbackScroll/playbackStep+playbackCenter))\n",
+        "before": ""
+      },
+      {
+        "after": " __carouselPresentationProject={active?presentationProject:undefined}",
+        "before": ""
+      }
+    ]
+  },
+  "film": {
+    "sourceSHA256": "edf71fb9e386c374e681ef1a7f1edbc1fc563dfe4fc551da13836298a020e3c5",
+    "historicalSHA256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0",
+    "edits": [
+      {
+        "after": "__carouselPresentationProject?:number;",
+        "before": ""
+      },
+      {
+        "after": "    // An unregistered private prop from the managed carousel only changes\n    // presentation. Shared target selection/UI clock semantics stay intact.\n    const presentationProject=props.__carouselPresentationProject\n",
+        "before": ""
+      },
+      {
+        "after": "project=isStatic?filmProject(startProject):!phone&&controls.immersive&&typeof presentationProject===\"number\"&&Number.isFinite(presentationProject)?filmProject(presentationProject):controls.project,index=filmStream(project,phone)",
+        "before": "project=isStatic?filmProject(startProject):controls.project,index=filmStream(project,phone)"
+      }
+    ]
+  }
+}

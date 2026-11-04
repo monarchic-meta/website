@@ -104,11 +104,15 @@ export function withPortfolioCarouselSurface(Component:ComponentType<LayerProps>
         const transition='none'
         const entryTransition=frozen||controls.reduced?'none':'transform 2s cubic-bezier(.16,1,.3,1), height 2s cubic-bezier(.16,1,.3,1), top 2s cubic-bezier(.16,1,.3,1)'
         const rawHeight=active?size.width*9/16:size.height,scale=active?geometry.tileWidth/size.width:1,position=active?(paintedProject-offset)*geometry.step:0
+        // Source playback rounds current scroll. Caption's nearest-tile scan
+        // has different half-card behavior and intentionally stays separate.
+        const playbackCenter=(CAROUSEL_PROJECTS.length-1)/2,playbackStep=4.1,playbackScroll=(playbackCenter-offset)*playbackStep
+        const presentationProject=filmProject(Math.round(-playbackScroll/playbackStep+playbackCenter))
         const managedStyle={width:'100%',height:'100%',transform:active?`perspective(1600px) translate3d(${position/scale}px,0,0)`:'translate3d(0px,0,0)',transformOrigin:'50% 50%',transition} as React.CSSProperties
         const neighbors=active?Array.from({length:8},(_,i)=>i).filter(i=>Math.abs(i-offset)<2.2&&i!==paintedProject):[]
         return <div ref={setNode} data-portfolio-carousel-surface="true" data-portfolio-carousel-active={String(active)} onPointerDown={begin} onPointerMove={move} onPointerUp={finish} onPointerCancel={event=>finish(event,true)} style={{...props.style,width:props.style?.width??'100%',height:props.style?.height??'100%',position:'relative',overflow:'hidden',background:'#050505',touchAction:active?'none':'pan-y',cursor:active?(dragging?'grabbing':'grab'):undefined}}>
             {neighbors.map(index=>{const poster=props.posters?.[FILM_STREAMS[index][0]];return poster?<img key={index} src={poster} data-portfolio-carousel-project={index} crossOrigin="anonymous" alt="" draggable={false} style={{position:'absolute',left:geometry.left+(index-offset)*geometry.step,top:geometry.top,width:geometry.tileWidth,height:geometry.tileHeight,objectFit:'cover',filter:'grayscale(1)',pointerEvents:active?'auto':'none',transition:'none'}}/>:null})}
-            <div data-portfolio-carousel-plane="true" style={{position:"absolute",inset:"0px 0px auto",height:rawHeight,top:active?(size.height-rawHeight)/2:0,transform:`scale(${scale})`,transformOrigin:"50% 50%",transition:entryTransition,"--source-film-carousel-managed":active?"1":"0"} as React.CSSProperties}><Component {...props} autoAdvance={active?false:props.autoAdvance} style={managedStyle}/></div>
+            <div data-portfolio-carousel-plane="true" style={{position:"absolute",inset:"0px 0px auto",height:rawHeight,top:active?(size.height-rawHeight)/2:0,transform:`scale(${scale})`,transformOrigin:"50% 50%",transition:entryTransition,"--source-film-carousel-managed":active?"1":"0"} as React.CSSProperties}><Component {...props} autoAdvance={active?false:props.autoAdvance} __carouselPresentationProject={active?presentationProject:undefined} style={managedStyle}/></div>
         </div>
     })
 }

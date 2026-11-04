@@ -1,0 +1,62 @@
+{
+  "source": "HERO-004/carousel-inspection-only.js",
+  "sourceSHA256": "3b98626175042b6bbcf4b77dcf6296012d59640ae8d13404346fd7e7f6214240",
+  "lines": {
+    "indexFromScroll": "913–914",
+    "selectionFromCurrent": "2635",
+    "playback": "2511–2539",
+    "captionTarget": "2498–2510"
+  },
+  "equation": "scroll=(3.5-offset)*4.1; clamp(round(-scroll/4.1+3.5),0,7)",
+  "rows": [
+    {
+      "offset": 0,
+      "index": 0
+    },
+    {
+      "offset": 0.49,
+      "index": 0
+    },
+    {
+      "offset": 0.5,
+      "index": 1
+    },
+    {
+      "offset": 0.500000001,
+      "index": 1
+    },
+    {
+      "offset": 1.49,
+      "index": 1
+    },
+    {
+      "offset": 1.5,
+      "index": 2
+    },
+    {
+      "offset": 2.5,
+      "index": 3
+    },
+    {
+      "offset": 3.5,
+      "index": 4
+    },
+    {
+      "offset": 4.5,
+      "index": 5
+    },
+    {
+      "offset": 5.5,
+      "index": 6
+    },
+    {
+      "offset": 6.5,
+      "index": 7
+    },
+    {
+      "offset": 7,
+      "index": 7
+    }
+  ],
+  "classification": "Retained public-code numeric facts; not observed source input histories"
+}
