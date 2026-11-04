@@ -248,7 +248,7 @@
     },
     "nativeScope": "Five new editable families, nine retained row/tag moves and two approved note texts; all prior IDs, credits, saved controls and all other pages preserved. Two new caption coordinates use Framer centipixel serialization.",
     "releaseVelocityCorrection": {
-      "status": "RELEASE_VELOCITY33_CANONICAL_STATIC10_RETAINED22_PASS_SOURCE841_ACK_INDEPENDENT_CLOSURE_PENDING",
+      "status": "RELEASE_VELOCITY_SOURCE60C_AUTHORED_AND_INDEPENDENTLY_SEALED843_PREVIEW_RELOAD_OPEN",
       "source": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
         "bytes": 19155,
@@ -256,8 +256,8 @@
       },
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
-        "bytes": 5978,
-        "sha256": "9e8694a1f4204881859f8ba1fd3f4cd0fe2d6d48b05d2a464c410119856e72b6"
+        "bytes": 7059,
+        "sha256": "1a94f35b1867b6b8d114ec57b03ca6ef31d0020c36b35a16eb1f483614c4c362"
       },
       "focusedChecks": 33,
       "canonicalStaticChecks": 10,
@@ -267,7 +267,13 @@
       "genuine6RowsAndDirectSchemasExact": true,
       "native12BindingsUnchanged": true,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/release-writer840/final-release-velocity-helper-source-authoring-receipt843.json",
+        "bytes": 8691,
+        "sha256": "d24ad7af74f63d9a3478b883400ea4b17d1a8bb65ce71de2eae18fa0cf1427fa"
+      },
+      "independent842AndOutside843Complete": true
     }
   }
 }
