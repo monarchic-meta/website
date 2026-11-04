@@ -475,6 +475,14 @@
               fontDirectories = [ pkgs.dejavu_fonts ];
             };
           });
+          source-portfolio-caption-anchor = (mkWebsiteCheck "source-portfolio-caption-anchor" ''
+            export MONARCHIC_H4_CAPTION_OUT="$out/evidence"
+            pnpm run check:source-portfolio-caption-anchor
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-portfolio-release-velocity = (mkWebsiteCheck "source-portfolio-release-velocity" ''
             export MONARCHIC_H4_RELEASE_OUT="$out/evidence/release"
             pnpm run check:source-portfolio-release-velocity
