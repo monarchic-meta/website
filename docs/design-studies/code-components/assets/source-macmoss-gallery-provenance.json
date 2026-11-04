@@ -1,0 +1,110 @@
+{
+  "reference": "HERO-006",
+  "classification": "Source inspiration / credited source behavior correction",
+  "creator": "Mac Moss Studio",
+  "source": "https://macmoss.studio/",
+  "status": "SOURCE68B_AUTHORED_AND_INDEPENDENTLY_SEALED863_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "bytes": 10285,
+    "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
+  },
+  "previousSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-easing-correction-v1/SourceMacMossPortfolio.before-3679.tsx.txt",
+    "bytes": 10258,
+    "sha256": "36793851c2e0f1690c1d31fe7bc096af8f80da5fdea504fbac7386c6e540f687"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-easing-correction-v1/candidate-to-3679-inverse.json",
+    "bytes": 1182,
+    "sha256": "a38516c4031eb485f1d807f17b0e84f6ff7c49be350cacdcfa9d1e90353f298e"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-browser.mjs",
+    "bytes": 11920,
+    "sha256": "aeb49e2c82e5ec63eb99d487686c37a3133fbedad72ce33f9f256e9812f5c209"
+  },
+  "sourceObservationIndex": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-evidence-index.json",
+    "bytes": 2406,
+    "sha256": "9b08898b9495b1901fd25cec945719079117c3449dba6430e16c86ba65e3768b"
+  },
+  "observationBoundary": {
+    "revision": "Both fresh source runs matched the selected four gallery images, mids, order, dimensions and options. V1 HTML was exact; V2 changed four Cargo cache-version tokens only. JavaScript byte identity across that token is not claimed.",
+    "desktop": "1280×720 anonymous isolated browser; horizontal pointer following, small-drag return, reverse drag selection and trusted photo click dispatch are observed.",
+    "vertical": "The source track stayed still while vertical dragging; advancing occurred during trusted photo click dispatch after release.",
+    "unobserved": [
+      "Cancel/lostcapture",
+      "Tiny-drag and exact20percent threshold boundary as input observations",
+      "Phone/touch",
+      "Actual Framer native forwarding"
+    ]
+  },
+  "correction": {
+    "durationMs": 500,
+    "easing": "ease-in-out",
+    "scope": "Only source transition literal and its header attribution change. Pointer-following/photo-click recreation remains separate implementation work."
+  },
+  "preserved": {
+    "publicExports": 9,
+    "allOtherCodeBytesExact": true,
+    "nativeImageFontCaptionGeometryWrites": 0,
+    "nativeMediaHelper": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
+      "bytes": 10555,
+      "sha256": "d79f16963bd4b1d41ce6dcf7b04acbffaf7c981abd1a70fc5dcd85004f8553d6"
+    }
+  },
+  "validation": {
+    "staticAndStrictChecks": 5,
+    "browserChecks": 47,
+    "layouts": [
+      "Desktop",
+      "Phone adaptation"
+    ],
+    "browserErrors": 0,
+    "strictResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-easing-correction-v1/canonical-validation/strict-result.json",
+      "bytes": 808,
+      "sha256": "adee1c8d4a09c8dad0fdedb2221730f9951f2dad36c32179128c1e629146dc85"
+    },
+    "browserResult": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-easing-correction-v1/canonical-validation/browser/result.json",
+      "bytes": 14958,
+      "sha256": "eb21b5f1471e808a57a29cae65cc72ee34239168fb61c26a20cda2a685602461"
+    },
+    "movingSamples": "Existing eight two-photo moving samples now read the computed transitionTimingFunction; no new case inventory.",
+    "nodeVersion": "22.22.2",
+    "pnpmChildNode": "/nix/store/vs03s8q30qg698zzpbszk08j4shb0gsl-nodejs-slim-22.22.2/bin/node",
+    "fullMatrixRerun": false
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/easing-writer860/final-h6-gallery-easing-source-only-authoring-receipt863.json",
+      "bytes": 8845,
+      "sha256": "7b8f513aa7d0e728a04b0c7af4ef8824547109f1469f4b810d1b1a0a4695fecc"
+    },
+    "module": "codeFile/hdMHIXc",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 9,
+    "nativeBindingCopies": 18,
+    "nativeBindingsParentsOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 709,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "The easing correction does not implement the newly observed gallery drag or photo activation.",
+    "Phone source behavior, source timezone and project-navigation handoff remain unresolved.",
+    "Native Video/Playing forwarding and offscreen suspension remain separate actual-host checks; the shared helper is unchanged."
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-macmoss",
+    "fullNixBuildExecuted": false
+  }
+}

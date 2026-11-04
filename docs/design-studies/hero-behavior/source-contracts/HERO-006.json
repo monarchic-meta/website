@@ -5,7 +5,7 @@
   "gallery": "https://www.siteinspire.com/website/13575-mac-moss-studio",
   "source": "https://macmoss.studio/",
   "projectSource": "https://macmoss.studio/KEEN-2",
-  "evidenceBoundary": "Retained actual source/archive images plus current public primary HTML. No fresh browser input isolation in this agent scope; static order and implementation hints do not verify animation or input causality.",
+  "evidenceBoundary": "Retained source/archive artwork, primary HTML and current bounded isolated Desktop gallery inputs. The selected gallery identities, order and options match; V2 HTML changed Cargo cache tokens only. This does not establish Phone, cancellation, source timezone or project-navigation behavior.",
   "implementationPolicy": "Preserve the selected revision. Add source-grounded native progression where the retained sequence supports it; label independent interaction/Phone adaptations rather than inventing a verified source mechanism.",
   "layout": {
     "source1280": "Fixed-looking white studio rail400px (~31.25%viewport) left; working surface on right, small editorial description, full4×5 atlas~408.84×511.06 adjacent runnerphoto of equalextent. Preserve irregular source wordmark as credited asset or actual native geometry, not plain type.",
@@ -124,5 +124,47 @@
     },
     "registeredManualOverride": "codeFile/ggQ_udg:withVisibleManualNativeVideo",
     "manualPolicy": "The additional manual override waits for a native Play event; its first intended use is the new HERO-015 sheet. This does not establish the actual native host/control/Playing bridge."
+  },
+  "galleryEasing": {
+    "status": "SOURCE68B_AUTHORED_AND_INDEPENDENTLY_SEALED863_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-provenance.json",
+      "bytes": 5806,
+      "sha256": "672080c6f99fa847c28a5f487a5f976f35a7ad0e43c7e8d3e6dcd649714189d6"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "bytes": 10285,
+      "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/easing-writer860/final-h6-gallery-easing-source-only-authoring-receipt863.json",
+      "bytes": 8845,
+      "sha256": "7b8f513aa7d0e728a04b0c7af4ef8824547109f1469f4b810d1b1a0a4695fecc"
+    },
+    "durationMs": 500,
+    "easing": "ease-in-out",
+    "staticStrictChecks": 5,
+    "browserChecks": 47,
+    "nativeBindingCopiesPreserved": 18,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "currentGalleryInputObservation": {
+    "evidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-evidence-index.json",
+      "bytes": 2406,
+      "sha256": "9b08898b9495b1901fd25cec945719079117c3449dba6430e16c86ba65e3768b"
+    },
+    "sourceRevisionBoundary": "Both fresh source runs matched the selected four gallery images, mids, order, dimensions and options. V1 HTML was exact; V2 changed four Cargo cache-version tokens only. JavaScript byte identity across that token is not claimed.",
+    "observed": "1280×720 anonymous isolated browser; horizontal pointer following, small-drag return, reverse drag selection and trusted photo click dispatch are observed.",
+    "verticalRelease": "The source track stayed still while vertical dragging; advancing occurred during trusted photo click dispatch after release.",
+    "implementation": "Easing is authored; horizontal tracking and photo activation remain separate recreation work.",
+    "unobserved": [
+      "Cancel/lostcapture",
+      "Tiny-drag and exact20percent threshold boundary as input observations",
+      "Phone/touch",
+      "Actual Framer native forwarding"
+    ]
   }
 }
