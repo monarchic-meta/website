@@ -7,7 +7,7 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * Independent public native-layer controls for the inspected Idaho slideshow
  * and clock. Source DOM declares four images, manual arrows, autoplay:false,
  * slide duration0.5s and constrained height. Wrap/wait-for-animation follow the
- * source's bundled defaults but were not visually audited; easing is fitted.
+ * source's bundled defaults but were not visually audited. Desktop source easing is ease-in-out.
  * No source behavior JavaScript is imported. Four native image-filled Frames
  * remain editable under one clipped Viewport; no image is fetched by this code.
  *
@@ -103,7 +103,7 @@ function photo(Component: ComponentType<LayerProps>, index: number): ComponentTy
         else if (outgoing && slide.phase === "moving") offset = -slide.direction * 100
         const visible = selected || outgoing
         return <Component {...props} ref={ref} data-source-mac-photo={index + 1} data-source-mac-selected={selected} aria-hidden={!visible}
-            style={{ ...props.style, opacity: visible ? 1 : 0, visibility: visible ? "visible" : "hidden", pointerEvents: selected ? props.style?.pointerEvents : "none", transform: `translateX(${offset}%)`, transition: !state.frozen && !state.reduced && slide.phase === "moving" ? "transform .5s ease" : "none" }} />
+            style={{ ...props.style, opacity: visible ? 1 : 0, visibility: visible ? "visible" : "hidden", pointerEvents: selected ? props.style?.pointerEvents : "none", transform: `translateX(${offset}%)`, transition: !state.frozen && !state.reduced && slide.phase === "moving" ? "transform .5s ease-in-out" : "none" }} />
     })
 }
 export function withMacMossIdahoPhoto01(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return photo(Component, 0) }
