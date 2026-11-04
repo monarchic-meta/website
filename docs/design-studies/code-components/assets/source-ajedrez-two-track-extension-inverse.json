@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "EXTERNAL_EXTENSION_TO_E1_EXACT_INVERSE",
+  "current": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/SourceAjedrezSequence.extended-candidate.tsx",
+    "bytes": 205967,
+    "sha256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c"
+  },
+  "parent": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 203271,
+    "sha256": "e1f045c368f34c6f36cb30d57596c78c0bf702e0d789dbba8d91ac96a60c4271"
+  },
+  "direction": "For each unique after string, replace with before; the full result must equal the parent E1 hash and bytes.",
+  "patches": [
+    {
+      "name": "Restore tracked gaps and allow only measured perimeter widths",
+      "before": "                    if (positionsChanged || measuredChanged && measured !== null) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, sample.sourceFrame === 1176 ? null : (measured?.width ?? sample.widths[index]) * unit, screenUnit)",
+      "after": "                    if (positionsChanged || measuredChanged && ajedrezTypeTrackedActor(index)) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, measured ? measured.width * unit : sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)"
+    },
+    {
+      "name": "Explicit tracked actor predicate and nullable point lookup",
+      "before": "function ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (index !== 60 && index !== 25) return null\n    const row = AJEDREZ_TYPE_MEASURED_FITS[frame - 1169], offset = index === 60 ? 0 : 3\n    return row ? { left: row[offset], top: row[offset + 1], width: row[offset + 2] } : null\n}",
+      "after": "function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 }\nfunction ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (!ajedrezTypeTrackedActor(index)) return null\n    const point = AJEDREZ_TYPE_MEASURED_FITS[frame - 1152]?.[index === 60 ? 0 : 1]\n    return point ? { left: point[0], top: point[1], width: point[2] } : null\n}"
+    },
+    {
+      "name": "Measured frame range only",
+      "before": "    return frame >= 1169 && frame < 1174 ? frame : -1",
+      "after": "    return frame >= 1152 && frame < 1226 ? frame : -1"
+    },
+    {
+      "name": "Two reviewed74-frame nullable source-glyph tracks only",
+      "before": "// Two existing independent-word actors have reviewed source-glyph geometry\n// across these five recorded frames. These literal fits retain the1172 anchors;\n// they do not identify poem tokens, infer easing or move the other82 actors.\n// Each row is [actor60 left,top,width, actor25 left,top,width], logical480px.\nconst AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [number, number, number, number, number, number])[] = [\n    [284, 480.5, 17, 320, 289.5, 31],\n    [188, 216.5, 16, 151, 216.5, 31],\n    [188, 216.5, 17, 151, 216.5, 31],\n    [188, 215.5, 16, 152, 215.5, 30],\n    [188, 215.5, 17, 151, 215.5, 31],\n]\n",
+      "after": "// Two source-glyph geometry tracks across retained frames1152–1225.\n// Literal measured fits for independent strings; null entries mark composite\n// ink with no isolated bound and restore the existing representative pose.\n// Other82 actors, static49 posters and source-word identity caveats remain.\n// Rows contain [actor60[left,top,width]|null, actor25[left,top,width]|null].\ntype AjedrezTypeMeasuredPoint = readonly [number, number, number]\nconst AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [AjedrezTypeMeasuredPoint | null, AjedrezTypeMeasuredPoint | null])[] = [\n    [[296,297.5,17],[296,352.5,31]],\n    [[297,343.5,17],[74,430.5,31]],\n    [[297,344.5,17],[74,431.5,31]],\n    [[297,343.5,17],[74,430.5,31]],\n    [[297,343.5,17],[74,430.5,31]],\n    [[297,343.5,17],[74,430.5,31]],\n    [[297,343.5,17],[74,430.5,31]],\n    [[296,343.5,17],[74,430.5,30]],\n    [[296,344.5,17],[74,431.5,30]],\n    [[370,479.5,17],[352,289.5,30]],\n    [[370,479.5,17],[351,289.5,31]],\n    [[370,478.5,17],[351,289.5,31]],\n    [[370,478.5,17],[352,288.5,30]],\n    [[370,478.5,17],[352,288.5,30]],\n    [[370,478.5,17],[352,288.5,30]],\n    [[370,478.5,17],[352,288.5,30]],\n    [[370,479.5,17],[352,289.5,30]],\n    [[284,480.5,17],[320,289.5,31]],\n    [[188,216.5,16],[151,216.5,31]],\n    [[188,216.5,17],[151,216.5,31]],\n    [[188,215.5,16],[152,215.5,30]],\n    [[188,215.5,17],[151,215.5,31]],\n    [[351,645.5,17],[73,201.5,31]],\n    [[351,645.5,17],[73,202.5,31]],\n    [[351,645.5,17],[74,202.5,30]],\n    [[352,645.5,17],[351,535.5,31]],\n    [[352,645.5,17],[352,535.5,30]],\n    [[352,645.5,17],[352,534.5,30]],\n    [[352,145.5,17],[351,534.5,31]],\n    [[352,145.5,17],[351,534.5,31]],\n    [[351,146.5,17],[352,534.5,30]],\n    [[351,146.5,17],[17,90.5,31]],\n    [[240,36.5,17],[17,91.5,31]],\n    [[240,36.5,17],[17,91.5,31]],\n    [[240,37.5,18],[18,91.5,31]],\n    [[241,36.5,17],[18,90.5,31]],\n    [[408,173.5,17],[297,173.5,30]],\n    [[408,173.5,17],[296,173.5,31]],\n    [[186,244.5,17],[296,117.5,32]],\n    [[186,244.5,17],[296,117.5,32]],\n    [[186,244.5,17],[296,118.5,31]],\n    [[185,243.5,18],[296,118.5,31]],\n    [[185,243.5,18],[296,118.5,31]],\n    [[254,256.5,17],[59,132.5,30]],\n    [[254,255.5,17],[58,131.5,31]],\n    [[352,36.5,17],[59,131.5,31]],\n    [[352,36.5,17],[59,131.5,31]],\n    [[352,36.5,17],[59,131.5,30]],\n    [[353,36.5,17],[242,311.5,30]],\n    [[352,36.5,17],[19,145.5,31]],\n    [[408,174.5,17],[19,146.5,30]],\n    [[408,173.5,17],[19,145.5,30]],\n    [[408,173.5,17],[18,145.5,31]],\n    [[408,173.5,16],[18,145.5,31]],\n    [[407,173.5,17],[18,145.5,31]],\n    [[185,312.5,17],[18,145.5,31]],\n    [[185,312.5,17],[216,493.5,31]],\n    [null,[216,493.5,31]],\n    [[241,479.5,17],[296,576.5,31]],\n    [[241,479.5,17],[296,576.5,31]],\n    [[241,479.5,17],[296,576.5,31]],\n    [[185,90.5,18],null],\n    [[185,90.5,17],null],\n    [[185,90.5,17],null],\n    [[185,90.5,17],[18,48.5,31]],\n    [[185,90.5,17],[18,49.5,31]],\n    [[185,90.5,17],[18,49.5,31]],\n    [[240,465.5,17],[17,49.5,31]],\n    [[240,465.5,17],[129,576.5,31]],\n    [[240,230.5,18],[129,576.5,31]],\n    [[240,229.5,18],[184,36.5,31]],\n    [[240,229.5,18],[185,36.5,31]],\n    [[241,230.5,17],[185,36.5,31]],\n    [[241,230.5,17],[185,36.5,31]],\n]\n"
+    }
+  ],
+  "retainedE1ToA804": {
+    "currentSHA256": "e1f045c368f34c6f36cb30d57596c78c0bf702e0d789dbba8d91ac96a60c4271",
+    "parent": {
+      "sha256": "a804fd6e347b7a38dfe70cc35b6067e0c9e7a8d91a93496e0c01a8644c4ef810",
+      "bytes": 201266
+    },
+    "patches": [
+      {
+        "name": "private measured table/helpers only",
+        "after": "// Two existing independent-word actors have reviewed source-glyph geometry\n// across these five recorded frames. These literal fits retain the1172 anchors;\n// they do not identify poem tokens, infer easing or move the other82 actors.\n// Each row is [actor60 left,top,width, actor25 left,top,width], logical480px.\nconst AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [number, number, number, number, number, number])[] = [\n    [284, 480.5, 17, 320, 289.5, 31],\n    [188, 216.5, 16, 151, 216.5, 31],\n    [188, 216.5, 17, 151, 216.5, 31],\n    [188, 215.5, 16, 152, 215.5, 30],\n    [188, 215.5, 17, 151, 215.5, 31],\n]\n// One effect-dependency slot stays stable per host, but changes when either\n// the native host or this module changes. Weak keys do not retain native DOM.\nconst AJEDREZ_TYPE_MEASURED_OWNERS = new WeakMap<HTMLElement, object>()\nfunction ajedrezTypeMeasuredOwner(host: HTMLElement | null) {\n    if (!host) return null\n    let token = AJEDREZ_TYPE_MEASURED_OWNERS.get(host)\n    if (!token) { token = {}; AJEDREZ_TYPE_MEASURED_OWNERS.set(host, token) }\n    return token\n}\nfunction ajedrezTypeMeasuredFrame(time: number) {\n    const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)\n    return frame >= 1169 && frame < 1174 ? frame : -1\n}\nfunction ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (index !== 60 && index !== 25) return null\n    const row = AJEDREZ_TYPE_MEASURED_FITS[frame - 1169], offset = index === 60 ? 0 : 3\n    return row ? { left: row[offset], top: row[offset + 1], width: row[offset + 2] } : null\n}\n",
+        "before": ""
+      },
+      {
+        "name": "let disposed = false, dirty = true, previousSample",
+        "after": "            let disposed = false, dirty = true, previousSample = -1, previousMeasuredFrame = -1, previousWidth = -1, previousInset: boolean | null = null",
+        "before": "            let disposed = false, dirty = true, previousSample = -1, previousWidth = -1, previousInset: boolean | null = null"
+      },
+      {
+        "name": "if (!live) { clear(); dirty = true; previousSample",
+        "after": "                if (!live) { clear(); dirty = true; previousSample = -1; previousMeasuredFrame = -1; previousInset = null; host.setAttribute(\"data-source-ajedrez-inset-score\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-count\", \"0\"); return }",
+        "before": "                if (!live) { clear(); dirty = true; previousSample = -1; previousInset = null; host.setAttribute(\"data-source-ajedrez-inset-score\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-status\", \"native-poster\"); host.setAttribute(\"data-source-ajedrez-grid-count\", \"0\"); return }"
+      },
+      {
+        "name": "const sample = ajedrezTypeSample(current.time)",
+        "after": "                const sample = ajedrezTypeSample(current.time), measuredFrame = ajedrezTypeMeasuredFrame(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1",
+        "before": "                const sample = ajedrezTypeSample(current.time), unit = host.offsetWidth > 0 ? host.offsetWidth / 480 : 1, screenUnit = host.offsetWidth > 0 ? host.getBoundingClientRect().width / host.offsetWidth : 1"
+      },
+      {
+        "name": "cache includes finite measured frame",
+        "after": "                const measuredChanged = previousMeasuredFrame !== measuredFrame\n                if (!positionsChanged && !measuredChanged && previousInset === insetVisible) return\n                dirty = false; previousSample = sample.sourceFrame; previousMeasuredFrame = measuredFrame; previousWidth = host.offsetWidth; previousInset = insetVisible",
+        "before": "                if (!positionsChanged && previousInset === insetVisible) return\n                dirty = false; previousSample = sample.sourceFrame; previousWidth = host.offsetWidth; previousInset = insetVisible"
+      },
+      {
+        "name": "only changed measured actors gain individual writes",
+        "after": "                    const measured = ajedrezTypeMeasuredFit(measuredFrame, index)\n                    if (positionsChanged || measuredChanged && measured !== null) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, sample.sourceFrame === 1176 ? null : (measured?.width ?? sample.widths[index]) * unit, screenUnit)",
+        "before": "                    if (positionsChanged) write(node, Math.round(sample.xy[index * 2] * unit * 100) / 100, Math.round(sample.xy[index * 2 + 1] * unit * 100) / 100, sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)"
+      },
+      {
+        "name": "one dependency token supports retained hook owner refresh",
+        "after": "        }, [ajedrezTypeMeasuredOwner(host)])",
+        "before": "        }, [host])"
+      }
+    ]
+  }
+}

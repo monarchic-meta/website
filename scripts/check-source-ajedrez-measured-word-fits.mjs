@@ -12,6 +12,13 @@ const repo = fileURLToPath(new URL('../', import.meta.url))
 const sourcePath = process.env.MONARCHIC_AJEDREZ_SOURCE_PATH ?? path.join(repo, 'docs/design-studies/code-components/SourceAjedrezSequence.tsx')
 const fixturePath = path.join(repo, 'scripts/fixtures/source-ajedrez-measured-word-fits.json')
 const source = fs.readFileSync(sourcePath, 'utf8'), fixture = JSON.parse(fs.readFileSync(fixturePath))
+// Keep the historical five-frame assertions available for explicit E1 inputs.
+// The current source is validated by the stronger 74-frame continuation suite.
+if (source.includes('function ajedrezTypeTrackedActor(')) {
+    process.env.MONARCHIC_AJEDREZ_WORD_EXTENSION_EVIDENCE_DIR ??= process.env.MONARCHIC_AJEDREZ_WORD_FITS_EVIDENCE_DIR ?? '/tmp/monarchic-ajedrez-measured-word-fits'
+    await import('./check-source-ajedrez-two-track-extension.mjs')
+    process.exit(0)
+}
 const oldFixture = JSON.parse(fs.readFileSync(path.join(repo, 'docs/design-studies/code-components/assets/source-ajedrez-type-grid-provenance.json')))
 const output = process.env.MONARCHIC_AJEDREZ_WORD_FITS_EVIDENCE_DIR ?? '/tmp/monarchic-ajedrez-measured-word-fits'
 fs.mkdirSync(output, { recursive: true })

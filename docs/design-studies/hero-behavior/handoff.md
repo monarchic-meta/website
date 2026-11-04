@@ -28,7 +28,7 @@ All 18 source-led behavior pages exist in Framer. The historical MCP280 inventor
 Current pending gates:
 
 - The [complete remaining-work backlog](remaining-work.md) separates missing implementation, source inspection, actual Framer verification, declared substitutions and the later original-hero stage across all 18 references.
-- H2: verify the authored 166-pose/30-atlas continuation, native catalog/guides/metadata, word motion and decoded aperture in actual Preview and after reload; remaining nonphotographic/closing-state fidelity work is listed separately in the backlog.
+- H2: the two-word74-frame continuation passes40 local checks and12 strict checks; Framer delivery is pending. Verify the authored 166-pose/30-atlas continuation, native catalog/guides/metadata, word motion and decoded aperture in actual Preview and after reload; remaining nonphotographic/closing-state fidelity work is listed separately in the backlog.
 - H8: the 20 additional genuine Font13 copies and six tickers are authored. Check their actual paint, Tickets dragging, corrected navigation/proximity, both new compositions, native-media lifecycle and editor reload.
 - H7: check the saved native arrow-hover/backdrop effect after reload.
 - H12: the four header dropdowns and Phone menu are authored through MCP598, with 53 native families and 27 cleanly compiled overrides. Compare actual native font paint, Desktop/Phone input, scroll chaining and reload. Terminal transcript/stream fidelity remains separate.

@@ -401,16 +401,87 @@ function ajedrezTypeSample(time: number): AjedrezTypeSample {
     for (const next of AJEDREZ_TYPE_SAMPLES) { if (next.frame > frame) break; sample = next }
     return sample
 }
-// Two existing independent-word actors have reviewed source-glyph geometry
-// across these five recorded frames. These literal fits retain the1172 anchors;
-// they do not identify poem tokens, infer easing or move the other82 actors.
-// Each row is [actor60 left,top,width, actor25 left,top,width], logical480px.
-const AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [number, number, number, number, number, number])[] = [
-    [284, 480.5, 17, 320, 289.5, 31],
-    [188, 216.5, 16, 151, 216.5, 31],
-    [188, 216.5, 17, 151, 216.5, 31],
-    [188, 215.5, 16, 152, 215.5, 30],
-    [188, 215.5, 17, 151, 215.5, 31],
+// Two source-glyph geometry tracks across retained frames1152–1225.
+// Literal measured fits for independent strings; null entries mark composite
+// ink with no isolated bound and restore the existing representative pose.
+// Other82 actors, static49 posters and source-word identity caveats remain.
+// Rows contain [actor60[left,top,width]|null, actor25[left,top,width]|null].
+type AjedrezTypeMeasuredPoint = readonly [number, number, number]
+const AJEDREZ_TYPE_MEASURED_FITS: readonly (readonly [AjedrezTypeMeasuredPoint | null, AjedrezTypeMeasuredPoint | null])[] = [
+    [[296,297.5,17],[296,352.5,31]],
+    [[297,343.5,17],[74,430.5,31]],
+    [[297,344.5,17],[74,431.5,31]],
+    [[297,343.5,17],[74,430.5,31]],
+    [[297,343.5,17],[74,430.5,31]],
+    [[297,343.5,17],[74,430.5,31]],
+    [[297,343.5,17],[74,430.5,31]],
+    [[296,343.5,17],[74,430.5,30]],
+    [[296,344.5,17],[74,431.5,30]],
+    [[370,479.5,17],[352,289.5,30]],
+    [[370,479.5,17],[351,289.5,31]],
+    [[370,478.5,17],[351,289.5,31]],
+    [[370,478.5,17],[352,288.5,30]],
+    [[370,478.5,17],[352,288.5,30]],
+    [[370,478.5,17],[352,288.5,30]],
+    [[370,478.5,17],[352,288.5,30]],
+    [[370,479.5,17],[352,289.5,30]],
+    [[284,480.5,17],[320,289.5,31]],
+    [[188,216.5,16],[151,216.5,31]],
+    [[188,216.5,17],[151,216.5,31]],
+    [[188,215.5,16],[152,215.5,30]],
+    [[188,215.5,17],[151,215.5,31]],
+    [[351,645.5,17],[73,201.5,31]],
+    [[351,645.5,17],[73,202.5,31]],
+    [[351,645.5,17],[74,202.5,30]],
+    [[352,645.5,17],[351,535.5,31]],
+    [[352,645.5,17],[352,535.5,30]],
+    [[352,645.5,17],[352,534.5,30]],
+    [[352,145.5,17],[351,534.5,31]],
+    [[352,145.5,17],[351,534.5,31]],
+    [[351,146.5,17],[352,534.5,30]],
+    [[351,146.5,17],[17,90.5,31]],
+    [[240,36.5,17],[17,91.5,31]],
+    [[240,36.5,17],[17,91.5,31]],
+    [[240,37.5,18],[18,91.5,31]],
+    [[241,36.5,17],[18,90.5,31]],
+    [[408,173.5,17],[297,173.5,30]],
+    [[408,173.5,17],[296,173.5,31]],
+    [[186,244.5,17],[296,117.5,32]],
+    [[186,244.5,17],[296,117.5,32]],
+    [[186,244.5,17],[296,118.5,31]],
+    [[185,243.5,18],[296,118.5,31]],
+    [[185,243.5,18],[296,118.5,31]],
+    [[254,256.5,17],[59,132.5,30]],
+    [[254,255.5,17],[58,131.5,31]],
+    [[352,36.5,17],[59,131.5,31]],
+    [[352,36.5,17],[59,131.5,31]],
+    [[352,36.5,17],[59,131.5,30]],
+    [[353,36.5,17],[242,311.5,30]],
+    [[352,36.5,17],[19,145.5,31]],
+    [[408,174.5,17],[19,146.5,30]],
+    [[408,173.5,17],[19,145.5,30]],
+    [[408,173.5,17],[18,145.5,31]],
+    [[408,173.5,16],[18,145.5,31]],
+    [[407,173.5,17],[18,145.5,31]],
+    [[185,312.5,17],[18,145.5,31]],
+    [[185,312.5,17],[216,493.5,31]],
+    [null,[216,493.5,31]],
+    [[241,479.5,17],[296,576.5,31]],
+    [[241,479.5,17],[296,576.5,31]],
+    [[241,479.5,17],[296,576.5,31]],
+    [[185,90.5,18],null],
+    [[185,90.5,17],null],
+    [[185,90.5,17],null],
+    [[185,90.5,17],[18,48.5,31]],
+    [[185,90.5,17],[18,49.5,31]],
+    [[185,90.5,17],[18,49.5,31]],
+    [[240,465.5,17],[17,49.5,31]],
+    [[240,465.5,17],[129,576.5,31]],
+    [[240,230.5,18],[129,576.5,31]],
+    [[240,229.5,18],[184,36.5,31]],
+    [[240,229.5,18],[185,36.5,31]],
+    [[241,230.5,17],[185,36.5,31]],
+    [[241,230.5,17],[185,36.5,31]],
 ]
 // One effect-dependency slot stays stable per host, but changes when either
 // the native host or this module changes. Weak keys do not retain native DOM.
@@ -423,12 +494,13 @@ function ajedrezTypeMeasuredOwner(host: HTMLElement | null) {
 }
 function ajedrezTypeMeasuredFrame(time: number) {
     const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)
-    return frame >= 1169 && frame < 1174 ? frame : -1
+    return frame >= 1152 && frame < 1226 ? frame : -1
 }
+function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 }
 function ajedrezTypeMeasuredFit(frame: number, index: number) {
-    if (index !== 60 && index !== 25) return null
-    const row = AJEDREZ_TYPE_MEASURED_FITS[frame - 1169], offset = index === 60 ? 0 : 3
-    return row ? { left: row[offset], top: row[offset + 1], width: row[offset + 2] } : null
+    if (!ajedrezTypeTrackedActor(index)) return null
+    const point = AJEDREZ_TYPE_MEASURED_FITS[frame - 1152]?.[index === 60 ? 0 : 1]
+    return point ? { left: point[0], top: point[1], width: point[2] } : null
 }
 /** Attach only to the existing phase36 native component instance, beneath its
  * existing Phase36 wrapper. Public native layer names scope all84 words; no
@@ -540,7 +612,7 @@ export function withAjedrezTypeGridMotion(Component: ComponentType<LayerProps>):
                     }
                     if (index === undefined) continue
                     const measured = ajedrezTypeMeasuredFit(measuredFrame, index)
-                    if (positionsChanged || measuredChanged && measured !== null) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, sample.sourceFrame === 1176 ? null : (measured?.width ?? sample.widths[index]) * unit, screenUnit)
+                    if (positionsChanged || measuredChanged && ajedrezTypeTrackedActor(index)) write(node, Math.round((measured?.left ?? sample.xy[index * 2]) * unit * 100) / 100, Math.round((measured?.top ?? sample.xy[index * 2 + 1]) * unit * 100) / 100, measured ? measured.width * unit : sample.sourceFrame === 1176 ? null : sample.widths[index] * unit, screenUnit)
                     count++
                 }
                 host.setAttribute("data-source-ajedrez-inset-score", insetVisible ? "visible" : "hidden")

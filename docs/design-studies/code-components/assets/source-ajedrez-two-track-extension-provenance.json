@@ -1,0 +1,106 @@
+{
+  "reference": "HERO-002",
+  "classification": "Source inspiration / credited recorded-film recreation",
+  "credit": "Julián Leiss / Ajedrez Film Poem",
+  "status": "EXTENDED_TWO_TRACK_SOURCE_LOCAL40_PASS_FRAMER_DELIVERY_PENDING",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 205967,
+    "sha256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-ajedrez-two-track-extension.mjs",
+    "bytes": 45236,
+    "sha256": "4da6430b97e3225f4ccd53fb5f78b534dc1129dd185e2846f56769a724aea3f8"
+  },
+  "fixture": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-ajedrez-two-track-extension.json",
+    "bytes": 136677,
+    "sha256": "13565ff07634677da8d0f12f22dd75c84e68a014936ba6bb3e963aa74184a3b7"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-inverse.json",
+    "bytes": 12184,
+    "sha256": "8347c535a2fe2513f43dc89ddd61ec7f3ad036eaf51d5999503d31ca22e3419d"
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/final-8ad1c744-40checks/validation-and-handoff-receipt.json",
+    "bytes": 32002,
+    "sha256": "6b06b3981202f9304328bc0299a7f29137fdf8a83160f6663a94ff7cd7e66243"
+  },
+  "scope": {
+    "actors": 2,
+    "unchangedActors": 82,
+    "firstFrame": 1152,
+    "lastFrameExclusive": 1226,
+    "sourceFrameRate": 24,
+    "measuredPlacements": 144,
+    "unresolvedPlacements": 4,
+    "sourceComparisonFrames": 23,
+    "sourceComparisonBytes": 1882697,
+    "independentStrings": [
+      "figura",
+      "línea"
+    ],
+    "sourceTokenIdentityClaim": false,
+    "easingClaim": false,
+    "gaps": {
+      "actor60": [
+        1209
+      ],
+      "actor25": [
+        1213,
+        1214,
+        1215
+      ]
+    },
+    "gapPolicy": "Use the retained representative baseline, not the previous measured position."
+  },
+  "validation": {
+    "checks": 40,
+    "strictChecks": 12,
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/canonical-validation/result.json",
+      "bytes": 3078053,
+      "sha256": "9db498407fb62282808bef06e3ed1bbf19dc162d09980410f38d03486e69a621"
+    },
+    "strict": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/canonical-validation/legacy-strict.json",
+      "bytes": 1552,
+      "sha256": "fa77ef4973c91d7b3c46e8fa2a8491152262240b634e2f9382c2ad7a19074bfb"
+    },
+    "canonicalCompatibilityEntryPoint": "check:source-ajedrez-measured-word-fits",
+    "historicalFiveFrameAssertionsRetained": true,
+    "all84NodeIdentitiesPreserved": true,
+    "allTenEarlierMeasuredPlacementsExact": true,
+    "oldHeldPoseAndGapPolicyNegatives": true,
+    "retainedHookRefreshAndPhone": true
+  },
+  "preservation": {
+    "publicOverrides": 46,
+    "unrelatedPublicBodiesExact": 45,
+    "photoPoses": 166,
+    "insetFamilies": 19,
+    "noNewTimerRAFMediaGPU": true,
+    "nativeChanges": 0
+  },
+  "previousArrivalProvenance": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-measured-word-fits-provenance.json",
+    "bytes": 5475,
+    "sha256": "6e9a2edd2ec259a66bb840d11c3072dd1b747d825a995ad27e6b095ddff0b3a6"
+  },
+  "actualFramer": {
+    "sourceWritten": false,
+    "currentSourceSHA256": "e1f045c368f34c6f36cb30d57596c78c0bf702e0d789dbba8d91ac96a60c4271",
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Only two source-glyph geometry tracks change. The other82 actors remain twelve representative holds; the film is unfinished.",
+    "Independent native strings remain; this neither reproduces nor translates the source poem.",
+    "Four overlapping-ink source states remain unresolved; the retained baseline is explicit.",
+    "Per-frame1px differences may include raster antialias variation; physical easing and poem-token identities are not recovered.",
+    "Local DOM, hook and strict checks do not prove actual Framer painting or saved persistence."
+  ]
+}

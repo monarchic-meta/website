@@ -68,6 +68,21 @@ keeps actual Framer admission, source-state comparison and reload distinct.
 nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
+## Ajedrez measured word motion
+
+The [two-track continuation](assets/source-ajedrez-two-track-extension-provenance.json)
+adds144 literal glyph-geometry placements across74 recorded frames to
+[SourceAjedrezSequence.tsx](SourceAjedrezSequence.tsx). Four overlapping-ink
+states retain their baseline pose; the other82 actors still use sampled holds.
+It preserves the earlier ten measured placements, independent wording and
+existing shared clock. The40 focused checks and12 strict checks cover local
+behavior; actual Framer delivery, Preview and reload remain separate.
+
+Run `pnpm run check:source-ajedrez-two-track-extension`, or the matching Nix
+check with `--max-jobs 1 --cores 2`. The older measured-word-fit entry point
+delegates to this stronger suite for the current source and retains its earlier
+assertions when explicitly given the historical five-frame source.
+
 ## Mecha contact mark
 
 The named `MechaContactMark` export in [MechaScrollMark.tsx](MechaScrollMark.tsx)
