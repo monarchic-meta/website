@@ -262,8 +262,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-provenance.json",
-      "bytes": 14654,
-      "sha256": "f11d2c998bb1837835bc163c1af0f313d1a8ffcdb2abb03f8c09fefd6e69de17"
+      "bytes": 14612,
+      "sha256": "78b3bc0414d25e8130e6a3c818b814340ab6a94ef2aaa34222d1b323fd2c848e"
     },
     "pageID": "IhJNN_eMc",
     "classification": "Source inspiration / credited recreation",
@@ -345,8 +345,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-rolling-text-provenance.json",
-      "bytes": 8301,
-      "sha256": "928fd0759b8957a3c123bf9610e690a2accaf8fff9ef3c897044d5144a807a00"
+      "bytes": 8235,
+      "sha256": "da0b1ca9438e46c8f9c588adba2e2f3aa89c19bb97e994c94ac3b3b712a4bfd1"
     },
     "validation": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/final-focused-receipt.json",
@@ -369,11 +369,11 @@
     }
   },
   "sameModuleRollingPackage": {
-    "status": "SAME_MODULE_ROLLING56_LOCAL51_AND_RETAINED52_PASS_FRAMER_PENDING",
+    "status": "COMBINED56_ROLLING11_BINDINGS22_AUTHORED_THROUGH793_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-rolling-provenance.json",
-      "bytes": 5791,
-      "sha256": "51a2e0c6b8d0ed3fc0be54b1573b1366b0db8ec2e37ed39c594804b81cd421ab"
+      "bytes": 6539,
+      "sha256": "4b37da6676cfea644d7830437a9161db9f53d34459276b019882dc0678463e2b"
     },
     "manualSource": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpeningRolling.tsx",
@@ -410,9 +410,24 @@
       "failurePolicy": "The minimal phone probe lacked ordinary-flow content and had height0; one ordinary-flow child fixed the fixture without changing production, assertions or resource limits."
     },
     "actualFramer": {
-      "sourceWritten": false,
-      "nativeBindingsWritten": false,
-      "genuine56OverridesVerified": false,
+      "sourceWritten": true,
+      "nativeBindingsWritten": true,
+      "genuine56OverridesVerified": true,
+      "old52IDsAndSchemasExact": true,
+      "old33991BytePrefixExact": true,
+      "compilerDiagnostics": 0,
+      "logicalBindingFamilies": 11,
+      "actualBindings": 22,
+      "fontRowsPreserved": 60,
+      "nativeOwner": "315c5c7da32db63291fb019db6759ea5b6daceeecf3b079a6392008c11d4933e",
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-writer788/final-cantor56-rolling11-authoring-receipt793.json",
+        "bytes": 5868,
+        "sha256": "4a8f71a9163af001d416569c590047beeb6810dbbb8b88ae5955d3b2e2600a7b"
+      },
+      "oldB611InverseExact": true,
+      "newNodes": 0,
+      "geometryTextFontHrefChanges": 0,
       "actualPaintVerified": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false

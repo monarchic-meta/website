@@ -88,8 +88,8 @@ manual same-module package for the existing Opening code file. It preserves
 all52 prior overrides and adds four rolling controls. Its
 [package proof](assets/source-cantor-opening-rolling-provenance.json) records
 51 rolling and52 retained Opening checks; the corrected native plan uses11
-active families rather than the earlier hidden text layers. Framer import and
-binding remain open. The leaf files above remain authoring inputs.
+active families rather than the earlier hidden text layers. Framer source and11-family/22-copy bindings are independently read through793.
+Actual paint, Preview and reload remain open. The leaf files above remain authoring inputs.
 
 ## Mecha contact mark
 
@@ -158,7 +158,9 @@ one finite controller updates only while geometry changes.
 The [provenance](assets/source-format-intro-clock-provenance.json) records85
 passing local checks and native authoring through MCP684:23 families/69 copies
 and126 genuine font tuples. Actual paint, Preview and reload remain open.
-All eighteen Notes and further Daughter states remain separate work.
+All eighteen Notes are authored through817. The alternate artwork/Sparks
+chapters are authored through720/741; actual corresponding-state painting and
+interaction comparisons remain separate.
 
 ```sh
 nix build .#checks.x86_64-linux.source-format-intro-clock --max-jobs 1 --cores 2
@@ -166,22 +168,22 @@ nix build .#checks.x86_64-linux.source-format-intro-clock --max-jobs 1 --cores 2
 
 ## FORMAT source notes
 
-[SourceFormatDetails.tsx](SourceFormatDetails.tsx) adds eighteen editable papers
-on sixteen source anchors. A single appended bridge in
-[SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx) reuses the existing
-Notes and Daughter state. The old151 Details and24 shared roles stay byte-exact.
+[SourceFormatSharedNotes.tsx](SourceFormatSharedNotes.tsx) is the manual
+same-module package containing the preserved Shared56 prefix and191 Details/Notes
+roles. It reuses one Notes/Daughter store and the existing source layout. The
+leaf [SourceFormatDetails.tsx](SourceFormatDetails.tsx) and
+[SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx) remain retained
+authoring inputs; Framer receives the combined247-role artifact.
 
-The [notes provenance](assets/source-format-notes-provenance.json) records ten
-strict and50 focused checks, plus the shared-module regression. The visible
-papers use the original50ms stagger, fade and mask timing; all five tail shapes
-match the original polygon pixels at both tested sizes. Copy is paraphrased.
-The actual shared-module import diagnostic keeps the91-family native plan on
-hold; the clean151-role clock source is restored. Actual paint and reload are
-separate gates.
+The [package proof](assets/source-format-shared-notes-provenance.json) records
+the source/shared browser regression,10 strict checks and52 Notes checks. All18
+annotations retain source geometry,50ms stagger and matching tail pixels; their
+copy is independently paraphrased. All91 editable families/273 native parts,
+324 font tuples and1,572 role assignments are independently read through817.
+No old Details-module references remain in this page; its file remains intact
+for other owners. Actual paint, Preview and reload remain open.
 
-```sh
-nix build .#checks.x86_64-linux.source-format-notes --max-jobs 1 --cores 2
-```
+`nix build .#checks.x86_64-linux.source-format-shared-notes --max-jobs 1 --cores 2`
 
 ## FORMAT alternate artwork effects
 

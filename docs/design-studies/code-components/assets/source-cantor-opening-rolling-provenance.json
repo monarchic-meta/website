@@ -2,7 +2,7 @@
   "reference": "HERO-007",
   "classification": "Source inspiration",
   "credit": "Cantor8 / Artemii Lebedev",
-  "status": "SAME_MODULE_ROLLING56_LOCAL51_AND_RETAINED52_PASS_FRAMER_PENDING",
+  "status": "COMBINED56_ROLLING11_BINDINGS22_AUTHORED_THROUGH793_PREVIEW_RELOAD_OPEN",
   "manualSource": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpeningRolling.tsx",
     "bytes": 47157,
@@ -100,9 +100,24 @@
     "sha256": "f9e5e7a946e3c17c9be14b6073fc4ece51d035dbf60204414e63da5f1eb7b48a"
   },
   "actualFramer": {
-    "sourceWritten": false,
-    "nativeBindingsWritten": false,
-    "genuine56OverridesVerified": false,
+    "sourceWritten": true,
+    "nativeBindingsWritten": true,
+    "genuine56OverridesVerified": true,
+    "old52IDsAndSchemasExact": true,
+    "old33991BytePrefixExact": true,
+    "compilerDiagnostics": 0,
+    "logicalBindingFamilies": 11,
+    "actualBindings": 22,
+    "fontRowsPreserved": 60,
+    "nativeOwner": "315c5c7da32db63291fb019db6759ea5b6daceeecf3b079a6392008c11d4933e",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-writer788/final-cantor56-rolling11-authoring-receipt793.json",
+      "bytes": 5868,
+      "sha256": "4a8f71a9163af001d416569c590047beeb6810dbbb8b88ae5955d3b2e2600a7b"
+    },
+    "oldB611InverseExact": true,
+    "newNodes": 0,
+    "geometryTextFontHrefChanges": 0,
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false

@@ -231,11 +231,18 @@
     "other17BindingFamiliesMatchActual": true
   },
   "sameModuleSuccessor": {
-    "status": "EXTERNAL247_PACKAGE_PASSES_SHARED9_DETAILS10_NOTES52;ACTUAL_IMPORT_NATIVE_AND_FULL_OWNER_REMAP_PENDING",
+    "status": "SOURCE247_NATIVE91_FULL1572_BINDING_MIGRATION_AUTHORED_THROUGH817_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-shared-notes-provenance.json",
+      "bytes": 10463,
+      "sha256": "f3e9b704da170d91019be084f2724bc1500a289e191b942588c234d7e9a517c4"
+    },
     "sourceSHA256": "dd256592b6b740529922e6d9ff230062c696f499fc99874e012a4c461e50ae58",
     "publicOverrides": 247,
     "sourceAndLargestJSAndDtsBytes": 614572,
-    "actualDetailsStill151": true,
-    "nativeNotesCreated": false
+    "actualOldDetails151Preserved": true,
+    "nativeNotesCreated": true,
+    "fullOldDetailsRemapComplete": true,
+    "actualPreviewAndReload": false
   }
 }

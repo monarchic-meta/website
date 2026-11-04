@@ -611,5 +611,32 @@
         "sha256": "bc0e328c0b52009bdbd3a2eb214ff39e47467f68bba2e0fe44958110090322c4"
       }
     }
+  },
+  "nextPhoneNavigationGap": {
+    "status": "SOURCE_AND_NATIVE_GAP_REVIEWED_NO_IMPLEMENTATION",
+    "sourceNativeEvidence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/source-native-gap.json",
+      "bytes": 20499,
+      "sha256": "05fe31c217a0d59092b933741e4745b6bd76ca715c8173e2eda47cfe6d9a2fd2"
+    },
+    "minimalPlan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/minimal-next-plan.json",
+      "bytes": 5935,
+      "sha256": "af3a43de0da8813056d200fdc3f26c7a6b9ee33114ca3e017cbe325fc90460aa"
+    },
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/receipt.json",
+      "bytes": 6336,
+      "sha256": "7eca83c483fac6ec62e4edc93772dd3b9feca7488f32121975d3607151444d2a"
+    },
+    "scope": "Phone fullscreen navigation, four links in2×2 lower grid and separateJoin action; preserve Contact773/Tomorrow728.",
+    "observed": "Teams tap closes menu and reaches#teams at sourcey1962.",
+    "unknowns": [
+      "Close hit routing",
+      "Escape/focus",
+      "touch scrolling",
+      "resize"
+    ],
+    "noFifthAnimatedLink": true
   }
 }

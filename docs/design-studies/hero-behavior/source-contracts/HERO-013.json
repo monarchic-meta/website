@@ -1294,8 +1294,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-notes-provenance.json",
-      "bytes": 15240,
-      "sha256": "29616941003c29686a83fe40326ea4a9e35cbf6410dc330a0d29ce0b4af6fffd"
+      "bytes": 15594,
+      "sha256": "813edccb1f92f72e057118c4e46cb911db29a5ce127cf0b0f1605dd383234348"
     },
     "receipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/validation-and-handoff-receipt.json",
@@ -1659,11 +1659,11 @@
     }
   },
   "sameModuleNotes247": {
-    "status": "COMBINED247_VALIDATED_FRAMER_ADMISSION_NATIVE91_AND_FULL_OWNER_REMAP_PENDING",
+    "status": "SOURCE247_NATIVE91_FULL1572_BINDING_MIGRATION_AUTHORED_THROUGH817_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-shared-notes-provenance.json",
-      "bytes": 8148,
-      "sha256": "330036b16bf985cc1eac28a9fca27e6e760845eff131ab9131fe1b064303b2f0"
+      "bytes": 10463,
+      "sha256": "f3e9b704da170d91019be084f2724bc1500a289e191b942588c234d7e9a517c4"
     },
     "localProof": {
       "sharedBrowserReports": 5,
@@ -1687,10 +1687,55 @@
       "rootAndContextLast": true
     },
     "actualFramer": {
-      "sourceWritten": false,
-      "nativeNotesCreated": false,
-      "oldDetailsRemapComplete": false,
-      "PreviewAndReload": false
+      "sourceWritten": true,
+      "sourceReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/final-actual247-source-authoring-receipt796.json",
+        "bytes": 1679,
+        "sha256": "c24e24b587412507c781145b277e76b1802d1d0bd09baa37d094c305af0a744a"
+      },
+      "genuine247Classified": true,
+      "old56IDsAndSchemasExact": true,
+      "oldShared85154BytePrefixExact": true,
+      "compilerDiagnostics": 0,
+      "oldDetails151Untouched": true,
+      "nativePilotCreated": true,
+      "pilotFamilies": 6,
+      "pilotCopies": 18,
+      "pilotFontTuples": 18,
+      "pilotReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/six-family-native-pilot-barrier-receipt798.json",
+        "bytes": 3000,
+        "sha256": "92446bec26f0d46681bd33a8ff4387e09493b2af08e45ad742e6cb2476a6938e"
+      },
+      "allPilotHiddenUnbound": true,
+      "priorFad9InverseExact": true,
+      "nativeNotesComplete": true,
+      "fullOldDetailsRemapComplete": true,
+      "actualPaintVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false,
+      "nativeNotesCreated": true,
+      "roleFamilies": 524,
+      "actualBindings": 1572,
+      "newNativeFamilies": 91,
+      "newNativeParts": 273,
+      "genuineFontTuples": 324,
+      "oldPrQReferencesRemainingInH13": 0,
+      "archivedOldSubtrees": 9,
+      "finalOwner": "d6c1bfe6d4456333782ff71fc4bb9d53bcda64e02507f1cb760dc991e4f32f95",
+      "other91OwnersPreserved": true,
+      "all16DefinitionsPreserved": true,
+      "all60CatalogsAnd609SchemasPreserved": true,
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/final-notes247-native91-full-migration-authoring-receipt817.json",
+        "bytes": 7300,
+        "sha256": "06be47bd1c79e17f2ee3d098ffa55ea4bc2b5f309f4014e5a143cf70ee94523b"
+      },
+      "immutableMap": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/immutable-final-notes247-native91-full-migration-map817.json",
+        "bytes": 762913,
+        "sha256": "067252f656a5340316676936b57f856285ea36600292715742d4bc1055bf0e66"
+      }
     }
   }
 }

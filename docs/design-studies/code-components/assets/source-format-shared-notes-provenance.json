@@ -2,7 +2,7 @@
   "reference": "HERO-013",
   "classification": "Source inspiration",
   "credit": "FORMAT / Obys × DES",
-  "status": "COMBINED247_LOCAL_SHARED_DETAILS_AND_NOTES52_PASS_ACTUAL_ADMISSION_PENDING",
+  "status": "SOURCE247_NATIVE91_FULL1572_BINDING_MIGRATION_AUTHORED_THROUGH817_PREVIEW_RELOAD_OPEN",
   "manualSource": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatSharedNotes.tsx",
     "bytes": 296890,
@@ -138,13 +138,55 @@
     "completePriorOwnerInverseRequired": true
   },
   "actualFramer": {
-    "sourceWritten": false,
-    "genuine247Classified": false,
-    "nativeNotesCreated": false,
-    "fullOldDetailsRemapComplete": false,
+    "sourceWritten": true,
+    "sourceReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/final-actual247-source-authoring-receipt796.json",
+      "bytes": 1679,
+      "sha256": "c24e24b587412507c781145b277e76b1802d1d0bd09baa37d094c305af0a744a"
+    },
+    "genuine247Classified": true,
+    "old56IDsAndSchemasExact": true,
+    "oldShared85154BytePrefixExact": true,
+    "compilerDiagnostics": 0,
+    "oldDetails151Untouched": true,
+    "nativePilotCreated": true,
+    "pilotFamilies": 6,
+    "pilotCopies": 18,
+    "pilotFontTuples": 18,
+    "pilotReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/six-family-native-pilot-barrier-receipt798.json",
+      "bytes": 3000,
+      "sha256": "92446bec26f0d46681bd33a8ff4387e09493b2af08e45ad742e6cb2476a6938e"
+    },
+    "allPilotHiddenUnbound": true,
+    "priorFad9InverseExact": true,
+    "nativeNotesComplete": true,
+    "fullOldDetailsRemapComplete": true,
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "nativeNotesCreated": true,
+    "roleFamilies": 524,
+    "actualBindings": 1572,
+    "newNativeFamilies": 91,
+    "newNativeParts": 273,
+    "genuineFontTuples": 324,
+    "oldPrQReferencesRemainingInH13": 0,
+    "archivedOldSubtrees": 9,
+    "finalOwner": "d6c1bfe6d4456333782ff71fc4bb9d53bcda64e02507f1cb760dc991e4f32f95",
+    "other91OwnersPreserved": true,
+    "all16DefinitionsPreserved": true,
+    "all60CatalogsAnd609SchemasPreserved": true,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/final-notes247-native91-full-migration-authoring-receipt817.json",
+      "bytes": 7300,
+      "sha256": "06be47bd1c79e17f2ee3d098ffa55ea4bc2b5f309f4014e5a143cf70ee94523b"
+    },
+    "immutableMap": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes247-writer794/immutable-final-notes247-native91-full-migration-map817.json",
+      "bytes": 762913,
+      "sha256": "067252f656a5340316676936b57f856285ea36600292715742d4bc1055bf0e66"
+    }
   },
   "limits": [
     "All18 sentences remain independently paraphrased; geometry and source time/scroll behavior remain the comparison target.",
