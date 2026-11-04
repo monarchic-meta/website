@@ -86,18 +86,21 @@ keeps actual Framer admission, source-state comparison and reload distinct.
 nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
-## Mac Moss gallery easing
+## Mac Moss gallery interaction
 
-Two [current-source observations](assets/source-macmoss-gallery-provenance.json)
-verify the selected four photos, horizontal dragging, small-drag return and
-photo click activation. The narrow easing correction uses the observed500ms
-`ease-in-out`, preserving all nine roles, photos, native controls and clock.
-Gesture tracking and photo activation remain separate implementation work.
+The [native gesture recreation](assets/source-macmoss-gallery-gesture-provenance.json)
+adds the observed horizontal mouse tracking, drag return/commit and photo click
+activation to the four editable images. It uses the source rounded20% threshold,
+suppresses photo activation after drags beyond10px, and starts500ms ease-in-out
+transitions from the live photo positions. The one-RAF prepared startup, wide
+drag clamp, leave/cancel/tiny/Phone adaptations and source unknowns stay explicit.
 
-Five static/strict and47 Desktop/Phone-adaptation checks pass. Exact code and18
-bindings are independently read through863; actual Preview/reload and native
-Video lifecycle remain open. Run `pnpm run check:source-macmoss-portfolio` and
-`pnpm run check:source-macmoss-browser` serially.
+The existing5 static,47 browser and44 native-tap checks pass, alongside70 focused
+assertions and four real-time CSS interpolation cases. The portable70/4 entries
+also pass and run serially after5/47 in the Nix target. Exact code, nine roles
+and18 bindings are independently read through871. Actual Framer pointer/ref
+forwarding, Preview/reload and native Video lifecycle remain open. Run the
+`check:source-macmoss-*` pnpm scripts or `checks.x86_64-linux.source-macmoss`.
 
 ## Neue Montreal attraction text
 

@@ -1,0 +1,142 @@
+{
+  "reference": "HERO-006",
+  "classification": "Source inspiration / source-led native UI recreation",
+  "creator": "Mac Moss Studio",
+  "source": "https://macmoss.studio/",
+  "status": "SOURCE4D_AUTHORED_AND_INDEPENDENTLY_SEALED871_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "bytes": 21991,
+    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+  },
+  "historicalEasingSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-macmoss-gesture/SourceMacMossPortfolio.before-68b.tsx.txt",
+    "bytes": 10285,
+    "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-gesture-inverse.json",
+    "bytes": 15784,
+    "sha256": "92aaf87e6b3289c99792fa505bd08d4a5d9d0d56bdc584a3c334f0e423cd9d50"
+  },
+  "sourceObservationIndex": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-evidence-index.json",
+    "bytes": 2406,
+    "sha256": "9b08898b9495b1901fd25cec945719079117c3449dba6430e16c86ba65e3768b"
+  },
+  "behavior": {
+    "observedDesktop": "Horizontal mouse following,8percent return,48percent advance/reverse, and photo click activation; vertical release advances during trusted click dispatch.",
+    "publicCodeFacts": "Rounded horizontal distance, threshold=listWidth/5, click suppression beyond10 logical pixels; retained Slick facts are distinct from observed threshold-boundary inputs.",
+    "nativeParts": "Four existing native photo Frames reused; all nine override roles and18 bindings preserved.",
+    "gestureMetrics": "Direct raw client-coordinate delta in unchanged bounds, converted to logical viewport units. Changed bounds use the documented normalized-anchor adaptation.",
+    "transition": "Commit and return start from both live native photo offsets; one RAF prepared startup followed by500ms CSS ease-in-out.",
+    "input": "Composed pointer/native tap/click handlers preserve callers, reject interactive descendants and suppress post-drag photo activation. Mouse drag only."
+  },
+  "preservation": {
+    "oldStepArrowClockBodiesExact": true,
+    "publicExports": 9,
+    "nativeFontsImagesCaptionsGeometryWrites": 0,
+    "sharedVideoHelper": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
+      "bytes": 10555,
+      "sha256": "d79f16963bd4b1d41ce6dcf7b04acbffaf7c981abd1a70fc5dcd85004f8553d6"
+    },
+    "newGraphicsContexts": 0,
+    "newMediaFetches": 0
+  },
+  "validation": {
+    "externalReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/frozen-functional003/validation-receipt.json",
+      "bytes": 2964,
+      "sha256": "a8c16bcb89136d43e137ee5fc93d6ebef5b200d12012bfcca77b68f0af54c028"
+    },
+    "externalFocused": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/functional-run-003/focused-result.json",
+      "bytes": 116273,
+      "sha256": "00b7eb5976d58e3d1788d628c6c8f6ce49d33b9ac80fc37d528d6cf786fe1f37"
+    },
+    "externalRealCSS": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/real-css-probe-001/result.json",
+      "bytes": 22975,
+      "sha256": "ec8fb2551f2be199d616815869231be47198883614c6a5ae343c827841d25973"
+    },
+    "retainedStatic": 5,
+    "retainedBrowser": 47,
+    "retainedNativeTap": 44,
+    "focusedAssertions": 70,
+    "realCSSCases": 4,
+    "canonicalFocused": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/canonical-validation/gestures/run-nB8GxO/result.json",
+      "bytes": 672,
+      "sha256": "4a759bcb808d2079092a9cdf6685179ef6302f10b1b3d713171e58c299557e80"
+    },
+    "canonicalRealCSS": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/canonical-validation/interpolation/run-29v08b/result.json",
+      "bytes": 22761,
+      "sha256": "2a28114def69c2a2b69160ecf13d8b756dc4d7fd2ccc569efa78219a79482a37"
+    },
+    "focusedChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-gestures.mjs",
+      "bytes": 20914,
+      "sha256": "1fd2bc631dfbd8246b6c41bb6484acf8267c16b4303a02c960813aa634123a99"
+    },
+    "realCSSChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-gesture-interpolation.mjs",
+      "bytes": 7438,
+      "sha256": "affb7651aec9e8587d1b7b7142fa84278e461128f74a3bc9e3065d9526bdcf46"
+    },
+    "portableManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/portable-canonical-v1/portable-integration-manifest.json",
+      "bytes": 7261,
+      "sha256": "7a5060324660acf953bc00669304b28ca4795b0ffca6463f3701371072b4e7f6"
+    },
+    "rootPlumbingAmendment": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/portable-canonical-v1/root-promotion-receipt.json",
+      "bytes": 764,
+      "sha256": "0042f8a3d8a44da044d3f2e44a7a8fe82a92ca20e1a6d89852e9c08eb2a7ddd7"
+    },
+    "oldCheckersByteExact": true,
+    "legacyChecksNotRepeatedByNewRunners": true,
+    "browserErrors": 0,
+    "realCSSIntermediateSamplesMs": [
+      100,
+      250,
+      550
+    ],
+    "fullMatrixRerun": false
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gesture-writer868/final-h6-gesture-source-only-authoring-receipt871.json",
+      "bytes": 9740,
+      "sha256": "6ccd612a7b7b503dade85477f46ad5aa9cccb6b8403bf51d6916877b49ba5a4e"
+    },
+    "module": "codeFile/hdMHIXc",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 9,
+    "nativeBindingCopies": 18,
+    "nativeBindingsParentsOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 709,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPointerRefForwardingVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "build": {
+    "target": "checks.x86_64-linux.source-macmoss",
+    "evaluated": true,
+    "derivationPath": "/nix/store/g5wsw522wnp2n1cjdjihgi3f53yrqfyi-monarchic-website-source-macmoss-0.0.1.drv",
+    "fullNixBuildExecuted": false,
+    "serial": "Existing5static/47browser then focused70 and realCSS4; nativeTap44 keeps its separate target."
+  },
+  "limits": [
+    "The±1viewport wide-drag clamp is a remaining source-fidelity boundary.",
+    "Leave/cancel/lostcapture safe return, tiny-drag ordering, transformed-bounds behavior and Phone photo taps are explicit adaptations or unobserved source behavior.",
+    "Actual Framer pointer/ref forwarding, painting, Preview and editor reload remain unverified.",
+    "Source Phone, timezone, project navigation and native Video lifecycle remain separate open work."
+  ]
+}

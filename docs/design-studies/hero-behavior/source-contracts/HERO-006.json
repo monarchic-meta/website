@@ -129,13 +129,14 @@
     "status": "SOURCE68B_AUTHORED_AND_INDEPENDENTLY_SEALED863_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-provenance.json",
-      "bytes": 5806,
-      "sha256": "672080c6f99fa847c28a5f487a5f976f35a7ad0e43c7e8d3e6dcd649714189d6"
+      "bytes": 6255,
+      "sha256": "fd50b2510da8d8b524df3c2f73d9a323656c77f0ee9ba9ea9a93340a4bd1b783"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-macmoss-gesture/SourceMacMossPortfolio.before-68b.tsx.txt",
       "bytes": 10285,
-      "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
+      "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2",
+      "historical": true
     },
     "actualAuthoring": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/easing-writer860/final-h6-gallery-easing-source-only-authoring-receipt863.json",
@@ -159,12 +160,39 @@
     "sourceRevisionBoundary": "Both fresh source runs matched the selected four gallery images, mids, order, dimensions and options. V1 HTML was exact; V2 changed four Cargo cache-version tokens only. JavaScript byte identity across that token is not claimed.",
     "observed": "1280×720 anonymous isolated browser; horizontal pointer following, small-drag return, reverse drag selection and trusted photo click dispatch are observed.",
     "verticalRelease": "The source track stayed still while vertical dragging; advancing occurred during trusted photo click dispatch after release.",
-    "implementation": "Easing is authored; horizontal tracking and photo activation remain separate recreation work.",
+    "implementation": "Observed Desktop mouse/photo interactions are authored through871 and pass native DOM plus real CSS interpolation checks. Unobserved source and actual Framer gates remain explicit.",
     "unobserved": [
       "Cancel/lostcapture",
       "Tiny-drag and exact20percent threshold boundary as input observations",
       "Phone/touch",
       "Actual Framer native forwarding"
     ]
+  },
+  "galleryGestures": {
+    "status": "SOURCE4D_AUTHORED_AND_INDEPENDENTLY_SEALED871_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-gesture-provenance.json",
+      "bytes": 8251,
+      "sha256": "9b452e9f43b1cf59c336384b3d76c01724215c016929b0286b32f2bcf9a1c71e"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "bytes": 21991,
+      "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gesture-writer868/final-h6-gesture-source-only-authoring-receipt871.json",
+      "bytes": 9740,
+      "sha256": "6ccd612a7b7b503dade85477f46ad5aa9cccb6b8403bf51d6916877b49ba5a4e"
+    },
+    "focusedAssertions": 70,
+    "realCSSCases": 4,
+    "retainedStatic": 5,
+    "retainedBrowser": 47,
+    "retainedNativeTap": 44,
+    "nativeBindingsPreserved": 18,
+    "actualPointerRefForwardingVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
