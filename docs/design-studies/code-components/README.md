@@ -47,7 +47,8 @@ retains the source velocity filter and world-to-card projection. The
 moves the carousel toward that target by0.1 per rendered callback and lets a
 new drag take over its current position. It preserves the film, velocity
 helpers, five other public roles and entry transition. The0.001px terminal
-snap is a cleanup approximation; target-based caption/movie selection, curved
+snap is a cleanup approximation. Caption text correctly follows the target;
+movie playback should follow current position. Caption motion, curved
 projection, materials and Phone still need source refinement.
 
 The43 focused,22 retained film-integration and10 canonical static checks pass.

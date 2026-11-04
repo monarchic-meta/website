@@ -70,9 +70,18 @@
       "bytes": 8115,
       "sha256": "89b917275760f88b19518d3dc37aa1b859e63e2ea80cdde3bd20851cf9f6da4f"
     },
-    "canonicalFilesExactTestedBytes": true,
     "canonicalBrowserRepeated": false,
-    "fullMatrixRerun": false
+    "fullMatrixRerun": false,
+    "sourceAndLegacyCheckerExactTestedBytes": true,
+    "focusedCheckerAssertionsExactTestedBytes": true,
+    "checkerScopeOnlyAmendment": {
+      "beforeSHA256": "9d8cd7087fc29b0bbaa5b23f278314422ba6b4a55055817240b6b89e6871814b",
+      "afterSHA256": "f3bd68387878c5e227dcb2a02c9f9d2c354496bb79f774c4b190a50482b6a636",
+      "before": "Source-code-supported velocity target only. Original inputs establish hold/drag/release mode causality; numeric velocity histories are synthetic tests. Current offset follows source default.1 per render callback; tiny terminal pixel cleanup and existing target caption/store coupling remain declared approximations. No actual Framer Preview/reload proof.",
+      "after": "Source-code-supported velocity target and per-callback current-position settling. Numeric histories are synthetic tests. Caption text correctly follows target index; movie playback remains target-coupled while source playback follows current index. Tiny terminal cleanup and fitted caption motion remain approximations. No actual Framer Preview/reload proof.",
+      "behaviorAndAssertionsUnchanged": true,
+      "browserRepeated": false
+    }
   },
   "preservation": {
     "publicHOCs": 6,
@@ -83,7 +92,7 @@
     "filmBytesExact": true
   },
   "limits": [
-    "Target project/store/caption/film coupling is intentionally retained; source selects from current offset, so complete ordered source equivalence is not claimed",
+    "Movie playback remains target-coupled; source playback follows current selectedIndex. Caption text correctly follows target index; its spring and position remain fitted.",
     "The0.001 logical CSSpx terminal snap is a declared cleanup approximation",
     "Entry transition/gate, curved projection/materials/effects/Phone remain separate fidelity work",
     "No actual Framer Preview, painting or editor-reload run; earlier source authoring evidence remains historical"
@@ -111,8 +120,8 @@
   "historyPolicy": "Historical60c helper is pinned directly by fixture. No provenance backlink cycle is introduced; root owns later historical/current documentation reconciliation.",
   "checker": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
-    "bytes": 36216,
-    "sha256": "9d8cd7087fc29b0bbaa5b23f278314422ba6b4a55055817240b6b89e6871814b"
+    "bytes": 36220,
+    "sha256": "f3bd68387878c5e227dcb2a02c9f9d2c354496bb79f774c4b190a50482b6a636"
   },
   "retainedChecker": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-carousel.mjs",
@@ -123,5 +132,19 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/inverse.patch",
     "bytes": 14004,
     "sha256": "2300e2ada10cc7255e2862efbdf619b2040326a5f3b1099e3729094c69d7f13b"
+  },
+  "sourceSelectionDistinction": {
+    "basis": "Same retained primary runtime3b986261; source comments and code inspected.",
+    "captionText": {
+      "follows": "targetScrollX focusIndex",
+      "lines": "2498–2510",
+      "canonicalIndexPolicyMatches": true
+    },
+    "playback": {
+      "follows": "selectedIndex from current scrollX",
+      "lines": "2513–2539 and2635",
+      "canonicalIndexPolicyStillDiffers": true
+    },
+    "historicalReceiptNote": "The frozen passing receipt used an overbroad caption/store/movie limitation. This amendment corrects that interpretation without rewriting historical evidence."
   }
 }

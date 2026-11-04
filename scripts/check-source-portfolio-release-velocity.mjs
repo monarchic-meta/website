@@ -19,7 +19,7 @@ const emit=text=>ts.transpileModule(text,{fileName:'SourcePortfolioCarousel.tsx'
 const literalTarget=(offset,velocity)=>{const unit=4+.1,s=(8-1)/2;const momentum=(velocity*.01*3)/(1-.94),projected=Math.max(-(7-s)*unit,Math.min(s*unit,(-offset+s)*unit+momentum));return Math.max(0,Math.min(7,Math.round(-projected/unit+s)))};
 const literalVelocity=(old,lastX,lastAt,x,at,scale=1)=>(at-lastAt)>0&&Number.isFinite(at-lastAt)?old*.85+((x-lastX)*scale/(at-lastAt))*.15:old;
 const result=()=>({passed:true,source:pin(file),preimage:pin(preimageFile),checker:pin(fileURLToPath(import.meta.url)),checks,samples,errors,
-  scope:'Source-code-supported velocity target only. Original inputs establish hold/drag/release mode causality; numeric velocity histories are synthetic tests. Current offset follows source default.1 per render callback; tiny terminal pixel cleanup and existing target caption/store coupling remain declared approximations. No actual Framer Preview/reload proof.',
+  scope:'Source-code-supported velocity target and per-callback current-position settling. Numeric histories are synthetic tests. Caption text correctly follows target index; movie playback remains target-coupled while source playback follows current index. Tiny terminal cleanup and fitted caption motion remain approximations. No actual Framer Preview/reload proof.',
   compilerVersion:ts.version,nodeVersion:process.version,actualFramerWrites:0,actualPreviewVerified:false,afterEditorReload:false});
 fs.mkdirSync(out,{recursive:true});
 try {

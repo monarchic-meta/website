@@ -550,7 +550,7 @@
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
       "bytes": 7819,
-      "sha256": "a0653cb9cb7d1382ec516a334137d6ec29bc714795b86d8f6176e7655257c2cf"
+      "sha256": "514a5bfae29de59f6bdbc02de58e8de9104a3f5a3e98e86fa5ba111d0791ba4b"
     },
     "helperSource": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-settling.tsx.txt",
@@ -571,8 +571,8 @@
   "settlingCurrentOffsetSuccessor": {
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
-      "bytes": 6284,
-      "sha256": "5451b09d9521710e9c528160391c69fb6b1f7dac91074dd38ee4c4e5dcfaf8d5"
+      "bytes": 8036,
+      "sha256": "b0e5280e7535ccca57b8efa91823e88c283a64d35abdabdbda782ac01e7ca8f6"
     },
     "sourceSHA256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
   }
