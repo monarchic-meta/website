@@ -261,6 +261,14 @@
             export MONARCHIC_BLEIBT_OPENING_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-opening
           '';
+          source-ajedrez-actor43-additive = (mkWebsiteCheck "source-ajedrez-actor43-additive" ''
+            export MONARCHIC_AJEDREZ_ACTOR43_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-ajedrez-actor43-additive
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-ajedrez-actor3-additive = (mkWebsiteCheck "source-ajedrez-actor3-additive" ''
             export MONARCHIC_AJEDREZ_ACTOR3_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-ajedrez-actor3-additive
