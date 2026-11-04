@@ -103,7 +103,7 @@
     }
   },
   "limitations": [
-    "ActualFramer forwardedhost/semanticanchor/innerparagraph paint after the ongoing72familyauthoring.",
+    "The corrected native integration targets11 active families/22copies from the authored664 opening. Combined56 source/native delivery, actual host/anchor/paragraph paint, Preview and reload remain open.",
     "Exact keyboard:focus-visible effect on the original at correspondingstates and actual duplicateaccessible-name handling.",
     "Actual original intermediate transition/reversal pixelstates; CSS timing is directsource-supported, not fresh measuredanimation.",
     "Original behavior afterinitialPhone→wide navigation ifWebflow reinvokes initializer; noresize listener exists in thiscustomscript."
@@ -127,5 +127,10 @@
   ],
   "actualAuthored": false,
   "actualPreviewVerified": false,
-  "afterEditorReload": false
+  "afterEditorReload": false,
+  "currentCombinedPackage": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-rolling-provenance.json",
+    "bytes": 5791,
+    "sha256": "51a2e0c6b8d0ed3fc0be54b1573b1366b0db8ec2e37ed39c594804b81cd421ab"
+  }
 }

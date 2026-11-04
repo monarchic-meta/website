@@ -116,8 +116,8 @@ the opening/closing timeline, editable fields and independent Phone scrolling.
 The live mark above remains a separate component.
 
 The [panel provenance](assets/source-mecha-contact-provenance.json) records57
-local checks with genuine external comparison fonts. The48-family native packet
-is being authored separately; actual Framer runtime remains a separate gate. Source fonts are absent
+local checks with genuine external comparison fonts. All48 native families/96parts and104 bindings are authored through773;
+actual Framer runtime remains a separate gate. Source fonts are absent
 from the current project; native and live fallback faces remain explicit fits.
 The prototype retains a draft without submitting it or inventing success.
 
@@ -145,7 +145,7 @@ recreate the separate upward-scroll bar, its mode buttons, source credits and
 footer dismissal. All50 earlier roles remain byte-for-byte intact. The
 [54-check proof](assets/source-format-back-navigation-provenance.json) compares
 the original behavior/CSS and font geometry. Source56 is independently read
-through775;19 native families are being authored. Actual Framer paint, Preview
+through775; all19 native families/57parts and45 bindings are independently read through787. Actual Framer paint, Preview
 and reload remain open.
 
 ## FORMAT introductory clock

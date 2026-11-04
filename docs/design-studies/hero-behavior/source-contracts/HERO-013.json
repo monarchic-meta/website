@@ -1294,8 +1294,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-notes-provenance.json",
-      "bytes": 14512,
-      "sha256": "0c0837eb41f61e1932d618843061723686ca826aed2e13a57083fe6aa68cae01"
+      "bytes": 15240,
+      "sha256": "29616941003c29686a83fe40326ea4a9e35cbf6410dc330a0d29ce0b4af6fffd"
     },
     "receipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-daughter-completion-v1/final-3dcf9273-carried-poster/validation-and-handoff-receipt.json",
@@ -1393,8 +1393,8 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-daughter-provenance.json",
-      "bytes": 8918,
-      "sha256": "b86b5f161c4b69d105cfb7890693436c05e6a0d5df692e802033458eb84b1ad5"
+      "bytes": 9549,
+      "sha256": "e4487c9fc2a4d9bd5304a72b0b2a0a77224608b02d267bc439283c6e87474b72"
     },
     "receipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/daughter-native-effects-v1/final-ca5087d3-40checks/validation-and-handoff-receipt.json",
@@ -1554,11 +1554,11 @@
     ]
   },
   "backNavigation": {
-    "status": "SOURCE56_AUTHORED_THROUGH775_NATIVE4_PILOT_STAGED",
+    "status": "SOURCE56_BACKNAV19_NATIVE57_BINDINGS45_AUTHORED_THROUGH787_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-back-navigation-provenance.json",
-      "bytes": 6810,
-      "sha256": "669c063d558cc656329c83dbecbf8dadae1c31ea76e7e28550ec1b1f704ab5ce"
+      "bytes": 8449,
+      "sha256": "456510aa7b676b45f1e520fa77153f591b36ec6e41b7ab847df4ec0be5a95e41"
     },
     "sourceModule": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
@@ -1605,18 +1605,23 @@
       "compilerDiagnostics": 0,
       "genuineOverrides": 56,
       "old50IDsAndSchemasExact": true,
-      "nativeComplete": false,
+      "nativeComplete": true,
       "actualPaintVerified": false,
       "actualPreviewVerified": false,
-      "afterEditorReload": false
+      "afterEditorReload": false,
+      "nativeReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/final-shared56-backnav19-authoring-receipt787.json",
+        "bytes": 8360,
+        "sha256": "3c6d994810c088577e9af86873e3af953e83ae8f5bb9cb0ada4074d676baa5a0"
+      }
     },
     "nativeAuthoring": {
       "targetFamilies": 19,
       "targetParts": 57,
       "targetBindings": 45,
-      "currentStagedFamilies": 4,
-      "currentStagedParts": 12,
-      "currentBound": 0,
+      "currentStagedFamilies": 0,
+      "currentStagedParts": 0,
+      "currentBound": 45,
       "nativeRootFit": "Only the new root uses supported native absolute instead of nested fixed. Its live HOC retains source fixed CSS; frozen Canvas is hidden.",
       "actualAutoWidthPaintVerified": false,
       "metadataRectWidth200IsNotGlyphPaint": true,
@@ -1629,7 +1634,63 @@
         "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/prepared-supported-native19-adapter.json",
         "bytes": 19342,
         "sha256": "7233040b0cd28bfe404a0498d9ed2bf126b8d0b5f37122c070d43477c9269a7d"
+      },
+      "genuineFontTuples": 63,
+      "independentRead": 787,
+      "unsupportedRelFields": 12,
+      "relSetterRetried": false,
+      "hrefAndNewTabFieldsExact": 12,
+      "authoredFamilies": 19,
+      "authoredParts": 57,
+      "rootOpacity": 1,
+      "interactivePointerFieldsAuto": 15,
+      "owner": "fad9bd77feddf49da345dc28fdb7b61188a295bc03335a9d1fb114a9d2d76631",
+      "receipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/final-shared56-backnav19-authoring-receipt787.json",
+        "bytes": 8360,
+        "sha256": "3c6d994810c088577e9af86873e3af953e83ae8f5bb9cb0ada4074d676baa5a0"
+      },
+      "fullPriorOwnerInverseExact": true,
+      "freshOldDetailsCensus": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/fresh-current-old151-binding-census786.json",
+        "bytes": 1487529,
+        "sha256": "7978375257ae40fe679e5c46ee197337a1ef829a85a041158904790205993c6a"
       }
+    }
+  },
+  "sameModuleNotes247": {
+    "status": "COMBINED247_VALIDATED_FRAMER_ADMISSION_NATIVE91_AND_FULL_OWNER_REMAP_PENDING",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-shared-notes-provenance.json",
+      "bytes": 8148,
+      "sha256": "330036b16bf985cc1eac28a9fca27e6e760845eff131ab9131fe1b064303b2f0"
+    },
+    "localProof": {
+      "sharedBrowserReports": 5,
+      "sharedStaticGroups": 4,
+      "detailsStrict": 10,
+      "notesFull": 52,
+      "canonicalStatic": 14,
+      "canonicalStrict": 10,
+      "manualRegenerationExact": true,
+      "nixEvaluated": true,
+      "sourcePlusLargestJSAndDtsBytes": 614572
+    },
+    "nativeScope": {
+      "families": 91,
+      "copies": 273,
+      "existingRoleChanges": 1302,
+      "newRoleAssignments": 270,
+      "totalPhysicalAssignments": 1572,
+      "oldPrQFamilies": 428,
+      "oldPrQCopies": 1284,
+      "rootAndContextLast": true
+    },
+    "actualFramer": {
+      "sourceWritten": false,
+      "nativeNotesCreated": false,
+      "oldDetailsRemapComplete": false,
+      "PreviewAndReload": false
     }
   }
 }

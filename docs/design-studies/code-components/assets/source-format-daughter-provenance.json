@@ -107,7 +107,7 @@
   ],
   "limits": [
     "Cached primary-source equations, not a fresh original input audit.",
-    "Only public owned refs/ancestor markers are used; actual Framer DOM forwarding, authoring and Preview/reload remain separate gates.",
+    "Owned refs/ancestor markers remain the integration boundary. Native artwork authoring is complete through720 and Sparks through741; actual Framer paint/Preview/reload remain open.",
     "The literal source Zu property list omits mask-image; visible intermediate occlusion is not established by code omission alone.",
     "Sharp native fallback replaces source transient behavior on budget/decode/resize/hidden/reduced/off/freeze interruption.",
     "SourcePhone remains its splash; historical NativePhone artwork geometry and pose stay unchanged.",
@@ -149,6 +149,16 @@
       "bytes": 2368,
       "sha256": "28bf2935d8398302b6f2ecfd45c211b141f41547dac59e7f7cd3ee55bba74cea"
     },
-    "status": "FOUR_GENUINE_SPARK_ASSETS_RECOVERED_NOT_YET_UPLOADED_OR_IMPLEMENTED"
+    "status": "FOUR_SPARK_ASSETS_DELIVERED732_AND_EFFECT_AUTHORED741;SHARED56_ACTIVE775",
+    "successor": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-daughter-sparks-provenance.json",
+      "bytes": 6503,
+      "sha256": "2321ae7c68331bdd92b83ee18a7845173a9d069c95c138957d10cbb6d66a23b3"
+    }
+  },
+  "currentBackNavigation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-back-navigation-provenance.json",
+    "bytes": 7032,
+    "sha256": "1509aaebc8c75da60290dc17929e6f831100613c98ce2bcf18bb73bbcad64a66"
   }
 }

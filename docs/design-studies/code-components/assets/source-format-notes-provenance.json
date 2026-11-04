@@ -111,12 +111,17 @@
         "bytes": 5201,
         "sha256": "4c3f1a328384c76159c0c23abd8423d9058f3a5b6607b23473e7367934ec7b6f"
       }
+    },
+    "currentShared56": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-back-navigation-provenance.json",
+      "bytes": 7032,
+      "sha256": "1509aaebc8c75da60290dc17929e6f831100613c98ce2bcf18bb73bbcad64a66"
     }
   },
   "remaining": [
     "Resolve actualFramer project-local import without a duplicate store or suppressed diagnostics; native91families held. Exact191 candidate passed local10+50; actualactiveDetails is restored151clock.",
     "Actual font paint, timedNativeinput, sourcecorrespondingstates and editorreload.",
-    "Other Daughter22image/mask/pixel variants remain separate source completion work."
+    "The22 Daughter artwork/mask/pixel roles are authored720 and Sparks741. Corresponding actual Framer state/paint comparisons remain open."
   ],
   "historical416": {
     "receipt": {
@@ -224,5 +229,13 @@
       "sha256": "7a82007e543c000e5b89d76549fd1863f4d264de9b5d0a2235e3801280f794fa"
     },
     "other17BindingFamiliesMatchActual": true
+  },
+  "sameModuleSuccessor": {
+    "status": "EXTERNAL247_PACKAGE_PASSES_SHARED9_DETAILS10_NOTES52;ACTUAL_IMPORT_NATIVE_AND_FULL_OWNER_REMAP_PENDING",
+    "sourceSHA256": "dd256592b6b740529922e6d9ff230062c696f499fc99874e012a4c461e50ae58",
+    "publicOverrides": 247,
+    "sourceAndLargestJSAndDtsBytes": 614572,
+    "actualDetailsStill151": true,
+    "nativeNotesCreated": false
   }
 }

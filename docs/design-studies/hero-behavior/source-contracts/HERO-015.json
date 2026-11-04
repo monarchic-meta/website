@@ -311,8 +311,8 @@
     "status": "SOURCE_AND_NATIVE_MODEL_VERIFIED_ACTUAL_PAINT_PREVIEW_AND_RELOAD_PENDING",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-detail-provenance.json",
-      "bytes": 13881,
-      "sha256": "008dc2de56dbc2c35f764b00309e0c2e536c043f88dddfe8e00eecaa4a2dc7ee"
+      "bytes": 14263,
+      "sha256": "01694a44741411d1a02285155c51d5246ba4720209b3f48c7cede0a68de0c44e"
     },
     "source": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/shared-binding-desktop-guard-v1/validation/SourceMechaTomorrowDetail.tsx",
@@ -526,8 +526,8 @@
     "status": "CONTACT_SOURCE47_BINDINGS104_NATIVE96_AUTHORED_THROUGH773_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-contact-bundle-provenance.json",
-      "bytes": 9146,
-      "sha256": "7c09bec52a50bb175d886e1446647a47d7cc8a5f6ed34332046cbef94f9d7eee"
+      "bytes": 9202,
+      "sha256": "24188991243a33b81ac217164769601d042b4d121a06f076370c3380164173d8"
     },
     "manualSource": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowContact.tsx",

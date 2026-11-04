@@ -3,7 +3,7 @@
   "classification": "Source inspiration",
   "credit": "FORMAT / Obys × DES",
   "sourceSite": "https://format.obys.agency/",
-  "status": "SOURCE56_AUTHORED_THROUGH775_NATIVE4_PILOT_STAGED",
+  "status": "SOURCE56_BACKNAV19_NATIVE57_BINDINGS45_AUTHORED_THROUGH787_PREVIEW_RELOAD_OPEN",
   "sourceModule": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
     "bytes": 85154,
@@ -83,9 +83,9 @@
     "targetFamilies": 19,
     "targetParts": 57,
     "targetBindings": 45,
-    "currentStagedFamilies": 4,
-    "currentStagedParts": 12,
-    "currentBound": 0,
+    "currentStagedFamilies": 0,
+    "currentStagedParts": 0,
+    "currentBound": 45,
     "nativeRootFit": "Only the new root uses supported native absolute instead of nested fixed. Its live HOC retains source fixed CSS; frozen Canvas is hidden.",
     "actualAutoWidthPaintVerified": false,
     "metadataRectWidth200IsNotGlyphPaint": true,
@@ -98,6 +98,27 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/prepared-supported-native19-adapter.json",
       "bytes": 19342,
       "sha256": "7233040b0cd28bfe404a0498d9ed2bf126b8d0b5f37122c070d43477c9269a7d"
+    },
+    "genuineFontTuples": 63,
+    "independentRead": 787,
+    "unsupportedRelFields": 12,
+    "relSetterRetried": false,
+    "hrefAndNewTabFieldsExact": 12,
+    "authoredFamilies": 19,
+    "authoredParts": 57,
+    "rootOpacity": 1,
+    "interactivePointerFieldsAuto": 15,
+    "owner": "fad9bd77feddf49da345dc28fdb7b61188a295bc03335a9d1fb114a9d2d76631",
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/final-shared56-backnav19-authoring-receipt787.json",
+      "bytes": 8360,
+      "sha256": "3c6d994810c088577e9af86873e3af953e83ae8f5bb9cb0ada4074d676baa5a0"
+    },
+    "fullPriorOwnerInverseExact": true,
+    "freshOldDetailsCensus": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/fresh-current-old151-binding-census786.json",
+      "bytes": 1487529,
+      "sha256": "7978375257ae40fe679e5c46ee197337a1ef829a85a041158904790205993c6a"
     }
   },
   "actualFramer": {
@@ -110,10 +131,15 @@
     "compilerDiagnostics": 0,
     "genuineOverrides": 56,
     "old50IDsAndSchemasExact": true,
-    "nativeComplete": false,
+    "nativeComplete": true,
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "nativeReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/final-shared56-backnav19-authoring-receipt787.json",
+      "bytes": 8360,
+      "sha256": "3c6d994810c088577e9af86873e3af953e83ae8f5bb9cb0ada4074d676baa5a0"
+    }
   },
   "nix": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/canonical-validation/nix-evaluation.json",
@@ -123,7 +149,7 @@
   "limits": [
     "Source607B ed()/CSS/font oracle and owned ReactDOM comparisons do not prove actual Framer DOM forwarding or paint.",
     "Source scrolling ticker is replaced by the existing coalesced viewport invalidations; unsignalled same-node reparenting and native geometry remain integration gates.",
-    "Native rel getters remain empty despite admitted exact destinations/new-tab settings.",
+    "The SDK explicitly rejected rel on12 new Native/Run link fields. Exact destinations/new-tab settings remain; actual DOM rel/paint are unverified.",
     "This navigation slice does not complete the eighteen-note chapter or all FORMAT source fidelity."
   ]
 }
