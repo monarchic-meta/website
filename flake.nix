@@ -377,6 +377,15 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-format-back-navigation = (mkWebsiteCheck "source-format-back-navigation" ''
+            export MONARCHIC_FORMAT_BACK_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-back-navigation
+          '').overrideAttrs (_: {
+            MONARCHIC_FORMAT_BACK_FONT_PATH = "${sourceFormatClockMaterials}/source-font/ObysSans-Regular.woff2";
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-mecha-tomorrow-contact = (mkWebsiteCheck "source-mecha-tomorrow-contact" ''
             export MONARCHIC_MECHA_CONTACT_EVIDENCE_DIR="$out/evidence/contact"
             pnpm run check:source-mecha-tomorrow-contact

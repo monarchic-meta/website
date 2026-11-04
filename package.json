@@ -147,7 +147,8 @@
     "check:source-format-daughter-sparks": "node scripts/check-source-format-daughter-sparks.mjs",
     "check:source-ajedrez-two-track-extension": "node scripts/check-source-ajedrez-two-track-extension.mjs",
     "check:source-mecha-tomorrow-contact": "node scripts/check-source-mecha-tomorrow-contact.mjs",
-    "check:source-mecha-tomorrow-contact-retained": "node scripts/check-source-mecha-tomorrow-contact-retained.mjs"
+    "check:source-mecha-tomorrow-contact-retained": "node scripts/check-source-mecha-tomorrow-contact-retained.mjs",
+    "check:source-format-back-navigation": "node scripts/check-source-format-back-navigation.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
