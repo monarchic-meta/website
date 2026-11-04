@@ -6,7 +6,7 @@ import {createRequire} from 'node:module'
 import {fileURLToPath} from 'node:url'
 import {chromium} from '@playwright/test'
 const repo=fileURLToPath(new URL('../',import.meta.url)),require=createRequire(import.meta.url),ts=require('typescript')
-const file=path.join(repo,'docs/design-studies/code-components/SourceMontrealBehaviors.tsx'),source=fs.readFileSync(file,'utf8'),hash=x=>crypto.createHash('sha256').update(x).digest('hex')
+const file=path.resolve(process.env.MONARCHIC_MONTREAL_SOURCE_PATH??path.join(repo,'docs/design-studies/code-components/SourceMontrealBehaviors.tsx')),source=fs.readFileSync(file,'utf8'),hash=x=>crypto.createHash('sha256').update(x).digest('hex')
 const dir=process.env.MONARCHIC_MONTREAL_BEHAVIORS_EVIDENCE_DIR??'/tmp/monarchic-source-montreal-behaviors';fs.mkdirSync(dir,{recursive:true})
 const reactTypes=`export interface CSSProperties{[key:string]:string|number|undefined};export type ReactNode=unknown;export type ComponentType<P>=(props:P)=>unknown;export type ForwardedRef<T>=((value:T|null)=>void)|{current:T|null}|null;export interface RefObject<T>{readonly current:T|null};export function forwardRef<T,P>(render:(props:P,ref:ForwardedRef<T>)=>unknown):ComponentType<P>;export function useRef<T>(value:T):{current:T};export function useRef<T>(value:T|null):RefObject<T>;export function useState<T>(value:T):[T,(value:T|((previous:T)=>T))=>void];export function useEffect(effect:()=>void|(()=>void),deps:unknown[]):void;export const useLayoutEffect:typeof useEffect;export interface Context<T>{Provider:ComponentType<{value:T;children?:unknown}>};export function createContext<T>(value:T):Context<T>;export function useContext<T>(context:Context<T>):T;export function useSyncExternalStore<T>(subscribe:(notify:()=>void)=>()=>void,snapshot:()=>T,server:()=>T):T;export function useId():string;export function createElement(...args:unknown[]):unknown;export const Fragment:ComponentType<{children?:unknown}>;export interface MouseEvent<T>{currentTarget:T;defaultPrevented:boolean;preventDefault():void};export interface KeyboardEvent<T>extends MouseEvent<T>{key:string};export type MouseEventHandler<T>=(event:MouseEvent<T>)=>void;export type KeyboardEventHandler<T>=(event:KeyboardEvent<T>)=>void;declare global{namespace JSX{interface IntrinsicElements{[key:string]:unknown}}}`
 const defs=new Map([[path.join(repo,'__montreal-react.d.ts'),reactTypes],[path.join(repo,'__montreal-framer.d.ts'),'export const RenderTarget:{canvas:string;export:string;thumbnail:string;current():string};export function useIsStaticRenderer():boolean;']])
@@ -16,6 +16,7 @@ const diagnostics=ts.getPreEmitDiagnostics(ts.createProgram([file],options,host)
 assert.doesNotMatch(source,/\bfetch\(|getContext\(|querySelector|getElementById|@ts-ignore|\bas any\b/)
 const js=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText,dts=ts.transpileDeclaration(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;assert.ok(Buffer.byteLength(js)+Buffer.byteLength(dts)<1048576)
 const react=fs.readFileSync(path.join(path.dirname(require.resolve('react/package.json')),'umd/react.development.js'),'utf8'),dom=fs.readFileSync(path.join(path.dirname(require.resolve('react-dom/package.json')),'umd/react-dom.development.js'),'utf8'),checks=[],errors=[],check=(name,value)=>{assert.ok(value,name);checks.push(name)}
+const insetReport={desktop:[],phone:[],crossovers:[],lastAssertion:null};
 const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH})
 try {
  const page=await browser.newPage({viewport:{width:1550,height:1000}});page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(5000)
@@ -55,8 +56,76 @@ try {
  await page.clock.runFor(400);await page.locator('#pane-4').click({force:true});check('Native Phone tap opens authored74px header plus260px body',await page.evaluate(()=>document.getElementById('attractions').dataset.montrealAttractions==='4'&&parseFloat(document.getElementById('pane-4').style.height)===334&&parseFloat(document.getElementById('pane-5').style.top)===790&&parseFloat(document.getElementById('attractions').style.height)===1280))
  await page.locator('#pane-4').click({force:true});check('Second same-channel Phone tap closes its panel',await page.locator('#attractions').evaluate(e=>e.dataset.montrealAttractions==='-1'))
  await page.evaluate(()=>{__cancel=true;render()});await page.locator('#pane-4').click({force:true});check('Canceled native tap leaves Phone pane closed',await page.locator('#attractions').evaluate(e=>e.dataset.montrealAttractions==='-1'));await page.evaluate(()=>{__cancel=false;render()})
+ // External focused extension: actual direct-child DOM edges, not source-string assertions.
+ const nearInset=(actual,expected)=>Math.abs(actual-expected)<.12
+ const settleInset=async()=>{await page.clock.runFor(900);await page.waitForTimeout(820)}
+ const readInset=async index=>page.evaluate(index=>{
+  const owner=document.getElementById('attractions'),panel=document.getElementById('pane-'+index),body=document.getElementById('body-'+index)
+  const o=owner.getBoundingClientRect(),p=panel.getBoundingClientRect(),b=body.getBoundingClientRect(),style=getComputedStyle(body)
+  const panels=Array.from(owner.querySelectorAll('[data-montreal-attraction]')).map(node=>{const r=node.getBoundingClientRect();return{left:r.left-o.left,right:r.right-o.left,width:r.width,expanded:node.getAttribute('aria-expanded')}})
+  return{index,ownerWidth:owner.clientWidth,active:Number(owner.dataset.montrealAttractions),phone:owner.dataset.montrealAttractionsPhone==='true',directChild:body.parentElement===panel,bodyLeft:b.left-p.left,bodyTop:b.top-p.top,bodyWidth:b.width,rightInset:p.right-b.right,panelLeft:p.left-o.left,panelWidth:p.width,panelHeight:p.height,ownerHeight:o.height,bodyOpacity:Number(style.opacity),paddingLeft:parseFloat(style.paddingLeft),paddingRight:parseFloat(style.paddingRight),panels,calls:{...__calls}}
+ },index)
+ const resizeInset=async(width,phone)=>{
+  await page.setViewportSize({width:Math.max(1200,width+180),height:1000})
+  await page.mouse.move(Math.max(1100,width+100),5)
+  await page.evaluate(width=>{__width=width;__target='preview';__mode='tap';__cancel=false;render()},width)
+  await page.waitForFunction(({width,phone})=>{const n=document.getElementById('attractions');return n.clientWidth===width&&(n.dataset.montrealAttractionsPhone==='true')===phone},{width,phone})
+  await settleInset()
+ }
+ const desktopInsetMatches=row=>{
+  const openWidth=row.ownerWidth*4.8/14.8
+  return !row.phone&&row.active===row.index&&row.directChild&&nearInset(row.panelWidth,openWidth)&&nearInset(row.bodyLeft,125)&&nearInset(row.bodyWidth,openWidth-149)&&nearInset(row.rightInset,24)&&row.paddingLeft===0&&row.paddingRight===0&&row.bodyOpacity===1
+ }
+ for(const width of [1024,1280,1440,1920]){
+  await resizeInset(width,false)
+  for(const index of [0,3,10]){
+   await page.locator('#pane-'+index).hover({force:true});await settleInset()
+   const row=await readInset(index);insetReport.desktop.push(row)
+   insetReport.lastAssertion='INSET/Desktop body edge '+width+' panel'+index
+   check(insetReport.lastAssertion,desktopInsetMatches(row))
+   // Chromium rounds each independent box to1/64px. Summing eleven rounded
+   // widths discards the separately rounded positions; assert every edge and
+   // width against that concrete layout quantum instead of an aggregate sum.
+   const layoutQuantum=1/64+1e-8,atLayoutEdge=(actual,expected)=>Math.abs(actual-expected)<=layoutQuantum
+   check('INSET/Desktop siblings retain source ratio and continuous layout edges '+width+' panel'+index,row.panels.length===11&&atLayoutEdge(row.panels[0].left,0)&&atLayoutEdge(row.panels[10].right,width)&&row.panels.every((p,i)=>atLayoutEdge(p.width,width/14.8*(i===index?4.8:1))&&(i===0||atLayoutEdge(p.left,row.panels[i-1].right))))
+  }
+  await page.mouse.move(width+100,5);await settleInset()
+  check('INSET/Desktop leave retains first-panel reset '+width,await page.locator('#attractions').evaluate(n=>n.dataset.montrealAttractions==='0'))
+ }
+ for(const width of [390,1023]){
+  await resizeInset(width,true)
+  await page.waitForFunction(()=>document.getElementById('attractions').dataset.montrealAttractions==='-1')
+  const before=await readInset(4);insetReport.phone.push({stage:'closed',...before})
+  check('INSET/Phone initial geometry '+width,before.phone&&before.active===-1&&before.directChild&&nearInset(before.bodyLeft,58)&&nearInset(before.bodyWidth,width-82)&&nearInset(before.bodyTop,82)&&nearInset(before.rightInset,24)&&nearInset(before.panelHeight,74)&&before.bodyOpacity===0)
+  await page.clock.runFor(400);await page.locator('#pane-4').click({force:true});await settleInset()
+  const opened=await readInset(4);insetReport.phone.push({stage:'opened',...opened})
+  check('INSET/Phone open body retains source-separated adaptation '+width,opened.phone&&opened.active===4&&opened.directChild&&nearInset(opened.bodyLeft,58)&&nearInset(opened.bodyWidth,width-82)&&nearInset(opened.bodyTop,82)&&nearInset(opened.rightInset,24)&&nearInset(opened.panelHeight,334)&&nearInset(opened.ownerHeight,1280)&&opened.bodyOpacity===1&&opened.paddingLeft===0&&opened.paddingRight===0)
+  check('INSET/Phone native tap callback forwarded once without click '+width,opened.calls.tap===before.calls.tap+1&&opened.calls.click===before.calls.click)
+  check('INSET/Phone following pane shifts once '+width,nearInset(opened.panels[5].left,0)&&await page.locator('#pane-5').evaluate(n=>Math.abs(parseFloat(n.style.top)-790)<.12))
+  await page.clock.runFor(400);await page.locator('#pane-4').click({force:true});await settleInset()
+  const closed=await readInset(4);insetReport.phone.push({stage:'collapsed',...closed})
+  check('INSET/Phone same-item collapse and callback '+width,closed.active===-1&&nearInset(closed.panelHeight,74)&&nearInset(closed.ownerHeight,1020)&&closed.bodyOpacity===0&&nearInset(closed.bodyLeft,58)&&nearInset(closed.bodyWidth,width-82)&&closed.calls.tap===opened.calls.tap+1&&closed.calls.click===opened.calls.click)
+  await page.evaluate(()=>{__cancel=true;render()});await page.clock.runFor(400);await page.locator('#pane-4').click({force:true});await settleInset()
+  const canceled=await readInset(4);insetReport.phone.push({stage:'canceled',...canceled})
+  check('INSET/Phone canceled callback prevents expansion '+width,canceled.active===-1&&nearInset(canceled.panelHeight,74)&&canceled.bodyOpacity===0&&canceled.calls.tap===closed.calls.tap+1&&canceled.calls.click===closed.calls.click)
+  await page.evaluate(()=>{__cancel=false;render()})
+ }
+ // Open at1023, cross to Desktop1024, then reverse: all reuse the same mounted owners.
+ await page.clock.runFor(400);await page.locator('#pane-4').click({force:true});await settleInset()
+ const beforeCross=await readInset(4);insetReport.crossovers.push({stage:'Phone1023-open',...beforeCross})
+ check('INSET/Crossover starts with open Phone owner',beforeCross.ownerWidth===1023&&beforeCross.phone&&beforeCross.active===4&&nearInset(beforeCross.bodyLeft,58))
+ await resizeInset(1024,false);await page.waitForFunction(()=>document.getElementById('attractions').dataset.montrealAttractions==='0');await settleInset()
+ const desktopCross=await readInset(0);insetReport.crossovers.push({stage:'Desktop1024-reset',...desktopCross})
+ check('INSET/Crossover1023 to1024 applies single Desktop inset and reset',desktopInsetMatches(desktopCross))
+ await resizeInset(1023,true);await page.waitForFunction(()=>document.getElementById('attractions').dataset.montrealAttractions==='-1');await settleInset()
+ const phoneCross=await readInset(4);insetReport.crossovers.push({stage:'Phone1023-reset',...phoneCross})
+ check('INSET/Crossover1024 to1023 restores Phone closed geometry',phoneCross.phone&&phoneCross.active===-1&&nearInset(phoneCross.bodyLeft,58)&&nearInset(phoneCross.bodyWidth,941)&&nearInset(phoneCross.panelHeight,74))
+ // Restore the original harness precondition before its retained reduced/static/cleanup checks.
+ await resizeInset(390,true);await page.waitForFunction(()=>document.getElementById('attractions').dataset.montrealAttractions==='-1');await page.setViewportSize({width:1550,height:1000})
+ fs.writeFileSync(path.join(dir,'attraction-inset-dom-geometry.json'),JSON.stringify(insetReport,null,2)+'\n')
+
  await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(10);await page.locator('#pane-2').click({force:true});check('Reduced motion keeps interactive selection but disables transition',await page.locator('#pane-2').evaluate(e=>e.getAttribute('aria-expanded')==='true'&&e.style.transition==='none'))
  for(const target of ['canvas','export','thumbnail']){await page.evaluate(target=>{__target=target;render()},target);await page.clock.runFor(400);await page.locator('#pane-2').click({force:true});await page.locator('#pane-2').press('Space');check(target+' preserves native editor key default',await page.evaluate(()=>__lastKeyPrevented===false));check(target+' freezes source states and uses measured Phone width',await page.evaluate(()=>document.getElementById('attractions').dataset.montrealAttractions==='-1'&&parseFloat(document.getElementById('pane-2').style.width)===390&&getComputedStyle(document.getElementById('front')).opacity==='1'&&document.getElementById('chart').dataset.montrealChartWeight==='900'))}
  await page.screenshot({path:path.join(dir,'phone-native-controls.png')});await page.evaluate(()=>ReactDOM.flushSync(()=>__root.unmount()));check('Shared motion playback subscriptions release on unmount',await page.evaluate(()=>window[Symbol.for('monarchic.sourceMontreal.playback.v1')].listeners.size===0));check('Postcard timeout releases on unmount',await page.evaluate(()=>__timers.size===0));check('Actual native refs clear on unmount',await page.evaluate(()=>Object.values(__refs).every(x=>x===null)));check('No actual React browser errors',errors.length===0)
- const result={passed:true,sourceSHA256:hash(source),sourceBytes:Buffer.byteLength(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,errors,scope:'Strict semantic types and actual React18/Chromium native adapter droppingonClick; timing, pause, source width ratio, hover reset, Phone flow height,18weight states, real nested CSS, refs/cancellation/static/reduced. Fixture colors and Arial/Georgia are owned test material, not original source appearance or actual Framer font proof.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,checks:checks.length,sourceSHA256:result.sourceSHA256,evidence:dir},null,2))
-}catch(error){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({error:String(error),checks,errors},null,2)+'\n');throw error}finally{await browser.close()}
+ const result={passed:true,insetReport,sourceSHA256:hash(source),sourceBytes:Buffer.byteLength(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,errors,scope:'Strict semantic types and actual React18/Chromium native adapter droppingonClick; timing, pause, source width ratio, hover reset, Phone flow height,18weight states, real nested CSS, refs/cancellation/static/reduced. Fixture colors and Arial/Georgia are owned test material, not original source appearance or actual Framer font proof.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,checks:checks.length,sourceSHA256:result.sourceSHA256,evidence:dir},null,2))
+}catch(error){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({error:String(error),checks,errors,insetReport},null,2)+'\n');throw error}finally{await browser.close()}

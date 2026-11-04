@@ -171,7 +171,7 @@ export function withMontrealAttractionHeading(Component: ComponentType<Props>): 
 export function withMontrealAttractionBody(Component: ComponentType<Props>): ComponentType<Props> {
     return React.forwardRef<HTMLElement, Props>((props, ref) => {
         const state = React.useContext(Attractions), pane = React.useContext(Pane)
-        return <Component {...props} ref={ref} aria-hidden={!pane.selected} style={{ ...props.style, left: state.phone ? 58 : 100, top: state.phone ? 82 : 210, width: state.phone ? Math.max(1, state.width - 82) : Math.max(1, state.width * 4.8 / 14.8 - 124), opacity: pane.selected ? 1 : 0, pointerEvents: "none", transition: state.frozen || state.reduced ? "none" : "opacity .75s cubic-bezier(.65,0,.15,1)" }} />
+        return <Component {...props} ref={ref} aria-hidden={!pane.selected} style={{ ...props.style, left: state.phone ? 58 : 125, top: state.phone ? 82 : 210, width: state.phone ? Math.max(1, state.width - 82) : Math.max(1, state.width * 4.8 / 14.8 - 149), opacity: pane.selected ? 1 : 0, pointerEvents: "none", transition: state.frozen || state.reduced ? "none" : "opacity .75s cubic-bezier(.65,0,.15,1)" }} />
     }) as Native
 }
 
