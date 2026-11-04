@@ -397,6 +397,14 @@
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };
           });
+          source-mecha-phone-navigation = (mkWebsiteCheck "source-mecha-phone-navigation" ''
+            export MONARCHIC_MECHA_PHONE_NAV_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-mecha-phone-navigation
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-mecha-tomorrow-contact = (mkWebsiteCheck "source-mecha-tomorrow-contact" ''
             export MONARCHIC_MECHA_CONTACT_EVIDENCE_DIR="$out/evidence/contact"
             pnpm run check:source-mecha-tomorrow-contact
