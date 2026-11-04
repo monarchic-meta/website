@@ -367,5 +367,55 @@
       "actualPreviewVerified": false,
       "afterEditorReload": false
     }
+  },
+  "sameModuleRollingPackage": {
+    "status": "SAME_MODULE_ROLLING56_LOCAL51_AND_RETAINED52_PASS_FRAMER_PENDING",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-rolling-provenance.json",
+      "bytes": 5791,
+      "sha256": "51a2e0c6b8d0ed3fc0be54b1573b1366b0db8ec2e37ed39c594804b81cd421ab"
+    },
+    "manualSource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpeningRolling.tsx",
+      "bytes": 47157,
+      "sha256": "d4ad84ed63a3550f3510db34d0e6fc34bbc9cc830661e9768585ef5b8cf307b9"
+    },
+    "nativeIntegration": {
+      "families": 11,
+      "actualCopies": 22,
+      "activeCloneIDsFrom663And664": true,
+      "hiddenOriginalClonesExcluded": true,
+      "header8CurrentOverridesNull": true,
+      "rootAndTwoCompanyBindingsComposeOldHOCs": true,
+      "allParentLinksArrowNavigationAndInputBindingsPreserved": true,
+      "geometryTextFontChanges": 0
+    },
+    "validation": {
+      "rollingFull": 51,
+      "retainedOpeningFull": 52,
+      "rollingOriginalAssertions": 43,
+      "retainedOpeningOriginalAssertions": 50,
+      "oneEvaluatedModulePerFixture": true,
+      "rollingCanonicalStatic": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/canonical-validation/rolling-static11.json",
+        "bytes": 1138,
+        "sha256": "539f250130b8e1d1c516a41a0368d4be02370a6a179f5b4ca3cd1a2b1ae3d3ee"
+      },
+      "openingCanonicalStatic": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/canonical-validation/opening-static12.json",
+        "bytes": 1216,
+        "sha256": "e25795a7860f49cac385e665472c8334a7540c5fe0ff6cf80b44ceacebadbe40"
+      },
+      "manualRegenerationSHA256": "d4ad84ed63a3550f3510db34d0e6fc34bbc9cc830661e9768585ef5b8cf307b9",
+      "failurePolicy": "The minimal phone probe lacked ordinary-flow content and had height0; one ordinary-flow child fixed the fixture without changing production, assertions or resource limits."
+    },
+    "actualFramer": {
+      "sourceWritten": false,
+      "nativeBindingsWritten": false,
+      "genuine56OverridesVerified": false,
+      "actualPaintVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

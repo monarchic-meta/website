@@ -2,7 +2,7 @@
   "reference": "HERO-015",
   "classification": "Source inspiration / MECHA Contact and Tomorrow panel recreation",
   "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
-  "status": "SAME_MODULE_PACKAGE_LOCAL64_AND_RETAINED74_PASS_ACTUAL47_PILOT_PENDING",
+  "status": "CONTACT_SOURCE47_BINDINGS104_NATIVE96_AUTHORED_THROUGH773_PREVIEW_RELOAD_OPEN",
   "canonicalManualPackage": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowContact.tsx",
     "bytes": 49548,
@@ -88,14 +88,27 @@
     }
   },
   "actualFramer": {
-    "packageWritten": false,
-    "compilerDiagnostics": null,
-    "genuine47OverridesVerified": false,
-    "old7SchemasPreserved": null,
-    "nativeBindingAndActivation": false,
+    "delivery": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-source47-writer761/final-existing-module47-source-authoring-receipt764.json",
+      "bytes": 6466,
+      "sha256": "599db72c929fb93fafd842f06887e6d496fdd378ffc6cb093d12ee71ba53ad36"
+    },
+    "packageWritten": true,
+    "module": "ibfuuNl / SourceMechaTomorrowDetail.tsx",
+    "compilerDiagnostics": 0,
+    "genuine47OverridesVerified": true,
+    "old7SchemasPreserved": true,
+    "old15281UTF8PrefixExact": true,
+    "all60CatalogsPreserved": true,
+    "nativeBindingAndActivation": true,
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "admissionReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-admission-writer767/final-contact104-bindings96-authoring-receipt773.json",
+      "bytes": 9289,
+      "sha256": "80f7d6d69a8e5b6feeaf4636d62726b4d809be796757528ad51b28f92099d854"
+    }
   },
   "limits": [
     "Manual same-module packaging resolves the dependency structurally; actual Framer override classification and DOM forwarding remain separate gates.",
@@ -129,5 +142,32 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/canonical-validation/nix-evaluation.json",
     "bytes": 289,
     "sha256": "67774e5ba7be6c2e73be0cf108983087e831821669398e576dcb6c506e323a7b"
+  },
+  "nativeAdmission": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-admission-writer767/final-contact104-bindings96-authoring-receipt773.json",
+      "bytes": 9289,
+      "sha256": "80f7d6d69a8e5b6feeaf4636d62726b4d809be796757528ad51b28f92099d854"
+    },
+    "owner": "e722def0766588f89c8aaf4fd0110ca6cca9d9fea6b07b91053a73382cc7e846",
+    "logicalBindingFamilies": 52,
+    "actualBindings": 104,
+    "nativeFamilies": 48,
+    "nativeParts": 96,
+    "genuineTextFontTuples": 48,
+    "overlayVisible": true,
+    "overlayOpacity": 0,
+    "canvasMotion": false,
+    "actorPaused": false,
+    "cold760InverseExact": true,
+    "preOverlay599fInverseExact": true,
+    "sourceWritesThisPhase": 0,
+    "newNodesThisPhase": 0,
+    "geometryTextHrefFontAssetChanges": 0,
+    "inputCapabilityPilot": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-input-binding-pilot765/final-cold-native-input-binding-pilot-receipt766.json",
+      "bytes": 3226,
+      "sha256": "bc0e328c0b52009bdbd3a2eb214ff39e47467f68bba2e0fe44958110090322c4"
+    }
   }
 }

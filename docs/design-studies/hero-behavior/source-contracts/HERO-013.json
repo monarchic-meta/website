@@ -1552,5 +1552,84 @@
       "The separate source back-navigation remains missing; its native/behavior plan is frozen.",
       "Notes91 native families remain held by the shared-module import gate."
     ]
+  },
+  "backNavigation": {
+    "status": "SOURCE56_AUTHORED_THROUGH775_NATIVE4_PILOT_STAGED",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-format-back-navigation-provenance.json",
+      "bytes": 6810,
+      "sha256": "669c063d558cc656329c83dbecbf8dadae1c31ea76e7e28550ec1b1f704ab5ce"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
+      "bytes": 85154,
+      "sha256": "318f04932e3ac1f247ad5881744a7ed62d263b99fb54ff055c6e4f3855cb514c"
+    },
+    "validation": {
+      "focused": 54,
+      "focusedResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/canonical-validation/focused54-result.json",
+        "bytes": 17486,
+        "sha256": "d2c77a18407c16184e72d3513b30c278108d05943fd0daf23a2ed50eaad8399b"
+      },
+      "legacySharedCases": 5,
+      "legacySharedStatic": 4,
+      "materialStatic": 9,
+      "sparkStatic": 11,
+      "detailsStrictAndSSR": 10,
+      "materialResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/canonical-validation/material-static9.json",
+        "bytes": 1887,
+        "sha256": "f4c7a44a4bf3fd55fa82847373b2dddfd2acc60ada1b3ec7691c384fe2483630"
+      },
+      "sparkResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/canonical-validation/spark-static11.json",
+        "bytes": 2078,
+        "sha256": "f8a4050099c788e1f270707273191804a4d91a9380270a0e446979e4419015f0"
+      },
+      "detailsResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/canonical-validation/details-strict10.json",
+        "bytes": 1383,
+        "sha256": "8f93eda17f380732d0a21bcfcc946619319ef30126c16bf148fdf2ff154ecc62"
+      },
+      "comparisonFontRedistributed": false,
+      "charsetCorrection": "The loopback oracle explicitly serves UTF-8. The retained source payload, geometry assertions and tolerances were unchanged."
+    },
+    "actualFramer": {
+      "sourceWritten": true,
+      "sourceReceipt": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/final-shared56-source-authoring-receipt775.json",
+        "bytes": 2927,
+        "sha256": "96b43ab4fd381688f4782b51d90eda03a5aca912d75bf3e87170b92f96d2c8ed"
+      },
+      "compilerDiagnostics": 0,
+      "genuineOverrides": 56,
+      "old50IDsAndSchemasExact": true,
+      "nativeComplete": false,
+      "actualPaintVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    },
+    "nativeAuthoring": {
+      "targetFamilies": 19,
+      "targetParts": 57,
+      "targetBindings": 45,
+      "currentStagedFamilies": 4,
+      "currentStagedParts": 12,
+      "currentBound": 0,
+      "nativeRootFit": "Only the new root uses supported native absolute instead of nested fixed. Its live HOC retains source fixed CSS; frozen Canvas is hidden.",
+      "actualAutoWidthPaintVerified": false,
+      "metadataRectWidth200IsNotGlyphPaint": true,
+      "pilot": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/staged-native4-family-pilot-barrier777.json",
+        "bytes": 6991,
+        "sha256": "db09b0ff8d0022854c91d92084d258c9f68eb0e277b7abc9174c77c85c79a65a"
+      },
+      "adapter": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-writer774/prepared-supported-native19-adapter.json",
+        "bytes": 19342,
+        "sha256": "7233040b0cd28bfe404a0498d9ed2bf126b8d0b5f37122c070d43477c9269a7d"
+      }
+    }
   }
 }

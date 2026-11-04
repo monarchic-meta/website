@@ -83,6 +83,14 @@ check with `--max-jobs 1 --cores 2`. The older measured-word-fit entry point
 delegates to this stronger suite for the current source and retains its earlier
 assertions when explicitly given the historical five-frame source.
 
+[SourceCantorOpeningRolling.tsx](SourceCantorOpeningRolling.tsx) is the separate
+manual same-module package for the existing Opening code file. It preserves
+all52 prior overrides and adds four rolling controls. Its
+[package proof](assets/source-cantor-opening-rolling-provenance.json) records
+51 rolling and52 retained Opening checks; the corrected native plan uses11
+active families rather than the earlier hidden text layers. Framer import and
+binding remain open. The leaf files above remain authoring inputs.
+
 ## Mecha contact mark
 
 The named `MechaContactMark` export in [MechaScrollMark.tsx](MechaScrollMark.tsx)
@@ -109,13 +117,36 @@ The live mark above remains a separate component.
 
 The [panel provenance](assets/source-mecha-contact-provenance.json) records57
 local checks with genuine external comparison fonts. The48-family native packet
-is ready; supported imports and actual Framer runtime remain separate gates. Source fonts are absent
+is being authored separately; actual Framer runtime remains a separate gate. Source fonts are absent
 from the current project; native and live fallback faces remain explicit fits.
 The prototype retains a draft without submitting it or inventing success.
 
 ```sh
 nix build .#checks.x86_64-linux.source-mecha-contact --max-jobs 1 --cores 2
 ```
+
+[SourceMechaTomorrowContact.tsx](SourceMechaTomorrowContact.tsx) is the manual
+same-module package for Framer’s existing Tomorrow code file. It preserves the
+old15,281-byte controller and its seven exports, then adds40 Contact overrides
+with private names isolated. Its [package proof](assets/source-mecha-tomorrow-contact-bundle-provenance.json)
+records64 Contact checks and74 retained Tomorrow checks, including both panels
+using the same provider. Framer source classification is positive through764, and all104 bindings
+across96 native parts are independently read through773. Actual Preview and
+reload remain independent gates.
+
+The original leaf files above remain authoring inputs. Rebuilding is explicit:
+`node scripts/build-source-mecha-tomorrow-contact.mjs --out /absolute/directory`.
+This creates reviewable files without editing Framer or starting synchronization.
+
+## FORMAT reading navigation
+
+The six added overrides in [SourceHeroNativeBehaviors.tsx](SourceHeroNativeBehaviors.tsx)
+recreate the separate upward-scroll bar, its mode buttons, source credits and
+footer dismissal. All50 earlier roles remain byte-for-byte intact. The
+[54-check proof](assets/source-format-back-navigation-provenance.json) compares
+the original behavior/CSS and font geometry. Source56 is independently read
+through775;19 native families are being authored. Actual Framer paint, Preview
+and reload remain open.
 
 ## FORMAT introductory clock
 

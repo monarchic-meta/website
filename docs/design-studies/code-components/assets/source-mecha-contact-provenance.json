@@ -3,7 +3,7 @@
   "classification": "Source inspiration / credited recreation",
   "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
   "source": "https://mecha-xyz.webflow.io/",
-  "status": "LOCAL57_CHECKS_PASS_NATIVE48_IMPORT_PATH_PENDING",
+  "status": "LEAF57_RETAINED_COMBINED47_AND_NATIVE104_BINDINGS_AUTHORED_THROUGH773",
   "sourceModule": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-3/SourceMechaContact.tsx",
     "bytes": 30471,
@@ -61,9 +61,9 @@
     "rules": "All three input rules and the form-pane divider use pure white at opacity 0.2, as independently retained in the original CSS."
   },
   "nativePreparation": {
-    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-preparation-not-applied.json",
-    "bytes": 5405,
-    "sha256": "7a4c06ae3b72dadf7280f54fb76298f4bbe17c2a46bd6360ee1b0c6138a5bbeb"
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-ui-writer713/final-cold96-contact-authoring-receipt760.json",
+    "bytes": 5764,
+    "sha256": "2575fca7b8e239d1abfdc961fe3542be4bcfcd5d0b1a668fcc2b6285103f7c28"
   },
   "differences": [
     "Copy/placeholder/body text remain editable. Subtitle is independently paraphrased. No backend, submission or invented success state.",
@@ -83,10 +83,23 @@
     "editableModalComposition": 1
   },
   "actualFramer": {
-    "sourceRegistered": false,
-    "nativeWritten": false,
+    "sourceRegistered": true,
+    "leafModuleRegistered": false,
+    "actualSourcePackage": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-contact-bundle-provenance.json",
+      "bytes": 7420,
+      "sha256": "ec568f8a90918241371f05f5b6cfea514f51245d8aa218249e6072c6a9c35057"
+    },
+    "nativeWritten": true,
+    "nativeBound": true,
+    "sourceCompilerDiagnostics": 0,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "admissionReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-admission-writer767/final-contact104-bindings96-authoring-receipt773.json",
+      "bytes": 9289,
+      "sha256": "80f7d6d69a8e5b6feeaf4636d62726b4d809be796757528ad51b28f92099d854"
+    }
   },
   "nix": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/nix-target-evaluation-receipt.json",
@@ -146,7 +159,7 @@
     "The rules and divider use white at 20% opacity; the prior cyan rule paint was incorrect.",
     "Only the new Desktop overlay receives a native Canvas fit. Live layout clears that inherited transform and scale using valid React 18 CSS strings. Frozen caller styles remain exact."
   ],
-  "nativeGap": "The 48-family / 96-copy construction packet now includes source colors, finite D/P geometry, three genuine fields per layout, actor logical/clip dimensions and an overlay-only Desktop Canvas fit. Framer source import, exact badge upload, native creation/bindings and genuine font admission remain separate gates.",
+  "nativeGap": "All48families/96nativeparts and104bindings are authored and independently read through773, with genuine inputs, two live-admitted actors and closed/static Canvas. The existing Tomorrowmodule preserves its exact7-role prefix and contains all47 genuine overrides. Actual Framer DOM forwarding/paint/typing/actor admission, Preview and reload remain open. Native fonts remain declared Inter/Georgia fallbacks.",
   "originalPhoneObservation": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-scroll-v3-corrected/frozen-observed-receipt.json",
     "bytes": 10346,
@@ -202,5 +215,15 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/source-color-correction-v1/proof-2",
       "diagnosis": "One new negative test queried an authored ID replaced by the existing dialog accessibility ID. Corrected only that fixture query to its owned data marker; production source remained exact."
     }
-  ]
+  ],
+  "manualSameModulePackage": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-contact-bundle-provenance.json",
+    "bytes": 9146,
+    "sha256": "7c09bec52a50bb175d886e1446647a47d7cc8a5f6ed34332046cbef94f9d7eee"
+  },
+  "historicalNativePreparation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-native-ui-v1/native-preparation-not-applied.json",
+    "bytes": 5405,
+    "sha256": "7a4c06ae3b72dadf7280f54fb76298f4bbe17c2a46bd6360ee1b0c6138a5bbeb"
+  }
 }

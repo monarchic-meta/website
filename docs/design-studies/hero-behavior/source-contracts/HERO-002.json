@@ -2208,11 +2208,11 @@
     ]
   },
   "extendedTwoTrackMotion": {
-    "status": "EXTENDED_TWO_TRACK_SOURCE_LOCAL40_PASS_FRAMER_DELIVERY_PENDING",
+    "status": "EXTENDED_TWO_TRACK_SOURCE_AUTHORED_THROUGH753_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-provenance.json",
-      "bytes": 5415,
-      "sha256": "f9e029d96ce797fcc1a165b0178150043b59dcb591fcdb544e8a803b06b5df52"
+      "bytes": 6342,
+      "sha256": "c2bf1a09ae91ee1f1a51ec674ec45f8e9d2a9d35435923cb130ebf2193e5eccd"
     },
     "scope": {
       "actors": 2,
@@ -2272,8 +2272,17 @@
       }
     },
     "actualFramer": {
-      "sourceWritten": false,
-      "currentSourceSHA256": "e1f045c368f34c6f36cb30d57596c78c0bf702e0d789dbba8d91ac96a60c4271",
+      "delivery": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/extended-source-writer752/final-extended-144row-source-authoring-receipt753.json",
+        "bytes": 3606,
+        "sha256": "074b8e60b69c0860c8d6aa2cbb3d8f9348ce2dd8433dc3888f623a62de55fbe2"
+      },
+      "sourceWritten": true,
+      "currentSourceSHA256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c",
+      "compilerDiagnostics": 0,
+      "all46RowsIDsAndSchemasExact": true,
+      "nativePageAndDefinitionUnchanged": true,
+      "all60CatalogsPreserved": true,
       "actualPaintVerified": false,
       "actualPreviewVerified": false,
       "afterEditorReload": false
