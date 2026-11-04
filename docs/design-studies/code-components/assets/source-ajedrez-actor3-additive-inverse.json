@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "EXTERNAL_ADDITIVE_ACTOR3_CANDIDATE_INVERSE_NOT_REPO_OR_FRAMER_DELIVERY",
+  "parent": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 205967,
+    "sha256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c"
+  },
+  "candidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "dataset": {
+    "path": "scripts/fixtures/source-ajedrez-actor3-source-correspondence.json",
+    "bytes": 59574,
+    "sha256": "679fbed7e332c1476ffe806f2b093ddbc47d09a7950dbe4970e76328b52cea89"
+  },
+  "patches": [
+    {
+      "name": "Add separate actor3 private literal table",
+      "before": "// One effect-dependency slot stays stable per host",
+      "after": "// Additional source-reviewed retained candidate/crop rectangles for actor3.\n// These are raster rectangles, not certified tight glyph bounds. Source lexical\n// identity is unknown; the editable native caption remains independent content.\n// The23 nulls restore the representative baseline, including rejected1210..1212.\nconst AJEDREZ_TYPE_ACTOR3_FITS: readonly (AjedrezTypeMeasuredPoint | null)[] = [\n    [74,297.5,17],\n    [353,399.5,16],\n    [353,399.5,16],\n    [353,398.5,16],\n    null,\n    null,\n    null,\n    null,\n    null,\n    [383,534.5,17],\n    [383,534.5,17],\n    [383,534.5,17],\n    [384,534.5,16],\n    [384,533.5,16],\n    null,\n    [384,534.5,16],\n    [384,534.5,16],\n    [285,534.5,16],\n    [157,202.5,16],\n    [157,202.5,16],\n    [157,201.5,16],\n    [156,201.5,17],\n    [185,63.5,17],\n    [185,63.5,17],\n    [185,63.5,17],\n    [185,63.5,17],\n    [241,535.5,17],\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    [296,188.5,17],\n    [297,188.5,16],\n    [297,188.5,16],\n    [297,188.5,17],\n    [186,48.5,17],\n    [186,48.5,17],\n    [186,48.5,17],\n    [186,49.5,17],\n    [185,49.5,18],\n    [185,49.5,17],\n    [185,49.5,17],\n    [95,103.5,17],\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    [186,201.5,17],\n    [186,200.5,16],\n    [185,200.5,17],\n    [186,200.5,16],\n    [185,409.5,17],\n    [185,409.5,17],\n    null,\n    null,\n    null,\n    null,\n    [408,340.5,17],\n    [408,340.5,16],\n    [408,340.5,16],\n    [408,340.5,16],\n    [408,340.5,16],\n    [407,605.5,17],\n    [407,604.5,17],\n    [408,604.5,16],\n    [408,604.5,16],\n    [407,604.5,17],\n    null,\n    [241,522.5,16],\n    [241,522.5,17],\n]\n// One effect-dependency slot stays stable per host"
+    },
+    {
+      "name": "Include only actor3 in tracked dispatch",
+      "before": "function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 }",
+      "after": "function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 || index === 3 }"
+    },
+    {
+      "name": "Resolve actor3 before the unchanged historical two-track branch",
+      "before": "function ajedrezTypeMeasuredFit(frame: number, index: number) {\n",
+      "after": "function ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (index === 3) {\n        const point = AJEDREZ_TYPE_ACTOR3_FITS[frame - 1152]\n        return point ? { left: point[0], top: point[1], width: point[2] } : null\n    }\n"
+    },
+    {
+      "name": "Clarify historical two-track scope",
+      "before": "// Other82 actors, static49 posters and source-word identity caveats remain.",
+      "after": "// Other81 actors retain representative holds; actor3 has a separate private table.\n// Static49 posters and source-word identity caveats remain."
+    }
+  ],
+  "apply": "For each patch in reverse order, replace exact unique after with before; verify parent byte count and SHA256."
+}

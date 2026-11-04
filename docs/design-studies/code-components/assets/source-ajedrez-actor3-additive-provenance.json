@@ -1,0 +1,150 @@
+{
+  "reference": "HERO-002",
+  "classification": "Source inspiration / credited temporal recreation",
+  "credit": "Julián Leiss / Ajedrez Film Poem",
+  "status": "ACTOR3_SOURCE837C_AUTHORED_AND_INDEPENDENTLY_SEALED847_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-inverse.json",
+    "bytes": 3846,
+    "sha256": "104dac832399c4d1e58f660b4599357322360c09eb1b8f785f717bd733519f49"
+  },
+  "fixture": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-ajedrez-actor3-additive.json",
+    "bytes": 21831,
+    "sha256": "ab2117b979476bab0a16745026c1ada8cbb321cb9a7723623d108f569cbdeee0"
+  },
+  "sourceCorrespondence": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-ajedrez-actor3-source-correspondence.json",
+    "bytes": 59574,
+    "sha256": "679fbed7e332c1476ffe806f2b093ddbc47d09a7950dbe4970e76328b52cea89"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-ajedrez-actor3-additive.mjs",
+    "bytes": 55737,
+    "sha256": "07056f0d6f7058a5902ac2972787cd7f67789f55993ffd26b25ef8a40724face"
+  },
+  "sourceReview": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/actor3-full-source-review-51.json",
+    "bytes": 55450,
+    "sha256": "f32a8ffa7bda041e42fbb97eed6485bd02b9f039ed615aaa6de2d0571c21d2fc"
+  },
+  "sourcePeerReview": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/actor3-peer-review-state-evidence.json",
+    "bytes": 23243,
+    "sha256": "1fef657e201ec910155bea3a728a149fdcac7509bce747b9e3f2c549c360cbd8"
+  },
+  "externalValidation": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/actor3-browser-validation-receipt.json",
+    "bytes": 19522,
+    "sha256": "8eb46e56e0878ec39ace3ebb3b9f938cba9b5e2e45e550ee44977c235ddfadb3"
+  },
+  "canonicalValidation": {
+    "static17": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/canonical-validation/static/static-result.json",
+      "bytes": 2596,
+      "sha256": "54d721685e04cfd46b6ee6ffd486b5f4978df6bef006509919e4f90c098a79c4"
+    },
+    "strict12": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/canonical-validation/strict-result.json",
+      "bytes": 1552,
+      "sha256": "241cb5d11b32d4d5c5b3772a68db1f37a9688ebb4f136a3d8283653cc9d9b064"
+    },
+    "gridRoute51": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/canonical-validation/grid-route/result.json",
+      "bytes": 3087971,
+      "sha256": "b6ceaed295ef02da1c4ea3b37b55dbc11ef3f5f285124d0a98d411a5dc50c8e9"
+    },
+    "historical8adStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/canonical-validation/historical8ad.stdout.log",
+      "bytes": 1860,
+      "sha256": "743f3f1f44bbd6702c2fe5c6ff156c9e09655a0815b95c3569854cf60f4aff30"
+    },
+    "fullPhotoSuiteRerun": false,
+    "all60MatrixRerun": false
+  },
+  "actor": {
+    "index": 3,
+    "nativeID": "MmQzfs0EV",
+    "nativeCaption": "línea",
+    "nativeCaptionIndependent": true,
+    "sourceLexicalIdentityClaimed": false,
+    "frames": [
+      1152,
+      1225
+    ],
+    "reviewedPlacements": 51,
+    "explicitBaselineGaps": 23,
+    "rejectedNumericFrames": [
+      1210,
+      1211,
+      1212
+    ],
+    "replacementReentryNotAdmitted": true,
+    "rectangles": "Retained candidate/crop rectangles, not certified tight glyph-ink bounds;29 accepted crops contain empty mask rows.",
+    "positionConversion": "left = crop x; top = crop y - retained3.5px glyph offset; width = crop width. Native glyph shape/height remains unchanged."
+  },
+  "preservation": {
+    "prior144PositionsAnd4GapsExact": true,
+    "oldTwoTableBytesExact": true,
+    "all46PublicBodiesExact": true,
+    "weakOwnerMasterAndFrameClockBytesExact": true,
+    "other81ActorsRetainRepresentativeHolds": true,
+    "nativeAssetFontAndMediaWrites": 0,
+    "newRendererContextsOrClocks": 0
+  },
+  "combinedCoverage": {
+    "trackedActors": 3,
+    "literalPlacements": 195,
+    "explicitBaselineGaps": 27,
+    "frames": 74,
+    "totalActors": 84,
+    "remainingRepresentativeActors": 81,
+    "filmComplete": false
+  },
+  "runtimeProof": {
+    "oldTwoRangeReadsExactly": 2,
+    "newActor3RangeReadsExactly": 1,
+    "other81OnlyOnRepresentativeSampleChanges": true,
+    "all23GapsForwardAndReverse": true,
+    "PhoneAll74": true,
+    "held350pxAndNull1223NegativeControls": true,
+    "oldNegativeAndPausedHMRReplacementCleanupChecksRetained": true,
+    "maxComparisonStillPixels": 864160
+  },
+  "compatibility": {
+    "historical40FileByteExact": true,
+    "currentAliasesExplicitlyDispatch51": true,
+    "gridOnlyDispatchBeforeLaunch": true,
+    "fullBrowserPrepassSerialBeforeLegacyPhotoWork": true,
+    "photoWorkRetained": true,
+    "strictCompilesActualNewModuleBeforeInverseLineage": true,
+    "unusedReviewSnapshotsKeptExternal": 5
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor3-source-writer844/final-actor3-source-only-authoring-receipt847.json",
+      "bytes": 6993,
+      "sha256": "4a60f6cffadbda86e77c81d3731a7b862eec2f3dbd8e977934f06410ffcd85f7"
+    },
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "old46GenuineIDsAndDirectSchemasExact": true,
+    "all92PageOwnersAnd16DefinitionsPreserved": true,
+    "all239CodePlacementsPreserved": true,
+    "all60CatalogsAnd645ExplicitSchemasPreserved": true,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "The51 placements do not complete the closing grid or the film. Other81 actors retain12 representative holds.",
+    "All23 actor3 gaps explicitly restore the prior representative baseline; no last-measured hold or invented easing is added.",
+    "Source glyph-group correspondence is reviewed; editable Native captions remain independent copy and pixel-identical glyph rendering is not claimed.",
+    "Actual Framer playback, painting and editor reload remain unverified."
+  ]
+}

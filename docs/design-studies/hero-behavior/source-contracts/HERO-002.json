@@ -2211,8 +2211,8 @@
     "status": "EXTENDED_TWO_TRACK_SOURCE_AUTHORED_THROUGH753_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-provenance.json",
-      "bytes": 6342,
-      "sha256": "c2bf1a09ae91ee1f1a51ec674ec45f8e9d2a9d35435923cb130ebf2193e5eccd"
+      "bytes": 7270,
+      "sha256": "700c77d86ebaf942dadc49fe30069da04d29f054ce9408b09ea31ee653bf4d06"
     },
     "scope": {
       "actors": 2,
@@ -2294,5 +2294,32 @@
       "Per-frame1px differences may include raster antialias variation; physical easing and poem-token identities are not recovered.",
       "Local DOM, hook and strict checks do not prove actual Framer painting or saved persistence."
     ]
+  },
+  "actor3AdditiveMotion": {
+    "status": "ACTOR3_SOURCE837C_AUTHORED_AND_INDEPENDENTLY_SEALED847_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-provenance.json",
+      "bytes": 7637,
+      "sha256": "c21e5cfe046715592227d1b8571d0ff433dfbdc848a97319e693cba411b09bb2"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 207862,
+      "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor3-source-writer844/final-actor3-source-only-authoring-receipt847.json",
+      "bytes": 6993,
+      "sha256": "4a60f6cffadbda86e77c81d3731a7b862eec2f3dbd8e977934f06410ffcd85f7"
+    },
+    "old144And4GapsExact": true,
+    "actor3Placements51": true,
+    "actor3BaselineGaps23": true,
+    "combinedPlacements195": true,
+    "combinedBaselineGaps27": true,
+    "remainingRepresentativeActors81": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "filmComplete": false
   }
 }

@@ -1,0 +1,2046 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_SOURCE_REVIEW_51_ADMITTED_23_NULLS",
+  "sourceCredit": "Julián Leiss / Ajedrez Film Poem",
+  "nativeActor": {
+    "wordIndex": 3,
+    "desktopID": "MmQzfs0EV",
+    "phoneID": "IZS406b_VMmQzfs0EV",
+    "independentText": "línea",
+    "semanticIdentityClaim": false
+  },
+  "sourceCandidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "reviewMeaning": "Observed retained candidate/crop rectangles; empty edge rows are preserved. No certified tight-ink, pixel-identical glyph, source-font or source lexical/native-caption identity claim.",
+  "reviewHistory": {
+    "originalProposals": 54,
+    "admitted": 51,
+    "rejectedNumericFrames": [
+      1210,
+      1211,
+      1212
+    ],
+    "originalNullFrames": [
+      1156,
+      1157,
+      1158,
+      1159,
+      1160,
+      1166,
+      1179,
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1197,
+      1198,
+      1199,
+      1200,
+      1201,
+      1202,
+      1209,
+      1223
+    ],
+    "newRejectedNullFrames": [
+      1210,
+      1211,
+      1212
+    ]
+  },
+  "admitted": [
+    {
+      "frame": 1152,
+      "sourceCandidateIndex": 15,
+      "cropRectangle": [
+        74,
+        301,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "07822e4a18dac654d072693e07e37696f3fd8507d62830f1295eb8e070efc6ca",
+        "inkCount": 44,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        74,
+        297.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef",
+        "bytes": 44202,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1152,
+        "relativePath": "frame-1152.png",
+        "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef",
+        "bytes": 44202,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1152.png"
+      },
+      "context": "The short source glyph group is isolated in the sparse middle field at74/301; local row and morphology match the first-five seed group."
+    },
+    {
+      "frame": 1153,
+      "sourceCandidateIndex": 61,
+      "cropRectangle": [
+        353,
+        403,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "ef3e6634e2bfc84b69f5a6d258e7c0c127fa74219c524d8c120d85c3a36efd69",
+        "inkCount": 39,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        353,
+        399.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "8f84c301fec8c8fee3288b35631d878c3a5391bc2cf14b25cc476e0d2c304178",
+        "bytes": 49941,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is isolated in the later scattered matrix at353/402–403 with separated neighbors."
+    },
+    {
+      "frame": 1154,
+      "sourceCandidateIndex": 59,
+      "cropRectangle": [
+        353,
+        403,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "a161a1713e38e85ebd3ece7ef9ffbf98b86f922711c5eba5d5d700e72dc273f3",
+        "inkCount": 37,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        353,
+        399.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce",
+        "bytes": 50456,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1154,
+        "relativePath": "frame-1154.png",
+        "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce",
+        "bytes": 50456,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1154.png"
+      },
+      "context": "The group is isolated in the later scattered matrix at353/402–403 with separated neighbors."
+    },
+    {
+      "frame": 1155,
+      "sourceCandidateIndex": 67,
+      "cropRectangle": [
+        353,
+        402,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "82c0783cac273fbe0d0256bdf016a89d1265bade4b7a549ac7a7efa360441dda",
+        "inkCount": 32,
+        "emptyRows": [
+          0
+        ]
+      },
+      "point": [
+        353,
+        398.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "51a3a676e203cd5f429df2bc467afb154c51dddd61341973f33b03f2d5622fe6",
+        "bytes": 50998,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is isolated in the later scattered matrix at353/402–403 with separated neighbors."
+    },
+    {
+      "frame": 1161,
+      "sourceCandidateIndex": 78,
+      "cropRectangle": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "d7c13d3bff33a6dac16518b3083e849bf81739ad91e16f6cd71d370dd1a40e6b",
+        "inkCount": 39,
+        "emptyRows": []
+      },
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "474b1d3ea96683be3adb77c31bdd75fd90c18a08d1efa418fb81739a6fb05557",
+        "bytes": 45771,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1162,
+      "sourceCandidateIndex": 82,
+      "cropRectangle": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "252eb165e9abf55f41501751b492c2d3a6c8b6efb9ecbb6cf51b8d5e685f1a79",
+        "inkCount": 38,
+        "emptyRows": []
+      },
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "942ba40d1452f4a7a955487dd8ba0946e6b1947c97d5bf6bbc532720aac1907f",
+        "bytes": 46233,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1163,
+      "sourceCandidateIndex": 77,
+      "cropRectangle": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "80c78ea01d2880d8f827b1e652ede4b9fe016d0c3fd8645b914f0d90060a649a",
+        "inkCount": 35,
+        "emptyRows": []
+      },
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "a2f32aa1299f13ca051ffb6943d1da225f74d5dfb6c4d374ae66cc5718132930",
+        "bytes": 43343,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1164,
+      "sourceCandidateIndex": 83,
+      "cropRectangle": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "a615a270c39e9efd326b26a46514f0c38d2b714dab4659def02d6a015dbce642",
+        "inkCount": 36,
+        "emptyRows": []
+      },
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "55b8d086910ec97f5dc1ec1117052f58387b507b34c99ba3bab4d28337fa90fd",
+        "bytes": 44178,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1165,
+      "sourceCandidateIndex": 78,
+      "cropRectangle": [
+        384,
+        537,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "12496d965859e180bc2615df7f1c1ab4443c1b54ea89e498f311fc1e03c6a426",
+        "inkCount": 34,
+        "emptyRows": []
+      },
+      "point": [
+        384,
+        533.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f",
+        "bytes": 43851,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1165,
+        "relativePath": "frame-1165.png",
+        "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f",
+        "bytes": 43851,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1165.png"
+      },
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1167,
+      "sourceCandidateIndex": 79,
+      "cropRectangle": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "728283c7a9d5efaa8984781452a52a99620ee3c62b7a0daefda7ed89a2fa0298",
+        "inkCount": 37,
+        "emptyRows": []
+      },
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "df702db682465230965b4b89406153bec88964f2a0c81aef124ba7ffcaed382d",
+        "bytes": 44140,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1168,
+      "sourceCandidateIndex": 76,
+      "cropRectangle": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "3cf520deb83a2459b78406b989b215ec1b8beb1ba9f2727bd91a234c60a4e00b",
+        "inkCount": 38,
+        "emptyRows": []
+      },
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "72cde8e1f202daa27576454202445800a288b90d0bd49c0185ab453f53079b8f",
+        "bytes": 45031,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the lower part of the narrow right paragraph, near383–384/537–538. The selected bounds follow this source group within that local paragraph context."
+    },
+    {
+      "frame": 1169,
+      "sourceCandidateIndex": 80,
+      "cropRectangle": [
+        285,
+        538,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "33b4e31c7bdd1c4e4869ea467ec2491dc6e724fa0ed47b3200817ca0c7accf87",
+        "inkCount": 42,
+        "emptyRows": []
+      },
+      "point": [
+        285,
+        534.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457",
+        "bytes": 73857,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1169,
+        "relativePath": "frame-1169.png",
+        "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457",
+        "bytes": 73857,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1169.png"
+      },
+      "context": "The same short glyph group remains in the lower paragraph near285/538 while other words already move into the grid. This viewed source state is356.75logicalpx from the old1172hold."
+    },
+    {
+      "frame": 1170,
+      "sourceCandidateIndex": 1,
+      "cropRectangle": [
+        157,
+        206,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "93cda00c99dafdd4badb538e9120a586103b2a3d8e8c7b40bc89e82d536bc8cd",
+        "inkCount": 43,
+        "emptyRows": []
+      },
+      "point": [
+        157,
+        202.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e",
+        "bytes": 79241,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1170,
+        "relativePath": "frame-1170.png",
+        "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e",
+        "bytes": 79241,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1170.png"
+      },
+      "context": "The group is on the top compact-center row near156–157/205–206, alongside separated words. Seed1169→1170numerical ambiguity is explicit; directly viewed source context supplies independent reentry."
+    },
+    {
+      "frame": 1171,
+      "sourceCandidateIndex": 1,
+      "cropRectangle": [
+        157,
+        206,
+        16,
+        6
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 6,
+        "rowTextSHA256": "78cfd6d21468e9c7344e7a200c172fed521d8e6b530be7b14de5a0df0357c3fe",
+        "inkCount": 43,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        157,
+        202.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491",
+        "bytes": 69391,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1171,
+        "relativePath": "frame-1171.png",
+        "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491",
+        "bytes": 69391,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1171.png"
+      },
+      "context": "The group is on the top compact-center row near156–157/205–206, alongside separated words. Seed1169→1170numerical ambiguity is explicit; directly viewed source context supplies independent reentry."
+    },
+    {
+      "frame": 1172,
+      "sourceCandidateIndex": 1,
+      "cropRectangle": [
+        157,
+        205,
+        16,
+        7
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 7,
+        "rowTextSHA256": "142661ba5e6f1e043a72e53cd23d24e7244cc823d15619267cd983213edbf763",
+        "inkCount": 37,
+        "emptyRows": [
+          0,
+          6
+        ]
+      },
+      "point": [
+        157,
+        201.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c",
+        "bytes": 79069,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1172,
+        "relativePath": "frame-1172.png",
+        "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c",
+        "bytes": 79069,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1172.png"
+      },
+      "context": "The group is on the top compact-center row near156–157/205–206, alongside separated words. Seed1169→1170numerical ambiguity is explicit; directly viewed source context supplies independent reentry."
+    },
+    {
+      "frame": 1173,
+      "sourceCandidateIndex": 8,
+      "cropRectangle": [
+        156,
+        205,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "1b4e68a9019fbaf04b8b26ed07b603a46a43efc1f4bd42f31c289a0d4a403459",
+        "inkCount": 43,
+        "emptyRows": [
+          0,
+          6
+        ]
+      },
+      "point": [
+        156,
+        201.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291",
+        "bytes": 78395,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1173,
+        "relativePath": "frame-1173.png",
+        "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291",
+        "bytes": 78395,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1173.png"
+      },
+      "context": "The group is on the top compact-center row near156–157/205–206, alongside separated words. Seed1169→1170numerical ambiguity is explicit; directly viewed source context supplies independent reentry."
+    },
+    {
+      "frame": 1174,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        185,
+        67,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "45d00ce1a5ddfc8d7f6b63af058c11231e115da76cb8379ea500f5d1b9d86cbb",
+        "inkCount": 40,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "8e9d022cc7d2c0e5ff5667f989585bcdf0dc11650d2fc9b7afb2d38ac468f7c7",
+        "bytes": 86272,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is on the upper grid row at185/67. Exact raw candidate masks are used;1176historical height5 differs from raw height7 and is preserved as historical evidence."
+    },
+    {
+      "frame": 1175,
+      "sourceCandidateIndex": 3,
+      "cropRectangle": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "9c51483c0dea9f27b467ab3c387b8697a6024d7caccc82b6f5d53be40b69c83d",
+        "inkCount": 45,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "73f5cb6bf5f6ba485291e49f611b5ee1d760aa6c54ef3a5761eb31569df8366a",
+        "bytes": 87292,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is on the upper grid row at185/67. Exact raw candidate masks are used;1176historical height5 differs from raw height7 and is preserved as historical evidence."
+    },
+    {
+      "frame": 1176,
+      "sourceCandidateIndex": 3,
+      "cropRectangle": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "3f170cbb5754fc5a997a4f4c6297516a46947fc9660c107ea57e6f8ad9514c2c",
+        "inkCount": 43,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc",
+        "bytes": 87602,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1176,
+        "relativePath": "frame-1176.png",
+        "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc",
+        "bytes": 87602,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1176.png"
+      },
+      "context": "The group is on the upper grid row at185/67. Exact raw candidate masks are used;1176historical height5 differs from raw height7 and is preserved as historical evidence."
+    },
+    {
+      "frame": 1177,
+      "sourceCandidateIndex": 3,
+      "cropRectangle": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "3f170cbb5754fc5a997a4f4c6297516a46947fc9660c107ea57e6f8ad9514c2c",
+        "inkCount": 43,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "b5751b3c3fe576e0f11287b9ecc9bcf28965b280484c8d50ee6a6d06f6046778",
+        "bytes": 86204,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is on the upper grid row at185/67. Exact raw candidate masks are used;1176historical height5 differs from raw height7 and is preserved as historical evidence."
+    },
+    {
+      "frame": 1178,
+      "sourceCandidateIndex": 41,
+      "cropRectangle": [
+        241,
+        539,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "c3fec6c609afe834b1897ab3be20d5c7f39e3a76213807aa60dfc5b21105796d",
+        "inkCount": 37,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        241,
+        535.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "91c3e0a05fa6f5fb5193522e71c1a6c405c6e2fd73ea696261b02b74426b8043",
+        "bytes": 91800,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The source group has jumped into the lower grid at241/539, adjacent to separated grid words; this is a literal sampled cut, not inferred easing."
+    },
+    {
+      "frame": 1185,
+      "sourceCandidateIndex": 20,
+      "cropRectangle": [
+        296,
+        192,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "c8c941055164b7ba16cb10ea5bee1d70852f26a5f22021e678cef5a6311961df",
+        "inkCount": 41,
+        "emptyRows": []
+      },
+      "point": [
+        296,
+        188.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "b4b0ee0c201189e68014dff9eae642633ee4f583c0195710a12ce4c97e2fca6a",
+        "bytes": 93761,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper-middle grid at296–297/192. The1188→1187shape-only reverse confusion is explicitly stopped; direct source context distinguishes the selected group from the other candidate at74/331."
+    },
+    {
+      "frame": 1186,
+      "sourceCandidateIndex": 21,
+      "cropRectangle": [
+        297,
+        192,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "0bffae99b3e78fe4b66db804e579fd49e4c9d58d9f24abf9c2a63e3300ac9430",
+        "inkCount": 39,
+        "emptyRows": []
+      },
+      "point": [
+        297,
+        188.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "d2b8f5ea4ff6d7ca094f3e89a56d89fdb99d28b8e25579bb08293449f10a5cbe",
+        "bytes": 97575,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper-middle grid at296–297/192. The1188→1187shape-only reverse confusion is explicitly stopped; direct source context distinguishes the selected group from the other candidate at74/331."
+    },
+    {
+      "frame": 1187,
+      "sourceCandidateIndex": 24,
+      "cropRectangle": [
+        297,
+        192,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "b2713ddf179d6370be1fbf1d32c889e2eddc35d123859871b2bf7fa3e15c1526",
+        "inkCount": 39,
+        "emptyRows": []
+      },
+      "point": [
+        297,
+        188.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "c49c4de0ac7f5e0309cb530320093d87dcf4bb4670edd04eb920e28df6d6b3af",
+        "bytes": 98771,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper-middle grid at296–297/192. The1188→1187shape-only reverse confusion is explicitly stopped; direct source context distinguishes the selected group from the other candidate at74/331."
+    },
+    {
+      "frame": 1188,
+      "sourceCandidateIndex": 24,
+      "cropRectangle": [
+        297,
+        192,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "fe2e4d7713dfc9aca23fbc559ec7eb850133eaf8edbb1e05d83e933e001a929d",
+        "inkCount": 42,
+        "emptyRows": [
+          4
+        ]
+      },
+      "point": [
+        297,
+        188.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "7ede911b671412f9301584ceb35a53143cce93bfefccc1bf80422068f8a235fb",
+        "bytes": 98849,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper-middle grid at296–297/192. The1188→1187shape-only reverse confusion is explicitly stopped; direct source context distinguishes the selected group from the other candidate at74/331."
+    },
+    {
+      "frame": 1189,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "bfd19b52dbf762c63ab8daa64d8ead07c35b149c915b4ca57466862a6b111749",
+        "inkCount": 42,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "a9f8e066c11e522ad9adb6952ae165375ace5ede1e74619541a5cf30f5ee484f",
+        "bytes": 92970,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1190,
+      "sourceCandidateIndex": 4,
+      "cropRectangle": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "bfd19b52dbf762c63ab8daa64d8ead07c35b149c915b4ca57466862a6b111749",
+        "inkCount": 42,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "7d86b5e6f8efa1f2d790a0cea05c8196bdb3015a54810b16e4ef6a694c7c2fd1",
+        "bytes": 103943,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1191,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "48315850c776a79919b1c5dbb846ac7bc79b3af7e73c7e43fc36ea57e77802d7",
+        "inkCount": 41,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "e58fb28d9579bdfd64946951e97229febd1f50c3570d2f714902ac3ce8fc828e",
+        "bytes": 99462,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1192,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        186,
+        53,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "7b61aa049dc3cd8096bf8cc140ce42192dc0696bffab5330ea316b8d40afe98d",
+        "inkCount": 42,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        186,
+        49.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2",
+        "bytes": 98938,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1192,
+        "relativePath": "frame-1192.png",
+        "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2",
+        "bytes": 98938,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1192.png"
+      },
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1193,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        185,
+        53,
+        18,
+        6
+      ],
+      "maskMetadata": {
+        "width": 18,
+        "height": 6,
+        "rowTextSHA256": "6585f80af487df97c576af6cf46e92eaa67830f22c540630ed3ecb52a9a240c7",
+        "inkCount": 45,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        185,
+        49.5,
+        18
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "6668c25b0d578d5ecc6839ed93af8ab9ce2d3b2b6b921f3bdd29c572b7388ace",
+        "bytes": 96224,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1194,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        185,
+        53,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "683cb451330392b0f9b94e25405c184563a7eef05aae823d47ccc4cd758ab2ea",
+        "inkCount": 47,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        185,
+        49.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "232c95bad8f43c4149e942f9bae01372789ecf158fe755ff542e488a3bf47fa6",
+        "bytes": 98712,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1195,
+      "sourceCandidateIndex": 1,
+      "cropRectangle": [
+        185,
+        53,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "c0adf032132ea44270b5e78dfccc893b6e3f3270030932aac98b4c1654763b34",
+        "inkCount": 48,
+        "emptyRows": []
+      },
+      "point": [
+        185,
+        49.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "a9c4fc434ac24435244ce8a8372d71db15840f80dcbc701b702a434f817e5a09",
+        "bytes": 96780,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is at the top of the vertical column near185–186/52–53. It remains isolated while surrounding words and the lower-right score move. The1193raw18pxwidth is retained as source raster variation, not forced to17."
+    },
+    {
+      "frame": 1196,
+      "sourceCandidateIndex": 2,
+      "cropRectangle": [
+        95,
+        107,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "b0182d29d2f19a75a6fc093ae856482924ec6c091871235317ac3beeaed96380",
+        "inkCount": 41,
+        "emptyRows": [
+          0,
+          5,
+          6
+        ]
+      },
+      "point": [
+        95,
+        103.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b",
+        "bytes": 88635,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1196,
+        "relativePath": "frame-1196.png",
+        "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b",
+        "bytes": 88635,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1196.png"
+      },
+      "context": "The group is in the upper-left paragraph at95/107, isolated within the first line after the column-to-paragraph cut."
+    },
+    {
+      "frame": 1203,
+      "sourceCandidateIndex": 66,
+      "cropRectangle": [
+        186,
+        205,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "8fdf4421b7b07fbbf2a7894d069cffc3edf3fd858202d5f9f040512973e63035",
+        "inkCount": 41,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        186,
+        201.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "02989af3ff21a90464fca26411197f746eed95be24ff6c2c107ecae5da71c9bf",
+        "bytes": 90952,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper compact grid around185–186/204–205, separated from neighboring words; literal raw antialias/bounds variation is retained."
+    },
+    {
+      "frame": 1204,
+      "sourceCandidateIndex": 69,
+      "cropRectangle": [
+        186,
+        204,
+        16,
+        8
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 8,
+        "rowTextSHA256": "e4c709d0f211ab10e29cc666e0ae5e8c0cb20e92c670ce05b1ff039887459a03",
+        "inkCount": 40,
+        "emptyRows": [
+          0,
+          6,
+          7
+        ]
+      },
+      "point": [
+        186,
+        200.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85",
+        "bytes": 90146,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1204,
+        "relativePath": "frame-1204.png",
+        "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85",
+        "bytes": 90146,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1204.png"
+      },
+      "context": "The group is in the upper compact grid around185–186/204–205, separated from neighboring words; literal raw antialias/bounds variation is retained."
+    },
+    {
+      "frame": 1205,
+      "sourceCandidateIndex": 68,
+      "cropRectangle": [
+        185,
+        204,
+        17,
+        8
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 8,
+        "rowTextSHA256": "1550c2d1d2eed7f80fc4c5d4d1918eb162d5b4a6456be22086107c7ce045cba2",
+        "inkCount": 44,
+        "emptyRows": [
+          0,
+          6,
+          7
+        ]
+      },
+      "point": [
+        185,
+        200.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "64909f1cfb4b6409f126b9c0e16358e4da374e31efc0746edae079325a483784",
+        "bytes": 90320,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper compact grid around185–186/204–205, separated from neighboring words; literal raw antialias/bounds variation is retained."
+    },
+    {
+      "frame": 1206,
+      "sourceCandidateIndex": 69,
+      "cropRectangle": [
+        186,
+        204,
+        16,
+        7
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 7,
+        "rowTextSHA256": "2d692d50d650a149bf13bb9877bae52c1567a645ffeccdd92055d22ff9fa2256",
+        "inkCount": 41,
+        "emptyRows": [
+          0,
+          6
+        ]
+      },
+      "point": [
+        186,
+        200.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "f4fe2d0424e5d18035cfa438a9a87b9d39d54ccfd347333e48a48498183cb0ce",
+        "bytes": 93949,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is in the upper compact grid around185–186/204–205, separated from neighboring words; literal raw antialias/bounds variation is retained."
+    },
+    {
+      "frame": 1207,
+      "sourceCandidateIndex": 68,
+      "cropRectangle": [
+        185,
+        413,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "b745c9505100e57e845bd8ad09d97e2e837ed77f373cf33aa789309251beb279",
+        "inkCount": 38,
+        "emptyRows": []
+      },
+      "point": [
+        185,
+        409.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "50c0d9b054b997515315e49ae3614e58f809f81333227959637365e17a90946c",
+        "bytes": 96965,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The source group is now on the lower-left portion of the central paragraph near185/413; the selected isolated box follows that local paragraph context."
+    },
+    {
+      "frame": 1208,
+      "sourceCandidateIndex": 63,
+      "cropRectangle": [
+        185,
+        413,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "af6eec924703490b8699b4c2008a4f44beb332d2279c3e87d81e002a7833a94b",
+        "inkCount": 35,
+        "emptyRows": [
+          0
+        ]
+      },
+      "point": [
+        185,
+        409.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "dc1136edc592fd4bd8ca7861a4228d4256cbe515ca9e16157c9d9b9a08a1acdf",
+        "bytes": 96308,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1208,
+        "relativePath": "frame-1208.png",
+        "sha256": "dc1136edc592fd4bd8ca7861a4228d4256cbe515ca9e16157c9d9b9a08a1acdf",
+        "bytes": 96308,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1208.png"
+      },
+      "context": "The source group is now on the lower-left portion of the central paragraph near185/413; the selected isolated box follows that local paragraph context."
+    },
+    {
+      "frame": 1213,
+      "sourceCandidateIndex": 44,
+      "cropRectangle": [
+        408,
+        344,
+        17,
+        6
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "ed73326e0fd3649f520da0ef0f7636efe9d4d3ae7adae412a8152fbd20fc03ed",
+        "inkCount": 38,
+        "emptyRows": [
+          5
+        ]
+      },
+      "point": [
+        408,
+        340.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "49aaf338e6442c291f65fe4d09e68dfa8e0872eeabbf50b098fd4a6332aff97a",
+        "bytes": 91182,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1213,
+        "relativePath": "frame-1213.png",
+        "sha256": "49aaf338e6442c291f65fe4d09e68dfa8e0872eeabbf50b098fd4a6332aff97a",
+        "bytes": 91182,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1213.png"
+      },
+      "context": "The target source glyph group is isolated in the right grid column around408/344. The backward mask-only walk wrongly chose a different group before1213; direct source review rejects1210–1212."
+    },
+    {
+      "frame": 1214,
+      "sourceCandidateIndex": 44,
+      "cropRectangle": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "9545681909e02c83355148e43de6c09e80d622f641907b79e894df0136668b3a",
+        "inkCount": 37,
+        "emptyRows": []
+      },
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "258c6100342d92b4405c925232bce95c5dd07d1e298416f0d27751d5f24ba782",
+        "bytes": 94701,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1214,
+        "relativePath": "frame-1214.png",
+        "sha256": "258c6100342d92b4405c925232bce95c5dd07d1e298416f0d27751d5f24ba782",
+        "bytes": 94701,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1214.png"
+      },
+      "context": "The target source glyph group is isolated in the right grid column around408/344. The backward mask-only walk wrongly chose a different group before1213; direct source review rejects1210–1212."
+    },
+    {
+      "frame": 1215,
+      "sourceCandidateIndex": 38,
+      "cropRectangle": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "447a14cffecca6b9d23de6ad431db26d28d39f96103a2b9e583772695e8811a5",
+        "inkCount": 39,
+        "emptyRows": []
+      },
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "0327bf2a23434235d9f04ffbe7e116a12a7ce65d4a8f3a7bada256fa10b4d466",
+        "bytes": 96684,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1215,
+        "relativePath": "frame-1215.png",
+        "sha256": "0327bf2a23434235d9f04ffbe7e116a12a7ce65d4a8f3a7bada256fa10b4d466",
+        "bytes": 96684,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1215.png"
+      },
+      "context": "The target source glyph group is isolated in the right grid column around408/344. The backward mask-only walk wrongly chose a different group before1213; direct source review rejects1210–1212."
+    },
+    {
+      "frame": 1216,
+      "sourceCandidateIndex": 42,
+      "cropRectangle": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "8bb26186acbdc9df727c18e35bd5c4acb0e0175e112957b019fa38223ff3309d",
+        "inkCount": 41,
+        "emptyRows": []
+      },
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "f887bdf47189f7a17565b010f907187f41969ae99759f0534c5500453358fa6d",
+        "bytes": 99689,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The target source glyph group is isolated in the right grid column around408/344. The backward mask-only walk wrongly chose a different group before1213; direct source review rejects1210–1212."
+    },
+    {
+      "frame": 1217,
+      "sourceCandidateIndex": 45,
+      "cropRectangle": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 5,
+        "rowTextSHA256": "dd7841aca5d73494937de292d9da450df4ea032df06c7eb17150603c49004a68",
+        "inkCount": 42,
+        "emptyRows": []
+      },
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90",
+        "bytes": 95736,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1217,
+        "relativePath": "frame-1217.png",
+        "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90",
+        "bytes": 95736,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1217.png"
+      },
+      "context": "The target source glyph group is isolated in the right grid column around408/344. The backward mask-only walk wrongly chose a different group before1213; direct source review rejects1210–1212."
+    },
+    {
+      "frame": 1218,
+      "sourceCandidateIndex": 64,
+      "cropRectangle": [
+        407,
+        609,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "873cac01484c87b79242a836efae38ed2503df8ff00c9cac4b669b8084b29bc0",
+        "inkCount": 41,
+        "emptyRows": []
+      },
+      "point": [
+        407,
+        605.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "4bd84383f475726f645bf90a222a42462259a340af4162a05baabd8e84eb2e05",
+        "bytes": 104584,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The same source group has jumped to the lower-right grid near407–408/608–609, with separated words above/below. Source frames confirm the late placement and ink variation."
+    },
+    {
+      "frame": 1219,
+      "sourceCandidateIndex": 67,
+      "cropRectangle": [
+        407,
+        608,
+        17,
+        7
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 7,
+        "rowTextSHA256": "51a9b9b32fb62ed42ec77761160c236537a13b18eabad7cb350ba613dfa4d7e6",
+        "inkCount": 44,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        407,
+        604.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "11ff8c0bfe9580c2a0ae329bbba460bd71940a0ff4d6ce29e04b76474640b945",
+        "bytes": 104082,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The same source group has jumped to the lower-right grid near407–408/608–609, with separated words above/below. Source frames confirm the late placement and ink variation."
+    },
+    {
+      "frame": 1220,
+      "sourceCandidateIndex": 74,
+      "cropRectangle": [
+        408,
+        608,
+        16,
+        7
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 7,
+        "rowTextSHA256": "d513278b48441b209138b68a84ac99e37ef40fa7fa8c540d1b8cf825cd84145d",
+        "inkCount": 45,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        408,
+        604.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049",
+        "bytes": 102276,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1220,
+        "relativePath": "frame-1220.png",
+        "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049",
+        "bytes": 102276,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1220.png"
+      },
+      "context": "The same source group has jumped to the lower-right grid near407–408/608–609, with separated words above/below. Source frames confirm the late placement and ink variation."
+    },
+    {
+      "frame": 1221,
+      "sourceCandidateIndex": 66,
+      "cropRectangle": [
+        408,
+        608,
+        16,
+        7
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 7,
+        "rowTextSHA256": "b5ed642437c20a86c343a1db5a033fde956187853023719b00e1c9ca031127ab",
+        "inkCount": 43,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "point": [
+        408,
+        604.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "31fc93b006358b0ca8753a4bb06684278c6aa8562f02328c1201d39ab026c663",
+        "bytes": 99151,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The same source group has jumped to the lower-right grid near407–408/608–609, with separated words above/below. Source frames confirm the late placement and ink variation."
+    },
+    {
+      "frame": 1222,
+      "sourceCandidateIndex": 54,
+      "cropRectangle": [
+        407,
+        608,
+        17,
+        5
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 5,
+        "rowTextSHA256": "55657a888ecf51a2d6db6ded16608a5732804c5709f802fd10153d853f1f89df",
+        "inkCount": 49,
+        "emptyRows": []
+      },
+      "point": [
+        407,
+        604.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "15e3fe3e2666499f013a282c9ecbcbeba6f4647fac45171b8bf0c088814d353a",
+        "bytes": 100174,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The same source group has jumped to the lower-right grid near407–408/608–609, with separated words above/below. Source frames confirm the late placement and ink variation."
+    },
+    {
+      "frame": 1224,
+      "sourceCandidateIndex": 54,
+      "cropRectangle": [
+        241,
+        526,
+        16,
+        4
+      ],
+      "maskMetadata": {
+        "width": 16,
+        "height": 4,
+        "rowTextSHA256": "0b1155411a4c83185408e654fa07376935d847dd4afc5037e4d95a76e8594c8f",
+        "inkCount": 38,
+        "emptyRows": []
+      },
+      "point": [
+        241,
+        522.5,
+        16
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad",
+        "bytes": 89448,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1224,
+        "relativePath": "frame-1224.png",
+        "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad",
+        "bytes": 89448,
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1224.png"
+      },
+      "context": "The group is isolated at241/526in the final pale rearrangement; the last displayed source state is retained literally before1226darkcut."
+    },
+    {
+      "frame": 1225,
+      "sourceCandidateIndex": 52,
+      "cropRectangle": [
+        241,
+        526,
+        17,
+        4
+      ],
+      "maskMetadata": {
+        "width": 17,
+        "height": 4,
+        "rowTextSHA256": "21bdde0a853cfec13bdfae0c9bb4236133acfe0f9b661d142ffbfb520b79eed8",
+        "inkCount": 43,
+        "emptyRows": []
+      },
+      "point": [
+        241,
+        522.5,
+        17
+      ],
+      "sourceFrameProvenance": {
+        "sha256": "0c0b691e705497a6f335b13b212435ef489d89de7098dc1455365b067f9914a9",
+        "bytes": 88438,
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "context": "The group is isolated at241/526in the final pale rearrangement; the last displayed source state is retained literally before1226darkcut."
+    }
+  ],
+  "rejected": [
+    {
+      "frame": 1210,
+      "rejectedCandidateIndex": 64,
+      "rejectedCropRectangle": [
+        241,
+        483,
+        17,
+        6
+      ],
+      "rejectedMaskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "4ad880e78183de4d3e9592200f4a844db75fe336331d5211fe91b5aeadea66cd",
+        "inkCount": 40
+      },
+      "reason": "REJECT: proposed241/483box belongs to a visibly different short glyph group. The target seed glyph group appears separately one row below near241/540. Do not adopt an alternate box yet.",
+      "sourceFrameProvenance": {
+        "sha256": "4c23c00f2744367c3488fe3dfefd92cf6793c50fbeedcb8f16da0c82651bbb46",
+        "bytes": 100394,
+        "width": 480,
+        "height": 852
+      },
+      "runtimeAdmission": null
+    },
+    {
+      "frame": 1211,
+      "rejectedCandidateIndex": 62,
+      "rejectedCropRectangle": [
+        241,
+        483,
+        17,
+        6
+      ],
+      "rejectedMaskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "1de36b80568bf045bab3997b0f51cc526cee2a441565e90489f89906e4970424",
+        "inkCount": 39
+      },
+      "reason": "REJECT: proposed241/483box belongs to a visibly different short glyph group. The target seed glyph group appears separately one row below near241/540. Do not adopt an alternate box yet.",
+      "sourceFrameProvenance": {
+        "sha256": "89c50dcdb7a14115af5325a6b8b6e74d65fed461fa987fce69d28d4a63e6fe6c",
+        "bytes": 98674,
+        "width": 480,
+        "height": 852
+      },
+      "runtimeAdmission": null
+    },
+    {
+      "frame": 1212,
+      "rejectedCandidateIndex": 62,
+      "rejectedCropRectangle": [
+        241,
+        483,
+        17,
+        6
+      ],
+      "rejectedMaskMetadata": {
+        "width": 17,
+        "height": 6,
+        "rowTextSHA256": "98b570d23a29e097ceb8330d35dc2e9cf996b25d574a5ae8b4f3bf90dadfcb22",
+        "inkCount": 38
+      },
+      "reason": "REJECT: proposed241/483box belongs to a visibly different short glyph group. The target seed glyph group appears separately one row below near241/540. Do not adopt an alternate box yet.",
+      "sourceFrameProvenance": {
+        "sha256": "a317aeb08968e4b3b30398b2d343453557f114b9be032148a3f6e90aca6d842f",
+        "bytes": 98834,
+        "width": 480,
+        "height": 852
+      },
+      "runtimeAdmission": null
+    }
+  ],
+  "nullFrames": [
+    1156,
+    1157,
+    1158,
+    1159,
+    1160,
+    1166,
+    1179,
+    1180,
+    1181,
+    1182,
+    1183,
+    1184,
+    1197,
+    1198,
+    1199,
+    1200,
+    1201,
+    1202,
+    1209,
+    1210,
+    1211,
+    1212,
+    1223
+  ],
+  "comparisonImages": [
+    {
+      "frame": 1152,
+      "relativePath": "frame-1152.png",
+      "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef",
+      "bytes": 44202,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1152.png"
+    },
+    {
+      "frame": 1154,
+      "relativePath": "frame-1154.png",
+      "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce",
+      "bytes": 50456,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1154.png"
+    },
+    {
+      "frame": 1159,
+      "relativePath": "frame-1159.png",
+      "sha256": "0efbfacaebda54b98b62d896bb75b73fa68342e3a6224e113a00883eb2f81694",
+      "bytes": 51262,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1159.png"
+    },
+    {
+      "frame": 1165,
+      "relativePath": "frame-1165.png",
+      "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f",
+      "bytes": 43851,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1165.png"
+    },
+    {
+      "frame": 1169,
+      "relativePath": "frame-1169.png",
+      "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457",
+      "bytes": 73857,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1169.png"
+    },
+    {
+      "frame": 1170,
+      "relativePath": "frame-1170.png",
+      "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e",
+      "bytes": 79241,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1170.png"
+    },
+    {
+      "frame": 1171,
+      "relativePath": "frame-1171.png",
+      "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491",
+      "bytes": 69391,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1171.png"
+    },
+    {
+      "frame": 1172,
+      "relativePath": "frame-1172.png",
+      "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c",
+      "bytes": 79069,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1172.png"
+    },
+    {
+      "frame": 1173,
+      "relativePath": "frame-1173.png",
+      "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291",
+      "bytes": 78395,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1173.png"
+    },
+    {
+      "frame": 1176,
+      "relativePath": "frame-1176.png",
+      "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc",
+      "bytes": 87602,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1176.png"
+    },
+    {
+      "frame": 1192,
+      "relativePath": "frame-1192.png",
+      "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2",
+      "bytes": 98938,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1192.png"
+    },
+    {
+      "frame": 1196,
+      "relativePath": "frame-1196.png",
+      "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b",
+      "bytes": 88635,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1196.png"
+    },
+    {
+      "frame": 1199,
+      "relativePath": "frame-1199.png",
+      "sha256": "6f11c08429d8f62df671d3ddf6aa66f1e7a81db1c404b9d7b6bbf56a905a5d9c",
+      "bytes": 89425,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1199.png"
+    },
+    {
+      "frame": 1204,
+      "relativePath": "frame-1204.png",
+      "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85",
+      "bytes": 90146,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1204.png"
+    },
+    {
+      "frame": 1208,
+      "relativePath": "frame-1208.png",
+      "sha256": "dc1136edc592fd4bd8ca7861a4228d4256cbe515ca9e16157c9d9b9a08a1acdf",
+      "bytes": 96308,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1208.png"
+    },
+    {
+      "frame": 1209,
+      "relativePath": "frame-1209.png",
+      "sha256": "48da06b3244ece4f5700d873d9de38a5da7c99712084a1377e7c1225891a3b72",
+      "bytes": 93218,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1209.png"
+    },
+    {
+      "frame": 1211,
+      "relativePath": "frame-1211.png",
+      "sha256": "89c50dcdb7a14115af5325a6b8b6e74d65fed461fa987fce69d28d4a63e6fe6c",
+      "bytes": 98674,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1211.png"
+    },
+    {
+      "frame": 1213,
+      "relativePath": "frame-1213.png",
+      "sha256": "49aaf338e6442c291f65fe4d09e68dfa8e0872eeabbf50b098fd4a6332aff97a",
+      "bytes": 91182,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1213.png"
+    },
+    {
+      "frame": 1214,
+      "relativePath": "frame-1214.png",
+      "sha256": "258c6100342d92b4405c925232bce95c5dd07d1e298416f0d27751d5f24ba782",
+      "bytes": 94701,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1214.png"
+    },
+    {
+      "frame": 1215,
+      "relativePath": "frame-1215.png",
+      "sha256": "0327bf2a23434235d9f04ffbe7e116a12a7ce65d4a8f3a7bada256fa10b4d466",
+      "bytes": 96684,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1215.png"
+    },
+    {
+      "frame": 1217,
+      "relativePath": "frame-1217.png",
+      "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90",
+      "bytes": 95736,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1217.png"
+    },
+    {
+      "frame": 1220,
+      "relativePath": "frame-1220.png",
+      "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049",
+      "bytes": 102276,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1220.png"
+    },
+    {
+      "frame": 1224,
+      "relativePath": "frame-1224.png",
+      "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad",
+      "bytes": 89448,
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1224.png"
+    }
+  ],
+  "sourceMediaPolicy": "The focused browser reuses only the existing23 repository comparison PNGs. Other source-frame and crop-mask byte hashes are provenance, not file dependencies. No additional source pixels or raw crop-mask bitmaps, fonts or media assets are included.",
+  "limits": [
+    "The81 remaining actors retain representative holds.",
+    "The23 actor3 nulls restore the representative baseline; no last-measured holding or1210–1212 replacement is admitted.",
+    "Recorded24fps samples do not establish easing or unseen between-frame behavior."
+  ]
+}

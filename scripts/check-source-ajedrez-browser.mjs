@@ -7,6 +7,18 @@ import {fileURLToPath} from 'node:url'
 import {chromium} from '@playwright/test'
 const require=createRequire(import.meta.url),ts=require('typescript'),repo=fileURLToPath(new URL('../',import.meta.url)),file=process.env.MONARCHIC_AJEDREZ_SOURCE_PATH??path.join(repo,'docs/design-studies/code-components/SourceAjedrezSequence.tsx'),source=fs.readFileSync(file,'utf8'),hash=b=>crypto.createHash('sha256').update(b).digest('hex'),dir=process.env.MONARCHIC_AJEDREZ_EVIDENCE_DIR??'/tmp/monarchic-source-ajedrez-browser'
 fs.mkdirSync(dir,{recursive:true})
+if(process.env.MONARCHIC_AJEDREZ_GRID_ONLY&&(source.includes('AJEDREZ_TYPE_ACTOR3_FITS')||source.includes('function ajedrezTypeTrackedActor('))){
+ process.env.MONARCHIC_AJEDREZ_ACTOR3_EVIDENCE_DIR??=process.env.MONARCHIC_AJEDREZ_EVIDENCE_DIR??dir
+ process.env.MONARCHIC_AJEDREZ_WORD_EXTENSION_EVIDENCE_DIR??=process.env.MONARCHIC_AJEDREZ_EVIDENCE_DIR??dir
+ console.log(JSON.stringify({compatibility:'source-ajedrez-browser GRID_ONLY',scope:source.includes('AJEDREZ_TYPE_ACTOR3_FITS')?'actor3-additive-51':'historical-two-track-40'}))
+ await import('./check-source-ajedrez-word-trajectory.mjs')
+ process.exit(0)
+}
+if(source.includes('AJEDREZ_TYPE_ACTOR3_FITS')){
+ process.env.MONARCHIC_AJEDREZ_ACTOR3_EVIDENCE_DIR??=path.join(dir,'actor3-additive-51')
+ console.log(JSON.stringify({compatibility:'source-ajedrez-browser grid prepass',scope:'actor3-additive-51',legacyWork:'Controller/host/photo scopes continue after this focused grid suite closes its browser'}))
+ await import('./check-source-ajedrez-actor3-additive.mjs')
+}
 const react=fs.readFileSync(path.join(path.dirname(require.resolve('react/package.json')),'umd/react.development.js'),'utf8'),reactDOM=fs.readFileSync(path.join(path.dirname(require.resolve('react-dom/package.json')),'umd/react-dom.development.js'),'utf8'),js=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.React}}).outputText
 const contract=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/hero-behavior/source-contracts/HERO-002.json'))),checks=[],errors=[],reports=[],check=(n,c)=>{assert.ok(c,n);checks.push(n)},browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH,ignoreDefaultArgs:['--hide-scrollbars']})
 try{for(const layout of(process.env.MONARCHIC_AJEDREZ_FIT_ONLY||process.env.MONARCHIC_AJEDREZ_HOST_ONLY||process.env.MONARCHIC_AJEDREZ_GRID_ONLY?[]:[{name:'desktop',width:1280,height:1000},{name:'phone',width:390,height:900}])){
@@ -180,7 +192,8 @@ if(!process.env.MONARCHIC_AJEDREZ_GRID_ONLY){
 
 // Actual native-component adapters generate their own internal text layers;
 // this fixture does not depend on forwarding props.children through an instance.
-{
+// Actor3 sources explicitly delegate this grid scope to the completed51-case prepass.
+if(!source.includes('AJEDREZ_TYPE_ACTOR3_FITS')){
     const fixture=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/assets/source-ajedrez-type-grid-provenance.json')))
     const page=await browser.newPage({viewport:{width:1100,height:1100}})
     page.setDefaultTimeout(5000);page.on('pageerror',error=>errors.push('type-grid:'+error.message))
@@ -216,7 +229,7 @@ if(!process.env.MONARCHIC_AJEDREZ_GRID_ONLY){
     },fixture)
     const flush=async(ms=100)=>{await page.clock.runFor(ms);await page.waitForTimeout(20);await page.evaluate(()=>ReactDOM.flushSync(()=>{}))}
     await flush(100)
-    const measuredFits=JSON.parse(fs.readFileSync(path.join(repo,'scripts/fixtures/source-ajedrez-two-track-extension.json')))
+    const measuredFits=source.includes('function ajedrezTypeTrackedActor(')?JSON.parse(fs.readFileSync(path.join(repo,'scripts/fixtures/source-ajedrez-two-track-extension.json'))):source.includes('AJEDREZ_TYPE_MEASURED_FITS')?JSON.parse(fs.readFileSync(path.join(repo,'scripts/fixtures/source-ajedrez-measured-word-fits.json'))):{rows:[]}
     const frameAt=time=>Math.floor(Math.max(0,time)*24+1e-7)
     const poseAt=time=>fixture.poses.filter(pose=>pose.activationFrame<=Math.max(1152,frameAt(time))).at(-1)
     const pointAt=(time,index)=>{
@@ -294,7 +307,7 @@ if(!process.env.MONARCHIC_AJEDREZ_GRID_ONLY){
     await page.close()
 }
 
-check('No actual React/browser errors',errors.length===0);const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,reports,errors,mode:process.env.MONARCHIC_AJEDREZ_GRID_ONLY?'bounded-native-type-grid':process.env.MONARCHIC_AJEDREZ_HOST_ONLY?'bounded-responsive-native-host':process.env.MONARCHIC_AJEDREZ_FIT_ONLY?'bounded-phone-fit-and-responsive-host':'full-sequence-phone-fit-and-responsive-host',clock:'Public Playwright clock drives actual ReactDOM/Chromium. Full mode observes every37phase midpoint; responsive-host mode also completes the52.314558s film after native host replacement.',scope:'Controller behavior and preservation of native groups/opaque asset bindings, uniform Phone scrollbar fitting and real responsive host replacement. Owned SVG/label fixtures are test assets, not source art. Does not establish source-film photographic motion/audio fidelity or Framer persistence.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,cases:reports.length,checks:checks.length,sourceSHA256:result.sourceSHA256,evidence:dir},null,2))}catch(e){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({message:String(e),checks,errors},null,2)+'\n');throw e}finally{await browser.close()}
+check('No actual React/browser errors',errors.length===0);const result={passed:true,sourceSHA256:hash(source),testSHA256:hash(fs.readFileSync(import.meta.filename)),checks,reports,errors,mode:process.env.MONARCHIC_AJEDREZ_GRID_ONLY?'bounded-native-type-grid':process.env.MONARCHIC_AJEDREZ_HOST_ONLY?'bounded-responsive-native-host':process.env.MONARCHIC_AJEDREZ_FIT_ONLY?'bounded-phone-fit-and-responsive-host':'full-sequence-phone-fit-and-responsive-host',clock:'Public Playwright clock drives actual ReactDOM/Chromium. Full mode observes every37phase midpoint; responsive-host mode also completes the52.314558s film after native host replacement.',scope:'Controller behavior and preservation of native groups/opaque asset bindings, uniform Phone scrollbar fitting and real responsive host replacement. Owned SVG/label fixtures are test assets, not source art. Does not establish source-film photographic motion/audio fidelity or Framer persistence.'};fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({passed:true,cases:reports.length,checks:checks.length,sourceSHA256:result.sourceSHA256,gridScope:source.includes('AJEDREZ_TYPE_ACTOR3_FITS')?'delegated-actor3-additive-51':'historical-grid-33',evidence:dir},null,2))}catch(e){fs.writeFileSync(path.join(dir,'failure.json'),JSON.stringify({message:String(e),checks,errors},null,2)+'\n');throw e}finally{await browser.close()}
 
 // The media aperture is exercised serially with real decoding; fixture defaults
 // to the existing moving WebM so the locked Nix check remains self-contained.

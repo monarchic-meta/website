@@ -4,7 +4,7 @@
   "credit": "Julián Leiss / Ajedrez Film Poem",
   "status": "EXTENDED_TWO_TRACK_SOURCE_AUTHORED_THROUGH753_PREVIEW_RELOAD_OPEN",
   "sourceModule": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/actor3-track-proposal-v1/canonical-validation/historical8ad/SourceAjedrezSequence.tsx",
     "bytes": 205967,
     "sha256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c"
   },
@@ -125,5 +125,22 @@
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/canonical-validation/nix-evaluation.json",
     "bytes": 307,
     "sha256": "acff345f9acf14975e6a6d93d1b7fed8da70b33700aeab2c2e3ef53fe98c964f"
+  },
+  "actor3AdditiveSuccessor": {
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 207862,
+      "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+    },
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-provenance.json",
+      "bytes": 7637,
+      "sha256": "c21e5cfe046715592227d1b8571d0ff433dfbdc848a97319e693cba411b09bb2"
+    },
+    "old144PositionsAnd4GapsExact": true,
+    "currentLiteralPlacements": 195,
+    "currentBaselineGaps": 27,
+    "actualThrough847": true,
+    "actualPreviewAndReload": false
   }
 }

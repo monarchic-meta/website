@@ -1,0 +1,1093 @@
+{
+  "schemaVersion": 1,
+  "status": "SOURCE_REVIEWED51_ACTOR3_RECTANGLE_FITS_23_BASELINE_NULLS",
+  "sourceCredit": "Julián Leiss / Ajedrez Film Poem",
+  "nativeActor": {
+    "wordIndex": 3,
+    "desktopID": "MmQzfs0EV",
+    "phoneID": "IZS406b_VMmQzfs0EV",
+    "independentText": "línea",
+    "semanticIdentityClaim": false
+  },
+  "parent": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 205967,
+    "sha256": "8ad1c7441be41261a8bbfb67e28fd416a9f8f385ca8b96825477daaafef5504c"
+  },
+  "candidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "dataset": {
+    "path": "scripts/fixtures/source-ajedrez-actor3-source-correspondence.json",
+    "bytes": 59574,
+    "sha256": "679fbed7e332c1476ffe806f2b093ddbc47d09a7950dbe4970e76328b52cea89"
+  },
+  "fullSourceReview": {
+    "path": "scripts/fixtures/source-ajedrez-actor3-source-correspondence.json",
+    "bytes": 59574,
+    "sha256": "679fbed7e332c1476ffe806f2b093ddbc47d09a7950dbe4970e76328b52cea89"
+  },
+  "peerEvidence": {
+    "path": "scripts/fixtures/source-ajedrez-actor3-source-correspondence.json",
+    "bytes": 59574,
+    "sha256": "679fbed7e332c1476ffe806f2b093ddbc47d09a7950dbe4970e76328b52cea89"
+  },
+  "inverse": {
+    "path": "docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-inverse.json",
+    "bytes": 3846,
+    "sha256": "104dac832399c4d1e58f660b4599357322360c09eb1b8f785f717bd733519f49"
+  },
+  "sourceBoundsMeaning": "Retained candidate/crop rectangles can contain empty edge rows; these are not certified tight ink bounds or font metrics. Source lexical identity is unknown and independent native caption is unchanged.",
+  "firstFrame": 1152,
+  "lastFrameExclusive": 1226,
+  "admittedPlacements": 51,
+  "nulls": 23,
+  "rows": [
+    {
+      "frame": 1152,
+      "point": [
+        74,
+        297.5,
+        17
+      ],
+      "sourceCandidateIndex": 15,
+      "sourceCandidateBounds": [
+        74,
+        301,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1153,
+      "point": [
+        353,
+        399.5,
+        16
+      ],
+      "sourceCandidateIndex": 61,
+      "sourceCandidateBounds": [
+        353,
+        403,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1154,
+      "point": [
+        353,
+        399.5,
+        16
+      ],
+      "sourceCandidateIndex": 59,
+      "sourceCandidateBounds": [
+        353,
+        403,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1155,
+      "point": [
+        353,
+        398.5,
+        16
+      ],
+      "sourceCandidateIndex": 67,
+      "sourceCandidateBounds": [
+        353,
+        402,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1156,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1157,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1158,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1159,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1160,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1161,
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceCandidateIndex": 78,
+      "sourceCandidateBounds": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1162,
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceCandidateIndex": 82,
+      "sourceCandidateBounds": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1163,
+      "point": [
+        383,
+        534.5,
+        17
+      ],
+      "sourceCandidateIndex": 77,
+      "sourceCandidateBounds": [
+        383,
+        538,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1164,
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceCandidateIndex": 83,
+      "sourceCandidateBounds": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1165,
+      "point": [
+        384,
+        533.5,
+        16
+      ],
+      "sourceCandidateIndex": 78,
+      "sourceCandidateBounds": [
+        384,
+        537,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1166,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1167,
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceCandidateIndex": 79,
+      "sourceCandidateBounds": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1168,
+      "point": [
+        384,
+        534.5,
+        16
+      ],
+      "sourceCandidateIndex": 76,
+      "sourceCandidateBounds": [
+        384,
+        538,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1169,
+      "point": [
+        285,
+        534.5,
+        16
+      ],
+      "sourceCandidateIndex": 80,
+      "sourceCandidateBounds": [
+        285,
+        538,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1170,
+      "point": [
+        157,
+        202.5,
+        16
+      ],
+      "sourceCandidateIndex": 1,
+      "sourceCandidateBounds": [
+        157,
+        206,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1171,
+      "point": [
+        157,
+        202.5,
+        16
+      ],
+      "sourceCandidateIndex": 1,
+      "sourceCandidateBounds": [
+        157,
+        206,
+        16,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1172,
+      "point": [
+        157,
+        201.5,
+        16
+      ],
+      "sourceCandidateIndex": 1,
+      "sourceCandidateBounds": [
+        157,
+        205,
+        16,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1173,
+      "point": [
+        156,
+        201.5,
+        17
+      ],
+      "sourceCandidateIndex": 8,
+      "sourceCandidateBounds": [
+        156,
+        205,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1174,
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        185,
+        67,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1175,
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceCandidateIndex": 3,
+      "sourceCandidateBounds": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1176,
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceCandidateIndex": 3,
+      "sourceCandidateBounds": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1177,
+      "point": [
+        185,
+        63.5,
+        17
+      ],
+      "sourceCandidateIndex": 3,
+      "sourceCandidateBounds": [
+        185,
+        67,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1178,
+      "point": [
+        241,
+        535.5,
+        17
+      ],
+      "sourceCandidateIndex": 41,
+      "sourceCandidateBounds": [
+        241,
+        539,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1179,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1180,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1181,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1182,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1183,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1184,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1185,
+      "point": [
+        296,
+        188.5,
+        17
+      ],
+      "sourceCandidateIndex": 20,
+      "sourceCandidateBounds": [
+        296,
+        192,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1186,
+      "point": [
+        297,
+        188.5,
+        16
+      ],
+      "sourceCandidateIndex": 21,
+      "sourceCandidateBounds": [
+        297,
+        192,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1187,
+      "point": [
+        297,
+        188.5,
+        16
+      ],
+      "sourceCandidateIndex": 24,
+      "sourceCandidateBounds": [
+        297,
+        192,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1188,
+      "point": [
+        297,
+        188.5,
+        17
+      ],
+      "sourceCandidateIndex": 24,
+      "sourceCandidateBounds": [
+        297,
+        192,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1189,
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1190,
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceCandidateIndex": 4,
+      "sourceCandidateBounds": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1191,
+      "point": [
+        186,
+        48.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        186,
+        52,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1192,
+      "point": [
+        186,
+        49.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        186,
+        53,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1193,
+      "point": [
+        185,
+        49.5,
+        18
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        185,
+        53,
+        18,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1194,
+      "point": [
+        185,
+        49.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        185,
+        53,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1195,
+      "point": [
+        185,
+        49.5,
+        17
+      ],
+      "sourceCandidateIndex": 1,
+      "sourceCandidateBounds": [
+        185,
+        53,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1196,
+      "point": [
+        95,
+        103.5,
+        17
+      ],
+      "sourceCandidateIndex": 2,
+      "sourceCandidateBounds": [
+        95,
+        107,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1197,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1198,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1199,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1200,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1201,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1202,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1203,
+      "point": [
+        186,
+        201.5,
+        17
+      ],
+      "sourceCandidateIndex": 66,
+      "sourceCandidateBounds": [
+        186,
+        205,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1204,
+      "point": [
+        186,
+        200.5,
+        16
+      ],
+      "sourceCandidateIndex": 69,
+      "sourceCandidateBounds": [
+        186,
+        204,
+        16,
+        8
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1205,
+      "point": [
+        185,
+        200.5,
+        17
+      ],
+      "sourceCandidateIndex": 68,
+      "sourceCandidateBounds": [
+        185,
+        204,
+        17,
+        8
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1206,
+      "point": [
+        186,
+        200.5,
+        16
+      ],
+      "sourceCandidateIndex": 69,
+      "sourceCandidateBounds": [
+        186,
+        204,
+        16,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1207,
+      "point": [
+        185,
+        409.5,
+        17
+      ],
+      "sourceCandidateIndex": 68,
+      "sourceCandidateBounds": [
+        185,
+        413,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1208,
+      "point": [
+        185,
+        409.5,
+        17
+      ],
+      "sourceCandidateIndex": 63,
+      "sourceCandidateBounds": [
+        185,
+        413,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1209,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1210,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "REJECTED_NUMERIC_PROPOSAL_BASELINE_NULL"
+    },
+    {
+      "frame": 1211,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "REJECTED_NUMERIC_PROPOSAL_BASELINE_NULL"
+    },
+    {
+      "frame": 1212,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "REJECTED_NUMERIC_PROPOSAL_BASELINE_NULL"
+    },
+    {
+      "frame": 1213,
+      "point": [
+        408,
+        340.5,
+        17
+      ],
+      "sourceCandidateIndex": 44,
+      "sourceCandidateBounds": [
+        408,
+        344,
+        17,
+        6
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1214,
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceCandidateIndex": 44,
+      "sourceCandidateBounds": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1215,
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceCandidateIndex": 38,
+      "sourceCandidateBounds": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1216,
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceCandidateIndex": 42,
+      "sourceCandidateBounds": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1217,
+      "point": [
+        408,
+        340.5,
+        16
+      ],
+      "sourceCandidateIndex": 45,
+      "sourceCandidateBounds": [
+        408,
+        344,
+        16,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1218,
+      "point": [
+        407,
+        605.5,
+        17
+      ],
+      "sourceCandidateIndex": 64,
+      "sourceCandidateBounds": [
+        407,
+        609,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1219,
+      "point": [
+        407,
+        604.5,
+        17
+      ],
+      "sourceCandidateIndex": 67,
+      "sourceCandidateBounds": [
+        407,
+        608,
+        17,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1220,
+      "point": [
+        408,
+        604.5,
+        16
+      ],
+      "sourceCandidateIndex": 74,
+      "sourceCandidateBounds": [
+        408,
+        608,
+        16,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1221,
+      "point": [
+        408,
+        604.5,
+        16
+      ],
+      "sourceCandidateIndex": 66,
+      "sourceCandidateBounds": [
+        408,
+        608,
+        16,
+        7
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1222,
+      "point": [
+        407,
+        604.5,
+        17
+      ],
+      "sourceCandidateIndex": 54,
+      "sourceCandidateBounds": [
+        407,
+        608,
+        17,
+        5
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1223,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null,
+      "status": "ORIGINAL_UNRESOLVED_BASELINE_NULL"
+    },
+    {
+      "frame": 1224,
+      "point": [
+        241,
+        522.5,
+        16
+      ],
+      "sourceCandidateIndex": 54,
+      "sourceCandidateBounds": [
+        241,
+        526,
+        16,
+        4
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    },
+    {
+      "frame": 1225,
+      "point": [
+        241,
+        522.5,
+        17
+      ],
+      "sourceCandidateIndex": 52,
+      "sourceCandidateBounds": [
+        241,
+        526,
+        17,
+        4
+      ],
+      "status": "SOURCE_REVIEW_ADMITTED_PENDING_ROOT_PEER_REVIEW"
+    }
+  ],
+  "gapPolicy": "Every null restores current original representative x/y/width; never hold the last measured row.",
+  "newRejectedNulls": [
+    1210,
+    1211,
+    1212
+  ],
+  "originalNulls": [
+    1156,
+    1157,
+    1158,
+    1159,
+    1160,
+    1166,
+    1179,
+    1180,
+    1181,
+    1182,
+    1183,
+    1184,
+    1197,
+    1198,
+    1199,
+    1200,
+    1201,
+    1202,
+    1209,
+    1223
+  ],
+  "preservation": {
+    "oldMeasuredPlacements": 144,
+    "oldNullGaps": {
+      "actor60": [
+        1209
+      ],
+      "actor25": [
+        1213,
+        1214,
+        1215
+      ]
+    },
+    "publicHOCs": 46,
+    "allPublicBodiesByteExact": true,
+    "untrackedActors": 81,
+    "newNativeBindings": 0,
+    "newMedia": 0,
+    "newRendererClockTimer": 0,
+    "weakOwnerAndMasterClockByteExact": true
+  },
+  "negative": {
+    "frame": 1169,
+    "point": [
+      285,
+      534.5,
+      16
+    ],
+    "oldRepresentative": [
+      157,
+      201.5,
+      16
+    ],
+    "minimumPositionError": 350
+  },
+  "rejectedNumericFrames": [
+    1210,
+    1211,
+    1212
+  ]
+}
