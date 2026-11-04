@@ -1355,3 +1355,132 @@ export function withFormatDaughterSparks(Component: ComponentType<LayerProps>): 
             onKeyDown={(event: React.KeyboardEvent<HTMLElement>) => { props.onKeyDown?.(event); caller("key", event) }} />
     }) as NativeLayer
 }
+
+/** Source inspiration — HERO-013 / FORMAT, Obys × DES: the separate back nav.
+ * Retained ed() thresholds and CSS timing; source-supported geometry only.
+ * The existing viewport invalidations replace the source's ambient GSAP ticker.
+ * A transparent editable native probe supplies the existing FooterFlow's top;
+ * all pairing uses our own forwarded refs and public source-root marker.
+ * The four old mode handlers/stores remain authoritative, including Sparks50.
+ * Missing root/probe forwarding fails closed. Phone/coarse stays behind the
+ * source splash; hidden and reduced-motion lifecycle policies are explicit fits.
+ */
+type FormatBackWorld = {
+    root: HTMLElement
+    navs: Set<() => void>
+    probes: Map<object, HTMLElement>
+    notify: () => void
+    footer: () => HTMLElement | null
+    release: () => void
+}
+type FormatBackState = { shown: boolean; lastY: number; hold: boolean }
+type FormatBackContextValue = { unit: number; ink: string; frozen: boolean; reduced: boolean }
+const FORMAT_BACK_REVISION = {}, FORMAT_BACK_ROOT = "[data-format-source-height]"
+const formatBackWorlds = new WeakMap<HTMLElement, FormatBackWorld>()
+const FormatBackContext = React.createContext<FormatBackContextValue>({ unit: 1, ink: "#000000", frozen: true, reduced: false })
+function formatBackRoot(node: HTMLElement) { return node.closest<HTMLElement>(FORMAT_BACK_ROOT) }
+function formatBackWorld(root: HTMLElement): FormatBackWorld {
+    const old = formatBackWorlds.get(root); if (old) return old
+    const navs = new Set<() => void>(), probes = new Map<object, HTMLElement>()
+    const world: FormatBackWorld = {
+        root, navs, probes,
+        notify: () => { for (const notify of Array.from(navs)) notify() },
+        footer: () => { const live = Array.from(probes.values()).filter(node => node.isConnected && formatBackRoot(node) === root); return live.length === 1 ? live[0] : null },
+        release: () => { if (!navs.size && !probes.size && formatBackWorlds.get(root) === world) formatBackWorlds.delete(root) },
+    }
+    formatBackWorlds.set(root, world); return world
+}
+function formatBackDecision(shown: boolean, y: number, previousY: number, height: number, footerTop: number | null, hold: boolean) {
+    if (y < height * 2 || (footerTop !== null && footerTop < height)) return false
+    const delta = y - previousY
+    return delta < -2 ? true : delta > 2 && !hold ? false : shown
+}
+function useFormatBackHost(ref: React.ForwardedRef<HTMLElement>) {
+    const [node, setNode] = React.useState<HTMLElement | null>(null), current = React.useRef<HTMLElement | null>(null), caller = React.useRef(ref)
+    const bind = React.useCallback((next: HTMLElement | null) => { current.current = next; setNode(old => old === next ? old : next); formatDaughterRef(caller.current, next) }, [])
+    useFormatDaughterLayoutEffect(() => { if (caller.current !== ref) { formatDaughterRef(caller.current, null); caller.current = ref; formatDaughterRef(ref, current.current) } }, [ref])
+    return { node, bind }
+}
+function formatBackCall(handler: unknown, event: unknown) { if (typeof handler === "function") (handler as (event: unknown) => void)(event) }
+function formatBackFrozen() { return formatDaughterFrozen(useIsStaticRenderer()) }
+
+export function withFormatBackNavigation(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = formatBackFrozen(), { node, bind } = useFormatBackHost(ref), [hidden, setHidden] = React.useState(false), [reduced, setReduced] = React.useState(false), [shown, setShown] = React.useState(false), [bridge, setBridge] = React.useState("awaiting-root")
+        const state = React.useRef<FormatBackState>({ shown: false, lastY: 0, hold: false }), refresh = React.useRef<() => void>(() => {})
+        const view = React.useSyncExternalStore(frozen || hidden ? subscribeFrozen : subscribeViewport, frozen || hidden ? () => SERVER_VIEWPORT : () => viewport, () => SERVER_VIEWPORT)
+        useFormatDaughterLayoutEffect(() => {
+            state.current = { shown: false, lastY: typeof window === "undefined" ? 0 : window.scrollY, hold: false }; setShown(false)
+            if (!node || frozen) { setBridge("frozen"); return }
+            const root = formatBackRoot(node)
+            if (!root) { setBridge("awaiting-root"); return }
+            let active = true
+            const world = formatBackWorld(root), splash = window.matchMedia("(width <= 767px), (pointer: coarse)"), motion = window.matchMedia("(prefers-reduced-motion: reduce)")
+            const read = () => {
+                if (!active) return
+                const row = state.current, y = window.scrollY, footer = world.footer(), admitted = node.isConnected && formatBackRoot(node) === root && !document.hidden && !splash.matches
+                const next = admitted && footer ? formatBackDecision(row.shown, y, row.lastY, window.innerHeight, footer.getBoundingClientRect().top, row.hold) : false
+                row.lastY = y; row.shown = next
+                setShown(old => old === next ? old : next); setBridge(footer ? "ready" : "awaiting-footer")
+            }
+            const visibility = () => { setHidden(document.hidden); state.current.lastY = window.scrollY; if (document.hidden) { state.current.shown = false; state.current.hold = false; setShown(false) }; read() }
+            const media = () => { setReduced(motion.matches); state.current.lastY = window.scrollY; if (splash.matches) { state.current.shown = false; state.current.hold = false; setShown(false) }; read() }
+            refresh.current = read; world.navs.add(read)
+            document.addEventListener("visibilitychange", visibility); splash.addEventListener("change", media); motion.addEventListener("change", media)
+            setHidden(document.hidden); setReduced(motion.matches); read()
+            return () => { active = false; refresh.current = () => {}; world.navs.delete(read); world.release(); document.removeEventListener("visibilitychange", visibility); splash.removeEventListener("change", media); motion.removeEventListener("change", media) }
+        }, [node, frozen, FORMAT_BACK_REVISION])
+        useFormatDaughterLayoutEffect(() => { refresh.current() }, [view, hidden])
+        const hold = (value: boolean, handler: unknown, event: { defaultPrevented?: boolean }) => { formatBackCall(handler, event); if (!event.defaultPrevented && !frozen && node?.isConnected) state.current.hold = value }
+        const unit = frozen ? 1 : view.width / 1440, context: FormatBackContextValue = { unit, ink: "#000000", frozen, reduced }
+        const style = frozen ? { ...props.style, visibility: "hidden" as const, pointerEvents: "none" as const } : {
+            ...props.style, position: "fixed" as const, left: 20 * unit, top: 10 * unit, width: 1400, height: 16, zIndex: 50,
+            transform: "none", transformOrigin: "0 0", scale: String(unit), rotate: "0deg", translate: `0px ${shown ? 0 : -28 * unit}px`,
+            visibility: shown ? "visible" as const : "hidden" as const, pointerEvents: shown ? "auto" as const : "none" as const,
+            transition: reduced ? "none" : `translate .45s cubic-bezier(.22,1,.36,1),visibility 0s linear ${shown ? "0s" : ".45s"}`,
+        }
+        return <FormatBackContext.Provider value={context}><Component {...props} ref={bind} data-format-back-nav="source-ed" data-format-back-bridge={frozen ? "frozen" : bridge} data-format-back-shown={!frozen && shown ? "1" : "0"} aria-hidden={frozen || !shown} style={style as IndependentTransforms}
+            onPointerEnter={(event: React.MouseEvent<HTMLElement>) => hold(true, props.onPointerEnter, event)} onPointerLeave={(event: React.MouseEvent<HTMLElement>) => hold(false, props.onPointerLeave, event)}
+            onFocus={(event: React.FocusEvent<HTMLElement>) => hold(true, props.onFocus, event)} onBlur={(event: React.FocusEvent<HTMLElement>) => hold(false, props.onBlur, event)}
+        /></FormatBackContext.Provider>
+    }) as NativeLayer
+}
+
+export function withFormatBackNavigationFooterProbe(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const frozen = formatBackFrozen(), { node, bind } = useFormatBackHost(ref)
+        useFormatDaughterLayoutEffect(() => {
+            if (!node || frozen) return
+            const root = formatBackRoot(node); if (!root) return
+            const world = formatBackWorld(root), token = {}, path: HTMLElement[] = []
+            for (let parent: HTMLElement | null = node; parent; parent = parent.parentElement) { path.push(parent); if (parent === root) break }
+            let active = true
+            const update = () => { if (active) world.notify() }, resize = new ResizeObserver(update), attributes = new MutationObserver(update)
+            const watch = () => { resize.disconnect(); attributes.disconnect(); if (!document.hidden) { resize.observe(node); for (const parent of path) attributes.observe(parent, { attributes: true, attributeFilter: ["style", "class", "hidden"] }) }; update() }
+            world.probes.set(token, node); document.addEventListener("visibilitychange", watch); watch()
+            return () => { active = false; resize.disconnect(); attributes.disconnect(); document.removeEventListener("visibilitychange", watch); world.probes.delete(token); world.notify(); world.release() }
+        }, [node, frozen, FORMAT_BACK_REVISION])
+        return <Component {...props} ref={bind} data-format-back-footer-probe="source-footer-top" aria-hidden="true" style={{ ...props.style, width: 1, height: 1, opacity: 0, backgroundColor: "transparent", pointerEvents: "none" }} />
+    }) as NativeLayer
+}
+function formatBackToggle(Component: NativeLayer, name: ToggleName): NativeLayer {
+    const Legacy = name === "notes" ? withFormatNotesButton(Component) : withFormatDaughterSparks(Component)
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const parent = React.useContext(FormatBackContext), mode = useToggle(name), ink = !parent.frozen && mode.enabled ? "#939393" : "#000000"
+        return <FormatBackContext.Provider value={{ ...parent, ink }}><Legacy {...props} ref={ref} data-format-back-toggle={name} style={{ ...props.style, color: ink }} /></FormatBackContext.Provider>
+    }) as NativeLayer
+}
+export function withFormatBackNavigationNotes(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatBackToggle(Component, "notes") }
+export function withFormatBackNavigationDaughter(Component: ComponentType<LayerProps>): ComponentType<LayerProps> { return formatBackToggle(Component, "daughter") }
+export function withFormatBackNavigationText(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatBackContext), id = React.useId().replace(/[^a-zA-Z0-9_-]/g, "_")
+        return <><Component {...props} ref={ref} data-format-back-text={id} style={{ ...props.style, color: state.ink, whiteSpace: "pre", textDecoration: "none", transition: state.frozen || state.reduced ? "none" : "color .35s" }} /><style>{`[data-format-back-text="${id}"] *{color:inherit!important;white-space:inherit!important;text-decoration:inherit!important}`}</style></>
+    }) as NativeLayer
+}
+export function withFormatBackNavigationRule(Component: ComponentType<LayerProps>): ComponentType<LayerProps> {
+    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {
+        const state = React.useContext(FormatBackContext)
+        return <Component {...props} ref={ref} data-format-back-rule="physical-one-pixel" aria-hidden="true" style={{ ...props.style, height: 1 / Math.max(.001, state.unit), backgroundColor: state.ink, pointerEvents: "none", transition: state.frozen || state.reduced ? "none" : "background-color .35s" }} />
+    }) as NativeLayer
+}

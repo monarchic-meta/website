@@ -1,0 +1,45 @@
+{
+  "sourceSite": "https://format.obys.agency/",
+  "attribution": "Source inspiration — FORMAT, Obys and DES Special Project",
+  "module": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-module.js",
+    "sha256": "88c3ba72cae2663359669a93f6a12d0c4c2ba6e4c36f74586c969c7c19f31310",
+    "bytes": 257696
+  },
+  "fullCSS": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-styles.css",
+    "sha256": "961aaa31d6a2abe3941da7679f10964bd2c8c2fa043e1f1d08e05397064722c5",
+    "bytes": 54589
+  },
+  "fullHTML": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-http-response.html",
+    "sha256": "ab1ddbdce66e0a2b45ab9ac88154140a30cb7f42d7e8ac7bcf1334397863a940",
+    "bytes": 97284
+  },
+  "fragment": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/candidate/original-back-nav.inspection.js",
+    "sha256": "01b433fecd5be38490328a321944fe9accad113dc4f551dbf861f7f79f329dfe",
+    "bytes": 607
+  },
+  "css": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/candidate/original-back-nav.css",
+    "sha256": "bfc0af97b2169b7c191a12a9ccd58fb7fcd720266d1c8136859ece486d3e7081",
+    "bytes": 1531
+  },
+  "html": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/candidate/original-back-nav.html",
+    "sha256": "fd34cab1ff48a337dff203510f03ce327b6a95ed21ac9386ee232d1a67c2d130",
+    "bytes": 803
+  },
+  "sourceCSSVisibilityClause": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/primary-current-styles.css",
+    "offset": 2918,
+    "text": ".back-nav{z-index:var(--layer-curtain);left:calc(var(--grid-margin) * var(--s));top:calc(10 * var(--s));width:calc(var(--content-width) * var(--s));height:calc(16 * var(--s));font-size:calc(12 * var(--s));color:var(--color-plate-ink);transform:translateY(calc(-100% - 12 * var(--s)));visibility:hidden;pointer-events:none;transition:transform .45s cubic-bezier(.22,1,.36,1),visibility 0s linear .45s;position:fixed}\n.back-nav.is-down{visibility:visible;pointer-events:auto;transition:transform .45s cubic-bezier(.22,1,.36,1),visibility;transform:translateY(0)}"
+  },
+  "comparisonFont": {
+    "source": "https://format.obys.agency/fonts/ObysSans-Regular.woff2",
+    "sha256": "2d6e1af3075ea8a3577dac5c210a808873bf6c06e23df2e11d4a8acfc7a1292e",
+    "purpose": "External source comparison only, never runtime font redistribution.",
+    "relativePath": "source-font/ObysSans-Regular.woff2"
+  }
+}

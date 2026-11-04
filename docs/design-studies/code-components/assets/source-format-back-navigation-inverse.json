@@ -1,0 +1,19 @@
+{
+  "target": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/frozen-local54-v1/SourceHeroNativeBehaviors.prior50.tsx",
+    "sha256": "aeb727d3dd158135de6f8c67abe44e4bcee2dc00e91624cc5a9bd237fb1389ce",
+    "bytes": 73172
+  },
+  "newSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/back-navigation-v1/frozen-local54-v1/SourceHeroNativeBehaviors.tsx",
+    "sha256": "318f04932e3ac1f247ad5881744a7ed62d263b99fb54ff055c6e4f3855cb514c",
+    "bytes": 85154
+  },
+  "operation": "Remove only the appended bytes after the exact73172-byte prior50 module",
+  "remove": {
+    "startByte": 73172,
+    "lengthBytes": 11982,
+    "sha256": "7dc62ee1a609b2ab5535d2d968133bc554c964366c5c8edd2a34e5739e885513"
+  },
+  "source50PrefixExact": true
+}
