@@ -99,9 +99,11 @@ The Phone menu uses the source clip transition, staggered four-link grid and
 separate Join action. Its34 focused checks include rendered positions, link
 defaults, the existing Contact context and the991/992 responsive boundary.
 
+The complete35-family/70-part menu and74 bindings are independently read through835.
 The [manual handoff](source-mecha-phone-navigation.md) and
 [provenance](assets/source-mecha-phone-navigation-provenance.json) separate source
-observations, local proof and pending Framer authoring/Preview/reload checks.
+observations, local proof and authored Native state. Actual Preview and reload
+remain unverified.
 
 ## Mecha contact mark
 

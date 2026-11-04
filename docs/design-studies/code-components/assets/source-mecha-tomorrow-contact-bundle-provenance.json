@@ -169,5 +169,19 @@
       "bytes": 3226,
       "sha256": "bc0e328c0b52009bdbd3a2eb214ff39e47467f68bba2e0fe44958110090322c4"
     }
+  },
+  "sameModulePhoneNavigationSuccessor": {
+    "status": "SOURCE77_NATIVE35_ADMISSION74_SEALED835_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-phone-navigation-provenance.json",
+      "bytes": 7300,
+      "sha256": "4a2046f4ccea011ee06a7242213e91cd56f6ddf23906e64c754c90994bd2572f"
+    },
+    "retained47PrefixBytesExact": 49548,
+    "old47RowsAndSchemasExact": true,
+    "newHOCs": 30,
+    "oneRetainedTomorrowAndContactContext": true,
+    "old102OtherContactBindingsExact": true,
+    "twoRootReplacementsComposeOldRoot": true
   }
 }

@@ -7,7 +7,7 @@
     "Grzegorz Leśniewicz"
   ],
   "source": "https://mecha-xyz.webflow.io/",
-  "status": "SOURCE77_LOCAL34_PASS_ACTUAL_ADMISSION_AND_NATIVE_AUTHORING_PENDING",
+  "status": "SOURCE77_NATIVE35_ADMISSION74_AUTHORED_AND_INDEPENDENTLY_SEALED835_PREVIEW_RELOAD_OPEN",
   "manualSource": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaPhoneNavigation.tsx",
     "bytes": 77326,
@@ -78,20 +78,70 @@
     "rootBindingLast": true
   },
   "actualFramer": {
-    "sourceWritten": false,
-    "nativePilot": false,
-    "fullNativeAuthored": false,
+    "sourceWritten": true,
+    "nativePilot": true,
+    "fullNativeAuthored": true,
     "actualPaintVerified": false,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "sourceReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-navigation-writer818/final-actual-phone-nav77-source-authoring-receipt821.json",
+      "bytes": 2551,
+      "sha256": "52018e1d80b501f1f3e0fa92f1c8fcf3eef9ca346c5a26d2898bf0f1a9d8e31e"
+    },
+    "compilerDiagnostics": 0,
+    "genuinePublicHOCs": 77,
+    "old47IDsSchemasAndPrefixExact": true,
+    "pilotSVGPointerTraitUnsupported": true,
+    "nativeBindingsApplied": 74,
+    "newNativeFamilies": 35,
+    "newNativeParts": 70,
+    "genuineFontTuples": 36,
+    "actualBindings": 74,
+    "newRoleBindings": 68,
+    "retainedHostRoleBindings": 6,
+    "rootAppliedLast": true,
+    "other102ContactLiteralBindingsExact": true,
+    "oldRoot2ReplacementsComposeExistingRoot": true,
+    "oldPhoneRowOpacity": 0,
+    "oldDesktopRowOpacity": 1,
+    "wordmarkScalarsAndAssetPreserved": true,
+    "autoPointerFields": 12,
+    "nonePointerFields": 56,
+    "unsupportedSVGPointerTraitsOmitted": 2,
+    "sourceChildOrders": 19,
+    "oldOwnerInverseExact": "e722def0766588f89c8aaf4fd0110ca6cca9d9fea6b07b91053a73382cc7e846",
+    "finalOwner": "cb987495c6781bbb76e029721b869d3243131d60896fb7ae484cb437b157a321",
+    "independentRead834Passed": true,
+    "outside835Pending": false,
+    "pilotFamilies": 6,
+    "pilotParts": 12,
+    "outside835Passed": true,
+    "other91PagesPreserved": true,
+    "all16DefinitionsPreserved": true,
+    "all239PlacementsPreserved": true,
+    "all60CatalogsAnd639SchemasPreserved": true,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-navigation-writer818/final-phone-nav77-native35-admission74-authoring-receipt835.json",
+      "bytes": 7720,
+      "sha256": "fb33ceaa00da89341c1dcef7b9ea3abb9fe8b5cd79bb3ac7977aa2b78856a6bd"
+    }
   },
   "resources": {
     "newAmbientClocks": 0,
     "newGPUContexts": 0,
     "newMenuMedia": 0,
-    "largestJSBytes": null,
-    "declarationBytes": null,
-    "emissionMeasurementPending": true
+    "largestJSBytes": 69963,
+    "declarationBytes": 13918,
+    "emissionMeasurementPending": false,
+    "esnextJSBytes": 65388,
+    "sourcePlusLargestJSAndDts": 161207,
+    "limitBytes": 1048576,
+    "emissionReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-navigation-proposal-v2/emission/run1/result.json",
+      "bytes": 8024,
+      "sha256": "2fec1792b02a9b020c8f725e33b96bf0f464d370171b4d92ab5533b9adc3fa85"
+    }
   },
   "limits": [
     "Source031 is an intermediate transformed state, not settled geometry proof.",
@@ -101,5 +151,12 @@
     "Source Close hit, Escape/focus, touch scrolling, resize/reversal and fine-pointer hover inputs remain unobserved; literal code facts and project accessibility/lifecycle fits are separated in the correspondence.",
     "Actual Phone Canvas wordmark retains the old native scalar fit.",
     "Native getters and local DOM proofs do not establish actual painting, Preview or editor reload."
-  ]
+  ],
+  "build": {
+    "nixTarget": "checks.x86_64-linux.source-mecha-phone-navigation",
+    "derivationPath": "/nix/store/j43hl12dk3bkj09d2p7001kzy1n8zvsj-monarchic-website-source-mecha-phone-navigation-0.0.1.drv",
+    "evaluated": true,
+    "nixBuildExecuted": false,
+    "focusedProofWasLocal": true
+  }
 }

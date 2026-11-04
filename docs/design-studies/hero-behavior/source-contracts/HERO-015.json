@@ -526,8 +526,8 @@
     "status": "CONTACT_SOURCE47_BINDINGS104_NATIVE96_AUTHORED_THROUGH773_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-contact-bundle-provenance.json",
-      "bytes": 9202,
-      "sha256": "24188991243a33b81ac217164769601d042b4d121a06f076370c3380164173d8"
+      "bytes": 9854,
+      "sha256": "d5b9a2290cb3c1b18ddf451d26f077fda9a50ef80fbfdceaef0b4914333d6ca2"
     },
     "manualSource": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowContact.tsx",
@@ -613,7 +613,7 @@
     }
   },
   "nextPhoneNavigationGap": {
-    "status": "SELF_CONTAINED77_LOCAL34_PASS_ACTUAL_ADMISSION_AND_NATIVE_AUTHORING_PENDING",
+    "status": "SOURCE77_NATIVE35_ADMISSION74_AUTHORED_AND_INDEPENDENTLY_SEALED835_PREVIEW_RELOAD_OPEN",
     "sourceNativeEvidence": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/source-native-gap.json",
       "bytes": 20499,
@@ -625,9 +625,9 @@
       "sha256": "af3a43de0da8813056d200fdc3f26c7a6b9ee33114ca3e017cbe325fc90460aa"
     },
     "receipt": {
-      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/receipt.json",
-      "bytes": 6336,
-      "sha256": "7eca83c483fac6ec62e4edc93772dd3b9feca7488f32121975d3607151444d2a"
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-navigation-writer818/final-phone-nav77-native35-admission74-authoring-receipt835.json",
+      "bytes": 7720,
+      "sha256": "fb33ceaa00da89341c1dcef7b9ea3abb9fe8b5cd79bb3ac7977aa2b78856a6bd"
     },
     "scope": "Phone fullscreen navigation, four links in2×2 lower grid and separateJoin action; preserve Contact773/Tomorrow728.",
     "observed": "Teams tap closes menu and reaches#teams at sourcey1962.",
@@ -640,14 +640,22 @@
     "noFifthAnimatedLink": true,
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-phone-navigation-provenance.json",
-      "bytes": 4514,
-      "sha256": "f65f870952c3642f38d7163f2d487c3a913ed47d0d0b9fcb09694397e3016f78"
+      "bytes": 7300,
+      "sha256": "4a2046f4ccea011ee06a7242213e91cd56f6ddf23906e64c754c90994bd2572f"
     },
     "old47PrefixExact": true,
     "localFocusedChecks": 34,
     "newNativeFamilies": 35,
     "plannedActualBindings": 74,
     "actualPreviewVerified": false,
-    "afterEditorReload": false
+    "afterEditorReload": false,
+    "actualSourceWritten821": true,
+    "nativeAuthored": true,
+    "actualNativeParts": 70,
+    "actualBindings": 74,
+    "genuineFontTuples": 36,
+    "finalOwner": "cb987495c6781bbb76e029721b869d3243131d60896fb7ae484cb437b157a321",
+    "oldPhoneOnlyOpacity0": true,
+    "wordmarkPreserved": true
   }
 }
