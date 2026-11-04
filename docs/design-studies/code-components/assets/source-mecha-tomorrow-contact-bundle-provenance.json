@@ -1,0 +1,133 @@
+{
+  "reference": "HERO-015",
+  "classification": "Source inspiration / MECHA Contact and Tomorrow panel recreation",
+  "credit": "MECHA / Widelab, Grzegorz Leśniewicz",
+  "status": "SAME_MODULE_PACKAGE_LOCAL64_AND_RETAINED74_PASS_ACTUAL47_PILOT_PENDING",
+  "canonicalManualPackage": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowContact.tsx",
+    "bytes": 49548,
+    "sha256": "0c4449f16fb119c860641dc0b8054da31164e389c2f5f4af8cb0bec84fe06071"
+  },
+  "retainedTomorrowInput": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowDetail.tsx",
+    "bytes": 15281,
+    "sha256": "fccf92d790ae5ecb5aee489fff9c7cf63ce1b5a0fe4f01fc4494829b1f57ce6b"
+  },
+  "contactInput": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaContact.tsx",
+    "bytes": 30471,
+    "sha256": "7ba1c6b229bb6b8d1b87e6cc1a89b3d0752de5d7f2b0ddd631e15668bfaeaff5"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-tomorrow-contact-bundle-inverse.json",
+    "bytes": 36068,
+    "sha256": "dcc9a8397e7b4a6c7963081e159175309cee26751d812c86778f75a28ee64add"
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/final-0c4449f1-contact64-tomorrow74/validated-bundle-handoff-receipt.json",
+    "bytes": 14705,
+    "sha256": "c8718a79d015c40ae4678cb712013e3932800e18bba061f501905472417ea4d2"
+  },
+  "packaging": {
+    "method": "Append Contact to the existing Tomorrow module after semantic private-name renaming and removing the four redundant/imported dependency declarations.",
+    "oldTomorrowBytes": 15281,
+    "oldPublicOverrides": 7,
+    "newContactOverrides": 40,
+    "totalPublicOverrides": 47,
+    "retainedTomorrowContextInstances": 1,
+    "newContactContextInstances": 1,
+    "privateContactDeclarationsRenamed": 23,
+    "semanticOccurrencesRenamed": 197,
+    "namespaceOrExportAliases": false,
+    "relativeModuleImports": 0,
+    "automaticSynchronization": false,
+    "manualActualDestination": "Existing Framer SourceMechaTomorrowDetail.tsx, module ibfuuNl; preserve all seven old override IDs/schemas/bindings."
+  },
+  "validation": {
+    "contact": 64,
+    "contactStrictAndSSR": 11,
+    "retainedTomorrow": 74,
+    "retainedTomorrowStaticAndSSRAndPlan": 52,
+    "retainedTomorrowBrowser": 22,
+    "oneEvaluatedBundlePerFixture": true,
+    "oldTomorrowPrefixExact": true,
+    "bothInputsRecoverableExactly": true,
+    "sameProviderMoreThenContact": true,
+    "failurePolicy": "The adapter quote and missing ReactNode facade failures are preserved in the final receipt; production source was unchanged.",
+    "canonicalStatic": {
+      "contact": 11,
+      "retainedTomorrow": 52,
+      "contactResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/canonical-validation/contact-static-result.json",
+        "bytes": 2274,
+        "sha256": "e8d7ff9ab6cece44bf6e726cc555a0a625286882a309dd5d0ea0b4be0712c243"
+      },
+      "retainedResult": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/canonical-validation/retained-static-result.json",
+        "bytes": 3218,
+        "sha256": "5d1eefa796f5aa49d018f8f2dc66c398599bab91dc6cb74c4bf291e726214e42"
+      },
+      "sourceAndRuntimeAssertionsUnchangedFromBrowserProof": true
+    }
+  },
+  "nativeStaging": {
+    "lastIndependentRead": 760,
+    "parts": 96,
+    "targetParts": 96,
+    "families": 48,
+    "owner": "d754a5ee83dbdb99c4ffb9b20a8699ffa0fb674909dbda1be95c46867f644b21",
+    "hidden": true,
+    "unbound": true,
+    "remainingFamilies": 0,
+    "remainingParts": 0,
+    "rawInverseToFirstHandoffOwner": true,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-ui-writer713/final-cold96-contact-authoring-receipt760.json",
+      "bytes": 5764,
+      "sha256": "2575fca7b8e239d1abfdc961fe3542be4bcfcd5d0b1a668fcc2b6285103f7c28"
+    }
+  },
+  "actualFramer": {
+    "packageWritten": false,
+    "compilerDiagnostics": null,
+    "genuine47OverridesVerified": false,
+    "old7SchemasPreserved": null,
+    "nativeBindingAndActivation": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Manual same-module packaging resolves the dependency structurally; actual Framer override classification and DOM forwarding remain separate gates.",
+    "Leaf Contact/old Tomorrow files remain retained authoring inputs; the combined artifact is the manual Framer source handoff.",
+    "Native source fonts remain unavailable in Framer; declared native/live fallbacks and source fit differences remain.",
+    "No backend, submission or invented success is provided."
+  ],
+  "manualGenerator": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/build-source-mecha-tomorrow-contact.mjs",
+    "bytes": 10479,
+    "sha256": "54c37c8df462b038c82f1f29730dc1c9d145db14a8d97fe235e55a064cc8b2b3"
+  },
+  "canonicalCheckers": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-tomorrow-contact.mjs",
+      "bytes": 39618,
+      "sha256": "934cca33dc740634d42adc0fef16fceef60b97558de64d27d757cf030d7cf584"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-tomorrow-contact-retained.mjs",
+      "bytes": 23544,
+      "sha256": "5aa6958b7cc57ca64b6febaff6a87b0b702d671d4cf336d0055c3d04df6779c5"
+    }
+  ],
+  "manualRegeneration": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/canonical-validation/manual-regeneration.json",
+    "bytes": 915,
+    "sha256": "8c34f9fae6f84b0fefc460d5d90d59c0f253e72811cf022e986174012fe59a11"
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/contact-same-module-packaging-v1/canonical-validation/nix-evaluation.json",
+    "bytes": 289,
+    "sha256": "67774e5ba7be6c2e73be0cf108983087e831821669398e576dcb6c506e323a7b"
+  }
+}
