@@ -150,7 +150,10 @@
     "check:source-mecha-tomorrow-contact-retained": "node scripts/check-source-mecha-tomorrow-contact-retained.mjs",
     "check:source-format-back-navigation": "node scripts/check-source-format-back-navigation.mjs",
     "check:source-cantor-opening-rolling": "node scripts/check-source-cantor-opening-rolling.mjs",
-    "check:source-cantor-opening-rolling-retained": "node scripts/check-source-cantor-opening-rolling-retained.mjs"
+    "check:source-cantor-opening-rolling-retained": "node scripts/check-source-cantor-opening-rolling-retained.mjs",
+    "check:source-format-shared-notes-shared": "node scripts/check-source-format-shared-notes-shared.mjs",
+    "check:source-format-shared-notes-details": "node scripts/check-source-format-shared-notes-details.mjs",
+    "check:source-format-shared-notes": "node scripts/check-source-format-shared-notes.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
