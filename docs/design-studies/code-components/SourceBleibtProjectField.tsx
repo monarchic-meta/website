@@ -10,6 +10,8 @@ import { RenderTarget, useIsStaticRenderer } from "framer"
  * Those are current public-code facts, not measured archive timing. Source
  * code is not imported. CSS3D replaces Three/WebGL; hover/pin interpolation
  * and reveal ordering are fitted. Back-facing images retain a low.1 opacity.
+ * Mouse occupancy and drift relaxation use inspected current public-code
+ * rules, including its capped60Hz step. These are not new input observations.
  *
  * Attach withBleibtProjectField to an untransformed, square native Frame;
  * attach each numbered HOC to the matching native image Frame in source order.
@@ -62,11 +64,18 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
         const [pose, setPose] = React.useState({ time: 0, angle: 0 })
         const [hovered, setHovered] = React.useState(-1)
         const [pinned, setPinned] = React.useState(-1)
-        const hoveredRef = React.useRef(-1), pinnedRef = React.useRef(-1)
-        hoveredRef.current = hovered; pinnedRef.current = pinned
+        const pinnedRef = React.useRef(-1)
+        pinnedRef.current = pinned
+        const pointerInside = React.useRef(false)
         const dragged = React.useRef(false)
         const drag = React.useRef<{ id: number; start: number; last: number } | null>(null)
-        const velocity = React.useRef(0), angle = React.useRef(0), elapsed = React.useRef(0), idle = React.useRef(2)
+        const velocity = React.useRef(0), angle = React.useRef(0), elapsed = React.useRef(0), idle = React.useRef(0)
+        const drift = React.useRef(.003), driftTarget = React.useRef(.003)
+        const trackMouseInside = (e: React.PointerEvent<HTMLElement>) => {
+            if (frozen || reduced || !visible || e.pointerType !== "mouse") return
+            const bounds = e.currentTarget.getBoundingClientRect()
+            pointerInside.current = e.clientX >= bounds.left && e.clientX <= bounds.right && e.clientY >= bounds.top && e.clientY <= bounds.bottom
+        }
 
         useOwnLayoutEffect(() => {
             if (!own.current) return
@@ -86,20 +95,26 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
             return () => { io.disconnect(); query.removeEventListener("change", motion); window.removeEventListener("scroll", resetPin, true) }
         }, [frozen])
         React.useEffect(() => {
-            if (frozen || reduced || !visible) return
+            if (frozen || reduced || !visible) { pointerInside.current = false; return }
             let frame = 0, previous = 0, published = 0
             const tick = (now: number) => {
                 const dt = previous ? Math.min(.05, (now - previous) / 1000) : 0
                 previous = now; elapsed.current += dt
-                const held = !!drag.current || hoveredRef.current !== -1 || pinnedRef.current !== -1
-                idle.current = held ? 0 : idle.current + dt
-                velocity.current *= Math.pow(drag.current ? .9 : .94, dt * 60)
-                angle.current += (velocity.current + (!held && idle.current > 1 ? .003 : 0)) * dt * 60
+                // The source caps one integration step at a60Hz frame even
+                // when wall-clock dt is longer. Keep target, relaxation,
+                // velocity decay and angle advance in that same step.
+                const step = Math.min(1, dt * 60)
+                const held = pointerInside.current || !!drag.current || pinnedRef.current !== -1
+                if (held) { idle.current = 0; driftTarget.current = 0 }
+                else { idle.current += dt; if (idle.current > 1) driftTarget.current = .003 }
+                drift.current += (driftTarget.current - drift.current) * (drag.current ? .18 : .03) * step
+                velocity.current *= Math.pow(drag.current ? .9 : .94, step)
+                angle.current += (velocity.current + drift.current) * step
                 if (now - published >= 1000 / 30) { published = now; setPose({ time: elapsed.current, angle: angle.current }) }
                 frame = window.requestAnimationFrame(tick)
             }
             frame = window.requestAnimationFrame(tick)
-            return () => window.cancelAnimationFrame(frame)
+            return () => { window.cancelAnimationFrame(frame); pointerInside.current = false }
         }, [frozen, reduced, visible])
         const state: State = { ...size, ...pose, frozen: frozen || reduced, hovered, pinned, dragged, setHovered, setPinned }
         const halfFov = 24 * Math.PI / 180
@@ -107,6 +122,7 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
         return <FieldContext.Provider value={state}><Component {...props} ref={(node: HTMLElement | null) => { own.current = node; mergeRef(ref, node) }}
             data-source-bleibt-field="native-css3d" data-source-field-time={pose.time} data-source-field-angle={pose.angle} data-source-field-pinned={pinned}
             style={{ ...props.style, position: "relative", perspective: `${perspective}px`, perspectiveOrigin: "50% 50%", overflow: "visible", touchAction: "pan-y", cursor: drag.current ? "grabbing" : hovered >= 0 ? "pointer" : "grab" }}
+            onPointerEnter={(e: React.PointerEvent<HTMLElement>) => { props.onPointerEnter?.(e); trackMouseInside(e) }}
             onPointerDown={(e: React.PointerEvent<HTMLElement>) => {
                 props.onPointerDown?.(e); if (frozen || reduced || e.defaultPrevented || e.button !== 0) return
                 drag.current = { id: e.pointerId, start: e.clientX, last: e.clientX }; dragged.current = false; velocity.current = 0
@@ -115,14 +131,15 @@ export function withBleibtProjectField(Component: ComponentType<LayerProps>): Co
                 if (e.pointerType === "mouse" && e.target instanceof Element) e.target.setPointerCapture(e.pointerId)
             }}
             onPointerMove={(e: React.PointerEvent<HTMLElement>) => {
-                props.onPointerMove?.(e); const d = drag.current; if (!d || d.id !== e.pointerId || frozen || reduced) return
+                props.onPointerMove?.(e); trackMouseInside(e)
+                const d = drag.current; if (!d || d.id !== e.pointerId || frozen || reduced) return
                 const delta = e.clientX - d.last; d.last = e.clientX
                 if (Math.abs(e.clientX - d.start) > 3) { dragged.current = true; setPinned(-1) }
                 velocity.current = Math.max(-.11, Math.min(.11, velocity.current + delta * .013))
             }}
             onPointerUp={(e: React.PointerEvent<HTMLElement>) => { props.onPointerUp?.(e); drag.current = null; if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId) }}
             onPointerCancel={(e: React.PointerEvent<HTMLElement>) => { props.onPointerCancel?.(e); drag.current = null; dragged.current = true; if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId) }}
-            onPointerLeave={(e: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(e); setHovered(-1) }}
+            onPointerLeave={(e: React.PointerEvent<HTMLElement>) => { props.onPointerLeave?.(e); if (e.pointerType === "mouse") pointerInside.current = false; setHovered(-1) }}
         /></FieldContext.Provider>
     })
 }
