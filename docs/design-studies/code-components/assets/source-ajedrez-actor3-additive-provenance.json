@@ -4,9 +4,11 @@
   "credit": "Julián Leiss / Ajedrez Film Poem",
   "status": "ACTOR3_SOURCE837C_AUTHORED_AND_INDEPENDENTLY_SEALED847_PREVIEW_RELOAD_OPEN",
   "sourceModule": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor3-source-writer844/SourceAjedrezSequence.actor3-frozen837c.tsx",
     "bytes": 207862,
-    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f",
+    "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "historical": true
   },
   "inverse": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-inverse.json",
@@ -152,5 +154,18 @@
     "evaluated": true,
     "fullNixBuildExecuted": false,
     "derivationPath": "/nix/store/kpvdf8pdpvnxcbqhvv6ja2zvs84vdzq1-monarchic-website-source-ajedrez-actor3-additive-0.0.1.drv"
+  },
+  "historical": true,
+  "successor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor43-additive-provenance.json",
+      "bytes": 10924,
+      "sha256": "d9f9baedf1a25570a8285a1f823ba53a54026bb1e4600f75270d2b7395fcff83"
+    },
+    "sourceSHA256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52",
+    "combinedTrackedActors": 4,
+    "combinedPlacements": 257,
+    "combinedBaselineGaps": 39,
+    "remainingRepresentativeActors": 80
   }
 }

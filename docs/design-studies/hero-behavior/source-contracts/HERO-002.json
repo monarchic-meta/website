@@ -2212,7 +2212,7 @@
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-provenance.json",
       "bytes": 7270,
-      "sha256": "3c05948aa101eaff6e660b881e924d29bbb26a75ed1f4176f66cb4f6f34c5a48"
+      "sha256": "1a39e2dae04a6ab8cf7d7f98a745d7a6eba1ebb423c46a148f041f255164b15f"
     },
     "scope": {
       "actors": 2,
@@ -2299,13 +2299,15 @@
     "status": "ACTOR3_SOURCE837C_AUTHORED_AND_INDEPENDENTLY_SEALED847_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-provenance.json",
-      "bytes": 7908,
-      "sha256": "425068e7735535c75faf3f2f9bf461d7fd3a2dddd34a1738519195190ad16562"
+      "bytes": 8743,
+      "sha256": "159e1525745ec8155c780633d56d21cba1ec5663954269b3e81049c9d28367c5"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor3-source-writer844/SourceAjedrezSequence.actor3-frozen837c.tsx",
       "bytes": 207862,
-      "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+      "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f",
+      "repositoryPath": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "historical": true
     },
     "actualAuthoring": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor3-source-writer844/final-actor3-source-only-authoring-receipt847.json",
@@ -2318,6 +2320,45 @@
     "combinedPlacements195": true,
     "combinedBaselineGaps27": true,
     "remainingRepresentativeActors81": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false,
+    "filmComplete": false,
+    "historical": true,
+    "successor": {
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor43-additive-provenance.json",
+        "bytes": 10924,
+        "sha256": "d9f9baedf1a25570a8285a1f823ba53a54026bb1e4600f75270d2b7395fcff83"
+      },
+      "sourceSHA256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52"
+    }
+  },
+  "actor43AdditiveMotion": {
+    "status": "ACTOR43_SOURCE72EE_AUTHORED_AND_INDEPENDENTLY_SEALED851_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor43-additive-provenance.json",
+      "bytes": 10924,
+      "sha256": "d9f9baedf1a25570a8285a1f823ba53a54026bb1e4600f75270d2b7395fcff83"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+      "bytes": 209769,
+      "sha256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/actor43-source-writer848/final-actor43-source-only-authoring-receipt851.json",
+      "bytes": 7155,
+      "sha256": "89ef243c5efce7d1a62e6dbae4337918ace7a27a0dca7dcff79a59ce655db6f1"
+    },
+    "old195And27GapsExact": true,
+    "actor43Placements62": true,
+    "actor43BaselineGaps12": true,
+    "source1208And1222RemainNull": true,
+    "combinedTrackedActors4": true,
+    "combinedPlacements257": true,
+    "combinedBaselineGaps39": true,
+    "remainingRepresentativeActors80": true,
+    "actualPaintVerified": false,
     "actualPreviewVerified": false,
     "afterEditorReload": false,
     "filmComplete": false

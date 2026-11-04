@@ -83,23 +83,25 @@ nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 
 ## Ajedrez measured word motion
 
 The [two-track continuation](assets/source-ajedrez-two-track-extension-provenance.json)
-retains144 placements and four baseline gaps across74 recorded frames.
-The [actor3 addition](assets/source-ajedrez-actor3-additive-provenance.json) adds51
-source-reviewed placements and23 explicit baseline gaps in
-[SourceAjedrezSequence.tsx](SourceAjedrezSequence.tsx). Three false numeric matches
-were rejected. The combined195 placements preserve the old tables, all46 public
-bodies, independent captions and shared clock; the other81 actors retain sampled
-holds. This does not complete the film.
+retains144 placements and four baseline gaps. The historical
+[actor3 addition](assets/source-ajedrez-actor3-additive-provenance.json) adds51
+placements and23 gaps; the [actor43 addition](assets/source-ajedrez-actor43-additive-provenance.json)
+adds62 reviewed crop placements and12 baseline gaps in
+[SourceAjedrezSequence.tsx](SourceAjedrezSequence.tsx). The four tracks contain257
+placements and39 explicit baseline gaps across74 recorded frames. The other80
+actors retain representative holds, so the film remains unfinished. Source1208
+needs a separately reviewed full-word crop;1222overlap remains unresolved.
+Independent captions, all46 public bodies, assets and the shared clock remain.
 
-Canonical17 static,12 strict and51 browser checks pass. Source authoring and
-native preservation are independently read through847; actual paint, Preview
-and reload remain unverified.
+Canonical21 static,12 strict and60 browser checks pass. Exact72ee source
+authoring and native preservation are independently read through851; actual
+paint, Preview and editor reload remain unverified.
 
-Run `pnpm run check:source-ajedrez-two-track-extension`, or the matching Nix
-check with `--max-jobs 1 --cores 2`. The older measured-word-fit entry point
-delegates to the explicit51-check suite for the current source. The historical
-40-check file stays byte-exact, and explicit historical sources retain their
-matching tests.
+Run `pnpm run check:source-ajedrez-actor43-additive`, or the matching Nix check
+with `--max-jobs 1 --cores 2`. The existing trajectory/actor3/measured-fit aliases
+select the explicit60-check suite for the current marker. Historical51/40
+files stay byte-exact. The full browser's grid prepass remains serial and its
+photo work is retained. The Nix target is evaluated; a full build is not claimed.
 
 [SourceCantorOpeningRolling.tsx](SourceCantorOpeningRolling.tsx) is the separate
 manual same-module package for the existing Opening code file. It preserves
