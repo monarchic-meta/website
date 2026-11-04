@@ -146,5 +146,11 @@
     "All23 actor3 gaps explicitly restore the prior representative baseline; no last-measured hold or invented easing is added.",
     "Source glyph-group correspondence is reviewed; editable Native captions remain independent copy and pixel-identical glyph rendering is not claimed.",
     "Actual Framer playback, painting and editor reload remain unverified."
-  ]
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-ajedrez-actor3-additive",
+    "evaluated": true,
+    "fullNixBuildExecuted": false,
+    "derivationPath": "/nix/store/kpvdf8pdpvnxcbqhvv6ja2zvs84vdzq1-monarchic-website-source-ajedrez-actor3-additive-0.0.1.drv"
+  }
 }

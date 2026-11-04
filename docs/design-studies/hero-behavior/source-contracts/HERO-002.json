@@ -2212,7 +2212,7 @@
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-provenance.json",
       "bytes": 7270,
-      "sha256": "700c77d86ebaf942dadc49fe30069da04d29f054ce9408b09ea31ee653bf4d06"
+      "sha256": "3c05948aa101eaff6e660b881e924d29bbb26a75ed1f4176f66cb4f6f34c5a48"
     },
     "scope": {
       "actors": 2,
@@ -2299,8 +2299,8 @@
     "status": "ACTOR3_SOURCE837C_AUTHORED_AND_INDEPENDENTLY_SEALED847_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-provenance.json",
-      "bytes": 7637,
-      "sha256": "c21e5cfe046715592227d1b8571d0ff433dfbdc848a97319e693cba411b09bb2"
+      "bytes": 7908,
+      "sha256": "425068e7735535c75faf3f2f9bf461d7fd3a2dddd34a1738519195190ad16562"
     },
     "sourceModule": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceAjedrezSequence.tsx",
