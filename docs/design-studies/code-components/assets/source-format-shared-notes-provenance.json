@@ -1,0 +1,165 @@
+{
+  "reference": "HERO-013",
+  "classification": "Source inspiration",
+  "credit": "FORMAT / Obys × DES",
+  "status": "COMBINED247_LOCAL_SHARED_DETAILS_AND_NOTES52_PASS_ACTUAL_ADMISSION_PENDING",
+  "manualSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatSharedNotes.tsx",
+    "bytes": 296890,
+    "sha256": "dd256592b6b740529922e6d9ff230062c696f499fc99874e012a4c461e50ae58"
+  },
+  "authoringInputs": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroNativeBehaviors.tsx",
+      "bytes": 85154,
+      "sha256": "318f04932e3ac1f247ad5881744a7ed62d263b99fb54ff055c6e4f3855cb514c"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceFormatDetails.tsx",
+      "bytes": 185812,
+      "sha256": "3dcf9273c8d0936b0e4fc3e00a18a0def156905c4336bdcc173023f29bb664b3"
+    }
+  ],
+  "inverseFixture": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-format-shared-notes-bundle-inverse.json",
+    "bytes": 216438,
+    "sha256": "9811d1522d4ce614f6593608b731d25546b4706ed33d37ba8a401301b4689601"
+  },
+  "semanticRenameFixture": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-format-shared-notes-private-renames.json",
+    "bytes": 630253,
+    "sha256": "37116472c5e8cb63c38cb7ab03ad22514b5960d747d6e1efd8601415ef7e03f0"
+  },
+  "manualGenerator": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/build-source-format-shared-notes.mjs",
+    "bytes": 10581,
+    "sha256": "336bfe6ab454958635a7c6a8cef93ab2736e05ddcb7dc48e432465075636a1eb"
+  },
+  "checkers": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-format-shared-notes-shared.mjs",
+      "bytes": 25129,
+      "sha256": "24c12adc68f949bb4527cac9eddb1b3aabfce658f9602f18c1dcbe3bc6853d76"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-format-shared-notes-details.mjs",
+      "bytes": 12504,
+      "sha256": "a029d4a0aca59c115901e4501921f951b9847b600ff386e1c58bde2f64431447"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-format-shared-notes.mjs",
+      "bytes": 36499,
+      "sha256": "12d244978ab4bdfa80ce6002722ffe36fc84b1d56f89d88e9e203eceb6525131"
+    }
+  ],
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/final-dd256592-shared-pass-notes52/validated-bundle-handoff-receipt.json",
+    "bytes": 16443,
+    "sha256": "f9c0fef25d1b8c3c0bc180b5679e2a3092bc3ba61eba0c0daea3d92e05c8b1fa"
+  },
+  "narrowReceipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/checkpoint-dd256592-strict10-static14/narrow-validation-receipt.json",
+    "bytes": 11213,
+    "sha256": "18a84502abc7940c3cce3902d1f5ba288fb88ffb4b62252d7bc83dd153ddb9df"
+  },
+  "packaging": {
+    "retainedShared56Bytes": 85154,
+    "retainedPublicOverrides": 56,
+    "appendedDetailsOverrides": 191,
+    "total": 247,
+    "privateDetailsSymbolsRenamed": 133,
+    "semanticOccurrencesRenamed": 1239,
+    "oldSharedPrefixExact": true,
+    "detailsInputInverseExact": true,
+    "publicNotesBridgeUsesRetainedSharedStore": true,
+    "sourceCopiesPerFixture": 1,
+    "namespaceAliasesOrDuplicatedControllers": false,
+    "relativeModuleImports": 0,
+    "automaticSynchronization": false,
+    "actualDestination": "Existing Framer Shared / SourceHeroNativeBehaviors.tsx; preserve all56 prior IDs/schemas."
+  },
+  "validation": {
+    "retainedSharedStaticGroups": 4,
+    "retainedSharedFullBrowserReports": 5,
+    "detailsStrictSSRAndMath": 10,
+    "notesStatic": 14,
+    "notesFull": 52,
+    "originalNotesAssertionsRetained": 50,
+    "emissionDiagnostics": 0,
+    "declarationExports": 247,
+    "sourceBytes": 296890,
+    "largestJSBytes": 277399,
+    "declarationBytes": 40283,
+    "combinedCeilingBytes": 614572,
+    "canonicalDefaultPathProofPending": false,
+    "canonicalDetailsStrict": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/canonical-validation/details-strict10.json",
+      "bytes": 1510,
+      "sha256": "1c9674023c4605e97e8d422521dafebf1d15232464f53fc1bbdb6e374117e4cb"
+    },
+    "canonicalNotesStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/canonical-validation/notes-static14.json",
+      "bytes": 2609,
+      "sha256": "eafd8a580e146d10dbbe3bed85915f93ad526858ad2b65fdab0ba128cf0064cf"
+    }
+  },
+  "nativePlan": {
+    "notes": 18,
+    "logicalFamilies": 91,
+    "actualCopies": 273,
+    "frameFamilies": 55,
+    "richTextFamilies": 36,
+    "plan": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-native91-sdk-audit-v1/proposed-supported-native91-adapter.json",
+      "bytes": 299976,
+      "sha256": "6d49e8057aafd9035e16c4b0575dda60526a33d77aaf321117b6c0e447740ba7"
+    },
+    "sdkAudit": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-native91-sdk-audit-v1/sdk-audit-and-required-pilots.json",
+      "bytes": 11105,
+      "sha256": "80eb9d550d78cc2a2a8c6c4a72e8d9874891518adbaa7590e3959243f3b62867"
+    },
+    "requiredPilotFamilies": 6,
+    "requiredPilotCopies": 18,
+    "sourceFontTuplesInPilot": 18,
+    "allNewPapersStageHiddenUnbound": true
+  },
+  "migration": {
+    "freshActualCensusRequired": true,
+    "cached719Only": {
+      "usedOldDetailsExports": 145,
+      "logicalFamilies": 428,
+      "physicalCopies": 1284
+    },
+    "mustRemapAllOldPrQReferencesInH13Owner": true,
+    "mustLeaveOtherOwnersAndOldDetailsModuleIntact": true,
+    "mustPreserveShared56DaughterSparksBacknavBindings": true,
+    "rootsAndContextBindingsLast": true,
+    "completePriorOwnerInverseRequired": true
+  },
+  "actualFramer": {
+    "sourceWritten": false,
+    "genuine247Classified": false,
+    "nativeNotesCreated": false,
+    "fullOldDetailsRemapComplete": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "All18 sentences remain independently paraphrased; geometry and source time/scroll behavior remain the comparison target.",
+    "This package is a manual source handoff; actual247 classification, native parent/font/role forwarding and full-owner remap remain gates.",
+    "SourcePhone splash and static/editor policy keep new Notes disabled there.",
+    "Cached719 mapping is historical only; actual current IDs/parents/order/schemas and inverse must be captured after the Backnav admission."
+  ],
+  "manualRegeneration": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/canonical-validation/manual-regeneration.json",
+    "bytes": 287,
+    "sha256": "cc275796c67d14458d4691d06c27eb3e7af4c22961cdd56d795128e9549c3c9b"
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO013/notes-same-module-packaging-v1/canonical-validation/nix-evaluation.json",
+    "bytes": 165,
+    "sha256": "038fc587bdb4afdcaa23f76693d8d7badd4d69c4330eb7053f6225dcb92e171c"
+  }
+}
