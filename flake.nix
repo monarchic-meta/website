@@ -445,7 +445,8 @@
             export MONARCHIC_MACMOSS_EVIDENCE_DIR="$out/evidence"
             export MONARCHIC_MACMOSS_GESTURE_EVIDENCE_DIR="$out/evidence/gestures"
             export MONARCHIC_MACMOSS_INTERPOLATION_EVIDENCE_DIR="$out/evidence/interpolation"
-            pnpm run check:source-macmoss-portfolio
+            export MONARCHIC_MACMOSS_TOUCH_LEAVE_EVIDENCE_DIR="$out/evidence/touch-leave"
+            pnpm run check:source-macmoss-touch-leave
             pnpm run check:source-macmoss-browser
             pnpm run check:source-macmoss-gestures
             pnpm run check:source-macmoss-interpolation

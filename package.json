@@ -96,6 +96,7 @@
     "check:source-macmoss-portfolio": "node scripts/check-source-macmoss-portfolio.mjs",
     "check:source-macmoss-browser": "node scripts/check-source-macmoss-browser.mjs",
     "check:source-macmoss-gestures": "node scripts/check-source-macmoss-gestures.mjs",
+    "check:source-macmoss-touch-leave": "node scripts/check-source-macmoss-touch-leave.mjs",
     "check:source-macmoss-interpolation": "node scripts/check-source-macmoss-gesture-interpolation.mjs",
     "check:source-native-video-visibility": "node scripts/check-source-native-video-visibility.mjs",
     "check:source-cantor-instrument": "node scripts/check-source-cantor-instrument.mjs",
