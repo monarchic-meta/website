@@ -55,7 +55,7 @@
     "fullFidelityApproved": false,
     "actualFramerPreviewVerified": false,
     "afterEditorReload": false,
-    "status": "PHASED_INPUT_SOURCE_AUTHORED_TWO_HELPER_DIAGNOSTICS_PAINT_PENDING",
+    "status": "PHASED_INPUT_WITH_COMMENT_REFRESH839_TWO_FRESH_IMPORT_ERRORS_PREVIEW_RELOAD_OPEN",
     "implementationReceipt": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/journey-current-implementation/final-source-receipt.json",
       "bytes": 21257,
@@ -80,13 +80,13 @@
         "./SourceHeroJourneyData0.ts",
         "./SourceHeroJourneyData1.ts"
       ],
-      "scope": "The two historical helper-import diagnostics recur on the actual write. Readback confirms canonical filenames, symbols and bytes for both real LocalModuleNode helpers. The checker origin and actual runtime module resolution remain unverified; the write is not described as compile-clean."
+      "scope": "Historical writes reported both missing helper modules. The byte-identical refresh668 returned no new diagnostics. The later comment-only837 write returned both errors freshly; actual runtime resolution remains unverified."
     },
     "phasedInputCorrection": {
       "date": "2026-11-03",
       "behavior": "Copy enters the 300px mask at .84 × 2466 = 2071.44px travel. The rendered mask reaches .9 before a later forward input may advance the head; reverse input releases the head before the mask and copy. Existing clock owns the .02s copy/head and .5s mask easing.",
       "source": {
-        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/SourceHeroJourneyStudy-fbbcb38f.tsx",
         "bytes": 101953,
         "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
       },
@@ -104,10 +104,49 @@
       "compilerClean": false,
       "actualFramerPreviewVerified": false,
       "afterEditorReload": false
+    },
+    "compilerCommentProbe": {
+      "status": "ONE_COMMENT_SOURCE_WRITE837_FRESH_TWO_IMPORT_ERRORS_SEALED839",
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
+        "bytes": 102178,
+        "sha256": "4dea6a36b051a9f3537f12d0cb07c7363de9cdad84bdb484df377454cabe55bd"
+      },
+      "prior": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/SourceHeroJourneyStudy-fbbcb38f.tsx",
+        "bytes": 101953,
+        "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
+      },
+      "localValidation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/fresh-main-compile-probe-v1/validation/validation-receipt.json",
+        "bytes": 8700,
+        "sha256": "b244ff65efb9b71523e890f50e6bf4d1f9d3f0dce7e0f8ed9947b5ceaaeb6416"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/comment-probe-writer836/final-one-comment-probe-unresolved-import-diagnostics-receipt839.json",
+        "bytes": 6839,
+        "sha256": "638172ceff5f82a88de97d38b9cd131f40096a66ce79c9f571eb365478de5604"
+      },
+      "commentOnly": true,
+      "runtimeJavaScriptWithCommentsRemovedExact": true,
+      "localStrictChecks": 4,
+      "actualWrites": 1,
+      "actualDiagnosticStrings": 1,
+      "actualMissingModuleErrors": 2,
+      "compilerClean": false,
+      "helperWrites": 0,
+      "nativeWrites": 0,
+      "default13ControlsExact": true,
+      "all92NativeOwnersPreserved": true,
+      "all60CatalogsAnd639SchemasPreserved": true,
+      "actualRuntimeImportResolutionVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false,
+      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted."
     }
   },
   "helperDeclarationCost": {
-    "status": "MCP_HELPERS_APPLIED666_667_MAIN_REFRESH668_NOOP_READ670_MAIN_DIAGNOSTICS_UNRESOLVED",
+    "status": "TYPED_HELPERS666_667_PRESERVED_COMMENT_MAIN837_FRESH_TWO_IMPORT_ERRORS_SEALED839",
     "sourcePlan": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-declaration-cost-correction-v1/source-write-plan.json",
       "bytes": 6719,
@@ -125,14 +164,14 @@
     },
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-hero-journey-provenance.json",
-      "bytes": 30132,
-      "sha256": "da60526add9335e8bf11bba9d0dfc7588051488b58f00eb857f00cd7f5f14f6a"
+      "bytes": 32477,
+      "sha256": "1ed00bddd50acdf0c266a3ea46eb064ed7d91aece2238d1646ba64ed331f9cbc"
     },
     "measuredDeclarationBytes": {
       "before": 935084,
       "after": 114
     },
-    "runtime": "Both emitted JavaScript files, packed/inflated geometry and main fbbcb38f source remain byte-exact. Existing generator now preserves explicit string contracts.",
+    "runtime": "At helper670, emitted helper JavaScript, geometry and the then-active fbb main were byte-exact. The later comment-only837 main keeps identical runtime JavaScript and returns two fresh helper-import diagnostics; no loading improvement is established.",
     "diagnosticBoundary": "This reduces measured unnecessary literal declaration output. Neither helper exceeded the hypothesized1048576 combined bytes; no established causal explanation for actual TS2307 or claim of runtime/loading improvement.",
     "actualFramer": {
       "helpersWritten": true,
@@ -152,6 +191,11 @@
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/helper-writer666/final-actual-typed-helper-authoring-receipt670.json",
       "bytes": 4264,
       "sha256": "98e65a6d9ba9bb9247ee41b6cc9082f1e4dc14b26d770f9d4b1f4517c17078cd"
+    },
+    "compilerCommentSuccessor": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/comment-probe-writer836/final-one-comment-probe-unresolved-import-diagnostics-receipt839.json",
+      "bytes": 6839,
+      "sha256": "638172ceff5f82a88de97d38b9cd131f40096a66ce79c9f571eb365478de5604"
     }
   }
 }

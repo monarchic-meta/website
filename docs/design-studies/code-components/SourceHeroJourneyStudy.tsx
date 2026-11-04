@@ -2,6 +2,11 @@ import * as React from "react"
 import {addPropertyControls,ControlType,RenderTarget,useIsStaticRenderer} from "framer"
 import {SOURCE_HERO_JOURNEY_DATA_0} from "./SourceHeroJourneyData0.ts"
 import {SOURCE_HERO_JOURNEY_DATA_1} from "./SourceHeroJourneyData1.ts"
+/**
+ * The local geometry modules export explicitly string-typed fragments of the
+ * retained raw-DEFLATE base64 payload. These helper contracts preserve the
+ * packed geometry bytes and the existing synchronous decoder.
+ */
 const JOURNEY_PACKED_BASE64=[SOURCE_HERO_JOURNEY_DATA_0,SOURCE_HERO_JOURNEY_DATA_1].join("")
 const JOURNEY_RAW_BYTES=819275
 

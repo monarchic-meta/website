@@ -107,8 +107,8 @@
     },
     "main": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
-      "bytes": 101953,
-      "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
+      "bytes": 102178,
+      "sha256": "4dea6a36b051a9f3537f12d0cb07c7363de9cdad84bdb484df377454cabe55bd"
     },
     "sourceWebsiteBehaviorJSReused": false,
     "publicSchema": {
@@ -465,6 +465,45 @@
         "2466px copy extent remains the prior1440×900 source reference; public poster/start coordinates and narrow full-story adaptation remain unchanged.",
         "Original public Phone390×844 notice remains distinct from the retained responsive full-journey adaptation; its touch2.4/no-momentum behavior is not promoted as the original source path."
       ]
+    },
+    "compilerCommentProbe": {
+      "status": "ONE_COMMENT_SOURCE_WRITE837_FRESH_TWO_IMPORT_ERRORS_SEALED839",
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceHeroJourneyStudy.tsx",
+        "bytes": 102178,
+        "sha256": "4dea6a36b051a9f3537f12d0cb07c7363de9cdad84bdb484df377454cabe55bd"
+      },
+      "prior": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/phased-input-correction/validation-fbbcb38f/SourceHeroJourneyStudy-fbbcb38f.tsx",
+        "bytes": 101953,
+        "sha256": "fbbcb38f96fdb3c1fad7bd691383abffa6deeec1e691071e98c2ffacc69511fd"
+      },
+      "localValidation": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/fresh-main-compile-probe-v1/validation/validation-receipt.json",
+        "bytes": 8700,
+        "sha256": "b244ff65efb9b71523e890f50e6bf4d1f9d3f0dce7e0f8ed9947b5ceaaeb6416"
+      },
+      "actualAuthoring": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO014/comment-probe-writer836/final-one-comment-probe-unresolved-import-diagnostics-receipt839.json",
+        "bytes": 6839,
+        "sha256": "638172ceff5f82a88de97d38b9cd131f40096a66ce79c9f571eb365478de5604"
+      },
+      "commentOnly": true,
+      "runtimeJavaScriptWithCommentsRemovedExact": true,
+      "localStrictChecks": 4,
+      "actualWrites": 1,
+      "actualDiagnosticStrings": 1,
+      "actualMissingModuleErrors": 2,
+      "compilerClean": false,
+      "helperWrites": 0,
+      "nativeWrites": 0,
+      "default13ControlsExact": true,
+      "all92NativeOwnersPreserved": true,
+      "all60CatalogsAnd639SchemasPreserved": true,
+      "actualRuntimeImportResolutionVerified": false,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false,
+      "scope": "Fresh compiler observation after typed helpers. The two errors remain; this does not establish a runtime-bundler failure or a loading improvement. No retry or guessed import path was attempted."
     }
   },
   "compileCostCorrection": {
