@@ -74,7 +74,16 @@
     "all84NodeIdentitiesPreserved": true,
     "allTenEarlierMeasuredPlacementsExact": true,
     "oldHeldPoseAndGapPolicyNegatives": true,
-    "retainedHookRefreshAndPhone": true
+    "retainedHookRefreshAndPhone": true,
+    "legacyGrid": {
+      "checks": 33,
+      "result": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO002/word-trajectory-gap-audit-v1/extended-implementation-v1/legacy-browser-74row-validation/result.json",
+        "bytes": 1117053,
+        "sha256": "d9bbb63daaad1cd4b6cc82fed56c321861e08cc9f5ad7a7d9eda8a01933e86e3"
+      },
+      "scope": "GRID_ONLY: actual shared-film clock, Pause/Replay, native84-word layout, inset pixel isolation and cleanup; unrelated photo suites skipped."
+    }
   },
   "preservation": {
     "publicOverrides": 46,
