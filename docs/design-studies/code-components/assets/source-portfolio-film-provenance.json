@@ -545,5 +545,21 @@
     "value": "managed-carousel-cache-v1",
     "scope": "Private cache identity and keyed movie surface; no new public control.",
     "negativeControls": "Cache-key-only retained the stale renderer; surface-key-only reused the stale inset bitmap. Both boundaries pass the actual pixel comparison."
+  },
+  "releaseVelocitySuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
+      "bytes": 5978,
+      "sha256": "9e8694a1f4204881859f8ba1fd3f4cd0fe2d6d48b05d2a464c410119856e72b6"
+    },
+    "helperSource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "bytes": 19155,
+      "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+    },
+    "film8d5eUnchanged": true,
+    "oldFilmControllerPrefixExact": true,
+    "oldHMR3ProofNotRepeated": true,
+    "actualPreviewAndReload": false
   }
 }

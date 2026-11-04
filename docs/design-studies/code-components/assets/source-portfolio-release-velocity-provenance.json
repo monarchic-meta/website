@@ -1,0 +1,120 @@
+{
+  "reference": "HERO-004",
+  "classification": "Source inspiration / credited interaction recreation",
+  "credit": "Artemii Lebedev / artemiilebedev.com",
+  "source": "https://artemiilebedev.com/",
+  "status": "RELEASE_VELOCITY33_CANONICAL_STATIC10_RETAINED22_PASS_SOURCE841_ACK_INDEPENDENT_CLOSURE_PENDING",
+  "helperSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "bytes": 19155,
+    "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+  },
+  "retainedFilm": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "bytes": 84713,
+    "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0"
+  },
+  "priorHelper": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-velocity.tsx.txt",
+    "bytes": 18022,
+    "sha256": "140c34842dd058e12d9209cc52786eaf9108306cf8af351d4994a8fa4f8603c3"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-velocity-inverse.json",
+    "bytes": 5063,
+    "sha256": "9d11c3ca9f50e79606eed6d0f93ec55d3138fc95665e0366c6dfb0c77155962f"
+  },
+  "sourceFacts": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-release-facts.json",
+    "bytes": 4076,
+    "sha256": "b5090530f1fe1ed3387ff6259e6269c4c69fc89f79384ccde8ab74f01c49e08f"
+  },
+  "focusedChecker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "bytes": 24708,
+    "sha256": "d4b01e0714f26810c5186d4bf20a686925178550a085bd1c6e497c6e76a07ea5"
+  },
+  "retainedChecker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-carousel.mjs",
+    "bytes": 16280,
+    "sha256": "cbc0c9c5298ffb1d483a93de4093628ed2c774b6ee36217d7184e17c39835c49"
+  },
+  "proof": {
+    "focused33": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/release-velocity-proposal-v1/validation-retry-reversal/validated-handoff-receipt.json",
+      "bytes": 14634,
+      "sha256": "ab8ce414e9f1fdec6a58b9ed16fca3b67457494d00ba0159f79e8fab5dc4bfb4"
+    },
+    "canonicalStatic10": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/release-velocity-proposal-v1/canonical-validation/static/static-result.json",
+      "bytes": 2120,
+      "sha256": "2bbaa093c2f3070d8d5dfcca1e7f242e2b19837edd84c151b2a94fd439c14205"
+    },
+    "retainedBrowser22": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/release-velocity-proposal-v1/canonical-validation/retained/result.json",
+      "bytes": 4012,
+      "sha256": "08908214fc295a6d3b749867eb5956a49fe64bc8d6d5d35725b072ba9675ba73"
+    },
+    "browserSuffixByteExactToFocusedProof": true,
+    "compilerAndBrowserRunsSerial": true,
+    "unchangedHMR3AndAll18Or60MatrixNotRepeated": true
+  },
+  "behavior": {
+    "velocityFilter": [
+      0.85,
+      0.15
+    ],
+    "worldMomentum": "velocity * .01 * 3 / (1 - .94)",
+    "worldPerCard": 4.1,
+    "cardCenter": 3.5,
+    "projectRange": [
+      0,
+      7
+    ],
+    "projectedTarget": true,
+    "perGestureVelocityReset": true,
+    "latestEndpointRetainedBeforeReactCommit": true,
+    "defaultPreventedAndPointerCancelUseNearestCleanup": true,
+    "liveExistingStorePauseReducedOrImmersiveOffUsesNearestCleanup": true,
+    "sourceObserved": "The retained valid hold/drag/release sequence establishes the input mode. Numeric velocity history and projection are public-code facts; the local timing sequences are controlled fixtures.",
+    "existing600msCSSSettlePreserved": true,
+    "sourceSettlingCurveExact": false
+  },
+  "preservation": {
+    "filmControllerPrefixExact": true,
+    "otherFivePublicBodiesExact": true,
+    "publicHOCs": 6,
+    "nativeWrites": 0,
+    "newRendererOrGPUContexts": 0,
+    "newAmbientClocks": 0,
+    "newMediaRequests": 0,
+    "canvasAndStaticBehaviorPreserved": true
+  },
+  "legacyCompatibility": {
+    "publicPointerEventDefaultPreventedBooleanAdded": true,
+    "existingDragMadeExplicitlySlowWith18RealMovesAnd35msWaits": true,
+    "allOldProjectCaptionWheelAndResourceAssertionsPreserved": true,
+    "realFilmPerformanceNowUnchanged": true,
+    "fastAndReversalCasesCoveredByFocused33": true,
+    "preimageFixtureUsesTextExtensionToAvoidAstroCompilation": true
+  },
+  "actualFramer": {
+    "sourceWritten841": true,
+    "compilerDiagnostics": 0,
+    "genuinePublicHOCs": 6,
+    "oldIDsAndDirectEmptySchemasExact": true,
+    "globalSchemaCoverageBoundary": "The inherited639-entry table omitted these six H4 overrides; all six were directly measured as controls:{} at840 and preserved separately.",
+    "film8d5eExact": true,
+    "existing12BindingsAndParentsExact": true,
+    "independent842AndOutside843Pending": true,
+    "actualPreviewVerified": false,
+    "actualPaintVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "The existing600ms CSS settling curve remains an authored fit; source inertia easing is not claimed exact.",
+    "Curved projection, materials/effects and Phone behavior remain separate source-fidelity work.",
+    "The first focused run exposed a reversal-fixture input error, not a source failure. The retained failure and approved timestamp-only correction are pinned in the focused receipt.",
+    "Local generated-poster/movie integration is separate from genuine provider playback and actual Framer input/painting/reload."
+  ]
+}

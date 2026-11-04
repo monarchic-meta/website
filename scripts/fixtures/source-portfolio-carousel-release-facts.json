@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "referenceID": "HERO-004",
+  "classification": "Source inspiration / credited independent reconstruction",
+  "creator": "Artemii Lebedev",
+  "sourceURL": "https://artemiilebedev.com/",
+  "use": "Portable comparison-only numeric facts; no original renderer JavaScript is present, imported, or executed.",
+  "evidence": {
+    "publicSource": {
+      "retainedRecord": "publicSource",
+      "bytes": 126812,
+      "sha256": "3b98626175042b6bbcf4b77dcf6296012d59640ae8d13404346fd7e7f6214240"
+    },
+    "observedGestureSequence": {
+      "retainedRecord": "observedGestureSequence",
+      "bytes": 53867,
+      "sha256": "bef9c8c9385def6abb9a7bb9f40c03fb2b58fae8652741c450d13a0ef7d14bee"
+    },
+    "actualSource322": {
+      "retainedRecord": "actualSource322",
+      "bytes": 2243,
+      "sha256": "f7bb29489c97dbbbe18b4959e4cbcd7b5af5b9d4f0511818d23d1e669f386f13"
+    },
+    "actualNative323": {
+      "retainedRecord": "actualNative323",
+      "bytes": 3283,
+      "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
+    },
+    "retainedFilm": {
+      "path": "docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "bytes": 84713,
+      "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0"
+    }
+  },
+  "sourceDefaults": {
+    "projects": 8,
+    "tileWidthWorld": 4,
+    "tileGapWorld": 0.1,
+    "tileStepWorld": 4.1,
+    "sourceScrollCenterCards": 3.5,
+    "dragSensitivity": 0.012,
+    "velocityOldWeight": 0.85,
+    "velocityInstantWeight": 0.15,
+    "momentumNumerator": [
+      0.01,
+      3
+    ],
+    "momentumFriction": 0.94
+  },
+  "equations": {
+    "velocity": "dt>0: previous*.85 + ((clientX-lastX)/dt)*.15; each move updates lastX/time.",
+    "momentum": "(velocity*.01*3)/(1-.94) world units, not card indices.",
+    "sourceIndex": "scroll=(3.5-offset)*4.1; projected=clamp(scroll+momentum,-14.35,14.35); round(-projected/4.1+3.5), clamped0..7.",
+    "units": "Pointer CSSpx/ms becomes world momentum, then divide by4.1 when converting world distance into card-index thresholds."
+  },
+  "sourceCodeLineRanges": {
+    "defaults": "23,38,912–932",
+    "velocity": "2878–2906",
+    "release": "2679–2684"
+  },
+  "independentCases": [
+    {
+      "offset": 3.49,
+      "velocity": 0,
+      "expected": 3
+    },
+    {
+      "offset": 3.49,
+      "velocity": -0.02,
+      "expected": 3,
+      "wrongWithoutDivide": 4
+    },
+    {
+      "offset": 3.49,
+      "velocity": -0.2,
+      "expected": 4
+    },
+    {
+      "offset": 3.51,
+      "velocity": 0.021,
+      "expected": 4,
+      "wrongWithoutDivide": 3
+    },
+    {
+      "offset": 3.51,
+      "velocity": 0.2,
+      "expected": 3
+    },
+    {
+      "offset": 0,
+      "velocity": 100,
+      "expected": 0
+    },
+    {
+      "offset": 7,
+      "velocity": -100,
+      "expected": 7
+    }
+  ],
+  "evidenceClasses": {
+    "observed": "The retained valid-hold-control input audit established650ms named hold, pressed horizontal drag, carousel retained after release, and wheel operation.",
+    "publicCode": "Velocity weights, momentum projection and index conversion are literal retained source-code facts; the numeric test histories are synthetic, not captured source input trajectories.",
+    "projectFits": [
+      "Keep600ms cubic-bezier(.2,.7,.2,1) settling; source uses .1 per-render-frame lerp.",
+      "Existing affine host/clientWidth scaling maps event velocity into logical displacement units.",
+      "Nonfinite dt skips a velocity sample; nonpositive dt follows the source guard.",
+      "Pointercancel/defaultPrevented/live Pause/reduced/immersive-off use nearest cleanup without newly projected momentum."
+    ],
+    "authoring": "Source322/native323 remain frozen historical preservation evidence. This portable checker does not re-read or revalidate a Framer project."
+  },
+  "fullOriginalEvidence": "Pinned in the frozen validated-handoff receipt and original artifact/provenance records; deliberately not runtime/Nix dependencies.",
+  "actualPreviewVerified": false,
+  "afterEditorReload": false
+}

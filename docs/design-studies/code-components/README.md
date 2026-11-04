@@ -39,6 +39,18 @@ counterparts, including both native and live Origin studies. The handoffs
 distinguish local code validation from actual Framer placement, reload and
 Preview evidence.
 
+## Artemii carousel release
+
+[SourcePortfolioCarousel.tsx](SourcePortfolioCarousel.tsx) now uses the source
+velocity filter and projected release target, including the conversion from
+world distance to card index. Cancelled releases and live pause changes retain
+the existing nearest-card cleanup. The old settling animation remains a fit.
+
+The [provenance](assets/source-portfolio-release-velocity-provenance.json) records
+33 focused checks,10 canonical static checks and22 retained movie/carousel
+checks. The movie renderer, controls and six public roles are preserved; actual
+Framer Preview and reload remain separate.
+
 ## Cantor8 opening and Foundation
 
 [SourceCantorOpening.tsx](SourceCantorOpening.tsx) supplies native overrides for

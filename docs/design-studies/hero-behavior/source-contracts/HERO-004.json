@@ -246,6 +246,28 @@
       "bytes": 3283,
       "sha256": "1785abce902677f78626b7e2dc010a1f094288363c93f6a7a77899674f14e091"
     },
-    "nativeScope": "Five new editable families, nine retained row/tag moves and two approved note texts; all prior IDs, credits, saved controls and all other pages preserved. Two new caption coordinates use Framer centipixel serialization."
+    "nativeScope": "Five new editable families, nine retained row/tag moves and two approved note texts; all prior IDs, credits, saved controls and all other pages preserved. Two new caption coordinates use Framer centipixel serialization.",
+    "releaseVelocityCorrection": {
+      "status": "RELEASE_VELOCITY33_CANONICAL_STATIC10_RETAINED22_PASS_SOURCE841_ACK_INDEPENDENT_CLOSURE_PENDING",
+      "source": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+        "bytes": 19155,
+        "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+      },
+      "provenance": {
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
+        "bytes": 5978,
+        "sha256": "9e8694a1f4204881859f8ba1fd3f4cd0fe2d6d48b05d2a464c410119856e72b6"
+      },
+      "focusedChecks": 33,
+      "canonicalStaticChecks": 10,
+      "retainedBrowserChecks": 22,
+      "actualSourceWrite841": true,
+      "actualDiagnostics": 0,
+      "genuine6RowsAndDirectSchemasExact": true,
+      "native12BindingsUnchanged": true,
+      "actualPreviewVerified": false,
+      "afterEditorReload": false
+    }
   }
 }

@@ -1,0 +1,80 @@
+{
+  "indexUnits": "UTF-16 code units",
+  "applicationOrder": "Apply listed reverse patches sequentially; each coordinate belongs to the current intermediate text, not one final coordinate space",
+  "preimage": {
+    "path": "scripts/fixtures/source-portfolio-carousel-pre-velocity.tsx.txt",
+    "bytes": 18022,
+    "sha256": "140c34842dd058e12d9209cc52786eaf9108306cf8af351d4994a8fa4f8603c3"
+  },
+  "source": {
+    "path": "docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "bytes": 19155,
+    "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+  },
+  "reverse": [
+    {
+      "start": 16044,
+      "length": 64,
+      "before": "onPointerUp={finish} onPointerCancel={event=>finish(event,true)}",
+      "after": "onPointerUp={finish} onPointerCancel={finish}",
+      "label": "separate cancel dispatch without extra listener or scheduler"
+    },
+    {
+      "start": 14905,
+      "length": 55,
+      "before": "setOffset(selected);if(store?.get().project!==selected)",
+      "after": "setOffset(selected);const store=getFilmControls();if(store?.get().project!==selected)",
+      "label": "reuse the same retained controller snapshot and writer"
+    },
+    {
+      "start": 14587,
+      "length": 318,
+      "before": "const store=getFilmControls(),live=store?.get();const selected=filmProject(start.moved?(cancelled||event.defaultPrevented||!active||!live||!live.immersive||live.paused||live.reduced?Math.round(start.currentOffset):carouselReleaseProject(start.currentOffset,start.velocity)):start.hit??Math.round(start.currentOffset));",
+      "after": "const selected=filmProject(start.moved?Math.round(offset):start.hit??Math.round(offset));",
+      "label": "project only live-admitted uncancelled pointerup release, preserve nearest-offset cleanup"
+    },
+    {
+      "start": 14406,
+      "length": 74,
+      "before": "const finish=(event:React.PointerEvent<HTMLDivElement>,cancelled=false)=>{",
+      "after": "const finish=(event:React.PointerEvent<HTMLDivElement>)=>{",
+      "label": "explicit project cleanup policy for source-unobserved pointercancel"
+    },
+    {
+      "start": 14177,
+      "length": 92,
+      "before": "const next=filmClamp(start.offset-dx*.012/4.1,0,7);start.currentOffset=next;setOffset(next);",
+      "after": "const next=filmClamp(start.offset-dx*.012/4.1,0,7);setOffset(next);",
+      "label": "retain exact final drag endpoint before a React commit"
+    },
+    {
+      "start": 13898,
+      "length": 241,
+      "before": "const at=performance.now();start.velocity=carouselReleaseVelocity(start.velocity,start.lastX,start.lastAt,event.clientX,at,start.scale);start.lastX=event.clientX;start.lastAt=at;const dx=(event.clientX-start.x)*start.scale;if(Math.abs(dx)>2)",
+      "after": "const dx=(event.clientX-start.x)*start.scale;if(Math.abs(dx)>2)",
+      "label": "event-only source velocity sampling"
+    },
+    {
+      "start": 13244,
+      "length": 137,
+      "before": "offset,currentOffset:offset,scale:size.width/Math.max(1,r.width),moved:false,lastX:event.clientX,lastAt:performance.now(),velocity:0,hit:",
+      "after": "offset,scale:size.width/Math.max(1,r.width),moved:false,hit:",
+      "label": "reset source velocity on every admitted pointerdown"
+    },
+    {
+      "start": 9741,
+      "length": 173,
+      "before": "const drag=React.useRef<{id:number;x:number;offset:number;currentOffset:number;scale:number;moved:boolean;lastX:number;lastAt:number;velocity:number;hit?:number}|null>(null)",
+      "after": "const drag=React.useRef<{id:number;x:number;offset:number;scale:number;moved:boolean;hit?:number}|null>(null)",
+      "label": "per-gesture finite velocity and current-offset fields"
+    },
+    {
+      "start": 8311,
+      "length": 795,
+      "before": "function carouselGeometry(width:number,height:number){const unit=height/(2*Math.tan(25*Math.PI/180)*8),tileWidth=4*unit,tileHeight=2.25*unit;return{unit,tileWidth,tileHeight,step:4.1*unit,left:(width-tileWidth)/2,top:(height-tileHeight)/2}}\n// Retained source release equations; the existing CSS settling curve stays an authored fit.\nfunction carouselReleaseVelocity(previous:number,lastX:number,lastAt:number,x:number,at:number,scale:number){const dt=at-lastAt;return dt>0&&Number.isFinite(dt)?previous*.85+(x-lastX)*scale/dt*.15:previous}\nfunction carouselReleaseProject(offset:number,velocity:number){const step=4.1,center=3.5,momentum=(velocity*.01*3)/(1-.94),projected=filmClamp((center-offset)*step+momentum,-center*step,center*step);return filmProject(Math.round(-projected/step+center))}",
+      "after": "function carouselGeometry(width:number,height:number){const unit=height/(2*Math.tan(25*Math.PI/180)*8),tileWidth=4*unit,tileHeight=2.25*unit;return{unit,tileWidth,tileHeight,step:4.1*unit,left:(width-tileWidth)/2,top:(height-tileHeight)/2}}",
+      "label": "private numeric source release equations"
+    }
+  ],
+  "history": "Exact9reversepatches copied unchanged from the frozen external60c0→140c inverse; only these two path metadata fields are made repository-relative."
+}
