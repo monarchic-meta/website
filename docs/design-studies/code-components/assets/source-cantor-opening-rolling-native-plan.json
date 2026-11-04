@@ -1,0 +1,1423 @@
+{
+  "status": "Source-only native integration audit; no actual writes",
+  "reference": "HERO-007",
+  "actualBaseline": {
+    "ownerSHA256": "b611fdab46187d4352bbf6e30159e3b37fe79bb6abd54c61c2194d6a0f4f70bb",
+    "model": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/final663-actual-data.json",
+      "bytes": 355344,
+      "sha256": "40242ad003f5f26466218a0d1d7ddcced37286d53fe4fa99b1fe76b3e76d5ea7"
+    },
+    "map": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/native-writer630/immutable-final-current-native-map664.json",
+      "bytes": 31563,
+      "sha256": "c35dfb848364c037bb7335b90412e28393a3b1a88d785894ed7c66fd5e0eb1a3"
+    },
+    "oldRecipe": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-text-source-plan-v1/native-binding-recipe.json",
+      "bytes": 8655,
+      "sha256": "879e6d5e22b5eef7ad5c0fcc8fb2b6224c7d0f444f191105378c16c0c878040c"
+    }
+  },
+  "moduleToUpdate": {
+    "file": "SourceCantorOpening.tsx",
+    "actualModule": "codeFile/j9eNsgo",
+    "oldExports": 52,
+    "newExports": 4,
+    "finalExports": 56,
+    "oldPrefixSHA256": "910767a75f23ea0398328245d86ec6cafc056afeb30770a84ae0ad48d8ede46a"
+  },
+  "bindings": [
+    {
+      "key": "opening-root",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "sCvFUezDM"
+      },
+      "newExport": "withCantorRollingOpeningRoot",
+      "copies": {
+        "desktop": "sCvFUezDM",
+        "phone": "FWmbJSbKvsCvFUezDM"
+      },
+      "expectedPrior": {
+        "module": "SourceCantorOpening",
+        "name": "withCantorOpeningRoot"
+      },
+      "order": "LAST",
+      "composition": "withCantorOpeningRoot(rollingScope(Component))",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "sCvFUezDM",
+            "type": "FrameNode",
+            "name": "HERO-007 / native interactive shell",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorOpeningRoot",
+            "visible": true,
+            "tag": null,
+            "link": null,
+            "text": null
+          },
+          "ancestorIDs": [
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvsCvFUezDM",
+            "type": "FrameNode",
+            "name": "HERO-007 / native interactive shell",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorOpeningRoot",
+            "visible": true,
+            "tag": null,
+            "link": null,
+            "text": null
+          },
+          "ancestorIDs": [
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-home",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "Er5IijxoJ"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "Oj_ekcsn4",
+        "phone": "FWmbJSbKvOj_ekcsn4"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "Oj_ekcsn4",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-Er5IijxoJ",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Home"
+          },
+          "ancestorIDs": [
+            "M3j8TiHb2",
+            "VUwM4GNq7",
+            "I1OpNhX2s",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvOj_ekcsn4",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-Er5IijxoJ",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Home"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvM3j8TiHb2",
+            "FWmbJSbKvVUwM4GNq7",
+            "FWmbJSbKvI1OpNhX2s",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-products",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "adQ9aozNY"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "bPJVo4h8X",
+        "phone": "FWmbJSbKvbPJVo4h8X"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "bPJVo4h8X",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-adQ9aozNY",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Products"
+          },
+          "ancestorIDs": [
+            "FIpiOAR8Y",
+            "VUwM4GNq7",
+            "I1OpNhX2s",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvbPJVo4h8X",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-adQ9aozNY",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Products"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvFIpiOAR8Y",
+            "FWmbJSbKvVUwM4GNq7",
+            "FWmbJSbKvI1OpNhX2s",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-partners",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "W4GFiiufB"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "jNrhqVOz3",
+        "phone": "FWmbJSbKvjNrhqVOz3"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "jNrhqVOz3",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-W4GFiiufB",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Partners"
+          },
+          "ancestorIDs": [
+            "uQ_uSQHBF",
+            "VUwM4GNq7",
+            "I1OpNhX2s",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvjNrhqVOz3",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-W4GFiiufB",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Partners"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvuQ_uSQHBF",
+            "FWmbJSbKvVUwM4GNq7",
+            "FWmbJSbKvI1OpNhX2s",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-news",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "XW7Vk6k8L"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "LRH95xYcj",
+        "phone": "FWmbJSbKvLRH95xYcj"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "LRH95xYcj",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-XW7Vk6k8L",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "News"
+          },
+          "ancestorIDs": [
+            "WE0B1dxNn",
+            "VUwM4GNq7",
+            "I1OpNhX2s",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvLRH95xYcj",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-XW7Vk6k8L",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "News"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvWE0B1dxNn",
+            "FWmbJSbKvVUwM4GNq7",
+            "FWmbJSbKvI1OpNhX2s",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-blog",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "h0o9hIbyo"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "OyzyluPVl",
+        "phone": "FWmbJSbKvOyzyluPVl"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "OyzyluPVl",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-h0o9hIbyo",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Blog"
+          },
+          "ancestorIDs": [
+            "DQQmGnVh1",
+            "VUwM4GNq7",
+            "I1OpNhX2s",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvOyzyluPVl",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-h0o9hIbyo",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Blog"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvDQQmGnVh1",
+            "FWmbJSbKvVUwM4GNq7",
+            "FWmbJSbKvI1OpNhX2s",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-career",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "kWXxS8gv0"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "SUZaHDL_P",
+        "phone": "FWmbJSbKvSUZaHDL_P"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "SUZaHDL_P",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-kWXxS8gv0",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Career"
+          },
+          "ancestorIDs": [
+            "noC4TX5jT",
+            "KKGfVYHuN",
+            "GF96LnjwF",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvSUZaHDL_P",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-kWXxS8gv0",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Career"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvnoC4TX5jT",
+            "FWmbJSbKvKKGfVYHuN",
+            "FWmbJSbKvGF96LnjwF",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-company",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "KKO0niDlY"
+      },
+      "newExport": "withCantorRollingHeaderLinkText",
+      "copies": {
+        "desktop": "DNH6BH1oH",
+        "phone": "FWmbJSbKvDNH6BH1oH"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "DNH6BH1oH",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-KKO0niDlY",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Company"
+          },
+          "ancestorIDs": [
+            "V3OVR3x10",
+            "KKGfVYHuN",
+            "GF96LnjwF",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvDNH6BH1oH",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-KKO0niDlY",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Company"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvV3OVR3x10",
+            "FWmbJSbKvKKGfVYHuN",
+            "FWmbJSbKvGF96LnjwF",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "header-contact",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "IUmBJCqnr"
+      },
+      "newExport": "withCantorRollingText",
+      "copies": {
+        "desktop": "jkbKfEJQW",
+        "phone": "FWmbJSbKvjkbKfEJQW"
+      },
+      "expectedPrior": null,
+      "order": "BEFORE_ROOT",
+      "composition": "No old target HOC to replace; preserve semantic/native navigation and all ancestor HOCs untouched",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "jkbKfEJQW",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-IUmBJCqnr",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Get in Touch"
+          },
+          "ancestorIDs": [
+            "EvRBM8mZJ",
+            "KKGfVYHuN",
+            "GF96LnjwF",
+            "swhWD5rjw",
+            "MPUYBeu7_",
+            "Z3ooAlwp3",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvjkbKfEJQW",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-IUmBJCqnr",
+            "hasCodeOverride": false,
+            "codeOverride": null,
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Get in Touch"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvEvRBM8mZJ",
+            "FWmbJSbKvKKGfVYHuN",
+            "FWmbJSbKvGF96LnjwF",
+            "FWmbJSbKvswhWD5rjw",
+            "FWmbJSbKvMPUYBeu7_",
+            "FWmbJSbKvZ3ooAlwp3",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "hero-contact",
+      "previousRecipeTarget": {
+        "existingPrimaryID": "jMGeEzifg"
+      },
+      "newExport": "withCantorRollingCompanyLabel",
+      "copies": {
+        "desktop": "VObE38XFc",
+        "phone": "FWmbJSbKvVObE38XFc"
+      },
+      "expectedPrior": {
+        "module": "SourceCantorOpening",
+        "name": "withCantorFoundationCompanyLabel"
+      },
+      "order": "BEFORE_ROOT",
+      "composition": "withCantorFoundationCompanyLabel(rollingText(Component,\"button\"))",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "VObE38XFc",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-jMGeEzifg",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompanyLabel",
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Get in Touch"
+          },
+          "ancestorIDs": [
+            "H8tvQhwGw",
+            "U76MZR6aC",
+            "Z0xBAz48s",
+            "tdFb3TFnC",
+            "kmR82V7gx",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvVObE38XFc",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-jMGeEzifg",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompanyLabel",
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "Get in Touch"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvH8tvQhwGw",
+            "FWmbJSbKvU76MZR6aC",
+            "FWmbJSbKvZ0xBAz48s",
+            "FWmbJSbKvtdFb3TFnC",
+            "FWmbJSbKvkmR82V7gx",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    },
+    {
+      "key": "foundation-company",
+      "previousRecipeTarget": {
+        "resolveFromWriterFinalReceipt": "Active unlinked500 Company RTE created by Root amendment. Do not target hidden linked Gi7xFkx8o."
+      },
+      "newExport": "withCantorRollingCompanyLabel",
+      "copies": {
+        "desktop": "JuzTKPcvR",
+        "phone": "FWmbJSbKvJuzTKPcvR"
+      },
+      "expectedPrior": {
+        "module": "SourceCantorOpening",
+        "name": "withCantorFoundationCompanyLabel"
+      },
+      "order": "BEFORE_ROOT",
+      "composition": "withCantorFoundationCompanyLabel(rollingText(Component,\"button\"))",
+      "actual": {
+        "desktop": {
+          "before": {
+            "id": "JuzTKPcvR",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-Gi7xFkx8o",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompanyLabel",
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "The Company"
+          },
+          "ancestorIDs": [
+            "Xuvcyv9aM",
+            "gqH5ynlpe",
+            "FIVwFhusP",
+            "ibbQVVB3K",
+            "ecFqV3bJW",
+            "sCvFUezDM",
+            "yMdvRggxW",
+            "IhJNN_eMc"
+          ]
+        },
+        "phone": {
+          "before": {
+            "id": "FWmbJSbKvJuzTKPcvR",
+            "type": "RichTextNode",
+            "name": "HERO-007 / Source / preserved-original-genuine500-Gi7xFkx8o",
+            "hasCodeOverride": true,
+            "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompanyLabel",
+            "visible": true,
+            "tag": "p",
+            "link": null,
+            "text": "The Company"
+          },
+          "ancestorIDs": [
+            "FWmbJSbKvXuvcyv9aM",
+            "FWmbJSbKvgqH5ynlpe",
+            "FWmbJSbKvFIVwFhusP",
+            "FWmbJSbKvibbQVVB3K",
+            "FWmbJSbKvecFqV3bJW",
+            "FWmbJSbKvsCvFUezDM",
+            "FWmbJSbKv",
+            "IhJNN_eMc"
+          ]
+        }
+      }
+    }
+  ],
+  "physicalBindings": 22,
+  "newNativeFamilies": 0,
+  "sourceGeometryChanges": 0,
+  "oldParentBindingsChanged": 0,
+  "oldLinkOrAriaAttrsChanged": 0,
+  "oldFontOrVisibilityChanges": 0,
+  "hiddenOriginalsMustStayArchived": [
+    "Er5IijxoJ",
+    "adQ9aozNY",
+    "W4GFiiufB",
+    "XW7Vk6k8L",
+    "h0o9hIbyo",
+    "kWXxS8gv0",
+    "KKO0niDlY",
+    "IUmBJCqnr",
+    "jMGeEzifg",
+    "Gi7xFkx8o"
+  ],
+  "keyFinding": "The historical11-binding recipe predates active unlinked font fallbacks; all10 text targets must use map664 active clones, not hidden originals. Actual old header8 RTEs have no override, and their semantic-link/blur/arrow/layout parents stay untouched. Root and both CompanyLabel priors are composed directly by the four unchanged Rolling exports.",
+  "inverse": "Restore exactly all22 codeOverride values and shared replica metadata from fresh preflight. Restore the one old52 source by explicit inverse only when Root requests it. No parent/geometry/link/font/text/visibility mutation.",
+  "guardedWriterSteps": [
+    "Fresh positively read all11 D/P priors/parents and old52 catalog before write; this cached owner is not proof of a later unchanged model.",
+    "Write self-contained56 source to EXISTING SourceCantorOpening.tsx and require actual compiler0/all56 genuine overrides/old52 IDs+schemas retained.",
+    "Bind10 active RTE families through Primary-only supported semantics. Leave every parent semantic-link/BlurredNavigation/HeaderArrowButton/CTAArrowButton/main/contact/input role untouched.",
+    "Bind composed shell root last so old OpeningContext and new RollingContext share the same actual module instance.",
+    "Read back entire11-family inverse and outside-owner preservation before claiming authoring.",
+    "Actual forwarded paragraph/real anchor semantics, accessibility copy, hover/keyboard950/320 behavior, paint and reload remain unverified gates."
+  ],
+  "ancestorRecords": {
+    "yMdvRggxW": {
+      "id": "yMdvRggxW",
+      "type": "FrameNode",
+      "name": "Desktop",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "IhJNN_eMc": {
+      "id": "IhJNN_eMc",
+      "type": "WebPageNode",
+      "name": "HERO-007 / Cantor8 / source filament instrument and Foundation handoff / Behavior iteration",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": false,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKv": {
+      "id": "FWmbJSbKv",
+      "type": "FrameNode",
+      "name": "Phone",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "M3j8TiHb2": {
+      "id": "M3j8TiHb2",
+      "type": "FrameNode",
+      "name": "Original source navigation / Home",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "VUwM4GNq7": {
+      "id": "VUwM4GNq7",
+      "type": "FrameNode",
+      "name": "main navigation",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorBlurredNavigation",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "I1OpNhX2s": {
+      "id": "I1OpNhX2s",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / source-main-nav-anchor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceMainNavAnchor",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "swhWD5rjw": {
+      "id": "swhWD5rjw",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / desktop-navigation-holder",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorDesktopNavigationOnly",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "MPUYBeu7_": {
+      "id": "MPUYBeu7_",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / persistent-source-header",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorPersistentHeader",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "Z3ooAlwp3": {
+      "id": "Z3ooAlwp3",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / header-input-relay",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/t1FmqQc:withCantorInstrumentInput",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "sCvFUezDM": {
+      "id": "sCvFUezDM",
+      "type": "FrameNode",
+      "name": "HERO-007 / native interactive shell",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorOpeningRoot",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvM3j8TiHb2": {
+      "id": "FWmbJSbKvM3j8TiHb2",
+      "type": "FrameNode",
+      "name": "Original source navigation / Home",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvVUwM4GNq7": {
+      "id": "FWmbJSbKvVUwM4GNq7",
+      "type": "FrameNode",
+      "name": "main navigation",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorBlurredNavigation",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvI1OpNhX2s": {
+      "id": "FWmbJSbKvI1OpNhX2s",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / source-main-nav-anchor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceMainNavAnchor",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvswhWD5rjw": {
+      "id": "FWmbJSbKvswhWD5rjw",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / desktop-navigation-holder",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorDesktopNavigationOnly",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvMPUYBeu7_": {
+      "id": "FWmbJSbKvMPUYBeu7_",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / persistent-source-header",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorPersistentHeader",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvZ3ooAlwp3": {
+      "id": "FWmbJSbKvZ3ooAlwp3",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / header-input-relay",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/t1FmqQc:withCantorInstrumentInput",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvsCvFUezDM": {
+      "id": "FWmbJSbKvsCvFUezDM",
+      "type": "FrameNode",
+      "name": "HERO-007 / native interactive shell",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorOpeningRoot",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FIpiOAR8Y": {
+      "id": "FIpiOAR8Y",
+      "type": "FrameNode",
+      "name": "Original source navigation / Products",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/products",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvFIpiOAR8Y": {
+      "id": "FWmbJSbKvFIpiOAR8Y",
+      "type": "FrameNode",
+      "name": "Original source navigation / Products",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/products",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "uQ_uSQHBF": {
+      "id": "uQ_uSQHBF",
+      "type": "FrameNode",
+      "name": "Original source navigation / Partners",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/partners",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvuQ_uSQHBF": {
+      "id": "FWmbJSbKvuQ_uSQHBF",
+      "type": "FrameNode",
+      "name": "Original source navigation / Partners",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/partners",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "WE0B1dxNn": {
+      "id": "WE0B1dxNn",
+      "type": "FrameNode",
+      "name": "Original source navigation / News",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/newsroom",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvWE0B1dxNn": {
+      "id": "FWmbJSbKvWE0B1dxNn",
+      "type": "FrameNode",
+      "name": "Original source navigation / News",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/newsroom",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "DQQmGnVh1": {
+      "id": "DQQmGnVh1",
+      "type": "FrameNode",
+      "name": "Original source navigation / Blog",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/official-blog",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvDQQmGnVh1": {
+      "id": "FWmbJSbKvDQQmGnVh1",
+      "type": "FrameNode",
+      "name": "Original source navigation / Blog",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/official-blog",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "noC4TX5jT": {
+      "id": "noC4TX5jT",
+      "type": "FrameNode",
+      "name": "Original source navigation / Career",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/career",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "KKGfVYHuN": {
+      "id": "KKGfVYHuN",
+      "type": "FrameNode",
+      "name": "contact navigation",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorBlurredNavigation",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "GF96LnjwF": {
+      "id": "GF96LnjwF",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / source-contact-nav-anchor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceContactNavAnchor",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvnoC4TX5jT": {
+      "id": "FWmbJSbKvnoC4TX5jT",
+      "type": "FrameNode",
+      "name": "Original source navigation / Career",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/career",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvKKGfVYHuN": {
+      "id": "FWmbJSbKvKKGfVYHuN",
+      "type": "FrameNode",
+      "name": "contact navigation",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorBlurredNavigation",
+      "visible": false,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvGF96LnjwF": {
+      "id": "FWmbJSbKvGF96LnjwF",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / source-contact-nav-anchor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceContactNavAnchor",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "V3OVR3x10": {
+      "id": "V3OVR3x10",
+      "type": "FrameNode",
+      "name": "Original source navigation / Company",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/company",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvV3OVR3x10": {
+      "id": "FWmbJSbKvV3OVR3x10",
+      "type": "FrameNode",
+      "name": "Original source navigation / Company",
+      "hasCodeOverride": false,
+      "codeOverride": null,
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/company",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "EvRBM8mZJ": {
+      "id": "EvRBM8mZJ",
+      "type": "FrameNode",
+      "name": "Original source navigation / Get in Touch",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorHeaderArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/contact",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvEvRBM8mZJ": {
+      "id": "FWmbJSbKvEvRBM8mZJ",
+      "type": "FrameNode",
+      "name": "Original source navigation / Get in Touch",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorHeaderArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/contact",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "H8tvQhwGw": {
+      "id": "H8tvQhwGw",
+      "type": "FrameNode",
+      "name": "source contact action",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorCTAArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/contact",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "U76MZR6aC": {
+      "id": "U76MZR6aC",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / hero-action-frame",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorHeroActionFrame",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "Z0xBAz48s": {
+      "id": "Z0xBAz48s",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / hero-copy-stack",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorHeroCopy",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "tdFb3TFnC": {
+      "id": "tdFb3TFnC",
+      "type": "FrameNode",
+      "name": "Source opening / nativeUI and pointer-input common ancestor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/t1FmqQc:withCantorInstrumentInput",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "kmR82V7gx": {
+      "id": "kmR82V7gx",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / viewport-hero",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorViewportHero",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvH8tvQhwGw": {
+      "id": "FWmbJSbKvH8tvQhwGw",
+      "type": "FrameNode",
+      "name": "source contact action",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorCTAArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/contact",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvU76MZR6aC": {
+      "id": "FWmbJSbKvU76MZR6aC",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / hero-action-frame",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorHeroActionFrame",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvZ0xBAz48s": {
+      "id": "FWmbJSbKvZ0xBAz48s",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / hero-copy-stack",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorHeroCopy",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvtdFb3TFnC": {
+      "id": "FWmbJSbKvtdFb3TFnC",
+      "type": "FrameNode",
+      "name": "Source opening / nativeUI and pointer-input common ancestor",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/t1FmqQc:withCantorInstrumentInput",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvkmR82V7gx": {
+      "id": "FWmbJSbKvkmR82V7gx",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / viewport-hero",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorViewportHero",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "Xuvcyv9aM": {
+      "id": "Xuvcyv9aM",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-company-hover",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorCTAArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/company",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "gqH5ynlpe": {
+      "id": "gqH5ynlpe",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-company-button",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompany",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FIVwFhusP": {
+      "id": "FIVwFhusP",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-content",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationContent",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "ibbQVVB3K": {
+      "id": "ibbQVVB3K",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-execution",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationExecution",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "ecFqV3bJW": {
+      "id": "ecFqV3bJW",
+      "type": "FrameNode",
+      "name": "Source Foundation / ordinary native introductory handoff",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceFoundation",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvXuvcyv9aM": {
+      "id": "FWmbJSbKvXuvcyv9aM",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-company-hover",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/manjRa2:withCantorCTAArrowButton",
+      "visible": true,
+      "tag": null,
+      "link": {
+        "href": "https://www.cantor8.io/company",
+        "openInNewTab": true
+      },
+      "text": null
+    },
+    "FWmbJSbKvgqH5ynlpe": {
+      "id": "FWmbJSbKvgqH5ynlpe",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-company-button",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationCompany",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvFIVwFhusP": {
+      "id": "FWmbJSbKvFIVwFhusP",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-content",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationContent",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvibbQVVB3K": {
+      "id": "FWmbJSbKvibbQVVB3K",
+      "type": "FrameNode",
+      "name": "HERO-007 / Source / foundation-execution",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorFoundationExecution",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    },
+    "FWmbJSbKvecFqV3bJW": {
+      "id": "FWmbJSbKvecFqV3bJW",
+      "type": "FrameNode",
+      "name": "Source Foundation / ordinary native introductory handoff",
+      "hasCodeOverride": true,
+      "codeOverride": "codeFile/j9eNsgo:withCantorSourceFoundation",
+      "visible": true,
+      "tag": null,
+      "link": null,
+      "text": null
+    }
+  },
+  "compaction": "Only consumed target priors, links and ancestor HOC identities are copied; full native capture remains pinned externally."
+}

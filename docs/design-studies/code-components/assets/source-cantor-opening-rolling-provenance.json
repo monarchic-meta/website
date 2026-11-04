@@ -1,0 +1,115 @@
+{
+  "reference": "HERO-007",
+  "classification": "Source inspiration",
+  "credit": "Cantor8 / Artemii Lebedev",
+  "status": "SAME_MODULE_ROLLING56_LOCAL51_AND_RETAINED52_PASS_FRAMER_PENDING",
+  "manualSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpeningRolling.tsx",
+    "bytes": 47157,
+    "sha256": "d4ad84ed63a3550f3510db34d0e6fc34bbc9cc830661e9768585ef5b8cf307b9"
+  },
+  "leafInputs": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorOpening.tsx",
+      "bytes": 33991,
+      "sha256": "910767a75f23ea0398328245d86ec6cafc056afeb30770a84ae0ad48d8ede46a"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceCantorRollingText.tsx",
+      "bytes": 13298,
+      "sha256": "64879d4374f0e34d1aa78011e4e3b8d01dcf28c3d8a3681a478a56c372c6a0ba"
+    }
+  ],
+  "sourceInverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-rolling-inverse.json",
+    "bytes": 14356,
+    "sha256": "df9f1d4abdb8770f62b5aebcf1e19417e273875abcde0be3eb9a5eb515e21e61"
+  },
+  "nativePlan": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-cantor-opening-rolling-native-plan.json",
+    "bytes": 42927,
+    "sha256": "28475e87a531538d955981549afc269ab46e6eb2671dd49dab12288f2241c4ff"
+  },
+  "receipt": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/final-d4ad84ed-rolling51-opening52/validated-bundle-handoff-receipt.json",
+    "bytes": 14392,
+    "sha256": "44f78395c1e0bea26b901881d97a881e4e4525caa7ecbf8f0c26a4f575c6cc93"
+  },
+  "manualGenerator": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/build-source-cantor-opening-rolling.mjs",
+    "bytes": 6110,
+    "sha256": "c3d969b53b5bd6fc71c367d8ff6d91e0350b28f1a9d28a8ebed175d989074398"
+  },
+  "checkers": [
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-cantor-opening-rolling.mjs",
+      "bytes": 40775,
+      "sha256": "ce8f20bd70820625ce3daf409a8d88e251ad91e9791e4c5fa5afc79b002f0c19"
+    },
+    {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-cantor-opening-rolling-retained.mjs",
+      "bytes": 36313,
+      "sha256": "3a4ee2afaf4b5c705a74c711fe60296273e18e532aedd37be80dfdbd89c9fdc3"
+    }
+  ],
+  "packaging": {
+    "retainedOpeningBytes": 33991,
+    "retainedPublicOverrides": 52,
+    "newPublicOverrides": 4,
+    "total": 56,
+    "oldOpeningContextInstances": 1,
+    "privateRenames": 0,
+    "relativeModuleImports": 0,
+    "old52PrefixExact": true,
+    "new4ExportBodiesExact": true,
+    "automaticSynchronization": false,
+    "actualDestination": "Existing Framer j9eNsgo / SourceCantorOpening.tsx"
+  },
+  "nativeIntegration": {
+    "families": 11,
+    "actualCopies": 22,
+    "activeCloneIDsFrom663And664": true,
+    "hiddenOriginalClonesExcluded": true,
+    "header8CurrentOverridesNull": true,
+    "rootAndTwoCompanyBindingsComposeOldHOCs": true,
+    "allParentLinksArrowNavigationAndInputBindingsPreserved": true,
+    "geometryTextFontChanges": 0
+  },
+  "validation": {
+    "rollingFull": 51,
+    "retainedOpeningFull": 52,
+    "rollingOriginalAssertions": 43,
+    "retainedOpeningOriginalAssertions": 50,
+    "oneEvaluatedModulePerFixture": true,
+    "rollingCanonicalStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/canonical-validation/rolling-static11.json",
+      "bytes": 1138,
+      "sha256": "539f250130b8e1d1c516a41a0368d4be02370a6a179f5b4ca3cd1a2b1ae3d3ee"
+    },
+    "openingCanonicalStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/canonical-validation/opening-static12.json",
+      "bytes": 1216,
+      "sha256": "e25795a7860f49cac385e665472c8334a7540c5fe0ff6cf80b44ceacebadbe40"
+    },
+    "manualRegenerationSHA256": "d4ad84ed63a3550f3510db34d0e6fc34bbc9cc830661e9768585ef5b8cf307b9",
+    "failurePolicy": "The minimal phone probe lacked ordinary-flow content and had height0; one ordinary-flow child fixed the fixture without changing production, assertions or resource limits."
+  },
+  "nix": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-007/rolling-same-module-packaging-v1/canonical-validation/nix-evaluation.json",
+    "bytes": 163,
+    "sha256": "f9e5e7a946e3c17c9be14b6073fc4ece51d035dbf60204414e63da5f1eb7b48a"
+  },
+  "actualFramer": {
+    "sourceWritten": false,
+    "nativeBindingsWritten": false,
+    "genuine56OverridesVerified": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "The Framer manual handoff must reuse the existing Opening module and all old52 IDs/schemas; a second Opening controller would split context.",
+    "Native-like DOM/font/reference and retained actual Instrument proofs do not prove Framer ref forwarding, native glyph paint or reload.",
+    "The selected exact active clone targets replace the stale earlier recipe; parent semantic links and existing hover/navigation handlers stay in place."
+  ]
+}
