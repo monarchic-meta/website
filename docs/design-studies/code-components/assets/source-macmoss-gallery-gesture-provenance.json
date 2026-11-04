@@ -5,9 +5,10 @@
   "source": "https://macmoss.studio/",
   "status": "SOURCE4D_AUTHORED_AND_INDEPENDENTLY_SEALED871_PREVIEW_RELOAD_OPEN",
   "sourceModule": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/SourceMacMossPortfolio.before-4d.tsx.txt",
     "bytes": 21991,
-    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1",
+    "historical": true
   },
   "historicalEasingSource": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-macmoss-gesture/SourceMacMossPortfolio.before-68b.tsx.txt",
@@ -76,14 +77,16 @@
       "sha256": "2a28114def69c2a2b69160ecf13d8b756dc4d7fd2ccc569efa78219a79482a37"
     },
     "focusedChecker": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-gestures.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/portable-canonical-v1/frozen-before/check-source-macmoss-gestures.mjs",
       "bytes": 20914,
-      "sha256": "1fd2bc631dfbd8246b6c41bb6484acf8267c16b4303a02c960813aa634123a99"
+      "sha256": "1fd2bc631dfbd8246b6c41bb6484acf8267c16b4303a02c960813aa634123a99",
+      "historical": true
     },
     "realCSSChecker": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-gesture-interpolation.mjs",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/portable-canonical-v1/frozen-before/check-source-macmoss-gesture-interpolation.mjs",
       "bytes": 7438,
-      "sha256": "affb7651aec9e8587d1b7b7142fa84278e461128f74a3bc9e3065d9526bdcf46"
+      "sha256": "affb7651aec9e8587d1b7b7142fa84278e461128f74a3bc9e3065d9526bdcf46",
+      "historical": true
     },
     "portableManifest": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/portable-canonical-v1/portable-integration-manifest.json",
@@ -138,5 +141,14 @@
     "Leave/cancel/lostcapture safe return, tiny-drag ordering, transformed-bounds behavior and Phone photo taps are explicit adaptations or unobserved source behavior.",
     "Actual Framer pointer/ref forwarding, painting, Preview and editor reload remain unverified.",
     "Source Phone, timezone, project navigation and native Video lifecycle remain separate open work."
-  ]
+  ],
+  "touchLeaveSuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-touch-leave-provenance.json",
+      "bytes": 10664,
+      "sha256": "e2226470b84fae0847c73aee67ce1cbff426ee0b081dd8df91e69d970b09cd1f"
+    },
+    "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+    "historyPolicy": "This4d/871 gesture-stage record remains historical. Successor source and new input proof are separate."
+  }
 }

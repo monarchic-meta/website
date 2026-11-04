@@ -130,7 +130,7 @@
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-provenance.json",
       "bytes": 6255,
-      "sha256": "fd50b2510da8d8b524df3c2f73d9a323656c77f0ee9ba9ea9a93340a4bd1b783"
+      "sha256": "67fcae3bc7fb1c977f300ff5f65ed200736f3e72a3c4e71f934b51e6c3e55395"
     },
     "sourceModule": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-macmoss-gesture/SourceMacMossPortfolio.before-68b.tsx.txt",
@@ -172,13 +172,14 @@
     "status": "SOURCE4D_AUTHORED_AND_INDEPENDENTLY_SEALED871_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-gesture-provenance.json",
-      "bytes": 8251,
-      "sha256": "9b452e9f43b1cf59c336384b3d76c01724215c016929b0286b32f2bcf9a1c71e"
+      "bytes": 9315,
+      "sha256": "3c734cb9d9a059c8ae0a8941143540b99d3b96336ed9332cd3396aaea7c1b95b"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/SourceMacMossPortfolio.before-4d.tsx.txt",
       "bytes": 21991,
-      "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+      "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1",
+      "historical": true
     },
     "actualAuthoring": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gesture-writer868/final-h6-gesture-source-only-authoring-receipt871.json",
@@ -203,7 +204,41 @@
       "sha256": "d4bbd32fb4d4379f138f8a38d64f191a2e382cefdcdcc3b321e48384d3965bb1"
     },
     "observed": "Trusted Desktop tiny/leave and Phone horizontal/vertical source input; current4d still returns on leave and omits Touch dragging.",
-    "recreationChangeAuthored": false,
-    "actualPreviewReloadVerified": false
+    "actualPreviewReloadVerified": false,
+    "recreationChangeAtObservation": false,
+    "historicalObservationBeforeCorrection": true,
+    "currentImplementationKey": "galleryTouchLeave"
+  },
+  "galleryTouchLeave": {
+    "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-touch-leave-provenance.json",
+      "bytes": 10664,
+      "sha256": "e2226470b84fae0847c73aee67ce1cbff426ee0b081dd8df91e69d970b09cd1f"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+      "bytes": 22562,
+      "sha256": "ef146240138eb69373840177d2f9d6d9514cf919940b49b26c1dcdc72cf1ae87"
+    },
+    "strictRetainedAssertions": 5,
+    "narrowAssertions": 39,
+    "actualFramerSourceAuthored": true,
+    "actualPreviewReloadVerified": false,
+    "retainedChecks": {
+      "browser": 47,
+      "nativeTap": 44,
+      "gestures": 70,
+      "realCss": 4
+    },
+    "actualSourceDiagnostics": 0,
+    "independentReadThrough": 885,
+    "actualFramerReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "nativeBindingCopies": 18,
+    "measuredSchemas": 733
   }
 }

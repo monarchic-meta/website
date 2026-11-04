@@ -300,13 +300,14 @@
     "status": "SOURCE9B0A_AUTHORED_AND_INDEPENDENTLY_SEALED855_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pointer-drift-provenance.json",
-      "bytes": 7663,
-      "sha256": "0fc884b609aeaacb1154078c75b0d0787089d850e9bc5facba63a8de4a18bd4c"
+      "bytes": 8373,
+      "sha256": "2e76a9f2dde3bab014f6da2f44801cb920d5506d54c9bbb2902df359f9839684"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/SourceBleibtProjectField.before.tsx",
       "bytes": 20234,
-      "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec"
+      "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec",
+      "historical": true
     },
     "sourceCodeFacts": "Pointer anywhere inside the inclusive field, active drag, or pin drives target0; linear .03/.18 relaxation and capped normalized frame step follow retained current public code.",
     "localValidation": {
@@ -323,5 +324,31 @@
     "nativeBindingsPreserved": 42,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "pinLift": {
+    "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pin-lift-provenance.json",
+      "bytes": 8431,
+      "sha256": "b5706fbb8625c0e7aa6d483ca3592cdb9e784c881ace48360f97a9e2c0173465"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+      "bytes": 25781,
+      "sha256": "60b4d8b26c998cb85e446d52d2c9ed953dba1b9eb8c96a1da270bdfdd49d3648"
+    },
+    "localGroups": 25,
+    "oldDriftNumericCases": 28,
+    "actualFramerSourceAuthored": true,
+    "actualPreviewReloadVerified": false,
+    "actualSourceDiagnostics": 0,
+    "independentReadThrough": 885,
+    "actualFramerReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "nativeBindingCopies": 42,
+    "measuredSchemas": 733
   }
 }

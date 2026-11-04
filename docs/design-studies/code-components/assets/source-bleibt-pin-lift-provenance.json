@@ -1,0 +1,145 @@
+{
+  "reference": "HERO-017",
+  "classification": "Source inspiration / independently authored continuous native project lift",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+    "bytes": 25781,
+    "sha256": "60b4d8b26c998cb85e446d52d2c9ed953dba1b9eb8c96a1da270bdfdd49d3648"
+  },
+  "historicalSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/SourceBleibtProjectField.before.tsx",
+    "bytes": 20234,
+    "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pin-lift-inverse.json",
+    "bytes": 11499,
+    "sha256": "5fe02165cdd6e3071732dc579a398faaf4d0e8ef07ceabe40f358b73a74243e3"
+  },
+  "sourceInspection": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pin-lift-source-inspection.json",
+    "bytes": 4027,
+    "sha256": "75a22bf0f542b4b76f068f20547cb0ea5e388cca31998254aa3a495f8dbd80a7"
+  },
+  "behavior": {
+    "capture": "Pin input captures the last committed world position/quaternion into an owned16-entry private store.",
+    "lift": "Existing field RAF integrates liftT +=.12*(target-liftT)*capped60HzStep; position lerps toward(0,0,1.8), quaternion slerps frontal, scale1→3.2.",
+    "release": "Release follows the current rotating/breathing belt while lift decays. Source thresholds<.005/>.995 snap; overlay retains the logical zero step before .4s cooldown.",
+    "input": "Source guarded raycast excludes releasing/cooling images from hover and click repin. Native activation/caller cancellation and shared drag/scroll unpin remain composed.",
+    "resources": "The existing field RAF and30Hz presentation are reused; no per-plane scheduler, bitmap, media or graphics context added.",
+    "sourceScope": "Retained public JavaScript operations were inspected, not imported/executed; current source input histories are not newly observed."
+  },
+  "preservation": {
+    "publicRoleSignatures": 20,
+    "nativeBindingsExpected": 42,
+    "driftIntegrationByteExact": true,
+    "existingDriftTestBodyBytes": 16361,
+    "existingDriftTestBodySHA256": "9acea0ab87bbead22b1044a5cfd0e81a789afdfec0faa876de0711ccaa9344be",
+    "existingReportLabels": 19,
+    "nativeAssetFontOrGeometryWrites": 0
+  },
+  "validation": {
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/run-02/result.json",
+      "bytes": 52014,
+      "sha256": "dceacb1d0972067ed186a03ff18aa5bec57a0025a6764f1e618a50128e0379da"
+    },
+    "proof": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/run-02/pin-lift-proof-receipt.json",
+      "bytes": 531,
+      "sha256": "f3de35a90dc322bf07ed0980b3da1b04d2bd3b939d6bb8edb7e56bb54e493e69"
+    },
+    "trace": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/run-02/pin-lift-trace.json",
+      "bytes": 27268,
+      "sha256": "4aaa5cbd157c4d23bc4a67fd020f9e4c43c23948ce98dbf1bbac2cb9f156d68f"
+    },
+    "lifecycle": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/run-02/pin-lift-lifecycle.json",
+      "bytes": 27116,
+      "sha256": "f48b93f857b4dce57ca0948b41517519e808d3db12405fe35010b6f0adfe5361"
+    },
+    "portableManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/portable/promotion-map.json",
+      "bytes": 5268,
+      "sha256": "a92c405a867cb21ba56e2a98ab20a36fe68701dffc70db7d058cee671dc184ae"
+    },
+    "rootPromotion": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/root-promotion-receipt.json",
+      "bytes": 219,
+      "sha256": "05d9a19c8cfbabcb48582f9c4e2638e75bb208e83811e8b58519b46d1b360ee0"
+    },
+    "checker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-bleibt-project-field.mjs",
+      "bytes": 38626,
+      "sha256": "2979f71f98cc46ef3bcb841a52099d13ef8f43de8c1a2dc52346c2deffc1596a"
+    },
+    "supplementalProof": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-bleibt-pin-lift-proof.mjs",
+      "bytes": 21424,
+      "sha256": "5c34929359db21e40f9ee49716cbf404c367f708c96063e731efc0e90b8395ef"
+    },
+    "strictDiagnostics": 0,
+    "oldGroups": 19,
+    "oldDriftNumericCases": 28,
+    "newGroups": 6,
+    "totalGroups": 25,
+    "quaternionBases": 91,
+    "liftTraceObservations": 11,
+    "domAndCssomGeometryChecks": 9,
+    "pendingLiftLifecycleCases": 4,
+    "browserErrors": 0,
+    "browserClosed": true,
+    "canonicalBrowserRepeated": false,
+    "failedMeasurementRun": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/run-01/failure.json",
+      "bytes": 18266,
+      "sha256": "3cc09d98ac3c3997a2ce6ada51c72aa3ec7eb0ecf0b3ee5162d3e791de90157d"
+    },
+    "measurementCorrection": "Original2e-6 recurrence tolerance unchanged. Exact committed style inputs separated from DOM geometry; CSSOM six-significant-digit half-ULP bound independently derived. Run01 measurement discrepancy reproduced; actor unchanged."
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "fileReceipts": [
+      {
+        "key": "h17",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/h17-60b4-source-authoring-receipt885.json",
+        "bytes": 4458,
+        "sha256": "ab630d94059049a7fbb921b091587a8a25ec33d629abe18642ef923260c5e194",
+        "write": 881,
+        "read": 882,
+        "actualDiagnostics": 0
+      }
+    ],
+    "sourceAuthored": true,
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "publicTargetRows": 20,
+    "nativeBindingCopies": 42,
+    "nativeWrites": 0,
+    "all122BindingsParentsOrderPreserved": true,
+    "allTwoFilmPlacementsAndStoredControlValuesPreserved": true,
+    "all92Owners16Definitions239Placements60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 733,
+    "newlyMeasuredExistingFilmOverrides": 24,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPointerRefForwardingVerified": false,
+    "actualPrivatePropForwardingVerified": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Source snapshot is actual world pose; recreation captures the last committed CSS target while an existing100ms CSS hover/field transition may still be between paints.",
+    "The retained zero-overlay integration step is not guaranteed to appear as a painted frame at30Hz.",
+    "CSS3D replaces source Three/WebGL and independent hover/reveal/projection/material fits remain.",
+    "Actual Framer paint/input/Preview/editor reload and source Phone behavior remain separate open comparisons."
+  ]
+}

@@ -257,8 +257,8 @@
       },
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
-        "bytes": 7819,
-        "sha256": "e0bc057bd1d5b7a97f44d79770638fed255254747c7e8bf044c95c4513ef6744"
+        "bytes": 7956,
+        "sha256": "f1bbddfd2019008329109c6b8c843e9261d77c37759bb3a7ebf0d2f7bbe615e8"
       },
       "focusedChecks": 33,
       "canonicalStaticChecks": 10,
@@ -281,8 +281,8 @@
     "status": "SOURCE1CB_AUTHORED_AND_INDEPENDENTLY_SEALED867_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
-      "bytes": 8836,
-      "sha256": "2d3e3b5b46899200cb1bb648ebfe317cea9621f5f3746e4aec985f83fe2cb862"
+      "bytes": 8973,
+      "sha256": "d9c0fa8c0c573eed39148dc9cd3673b704d2a00cd687a72681b1ab1fe6253c72"
     },
     "sourceModule": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-caption-anchor.tsx.txt",
@@ -313,13 +313,14 @@
     "status": "SOURCE2985_AUTHORED_AND_INDEPENDENTLY_SEALED875_PREVIEW_RELOAD_OPEN",
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-caption-anchor-provenance.json",
-      "bytes": 6986,
-      "sha256": "f7254f306cd7694b01d5ccb4d05b2a9b95f11335128b392612075ff0c0c548f6"
+      "bytes": 8113,
+      "sha256": "eb0592ca353ae6577a656e4319008ee61c0215b601c1214675a432d376acc509"
     },
     "sourceModule": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioCarousel.before.tsx",
       "bytes": 22704,
-      "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+      "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004",
+      "historical": true
     },
     "actualAuthoring": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/caption-writer872/final-h4-caption-source-only-authoring-receipt875.json",
@@ -336,5 +337,44 @@
     "linearProjectionStillFitted": true,
     "actualPreviewVerified": false,
     "afterEditorReload": false
+  },
+  "playbackPresentation": {
+    "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-playback-presentation-provenance.json",
+      "bytes": 10484,
+      "sha256": "539d04a5bca5d9a59faf63e26ecc1ae5c92d3e41ace09fb0a8d0bf6a221c47d0"
+    },
+    "helperSource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "bytes": 23161,
+      "sha256": "83ee8d8635d44c6b84de0a95f6abfd7874b0f0f0f8bdddd5e44ab259eeace678"
+    },
+    "filmSource": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "bytes": 85106,
+      "sha256": "edf71fb9e386c374e681ef1a7f1edbc1fc563dfe4fc551da13836298a020e3c5"
+    },
+    "coreChecks": 15,
+    "sourceArithmeticRows": 12,
+    "remainingBranchesPending": false,
+    "sourceFramerAuthored": true,
+    "actualPreviewReloadVerified": false,
+    "focusedChecks": 46,
+    "compatibilityChecks": {
+      "release": 43,
+      "caption": 12,
+      "film": 22
+    },
+    "actualFramerSourceAuthored": true,
+    "actualSourceDiagnostics": 0,
+    "independentReadThrough": 885,
+    "actualFramerReceipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "nativeBindingCopies": 62,
+    "measuredSchemas": 733
   }
 }

@@ -16,10 +16,11 @@
     "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
   },
   "retainedFilm": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioFilmStudy.before.tsx",
     "bytes": 84713,
     "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0",
-    "unchanged": true
+    "unchanged": true,
+    "historical": true
   },
   "publicCodeFacts": {
     "source": {
@@ -153,8 +154,8 @@
   "captionAnchorSuccessor": {
     "provenance": {
       "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-caption-anchor-provenance.json",
-      "bytes": 6986,
-      "sha256": "f7254f306cd7694b01d5ccb4d05b2a9b95f11335128b392612075ff0c0c548f6"
+      "bytes": 8113,
+      "sha256": "eb0592ca353ae6577a656e4319008ee61c0215b601c1214675a432d376acc509"
     },
     "sourceSHA256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
   }

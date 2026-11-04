@@ -5,9 +5,10 @@
   "source": "https://artemiilebedev.com/",
   "status": "SOURCE2985_AUTHORED_AND_INDEPENDENTLY_SEALED875_PREVIEW_RELOAD_OPEN",
   "helperSource": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioCarousel.before.tsx",
     "bytes": 22704,
-    "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+    "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004",
+    "historical": true
   },
   "historicalSettlingHelper": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-caption-anchor.tsx.txt",
@@ -20,9 +21,10 @@
     "sha256": "a3fcfb35b8606e750584edd0647401dfc3a6aea880fe53fe1daf243b013a3db2"
   },
   "focusedChecker": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-caption-anchor.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/compat-caption.before.mjs",
     "bytes": 12430,
-    "sha256": "1fe8573a640906362bd39dc9d4f0af316be47d1aa460d017682344b9f1b60ebc"
+    "sha256": "1fe8573a640906362bd39dc9d4f0af316be47d1aa460d017682344b9f1b60ebc",
+    "historical": true
   },
   "nearestTable": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-caption-nearest.json",
@@ -30,9 +32,10 @@
     "sha256": "92ef9d541d179c7c2bc687bb76661a9d352ddee79e0da6ee18aee323a8a38be0"
   },
   "releaseGuardAdapter": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/compat-release.before.mjs",
     "bytes": 37180,
-    "sha256": "25f62c9e92c0b1127f914294fbf6ebc10ba82e5b2b5bef16cbeb445c28066b49"
+    "sha256": "25f62c9e92c0b1127f914294fbf6ebc10ba82e5b2b5bef16cbeb445c28066b49",
+    "historical": true
   },
   "sourceRule": {
     "nearest": "Ascending rep0 project scan; source world arithmetic and strict less-than comparison retained, including floating-point ties.",
@@ -64,9 +67,10 @@
     "onlyCaptionHOCChanges": true,
     "everyOtherSourceByteExactTo1cb": true,
     "film": {
-      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioFilmStudy.before.tsx",
       "bytes": 84713,
-      "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0"
+      "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0",
+      "historical": true
     },
     "publicRoles": 6,
     "noNewRAFGraphicsMediaOrNativeParts": true
@@ -130,5 +134,14 @@
     "Source text-strip and year/industry column-width springs are missing; intro and responsive fits remain separate.",
     "Movie playback still follows the target while source playback follows current selectedIndex; changing caption text to current would be incorrect.",
     "Actual Framer painting, Preview and editor reload remain unverified."
-  ]
+  ],
+  "playbackPresentationSuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-playback-presentation-provenance.json",
+      "bytes": 10484,
+      "sha256": "539d04a5bca5d9a59faf63e26ecc1ae5c92d3e41ace09fb0a8d0bf6a221c47d0"
+    },
+    "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+    "historyPolicy": "This caption-stage record and875 authoring receipt remain historical. Current source and later playback proof are separate."
+  }
 }

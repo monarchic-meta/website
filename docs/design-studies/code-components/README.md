@@ -43,19 +43,23 @@ Preview evidence.
 
 The [release target](assets/source-portfolio-release-velocity-provenance.json)
 retains source velocity/projection; [settling](assets/source-portfolio-settling-provenance.json)
-uses0.1 per rendered callback and lets a new drag take over its current position.
+uses 0.1 per rendered callback and lets a new drag take over its current position.
 The [caption anchor](assets/source-portfolio-caption-anchor-provenance.json)
 follows the nearest current card using source scan order/ties, while caption
-text correctly follows the target. Outer position updates directly without
-interpolation. Native text-strip and column-width springs are missing; curved
-projection/materials, Phone and current-position movie selection remain open.
+text follows the target. Outer position updates directly without interpolation.
 
-The unchanged Surface/film retain43 focused/22 integration passes. Caption12
-checks cover42 native DOM rows; the approved inverse adapter passes10 canonical
-static checks on the actual2985 helper. Code and12 bindings are independently
-read through875. Actual Framer Preview/reload remain open. Run
-`check:source-portfolio-release-velocity`, `check:source-portfolio-carousel` and
-`check:source-portfolio-caption-anchor` with pnpm, serially.
+The [playback correction](assets/source-portfolio-playback-presentation-provenance.json)
+requests the movie for the current card while preserving target captions,
+progress and effect clocks. It keeps painted output separate from asynchronous
+requests and retains the shared decoder/context budgets. All 46 focused,
+43 release, 12 caption and 22 film checks pass on the exact new sources.
+
+Both sources are authored and independently read through885. Actual private-prop forwarding,
+Preview and reload remain open. Native text-strip/column-width springs, curved
+projection/materials, Phone fits and current-nearest fullscreen exit remain
+separate work. Run the check:source-portfolio-* pnpm entries serially. The new
+source-portfolio-playback-presentation Nix target is evaluated; a full Nix build
+is not claimed.
 
 ## Cantor8 opening and Foundation
 
@@ -88,23 +92,26 @@ nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 
 
 ## Mac Moss gallery interaction
 
-The [native gesture recreation](assets/source-macmoss-gallery-gesture-provenance.json)
-adds the observed horizontal mouse tracking, drag return/commit and photo click
-activation to the four editable images. It uses the source rounded20% threshold,
-suppresses photo activation after drags beyond10px, and starts500ms ease-in-out
-transitions from the live photo positions. The one-RAF prepared startup, wide
-drag clamp and cancel handling remain explicit boundaries. A later
-[source input observation](assets/source-macmoss-gallery-input-observations.json)
-confirms the10/11px click ordering, source mouseleave commit, Phone horizontal
-swipe and vertical page scrolling. Current4d still needs the leave and Touch
-corrections; source observation does not establish recreation behavior.
+The [original native gesture stage](assets/source-macmoss-gallery-gesture-provenance.json)
+keeps four editable photos and source-shaped live-pose transitions. Later
+[source input observations](assets/source-macmoss-gallery-input-observations.json)
+confirm the 10/11 px click ordering, mouseleave commit, Phone horizontal swipe
+and vertical page scrolling. Their lazy media placeholders establish input/state
+and identities, without claiming full source-pixel paint.
 
-The existing5 static,47 browser and44 native-tap checks pass, alongside70 focused
-assertions and four real-time CSS interpolation cases. The portable70/4 entries
-also pass and run serially after5/47 in the Nix target. Exact code, nine roles
-and18 bindings are independently read through871. Actual Framer pointer/ref
-forwarding, Preview/reload and native Video lifecycle remain open. Run the
-`check:source-macmoss-*` pnpm scripts or `checks.x86_64-linux.source-macmoss`.
+The [Touch/leave correction](assets/source-macmoss-gallery-touch-leave-provenance.json)
+uses that evidence: known primary Touch follows the existing drag path,
+mouseleave releases normally, and vertical page scrolling cancels without
+advancing the image. The source rounded 20% threshold, click suppression beyond
+10 px, native callbacks, arrow/clock bodies and 500 ms ease-in-out are preserved.
+The extra pinch-zoom permission remains a declared adaptation.
+
+The existing 5 strict, 47 browser and 44 native-tap checks pass, alongside
+39 new assertions, all 70 prior gesture assertions and four real-time CSS
+interpolation cases. Exact ef source and18 bindings are independently read through885. Actual
+pointer/ref forwarding, Preview/reload and native Video lifecycle remain open.
+The pnpm Touch/leave entry runs strict5 once; Nix runs it before 47/70/CSS4
+serially, with nativeTap44 retaining its separate target.
 
 ## Neue Montreal attraction text
 
@@ -119,19 +126,23 @@ native callbacks and the1023/1024 transition. The old source fails the expected
 read through859. Actual Preview and editor reload remain open. Run
 `pnpm run check:source-montreal-behaviors` or its existing Nix target serially.
 
-## Bleibtgleich field drift
+## Bleibtgleich field motion
 
 The [pointer-drift correction](assets/source-bleibt-pointer-drift-provenance.json)
-pauses automatic rotation when the mouse enters empty space inside the field,
-eases the speed toward zero, and resumes after the source idle delay. It uses
-the retained public-code frame cap and preserves projection, pin/release,
-headings and all20 overrides. Canvas, exports, reduced motion and offscreen
-actors remain frozen.
+pauses automatic rotation when the mouse enters empty field space, eases toward
+zero and resumes after the source idle delay. Its drift integration is preserved.
 
-Strict typing and19 browser groups pass, including28 numeric cases and all
-eight earlier groups. Exact source authoring and42 native bindings are read
-through855. Actual Preview and editor reload remain open. Run
-`pnpm run check:source-bleibt-project-field` or the existing Nix target serially.
+The [continuous pin lift](assets/source-bleibt-pin-lift-provenance.json)
+captures a committed pose, eases position/rotation/scale into the selected view,
+then follows the moving belt on release with the source cooldown. It reuses the
+existing field RAF and 30 Hz presentation, preserving all 20 public roles.
+Strict typing/SSR, 25 browser groups, 28 retained drift cases, 91 quaternion bases,
+11 lift observations, nine geometry checks and four lifecycle cases pass.
+
+The committed CSS-target snapshot and potentially unpainted logical zero-overlay
+step remain declared fits. Exact60b source and42 bindings are independently read through885;
+actual input, Preview and editor reload are separate gates. Run the
+check:source-bleibt-project-field pnpm entry or its existing Nix target serially.
 
 ## Ajedrez measured word motion
 

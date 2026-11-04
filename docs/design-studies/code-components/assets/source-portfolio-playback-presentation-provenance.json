@@ -1,0 +1,187 @@
+{
+  "reference": "HERO-004",
+  "classification": "Source inspiration / source-led carousel playback correction",
+  "creator": "Artemii Lebedev",
+  "source": "https://artemiilebedev.com/",
+  "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+  "helperSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "bytes": 23161,
+    "sha256": "83ee8d8635d44c6b84de0a95f6abfd7874b0f0f0f8bdddd5e44ab259eeace678"
+  },
+  "filmSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "bytes": 85106,
+    "sha256": "edf71fb9e386c374e681ef1a7f1edbc1fc563dfe4fc551da13836298a020e3c5"
+  },
+  "historicalHelper": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioCarousel.before.tsx",
+    "bytes": 22704,
+    "sha256": "2985c67786bd9ebb161e95b4bccbc8a9fbf75abd3e1c033ac7dc9d9de33c8004"
+  },
+  "historicalFilm": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/SourcePortfolioFilmStudy.before.tsx",
+    "bytes": 84713,
+    "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0"
+  },
+  "rule": {
+    "playback": "Source indexFromScroll uses current scroll with Math.round after world-unit arithmetic, clamped0…7. Caption strict nearest scan has distinct half-card ties.",
+    "target": "Shared target project, destination caption text, progress, clock reset and effects remain untouched by presentation crossings.",
+    "bridge": "Optional unregistered __carouselPresentationProject from managed Surface to FilmSurface; finite values admitted only during nonstatic Desktop immersive mode.",
+    "fallback": "Missing/nonfinite private value, unwrapped owners, Phone, fullscreen and frozen renderers retain original target/startProject behavior; local focused branches pass.",
+    "painted": "Existing painted-project observer continues to reflect actual prepared film output, which can lag the request.",
+    "sourceEvidence": {
+      "script": {
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/carousel-inspection-only.js",
+        "bytes": 126812,
+        "sha256": "3b98626175042b6bbcf4b77dcf6296012d59640ae8d13404346fd7e7f6214240"
+      },
+      "lines": {
+        "indexFromScroll": "913–914",
+        "selectedCurrent": "2635",
+        "playback": "2511–2539",
+        "captionTarget": "2498–2510"
+      }
+    },
+    "table": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/playback-index-table.json",
+      "bytes": 1102,
+      "sha256": "12da569555179f7a925b3eb5b212aecd1a662b9c9b1513896b0756d1264c6e9d"
+    }
+  },
+  "preservation": {
+    "publicControlsAndDefaultValuesByteExact": true,
+    "sharedControllerPrefixByteExact": true,
+    "all13StreamMappingsByteExact": true,
+    "captionHOCsByteExact": true,
+    "newStoreOrClock": false,
+    "newGraphicsContexts": false,
+    "nativeWrites": 0
+  },
+  "validation": {
+    "core": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/focused-02/result.json",
+      "bytes": 21202,
+      "sha256": "f296108b4a718492c9c107ed09a4e7c010d2d5519205f80c9969aa301b3cbe7a"
+    },
+    "coreChecks": 15,
+    "sourceArithmeticRows": 12,
+    "strictDiagnostics": 0,
+    "browserErrors": 0,
+    "peakDecodersAtMost": 2,
+    "peakStudyContextsAtMost": 2,
+    "newWebGLRequests": 0,
+    "cleanupEmpty": true,
+    "failedFixtureRun": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/focused-01/failure.json",
+      "bytes": 5358,
+      "sha256": "24c131e0c4fbeef52bf25e37b826795d039a76ba23bd5737bb2bd1c7383911e0"
+    },
+    "fixtureCorrection": "Only initial concurrent React mount flushSync before attaching MutationObserver; actors and oracles unchanged.",
+    "remaining": [
+      "Actual Framer unregistered-prop forwarding, paint and editor reload",
+      "Source current-nearest exit bridge remains separate"
+    ],
+    "focused": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/focused-03/result.json",
+      "bytes": 117787,
+      "sha256": "c3cbd0398c38c31744ce8a23bafeadf3b458409a44d989f6bd97584b4dc73087"
+    },
+    "focusedChecks": 46,
+    "release": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/release-01/result.json",
+      "bytes": 27460,
+      "sha256": "f33d2297d670ff80f3c6ef38c30571cc27f429e91296447e3ebc10308491f298"
+    },
+    "releaseChecks": 43,
+    "caption": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/caption-01/result.json",
+      "bytes": 31745,
+      "sha256": "deac84016c77e0066d86730c854c98fb7ea512f5284b6f8bee86121fb9b1e7d6"
+    },
+    "captionChecks": 12,
+    "captionDomRows": 42,
+    "legacyFilm": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/legacy-01/result.json",
+      "bytes": 4144,
+      "sha256": "167ceb767762ffb6de32385b6b9468ba6f3409d5c993625c8465c45fdeee458d"
+    },
+    "legacyFilmChecks": 22,
+    "testedPacket": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/tested-packet.json",
+      "bytes": 8656,
+      "sha256": "2677a69ae5bc32ed008c01315417c9b086add230ae21a8ed4374db2932abc2ab"
+    },
+    "portableManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/portable-manifest.json",
+      "bytes": 4882,
+      "sha256": "bd898534786d9bd4b06f800cfe09cd087506a71c383d2a06ed0e1717517c74e6"
+    },
+    "rootPortablePromotion": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-presentation-proposal-v1/root-portable-promotion-receipt.json",
+      "bytes": 1579,
+      "sha256": "4067071578edc13ff121aceabec57722ab6c25a78dec677a433f08de08fb3854"
+    },
+    "portableFocusedChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-playback-presentation.mjs",
+      "bytes": 22054,
+      "sha256": "dcdb6a152692d56546a3b276e866c511fd94fd67fa48a50c30914df636520fff"
+    }
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "fileReceipts": [
+      {
+        "key": "film",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/film-edf7-source-authoring-receipt885.json",
+        "bytes": 4697,
+        "sha256": "0a2b7af770c45944b5ac1c1b09642ac8fc1c2115d32ad48cb87e0559c8107878",
+        "write": 877,
+        "read": 878,
+        "actualDiagnostics": 0
+      },
+      {
+        "key": "helper",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/helper-83ee-source-authoring-receipt885.json",
+        "bytes": 3844,
+        "sha256": "b70fd948083e47529c9ad843f1bf696c8aa080c846beb9fac500a7b936a56595",
+        "write": 879,
+        "read": 880,
+        "actualDiagnostics": 0
+      }
+    ],
+    "sourceAuthored": true,
+    "sourceWrites": 2,
+    "actualDiagnostics": 0,
+    "publicTargetRows": 31,
+    "nativeBindingCopies": 62,
+    "nativeWrites": 0,
+    "all122BindingsParentsOrderPreserved": true,
+    "allTwoFilmPlacementsAndStoredControlValuesPreserved": true,
+    "all92Owners16Definitions239Placements60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 733,
+    "newlyMeasuredExistingFilmOverrides": 24,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPointerRefForwardingVerified": false,
+    "actualPrivatePropForwardingVerified": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Framer may filter or memoize the unregistered private prop; only actual Preview can verify that boundary.",
+    "Existing2s incoming blend, media revisit/seek and source curved projection remain fits.",
+    "Fullscreen exit still falls back to target rather than source current-nearest project.",
+    "Source native text-strip/column-width springs remain missing."
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-portfolio-playback-presentation",
+    "evaluated": true,
+    "derivationPath": "/nix/store/xl62a53ak959qw314sb2f4gi6bkpva2z-monarchic-website-source-portfolio-playback-presentation-0.0.1.drv",
+    "fullNixBuildExecuted": false
+  }
+}

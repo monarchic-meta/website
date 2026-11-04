@@ -1,0 +1,178 @@
+{
+  "reference": "HERO-006",
+  "classification": "Source inspiration / source-led native gallery input correction",
+  "creator": "Mac Moss Studio",
+  "source": "https://macmoss.studio/",
+  "status": "SOURCE_AUTHORED_AND_INDEPENDENTLY_SEALED885_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "bytes": 22562,
+    "sha256": "ef146240138eb69373840177d2f9d6d9514cf919940b49b26c1dcdc72cf1ae87"
+  },
+  "historicalGestureSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/SourceMacMossPortfolio.before-4d.tsx.txt",
+    "bytes": 21991,
+    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-touch-leave-inverse.json",
+    "bytes": 4382,
+    "sha256": "0d8def3340a2aca6baed8f5f71a7bfb6e9315c040001d9c21c7e74ddcea6cb8c"
+  },
+  "sourceObservations": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-macmoss-gallery-input-observations.json",
+    "bytes": 5805,
+    "sha256": "d4bbd32fb4d4379f138f8a38d64f191a2e382cefdcdcc3b321e48384d3965bb1"
+  },
+  "behavior": {
+    "mouseLeave": "Normal release uses the last live inside pose and rounded distance; a qualifying drag commits before outside mouseup.",
+    "primaryTouch": "Known primary Touch admits the existing drag path; known secondary activation is ignored. Mouse, native tap/click and caller cancellation compose as before.",
+    "verticalScroll": "Live viewport pan-y preserves native vertical page scroll and its natural pointercancel/lostcapture cleanup without advancing a slide.",
+    "touchAction": "Source gallery ancestor is pan-y while list/track are auto; the additional pinch-zoom permission is a declared adaptation.",
+    "tiny": "Observed10/11px return and subsequent click suppression are retained; unsampled sub10px ordering remains bounded.",
+    "motion": "Existing four native photo Frames and live-pose500ms ease-in-out commit/return reused; arrows, clock and release equations stay exact."
+  },
+  "preservation": {
+    "publicExports": 9,
+    "nativeBindingsExpected": 18,
+    "nativeWrites": 0,
+    "newMediaOrGraphicsContexts": 0,
+    "oldArrowClockAndReleaseMathExact": true,
+    "sharedVideoHelper": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceNativeVideoVisibility.tsx",
+      "bytes": 10555,
+      "sha256": "d79f16963bd4b1d41ce6dcf7b04acbffaf7c981abd1a70fc5dcd85004f8553d6"
+    }
+  },
+  "validation": {
+    "narrow": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/narrow-run-001/result.json",
+      "bytes": 977,
+      "sha256": "e9f1604bc5055e152a5ff6c9f03703b457fca2432666a4c0b3e4dcb0247be9fd"
+    },
+    "narrowDetail": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/narrow-run-001/focused-result.json",
+      "bytes": 68699,
+      "sha256": "ee6806b78ef20e2ef2d77bca692e403dededdac6c655a89bbd93a9aa3064f69e"
+    },
+    "inputTrace": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/narrow-run-001/input-trace.json",
+      "bytes": 56231,
+      "sha256": "7d1158fad4061c27bebac6bfb120a77aadefad851223367f6b1cbf6dfe9e311f"
+    },
+    "checker": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/check-touch-leave-narrow.mjs",
+      "bytes": 22079,
+      "sha256": "27163d20c5c5943a8fae018c2c9f456a573fb53cd3109a856dc6bb65ccff69f7"
+    },
+    "strictRetainedAssertions": 5,
+    "strictFacadeOnlyChange": "Allow genuine React.CSSProperties.touchAction; original five assertions retained.",
+    "narrowAssertions": 39,
+    "reports": 10,
+    "browserErrors": 0,
+    "allBrowserContextCdpAndInputClosed": true,
+    "proof": "Trusted CDP primary Touch commits once; mouseleave commits before outside mouseup; fresh tap,10/11px, native vertical scrolling with natural cancel/lostcapture, caller cancel, secondary/frozen/reduced/hide/unmount pass.",
+    "fixtureVerticalScroll": {
+      "from": 800,
+      "to": 666,
+      "slideUnchanged": true,
+      "releaseRafAndTimer": 0
+    },
+    "regressionAdaptersPending": false,
+    "canonicalPortableProofPending": false,
+    "canonicalPortableEquivalenceVerified": true,
+    "canonicalPortableBrowserRepeated": false,
+    "retained": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/retained-run-001/result.json",
+      "bytes": 2910,
+      "sha256": "0a2d2440700bd1ada19e8cf7348033a78ad04e7b98308c701a59701735705e22"
+    },
+    "retainedBrowser": 47,
+    "retainedNativeTap": 44,
+    "retainedGestures": 70,
+    "retainedRealCss": 4,
+    "gestures": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/retained-run-001/gestures70/run-vy8c7V/result.json",
+      "bytes": 1002,
+      "sha256": "1bd6c1cbeac168b07309b9722652115e14f8409d3100eeeb831375b7e52f5a84"
+    },
+    "realCss": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/retained-run-001/real-css4/run-gFkfzb/result.json",
+      "bytes": 23062,
+      "sha256": "94d3cc63628d479b671ad94df0ec6055890f6599390f41508111c66ba200f940"
+    },
+    "portableManifest": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/portable-canonical-v1/manifest.json",
+      "bytes": 3807,
+      "sha256": "bcc62762b8e3bbaa2b5a144048afdac5b701987dc7810e02f9931ff9c6139f30"
+    },
+    "rootPortablePromotion": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/portable-canonical-v1/root-promotion-receipt.json",
+      "bytes": 187,
+      "sha256": "516911bed8229c2c2fa790b388ff34126d5131052d16de1f9bc32413473b4620"
+    },
+    "portableChecker": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-macmoss-touch-leave.mjs",
+      "bytes": 21593,
+      "sha256": "ba009fa33b73bcfb22802f8bfd40dab14e54fe0ac0234ab7fde525175ee54677"
+    },
+    "finalTestedPacket": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/final-tested-packet.json",
+      "bytes": 10725,
+      "sha256": "acb84e6c2637dca664ee0d35fb778f024b15d989079891ff37fff802d5e80d3b"
+    },
+    "reversePlumbingEquivalence": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-touch-leave-successor-v1/portable-canonical-v1/reverse-plumbing-equivalence.json",
+      "bytes": 2983,
+      "sha256": "bcf4ab6510d097df090e4f4ec2de36f6f448f96ecc8b10d3152e0ce8eb8f30e1"
+    }
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/final-four-source-authoring-receipt885.json",
+      "bytes": 10557,
+      "sha256": "5c211151da0463dcd04c5f4a32cac547802bc9714b85f4c7eadb9ec75f64cccf"
+    },
+    "fileReceipts": [
+      {
+        "key": "h6",
+        "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/playback-writer876/h6-ef146-source-authoring-receipt885.json",
+        "bytes": 3948,
+        "sha256": "630733a952eb6c902de186f87518655202eb2eb5ad9fb8f301f7b4b4fa9d5200",
+        "write": 883,
+        "read": 884,
+        "actualDiagnostics": 0
+      }
+    ],
+    "sourceAuthored": true,
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "publicTargetRows": 9,
+    "nativeBindingCopies": 18,
+    "nativeWrites": 0,
+    "all122BindingsParentsOrderPreserved": true,
+    "allTwoFilmPlacementsAndStoredControlValuesPreserved": true,
+    "all92Owners16Definitions239Placements60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 733,
+    "newlyMeasuredExistingFilmOverrides": 24,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPointerRefForwardingVerified": false,
+    "actualPrivatePropForwardingVerified": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Source input/state observations include lazy media placeholders and do not certify full source-pixel paint.",
+    "Unsampled sub10px ordering, arbitrary cancel/lostcapture,±1 viewport clamp reachability and transformed-bounds behavior remain fits or unobserved.",
+    "Pinch zoom is an additional permission beyond the observed source pan-y policy.",
+    "Timezone, project navigation, native Video lifecycle and actual Framer Preview/reload remain separate work."
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-macmoss",
+    "evaluated": true,
+    "derivationPath": "/nix/store/sppjcfdhixjpdmkr6qchsvdcyzl5c050-monarchic-website-source-macmoss-0.0.1.drv",
+    "fullNixBuildExecuted": false,
+    "serial": "New39 entry runs strict5 once, then retained47→70→realCSS4. NativeTap44 retains its separate target."
+  }
+}

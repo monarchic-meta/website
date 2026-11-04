@@ -5,9 +5,10 @@
   "source": "https://bleibtgleich.dev/",
   "status": "SOURCE9B0A_AUTHORED_AND_INDEPENDENTLY_SEALED855_PREVIEW_RELOAD_OPEN",
   "sourceModule": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/SourceBleibtProjectField.before.tsx",
+    "bytes": 20234,
     "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec",
-    "bytes": 20234
+    "historical": true
   },
   "previousSource": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/SourceBleibtProjectField.before.tsx",
@@ -15,9 +16,10 @@
     "bytes": 18898
   },
   "checker": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-bleibt-project-field.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pin-lift-audit-v1/check-source-bleibt-project-field.before-b7bb.mjs",
+    "bytes": 37987,
     "sha256": "b7bb6ed4fe6201680e01f6c40ee9e881d3a1458f09b8385822e1a98ea996235c",
-    "bytes": 37987
+    "historical": true
   },
   "inverse": {
     "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/inverse.patch",
@@ -140,5 +142,13 @@
     "target": "checks.x86_64-linux.source-bleibt-project-field",
     "fullNixBuildExecuted": false,
     "canonicalBrowserRepeated": false
+  },
+  "pinLiftSuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pin-lift-provenance.json",
+      "bytes": 8431,
+      "sha256": "b5706fbb8625c0e7aa6d483ca3592cdb9e784c881ace48360f97a9e2c0173465"
+    },
+    "historyPolicy": "The9b drift stage and855 authoring receipt remain historical; current source adds continuous pin lift."
   }
 }
