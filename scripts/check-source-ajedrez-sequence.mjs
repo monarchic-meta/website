@@ -13,6 +13,12 @@ check('Strict semantic TypeScript with DOM and constrained phase-style fields',(
 const measuredChanges=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/assets/source-ajedrez-measured-word-fits-inverse.json')))
 const extensionChanges=JSON.parse(fs.readFileSync(path.join(repo,'docs/design-studies/code-components/assets/source-ajedrez-two-track-extension-inverse.json')))
 let previousMeasuredSource=source
+if(source.includes('AJEDREZ_TYPE_ACTOR43_FITS')){
+ const actor43Changes=JSON.parse(fs.readFileSync(path.join(repo,"docs/design-studies/code-components/assets/source-ajedrez-actor43-additive-inverse.json")))
+ for(const patch of actor43Changes.patches.slice().reverse()){assert.equal(previousMeasuredSource.split(patch.after).length-1,1,'Each additive actor43 edit has one exact inverse');previousMeasuredSource=previousMeasuredSource.replace(patch.after,()=>patch.before)}
+ assert.equal(hash(previousMeasuredSource),actor43Changes.parent.sha256,'Actor43 inverse restores exact837c before existing actor3 lineage')
+ assert.equal(Buffer.byteLength(previousMeasuredSource),actor43Changes.parent.bytes)
+}
 if(source.includes('AJEDREZ_TYPE_ACTOR3_FITS')){
  const actor3Changes=JSON.parse(fs.readFileSync(path.join(repo,"docs/design-studies/code-components/assets/source-ajedrez-actor3-additive-inverse.json")))
  for(const patch of actor3Changes.patches.slice().reverse()){assert.equal(previousMeasuredSource.split(patch.after).length-1,1,'Each additive actor3 edit has one exact inverse');previousMeasuredSource=previousMeasuredSource.replace(patch.after,patch.before)}

@@ -1,0 +1,2117 @@
+{
+  "schemaVersion": 1,
+  "status": "ROOT_PEER_APPROVED62_SOURCE_RECTANGLES_WITH12_BASELINE_NULLS",
+  "sourceCredit": "Julián Leiss / Ajedrez Film Poem",
+  "nativeActor": {
+    "wordIndex": 43,
+    "desktopID": "Q34hQ60V5",
+    "phoneID": "IZS406b_VQ34hQ60V5",
+    "independentText": "turno",
+    "sourceLexicalIdentityKnown": false
+  },
+  "sourceCandidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 209769,
+    "sha256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52"
+  },
+  "rootPeerApproval": {
+    "admittedPlacements": 62,
+    "nulls": 12,
+    "keep1208Rejected": true,
+    "keep1222Rejected": true,
+    "sourceGroup1208": "A long group is visible but needs a separately reviewed full-word crop; no fragment union in this batch.",
+    "sourceGroup1222": "Prefix visibly overlapped/denser; no clean glyph mask or isolated extent claim."
+  },
+  "reviewed": [
+    {
+      "frame": 1152,
+      "sourceCandidateIndex": 73,
+      "cropRectangle": [
+        129,
+        554,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "69c2dd0a59c631c12514d96f54e4a852e03456ac01c3330d0df1027fd662575a",
+        "inkCount": 105,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 44202,
+        "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1152,
+        "relativePath": "frame-1152.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1152.png",
+        "bytes": 44202,
+        "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef"
+      },
+      "sourceContext": "Long group on the lower sparse-matrix row near129/554.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1153,
+      "sourceCandidateIndex": 49,
+      "cropRectangle": [
+        19,
+        379,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "6853e49ad1904ea1a5e223d24b1daf822ca1d87c3e71802deb94c445f6a93144",
+        "inkCount": 98,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 49941,
+        "sha256": "8f84c301fec8c8fee3288b35631d878c3a5391bc2cf14b25cc476e0d2c304178",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1154,
+      "sourceCandidateIndex": 47,
+      "cropRectangle": [
+        19,
+        379,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "d3e86a2029a2751c4aad66fbf5244600e0cfe5f4a2f2ae42fb2f6a2e549de466",
+        "inkCount": 99,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 50456,
+        "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1154,
+        "relativePath": "frame-1154.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1154.png",
+        "bytes": 50456,
+        "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce"
+      },
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1155,
+      "sourceCandidateIndex": 54,
+      "cropRectangle": [
+        19,
+        378,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "c1f5bd02ccc2e772c9a68bb082d73915849d86b1ec22cdb705a0044c7938fb95",
+        "inkCount": 98,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 50998,
+        "sha256": "51a3a676e203cd5f429df2bc467afb154c51dddd61341973f33b03f2d5622fe6",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1156,
+      "sourceCandidateIndex": 47,
+      "cropRectangle": [
+        19,
+        378,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "3b605ca07130a264d0fb28dd7aa71eaee2a61a95d1f7a76ef0dbb16ef3a2b9fe",
+        "inkCount": 98,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 46855,
+        "sha256": "b54f5a472e349b48aa52f4d695f507c4b16c40d865d3e2ea6295b000b330741c",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1157,
+      "sourceCandidateIndex": 47,
+      "cropRectangle": [
+        19,
+        378,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "203980b467b3f638d490e1d6ac866dc229b11f6cb22c2fc7b324e0de8ee27206",
+        "inkCount": 103,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 48618,
+        "sha256": "12d59a8deaa2d1337e0684b394247a6579631c64c5915f4ed03f91994cbfec22",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1158,
+      "sourceCandidateIndex": 49,
+      "cropRectangle": [
+        19,
+        379,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "431257e8749f0a2cf38c8d090664c79fb71dbbf4ff7e157f0150be066ff34a29",
+        "inkCount": 112,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 50991,
+        "sha256": "b93aaca81fdf1d265cb975edc257fc6c1d8d86e4bc2b7075dfd192f41de4ac3d",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1159,
+      "sourceCandidateIndex": 49,
+      "cropRectangle": [
+        19,
+        379,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "c72177afdec1915c1301eaf12242991cc73c7ebd001ce59a05d2300913d2a5e9",
+        "inkCount": 113,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 51262,
+        "sha256": "0efbfacaebda54b98b62d896bb75b73fa68342e3a6224e113a00883eb2f81694",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1159,
+        "relativePath": "frame-1159.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1159.png",
+        "bytes": 51262,
+        "sha256": "0efbfacaebda54b98b62d896bb75b73fa68342e3a6224e113a00883eb2f81694"
+      },
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1160,
+      "sourceCandidateIndex": 49,
+      "cropRectangle": [
+        18,
+        380,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "3267a135e1d7ecf7ec22b00ea32e1edd8dc2be7493f4c127af583416c2f9f85d",
+        "inkCount": 113,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 54324,
+        "sha256": "f5c52035d7bfad0bbb0c1830292423d134358a4b6d4661adaf58635e2552561f",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the left of the lower scattered-matrix row near18–19/378–380; corresponding source group remains separated from neighboring words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1161,
+      "sourceCandidateIndex": 61,
+      "cropRectangle": [
+        352,
+        491,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "34fa5b06d9f78b1ae17d7b1e95c01babb9fb69d9600f7f97e33aee8016ffe659",
+        "inkCount": 113,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 45771,
+        "sha256": "474b1d3ea96683be3adb77c31bdd75fd90c18a08d1efa418fb81739a6fb05557",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1162,
+      "sourceCandidateIndex": 63,
+      "cropRectangle": [
+        352,
+        491,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "928a5e947b6133513c1421bc2359a5713ca31c81a51479b89a5c74bdb167d6dd",
+        "inkCount": 106,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 46233,
+        "sha256": "942ba40d1452f4a7a955487dd8ba0946e6b1947c97d5bf6bbc532720aac1907f",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1163,
+      "sourceCandidateIndex": 60,
+      "cropRectangle": [
+        352,
+        490,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "d79f3bab1b9d81752e0cf96fffbdb5a264d91e162ddf9f7125d00457454f0491",
+        "inkCount": 105,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 43343,
+        "sha256": "a2f32aa1299f13ca051ffb6943d1da225f74d5dfb6c4d374ae66cc5718132930",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1164,
+      "sourceCandidateIndex": 63,
+      "cropRectangle": [
+        352,
+        490,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "795510a491e4f6966f7c2642c52e1ad9261c6ee1d8add712d9aa2188c9bd4a0b",
+        "inkCount": 95,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 44178,
+        "sha256": "55b8d086910ec97f5dc1ec1117052f58387b507b34c99ba3bab4d28337fa90fd",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1165,
+      "sourceCandidateIndex": 59,
+      "cropRectangle": [
+        352,
+        490,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "733e7f01c2c1f962bbe2727154856369fa8d126456109266f5a71fcb2969f0fb",
+        "inkCount": 100,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 43851,
+        "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1165,
+        "relativePath": "frame-1165.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1165.png",
+        "bytes": 43851,
+        "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f"
+      },
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1166,
+      "sourceCandidateIndex": 62,
+      "cropRectangle": [
+        352,
+        490,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "5ab1ecf711c9f4098d2d94877fde5bca697097254134c66063c2b474b145b8e7",
+        "inkCount": 91,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 44028,
+        "sha256": "9ef4193a9fd31c037f31f22e5ec4e26ef5aec4676a81c53f6421f1d1c0423fbe",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1167,
+      "sourceCandidateIndex": 60,
+      "cropRectangle": [
+        352,
+        490,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "db227223f2934b961446aef679b31a8c834f77040edb1407ee175fd8557298dc",
+        "inkCount": 100,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 44140,
+        "sha256": "df702db682465230965b4b89406153bec88964f2a0c81aef124ba7ffcaed382d",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1168,
+      "sourceCandidateIndex": 59,
+      "cropRectangle": [
+        352,
+        491,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "f99baffc0146973d072cd6e9479016fd060acfd42931abea81f6c58e9bd34b3a",
+        "inkCount": 105,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 45031,
+        "sha256": "72cde8e1f202daa27576454202445800a288b90d0bd49c0185ab453f53079b8f",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the narrow right paragraph near352/490–491; direct source context confirms the sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1169,
+      "sourceCandidateIndex": 63,
+      "cropRectangle": [
+        262,
+        491,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "05d61573268a723d9cfb8854666a34b8d9b315ec3207c11de8895f5c3f8c4aa7",
+        "inkCount": 98,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 73857,
+        "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1169,
+        "relativePath": "frame-1169.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1169.png",
+        "bytes": 73857,
+        "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457"
+      },
+      "sourceContext": "Long group remains in the lower paragraph near262/491 while earlier arrivals already moved to the center.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1170,
+      "sourceCandidateIndex": 79,
+      "cropRectangle": [
+        129,
+        398,
+        48,
+        8
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 8,
+        "rowTextSHA256": "35779d793cde78d48994ce2102400fc47ee40e7f98af404afcd936d53e44e1f4",
+        "inkCount": 91,
+        "emptyRows": [
+          0,
+          1,
+          2,
+          7
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 79241,
+        "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1170,
+        "relativePath": "frame-1170.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1170.png",
+        "bytes": 79241,
+        "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e"
+      },
+      "sourceContext": "Long group at the bottom compact-center row near129/398–400;1170 retains weak direct mask IoU and height8 as observed raster evidence, not a relaxed tracking threshold.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1171,
+      "sourceCandidateIndex": 89,
+      "cropRectangle": [
+        129,
+        400,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "3d13a28ed4e20e10a7da52576f0cd44f5665f61d2b60a05e7e40fd13c25dd433",
+        "inkCount": 101,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 69391,
+        "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1171,
+        "relativePath": "frame-1171.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1171.png",
+        "bytes": 69391,
+        "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491"
+      },
+      "sourceContext": "Long group at the bottom compact-center row near129/398–400;1170 retains weak direct mask IoU and height8 as observed raster evidence, not a relaxed tracking threshold.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1172,
+      "sourceCandidateIndex": 92,
+      "cropRectangle": [
+        129,
+        399,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "0e964eb185d5093be4eb2f3b634612c095a52c1912d977cd4fec9a911793f685",
+        "inkCount": 95,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 79069,
+        "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1172,
+        "relativePath": "frame-1172.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1172.png",
+        "bytes": 79069,
+        "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c"
+      },
+      "sourceContext": "Long group at the bottom compact-center row near129/398–400;1170 retains weak direct mask IoU and height8 as observed raster evidence, not a relaxed tracking threshold.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1173,
+      "sourceCandidateIndex": 76,
+      "cropRectangle": [
+        17,
+        455,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "476a5d7f194c953c67972ea2b80a01dc038ec69bdacd947d0310920c5fe84712",
+        "inkCount": 112,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 78395,
+        "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1173,
+        "relativePath": "frame-1173.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1173.png",
+        "bytes": 78395,
+        "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291"
+      },
+      "sourceContext": "Long group at left perimeter near17–18/455–456.1176uses raw49x6 candidate crop, preserving historical49x5 discrepancy.1177ink120 is visibly source-supported with no neighboring-word merge observed.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1174,
+      "sourceCandidateIndex": 48,
+      "cropRectangle": [
+        18,
+        455,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "5e718f9ccd67f445b90c56518a78ef3312ea2f7ba85d76d012d23a889982e7f4",
+        "inkCount": 114,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 86272,
+        "sha256": "8e9d022cc7d2c0e5ff5667f989585bcdf0dc11650d2fc9b7afb2d38ac468f7c7",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at left perimeter near17–18/455–456.1176uses raw49x6 candidate crop, preserving historical49x5 discrepancy.1177ink120 is visibly source-supported with no neighboring-word merge observed.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1175,
+      "sourceCandidateIndex": 43,
+      "cropRectangle": [
+        18,
+        455,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "cb45fa4d5702f649f5fbdde2953f4da7ab63566dcd16eb6d48250126bbe18858",
+        "inkCount": 101,
+        "emptyRows": [
+          0,
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 87292,
+        "sha256": "73f5cb6bf5f6ba485291e49f611b5ee1d760aa6c54ef3a5761eb31569df8366a",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at left perimeter near17–18/455–456.1176uses raw49x6 candidate crop, preserving historical49x5 discrepancy.1177ink120 is visibly source-supported with no neighboring-word merge observed.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1176,
+      "sourceCandidateIndex": 43,
+      "cropRectangle": [
+        18,
+        456,
+        49,
+        6
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 6,
+        "rowTextSHA256": "8e3503b6471270f7f03b3af283b7ab9c3d8cae4e6f032b1b24fb4377f13c4e37",
+        "inkCount": 100,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 87602,
+        "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1176,
+        "relativePath": "frame-1176.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1176.png",
+        "bytes": 87602,
+        "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc"
+      },
+      "sourceContext": "Long group at left perimeter near17–18/455–456.1176uses raw49x6 candidate crop, preserving historical49x5 discrepancy.1177ink120 is visibly source-supported with no neighboring-word merge observed.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1177,
+      "sourceCandidateIndex": 40,
+      "cropRectangle": [
+        18,
+        456,
+        49,
+        6
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 6,
+        "rowTextSHA256": "67fdffbbaf6dd6cef1bf6de988a3e35f5075b19a9ea4967c90730e885d5d34c0",
+        "inkCount": 120,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 86204,
+        "sha256": "b5751b3c3fe576e0f11287b9ecc9bcf28965b280484c8d50ee6a6d06f6046778",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at left perimeter near17–18/455–456.1176uses raw49x6 candidate crop, preserving historical49x5 discrepancy.1177ink120 is visibly source-supported with no neighboring-word merge observed.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1178,
+      "sourceCandidateIndex": 8,
+      "cropRectangle": [
+        129,
+        96,
+        49,
+        4
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 4,
+        "rowTextSHA256": "9bc08a3984808be6e2bfa0f1afaf26b3bc557681d17c142c51e7980b634173ea",
+        "inkCount": 112,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 91800,
+        "sha256": "91c3e0a05fa6f5fb5193522e71c1a6c405c6e2fd73ea696261b02b74426b8043",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on the upper grid row near129/94–96; local source context confirms the jump from the perimeter.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1179,
+      "sourceCandidateIndex": 4,
+      "cropRectangle": [
+        129,
+        96,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "1e32b141315f9087e75cea9e47db5939ccaceab4e3bee7e2817b5971f9b1cb8c",
+        "inkCount": 115,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88944,
+        "sha256": "2799f344896a3ac232ff19be9c6c2f3490ee805fe9b870ab33e4ed51cce110f5",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on the upper grid row near129/94–96; local source context confirms the jump from the perimeter.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1180,
+      "sourceCandidateIndex": 6,
+      "cropRectangle": [
+        129,
+        95,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "d97108102e61f80c49a9fa22f3090d142375d8e473f02edf08e93625807ce8b2",
+        "inkCount": 98,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 87754,
+        "sha256": "3599351b507ecc8a064fab0aa17a34c2aa761e6108886db57abb795bf0473ec6",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on the upper grid row near129/94–96; local source context confirms the jump from the perimeter.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1181,
+      "sourceCandidateIndex": 6,
+      "cropRectangle": [
+        129,
+        94,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "3837d76d0975afd98829f877de28f3a0f9e00918cf695f20cd6a204e9b9c94d9",
+        "inkCount": 106,
+        "emptyRows": [
+          0,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 86604,
+        "sha256": "3683e5ddcb9389cea046e7aeb43905805633815c1e454930f746cabccd6c8526",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on the upper grid row near129/94–96; local source context confirms the jump from the perimeter.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1182,
+      "sourceCandidateIndex": 7,
+      "cropRectangle": [
+        129,
+        95,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "17f80780b0390a56bfd1844ee0497e39e943e880a4e0f6b8e9d8ec28069fd437",
+        "inkCount": 111,
+        "emptyRows": [
+          0,
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 96202,
+        "sha256": "dff39ed8105b59a55a14cc309ddb6021ea21603af11bc4a2f1622fcb2b2adb0c",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on the upper grid row near129/94–96; local source context confirms the jump from the perimeter.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1183,
+      "sourceCandidateIndex": 37,
+      "cropRectangle": [
+        296,
+        387,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "4c7be4c2bdbafdd497ffae2a7b56ed34b22c2835d7b6f40b6dc2b5866288b7eb",
+        "inkCount": 110,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 98818,
+        "sha256": "98190eabbff8954cb51bc73c13cb13d86efd448e8dbe52a3e6667b0ca4a9d5ff",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at296/387in the middle grid; direct source image distinguishes this sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1184,
+      "sourceCandidateIndex": 36,
+      "cropRectangle": [
+        296,
+        387,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "3b2c291dc697e4c4f54d23add289a67667c60d81c990b5582e69e6e6ce29f095",
+        "inkCount": 110,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 97796,
+        "sha256": "63aa0a3055883c0843181dd117ce12d1fa2740c84e18858678f1a5096735539b",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at296/387in the middle grid; direct source image distinguishes this sampled cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1185,
+      "sourceCandidateIndex": 37,
+      "cropRectangle": [
+        129,
+        331,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "ca7815bdfd16bc3bb0f458ca547236fa133c8739ff70560235f7048f6e9c4115",
+        "inkCount": 114,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 93761,
+        "sha256": "b4b0ee0c201189e68014dff9eae642633ee4f583c0195710a12ce4c97e2fca6a",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at129–130/330–331in the left-middle grid; visible group remains separate from nearby words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1186,
+      "sourceCandidateIndex": 40,
+      "cropRectangle": [
+        129,
+        331,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "1e3e065e821f68e734f339eeb943e59bfe3bd6a7bda8c8e56c20116e21013bbf",
+        "inkCount": 111,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 97575,
+        "sha256": "d2b8f5ea4ff6d7ca094f3e89a56d89fdb99d28b8e25579bb08293449f10a5cbe",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at129–130/330–331in the left-middle grid; visible group remains separate from nearby words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1187,
+      "sourceCandidateIndex": 41,
+      "cropRectangle": [
+        129,
+        331,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "712d0e7339dea5b577bc070df1b114fea97be3a5279e3b94a42208ab9a7104a6",
+        "inkCount": 90,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 98771,
+        "sha256": "c49c4de0ac7f5e0309cb530320093d87dcf4bb4670edd04eb920e28df6d6b3af",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at129–130/330–331in the left-middle grid; visible group remains separate from nearby words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1188,
+      "sourceCandidateIndex": 39,
+      "cropRectangle": [
+        130,
+        330,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "609e18eb01ccac28823c8a0f303f7caac673a395f6a198e019fa8515b8888576",
+        "inkCount": 105,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 98849,
+        "sha256": "7ede911b671412f9301584ceb35a53143cce93bfefccc1bf80422068f8a235fb",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at129–130/330–331in the left-middle grid; visible group remains separate from nearby words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1189,
+      "sourceCandidateIndex": 39,
+      "cropRectangle": [
+        130,
+        330,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "67a22eecd09e1f9f6bf04fbc2c8cc8c6467d0bab8bc1884db4a346799be1099b",
+        "inkCount": 109,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 92970,
+        "sha256": "a9f8e066c11e522ad9adb6952ae165375ace5ede1e74619541a5cf30f5ee484f",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at129–130/330–331in the left-middle grid; visible group remains separate from nearby words.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1190,
+      "sourceCandidateIndex": 57,
+      "cropRectangle": [
+        186,
+        593,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "8cb188a9d7eeaf166b52bccfa18e34d31f0df7d2f5aa7d056460a968befbcb2b",
+        "inkCount": 106,
+        "emptyRows": [
+          0,
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 103943,
+        "sha256": "7d86b5e6f8efa1f2d790a0cea05c8196bdb3015a54810b16e4ef6a694c7c2fd1",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the central vertical column near185–186/593–594. The independent score changes elsewhere do not alter this candidate context.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1191,
+      "sourceCandidateIndex": 58,
+      "cropRectangle": [
+        186,
+        594,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "1d09b84bf82b11b295fb462297e4d1242283c148072441d4739efe8dc451031a",
+        "inkCount": 106,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 99462,
+        "sha256": "e58fb28d9579bdfd64946951e97229febd1f50c3570d2f714902ac3ce8fc828e",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the central vertical column near185–186/593–594. The independent score changes elsewhere do not alter this candidate context.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1192,
+      "sourceCandidateIndex": 74,
+      "cropRectangle": [
+        185,
+        594,
+        49,
+        4
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 4,
+        "rowTextSHA256": "69f6ff332eefe4245827ee94cf6a53f98eae4166820240ba4ef384212faeb228",
+        "inkCount": 93,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 98938,
+        "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1192,
+        "relativePath": "frame-1192.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1192.png",
+        "bytes": 98938,
+        "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2"
+      },
+      "sourceContext": "Long group low in the central vertical column near185–186/593–594. The independent score changes elsewhere do not alter this candidate context.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1193,
+      "sourceCandidateIndex": 67,
+      "cropRectangle": [
+        185,
+        594,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "e29070f1fa29254102b5a0976966e430021f50bd27f298e9e447fb9ab5b109cc",
+        "inkCount": 103,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 96224,
+        "sha256": "6668c25b0d578d5ecc6839ed93af8ab9ce2d3b2b6b921f3bdd29c572b7388ace",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group low in the central vertical column near185–186/593–594. The independent score changes elsewhere do not alter this candidate context.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1194,
+      "sourceCandidateIndex": 35,
+      "cropRectangle": [
+        171,
+        164,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "8d5869ebcb61d3e3338a05eaf74c1fa031241a5c207ee9f1d3e047ba96117239",
+        "inkCount": 123,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 98712,
+        "sha256": "232c95bad8f43c4149e942f9bae01372789ecf158fe755ff542e488a3bf47fa6",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the end of an upper-left paragraph row near171/163–164.1194ink123 is a denser raster state but the complete long group/context remains visible; no new extent ambiguity found.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1195,
+      "sourceCandidateIndex": 35,
+      "cropRectangle": [
+        171,
+        163,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "c292f4311994fc8bb44f2416109f8efd87ef37e4ec6eab1b91f65c716c469951",
+        "inkCount": 103,
+        "emptyRows": [
+          0,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 96780,
+        "sha256": "a9c4fc434ac24435244ce8a8372d71db15840f80dcbc701b702a434f817e5a09",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the end of an upper-left paragraph row near171/163–164.1194ink123 is a denser raster state but the complete long group/context remains visible; no new extent ambiguity found.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1196,
+      "sourceCandidateIndex": 38,
+      "cropRectangle": [
+        171,
+        163,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "83ed65388595373bc33cf1f01556c452288d89b3bb7135bd184d680a1ed21ece",
+        "inkCount": 106,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88635,
+        "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1196,
+        "relativePath": "frame-1196.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1196.png",
+        "bytes": 88635,
+        "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b"
+      },
+      "sourceContext": "Long group at the end of an upper-left paragraph row near171/163–164.1194ink123 is a denser raster state but the complete long group/context remains visible; no new extent ambiguity found.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1197,
+      "sourceCandidateIndex": 48,
+      "cropRectangle": [
+        171,
+        163,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "3f3e214ca8a393c95a81f0347280aba44ab559503a5f3679dfb5f47babe58565",
+        "inkCount": 112,
+        "emptyRows": [
+          0,
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88335,
+        "sha256": "ff8660d46d431a200db2a3574361b70bc780c7e3ab0c1ca4b461683b0c666ddb",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the end of an upper-left paragraph row near171/163–164.1194ink123 is a denser raster state but the complete long group/context remains visible; no new extent ambiguity found.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1198,
+      "sourceCandidateIndex": 53,
+      "cropRectangle": [
+        171,
+        163,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "c3d8bb92039427b8c871c59495e69d9db963103de6768951ddb0e4b359e30d95",
+        "inkCount": 113,
+        "emptyRows": [
+          0,
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88240,
+        "sha256": "5e9b42d173db3d9fb4c3c7d1e4bdccb275bdd591e13dd9c527eae3b2ce5b03bd",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at the end of an upper-left paragraph row near171/163–164.1194ink123 is a denser raster state but the complete long group/context remains visible; no new extent ambiguity found.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1199,
+      "sourceCandidateIndex": 74,
+      "cropRectangle": [
+        19,
+        413,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "6e516652637b944b93e2fcb3e8f3964a1019488b6f972580003b3b2a6d81b1b7",
+        "inkCount": 112,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 89425,
+        "sha256": "6f11c08429d8f62df671d3ddf6aa66f1e7a81db1c404b9d7b6bbf56a905a5d9c",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1199,
+        "relativePath": "frame-1199.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1199.png",
+        "bytes": 89425,
+        "sha256": "6f11c08429d8f62df671d3ddf6aa66f1e7a81db1c404b9d7b6bbf56a905a5d9c"
+      },
+      "sourceContext": "Long group at19–20/413–414in the left grid, separated from adjacent words; source images confirm the paragraph-to-grid jump.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1200,
+      "sourceCandidateIndex": 86,
+      "cropRectangle": [
+        20,
+        413,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "88f96edda5cb3c501ccab40568c54738daeeee72f3d99250d57c4b0bb178ad5b",
+        "inkCount": 108,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 89828,
+        "sha256": "2ec60559538854065efd44e11cff9788066ad3bc6262a2b8ec61d030a36c774b",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at19–20/413–414in the left grid, separated from adjacent words; source images confirm the paragraph-to-grid jump.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1201,
+      "sourceCandidateIndex": 75,
+      "cropRectangle": [
+        19,
+        413,
+        49,
+        6
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 6,
+        "rowTextSHA256": "ae8a73ab5bb8984746d36d7f87e2a398def0cb13911ddb799c5444257f772845",
+        "inkCount": 99,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88117,
+        "sha256": "d35165e51a0e9bc92afed410405a5ffd293825a66f8bb68fd6f8aa47382f9c52",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at19–20/413–414in the left grid, separated from adjacent words; source images confirm the paragraph-to-grid jump.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1202,
+      "sourceCandidateIndex": 81,
+      "cropRectangle": [
+        19,
+        414,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "bd553408359b9e1c30ddb509ce59481b75c1789658fa4f3e66932298f77d087b",
+        "inkCount": 103,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 90187,
+        "sha256": "55d8dbcb4d8d634464a8da042acfd01075a356d6685634b90b01d21c12ada4da",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at19–20/413–414in the left grid, separated from adjacent words; source images confirm the paragraph-to-grid jump.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1203,
+      "sourceCandidateIndex": 29,
+      "cropRectangle": [
+        130,
+        136,
+        48,
+        7
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 7,
+        "rowTextSHA256": "f204e52f3156e87f544a60a830fc556980a7dff97a4a5f7539f99d0c1699bc25",
+        "inkCount": 116,
+        "emptyRows": [
+          5,
+          6
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 90952,
+        "sha256": "02989af3ff21a90464fca26411197f746eed95be24ff6c2c107ecae5da71c9bf",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group in upper compact grid near129–130/136.1203/1205ink116/117are source-supported raster variations; literal crop rows and margins stay unchanged.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1204,
+      "sourceCandidateIndex": 30,
+      "cropRectangle": [
+        130,
+        136,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "e094f1e868afffe2c3d8558659bb3d86ec27bc48e981eb8cf6cb4ff964f99fcc",
+        "inkCount": 115,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 90146,
+        "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1204,
+        "relativePath": "frame-1204.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1204.png",
+        "bytes": 90146,
+        "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85"
+      },
+      "sourceContext": "Long group in upper compact grid near129–130/136.1203/1205ink116/117are source-supported raster variations; literal crop rows and margins stay unchanged.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1205,
+      "sourceCandidateIndex": 30,
+      "cropRectangle": [
+        129,
+        136,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "40879478f4c55a932e1ba1c6d10e08635be75333db705617b5fb5431679ae60e",
+        "inkCount": 117,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 90320,
+        "sha256": "64909f1cfb4b6409f126b9c0e16358e4da374e31efc0746edae079325a483784",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group in upper compact grid near129–130/136.1203/1205ink116/117are source-supported raster variations; literal crop rows and margins stay unchanged.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1206,
+      "sourceCandidateIndex": 30,
+      "cropRectangle": [
+        129,
+        136,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "1895e053173f6658560b8412642535d4df233eb5929796280156af309a95f255",
+        "inkCount": 106,
+        "emptyRows": [
+          5
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 93949,
+        "sha256": "f4fe2d0424e5d18035cfa438a9a87b9d39d54ccfd347333e48a48498183cb0ce",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group in upper compact grid near129–130/136.1203/1205ink116/117are source-supported raster variations; literal crop rows and margins stay unchanged.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1217,
+      "sourceCandidateIndex": 4,
+      "cropRectangle": [
+        240,
+        53,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "b410a813dd4419e07f0ec61368fdfd2c0e816ea04509f753140043bcc5e3f985",
+        "inkCount": 109,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 95736,
+        "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1217,
+        "relativePath": "frame-1217.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1217.png",
+        "bytes": 95736,
+        "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90"
+      },
+      "sourceContext": "Long group on top grid row near240/53 after the unresolved1207–1216run; source image supports independent reentry, not propagation through that gap.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1219,
+      "sourceCandidateIndex": 4,
+      "cropRectangle": [
+        240,
+        53,
+        48,
+        6
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 6,
+        "rowTextSHA256": "c77e590906448cf63da57c0dda2508b6547a76428d9df0d741e9e86c1222ae35",
+        "inkCount": 111,
+        "emptyRows": [
+          0
+        ]
+      },
+      "sourceFrameProvenance": {
+        "bytes": 104082,
+        "sha256": "11ff8c0bfe9580c2a0ae329bbba460bd71940a0ff4d6ce29e04b76474640b945",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group on top grid row near240/53 after the unresolved1207–1216run; source image supports independent reentry, not propagation through that gap.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1220,
+      "sourceCandidateIndex": 8,
+      "cropRectangle": [
+        73,
+        137,
+        49,
+        5
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 5,
+        "rowTextSHA256": "24c06338f8ec681052570d05d884cdf55fae5c046c28cd019abe7e4a3a5ff2a0",
+        "inkCount": 103,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 102276,
+        "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1220,
+        "relativePath": "frame-1220.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1220.png",
+        "bytes": 102276,
+        "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049"
+      },
+      "sourceContext": "Long group at73–74/137in the upper-left grid after a late cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1221,
+      "sourceCandidateIndex": 9,
+      "cropRectangle": [
+        74,
+        137,
+        48,
+        5
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 5,
+        "rowTextSHA256": "b40538fac60890480c833715c14c17ff5997cd63492c4e784005c0330b7b7f02",
+        "inkCount": 107,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 99151,
+        "sha256": "31fc93b006358b0ca8753a4bb06684278c6aa8562f02328c1201d39ab026c663",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at73–74/137in the upper-left grid after a late cut.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1222,
+      "sourceCandidateIndex": 19,
+      "cropRectangle": [
+        74,
+        179,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "61bf1bbf79869d86a70e30aa25f9e46bf15e0997e844605b6d03f44132bb850d",
+        "inkCount": 123,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 100174,
+        "sha256": "15e3fe3e2666499f013a282c9ecbcbeba6f4647fac45171b8bf0c088814d353a",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "PENDING PEER REVIEW: target-like long group is at74/179, but prefix ink is denser than1223 and appears on a row occupied by a short group in1220–1221. This can be source raster/composite ink; no isolated tight extent is certified. Preserve provisional null until peer review.",
+      "verdict": "PENDING_ROOT_PEER_REVIEW_PROVISIONAL_NULL",
+      "admitted": false
+    },
+    {
+      "frame": 1223,
+      "sourceCandidateIndex": 21,
+      "cropRectangle": [
+        74,
+        179,
+        48,
+        4
+      ],
+      "maskMetadata": {
+        "width": 48,
+        "height": 4,
+        "rowTextSHA256": "b7191782707cbbe9d9de5a7964787a665b15a1721c824d809d86f07eebd94b6b",
+        "inkCount": 111,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 101612,
+        "sha256": "79f77019819331469507be4e7a3c19fb2a6f1cd601b09e6c1f5a66e856b69093",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at73–74/179in the late/final pale rearrangement, separated from nearby source groups.1223–1225provide the following context for1222.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1224,
+      "sourceCandidateIndex": 19,
+      "cropRectangle": [
+        73,
+        179,
+        49,
+        4
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 4,
+        "rowTextSHA256": "bdf3436dde9a38bb942b90de382767e5372e5f5fd09528b664dc482ab20ae256",
+        "inkCount": 115,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 89448,
+        "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": {
+        "frame": 1224,
+        "relativePath": "frame-1224.png",
+        "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1224.png",
+        "bytes": 89448,
+        "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad"
+      },
+      "sourceContext": "Long group at73–74/179in the late/final pale rearrangement, separated from nearby source groups.1223–1225provide the following context for1222.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    },
+    {
+      "frame": 1225,
+      "sourceCandidateIndex": 25,
+      "cropRectangle": [
+        73,
+        179,
+        49,
+        4
+      ],
+      "maskMetadata": {
+        "width": 49,
+        "height": 4,
+        "rowTextSHA256": "f3820c5e2da22fafa418771fc39ac843cf2e4e1095d69a99ea6514f659438dc7",
+        "inkCount": 115,
+        "emptyRows": []
+      },
+      "sourceFrameProvenance": {
+        "bytes": 88438,
+        "sha256": "0c0b691e705497a6f335b13b212435ef489d89de7098dc1455365b067f9914a9",
+        "width": 480,
+        "height": 852
+      },
+      "comparisonImage": null,
+      "sourceContext": "Long group at73–74/179in the late/final pale rearrangement, separated from nearby source groups.1223–1225provide the following context for1222.",
+      "verdict": "SOURCE_REVIEW_SUPPORTED_PENDING_ROOT_ACCEPTANCE",
+      "admitted": true
+    }
+  ],
+  "nullFrames": [
+    1207,
+    1208,
+    1209,
+    1210,
+    1211,
+    1212,
+    1213,
+    1214,
+    1215,
+    1216,
+    1218,
+    1222
+  ],
+  "rejected1208": {
+    "frame": 1208,
+    "rejectedCandidateIndex": 6,
+    "cropRectangle": [
+      258,
+      205,
+      10,
+      6
+    ],
+    "reason": "Wrong historical short group; original anchor remains rejected. No joined or replacement crop is admitted."
+  },
+  "comparisonImages": [
+    {
+      "frame": 1152,
+      "relativePath": "frame-1152.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1152.png",
+      "bytes": 44202,
+      "sha256": "2ef9228f6006788bb8a6dab6c4800797b6031e947ec3389d0e598930033450ef"
+    },
+    {
+      "frame": 1154,
+      "relativePath": "frame-1154.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1154.png",
+      "bytes": 50456,
+      "sha256": "6e8358d2cf046f547502297102d644a29b78ab20cbb8b8dc4409f0b1c6ee29ce"
+    },
+    {
+      "frame": 1159,
+      "relativePath": "frame-1159.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1159.png",
+      "bytes": 51262,
+      "sha256": "0efbfacaebda54b98b62d896bb75b73fa68342e3a6224e113a00883eb2f81694"
+    },
+    {
+      "frame": 1165,
+      "relativePath": "frame-1165.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1165.png",
+      "bytes": 43851,
+      "sha256": "79db520b1006d94e3a44f0085b34b763fdbc373ec93b407d9c84986d85c7d71f"
+    },
+    {
+      "frame": 1169,
+      "relativePath": "frame-1169.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1169.png",
+      "bytes": 73857,
+      "sha256": "207a724cd6ecdeaf1ef989a9d9cd18c95e8f0c8bbf5ebaf90721fbe35ed73457"
+    },
+    {
+      "frame": 1170,
+      "relativePath": "frame-1170.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1170.png",
+      "bytes": 79241,
+      "sha256": "5039999a608d57d60e9d242d35b51094c1908131b5205c3c10af8ed45e5e956e"
+    },
+    {
+      "frame": 1171,
+      "relativePath": "frame-1171.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1171.png",
+      "bytes": 69391,
+      "sha256": "91654f2228d7896877fe66f12e465b3e2d2f10f8f4ef4695bdc3424246788491"
+    },
+    {
+      "frame": 1172,
+      "relativePath": "frame-1172.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1172.png",
+      "bytes": 79069,
+      "sha256": "954e14cd6079a570b4b0b2a8b507ed847e06f92b8f2eae0fa85307965941028c"
+    },
+    {
+      "frame": 1173,
+      "relativePath": "frame-1173.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1173.png",
+      "bytes": 78395,
+      "sha256": "408ea7421c6f50484efa02248cdfe7bf31ec9a1465324564d09e481715ab9291"
+    },
+    {
+      "frame": 1176,
+      "relativePath": "frame-1176.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1176.png",
+      "bytes": 87602,
+      "sha256": "feb0a8fe8f4adcebd9af2a1dbf848e08e8ac92fa75f0e42db81ff7e42ad927cc"
+    },
+    {
+      "frame": 1192,
+      "relativePath": "frame-1192.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1192.png",
+      "bytes": 98938,
+      "sha256": "746b7b460b0391c4c7a4e8e8ad55c12ea67d3b00ef83c74c033ee23f72054aa2"
+    },
+    {
+      "frame": 1196,
+      "relativePath": "frame-1196.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1196.png",
+      "bytes": 88635,
+      "sha256": "c770f8d88aadb6fb65c172559d65647542bb0a501dd85a50ec640e36eab77e6b"
+    },
+    {
+      "frame": 1199,
+      "relativePath": "frame-1199.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1199.png",
+      "bytes": 89425,
+      "sha256": "6f11c08429d8f62df671d3ddf6aa66f1e7a81db1c404b9d7b6bbf56a905a5d9c"
+    },
+    {
+      "frame": 1204,
+      "relativePath": "frame-1204.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1204.png",
+      "bytes": 90146,
+      "sha256": "832b8b7cc7cc28d7452c743151db93860dcfd39374423faafb0e240667629a85"
+    },
+    {
+      "frame": 1208,
+      "relativePath": "frame-1208.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1208.png",
+      "bytes": 96308,
+      "sha256": "dc1136edc592fd4bd8ca7861a4228d4256cbe515ca9e16157c9d9b9a08a1acdf"
+    },
+    {
+      "frame": 1209,
+      "relativePath": "frame-1209.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1209.png",
+      "bytes": 93218,
+      "sha256": "48da06b3244ece4f5700d873d9de38a5da7c99712084a1377e7c1225891a3b72"
+    },
+    {
+      "frame": 1211,
+      "relativePath": "frame-1211.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1211.png",
+      "bytes": 98674,
+      "sha256": "89c50dcdb7a14115af5325a6b8b6e74d65fed461fa987fce69d28d4a63e6fe6c"
+    },
+    {
+      "frame": 1213,
+      "relativePath": "frame-1213.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1213.png",
+      "bytes": 91182,
+      "sha256": "49aaf338e6442c291f65fe4d09e68dfa8e0872eeabbf50b098fd4a6332aff97a"
+    },
+    {
+      "frame": 1214,
+      "relativePath": "frame-1214.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1214.png",
+      "bytes": 94701,
+      "sha256": "258c6100342d92b4405c925232bce95c5dd07d1e298416f0d27751d5f24ba782"
+    },
+    {
+      "frame": 1215,
+      "relativePath": "frame-1215.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1215.png",
+      "bytes": 96684,
+      "sha256": "0327bf2a23434235d9f04ffbe7e116a12a7ce65d4a8f3a7bada256fa10b4d466"
+    },
+    {
+      "frame": 1217,
+      "relativePath": "frame-1217.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1217.png",
+      "bytes": 95736,
+      "sha256": "ed894a20693f24d8fb97c65be2a8503e126cc1dc844bd73aed28b06ed33f4d90"
+    },
+    {
+      "frame": 1220,
+      "relativePath": "frame-1220.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1220.png",
+      "bytes": 102276,
+      "sha256": "d6a59f2c1e7a78579123eca86602d10caecf581406279a34c1f4e71cac004049"
+    },
+    {
+      "frame": 1224,
+      "relativePath": "frame-1224.png",
+      "path": "scripts/fixtures/source-ajedrez-word-frames/frame-1224.png",
+      "bytes": 89448,
+      "sha256": "98bcd6d0e7ff6ee976733967e6c034f9071b1f0aaeeacc6a34d050bda0ec34ad"
+    }
+  ],
+  "sourceBoundsMeaning": "Retained candidate/crop rectangles may contain empty rows. Native independent caption unchanged; source lexical identity unknown.",
+  "sourceMediaPolicy": "Reuses only the existing23 repository comparison PNGs. Additional source frame/crop hashes are provenance, not file dependencies. No new raw source pixels, crop bitmaps, fonts or media are copied.",
+  "limits": [
+    "80other actors remain representative holds.",
+    "12actor43nulls restore the representative baseline, not the last measured point.",
+    "Source lexical identity, exact glyph/font parity, easing and full-film fidelity remain unknown."
+  ]
+}

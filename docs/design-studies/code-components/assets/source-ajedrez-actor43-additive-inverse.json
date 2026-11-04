@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "EXTERNAL_ACTOR43_FOUR_PATCH_INVERSE_TO_CANONICAL837C",
+  "parent": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "candidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 209769,
+    "sha256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52"
+  },
+  "review": {
+    "path": "scripts/fixtures/source-ajedrez-actor43-source-correspondence.json",
+    "bytes": 66880,
+    "sha256": "c63a9aff3d91174006291851605e40a7948385349a065bf3d0cdbca3b9ec2a99"
+  },
+  "patches": [
+    {
+      "name": "Add separate private actor43 literal table",
+      "before": "// One effect-dependency slot stays stable per host",
+      "after": "// Additional source-reviewed candidate/crop rectangles for actor43 only.\n// Native caption turno remains independent; source lexical identity is unknown.\n// The12 nulls restore the representative baseline.1208and1222stay unresolved;\n// no fragment union or overlapped-prefix glyph fit is admitted.\nconst AJEDREZ_TYPE_ACTOR43_FITS: readonly (AjedrezTypeMeasuredPoint | null)[] = [\n    [129,550.5,48],\n    [19,375.5,48],\n    [19,375.5,48],\n    [19,374.5,48],\n    [19,374.5,48],\n    [19,374.5,48],\n    [19,375.5,48],\n    [19,375.5,48],\n    [18,376.5,49],\n    [352,487.5,48],\n    [352,487.5,48],\n    [352,486.5,48],\n    [352,486.5,48],\n    [352,486.5,48],\n    [352,486.5,48],\n    [352,486.5,48],\n    [352,487.5,48],\n    [262,487.5,48],\n    [129,394.5,48],\n    [129,396.5,48],\n    [129,395.5,48],\n    [17,451.5,49],\n    [18,451.5,48],\n    [18,451.5,48],\n    [18,452.5,49],\n    [18,452.5,49],\n    [129,92.5,49],\n    [129,92.5,48],\n    [129,91.5,48],\n    [129,90.5,48],\n    [129,91.5,48],\n    [296,383.5,48],\n    [296,383.5,48],\n    [129,327.5,49],\n    [129,327.5,49],\n    [129,327.5,49],\n    [130,326.5,48],\n    [130,326.5,48],\n    [186,589.5,48],\n    [186,590.5,48],\n    [185,590.5,49],\n    [185,590.5,49],\n    [171,160.5,48],\n    [171,159.5,48],\n    [171,159.5,48],\n    [171,159.5,48],\n    [171,159.5,48],\n    [19,409.5,48],\n    [20,409.5,48],\n    [19,409.5,49],\n    [19,410.5,49],\n    [130,132.5,48],\n    [130,132.5,48],\n    [129,132.5,48],\n    [129,132.5,48],\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    null,\n    [240,49.5,49],\n    null,\n    [240,49.5,48],\n    [73,133.5,49],\n    [74,133.5,48],\n    null,\n    [74,175.5,48],\n    [73,175.5,49],\n    [73,175.5,49],\n]\n// One effect-dependency slot stays stable per host"
+    },
+    {
+      "name": "Add actor43 to the tracked union",
+      "before": "function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 || index === 3 }",
+      "after": "function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 || index === 3 || index === 43 }"
+    },
+    {
+      "name": "Add narrow actor43 dispatch before unchanged existing branches",
+      "before": "function ajedrezTypeMeasuredFit(frame: number, index: number) {\n",
+      "after": "function ajedrezTypeMeasuredFit(frame: number, index: number) {\n    if (index === 43) {\n        const point = AJEDREZ_TYPE_ACTOR43_FITS[frame - 1152]\n        return point ? { left: point[0], top: point[1], width: point[2] } : null\n    }\n"
+    },
+    {
+      "name": "Clarify remaining representative scope",
+      "before": "// Other81 actors retain representative holds; actor3 has a separate private table.",
+      "after": "// Other80 actors retain representative holds; actors3/43 have separate private tables."
+    }
+  ],
+  "apply": "Reverse patch order; replace each unique after with literal before. Verify207862B and837c SHA."
+}

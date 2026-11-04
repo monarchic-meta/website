@@ -404,7 +404,7 @@ function ajedrezTypeSample(time: number): AjedrezTypeSample {
 // Two source-glyph geometry tracks across retained frames1152–1225.
 // Literal measured fits for independent strings; null entries mark composite
 // ink with no isolated bound and restore the existing representative pose.
-// Other81 actors retain representative holds; actor3 has a separate private table.
+// Other80 actors retain representative holds; actors3/43 have separate private tables.
 // Static49 posters and source-word identity caveats remain.
 // Rows contain [actor60[left,top,width]|null, actor25[left,top,width]|null].
 type AjedrezTypeMeasuredPoint = readonly [number, number, number]
@@ -564,6 +564,86 @@ const AJEDREZ_TYPE_ACTOR3_FITS: readonly (AjedrezTypeMeasuredPoint | null)[] = [
     [241,522.5,16],
     [241,522.5,17],
 ]
+// Additional source-reviewed candidate/crop rectangles for actor43 only.
+// Native caption turno remains independent; source lexical identity is unknown.
+// The12 nulls restore the representative baseline.1208and1222stay unresolved;
+// no fragment union or overlapped-prefix glyph fit is admitted.
+const AJEDREZ_TYPE_ACTOR43_FITS: readonly (AjedrezTypeMeasuredPoint | null)[] = [
+    [129,550.5,48],
+    [19,375.5,48],
+    [19,375.5,48],
+    [19,374.5,48],
+    [19,374.5,48],
+    [19,374.5,48],
+    [19,375.5,48],
+    [19,375.5,48],
+    [18,376.5,49],
+    [352,487.5,48],
+    [352,487.5,48],
+    [352,486.5,48],
+    [352,486.5,48],
+    [352,486.5,48],
+    [352,486.5,48],
+    [352,486.5,48],
+    [352,487.5,48],
+    [262,487.5,48],
+    [129,394.5,48],
+    [129,396.5,48],
+    [129,395.5,48],
+    [17,451.5,49],
+    [18,451.5,48],
+    [18,451.5,48],
+    [18,452.5,49],
+    [18,452.5,49],
+    [129,92.5,49],
+    [129,92.5,48],
+    [129,91.5,48],
+    [129,90.5,48],
+    [129,91.5,48],
+    [296,383.5,48],
+    [296,383.5,48],
+    [129,327.5,49],
+    [129,327.5,49],
+    [129,327.5,49],
+    [130,326.5,48],
+    [130,326.5,48],
+    [186,589.5,48],
+    [186,590.5,48],
+    [185,590.5,49],
+    [185,590.5,49],
+    [171,160.5,48],
+    [171,159.5,48],
+    [171,159.5,48],
+    [171,159.5,48],
+    [171,159.5,48],
+    [19,409.5,48],
+    [20,409.5,48],
+    [19,409.5,49],
+    [19,410.5,49],
+    [130,132.5,48],
+    [130,132.5,48],
+    [129,132.5,48],
+    [129,132.5,48],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [240,49.5,49],
+    null,
+    [240,49.5,48],
+    [73,133.5,49],
+    [74,133.5,48],
+    null,
+    [74,175.5,48],
+    [73,175.5,49],
+    [73,175.5,49],
+]
 // One effect-dependency slot stays stable per host, but changes when either
 // the native host or this module changes. Weak keys do not retain native DOM.
 const AJEDREZ_TYPE_MEASURED_OWNERS = new WeakMap<HTMLElement, object>()
@@ -577,8 +657,12 @@ function ajedrezTypeMeasuredFrame(time: number) {
     const frame = Math.floor(Math.max(0, time) * 24 + 1e-7)
     return frame >= 1152 && frame < 1226 ? frame : -1
 }
-function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 || index === 3 }
+function ajedrezTypeTrackedActor(index: number) { return index === 60 || index === 25 || index === 3 || index === 43 }
 function ajedrezTypeMeasuredFit(frame: number, index: number) {
+    if (index === 43) {
+        const point = AJEDREZ_TYPE_ACTOR43_FITS[frame - 1152]
+        return point ? { left: point[0], top: point[1], width: point[2] } : null
+    }
     if (index === 3) {
         const point = AJEDREZ_TYPE_ACTOR3_FITS[frame - 1152]
         return point ? { left: point[0], top: point[1], width: point[2] } : null

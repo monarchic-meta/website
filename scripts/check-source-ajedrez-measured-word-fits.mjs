@@ -14,6 +14,12 @@ const fixturePath = path.join(repo, 'scripts/fixtures/source-ajedrez-measured-wo
 const source = fs.readFileSync(sourcePath, 'utf8'), fixture = JSON.parse(fs.readFileSync(fixturePath))
 // Keep the historical five-frame assertions available for explicit E1 inputs.
 // The current source is validated by the stronger 74-frame continuation suite.
+if (source.includes('AJEDREZ_TYPE_ACTOR43_FITS')) {
+    process.env.MONARCHIC_AJEDREZ_ACTOR43_EVIDENCE_DIR ??= process.env.MONARCHIC_AJEDREZ_WORD_FITS_EVIDENCE_DIR ?? '/tmp/monarchic-ajedrez-measured-word-fits'
+    console.log(JSON.stringify({compatibility:'source-ajedrez-measured-word-fits',scope:'actor43-additive-60'}))
+    await import('./check-source-ajedrez-actor43-additive.mjs')
+    process.exit(0)
+}
 if (source.includes('AJEDREZ_TYPE_ACTOR3_FITS')) {
     process.env.MONARCHIC_AJEDREZ_ACTOR3_EVIDENCE_DIR ??= process.env.MONARCHIC_AJEDREZ_WORD_FITS_EVIDENCE_DIR ?? '/tmp/monarchic-ajedrez-measured-word-fits'
     console.log(JSON.stringify({compatibility:'source-ajedrez-measured-word-fits',scope:'actor3-additive-51'}))

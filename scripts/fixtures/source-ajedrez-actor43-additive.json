@@ -1,0 +1,1110 @@
+{
+  "schemaVersion": 1,
+  "status": "PEER_APPROVED62_ACTOR43_CROP_RECTANGLE_FITS_12_BASELINE_NULLS",
+  "sourceCredit": "Julián Leiss / Ajedrez Film Poem",
+  "nativeActor": {
+    "wordIndex": 43,
+    "desktopID": "Q34hQ60V5",
+    "phoneID": "IZS406b_VQ34hQ60V5",
+    "independentText": "turno",
+    "sourceLexicalIdentityKnown": false
+  },
+  "parent": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 207862,
+    "sha256": "837c1aedffdb557cacc09321107b05b68453ece6836b36d9e4bda68a72475a3f"
+  },
+  "candidate": {
+    "path": "docs/design-studies/code-components/SourceAjedrezSequence.tsx",
+    "bytes": 209769,
+    "sha256": "72eeed37de3a26b940a517eba46fe07e7f20633bdb93bd1bd22450021f34eb52"
+  },
+  "inverse": {
+    "path": "docs/design-studies/code-components/assets/source-ajedrez-actor43-additive-inverse.json",
+    "bytes": 3865,
+    "sha256": "4c1bd8aac9e8972aad915bbfa8b692a4ae413d919d0cb182b5a1aa83ad75fa0f"
+  },
+  "review": {
+    "path": "scripts/fixtures/source-ajedrez-actor43-source-correspondence.json",
+    "bytes": 66880,
+    "sha256": "c63a9aff3d91174006291851605e40a7948385349a065bf3d0cdbca3b9ec2a99"
+  },
+  "peer": {
+    "path": "scripts/fixtures/source-ajedrez-actor43-source-correspondence.json",
+    "bytes": 66880,
+    "sha256": "c63a9aff3d91174006291851605e40a7948385349a065bf3d0cdbca3b9ec2a99"
+  },
+  "firstFrame": 1152,
+  "lastFrameExclusive": 1226,
+  "admittedPlacements": 62,
+  "nulls": 12,
+  "rows": [
+    {
+      "frame": 1152,
+      "point": [
+        129,
+        550.5,
+        48
+      ],
+      "sourceCandidateIndex": 73,
+      "sourceCandidateBounds": [
+        129,
+        554,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1153,
+      "point": [
+        19,
+        375.5,
+        48
+      ],
+      "sourceCandidateIndex": 49,
+      "sourceCandidateBounds": [
+        19,
+        379,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1154,
+      "point": [
+        19,
+        375.5,
+        48
+      ],
+      "sourceCandidateIndex": 47,
+      "sourceCandidateBounds": [
+        19,
+        379,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1155,
+      "point": [
+        19,
+        374.5,
+        48
+      ],
+      "sourceCandidateIndex": 54,
+      "sourceCandidateBounds": [
+        19,
+        378,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1156,
+      "point": [
+        19,
+        374.5,
+        48
+      ],
+      "sourceCandidateIndex": 47,
+      "sourceCandidateBounds": [
+        19,
+        378,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1157,
+      "point": [
+        19,
+        374.5,
+        48
+      ],
+      "sourceCandidateIndex": 47,
+      "sourceCandidateBounds": [
+        19,
+        378,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1158,
+      "point": [
+        19,
+        375.5,
+        48
+      ],
+      "sourceCandidateIndex": 49,
+      "sourceCandidateBounds": [
+        19,
+        379,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1159,
+      "point": [
+        19,
+        375.5,
+        48
+      ],
+      "sourceCandidateIndex": 49,
+      "sourceCandidateBounds": [
+        19,
+        379,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1160,
+      "point": [
+        18,
+        376.5,
+        49
+      ],
+      "sourceCandidateIndex": 49,
+      "sourceCandidateBounds": [
+        18,
+        380,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1161,
+      "point": [
+        352,
+        487.5,
+        48
+      ],
+      "sourceCandidateIndex": 61,
+      "sourceCandidateBounds": [
+        352,
+        491,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1162,
+      "point": [
+        352,
+        487.5,
+        48
+      ],
+      "sourceCandidateIndex": 63,
+      "sourceCandidateBounds": [
+        352,
+        491,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1163,
+      "point": [
+        352,
+        486.5,
+        48
+      ],
+      "sourceCandidateIndex": 60,
+      "sourceCandidateBounds": [
+        352,
+        490,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1164,
+      "point": [
+        352,
+        486.5,
+        48
+      ],
+      "sourceCandidateIndex": 63,
+      "sourceCandidateBounds": [
+        352,
+        490,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1165,
+      "point": [
+        352,
+        486.5,
+        48
+      ],
+      "sourceCandidateIndex": 59,
+      "sourceCandidateBounds": [
+        352,
+        490,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1166,
+      "point": [
+        352,
+        486.5,
+        48
+      ],
+      "sourceCandidateIndex": 62,
+      "sourceCandidateBounds": [
+        352,
+        490,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1167,
+      "point": [
+        352,
+        486.5,
+        48
+      ],
+      "sourceCandidateIndex": 60,
+      "sourceCandidateBounds": [
+        352,
+        490,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1168,
+      "point": [
+        352,
+        487.5,
+        48
+      ],
+      "sourceCandidateIndex": 59,
+      "sourceCandidateBounds": [
+        352,
+        491,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1169,
+      "point": [
+        262,
+        487.5,
+        48
+      ],
+      "sourceCandidateIndex": 63,
+      "sourceCandidateBounds": [
+        262,
+        491,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1170,
+      "point": [
+        129,
+        394.5,
+        48
+      ],
+      "sourceCandidateIndex": 79,
+      "sourceCandidateBounds": [
+        129,
+        398,
+        48,
+        8
+      ]
+    },
+    {
+      "frame": 1171,
+      "point": [
+        129,
+        396.5,
+        48
+      ],
+      "sourceCandidateIndex": 89,
+      "sourceCandidateBounds": [
+        129,
+        400,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1172,
+      "point": [
+        129,
+        395.5,
+        48
+      ],
+      "sourceCandidateIndex": 92,
+      "sourceCandidateBounds": [
+        129,
+        399,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1173,
+      "point": [
+        17,
+        451.5,
+        49
+      ],
+      "sourceCandidateIndex": 76,
+      "sourceCandidateBounds": [
+        17,
+        455,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1174,
+      "point": [
+        18,
+        451.5,
+        48
+      ],
+      "sourceCandidateIndex": 48,
+      "sourceCandidateBounds": [
+        18,
+        455,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1175,
+      "point": [
+        18,
+        451.5,
+        48
+      ],
+      "sourceCandidateIndex": 43,
+      "sourceCandidateBounds": [
+        18,
+        455,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1176,
+      "point": [
+        18,
+        452.5,
+        49
+      ],
+      "sourceCandidateIndex": 43,
+      "sourceCandidateBounds": [
+        18,
+        456,
+        49,
+        6
+      ]
+    },
+    {
+      "frame": 1177,
+      "point": [
+        18,
+        452.5,
+        49
+      ],
+      "sourceCandidateIndex": 40,
+      "sourceCandidateBounds": [
+        18,
+        456,
+        49,
+        6
+      ]
+    },
+    {
+      "frame": 1178,
+      "point": [
+        129,
+        92.5,
+        49
+      ],
+      "sourceCandidateIndex": 8,
+      "sourceCandidateBounds": [
+        129,
+        96,
+        49,
+        4
+      ]
+    },
+    {
+      "frame": 1179,
+      "point": [
+        129,
+        92.5,
+        48
+      ],
+      "sourceCandidateIndex": 4,
+      "sourceCandidateBounds": [
+        129,
+        96,
+        48,
+        4
+      ]
+    },
+    {
+      "frame": 1180,
+      "point": [
+        129,
+        91.5,
+        48
+      ],
+      "sourceCandidateIndex": 6,
+      "sourceCandidateBounds": [
+        129,
+        95,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1181,
+      "point": [
+        129,
+        90.5,
+        48
+      ],
+      "sourceCandidateIndex": 6,
+      "sourceCandidateBounds": [
+        129,
+        94,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1182,
+      "point": [
+        129,
+        91.5,
+        48
+      ],
+      "sourceCandidateIndex": 7,
+      "sourceCandidateBounds": [
+        129,
+        95,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1183,
+      "point": [
+        296,
+        383.5,
+        48
+      ],
+      "sourceCandidateIndex": 37,
+      "sourceCandidateBounds": [
+        296,
+        387,
+        48,
+        4
+      ]
+    },
+    {
+      "frame": 1184,
+      "point": [
+        296,
+        383.5,
+        48
+      ],
+      "sourceCandidateIndex": 36,
+      "sourceCandidateBounds": [
+        296,
+        387,
+        48,
+        4
+      ]
+    },
+    {
+      "frame": 1185,
+      "point": [
+        129,
+        327.5,
+        49
+      ],
+      "sourceCandidateIndex": 37,
+      "sourceCandidateBounds": [
+        129,
+        331,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1186,
+      "point": [
+        129,
+        327.5,
+        49
+      ],
+      "sourceCandidateIndex": 40,
+      "sourceCandidateBounds": [
+        129,
+        331,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1187,
+      "point": [
+        129,
+        327.5,
+        49
+      ],
+      "sourceCandidateIndex": 41,
+      "sourceCandidateBounds": [
+        129,
+        331,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1188,
+      "point": [
+        130,
+        326.5,
+        48
+      ],
+      "sourceCandidateIndex": 39,
+      "sourceCandidateBounds": [
+        130,
+        330,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1189,
+      "point": [
+        130,
+        326.5,
+        48
+      ],
+      "sourceCandidateIndex": 39,
+      "sourceCandidateBounds": [
+        130,
+        330,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1190,
+      "point": [
+        186,
+        589.5,
+        48
+      ],
+      "sourceCandidateIndex": 57,
+      "sourceCandidateBounds": [
+        186,
+        593,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1191,
+      "point": [
+        186,
+        590.5,
+        48
+      ],
+      "sourceCandidateIndex": 58,
+      "sourceCandidateBounds": [
+        186,
+        594,
+        48,
+        4
+      ]
+    },
+    {
+      "frame": 1192,
+      "point": [
+        185,
+        590.5,
+        49
+      ],
+      "sourceCandidateIndex": 74,
+      "sourceCandidateBounds": [
+        185,
+        594,
+        49,
+        4
+      ]
+    },
+    {
+      "frame": 1193,
+      "point": [
+        185,
+        590.5,
+        49
+      ],
+      "sourceCandidateIndex": 67,
+      "sourceCandidateBounds": [
+        185,
+        594,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1194,
+      "point": [
+        171,
+        160.5,
+        48
+      ],
+      "sourceCandidateIndex": 35,
+      "sourceCandidateBounds": [
+        171,
+        164,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1195,
+      "point": [
+        171,
+        159.5,
+        48
+      ],
+      "sourceCandidateIndex": 35,
+      "sourceCandidateBounds": [
+        171,
+        163,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1196,
+      "point": [
+        171,
+        159.5,
+        48
+      ],
+      "sourceCandidateIndex": 38,
+      "sourceCandidateBounds": [
+        171,
+        163,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1197,
+      "point": [
+        171,
+        159.5,
+        48
+      ],
+      "sourceCandidateIndex": 48,
+      "sourceCandidateBounds": [
+        171,
+        163,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1198,
+      "point": [
+        171,
+        159.5,
+        48
+      ],
+      "sourceCandidateIndex": 53,
+      "sourceCandidateBounds": [
+        171,
+        163,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1199,
+      "point": [
+        19,
+        409.5,
+        48
+      ],
+      "sourceCandidateIndex": 74,
+      "sourceCandidateBounds": [
+        19,
+        413,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1200,
+      "point": [
+        20,
+        409.5,
+        48
+      ],
+      "sourceCandidateIndex": 86,
+      "sourceCandidateBounds": [
+        20,
+        413,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1201,
+      "point": [
+        19,
+        409.5,
+        49
+      ],
+      "sourceCandidateIndex": 75,
+      "sourceCandidateBounds": [
+        19,
+        413,
+        49,
+        6
+      ]
+    },
+    {
+      "frame": 1202,
+      "point": [
+        19,
+        410.5,
+        49
+      ],
+      "sourceCandidateIndex": 81,
+      "sourceCandidateBounds": [
+        19,
+        414,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1203,
+      "point": [
+        130,
+        132.5,
+        48
+      ],
+      "sourceCandidateIndex": 29,
+      "sourceCandidateBounds": [
+        130,
+        136,
+        48,
+        7
+      ]
+    },
+    {
+      "frame": 1204,
+      "point": [
+        130,
+        132.5,
+        48
+      ],
+      "sourceCandidateIndex": 30,
+      "sourceCandidateBounds": [
+        130,
+        136,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1205,
+      "point": [
+        129,
+        132.5,
+        48
+      ],
+      "sourceCandidateIndex": 30,
+      "sourceCandidateBounds": [
+        129,
+        136,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1206,
+      "point": [
+        129,
+        132.5,
+        48
+      ],
+      "sourceCandidateIndex": 30,
+      "sourceCandidateBounds": [
+        129,
+        136,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1207,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1208,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1209,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1210,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1211,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1212,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1213,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1214,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1215,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1216,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1217,
+      "point": [
+        240,
+        49.5,
+        49
+      ],
+      "sourceCandidateIndex": 4,
+      "sourceCandidateBounds": [
+        240,
+        53,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1218,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1219,
+      "point": [
+        240,
+        49.5,
+        48
+      ],
+      "sourceCandidateIndex": 4,
+      "sourceCandidateBounds": [
+        240,
+        53,
+        48,
+        6
+      ]
+    },
+    {
+      "frame": 1220,
+      "point": [
+        73,
+        133.5,
+        49
+      ],
+      "sourceCandidateIndex": 8,
+      "sourceCandidateBounds": [
+        73,
+        137,
+        49,
+        5
+      ]
+    },
+    {
+      "frame": 1221,
+      "point": [
+        74,
+        133.5,
+        48
+      ],
+      "sourceCandidateIndex": 9,
+      "sourceCandidateBounds": [
+        74,
+        137,
+        48,
+        5
+      ]
+    },
+    {
+      "frame": 1222,
+      "point": null,
+      "sourceCandidateIndex": null,
+      "sourceCandidateBounds": null
+    },
+    {
+      "frame": 1223,
+      "point": [
+        74,
+        175.5,
+        48
+      ],
+      "sourceCandidateIndex": 21,
+      "sourceCandidateBounds": [
+        74,
+        179,
+        48,
+        4
+      ]
+    },
+    {
+      "frame": 1224,
+      "point": [
+        73,
+        175.5,
+        49
+      ],
+      "sourceCandidateIndex": 19,
+      "sourceCandidateBounds": [
+        73,
+        179,
+        49,
+        4
+      ]
+    },
+    {
+      "frame": 1225,
+      "point": [
+        73,
+        175.5,
+        49
+      ],
+      "sourceCandidateIndex": 25,
+      "sourceCandidateBounds": [
+        73,
+        179,
+        49,
+        4
+      ]
+    }
+  ],
+  "originalNullFrames": [
+    1207,
+    1208,
+    1209,
+    1210,
+    1211,
+    1212,
+    1213,
+    1214,
+    1215,
+    1216,
+    1218
+  ],
+  "extraReviewedNull": [
+    1222
+  ],
+  "gapPolicy": "Restore the existing representative baseline at every null; never retain the preceding measured row.",
+  "excludedSourceStates": {
+    "1208": "Known wrong historical10pxanchor; visible long group requires a separately reviewed full-word crop. No fragment union.",
+    "1222": "Visibly overlapped/denser prefix; no clean glyph mask or isolated source extent is admitted."
+  },
+  "cropPrecision": "Retained candidate/crop rectangles may contain empty rows. Native independent caption unchanged; source lexical identity unknown.",
+  "negativeHeld": {
+    "frame": 1169,
+    "point": [
+      262,
+      487.5,
+      48
+    ],
+    "oldRepresentative": [
+      129,
+      395.5,
+      48
+    ],
+    "minimumPositionError": 150
+  },
+  "negativeNullGuard": {
+    "before": 1221,
+    "after": 1222,
+    "index": 43
+  },
+  "preservation": {
+    "oldTwoFits": 144,
+    "oldTwoGaps": 4,
+    "actor3Fits": 51,
+    "actor3Gaps": 23,
+    "publicBodies": 46,
+    "remainingRepresentativeActors": 80,
+    "readBudget": {
+      "oldTwo": 2,
+      "actor3": 1,
+      "actor43": 1,
+      "other80AtRepresentativeChange": 80,
+      "totalTracked": 4,
+      "totalAtRepresentativeChange": 84
+    },
+    "newNativeNodes": 0,
+    "newAssets": 0,
+    "newClockRendererTimer": 0
+  },
+  "dataset": {
+    "path": "scripts/fixtures/source-ajedrez-actor43-source-correspondence.json",
+    "bytes": 66880,
+    "sha256": "c63a9aff3d91174006291851605e40a7948385349a065bf3d0cdbca3b9ec2a99"
+  }
+}
