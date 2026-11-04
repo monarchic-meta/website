@@ -250,14 +250,15 @@
     "releaseVelocityCorrection": {
       "status": "RELEASE_VELOCITY_SOURCE60C_AUTHORED_AND_INDEPENDENTLY_SEALED843_PREVIEW_RELOAD_OPEN",
       "source": {
-        "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+        "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-settling.tsx.txt",
         "bytes": 19155,
-        "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+        "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177",
+        "historical": true
       },
       "provenance": {
         "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-release-velocity-provenance.json",
-        "bytes": 7059,
-        "sha256": "1a94f35b1867b6b8d114ec57b03ca6ef31d0020c36b35a16eb1f483614c4c362"
+        "bytes": 7819,
+        "sha256": "a0653cb9cb7d1382ec516a334137d6ec29bc714795b86d8f6176e7655257c2cf"
       },
       "focusedChecks": 33,
       "canonicalStaticChecks": 10,
@@ -275,5 +276,34 @@
       },
       "independent842AndOutside843Complete": true
     }
+  },
+  "carouselSettling": {
+    "status": "SOURCE1CB_AUTHORED_AND_INDEPENDENTLY_SEALED867_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
+      "bytes": 6284,
+      "sha256": "5451b09d9521710e9c528160391c69fb6b1f7dac91074dd38ee4c4e5dcfaf8d5"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+      "bytes": 21968,
+      "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-writer864/final-h4-settling-source-only-authoring-receipt867.json",
+      "bytes": 9683,
+      "sha256": "da2f6b980ae123404ba0c309c8d0c4cc4771df73a4b5936934712959e8e1d7cb"
+    },
+    "focusedChecks": 43,
+    "retainedChecks": 22,
+    "canonicalStaticChecks": 10,
+    "numericCases": 15,
+    "perCallbackFactor": 0.1,
+    "dtNormalized": false,
+    "terminalSnapLogicalCSSPixels": 0.001,
+    "sourceEntryAndVelocityHelpersPreserved": true,
+    "selectionCouplingStillFitted": true,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

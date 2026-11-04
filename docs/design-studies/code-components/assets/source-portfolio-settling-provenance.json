@@ -1,0 +1,127 @@
+{
+  "reference": "HERO-004",
+  "classification": "Source inspiration / independently authored recurrence refinement",
+  "creator": "Artemii Lebedev",
+  "source": "https://artemiilebedev.com/",
+  "status": "SOURCE1CB_AUTHORED_AND_INDEPENDENTLY_SEALED867_PREVIEW_RELOAD_OPEN",
+  "helperSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "bytes": 21968,
+    "sha256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
+  },
+  "historicalReleaseHelper": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-settling.tsx.txt",
+    "bytes": 19155,
+    "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+  },
+  "retainedFilm": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
+    "bytes": 84713,
+    "sha256": "8d5e6f15e5acd9d9264fee4aeec87cf652c657bad44e9eff1630fc3daaa9cea0",
+    "unchanged": true
+  },
+  "publicCodeFacts": {
+    "source": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/HERO-004/carousel-inspection-only.js",
+      "bytes": 126812,
+      "sha256": "3b98626175042b6bbcf4b77dcf6296012d59640ae8d13404346fd7e7f6214240",
+      "lines": {
+        "defaultLerp": 38,
+        "lerpDefinition": "727–729",
+        "settleOrder": "2620–2637",
+        "renderLoop": "2654–2662",
+        "releaseProjection": "2679–2684",
+        "pressTakesCurrent": "2872–2882"
+      }
+    },
+    "defaultSettlingFactor": 0.1,
+    "perRenderCallback": true,
+    "dtNormalization": false,
+    "pressSeedsCurrentOffset": true
+  },
+  "authoredBehavior": {
+    "oneOwnedRAFOnlyWhileLivePendingError": true,
+    "currentTargetSplit": true,
+    "repressPrecommitCurrentRefVerified": true,
+    "terminalLogicalCSSPixelSnap": 0.001
+  },
+  "proof": {
+    "focused": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/run-02/result.json",
+      "bytes": 27440,
+      "sha256": "d4c946c9dbd3ddfc9f46901d15e11ef6ba64aac14c948c80d3ea08622e46e397",
+      "checks": 43
+    },
+    "retained": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/legacy-run-01/result.json",
+      "bytes": 4152,
+      "sha256": "4f934681a197825c22f1f8b68c248fed738e6819761bf100f2ac65f6002d0408",
+      "checks": 22
+    },
+    "canonicalStatic": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/canonical-static/static-result.json",
+      "bytes": 2228,
+      "sha256": "85ab0a1e7f8ebf4f7db404a98e97873c7f72062448d332a81e051ff71edb4678",
+      "checks": 10
+    },
+    "numericCases": 15,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/final-receipt.json",
+      "bytes": 8115,
+      "sha256": "89b917275760f88b19518d3dc37aa1b859e63e2ea80cdde3bd20851cf9f6da4f"
+    },
+    "canonicalFilesExactTestedBytes": true,
+    "canonicalBrowserRepeated": false,
+    "fullMatrixRerun": false
+  },
+  "preservation": {
+    "publicHOCs": 6,
+    "otherFiveBodiesExact": true,
+    "controllerPrefixExact": true,
+    "velocityProjectionHelpersExact": true,
+    "entryFitAndGateExact": true,
+    "filmBytesExact": true
+  },
+  "limits": [
+    "Target project/store/caption/film coupling is intentionally retained; source selects from current offset, so complete ordered source equivalence is not claimed",
+    "The0.001 logical CSSpx terminal snap is a declared cleanup approximation",
+    "Entry transition/gate, curved projection/materials/effects/Phone remain separate fidelity work",
+    "No actual Framer Preview, painting or editor-reload run; earlier source authoring evidence remains historical"
+  ],
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-writer864/final-h4-settling-source-only-authoring-receipt867.json",
+      "bytes": 9683,
+      "sha256": "da2f6b980ae123404ba0c309c8d0c4cc4771df73a4b5936934712959e8e1d7cb"
+    },
+    "module": "codeFile/Y3WuYFQ",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 6,
+    "nativeBindingCopies": 12,
+    "nativeBindingsParentsOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 709,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "historyPolicy": "Historical60c helper is pinned directly by fixture. No provenance backlink cycle is introduced; root owns later historical/current documentation reconciliation.",
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "bytes": 36216,
+    "sha256": "9d8cd7087fc29b0bbaa5b23f278314422ba6b4a55055817240b6b89e6871814b"
+  },
+  "retainedChecker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-carousel.mjs",
+    "bytes": 16808,
+    "sha256": "e3c3536219aec11bd671131b3ac3c17bdd1e4c098e54446ef889b6fd90432381"
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/inverse.patch",
+    "bytes": 14004,
+    "sha256": "2300e2ada10cc7255e2862efbdf619b2040326a5f3b1099e3729094c69d7f13b"
+  }
+}

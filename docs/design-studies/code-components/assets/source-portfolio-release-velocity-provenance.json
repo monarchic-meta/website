@@ -5,9 +5,10 @@
   "source": "https://artemiilebedev.com/",
   "status": "RELEASE_VELOCITY_SOURCE60C_AUTHORED_AND_INDEPENDENTLY_SEALED843_PREVIEW_RELOAD_OPEN",
   "helperSource": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioCarousel.tsx",
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-portfolio-carousel-pre-settling.tsx.txt",
     "bytes": 19155,
-    "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177"
+    "sha256": "60c0d0c6e4679fe73921cb710f669c039532f08d4878434c02292510243fa177",
+    "historical": true
   },
   "retainedFilm": {
     "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourcePortfolioFilmStudy.tsx",
@@ -30,14 +31,16 @@
     "sha256": "b5090530f1fe1ed3387ff6259e6269c4c69fc89f79384ccde8ab74f01c49e08f"
   },
   "focusedChecker": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-release-velocity.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/check-source-portfolio-release-velocity.before.mjs",
     "bytes": 24708,
-    "sha256": "d4b01e0714f26810c5186d4bf20a686925178550a085bd1c6e497c6e76a07ea5"
+    "sha256": "d4b01e0714f26810c5186d4bf20a686925178550a085bd1c6e497c6e76a07ea5",
+    "historical": true
   },
   "retainedChecker": {
-    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-portfolio-carousel.mjs",
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO-004/settling-current-offset-proposal-v1/check-source-portfolio-carousel.before.mjs",
     "bytes": 16280,
-    "sha256": "cbc0c9c5298ffb1d483a93de4093628ed2c774b6ee36217d7184e17c39835c49"
+    "sha256": "cbc0c9c5298ffb1d483a93de4093628ed2c774b6ee36217d7184e17c39835c49",
+    "historical": true
   },
   "proof": {
     "focused33": {
@@ -140,5 +143,13 @@
     "nixBuildExecuted": false,
     "derivationPath": "/nix/store/5bnqhsic3jds9jscp2ad5ix5yhhknc3g-monarchic-website-source-portfolio-release-velocity-0.0.1.drv",
     "sequentialFocused33AndRetained22": true
+  },
+  "settlingSuccessor": {
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-portfolio-settling-provenance.json",
+      "bytes": 6284,
+      "sha256": "5451b09d9521710e9c528160391c69fb6b1f7dac91074dd38ee4c4e5dcfaf8d5"
+    },
+    "sourceSHA256": "1cb1898d4c283bb162095ea4e45889cbb7c880364d39d368e672e94298478a1b"
   }
 }
