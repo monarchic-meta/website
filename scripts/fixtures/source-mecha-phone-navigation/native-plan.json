@@ -1,0 +1,834 @@
+{
+  "status": "REVIEWABLE_V2_LEGACY_OPACITY_RESTORE_PENDING_LOCAL_PROOF",
+  "referenceID": "HERO-015",
+  "classification": "Source inspiration / credited close recreation",
+  "credit": [
+    "MECHA / Mecha Capital",
+    "Widelab",
+    "Grzegorz Leśniewicz"
+  ],
+  "sourceModule": "SourceMechaTomorrowContact.phone-nav.tsx",
+  "sameActualFramerCodeFile": "The existing actual SourceMechaTomorrowDetail module containing genuine47 Tomorrow/Contact exports; do not create a sibling controller/import.",
+  "retainedPrefix": {
+    "bytes": 49548,
+    "sha256": "0c4449f16fb119c860641dc0b8054da31164e389c2f5f4af8cb0bec84fe06071",
+    "oldPublicHOCs": 47,
+    "newPublicHOCs": 30,
+    "totalPublicHOCs": 77
+  },
+  "admissionPreconditions": [
+    "Root approves exact candidate/checker/native packet after focused local proof.",
+    "Sole writer reads fresh actual page/root/Phone/legacy row/wordmark/first Investments target preimages and catalog code-file before mutation. Historical772 IDs are candidate keys, not new write authority.",
+    "Use fresh empty batch; freeze complete raw preimages, accepted code text/hash, mappings and inverse before first mutation.",
+    "Root source binding becomes withMechaPhoneNavigationRoot, whose sole public old-root call retains one old Tomorrow/Contact context. Never also nest old root binding.",
+    "Existing contact96parts/104bindings773 and Tomorrow728 remain identical except owning code-file text adds exports."
+  ],
+  "historicalCandidates": {
+    "page": "nwAhAlY6o",
+    "desktopRoot": "C2r6jVvN1",
+    "phoneRoot": "mWGINlKKX",
+    "legacyPhoneRow": "mWGINlKKXIyNjpOpoN",
+    "phoneWordmark": "mWGINlKKXNV_FV2AEK",
+    "oldDesktopRow": "IyNjpOpoN",
+    "oldDesktopWordmark": "NV_FV2AEK"
+  },
+  "parts": [
+    {
+      "key": "menu",
+      "parent": "PHONE_ROOT",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / menu",
+      "codeOverride": "withMechaPhoneNavOverlay",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "844px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "runtime": "Own HOC supplies fixed inset0; never send nested-fixed Native setter."
+    },
+    {
+      "key": "bar",
+      "parent": "menu",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / bar",
+      "codeOverride": "withMechaPhoneNavBar",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "61px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "toggle",
+      "parent": "bar",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / toggle",
+      "codeOverride": "withMechaPhoneNavToggle",
+      "semantic": "button",
+      "runtimeCloseHit": "Same toggle becomes transparent and5rem wide; Close visual is noninteractive. Literal code-supported, source actual point-hit unknown.",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "350px",
+        "top": "20px",
+        "width": "24px",
+        "height": "25px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1,
+        "stroke": "#262933",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "key": "hamb-top",
+      "parent": "toggle",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / hamb-top",
+      "codeOverride": "withMechaPhoneNavHamburgerTop",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "5px",
+        "top": "7.9279px",
+        "width": "12px",
+        "height": "1px",
+        "fill": "#262933",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "hamb-middle",
+      "parent": "toggle",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / hamb-middle",
+      "codeOverride": "withMechaPhoneNavHamburgerMiddle",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "5px",
+        "top": "12px",
+        "width": "12px",
+        "height": "1px",
+        "fill": "#262933",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "hamb-bottom",
+      "parent": "toggle",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / hamb-bottom",
+      "codeOverride": "withMechaPhoneNavHamburgerBottom",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "5px",
+        "top": "16.0721px",
+        "width": "12px",
+        "height": "1px",
+        "fill": "#262933",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "header-rule",
+      "parent": "bar",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / header-rule",
+      "codeOverride": "withMechaPhoneNavHeaderRule",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "60px",
+        "width": "358px",
+        "height": "1px",
+        "fill": "rgba(0,0,0,.15)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "badge",
+      "parent": "bar",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / badge",
+      "codeOverride": "withMechaPhoneNavBadge",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "320px",
+        "top": "20px",
+        "width": "24px",
+        "height": "25px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1,
+        "stroke": "#262933",
+        "strokeWidth": 1,
+        "borderRadius": "100%"
+      }
+    },
+    {
+      "key": "badge-art",
+      "parent": "badge",
+      "type": "SVGNode",
+      "name": "HERO-015 / Phone nav / badge-art",
+      "codeOverride": null,
+      "asset": "m-badge.source.svg",
+      "width": "10px",
+      "height": "10px",
+      "source": "Exact retained primaryHTML M glyph; color materialized#262933. No override on SVG.",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "7px",
+        "top": "7.5px",
+        "width": "10px",
+        "height": "10px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "close-visual",
+      "parent": "bar",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / close-visual",
+      "codeOverride": "withMechaPhoneNavCloseVisual",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "292.5577px",
+        "top": "20px",
+        "width": "81.4423px",
+        "height": "24.4327px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "close-label",
+      "parent": "close-visual",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / close-label",
+      "codeOverride": "withMechaPhoneNavCloseLabel",
+      "text": "Close",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "50px",
+        "height": "24.4327px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#262933",
+        "weight": 400
+      }
+    },
+    {
+      "key": "close-icon",
+      "parent": "close-visual",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / close-icon",
+      "codeOverride": "withMechaPhoneNavCloseIcon",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "61.0817px",
+        "top": "2.0361px",
+        "width": "20.3606px",
+        "height": "20.3606px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "close-h",
+      "parent": "close-icon",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / close-h",
+      "codeOverride": "withMechaPhoneNavActionHorizontal",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "10.1803px",
+        "width": "20.3606px",
+        "height": "1px",
+        "fill": "#262933",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "close-v",
+      "parent": "close-icon",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / close-v",
+      "codeOverride": "withMechaPhoneNavActionVertical",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "19.3606px",
+        "top": "0px",
+        "width": "1px",
+        "height": "20.3606px",
+        "fill": "#262933",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "tile",
+      "parent": "menu",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / tile",
+      "codeOverride": "withMechaPhoneNavTile",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "390px",
+        "height": "844px",
+        "fill": "#d3dbde",
+        "visible": true,
+        "opacity": 0
+      }
+    },
+    {
+      "key": "grid",
+      "parent": "tile",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / grid",
+      "codeOverride": "withMechaPhoneNavGrid",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "16px",
+        "top": "590.2863px",
+        "width": "358px",
+        "height": "237.7137px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "cell-0",
+      "parent": "grid",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / cell-0",
+      "codeOverride": "withMechaPhoneNavLeftCell",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "179px",
+        "height": "51.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "link-0",
+      "parent": "cell-0",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / link-0",
+      "codeOverride": "withMechaPhoneNavInvestmentsLink",
+      "semantic": "anchor",
+      "link": {
+        "href": "#investments",
+        "openInNewTab": false,
+        "smoothScroll": false
+      },
+      "sourceHref": "#investments",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "1px",
+        "top": "0px",
+        "width": "177px",
+        "height": "50.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "text-0",
+      "parent": "link-0",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / text-0",
+      "codeOverride": "withMechaPhoneNavLinkText",
+      "text": "Investments",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "18px",
+        "top": "12px",
+        "width": "139px",
+        "height": "23.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#262933",
+        "weight": 400
+      }
+    },
+    {
+      "key": "cell-1",
+      "parent": "grid",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / cell-1",
+      "codeOverride": "withMechaPhoneNavRightCell",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "179px",
+        "top": "0px",
+        "width": "179px",
+        "height": "51.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "link-1",
+      "parent": "cell-1",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / link-1",
+      "codeOverride": "withMechaPhoneNavTeamsLink",
+      "semantic": "anchor",
+      "link": {
+        "href": "https://mecha-xyz.webflow.io/#teams",
+        "openInNewTab": false,
+        "smoothScroll": false
+      },
+      "sourceHref": "#teams",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "178px",
+        "height": "50.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "text-1",
+      "parent": "link-1",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / text-1",
+      "codeOverride": "withMechaPhoneNavLinkText",
+      "text": "Teams",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "18px",
+        "top": "12px",
+        "width": "139px",
+        "height": "23.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#262933",
+        "weight": 400
+      }
+    },
+    {
+      "key": "cell-2",
+      "parent": "grid",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / cell-2",
+      "codeOverride": "withMechaPhoneNavLeftCell",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "67.4554px",
+        "width": "179px",
+        "height": "51.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "link-2",
+      "parent": "cell-2",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / link-2",
+      "codeOverride": "withMechaPhoneNavContactLink",
+      "semantic": "anchor",
+      "link": {
+        "href": "https://mecha-xyz.webflow.io/#contact",
+        "openInNewTab": false,
+        "smoothScroll": false
+      },
+      "sourceHref": "#contact",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "1px",
+        "top": "0px",
+        "width": "177px",
+        "height": "50.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "text-2",
+      "parent": "link-2",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / text-2",
+      "codeOverride": "withMechaPhoneNavLinkText",
+      "text": "Contact",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "18px",
+        "top": "12px",
+        "width": "139px",
+        "height": "23.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#262933",
+        "weight": 400
+      }
+    },
+    {
+      "key": "cell-3",
+      "parent": "grid",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / cell-3",
+      "codeOverride": "withMechaPhoneNavRightCell",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "179px",
+        "top": "67.4554px",
+        "width": "179px",
+        "height": "51.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "link-3",
+      "parent": "cell-3",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / link-3",
+      "codeOverride": "withMechaPhoneNavBlogLink",
+      "semantic": "anchor",
+      "link": {
+        "href": "#",
+        "openInNewTab": false,
+        "smoothScroll": false
+      },
+      "sourceHref": "#",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "178px",
+        "height": "50.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "text-3",
+      "parent": "link-3",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / text-3",
+      "codeOverride": "withMechaPhoneNavLinkText",
+      "text": "Blog",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "18px",
+        "top": "12px",
+        "width": "139px",
+        "height": "23.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#262933",
+        "weight": 400
+      }
+    },
+    {
+      "key": "join-cell",
+      "parent": "grid",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / join-cell",
+      "codeOverride": "withMechaPhoneNavJoinCell",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "134.9108px",
+        "width": "358px",
+        "height": "102.8029px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "join",
+      "parent": "join-cell",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / join",
+      "codeOverride": "withMechaPhoneNavJoin",
+      "semantic": "anchor rendered as existing public Contact button trigger",
+      "link": {
+        "href": "#",
+        "openInNewTab": false,
+        "smoothScroll": false
+      },
+      "sourceOpenModal": true,
+      "noFifthTransform": true,
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "1px",
+        "top": "0px",
+        "width": "356px",
+        "height": "101.8029px",
+        "fill": "#911a46",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "join-icon",
+      "parent": "join",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / join-icon",
+      "codeOverride": "withMechaPhoneNavJoinIcon",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "324.4231px",
+        "top": "12.2163px",
+        "width": "20.3606px",
+        "height": "24.4327px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "join-h",
+      "parent": "join-icon",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / join-h",
+      "codeOverride": "withMechaPhoneNavActionHorizontal",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "12.2163px",
+        "width": "20.3606px",
+        "height": "1px",
+        "fill": "#ffffff",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "join-v",
+      "parent": "join-icon",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / join-v",
+      "codeOverride": "withMechaPhoneNavActionVertical",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "19.3606px",
+        "top": "0px",
+        "width": "1px",
+        "height": "24.4327px",
+        "fill": "#ffffff",
+        "visible": true,
+        "opacity": 1
+      }
+    },
+    {
+      "key": "join-label",
+      "parent": "join",
+      "type": "RichTextNode",
+      "name": "HERO-015 / Phone nav / join-label",
+      "codeOverride": "withMechaPhoneNavJoinLabel",
+      "text": "Join the revolution",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "18.3245px",
+        "top": "61.0817px",
+        "width": "290px",
+        "height": "23.4554px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "nativeTypography": {
+        "family": "Reuse actual admitted Inter template",
+        "fontSize": "16.2885px",
+        "lineHeight": "1.44",
+        "letterSpacing": ".02em",
+        "color": "#ffffff",
+        "weight": 400
+      }
+    },
+    {
+      "key": "investments-alias",
+      "parent": "EXISTING_INVESTMENTS_TARGET",
+      "type": "FrameNode",
+      "name": "HERO-015 / Phone nav / investments-alias",
+      "codeOverride": "withMechaPhoneNavInvestmentsAlias",
+      "nativeStaging": {
+        "position": "absolute",
+        "left": "0px",
+        "top": "0px",
+        "width": "1px",
+        "height": "1px",
+        "fill": "rgba(0,0,0,0)",
+        "visible": true,
+        "opacity": 1
+      },
+      "semantic": "id=investments alias; retain existing #mecha-tomorrow and its Frame ID."
+    }
+  ],
+  "counts": {
+    "newNativeParts": 35,
+    "newBindings": 34,
+    "sourceSVGAssets": 1,
+    "existingHostBindings": 3
+  },
+  "existingHostBindings": [
+    {
+      "candidate": "PHONE_ROOT or actual root(s) currently bound old public ContactRoot",
+      "override": "withMechaPhoneNavigationRoot",
+      "condition": "Replace old root exactly once per actual runtime root. Read inherited breakpoint binding semantics first; desktop children remain authored."
+    },
+    {
+      "candidate": "mWGINlKKXIyNjpOpoN",
+      "override": "withMechaPhoneNavLegacyRow",
+      "condition": "PHONE copy only; stage nativeopacity0 after exact fresh inverse. Frozen preserves0; live<=991 menuenabled hides row; live disabled restores opacity1 for992..1279 andDesktop1440 fixture. Do not change Native breakpoint metadata or wordmark scalar."
+    },
+    {
+      "candidate": "mWGINlKKXNV_FV2AEK",
+      "override": "withMechaPhoneNavRetainedWordmark",
+      "condition": "Genuine existing asset FRAME only; runtime<=991 fit uses retained source16/16/120.125/26.46875 and z101. Read exact live preimage; preserve SVG/native IDs."
+    }
+  ],
+  "fontPolicy": {
+    "source": "Neue Haas Grotesk",
+    "native": "Reuse genuinely admitted existing Inter template, retain explicit fallback. Native family admission must be established by actual project font/template reads. No fake source-family metadata.",
+    "nestedRTE": "Runtime forces family/size/weight/line-height/letter-spacing/color inheritance on nested p/span; native RTE stays editable."
+  },
+  "destinationDecision": {
+    "Investments": {
+      "source": "#investments",
+      "prototype": "#investments",
+      "implementation": "New 1px alias Frame at existing recreated investment destination without replacing#mecha-tomorrow."
+    },
+    "Teams": {
+      "source": "#teams",
+      "prototype": "https://mecha-xyz.webflow.io/#teams",
+      "difference": "Same-tab selected-original-site handoff. Source observed local document y1962. Prototype has no local Teams clone; neither local y1962 nor current remote arrival was validated."
+    },
+    "Contact": {
+      "source": "#contact",
+      "prototype": "https://mecha-xyz.webflow.io/#contact",
+      "difference": "Plain semantic selected-original-site handoff; no Contact modal trigger on this link."
+    },
+    "Blog": {
+      "source": "#",
+      "prototype": "#",
+      "difference": "Retains actual Phone sourcehref; Desktop/blog is not used."
+    },
+    "Join": {
+      "source": "# with open-modal",
+      "prototype": "Existing public withMechaContactTrigger in same actual module",
+      "difference": "Completed Contact UI is reused; no invented fifth-link delay/roll. Close menu state before existing trigger receives accepted activation."
+    }
+  },
+  "unknowns": [
+    "Actual settled031 geometry, Close point hit/outcome, source Escape/keyboard/focus, touch scroll/chaining, resize/reversal/fine-pointer hover input. Literal JS/CSS is code support, not observed causality.",
+    "Actual Framer semantic anchors/React18 forwarded-host callbacks, nested typography and CSS grid paint.",
+    "Native saved reload and Preview must be independently verified."
+  ],
+  "projectFits": [
+    "Semantic button/landmark and ARIA; inert closed links; no invented focus trap/scroll lock/outside dismiss.",
+    "Reduced-motion transitions off; hidden/offscreen/ref replacement close/observer cleanup.",
+    "Canvas/export/thumbnail/static freeze preserves native staging and has no CSS menu transitions."
+  ],
+  "validationRecipe": [
+    "Run source-only checker first (read-only text/prefix).",
+    "After Root review, run one isolated strict compiler+browser checker at nice10 using repo locked dependencies; no connected-browser access or external navigation.",
+    "Sole writer authors bounded menu native tree and fresh exact preimages, reads all role/child/font/link/source bindings, then reloads editor and re-reads before saved claim.",
+    "Actual Framer Preview source corresponding-state/physical Close hit remain separate from local proof; report gaps explicitly."
+  ],
+  "rollback": "Restore exact code prefix from preimage by UTF-8 truncation49548, restore existing host overrides/props from captured fresh preimages, and remove only newly created IDs recorded in receipt. Never infer deletion IDs from names.",
+  "nativeStagingPolicy": "Closed art on canvas/export/thumbnail: tile and Close visual Native opacity0; toggle/badge visible. Runtime Tile HOC explicitly owns opacity1 and source clip. All native children stay separately editable/selectable in hierarchy. Approximate closed-stage metric boxes are literal-CSS-derived at390x844, not settled031 observation; writer must adapt field keys to fresh Native schema and verify actual getter/paint.",
+  "nativeStagingGrid": {
+    "viewport": [
+      390,
+      844
+    ],
+    "rem": 16.28846153846154,
+    "rowHeight": 51.45538461538462,
+    "columnWidth": 179,
+    "gridHeight": 237.71365384615387,
+    "gridTop": 590.2863461538461,
+    "sourceCSSDerived": true,
+    "observedSettled": false
+  },
+  "legacyRowV2": {
+    "candidate": "mWGINlKKXIyNjpOpoN",
+    "nativePhoneOnlyPatch": {
+      "opacity": 0
+    },
+    "freshInverseRequired": true,
+    "behavior": {
+      "frozen": "Pass caller Native opacity0 through unchanged",
+      "liveEnabled": "display:none; preserve caller opacity",
+      "liveDisabled": "opacity:1; preserve caller display and all other style props"
+    },
+    "scope": "Only the old Phone flat row is staged opacity0 after exact actual preimage/inverse. Do not set Desktop scalar and do not change the genuine wordmark scalar. Source nativePhone1280 remains; literal live menu<=991 admission remains."
+  }
+}

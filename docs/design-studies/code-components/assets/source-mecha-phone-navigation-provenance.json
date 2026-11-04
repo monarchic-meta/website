@@ -1,0 +1,105 @@
+{
+  "reference": "HERO-015",
+  "classification": "Source inspiration / credited close recreation",
+  "credit": [
+    "MECHA / Mecha Capital",
+    "Widelab",
+    "Grzegorz Leśniewicz"
+  ],
+  "source": "https://mecha-xyz.webflow.io/",
+  "status": "SOURCE77_LOCAL34_PASS_ACTUAL_ADMISSION_AND_NATIVE_AUTHORING_PENDING",
+  "manualSource": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaPhoneNavigation.tsx",
+    "bytes": 77326,
+    "sha256": "fcd81ed3c1b56a2e284e541a1eb3c9da045af66b07e5a94376b708421c1a945d"
+  },
+  "retained47": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMechaTomorrowContact.tsx",
+    "bytes": 49548,
+    "sha256": "0c4449f16fb119c860641dc0b8054da31164e389c2f5f4af8cb0bec84fe06071"
+  },
+  "prefixBytesExact": 49548,
+  "publicHOCs": 77,
+  "addedHOCs": 30,
+  "oneRetainedTomorrowContext": true,
+  "oneRetainedContactContext": true,
+  "newPhoneMenuContext": true,
+  "proof": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/phone-navigation-proposal-v2/final-proof-receipt.json",
+    "bytes": 7443,
+    "sha256": "a75e0830f8ea84731f3d9bba64ab1c5c6e8c4e253f04c73edc1f0000bc31682c"
+  },
+  "nativeRecipe": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-mecha-phone-navigation/native-plan.json",
+    "bytes": 26095,
+    "sha256": "35d6984e7088a772f8a7121be1bb65dd90b64b956511a2381f987f229fdd789e"
+  },
+  "sourceCorrespondence": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/fixtures/source-mecha-phone-navigation/source-correspondence.json",
+    "bytes": 6853,
+    "sha256": "dee70593e18a21b4b6f86e0326a62b2b5f3ef62c7a1048ca4be9c6e3a3eac72b"
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-mecha-phone-navigation.mjs",
+    "bytes": 23581,
+    "sha256": "eabfd46b3913d13af3c41a1fbab01cbe166d8a51915112ddd11a38f1efd80dbe"
+  },
+  "sourceInspectionPreparation": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/prepare-source-mecha-phone-navigation.mjs",
+    "bytes": 3676,
+    "sha256": "cd504928806db989723fc24d4a0e6740e7177ef74bc3cadfb991a88a9413539a"
+  },
+  "preparationIsIndependentRegenerationProof": false,
+  "localChecks": {
+    "focusedCompilerAndBrowser": 34,
+    "browserErrors": 0,
+    "canonicalSourceOnly": 6,
+    "retained47PrefixExact": true,
+    "viewportRegressionWidths": [
+      991,
+      992,
+      1024,
+      1279,
+      1440
+    ],
+    "browserClosed": true
+  },
+  "authoringPlan": {
+    "newFamilies": 35,
+    "newParts": 70,
+    "newRoleBindings": 68,
+    "existingRoleBindings": 6,
+    "totalBindings": 74,
+    "primaryOnlyStructureWrites": true,
+    "oldPhoneLegacyRowOpacity0AfterAdmission": true,
+    "liveDisabledRowRestoresOpacity1": true,
+    "wordmarkAssetAndScalarsPreserved": true,
+    "supportedSDKAdapterRequired": true,
+    "rootBindingLast": true
+  },
+  "actualFramer": {
+    "sourceWritten": false,
+    "nativePilot": false,
+    "fullNativeAuthored": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "resources": {
+    "newAmbientClocks": 0,
+    "newGPUContexts": 0,
+    "newMenuMedia": 0,
+    "largestJSBytes": null,
+    "declarationBytes": null,
+    "emissionMeasurementPending": true
+  },
+  "limits": [
+    "Source031 is an intermediate transformed state, not settled geometry proof.",
+    "Local fixture uses Arial and a text wordmark placeholder; actual Native preserves the genuine asset and uses the admitted Inter fallback. Source fonts remain comparison-only.",
+    "Teams and Contact intentionally navigate to the selected original site in the same tab; raw source hrefs remain metadata. No fabricated local destination, source-y1962 fidelity or Contact-modal routing claim.",
+    "Join uses the retained Contact trigger; actual Framer event/router ordering remains unverified.",
+    "Source Close hit, Escape/focus, touch scrolling, resize/reversal and fine-pointer hover inputs remain unobserved; literal code facts and project accessibility/lifecycle fits are separated in the correspondence.",
+    "Actual Phone Canvas wordmark retains the old native scalar fit.",
+    "Native getters and local DOM proofs do not establish actual painting, Preview or editor reload."
+  ]
+}

@@ -613,7 +613,7 @@
     }
   },
   "nextPhoneNavigationGap": {
-    "status": "SOURCE_AND_NATIVE_GAP_REVIEWED_NO_IMPLEMENTATION",
+    "status": "SELF_CONTAINED77_LOCAL34_PASS_ACTUAL_ADMISSION_AND_NATIVE_AUTHORING_PENDING",
     "sourceNativeEvidence": {
       "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO015/next-phone-navigation-gap-v1/source-native-gap.json",
       "bytes": 20499,
@@ -637,6 +637,17 @@
       "touch scrolling",
       "resize"
     ],
-    "noFifthAnimatedLink": true
+    "noFifthAnimatedLink": true,
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-mecha-phone-navigation-provenance.json",
+      "bytes": 4514,
+      "sha256": "f65f870952c3642f38d7163f2d487c3a913ed47d0d0b9fcb09694397e3016f78"
+    },
+    "old47PrefixExact": true,
+    "localFocusedChecks": 34,
+    "newNativeFamilies": 35,
+    "plannedActualBindings": 74,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }

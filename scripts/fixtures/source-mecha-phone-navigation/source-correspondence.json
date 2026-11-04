@@ -1,0 +1,123 @@
+{
+  "status": "FROZEN_SOURCE_TO_PROPOSED_AUTHORED_MAPPING_NOT_LIVE_FIDELITY_PROOF",
+  "referenceID": "HERO-015",
+  "sourceURL": "https://mecha-xyz.webflow.io/",
+  "credit": [
+    "MECHA / Mecha Capital",
+    "Widelab",
+    "Grzegorz Leśniewicz"
+  ],
+  "inputs": {
+    "primary-http.html": "29400eba65f8978a364df447b75e9b8a95076a2ab50e8484c55503843d802650",
+    "primary-style-0.css": "a6a5f7d22ac87a2a3bdf6d719b603753f1642699f6f09969281adb316ae17e17",
+    "primary-inline-scripts.js": "10e1b887853e05eeffd1547419f73dd7b4ec30373143e50a5a3b3e0a74643100",
+    "031-phone-phone-menu-open.png": "565f9f0d57e33a34dff60a71b09af459ca7de73ffe0196b62210b66258e7512f",
+    "032-phone-phone-menu-teams-arrival.png": "e2316eb29b4a4fb23b2a7a1d132e2713ffedc92b336bda5c398c8c3e101eded3"
+  },
+  "observedStates": [
+    {
+      "id": "031",
+      "input": "Phone390x844 real menu opening",
+      "paint": "Pale full tile below retained MECHA header; Close glyph top-right; four lower links in2x2; separate burgundy Join action.",
+      "limit": "Original link BCRs contain residual rotation/transform; no settled geometry inferred."
+    },
+    {
+      "id": "032",
+      "input": "Real source Teams tap",
+      "paint": "Menu visually closes; hamburger/M return; original source hash#teams; original documenty1962.",
+      "prototypeCorrespondence": "Menu accepted click closes and semantic link hands off to the selected original site#teams. Prototype does not own a local Teams scene or assert localy1962."
+    }
+  ],
+  "literalOracles": [
+    {
+      "source": "HTML nav[data-navigation-status] and retained initializer",
+      "proposed": "Own boolean in MechaPhoneNav provider; CSS status active/not-active on editable nav Frame; no copied original JS.",
+      "evidenceClass": "Code-supported except opening and Teams click observed."
+    },
+    {
+      "source": ".bold-nav-full__tile",
+      "proposed": "clip-path polygon(0%0%,100%0%,100%0%,0%0%) to fullheight;1s cubic-bezier(.9,0,.1,1).",
+      "evidenceClass": "Literal CSS timing; fresh source temporal correspondence pending."
+    },
+    {
+      "source": "Four actual .bold-nav-full__link anchors",
+      "proposed": "translateY100% rotate5deg to translateY0% rotate.001deg;.75s cubic-bezier(.7,0,.3,1); open.3/.35/.4/.45; close.2/.15/.1/.05.",
+      "evidenceClass": "Literal CSS, not inferred from transient031 BCRs."
+    },
+    {
+      "source": "Fifth LI .action-wrap > [open-modal] .action-button",
+      "proposed": "Separate Join cell/button/icon/label; same actual public withMechaContactTrigger. No .bold-nav-full__link or fabricated fifth transform/delay.",
+      "evidenceClass": "Literal markup/CSS; actual source Join overlap remains unobserved."
+    },
+    {
+      "source": "max-width991 CSS and source layout variables",
+      "proposed": "Runtime<=991; fixed inset0 pointer-none nav; absolute100% tile pointer-auto; padding16px;2columns; row-gap16px;1px#b3babd bottom/side cell rules; no top rules and second-column left rule omitted.",
+      "evidenceClass": "Literal CSS. NativePhone threshold1280 retained;991/992 source input pair not newly observed."
+    },
+    {
+      "source": "Palette and body-large variables",
+      "proposed": "Tile#d3dbde, ink#262933, Join#911a46, source1rem/1.44/.02em; root units reconstructed from active primary HTML fluid rem rule.",
+      "evidenceClass": "Literal primary CSS. Native source font unavailable; admitted Inter fallback stays explicit."
+    },
+    {
+      "source": "Active hamburger CSS and Close visual markup",
+      "proposed": "Same transparent5rem toggle hit owner with noninteractive Close visual, three editable12x1 strokes, own two-stroke Close action glyph. No invented separate close-DIV click handler.",
+      "evidenceClass": "Code-supported. Actual source point-hit and visual Close outcome remain unobserved."
+    },
+    {
+      "source": "LI opacity and text roll hover CSS",
+      "proposed": "All five editable LI host equivalents dim siblings to.15 and hovered stays1;.5s ease. Link-text shadow0 1.1em0 and hovered text translateY-100%; source hamburger hover scales preserved.",
+      "evidenceClass": "Code-supported, no fresh Phone/fine-pointer hover input observation."
+    },
+    {
+      "source": "No scroll lock in initializer",
+      "proposed": "No body scroll style mutation, no outside dismiss, no invented focus trap/return. Semantic buttons/landmark, ARIA/inert closed content are explicit project accessibility fits.",
+      "evidenceClass": "Absence of source call is not observed touch/chaining behavior."
+    }
+  ],
+  "destinations": [
+    {
+      "label": "Investments",
+      "sourceHref": "#investments",
+      "prototypeHref": "#investments",
+      "fit": "New alias Frame at existing recreated investment section; preserve old#mecha-tomorrow."
+    },
+    {
+      "label": "Teams",
+      "sourceHref": "#teams",
+      "prototypeHref": "https://mecha-xyz.webflow.io/#teams",
+      "fit": "Explicit same-tab SOURCE-SITE HANDOFF outside bounded hero/nav scope. No local scene or fabricated blank anchor."
+    },
+    {
+      "label": "Contact",
+      "sourceHref": "#contact",
+      "prototypeHref": "https://mecha-xyz.webflow.io/#contact",
+      "fit": "Explicit same-tab SOURCE-SITE HANDOFF. Plain source nav anchor; never the completed Contact modal trigger."
+    },
+    {
+      "label": "Blog",
+      "sourceHref": "#",
+      "prototypeHref": "#",
+      "fit": "Retain actual Phonehref. Desktop/blog differs and is not substituted."
+    },
+    {
+      "label": "Join the revolution",
+      "sourceHref": "#",
+      "sourceAttribute": "open-modal",
+      "prototypeBehavior": "Close menu then existing same-module Contact trigger/context",
+      "fit": "No Contact UI reimplementation or fifth-link animation."
+    }
+  ],
+  "projectCleanupFits": [
+    "Freeze RenderTarget.canvas/export/thumbnail and useIsStaticRenderer; no CSS transitions/styles replace native staging there.",
+    "Reduced motion disables transitions; hidden/offscreen/ref replacement closes and cleans observers/listeners.",
+    "No ambient RAF/ticker/timer/GPU/media/network in appended menu.",
+    "V2 project authoring fit: stage oldPhone row opacity0 for frozen editor; live menu-disabled branch explicitly restores opacity1 across992–1279 and beyond, while menu-enabled<=991 hides it. Retain genuine wordmark scalar unchanged."
+  ],
+  "unverified": [
+    "Actual source settled031 boxes, Close hit/outcome, Escape/keyboard/focus, touch/scroll, source resize/reversal/hover input.",
+    "Local native-like authored proof is separate from actual Framer paint/Preview/routing/font-forwarding.",
+    "Actual Native source catalog/getters, saved editor reload and whole-project seal remain writer gates.",
+    "External same-tab handoff truncates local closing animation on unload; remote current arrival not retested."
+  ]
+}

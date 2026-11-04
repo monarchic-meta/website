@@ -91,6 +91,18 @@ all52 prior overrides and adds four rolling controls. Its
 active families rather than the earlier hidden text layers. Framer source and11-family/22-copy bindings are independently read through793.
 Actual paint, Preview and reload remain open. The leaf files above remain authoring inputs.
 
+## MECHA Phone navigation
+
+[SourceMechaPhoneNavigation.tsx](SourceMechaPhoneNavigation.tsx) preserves the
+complete47-role Tomorrow/Contact source and adds30 menu roles in the same module.
+The Phone menu uses the source clip transition, staggered four-link grid and
+separate Join action. Its34 focused checks include rendered positions, link
+defaults, the existing Contact context and the991/992 responsive boundary.
+
+The [manual handoff](source-mecha-phone-navigation.md) and
+[provenance](assets/source-mecha-phone-navigation-provenance.json) separate source
+observations, local proof and pending Framer authoring/Preview/reload checks.
+
 ## Mecha contact mark
 
 The named `MechaContactMark` export in [MechaScrollMark.tsx](MechaScrollMark.tsx)
