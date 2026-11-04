@@ -261,6 +261,14 @@
             export MONARCHIC_BLEIBT_OPENING_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-bleibt-opening
           '';
+          source-ajedrez-measured-word-fits = (mkWebsiteCheck "source-ajedrez-measured-word-fits" ''
+            export MONARCHIC_AJEDREZ_WORD_FITS_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-ajedrez-measured-word-fits
+          '').overrideAttrs (_: {
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
           source-ajedrez = (mkWebsiteCheck "source-ajedrez" ''
             export MONARCHIC_AJEDREZ_EVIDENCE_DIR="$out/evidence"
             pnpm run check:source-ajedrez-sequence
@@ -576,6 +584,14 @@
             pnpm run check:source-format-daughter-effects
           '').overrideAttrs (_: {
             MONARCHIC_FORMAT_CACHED_MEDIA_ROOT = sourceFormatDaughterMaterials;
+            FONTCONFIG_FILE = pkgs.makeFontsConf {
+              fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
+            };
+          });
+          source-format-daughter-sparks = (mkWebsiteCheck "source-format-daughter-sparks" ''
+            export MONARCHIC_FORMAT_SPARK_EVIDENCE_DIR="$out/evidence"
+            pnpm run check:source-format-daughter-sparks
+          '').overrideAttrs (_: {
             FONTCONFIG_FILE = pkgs.makeFontsConf {
               fontDirectories = [ pkgs.dejavu_fonts pkgs.liberation_ttf ];
             };

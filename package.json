@@ -142,7 +142,9 @@
     "check:source-cantor-rolling-text": "node scripts/check-source-cantor-rolling-text.mjs",
     "check:source-format-notes": "node scripts/check-source-format-notes.mjs",
     "check:source-mecha-contact": "node scripts/check-source-mecha-contact.mjs",
-    "check:source-format-daughter-effects": "node scripts/check-source-format-daughter-effects.mjs"
+    "check:source-format-daughter-effects": "node scripts/check-source-format-daughter-effects.mjs",
+    "check:source-ajedrez-measured-word-fits": "node scripts/check-source-ajedrez-measured-word-fits.mjs",
+    "check:source-format-daughter-sparks": "node scripts/check-source-format-daughter-sparks.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.0.1",
