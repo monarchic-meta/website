@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "from": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO006/gallery-gesture-recreation-v1/SourceMacMossPortfolio.gesture-candidate.tsx",
+    "bytes": 21991,
+    "sha256": "4d7ac453093751aecf0c356f6ea19dda694033062cd5e50c075826ac1f7796e1"
+  },
+  "to": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceMacMossPortfolio.tsx",
+    "bytes": 10285,
+    "sha256": "68b41b9289451971b3345a8730a1bea3c17a8e07dc4043692014e1e0dbbbb9c2"
+  },
+  "patches": [
+    {
+      "name": "photo-composed-public-native-handlers",
+      "find": "return <Component {...props} ref={bind} data-source-mac-photo={index + 1} data-source-mac-selected={selected} aria-hidden={!visible}\n            onTap={(event: NativeActivationEvent, info?: unknown) => { props.onTap?.(event, info); activatePhoto(\"tap\", event) }}\n            onClick={(event: React.MouseEvent<HTMLElement>) => { props.onClick?.(event); activatePhoto(\"click\", event) }}",
+      "replace": "return <Component {...props} ref={ref} data-source-mac-photo={index + 1} data-source-mac-selected={selected} aria-hidden={!visible}",
+      "count": 1
+    },
+    {
+      "name": "pose-rendering-before-unchanged-arrow-offsets",
+      "find": "        if (slide.pose && slide.phase !== \"settled\") {\n            if (selected) offset = (slide.phase === \"moving\" ? 0 : slide.pose.selected) * 100\n            else if (outgoing) offset = (slide.phase === \"moving\" ? slide.pose.exit : slide.pose.other) * 100\n        } else if (selected && slide.phase === \"prepared\") offset = slide.direction * 100",
+      "replace": "        if (selected && slide.phase === \"prepared\") offset = slide.direction * 100",
+      "count": 1
+    },
+    {
+      "name": "photo-own-ref-and-activation",
+      "find": "        const ownPhoto = React.useRef<HTMLElement | null>(null)\n        const bind = React.useCallback((node: HTMLElement | null) => { ownPhoto.current = node; writeRef(ref, node) }, [ref])\n        const activate = useNativeActivation(() => state.photoNext(), state.frozen)\n        const activatePhoto = (channel: \"tap\" | \"click\", event: NativeActivationEvent) => {\n            const target = photoTarget(event, ownPhoto.current)\n            // An opaque native onTap cannot establish that a child was safe.\n            // A later DOM click with a real target may still supply that proof;\n            // explicit caller cancellation is consumed across both channels.\n            if (target === null && !event.defaultPrevented) return\n            activate(channel, !!event.defaultPrevented || target !== true || !selected)\n        }\n        let offset = 0",
+      "replace": "        let offset = 0",
+      "count": 1
+    },
+    {
+      "name": "viewport-composed-mouse-handlers",
+      "find": "    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => {\n        const state = React.useContext(Context)\n        return <Component {...props} ref={ref} style={{ ...props.style, overflow: \"hidden\" }}\n            onPointerDown={(event: NativePointerEvent) => { props.onPointerDown?.(event); state.startPointer(event) }}\n            onPointerMove={(event: NativePointerEvent) => { props.onPointerMove?.(event); state.movePointer(event) }}\n            onPointerUp={(event: NativePointerEvent) => { props.onPointerUp?.(event); state.finishPointer(event) }}\n            onPointerCancel={(event: NativePointerEvent) => { props.onPointerCancel?.(event); state.finishPointer(event, true) }}\n            onPointerLeave={(event: NativePointerEvent) => { props.onPointerLeave?.(event); state.finishPointer(event, true) }}\n            onLostPointerCapture={(event: NativePointerEvent) => { props.onLostPointerCapture?.(event); state.finishPointer(event, true) }}\n            onDragStart={(event: NativeActivationEvent) => { props.onDragStart?.(event); state.preventNativeDrag(event) }} />\n    })",
+      "replace": "    return React.forwardRef<HTMLElement, LayerProps>((props, ref) => <Component {...props} ref={ref} style={{ ...props.style, overflow: \"hidden\" }} />)",
+      "count": 1
+    },
+    {
+      "name": "private-context-method-values",
+      "find": "clock: frozen ? \"20:18:07\" : clock, step, photoNext, startPointer, movePointer, finishPointer, preventNativeDrag }",
+      "replace": "clock: frozen ? \"20:18:07\" : clock, step }",
+      "count": 1
+    },
+    {
+      "name": "private-gesture-controller-after-unchanged-step",
+      "find": "        // The original arrow step, clock and lifecycle above are unchanged.\n        // Lifecycle transitions still use their existing settling path; poses\n        // are ignored when settled, and this cleanup invalidates late input.\n        React.useEffect(() => () => { if (drag.current) { drag.current = null; blockPhoto.current = true } }, [frozen, reduced, visible, hidden])\n        function runPose(index: number, from: number, direction: 1 | -1, pose: Pose) {\n            if (frozen || reduced || hidden || !visible) { busy.current = false; commit(frozen ? INITIAL : { index, from: null, direction, phase: \"settled\" }); return }\n            busy.current = true\n            const prepared: Slide = { index, from, direction, phase: \"prepared\", pose }\n            commit(prepared)\n            frame.current = requestAnimationFrame(() => {\n                frame.current = 0\n                commit({ ...prepared, phase: \"moving\" })\n                timer.current = setTimeout(() => { timer.current = null; busy.current = false; commit({ index, from: null, direction, phase: \"settled\" }) }, 500)\n            })\n        }\n        function photoNext() {\n            if (frozen) return\n            const active = drag.current\n            if (active) { if (active.distance <= 10) active.pendingPhoto = true; return }\n            if (!blockPhoto.current) step(1)\n        }\n        function startPointer(event: NativePointerEvent) {\n            if (event.pointerType !== \"mouse\") {\n                // Photo taps on Phone are an adaptation, not touch dragging.\n                // A fresh safe pointerdown retires only an older mouse receipt.\n                if (photoTarget(event, event.currentTarget) === true) {\n                    if (event.defaultPrevented) blockPhoto.current = true\n                    else if (!frozen && !busy.current) blockPhoto.current = false\n                }\n                return\n            }\n            if (event.button !== 0 || event.isPrimary === false || drag.current) return\n            const host = event.currentTarget\n            if (photoTarget(event, host) !== true) return\n            if (event.defaultPrevented) { blockPhoto.current = true; return }\n            if (frozen || busy.current || hidden || !visible) return\n            const rect = host.getBoundingClientRect()\n            if (!(rect.width > 0 && rect.height > 0 && host.clientWidth > 0 && host.clientHeight > 0)) return\n            drag.current = { id: event.pointerId, host, startU: (event.clientX - rect.left) / rect.width, startV: (event.clientY - rect.top) / rect.height, startX: event.clientX, startY: event.clientY, startLeft: rect.left, startTop: rect.top, startWidth: rect.width, startHeight: rect.height, index: liveSlide.current.index, fraction: 0, distance: 0, logicalWidth: host.clientWidth, horizontal: false, direction: 1, hasPose: false, pendingPhoto: false }\n            busy.current = true\n        }\n        function movePointer(event: NativePointerEvent) {\n            const active = drag.current\n            if (!active || active.id !== event.pointerId) return\n            if (event.defaultPrevented || event.buttons === 0) { finishPointer(event, true); return }\n            const metrics = pointerMetrics(event, active)\n            if (!metrics) { finishPointer(event, true); return }\n            active.distance = metrics.distance; active.logicalWidth = metrics.logicalWidth; active.horizontal = metrics.horizontal\n            if (!metrics.horizontal || (!metrics.distance && !active.hasPose)) return\n            active.fraction = metrics.fraction; active.direction = metrics.direction; active.hasPose = true\n            if (metrics.distance > 4) event.preventDefault?.()\n            const from = (active.index + active.direction + 4) % 4\n            commit({ index: active.index, from, direction: active.direction, phase: \"dragging\", pose: { selected: active.fraction, other: active.fraction + active.direction, exit: active.direction } })\n        }\n        function finishPointer(event: NativePointerEvent, cancelled = false) {\n            const active = drag.current\n            if (!active || active.id !== event.pointerId) return\n            drag.current = null\n            const cancel = cancelled || !!event.defaultPrevented\n            blockPhoto.current = cancel || active.distance > 10\n            const pose = liveSlide.current.pose\n            if (!active.hasPose || !pose) {\n                busy.current = false\n                if (!cancel && active.pendingPhoto && !blockPhoto.current) step(1)\n                return\n            }\n            const neighbor = (active.index + active.direction + 4) % 4\n            if (!cancel && active.horizontal && active.distance >= active.logicalWidth / 5) {\n                runPose(neighbor, active.index, active.direction, { selected: pose.other, other: pose.selected, exit: -active.direction })\n            } else {\n                // Cancel/leave handling is an independent safe return. A tiny\n                // horizontal pose also returns; its source click ordering is open.\n                runPose(active.index, neighbor, active.direction, { selected: pose.selected, other: pose.other, exit: active.direction })\n            }\n        }\n        function preventNativeDrag(event: NativeActivationEvent) { if (drag.current && !event.defaultPrevented) event.preventDefault?.() }\n        const state: PortfolioState = ",
+      "replace": "        const state: PortfolioState = ",
+      "count": 1
+    },
+    {
+      "name": "private-drag-refs",
+      "find": "        const drag = React.useRef<MouseDrag | null>(null), blockPhoto = React.useRef(false)\n        const commit = React.useCallback",
+      "replace": "        const commit = React.useCallback",
+      "count": 1
+    },
+    {
+      "name": "inert-default-methods",
+      "find": "clock: \"20:18:07\", step() {}, photoNext() {}, startPointer() {}, movePointer() {}, finishPointer() {}, preventNativeDrag() {} }",
+      "replace": "clock: \"20:18:07\", step() {} }",
+      "count": 1
+    },
+    {
+      "name": "private-context-methods",
+      "find": "step: (direction: 1 | -1) => void; photoNext: () => void; startPointer: (event: NativePointerEvent) => void; movePointer: (event: NativePointerEvent) => void; finishPointer: (event: NativePointerEvent, cancelled?: boolean) => void; preventNativeDrag: (event: NativeActivationEvent) => void }",
+      "replace": "step: (direction: 1 | -1) => void }",
+      "count": 1
+    },
+    {
+      "name": "private-slide-pose",
+      "find": "phase: \"settled\" | \"prepared\" | \"moving\" | \"dragging\"; pose?: Pose }",
+      "replace": "phase: \"settled\" | \"prepared\" | \"moving\" }",
+      "count": 1
+    },
+    {
+      "name": "composed-pointer-props",
+      "find": "onKeyDown?: React.KeyboardEventHandler<HTMLElement>; onPointerDown?: (event: NativePointerEvent) => void; onPointerMove?: (event: NativePointerEvent) => void; onPointerUp?: (event: NativePointerEvent) => void; onPointerCancel?: (event: NativePointerEvent) => void; onPointerLeave?: (event: NativePointerEvent) => void; onLostPointerCapture?: (event: NativePointerEvent) => void; onDragStart?: (event: NativeActivationEvent) => void }",
+      "replace": "onKeyDown?: React.KeyboardEventHandler<HTMLElement> }",
+      "count": 1
+    },
+    {
+      "name": "private-gesture-types-and-local-target-metrics",
+      "find": "type NativePointerEvent = NativeActivationEvent & { currentTarget: HTMLElement; clientX: number; clientY: number; pointerId: number; pointerType: string; button: number; buttons: number; isPrimary?: boolean }\ntype Pose = { selected: number; other: number; exit: number }\ntype MouseDrag = { id: number; host: HTMLElement; startU: number; startV: number; startX: number; startY: number; startLeft: number; startTop: number; startWidth: number; startHeight: number; index: number; fraction: number; distance: number; logicalWidth: number; horizontal: boolean; direction: 1 | -1; hasPose: boolean; pendingPhoto: boolean }\n// Unknown native targets are not admitted. This only walks the event's own\n// native subtree; it does not search the document or replace editable children.\nfunction photoTarget(event: NativeActivationEvent, host: HTMLElement | null): boolean | null {\n    if (!host || typeof Node === \"undefined\" || !(event.target instanceof Node)) return null\n    if (!host.contains(event.target)) return false\n    let node = event.target instanceof Element ? event.target : event.target.parentElement\n    for (; node && node !== host; node = node.parentElement) if (node.matches('a,button,input,textarea,select,summary,[role=\"button\"],[role=\"link\"],[contenteditable]:not([contenteditable=\"false\"])')) return false\n    return true\n}\nfunction pointerMetrics(event: NativePointerEvent, drag: MouseDrag) {\n    const rect = drag.host.getBoundingClientRect(), width = drag.host.clientWidth, height = drag.host.clientHeight\n    if (!(rect.width > 0 && rect.height > 0 && width > 0 && height > 0)) return null\n    // Client coordinates and transformed bounds are screen CSS pixels. Threshold\n    // rounding is in the native viewport's logical CSS pixels, as in Slick.\n    const anchorX = rect.left === drag.startLeft && rect.width === drag.startWidth ? drag.startX : rect.left + drag.startU * rect.width\n    const anchorY = rect.top === drag.startTop && rect.height === drag.startHeight ? drag.startY : rect.top + drag.startV * rect.height\n    const dx = (event.clientX - anchorX) * (width / rect.width)\n    const dy = (event.clientY - anchorY) * (height / rect.height)\n    const distance = Math.round(Math.abs(dx)), angle = Math.abs(Math.round(Math.atan2(dy, dx) * 180 / Math.PI))\n    return { distance, logicalWidth: width, horizontal: angle <= 45 || angle >= 135, direction: (dx === 0 ? drag.direction : dx < 0 ? 1 : -1) as 1 | -1, fraction: Math.max(-1, Math.min(1, Math.sign(dx) * distance / width)) }\n}\ntype LayerProps = ",
+      "replace": "type LayerProps = ",
+      "count": 1
+    },
+    {
+      "name": "native-event-targets",
+      "find": "type NativeActivationEvent = { defaultPrevented?: boolean; preventDefault?: () => void; stopPropagation?: () => void; target?: EventTarget | null; currentTarget?: EventTarget | null }",
+      "replace": "type NativeActivationEvent = { defaultPrevented?: boolean; preventDefault?: () => void; stopPropagation?: () => void }",
+      "count": 1
+    },
+    {
+      "name": "observed-and-adapted-gesture-boundary",
+      "find": " * Desktop photo clicks and horizontal mouse tracking are source observed.\n * Source code/runtime use rounded horizontal distance, width/5 admission and\n * >10 logical pixels to suppress the following photo click. Observed8% returns,\n * 48% advances, and reverse drag returns to the preceding photo. Existing native\n * photos stay editable; both drag release and return start at their live pose.\n * Mouse drag only. Phone photo taps, tiny-drag ordering and cancel/leave cleanup\n * are explicit adaptations; source touch/cancel/tiny behavior remains unobserved.\n * Clock is native text HH:mm:ss, once per second while visible; it uses the",
+      "replace": " * Clock is native text HH:mm:ss, once per second while visible; it uses the",
+      "count": 1
+    }
+  ],
+  "exactBeforeRestored": true
+}
