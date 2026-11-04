@@ -1,0 +1,144 @@
+{
+  "reference": "HERO-017",
+  "classification": "Source inspiration / credited behavior refinement",
+  "creator": "Maksym Bleibtgleich",
+  "source": "https://bleibtgleich.dev/",
+  "status": "SOURCE9B0A_AUTHORED_AND_INDEPENDENTLY_SEALED855_PREVIEW_RELOAD_OPEN",
+  "sourceModule": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+    "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec",
+    "bytes": 20234
+  },
+  "previousSource": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/SourceBleibtProjectField.before.tsx",
+    "sha256": "5d3768929147939ac36457afff013784324e26b07eead3114dd641fe13d98a11",
+    "bytes": 18898
+  },
+  "checker": {
+    "path": "/home/midischwarz12/Projects/monarchic-meta/website/scripts/check-source-bleibt-project-field.mjs",
+    "sha256": "b7bb6ed4fe6201680e01f6c40ee9e881d3a1458f09b8385822e1a98ea996235c",
+    "bytes": 37987
+  },
+  "inverse": {
+    "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/inverse.patch",
+    "sha256": "0b0ef0fa5c4c4feb13f22e023f6613db0c10379cfd0b6fcc6cbedd1b260c0c30",
+    "bytes": 7103
+  },
+  "sourceEvidence": {
+    "url": "https://assets.slater.app/slater/20419/62015.js?v=629877",
+    "retainedRuntime": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-017-observed-runtime.js",
+      "sha256": "8b3779792648bf2aadd5b5e0c0bda61037e3183ea2a60001ba15719a5e0e2b17",
+      "bytes": 98108
+    },
+    "spans": [
+      {
+        "name": "ordered-integrator",
+        "file": "ordered-integrator.public-code.txt",
+        "retainedSource": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-017-observed-runtime.js",
+        "line": 2,
+        "utf8ByteStart": 54796,
+        "utf8ByteEndExclusive": 55073,
+        "bytes": 277,
+        "sha256": "5fcd545105072bf6f0339495a430945310a214dc425065c8fb0cc9dea312bb9e",
+        "scope": "Exact retained current public-code inspection excerpt; not observed browser input causality or imported runtime implementation"
+      },
+      {
+        "name": "pointer-bounds-and-initial-drift",
+        "file": "pointer-bounds-and-initial-drift.public-code.txt",
+        "retainedSource": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-017-observed-runtime.js",
+        "line": 2,
+        "utf8ByteStart": 59519,
+        "utf8ByteEndExclusive": 59774,
+        "bytes": 255,
+        "sha256": "211e5bb6001bd8491f1687f091e8903dc092c290a5ccc77631ff938cb2aaa0b4",
+        "scope": "Exact retained current public-code inspection excerpt; not observed browser input causality or imported runtime implementation"
+      },
+      {
+        "name": "drift-constants",
+        "file": "drift-constants.public-code.txt",
+        "retainedSource": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-journeys-2026-11-01/HERO-017-observed-runtime.js",
+        "line": 2,
+        "utf8ByteStart": 57564,
+        "utf8ByteEndExclusive": 57686,
+        "bytes": 122,
+        "sha256": "d4d6d9b225456f3356ddb30dc776b7268fcaf917d0fc0a0a38e7747eded0f925",
+        "scope": "Exact retained current public-code inspection excerpt; not observed browser input causality or imported runtime implementation"
+      }
+    ],
+    "kind": "Retained current primary public-code facts; no new source-browser input observation"
+  },
+  "implementation": {
+    "mousePresence": "Inclusive field rectangle on mouse entry/movement, including empty gaps and pointer capture; touch/pen do not acquire mouse occupancy.",
+    "held": "Mouse inside, active drag, or pinned picture sets idle and drift target to zero.",
+    "startup": {
+      "currentDrift": 0.003,
+      "targetDrift": 0.003,
+      "idleSeconds": 0
+    },
+    "recovery": "Target remains zero after exit until wall-clock idle is strictly greater than one second.",
+    "integration": "dt capped at .05s; normalized step=min(1,60dt). Linear current-drift relaxation uses .03 or .18 while dragging, followed by drag decay and angle advance with the same capped step.",
+    "lifecycle": "Existing Canvas/static/reduced/visibility gates remain; new occupancy clears on disable and reacquires on ordinary input. This is an independent lifecycle adaptation."
+  },
+  "preserved": {
+    "publicExports": 20,
+    "projectionPinReleaseHeadingTailByteExact": true,
+    "nativeFontImageCaptionWrites": 0,
+    "newTimersOrGraphicsContexts": 0
+  },
+  "validation": {
+    "strictDiagnostics": 0,
+    "browserGroups": 19,
+    "retainedOriginalGroups": 8,
+    "numericCases": 28,
+    "browserErrors": 0,
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/final-receipt.json",
+      "sha256": "49557dcd49c74146a3d567e166adede32a48eefa23a39c6f09c3f6ac6fcdeb5d",
+      "bytes": 5768
+    },
+    "result": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/run-04/result.json",
+      "sha256": "25d18055941d2449af26d218894d09a9beb52b88550a14a5d0d04bbc16886d6b",
+      "bytes": 16919
+    },
+    "numericTrace": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-proposal-v1/run-04/focused-numeric-trace.json",
+      "sha256": "b11518670cc217a110a8c00c2de59dd93f908f8a8d42a55392ebf8a4ed2bbd45",
+      "bytes": 15541
+    },
+    "canonicalFilesExactTestedBytes": true,
+    "canonicalBrowserRepeated": false,
+    "fullMatrixRerun": false
+  },
+  "actualFramer": {
+    "receipt": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-writer852/final-h17-pointer-drift-source-only-authoring-receipt855.json",
+      "bytes": 8618,
+      "sha256": "ec0ef332ef4534142976898b37d6a0ddcf52a0dda3dfe1b5ddc3016232ccf86c"
+    },
+    "module": "codeFile/bBepw_h",
+    "sourceWrites": 1,
+    "actualDiagnostics": 0,
+    "genuineOverrideRows": 20,
+    "nativeBindingCopies": 42,
+    "nativeBindingParentsAndOrderPreserved": true,
+    "nativeWrites": 0,
+    "all92Owners16Definitions239CodeBodiesAnd60CatalogsPreserved": true,
+    "explicitMeasuredSchemas": 665,
+    "fullProjectSchemaCoverageClaimed": false,
+    "actualPaintVerified": false,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
+  },
+  "limits": [
+    "Current public-code matching does not establish historical source input timing.",
+    "Independent CPU fluid, CSS3D projection, intermediate mark morph and Phone composition remain fitted.",
+    "Existing pin/release Preview evidence remains valid only for its earlier recorded revision. New Preview/reload checks are open."
+  ],
+  "build": {
+    "target": "checks.x86_64-linux.source-bleibt-project-field",
+    "fullNixBuildExecuted": false,
+    "canonicalBrowserRepeated": false
+  }
+}

@@ -80,6 +80,20 @@ keeps actual Framer admission, source-state comparison and reload distinct.
 nix build .#checks.x86_64-linux.source-cantor-rolling-text --max-jobs 1 --cores 2
 ```
 
+## Bleibtgleich field drift
+
+The [pointer-drift correction](assets/source-bleibt-pointer-drift-provenance.json)
+pauses automatic rotation when the mouse enters empty space inside the field,
+eases the speed toward zero, and resumes after the source idle delay. It uses
+the retained public-code frame cap and preserves projection, pin/release,
+headings and all20 overrides. Canvas, exports, reduced motion and offscreen
+actors remain frozen.
+
+Strict typing and19 browser groups pass, including28 numeric cases and all
+eight earlier groups. Exact source authoring and42 native bindings are read
+through855. Actual Preview and editor reload remain open. Run
+`pnpm run check:source-bleibt-project-field` or the existing Nix target serially.
+
 ## Ajedrez measured word motion
 
 The [two-track continuation](assets/source-ajedrez-two-track-extension-provenance.json)

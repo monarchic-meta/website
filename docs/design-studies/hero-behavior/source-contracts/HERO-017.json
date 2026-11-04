@@ -295,5 +295,33 @@
       "bytes": 2227,
       "sha256": "49d4ef78684202d303c801836ceab38131ff05218d858cbe42752da2ee3c2585"
     }
+  },
+  "pointerDrift": {
+    "status": "SOURCE9B0A_AUTHORED_AND_INDEPENDENTLY_SEALED855_PREVIEW_RELOAD_OPEN",
+    "provenance": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/assets/source-bleibt-pointer-drift-provenance.json",
+      "bytes": 7663,
+      "sha256": "0fc884b609aeaacb1154078c75b0d0787089d850e9bc5facba63a8de4a18bd4c"
+    },
+    "sourceModule": {
+      "path": "/home/midischwarz12/Projects/monarchic-meta/website/docs/design-studies/code-components/SourceBleibtProjectField.tsx",
+      "bytes": 20234,
+      "sha256": "9b0a7b8974696ae6c0f7658e7162fe454c106c10767d82cd3459ee62e75b65ec"
+    },
+    "sourceCodeFacts": "Pointer anywhere inside the inclusive field, active drag, or pin drives target0; linear .03/.18 relaxation and capped normalized frame step follow retained current public code.",
+    "localValidation": {
+      "strictDiagnostics": 0,
+      "browserGroups": 19,
+      "numericCases": 28,
+      "browserErrors": 0
+    },
+    "actualAuthoring": {
+      "path": "/home/midischwarz12/.codex/visualizations/2026/10/22/01a164a2-0652-73b3-8037-ef2681515624/hero-behavior-contracts-2026-11-01/original-sites-2026-11-01/HERO017/pointer-drift-writer852/final-h17-pointer-drift-source-only-authoring-receipt855.json",
+      "bytes": 8618,
+      "sha256": "ec0ef332ef4534142976898b37d6a0ddcf52a0dda3dfe1b5ddc3016232ccf86c"
+    },
+    "nativeBindingsPreserved": 42,
+    "actualPreviewVerified": false,
+    "afterEditorReload": false
   }
 }
